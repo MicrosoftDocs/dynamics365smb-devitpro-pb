@@ -1,8 +1,8 @@
 ---
-title: "UploadIntoStream Method"
+title: "File.UploadIntoStream Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# UploadIntoStream Method
+# File.UploadIntoStream Method
+> **Version**: _Available from runtime version 1.0._
+
 Sends a file from the client computer to the corresponding server. The client computer is the computer that is running the Windows client or the computer that is running a browser that accesses the web client.
 
 
@@ -21,8 +23,8 @@ Sends a file from the client computer to the corresponding server. The client co
 ```
 [Ok := ]  File.UploadIntoStream(DialogTitle: String, FromFolder: String, FromFilter: String, var FromFile: Text, var InStream: InStream)
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *DialogTitle*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -46,9 +48,9 @@ The default file to upload to the service. The name displays in the dialog box f
 
 
 ## Return Value
-*Ok*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the operation was successful; otherwise **false**.  If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+*Ok*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+**true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -56,33 +58,30 @@ The default file to upload to the service. The name displays in the dialog box f
 ## Remarks  
 
 > [!NOTE]  
->  This method is not supported<!--NAV by the [!INCLUDE[d365fin_web_md](../includes/d365fin_web_md.md)]--> on devices that run Apple iOS, such as iPad. The dialog box for uploading a file displays, but it is disabled and the user cannot select a file.  
-
-<!-- NAV
- The maximum size of the file to be uploaded is specified by the MaxUploadSize setting in the CustomSettings.config file. The setting is specified in megabytes. For more information, see [Configuring Microsoft Dynamics NAV Server](Configuring-Microsoft-Dynamics-NAV-Server.md).  
--->
+> This method is not supported on devices that run Apple iOS, such as iPad. The dialog box for uploading a file displays, but it is turned off and the user cannot select a file.  
 
 The business logic runs on the [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] and not on the client. Files are created on [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] and not locally on the client computer.  
 
- Use [UPLOAD Method \(File\)](../../methods-auto/file/file-upload-method.md) and [UPLOADINTOSTREAM Method \(FILE\)](../../methods-auto/file/file-uploadintostream-method.md) to send a file from the client to the [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)].  
+Use [Upload Method \(File\)](../../methods-auto/file/file-upload-method.md) and [UploadIntoStream Method \(FILE\)](../../methods-auto/file/file-uploadintostream-method.md) to send a file from the client to the [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)].  
 
- Use [DOWNLOAD Method \(File\)](../../methods-auto/file/file-download-method.md) and [DOWNLOADFROMSTREAM Method \(File\)](../../methods-auto/file/file-downloadfromstream-method.md) to send a file from the  [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] to the client.  
+Use [Download Method \(File\)](../../methods-auto/file/file-download-method.md) and [DownloadFromStream Method \(File\)](../../methods-auto/file/file-downloadfromstream-method.md) to send a file from the  [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] to the client.  
 
- We recommend that you use the methods in codeunit 419, File Management, to upload and download files.  
+We recommend that you use the methods in codeunit 419, File Management, to upload and download files.  
 
-## Example  
- ```
+## Example
+
+```al
  var
     FileName: Text;
     NVInStream: InStream;
 begin
     FileName := 'c:\SomeFile.txt';  
-    UPLOADINTOSTREAM('Import','',' All Files (*.*)|*.*',FileName,NVInStream); 
+    UploadIntoStream('Import','',' All Files (*.*)|*.*',FileName,NVInStream); 
 end;
 ```  
 
-
 ## See Also
+
 [File Data Type](file-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

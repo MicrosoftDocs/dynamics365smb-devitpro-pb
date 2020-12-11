@@ -1,8 +1,9 @@
 ---
-title: "GetSubText Method"
+title: "BigText.GetSubText Method"
+description: "The BigText GetSubText Method in AL for Business Central"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +14,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# GetSubText Method
+# BigText.GetSubText Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets part of a BigText variable.
 
 
@@ -22,9 +25,9 @@ Gets part of a BigText variable.
 [Length := ]  BigText.GetSubText(var Variable: Text, Position: Integer [, Length: Integer])
 ```
 ## Parameters
-*BigText*  
-&emsp;Type: [BigText](bigtext-data-type.md)  
-An instance of the [BigText](bigtext-data-type.md) data type.  
+*BigText*
+&emsp;Type: [BigText](bigtext-data-type.md)
+An instance of the [BigText](bigtext-data-type.md) data type.
 
 *Variable*  
 &emsp;Type: [Text](../text/text-data-type.md)  
@@ -41,9 +44,9 @@ The length of the sub text that should be retrieved. This parameter is optional.
 
 
 ## Return Value
-*Length*  
-&emsp;Type: [Integer](../integer/integer-data-type.md)  
-The length of the result text.  
+*Length*
+&emsp;Type: [Integer](../integer/integer-data-type.md)
+The length of the result text.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -53,7 +56,8 @@ The length of the result text.
   
  To delete the content in a BigText variable use the [CLEAR Method](../../methods-auto/system/system-clear-joker-method.md). The following code snippet shows the syntax for the clear method. `CLEAR(BigText)`.  
   
-## Example  
+## Example 1
+
  The following examples demonstrate how to use the GETSUBTEXT method. This example requires that you create the following global variables and text constant.  
   
 ```
@@ -72,7 +76,8 @@ MyBigText.GETSUBTEXT(VarSubText, 3, 2); // Returns CD.
 MESSAGE(Text000, VarSubText);  
 ```  
   
-## Example  
+## Example 2
+
  The following example initializes the content of the MyBigText variable with the text `ABCDEFG`. The method returns an error because zero is specified for *Position*.  
   
 ```  
@@ -83,7 +88,8 @@ MESSAGE(Text000, VarSubText);
   
 ```  
   
-## Example  
+## Example 3
+
  The following example initializes the content of the MyBigText variable with the text `ABCDEFG`. The method returns an error because a negative number is specified for *Length*.  
   
 ```  
@@ -93,7 +99,8 @@ MyBigText.GETSUBTEXT(VarSubText, 5, -2); // Returns an error.
 MESSAGE(Text000, VarSubText);  
 ```  
   
-## Example  
+## Example 4
+
  The following example initializes the content of the MyBigText variable with the text `ABCDEFG`. The method returns an empty string because the number specified for *position* is greater than the length of the MyBigText variable.  
   
 ```  
@@ -104,7 +111,8 @@ MESSAGE(Text000, VarSubText);
   
 ```  
   
-## Example  
+## Example 5
+
  The following example initializes the content of the MyBigText variable with the text `ABCDEFG`. The method starts from the forth position \(the character D\) and retrieves all the characters in the MyBigText string. The result is the subtext DEFG. This is because the number specified for *Length* is greater than the length of the MyBigText variable.  
   
 ```  

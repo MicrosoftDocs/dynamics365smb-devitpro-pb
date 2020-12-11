@@ -1,17 +1,17 @@
 ---
 title: "Preparing for Dynamics 365 for Sales for Integration"
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 author: jswymer
-ms.prod: "dynamics-nav-2018"
+ms.service: dynamics365-business-central
 ---
-# Preparing  Dynamics 365 for Sales for Integration
+# Preparing Dynamics 365 Sales for Integration
 
-This article describes how to set up and configure [!INCLUDE[crm_md](../developer/includes/crm_md.md)] for integrating with [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. You must complete the following tasks:  
+This article describes how to set up and configure [!INCLUDE[crm_md](../developer/includes/crm_md.md)] for integrating with [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. Complete the following tasks:  
 
 1.  Create a user for connecting to and synchronizing data from [!INCLUDE[prodshort](../developer/includes/prodshort.md)].  
 
@@ -25,7 +25,7 @@ This article describes how to set up and configure [!INCLUDE[crm_md](../develope
 
 ##  <a name="createuser"></a> Create a Dynamics 365 for Sales User for Connecting to Business Central
   
- As a minimum, this must be a non\-interactive user account that has the required privileges to write, read, modify, and delete data in the entities that will be integrated with [!INCLUDE[prodshort](../developer/includes/prodshort.md)].  
+ As a minimum, this user must be a non-interactive user account that has the required privileges to write, read, modify, and delete data in the entities that will be integrated with [!INCLUDE[prodshort](../developer/includes/prodshort.md)].  
 
  You will use this user account to set up the connection to [!INCLUDE[crm_md](../developer/includes/crm_md.md)] from [!INCLUDE[prodshort](../developer/includes/prodshort.md)].  
 
@@ -55,13 +55,15 @@ This article describes how to set up and configure [!INCLUDE[crm_md](../develope
 
 3.  (Optional) Set up the **Business Central Connection** entity to display in the **Settings** area of [!INCLUDE[crm_md](../developer/includes/crm_md.md)].  
 
-     This enables [!INCLUDE[crm_md](../developer/includes/crm_md.md)] users who are assigned the **Business Central Admin** role to modify the entity in [!INCLUDE[crm_md](../developer/includes/crm_md.md)]. For more information about how to modify entities in [!INCLUDE[crm_md](../developer/includes/crm_md.md)], see [https://go.microsoft.com/fwlink/?LinkID=616521](https://go.microsoft.com/fwlink/?LinkID=616521).  
+     This setup enables [!INCLUDE[crm_md](../developer/includes/crm_md.md)] users who are assigned the **Business Central Admin** role to modify the entity in [!INCLUDE[crm_md](../developer/includes/crm_md.md)]. For more information about how to modify entities in [!INCLUDE[crm_md](../developer/includes/crm_md.md)], see [https://go.microsoft.com/fwlink/?LinkID=616521](https://go.microsoft.com/fwlink/?LinkID=616521).  
 
 4.  Assign the **Business Central Integration Administrator** role to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] connection user.  
 
 5.  Assign the **Business Central Integration User** role to all users who require the use of the features provided by the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] integration solution.  
 
 If you install the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] integration solution after you have set up the connection to [!INCLUDE[crm_md](../developer/includes/crm_md.md)] from in [!INCLUDE[prodshort](../developer/includes/prodshort.md)], you must modify the connection setup to point to the URL of the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)].<!-- For more information, see [How to: Set Up a Microsoft Dynamics 365 for Sales Connection]() --> 
+
+
 
 <!-- 
 # View Item Availability - Support Matrix
@@ -80,7 +82,8 @@ For most versions of Business Central and Dynamics 365 for Sales, you can view a
 
 For more information, see [System Requirements for Business Central](../deployment/system-requirement-business-central.md).
 
+-->
 
 ## See Also  
-[Setting Up Dynamics 365 for Sales Integration in Dynamics NAV]  
--->
+[Connecting On-Premises Versions](/dynamics365/business-central/admin-how-to-set-up-a-dynamics-crm-connection#connecting-on-premises-versions)  
+

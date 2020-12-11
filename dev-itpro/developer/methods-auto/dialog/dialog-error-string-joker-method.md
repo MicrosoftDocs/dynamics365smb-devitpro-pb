@@ -1,8 +1,8 @@
 ---
-title: "Error Method"
+title: "Dialog.Error Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Error Method
+# Dialog.Error Method
+> **Version**: _Available from runtime version 1.0._
+
 Displays an error message and ends the execution of AL code.
 
 
@@ -21,8 +23,8 @@ Displays an error message and ends the execution of AL code.
 ```
  Dialog.Error(Message: String [, Value: Any,...])
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *Message*  
 &emsp;Type: [String](../string/string-data-type.md)  

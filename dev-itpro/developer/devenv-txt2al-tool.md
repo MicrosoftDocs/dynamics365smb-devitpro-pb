@@ -4,7 +4,7 @@ description: "Description of the converter tool."
 
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: solsen
@@ -50,6 +50,7 @@ It is **very** important that you compile the database to get the right result i
 |--dotNetTypePrefix |Specify a prefix to be used for all .NET type aliases created during the conversion.|
 |--translationFormat=ObjectType |Specify the format to use when generating translation files. The allowed values are: Xliff, Lcg.|
 |--addLegacyTranslationInfo |Add information to the translation file that can be used to migrate existing translations/translated resources. During conversion, XLIFF files from all the ML properties in the app are extracted. If this switch is set, a comment is added in the generated XLIFF that specifies what the ID of the translation item would be in C/SIDE. This acts as a mapping that allows you to convert existing translation resources for your app.|
+|--tableDataOnly|For table objects, specifies to convert only the table and field definitions, including properties. Methods and trigger code is not included. **Note:** This parameter was first introduced in Business Central version 14.2 (cumulative update 11) and Business Central version 15.5.|
 
 > [!NOTE]  
 > It is recommended to only use the conversion tool for export. Importing objects that have been exported can damage your application.

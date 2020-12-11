@@ -1,7 +1,8 @@
 ---
 title: "ExternalAccess Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -9,33 +10,40 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # ExternalAccess Property
-This property is specific to Dynamics 365 Sales. The ExternalAccess property specifies the access to the underlying CRM entity when Dynamics 365 Sales tables are generated using the cmdlet. 
+> **Version**: _Available from runtime version 1.0._
 
-## Applies To  
+Specifies the type of access to the original table field in the external database.
 
-- Fields  
+## Applies to
+-   Table Field
 
-## Property Values  
-The ExternalAccess Property sets the access level as described in the table below:
+## Property Value
 
-|Property value| Description|
-|------|-----------|
-|Full  |Allows the full access to the external database.|
-|Insert|Allows the insert access to the table fields in the external database.|
-|Modify|Allows the Modify access to the external database. |
-|Read  |Allows the read-only access to the external database.|
+|Value|Description|
+|-----------|---------------------------------------|
+|**Full**|Allows the full access to the external database.|
+|**Insert**|Allows the insert access to the table fields in the external database.|
+|**Modify**|Allows the Modify access to the external database.|
+|**Read**|Allows the read-only access to the external database.|
 
-## Syntax 
-```
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Syntax
+
+```AL
 ExternalAccess = Full;
 ```
 
-## Remarks  
-This property appears when you specify **CRM** in the **TableType** property. These tables use a different SQL Server connection than the normal tables in the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] and [!INCLUDE[navnow_md](../includes/navnow_md.md)] database.  
+## Remarks
+
+This property appears when you specify **CDS** in the **TableType** property. These tables use a different SQL Server connection than the normal tables in the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] and [!INCLUDE[navnow_md](../includes/navnow_md.md)] database.  
 
 ## See Also  
+
 [TableType Property](devenv-tabletype-property.md)   
 [ExternalSchema Property](devenv-externalschema-property.md)   
 [Name Property](devenv-name-property.md)   

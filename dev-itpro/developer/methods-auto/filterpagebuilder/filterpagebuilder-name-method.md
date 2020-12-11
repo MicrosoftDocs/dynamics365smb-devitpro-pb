@@ -1,8 +1,8 @@
 ---
-title: "Name Method"
+title: "FilterPageBuilder.Name Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Name Method
+# FilterPageBuilder.Name Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets the name of a table filter control that is included on a filter page based on an index number that is assigned to the filter control.
 
 
@@ -22,9 +24,9 @@ Gets the name of a table filter control that is included on a filter page based 
 Name :=   FilterPageBuilder.Name(Index: Integer)
 ```
 ## Parameters
-*FilterPageBuilder*  
-&emsp;Type: [FilterPageBuilder](filterpagebuilder-data-type.md)  
-An instance of the [FilterPageBuilder](filterpagebuilder-data-type.md) data type.  
+*FilterPageBuilder*
+&emsp;Type: [FilterPageBuilder](filterpagebuilder-data-type.md)
+An instance of the [FilterPageBuilder](filterpagebuilder-data-type.md) data type.
 
 *Index*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
@@ -32,9 +34,9 @@ The index of a filter control. The value must be in the range 1 to N, where N is
 
 
 ## Return Value
-*Name*  
-&emsp;Type: [String](../string/string-data-type.md)  
-The name of the filter control.  
+*Name*
+&emsp;Type: [String](../string/string-data-type.md)
+The name of the filter control.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

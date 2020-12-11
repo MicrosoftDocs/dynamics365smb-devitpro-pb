@@ -3,7 +3,7 @@ title: "Substituting Reports"
 description: "How to substitute reports for other reports."
 author: blrobl
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ Contrary to pages and tables, extensibility is not yet supported for report obje
 
 To substitute a report, you create a method and subscribe it to the **OnAfterSubstituteReport** event, as shown in the code below. The `OnSubstituteReport` method replaces the report specified by the `ReportId` with the one given by the `NewReportId` parameter. In this example the `"Customer - List"` report will be substituted for `"My New Customer - List"`.
 
-```
+```AL
 codeunit 50100 "Substitute Report"
 {
     [EventSubscriber(ObjectType::Codeunit, Codeunit::ReportManagement, 'OnAfterSubstituteReport', '', false, false)]
@@ -35,13 +35,13 @@ For more information on how to subscribe to events, see [Subscribing to Events](
 
 When the **OnAfterSubstituteReport** event is raised, the event subscriber method is called and the substitution takes place.
 
-> [!NOTE]
+> [!NOTE]  
 > The event is called **OnAfterSubstituteReport** to match the pattern followed by other events in the **ReportManagement** codeunit, but the subscriber will be invoked before the substitution takes place.
 
 The **OnAfterSubstituteReport** event is raised when:
 
 1. The user activates a page action that runs the report to be substituted, that is, an action that has the [RunObject Property](properties/devenv-runobject-property.md) set to the report. 
-2. The report is invoked from the Tell Me window.
+2. The report is invoked from the **Tell Me** window.
 3. The report is called by one of the following *static* methods:
 
     - [Run Method](methods-auto\report\reportinstance-run-method.md)
@@ -66,7 +66,7 @@ For more information about raising events, see [Raising Events](devenv-raising-e
 
 - Consider enhancing the code of the subscriber method to check if the report has already been replaced with another extension. This is done by comparing the `ReportId` and `NewReportId` parameters before making the change, such that if the value of the `NewReportId` parameter is different from the value of the `ReportId` parameter and different from -1, it means that the report has already been substituted for another subscriber of the **OnAfterSubstituteReport** event.
 
-> [!IMPORTANT]
+> [!IMPORTANT]  
 > Make sure that if a report is called on code, you use a compatible report to replace it to avoid run time errors.
 
 ## See Also

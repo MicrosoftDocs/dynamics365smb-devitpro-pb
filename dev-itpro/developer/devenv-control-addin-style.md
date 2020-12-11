@@ -1,7 +1,7 @@
 ---
 title: "Control Add-in Style Guide"
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,8 +28,6 @@ Apart from the functionality, an important aspect of creating a control add-in i
 
 [!INCLUDE[d365fin_md](includes/d365fin_md.md)] uses a set of specific colors and fonts. You can employ these colors and fonts in your control add-ins to give it a style that matches the rest of client's user interface.  
 
-> [!IMPORTANT]  
-> This article is currently in progress and contents will change.
 
 ## Colors
 Choosing the right color gives the interface visual continuity. Color can be used to convey information to users, indicate interactivity, give feedback, and more. The following sections describe the colors used in [!INCLUDE[d365fin_md](includes/d365fin_md.md)]. The colors can be used on all aspects of a UI element, such background, border, text, and more. 
@@ -120,7 +118,7 @@ If you want to change the text color of a caption to the Primary (#00B7C3) color
 ```
 ## Typography
 
-The main goal of typography is to provide clean and readable text in the user interface. Similar to colors, typgraphy can also be used to convey or communicate conditions to the user. 
+The main goal of typography is to provide clean and readable text in the user interface. Similar to colors, typography can also be used to convey or communicate conditions to the user. 
 
 ### Font Families
 
@@ -132,7 +130,6 @@ The main goal of typography is to provide clean and readable text in the user in
 |![Segoe UI Light font family](media/style/segoe-ui-light.png "Segoe UI Light font family")| Segoe UI Light | `"Segoe UI Light", "Segoe WP Light", device-segoe-light, "Segoe WP Semilight", "Segoe UI", "Segoe WP", Segoe, Tahoma, Helvetica, Arial, sans-serif` |
 |![Segoe UI Semilight font family](media/style/segoe-ui-semi-light.png "Segoe UI Semilight font family")| Segoe UI Semilight | `"Segoe UI Semilight", "Segoe WP Semilight", device-segoe-semilight, "Segoe UI", "Segoe WP", Segoe, Tahoma, Helvetica, Arial, sans-serif` |
 |![Segoe UI Semibold font family](media/style/segoe-ui-semi-bold.png "Segoe UI Semibold font family")| Segoe UI Semibold | `"Segoe UI Semibold", "Segoe WP Semibold", device-segoe-semibold, "Segoe UI", "Segoe WP", Segoe, Tahoma, Helvetica, Arial, sans-serif` |
-|![Bahnschrift font family](media/style/bahnschrift.png "Bahnschrift font family")| Bahnschrift | `webclient-standard, device-standard, "Segoe UI", "Segoe WP", Segoe, Tahoma, Helvetica, Arial, sans-serif` |
 
 ### Sizes
 [!INCLUDE[d365fin_md](includes/d365fin_md.md)] uses the following font sizes for text. The same font family on different clients may apply different sizes.

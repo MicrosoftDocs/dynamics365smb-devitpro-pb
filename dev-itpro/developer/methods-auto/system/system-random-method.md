@@ -1,8 +1,8 @@
 ---
-title: "Random Method"
+title: "System.Random Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Random Method
+# System.Random Method
+> **Version**: _Available from runtime version 1.0._
+
 Returns a pseudo-random number.
 
 
@@ -21,8 +23,8 @@ Returns a pseudo-random number.
 ```
 Number :=   System.Random(MaxNumber: Integer)
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *MaxNumber*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
@@ -30,9 +32,9 @@ The largest acceptable number. In effect, you are setting a range from one (1) t
 
 
 ## Return Value
-*Number*  
-&emsp;Type: [Integer](../integer/integer-data-type.md)  
-  
+*Number*
+&emsp;Type: [Integer](../integer/integer-data-type.md)
+
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

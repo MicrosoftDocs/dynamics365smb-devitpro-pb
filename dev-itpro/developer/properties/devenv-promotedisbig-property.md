@@ -1,26 +1,33 @@
 ---
 title: "PromotedIsBig Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: e83bfe80-9c0e-468e-80b6-c9d184e64afe
-caps.latest.revision: 10
-author: jswymer
+author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # PromotedIsBig Property
-Sets a value that indicates whether to display the action before other actions in the action bar, regardless of its position in the AL page definition.  
-  
-## Applies to  
-  
-- Page actions  
- 
+> **Version**: _Available from runtime version 1.0._
+
+Sets a value that indicates whether the promoted action is displayed on the ribbon with a large icon.
+
+## Applies to
+-   Page Action
+
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+
 ## Syntax
-```
+
+```AL
 PromotedIsBig = true;
 ```
  
@@ -29,6 +36,7 @@ PromotedIsBig = true;
 **true** display the action before other actions in the action bar; otherwise, **false**. The default is **false**.  
 
 ## Remarks
+
 If there is more than one action that has the PromotedIsBig property set to **true**, then the actions will appear before other actions, in the order that they are defined in AL.
 
 > [!NOTE]
@@ -38,7 +46,7 @@ If there is more than one action that has the PromotedIsBig property set to **tr
 
 In the following code snippet, the **Sales Invoice** action is defined after the **Sales Quote** action, However, because the **PromotedIsBig** property is **true**, it will appear before the **Sales Quote** action in the client.
 
-```
+```AL
 actions
     {
         area(Creation)
@@ -62,7 +70,9 @@ actions
         }
     }
 ```
+
 ## See Also  
+
 [Promoted Property](devenv-promoted-property.md)   
 [Promoted Actions](../devenv-promoted-actions.md)  
 [Actions Overview](../devenv-actions-overview.md)  

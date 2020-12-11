@@ -1,7 +1,8 @@
 ---
 title: "Integration Triggers"
+description: "Triggers that support integration in AL for Business Central."
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +22,7 @@ The following triggers have been added to support integration with Dynamics 365 
 
 - **OnDatabaseDelete**  
 
-## Applies To  
+## Applies to  
 - Pages  
 - Tables  
 

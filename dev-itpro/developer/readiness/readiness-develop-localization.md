@@ -3,19 +3,16 @@ title: "Development of a Localization Solution"
 description: "Comply with regulatory requirements in Dynamics 365 Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: edupont
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
-> [!Note]
-> We are not planning to release [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] in more countries before October 2019. In order to provide a first class customer and partner experience we are focusing on optimizing parts of the Business Central service and management tools. This will allow for better scalability which is necessary for the success of further geo expansion. We will begin planning for more countries after the October 2019 release. Please reach out to your local Microsoft contact for more information on what this means for localization in your country.
-
 # Development of a Localization Solution
 
-If you want to bring the capabilities of the [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] Core to your local market, then there are several reasons why you would want to choose [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)]:
+If you want to bring the capabilities of the [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] to your local market, then there are several reasons why you would want to choose [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)]:
 
 - Easy to translate and strong base capabilities ready for localization.
 - Reach more customers by showcasing your localization apps on Microsoft AppSource.
@@ -24,6 +21,7 @@ If you want to bring the capabilities of the [!INCLUDE[d365_bus_central_md](../i
 If you are planning to build localization apps, you should pay attention to the following considerations and requirements:
 
 ## Localization apps functionality
+
 Localization apps contain a set of functionalities addressing local requirements that fall within one of the categories below. Make sure to split up your localization apps at minimum according to these categories:  
 
  * **Regulatory requirements** - local functionality that helps businesses fulfill their legal requirements, such as tax reporting, local GAAP, and other regulatory requirements.
@@ -31,32 +29,25 @@ Localization apps contain a set of functionalities addressing local requirements
  * **Market requirements**   - nice-to-have, competitive requirements – local functionality beneficial to the productivity business processes in a country and thereby adding value to business but are not required from a regulatory perspective.
 
 ## Documentation and adoption
+
 Good and consistent tooltips and documentation will help users adopt your features fast and alleviate most of your support burden.
 
 An important part of your localization app will be setup data for the production company that will help users get up and running quickly and with minimum effort.
 
 ## Service availability in additional countries
-In [countries](/dynamics365/business-central/dev-itpro/compliance/apptest-countries-and-translations), where Microsoft has not delivered a localization, you can apply for access to build a localization on top of the international (W1) version of [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)]. The availability of [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] for the specific country, after submission of localization app(s) for validation, is planned with the core Microsoft team as it requires following:
- * A business case and an agreement with local/regional Microsoft contacts to align on business and marketing activities related to making [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] available in the country
- * Commercial availability of [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] offers in CSP pricelist for the country
- * Azure data centre operations capacity/availability and [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] platform translation to language(s) for the country
- * Partner localization app(s) availability in AppSource
- * Translated Help available from your own website, accessible from [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] in your country
 
-All of the points listed above must be in place to declare [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] available in the country.
-To apply for access to build [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] localization in countries, where Microsoft has not delivered a localization, fill in the  [[!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] Localization Request form](https://go.microsoft.com/fwlink/?linkid=2005218).
-
-> [!NOTE]
-> If your localization request is approved and the relevant localization app has passed all AppSource validation, you can expect a lead time of minimum 3 months for Business Central to become available in your country.
+Follow [this page](/dynamics365/business-central/dev-itpro/compliance/apptest-countries-and-translations) for information about planned country and regional expansions of [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)].
 
 ## Business Central companion/mobile apps availability
+
 Even though [Business Central companion/mobile apps](/dynamics365/business-central/install-mobile-app) are globally available in Microsoft Store, Apple App Store, or Google Play the respective store listing may appear in English. Once Business Central is made available in a given country, we will make sure to update the store listings using local language.
 
 > [!NOTE]  
 > The companion apps are designed to work with every localized app even before we update the marketing part of the store listing.
 
 ## Monetization
-As a partner developing a localization app, you are free to decide how monetization of your apps should work. Localization apps are considered like any other apps and the market is open any partner and apps in a given country. It is up to you to build a monetization mechanism for your app - as well as mechanisms to control who uses your app. To learn more, please see [the Dynamics 365 Business Central App Monetization whitepaper](https://mbspartner.microsoft.com/secure/coursematerials/D365/Standalone/Dynamics_365_Business_Central_App_Monetization_Demo_Guide.pdf).
+
+As a partner developing a localization app, you are free to decide how monetization of your apps should work. Localization apps are considered like any other apps and the market is open any partner and apps in a given country. It is up to you to build a monetization mechanism for your app - as well as mechanisms to control who uses your app. <!--To learn more, please see [the Dynamics 365 Business Central App Monetization whitepaper](https://mbspartner.microsoft.com/secure/coursematerials/D365/Standalone/Dynamics_365_Business_Central_App_Monetization_Demo_Guide.pdf).-->
 
 ## Submitting your localization app to AppSource
 
@@ -67,9 +58,9 @@ The following list describes the top things to be explicit about:
 - Country or group of countries that the app applies to  
 - Language or languages included in the app  
 - Describe and categorize each local regulatory feature included in your localization app  
-- (Optionally) Mark features to be considered part of the global version of [!INCLUDE[prodshort](../includes/prodshort.md)]  
 
 ## Product scope for localization apps
+
 Apart from [fulfilling the technical checklist for your app](../devenv-checklist-submission.md), the minimum viable product scope for localization app is:
 
 * Local Regulatory Features.
@@ -77,9 +68,9 @@ Apart from [fulfilling the technical checklist for your app](../devenv-checklist
 * [Upgrade code for localization apps](../devenv-upgrading-extensions.md).
 * Setup data RapidStart package for the localization app.
 * [Translation of a localization app to local language(s)](../devenv-work-with-translation-files.md) and base app if you are the first partner enabling localization for the country (Learn more about [Dynamics Translation Services](/dynamics365/unified-operations/fin-ops-core/dev-itpro/lifecycle-services/translation-service-overview)).
-* Translation of the localization app’s documentation. For more information, see [Translate the Help](../../user-assistance.md#translate-the-help) and [Translate documentation files](/dynamics365/unified-operations/dev-itpro/lifecycle-services/use-translation-service-ua).
-* National Standard Features (local part) are recommended to be built as additional [add-on apps](readiness-add-on-apps.md) or [connect apps](readiness-connect-apps.md) – separate from the localization app.
-* Market Required and Local Competitive Features are recommended to be built as additional [add-on apps](readiness-add-on-apps.md) or [connect apps](readiness-connect-apps.md) – separate from the localization app.
+* Translation of the localization app's documentation. For more information, see [Translate the Help](../../user-assistance.md#translate-the-help) and [Translate documentation files](/dynamics365/unified-operations/dev-itpro/lifecycle-services/use-translation-service-ua).
+* National Standard Features (local part) are recommended to be built as an [app](opportunity-app-publisher.md) – separate from the localization app.
+* Market Required and Local Competitive Features are recommended to be built as an [app](opportunity-app-publisher.md) – separate from the localization app.
 * Using .NET assemblies in your localization app will fail in the technical validation of an app. Instead, contribute to [C/AL Open Library](https://github.com/Microsoft/cal-open-library) GitHub repository with requests you have for .NET.
 * It is recommended to logically break down the full local functionality set, at a minimum within the above categories. This approach provides optimal flexibility for customers to choose what they really need in terms of local functionality while making sure critical pieces of local functionality do not break upgrade processes nor are upgrade heavy.
 * The majority of customers in the local market will need most of the local regulatory features. In the category of local regulatory features there will be some features that, even though they are legally required, apply to companies of a certain size, revenue threshold etc. Such situations are opportunities to further logically break down localization apps into smaller focused-functionality sets.
@@ -95,18 +86,15 @@ Apart from [fulfilling the technical checklist for your app](../devenv-checklist
 * If you're converting an existing localization (developed in C/AL) to localization apps (check this [video](https://mbspartner.microsoft.com/D365/Videos/101769)(requires PartnerSource access)), as described in technical checklist for your app, you'll need to set the ApplicationArea property on UI elements that you want to make visible in Business Central. To help you with that use [NAVApplicationAreaHelper powershell command let](https://blogs.msdn.microsoft.com/nav/2018/06/06/navapplicationareahelper/) to do this in bulk.  
 
 > [!NOTE]  
-> You can also create Connect apps if you find it beneficial to have some functionality placed outside the [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] environment and instead connect to [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] using for example APIs or Web services.
+> You can also create an integration if you find it beneficial to have some functionality placed outside the [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] environment and instead connect to [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] using for example APIs or Web services.
 
 > [!NOTE]  
 > If you have questions for building localization apps, please contact the [Microsoft localization team](mailto:d365bcloc@microsoft.com).
 
-Also, consider joining the [Ready to Go](readiness-ready-to-go.md) program for assistance on bringing you localization apps to AppSource.
-
 ## See Also
-[Build Your Business on Dynamics 365 Business Central](readiness-welcome.md)  
-[Business Central Learning Catalog](https://go.microsoft.com/fwlink/?linkid=2002101)  
-[Integrate a 3rd Party Solution](readiness-thirdparty-solution.md)  
-[Development of a Vertical Solution](readiness-develop-vertical.md)  
-[Development of a Horizontal Solution](readiness-develop-horizontal.md)  
-[Resell Different Solutions](readiness-reseller.md)  
+
+[Get Started with Building Apps](get-started.md)  
+[The SMB Opportunity for App Publishers](opportunity-app-publisher.md)  
+[Get Started as a Reseller of Business Central Online](../../administration/get-started-online.md)  
 [Countries and Translations Supported](../../compliance/apptest-countries-and-translations.md)  
+[Business Central Learning Catalog](https://go.microsoft.com/fwlink/?linkid=2002101)  

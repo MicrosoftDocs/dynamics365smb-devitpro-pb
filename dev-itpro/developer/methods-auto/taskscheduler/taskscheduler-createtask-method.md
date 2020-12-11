@@ -1,8 +1,8 @@
 ---
-title: "CreateTask Method"
+title: "TaskScheduler.CreateTask Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# CreateTask Method
+# TaskScheduler.CreateTask Method
+> **Version**: _Available from runtime version 1.0._
+
 Adds a task to ensure that a codeunit is not run before the specified time.
 
 
@@ -49,9 +51,9 @@ Specifies the recordID of the record that you want to run the task on.
 
 
 ## Return Value
-*Task*  
-&emsp;Type: [Guid](../guid/guid-data-type.md)  
-  
+*Task*
+&emsp;Type: [Guid](../guid/guid-data-type.md)
+
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

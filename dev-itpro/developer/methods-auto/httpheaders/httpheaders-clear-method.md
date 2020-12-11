@@ -1,8 +1,8 @@
 ---
-title: "Clear Method"
+title: "HttpHeaders.Clear Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Clear Method
+# HttpHeaders.Clear Method
+> **Version**: _Available from runtime version 1.0._
+
 Sets the HttpHeaders variable to the default value.
 
 
@@ -23,9 +25,9 @@ Sets the HttpHeaders variable to the default value.
 ```
 
 ## Parameters
-*HttpHeaders*  
-&emsp;Type: [HttpHeaders](httpheaders-data-type.md)  
-An instance of the [HttpHeaders](httpheaders-data-type.md) data type.  
+*HttpHeaders*
+&emsp;Type: [HttpHeaders](httpheaders-data-type.md)
+An instance of the [HttpHeaders](httpheaders-data-type.md) data type.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

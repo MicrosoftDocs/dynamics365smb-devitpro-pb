@@ -1,28 +1,37 @@
 ---
 title: "CuegroupLayout Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: jswymer
+author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # CuegroupLayout Property
-Sets whether a `cuegroup` control displays in the wide layout.   
-  
-## Applies To  
-  
--   `cuegroup` controls
-  
-## Property Values  
+> **Version**: _Available from runtime version 1.0._
 
-`wide` sets the `cuegroup` control to the wide layout; otherwise, the control uses the normal layout.     
+Specifies if the layout is wide.
+
+## Applies to
+-   Page Group
+
+## Property Value
+
+|Value|Description|
+|-----------|---------------------------------------|
+|**Wide**|Sets the `cuegroup` control to the wide layout|
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Syntax
-```
+
+```AL
 CuegroupLayout = wide;
 ```
   
@@ -30,7 +39,8 @@ CuegroupLayout = wide;
 For more information about the wide layout for Cues, see [Normal and wide layout for Cues](../devenv-cues-action-tiles.md#CueWideLayout).
 
 ## Example
-```
+
+```AL
 cuegroup(SalesCueContainer)
 {
     CaptionML=ENU='Sales Invoices';
@@ -43,10 +53,8 @@ cuegroup(SalesCueContainer)
 } 
 ```
   
-## See Also  
+## See Also
+
 [Properties](devenv-properties.md)
 [Rowspan Property](devenv-rowspan-property.md)  
 [Columnspan Property](devenv-columnspan-property.md)
-<!--
-[How to: Arrange Fields in Rows and Columns Using the GridLayout Control](How-to-Arrange-Fields-in-Rows-and-Columns-Using-the-GridLayout-Control.md) 
--->

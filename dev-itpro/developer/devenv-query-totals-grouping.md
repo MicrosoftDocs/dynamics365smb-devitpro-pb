@@ -2,7 +2,7 @@
 title: Query Totals and Grouping
 description: Perform calculation on the fields of a column and return the calculated value in the dataset. Know the Dynamics NAV Total methods for running queries.
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,14 +27,14 @@ In a query object, you use aggregate methods to perform a calculation on the fie
 
 Except for the `Count` method, you can only use an aggregate method \(`Sum`, `Average`, `Min`, and `Max`\) on a field that has a numeric data type of [Decimal](methods-auto/decimal/decimal-data-type.md), [Integer](methods-auto/integer/integer-data-type.md), [BigInteger](methods-auto/biginteger/biginteger-data-type.md), or [Duration](methods-auto/duration/duration-data-type.md). To set up an aggregate on a column, you set the column's [Method Property](properties/devenv-method-property.md).
 
-```
+```AL
 column(Name; Field)
 {
     Method = Sum|Average|Min|Max|Count;
 }
 ```
 
-Setting an aggregate method on a column will automatically group the resultant data set by the other columns in the query. This means that records that have matching values for the other columns are grouped together into a single row in the results. The aggregate method is then applied against the group and a summary value returned in the row. This is similar to the GROUPED BY clause in SQL SELECT statements (see [Creating Queries with Aggregates in SQL](devenv-query-totals-grouping.md#SQL)).
+Setting an aggregate method on a column will automatically group the resultant data set by the other columns in the query. This means that records that have matching values for the other columns are grouped together into a single row in the results. The aggregate method is then applied against the group and a summary value returned in the row. This is similar to the GROUP BY clause in SQL SELECT statements (see [Creating Queries with Aggregates in SQL](devenv-query-totals-grouping.md#SQL)).
 
 The aggregate methods and grouping are further explained in the following sections.  
   
@@ -42,7 +42,7 @@ The aggregate methods and grouping are further explained in the following sectio
 
 The following sample query object retrieves the number of line items in every sales order for each customer. The query links the **Customer** table and the **Sales Line** table. In its current state, the query does not specify the Method property so it does implement aggregate method.  
   
-```
+```AL
 query 50101 "Customer_Sales_Quantity"
 {
     QueryType = Normal;
@@ -88,13 +88,13 @@ The following table represents a simplified version of the resulting dataset for
 |20000|Selangorian Ltd.|400|  
 |30000|Blanemark Hifi|350|  
   
-The following sections explain how you can modify the query to implement the different aggregate methods by simple changing the value of the [Method property](properties/devenv-method-property.md). 
+The following sections explain how you can modify the query to implement the different aggregate methods by changing the value of the [Method property](properties/devenv-method-property.md). 
   
 ##  <a name="Sum"></a> Sum
 
 The `Sum` method adds the values of all fields for the specified column within a group. To set up a `Sum` method on the **Quantity** column of the sample query, set the `Method` property to `Sum`. The query is automatically grouped by the **No.** and **Name** columns. 
 
-```
+```AL
 ...
 column(Qty; Quantity)
 {
@@ -116,7 +116,7 @@ Looking at the sample query, you can use `Sum` method to get the total number of
 
  The `Average` method calculates the average value of the fields in the column within a group. To set up an Average method on the **Quantity** column of the sample query, set the `Method` property to `Average`. The query is automatically grouped by the **No.** and **Name** columns:
 
-```
+```AL
 ...
 column(Qty; Quantity)
 {
@@ -137,7 +137,7 @@ Looking at the sample query, you can use `Average` method to get the average num
 
  The `Min` method retrieves the lowest value of fields in the column within a group. To set up a `Min` method on the **Quantity** column of the sample query, set the `Method` property to `Min`. The name of the **Quantity** column automatically changes to **Min\_Quantity** and the query is automatically grouped by the **No.** and **Name** columns:
 
-```
+```AL
 ...
 column(Qty; Quantity)
 {
@@ -158,7 +158,7 @@ Looking at the sample query, you can use `Min` method to get the least number of
 
  The `Max` method retrieves the highest value of fields in the column within a group. To set up a `Max` method on the **Quantity** column of the sample query, set the `Method` property to `Max`. The name of the **Quantity** column automatically changes to **Max\_Quantity** and the query is automatically grouped by the **No.** and **Name** columns:
 
-```
+```AL
 ...
 column(Qty; Quantity)
 {
@@ -182,7 +182,7 @@ The `Count` method returns the number of records from the data item table that c
 To set up a `Count` method in the sample query, the `column` element definition cannot include a source table; only a name. Therefore, you can delete the reference to the `Quantity` field in the `column(Qty; Quantity)` element and set the `Method`property to `Count`:  
 
   
-```
+```AL
 ...
                 column(Qty)
                 {

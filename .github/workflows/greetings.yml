@@ -1,0 +1,23 @@
+name: Greetings
+
+
+on: 
+  pull_request:
+    branches:
+      - live
+  issues:
+    branches:
+      - live
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/first-interaction@v1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+
+        issue-message: >
+          Hello, thanks for your feedback. We triage this feedback regularly and use it to plan for future documentation improvements.
+          If you have a suggestion for a product idea, please go to [Ideas](https://aka.ms/bcideas).
+        pr-message: 'Hello, thanks for your contribution, much appreciated. We will triage and review your PR.'

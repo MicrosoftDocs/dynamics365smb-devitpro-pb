@@ -2,7 +2,7 @@
 title: "Monitoring Long Running SQL Queries to the Event Log"
 description: This topic provides an overview on how to monitor long running SQL queries in the event log starting with NAV 2017. 
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -10,40 +10,59 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
-# Monitoring Long Running SQL Queries
+# Monitoring and Analyzing Long Running SQL Queries
 
 <!-- This topic needs to be updated for the BC autumn release. -->
  
-[!INCLUDE[nav2017](../developer/includes/nav2017.md)] is the first version that allows long running SQL queries to be logged to the Windows Event Log. The queries are logged when the application communicates with the database and the call to the database takes too long. Long running queries can also be emitted to Microsoft Azure Application Insights. 
+[!INCLUDE[nav2017](../developer/includes/nav2017.md)] was the first version that allows long running SQL queries to be logged to the Windows Event Log. The queries are logged when the application communicates with the database and the call to the database takes too long. Starting in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 release wave 2, long running queries can also be emitted as telemetry to Microsoft Azure Application Insights. Using Application Insights requires that you first enable it on your tenant.
 
-## Defining Long Running SQL Queries 
-The time logged in long running SQL queries is the time spent on the called database as seen from the server. There are multiple reasons that can cause this delay, such as the database waiting for a lock to be released, or the database executing an operation that performs badly due to missing indexes.
+## <a name="threshold"></a>Defining the long running SQL queries threshold
 
-The threshold of when a query is logged is controlled by the [!INCLUDE[server](../developer/includes/server.md)] configuration setting **SqlLongRunningThreshold**. The default value is 1000 milliseconds (ms). For more information about setting the **SqlLongRunningThreshold**, see [Configuring Business Central Server](configure-server-instance.md), database settings section. 
+The time logged when a SQL query runs is the time spent on the called database as seen from the server. There are multiple reasons that can cause a delay. For example, a delay happens when the database waits for a lock to release. Or it runs an operation that's missing indexes.
 
-## Changing Configuration Values
-With [!INCLUDE[prodshort](../developer/includes/prodshort.md)], some of the configuration values for the server can be changed in the memory of the server, without doing a server restart. To change the threshold dynamically to 2000 ms, run the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Administration Shell as Administrator and then type the following PowerShell cmdlet:
+The threshold of when a SQL query is considered to be long running is controlled by the [!INCLUDE[server](../developer/includes/server.md)] configuration setting **SqlLongRunningThreshold**. The default value is 1000 milliseconds (ms). By default, the threshold is set to 1000 milliseconds. In this case, if a SQL query runs longer 1000 ms, a message is recorded in the event log and emitted as telemetry. The message indicates that the action took longer than expected or longer than the given threshold. For more information about setting the **SqlLongRunningThreshold** by using [!INCLUDE[admintool](../developer/includes/admintool.md)], see [Configuring Business Central Server](configure-server-instance.md#Database).
+
+You can also change the setting by [Set-NAVServerConfiguration cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) in [!INCLUDE[adminshell](../developer/includes/adminshell.md)]. The cmdlet includes the `-ApplyTo Memory`parameter that enables you to change the setting without doing a server restart. For example, to change the threshold dynamically to 2000 ms, run the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Administration Shell as Administrator and then type the following PowerShell cmdlet:
 
 ```
 Set-NAVServerConfiguration -ServerInstance <ServerInstanceName> -KeyName SqlLongRunningThreshold -KeyValue 2000 -ApplyTo Memory
 ```
 
-## <a name="ApplicationInsights"></a>Monitoring Long Running SQL Queries using the Application Insights
+## Monitor and analyze data
+
+To use the Windows Event Log, see [Troubleshooting: Using the Event Viewer to Monitor Long Running SQL Queries](troubleshoot-long-running-queries-using-event-log.md).
+
+To set up and use Application Insights, see [Enabling Application Insights for Tenant Telemetry](telemetry-enable-application-insights.md).
+<!-- 
+## <a name="ApplicationInsights"></a>Enable Sending Telemetry to Application Insights
 
 If you have access to an Application Insights resource in Microsoft Azure, you can configure your tenants to send long running query telemetry there for analysis and presentation.
 
-### Enable Sending Telemetry to Application Insights
+1. To enable this feature, you will first need the instrumentation key of the Application Insights resource, which you can get from the [Azure Portal](/azure/bot-service/bot-service-resources-app-insights-keys?view=azure-bot-service-4.0).
 
-To enable this feature, you will first need the instrumentation key of the Application Insights resource, which you can get from the [Azure Portal](/azure/bot-service/bot-service-resources-app-insights-keys?view=azure-bot-service-4.0). Once you have the key, the way to enable this feature depends on whether your [!INCLUDE[server](../developer/includes/server.md)] instance is configured as a single-tenant or multitenant instance. 
+2. Once you have the key, the way to enable this feature depends on whether your [!INCLUDE[server](../developer/includes/server.md)] instance is configured as a single-tenant or multitenant instance. 
 
-- For a single-tenant server instance, you enable this feature on the server instance itself by adding the key to the **Application Insights Instrumentation Key** setting of the server instance. For more information, see [Configuring Business Central Server](configure-server-instance.md#General).
+    - For a single-tenant server instance, you enable this feature on the server instance itself by adding the key to the **Application Insights Instrumentation Key** setting of the server instance. For more information, see [Configuring Business Central Server](configure-server-instance.md#General).
+    
+    - For a multitenant server instance, you enable this feature on a per-tenant basis when you mount tenants on the [!INCLUDE[server](../developer/includes/server.md)] instance. The [Mount-NAVTenant cmdlet](/powershell/module/microsoft.dynamics.nav.management/mount-navtenant?view=businesscentral-ps) includes the `-ApplicationInsightsKey` parameter that you set to the instrumentation key, for example:
+    
+        ```
+        Mount-NAVTenant -ServerInstance BC150 -Tenant tenant1 -DatabaseName "Demo Database BC (15-0)" -DatabaseServer localhost -DatabaseInstance BCDEMO -ApplicationInsightsKey 11111111-2222-3333-4444-555555555555
+        ```
 
-- For a multitenant server instance, you enable this feature on a per-tenant basis when you mount tenants on the [!INCLUDE[server](../developer/includes/server.md)] instance. The [Mount-NAVTenant cmdlet](/powershell/module/microsoft.dynamics.nav.management/mount-navtenant?view=businesscentral-ps) includes the `-ApplicationInsightsKey` parameter that you set to the instrumentation key, for example:
+## Monitor and analyze data
 
-    ```
-    Mount-NAVTenant -ServerInstance BC150 -Tenant tenant1 -DatabaseName "Demo Database BC (15-0)" -DatabaseServer localhost -DatabaseInstance BCDEMO -ApplicationInsightsKey 11111111-2222-3333-4444-555555555555
-    ```
+If you are using the event log, refer to the following articles:
 
+[Troubleshooting: Using the Event Log to Monitor Long Running SQL Queries](troubleshoot-long-running-queries-using-event-log.md)
+
+[Troubleshooting: Analyzing Long Running SQL Queries Involving FlowFields by Disabling SmartSQL](troubleshooting-queries-involving-flowfields-by-disabling-smartsql.md)
+
+If you are using application Insights, see:
+
+[Analyzing Long Running Operation (SQL Query) Telemetry](telemetry-long-running-sql-query-trace.md).-->
+
+<!--
 ### <a name="LRSQLQuery"></a>Dimensions for long running SQL queries emitted to Application Insights
 
 The following tables explains the columns included in long running query events emitted to Application Insights. Bold text indicates that the value of the columns is a constant. Some columns are standard for Application Insights. These are indicated by *Application Insights*.
@@ -102,12 +121,14 @@ If you have access to an Application Insights resource in Microsoft Azure, you c
 > [!NOTE]
 > Currently, this is only available in a multitenant deployment, where the [!INCLUDE[server](../developer/includes/server.md)] instance is configured as a multitenant instance.
 
+-->
 
 
 ## See Also
 
 [Troubleshooting: Using the Event Log to Monitor Long Running SQL Queries](troubleshoot-long-running-queries-using-event-log.md)  
 [Troubleshooting: Analyzing Long Running SQL Queries Involving FlowFields by Disabling SmartSQL](troubleshooting-queries-involving-flowfields-by-disabling-smartsql.md)  
+[Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Set-NAVServerConfiguration](https://go.microsoft.com/fwlink/?linkid=401394)  
 [Tools for Monitoring Performance Counters and Events](tools-monitor-performance-counters-and-events.md)  
 [Monitoring Business Central Server Using Performance Counters](monitor-server-using-performance-counters.md)  

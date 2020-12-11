@@ -1,7 +1,8 @@
 ---
 title: "OnPostXMLport Trigger"
+description: "OnPostXMLport trigger in AL for Business Central."
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 # OnPostXMLport Trigger
 Runs after the XMLPort is run.  
   
-## Applies To  
+## Applies to  
 - XMLPorts  
   
 ## Remarks  

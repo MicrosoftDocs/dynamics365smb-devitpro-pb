@@ -1,7 +1,8 @@
 ---
 title: "OnModify Trigger"
+description: "OnModify trigger in AL for Business Central."
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +14,7 @@ author: SusanneWindfeldPedersen
 # OnModify Trigger
 Runs when a user modifies an existing record in a table.  
   
-## Applies To  
+## Applies to  
 - Tables  
 - Table extensions
   

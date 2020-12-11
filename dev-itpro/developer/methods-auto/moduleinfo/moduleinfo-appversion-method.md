@@ -1,8 +1,8 @@
 ---
-title: "AppVersion Method"
+title: "ModuleInfo.AppVersion Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# AppVersion Method
+# ModuleInfo.AppVersion Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets the version of the specified application's metadata.
 
 
@@ -21,18 +23,18 @@ Gets the version of the specified application's metadata.
 ```
 AppVersion :=   ModuleInfo.AppVersion()
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 
 ## Parameters
-*ModuleInfo*  
-&emsp;Type: [ModuleInfo](moduleinfo-data-type.md)  
-An instance of the [ModuleInfo](moduleinfo-data-type.md) data type.  
+*ModuleInfo*
+&emsp;Type: [ModuleInfo](moduleinfo-data-type.md)
+An instance of the [ModuleInfo](moduleinfo-data-type.md) data type.
 
 ## Return Value
-*AppVersion*  
-&emsp;Type: [Version](../version/version-data-type.md)  
-The version of the specified application's metadata.  
+*AppVersion*
+&emsp;Type: [Version](../version/version-data-type.md)
+The version of the specified application's metadata.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

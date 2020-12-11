@@ -1,0 +1,1 @@
+**DISCONTINUED AFTER:** Business Central 2019 Release Wave 1

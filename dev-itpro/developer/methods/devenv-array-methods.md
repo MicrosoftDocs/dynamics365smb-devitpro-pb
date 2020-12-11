@@ -1,13 +1,13 @@
 ---
 title: "Array Methods"
+description: "Methods of the type array in AL for Business Central"
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: dynamics365-business-central
-ms.assetid: c4141c46-ce87-480a-98eb-390a0fe0573b
 author: SusanneWindfeldPedersen
 ---
 
@@ -22,7 +22,8 @@ The length of a dimension determines the valid range of indices for that dimensi
 ## Syntax 
 
 The syntax for declaring an array of a specific type is the following:
-```
+
+```AL
 Array [Dimension] of Type;
 ```
 
@@ -30,23 +31,24 @@ The `Dimension` is a comma-delimited list of integer literals greater than 0, wh
 
 The `Type` is the element type of the array.
 
-## Code Example 
+## Code example 
+
 The following code sample shows the declaration of an array with a simple element type.
 
-```
+```AL
 ArrayOfInteger: Array [10] of Integer;
 ```
 
 The following code sample shows the declaration of an array with an element type of a fixed length.
 
-```
+```AL
 ArrayOfCode: Array [10] of Code[20];
 ArrayOfText: Array [10] of Text[20];
 ```
 
 The following code sample shows the declaration of an array with a complex element type.
 
-```
+```AL
 ArrayOfCodeunits: Array [10] of Codeunit 10;
 ArrayOfQueryes: Array [10] of Query "My Query";
 ArrayOfTemporaryRecords: Array [10] of Record 10 Temporary;
@@ -54,15 +56,13 @@ ArrayOfDotNetVariables: Array [10] of DotNet String;
 ```
 
 ## Methods
+
 The following AL methods for arrays are available:  
 
-[ARRAYLEN Method](../methods-auto/system/system-arraylen-method.md) 
-
-[COMPRESSARRAY Method](../methods-auto/system/system-compressarray-method.md)
-
-[COPYARRAY Method](../methods-auto/system/system-copyarray-method.md)
-
-
+[ArrayLen Method](../methods-auto/system/system-arraylen-method.md)  
+[CompressArray Method](../methods-auto/system/system-compressarray-method.md)  
+[CopyArray Method](../methods-auto/system/system-copyarray-method.md)  
 
 ## See Also  
-[AL Method Reference](devenv-al-method-reference.md)  
+
+[AL Method Reference](../methods-auto/library.md)  

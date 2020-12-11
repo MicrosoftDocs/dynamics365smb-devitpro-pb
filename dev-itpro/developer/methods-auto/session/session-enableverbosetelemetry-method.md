@@ -1,8 +1,8 @@
 ---
-title: "EnableVerboseTelemetry Method"
+title: "Session.EnableVerboseTelemetry Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# EnableVerboseTelemetry Method
+# Session.EnableVerboseTelemetry Method
+> **Version**: _Available from runtime version 3.2._
+
 Temporarily enable verbose telemetry on the current session.
 
 > [!NOTE]
@@ -23,8 +25,8 @@ Temporarily enable verbose telemetry on the current session.
 ```
  Session.EnableVerboseTelemetry(EnableFullALFunctionTracing: Boolean, Duration: Duration)
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *EnableFullALFunctionTracing*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  

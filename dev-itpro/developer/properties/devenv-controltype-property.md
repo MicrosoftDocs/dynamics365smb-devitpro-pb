@@ -1,7 +1,7 @@
 ---
 title: "ControlType Property"
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,19 +12,18 @@ caps.latest.revision: 6
 author: SusanneWindfeldPedersen
 ---
 
- 
-
 # ControlType Property
+
 Use this property when you select a control type.  
   
-## Applies To  
- This property displays the following control types for you to choose from:  
+## Applies to  
+
+This property displays the following control types for you to choose from:  
   
--   Container  
+- Container  
+- Group  
+- Field  
   
--   Group  
-  
--   Field  
-  
-## See Also  
- [Properties](devenv-properties.md)
+## See Also
+
+[Properties](devenv-properties.md)

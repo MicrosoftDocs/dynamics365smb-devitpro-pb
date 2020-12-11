@@ -8,7 +8,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ---
 
 # [!INCLUDE[admintool](../developer/includes/admintool.md)]

@@ -1,8 +1,9 @@
 ---
-title: "Read Method"
+title: "BigText.Read Method"
+description: "The BigText Read Method in AL for Business Central"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +14,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Read Method
+# BigText.Read Method
+> **Version**: _Available from runtime version 1.0._
+
 Streams a BigText object that is stored as a BLOB in a table to a BigText variable.
 
 
@@ -22,9 +25,9 @@ Streams a BigText object that is stored as a BLOB in a table to a BigText variab
 [Ok := ]  BigText.Read(InStream: InStream)
 ```
 ## Parameters
-*BigText*  
-&emsp;Type: [BigText](bigtext-data-type.md)  
-An instance of the [BigText](bigtext-data-type.md) data type.  
+*BigText*
+&emsp;Type: [BigText](bigtext-data-type.md)
+An instance of the [BigText](bigtext-data-type.md) data type.
 
 *InStream*  
 &emsp;Type: [InStream](../instream/instream-data-type.md)  
@@ -32,9 +35,9 @@ The InStream object type that you use to stream a BLOB to a BigText variable.
 
 
 ## Return Value
-*Ok*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the read transaction was successful, otherwise **false**.  
+*Ok*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+**true** if the read transaction was successful, otherwise **false**.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

@@ -2,7 +2,7 @@
 title: "FieldRef Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # FieldRef Data Type
+> **Version**: _Available from runtime version 1.0._
+
 Identifies a field in a table and gives you access to this field.
 
 
@@ -22,7 +24,7 @@ The following methods are available on instances of the FieldRef data type.
 
 |Method name|Description|
 |-----------|-----------|
-|[Number()](fieldref-number-method.md)|Gets the number of a field as a string.|
+|[Number()](fieldref-number-method.md)|Gets the number of a field as an integer.|
 |[Name()](fieldref-name-method.md)|Gets the name of a field as a string.|
 |[Caption()](fieldref-caption-method.md)|Gets the current caption of a field as a String.|
 |[Type()](fieldref-type-method.md)|Gets the data type of the field that is currently selected.|
@@ -32,6 +34,8 @@ The following methods are available on instances of the FieldRef data type.
 |[OptionCaption()](fieldref-optioncaption-method.md)|Gets the option caption of the field that is currently selected.|
 |[GetEnumValueName(Integer)](fieldref-getenumvaluename-method.md)|Gets an Enum value (or Option member) name from the Enum metadata for the field that is currently selected.|
 |[GetEnumValueNameFromOrdinalValue(Integer)](fieldref-getenumvaluenamefromordinalvalue-method.md)|Gets an Enum value (or Option member) name from the Enum metadata for the field that is currently selected.|
+|[GetEnumValueCaption(Integer)](fieldref-getenumvaluecaption-method.md)|Gets an Enum value (or Option member) caption for the from the Enum metadata for the field that is currently selected.|
+|[GetEnumValueCaptionFromOrdinalValue(Integer)](fieldref-getenumvaluecaptionfromordinalvalue-method.md)|Gets an Enum value (or Option member) caption for the from the Enum metadata for the field that is currently selected.|
 |[GetEnumValueOrdinal(Integer)](fieldref-getenumvalueordinal-method.md)|Gets the Enum value (or Option member) ordinal value from the Enum metadata for the field that is currently selected.|
 |[EnumValueCount()](fieldref-enumvaluecount-method.md)|Gets the number of Enum values (or Option members) from the Enum metadata for the field that is currently selected.|
 |[Active()](fieldref-active-method.md)|Checks whether the field that is currently selected is enabled.|
@@ -59,6 +63,7 @@ The following methods are available on instances of the FieldRef data type.
 |[TestField(DateTime)](fieldref-testfield-datetime-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|
 |[TestField(Time)](fieldref-testfield-time-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|
 |[TestField(Variant)](fieldref-testfield-variant-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|
+|[TestField(Enum)](fieldref-testfield-anyenum-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|
 |[TestField(Any)](fieldref-testfield-joker-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|
 |[Relation()](fieldref-relation-method.md)|Finds the table relationship of a given field.|
 |[SetRange([Any] [, Any])](fieldref-setrange-method.md)|Sets a simple filter on a field, such as a single range or a single value.|

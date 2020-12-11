@@ -1,8 +1,8 @@
 ---
-title: "SqlStatementsExecuted Method"
+title: "SessionInformation.SqlStatementsExecuted Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# SqlStatementsExecuted Method
+# SessionInformation.SqlStatementsExecuted Method
+> **Version**: _Available from runtime version 4.0._
+
 Gets the amount of SQL statements executed on the session, since the session started.
 
 
@@ -21,14 +23,14 @@ Gets the amount of SQL statements executed on the session, since the session sta
 ```
 SqlStatementsExecuted :=   SessionInformation.SqlStatementsExecuted()
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 
 
 ## Return Value
-*SqlStatementsExecuted*  
-&emsp;Type: [BigInteger](../biginteger/biginteger-data-type.md)  
-The amount of SQL statements executed on the session, since the session started.  
+*SqlStatementsExecuted*
+&emsp;Type: [BigInteger](../biginteger/biginteger-data-type.md)
+The amount of SQL statements executed on the session, since the session started.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

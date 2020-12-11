@@ -3,14 +3,13 @@ title: "Consulting"
 description: ""
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 11/20/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: solsen
-ms.assetID: be636361-9de8-4efb-ad50-445e4b7b3255
 ---
 
 # Consulting
@@ -21,7 +20,7 @@ To help business users get started quickly, Microsoft has added a catalog of con
 
 Business users are looking for experienced partners to help them get started with confidence by offering quality consulting services designed to deliver predictable outcomes. Implementation partners therefore play a vital role in helping customers to both assess their needs and evaluate and deploy the right solutions that can help them meet their business goals. 
 For this reason, AppSource supports the listing of consulting services offerings from System Integrator (SI) partners of Microsoft – the goal being to enable business users to connect swiftly with the expert services they need.  
-AppSource consulting services offerings are customer-specific engagements that have a defined outcome, are fixed in scope and duration, and have a fixed price or free. Business users can easily request to be contacted by partners in a friction-free manner. Partners receive a notification in their CRM system and aim to respond to users within 48hrs after being contacted. 
+AppSource consulting services offerings are customer-specific engagements that have a defined outcome, are fixed in scope and duration, and have a fixed price or are free. Business users can easily request to be contacted by partners in a friction-free manner. Partners receive a notification in their CRM system and aim to respond to users within 48hrs after being contacted. 
 
 ## How can I, as a user, find the consulting services that my business requires?
 
@@ -46,10 +45,7 @@ If you are interested in listing consulting services on AppSource, you can find 
 ## Where do I learn more?
 
 To learn more about Microsoft AppSource consulting services offerings select the following links:  
-- [AppSource Consulting Offerings](https://appsource.microsoft.com/marketplace/consulting-services?country=US&page=1) 
+- [AppSource Consulting Offerings](https://appsource.microsoft.com/marketplace/consulting-services?country=US&page=1)  
 - [Partner Eligibility](https://smp-cdn-prod.azureedge.net/documents/Microsoft%20AppSource%20Partner%20Listing%20Guidelines.pdf)  
 - [Partner Nomination Form](https://appsource.microsoft.com/partners/list-consulting-service)  
-- [Business Central Learning Catalog](https://go.microsoft.com/fwlink/?linkid=2002101)
-
-
-
+- [Business Central Learning Catalog](https://go.microsoft.com/fwlink/?linkid=2002101)  

@@ -2,7 +2,7 @@
 title: Report Properties
 description: This topic lists report properties that apply to controls of a report object.
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,6 +19,7 @@ This topic lists properties of the report object.
 |[AccessByPermission Property](devenv-accessbypermission-property.md)|<ul><li>Report Object</li></ul>|
 |[AdditionalSearchTerms Property](devenv-additionalsearchterms-property.md)|<ul><li>Report object</li></ul>|
 |[AdditionalSearchTermsML Property](devenv-additionalsearchtermsml-property.md)|<ul><li>Report object</li></ul>|
+|[AllowScheduling Property](devenv-allowscheduling-property.md)|<ul><li>Report object</li></ul>|
 |[ApplicationArea Property](devenv-applicationarea-property.md)|<ul><li>Report Object</li></ul>|
 |[AutoCalcField Property](devenv-autocalcfield-property.md)|<ul><li>Column controls</li></ul>|
 |[AutoFormatExpression Property](devenv-autoformatexpression-property.md)|<ul><li>Column controls</li></ul>|
@@ -27,21 +28,20 @@ This topic lists properties of the report object.
 |[CaptionML Property](devenv-captionml-property.md)|<ul><li>Report Object</li><li>Report Labels</li><li>Column controls</li></ul>|
 |[CalcFields Property](devenv-calcfields-property.md)|<ul><li>DataItem control</li></ul>|
 |[ContextSensitiveHelpPage Property](devenv-contextsensitivehelppage-property.md)|<ul><li>Report Object</li></ul>|
+|[DataAccessIntent Property](devenv-dataaccessintent-property.md)|<ul><li>Report Object</li></ul>|
 |[DataItemLink Property \(Reports\)](devenv-dataitemlink-reports-property.md)|<ul><li>DataItem controls</li></ul>|
-|[DataItemLinkReference Property](devenv-dataitemlink-reference-property.md)|<ul><li>DataItem controls</li></ul>|
-|[DataItemTable Property](devenv-dataitemtable-property.md)|<ul><li>DataItem controls</li></ul>|
 |[DataItemTableView Property](devenv-dataitemtableview-property.md)|<ul><li>DataItem controls</li></ul>|
 |[DecimalPlaces Property](devenv-decimalplaces-property.md)|<ul><li>Column controls</li></ul>|
-[DefaultLayout Property](devenv-defaultlayout-property.md)|<ul><li>Report Object</li></ul>|
+|[DefaultLayout Property](devenv-defaultlayout-property.md)|<ul><li>Report Object</li></ul>|
 |[Description Property](devenv-description-property.md)|<ul><li>Report Object</li><li>Column controls</li><li>Report Labels</li><li>DataItem controls</li></ul>|
 |[EnableExternalAssemblies Property](devenv-enableexternalassemblies-property.md)|<ul><li>Report Object</li></ul>|
 |[EnableExternalImages Property](devenv-enableexternalimages-property.md)|<ul><li>Report Object</li></ul>|
 |[EnableHyperlinks Property](devenv-enablehyperlinks-property.md)|<ul><li>Report Object</li></ul>|
-|[ID Property](devenv-id-property.md)|<ul><li>Report Object</li><li>DataItem controls</li><li>Column controls</li><li>Report Labels</li></ul>|
+|[ExecutionTimeout Property](devenv-executiontimeout-property.md)|<ul><li>Report Object</li></ul>|
 |[IncludeCaption Property](devenv-includecaption-property.md)|<ul><li>Column controls</li></ul>| 
-|[Indentation Property \(Reports\)](devenv-indentation-reports-property.md)|<ul><li>DataItem controls</li><li>Column controls</li><ul>|
+|[MaximumDataSetSize Property](devenv-maximumdatasetsize-property.md)|<ul><li>Report Object</li></ul>|
+|[MaximumDocumentCount Property](devenv-maximumdocumentcount-property.md )|<ul><li>Report Object</li></ul>|
 |[MaxIteration Property](devenv-maxiteration-property.md)|<ul><li>DataItem controls</li></ul>|
-|[Name Property](devenv-name-property.md)|<ul><li>Report Object</li><li>DataItem controls</li><li>Column controls</li><li>Report Labels</li></ul>|
 |[ObsoleteReason Property](devenv-obsoletereason-property.md)|<ul><li>Report Object</li><li>DataItem controls</li><li>Column controls</li></ul>|
 |[ObsoleteState Property](devenv-obsoletestate-property.md)|<ul><li>Report Object</li><li>DataItem controls</li><li>Column controls</li></ul>|
 |[OptionCaption Property](devenv-optioncaption-property.md)|<ul><li>Column controls</li></ul>|

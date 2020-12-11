@@ -1,8 +1,8 @@
 ---
-title: "GetRoot Method"
+title: "XmlDocument.GetRoot Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# GetRoot Method
+# XmlDocument.GetRoot Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets the root element of the XML tree for this document.
 
 
@@ -22,9 +24,9 @@ Gets the root element of the XML tree for this document.
 [Ok := ]  XmlDocument.GetRoot(var Result: XmlElement)
 ```
 ## Parameters
-*XmlDocument*  
-&emsp;Type: [XmlDocument](xmldocument-data-type.md)  
-An instance of the [XmlDocument](xmldocument-data-type.md) data type.  
+*XmlDocument*
+&emsp;Type: [XmlDocument](xmldocument-data-type.md)
+An instance of the [XmlDocument](xmldocument-data-type.md) data type.
 
 *Result*  
 &emsp;Type: [XmlElement](../xmlelement/xmlelement-data-type.md)  
@@ -32,9 +34,9 @@ The root element of the XML tree for this document.
 
 
 ## Return Value
-*Ok*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the operation was successful; otherwise **false**.  If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+*Ok*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+**true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

@@ -1,8 +1,8 @@
 ---
-title: "SelectStr Method"
+title: "Text.SelectStr Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# SelectStr Method
+# Text.SelectStr Method
+> **Version**: _Available from runtime version 1.0._
+
 Retrieves a substring from a comma-separated string.
 
 
@@ -21,8 +23,8 @@ Retrieves a substring from a comma-separated string.
 ```
 NewString :=   Text.SelectStr(Number: Integer, CommaString: String)
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *Number*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
@@ -34,9 +36,9 @@ A string that contains substrings separated by commas. The maximum length of thi
 
 
 ## Return Value
-*NewString*  
-&emsp;Type: [String](../string/string-data-type.md)  
-The substring from the comma-separated string at the index specified.  
+*NewString*
+&emsp;Type: [String](../string/string-data-type.md)
+The substring from the comma-separated string at the index specified.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -50,7 +52,7 @@ The substring from the comma-separated string at the index specified.
   
  Quotes are not supported. For example, a,b,"c,d",e is treated as a five-element substring where substring 4 is d".  
   
-## Example  
+## Example 1
  
 ```  
 var
@@ -86,7 +88,8 @@ end;
   
  **>33\<**  
   
-## Example   
+## Example 2
+
 ```  
 var
     CommaStr2: Text[60];  

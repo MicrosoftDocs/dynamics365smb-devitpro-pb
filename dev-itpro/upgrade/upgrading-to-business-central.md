@@ -8,7 +8,7 @@ ms.topic: article
 ms.author: jswymer
 author: jswymer
 ms.service: "dynamics365-business-central"
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ---
 # Upgrading to [!INCLUDE[prodlong](../developer/includes/prodlong.md)]
 
@@ -17,7 +17,9 @@ This section provides an overview of how to upgrade to [!INCLUDE[prodshort](../d
 > [!TIP]
 > Before you decide how to upgrade your solution, make sure that you read the upgrade considerations at [Important Information and Considerations for Before Upgrading to [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](Upgrade-Considerations.md).  
 
-Depending on your decision to upgrade to either [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online or on-premises, different scenarios are supported. Read the upgrade considerations, and then revise the supported scenarios in the respective sections. If you cannot find guidance for your migration scenario, you can check at the Ideas site if someone else has already suggested support for the same migration path. For more information, see [https://aka.ms/businesscentralideas](https://aka.ms/businesscentralideas).  
+Depending on your decision to upgrade to either [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online or on-premises, different scenarios are supported. Read the upgrade considerations, and then revise the supported scenarios in the respective sections. If you cannot find guidance for your migration scenario, you can check at the Ideas site if someone else has already suggested support for the same migration path. For more information, see [https://aka.ms/businesscentralideas](https://aka.ms/businesscentralideas).
+
+Depending on which version you are upgrading from, you may have to convert or migrate the existing Help for your solution. For more information, see [Migrate Legacy Help to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Format](migrate-help.md) and [User Assistance Model](../user-assistance.md).  
 
 ## See Also
 

@@ -1,7 +1,8 @@
 ---
 title: "OnAfterGetRecord (XMLports) Trigger"
+description: "OnAfterGetRecord trigger on XMLports in AL for Business Central."
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 # OnAfterGetRecord (XMLports) Trigger
 Runs after a record is retrieved from a table and before it is exported to the XML document.  
   
-## Applies To  
+## Applies to  
 - XMLports  
   
 ## Remarks  

@@ -2,7 +2,7 @@
 title: "Notifications"
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ ms.service: "dynamics365-business-central"
  
 
 # Notifications
-Notifications provide a programmatic way to send non-intrusive information to the User Interface (UI) in the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)]. Notifications differ from messages initiated by the MESSAGE method. Messages are modal, which means users are typically required to address the message and take some form of corrective action before they continue working. On the other hand, notifications are non-modal. Their purpose is to give users information about a current situation, but do not require any immediate action or block users from continuing with their current task. For example, you could have a notification that a customer's credit limit is exceeded.
+Notifications provide a programmatic way to send non-intrusive information to the User Interface (UI) in the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)]. Notifications differ from messages initiated by the **Message** method. Messages are modal, which means users are typically required to address the message and take some form of corrective action before they continue working. On the other hand, notifications are non-modal. Their purpose is to give users information about a current situation, but do not require any immediate action or block users from continuing with their current task. For example, you could have a notification that a customer's credit limit is exceeded.
 
 ## Notifications in the UI
 In the UI, notifications appear in the **Notification** bar (similar to validation errors) at the top of the page on which a user is currently working. The user can then choose to dismiss the notification, which clears it. Or, if actions are defined on notification, the user can choose one of the actions.
@@ -29,85 +29,85 @@ By using the **Notification** and **NotificationScope** data types and methods i
 
 |  Method  |  Description  |
 |------------|---------------|
-|[MESSAGE](methods/devenv-message-method-notification.md)  |Specifies the content of the notification that appears in the UI.|
-|[SCOPE](methods/devenv-scope-method-notification.md)     |Specifies the scope in which the notification appears.|
-|[SEND](methods/devenv-send-method-notification.md)  |Sends the notification to be displayed by the client.|
-|[ADDACTION](methods/devenv-addaction-method-notification.md)  |Adds an action on the notification.|
-|[SETDATA](methods/devenv-setdata-method-notification.md)  |Sets a data property value for the notification|
-|[GETDATA](methods/devenv-getdata-method-notification.md)  |Gets a data property value from the notification.|
-|[RECALL](methods/devenv-recall-method-notification.md)|Recalls a sent notification.|
+|[Message](methods-auto/notification/notification-message-method.md)  |Specifies the content of the notification that appears in the UI.|
+|[Scope](methods-auto/notification/notification-scope-method.md)     |Specifies the scope in which the notification appears.|
+|[Send](methods-auto/notification/notification-send-method.md)  |Sends the notification to be displayed by the client.|
+|[AddAction](methods-auto/notification/notification-addaction-method.md)  |Adds an action on the notification.|
+|[SetData](methods-auto/notification/notification-setdata-method.md)  |Sets a data property value for the notification|
+|[GetData](methods-auto/notification/notification-getdata-method.md)  |Gets a data property value from the notification.|
+|[Recall](methods-auto/notification/notification-recall-method.md)|Recalls a sent notification.|
 
 
 ## Creating and sending a notification
-You create a notification by using the **MESSAGE** and **SEND** methods. The **MESSAGE** method defines the message part of the notification. When the **SEND** method is called, the notification is sent to the client and content of the message is displayed.
+You create a notification by using the **Message** and **Send** methods. The **Message** method defines the message part of the notification. When the **Send** method is called, the notification is sent to the client and content of the message is displayed.
 
-```
-MyNotification.MESSAGE := 'This is a notification';
-MyNotification.SEND;
+```AL
+MyNotification.Message := 'This is a notification';
+MyNotification.Send();
 ```
 
-The **SEND** method call should be the last statement in the notification code, after any **ADDACTION** or **SETDATA** method calls for the notification instance.
+The **Send** method call should be the last statement in the notification code, after any **AddAction** or **SetData** method calls for the notification instance.
 
 ## Defining the notification scope
 
 The scope determines where the notification is broadcast in the client. There are two different scopes: *LocalScope* and *GlobalScope*.
 
-*   A *LocalScope* notification appears in context of the user's current task, that is, on the page the user is currently working on. *LocalScope* is the default.
+* A *LocalScope* notification appears in context of the user's current task, that is, on the page the user is currently working on. *LocalScope* is the default.
 
-* A *GlobalScope* notification is not directly related to the current task, and will appear regardless of which the page the user is viewing.   
+* A *GlobalScope* notification is not directly related to the current task, and will appear regardless of which the page the user is viewing.
   > [!NOTE]  
   > *GlobalScope* is currently not supported. This will be implemented in a future release.
 
 The following code creates a notification in the *LocalScope*:
 
-```
-MyNotification.MESSAGE := 'This is a notification';
-MyNotification.SCOPE := NOTIFICATIONSCOPE::LocalScope;
-MyNotification.SEND;
+```AL
+MyNotification.Message := 'This is a notification';
+MyNotification.Scope := NotificationScope::LocalScope;
+MyNotification.Send();
 ```
 
 ## Adding actions on a notification
-You add actions on notifications by using the **ADDACTION** method. This method provides a way for you to create interactive notifications. By default, users have the option to dismiss the notifications. However, there might be cases where you want to provide users with different actions that they can take to address the notification, like opening an associated page for modifying data.
+You add actions on notifications by using the **AddAction** method. This method provides a way for you to create interactive notifications. By default, users have the option to dismiss the notifications. However, there might be cases where you want to provide users with different actions that they can take to address the notification, like opening an associated page for modifying data.
 
 Conceptually, a notification action calls a method in a specified codeunit, passing the notification object in the call. The method includes the business logic for handling the action.
 
-```
-MyNotification.MESSAGE := 'This is a notification';
-MyNotification.SCOPE := NOTIFICATIONSCOPE::LocalScope;
-MyNotification.ADDACTION('Action 1',CODEUNIT::"Action Handler",'RunAction1');
-MyNotification.ADDACTION('Action 2',CODEUNIT::"Action Handler",'RunAction2');
-MyNotification.SEND;
+```AL
+MyNotification.Message := 'This is a notification';
+MyNotification.Scope := NotificationScope::LocalScope;
+MyNotification.AddAction('Action 1',Codeunit::"Action Handler",'RunAction1');
+MyNotification.AddAction('Action 2',Codeunit::"Action Handler",'RunAction2');
+MyNotification.Send();
 ```
 
 The basic steps for adding an action are as follows:
 
 1. Create a global method in a new or existing codeunit. The method must have a **Notification** data type parameter for receiving the notification object.
 2. Add AL code to the method for handling the action.
-3. Specify the codeunit and method in the **ADDACTION** method call.
+3. Specify the codeunit and method in the **AddAction** method call.
 
 > [!IMPORTANT]  
 > You can have more than one action on a notification. A LocalScope notification can have up to 3 actions. A GlobalScope notification can have up to 2 actions.
 
 ## Sending data with a notification
-You use the **SETDATA** and **GETDATA** methods to add data to a notification, which is typically needed when actions are invoked. The **SETDATA** method sets, or adds, data to the notification. The data is defined as text in a key-value pair. With the **GETDATA** method, you can then retrieve the data again.
+You use the **SetData** and **GetData** methods to add data to a notification, which is typically needed when actions are invoked. The **SetData** method sets, or adds, data to the notification. The data is defined as text in a key-value pair. With the **GetData** method, you can then retrieve the data again.
 
 The following code sets data for a notification:
 
-```
-MyNotification.MESSAGE := 'This is a notification';
-MyNotification.SCOPE := NOTIFICATIONSCOPE::LocalScope;
-MyNotification.SETDATA('Created',FORMAT(CURRENTDATETIME,0,9));
-MyNotification.SETDATA('ID',FORMAT(CREATEGUID,0,9));
-MyNotification.ADDACTION('Action 1',CODEUNIT::"Action Handler",'RunAction1');
-MyNotification.ADDACTION('Action 2',CODEUNIT::"Action Handler",'RunAction2');
-MyNotification.SEND;
+```AL
+MyNotification.Message := 'This is a notification';
+MyNotification.Scope := NotificationScope::LocalScope;
+MyNotification.SetData('Created',Format(CurrentDateTime,0,9));
+MyNotification.SetData('ID',Format(CreateGuid(),0,9));
+MyNotification.AddAction('Action 1',Codeunit::"Action Handler",'RunAction1');
+MyNotification.AddAction('Action 2',Codeunit::"Action Handler",'RunAction2');
+MyNotification.Send();
 ```
 
 The following code gets the data for a notification:
 
-```
-DataValue := MyNotification.GETDATA('Created');
-DataValue := MyNotification.GETDATA('ID');
+```AL
+DataValue := MyNotification.GetData('Created');
+DataValue := MyNotification.GetData('ID');
 ```
 ## Example
 This simple example illustrates how notifications work and provides some insight into how you can use them. This example extends page **42 Sales Order** of the CRONUS International Ltd. demonstration database according to the following:
@@ -169,7 +169,7 @@ To complete the example, follow these steps:
 
 1. Create a page extension object that extends page **42 Sales Order**, and add the notification code on the **OnOpenPage** trigger.
 
-    ```
+    ```AL
     pageextension 50100 CreditBalanceNotification extends "Sales Order"
     {
     
@@ -178,28 +178,28 @@ To complete the example, follow these steps:
             Customer: Record Customer;
             CreditBalanceNotification: Notification;
             OpenCustomer: Text;
-            Text003: TextConst ENU = 'The current balance exceeds the credit limit.';
-            Text004: TextConst ENU = 'Change credit limit';
+            Text003: Label 'The current balance exceeds the credit limit.';
+            Text004: Label 'Change credit limit';
         begin
-            Customer.GET("Sell-to Customer No.");
+            Customer.Get("Sell-to Customer No.");
             if Customer."Balance (LCY)" > Customer."Credit Limit (LCY)" then begin
                 //Create the notification
-                CreditBalanceNotification.MESSAGE(Text003);
-                CreditBalanceNotification.SCOPE := NOTIFICATIONSCOPE::LocalScope;
+                CreditBalanceNotification.Message(Text003);
+                CreditBalanceNotification.Scope := NotificationScope::LocalScope;
                 //Add a data property for the customer number
-                CreditBalanceNotification.SETDATA('CustNumber', Customer."No.");
+                CreditBalanceNotification.SetData('CustNumber', Customer."No.");
                 //Add an action that calls the ActionHandler codeunit, which you define in the next step.
-                CreditBalanceNotification.ADDACTION('Text004', CODEUNIT::"ActionHandler", 'OpenCustomer');
+                CreditBalanceNotification.AddAction('Text004', Codeunit::"ActionHandler", 'OpenCustomer');
                 //Send the notification to the client.
-                CreditBalanceNotification.SEND;
+                CreditBalanceNotification.Send();
             end;
         end;
     }
     ```
-    
+
 2. Create a codeunit called **ActionHandler** for handling the notification action. Add a global method called **OpenCustomer** that has a **Notification** data type parameter called **CreditBalanceNotification** for receiving the Notification object, and include the following code on the method:
 
-    ```
+    ```AL
     codeunit 50100 ActionHandler
     {
         trigger OnRun()
@@ -214,19 +214,20 @@ To complete the example, follow these steps:
             CustRec: Record Customer;
             CustPage: Page "Customer Card";
         begin
-            //Get the customer number data from the SETDATA call.
-            CustNo := CreditBalanceNotification.GETDATA(CustNumber);
+            //Get the customer number data from the SetData() call.
+            CustNo := CreditBalanceNotification.GetData(CustNumber);
             // Open the Customer Card page for the customer.
-            if CustRec.GET(CustNo) then begin
-                CustPage.SETRECORD(CustRec);
-                CustPage.RUN;
+            if CustRec.Get(CustNo) then begin
+                CustPage.SetRecord(CustRec);
+                CustPage.Run();
             end else begin
-                ERROR('Could not find Customer: ' + CustNo);
+                Error('Could not find Customer: ' + CustNo);
             end;
         end;
     }
     ```
-## See Also  
-[Notification Data Type](datatypes/devenv-notification-data-type.md)  
-[Developing Extensions](devenv-dev-overview.md)  
-[Getting Started with AL](devenv-get-started.md) 
+
+## See Also
+[Notification Data Type](datatypes/devenv-notification-data-type.md)   
+[Developing Extensions](devenv-dev-overview.md)   
+[Getting Started with AL](devenv-get-started.md)   

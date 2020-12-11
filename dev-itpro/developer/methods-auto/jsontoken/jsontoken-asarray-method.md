@@ -1,8 +1,8 @@
 ---
-title: "AsArray Method"
+title: "JsonToken.AsArray Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# AsArray Method
+# JsonToken.AsArray Method
+> **Version**: _Available from runtime version 1.0._
+
 Converts the value in a JsonToken to a JsonArray data type.
 
 
@@ -23,14 +25,14 @@ Array :=   JsonToken.AsArray()
 ```
 
 ## Parameters
-*JsonToken*  
-&emsp;Type: [JsonToken](jsontoken-data-type.md)  
-An instance of the [JsonToken](jsontoken-data-type.md) data type.  
+*JsonToken*
+&emsp;Type: [JsonToken](jsontoken-data-type.md)
+An instance of the [JsonToken](jsontoken-data-type.md) data type.
 
 ## Return Value
-*Array*  
-&emsp;Type: [JsonArray](../jsonarray/jsonarray-data-type.md)  
-The returned JsonArray contains the same data as the JsonToken, but allows array-specific operations to be performed on it.  
+*Array*
+&emsp;Type: [JsonArray](../jsonarray/jsonarray-data-type.md)
+The returned JsonArray contains the same data as the JsonToken, but allows array-specific operations to be performed on it.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

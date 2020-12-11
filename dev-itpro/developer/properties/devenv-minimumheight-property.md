@@ -1,44 +1,50 @@
 ---
 title: "MinimumHeight Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: dd671414-a7c3-44bd-a860-a8bda61c7913
-caps.latest.revision: 15
 author: SusanneWindfeldPedersen
 ---
-
- 
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # MinimumHeight Property
+> **Version**: _Available from runtime version 1.0._
 
-Specifies the minimum size in pixels to which the control add-in can dynamically decrease its height.
+Specifies the minimum height that the control add-in can be shrunk to. This setting only applies if the VerticalShrink setting is specified.
 
-## Applies to 
-- Control add-in objects
-  
+## Applies to
+-   Control Add In
+
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## Value Type 
   
--   Integer 
+- Integer 
 
 ## Property Values 
+
 The default is 0. If [VerticalShrink](devenv-verticalshrink-property.md) is **true** but MinimumHeight is 0, the control add-in can shrink to nothing.
 
 ## Dependent Property
+
 This setting only applies if [VerticalShrink](devenv-verticalshrink-property.md) is set to **true**.
 
-## Code Example 
-```
+## Example 
+
+```AL
 RequestedHeight = 300;
 VerticalShrink = true;
 MinimumHeight = 150;
 ```
 
-
 ## See Also  
+
 [Control Add-In Object](../devenv-control-addin-object.md)   
  

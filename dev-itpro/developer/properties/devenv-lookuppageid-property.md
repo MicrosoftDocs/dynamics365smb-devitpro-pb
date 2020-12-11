@@ -1,36 +1,34 @@
 ---
-title: "LookupPageID Property"
+title: "LookupPageId Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: ed5475a6-86fe-4f63-b28b-fc7c6b800eda
-caps.latest.revision: 8
 author: SusanneWindfeldPedersen
 ---
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
+# LookupPageId Property
+> **Version**: _Available from runtime version 1.0._
 
- 
+Sets the ID of the page you want to use as a lookup.
 
-# LookupPageID Property
-Sets the ID of the page you want to use as a lookup.  
+## Applies to
+-   Table
+-   Page Field
 
-## Syntax
-```
-LookupPageId = 50100;
-```
- 
-## Applies To  
-  
--   Page Fields  
-  
--   Tables  
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
 
 By default, a lookup provides a list of records in the table. Using this list, users can select a record and retrieve information from it into this control.
 
-## See Also  
- [Lookup Property](devenv-lookup-property.md)
+## See Also
+
+[Lookup Property](devenv-lookup-property.md)

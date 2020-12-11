@@ -1,8 +1,8 @@
 ---
-title: "SetFilter Method"
+title: "Query.SetFilter Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# SetFilter Method
+# Query.SetFilter Method
+> **Version**: _Available from runtime version 1.0._
+
 Sets a filter on a column of a query to limit the records in the resulting data set of a query.
 
 
@@ -22,9 +24,9 @@ Sets a filter on a column of a query to limit the records in the resulting data 
  Query.SetFilter(Column: Any, String: String [, Value: Any,...])
 ```
 ## Parameters
-*Query*  
-&emsp;Type: [Query](query-data-type.md)  
-An instance of the [Query](query-data-type.md) data type.  
+*Query*
+&emsp;Type: [Query](query-data-type.md)
+An instance of the [Query](query-data-type.md) data type.
 
 *Column*  
 &emsp;Type: [Any](../any/any-data-type.md)  
@@ -32,7 +34,7 @@ The name of the column in the query that you want to filter. The name is defined
         
 *String*  
 &emsp;Type: [String](../string/string-data-type.md)  
-The filter expression. A valid expression consists of alphanumeric characters and one or more of the following operators: \<, >, \, &, &#124;, and =. You can use replacement fields (%1, %2, and so on) to insert values at run-time.
+The filter expression. A valid expression consists of alphanumeric characters and one or more of the following operators: \<, \>, \\, &, &#124;, and =. You can use replacement fields (%1, %2, and so on) to insert values at run-time.
         
 *Value*  
 &emsp;Type: [Any](../any/any-data-type.md)  
@@ -63,7 +65,7 @@ Query.READ;
   
  You can have multiple calls to the **SETFILTER** method. If **SETFILTER** method calls set filters on different columns, then the filters are combined and applied to the dataset. If consecutive **SETFILTER** method calls set filters on the same column, then the last **SETFILTER** method call is applied to the column.  
   
- In addition to the **SETFILTER** method, you can apply filters to a query using the [SETRANGE Method \(Query\)](../../methods/devenv-setrange-method-query.md) method, the **FILTERGROUP** method, and the [DataItemTableFilter Property](../../properties/devenv-dataitemtable-filter-property.md) and [ColumnFilter Property](../../properties/devenv-columnfilter-property.md) in Query Designer.  
+ In addition to the **SETFILTER** method, you can apply filters to a query using the [SETRANGE Method \(Query\)](../../methods/devenv-setrange-method-query.md) method, the **FILTERGROUP** method, and the [DataItemTableFilter Property](../../properties/devenv-dataitemtable-filter-property.md) and [ColumnFilter Property](../../properties/devenv-columnfilter-property.md).  
   
 |If the **SETFILTER** method...|then...|  
 |--------------------------------------|-------------|  
@@ -72,13 +74,13 @@ Query.READ;
 |Sets a filter on the same field as the **SETRANGE** method|The method that is called last is applied to the dataset.|  
 |Sets a filter on a field that has global filters that are applied by the **FILTERGROUP\(1\)** method|The filters of the **SETFILTER** method are added to the global filters.|  
   
- For example, a query has the following filters set on the **Quantity** column in Query Designer:  
+ For example, a query has the following filters set on the **Quantity** column:  
   
 -   **DataItemTableFilter** property: Quantity=FILTER\(\<100\)  
   
 -   **ColumnFilter** property: Quantity=FILTER\(\<>50\)  
   
- `Query.SETFILTER ("Quantity", '>1’)` will result in a filter that is equivalent to: 1\<Quantity \<100.  
+ `Query.SETFILTER ("Quantity", '>1')` will result in a filter that is equivalent to: 1\<Quantity \<100.  
   
  <!--Links For more information about how to set filters in Query Designer, see [Understanding Query Filters](Understanding-Query-Filters.md).-->  
   

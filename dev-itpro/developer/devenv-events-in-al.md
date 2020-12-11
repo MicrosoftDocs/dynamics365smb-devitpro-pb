@@ -1,29 +1,25 @@
 ---
 title: "Events in Microsoft Dynamics 365 Business Central"
 description: Events is a programming concept that can ease application upgrade and limit the code modifications in customized applications during platform changes. 
+author: jswymer
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: e800bc78-feb2-4f19-b79a-3fd70e06320f
-caps.latest.revision: 7
-
 ---
-
- 
 
 # Events in AL
 The use of events is a proven and established programming concept that can ease application upgrade and limit or even eliminate the need for code modifications in customized applications because of application platform changes.  
 
 You can use events to design the application to react to specific actions or behavior that occur. Events enable you to separate customized functionality from the application business logic. By using events in the application where customizations are typically made, you can lower the cost of code modifications and upgrades to the original application.  
 
--   Code modifications to customized functionality can be made without having to modify the original application.  
+- Code modifications to customized functionality can be made without having to modify the original application.  
 
--   Changes to the original application code can be made with minimal impact on the customizations.  
+- Changes to the original application code can be made with minimal impact on the customizations.  
 
 Events can be used for different purposes, such as generating notifications when certain behavior occurs or the state of an entity changes, distributing information, and integrating with external systems and applications. For example, in the [!INCLUDE[demolong](includes/demolong_md.md)], events are used extensively for workflow and Dynamics 365 for Sales integration.
 
@@ -33,6 +29,7 @@ The following table describes all the different event types:
 |------------|-------------|
 |[BusinessEvent](methods/devenv-business-attribute.md) |Specifies the method to be business type event publisher.  |
 |[IntegrationEvent](methods/devenv-integration-attribute.md) |Specifies the method to be integration type event publisher. |
+|[InternalEvent](methods/devenv-internal-attribute.md) |Specifies the method to be an internal event publisher.|
 |[Global](devenv-event-types.md#global-events) |Global events are predefined system events. |
 |[Trigger](devenv-event-types.md#trigger-events) |Trigger events are published by the runtime.  | 
 

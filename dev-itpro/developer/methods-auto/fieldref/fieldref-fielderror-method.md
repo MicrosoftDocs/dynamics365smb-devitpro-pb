@@ -1,8 +1,8 @@
 ---
-title: "FieldError Method"
+title: "FieldRef.FieldError Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# FieldError Method
+# FieldRef.FieldError Method
+> **Version**: _Available from runtime version 1.0._
+
 Stops the execution of the code, causing a run-time error, and creates an error message for a field.
 
 
@@ -22,9 +24,9 @@ Stops the execution of the code, causing a run-time error, and creates an error 
  FieldRef.FieldError([Text: String])
 ```
 ## Parameters
-*FieldRef*  
-&emsp;Type: [FieldRef](fieldref-data-type.md)  
-An instance of the [FieldRef](fieldref-data-type.md) data type.  
+*FieldRef*
+&emsp;Type: [FieldRef](fieldref-data-type.md)
+An instance of the [FieldRef](fieldref-data-type.md) data type.
 
 *Text*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -64,7 +66,7 @@ end;
   
  This code example displays the following error message:  
   
- **Name cannot be blank in Customer No.=”30000”.**  
+ **Name cannot be blank in Customer No.="30000".**  
   
 ## Programming Guidelines  
  We recommend the following guidelines for error messages:  

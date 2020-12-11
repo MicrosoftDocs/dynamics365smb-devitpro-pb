@@ -2,7 +2,7 @@
 title: Page 6400 Flow Template Selector Replacement Code for C/AL to AL conversion 
 description: The article includes replacement code for Page 6400 Flow Template Selector for fixing compilation errors when converting a Business Central version 14 application to version 15 AL. 
 ms.custom: na
-ms.date: 11/20/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: jswymer
 ms.service: "dynamics365-business-central"
 ROBOTS: NOINDEX
 ---
-## Page 6400 Flow Template Selector Replacement Code
+# Page 6400 Flow Template Selector Replacement Code
  
 This article includes replacement code page **6400 Flow Template Selector** that you can use to fix compilation errors that occur when converting your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version 14 C/AL application to version 15 AL.
 

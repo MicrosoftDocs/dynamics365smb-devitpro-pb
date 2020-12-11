@@ -1,7 +1,8 @@
 ---
 title: "OnAfterInitRecord Trigger"
+description: "OnAfterInitRecord trigger in AL for Business Central."
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 # OnAfterInitRecord Trigger
 Runs after a record is loaded.  
   
-## Applies To  
+## Applies to  
 - XMLports  
   
 ## Remarks  

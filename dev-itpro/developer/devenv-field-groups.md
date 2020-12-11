@@ -2,7 +2,7 @@
 title: Field Groups
 description: A field group defines the fields to display in a drop-down control in Dynamics 365 Business Central. 
 ms.custom: na
-ms.date: 10/23/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,7 +23,7 @@ In a table object, you define field groups by first adding a `fieldgroups` contr
 > [!NOTE]
 > A field group can also be used to specify fields that display when list type pages are shown in the tile view. For more information, see [Displaying Data as Tiles](devenv-lists-as-tiles.md).
 
-```
+```AL
 fieldgroups
 {
   fieldgroup(DropDown; Field1, Field2)
@@ -62,7 +62,7 @@ You define a field to include in a drop-down control by using the `DropDown` fie
 
 The following example illustrates how to add the field 
 
-```
+```AL
 tableextension 50100 CustomerExercise extends Customer
 {
     fields

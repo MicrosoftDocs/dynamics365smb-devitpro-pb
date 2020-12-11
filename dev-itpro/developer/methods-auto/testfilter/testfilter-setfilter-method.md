@@ -1,8 +1,8 @@
 ---
-title: "SetFilter Method"
+title: "TestFilter.SetFilter Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# SetFilter Method
+# TestFilter.SetFilter Method
+> **Version**: _Available from runtime version 1.0._
+
 Applies a filter to the specified field on a test page.
 
 
@@ -22,9 +24,9 @@ Applies a filter to the specified field on a test page.
  TestFilter.SetFilter(Field: TestFilterField, String: String)
 ```
 ## Parameters
-*TestFilter*  
-&emsp;Type: [TestFilter](testfilter-data-type.md)  
-An instance of the [TestFilter](testfilter-data-type.md) data type.  
+*TestFilter*
+&emsp;Type: [TestFilter](testfilter-data-type.md)
+An instance of the [TestFilter](testfilter-data-type.md) data type.
 
 *Field*  
 &emsp;Type: [TestFilterField](../testfilterfield/testfilterfield-data-type.md)  

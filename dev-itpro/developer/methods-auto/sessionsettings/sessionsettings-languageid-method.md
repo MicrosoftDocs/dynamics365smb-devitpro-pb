@@ -1,8 +1,8 @@
 ---
-title: "LanguageId Method"
+title: "SessionSettings.LanguageId Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# LanguageId Method
+# SessionSettings.LanguageId Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets or sets the language ID property in a SessionSettings object.
 
 
@@ -21,12 +23,12 @@ Gets or sets the language ID property in a SessionSettings object.
 ```
 [LanguageId := ]  SessionSettings.LanguageId([NewLanguageId: Integer])
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 ## Parameters
-*SessionSettings*  
-&emsp;Type: [SessionSettings](sessionsettings-data-type.md)  
-An instance of the [SessionSettings](sessionsettings-data-type.md) data type.  
+*SessionSettings*
+&emsp;Type: [SessionSettings](sessionsettings-data-type.md)
+An instance of the [SessionSettings](sessionsettings-data-type.md) data type.
 
 *NewLanguageId*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
@@ -35,10 +37,10 @@ Specifies the language ID to set in the SessionSettings object. The value must b
 
 
 ## Return Value
-*LanguageId*  
-&emsp;Type: [Integer](../integer/integer-data-type.md)  
+*LanguageId*
+&emsp;Type: [Integer](../integer/integer-data-type.md)
 The language ID that is set in the SessionSettings object.
-        
+      
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

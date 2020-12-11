@@ -1,7 +1,8 @@
 ---
 title: "OnBeforeInsert Trigger"
+description: "OnBeforeInsert trigger in AL for Business Central."
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: blrobl
 # OnBeforeInsert Trigger
 Runs when a user inserts a new record into the table.  
   
-## Applies To  
+## Applies to  
 - Table extensions
   
 ## Remarks  

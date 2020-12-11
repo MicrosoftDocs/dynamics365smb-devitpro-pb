@@ -1,8 +1,8 @@
 ---
-title: "Recall Method"
+title: "Notification.Recall Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Recall Method
+# Notification.Recall Method
+> **Version**: _Available from runtime version 1.0._
+
 Recall a sent notification.
 
 
@@ -23,21 +25,27 @@ Recall a sent notification.
 ```
 
 ## Parameters
-*Notification*  
-&emsp;Type: [Notification](notification-data-type.md)  
-An instance of the [Notification](notification-data-type.md) data type.  
+*Notification*
+&emsp;Type: [Notification](notification-data-type.md)
+An instance of the [Notification](notification-data-type.md) data type.
 
 ## Return Value
-*Ok*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if it succeeds in sending the notification; otherwise **false**If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+*Ok*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+**true** if it succeeds in sending a recall request to the client; otherwise **false**. The same notification can be recalled more than once, without failing. Also, a notification can be recalled successfully even if it hasn't been sent.  If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-If you omit this optional return value and if the notification cannot be recalled, then a run-time error occurs that states that the notification cannot be recalled. If you include a return value, then it is assumed that you will handle any errors and no run-time error occurs, even if the notification is not recalled.
+<!--
+If you omit this optional return value and if the notification cannot be recalled, then a run-time error occurs that states that the notification cannot be recalled. If you include a return value, then it is assumed that you will handle any errors and no run-time error occurs, even if the notification is not recalled.-->
 
-##  Example
+## Remarks
+
+A typical reason that the RECALL method returns **false** is a failure in the communication with the client. Another reason could be that the code tries to recall a notification for which there is no instance.
+
+## Example
+
 The following code creates a notification and sends it if NewBalance is greater than the credit limit. If it is lower than the credit limit, it recalls the notification.
 
 ```

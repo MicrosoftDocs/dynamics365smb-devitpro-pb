@@ -1,8 +1,8 @@
 ---
-title: "RoundDateTime Method"
+title: "System.RoundDateTime Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# RoundDateTime Method
+# System.RoundDateTime Method
+> **Version**: _Available from runtime version 1.0._
+
 Rounds a DateTime.
 
 
@@ -21,8 +23,8 @@ Rounds a DateTime.
 ```
 NewDatetime :=   System.RoundDateTime(Datetime: DateTime [, Precision: BigInteger] [, Direction: String])
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *Datetime*  
 &emsp;Type: [DateTime](../datetime/datetime-data-type.md)  
@@ -35,15 +37,15 @@ This optional parameter determines the precision used when rounding. The default
 &emsp;Type: [String](../string/string-data-type.md)  
 This optional parameter specifies how to round the DateTime. The default rounding method is '='. You can change the method by using the following options:
 -   '=' rounds up or down to the nearest value (default). Values of 5 or greater are rounded up. Values less than 5 are rounded down.
--   '>' rounds up
--   '<' rounds down
+-   '\>' rounds up
+-   '\<' rounds down
           
 
 
 ## Return Value
-*NewDatetime*  
-&emsp;Type: [DateTime](../datetime/datetime-data-type.md)  
-The rounded result.  
+*NewDatetime*
+&emsp;Type: [DateTime](../datetime/datetime-data-type.md)
+The rounded result.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

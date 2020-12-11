@@ -1,7 +1,8 @@
 ---
 title: "OnPreXMLport Trigger"
+description: "OnPreXMLport trigger in AL for Business Central."
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +14,7 @@ author: SusanneWindfeldPedersen
 # OnPreXMLport Trigger
 Runs after the table views and filters are set and before the XMLport is run.  
   
-## Applies To  
+## Applies to  
 - XMLports  
   
 ## See Also  

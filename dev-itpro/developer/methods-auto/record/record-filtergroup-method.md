@@ -1,8 +1,8 @@
 ---
-title: "FilterGroup Method"
+title: "Record.FilterGroup Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# FilterGroup Method
+# Record.FilterGroup Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets or sets the filter group that is applied to a table.
 
 
@@ -21,12 +23,12 @@ Gets or sets the filter group that is applied to a table.
 ```
 [Group := ]  Record.FilterGroup([Group: Integer])
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 ## Parameters
-*Record*  
-&emsp;Type: [Record](record-data-type.md)  
-An instance of the [Record](record-data-type.md) data type.  
+*Record*
+&emsp;Type: [Record](record-data-type.md)
+An instance of the [Record](record-data-type.md) data type.
 
 *Group*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
@@ -34,9 +36,9 @@ An instance of the [Record](record-data-type.md) data type.
 
 
 ## Return Value
-*Group*  
-&emsp;Type: [Integer](../integer/integer-data-type.md)  
-  
+*Group*
+&emsp;Type: [Integer](../integer/integer-data-type.md)
+
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -82,10 +84,11 @@ Rec.FilterGroup(1);
 Then, for each field in the table that to which the Rec variable refers, set an empty filter.  
   
 ```  
-Rec.SetFilter(<field>,’’);  
+Rec.SetFilter(<field>,'');  
 ```  
   
-## Example  
+## Example 1
+
 The following example uses the [SetFilter Method (Record)](record-setfilter-method.md) to set a filter that selects records with No. field between 10000 and 20000. Then the **FilterGroup** method returns the number for the filter group. No filter group was selected explicitly so the filter is set in filter group 0. This value is stored in the `varOrigGroup` variable and displayed in a message box. Next, the **FilterGroup** method changes the filter group to 100. The new value is stored in the `varCurrGroup` variable and displayed in a message box.  
   
 ```
@@ -104,7 +107,8 @@ begin
 end;
 ```  
   
-## Example  
+## Example 2
+
 The following example finds all customers where the Customer Name or Contact Name contains the string **John**.  
  
 ```

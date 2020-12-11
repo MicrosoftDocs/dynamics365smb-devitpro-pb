@@ -1,8 +1,8 @@
 ---
 title: "The AppSourceCop configuration must specify the set of affixes used by the application"
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
-ms.date: 02/06/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,7 +24,7 @@ The AppSourceCop configuration must specify one of the following properties: 'ma
 ## Remarks
 In the `AppSourceCop.json` configuration file, use the `mandatorySuffix`, `mandatoryPrefix`, or `mandatoryAffixes` to specify which affixes apply for this particular extension. For example:
 
-```
+```json
 {
     "mandatoryAffixes": [ "Foo", "Bar" ]
 }

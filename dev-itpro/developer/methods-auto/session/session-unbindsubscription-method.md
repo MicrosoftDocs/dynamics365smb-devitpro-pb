@@ -1,8 +1,8 @@
 ---
-title: "UnbindSubscription Method"
+title: "Session.UnbindSubscription Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# UnbindSubscription Method
+# Session.UnbindSubscription Method
+> **Version**: _Available from runtime version 1.0._
+
 Unbinds the event subscriber methods from in the codeunit instance. This essentially deactivates the subscriber methods for the codeunit instance.
 
 
@@ -21,8 +23,8 @@ Unbinds the event subscriber methods from in the codeunit instance. This essenti
 ```
 [Ok := ]  Session.UnbindSubscription(Codeunit: Codeunit)
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *Codeunit*  
 &emsp;Type: [Codeunit](../codeunit/codeunit-data-type.md)  
@@ -30,9 +32,9 @@ The codeunit that contains the event subscribers.
 
 
 ## Return Value
-*Ok*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the event subscriber methods unbind successfully to the codeunit instance and no errors occurred, otherwise **false**.If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+*Ok*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+**true** if the event subscriber methods unbind successfully to the codeunit instance and no errors occurred, otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -40,12 +42,12 @@ The codeunit that contains the event subscribers.
 ## Remarks  
  You can only call this method on codeunits that have the [EventSubscriberInstance Property](../../properties/devenv-eventsubscriberinstance-property.md) set to **Manual**.  
   
- Calling this method on a codeunit that has not been bound \(by the [BINDSUBSCRIPTION Method](../../methods-auto/session/session-bindsubscription-method.md)\) will result in an error. If the call to this method is successfull, all bindings are removed.  
+ Calling this method on a codeunit that hasn't been bound \(by the [BINDSUBSCRIPTION Method](../../methods-auto/session/session-bindsubscription-method.md)\) will result in an error. If the call to this method is successful, all bindings are removed.  
   
  The codeunit instance that is unbound will be the same instance that previously was bound.  
   
 ## Example  
- The following pseudocode illustrates a typical use of the BINDSUBSCRIPTION method.  
+ The following sample code illustrates a typical use of the BINDSUBSCRIPTION method.  
   
 ```  
 Method MyFunction(….)  
@@ -57,7 +59,7 @@ begin
   
   SubScriberCodeunit5000.MySetGlobalInfo(<info you can later test in the subscriber event method>)  
   BINDSUBSCRIPTION(SubscriberCodeunit5000);  
-  DoSomething(…);  // After binding, all subscriptions on SubscriberCodeunit5000 are “active”.  
+  DoSomething(…);  // After binding, all subscriptions on SubscriberCodeunit5000 are "active".  
   UNBINDSUBSCRIPTION(SubscriberCodeunit888);  // Now deactivating again  
   DoStuff(…);  // This time no events are raised inside SubscriberCodeunit888;  
   

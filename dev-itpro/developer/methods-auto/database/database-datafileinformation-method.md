@@ -1,8 +1,9 @@
 ---
-title: "DataFileInformation Method"
+title: "Database.DataFileInformation Method"
+description: "The Database DataFileInformation Method in AL for Business Central"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +14,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# DataFileInformation Method
+# Database.DataFileInformation Method
+> **Version**: _Available from runtime version 1.0._
+
 Specifies data from a file that has been exported from a database.
 
 > [!NOTE]
@@ -23,8 +26,8 @@ Specifies data from a file that has been exported from a database.
 ```
 [Ok := ]  Database.DataFileInformation(ShowDialog: Boolean, var FileName: Text, var Description: Text, var HasApplication: Boolean, var HasApplicationData: Boolean, var HasGlobalData: Boolean, var tenantId: Text, var exportDate: DateTime, var CompanyRecord: Record)
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *ShowDialog*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
@@ -63,9 +66,9 @@ Specifies the company or companies in the file.
 
 
 ## Return Value
-*Ok*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the operation was successful; otherwise **false**.  If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+*Ok*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+**true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

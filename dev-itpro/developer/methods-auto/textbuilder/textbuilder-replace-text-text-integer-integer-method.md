@@ -1,8 +1,8 @@
 ---
-title: "Replace Method"
+title: "TextBuilder.Replace Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Replace Method
+# TextBuilder.Replace Method
+> **Version**: _Available from runtime version 1.0._
+
 Replaces, within a substring of this instance, all occurrences of a specified string in this TextBuilder instance with another specified string.
 
 
@@ -22,9 +24,9 @@ Replaces, within a substring of this instance, all occurrences of a specified st
 [Ok := ]  TextBuilder.Replace(OldText: Text, NewText: Text, StartIndex: Integer, Count: Integer)
 ```
 ## Parameters
-*TextBuilder*  
-&emsp;Type: [TextBuilder](textbuilder-data-type.md)  
-An instance of the [TextBuilder](textbuilder-data-type.md) data type.  
+*TextBuilder*
+&emsp;Type: [TextBuilder](textbuilder-data-type.md)
+An instance of the [TextBuilder](textbuilder-data-type.md) data type.
 
 *OldText*  
 &emsp;Type: [Text](../text/text-data-type.md)  
@@ -44,9 +46,9 @@ The length of the substring.
 
 
 ## Return Value
-*Ok*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if all occurrences of a specified string were successfully replaced, otherwise **false**.If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+*Ok*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+**true** if all occurrences of a specified string were successfully replaced, otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

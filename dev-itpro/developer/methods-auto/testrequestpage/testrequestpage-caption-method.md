@@ -1,8 +1,8 @@
 ---
-title: "Caption Method"
+title: "TestRequestPage.Caption Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Caption Method
+# TestRequestPage.Caption Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets the caption of the test page.
 
 
@@ -21,18 +23,18 @@ Gets the caption of the test page.
 ```
 String :=   TestRequestPage.Caption()
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 
 ## Parameters
-*TestRequestPage*  
-&emsp;Type: [TestRequestPage](testrequestpage-data-type.md)  
-An instance of the [TestRequestPage](testrequestpage-data-type.md) data type.  
+*TestRequestPage*
+&emsp;Type: [TestRequestPage](testrequestpage-data-type.md)
+An instance of the [TestRequestPage](testrequestpage-data-type.md) data type.
 
 ## Return Value
-*String*  
-&emsp;Type: [String](../string/string-data-type.md)  
-The caption of the test page.  
+*String*
+&emsp;Type: [String](../string/string-data-type.md)
+The caption of the test page.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

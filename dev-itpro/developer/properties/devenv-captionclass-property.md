@@ -1,46 +1,97 @@
 ---
 title: "CaptionClass Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 52f27d7a-ecda-4da8-b139-9b2f0a6bf256
-caps.latest.revision: 13
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # CaptionClass Property
-Controls the caption that is used in the label of a field in a database table or in the label of a control on a page.  
-  
-## Applies To  
-  
-- Table Fields  
-  
-- Page Fields  
+> **Version**: _Available from runtime version 1.0._
+
+Controls the caption that is used in the label of a field in a database table or in the label of a control on a page.
+
+## Applies to
+-   Table Field
+-   Page Label
+-   Page Field
+
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Syntax
 
+```AL
+CaptionClass = “3, My awesome caption”;
 ```
-CaptionClass = '1,2,3';
+
+The `CaptionClass` property must be expressed in the format `"<Caption Area>, <Caption Expression>"`. Both `<Caption Area>` and `<Caption Expression>` are alphanumeric strings.
+
+## Remarks
+
+When you set the **CaptionClass property** on a field, users can configure the caption of a text box that is connected to a label or the caption of a check box without having to modify code. The `Caption Class` in the system application layer then translates the `CaptionClass` property into actual captions that will be displayed in the UI. For example, if `CaptionClass = “3, My awesome caption”;` the result caption in the UI will be **My awesome caption**.
+
+> [!NOTE]  
+> If you omit the pattern of `"<Caption Area>, <Caption Expression>"`, the caption becomes the value of whatever string has been given to the `CaptionClass` property. This means that you can use an expression such as `CaptionClass = ItemRec.Fieldcaption("Location Code");` as long as the returned data type is Text.
+
+### Caption Class
+
+The `Caption Class` (codeunit 42) in the system application exposes two events; the `OnResolveCaptionClass` and the `OnAfterCaptionClassResolve` event.
+
+For more information, see the system [Caption Class](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Caption%20Class/README.md).
+
+The Caption Class raises an `OnResolveCaptionClass` event for any other value of <Caption Area>. 
+
+```al
+[IntegrationEvent(false, false)]
+    internal procedure OnResolveCaptionClass(CaptionArea: Text; CaptionExpr: Text; Language: Integer; var Caption: Text; var Resolved: Boolean)
+    begin
+    end;
 ```
-  
-## Remarks  
-The data type of the AL expression must be either `Text` (maximum length 80) or `Code`.  
-  
-Because this property lets you enter an expression, [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] must be able to differentiate between a literal string like 'DIM1' and a variable or method called DIM1. Every text string that you enter must be enclosed in '  ' or it will be interpreted as a variable or method. You must enter a value that results in a string. For example, if you want to enter 1 + 5, you must either enter '1+ 5', or FORMAT(1 + 5), which results in '6'.  
-  
-The expression is then interpreted by trigger 15 in codeunit 42.  
-  
-|AL expression|Comments|  
-|-------------|--------|  
-|DIM1|This value produces an error unless a text variable exists with the name DIM1.|  
-|'DIM1'|OK. The caption is 'DIM1.'|  
-|'DIM'+FORMAT(2)|OK. The caption is 'DIM2.'|  
-|1+5|Error. The data type is Integer|  
-  
-## See Also  
+
+The `OnAfterCaptionClassResolve` event is used to overwrite the above logic, in case the `CaptionClass` property is not the expected format or if some extra logic needs to be added.
+
+```al
+[IntegrationEvent(false, false)]
+    internal procedure OnAfterCaptionClassResolve(Language: Integer; CaptionExpression: Text; var Caption: Text[1024])
+    begin
+    end;
+```
+
+The following example shows an implementation of the `OnResolveCaptionClass` event.
+
+```al
+codeunit 50000 "MyCaptionClassMgmt"
+{
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Caption Class", 'OnResolveCaptionClass', '', true, true)]
+    local procedure MyOnResolveCaptionClass(CaptionArea: Text; CaptionExpr: Text; Language: Integer; var Caption: Text; var Resolved: Boolean)
+    begin
+        if CaptionArea = '50000' then begin
+            Caption := GetCaption(CaptionExpr);
+            Resolved := true;
+        end;
+    end;
+
+    local procedure GetCaption(CaptionExpr: Text): Text
+    var
+        CaptionALbl: Label 'Caption a)';
+        CaptionBLbl: Label 'Caption b)';
+    begin
+        if CaptionExpr.Contains('A') then
+            exit(CaptionALbl);
+        exit(CaptionBLbl);
+}
+```
+
+## See Also
+
 [CaptionML Property](devenv-captionml-property.md)   
-[Caption Property](devenv-caption-property.md)   
+[Caption Property](devenv-caption-property.md)  
+[CaptionClassTranslate Method](../methods-auto/system/system-captionclasstranslate-method.md) 

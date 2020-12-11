@@ -1,33 +1,38 @@
 ---
-title: "ShortCutKey Property"
+title: "ShortcutKey Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: b20579b0-444c-45d5-b98b-882d3255ad88
-caps.latest.revision: 7
 author: SusanneWindfeldPedersen
 ---
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
+# ShortcutKey Property
+> **Version**: _Available from runtime version 1.0._
 
- # ShortCutKey Property
-Sets a shortcut key for selecting an action.
-  
-  
-## Applies To
+Sets a shortcut key for selecting a menu item.
 
--  Actions on pages.  
+## Applies to
+-   Page Action
 
-This property is fully functional in the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] Web client.
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 
 ## Syntax
-```
+
+```AL
 ShortCutKey = 'Shift+Ctrl+D';
 ```
 
-## Remarks  
+## Remarks
+
 Pressing the key that you designate with this property provides the same result as selecting the action.  
 
 Some shortcut keys have default assignments. Do not reuse shortcut keys that are already assigned. For a list of these shortcuts, see [Keyboard Shortcuts for the Dynamics 365 Business Central Web Client](/dynamics365/business-central/keyboard-shortcuts). 
@@ -36,4 +41,4 @@ Note that the shortcut keys that you set with this property have precedence over
   
 ## See Also
 
- [Properties](devenv-properties.md)
+[Properties](devenv-properties.md)

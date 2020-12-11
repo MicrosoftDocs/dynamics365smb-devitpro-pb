@@ -1,8 +1,8 @@
 ---
-title: "StrLen Method"
+title: "Text.StrLen Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# StrLen Method
+# Text.StrLen Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets the length of a string you define.
 
 
@@ -21,8 +23,8 @@ Gets the length of a string you define.
 ```
 Length :=   Text.StrLen(String: String)
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *String*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -30,9 +32,9 @@ The string for which you want to determine the length.
 
 
 ## Return Value
-*Length*  
-&emsp;Type: [Integer](../integer/integer-data-type.md)  
-The length of the string.  
+*Length*
+&emsp;Type: [Integer](../integer/integer-data-type.md)
+The length of the string.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

@@ -1,8 +1,8 @@
 ---
-title: "Active Method"
+title: "KeyRef.Active Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Active Method
+# KeyRef.Active Method
+> **Version**: _Available from runtime version 1.0._
+
 Indicates whether the key is enabled.
 
 
@@ -21,18 +23,18 @@ Indicates whether the key is enabled.
 ```
 Ok :=   KeyRef.Active()
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 
 ## Parameters
-*KeyRef*  
-&emsp;Type: [KeyRef](keyref-data-type.md)  
-An instance of the [KeyRef](keyref-data-type.md) data type.  
+*KeyRef*
+&emsp;Type: [KeyRef](keyref-data-type.md)
+An instance of the [KeyRef](keyref-data-type.md) data type.
 
 ## Return Value
-*Ok*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the key is enabled; otherwise, **false**.  
+*Ok*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+**true** if the key is enabled; otherwise, **false**.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

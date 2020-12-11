@@ -2,7 +2,7 @@
 title: "CustomAPIName Property (Query)"
 author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,12 +13,14 @@ ms.author: jswymer
 ---
  
 # CustomAPIName Property (Query)
+> **Version**: _Available from runtime version 1.0._
+
 Sets the custom name of the API endpoint that the query is exposed in. The custom name must be unique.
 
->[!NOTE]
+> [!NOTE]  
 > The property 'CustomAPIName' can only be set if the property 'QueryType' is set to 'API'.
 
-## Applies To  
+## Applies to  
 
 - Queries
 

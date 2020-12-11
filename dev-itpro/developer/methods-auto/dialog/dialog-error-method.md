@@ -2,7 +2,7 @@
 title: "Error Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -37,23 +37,26 @@ Any variable or expression to be inserted in String. You can insert up to 10 val
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- The window is automatically sized to hold the longest line of text and total number of lines.  
+
+The window is automatically sized to hold the longest line of text and total number of lines.  
 
 ## Programming Guidelines  
- We recommend the following guidelines for error messages:  
 
--   Describe what is wrong and how to solve the problem.  
+We recommend the following guidelines for error messages:  
 
--   Write a short descriptive message. Do not use more words than necessary.  
+- Describe what is wrong and how to solve the problem.  
 
--   Always end the error message with a period.  
+- Write a short descriptive message. Do not use more words than necessary.  
 
--   Use a text constant for the text of the message.  
+- Always end the error message with a period.  
 
- For more information, see [Progress Windows, MESSAGE, ERROR, and CONFIRM Methods](../../devenv-progress-windows-message-error-and-confirm-methods.md).  
+- Use a text constant for the text of the message.  
+
+For more information, see [Progress Windows, Message, Error, and Confirm Methods](../../devenv-progress-windows-message-error-and-confirm-methods.md).  
 
 ## Example  
- This example shows how to use the ERROR method. 
+
+This example shows how to use the `Error` method. 
  
 ```
 var
@@ -69,11 +72,11 @@ begin
 end;
 ```  
 
- The error window displays the following:  
+The error window displays the following:  
 
- **Finance Account 1230  must not be blocked.**  
+**Finance Account 1230  must not be blocked.**  
 
- The ERROR method causes execution of AL code to stop. [MESSAGE Method](../../methods-auto/dialog/dialog-message-method.md) is never executed.  
+The `Error` method causes execution of AL code to stop. [Message Method](../../methods-auto/dialog/dialog-message-method.md) is never executed.  
 
 ## See Also
 [Dialog Data Type](dialog-data-type.md)  

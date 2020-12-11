@@ -1,8 +1,8 @@
 ---
-title: "StrMenu Method"
+title: "Dialog.StrMenu Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# StrMenu Method
+# Dialog.StrMenu Method
+> **Version**: _Available from runtime version 1.0._
+
 Creates a menu window that displays a series of options.
 
 
@@ -21,8 +23,8 @@ Creates a menu window that displays a series of options.
 ```
 OptionNumber :=   Dialog.StrMenu(OptionMembers: String [, DefaultNumber: Integer] [, Instruction: String])
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *OptionMembers*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -38,15 +40,16 @@ Use this optional parameter to add a description to the option values.
 
 
 ## Return Value
-*OptionNumber*  
-&emsp;Type: [Integer](../integer/integer-data-type.md)  
-The number of the menu option that the user selected. If the user presses the Esc key to exit the menu, zero (0) is returned.  
+*OptionNumber*
+&emsp;Type: [Integer](../integer/integer-data-type.md)
+The number of the menu option that the user selected. If the user presses the Esc key to exit the menu, zero (0) is returned.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example  
- This example shows how to use the Dialog.STRMENU method.  
+
+This example shows how to use the Dialog.StrMenu method.  
  
 ```
 var
@@ -56,28 +59,28 @@ var
     Text001: Label 'You selected option %1.';
     Text002: Label 'Choose one of the following options:';
 begin
-    Options := Text000  
+    Options := Text000;  
     // Sets the default to option 3  
     Selected := Dialog.STRMENU(Options, 3, Text002);  
     MESSAGE(Text001, Selected);  
 end;
 ```  
   
- The menu window displays the following text:  
+The menu window displays the following text:  
   
- **Choose one of the following options:**  
+**Choose one of the following options:**  
   
- **Save**  
+**Save**  
   
- **Delete**  
+**Delete**  
   
- **Exit**  
+**Exit**  
   
- **Find**  
+**Find**  
   
- Option 3, Exit, is highlighted. The option that the user selects is stored in the variable *Selected*. The user receives following message:  
+Option 3, **Exit**, is highlighted. The option that the user selects is stored in the variable *Selected*. The user receives following message:  
   
- **You selected option 3.**  
+**You selected option 3.**  
 
 ## See Also
 [Dialog Data Type](dialog-data-type.md)  

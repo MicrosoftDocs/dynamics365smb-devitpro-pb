@@ -2,12 +2,12 @@
 title: "Creating Tenants from Companies"
 author: edupont04
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: dynamics365-business-central
 ---
 # Creating Tenants from Companies in Business Central
 If your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution includes multiple companies in one database, you can choose to migrate to multitenancy where the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] companies become tenants of your application database.  
@@ -22,8 +22,11 @@ If your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution inclu
 ## Running a Windows PowerShell script to create tenants from companies
   
  [!INCLUDE[prodshort](../developer/includes/prodshort.md)] includes a sample [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] script and a sample SQL script, HowTo-MoveCompanyToTenant.ps1 and HowTo-MoveCompanyToTenant.sql. These scripts illustrate how you can move company-specific data to new business databases and mount them as new tenants. You can modify the scripts and then run them in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)].
+ 
+> [!NOTE]
+> This approach doesn't work if the source or destination database is running on Azure SQL database. 
 
- The HowTo-MoveCompanyToTenant.ps1 script uses [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cmdlets and SQL commands to copy data from a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] company in a business database to a new tenant database. It mounts the tenant database on a [!INCLUDE[server](../developer/includes/server.md)] instance, and then deletes the data and the company from the original database. You can adapt the scripts to your solution and rename them so that they do not start with “HowTo-“. Then, you can run the MoveCompanyToTenant.ps1 script in Windows PowerShell with the relevant parameters as shown in the following example.  
+ The HowTo-MoveCompanyToTenant.ps1 script uses [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cmdlets and SQL commands to copy data from a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] company in a business database to a new tenant database. It mounts the tenant database on a [!INCLUDE[server](../developer/includes/server.md)] instance, and then deletes the data and the company from the original database. You can adapt the scripts to your solution and rename them so that they do not start with "HowTo-". Then, you can run the MoveCompanyToTenant.ps1 script in Windows PowerShell with the relevant parameters as shown in the following example.  
 
 ```  
 MoveCompanyToTenant -ServerInstance 'BC' -FromDatabase 'Demo Database NAV (13-0)' -CompanyName 'CRONUS International Ltd.' -OldTenantName default -NewTenantName CRONUS1 -ServiceAccount 'NT AUTHORITY\NETWORK SERVICE' -DatabaseServer MySQLServer  
@@ -37,7 +40,7 @@ MoveCompanyToTenant -ServerInstance 'BC' -FromDatabase 'Demo Database NAV (13-0)
 |`FromDatabase`|`Demo Database NAV \(13-0\)`|The name of the business database that the company must be moved from.<br /><br /> This database must have been upgraded to [!INCLUDE[prodshort](../developer/includes/prodshort.md)], and you must have exported the application tables to an application database. For more information, see [Separating Application Data from Business Data](Separating-Application-Data-from-Business-Data.md).|  
 |`CompanyName`|`CRONUS International Ltd.`|The name of the company that you want to move to a new tenant database.|  
 |`OldTenantName`|`default`|The name of the tenant in the database that you are exporting from.<br /><br /> In many cases, you are working with a single-tenant business database that contains multiple companies. If you did not specify another ID for the tenant when you created the tenant database, specify `default`. If you have added more tenants to the solution, you must specify the tenant name.|  
-|`NewTenantName`|`CRONUS1`|The name of the new tenant database.<br /><br /> In the example, this is based on the name of the original company. But because this value will identify the tenant, the value must be unique.<br /><br /> For example, if the name of the company is Spotsmeyer’s Furnishings, the name of the new tenant database can be `SPOTSMEYERS`. Alternatively, you can use a naming scheme of your choice, such as `TENANT1`, `TENANT2`, and so on.|  
+|`NewTenantName`|`CRONUS1`|The name of the new tenant database.<br /><br /> In the example, this is based on the name of the original company. But because this value will identify the tenant, the value must be unique.<br /><br /> For example, if the name of the company is Spotsmeyer's Furnishings, the name of the new tenant database can be `SPOTSMEYERS`. Alternatively, you can use a naming scheme of your choice, such as `TENANT1`, `TENANT2`, and so on.|  
 |`ServiceAccount`|`NT AUTHORITY\\NETWORK SERVICE`|The account that [!INCLUDE[server](../developer/includes/server.md)] uses to access SQL Server. In a default deployment, this is the NT AUTHORITY\\NETWORK SERVICE account.|  
 |`DatabaseServer`|`MySQLServer`|The name of the database tier server where the current business database is located. The new tenant database for the exported company will be created on the same server.|  
 |`RemoveCompanyWhenMoved`||Specifies if each company must be deleted in the original tenant database when it is created in the new tenant database. The default value is `true`. Therefore, you must set the parameter to `false` if you do not want the script to delete the companies.|  

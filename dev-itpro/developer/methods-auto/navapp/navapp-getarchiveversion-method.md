@@ -1,8 +1,8 @@
 ---
-title: "GetArchiveVersion Method"
+title: "NavApp.GetArchiveVersion Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# GetArchiveVersion Method
+# NavApp.GetArchiveVersion Method
+> **Version**: _Available from runtime version 1.0 until version 6.0 where it was deprecated for the following reason: "The features related to data migration from V1 to V2 extensions are being deprecated."_
+
 Returns the version of the extension that the specified table is part of.
 
 
@@ -24,9 +26,9 @@ Version :=   NavApp.GetArchiveVersion()
 
 
 ## Return Value
-*Version*  
-&emsp;Type: [String](../string/string-data-type.md)  
-The version  
+*Version*
+&emsp;Type: [String](../string/string-data-type.md)
+The version
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

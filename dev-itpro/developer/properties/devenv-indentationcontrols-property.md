@@ -1,39 +1,70 @@
 ---
 title: "IndentationControls Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: e2e75702-bc56-4c5b-a3b9-ac7d223808c4
-caps.latest.revision: 15
 author: SusanneWindfeldPedersen
 ---
-
- 
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # IndentationControls Property
-Sets which columns (controls) are indented in a list.  
- 
+> **Version**: _Available from runtime version 1.0._
+
+Sets which columns (controls) are indented in a list.
+
+## Applies to
+-   Page Group
+
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## Syntax
-```
-IndentationControls = Field1, Field2;
+
+```AL
+IndentationControls = Field1[, Field2];
 ```
 
-## Applies To  
+## Applies to  
   
--   Repeater subtype controls on page  
-  
+- Repeater controls on list page types
+
 ## Remarks  
- The **Indentation Controls** property lets you choose which columns are indented under a group control on a List page.
-  
- > [!IMPORTANT]  
->  When indentation is specified, it is no longer possible to use sorting on the columns in the repeater control.  
-  
-> [!NOTE]  
->  [!INCLUDE[d365fin_web_md](../includes/d365fin_web_md.md)] supports indentation on one column only. If you specify more than one column in the IndentationControls property, only the first column is used when the page is displayed in [!INCLUDE[d365fin_web_md](../includes/d365fin_web_md.md)].  
-  
-## See Also  
- [IndentationColumn Property](devenv-indentationcolumn-property.md)
+
+The **IndentationControls** property lets you choose which columns are indented under a repeater control on a list page.
+
+To enable an indented hierarchy, you must also set the **IndentationColumn** property. This property specifies field in the source table that controls which records are indented and by how much. 
+
+When using this property, consider the following behavior:
+
+- [!INCLUDE[d365fin_web_md](../includes/d365fin_web_md.md)] supports indentation on one column only. You can specify more than one column, however, in the UI, the columns may not appear as expected.
+- When indentation is specified, it's no longer possible to use sorting on the columns in the repeater control.  
+- This property is ignored if the **ShowAsTree** property on the repeater is set to **true**.
+- Right-aligned data in columns, such as the integer data type, won't appear as indented.
+
+For more information about how to use this property, see [Designing Indented Hierarchy Lists](../devenv-indented-hierarchy-lists.md).
+
+## Example
+
+```AL
+repeater(Control1)
+{
+    IndentationColumn = Indent;
+    IndentationControls = Name;
+    
+    field("No."; "No.")
+    {
+       
+    }
+
+```
+
+## See Also
+
+[ShowAsTree Property](devenv-showastree-property.md)  
+[IndentationColumn Property](devenv-indentationcolumn-property.md)  

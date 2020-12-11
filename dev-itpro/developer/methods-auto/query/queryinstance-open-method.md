@@ -1,8 +1,8 @@
 ---
-title: "Open Method"
+title: "Query.Open Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Open Method
+# Query.Open Method
+> **Version**: _Available from runtime version 1.0._
+
 Runs a query object and generates a data set that can be read. The following code shows the syntax of the OPEN method. Query is a variable of the Query data type that specifies the query object.
 
 
@@ -23,14 +25,14 @@ Runs a query object and generates a data set that can be read. The following cod
 ```
 
 ## Parameters
-*Query*  
-&emsp;Type: [Query](query-data-type.md)  
-An instance of the [Query](query-data-type.md) data type.  
+*Query*
+&emsp;Type: [Query](query-data-type.md)
+An instance of the [Query](query-data-type.md) data type.
 
 ## Return Value
-*Ok*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the operation was successful; otherwise **false**.  If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+*Ok*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+**true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -52,27 +54,26 @@ An instance of the [Query](query-data-type.md) data type.
 
 -   If the **OPEN** method is called on a query that is already in the opened or in the reading state, then the query dataset is closed, and then the query is executed again. To continue to loop through the dataset, the **READ** method must be called again. The next **READ** method call returns the first row in the dataset, as shown in the following code example.  
 
-        ```  
-        // Opens the query and generates a dataset.  
-        Query.OPEN;  
-        Query.READ;  
-        // Closes the query and reopens it.  
-        Query.OPEN;  
-        // Reads the first row in the new dataset.  
-        Query.READ;  
-
-        ```  
+    ```  
+    // Opens the query and generates a dataset.  
+    Query.OPEN;  
+    Query.READ;  
+    // Closes the query and reopens it.  
+    Query.OPEN;  
+    // Reads the first row in the new dataset.  
+    Query.READ;  
+    ```  
 
 -  **OPEN** method does not clear any filters that were set by the **SETFILTER** or **SETRANGE** methods on a previous **OPEN** call. If you want to clear the filters, then you must call the **CLEAR** method on the query variable.  
 
-        ```  
-        Query.SETFILTER(Column1, String);  
-        Query.OPEN;  
-        Query.READ;  
-        CLEAR(query);  
-        Query.OPEN;  
-        Query.READ;  
-        ```  
+    ```  
+    Query.SETFILTER(Column1, String);  
+    Query.OPEN;  
+    Query.READ;  
+    CLEAR(query);  
+    Query.OPEN;  
+    Query.READ;  
+    ```  
 
 -   You are required to call the **OPEN** method before the [SAVEASXML Method](../../methods/devenv-saveasxml-method.md) or [SAVEASCSV Method](../../methods/devenv-saveascsv-method.md). The **SAVEASXML** and **SAVEASCSV** methods automatically close the current query dataset and initialize a new instance of the query.  
 

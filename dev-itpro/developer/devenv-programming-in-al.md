@@ -1,7 +1,7 @@
 ---
 title: "Programming in AL"
 ms.custom: na
-ms.date: 11/12/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,6 +18,7 @@ With AL, you can create business rules to ensure that the data which is stored i
 - Combine data from multiple tables into one report or display it on one page.
 
 ## Where to write AL code
+
 Almost every object in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] contains triggers where you can add your AL code. Triggers exist for the following objects:  
 
 - Tables and table extensions
@@ -36,8 +37,28 @@ You can initiate the execution of your AL code from the following:
 > [!NOTE]  
 > If the AL code is in a `local` method, then you cannot run it from another object.  
 
+## Variable declarations
+
+Variables in AL are declared using the `var` keyword, and the syntax looks like this:
+
+```AL
+var
+        myInt: Integer;
+```
+
+If you have multiple variables of the same type, these can be declared in one line, such as:
+
+```AL
+var
+        myInt, nextInt, thirdInt : Integer;
+        isValid, doCheck : Boolean;
+```
+
+The `protected` keyword can be used to make variables accessible between tables and table extensions and between pages and page extensions. For more information, see [Protected Variables](devenv-protected-variables.md).
+
 
 ## Guidelines for placing AL code  
+
 We recommend the following guidelines for AL code:  
 
 - In general, write the code in codeunits instead of on the object on which it operates. This promotes a clean design and provides the ability to reuse code. It also helps enforce security. For example, typically users do not have direct access to tables that contain sensitive data, such as the **General Ledger Entry** table, nor do they have permission to modify objects. If you put the code that operates on the general ledger in a codeunit, give the codeunit access to the table, and give the user permission to run the codeunit, then you will not compromise the security of the table and the user will be able to access the table.  

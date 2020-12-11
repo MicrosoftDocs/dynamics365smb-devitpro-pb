@@ -1,8 +1,8 @@
 ---
-title: "HttpStatusCode Method"
+title: "HttpResponseMessage.HttpStatusCode Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# HttpStatusCode Method
+# HttpResponseMessage.HttpStatusCode Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets the status code of the HTTP response.
 
 
@@ -21,18 +23,18 @@ Gets the status code of the HTTP response.
 ```
 StatusCode :=   HttpResponseMessage.HttpStatusCode()
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 
 ## Parameters
-*HttpResponseMessage*  
-&emsp;Type: [HttpResponseMessage](httpresponsemessage-data-type.md)  
-An instance of the [HttpResponseMessage](httpresponsemessage-data-type.md) data type.  
+*HttpResponseMessage*
+&emsp;Type: [HttpResponseMessage](httpresponsemessage-data-type.md)
+An instance of the [HttpResponseMessage](httpresponsemessage-data-type.md) data type.
 
 ## Return Value
-*StatusCode*  
-&emsp;Type: [Integer](../integer/integer-data-type.md)  
-The status code of the HTTP response.  
+*StatusCode*
+&emsp;Type: [Integer](../integer/integer-data-type.md)
+The status code of the HTTP response.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

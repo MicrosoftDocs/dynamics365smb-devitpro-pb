@@ -1,14 +1,14 @@
 ---
-title: "Merging an Application Database with a Tenant Database"
+title: "Migrating to Single-Tenancy From Multitenancy"
+description: Learn how to migrate from a single-tenant Business Central deployment to a multitenant deployment.
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics-nav-2018"
+ms.service: dynamics365-business-central
 ms.assetid: 39a81332-8db1-4e5d-acda-915bf9591880
-caps.latest.revision: 5
 author: jswymer
 ---
 # Migrating to Single-Tenancy From Multitenancy
@@ -143,4 +143,4 @@ Write-Host "Operation complete." -foregroundcolor cyan
 ## See Also  
  [Migrating to Multitenancy](Migrating-to-Multitenancy.md)   
  [Separating Application Data from Business Data](Separating-Application-Data-from-Business-Data.md)   
-[Business Central Windows PowerShell Cmdlets](/powershell/business-central/overview.md)
+[Business Central Windows PowerShell Cmdlets](/powershell/business-central/overview)

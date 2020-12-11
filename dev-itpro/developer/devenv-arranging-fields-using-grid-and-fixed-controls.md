@@ -2,7 +2,7 @@
 title: Arranging Fields in Multiple Rows and Columns
 description: Arrange fields in rows and columns in a gird-like format using the Grid and Fixed controls.
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 By default, page fields are arranged automatically in two columns. For more information, see [Field Arrangement on FastTabs](devenv-arranging-fields-on-fasttab.md). You can use a Grid control or a Fixed control to arrange fields in rows and columns on a page and design it to look like a grid-like format. This topic outlines the differences between the two controls to help you determine which control to use. 
 
 > [!IMPORTANT]
-> Arranging fields in rows only works in the [!INCLUDE[nav_windows_md](../includes/nav_windows_md.md)]. In the Web client, fields can only be arranged in columns.
+> Arranging fields in rows only works in the [!INCLUDE[nav_windows_md](includes/nav_windows_md.md)]. In the Web client, fields can only be arranged in columns.
   
 ## Comparing Grid and Fixed controls  
  The Grid control is a new control and is the preferred method because it gives you more layout options. The following table outlines the Grid and Fixed control characteristics and their differences.  
@@ -40,7 +40,7 @@ The following table shows the supported structure to get the layout results that
 The Grid and the Fixed control must be placed in the `group` control in a `area(content)` subtype. The Group control does not have to be the first `group` under the `area(content)`.  
   
 > [!IMPORTANT]  
->  If the Grid or Fixed control is not placed in a Group control, it will inherit properties as if it were a typical Group control and none of the Grid or Fixed properties will apply to it.  
+> If the Grid or Fixed control is not placed in a Group control, it will inherit properties as if it were a typical Group control and none of the Grid or Fixed properties will apply to it.  
   
 The Grid or Fixed control must have Group controls as direct children and Field controls as children of those Group controls.  
 
@@ -49,10 +49,10 @@ The Grid or Fixed control must have Group controls as direct children and Field 
 The Grid control is supported on all page types and for a selected range of control types. The following table lists the types of controls that can be nested in a Grid control.  
   
 > [!TIP]  
->  Although nesting groups such as Group, Fixed, and Grid is possible, we do not recommend it because of lower UI performance and less optimal layout.  
+> Although nesting groups such as Group, Fixed, and Grid is possible, we do not recommend it because of lower UI performance and less optimal layout.  
   
 |Control Type|Control Subtype|  
-|------------------|---------------------|  
+|------------|---------------|  
 |Fields||  
 |Groups|Group|  
 ||Repeater|  
@@ -64,7 +64,7 @@ The Grid control is supported on all page types and for a selected range of cont
 The following table lists the types of controls that are not supported in a Grid control.  
   
 |Control Type|Control Subtype|  
-|------------------|---------------------|  
+|------------|---------------|  
 |Add-Ins||  
 |Parts|Chart Parts|  
 ||System Parts|  

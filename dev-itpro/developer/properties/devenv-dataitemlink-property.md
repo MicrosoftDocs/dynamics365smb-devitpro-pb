@@ -1,7 +1,7 @@
 ---
 title: "DataItemLink Property"
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,11 +13,14 @@ author: SusanneWindfeldPedersen
 ---
 
 # DataItemLink Property
+> **Version**: _Available from runtime version 1.0._
+
 The DataItemLink property is applicable to the following types: 
 - [DataItemLink Property (Reports)](devenv-dataitemlink-reports-property.md)  
 - [DataItemLink Property (Query)](devenv-dataitemlink-query-property.md)
   
-## See Also  
+## See Also
+
 [OnPreDataItem Trigger](../triggers/devenv-onpredataitem-trigger.md)   
 [DataItemLinkReference Property](devenv-dataitemlinkreference-property.md)  
 [DataItemLink Property (Reports)](devenv-dataitemlink-reports-property.md)  

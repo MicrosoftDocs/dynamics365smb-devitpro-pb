@@ -2,7 +2,7 @@
 title: Embed the Web Client Pages
 description: Deploy the Web client as an independent website in an internal company portal containing data from Business Central including document handling, newsfeed etc.
 ms.custom: na
-ms.date: 12/16/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,7 +15,7 @@ author: jswymer
 
 The [!INCLUDE[webclient](includes/webclient.md)] can be deployed as an independent website. In some cases, it is useful to embed parts of the [!INCLUDE[webclient](includes/webclient.md)] in other websites, for example, in order to build an internal company portal that not only contains data from [!INCLUDE[prodshort](includes/prodshort.md)], but also contains news feeds, document handling, and so on  
 
-You can do this by adding an iframe element on the embedding website, such as: `<iframe src=”https://MyWebServer/DynamicsNAV110/default.aspx?...” />`. The [!INCLUDE[!INCLUDE[webclient](includes/webclient.md)] will display the ribbon, the navigation pane, and other UI parts inside the frame. You can update the [!INCLUDE[webclient](includes/webclient.md)] to hide the ribbon, the navigation pane, or any UI parts, and only display the core part of the list inside the frame.  
+You can do this by adding an iframe element on the embedding website, such as: `<iframe src="https://MyWebServer/DynamicsNAV110/default.aspx?..." />`. The [!INCLUDE[!INCLUDE[webclient](includes/webclient.md)] will display the ribbon, the navigation pane, and other UI parts inside the frame. You can update the [!INCLUDE[webclient](includes/webclient.md)] to hide the ribbon, the navigation pane, or any UI parts, and only display the core part of the list inside the frame.  
 
 > [!NOTE]  
 >  Only list pages are supported as framed pages.
@@ -56,7 +56,7 @@ The following table describes the parameters of the URL for displaying a list pa
 
 ###  <a name="EmbedWebClient"></a> Embedding the Web Client in a Website on Another Web Server
 
-By default, the [!INCLUDE[webclient](includes/webclient.md)] will not allow a website to display the web client inside an iframe unless the website is hosted on the same web server. This is enforced by having the default value of `X-FRAME-OPTIONS` set to `SAMEORIGIN` and `Content-Security-Policy` to `frame-ancestors ‘self’` in the web.config file.  
+By default, the [!INCLUDE[webclient](includes/webclient.md)] will not allow a website to display the web client inside an iframe unless the website is hosted on the same web server. This is enforced by having the default value of `X-FRAME-OPTIONS` set to `SAMEORIGIN` and `Content-Security-Policy` to `frame-ancestors 'self'` in the web.config file.  
 
 ```  
 <httpProtocol>  
@@ -67,7 +67,7 @@ By default, the [!INCLUDE[webclient](includes/webclient.md)] will not allow a we
     </httpProtocol>  
 ```  
 
-In order to show a list page in an HTML site on a different host, the configuration fole (navsettings.json) of the [!INCLUDE[webserver](includes/webserver.md)] instance that hosts the [!INCLUDE[webclient](includes/webclient.md)](includes/nav_web_md.md)] has to be configured to include a hostname as a value of the `AllowedFrameAncestors` setting.  
+In order to show a list page in an HTML site on a different host, the configuration file (navsettings.json) of the [!INCLUDE[webserver](includes/webserver.md)] instance that hosts the [!INCLUDE[webclient](includes/webclient.md)] has to be configured to include a hostname as a value of the `AllowedFrameAncestors` setting.  
 
 ```  
 "NAVWebSettings":  {  

@@ -1,8 +1,8 @@
 ---
-title: "DelStr Method"
+title: "Text.DelStr Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# DelStr Method
+# Text.DelStr Method
+> **Version**: _Available from runtime version 1.0._
+
 Deletes a substring inside a string (text or code).
 
 
@@ -21,8 +23,8 @@ Deletes a substring inside a string (text or code).
 ```
 NewString :=   Text.DelStr(String: String, Position: Integer [, Length: Integer])
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *String*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -38,9 +40,9 @@ Specifies how many characters to delete. Length must be greater than zero (0).
 
 
 ## Return Value
-*NewString*  
-&emsp;Type: [String](../string/string-data-type.md)  
-The input string without the specified substring.  
+*NewString*
+&emsp;Type: [String](../string/string-data-type.md)
+The input string without the specified substring.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

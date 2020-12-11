@@ -1,8 +1,8 @@
 ---
-title: "GetLastErrorObject Method"
+title: "System.GetLastErrorObject Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# GetLastErrorObject Method
+# System.GetLastErrorObject Method
+> **Version**: _Available from runtime version 2.0._
+
 Gets the last System.Exception object that occurred.
 
 > [!NOTE]
@@ -23,14 +25,14 @@ Gets the last System.Exception object that occurred.
 ```
 DotNet :=   System.GetLastErrorObject()
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 
 
 ## Return Value
-*DotNet*  
-&emsp;Type: [DotNet](../dotnet/dotnet-data-type.md)  
-  
+*DotNet*
+&emsp;Type: [DotNet](../dotnet/dotnet-data-type.md)
+
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

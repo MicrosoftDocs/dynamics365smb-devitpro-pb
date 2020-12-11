@@ -1,8 +1,8 @@
 ---
-title: "Property changes that cause destructive changes are not allowed"
-ms.author: SusanneWindfeldPedersen
+title: "Unsupported table property change"
+ms.author: solsen
 ms.custom: na
-ms.date: 02/06/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,10 +14,10 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AppSourceCop Rule AS0034
-Property changes that cause destructive changes are not allowed  
+Unsupported table property change  
 
 ## Description
-Destructive table properties that have been published must not be modified.
+Modifying table properties can lead to destructive changes that will break the upgrade of existing installations and dependent extensions.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

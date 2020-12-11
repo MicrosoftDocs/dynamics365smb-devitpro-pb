@@ -2,7 +2,7 @@
 title: "Enum Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Enum Data Type
+> **Version**: _Available from runtime version 4.0._
+
 Represents the text content of an element or attribute.
 
 
@@ -35,6 +37,11 @@ The following methods are available on instances of the Enum data type.
 |[Ordinals()](enum-ordinals--method.md)|Gets the ordinal numbers/ID's for the values|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Example
+
+For more information, see [Extensible Enums](../../devenv-extensible-enums.md).
+
 ## See Also  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

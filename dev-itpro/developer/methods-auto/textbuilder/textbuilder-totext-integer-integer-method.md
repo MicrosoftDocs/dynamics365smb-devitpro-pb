@@ -1,8 +1,8 @@
 ---
-title: "ToText Method"
+title: "TextBuilder.ToText Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# ToText Method
+# TextBuilder.ToText Method
+> **Version**: _Available from runtime version 1.0._
+
 Converts the value of a substring of this TextBuilder instance to a Text.
 
 
@@ -22,9 +24,9 @@ Converts the value of a substring of this TextBuilder instance to a Text.
 Result :=   TextBuilder.ToText(StartIndex: Integer, Count: Integer)
 ```
 ## Parameters
-*TextBuilder*  
-&emsp;Type: [TextBuilder](textbuilder-data-type.md)  
-An instance of the [TextBuilder](textbuilder-data-type.md) data type.  
+*TextBuilder*
+&emsp;Type: [TextBuilder](textbuilder-data-type.md)
+An instance of the [TextBuilder](textbuilder-data-type.md) data type.
 
 *StartIndex*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
@@ -36,9 +38,9 @@ The number of characters in the substring.
 
 
 ## Return Value
-*Result*  
-&emsp;Type: [Text](../text/text-data-type.md)  
-The result text substring.  
+*Result*
+&emsp;Type: [Text](../text/text-data-type.md)
+The result text substring.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

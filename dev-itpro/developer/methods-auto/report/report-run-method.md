@@ -1,8 +1,8 @@
 ---
-title: "Run Method"
+title: "Report.Run Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Run Method
+# Report.Run Method
+> **Version**: _Available from runtime version 1.0._
+
 Loads and executes the report that you specify.
 
 
@@ -50,28 +52,32 @@ If the report you specify does not exist, then a compile error occurs.
 
 [!INCLUDE[multi_file_download_web_client](../../includes/multi_file_download_web_client.md)]
   
-## Example  
+## Example 1
+
  This example shows how to run a report. This example displays the request window and sends the report to the printer that is selected in the Printer Selection table.  
 
 ```  
 REPORT.RUN(1001);  
 ```  
 
-## Example  
+## Example 2
+
  This example shows how to run a report. This example skips the request window, starts the report immediately, and sends the report to the printer that is selected in the Printer Selection table.  
 
 ```  
 REPORT.RUN(1001, FALSE);  
 ```  
 
-## Example  
+## Example 3
+
  This example shows how to run a report. This example skips the request window and starts the report immediately. It sends the report to the system printer instead of the printer that is selected in the Printer Selection table.  
 
 ```  
 REPORT.RUN(1001, FALSE, TRUE);  
 ```  
 
-## Example  
+## Example 4
+
  This example shows how to run a report for which you specify a record. This example displays the request window and sends the report to the system printer.
  
 ```  

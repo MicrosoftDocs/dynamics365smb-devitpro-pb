@@ -1,21 +1,26 @@
 ---
 title: "GetEnvironment Method"
+description: "The GetEnvironment method in AL for Business Central"
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
+author: solsen
 ---
 
 # GetEnvironment Method
-Gets information about the environment that the control add-in is using.  
+
+Gets information about the environment that the control add-in is using. For more information, see [Control Addin Object](../devenv-control-addin-object.md).
   
-## Method Signature  
- `object Microsoft.Dynamics.NAV.GetEnvironment()`  
+## Method signature  
+
+`object Microsoft.Dynamics.NAV.GetEnvironment()`  
   
-## Return Value  
+## Return value 
+
 Returns an object that contains the following members:  
   
 |Member|Description|  
@@ -28,7 +33,8 @@ Returns an object that contains the following members:
 |Platform|Type: Integer<br /><br /> An integer indicating the underlying platform that the control add-in is being rendered on. Possible values:<br /><br /> 0 – [!INCLUDE[nav_windows](../includes/nav_windows_md.md)].<br /><br /> 1 – [!INCLUDE[nav_web](../includes/nav_web_md.md)], [!INCLUDE[nav_tablet](../includes/nav_tablet_md.md)], or [!INCLUDE[nav_phone](../includes/nav_phone_md.md)] in a browser.<br /><br /> 2 – [!INCLUDE[nav_uni_app](../includes/nav_uni_app_md.md)].<br /><br /> 3 - Microsoft Office add-in.|
 |UserInteractionMode|Type: Integer <br /><br />An integer indicating the user interaction mode that the control add-in is being rendered under. Possible values:<br /><br /> 0 - Mouse <br /><br /> 1 - Touch|  
   
-## Example  
+## Example
+
 This code example illustrates how you can assign members of the object return type to variables and use the **Busy** member to determine whether the client is busy or not.  
   
 ```  
@@ -49,6 +55,8 @@ environment.OnBusyChanged = function()
   
 ```  
   
-## See Also  
+## See Also 
+
+[AL Method Reference](../methods-auto/library.md)  
 [InvokeExtensibilityMethod Method](devenv-invokeextensibility-method.md)   
 [GetImageResource Method](devenv-getimageresource-method.md)   

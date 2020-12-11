@@ -3,35 +3,18 @@ title: "How to create an effective sales landing page"
 description: "Guideline on creating an effective Sales Landing page for your app"
 author: v-liober
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: solsen
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.author: v-liober
+ms.author: a-emniel
 ---
 
 # Guideline on Creating an Effective Sales Landing Page for Your App
+
 ## Building a landing page that drives a successful buying transaction
 
 Microsoft will drive qualified traffic to AppSource. Though, once a prospect becomes aware of your app, it will be your job to guide them through to a successful buying transaction. Deliberately mapping and architecting the buying journey is critical to ensure a high level of engagement and conversion. Only presenting your app’s features and functionality, or just providing a free trial, will not ensure prospects will become buyers. For this you need to have a good landing page that is built to help you capture attention, accelerate your customer acquisition process, and drive buying behavior. The recommendations on this page will help you do so.
-
-Your app landing page should be built to move prospects effectively through the following stages:
-
-## Accommodating more languages than English
-
-English is the de facto language that is used on AppSource to ease the validation process and create a uniform user experience.
-
-For you, this means that both the storefront details of your app, and everything that is accessible through it must be in English too.
-- This includes: your app’s landing page, videos, documentation – such as “Learn more” documents, factsheets, set up instructions, privacy policies, SLAs etc. – as well as help, support, and contact options.
-
-If your app caters to a local language that isn’t English, you can improve the user experience by:
-- Creating a website that has two landing pages (i.e. two language buttons – cf. one in English and one in the given local language). In so doing your customers can switch to the language they master and thus easily be able to find the right docs and contact info by a shift of a button.
-- However, this set up implies that you need to *make two versions of all your docs, support options and landing pages*.
-- Note, as mentioned earlier within the "Marketing Validation Checklist" everything that is accessible through the Cloud Partner Portal needs to be in English.
-
-Below you can see how Deex Korea Co Ltd has set up their apps landing page to accommodate two languages, and everything that this entails. We recommend that you use it as inspiration on how to create a user-friendly landing page. If you click on the pictures you will be re-directed to their two respective landing pages.
-
-Example of Deex Korea Co Ltd.’s user-friendly landing pages that accomodates two language options and is set up in accordance with our best practices:
 
 ## Examples of how other partners have implemented our best practices
 
@@ -39,9 +22,8 @@ To inspire you in creating a good landing page for your app, two of our valued p
 
 Have a look at their app landing pages and use them as inspiration to build your own landing page:
 
-[Industry Built’s Build Food app](https://www.buildfood.cloud/)
-
-[LS Retail’s LS Express Start app](https://lsexpress.lsretail.com/)
+- [Industry Built’s Build Food app](https://www.buildfood.cloud/)
+- [LS Retail’s LS Express Start app](https://lsexpress.lsretail.com/)
 
 In the following checklist, we have “broken down” the elements, on their landing pages in order to showcase best practices on design and messaging. More specifically, we are looking into layout and structure elements, content elements, visual elements, anxiety reducing elements and support elements.
 
@@ -62,10 +44,12 @@ We urge you to review and implement these best practices on your landing page �
 |Visual| Make your page easy to scan, with lots of strong visual imagery.|<!-- ./media/image39.jpg to be fixed -->|
 
 ## Logo
+
 - The upper-left corner of the landing page is the most valuable section of the entire landing page.
 - Place your company logo in this location.
 
-If you need help formulating a positioning statement, try the value proposition generator located at [here](https://neuralimpact.ca/valueproposition/) 
+If you need help formulating a positioning statement, try the value proposition generator located at [here](https://neuralimpact.ca/valueproposition/).
+
 - There should ideally be 5 or fewer choices; do not include more than 7 options.
 - The menu text should state what the prospect gains if they click on the menu item
 - The text should be written from their perspective, not yours.
@@ -73,7 +57,8 @@ If you need help formulating a positioning statement, try the value proposition 
 **Recommended menu items:**
 - How to Buy, Benefits Gained, Why Us, and Contact.
 
-## The upper-right corner of the page is usually an ideal spot.
+## The upper-right corner of the page is usually an ideal spot
+
 - Faces evoke more emotion than landscapes or machines, and so on.
 - Include a happy customer that looks similar to your prospect in terms of age, demographic, and industry, and which shows them dealing with the issues that your prospect can relate to.
 - Try not to use stock photos of people or objects.
@@ -89,7 +74,7 @@ If you need help formulating a positioning statement, try the value proposition 
 ||You want the prospect to mentally say “YES” as often as possible and to peak their curiosity enough to read more.||
 || Your questions should be intriguing and customer-centric.||
 ||In general, 8 out of 10 people will read headline copy, but only 2 out of 10 will read the rest.||
-|Microsoft Dynamics 365 product description|Somewhere on the landing page, make sure you include the standard Microsoft Dynamics 365 Business Central product description provided by Microsoft *This is a requirement because your product is adding value to and building on this foundational solution.*|*Insert this paragraph:* Microsoft Dynamics 365 Business Central is a comprehensive business management solution for small and medium-size businesses (SMBs) that have outgrown their basic accounting software. From day one, this new application makes ordering, selling, invoicing, and reporting easier and faster. Dynamics 365 Business Central is deeply integrated with Office 365 and includes built-in intelligence, so it is easy to use and helps users make better business decisions.||
+|Microsoft Dynamics 365 product description|Somewhere on the landing page, make sure you include the standard Microsoft Dynamics 365 Business Central product description provided by Microsoft *This is a requirement because your product is adding value to and building on this foundational solution.*|*Insert this paragraph:* Microsoft Dynamics 365 Business Central is a comprehensive business management solution for small and medium-size businesses (SMBs) that have outgrown their basic accounting software. From day one, this new application makes ordering, selling, invoicing, and reporting easier and faster. Dynamics 365 Business Central is deeply integrated with Microsoft 365 and includes built-in intelligence, so it is easy to use and helps users make better business decisions.||
 |Messaging (Address their pains)|	Pain is a strong motivator of action. |	<!-- >./media/image40.jpg to be fixed-->| 
 ||- Identify 1-3 key sources of the client’s most prominent pain early on the page.|<!-- ./media/image41.jpg to be fixed-->|
 ||- Call out the fears that are likely to be holding them back.||
@@ -127,11 +112,13 @@ Target market - If you support multiple countries or languages, this is a key se
 | Element    | Description | Example |
 |------------|-------------|---------|
 |**Messaging (Compelling call-to-action)**| Include specific calls-to-action on your app page|<!-- >./media/image53.jpg -->|
+
 - This can be your free trial; a time-limited special price; a scheduled walk-through demonstration; and so on.
 - The words "free” and “save” are highly emotional words in the English language, so they should be used.
 - Use bright colors, such as orange, yellow, or red, to call attention to your buttons.
 
 Button text should use benefit language rather than descriptive language.
+
 - For example, instead of “Download” write
 “Click here to start saving money now.”
 - Try not to send prospects away from your page – always have an embedded next step in your call to action that brings them back to your landing page.
@@ -186,10 +173,11 @@ Include one product demonstration video.
 - Social proof is more credible and trustworthy to prospects. The purpose of testimonials is to reduce the buyer's anxiety and fear.
 
 Your testimonials should answer the following questions:
+
 - “Will this work for my situation?”
 - “What benefit will I really get if I buy this?”
 - “Is this going to be too hard?” 
--  “How long is this going to take?"
+- “How long is this going to take?"
 - “Can I trust this company?”
 
 | Element         | Description | Example |
@@ -203,15 +191,16 @@ Transparency is the key to building trust.
 - Give them a compelling offer they cannot refuse. Offer a time-limited trial or special pricing discount if they buy in 30 days.
 - Use scarcity to compel action. Offer a 100% money-back guarantee.
 
-We recommend providing three offerings, optimized for three different customer segments. For more recommendations on pricing, see the pricing guide located at https://mbspartner.microsoft.com/BFI/Topic/64	
+We recommend providing three offerings, optimized for three different customer segments. For more recommendations on pricing, see the pricing guide located at https://mbspartner.microsoft.com/BFI/Topic/64
 			
 | Element       | Description | Example |
 |---------------|-------------|---------|
 |**Live chat**|Include live chat, with a photo of one of your team members smiling at an appropriate time to increase conversion, such as when a prospect clicks the back button on your pricing page. ||
 
-- Include their name if possible to build trust.		
+- Include their name if possible to build trust.
 
 ## Support elements: Interactivity and contact options
+
 | Element         | Description | Example |
 |-----------------|-------------|--------------|
 |**SHORT lead capture form**|Include a lead capture form on your page.|<!--	./media/image68.jpg -->|
@@ -220,7 +209,9 @@ We recommend providing three offerings, optimized for three different customer s
 - Your forms should not have more than 4 or 5 fields to fill out. You have not yet earned the right or enough trust to ask for too much information at this point.
 
 Most lead capture forms are way too long, demanding, and intimidating, and have low completion rates.
-- Note, nobody has the time or is willing to fill out an annoying form, which is of no value to them, especially if it is purely self-serving from your standpoint.	
+
+> [!NOTE]  
+> Nobody has the time or is willing to fill out an annoying form, which is of no value to them, especially if it is purely self-serving from your standpoint.	
 
 
 | Element       | Description | Example |

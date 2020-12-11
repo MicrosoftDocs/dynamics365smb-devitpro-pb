@@ -1,9 +1,9 @@
 ---
 title: "Pages Overview"
-description: Pages are the main way to display and organize data. Pages are the main way to display and organize data.
+description: "Pages are the main way to display and organize data." 
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 11/26/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,12 +22,16 @@ Whether you are creating a new page, or extending an existing page, you will add
 
 The structure of a page is hierarchical and breaks down in to three sections. The first block contains metadata for the overall page. The metadata describes the page type and the source table it is showing data from. The next section; the layout, describes the visual parts on the page. The final section details the actions that are published on the page.
 
-Furthermore, the page has properties. Properties work in the same way for pages as they do for other [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] objects. For more information, see [Page Properties](properties/devenv-page-property-overview.md).  
+Furthermore, the page has properties. Properties work in the same way for pages as they do for other [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] objects. For more information, see [Page Properties](properties/devenv-page-property-overview.md). 
+
+> [!TIP]  
+> For information about designing pages, see [Page Types and Layouts](devenv-page-types-and-layouts.md).
 
 ## Page metadata
+
 For a new page object, you must at least specify the type of page; `PageType` and the data source; `SourceTable` of the page. And you can also set other metadata at the beginning of the declaration of the page object.  
 
-```
+```AL
 page 50102 PageName
 {
     PageType = List;
@@ -39,36 +43,38 @@ page 50102 PageName
 ```
 
 ### Types of pages  
+
 Which page type you choose depends on the application task that you want to support, the content that you want to display, and how you want to display it. The Role Center page is the main or home page and it helps the user focus on the most important daily tasks and activities. Other types of pages, such as list pages or card pages are typically linked from the home page for easy access. The following page types are available:  
 
 |Page type   |Description|
 |------------|-----------|
-|`RoleCenter`|The Role Center page is the main page.|
-|`Card`|A Card page is used to view and edit one record or entity from a table.|
-|`CardPart`|A Card Part page is used in a FactBox on another page to view or edit additional fields associated with a selected entity in the page.|
-|`List`|A List page displays content from a table in a list format.|
-|`ListPart`|Similar to a List page, a List Part page displays content from a table in a list format. The difference is that you use the List part page as another page in a FactBox or as a part of the Role Center page.|
-|`ListPlus`|Similar to a List page, a List Plus page displays content from a table in a list format. The difference is that the List Plus page type can contain two lists in one page, and can be used as a two-dimensional matrix.|
-|`Document`|A Document page usually consists of two separate pages combined into one, with one page nested in the other. A Document page is suitable for use when you want to display data from two tables that are linked together.|
-|`WorkSheet`|You use a Worksheet page type for creating worksheet or journal task pages.|
-|`ConfirmationDialog`|You use the ConfirmationDialog page to display messages or prompt users with a confirmation before they continue with the task that they are working on.|
-|`StandardDialog`|The StandardDialog is a simple page type that you use when users only need to input data and do not need to perform other actions from the page.|
-|`NavigatePage`|You use a Navigate page type to create a wizard that leads the user through a sequence of steps for completing a task.|
-|`HeadlinePart`|You use a HeadlinePart page type to display a set of changing headlines on a Role Center. For more information, see [Creating a Role Center Headline](devenv-create-role-center-headline.md)|
-|`API`|Pages of this type are used to generate web service endpoints and cannot be shown in the user interface. This page type should not be extended by creating a page extension object. Instead, create a new API by adding a page object.|
+|[RoleCenter](devenv-designing-role-centers.md)|The Role Center page is the main page.|
+|[Card](devenv-designing-card-pages.md)|A Card page is used to view and edit one record or entity from a table.|
+|[CardPart](devenv-designing-cardparts.md)|A Card Part page is used in a FactBox on another page to view or edit additional fields associated with a selected entity in the page.|
+|[List](devenv-designing-list-pages.md)|A List page displays content from a table in a list format.|
+|[ListPart](devenv-designing-listparts.md)|Similar to a List page, a List Part page displays content from a table in a list format. The difference is that you use the List part page as another page in a FactBox or as a part of the Role Center page.|
+|[ListPlus](devenv-designing-listparts.md)|A ListPlus page displays content from a table in a list format. The difference from a List page is that the main content is a ListPart, not a Repeater group as the List has it.|
+|[Document](devenv-designing-card-pages.md)|A Document page usually consists of two separate pages combined into one, with one page nested in the other. A Document page is suitable for use when you want to display data from two tables that are linked together.|
+|[WorkSheet](devenv-page-types-and-layouts.md#worksheet-page-layouts)|You use a Worksheet page type for creating worksheet or journal task pages.|
+|ConfirmationDialog|You use the ConfirmationDialog page to display messages or prompt users with a confirmation before they continue with the task that they are working on.|
+|StandardDialog|The StandardDialog is a simple page type that you use when users only need to input data and do not need to perform other actions from the page.|
+|NavigatePage|You use a Navigate page type to create a wizard that leads the user through a sequence of steps for completing a task.|
+|[HeadlinePart](devenv-create-role-center-headline.md)|You use a HeadlinePart page type to display a set of changing headlines on a Role Center.|
+|[API](devenv-api-pagetype.md)|Pages of this type are used to generate web service endpoints and cannot be shown in the user interface. This page type should not be extended by creating a page extension object. Instead, create a new API by adding a page object.|
 
 > [!NOTE]  
 > For backwards compatibility we continue to support adding non-part pages as parts. We do, however, recommend that you redesign your page to only use Card part or List part, as we may remove support in a future update. 
 
 ## Page layout
+
 The page layout of the page object determines what the page will look like and is specified in the `layout` section. The `layout` contains one or more `area` sections that define a certain placement on the page. 
 
 You can choose between the following `area` categories:
 
 |Area type|Placement on the page|
 |---------|---------------------|
-|`Content`|The content area displays the content of a RoleCenter or a List page.|
-|`FactBoxes`|The factbox area is placed to the right-most side of a page. <br> Displays content related to an item on the main content page. </br>|
+|`Content`|The content area displays the content of, for example, a RoleCenter or a List page.|
+|`FactBoxes`|The FactBox area is placed to the right-most side of a page. <br> Displays content related to an item on the main content page. </br>|
 |`RoleCenter`|The RoleCenter is the main page of the application and is used for quick access to frequently used information and tasks.|
   
 ### Page actions
@@ -83,86 +89,6 @@ Actions can be displayed in the ribbon of all pages and grouped together under t
 - Report
 
 Creating actions can include adding activity buttons/cues to a page, configuring navigation items on a user role center, or adding Reports to a page. To learn how you can enable users to quickly locate the actions they want to use, see [Actions](devenv-actions-overview.md). 
-
-## Using keywords to place actions and controls
-You can use the following keywords in the `layout` section to place and move fields and groups on the page. Similarly, in the `actions` section, you use these keywords to place actions in the ribbon. 
-
-|Keywords        |Syntax | Applies to |
-|-----------------------|-------|-------------|
-|`addfirst`|`addfirst(Anchor)`|**Anchor**: areas and groups|
-|`addlast` |`addlast(Anchor)` |**Anchor**: areas and groups|
-|`addafter` |`addafter(Anchor)` |**Anchor**: controls, actions and groups|
-|`addbefore`|`addbefore(Anchor)` |**Anchor**: controls, actions and groups|
-|`movefirst`|`movefirst(Anchor; Target1, Target2)`|**Anchor**: area, group <br>**Target**: list of actions or list of controls|
-|`movelast` |`movelast(Anchor; Target1, Target2)` |**Anchor**: area, group <br>**Target**: list of actions or list of controls|
-|`moveafter` |`moveafter(Anchor; Target1, Target2)`|**Anchor**: controls, actions and groups <br>**Target**: list of actions or list of controls|
-|`movebefore`|`movebefore(Anchor; Target1, Target2)`|**Anchor**: controls, actions and groups <br>**Target**: list of actions or list of controls|
-|`modify`|`modify(Target)`|**Target**: controls, actions and groups|
-
-
-### Example
-To modify the existing fields and groups on a page, you use the `modify` keyword. See the code snippet below for `addlast`, `modify` and `action` syntax. In the following example, `action` creates a new group in the ribbon and places it last in the `Creation` group.  
-
-```
-pageextension 70000020 CustomerCardExtension extends "Customer Card"
-{
-    layout
-    {
-        // Adding a new control field 'ShoeSize' in the group 'General'
-        addlast(General)
-        {
-            field("Shoe Size"; ShoeSize)
-            {
-                Caption = 'Shoe size';
-
-                trigger OnValidate();
-                begin
-                    if ShoeSize < 10 then
-                        Error('Feet too small');
-                end;
-            }
-        }
-
-        // Modifying the caption of the field 'Address 2'
-        modify("Address 2")
-        {
-            Caption = 'New Address 2';
-        }
-
-        // Moving the two fields 'CreditLimit' and 'CalcCreditLimitLCYExpendedPct'
-        // to be the first ones in the 'Balance' group.
-        movefirst(Balance; CreditLimit, CalcCreditLimitLCYExpendedPct)
-    }
-    actions
-    {
-        // Adding a new action group 'MyNewActionGroup' in the 'Creation' area
-        addlast(Creation)
-        {
-            group(MyNewActionGroup)
-            {
-                action(MyNewAction)
-                {
-                    Caption = 'My New Action';
-
-                    trigger OnAction();
-                    begin
-                        Message('My message');
-                    end;
-                }
-            }
-        }
-    }
-}
-
-tableextension 70000020 CustomerTableExtension extends Customer
-{
-    fields
-    {
-        // Adding a new table field in the 'Customer' table
-        field(50100; ShoeSize; Integer) { }
-    }
-}
-```
 
 ## Adding Help to the page objects
 
@@ -186,7 +112,7 @@ The base application has applied instructional text to setup guides and certain 
 
 The following example shows how you can apply user assistance and link to Help in a page object:
 
-```
+```AL
 page 50101 "Reward Card"
 {
     PageType = Card;
@@ -239,9 +165,10 @@ We recommend that you simplify the user experience by reducing what users see by
 
 ## See Also
 
-[Page Properties Overview](properties/devenv-page-property-overview.md)  
+[Page, Page Fields, and Page Extension Properties](properties/devenv-page-property-overview.md)  
 [Actions Overview](devenv-actions-overview.md)  
 [Using Designer](devenv-inclient-designer.md)  
+[Page Types and Layouts](devenv-page-types-and-layouts.md)   
 [Adding a Factbox to a Page](devenv-adding-a-factbox-to-page.md)  
 [Designing Role Centers](devenv-designing-role-centers.md)  
 [Configure Context-Sensitive Help](../help/context-sensitive-help.md)  

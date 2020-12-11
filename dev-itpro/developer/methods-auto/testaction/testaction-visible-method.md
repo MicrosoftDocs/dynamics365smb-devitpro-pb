@@ -1,8 +1,8 @@
 ---
-title: "Visible Method"
+title: "TestAction.Visible Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Visible Method
+# TestAction.Visible Method
+> **Version**: _Available from runtime version 1.0._
+
 Sets whether to display the action on a test page.
 
 
@@ -23,14 +25,14 @@ Visible :=   TestAction.Visible()
 ```
 
 ## Parameters
-*TestAction*  
-&emsp;Type: [TestAction](testaction-data-type.md)  
-An instance of the [TestAction](testaction-data-type.md) data type.  
+*TestAction*
+&emsp;Type: [TestAction](testaction-data-type.md)
+An instance of the [TestAction](testaction-data-type.md) data type.
 
 ## Return Value
-*Visible*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-  
+*Visible*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

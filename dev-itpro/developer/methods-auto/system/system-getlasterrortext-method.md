@@ -1,8 +1,8 @@
 ---
-title: "GetLastErrorText Method"
+title: "System.GetLastErrorText Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# GetLastErrorText Method
+# System.GetLastErrorText Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets the last error that occurred in the debugger.
 
 
@@ -21,16 +23,16 @@ Gets the last error that occurred in the debugger.
 ```
 String :=   System.GetLastErrorText()
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 
 
 ## Return Value
-*String*  
-&emsp;Type: [String](../string/string-data-type.md)  
-  
+*String*
+&emsp;Type: [String](../string/string-data-type.md)
+
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

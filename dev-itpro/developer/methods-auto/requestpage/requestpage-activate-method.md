@@ -1,8 +1,8 @@
 ---
-title: "Activate Method"
+title: "RequestPage.Activate Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Activate Method
+# RequestPage.Activate Method
+> **Version**: _Available from runtime version 1.0._
+
 Activates the current page on the client if possible. The data on the page will not be refreshed.
 
 
@@ -22,9 +24,9 @@ Activates the current page on the client if possible. The data on the page will 
 [Ok := ]  RequestPage.Activate([Refresh: Boolean])
 ```
 ## Parameters
-*RequestPage*  
-&emsp;Type: [RequestPage](requestpage-data-type.md)  
-An instance of the [RequestPage](requestpage-data-type.md) data type.  
+*RequestPage*
+&emsp;Type: [RequestPage](requestpage-data-type.md)
+An instance of the [RequestPage](requestpage-data-type.md) data type.
 
 *Refresh*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
@@ -32,9 +34,9 @@ If set to **true**, the data on the page will be refreshed.
 
 
 ## Return Value
-*Ok*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-  
+*Ok*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

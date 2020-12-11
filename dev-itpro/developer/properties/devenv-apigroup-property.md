@@ -2,7 +2,7 @@
 title: "APIGroup Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 ---
  
 # APIGroup Property 
+> **Version**: _Available from runtime version 1.0._
+
 The APIGroup property is applicable to the following types: 
 - [APIGroup Property (Page)](devenv-APIGroup-page-property.md)   
 - [APIGroup Property (Query)](devenv-APIGroup-query-property.md)   

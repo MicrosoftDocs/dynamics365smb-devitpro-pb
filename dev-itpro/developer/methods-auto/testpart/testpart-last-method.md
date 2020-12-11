@@ -1,8 +1,8 @@
 ---
-title: "Last Method"
+title: "TestPart.Last Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Last Method
+# TestPart.Last Method
+> **Version**: _Available from runtime version 1.0._
+
 Sets the current row of the test page as the last row in the data set.
 
 
@@ -23,14 +25,14 @@ Sets the current row of the test page as the last row in the data set.
 ```
 
 ## Parameters
-*TestPart*  
-&emsp;Type: [TestPart](testpart-data-type.md)  
-An instance of the [TestPart](testpart-data-type.md) data type.  
+*TestPart*
+&emsp;Type: [TestPart](testpart-data-type.md)
+An instance of the [TestPart](testpart-data-type.md) data type.
 
 ## Return Value
-*Ok*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-True, if a last row is present.  
+*Ok*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+True, if a last row is present.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

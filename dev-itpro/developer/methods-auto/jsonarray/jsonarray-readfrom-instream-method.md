@@ -1,8 +1,8 @@
 ---
-title: "ReadFrom Method"
+title: "JsonArray.ReadFrom Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# ReadFrom Method
+# JsonArray.ReadFrom Method
+> **Version**: _Available from runtime version 1.0._
+
 Reads the JSON data from the stream into a JsonArray variable.
 
 
@@ -22,9 +24,9 @@ Reads the JSON data from the stream into a JsonArray variable.
 [Ok := ]  JsonArray.ReadFrom(Data: InStream)
 ```
 ## Parameters
-*JsonArray*  
-&emsp;Type: [JsonArray](jsonarray-data-type.md)  
-An instance of the [JsonArray](jsonarray-data-type.md) data type.  
+*JsonArray*
+&emsp;Type: [JsonArray](jsonarray-data-type.md)
+An instance of the [JsonArray](jsonarray-data-type.md) data type.
 
 *Data*  
 &emsp;Type: [InStream](../instream/instream-data-type.md)  
@@ -32,9 +34,9 @@ The InStream object from which the JSON data will be read.
 
 
 ## Return Value
-*Ok*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the read was successful; otherwise, **false**.If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+*Ok*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+**true** if the read was successful; otherwise, **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

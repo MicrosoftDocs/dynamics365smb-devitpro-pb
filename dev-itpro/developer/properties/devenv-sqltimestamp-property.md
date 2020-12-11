@@ -1,34 +1,45 @@
 ---
-title: "SQLTimestamp Property"
+title: "SqlTimestamp Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 615d15ba-5d0e-4071-bfa2-c262c1dccbf4
-caps.latest.revision: 3
 author: SusanneWindfeldPedersen
 ---
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
+# SqlTimestamp Property
+> **Version**: _Available from runtime version 1.0._
 
-# SQLTimestamp Property
-Specifies a field to be a timestamp field.  
+Specifies a field to be a timestamp field.
 
-## Applies To  
- Table Fields  
+## Applies to
+-   Table Field
+
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 
 ## Property Value  
- **True** if the field is the timestamp field; otherwise, **false**. The default value is **false**.  
+
+**True** if the field is the timestamp field; otherwise, **false**. The default value is **false**.  
 
 ## Syntax
-```
+
+```AL
 SQLTimestamp = true;
 ```
 
-## Remarks  
-Each table includes a hidden timestamp field. The timestamp field contains row version numbers for records as maintained in SQL Server. This property exposes the timestamp field in the table object, and enables you to write code against it. This property only applies to fields that have the data type `BigInteger`. For more information, see [Timestamp Field](../devenv-table-object.md#timestamp).
+## Remarks
+
+Each table includes a hidden timestamp field. The timestamp field contains row version numbers for records as maintained in SQL Server. This property exposes the timestamp field in the table object, and enables you to write code against it. This property only applies to fields that have the data type `BigInteger`. For more information, see [Timestamp Field](../devenv-table-system-fields.md#timestamp).
 
 ## See Also  
- [Properties](devenv-properties.md)   
- [Table and Table Extension Properties](devenv-table-properties.md)  
+
+[Properties](devenv-properties.md)   
+[Table and Table Extension Properties](devenv-table-properties.md)  

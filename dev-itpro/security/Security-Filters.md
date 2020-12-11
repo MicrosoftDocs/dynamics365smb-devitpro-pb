@@ -1,7 +1,7 @@
 ---
 title: "Security Filter Modes"
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -133,5 +133,6 @@ If security filters are not set, then setting the **SecurityFiltering** property
 > We recommend that you change commonly used record variables from the default value of **Validated** to either **Filtered** or **Ignored** to improve performance.  
 
 ## See Also  
- [Record-Level Security](data-security.md)   
- [SecurityFiltering Property](../developer/properties/devenv-SecurityFiltering-Property.md)  
+
+[Record-Level Security](data-security.md)   
+

@@ -1,8 +1,8 @@
 ---
-title: "Clear Method"
+title: "System.Clear Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Clear Method
+# System.Clear Method
+> **Version**: _Available from runtime version 1.0._
+
 Clears the value of a single variable. Also, it clears all the filters that were set if the variable is a record and resets the key to the primary key and the company on a record variable.
 
 
@@ -21,8 +23,8 @@ Clears the value of a single variable. Also, it clears all the filters that were
 ```
  System.Clear(var Variable: Any)
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *Variable*  
 &emsp;Type: [Any](../any/any-data-type.md)  
@@ -56,7 +58,8 @@ For an Automation object, **CLEAR** releases the Automation object and decreases
 
  If you have an array of automation servers, you may clear the whole array at once, or clear each element individually.  
 
-## Example  
+## Example 1
+
  This example shows how to use the **CLEAR** method.  
 
 ```  
@@ -80,7 +83,8 @@ end;
 
  **After using CLEAR, the variable "Name" contains: >;\>**  
 
-## Example  
+## Example 2
+
  In the following example you will declare two variables:  
 
 ```  

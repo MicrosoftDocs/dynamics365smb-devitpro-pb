@@ -1,8 +1,8 @@
 ---
-title: "GetValidationError Method"
+title: "TestPart.GetValidationError Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# GetValidationError Method
+# TestPart.GetValidationError Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets the list of all validation error that occurred on a test page as a string.
 
 
@@ -22,9 +24,9 @@ Gets the list of all validation error that occurred on a test page as a string.
 Error :=   TestPart.GetValidationError([Index: Integer])
 ```
 ## Parameters
-*TestPart*  
-&emsp;Type: [TestPart](testpart-data-type.md)  
-An instance of the [TestPart](testpart-data-type.md) data type.  
+*TestPart*
+&emsp;Type: [TestPart](testpart-data-type.md)
+An instance of the [TestPart](testpart-data-type.md) data type.
 
 *Index*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
@@ -32,9 +34,9 @@ The index of the validation error that occurred on the test page.
 
 
 ## Return Value
-*Error*  
-&emsp;Type: [String](../string/string-data-type.md)  
-A string where each line represents a validation error that occured on the test page.  
+*Error*
+&emsp;Type: [String](../string/string-data-type.md)
+A string where each line represents a validation error that occured on the test page.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

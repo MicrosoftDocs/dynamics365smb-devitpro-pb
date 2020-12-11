@@ -1,8 +1,8 @@
 ---
-title: "IsValue Method"
+title: "JsonToken.IsValue Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# IsValue Method
+# JsonToken.IsValue Method
+> **Version**: _Available from runtime version 1.0._
+
 Indicates whether a JsonToken contains a JSON value.
 
 
@@ -21,18 +23,18 @@ Indicates whether a JsonToken contains a JSON value.
 ```
 Ok :=   JsonToken.IsValue()
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 
 ## Parameters
-*JsonToken*  
-&emsp;Type: [JsonToken](jsontoken-data-type.md)  
-An instance of the [JsonToken](jsontoken-data-type.md) data type.  
+*JsonToken*
+&emsp;Type: [JsonToken](jsontoken-data-type.md)
+An instance of the [JsonToken](jsontoken-data-type.md) data type.
 
 ## Return Value
-*Ok*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the JsonToken represents a JSON value; otherwise, **false**.  
+*Ok*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+**true** if the JsonToken represents a JSON value; otherwise, **false**.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

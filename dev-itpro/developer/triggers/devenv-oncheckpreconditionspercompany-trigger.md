@@ -1,7 +1,8 @@
 ---
 title: "OnCheckPreconditionsPerCompany Trigger"
+description: "OnCheckPreconditionsPerCompany trigger in AL for Business Central."
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +14,7 @@ author: blrobl
 # OnCheckPreconditionsPerCompany Trigger
 Runs before an extension upgrade.
 
-## Applies To  
+## Applies to  
 -  Upgrade codeunits. These codeunits have the [SubType Property \(Codeunit\)](../properties/devenv-subtype-property-codeunit.md) set to **Upgrade**.  
 
 > [!NOTE]  

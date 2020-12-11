@@ -1,8 +1,8 @@
 ---
-title: "Publisher Method"
+title: "ModuleInfo.Publisher Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Publisher Method
+# ModuleInfo.Publisher Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets the publisher of the specified application.
 
 
@@ -21,18 +23,18 @@ Gets the publisher of the specified application.
 ```
 Publisher :=   ModuleInfo.Publisher()
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 
 ## Parameters
-*ModuleInfo*  
-&emsp;Type: [ModuleInfo](moduleinfo-data-type.md)  
-An instance of the [ModuleInfo](moduleinfo-data-type.md) data type.  
+*ModuleInfo*
+&emsp;Type: [ModuleInfo](moduleinfo-data-type.md)
+An instance of the [ModuleInfo](moduleinfo-data-type.md) data type.
 
 ## Return Value
-*Publisher*  
-&emsp;Type: [String](../string/string-data-type.md)  
-The publisher of the specified application.  
+*Publisher*
+&emsp;Type: [String](../string/string-data-type.md)
+The publisher of the specified application.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

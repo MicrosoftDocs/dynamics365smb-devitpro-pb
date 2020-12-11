@@ -3,7 +3,7 @@ title: "Running C/SIDE and AL Side-by-Side"
 description: "Description of how you can run both development environments side-by-side."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -33,8 +33,9 @@ For example:
 ```
 finsql.exe Command=generatesymbolreference, Database="Demo Database NAV (11-0)", ServerName=.\NAVDEMO
 ```
+<br>
 
-> [TIP]  
+> [!TIP]  
 > The finsql.exe includes several parameters that you can set to suit you environment. For more information, see [Using the Development Environment from the Command Prompt](../cside/cside-command-prompt.md). 
 
 This is a lengthy operation. When you run the command, the console returns to an empty command prompt, and does not display or provide any indication about the status of the run. However, the finsql.exe may still be running in the background. It can take several minutes for the run to complete, and the symbols will not be generated until such time. You can see whether the finsql.exe is still running by using Task Manager and looking on the **Details** tab for **finsql.exe**.

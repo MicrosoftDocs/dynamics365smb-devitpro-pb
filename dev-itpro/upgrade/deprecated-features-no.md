@@ -9,7 +9,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms. search.keywords: deprecated, Norway, local functionality
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.author: bholtorf
 
 ---
@@ -31,7 +31,12 @@ When printing Norwegian sales documents, you can set up different tray numbers a
 |----|----|
 |Removed| The feature is not used. |
 
+## Fields marked as ObsoleteState:Pending
+
+[!INCLUDE [fields-obsolete-no](../includes/fields-obsolete-no.md)]
+
 ## See Also
+
 [Upgrading to Business Central](upgrading-to-business-central.md)  
 [Upgrading the Application Code](upgrading-the-application-code.md)  
 [Deprecated Fields, and Fields Marked as Obsolete](deprecated-fields.md)  

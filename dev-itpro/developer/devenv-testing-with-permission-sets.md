@@ -1,14 +1,16 @@
 ---
 title: "Testing With Permission Sets"
+description: Learn how to run tests in Business Central using permission sets
 ms.custom: na
-ms.date: 08/28/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: jswymer
-ms.prod: "dynamics365-business-central"
+ms.service: "dynamics365-business-central"
 author: blrobl
+ROBOTS: NOINDEX
 ---
 
 # Testing With Permission Sets
@@ -43,9 +45,6 @@ To summarize, a test codeunit or test method defines a general permission set le
 
     Add logic to the **OnBeforeTestRun** and **OnAfterTestRun** triggers to apply and clear the permission sets for the test. 
  
-
-<!--
--->
 ## Example
 This simple code example illustrates how to test with permission sets. It uses a test runner codeunit to apply permission sets to test methods. The applied permission sets are determined by the different values of the [TestPermissions Property](properties/devenv-testpermissions-property.md) of the test method. 
 
@@ -53,7 +52,7 @@ For applying permission sets, the code uses a *DotNet* data type variable for **
 
 The OnBeforeTestRun trigger will apply one of three permission sets, which have the Role IDs **O365 BASIC**, **O365 BUS FULL ACCESS**, and **SUPER**.
 
-```
+```AL
 codeunit 50101 MyTestPermissionsTestRunner
 {
     Subtype = TestRunner;
@@ -97,4 +96,5 @@ codeunit 50101 MyTestPermissionsTestRunner
 [OnBeforeTestRun](triggers/devenv-onbeforetestrun-trigger.md)  
 [OnAfterTestRun](triggers/devenv-onaftertestrun-trigger.md)  
 [Testing the Application](devenv-Testing-Application.md)  
-[Creating Handler Methods](devenv-creating-handler-methods.md) 
+[Creating Handler Methods](devenv-creating-handler-methods.md)  
+[Special Permission Sets](../administration/administration-special-permission-sets.md)  

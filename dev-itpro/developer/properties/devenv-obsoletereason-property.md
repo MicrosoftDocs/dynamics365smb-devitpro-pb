@@ -1,63 +1,72 @@
 ---
 title: "ObsoleteReason Property"
-description: "Description of the ObsoleteReason property"
-author: jswymer
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.author: jswymer
+author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # ObsoleteReason Property
-Specifies why an object or element has been marked as **Pending** or **Removed** in the **ObsoleteState** property.  
+> **Version**: _Available from runtime version 1.0._
 
-## Applies To  
+Specifies why a table, field, or key has been marked as Pending or Obsolete in the ObsoleteState property.
 
--   Table objects
--   Table fields
--   Table keys
--	Codeunit
--	Enum
--	EnumValue
--	Page
--	PageAction
--	PageActionArea
--	PageActionGroup
--	PageActionSeparator
--	PageArea
--	PageChartPart
--	PageField
--	PageGroup
--	PageLabel
--	PagePart
--	PageSystemPart
--	Query
--	QueryColumn
--	QueryDataItem
--	QueryFilter
--	Report
--	ReportColumn
--	ReportDataItem
--	RequestPage
--	XmlPort
-  
-## Property Value  
-A text string.
+## Applies to
+-   Table Field
+-   Table
+-   Table Key
+-   Codeunit
+-   Enum Type
+-   Enum Value
+-   Page
+-   Page Action
+-   Page Action Area
+-   Page Action Group
+-   Page Action Separator
+-   Page Area
+-   Page Part
+-   Page System Part
+-   Page Chart Part
+-   Page Field
+-   Page Group
+-   Page Label
+-   Query
+-   Query Column
+-   Query Filter
+-   Report
+-   Report Data Item
+-   Report Column
+-   Request Page
+-   Xml Port
+-   Page View
+-   Profile
+-   Interface
+-   Control Add In
+
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 
 ## Syntax
-```
+
+```AL
 ObsoleteReason = 'Not Needed';
 ```
 
-## Remarks  
-Use this property to inform developers about a table, field, or key that will become obsolete in time or is already obsolete.
+## Remarks 
 
-## See Also  
+Use this property to inform developers about a table, field, or key that will become obsolete in time or is already obsolete. Use the [ObsoleteTag Property](devenv-obsoletetag-property.md) to specify additional information which can be valuable to other developers.
+
+## See Also
+
 [ObsoleteState](devenv-obsoletestate-property.md)  
+[ObsoleteTag](devenv-obsoletetag-property.md)  
 [Properties](devenv-properties.md)  
 [MethodType Property (Upgrade Codeunits)](../devenv-methodtype-property-upgrade-codeunits.md)  
-

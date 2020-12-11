@@ -1,7 +1,8 @@
 ---
 title: "Table Keys"
+description: Learn about table keys in Business Central
 ms.custom: na
-ms.date: 01/22/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,13 +16,14 @@ author: jswymer
 
 The database management system, which is SQL Server, keeps track of data in a table using a primary key. The primary key is composed of up to 16 fields in a record. The combination of values in fields in the primary key makes it possible to uniquely identify each record. 
 
+A table definition in AL can contain a list of keys. A key is a sequence of one or more field IDs from the table. Up to 40 keys can be associated to a table. 
+
 ## Primary keys
-  
+The first key in the list of keys in a table definition is the primary key.
+
 The primary key determines the logical order in which records are stored, regardless of their physical placement.  
 
 Logically, records are stored sequentially in ascending order and are sorted by the primary key. Before adding a new record to a table, SQL Server checks if the information in the record's primary key fields is unique and only then inserts the record into the correct logical position. Records are sorted dynamically so the database is always structurally correct. This allows for fast data manipulation and retrieval.  
-
-A table description contains a list of keys. A key is a sequence of one or more field IDs from the table. Up to 40 keys can be associated to a table. The first key in the list is the primary key.  
 
 The primary key is always active, and SQL Server keeps the table sorted in primary key order and rejects records with duplicate values in primary key fields. Therefore, the values in the primary key must always be unique. Note that it is not the value in each field in the primary key that must be unique, but it is the combination of values in all fields that make up the primary key.  
 
@@ -29,7 +31,9 @@ The primary key is always active, and SQL Server keeps the table sorted in prima
 > In the development environment, it is technically possible to create a primary key based on up to 20 fields. However, because of SQL Server limitations, only the first 16 are used.
 
 ## Secondary keys
-  
+
+Any keys defined after the primary key in the list of keys in a table definition are called *secondary keys*.
+
 A secondary key is implemented on SQL Server using an additional structure that is called an *index*. This is like an index that is used in textbooks. A textbook index alphabetically lists important terms at the end of a book. Next to each term are page numbers. You can quickly search the index to find a list of page numbers (addresses), and you can locate the term by searching the specified pages. The index is an exact indicator that shows where each term occurs in the textbook.  
 
 When you define a secondary key and mark it as enabled, an index is automatically maintained on SQL Server. The index reflects the sorting order that is defined by the key. Several secondary keys can be active at the same time.  
@@ -120,7 +124,7 @@ The overall speed depends on the following factors:
 
 You define keys in AL code of a table object. To define keys, add the `keys` keyword after the `fields` definition, and then add a `key` keyword for each key:
 
-```
+```AL
 keys
 {
     key(Name; Fields)
@@ -142,7 +146,7 @@ The first `key` keyword defines the primary key. Subsequent `key` keywords defin
 
 There are several properties that configure the behavior of a key, such as the [Enabled](properties/devenv-enabled-property.md), [Clustered](properties/devenv-clustered-property.md), and [Unique](properties/devenv-unique-property.md) properties:
 
-```
+```AL
 keys
 {
     key(PrimaryKey; ID)
@@ -183,8 +187,8 @@ Do not add keys that are fields of the base table. // still true
 
 -->
 ## See Also
-
+[Key Properties](properties/devenv-key-properties.md)
 [Tables Overview](devenv-tables-overview.md)  
 [Table Object](devenv-table-object.md)  
 [Table Extension Object](devenv-table-ext-object.md)  
-[SystemId Field](devenv-table-object.md#systemid)  
+[SystemId Field](devenv-table-system-fields.md#systemid)  

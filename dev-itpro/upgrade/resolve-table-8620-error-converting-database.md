@@ -1,8 +1,8 @@
 ---
-title: "Resolving Coduenit 700 Compilation Error"
-description: "Explains how to resolve the compilation error that you get for Resolving Codeunit 700 Compilation Error when converting a database from Dynamics NAV to Business Central."
+title: " Resolving Table 8620 Compilation Error"
+description: Explains how to resolve the compilation error that you get for Table 8620 when converting a database from Dynamics NAV to Business Central.
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

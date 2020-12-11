@@ -2,7 +2,7 @@
 title: Configure Session Timeout
 description: When you start a Business Central client, a connection is established, and a corresponding session is added to the Business Central Server.
 ms.custom: na
-ms.date: 10/17/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -62,7 +62,7 @@ When you start a client, such as connecting to [!INCLUDE [prodshort](../develope
 <!--###  <a name="KeepAlive"></a> Keeping inactive sessions alive  
  To keep an inactive session alive, the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] uses the Windows Communication Framework \(WCF\) reliable sessions feature. When the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] is inactive, reliable sessions automatically sends messages from the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] to [!INCLUDE[server](../developer/includes/server.md)]. You control the interval of the keep-alive messages by setting the *ClientServicesKeepAliveInterval* setting on the [!INCLUDE[server](../developer/includes/server.md)]. The default value of the *ClientServicesKeepAliveInterval* setting is 120 seconds \(2 minutes\).  
 
- For most installations, the ClientServicesKeepAliveInterval setting default value sufficient for keeping sessions open until the *ClientServicesIdleClientTimeout* setting period elapses. However, when [!INCLUDE[server](../developer/includes/server.md)] is installed behind a load balancer, which is the case on Microsoft Azure, you might have to adjust the value the *ClientServicesKeepAliveInterval* setting to prevent sessions from closing before the expected session timeout. A load balancer typically has an idle timeout setting that it uses to determine whether to redirect connections. However, you want a stable connection between the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] and [!INCLUDE[server](../developer/includes/server.md)]. If there is no activity on the client connection for duration of the load balancer's idle timeout setting, then the load balancer might redirect the client connection to another server. To avoid this condition, we recommend that you set the *ClientServicesKeepAliveInterval* to half the value of the load balancer’s idle timeout setting.  
+ For most installations, the ClientServicesKeepAliveInterval setting default value sufficient for keeping sessions open until the *ClientServicesIdleClientTimeout* setting period elapses. However, when [!INCLUDE[server](../developer/includes/server.md)] is installed behind a load balancer, which is the case on Microsoft Azure, you might have to adjust the value the *ClientServicesKeepAliveInterval* setting to prevent sessions from closing before the expected session timeout. A load balancer typically has an idle timeout setting that it uses to determine whether to redirect connections. However, you want a stable connection between the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] and [!INCLUDE[server](../developer/includes/server.md)]. If there is no activity on the client connection for duration of the load balancer's idle timeout setting, then the load balancer might redirect the client connection to another server. To avoid this condition, we recommend that you set the *ClientServicesKeepAliveInterval* to half the value of the load balancer's idle timeout setting.  
 
 > [!NOTE]  
 >  The idle timeout on Azure is around 4 minutes, so the default setting of *ClientServicesKeepAliveInterval* \(2 minutes\) should be sufficient.  -->

@@ -1,7 +1,8 @@
 ---
 title: "FilterPageHandler Attribute"
+description: "The FilterPageHandler attribute in AL for Business Central"
 ms.custom: na
-ms.date: 08/26/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,12 +15,13 @@ author: jswymer
 
 Specifies that the method is a FilterPageHandler method.
 
-## Applies To  
- AL test methods on test codeunits. A test method is a method that has the [Test Attribute](devenv-test-attribute.md) declared. 
+## Applies to  
+
+AL test methods on test codeunits. A test method is a method that has the [Test Attribute](devenv-test-attribute.md) declared. 
 
 ## Syntax  
   
-```  
+```AL
 [FilterPageHandler]
 FilterPageHandler(var RecRef: RecordRef) : Boolean;
 ```    
@@ -31,5 +33,7 @@ The **FilterPageHandler** method is called when a filter page is invoked in the 
 The **FilterPageHandler** attribute requires that the method where it is applied has the signature `FilterPageHandler(var RecRef: RecordRef) : Boolean;`. The parameter variable, *RecRef*, holds the record of the filter page.
 
 ## See Also  
+
+[AL Method Reference](../methods-auto/library.md)  
 [Method Attributes](devenv-method-attributes.md)  
 [Test Codeunits and Test Functions](../devenv-test-codeunits-and-test-methods.md)

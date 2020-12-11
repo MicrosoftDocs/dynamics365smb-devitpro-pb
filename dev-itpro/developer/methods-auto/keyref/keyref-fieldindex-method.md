@@ -1,8 +1,8 @@
 ---
-title: "FieldIndex Method"
+title: "KeyRef.FieldIndex Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# FieldIndex Method
+# KeyRef.FieldIndex Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets the FieldRef of the field that has this index in the key referred to by the KeyRef variable. Returns an error if no key is selected.
 
 
@@ -22,9 +24,9 @@ Gets the FieldRef of the field that has this index in the key referred to by the
 Field :=   KeyRef.FieldIndex(Index: Integer)
 ```
 ## Parameters
-*KeyRef*  
-&emsp;Type: [KeyRef](keyref-data-type.md)  
-An instance of the [KeyRef](keyref-data-type.md) data type.  
+*KeyRef*
+&emsp;Type: [KeyRef](keyref-data-type.md)
+An instance of the [KeyRef](keyref-data-type.md) data type.
 
 *Index*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
@@ -32,9 +34,9 @@ The input index.
 
 
 ## Return Value
-*Field*  
-&emsp;Type: [FieldRef](../fieldref/fieldref-data-type.md)  
-The FieldRef that refers to the field with this index in the key.  
+*Field*
+&emsp;Type: [FieldRef](../fieldref/fieldref-data-type.md)
+The FieldRef that refers to the field with this index in the key.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

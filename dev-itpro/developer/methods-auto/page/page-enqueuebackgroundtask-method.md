@@ -1,8 +1,8 @@
 ---
-title: "EnqueueBackgroundTask Method"
+title: "Page.EnqueueBackgroundTask Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# EnqueueBackgroundTask Method
+# Page.EnqueueBackgroundTask Method
+> **Version**: _Available from runtime version 4.0._
+
 Creates and queues a background task that runs the specified codeunit (without a UI) in a read-only child session of the page session. If the task completes successfully, the **OnPageBackgroundTaskCompleted** trigger is invoked. If an error occurs, the **OnPageBackgroundTaskError** trigger is invoked. If the page is closed before the task completes, or the page record ID on the task changed, the task is cancelled.
 
 
@@ -22,9 +24,9 @@ Creates and queues a background task that runs the specified codeunit (without a
 [Ok := ]  Page.EnqueueBackgroundTask(var TaskId: Integer, CodeunitId: Integer [, var Parameters: Dictionary of [Text, Text]] [, Timeout: Integer] [, ErrorLevel: PageBackgroundTaskErrorLevel])
 ```
 ## Parameters
-*Page*  
-&emsp;Type: [Page](page-data-type.md)  
-An instance of the [Page](page-data-type.md) data type.  
+*Page*
+&emsp;Type: [Page](page-data-type.md)
+An instance of the [Page](page-data-type.md) data type.
 
 *TaskId*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
@@ -44,32 +46,35 @@ Specifies the level of error handling on page background task level.
 
 
 ## Return Value
-*Ok*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the page background task is successfully queued for execution; otherwise **false**.If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+*Ok*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+**true** if the page background task is successfully queued for execution; otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
 
-The enqueued page background task stores the record ID of the current page. If the current record ID on the page changes, or the page is closed, the task is canceled. Typically, you call the ENQUEUEBACKGROUNDTASK method from a page trigger. It is important that the ID of the current record of the page remains static after the call is made and while the background task is running; otherwise the task will be canceled. For this reason, we recommend that you do not enqueue the background task from the `OnOpenPage` trigger. Instead, use the  `OnAfterGetRecord` or `OnAfterGetCurrRecord` triggers.
+The enqueued page background task stores the record ID of the current page. If the current record ID on the page changes, or the page is closed, the task is canceled. Typically, you call the ENQUEUEBACKGROUNDTASK method from a page trigger. The ID of the current record of the page must remain static after the call is made and while the background task is running. Otherwise, the task will be canceled. For this reason, we recommend that you don't enqueue the background task from the `OnOpenPage` trigger. Instead, use the  `OnAfterGetRecord` or `OnAfterGetCurrRecord` triggers.
 
-​Only five page background tasks can be run simultaneously for a parent session. If there are more than five, then they will be queued and run when a slot becomes available as other tasks are finished.​
+​The **Child Session Max Concurrency** setting of the [!INCLUDE[server](../../includes/server.md)] controls how many page background tasks can be run simultaneously for a parent session.  The setting has a default value of 5. If this number is exceeded, then they'll be queued and run when a slot becomes available as other tasks are finished. Enqueuing the task will fail if the total number of enqueued tasks exceed the **Child Sessions Max Queue Length** server configuration setting.​ For more information, see [Configuring Business Central Server - Asynchronous Processing](../../../administration/configure-server-instance.md#PBT).
 
-### Timeout
+### <a name="timeout"></a>Timeout
 
-When the value of the *Timeout* parameter is exceeded, the background task is canceled and an error occurs. On the page, the error will appear as a notification.
+When the value of the *Timeout* parameter is exceeded, the background task is canceled and an error with error code ChildSessionTaskTimeout occurs. On the page, the error will appear as a notification.
 
-Be aware that the [!INCLUDE[server](../../includes/server.md)] instance includes two configuration settings related to the page back ground task timeout: PageBackgroundTaskDefaultTimeout and PageBackgroundTaskMaxTimeout.
-- The PageBackgroundTaskDefaultTimeout (which has a default value of 00:02:00) determines the timeout if the *Timeout* parameter is not given a value.
+The [!INCLUDE[server](../../includes/server.md)] instance includes two configuration settings related to the page back ground task timeout: PageBackgroundTaskDefaultTimeout and PageBackgroundTaskMaxTimeout.
+- The PageBackgroundTaskDefaultTimeout (which has a default value of 00:02:00) determines the timeout if the *Timeout* parameter isn't given a value.
 
-- The PageBackgroundTaskMaxTimeout specifies the maximum amount of time that a page background task can run; regardless of the value of the *Timeout* parameter. This means that if the *Timeout* parameter value is greater than the PageBackgroundTaskMaxTimeout (which has a default value of 00:10:00), the PageBackgroundTaskMaxTimeout value determines the timeout.
+- The PageBackgroundTaskMaxTimeout specifies the maximum amount of time that a page background task can run. It doesn't matter what the  *Timeout* parameter value is. If the *Timeout* value is greater than the PageBackgroundTaskMaxTimeout, which has a default value of 00:10:00, the PageBackgroundTaskMaxTimeout value determines the timeout.
 
-For more information, see [Configuring Business Central Server](../../../administration/configure-server-instance.md#Task).
+For more information these settings, see [Configuring Business Central Server](../../../administration/configure-server-instance.md#PBT).
+
+It's possible to enqueue the task again in the completion trigger or error trigger, but this pattern isn't recommended as it can lead to an endless loop. For more information, see [Page Background Tasks](../../devenv-page-background-tasks.md#reenqueue).
 
 ## Example
-The following code extends the **Customer Card** page with a page background task by using the ENQUEUEBACKGROUNDTASK method. For more details about this example, see [Page Background Tasks](../../devenv-page-background-tasks.md).
+
+The following code extends the **Customer Card** page with a page background task by using the ENQUEUEBACKGROUNDTASK method. For more information about this example, see [Page Background Tasks](../../devenv-page-background-tasks.md).
   
 ```
 pageextension 50100 CustomerCardExt extends "Customer Card"

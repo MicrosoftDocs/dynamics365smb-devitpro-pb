@@ -1,8 +1,8 @@
 ---
-title: "Value Method"
+title: "TestField.Value Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Value Method
+# TestField.Value Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets or sets the value of this field.
 
 
@@ -21,12 +23,12 @@ Gets or sets the value of this field.
 ```
 [Value := ]  TestField.Value([Value: String])
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 ## Parameters
-*TestField*  
-&emsp;Type: [TestField](testfield-data-type.md)  
-An instance of the [TestField](testfield-data-type.md) data type.  
+*TestField*
+&emsp;Type: [TestField](testfield-data-type.md)
+An instance of the [TestField](testfield-data-type.md) data type.
 
 *Value*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -34,9 +36,9 @@ The new value to set for this field.
 
 
 ## Return Value
-*Value*  
-&emsp;Type: [String](../string/string-data-type.md)  
-The value of this field.  
+*Value*
+&emsp;Type: [String](../string/string-data-type.md)
+The value of this field.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

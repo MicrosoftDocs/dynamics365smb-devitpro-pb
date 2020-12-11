@@ -1,28 +1,44 @@
 ---
 title: "InstructionalText Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: c90654ad-da85-496c-900a-1c2fc7dd2f2b
-caps.latest.revision: 13
+author: SusanneWindfeldPedersen
 ---
-
- 
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # InstructionalText Property
-Sets the text used for instructions in the UI.  
-  
-## Applies To  
-  
--   Page object  
-  
--   RequestPage
+> **Version**: _Available from runtime version 1.0._
 
--   PageGroup
+Sets the text used for instructions in the UI.
+
+## Applies to
+-   Page
+-   Request Page
+-   Page Group
+
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Parameters
+
+*Locked*  
+&emsp;Type: [Boolean](../methods-auto/boolean/boolean-data-type.md)  
+If `true` the InstructionalText is locked and should not be translated.  
+
+*Comment*  
+&emsp;Type: [Text](../methods-auto/text/text-data-type.md)  
+Descriptive text for the InstructionalText, for example, with regards to translation.
+
+*MaxLength*  
+&emsp;Type: [Integer](../methods-auto/integer/integer-data-type.md)  
+Sets the maximum length of the specific InstructionalText.
 
 ## Remarks
 
@@ -30,7 +46,7 @@ The default is an empty string, which means there will be no instructions. Accor
 
 The following example illustrates how you can apply instructional text in an app:  
 
-```
+```AL
 InstructionalText = 'Add an entity from your list of contacts. The entity can be a person or a company.';
 ```
 

@@ -1,8 +1,8 @@
 ---
-title: "CopyArray Method"
+title: "System.CopyArray Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# CopyArray Method
+# System.CopyArray Method
+> **Version**: _Available from runtime version 1.0._
+
 Copies one or more elements in an array to a new array.
 
 
@@ -21,8 +23,8 @@ Copies one or more elements in an array to a new array.
 ```
  System.CopyArray(NewArray: Array of [Any], Array: Array of [Any], Position: Integer [, Length: Integer])
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *NewArray*  
 &emsp;Type: [Any](../any/any-data-type.md)  
@@ -38,7 +40,7 @@ The position of the first array element to copy.
 *Length*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The number of array elements to copy. If you do not specify Length, all array elements are copied from Position to the last element. Use the following equation to determine valid values.
-1 =< LENGTH =< MAXLEN(ARRAY) - POSITION + 1
+1 =\< LENGTH =\< MAXLEN(ARRAY) - POSITION + 1
           
 
 
@@ -50,7 +52,8 @@ The number of array elements to copy. If you do not specify Length, all array el
 
  You cannot copy an array if the data type of the array is a complex data type. For more information about complex data types, see [AL Data Types](../../datatypes/devenv-al-data-types.md).  
 
-## Example  
+## Example 1
+
  The following example assigns values to Array1 and copies values from Array1 to Array2. Array1 is an integer array with the [Dimensions Property](../../properties/devenv-dimensions-property.md) set to 10. It contains integers from 1 to 10. The example code copies the numbers 6, 7, 8, 9, and 10 to Array2, an integer array with the **Dimensions** property set to 5. 
 
 ```  
@@ -72,7 +75,8 @@ begin
 end;
 ```  
 
-## Example  
+## Example 2
+
  If Array1 is an integer array with dimension 10, and it contains the numbers from 1 to 10, and Array2 is an integer array with dimension 5, then the following command causes a run-time error.  
 
 ```  

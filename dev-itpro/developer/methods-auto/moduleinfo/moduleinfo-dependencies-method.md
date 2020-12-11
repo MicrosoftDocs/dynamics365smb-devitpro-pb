@@ -1,8 +1,8 @@
 ---
-title: "Dependencies Method"
+title: "ModuleInfo.Dependencies Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Dependencies Method
+# ModuleInfo.Dependencies Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets the collection of application dependencies.
 
 
@@ -21,18 +23,18 @@ Gets the collection of application dependencies.
 ```
 Dependencies :=   ModuleInfo.Dependencies()
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 
 ## Parameters
-*ModuleInfo*  
-&emsp;Type: [ModuleInfo](moduleinfo-data-type.md)  
-An instance of the [ModuleInfo](moduleinfo-data-type.md) data type.  
+*ModuleInfo*
+&emsp;Type: [ModuleInfo](moduleinfo-data-type.md)
+An instance of the [ModuleInfo](moduleinfo-data-type.md) data type.
 
 ## Return Value
-*Dependencies*  
-&emsp;Type: [List of [ModuleDependencyInfo]](../list/list-data-type.md)  
-Collection of application dependencies.  
+*Dependencies*
+&emsp;Type: [List of [ModuleDependencyInfo]](../list/list-data-type.md)
+Collection of application dependencies.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

@@ -3,7 +3,7 @@ title: ".NET Control Add-Ins"
 description: "Description of the process of declaring the usage of a .NET or Javascript add-ins in AL"
 author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -68,7 +68,7 @@ The next needed piece of information is the namespace-qualified name of the type
 
 The `ControlAddInExport` attribute's constructor takes as an argument the name of the control add-in, as represented in the runtime, and in existing C/AL code. In this example, the name of the control add-in is `Microsoft.Dynamics.Nav.Client.PingPong`. This was the last component needed to construct a declaration for this .NET control add-in in AL. The name of the assembly is used in creating the `assembly` construct, the namespace-qualified name of the type is used as the first element in the `type` declaration, and the name of the control add-in is used as the alias of the type. You complete the declaration by setting the `IsControlAddIn` property to true. This property is used to tell the AL compiler to treat the given type declaration as a .NET control add-in declaration.
 
- Remember to add the setting `"al.assemblyProbingPaths"` in the **User Settings** or **Workspace Settings** specifying the path of the folder containing the assembly so that the compiler can access it. For more information, see [Getting started with Microsoft .NET Interoperability from AL](/devenv-get-started-call-dotnet-from-al.md).
+ Remember to add the setting **"AL: Assembly Probing Paths"** in the **User Settings** or **Workspace Settings** specifying the path of the folder containing the assembly so that the compiler can access it. For more information, see [Getting started with Microsoft .NET Interoperability from AL](devenv-get-started-call-dotnet-from-al.md).
 
 ```
 dotnet

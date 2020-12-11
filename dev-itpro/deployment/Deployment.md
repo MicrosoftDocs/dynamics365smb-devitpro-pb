@@ -9,7 +9,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 01/17/2020
+ms.date: 10/01/2020
 ---
 # Deployment of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]
 
@@ -17,7 +17,7 @@ The topics in the Deployment section are intended to help a partner prepare a [!
 
 ## Take prospects and customers online
 
-You can give prospects a quick introduction to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] by asking them to get a [free trial](https://go.microsoft.com/fwlink/?linkid=847861), and by showing them the apps in [AppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=dynamics-365%3Bdynamics-365-business-central), for example. You can also create give powerful demos that will attract prospects in your market space. With [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, data is stored in the Microsoft cloud, removing the need to install SQL Server locally, for example. So for you as a reseller, deployments of [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online are taken care of for you so that you can focus on your prospects and customers.  
+You can give prospects a quick introduction to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] by asking them to get a [free trial](https://go.microsoft.com/fwlink/?linkid=847861), and by showing them the apps in [AppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=dynamics-365%3Bdynamics-365-business-central), for example. You can also create and give powerful demos that will attract prospects in your market space. With [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, data is stored in the Microsoft cloud, removing the need to install SQL Server locally, for example. So for you as a reseller, deployments of [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online are taken care of for you so that you can focus on your prospects and customers.  
 
 ### Get set up for selling Business Central online
 
@@ -49,9 +49,9 @@ With [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)], you can:
 
 - Preconfigure components before installation.  
 
-- Create, save, or load Setup configuration files that capture your selection of components and configuration information.  
+- Create, save, or load setup configuration files that capture your selection of components and configuration information.  
 
- You use Setup to install software and to create custom deployments that you can distribute to different users across a company.  
+ You use setup to install software and to create custom deployments that you can distribute to different users across a company.  
 
 ### Installation Notes  
 
@@ -59,7 +59,7 @@ With [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)], you can:
 
 - All components must be from the same version and build of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] for the software to run correctly.  
 
-- If you have either SQL Server 2000 or Microsoft SQL Server Desktop Engine \(MSDE\) installed on a computer where you want to install [!INCLUDE[prodshort](../developer/includes/prodshort.md)], then you must remove it before you begin installing. The presence of either of these database products causes a Setup error.  
+- If you have either SQL Server 2000 or Microsoft SQL Server Desktop Engine \(MSDE\) installed on a computer where you want to install [!INCLUDE[prodshort](../developer/includes/prodshort.md)], then you must remove it before you begin installing. The presence of either of these database products causes a setup error.  
 
 ### Managing [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises
 

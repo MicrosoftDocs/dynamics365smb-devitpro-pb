@@ -1,8 +1,8 @@
 ---
-title: "TextMode Method"
+title: "File.TextMode Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# TextMode Method
+# File.TextMode Method
+> **Version**: _Available from runtime version 1.0._
+
 Sets whether a file should be opened as an ASCII file or a binary file. Gets the current setting of this option for a file.
 
 > [!NOTE]
@@ -23,14 +25,14 @@ Sets whether a file should be opened as an ASCII file or a binary file. Gets the
 ```
 [Textmode := ]  File.TextMode([Mode: Boolean])
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
-*File*  
-&emsp;Type: [File](file-data-type.md)  
-An instance of the [File](file-data-type.md) data type.  
+*File*
+&emsp;Type: [File](file-data-type.md)
+An instance of the [File](file-data-type.md) data type.
 
 *Mode*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
@@ -38,9 +40,9 @@ An instance of the [File](file-data-type.md) data type.
 
 
 ## Return Value
-*Textmode*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-  
+*Textmode*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

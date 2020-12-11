@@ -3,7 +3,7 @@ title: "Setting up the Excel Add-In for Editing Data"
 author: jswymer
 ms.author: jswymer
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ ms.service: "dynamics365-business-central"
 
 You can set up the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] deployment to support an Excel add-in that enables users in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client to work with data from list pages in Excel. Users can get fresh data from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] into Excel and push updated data from Excel to [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
 
-Without this add-in, users can open a list page in Excel from the **Open in Excel** action on the page, which does not allow them to push changed data back to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. When this add-in is set up, the **Open in Excel** action is replaced by the **Edit in Excel** action.
+Without this add-in, users can open a list page in Excel from the **Open in Excel** action on the page. But the **Open in Excel** action doesn't allow them to push changed data back to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. When this add-in is set up, the **Open in Excel** action is replaced by the **Edit in Excel** action.
 
 > [!NOTE]  
 > This feature is only available for the Web client.
@@ -49,11 +49,11 @@ Your deployment must meet the following prerequisites:
 
 ## Expose the Business Central application Web API in Azure AD 
 
-When [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is configured for Azure AD authentication, the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application is registered as an application in an Azure AD. Before the Excel Add-in can be configured, you must configure the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application in Azure AD to expose its Web API.
+When [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is configured for Azure AD authentication, the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application is registered as an application in an Azure AD. Before the Excel add-in can be configured, you must configure the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application in Azure AD to expose its Web API.
 
-For information about how to do this, see [Quickstart: Configure an application to expose web APIs](/azure/active-directory/develop/quickstart-configure-app-expose-web-apis).
+For information about how to expose the Web API, see [Quickstart: Configure an application to expose web APIs](/azure/active-directory/develop/quickstart-configure-app-expose-web-apis).
 
-## Register and configure an Azure AD Application for the Excel Add-in in Microsoft Azure
+## Register and configure an Azure AD application for the Excel Add-in in Microsoft Azure
 
 When Azure AD authentication was set up for your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] deployment, an Azure AD tenant was created in Microsoft Azure, and an application for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] was registered in the tenant. The Excel add-in requires that you add (register) a separate Azure AD application in the Azure AD tenant.
 
@@ -67,7 +67,7 @@ When Azure AD authentication was set up for your [!INCLUDE[prodshort](../develop
     |-------|-----------|
     |Name|The name of your application as it will display to your users, such as *Excel Add-in for Business Central*.|
     |Supported account types|Specifies which accounts that you would like your application to support. For purposes of this article, select **Accounts in this organizational directory only**. |
-    |Redirect URI|Specifies the type of application that you are registering and the redirect URI (or reply URL) for your application. Select the type to **Web**, and in the redirect URL box, enter URL for signing in to the [!INCLUDE[webclient](../developer/includes/webclient.md)], for example `https://localhost:443/BC150/SignIn`.<br /><br />The URI has the format `https://<domain or computer name>/<webserver-instance>/SignIn`, such as `https://cronusinternationltd.onmicrosoft.com/BC150/SignIn` or `https://MyBcWebServer/BC150/Signin`. **Important** The portion of the reply URL after the domain name (in this case `BC150/SignIn`) is case-sensitive, so make sure that the web server instance name matches the case of the web server instance name as it is defined on IIS for your [!INCLUDE[webserver](../developer/includes/webserver.md)] installation.|
+    |Redirect URI|Specifies the type of application that you're registering and the redirect URI (or reply URL) for your application. Select the type to **Web**, and in the redirect URL box, enter URL for signing in to the [!INCLUDE[webclient](../developer/includes/webclient.md)], for example `https://localhost:443/BC150/SignIn`.<br /><br />The URI has the format `https://<domain or computer name>/<webserver-instance>/SignIn`, such as `https://cronusinternationltd.onmicrosoft.com/BC150/SignIn` or `https://MyBcWebServer/BC150/Signin`. **Important** The portion of the reply URL after the domain name (in this case `BC150/SignIn`) is case-sensitive, so make sure that the web server instance name matches the case of the web server instance name as it is defined on IIS for your [!INCLUDE[webserver](../developer/includes/webserver.md)] installation.|
 
     <!--
         |Directory Access|Choose **Single Sign-On**.|
@@ -80,26 +80,26 @@ When Azure AD authentication was set up for your [!INCLUDE[prodshort](../develop
 2. After you register the application, set the Application ID URI for the application.  
 
     1. From the **Overview** page for your app registration, next to the **Application ID URI** label, select **Add an Application ID URI**.
-	2. On the **Expose API**, page, next to the **Application ID URI**, select **Set**.
-	
+    2. On the **Expose API**, page, next to the **Application ID URI**, select **Set**.
+    
         The **Application ID URI** box displays the default application ID URI, which has the format `api://<guid>`, such as `api://70b20a51-46b7-4290-8686-b79ec90379f6`. You can keep this value or change it. The application ID URI must be a valid URI starting with HTTPS, API, URN, MS-APPX. It must not end in a slash. For example, `https://cronusinternationltd.onmicrosoft.com/ExcelAddinforBusinessCentral`.
-	3. Select **Save** when done.
+    3. Select **Save** when done.
 -->
 2. Grant the Excel add-in application permission to access the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application Web API.
 
-    You must give the Azure AD application for the Excel add-in delegated permission to access the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application Web API in Azure AD (which you exposed earlier in this article). This allows users of the Excel add-in to access the OData web services to read and write data.  
+    Give the Azure AD application for the Excel add-in delegated permission to access the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application Web API in Azure AD (which you exposed earlier in this article). This permission allows users of the Excel add-in to access the OData web services to read and write data.  
 
     1. From the application's **Overview**, select **API Permissions**.
     2. Select the **Add a permission**
     3. On the **APIs my organization uses**, select the Business Central application.
-    4. Select **Delegated permsission**.
+    4. Select **Delegated permission**.
     5. Select the permission from the list, and then select **Add Permission**.
 
     For information, see [Quickstart: Configure a client application to access web APIs](/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-permissions-to-access-web-apis).  
 
 3. Configure OAuth2 authentication in the Excel add-in.
 
-    The Excel add-in requires OAuth2 implicit grant flow to be enabled on the Excel Add-in application. You configure this in the manifest file for the Excel Add-in application. From the application's **Overview**, select **Manifest**, and then set `"oauth2AllowIdTokenImplicitFlow"` and `"oauth2AllowImplicitFlow"` to `true`:
+    The Excel add-in requires OAuth2 implicit grant flow to be enabled on the Excel Add-in application. You configure OAuth2 in the manifest file for the Excel Add-in application. From the application's **Overview**, select **Manifest**, and then set `"oauth2AllowIdTokenImplicitFlow"` and `"oauth2AllowImplicitFlow"` to `true`:
 
     ```
     "oauth2AllowIdTokenImplicitFlow": true,
@@ -115,17 +115,17 @@ When Azure AD authentication was set up for your [!INCLUDE[prodshort](../develop
     }
     ```  
     
-    Remember to add a comma before or after this enter, depending on where you add it in the list.
+    Remember to add a comma before or after this entry, depending on where you add it in the list.
 
 5. Copy the **Application (Client) ID** that is assigned to Excel add-in application.
     
-    You can get this from the **Overview** page for the application. You'll need this to configure the [!INCLUDE[server](../developer/includes/server.md)] instance.
+    You can get this value from the **Overview** page for the application. You'll need it to configure the [!INCLUDE[server](../developer/includes/server.md)] instance.
 
 This completes the work you have to do in the Azure portal. The final configuration is to add the Excel add-in to the [!INCLUDE[server](../developer/includes/server.md)] instances.
 
 ## Configure the [!INCLUDE[server](../developer/includes/server.md)] Instances
 
-You must add the Excel add-in to the [!INCLUDE[server](../developer/includes/server.md)] instances in your deployment. You can use either the [!INCLUDE[admintool](../developer/includes/admintool.md)] or  [Set-NAVServerConfiguration cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)].
+You add the Excel add-in to the [!INCLUDE[server](../developer/includes/server.md)] instances in your deployment. You can use either the [!INCLUDE[admintool](../developer/includes/admintool.md)] or  [Set-NAVServerConfiguration cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)].
 
 1.  In the [!INCLUDE[admintool](../developer/includes/admintool.md)], in the **Azure Active Directory** section, set the **Excel add-in AAD client ID** field to the application (client) ID for the Excel add-in application that you copied from the Azure portal.
 
@@ -133,7 +133,7 @@ You must add the Excel add-in to the [!INCLUDE[server](../developer/includes/ser
 
 2.  In the **Client Services** section, set the **Web Client Base URL** field to the base URL of the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)].
 
-	This is the root portion of all URLs that are used to access pages in the web client. This must have the format `https://[hostname:port]/[instance]`, such as `https://MyBCWebServer/BC` or `https://cronusinternationltd.onmicrosoft.com/BC150`.
+    This value is the root portion of all URLs that are used to access pages in the web client. The value must have the format `https://[hostname:port]/[instance]`, such as `https://MyBCWebServer/BC` or `https://cronusinternationltd.onmicrosoft.com/BC150`.
 
     If using the **Set-NAVServerConfiguration** cmdlet, set the `PublicWebBaseUrl` key.
 
@@ -143,8 +143,12 @@ You must add the Excel add-in to the [!INCLUDE[server](../developer/includes/ser
 
     With the **Set-NAVServerConfiguration** cmdlet, set the `PublicODataBaseUrl`key.
 
+## Prepare devices and network for the Excel Add-In
+
+Network services such as proxies or firewalls must allow routing between each client device on which the Add-In is installed and a number of service endpoints. For a list of endpoints, see [Preparing your network for the Excel Add-In](configuring-network-for-addins.md).  
+
 ## Use the Excel Add-In
-Your users can now use the Excel add-in. When a list page shows the **Edit in Excel** action, then users can open lists, such as the **Customers** page, in Excel and work with the data there. They can use the add-in to update data in [!INCLUDE[prodshort](../developer/includes/prodshort.md)], and they can get fresh data from the database.  
+Your users can now use the Excel add-in. When a list page shows the **Edit in Excel** action, then users can open lists, such as the **Customers** page, in Excel and work with the data there. They use the add-in to update data in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] and get fresh data from the database.  
 
 <!-- > [!NOTE]  
 >  The pages that your users want to work on in Excel must be published as web services. -->

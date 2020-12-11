@@ -1,8 +1,8 @@
 ---
-title: "CodeCoverageLog Method"
+title: "System.CodeCoverageLog Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# CodeCoverageLog Method
+# System.CodeCoverageLog Method
+> **Version**: _Available from runtime version 1.0._
+
 Starts and stops the logging of code. You can also use this method to retrieve the current logging status.
 
 
@@ -21,8 +23,8 @@ Starts and stops the logging of code. You can also use this method to retrieve t
 ```
 [IsActive := ]  System.CodeCoverageLog([NewIsActive: Boolean] [, MultiSession: Boolean])
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *NewIsActive*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
@@ -34,10 +36,10 @@ Starts and stops the logging of code. You can also use this method to retrieve t
 
 
 ## Return Value
-*IsActive*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
+*IsActive*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
 **true** is code logging is active;**false** otherwise.
-        
+      
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

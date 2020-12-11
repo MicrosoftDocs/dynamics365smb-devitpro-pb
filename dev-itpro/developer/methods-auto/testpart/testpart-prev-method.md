@@ -1,8 +1,8 @@
 ---
-title: "Prev Method"
+title: "TestPart.Prev Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Prev Method
+# TestPart.Prev Method
+> **Version**: _Available from runtime version 3.0 until version 3.0 where it was deprecated._
+
 Sets the current row of the test page as the previous row in the data set.
 
 
@@ -23,14 +25,14 @@ Sets the current row of the test page as the previous row in the data set.
 ```
 
 ## Parameters
-*TestPart*  
-&emsp;Type: [TestPart](testpart-data-type.md)  
-An instance of the [TestPart](testpart-data-type.md) data type.  
+*TestPart*
+&emsp;Type: [TestPart](testpart-data-type.md)
+An instance of the [TestPart](testpart-data-type.md) data type.
 
 ## Return Value
-*Ok*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-True, if the current row has changed.  
+*Ok*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+True, if the current row has changed.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

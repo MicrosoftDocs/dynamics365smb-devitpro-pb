@@ -1,7 +1,8 @@
 ---
 title: "RDLCLayout Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/29/2019
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -9,20 +10,33 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # RDLCLayout Property
-Sets the imported file name and the RDL layout that is used on a report.
+> **Version**: _Available from runtime version 1.0._
 
-> [!NOTE]
+Sets the RDLC layout that is used on a report and returns it as a data stream.
+
+## Applies to
+-   Report
+
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+
+> [!NOTE]  
 > Reports support both RDL and Word layout. For more information, see [DefaultLayout Property](devenv-defaultlayout-property.md).
 
 ## Remarks
+
 The RDL file has to be in the same folder as the AL object. 
 
 ## Example
+
 The following example shows how to use this property to generate the *MyRDLCReport.rdl* file.
 
-```
+```AL
 pageextension 50123 MyExtension extends "Customer List"
 {
     trigger OnOpenPage();
@@ -39,7 +53,8 @@ report 50123 MyRdlReport
 }
 ```
 
-## See Also  
+## See Also
+
 [Report Object](../devenv-report-object.md)  
 [Creating an RDL Layout Report](../devenv-howto-rdl-report-layout.md)   
 [WordLayout Property](devenv-wordlayout-property.md)  

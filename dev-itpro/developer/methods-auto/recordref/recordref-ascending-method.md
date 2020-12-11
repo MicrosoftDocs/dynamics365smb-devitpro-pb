@@ -1,8 +1,8 @@
 ---
-title: "Ascending Method"
+title: "RecordRef.Ascending Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Ascending Method
+# RecordRef.Ascending Method
+> **Version**: _Available from runtime version 1.0._
+
 Changes or checks the order in which a search through the table that is referred to by RecordRef will be performed.
 
 
@@ -21,12 +23,12 @@ Changes or checks the order in which a search through the table that is referred
 ```
 [IsAscending := ]  RecordRef.Ascending([SetAscending: Boolean])
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 ## Parameters
-*RecordRef*  
-&emsp;Type: [RecordRef](recordref-data-type.md)  
-An instance of the [RecordRef](recordref-data-type.md) data type.  
+*RecordRef*
+&emsp;Type: [RecordRef](recordref-data-type.md)
+An instance of the [RecordRef](recordref-data-type.md) data type.
 
 *SetAscending*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
@@ -34,9 +36,9 @@ If this parameter is true, it will search in ascending order. If this parameter 
 
 
 ## Return Value
-*IsAscending*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-Specifies the order in which a search will be performed.  
+*IsAscending*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+Specifies the order in which a search will be performed.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -44,7 +46,8 @@ Specifies the order in which a search will be performed.
 ## Remarks  
  This method works just like the [ASCENDING Method \(Record\)](../../methods/devenv-ascending-method-record.md).  
   
-## Example  
+## Example 1
+
  The following example opens table 18 \(Customer\) as a RecordRef variable that is named CustomerRecref. The [SETVIEW Method (RecordRef)](recordref-setview-method.md) sets a filter that includes sorting the data in ascending order. The ASCENDING method then checks whether the sort order is ascending, stores the return value in the IsAscending variable and displays **True** in a message box. 
     
   
@@ -61,7 +64,8 @@ begin
 end;
 ```  
   
-## Example  
+## Example 2
+
  The following example opens table 18 \(Customer\) as a RecordRef variable that is named CustomerRecref. The [SETVIEW Method (RecordRef)](recordref-setview-method.md) sets a filter that includes sorting the data in descending order. The ASCENDING method then checks whether the sort order is ascending, stores the return value in the IsAscending variable and displays **False** in a message box because the sort order is descending. The ASCENDING method changes the sort order to ascending by setting the *SetAscending* parameter to **true**. The ASCENDING method checks the sort order again. This time **True** is displayed.  
   
 ```  

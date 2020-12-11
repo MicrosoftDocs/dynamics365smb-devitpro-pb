@@ -3,7 +3,7 @@ title: "Getting started with Microsoft .NET Interoperability from AL"
 description: "Description of the process of referencing and using .NET types"
 author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,20 +13,23 @@ ms.author: solsen
 ---
 
 # Getting started with Microsoft .NET Interoperability from AL
+
 You can call .NET type members, including methods, properties, and constructors, from AL code. In this article we will guide you through the process of creating an extension that uses .NET types.
 
 > [!IMPORTANT]  
-> .NET Interoperability is only available on-premise. If you want to use this functionality, you must set the `"target": "OnPrem"` in the app.json file. For more information, see [JSON Files](devenv-json-files.md). 
+> .NET Interoperability is only available on-premise. If you want to use this functionality, you must set the `"target": "OnPrem"` in the `app.json` file. For more information, see [JSON Files](devenv-json-files.md#Appjson).
 
 ## Enabling .NET Interoperability
-.NET interoperability can only be used by applications that target on-premise deployments. See [JSON Files](devenv-json-files.md) for more information on how to set the correct compilation target.
+
+.NET interoperability can only be used by applications that target on-premise deployments. See [JSON Files](devenv-json-files.md#Appjson) for more information on how to set the correct compilation target and [Compilation Scope Overview](devenv-compilation-scope-overview.md).
 
 ## Declaring a .NET package
+
 Using a .NET type in AL is a two-step process. First, you must declare the type in a **dotnet** package, and then reference it from code using the **DotNet** type.
 
 You start by declaring an empty **dotnet** package in your extension. See the example snippet below.
 
-```
+```AL
 dotnet
 {
     
@@ -38,7 +41,7 @@ It is recommended to have only one package per extension that contains all the .
 You continue by adding a declaration of the assembly that you will be referencing. For this example, we will use the `mscorlib` assembly that contains the core .NET types. A **dotnet** package can contain an unlimited number of assembly declarations. The name of the assembly must be the one defined in the assembly's manifest. See the following example snippet.
 
 
-```
+```AL
 dotnet
 {    
     assembly(mscorlib)
@@ -50,7 +53,7 @@ dotnet
 
 By default, the compiler only knows about the location of the `mscorlib` assembly. You can reference any compatible assembly by providing the compiler with a path to the assembly's containing folder. This can be achieved by adding the path to assembly's containing folder to the `"al.assemblyProbingPaths"` setting. Open the Command Palette **Ctrl+Shift+P** and choose either **User Settings** or **Workspace Settings** and specify the `al.assemblyProbingPaths` setting. For example:
 
-```
+```AL
 "al.assemblyProbingPaths": [
         "./.netpackages",
         "C:/Program Files/Assemblies"
@@ -62,7 +65,7 @@ By default, the compiler only knows about the location of the `mscorlib` assembl
 
 You continue by adding a reference to a type from the referenced assembly. In this example, we will use `System.DateTime` from `mscorlib` and we will give it the alias `MyDateTime`. The type must be referenced using its fully-qualified name. The alias is used for referencing the .NET type from code. If an alias is not provided, the compiler will use the .NET type name. A .NET assembly declaration can contain any number of type declarations. See the example below.
 
-```
+```AL
 dotnet
 {
     assembly(mscorlib)
@@ -75,7 +78,7 @@ dotnet
 ## Using a .NET type from AL code
 From this point on, we can reference the .NET type from AL code using its given alias, as shown in the example below.
 
-```
+```AL
 dotnet
 {
     assembly(mscorlib)

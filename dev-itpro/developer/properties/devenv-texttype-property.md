@@ -1,33 +1,47 @@
 ---
 title: "TextType Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 8a414c9a-4470-46cc-8091-b1613031fde7
-caps.latest.revision: 5
 author: SusanneWindfeldPedersen
 ---
-
- 
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # TextType Property
-Sets the type of text this element or attribute contains.  
-  
-## Applies To  
- - Text elements in XMLports  
- - Text attributes in XMLports
-  
+> **Version**: _Available from runtime version 1.0._
+
+Sets the type of text this element or attribute contains.
+
+## Applies to
+-   Xml Port Text Attribute
+-   Xml Port Text Element
+
+## Property Value
+
+|Value|Description|
+|-----------|---------------------------------------|
+|**Text**|To display normal text. It is the default value.|
+|**BigText**|To display large text.|
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+
 ## Property Value  
- **BigText** if you want to display large text ; otherwise, **Text**. The default is **Text**.  
+
+**BigText** if you want to display large text ; otherwise, **Text**. The default is **Text**.  
  
 ## Syntax
-```
+
+```AL
 TextType = BigText;
 ```
 
 ## See Also  
- [Properties](devenv-properties.md)
+
+[Properties](devenv-properties.md)

@@ -3,7 +3,7 @@ title: Designing List Pages for Business Central
 description: "Provides and overview of List page design"
 author: jswymer
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -50,12 +50,12 @@ For a simple code example of a list page, see [Simple List Page Example](devenv-
 
 The following figure illustrates the general layout and elements of a list page.
 
-![List page overview](media/list-page-overview-v3.png "List page overview")
+![List page](media/list-page-overview-v3.png "List page overview")
 
 The following table describes the elements of a typical list page.
 
 
-|    |Area|Description|Usage Guidelines|
+|  No.  |Area|Description|Usage Guidelines|
 |----|-------|-----------|----------------|
 |1|List|Displays records of the source table as rows and columns, where each row is a record and the columns are the fields. You define the list by adding a `repeater()` control within the `area(Content)` control of the page, and then add `field()` controls for each field that you want to display. For more information about the repeater control, see [Working with Repeater Controls](devenv-repeater-controls.md).|The order of the `field` controls determines the order they appear on the page. |
 |2|Tile view|Renders records in a list as tiles (or bricks). Client users can toggle between the list and tile view.<br /><br /> As a developer, to enable a list to be displayed as tiles, you must specify the table fields that you want to include in the tiles. You do this by adding a `fieldgroup(Brick; <Field>)` keyword in the code of the source table.<br /><br /> For more information, see [Displaying Data as Tiles](devenv-lists-as-tiles.md).|You can design any list page to display as tiles. The tile view is particularly beneficial for lists with records that include media or images, such a customers, contacts, and items lists. For more information about adding media to records, see [Working With Media on Records](devenv-working-with-media-on-records.md).|
@@ -66,7 +66,7 @@ The following table describes the elements of a typical list page.
 |7|Filter pane|The filter pane enables users to apply filters on one or more fields in the list to limit the records that are displayed. Client users can toggle the filter pane on and off as needed. For more information about how to use the filter pane, see [Searching, Filtering, and Sorting Data](/dynamics365/business-central/ui-enter-criteria-filters)|The Filter pane is available on all list pages, with no extra coding required. However, as a developer, you can define sets of special words, called filter tokens, which are kind of like predefined filters. Users can then enter these filter tokens in the filter pane to quickly filter the list to display the desired data. For more information, see [Adding Filter Tokens](devenv-adding-filter-tokens.md).<br /><br /> Also, you can set FlowFilters on the list that enable users to adjust various dimensions that influence calculated fields. The FlowFilters appear in the **Filter totals by** section of the filter pane. For information about adding FlowFilters, see [FlowFilters](devenv-flowfilter-overview.md).|
 
 > [!IMPORTANT]
-> List pages are designed for using a single `repeater()` control within the content area only. If you include more than one repeater or another control like a `group` or `grid`, the page might not behave as expected. If you want to design a page that includes controls in the content area other than a repeater, then try using a `Worksheet` page type instead.
+> List pages are designed for using a single `repeater()` control within the content area only. If you include more than one repeater or another control like a `group` or `grid`, the page might not behave as expected. If you want to design a page that includes controls in the content area other than a repeater, then try using a `Worksheet` page type instead. For more information, see [Worksheet page layouts](devenv-page-types-and-layouts.md#worksheet-page-layouts).
 
 ## [Behavior points](#tab/behavior)
 
@@ -76,7 +76,7 @@ The following table describes the elements of a typical list page.
 
 ## [Developer tips](#tab/tips)
 
-From the user’s perspective, the following are qualities of a well-designed list page does the following:
+From the user's perspective, the following are qualities of a well-designed list page does the following:
 
 - Displays a single collection of entities or entries that the user needs for their work. 
 - Includes page title that clearly identifies the collection and any specific view that is in effect.
@@ -111,10 +111,12 @@ Using the [Scope (Action)](properties/devenv-scope-action-property.md) property,
 
 ### Configure the gesture for actions
 
-Using the [Gesture](properties/devenv-gesture-property.md) property, configure the swipe direction for running actions on a device with a touch interface. For more information, see [Implementation Tips for Gestures](properties/devenv-implementation-tips-gestures-property.md).
+Using the [Gesture](properties/devenv-gesture-property.md) property, configure the swipe direction for running actions on a device with a touch interface.
 
 ## See Also
+
 [AL Development Environment](devenv-reference-overview.md)  
+[Page Types and Layouts](devenv-page-types-and-layouts.md)  
 [Page Extension Object](devenv-page-ext-object.md)  
 [Actions Overview](devenv-actions-overview.md)  
 [Adding Pages and Reports to Search](devenv-al-menusuite-functionality.md)  

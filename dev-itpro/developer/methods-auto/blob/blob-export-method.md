@@ -1,8 +1,9 @@
 ---
-title: "Export Method"
+title: "Blob.Export Method"
+description: "The Blob Export Method in AL for Business Central"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +14,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Export Method
+# Blob.Export Method
+> **Version**: _Available from runtime version 1.0._
+
 Exports a binary large object (BLOB) to a file.
 
 
@@ -22,9 +25,9 @@ Exports a binary large object (BLOB) to a file.
 [ExportName := ]  Blob.Export(Name: String)
 ```
 ## Parameters
-*Blob*  
-&emsp;Type: [Blob](blob-data-type.md)  
-An instance of the [Blob](blob-data-type.md) data type.  
+*Blob*
+&emsp;Type: [Blob](blob-data-type.md)
+An instance of the [Blob](blob-data-type.md) data type.
 
 *Name*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -36,9 +39,9 @@ The path and name of the BLOB that you want to export. When you enter the path, 
 
 
 ## Return Value
-*ExportName*  
-&emsp;Type: [String](../string/string-data-type.md)  
-The name of the created file.  
+*ExportName*
+&emsp;Type: [String](../string/string-data-type.md)
+The name of the created file.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

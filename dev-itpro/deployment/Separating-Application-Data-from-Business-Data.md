@@ -1,7 +1,7 @@
 ---
 title: "Separating Application Data from Business Data"
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,28 +25,50 @@ author: jswymer
   
 ### Distribution of the System Tables in Each Database
   
-The application tables are system tables that define the application. Other system tables remain in the business data database. For example, the following table lists some of the system tables that are moved to the application database when you run the Export-NAVApplication cmdlet and other tables that remain in the business data database.  
+The application tables are system tables that define the application. Other system tables remain in the business data database. For example, the following table lists some of the system tables that are moved to the application database when you run the Export-NAVApplication cmdlet and other tables that remain in the business data database. This is a partial list to give an idea of how tables are distributed: 
   
 |Application database|Business data database|  
 |--------------------------|----------------------------|  
-|**Chart**|**Access Control**|  
-|**Client Add-in**|**Active Session**|  
-|**Client Add-in Resources**|**Company**|  
-|**Debugger Breakpoint**|**Device**|  
-|**Debugger Watch**|**Document Service**|  
+|**Add-in**|**Access Control**|
+|**Application Dependency**|**Active Session**|
+|**Application Object Metadata**|**API Webhook Notification**|
+|**Application Resource**|**API Webhook Notification Aggr**|
+|**Chart**|**API Webhook Subscription**|  
+|**Configuration Package File**|**Company**|
+|**Debugger Breakpoint**|**Device**| 
+|**Debugger Watch**| **Data Sensitivity**|
+|**Entitlement**|**Document Service**|
+|**Entitlement Set**|**Intelligent Cloud**|
+|**Installed Application**|**Intelligent Cloud Status** 
+|**Media**|**Isolated Storage**|
+|**Media Resources**| **Object Options**|
+|**Media Set**|**Object Metadata Snapshot**|
+|**Membership Entitlement**|**Object Translation**|
 |**Object**|**Integration Page**|  
-|**Object Metadata**|**Object Metadata Snapshot**|  
+|**Object Metadata**|**Object Metadata Snapshot**|
 |**Object Tracking**|**Object Translation**|  
-|**Permission**|**Page Data Personalization**|  
-|**Permission Set**|**Printer Selection**|  
-|**Profile**|**Record Link**|  
-|**Profile Metadata**|**Report List Translation**|  
-|**Send-To Program**|**Session Event**|  
+|**OData Edm Type**|**Object Access Intent Override**|
+|**Page Documentation**|**Page Data Personalization**|
+|**Power BI Blob**|**Printer Selection**|
+|**Power BI Selection**|**Record Link**|
+|**Permission**|**Report List Translation**|  
+|**Permission Set**|**Session Event**|  
+|**Profile**|**Scheduled Task**|  
+|**Profile Metadata**|**Tenant Media**|  
+|**Profile Page Metadata**|**Tenant Permission**| 
+|**Published Application**|**Tenant Profile**|
+|**Report Layout**| **Tenant Profile Extension**|
+|**Send-To Program**|**Tenant Web Service**|  
 |**Server Instance**|**User**|  
 |**Style Sheet**|**User Default Style Sheet**|  
-|**Web Service**|**User Metadata**|  
+|**Upgrade Blob Storage**|**Web Hook Notification**|
+|**Web Service**|**Web Hook Subscription**|  
+
+<!--
 ||**User Personalization**|  
 ||**User Property**|  
+|**Client Add-in**||  
+|**Client Add-in Resources**||  -->
 
 ## Exporting the Application Tables to a Dedicated Application Database
 

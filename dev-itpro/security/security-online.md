@@ -10,7 +10,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
-ms.date: 11/27/2019
+ms.date: 10/01/2020
 ---
 
 # Business Central Online Security 
@@ -44,3 +44,4 @@ We recommend that you use encrypted network protocols to connect to the PowerBI 
 [Microsoft Trust Center (what we do to make the service secure)](https://www.microsoft.com/trustcenter/security/default.aspx)  
 [Microsoft Dynamics 365 Cloud Services Compliance](https://aka.ms/d365-compliance-list)  
 [Security and Protection](security-and-protection.md)  
+[Security Tips for Business Users](security-users.md)  

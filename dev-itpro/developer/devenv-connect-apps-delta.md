@@ -3,7 +3,7 @@ title: "Using Delta Links With APIs"
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,6 +23,7 @@ On subsequent calls, the API consumer can use the deltaLink URL, which will prov
 + Any added or updated entries appear as regular JSON objects with their current properties
 + Any records that have been removed will include in the response but represented only by their `"id"` and a `@odata.context` URL followed by a `/$deletedEntity`
 
+<!--
 ## Example
 
 In the following example, the specified changes have occurred since the initial API was called.
@@ -51,9 +52,9 @@ The response would return with the specified changes in the result, see the foll
             "balance": 8836.8
         },
         {
-            “@odata.context”: “https://api.businesscentral.dynamics.com/v1.0/api/v1.0/$metadata#companies(2d117882-81a5-489e-b956-613205b06c72)/customers/$deletedEntity”,
+            "@odata.context": "https://api.businesscentral.dynamics.com/v1.0/api/v1.0/$metadata#companies(2d117882-81a5-489e-b956-613205b06c72)/customers/$deletedEntity",
             "id": "e6b1c1f2-0694-46c0-96ec-6283627b1251",
-            “reason": “changed”
+            "reason": "changed"
         },
         {
             "@odata.etag": "W/\"JzI4O0VnQUFBQUo3QlRRQU1BQXdBREFBTUFBQUFBQUE0OzQzMDcwOyc=\"",
@@ -67,7 +68,7 @@ The response would return with the specified changes in the result, see the foll
      "@odata.deltaLink": "https://api.businesscentral.dynamics.com/v1.0/api/v1.0/companies(2d117882-81a5-489e-b956-613205b06c72)/customers?deltaToken=ZmYwMWIzZmEtMTk4OS00MWRjLTllM2UtMWE2MWNlZjE2NzEzLDIwMTgtMDEtMjNUMTc6Mjk6NDAuNTM1MTY0NlosJTJmTVMlMmZhcGklMmZiZXRhJTJmY29tcGFuaWVzKDY3MTE1YTRmLTRkZjQtNDQ1ZC1hNjYwLTlmNzU3MjgzZDhlYyklMmZpdGVtcywsVW5zcGVjaWZpZWQ="
 }
 ```
-
+-->
 ## Delta support limitations
 
 + The delta links apply to all entity APIs that include a persistent identifier, which is `"id"`, and the deltaLink will not apply to APIs that do not have the ID property. For example, the report APIs like balanceSheet.

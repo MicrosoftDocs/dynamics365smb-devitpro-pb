@@ -1,7 +1,8 @@
 ---
 title: "Normal Attribute"
+description: "The Normal attribute in AL for Business Central"
 ms.custom: na
-ms.date: 08/26/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,12 +15,12 @@ author: jswymer
 
 Specifies that the method is a Normal method.
 
-## Applies To  
+## Applies to  
 AL methods on codeunits.
 
 ## Syntax  
   
-```  
+```AL
 [Normal]
 procedure Normal();
 ```    
@@ -28,6 +29,8 @@ procedure Normal();
 
 The **Normal** method acts as a normal method.
 
-## See Also  
+## See Also
+
+[AL Method Reference](../methods-auto/library.md)  
 [Method Attributes](devenv-method-attributes.md)  
 [Test Codeunits and Test Functions](../devenv-test-codeunits-and-test-methods.md)

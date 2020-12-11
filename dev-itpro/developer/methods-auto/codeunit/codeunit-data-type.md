@@ -1,8 +1,9 @@
 ---
 title: "Codeunit Data Type"
+description: "The Codeunit Data Type in AL for Business Central"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +15,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Codeunit Data Type
+> **Version**: _Available from runtime version 1.0._
+
 Is a container for AL code that you can use from other application objects.
 
 
@@ -28,7 +31,7 @@ The following methods are available on instances of the Codeunit data type.
 
 |Method name|Description|
 |-----------|-----------|
-|[Run(var Record)](codeunitinstance-run-method.md)|Loads and executes the unit of C/AL code that you specify.|
+|[Run(var Record)](codeunitinstance-run-method.md)|Loads and executes the unit of AL code that you specify.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

@@ -1,8 +1,8 @@
 ---
-title: "HasData Method"
+title: "Notification.HasData Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# HasData Method
+# Notification.HasData Method
+> **Version**: _Available from runtime version 1.0._
+
 Checks if data was passed to a notification instance as specified by a SETDATA method call.
 
 
@@ -22,9 +24,9 @@ Checks if data was passed to a notification instance as specified by a SETDATA m
 Value :=   Notification.HasData(Name: String)
 ```
 ## Parameters
-*Notification*  
-&emsp;Type: [Notification](notification-data-type.md)  
-An instance of the [Notification](notification-data-type.md) data type.  
+*Notification*
+&emsp;Type: [Notification](notification-data-type.md)
+An instance of the [Notification](notification-data-type.md) data type.
 
 *Name*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -32,9 +34,9 @@ The name of the data item that is specified by the SETDATA method call.
 
 
 ## Return Value
-*Value*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true**, if there is data; otherwise **false**.  
+*Value*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+**true**, if there is data; otherwise **false**.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

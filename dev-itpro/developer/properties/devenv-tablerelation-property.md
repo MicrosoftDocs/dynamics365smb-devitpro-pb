@@ -2,7 +2,7 @@
 title: "TableRelation Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -10,16 +10,32 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # TableRelation Property
+> **Version**: _Available from runtime version 1.0._
 
-Sets relationships (links) to other tables. For example, if you want to provide a lookup into another table, set the name of that table on this property.  
-  
-## Applies To  
-  
-- Table Fields  
-- Page Fields  
-  
+Sets up a lookup into another table.
+The following syntax is valid for the TableRelation property:
+
+```
+TableRelation = <TableName>[.<FieldName>] [WHERE(<TableFilters>)] |
+[IF(<Conditions>) <TableName>[.<FieldName>] [WHERE(<TableFilters>)] ELSE <TableRelation>]
+<Conditions> ::= <TableFilters>
+<TableFilters>::= <TableFilter> {,<TableFilter>}
+<TableFilter>::= <DestinationFieldName>=CONST(<FieldConst>) | FIELD(<SourceFieldName>)
+```
+
+
+## Applies to
+-   Table Field
+-   Page Field
+
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+
 ## Remarks
 
 The `TableRelation` property lets you establish lookups into other tables. For example, on the Item card you can select a vendor from who you usually purchase an item. This is done through a table relationship.  
@@ -32,7 +48,7 @@ In addition, when you choose the option to test the relationships between primar
 
 This example shows a simple application of the `TableRelation` property for creating a `Vendors` sub-table by filtering between the records to include only the ones where the purchase expenses are higher than 10,000. 
 
-```
+```AL
 table 50100 "Main Vendors"
 {
   fields
@@ -55,7 +71,7 @@ table 50100 "Main Vendors"
 
 Moreover, the `TableRelation` property can be modified through a [table extension](../devenv-table-ext-object.md). Modifications to the `TableRelation` are additive and evaluated after the existing value. The primary use case is conditional table relations based on conditional enums. The following example illustrates how to define first, an enum, and then a table setting a `TableRelation`. 
 
-```
+```AL
 enum 50120 TypeEnum
 {
   Extensible = true;
@@ -83,7 +99,7 @@ table 50120 TableWithRelation
 ```
 The next code sample implements a table extension of the table defined above and an enum extension. The combined table relation is evaluated top-down. That means that the first unconditional relation will prevail, meaning that you cannot change an existing `TableRelation` from Customer to Item, since the original table relation is unconditional. 
 
-```
+```AL
 enumextension 50133 TypeEnumExt extends TypeEnum
 {
   value(10; Resource) { }

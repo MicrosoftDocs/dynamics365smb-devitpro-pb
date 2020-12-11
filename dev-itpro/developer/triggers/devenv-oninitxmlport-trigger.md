@@ -1,7 +1,8 @@
 ---
 title: "OnInitXMLport Trigger"
+description: "OnInitXMLport trigger in AL for Business Central."
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +14,7 @@ author: SusanneWindfeldPedersen
 # OnInitXMLport Trigger
 Runs when the XMLport is loaded and before any table views and filters are set.  
   
-## Applies To  
+## Applies to  
 - XMLports  
   
 ## See Also  

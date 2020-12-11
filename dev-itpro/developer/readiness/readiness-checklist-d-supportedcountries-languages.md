@@ -1,20 +1,21 @@
 ---
-title: "Supported Countries and Supported Languages"
-description: "Guidelines on supported countries and supported languages"
-author: v-liober
+title: "Categories, industries, and app version"
+description: "Guidelines on categories, industries, and app version"
+author: a-emniel
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: solsen
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.author: v-liober
+ms.author: a-emniel
 ---
 
-# Supported Countries, Languages, App Version, App Release Date
+# Categories, industries, and app version
 
-| Listing details | Description| Requirements |
-|-----------------|-------------|-------------|
-| 7. **Supported countries/regions** | Choose which countries your offer supports. /dynamics365/business-central/dev-itpro/compliance/apptest-countries-and-translations  *Example:* *Australia, Austria, Belgium, Canada, Denmark, Finland, France,* *Germany, Iceland, Italy, Mexico, Netherlands, New Zealand, Norway,* *Spain, Sweden, Switzerland, United Kingdom and United States.* | Recommended  |
-| 8. **Supported languages**| Choose which languages your offer supports.  *Example:* *English*  Check the box with all the languages that your app supports. Note, it is mandatory for your offer to support English. | Recommended  | 
-| 9. **App version**  | Enter the latest version number of your offer *Example:* *2.0.22794.0*  | Recommended  |
-| 10. **App release date** | Enter the date (dd/mm/yyyy) when you expect your app to be released or leave this field blank. | Recommended  |
+| Item| Description |
+|-------------|--------------|
+|Categories | Select up to 2 categories and 4 sub-categories. Your category selection is used to curate your offer in the marketplace. The offer description should reflect how your selected categories apply to your offer. |
+Industries | Select up to 2 industries and 2 sub-industries for each industry. These are used to categorize your offer in the marketplace. Your offer description should show how your offer supports the selected industries. Note: If your offer is not specific to an industry, do not select one.|
+App version| Enter the latest version number of your offer *Example:* *2.0.22794.0*. 
+
+

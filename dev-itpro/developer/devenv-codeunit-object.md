@@ -3,7 +3,7 @@ title: "Codeunit Object"
 description: "Description of the codeunit object."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,7 +25,7 @@ This codeunit example checks whether a given customer has registered a shoe size
 
 The codeunit can be used both as a direct call to `codeunit.run(customer)` or as a call to the procedure inside the codeunit `createcustomer.CheckSize(customer)`.
 
-```
+```AL
 codeunit 50113 CreateCustomer
 {
     TableNo = Customer;
@@ -43,7 +43,9 @@ codeunit 50113 CreateCustomer
 ```
 
 ## See Also
+
 [Developing Extensions](devenv-dev-overview.md)  
 [Table Extension Object](devenv-table-ext-object.md)  
 [Page Extension Object](devenv-page-ext-object.md)  
-[AL Development Environment](devenv-reference-overview.md)
+[AL Development Environment](devenv-reference-overview.md)  
+[XML Comments in Code](devenv-xml-comments.md)

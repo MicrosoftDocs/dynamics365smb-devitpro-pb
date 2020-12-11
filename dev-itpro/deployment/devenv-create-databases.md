@@ -1,8 +1,8 @@
 ---
 title: Creating and Altering Business Central Databases
-description: Create a new database in the development environment and by using the New-NAVDatabase cmdlet in the Administration Shell. 
+description: Create a new database by using the New-NAVDatabase cmdlet in the Administration Shell. 
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,11 +22,11 @@ This article describes how to create new databases in [!INCLUDE[prodshort](../de
 
 There are two types of databases: application and tenant.
 
-- The application database stores data that defines the application and its business logic. This data includes a description of the objects (such as table, pages, reports, codeunits and more) and code that make up your application - essentially, data that is common to all tenants. It is the application database to which you publish your extensions, including the base application, system application, and other extensions.
+- The application database stores data that defines the application and its business logic. This data includes descriptions of the objects and the code of your application. Essentially, it includes data that are common to all tenants. It's the application database to which you publish your extensions, including the base application, system application, and other extensions.
 
-- The tenant database, often referred as simply the tenant, stores the actual business data for specific companies, for example, data that users enter and modify by using the application. It is the tenant database on which you install extensions that are published to the application database.
+- The tenant database is often referred as just the tenant. The tenant database stores the actual business data for specific companies, for example, data that users enter and modify by using the application. It's the tenant database on which you install extensions that are published to the application database.
 
-With a single-tenant deployment architecture, the application data and business (tenant) data are stored in the same database, meaning that there is only one database. If you want to set up single-tenant deployment, you only have to create an application database.
+In a single-tenant deployment architecture, the application data and business (tenant) data are stored in the same database. That is, there's only one database. If you want to set up single-tenant deployment, you only have to create an application database.
 
 If you have a multitenant deployment architecture, you create an application database and one or more tenant databases.
 
@@ -37,11 +37,11 @@ If you have a multitenant deployment architecture, you create an application dat
 
 ## Create an application database
 
-To create an application database, for either a single-tenant or multitenant deployment, you use the [New-NAVApplicationDatabase cmdlet](/powershell/module/microsoft.dynamics.nav.management/new-navapplicationdatabase). This cmdlet is available in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]. You use the  New-NAVApplicationDatabase cmdlet to create either completely new database or initialize an existing empty database to make it an [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application database.
+To create an application database, for either a single-tenant or multitenant deployment, you use the [New-NAVApplicationDatabase cmdlet](/powershell/module/microsoft.dynamics.nav.management/new-navapplicationdatabase). This cmdlet is available in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]. You use the  New-NAVApplicationDatabase cmdlet to create either new database or initialize an existing empty database to make it an [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application database.
 
-- If you use it to create a new database, the cmdlet will add a database in SQL Server that includes the tables and data that are required of a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application database. The cmdlet creates a master data file (MDF) and log data file (LDF). Using the cmdlet, you can set the database name, the collation, and where to store the data files. Other database options are set for you.
+- If you create a new database, the cmdlet will add a database in SQL Server. The database includes the tables and data required for a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application database. The cmdlet creates a master data file (MDF) and log data file (LDF). Using the cmdlet, you can set the database name, the collation, and where to store the data files. Other database options are set for you.
 
-- If you use the cmdlet with an existing database, the cmdlet modifies the existing database to include [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application tables and data. This enables you to configure a database beforehand, setting options that are not done by the cmdlet, such as options for the data files (MDF/NDF/LDF) and their filegroups, [table partitioning](../administration/optimize-sql-data-access.md#TablePartitioning), and more.
+- If you use the cmdlet with an existing database, the cmdlet modifies the existing database to include [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application tables and data. You configure a database beforehand, setting options that aren't done by the cmdlet, such as options for the data files (MDF/NDF/LDF) and their filegroups, [table partitioning](../administration/optimize-sql-data-access.md#TablePartitioning), and more.
 
 To create an application database, complete the following steps:
 
@@ -55,11 +55,11 @@ To create an application database, complete the following steps:
     New-NAVApplicationDatabase [-DatabaseServer <database server name>\<database server instance>] -DatabaseName <String> [-DatabaseLocation <String>] [[-Collation] <String>] [-ApplicationDatabaseCredentials <PSCredential>]
     ```
 
-    To create a new application database, set `-DatabaseName` to the name you want to give the database, and the `-Collation` to the desired collation. If you omit the `-Collation`, then Latin1_General_100_CS_AS is used by default. Optionally, set the `-DatabaseLocation` to the directory path where you want to store the data files; otherwise the database files will be stored in the default SQL Server location.
+    To create a new application database, set `-DatabaseName` to the name you want to give the database, and the `-Collation` to the wanted collation. If you omit the `-Collation`, then Latin1_General_100_CS_AS is used by default. Optionally, set the `-DatabaseLocation` to the directory path where you want to store the data files; otherwise the database files will be stored in the default SQL Server location.
     
-    To use an existing empty database, set the `-DatabaseName` to the name of the existing database. You cannot use the `-Collation` parameter to change the current collation of the database.
+    To use an existing empty database, set the `-DatabaseName` to the name of the existing database. You can't use the `-Collation` parameter to change the current collation of the database.
     
-    The following example creates a new database called MyBCApplicationDB with the collation Latin1_General_100_CS_AS on the SQL Server instance BCDEMO. The database files are stored in the default data directory for the SQL Server instance (for example, C:\Program Files\Microsoft SQL Server\MSSQL13.BCDEMO\MSSQL\DATA).
+    The following example creates a new database called MyBCApplicationDB. The database is given the collation Latin1_General_100_CS_AS on the SQL Server instance BCDEMO. The database files are stored in the default data directory for the SQL Server instance (for example, C:\Program Files\Microsoft SQL Server\MSSQL13.BCDEMO\MSSQL\DATA).
 
     ```powershell
     New-NAVApplicationDatabase -DatabaseServer .\BCDEMO -DatabaseName "MyBCApplicationDB" 
@@ -80,18 +80,18 @@ To create an application database, complete the following steps:
     For example:
 
     ```powershell
-    Set-NAVServerConfiguration BC150 -KeyName DatabaseName -KeyValue "MyBCApplicationDB"
+    Set-NAVServerConfiguration BC160 -KeyName DatabaseName -KeyValue "MyBCApplicationDB"
     ```
 
 4. Run the [Set-NAVApplication cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navapplication) to set the application version on the database.
 
-    To set the application version, use the `-ApplicationVersion` parameter. The value must have the format `major.minor.[build[.revision]]`, such as '15.1', '15.1.0., or 15.1.0.0'. For example:
+    To set the application version, use the `-ApplicationVersion` parameter. The value must have the format `major.minor.[build[.revision]]`, such as '15.1', '15.1.0', or 15.1.0.0'. For example:
 
     ```powershell
-    Set-NAVApplication BC150 -ApplicationVersion 15.1.0.0 -Force
+    Set-NAVApplication BC160 -ApplicationVersion 15.1.0.0 -Force
     ```
 
-    This is required in order to synchronize your tenant and extensions later. This step sets a value to the `applicationversion` column in the **$ndo$dbproperty** table of the application database.
+    This step is required to synchronize your tenant and extensions later. This step sets a value to the `applicationversion` column in the **$ndo$dbproperty** table of the application database.
 
 5. Give the [!INCLUDE[server](../developer/includes/server.md)] service account privileges to the database.
 
@@ -104,10 +104,10 @@ To create an application database, complete the following steps:
     Run the [Sync-NAVTenant](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.management/sync-navtenant) cmdlet to synchronize the tenant. For example:
 
     ```powershell
-    Sync-NAVTenant -ServerInstance BC150
+    Sync-NAVTenant -ServerInstance BC160
     ```
 
-    This will create the tenant-related tables in the database.
+    This step will create the tenant-related tables in the database.
 
 ## Create a tenant database
 
@@ -125,7 +125,7 @@ Complete the followings step to create a new tenant database in a multitenant de
     To mount the tenant, use the [Mount-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/mount-navtenant) cmdlet. For example:
 
     ```powershell
-    Mount-NAVTenant -ServerInstance BC150 -DatabaseName "BCTenantDB" -DatabaseServer .\BCDEMO -Tenant BCTenant1 -AllowAppDatabaseWrite
+    Mount-NAVTenant -ServerInstance BC160 -DatabaseName "BCTenantDB" -DatabaseServer .\BCDEMO -Tenant BCTenant1 -AllowAppDatabaseWrite
     ```
 
     > [!NOTE]  
@@ -136,16 +136,16 @@ Complete the followings step to create a new tenant database in a multitenant de
     Use the [Sync-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/sync-navtenant) cmdlet. For example:
 
     ```powershell  
-    Sync-NAVTenant -ServerInstance BC150 -Tenant BCTenant1 -Mode Sync
+    Sync-NAVTenant -ServerInstance BC160 -Tenant BCTenant1 -Mode Sync
     ```
 
-    This will create the tenant-related tables in the database.
+    This step will create the tenant-related tables in the database.
   
 ## Next steps
 
 Complete the following steps to get the application up and running on your tenants.
 
-1. Publish the system symbols and extensions that make up your application, like the system application, base application, Microsoft and third-party extensions.
+1. Publish the system symbols and extensions that make up your application. For example, publish the system application, base application, Microsoft extensions, and third-party extensions.
 
     See [Publishing and Installing an Extension](../developer/devenv-how-publish-and-install-an-extension-v2.md)
 
@@ -154,6 +154,12 @@ Complete the following steps to get the application up and running on your tenan
 3. Add a company to the database.
 
     To add a company, run the [New-NAVCompany cmdlet](/powershell/module/microsoft.dynamics.nav.management/new-navcompany).
+
+4. Export and import existing permissions sets.
+
+    A new database won't include any permission sets except for the SUPER permission set. Also, there will only be one user, typically for your account. You can either create permissions sets from scratch or export the sets from an existing database. As a minimum, it's a good idea to export the BASIC permissions set. The BASIC permission set grants the minimum permissions required for any user to access the application.
+    
+    For more information, see [Export Permission Sets](../developer/devenv-export-permission-sets.md) and [Special Permission Sets](../administration/administration-special-permission-sets.md).
 
 ## See also
 

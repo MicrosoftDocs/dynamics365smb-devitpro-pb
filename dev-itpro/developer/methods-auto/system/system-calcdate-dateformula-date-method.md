@@ -1,8 +1,8 @@
 ---
-title: "CalcDate Method"
+title: "System.CalcDate Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# CalcDate Method
+# System.CalcDate Method
+> **Version**: _Available from runtime version 1.0._
+
 Calculates a new date that is based on a date expression and a reference date.
 
 
@@ -21,23 +23,23 @@ Calculates a new date that is based on a date expression and a reference date.
 ```
 NewDate :=   System.CalcDate(DateExpression: DateFormula [, Date: Date])
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *DateExpression*  
 &emsp;Type: [DateFormula](../dateformula/dateformula-data-type.md)  
 The date expression can be any length. The string is interpreted from left to right with one subexpression at a time. The following rules describe the valid syntax of date expressions:
--   DateExpression = [<Subexpression>][<Subexpression>][<Subexpression>]
--   <Subexpression> = [<Sign>] <Term>
--   <Sign> = + | -
--   <Term> = <Number><Unit> | <Unit><Number> | <Prefix><Unit>
--   <Number> = Positive integer
--   <Unit> = D | WD | W | M | Q | Y (D=day, WD=weekday, W=week, M=month, Q=quarter, Y=year)
--   <Prefix> = C (C=current)
+-   DateExpression = [\<Subexpression\>][\<Subexpression\>][\<Subexpression\>]
+-   \<Subexpression\> = [\<Sign\>] \<Term\>
+-   \<Sign\> = + | -
+-   \<Term\> = \<Number\>\<Unit\> | \<Unit\>\<Number\> | \<Prefix\>\<Unit\>
+-   \<Number\> = Positive integer
+-   \<Unit\> = D | WD | W | M | Q | Y (D=day, WD=weekday, W=week, M=month, Q=quarter, Y=year)
+-   \<Prefix\> = C (C=current)
 These production rules show that date expressions consist of zero, one, two, or three subexpressions. Each subexpression consists of an optional sign and a term. The following are some typical examples of terms:
--   30D (30 days; corresponds to <Number><Unit>)
--   WD2 (weekday number 2; corresponds to <Unit><Number>)
--   CW (current week; corresponds to <Prefix><Unit>)
+-   30D (30 days; corresponds to \<Number\>\<Unit\>)
+-   WD2 (weekday number 2; corresponds to \<Unit\>\<Number\>)
+-   CW (current week; corresponds to \<Prefix\>\<Unit\>)
 The internal calendar starts on Monday and ends on Sunday. This means that Monday is weekday 1 and Sunday is weekday 7. A run-time error occurs if the syntax of DateExpression is incorrect.
           
 *Date*  
@@ -46,9 +48,9 @@ Use this optional parameter to define a reference date. The default is the curre
 
 
 ## Return Value
-*NewDate*  
-&emsp;Type: [Date](../date/date-data-type.md)  
-  
+*NewDate*
+&emsp;Type: [Date](../date/date-data-type.md)
+
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -65,7 +67,8 @@ Use this optional parameter to define a reference date. The default is the curre
 
  For more information about how to calculate the duration between two DateTimes, see [Duration Data Type](../../datatypes/devenv-duration-data-type.md).  
 
-## Example  
+## Example 1
+
  This code example shows how to use the production rules that were previously described.  
 
 ```  
@@ -81,7 +84,8 @@ Use this optional parameter to define a reference date. The default is the curre
 > [!NOTE]  
 >  The angle brackets \(\< >\) specify that the expression is not translated, regardless of the application language. <!-- For more information about multilanguage capabilities with date formulas, see [Developing Multilanguage-Enabled Applications](Developing-Multilanguage-Enabled-Applications.md).  -->
 
-## Example  
+## Example 2
+
  This example shows how to use the CALCDATE method.  
 
 ```  

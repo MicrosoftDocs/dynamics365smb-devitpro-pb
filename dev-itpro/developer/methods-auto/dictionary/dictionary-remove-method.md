@@ -1,8 +1,8 @@
 ---
-title: "Remove Method"
+title: "Dictionary.Remove Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Remove Method
+# Dictionary.Remove Method
+> **Version**: _Available from runtime version 1.0._
+
 Removes the value with the specified key from the Dictionary.
 
 
@@ -22,9 +24,9 @@ Removes the value with the specified key from the Dictionary.
 [Ok := ]  Dictionary.Remove(Key: TKey)
 ```
 ## Parameters
-*Dictionary*  
-&emsp;Type: [Dictionary](dictionary-data-type.md)  
-An instance of the [Dictionary](dictionary-data-type.md) data type.  
+*Dictionary*
+&emsp;Type: [Dictionary](dictionary-data-type.md)
+An instance of the [Dictionary](dictionary-data-type.md) data type.
 
 *Key*  
 &emsp;Type: [TKey](dictionary-data-type.md)  
@@ -32,9 +34,9 @@ The key of the element to remove.
 
 
 ## Return Value
-*Ok*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the element is successfully removed; otherwise, **false**. This method also returns **false** if the given key was not found in the original Dictionary.  
+*Ok*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+**true** if the element is successfully removed; otherwise, **false**. This method also returns **false** if the given key was not found in the original Dictionary.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

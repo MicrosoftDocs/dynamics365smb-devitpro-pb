@@ -3,7 +3,7 @@ title: Simple List Page Example
 description: "Provides AL code for a simple list type page"
 author: jswymer
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,7 +20,7 @@ The AL code in this article creates a simple list page that displays records fro
 
 For a more detailed explanation of the list page, see [Designing List Pages](devenv-designing-list-pages.md).
 
-```
+```AL
 page 50111 SampleCustomerList
 {
     PageType = List;

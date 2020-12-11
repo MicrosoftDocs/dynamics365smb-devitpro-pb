@@ -1,8 +1,8 @@
 ---
-title: "Tables and table extensions that have been published must not change name, since dependent extensions may break"
-ms.author: SusanneWindfeldPedersen
+title: "Tables that have been published must not change name."
+ms.author: solsen
 ms.custom: na
-ms.date: 02/06/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,10 +14,10 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AppSourceCop Rule AS0006
-Tables and table extensions that have been published must not change name, since dependent extensions may break  
+Tables that have been published must not change name.  
 
 ## Description
-Tables and table extensions that have been published must not change name.
+Tables that have been published must not change name. This might break the upgrade of existing installations and dependent extensions.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

@@ -354,6 +354,10 @@ The following list shows additional fields that are deleted as a result of the f
 |31103|VAT Control Report Buffer|44|Insolvency Proceedings (p.44)|Removed|Replaced by **Corrections for Bad Receivable**|
 |31101|Certificate CZ|All|All Fields|Removed|Moved to standard  table 1262 **Isolated Certificate**|
 
+## Fields marked as ObsoleteState:Pending
+
+[!INCLUDE [fields-obsolete-cz](../includes/fields-obsolete-cz.md)]
+
 ## See Also
 
 [Upgrading to Business Central](upgrading-to-business-central.md)  

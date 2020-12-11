@@ -1,7 +1,7 @@
 ---
 title: "Using Security Certificates with Business Central On-Premises"
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -10,6 +10,9 @@ ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 # Using Security Certificates with Business Central On-Premises
+
+>[!NOTE]
+> [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)] is [!INCLUDE[2019_releasewave2_deprecated](../includes/2019_releasewave2_deprecated.md)].
 
 You use certificates to help secure connections over a wide area network \(WAN\), such as connections from the [!INCLUDE[webserver](../developer/includes/webserver.md)], [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)], and web services to the [!INCLUDE[server](../developer/includes/server.md)]. Implementing security certificates on your deployment environment requires modifications to various components, like the [!INCLUDE[server](../developer/includes/server.md)], [!INCLUDE[webserver](../developer/includes/webserver.md)], and clients.
 

@@ -1,46 +1,51 @@
 ---
 title: "RequestedHeight Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: dd671414-a7c3-44bd-a860-a8bda61c7913
-caps.latest.revision: 15
 author: SusanneWindfeldPedersen
 ---
-
- 
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # RequestedHeight Property
+> **Version**: _Available from runtime version 1.0._
 
-Specifies the ideal height in pixels of the control add-in.
+RequestedHeight specifies the initial height of the control add-in.
 
-## Applies to 
+## Applies to
+-   Control Add In
 
-- Control add-in objects
-  
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+
 ## Value Type 
-  
--   Integer 
+
+- Integer 
 
 ## Property Values
+
 The default value is 100 pixels.
 
 ## Remarks 
+
 This setting is optional. You can use it when the visual content of the add-in is optimal at a specific size. If space is available on the page, the requested height will be applied. If the add-in must compete for space with other content on the page, such as a second add-in, then the RequestedHeight value is ignored and the add-in will shrink or stretch to the minimum or maximum height.
 The value of RequestedHeight is ignored if the add-in is the only content on a card page.
 
-## Code Example
-```
+## Example
+
+```AL
 RequestedHeight = 300;
 VerticalShrink = true;
 MinimumHeight = 150;
-
 ```
 
-## See Also  
-[Control Add-In Object](../devenv-control-addin-object.md)   
- 
+## See Also
+
+[Control Add-In Object](../devenv-control-addin-object.md)  

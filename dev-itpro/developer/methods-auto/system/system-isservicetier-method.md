@@ -1,8 +1,8 @@
 ---
-title: "IsServiceTier Method"
+title: "System.IsServiceTier Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# IsServiceTier Method
+# System.IsServiceTier Method
+> **Version**: _Available from runtime version 1.0 until version 1.0 where it was deprecated._
+
 Gets a value indicating whether the runtime is a service tier.
 
 
@@ -21,16 +23,16 @@ Gets a value indicating whether the runtime is a service tier.
 ```
 Ok :=   System.IsServiceTier()
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 
 
 ## Return Value
-*Ok*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**True** if the runtime is a service tier, otherwise **false**.  
+*Ok*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+**True** if the runtime is a service tier, otherwise **false**.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

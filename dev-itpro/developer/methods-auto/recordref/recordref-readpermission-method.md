@@ -1,8 +1,8 @@
 ---
-title: "ReadPermission Method"
+title: "RecordRef.ReadPermission Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# ReadPermission Method
+# RecordRef.ReadPermission Method
+> **Version**: _Available from runtime version 1.0._
+
 Determines if you can read from a table.
 
 
@@ -21,18 +23,18 @@ Determines if you can read from a table.
 ```
 Ok :=   RecordRef.ReadPermission()
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 
 ## Parameters
-*RecordRef*  
-&emsp;Type: [RecordRef](recordref-data-type.md)  
-An instance of the [RecordRef](recordref-data-type.md) data type.  
+*RecordRef*
+&emsp;Type: [RecordRef](recordref-data-type.md)
+An instance of the [RecordRef](recordref-data-type.md) data type.
 
 ## Return Value
-*Ok*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if you can read from some or all of the table; otherwise, **false**.  
+*Ok*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+**true** if you can read from some or all of the table; otherwise, **false**.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

@@ -1,8 +1,8 @@
 ---
-title: "SelectNodes Method"
+title: "XmlElement.SelectNodes Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# SelectNodes Method
+# XmlElement.SelectNodes Method
+> **Version**: _Available from runtime version 1.0._
+
 Selects a list of nodes matching the XPath expression.
 
 
@@ -22,9 +24,9 @@ Selects a list of nodes matching the XPath expression.
 [Ok := ]  XmlElement.SelectNodes(XPath: String, NamespaceManager: XmlNamespaceManager, var NodeList: XmlNodeList)
 ```
 ## Parameters
-*XmlElement*  
-&emsp;Type: [XmlElement](xmlelement-data-type.md)  
-An instance of the [XmlElement](xmlelement-data-type.md) data type.  
+*XmlElement*
+&emsp;Type: [XmlElement](xmlelement-data-type.md)
+An instance of the [XmlElement](xmlelement-data-type.md) data type.
 
 *XPath*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -40,9 +42,9 @@ An XmlNodeList containing a collection of nodes matching the XPath expression.
 
 
 ## Return Value
-*Ok*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the operation was successful; otherwise **false**.  If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+*Ok*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+**true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

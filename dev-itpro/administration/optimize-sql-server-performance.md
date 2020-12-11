@@ -1,7 +1,7 @@
 ---
 title: "Optimizing SQL Server Performance with Business Central"
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,6 +12,7 @@ caps.latest.revision: 3
 author: jswymer
 ---
 # Optimizing SQL Server Performance with Business Central
+
 The following articles describe how to optimize performance in [!INCLUDE[prodlong](../developer/includes/prodlong.md)] when accessing data from the SQL Server database.  
 
 [Setting SQL Compatibility Level to Optimize Database Performance](optimize-sql-set-compatibility-level.md)
@@ -26,13 +27,15 @@ The following articles describe how to optimize performance in [!INCLUDE[prodlon
 
 [Query Objects and Performance](optimize-sql-query-objects-and-performance.md)  
 
-[Configuring Query Hints for Optimizing SQL Server Performance with Business Central](sql-server-query-hints.md)
+[Configuring Query Hints for Optimizing SQL Server Performance with Business Central](sql-server-query-hints.md)  
+
+[Using Read Scale-Out for Better Performance](database-read-scale-out-overview.md)  
 
 [Troubleshooting: Analyzing Long Running SQL Queries Involving FlowFields by Disabling SmartSQL](Troubleshooting-Queries-Involving-FlowFields-By-Disabling-SmartSQL.md)  
 
 [Troubleshooting: Using Query Store to Monitor Query Performance in Business Central](troubleshoot-query-performance-using-query-store.md)
 
-[Troubleshooting: Using the Event Log to Monitor Long Running SQL Queries in Business Central](troubleshoot-long-running-queries-using-event-log.md)
+[Troubleshooting: Using the Event Log to Monitor Long Running SQL Queries in Business Central](troubleshoot-long-running-queries-using-event-log.md) 
 
 ## See Also  
 [Installation Considerations for Microsoft SQL Server](../deployment/installation-considerations-for-microsoft-sql-server.md)   

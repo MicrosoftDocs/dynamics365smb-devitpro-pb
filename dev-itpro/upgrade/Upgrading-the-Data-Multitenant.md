@@ -1,8 +1,8 @@
 ---
-title: Upgrading the Database
-description: This article describes the tasks required for upgrading from the earlier versions of database to Dynamics 365 Business Central.
+title: Upgrading the Database to in a Multitenant Deployment
+description: This article describes the tasks required for upgrade the data when you have a multitenant deployment. 
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ This article describes the tasks required for upgrading data to the latest [!INC
 
 In this scenario, you already have an upgraded application that is mounted on a [!INCLUDE[server](../developer/includes/server.md)]. You will then mount the old tenants on the server instance and perform the data upgrade.
 
-You use data conversion tools provided with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to convert the old data with the old version’s table and field structure, so that it functions together with the new version’s table and field structure. Mainly, only table objects and table data are modified during the data upgrade process. Other objects, such as pages, reports, codeunits, and XMLports are upgraded as part of the application code upgrade process.
+You use data conversion tools provided with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to convert the old data with the old version's table and field structure, so that it functions together with the new version's table and field structure. Mainly, only table objects and table data are modified during the data upgrade process. Other objects, such as pages, reports, codeunits, and XMLports are upgraded as part of the application code upgrade process.
 
 The data upgrade process described in this article leads you through the database conversion (technical upgrade) and then the upgrade of the actual data, which is achieved by using the upgrade toolkit/upgrade codeunits.
 
@@ -230,21 +230,30 @@ You perform these tasks on each tenant that you want to upgrade.
 
     A data upgrade runs the upgrade toolkit objects, such as upgrade codeunits and upgrade tables, to migrate business data from the old table structure to the new table structure. It will also upgrade the published extensions. 
 
-    You can start the data upgrade by running the  run [Start-NavDataUpgrade](/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade) cmdlet the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]:
+    1. Open the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] as an administrator, and then run [Start-NavDataUpgrade](/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade) cmdlet as follows:  
 
     ```  
-    Start-NavDataUpgrade -ServerInstance <ServerInstanceName>
+    Start-NavDataUpgrade -ServerInstance ServerInstanceName> -FunctionExecutionMode Serial -ContinueOnError  
     ```  
+    
+    Replace `<ServerInstanceName>` with the name of the [!INCLUDE[server](../developer/includes/server.md)] instance that is connected to the database.
+    
+    > [!NOTE]  
+    >  In the last phase of data upgrade, all companies will be initialized by running codeunit 2 Company Initialization. This is done automatically. If you want to skip company initialization, then use the `Start-NavDataUpgrade` with the `-SkipCompanyIntitialization` parameter. 
+    
+    To view the progress of the data upgrade, you can run Get-NavDataUpgrade cmdlet with the `–Progress` switch.  
 
-     **Important:** If you have extensions, then you must run the data upgrade so that it executes functions in the serial mode as follows.
+    The data upgrade process runs `CheckPreconditions` and `Upgrade` functions in the upgrade codeunits. If any of the preconditions are not met or an upgrade function fails, you must correct the error and resume the data upgrade process. If CheckPreconditions and Upgrade functions are executed successfully, codeunit 2 is automatically run to initialize all companies in the database unless you set the `-SkipCompanyIntitialization` parameter.
 
-    ```  
-    Start-NavDataUpgrade -ServerInstance <ServerInstanceName> -Tenant <tenantID> -FunctionExecutionMode Serial
-    ```  
-
-    To view the progress of the data upgrade, you can run [Get-NavDataUpgrade](/powershell/module/microsoft.dynamics.nav.management/get-navdataupgrade) cmdlet with the `–Progress` switch. 
-
-    The data upgrade process runs `CheckPreconditions` and `Upgrade` functions in the upgrade codeunits. If any of the preconditions are not met or an upgrade function fails, you must correct the error and resume the data upgrade process. If CheckPreconditions and Upgrade functions are executed successfully, codeunit 2 is automatically run to initialize all companies in the database unless you set the `-SkipCompanyIntitialization` parameter.  
+    2. Check for and resolve upgrade errors.
+    
+        Run the following command to get a list of any errors that have occurred:
+    
+        ``` 
+        Get-NAVDataUpgrade ServerInstanceName> -ErrorOnly
+        ``` 
+    
+        Resolve the errors before going to the next step.  
 
 5. Install extensions on the tenant.
 

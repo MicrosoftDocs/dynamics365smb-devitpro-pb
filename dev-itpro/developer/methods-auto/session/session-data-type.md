@@ -2,7 +2,7 @@
 title: "Session Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Session Data Type
+> **Version**: _Available from runtime version 1.0._
+
 Represents a Microsoft Dynamics Business Central session.
 
 
@@ -33,10 +35,13 @@ The following methods are available on the Session data type.
 |[UnbindSubscription(Codeunit)](session-unbindsubscription-method.md)|Unbinds the event subscriber methods from in the codeunit instance. This essentially deactivates the subscriber methods for the codeunit instance.|
 |[ApplicationIdentifier()](session-applicationidentifier-method.md)|Gets the application ID associated with the current thread.|
 |[SendTraceTag(String, String, Verbosity, String [, DataClassification])](session-sendtracetag-method.md)|Send a trace tag to the telemetry service.|
+|[LogMessage(String, String, Verbosity, DataClassification, TelemetryScope, String, String [, String] [, String])](session-logmessage-string-string-verbosity-dataclassification-telemetryscope-string-string-string-string-method.md)|Logs a trace message to a telemetry account.|
+|[LogMessage(String, String, Verbosity, DataClassification, TelemetryScope, Dictionary of [Text, Text])](session-logmessage-string-string-verbosity-dataclassification-telemetryscope-dictionary[text,text]-method.md)|Logs a trace message to a telemetry account.|
 |[EnableVerboseTelemetry(Boolean, Duration)](session-enableverbosetelemetry-method.md)|Temporarily enable verbose telemetry on the current session.|
 |[GetExecutionContext()](session-getexecutioncontext-method.md)|Gets the current session's execution context.|
 |[GetModuleExecutionContext([Guid])](session-getmoduleexecutioncontext-method.md)|Gets the current session's execution context scoped to a specific module.|
 |[GetCurrentModuleExecutionContext()](session-getcurrentmoduleexecutioncontext-method.md)|Gets the current session's execution context for the currently executing module.|
+|[SetDocumentServiceToken(String)](session-setdocumentservicetoken-method.md)|Sets the document service token in the current session.|
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

@@ -1,1 +1,1 @@
-NAV extension
+extension

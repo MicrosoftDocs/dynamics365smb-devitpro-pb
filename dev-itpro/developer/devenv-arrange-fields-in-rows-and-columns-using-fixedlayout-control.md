@@ -2,7 +2,7 @@
 title: "Arranging Fields in Rows and Columns Using a Fixed Control"
 description: A Fixed control is used to arrange page fields in rows and columns, similar to a matrix-like format which is typically used to display statistical data.
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -33,7 +33,7 @@ By placing the fields in a Fixed control throughout a group control, you can def
 ### Example
 The following AL code uses **Fixed** control to display four fields on a page inside the group called Fixed Layout.
 
-```
+```AL
 page 50114 "Fixed Control Example"
 {    
     layout

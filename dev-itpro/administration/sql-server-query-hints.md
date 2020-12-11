@@ -1,7 +1,8 @@
 ---
-title: "Configuring Query Hints for Optimizing SQL Server Performance with Business Central"
+title: "Configuring Query Hints for Optimizing SQL Server Performance"
+description: Enable query hints in a database for optimizing performance.
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/29/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

@@ -3,7 +3,7 @@ title: "Using Namespaces with XMLports"
 description: "Namespaces are used to avoid element name conflicts."
 author: blrobl
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,11 +16,11 @@ ms.author: t-blrobl
 The external system that provides or consumes [!INCLUDE[d365_dev_long_md](includes/d365_dev_long_md.md)] data as XML might require that the XML documents include namespaces. Namespaces are used to avoid element name conflicts. In these cases, you must add namespaces on the XMLport to make it compatible with the XML schema that is used by the external system.
 
 > [!NOTE]  
-> Namespace-related properties are only available when the [Format Property](properties/devenv-format-xmlports-property.md) is set to **Xml**.
+> Namespace-related properties are only available when the [Format Property](properties/devenv-format-property.md) is set to **Xml**.
 
 For example, the following code is a portion of a simple XML document for transferring sales order information. The XML includes namespaces for mapping fields from the `Sales Header` table.
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-16"?>  
 <Root xmlns="urn:bc:schema:all" xmlns:bcField="urn:bc:schema:field" xmlns:bcTable="urn:bc:schema:table">  
   <bcTable:SalesHeader>  

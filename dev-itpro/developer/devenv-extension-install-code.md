@@ -3,7 +3,7 @@ author: jswymer
 title: "Writing extensions installation code"
 description: "Describes how to add code to run to initialize data when an extension is installed."
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,25 +29,25 @@ You write install logic in an *install* codeunit. This is a codeunit that has th
 |OnInstallAppPerCompany()|Includes code for company-related operations. Runs once for each company in the database.|
 |OnInstallAppPerDatabase()|Includes code for database-related operations. Runs once in the entire install process.|
 
-The install codeunit becomes an integral part of the extension version. You can have more than one install codeunit. However, be aware that there is no guarantee on the order of execution of the different codeunits. If you do use multiple install units, make sure that they can run independent of each other.
+The install codeunit becomes an integral part of the extension version. You can have more than one install codeunit. However, be aware that there is no guarantee on the order of execution of the different codeunits. If you do use multiple install units, make sure that they can run independently of each other.
 
 ### Install codeunit syntax
 The following code illustrates the basic syntax and structure of an install codeunit:
 
-```
+```AL
 codeunit [ID] [NAME]
 {
-	Subtype=Install;
+    Subtype=Install;
 
-	trigger OnInstallAppPerCompany()
-	begin
-		// Code for company related operations
-	end;
+    trigger OnInstallAppPerCompany()
+    begin
+        // Code for company related operations
+    end;
 
-	trigger OnInstallAppPerDatabase()
-	begin
-		// Code for database related operations
-	end;
+    trigger OnInstallAppPerDatabase()
+    begin
+        // Code for database related operations
+    end;
 
 }
 ```
@@ -60,7 +60,7 @@ Each extension version has a set of properties that contain information about th
 ### Install codeunit example
 This example uses the ` OnInstallAppPerDatabase()` trigger to check whether the data version of the previous extension version is compatible for the upgrade.
 
-```
+```AL
 codeunit 50100 MyInstallCodeunit
 {
     Subtype=Install;

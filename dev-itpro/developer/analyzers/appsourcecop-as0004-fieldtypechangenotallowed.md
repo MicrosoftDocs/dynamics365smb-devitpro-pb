@@ -1,8 +1,8 @@
 ---
 title: "Fields must not change type, since dependent extensions may break"
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
-ms.date: 02/06/2020
+ms.date: 11/25/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,6 +20,11 @@ Fields must not change type, since dependent extensions may break
 Fields must not change type.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+The validation of the length of table fields was previously done with [AS0004](appsourcecop-as0004-fieldtypechangenotallowed.md) and has now been split into two different rules:
+- [AS0080](appsourcecop-as0080-fieldlengthdecreasenotallowed.md) - which validates against decreasing the length of fields
+- [AS0086](appsourcecop-as0086-fieldlengthincreasenotallowed.md) - which validates against increasing the length of fields
+
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  

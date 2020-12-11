@@ -3,7 +3,7 @@ title: "Report Object"
 description: "Reports are used to print or display information from a database."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,11 +13,12 @@ ms.author: solsen
 ---
 
 # Report Object
+
 Reports are used to print or display information from a database. You can use a report to structure and summarize information, and to print documents, such as sales quotes and invoices.
 
 Creating a report consists of two primary tasks; the first task is to create the underlying data model and the next is to define the visual layout that displays the data. The report object defines the underlying data model and specifies which database tables and fields to pull data from. When the report is run, that data is displayed in a specified layout; the visual layout, which determines the content and format of a report when it is viewed and printed. 
 
-For more information about defining database tables and fields, see [Defining a Report Dataset](devenv-report-dataset.md).
+For more information about defining database tables and fields, see [Defining a Report Dataset](devenv-report-dataset.md). For more information about the Report data type, see [Report Data Type](methods-auto/report/report-data-type.md).
 
 You build the layout of a report by arranging data items and columns, and specifying the general format, such as text font and size. There are two types of report layouts; client report definition, also called RDL layouts and Word layouts. RDL layouts are defined in Visual Studio Report Designer or Microsoft SQL Server Reporting Services Report Builder. Word layouts are created using Word. Word layouts are based on a Word document that includes a custom XML part representing the report dataset. 
 
@@ -25,6 +26,7 @@ You build the layout of a report by arranging data items and columns, and specif
 > Extension objects can have a name with a maximum length of 30 characters. 
 
 ## Snippet support
+
 Typing the shortcut `treport` will create the basic layout for a report object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
 
 [!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
@@ -32,7 +34,7 @@ Typing the shortcut `treport` will create the basic layout for a report object w
 ## Report example
 The following example is a report that prints the list of customers. The report object defines a dataset of columns from the Customer table. For more information on creating a Word Layout report, see [Creating a Report](devenv-howto-report-layout.md).
 
-```
+```AL
 report 50103 "Customer List"
 {
   CaptionML=ENU='Customer List';
@@ -168,7 +170,7 @@ report 50103 "Customer List"
 
       trigger OnAfterGetRecord();
       begin
-        CALCFIELDS("Balance (LCY)");
+        CalcFields("Balance (LCY)");
         FormatAddr.FormatAddr(
           CustAddr,Name,"Name 2",'',Address,"Address 2",
           City,"Post Code",County,"Country/Region Code");
@@ -204,17 +206,17 @@ report 50103 "Customer List"
 
   var
     FormatAddr : Codeunit 365;
-     CustFilter : Text;
+    CustFilter : Text;
     CustAddr : ARRAY [8] OF Text[50];
-    Customer_ListCaptionLbl : TextConst ENU='Customer - List';
-    CurrReport_PAGENOCaptionLbl : TextConst ENU='Page';
-    Customer_Customer_Posting_GroupCaptionLbl : TextConst ENU='Customer Posting Group';
-    Customer_Customer_Disc_GroupCaptionLbl : TextConst ENU='Cust./Item Disc. Gr.';
-    Customer_Invoice_Disc_CodeCaptionLbl : TextConst ENU='Invoice Disc. Code';
-    Customer_Customer_Price_GroupCaptionLbl : TextConst ENU='Price Group Code';
-    Customer_Payment_Terms_CodeCaptionLbl : TextConst ENU='Payment Terms Code';
-    Customer_Currency_CodeCaptionLbl : TextConst ENU='Currency Code';
-    Total_LCY_CaptionLbl : TextConst ENU='Total (LCY)';
+    Customer_ListCaptionLbl : Label 'Customer - List';
+    CurrReport_PAGENOCaptionLbl : Label 'Page';
+    Customer_Customer_Posting_GroupCaptionLbl : Label 'Customer Posting Group';
+    Customer_Customer_Disc_GroupCaptionLbl : Label 'Cust./Item Disc. Gr.';
+    Customer_Invoice_Disc_CodeCaptionLbl : Label 'Invoice Disc. Code';
+    Customer_Customer_Price_GroupCaptionLbl : Label 'Price Group Code';
+    Customer_Payment_Terms_CodeCaptionLbl : Label 'Payment Terms Code';
+    Customer_Currency_CodeCaptionLbl : Label 'Currency Code';
+    Total_LCY_CaptionLbl : Label 'Total (LCY)';
 }
 
 ```

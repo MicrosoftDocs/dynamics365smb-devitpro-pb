@@ -1,8 +1,8 @@
 ---
-title: "Hyperlink Method"
+title: "System.Hyperlink Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Hyperlink Method
+# System.Hyperlink Method
+> **Version**: _Available from runtime version 1.0._
+
 Passes a URL as an argument to an Internet browser, such as Windows Internet Explorer.
 
 
@@ -21,8 +23,8 @@ Passes a URL as an argument to an Internet browser, such as Windows Internet Exp
 ```
  System.Hyperlink(URL: String)
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *URL*  
 &emsp;Type: [String](../string/string-data-type.md)  

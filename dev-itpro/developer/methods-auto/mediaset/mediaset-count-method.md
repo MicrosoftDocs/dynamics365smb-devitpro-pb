@@ -1,8 +1,8 @@
 ---
-title: "Count Method"
+title: "MediaSet.Count Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Count Method
+# MediaSet.Count Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets the number of media objects that are included in the MediaSet of a record.
 
 
@@ -21,18 +23,18 @@ Gets the number of media objects that are included in the MediaSet of a record.
 ```
 Count :=   MediaSet.Count()
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 
 ## Parameters
-*MediaSet*  
-&emsp;Type: [MediaSet](mediaset-data-type.md)  
-An instance of the [MediaSet](mediaset-data-type.md) data type.  
+*MediaSet*
+&emsp;Type: [MediaSet](mediaset-data-type.md)
+An instance of the [MediaSet](mediaset-data-type.md) data type.
 
 ## Return Value
-*Count*  
-&emsp;Type: [Integer](../integer/integer-data-type.md)  
-The number of media objects that are included in the MediaSet of a record.  
+*Count*
+&emsp;Type: [Integer](../integer/integer-data-type.md)
+The number of media objects that are included in the MediaSet of a record.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

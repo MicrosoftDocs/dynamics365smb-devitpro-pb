@@ -1,5 +1,5 @@
 ---
-title: Frequently Asked Questions | Microsoft Docs
+title: FAQ | Microsoft Docs
 description: Get answers to your questions about connecting to the intelligent cloud from an on-premises solution through Business Central.
 author: bmeier94
 
@@ -7,12 +7,11 @@ ms.reviewer: edupont
 ms.service: dynamics365-business-central
 ms.topic: article
 ms. search.keywords: cloud, edge
-ms.date: 10/01/2019
-ms.author: bmeier
-
+ms.date: 10/01/2020
+ms.author: edupont
 ---
 
-# Frequently Asked Questions about Connecting to the Intelligent Cloud from On-Premises Solutions
+# FAQ about Connecting to the Intelligent Cloud from On-Premises Solutions
 
 This section contains answers to frequently asked questions about connecting on-premises solutions to the intelligent cloud through [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online.  
 
@@ -20,25 +19,34 @@ This section contains answers to frequently asked questions about connecting on-
 
 The current version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] can connect the following products in order to provide intelligent insights:
 
-- Dynamics GP 2018 R2
-- [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises
-- Dynamics NAV 2018 CU 16
+- Dynamics GP (supported major versions)
+- [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises (current version + the two previous major versions)
 
-    Support added with the April 2019 [!INCLUDE[prodshort](../developer/includes/prodshort.md)] update. However, the 2019 release wave 2 removes support for migrating from Dynamics NAV 2018 to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online. Instead, you must upgrade to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises, and then switch to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online. For more information, see [Migrations to Business Central online](/dynamics365-release-plan/2019wave2/dynamics365-business-central/migrations-cloud) in the 2019 release wave 2 release plan.<!--
-        **NAV2018 will only be supported up to the Wave2 Release of Business Central.  This update will release approximately the beginning of Octover 2019. With the Wave2 release a customer will need to update their on premise if they want to migrate to the cloud.  **See the Wave 2 release notes for more information.-->
+  This means that if the current version is version 17, then you can connect to the intelligent cloud if you are on version 17, 16, or 15.  
+
+If you are currently on a version of Dynamics NAV, you must upgrade to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises, and then switch to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online. For more information, see [Upgrading from Dynamics NAV to Business Central online](../upgrade/upgrade-considerations.md#online).
+
 <!-- - Dynamics SL 2018 CU 1-->
+
+### System requirements
+
+To connect to the cloud through [!INCLUDE[prodshort](../developer/includes/prodshort.md)], the on-premises solution must use SQL Server 2016 or a later version, and the database must have compatibility level 130 or higher. The on-premises solution must also be one of the supported versions.  
 
 ## How is my on-premises data replicated to my [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant?
 
-Data is replicated using an Azure service called Azure Data Factory (ADF). The Azure Data Factory is a service that is always running within the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online service manager. When the intelligent cloud is configured for your on-premises solution, a data pipeline is created within the ADF service that enables data to flow from your on-premises solution to your Business Central cloud tenant. If your data source is a local SQL Server instance, you will also be asked to configure a self-hosted integration runtime (SHIR). The runtime is installed locally and enables the communication between the cloud services and your on-premise data to communicate without opening any ports or firewalls.  
+Data is replicated using an Azure service called Azure Data Factory (ADF). ADF is a service that is always running within the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online service manager. When you have connected to the intelligent cloud, a data pipeline is created in the ADF service so that data can flow from your on-premises solution to your Business Central online tenant. If your data source is a local SQL Server instance, you will also be asked to configure a self-hosted integration runtime (SHIR). The runtime is installed locally and manages the communication between the cloud services and your on-premises data without opening any ports or firewalls.  
 
 ## Are there any limits on the amount or type of data will replicate?
 
-Data replication for the initial release will have a limit of 150GB.  There are no restrictions on the type of data that can be replicated.  
+There are no restrictions on the type of data that can be replicated. In the current version of Business Central, the migration tool is by default limited to migrate databases up to 80 GB. If your database is larger than 80 GB, we recommend that you reduce the number of companies that you are migrating data for. You can specify which companies to include in the migration in the assisted setup wizard.
+
+If you want to add more companies after the first selection of companies, you can add additional companies in the **Cloud Migration Management** page in Business Central online. For more information, see [Adding a tenant to an existing runtime service, or updating companies](migration-tool.md#adding-a-tenant-to-an-existing-runtime-service-or-updating-companies).
+
+If you are looking at migrating databases larger than 80 GB, we recommend that you contact the support team and work with them to make sure that the migration is successful. 
 
 ## Is my SQL connection string required to set up the connection?
 
-Yes. The SQL connection string is passed to Azure Data Factory, where it is encrypted and delivered to your Self-Hosted Integration Runtime, and used to communication with your SQL Server instance during the data replication process. For more information, see [How do I find my SQL connection string?](#how-do-i-find-my-sql-connection-string).  
+Yes. The SQL connection string is passed to Azure Data Factory, where it is encrypted and delivered to your Self-Hosted Integration Runtime. The connection string is used to communicate with your SQL Server instance during the data replication process. For more information, see [How do I find my SQL connection string?](#how-do-i-find-my-sql-connection-string).  
 
 ## I am a hosting partner - do I need to configure the Self-Hosted Runtime Service for each tenant?
 
@@ -46,15 +54,15 @@ No, there is no limit on the number of tenants that can be added to your Self-Ho
 
 ## Will data from tables with code customizations replicate?
 
-No, only tables that are available in both your on-premises solution and your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant will replicate. Any customization would need to be made into an extension and installed on both your on-premises solution and your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant to replicate.  
+No, only tables that are available in both your on-premises solution and your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant will replicate. Any customization must be made into an extension and installed on both your on-premises solution and your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant to replicate.  
 
 ## Why are my permissions restricted in the Business Central online tenant?
 
 When you connect your on-premises solution to [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online for intelligent insights, all existing users are automatically added to the *Intelligent Cloud* user group, unless they have the SUPER permission set. In this configuration, your on-premises solution is the master where all business transactions take place. The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online environment is read-only, and the data is used to generate intelligent business insights based on your on-premises data for you. We restrict permissions to prevent users from accidentally entering transactions or updating master records only to have that information overwritten and lost when data replication takes place.  
 
-## Can I ‘turn off’ my intelligent cloud?
+## Can I 'turn off' my intelligent cloud?
 
-You can switch off your connection to the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online environment at any point. Once you disable your intelligent cloud configuration, your on-premises solution and the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant will become completely independent of one another. If you switch off the connection, and you want to use your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online environment as your primary solution to run and manage your business, you must reassign permissions to provide read/write access to the relevant users.  
+You can switch off your connection to the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online environment at any point. Once you disable your intelligent cloud configuration, your on-premises solution and the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant will become independent of one another. If you switch off the connection, and you want to use your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online environment as your primary solution to run and manage your business, you must reassign permissions to provide read/write access to the relevant users.  
 
 For more information, see [Managing Users and Permissions](/dynamics365/business-central/ui-how-users-permissions).  
 
@@ -72,7 +80,7 @@ Yes, the **Intelligent Cloud Insights** page can be hosted within your on-premis
 
 You can export the list to Excel from the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant, but since the data is read-only you cannot make changes and import it again.  
 
-## Is the data replication only one-way?
+## Is the data replication only one way?
 
 Yes, data is only replicated from the on-premises solution to your Business Central online tenant.  
 
@@ -94,23 +102,17 @@ The extension must be created in the same manner as any other extension. For dat
 
 ## How do I find my SQL connection string?
 
-A connection string to your SQL database can be found in SQL Management Studio or using Visual Studio. The user name and password defined in the connection requires a SQL Authenticated user name/password. Your connection string should look something like this:
+Find the connection string to your SQL database in SQL Management Studio or Visual Studio. The user name and password defined in the connection requires a SQL Authenticated user name/password. Your connection string will look something like this:
 
 *Server=tcp:{ServerName},1433;Initial Catalog={DatabaseName};Persist Security Info=False; User ID={UserName};Password={Password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=True;Connection Timeout=30;*
 
 ## How do I find the Integration Runtime name?
 
-The Integration Runtime name can be found in the Microsoft Integration Runtime Manager. You can find this application in your Windows system tray or by searching for the program. You will not be able to copy and paste the name. You must manually type the name.  
-
-## Can I connect my Microsoft Invoicing data to the intelligent cloud?
-
-No. Microsoft Invoicing currently does not support connecting to the intelligent cloud through [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. If your organization has an existing Invoicing tenant and want to create a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant, you must contact Support to have them delete your existing Invoicing tenant.  
-
-For more information, see [Using the same Office 365 Account in Dynamics 365 Business Central and Microsoft Invoicing](/dynamics365/business-central/about-reuse-company-invoicing).  
+Find the Integration Runtime name in the Microsoft Integration Runtime Manager, which you can find in your Windows system tray or by searching for the program. You must type the name. You will not be able to copy and paste the name.  
 
 ## See also
 
 [Connect to the intelligent cloud with Business Central](about-intelligent-edge.md)  
 [Managing your intelligent cloud environment](manage-intelligent-edge.md)  
-[Replicating on-premises data](data-replication-intelligent-cloud.md)  
+[Migrating On-Premises Data to Business Central Online](migrate-data.md)  
 [ReplicateData Property](../developer/properties/devenv-replicatedata-property.md)  

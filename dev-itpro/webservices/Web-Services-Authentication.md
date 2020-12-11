@@ -1,7 +1,8 @@
 ---
 title: "Web Services Authentication"
+description: Learn about authenticating web services in business Central
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,7 +17,7 @@ When users send a request for a web service, they are authenticated according to
   
 If your solution uses NavUserPassword or AccessControlService as the credential type, users can access data through SOAP and OData web services if they specify a password or a web service access key. You set up the user accounts in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client, based on how they will access [!INCLUDE[prodshort](../developer/includes/prodshort.md)] data. For example, if you set up a user account that will allow an external application to read [!INCLUDE[prodshort](../developer/includes/prodshort.md)] data through a web service, you can generate a web service access key and specify that key for the relevant user accounts. Then, you add the access key to the configuration of the application that consumes the web service. In contrast, when users access [!INCLUDE[prodshort](../developer/includes/prodshort.md)] data through a web service in Microsoft Excel, for example, they specify a password instead of a web service access key.  
   
-[!INCLUDE[prodshort](../developer/includes/prodshort.md)] also supports OAuth authentication on OData and SOAP endpoints. OAuth is an open standard for authorization that provides client applications with secure delegated access to server resources. OAuth enables you to extend single sign-on with Office 365 to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] web services. For more information, see [Using OAuth to Authorize Business Central Web Services \(OData and SOAP\)](authenticate-web-services-using-oauth.md).  
+[!INCLUDE[prodshort](../developer/includes/prodshort.md)] also supports OAuth authentication on OData and SOAP endpoints. OAuth is an open standard for authorization that provides client applications with secure delegated access to server resources. OAuth enables you to extend single sign-on with Microsoft 365 to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] web services. For more information, see [Using OAuth to Authorize Business Central Web Services \(OData and SOAP\)](authenticate-web-services-using-oauth.md).  
   
   
 > [!IMPORTANT] 
@@ -45,7 +46,7 @@ Follow these instructions to generate a web service access key for a user. You p
   
     The access key is automatically generated and appears in the **Web Service Access Key** field.  
   
-### Implement the Web Service Access Key  
+### Implement the Web Service Access Key
 Typically, you would create a user account strictly for web services, and then use the account's credentials, which include the user name and access key, in a web service application. For example, if you develop your own web service application, then you can design your application to programmatically pass the credentials to the web service. Some applications let you provide the connection credentials through a user interface. The steps for implementing the web service access key are done in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client.  
 
   

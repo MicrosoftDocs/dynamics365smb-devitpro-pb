@@ -2,7 +2,7 @@
 title: "Classifying Data Sensitivity"
 ms.author: bholtorf
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: bholtorf
 ---
 
 # Classifying Data Sensitivity
-To classify the fields that hold sensitive or personal data, a Microsoft partner can set the ```DataClassification``` property on fields and tables. This requires access to the database tables, either through the development environment or by running a Windows PowerShell script.  
+To classify the fields that hold sensitive or personal data, a Microsoft partner can set the `DataClassification` property on fields and tables. This requires access to the database tables, either through the development environment or by running a Windows PowerShell script.  
 
 As a customer, you can add a second level of classification by specifying sensitivity levels for the data you store in standard and custom fields. For example, this is particularly useful if you have repurposed a standard field, or added a new field on a page. The following table describes data sensitivity levels you can assign.
 

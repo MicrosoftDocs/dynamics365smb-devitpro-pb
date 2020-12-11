@@ -2,7 +2,7 @@
 title: "How to: Publish a Web Service"
 ms.custom: na
 author: jswymer
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -37,7 +37,8 @@ translation.priority.ht:
 # Publishing a Web Service
 You can set up a web service in the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] or [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)]. You must then publish the web service so that it is available to service requests over the network. Users can discover web services by pointing a browser at the computer that is running [!INCLUDE[server](../developer/includes/server.md)] and requesting a list of available services. When you publish a web service, it is immediately available over the network for authenticated users. All authorized users can access metadata for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] web services, but only users who have sufficient [!INCLUDE[prodshort](../developer/includes/prodshort.md)] permissions can access actual data.  
   
-## Creating and Publishing a Web Service  
+## Creating and Publishing a Web Service
+
  The following steps explain how to create and publish a web service.  
   
 1.  Open the client.  
@@ -80,6 +81,9 @@ You can set up a web service in the [!INCLUDE[nav_web](../developer/includes/nav
     |OData|https://*Server*:*ODataWebServicePort*/*ServerInstance*/OData/Company\('*CompanyName*'\)|https://localhost:7048/[!INCLUDE[serverinstance](../developer/includes/serverinstance.md)]/OData/Company\('CRONUS International Ltd.'\)|  
   
      The company name is case-sensitive.  
+
+     > [!TIP]
+     > If you're using the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] API, you can see a description of the endpoints at [Endpoints for the APIs for Dynamics 365 Business Central On-Premises and Online](/dynamics-nav/api-reference/v1.0/endpoints-apis-for-dynamics).
   
 2.  Review the information that is displayed in the browser. Verify that you can see the name of the web service that you have created.  
   

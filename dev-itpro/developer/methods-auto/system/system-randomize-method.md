@@ -1,8 +1,8 @@
 ---
-title: "Randomize Method"
+title: "System.Randomize Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Randomize Method
+# System.Randomize Method
+> **Version**: _Available from runtime version 1.0._
+
 Generates a set of random numbers from which the RANDOM method (Integer) will select a random number.
 
 
@@ -21,8 +23,8 @@ Generates a set of random numbers from which the RANDOM method (Integer) will se
 ```
  System.Randomize([Seed: Integer])
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *Seed*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  

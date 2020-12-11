@@ -1,7 +1,7 @@
 ---
 title: "XMLport Properties"
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,7 +25,6 @@ This topic lists properties of the XMLport object, element, and attribute.
 |[Caption Property](devenv-caption-property.md)|<ul><li>XMLport object</li></ul>|
 |[CaptionML Property](devenv-captionml-property.md)|<ul><li>XMLport object</li></ul>|
 |[ContextSensitiveHelpPage Property](devenv-contextsensitivehelppage-property.md)|<ul><li>XMLport Object</li></ul>|
-|[CurrentPath Property](devenv-currentpath-property.md)|<ul><li>XMLport object</li></ul>|
 |[DefaultFieldsValidation Property](devenv-defaultfieldsvalidation-property.md)|<ul><li>XMLport object</li></ul>|
 |[DefaultNamespace Property](devenv-defaultnamespace-property.md)|<ul><li>XMLport object</li></ul>|
 |[Direction Property](devenv-direction-property.md)|<ul><li>XMLport object</li></ul>|
@@ -35,7 +34,6 @@ This topic lists properties of the XMLport object, element, and attribute.
 |[FieldValidate Property](devenv-fieldvalidate-property.md)|<ul><li>Field elements</li><li>Field attributes</li></ul>|
 |[FileName Property](devenv-filename-property.md)|<ul><li>XMLport object</li></ul>|
 |[Format Property](devenv-format-property.md)|<ul><li>XMLport object</li></ul>|
-|[FormatEvaluate Property](devenv-format-evaluate-property.md)|<ul><li>XMLport object</li></ul>|
 |[ID Property](devenv-id-property.md)|<ul><li>XMLport object</li></ul>|
 |[InlineSchema Property](devenv-inlineschema-property.md)|<ul><li>XMLport object</li></ul>|
 |[LinkFields Property](devenv-linkfields-property.md)|<ul><li>Table elements</li></ul>|
@@ -60,7 +58,7 @@ This topic lists properties of the XMLport object, element, and attribute.
 |[SourceTable Property \(XMLports\)](devenv-sourcetable-xmlports-property.md)|<ul><li>Table elements</li></ul>|
 |[SourceTableView Property \(XMLports\)](devenv-sourcetableview-property.md)|<ul><li>Table elements</li></ul>|
 |[TableSeparator Property \(XMLports\)](devenv-tableseparator-property.md)|<ul><li>XMLport object</li></ul>|
-|[TextEncoding Property \(XMLports\)](devenv-textencoding-xmlports-property.md)|<ul><li>XMLport object</li></ul>|
+|[TextEncoding Property \(XMLports\)](devenv-textencoding-property.md)|<ul><li>XMLport object</li></ul>|
 |[TextType Property](devenv-texttype-property.md)|<ul><li>Text elements</li><li>Text attributes</li></ul>|
 |[TransactionType Property](devenv-transactiontype-property.md)|<ul><li>XMLport object</li></ul>|
 |[Unbound Property](devenv-unbound-property.md)|<ul><li>Text elements</li><li>Field elements</li></ul>|
@@ -68,7 +66,7 @@ This topic lists properties of the XMLport object, element, and attribute.
 |[UseLax Property](devenv-uselax-property.md)|<ul><li>XMLport object</li></ul>|
 |[UseRequestPage Property](devenv-userequestpage-property.md)|<ul><li>XMLport object</li></ul>|
 |[UseTemporary Property \(XMLports\)](devenv-usetemporary-xmlport-property.md)|<ul><li>Table elements</li></ul>|
-|[Width Property \(XMLport\)](devenv-width-xmlports-property.md)|<ul><li>Text elements</li><li>Table elements</li><li>Field elements</li><li>Text attributes</li><li>Field attributes</li></ul>|
+|[Width Property \(XMLport\)](devenv-width-xmlport-property.md)|<ul><li>Text elements</li><li>Table elements</li><li>Field elements</li><li>Text attributes</li><li>Field attributes</li></ul>|
 |[XmlName Property](devenv-xmlname-property.md)|<ul><li>Text elements</li><li>Table elements</li><li>Field elements</li><li>Text attributes</li><li>Field attributes</li></ul>|
 
 <!--
@@ -221,7 +219,14 @@ This topic lists properties of the XMLport object, element, and attribute.
 
 --> 
 
-## See Also  
- [Properties](devenv-properties.md)  
- [Table and Table Extension Properties](devenv-table-properties.md)  
- [Page and Page Extension Properties Overview](devenv-page-property-overview.md)
+## See Also
+
+[Properties](devenv-properties.md)  
+[Table and Table Extension Properties](devenv-table-properties.md)  
+[Page and Page Extension Properties Overview](devenv-page-property-overview.md)  
+[Codeunit Properties](devenv-codeunit-properties.md)  
+[Query Properties](devenv-query-properties.md)  
+[Report Properties](devenv-report-properties.md)  
+[Table Properties](devenv-table-properties.md)  
+[XMLPort Properties](devenv-xmlport-properties.md)  
+[Enum Properties](devenv-enum-properties.md)

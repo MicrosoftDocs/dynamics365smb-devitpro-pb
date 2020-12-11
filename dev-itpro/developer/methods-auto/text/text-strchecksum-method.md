@@ -1,8 +1,8 @@
 ---
-title: "StrCheckSum Method"
+title: "Text.StrCheckSum Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# StrCheckSum Method
+# Text.StrCheckSum Method
+> **Version**: _Available from runtime version 1.0._
+
 Calculates a checksum for a string that contains a number. If the source is empty, 0 is returned. Each char in the source and in the weight must be a numeric character 0-9, otherwise an exception is thrown. If the WeightString parameter is shorter then the source, it is padded with '1' up until the length of source. If the WeightString parameter is longer than the source, an exception is thrown.
 
 
@@ -21,8 +23,8 @@ Calculates a checksum for a string that contains a number. If the source is empt
 ```
 CheckNumber :=   Text.StrCheckSum(String: String [, WeightString: String] [, Modulus: Integer])
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *String*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -38,14 +40,15 @@ The number that you want to use in the checksum formula. The default value is 10
 
 
 ## Return Value
-*CheckNumber*  
-&emsp;Type: [Integer](../integer/integer-data-type.md)  
-The resulting checksum value.  
+*CheckNumber*
+&emsp;Type: [Integer](../integer/integer-data-type.md)
+The resulting checksum value.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Example  
+## Example 1
+
  This example shows how to use the STRCHECKSUM method to calculate a checksum.  
  
 ```  
@@ -74,7 +77,8 @@ end;
 
  **has the checksum: 0**  
 
-## Example  
+## Example 2
+
  This example shows how to use the STRCHECKSUM method to calculate a modulus 10 checksum for a bar code.  
 
  The STRCHECKSUM method can be used to calculate checksums for 13- and 8-digit European Article Number \(EAN\) and EAN-compatible bar codes such as a Universal Product Code \(UPC\) or Japanese Article Number \(JAN\).  

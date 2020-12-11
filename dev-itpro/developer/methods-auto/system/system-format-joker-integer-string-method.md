@@ -1,8 +1,8 @@
 ---
-title: "Format Method"
+title: "System.Format Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Format Method
+# System.Format Method
+> **Version**: _Available from runtime version 1.0._
+
 Formats a value into a string.
 
 
@@ -21,8 +23,8 @@ Formats a value into a string.
 ```
 String :=   System.Format(Value: Any, Length: Integer, FormatString: String)
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *Value*  
 &emsp;Type: [Any](../any/any-data-type.md)  
@@ -38,9 +40,9 @@ A literal string that defines a format as in the Format Property.
 
 
 ## Return Value
-*String*  
-&emsp;Type: [String](../string/string-data-type.md)  
-  
+*String*
+&emsp;Type: [String](../string/string-data-type.md)
+
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -79,7 +81,8 @@ The *FormatNumber* parameter specifies the format that you want to use. The basi
 > [!NOTE]  
 > You cannot use both *FormatNumber* and *FormatStr* at the same time.
 
-## Example  
+## Example 1
+
 
 ```  
 var
@@ -108,7 +111,8 @@ On a computer that has the regional format set to Danish \(Denmark\), the messag
 
 **The formatted value: > 123.456,78-\<**  
 
-## Example  
+## Example 2
+
 This example shows how to use a string to build a format.
 ```  
 var

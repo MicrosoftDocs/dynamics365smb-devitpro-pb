@@ -3,7 +3,7 @@ title: "Write, WriteText, Read, and ReadText Method Behavior"
 description: "Write, WriteText, Read, and ReadText Method Behavior for Line Endings and Zero Terminators."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,15 +14,15 @@ ms.author: solsen
 
 # Write, WriteText, Read, and ReadText Method Behavior for Line Endings and Zero Terminators 
 
-When writing to and reading from a stream object using the Write, WriteText, Read, and ReadText methods, it is important to be aware of the following behavior regarding line endings and zero byte terminators:
+When writing to and Reading from a stream object using the Write, WriteText, Read, and ReadText methods, it is important to be aware of the following behavior regarding line endings and zero byte terminators:
 
-- Write adds a 0 byte at the end of the stream; WriteText does not.
-- Read reads until a 0 byte or the specified length  of the string.
-- ReadText reads the until a zero byte, an end-of-line, the specified number of bytes, or the maximum length.  
+- `Write` adds a 0 byte at the end of the stream; `WriteText` does not.
+- `Read` Reads until a 0 byte or the specified length of the string.
+- `ReadText` Reads the until a zero byte, an end-of-line, the specified number of bytes, or the maximum length.  
 
 To help understand this, consider the following code examples. These example assume that a BLOB field called `MyBlobField` exists in a table called `MyBlogTable`.
 
-```
+```AL
 var
     myInt: Integer;
     MyRecord: Record MyBlobTable;
@@ -33,22 +33,22 @@ var
 }
 begin
     MyRecord.MyBlobField.CreateOutStream(MyOutStream);
-    MyOutStream.WRITETEXT('A');
-    MyOutStream.WRITETEXT;
-    MyOutStream.WRITETEXT('B');
-    MyOutStream.WRITETEXT;
-    MyOutStream.WRITETEXT('C');
+    MyOutStream.WriteText('A');
+    MyOutStream.WriteText;
+    MyOutStream.WriteText('B');
+    MyOutStream.WriteText;
+    MyOutStream.WriteText('C');
 
     MyRecord.MyBlobField.CreateInStream(MyInStream);
-    MyInStream.READTEXT(Result); // Reads A
+    MyInStream.ReadText(Result); // Reads A
     Message(Result);
-    MyInStream.READTEXT(Result); // Reads B
+    MyInStream.ReadText(Result); // Reads B
     Message(Result);
-    MyInStream.READTEXT(Result); // Reads C
+    MyInStream.ReadText(Result); // Reads C
     Message(Result);
 
     MyRecord.MyBlobField.CreateInStream(MyInStream);
-    MyInStream.READ(Result); // Reads A\B\C
+    MyInStream.Read(Result); // Reads A\B\C
     Message(Result);
 
     CRLF[1] := 10;
@@ -58,37 +58,37 @@ begin
     MyOutStream.WRITE('C');
 
     MyRecord.MyBlobField.CreateInStream(MyInStream);
-    MyInStream.READTEXT(Result); // Reads A
+    MyInStream.ReadText(Result); // Reads A
     Message(Result);
 
-    MyInStream.READTEXT(Result); // Reads B
+    MyInStream.ReadText(Result); // Reads B
     Message(Result);
 
-    MyInStream.READTEXT(Result); // Reads C
+    MyInStream.ReadText(Result); // Reads C
     Message(Result);
 
 
     MyRecord.MyBlobField.CreateInStream(MyInStream);
-    MyInStream.READ(Result); // Reads A + CRLF + B
+    MyInStream.Read(Result); // Reads A + CRLF + B
     Message(Result);
 
-    MyInStream.READ(Result); // Reads C
+    MyInStream.Read(Result); // Reads C
     Message(Result);
 
     Clear(MyRecord.MyBlobField);
     MyRecord.MyBlobField.CreateOutStream(MyOutStream);
-    MyOutStream.WRITETEXT('A' + CRLF + 'B');
-    MyOutStream.WRITETEXT('C');
+    MyOutStream.WriteText('A' + CRLF + 'B');
+    MyOutStream.WriteText('C');
 
     MyRecord.MyBlobField.CreateInStream(MyInStream);
-    MyInStream.READ(Result); // Reads A + CRLF + BC
+    MyInStream.Read(Result); // Reads A + CRLF + BC
     Message(Result);
 
 
     MyRecord.MyBlobField.CreateInStream(MyInStream);
-    MyInStream.READTEXT(Result); // Reads A
+    MyInStream.ReadText(Result); // Reads A
     Message(Result);
-    MyInStream.READTEXT(Result); // Reads BC
+    MyInStream.ReadText(Result); // Reads BC
     Message(Result);
 
 end;
@@ -128,22 +128,22 @@ codeunit 50111 MyCodeunit
     trigger OnRun()
     begin
         MyRecord.MyBlobField.CreateOutStream(MyOutStream);
-        MyOutStream.WRITETEXT('A');
-        MyOutStream.WRITETEXT;
-        MyOutStream.WRITETEXT('B');
-        MyOutStream.WRITETEXT;
-        MyOutStream.WRITETEXT('C');
+        MyOutStream.WriteText('A');
+        MyOutStream.WriteText;
+        MyOutStream.WriteText('B');
+        MyOutStream.WriteText;
+        MyOutStream.WriteText('C');
 
         MyRecord.MyBlobField.CreateInStream(MyInStream);
-        MyInStream.READTEXT(Result); // Reads A
+        MyInStream.ReadText(Result); // Reads A
         Message(Result);
-        MyInStream.READTEXT(Result); // Reads B
+        MyInStream.ReadText(Result); // Reads B
         Message(Result);
-        MyInStream.READTEXT(Result); // Reads C
+        MyInStream.ReadText(Result); // Reads C
         Message(Result);
 
         MyRecord.MyBlobField.CreateInStream(MyInStream);
-        MyInStream.READ(Result); // Reads A\B\C
+        MyInStream.Read(Result); // Reads A\B\C
         Message(Result);
 
         CRLF[1] := 10;
@@ -153,38 +153,38 @@ codeunit 50111 MyCodeunit
         MyOutStream.WRITE('C');
 
         MyRecord.MyBlobField.CreateInStream(MyInStream);
-        MyInStream.READTEXT(Result); // Reads A
+        MyInStream.ReadText(Result); // Reads A
         Message(Result);
 
-        MyInStream.READTEXT(Result); // Reads B
+        MyInStream.ReadText(Result); // Reads B
         Message(Result);
 
-        MyInStream.READTEXT(Result); // Reads C
+        MyInStream.ReadText(Result); // Reads C
         Message(Result);
 
 
         MyRecord.MyBlobField.CreateInStream(MyInStream);
-        MyInStream.READ(Result); // Reads A + CRLF + B
+        MyInStream.Read(Result); // Reads A + CRLF + B
         Message(Result);
 
-        MyInStream.READ(Result); // Reads C
+        MyInStream.Read(Result); // Reads C
         Message(Result);
 
         Clear(MyRecord.MyBlobField);
         MyRecord.MyBlobField.CreateOutStream(MyOutStream);
-        MyOutStream.WRITETEXT('A' + CRLF + 'B');
-        MyOutStream.WRITETEXT('C');
+        MyOutStream.WriteText('A' + CRLF + 'B');
+        MyOutStream.WriteText('C');
 
         MyRecord.MyBlobField.CreateInStream(MyInStream);
-        MyInStream.READ(Result); // Reads A + CRLF + BC
+        MyInStream.Read(Result); // Reads A + CRLF + BC
         Message(Result);
 
 
         MyRecord.MyBlobField.CreateInStream(MyInStream);
-        MyInStream.READTEXT(Result); // Reads A
+        MyInStream.ReadText(Result); // Reads A
         Message(Result);
 
-        MyInStream.READTEXT(Result); // Reads BC
+        MyInStream.ReadText(Result); // Reads BC
         Message(Result);
 
 

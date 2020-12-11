@@ -9,8 +9,8 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms. search.keywords: deprecated, Germany, local functionality
-ms.date: 10/01/2019
-ms.author: SorenGP
+ms.date: 10/01/2020
+ms.author: edupont
 
 ---
 
@@ -45,7 +45,12 @@ You can archive and delete blanket sales and purchase orders. You can view docum
 |----|----|
 |Moved| Blanket Order Archiving and Document Line Tracking features are no longer specific to Germany, so we have made them generally available in the standard product. |
 
+## Fields marked as ObsoleteState:Pending
+
+[!INCLUDE [fields-obsolete-de](../includes/fields-obsolete-de.md)]
+
 ## See Also
+
 [Upgrading to Business Central](upgrading-to-business-central.md)  
 [Upgrading the Application Code](upgrading-the-application-code.md)  
 [Deprecated Fields, and Fields Marked as Obsolete](deprecated-fields.md)  

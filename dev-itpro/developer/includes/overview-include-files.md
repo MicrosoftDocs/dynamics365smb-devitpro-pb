@@ -1,7 +1,7 @@
 ---
 title: "Include Files"
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -52,7 +52,7 @@ This table contains the INCLUDE expressions associated with the content of the i
 |`[!INCLUDE[nav_setup_md](includes/nav_setup_md.md)]`|Microsoft Dynamics NAV 2017 Setup|
 |`[!INCLUDE[nav_shell_md](includes/nav_shell_md.md)]`|Microsoft Dynamics NAV 2017 Administration Shell|
 |`[!INCLUDE[nav_tablet_md](includes/nav_tablet_md.md)]`|Microsoft Dynamics NAV Tablet client|
-|`[!INCLUDE[nav_uni_app_md](includes/nav_uni_app_md.md)]`|Microsoft Dynamics NAV Universal App|
+|`[!INCLUDE[nav_uni_app_md](includes/nav_uni_app_md.md)]`|Microsoft Dynamics NAV Mobile App|
 |`[!INCLUDE[nav_web_md](includes/nav_web_md.md)]`|Microsoft Dynamics NAV Web client|
 |`[!INCLUDE[nav_web_server_md](includes/nav_web_server_md.md)]`|Microsoft Dynamics NAV Web Server components|
 |`[!INCLUDE[nav_windows_md](includes/nav_windows_md.md)]`|Microsoft Dynamics NAV Windows client|

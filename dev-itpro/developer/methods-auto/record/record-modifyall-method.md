@@ -1,8 +1,8 @@
 ---
-title: "ModifyAll Method"
+title: "Record.ModifyAll Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# ModifyAll Method
+# Record.ModifyAll Method
+> **Version**: _Available from runtime version 1.0._
+
 Modifies a field in all records within a range that you specify.
 
 
@@ -22,9 +24,9 @@ Modifies a field in all records within a range that you specify.
  Record.ModifyAll(Field: Any, NewValue: Any [, RunTrigger: Boolean])
 ```
 ## Parameters
-*Record*  
-&emsp;Type: [Record](record-data-type.md)  
-An instance of the [Record](record-data-type.md) data type.  
+*Record*
+&emsp;Type: [Record](record-data-type.md)
+An instance of the [Record](record-data-type.md) data type.
 
 *Field*  
 &emsp;Type: [Any](../any/any-data-type.md)  

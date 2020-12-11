@@ -1,7 +1,7 @@
 ---
 title: "How to: Use Logman to Collect Event Trace Data"
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,7 +15,7 @@ This article describes how to use logman to collect event trace data for [!INCLU
 This article provides a brief introduction to using logman to collect trace event data for [!INCLUDE[server](../developer/includes/server.md)] and telemetry events. For more detailed information about logman, see [Logman](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc753820(v=ws.11)).
   
 ## Collect event trace data  
-You can collect [!INCLUDE[server](../developer/includes/server.md)] trace event data from two different trace event providers: **Microsoft-Dynamics365BusinessCentral-Server** and **Microsoft-Dynamics365BusinessCentral-Common**. **Microsoft-Dynamics365BusinessCentral-Server** is used for trace events like SQL traces, AL function traces, and session calls. **Microsoft-Dynamics365BusinessCentral-Common** is used for telemetry events. 
+You can collect [!INCLUDE[server](../developer/includes/server.md)] trace event data from two different trace event providers: **Microsoft-DynamicsNAV-Server** and **Microsoft-DynamicsNAV-Common**. **Microsoft-DynamicsNAV-Server** is used for trace events like SQL traces, AL function traces, and session calls. **Microsoft-DynamicsNAV-Common** is used for telemetry events. 
 
 Data that is collected with logman is stored in an event trace log \(.etl\) file.  
 
@@ -30,12 +30,12 @@ The following steps give you an example of how to use logman.
     For telemetry trace events:
 
     ```
-    logman create trace MyTelemetryTraceData -p Microsoft-Dynamics365BusinessCentral-Common -o c:\perflogs\MyTelemetryTraceData.etl
+    logman create trace MyTelemetryTraceData -p Microsoft-DynamicsNAV-Common -o c:\perflogs\MyTelemetryTraceData.etl
     ```
 
     For server trace events:
     ```
-    logman create trace MyServerTraceData -p Microsoft-Dynamics365BusinessCentral-Server -o c:\perflogs\MyServerTraceData.etl
+    logman create trace MyServerTraceData -p Microsoft-DynamicsNAV-Server -o c:\perflogs\MyServerTraceData.etl
     ```
     These commands will create event log files named `MyTelemetryTraceData.etl` and `MyServerTraceData.etl` in the `c:\perflogs` folder of your computer. 
 

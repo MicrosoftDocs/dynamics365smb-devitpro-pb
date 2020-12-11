@@ -3,7 +3,7 @@ title: "Extensible Enums"
 description: "Overview of the concept of extending enumerables "
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.topic: article
@@ -16,23 +16,23 @@ An enumeration type, also known as an enum in programming, is a keyword used to 
 
 To declare an `enum` in AL you must specify an ID and a name. The enumeration list consists of values and each of the values are declared with an ID and a value. The value ID is the ordinal value on the enumeration list and must be unique. The following example shows the declaration of an enum, which can be extended, and has the four values; **None**, **Bronze**, **Silver**, and **Gold**. 
 
-```
+```AL
 enum 50121 Loyalty
 {
-	Extensible = true;
-	
-	value(0; None) { }
-	value(1; Bronze) { }
-	value(2; Silver) { }
-	value(3; Gold)
-	{
-		Caption = 'Gold Customer';
-	}
+    Extensible = true;
+    
+    value(0; None) { }
+    value(1; Bronze) { }
+    value(2; Silver) { }
+    value(3; Gold)
+    {
+        Caption = 'Gold Customer';
+    }
 }
 ```
 
 > [!NOTE]  
-> Enums and enumextension objects do not have their own license range, instead they reuse the range for tables. This means that you can publish an enum with a given object ID if the license allows a table with that ID to be published. Also, the enum does not have to use the same ID as the table it is put on, just be in the allocated table object ID range.
+> While enums and enumextension objects have object IDs, these are not enforced by the license. In previous versions they reused the range for tables, and were checked against the license at deployment time, but this is no longer the case. Uniqueness validation is now enforced during installation, which will fail if an enum object ID clashes with an already installed enum. Thus, as always, it is important that you use object IDs in your assigned range. This is enforced for AppSource apps, but not for per-tenant extensions, or on-premise. The enum does not have to use the same ID as the table it is put on.
 
 > [!IMPORTANT]  
 > Only enums with the [Extensible Property](properties/devenv-extensible-property.md) set to **true** can be extended.
@@ -41,13 +41,13 @@ enum 50121 Loyalty
 
 Enums can be extended in order to add more values to the enumeration list in which case the `Extensible` property must be set to `true`. The syntax for an enum extension, which extends the **Loyalty** enum with the value **Diamond**, is shown below.
 
-```
+```AL
 enumextension 50130 LoyaltyWithDiamonds extends Loyalty
 {
-	value(50130; Diamond)
-	{
-		Caption = 'Diamond Level';
-	}
+    value(50130; Diamond)
+    {
+        Caption = 'Diamond Level';
+    }
 }
 ```
 
@@ -58,20 +58,20 @@ When referencing a defined enum from code, you use the syntax as illustrated bel
 
 If you want to define an enum as a table field type, use the syntax illustrated below:
  
-```
+```AL
 field(50100; Loyal; enum Loyalty) {}
 ```
 
 Or, as a variable:
 
-```
+```AL
 var
-	LoyaltyLevel: enum Loyalty;
+    LoyaltyLevel: enum Loyalty;
 ```
 
 In code, you address a specific enum value like in the following example:
 
-```
+```AL
 codeunit 50140 EnumUsage
 {
     procedure Foo(p: enum Loyalty)
@@ -88,7 +88,7 @@ codeunit 50140 EnumUsage
 ## Example
 The following example illustrates how to define an enum extension of `TypeEnum`, using this in a table extension `TableWithRelationExt` and displaying this as a control on a new page.
 
-```
+```AL
 enumextension 50133 TypeEnumExt extends TypeEnum
 {
     value(10; Resource) { }
@@ -153,11 +153,15 @@ Some table fields share options that are semantically identical. In those cases 
 
 ### Conversions
 Conversion to and from `enum` is more strict than for `Options` in C/SIDE. 
+
 - An enum can be assigned/compared to an enum of the same type. 
 - To be backwards compatible we support conversion to/from any `Option` for now.
+
+For information about assigment compatibility, see [AssignmentCompatibility Property](properties/devenv-assignmentcompatibility-property.md).
 
 ## See Also
 [AL Data Types](datatypes/devenv-al-data-types.md)  
 [TableRelation Property](properties/devenv-tablerelation-property.md)  
 [Extensible Property](properties/devenv-extensible-property.md)  
-[Enum Data Type](methods-auto/enum/enum-data-type.md)
+[Enum Data Type](methods-auto/enum/enum-data-type.md)  
+[AssignmentCompatibility Property](properties/devenv-assignmentcompatibility-property.md)  

@@ -1,8 +1,8 @@
 ---
-title: "Editable Method"
+title: "TestPart.Editable Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Editable Method
+# TestPart.Editable Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets the runtime value of the Editable property on a test page.
 
 
@@ -21,18 +23,18 @@ Gets the runtime value of the Editable property on a test page.
 ```
 Editable :=   TestPart.Editable()
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 
 ## Parameters
-*TestPart*  
-&emsp;Type: [TestPart](testpart-data-type.md)  
-An instance of the [TestPart](testpart-data-type.md) data type.  
+*TestPart*
+&emsp;Type: [TestPart](testpart-data-type.md)
+An instance of the [TestPart](testpart-data-type.md) data type.
 
 ## Return Value
-*Editable*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-The runtime value of the Editable property on a test page.  
+*Editable*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+The runtime value of the Editable property on a test page.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

@@ -3,7 +3,7 @@ title: "Designing Profiles"
 description: "Gives an overview of profiles and page customizations."
 author: jswymer
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,7 +26,7 @@ A profile object specifies an ID for the profile, a display name that appears in
 
 A page customization object specifies layout and action modifications to a specific page object. For example, you can move actions, fields, columns on list, or entire parts. The modifications apply only to the profile that they are used with. The page customizations will be seen by all users of the profile.
 
-To make the modifications, you use [placement keywords](devenv-pages-overview.md#using-keywords-to-place-actions-and-controls) in the `layout` and `actions` sections.
+To make the modifications, you use [placement keywords](devenv-page-ext-object.md#using-keywords-to-place-actions-and-controls) in the `layout` and `actions` sections.
 
 The same page customization objects can used in different profile objects. A profile object does not necessarily use any page customization objects, but a page customization has no effect without being associated with a profile object.
 
@@ -34,7 +34,7 @@ The same page customization objects can used in different profile objects. A pro
 
 The following example creates a profile object that uses the `Business Manager` role center page. It uses two page customization objects; one that modifies the **Business Manager Role Center** page and another that modifies the **Customer List** page. 
 
-```
+```AL
 profile TheBoss
 {
     Description = 'This is the profile for the Boss';

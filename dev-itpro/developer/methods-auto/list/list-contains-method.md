@@ -1,8 +1,8 @@
 ---
-title: "Contains Method"
-ms.author: SusanneWindfeldPedersen
+title: "List.Contains Method"
+ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Contains Method
+# List.Contains Method
+> **Version**: _Available from runtime version 1.0._
+
 Determines whether an element is in the List.
 
 
@@ -22,9 +24,9 @@ Determines whether an element is in the List.
 Result :=   List.Contains(Value: T)
 ```
 ## Parameters
-*List*  
-&emsp;Type: [List](list-data-type.md)  
-An instance of the [List](list-data-type.md) data type.  
+*List*
+&emsp;Type: [List](list-data-type.md)
+An instance of the [List](list-data-type.md) data type.
 
 *Value*  
 &emsp;Type: [T](list-data-type.md)  
@@ -32,9 +34,9 @@ The value to locate in the List.
 
 
 ## Return Value
-*Result*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the List contains the value, otherwise **false**.  
+*Result*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+**true** if the List contains the value, otherwise **false**.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

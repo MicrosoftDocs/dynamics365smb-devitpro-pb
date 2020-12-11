@@ -3,7 +3,7 @@ title: "Working with Repeater Controls"
 description: A repeater is a control used to define a list of records from the source table of a page.
 author: blrobl
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 11/13/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,9 +18,9 @@ A repeater is a control used to define a list of records from the source table o
 
 You add a `repeater()` control within the `area(Content)` control of a page, and then you nest a `field()` control for each of the fields from the table specified in the [SourceTable Property](properties/devenv-sourcetable-property.md) that you want to include. The order of the field controls determines the order in which they appear on the page.
 
-A list is a characteristic element of the layout of pages of the type **List** and **ListPart**. You define the type of a page using the [PageType Property](properties/devenv-pagetype-property.md). List pages are designed for using a single `repeater()` control, which must be defined at the beginning of the content area. If you include more than one repeater or another control like a group or grid, the page might not behave as expected. If you want to design a page that includes controls in the content area other than a repeater, then try using a **Worksheet** page type instead.
+A list is a characteristic element of the layout of pages of the type **[List](devenv-simple-list-page-example.md)** and **[ListPart](devenv-designing-listparts.md)**. You define the type of a page using the [PageType Property](properties/devenv-pagetype-property.md). List pages are designed for using a single `repeater()` control, which must be defined at the beginning of the content area. If you include more than one repeater or another control like a group or grid, the page might not behave as expected. If you want to design a page that includes controls in the content area other than a repeater, then try using a **Worksheet** page type instead. For more information, see [Pages Types and Layout](devenv-page-types-and-layouts.md).
 
-Pages of the type **API** are also designed to integrate a repeater control, but they cannot be displayed in the user interface.
+Pages of the type **[API](devenv-api-pagetype.md    )** are also designed to integrate a repeater control, but they cannot be displayed in the user interface.
 
 The following figure illustrates how a list created by a repeater is displayed in the Web Client.
 
@@ -46,7 +46,7 @@ You can also use the Tile View to display records as tiles (or bricks) instead o
 
 The following example shows how the repeater control is used to define a list page for the Customer table.
 
-```
+```AL
 page 50111 SampleCustomerList
 {
     PageType = List;
@@ -108,7 +108,7 @@ page 50111 SampleCustomerList
 
 You can use page customizations to modify the layout of a page for concrete users. The following code hides the `"Phone No."` column from the users with `Accountant` profile.
 
-```
+```AL
 profile Accountant
 {
     Description = 'Functionality for finance staff performing any AR or AP work and managerial reporting.';
@@ -130,6 +130,7 @@ pagecustomization MyCustomization customizes "Customer List"
 ```
 
 ## See Also
+
 [Pages Overview](devenv-pages-overview.md)  
 [Designing List Pages](devenv-designing-list-pages.md)  
 [Page Customization Object](devenv-page-customization-object.md)

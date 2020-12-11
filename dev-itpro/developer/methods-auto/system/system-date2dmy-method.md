@@ -1,8 +1,8 @@
 ---
-title: "Date2DMY Method"
+title: "System.Date2DMY Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Date2DMY Method
+# System.Date2DMY Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets the day, month, or year of a Date Data Type.
 
 
@@ -21,8 +23,8 @@ Gets the day, month, or year of a Date Data Type.
 ```
 Number :=   System.Date2DMY(Date: Date, Value: Integer)
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *Date*  
 &emsp;Type: [Date](../date/date-data-type.md)  
@@ -33,9 +35,9 @@ The input date.
 
 
 ## Return Value
-*Number*  
-&emsp;Type: [Integer](../integer/integer-data-type.md)  
-  
+*Number*
+&emsp;Type: [Integer](../integer/integer-data-type.md)
+
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

@@ -10,7 +10,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
-ms.date: 11/27/2019
+ms.date: 10/01/2020
 ---
 # Business Central On-Premises Security
 
@@ -65,6 +65,8 @@ The following are general articles about SQL Server security that can also help 
 
 [Backup Encryption](/sql/relational-databases/backup-restore/backup-encryption?view=sql-server-2017)
 
+[Azure Database Security Best Practices](/azure/security/fundamentals/database-best-practices)
+
 ## Network Security
 
 The following articles explain to secure client, web service, and PowerBI connections over a wide area network using HTTPS and security certificates. 
@@ -79,3 +81,4 @@ The following articles explain to secure client, web service, and PowerBI connec
 
 [Security and Protection](security-and-protection.md)  
 [Data Security](data-security.md)  
+[Security Tips for Business Users](security-users.md)  

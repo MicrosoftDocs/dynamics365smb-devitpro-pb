@@ -1,23 +1,33 @@
 ---
 title: "OrderBy Property"
-description: "Description of the OrderBy property for Business Central."
-
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 11/24/2020
+ms.reviewer: na
+ms.suite: na
+ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # OrderBy Property
-Sorts rows in the resulting dataset of a query in ascending or descending order by a column or columns.  
-  
-## Applies to  
-- [Query](../devenv-query-object.md) objects
-- [Views](../devenv-views.md)
-  
-## Property Value  
+> **Version**: _Available from runtime version 3.0._
+
+Sorts table fields in the page view in ascending or descending order.
+
+## Applies to
+-   Page View
+-   Query
+
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+
+## Property Value
+
  *Column*=**Ascending**&#124;**Descending**  
   
 - *Column* is the name of the query column as specified by its [Name Property](devenv-name-property.md).  
@@ -30,9 +40,10 @@ Sorts rows in the resulting dataset of a query in ascending or descending order 
 > Separate multiple columns with a comma.  
   
 ## Remarks
+
 In the OrderBy property, you add a column by name and set its direction to ascending or descending:
 
-```
+```AL
 view(MyFirstView)
 {
     Caption = 'This is my first view!';
@@ -49,8 +60,9 @@ To sort on multiple columns, separate each column with a comma, like `OrderBy = 
   
 The **OrderBy** property corresponds to the Order By clause in SQL select statements.  
   
-## Example  
- This following table shows the results of a query that retrieves the quantity of items in every open sales order for each customer.  
+## Example
+
+This following table shows the results of a query that retrieves the quantity of items in every open sales order for each customer.  
   
 |Customer|Quantity|  
 |--------|--------|  
@@ -60,7 +72,7 @@ The **OrderBy** property corresponds to the Order By clause in SQL select statem
 |Selangerian Ltd.|20|  
 |Selangerian Ltd.|60|  
   
- To sort the **Customer** column in ascending order and the **Quantity** column to descending order, you set the OrderBy property to `Name=Ascending,Quantity=Descending`. The following table shows the results of the query after sorting.  
+To sort the **Customer** column in ascending order and the **Quantity** column to descending order, you set the OrderBy property to `Name=Ascending,Quantity=Descending`. The following table shows the results of the query after sorting.  
   
 |Customer|Quantity|  
 |--------|--------|  
@@ -72,6 +84,11 @@ The **OrderBy** property corresponds to the Order By clause in SQL select statem
   
 The following is the Order By clause in SQL that corresponds to the OrderBy property in this example.  
   
-```  
+```AL
 OrderBy = ascending (Name,Quantity);  
 ```
+
+## See Also  
+
+[Query Properties](devenv-query-properties.md)  
+[View Properties](devenv-view-properties.md)  

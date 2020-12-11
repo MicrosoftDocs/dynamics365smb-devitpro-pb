@@ -2,7 +2,7 @@
 title: "CustomAPIName Property (Page)"
 author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,9 +13,11 @@ ms.author: jswymer
 ---
  
 # CustomAPIName Property (Page)
+> **Version**: _Available from runtime version 1.0._
+
 Sets the custom name of the API endpoint that the page is exposed in. The custom name must be unique.
 
-## Applies To  
+## Applies to  
 
 - Page object
 

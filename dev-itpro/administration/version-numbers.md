@@ -6,7 +6,7 @@ author: edupont04
 ms.topic: article
 ms.service: dynamics365-business-central
 ms.author: edupont
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ---
 # Version numbers in Business Central
 
@@ -16,15 +16,15 @@ You can use the information about which version the tenant is on to help you tro
 
 |Version  |Example      |Description                                 |
 |---------|-------------|--------------------------------------------|
-|Platform \<major>.\<minor>.\<build>.\<revision>|15.0.12345.0 | Specifies the full platform version, which includes client and server components. |
-|Application \<major>.\<minor>.\<build>.\<revision>|15.1.23456.0| Specifies the full version number for the application, including the major version number and build number. |
+|Platform \<major>.\<minor>.\<build>.\<revision>|16.0.12345.0 | Specifies the full platform version, which includes client and server components. |
+|Application \<major>.\<minor>.\<build>.\<revision>|16.1.23456.0| Specifies the full version number for the application, including the major version number and build number. |
 
 In the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], the version information is rendered slightly differently:
 
 |Version  |Example      |Description                                 |
 |---------|-------------|--------------------------------------------|
-|Platform  \<major>.\<minor>|15.1 | Specifies the major and minor version of the platform, which includes client and server components. |
-|Application \<major>.\<minor>.\<build>.\<revision>|15.1.23456.0 | Specifies the full version number for the application. |
+|Platform  \<major>.\<minor>|16.1 | Specifies the major and minor version of the platform, which includes client and server components. |
+|Application \<major>.\<minor>.\<build>.\<revision>|16.1.23456.0 | Specifies the full version number for the application. |
 
 The numbers are updated based on Microsoft's builds. In the default version of [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online, platform and application have the same major version number but different build numbers. If you perform a technical upgrade of [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises, then platform and application will have different versions.  
 
@@ -32,18 +32,19 @@ The following list describes the meaning of each of the numbers in a full versio
 
 - `major` is the major version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
 
-  - `15` is the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 release wave 2 update in October 2019
+  - `16` is the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2020 release wave 1 update in April 2020 and forward
+  - `15` is the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 release wave 2 update in October 2019 and forward
   - `14` is the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] April 2019 release
   - `13` is the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] October 2018 release
   - `12` is the April 2018 launch of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
 
-- `minor` is the monthly update number, such as 1 or 5.
+- `minor` is the monthly update number, such as 0, 1, or 5.
 - `build` is the five digit build number, such as 23456.
 - `revision` is set to 0 for the original release and can remain at 0. However, if the tenant is patched with a hotfix, then that build number can be applied.
 
-In other words, if you see a version number such as `15.1.23456.26323`, then it means major version *15*, update number *1*, build number *23456*, and hotfix number *26323*.
+In other words, if you see a version number such as `16.1.23456.26323`, then it means major version *16*, update number *1*, build number *23456*, and hotfix number *26323*.
 
-The same version numbers are used in the on-premises Docker images that you can get for development purposes, and for the on-premises cumulative updates.  
+The same version numbers are used to identify artifacts for running [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on Docker.  
 
 ## See Also
 

@@ -1,8 +1,8 @@
 ---
-title: "LockTable Method"
+title: "Record.LockTable Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# LockTable Method
+# Record.LockTable Method
+> **Version**: _Available from runtime version 1.0._
+
 Locks a table to protect it from write transactions that conflict with each other.
 
 
@@ -22,9 +24,9 @@ Locks a table to protect it from write transactions that conflict with each othe
  Record.LockTable([Wait: Boolean] [, VersionCheck: Boolean])
 ```
 ## Parameters
-*Record*  
-&emsp;Type: [Record](record-data-type.md)  
-An instance of the [Record](record-data-type.md) data type.  
+*Record*
+&emsp;Type: [Record](record-data-type.md)
+An instance of the [Record](record-data-type.md) data type.
 
 *Wait*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  

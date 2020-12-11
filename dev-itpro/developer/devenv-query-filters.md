@@ -2,7 +2,7 @@
 title: Filtering in Query Objects
 description: Specify filters in a query to restrict the data in the resulting dataset. A filter applies conditions on fields in a table associated with the query.
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,23 +14,22 @@ author: jswymer
 
 You specify filters in a query to restrict the data in the resulting dataset. A filter applies conditions on fields in a table that is associated with the query. For a field to be included in the resulting dataset, a field must meet the conditions of the filter.  
 
-## Different ways to filter a Query dataset
+## Overview
 
-You can set up filters on a field directly in the query object, or you can use the filter methods that are outlined in the following table.  
+There are different ways to filter on fields of a query. You can set up filters on a field directly in the query object or use the AL filter methods that are outlined in the following table.  
 
-||Filter|Description|  
-|------------|------------|-----------------|  
-|In query object|Filter on a Data item|You can set the [DataItemTableFilter property](properties/devenv-dataitemtablefilter-property.md) of a data item to filter on a field in the table of the data item. You can apply the filter to any field in the table, not just fields that are defined as columns in the resulting dataset. A data item filter cannot be overwritten from AL code.|  
-||Filter on a Column|You can set the [ColumnFilter property](properties/devenv-columnfilter-property.md) of a `column` control to filter on the source field of the column. A filter on a column can be overwritten by the [SETFILTER](methods-auto/record/record-setfilter-method.md) and [SETRANGE](methods-auto/record/record-setrange-method.md) methods from AL code.|  
-||Add a filter row|A filter row lets you add a filter on a field that will not be included in the resulting dataset, but can be changed from AL code. To set up a row filter add a `filter` control referencing the filed that you want to filter and then set its [ColumnFilter Property](properties/devenv-columnfilter-property.md). A filter row is like a data item filter except a filter on a filter row can be overwritten by the [SETFILTER](methods-auto/record/record-setfilter-method.md) and [SETRANGE](methods-auto/record/record-setrange-method.md) methods from AL code.|  
-|AL filter method calls|[SETFILTER method](methods-auto/query/queryinstance-setfilter-method.md)|You can call the **SETFILTER** method from AL code to set a filter on a field that is exposed through a column or filter row. The filter that is set by the **SETFILTER** method will overwrite any filter that is applied to a column or filter row on the same field by the [ColumnFilter Property](properties/devenv-columnfilter-property.md).|  
-||[SETRANGE method](methods-auto/query/queryinstance-setrange-method.md)|You can call the **SETRANGE** method from AL code to set a filter on a field that is exposed through a column or filter row. The filter that is set by the **SETRANGE** method will overwrite any filter that is applied to column or filter row on the same field.|  
+|Filter|Description|  
+|------------|-----------------|  
+|Filter directly on a data item in query object|You can set the [DataItemTableFilter property](properties/devenv-dataitemtablefilter-property.md) of a data item to filter on a field in the table of the data item. You can apply the filter to any field in the table, not just fields that are defined as columns in the resulting dataset. A data item filter can't be overwritten from AL code.<br /><br />See [Filtering on data items in a query object](#dataitem).|  
+|Filter directly on a column in a query object|You can set the [ColumnFilter property](properties/devenv-columnfilter-property.md) of a `column` control to filter on the source field of the column. A filter on a column can be overwritten by the [SETFILTER](methods-auto/record/record-setfilter-method.md) and [SETRANGE](methods-auto/record/record-setrange-method.md) methods from AL code.<br /><br />See [Filtering on columns and filter rows in query object](#columns).|  
+|Add a filter row to a query object|A filter row lets you add a filter on a field that will not be included in the resulting dataset, but can be changed from AL code. To set up a row filter add a `filter` control referencing the filed that you want to filter and then set its [ColumnFilter Property](properties/devenv-columnfilter-property.md). A filter row is like a data item filter except a filter on a filter row can be overwritten by the [SETFILTER](methods-auto/record/record-setfilter-method.md) and [SETRANGE](methods-auto/record/record-setrange-method.md) methods from AL code.<br /><br />See [Filtering on columns and filter rows in query object](#columns).|  
+|Use SETFILTER or SETRANGE method calls|You can call the [SETFILTER method](methods-auto/query/queryinstance-setfilter-method.md) method from AL code to set a filter on a field that is exposed through a column or filter row. The filter that is set by the **SETFILTER** method will overwrite any filter that is applied to a column or filter row on the same field by the [ColumnFilter Property](properties/devenv-columnfilter-property.md).<br /><br />You can call the [SETRANGE method](methods-auto/query/queryinstance-setrange-method.md) method from AL code to set a filter on a field that is exposed through a column or filter row. The filter that is set by the **SETRANGE** method will overwrite any filter that is applied to column or filter row on the same field.<br /><br />See [Filtering using SETFILTER and SETRANGE methods](#setfilter).|  
 
-## Filtering on data items in a Query object
+## <a name="dataitem"></a>Filtering on data items in a Query object
 
 To specify filters on a data item, you set the [DataItemTableFilter property](properties/devenv-dataitemtablefilter-property.md) of a data item. **DataItemTableFilter** property has the following syntax:
 
-```
+```AL
 DataItemTableFilter = String;
 ```
 
@@ -38,7 +37,7 @@ Where `String` is the filter expression.
 
 You can apply a filter on any field in a table, not just those fields that are represented by a column in the query object.
 
-A data item filter is static which means that it cannot be overwritten by the [ColumnFilter Property](properties/devenv-columnfilter-property.md), `filter` controls or by the [SETFILTER](methods-auto/record/record-setfilter-method.md) or [SETRANGE](methods-auto/record/record-setrange-method.md) methods in AL code. If one of these filter types is applied to the same field as the data item filter, then the filters are combined. In logical terms, this combination corresponds to an "AND" operation. For example, if the data item filter applies a filter on a field to include values greater than 10 \(>10\) and a column filter applies a filter on the same field to include values less than fifty \(\<50\), then the resultant filter includes values that are greater than 10 and less than fifty \(10\< value \<50\).  
+A data item filter is static which means that it can't be overwritten by the [ColumnFilter Property](properties/devenv-columnfilter-property.md), `filter` controls or by the [SETFILTER](methods-auto/record/record-setfilter-method.md) or [SETRANGE](methods-auto/record/record-setrange-method.md) methods in AL code. If one of these filter types is applied to the same field as the data item filter, then the filters are combined. In logical terms, this combination corresponds to an "AND" operation. For example, if the data item filter applies a filter on a field to include values greater than 10 \(>10\) and a column filter applies a filter on the same field to include values less than fifty \(\<50\), then the resultant filter includes values that are greater than 10 and less than fifty \(10\< value \<50\).  
 
  The [DataItemTableFilter Property](properties/devenv-dataitemtablefilter-property.md) corresponds to a WHERE clause in an SQL SELECT statement. For more information, see [Equivalent SQL SELECT Statements for Query Filters](devenv-query-filters.md#SQL).  
 
@@ -46,7 +45,7 @@ A data item filter is static which means that it cannot be overwritten by the [C
 
 The following query object links table `18 Customer` and table `37 Sales Line` to get the number of line items in each sales for customers. The **DataItemTableFilter** property is used to only include rows in which the number of line items is greater than 10.  
 
-```
+```AL
 query 50100 "Customer_Sales_Quantity"
 {
     QueryType = Normal;
@@ -78,19 +77,21 @@ query 50100 "Customer_Sales_Quantity"
 }
 ```
 
-## Filtering on columns and filter rows in Query object
+## <a name="columns"></a>Filtering on columns and filter rows in query object
 
 Unlike data item filters, filters on a column or filter row are dynamic and can be overwritten from AL code at runtime by a call to the [SETFILTER](methods-auto/record/record-setfilter-method.md) or [SETRANGE](methods-auto/record/record-setrange-method.md) method, if the method sets a filter on the same field.  
 
 You use filters on a column to filter on fields that are included in the dataset. To apply a filter on a column, you set the [ColumnFilter Property](properties/devenv-ColumnFilter-Property.md) of the column.  You can apply a filter on any column, including aggregated columns that are applied an aggregate method by the [Method Property](properties/devenv-Method-Property.md).  The **ColumnFilter** property has the following syntax:
 
-```
+```AL
 ColumnFilter = String;
 ```
 
 where `String` is the filter expression.
 
-You use a filter row when you want to filter the query on a field, but you do not want to include the field in the dataset. For example, you might want to filter a date field on a specific date, but you do not want to include the date in the dataset. To set up a filter row similar to columns of a data item. First, you add `filter` element that specifies the table field on which you want to filter, then you add the **ColumnFilter** property to set the conditions of the filter.
+### Adding a filter row
+
+Use a filter row when you want to filter the query on a field, but you don't want to include the field in the dataset. For example, you might want to filter a date field on a specific date, but you don't want to include the date in the dataset. To set up a filter row, first add a `filter` element that specifies the table field on which you want to filter, Then, add the **ColumnFilter** property to set the conditions of the filter.
 
 ### Example
 
@@ -100,7 +101,7 @@ The following query object links the `Customer` table and the `Sales Line` table
 
 - A filter on filter row for the `Location Code` field of the Sales Line table that includes only records where the location code is WHITE. 
 
-```
+```AL
 query 50100 "Customer_Sales_Quantity"
 {
     QueryType = Normal;
@@ -140,9 +141,9 @@ query 50100 "Customer_Sales_Quantity"
 
 ```
 
-In an SQL SELECT statement, filters on a column or filter row that do not apply an aggregate method, as with the `Location_Code` filter row in the example, would correspond to a WHERE clause. Filters on a columns or filter rows that do apply a totals method, as with the `Quantity` column in the example, would correspond to a HAVING clause. For more information, see [Equivalent SQL SELECT Statements for Query Filters](devenv-query-filters.md#SQL).  
+In an SQL SELECT statement, filters on a column or filter row that don't apply an aggregate method, as with the `Location_Code` filter row in the example, would correspond to a WHERE clause. Filters on a columns or filter rows that do apply a totals method, as with the `Quantity` column in the example, would correspond to a HAVING clause. For more information, see [Equivalent SQL SELECT Statements for Query Filters](devenv-query-filters.md#SQL).  
 
-## Filtering using SETFILTER and SETRANGE methods
+## <a name="setfilter"></a>Filtering using SETFILTER and SETRANGE methods
 
 AL code includes the [SETFILTER](methods-auto/record/record-setfilter-method.md) and [SETRANGE](methods-auto/record/record-setrange-method.md) methods that you can use to apply a filter on a field that is represented as a column or filter row in a query. The **SETFILTER** and **SETRANGE** methods enable you to set filters programmatically on a query at runtime. You use the **SETRANGE** method to filter on a range of values in a column or filter row. The **SETFILTER** method is more versatile than the **SETRANGE** method and enables you to filter a field based on a filter expression.  
 
@@ -154,14 +155,14 @@ You can call the **SETFILTER** and **SETRANGE** method from the AL code of the [
 
 To call the **SETFILTER** method, you use the following code.  
 
-```  
-Query.SETFILTER(Column, String)  
+```AL 
+Query.SetFilter(Column, String)  
 ```  
 
 To call the **SETRANGE** method, you use the following code.  
 
-```  
-Query.SETRANGE(Column, FromValue, ToValue)  
+```AL  
+Query.SetRange(Column, FromValue, ToValue)  
 ```
  
 where:
@@ -181,7 +182,7 @@ For more information about these methods and important behavior, see [SETFILTER 
 
 Referring to the query example in the previous sections, you can add the following code to the **OnBeforeOpen** trigger of the query object to change the filters on the `Quantity` column and the  `Location\_Code` filter row to include quantities of in the range of 10 to 50 and a location code of RED.
 
-```  
+```AL  
 trigger OnBeforeOpen()
 begin
     currQuery.SETRANGE(Qty, 10, 50);
@@ -191,7 +192,7 @@ end;
 
 ##  <a name="SQL"></a> Equivalent SQL SELECT Statements for Query Filters
 
-If you are familiar with SQL, then it is helpful to know how filtering in [!INCLUDE[prodshort](includes/prodshort.md)] queries relates to SQL statements. To specify filters in an SQL statement, you use WHERE and HAVING clauses. The WHERE clause filters on fields. The HAVING clause filters on the results that have aggregated values as applied by of a totals method.  
+If you're familiar with SQL, then it is helpful to know how filtering in [!INCLUDE[prodshort](includes/prodshort.md)] queries relates to SQL statements. To specify filters in an SQL statement, you use WHERE and HAVING clauses. The WHERE clause filters on fields. The HAVING clause filters on the results that have aggregated values as applied by of a totals method.  
 
 The following example shows the corresponding SQL SELECT statement for the previous data item filter example that links the `Customer` and `Sales Line` tables and filters on the `Quantity` field.  
 

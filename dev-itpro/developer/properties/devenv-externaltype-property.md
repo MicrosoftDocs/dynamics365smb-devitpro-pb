@@ -1,8 +1,8 @@
 ---
 title: "ExternalType Property"
-description: Specifies the name of the orginal table in the external database. 
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -10,13 +10,21 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # ExternalType Property
-Specifies the data type of the corresponding field data type in the external database table. For example, tables in Dynamics 365 Sales database.
+> **Version**: _Available from runtime version 1.0._
 
-## Applies To  
+Specifies the type of the original table field in the external database.
 
-- Fields 
+Specify this property if the original type is different from the type that you specify in the Type property. This means that you can use a different type for the table.
+
+## Applies to
+-   Table Field
+
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Property Value
 
@@ -24,17 +32,20 @@ Specifies the data type of the corresponding field data type in the external dat
 - Picklist
 
 > [!NOTE]  
-> The field values are dependent on the providers for the TableType to interpret the process. The different providers use it differently. For example, MicrosoftGraph vs CRM. 
+> The field values are dependent on the providers for the TableType to interpret the process. The different providers use it differently. For example, MicrosoftGraph vs CDS. 
 
 ## Syntax
-```
+
+```AL
 ExternalType = 'String';
 ```
 
-## Remarks  
-This property is used when you specify **CRM**, **MicrosoftGraph** or **ExternalSQL** in the **TableType** property. These tables use a different SQL Server connection than the normal tables in the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] and [!INCLUDE[navnow_md](../includes/navnow_md.md)] database.  
+## Remarks
 
-## See Also  
+This property is used when you specify **CDS**, **MicrosoftGraph** or **ExternalSQL** in the **TableType** property. These tables use a different SQL Server connection than the normal tables in the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] and [!INCLUDE[navnow_md](../includes/navnow_md.md)] database.  
+
+## See Also
+
 [TableType Property](devenv-tabletype-property.md)  
 [ExternalSchema Property](devenv-externalschema-property.md)  
 [Name Property](devenv-name-property.md)  

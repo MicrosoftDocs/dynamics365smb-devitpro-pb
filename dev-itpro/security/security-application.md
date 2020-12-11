@@ -2,7 +2,7 @@
 title: "Application Security in Business Central"
 description: Helps you understand and improve the security of your Business Central application regardless of where it is hosted.
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,19 +29,27 @@ Before users can sign-in to the [!INCLUDE[prodshort](../developer/includes/prods
 
 [Authentication and Credential Types](../administration/users-credential-types.md)
 
-[Multi-factor Authentication](multifactor-authentication.md)
- 
+[Multi-factor Authentication](multifactor-authentication.md)  
+
+The authentication method configured for Business Central Server is also used to access web services. For more information, see [Web Services Authentication](../webservices/web-services-authentication.md).
+
 ## Authorization
 
 Once authenticated, authorization determines which areas a user can access, such as the pages and reports that they can open, and the permissions that they have on associated data. For more information, see the following articles:
 
-[User Permissions in the Application](user-security.md#user-permissions-in-the-application) 
+[User Permissions in the Application](user-security.md#user-permissions-in-the-application)
+
+[Analyzing Permission Changes Trace Telemetry](../administration/telemetry-permission-changes-trace.md)
 
 [Data Security](data-security.md?tabs=database-level)
 
 <!--[Managing Users and Permissions](/dynamics365/business-central/ui-how-users-permissions) redundant -->
 
 [Removing Elements from the User Interface According to Permissions](../administration/hide-ui-elements.md)  
+
+[Analyzing Authorization Telemetry](../administration/telemetry-authorization-trace.md)
+
+[Using OAuth to Authorize Business Central Web Services ](../webservices/authenticate-web-services-using-oauth.md)
 
 ## Auditing
 
@@ -68,5 +76,6 @@ Microsoft's Security Development Lifecycle (SDL) is a software development proce
 ## See Also  
 
 [Security and Protection](security-and-protection.md)  
+[Security Tips for Business Users](security-users.md)  
 [Online Security](security-online.md)  
 [On-Premises Security](security-onpremises.md)  

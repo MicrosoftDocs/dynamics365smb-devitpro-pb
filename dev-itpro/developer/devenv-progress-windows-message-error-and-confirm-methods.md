@@ -1,7 +1,7 @@
 ---
-title: "Progress Windows, MESSAGE, ERROR, and CONFIRM Methods"
+title: "Progress Windows, Message, Error, and Confirm Methods"
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -10,97 +10,99 @@ ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 
-# Progress Windows, MESSAGE, ERROR, and CONFIRM Methods
+# Progress Windows, Message, Error, and Confirm Methods
+
 You can use several specialized methods to display messages and gather input. We recommend that you use pages to ensure that your application has a consistent user interface. However, there are situations where you may want to use the dialog methods instead of pages. The most important uses of the dialog methods are as follows:  
 
 - To display a window that indicates the progress of some processing that may take a long time.  
 
-- To stop the running program to display an error message.  
+- To stop the running program to display an error Message.  
 
 - To let the user confirm a choice before the program continues running.  
 
-You can also use the STRMENU method to create pages that present options to the user. It is much faster to use this method than to design a page which only presents a limited set of options to the user. For more information about the STRMENU method, see [STRMENU Method](methods-auto/dialog/dialog-strmenu-Method.md).  
+You can also use the StrMenu method to create pages that present options to the user. It is much faster to use this method than to design a page which only presents a limited set of options to the user. For more information about the StrMenu method, see [StrMenu Method](methods-auto/dialog/dialog-StrMenu-Method.md).  
 
 ## Best practices for user messages  
- We recommend the following guidelines for writing messages for end users:  
+
+We recommend the following guidelines for writing messages for end users:  
 
 - Write messages correctly according to the grammatical rules for your language.  
 
-- When you write a message that is similar to one in the .etx file, phrase it to be as similar to the .etx message as possible. This will make messages consistent throughout the system.  
+- Do not use backslashes to indicate line breaks in a message. Line formatting is completed automatically. The only exception is in the [Open Method \(Dialog\)](methods-auto/dialog/dialog-Open-Method.md). You must use backslashes for the message to be aligned correctly.  
 
-- Do not use backslashes to indicate line breaks in a message. Line formatting is completed automatically. The only exception is in the [OPEN Method \(Dialog\)](methods-auto/dialog/dialog-open-Method.md). You must use backslashes for the message to be aligned correctly.  
-
-- Use the [FIELDCAPTION Method \(Record\)](methods-auto/record/record-fieldcaption-Method.md) and [TABLECAPTION Method \(Record\)](methods-auto/record/record-tablecaption-Method.md) whenever possible to return names of fields and tables as strings so that the user can always recognize a term that indicates a field or table name. The only exception to this is in [OPEN Method \(Dialog\)](methods-auto/dialog/dialog-open-Method.md). In this method, you can use the field name directly. Otherwise, it can be difficult to align correctly. If you refer to a field name without using the FIELDCAPTION method, then type the field name without any single or double quotation marks.  
+- Use the [FieldCaption Method \(Record\)](methods-auto/record/record-FieldCaption-Method.md) and [TableCaption Method \(Record\)](methods-auto/record/record-TableCaption-Method.md) whenever possible to return names of fields and tables as strings so that the user can always recognize a term that indicates a field or table name. The only exception to this is in [Open Method \(Dialog\)](methods-auto/dialog/dialog-Open-Method.md). In this method, you can use the field name directly. Otherwise, it can be difficult to align correctly. If you refer to a field name without using the FieldCaption method, then type the field name without any single or double quotation marks.  
 
 - Try to write all messages on only one line. If you want to use more than one line, then start each new line after a period instead of in the middle of a sentence.  
 
-- Do not enter the text directly in the AL code. Instead, enter it as a text constant so that the message can be translated.  
+- Do not enter the text directly in the AL code. Instead, enter it as a label so that the message can be translated.  
 
 ## Creating a window to indicate progress  
+
 If you have an application that performs some processing that can take a long time to complete, then you should consider displaying a window that informs the user of the progress that is being made. It is always a good idea to inform the user that processes are still running.  
 
- A **Cancel** button is automatically added to every dialog window and gives the user the opportunity to stop the processing.  
+A **Cancel** button is automatically added to every dialog window and gives the user the opportunity to stop the processing.  
 
- In some applications, you may want to create a window in which each field is updated when the program is running. For example, the fields in the window display the count of the number of postings made. In another application, you may want to display information about the record that is currently being processed. For example, the field in the window displays the number of the account that is currently being processed.  
+In some applications, you may want to create a window in which each field is updated when the program is running. For example, the fields in the window display the count of the number of postings made. In another application, you may want to display information about the record that is currently being processed. For example, the field in the window displays the number of the account that is currently being processed.  
 
- To create this kind of progress window, you use the Dialog data type.  
- <!-- 
- For more information, see [How to: Create a Progress Window](How-to-Create-a-Progress-Window.md).  
- -->
+To create this kind of progress window, you use the Dialog data type.  
 
-## MESSAGE method  
- The [MESSAGE Method \(Dialog\)](methods-auto/dialog/dialog-MESSAGE-Method.md) displays a message in a window that remains open until the user chooses the **OK** button.  
+## Message method
 
- The MESSAGE method has the following syntax.  
+The [Message Method \(Dialog\)](methods-auto/dialog/dialog-Message-Method.md) displays a message in a window that remains open until the user chooses the **OK** button.  
 
-```  
-MESSAGE(String [, Value1, ...]);  
+The Message method has the following syntax.  
+
+```AL
+Message(String [, Value1, ...]);  
 ```  
 
- The MESSAGE method executes asynchronously, which means that MESSAGE is not executed until the method from which it was called ends or another method requests user input. The method is useful for notifying the user that some processing has been successfully completed.  
+The Message method runs asynchronously, which means that the Message is not run until the method from which it was called ends or another method requests user input. The method is useful for notifying the user that some processing has been successfully completed.  
 
- For an example of the MESSAGE method, see codeunit 83 in the [!INCLUDE[demolong](includes/demolong_md.md)]. The code in the OnRun trigger converts a quote into a sales order and then displays a message. The message is generated by the following code.  
+For an example of the Message method, see codeunit 83 in the [!INCLUDE[demolong](includes/demolong_md.md)]. The code in the OnRun trigger converts a quote into a sales order and then displays a Message. The Message is generated by the following code.  
 
+```AL
+var
+    Text001 : Label 'Quote %1 has been changed to order %2';
+
+Message(Text001,"No.",SalesHeader2."No.");  
 ```  
-MESSAGE(Text001,"No.",SalesHeader2."No.");  
-```  
-
- Text001 is a text constant that contains the following text:  
-
- **Quote %1 has been changed to order %2.**  
 
 > [!NOTE]  
->  Unlike the progress window, the MESSAGE method does not require that you first declare a variable of type Dialog. The MESSAGE method creates a window of its own.  
+> Unlike the progress window, the Message method does not require that you first declare a variable of type Dialog. The Message method creates a window of its own.  
 
-## ERROR method  
- The [ERROR Method \(Dialog\)](methods-auto/dialog/dialog-error-Method.md) is very similar to the MESSAGE method except that when the user has acknowledged the message from an ERROR method, execution ends. The ERROR method is also similar to the FIELDERROR method. For more information, see [CALCFIELDS, CALCSUMS,FIELDERROR, FIELDNAME, INIT, TESTFIELD, and VALIDATE Methods](devenv-CALCFIELDS-CALCSUMS-FIELDERROR-FIELDNAME-INIT-TESTFIELD-and-VALIDATE-Methods.md).  
+## Error method  
 
- The ERROR method has the following syntax.  
+The [Error Method \(Dialog\)](methods-auto/dialog/dialog-Error-Method.md) is very similar to the Message method except that when the user has acknowledged the Message from an Error method, execution ends. The Error method is also similar to the FieldError method. For more information, see [CalcFields, CalcSums, FieldError, FieldName, Init, TestField, and Validate Methods](devenv-CALCFIELDS-CALCSUMS-FIELDError-FIELDNAME-INIT-TESTFIELD-and-VALIDATE-Methods.md).  
 
-```  
-ERROR(String [, Value1, ...]);  
-```  
+The Error method has the following syntax.  
 
-## CONFIRM method  
- The [CONFIRM Method \(Dialog\)](methods-auto/dialog/dialog-confirm-Method.md) is used just like the MESSAGE method to display a message. However, unlike the MESSAGE method, the CONFIRM method has a required return value.  
-
- The CONFIRM method has the following syntax.  
-
-```  
-Ok := Dialog.CONFIRM(String [, Default] [, Value1] ,...);  
+```AL 
+Error(String [, Value1, ...]);  
 ```  
 
- The following example shows how to use the CONFIRM method.  
+## Confirm method  
 
+The [Confirm Method \(Dialog\)](methods-auto/dialog/dialog-Confirm-Method.md) is used just like the Message method to display a Message. However, unlike the Message method, the Confirm method has a required return value.  
+
+The Confirm method has the following syntax.  
+
+```AL  
+Ok := Dialog.Confirm(String [, Default] [, Value1] ,...);  
 ```  
-if CONFIRM('Do you want to post the journal lines and print report %1?',FALSE, ReportID) then  
-   MESSAGE('Posting')  
-else  
-   MESSAGE('No Posting');  
-   EXIT;  
+
+The following example shows how to use the Confirm method.  
+
+```AL  
+if Confirm('Do you want to post the journal lines and print report %1?', False, ReportID) then
+    Message('Posting')
+else begin
+    Message('No Posting');
+    exit;
+end;
 ```  
 
- The FALSE parameter in the CONFIRM statement means that No is the default.
+The False parameter in the Confirm statement means that No is the default.
 
- ## See Also  
-[Dialog Data Type](methods-auto/dialog/dialog-data-type.md) 
+## See Also  
+
+[Dialog Data Type](methods-auto/dialog/dialog-data-type.md)  

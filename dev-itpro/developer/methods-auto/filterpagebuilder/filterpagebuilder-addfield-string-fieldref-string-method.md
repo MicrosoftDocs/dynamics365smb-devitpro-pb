@@ -1,8 +1,8 @@
 ---
-title: "AddField Method"
+title: "FilterPageBuilder.AddField Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# AddField Method
+# FilterPageBuilder.AddField Method
+> **Version**: _Available from runtime version 2.0._
+
 Adds a table field to the filter control for a table on filter page.
 
 
@@ -22,9 +24,9 @@ Adds a table field to the filter control for a table on filter page.
 [Ok := ]  FilterPageBuilder.AddField(Name: String, Field: FieldRef [, Filter: String])
 ```
 ## Parameters
-*FilterPageBuilder*  
-&emsp;Type: [FilterPageBuilder](filterpagebuilder-data-type.md)  
-An instance of the [FilterPageBuilder](filterpagebuilder-data-type.md) data type.  
+*FilterPageBuilder*
+&emsp;Type: [FilterPageBuilder](filterpagebuilder-data-type.md)
+An instance of the [FilterPageBuilder](filterpagebuilder-data-type.md) data type.
 
 *Name*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -40,9 +42,9 @@ A default filter on the field that is specified by the Field parameter.
 
 
 ## Return Value
-*Ok*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the field was added to the field list for the specified filter control, otherwise **false**.If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+*Ok*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+**true** if the field was added to the field list for the specified filter control, otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

@@ -3,7 +3,7 @@ author: solsen
 title: "Testing the Advanced Sample Extension"
 description: "Includes test code for the advanced example extension."
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,24 +13,23 @@ ms.author: solsen
 ---
 
 # Testing the Advanced Sample Extension
-It is required to submit tests with your extension in order to pass validation. This walkthrough builds on the advanced sample extension which you can read about here [Building an Advanced Sample Extension](devenv-extension-advanced-example.md). If you are new to building extensions, we suggest that you get familiar with [Building your first sample extension that uses new objects and extension objects](devenv-extension-example.md). This walkthrough goes through how you develop the test for the sample Customer Rewards extension.
+It is required to submit tests with your extension in order to pass validation. This walkthrough builds on the advanced sample extension which you can read about here [Building an Advanced Sample Extension](devenv-extension-advanced-example.md). If you are new to building extensions, we suggest that you get familiar with [Building your first sample extension that uses new objects and extension objects](devenv-extension-example.md). This walkthrough goes through how you develop the test for the sample CustomerRewards extension.
 
 For information about submitting your app to AppSource, see [Checklist for Submitting Your App](devenv-checklist-submission.md).
 
-
 ## Prerequisites
 To complete this walkthrough, you will need:
-- Dynamics 365 Business Central Docker container-based development environment.
-For more information, see [Get started with the Container Sandbox Development Environment](devenv-get-started-container-sandbox.md) and [Running a Container-Based Development Environment](devenv-running-container-development.md).    
-- [Visual Studio Code](https://code.visualstudio.com/Download).   
-- The [[!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al) for Visual Studio Code.
+- Dynamics 365 Business Central Docker container-based development environment
+For more information, see [Get started with the Container Sandbox Development Environment](devenv-get-started-container-sandbox.md) and [Running a Container-Based Development Environment](devenv-running-container-development.md)    
+- [Visual Studio Code](https://code.visualstudio.com/Download)   
+- The [[!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al) for Visual Studio Code
 
 ## Identifying the areas of the extension that need to be tested 
 Before writing tests for your extension, you need to identify all the areas of the extension that need to be tested.  
 
 - Ensure that your tests cover all the setup and usage scenario steps found in the [user scenario document](../compliance/apptest-userscenario.md). This includes Assisted Setup, pages, fields, actions, events, and other controls and objects used by your extension.  
-- The CRONUS demo company will be used. If your app requires setup within the core product or any additional data, remember to include that in your tests. 
-- As part of your tests, remember to include tests that verify that the extension works as expected for **a user that does not have SUPER permissions**.  
+- The CRONUS demo company will be used for the purpose of this walkthrough. If your app requires setup within the core product or any additional data, remember to include that in your tests. 
+- As part of your tests, remember to include tests that verify that the extension works as expected for **a user that does not have SUPER permissions**. For more information, see [Special Permission Sets](../administration/administration-special-permission-sets.md).
 - Your tests **should not make any requests to an external service**. Mock your external calls to prevent this from happening. 
 
 In the sample test we will consider the following: 
@@ -52,18 +51,17 @@ In the sample test we will consider the following:
 - Each test will also verify that the extension works for a user that does not have SUPER permissions. 
 
 ## Writing the tests 
-We will first create a new project (CustomerRewardsTest) for the tests. You are required to separate the extension and the tests into separate projects.  
+We will first create a new project (CustomerRewardsTest) for the tests. You are required to separate the CustomerRewards extension and the tests into separate projects.  
 
 Before we can start writing the tests for the extension, we need to do the following: 
 
 + Specify the dependencies between the extension (CustomerRewards) and the test (CustomerRewardsTest) projects.  
 Our CustomerRewardsTest project will be referencing objects from the CustomerRewards project and so we will need to specify this in the `dependencies` setting in the CustomerRewardsTest project's app.json file. The `dependencies` setting takes a list of dependencies, where each dependency specifies the `appId`, `name`, `publisher`, and `version` of the base project/package that the current project/package will depend on.  
 
+> [!NOTE]  
+> Another prerequisite is to update the app.json with a dependency to the test toolkit.
 
-> [!NOTE]   
->  Another prerequisite is to update the app.json with a dependency to the test toolkit.
-
- ```
+```json
  {
   ...  
   "dependencies": [ 
@@ -93,14 +91,20 @@ We will be using the Application Test Toolkit to automate and run the tests that
 - Application objects for running application tests such as the **Test Tool** page. 
 
 In order to install the Application Test Toolkit:
-1. Open the Nav Container Helper prompt found on the Desktop. You will see a list of functions that you can run on the container.
-2. Run the `Import-TestToolkitToNavContainer` function with `-containerName` parameter to import the test toolkit into the application database. 
+1. Open the BCContainerHelper prompt found on the Desktop. You will see a list of functions that you can run on the container.
+2. Run the `Import-TestToolkitToBCContainer` function with `-containerName` parameter to import the test toolkit into the application database. 
 
 ```
-Import-TestToolkitToNavContainer -containerName <name-of-container> 
+Import-TestToolkitToBCContainer -containerName <name-of-container> 
 ```
 
-Alternatively, if you use the `New-NavContainer` function from the NavContainerHelper PowerShell module to create your containers on Docker, you can add the `-includeTestToolkit` flag. This will install the Application Test Toolkit during the creation of your container. 
+Alternatively, if you use the `New-BCContainer` function from the BCContainerHelper PowerShell module to create your containers on Docker, you can add the `-includeTestToolkit` flag. This will install the Application Test Toolkit during the creation of your container. 
+
+Without further configuration, the Import-TestToolkitToBCContainer and New-BCContainer with -includeTestToolkit will install the framework, the libraries, and all base application tests. Both the Import-TestToolkitToBCContainer and New-BCContainer cmdlets support two additional parameters, which limits the number of apps installed:
+
+- `-includeTestFrameworkOnly` installs the Test Framework only. This option includes the Test Runner and low-level functions such as *Any* and *Assert*.
+
+- `-includeTestLibrariesOnly` installs the Test Framework and the Test Libraries only. Beside the Test Framework, this option includes functionality that is shared between base application tests.
 
 ## Describing your tests 
 To help you design the relevant tests for your functionality, you can write scenarios that outline what you want to test, and you can write test criteria in the GIVEN-WHEN-THEN format. By adding comments based on feature, scenario, and GIVEN-WHEN-THEN, you add structure to your test code and make tests readable. 
@@ -123,7 +127,7 @@ The following sections provide an overview of the tags that we recommend you to 
 
 `ScenarioID` links the test to a work item for the functionality. For example, if you use Visual Studio Online or Team Foundation Server, `[SCENARIO 12345]` represents a work item with the ID 12345. 
 
-TestDescription represents a short description of the purpose of the test, such as  *Annie can apply a deferral template to a purchase order*. 
+TestDescription represents a short description of the purpose of the test, such as *Annie can apply a deferral template to a purchase order*. 
 
 ### GIVEN-WHEN-THEN Tags 
 
@@ -138,9 +142,10 @@ The `GIVEN-WHEN-THEN` tags provide a framework for the specific test criteria.
 We can now begin writing the tests for the extension. 
 
 ### MockCustomerRewardsExtMgt codeunit object 
+
 The 50102 **MockCustomerRewardsExtMgt** codeunit contains all the code that mocks the process of validating the activation code for Customer Rewards. Because we cannot make requests to external services in the tests, we define a subscriber method **MockOnGetActivationCodeStatusFromServerSubscriber** for handling the **OnGetActivationCodeStatusFromServer** event when it is raised in the **Customer Rewards Ext. Mgt.** codeunit. The **EventSubscriberInstance** property for this codeunit is set to **Manual** so that we can control when the subscriber function is called. We want the subscriber method to be called only during our tests. We also define a Setup procedure that modifies the **Customer Rewards Ext. Mgt. Codeunit ID** in the **Customer Rewards Mgt. Setup** table so that the actual **OnGetActivationCodeStatusFromServerSubscriber** will not handle **OnGetActivationCodeStatusFromServer** event when it is raised. 
 
-```
+```AL
 codeunit 50102 MockCustomerRewardsExtMgt 
 
 { 
@@ -286,7 +291,7 @@ Finally, to verify that the customer got the correct reward points and level, we
 
 There are many more areas that we look at in the sample test. See the full codeunit below for the rest of the tests. 
 
-```
+```AL
 codeunit 50103 "Customer Rewards Test" 
 
 { 
@@ -300,12 +305,12 @@ codeunit 50103 "Customer Rewards Test"
         LibraryLowerPermissions: Codeunit "Library - Lower Permissions"; 
         LibrarySales: Codeunit "Library - Sales"; 
         MockCustomerRewardsExtMgt: Codeunit MockCustomerRewardsExtMgt; 
-        ActivatedTxt: TextConst ENU = 'Customer Rewards should be activated'; 
-        NotActivatedTxt: TextConst ENU = 'Customer Rewards should not be activated'; 
-        BronzeLevelTxt: TextConst ENU = 'BRONZE'; 
-        SilverLevelTxt: TextConst ENU = 'SILVER'; 
-        GoldLevelTxt: TextConst ENU = 'GOLD'; 
-        NoLevelTxt: TextConst ENU = 'NONE'; 
+        ActivatedTxt: Label 'Customer Rewards should be activated'; 
+        NotActivatedTxt: Label 'Customer Rewards should not be activated'; 
+        BronzeLevelTxt: Label 'BRONZE'; 
+        SilverLevelTxt: Label 'SILVER'; 
+        GoldLevelTxt: Label 'GOLD'; 
+        NoLevelTxt: Label 'NONE'; 
 
     [Test] 
 
@@ -960,7 +965,7 @@ You can now see all the test methods from your test codeunits.
 ## Failing Tests 
 Let us look at what to do if you have a failing test. To create a failing test, we will modify the **SetDefaultCustomerRewardsExtMgtCodeunit** method in codeunit 50100 **Customer Rewards Install Logic** to the following: 
 
-``` 
+```AL
 procedure SetDefaultCustomerRewardsExtMgtCodeunit(); 
     var 
         CustomerRewardsExtMgtSetup: Record "Customer Rewards Mgt. Setup"; 

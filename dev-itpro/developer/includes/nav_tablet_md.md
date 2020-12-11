@@ -1,1 +1,1 @@
-Business Central Tablet client
+Business Central tablet client

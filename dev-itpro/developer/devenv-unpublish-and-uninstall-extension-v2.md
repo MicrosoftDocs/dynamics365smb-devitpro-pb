@@ -3,7 +3,7 @@ title: "How to Unpublish and Uninstall an Extension v2.0"
 description: "Description of the process of upublishing and uinstalling an extension"
 author: jswymer
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -130,4 +130,5 @@ You unpublish an extension on a [!INCLUDE[d365fin_server_md](includes/d365fin_se
 
 ## See Also  
 [Publishing and Installing an Extension](devenv-how-publish-and-install-an-extension-v2.md)  
-[Developing Extensions](devenv-dev-overview.md)
+[Developing Extensions](devenv-dev-overview.md)  
+[Analyzing Extension Lifecycle Telemetry](../administration/telemetry-extension-lifecycle-trace.md)  

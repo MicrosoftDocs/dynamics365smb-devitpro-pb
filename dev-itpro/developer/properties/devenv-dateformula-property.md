@@ -1,30 +1,36 @@
 ---
 title: "DateFormula Property"
-author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: d6bda43c-b5b4-4243-ac85-4b55cd2fe202
-caps.latest.revision: 9
+author: SusanneWindfeldPedersen
 ---
-
- 
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # DateFormula Property
-Sets a date formula used to verify that the date the user enters is correct.  
+> **Version**: _Available from runtime version 1.0._
 
-## Applies To  
+Sets a date formula used to verify that the date the user enters is correct.
 
--   Table Fields  
+## Applies to
+-   Table Field
+-   Page Field
 
--   Page Fields  
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- The following table shows the syntax that is used to create the date formula.  
+
+> [!NOTE]  
+>  We recommend that you do not use this property. Use the [DateFormula Data Type](../methods-auto/dateformula/dateformula-data-type.md) instead.  
+
+The following table shows the syntax that is used to create the date formula.  
 
 |Syntax|Description|  
 |------------|---------------------------------------|  
@@ -36,12 +42,9 @@ Sets a date formula used to verify that the date the user enters is correct.
 |**CW+1W**|Current week plus one week|  
 |**D15**|On the 15th of each month|  
 
- In [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)], weeks begin on Monday and end on Sunday.  
+In [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)], weeks begin on Monday and end on Sunday.  
 
- For fields, this property only applies to text fields. In earlier versions of [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)], the property also applied to code fields, but this has been deprecated.
-
-> [!NOTE]  
->  We recommend that you do not use this property. Use the [DateFormula Data Type](../methods-auto/dateformula/dateformula-data-type.md) instead.  
+For fields, this property only applies to text fields. In earlier versions of [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)], the property also applied to code fields, but this has been deprecated.
 
 ## See Also  
  [DateFormula Data Type](../methods-auto/dateformula/dateformula-data-type.md)  

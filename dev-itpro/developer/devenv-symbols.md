@@ -3,7 +3,7 @@ title: "Symbol Files"
 description: "Description of the symbols file."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

@@ -1,26 +1,32 @@
 ---
 title: "FileName Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 12/04/2019
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: jswymer
+author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # FileName Property
-[!INCLUDE[windows_client_only](../includes/windows_client_only.md)]
+> **Version**: _Available from runtime version 1.0._
 
-Sets the name of the external file to read data from or write data to an XMLport.  
-  
-## Applies To  
-  
--  XMLports  
+Sets the name of the external file to read data from or write data to an XmlPort.
+
+## Applies to
+-   Xml Port
+
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Syntax
-```
+
+```AL
 FileName = 'File.txt';
 ```
  
@@ -36,6 +42,7 @@ If **FileName** is blank, then a default request options page tab will be create
 > In the [!INCLUDE[webclient](../includes/webclient.md)], because web browser restrictions, the file name cannot be set. Users will have to manually select the file when the XMLport is run.
   
 ## See Also  
- [IMPORT Method (XMLport)](../methods-auto/xmlport/xmlportinstance-import-method.md)   
- [FILENAME Method (XMLport)](../methods-auto/xmlport/xmlportinstance-filename-method.md)   
- [UseRequestPage Property](devenv-userequestpage-property.md)
+
+[IMPORT Method (XMLport)](../methods-auto/xmlport/xmlportinstance-import-method.md)   
+[FILENAME Method (XMLport)](../methods-auto/xmlport/xmlportinstance-filename-method.md)   
+[UseRequestPage Property](devenv-userequestpage-property.md)

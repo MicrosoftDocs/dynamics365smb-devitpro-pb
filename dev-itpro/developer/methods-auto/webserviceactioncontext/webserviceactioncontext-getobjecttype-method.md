@@ -1,8 +1,8 @@
 ---
-title: "GetObjectType Method"
+title: "WebServiceActionContext.GetObjectType Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# GetObjectType Method
+# WebServiceActionContext.GetObjectType Method
+> **Version**: _Available from runtime version 2.0._
+
 Gets the object type.
 
 
@@ -23,14 +25,14 @@ ObjectType :=   WebServiceActionContext.GetObjectType()
 ```
 
 ## Parameters
-*WebServiceActionContext*  
-&emsp;Type: [WebServiceActionContext](webserviceactioncontext-data-type.md)  
-An instance of the [WebServiceActionContext](webserviceactioncontext-data-type.md) data type.  
+*WebServiceActionContext*
+&emsp;Type: [WebServiceActionContext](webserviceactioncontext-data-type.md)
+An instance of the [WebServiceActionContext](webserviceactioncontext-data-type.md) data type.
 
 ## Return Value
-*ObjectType*  
-&emsp;Type: [ObjectType](../objecttype/objecttype-option.md)  
-The object type.  
+*ObjectType*
+&emsp;Type: [ObjectType](../objecttype/objecttype-option.md)
+The object type.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

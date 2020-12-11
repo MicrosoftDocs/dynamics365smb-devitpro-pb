@@ -1,8 +1,8 @@
 ---
-title: "WindowsLanguage Method"
+title: "System.WindowsLanguage Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# WindowsLanguage Method
+# System.WindowsLanguage Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets the current Windows language setting.
 
 
@@ -21,16 +23,16 @@ Gets the current Windows language setting.
 ```
 LanguageID :=   System.WindowsLanguage()
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 
 
 ## Return Value
-*LanguageID*  
-&emsp;Type: [Integer](../integer/integer-data-type.md)  
-  
+*LanguageID*
+&emsp;Type: [Integer](../integer/integer-data-type.md)
+
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

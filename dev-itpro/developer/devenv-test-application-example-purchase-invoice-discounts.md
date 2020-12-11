@@ -1,12 +1,12 @@
 ---
 title: "Application Testing Example: Testing Purchase Invoice Discounts"
 ms.custom: na
-ms.date: 08/26/2019
+ms.date: 10/01/2020
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics365-business-central"
+ms.service: "dynamics365-business-central"
 author: blrobl
 ---
 
@@ -58,7 +58,7 @@ Tne next task is to create a helper method that generates data for the test. The
 
 ## Code
 
-```
+```AL
 codeunit 50111 "ERM Vendor Discount"
 {
     // Specifies the codeunit to be a test codeunit
@@ -94,8 +94,8 @@ codeunit 50111 "ERM Vendor Discount"
         // [WHEN] Calculate invoice discount for purchase document (line)
         PurchCalcDisc.RUN(PurchLine);
         // [THEN] "Inv. Discount Amount" = Amount "A" * discount "D" / 100
-        PurchLine.FIND;
-        Assert.AreEqual(ROUND(PurchLine."Line Amount" * DiscountPct / 100), PurchLine."Inv. Discount Amount", PurchInvDiscErr);
+        PurchLine.Find;
+        Assert.AreEqual(Round(PurchLine."Line Amount" * DiscountPct / 100), PurchLine."Inv. Discount Amount", PurchInvDiscErr);
     end;
 
     // Creates the test helper method
@@ -110,16 +110,16 @@ codeunit 50111 "ERM Vendor Discount"
         // Create vendor
         VendorNo := LibraryPurchase.CreateVendorNo;
         // Create vendor invoice discount
-        VendorInvoiceDisc.INIT;
+        VendorInvoiceDisc.Init;
         VendorInvoiceDisc.Code := VendorNo;
-        VendorInvoiceDisc.VALIDATE("Currency Code", '');
-        VendorInvoiceDisc.VALIDATE("Minimum Amount", MinAmount);
-        VendorInvoiceDisc.VALIDATE("Discount %", DiscountPct);
-        VendorInvoiceDisc.INSERT(TRUE);
+        VendorInvoiceDisc.Valicate("Currency Code", '');
+        VendorInvoiceDisc.Validate("Minimum Amount", MinAmount);
+        VendorInvoiceDisc.Validate("Discount %", DiscountPct);
+        VendorInvoiceDisc.Insert(TRUE);
         // Create purchase line
         LibraryPurchase.CreatePurchaseDocumentWithItem(PurchaseHeader, Purchline, DocumentType, VendorNo, '', 1, '', 0D);
-        PurchLine.VALIDATE("Direct Unit Cost", DocAmount);
-        PurchLine.MODIFY(TRUE);
+        PurchLine.Validate("Direct Unit Cost", DocAmount);
+        PurchLine.Modify(TRUE);
     end;
 
     var
@@ -127,7 +127,7 @@ codeunit 50111 "ERM Vendor Discount"
         LibraryPurchase: Codeunit "Library - Purchase";
         Assert: Codeunit Assert;
         myInt: Integer;
-        PurchInvDiscErr: TextConst ENU = 'The Purchase Invoice Discount Amount was not calculated correctly.';
+        PurchInvDiscErr: Label 'The Purchase Invoice Discount Amount was not calculated correctly.';
 
 }
 ```

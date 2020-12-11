@@ -3,7 +3,7 @@ title: Adding Menus to the Navigation Area
 description: "Enable users to quickly navigate and perform actions by adding the menu items to the navigation area."
 author: jswymer
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,7 +17,10 @@ The navigation area appears at the top of the [!INCLUDE[d365fin_long_md](include
 
 ## Adding to the navigation menu
 
-The top-level navigation area is referred to as the navigation menu. The navigation menu contains one or more root menu items that expand to display a set of links to pages, and other objects like reports, XmlPorts, and codeunits. These links are defined by `action()` controls. You can also group `action()` controls in sub-menus. This enables you to create a logical hierarchy that matches the needs of the user role. The pages targeted by the links in the navigation menu will open in the content area of the Role Center.
+The top-level navigation area is referred to as the navigation menu. The navigation menu contains one or more root menu items that expand to display a set of links to pages, and other objects like reports, XMLPorts, and codeunits. These links are defined by `action()` controls. You can also group `action()` controls in sub-menus. This enables you to create a logical hierarchy that matches the needs of the user role. The pages targeted by the links in the navigation menu will open in the content area of the Role Center.
+
+> [!NOTE]
+> The [!INCLUDE[nav_windows_md](includes/nav_windows_md.md)] doesn't support sub-menus in the navigation menu.
 
 You define the navigation menu by using an `area(Sections)` control in the page code.
 
@@ -29,7 +32,7 @@ The top-level navigation should provide access to relevant entity lists for the 
 
 The example below adds the root menu item called `My Customers` to the navigation menu of the **Sales Order Processor** Role Center. The `My Customers` menu item  contains two actions, the `Customer Bank Account List` and `Customer Ledger Entries` actions, which open corresponding page objects. The `My Customers` menu item also includes a group that contains two other actions, which open sales-related documents.
 
-```
+```AL
 pageextension 50120 ExtendNavigationArea extends "Order Processor Role Center"
 {
 
@@ -81,7 +84,7 @@ You define the navigation bar by using an `area(Embedding)` control in the page 
 ### Example
 The following code adds a new link to the navigation bar by defining this area with an `area(Embedding)` control in the page code. The object targeted in this case is the `Sales Cycles` page and it will appear as the last one. 
 
-```
+```AL
 ...
 addlast(Embedding)
 {
@@ -103,7 +106,7 @@ The first action area that appears at the top of the Role Center page is `area(C
 
 ### Example
 
-```
+```AL
 ...
 addlast(Creation)
 {
@@ -120,7 +123,7 @@ The example below shows how you can use the group control to organize similar ac
 
 ### Example
 
-```
+```AL
 ...
 addlast(Processing)
 {
@@ -145,7 +148,7 @@ The actions in the `area(Reporting)` control will appear last in the action area
 
 ### Example
 
-```
+```AL
 ...
 addlast(Reporting)
 {

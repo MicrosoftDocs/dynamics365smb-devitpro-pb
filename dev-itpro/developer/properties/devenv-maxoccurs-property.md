@@ -1,27 +1,40 @@
 ---
 title: "MaxOccurs Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 10ccbe1e-73e2-472d-9f9b-5202d966a357
-caps.latest.revision: 8
 author: SusanneWindfeldPedersen
 ---
-
- 
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # MaxOccurs Property
-Sets a value that indicates the maximum number of times an element can occur.  
-  
-## Applies To  
- XMLports  
-  
-## Property Value  
-  
+> **Version**: _Available from runtime version 1.0._
+
+Sets a value that indicates the maximum number of times an element can occur.
+
+## Applies to
+-   Xml Port Text Element
+-   Xml Port Table Element
+-   Xml Port Field Element
+
+## Property Value
+
+|Value|Description|
+|-----------|---------------------------------------|
+|**Once**|The element can occur at most once.|
+|**Unbounded**|There is no maximum number of occurences.|
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+
+The default values are the following:
+
 |**SourceType**|**Default**|  
 |--------------|-----------|  
 |**Table**|Unbounded|  
@@ -29,20 +42,23 @@ Sets a value that indicates the maximum number of times an element can occur.
 |**Field**|Once|  
 
 ## Syntax
-```
+
+```AL
 MaxOccurs = Once;
 ```
  
-## Remarks  
- The default value of the **MaxOccurs** property varies depending on the type of this element.  
+## Remarks
+
+The default value of the **MaxOccurs** property varies depending on the type of this element.  
   
- The minimum number of times an element can appear is determined by the value of the [MinOccurs Property](devenv-minoccurs-property.md).  
+The minimum number of times an element can appear is determined by the value of the [MinOccurs Property](devenv-minoccurs-property.md).  
   
- The **MinOccurs** and **MaxOccurs** properties conform to the standard occurrence constraints that are used when defining XML schemas.  
+The **MinOccurs** and **MaxOccurs** properties conform to the standard occurrence constraints that are used when defining XML schemas.  
   
- The minimum number can be either 1 or 0.  
+The minimum number can be either 1 or 0.  
   
- The maximum number can be either 1 or infinite.  
+The maximum number can be either 1 or infinite.  
   
 ## See Also  
- [Properties](devenv-properties.md)
+
+[Properties](devenv-properties.md)

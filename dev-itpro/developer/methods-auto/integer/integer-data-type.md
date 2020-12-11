@@ -2,7 +2,7 @@
 title: "Integer Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Integer Data Type
+> **Version**: _Available from runtime version 1.0._
+
 Stores whole numbers with values that range from -2,147,483,647 to 2,147,483,647.
 
 
@@ -34,7 +36,8 @@ IntegerVar := IntegerVar - 1;
  If you try to indirectly assign a value that is smaller than -2,147,483,648 or larger than 2,147,483,647, then you get a run-time error.  
 
 
-## Example  
+## Example 1
+
  The following are examples of integer values.  
   
 ```  
@@ -42,7 +45,8 @@ IntegerVar := IntegerVar - 1;
 -3425  
 ```  
   
-## Example  
+## Example 2
+
  The following example is a decimal and not an integer.  
   
 ```  

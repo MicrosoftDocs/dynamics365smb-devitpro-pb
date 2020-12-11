@@ -2,7 +2,7 @@
 title: "Page Page 2500 Errors "
 description: "Explains how to resolve the compilation errors that you get for Page 2500 when converting a database from Dynamics NAV to Business Central."
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

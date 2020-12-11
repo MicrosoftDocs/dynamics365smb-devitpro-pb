@@ -1,8 +1,8 @@
 ---
-title: "WriteTo Method"
+title: "JsonArray.WriteTo Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# WriteTo Method
+# JsonArray.WriteTo Method
+> **Version**: _Available from runtime version 1.0._
+
 Serializes and writes the JSON data of the JsonArray to a given OutStream object.
 
 
@@ -22,9 +24,9 @@ Serializes and writes the JSON data of the JsonArray to a given OutStream object
 [Ok := ]  JsonArray.WriteTo(OutStream: OutStream)
 ```
 ## Parameters
-*JsonArray*  
-&emsp;Type: [JsonArray](jsonarray-data-type.md)  
-An instance of the [JsonArray](jsonarray-data-type.md) data type.  
+*JsonArray*
+&emsp;Type: [JsonArray](jsonarray-data-type.md)
+An instance of the [JsonArray](jsonarray-data-type.md) data type.
 
 *OutStream*  
 &emsp;Type: [OutStream](../outstream/outstream-data-type.md)  
@@ -32,9 +34,9 @@ The OutStream object to which the JSON data will be written.
 
 
 ## Return Value
-*Ok*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the read was successful; otherwise, **false**.If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+*Ok*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+**true** if the read was successful; otherwise, **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

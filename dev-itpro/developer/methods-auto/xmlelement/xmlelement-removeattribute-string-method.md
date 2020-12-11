@@ -1,8 +1,8 @@
 ---
-title: "RemoveAttribute Method"
+title: "XmlElement.RemoveAttribute Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# RemoveAttribute Method
+# XmlElement.RemoveAttribute Method
+> **Version**: _Available from runtime version 1.0._
+
 Removes the specified attribute from this element.
 
 
@@ -22,9 +24,9 @@ Removes the specified attribute from this element.
  XmlElement.RemoveAttribute(Name: String)
 ```
 ## Parameters
-*XmlElement*  
-&emsp;Type: [XmlElement](xmlelement-data-type.md)  
-An instance of the [XmlElement](xmlelement-data-type.md) data type.  
+*XmlElement*
+&emsp;Type: [XmlElement](xmlelement-data-type.md)
+An instance of the [XmlElement](xmlelement-data-type.md) data type.
 
 *Name*  
 &emsp;Type: [String](../string/string-data-type.md)  

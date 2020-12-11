@@ -1,8 +1,8 @@
 ---
-title: "Language Method"
+title: "Report.Language Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Language Method
+# Report.Language Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets or sets the current language setting for the report.
 
 
@@ -21,12 +23,12 @@ Gets or sets the current language setting for the report.
 ```
 [CurrentLanguage := ]  Report.Language([Language: Integer])
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 ## Parameters
-*Report*  
-&emsp;Type: [Report](report-data-type.md)  
-An instance of the [Report](report-data-type.md) data type.  
+*Report*
+&emsp;Type: [Report](report-data-type.md)
+An instance of the [Report](report-data-type.md) data type.
 
 *Language*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
@@ -34,12 +36,23 @@ The new language setting for the report.
 
 
 ## Return Value
-*CurrentLanguage*  
-&emsp;Type: [Integer](../integer/integer-data-type.md)  
-The current language setting for the report.  
+*CurrentLanguage*
+&emsp;Type: [Integer](../integer/integer-data-type.md)
+The current language setting for the report.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Example
+
+If you have documents that you want to print in the language of the recipient rather than in your own working language, you can add a single line of code in the document to handle this. This functionality is already enabled for most reports in the standard Business Central database. The document is printed in the language that is specified in the **Language Code** field on the **Customer Card** page.
+
+In reports that need the multiple document languages functionality, you must insert the following AL code as the first line in the `OnAfterGet Record()` trigger:
+
+`Report.LANGUAGE := Language.GetLanguageID("Language Code")`
+
+For each of these reports, you must create a new variable, `Language`, with the data type `Record` pointing to the `Language` table. When you have compiled the object, it will no longer print in the user's working application language if another language has been specified on the **Customer Card** page.
+
 ## See Also
 [Report Data Type](report-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  

@@ -1,37 +1,45 @@
 ---
 title: "GridLayout Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 096dd046-161f-4d06-8212-0804f4271590
-caps.latest.revision: 13
 author: SusanneWindfeldPedersen
 ---
-
- 
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # GridLayout Property
-The controls inside this definition should be layed out as a grid using the caption of the first group as row caption. 
+> **Version**: _Available from runtime version 1.0._
 
-## Applies To  
-  
--   Group controls on pages  
-  
-## Property Values  
--   Rows 
+Specifies if the layout is rows or columns.
 
--   Columns  
+## Applies to
+-   Page Group
+
+## Property Value
+
+|Value|Description|
+|-----------|---------------------------------------|
+|**Rows**|Use rows for the layout.|
+|**Columns**|Use columns for the layout.|
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Syntax
-```
+
+```AL
 GridLayout = Columns;
 ```
   
 ## Remarks 
+
+> [NOTE]
+> The controls inside this definition should be laid out as a grid using the caption of the first group as row caption. 
 
 By default, fields in a FastTab on a page are arranged automatically in two columns that are based on the number of fields. You use a Grid control to customize the arrangement of fields into rows and columns, and design it to look like a grid-like format or a matrix-like format. For more information, see [Arranging Fields in Rows and Columns Using the Grid Control](../devenv-arrange-fields-in-rows-and-columns-using-gridlayout-control.md).
  

@@ -1,8 +1,8 @@
 ---
-title: "Caption Method"
+title: "RecordRef.Caption Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Caption Method
+# RecordRef.Caption Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets the caption of the table that is currently selected. Returns an error if no table is selected.
 
 
@@ -21,18 +23,18 @@ Gets the caption of the table that is currently selected. Returns an error if no
 ```
 Caption :=   RecordRef.Caption()
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 
 ## Parameters
-*RecordRef*  
-&emsp;Type: [RecordRef](recordref-data-type.md)  
-An instance of the [RecordRef](recordref-data-type.md) data type.  
+*RecordRef*
+&emsp;Type: [RecordRef](recordref-data-type.md)
+An instance of the [RecordRef](recordref-data-type.md) data type.
 
 ## Return Value
-*Caption*  
-&emsp;Type: [String](../string/string-data-type.md)  
-The caption of the table.  
+*Caption*
+&emsp;Type: [String](../string/string-data-type.md)
+The caption of the table.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

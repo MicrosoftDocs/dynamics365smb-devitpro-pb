@@ -1,8 +1,8 @@
 ---
-title: "WriteMode Method"
+title: "File.WriteMode Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# WriteMode Method
+# File.WriteMode Method
+> **Version**: _Available from runtime version 1.0._
+
 Use this method before you use OPEN method (File)] to set or test whether you can write to a file in later calls.
 
 > [!NOTE]
@@ -23,14 +25,14 @@ Use this method before you use OPEN method (File)] to set or test whether you ca
 ```
 [Writemode := ]  File.WriteMode([Mode: Boolean])
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
-*File*  
-&emsp;Type: [File](file-data-type.md)  
-An instance of the [File](file-data-type.md) data type.  
+*File*
+&emsp;Type: [File](file-data-type.md)
+An instance of the [File](file-data-type.md) data type.
 
 *Mode*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
@@ -38,9 +40,9 @@ An instance of the [File](file-data-type.md) data type.
 
 
 ## Return Value
-*Writemode*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-  
+*Writemode*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

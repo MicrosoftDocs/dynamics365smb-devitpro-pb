@@ -1,8 +1,8 @@
 ---
-title: "TableNo Method"
+title: "RecordId.TableNo Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# TableNo Method
+# RecordId.TableNo Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets the table number of the table that is identified by RecordID. This function returns an error if the record is blank.
 
 
@@ -21,18 +23,18 @@ Gets the table number of the table that is identified by RecordID. This function
 ```
 No :=   RecordId.TableNo()
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 
 ## Parameters
-*RecordId*  
-&emsp;Type: [RecordId](recordid-data-type.md)  
-An instance of the [RecordId](recordid-data-type.md) data type.  
+*RecordId*
+&emsp;Type: [RecordId](recordid-data-type.md)
+An instance of the [RecordId](recordid-data-type.md) data type.
 
 ## Return Value
-*No*  
-&emsp;Type: [Integer](../integer/integer-data-type.md)  
-The ID of the table.  
+*No*
+&emsp;Type: [Integer](../integer/integer-data-type.md)
+The ID of the table.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

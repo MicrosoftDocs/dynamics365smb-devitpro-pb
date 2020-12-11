@@ -2,7 +2,7 @@
 title: "Record Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 12/02/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Record Data Type
+> **Version**: _Available from runtime version 1.0._
+
 Is a complex data type.
 
 
@@ -28,7 +30,7 @@ The following methods are available on instances of the Record data type.
 |[Get([Any,...])](record-get-method.md)|Gets a record based on values stored in primary key fields.|
 |[Find([String])](record-find-method.md)|Finds a record in a table that is based on the values stored in keys.|
 |[Next([Integer])](record-next-method.md)|Steps through a specified number of records and retrieves a record.|
-|[Reset()](record-reset-method.md)|Removes all filters, including any special filters set by MARKEDONLY, and changes the current key to the primary key. Also removes any marks on the record and clears any AL variables on the record.|
+|[Reset()](record-reset-method.md)|Removes all filters, including any special filters set by MarkedOnly, changes fields select for loading back to all, and changes the current key to the primary key. Also removes any marks on the record and clears any AL variables defined on its table definition.|
 |[SetCurrentKey(Any [, Any,...])](record-setcurrentkey-method.md)|Selects a key for a table.|
 |[Ascending([Boolean])](record-ascending-method.md)|Gets or sets the order in which the system searches through a table.|
 |[SetAscending(Any, Boolean)](record-setascending-method.md)|Sets the sort order for the records returned. Use this method after you have set the keys to sort after, using SETCURRENTKEY. The default sort order is ascending. You can use SETASCENDING to change the sort order to descending for a specific field, while the other fields in the specified key are sorted in ascending order.|
@@ -37,6 +39,10 @@ The following methods are available on instances of the Record data type.
 |[CalcFields(Any [, Any,...])](record-calcfields-method.md)|Calculates the FlowFields in a record. You specify which fields to calculate by using parameters.|
 |[CalcSums(Any [, Any,...])](record-calcsums-method.md)|Calculates the total of a column in a table. You specify which fields to calculate by using parameters.|
 |[SetAutoCalcFields([Any,...])](record-setautocalcfields-method.md)|Sets the FlowFields that you specify to be automatically calculated when the record is retrieved from the database.|
+|[AddLoadFields([Any,...])](record-addloadfields-method.md)|Specifies fields to be initially loaded when the record is retrieved from its data source. Subsequent calls to AddLoadFields will not overwrite fields already selected for the initial load.|
+|[SetLoadFields([Any,...])](record-setloadfields-method.md)|Sets the fields to be initially loaded when the record is retrieved from its data source. This will overwrite fields previously selected for initial load.|
+|[AreFieldsLoaded(Any,...)](record-arefieldsloaded-method.md)|Checks whether the specified fields are all initially loaded.|
+|[LoadFields(Any,...)](record-loadfields-method.md)|Accesses the table's corresponding data source and loads the values of the specified fields on the record.|
 |[Count()](record-count-method.md)|Counts the number of records in a table.|
 |[IsEmpty()](record-isempty-method.md)|Determines whether a table or a filtered set of records is empty.|
 |[CountApprox()](record-countapprox-method.md)|Returns an approximate count of the number of records in the table, for example, for updating progress bars or displaying informational messages.|
@@ -96,6 +102,7 @@ The following methods are available on instances of the Record data type.
 |[TestField(Any, TextConst)](record-testfield-joker-textconst-method.md)|Tests whether the contents of a field match a given value.|
 |[TestField(Any, Code)](record-testfield-joker-code-method.md)|Tests whether the contents of a field match a given value.|
 |[TestField(Any, String)](record-testfield-joker-string-method.md)|Tests whether the contents of a field match a given value.|
+|[TestField(Any, Enum)](record-testfield-joker-anyenum-method.md)|Tests whether the contents of a field match a given value.|
 |[TestField(Any, Any)](record-testfield-joker-joker-method.md)|Tests whether the contents of a field match a given value.|
 |[FieldError(Any [, String])](record-fielderror-method.md)|Stops the execution of the code causing a run-time error, and creates an error message for a field.|
 |[TransferFields(var Record [, Boolean])](record-transferfields-table-boolean-method.md)|Copies all matching fields in one record to another record.|

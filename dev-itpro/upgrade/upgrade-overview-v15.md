@@ -2,7 +2,7 @@
 title: Upgrade to Business Central 2019 Wave 2
 description: The article explains how to upgrade the application code and how to merge code from different versions of the application.
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -182,27 +182,27 @@ The first thing to do is convert your solution from C/AL to AL. For more informa
     <!-- **Error:**
 
     I tried to us the Download Symbols command but could not because of error: {
-	"resource": "/c:/Users/jswymer/Documents/AL/CusomtBaseApp2/app.json",
-	"owner": "_generated_diagnostic_collection_name_#1",
-	"code": "AL1045",
-	"severity": 8,
-	"message": "The package cache c:\\Users\\jswymer\\Documents\\AL\\CusomtBaseApp2\\./.alpackages could not be found.",
-	"source": "AL",
-	"startLineNumber": 1,
-	"startColumn": 1,
-	"endLineNumber": 1,
-	"endColumn": 1
+    "resource": "/c:/Users/jswymer/Documents/AL/CusomtBaseApp2/app.json",
+    "owner": "_generated_diagnostic_collection_name_#1",
+    "code": "AL1045",
+    "severity": 8,
+    "message": "The package cache c:\\Users\\jswymer\\Documents\\AL\\CusomtBaseApp2\\./.alpackages could not be found.",
+    "source": "AL",
+    "startLineNumber": 1,
+    "startColumn": 1,
+    "endLineNumber": 1,
+    "endColumn": 1
     -->
 <!--
 8. Modify the settings.json file in Visual Studio Code to include paths to .NET assemblies. Set the `"al.assemblyProbingPaths"` parameter:
 
     ```
-    	"al.assemblyProbingPaths": [
-		"./.netpackages", "C:/Windows/Microsoft.NET/assembly", "C:/Program Files/Microsoft Dynamics 365 Business Central/150","C:/Program Files/Microsoft Dynamics 365 Business Central/150/service/Addins",
-		"C:/NugetCache/NET_Framework_472_TargetingPack.4.7.03081.00",
-		"C:/NugetCache/Microsoft.Nav.Platform.Main.14.0.28217",
-		"C:/windows/assembly/GAC/ADODB", "C:/Program Files (x86)/Microsoft Dynamics 365 Business Central/150/RoleTailored Client"
-	],
+        "al.assemblyProbingPaths": [
+        "./.netpackages", "C:/Windows/Microsoft.NET/assembly", "C:/Program Files/Microsoft Dynamics 365 Business Central/150","C:/Program Files/Microsoft Dynamics 365 Business Central/150/service/Addins",
+        "C:/NugetCache/NET_Framework_472_TargetingPack.4.7.03081.00",
+        "C:/NugetCache/Microsoft.Nav.Platform.Main.14.0.28217",
+        "C:/windows/assembly/GAC/ADODB", "C:/Program Files (x86)/Microsoft Dynamics 365 Business Central/150/RoleTailored Client"
+    ],
     ```
 8. Modify the **dotnet.al** file to remove all instances of "Version=14.0.0.0" for **Microsoft.Nav** assemblies and for the `DocumentFormat.OpenXml` assembly declaration, remove the `version` and `culture` keys and set `PublicKeyToken = '8fb06cb64d019a17'`.
 
@@ -660,12 +660,13 @@ Symbols are the application programming interface between AL code and C/AL code.
 
 In version 14.0, with the base application being C/AL, there are three types of symbols: system, application, and test. System symbols contained references to the platform system objects. The application symbols contained references to the business application objects. The test symbols contained references to the test libraries used by Microsoft extensions.
 
-In version 15, with the move to AL, the only symbols required are the system systems, which are still provided on the version 15.0 installation media (DVD).
+In version 15, with the move to AL, the only symbols required are the system symbols, which are still provided on the version 15.0 installation media (DVD).
 
 ### Customization extensions
 Customization extensions are AL extensions that add functionality to the base application or system application. These extensions can be Microsoft (1st party) or 3rd party extensions. 3rd party extensions are extensions that your organization provides or extensions that are provided by others, such as from ISVs or from App Source.
   
 ## See Also  
-[Upgrading the Data](Upgrading-the-Data.md)   
-[Upgrading to Business Central](upgrading-to-business-central.md)  
+
+[Upgrade of an Unmodified Application](upgrade-unmodified-application.md)  
+[Technical Upgrade of Customized Application](upgrade-technical-upgrade-v14-v15.md)  
 [[!INCLUDE[prodlong](../developer/includes/prodlong.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md)  

@@ -2,7 +2,7 @@
 title: Data Item Links
 description: Using queries, retrieve records from one or more tables and combine the records into rows in a single dataset.
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -45,9 +45,9 @@ The **Sales Header** table contains a list of sales orders. Each sales order has
   
 ### Sample Query
 
-The following query object links the **Sale Header** table with the** Salesperson/Purchaser** table on the **Salesperson\_Code** and **Code** fields, as specified by the [DataItemLink Property](properties/devenv-dataitemlink-query-property.md). In the example, the [SQLJoinType Property](properties/devenv-sqljointype-property.md) is set to **InnerJoin**.
+The following query object links the **Sale Header** table with the **Salesperson/Purchaser** table on the **Salesperson\_Code** and **Code** fields, as specified by the [DataItemLink Property](properties/devenv-dataitemlink-query-property.md). In the example, the [SQLJoinType Property](properties/devenv-sqljointype-property.md) is set to **InnerJoin**.
 
-```
+```AL
 query 50100 "Sample Query"
 {
     QueryType = Normal;
@@ -100,7 +100,7 @@ In short, to join two data items, you set the [DataItemLink](properties/devenv-D
 
 The [DataItemLink Property](properties/devenv-DataItemLink-query-property.md) sets up a reference or association between one or more fields in the source table of a lower data item tables with a field in the source table of the upper data item. In a query, two data item tables typically will have columns that have values that are common to both tables. For example, the **Salesperson** table and **Sales Header** table have the **Code** column and **Salesperson\_Code** column in common.  To create a link between these two tables, you could set the DataItemLink property of the **Sales Header** data item as follows:
 
-```
+```AL
 DataItemLink = "Salesperson Code" = Salesperson_Purchaser.Code;
 ```  
   
@@ -126,7 +126,7 @@ The [SqlJoinType Property](properties/devenv-SqlJoinType-property.md) the determ
 A query links data items in the order that they appear in AL, starting from the top and then working downward. When you have more than two data items, lower data items are linked to the resulting dataset of the linked data items above it. For example, when you link the first two data items, the query generates a dataset. When you add another data item, it is linked to the dataset of the first linked pair of data items, where it applies the conditions that are specified by its [DataItemLink Property](properties/devenv-DataItemLink-query-property.md) and [SqlJoinType Property](properties/devenv-SqlJoinType-property.md). The following code adds another data item to the sample query:  
 
 
-```
+```AL
 query 50100 "Sample Query"
 {
     QueryType = Normal;

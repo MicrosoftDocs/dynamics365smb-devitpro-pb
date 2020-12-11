@@ -1,8 +1,8 @@
 ---
-title: "Fields must not be deleted, since dependent extensions may break"
-ms.author: SusanneWindfeldPedersen
+title: "Fields must not be deleted."
+ms.author: solsen
 ms.custom: na
-ms.date: 02/06/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,10 +14,10 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AppSourceCop Rule AS0002
-Fields must not be deleted, since dependent extensions may break  
+Fields must not be deleted.  
 
 ## Description
-Fields must not be deleted.
+Fields must not be deleted. This might break the upgrade of existing installations and dependent extensions.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

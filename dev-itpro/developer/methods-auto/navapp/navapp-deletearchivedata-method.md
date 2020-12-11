@@ -1,8 +1,8 @@
 ---
-title: "DeleteArchiveData Method"
+title: "NavApp.DeleteArchiveData Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# DeleteArchiveData Method
+# NavApp.DeleteArchiveData Method
+> **Version**: _Available from runtime version 1.0 until version 6.0 where it was deprecated for the following reason: "The features related to data migration from V1 to V2 extensions are being deprecated."_
+
 Deletes the archived data for a specified table of an extension during installation.
 
 

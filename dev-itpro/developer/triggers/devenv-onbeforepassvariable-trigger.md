@@ -1,7 +1,8 @@
 ---
 title: "OnBeforePassVariable Trigger"
+description: "OnBeforePassVariable trigger in AL for Business Central."
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +14,7 @@ author: SusanneWindfeldPedersen
 # OnBeforePassVariable Trigger
 Runs after the source expression has been formatted into a text variable and before the text variable is passed to the XML document.  
   
-## Applies To  
+## Applies to  
 - XMLports  
   
 ## Remarks  

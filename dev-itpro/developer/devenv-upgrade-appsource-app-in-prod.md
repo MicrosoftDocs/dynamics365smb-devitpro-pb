@@ -1,16 +1,16 @@
 ---
 title: "Upgrading AppSource Apps in Production"
 description: "Describes how to upgrade apps available on AppSource that are already in running in production."
-author: ryanweigel
+author: SusanneWindfeldPedersen
 
 ms.custom: na
-ms.date: 11/07/2019
+ms.date: 10/01/2020
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.author: rweigel
+ms.author: freddyk
 ---
 
 # Upgrading AppSource Apps in Production

@@ -2,7 +2,7 @@
 title: Technical Upgrade 
 description: The article explains how to upgrade the application code and how to merge code from different versions of the application.
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -11,7 +11,7 @@ ms.author: jswymer
 author: jswymer
 ms.service: "dynamics365-business-central"
 ---
-# Technical Upgrade to [!INCLUDE[prodlong](../developer/includes/prodlong.md)] 2019 Wave 2
+# Technical Upgrade to [!INCLUDE[prolong](../developer/includes/prodlong.md)] 2019 Wave 2
 
 <!--
 > [!IMPORTANT]  
@@ -19,7 +19,7 @@ ms.service: "dynamics365-business-central"
 >
 > Please note that this topic is a draft in progress. We are still working on adding more details to the steps described in this topic.
 -->
-Use this process when you have a code customized [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application (version 14) that you want to upgrade to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 release wave 2 platform (version 15). This will not upgrade the application to the latest version. With this process, you will convert the entire application from C/AL to an AL base application extension.
+Use this process when you have a code customized [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application (version 14) that you want to upgrade to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 release wave 2 platform (version 15). This process won't upgrade the application to the latest version. You'll convert the entire application from C/AL to an AL base application extension.
 
 <!-- For this scenario, I used a BC 14.0 modified base application on a BC 14.0 server instance, which include some customization on C/AL objects in the base application and a custom extension that modified the Item table. is proecess will convert the entire BC 14 custom application to an Extension on the BC 15 platform.-->
 
@@ -28,17 +28,27 @@ Use this process when you have a code customized [!INCLUDE[prodshort](../develop
 
 #### Single-tenant and multitenant deployments
 
-The process for upgrading the very similar for a single-tenant and multitenant deployment. However, there are some inherent differences because with a single-tenant deployment, the application and business data are included in the same database, while with a multitenant deployment application code is in a separate database (the application database) than the business data (tenant). In the procedures that follow, for a single-tenant deployment, consider references to the *application database* and *tenant database* as the same database. Steps are marked as *Single-tenant only* or *Multitenant only* where applicable.
+The process for upgrading is similar for a single-tenant and multitenant deployment. However, there are some inherent differences. With a single-tenant deployment, the application and business data are included in the same database. While with a multitenant deployment, application code is in a separate database (the application database) than the business data (tenant). In the procedures that follow, for a single-tenant deployment, consider references to the *application database* and *tenant database* as the same database. Steps are marked as *Single-tenant only* or *Multitenant only* where applicable.
 
 ## Prerequisites
 
 1. Upgrade to Business Central Spring 2019 (version 14).
 
-   There are several updates for version 14. If you are upgrading from Business Central Fall 2018 (version 13) or Dynamics NAV, we recommend that you upgrade to the latest update for version 14 that has a compatible update for version 15. If your solution is already on version 14, then you do not have to upgrade to the latest version 15 update. For more information, see [[!INCLUDE[prodlong](../developer/includes/prodlong.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
+   There are several updates for version 14. When upgrading from Business Central Fall 2018 (version 13) or Dynamics NAV, upgrade to the latest version 14 update that has a compatible version 15 update. For more information, see [[!INCLUDE[prodlong](../developer/includes/prodlong.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
+   
+   If your solution is already on version 14, then you don't have to upgrade to the latest version 15 update.
 
    To download the latest update, go to [Released Cumulative Updates for Microsoft Dynamics 365 Business Central Spring 2019 Update on-premises](https://support.microsoft.com/help/4501292).
 
-   For information about how to perform the upgrade, see [Upgrading to Dynamics 365 Business Central On-Premises](upgrading-to-business-central-on-premises.md).
+   For information, see [Upgrading to Dynamics 365 Business Central On-Premises](upgrading-to-business-central-on-premises.md).
+
+2. Disable data encryption.
+
+    If the current server instance uses data encryption, disable it. You can enable it again after upgrading.
+
+    For more information, see [Managing Encryption and Encryption Keys](how-to-export-and-import-encryption-keys.md#encryption).
+
+    Instead of disabling encryption, you can export the current encryption key, which you'll then import after upgrade. However, we recommend disabling encryption before upgrading.
 
 <!-- Replace step 1 with this for CU1
 1. Upgrade to the latest Business Central Spring 2019 Cumulative Update (version 14.X) that is compatible with the version 15 .
@@ -50,11 +60,11 @@ The process for upgrading the very similar for a single-tenant and multitenant d
 -->
 ## Task 1: Install [!INCLUDE[prodlong](../developer/includes/prodlong.md)] 2019 release wave 2 (version 15.0)
 
-1. Before you install version 15, it can be useful to create desktop shortcuts to the version 14.0 tools, such as the [!INCLUDE[admintool](../developer/includes/admintool.md)], [!INCLUDE[adminshell](../developer/includes/adminshell.md)], and [!INCLUDE[devshell](../developer/includes/devshell.md)] because the Start menu items for these will be replaced with the version 15.0 tools.
+1. Before you install version 15, it can be useful to create desktop shortcuts to the version 14.0 tools, such as the [!INCLUDE[admintool](../developer/includes/admintool.md)], [!INCLUDE[adminshell](../developer/includes/adminshell.md)], and [!INCLUDE[devshell](../developer/includes/devshell.md)] because the Start menu items for these tools will be replaced with the version 15.0 tools.
 
 2. Install all components of Business Central 2019 release wave 2 (version 15).
 
-    If you did not uninstall version 14.0, then you must either specify different port numbers for components (like the [!INCLUDE[server](../developer/includes/server.md)] instance and web services) during installation, or you must stop the version 14.0 [!INCLUDE[server](../developer/includes/server.md)] instance before you run the installation. Otherwise, you will get an error that the [!INCLUDE[server](../developer/includes/server.md)] failed to install.
+    If you didn't uninstall version 14.0, then you must either specify different port numbers for components during installation or stop the version 14.0 [!INCLUDE[server](../developer/includes/server.md)] instance before you run the installation. Otherwise, you'll get an error that the [!INCLUDE[server](../developer/includes/server.md)] failed to install.
 
     <!--
     > [!IMPORTANT]
@@ -64,9 +74,11 @@ The process for upgrading the very similar for a single-tenant and multitenant d
 
 3. Copy the version 14 **CodeViewer** add-in to the version 15.0 server installation.
 
-    Copy the **CodeViewer** folder from the **Add-ins** folder of the Business Central version 14 RoleTailored client installation (C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\140\RoleTailored Client\Add-ins) to the **Add-ins** folder of the Business Central 150 Server installation (C:\Program Files\Microsoft Dynamics 365 Business Central\150\Service\Add-ins). Replace the existing folder and files, if any.
+    1. Find the **CodeViewer** folder in the **Add-ins** folder of the version 14 RoleTailored client installation. By default, the folder path is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\140\RoleTailored Client\Add-ins.
+    
+    2. Copy the folder to the **Add-ins** folder of the version 15 server installation. By default, the folder path is C:\Program Files\Microsoft Dynamics 365 Business Central\150\Service\Add-ins. Replace the existing folder and files, if any. 
      
-    In version 15.0 CodeViewer is no longer used, but it is required because of references that exist in the converted application. If you omit this step, you might get compilation errors later.
+    CodeViewer is no longer used in version 15. But it's required because of references that exist in the converted application. If you omit this step, you might get compilation errors later.
 
 ## Task 2: Convert your application from C/AL to AL
 
@@ -75,12 +87,12 @@ Convert your solution from C/AL code to AL code. For more information, see [Code
 ## <a name="Preparedb"></a> Task 3: Prepare the application database for technical upgrade
 
 1. Make backup of the database.
-2. Make sure that you have access to the extension packages for all published extensions.
+2. Make sure that you have the extension packages for all published extensions.
 
-    You will need these later to publish and install the extensions again.
+    You'll need these packages later to publish and install the extensions again.
 3. Uninstall all extensions from the old tenants.
 
-    Run the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 14.0 as an administrator). To uninstall an extension, you use the [Uninstall-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp) cmdlet. For example, together with the Get-NAVAppInfo cmdlet, you can uninstall all extensions with a single command:
+    Run the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 14.0 as an administrator. To uninstall an extension, you use the [Uninstall-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp) cmdlet. For example, together with the Get-NAVAppInfo cmdlet, you can uninstall all extensions with a single command:
 
     ``` 
     Get-NAVAppInfo -ServerInstance <BC14 server instance> -Tenant <tenant ID> | % { Uninstall-NAVApp -ServerInstance <BC14 server instance> -Name $_.Name -Version $_.Version -Tenant <tenant ID>}
@@ -98,7 +110,7 @@ Convert your solution from C/AL code to AL code. For more information, see [Code
 
 4. Unpublish all system, test, and application symbols.
 
-    To unpublish symbols, use the Unpublish-NAVAPP cmdlet with the `-SymbolsOnly` switch.
+    To unpublish symbols, use the Unpublish-NAVAPP cmdlet. You can unpublish all symbols by using the Get-NAVAppInfo cmdlet with the `-SymbolsOnly` switch as follows:
 
     ``` 
     Get-NAVAppInfo -ServerInstance <BC14 server instance> -SymbolsOnly | % { Unpublish-NAVApp -ServerInstance <BC14 server instance> -Name $_.Name -Version $_.Version }
@@ -122,7 +134,7 @@ Convert your solution from C/AL code to AL code. For more information, see [Code
 
 ## Task 4: Convert the version 14.0 application database to the version 15.0 platform
 
-This task runs a technical upgrade on the application database to convert it from the version 14.0 platform to the version 15.0 platform. The conversion updates the system tables of the database to the new schema (data structure) and provides the latest platform features and performance enhancements.
+This task runs a technical upgrade on the application database. A technical upgrade converts the database from the version 14.0 platform to the version 15.0 platform. This conversion updates the system tables of the database to the new schema (data structure). It also provides the latest platform features and performance enhancements.
 
 1. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 15.0 as an administrator.
 2. Run the [Invoke-NAVApplicationDatabaseConversion cmdlet](/powershell/module/microsoft.dynamics.nav.management/invoke-navapplicationdatabaseconversion) to start the conversion:
@@ -149,25 +161,14 @@ When you installed version 15 in **Task 1**, a version 15 [!INCLUDE[server](../d
     Set-NAVServerConfiguration -ServerInstance <BC15 server instance> -KeyName DatabaseName -KeyValue "<BC14 database name>"
     ```
     
-    In a single tenant deployment, this will mount the tenant automatically. For more information, see [Connecting a Server Instance to a Database](../administration/connect-server-to-database.md).
+    In a single tenant deployment, this command mounts the tenant automatically. For more information, see [Connecting a Server Instance to a Database](../administration/connect-server-to-database.md).
 
-<!--
-2. Configure the server instance to synchronize only the system application objects with tenants.
-
-    This is done by setting the `FeatureSwitchOverrides` parameter to `forceSystemOnlyBaseSync`.
-
-    ```
-    Set-NAVServerConfiguration <BC15 server instance> -KeyName "FeatureSwitchOverrides" -KeyValue "forceSystemOnlyBaseSync"
-    ```
-
-    This is required in order to synchronize tenants later in the upgrade process. This is required because the application database still contains the old metadata for the C/AL application objects, and these should not be synchronized with the tenant. By making this change, only system objects will by synchronized with the tenant. If you omit this step, you will get conflicts because of duplicate object IDs.
--->
 2. Disable task scheduler on the server instance for purposes of upgrade.
 
     ```
     Set-NavServerConfiguration -ServerInstance <BC15 server instance> -KeyName "EnableTaskScheduler" -KeyValue false
     ```
-    Be sure to re-enable this after upgrade if needed.
+    Be sure to re-enable task scheduler after upgrade if needed.
 3. Restart the server instance.
 
     ```
@@ -176,7 +177,7 @@ When you installed version 15 in **Task 1**, a version 15 [!INCLUDE[server](../d
 
 ## Task 6: Publish system symbols, base application, and test library extensions
 
-In this task, you will publish extensions to the version 15.0 server instance. Publishing an extension adds the extension to the application database that is mounted on the server instance, making it available for installing on tenants later. Publishing updates internal tables, compiles the components of the extension behind-the-scenes, and builds the necessary metadata objects that are used at runtime.
+In this task, you'll publish extensions to the version 15.0 server instance. Publishing adds the extension to the application database that is mounted on the server instance. The extension is then available for installing on tenants later. It updates internal tables, compiles the components of the extension behind-the-scenes, and builds the necessary metadata objects that are used at runtime.
 
 The steps in this task continue to use the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 15.0 that you started in the previous task.
 
@@ -195,7 +196,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
 -->
 1. Publish the system symbols extension for version 15.
 
-    The symbols extension contains the required platform symbols that the base application depends on. The symbols extension package is called **System.app**. You find it where the **AL Development Environment** is installed, which by default is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\AL Development Environment.  
+    The symbols extension contains the required platform symbols that the base application depends on. The symbols extension package is called **System.app**. You find it where the **AL Development Environment** is installed. The default installation path is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\AL Development Environment.  
 
     ```
     Publish-NAVApp -ServerInstance <BC15 server instance> -Path "<path to the System.app file>" -PackageType SymbolsOnly
@@ -226,9 +227,9 @@ To increase the application version of the application database, use the [Set-NA
 -->   
 ## Task 7: Synchronize tenant and synchronize/install base application and test library extensions
 
-In this task, you update the schema of tenant database schema with schema of changes in system objects and application objects. In this step, you will synchronize the tenant to the to your custom base application extension and test library extension (if any). With this operation, the extensions will take ownership of the tables in the SQL database.
+This task updates the tenant database schema with schema changes in system objects and application objects. You'll synchronize the tenant to the custom base application and test library extension (if any). When you synchronize the tenant, extensions take ownership of the tables in the SQL Database.
 
-If you have a multitenant deployment, perform these steps for each tenant (replacing `<tenant ID>` with the appropriate tenant ID).
+If you have a multitenant deployment, run these steps for each tenant (replacing `<tenant ID>` with the appropriate tenant ID).
 
 1. (Multitenant only) Mount the tenant to the version 15 server instance.
 
@@ -274,16 +275,18 @@ If you have a multitenant deployment, perform these steps for each tenant (repla
     Install-NAVApp -ServerInstance <BC15 server instance> -Name "Base Application" -Version <extension version>
     ```
 
-    At this point, the base application is upgraded to the version 15 platform and is operational. You should be able to open the application in the client.
+    At this point, the base application is upgraded to the version 15 platform and is operational. You can open the application in the client.
 
-5. Synchronize and install the test library extension, like what you did for the custom base application in steps 3 and 4.
+5. Synchronize and install the test library extension.
+
+    This step is like what you did for the custom base application in steps 3 and 4.
 
 
 ## Task 8: Configure the version 15 server instance for migrating extensions
 
-With this task, you configure the version 15 server so that the Microsoft and 3rd party extensions that were installed in the version 14 deployment can be reinstalled. You will do this by configuring the `DestinationAppsForMigration` parameter of the serve instance with information about the custom base application and test library. Specifically, you need the appId, name, and publisher assigned to these extensions. With the `DestinationAppsForMigration` parameter set, when you publish the Microsoft and 3rd party extensions, the server instance will automatically modify the manifest of the extensions to include the dependency on the base application and test library extension, allowing them to be published.
+In this task, you configure the version 15 server so that the Microsoft and third-party extensions that were installed in the version 14 deployment can be reinstalled. You'll configure the `DestinationAppsForMigration` parameter of the server instance with information about the custom base application and test library. Specifically, you need the appId, name, and publisher assigned to these extensions. With the `DestinationAppsForMigration` parameter set, when you publish the Microsoft and third-party extensions, the server instance will automatically modify the manifest of the extensions to include the dependency on the base application and test library extension, allowing them to be published.
 
-1. Get the appId, name, and publisher of the custom base application and test library extensions.
+1. Get the appId, name, and publisher of the custom base application and test library.
 
     ```
     Get-NAVAppInfo -ServerInstance <BC15 server instance>
@@ -305,7 +308,7 @@ Upgrading data updates the data that is stored in the tables of the tenant datab
     Start-NAVDataUpgrade -ServerInstance BC150 -Tenant default -FunctionExecutionMode Serial -SkipCompanyInitialization -SkipAppVersionCheck -Force
     ```        
     
-    This step upgrades the data and installs the System Application and BaseApp extensions on the tenant. If you do not want to install the extensions, use the `-ExcludeExtensions` parameter. In this, case you will have to manually install these extensions before you complete the next step or to open the application in the client.
+    This step upgrades the data and installs the System Application and BaseApp extensions on the tenant. If you don't want to install the extensions, use the `-ExcludeExtensions` parameter. In this, case you will have to manually install these extensions before you complete the next step or to open the application in the client.
     
     > [!TIP]  
     >  In the last phase of data upgrade, all companies will be initialized by running codeunit 2 Company Initialization. This is done automatically. If you want to skip company initialization, then use the `Start-NavDataUpgrade` with the `-SkipCompanyIntitialization` parameter.
@@ -329,7 +332,7 @@ Now, you can install the Microsoft and 3rd-party extensions that were installed 
     Publish-NAVApp -ServerInstance <BC15 server instance> -Path "<path to extension package file>"
     ```
 
-    You only need to do this once.
+    You only need to do this step once.
 
 2. Synchronize the extension.
 
@@ -364,17 +367,22 @@ Now, your application is fully upgraded to the version 15 platform.
     - Microsoft.Dynamics.Nav.Client.WebPageViewer
     - Microsoft.Dynamics.Nav.Client.WelcomeWizard
 
-    To upgrade the control add-ons, do the following:
+    To upgrade the control add-ons, do the following steps:
 
     1. Open the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client.
     2. Search for and open the **Control Add-ins** page.
     3. Choose **Actions** > **Control Add-in Resource** > **Import**.
     4. Locate and select the .zip file for the control add-in and choose **Open**.
 
-        The .zip files are located in the **Add-ins** folder of the [!INCLUDE[server](../developer/includes/server.md)] installation. There is a sub-folder for each add-in. For example, the path to the Business Chart control add-in is `C:\Program Files\Microsoft Dynamics 365 Business Central\150\Service\Add-ins\BusinessChart\Microsoft.Dynamics.Nav.Client.BusinessChart.zip`.
-    5. After you have imported all the new control add-in versions, restart Business Central Server instance.
+        The .zip files are located in the **Add-ins** folder of the [!INCLUDE[server](../developer/includes/server.md)] installation. There's a subfolder for each add-in. For example, the path to the Business Chart control add-in is `C:\Program Files\Microsoft Dynamics 365 Business Central\150\Service\Add-ins\BusinessChart\Microsoft.Dynamics.Nav.Client.BusinessChart.zip`.
+    5. After you've imported all the new control add-in versions, restart Business Central Server instance.
 2. Enable task scheduler on the server instance.
 3. (Multitenant only) For tenants other than the tenant that you use for administration purposes, if you mounted the tenants using the `-AllowAppDatabaseWrite` parameter, dismount the tenants, then mount them again without using the `-AllowAppDatabaseWrite` parameter.
+4. If you want to use data encryption as before, enable it.
+
+   For more information, see [Managing Encryption and Encryption Keys](how-to-export-and-import-encryption-keys.md#encryption).
+
+   Optionally, if you exported the encryption key instead of disabling encryption earlier, import the encryption key file to enable encryption.
 
 ## See Also
 

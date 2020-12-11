@@ -2,7 +2,7 @@
 title: "WebServiceActionContext Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # WebServiceActionContext Data Type
+> **Version**: _Available from runtime version 2.0._
+
 Represents an AL WebServiceActionContext.
 
 
@@ -22,7 +24,7 @@ The following methods are available on instances of the WebServiceActionContext 
 
 |Method name|Description|
 |-----------|-----------|
-|[AddEntityKey(Integer, Any)](webserviceactioncontext-addentitykey-method.md)|Add a new <fieldId, value> pair to the collection of entity keys.|
+|[AddEntityKey(Integer, Any)](webserviceactioncontext-addentitykey-method.md)|Add a new \<fieldId, value\> pair to the collection of entity keys.|
 |[SetObjectType(ObjectType)](webserviceactioncontext-setobjecttype-method.md)|Sets the object type.|
 |[GetObjectType()](webserviceactioncontext-getobjecttype-method.md)|Gets the object type.|
 |[SetObjectId(Integer)](webserviceactioncontext-setobjectid-method.md)|Sets the object ID.|

@@ -1,8 +1,8 @@
 ---
-title: "AsXmlCData Method"
+title: "XmlNode.AsXmlCData Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# AsXmlCData Method
+# XmlNode.AsXmlCData Method
+> **Version**: _Available from runtime version 1.0._
+
 Converts the node to an XmlCData node. The operation will fail if the node is not an XmlCData.
 
 
@@ -23,14 +25,14 @@ XmlCData :=   XmlNode.AsXmlCData()
 ```
 
 ## Parameters
-*XmlNode*  
-&emsp;Type: [XmlNode](xmlnode-data-type.md)  
-An instance of the [XmlNode](xmlnode-data-type.md) data type.  
+*XmlNode*
+&emsp;Type: [XmlNode](xmlnode-data-type.md)
+An instance of the [XmlNode](xmlnode-data-type.md) data type.
 
 ## Return Value
-*XmlCData*  
-&emsp;Type: [XmlCData](../xmlcdata/xmlcdata-data-type.md)  
-An XmlCData value that references the current XmlNode.  
+*XmlCData*
+&emsp;Type: [XmlCData](../xmlcdata/xmlcdata-data-type.md)
+An XmlCData value that references the current XmlNode.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

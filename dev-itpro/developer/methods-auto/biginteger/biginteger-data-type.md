@@ -1,8 +1,9 @@
 ---
 title: "BigInteger Data Type"
+description: "The BigInteger Data Type in AL for Business Central"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +15,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # BigInteger Data Type
+> **Version**: _Available from runtime version 1.0._
+
 Stores very large whole numbers that range from -9,223,372,036,854,775,807 to 9,223,372,036,854,775,807.
 
 
@@ -28,7 +31,7 @@ Stores very large whole numbers that range from -9,223,372,036,854,775,807 to 9,
 
  If you assign -9,223,372,036,854,775,808 directly to a BigInteger variable, then you get an error when you try to compile the code. However, you can indirectly assign -9,223,372,036,854,775,808 to a BigInteger variable by using the following code.  
 
-```  
+```AL  
 BigIntegerVar := -9223372036854775807L;  
 BigIntegerVar := BigIntegerVar - 1;  
 ```  
@@ -37,7 +40,7 @@ BigIntegerVar := BigIntegerVar - 1;
 
 ## Example  
 
-```  
+```AL  
 BI := 1L;  
 BI := 455500000000L;  
 ```  

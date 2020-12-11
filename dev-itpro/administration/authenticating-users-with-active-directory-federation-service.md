@@ -1,7 +1,7 @@
 ---
 title: "Authenticating Users with Active Directory Federation Services"
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -134,7 +134,7 @@ Based on whether you will be using SAML tokens or JSON Web Tokens (JWT), which a
 5. Repeat steps 2 to 4 to add another rule, except this time, set the **Claim rule name** to `objectidentifier`, the **Incoming claim type** to `Primary SID`, and the **Outgoing claim type** to:
 
     ```
-    https://schemas.microsoft.com/identity/claims/objectidentifier
+    http://schemas.microsoft.com/identity/claims/objectidentifier
     ```
 
     Choose **OK** when done to close the **Edit Claim Rules** dialog box.
@@ -151,12 +151,12 @@ Based on whether you will be using SAML tokens or JSON Web Tokens (JWT), which a
 4. Set the **Claim rule name** to `name`, and the  **Custom rule** to:
 
     ```
-    c:[Type == "https://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn"] => issue(Type = "unique_name", Issuer = c.Issuer, OriginalIssuer = c.OriginalIssuer, Value = c.Value, ValueType = c.ValueType);
+    c:[Type == "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn"] => issue(Type = "unique_name", Issuer = c.Issuer, OriginalIssuer = c.OriginalIssuer, Value = c.Value, ValueType = c.ValueType);
     ```
 5. Repeat steps 2 and 3 to add another custom rule, except for this rule, set the **Claim rule name** to `objectidentifier`, and the **Custom rule** to:
 
     ```
-    c:[Type == "https://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid"] => issue(Type = "oid", Issuer = c.Issuer, OriginalIssuer = c.OriginalIssuer, Value = c.Value, ValueType = c.ValueType);
+    c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid"] => issue(Type = "oid", Issuer = c.Issuer, OriginalIssuer = c.OriginalIssuer, Value = c.Value, ValueType = c.ValueType);
     ```
 6.  Close the **Edit Claim Rules** dialog box.
 

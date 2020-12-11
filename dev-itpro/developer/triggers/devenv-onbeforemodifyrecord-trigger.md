@@ -1,7 +1,8 @@
 ---
 title: "OnBeforeModifyRecord Trigger"
+description: "OnBeforeModifyRecord trigger in AL for Business Central."
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +14,7 @@ author: SusanneWindfeldPedersen
 # OnBeforeModifyRecord Trigger
 Runs after a record is read from the input stream and before the existing record in the database is modified.  
   
-## Applies To  
+## Applies to  
 - XMLports  
   
 ## Remarks  

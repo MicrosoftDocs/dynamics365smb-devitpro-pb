@@ -1,8 +1,8 @@
 ---
-title: "Contains Method"
+title: "JsonObject.Contains Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Contains Method
+# JsonObject.Contains Method
+> **Version**: _Available from runtime version 1.0._
+
 Verifies if a JsonObject contains a property with a given key.
 
 
@@ -22,9 +24,9 @@ Verifies if a JsonObject contains a property with a given key.
 Ok :=   JsonObject.Contains(Key: String)
 ```
 ## Parameters
-*JsonObject*  
-&emsp;Type: [JsonObject](jsonobject-data-type.md)  
-An instance of the [JsonObject](jsonobject-data-type.md) data type.  
+*JsonObject*
+&emsp;Type: [JsonObject](jsonobject-data-type.md)
+An instance of the [JsonObject](jsonobject-data-type.md) data type.
 
 *Key*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -32,9 +34,9 @@ An instance of the [JsonObject](jsonobject-data-type.md) data type.
 
 
 ## Return Value
-*Ok*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the object contains a property with the given key; otherwise, **false**.  
+*Ok*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+**true** if the object contains a property with the given key; otherwise, **false**.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

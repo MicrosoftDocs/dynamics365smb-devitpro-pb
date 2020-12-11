@@ -1,8 +1,8 @@
 ---
-title: "DWY2Date Method"
+title: "System.DWY2Date Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# DWY2Date Method
+# System.DWY2Date Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets a Date that is based on a week day, a week, and a year.
 
 
@@ -21,8 +23,8 @@ Gets a Date that is based on a week day, a week, and a year.
 ```
 Date :=   System.DWY2Date(WeekDay: Integer [, Week: Integer] [, Year: Integer])
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *WeekDay*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
@@ -38,9 +40,9 @@ The four-digit number of the year. If you omit this optional parameter, the year
 
 
 ## Return Value
-*Date*  
-&emsp;Type: [Date](../date/date-data-type.md)  
-  
+*Date*
+&emsp;Type: [Date](../date/date-data-type.md)
+
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -48,7 +50,8 @@ The four-digit number of the year. If you omit this optional parameter, the year
 ## Remarks  
  A special situation occurs if the week \(*Week*\) that is input into DWY2DATE spans two years. Depending on *Weekday*, the year of the output *Date* can differ from the input year. This scenario is shown in the following code example.  
   
-## Example  
+## Example 1
+
  The input week in this example spans two years. 
 
 ```  
@@ -73,7 +76,8 @@ end;
   
  The example shows that the first day of the week in the first week of the year 2014 is regarded as the date December 30, 2013. The first week of the year 2014 is the first week that has four or more days in the year 2014. That week starts on Monday, December 30, 2013, and ends on Sunday, January 5, 2014.  
   
-## Example  
+## Example 2
+
  The input week in this example spans two years.
 
 ```  
@@ -98,7 +102,8 @@ end;
   
  The example shows that the first day of the week in the first week of the year 2016 is regarded as the date January 4, 2016. The first week of the year 2016 is the first week that has four or more days in the year 2016. That week starts on Monday, January 4, 2016, and ends on Sunday, January 11, 2015.  
   
-## Example  
+## Example 3
+
  This example shows how to use the DWY2DATE method without specifying the optional *Year* parameter. The output in this example depends on the day on which you run the code. 
    
 ```  

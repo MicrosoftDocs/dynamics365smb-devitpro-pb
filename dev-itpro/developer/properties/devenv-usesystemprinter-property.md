@@ -1,37 +1,46 @@
 ---
 title: "UseSystemPrinter Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 1b00de44-adbd-4c8e-ad19-bee606f69f48
-caps.latest.revision: 5
 author: SusanneWindfeldPedersen
 ---
-
- 
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # UseSystemPrinter Property
-Sets which printer is suggested when the report is run.  
-  
-## Applies To  
- Reports  
-  
+> **Version**: _Available from runtime version 1.0._
+
+Sets which printer is suggested when the report is run.
+
+## Applies to
+-   Report
+
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+
 ## Property Value  
- **True** if you want the system default printer to be used; otherwise, **false**. The default is **false**.  
+
+**True** if you want the system default printer to be used; otherwise, **false**. The default is **false**.  
 
 ## Syntax
-```
+
+```AL
 UseSystemPrinter = true;
 ```
   
 ## Remarks  
- The user will be able to select another printer at runtime if the [UseRequestPage Property](devenv-userequestpage-property.md) is **true**.  
+
+The user will be able to select another printer at runtime if the [UseRequestPage Property](devenv-userequestpage-property.md) is **true**.  
   
- If the UseSystemPrinter property is set to **false**, but there is no specific printer defined for the User/Report combination, the system default printer will be suggested.  
+If the UseSystemPrinter property is set to **false**, but there is no specific printer defined for the User/Report combination, the system default printer will be suggested.  
   
 ## See Also  
- [UseRequestPage Property](devenv-userequestpage-property.md)
+
+[UseRequestPage Property](devenv-userequestpage-property.md)

@@ -1,8 +1,8 @@
 ---
-title: "IsExpanded Method"
+title: "TestPage.IsExpanded Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# IsExpanded Method
+# TestPage.IsExpanded Method
+> **Version**: _Available from runtime version 1.0._
+
 Specifies if rows on a test page are expanded.
 
 
@@ -21,18 +23,18 @@ Specifies if rows on a test page are expanded.
 ```
 Expanded :=   TestPage.IsExpanded()
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 
 ## Parameters
-*TestPage*  
-&emsp;Type: [TestPage](testpage-data-type.md)  
-An instance of the [TestPage](testpage-data-type.md) data type.  
+*TestPage*
+&emsp;Type: [TestPage](testpage-data-type.md)
+An instance of the [TestPage](testpage-data-type.md) data type.
 
 ## Return Value
-*Expanded*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the rows on the test page are expanded, otherwise **false**.  
+*Expanded*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+**true** if the rows on the test page are expanded, otherwise **false**.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

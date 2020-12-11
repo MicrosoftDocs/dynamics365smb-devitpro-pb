@@ -1,7 +1,7 @@
 ---
 title: "Width Property"
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,20 +12,20 @@ caps.latest.revision: 22
 author: jswymer
 ---
 
- 
-
 # Width Property
+> **Version**: _Available from runtime version 1.0._
 
 Sets the width of a field when it appears as a column in a list. The width is specified by an integer that corresponds to the number of characters. <!-- and must be a fixed number when specified. --> 
   
-## Applies To  
+## Applies to  
   
--   Page fields  
-  
--   Table fields  
+-   Table Field
+-   Page Field
+-   Page Label
 
 ## Syntax
-```
+
+```AL
 Width = Integer;
 ```
 
@@ -46,9 +46,10 @@ For controls, the width specifies the width of the column.
  For example, use the **Width** property to set decimals so that they do not take up too much space in a grid.
 -->
 ## Example
+
 The following example sets the column width of a field to 50 characters.
 
-```
+```AL
  repeater(GroupName)
             {
                 field(MyField; MyField)
@@ -63,6 +64,7 @@ The following example sets the column width of a field to 50 characters.
 <!-- For controls on the [!INCLUDE[rtc](includes/rtc_md.md)] you always have the option of resizing column width in the UI, but when running the [!INCLUDE[nav_web](includes/nav_web_md.md)] the **Width** property can be set to a fixed number to increase readability. -->
 
 ## See Also
+
 [Properties](devenv-properties.md)  
 [Using Designer](../devenv-inclient-designer.md)  
 [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user  ) 

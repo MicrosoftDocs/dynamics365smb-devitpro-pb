@@ -2,7 +2,7 @@
 title: "Decimal Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Decimal Data Type
+> **Version**: _Available from runtime version 1.0._
+
 Denotes decimal numbers ranging from -999,999,999,999,999.99 to +999,999,999,999,999.99.
 
 
@@ -21,7 +23,8 @@ Denotes decimal numbers ranging from -999,999,999,999,999.99 to +999,999,999,999
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Example  
+## Example 1
+
  The following are examples of decimal values.  
 
 ```  
@@ -29,7 +32,8 @@ Denotes decimal numbers ranging from -999,999,999,999,999.99 to +999,999,999,999
 3425.57  
 ```  
 
-## Example  
+## Example 2
+
  The following is not a decimal, but rather an [Integer Data Type](../../datatypes/devenv-integer-data-type.md).  
 
 ```  

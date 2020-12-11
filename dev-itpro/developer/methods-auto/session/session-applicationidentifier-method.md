@@ -1,8 +1,8 @@
 ---
-title: "ApplicationIdentifier Method"
+title: "Session.ApplicationIdentifier Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# ApplicationIdentifier Method
+# Session.ApplicationIdentifier Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets the application ID associated with the current thread.
 
 
@@ -21,14 +23,14 @@ Gets the application ID associated with the current thread.
 ```
 AppId :=   Session.ApplicationIdentifier()
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 
 
 ## Return Value
-*AppId*  
-&emsp;Type: [String](../string/string-data-type.md)  
-The application ID associated with the current thread.  
+*AppId*
+&emsp;Type: [String](../string/string-data-type.md)
+The application ID associated with the current thread.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

@@ -1,7 +1,7 @@
 ---
 title: "Bulk Inserts"
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -39,7 +39,7 @@ By default, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] automatica
 
     -   BLOB fields  
 
-    -   Fields with the **AutoIncrement** property set to **Yes**  
+    -   Fields with the **AutoIncrement** property set to **True**  
 
  The following code example cannot use buffered inserts because it contains a `FIND` call on the **GL/Entry** table within the loop.  
 

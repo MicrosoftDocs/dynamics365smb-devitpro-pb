@@ -1,8 +1,8 @@
 ---
-title: "GetFilters Method"
+title: "RecordRef.GetFilters Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# GetFilters Method
+# RecordRef.GetFilters Method
+> **Version**: _Available from runtime version 1.0._
+
 Determines which filters have been applied to the table referred to by the RecordRef.
 
 
@@ -21,18 +23,18 @@ Determines which filters have been applied to the table referred to by the Recor
 ```
 String :=   RecordRef.GetFilters()
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 
 ## Parameters
-*RecordRef*  
-&emsp;Type: [RecordRef](recordref-data-type.md)  
-An instance of the [RecordRef](recordref-data-type.md) data type.  
+*RecordRef*
+&emsp;Type: [RecordRef](recordref-data-type.md)
+An instance of the [RecordRef](recordref-data-type.md) data type.
 
 ## Return Value
-*String*  
-&emsp;Type: [String](../string/string-data-type.md)  
-Filters that have been applied to the table that is referred to by the RecordRef parameter.  
+*String*
+&emsp;Type: [String](../string/string-data-type.md)
+Filters that have been applied to the table that is referred to by the RecordRef parameter.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

@@ -2,7 +2,7 @@
 title: "Query Properties"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,19 +22,16 @@ This topic lists properties that apply to the query object.
 |[Caption Property](devenv-caption-property.md)|<ul><li>Query Object</li><li>Column control</li><li>Filter control</li></ul>|
 |[CaptionML Property](devenv-captionml-property.md)|<ul><li>Query Object</li><li>Column control</li><li>Filter control</li></ul>|
 |[ColumnFilter Property](devenv-columnfilter-property.md)|<ul><li>Column control</li><li>Filter control</li></ul>|
+|[DataAccessIntent Property](devenv-dataaccessintent-property.md)|<ul><li>Query Object</li></ul>|
 |[DataItemLink Property (Query)](devenv-dataitemlink-query-property.md)|<ul><li>DataItem control</li></ul>|
-|[DataItemLinkType Property](devenv-dataitemlink-type-property.md)|<ul><li>DataItem control</li></ul>|
-|[DataItemTable Property](devenv-dataitemtable-property.md)|<ul><li>DataItem control</li></ul>|
-|[DataItemTableFilter Property](devenv-dataitemtable-filter-property.md)|<ul><li>DataItem control</li></ul>|
-|[DataSource Property](devenv-datasource-property.md)|<ul><li>Column control</li><li>Filter control</li></ul>|
 |[Description Property](devenv-description-property.md)|<ul><li>Query Object</li><li>DataItem control</li><li>Column control</li><li>Filter control</li></ul>|
+|[EntityCaption Property](devenv-entitycaption-property.md)|<ul><li>Query Object</li></ul>|
+|[EntityCaptionML Property](devenv-entitycaptionml-property.md)|<ul><li>Query Object</li></ul>|
 |[EntityName Property](devenv-entityname-property.md)|<ul><li>Query Object</li></ul>|
+|[EntitySetCaption Property](devenv-entitysetcaption-property.md)|<ul><li>Query Object</li></ul>|
+|[EntitySetCaptionML Property](devenv-entitysetcaptionml-property.md)|<ul><li>Query Object</li></ul>|
 |[EntitySetName Property](devenv-entitysetname-property.md)|<ul><li>Query Object</li></ul>|
-|[ID Property](devenv-id-property.md)|<ul><li>Query Object</li><li>DataItem control</li><li>Column control</li><li>Filter control</li></ul>|
-|[Indentation Property (Query)](devenv-indentation-query-property.md)|<ul><li>DataItem control</li><li>Column control</li><li>Filter control</li></ul>|
 |[Method Property](devenv-method-property.md)|<ul><li>Column control</li></ul>|
-|[MethodType Property](devenv-methodtype-property.md)|<ul><li>Column control</li></ul>|
-|[Name Property](devenv-name-property.md)|<ul><li>Query Object</li><li>DataItem control</li><li>Column control</li><li>Filter control</li></ul>|
 |[ObsoleteState Property](devenv-obsoletestate-property.md)|<ul><li>Query Object</li><li>Column control</li><li>DataItem control</li><li>Filter control</li></ul>|
 |[ObsoleteReason Property](devenv-obsoletereason-property.md)|<ul><li>Query Object</li><li>Column control</li><li>DataItem control</li><li>Filter control</li></ul>|
 |[OrderBy Property](devenv-orderby-property.md)|<ul><li>Query Object</li></ul>|

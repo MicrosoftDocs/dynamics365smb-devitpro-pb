@@ -1,8 +1,8 @@
 ---
-title: "WriteFrom Method"
+title: "HttpContent.WriteFrom Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# WriteFrom Method
+# HttpContent.WriteFrom Method
+> **Version**: _Available from runtime version 1.0._
+
 Sets HttpContent content to the provided text or stream.
 
 
@@ -22,9 +24,9 @@ Sets HttpContent content to the provided text or stream.
  HttpContent.WriteFrom(Text: Text)
 ```
 ## Parameters
-*HttpContent*  
-&emsp;Type: [HttpContent](httpcontent-data-type.md)  
-An instance of the [HttpContent](httpcontent-data-type.md) data type.  
+*HttpContent*
+&emsp;Type: [HttpContent](httpcontent-data-type.md)
+An instance of the [HttpContent](httpcontent-data-type.md) data type.
 
 *Text*  
 &emsp;Type: [Text](../text/text-data-type.md)  

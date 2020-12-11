@@ -1,8 +1,8 @@
 ---
-title: "Id Method"
+title: "ModuleDependencyInfo.Id Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Id Method
+# ModuleDependencyInfo.Id Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets the app ID of the specified app.
 
 
@@ -21,18 +23,18 @@ Gets the app ID of the specified app.
 ```
 Id :=   ModuleDependencyInfo.Id()
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 
 ## Parameters
-*ModuleDependencyInfo*  
-&emsp;Type: [ModuleDependencyInfo](moduledependencyinfo-data-type.md)  
-An instance of the [ModuleDependencyInfo](moduledependencyinfo-data-type.md) data type.  
+*ModuleDependencyInfo*
+&emsp;Type: [ModuleDependencyInfo](moduledependencyinfo-data-type.md)
+An instance of the [ModuleDependencyInfo](moduledependencyinfo-data-type.md) data type.
 
 ## Return Value
-*Id*  
-&emsp;Type: [Guid](../guid/guid-data-type.md)  
-The application ID.  
+*Id*
+&emsp;Type: [Guid](../guid/guid-data-type.md)
+The application ID.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

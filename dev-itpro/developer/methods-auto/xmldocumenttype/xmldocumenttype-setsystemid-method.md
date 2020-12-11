@@ -1,8 +1,8 @@
 ---
-title: "SetSystemId Method"
+title: "XmlDocumentType.SetSystemId Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# SetSystemId Method
+# XmlDocumentType.SetSystemId Method
+> **Version**: _Available from runtime version 1.0._
+
 Sets the system identifier for this Document Type Definition (DTD).
 
 
@@ -22,9 +24,9 @@ Sets the system identifier for this Document Type Definition (DTD).
 [Ok := ]  XmlDocumentType.SetSystemId(Value: String)
 ```
 ## Parameters
-*XmlDocumentType*  
-&emsp;Type: [XmlDocumentType](xmldocumenttype-data-type.md)  
-An instance of the [XmlDocumentType](xmldocumenttype-data-type.md) data type.  
+*XmlDocumentType*
+&emsp;Type: [XmlDocumentType](xmldocumenttype-data-type.md)
+An instance of the [XmlDocumentType](xmldocumenttype-data-type.md) data type.
 
 *Value*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -32,9 +34,9 @@ A string that contains the new system identifier for this Document Type Definiti
 
 
 ## Return Value
-*Ok*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the operation was successful; otherwise **false**.  If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+*Ok*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+**true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

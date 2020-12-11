@@ -1,14 +1,15 @@
 ---
-title: "How to: Mount or Dismount a Tenant on a Dynamics 365 Business Central Server Instance"
+title: "Mount or Dismount a Tenant on a Business Central Server Instance"
+description: Learn how to mount and dismount tenant databases on Business Central Server instances
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/29/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ---
-# Mount or Dismount a Tenant on a Microsoft Dynamics Server Instance
+# Mount or Dismount a Tenant on a Business Central Server Instance
 If a [!INCLUDE[server](../developer/includes/server.md)] instance is configured for multitenancy, then you can mount and dismount tenant databases by using the [!INCLUDE[admintool](../developer/includes/admintool.md)] or **Mount-NAVTenant** or **Dismount-NAVTenant** cmdlets in [!INCLUDE[adminshell](../developer/includes/adminshell.md)].  
 
  Mounting a tenant by using the [!INCLUDE[admintool](../developer/includes/admintool.md)] requires that you have a running [!INCLUDE[server](../developer/includes/server.md)] instance. This is not required when you use the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]. With the **Mount-NAVTenant**, you can mount a tenant by either specifying the [!INCLUDE[server](../developer/includes/server.md)] instance, if it is running, or the application database.  

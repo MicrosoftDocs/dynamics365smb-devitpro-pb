@@ -3,7 +3,7 @@ title: "Moving Custom Fields From Base Application to Extensions"
 description: "DMoving Custom Fields From Base Application to Extensions"
 author: jswymer
 ms.custom: na
-ms.date: 09/13/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -35,7 +35,7 @@ In this task, you will mark the custom field in the base application table as be
 
     For example, in the AL code of **Customer** base application table object, add the `ObsoleteState = Removed` property to the **ShoeSize** field.
 
-    ```
+    ```AL
     field(9008;"ShoeSize"; Integer)
     {
         DataClassification = CustomerContent;
@@ -56,7 +56,7 @@ In this step, you will create a table extension object that includes a field tha
 
     Give the field the same data type and length (if any) as the custom field in the base table you want to replace. You will have to assign the field a different ID than the custom field. This example adds a field named `ABC - ShoeSize` (for example, where `ABC` is your approved ISV prefix) and has the data type `integer`.
     
-    ```
+    ```AL
     tableextension 50101 CustTableExt extends Customer
     {
         fields
@@ -80,7 +80,7 @@ Because the **Customer Card** was originally modified to include a field for the
     Add the field in the desired location within the page layout, in this case, it is added last. You can give the field the same caption as the original field. 
 
     
-    ```
+    ```AL
     pageextension 50102 Shoesize extends "Customer Card"
     {
         layout
@@ -109,7 +109,7 @@ In this example, you will use the [VALIDATE method](methods-auto/record/record-v
 1. In the AL project for the new extension, create a codeunit object and set `SubType` property to `Install`.
 2. Add the `OnInstallAppPerCompany()` and write code that checks whether this is a first-time installation of the extension.
     
-    ```
+    ```AL
     codeunit 50100 ShoeSize
     {
         Subtype = Install;
@@ -130,7 +130,7 @@ In this example, you will use the [VALIDATE method](methods-auto/record/record-v
     ```
 3. Add a local method to the codeunit that iterates through the records of the **Customer** table and replicates data to the new field (**ABC - ShoeSize**). 
 
-    ```
+    ```AL
     local procedure HandleFreshInstall();
     begin
         if CustomerRec.FINDSET() then

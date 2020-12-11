@@ -1,8 +1,8 @@
 ---
-title: "NamespacePrefix Method"
+title: "XmlAttribute.NamespacePrefix Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# NamespacePrefix Method
+# XmlAttribute.NamespacePrefix Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets the prefix of the attribute (if any).
 
 
@@ -21,18 +23,18 @@ Gets the prefix of the attribute (if any).
 ```
 NamespacePrefix :=   XmlAttribute.NamespacePrefix()
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 
 ## Parameters
-*XmlAttribute*  
-&emsp;Type: [XmlAttribute](xmlattribute-data-type.md)  
-An instance of the [XmlAttribute](xmlattribute-data-type.md) data type.  
+*XmlAttribute*
+&emsp;Type: [XmlAttribute](xmlattribute-data-type.md)
+An instance of the [XmlAttribute](xmlattribute-data-type.md) data type.
 
 ## Return Value
-*NamespacePrefix*  
-&emsp;Type: [String](../string/string-data-type.md)  
-The prefix of the attribute (if any).  
+*NamespacePrefix*
+&emsp;Type: [String](../string/string-data-type.md)
+The prefix of the attribute (if any).
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

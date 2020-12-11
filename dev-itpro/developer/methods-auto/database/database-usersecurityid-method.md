@@ -1,8 +1,8 @@
 ---
-title: "UserSecurityId Method"
+title: "Database.UserSecurityId Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# UserSecurityId Method
+# Database.UserSecurityId Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets the unique identifier of the user that is logged on to the current session.
 
 
@@ -21,14 +23,14 @@ Gets the unique identifier of the user that is logged on to the current session.
 ```
 USID :=   Database.UserSecurityId()
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 
 
 ## Return Value
-*USID*  
-&emsp;Type: [Guid](../guid/guid-data-type.md)  
-The ID that is assigned to the user by the application. This is the value of the User Security ID field in table 2000000120, the User table, for the current user.  
+*USID*
+&emsp;Type: [Guid](../guid/guid-data-type.md)
+The ID that is assigned to the user by the application. This is the value of the User Security ID field in table 2000000120, the User table, for the current user.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

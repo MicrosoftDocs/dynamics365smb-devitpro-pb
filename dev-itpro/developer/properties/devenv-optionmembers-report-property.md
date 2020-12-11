@@ -1,7 +1,7 @@
 ---
 title: "OptionMembers Property (Report)"
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,9 +16,11 @@ caps.latest.revision: 13
 This property seemed new to Niels, he can only guess about how this property works. He suggested talking to Esben from our team.
 -->
 # OptionMembers Property (Report)
+> **Version**: _Available from runtime version 1.0._
+
 Gets the list of options that are available in the field that is currently selected.
   
-## Applies To  
+## Applies to  
   
 -   Report columns  
 

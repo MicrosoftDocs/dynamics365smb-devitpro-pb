@@ -2,7 +2,7 @@
 title: Reports Overview
 description: Use reports to display information from database to structure and summarize information and print documents, such as invoices. 
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -42,3 +42,4 @@ The following table includes links to help you get started with designing the re
 [Creating a Report](devenv-howto-report-layout.md)  
 [Request Pages](devenv-request-pages.md)  
 [Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md)  
+[Utilizing Read Scale-Out for Better Performance](../administration/database-read-scale-out-overview.md)  

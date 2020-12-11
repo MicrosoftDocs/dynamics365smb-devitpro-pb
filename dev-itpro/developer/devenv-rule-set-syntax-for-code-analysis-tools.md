@@ -3,7 +3,7 @@ title: "Ruleset for the Code Analysis Tool"
 description: "Description of the custom ruleset for the Code Analysis Tool."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -45,7 +45,7 @@ A **Rule** is a complex JSON object that specifies how you can process a specifi
 
 ## Examples
 The following example shows a ruleset that sets the severity of rule **AA0001 : There must be exactly one space character on each side of a binary operator such as := + - AND OR =.** provided by the **CodeCop** analyzer to **Error**.
-```
+```json
 {
     "name": "Company ruleset",
     "description": "These rules must be respected by all the AL code written within the company.",
@@ -61,7 +61,7 @@ The following example shows a ruleset that sets the severity of rule **AA0001 : 
 
 The following example shows a project-specific ruleset that extends a company-wide ruleset contained in the file **company.ruleset.json** and sets the severity of the rule **AA0005 : Only use BEGIN..END to enclose compound statements.** provided by the **CodeCop** analyzer to **Info**.
 
-```
+```json
 {
     "name": "Personal Project ruleset",
     "description": "A list of project specific rules",
@@ -82,7 +82,9 @@ The following example shows a project-specific ruleset that extends a company-wi
 ```
 
 ## See Also
+
 [Using the Code Analysis Tools](devenv-using-code-analysis-tool.md)  
 [Using the Code Analysis Tools with the ruleset](devenv-using-code-analysis-tool-with-rule-set.md)  
 [AL Development Environment](devenv-reference-overview.md)  
+[Directives in AL](directives/devenv-directives-in-al.md)  
 [AL Language Extension Configuration](devenv-al-extension-configuration.md)  

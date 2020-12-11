@@ -2,7 +2,7 @@
 title: Install a cumulative update
 description: This article describes the tasks required for getting the monthly cumulative update applied to your Dynamics 365 Business Central on-premises.
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,13 +13,14 @@ author: jswymer
 ---
 # Installing a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Spring 2019 Cumulative Update
 
-This article describes how to install a cumulative update for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises. A cumulative update is a cumulative set of files that includes all hotfixes and regulatory features that have been released for Business Central.
+This article describes how to install a cumulative update for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises. A cumulative update is a set of files that include hotfixes and regulatory features released for Business Central.
+ 
 
 ## Download the cumulative update package
 
 The first thing to do is to download the Cumulative Update package that matches your Business Central deployment.
 
-1. Go to the relevant list of available updates for your on-premises version of Business Central, and then choose the Cumulative Update that you want.
+1. Go to the relevant list of available updates for your on-premises version of Business Central. Then, choose the Cumulative Update you want.
 
     For a list of supported versions of Business Central on-premises, see the [See Also](#see-also) section.
 2. From the cumulative update page, under the **Resolution** section, select the link for downloading the update and follow the instructions.
@@ -28,12 +29,12 @@ The first thing to do is to download the Cumulative Update package that matches 
 The cumulative update includes files that are separated into the following folders:
 - APPLICATION folder
   
-    Used for updating your application with the new or modified application objects that comprise the cumulative update.
+    Used for updating your application with the new or modified application objects that form the cumulative update.
 - DVD
 
     Contains the full Business Central product, including the Business Central installation program (setup.exe) and tools for upgrading to the platform.
 
-When this step is completed, you can proceed to update your Business Central deployment to the new platform and application.
+When this step is done, you can continue to update your Business Central deployment to the new platform and application.
 
 ## Update the platform
 
@@ -44,7 +45,7 @@ The following components are part of the [!INCLUDE[prodshort](../developer/inclu
 - SQL Server components
 - [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)]
 
-To upgrade to the latest platform the database must be converted by using the Dynamics NAV Development Environment.
+To upgrade to the latest platform, the database must be converted by using the Dynamics NAV Development Environment.
 
 1. (Single-tenant deployment only) Uninstall all extensions. 
 
@@ -52,20 +53,44 @@ To upgrade to the latest platform the database must be converted by using the Dy
 
     ```
     Get-NAVAppInfo -ServerInstance <ServerInstanceName> -Tenant default | % { Uninstall-NAVApp -ServerInstance <ServerInstanceName> -Name $_.Name -Version $_.Version }
-    ``` 
-1. Install Business Central components of the cumulative update.
+    ```
+3. Install Business Central components of the cumulative update.
 
-    From the DVD folder, run setup.exe to install Business Central. As a minimum, install the following components: Server, Web Server Components, SQL Server Components, and the Dynamics NAV Development Environment. For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
-3. Start the new [!INCLUDE[nav_dev_short_md](../developer/includes/nav_dev_short_md.md)] as an administrator
-4. Open the application database.
+    There are two ways to install components. You can use the setup.exe file from the installation media or manually patch files to the existing installation:
+
+    - Using setup.exe
+
+        1. Uninstall the current version of Business Central. 
+
+           You can uninstall it by running setup.exe found in the DVD folder of the download or from Control Panel.
+
+        2. From the DVD folder, run setup.exe to install Business Central.
+    
+            As a minimum, install the following components: Server, Web Server Components, SQL Server Components, and the Dynamics NAV Development Environment. For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
+    - Manually patch the components
+    
+        With this way, you copy component files from installation media (DVD) to the current installation folders as described in the  following table:
+
+        |Component|Copy from DVD |To current installation folder|
+        |---------|---------|--|
+        |Server|DVD\ServiceTier\program files\Microsoft Dynamics NAV\140|C:\Program Files\Microsoft Business Central\<140>\Service|
+        |WebClient|DVD\WebClient\Microsoft Dynamics NAV\140\Web Client|C:\Program Files\Microsoft Dynamics 365 Business Central\<140>\Web Client|
+        |Windows Client and Development Environment|DVD\RoleTailoredClient\program files\Microsoft Dynamics NAV\140\RoleTailored Client|C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\<140>\RoleTailored Client|
+        |Microsoft Office Outlook Integration|<ul><li>DVD\Outlook\program files\Microsoft Dynamics NAV\140\OutlookAddin</li><li>Microsoft.Dynamics.NAV.OLSync.NAVSyncAddIn.dll</li></ul>|<ul><li>C:\Program Files(x64)\Microsoft Office\Office \<version\></li><li>C:\Program Files (x64)\Microsoft Office\Office\xx-XX</li></ul>|
+
+    > [!TIP]
+    > Before you install, save a copy of the configuration files for the [!INCLUDE[server](../developer/includes/server.md)] (CustomSettings.config), the [!INCLUDE[webserver](../developer/includes/webserver.md)] (navsettings.json), and [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)] (ClientUserSettings.config). You can then refer to settings the copies to configure the components again. 
+    
+4. Start the new [!INCLUDE[nav_dev_short_md](../developer/includes/nav_dev_short_md.md)] as an administrator
+6. Open the application database.
 
     For more information, see [Open a Database](../cside/cside-open-database.md).
-5. If prompted, follow instructions to convert it to the new platform.
-6. (Multitenant deployment only) Mount an old tenant to the Business Central Server instance.
+7. If prompted, follow instructions to convert it to the new platform.
+8. (Multitenant deployment only) Mount an old tenant to the Business Central Server instance.
 
-    You will have to do this step and the next for each tenant. For more information, see [Mount or Dismount a Tenant](../administration/mount-dismount-tenant.md).
+    you'll have to do this step and the next for each tenant. For more information, see [Mount or Dismount a Tenant](../administration/mount-dismount-tenant.md).
  
-7. Synchronize the database (tenant).
+9. Synchronize the database (tenant).
 
     For more information about syncing, see [Synchronizing the Tenant Database and Application Database](../administration/synchronize-tenant-database-and-application-database.md).
 
@@ -103,17 +128,17 @@ Using [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] for 
         For more information about the worksheet, see [Import Worksheet](../cside/cside-import-worksheet.md).
 
         > [!NOTE]
-        > If you do not want to use the Worksheet, you can use the Changelog.<Locale>.<Build No.>.txt file to manually apply the changes to the objects in your database.
+        > If you don't want to use the Worksheet, you can use the Changelog.<Locale>.<Build No.>.txt file to manually apply the changes to the objects in your database.
 
 ### Updating from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] October 2018 DE Cumulative Update 2 or earlier
 
-Starting with Cumulative Update 03, the ELSTER local functionality is contained in an extension instead of the base application. If you want the latest updates to the ELSTER functionality, you will have to publish and install the extension, which is explained later in this article. To prepare for this, delete the following objects from the application database: page 11016, page 11017, page 11019, and report 11016. These objects will be replaced by the ELSTER extension.
+Starting with Cumulative Update 03, the ELSTER local functionality is contained in an extension instead of the base application. If you want the latest updates to the ELSTER functionality, you must publish and install the ELSTER extension. Publishing the extension is described later. To prepare for this step, delete the following objects from the application database: page 11016, page 11017, page 11019, and report 11016. These objects will be replaced by the ELSTER extension.
 
 Make sure you synchronize the tenant after you delete the objects.
 
 ### Set the application version of database to the application version of the cumulative update
 
-You must increase the application version of the application database in order to perform a data upgrade. We recommend that you change to the application version to that of the cumulative update. You can get this version from the cumulative update release page. For more information, see [Version numbers in Business Central](../administration/version-numbers.md).  
+Increase the application version of the application database in order to do a data upgrade. We recommend that you change to the application version to that of the cumulative update. You can get this version from the cumulative update release page. For more information, see [Version numbers in Business Central](../administration/version-numbers.md).  
 
 To set the application version, use the [Set-NAVApplication](/powershell/module/microsoft.dynamics.nav.management/set-navapplication) cmdlet of the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] to set the application version as follows:
 
@@ -136,11 +161,11 @@ Set-NAVApplication -ServerInstance <ServerInstanceName> -ApplicationVersion Majo
     Start-NavDataUpgrade -ServerInstance <ServerInstanceName> -Tenant <TenantID>
     ```
 
-    Replace `<TenantID>` with the tenant ID of the database. If you do not have a multitenant server instance, use `default` or omit this parameter.
+    Replace `<TenantID>` with the tenant ID of the database. If you don't have a multitenant server instance, use `default` or omit this parameter.
   
 ##  <a name="AddExtensions"></a>Publish and install/upgrade extensions
 
-Complete this task if you are updating:
+Complete this task if you're updating:
 
 - A [!INCLUDE[prodshort](../developer/includes/prodshort.md)] October 2018 DE version earlier than Cumulative Update 3 and you want the latest updates to the Elster functionality. Use this procedure to install the following extension:
 
@@ -151,26 +176,26 @@ Complete this task if you are updating:
 
     The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation media (DVD) includes several new versions of Microsoft extensions (that is, extensions that have **Microsoft** as the publisher). If your old deployment uses these extensions, you have to upgrade the current versions to the new versions.
 
-    In addition, other extensions used in the old deployment that you still want to use must be repaired to work on the new platform.
+    Also, repair other extensions used in the old deployment that you still want to use so the extensions work on the new platform.
 
 The general steps for this task are listed below. For detailed steps, see [Publishing, Upgrading, and Installing Extensions During Upgrade](upgrade-publish-extensions.md) .
 
-1. Publish new system, test and application symbols.
+1. Publish new system, test, and application symbols.
 
-    You should unpublish the old versions first.
+    Unpublish the old versions first.
 2. Publish the new extension versions from the DVD.
     
-    This includes new versions of Microsoft extensions that you already have used on your application, and the ELSTER app for the DE version. The new extension versions are found in the `\Extensions` folder of the installation media (DVD).
+    The extensions include new versions of Microsoft extensions that you already have used on your application, and the ELSTER app for the DE version. The new extension versions are found in the `\Extensions` folder of the installation media (DVD).
 
 3. Synchronize the tenant database with the schema changes of the extensions.
 
-4. Upgrade the data associated with the Microsoft extensions. This is not required the first time you publish the ELSTER extension.
+4. Upgrade the data associated with the Microsoft extensions. This step isn't required the first time you publish the ELSTER extension.
 
 5. Install the newly published extensions on tenants. 
 
-6. Repair, synchronize, and install any custom extensions (third-party) that are currently published and that you still want to use.
+6. Repair, synchronize, and install any custom extensions (third-party) that are currently published. Do this step for old extensions that you still want to use.
 
-    This ensures that the extensions work on the new platform and application versions.
+    This step ensures that the extensions work on the new platform and application versions.
 
 ## See Also
 

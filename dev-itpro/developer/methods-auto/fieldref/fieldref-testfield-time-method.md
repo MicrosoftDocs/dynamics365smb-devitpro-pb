@@ -1,8 +1,8 @@
 ---
-title: "TestField Method"
+title: "FieldRef.TestField Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# TestField Method
+# FieldRef.TestField Method
+> **Version**: _Available from runtime version 1.0._
+
 Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.
 
 
@@ -22,9 +24,9 @@ Determines whether the contents of a field matches a given value. If the content
  FieldRef.TestField(Value: Time)
 ```
 ## Parameters
-*FieldRef*  
-&emsp;Type: [FieldRef](fieldref-data-type.md)  
-An instance of the [FieldRef](fieldref-data-type.md) data type.  
+*FieldRef*
+&emsp;Type: [FieldRef](fieldref-data-type.md)
+An instance of the [FieldRef](fieldref-data-type.md) data type.
 
 *Value*  
 &emsp;Type: [Time](../time/time-data-type.md)  

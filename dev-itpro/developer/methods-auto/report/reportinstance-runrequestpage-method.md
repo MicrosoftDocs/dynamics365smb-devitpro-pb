@@ -1,8 +1,8 @@
 ---
-title: "RunRequestPage Method"
+title: "Report.RunRequestPage Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# RunRequestPage Method
+# Report.RunRequestPage Method
+> **Version**: _Available from runtime version 1.0._
+
 Runs the request page for a report without running the report. Returns an XML string that contains the request page parameters that are entered on the request page.
 
 
@@ -22,9 +24,9 @@ Runs the request page for a report without running the report. Returns an XML st
 ReportParameters :=   Report.RunRequestPage([PageParameters: String])
 ```
 ## Parameters
-*Report*  
-&emsp;Type: [Report](report-data-type.md)  
-An instance of the [Report](report-data-type.md) data type.  
+*Report*
+&emsp;Type: [Report](report-data-type.md)
+An instance of the [Report](report-data-type.md) data type.
 
 *PageParameters*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -32,9 +34,9 @@ A string of request page parameters as XML to use to run the report.
 
 
 ## Return Value
-*ReportParameters*  
-&emsp;Type: [String](../string/string-data-type.md)  
-XML string that contains the request page parameters that are entered on the request page  
+*ReportParameters*
+&emsp;Type: [String](../string/string-data-type.md)
+XML string that contains the request page parameters that are entered on the request page
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -50,6 +52,8 @@ XML string that contains the request page parameters that are entered on the req
 
 > [!NOTE]  
 >  You can use these methods to schedule reports in the job queue.  
+
+Because the request page runs in the context of where it was invoked from, users cannot bookmark a link to this page from the user interface.  
 
 ## Example  
  This example illustrates how to use the RUNREQUESTPAGE method to run the request page for report ID 206 Sales Invoice. The request page parameters are saved to a table, and then uses the parameters with the EXECUTE, SAVEAS, and PRINT methods to preview the report, save it as a PDF file, and print it.  

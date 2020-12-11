@@ -1,37 +1,46 @@
 ---
 title: "LinksAllowed Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 854fb973-9df4-4b97-9e94-67d2509143d6
-caps.latest.revision: 8
 author: SusanneWindfeldPedersen
 ---
-
- 
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # LinksAllowed Property
-Sets whether links are allowed.  
-  
-## Applies To  
-  
--   Pages  
-  
-## Property Value  
- **True** if links are allowed; otherwise, **false**. The default value is **true**.  
+> **Version**: _Available from runtime version 1.0._
+
+Sets whether links are allowed.
+
+## Applies to
+-   Page
+-   Request Page
+
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Property Value
+
+**True** if links are allowed; otherwise, **false**. The default value is **true**.  
 
 ## Syntax
-```
+
+```AL
 LinksAllowed = false;
 ```  
-## Remarks  
- If LinksAllowed is set to **true**, then you can add links or notes to a page. The links can be a links to web sites, files stored on the local computer or on a remote computer, or links to pages.  
+
+## Remarks
+
+If LinksAllowed is set to **true**, then you can add links or notes to a page. The links can be a links to web sites, files stored on the local computer or on a remote computer, or links to pages.  
   
- On a page, the links and notes are displayed in FactBoxes. If LinksAllowed is set to **true**, then the **Actions** menu has a **Notes** item and a **Links** item. You use these to create and modify notes and links.  
+On a page, the links and notes are displayed in FactBoxes. If LinksAllowed is set to **true**, then the **Actions** menu has a **Notes** item and a **Links** item. You use these to create and modify notes and links.  
   
-## See Also  
- [Properties](devenv-properties.md)
+## See Also
+
+[Properties](devenv-properties.md)

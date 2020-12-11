@@ -1,8 +1,8 @@
 ---
-title: "SetData Method"
+title: "Notification.SetData Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# SetData Method
+# Notification.SetData Method
+> **Version**: _Available from runtime version 1.0._
+
 Specifies a data property value for the notification. The data is specified as text in a key-value pair.
 
 
@@ -22,9 +24,9 @@ Specifies a data property value for the notification. The data is specified as t
  Notification.SetData(Name: String, Value: String)
 ```
 ## Parameters
-*Notification*  
-&emsp;Type: [Notification](notification-data-type.md)  
-An instance of the [Notification](notification-data-type.md) data type.  
+*Notification*
+&emsp;Type: [Notification](notification-data-type.md)
+An instance of the [Notification](notification-data-type.md) data type.
 
 *Name*  
 &emsp;Type: [String](../string/string-data-type.md)  

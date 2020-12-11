@@ -1,8 +1,9 @@
 ---
 title: "InvokeExtensibilityMethod Method"
+description: "The InvokeExtensibilityMethod in AL for Business Central"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/18/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,9 +13,11 @@ author: SusanneWindfeldPedersen
 ---
 
 # InvokeExtensibilityMethod Method
-Invokes an AL trigger on the [!INCLUDE[d365fin_server_md](../includes/d365fin_server_md.md)] on the page that contains the control add-in.  
+
+Invokes an AL trigger on the [!INCLUDE[d365fin_server_md](../includes/d365fin_server_md.md)] on the page that contains the control add-in. For more information, see [Control Addin Object](../devenv-control-addin-object.md).
   
-## Method Signature  
+## Method signature
+
 `void Microsoft.Dynamics.NAV.InvokeExtensibilityMethod(name, arguments, skipIfBusy, callback)`  
   
 ## Parameters  
@@ -29,13 +32,15 @@ Invokes an AL trigger on the [!INCLUDE[d365fin_server_md](../includes/d365fin_se
 > [!IMPORTANT]  
 > The callback function is useful for synchronizing multiple calls to the server. This is used, for example, when transferring multiple data blocks to the server to prevent overflowing the communication channel between the client and the server.  
   
- **Callback Function Syntax**  
+## Callback Function Syntax
   
 The syntax of the callback function is the following:  
+```AL
+function callback()
+```
   
-`function callback()`  
-  
-## skipIfBusy Options  
+## skipIfBusy Options
+
 The following table illustrates the different settings of `skipIfBusy` combined with the client’s status.  
   
 |skipIfBusy set to|Client is busy|Action|  
@@ -49,7 +54,7 @@ The following table illustrates the different settings of `skipIfBusy` combined 
 ## Example  
 For a detailed code example, see [Walkthrough: Creating and Using a Client Control Add-in](Walkthrough--Creating-and-Using-a-Client-Control-Add-in.md)  -->
   
-```  
+```AL
 var map = new VEMap('controlAddIn');  
     map.onLoadMap = function () {  
     var arguments = [map.GetCenter()];  
@@ -57,3 +62,6 @@ var map = new VEMap('controlAddIn');
     };  
     map.LoadMap(...);  
 ```
+## See Also
+
+[AL Method Reference](../methods-auto/library.md)  

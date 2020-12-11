@@ -1,8 +1,8 @@
 ---
 title: "The END, IF, REPEAT, UNTIL, FOR, WHILE, and CASE statement should always start a line."
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
-ms.date: 02/06/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

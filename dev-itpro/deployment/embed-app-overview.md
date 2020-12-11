@@ -1,7 +1,7 @@
 ---
 title: "Embed app overview"
 author: jswymer
-
+description: Provides an overview of Embed App in Business Central
 ms.custom: na
 ms.reviewer: na
 ms.suite: na
@@ -9,7 +9,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
-ms.date: 01/22/2020
+ms.date: 10/01/2020
 ---
 
 # Embed App Overview
@@ -53,7 +53,7 @@ The [!INCLUDE[embedapp](../developer/includes/embedapp.md)] will promote the par
   - Web Services: `https://[application name].api.bc.dynamics.com`
 - Name, image, and icon on the provisioning page of the Fixed Client Endpoint  
 - Splash screen of the client  
-- Title bar of the browser tab (for example, “Fabrikam Apples”)  
+- Title bar of the browser tab (for example, "Fabrikam Apples")  
 - A dedicated product tile, icon, and short marketing description in the Dynamics shell ([https://home.dynamics.com](https://home.dynamics.com))  
 - In-product messages (such as pop-up errors, warnings, notifications)  
 
@@ -63,7 +63,7 @@ The [!INCLUDE[embedapp](../developer/includes/embedapp.md)] will promote the par
 
 The partner can control which third party apps can be installed for their [!INCLUDE[embedapp](../developer/includes/embedapp.md)].  
 
-- Whitelisting of the 3rd party apps - no other apps will be possible to install, except the ones explicitly approved by the partner  
+- Safe listing of the 3rd party apps - no other apps will be possible to install, except the ones explicitly approved by the partner  
 - App install/uninstall controlled by the partner  
 - The partner can choose to allow a customer to install other extensions from the AppSource, but this will be an explicit partner decision, not the default behavior  
 
@@ -71,26 +71,25 @@ The partner can control which third party apps can be installed for their [!INCL
 
 Partners can choose to bring their own code-customized base application as an [!INCLUDE [embedapp](../developer/includes/embedapp.md)] for several reasons:
 
-- Shortening time-to-market (“lift and shift” approach).
+- Shortening time-to-market ("lift and shift" approach).
 
     The partner's current solution is a significantly customized version of the [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] application and it will require substantial time and effort to migrate it into extensions. A partner can lift their solution as-is (upgraded to a supported platform) to [!INCLUDE[[prodshort](../developer/includes/prodshort.md)] service and start offering it to their new and prospective customers. Then, they can gradually start moving their functionality into extensions to achieve the benefits that come with the extension model.  
 - Overcoming the limitations of the current extensions framework.
 
     Extensions today can support many scenarios and the Microsoft team is working on extending these capabilities even more. However, some customization needs of the partners are not yet possible using the current version of the extensions framework, so partners can choose to do these changes directly in the base application using C/SIDE Development Environment based on [!INCLUDE [prodshort](../developer/includes/prodshort.md)] version 14.  
 - Availability of 3rd party add-ins as extensions.
-
-    Some of the add-ins required by the [!INCLUDE[embedapp](../developer/includes/embedapp.md)] might not yet be available as extensions, for the reasons mentioned above. The partner can choose to import these add-ins as FOB files into the base application that they submit with the [!INCLUDE[embedapp](../developer/includes/embedapp.md)].  
+    
 - Usage of .NET interoperability and custom assemblies.
 
-    Partners that use .NET interoperability in their current application to address multiple business scenarios. Although extensions today allow a number of these scenarios to be implemented in AL, they don’t and cannot cover for all possible scenarios of .NET usage. Therefore, the partner can choose to import the required .NET add-ins into the Add-ins table of the base application, and these add-ins will automatically be deployed into the environment where they will be running.
+    Partners that use .NET interoperability in their current application to address multiple business scenarios. Although extensions today allow a number of these scenarios to be implemented in AL, they don't and cannot cover for all possible scenarios of .NET usage. Therefore, the partner can choose to import the required .NET add-ins into the Add-ins table of the base application, and these add-ins will automatically be deployed into the environment where they will be running.
 
 ### Additional settings (metadata)
 
-- An [!INCLUDE[embedapp](../developer/includes/embedapp.md)] is the property of the partner, so the customers of the [!INCLUDE[embedapp](../developer/includes/embedapp.md)] must be able to find the partner’s own legal, privacy, contact, community and feedback links (not Microsoft links) when they work with the app:
+- An [!INCLUDE[embedapp](../developer/includes/embedapp.md)] is the property of the partner, so the customers of the [!INCLUDE[embedapp](../developer/includes/embedapp.md)] must be able to find the partner's own legal, privacy, contact, community and feedback links (not Microsoft links) when they work with the app:
 
     ![Embed App contact](../media/embed-app-contact.png "Embed App contact")  
 
-- Whitelisted domains for embedding [!INCLUDE[embedapp](../developer/includes/embedapp.md)] pages into other web sites, including SharePoint (“frame ancestors”) 
+- Safe listed domains for embedding [!INCLUDE[embedapp](../developer/includes/embedapp.md)] pages into other web sites, including SharePoint ("frame ancestors") 
 - Target version of [!INCLUDE[d365_bus_central_md](../developer/includes/d365_bus_central_md.md)] platform
 - Target version of [!INCLUDE[d365_bus_central_md](../developer/includes/d365_bus_central_md.md)] base application (if not included with the [!INCLUDE[embedapp](../developer/includes/embedapp.md)])  
 - Azure KeyVault account for storing application secrets, such as accounts for connecting to 1-3rd party services  

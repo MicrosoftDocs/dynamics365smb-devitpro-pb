@@ -1,7 +1,7 @@
 ---
 title: "Creating and Customizing Cues"
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -10,14 +10,15 @@ ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 
- 
-
 # Creating Cues and Action Tiles on Role Centers
 
 This article provides an overview of Cues and Action tiles, and the tasks involved in creating and customizing them for displaying on Role Centers, as illustrated in the following figure:  
 
 ![Cues on the Role Center](media/Cue-overview-online-v2.png "Cues on the Role Center")  
-  
+
+> [!NOTE]  
+> Modifying actions in Cue groups on page extensions is not supported.
+
 ##  <a name="CueDesign"></a>Designing Cues 
 
 A Cue provides a visual representation of aggregated business data, such as the number of open sales invoices or the total sales for the month. Cues are interactive, meaning that you can select the Cue to drill down to data or open another page, run code, and more. Cues display data that is contained in a table field. This can be raw data or calculated data.
@@ -68,7 +69,7 @@ The first thing that you must do is to create a table that contains fields that 
 
     - Set the [FieldClass property](properties/devenv-fieldclass-property.md) to **FlowField** or **Normal**.  
   
-      If field is a FlowField, then set the `CalcFormula` property to calculate the Cue data. For more information, see [Calculation Formulas and the CalcFormula Property](properties/devenv-calculation-formulas-and-the-calcformula-property.md).  
+      If field is a FlowField, then set the `CalcFormula` property to calculate the Cue data. For more information, see [Calculation Formulas and the CalcFormula Property](devenv-calculation-formulas-and-the-calcformula-property.md).  
   
 3. Add a primary key field for FlowFields.  
 
@@ -78,7 +79,7 @@ The first thing that you must do is to create a table that contains fields that 
 
 #### Example
 
-```
+```AL
 table 50100 SalesInvoiceCueTable
 {
     DataClassification = ToBeClassified;
@@ -108,7 +109,8 @@ table 50100 SalesInvoiceCueTable
 }
 ```
 
-###  <a name="CreatePage"></a> Add Cues to a Page object   
+###  <a name="CreatePage"></a> Add Cues to a Page object
+
 After you have a table for holding the Cue data, you create a page that you associate the table, and then add Cue fields on the page. Typically, you will create Card Part type page that will be part of the Role Center page. Cues are arranged into one or more groups on the page. Each group will have its own caption.  
 
 1. Create a page object that has the [SourceTable property](properties/devenv-sourcetable-property.md) set to the Cue data table.
@@ -121,7 +123,7 @@ After you have a table for holding the Cue data, you create a page that you asso
 
     You must initialize the Cue fields on the page. To do this, for example, you can add the following AL code to the [OnOpenPage Trigger](triggers/devenv-onopenpage-trigger.md).     
 
-    ```
+    ```AL
           RESET;
         if not get then begin
             INIT;
@@ -130,7 +132,7 @@ After you have a table for holding the Cue data, you create a page that you asso
     ```    
 
 #### Example 
-```
+```AL
 page 50105 SalesInvoiceCuePage
 {
     PageType = CardPart;
@@ -165,6 +167,7 @@ page 50105 SalesInvoiceCuePage
 ```
 
 ## <a name="ActionTiles"></a>Designing Action tiles
+
 Action tiles promote an action or operation to the user on the Role Center. Action tiles act as links that perform a task or operation, like opening another page, starting a video, targeting an another resource or URL, or running code. They will arrange on the workspace just like that use the normal layout.
 
 Similar to Cues, Actions tile can be grouped together, under a common caption, by using the `cuegroup` control. The difference is that instead adding field controls under the `cuegroup` control, you create Action tiles by adding actions to the `cuegroup` control. 
@@ -185,7 +188,7 @@ Similar to Cues, Actions tile can be grouped together, under a common caption, b
 #### Example
 The following code adds an Action tile that opens **Sales Invoice** page.
 
-```
+```AL
 cuegroup(SalesActionontainer)
 {
     Caption='New Sales Invoice';

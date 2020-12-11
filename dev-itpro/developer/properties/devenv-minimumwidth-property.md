@@ -1,46 +1,53 @@
 ---
 title: "MinimumWidth Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: dd671414-a7c3-44bd-a860-a8bda61c7913
-caps.latest.revision: 15
 author: SusanneWindfeldPedersen
 ---
-
- 
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # MinimumWidth Property
+> **Version**: _Available from runtime version 1.0._
 
-Specifies the minimum size in pixels to which the control add-in can dynamically decrease its width.
+Specifies the minimum width that the control add-in can be shrunk to. This setting only applies if the HorizontalShrink setting is specified.
 
 ## Applies to
-- Control add-in objects
-  
+-   Control Add In
+
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## Value Type 
   
--   Integer 
+- Integer 
 
 ## Property Values
+
 The default is 0. If [HorizontalShrink](devenv-horizontalshrink-property.md) is **true** but MinimumWidth is 0, the control add-in can shrink to nothing.
 
 ## Dependent Property
+
 This setting only applies if [HorizontalShrink](devenv-horizontalshrink-property.md) is set to **true**.
 
 ## Remarks 
+
 Use this property when the visual content of the add-in is no longer usable below a certain size.
 
-## Code Example 
-```
+## Example 
+
+```AL
 RequestedWidth = 600;
 HorizontalShrink = true;
 MinimumWidth = 100;
 ```
 
-## See Also  
+## See Also
+
 [Control Add-In Object](../devenv-control-addin-object.md)   
- 

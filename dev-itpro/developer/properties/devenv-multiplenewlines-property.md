@@ -1,33 +1,40 @@
 ---
 title: "MultipleNewLines Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: efd1be68-2d66-4ee8-af3f-63a43a64b152
-caps.latest.revision: 7
 author: SusanneWindfeldPedersen
 ---
-
- 
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # MultipleNewLines Property
-Sets a value that determines whether users can add multiple new lines between records.  
-  
-## Applies To  
-  
--   Pages  
-  
+> **Version**: _Available from runtime version 1.0._
+
+Sets a value that determines whether users can add multiple new lines between records.
+
+## Applies to
+-   Page
+-   Request Page
+
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## Property Value  
- **True** if you want to allow users to add multiple new lines between records; otherwise, **false**. The default is **false**.  
+
+**True** if you want to allow users to add multiple new lines between records; otherwise, **false**. The default is **false**.  
 
 ## Syntax
-```
+
+```AL
 MultipleNewLines = true;
 ```
   
-## See Also  
- [AutoSplitKey Property](devenv-autosplitkey-property.md)
+## See Also
+
+[AutoSplitKey Property](devenv-autosplitkey-property.md)

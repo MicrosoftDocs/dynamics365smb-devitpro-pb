@@ -1,8 +1,8 @@
 ---
-title: "GetUrl Method"
+title: "System.GetUrl Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# GetUrl Method
+# System.GetUrl Method
+> **Version**: _Available from runtime version 1.0._
+
  Generates a URL for the specified client target that is based on the configuration of the server instance. If the code runs in a multitenant deployment architecture, the generated URL will automatically apply to the tenant ID of the current user.
 
 
@@ -21,8 +23,8 @@ author: SusanneWindfeldPedersen
 ```
 String :=   System.GetUrl(ClientType: ClientType [, Company: String] [, ObjectType: ObjectType] [, ObjectId: Integer] [, Record: Record] [, UseFilters: Boolean])
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *ClientType*  
 &emsp;Type: [ClientType](../clienttype/clienttype-option.md)  
@@ -51,9 +53,9 @@ Specifies whether to include filters that are defined on the object as a text st
 
 
 ## Return Value
-*String*  
-&emsp;Type: [String](../string/string-data-type.md)  
-  
+*String*
+&emsp;Type: [String](../string/string-data-type.md)
+
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

@@ -2,7 +2,7 @@
 title: Change the Server Instance
 description: Change the currently used Server instance by specifying the server instance from a list, or the field in the Database options window. 
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

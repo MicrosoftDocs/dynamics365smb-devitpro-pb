@@ -2,7 +2,7 @@
 title: SOAP and ODATA Web Services
 description: Compare the features of SOAP and OData web services and know how to create and maintain these services. 
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,10 +20,10 @@ ms.service: "dynamics365-business-central"
 
 Developers planning to create [!INCLUDE[dyn_nav](../developer/includes/dyn_nav_md.md)] web services may need to decide which type of web service is better suited to their needs. The following table shows the types of web service applications that you can create for the web service protocols.  
 
-||SOAP web services|OData web services|  
+|Object|SOAP web services|OData web services|  
 |-|-----------------------|------------------------|  
 |Pages|Yes: Create, Read, Update, and Delete operations \(CRUD\)|Yes: Create, Read, Update, and Delete operations \(CRUD\)|  
-|Codeunits|Yes|No|  
+|Codeunits|Yes|Yes (through OData unbound actions|  
 |Queries|No|Yes: Read-only|  
 
 [!INCLUDE[prodshort](../developer/includes/prodshort.md)] supports OData web services in addition to the SOAP web services that have been available since [!INCLUDE[nav2009](../developer/includes/nav2009_md.md)]. 
@@ -67,7 +67,7 @@ For SOAP services, you can also use extension codeunits to extend the default se
 ## Web Services in Multitenant Deployments  
  If your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution is used in a multitenant deployment architecture, you must make sure that any code that generates or consumes a web service specifies the relevant tenant. Web services are set up in the application, but typically you want to consume company-specific and tenant-specific data.  
 
- If you use the GETURL method, the generated URL will automatically apply to the user’s tenant ID. For more information, see [GETURL Method](../developer/methods-auto/system/system-geturl-clienttype-string-objecttype-integer-recordref-boolean-method.md).
+ If you use the GETURL method, the generated URL will automatically apply to the user's tenant ID. For more information, see [GETURL Method](../developer/methods-auto/system/system-geturl-clienttype-string-objecttype-integer-recordref-boolean-method.md).
 
  The URL for accessing a web service in a multitenant deployment must specify the tenant ID in one of two ways: As a query parameter, or as a host name. If you use host names for tenants, the host name must be specified as an alternative ID.  
 

@@ -1,7 +1,8 @@
 ---
 title: "Method Attributes"
+description: "The attributes that you can apply to methods in AL for Business Central"
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,17 +13,17 @@ author: SusanneWindfeldPedersen
 
 # Method Attributes
 
-An attribute is modifier on a method declaration that specifies information that controls the method's use and behavior. For example, decorating a method with the Integration attribute sets the method to be an event publisher. An attribute can have one or more arguments that set properties for the method instance.
+An attribute is modifier on a method declaration that specifies information that controls the method's use and behavior. For example, decorating a method with the `Integration` attribute sets the method to be an event publisher. An attribute can have one or more arguments that set properties for the method instance.
 
 In AL, attributes are placed before the method, and have the following syntax:
 
-```
+```AL
 [Attribute_Name(ArgumentName : data_type, ArgumentName : data_type)]
 ```
 
 For example, the Integration attribute has two arguments, and the syntax is:
 
-```
+```AL
 [Integration(IncludeSender : Boolean, GlobalVarAccess : Boolean)]
 ```
 
@@ -30,6 +31,7 @@ For example, the Integration attribute has two arguments, and the syntax is:
 
 The following method attributes are available:
 
+- [CommitBehavior Attribute](devenv-commitbehavior-attribute.md)  
 - [Business Attribute](devenv-business-attribute.md)  
 - [ConfirmHandler Attribute](devenv-confirmhandler-attribute.md)  
 - [EventSubscriber Attribute](devenv-eventsubscriber-attribute.md)  
@@ -54,24 +56,8 @@ The following method attributes are available:
 - [StrMenuHandler Attribute](devenv-strmenuhandler-attribute.md)
 - [Test Attribute](devenv-test-attribute.md)
 - [TestPermissions Attribute](devenv-testpermissions-attribute.md)
+- [TryFunction Attribute](devenv-tryfunction-attribute.md)
 
-<!--
-[None Attribute](devenv-filterpagehandler-attribute.md)
-[RunOnClient Attribute](devenv-reporthandler-attribute.md)
-[Scope Attribute](devenv-reporthandler-attribute.md)
+## See Also
 
-[SecurityFiltering Attribute](devenv-reporthandler-attribute.md)
-
-[ServiceEnablesd Attribute](devenv-reporthandler-attribute.md)
-
-[SupressDispose Attribute](devenv-strmenuhandler-attribute.md)
-
-[TransactionalModel Attribute](devenv-test-attribute.md)
-
-[TryFunction Attribute](devenv-test-attribute.md)
-
-[WithEvents Attribute](devenv-test-attribute.md)
- -->
-
-## See Also   
-[AL Method Reference](devenv-al-method-reference.md)  
+[AL Method Reference](../methods-auto/library.md)  

@@ -1,8 +1,8 @@
 ---
-title: "ExportObjects Method"
+title: "System.ExportObjects Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# ExportObjects Method
+# System.ExportObjects Method
+> **Version**: _Available from runtime version 1.0 until version 1.0 where it was deprecated._
+
 Exports application objects to a file.
 
 > [!NOTE]
@@ -23,8 +25,8 @@ Exports application objects to a file.
 ```
  System.ExportObjects(FileName: String, var ObjectRecord: Record [, Format: Integer])
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *FileName*  
 &emsp;Type: [String](../string/string-data-type.md)  

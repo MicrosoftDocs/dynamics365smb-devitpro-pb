@@ -2,7 +2,7 @@
 title: "APIPublisher Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 ---
  
 # APIPublisher Property 
+> **Version**: _Available from runtime version 1.0._
+
 The APIPublisher property is applicable to the following types: 
 - [APIPublisher Property (Page)](devenv-APIPublisher-page-property.md)   
 - [APIPublisher Property (Query)](devenv-APIPublisher-query-property.md)   

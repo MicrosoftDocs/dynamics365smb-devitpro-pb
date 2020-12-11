@@ -2,7 +2,7 @@
 title: "Option Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Option Data Type
+> **Version**: _Available from runtime version 1.0._
+
 Denotes an option value. In the code snippet below, you can see how the Option data type is declared.
 
 
@@ -43,7 +45,8 @@ procedure HelloWithOptions(OptionParameter : Option Alpha, "Bra-vo")
  For more information about option variables in multilanguage-enabled applications, see [Developing Multilanguage-Enabled Applications](../../dynamics-nav/Developing-Multilanguage-Enabled-Applications.md).  
  --> 
 
-## Example  
+## Example 1
+
 In the Purchase Header table, the Status field is an Option data type. In the following example, the option value is converted into an integer.
 
  ```
@@ -55,7 +58,8 @@ begin
 end;
 ```  
   
-## Example  
+## Example 2
+
 This example shows how you can use the value of an option field as a constant in your AL code.  
   
 ```  

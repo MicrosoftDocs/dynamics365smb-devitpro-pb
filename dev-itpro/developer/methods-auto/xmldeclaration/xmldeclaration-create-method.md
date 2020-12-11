@@ -1,8 +1,8 @@
 ---
-title: "Create Method"
+title: "XmlDeclaration.Create Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Create Method
+# XmlDeclaration.Create Method
+> **Version**: _Available from runtime version 1.0._
+
 Creates an XmlDeclaration node.
 
 
@@ -36,9 +38,9 @@ A string containing "yes" or "no" that specifies whether the XML is standalone o
 
 
 ## Return Value
-*XmlDeclaration*  
-&emsp;Type: [XmlDeclaration](xmldeclaration-data-type.md)  
-The created XmlDeclaration node.  
+*XmlDeclaration*
+&emsp;Type: [XmlDeclaration](xmldeclaration-data-type.md)
+The created XmlDeclaration node.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

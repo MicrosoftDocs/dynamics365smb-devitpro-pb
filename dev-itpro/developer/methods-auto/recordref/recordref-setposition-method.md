@@ -1,8 +1,8 @@
 ---
-title: "SetPosition Method"
+title: "RecordRef.SetPosition Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# SetPosition Method
+# RecordRef.SetPosition Method
+> **Version**: _Available from runtime version 1.0._
+
 Sets the fields in a primary key on a record to the values specified in the String parameter. The remaining fields are not changed.
 
 
@@ -22,9 +24,9 @@ Sets the fields in a primary key on a record to the values specified in the Stri
  RecordRef.SetPosition(String: String)
 ```
 ## Parameters
-*RecordRef*  
-&emsp;Type: [RecordRef](recordref-data-type.md)  
-An instance of the [RecordRef](recordref-data-type.md) data type.  
+*RecordRef*
+&emsp;Type: [RecordRef](recordref-data-type.md)
+An instance of the [RecordRef](recordref-data-type.md) data type.
 
 *String*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -35,7 +37,7 @@ The string that is used to set the primary key. This string contains the primary
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- This method works the same as the [SETPOSITION Method \(Record\)](../../methods/devenv-setposition-method-record.md).  
+ This method works the same as the [SETPOSITION Method \(Record\)](../record/record-setposition-method.md).  
   
 ## Example  
  The following example changes the value in the primary key, the No. field, in table 23 \(Vendor\). Other fields are not changed. The code starts by opening table 23 \(Vendor\) as a RecordRef variable that is named MyRecordRef. The [FIELD Method \(RecordRef\)](recordref-field-method.md) selects the first field \(No.\) and stores the value in the MyFieldRef variable. The [SETFILTER Method \(FieldRef\)](../fieldref/fieldref-setfilter-method.md) sets a filter that selects records from 10000 to 20000. The [FINDLAST Method \(RecordRef\)](recordref-findlast-method.md) finds and retrieves the last record in the record set. The SETPOSITION method changes the value in the No. field from 20000 to 20001. The record No. and the name of the record are displayed before and displayed again after the primary key value is changed. The string that contains the new primary key is initialized in the InputString variable. 

@@ -3,7 +3,7 @@ title: "Using the Code Analysis Tools with the Ruleset"
 description: "Configuring and using a custom ruleset on an AL project."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,7 @@ At this point, the selected analyzers will be run on your project. Next, add som
 ## Add your own code to the project
 In the Visual Studio Code Explorer, open the `HelloWorld.al` file and replace the existing code with the following:
 
-```
+```AL
 pageextension 50100 CustomerListExt extends "Customer List"
 {
     trigger OnOpenPage();
@@ -52,7 +52,7 @@ To create and customize a ruleset of your own, follow the next steps:
 2. Save the empty file with a name, for example `<name>.ruleset.json` and make a note of the file path.
 3. Add the following code to the `<name>.ruleset.json` file:
 
-    ```
+    ```json
     {
         "name": "My Custom ruleset",
         "rules": [
@@ -81,8 +81,10 @@ Changing the contents of the ruleset file will not be detected by the [!INCLUDE[
 <!-- - In the project settings file, make changes to one of the settings, such as **al.ruleSetPath**, and save it. You can then undo the changes. -->
 
 ## See also
+
 [Ruleset for the Code Analysis Tool](devenv-rule-set-syntax-for-code-analysis-tools.md)  
 [Using the Code Analysis Tools](devenv-using-code-analysis-tool.md)  
+[Directives in AL](directives/devenv-directives-in-al.md)  
 [Development in AL](devenv-dev-overview.md)  
 [Debugging in AL](devenv-debugging.md)  
 [AL Language Extension Configuration](devenv-al-extension-configuration.md)  

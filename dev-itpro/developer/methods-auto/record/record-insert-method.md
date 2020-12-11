@@ -1,8 +1,9 @@
 ---
 title: "Insert Method"
+description: Describes the Insert method in Business Central
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -44,7 +45,7 @@ If this parameter is true, the code in the OnInsert Trigger is executed. If this
 
 The inserted record will automatically get assigned a SystemId by the platform. To assign a specific SystemId instead of the one assigned by the platform, use [Insert(Boolean, Boolean)](record-insert-boolean-boolean-method.md) instead.
 
-## Example
+## Example 1
 
 This example shows how to use the INSERT method without a return value.  
   
@@ -56,7 +57,7 @@ Customer.Insert(true);
   
 If customer 1120 already exists, then a run-time error occurs.  
   
-## Example
+## Example 2
   
 This example shows how to use the INSERT method with a return value.
 
@@ -79,7 +80,7 @@ No run-time error occurs if customer 1120 already exists.
 
 ## See Also
 
-[SystemId Field](../../devenv-table-object.md#systemid)  
+[SystemId Field](../../devenv-table-system-fields.md#systemid)  
 [Record Data Type](record-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

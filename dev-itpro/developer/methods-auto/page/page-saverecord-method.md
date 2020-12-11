@@ -1,8 +1,8 @@
 ---
-title: "SaveRecord Method"
+title: "Page.SaveRecord Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# SaveRecord Method
+# Page.SaveRecord Method
+> **Version**: _Available from runtime version 1.0._
+
 Saves the current record as if performed by the client. If the record does not exist it is inserted, otherwise it is modified.
 
 
@@ -23,9 +25,9 @@ Saves the current record as if performed by the client. If the record does not e
 ```
 
 ## Parameters
-*Page*  
-&emsp;Type: [Page](page-data-type.md)  
-An instance of the [Page](page-data-type.md) data type.  
+*Page*
+&emsp;Type: [Page](page-data-type.md)
+An instance of the [Page](page-data-type.md) data type.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

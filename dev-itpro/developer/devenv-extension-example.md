@@ -3,7 +3,7 @@ author: jswymer
 title: "Building your first sample extension that uses new objects and extension objects"
 description: "Includes code for an example extension, complete with new objects, extension objects, and install and upgrade code."
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -53,7 +53,7 @@ The following code adds a new table **50100 Reward** for storing the reward leve
 > [!TIP]
 > Type `ttable` followed by the Tab key. This snippet will create a basic layout for a table object.
 
-```
+```AL
 table 50100 Reward
 {
     DataClassification = ToBeClassified;
@@ -116,7 +116,7 @@ The following code adds a new page **50101 Reward Card** for viewing and editing
 > [!TIP]
 > Use the snippet `tpage, Page` to create the basic structure for the page object.
 
-```
+```AL
 page 50101 "Reward Card"
 {
     // The page will be of type "Card" and will render as a card.
@@ -168,7 +168,7 @@ The following code adds the **50102 Reward List** page that enables users to vie
 > [!TIP]
 > Use the snippet `tpage, Page of type list` to create the basic structure for the page object. 
 
-```
+```AL
 page 50102 "Reward List"
 {
     // Specify that this page will be a list page.
@@ -221,7 +221,7 @@ After you have created the objects, update the **startupObjectId** in the `launc
 [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] Designer works in the browser and allows modifying the current page. It enables users to add existing table fields, move fields around, or remove fields from the page. Users can make changes to display the information they need, where they need it by using drag-and-drop components.  
 To show how the Designer changes the design of a page, you begin by adding two new fields to the **Reward** table. These fields will be used later on to exemplify the Designer's properties. 
 
-```
+```AL
 field(4;"Minimum Purchase";Decimal)
 {
     MinValue = 0;
@@ -238,7 +238,7 @@ field(5;"Last Modified Date";Date)
 ```
 The **Last Modified Date** field requires constant changes to remain accurate. To keep it updated, triggers will be used. Triggers are predefined methods that are executed when certain actions happen. They are added by default when you use the `ttable` template, but you can also use the `ttriger` snippet to add them manually. Now you can add code to the triggers.  
 
-```
+```AL
     // "OnInsert" trigger executes when a new record is inserted into the table.
     trigger OnInsert();
     begin
@@ -273,7 +273,7 @@ The **Last Modified Date** field requires constant changes to remain accurate. T
 From this point, changes to the **Reward Card** page can be done either manually by adding the code below in Visual Studio Code or by using the Designer's functions to add the same fields. Both ways lead to the same results, but the Designer speeds up the process. 
 
 
-```
+```AL
 field("Minimum Purchase";"Minimum Purchase")
 {
     ApplicationArea = All;
@@ -299,7 +299,7 @@ To add the same fields and customize the **Reward Card** page, follow the next s
 - Drag the **Minimum Purchase** and **Last Modified Date** fields from the list onto the page in the **Reward group**. 
 - Choose the **Reward** in the group caption to enable the value to be edited. Change the caption to **Info** and press **Enter**.
 
-After making these adjustments, finish up your design by choosing **Stop Designing**, which allows you to name the extension with an option to download code, and save the extension for the tenant. If you choose not to download the code at the end, you can still pull the changes via the F7 key shortcut from Visual Studio Code. You can also uninstall the extension by opening the **Extension Management** page.  
+After making these adjustments, finish up your design by choosing **Stop Designing**, which allows you to name the extension with an option to download code, and save the extension for the tenant. If you choose not to download the code at the end, you can still pull the changes via the **Alt+F6** key shortcut from Visual Studio Code. You can also uninstall the extension by opening the **Extension Management** page.  
 For more information about Designer, see [Designer](devenv-inclient-designer.md).  
 
 ## Customer table extension object
@@ -310,7 +310,7 @@ The following code creates a table extension for the **Customer** table and adds
 > [!TIP]
 > Use the snippet `ttableext` to create a basic structure for the table extension object.
 
-```
+```AL
 tableextension 50103 "Customer Ext" extends Customer
 {
     fields
@@ -347,7 +347,7 @@ A page extension object can be used to add new functionality to pages that are p
 > [!TIP]
 > Use the shortcuts `tpageext` to create the basic structure for the page extension object.
 
-```
+```AL
 pageextension 50104 "Customer Card Ext" extends "Customer Card"
 {
     layout
@@ -400,19 +400,19 @@ At an app level, you can specify where the Help for your functionality is publis
 Open the app.json file, and then change the value of the `contextSensitiveHelpUrl` property to point at the right location on your website. In this example, you publish Help for your app at *https://mysite.com/documentation*.  
 
 ```json
-"contextSensitiveHelpUrl": "https://mysite.com/documentation",
+"contextSensitiveHelpUrl": "https://mysite.com/documentation/",
 ```
 
 Next, you set the [ContextSensitiveHelpPage property](properties/devenv-contextsensitivehelppage-property.md) for the **Reward Card** and **Reward List** pages:
 
-```
+```AL
     // The target Help topic is hosted on the website that is specified in the app.json file.
     ContextSensitiveHelpPage = 'sales-rewards';
 ```
 
 The following example illustrates the properties for the **Reward List** page after you have specified the context-sensitive Help page.
 
-```
+```AL
 page 50102 "Reward List"
 {
     // Specify that this page will be a list page.
@@ -442,13 +442,13 @@ Even the best designed user interface can still be confusing to some. It can be 
 
 For the purposes of this walkthrough, add the following tooltip to the properties of the **Reward ID** field on all three pages:
 
-```
+```AL
 ToolTip = 'Specifies the level of reward that the customer has at this point.';
 ```
 
 The following example illustrates the tooltip:
 
-```
+```AL
 field("Reward ID";"Reward ID")
 {
 ApplicationArea = All;
@@ -458,7 +458,7 @@ ToolTip = 'Specifies the level of reward that the customer has at this point.';
 
 If you now deploy the app, you will be able to read the tooltip text for the **Reward ID** field, and if you choose the *Learn more* link or press Ctrl+F1, a new browser tab opens the equivalent of `https://mysite.com/documentation/sales-rewards`.  
 
-![CustomerCardExt_TooltipHelp.png](media/help/CustomerCardExt_TooltipHelp.png)
+![Customer card extension tool tip example](media/help/CustomerCardExt_TooltipHelp.png)
 
 ## Install code
 
@@ -469,7 +469,7 @@ In this example, the following install codeunit initializes the **Reward** table
 > [!TIP]
 > Use the shortcuts `tcodeunit` to create the basic structure for the codeunit.
 
-```
+```AL
 codeunit 50105 RewardsInstallCode
 {
     // Set the codeunit to be an install codeunit. 
@@ -511,13 +511,13 @@ codeunit 50105 RewardsInstallCode
 For more information about install code, see [Writing Extension Install Code](devenv-extension-install-code.md).
 
 ## Upgrade code
-When you upgrade an extension to a newer version, if any modifications to the existing data are required to support the upgrade, you must write upgrade code in an upgrade codeunit. In this example, the following upgrade codeunit contains code that changes the BRONZE reward level to customer records to ALUMINUM. The upgrade codeunit will run when you run the [Start-NAVAppDataUpgrade](/powershell/module/microsoft.dynamics.nav.apps.management/start-navappdataupgrade?view=businesscentral-ps) cmdlet. 
+When you upgrade an extension to a newer version, if any modifications to the existing data are required to support the upgrade, you must write upgrade code in an upgrade codeunit. In this example, the following upgrade codeunit contains code that changes the BRONZE reward level to customer records to ALUMINUM. The upgrade codeunit will run when you run the [Start-NAVAppDataUpgrade](/powershell/module/microsoft.dynamics.nav.apps.management/start-navappdataupgrade) cmdlet.
 
 
 > [!IMPORTANT]
 > Remember to increase the `version` number of the extension in the app.json file.
 
-```
+```AL
 codeunit 50106 RewardsUpgradeCode
 {
     // An upgrade codeunit includes AL methods for synchronizing changes to a table definition 
@@ -550,6 +550,18 @@ codeunit 50106 RewardsUpgradeCode
 ```
 For more information about writing and running upgrade code, see [Upgrading Extension](devenv-upgrading-extensions.md).  
 
+## Instrumenting your app with telemetry
+
+[!INCLUDE[prodshort](includes/prodshort.md)] emits telemetry data for several operations that occur when extension code is run. Create an Application Insights resource in Azure if you don't have one. For more information, see [Create an Application Insights resource](/azure/azure-monitor/app/create-new-resource). Now, add the Application Insights Key to the extension manifest (app.json file):
+
+```json
+"applicationInsightsKey": ["<instrumenation key>"]
+```
+
+Replace `<instrumenation key>` with your key.
+
+You can configure your extension to send this data to a specific Application Insights resource on Microsoft Azure. For more information, see [Sending Extension Telemetry to Azure Application Insights](devenv-application-insights-for-extensions.md).
+
 ## Conclusion
 
 This walkthrough demonstrated how an extension can be developed. The main AL objects and extension objects were used to store the reward levels, to view, and to edit them. The Designer was introduced as an alternative to modify visual aspects of page objects and to customize them from the web client instead of using code. Up to this point, the table and the page objects were empty, but the install codeunits were added and allowed to initialize the **Reward** table with a standard number of reward levels when the extension was installed. An upgrade code section was also included in this exercise to create a full picture of all processes involved when an extension is built. As a result, a user is enabled to assign one of the three reward levels to a customer and to change this scenario by upgrading the version of the extension. 
@@ -564,3 +576,4 @@ This walkthrough demonstrated how an extension can be developed. The main AL obj
 [How to: Publish and Install an Extension](devenv-how-publish-and-install-an-extension-v2.md)  
 [Converting Extensions V1 to Extensions V2](devenv-upgrade-v1-to-v2-overview.md)  
 [Configure Context-Sensitive Help](../help/context-sensitive-help.md)  
+[Sending Extension Telemetry to Azure Application Insights](devenv-application-insights-for-extensions.md)  

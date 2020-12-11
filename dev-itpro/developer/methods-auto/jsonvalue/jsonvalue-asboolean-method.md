@@ -1,8 +1,8 @@
 ---
-title: "AsBoolean Method"
+title: "JsonValue.AsBoolean Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# AsBoolean Method
+# JsonValue.AsBoolean Method
+> **Version**: _Available from runtime version 1.0._
+
 Converts the value in a JsonValue to a Boolean data type.
 
 
@@ -23,14 +25,14 @@ Result :=   JsonValue.AsBoolean()
 ```
 
 ## Parameters
-*JsonValue*  
-&emsp;Type: [JsonValue](jsonvalue-data-type.md)  
-An instance of the [JsonValue](jsonvalue-data-type.md) data type.  
+*JsonValue*
+&emsp;Type: [JsonValue](jsonvalue-data-type.md)
+An instance of the [JsonValue](jsonvalue-data-type.md) data type.
 
 ## Return Value
-*Result*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-The operation will succeed if the value was created from a Boolean using SetValue or if the value was parsed from a string containing one of the values : **true** or **false**. The operation will fail with a run-time error otherwise.  
+*Result*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+The operation will succeed if the value was created from a Boolean using SetValue or if the value was parsed from a string containing one of the values : **true** or **false**. The operation will fail with a run-time error otherwise.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

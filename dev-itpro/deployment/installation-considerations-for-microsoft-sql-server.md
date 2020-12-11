@@ -1,7 +1,8 @@
 ---
-title: "Installation Considerations for Microsoft SQL Server and Business Central"
+title: "Installation Considerations"
+description: Describes the requirements for installing and configuring Microsoft SQL Server to work with Business Central.
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/29/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -56,7 +57,7 @@ Consider putting data and log files for TempDB on a local SSD drive if you are u
 
 #### Data file and log file configuration
 
-Auto-growth of the database and/or transaction log files in production can degrade performance as all transaction must queue up and wait for SQL Server to grow the file before it can begin to process transactions again. This can create bottlenecks. We strongly recommend growing data and log files during off-peak periods and by 10% to 25% of the current size. We do not recommend disabling “Auto-Grow”, as in an emergency it is still better to have SQL Server to auto-grow files than to run out of disk space and bring the database down.
+Auto-growth of the database and/or transaction log files in production can degrade performance as all transaction must queue up and wait for SQL Server to grow the file before it can begin to process transactions again. This can create bottlenecks. We strongly recommend growing data and log files during off-peak periods and by 10% to 25% of the current size. We do not recommend disabling "Auto-Grow", as in an emergency it is still better to have SQL Server to auto-grow files than to run out of disk space and bring the database down.
 
 #### Max degree of parallelism (MAXDOP)
 
@@ -67,7 +68,7 @@ On SQL Server 2016, `MAXDOP` can be set on the database level, changing a databa
 
 Both advanced server configuration options and database scoped configurations can be set by using SQL Server Management Studio, see the SQL Server documentation for details.
 
-> NOTE
+> [!NOTE]
 > If you are running SQL Server Enterprise Edition, index maintenance can be done in parallel. If you run maintenance jobs to do this work in off-peak hours, you might want to set `MAXDOP` back to 0 while running these jobs. On SQL Server 2016, it is possible to set MAXDOP directly in the Rebuild Index Task wizard.
 
 #### Instance configuration

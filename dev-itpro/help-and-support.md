@@ -1,12 +1,12 @@
 ---
 title: "Resources for Help and Support"
-description: Learn about resources for support and product Help for Business Central.
+description: Learn about resources for support and product Help for Business Central if you are reselling partner or a developer.
 author: edupont04
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 02/05/2020
+ms.date: 10/28/2020
 ---
 
 # Resources for Help and Support for [!INCLUDE[prodlong](includes/prodlong.md)]
@@ -25,15 +25,40 @@ The functionality in the default version of [!INCLUDE[prodshort](includes/prodsh
 > |Business functionality docs|[/dynamics365/business-central](/dynamics365/business-central/) |Use this library to learn about business functionality. |
 > |Development and administration docs|[/dynamics365/business-central/dev-itpro/](/dynamics365/business-central/dev-itpro/)|Use this content to learn how to extend, customize, and administrate [!INCLUDE[prodshort](includes/prodshort.md)].|
 
-### Customize and extend the user assistance
+### AL developer documentation
 
-When a prospect signs up for a trial of [!INCLUDE[prodshort](includes/prodshort.md)] online, or before they buy [!INCLUDE [prodshort](developer/includes/prodshort.md)] on-premises, they have access to tooltips that can help them get unblocked, and context-sensitive links to learn more according to the [!INCLUDE[prodshort](includes/prodshort.md)] user assistance model. If you customize or extend [!INCLUDE[prodshort](includes/prodshort.md)], you are expected to also customize the user assistance so that users will have access to content that can help them get started, get unblocked, and learn more. For more information, see [User Assistance Model](user-assistance.md) and [Configure the Help Experience](deployment/configure-help.md).  
+In the [Development in AL](developer/devenv-dev-overview.md) section, you find descriptions of processes such as [compilation](developer/devenv-compilation-scope-overview.md) and [debugging](developer/devenv-debugging.md), and conceptual information about object types such as [tables](developer/devenv-tables-overview.md) and [events](developer/devenv-events-in-al.md).  
+
+The reference documentation of the AL language publishes under the [AL Programming](developer/devenv-programming-in-al.md) umbrella. This content is partly generated automatically from code, but currently most of the reference content is maintained by hand. Use the following landing pages to quickly find the reference content that you need:
+
+* Methods
+  * [Data Types and Methods in AL](developer/methods-auto/library.md)
+* Properties
+  * [Properties Overview](developer/properties/devenv-properties.md)
+* Triggers
+  * [Triggers Overview](developer/triggers/devenv-triggers.md)
+* Objects
+  * [Table object](developer/devenv-table-object.md)
+  * [Table extension object](developer/devenv-table-ext-object.md)
+  * [Page object](developer/devenv-page-object.md)
+  * [Page extension object](developer/devenv-page-ext-object.md)
+  * [Page customization object](developer/devenv-page-customization-object.md)
+  * [Report object](developer/devenv-report-object.md)
+  * [XMLport object](developer/devenv-xmlport-object.md)
+  * [Query object](developer/devenv-query-object.md)
+  * [Codeunit object](developer/devenv-codeunit-object.md)
+  * [Profile object](developer/devenv-profile-object.md)
+  * [Control add-in object](developer/devenv-control-addin-object.md)
 
 ### Product versions and Help versions
 
-In general, the [!INCLUDE [prodshort](developer/includes/prodshort.md)] content on the Docs.microsoft.com site reflects the latest version of [!INCLUDE [prodshort](developer/includes/prodshort.md)] online with limited support for earlier versions.  
+In general, the [!INCLUDE [prodshort](developer/includes/prodshort.md)] content on the docs.microsoft.com site reflects the latest version of [!INCLUDE [prodshort](developer/includes/prodshort.md)] online with limited support for earlier versions.  
 
-If you support [!INCLUDE [prodshort](developer/includes/prodshort.md)] on-premises, your solution might be one or two versions older than the latest version. This means that the content in the [business functionality docs](/dynamics365/business-central/) might describe functionality that your users do not have access to. For a better experience, we recommend that you take a copy of our content at the time when that reflected the version that your on-premises solution is based on and deploy that to your own website. For more information, see the [On-premises deployments](deployment/configure-help.md#on-premises-deployments) section in the [Configure the Help Experience](deployment/configure-help.md) article.
+If you support [!INCLUDE [prodshort](developer/includes/prodshort.md)] on-premises, your solution might be one or two versions older than the latest version. This means that the content in the [business functionality documentation](/dynamics365/business-central/) might describe functionality that your users do not have access to. For a better experience, we recommend that you take a copy of our content at the time when that reflected the version that your on-premises solution is based on and deploy that to your own website. For more information, see the [On-premises deployments](deployment/configure-help.md#on-premises-deployments) section in the [Configure the Help Experience](deployment/configure-help.md) article.
+
+### Customize and extend the user assistance
+
+If you customize or extend [!INCLUDE[prodshort](includes/prodshort.md)], you are expected to also customize the user assistance so that users will have access to content that can help them get started, get unblocked, and learn more. For more information, see [User Assistance Model](user-assistance.md) and [Configure the Help Experience](deployment/configure-help.md).  
 
 ## Support
 
@@ -43,41 +68,65 @@ For more information, see [Technical Support](technical-support.md).
 
 ## Training
 
-You and your customers can find free eLearning content on the Microsoft Learn site. Find the related learning paths at [aka.ms/bclearn](https://aka.ms/bclearn).  
+You and your customers can find free eLearning content on the [Microsoft Learn landing page for Business Central](/learn/dynamics365/business-central?WT.mc_id=dyn365bc_landingpage-docs) with suggested collections for getting started, managing financials, and extending Business Central.  
+
+The Learn site also includes role-specific learning paths for [developers](/learn/browse/?expanded=dynamics-365&products=dynamics-business-central&resource_type=learning%20path&roles=developer), [administrators](/learn/browse/?expanded=dynamics-365&products=dynamics-business-central&resource_type=learning%20path&roles=administrator), and [functional consultants](/learn/browse/?expanded=dynamics-365&products=dynamics-business-central&resource_type=learning%20path&roles=functional-consultant).  
+
+Additionally, partners in the Business Central community offer training and books. 
 
 ## Resources
 
 As a partner, you can keep on top of current and upcoming capabilities, and you can share Microsoft's roadmap with your prospects, for example. This section provides links to places to keep track of for people who are new to [!INCLUDE [prodshort](developer/includes/prodshort.md)] as well as for people who have been working with the product for years.  
 
-### Get set up as a partner
+This article provides information about the following types of resources:
 
-If you are not already a Microsoft partner, your company must get set up, and so must you as an employee. For more information, see [Take prospects and customers online](deployment/Deployment.md#take-prospects-and-customers-online).  
+* [How to get started as a partner](#partner)
+* [Where to learn about current and upcoming capabilities](#capabilities)
+* [How to make a feature request](#ideas)
+* [Where to find blog posts](#blog)
+* [Where to find communities](#communities)
+* [Where to file bugs and issues](#bugs)
+* [Where to contribute to code or docs](#github)
+* [Where to ask non-product related questions](#nonproduct)
 
-### Get started with the "Ready to Go" program
+### <a name="partner"></a>Get set up as a partner
 
-The “Ready to Go” program is designed to support you in the journey of bringing offerings to market. The program contains learning, coaching, and tooling. For more information, see [The “Ready to Go” Program](developer/readiness/readiness-ready-to-go.md).  
+If you are not already a Microsoft partner, your company must get set up, and so must you as an employee. For more information, see [Get Started as a Reseller of Business Central Online](administration/get-started-online.md) and [Get Started with Building Apps](developer/readiness/get-started.md).  
 
-Get an overview of role-specific training material from Microsoft in the [The "Ready to Go" learning catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json).  
+<!--### <a name="ready2go"></a>Get started with the "Ready to Go" program
 
-### Learn about current or upcoming capabilities
+The "Ready to Go" program is designed to support you in the journey of bringing offerings to market. The program contains learning, coaching, and tooling. For more information, see [The "Ready to Go" Program](developer/readiness/readiness-ready-to-go.md).  
+
+Get an overview of role-specific training material from Microsoft in the [The "Ready to Go" learning catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json).  -->
+
+### <a name="capabilities"></a>Learn about current or upcoming capabilities
 
 You can learn about current and coming capabilities through a number of different resources as outlined in the following table.
 
 > [!div class="mx-tdCol2BreakAll"]
 > |Name  |Location  |Description|
 > |---------|---------|---------|
-> |Release plans |[/dynamics365/release-plans/](/dynamics365/release-plans/#pivot=dyn365-relplan&panel=dyn365relplan) |Get an overview of upcoming and recently released capabilities in Business Central and other Dynamics 365 apps.|
-> |Business Central docs|[/dynamics365/business-central](/dynamics365/business-central) |Use this content to learn about business functionality. |
-> |Business Central development and administration docs|[/dynamics365/business-central/dev-itpro/](/dynamics365/business-central/dev-itpro/)|Use this content to learn how to extend, customize, and administrate Business Central.|
-> |The "Ready to Go" learning catalog|[/dynamics365/business-central/readiness/readiness-learning-catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json)|Get an overview of role-specific training material from Microsoft.|
+> |Release plans |[https://docs.microsoft.com/dynamics365/release-plans/](/dynamics365/release-plans/#pivot=dyn365-relplan&panel=dyn365relplan) |Get an overview of upcoming and recently released capabilities in Business Central and other Dynamics 365 apps.|
+> |Business functionality|[https://docs.microsoft.com/dynamics365/business-central/across-business-functionality](/dynamics365/business-central/across-business-functionality) |Use this content to learn about business functionality in the default version of [!INCLUDE [prodshort](developer/includes/prodshort.md)]. |
+> |Development in the AL language|[https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer](developer/devenv-dev-overview.md)|Use this content to learn how to extend and customize Business Central using the native AL language.|
+> |Administrative tasks|[https://docs.microsoft.com/dynamics365/business-central/dev-itpro/administration/](administration/tenant-administration.md)|Use this content to learn how to administer Business Central online.|
+> |Development in the AL language|[https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer](developer/devenv-programming-in-al.md)|Use this content to learn how to extend and customize Business Central.|
+> |Security in Business Central|[https://docs.microsoft.com/dynamics365/business-central/dev-itpro/security/](security/security-and-protection.md)|Use this content to help you understand and improve the security of Business Central.|
+> |Compliance|[https://docs.microsoft.com/dynamics365/business-central/compliance/compliance-overview](/dynamics365/business-central/compliance/compliance-overview)|Use this content to learn about compliance in relation to Business Central.|
+> |Performance|[https://docs.microsoft.com/dynamics365/business-central/dev-itpro/performance](performance/performance-overview.md)|Use this content to learn how to extend and customize Business Central.|
+> |Integrating with Business Central using web services|[https://docs.microsoft.com/dynamics365/business-central/dev-itpro/webservices/](webservices/web-services.md)|Use this content to learn how to integrate Business Central with other products by using web services.|
+> |Migrate to Business Central online|[https://docs.microsoft.com/dynamics365/business-central/dev-itpro/upgrade/upgrading-to-business-central-online](upgrade/upgrading-to-business-central-online.md)|Use this content to learn how you can move an on-premises solution to Business Central online.|
+> |Features not implemented in on-premises deployments|[https://docs.microsoft.com/dynamics365/business-central/dev-itpro/features-not-implemented-on-premises](features-not-implemented-on-premises.md)|Use this content to learn which capabilities in Business Central online are not available in Business Central on-premises deployments.|
+> |The Business Central learning catalog|[https://docs.microsoft.com/dynamics365/business-central/readiness/readiness-learning-catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json)|Get an overview of role-specific training material from Microsoft.|
+> |Free eLearning|[https://docs.microsoft.com/learn/dynamics365/business-central](/learn/dynamics365/business-central?WT.mc_id=dyn365bc_landingpage-docs)|Free [!INCLUDE [prodshort](developer/includes/prodshort.md)] collections and learning paths on Microsoft Learn|
 
-### Share an idea about a new feature you'd like to have
+### <a name="ideas"></a>Share an idea about a new feature you'd like to have
 
-On the [Dynamics 365 Ideas site](https://aka.ms/bcideas), you can provide suggestions for new feature and capabilities. Your input goes directly to Business Central’s engineering backlog for investigation and prioritization.  
+On the [Dynamics 365 Ideas site](https://aka.ms/bcideas), you can provide suggestions for new feature and capabilities. Your input goes directly to Business Central's engineering backlog for investigation and prioritization.  
 
-Make sure to search through the list of submitted suggestions, as chances are that someone already submitted something similar and might have already received votes. Vote if an idea already has been submitted to get it prioritized on the team’s backlog.  
+Make sure to search through the list of submitted suggestions, as chances are that someone already submitted something similar and might have already received votes. Vote if an idea already has been submitted to get it prioritized on the team's backlog.  
 
-### Business Central blog posts
+### <a name="blog"></a>Business Central blog posts
 
 The Dynamics 365 blog is where Microsoft publishes announcements, updates, and tips and tricks, including for [!INCLUDE[prodshort](includes/prodshort.md)].  
 
@@ -86,49 +135,68 @@ The Dynamics 365 blog is where Microsoft publishes announcements, updates, and t
 > |---------|---------|---------|
 > |Business Central on the Dynamics 365 blog|[https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/](https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/)|Use this blog to learn about opportunities, processes, and tools for the Business Central partner community. </br>Some older blog posts are still available on the [Community site for partners](https://community.dynamics.com/business/b/businesscentraldevitpro) or the [Community site for business users](https://community.dynamics.com/business/b/financials).|
 
-### Business Central communities
+### <a name="communities"></a>Business Central communities
 
 On the [Business Central Community site](https://community.dynamics.com/business), you have access to the [Business Central Forum](https://community.dynamics.com/business/f/758). You can use this forum to submit a question and learn from other Business Central community members. MVPs, partners, and Microsoft employees participate in the conversations.
 
 You can also join the [BCUG/NAVUG User Group for Dynamics 365 Business Central and Dynamics NAV](https://www.navug.com/home), which is a user-led, user-driven community of more than 26,000 users, partners, and MVPs.  
 
-### Summary of where to file bugs and issues
+### <a name="bugs"></a>Summary of where to file bugs and issues
 
-As a partner, you have different support channels depending on what type of issue you want support for. For more information, see [Technical Support for [!INCLUDE[prodlong](developer/includes/prodlong.md)]](technical-support.md).  
+As a partner, you have different support channels depending on what type of issue you want support for. The following list outlines the various channels.  
 
-|Issue type             |Site               |
-|-----------------------|-------------------|
-|Submit support request on behalf of your [!INCLUDE [prodshort](developer/includes/prodshort.md)] online customers|Start at the [Business Central administration center](administration/tenant-admin-center.md) where you can easily submit a support request in the Power Platform admin center|
-|Report bug in a preview or beta version|The [MS Collaborate](/collaborate/) site|
-|Collaboration on the AL language and developer experience|The [AL Developer Preview](https://github.com/microsoft/al) GitHub repo|
-|Report bug in supported in-market versions of [!INCLUDE [prodshort](developer/includes/prodshort.md)] on-premises|The [Support for business](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=93d37907-ad94-d591-22e9-593cfa09dd3f) site|
+[!INCLUDE [prod_support](includes/prodsupport.md)]
 
-#### Non-product related questions
+For more information, see [Technical Support for [!INCLUDE[prodlong](developer/includes/prodlong.md)]](technical-support.md).  
+
+### <a name="github"></a>Engage with us on GitHub
+
+GitHub brings together communities of developers and other contributors to discover, share, and build software. Here are some useful repositories for  [!INCLUDE [prodshort](developer/includes/prodshort.md)]:
+
+* Microsoft AL
+
+  For collaboration on the AL development environment in Visual Studio Code, use the GitHub repo here: [https://github.com/microsoft/al](https://github.com/microsoft/al)
+
+* Microsoft AL application add-ons
+
+  There are a couple of ways to engage with us in the [https://github.com/microsoft/ALAppExtensions](https://github.com/microsoft/ALAppExtensions/) repo:
+
+  * You can grab the code and contribute to the published apps.
+  * If you're building your own app and need something specific from us, such as an event, you can help improve the general extensibility of the business logic.
+
+* NAV Docker
+
+  Use this repo to collaborate around the source code and the scripts of the generic docker image for [!INCLUDE [prodshort](developer/includes/prodshort.md)]: [https://github.com/Microsoft/nav-docker](https://github.com/Microsoft/nav-docker)
+
+* BcContainerHelper/NavContainerHelper
+
+  Use this repo to collaborate around the source code and the scripts of BcContainerHelper PowerShell module for [!INCLUDE [prodshort](developer/includes/prodshort.md)]: [https://github.com/Microsoft/NavContainerHelper](https://github.com/Microsoft/NavContainerHelper)
+
+* Documentation
+
+  The product Help and developer and administration content is based on GitHub as well, and you can collaborate and extend the docs. The GitHub repos are:
+
+  * Product Help (English US): [https://github.com/MicrosoftDocs/dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs)
+  * Developer and administration content: [https://github.com/MicrosoftDocs/dynamics365smb-devitpro-pb](https://github.com/MicrosoftDocs/dynamics365smb-devitpro-pb)
+
+  For more information, see [Extend, Customize, and Collaborate on the Help](help/contributor-guide.md).
+
+#### <a name="nonproduct"></a>Non-product related questions
 
 On occasion, as a partner, you will run into questions that are not directly related to the product. The following list outlines how to get answers to those questions.
 
-|For questions related to               |Contact               |
-|---------------------------------------|----------------------|
-|Licensing or PSBC agreements |Email [MBS Orders](mailto:mbsorder@microsoft.com) or [MBS Agreements](mailto:mbsagree@microsoft.com), respectively |
-|Microsoft Partner Network, Partner Center, Cloud Solution Provider program |The Partner Center [Chat, Call or Submit a Ticket](https://partner.microsoft.com/support&data=02) site|
-|Payments, credit terms, checks, wire, or similar |Email [MBS Accounting](mailto:msgpar@microsoft.com) |
-|Technical issues with PSBC, PartnerSource, or Order Central|Email [IT MBS Support](mailto:itmbssup@microsoft.com)  |
-|Incentives |Email [CSA Team](mailto:mbscsa@microsoft.com)|
-|Cloud Solution Provider incentives|Email [Online Channel Incentives Support](mailto:ocina@microsoft.com) |
-|CSA/Ocina escalations| Email [NAOC Channel Incentives Escalations](mailto:naoccies@microsoft.com) |
-|Volume licensing |The [Call Logging Tool](https://clt.partners.extranet.microsoft.com/clt/) site or email [Online Licensing](mailto:mvlohelp@microsoft.com)|
+[!INCLUDE [nonprodsupport](includes/nonprodsupport.md)]
 
 ## Trials
 
 Giving prospects access to a pre-configured trial of [!INCLUDE[prodshort](includes/prodshort.md)] is an elegant way to introduce them to [!INCLUDE[prodshort](includes/prodshort.md)]. You can use the standard trial provided by Microsoft, or you can prepare your own including relevant extensions.  
 
-For more information, see [Take prospects and customers online](deployment/deployment.md#take-prospects-and-customers-online).  
+For more information, see [Preparing Demonstration Environments](administration/demo-environment.md).  
 
 ## See also
 
 [Technical Support](technical-support.md)  
 [Configuring the Help Experience](deployment/configure-help.md)  
 [Migrate Legacy Help](upgrade/migrate-help.md)  
-[The “Ready to Go” Program](developer/readiness/readiness-ready-to-go.md)  
+<!--[The "Ready to Go" Program](developer/readiness/readiness-ready-to-go.md)  -->
 [The Business Central Administration Center](administration/tenant-admin-center.md)  
-[Blog post: Find the right resources and provide feedback](https://community.dynamics.com/business/b/financials/archive/2018/12/04/find-the-right-resources-and-provide-feedback)  

@@ -3,7 +3,7 @@ title: "Adding Pages and Reports to Tell me"
 description: "Description of how you use AL to add pages and reports so that they are discoverable through search in the client."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: solsen
@@ -40,13 +40,13 @@ The values for the **UsageCategory** property are listed below. The sub category
 
 You can specify other words or phrases that can help users find a page or report by using the [AdditionalSearchTerms](../developer/properties/devenv-additionalsearchterms-property.md) and [AdditionalSearchTermsML](../developer/properties/devenv-additionalsearchtermsml-property.md) properties. If the page or report is searchable by **Tell me** (that is, th **UsageCategory** property is set a value other than `None`), the search terms specified by these properties are used in addition to the caption of the page or report. These properties are useful when the caption does not always reflect what users will look for. A good example of this in [!INCLUDE[prodshort](includes/prodshort.md)] is pages and reports associated with **Item**. Users unfamiliar with [!INCLUDE[prodshort](includes/prodshort.md)] might look for 'product' or 'merchandise' instead of 'item'.  
 
-> [!NOTE]
+> [!NOTE]  
 > For [!INCLUDE[prodshort](includes/prodshort.md)] on-premises, the [!INCLUDE[webserverinstance](includes/webserverinstance.md)] configuration file (navsettings.json) includes a setting called `UseAdditionalSearchTerms` that enables or disables the use of additional search terms by the **Tell me**. For more information, see [Configuring [!INCLUDE[webserver](includes/webserver.md)] Instances](../administration/configure-web-server.md#Settings).
 
 ## Example
 The following example creates a `SimpleItemList` page and sets a `UsageCategory` property to the page, so that the `SimpleItemList` page is discoverable through search using the **Tell me** feature. Also, the example sets the   `AdditionalSearchTerms` property to add two search terms for the page. 
 
-```
+```AL
 page 50210 SimpleItemList 
 { 
     PageType = List; 
@@ -78,14 +78,15 @@ The **AccessByPermission** property and **ApplicationArea** property are the opt
 
 ## Working in the [!INCLUDE[nav_dev_long_md](includes/nav_dev_long_md.md)]
 
->[!NOTE]
+> [!NOTE]
 > [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] is [!INCLUDE[2019_releasewave2_deprecated](../includes/2019_releasewave2_deprecated.md)].
 
-If you are using the [!INCLUDE[nav_dev_long_md](includes/nav_dev_long_md.md)], you can also set UsageCategory, AdditionalSearchTerms, AccessByPermission, and ApplicationArea properties on pages and reports to control their search.
+If you are using the [!INCLUDE[nav_dev_long_md](includes/nav_dev_long_md.md)], you can also set **UsageCategory**, **AdditionalSearchTerms**, **AccessByPermission**, and **ApplicationArea** properties on pages and reports to control their search.
 
 After you change these properties by using the [!INCLUDE[nav_dev_long_md](includes/nav_dev_long_md.md)], before the changes take effect in the client, you must run **Build Object Search Index** from the **Tools** menu.
 
 ## See Also
+
 [Adding Menus to the Navigation Pane](devenv-adding-menus-to-navigation-pane.md)  
 [UsageCategory Property](properties/devenv-usagecategory-property.md)  
 [Page Object](devenv-page-object.md)  

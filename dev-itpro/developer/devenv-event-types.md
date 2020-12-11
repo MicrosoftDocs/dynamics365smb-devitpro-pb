@@ -2,7 +2,7 @@
 title: "Event Types"
 description: Dynamics 365 Business Central supports different types of events including BusinessEvent, IntegrationEvent, Global and trigger events. 
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,7 +18,7 @@ author: SusanneWindfeldPedersen
  
  A business event is a custom event that is raised by AL code. It defines a formal contract that carries an implicit promise not to change in future releases. It is the expectation that business events are published by solution ISVs, including Microsoft.  
   
- Business events can be compared with publicly released APIs on which 3rd party solution provider develop integrations and additions. Therefore, the downstream cost of making changes to a business event implementation can be considerable for those who use the event in their applications. There may be some cases where changes are required; however, you should keep these to an absolute minimum. 
+ Business events can be compared with publicly released APIs on which 3rd party solution providers develop integrations and additions. Therefore, the downstream cost of making changes to a business event implementation can be considerable for those who use the event in their applications. There may be some cases where changes are required; however, you should keep these to an absolute minimum. 
   
  **Development considerations**  
   
@@ -38,7 +38,7 @@ author: SusanneWindfeldPedersen
   
 ## Global events
   
- Global events are predefined system events that are automatically raised by various base application codeunits. For example, codeunit 40 **LoginManagement** includes several global method triggers, such as CompanyOpen, CompanyClose, and GetSystemIndicator. For most of these global method triggers, there are one or two global events: a before and after event. For example, there is an OnBeforeCompanyOpen event and an OnAfterCompanyOpen event. The global events are defined as integration event publishers by local methods in the following codeunits.
+Global events are predefined system events that are automatically raised by various base application codeunits. For example, codeunit 40 **LoginManagement** includes several global method triggers, such as CompanyOpen, CompanyClose, and GetSystemIndicator. For most of these global method triggers, there are one or two global events: a before and after event. For example, there is an OnBeforeCompanyOpen event and an OnAfterCompanyOpen event. The global events are defined as integration event publishers by local methods in the following codeunits.
 
 |Codeunit ID|Codeunit Name|Event|
 |-----------|-------------|-----|
@@ -56,7 +56,11 @@ author: SusanneWindfeldPedersen
 |||OnAfterMakeTimeFilter|
 |42|CaptionManagement|OnAfterCaptionClassTranslate|
 |44|ReportManagement|OnAfterGetPrinterName|
+|||[OnAfterDocumentPrintReady](devenv-onafterdocumentprintready-event.md)|
+|||OnAfterGetPaperTrayForReport|
 |||OnAfterHasCustomLayout|
+|||[OnAfterSetupPrinters](devenv-onaftersetupprinters-event.md)|
+|||OnAfterSubstituteReport|
 |45|AutoFormatManagement|OnAfterAutoFormatTranslate|
 |49|GlobalTriggerManagement|OnAfterGetGlobalTableTriggerMask|
 |||OnAfterOnGlobalInsert|

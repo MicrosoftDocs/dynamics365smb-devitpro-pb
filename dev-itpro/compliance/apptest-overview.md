@@ -3,13 +3,13 @@ title: "Rules and Guidelines for AL Code"
 description: "Describing the steps you must go through to successfully submit your Dynamics 365 Business Central app to AppSource."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/25/2019
+ms.date: 10/01/2020
 ms.reviewer: edupont
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.author: rweigel
+ms.author: freddyk
 ---
 
 # Rules and Guidelines for AL Code
@@ -31,7 +31,7 @@ This page defines the rules and guidelines to follow when writing AL code in an 
 
 ## Common pitfalls
 
-To help you save time, we‘re sharing a list of the top 15 common pitfalls that regularly lead to app validation failures.  
+To help you save time, we're sharing a list of the top 15 common pitfalls that regularly lead to app validation failures.  
 
 1. Prefix/Suffix missing
 
@@ -42,16 +42,16 @@ To help you save time, we‘re sharing a list of the top 15 common pitfalls that
 3. Required translation files missing
 
     There are many countries today that where [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available, and that you can support as well with your app. For specifying additional languages, we no longer support Caption ML. You must use xliff translation files instead. For more information, see [Working with Translation Files](../developer/devenv-work-with-translation-files.md).  
-    Microsoft provides a free translation tool that you can access from [https://lcs.dynamics.com](https://lcs.dynamics.com.)
+    Microsoft provides a free translation tool that you can access from [https://lcs.dynamics.com](https://lcs.dynamics.com).
     To support a specific country, you must include a translation file per for each language code. For example, to support Switzerland, you must provide fr-CH, de-CH, and it-CH.
 4. Missing permission sets
 
-    Your app must provide one or more permission sets so that users can use your app’s functionality. Your app must never require the SUPER permission set. <!--TODO: Add link-->
+    Your app must provide one or more permission sets so that users can use your app's functionality. Your app must never require the SUPER permission set. <!--TODO: Add link-->
 5. Permission errors
 
     For your app to be a good citizen in [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)], permission errors must not appear unless it is a necessary reason for showing the error.  
     It is acceptable to throw an error to a user that does not have your permission set marked and tries to access your page object.
-    It is not acceptable to throw an error to that same user trying to access Business Central pages in the base application, or to throw an error to a user who is not trying to access your app's functionality.
+    It is not acceptable to throw an error to that same user trying to access [!INCLUDE[prodshort](../includes/prodshort.md)] pages in the base application, or to throw an error to a user who is not trying to access your app's functionality.
 6. Missing application area tagging
 
     Tag in which part your app participates. Pages, controls, actions, and fields will not appear in [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] if the [Application Area property](../developer/properties/devenv-applicationarea-property.md) has not been set.
@@ -75,10 +75,10 @@ To help you save time, we‘re sharing a list of the top 15 common pitfalls that
     Make sure that your app is properly tested on the correct version. For more information, see [Current Build - Developing for Dynamics 365 Business Central](https://partner.microsoft.com/dashboard/collaborate/packages/4756) on the Collaborate site.
 13. You tested using SUPER permissions
 
-    You tested your app, but your user had SUPER permissions. This can hide critical errors. You must test with a user that doesn’t have the SUPER permissions. The user must have the ESSENTIAL license. For more information, see [Testing your Extension](apptest-testingyourextension.md).  
+    You tested your app, but your user had SUPER permissions. This can hide critical errors. You must test with a user that doesn't have the SUPER permissions. The user must have the ESSENTIAL license. For more information, see [Testing your Extension](apptest-testingyourextension.md).  
 14. User scenario document unclear
 
-    Our validation team is testing your app functionality manually, so we need to be able to understand the core functionality of your app. If your user scenario document is missing important details that are needed for us to properly walk through your app’s setup and usage scenarios, we cannot validate your app successfully. For more information, see [User Scenario Documentation](apptest-userscenario.md).
+    Our validation team is testing your app functionality manually, so we need to be able to understand the core functionality of your app. If your user scenario document is missing important details that are needed for us to properly walk through your app's setup and usage scenarios, we cannot validate your app successfully. For more information, see [User Scenario Documentation](apptest-userscenario.md).
 15. The .json file is incorrect
 
     There are many values in the app.json file that may not be mandatory to compile your app, but are mandatory for your app to be in AppSource. For example, your app cannot be published to a production tenant if the **target** value is set to *OnPrem*. It must be set to *Cloud*. For information, see [JSON Files](../developer/devenv-json-files.md).

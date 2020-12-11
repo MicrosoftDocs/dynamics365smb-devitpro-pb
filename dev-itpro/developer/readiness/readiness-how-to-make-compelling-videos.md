@@ -3,11 +3,11 @@ title: "How to make compelling videos"
 description: "How to make compelling videos"
 author: v-liober
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: solsen
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.author: v-liober
+ms.author: a-emniel
 ---
 
 # How to Make Compelling Videos
@@ -15,6 +15,7 @@ ms.author: v-liober
 Why use video? It is well worth investing time and resources to create marketing videos for your app, it is taken seriously in a business environment.
 
 ## Reasons why video is a superior medium
+
 - Videos offers a very rich, stimulating communication medium that engages multiple senses.
 - Video engages the mind and triggers emotions, which makes it more compelling than text-based content.
 - Our brains have an easier time processing visual stories than bullet points or straight facts.
@@ -24,6 +25,7 @@ A recent Demand Gen survey indicated that 58% of B2B buyers consume video conten
 ## Speak to Specific Personas in your videos
 
 You should create a video for each of the three core personas in the company:
+
 - WHY persona: Owner/executive/leadership
 - HOW: Business line manager
 - WHAT: IT buyer, User
@@ -35,6 +37,7 @@ A horizontal generic message that attempts to speak to everyone will likely not 
 ## **Video type 1**: “Why” video	
 
 **How to set up “Why” videos**
+
 - Recommended length: 60-90 seconds 
 - Purpose: 
     - Your video should clearly communicate WHY prospects need to buy your solution now.
@@ -46,6 +49,7 @@ A horizontal generic message that attempts to speak to everyone will likely not 
         - Don’t only rely on “features” to acquire new customers.
 
 **How to speak to a WHY persona in a video**
+
 - Target audience: 
     - Owner/executive/leadership 
     - They have limited time and financial resources as well as many competing priorities and resource requirements
@@ -58,6 +62,7 @@ A horizontal generic message that attempts to speak to everyone will likely not 
 ## **Video type 2**: “How & What” video	
 
 **How to set up “How and What product videos”**
+
 - Recommended length: Up to 3 minutes.
 
 - Purpose: 
@@ -68,6 +73,7 @@ A horizontal generic message that attempts to speak to everyone will likely not 
     - If possible, use contrast to create desire and a sense of urgency. For example, you could show a complex, ugly data-filled forecast spreadsheet next to a beautiful visual dashboard stating “your sales forecast before and after.”
 
 **How to speak to a HOW persona: (Business line manager)**
+
 - Target audience: Business Line Manager 
     - HOW focuses on the operational benefits your solution will provide and HOW your organization will support the implementation.
     - Speaking to the HOW persona starts to separate you from the pack.
@@ -75,6 +81,7 @@ A horizontal generic message that attempts to speak to everyone will likely not 
     - HOW messaging begins to appeal to the limbic brain because it is focused primarily on emotional business pains and problems.
 
 **How to speak to a WHAT persona: (IT buyer, User)**
+
 - Target audience: IT-buyer, User 
     - WHAT people are often tasked with finding a solution and are important influencers in the decision, but they are not the financial decision makers, and their opinions are easily overturned by HOW and WHY people in the organization. 
     - Therefore, don’t invest all of your marketing time, money, and effort into providing content just for them.
@@ -86,6 +93,7 @@ A horizontal generic message that attempts to speak to everyone will likely not 
 ## **Video type 3: “Getting started” video**
 
 **How to set up “Getting started videos”**
+
 - Recommended length: 2–3 minutes maximum.
 - Purpose: This video should prove it is quick and easy to get up and running with your app.
 - Target: What personas (Users, It buyers)
@@ -93,15 +101,18 @@ A horizontal generic message that attempts to speak to everyone will likely not 
 ## **Video type 4: “Customer testimony” video**
 
 **How to set up “Customer testimonial videos”** - Recommended length: Up to 2 minutes
+
 - Purpose: 
     - Social reinforcement: Customer stories are the best proof of gain.
 - Focus: 
     - A story coming directly from your client in the form of a testimonial is stronger than having your prospects take your word for it. If prospects see that other similar people orcompanies have already purchased your solution, then their natural response will be to more readily accept it as a solution for themselves.
 
 ## **Video tips**
+
 How to structure your video and practical things to keep in mind when producing videos
 	
-**How to structure the flow in your video?**	
+**How to structure the flow in your video?**
+
 - Gain immediate attention in the first 10 seconds of the video
 Stimulate curiosity by include a hook phrase/comment that will elude to solving a pain point. Ask questions about the prospects’ core business challenges or ask about something they would like to do but can’t accomplish today.
 - Highlight the prospects’ problems:
@@ -118,6 +129,7 @@ Include a call to action at the end of all videos. When viewers watch your video
 **Practical things to keep in mind when producing and distributing your video**
 
 Does and don’t when producing your video
+
 - Don’t make the video too long
 As our attention span is 8 seconds the ideal length of video is 90 seconds (minimum 30 seconds/maximum 2 minutes).
 - Add interactivity where possible
@@ -127,6 +139,7 @@ Overlay text, charts, animation, questions etc. Visually call out key messages.
 - Enable your video to be shared on multiple media. Track views and attention span. Observe and measure viewer patterns so that you can learn from prospects’ actual behaviors and then improve future content.
 
 **How to make a good narrative that speak to the right persona in the right way?**
+
 - Your narrative should have a beginning, middle, and end.
     - Lead with a story, not with your app or the technology. 
     - Don’t turn your videos into a product pitch.
@@ -149,6 +162,7 @@ Overlay text, charts, animation, questions etc. Visually call out key messages.
     - Call out your competitive differentiators while anchoring your solution in prospects’ minds so that they can compare all others against the bar you set.
 
 **How to make a good narrative that speak to the right persona in the right way?**
+
 - Where possible, use tangible, concrete language.
     - Include quantifiable proof in the form of data or visual pictures.
     - No vague claims like “transform your business with the cloud”. This is an emotionless statement.

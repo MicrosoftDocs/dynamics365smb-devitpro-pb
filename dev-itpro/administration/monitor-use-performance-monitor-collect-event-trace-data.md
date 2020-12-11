@@ -1,7 +1,7 @@
 ---
 title: "How to: Use Performance Monitor to Collect Event Trace Data"
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,7 @@ This topic describes how to use Windows Performance Monitor to collect event tra
   
 5.  On the **Which event trace providers would you like to enable** page, choose the **Add** button to add a provider.  
   
-6.  In the **Event Trace Providers** list, select **Microsoft-Dynamics365BusinessCentral-Server**, and then choose the **OK** button.  
+6.  In the **Event Trace Providers** list, select **Microsoft-DynamicsNAV-Server**, and then choose the **OK** button.  
   
 7.  If you want to collect data for all trace events, choose the **Next** button. If you want to collect data on specific trace events, do the following:  
   

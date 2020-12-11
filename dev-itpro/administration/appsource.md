@@ -7,7 +7,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
-ms.date: 01/08/2020
+ms.date: 10/01/2020
 ---
 
 # Add your App to AppSource

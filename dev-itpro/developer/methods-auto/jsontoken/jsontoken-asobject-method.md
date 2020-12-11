@@ -1,8 +1,8 @@
 ---
-title: "AsObject Method"
+title: "JsonToken.AsObject Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# AsObject Method
+# JsonToken.AsObject Method
+> **Version**: _Available from runtime version 1.0._
+
 Converts the value in a JsonToken to a JsonObject data type.
 
 
@@ -23,14 +25,14 @@ Object :=   JsonToken.AsObject()
 ```
 
 ## Parameters
-*JsonToken*  
-&emsp;Type: [JsonToken](jsontoken-data-type.md)  
-An instance of the [JsonToken](jsontoken-data-type.md) data type.  
+*JsonToken*
+&emsp;Type: [JsonToken](jsontoken-data-type.md)
+An instance of the [JsonToken](jsontoken-data-type.md) data type.
 
 ## Return Value
-*Object*  
-&emsp;Type: [JsonObject](../jsonobject/jsonobject-data-type.md)  
-The returned JsonObject contains the same data as the JsonToken, but allows object-specific operations to be performed on it.  
+*Object*
+&emsp;Type: [JsonObject](../jsonobject/jsonobject-data-type.md)
+The returned JsonObject contains the same data as the JsonToken, but allows object-specific operations to be performed on it.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

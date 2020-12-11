@@ -2,7 +2,7 @@
 title: "Working with Translation Files"
 description: "How to work with translations, multilanguage, and XLIFF files in Business Central"
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/08/2020
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: solsen
@@ -22,7 +22,7 @@ To add a new language to the extension that you have built, you must first enabl
 
 In the app.json file of your extension, add the following line:
 
-```
+```json
   "features": [ "TranslationFile" ]
 ```
 
@@ -33,14 +33,24 @@ Now, when you run the build command (**Ctrl+Shift+B**) in Visual Studio Code, a 
 
 By setting the `GenerateCaptions` flag in the app.json file, you specify that you want to generate captions based on the object name for pages, tables, reports, XMLports, request pages, and table fields. If the object already has a `Caption` or `CaptionML` property set, that value will be used, for table fields the `OptionCaption` is used. The syntax is the following:
 
-```
+```json
   "features": [ "TranslationFile", "GenerateCaptions" ]
+```
+
+### GenerateLockedTranslations
+
+[!INCLUDE[2020_releasewave2](../includes/2020_releasewave2.md)]
+
+By setting the `GenerateLockedTranslations` flag in the app.json file, you specify that you want to generate `<trans-unit>` elements for locked labels in the XLIFF file. The default behavior is that these elements are not generated. For more information, see [JSON Files](devenv-json-files.md).
+
+```json
+  "features": [ "GenerateLockedTranslations" ]
 ```
 
 ## Label syntax
 The label syntax is shown in the example below for the **Caption** property: 
 
-```
+```AL
 Caption = 'Developer translation for %1',  Comment = '%1 is extension name', locked = false, MaxLength=999; 
 ```
 
@@ -49,7 +59,7 @@ Caption = 'Developer translation for %1',  Comment = '%1 is extension name', loc
 
 Use the same syntax for report labels:  
 
-```
+```AL
 labels
 {
   LabelName = 'Label Text', Comment='Foo', MaxLength=999, Locked=true;
@@ -58,7 +68,7 @@ labels
 
 And the following is the syntax for **Label** data types:
 
-```
+```AL
 var
     a : Label 'Label Text', Comment='Foo', MaxLength=999, Locked=true;
 ```
@@ -70,7 +80,6 @@ var
 > - [InstructionalTextML](properties/devenv-instructionaltextml-property.md)
 > - [OptionCaptionML](properties/devenv-optioncaptionml-property.md)
 > - [PromotedActionCategoriesML](properties/devenv-promotedactioncategoriesml-property.md)
-> - [ReqFilterHeadingML](properties/devenv-reqfilterheadingml-property.md)
 > - [RequestFilterHeadingML](properties/devenv-requestfilterheadingml-property.md)
 > - [ToolTipML](properties/devenv-tooltipml-property.md)
 > 
@@ -81,10 +90,10 @@ var
 
 In the generated .xlf file, you can see a `<source>` element for each label. For the translation, you will now have to add the `target-language` and a `<target>` element per label. The `<trans-unit id>` attribute corresponds to the object ID in the extension. This is illustrated in the example below.
 
-```
-<ding="utf-8"?>
+```xml
+<?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" target-language=”da-DK” original="ALProject16">
+  <file datatype="xml" source-language="en-US" target-language="da-DK" original="ALProject16">
     <body>
       <group id="body">
         <trans-unit id="PageExtension 50110" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
@@ -121,7 +130,8 @@ We recommend that you use only one .txt file per language. There is no enforced 
 For more information about importing and exporting .txt files, see [How to: Add Translated Strings By Importing and Exporting Multilanguage Files in Dynamics NAV](/dynamics-nav/how-to--add-translated-strings-by-importing-and-exporting-multilanguage-files).
 
 ## See Also
-[How to: Add Translated Strings By Importing and Exporting Multilanguage Files in Dynamics NAV](/dynamics-nav/how-to--add-translated-strings-by-importing-and-exporting-multilanguage-files)  
+[How to: Add Translated Strings By Importing and Exporting Multilanguage Files in Dynamics NAV](/dynamics-nav/how-to--add-translated-strings-by-importing-and-exporting-multilanguage-files)   
+[Working with labels](devenv-using-labels.md)    
 [Working with multiple AL project folders within one workspace](devenv-multiroot-workspaces.md)  
 [JSON Files](devenv-json-files.md)
 

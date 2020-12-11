@@ -1,8 +1,8 @@
 ---
 title: "Placeholders should have a comment explaining their content."
-ms.author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
-ms.date: 02/06/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,6 +20,21 @@ Placeholders should have a comment explaining their content.
 Provide an explanation that describes the content of each of the placeholders.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Reason for the rule
+
+Documentation of placeholders is required in order to enable translators to properly know the construct of the label to be translated.
+
+## Bad code example
+```AL
+MissingNodeErr: Label 'Cannot find an XML node that matches %1 or %2.'; 
+```
+
+## Good code example
+```AL
+MissingNodeErr: Label 'Cannot find an XML node that matches %1 or %2.', Comment = '%1 = XML node name ; %2 = Parent XML node name';
+```
+
 ## See Also  
 [CodeCop Analyzer](codecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  

@@ -2,12 +2,12 @@
 title: Test Codeunits and Test Methods
 description: This topic describes how to create test codeunits and how to create test methods in the test codeunits. 
 ms.custom: na
-ms.date: 08/26/2019
+ms.date: 10/01/2020
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.prod: "dynamics365-business-central"
+ms.service: "dynamics365-business-central"
 author: blrobl
 ---
 

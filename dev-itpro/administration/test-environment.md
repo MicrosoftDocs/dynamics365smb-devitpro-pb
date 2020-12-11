@@ -9,7 +9,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 01/09/2020
+ms.date: 10/01/2020
 ---
 # Preparing Test Environments of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]
 
@@ -21,7 +21,7 @@ This type of environment can be useful if you want to run benchmark tests, for e
 
 ### To create a test environment based on a 30 day trial
 
-1. In Partner Center, create a new test customer with any test domain, such as *JoesGarageTest001.onmicrosoft.com*. For more information, see [Add a new customer](/partner-center/add-a-new-customer).
+1. In Partner Center, create a new test customer with any test domain, such as *contoso.onmicrosoft.com*. For more information, see [Add a new customer](/partner-center/add-a-new-customer) in the Partner Center docs.
 
     1. Fill in the fields as described in the following list:
 
@@ -39,11 +39,11 @@ This type of environment can be useful if you want to run benchmark tests, for e
     > [!NOTE]
     > It may take up to 10 minutes for the available licenses to show up on the **Users** page.
 
-    Also, make a note of the user credentials shown on the last page of the user creation wizard.
+    Also, make a note of the user credentials shown on the last page of the user creation wizard. You will use this information in step 55
 
 4. In the **Service Management** section, choose the **Dynamics 365 Business Central** link.
 
-    This opens the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] at the equivalent of the following URL: *[https://businesscentral.dynamics.com/JoesGarageTest001.onmicrosoft.com/admin](https://businesscentral.dynamics.com/JoesGarageTest001.onmicrosoft.com/admin)*
+    This opens the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] at the equivalent of the following URL: `https://businesscentral.dynamics.com/contoso.onmicrosoft.com/admin`
 
     In the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], you can create new production and sandbox environments for the test customer.
 
@@ -54,14 +54,23 @@ This type of environment can be useful if you want to run benchmark tests, for e
 
     1. Open another browser window in InPrivate or Incognito mode. This way, you can make sure that you are not logging in with your own credentials.
 
+        > [!TIP]
+        > We recommend that you use profiles in the New Edge browser instead. For more information, see [Microsoft Edge documentation](/microsoft-edge/).
+
     2. Go to *[https://businesscentral.dynamics.com/](https://businesscentral.dynamics.com/)*, and then, when you are asked to sign in, use the credentials of the user you created in step 2.
 
 The [!INCLUDE [prodshort](../developer/includes/prodshort.md)] environment is created automatically when you use the environment URL to login the first time.  
+
+## Prepare for major updates with preview environments
+
+About two months before a major update, you can try out new functionality in preview environments. For more information, see [Prepare for major updates with preview environments](preview-environments.md).  
 
 ## See also
 
 [The Business Central Administration Center](tenant-admin-center.md)  
 [Managing Environments](tenant-admin-center-environments.md)  
+[Preparing Demonstration Environments](demo-environment.md)  
+[Prepare for major updates with preview environments](preview-environments.md)  
 [Administration of Business Central Online](tenant-administration.md)  
 [Deployment of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](../deployment/Deployment.md)  
 [Get Started as a Reseller of Business Central Online](get-started-online.md)  

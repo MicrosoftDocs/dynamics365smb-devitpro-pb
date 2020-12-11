@@ -3,7 +3,7 @@ title: "XMLport Overview"
 description: "Design a XMLport by defining the schema. The XMLport object is composed of a schema, request page, properties, triggers, and code."
 author: blrobl
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -32,10 +32,12 @@ In order to define the underlying structure of the imported or exported document
 ## Request page
 Request pages are dialog boxes that enable the user to set a filter on the data, sort the data, or choose whether to export or import the data. For more information, see [Request Pages](devenv-request-pages.md).
 
+Unlike report request pages, XMLport request pages cannot be bookmarked by users from the user interface.
+
 ## XMLport properties, triggers, and code
 XMLport objects include triggers, methods, and properties that can be used to work with the object. For more information, see [XMLport Data Type](methods-auto/xmlport/xmlport-data-type.md) and [XMLport Triggers](triggers/devenv-xmlport-triggers.md).
 
-When you design XMLports, you must set the value of the [Format Property (XMLports)](properties/devenv-format-xmlports-property.md) and the [Direction Property](properties/devenv-direction-property.md). The [Format Property (XMLports)](properties/devenv-format-xmlports-property.md) indicates the type of file that you want to import or export and the [Direction Property](properties/devenv-direction-property.md) value indicates whether the XMLport will be used for import or export.
+When you design XMLports, you must set the value of the [Format Property (XMLports)](properties/devenv-format-property.md) and the [Direction Property](properties/devenv-direction-property.md). The [Format Property (XMLports)](properties/devenv-format-property.md) indicates the type of file that you want to import or export and the [Direction Property](properties/devenv-direction-property.md) value indicates whether the XMLport will be used for import or export.
 
 For more information about data consistency and validation against possible errors when using XMLports, see the blog post [Importing and exporting valid data using XMLports in Dynamics 365 Business Central](https://cloudblogs.microsoft.com/dynamics365/it/2019/05/22/importing-and-exporting-valid-data-using-xmlports-in-dynamics-365-business-central/).
 

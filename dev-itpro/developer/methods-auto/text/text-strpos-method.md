@@ -1,8 +1,8 @@
 ---
-title: "StrPos Method"
+title: "Text.StrPos Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# StrPos Method
+# Text.StrPos Method
+> **Version**: _Available from runtime version 1.0._
+
 Searches for the first occurrence of substring inside a string.
 
 
@@ -21,8 +23,8 @@ Searches for the first occurrence of substring inside a string.
 ```
 Position :=   Text.StrPos(String: String, SubString: String)
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *String*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -34,9 +36,9 @@ The substring for which you want to search.
 
 
 ## Return Value
-*Position*  
-&emsp;Type: [Integer](../integer/integer-data-type.md)  
-The one-based index of the first occurrence of the substring inside the string.  
+*Position*
+&emsp;Type: [Integer](../integer/integer-data-type.md)
+The one-based index of the first occurrence of the substring inside the string.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -48,7 +50,8 @@ The one-based index of the first occurrence of the substring inside the string.
   
  If *String* or *SubString* is empty, then the method returns zero.  
   
-## Example  
+## Example 1
+
  This example shows how to use the STRPOS method.  
   
 ```  
@@ -76,7 +79,7 @@ end;
   
  **returns the position: 5**  
   
-## Example  
+## Example 2
   
 ```  
 Pos1 := StrPos("abc",""); // Returns 0.  

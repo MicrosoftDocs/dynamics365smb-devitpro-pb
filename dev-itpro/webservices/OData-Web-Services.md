@@ -1,7 +1,7 @@
 ---
 title: "OData Web Services"
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/27/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,13 +17,13 @@ The Open Data Protocol \(OData\) is a web protocol that is designed for querying
   
  OData can be found in other Microsoft products and technologies, including the following:  
   
--   Microsoft Excel implements OData for its PowerPivot add-in.  
+- Microsoft Excel implements OData for its PowerPivot add-in.  
   
--   Microsoft SharePoint can expose its list-oriented data with OData.  
+- Microsoft SharePoint can expose its list-oriented data with OData.  
   
--   Microsoft Azure Table Services are based on OData.  
+- Microsoft Azure Table Services are based on OData.  
   
- The topics in this section describe the key concepts and techniques for accessing [!INCLUDE[prodshort](../developer/includes/prodshort.md)] data from OData applications that are supported by [!INCLUDE[prodshort](../developer/includes/prodshort.md)] .  
+The topics in this section describe the key concepts and techniques for accessing [!INCLUDE[prodshort](../developer/includes/prodshort.md)] data from OData applications that are supported by [!INCLUDE[prodshort](../developer/includes/prodshort.md)] .  
   
 |To|See|  
 |--------|---------|  
@@ -41,13 +41,28 @@ The Open Data Protocol \(OData\) is a web protocol that is designed for querying
 The [!INCLUDE[server](../developer/includes/server.md)] instance has several configurations settings that enable and control OData services. For more information, see [OData Services Settings](../administration/configure-server-instance.md#ODataServices).
 
 ## Known Limitations
- 
+
+### Filters
+
 You can specify filters in OData web services in general that are not supported in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] , such as using an OR operator to filter on two different fields. In those cases, you will see the following error:  
   
 ```  
 An error occurred while processing this request.   
  The 'OR' operator is not supported on distinct fields on an OData filter.  
 ```  
-  
+
+### Lambda operators
+
+Lambda operators are not supported by [!INCLUDE[prodshort](../developer/includes/prodshort.md)] OData APIs. If lambda operators are used, the filter expression will be ignored.
+
+### UI pages
+
+If you use Web services that are based on UI pages, you must expect the same behavior from the Web service as from the UI page. If you want to have full control and separation of concern it is recommended to use the Business Central APIs instead.
+
+### Deep patching
+
+[!INCLUDE[prodshort](../developer/includes/prodshort.md)] supports deep insert, but not deep patching. Multiple requests will need to be issued when patching nested entities. 
+
 ## See Also  
- [SOAP Web Services](SOAP-Web-Services.md)
+
+[SOAP Web Services](SOAP-Web-Services.md)

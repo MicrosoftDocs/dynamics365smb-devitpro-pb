@@ -3,7 +3,7 @@ title: "Table Extension Object"
 description: "Description of the table extension object."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
@@ -38,7 +38,7 @@ Typing the shortcut `ttableext` will create the basic layout for a table extensi
 Using a table extension allows you to overwrite some properties on fields in the base table. For a list of Table properties, see [Table and Table Extension Properties](properties/devenv-table-properties.md).
 
 ## Table extension syntax
-```
+```AL
 tableextension Id MyExtension extends MyTargetTable
 {
     fields
@@ -55,7 +55,7 @@ tableextension Id MyExtension extends MyTargetTable
 
 This table extension object extends the Customer table object by adding a field `ShoeSize`, with ID 50116 and the data type `Integer`. It also contains a procedure to check if the `ShoeSize` field is filled in.
 
-```
+```AL
 tableextension 50115 RetailWinterSportsStore extends Customer
 {
     fields
@@ -85,12 +85,10 @@ tableextension 50115 RetailWinterSportsStore extends Customer
 }
 ```
 
-## Applies to
-Tables
-
 ## See Also
+
 [AL Development Environment](devenv-reference-overview.md)  
 [Table Overview](devenv-tables-overview.md)  
 [Table Object](devenv-table-object.md)  
-[Table and Table Extension Properties](properties/devenv-table-properties.md)  
+[Table, Table Fields, and Table Extension Properties](properties/devenv-table-properties.md)  
 [Table Keys](devenv-table-keys.md)

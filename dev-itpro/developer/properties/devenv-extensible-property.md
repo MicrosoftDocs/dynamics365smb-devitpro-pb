@@ -1,35 +1,36 @@
 ---
 title: "Extensible Property"
-author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 11/12/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.author: solsen
+author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Extensible Property
+> **Version**: _Available from runtime version 7.0._
 
-[!INCLUDE[2019_releasewave2.md](../../includes/2019_releasewave2.md)]
+Sets whether the object can be extended.
 
-Sets a value that indicates whether a table, page, or enum can be extended. If the value is **true**, the object can be extended using a `tableextension`, `pageextension`, or `enumextension` respectively.
+## Applies to
+-   Enum Type
+-   Table
+-   Page
 
-## Applies To  
-
-- Tables
-- Pages
-- Enums
-
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Property Value  
 
 **True** if the table, page, or enum can be extended; otherwise, **false**. The default is **true** on tables and pages, and **false** on enums.  
 
 ## Syntax
 
-```
+```AL
 table 50111 MyTable
 {
     DataClassification = CustomerContent;
@@ -38,7 +39,11 @@ table 50111 MyTable
 
 ```
 
-## See Also  
+## Remarks
+If the value is **true**, the object can be extended using a `tableextension`, `pageextension`, or `enumextension` respectively.
+
+## See Also
+
 [Table Properties](devenv-table-properties.md)  
 [Properties](devenv-properties.md)  
 [Access Property](devenv-access-property.md)  

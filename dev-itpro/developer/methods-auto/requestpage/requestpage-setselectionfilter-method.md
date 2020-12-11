@@ -1,8 +1,8 @@
 ---
-title: "SetSelectionFilter Method"
+title: "RequestPage.SetSelectionFilter Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# SetSelectionFilter Method
+# RequestPage.SetSelectionFilter Method
+> **Version**: _Available from runtime version 1.0._
+
 
 
 
@@ -22,9 +24,9 @@ author: SusanneWindfeldPedersen
  RequestPage.SetSelectionFilter(var Record: Record)
 ```
 ## Parameters
-*RequestPage*  
-&emsp;Type: [RequestPage](requestpage-data-type.md)  
-An instance of the [RequestPage](requestpage-data-type.md) data type.  
+*RequestPage*
+&emsp;Type: [RequestPage](requestpage-data-type.md)
+An instance of the [RequestPage](requestpage-data-type.md) data type.
 
 *Record*  
 &emsp;Type: [Record](../record/record-data-type.md)  

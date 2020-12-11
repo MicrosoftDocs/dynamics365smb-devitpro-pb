@@ -1,8 +1,8 @@
 ---
-title: "CompressArray Method"
+title: "System.CompressArray Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# CompressArray Method
+# System.CompressArray Method
+> **Version**: _Available from runtime version 1.0._
+
 Moves all non-empty strings (text) in an array to the beginning of the array. The resulting StringArray has the same number of elements as the input array, but empty entries appear at the end of the array.
 
 
@@ -21,8 +23,8 @@ Moves all non-empty strings (text) in an array to the beginning of the array. Th
 ```
 [Count := ]  System.CompressArray(StringArray: Array of [String])
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *StringArray*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -30,9 +32,9 @@ The string array that you want to compress.
 
 
 ## Return Value
-*Count*  
-&emsp;Type: [Integer](../integer/integer-data-type.md)  
-  
+*Count*
+&emsp;Type: [Integer](../integer/integer-data-type.md)
+
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -49,21 +51,9 @@ The string array that you want to compress.
  In [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)], it is not supported to use the **COMPRESSARRAY** method on multidimensional arrays. In earlier versions, **COMPRESSARRAY** works for arrays of arrays.  
   
 ## Example  
- This example shows how to use the **COMPRESSARRAY** method. The input array has the following values.  
-  
-||  
-|-|  
-|Joe Raybon|  
-|One Meca Way|   
-|Atlanta||
-  
- The output StringArray has the following values.  
-  
-||  
-|-|  
-|Joe Raybon|  
-|One Meca Way|  
-|Atlanta||  
+ This example shows how to use the **COMPRESSARRAY** method. The input array has the following values: Joe Raybon, One Meca Way, Atlanta.   
+
+The output StringArray has the following values: Joe Raybon, One Meca Way, Atlanta.  
   
  All non-empty entries have been moved to the beginning of the array.  
  

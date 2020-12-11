@@ -1,7 +1,8 @@
 ---
 title: "OnLookup (Fields) Trigger"
+description: "OnLookup trigger for fields in AL for Business Central."
 ms.custom: na
-ms.date: 10/01/2019
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +14,7 @@ author: SusanneWindfeldPedersen
 # OnLookup (Fields) Trigger
 Causes the system to display a lookup page.  
 
-## Applies To  
+## Applies to  
 - Fields  
 
 ## Remarks  

@@ -1,8 +1,8 @@
 ---
-title: "LowerCase Method"
+title: "Text.LowerCase Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/03/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# LowerCase Method
+# Text.LowerCase Method
+> **Version**: _Available from runtime version 1.0._
+
 Converts all letters in a string to lowercase.
 
 
@@ -21,8 +23,8 @@ Converts all letters in a string to lowercase.
 ```
 NewString :=   Text.LowerCase(String: String)
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *String*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -30,9 +32,9 @@ The string that you want to convert to lowercase. Only letters in the range A to
 
 
 ## Return Value
-*NewString*  
-&emsp;Type: [String](../string/string-data-type.md)  
-The string converted to lowercase.  
+*NewString*
+&emsp;Type: [String](../string/string-data-type.md)
+The string converted to lowercase.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

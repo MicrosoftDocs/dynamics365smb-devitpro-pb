@@ -1,8 +1,8 @@
 ---
-title: "A procedure belonging to a public API cannot be modified"
-ms.author: SusanneWindfeldPedersen
+title: "A procedure belonging to the public API cannot be removed"
+ms.author: solsen
 ms.custom: na
-ms.date: 02/06/2020
+ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,10 +14,10 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AppSourceCop Rule AS0018
-A procedure belonging to a public API cannot be modified  
+A procedure belonging to the public API cannot be removed  
 
 ## Description
-A procedure belonging to a public API cannot be modified.
+A procedure that belongs to the public API cannot be removed, because it will break dependent extensions calling this procedure.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
