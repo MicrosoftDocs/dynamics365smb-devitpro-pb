@@ -32,7 +32,7 @@ Gets the URL for an image resource specified in the control add-in manifest. The
 <!--
  For a detailed code example, see [Walkthrough: Creating and Using a Client Control Add-in](Walkthrough--Creating-and-Using-a-Client-Control-Add-in.md)  -->
   
-```AL
+```javascript
 var map = new VEMap('controlAddIn');  
     map.LoadMap(...);  
     var pushpin = map.AddPushpin(map.GetCenter());  
