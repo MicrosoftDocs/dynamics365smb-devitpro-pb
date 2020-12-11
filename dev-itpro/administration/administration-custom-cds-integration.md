@@ -160,33 +160,9 @@ begin
     end;
 end;
 ```
+You can now use the table to create a page for coupling [!INCLUDE[prodshort](../includes/prodshort.md)] records with [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] rows.
 
-3. Now, we must enable integration records for the table in [!INCLUDE[prodshort](../includes/prodshort.md)] that will be used for integration with [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. In this case, that is table **Employee** (ID 5200). The following code examples are two subscribers to the **OnIsIntegrationRecord** and **OnAfterAddToIntegrationPageList** events in codeunit **Integration Management** (ID 5150) that we can use to enable integration records for the **Employee** table.
-
-```al
-[EventSubscriber(ObjectType::Codeunit, Codeunit::"Integration Management", 'OnIsIntegrationRecord', '', true, true)]
-local procedure HandleOnIsIntegrationRecord(TableID: Integer; var isIntegrationRecord: Boolean)
-begin
-    if TableID = DATABASE::Employee then
-        isIntegrationRecord := true;
-end;
-```
-```al
-[EventSubscriber(ObjectType::Codeunit, Codeunit::"Integration Management", 'OnAfterAddToIntegrationPageList', '', true, true)]
-local procedure HandleOnAfterAddToIntegrationPageList(var TempNameValueBuffer: Record "Name/Value Buffer"; var NextId: Integer)
-begin
-    TempNameValueBuffer.Init();
-    TempNameValueBuffer.ID := NextId;
-    NextId := NextId + 1;
-    TempNameValueBuffer.Name := Format(Page::"Employee Card");
-    TempNameValueBuffer.Value := Format(Database::"Employee");
-    TempNameValueBuffer.Insert();
-end;
-```
-
-When changes occur in the **Employee** table, an integration record will be created or updated with a timestamp. You can now use the table to create a page for coupling [!INCLUDE[prodshort](../includes/prodshort.md)] records with [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] rows.
-
-4. In codeunit **Lookup CRM Tables** (ID 5332), subscribe to the **OnLookupCRMTables** event, as follows:
+3. In codeunit **Lookup CRM Tables** (ID 5332), subscribe to the **OnLookupCRMTables** event, as follows:
 
 ```al
 [EventSubscriber(ObjectType::Codeunit, Codeunit::"Lookup CRM Tables", 'OnLookupCRMTables', '', true, true)]

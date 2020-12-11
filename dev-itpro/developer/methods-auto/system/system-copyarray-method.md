@@ -2,7 +2,7 @@
 title: "System.CopyArray Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # System.CopyArray Method
+> **Version**: _Available from runtime version 1.0._
+
 Copies one or more elements in an array to a new array.
 
 
@@ -21,8 +23,8 @@ Copies one or more elements in an array to a new array.
 ```
  System.CopyArray(NewArray: Array of [Any], Array: Array of [Any], Position: Integer [, Length: Integer])
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *NewArray*  
 &emsp;Type: [Any](../any/any-data-type.md)  

@@ -2,7 +2,7 @@
 title: "Report.Print Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Report.Print Method
+> **Version**: _Available from runtime version 1.0._
+
 Prints a specified report without running the request page. Instead of using the request page to obtain parameters at runtime, the method gets the parameter values as an input parameter string, typically from a RUNREQUESTPAGE method call.
 
 > [!NOTE]
@@ -24,9 +26,9 @@ Prints a specified report without running the request page. Instead of using the
  Report.Print(Parameters: String [, PrinterName: String] [, RecordRef: RecordRef])
 ```
 ## Parameters
-*Report*  
-&emsp;Type: [Report](report-data-type.md)  
-An instance of the [Report](report-data-type.md) data type.  
+*Report*
+&emsp;Type: [Report](report-data-type.md)
+An instance of the [Report](report-data-type.md) data type.
 
 *Parameters*  
 &emsp;Type: [String](../string/string-data-type.md)  

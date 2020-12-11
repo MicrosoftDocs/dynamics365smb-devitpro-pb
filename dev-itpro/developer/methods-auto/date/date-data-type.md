@@ -2,7 +2,7 @@
 title: "Date Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Date Data Type
+> **Version**: _Available from runtime version 1.0._
+
 Denotes a date ranging from January 1, 1753 to December 31, 9999.
 
 

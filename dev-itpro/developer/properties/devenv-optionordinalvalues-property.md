@@ -1,8 +1,8 @@
 ---
 title: "OptionOrdinalValues Property"
-description: Specifies the list of option values when you set the ExternalType property for synchronizing the database with external tables.
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -10,14 +10,20 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # OptionOrdinalValues Property
+> **Version**: _Available from runtime version 1.0._
 
-Specifies the list of ordinal values and the position of the option member values in the external database. You can set this property, if the **ExternalType property** is set to Picklist. 
+Specifies the list of option values. Can be set if the property ExternalType is set to Picklist.
 
-## Applies to  
+## Applies to
+-   Table Field
 
-- Fields 
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 
 ## Property values
 

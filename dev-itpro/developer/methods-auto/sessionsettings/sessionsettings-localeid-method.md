@@ -2,7 +2,7 @@
 title: "SessionSettings.LocaleId Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # SessionSettings.LocaleId Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets or sets the locale ID property in a SessionSettings object.
 
 
@@ -21,12 +23,12 @@ Gets or sets the locale ID property in a SessionSettings object.
 ```
 [LocaleId := ]  SessionSettings.LocaleId([NewLocaleId: Integer])
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 ## Parameters
-*SessionSettings*  
-&emsp;Type: [SessionSettings](sessionsettings-data-type.md)  
-An instance of the [SessionSettings](sessionsettings-data-type.md) data type.  
+*SessionSettings*
+&emsp;Type: [SessionSettings](sessionsettings-data-type.md)
+An instance of the [SessionSettings](sessionsettings-data-type.md) data type.
 
 *NewLocaleId*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
@@ -35,9 +37,9 @@ Specifies the locale ID to set in the SessionSettings object. The value must be 
 
 
 ## Return Value
-*LocaleId*  
-&emsp;Type: [Integer](../integer/integer-data-type.md)  
-The locale ID that is set in the SessionSettings object.  
+*LocaleId*
+&emsp;Type: [Integer](../integer/integer-data-type.md)
+The locale ID that is set in the SessionSettings object.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

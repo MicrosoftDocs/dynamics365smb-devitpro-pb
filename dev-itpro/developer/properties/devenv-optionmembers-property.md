@@ -10,6 +10,8 @@ ms.service: "dynamics365-business-central"
 ---
 
 # OptionMembers Property
+> **Version**: _Available from runtime version 1.0._
+
 The OptionMembers property is applicable to the following types: 
 - [OptionMembers Property (Field)](devenv-optionmembers-field-property.md)   
 - [OptionMembers Property (Report)](devenv-optionmembers-report-property.md)

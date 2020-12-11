@@ -1,24 +1,31 @@
 ---
 title: "ShowCaption Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: cca8c1e6-d788-429c-b572-784df23d514c
-caps.latest.revision: 6
+author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # ShowCaption Property
+> **Version**: _Available from runtime version 4.0._
 
-Sets whether the text that is specified by the [Caption Property](devenv-caption-property.md) is displayed for the control.  
+Sets whether the text that is specified by the Caption Property is displayed for the control.
 
-## Applies to  
+## Applies to
+-   Page Label
+-   Page Field
+-   Page Group
 
-- Field controls on pages  
-- Group controls on pages
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 
 ## Property Value  
 
@@ -33,5 +40,4 @@ ShowCaption = false;
 ## See Also  
 
 [Properties](devenv-properties.md)   
-[Caption Property](devenv-caption-property.md)    
-
+[Caption Property](devenv-caption-property.md)  

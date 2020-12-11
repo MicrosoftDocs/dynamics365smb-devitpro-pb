@@ -8,20 +8,17 @@
 ### [Business process walkthroughs](/dynamics365/business-central/walkthrough-business-process-walkthroughs?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Application design details](/dynamics365/business-central/design-details-application-design?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ## Develop
-<!--#### What the partner's responsibilities are -->
-### [Get Started with Building Apps](developer/readiness/readiness-get-started.md)
+### [The SMB Opportunity for App Publishers](developer/readiness/opportunity-app-publisher.md)
+### [Get Started with Building Apps](developer/readiness/get-started.md)
 ### [The Lifecycle of Apps and Extensions](developer/devenv-app-life-cycle.md)
+<!--#### What the partner's responsibilities are -->
 ### [Update Lifecycle for Customizations](developer/devenv-customization-update-lifecycle.md)
 ### [Maintain AppSource Apps and Per-Tenant Extensions](developer/app-maintain.md)
 <!--#### How Microsoft runs the service -->
 ### [Microsoft Responsibilities](deployment/microsoft-responsibilities.md)
 ### [Components and Capabilities](deployment/app-components.md)
 ### [Add your App to AppSource](administration/appsource.md)
-<!--### Get started with building apps
-#### [Development of a Vertical Solution](developer/readiness/readiness-develop-vertical.md)
-#### [Development of a Horizontal Solution](developer/readiness/readiness-develop-horizontal.md)
-#### [Development of a Localization Solution](developer/readiness/readiness-develop-localization.md)-->
-### Embed Apps
+### ISV Apps
 #### [Embed App Overview](deployment/embed-app-overview.md)
 #### [Qualification and Onboarding](deployment/embed-app-qualifications-onboarding.md)
 #### Deployment
@@ -103,12 +100,17 @@
 ### [App Key Vault Secret Telemetry](administration/telemetry-extension-key-vault-trace.md)
 ### [Authorization Telemetry](administration/telemetry-authorization-trace.md)
 ### [Company Lifecycle Telemetry](administration/telemetry-company-lifecycle-trace.md)
+### [Configuration Package Lifecycle Telemetry](administration/telemetry-configuration-package-trace.md)
 ### [Database Lock Timeout Telemetry](administration/telemetry-database-locks-trace.md)
+### [Email Telemetry](administration/telemetry-email-trace.md)
 ### [Extension Lifecycle Telemetry](administration/telemetry-extension-lifecycle-trace.md)
 ### [Extension Update Telemetry](administration/telemetry-extension-update-trace.md)
+### [Field Monitoring Telemetry](administration/telemetry-field-monitoring-trace.md)
+### [Job Queue Lifecycle Telemetry](administration/telemetry-job-queue-lifecycle-trace.md)
 ### [Long Running AL Method Telemetry](administration/telemetry-al-method-trace.md)
 ### [Long Running SQL Queries Telemetry](administration/telemetry-long-running-sql-query-trace.md)
 ### [Page View Telemetry](administration/telemetry-page-view-trace.md)
+### [Permission Changes Telemetry](administration/telemetry-permission-changes-trace.md)
 ### [Report Generation Telemetry](administration/telemetry-reports-trace.md)
 ### [Incoming Web Services Requests Telemetry](administration/telemetry-webservices-trace.md)
 ### [Outgoing Web Services Requests Telemetry](administration/telemetry-webservices-outgoing-trace.md)
@@ -144,9 +146,11 @@
 ### [Migrating from Dynamics GP](administration/migrate-dynamics-gp.md)
 ### [Migrating from Dynamics NAV](upgrade/Upgrade-Considerations.md#online)
 ### [FAQ about Connecting to the Intelligent Cloud](administration/faq-intelligent-cloud.md)
+### [Troubleshooting Cloud Migration](administration/migration-troubleshooting.md)
 <!--### [Migrating from Dynamics SL](administration/migrate-data.md)-->
 <!-- end migrate -->
 ## What's New or Changed
+### [Update 17.2](whatsnew/whatsnew-update-17-2.md)
 ### [Update 17.1](whatsnew/whatsnew-update-17-1.md)
 ### [Update 16.5](whatsnew/whatsnew-update-16-5.md)
 ### [Update 16.4](whatsnew/whatsnew-update-16-4.md)
@@ -176,9 +180,9 @@
 ### [Working with Translation Files](developer/devenv-work-with-translation-files.md)
 ### [Instrumenting an Application for Telemetry](developer/devenv-instrument-application-for-telemetry.md)
 ### Ready to Go
-#### [Get Onboarded as a partner](developer/readiness/readiness-ready-to-go.md)
+#### [The SMB Opportunity for App Publishers](developer/readiness/opportunity-app-publisher.md)
+#### [Get Started with Building Apps](developer/readiness/get-started.md)
 #### [The Business Central Online Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json)
-#### [Get Started with Building Apps](developer/readiness/readiness-get-started.md)
 ### AppSource Validation
 #### [Marketing Validation Checklist](developer/readiness/readiness-checklist-marketing.md)
 #### [Technical Validation Checklist](developer/devenv-checklist-submission.md)
@@ -608,6 +612,7 @@
 #### [Report Properties](developer/properties/devenv-report-properties.md)  
 #### [XMLPort Properties](developer/properties/devenv-XMLPort-properties.md)  
 #### [Control Add-In Properties](developer/properties/devenv-control-addin-properties.md)
+#### [Enum Properties](developer/properties/devenv-enum-properties.md)
 #### [View Properties](developer/properties/devenv-view-properties.md)
 #### [Integrating with Dynamics 365 for Sales](developer/devenv-integrating-dynamics-365-for-sales-extension-development.md)  
 ### Triggers
@@ -847,9 +852,12 @@
 #### [Enabling Application Insights](administration/telemetry-enable-application-insights.md)
 #### [App Key Vault Secret Telemetry](administration/telemetry-extension-key-vault-trace.md)
 #### [Company Lifecycle Telemetry](administration/telemetry-company-lifecycle-trace.md)
+#### [Configuration Package Lifecycle Telemetry](administration/telemetry-configuration-package-trace.md)
 #### [Database Lock Timeout Telemetry](administration/telemetry-database-locks-trace.md)
+#### [Email Telemetry](administration/telemetry-email-trace.md)
 #### [Extension Lifecycle Telemetry](administration/telemetry-extension-lifecycle-trace.md)
 #### [Extension Update Telemetry](administration/telemetry-extension-update-trace.md)
+#### [Field Monitoring Telemetry](administration/telemetry-field-monitoring-trace.md)
 #### [Long Running AL Method Telemetry](administration/telemetry-al-method-trace.md)
 #### [Long Running SQL Queries Telemetry](administration/telemetry-long-running-sql-query-trace.md)
 #### [Report Generation Telemetry](administration/telemetry-reports-trace.md)

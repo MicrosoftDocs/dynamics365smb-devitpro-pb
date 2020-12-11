@@ -2,7 +2,7 @@
 title: "RecordRef.Ascending Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # RecordRef.Ascending Method
+> **Version**: _Available from runtime version 1.0._
+
 Changes or checks the order in which a search through the table that is referred to by RecordRef will be performed.
 
 
@@ -21,12 +23,12 @@ Changes or checks the order in which a search through the table that is referred
 ```
 [IsAscending := ]  RecordRef.Ascending([SetAscending: Boolean])
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 ## Parameters
-*RecordRef*  
-&emsp;Type: [RecordRef](recordref-data-type.md)  
-An instance of the [RecordRef](recordref-data-type.md) data type.  
+*RecordRef*
+&emsp;Type: [RecordRef](recordref-data-type.md)
+An instance of the [RecordRef](recordref-data-type.md) data type.
 
 *SetAscending*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
@@ -34,9 +36,9 @@ If this parameter is true, it will search in ascending order. If this parameter 
 
 
 ## Return Value
-*IsAscending*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-Specifies the order in which a search will be performed.  
+*IsAscending*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+Specifies the order in which a search will be performed.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

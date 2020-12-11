@@ -1,7 +1,8 @@
 ---
 title: "FormatEvaluate Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -9,21 +10,26 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # FormatEvaluate Property
+> **Version**: _Available from runtime version 1.0._
 
-Sets the data that is being imported or exported as XML data types or as the standard AL data types.  
-  
-## Applies to  
+Sets the data that is being imported or exported as XML data types or as the standard C/SIDE data types.
 
-- XMLports  
-  
-## Property Values  
+## Applies to
+-   Xml Port
 
-AL Format/Evaluate (default)  
-  
-XML Format/Evaluate  
- 
+## Property Value
+
+|Value|Description|
+|-----------|---------------------------------------|
+|**Legacy**|The data uses the standard AL data types.|
+|**Xml**|The data uses the standard XML data types.|
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## Syntax
 
 ```AL
@@ -64,6 +70,6 @@ For more information about formatting AL data types, see [Format Property](deven
   
 ## See Also  
 
-[Format Property (XMLports)](devenv-format-xmlports-property.md)   
+[Format Property (XMLports)](devenv-format-property.md)   
 [Evaluate Method](../methods-auto/system/system-EVALUATE-method.md)   
 [Temporary Property (XMLports)](devenv-temporary-xmlports-property.md)

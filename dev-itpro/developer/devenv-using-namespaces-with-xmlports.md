@@ -16,7 +16,7 @@ ms.author: t-blrobl
 The external system that provides or consumes [!INCLUDE[d365_dev_long_md](includes/d365_dev_long_md.md)] data as XML might require that the XML documents include namespaces. Namespaces are used to avoid element name conflicts. In these cases, you must add namespaces on the XMLport to make it compatible with the XML schema that is used by the external system.
 
 > [!NOTE]  
-> Namespace-related properties are only available when the [Format Property](properties/devenv-format-xmlports-property.md) is set to **Xml**.
+> Namespace-related properties are only available when the [Format Property](properties/devenv-format-property.md) is set to **Xml**.
 
 For example, the following code is a portion of a simple XML document for transferring sales order information. The XML includes namespaces for mapping fields from the `Sales Header` table.
 

@@ -2,7 +2,7 @@
 title: "XmlWriteOptions.PreserveWhitespace Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # XmlWriteOptions.PreserveWhitespace Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets or sets a value that indicates whether insignificant white space should be preserved during serialization.
 
 
@@ -21,12 +23,12 @@ Gets or sets a value that indicates whether insignificant white space should be 
 ```
 [Value := ]  XmlWriteOptions.PreserveWhitespace([NewValue: Boolean])
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 ## Parameters
-*XmlWriteOptions*  
-&emsp;Type: [XmlWriteOptions](xmlwriteoptions-data-type.md)  
-An instance of the [XmlWriteOptions](xmlwriteoptions-data-type.md) data type.  
+*XmlWriteOptions*
+&emsp;Type: [XmlWriteOptions](xmlwriteoptions-data-type.md)
+An instance of the [XmlWriteOptions](xmlwriteoptions-data-type.md) data type.
 
 *NewValue*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
@@ -34,9 +36,9 @@ The new value of the flag.
 
 
 ## Return Value
-*Value*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if insignificant white spaces should be preserved during serialization, otherwise **false**.  
+*Value*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+**true** if insignificant white spaces should be preserved during serialization, otherwise **false**.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

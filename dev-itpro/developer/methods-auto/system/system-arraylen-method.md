@@ -2,7 +2,7 @@
 title: "System.ArrayLen Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # System.ArrayLen Method
+> **Version**: _Available from runtime version 1.0._
+
 Returns the total number of elements in an array or the number of elements in a specific dimension.
 
 
@@ -21,8 +23,8 @@ Returns the total number of elements in an array or the number of elements in a 
 ```
 Length :=   System.ArrayLen(Array: Array of [Any] [, Dimension: Integer])
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *Array*  
 &emsp;Type: [Any](../any/any-data-type.md)  
@@ -34,9 +36,9 @@ If you omit this optional argument, the method returns the total number of eleme
 
 
 ## Return Value
-*Length*  
-&emsp;Type: [Integer](../integer/integer-data-type.md)  
-  
+*Length*
+&emsp;Type: [Integer](../integer/integer-data-type.md)
+
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

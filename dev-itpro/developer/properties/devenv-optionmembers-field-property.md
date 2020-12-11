@@ -11,6 +11,7 @@ ms.author: solsen
 ---
 
 # OptionMembers Property (Field)
+> **Version**: _Available from runtime version 1.0._
 
 Sets the list of options that are available in the field that is currently selected. 
   
