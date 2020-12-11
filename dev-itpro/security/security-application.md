@@ -32,12 +32,14 @@ Before users can sign-in to the [!INCLUDE[prodshort](../developer/includes/prods
 [Multi-factor Authentication](multifactor-authentication.md)  
 
 The authentication method configured for Business Central Server is also used to access web services. For more information, see [Web Services Authentication](../webservices/web-services-authentication.md).
- 
+
 ## Authorization
 
 Once authenticated, authorization determines which areas a user can access, such as the pages and reports that they can open, and the permissions that they have on associated data. For more information, see the following articles:
 
-[User Permissions in the Application](user-security.md#user-permissions-in-the-application) 
+[User Permissions in the Application](user-security.md#user-permissions-in-the-application)
+
+[Analyzing Permission Changes Trace Telemetry](../administration/telemetry-permission-changes-trace.md)
 
 [Data Security](data-security.md?tabs=database-level)
 

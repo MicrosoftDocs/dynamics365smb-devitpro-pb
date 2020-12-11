@@ -8,12 +8,25 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 10/01/2020
+ms.date: 11/30/2020
 ms.author: jswymer
 ---
 # Telemetry Event IDs in Application Insights
 
 The following tables list the IDs of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry events that can be emitted in Azure Application Insights.
+
+## Application events
+
+| Event ID | Area | Message |
+|----------|-------------|-----------------|
+|AL0000E2A|Permissions|[User-defined permission set added: {alPermissionSetId}](telemetry-permission-changes-trace.md#setadded)|
+|AL0000E2B|Permissions|[User-defined permission set removed: {alPermissionSetId}](telemetry-permission-changes-trace.md#setremoved)|
+|AL0000E28 |Permissions|[Permission set link added: {alSourcePermissionSetId} -> {alLinkedPermissionSetId}](telemetry-permission-changes-trace.md#linkadded)|
+|AL0000E29 |Permissions|[Permission set link removed: {alSourcePermissionSetId} -> {alLinkedPermissionSetId}](telemetry-permission-changes-trace.md#linkremoved)|
+|AL0000E2C |Permissions|[Permission set assigned to user: {alPermissionSetId}](telemetry-permission-changes-trace.md#assigneduser)|
+|AL0000E2D |Permissions|[Permission set removed from user: {alPermissionSetId}](telemetry-permission-changes-trace.md#removeduser)|
+|AL0000E2E |Permissions|[Permission set assigned to user group: {alPermissionSetId}](telemetry-permission-changes-trace.md#assignedusergroup)|
+|AL0000E2F |Permissions|[Permission set removed from user group: {alPermissionSetId}](telemetry-permission-changes-trace.md#removedusergroup)|
 
 ## Client events
 

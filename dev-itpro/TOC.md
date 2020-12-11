@@ -108,6 +108,7 @@
 ### [Long Running AL Method Telemetry](administration/telemetry-al-method-trace.md)
 ### [Long Running SQL Queries Telemetry](administration/telemetry-long-running-sql-query-trace.md)
 ### [Page View Telemetry](administration/telemetry-page-view-trace.md)
+### [Permission Changes Telemetry](administration/telemetry-permission-changes-trace.md)
 ### [Report Generation Telemetry](administration/telemetry-reports-trace.md)
 ### [Incoming Web Services Requests Telemetry](administration/telemetry-webservices-trace.md)
 ### [Outgoing Web Services Requests Telemetry](administration/telemetry-webservices-outgoing-trace.md)
