@@ -25,6 +25,13 @@ The following tables list the IDs of [!INCLUDE[prodshort](../developer/includes/
 
 | Event ID | Area | Message |
 |----------|-------------|-----------------|
+|AL0000E3F|Configuration Package|[Configuration package export started: {alPackageCode}](telemetry-configuration-package-trace.md#exportstarted)|
+|AL0000E3G|Configuration Package|[Configuration package exported successfully: {alPackageCode}](telemetry-configuration-package-trace.md#exportsuccessful)|
+|AL0000E3H|Configuration Package|[Configuration package import started: {alPackageCode}](telemetry-configuration-package-trace.md#importstarted)|
+|AL0000E3I|Configuration Package|[Configuration package imported successfully: {alPackageCode}](telemetry-configuration-package-trace.md#importsuccessful)|
+|AL0000E3N|Configuration Package|[Configuration package apply started: {alPackageCode}](telemetry-configuration-package-trace.md#applystarted)|
+|AL0000E3O|Configuration Package|[Configuration package applied successfully: {alPackageCode}](telemetry-configuration-package-trace.md#applysuccessful)|
+|AL0000E3P|Configuration Package|[Configuration package deleted successfully: {alPackageCode}](telemetry-configuration-package-trace.md#deletesuccessful)|
 | LC0001 | Company Lifecycle | [Company created: {companyName}](telemetry-company-lifecycle-trace.md#company-created) |
 | LC0002 | Company Lifecycle | [Company creation canceled: {companyName}](telemetry-company-lifecycle-trace.md#company-creation-canceled) |
 | LC0003 | Company Lifecycle | [Company creation failed: {companyName}](telemetry-company-lifecycle-trace.md#company-creation-failed) |
@@ -48,7 +55,6 @@ The following tables list the IDs of [!INCLUDE[prodshort](../developer/includes/
 | LC0021 | Extension Lifecycle | [Extension failed to compile: {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})](telemetry-extension-lifecycle-trace.md#compiledfailed) |
 | LC0022 | Extension Lifecycle | [Extension updated successfully: {extensionName} version {extensionVersion} by {extensionPublisher}](telemetry-extension-lifecycle-trace.md#updatedsuccess) |
 | LC0023 | Extension Lifecycle | [Extension failed to update: {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})](telemetry-extension-lifecycle-trace.md#updatedfailed) |
-
 ## Runtime events
 
 | Event ID | Area | Message |
