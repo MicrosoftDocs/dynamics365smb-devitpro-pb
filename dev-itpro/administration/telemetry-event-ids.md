@@ -25,6 +25,9 @@ The following tables list the IDs of [!INCLUDE[prodshort](../developer/includes/
 
 | Event ID | Area | Message |
 |----------|-------------|-----------------|
+| AL0000E24 | Job Queue Lifecycle | [Job queue entry enqueued: {alJobQueueId} ](telemetry-job-queue-lifecycle-trace.md#enqueued) |
+| AL0000E25 | Job Queue Lifecycle | [Job queue entry started: {alJobQueueId} ](telemetry-job-queue-lifecycle-trace.md#started) |
+| AL0000E26 | Job Queue Lifecycle | [Job queue entry finished: {alJobQueueId} ](telemetry-job-queue-lifecycle-trace.md#finished) |
 |AL0000E3F|Configuration Package|[Configuration package export started: {alPackageCode}](telemetry-configuration-package-trace.md#exportstarted)|
 |AL0000E3G|Configuration Package|[Configuration package exported successfully: {alPackageCode}](telemetry-configuration-package-trace.md#exportsuccessful)|
 |AL0000E3H|Configuration Package|[Configuration package import started: {alPackageCode}](telemetry-configuration-package-trace.md#importstarted)|
@@ -55,6 +58,7 @@ The following tables list the IDs of [!INCLUDE[prodshort](../developer/includes/
 | LC0021 | Extension Lifecycle | [Extension failed to compile: {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})](telemetry-extension-lifecycle-trace.md#compiledfailed) |
 | LC0022 | Extension Lifecycle | [Extension updated successfully: {extensionName} version {extensionVersion} by {extensionPublisher}](telemetry-extension-lifecycle-trace.md#updatedsuccess) |
 | LC0023 | Extension Lifecycle | [Extension failed to update: {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})](telemetry-extension-lifecycle-trace.md#updatedfailed) |
+
 ## Runtime events
 
 | Event ID | Area | Message |
