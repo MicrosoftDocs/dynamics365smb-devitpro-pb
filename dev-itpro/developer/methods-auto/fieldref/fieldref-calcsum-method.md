@@ -2,7 +2,7 @@
 title: "FieldRef.CalcSum Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/23/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # FieldRef.CalcSum Method
+> **Version**: _Available from runtime version 1.0._
+
 Calculates the total of all values of a SumIndexField in a table.
 
 
@@ -23,14 +25,14 @@ Calculates the total of all values of a SumIndexField in a table.
 ```
 
 ## Parameters
-*FieldRef*  
-&emsp;Type: [FieldRef](fieldref-data-type.md)  
-An instance of the [FieldRef](fieldref-data-type.md) data type.  
+*FieldRef*
+&emsp;Type: [FieldRef](fieldref-data-type.md)
+An instance of the [FieldRef](fieldref-data-type.md) data type.
 
 ## Return Value
-*Ok*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+*Ok*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+**true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -52,7 +54,8 @@ If possible, the CalcSum method uses SumIndexField Technology \(SIFT\). SIFT is 
 
  For [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)], CalcSum execution is decoupled from [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)] SIFT index definitions. This means that if any of the conditions for using SIFT indexes are not true, then [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)] traverses all records in the base table to perform the calculation instead of using SIFT. This can reduce the number of required SIFT indexes, which can improve performance. In earlier versions of [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)], if the conditions for using SIFT indexes were not true and the **MaintainSIFTIndex** property was enabled, then you received an error when you called the CalcSum method. This provided a degree of protection in earlier versions against accidentally requesting a sorting for which no index existed. In [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)], an index is not required to support a certain sorting, but sorting without an index could lead to bad performance if a search returns a large result set, which would then have to be sorted before the first row is returned.  
 
- The CalcSum method adheres to the [SecurityFiltering Property](../../properties/devenv-securityfiltering-property.md). <!--For more information about security filters, see [Record-Level Security](record-level-security.md).-->
+<!-- property doesn't exist any longer
+ The CalcSum method adheres to the [SecurityFiltering Property](../../properties/devenv-securityfiltering-property.md).  For more information about security filters, see [Record-Level Security](record-level-security.md).-->
 
 ## Example
 

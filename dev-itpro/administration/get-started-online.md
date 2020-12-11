@@ -38,7 +38,9 @@ The "Ready to Go" program is designed to support you in the journey of bringing 
 
 When you become a Microsoft Partner Network member, you gain access to membership benefits that can help you build and grow your business. For more information, see [Explore your Go-To-Market with Microsoft offers](/partner-center/mpn-learn-about-go-to-market-benefits) in the Partner Center docs.  
 
-Specifically for going to market with [!INCLUDE [prodshort](../developer/includes/prodshort.md)], Microsoft provides resources and guidance on the [Business Applications for small and medium-sized businesses (SMBs)](https://partner.microsoft.com/solutions/business-applications/smb) site. For more information, see [Business Central Go-To-Market resources](https://partner.microsoft.com/asset/collection/business-central-go-to-market-resources#/) 
+As a Dynamics 365 reseller, you benefit from Microsoft's investments in an always up-to-date modern platform, you can bundle recognized apps from the Microsoft commercial marketplace into an offering that fits the needs of your customers, reach more customers by using Microsoft's commercial marketplace to promote your packaged consulting service offerings or customization services, and streamline your own processes and build tools with Power BI, Power Automate, and Power Apps connected to [!INCLUDE[prodshort](../includes/prodshort.md)].  
+
+Specifically for going to market with [!INCLUDE [prodshort](../developer/includes/prodshort.md)], Microsoft provides resources and guidance on the [Business Applications for small and medium-sized businesses (SMBs)](https://partner.microsoft.com/solutions/business-applications/smb) site. For more information, see [Business Central Go-To-Market resources](https://partner.microsoft.com/asset/collection/business-central-go-to-market-resources#/).  
 
 ## Step 3: Give powerful demos
 

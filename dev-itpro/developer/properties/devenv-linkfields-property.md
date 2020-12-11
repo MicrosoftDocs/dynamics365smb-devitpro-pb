@@ -1,26 +1,29 @@
 ---
 title: "LinkFields Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 9171051b-358a-44ce-a8dc-1ebc6f74ef44
-caps.latest.revision: 9
 author: SusanneWindfeldPedersen
 ---
-
- 
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # LinkFields Property
+> **Version**: _Available from runtime version 1.0._
 
-Specifies the fields that are linked between two tables using the [LinkTable Property](devenv-linktable-property.md). This property is only available for XML items that have a table as their data source.  
-  
-## Applies to  
+Specifies the fields that are linked between two tables using the LinkTable Property. This property is only available for XML items that have a table as their data source.
 
-- XMLports  
-  
+## Applies to
+-   Xml Port Table Element
+
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## Property Value  
   
 |**Value**|**Description**|  
@@ -31,7 +34,7 @@ Specifies the fields that are linked between two tables using the [LinkTable Pro
 ## Syntax
 
 ```AL
-LinkFields = <field>=FIELD(<reference field>)   
+LinkFields = <field>=FIELD(<reference field>)
 ```  
 
 ## Remarks  
@@ -40,7 +43,7 @@ This property works in combination with the [LinkTable Property](devenv-linktabl
   
 The property sets a filter on the table that is the data source for the XML item. The filter selects only those records that contain the same **<field>** value in source table as the **<reference field>** value from the table specified in [LinkTable Property](devenv-linktable-property.md).  
   
-For example, you have defined two XML items—one based on the Customer table that contains a list of customers and one based on the Sales Header table that contains a record of each sales order that has been made.  
+For example, you have defined two XML items; one based on the Customer table that contains a list of customers and one based on the Sales Header table that contains a record of each sales order that has been made.  
   
 In the Customer table, the primary key is the customer number and is stored in the No. field. In the Sales Header table that contains the sales data, each record contains this customer number as a foreign key in the field called Sell-to Customer No.  
   

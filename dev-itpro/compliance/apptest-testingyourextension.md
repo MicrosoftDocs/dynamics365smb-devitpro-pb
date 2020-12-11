@@ -7,7 +7,7 @@ ms.date: 10/01/2020
 ms.reviewer: edupont
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.author: rweigel
+ms.author: freddyk
 ---
 
 # Testing your Extension
@@ -65,9 +65,7 @@ Now it is time to test your app. The following are all things you must do as par
 
 Although we do regular testing of your app when we prepare a new version of [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)], we expect you to do the same on your end. You have access to the same builds that we do through the Collaborate program. You can do more thorough testing than we can because you know your app the best. By doing this testing, you can catch future [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] changes that may impact or break your app. Catching these changes in advance leaves less risk for customers to run into them.
 
-You should be doing regular testing against our release branch that ports into our monthly service updates. To test against these builds, sign into [aka.ms/collaborate](https://aka.ms/collaborate), navigate to packages, and locate the build named **Daily Builds - Maintaining an app in AppSource for Dynamics 365 Business Central**.
-
-We also recommend that you do regular testing against our release branch that eventually becomes our major release in April or October. For more information, see **Daily Builds - Developing for a future release of Dynamics 365 Business Central** on [aka.ms/collaborate](https://aka.ms/collaborate).
+You should be doing regular testing against our next minor (monthly) and next major (bi-annual) release branches that ports into our monthly service updates. To test against these builds, sign into [aka.ms/collaborate](https://aka.ms/collaborate), navigate to packages, and locate the package named **Working With Business Central Insider Builds**. The package contains a Shared Access Signature token with which you can download artifacts of future releases for use with Docker.
 
 ## See Also
 [Checklist for Submitting Your App](../developer/devenv-checklist-submission.md)  

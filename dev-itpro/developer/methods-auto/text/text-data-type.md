@@ -2,7 +2,7 @@
 title: "Text Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 12/10/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Text Data Type
+> **Version**: _Available from runtime version 1.0._
+
 Denotes a text string.
 
 
@@ -28,7 +30,7 @@ The following methods are available on the Text data type.
 |[IncStr(String)](text-incstr-method.md)|Increases a positive number or decrease a negative number inside a string by one (1).|
 |[CopyStr(String, Integer [, Integer])](text-copystr-method.md)|Copies a substring of any length from a specific position in a string (text or code) to a new string.|
 |[MaxStrLen(String)](text-maxstrlen-string-method.md)|Gets the maximum defined length of a string variable.|
-|[MaxStrLen(Variant)](text-maxstrlen-variant-method.md)|Gets the maximum defined length of a variant variable. Calling this method always results in a run-time exception.|
+|[MaxStrLen(Variant)](text-maxstrlen-variant-method.md)|Gets the maximum defined length of a variant variable.|
 |[PadStr(String, Integer [, String])](text-padstr-method.md)|Changes the length of a string to a specified length. If the string is shorter than the specified length, length spaces are added at the end of the string to match the length. If the string is longer than the specified length, the string is truncated. If the specified length is less than 0, an exception is thrown.|
 |[DelChr(String [, String] [, String])](text-delchr-method.md)|Deletes chars contained in the which parameter in a string based on the contents on the where parameter. If the where parameter contains an equal-sign, then all occurrences of characters in which is deleted from the current value. If the where parameter contains a less-than, then the characters are only deleted when they are first in the string. If the where parameter contains a greater-than, then the characters are only deleted when they are the last in the string. If the where parameter contains any other char, an exception is thrown. If the where parameter or the which parameter is empty, the source is returned unmodified. The which parameter is to be considered as an array of chars to delete where the order does not matter.|
 |[StrCheckSum(String [, String] [, Integer])](text-strchecksum-method.md)|Calculates a checksum for a string that contains a number. If the source is empty, 0 is returned. Each char in the source and in the weight must be a numeric character 0-9, otherwise an exception is thrown. If the WeightString parameter is shorter then the source, it is padded with '1' up until the length of source. If the WeightString parameter is longer than the source, an exception is thrown.|

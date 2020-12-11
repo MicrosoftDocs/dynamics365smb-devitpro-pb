@@ -2,7 +2,7 @@
 title: "KeyRef.FieldCount Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # KeyRef.FieldCount Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets the number of fields that have been defined in a key. Returns an error if no key is selected.
 
 
@@ -21,18 +23,18 @@ Gets the number of fields that have been defined in a key. Returns an error if n
 ```
 No :=   KeyRef.FieldCount()
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 
 ## Parameters
-*KeyRef*  
-&emsp;Type: [KeyRef](keyref-data-type.md)  
-An instance of the [KeyRef](keyref-data-type.md) data type.  
+*KeyRef*
+&emsp;Type: [KeyRef](keyref-data-type.md)
+An instance of the [KeyRef](keyref-data-type.md) data type.
 
 ## Return Value
-*No*  
-&emsp;Type: [Integer](../integer/integer-data-type.md)  
-The number of fields that have been defined in the key.  
+*No*
+&emsp;Type: [Integer](../integer/integer-data-type.md)
+The number of fields that have been defined in the key.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

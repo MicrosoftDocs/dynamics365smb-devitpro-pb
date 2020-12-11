@@ -41,7 +41,7 @@ The following table explains the custom dimensions included in a **Web Services 
 |alObjectType|Specifies the type of the AL object that made the request.|
 |companyName|Specifies the display name of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] company from which the request was made.|
 |component|**Dynamics 365 Business Central Server**|
-|componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number.|
+|componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |deprecatedKeys|A comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
 |endpoint|Specifies the endpoint for the request. The endpoint is cleaned to include only the base URI. |
 |environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|

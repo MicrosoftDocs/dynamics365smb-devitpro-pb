@@ -13,6 +13,7 @@ author: SusanneWindfeldPedersen
 ---
 
 # SubType Property (BLOB)
+> **Version**: _Available from runtime version 1.0._
 
 Sets additional information about what will be contained in the field.  
   

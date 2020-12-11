@@ -11,19 +11,19 @@ author: KennieNP
 
 # How Application Configurations Affect Performance
 
-The topics in this section are tips and tricks on how to set up [!INCLUDE[prodshort](../developer/includes/prodshort.md)] for performance and also describe how in-product configurations affect the performance of [!INCLUDE[prodshort](../developer/includes/prodshort.md)].  
+The sections in this article are tips and tricks on how to set up [!INCLUDE[prodshort](../developer/includes/prodshort.md)] for performance and also describe how in-product configurations affect the performance of [!INCLUDE[prodshort](../developer/includes/prodshort.md)].  
 
-## Uninstall extensions that you do not use
+## Uninstall extensions that you don't use
 
-Any extensions that you install can affect the overall system performance. So if you have installed an app from AppSource but later discover that it doesn't solve your business needs, then uninstall it. The same advice applies to the extension that comes preinstalled in an environment. For example, do uninstall all migration extension once you have migrated data, or if you do not intend to migrate data.
+Any extensions that you install can affect the overall system performance. So if you've installed an app from AppSource, but later discover it's not needed, then uninstall it. The same advice applies to the extension that comes preinstalled in an environment. For example, uninstall all migration extensions after you've migrated data, or if you don't intend to migrate data.
 
 ## Run things in the background
 
 It's often desirable to offload work from the user session to happen in the background. Examples are:
 
 - [Schedule long running reports to run in background](/dynamics365/business-central/ui-work-report#ScheduleReport)
-- Schedule jobs (for example posting) to run in background
-- Enable background posting in areas where your business is using reservations and item tracking using serial and lot numbers
+- [Schedule jobs](/dynamics365/business-central/admin-job-queues-schedule-tasks) (for example posting) to run in background
+- Enable [background posting](/dynamics365/business-central/ui-batch-posting) in areas where your business is using reservations and item tracking using serial and lot numbers
 - Adjust item costs as a periodic background job. Don't adjust automatically. 
 
 > [!TIP]  
@@ -39,9 +39,9 @@ Number series in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] are s
 
 ### Be cautious with the **Rename/Copy company** operations
 
-The **Rename company** and **Copy company** operations are not intended to run while business transactions are being applied to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. First, the operations are likely to induce locks on the tables that data is copied from. These locks will block users from transacting in the company. Second, the operations use resources on the database, which can in turn cause resource starvation for users working in other companies.  
+The **Rename company** and **Copy company** operations aren't intended to run while business transactions are being applied to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. First, the operations are likely to induce locks on the tables that data is copied from. These locks will block users from transacting in the company. Second, the operations use resources on the database, which can in turn cause resource starvation for users working in other companies.  
 
-If you must do a **Rename/Copy company** operation, it's highly recommended to do it outside working hours. Turn off scheduled jobs to avoid locking issues.  
+If you must do a **Rename/Copy company** operation, it's highly recommended to do it outside working hours. Turn off scheduled jobs to avoid locking issues.
 
 The **Copy Company** operation also has a number of long term effects including the following:
 
@@ -50,6 +50,9 @@ The **Copy Company** operation also has a number of long term effects including 
 - Larger .bacpac files when requesting backups from the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)]
 
     This also means that export/import operations involving .bacpac files take longer
+
+> [!NOTE]
+> For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, the **Rename company** operation is no longer supported. Instead, you can change a company's display name.
 
 ## Periodic activities that maintain performance
 

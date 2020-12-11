@@ -83,5 +83,5 @@ The following procedure uploads the license for all [!INCLUDE[prodshort](../deve
 3.  Restart all [!INCLUDE[server](../developer/includes/server.md)] instances on the computer to activate the license for other clients.  
 
 ## See Also  
- [Microsoft Dynamics ERP Software License Terms (requires login)](https://go.microsoft.com/fwlink/?LinkId=247426)   
- [Microsoft Dynamics ERP Licensing Guide (requires PartnerSource login)](https://go.microsoft.com/fwlink/?LinkID=318024)
+ [Business Central Software License Terms](https://www.microsoft.com/en-us/download/details.aspx?id=57274)  
+ [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544)  

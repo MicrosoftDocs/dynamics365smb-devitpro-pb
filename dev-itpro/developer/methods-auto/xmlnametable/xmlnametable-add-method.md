@@ -2,7 +2,7 @@
 title: "XmlNameTable.Add Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # XmlNameTable.Add Method
+> **Version**: _Available from runtime version 1.0._
+
 Atomizes the specified string and adds it to the XmlNameTable.
 
 
@@ -22,9 +24,9 @@ Atomizes the specified string and adds it to the XmlNameTable.
 [AddedKey := ]  XmlNameTable.Add(Key: String)
 ```
 ## Parameters
-*XmlNameTable*  
-&emsp;Type: [XmlNameTable](xmlnametable-data-type.md)  
-An instance of the [XmlNameTable](xmlnametable-data-type.md) data type.  
+*XmlNameTable*
+&emsp;Type: [XmlNameTable](xmlnametable-data-type.md)
+An instance of the [XmlNameTable](xmlnametable-data-type.md) data type.
 
 *Key*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -32,9 +34,9 @@ The string to add.
 
 
 ## Return Value
-*AddedKey*  
-&emsp;Type: [String](../string/string-data-type.md)  
-The new atomized string or the existing one if it already exists  
+*AddedKey*
+&emsp;Type: [String](../string/string-data-type.md)
+The new atomized string or the existing one if it already exists
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

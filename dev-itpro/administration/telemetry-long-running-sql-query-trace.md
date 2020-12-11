@@ -70,7 +70,7 @@ This table describes the different dimensions of a **Long Running Operation (SQL
 |---------|-----|
 |extensionVersion|Specifies the version of the extension.|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema. |
-|componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number|
+|componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |environmentType|Specifies the environment type of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution, such as Production or Sandbox.|
 |environmentName|Specifies the environment name of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution, such as Production or Sandbox.|
 |extensionName|Specifies the name of the extension.|

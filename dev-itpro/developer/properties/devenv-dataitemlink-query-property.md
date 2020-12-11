@@ -11,6 +11,7 @@ author: jswymer
 ---
 
 # DataItemLink Property (Query)
+> **Version**: _Available from runtime version 1.0._
 
 Sets a reference between one or more fields of the data item table and data item or data items above it.  
   

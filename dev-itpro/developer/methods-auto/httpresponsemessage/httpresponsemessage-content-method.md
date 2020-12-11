@@ -2,7 +2,7 @@
 title: "HttpResponseMessage.Content Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # HttpResponseMessage.Content Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets the contents of the HTTP response.
 
 
@@ -21,18 +23,18 @@ Gets the contents of the HTTP response.
 ```
 Content :=   HttpResponseMessage.Content()
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 
 ## Parameters
-*HttpResponseMessage*  
-&emsp;Type: [HttpResponseMessage](httpresponsemessage-data-type.md)  
-An instance of the [HttpResponseMessage](httpresponsemessage-data-type.md) data type.  
+*HttpResponseMessage*
+&emsp;Type: [HttpResponseMessage](httpresponsemessage-data-type.md)
+An instance of the [HttpResponseMessage](httpresponsemessage-data-type.md) data type.
 
 ## Return Value
-*Content*  
-&emsp;Type: [HttpContent](../httpcontent/httpcontent-data-type.md)  
-The contents of the HTTP response.  
+*Content*
+&emsp;Type: [HttpContent](../httpcontent/httpcontent-data-type.md)
+The contents of the HTTP response.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

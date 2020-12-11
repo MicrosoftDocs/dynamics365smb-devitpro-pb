@@ -13,15 +13,18 @@ ms.author: solsen
 ---
 
 # Getting started with Microsoft .NET Interoperability from AL
+
 You can call .NET type members, including methods, properties, and constructors, from AL code. In this article we will guide you through the process of creating an extension that uses .NET types.
 
 > [!IMPORTANT]  
-> .NET Interoperability is only available on-premise. If you want to use this functionality, you must set the `"target": "OnPrem"` in the app.json file. For more information, see [JSON Files](devenv-json-files.md). 
+> .NET Interoperability is only available on-premise. If you want to use this functionality, you must set the `"target": "OnPrem"` in the `app.json` file. For more information, see [JSON Files](devenv-json-files.md#Appjson).
 
 ## Enabling .NET Interoperability
-.NET interoperability can only be used by applications that target on-premise deployments. See [JSON Files](devenv-json-files.md) for more information on how to set the correct compilation target.
+
+.NET interoperability can only be used by applications that target on-premise deployments. See [JSON Files](devenv-json-files.md#Appjson) for more information on how to set the correct compilation target and [Compilation Scope Overview](devenv-compilation-scope-overview.md).
 
 ## Declaring a .NET package
+
 Using a .NET type in AL is a two-step process. First, you must declare the type in a **dotnet** package, and then reference it from code using the **DotNet** type.
 
 You start by declaring an empty **dotnet** package in your extension. See the example snippet below.

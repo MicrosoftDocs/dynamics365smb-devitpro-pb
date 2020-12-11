@@ -2,7 +2,7 @@
 title: "NavApp.GetCallerModuleInfo Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 12/10/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,9 +14,9 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # NavApp.GetCallerModuleInfo Method
-Gets information about the extension that contains the method that called the currently running method.
-For example, if method 1 (in extension A) calls method 2 (in extension B), which then calls GetCallerModuleInfo, GetCallerModuleInfo will return information about extension B.
-    
+> **Version**: _Available from runtime version 6.0._
+
+Gets information about the extension that contains the method that called the currently running method. For example, if method 1 (in extension A) calls method 2 (in extension B), which calls GetCallerModuleInfo, then GetCallerModuleInfo will return information about extension B. 
 
 > [!NOTE]
 > This method is supported only in Business Central on-premises.
@@ -32,9 +32,9 @@ A value containing information about the calling application.
 
 
 ## Return Value
-*Ok*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the information could be retrieved, otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+*Ok*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+**true** if the information could be retrieved, otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

@@ -1,25 +1,30 @@
 ---
 title: "RunPageOnRec Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: b453e896-1467-4123-ab2e-1bbce78ed7bd
-caps.latest.revision: 8
+author: SusanneWindfeldPedersen
 ---
-
- 
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # RunPageOnRec Property
+> **Version**: _Available from runtime version 1.0._
 
-Sets the same record on the page you launch from this control as is already displayed on the current page.  
-  
-## Applies to  
-  
-- Page actions  
-  
+Sets the same record on the page you launch from this control as is already displayed on the current page.
+
+## Applies to
+-   Page Action
+
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+
 ## Property Value  
 
 **True** if the current record on the page that you will launch from this control is displayed; otherwise, **false**. The default is **false**.  

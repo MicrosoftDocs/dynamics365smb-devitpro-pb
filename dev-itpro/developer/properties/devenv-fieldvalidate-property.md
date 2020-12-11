@@ -1,7 +1,8 @@
 ---
 title: "FieldValidate Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -9,19 +10,28 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # FieldValidate Property
+> **Version**: _Available from runtime version 1.0._
 
-Sets a value that specifies whether the values in the source field are validated by the [OnValidate (Fields) Trigger](../triggers/devenv-onvalidate-fields-trigger.md) trigger for the field.  
-  
-## Applies to  
+Sets a value that specifies whether the values in the source field are validated by the OnValidate (Fields) trigger for the field.
 
-- Field elements in XMLports 
-- Field attributes in XMLports
-  
-## Property Value  
+## Applies to
+-   Xml Port Field Attribute
+-   Xml Port Field Element
 
-**True** if the fields are validated; otherwise, **false**. The default value is **Undefined**.  
+## Property Value
+
+|Value|Description|
+|-----------|---------------------------------------|
+|**Yes**|If the fields are validated.|
+|**No**|If the fields are not validated|
+|**Undefined**|The default value.|
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 
 ## Syntax
 
