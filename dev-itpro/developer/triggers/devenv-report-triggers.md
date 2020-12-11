@@ -49,7 +49,7 @@ This condition leads to the two important differences in the flow, which may inf
 1. The **OnInitReport** trigger is run once when opening the request page and again for every preview of the report. In some cases, it can mean that before the report is even executed, the **OnInitReport** trigger has already run twice.
 2. The request page and the request page triggers won't be executed on every preview. The new report instances will receive the request page parameters from the initial request page.
 
-For some reports, their design may make it impossible to run them as scheduled reports. It's  possible to disable multiple previews and revert to the legacy preview behavior by setting the [AllowScheduling property](../properties-auto/devenv-allowscheduling-property.md) on the report object to `false`. This property was introduced in version 17.2.
+For some reports, their design may make it impossible to run them as scheduled reports. It's  possible to disable multiple previews and revert to the legacy preview behavior by setting the [AllowScheduling property](../properties/devenv-allowscheduling-property.md) on the report object to `false`. This property was introduced in version 17.2.
 
 ## See Also
 
