@@ -26,7 +26,7 @@ Retrieves the properties and relationships of an configurationPackage object for
 ## HTTP requests
 ### Insert configurationPackage
 ```json
-POST /microsoft/automation/{apiVersion}/companies({companyId})/configurationPackages
+POST /microsoft/automation/2.0/companies({companyId})/configurationPackages
 Content-type: application/json
 {
     "code":"YourPackageName"
@@ -35,12 +35,12 @@ Content-type: application/json
 
 ### Import configurationPackage
 ```json
-POST /microsoft/automation/{apiVersion}/companies({companyId})/configurationPackages('{packageName}')/Microsoft.NAV.import
+POST /microsoft/automation/2.0/companies({companyId})/configurationPackages('{packageName}')/Microsoft.NAV.import
 
 ```
 ### Apply configurationPackage
 ```json
-POST /microsoft/automation/{apiVersion}/companies({companyId})/configurationPackages('{packageName}')/Microsoft.NAV.apply
+POST /microsoft/automation/2.0/companies({companyId})/configurationPackages('{packageName}')/Microsoft.NAV.apply
 
 ```
 
@@ -61,7 +61,7 @@ If successful, this method returns a ```200 OK``` response code.
 
 Here is an example of the request.
 ```json
-GET https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v1.0/companies({companyId})/configurationPackages('{packageName}')/Microsoft.NAV.import
+GET https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/configurationPackages('{packageName}')/Microsoft.NAV.import
 ```
 
 **Response**
@@ -73,6 +73,7 @@ Here is an example of the response.
 
 ```json
 {
+    "id": "b6d25c66-f33d-eb11-846f-0022482037e2",
     "code": "RAS2",
     "packageName": "SAMPLE",
     "languageId": 0,
