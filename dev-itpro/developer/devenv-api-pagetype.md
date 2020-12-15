@@ -39,7 +39,7 @@ page 50120 MyCustomerApi
     Caption = 'My Customer API';
     APIPublisher = 'contoso';
     APIGroup = 'app1';
-    APIVersion = 'v2.0';
+    APIVersion = 'v2.0', 'v1.0';
     EntityName = 'customer';
     EntitySetName = 'customers';
     SourceTable = Customer;
