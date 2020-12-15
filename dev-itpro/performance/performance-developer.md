@@ -60,7 +60,7 @@ For more information about Page Background Tasks, see [Page Background Tasks](..
 #### Anti-patterns (do not do this)
 Avoid using standard UI pages to expose as web service endpoints. Many things, like FactBoxes, aren't exposed in OData, but will use resources to compute.
 
-Things that have historically caused performance on pages that are exposed as endpoints are:
+Things that have historically caused performance issues on pages that are exposed as endpoints are:
 
 - Heavy logic in `OnAfterGetCurrRecord`
 - Many SIFT fields 
