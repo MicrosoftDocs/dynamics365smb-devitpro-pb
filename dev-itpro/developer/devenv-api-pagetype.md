@@ -39,7 +39,7 @@ page 50120 MyCustomerApi
     Caption = 'My Customer API';
     APIPublisher = 'contoso';
     APIGroup = 'app1';
-    APIVersion = 'v2.0';
+    APIVersion = 'v2.0', 'v1.0';
     EntityName = 'customer';
     EntitySetName = 'customers';
     SourceTable = Customer;
@@ -75,5 +75,5 @@ page 50120 MyCustomerApi
 [APIGroup Property](properties/devenv-apigroup-page-property.md)  
 [APIVersion Property](properties/devenv-apiversion-page-property.md)   
 [EntityName Property](properties/devenv-entityname-property.md)  
-[EntitySetName Property](properties/devenv-entitysetname-property.md)
+[EntitySetName Property](properties/devenv-entitysetname-property.md)  
 [Developing Extensions](devenv-dev-overview.md)  

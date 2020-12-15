@@ -18,7 +18,14 @@
 ### [Microsoft Responsibilities](deployment/microsoft-responsibilities.md)
 ### [Components and Capabilities](deployment/app-components.md)
 ### [Add your App to AppSource](administration/appsource.md)
-### ISV Apps
+<!--AppSourcevalidation-->
+### AppSource Validation
+#### [Marketing Validation Checklist](developer/readiness/readiness-checklist-marketing.md)
+#### [Marketing Validation FAQ](developer/readiness/readiness-marketing-validation-faq.md)
+#### [Technical Validation Checklist](developer/devenv-checklist-submission.md)
+#### [How to Make Compelling Videos](developer/readiness/readiness-how-to-make-compelling-videos.md)
+#### [How to Create an Effective Sales Landing Page](developer/readiness/readiness-how-to-create-sales-landing-page.md)
+### Embed Apps
 #### [Embed App Overview](deployment/embed-app-overview.md)
 #### [Qualification and Onboarding](deployment/embed-app-qualifications-onboarding.md)
 #### Deployment
@@ -29,13 +36,6 @@
 #### App Management
 ##### [Introduction](administration/appmanagement/app-management-overview.md)
 ##### [App Management API](administration/appmanagement/app-management-api.md)
-<!--AppSourcevalidation-->
-### AppSource Validation
-#### [Marketing Validation Checklist](developer/readiness/readiness-checklist-marketing.md)
-#### [Marketing Validation FAQ](developer/readiness/readiness-marketing-validation-faq.md)
-#### [Technical Validation Checklist](developer/devenv-checklist-submission.md)
-#### [How to Make Compelling Videos](developer/readiness/readiness-how-to-make-compelling-videos.md)
-#### [How to Create an Effective Sales Landing Page](developer/readiness/readiness-how-to-create-sales-landing-page.md)
 ## Sell
 ### [Get Started as a Reseller of Business Central Online](administration/get-started-online.md)
 ### [Cloud Solution Provider program](/partner-center/csp-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
@@ -100,12 +100,17 @@
 ### [App Key Vault Secret Telemetry](administration/telemetry-extension-key-vault-trace.md)
 ### [Authorization Telemetry](administration/telemetry-authorization-trace.md)
 ### [Company Lifecycle Telemetry](administration/telemetry-company-lifecycle-trace.md)
+### [Configuration Package Lifecycle Telemetry](administration/telemetry-configuration-package-trace.md)
 ### [Database Lock Timeout Telemetry](administration/telemetry-database-locks-trace.md)
+### [Email Telemetry](administration/telemetry-email-trace.md)
 ### [Extension Lifecycle Telemetry](administration/telemetry-extension-lifecycle-trace.md)
 ### [Extension Update Telemetry](administration/telemetry-extension-update-trace.md)
+### [Field Monitoring Telemetry](administration/telemetry-field-monitoring-trace.md)
+### [Job Queue Lifecycle Telemetry](administration/telemetry-job-queue-lifecycle-trace.md)
 ### [Long Running AL Method Telemetry](administration/telemetry-al-method-trace.md)
 ### [Long Running SQL Queries Telemetry](administration/telemetry-long-running-sql-query-trace.md)
 ### [Page View Telemetry](administration/telemetry-page-view-trace.md)
+### [Permission Changes Telemetry](administration/telemetry-permission-changes-trace.md)
 ### [Report Generation Telemetry](administration/telemetry-reports-trace.md)
 ### [Incoming Web Services Requests Telemetry](administration/telemetry-webservices-trace.md)
 ### [Outgoing Web Services Requests Telemetry](administration/telemetry-webservices-outgoing-trace.md)
@@ -847,9 +852,12 @@
 #### [Enabling Application Insights](administration/telemetry-enable-application-insights.md)
 #### [App Key Vault Secret Telemetry](administration/telemetry-extension-key-vault-trace.md)
 #### [Company Lifecycle Telemetry](administration/telemetry-company-lifecycle-trace.md)
+#### [Configuration Package Lifecycle Telemetry](administration/telemetry-configuration-package-trace.md)
 #### [Database Lock Timeout Telemetry](administration/telemetry-database-locks-trace.md)
+#### [Email Telemetry](administration/telemetry-email-trace.md)
 #### [Extension Lifecycle Telemetry](administration/telemetry-extension-lifecycle-trace.md)
 #### [Extension Update Telemetry](administration/telemetry-extension-update-trace.md)
+#### [Field Monitoring Telemetry](administration/telemetry-field-monitoring-trace.md)
 #### [Long Running AL Method Telemetry](administration/telemetry-al-method-trace.md)
 #### [Long Running SQL Queries Telemetry](administration/telemetry-long-running-sql-query-trace.md)
 #### [Report Generation Telemetry](administration/telemetry-reports-trace.md)

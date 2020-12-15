@@ -13,7 +13,7 @@ ms.author: freddyk
 
 # Technical Validation
 
-Below you will find a checklist of all requirements that you **must meet before submitting** an extension for validation. You will also find a description of how the Business Central Validation is performing technical and manual validation and how you can implement a validation pipeline to perform the same technical validation yourself.
+Below you will find a checklist of all requirements that you **must meet before submitting** an extension for validation. You will also find a description of how the Business Central Validation team is performing technical and manual validation and how you can implement a validation pipeline to perform the same technical validation yourself.
 
 ## Technical Validation Checklist
 

@@ -9,7 +9,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms. search.keywords: deprecated, Czech, local functionality
-ms.date: 10/01/2020
+ms.date: 12/11/2020
 ms.reviewer: edupont
 ms.author: v-zdbice
 
@@ -42,7 +42,7 @@ A new setup was added for this feature – **FA Extended Posting Group** table. 
 
 |Moved, Removed, or Replaced?|Why?|When?|
 |----|----|----|
-|Moved|The functionality for Different types of disposal and maintenance in the Czech version has been moved to the Different types of disposal and maintenance (CZ) extension. For more information, see [Different types of disposal and maintenance (CZ) Extension](/dynamics365/business-central/LocalFunctionality/Czech/ui-extensions-different-disposal-maintenance-types-cz) in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] documentation. |2020 release wave 2|
+|Moved|The functionality for Different types of disposal and maintenance in the Czech version will be moved to the Fixed Asset Localization for Czech extension. |2021 release wave 1|
 
 ## Posting Description
 
