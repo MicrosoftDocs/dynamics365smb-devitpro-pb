@@ -75,5 +75,5 @@ page 50120 MyCustomerApi
 [APIGroup Property](properties/devenv-apigroup-page-property.md)  
 [APIVersion Property](properties/devenv-apiversion-page-property.md)   
 [EntityName Property](properties/devenv-entityname-property.md)  
-[EntitySetName Property](properties/devenv-entitysetname-property.md)
+[EntitySetName Property](properties/devenv-entitysetname-property.md)  
 [Developing Extensions](devenv-dev-overview.md)  
