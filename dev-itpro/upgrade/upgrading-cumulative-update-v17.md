@@ -40,7 +40,7 @@ The application includes AL extensions that define the objects and code that mak
 
 - Application extension
 
-    The Application extension logically encapsulates all of the extensions making up a solution, for example, version `16.0.0.0` of the base and system application package files, and it provides a convenient way to define and refer to this solution identity. This extension is required fro Microsoft extensions, but is optional for third-party extensions. For more information, see [The Microsoft_Application.app File](../developer/devenv-application-app-file.md).
+    The Application extension logically encapsulates all of the extensions making up a solution, for example, version `16.0.0.0` of the base and system application package files, and it provides a convenient way to define and refer to this solution identity. This extension is required for Microsoft extensions, but is optional for third-party extensions. For more information, see [The Microsoft_Application.app File](../developer/devenv-application-app-file.md).
 
 - Customization extensions
 
