@@ -1,5 +1,5 @@
 ---
-title: "Add PromotedOnly="true" to some or all promoted actions to avoid identical actions from appearing in both the promoted and default sections of the command bar."
+title: "A Repeater control used on a List page must be defined at the beginning of the area(Content) section."
 ms.author: solsen
 ms.custom: na
 ms.date: 12/14/2020
@@ -13,11 +13,11 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# UICop Rule AW0011
-Add PromotedOnly="true" to some or all promoted actions to avoid identical actions from appearing in both the promoted and default sections of the command bar.  
+# UICop Rule AW0010
+A Repeater control used on a List page must be defined at the beginning of the area(Content) section.  
 
 ## Description
-Add PromotedOnly="true" to some or all promoted actions to avoid identical actions from appearing in both the promoted and default sections of the command bar.
+A Repeater control used on a List page must be defined at the beginning of the area(Content) section.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
