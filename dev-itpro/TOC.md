@@ -33,6 +33,9 @@
 ##### [Creating Deployment Packages](embedapps/embed-app-deployment-package.md)
 ##### [Managing Embed Apps in Microsoft Lifecycle Services](deployment/embed-app-lifecycle-services.md)
 #### [Using Application Family](deployment/embed-app-using-application-family.md)
+#### Application Access Management
+##### [Application Access Management for ISVs and VARs](embedapps/embed-app-application-access-management.md)
+##### [Application Access Managment API](embedapps/embed-app-application-access-management-api.md)
 #### App Management
 ##### [Introduction](administration/appmanagement/app-management-overview.md)
 ##### [App Management API](administration/appmanagement/app-management-api.md)
