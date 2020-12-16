@@ -49,9 +49,6 @@ The remaining sections of this article are intended for people who do **not** us
 
 Microsoft's GitHub *dynamics365smb-docs* repos for [!INCLUDE [prod_short](../developer/includes/prod_short.md)] Help contain the following folders:
 
-- accountant
-
-    Contains files that are relevant for Dynamics 365 — Accountant Hub but will soon be deleted due to deprecation. You can ignore this folder.
 - archive
 
     Contains files that are not published but kept for backwards compatibility use internally at Microsoft. You can ignore this folder.

@@ -6,7 +6,7 @@ ms.custom: na
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 11/04/2020
+ms.date: 12/16/2020
 ms.author: edupont
 ---
 
@@ -111,6 +111,17 @@ For tables in the body, use the markdown syntax. The Docs Authoring Pack for Vis
 ```
 
 MarkDown syntax for nested tables is limited, so we recommend using HTML-syntax for nested tables in ordered and unordered lists use HTML-syntax.
+
+### Placeholders
+
+Rather than repeating text in two or more articles, use *includes*. For more information, see [Included Markdown files](/contribute/markdown-reference#included-markdown-files).  
+
+For [!INCLUDE [prod_short](../includes/prod_short.md)], we use includes for boilerplate text, for content that is repeated in more than one article, and for the product name. That way, we can make changes in just one location - and so can you.  
+
+> [!TIP]
+> In the [dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs) repo, the includes are in the `business-central\includes` subfolder.
+>
+> In December 2020, the two placeholders for the product name, prodshort.md and prodlong.md, were renamed to prod_short.md and prod_long.md. The change solved a problem internally at Microsoft, because we have a tool that helps identify spelling error, and that tool generated warnings for prodshort.md and prodlong.md.
 
 ### Comment syntax
 
