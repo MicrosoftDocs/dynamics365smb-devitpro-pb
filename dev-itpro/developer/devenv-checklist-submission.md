@@ -13,7 +13,7 @@ ms.author: freddyk
 
 # Technical Validation
 
-Below you will find a checklist of all requirements that you **must meet before submitting** an extension for validation. You will also find a description of how the Business Central Validation is performing technical and manual validation and how you can implement a validation pipeline to perform the same technical validation yourself.
+Below you will find a checklist of all requirements that you **must meet before submitting** an extension for validation. You will also find a description of how the Business Central Validation team is performing technical and manual validation and how you can implement a validation pipeline to perform the same technical validation yourself.
 
 ## Technical Validation Checklist
 
@@ -76,18 +76,18 @@ The submitted apps will be extracted and investigated following this list:
 
 With the latest version of BcContainerHelper, you can run a single command, which should perform the same validation steps and give you a good indication of whether your apps will pass validation or not:
 
-    $validationResults = Run-AlValidation `
-        -licenseFile "path/url to license file" `
-        -validateCurrent `
-        -installApps @( "path/url to your foreign dependencies, apps which will not be part of the validation (or blank if this is the first)" ) `
-        -previousApps @( "path/url to your previous version of the .app files (or blank if this is the first)" ) `
-        -apps @( "path/url to the new version of the .app files" ) `
-        -countries @( "countries you want to validate against (f.ex. us,ca)" ) `
-        -affixes @( "affixes you own (f.ex. fab,con)" ) `
-        -supportedCountries @( "supported countries (f.eks. us,ca)" )
-    $validationResults | Write-Host -ForegroundColor Red
+$validationResults = Run-AlValidation `
+    -licenseFile "path/url to license file" `
+    -validateCurrent `
+    -installApps @( "path/url to your foreign dependencies, apps which will not be part of the validation (or blank if this is the first)" ) `
+    -previousApps @( "path/url to your previous version of the .app files (or blank if this is the first)" ) `
+    -apps @( "path/url to the new version of the .app files" ) `
+    -countries @( "countries you want to validate against (f.ex. us,ca)" ) `
+    -affixes @( "affixes you own (f.ex. fab,con)" ) `
+    -supportedCountries @( "supported countries (f.eks. us,ca)" )
+$validationResults | Write-Host -ForegroundColor Red
 
-All array paramaters can also be specified as a comma-separated string.
+All array parameters can also be specified as a comma-separated string.
 
 Please include app and all library apps in both previousApps and apps and please include all countries on which you want to validate.
 
