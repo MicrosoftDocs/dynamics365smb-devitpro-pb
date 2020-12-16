@@ -18,17 +18,6 @@
 ### [Microsoft Responsibilities](deployment/microsoft-responsibilities.md)
 ### [Components and Capabilities](deployment/app-components.md)
 ### [Add your App to AppSource](administration/appsource.md)
-### ISV Apps
-#### [Embed App Overview](deployment/embed-app-overview.md)
-#### [Qualification and Onboarding](deployment/embed-app-qualifications-onboarding.md)
-#### Deployment
-##### [Overview](embedapps\embed-app-deployment-overview.md)
-##### [Creating Deployment Packages](embedapps/embed-app-deployment-package.md)
-##### [Managing Embed Apps in Microsoft Lifecycle Services](deployment/embed-app-lifecycle-services.md)
-#### [Using Application Family](deployment/embed-app-using-application-family.md)
-#### App Management
-##### [Introduction](administration/appmanagement/app-management-overview.md)
-##### [App Management API](administration/appmanagement/app-management-api.md)
 <!--AppSourcevalidation-->
 ### AppSource Validation
 #### [Marketing Validation Checklist](developer/readiness/readiness-checklist-marketing.md)
@@ -36,6 +25,20 @@
 #### [Technical Validation Checklist](developer/devenv-checklist-submission.md)
 #### [How to Make Compelling Videos](developer/readiness/readiness-how-to-make-compelling-videos.md)
 #### [How to Create an Effective Sales Landing Page](developer/readiness/readiness-how-to-create-sales-landing-page.md)
+### Embed Apps
+#### [Embed App Overview](deployment/embed-app-overview.md)
+#### [Qualification and Onboarding](deployment/embed-app-qualifications-onboarding.md)
+#### Deployment
+##### [Overview](embedapps\embed-app-deployment-overview.md)
+##### [Creating Deployment Packages](embedapps/embed-app-deployment-package.md)
+##### [Managing Embed Apps in Microsoft Lifecycle Services](deployment/embed-app-lifecycle-services.md)
+#### [Using Application Family](deployment/embed-app-using-application-family.md)
+#### Application Access Management
+##### [Application Access Management for ISVs and VARs](embedapps/embed-app-application-access-management.md)
+##### [Application Access Managment API](embedapps/embed-app-application-access-management-api.md)
+#### App Management
+##### [Introduction](administration/appmanagement/app-management-overview.md)
+##### [App Management API](administration/appmanagement/app-management-api.md)
 ## Sell
 ### [Get Started as a Reseller of Business Central Online](administration/get-started-online.md)
 ### [Cloud Solution Provider program](/partner-center/csp-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)

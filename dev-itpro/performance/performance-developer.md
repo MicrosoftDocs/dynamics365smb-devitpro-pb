@@ -60,7 +60,7 @@ For more information about Page Background Tasks, see [Page Background Tasks](..
 #### Anti-patterns (do not do this)
 Avoid using standard UI pages to expose as web service endpoints. Many things, like FactBoxes, aren't exposed in OData, but will use resources to compute.
 
-Things that have historically caused performance on pages that are exposed as endpoints are:
+Things that have historically caused performance issues on pages that are exposed as endpoints are:
 
 - Heavy logic in `OnAfterGetCurrRecord`
 - Many SIFT fields 
@@ -70,7 +70,7 @@ Avoid exposing calculated fields, because calculated fields are expensive. Try t
 
 Don't use temp tables as a source if you have a lot of records. Temp tables based APIs are a performance hit. The server has to fetch and insert every record, and there is no caching on data in temp tables. Paging becomes difficult to do in a performant manner. A rule of thumb is if you have more than 100 records, don't use temp tables.
 
-Don't insert child records belonging to same parent in parallel. This causes locks on Sales Header and Integration Record tables because parallel calls try to update the same parent record. The solution is to wait for the first call to finish or use $batch, which will make sure calls get executed one after another.
+Don't insert child records belonging to same parent in parallel. This causes locks on parent and Integration Record tables because parallel calls try to update the same parent record. The solution is to wait for the first call to finish or use $batch, which will make sure calls get executed one after another.
 
 #### Performance patterns (do this)
 - Instead of exposing UI pages as web service endpoints, use the built-in API pages because they've been optimized for this scenario. Select the highest API version available. Don't use the beta version of the API pages. To read more about API pages, see [API Page Type](../developer/devenv-api-pagetype.md).

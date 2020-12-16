@@ -74,7 +74,7 @@ ALTER TABLE [YOUR TABLE] ENABLE CHANGE_TRACKING
 
 If a user has problems managing a cloud migration, like starting migration, initializing companies, or migrating data from earlier versions, check that:
 
-- The user has a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] license (Essentials or Premium, depending on their solution)
+- The user has a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] license (Essentials or Premium, depending on their solution). We recommend using free Dynamics 365 Business Central Premium Trial subscription for this user.  
 - The user is assigned the SUPER permission set.
 
 Users without a license, such as internal administrators or delegated administrators, aren't allowed to run the migration.  

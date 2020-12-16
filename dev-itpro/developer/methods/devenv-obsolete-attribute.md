@@ -18,21 +18,21 @@ Specifies that a method or a variable is or will be deprecated in a future versi
 
 ## Syntax  
 ```AL
-[Obsolete('(<Reason>,<tag>')]
+[Obsolete('<Reason>','<tag>')]
 ```
   
 ## Example
-Setting the attribute on a method or a variable. Each method must be marked with `[Obsolete('(<Reason>,<tag>')]`.
+Setting the attribute on a method or a variable. Each method must be marked with `[Obsolete('<Reason>','<tag>')]`.
     
 ```AL
 codeunit 50143 SoonObsolete
 {    
-       [Obsolete('Pending, Pending removal use X instead')]
-       local procedure MyProcedure()
+       [Obsolete('Pending removal use X instead', '17.0')]
+       procedure MyProcedure()
        var
            myInt: Integer;
        begin
-           //Make something happen
+           // Make something happen
        end;
 }    
     
