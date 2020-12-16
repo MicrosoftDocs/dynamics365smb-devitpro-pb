@@ -13,7 +13,7 @@ ms.author: solsen
 ---
 
 # Subscribing to Events in a .NET Framework Type
-With .NET Framework interoperability in [!INCLUDE[prodlong](includes/prodlong.md)] objects, you can configure a DotNet variable to subscribe to events that are published by a .NET Framework type. Events are handled by triggers in the AL code of the [!INCLUDE[prodshort](includes/prodshort.md)] object. 
+With .NET Framework interoperability in [!INCLUDE[prod_long](includes/prod_long.md)] objects, you can configure a DotNet variable to subscribe to events that are published by a .NET Framework type. Events are handled by triggers in the AL code of the [!INCLUDE[prod_short](includes/prod_short.md)] object. 
 
 You start by declaring in AL the usage of two .NET types from the `System` assembly. The first type is `System.Timers.Timer` and it will be used to generate .NET events. The second one is called `System.Timers.ElapsedEventArgs` and it is required for creating a subscriber to the `Elapsed` event emitted by the `Timer` type.
 

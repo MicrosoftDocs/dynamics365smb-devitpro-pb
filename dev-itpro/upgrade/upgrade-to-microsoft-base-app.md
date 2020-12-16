@@ -50,7 +50,7 @@ The process for upgrading is similar for a single-tenant and multitenant deploym
 
 1. Your version 14 is compatible with version 16.
 
-    There are several updates for version 14. The updates have a compatible version 16 update. For more information, see [[!INCLUDE[prodlong](../developer/includes/prodlong.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md). 
+    There are several updates for version 14. The updates have a compatible version 16 update. For more information, see [[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md). 
 -->
 - Get the required version of the txt2al conversion tool.
 
@@ -60,7 +60,7 @@ The process for upgrading is similar for a single-tenant and multitenant deploym
 
 1. Download the latest available update for Business Central 2020 release wave 1, version **16.5** or later, that is compatible with your version 14.  
 
-    For more information, see [[!INCLUDE[prodlong](../developer/includes/prodlong.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
+    For more information, see [[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
 
     > [!IMPORTANT]
     > You must use version 16.5 or later, otherwise you'll run problems during upgrade because of missing enum objects later in this procedure. For more information, see [Some Known Issues](known-issues.md#enum).
@@ -558,7 +558,7 @@ The [!INCLUDE[server](../developer/includes/server.md)] installation includes ne
 
 To upgrade the control add-ins from the client, do the following steps:
 
-1. Open the [!INCLUDE[](../developer/includes/prodshort.md)] client.
+1. Open the [!INCLUDE[](../developer/includes/prod_short.md)] client.
 2. Search for and open the **Control Add-ins** page.
 3. Choose **Actions** > **Control Add-in Resource** > **Import**.
 4. Locate and select the .zip file for the control add-in and choose **Open**.

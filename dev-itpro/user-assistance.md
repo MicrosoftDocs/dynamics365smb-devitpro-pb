@@ -10,13 +10,13 @@ ms.date: 10/01/2020
 ms.author: edupont
 ---
 
-# [!INCLUDE[prodlong](developer/includes/prodlong.md)] User Assistance Model
+# [!INCLUDE[prod_long](developer/includes/prod_long.md)] User Assistance Model
 
-The [!INCLUDE[prodshort](developer/includes/prodshort.md)] user assistance model is based on the following principles:
+The [!INCLUDE[prod_short](developer/includes/prod_short.md)] user assistance model is based on the following principles:
 
 - Get started
 
-    Default values and setup wizards makes it easy to start using [!INCLUDE[prodshort](developer/includes/prodshort.md)] with your own data, in-product videos give new users a quick introduction to how the product works, and Home pages give easy access to key tasks so users can easily get started with work every day.
+    Default values and setup wizards makes it easy to start using [!INCLUDE[prod_short](developer/includes/prod_short.md)] with your own data, in-product videos give new users a quick introduction to how the product works, and Home pages give easy access to key tasks so users can easily get started with work every day.
 - Get unblocked
 
     Embedded user assistance implemented as tooltips answers most immediate questions about what fields and actions do.
@@ -30,9 +30,9 @@ In this article, we'll talk about the user assistance model itself and what it d
 
 ## Help users get started
 
-The user assistance concept of *Get Started* is not just about getting started with [!INCLUDE[prodshort](developer/includes/prodshort.md)] on the first day. It's also about getting started all the other days, and about getting started with infrequent and unfamiliar tasks.  
+The user assistance concept of *Get Started* is not just about getting started with [!INCLUDE[prod_short](developer/includes/prod_short.md)] on the first day. It's also about getting started all the other days, and about getting started with infrequent and unfamiliar tasks.  
 
-Assistance in the shape of wizards is helpful for set up or filling in data for a complicated report, for example. Home pages that are designed for a particular role or job help users get started with their daily work – they can easily get to their most important tasks, and that means that [!INCLUDE[prodshort](developer/includes/prodshort.md)] helps them get their work done more efficiently.  
+Assistance in the shape of wizards is helpful for set up or filling in data for a complicated report, for example. Home pages that are designed for a particular role or job help users get started with their daily work – they can easily get to their most important tasks, and that means that [!INCLUDE[prod_short](developer/includes/prod_short.md)] helps them get their work done more efficiently.  
 
 <!-- TODO: Reference to UX guidelines -->
 
@@ -44,7 +44,7 @@ The tooltips help users unblock themselves by providing an answer to the most li
 
 :::image type="content" source="media/ua_tooltip_standard.png" alt-text="A standard tooltip for a field on a card page.":::
 
-Table fields can be read-only in one page and editable in another so the tooltips describe the difference. In [!INCLUDE [prodshort](developer/includes/prodshort.md)], this type of "What is this field?"-content is embedded in the page objects, and resource files can be used for translated user interfaces. For more information, see [Working with Translation Files](developer/devenv-work-with-translation-files.md).  
+Table fields can be read-only in one page and editable in another so the tooltips describe the difference. In [!INCLUDE [prod_short](developer/includes/prod_short.md)], this type of "What is this field?"-content is embedded in the page objects, and resource files can be used for translated user interfaces. For more information, see [Working with Translation Files](developer/devenv-work-with-translation-files.md).  
 
 Most tooltips end with an automatically generated link to *learn more* as described in the [Help users learn more](#help-users-learn-more) section; however, tooltips for actions do not have *Learn more* links:
 
@@ -52,7 +52,7 @@ Most tooltips end with an automatically generated link to *learn more* as descri
 
 Users can always use the Ctrl+F1 keyboard shortcut to access the *learn more* content that is configured for the currently-selected item in the user interface.
 
-The tooltips in [!INCLUDE [prodshort](developer/includes/prodshort.md)] are conceptually similar to *[field descriptions](/dynamics365/fin-ops-core/fin-ops/get-started/view-export-field-descriptions?toc=/dynamics365/finance/toc.json)* in Dynamics 365 Finance and related apps, and *[flyouts](/windows/uwp/design/controls-and-patterns/dialogs-and-flyouts/flyouts)* in the Fluent Design guidelines. [!INCLUDE [prodshort](developer/includes/prodshort.md)] does not have the equivalent of [teaching tips](/windows/uwp/design/controls-and-patterns/dialogs-and-flyouts/teaching-tip) that you can add to your solution, though our platform includes a few flyouts of the same type.
+The tooltips in [!INCLUDE [prod_short](developer/includes/prod_short.md)] are conceptually similar to *[field descriptions](/dynamics365/fin-ops-core/fin-ops/get-started/view-export-field-descriptions?toc=/dynamics365/finance/toc.json)* in Dynamics 365 Finance and related apps, and *[flyouts](/windows/uwp/design/controls-and-patterns/dialogs-and-flyouts/flyouts)* in the Fluent Design guidelines. [!INCLUDE [prod_short](developer/includes/prod_short.md)] does not have the equivalent of [teaching tips](/windows/uwp/design/controls-and-patterns/dialogs-and-flyouts/teaching-tip) that you can add to your solution, though our platform includes a few flyouts of the same type.
 
 ### Guidelines for tooltip text
 
@@ -85,11 +85,11 @@ The Microsoft user assistance model requires a tooltip for all controls of type 
 
 The content that Microsoft publishes under the user assistance concept of *Learn more* is intended to answer those questions that the user interface (including the tooltips) cannot answer, such as where that page fits into the bigger workflow, or what comes next, or what would be the alternative. Users can access this content either through the *Learn more* link in tooltips, or by using the *Ctrl+F1* keyboard shortcut. For more information, see [Configure Context-Sensitive Help](help/context-sensitive-help.md).  
 
-The base version of [!INCLUDE[prodshort](developer/includes/prodshort.md)] uses content that is published to an online library ([Docs.microsoft.com/dynamics365/business-central](/dynamics365/business-central/index)) so that it can also serve as onboarding material and as feature overviews that you can share with prospects. The content is written in MarkDown, and our source files are available in a [public GitHub repo](https://github.com/MicrosoftDocs/dynamics365smb-docs) that you can extend and customize for your customers.  
+The base version of [!INCLUDE[prod_short](developer/includes/prod_short.md)] uses content that is published to an online library ([Docs.microsoft.com/dynamics365/business-central](/dynamics365/business-central/index)) so that it can also serve as onboarding material and as feature overviews that you can share with prospects. The content is written in MarkDown, and our source files are available in a [public GitHub repo](https://github.com/MicrosoftDocs/dynamics365smb-docs) that you can extend and customize for your customers.  
 
 There are repos in GitHub for the source content and each of the languages that Microsoft translates to. For more information, see [Extend, Customize, and Collaborate on the Help](help/contributor-guide.md).  
 
-For the base version of [!INCLUDE [prodshort](developer/includes/prodshort.md)], free online learning is also available on Microsoft Learn. For more information, see the [Business Central Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json).
+For the base version of [!INCLUDE [prod_short](developer/includes/prod_short.md)], free online learning is also available on Microsoft Learn. For more information, see the [Business Central Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json).
 
 ### Feedback and contributions
 
@@ -120,7 +120,7 @@ The user interface text, including the tooltips, is translated as part of the ap
 
 ## Style
 
-At Microsoft, we are in process of simplifying and unifying our style guides. To get to know the Microsoft style, use the [Microsoft Writing Style Guide](/style-guide/welcome/) as a good starting point. The [!INCLUDE [prodshort](developer/includes/prodshort.md)] follows most of the guidelines in the Microsoft Writing Style Guide with exceptions for industry terminology and other product-specific issues.  
+At Microsoft, we are in process of simplifying and unifying our style guides. To get to know the Microsoft style, use the [Microsoft Writing Style Guide](/style-guide/welcome/) as a good starting point. The [!INCLUDE [prod_short](developer/includes/prod_short.md)] follows most of the guidelines in the Microsoft Writing Style Guide with exceptions for industry terminology and other product-specific issues.  
 
 ## See Also
 

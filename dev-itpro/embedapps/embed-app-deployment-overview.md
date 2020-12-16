@@ -14,7 +14,7 @@ ms.date: 10/01/2020
 
 # Embed Apps Deployment
 
-This article provides an overview of the process for deploying an Embed App to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Online service. The deployment involves the following tasks:
+This article provides an overview of the process for deploying an Embed App to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Online service. The deployment involves the following tasks:
 
 |Task|Description|See...|
 |----|-----------|------|

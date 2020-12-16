@@ -15,11 +15,11 @@ The Microsoft Partner Center is a generic portal where partners can sell and man
 
 Some indirect providers (distributors) provide their resellers with a custom portal that optimizes and enhances the experience beyond the Partner Center. They can also provide indirect resellers with an API to automate some of the customer onboarding steps. Contact your indirect provider to find out more.  
 
-Both indirect resellers and direct bill partners can access and support their customers' [!INCLUDE [prodshort](prodshort.md)] by setting up a reseller relationship with them.  
+Both indirect resellers and direct bill partners can access and support their customers' [!INCLUDE [prod_short](prod_short.md)] by setting up a reseller relationship with them.  
 
 To service customers in a specific country, your partner company's Azure Active Directory (Azure AD) tenant and CSP account must be registered in the regional CSP market that covers that country. For more information, see [Cloud Solution Provider program regional markets and currencies](/partner-center/regional-authorization-overview).  
 
 > [!NOTE]  
-> When you buy [!INCLUDE [prodshort](prodshort.md)] offers on behalf of your CSP customers, the CSP offer must be available in both your own tenant's country and in your customer's tenant's country. For example, if your tenant is located in Slovakia and the customer's tenant is in Germany, you will not be able to sell Dynamics 365 Business Central Premium to that customer, because this offer is currently not available in Slovakia.
+> When you buy [!INCLUDE [prod_short](prod_short.md)] offers on behalf of your CSP customers, the CSP offer must be available in both your own tenant's country and in your customer's tenant's country. For example, if your tenant is located in Slovakia and the customer's tenant is in Germany, you will not be able to sell Dynamics 365 Business Central Premium to that customer, because this offer is currently not available in Slovakia.
 >
 > Similarly, if your tenant is located in Germany and the customer's tenant is in Slovakia, you will not be able to sell Dynamics 365 Business Central Premium to that customer, because this offer is currently not available in Slovakia.

@@ -14,7 +14,7 @@ ms.author: jswymer
 
 # Analyzing Permission Changes Trace Telemetry
 
-**APPLIES TO:** [!INCLUDE[prodshort](../includes/prodshort.md)] 2020 release wave 2, version 17.2, and later
+**APPLIES TO:** [!INCLUDE[prod_short](../includes/prod_short.md)] 2020 release wave 2, version 17.2, and later
 
 Permission changes telemetry gathers data about the following operations on permission sets: 
 
@@ -58,7 +58,7 @@ The following table explains additional custom dimensions that are common to all
 |component|**Dynamics 365 Business Central Server**.|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments).|
-|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
+|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 
 
 <!--

@@ -10,7 +10,7 @@ ms.date: 10/27/2020
 ms.author: edupont
 ---
 
-# Extend, Customize, and Collaborate on the Help for [!INCLUDE[prodlong](../developer/includes/prodlong.md)]
+# Extend, Customize, and Collaborate on the Help for [!INCLUDE[prod_long](../developer/includes/prod_long.md)]
 
 The source files for the Help for the base application are available in public GitHub repos so that you can easily extend and customize the content for your customers. In this section, you can learn about working with the GitHub repos and MarkDown files. You can also find guidance in the [Docs Contributor Guide](/contribute/).  
 
@@ -30,7 +30,7 @@ When Microsoft publishes an update to the content, the *live* branch in the corr
 
 If you fork one of our repos, you can choose to update your fork with regular updates from the Microsoft repo.  
 
-For guidance about what the Microsoft-provided content for [!INCLUDE [prodshort](../developer/includes/prodshort.md)] is all about, see [User Assistance Model](../user-assistance.md).  
+For guidance about what the Microsoft-provided content for [!INCLUDE [prod_short](../developer/includes/prod_short.md)] is all about, see [User Assistance Model](../user-assistance.md).  
 
 The remaining sections of this article are intended for people who do **not** use the [Custom Help Toolkit](custom-help-toolkit.md) - and for the curious. See the following table to find what you want to learn more about.  
 
@@ -47,7 +47,7 @@ The remaining sections of this article are intended for people who do **not** us
 
 ### What the GitHub repos contain
 
-Microsoft's GitHub *dynamics365smb-docs* repos for [!INCLUDE [prodshort](../developer/includes/prodshort.md)] Help contain the following folders:
+Microsoft's GitHub *dynamics365smb-docs* repos for [!INCLUDE [prod_short](../developer/includes/prod_short.md)] Help contain the following folders:
 
 - accountant
 
@@ -57,10 +57,10 @@ Microsoft's GitHub *dynamics365smb-docs* repos for [!INCLUDE [prodshort](../deve
     Contains files that are not published but kept for backwards compatibility use internally at Microsoft. You can ignore this folder.
 - business-central
 
-    Contains files that are relevant for [!INCLUDE [prodshort](../developer/includes/prodshort.md)]
+    Contains files that are relevant for [!INCLUDE [prod_short](../developer/includes/prod_short.md)]
 - media-source
 
-    Contains source files for some of the pictures that are used in the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] content
+    Contains source files for some of the pictures that are used in the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] content
 - Templates
 
     Contains a template that you can use if you build HTML files for the legacy Dynamics NAV Help Server website
@@ -68,13 +68,13 @@ Microsoft's GitHub *dynamics365smb-docs* repos for [!INCLUDE [prodshort](../deve
 The repos also contain files in the root of the repos that are used internally by Microsoft for managing the content on the docs.microsoft.com site and on GitHub. They are not relevant for the purpose of extending or customizing the content.
 
 > [!TIP]
-> The [!INCLUDE [prodshort](../developer/includes/prodshort.md)] installation media still contain CAB files for Help Server; however, the latest content is always available in the GitHub repos. If you find that the CAB files are outdated, or if they do not contain the files that you expect, get the latest files from GitHub. For more information, see the [Get updates from Microsoft](#get-updates-from-microsoft) and [Get the content without a GitHub account](#get-the-content-without-a-github-account) sections, respectively.
+> The [!INCLUDE [prod_short](../developer/includes/prod_short.md)] installation media still contain CAB files for Help Server; however, the latest content is always available in the GitHub repos. If you find that the CAB files are outdated, or if they do not contain the files that you expect, get the latest files from GitHub. For more information, see the [Get updates from Microsoft](#get-updates-from-microsoft) and [Get the content without a GitHub account](#get-the-content-without-a-github-account) sections, respectively.
 
 If you want to contribute to the developer and administration content, clone or fork the `https://github.com/MicrosoftDocs/dynamics365smb-devitpro-pb` repo
 
 ### Get updates from Microsoft
 
-Microsoft makes frequent changes to the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] content, and those changes show up in the public GitHub repos. The base repo, MicrosoftDocs/dynamics365smb-docs, is updated weekly, and the translations are updated monthly. When you decide it is time to get the latest version of the content from Microsoft, you can do that using GitBash or GitHub Desktop. In the Help for GitHub, you can see [an example of how this works in GitBash](https://help.github.com/en/articles/merging-an-upstream-repository-into-your-fork). In GitHub Desktop, just use the *Merge into current branch* menu item to pull changes from the origin into your fork.  
+Microsoft makes frequent changes to the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] content, and those changes show up in the public GitHub repos. The base repo, MicrosoftDocs/dynamics365smb-docs, is updated weekly, and the translations are updated monthly. When you decide it is time to get the latest version of the content from Microsoft, you can do that using GitBash or GitHub Desktop. In the Help for GitHub, you can see [an example of how this works in GitBash](https://help.github.com/en/articles/merging-an-upstream-repository-into-your-fork). In GitHub Desktop, just use the *Merge into current branch* menu item to pull changes from the origin into your fork.  
 
 However, if your solution is available in more than one country, then you are likely to want to make content available in multiple languages. Microsoft has a GitHub repo for each supported language, but the configuration files are only available in the English (US) source repo, MicrosoftDocs/dynamics365smb-docs.  
 
@@ -111,7 +111,7 @@ To join Microsoft in the world of GitHub and MarkDown, there are new terminology
 
 1. Fork the right repo
 
-    You cannot work directly in the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] repos in the MicrosoftDocs GitHub org, such as the dynamics365smb-docs repo. The first thing you need to do is create a fork of the repo under your GitHub account. A fork is a copy of this repo that lets you work freely on the content without affecting the MicrosoftDocs/dynamics365smb-docs repo.  
+    You cannot work directly in the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] repos in the MicrosoftDocs GitHub org, such as the dynamics365smb-docs repo. The first thing you need to do is create a fork of the repo under your GitHub account. A fork is a copy of this repo that lets you work freely on the content without affecting the MicrosoftDocs/dynamics365smb-docs repo.  
 
     Alternatively, you can *clone* the Microsoft repo. This is useful if you don't intend to customize Microsoft's content, for example. But in many cases, *forking* the repo is more preferable.  
 
@@ -157,7 +157,7 @@ To create a pull request to the MicrosoftDocs/dynamics365smb-docs repo by using 
 
 ## Get the content without a GitHub account
 
-If you do not want to collaborate with Microsoft on the content, you can get the latest version of the content from GitHub without a GitHub account. For example, if you want content that is newer than the content on the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] installation media, you can get the latest by simply downloading the content of the relevant GitHub repo, which you can do without a GitHub account - the Microsoft repos are public so that anyone can always get to them. Use the [HtmlFromRepoGenerator](custom-help-toolkit-HtmlFromRepoGenerator.md) tool, create your own scripts, or follow this process to fork a repo manually.  
+If you do not want to collaborate with Microsoft on the content, you can get the latest version of the content from GitHub without a GitHub account. For example, if you want content that is newer than the content on the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] installation media, you can get the latest by simply downloading the content of the relevant GitHub repo, which you can do without a GitHub account - the Microsoft repos are public so that anyone can always get to them. Use the [HtmlFromRepoGenerator](custom-help-toolkit-HtmlFromRepoGenerator.md) tool, create your own scripts, or follow this process to fork a repo manually.  
 
 ### To get files without a GitHub account
 
@@ -171,7 +171,7 @@ If you do not want to collaborate with Microsoft on the content, you can get the
 
 ## Build HTML files
 
-For publishing to your own website, you can use the [HtmlFromRepoGenerator](custom-help-toolkit-HtmlFromRepoGenerator.md) tool that is part of the custom Help toolkit for [!INCLUDE [prodshort](../developer/includes/prodshort.md)] to clone a repo and generate the corresponding HTML files.  
+For publishing to your own website, you can use the [HtmlFromRepoGenerator](custom-help-toolkit-HtmlFromRepoGenerator.md) tool that is part of the custom Help toolkit for [!INCLUDE [prod_short](../developer/includes/prod_short.md)] to clone a repo and generate the corresponding HTML files.  
 
 Alternatively, you can create your own tooling and processes around [DocFx](https://dotnet.github.io/docfx/), which is an open-source tool for converting markdown files. This section provides some guidance on how you can use DocFx to publish HTML files from your fork of one of the Microsoft repos. You can find additional tips in the [Custom Help Toolkit](custom-help-toolkit.md) article.  
 
@@ -245,7 +245,7 @@ Microsoft's content in the various GitHub repos is optimized for the docs.micros
 
 ### Docs are not available for a specific version
 
-Microsoft's public GitHub repos reflect the latest version of [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. If you want to deploy help for an earlier version of [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises, then you can use the HTML files on the installation media. If you find that that particular version is missing content, then please check the following sections for suggested workarounds.  
+Microsoft's public GitHub repos reflect the latest version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. If you want to deploy help for an earlier version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premises, then you can use the HTML files on the installation media. If you find that that particular version is missing content, then please check the following sections for suggested workarounds.  
 
 ### Broken links
 
@@ -268,7 +268,7 @@ Microsoft creates content in English (US) that then gets translated into the Mic
 
 You can use the [Dynamics 365 Translation Service](/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/translation-service-overview) (DTS) to translate your own or the Microsoft-provided content into other languages. The service is hosted in Lifecycle Services and currently supports translation of content in Word documents and HTML files. For more information, see [Translate documentation files](/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/use-translation-service-ua).  
 
-To translate content for either [!INCLUDE [prodshort](../developer/includes/prodshort.md)] or [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)], choose [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] as the product as shown in the following illustration:
+To translate content for either [!INCLUDE [prod_short](../developer/includes/prod_short.md)] or [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)], choose [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] as the product as shown in the following illustration:
 
 > [!div class="mx-imgBorder"]
 > ![Shows translation project for NAV or Business Central](../developer/media/admin/lcs_translation_navhelp.png)

@@ -58,7 +58,7 @@ Make sure to have the following prerequisites installed to be able to follow the
     }
     ...
     ```
-6. Use the [!INCLUDE[prodshort](../includes/prodshort.md)] Administration Console to ensure that the settings for developing for on-premises are correctly set. On the **Development** tab these must be: 
+6. Use the [!INCLUDE[prod_short](../includes/prod_short.md)] Administration Console to ensure that the settings for developing for on-premises are correctly set. On the **Development** tab these must be: 
     - **Allowed Extension Target Level** is set to **OnPrem**.
     - **Enable Developer Service Endpoint** checkbox is selected.
 7. In the `app.json` file, in the `dependencies` section, make sure that `version` is set to the version of the System Application found in the project under `.alpackages`. For example:

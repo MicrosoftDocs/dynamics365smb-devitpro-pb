@@ -13,14 +13,14 @@ ms.author: jswymer
 ---
 # Analyzing Page View Telemetry
 
-**INTRODUCED IN:** [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2020 release wave 1, version 16.3
+**INTRODUCED IN:** [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 1, version 16.3
 
-Page view telemetry gathers data about the pages that users open in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client. Each page view tells you how long it took to open the page, information about the user's environment, and more.
+Page view telemetry gathers data about the pages that users open in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client. Each page view tells you how long it took to open the page, information about the user's environment, and more.
 
 Use the data to gather statistics about system usage and also troubleshoot performance issues caused by the users' environments.
 
 > [!NOTE]
-> In Application Insights, telemetry about page views is logged to the **pageViews** table and not the **traces** table like other [!INCLUDE[prodshort](../developer/includes/prodshort.md)] traces. This also means that you can use the built-in pages in the **Usage** feature of the Application Insights to investigate how users interact with the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] environment. For more information, see [Usage analysis with Application Insights](/azure/azure-monitor/app/usage-overview).
+> In Application Insights, telemetry about page views is logged to the **pageViews** table and not the **traces** table like other [!INCLUDE[prod_short](../developer/includes/prod_short.md)] traces. This also means that you can use the built-in pages in the **Usage** feature of the Application Insights to investigate how users interact with the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment. For more information, see [Usage analysis with Application Insights](/azure/azure-monitor/app/usage-overview).
 
 ## Page opened: {alObjectName}
 
@@ -51,7 +51,7 @@ All fields are documented here: [Application Insights PageViews Schema](/azure/a
 |alObjectName|Specifies the name of the page object that was opened.|
 |alObjectType|**Page**|
 |clientType|Specifies the type of client that opened the page such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
-|companyName|The display name of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] company that was used when the page opened. |
+|companyName|The display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company that was used when the page opened. |
 |component|**Dynamics 365 Business Central Server**.|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |deprecatedKeys|A comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
@@ -69,7 +69,7 @@ All fields are documented here: [Application Insights PageViews Schema](/azure/a
 |pageMode|Specifies whether the page was opened in one of the following modes: <ul><li>**View** indicates the page was opened for viewing only</li><li>**Edit** indicates the page was opened for making changes</li><li>**Create** indicates the page was opened for creating a new entity.</li><li>**Select** indicates the page was opened for selecting an existing entity.</li><li>**Delete** indicates the page was opened for deleting an entity.</li></ul>The mode in which a page opened determined by different things, like the [RunPageMode Property](../developer/properties/devenv-runpagemode-property.md) or the [URL](../developer/devenv-web-client-urls.md) used to open the page. |
 |pageType|Specifies the type of page, such as **Card**, **List**, **Document**, and more. For a complete list of page types and descriptions, see [Page Types and Layouts](../developer/devenv-page-types-and-layouts.md).|
 |refUri|Specifies the URI of the page.|
-|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
+|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 
 ## See also
 

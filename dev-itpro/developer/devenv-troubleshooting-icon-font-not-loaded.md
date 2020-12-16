@@ -21,7 +21,7 @@ The Icon font is missing on the [!INCLUDE[nav_web](includes/nav_web_md.md)], [!I
   
 3.  Select the  **Security** tab, and then choose **Trusted sites** .  
   
-4.  Choose the **Sites** button and add the [!INCLUDE[prodshort](includes/prodshort.md)] web site.  
+4.  Choose the **Sites** button and add the [!INCLUDE[prod_short](includes/prod_short.md)] web site.  
   
 5.  Click on the **Close** button and then on the **OK** button.  
   

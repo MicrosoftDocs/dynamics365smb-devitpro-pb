@@ -48,7 +48,7 @@ The process for upgrading is similar for a single-tenant and multitenant deploym
 
 1. Your version 14 is compatible with version 17.
 
-    There are several updates for version 14. The updates have a compatible version 17 update. For more information, see [[!INCLUDE[prodlong](../developer/includes/prodlong.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md). 
+    There are several updates for version 14. The updates have a compatible version 17 update. For more information, see [[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md). 
 
 2. The version 14 [!INCLUDE[devshell](../developer/includes/devshell.md)] and [!INCLUDE[adminshell](../developer/includes/adminshell.md)] are installed. 
 
@@ -58,9 +58,9 @@ The process for upgrading is similar for a single-tenant and multitenant deploym
 
 ## Install version 17
 
-1. Download the latest available update for [!INCLUDE[prodlong](../developer/includes/prodlong.md)] (version 17) that is compatible with your version 14.
+1. Download the latest available update for [!INCLUDE[prod_long](../developer/includes/prod_long.md)] (version 17) that is compatible with your version 14.
 
-    For more information, see [[!INCLUDE[prodlong](../developer/includes/prodlong.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
+    For more information, see [[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
 
 2. Before you install version 17, it can be useful to create desktop shortcuts to the version 14.0 tools, such as the [!INCLUDE[admintool](../developer/includes/admintool.md)], [!INCLUDE[adminshell](../developer/includes/adminshell.md)], and [!INCLUDE[devshell](../developer/includes/devshell.md)] because the Start menu items for these tools will be replaced with the version 17 tools.
 
@@ -574,7 +574,7 @@ The [!INCLUDE[server](../developer/includes/server.md)] installation includes ne
 
 To upgrade the control add-ins from the client, do the following steps:
 
-1. Open the [!INCLUDE[](../developer/includes/prodshort.md)] client.
+1. Open the [!INCLUDE[](../developer/includes/prod_short.md)] client.
 2. Search for and open the **Control Add-ins** page.
 3. Choose **Actions** > **Control Add-in Resource** > **Import**.
 4. Locate and select the .zip file for the control add-in and choose **Open**.

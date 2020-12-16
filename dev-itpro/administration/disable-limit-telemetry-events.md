@@ -37,9 +37,9 @@ To configure the **Diagnostic Trace Level** setting, you can use the [!INCLUDE[a
   
      You must restart the [!INCLUDE[server](../developer/includes/server.md)] instance for the changes to take effect.  
   
-6.  To restart, the [!INCLUDE[server](../developer/includes/server.md)] instance, in the left pane, select the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] computer.  
+6.  To restart, the [!INCLUDE[server](../developer/includes/server.md)] instance, in the left pane, select the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] computer.  
   
-     Unless you are administering a remote computer, this is [!INCLUDE[prodshort](../developer/includes/prodshort.md)] \(local\).  
+     Unless you are administering a remote computer, this is [!INCLUDE[prod_short](../developer/includes/prod_short.md)] \(local\).  
   
 7.  In the center pane, right-click an instance, and then select **Restart**.  
   

@@ -22,7 +22,7 @@ If a [!INCLUDE[server](../developer/includes/server.md)] instance is configured 
 
 2.  Verify that the [!INCLUDE[server](../developer/includes/server.md)] that you want to mount the tenant on is running, and if not, then start it:  
 
-    1.  In the left pane of [!INCLUDE[admintool](../developer/includes/admintool.md)], choose a [!INCLUDE[server](../developer/includes/server.md)] computer. Unless you are administering a remote computer, this is **[!INCLUDE[prodlong](../developer/includes/prodlong.md)] \(local\)**.  
+    1.  In the left pane of [!INCLUDE[admintool](../developer/includes/admintool.md)], choose a [!INCLUDE[server](../developer/includes/server.md)] computer. Unless you are administering a remote computer, this is **[!INCLUDE[prod_long](../developer/includes/prod_long.md)] \(local\)**.  
 
     2.  In the center pane, if the **Status** of the [!INCLUDE[server](../developer/includes/server.md)] instance is **Stopped**, then right-click it, and then choose **Start**.  
 
@@ -37,7 +37,7 @@ If a [!INCLUDE[server](../developer/includes/server.md)] instance is configured 
 
      If you specified the **DatabaseUserName** and **ProtectedDatabasePassword** settings for SQL Server authentication, on the **Enable Encryption on SQL Server Connections** dialog box, choose the **OK** button.  
 
-     Encryption keys are to secure the login credentials over the connection between the [!INCLUDE[server](../developer/includes/server.md)] instance and the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database in SQL Server.  
+     Encryption keys are to secure the login credentials over the connection between the [!INCLUDE[server](../developer/includes/server.md)] instance and the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database in SQL Server.  
 
 6.  Choose the **OK** button to save the changes.  
 

@@ -15,7 +15,7 @@ ms.review: jswymer
 
 # Troubleshooting Cloud Migration
 
-In this article, you learn how to troubleshoot problems that you may experience with the cloud migration of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. For the cloud migration to work properly, there are certain requirements that must be met on the online and on-premises databases. The following sections talk about these requirements, how you can check them, and correct them as needed.
+In this article, you learn how to troubleshoot problems that you may experience with the cloud migration of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. For the cloud migration to work properly, there are certain requirements that must be met on the online and on-premises databases. The following sections talk about these requirements, how you can check them, and correct them as needed.
 
 ## SQL Server compatibility level
 
@@ -74,7 +74,7 @@ ALTER TABLE [YOUR TABLE] ENABLE CHANGE_TRACKING
 
 If a user has problems managing a cloud migration, like starting migration, initializing companies, or migrating data from earlier versions, check that:
 
-- The user has a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] license (Essentials or Premium, depending on their solution). We recommend using free Dynamics 365 Business Central Premium Trial subscription for this user.  
+- The user has a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] license (Essentials or Premium, depending on their solution). We recommend using free Dynamics 365 Business Central Premium Trial subscription for this user.  
 - The user is assigned the SUPER permission set.
 
 Users without a license, such as internal administrators or delegated administrators, aren't allowed to run the migration.  
@@ -126,11 +126,11 @@ Users without a license, such as internal administrators or delegated administra
 
     |Option|When to use|
     |------|-----------|
-    |Dynamics 365 Business Central|Select this option if you're migrating from the [!INCLUDE[prodshort](../developer/includes/prodshort.md)]  version that matches the version of your online environment, for example, version 17 to version 17|
-    |Dynamics 365 Business Central - Previous Version|Select this option if you're migrating from the previous major version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], for example, version 15 to version 17.|
+    |Dynamics 365 Business Central|Select this option if you're migrating from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)]  version that matches the version of your online environment, for example, version 17 to version 17|
+    |Dynamics 365 Business Central - Previous Version|Select this option if you're migrating from the previous major version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)], for example, version 15 to version 17.|
     |Dynamics GP|Select this option if you're migrating from the Dynamics GP product.| 
 
-- When migrating data from [!INCLUDE[prodshort](../developer/includes/prodshort.md)], check the `applicationVersion` field in the `$ndo$tenantdatabaseproperty` table. Set this field to the correct version in the SQL if it's blank or not up to date. The migration code uses the field's value for the following reasons:
+- When migrating data from [!INCLUDE[prod_short](../developer/includes/prod_short.md)], check the `applicationVersion` field in the `$ndo$tenantdatabaseproperty` table. Set this field to the correct version in the SQL if it's blank or not up to date. The migration code uses the field's value for the following reasons:
 
     - Verifies that you're migrating from a supported version
     - Verifies that you've selected the right product version in the **Data Migration Setup** assisted setup, like Dynamics 365 Business Central or Dynamics 365 Business Central - Previous Version.

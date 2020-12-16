@@ -14,7 +14,7 @@ ms.service: "dynamics365-business-central"
 
 # Upgrading Version 15 Base Application to Version 16
 
-Use this scenario if you have a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 release wave 2 solution that uses the Microsoft System and Base applications.
+Use this scenario if you have a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2019 release wave 2 solution that uses the Microsoft System and Base applications.
 
  ![Upgrade on unmodified Business Central application](../developer/media/bc15-to-16-upgrade-unmodified-app.png "Upgrade on unmodified Business Central application") 
 
@@ -26,7 +26,7 @@ The process for upgrading the similar for a single-tenant and multitenant deploy
 
 1. Your version 15 is compatible with version 16.
 
-    There are several updates for version 15. The updates have a compatible version 16 update. For more information, see [[!INCLUDE[prodlong](../developer/includes/prodlong.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md). For example, if your solution is currently running 15.5, you can't upgrade to 16.0. You must wait until 16.1 is available.  
+    There are several updates for version 15. The updates have a compatible version 16 update. For more information, see [[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md). For example, if your solution is currently running 15.5, you can't upgrade to 16.0. You must wait until 16.1 is available.  
 
 2. Disable data encryption.
 
@@ -40,7 +40,7 @@ The process for upgrading the similar for a single-tenant and multitenant deploy
 
 1. Download the latest available update for Business Central 2020 (version 16) that is compatible with your version 15.
 
-    For more information, see [[!INCLUDE[prodlong](../developer/includes/prodlong.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
+    For more information, see [[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
 
 
 2. Before you install version 16, it can be useful to create desktop shortcuts to the version 15.0 tools, such as the [!INCLUDE[admintool](../developer/includes/admintool.md)], [!INCLUDE[adminshell](../developer/includes/adminshell.md)], and [!INCLUDE[devshell](../developer/includes/devshell.md)] because the Start menu items for these tools will be replaced with the version 16 tools.
@@ -361,7 +361,7 @@ The [!INCLUDE[server](../developer/includes/server.md)] installation includes ne
 
 To upgrade the control add-ins from the client, do the following steps:
 
-1. Open the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client.
+1. Open the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client.
 2. Search for and open the **Control Add-ins** page.
 3. Choose **Actions** > **Control Add-in Resource** > **Import**.
 4. Locate and select the .zip file for the control add-in and choose **Open**.

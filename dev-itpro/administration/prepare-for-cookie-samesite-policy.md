@@ -14,12 +14,12 @@ author: jswymer
 
 # Preparing Dynamics NAV or Dynamics 365 Business Central for Upcoming Changes to Browser Cookie Policy
 
-The web is constantly evolving to improve the user experience, security, and privacy. Upcoming releases of some browsers expected early calendar year 2020 include a change in how cookies are handled. This change affects federated authentication flows and cross-domain hosting scenarios when using these browsers. The change can potentially affect users' ability to connect to [!INCLUDE[prodshort](../includes/prodshort.md)] or Dynamics NAV in one or more of the following situations:
+The web is constantly evolving to improve the user experience, security, and privacy. Upcoming releases of some browsers expected early calendar year 2020 include a change in how cookies are handled. This change affects federated authentication flows and cross-domain hosting scenarios when using these browsers. The change can potentially affect users' ability to connect to [!INCLUDE[prod_short](../includes/prod_short.md)] or Dynamics NAV in one or more of the following situations:
 
-- When using the Dynamics NAV or [!INCLUDE[prodshort](../includes/prodshort.md)] Outlook Add-In.
-- Dynamics NAV or [!INCLUDE[prodshort](../includes/prodshort.md)] as a SharePoint app.
-- Dynamics NAV or [!INCLUDE[prodshort](../includes/prodshort.md)] is using Azure Active Directory authentication.
-- Dynamics NAV or [!INCLUDE[prodshort](../includes/prodshort.md)] is embedded in an iframe as part of another web site.
+- When using the Dynamics NAV or [!INCLUDE[prod_short](../includes/prod_short.md)] Outlook Add-In.
+- Dynamics NAV or [!INCLUDE[prod_short](../includes/prod_short.md)] as a SharePoint app.
+- Dynamics NAV or [!INCLUDE[prod_short](../includes/prod_short.md)] is using Azure Active Directory authentication.
+- Dynamics NAV or [!INCLUDE[prod_short](../includes/prod_short.md)] is embedded in an iframe as part of another web site.
 
 ## Which browsers are impacted by the change
 
@@ -27,7 +27,7 @@ The web is constantly evolving to improve the user experience, security, and pri
 - Microsoft Edge (as an update at the same time or later than Google Chrome version 80)
 
 > [!NOTE]
-> Other supported browsers may adopt similar cookie policies. We recommend you read this article and take action no matter which browsers or browser versions your users use to sign in to [!INCLUDE[prodshort](../includes/prodshort.md)].
+> Other supported browsers may adopt similar cookie policies. We recommend you read this article and take action no matter which browsers or browser versions your users use to sign in to [!INCLUDE[prod_short](../includes/prod_short.md)].
 
 ## Which cookie policies are changing
 
@@ -43,7 +43,7 @@ Browsers have changed the implementation of the `SameSite` attribute according a
 
 ## What to do to prevent disruption
 
-To prevent disruption, you must upgrade the platform for your version of Dynamics NAV or [!INCLUDE[prodshort](../includes/prodshort.md)] to an update listed in the following table, or a later update. If your deployment is already running on one of these updates or later, then no action is required. However, we recommend that you test your deployment with any available pre-release versions of the affected browsers, such as Chrome 80 Beta.  
+To prevent disruption, you must upgrade the platform for your version of Dynamics NAV or [!INCLUDE[prod_short](../includes/prod_short.md)] to an update listed in the following table, or a later update. If your deployment is already running on one of these updates or later, then no action is required. However, we recommend that you test your deployment with any available pre-release versions of the affected browsers, such as Chrome 80 Beta.  
 
 |Version|Minimum recommended update|
 |-------|--------------------------|
@@ -100,10 +100,10 @@ In Chrome 80 Beta or older Chrome versions where **Cookies without SameSite must
 ### FAQ
 
 **Is access from mobile apps affected?**  
-In the short-term, the Dynamics NAV or [!INCLUDE[prodshort](../includes/prodshort.md)] store apps for tablet and phone shouldn't be affected. However, there's evidence from each of the major browsers that their new security policies will eventually also roll out to the technology that our mobile apps rely on. We recommend you minimize risk and take action as outlined in this article.
+In the short-term, the Dynamics NAV or [!INCLUDE[prod_short](../includes/prod_short.md)] store apps for tablet and phone shouldn't be affected. However, there's evidence from each of the major browsers that their new security policies will eventually also roll out to the technology that our mobile apps rely on. We recommend you minimize risk and take action as outlined in this article.
 
 **Are Control Add-Ins affected?**  
-Custom control add-ins sometimes rely on [!INCLUDE[prodshort](../includes/prodshort.md)]'s authentication with Azure AD. Whether this is impacted by the cookie policy changes is highly dependent on your implementation to handle Azure AD. We recommend you minimize risk and take action as outlined in this article.
+Custom control add-ins sometimes rely on [!INCLUDE[prod_short](../includes/prod_short.md)]'s authentication with Azure AD. Whether this is impacted by the cookie policy changes is highly dependent on your implementation to handle Azure AD. We recommend you minimize risk and take action as outlined in this article.
 
 **Is the Dynamics NAV Windows Client affected?**  
 The Dynamics NAV Windows client may be configured to authenticate using Azure AD. In this case, the change in cookie policy has no effect on access to the Windows client.

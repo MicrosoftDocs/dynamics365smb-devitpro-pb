@@ -211,7 +211,7 @@ page 50102 "Reward List"
 }
 ```
 
-After you have created the objects, update the **startupObjectId** in the `launch.json` file to 50102, the ID of the **Reward List** page and select the Ctrl+F5 shortcut to see the new page in your sandbox environment. You will be asked to sign in to your [!INCLUDE [prodshort](includes/prodshort.md)], if you have not already done so.  
+After you have created the objects, update the **startupObjectId** in the `launch.json` file to 50102, the ID of the **Reward List** page and select the Ctrl+F5 shortcut to see the new page in your sandbox environment. You will be asked to sign in to your [!INCLUDE [prod_short](includes/prod_short.md)], if you have not already done so.  
 
 > [!TIP]
 > Information about your sandbox environment and other environments is stored as configurations in the `launch.json` file. For more information, see [JSON Files](devenv-json-files.md).  
@@ -286,7 +286,7 @@ field("Last Modified Date";"Last Modified Date")
 
 ```
 
-Using the F6 key shortcut in Visual Studio Code launches the browser and enters the Designer. You can also use the Designer from the [!INCLUDE[prodshort](includes/prodshort.md)] client, by selecting ![Settings icon](media/settings_icon_small.png) **Designer**.
+Using the F6 key shortcut in Visual Studio Code launches the browser and enters the Designer. You can also use the Designer from the [!INCLUDE[prod_short](includes/prod_short.md)] client, by selecting ![Settings icon](media/settings_icon_small.png) **Designer**.
 
 > [!NOTE]  
 > Every time you start designing, you create a new extension and the changes you make in the Designer will apply to all users.
@@ -342,7 +342,7 @@ tableextension 50103 "Customer Ext" extends Customer
 
 ## Customer card page extension object
 
-A page extension object can be used to add new functionality to pages that are part of the [!INCLUDE[prodlong](includes/prodlong.md)] service. The following page extension object extends the **Customer Card** page object by adding a field control, **Reward ID**, to the **General group** on the page. The field is added in the layout section, while in the actions section the code adds an action to open the **Reward List** page.  
+A page extension object can be used to add new functionality to pages that are part of the [!INCLUDE[prod_long](includes/prod_long.md)] service. The following page extension object extends the **Customer Card** page object by adding a field control, **Reward ID**, to the **General group** on the page. The field is added in the layout section, while in the actions section the code adds an action to open the **Reward List** page.  
 
 > [!TIP]
 > Use the shortcuts `tpageext` to create the basic structure for the page extension object.
@@ -391,7 +391,7 @@ At this point, reward levels can be created and assigned to customers. To do tha
 
 ## Help links
 
-This app is relatively straightforward, but we want users of your app to be able to get unblocked and learn more just like all other users of [!INCLUDE [prodshort](includes/prodshort.md)]. First, configure your app to get context-sensitive links to Help, and then apply tooltips to the fields in your pages.  
+This app is relatively straightforward, but we want users of your app to be able to get unblocked and learn more just like all other users of [!INCLUDE [prod_short](includes/prod_short.md)]. First, configure your app to get context-sensitive links to Help, and then apply tooltips to the fields in your pages.  
 
 ### Configure context-sensitive links to Help
 
@@ -552,7 +552,7 @@ For more information about writing and running upgrade code, see [Upgrading Exte
 
 ## Instrumenting your app with telemetry
 
-[!INCLUDE[prodshort](includes/prodshort.md)] emits telemetry data for several operations that occur when extension code is run. Create an Application Insights resource in Azure if you don't have one. For more information, see [Create an Application Insights resource](/azure/azure-monitor/app/create-new-resource). Now, add the Application Insights Key to the extension manifest (app.json file):
+[!INCLUDE[prod_short](includes/prod_short.md)] emits telemetry data for several operations that occur when extension code is run. Create an Application Insights resource in Azure if you don't have one. For more information, see [Create an Application Insights resource](/azure/azure-monitor/app/create-new-resource). Now, add the Application Insights Key to the extension manifest (app.json file):
 
 ```json
 "applicationInsightsKey": ["<instrumenation key>"]

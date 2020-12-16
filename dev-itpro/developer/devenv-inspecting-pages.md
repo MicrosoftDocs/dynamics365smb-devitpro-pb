@@ -134,7 +134,7 @@ The performance information includes two values. The first value indicates the t
 > You can get more performance data for extensions by using Application Insights and viewing the AL method traces. For more information, see [Analyzing Long Running AL Methods Telemetry](../administration/telemetry-al-method-trace.md).
 
 > [!NOTE]
-> For [!INCLUDE[prodshort](includes/prodshort.md)] on-premises, the performance data will only be shown if AL function timing is enabled on the [!INCLUDE[server](includes/server.md)] instance. For more information, see [Configuring Business Central Server](../administration/configure-server-instance.md#General).  
+> For [!INCLUDE[prod_short](includes/prod_short.md)] on-premises, the performance data will only be shown if AL function timing is enabled on the [!INCLUDE[server](includes/server.md)] instance. For more information, see [Configuring Business Central Server](../administration/configure-server-instance.md#General).  
 
 ## [Page Filters](#tab/pagefilters)
 

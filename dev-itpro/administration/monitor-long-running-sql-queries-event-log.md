@@ -14,7 +14,7 @@ author: jswymer
 
 <!-- This topic needs to be updated for the BC autumn release. -->
  
-[!INCLUDE[nav2017](../developer/includes/nav2017.md)] was the first version that allows long running SQL queries to be logged to the Windows Event Log. The queries are logged when the application communicates with the database and the call to the database takes too long. Starting in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 release wave 2, long running queries can also be emitted as telemetry to Microsoft Azure Application Insights. Using Application Insights requires that you first enable it on your tenant.
+[!INCLUDE[nav2017](../developer/includes/nav2017.md)] was the first version that allows long running SQL queries to be logged to the Windows Event Log. The queries are logged when the application communicates with the database and the call to the database takes too long. Starting in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2019 release wave 2, long running queries can also be emitted as telemetry to Microsoft Azure Application Insights. Using Application Insights requires that you first enable it on your tenant.
 
 ## <a name="threshold"></a>Defining the long running SQL queries threshold
 
@@ -22,7 +22,7 @@ The time logged when a SQL query runs is the time spent on the called database a
 
 The threshold of when a SQL query is considered to be long running is controlled by the [!INCLUDE[server](../developer/includes/server.md)] configuration setting **SqlLongRunningThreshold**. The default value is 1000 milliseconds (ms). By default, the threshold is set to 1000 milliseconds. In this case, if a SQL query runs longer 1000 ms, a message is recorded in the event log and emitted as telemetry. The message indicates that the action took longer than expected or longer than the given threshold. For more information about setting the **SqlLongRunningThreshold** by using [!INCLUDE[admintool](../developer/includes/admintool.md)], see [Configuring Business Central Server](configure-server-instance.md#Database).
 
-You can also change the setting by [Set-NAVServerConfiguration cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) in [!INCLUDE[adminshell](../developer/includes/adminshell.md)]. The cmdlet includes the `-ApplyTo Memory`parameter that enables you to change the setting without doing a server restart. For example, to change the threshold dynamically to 2000 ms, run the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Administration Shell as Administrator and then type the following PowerShell cmdlet:
+You can also change the setting by [Set-NAVServerConfiguration cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) in [!INCLUDE[adminshell](../developer/includes/adminshell.md)]. The cmdlet includes the `-ApplyTo Memory`parameter that enables you to change the setting without doing a server restart. For example, to change the threshold dynamically to 2000 ms, run the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Administration Shell as Administrator and then type the following PowerShell cmdlet:
 
 ```
 Set-NAVServerConfiguration -ServerInstance <ServerInstanceName> -KeyName SqlLongRunningThreshold -KeyValue 2000 -ApplyTo Memory
@@ -83,8 +83,8 @@ The following tables explains the columns included in long running query events 
 |client_City|*Application Insights*||
 |client_StateOrProvince|*Application Insights*||
 |client_CountryOrRegion|*Application Insights*||
-|cloud_RoleName|Specifies the display name of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant. For on-premises, this is the same as the cloud_RoleInstance.  ||
-|cloud_RoleInstance|Specifies the name of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant. ||
+|cloud_RoleName|Specifies the display name of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant. For on-premises, this is the same as the cloud_RoleInstance.  ||
+|cloud_RoleInstance|Specifies the name of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant. ||
 |appId|*Application Insights*||
 |appName|*Application Insights*||
 |iKey|*Application Insights*||
@@ -104,16 +104,16 @@ This table describes the different dimensions.
 |Column|Description or value||
 |---------|-----|-----------|
 |Long running log threshold (ms)|Specifies the amount of time (in milliseconds) that an SQL query can run before a warning event is recorded. This threshold is controlled by the [!INCLUDE[server](../developer/includes/server.md)] configuration setting called SqlLongRunningThreshold. |
-|Telemetry schema version|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema. ||
+|Telemetry schema version|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema. ||
 |Execution time (ms)|Specifies the time in milliseconds that it took to execute the SQL statement.||
 |Component|Specifies the [!INCLUDE[server](../developer/includes/server.md)] instance name and the platform version.||
-|Environment type|Specifies thee environment type of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution, such as Production or Sandbox.|
+|Environment type|Specifies thee environment type of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] solution, such as Production or Sandbox.|
 |SQL Statement|Specifies the SQL statement that was executed for the long running query. The value is limited to 8192 characters. If the value exceeds 8192 characters, it will be truncated in manner that still provides the most pertinent information.||
 |Client Type |Specifies the type of client that executed the SQL Statement, such as Background or Web. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).||
 |AL Stack Trace |The stack trace in AL.||
 |AL Object Name|The name of the aL object that executed the SQL statement||
 |AL Object Type |The type of the AL object that executed the SQL statement||
-|Company Name |The display name of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] company that was used at tome of execution. ||
+|Company Name |The display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company that was used at tome of execution. ||
 |AL Object ID |The type of the AL object that executed the SQL statement.||
 
 If you have access to an Application Insights resource in Microsoft Azure, you can configure your tenants to send long running query telemetry there for analysis and presentation.

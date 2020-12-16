@@ -12,8 +12,8 @@ ms.assetid: 890e4a5b-2f43-4cb8-bc7a-18261eaf8139
 caps.latest.revision: 19
 author: jswymer
 ---
-# Configuring Internet Information Services for [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
-This topic describes the configuration of Internet Information Service \(IIS\) that is required for running [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. When you install the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)], you can use the [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] to install and configure the IIS features, so you do not have to do this manually.
+# Configuring Internet Information Services for [!INCLUDE[prod_short](../developer/includes/prod_short.md)]
+This topic describes the configuration of Internet Information Service \(IIS\) that is required for running [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. When you install the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)], you can use the [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] to install and configure the IIS features, so you do not have to do this manually.
 
 
 ## Required IIS Features

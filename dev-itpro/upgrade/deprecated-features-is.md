@@ -14,8 +14,8 @@ ms.author: bholtorf
 
 ---
 
-# Deprecated Features in the Icelandic Version of [!INCLUDE [prodlong](../developer/includes/prodlong.md)]
-This topic lists and describes the local functionality for Iceland that has been removed from [!INCLUDE[prodshort](../developer/includes/prodshort.md)], made available from a new page or report, or replaced by a new feature.
+# Deprecated Features in the Icelandic Version of [!INCLUDE [prod_long](../developer/includes/prod_long.md)]
+This topic lists and describes the local functionality for Iceland that has been removed from [!INCLUDE[prod_short](../developer/includes/prod_short.md)], made available from a new page or report, or replaced by a new feature.
 
 ## Icelandic Tax Regulations of Conditional Discounts
 The local tax regulation of conditional discounts feature enables you to issue a credit memo if a conditional discount is given to a customer. The payment for a conditional discount must be made within a specified period.

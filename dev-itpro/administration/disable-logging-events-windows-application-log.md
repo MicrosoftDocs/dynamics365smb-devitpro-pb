@@ -21,7 +21,7 @@ Because the [!INCLUDE[server](../developer/includes/server.md)]vents are always 
   
 ## To configure custome telemtery logging to the Windows Application log by using the [!INCLUDE[admintool](../developer/includes/admintool.md)]  
   
-1.  To start the [!INCLUDE[admintool](../developer/includes/admintool.md)], choose **Start**, and in the **Search programs and files** box, type **[!INCLUDE[prodshort](../developer/includes/prodshort.md)] Administration**, and then choose the related link.  
+1.  To start the [!INCLUDE[admintool](../developer/includes/admintool.md)], choose **Start**, and in the **Search programs and files** box, type **[!INCLUDE[prod_short](../developer/includes/prod_short.md)] Administration**, and then choose the related link.  
   
 2.  In the left pane, under **Console root**, select the [!INCLUDE[server](../developer/includes/server.md)] 
   
@@ -33,9 +33,9 @@ Because the [!INCLUDE[server](../developer/includes/server.md)]vents are always 
   
      You must restart the [!INCLUDE[server](../developer/includes/server.md)]or the changes to take effect.  
   
-6.  To restart, the [!INCLUDE[server](../developer/includes/server.md)]in the left pane, select the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] computer.  
+6.  To restart, the [!INCLUDE[server](../developer/includes/server.md)]in the left pane, select the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] computer.  
   
-     Unless you are administering a remote computer, this is [!INCLUDE[prodshort](../developer/includes/prodshort.md)] \(local\).  
+     Unless you are administering a remote computer, this is [!INCLUDE[prod_short](../developer/includes/prod_short.md)] \(local\).  
   
 7.  In the center pane, right-click an instance, and then choose **Restart**.  
   

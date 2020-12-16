@@ -74,7 +74,7 @@ A telemetry event is given one of the following event IDs, depending on the `DAT
 <!-- For more information about instrumenting and monitoring telemetry, see [Instrumenting an Application for Telemetry](../../instrumenting-application-for-telemetry.md) and [Monitoring-Dynamics NAV Server Events](../../Monitoring-Microsoft-Dynamics-NAV-Server-Events.md). -->
 
 > [!NOTE]
-> The SENDTRACETAG method is marked as obsolete in [!INCLUDE[prodshort](../../includes/prodshort.md)] 2020 release wave 2 (v17). You can still use it, but we recommend that you send traces to Application Insights using the LOGMESSAGE method instead. For more information, see [Creating Custom Telemetry Traces for Application Insights Monitoring](../../devenv-instrument-application-for-telemetry-app-insights.md).
+> The SENDTRACETAG method is marked as obsolete in [!INCLUDE[prod_short](../../includes/prod_short.md)] 2020 release wave 2 (v17). You can still use it, but we recommend that you send traces to Application Insights using the LOGMESSAGE method instead. For more information, see [Creating Custom Telemetry Traces for Application Insights Monitoring](../../devenv-instrument-application-for-telemetry-app-insights.md).
 
 ## Example 
 The following code defines simple telemetry events for the five different severity levels. 

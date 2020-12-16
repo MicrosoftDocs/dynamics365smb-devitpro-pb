@@ -29,12 +29,12 @@ In order to work in the application, you must always open a database and a compa
 
 6.  In the **Password** field, enter your password if you have selected **Database Server Authentication**.  
 
-7.  To set the network type to be used when connecting to the server, choose the **Advanced** tab and select the net type from the drop down list box in the **Net Type** field. However, it is not usually necessary to change the network type from the default setting. The **Default** net type setting allows [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to connect to a server using the default client network type assigned by SQL Server. You can change the net type with the Client Network Utility, which is part of the SQL Server Client Utilities, if they have been installed on the client computer.  
+7.  To set the network type to be used when connecting to the server, choose the **Advanced** tab and select the net type from the drop down list box in the **Net Type** field. However, it is not usually necessary to change the network type from the default setting. The **Default** net type setting allows [!INCLUDE[prod_short](../developer/includes/prod_short.md)] to connect to a server using the default client network type assigned by SQL Server. You can change the net type with the Client Network Utility, which is part of the SQL Server Client Utilities, if they have been installed on the client computer.  
 
 8.  If you would like to attach and open a detached database that consists of a single data file, excluding the transaction log file, you must enter the complete path and file name of the database in the **Attach File** field. This file will typically have the .mdf file name extension. You can give this single file database any name by entering it in the **Database Name** field on the **General** tab. If no transaction log file exists alongside the data file, it will be created automatically when you attach the data file. The database file is attached when you open it.  
 
 9. Choose the **OK** button to open the database.  
 
 > [!NOTE]  
->  [!INCLUDE[prodshort](../developer/includes/prodshort.md)] will automatically open the database and company that you were last working on when you reopen the program.  
+>  [!INCLUDE[prod_short](../developer/includes/prod_short.md)] will automatically open the database and company that you were last working on when you reopen the program.  
 

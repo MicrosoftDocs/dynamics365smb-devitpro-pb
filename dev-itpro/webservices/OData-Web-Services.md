@@ -13,7 +13,7 @@ ms.service: "dynamics365-business-central"
 
 The Open Data Protocol \(OData\) is a web protocol that is designed for querying tabular data and provides you with an alternative to SOAP-based web services. OData builds on web technologies such as HTTP, the Atom Publishing Protocol \(AtomPub\), and JavaScript Object Notation \(JSON\) to provide access to information from different applications, services, and stores. OData uses URIs for resource identification and commits to an HTTP-based, uniform interface for interacting with resources. This commitment to core Web principles allows for OData to enable a new level of data integration and interoperability across a broad range of clients, servers, services, and tools.  
   
- You can use OData web services to show [!INCLUDE[prodshort](../developer/includes/prodshort.md)] data, and you can update data in a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database using OData web services.  
+ You can use OData web services to show [!INCLUDE[prod_short](../developer/includes/prod_short.md)] data, and you can update data in a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database using OData web services.  
   
  OData can be found in other Microsoft products and technologies, including the following:  
   
@@ -23,7 +23,7 @@ The Open Data Protocol \(OData\) is a web protocol that is designed for querying
   
 - Microsoft Azure Table Services are based on OData.  
   
-The topics in this section describe the key concepts and techniques for accessing [!INCLUDE[prodshort](../developer/includes/prodshort.md)] data from OData applications that are supported by [!INCLUDE[prodshort](../developer/includes/prodshort.md)] .  
+The topics in this section describe the key concepts and techniques for accessing [!INCLUDE[prod_short](../developer/includes/prod_short.md)] data from OData applications that are supported by [!INCLUDE[prod_short](../developer/includes/prod_short.md)] .  
   
 |To|See|  
 |--------|---------|  
@@ -44,7 +44,7 @@ The [!INCLUDE[server](../developer/includes/server.md)] instance has several con
 
 ### Filters
 
-You can specify filters in OData web services in general that are not supported in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] , such as using an OR operator to filter on two different fields. In those cases, you will see the following error:  
+You can specify filters in OData web services in general that are not supported in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] , such as using an OR operator to filter on two different fields. In those cases, you will see the following error:  
   
 ```  
 An error occurred while processing this request.   
@@ -53,7 +53,7 @@ An error occurred while processing this request.
 
 ### Lambda operators
 
-Lambda operators are not supported by [!INCLUDE[prodshort](../developer/includes/prodshort.md)] OData APIs. If lambda operators are used, the filter expression will be ignored.
+Lambda operators are not supported by [!INCLUDE[prod_short](../developer/includes/prod_short.md)] OData APIs. If lambda operators are used, the filter expression will be ignored.
 
 ### UI pages
 
@@ -61,7 +61,7 @@ If you use Web services that are based on UI pages, you must expect the same beh
 
 ### Deep patching
 
-[!INCLUDE[prodshort](../developer/includes/prodshort.md)] supports deep insert, but not deep patching. Multiple requests will need to be issued when patching nested entities. 
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] supports deep insert, but not deep patching. Multiple requests will need to be issued when patching nested entities. 
 
 ## See Also  
 

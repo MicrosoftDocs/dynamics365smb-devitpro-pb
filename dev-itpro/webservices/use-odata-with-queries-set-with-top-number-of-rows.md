@@ -10,7 +10,7 @@ ms.service: "dynamics365-business-central"
 ---
 # Using OData with Queries That are Set with a Top Number of Rows
 
-[!INCLUDE[prodshort](../developer/includes/prodshort.md)] queries include the [TopNumberOfRows Property](../developer/properties/devenv-TopNumberOfRows-Property.md) and [TOPNUMBEROFROWS Method](../developer/methods/devenv-TOPNUMBEROFROWS-method.md) that can be used to specify the maximum number of rows to include in the resulting dataset. The OData configuration includes the **Max Page Size** setting that specifies the maximum number of entities returned per page of OData results. The default value is 1000.  
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] queries include the [TopNumberOfRows Property](../developer/properties/devenv-TopNumberOfRows-Property.md) and [TOPNUMBEROFROWS Method](../developer/methods/devenv-TOPNUMBEROFROWS-method.md) that can be used to specify the maximum number of rows to include in the resulting dataset. The OData configuration includes the **Max Page Size** setting that specifies the maximum number of entities returned per page of OData results. The default value is 1000.  
   
  To ensure that the OData results include the correct number of entities when you are using a query that is set with a top number of rows, you should set the **Max Page Size** value greater than the value that is set by the **TopNumberOfRows**  property and **TopNumberOfRows**  method. Otherwise, the **TopNumberOfRows** property and **TopNumberOfRows** method are ignored and the query dataset will be returned in the OData results.  
   

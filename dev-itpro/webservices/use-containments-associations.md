@@ -9,9 +9,9 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 ---
 # Using Containments and Associations
-Containments and associations are relationships between pages in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. OData web services support navigation between pages using containments and associations.  
+Containments and associations are relationships between pages in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. OData web services support navigation between pages using containments and associations.  
   
--   **Containments**: Some pages in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] contain subpages. When you publish such a page, the subpages are automatically available in the web service as containments.  
+-   **Containments**: Some pages in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] contain subpages. When you publish such a page, the subpages are automatically available in the web service as containments.  
   
 -   **Associations**: When a field on a page has a **TableRelation** property, the specified table has a **LookupPageId** property that points to a different page. When you publish a page containing such a field as a web service, you must also publish the page that is pointed to by **LookupPageId** property. You can then link from the first page to the second page in a single URI.  
   
