@@ -10,32 +10,32 @@ ms.author: jswymer
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
-# Converting a Database to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Spring 2019  - Technical Upgrade
+# Converting a Database to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Spring 2019  - Technical Upgrade
 
 [See print-friendly quick reference](technical-upgrade-checklist.md)
 
-This article describes how to convert a database from one of the following versions to the latest [!INCLUDE[prodshort](../developer/includes/prodshort.md)] platform:
+This article describes how to convert a database from one of the following versions to the latest [!INCLUDE[prod_short](../developer/includes/prod_short.md)] platform:
 
 -   [!INCLUDE[navcrete](../developer/includes/navcrete_md.md)]
 -   [!INCLUDE[navcorfu](../developer/includes/navcorfu_md.md)]
 -   [!INCLUDE[nav2017](../developer/includes/nav2017.md)] 
 -   [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] 
 <!--
--   [!INCLUDE[prodshort](../developer/includes/prodshort.md) October 2018 and later CU.
+-   [!INCLUDE[prod_short](../developer/includes/prod_short.md) October 2018 and later CU.
 -->
-This article can also be used to update your current [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database to the latest cumulative update (CU) platform.
+This article can also be used to update your current [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database to the latest cumulative update (CU) platform.
 
 ## Overview
 ### About technical upgrade and database conversion
 
-Converting a database, which is often referred to as a *technical upgrade*, changes the database so that it works on the latest [!INCLUDE[prodshort](../developer/includes/prodshort.md)] platform. The conversion updates the system tables of the old database to the new schema (data structure), and upgrades of all reports to support Report Viewer 2015. It provides you with the latest platform features and performance enhancements.
+Converting a database, which is often referred to as a *technical upgrade*, changes the database so that it works on the latest [!INCLUDE[prod_short](../developer/includes/prod_short.md)] platform. The conversion updates the system tables of the old database to the new schema (data structure), and upgrades of all reports to support Report Viewer 2015. It provides you with the latest platform features and performance enhancements.
 
 The process is slightly different when you have multitenant deployment compared to a single-tenant deployment. The steps that follow indicate the differences where applicable.
 
 > [!IMPORTANT]  
 > Before you begin, read the article [Important Information and Considerations for Before Upgrading](upgrade-considerations.md). This article contains information about limitations in a technical upgrade, such as using V1 extensions or [!INCLUDE[crm_md](../developer/includes/crm_md.md)] integration.
 >
-> If you are upgrading a single-tenant database to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Cumulative Update 02, 03, 04, or 05, read [Tenant synchronization issue with technical upgrade to Business Central Cumulative Updates 02–05](https://community.dynamics.com/business/b/businesscentraldevitpro/archive/2019/03/29/technical-upgrade-to-business-central-cumulative-updates-02-05-tenant-synchronization-issue) on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] for Partners blog before starting the upgrade.  
+> If you are upgrading a single-tenant database to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Cumulative Update 02, 03, 04, or 05, read [Tenant synchronization issue with technical upgrade to Business Central Cumulative Updates 02–05](https://community.dynamics.com/business/b/businesscentraldevitpro/archive/2019/03/29/technical-upgrade-to-business-central-cumulative-updates-02-05-tenant-synchronization-issue) on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] for Partners blog before starting the upgrade.  
 
 ### Tools
 To complete the steps in the article, you will use the following tools:
@@ -50,22 +50,22 @@ To complete the steps in the article, you will use the following tools:
 
 1. Transition from the use of codeunit 1
 
-    With [!INCLUDE[prodshort](../developer/includes/prodshort.md)], codeunit 1 Application Management is no longer used and has been replaced. For more information, see [Transitioning from Codeunit 1](transition-from-codeunit1.md). To prepare for this change when doing a technical upgrade, do the following:
+    With [!INCLUDE[prod_short](../developer/includes/prod_short.md)], codeunit 1 Application Management is no longer used and has been replaced. For more information, see [Transitioning from Codeunit 1](transition-from-codeunit1.md). To prepare for this change when doing a technical upgrade, do the following:
 
     1. If you have any custom code in codeunit 1, export the existing codeunit 1 as a .fob or .txt file.
     2. Go to [Codeunit 1 Replacement](codeunit1-replacement.md), and make a .txt file that includes the replacement code for codeunit 1. You will use this file later.
 
 2. <a name="convertv1extensions"></a>Convert V1 extensions to V2 extensions
 
-    [!INCLUDE[prodshort](../developer/includes/prodshort.md)] does not support V1 extensions. If you are updating a [!INCLUDE[navnow](../developer/includes/navnow_md.md)] database that includes custom V1 extensions, and you want to continue to use them, you have to convert them to V2 extensions. For more information, see [Converting Extensions V1 to Extensions V2](../developer/devenv-upgrade-v1-to-v2-overview.md).
+    [!INCLUDE[prod_short](../developer/includes/prod_short.md)] does not support V1 extensions. If you are updating a [!INCLUDE[navnow](../developer/includes/navnow_md.md)] database that includes custom V1 extensions, and you want to continue to use them, you have to convert them to V2 extensions. For more information, see [Converting Extensions V1 to Extensions V2](../developer/devenv-upgrade-v1-to-v2-overview.md).
 
-    V1 extensions that are produced by Microsoft (first-party extensions, publisher=Microsoft) are now available as V2 extensions on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation media (DVD), so you do not have to convert these. If you want to keep the functionality provided and data collected by these V1 extensions, you will have to publish the V2 versions as part of the technical upgrade later in Task 4. 
+    V1 extensions that are produced by Microsoft (first-party extensions, publisher=Microsoft) are now available as V2 extensions on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] installation media (DVD), so you do not have to convert these. If you want to keep the functionality provided and data collected by these V1 extensions, you will have to publish the V2 versions as part of the technical upgrade later in Task 4. 
 
     You will have to uninstall all V1 extension to successfully completes the technical upgrade.
 
 ## Task 2: Preparing the Old Database
 
-Before you convert the old database to [!INCLUDE[prodshort](../developer/includes/prodshort.md)], complete the following steps.
+Before you convert the old database to [!INCLUDE[prod_short](../developer/includes/prod_short.md)], complete the following steps.
 
 1. Make a copy of the old database or create full database backup. 
 
@@ -102,7 +102,7 @@ Before you convert the old database to [!INCLUDE[prodshort](../developer/include
     Unpublish-NAVApp -ServerInstance dynamicsnav110 -Name System -Version 11.0.12925.0 
     ```
 
-4. <a name="compilesync"></a>Open the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] that matches the [!INCLUDE[navnow](../developer/includes/navnow_md.md)] or [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version of the old database, and then connect to the old application database.  
+4. <a name="compilesync"></a>Open the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] that matches the [!INCLUDE[navnow](../developer/includes/navnow_md.md)] or [!INCLUDE[prod_short](../developer/includes/prod_short.md)] version of the old database, and then connect to the old application database.  
 
      For more information, see [Open Databases](../cside/cside-open-database.md).  
 
@@ -120,7 +120,7 @@ Before you convert the old database to [!INCLUDE[prodshort](../developer/include
 
     For more information, see [Synchronizing the Tenant Database and Application Database](../administration/synchronize-tenant-database-and-application-database.md).
 
-9. <a name="uploadlicense"></a>Upload the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Partner license to the database.  
+9. <a name="uploadlicense"></a>Upload the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Partner license to the database.  
 
     For more information, see [Uploading a License File for a Specific Database](../cside/cside-upload-license-file.md#UploadtoDatabase).  
 
@@ -158,7 +158,7 @@ Before you convert the old database to [!INCLUDE[prodshort](../developer/include
  
 ## Task 3: Run Technical Upgrade on the Old Database
   
-Next, you will convert the old database so that it can be used with [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
+Next, you will convert the old database so that it can be used with [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 > [!TIP]  
 >  If you want to write a script that helps you convert databases, you can use the Invoke-NAVDatabaseConversion function in the [!INCLUDE[devshell](../developer/includes/devshell.md)].
@@ -170,7 +170,7 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[pr
 
     This membership is only required for converting the database, and can be removed afterwards. 
 
-2. Install [!INCLUDE[prodshort](../developer/includes/prodshort.md)].  
+2. Install [!INCLUDE[prod_short](../developer/includes/prod_short.md)].  
 
     Run the [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)], and install the following components as a minimum:
     -  Server
@@ -198,7 +198,7 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[pr
 
 5. When you are notified that the conversion was successful, choose the **OK** button.
 
-6. <a name="controladdins"></a>If the database references any assemblies \(such as client control add-ins\) that are not included on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation media \(DVD\), then add the assemblies to the Add-ins folder on [!INCLUDE[server](../developer/includes/server.md)].   
+6. <a name="controladdins"></a>If the database references any assemblies \(such as client control add-ins\) that are not included on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] installation media \(DVD\), then add the assemblies to the Add-ins folder on [!INCLUDE[server](../developer/includes/server.md)].   
 
     For [!INCLUDE[server](../developer/includes/server.md)], the default path is the [!INCLUDE[prodinstallpath](../developer/includes/prodinstallpath.md)]\\Service\\Add-ins folder.
 
@@ -258,7 +258,7 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[pr
 
     The [!INCLUDE[server](../developer/includes/server.md)] installation includes new versions of Microsoft-provided Javascript-based control add-ins, such as the Business Chart control add-in. If you application is using any of these add-ins, you must upgrade them to the new versions as follow:
 
-    1. Open the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client.
+    1. Open the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client.
     2. Search for and open the **Control Add-ins** page.
     3. Choose **Actions** > **Control Add-in Resource** > **Import**.
     4. Locate and select the .zip file for the control add-in and choose **Open**.
@@ -359,11 +359,11 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[pr
 
     For more information, see [Uploading a License File for a Specific Database](../cside/cside-upload-license-file.md#UploadtoDatabase).  
 
-    You have now completed the conversion of the database to be accessed from [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. To test the converted database, you can connect it to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Server instance that is used by [!INCLUDE[navnow](../developer/includes/navnow_md.md)] clients, and then open a client.
+    You have now completed the conversion of the database to be accessed from [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. To test the converted database, you can connect it to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Server instance that is used by [!INCLUDE[navnow](../developer/includes/navnow_md.md)] clients, and then open a client.
 
 ## Database and Windows collations
 
-Starting from SQL Server 2008, SQL Server collations are fully aligned with the collations in Windows Server. If you upgrade to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] from [!INCLUDE[nav_2009_long](../developer/includes/nav_2009_long_md.md)], the step to convert the database includes upgrading the database from using SQL collations to using Windows collation. This collation change provides users with the most up-to-date and linguistically accurate cultural sorting conventions. For more information, see [Collation and Unicode Support](https://go.microsoft.com/fwlink/?LinkID=247971).  
+Starting from SQL Server 2008, SQL Server collations are fully aligned with the collations in Windows Server. If you upgrade to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] from [!INCLUDE[nav_2009_long](../developer/includes/nav_2009_long_md.md)], the step to convert the database includes upgrading the database from using SQL collations to using Windows collation. This collation change provides users with the most up-to-date and linguistically accurate cultural sorting conventions. For more information, see [Collation and Unicode Support](https://go.microsoft.com/fwlink/?LinkID=247971).  
 
 ## See Also
   

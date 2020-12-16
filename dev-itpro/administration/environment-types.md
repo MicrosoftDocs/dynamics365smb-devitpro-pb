@@ -48,12 +48,12 @@ You can create environments of different types. Which type of environment to cho
 
 ### Creating default sandbox environments
 
-A single, default sandbox environment can also be created in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application. For more information, see [How to: Create a Sandbox Environment](/dynamics365/business-central/across-how-create-sandbox-environment?toc=/dynamics365/business-central/dev-itpro/toc.json).  
+A single, default sandbox environment can also be created in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application. For more information, see [How to: Create a Sandbox Environment](/dynamics365/business-central/across-how-create-sandbox-environment?toc=/dynamics365/business-central/dev-itpro/toc.json).  
 
 ## See also
 
 [Managing Environments in the Administration Center](tenant-admin-center-environments.md)  
-[Preparing Demonstration Environments of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](demo-environment.md)  
-[Preparing Test Environments of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](test-environment.md)  
+[Preparing Demonstration Environments of [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](demo-environment.md)  
+[Preparing Test Environments of [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](test-environment.md)  
 [Steps to set up a sandbox environment and Visual Studio Code](../developer/devenv-get-started.md#steps-to-set-up-a-sandbox-environment-and-visual-studio-code)  
 [Get started with the Container Sandbox Development Environment](../developer/devenv-get-started-container-sandbox.md)  

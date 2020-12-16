@@ -11,9 +11,9 @@ ms.author: jswymer
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
-# Installing a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Spring 2019 Cumulative Update
+# Installing a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Spring 2019 Cumulative Update
 
-This article describes how to install a cumulative update for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises. A cumulative update is a set of files that include hotfixes and regulatory features released for Business Central.
+This article describes how to install a cumulative update for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises. A cumulative update is a set of files that include hotfixes and regulatory features released for Business Central.
  
 
 ## Download the cumulative update package
@@ -38,7 +38,7 @@ When this step is done, you can continue to update your Business Central deploym
 
 ## Update the platform
 
-The following components are part of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] platform:
+The following components are part of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] platform:
 
 - [!INCLUDE[webserver](../developer/includes/webserver.md)]
 - [!INCLUDE[server](../developer/includes/server.md)]
@@ -102,7 +102,7 @@ The APPLICATION folder includes the following files:
 - CUObjects.<Locale>.<Build No.>.fob
 - Objects.<Locale>.Objects.<Locale>.<Build No.>.txt
 
-Using [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] for [!INCLUDE[prodshort](../developer/includes/prodshort.md)], complete one of the following tasks.
+Using [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] for [!INCLUDE[prod_short](../developer/includes/prod_short.md)], complete one of the following tasks.
 
 > [!NOTE]
 > If a license update is required for a regulatory feature, customers can download an updated license from CustomerSource (see [How to Download a Microsoft Dynamics 365 Business Central License from CustomerSource](https://mbs.microsoft.com/customersource/documentation/howtodocuments/downloadnavlicensecs.htm)), and partners can download their customers' updated license from VOICE (see [How to Download a Microsoft Dynamics 365 Business Central Customer License from VOICE](https://mbs.microsoft.com/partnersource/deployment/documentation/howtoarticles/howtodownloadcustomernavlicense.htm)).
@@ -130,7 +130,7 @@ Using [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] for 
         > [!NOTE]
         > If you don't want to use the Worksheet, you can use the Changelog.<Locale>.<Build No.>.txt file to manually apply the changes to the objects in your database.
 
-### Updating from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] October 2018 DE Cumulative Update 2 or earlier
+### Updating from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] October 2018 DE Cumulative Update 2 or earlier
 
 Starting with Cumulative Update 03, the ELSTER local functionality is contained in an extension instead of the base application. If you want the latest updates to the ELSTER functionality, you must publish and install the ELSTER extension. Publishing the extension is described later. To prepare for this step, delete the following objects from the application database: page 11016, page 11017, page 11019, and report 11016. These objects will be replaced by the ELSTER extension.
 
@@ -167,14 +167,14 @@ Set-NAVApplication -ServerInstance <ServerInstanceName> -ApplicationVersion Majo
 
 Complete this task if you're updating:
 
-- A [!INCLUDE[prodshort](../developer/includes/prodshort.md)] October 2018 DE version earlier than Cumulative Update 3 and you want the latest updates to the Elster functionality. Use this procedure to install the following extension:
+- A [!INCLUDE[prod_short](../developer/includes/prod_short.md)] October 2018 DE version earlier than Cumulative Update 3 and you want the latest updates to the Elster functionality. Use this procedure to install the following extension:
 
     |Name|Extension package|
     |----|---------|
     |ELSTER VAT Localization for Germany| Elster.app|
-- A [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application that uses extensions.
+- A [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application that uses extensions.
 
-    The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation media (DVD) includes several new versions of Microsoft extensions (that is, extensions that have **Microsoft** as the publisher). If your old deployment uses these extensions, you have to upgrade the current versions to the new versions.
+    The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] installation media (DVD) includes several new versions of Microsoft extensions (that is, extensions that have **Microsoft** as the publisher). If your old deployment uses these extensions, you have to upgrade the current versions to the new versions.
 
     Also, repair other extensions used in the old deployment that you still want to use so the extensions work on the new platform.
 

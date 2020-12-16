@@ -14,12 +14,12 @@ author: SusanneWindfeldPedersen
 ---
 
 # Walkthrough: Creating and Interacting With an OData V4 Bound Action
-This walkthrough illustrates how you can publish a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] function as an OData V4 web service action. 
+This walkthrough illustrates how you can publish a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] function as an OData V4 web service action. 
 
 ## About This Walkthrough  
 This walkthrough provides an overview of how to expose a function as a web service action and how to verify that the service is working as expected. The walkthrough illustrates the following tasks:
 
--   Publishing a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] function as a web service.    
+-   Publishing a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] function as a web service.    
 -   Verifying web service availability from a browser.
   
 ### Prerequisites  
@@ -32,7 +32,7 @@ To complete this walkthrough, you will need:
 -   The **Postman** app for testing the web service URI.
   
 ## Publishing a Function as a Web Service   
-You publish a function as a Web service action by using the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] to create the function and the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Windows client or the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Web client for publishing the objects the function is for. The tutorial provides an example that will return a location header. A location header would be used to later issue a get request for the resulting object. Refer to the **Return a Value** section for an example that will return a value specified in your function.
+You publish a function as a Web service action by using the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] to create the function and the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Windows client or the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Web client for publishing the objects the function is for. The tutorial provides an example that will return a location header. A location header would be used to later issue a get request for the resulting object. Refer to the **Return a Value** section for an example that will return a value specified in your function.
   
 ### To create the function
 
@@ -97,7 +97,7 @@ You publish a function as a Web service action by using the [!INCLUDE[nav_dev_lo
 
 ### To register and publish a page as a Web service
 
-1.	Open [!INCLUDE[prodshort](../developer/includes/prodshort.md)] and connect to the CRONUS International Ltd. company.
+1.	Open [!INCLUDE[prod_short](../developer/includes/prod_short.md)] and connect to the CRONUS International Ltd. company.
 2.	In the **Search** box, enter **Web services**, and then choose the related link.
 3.	In the **Web Services** page, on the **Home** tab, choose **New**.
 4.	In the **Object Type** column, select **Page**. In the **Object ID** column, enter `43`, and in the **Service Name** column, enter `SalesInvoice`.
@@ -165,7 +165,7 @@ After publishing a web service, verify that the port that web service applicatio
     }
     ```
 
-You have now published a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] function as an OData V4 web service action and verified that the service works as expected. To read more about web services, see the **See Also** section below.
+You have now published a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] function as an OData V4 web service action and verified that the service works as expected. To read more about web services, see the **See Also** section below.
   
 ## See Also  
  [Web Services](Web-Services.md)   

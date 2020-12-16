@@ -21,34 +21,34 @@ author: solsen
 > The **Business Central Virtual Entity (Preview)** app available on AppSource is being updated to reflect new terminology with an upcoming release. This also applies to that terminology used in Business Central.
 
 > [!IMPORTANT]  
-> This functionality requires version 17 of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] and service update 189 for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The release information for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] is published on the [latest version availability page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
+> This functionality requires version 17 of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] and service update 189 for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The release information for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] is published on the [latest version availability page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
 
-This topic provides step-by-step instructions on how to set up and configure virtual tables for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].
+This topic provides step-by-step instructions on how to set up and configure virtual tables for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].
 
 ## Getting the solution
-First get the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Virtual Entity solution from [AppSource](https://appsource.microsoft.com/en-us/product/dynamics-365/microsoftdynsmb.businesscentral_virtualentity). 
+First get the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Virtual Entity solution from [AppSource](https://appsource.microsoft.com/en-us/product/dynamics-365/microsoftdynsmb.businesscentral_virtualentity). 
 
-The following solutions are installed in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] once the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual tables is installed from [AppSource](https://appsource.microsoft.com/en-us/product/dynamics-365/microsoftdynsmb.businesscentral_virtualentity).
+The following solutions are installed in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] once the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] virtual tables is installed from [AppSource](https://appsource.microsoft.com/en-us/product/dynamics-365/microsoftdynsmb.businesscentral_virtualentity).
 
-- **Dynamics365Company** - This adds the **cdm_company** table, which is referenced by all [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual tables. All communication to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] requires the company ID in the request. 
-- **MicrosoftBusinessCentralVESupport** - This provides the core support for the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual table feature.
-- **MicrosoftBusinessCentralERPCatalog** - This provides a list of available [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
+- **Dynamics365Company** - This adds the **cdm_company** table, which is referenced by all [!INCLUDE[prod_short](../developer/includes/prod_short.md)] virtual tables. All communication to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] requires the company ID in the request. 
+- **MicrosoftBusinessCentralVESupport** - This provides the core support for the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] virtual table feature.
+- **MicrosoftBusinessCentralERPCatalog** - This provides a list of available [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 - **MicrosoftBusinessCentralVEAnchor** - This serves as a container, holding information needed for AppSource. 
-- **MicrosoftBusinessCentralERPVE** - Virtual tables generated for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] will be contained in this solution. tables are added at runtime once they are made visible.
+- **MicrosoftBusinessCentralERPVE** - Virtual tables generated for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] will be contained in this solution. tables are added at runtime once they are made visible.
 
 ## Authentication and authorization
 
-After the solutions are installed in the [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] environment, connection can be set up to a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] environment. *Both environments have to be in the same tenant*.  
+After the solutions are installed in the [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] environment, connection can be set up to a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment. *Both environments have to be in the same tenant*.  
 
-The next step in the process is to provide [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] with the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] environment and company to connect to. The following steps walk through this part of the process.
+The next step in the process is to provide [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] with the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment and company to connect to. The following steps walk through this part of the process.
 
-0. In [!INCLUDE[prodshort](../developer/includes/prodshort.md)], go to the page 'AAD Applications' and toggle the app 'Dynamics 365 Business Central for Virtual tables' to **Enabled**. This will allow [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] to communicate with [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
+0. In [!INCLUDE[prod_short](../developer/includes/prod_short.md)], go to the page 'AAD Applications' and toggle the app 'Dynamics 365 Business Central for Virtual tables' to **Enabled**. This will allow [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] to communicate with [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 1. In [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], go to the table **Business Central Virtual Data Source Configuration**.
 
-2. Select and edit the data source named “[!INCLUDE[prodshort](../developer/includes/prodshort.md)]”.
+2. Select and edit the data source named “[!INCLUDE[prod_short](../developer/includes/prod_short.md)]”.
 
-3. On the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Virtual Data Source Configuration, set the environment name. Unless changed, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenants will have an default environment called 'production'.
+3. On the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Virtual Data Source Configuration, set the environment name. Unless changed, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenants will have an default environment called 'production'.
 
 4. Save changes before setting **Default Company**. Else, company cannot be set in the next step.
 
@@ -58,7 +58,7 @@ The next step in the process is to provide [!INCLUDE[cds_long_md](../includes/cd
 
 ## Making virtual tables visible
 
-Due to the large number of OData enabled tables available in [!INCLUDE[prodshort](../developer/includes/prodshort.md)], by default, the tables are not available as virtual tables in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The following steps allow for enabling tables to be virtual, as needed.
+Due to the large number of OData enabled tables available in [!INCLUDE[prod_short](../developer/includes/prod_short.md)], by default, the tables are not available as virtual tables in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The following steps allow for enabling tables to be virtual, as needed.
 
 1. In [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], go to **Data -> tables** and search for *Available Business Central table*. Make sure to search for All and not just Default.
 
@@ -70,7 +70,7 @@ Due to the large number of OData enabled tables available in [!INCLUDE[prodshort
 
 ## Refreshing virtual table metadata
 
-The virtual table metadata can be force-refreshed when it is expected for the table metadata in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to have changed. This can be done by setting **Refresh** to **Checked** and saving. This will sync the latest table definition from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] and update the virtual table.
+The virtual table metadata can be force-refreshed when it is expected for the table metadata in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] to have changed. This can be done by setting **Refresh** to **Checked** and saving. This will sync the latest table definition from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] to [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] and update the virtual table.
 
 ## Referencing virtual tables
 

@@ -23,21 +23,21 @@ One of the keys to a successful extension validation is a document that guides t
 
   - If your app requires setup of its own, include those details.
   - If any setup is extensive, consider using the import of Rapid Start packages.
-  - If your app has a dependency on non-standard settings in the core default version of [!INCLUDE[prodshort](../includes/prodshort.md)], include those details. The Microsoft-provided demo data might not have everything that your app needs to work properly.
+  - If your app has a dependency on non-standard settings in the core default version of [!INCLUDE[prod_short](../includes/prod_short.md)], include those details. The Microsoft-provided demo data might not have everything that your app needs to work properly.
 
 - Include the most important functionality scenarios of your extension. We are not looking to test your entire extension, but we do want to ensure we are validating the most used aspects of your app.  
   - Do not give a summary as to what these scenarios do. List step by step details instead. Again, the tester doing the validation might not have the same product knowledge as you do.
   - It should be possible for the inexperienced tester to **complete the user scenario test in less than 20 minutes** (after installation and startup).
 
 > [!NOTE]
-> This is not the same as the requirement to include Help for your functionality. For more information about getting started with extending and customizing the [!INCLUDE[prodshort](../includes/prodshort.md)] user assistance, see [User assistance model](../user-assistance.md).  
+> This is not the same as the requirement to include Help for your functionality. For more information about getting started with extending and customizing the [!INCLUDE[prod_short](../includes/prod_short.md)] user assistance, see [User assistance model](../user-assistance.md).  
 
 ## Use the correct Business Central version
 
 We recommend that you use Docker as a guide for writing your user scenario document. This way, you can take screenshots and other visuals that really help the tester walk through your validation. Keep these things in mind:
 
-- Do not base your user document on an on-premises environment. [!INCLUDE[prodshort](../includes/prodshort.md)] on-premises deployments can have different windows, data, and so on. As a result, your document can lead to confusion and differences in our results.  
-- Use the correct [!INCLUDE[prodshort](../includes/prodshort.md)] version. If you are basing your document on a build that is months old, many things could now be different in the latest production environment. This also can lead to much confusion. For more information, see [Current Build - Developing for Dynamics 365 Business Central](https://partner.microsoft.com/dashboard/collaborate/packages/4756) on the Collaborate site.
+- Do not base your user document on an on-premises environment. [!INCLUDE[prod_short](../includes/prod_short.md)] on-premises deployments can have different windows, data, and so on. As a result, your document can lead to confusion and differences in our results.  
+- Use the correct [!INCLUDE[prod_short](../includes/prod_short.md)] version. If you are basing your document on a build that is months old, many things could now be different in the latest production environment. This also can lead to much confusion. For more information, see [Current Build - Developing for Dynamics 365 Business Central](https://partner.microsoft.com/dashboard/collaborate/packages/4756) on the Collaborate site.
 - Use the correct data for your document. Do not submit a document based on custom data that our testers will not have access to. You should always base your documents on the base demo CRONUS data and then include Rapid Start packages with any additional data.
 - If your app's functionality is different per country, provide that important information. Some of the steps might be different (for your app) between US and DK. If that is the case, mention that in the document.  
 

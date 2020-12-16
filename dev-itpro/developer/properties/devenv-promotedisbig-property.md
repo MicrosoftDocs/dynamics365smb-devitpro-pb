@@ -40,7 +40,7 @@ PromotedIsBig = true;
 If there is more than one action that has the PromotedIsBig property set to **true**, then the actions will appear before other actions, in the order that they are defined in AL.
 
 > [!NOTE]
-> In the [!INCLUDE[prodshort](../includes/nav_windows_md.md)], this property behaves differently. Setting the property to **true** will display a bigger icon than normal in the client. It will not reposition the action.
+> In the [!INCLUDE[prod_short](../includes/nav_windows_md.md)], this property behaves differently. Setting the property to **true** will display a bigger icon than normal in the client. It will not reposition the action.
 
 ## Example
 

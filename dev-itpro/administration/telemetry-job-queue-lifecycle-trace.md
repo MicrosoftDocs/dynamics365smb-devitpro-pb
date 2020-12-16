@@ -14,7 +14,7 @@ ms.author: jswymer
 
 # Analyzing Job Queue Lifecycle Trace Telemetry
 
-**APPLIES TO:** [!INCLUDE[prodshort](../includes/prodshort.md)] 2020 release wave 2, version 17.2, and later
+**APPLIES TO:** [!INCLUDE[prod_short](../includes/prod_short.md)] 2020 release wave 2, version 17.2, and later
 
 Job queue lifecycle telemetry gathers data about the following operations: 
 
@@ -22,7 +22,7 @@ Job queue lifecycle telemetry gathers data about the following operations:
 - A job queue entry was started.
 - A job queue entry finished. Provides information as to whether it was successful or failed.
 
-For information about creating and managing job queue entries, see [Use Job Queues to Schedule Tasks](/dynamics365/business-central/admin-job-queues-schedule-tasks) in the [!INCLUDE[prodshort](../includes/prodshort.md)] application help.
+For information about creating and managing job queue entries, see [Use Job Queues to Schedule Tasks](/dynamics365/business-central/admin-job-queues-schedule-tasks) in the [!INCLUDE[prod_short](../includes/prod_short.md)] application help.
 
 ## <a name="enqueued"></a>Job queue entry enqueued
 
@@ -68,7 +68,7 @@ The following table explains additional custom dimensions that are common to all
 |extensionName|Specifies the name of the extension that contains the object run by the job queue entry.|
 |extensionId|Specifies the ID of the extension that contains the object run by the job queue entry.|
 |extensionVersion|Specifies the version of the extension that contains the object run by the job queue entry.|
-|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
+|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 
 
 <!--

@@ -42,7 +42,7 @@ Sets the maximum length of the specific InstructionalText.
 
 ## Remarks
 
-The default is an empty string, which means there will be no instructions. According to the user assistance model for [!INCLUDE[prodshort](../includes/prodshort.md)], apps are expected to apply instructional text to setup guides and similar pages.  
+The default is an empty string, which means there will be no instructions. According to the user assistance model for [!INCLUDE[prod_short](../includes/prod_short.md)], apps are expected to apply instructional text to setup guides and similar pages.  
 
 The following example illustrates how you can apply instructional text in an app:  
 

@@ -12,7 +12,7 @@ ms.author: solsen
 
 # Retaining table data after publishing
 
-When developing an extension, you debug several times using the F5 shortcut key, and you also test your app by adding some sample data every time. To simplify the extension development process in [!INCLUDE[prodshort](includes/prodshort.md)], you can synchronize the sample data specified in the extension when you do subsequent publishing from Visual Studio Code.
+When developing an extension, you debug several times using the F5 shortcut key, and you also test your app by adding some sample data every time. To simplify the extension development process in [!INCLUDE[prod_short](includes/prod_short.md)], you can synchronize the sample data specified in the extension when you do subsequent publishing from Visual Studio Code.
 
 ## How data synchronization works
 
@@ -56,7 +56,7 @@ If you, during development, for example, discover that you no longer want field 
 
 - Making major table structural changes could lead to compilation errors. For example, if you want to update a primary key. In this case, the table data cannot be synchronized, and if you want to publish the extension, you must change the `schemaUpdateMode` to `Recreate`.  
 
-- For extensions built on [!INCLUDE[prodshort](includes/prodshort.md)] Spring 2019 or earlier, if a table field has the `SqlDataType` set to a value other than `Varchar` (which is the default), you must delete the `SqlDataType` property on the field, otherwise, you will will not be able to successfully synchronize the extension.
+- For extensions built on [!INCLUDE[prod_short](includes/prod_short.md)] Spring 2019 or earlier, if a table field has the `SqlDataType` set to a value other than `Varchar` (which is the default), you must delete the `SqlDataType` property on the field, otherwise, you will will not be able to successfully synchronize the extension.
 
     If the `SqlDataType` property is still needed, you will have to create a new table in the extension that has the same definition as the original table, and write upgrade code that migrates the data from the original table to the new table. For more information, see [Writing upgrade code](devenv-upgrading-extensions.md#writing-upgrade-code).
 

@@ -11,16 +11,16 @@ ms.author: jswymer
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
-# Installing a [!INCLUDE[prod short](../developer/includes/prodshort.md)] 2020 Release Wave 2 Update
+# Installing a [!INCLUDE[prod short](../developer/includes/prod_short.md)] 2020 Release Wave 2 Update
 
 
-This article describes how to install an update for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises. An update is a set of files that includes all hotfixes and regulatory features that have been released for Business Central.
+This article describes how to install an update for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises. An update is a set of files that includes all hotfixes and regulatory features that have been released for Business Central.
 
 You can choose to update only the platform or both the platform and application code. The installation guidelines are separated into PLATFORM tasks and APPLICATION tasks.
 
 ## Overview
 
-The following figure provides a high-level representation of a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution and the components that are involved in the installation of an update.
+The following figure provides a high-level representation of a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] solution and the components that are involved in the installation of an update.
 
 ![Business Central application stack](../developer/media/bc15-architecture-overview.png "Business Central application stack")  
 
@@ -138,10 +138,10 @@ From the installation media (DVD), run setup.exe to uninstall the current Busine
     ```powershell
     Stop-NAVServerInstance -ServerInstance <server instance>
     ```
-2. Run setup.exe to uninstall your current version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
+2. Run setup.exe to uninstall your current version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 3. Run setup.exe again to install components of the update.
 
-    1. Follow setup pages until you get to the **Microsoft [!INCLUDE[prodlong](../developer/includes/prodlong.md)] Setup** page.
+    1. Follow setup pages until you get to the **Microsoft [!INCLUDE[prod_long](../developer/includes/prod_long.md)] Setup** page.
     2. Select **Advanced installation options** > **Choose an installation option** > **Custom**.
     3. On the **Customize the installation** page, select the following components as a minimum:
 
@@ -378,7 +378,7 @@ After you've created the new version of your custom application, you publish it 
 
 ##  <a name="AddExtensions"></a>Upgrade Microsoft extensions
 
-If your old solution used Microsoft extensions, then you upgrade these extensions to the new versions that are available on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation media (DVD). The new versions are in the **Applications** folder, which contains a subfolder for each extension. The extension package (.app file) that you need for publishing the extension is in the **Source** folder, for example, **Applications\SalesAndInventoryForecast\Source\SalesAndInventoryForecast.app**.
+If your old solution used Microsoft extensions, then you upgrade these extensions to the new versions that are available on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] installation media (DVD). The new versions are in the **Applications** folder, which contains a subfolder for each extension. The extension package (.app file) that you need for publishing the extension is in the **Source** folder, for example, **Applications\SalesAndInventoryForecast\Source\SalesAndInventoryForecast.app**.
 
 The general steps for this task are listed below. For detailed steps, see [Publishing, Upgrading, and Installing Extensions During Upgrade](upgrade-publish-extensions.md).
 
@@ -446,7 +446,7 @@ The [!INCLUDE[server](../developer/includes/server.md)] installation includes ne
 
 To upgrade the control add-ins, do the following steps:
 
-1. Open the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client.
+1. Open the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client.
 2. Search for and open the **Control Add-ins** page.
 3. Choose **Actions** > **Control Add-in Resource** > **Import**.
 4. Locate and select the .zip file for the control add-in and choose **Open**.

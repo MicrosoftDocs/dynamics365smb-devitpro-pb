@@ -57,7 +57,7 @@ Sets the maximum length of the specific ToolTip.
 
 ## Remarks
 
-The default is an empty string, which means there will be no tooltip. According to the user assistance model for [!INCLUDE[prodshort](../includes/prodshort.md)], apps are expected to apply tooltips to controls on pages.  
+The default is an empty string, which means there will be no tooltip. According to the user assistance model for [!INCLUDE[prod_short](../includes/prod_short.md)], apps are expected to apply tooltips to controls on pages.  
 
 The following example illustrates how you can apply tooltips in an app:  
 

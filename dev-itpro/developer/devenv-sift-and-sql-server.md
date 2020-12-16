@@ -16,13 +16,13 @@ A SumIndexField is always associated with a key and each key can have a maximum 
 >  Any field that has a numeric data type of Decimal, Integer, BigInteger, or Duration, can be associated with a key as a SumIndexField.  
 
 ## Implementing SIFT  
- [!INCLUDE[prodshort](includes/prodshort.md)] uses *Indexed Views* to maintain SIFT totals. Indexed views are a standard SQL Server feature. An indexed view is like a SQL Server view except that the contents have been materialized \(computed and stored\) to speed up the retrieval of data. For more information about indexed views, see [SQL Server Documentation](https://go.microsoft.com/fwlink/?LinkId=253107).  
+ [!INCLUDE[prod_short](includes/prod_short.md)] uses *Indexed Views* to maintain SIFT totals. Indexed views are a standard SQL Server feature. An indexed view is like a SQL Server view except that the contents have been materialized \(computed and stored\) to speed up the retrieval of data. For more information about indexed views, see [SQL Server Documentation](https://go.microsoft.com/fwlink/?LinkId=253107).  
 
- [!INCLUDE[prodshort](includes/prodshort.md)] creates one indexed view for each SIFT key that is enabled. When you create a SIFT key for a table, you must set the [MaintainSIFTIndex Property](properties/devenv-maintainsiftindex-property.md) for that key to **True** to enable the SIFT key and create the indexed view. After SQL Server has created the indexed view, it maintains the contents of the view when any changes are made to the base table. If you set the [MaintainSIFTIndex Property](properties/devenv-maintainsiftindex-property.md) for that key to **False**, SQL Server drops the indexed view and stops maintaining the totals.  
+ [!INCLUDE[prod_short](includes/prod_short.md)] creates one indexed view for each SIFT key that is enabled. When you create a SIFT key for a table, you must set the [MaintainSIFTIndex Property](properties/devenv-maintainsiftindex-property.md) for that key to **True** to enable the SIFT key and create the indexed view. After SQL Server has created the indexed view, it maintains the contents of the view when any changes are made to the base table. If you set the [MaintainSIFTIndex Property](properties/devenv-maintainsiftindex-property.md) for that key to **False**, SQL Server drops the indexed view and stops maintaining the totals.  
 
  The indexed view that is generated for a SIFT key is always created at the level of finest granularity. Therefore, if you create a SIFT key for `AccountNo., PostingDate`, the database will store an aggregated value for each account for each date. This means that in the worst case scenario, 365 records must be summed to generate the total for each account for a year.  
 
- The following is an example of how [!INCLUDE[prodshort](includes/prodshort.md)] creates an indexed view for a SIFT key that consists of the **AccountNo.** and **PostingDate** fields with a total for the **Amount** field.  
+ The following is an example of how [!INCLUDE[prod_short](includes/prod_short.md)] creates an indexed view for a SIFT key that consists of the **AccountNo.** and **PostingDate** fields with a total for the **Amount** field.  
 
 ```  
 CREATE VIEW GLEntry$VSIFT$1 AS

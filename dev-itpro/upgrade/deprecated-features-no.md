@@ -14,8 +14,8 @@ ms.author: bholtorf
 
 ---
 
-# Deprecated Features in the Norwegian Version of [!INCLUDE [prodlong](../developer/includes/prodlong.md)]
-This topic lists and describes the local functionality for Norway that has been removed from [!INCLUDE[prodshort](../developer/includes/prodshort.md)], made available from a new page or report, or replaced by a new feature.
+# Deprecated Features in the Norwegian Version of [!INCLUDE [prod_long](../developer/includes/prod_long.md)]
+This topic lists and describes the local functionality for Norway that has been removed from [!INCLUDE[prod_short](../developer/includes/prod_short.md)], made available from a new page or report, or replaced by a new feature.
 
 ## Multiple Interest Rates
 When you create finance charge terms and reminder terms, for delayed payment penalty, you can specify multiple interest rates so that the penalty fee is calculated from different interest rates in different periods.

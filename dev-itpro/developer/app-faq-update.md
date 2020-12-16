@@ -12,25 +12,25 @@ ms.author: freddyk
 
 # FAQ about Updating your Business Central App
 
-This section contains answers to frequently asked questions about updating your app for [!INCLUDE[prodshort](../includes/prodshort.md)].
+This section contains answers to frequently asked questions about updating your app for [!INCLUDE[prod_short](../includes/prod_short.md)].
 
 ## Is it the same process for an app update as the first version?
 
-Yes. You upload the updated app file into Partner Center and submit as normal. It goes through a more scaled-back validation process than your original version, but it does get validated. If it fails validation, it comes back to you for fixing. If it passes validation, it gets checked into [!INCLUDE[prodshort](includes/prodshort.md)].
+Yes. You upload the updated app file into Partner Center and submit as normal. It goes through a more scaled-back validation process than your original version, but it does get validated. If it fails validation, it comes back to you for fixing. If it passes validation, it gets checked into [!INCLUDE[prod_short](includes/prod_short.md)].
 
 ## What are some "need to know" considerations with an updated app?
 
-When you submit an updated version of your app, you must increase the version number in the app's json/manifest  files. [!INCLUDE[prodshort](includes/prodshort.md)] doesn’t allow overwrites. So we need the version number increased for us to check the updated app into our service upon it passing validation.
+When you submit an updated version of your app, you must increase the version number in the app's json/manifest  files. [!INCLUDE[prod_short](includes/prod_short.md)] doesn’t allow overwrites. So we need the version number increased for us to check the updated app into our service upon it passing validation.
 
 Never change the app's App ID in the json/manifest files. This is must stay the same across versions for various reasons, not least for upgrade reasons.
 
 ## When is my updated app available for tenants to install?
 
-As soon as your updated app passes validation and is checked into our service, it then becomes the active version (for whatever the current [!INCLUDE[prodshort](includes/prodshort.md)] version is at that time). Even though your offer might still show as in progress in Partner Center, the updated app is active and ready to install. Also, even though your version number in AppSource might show as older, tenants will still get this latest updated version. For example, your updated version might be version 1.0.0.5. And in AppSource it might still show 1.0.0.1. Tenants will get the version 1.0.0.5.
+As soon as your updated app passes validation and is checked into our service, it then becomes the active version (for whatever the current [!INCLUDE[prod_short](includes/prod_short.md)] version is at that time). Even though your offer might still show as in progress in Partner Center, the updated app is active and ready to install. Also, even though your version number in AppSource might show as older, tenants will still get this latest updated version. For example, your updated version might be version 1.0.0.5. And in AppSource it might still show 1.0.0.1. Tenants will get the version 1.0.0.5.
 
 ## What version of Business Central is my updated app compatible with?
 
-When you submit your app for validation, we validate it against the latest version at that point in time. Once the app passes validation, it is then checked into our service and configured for that version of [!INCLUDE[prodshort](includes/prodshort.md)], unless a newer version has been released in the meanwhile. For example, if you submit your app and the latest version of [!INCLUDE[prodshort](includes/prodshort.md)] at that time is 16.1, your app will then be compatible and configured for 16.1. When versions 16.2, 16.3, and so on roll out, your app is automatically configured for the latest version. Tenants that are on earlier versions of [!INCLUDE[prodshort](includes/prodshort.md)] will not get that updated version. They still however can install the previous versions of your app. They will get the version of your app that is configured for the version of [!INCLUDE[prodshort](includes/prodshort.md)] that their tenant is on.
+When you submit your app for validation, we validate it against the latest version at that point in time. Once the app passes validation, it is then checked into our service and configured for that version of [!INCLUDE[prod_short](includes/prod_short.md)], unless a newer version has been released in the meanwhile. For example, if you submit your app and the latest version of [!INCLUDE[prod_short](includes/prod_short.md)] at that time is 16.1, your app will then be compatible and configured for 16.1. When versions 16.2, 16.3, and so on roll out, your app is automatically configured for the latest version. Tenants that are on earlier versions of [!INCLUDE[prod_short](includes/prod_short.md)] will not get that updated version. They still however can install the previous versions of your app. They will get the version of your app that is configured for the version of [!INCLUDE[prod_short](includes/prod_short.md)] that their tenant is on.
 
 ## When tenants have their Business Central version upgraded, do apps ever get automatically updated?
 
@@ -48,7 +48,7 @@ No. The only reason you would need to submit an updated version of your app for 
 
 ## How frequent should I submit updated versions of my app?
 
-We recommend that you bundle more bug fixes and features so that your app doesn't have to be updated frequently. This has been voiced by our [!INCLUDE[prodshort](includes/prodshort.md)] customers. They do not want to be constantly updating their apps in their tenants. We recommend a minimum 1-month app update cadence.
+We recommend that you bundle more bug fixes and features so that your app doesn't have to be updated frequently. This has been voiced by our [!INCLUDE[prod_short](includes/prod_short.md)] customers. They do not want to be constantly updating their apps in their tenants. We recommend a minimum 1-month app update cadence.
 
 ## What if I have a critical hotfix?
 
@@ -64,7 +64,7 @@ No. The version number in the dependency listing in the json file to an app is a
 
 ## Why don't I see the updated version of my app in my sandbox tenant?
 
-Your tenant is on an older version of [!INCLUDE[prodshort](includes/prodshort.md)] and has not yet been upgraded to the latest version of [!INCLUDE[prodshort](includes/prodshort.md)]. The latest updated version of your app is only compatible with the latest [!INCLUDE[prodshort](includes/prodshort.md)] version and later. If you upgrade your tenant to the latest version, you can then update your app.
+Your tenant is on an older version of [!INCLUDE[prod_short](includes/prod_short.md)] and has not yet been upgraded to the latest version of [!INCLUDE[prod_short](includes/prod_short.md)]. The latest updated version of your app is only compatible with the latest [!INCLUDE[prod_short](includes/prod_short.md)] version and later. If you upgrade your tenant to the latest version, you can then update your app.
 
 ## See also
 

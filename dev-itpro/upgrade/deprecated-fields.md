@@ -14,7 +14,7 @@ ms.author: edupont
 
 # Deprecated Fields, and Fields Marked as Obsolete
 
-In the latest version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], a number of fields have been deprecated in the current release or marked to be obsolete in a later release.  
+In the latest version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)], a number of fields have been deprecated in the current release or marked to be obsolete in a later release.  
 
 ## Definitions
 
@@ -22,9 +22,9 @@ Deprecated fields fall into one of the following groups:
 
 1. Fields moved to an extension by Microsoft  
 
-   Partner impact: Remember to install the extension when you upgrade an existing solution from an earlier version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)].  
+   Partner impact: Remember to install the extension when you upgrade an existing solution from an earlier version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].  
   
-   Specifically for the extensions that are required for connecting on-premises solutions with [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online for intelligent insights, you must install the **Intelligent Cloud Base Extension** extension first, and then the product-specific extension or extensions.  
+   Specifically for the extensions that are required for connecting on-premises solutions with [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online for intelligent insights, you must install the **Intelligent Cloud Base Extension** extension first, and then the product-specific extension or extensions.  
 2. Fields marked as **Obsolete:Pending**  
 
    Partner impact: None in the current release, this is just a heads-up that a change is coming.  
@@ -32,7 +32,7 @@ Deprecated fields fall into one of the following groups:
 
    Partner impact: Refactor your code as soon as possible.  
 
-## Fields marked as ObsoleteState:Pending in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
+## Fields marked as ObsoleteState:Pending in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]
 
 A number of fields are marked as ObsoleteState:Pending. There is no impact on code in this release.  
 
@@ -92,7 +92,7 @@ A number of fields are marked as ObsoleteState:Pending. There is no impact on co
 
 [!INCLUDE [fields-obsolete-baseapp](../includes/fields-obsolete-baseapp.md)]
 
-## Fields moved to an extension by Microsoft in [!INCLUDE [prodshort](../developer/includes/prodshort.md)]
+## Fields moved to an extension by Microsoft in [!INCLUDE [prod_short](../developer/includes/prod_short.md)]
 
 A number of fields have been moved from the base application to an extension.
 
