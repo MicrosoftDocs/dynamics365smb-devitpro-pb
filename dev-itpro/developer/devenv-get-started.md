@@ -36,7 +36,7 @@ Go through the following steps to set up a sandbox environment. With this you ge
 6) Enter the credentials that you provided for the sign-up.
 7) Press **Ctrl+F5** to deploy and run the extension on your online sandbox tenant.  
 
-You now have a HelloWorld sample that compiles and runs. The JSON files in the project are automatically updated with the settings that allows you to press **Ctrl+F5** to build and deploy the solution to [!INCLUDE[prodshort](includes/prodshort.md)]. For more information, see [JSON Files](devenv-json-files.md).
+You now have a HelloWorld sample that compiles and runs. The JSON files in the project are automatically updated with the settings that allows you to press **Ctrl+F5** to build and deploy the solution to [!INCLUDE[prod_short](includes/prod_short.md)]. For more information, see [JSON Files](devenv-json-files.md).
 
 ## Tips and tricks
 
@@ -76,7 +76,7 @@ The symbol file contains metadata of the application. This is what your extensio
 
 ## Installing and publishing an extension
 
-To make your extension available to users, the package must be published to a specific [!INCLUDE[prodshort](includes/prodshort.md)] server instance. The extension can be installed for one or more tenants. For more information about how to install and publish an extension, see [How to: Publish and Install an Extension](devenv-how-publish-and-install-an-extension-v2.md). 
+To make your extension available to users, the package must be published to a specific [!INCLUDE[prod_short](includes/prod_short.md)] server instance. The extension can be installed for one or more tenants. For more information about how to install and publish an extension, see [How to: Publish and Install an Extension](devenv-how-publish-and-install-an-extension-v2.md). 
 
 ## Controlling user access to developing and publishing extensions
 

@@ -151,7 +151,7 @@ These methods will overwrite any filter on the same field that is set on a colum
 
 ### Calling the SETFILTER and SETRANGE methods
 
-You can call the **SETFILTER** and **SETRANGE** method from the AL code of the [!INCLUDE[prodshort](includes/prodshort.md)] object that runs the query object or from the [OnBeforeOpen Trigger](triggers/devenv-onbeforeopen-trigger.md) of the query object.  
+You can call the **SETFILTER** and **SETRANGE** method from the AL code of the [!INCLUDE[prod_short](includes/prod_short.md)] object that runs the query object or from the [OnBeforeOpen Trigger](triggers/devenv-onbeforeopen-trigger.md) of the query object.  
 
 To call the **SETFILTER** method, you use the following code.  
 
@@ -192,7 +192,7 @@ end;
 
 ##  <a name="SQL"></a> Equivalent SQL SELECT Statements for Query Filters
 
-If you're familiar with SQL, then it is helpful to know how filtering in [!INCLUDE[prodshort](includes/prodshort.md)] queries relates to SQL statements. To specify filters in an SQL statement, you use WHERE and HAVING clauses. The WHERE clause filters on fields. The HAVING clause filters on the results that have aggregated values as applied by of a totals method.  
+If you're familiar with SQL, then it is helpful to know how filtering in [!INCLUDE[prod_short](includes/prod_short.md)] queries relates to SQL statements. To specify filters in an SQL statement, you use WHERE and HAVING clauses. The WHERE clause filters on fields. The HAVING clause filters on the results that have aggregated values as applied by of a totals method.  
 
 The following example shows the corresponding SQL SELECT statement for the previous data item filter example that links the `Customer` and `Sales Line` tables and filters on the `Quantity` field.  
 

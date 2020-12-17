@@ -13,9 +13,9 @@ ms.author: bholtorf
 ---
 
 # The Performance Toolkit Extension
-This extension is built for independent solution vendors (ISVs) and value added resellers (VARs) who develop vertical solutions and customize [!INCLUDE[prodshort](includes/prodshort.md)] for their customers. In this type of collaboration, things often change between released versions on both sides, so it's important that ISVs and VARs can ensure that new versions of their solutions don't introduce performance regressions as the volume of users grows. To help, the Performance Toolkit lets developers simulate workloads in realistic scenarios to compare performance between builds of their solutions.
+This extension is built for independent solution vendors (ISVs) and value added resellers (VARs) who develop vertical solutions and customize [!INCLUDE[prod_short](includes/prod_short.md)] for their customers. In this type of collaboration, things often change between released versions on both sides, so it's important that ISVs and VARs can ensure that new versions of their solutions don't introduce performance regressions as the volume of users grows. To help, the Performance Toolkit lets developers simulate workloads in realistic scenarios to compare performance between builds of their solutions.
 
-In short, the Performance Toolkit helps answer questions such as, "Does my solution for [!INCLUDE[prodshort](includes/prodshort.md)] support X number of users doing this, that, and the other thing at the same time?" It doesn't answer questions such as, "How many orders can [!INCLUDE[prodshort](includes/prodshort.md)] process per hour?"
+In short, the Performance Toolkit helps answer questions such as, "Does my solution for [!INCLUDE[prod_short](includes/prod_short.md)] support X number of users doing this, that, and the other thing at the same time?" It doesn't answer questions such as, "How many orders can [!INCLUDE[prod_short](includes/prod_short.md)] process per hour?"
 
 > [!IMPORTANT]
 > You can use the toolkit only in sandbox environments and Docker images. You cannot use it in a production tenant.
@@ -25,7 +25,7 @@ The Performance Toolkit is two extensions, the **Performance Toolkit**, which is
 
 * A framework for defining a set of tests or scenarios to run in parallel. The framework also logs results and lets you import and export suite definitions.  
 * Predefined test suites that cover basic scenarios, which can also serve as inspiration for other suites that suit your customer environments.
-* A command line tool that must be installed on a client computer. To simulate multiple users signing in and using pages, you must start those scenarios from outside [!INCLUDE[prodshort](includes/prodshort.md)]. The command line tool will run the number of concurrent client sessions that is specified in the suit. For more information, see [Starting the Run from PowerShell](devenv-performance-toolkit.md#starting-the-run-from-powershell). 
+* A command line tool that must be installed on a client computer. To simulate multiple users signing in and using pages, you must start those scenarios from outside [!INCLUDE[prod_short](includes/prod_short.md)]. The command line tool will run the number of concurrent client sessions that is specified in the suit. For more information, see [Starting the Run from PowerShell](devenv-performance-toolkit.md#starting-the-run-from-powershell). 
 
 ## Single and Multiple Sessions
 Typically, you'll want to run the suite for multiple sessions at the same time. After you configure the suite, you can do that by using the **Start** action. However, if you want to do light-weight testing, for example, early in the development phase, you can choose the **Start in Single Run mode** action to run your suite just once, and as fast as possible. Single Run mode lets you monitor the number of SQL statements between runs and define baselines, and gives you quick feedback that can help identify regressions early on.
@@ -74,7 +74,7 @@ $Credential = New-Object PSCredential -ArgumentList <user email>,(ConvertTo-Secu
 
 ```
  
-To start tests in a [!INCLUDE[prodshort](includes/prodshort.md)] online sandbox, run the following command:
+To start tests in a [!INCLUDE[prod_short](includes/prod_short.md)] online sandbox, run the following command:
 
 ```
 RunBCPTTests.ps1 -Environment PROD -AuthorizationType AAD -Credential $Credential -SandboxName <sandbox name> -TestRunnerPage 149002 -SuiteCode "TRADE-50U"
@@ -150,7 +150,7 @@ The results of the PRT are shown on the **BCPT Suite Lines** FastTab. The follow
 ## Writing Test Cases (codeunits)
 A test case is a codeunit of either a **Normal** or **Test** subtype. If the subtype is Normal, the test scenario should be defined in the OnRun trigger because the Performance Toolkit uses the codeunit to run the testcase. 
 
-To interact with pages and make the tests more realistic, define a codeunit of the subtype **Test**, as shown in the example for codeunit BCPT Open Item List. Codeunit BCPT Test Context is an interface for running tests. Tests can use the StartScenario amd EndScenario functions on the BCPT Test Context codeunit to log when a scenario that is being measured started and stopped. To simulate user delays, the UserWait() function should be called while moving between fields to make the tests more realistic. The BCPT Test Context codeunit also exposes the parameters that are set on the test codeunit to the test suite. When using [!INCLUDE[prodshort](includes/prodshort.md)], an implicit Commit() is called for every interaction, and that should be simulated in the tests by calling an explicit Commit().
+To interact with pages and make the tests more realistic, define a codeunit of the subtype **Test**, as shown in the example for codeunit BCPT Open Item List. Codeunit BCPT Test Context is an interface for running tests. Tests can use the StartScenario amd EndScenario functions on the BCPT Test Context codeunit to log when a scenario that is being measured started and stopped. To simulate user delays, the UserWait() function should be called while moving between fields to make the tests more realistic. The BCPT Test Context codeunit also exposes the parameters that are set on the test codeunit to the test suite. When using [!INCLUDE[prod_short](includes/prod_short.md)], an implicit Commit() is called for every interaction, and that should be simulated in the tests by calling an explicit Commit().
 
 ## See Also
 [Testing the Application Overview](devenv-testing-application.md)  

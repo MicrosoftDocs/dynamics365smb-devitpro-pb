@@ -14,26 +14,26 @@ ms.date: 10/29/2020
 
 [!INCLUDE[cc_data_platform_banner](../includes/cc_data_platform_banner.md)]
 
-This walkthrough describes how to customize an integration between [!INCLUDE[prodshort](../includes/prodshort.md)] and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The walkthrough will guide you through setting up an integration between an employee in [!INCLUDE[prodshort](../includes/prodshort.md)] and a worker in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. 
+This walkthrough describes how to customize an integration between [!INCLUDE[prod_short](../includes/prod_short.md)] and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The walkthrough will guide you through setting up an integration between an employee in [!INCLUDE[prod_short](../includes/prod_short.md)] and a worker in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. 
 
 > [!TIP]
-> Sample code that shows how to integrate an employee in [!INCLUDE[prodshort](../includes/prodshort.md)] and a worker in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] is available in the [BCTech](https://github.com/microsoft/BCTech/tree/master/samples/CDSCustomEmployeeWorkerIntegration) repository.
+> Sample code that shows how to integrate an employee in [!INCLUDE[prod_short](../includes/prod_short.md)] and a worker in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] is available in the [BCTech](https://github.com/microsoft/BCTech/tree/master/samples/CDSCustomEmployeeWorkerIntegration) repository.
 
 ## About this walkthrough
 
 This walkthrough describes how to integrate new and existing extensions with [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. At a high-level, those process involve the following tasks:  
 
-1. Develop an AL extension to integrate tables in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] and [!INCLUDE[prodshort](../includes/prodshort.md)]. For more information, see [Developing Extensions in AL](../developer/devenv-dev-overview.md).
-2. Create an integration table object in [!INCLUDE[prodshort](../includes/prodshort.md)] for mapping a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] table to a [!INCLUDE[prodshort](../includes/prodshort.md)] record type.  
-3. Use a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] integration table as the data source for a page in [!INCLUDE[prodshort](../includes/prodshort.md)] that displays data from [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] table rows.  
-4. Extend a page in [!INCLUDE[prodshort](../includes/prodshort.md)] for coupling and synchronizing table rows in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] with table records in [!INCLUDE[prodshort](../includes/prodshort.md)].  
-5. Use events to create an integration table and a field mapping between a table in [!INCLUDE[prodshort](../includes/prodshort.md)] and an integration table for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].  
-6. Develop another AL extension to extend an existing integration between tables in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] and [!INCLUDE[prodshort](../includes/prodshort.md)]. 
+1. Develop an AL extension to integrate tables in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] and [!INCLUDE[prod_short](../includes/prod_short.md)]. For more information, see [Developing Extensions in AL](../developer/devenv-dev-overview.md).
+2. Create an integration table object in [!INCLUDE[prod_short](../includes/prod_short.md)] for mapping a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] table to a [!INCLUDE[prod_short](../includes/prod_short.md)] record type.  
+3. Use a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] integration table as the data source for a page in [!INCLUDE[prod_short](../includes/prod_short.md)] that displays data from [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] table rows.  
+4. Extend a page in [!INCLUDE[prod_short](../includes/prod_short.md)] for coupling and synchronizing table rows in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] with table records in [!INCLUDE[prod_short](../includes/prod_short.md)].  
+5. Use events to create an integration table and a field mapping between a table in [!INCLUDE[prod_short](../includes/prod_short.md)] and an integration table for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].  
+6. Develop another AL extension to extend an existing integration between tables in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] and [!INCLUDE[prod_short](../includes/prod_short.md)]. 
 7. Create a table extension for an existing integration table object.
 8. Use events to add custom integration field mappings for existing integration table mappings.
 
 > [!NOTE]  
-> The customization in this walkthrough is done entirely in [!INCLUDE[prodshort](../includes/prodshort.md)] online, and does not describe how to modify your [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] solution, for example, by adding or modifying tables and forms.  
+> The customization in this walkthrough is done entirely in [!INCLUDE[prod_short](../includes/prod_short.md)] online, and does not describe how to modify your [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] solution, for example, by adding or modifying tables and forms.  
 
 ## Prerequisites
 
@@ -46,17 +46,17 @@ This walkthrough requires the following:
     > To get the worker table you must install the Talent Core HR solution. For more information, see [Microsoft Dataverse tables](/dynamics365/human-resources/hr-developer-entities).
     - The URL of your [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] environment.
     - The user name and password of a user account that has full permissions to add and modify tables.  
-- [!INCLUDE[prodshort](../includes/prodshort.md)], including the following:  
+- [!INCLUDE[prod_short](../includes/prod_short.md)], including the following:  
     - The CRONUS International Ltd. demonstration data.  <!--need to tell them where they can get the data -->
-    - Integration with [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] is enabled, including the default synchronization setup and a working connection between [!INCLUDE[prodshort](../includes/prodshort.md)] and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].
+    - Integration with [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] is enabled, including the default synchronization setup and a working connection between [!INCLUDE[prod_short](../includes/prod_short.md)] and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].
     - Visual Studio Code with the AL Language extension installed. For more information, see [Getting Started with AL](../developer/devenv-get-started.md) and [AL Language Extension Configuration](../developer/devenv-al-extension-configuration.md). The AL Language extension for Visual Studio is free, and you can download it from [Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al).
 
     > [!NOTE]  
     > Make sure that your integration user has permission to access the Worker table in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].
 
-## Create an integration table in [!INCLUDE[prodshort](../includes/prodshort.md)] for the [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] table  
+## Create an integration table in [!INCLUDE[prod_short](../includes/prod_short.md)] for the [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] table  
 
-To integrate data from a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] table into [!INCLUDE[prodshort](../includes/prodshort.md)], you must create a table object in [!INCLUDE[prodshort](../includes/prodshort.md)] that is based on the [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] table, and then import the new table into the [!INCLUDE[prodshort](../includes/prodshort.md)] database. For this walkthrough we will create a table object that describes the schema for the **Worker** table in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] in the [!INCLUDE[prodshort](../includes/prodshort.md)] database. 
+To integrate data from a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] table into [!INCLUDE[prod_short](../includes/prod_short.md)], you must create a table object in [!INCLUDE[prod_short](../includes/prod_short.md)] that is based on the [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] table, and then import the new table into the [!INCLUDE[prod_short](../includes/prod_short.md)] database. For this walkthrough we will create a table object that describes the schema for the **Worker** table in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] in the [!INCLUDE[prod_short](../includes/prod_short.md)] database. 
 
 > [!NOTE]  
 > The table can contain some or all of the fields from the [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] table. However, if you want to set up bi-directional synchronization you must include all fields in the table.  
@@ -143,9 +143,9 @@ page 50001 "CDS Worker List"
 4. Add the fields from the integration table to display on the page in the `layout` section. 
 
 
-## Enable coupling and synchronization between Worker in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] and in [!INCLUDE[prodshort](../includes/prodshort.md)]
+## Enable coupling and synchronization between Worker in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] and in [!INCLUDE[prod_short](../includes/prod_short.md)]
 
-To connect a [!INCLUDE[prodshort](../includes/prodshort.md)] table record with a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] table row, you create a coupling. A coupling consists of the primary ID, which is typically a GUID, from a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] row and the integration ID, also often a GUID, from [!INCLUDE[prodshort](../includes/prodshort.md)].  
+To connect a [!INCLUDE[prod_short](../includes/prod_short.md)] table record with a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] table row, you create a coupling. A coupling consists of the primary ID, which is typically a GUID, from a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] row and the integration ID, also often a GUID, from [!INCLUDE[prod_short](../includes/prod_short.md)].  
 
 1. Create a new codeunit.
 2. In codeunit **CRM Setup Defaults** (ID 5334), subscribe to the **OnGetCDSTableNo** event, as follows:
@@ -160,7 +160,7 @@ begin
     end;
 end;
 ```
-You can now use the table to create a page for coupling [!INCLUDE[prodshort](../includes/prodshort.md)] records with [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] rows.
+You can now use the table to create a page for coupling [!INCLUDE[prod_short](../includes/prod_short.md)] records with [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] rows.
 
 3. In codeunit **Lookup CRM Tables** (ID 5332), subscribe to the **OnLookupCRMTables** event, as follows:
 
@@ -342,12 +342,12 @@ Be aware that custom uncoupling is running in background as it could modify [!IN
 
 ## Create default integration table mappings and field mappings
 
-For synchronization to work, mappings must exist to associate the table ID and fields of the integration table (in this case, **CDS Worker**) with the table in [!INCLUDE[prodshort](../includes/prodshort.md)] (in this case table **Employee**). There are two types of mapping:  
+For synchronization to work, mappings must exist to associate the table ID and fields of the integration table (in this case, **CDS Worker**) with the table in [!INCLUDE[prod_short](../includes/prod_short.md)] (in this case table **Employee**). There are two types of mapping:  
 
-- **Integration table mapping** - Integration table mapping links the [!INCLUDE[prodshort](../includes/prodshort.md)] table to the integration table for the [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] table.  
-- **Integration field mapping** - Field mapping links a field in a table row in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] with a field in a record in [!INCLUDE[prodshort](../includes/prodshort.md)]. This determines which field in [!INCLUDE[prodshort](../includes/prodshort.md)] corresponds to which field in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. Typically, there are multiple field mappings for a table.  
+- **Integration table mapping** - Integration table mapping links the [!INCLUDE[prod_short](../includes/prod_short.md)] table to the integration table for the [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] table.  
+- **Integration field mapping** - Field mapping links a field in a table row in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] with a field in a record in [!INCLUDE[prod_short](../includes/prod_short.md)]. This determines which field in [!INCLUDE[prod_short](../includes/prod_short.md)] corresponds to which field in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. Typically, there are multiple field mappings for a table.  
 
-In this scenario, we will create integration table and field mappings so that we can synchronize data for a worker in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] with an employee in [!INCLUDE[prodshort](../includes/prodshort.md)]. 
+In this scenario, we will create integration table and field mappings so that we can synchronize data for a worker in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] with an employee in [!INCLUDE[prod_short](../includes/prod_short.md)]. 
 
 ### To create an integration table mapping  
 
@@ -384,7 +384,7 @@ We can create the integration table mapping by subscribing to the **OnAfterReset
     end;
     ``` 
 
-   For each integration table mapping entry, there must be integration field mapping entries to map the fields of the records in the table and the integration table. The next step is to add integration field mappings for each field in the **Employee** table in [!INCLUDE[prodshort](../includes/prodshort.md)] that we want to map to the **Worker** table in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].  
+   For each integration table mapping entry, there must be integration field mapping entries to map the fields of the records in the table and the integration table. The next step is to add integration field mappings for each field in the **Employee** table in [!INCLUDE[prod_short](../includes/prod_short.md)] that we want to map to the **Worker** table in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].  
 
 ### To create integration fields mappings  
 
@@ -413,9 +413,9 @@ To create an integration field mapping, follow these steps:
     > [!TIP]  
     > If a field in one of the tables does not have a corresponding field in the other table, we can use a constant value.
 
-3. After publishing the extension, we can update the default mappings to include our new integration table mapping by opening the **CDS Connection Setup** page in [!INCLUDE[prodshort](../includes/prodshort.md)] and choosing **Use Default Synchronization Setup**.  
+3. After publishing the extension, we can update the default mappings to include our new integration table mapping by opening the **CDS Connection Setup** page in [!INCLUDE[prod_short](../includes/prod_short.md)] and choosing **Use Default Synchronization Setup**.  
 
-Users can now manually synchronize employee records in [!INCLUDE[prodshort](../includes/prodshort.md)] with Worker table rows in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] from the [!INCLUDE[prodshort](../includes/prodshort.md)] client.  
+Users can now manually synchronize employee records in [!INCLUDE[prod_short](../includes/prod_short.md)] with Worker table rows in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] from the [!INCLUDE[prod_short](../includes/prod_short.md)] client.  
 
 > [!TIP]  
 > To learn how to schedule the synchronization by using a job queue entry, examine the code on the **RecreateJobQueueEntry** function in codeunit **CRM Integration Management** (ID 5330) and see how it is called by the integration code for other [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] tables in the codeunit. For more information, see [Scheduling a Synchronization](/dynamics365/business-central/admin-scheduled-synchronization-using-the-synchronization-job-queue-entries).
@@ -463,7 +463,7 @@ During the synchronization process, certain events are published and raised by c
 
 |Event|Description|  
 |-----|-----------|  
-|**OnFindUnCoupledDestinationRecord**|Occurs when the process tries to synchronize an uncoupled record (new record). Use this event to implement custom resolution algorithms for automatic mapping between records. For example, use this event to automatically map records by fields. For an example, see codeunit **CRM Int. Table. Subscriber**, which includes the event subscriber function **CRMTransactionCurrencyFindUncoupledDestinationRecord**. The event resolves [!INCLUDE[prodshort](../includes/prodshort.md)] currency codes with ISO currency codes in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].|  
+|**OnFindUnCoupledDestinationRecord**|Occurs when the process tries to synchronize an uncoupled record (new record). Use this event to implement custom resolution algorithms for automatic mapping between records. For example, use this event to automatically map records by fields. For an example, see codeunit **CRM Int. Table. Subscriber**, which includes the event subscriber function **CRMTransactionCurrencyFindUncoupledDestinationRecord**. The event resolves [!INCLUDE[prod_short](../includes/prod_short.md)] currency codes with ISO currency codes in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].|  
 |**OnBeforeApplyRecordTemplate**|Occurs before applying configuration templates to new records, and can be used to implement algorithms for determining which configuration template to use.<!--point to section about templates.-->|  
 |**OnAfterApplyRecordTemplate**|Occurs after configuration templates are applied to new records, and can be used to change data after configuration templates have been applied.|  
 |**OnBeforeTransferRecordFields**|Occurs before transferring data in modified fields (which are defined in the **Integration Field Mapping** table) from the source table to the destination table. It can be used to validate the source or destination before the data is moved.|  
@@ -490,12 +490,12 @@ For more information about how to subscribe to events, see [Subscribing to Event
 >``` 
 For more information on base [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] tables, see [Data Ownership Models](/dynamics365/business-central/admin-cds-company-concept).
 
-## Create a table extension for an integration table in [!INCLUDE[prodshort](../includes/prodshort.md)]
+## Create a table extension for an integration table in [!INCLUDE[prod_short](../includes/prod_short.md)]
 
 Let us explore another scenario. If we added an **Industry** field to the **Contact** table in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], and now want to include the field in our integration with [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].
 
 > [!TIP]
-> Sample code that customizes an integration between a contact in [!INCLUDE[prodshort](../includes/prodshort.md)] and a contact in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] by adding a new field is available in the [BCTech](https://github.com/microsoft/BCTech/tree/master/samples/CDSCustomContactIntegration) repository. 
+> Sample code that customizes an integration between a contact in [!INCLUDE[prod_short](../includes/prod_short.md)] and a contact in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] by adding a new field is available in the [BCTech](https://github.com/microsoft/BCTech/tree/master/samples/CDSCustomContactIntegration) repository. 
 
 ### To create the integration table extension for table "CRM Contact" (ID 5342)
 
@@ -515,7 +515,7 @@ Let us explore another scenario. If we added an **Industry** field to the **Cont
 
 ## Extend the contact table and page with the Industry field
 
-To synchronize the **Industry** field we need to add the field in [!INCLUDE[prodshort](../includes/prodshort.md)]. The following code example extends table **Contact** and page **Contact Card** with new the field. For example:
+To synchronize the **Industry** field we need to add the field in [!INCLUDE[prod_short](../includes/prod_short.md)]. The following code example extends table **Contact** and page **Contact Card** with new the field. For example:
 
 ```al
 tableextension 60001 ContactExtension extends Contact
@@ -546,7 +546,7 @@ pageextension 60001 ContactCardExtension extends "Contact Card"
 
 ## Add new integration field mapping for Industry
 
-Now that we have the field in both [!INCLUDE[prodshort](../includes/prodshort.md)] and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], we can add a new integration field mapping for it. To do that we will subscribe to the **OnAfterResetContactContactMapping** event in codeunit **CDS Setup Defaults** (ID 7204), as follows:
+Now that we have the field in both [!INCLUDE[prod_short](../includes/prod_short.md)] and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], we can add a new integration field mapping for it. To do that we will subscribe to the **OnAfterResetContactContactMapping** event in codeunit **CDS Setup Defaults** (ID 7204), as follows:
 
 ```al
 [EventSubscriber(ObjectType::Codeunit, Codeunit::"CDS Setup Defaults", 'OnAfterResetContactContactMapping', '', true, true)]

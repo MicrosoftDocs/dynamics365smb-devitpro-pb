@@ -13,7 +13,7 @@ ms.author: jswymer
 ---
 # Telemetry Event IDs in Application Insights
 
-The following tables list the IDs of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry trace events that can be emitted in Azure Application Insights.
+The following tables list the IDs of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry trace events that can be emitted in Azure Application Insights.
 
 ## Application events
 

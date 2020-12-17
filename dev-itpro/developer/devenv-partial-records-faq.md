@@ -13,7 +13,7 @@ author: jswymer
 ---
 # FAQ for Partial Records
 
-This article answers some of the most typical questions about the partial records capability in [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
+This article answers some of the most typical questions about the partial records capability in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 ## Do I need to change any code to keep my solution functional? 
 
@@ -55,9 +55,9 @@ Compared to the time it takes to fetch data, the overhead is insignificant.
 
 ## Can I disable partial records in certain scenarios?
 
-- With [!INCLUDE [prodshort](includes/prodshort.md)] on-premises, you can turn off partial records by using **Enable Partial Records** setting of [!INCLUDE [server](includes/server.md)]. See [Configuring Business Central Server ](../administration/configure-server-instance.md#partialrecords).
+- With [!INCLUDE [prod_short](includes/prod_short.md)] on-premises, you can turn off partial records by using **Enable Partial Records** setting of [!INCLUDE [server](includes/server.md)]. See [Configuring Business Central Server ](../administration/configure-server-instance.md#partialrecords).
 
-- With [!INCLUDE [prodshort](includes/prodshort.md)] online, you can call the SetLoadFields method with no fields. Calling an empty SetLoadFields method will revert the behavior to what it was before [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2020 release wave 2.
+- With [!INCLUDE [prod_short](includes/prod_short.md)] online, you can call the SetLoadFields method with no fields. Calling an empty SetLoadFields method will revert the behavior to what it was before [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 2.
 
 ## See Also
 

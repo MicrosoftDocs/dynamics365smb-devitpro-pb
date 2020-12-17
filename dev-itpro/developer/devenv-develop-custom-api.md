@@ -28,7 +28,7 @@ At a high-level, this process involves the following tasks:
 
 This walkthrough requires the following:  
 
-- [!INCLUDE[prodshort](../includes/prodshort.md)], including the following:  
+- [!INCLUDE[prod_short](../includes/prod_short.md)], including the following:  
   - The CRONUS International Ltd. demonstration data.
   - Visual Studio Code with the AL Language extension installed. For more information, see [Getting Started with AL](../developer/devenv-get-started.md) and [AL Language Extension Configuration](../developer/devenv-al-extension-configuration.md). The AL Language extension for Visual Studio is free, and you can download it from [Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al).
 

@@ -55,7 +55,7 @@ Occurs when a user has been successfully authorized.
 |entitlementSetIds |Specifies the entitlements that the user has in Business Central.|
 |eventId|**RT0003**|
 |guestUser|**true** indicates that the user is a guest user on the tenant.<br />**false** indicates the user belongs to the tenant.|
-|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
+|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 |userType|Specifies whether the user is a **Delegated_admin**, **Internal_Admin**, or  **Normal user**. See [UserType](#usertype).|
 
 ### <a name="usertype"></a> UserType
@@ -108,7 +108,7 @@ Occurs when a user sign-in has failed authorization.
 |environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
 |environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 
-|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod short](../developer/includes/prodshort.md)] telemetry schema. |
+|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod short](../developer/includes/prod_short.md)] telemetry schema. |
 -->
 
 ### <a name="authorizationfailures"></a> Troubleshooting failures
@@ -159,7 +159,7 @@ Occurs when the company has opened successfully.
 |authorizationStatus|**Success**|
 |aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
 |clientType|Specifies the type of client that opened the session, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
-|companyName|Specifies the display name of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] company for which the report was run.|
+|companyName|Specifies the display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company for which the report was run.|
 |component|**Dynamics 365 Business Central Server**.|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
@@ -169,7 +169,7 @@ Occurs when the company has opened successfully.
 |serverExecutionTime|Specifies the amount of time it took the server to open the company**. The time has the format hh:mm:ss.sssssss.<br /><br />Doesn't apply to the **Cancellation report generation** trace. |
 |sqlExecutes|Specifies the number of SQL statements that the report executed**. <br /><br />Doesn't apply to the **Cancellation report generation** trace.|
 |sqlRowsRead|Specifies the number of table rows that were read by the SQL statements**.<br /><br />Doesn't apply to the **Cancellation report generation** trace.|
-|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
+|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 |totalTime|Specifies the amount of time it took to open the company**. The time has the format hh:mm:ss.sssssss.<br /><br />Doesn't apply to the **Cancellation report generation** trace.|
 
 ** From telemetrySchemaVersion **0.6** and onwards, this value also includes the CompanyOpen operation.

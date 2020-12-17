@@ -11,7 +11,7 @@ ms.author: jswymer
 author: jswymer
 ms.service: "dynamics365-business-central"
 ---
-# Technical Upgrade to [!INCLUDE[prolong](../developer/includes/prodlong.md)] 2019 Wave 2
+# Technical Upgrade to [!INCLUDE[prolong](../developer/includes/prod_long.md)] 2019 Wave 2
 
 <!--
 > [!IMPORTANT]  
@@ -19,7 +19,7 @@ ms.service: "dynamics365-business-central"
 >
 > Please note that this topic is a draft in progress. We are still working on adding more details to the steps described in this topic.
 -->
-Use this process when you have a code customized [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application (version 14) that you want to upgrade to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 release wave 2 platform (version 15). This process won't upgrade the application to the latest version. You'll convert the entire application from C/AL to an AL base application extension.
+Use this process when you have a code customized [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application (version 14) that you want to upgrade to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2019 release wave 2 platform (version 15). This process won't upgrade the application to the latest version. You'll convert the entire application from C/AL to an AL base application extension.
 
 <!-- For this scenario, I used a BC 14.0 modified base application on a BC 14.0 server instance, which include some customization on C/AL objects in the base application and a custom extension that modified the Item table. is proecess will convert the entire BC 14 custom application to an Extension on the BC 15 platform.-->
 
@@ -34,7 +34,7 @@ The process for upgrading is similar for a single-tenant and multitenant deploym
 
 1. Upgrade to Business Central Spring 2019 (version 14).
 
-   There are several updates for version 14. When upgrading from Business Central Fall 2018 (version 13) or Dynamics NAV, upgrade to the latest version 14 update that has a compatible version 15 update. For more information, see [[!INCLUDE[prodlong](../developer/includes/prodlong.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
+   There are several updates for version 14. When upgrading from Business Central Fall 2018 (version 13) or Dynamics NAV, upgrade to the latest version 14 update that has a compatible version 15 update. For more information, see [[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
    
    If your solution is already on version 14, then you don't have to upgrade to the latest version 15 update.
 
@@ -58,7 +58,7 @@ The process for upgrading is similar for a single-tenant and multitenant deploym
  For more information, see [Upgrading to Dynamics 365 Business Central On-Premises](upgrading-to-business-central-on-premises.md).
 
 -->
-## Task 1: Install [!INCLUDE[prodlong](../developer/includes/prodlong.md)] 2019 release wave 2 (version 15.0)
+## Task 1: Install [!INCLUDE[prod_long](../developer/includes/prod_long.md)] 2019 release wave 2 (version 15.0)
 
 1. Before you install version 15, it can be useful to create desktop shortcuts to the version 14.0 tools, such as the [!INCLUDE[admintool](../developer/includes/admintool.md)], [!INCLUDE[adminshell](../developer/includes/adminshell.md)], and [!INCLUDE[devshell](../developer/includes/devshell.md)] because the Start menu items for these tools will be replaced with the version 15.0 tools.
 
@@ -369,7 +369,7 @@ Now, your application is fully upgraded to the version 15 platform.
 
     To upgrade the control add-ons, do the following steps:
 
-    1. Open the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client.
+    1. Open the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client.
     2. Search for and open the **Control Add-ins** page.
     3. Choose **Actions** > **Control Add-in Resource** > **Import**.
     4. Locate and select the .zip file for the control add-in and choose **Open**.

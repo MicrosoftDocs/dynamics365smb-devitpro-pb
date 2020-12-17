@@ -12,7 +12,7 @@ ms.date: 11/04/2020
 ---
 # Application Access Management API
 
-As a **Delegated Tenant Admin**, you can manage access to application families available in the service. The application family is [!INCLUDE[prodshort](../developer/includes/prodshort.md)] or [!INCLUDE[embedapp](../developer/includes/embedapp.md)] applications that may be provisioned through the service. 
+As a **Delegated Tenant Admin**, you can manage access to application families available in the service. The application family is [!INCLUDE[prod_short](../developer/includes/prod_short.md)] or [!INCLUDE[embedapp](../developer/includes/embedapp.md)] applications that may be provisioned through the service. 
 
 You can get the list of applications that are available to the customer tenant. From this list you can determine, by setting the access property, for which applications an environment may be created on the tenant.
 

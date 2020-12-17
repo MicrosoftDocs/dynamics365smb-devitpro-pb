@@ -20,7 +20,7 @@ The structure of a page is hierarchical and breaks down in to three sections. Th
 
 When developing a solution for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], you will follow the code layout for a page as shown in the page example below, but for more details on the individual controls and properties that are available, see [Page Property Overview](properties/devenv-page-property-overview.md).
 
-If you want to, for example, add functionality to a page that already exists in [!INCLUDE[prodshort](includes/prodshort.md)], you can create a page extension object that changes an existing page object. For more information, see [Page Extension Object](devenv-page-ext-object.md). Depending on how much you want to change on an existing page, you can also create a page customization object, which offers modifications on actions and layout. For more information, see [Page Customization Object](devenv-page-customization-object.md).
+If you want to, for example, add functionality to a page that already exists in [!INCLUDE[prod_short](includes/prod_short.md)], you can create a page extension object that changes an existing page object. For more information, see [Page Extension Object](devenv-page-ext-object.md). Depending on how much you want to change on an existing page, you can also create a page customization object, which offers modifications on actions and layout. For more information, see [Page Customization Object](devenv-page-customization-object.md).
 
 > [!IMPORTANT]  
 > Only pages with the [Extensible Property](properties/devenv-extensible-property.md) set to **true** can be extended.

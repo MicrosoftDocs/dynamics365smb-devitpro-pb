@@ -40,7 +40,7 @@ When you run a report, the report triggers are called in a specific order.
 
 ## Trigger execution with multiple previews
 
-[!INCLUDE[prodshort](../includes/prodshort.md)] 2020 release wave 2 (version 17) introduced the ability to preview a report multiple times, without closing the request page. With this change, the execution flow of the report triggers is different.
+[!INCLUDE[prod_short](../includes/prod_short.md)] 2020 release wave 2 (version 17) introduced the ability to preview a report multiple times, without closing the request page. With this change, the execution flow of the report triggers is different.
 
 When previewing a report, a new report instance is scheduled to run immediately. This new instance will rerun all of the report triggers, but won't execute any of the request page triggers. 
 
