@@ -76,6 +76,7 @@ The submitted apps will be extracted and investigated following this list:
 
 With the latest version of BcContainerHelper, you can run a single command, which should perform the same validation steps and give you a good indication of whether your apps will pass validation or not:
 
+```powershell
 $validationResults = Run-AlValidation `
     -licenseFile "path/url to license file" `
     -validateCurrent `
@@ -86,6 +87,7 @@ $validationResults = Run-AlValidation `
     -affixes @( "affixes you own (f.ex. fab,con)" ) `
     -supportedCountries @( "supported countries (f.eks. us,ca)" )
 $validationResults | Write-Host -ForegroundColor Red
+```
 
 All array parameters can also be specified as a comma-separated string.
 
