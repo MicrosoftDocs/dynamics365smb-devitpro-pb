@@ -13,7 +13,7 @@ author: jswymer
 
 # Security Auditing in Business Central
 
-[!INCLUDE[prodshort](../developer/includes/prodshort.md)] includes a change log that lets you track all direct modifications that a user makes to data in the database. In addition, the change log always records changes to various system tables, which enables you to track changes to security sub-systems like users and permissions.
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] includes a change log that lets you track all direct modifications that a user makes to data in the database. In addition, the change log always records changes to various system tables, which enables you to track changes to security sub-systems like users and permissions.
 
 Some of the most important tables tracked include: 
  

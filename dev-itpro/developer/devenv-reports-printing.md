@@ -12,7 +12,7 @@ author: jswymer
 ---
 # Developing Printer Extensions in Business Central
 
-This article provides an overview about how to add code that enables [!INCLUDE[prodshort](../developer/includes/prodshort.md)] reports to be sent from the client directly to a web-connected printer, like an email printer or through a cloud printing service.
+This article provides an overview about how to add code that enables [!INCLUDE[prod_short](../developer/includes/prod_short.md)] reports to be sent from the client directly to a web-connected printer, like an email printer or through a cloud printing service.
 
 Without any customized code, there's no way to send a report directly to a printer for printing. The only way to print a report from the client is to download it first (as a .pdf file), and then send it to a printer. But you can create extensions that are designed to send reports to  web-connected printers. For example, if you have an email printer, you create an extension that sends print jobs directly to the printer's email address.
 

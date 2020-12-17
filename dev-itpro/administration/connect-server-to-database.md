@@ -12,7 +12,7 @@ ms.service: "dynamics365-business-central"
 ---
 
 # Connecting a Business Central Server Instance to a Database
-This procedure describes how to use the [!INCLUDE[admintool](../developer/includes/admintool.md)] to change the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database to which a [!INCLUDE[server](../developer/includes/server.md)] instance connects.  
+This procedure describes how to use the [!INCLUDE[admintool](../developer/includes/admintool.md)] to change the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database to which a [!INCLUDE[server](../developer/includes/server.md)] instance connects.  
 
 ### To connect a database to a [!INCLUDE[server](../developer/includes/server.md)] instance  
 
@@ -20,7 +20,7 @@ This procedure describes how to use the [!INCLUDE[admintool](../developer/includ
 
      For more information, see [Business Central Server Administration Tool](Administration-Tool.md).  
 
-2.  Navigate to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] server instance that you want to connect the database to, and then choose the **Edit** button.  
+2.  Navigate to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server instance that you want to connect the database to, and then choose the **Edit** button.  
 
 3.  On the **Database** section, change the following fields to point at the converted database:  
 
@@ -47,6 +47,6 @@ This procedure describes how to use the [!INCLUDE[admintool](../developer/includ
   
 [Upgrading the Data](../upgrade/Upgrading-the-Data.md)  
 [Converting a Database](../upgrade/converting-a-database.md)  
-[Configuring the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Database](configure-sql-server-authentication.md)  
-[Optimizing SQL Server Performance with [!INCLUDE[prodshort](../developer/includes/prodshort.md)]](optimize-sql-server-performance.md)  
+[Configuring the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Database](configure-sql-server-authentication.md)  
+[Optimizing SQL Server Performance with [!INCLUDE[prod_short](../developer/includes/prod_short.md)]](optimize-sql-server-performance.md)  
 [Configuring [!INCLUDE[server](../developer/includes/server.md)] (Database Settings)](configure-server-instance.md#Database)  

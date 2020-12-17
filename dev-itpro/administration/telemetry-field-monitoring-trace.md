@@ -56,14 +56,14 @@ Occurs when the field monitor feature is started or stopped in the company.
 |component|**Dynamics 365 Business Central Server**|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
-|environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md). This dimension isn't  included for [!INCLUDE[prodshort.md](../includes/prodshort.md)] on-premises environments.|
-|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments). <br /><br />This dimension isn't included for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises environments.|
+|environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md). This dimension isn't  included for [!INCLUDE[prod_short.md](../includes/prod_short.md)] on-premises environments.|
+|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments). <br /><br />This dimension isn't included for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises environments.|
 |eventId|**AL0000DD3**|
 |extensionName|Specifies the name of the base application. |
 |extensionId|Specifies the ID of the base extension.|
 |extensionPublisher|Specifies the publisher of the extension.|
 |extensionVersion|Specifies the version of the base application.|
-|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
+|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 
 ## <a name="changed"></a>Sensitive field value has changed
 
@@ -95,14 +95,14 @@ Occurs the value of a monitored field has changed in the company.
 |component|**Dynamics 365 Business Central Server**|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
-|environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md). This dimension isn't  included for [!INCLUDE[prodshort.md](../includes/prodshort.md)] on-premises environments.|
-|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments). <br /><br />This dimension isn't included for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises.|
+|environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md). This dimension isn't  included for [!INCLUDE[prod_short.md](../includes/prod_short.md)] on-premises environments.|
+|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments). <br /><br />This dimension isn't included for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises.|
 |eventId|**AL0000CTE**|
 |extensionName|Specifies the name of the base application. |
 |extensionId|Specifies the ID of the base extension.|
 |extensionPublisher|Specifies the publisher of the extension.|
 |extensionVersion|Specifies the version of the base application.|
-|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
+|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 
 > [!NOTE]
 > Changes to fields in the following tables are always logged: 

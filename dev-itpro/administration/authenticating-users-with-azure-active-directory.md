@@ -10,17 +10,17 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
-# Authenticating [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Users with Azure Active Directory
+# Authenticating [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Users with Azure Active Directory
 
-Azure Active Directory \(Azure AD\) is a cloud service that provides identity and access capabilities, such as for applications on Microsoft Azure, Microsoft 365, and for applications that install on-premises. If the [!INCLUDE[server](../developer/includes/server.md)] instance is configured to use the AccessControlService credential type, you can associate the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] user accounts with Azure AD accounts (or Microsoft 365 account) that users use to access the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)], Microsoft 365, and SharePoint.  
+Azure Active Directory \(Azure AD\) is a cloud service that provides identity and access capabilities, such as for applications on Microsoft Azure, Microsoft 365, and for applications that install on-premises. If the [!INCLUDE[server](../developer/includes/server.md)] instance is configured to use the AccessControlService credential type, you can associate the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] user accounts with Azure AD accounts (or Microsoft 365 account) that users use to access the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)], Microsoft 365, and SharePoint.  
 
- For example, your users access a website, such as a SharePoint site. From there, they have single sign-on access to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] because you've configured [!INCLUDE[prodshort](../developer/includes/prodshort.md)] for Azure AD.  
+ For example, your users access a website, such as a SharePoint site. From there, they have single sign-on access to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] because you've configured [!INCLUDE[prod_short](../developer/includes/prod_short.md)] for Azure AD.  
 
-## Azure AD and [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
+## Azure AD and [!INCLUDE[prod_short](../developer/includes/prod_short.md)]
 
-You use the Azure AD service to associate your existing Microsoft account with your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] user account and achieve single sign-on between the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] and Microsoft 365. Also, if you use [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in an app for SharePoint, you can use Azure AD to achieve single sign-on between the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] and SharePoint. You can still host the [!INCLUDE[server](../developer/includes/server.md)] instance and [!INCLUDE[webserver](../developer/includes/webserver.md)] on-premises. You don't have to deploy [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on Azure to use Azure AD for user authentication.
+You use the Azure AD service to associate your existing Microsoft account with your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] user account and achieve single sign-on between the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] and Microsoft 365. Also, if you use [!INCLUDE[prod_short](../developer/includes/prod_short.md)] in an app for SharePoint, you can use Azure AD to achieve single sign-on between the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] and SharePoint. You can still host the [!INCLUDE[server](../developer/includes/server.md)] instance and [!INCLUDE[webserver](../developer/includes/webserver.md)] on-premises. You don't have to deploy [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on Azure to use Azure AD for user authentication.
 
- The following sections describe the tasks involved in setting up Azure AD authentication for authenticating [!INCLUDE[prodshort](../developer/includes/prodshort.md)] users.
+ The following sections describe the tasks involved in setting up Azure AD authentication for authenticating [!INCLUDE[prod_short](../developer/includes/prod_short.md)] users.
 
 ## Preparation
 
@@ -32,11 +32,11 @@ You use the Azure AD service to associate your existing Microsoft account with y
 
 ## Task 1: Create an Azure AD Tenant
 
-To get started, you need an Azure AD tenant where you can register and manage apps, like [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. 
+To get started, you need an Azure AD tenant where you can register and manage apps, like [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. 
 
 - If you have a Microsoft 365 subscription that is based on a domain such as *solutions\.onmicrosoft\.com*, you are already using Azure AD because the Microsoft 365 user accounts are based on Azure AD. So, there is nothing more to do in this task.
 
-<!--    Then, if you add the email addresses for those user accounts to the user accounts in [!INCLUDE[prodshort](../developer/includes/prodshort.md)].  -->
+<!--    Then, if you add the email addresses for those user accounts to the user accounts in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].  -->
 
 - If you want to sign up for a Microsoft 365 plan, you can use a plan such as Microsoft 365 Enterprise E1 as your test site, or sign up for a trial developer plan. A trial plan includes an administrative account that you will use to access the Azure management portal. For example, if your Microsoft 365 site is *solutions.onmicrosoft.com*, your administrative account can be *admin\@solutions\.onmicrosoft\.com*. For more information, see [Select a Microsoft 365 plan for business](https://go.microsoft.com/fwlink/?LinkId=309050).  
 
@@ -51,7 +51,7 @@ To get started, you need an Azure AD tenant where you can register and manage ap
     
         When you create an Azure Active Directory in the Azure portal, you specify an initial domain name that identifies your Azure AD tenant, such as *solutions.onmicrosoft.com* or *cronusinternationltd.onmicrosoft.com*. You will use the domain name when you add users to your Azure AD and when you configure the [!INCLUDE[server](../developer/includes/server.md)] instance. In the steps that follow, this is referred to as the Azure AD Tenant ID. 
     
-    3. When you have created the Azure AD tenant, you must add users. For more information, see [Quickstart: Add new users to Azure Active Directory](https://go.microsoft.com/fwlink/?LinkId=317435). Later, you will have to map the users in Azure AD to your users in [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
+    3. When you have created the Azure AD tenant, you must add users. For more information, see [Quickstart: Add new users to Azure Active Directory](https://go.microsoft.com/fwlink/?LinkId=317435). Later, you will have to map the users in Azure AD to your users in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 > [!IMPORTANT]  
 > For security reasons, we recommend that you limit the lifetime of the access token to 10 minutes as described in the [To set the access token lifetime](#to-set-the-access-token-lifetime) section that follows.
@@ -67,9 +67,9 @@ As a reference, see the prerequisites section in the following article: [Configu
 5. For each `Id` that is the result of above command, run `    Remove-AzureADPolicy -Id {Guid}`. 
 6. Set the token lifetime to 10 minutes by running the following command: `New-AzureADPolicy -Definition @('{"TokenLifetimePolicy":{"Version":1, "AccessTokenLifetime":"0.00:10:00"}}') -DisplayName "OrganizationDefaultPolicyScenario" -IsOrganizationDefault $true -Type "TokenLifetimePolicy"`.
 
-## Task 2: Register an Application for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to the Azure AD Tenant  
+## Task 2: Register an Application for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] to the Azure AD Tenant  
 
-Register your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution as an application in Azure AD tenant. Then, you can choose to make it available to other Azure AD tenants.  
+Register your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] solution as an application in Azure AD tenant. Then, you can choose to make it available to other Azure AD tenants.  
 
 1. You register an application by using the [Azure portal](https://portal.azure.com). To register the application, follow the guidelines at [Register your application with your Azure Active Directory tenant](/azure/active-directory/active-directory-app-registration).
 
@@ -96,20 +96,20 @@ Register your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution
 |Name|The name of your application as it will display to your users, such as **Business Central App by My Solutions**.|
 |Type|Choose **Web app/API**.|
 |Sign-on URL (also referred to as App URL and Home page)|The URI for signing on to the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)], which has the format `https://<domain or computer name>/<webserver-instance>`, such as `https://cronusinternationltd.onmicrosoft.com/BC150` or `https://MyBcWebServer/BC150`.|
-|App ID URI|The URI to a domain in your Azure AD tenant. By default, the application is assigned an App ID URI that has the format `https://<domain>/<guid>`, such as https://cronusinternationltd.onmicrosoft.com/70b20a51-46b7-4290-8686-b79ec90379f6. You can keep this value or change the `<guid>` portion to suit, for example, `https://cronusinternationltd.onmicrosoft.com/businesscentral`. You can see this in Setting Properties. <BR /><BR />**Important:**  The App ID URI must be unique within the Azure AD tenant. However, if you want to share your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution with other Azure AD tenants, the App ID URI must be unique in Azure AD. <br /><br /> This URI is appended to the **WS-Federation Login Endpoint** setting in the [!INCLUDE[server](../developer/includes/server.md)] configuration and **ACSURI** setting in the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] configuration. Additionally, in the [!INCLUDE[server](../developer/includes/server.md)] configuration, it must be specified in the **Azure AD App ID URI** setting for SOAP and OData web services.|
+|App ID URI|The URI to a domain in your Azure AD tenant. By default, the application is assigned an App ID URI that has the format `https://<domain>/<guid>`, such as https://cronusinternationltd.onmicrosoft.com/70b20a51-46b7-4290-8686-b79ec90379f6. You can keep this value or change the `<guid>` portion to suit, for example, `https://cronusinternationltd.onmicrosoft.com/businesscentral`. You can see this in Setting Properties. <BR /><BR />**Important:**  The App ID URI must be unique within the Azure AD tenant. However, if you want to share your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] solution with other Azure AD tenants, the App ID URI must be unique in Azure AD. <br /><br /> This URI is appended to the **WS-Federation Login Endpoint** setting in the [!INCLUDE[server](../developer/includes/server.md)] configuration and **ACSURI** setting in the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] configuration. Additionally, in the [!INCLUDE[server](../developer/includes/server.md)] configuration, it must be specified in the **Azure AD App ID URI** setting for SOAP and OData web services.|
 |Reply URL|Add a reply URL for the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] and the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)]. <br /><br />The reply URL for the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] is the same as the **Sign-on URL**, except it includes `/SignIn` at the end, such as `https://cronusinternationltd.onmicrosoft.com/BC150/SignIn`. **Important** The portion of the reply URL after the domain name (in this case `BC150/SignIn`) is case-sensitive, so make sure that the web server instance name matches the case of the web server instance name as it is defined on IIS for your installation. <br /><br /> The reply URL for the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] is the URL for opening the client, such as `https://dynamicsnavwinclient`.|
 
 -->
 
-Your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution is now registered in your Azure AD tenant. To complete the steps that follow, you'll need the value of domain (or **Directory (tenant) ID**), **Redirect URI** and **Application ID URI**. So, make a note of or copy the values for these settings for later use. You can view the settings in the Azure portal by selecting **Overview** for the registered application.
+Your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] solution is now registered in your Azure AD tenant. To complete the steps that follow, you'll need the value of domain (or **Directory (tenant) ID**), **Redirect URI** and **Application ID URI**. So, make a note of or copy the values for these settings for later use. You can view the settings in the Azure portal by selecting **Overview** for the registered application.
 
 > [!NOTE]
 > The guidelines for the Azure Portal in this article might not reflect the current user interface of the Azure Portal. Please refer to the Azure Portal documentation for the latest instructions.
 <!-- 
-Next, you must configure the application to be externally available. Also, you can change the logo to reflect the functionality of the application. From the overview page for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] as an application, you can change configuration settings by choosing **Settings** in new portal). Then, save your changes.
+Next, you must configure the application to be externally available. Also, you can change the logo to reflect the functionality of the application. From the overview page for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] as an application, you can change configuration settings by choosing **Settings** in new portal). Then, save your changes.
 -->
 
-## Task 2a: (SharePoint app only) Make [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Available to Azure AD Tenants
+## Task 2a: (SharePoint app only) Make [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Available to Azure AD Tenants
 
 In the overview page for the application, the **URL for Granting Access** field contains a URL that you can send to users in other Azure AD tenants. Then, when they choose the link, a page displays where they must agree to trust the application. If they accept, the app is added to their SharePoint site.  
 
@@ -119,11 +119,11 @@ You can configure the [!INCLUDE[server](../developer/includes/server.md)] instan
 
 1. Configure the [!INCLUDE[server](../developer/includes/server.md)] instances that must support Azure AD to use `AccessControlService` as the credential type.
 
-    The `AccessControlService` credential type for the [!INCLUDE[server](../developer/includes/server.md)] instance includes support for Azure AD so that you can achieve single sign-on between Microsoft 365 and [!INCLUDE[prodshort](../developer/includes/prodshort.md)].  
+    The `AccessControlService` credential type for the [!INCLUDE[server](../developer/includes/server.md)] instance includes support for Azure AD so that you can achieve single sign-on between Microsoft 365 and [!INCLUDE[prod_short](../developer/includes/prod_short.md)].  
 
 2. Specify the location of the federation metadata. For example, in the [!INCLUDE[admintool](../developer/includes/admintool.md)], on the **Azure Active Directory** tab, set the **WS-Federation Metadata Location** field.
 
-    The federation metadata is used to establish a trust relationship between [!INCLUDE[prodshort](../developer/includes/prodshort.md)] and Azure AD. 
+    The federation metadata is used to establish a trust relationship between [!INCLUDE[prod_short](../developer/includes/prod_short.md)] and Azure AD. 
     
     Azure AD publishes federation metadata at:
     
@@ -139,7 +139,7 @@ You can configure the [!INCLUDE[server](../developer/includes/server.md)] instan
 
 3. Specify the WS-federation login endpoint.
 
-    The WS-federation login endpoint is the URL of the sign-on page that [!INCLUDE[prodshort](../developer/includes/prodshort.md)] redirects to when users sign in from a client. Specify a URL in the following format:
+    The WS-federation login endpoint is the URL of the sign-on page that [!INCLUDE[prod_short](../developer/includes/prod_short.md)] redirects to when users sign in from a client. Specify a URL in the following format:
 
     ```
     https://login.microsoftonline.com/<AAD TENANT ID>/wsfed?wa=wsignin1.0%26wtrealm=<Application ID URI>%26wreply=<Redirect URL>
@@ -155,9 +155,9 @@ You can configure the [!INCLUDE[server](../developer/includes/server.md)] instan
     
     |Parameter|Description|
     |-|-|-|
-    |`<AAD TENANT ID>`|The ID of the Azure AD tenant, for example `CRONUSInternationLtd.onmicrosoft.com`. To ensure that [!INCLUDE[prodshort](../developer/includes/prodshort.md)] redirects to the right sign-in page, substitute `<AAD TENANT ID>` with a value according to the following:<ul><li>If the [!INCLUDE[server](../developer/includes/server.md)] instance is configured for as a single tenant server instance, the value is typically the domain name for the Azure AD tenant, and the URL is similar to the example above.</li><li>If the [!INCLUDE[server](../developer/includes/server.md)] instance is configured for multitenancy and each [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant corresponds to an Azure AD tenant that has a service principal, use `{AADTENANTID}` as the value. For example, `https://login.microsoftonline.com/{AADTENANTID}/wsfed?wa=wsignin1.0%26wtrealm=...%26wreply=...`. The [!INCLUDE[server](../developer/includes/server.md)] instance will automatically replace `{AADTENANTID}` with the correct Azure AD tenant.</li><li>If the [!INCLUDE[server](../developer/includes/server.md)] instance is configured as a multitenant instance and the corresponding [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application in Azure AD has external access and configured as a multitenant application, substitute [AAD TENANT ID] with `common`. Tenant ID parameter that is specified when mounting a tenant replaces the placeholder.</li>|
-    |`<Application ID URI>`|The ID that was assigned to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application when it was registered in Azure AD, for example `api://70b20a51-46b7-4290-8686-b79ec90379f6` or `https://cronusinternationltd.onmicrosoft.com/businesscentral`.|
-    |`<Redirect URL>`|The redirect URL that was assigned to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application when it was registered in the Azure AD tenant. This parameter must point to the SignIn page of the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]. Make sure it exactly matches the **Redirect URL** that was configured on the application in Azure AD.<br /><br />`https://cronusinternationltd.onmicrosoft.com/BC150/SignIn`<br /><br />The `wreply` parameter is optional. The `wreply` query parameter tells the Azure AD authentication service where to send the authentication token. If you do not specify the `wreply` parameter, it will be deducted from the URL in the browser.|
+    |`<AAD TENANT ID>`|The ID of the Azure AD tenant, for example `CRONUSInternationLtd.onmicrosoft.com`. To ensure that [!INCLUDE[prod_short](../developer/includes/prod_short.md)] redirects to the right sign-in page, substitute `<AAD TENANT ID>` with a value according to the following:<ul><li>If the [!INCLUDE[server](../developer/includes/server.md)] instance is configured for as a single tenant server instance, the value is typically the domain name for the Azure AD tenant, and the URL is similar to the example above.</li><li>If the [!INCLUDE[server](../developer/includes/server.md)] instance is configured for multitenancy and each [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant corresponds to an Azure AD tenant that has a service principal, use `{AADTENANTID}` as the value. For example, `https://login.microsoftonline.com/{AADTENANTID}/wsfed?wa=wsignin1.0%26wtrealm=...%26wreply=...`. The [!INCLUDE[server](../developer/includes/server.md)] instance will automatically replace `{AADTENANTID}` with the correct Azure AD tenant.</li><li>If the [!INCLUDE[server](../developer/includes/server.md)] instance is configured as a multitenant instance and the corresponding [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application in Azure AD has external access and configured as a multitenant application, substitute [AAD TENANT ID] with `common`. Tenant ID parameter that is specified when mounting a tenant replaces the placeholder.</li>|
+    |`<Application ID URI>`|The ID that was assigned to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application when it was registered in Azure AD, for example `api://70b20a51-46b7-4290-8686-b79ec90379f6` or `https://cronusinternationltd.onmicrosoft.com/businesscentral`.|
+    |`<Redirect URL>`|The redirect URL that was assigned to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application when it was registered in the Azure AD tenant. This parameter must point to the SignIn page of the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]. Make sure it exactly matches the **Redirect URL** that was configured on the application in Azure AD.<br /><br />`https://cronusinternationltd.onmicrosoft.com/BC150/SignIn`<br /><br />The `wreply` parameter is optional. The `wreply` query parameter tells the Azure AD authentication service where to send the authentication token. If you do not specify the `wreply` parameter, it will be deducted from the URL in the browser.|
 
    > [!IMPORTANT]
    >The query string parameter must be URI-encoded. This means, for example, use "%26" instead of "&".
@@ -166,7 +166,7 @@ You can configure the [!INCLUDE[server](../developer/includes/server.md)] instan
 
     If you are using the [!INCLUDE[admintool](../developer/includes/admintool.md)], select the **Disable Token-Signing Certificate Validation** check box. If you are using the [Set-NAVServerConfiguration cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) or modifying the CustomSettings.config file directly, set `DisableTokenSigningCertificateValidation` to `true`.
 
-5. To configure SOAP and OData web services for Azure AD authentication, specify the App ID URI that is registered for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in the Azure AD.
+5. To configure SOAP and OData web services for Azure AD authentication, specify the App ID URI that is registered for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] in the Azure AD.
 
     In the [!INCLUDE[admintool](../developer/includes/admintool.md)], you do this by setting the **Azure AD App URI** field on the **Azure Active Directory** tab. The App ID URI is typically the same as the *wtrealm* parameter value of the **WS-Federation Endpoint** setting in the [!INCLUDE[server](../developer/includes/server.md)] configuration and the **ACSUri** setting in the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] configuration. 
 
@@ -209,9 +209,9 @@ For example:
 ```
 You configure the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] by modifying the ClientUserSettings.config file. <!-- For more information, see [Configuring the Dynamics NAV Windows Client](configuring-the-windows-client.md#afterset).-->
 
-## Task 6: Associate the Azure AD Accounts with the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] User Accounts
+## Task 6: Associate the Azure AD Accounts with the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] User Accounts
   
-Each user in your Azure AD tenant that will access [!INCLUDE[prodshort](../developer/includes/prodshort.md)] must be set up with an account in [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
+Each user in your Azure AD tenant that will access [!INCLUDE[prod_short](../developer/includes/prod_short.md)] must be set up with an account in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 1. In the client, use the **Users** page to create new or modify existing users.
 
@@ -224,9 +224,9 @@ Each user in your Azure AD tenant that will access [!INCLUDE[prodshort](../devel
 For more information about how to set up users, see [Managing Users and Permissions](/dynamics365/business-central/ui-how-users-permissions).
 
 > [!IMPORTANT]  
->  The single sign-on means that users are still signed in to Azure AD when they sign out from [!INCLUDE[prodshort](../developer/includes/prodshort.md)], unless they close all browser windows. However, if a user selected the **Keep me signed in** field when they signed in, they are still signed in when they close the browser window. To fully sign out from Azure AD, the user must sign out from each application that uses Azure AD, including [!INCLUDE[prodshort](../developer/includes/prodshort.md)] and SharePoint.  
+>  The single sign-on means that users are still signed in to Azure AD when they sign out from [!INCLUDE[prod_short](../developer/includes/prod_short.md)], unless they close all browser windows. However, if a user selected the **Keep me signed in** field when they signed in, they are still signed in when they close the browser window. To fully sign out from Azure AD, the user must sign out from each application that uses Azure AD, including [!INCLUDE[prod_short](../developer/includes/prod_short.md)] and SharePoint.  
 >   
->  We recommend that you provide guidance to your users for signing out of their account when they're done, so that you can keep your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] deployment more secure.  
+>  We recommend that you provide guidance to your users for signing out of their account when they're done, so that you can keep your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] deployment more secure.  
 
 ### Web service accounts
 

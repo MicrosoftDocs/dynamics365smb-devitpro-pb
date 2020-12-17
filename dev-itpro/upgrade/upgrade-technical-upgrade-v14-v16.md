@@ -13,7 +13,7 @@ ms.service: "dynamics365-business-central"
 ---
 # Technical Upgrade From Version 14 to Version 16
 
-Use this process when you have a code customized [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application (version 14) that you want to upgrade to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2020 release wave 1 platform (version 16). This process won't upgrade the application to the latest version. You'll convert the entire application from C/AL to an AL base application extension.
+Use this process when you have a code customized [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application (version 14) that you want to upgrade to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 1 platform (version 16). This process won't upgrade the application to the latest version. You'll convert the entire application from C/AL to an AL base application extension.
 
  ![Upgrade on customized Business Central application](../developer/media/bc14-to-16-technical-upgrade-unmodified-app.png "Upgrade on customize Business Central application")  
  
@@ -25,7 +25,7 @@ The process for upgrading is similar for a single-tenant and multitenant deploym
 
 1. Upgrade to Business Central Spring 2019 (version 14).
 
-   There are several updates for version 14. When upgrading from Business Central Fall 2018 (version 13) or Dynamics NAV, upgrade to the latest version 14 update that has a compatible version 16 update. For more information, see [[!INCLUDE[prodlong](../developer/includes/prodlong.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
+   There are several updates for version 14. When upgrading from Business Central Fall 2018 (version 13) or Dynamics NAV, upgrade to the latest version 14 update that has a compatible version 16 update. For more information, see [[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
    
    If your solution is already on version 14, then you don't have to upgrade to the latest version 16 update.
 
@@ -317,7 +317,7 @@ The [!INCLUDE[server](../developer/includes/server.md)] installation includes ne
 
 To upgrade the control add-ins from the client, do the following steps:
 
-1. Open the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client.
+1. Open the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client.
 2. Search for and open the **Control Add-ins** page.
 3. Choose **Actions** > **Control Add-in Resource** > **Import**.
 4. Locate and select the .zip file for the control add-in and choose **Open**.

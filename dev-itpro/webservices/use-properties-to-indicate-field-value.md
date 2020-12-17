@@ -16,7 +16,7 @@ When you set a field to a value in the code for a web service client and then se
   
 ## Using Properties to Indicate the Presence of Values
 
-The problem occurs because of the way proxies are auto-generated and the way the .NET Framework handles values in XML documents that are exchanged between the web service and the client. The issue is not specific to [!INCLUDE[prodshort](../developer/includes/prodshort.md)].  
+The problem occurs because of the way proxies are auto-generated and the way the .NET Framework handles values in XML documents that are exchanged between the web service and the client. The issue is not specific to [!INCLUDE[prod_short](../developer/includes/prod_short.md)].  
   
  For example, the following code shows the schema for the two fields on this Customer Card web service:  
   
@@ -25,7 +25,7 @@ The problem occurs because of the way proxies are auto-generated and the way the
 <xsd:element minOccurs="0" maxOccurs="1" name="Salesperson_Code" type="xsd:string" />   
 ```  
   
- Both fields are optional, which means that they do not have to be present in the XML document. One field is declared as a Decimal data type in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. The other field is a string because it is declared as a Text data type in [!INCLUDE[prodshort](../developer/includes/prodshort.md)].  
+ Both fields are optional, which means that they do not have to be present in the XML document. One field is declared as a Decimal data type in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. The other field is a string because it is declared as a Text data type in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].  
   
  If both values are present, then the XML document should contain the following elements:  
   

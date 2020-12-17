@@ -13,7 +13,7 @@ ms.service: "dynamics365-business-central"
 ---
 # Technical Upgrade from Version 16 to Version 17
 
-Use this process to upgrade from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2020 release wave 1 (version 16) to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2020 release wave 2 platform (version 17). This process won't upgrade the application to the latest version.
+Use this process to upgrade from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 1 (version 16) to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 2 platform (version 17). This process won't upgrade the application to the latest version.
 
  ![Upgrade on customized Business Central application](../developer/media/bc16-to-17-technical-upgrade-unmodified-app.png "Upgrade on customize Business Central application")   
 
@@ -25,7 +25,7 @@ The process for upgrading is similar for a single-tenant and multitenant deploym
 
 1. Your version 16 platform is compatible with version 17.
 
-    There are several updates for version 16. The updates have a compatible version 17 update. For more information, see [[!INCLUDE[prodlong](../developer/includes/prodlong.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md). For example, if your solution is currently running 16.6, you can't upgrade to 17.0. You must wait until 17.1 is available.  
+    There are several updates for version 16. The updates have a compatible version 17 update. For more information, see [[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md). For example, if your solution is currently running 16.6, you can't upgrade to 17.0. You must wait until 17.1 is available.  
 
 2. Disable data encryption.
 
@@ -150,9 +150,9 @@ When you installed version 17 in **Task 1**, a version 17 [!INCLUDE[server](../d
     Restart-NAVServerInstance -ServerInstance <BC17 server instance>
     ```
 
-## <a name="UploadLicense"></a> Task 6: Upload [!INCLUDE[prodshort](../developer/includes/prodshort.md)] partner license  
+## <a name="UploadLicense"></a> Task 6: Upload [!INCLUDE[prod_short](../developer/includes/prod_short.md)] partner license  
 
-If you have a new [!INCLUDE[prodshort](../developer/includes/prodshort.md)] partner license, make sure that it has been uploaded to the database. To upload the license, use the [Import-NAVServerLicense cmdlet](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense): 
+If you have a new [!INCLUDE[prod_short](../developer/includes/prod_short.md)] partner license, make sure that it has been uploaded to the database. To upload the license, use the [Import-NAVServerLicense cmdlet](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense): 
 
 ```powershell
 Import-NAVServerLicense -ServerInstance <BC17 server instance> -LicenseFile "<path to the license>"
@@ -263,7 +263,7 @@ The [!INCLUDE[server](../developer/includes/server.md)] installation includes ne
 
 To upgrade the control add-ins, do the following steps:
 
-1. Open the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client.
+1. Open the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client.
 2. Search for and open the **Control Add-ins** page.
 3. Choose **Actions** > **Control Add-in Resource** > **Import**.
 4. Locate and select the .zip file for the control add-in and choose **Open**.

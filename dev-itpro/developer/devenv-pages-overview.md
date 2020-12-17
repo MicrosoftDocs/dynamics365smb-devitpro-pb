@@ -92,7 +92,7 @@ Creating actions can include adding activity buttons/cues to a page, configuring
 
 ## Adding Help to the page objects
 
-The [!INCLUDE [prodshort](includes/prodshort.md)] user assistance model expects your solution to include tooltips and links to context-sensitive Help. For more information, see [User Assistance Model](../user-assistance.md).  
+The [!INCLUDE [prod_short](includes/prod_short.md)] user assistance model expects your solution to include tooltips and links to context-sensitive Help. For more information, see [User Assistance Model](../user-assistance.md).  
 
 ### Context-sensitive Help
 

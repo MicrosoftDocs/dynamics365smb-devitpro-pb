@@ -43,7 +43,7 @@ For more information about installing and getting started with Windows PowerShel
   
 ##  <a name="EnableLog"></a> To enable the Debug Logs from Windows PowerShell 
 
-There are two debug logs for [!INCLUDE[prodshort](../developer/includes/prodshort.md)]: **Microsoft-DynamicsNAV-Server/Debug** and **Microsoft-DynamicsNav-Common/Debug**.
+There are two debug logs for [!INCLUDE[prod_short](../developer/includes/prod_short.md)]: **Microsoft-DynamicsNAV-Server/Debug** and **Microsoft-DynamicsNav-Common/Debug**.
   
 1.  On the computer that is running [!INCLUDE[server](../developer/includes/server.md)], start Window PowerShell as an administrator.  
   

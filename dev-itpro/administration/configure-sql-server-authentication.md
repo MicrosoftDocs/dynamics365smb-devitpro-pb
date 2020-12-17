@@ -10,14 +10,14 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
-# Configuring the [!INCLUDE[!INCLUDE[prodshort](../developer/includes/prodshort.md)] Database
+# Configuring the [!INCLUDE[!INCLUDE[prod_short](../developer/includes/prod_short.md)] Database
 
-For a [!INCLUDE[server](../developer/includes/server.md)] instance to connect to and access a database in SQL Server, the server instance must be authenticated by the database. As in SQL Server, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] supports two authentication modes for database communication: Windows Authentication and SQL Server Authentication. When you set up [!INCLUDE[prodshort](../developer/includes/prodshort.md)], you must ensure that database authentication is configured correctly on both the server instance and database, otherwise the server instance will not be able to connect to the database. By default, Windows Authentication is configured on the server instance and database. With Windows Authentication the [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] does the work for you.
+For a [!INCLUDE[server](../developer/includes/server.md)] instance to connect to and access a database in SQL Server, the server instance must be authenticated by the database. As in SQL Server, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] supports two authentication modes for database communication: Windows Authentication and SQL Server Authentication. When you set up [!INCLUDE[prod_short](../developer/includes/prod_short.md)], you must ensure that database authentication is configured correctly on both the server instance and database, otherwise the server instance will not be able to connect to the database. By default, Windows Authentication is configured on the server instance and database. With Windows Authentication the [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] does the work for you.
 
 This article describes how to configure SQL Server Authentication. You perform the configuration in two places: on the databases in SQL Server and on the [!INCLUDE[server](../developer/includes/server.md)] instance. The procedure is different when the [!INCLUDE[server](../developer/includes/server.md)] instance is configured as a multitenant server instance than when it is not a multitenant server instance.
   
 ##  <a name="SetEncryptionKey"></a> Set Up an Encryption Key  
- When using SQL Server authentication, [!INCLUDE[!INCLUDE[prodshort](../developer/includes/prodshort.md)] requires an encryption key to encrypt the credentials \(user name and password\) that the [!INCLUDE[server](../developer/includes/server.md)] instance uses to connect to the [!INCLUDE[!INCLUDE[prodshort](../developer/includes/prodshort.md)] database in SQL Server. The encryption key must be installed on the computer where the [!INCLUDE[server](../developer/includes/server.md)] is installed and also in the database in SQL Server. In a multitenant deployment, the encryption key must be installed in the application database.  
+ When using SQL Server authentication, [!INCLUDE[!INCLUDE[prod_short](../developer/includes/prod_short.md)] requires an encryption key to encrypt the credentials \(user name and password\) that the [!INCLUDE[server](../developer/includes/server.md)] instance uses to connect to the [!INCLUDE[!INCLUDE[prod_short](../developer/includes/prod_short.md)] database in SQL Server. The encryption key must be installed on the computer where the [!INCLUDE[server](../developer/includes/server.md)] is installed and also in the database in SQL Server. In a multitenant deployment, the encryption key must be installed in the application database.  
   
  To set up an encryption key, you can use one of the following methods:  
   
@@ -36,14 +36,14 @@ This article describes how to configure SQL Server Authentication. You perform t
 On the computer running the [!INCLUDE[server](../developer/includes/server.md)]  instance, the encryption key file has the name [!INCLUDE[serverinstance](../developer/includes/serverinstance.md)].key and is stored in the `%systemroot%\ProgramData\Microsoft\Microsoft Dynamics NAV\[version]\Server\Keys`. In the database, the encryption key is registered in the dbo.$ndo$publicencryptionkey table. In a multitenant deployment, the encryption key is registered in the application database.
   
 ##  <a name="ConfigSQL"></a> Configure SQL Authentication on the Database  
- This section describes how to configure a [!INCLUDE[!INCLUDE[prodshort](../developer/includes/prodshort.md)] database to use SQL Server Authentication with a [!INCLUDE[server](../developer/includes/server.md)] instance. You can complete the steps in this procedure by using SQL Server Management Studio or Transact-SQL.  
+ This section describes how to configure a [!INCLUDE[!INCLUDE[prod_short](../developer/includes/prod_short.md)] database to use SQL Server Authentication with a [!INCLUDE[server](../developer/includes/server.md)] instance. You can complete the steps in this procedure by using SQL Server Management Studio or Transact-SQL.  
   
 > [!IMPORTANT]  
 >  In a deployment where the [!INCLUDE[server](../developer/includes/server.md)] instance is configured as a multitenant server instance, you must complete the following procedure on the application database and tenant database.  
   
 ### Configure SQL Server Authentication on the database in SQL Server  
   
-1.  Configure the SQL Server instance \(Database Engine\) that hosts the [!INCLUDE[!INCLUDE[prodshort](../developer/includes/prodshort.md)] database to use SQL Server Authentication.  
+1.  Configure the SQL Server instance \(Database Engine\) that hosts the [!INCLUDE[!INCLUDE[prod_short](../developer/includes/prod_short.md)] database to use SQL Server Authentication.  
   
      To use SQL Server authentication, you configure the database instance to mixed authentication mode \(SQL Server and Windows Authentication\). For more information, see [Change Server Authentication Mode](https://technet.microsoft.com/library/ms188670.aspx).  
   
@@ -51,12 +51,12 @@ On the computer running the [!INCLUDE[server](../developer/includes/server.md)] 
   
      For more information, see [Create a Login](https://msdn.microsoft.com/library/aa337562.aspx).  
   
-3.  Map the login to a user in the [!INCLUDE[!INCLUDE[prodshort](../developer/includes/prodshort.md)] database, and give the user the relevant privileges in the [!INCLUDE[!INCLUDE[prodshort](../developer/includes/prodshort.md)] database.  
+3.  Map the login to a user in the [!INCLUDE[!INCLUDE[prod_short](../developer/includes/prod_short.md)] database, and give the user the relevant privileges in the [!INCLUDE[!INCLUDE[prod_short](../developer/includes/prod_short.md)] database.  
   
      For more information, see [Create a Database User](/sql/relational-databases/security/authentication-access/create-a-database-user) in the SQL Server docs and the [Giving the service account database privileges in SQL Server](#ConfigSQL) in the current article.  
   
-##  <a name="ConfigNavServer"></a> Configure SQL Server Authentication on the [!INCLUDE[!INCLUDE[prodshort](../developer/includes/prodshort.md)] Instance \(Non-Multitenant\)  
- You configure the [!INCLUDE[server](../developer/includes/server.md)] instance with the login credentials \(user name and password\) of the user account in the [!INCLUDE[!INCLUDE[prodshort](../developer/includes/prodshort.md)] database in SQL Server that you want to use for authentication. You can do this using the [!INCLUDE[admintool](../developer/includes/admintool.md)] or [!INCLUDE[adminshell](../developer/includes/adminshell.md)].  
+##  <a name="ConfigNavServer"></a> Configure SQL Server Authentication on the [!INCLUDE[!INCLUDE[prod_short](../developer/includes/prod_short.md)] Instance \(Non-Multitenant\)  
+ You configure the [!INCLUDE[server](../developer/includes/server.md)] instance with the login credentials \(user name and password\) of the user account in the [!INCLUDE[!INCLUDE[prod_short](../developer/includes/prod_short.md)] database in SQL Server that you want to use for authentication. You can do this using the [!INCLUDE[admintool](../developer/includes/admintool.md)] or [!INCLUDE[adminshell](../developer/includes/adminshell.md)].  
   
 ### Configure SQL Authentication on a server instance using [!INCLUDE[admintool](../developer/includes/admintool.md)]  
   
@@ -69,13 +69,13 @@ On the computer running the [!INCLUDE[server](../developer/includes/server.md)] 
   
 5.  Set the **Database Authentication Type** to **SQL Authentication**.  
   
-6.  In the **Database User Name** field, type the login name for the database user that you want to use to access the [!INCLUDE[!INCLUDE[prodshort](../developer/includes/prodshort.md)] database in SQL Server.  
+6.  In the **Database User Name** field, type the login name for the database user that you want to use to access the [!INCLUDE[!INCLUDE[prod_short](../developer/includes/prod_short.md)] database in SQL Server.  
   
-7.  In the **Password** field, type the login password for the database user that you want to use to access the [!INCLUDE[!INCLUDE[prodshort](../developer/includes/prodshort.md)] database in SQL Server.  
+7.  In the **Password** field, type the login password for the database user that you want to use to access the [!INCLUDE[!INCLUDE[prod_short](../developer/includes/prod_short.md)] database in SQL Server.  
   
 8.  Choose the **Save** button, and then on the **Enable Encryption on SQL Server Connections** dialog box, choose the **OK** button.  
   
-     Encryption keys are used to help secure the login credentials over the connection between the [!INCLUDE[server](../developer/includes/server.md)] instance and the [!INCLUDE[!INCLUDE[prodshort](../developer/includes/prodshort.md)] database in SQL Server.  
+     Encryption keys are used to help secure the login credentials over the connection between the [!INCLUDE[server](../developer/includes/server.md)] instance and the [!INCLUDE[!INCLUDE[prod_short](../developer/includes/prod_short.md)] database in SQL Server.  
   
 9. On the **Information** dialog box about encryption, choose the **OK** button.  
   
@@ -95,9 +95,9 @@ On the computer running the [!INCLUDE[server](../developer/includes/server.md)] 
   
      Use the *DatabaseCredentials* parameter to provide the login credentials of the database user that you want to use to access the application database.  
   
-##  <a name="ConfigNavServerMT"></a> Configure SQL Server Authentication on  [!INCLUDE[!INCLUDE[prodshort](../developer/includes/prodshort.md)] Instance in a Multitenant Deployment  
+##  <a name="ConfigNavServerMT"></a> Configure SQL Server Authentication on  [!INCLUDE[!INCLUDE[prod_short](../developer/includes/prod_short.md)] Instance in a Multitenant Deployment  
 
-This section describes how to configure a [!INCLUDE[!INCLUDE[prodshort](../developer/includes/prodshort.md)] database to use SQL Server Authentication with a [!INCLUDE[server](../developer/includes/server.md)] instance. You can complete the steps in this procedure by using SQL Server Management Studio or Transact-SQL.  
+This section describes how to configure a [!INCLUDE[!INCLUDE[prod_short](../developer/includes/prod_short.md)] database to use SQL Server Authentication with a [!INCLUDE[server](../developer/includes/server.md)] instance. You can complete the steps in this procedure by using SQL Server Management Studio or Transact-SQL.  
   
 To configure a SQL Server Authentication on a [!INCLUDE[server](../developer/includes/server.md)] instance, you set up the server instance with the login credentials \(user name and password\) for the user accounts for the application and tenant databases in SQL Server. You can do this using the [!INCLUDE[admintool](../developer/includes/admintool.md)] or [!INCLUDE[adminshell](../developer/includes/adminshell.md)].  
   
@@ -114,13 +114,13 @@ To configure a SQL Server Authentication on a [!INCLUDE[server](../developer/inc
   
     3.  Set the **Database Authentication Mode** to **SQL Server Authentication**.  
   
-    4.  In the **Database User Name** field, type the login name for the database user that you want to use to access the [!INCLUDE[!INCLUDE[prodshort](../developer/includes/prodshort.md)] application database in SQL Server.  
+    4.  In the **Database User Name** field, type the login name for the database user that you want to use to access the [!INCLUDE[!INCLUDE[prod_short](../developer/includes/prod_short.md)] application database in SQL Server.  
   
-    5.  In the **Password** field, type the login password for the database user that you want to use to access the [!INCLUDE[!INCLUDE[prodshort](../developer/includes/prodshort.md)] database in SQL Server.  
+    5.  In the **Password** field, type the login password for the database user that you want to use to access the [!INCLUDE[!INCLUDE[prod_short](../developer/includes/prod_short.md)] database in SQL Server.  
   
     6.  Choose the **Save** button, and then on the **Enable Encryption on SQL Server Connections** dialog box, choose the **OK** button.  
   
-         Encryption keys are used to help secure the login credentials over the connection between the [!INCLUDE[server](../developer/includes/server.md)] instance and the [!INCLUDE[!INCLUDE[prodshort](../developer/includes/prodshort.md)] database in SQL Server.  
+         Encryption keys are used to help secure the login credentials over the connection between the [!INCLUDE[server](../developer/includes/server.md)] instance and the [!INCLUDE[!INCLUDE[prod_short](../developer/includes/prod_short.md)] database in SQL Server.  
   
     7.  On the **Information** dialog box about encryption, choose the **OK** button.  
   
@@ -128,7 +128,7 @@ To configure a SQL Server Authentication on a [!INCLUDE[server](../developer/inc
   
     8.  If you want to enable encryption on SQL Server connections, in the **Action** pane, choose **Configuration**, and then choose the **Edit** button. In the **Database** tab, select **Enable Encryption on SQL Connections**, choose the **Save** button, and then the **OK** button.  
   
-4.  To configure SQL Server Authentication with the tenant database, mount the tenant to the [!INCLUDE[server](../developer/includes/server.md)] instance and specify the login credentials \(user name and password\) for the database user that you want to use to access the [!INCLUDE[!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant database in SQL Server.  
+4.  To configure SQL Server Authentication with the tenant database, mount the tenant to the [!INCLUDE[server](../developer/includes/server.md)] instance and specify the login credentials \(user name and password\) for the database user that you want to use to access the [!INCLUDE[!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant database in SQL Server.  
   
      If the tenant is already mounted to the [!INCLUDE[server](../developer/includes/server.md)] instance, you must dismount the tenant, and mount it again.  
   

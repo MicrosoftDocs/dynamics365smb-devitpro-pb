@@ -43,8 +43,8 @@ This table explains the columns included in long running query events emitted to
 |client_City|*Application Insights*|
 |client_StateOrProvince|*Application Insights*|
 |client_CountryOrRegion|*Application Insights*|
-|cloud_RoleName|Specifies the display name of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant. For on-premises, this value is the same as the cloud_RoleInstance.  |
-|cloud_RoleInstance|Specifies the name of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant. |
+|cloud_RoleName|Specifies the display name of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant. For on-premises, this value is the same as the cloud_RoleInstance.  |
+|cloud_RoleInstance|Specifies the name of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant. |
 |appId|*Application Insights*|
 |appName|*Application Insights*|
 |iKey|*Application Insights*|
@@ -69,15 +69,15 @@ This table describes the different dimensions of a **Long Running Operation (SQL
 |Column (key)|Description or value|
 |---------|-----|
 |extensionVersion|Specifies the version of the extension.|
-|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema. |
+|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema. |
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
-|environmentType|Specifies the environment type of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution, such as Production or Sandbox.|
-|environmentName|Specifies the environment name of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution, such as Production or Sandbox.|
+|environmentType|Specifies the environment type of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] solution, such as Production or Sandbox.|
+|environmentName|Specifies the environment name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] solution, such as Production or Sandbox.|
 |extensionName|Specifies the name of the extension.|
 |alObjectType|The type of the AL object that executed the SQL statement|
 |alObjectName|The name of the AL object that executed the SQL statement|
 |alStackTrace|The stack trace in AL.|
-|companyName|The display name of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] company that was used at time of execution. |
+|companyName|The display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company that was used at time of execution. |
 |extensionId|Specifies the AppID of the extension.|
 |eventId|**RT0005**<br /><br/>This dimension was introduced in Business Central 2020 release wave 1, version 16.1.|
 |aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID when using Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |

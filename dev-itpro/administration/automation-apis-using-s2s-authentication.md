@@ -16,19 +16,19 @@ ms.author: jswymer
 
 [!INCLUDE[2020_releasewave2.md](../includes/2020_releasewave2.md)] (Online)
 
-Starting with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2020 release wave 2, version 17, service-to-service authentication is enabled for Automation APIs. Service-to-service authentication enables external services to connect as an application, without impersonating normal users.  
+Starting with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 2, version 17, service-to-service authentication is enabled for Automation APIs. Service-to-service authentication enables external services to connect as an application, without impersonating normal users.  
 
 ## Usage and setup overview
 
 Automation APIs provide capability for automating company setup through APIs. The automation APIs are used to hydrate tenants, that is, to bring them to an initial state. Service-to-service authentication is intended only for the hydration of companies.
 
-The **D365 Automation** entitlements give access to APIs in the `/api/microsoft/automation` route by using the OAuth client credentials flow. An application token with the `Automation.ReadWrite.All` scope is needed for accessing [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Automation APIs.
+The **D365 Automation** entitlements give access to APIs in the `/api/microsoft/automation` route by using the OAuth client credentials flow. An application token with the `Automation.ReadWrite.All` scope is needed for accessing [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Automation APIs.
 
 To enable service-to-service authentication, you'll have to do two things:
 
-- Register an application in your Azure Active Directory tenant for authenticating API calls against [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
+- Register an application in your Azure Active Directory tenant for authenticating API calls against [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
-- Set up the Azure AD application in [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
+- Set up the Azure AD application in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 These tasks are described in the sections that follow. 
 
@@ -38,7 +38,7 @@ Complete these steps to register an application in your Azure AD tenant for serv
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 
-2. Register an application for [!INCLUDE [prodshort](../developer/includes/prodshort.md)] in Azure Active Directory tenant.
+2. Register an application for [!INCLUDE [prod_short](../developer/includes/prod_short.md)] in Azure Active Directory tenant.
 
     Follow the general guidelines at [Register your application with your Azure Active Directory tenant](/azure/active-directory/active-directory-app-registration).
 
@@ -59,10 +59,10 @@ Complete these steps to register an application in your Azure AD tenant for serv
 
     For the latest guidelines about adding client secrets in Azure AD, see [Add credentials ](/azure/active-directory/develop/quickstart-register-app#add-credentials) in the Azure documentation.
 
-4. Grant the registered application **Automation.ReadWrite.All** permission to the **Dynamics 365 [!INCLUDE [prodshort](../developer/includes/prodshort.md)]** API as follows:
+4. Grant the registered application **Automation.ReadWrite.All** permission to the **Dynamics 365 [!INCLUDE [prod_short](../developer/includes/prod_short.md)]** API as follows:
 
     1. Select **API permissions** > **Add a permission** > **Microsoft APIs**.
-    2. Select **Dynamics 365 [!INCLUDE [prodshort](../developer/includes/prodshort.md)]**.
+    2. Select **Dynamics 365 [!INCLUDE [prod_short](../developer/includes/prod_short.md)]**.
     3. Select **Application permissions**, select **Automation.ReadWrite.All**, then select **Add permissions**.
 
     When completed, the **API permissions** page will include the following entry:
@@ -73,11 +73,11 @@ Complete these steps to register an application in your Azure AD tenant for serv
 
     For the latest guidelines about adding permissions in Azure AD, see [Add permissions to access your APIs](/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-permissions-to-access-your-web-api) in the Azure documentation.
 
-## Task 2: Set up the Azure AD application in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
+## Task 2: Set up the Azure AD application in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]
 
-Complete these steps to set up the Azure AD application for service-to-service authentication in [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
+Complete these steps to set up the Azure AD application for service-to-service authentication in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
-1. In the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client, search for **AAD Applications**  and open the page.
+1. In the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client, search for **AAD Applications**  and open the page.
 
 2. Select **New**.
 

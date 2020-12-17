@@ -9,9 +9,9 @@ ms.service: "dynamics365-business-central"
 ms.date: 10/29/2020
 author: jswymer
 ---
-# System Requirements for [!INCLUDE[prodlong](../developer/includes/prodlong.md)] 2020 Release Wave 1
+# System Requirements for [!INCLUDE[prod_long](../developer/includes/prod_long.md)] 2020 Release Wave 1
 
-The following sections list the minimum hardware and software requirements to use or connect to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, and to install and run [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises (version 16). **Minimum** means that later versions \(such as SP1, SP2, or R2 versions\) of a required software product are also supported.  
+The following sections list the minimum hardware and software requirements to use or connect to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, and to install and run [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises (version 16). **Minimum** means that later versions \(such as SP1, SP2, or R2 versions\) of a required software product are also supported.  
 
 > [!NOTE]  
 >  [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] installs some software if it'sn't already present in the target computer. For more information, see the "Additional Information" section for each component.  
@@ -19,7 +19,7 @@ The following sections list the minimum hardware and software requirements to us
 ## Client Components
 
 ###  <a name="WebClient"></a> Web Client Requirements  
- The following table shows the minimum system requirements for the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Web client on-premises.  
+ The following table shows the minimum system requirements for the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Web client on-premises.  
 
 |Specification|Requirement|  
 |------|-----|  
@@ -31,13 +31,13 @@ The following sections list the minimum hardware and software requirements to us
 |Printing reports to Excel or Word|<ul><li>Microsoft Office 2019, Microsoft Office 2016, or Microsoft 365.</li></ul>|  
 |Additional information|If you experience problems using the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)], you can try to turn off browser tools, such as translator tools that may run in the background.|  
 
-###  <a name="NavApps"></a> [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Tablet Client and Phone Client \(in a Browser\) Requirements  
+###  <a name="NavApps"></a> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Tablet Client and Phone Client \(in a Browser\) Requirements  
  The following table shows the minimum system requirements for the [!INCLUDE[nav_tablet](../developer/includes/nav_tablet_md.md)] and [!INCLUDE[nav_phone](../developer/includes/nav_phone_md.md)] running in a desktop browser when used for development and testing purposes.  
 
 |Specification|Requirement|
 |------|-----|  
-|Server component|Identical to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Web client.|  
-|Supported browsers|Identical to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Web client.|  
+|Server component|Identical to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Web client.|  
+|Supported browsers|Identical to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Web client.|  
 
 ###  <a name="DynNAVApp"></a> [!INCLUDE[nav_uni_app_md](../developer/includes/nav_uni_app_md.md)] Requirements  
  The following table shows the minimum system requirements for the [!INCLUDE[nav_uni_app](../developer/includes/nav_uni_app_md.md)].  
@@ -50,12 +50,12 @@ For the latest information, see the app in the Windows Store, App Store, or Goog
 |------|-----|  
 |Supported operating systems|<ul><li>Windows 10 S, Home, Pro, Enterprise, or Education \(32-bit and 64-bit editions\).</li><li>Android 6.0 or higher (tablet and phone).</li><li> iOS 10.0 or higher (iPad and iPhone).</li></ul>|  
 |Additional hardware|<ul><li>1-GB RAM for Android and Windows.</li></ul>|  
-|Additional software|<ul><li>A third-party telephony or VoIP app such as Skype is required for placing calls from [!INCLUDE[prodshort](../developer/includes/prodshort.md)].</li><li>A third-party email program such as Outlook is required for sending emails from [!INCLUDE[prodshort](../developer/includes/prodshort.md)].</li><li>Microsoft Office 2019, Office 2016, or Microsoft 365 is required for sending data to Microsoft Excel or to Microsoft Word.</li></ul>|  
+|Additional software|<ul><li>A third-party telephony or VoIP app such as Skype is required for placing calls from [!INCLUDE[prod_short](../developer/includes/prod_short.md)].</li><li>A third-party email program such as Outlook is required for sending emails from [!INCLUDE[prod_short](../developer/includes/prod_short.md)].</li><li>Microsoft Office 2019, Office 2016, or Microsoft 365 is required for sending data to Microsoft Excel or to Microsoft Word.</li></ul>|  
 |Additional information|<ul><li>Device diagonal screen size 7" for tablets.</li><li>Screen resolution 960 × 510 for tablets.</li><li>Device diagonal screen size 4" for phones.</li><li>Screen resolution 854 x 480 for phones.</li></ul>|  
 
 ### AL Development Requirements
 
-The following table shows the minimum system requirements for customizing or extending [!INCLUDE[prodshort](../developer/includes/prodshort.md)] using the AL language in Visual Studio Code.
+The following table shows the minimum system requirements for customizing or extending [!INCLUDE[prod_short](../developer/includes/prod_short.md)] using the AL language in Visual Studio Code.
 
 |Specification|Requirement|
 |-----|-----|
@@ -67,7 +67,7 @@ The following table shows the minimum system requirements for customizing or ext
 For more information, see [Getting Started with AL](../developer/devenv-get-started.md).
 
 ## Server Components
-###  <a name="NavServerReqs"></a> [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Server Requirements  
+###  <a name="NavServerReqs"></a> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Server Requirements  
  The following table shows the minimum system requirements for [!INCLUDE[server](../developer/includes/server.md)].  
 
 |Specification|Requirement|
@@ -78,7 +78,7 @@ For more information, see [Getting Started with AL](../developer/devenv-get-star
 |Additional software|<ul><li>Microsoft .NET Framework 4.8</li><li>Windows PowerShell 4.0.|  
 |Additional information|<ul><li>[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] installs the following software if it's not already present on the target computer:<ul><li>Microsoft .NET Framework 4.8</li><li>Windows Identity Framework.</li></ul></li></ul>|  
 
-###  <a name="WebServer"></a> [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Web Server Components Requirements  
+###  <a name="WebServer"></a> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Web Server Components Requirements  
 
 |Specification|Requirement|
 |----|----|  
@@ -87,8 +87,8 @@ For more information, see [Getting Started with AL](../developer/devenv-get-star
 |Additional software|<ul><li>Microsoft .NET Framework 4.8</li><li>Windows PowerShell 4.0.|  
 |Additional information|<ul><li>[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] installs the following software if it's not already present on the target computer.<ul><li>Microsoft .NET Core 1.0 Windows Server Hosting. This software is installed by [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] if not already present.</li><li>Microsoft .NET Framework 4.8</li><li>Internet Information Server 10, Internet Information Server 8.5, or Internet Information Server 8.0. The version depends on the operating system. Internet Information Server is installed with the required features enabled.</li></ul></li><li>For more information about configuring IIS, see [Configuring IIS](configure-iis.md)</li></ul>|  
 
-###  <a name="SQLReq"></a>[!INCLUDE[prodshort](../developer/includes/prodshort.md)] Database Components for SQL Server Requirements  
- The following table shows the minimum system requirements for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database components for SQL Server.  
+###  <a name="SQLReq"></a>[!INCLUDE[prod_short](../developer/includes/prod_short.md)] Database Components for SQL Server Requirements  
+ The following table shows the minimum system requirements for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database components for SQL Server.  
 
 |Specification|Requirement|
 |----|-----|  
@@ -98,8 +98,8 @@ For more information, see [Getting Started with AL](../developer/devenv-get-star
 |Service Packs and Cumulative Updates| Unless explicitly stated, all released Service Packs and Cumulative Updates of the above Microsoft SQL Server versions are supported. it's recommended to always be on the latest released Service Pack and Cumulative Update.|
 |Additional information|[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] installs the following software if it's not already present on the target computer:<ul><li>SQL Server 2016 Express \(64-bit edition\).<br>If the operating system on the target computer doesn't support SQL Server 2016 Express, Setup displays a pre-requisite warning. In this case, you should exit Setup. Then, update the operating system on the computer to one that does support SQL Server 2016 Express and run Setup again.</li></ul>|  
 
-###  <a name="HelpServer"></a> [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Help Server Requirements  
- The following table shows the minimum system requirements for the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Help Server.  
+###  <a name="HelpServer"></a> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Help Server Requirements  
+ The following table shows the minimum system requirements for the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Help Server.  
 
 |Specification|Requirement|
 |-----|-----|  
@@ -107,13 +107,13 @@ For more information, see [Getting Started with AL](../developer/devenv-get-star
 |Hardware resource|<ul><li>Hard disk space: 500 MB.</li><li>Memory: 2 GB.</li></ul>|  
 |Web server|<ul><li>Internet Information Server 10, Internet Information Server 8.5, or Internet Information Server 8.0.</li></ul>|  
 |Additional software|<ul><li>Microsoft .NET Framework 4.8</li></ul>|  
-|Additional information|<ul><li>[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] installs the following software if it's not already present on the target computer.<ul><li>Microsoft .NET Framework 4.8</li><li>Internet Information Server 10, Internet Information Server 8.5, or Internet Information Server 8.0. The version depends on the operating system. it's installed with the required features enabled.</li></ul></li><li>Windows Search must be enabled on the computer that you install the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Help Server on.</li></ul>|  
+|Additional information|<ul><li>[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] installs the following software if it's not already present on the target computer.<ul><li>Microsoft .NET Framework 4.8</li><li>Internet Information Server 10, Internet Information Server 8.5, or Internet Information Server 8.0. The version depends on the operating system. it's installed with the required features enabled.</li></ul></li><li>Windows Search must be enabled on the computer that you install the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Help Server on.</li></ul>|  
 
 ## Additional Components and Features
 
 ###  <a name="ADCS"></a> Automated Data Capture System Requirements  
 
-The following table shows the minimum system requirements for Automated Data Capture System \(ADCS\) for [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
+The following table shows the minimum system requirements for Automated Data Capture System \(ADCS\) for [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 |Specification|Requirement|
 |-----|-----|  
@@ -121,10 +121,10 @@ The following table shows the minimum system requirements for Automated Data Cap
 |Additional information|<ul><li>HyperTerminal is no longer included with Windows. For more information, see [What happened to HyperTerminal?](https://go.microsoft.com/fwlink/?LinkId=222571) in the Windows Help.</li><li>VT100 Plug-in acts as a virtual Telnet server. </li></ul>| 
 
 > [!NOTE]
-> Starting with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2020 release wave 1, the VT100 Plug-in for ADCS is no longer included on installation media. You can use VT100 Plug-in from previous releases. However, remember to test that it works properly. 
+> Starting with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 1, the VT100 Plug-in for ADCS is no longer included on installation media. You can use VT100 Plug-in from previous releases. However, remember to test that it works properly. 
 
 ###  <a name="BusInboxOutlook"></a> Business Inbox in Microsoft Outlook Requirements  
-The following table shows the minimum system requirements for using [!INCLUDE[prodshort](../developer/includes/prodshort.md)] as your business inbox in Outlook.
+The following table shows the minimum system requirements for using [!INCLUDE[prod_short](../developer/includes/prod_short.md)] as your business inbox in Outlook.
 
 |Specification|Requirement|
 |-----|-----|
@@ -135,7 +135,7 @@ The following table shows the minimum system requirements for using [!INCLUDE[pr
 |Supported Operating Systems|<ul><li>When using Outlook Web App for iPad, iPad, or Android, your mobile device must use a supported Operating System listed in [!INCLUDE[nav_uni_app_md](../developer/includes/nav_uni_app_md.md)] Requirements.</li></ul>|  
 
 ###  <a name="Outlook"></a> Microsoft Outlook Add-In Requirements  
-The following table shows the minimum system requirements for the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Add-In for Outlook for synchronization with Outlook.
+The following table shows the minimum system requirements for the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Add-In for Outlook for synchronization with Outlook.
 
 |Specification|Requirement|  
 |-----|-----|  
@@ -144,7 +144,7 @@ The following table shows the minimum system requirements for the [!INCLUDE[prod
 
 
 ###  <a name="CRM"></a> Microsoft Dynamics 365 for Sales Integration Requirements  
- The following table shows the product version requirements for integrating [!INCLUDE[prodshort](../developer/includes/prodshort.md)] with [!INCLUDE[crm](../developer/includes/crm_md.md)], and the versions in which users can view the availability of items in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] from [!INCLUDE[crm](../developer/includes/crm_md.md)].  
+ The following table shows the product version requirements for integrating [!INCLUDE[prod_short](../developer/includes/prod_short.md)] with [!INCLUDE[crm](../developer/includes/crm_md.md)], and the versions in which users can view the availability of items in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] from [!INCLUDE[crm](../developer/includes/crm_md.md)].  
 
 |Sales/Dynamics NAV/Business Central|2015/Update 1/online|2016/Update 1/online|Sales Enterprise (v8.x)|Sales Enterprise and Sales Professional (v9.x)|
 |---|----|---|---|---|
@@ -162,8 +162,8 @@ Legend:
 > [!Note] 
 > AD, IFD and Claims authentication types are supported for the 2015 and 2016 on-premises versions of [!INCLUDE[crm](../developer/includes/crm_md.md)]. OAuth and Microsoft 365 authentication are supported for the 2015, 2015 Update 1, and 2016 Update 1 online versions of [!INCLUDE[crm](../developer/includes/crm_md.md)]. For more information about authentication types, see [Connection strings in XRM tooling to connect to Dynamics 365](https://msdn.microsoft.com/library/mt608573.aspx).
 
-###  <a name="SharePointApp"></a>[!INCLUDE[prodshort](../developer/includes/prodshort.md)] as an App for SharePoint Requirements  
-The following table shows the minimum system requirements for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] as an App for SharePoint.  
+###  <a name="SharePointApp"></a>[!INCLUDE[prod_short](../developer/includes/prod_short.md)] as an App for SharePoint Requirements  
+The following table shows the minimum system requirements for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] as an App for SharePoint.  
 
 |Specification|Requirement|  
 |-|-|  
