@@ -89,7 +89,7 @@ $validationResults = Run-AlValidation `
 $validationResults | Write-Host -ForegroundColor Red
 ```
 
-All array parameters can also be specified as a comma-separated string.
+All array parameters can also be specified as a comma-separated string. For more information, you can also check this blog post [Run-AlValidation and Run-AlCops](https://freddysblog.com/2020/12/03/run-alvalidation-and-run-alcops/).
 
 Please include app and all library apps in both previousApps and apps and please include all countries on which you want to validate.
 
