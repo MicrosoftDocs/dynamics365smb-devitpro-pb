@@ -307,7 +307,7 @@ Both API pages support create, read, update, and delete operations. If you want 
 Now, we will create a car brand:
 
 ```
-POST https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/bctech/demo/v1.0/companies(<company id>)/carBrands
+POST https://api.businesscentral.dynamics.com/v2.0/<environmentName>/api/bctech/demo/v1.0/companies(<company id>)/carBrands
 
 {
     "name": "CARBRAND1",
@@ -319,14 +319,14 @@ POST https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/bctech
 We can make a `GET` request to retrieve the car brands:
 
 ```
-GET https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/bctech/demo/v1.0/companies(<company id>)/carBrands
+GET https://api.businesscentral.dynamics.com/v2.0/<environmentName>/api/bctech/demo/v1.0/companies(<company id>)/carBrands
 ```
 
 Which will result in following response:
 
 ```
 {
-   "@odata.context":"https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/bctech/demo/v1.0/$metadata#companies(<company id>)/carBrands",
+   "@odata.context":"https://api.businesscentral.dynamics.com/v2.0/<environmentName>/api/bctech/demo/v1.0/$metadata#companies(<company id>)/carBrands",
    "value":[
       {
          "@odata.etag":"W/\"JzQ0O2c4UTNaRHErODdzODZnVlJxN2tNTkt3SHBwajNBaHNSdStNeEFONGUwVkE9MTswMDsn\"",
@@ -343,7 +343,7 @@ We can now create a car model that belongs to the car brand that we just created
 
 ### Example 1
 ``` 
-POST https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/bctech/demo/v1.0/companies(<company id>))/carBrands(24cafc3a-b1fe-ea11-9306-000d3a482952)/carModels
+POST https://api.businesscentral.dynamics.com/v2.0/<environmentName>/api/bctech/demo/v1.0/companies(<company id>))/carBrands(24cafc3a-b1fe-ea11-9306-000d3a482952)/carModels
 {
     "name": "MODEL1",
     "description": "Model 1",
@@ -354,7 +354,7 @@ POST https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/bctech
 ### Example 2
 
 ``` 
-POST https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/bctech/demo/v1.0/companies(<company id>))//carModels
+POST https://api.businesscentral.dynamics.com/v2.0/<environmentName>/api/bctech/demo/v1.0/companies(<company id>))//carModels
 {
     "name": "MODEL1",
     "brandId": "24cafc3a-b1fe-ea11-9306-000d3a482952",
@@ -369,7 +369,7 @@ POST https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/bctech
 And the navigational property also allows us to do a deep insert; deep insert is the creation of an entity instance and related entity instances, in a single `POST` request. So you can combine car brand and car model creation in a single request as illustrated below:
 
 ``` 
-POST https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/bctech/demo/v1.0/companies(<company id>))//carBrands
+POST https://api.businesscentral.dynamics.com/v2.0/<environmentName>/api/bctech/demo/v1.0/companies(<company id>))//carBrands
 {
     "name": "CARBRAND2",
     "description": "Car Brand 2",
@@ -399,7 +399,7 @@ POST https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/bctech
 3. Make sure to localize your custom API pages:
     - Use `EntityCaption` and `EntitySetCaption` properties
     - Use captions for Enums
-    - All these localizations can be retrieved through `https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/<API publisher>/<API group>/<API version>/entityDefinitions`
+    - All these localizations can be retrieved through `https://api.businesscentral.dynamics.com/v2.0/<environmentName>/api/<API publisher>/<API group>/<API version>/entityDefinitions`
 
 ## See Also
 
