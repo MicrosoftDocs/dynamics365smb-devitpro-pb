@@ -51,49 +51,46 @@ The length of the result text.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks  
- The first character in a BigText variable is position 1.  
+## Remarks
+
+The first character in a BigText variable is position 1.  
   
- To delete the content in a BigText variable use the [CLEAR Method](../../methods-auto/system/system-clear-joker-method.md). The following code snippet shows the syntax for the clear method. `CLEAR(BigText)`.  
+To delete the content in a BigText variable use the [Clear Method](../../methods-auto/system/system-clear-joker-method.md). The following code snippet shows the syntax for the clear method. `Clear(BigText)`.  
   
 ## Example 1
 
- The following examples demonstrate how to use the GETSUBTEXT method. This example requires that you create the following global variables and text constant.  
+The following examples demonstrate how to use the GETSUBTEXT method. This example requires that you create the following global variables and text constant.  
   
-```
+```al
 var
     MyBigText: BigText;
     VarSubText: Text;
     Text000: Label 'VarSubText = %1';
 ```  
   
- The following example initializes the content of the MyBigText variable with the text `ABCDEFG`. The method starts from the third position \(the character C\) in the MyBigText variable and retrieves two characters. The result is the subtext CD. This is because the number 2 is specified for *Length* .  
+The following example initializes the content of the MyBigText variable with the text `ABCDEFG`. The method starts from the third position \(the character C\) in the MyBigText variable and retrieves two characters. The result is the subtext CD. This is because the number 2 is specified for *Length* .  
   
+```al
+MyBigText.AddText('ABCDEFG');  
+MyBigText.GetSubText(VarSubText, 3, 2); // Returns CD.  
+Message(Text000, VarSubText);  
 ```  
-  
-MyBigText.ADDTEXT('ABCDEFG');  
-MyBigText.GETSUBTEXT(VarSubText, 3, 2); // Returns CD.  
-MESSAGE(Text000, VarSubText);  
-```  
-  
+
 ## Example 2
 
- The following example initializes the content of the MyBigText variable with the text `ABCDEFG`. The method returns an error because zero is specified for *Position*.  
+The following example initializes the content of the MyBigText variable with the text `ABCDEFG`. The method returns an error because zero is specified for *Position*.  
   
-```  
-  
-MyBigText.ADDTEXT('ABCDEFG');  
-MyBigText.GETSUBTEXT(VarSubText, 0, 4); // Returns an error.  
-MESSAGE(Text000, VarSubText);  
-  
+```al
+MyBigText.AddText('ABCDEFG');  
+MyBigText.GetSubText(VarSubText, 0, 4); // Returns an error.  
+Message(Text000, VarSubText);  
 ```  
   
 ## Example 3
 
- The following example initializes the content of the MyBigText variable with the text `ABCDEFG`. The method returns an error because a negative number is specified for *Length*.  
+The following example initializes the content of the MyBigText variable with the text `ABCDEFG`. The method returns an error because a negative number is specified for *Length*.  
   
-```  
-  
+```al
 MyBigText.ADDTEXT('ABCDEFG');  
 MyBigText.GETSUBTEXT(VarSubText, 5, -2); // Returns an error.  
 MESSAGE(Text000, VarSubText);  
