@@ -42,18 +42,18 @@ The input variant.
 
 ## Example  
 
-```  
+```al
 var
     TextDate: Date;
     variant1: Variant;
 begin
-    variant1 := TODAY;  
-    TestDate := VARIANT2DATE(variant1);  
+    variant1 := Today;  
+    TestDate := Variant2Date(variant1);  
 end;
 ```  
 
-
 ## See Also
+
 [System Data Type](system-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

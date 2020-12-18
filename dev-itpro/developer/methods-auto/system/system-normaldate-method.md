@@ -41,45 +41,46 @@ The input date. You can enter a closing date or a normal date. A run-time error 
 
 ## Example 1
 
- The input date is a regular date.
+The input date is a regular date.
   
-```
+```al
 var
     InputDate: Date;
     OutputDate: Date;
     Text000: Label 'The normal date for %1 is %2.';
 begin
     InputDate := 20140404D;  
-    OutputDate := NORMALDATE(InputDate);  
-    MESSAGE(Text000, InputDate, OutputDate);  
+    OutputDate := NormalDate(InputDate);  
+    Message(Text000, InputDate, OutputDate);  
 end;
 ```  
   
- On a computer that has the regional format set to English \(United States\), the message window displays the following:  
+On a computer that has the regional format set to English \(United States\), the message window displays the following:  
   
- **The normal date for 04/04/14 is 04/04/14.**  
+**The normal date for 04/04/14 is 04/04/14.**  
   
 ## Example 2
 
- The input date is a closing date.
+The input date is a closing date.
   
-```  
+```al
 var
     InputDate: Date;
     OutputDate: Date;
     Text000: Label 'The normal date for %1 is %2.';
 begin
-    InputDate := CLOSINGDATE(20140404C);  
-    OutputDate := NORMALDATE(InputDate);  
-    MESSAGE(Text001, InputDate, OutputDate);  
+    InputDate := ClosingDate(20140404C);  
+    OutputDate := NormalDate(InputDate);  
+    Message(Text001, InputDate, OutputDate);  
 end;
 ```  
   
- On a computer that has the regional format set to English \(United States\), the message window displays the following:  
+On a computer that has the regional format set to English \(United States\), the message window displays the following:  
   
- **The normal date for C04/04/14 is 04/04/14.**  
+**The normal date for C04/04/14 is 04/04/14.**  
 
 ## See Also
+
 [System Data Type](system-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)
