@@ -43,37 +43,39 @@ If you omit this optional argument, the method returns the total number of eleme
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks  
-If you use ARRAYLEN with an input parameter that is not an array, a run-time error occurs.  
-  
-## Example  
-This example shows how to use the ARRAYLEN method.  
-  
+## Remarks
 
-```  
+If you use ArrayLen with an input parameter that is not an array, a run-time error occurs.  
+  
+## Example
+
+This example shows how to use the ArrayLen method.  
+  
+```al
 var
     Array1: array[2] of Integer;
     Array2: array[3,4] of Integer;
 begin
-    MESSAGE('Array1, Total number of elements: %1', ARRAYLEN(Array1));  
-    MESSAGE('Array2, Dimension 1 size: %1', ARRAYLEN(Array2,1));  
-    MESSAGE('Array2, Dimension 2 size: %1', ARRAYLEN(Array2,2));  
-    MESSAGE('Array2, Total number of elements: %1', ARRAYLEN(Array2));  
+    Message('Array1, Total number of elements: %1', ArrayLen(Array1));  
+    Message('Array2, Dimension 1 size: %1', ArrayLen(Array2,1));  
+    Message('Array2, Dimension 2 size: %1', ArrayLen(Array2,2));  
+    Message('Array2, Total number of elements: %1', ArrayLen(Array2));  
 end;
 ```  
   
- The following messages are displayed.  
+The following messages are displayed.  
   
- **Array1, Total number of elements: 2**  
+**Array1, Total number of elements: 2**  
   
- **Array2, Dimension 1 size: 3**  
+**Array2, Dimension 1 size: 3**  
   
- **Array2, Dimension 2 size: 4**  
-  
- **Array2, Total number of elements: 12**  
+**Array2, Dimension 2 size: 4**  
+ 
+**Array2, Total number of elements: 12**  
 
 
 ## See Also
+
 [System Data Type](system-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)
