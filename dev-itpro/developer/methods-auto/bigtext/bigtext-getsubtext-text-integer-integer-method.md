@@ -91,33 +91,29 @@ Message(Text000, VarSubText);
 The following example initializes the content of the MyBigText variable with the text `ABCDEFG`. The method returns an error because a negative number is specified for *Length*.  
   
 ```al
-MyBigText.ADDTEXT('ABCDEFG');  
-MyBigText.GETSUBTEXT(VarSubText, 5, -2); // Returns an error.  
-MESSAGE(Text000, VarSubText);  
+MyBigText.AddText('ABCDEFG');  
+MyBigText.GetSubText(VarSubText, 5, -2); // Returns an error.  
+Message(Text000, VarSubText);  
 ```  
   
 ## Example 4
 
- The following example initializes the content of the MyBigText variable with the text `ABCDEFG`. The method returns an empty string because the number specified for *position* is greater than the length of the MyBigText variable.  
+The following example initializes the content of the MyBigText variable with the text `ABCDEFG`. The method returns an empty string because the number specified for *position* is greater than the length of the MyBigText variable.  
   
-```  
-  
-MyBigText.ADDTEXT('ABCDEFG');  
-MyBigText.GETSUBTEXT(VarSubText, 15, 4); // Returns an empty string.  
-MESSAGE(Text000, VarSubText);  
-  
+```al
+MyBigText.AddText('ABCDEFG');  
+MyBigText.GetSubText(VarSubText, 15, 4); // Returns an empty string.  
+Message(Text000, VarSubText);  
 ```  
   
 ## Example 5
 
- The following example initializes the content of the MyBigText variable with the text `ABCDEFG`. The method starts from the forth position \(the character D\) and retrieves all the characters in the MyBigText string. The result is the subtext DEFG. This is because the number specified for *Length* is greater than the length of the MyBigText variable.  
+The following example initializes the content of the MyBigText variable with the text `ABCDEFG`. The method starts from the forth position \(the character D\) and retrieves all the characters in the MyBigText string. The result is the subtext DEFG. This is because the number specified for *Length* is greater than the length of the MyBigText variable.  
   
-```  
-  
-MyBigText.ADDTEXT('ABCDEFG');  
-MyBigText.GETSUBTEXT(VarSubText, 4, 15); // Returns DEFG.  
-MESSAGE(Text000, VarSubText);  
-  
+```al
+MyBigText.AddText('ABCDEFG');  
+MyBigText.GetSubText(VarSubText, 4, 15); // Returns DEFG.  
+Message(Text000, VarSubText);  
 ```  
 
 ## See Also

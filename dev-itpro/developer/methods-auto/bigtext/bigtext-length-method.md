@@ -40,28 +40,28 @@ The length of the text stored in this BigText instance.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks  
- To delete the content in a BigText variable use the [CLEAR Method](../../methods-auto/system/system-clear-joker-method.md). The syntax for the CLEAR method is shown in the following code snippet: `CLEAR(BigText)`.  
+## Remarks
+
+To delete the content in a BigText variable use the [Clear Method](../../methods-auto/system/system-clear-joker-method.md). The syntax for the Clear method is shown in the following code snippet: `Clear(BigText)`.  
   
-## Example  
- The following example demonstrates how to retrieve the length of a BigText variable. 
+## Example
+
+The following example demonstrates how to retrieve the length of a BigText variable.
 
 In this example, the BigText variable is initialized with the text ‘ABCDEFG’. The length, which is 7, is stored in the VarLength variable and displayed in a message box.  
   
-```  
+```al
 var
     MyBigText: BigText;
     VarLength: Text;
     Text000: Label 'VarLength = %1';
 begin
-    MyBigText.ADDTEXT('ABCDEFG');  
-    VarLength := MyBigText.LENGTH;  
-    MESSAGE(Text000, VarLength);  
+    MyBigText.AddText('ABCDEFG');  
+    VarLength := MyBigText.Length;  
+    Message(Text000, VarLength);  
 end;
+``` 
   
-```  
-  
-
 ## See Also
 
 [BigText Data Type](bigtext-data-type.md)  
