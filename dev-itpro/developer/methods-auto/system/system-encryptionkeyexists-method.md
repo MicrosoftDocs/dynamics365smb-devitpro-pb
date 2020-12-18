@@ -36,20 +36,22 @@ Ok :=   System.EncryptionKeyExists()
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 
-## Example  
- This code example performs checks to determine if an encryption key already exists.  
+## Example
 
-```  
-if ENCRYPTIONENABLED then  
-        if ENCRYPTIONKEYEXISTS then  
-          MESSAGE('Encryption has been enabled and the encryption key is present in this server instance')  
+This code example performs checks to determine if an encryption key already exists.  
+
+```al
+if EncryptionEnabled then  
+        if EncryptionKeyExists then  
+          Message('Encryption has been enabled and the encryption key is present in this server instance')  
         else  
-          MESSAGE('Encryption has been enabled but the encryption key is not present on this server instance')  
+          Message('Encryption has been enabled but the encryption key is not present on this server instance')  
 else  
-  MESSAGE('Encryption has not been enabled');  
+  Message('Encryption has not been enabled');  
 ``` 
 
 ## See Also
+
 [System Data Type](system-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)
