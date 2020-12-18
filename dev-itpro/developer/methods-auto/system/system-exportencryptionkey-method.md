@@ -48,23 +48,25 @@ A temporary filepath to where the key is exported.
 
 If encryption is not enabled or the encryption key is not found, the following error will be displayed: **An encryption key is required to complete the request**.  
 
-## Example  
- This code example uses the EXPORTENCRYPTIONKEY method to return a password protected file that contains an encryption key. With the DOWNLOAD method the file is sent from the [!INCLUDE[d365fin_server](../../includes/d365fin_server_md.md)] computer to the client computer.  
+## Example
 
- This example requires that you create the following text constants: ExportFileName and ClientFileName.  
+This code example uses the ExportEncryptionKey method to return a password protected file that contains an encryption key. With the Download method the file is sent from the [!INCLUDE[d365fin_server](../../includes/d365fin_server_md.md)] computer to the client computer.  
 
-```  
-if not ENCRYPTIONENABLED then  
-    ERROR('Encryption has not been enabled.');  
-    ExportFileName := EXPORTENCRYPTIONKEY('This is my personal secret');  
+This example requires that you create the following text constants: ExportFileName and ClientFileName.  
+
+```al
+if not EncryptionEnabled then  
+    Error('Encryption has not been enabled.');  
+    ExportFileName := ExportEncryptionKey('This is my personal secret');  
 
     ClientFileName := 'ExportedKey.ekey';  
-    DOWNLOAD(ExportFileName,'Save the encrypted key file','','Encrypted Key File (*.ekey)|*.ekey',ClientFileName);  
+    Download(ExportFileName,'Save the encrypted key file','','Encrypted Key File (*.ekey)|*.ekey',ClientFileName);  
 
-    ERASE(ExportFileName);  
+    Erase(ExportFileName);  
 ```  
 
 ## See Also
+
 [System Data Type](system-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)
