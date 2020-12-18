@@ -35,17 +35,21 @@ Creates an encryption key for the current tenant.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks  
- If a key already exists, the following error will be displayed: **Unable to create a new encryption key. An encryption key already exists**.  
+## Remarks
+
+If a key already exists, the following error will be displayed: **Unable to create a new encryption key. An encryption key already exists**.  
 
 ## Example  
- This code example creates an encryption key for the current tenant. It uses the [ENCRYPTIONENABLED](../../methods-auto/system/system-encryptionenabled-method.md) method to perform a check.  
+
+This code example creates an encryption key for the current tenant. It uses the [EncryptionEnabled](../../methods-auto/system/system-encryptionenabled-method.md) method to perform a check.  
 
 ```  
-if not ENCRYPTIONENABLED then  
-        CREATEENCRYPTIONKEY();  
-```  
+if not EncryptionEnabled then  
+        CreateEncryptionKey();  
+```
+
 ## See Also
+
 [System Data Type](system-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

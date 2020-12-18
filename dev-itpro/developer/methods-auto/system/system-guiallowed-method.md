@@ -37,11 +37,13 @@ Ok :=   System.GuiAllowed()
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks  
- User Portal Application Server accepts GUIALLOWED.  
+## Remarks
+
+User Portal Application Server accepts GUIALLOWED.  
 
 ## Example  
- This example shows how to use the GUIALLOWED method.  
+
+This example shows how to use the GUIALLOWED method.  
 
 ```  
 var
