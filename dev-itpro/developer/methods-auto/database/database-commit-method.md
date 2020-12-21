@@ -31,13 +31,15 @@ Ends the current write transaction.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks  
- When a codeunit begins, it automatically enables write transactions to be performed. When an AL code module completes, it automatically ends the write transaction by committing the updates made by the AL code.  
+## Remarks
 
- This means that if you want the codeunit to perform a single write transaction, it is automatically handled for you. However, if you want the codeunit to perform multiple write transactions, you must use the COMMIT method to end one write transaction before you can start the next. The COMMIT method separates write transactions in an AL code module.  
+When a codeunit begins, it automatically enables write transactions to be performed. When an AL code module completes, it automatically ends the write transaction by committing the updates made by the AL code.  
 
-## Example  
- The following pseudo-code example contains two write transactions. When it begins, a write transaction is automatically started. Using the COMMIT method, you end the first write transaction and prepare for the second. When the code completes, the second write transaction automatically ends.  
+This means that if you want the codeunit to perform a single write transaction, it is automatically handled for you. However, if you want the codeunit to perform multiple write transactions, you must use the Commit method to end one write transaction before you can start the next. The COMMIT method separates write transactions in an AL code module.  
+
+## Example
+
+The following pseudo-code example contains two write transactions. When it begins, a write transaction is automatically started. Using the Commit method, you end the first write transaction and prepare for the second. When the code completes, the second write transaction automatically ends.  
 
 ```  
 BeginWriteTransactions  
@@ -48,6 +50,7 @@ EndWriteTransactions
 ```  
 
 ## See Also
+
 [Database Data Type](database-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)
