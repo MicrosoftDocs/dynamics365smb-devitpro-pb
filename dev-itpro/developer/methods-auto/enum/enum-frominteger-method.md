@@ -38,7 +38,7 @@ Enum with integer value :=   Enum.FromInteger(Value: Integer)
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Example
 
-```
+```al
 enum 50130 YesNo
 {
     value(0; Yes) { }
