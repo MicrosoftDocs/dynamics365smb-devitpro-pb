@@ -25,9 +25,9 @@ Denotes decimal numbers ranging from -999,999,999,999,999.99 to +999,999,999,999
 
 ## Example 1
 
- The following are examples of decimal values.  
+The following are examples of decimal values.  
 
-```  
+```
 546.88  
 3425.57  
 ```  
@@ -36,7 +36,7 @@ Denotes decimal numbers ranging from -999,999,999,999,999.99 to +999,999,999,999
 
  The following is not a decimal, but rather an [Integer Data Type](../../datatypes/devenv-integer-data-type.md).  
 
-```  
+```
 342  
 ```  
 
