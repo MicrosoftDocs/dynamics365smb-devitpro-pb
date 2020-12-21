@@ -45,19 +45,21 @@ An instance of the [File](file-data-type.md) data type.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks  
- You can use this method together with [NAME Method \(File\)](../../methods-auto/file/file-name-method.md) and [CLOSE Method \(File\)](../../methods-auto/file/file-close-method.md).  
+## Remarks
+
+You can use this method together with [Name Method \(File\)](../../methods-auto/file/file-name-method.md) and [Close Method \(File\)](../../methods-auto/file/file-close-method.md).  
   
 ## Example  
- This example creates a temporary file that has the text Hello and then deletes the file by using the File.CLOSE method.
 
- ```
+This example creates a temporary file that has the text Hello and then deletes the file by using the File.Close method.
+
+```al
  var
     FileName: File;
 begin
-    FileName.CREATETEMPFILE;  
-    FileName.WRITE('Hello');  
-    FileName.CLOSE; 
+    FileName.CreateTempFile;  
+    FileName.Write('Hello');  
+    FileName.Close; 
 end;
 ```  
   

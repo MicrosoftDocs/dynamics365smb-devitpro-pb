@@ -52,27 +52,29 @@ The name that you want to assign to the copy that includes its path. When you en
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks  
- If you do not use the return value and the file cannot be copied, a run-time error will occur. If you do include the return value in your code, you must handle any errors yourself.  
-  
-## Example  
- The following example copies a file that is named OldFile from a folder that is named Old on drive C to a folder that is named New. If the file is copied, a message is displayed and the program continues. Otherwise, an error occurs. This example assumes that you have created the following file 'c:\\Old\\' OldFile.  
+## Remarks
 
-```
+If you do not use the return value and the file cannot be copied, a run-time error will occur. If you do include the return value in your code, you must handle any errors yourself.  
+  
+## Example
+ 
+The following example copies a file that is named OldFile from a folder that is named Old on drive C to a folder that is named New. If the file is copied, a message is displayed and the program continues. Otherwise, an error occurs. This example assumes that you have created the following file 'c:\\Old\\' OldFile.  
+
+```al
  var
     OldFile: Text;
     NewFile: Text;
 begin
     OldFile := 'old.txt';  
     NewFile := 'new.txt';  
-    if FILE.COPY('c:\Old\' + OldFile, 'c:\New\' + NewFile) then  
+    if File.Copy('c:\Old\' + OldFile, 'c:\New\' + NewFile) then  
       // Continue your program.  
-      MESSAGE('The file was copied.');  
+      Message('The file was copied.');  
     else  
       // Handle the error.  
-      MESSAGE('The file was not copied.');  
+      Message('The file was not copied.');  
 end;
-```  
+```
   
 
 ## See Also

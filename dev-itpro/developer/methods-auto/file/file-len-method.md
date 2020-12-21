@@ -55,7 +55,7 @@ An instance of the [File](file-data-type.md) data type.
     varString: Text[200];
     varLength: Integer;
 begin
-    Testfile.OPEN('C:\TestFolder\TestFile.txt');  
+    Testfile.Open('C:\TestFolder\TestFile.txt');  
     Testfile.SEEK(6);  
     Testfile.READ(varString);  
     varLength := Testfile.LEN;  

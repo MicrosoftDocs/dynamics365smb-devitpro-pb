@@ -44,14 +44,14 @@ The position at which to set the pointer.
  This method is often used with [POS Method \(File\)](../../methods-auto/file/file-pos-method.md) and [LEN Method \(File\)](../../methods-auto/file/file-len-method.md).  
   
 ## Example  
- The following example sets a pointer at position 20 in a file and truncates the file at the pointer position. The [WRITEMODE Method \(File\)](../../methods-auto/file/file-writemode-method.md) enables a file named C:\\TestFolder\\TestFile.txt to open in write mode. The SEEK method sets a pointer at position 20 in the file and then the [TRUNC Method \(File\)](../../methods-auto/file/file-trunc-method.md) truncates the contents of the file at the pointer position. This example assumes that you have created the text file C:\\TestFolder\\TestFile.txt.
+ The following example sets a pointer at position 20 in a file and truncates the file at the pointer position. The [WriteMODE Method \(File\)](../../methods-auto/file/file-writemode-method.md) enables a file named C:\\TestFolder\\TestFile.txt to open in write mode. The SEEK method sets a pointer at position 20 in the file and then the [TRUNC Method \(File\)](../../methods-auto/file/file-trunc-method.md) truncates the contents of the file at the pointer position. This example assumes that you have created the text file C:\\TestFolder\\TestFile.txt.
 
 ```
  var
     TestFile: File;
 begin
-    TestFile.WRITEMODE(TRUE);  
-    TestFile.OPEN('C:\TestFolder\TestFile.txt');  
+    TestFile.WriteMODE(TRUE);  
+    TestFile.Open('C:\TestFolder\TestFile.txt');  
     TestFile.SEEK(20);  
     TestFile.TRUNC;  
 end;

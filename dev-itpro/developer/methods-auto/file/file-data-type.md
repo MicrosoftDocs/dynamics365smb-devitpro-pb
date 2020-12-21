@@ -42,7 +42,7 @@ The following methods are available on instances of the File data type.
 |-----------|-----------|
 |[Open(String [, TextEncoding])](file-open-method.md)|Opens an ASCII or binary file. This method does not create the file if it does not exist.|
 |[Create(String [, TextEncoding])](file-create-method.md)|Creates an Automation object.|
-|[Close()](file-close-method.md)|Closes a file that has been opened by the OPEN method (File).|
+|[Close()](file-close-method.md)|Closes a file that has been opened by the Open method (File).|
 |[Name()](file-name-method.md)|Gets the name of an ASCII or binary file.|
 |[Pos()](file-pos-method.md)|Gets the current position of the file pointer in an ASCII or binary file.|
 |[Len()](file-len-method.md)|Gets the length of an ASCII or binary file.|
@@ -70,7 +70,7 @@ The following methods are available on instances of the File data type.
 |[Write(Any)](file-write-joker-method.md)|Writes to an MS-DOS encoded file or binary file.|
 |[Seek(Integer)](file-seek-method.md)|Sets a file pointer to a new position in an ASCII or binary file.|
 |[Trunc()](file-trunc-method.md)|Truncate an ASCII or binary file to the current position of the file pointer.|
-|[WriteMode([Boolean])](file-writemode-method.md)|Use this method before you use OPEN method (File)] to set or test whether you can write to a file in later calls.|
+|[WriteMode([Boolean])](file-writemode-method.md)|Use this method before you use Open method (File)] to set or test whether you can write to a file in later calls.|
 |[TextMode([Boolean])](file-textmode-method.md)|Sets whether a file should be opened as an ASCII file or a binary file. Gets the current setting of this option for a file.|
 |[CreateInStream(InStream)](file-createinstream-method.md)|Creates an InStream object for a file. This enables you to import or read data from the file.|
 |[CreateOutStream(OutStream)](file-createoutstream-method.md)|Creates an OutStream object for a file. This enables you to export or write data to the file.|

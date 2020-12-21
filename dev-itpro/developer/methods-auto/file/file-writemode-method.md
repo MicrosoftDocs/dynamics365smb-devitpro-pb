@@ -16,7 +16,7 @@ author: SusanneWindfeldPedersen
 # File.WriteMode Method
 > **Version**: _Available from runtime version 1.0._
 
-Use this method before you use OPEN method (File)] to set or test whether you can write to a file in later calls.
+Use this method before you use Open method (File)] to set or test whether you can write to a file in later calls.
 
 > [!NOTE]
 > This method is supported only in Business Central on-premises.
@@ -48,7 +48,7 @@ An instance of the [File](file-data-type.md) data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- You must call the [TEXTMODE Method \(File\)](../../methods-auto/file/file-textmode-method.md) before you call the WRITE method.  
+ You must call the [TEXTMODE Method \(File\)](../../methods-auto/file/file-textmode-method.md) before you call the Write method.  
   
  If [TEXTMODE Method \(File\)](../../methods-auto/file/file-textmode-method.md) is set to **true** and *Value* is an integer, then the integer is written as text, followed by a new line character.  
   
@@ -63,7 +63,7 @@ An instance of the [File](file-data-type.md) data type.
  To read or write files in Unicode or in other formats, we recommend that you use .NET Framework interoperability and use the [System.IO Namespace](https://go.microsoft.com/fwlink/?LinkId=262250).  
   
 ## Example  
- The following example determines whether the specified file exists. If it exists, the [WRITEMODE Method \(File\)](../../methods-auto/file/file-writemode-method.md) allows the file to be open for writing. The [OPEN Method \(File\)](../../methods-auto/file/file-open-method.md) opens the file, the [WRITE Method \(FILE\)](../../methods/devenv-write-method-file.md) writes the text “Hello World” to the file and then the [CLOSE Method \(File\)](../../methods-auto/file/file-close-method.md) closes the file. If the file does not exist, then an error message is displayed. This example assumes that you have created the following file: C:\\TestFolder\\TestFile.txt.
+ The following example determines whether the specified file exists. If it exists, the [WriteMODE Method \(File\)](../../methods-auto/file/file-writemode-method.md) allows the file to be open for writing. The [Open Method \(File\)](../../methods-auto/file/file-open-method.md) opens the file, the [Write Method \(FILE\)](../../methods/devenv-write-method-file.md) writes the text “Hello World” to the file and then the [Close Method \(File\)](../../methods-auto/file/file-close-method.md) closes the file. If the file does not exist, then an error message is displayed. This example assumes that you have created the following file: C:\\TestFolder\\TestFile.txt.
   
 ```
  var
@@ -72,10 +72,10 @@ An instance of the [File](file-data-type.md) data type.
 begin
     FileName := 'C:\TestFolder\TestFile.txt';  
     if EXISTS(FileName) then begin
-      TestFile.WRITEMODE(TRUE);  
-      TestFile.OPEN(FileName);  
-      TestFile.WRITE('Hello World');  
-      TestFile.CLOSE;  
+      TestFile.WriteMODE(TRUE);  
+      TestFile.Open(FileName);  
+      TestFile.Write('Hello World');  
+      TestFile.Close;  
     end else 
       MESSAGE('%1 does not exit.', FileName);  
 end;
