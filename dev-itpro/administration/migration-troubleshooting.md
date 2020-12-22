@@ -70,7 +70,7 @@ ALTER TABLE [YOUR TABLE] ENABLE CHANGE_TRACKING
 
 ## User permissions  
 
-> Database: online 
+> Database: online
 
 If a user has problems managing a cloud migration, like starting migration, initializing companies, or migrating data from earlier versions, check that:
 
@@ -83,9 +83,16 @@ Users without a license, such as internal administrators or delegated administra
 
 > Database: on-premises
 
-- Ensure that you're running the latest available version of the Azure Data Factory Integration Runtime (IR). You can check for and download the latest version from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=39717#:~:text=The%20Integration%20Runtime%20is%20a%20customer%20managed%20data,It%20was%20formerly%20called%20as%20Data%20Management%20Gateway).
+- Ensure that you're running the latest, compatible version of Microsoft Integration Runtime (IR).
 
-  Before you install a new IR version, uninstall the old version. When you uninstall the old version, choose to delete the user data (such as authentication key and data source credentials) when prompted. Then, install the Integration Runtime again and connect it to the online environment using the new authentication key. 
+    You can check for and download the latest version from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=39717#:~:text=The%20Integration%20Runtime%20is%20a%20customer%20managed%20data,It%20was%20formerly%20called%20as%20Data%20Management%20Gateway).
+
+    When downloading and installing Integration Runtime, choose version 5 (IntegrationRuntime_5.x.x.x.msi) only if your machine runs .NET Framework Runtime 4.7.2. Otherwise, or if in doubt, choose version 4 (IntegrationRuntime_4.x.x.x.msi).
+
+    > [!IMPORTANT]
+    > Running Integration Runtime v5 on a machine that doesn’t have .NET Framework Runtime 4.7.2 can cause timeouts when connecting to the on-premise SQL Server, which will break the cloud migration setup.
+  
+    Before you install a new Integration Runtime version, uninstall the old version. When you uninstall the old version, choose to delete the user data (such as authentication key and data source credentials) when prompted. Then, install the Integration Runtime again and connect it to the online environment using the new authentication key. 
 
 - If you get a "Failed to enable your replication." error when running the **Data Migration Setup** assisted setup, check the IR logs.
 
@@ -96,6 +103,8 @@ Users without a license, such as internal administrators or delegated administra
     The computer where IR is installed ideally shouldn't be switched off, go to sleep, or hibernate. If these conditions happen, the IR may get into an error state. In this case, we recommend that you reinstall the IR and turn off sleep hibernate on the computer. 
     
  - Make sure the machine, which you use for hosting IR has plenty of memory (RAM) available. Migration can be interrupted by your machine running out of memory, and you can find this issue described in the IR log. To prevent this situation, avoid running too many migrations simultaneously using the same IR. Every additional parallel migration slows down the overall progress considerably.
+
+If you experience problems with Microsoft Integration Runtime, also see [Troubleshoot self-hosted integration runtime](/azure/data-factory/self-hosted-integration-runtime-troubleshoot-guide).
 
 ## Migrating between multiple source and destination databases
 

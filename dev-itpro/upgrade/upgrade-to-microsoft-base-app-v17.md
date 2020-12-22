@@ -215,12 +215,13 @@ You can create the empty extension like any other extension by adding an AL proj
 2. Delete the HelloWorld.al sample file from the project.
 3. Modify the app.json file.
 
-    The important settings in the app.json file `"id"`, `"name"`, `"version"`, `"publisher"`, and `"dependencies"`.
+    The important settings in the app.json file are: `"id"`, `"name"`, `"version"`, `"publisher"`, `"dependencies"`, and `"runtime"`.
     
     - The `id` and `name` must match the value used by Microsoft's extensions.
     - Set the `version` to any version lower than 17.0.0.0, like 14.0.0.0.
     - You'll also have to include the `"publisher"`. You can use your own publisher name or `"Microsoft"`.
     - Remove all other settings. It's important that there are no `"dependencies"` set.
+    - Set the `runtime` to `"6.0"`.
 
     The app.json files for the **System Application** and **Base Application** extensions, should look similar to following examples:
     
@@ -230,7 +231,8 @@ You can create the empty extension like any other extension by adding an AL proj
       "id": "63ca2fa4-4f03-4f2b-a480-172fef340d3f",
       "name": "System Application",
       "publisher": "Microsoft",
-      "version": "14.0.0.0"
+      "version": "14.0.0.0",
+      "runtime": "6.0"
     ```
     
     **Base Application**   
@@ -239,7 +241,8 @@ You can create the empty extension like any other extension by adding an AL proj
       "id": "437dbf0e-84ff-417a-965d-ed2bb9650972",
       "name": "Base Application",
       "publisher": "Microsoft",
-      "version": "14.0.0.0"
+      "version": "14.0.0.0",
+      "runtime": "6.0"
     ```
 
 4.  Build and compile the extension package. To build the extension package, press Ctrl+Shift+B.
