@@ -392,6 +392,10 @@ POST https://api.businesscentral.dynamics.com/v2.0/<environmentName>/api/bctech/
 }
 ```
 
+
+> [!NOTE]  
+> The sample code is published to the BCTech repo. For more information, see [Introduction to Custom API](https://github.com/microsoft/BCTech/tree/master/samples/CustomAPI).
+
 ## General tips for custom APIs
 
 1. Use SystemId as the OData primary key.
@@ -399,7 +403,7 @@ POST https://api.businesscentral.dynamics.com/v2.0/<environmentName>/api/bctech/
     - Doing so enables the platform to generate ReferentialConstraints, that OData consumers can use to understand the relations between entities
     - The platform will also create bi-directional relationship if possible, allowing consumers to access to the parent by just adding “/parentEntity” in the URI
 3. Use Enumerations.
-3. Make sure to localize your custom API pages:
+4. Make sure to localize your custom API pages:
     - Use `EntityCaption` and `EntitySetCaption` properties
     - Use captions for Enums
     - All these localizations can be retrieved through `https://api.businesscentral.dynamics.com/v2.0/<environmentName>/api/<API publisher>/<API group>/<API version>/entityDefinitions`
