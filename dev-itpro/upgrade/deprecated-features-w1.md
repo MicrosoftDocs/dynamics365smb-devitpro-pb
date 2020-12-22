@@ -61,7 +61,7 @@ The following feature will be Removed with [!INCLUDE[prod_short](../developer/in
 
 |Moved, Removed, or Replaced? |Why?|
 |---------|---------|
-|Removed | OData V3 has been superseded by OData v4. OData V3 will be deprecated as of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1. It's recommended that integrations are migrated to OData v4 as soon as possible.  |
+|Removed | OData V3 has been superseded by OData v4. OData V3 is deprecated, and will be removed as of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1. It's recommended that integrations are migrated to OData v4 as soon as possible.  |
 
 ### Basic Auth / Web Service Access Keys for SaaS 
 The following feature will be Removed with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1.
