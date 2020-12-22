@@ -1,8 +1,8 @@
 ---
 title: "ExternalType Property"
-description: Specifies the name of the orginal table in the external database. 
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -10,14 +10,21 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # ExternalType Property
+> **Version**: _Available from runtime version 1.0._
 
-Specifies the data type of the corresponding field data type in the external database table. For example, tables in Dynamics 365 Sales database.
+Specifies the type of the original table field in the external database.
 
-## Applies to  
+Specify this property if the original type is different from the type that you specify in the Type property. This means that you can use a different type for the table.
 
-- Fields 
+## Applies to
+-   Table Field
+
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Property Value
 

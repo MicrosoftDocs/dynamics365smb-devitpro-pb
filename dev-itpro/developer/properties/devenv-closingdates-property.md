@@ -1,25 +1,29 @@
 ---
 title: "ClosingDates Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 9a98bc80-1b56-4f55-a31c-71a0609b9991
-caps.latest.revision: 9
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # ClosingDates Property
+> **Version**: _Available from runtime version 1.0._
 
-Sets a value that determines whether users can enter a closing date in this field. The default value is **false**.  
-  
-## Applies to  
-  
-- Table Fields  
-- Page Fields  
+Sets a value that determines whether users can enter a closing date in this field. The default value is False.
+
+## Applies to
+-   Table Field
+-   Page Field
+
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Property value
 
@@ -34,8 +38,6 @@ ClosingDates = true;
 ## Remarks  
 
 All dates have a corresponding closing date. A closing date is a period following the given date, but before the next date. Closing dates are sorted immediately after the corresponding date but before the next date.  
-  
- <!-- For fields, this property only applies to [Date and Time Methods](date-and-time-methods.md).  -->
   
 ## See Also  
 

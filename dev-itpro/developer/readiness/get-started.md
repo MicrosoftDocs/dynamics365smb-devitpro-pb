@@ -11,15 +11,15 @@ ms.date: 11/06/2020
 
 # Get Started with Building Apps
 
-[!INCLUDE [prodlong](../includes/prodlong.md)] is a business management solution that helps companies connect their financials, sales, services, and operations to streamline business processes, improve customer interactions and make better decisions. With this modern business platform, you can easily and quickly tailor, extend, and build applications so they fit your specific needs with little to no code development.
+[!INCLUDE [prod_long](../includes/prod_long.md)] is a business management solution that helps companies connect their financials, sales, services, and operations to streamline business processes, improve customer interactions and make better decisions. With this modern business platform, you can easily and quickly tailor, extend, and build applications so they fit your specific needs with little to no code development.
 
 Build a line-of-business app, such as for a specific industry, process, or department such as HR, finance, marketing, or operations. Then, publish your app to [the Microsoft commercial marketplace](https://appsource.microsoft.com/partners), where customers can find and try your app, and get in touch with you. For more information, see [What is the Microsoft commercial marketplace?](/azure/marketplace/overview).  
 
-Learn how you can become a [!INCLUDE [prodshort](../includes/prodshort.md)] app publisher in six steps in this article.  
+Learn how you can become a [!INCLUDE [prod_short](../includes/prod_short.md)] app publisher in six steps in this article.  
 
 ## Step 1: Become a partner
 
-Becoming a Microsoft partner gives you access to the Microsoft resources needed to build, market, and sell your apps. You don't have to be a Microsoft partner to begin developing your apps. But all of the steps below are required to gain access to the programs that enable you to publish, market, and sell your apps for [!INCLUDE [prodshort](../includes/prodshort.md)].
+Becoming a Microsoft partner gives you access to the Microsoft resources needed to build, market, and sell your apps. You don't have to be a Microsoft partner to begin developing your apps. But all of the steps below are required to gain access to the programs that enable you to publish, market, and sell your apps for [!INCLUDE [prod_short](../includes/prod_short.md)].
 
 ### Obtain your work account
 
@@ -35,9 +35,9 @@ For more information, see [Partner Center Account](/partner-center/partner-cente
 
 ### PartnerSource Business Center (PSBC) account
 
-Developing apps requires you to be known as [!INCLUDE [prodshort](../includes/prodshort.md)] developer and requires you to have a unique development license file with a specific object range.
+Developing apps requires you to be known as [!INCLUDE [prod_short](../includes/prod_short.md)] developer and requires you to have a unique development license file with a specific object range.
 
-To obtain an object range for developing a [!INCLUDE [prodshort](../includes/prodshort.md)], you must first have access to PartnerSource Business Center (PSBC). You have access to PSBC if you have one of the following agreements:
+To obtain an object range for developing a [!INCLUDE [prod_short](../includes/prod_short.md)], you must first have access to PartnerSource Business Center (PSBC). You have access to PSBC if you have one of the following agreements:
 
 - [An active Partner Registration Agreement](https://businesscenter.mbs.microsoft.com/#contentdetail/MSDpartneragreem) (PRA)
 
@@ -55,9 +55,9 @@ The relevant contract can be requested through your local Regional Operations Ce
 
 ### Requesting an object range
 
-When you develop an app for [!INCLUDE [prodshort](../includes/prodshort.md)], you must request access to an object range that holds a certain number of objects for your solution. To avoid overlap between objects used in different solution, each partner is assigned a number of objects in a unique object range. For example, a partner is assigned the object range 70,001,000 – 70,001,999. The object range gives them 1000 numbered objects that they can use to develop [!INCLUDE [prodshort](../includes/prodshort.md)] solutions.
+When you develop an app for [!INCLUDE [prod_short](../includes/prod_short.md)], you must request access to an object range that holds a certain number of objects for your solution. To avoid overlap between objects used in different solution, each partner is assigned a number of objects in a unique object range. For example, a partner is assigned the object range 70,001,000 – 70,001,999. The object range gives them 1000 numbered objects that they can use to develop [!INCLUDE [prod_short](../includes/prod_short.md)] solutions.
 
-Depending on where you will deploy your [!INCLUDE [prodshort](../includes/prodshort.md)] solution, online or on-premises, you can use different licensing methods and object ranges. There are currently two available ranges that you can request. Both have some characteristics to keep in mind:
+Depending on where you will deploy your [!INCLUDE [prod_short](../includes/prod_short.md)] solution, online or on-premises, you can use different licensing methods and object ranges. There are currently two available ranges that you can request. Both have some characteristics to keep in mind:
 
 - The RSP Object Range (1-69 million ID range)
 
@@ -68,12 +68,12 @@ Depending on where you will deploy your [!INCLUDE [prodshort](../includes/prodsh
 
 - The App Object Range (70-75 million ID range)
 
-    This object range was originally designed to run in the [!INCLUDE [prodshort](../includes/prodshort.md)] service only for apps in the Microsoft commercial marketplace.
+    This object range was originally designed to run in the [!INCLUDE [prod_short](../includes/prod_short.md)] service only for apps in the Microsoft commercial marketplace.
 
     > [!IMPORTANT]
     > We currently advise NEW Publishers to request an App Object Range.
 
-Currently, you can implement apps developed in both the RSP Range and the app object range in [!INCLUDE [prodshort](../includes/prodshort.md)] online and on-premises, as well as partner-hosted.
+Currently, you can implement apps developed in both the RSP Range and the app object range in [!INCLUDE [prod_short](../includes/prod_short.md)] online and on-premises, as well as partner-hosted.
 
 You can request an object range by downloading the object range request form [here](https://businesscenter.mbs.microsoft.com/#contentdetail/RegisterSolutionProgram). After completion, send them to your Regional Operational Center (ROC) for processing:
 
@@ -95,7 +95,7 @@ In your extension, the name of each new application object must contain [a prefi
 
 Get access to preview builds by joining Microsoft Collaborate.
 
-In Microsoft Collaborate, you get access to a set of [!INCLUDE [prodshort](../includes/prodshort.md)] builds:
+In Microsoft Collaborate, you get access to a set of [!INCLUDE [prod_short](../includes/prod_short.md)] builds:
 
 - The current major version
 - An upcoming major version
@@ -125,13 +125,11 @@ To add coworkers:
 
 1. Sign in to Microsoft Collaborate with your Global Administrator account at [aka.ms/Collaborate](https://aka.ms/Collaborate).
 
-2. Choose the :::image type="content" source="../media/settings_icon_small.png" alt-text="Settings icon"::: icon in the top-right corner of the page, click on account settings, and then choose **Developer Settings**.
+2. Choose the :::image type="content" source="../media/settings_icon_small.png" alt-text="Settings icon"::: icon in the top-right corner of the page,  click on account settings, and choose **user management**.
 
-3. Choose **Users** under **Settings** in the grey panel on the left-hand side of the page.
+3. Choose the grey **ADD USERS** button, and leave the default choice to **Add existing users** as-is. Now you can search for the user(s) that you want to add to Collaborate. To add them you need to select them from the menu, and then click the grey **ADD SELECTED** button.
 
-4. Choose the grey **ADD USERS** button, and leave the default choice to **Add existing users** as-is. Now you can search for the user(s) that you want to add to Collaborate. To add them you need to select them from the menu, and then click the grey **ADD SELECTED** button.
-
-5. You have successfully added your coworkers to Collaborate. Users can now sign in to Microsoft Collaborate using the following link: [aka.ms/Collaborate](https://aka.ms/Collaborate)
+4. You have successfully added your coworkers to Collaborate. Users can now sign in to Microsoft Collaborate using the following link: [aka.ms/Collaborate](https://aka.ms/Collaborate)
 
 ### Step 4 B: Getting access to the available builds and engagements
 
@@ -146,7 +144,7 @@ After sending the email, expect a response from Microsoft within 1-2 business da
 
 ## Step 5: Resources while you develop your solution
 
-Find below some guiding resources on how to develop your apps for [!INCLUDE [prodshort](../includes/prodshort.md)].
+Find below some guiding resources on how to develop your apps for [!INCLUDE [prod_short](../includes/prod_short.md)].
 
 - Microsoft Learn
 
@@ -166,7 +164,7 @@ Find below some guiding resources on how to develop your apps for [!INCLUDE [pro
 
 - Get coaching from experts
 
-    Need help with developing your apps? There is a community of [ISV Development Centers](https://partner.microsoft.com/isv-resource-hub/development-centers) specialized in [!INCLUDE [prodshort](../includes/prodshort.md)] ready to engage with you.
+    Need help with developing your apps? There is a community of [ISV Development Centers](https://partner.microsoft.com/isv-resource-hub/development-centers) specialized in [!INCLUDE [prod_short](../includes/prod_short.md)] ready to engage with you.
 
 ### Set up Azure DevOps for your development processes
 
@@ -183,7 +181,7 @@ Before you submit, we recommend that you review the [technical validation checkl
 ## See also
 
 [The SMB Opportunity for App Publishers](opportunity-app-publisher.md)  
-[The Lifecycle of Apps and Extensions for [!INCLUDE [prodshort](../includes/prodshort.md)]](../devenv-app-life-cycle.md)  
+[The Lifecycle of Apps and Extensions for [!INCLUDE [prod_short](../includes/prod_short.md)]](../devenv-app-life-cycle.md)  
 [Update Lifecycle for AppSource Apps FAQ](../devenv-update-app-life-cycle-faq.md)  
-[Maintain AppSource Apps and Per-Tenant Extensions in [!INCLUDE [prodshort](../includes/prodshort.md)] Online](../app-maintain.md)  
-[Microsoft Responsibilities for Apps on [!INCLUDE [prodshort](../includes/prodshort.md)] online](../../deployment/microsoft-responsibilities.md)  
+[Maintain AppSource Apps and Per-Tenant Extensions in [!INCLUDE [prod_short](../includes/prod_short.md)] Online](../app-maintain.md)  
+[Microsoft Responsibilities for Apps on [!INCLUDE [prod_short](../includes/prod_short.md)] online](../../deployment/microsoft-responsibilities.md)  

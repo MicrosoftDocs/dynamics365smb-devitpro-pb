@@ -9,15 +9,15 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms. search.keywords: deprecated, Czech, local functionality
-ms.date: 10/01/2020
+ms.date: 12/11/2020
 ms.reviewer: edupont
 ms.author: v-zdbice
 
 ---
 
-# Deprecated Features in the Czech Version of [!INCLUDE [prodlong](../developer/includes/prodlong.md)]
+# Deprecated Features in the Czech Version of [!INCLUDE [prod_long](../developer/includes/prod_long.md)]
 
-This topic lists and describes the local functionality for Czech that has been removed from [!INCLUDE[prodshort](../developer/includes/prodshort.md)], made available from a new page or report, or replaced by a new feature.
+This topic lists and describes the local functionality for Czech that has been removed from [!INCLUDE[prod_short](../developer/includes/prod_short.md)], made available from a new page or report, or replaced by a new feature.
 
 ## Statutory Company Information
 
@@ -42,7 +42,7 @@ A new setup was added for this feature – **FA Extended Posting Group** table. 
 
 |Moved, Removed, or Replaced?|Why?|When?|
 |----|----|----|
-|Moved|The functionality for Different types of disposal and maintenance in the Czech version has been moved to the Different types of disposal and maintenance (CZ) extension. For more information, see [Different types of disposal and maintenance (CZ) Extension](/dynamics365/business-central/LocalFunctionality/Czech/ui-extensions-different-disposal-maintenance-types-cz) in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] documentation. |2020 release wave 2|
+|Moved|The functionality for Different types of disposal and maintenance in the Czech version will be moved to the Fixed Asset Localization for Czech extension. |2021 release wave 1|
 
 ## Posting Description
 
@@ -183,7 +183,7 @@ When you create finance charge terms and reminder terms, for delayed payment pen
 
 ## Deletion of Posted Documents feature
 
-The majority of legislation's requires companies to keep their electronic record indefinitely or for a specific period of time. In order to avoid situation of accidental deletion of Sales and Purchase documents, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] prevents users to do this.
+The majority of legislation's requires companies to keep their electronic record indefinitely or for a specific period of time. In order to avoid situation of accidental deletion of Sales and Purchase documents, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] prevents users to do this.
 
 |Moved, Removed, or Replaced?|Why?|When?|
 |----|----|----|
@@ -277,11 +277,11 @@ This feature enhance standard functionality to completely disallows the user to 
 
 In earlier versions, the character limit for **Description** and **Name** fields was 50. Therefore was a new field **Full Description** in all master data tables introduced to fulfill legal requirements for master data naming.
 
-You can now enter up to 100 characters in all **Description** and **Name** fields across [!INCLUDE[prodshort](../developer/includes/prodshort.md)] and it covers now the business need that this functionality was introduced.
+You can now enter up to 100 characters in all **Description** and **Name** fields across [!INCLUDE[prod_short](../developer/includes/prod_short.md)] and it covers now the business need that this functionality was introduced.
 
 ### Posted Warehouse Documents cannot be deleted
 
-The majority of legislation's requires companies to keep their electronic record indefinitely or for a specific period of time. In order to avoid situation of accidental deletion of Warehouse documents, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] prevents users to do this.
+The majority of legislation's requires companies to keep their electronic record indefinitely or for a specific period of time. In order to avoid situation of accidental deletion of Warehouse documents, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] prevents users to do this.
 
 ### Indivisible Unit of Measure
 
@@ -309,7 +309,7 @@ Additional feature for disabling balance check by **Correction** field in Genera
 |----|----|----|
 |Removed| Lack of use. The business need that this functionality was introduced to cover is no longer relevant. Functionality will be deleted.|CU for 01.2021 2019 release wave 2|
 
-## Objects and Fields that are deleted in [!INCLUDE [prodlong](../developer/includes/prodlong.md)]
+## Objects and Fields that are deleted in [!INCLUDE [prod_long](../developer/includes/prod_long.md)]
 
 The following list shows additional fields that are deleted as a result of the features that have been removed.  
 

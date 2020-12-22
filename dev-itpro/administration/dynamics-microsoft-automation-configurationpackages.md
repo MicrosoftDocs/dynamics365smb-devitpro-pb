@@ -35,6 +35,7 @@ Represents a configurationPackage resource type in [!INCLUDE[d365fin_long_md](..
 
 | Property | Type |Description                             |
 |:----------------|:-----|:---------------------------------------|
+|id               |Guid  |Id of the configurationPackage.|
 |code               |string  |code of the configurationPackage.|
 |packageName      |string|Name of the configurationPackage.    |
 |languageId|int|Id of the language.|
@@ -58,6 +59,7 @@ Here is a JSON representation of the extension.
 
 ```json
 {
+    "id": "b6d25c66-f33d-eb11-846f-0022482037e2",
     "code": "RAS2",
     "packageName": "SAMPLE",
     "languageId": 0,

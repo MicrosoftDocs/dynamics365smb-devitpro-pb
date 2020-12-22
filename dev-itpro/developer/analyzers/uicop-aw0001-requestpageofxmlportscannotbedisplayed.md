@@ -22,7 +22,7 @@ The Web client does not support displaying the Request page of XMLPorts.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Remarks
 
-This rule applies only to [!INCLUDE[prodshort](../../includes/prodshort.md)] Spring 2019 and earlier versions. Request pages for XMLPorts are supported as of [!INCLUDE[prodshort](../../includes/prodshort.md)] 2019 release wave 2.
+This rule applies only to [!INCLUDE[prod_short](../../includes/prod_short.md)] Spring 2019 and earlier versions. Request pages for XMLPorts are supported as of [!INCLUDE[prod_short](../../includes/prod_short.md)] 2019 release wave 2.
 
 ## See Also  
 [UICop Analyzer](uicop.md)  

@@ -1,19 +1,19 @@
 ---
 title: "Cumulative updates for the Spring 2019 version"
 description: "Learn about the cumulative updates for Dynamics 365 Business Central Spring 2019 on-premises deployments."
-author: MartinNielander
+author: jswymer
 ms.custom: na
 ms.reviewer: edupont
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.author: martinni
-ms.date: 10/01/2020
+ms.author: jswymer
+ms.date: 12/07/2020
 
 ---
 
 # Dynamics 365 Business Central On-Premises Spring 2019 Updates
 
-This article lists cumulative updates released for the October'18 release of Microsoft Dynamics 365 Business Central on-premises. A cumulative update is a cumulative set of files that includes hotfixes and regulatory features for Business Central. If you have customers using Business Central October'18 on-premises, we recommend applying the latest cumulative update. For customers using Business Central online, check the [Business Central Admin center](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center) to see whether the tenants have been updated.
+This article lists cumulative updates released for the Spring '19 release of Microsoft Dynamics 365 Business Central on-premises. A cumulative update is a cumulative set of files that includes hotfixes and regulatory features for Business Central. If you have customers using Business Central Spring '19 on-premises, we recommend applying the latest cumulative update. For customers using Business Central online, check the [Business Central Admin center](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center) to see whether the tenants have been updated.
 
 Each cumulative update is intended mainly for solutions that are experiencing the problems described in the Support articles linked to below. However, you're advised to always keep your solution updated with the latest cumulative update. Support professionals in Customer Support Services are ready to help you if:
 
@@ -33,6 +33,7 @@ The following table lists the cumulative updates that have been released for the
 
 |Knowledge Base ID                                           |Title                |Release date  |Build No. |Local versions included |
 |------------------------------------------------------------|---------------------|--------------|----------|------------------------|
+|[4583550](https://support.microsoft.com/help/4583550) |Cumulative Update 19 |December 2020|Application 14.20.45741</br>Platform Build 14.0.14.0.45739|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
 |[4583511](https://support.microsoft.com/help/4583511) |Cumulative Update 18 |November 2020|Application 14.19.45386</br>Platform Build 14.0.45365|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
 |[4583496](https://support.microsoft.com/help/4583496) |Cumulative Update 17 |October 2020|Application 14.18.44963</br>Platform Build 14.0.44962|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
 |[4576662](https://support.microsoft.com/help/4576662) |Cumulative Update 16 |September 2020|Application 14.17.44663</br>Platform Build 14.0.44656|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|

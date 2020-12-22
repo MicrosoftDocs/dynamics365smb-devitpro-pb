@@ -9,7 +9,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 author: jswymer
 ---
-# Change Collation of an Existing [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
+# Change Collation of an Existing [!INCLUDE[prod_short](../developer/includes/prod_short.md)]
 
 You can't change the collation directly in the current database. To change the collation, you must create a new database that uses the correct collation. Then, export the data from the original database and import it to the new database. You'll use SQL Server Management Studio and the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]. 
 
@@ -86,7 +86,7 @@ Follow these steps if one or more extensions are installed on the tenant. If the
     Sync-NAVApp -ServerInstance <server instance>  -Tenant <tenant ID> -Name "<extension name>" -Version <version number>
     ```
 
-    For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 release wave 2 and later (version 15), you may be using the System Application, Base Application, Application extensions. If so, synchronize these extensions first, in the listed order.
+    For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2019 release wave 2 and later (version 15), you may be using the System Application, Base Application, Application extensions. If so, synchronize these extensions first, in the listed order.
 
    <!--
     If you want to synchronize all published extensions, then you can use the [Get-NAVAppInfo cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/get-navappinfo), for example:

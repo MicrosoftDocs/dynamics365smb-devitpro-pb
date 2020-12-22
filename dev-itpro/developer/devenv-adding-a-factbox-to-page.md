@@ -87,7 +87,7 @@ There are two system parts that you can define by using the `systempart()` keywo
 |  Notes | Allows the user to write a note on the record shown in the page. For example, when creating a sales order, a user can add a note about the order. The note will appear with the item when it is viewed.|
 
 > [!NOTE] 
-> The `systempart` keyword also includes an `Outlook` and `MyNotes`value, for example, `systempart(Outlook; Outlook)`. These values are only supported by the [!INCLUDE[nav_windows_md](includes/nav_windows_md.md)] (which has been deprecated after [!INCLUDE[prodshort](includes/prodshort.md)] Spring 2019). These values are ignored in the [!INCLUDE[nav_web_md](includes/nav_web_md.md)].
+> The `systempart` keyword also includes an `Outlook` and `MyNotes`value, for example, `systempart(Outlook; Outlook)`. These values are only supported by the [!INCLUDE[nav_windows_md](includes/nav_windows_md.md)] (which has been deprecated after [!INCLUDE[prod_short](includes/prod_short.md)] Spring 2019). These values are ignored in the [!INCLUDE[nav_web_md](includes/nav_web_md.md)].
 
 ## Filtering data that is displayed on a page in a FactBox
 
@@ -129,7 +129,7 @@ page 50101 "Simple Customerlist Page"
 
 ## Performance considerations
 
-Having a page composed of multiple FactBox pages that each process data from different sources can degrade performance. To improve responsiveness and the time it takes to load the page, [!INCLUDE[prodshort](includes/prodshort.md)] 2020 release wave 2 and later optimizes the sequence in which content is loaded. The sequence is as follows:
+Having a page composed of multiple FactBox pages that each process data from different sources can degrade performance. To improve responsiveness and the time it takes to load the page, [!INCLUDE[prod_short](includes/prod_short.md)] 2020 release wave 2 and later optimizes the sequence in which content is loaded. The sequence is as follows:
 
 1. Content on the hosting page is loaded first, and users can immediately begin interacting with it.
 2. The FactBox pane is loaded next, where each FactBox is loaded independently in sequence starting from the top.
@@ -163,10 +163,10 @@ This optimization doesn't apply to Role Center pages. When parts are used in the
 There's no AL API to force FactBoxes to load along with the content of the hosting page.
 
 #### Can I set the FactBox pane to start collapsed on all pages?
-No. The default state of the FactBox pane is set by the [!INCLUDE[prodshort](includes/prodshort.md)] platform and modifed by the user.
+No. The default state of the FactBox pane is set by the [!INCLUDE[prod_short](includes/prod_short.md)] platform and modifed by the user.
 
 #### Does the experience vary on different browsers?
-Each browser has its own definition of whether a FactBox is considered within view or not. For example, opening [!INCLUDE[prodshort](includes/prodshort.md)] in a new browser tab and quickly switching back to the original tab may pause loading of any FactBoxes in the new tab.
+Each browser has its own definition of whether a FactBox is considered within view or not. For example, opening [!INCLUDE[prod_short](includes/prod_short.md)] in a new browser tab and quickly switching back to the original tab may pause loading of any FactBoxes in the new tab.
 
 #### Does this optimization apply to other form factors?
 This applies to desktop, tablet, and phone clients.

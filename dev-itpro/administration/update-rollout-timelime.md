@@ -15,7 +15,7 @@ ms.author: edupont
 
 # Major Updates of Business Central Online
 
-This article provides an overview of what you need to know about how a major [!INCLUDE[prod short](../developer/includes/prodshort.md)] update rolls out. It includes key dates, actions you need take, and answers some common questions.  
+This article provides an overview of what you need to know about how a major [!INCLUDE[prod short](../developer/includes/prod_short.md)] update rolls out. It includes key dates, actions you need take, and answers some common questions.  
 
 ## Timelines for major updates
 
@@ -32,7 +32,7 @@ The following table describes the milestones with example dates for the two rele
 |Last scheduled update date|May 31 |November 30|The last date you can choose to extend your upgrade date to, typically 30 days after the update is available but extended to 60 days for 2020 release wave 2.|
 
 > [!IMPORTANT]
-> As announced in the [blog post](https://aka.ms/covid19Blog), in response to COVID-19, Microsoft made some changes to the update schedules in April, 2020. Specifically for [!INCLUDE [prodshort](../developer/includes/prodshort.md)], existing customers were given 60 days to upgrade after the new version was made generally available. The extended 60 days update window also applies to 2020 release wave 2 updates.
+> As announced in the [blog post](https://aka.ms/covid19Blog), in response to COVID-19, Microsoft made some changes to the update schedules in April, 2020. Specifically for [!INCLUDE [prod_short](../developer/includes/prod_short.md)], existing customers were given 60 days to upgrade after the new version was made generally available. The extended 60 days update window also applies to 2020 release wave 2 updates.
 
 Dates and times differ significantly across countries and regions. Make sure that you have set up notifications in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] so that you're notified when the next major update is available.  
 
@@ -66,7 +66,7 @@ If Microsoft can't do the update on the selected date, you'll be notified by ema
 
 In some cases, even after the update is available in your area, you may still not be able to set the update date (schedule environment update). This condition can happen for one of the following reasons:  
 
-- Your environment has not yet updated to the latest minor update of the previous version of [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. All environments must be updated to the last available minor update of the previous version of [!INCLUDE [prodshort](../developer/includes/prodshort.md)] before they can be scheduled to be updated to the next major version. You can check the version information in the **Troubleshooting** section of the **Help and Support** page in [!INCLUDE [prodshort](../developer/includes/prodshort.md)] as well as in the **Version Management** section in [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)]. For more information, see [Version numbers in Business Central](version-numbers.md).  
+- Your environment has not yet updated to the latest minor update of the previous version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. All environments must be updated to the last available minor update of the previous version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] before they can be scheduled to be updated to the next major version. You can check the version information in the **Troubleshooting** section of the **Help and Support** page in [!INCLUDE [prod_short](../developer/includes/prod_short.md)] as well as in the **Version Management** section in [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)]. For more information, see [Version numbers in Business Central](version-numbers.md).  
 
     Microsoft is actively working on updating all environments to the latest minor update as soon as possible. In most cases, your environment will be scheduled for the major update soon, and you'll get a chance to change the date to the one that fits you better. In the unlikely situation that your environment is updated to the last minor update around or even after the last selectable update date, you'll still get a least seven days to schedule the update.  
 
@@ -80,7 +80,7 @@ In some cases, even after the update is available in your area, you may still no
 
     If you discover any such issues, apply the changes to your solution as usual using Visual Studio Code, and test the new app in a sandbox environment that runs on the new major version (either in preview or officially available). If tests complete successfully, upload the new app version into your production environment in the **Extension Management** page, setting the **Deploy to** field to **Next major version**. This way the compatible version of your app will be used when your environment is updated. For more information, see [Deploying a Tenant Customization](../developer/devenv-deploy-tenant-customization.md).  
 
-- The AppSource apps that are installed in your environment are not yet available for the next major version of Business Central[!INCLUDE [prodshort](../developer/includes/prodshort.md)]. While the AppSource apps are normally kept up-to-date by the partners who own them, it can happen that a particular app needs more time to prepare for the next major update and is not yet available for it. In this situation, please contact the app owner to understand their availability plans.  
+- The AppSource apps that are installed in your environment are not yet available for the next major version of Business Central[!INCLUDE [prod_short](../developer/includes/prod_short.md)]. While the AppSource apps are normally kept up-to-date by the partners who own them, it can happen that a particular app needs more time to prepare for the next major update and is not yet available for it. In this situation, please contact the app owner to understand their availability plans.  
 
 ## Postponed updates
 

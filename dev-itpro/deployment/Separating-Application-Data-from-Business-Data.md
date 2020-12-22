@@ -11,7 +11,7 @@ author: jswymer
 ---
 # Separating Application Data from Business Data
 
-[!INCLUDE[prodshort](../developer/includes/prodshort.md)] separates tables that describe the application from the tables that contain business data. Depending on your deployment scenario, you can choose to store all [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tables in one database, or you can export the application tables to a dedicated database. In multitenant deployments, the application must be stored in a dedicated database.  
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] separates tables that describe the application from the tables that contain business data. Depending on your deployment scenario, you can choose to store all [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tables in one database, or you can export the application tables to a dedicated database. In multitenant deployments, the application must be stored in a dedicated database.  
   
 ## Application Database versus Business Data Databases
 
@@ -21,7 +21,7 @@ author: jswymer
   
  For example, if you want to modify a report, you modify the report object in the application database. Then, when you deploy the updated application to your production environment, when a user accesses the report, they see the modified report.  
   
- [!INCLUDE[prodshort](../developer/includes/prodshort.md)] includes [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] cmdlets that help you export application tables to a dedicated database, and other cmdlets to help you maintain a multitenant deployment. For more information, see [Business Central Windows PowerShell Cmdlets](/powershell/business-central/overview).  
+ [!INCLUDE[prod_short](../developer/includes/prod_short.md)] includes [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] cmdlets that help you export application tables to a dedicated database, and other cmdlets to help you maintain a multitenant deployment. For more information, see [Business Central Windows PowerShell Cmdlets](/powershell/business-central/overview).  
   
 ### Distribution of the System Tables in Each Database
   
@@ -72,9 +72,9 @@ The application tables are system tables that define the application. Other syst
 
 ## Exporting the Application Tables to a Dedicated Application Database
 
-To export the application tables from an existing database to another database, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] provides a [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] cmdlet as part of the [!INCLUDE[adminshell](../developer/includes/adminshell.md)].  
+To export the application tables from an existing database to another database, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] provides a [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] cmdlet as part of the [!INCLUDE[adminshell](../developer/includes/adminshell.md)].  
 
-The following procedure illustrates how you can separate the application tables in an existing database into two databases: an application database and a business data database. You can automate this process and combine it with the use of other cmdlets. For more information, see the samples in the Windows PowerShell scripts in the **…\\WindowsPowerShellScripts\\Multitenancy\\** folder on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] product media.  
+The following procedure illustrates how you can separate the application tables in an existing database into two databases: an application database and a business data database. You can automate this process and combine it with the use of other cmdlets. For more information, see the samples in the Windows PowerShell scripts in the **…\\WindowsPowerShellScripts\\Multitenancy\\** folder on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] product media.  
 
 ### Export the application tables to a dedicated database  
 
@@ -139,7 +139,7 @@ The following procedure illustrates how you can separate the application tables 
     |Business Central App|Application database|Contains the tables that define the application.|  
 
     <!--
-    You must take additional steps to get the final business data database operational. For an example of how you can write a script that runs the cmdlet for creating an application database, see the **…\\Windows PowerShell\\Multitenancy\\** folder on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] product media. For an example of how to write individual commands in Windows PowerShell, see the **Example** section.
+    You must take additional steps to get the final business data database operational. For an example of how you can write a script that runs the cmdlet for creating an application database, see the **…\\Windows PowerShell\\Multitenancy\\** folder on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] product media. For an example of how to write individual commands in Windows PowerShell, see the **Example** section.
     
     -->  
 6. Clear the `DatabaseName` setting in the [!INCLUDE[server](../developer/includes/server.md)] instance configuration file by using the [Set-NAVServerConfiguration](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) cmdlet: 
@@ -168,9 +168,9 @@ For more information, see [Business Central Windows PowerShell Cmdlets](/powersh
 
 ## Example
   
- The following code example illustrates how you can manually write commands in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] administration shell. The commands create an application database based on an existing [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database.  
+ The following code example illustrates how you can manually write commands in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] administration shell. The commands create an application database based on an existing [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database.  
 
- The sample commands are assumed to run in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] administration shell based on the [!INCLUDE[demolong](../developer/includes/demolong_md.md)] on a local computer.  
+ The sample commands are assumed to run in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] administration shell based on the [!INCLUDE[demolong](../developer/includes/demolong_md.md)] on a local computer.  
 
 ```  
 Stop-NAVServerInstance –ServerInstance 'businesscentral_server_instance' 
@@ -184,7 +184,7 @@ Mount-NAVTenant –ServerInstance 'businesscentral_server_instance' -Id tenant1 
 In the example, the commands stop the [!INCLUDE[server](../developer/includes/server.md)] service, creates the application database, clears the default database name in the server configuration, and then restarts the service. Then, the application database and the tenant database are mounted, and the configuration is saved in the Tenants.config file on the server. As a result, you have an application database and a single-tenant deployment. When you try to open the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)], an error displays because you have not specified a tenant. So in the **Select Server** window, in the **Server Address** field, add the tenant ID to the address. In this example, the address is **localhost:7046/[!INCLUDE[serverinstance](../developer/includes/serverinstance.md)]/tenant1**.  
 
 > [!TIP]  
->  For an example of how you can automate the process of transferring user accounts from the original database to the new application database, see the HowTo-ExportNAVApplicationDatabase.ps1 sample script. This and other sample scripts are in the **…\\Windows PowerShell\\Multitenancy\\** folder on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] product media. The ExportNAVApplicationDatabase.ps1 sample script can be run in the context of the NAVUpgradeSamples.psm1 script module file. When you call a script such as this, it will export the application tables to a new application database and copy all accounts and SQL Server user roles to the application database. To only transfer the account that the [!INCLUDE[server](../developer/includes/server.md)] instance uses, use the *–ServiceAccount* parameter for the **Export-NAVApplication** cmdlet. In the examples in this topic, this parameter has not been specified. As a result, the default account, NT AUTHORITY\\NETWORK SERVICE, is set up with the required user roles.  
+>  For an example of how you can automate the process of transferring user accounts from the original database to the new application database, see the HowTo-ExportNAVApplicationDatabase.ps1 sample script. This and other sample scripts are in the **…\\Windows PowerShell\\Multitenancy\\** folder on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] product media. The ExportNAVApplicationDatabase.ps1 sample script can be run in the context of the NAVUpgradeSamples.psm1 script module file. When you call a script such as this, it will export the application tables to a new application database and copy all accounts and SQL Server user roles to the application database. To only transfer the account that the [!INCLUDE[server](../developer/includes/server.md)] instance uses, use the *–ServiceAccount* parameter for the **Export-NAVApplication** cmdlet. In the examples in this topic, this parameter has not been specified. As a result, the default account, NT AUTHORITY\\NETWORK SERVICE, is set up with the required user roles.  
 
 ## See Also
 

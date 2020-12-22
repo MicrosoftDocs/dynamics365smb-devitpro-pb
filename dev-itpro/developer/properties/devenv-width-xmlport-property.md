@@ -13,12 +13,17 @@ author: SusanneWindfeldPedersen
 ---
 
 # Width Property (XMLport)
+> **Version**: _Available from runtime version 1.0._
 
 Sets the width of a data item of an XMLport.  
   
 ## Applies to  
 
-- Data items in XMLports 
+-   Xml Port Text Element
+-   Xml Port Field Element
+-   Xml Port Table Element
+-   Xml Port Field Attribute
+-   Xml Port Text Attribute
 
 ## Syntax
 

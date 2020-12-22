@@ -101,7 +101,7 @@ Occurs when an extension compiles successfully on the service. An extension comp
 | result|**Success**|
 | serverExecutionTime|Specifies the amount of time it took the server to complete the request. The time has the format hh:mm:ss.sssssss.|
 | totalTime|Specifies the amount of time it took to process the request. The time has the format hh:mm:ss.sssssss.|
-| telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
+| telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 
 <!--
 ### Example
@@ -142,7 +142,7 @@ Occurs when an extension failed to compile on the service. An extension compiles
 | result|**Failure**|
 | serverExecutionTime|Specifies the amount of time it took the server to complete the request. The time has the format hh:mm:ss.sssssss.|
 | totalTime|Specifies the amount of time it took to process the request. The time has the format hh:mm:ss.sssssss.|
-| telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
+| telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 
 ## <a name="publishedsuccess"></a>Extension published successfully
 
@@ -177,7 +177,7 @@ Occurs when an extension published successfully on the service. <!--For on-premi
 | serverExecutionTime|Specifies the amount of time it took the server to complete the request. The time has the format hh:mm:ss.sssssss.|
 | sqlExecutes|Specifies the number of SQL statements that the request executed. |
 | sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.|
-| telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
+| telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 | totalTime|Specifies the amount of time it took to process the request. The time has the format hh:mm:ss.sssssss.|
 
 <!--
@@ -220,7 +220,7 @@ Occurs when an extension failed publish on the service. <!--For on-premises, an 
 | serverExecutionTime|Specifies the amount of time it took the server to complete the request. The time has the format hh:mm:ss.sssssss.|
 | sqlExecutes|Specifies the number of SQL statements that the request executed. |
 | sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.|
-| telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
+| telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 | totalTime|Specifies the amount of time it took to process the request. The time has the format hh:mm:ss.sssssss.|
 
 ## <a name="unpublishedsuccess"></a>Extension unpublished successfully
@@ -255,7 +255,7 @@ Occurs when an extension was unpublished successfully on the service. <!--An ext
 | serverExecutionTime|Specifies the amount of time it took the server to complete the request. The time has the format hh:mm:ss.sssssss.|
 | sqlExecutes|Specifies the number of SQL statements that the request executed. |
 | sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.|
-| telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
+| telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 | totalTime|Specifies the amount of time it took to process the request. The time has the format hh:mm:ss.sssssss.|
 
 <!--
@@ -296,7 +296,7 @@ Occurs when an extension fails to unpublish on the service.
 | serverExecutionTime|Specifies the amount of time it took the server to complete the request. The time has the format hh:mm:ss.sssssss.|
 | sqlExecutes|Specifies the number of SQL statements that the request executed. |
 | sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.|
-| telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
+| telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 | totalTime|Specifies the amount of time it took to process the request. The time has the format hh:mm:ss.sssssss.|
 
 <!--
@@ -341,7 +341,7 @@ Occurs when an extension synchronizes successfully on the tenant.
 | serverExecutionTime|Specifies the amount of time it took the server to complete the request. The time has the format hh:mm:ss.sssssss.|
 | sqlExecutes|Specifies the number of SQL statements that the request executed. |
 | sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.|
-| telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
+| telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 | totalTime|Specifies the amount of time it took to process the request. The time has the format hh:mm:ss.sssssss.|
 
 <!--
@@ -384,7 +384,7 @@ Occurs when an extension fails to synchronize on the tenant.
 | serverExecutionTime|Specifies the amount of time it took the server to complete the request. The time has the format hh:mm:ss.sssssss.|
 | sqlExecutes|Specifies the number of SQL statements that the request executed. |
 | sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.|
-| telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
+| telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 | totalTime|Specifies the amount of time it took to process the request. The time has the format hh:mm:ss.sssssss.|
 
 ## <a name="installedsuccess"></a>Extension installed successfully
@@ -419,7 +419,7 @@ Occurs when an extension installs successfully on a tenant.
 | serverExecutionTime|Specifies the amount of time it took the server to complete the request. The time has the format hh:mm:ss.sssssss.|
 | sqlExecutes|Specifies the number of SQL statements that the request executed. |
 | sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.|
-| telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
+| telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 | totalTime|Specifies the amount of time it took to process the request. The time has the format hh:mm:ss.sssssss.|
 <!--
 ### Example:
@@ -459,7 +459,7 @@ Occurs when an extension failed to install on a tenant.
 | serverExecutionTime|Specifies the amount of time it took the server to complete the request. The time has the format hh:mm:ss.sssssss.|
 | sqlExecutes|Specifies the number of SQL statements that the request executed. |
 | sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.|
-| telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
+| telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 | totalTime|Specifies the amount of time it took to process the request. The time has the format hh:mm:ss.sssssss.|
 
 <!--
@@ -500,7 +500,7 @@ Occurs when an extension is successfully uninstalled from a tenant.
 | serverExecutionTime|Specifies the amount of time it took the server to complete the request. The time has the format hh:mm:ss.sssssss.|
 | sqlExecutes|Specifies the number of SQL statements that the request executed. |
 | sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.|
-| telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
+| telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 | totalTime|Specifies the amount of time it took to process the request. The time has the format hh:mm:ss.sssssss.|
 
 <!--
@@ -542,7 +542,7 @@ Occurs when an extension failed to uninstall on a tenant.
 | serverExecutionTime|Specifies the amount of time it took the server to complete the request. The time has the format hh:mm:ss.sssssss.|
 | sqlExecutes|Specifies the number of SQL statements that the request executed. |
 | sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.|
-| telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
+| telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 | totalTime|Specifies the amount of time it took to process the request. The time has the format hh:mm:ss.sssssss.|
 
 <!--
@@ -587,7 +587,7 @@ Occurs when an extension updates successfully on the service. <!--The update ope
 | serverExecutionTime|Specifies the amount of time it took the server to complete the request. The time has the format hh:mm:ss.sssssss.|
 | sqlExecutes|Specifies the number of SQL statements that the request executed. |
 | sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.|
-| telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
+| telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 | totalTime|Specifies the amount of time it took to process the request. The time has the format hh:mm:ss.sssssss.|
 <!--
 ### Example
@@ -629,7 +629,7 @@ Occurs when an extension failed to update on the service. <!--The update operati
 | serverExecutionTime|Specifies the amount of time it took the server to complete the request. The time has the format hh:mm:ss.sssssss.|
 | sqlExecutes|Specifies the number of SQL statements that the request executed. |
 | sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.|
-| telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
+| telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 | totalTime|Specifies the amount of time it took to process the request. The time has the format hh:mm:ss.sssssss.|
 
 <!--

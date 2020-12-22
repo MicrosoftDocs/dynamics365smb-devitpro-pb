@@ -16,7 +16,7 @@ author: SusanneWindfeldPedersen
 # NavApp.GetCallerModuleInfo Method
 > **Version**: _Available from runtime version 6.0._
 
-Gets information about the extension that contains the method that called the currently running method. For example, if method 1 (in extension A) calls method 2 (in extension B), which then calls GetCallerModuleInfo, GetCallerModuleInfo will return information about extension B. 
+Gets information about the extension that contains the method that called the currently running method. For example, if method 1 (in extension A) calls method 2 (in extension B), which calls GetCallerModuleInfo, then GetCallerModuleInfo will return information about extension B. 
 
 > [!NOTE]
 > This method is supported only in Business Central on-premises.

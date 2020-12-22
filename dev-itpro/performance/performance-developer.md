@@ -13,7 +13,7 @@ author: KennieNP
 
 # Performance Articles For Developers
 
-In this article, you can read about ways to tune performance when developing for [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
+In this article, you can read about ways to tune performance when developing for [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 - [Writing efficient pages](performance-developer.md#writing-efficient-pages)  
 - [Writing efficient Web Services](performance-developer.md#writing-efficient-web-services)  
@@ -35,7 +35,7 @@ There are a number of patterns that a developer can use to get a page to load fa
 
 To avoid unnecessary recalculation of expensive results, consider caching the data and refresh the cache on a regular basis. Let's say you want to show the top five open sales orders or a VIP customers list on the role center. The content of such a list probably doesn't change significantly every hour. There's no need to calculate that from raw data every time the page is loaded. Instead, create a table that can contain the calculated data and refresh every hour/day using a background job.
 
-Another example of unexpected recalculation is when using query objects. In contrast to using the record API, query results aren't cached in the primary key cache in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] server. Any use of a query object will always go to the database. So, sometimes it's faster to not use a query object. 
+Another example of unexpected recalculation is when using query objects. In contrast to using the record API, query results aren't cached in the primary key cache in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server. Any use of a query object will always go to the database. So, sometimes it's faster to not use a query object. 
 
 ### Pattern - Do less
 
@@ -43,7 +43,7 @@ One way to speed up things is to reduce the work that the system must do. For ex
 
 Remove calculated fields from lists if they aren't needed, especially on larger tables. Also, if indexing is inadequate, calculated fields can significantly slow down a list page.
 
-Consider creating dedicated lookup pages instead of the normal pages when adding a lookup (the one that looks like a dropdown) from a field. Default list pages will run all triggers and FactBoxes even if they aren't shown in the lookup. For example, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 release wave 1 added dedicated lookup pages for Customer, Vendor, and Item to the Base Application.
+Consider creating dedicated lookup pages instead of the normal pages when adding a lookup (the one that looks like a dropdown) from a field. Default list pages will run all triggers and FactBoxes even if they aren't shown in the lookup. For example, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2019 release wave 1 added dedicated lookup pages for Customer, Vendor, and Item to the Base Application.
  
 ### Pattern - Offloading the UI thread 
 
@@ -53,14 +53,14 @@ For more information about Page Background Tasks, see [Page Background Tasks](..
 
 ## Writing efficient Web Services
 
-[!INCLUDE[prodshort](../developer/includes/prodshort.md)]  supports for Web services to make it easier to integrate with external systems. As a developer, you need to think about performance of web services both seen from the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] server (the endpoint) and as seen from the consumer (the client). 
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)]  supports for Web services to make it easier to integrate with external systems. As a developer, you need to think about performance of web services both seen from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server (the endpoint) and as seen from the consumer (the client). 
 
 ### Endpoint performance  
 
 #### Anti-patterns (do not do this)
 Avoid using standard UI pages to expose as web service endpoints. Many things, like FactBoxes, aren't exposed in OData, but will use resources to compute.
 
-Things that have historically caused performance on pages that are exposed as endpoints are:
+Things that have historically caused performance issues on pages that are exposed as endpoints are:
 
 - Heavy logic in `OnAfterGetCurrRecord`
 - Many SIFT fields 
@@ -70,7 +70,7 @@ Avoid exposing calculated fields, because calculated fields are expensive. Try t
 
 Don't use temp tables as a source if you have a lot of records. Temp tables based APIs are a performance hit. The server has to fetch and insert every record, and there is no caching on data in temp tables. Paging becomes difficult to do in a performant manner. A rule of thumb is if you have more than 100 records, don't use temp tables.
 
-Don't insert child records belonging to same parent in parallel. This causes locks on Sales Header and Integration Record tables because parallel calls try to update the same parent record. The solution is to wait for the first call to finish or use $batch, which will make sure calls get executed one after another.
+Don't insert child records belonging to same parent in parallel. This causes locks on parent and Integration Record tables because parallel calls try to update the same parent record. The solution is to wait for the first call to finish or use $batch, which will make sure calls get executed one after another.
 
 #### Performance patterns (do this)
 - Instead of exposing UI pages as web service endpoints, use the built-in API pages because they've been optimized for this scenario. Select the highest API version available. Don't use the beta version of the API pages. To read more about API pages, see [API Page Type](../developer/devenv-api-pagetype.md).
@@ -85,7 +85,7 @@ Don't insert child records belonging to same parent in parallel. This causes loc
 
 ### Web service client performance 
 
-The online version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] server has set up throttling limits on web service endpoints to ensure that excessive traffic can't cause stability and performance issues.
+The online version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server has set up throttling limits on web service endpoints to ensure that excessive traffic can't cause stability and performance issues.
 
 Make sure that your client respects the two HTTP status codes *429 (Too Many Requests)* and *504 (Gateway Timeout)*.
 
@@ -243,7 +243,7 @@ Many performance issues are related to how data is defined, accessed, and modifi
   
 ### Tables and keys 
 
-Many performance issues can be traced back to missing indexes (also called keys in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]), but index design is often not a key skill for AL developers. For best performance, even with large amounts of data, it's imperative to design appropriate indexes according to the way your code will access data. 
+Many performance issues can be traced back to missing indexes (also called keys in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]), but index design is often not a key skill for AL developers. For best performance, even with large amounts of data, it's imperative to design appropriate indexes according to the way your code will access data. 
 
 These articles on indexing are worth knowing as an AL developer:
 
@@ -256,7 +256,7 @@ Indexes have a cost to update, so it's recommended to not use them too frequentl
  
 ### SumIndexField Technology (SIFT)
 
-SumIndexField Technology (SIFT) lets you quickly calculate the sums of numeric data type columns in tables, even in tables with thousands of records. The data type includes Decimal, Integer, BigInteger, and Duration. SIFT optimizes the performance of FlowFields and query results in a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application. 
+SumIndexField Technology (SIFT) lets you quickly calculate the sums of numeric data type columns in tables, even in tables with thousands of records. The data type includes Decimal, Integer, BigInteger, and Duration. SIFT optimizes the performance of FlowFields and query results in a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application. 
 
 Ensure appropriate SIFT indices for all FlowFields of type sum or count. 
 
@@ -293,7 +293,7 @@ Read more here:
 
 ## Using Read-Scale Out
 
-[!INCLUDE[prodshort](../developer/includes/prodshort.md)] supports the **Read Scale-Out** feature in Azure SQL Database and SQL Server. **Read Scale-Out** is used to load-balance analytical workloads in the database that only read data.  **Read Scale-Out** is built in as part of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, but it can also be enabled for on-premises.
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] supports the **Read Scale-Out** feature in Azure SQL Database and SQL Server. **Read Scale-Out** is used to load-balance analytical workloads in the database that only read data.  **Read Scale-Out** is built in as part of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, but it can also be enabled for on-premises.
 
 **Read Scale-Out** applies to queries, reports, or API pages. With these objects, instead of sharing the primary, they can be set up to run against a read-only replica. This setup   essentially isolates them from the main read-write workload so that they won't affect the performance of business processes.
 
@@ -301,7 +301,7 @@ As a developer, you control **Read Scale-Out** on report, API page, and query ob
 
 ## Testing and validating performance 
 
-It's imperative to test and validate a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] project before deploying it to production. In this section, you find resources on how to analyze and troubleshoot performance issues and guidance on how to validate performance of a system. 
+It's imperative to test and validate a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] project before deploying it to production. In this section, you find resources on how to analyze and troubleshoot performance issues and guidance on how to validate performance of a system. 
 
 ### Performance Unit Testing
 

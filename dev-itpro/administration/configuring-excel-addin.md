@@ -10,11 +10,11 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ---
-# Setting up the Excel Add-In for Editing [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Data
+# Setting up the Excel Add-In for Editing [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Data
 
-You can set up the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] deployment to support an Excel add-in that enables users in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client to work with data from list pages in Excel. Users can get fresh data from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] into Excel and push updated data from Excel to [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
+You can set up the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] deployment to support an Excel add-in that enables users in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client to work with data from list pages in Excel. Users can get fresh data from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] into Excel and push updated data from Excel to [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
-Without this add-in, users can open a list page in Excel from the **Open in Excel** action on the page. But the **Open in Excel** action doesn't allow them to push changed data back to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. When this add-in is set up, the **Open in Excel** action is replaced by the **Edit in Excel** action.
+Without this add-in, users can open a list page in Excel from the **Open in Excel** action on the page. But the **Open in Excel** action doesn't allow them to push changed data back to [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. When this add-in is set up, the **Open in Excel** action is replaced by the **Edit in Excel** action.
 
 > [!NOTE]  
 > This feature is only available for the Web client.
@@ -43,19 +43,19 @@ Your deployment must meet the following prerequisites:
 
   For more information, see [Configure the Web Server to Accept Host Names for Tenants](configure-web-server-to-accept-host-names-for-tenants.md).  
 
-- [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client computers have a supported version of Excel.
+- [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client computers have a supported version of Excel.
 
    For more information, see [System Requirements](../deployment/System-Requirement-business-central.md#WebClient).
 
 ## Expose the Business Central application Web API in Azure AD 
 
-When [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is configured for Azure AD authentication, the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application is registered as an application in an Azure AD. Before the Excel add-in can be configured, you must configure the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application in Azure AD to expose its Web API.
+When [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is configured for Azure AD authentication, the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application is registered as an application in an Azure AD. Before the Excel add-in can be configured, you must configure the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application in Azure AD to expose its Web API.
 
 For information about how to expose the Web API, see [Quickstart: Configure an application to expose web APIs](/azure/active-directory/develop/quickstart-configure-app-expose-web-apis).
 
 ## Register and configure an Azure AD application for the Excel Add-in in Microsoft Azure
 
-When Azure AD authentication was set up for your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] deployment, an Azure AD tenant was created in Microsoft Azure, and an application for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] was registered in the tenant. The Excel add-in requires that you add (register) a separate Azure AD application in the Azure AD tenant.
+When Azure AD authentication was set up for your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] deployment, an Azure AD tenant was created in Microsoft Azure, and an application for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] was registered in the tenant. The Excel add-in requires that you add (register) a separate Azure AD application in the Azure AD tenant.
 
 1. Register an Azure AD application for the Excel add-in.
 
@@ -71,7 +71,7 @@ When Azure AD authentication was set up for your [!INCLUDE[prodshort](../develop
 
     <!--
         |Directory Access|Choose **Single Sign-On**.|
-            |App ID URI|The URI to a domain in your Azure AD tenant, such as *https://solutions.onmicrosoft.com/ExcelAddinforBusinessCentral*. **Important:**  The App ID URI must be unique within the Azure AD tenant and not the same as you specified for your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution.|
+            |App ID URI|The URI to a domain in your Azure AD tenant, such as *https://solutions.onmicrosoft.com/ExcelAddinforBusinessCentral*. **Important:**  The App ID URI must be unique within the Azure AD tenant and not the same as you specified for your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] solution.|
                 |Sign-on URL (App URL)|The URI for signing in to your [!INCLUDE[nav_web_server](../developer/includes/nav_web_server_md.md)], such as `https://www.solutions.com/BC`|
     -->
     When completed, the **Overview** displays in the portal for the new Excel Add-in application.
@@ -85,9 +85,9 @@ When Azure AD authentication was set up for your [!INCLUDE[prodshort](../develop
         The **Application ID URI** box displays the default application ID URI, which has the format `api://<guid>`, such as `api://70b20a51-46b7-4290-8686-b79ec90379f6`. You can keep this value or change it. The application ID URI must be a valid URI starting with HTTPS, API, URN, MS-APPX. It must not end in a slash. For example, `https://cronusinternationltd.onmicrosoft.com/ExcelAddinforBusinessCentral`.
     3. Select **Save** when done.
 -->
-2. Grant the Excel add-in application permission to access the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application Web API.
+2. Grant the Excel add-in application permission to access the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application Web API.
 
-    Give the Azure AD application for the Excel add-in delegated permission to access the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application Web API in Azure AD (which you exposed earlier in this article). This permission allows users of the Excel add-in to access the OData web services to read and write data.  
+    Give the Azure AD application for the Excel add-in delegated permission to access the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application Web API in Azure AD (which you exposed earlier in this article). This permission allows users of the Excel add-in to access the OData web services to read and write data.  
 
     1. From the application's **Overview**, select **API Permissions**.
     2. Select the **Add a permission**
@@ -148,7 +148,7 @@ You add the Excel add-in to the [!INCLUDE[server](../developer/includes/server.m
 Network services such as proxies or firewalls must allow routing between each client device on which the Add-In is installed and a number of service endpoints. For a list of endpoints, see [Preparing your network for the Excel Add-In](configuring-network-for-addins.md).  
 
 ## Use the Excel Add-In
-Your users can now use the Excel add-in. When a list page shows the **Edit in Excel** action, then users can open lists, such as the **Customers** page, in Excel and work with the data there. They use the add-in to update data in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] and get fresh data from the database.  
+Your users can now use the Excel add-in. When a list page shows the **Edit in Excel** action, then users can open lists, such as the **Customers** page, in Excel and work with the data there. They use the add-in to update data in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] and get fresh data from the database.  
 
 <!-- > [!NOTE]  
 >  The pages that your users want to work on in Excel must be published as web services. -->

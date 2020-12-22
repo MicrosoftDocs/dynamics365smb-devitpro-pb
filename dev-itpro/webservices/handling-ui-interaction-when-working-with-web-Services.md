@@ -12,7 +12,7 @@ ms.service: "dynamics365-business-central"
 
 Whether you are publishing or consuming web services, exceptions and dialog boxes that may be displayed while code runs must be handled correctly. Exceptions must be handled to prevent the system from ending the web service client execution. You can handle exceptions in the following ways:  
   
--   Writing conditional code inside [!INCLUDE[prodshort](../developer/includes/prodshort.md)].  
+-   Writing conditional code inside [!INCLUDE[prod_short](../developer/includes/prod_short.md)].  
   
 -   Writing the code in the web service client application.  
   
@@ -21,7 +21,7 @@ Whether you are publishing or consuming web services, exceptions and dialog boxe
 ## Publishing Web Services  
  When publishing a web service, you must make sure that the code that you are publishing does not assume the ability to interact with a user through the UI. You can use the [GUIALLOWED Method](../developer/methods/devenv-GUIALLOWED-Method.md) to suppress the UI. For example, you can use this method to determine whether a codeunit is being called from the client or from a web service client. You must make sure to suppress errors when a codeunit is called from a web service client.  
   
- When implementing a conditional code check in [!INCLUDE[prodshort](../developer/includes/prodshort.md)], you should implement the check only around code that could cause an error. You should not encapsulate the whole business logic.  
+ When implementing a conditional code check in [!INCLUDE[prod_short](../developer/includes/prod_short.md)], you should implement the check only around code that could cause an error. You should not encapsulate the whole business logic.  
   
 > [!NOTE]  
 >  The server returns the following exception when trying to invoke a dialog UI through a web service: **Microsoft.Dynamics.Nav.Types.Exceptions.NavNCLCallbackNotAllowedException: Callback functions are not allowed.**  
@@ -50,7 +50,7 @@ Variables of the [Dialog Data Type](../developer/datatypes/devenv-Dialog-Data-Ty
 You should also avoid operations on client-side Automation and .NET Framework interoperability objects.  
   
 ## Consuming Web Services  
-You must handle exceptions in client code that calls a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] web service. Appropriate exception capturing code should be included around any call to a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] web service.  
+You must handle exceptions in client code that calls a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] web service. Appropriate exception capturing code should be included around any call to a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] web service.  
   
 ## See Also  
  [Web Services Overview](web-services.md)   

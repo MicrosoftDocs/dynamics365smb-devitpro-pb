@@ -11,6 +11,8 @@ author: SusanneWindfeldPedersen
 ---
 
 # Promoted Property
+> **Version**: _Available from runtime version 1.0._
+
 The **Promoted** property is applicable to the following types:
 
 - [Promoted (Actions) Property](devenv-promoted-action-property.md)  

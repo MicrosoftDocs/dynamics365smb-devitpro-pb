@@ -2,7 +2,7 @@
 title: "Text Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 12/09/2020
+ms.date: 12/10/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -32,7 +32,7 @@ The following methods are available on the Text data type.
 |[InsStr(String, String, Integer)](text-insstr-method.md)|Inserts a substring into a string.|
 |[LowerCase(String)](text-lowercase-method.md)|Converts all letters in a string to lowercase.|
 |[MaxStrLen(String)](text-maxstrlen-string-method.md)|Gets the maximum defined length of a string variable.|
-|[MaxStrLen(Variant)](text-maxstrlen-variant-method.md)|Gets the maximum defined length of a variant variable. Calling this method always results in a run-time exception.|
+|[MaxStrLen(Variant)](text-maxstrlen-variant-method.md)|Gets the maximum defined length of a variant variable.|
 |[PadStr(String, Integer [, String])](text-padstr-method.md)|Changes the length of a string to a specified length. If the string is shorter than the specified length, length spaces are added at the end of the string to match the length. If the string is longer than the specified length, the string is truncated. If the specified length is less than 0, an exception is thrown.|
 |[SelectStr(Integer, String)](text-selectstr-method.md)|Retrieves a substring from a comma-separated string.|
 |[StrCheckSum(String [, String] [, Integer])](text-strchecksum-method.md)|Calculates a checksum for a string that contains a number. If the source is empty, 0 is returned. Each char in the source and in the weight must be a numeric character 0-9, otherwise an exception is thrown. If the WeightString parameter is shorter then the source, it is padded with '1' up until the length of source. If the WeightString parameter is longer than the source, an exception is thrown.|

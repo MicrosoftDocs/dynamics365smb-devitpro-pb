@@ -6,20 +6,20 @@ ms.custom: na
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 11/04/2020
+ms.date: 12/16/2020
 ms.author: edupont
 ---
 
-# Authoring Guide for [!INCLUDE[prodlong](../developer/includes/prodlong.md)]
+# Authoring Guide for [!INCLUDE[prod_long](../developer/includes/prod_long.md)]
 
-If you are contributing to the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] Help, or if you are customizing and extending the Microsoft content for your own solution, you will probably want to use the same tools, processes, and style guide that Microsoft uses.  
+If you are contributing to the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] Help, or if you are customizing and extending the Microsoft content for your own solution, you will probably want to use the same tools, processes, and style guide that Microsoft uses.  
 
 ## Resources
 
 - The [Microsoft Writing Style Guide](/style-guide/welcome/) is published online
   
-  The content on the Docs.microsoft.com site generally follows the Microsoft Writing Style Guide. The content for [!INCLUDE [prodshort](../developer/includes/prodshort.md)] varies in certain ways, partly with product-specific terminology, and a generally more conservative approach to contractions, for example.
-- [Extend, Customize, and Collaborate on the Help](contributor-guide.md) shows you the basics of collaborating on content for [!INCLUDE [prodshort](../developer/includes/prodshort.md)]
+  The content on the Docs.microsoft.com site generally follows the Microsoft Writing Style Guide. The content for [!INCLUDE [prod_short](../developer/includes/prod_short.md)] varies in certain ways, partly with product-specific terminology, and a generally more conservative approach to contractions, for example.
+- [Extend, Customize, and Collaborate on the Help](contributor-guide.md) shows you the basics of collaborating on content for [!INCLUDE [prod_short](../developer/includes/prod_short.md)]
 
 - The [Docs Contributor Guide](/contribute/) has many tips and tricks for authoring in MarkDown
 
@@ -45,13 +45,13 @@ Both formats are valid MarkDown, and both formats are supported by DocFx.exe. Fo
 
 ## Authoring in MarkDown
 
-The [!INCLUDE [prodshort](../developer/includes/prodshort.md)] content is styled using a MarkDown syntax as described below. Extended guidance is available in the [MarkDown Reference](/contribute/markdown-reference) section in the Docs Contributor Guide.
+The [!INCLUDE [prod_short](../developer/includes/prod_short.md)] content is styled using a MarkDown syntax as described below. Extended guidance is available in the [MarkDown Reference](/contribute/markdown-reference) section in the Docs Contributor Guide.
 
 ### Headings
 
 Use `#` for headings. For more information, see [Headings](/contribute/markdown-reference#headings) in the Docs Contributor Guide.  
 
-In the source files for the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] content, which publishes as English (US) on the Docs.microsoft.com site, the title of an article is expected to use Title Case (capitalize each word, except prepositions) whereas subsequent headings use Sentence case (capitalize the first word, only). The Microsoft Writing Style Guide recommends a different approach.
+In the source files for the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] content, which publishes as English (US) on the Docs.microsoft.com site, the title of an article is expected to use Title Case (capitalize each word, except prepositions) whereas subsequent headings use Sentence case (capitalize the first word, only). The Microsoft Writing Style Guide recommends a different approach.
 
 ### Metadata
 
@@ -111,6 +111,17 @@ For tables in the body, use the markdown syntax. The Docs Authoring Pack for Vis
 ```
 
 MarkDown syntax for nested tables is limited, so we recommend using HTML-syntax for nested tables in ordered and unordered lists use HTML-syntax.
+
+### Placeholders
+
+Rather than repeating text in two or more articles, use *includes*. For more information, see [Included Markdown files](/contribute/markdown-reference#included-markdown-files).  
+
+For [!INCLUDE [prod_short](../includes/prod_short.md)], we use includes for boilerplate text, for content that is repeated in more than one article, and for the product name. That way, we can make changes in just one location - and so can you.  
+
+> [!TIP]
+> In the [dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs) repo, the includes are in the `business-central\includes` subfolder.
+>
+> In December 2020, the two placeholders for the product name, prodshort.md and prodlong.md, were renamed to prod_short.md and prod_long.md. The change solved a problem internally at Microsoft, because we have a tool that helps identify spelling error, and that tool generated warnings for prodshort.md and prodlong.md.
 
 ### Comment syntax
 

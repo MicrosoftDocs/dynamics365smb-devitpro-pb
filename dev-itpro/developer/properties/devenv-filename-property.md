@@ -1,24 +1,28 @@
 ---
 title: "FileName Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: jswymer
+author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # FileName Property
+> **Version**: _Available from runtime version 1.0._
 
-[!INCLUDE[windows_client_only](../includes/windows_client_only.md)]
+Sets the name of the external file to read data from or write data to an XmlPort.
 
-Sets the name of the external file to read data from or write data to an XMLport.  
-  
-## Applies to  
-  
-- XMLports  
+## Applies to
+-   Xml Port
+
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Syntax
 

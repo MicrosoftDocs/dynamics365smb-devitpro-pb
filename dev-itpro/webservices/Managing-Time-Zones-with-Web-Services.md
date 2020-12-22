@@ -22,12 +22,12 @@ author: jswymer
 |Server Time Zone|Specifies that services use the time zone of the computer that is running [!INCLUDE[server](../developer/includes/server.md)].|  
 |*ID of any Windows time zone*|Specifies that services use a Windows time zone as defined in the system registry under HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Time Zones. For example, Romance Standard Time is a valid Windows time zone value.|  
   
- When a web service writes data back to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] , dates and times are based on the setting of the Services Default Time Zone setting. However, the web service consumer can override the setting and specify a different time zone.  
+ When a web service writes data back to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] , dates and times are based on the setting of the Services Default Time Zone setting. However, the web service consumer can override the setting and specify a different time zone.  
   
 > [!NOTE] 
 >  [!INCLUDE[server](../developer/includes/server.md)] stores dates and times as UTC. When a web service receives data from [!INCLUDE[server](../developer/includes/server.md)], the time zone is UTC even if the Services Default Time Zone setting is set to a different time zone.  
   
- For example, if the Services Default Time Zone setting is set to **UTC+3**, the following table describes two scenarios where a web service consumer modifies [!INCLUDE[prodshort](../developer/includes/prodshort.md)] data and sends this back to [!INCLUDE[server](../developer/includes/server.md)].  
+ For example, if the Services Default Time Zone setting is set to **UTC+3**, the following table describes two scenarios where a web service consumer modifies [!INCLUDE[prod_short](../developer/includes/prod_short.md)] data and sends this back to [!INCLUDE[server](../developer/includes/server.md)].  
   
 |Web service changes the DateTime field to|[!INCLUDE[server](../developer/includes/server.md)] interprets the DateTime value as|[!INCLUDE[server](../developer/includes/server.md)] saves the DateTime value as|  
 |-----------------------------------------------|---------------------------------------------------------------|----------------------------------------------------------|  

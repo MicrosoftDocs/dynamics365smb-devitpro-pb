@@ -10,12 +10,12 @@ ms.service: "dynamics365-business-central"
 ---
 # Using FlowFilters in OData URIs
 
-You can set FlowFilters on the data that your OData web service extracts from the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database.  
+You can set FlowFilters on the data that your OData web service extracts from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database.  
   
 FlowFilters are a special kind of filter that you use to set ranges on calculations that are shown in FlowFields. For more information, see [FlowFilter Overview](../developer/devenv-flowfilter-overview.md). FlowFilters for a page are included in the metadata for that page when it is published as a web service. You can then use FlowFilters as filters in a URI that specifies a query against page data. However, only those FlowFilters that are required to calculate the FlowFields that are exposed on the page as controls are included.  
   
 ## Use FlowFilters to Query Data on the Item Card Page  
- In this procedure, you create and publish a web service from the **Item Card** page in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] and then query the data in that web service by using a FlowFilter.  
+ In this procedure, you create and publish a web service from the **Item Card** page in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] and then query the data in that web service by using a FlowFilter.  
   
 1.  Register and publish a page web service by using the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)]. See [Publishing a Web Service](publish-web-service.md).
 

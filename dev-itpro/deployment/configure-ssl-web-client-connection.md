@@ -12,9 +12,9 @@ ms.assetid: 8079f309-e5ca-4d23-a6b9-412892a565ad
 caps.latest.revision: 23
 author: jswymer
 ---
-# Configuring SSL to Secure the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Web Client Connection
+# Configuring SSL to Secure the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Web Client Connection
 
-We recommend that you secure [!INCLUDE[prodshort](../developer/includes/prodshort.md)] data that is transmitted over the Internet by enabling Secure Sockets Layer \(SSL\) on the connection to [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)].  
+We recommend that you secure [!INCLUDE[prod_short](../developer/includes/prod_short.md)] data that is transmitted over the Internet by enabling Secure Sockets Layer \(SSL\) on the connection to [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)].  
   
 *SSL* is a web protocol that encrypts data that is transmitted over a network to make the data and the network more secure and reliable. A website that is enabled with SSL uses Hypertext Transfer Protocol Secure \(HTTPS\) instead of Hypertext Transfer Protocol \(HTTP\) as a communication protocol. Enabling SSL on a website requires that an SSL certificate is installed on the web server. An SSL certificate is a small file that the web server uses to prove its identity and establish a trusted connection with the browser that is trying to access [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]. When a browser connects to the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)], the web server replies by sending its certificate to the browser. This certificate contains the web server's public encryption key and the name of the authority that granted the certificate. The browser verifies the certificate using the authority's public key.  
   
@@ -28,7 +28,7 @@ To configure SSL, you must follow the steps in this article.
 ##  <a name="Cert"></a> Obtaining and Installing an SSL Certificate  
 In a production environment, you should obtain an SSL certificate from a certification authority. Some large organizations may have their own certification authorities, and other organizations can request a certificate from a third-party organization. In a test environment or development environment, you can create your own self-signed certificate.  
   
-##  <a name="Binding"></a> Adding an HTTPS Binding That Uses the Certificate on the [!INCLUDE[prodlong](../developer/includes/prodlong.md)] Website  
+##  <a name="Binding"></a> Adding an HTTPS Binding That Uses the Certificate on the [!INCLUDE[prod_long](../developer/includes/prod_long.md)] Website  
  After you get the certificate, you add a binding to the https protocol on the website. When you add the binding, you associate it with the certificate.  
   
 ### Add an https binding with the certificate to the website  
@@ -37,7 +37,7 @@ In a production environment, you should obtain an SSL certificate from a certifi
   
 2.  In the **Connections** pane, expand the **Sites** node, and then choose the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] site to which you want to add the binding.  
   
-     By default, the site has the name **[!INCLUDE[prodlong](../developer/includes/prodlong.md)] Web Client**.  
+     By default, the site has the name **[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Web Client**.  
   
 3.  In the **Actions** pane, choose **Bindings**.  
   

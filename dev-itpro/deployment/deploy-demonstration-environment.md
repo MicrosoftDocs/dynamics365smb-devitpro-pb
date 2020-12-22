@@ -10,9 +10,9 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ---
-# Deploying a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Demonstration Environment
+# Deploying a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Demonstration Environment
 
-This deployment scenario installs the major [!INCLUDE[prodshort](../developer/includes/prodshort.md)] components on a single computer, complete with a base application and database with demonstration data. After the installation, you will have an end-to-end environment, where you can access [!INCLUDE[prodshort](../developer/includes/prodshort.md)] data from the Web client. The installation requires minimal hardware resources, preparation, and configuration.  
+This deployment scenario installs the major [!INCLUDE[prod_short](../developer/includes/prod_short.md)] components on a single computer, complete with a base application and database with demonstration data. After the installation, you will have an end-to-end environment, where you can access [!INCLUDE[prod_short](../developer/includes/prod_short.md)] data from the Web client. The installation requires minimal hardware resources, preparation, and configuration.  
 
 ## Installed Components and Configuration  
 
@@ -55,7 +55,7 @@ This scenario uses the default setting of [!INCLUDE[prodsetup](../developer/incl
 
     -   OData web services port: 7048  
 
--   [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database components configuration:  
+-   [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database components configuration:  
 
     -   Service instance: BCDEMO  
 
@@ -65,7 +65,7 @@ This scenario uses the default setting of [!INCLUDE[prodsetup](../developer/incl
 
 ## Prepare for the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] installation  
 
-1.  Get access to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation media. For example, this could be a DVD or network drive that contains the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation files.  
+1.  Get access to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] installation media. For example, this could be a DVD or network drive that contains the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] installation files.  
 
 2.  Make sure that the computer meets the hardware and software requirements.  
 
@@ -74,22 +74,22 @@ This scenario uses the default setting of [!INCLUDE[prodsetup](../developer/incl
 
 ## Run [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)]  
 
-1.  From the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation media, run the setup.exe file to start the [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)].  
+1.  From the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] installation media, run the setup.exe file to start the [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)].  
 
-2. Follow the setup until you get to the **[!INCLUDE[prodlong](../developer/includes/prodlong.md)]** page, then choose **Advanced installation option** > **Install Demo**.  
+2. Follow the setup until you get to the **[!INCLUDE[prod_long](../developer/includes/prod_long.md)]** page, then choose **Advanced installation option** > **Install Demo**.  
 
     The installation starts. This can take several minutes.  
 
 ## Open the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]  
 
--   To open the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] from the computer where you installed [!INCLUDE[prodshort](../developer/includes/prodshort.md)], on the **Start** menu, choose **All Programs**, and then choose **[!INCLUDE[prodshort](../developer/includes/prodshort.md)] Web Client**.  
+-   To open the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] from the computer where you installed [!INCLUDE[prod_short](../developer/includes/prod_short.md)], on the **Start** menu, choose **All Programs**, and then choose **[!INCLUDE[prod_short](../developer/includes/prod_short.md)] Web Client**.  
 
 -   To open the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] from other devices on the network, open an Internet browser, and type the following URL in the address box:
 
     ```
     https://ComputerName:8080/BC150  
     ```
-    Substitute **ComputerName** with the name of the computer where you installed [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. If you are working on the computer where you installed [!INCLUDE[prodshort](../developer/includes/prodshort.md)], then you can use **localhost**.  
+    Substitute **ComputerName** with the name of the computer where you installed [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. If you are working on the computer where you installed [!INCLUDE[prod_short](../developer/includes/prod_short.md)], then you can use **localhost**.  
 
     For example:
 

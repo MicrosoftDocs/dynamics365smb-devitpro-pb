@@ -16,7 +16,7 @@ ms.author: solsen
 
 [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] is a business management solution that helps companies connect their financials, sales, service, and operations to streamline business processes, improve customer interactions, and make better decisions.  
 
-[!INCLUDE[prodshort](../includes/prodshort.md)] creates multiple [opportunities for partners to provide apps or consulting services](https://aka.ms/businesscentralapps) on Microsoft AppSource.
+[!INCLUDE[prod_short](../includes/prod_short.md)] creates multiple [opportunities for partners to provide apps or consulting services](https://aka.ms/businesscentralapps) on Microsoft AppSource.
 
 The "Ready to Go" program is designed to support you in the journey of bringing offerings to market. The program contains learning, coaching, and tooling. Use the tabs below to read more about the elements of the "Ready to Go" program.  
 
@@ -61,7 +61,7 @@ The blog talks about opportunities, processes, programs, and tools for the Busin
 Use the GitHub forum to post questions about AL to the community and Microsoft experts here: [https://github.com/microsoft/al/issues](https://github.com/microsoft/al/issues).
 
 ### Follow "Ready to Go" activity on social media
-Get insights into what's happening with [!INCLUDE[prodshort](../../includes/prodshort.md)]. Follow us on [Twitter](https://twitter.com/search?q=%23ReadyToGo%20%23MSDYN365BC&src=typd). 
+Get insights into what's happening with [!INCLUDE[prod_short](../../includes/prod_short.md)]. Follow us on [Twitter](https://twitter.com/search?q=%23ReadyToGo%20%23MSDYN365BC&src=typd). 
 
 ### Learn more about the offering types
 + [Build Add-on apps: https://aka.ms/BusinessCentralAddonApps](https://aka.ms/BusinessCentralAddonApps)  

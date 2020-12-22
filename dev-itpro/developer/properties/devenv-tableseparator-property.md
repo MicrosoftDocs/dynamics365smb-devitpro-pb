@@ -1,36 +1,29 @@
 ---
 title: "TableSeparator Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 02bbb812-0ff4-429a-b1c0-8b28270a781b
-caps.latest.revision: 10
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # TableSeparator Property
+> **Version**: _Available from runtime version 1.0._
 
-Specifies the table separator for a table.  
-  
-## Applies to  
-  
-- XMLports  
-  
-## Property Value  
-  
-|**Value**|**Description**|  
-|---------------|---------------------|  
-|**\<None>**|There is no table separator.|  
-|**\<NewLine>**|Any combination of CR and LF characters.|  
-|**\<CR/LF>**|CR followed by LF.|  
-|**\<CR>**|CR alone.|  
-|**\<LF>**|LF alone.|  
-|**\<TAB>**|Tabulator alone.|  
-|**Other strings**|The literal string entered.|  
+Specifies the table separator for a table.
+
+## Applies to
+-   Xml Port
+
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 
 ## Syntax
 

@@ -10,7 +10,7 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
-# Using Key Vault Secrets in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Extensions
+# Using Key Vault Secrets in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Extensions
 
 [!INCLUDE[2020_releasewave2](../includes/2020_releasewave2.md)]
 
@@ -23,7 +23,7 @@ Developing an extension to use secrets from a key vault involves two tasks, as d
 
 ## Preparation
 
-- Using secrets requires that you have at least one Azure Key Vault with secrets set up and configured for use by the service. If you don't already have an Azure Key Vault, see [Setting up App Key Vaults for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online](../administration/setup-app-key-vault.md) or [Setting up App Key Vaults for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises](../administration/setup-app-key-vault-onprem.md).
+- Using secrets requires that you have at least one Azure Key Vault with secrets set up and configured for use by the service. If you don't already have an Azure Key Vault, see [Setting up App Key Vaults for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online](../administration/setup-app-key-vault.md) or [Setting up App Key Vaults for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises](../administration/setup-app-key-vault-onprem.md).
 
 - For coding, you'll need the URI the Azure Key Vault that stores the secret and the name of the secret itself. If you don't have this information, you can get it from Azure portal. For instructions, see [Quickstart: Set and retrieve a secret from Azure Key Vault using the Azure portal](/azure/key-vault/secrets/quick-create-portal).
 
@@ -46,7 +46,7 @@ You can specify up to two key vaults in the app.json, as shown in the following 
 ] 
 ```
 
-Specifying two key vaults ensures a higher availability of secrets, especially if created in two different Azure regions. At runtime, the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] platform will iterate both key vaults until the secret is successfully retrieved. If one of the key vaults is unavailable for any reason, the extension will continue to execute because the other key vault will most likely be available.
+Specifying two key vaults ensures a higher availability of secrets, especially if created in two different Azure regions. At runtime, the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] platform will iterate both key vaults until the secret is successfully retrieved. If one of the key vaults is unavailable for any reason, the extension will continue to execute because the other key vault will most likely be available.
 
 
 ## Add code to retrieve secrets from the key vault

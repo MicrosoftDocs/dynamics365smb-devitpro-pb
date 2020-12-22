@@ -12,7 +12,7 @@ author: jswymer
 ---
 # Linking and Joining Data Items to Define the Query Dataset
 
-[!INCLUDE[prodshort](includes/prodshort.md)] queries enable you to retrieve records from one or more tables and combine the specific records into rows in a single dataset. In AL, each table is specified as a data item. The data included in the dataset is a result of how the data items are linked and joined together.
+[!INCLUDE[prod_short](includes/prod_short.md)] queries enable you to retrieve records from one or more tables and combine the specific records into rows in a single dataset. In AL, each table is specified as a data item. The data included in the dataset is a result of how the data items are linked and joined together.
 
 > [!TIP]
 > The concept of linking and joining data items in AL is similar to Join clauses in SQL Select statements on tables in SQL Server. For those familiar with SQL Joins, when describing links and joins in AL, this article provides the equivalent SQL SELECT statement in most cases.
