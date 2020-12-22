@@ -24,6 +24,9 @@ At a high-level, this process involves the following tasks:
 2. Add necessary fields, properties, and subpages to the API page.
 3. Access the API page and get the response.
 
+> [!TIP]  
+> The code in this sample has also been published to the BCTech repo. For more information, see [Introduction to Custom API](https://github.com/microsoft/BCTech/tree/master/samples/CustomAPI).
+
 ## Prerequisites
 
 This walkthrough requires the following:  
