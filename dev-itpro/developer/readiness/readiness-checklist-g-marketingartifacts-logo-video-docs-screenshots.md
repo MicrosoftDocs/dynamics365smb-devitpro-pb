@@ -21,6 +21,7 @@ ms.author: a-emniel
 |Offer logo | The logo will appear on the marketplace search results and on your offer's storefront page. Upload the large size logo in .png format with dimensions between 216 pixels x 216 pixels and 350 pixels x 350 pixels. The system will automatically resize your original large logo to the other required sizes. |
 
 Structure:
+- If you include any text in your logo, it should be readable.  
 - Your logo should be designed and optimized for a digital medium, not a traditional print based logo.
 - Monitors emit light and paper absorbs light.
 - Make sure you change the format, as you don't want to end up with weird, inaccurate color representation.
@@ -39,10 +40,8 @@ Structure:
 - A minimum of one video is recommended (up to a maximum of 5 are allowed).
 - Language in videos can be either local or English
 - Note, videos made in local language can have subtitles in English (no requirement).
-- Only include screenshots & demo of the newest UI.
-- Reference Microsoft's brand names correctly: Microsoft Dynamics 365 Business Central, Dynamics 365 Business Central or Business Central after first mentioning of full product name.
-- Don't make references to acronyms, old Dynamics 365 NAV brand names/logos or demo old UIs.
-- Don't include Microsoft Dynamics 365 logos or trademarks in your video.
+- Only include screenshots and demo of the newest UI.
+- Remember you are not allowed to include Microsoft Dynamics 365 logos or trademarks in your video.
 
 For more information on [how to create compelling video](readiness-how-to-make-compelling-videos.md).
 
@@ -65,6 +64,7 @@ Structure:
 - Think wisely about what content you include in the learn more section. Don't sell, educate the prospect.
 - Don't just include a description of your offer here – the prospect has already read the description in the store front details in AppSource and has shown an interest in your offering by clicking on the learn more item – don't discourage this interest by repeating something that they already know. 
 - Instead, use this opportunity to show them something new that entices their interest to start using your offer even more.
+- Remember that you are not allowed to include Microsoft Dynamics 365 logos or trademarks in your supporting documents.
 
 ## Screenshots
 
@@ -80,3 +80,4 @@ Structure:
 - Use visual images that highlights and demonstrates the key competitive differential between your product and others.
 - Our brains love contrast, so use comparisons if you can (i.e. screenshots of "before" and "after" using your offer).
 - Choose key visual elements to highlight rather than including a full screen of distracting, irrelevant content.
+- Remember you are not allowed to include Microsoft Dynamics 365 logos or trademarks in your screenshots.
