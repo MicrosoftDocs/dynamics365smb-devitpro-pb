@@ -24,7 +24,6 @@ Structure:
 - If you include any text in your logo, it should be readable.  
 - Your logo should be designed and optimized for a digital medium, not a traditional print based logo.
 - Monitors emit light and paper absorbs light.
-- Make sure you change the format, as you don't want to end up with weird, inaccurate color representation.
 - Color calibration across devices can affect the look and feel of your app:
 - All colors can be achieved by merging RGB (red, green, and blue) light, but monitors display only a limited range of the visible spectrum at a lowmedium resolution, usually 72-75 dots per inch. 
 - Print production usually requires a four-color process CMYK (cyan, magenta, yellow, black) in high resolution of at least 300 dpi.
