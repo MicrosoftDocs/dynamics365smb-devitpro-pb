@@ -75,11 +75,11 @@ Don't insert child records belonging to same parent in parallel. This causes loc
 #### Performance patterns (do this)
 - Instead of exposing UI pages as web service endpoints, use the built-in API pages because they've been optimized for this scenario. Select the highest API version available. Don't use the beta version of the API pages. To read more about API pages, see [API Page Type](../developer/devenv-api-pagetype.md).
 
-- The choice of protocol for the endpoint can have a significant impact on performance. Favor OData version 4 for the fastest performance. It's possible to expose procedures in a code unit as an OData end point using unbound actions. To read more about OData unbound actions, see [Creating and Interacting with an OData V4 Unbound Action](../developer/devenv-creating-and-interacting-with-odatav4-unbound-action.md).
+- The choice of protocol for the endpoint can have a significant impact on performance. Favor OData version 4 for the fastest performance. It's possible to expose procedures in a codeunit as an OData end point using unbound actions. To read more about OData unbound actions, see [Creating and Interacting with an OData V4 Unbound Action](../developer/devenv-creating-and-interacting-with-odatav4-unbound-action.md).
 
 - For OData, limit the set ($filter or $top) if you're using an expensive $expand statement. If you've moved calculated fields to a separate page, then it's good practice to limit the set to get better performance.
 
-- If you want OData endpoints that work as data readers (e.g. for consumption in PowerBI), then consider using API queries and set DataAccessIntent = ReadOnly, see [API Query Type](../developer/devenv-api-querytype.md) and [DataAccessIntent Property](../developer/properties/devenv-dataaccessintent-property.md).
+- If you want OData endpoints that work as data readers (like for consumption in Power BI), then consider using API queries and set DataAccessIntent = ReadOnly, see [API Query Type](../developer/devenv-api-querytype.md) and [DataAccessIntent Property](../developer/properties/devenv-dataaccessintent-property.md).
 
 - Use OData transaction $batch requests where relevant because they can reduce the number of requests the client needs to do when errors occur. For more information, see [Tips for working with the APIs - OData transactional $batch requests](../developer/devenv-connect-apps-tips.md#batch).
 
@@ -91,10 +91,10 @@ Make sure that your client respects the two HTTP status codes *429 (Too Many Req
 
 Handling Status Code 429 requires the client to adopt a retry logic while providing a cool off period. You can apply different strategies, like:
 
-- regular interval retry
-- incremental intervals retry
-- exponential back-off
-- randomization.
+- Regular interval retry
+- Incremental intervals retry
+- Exponential back-off
+- Randomization
 
 Handling 504 - Gateway Timeout requires the client to refactor long running request to execute within time limit by splitting the request into multiple requests, then dealing with potential 429 codes by applying a back off strategy.
 
@@ -113,7 +113,18 @@ Reports generally fall into two categories. They can be specific to a single ins
 Read more about how to tune RDLC reports here:
 - [RDLC Performance Optimization Tips](https://community.dynamics.com/business/b/navteam/posts/a-couple-of-rdlc-performance-optimization-tips)
 
-## AL performance patterns 
+## Efficient extracts to data warehouses
+
+When establishing a data warehouse, you typically need to do two types of data extraction:
+
+1. A historical load (all data from a given point-in-time)
+2. Delta loads (what's changed since the historical load)
+
+The fastest way to get a historical load from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online is to get a database export as a BACPAC file (using the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] admin center) and restore it in Azure SQL Database or on a SQL Server. For on-premises installations, you can just take a backup of the tenant database.
+
+The fastest (and the less disruptive) way to get delta loads from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online is to set up API queries configured with read-scaleout and use the data audit field **LastModifiedOn** (introduced in version 17.0) on filters.
+
+## AL performance patterns
 
 Knowledge about different AL performance patterns can greatly improve the performance of the code you write. In this section, we'll describe the following patterns and their impact on performance.
 
