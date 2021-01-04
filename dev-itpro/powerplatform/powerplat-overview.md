@@ -21,13 +21,13 @@ author: solsen
 > The **Business Central Virtual Entity (Preview)** app available on AppSource is being updated to reflect new terminology with an upcoming release. This also applies to that terminology used in Business Central.
 
 > [!IMPORTANT]  
-> This functionality requires version 17 for [!INCLUDE[prodshort](../developer/includes/prodshort.md)], while service update 189 is required for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The release information for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] is published on the [latest version availability page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
+> This functionality requires version 17 for [!INCLUDE[prod_short](../developer/includes/prod_short.md)], while service update 189 is required for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The release information for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] is published on the [latest version availability page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
 
-[!INCLUDE[prodshort](../developer/includes/prodshort.md)] Virtual table, which is published on AppSource, is a virtual data source in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], and enables create, read, update, delete (CRUD) operations from [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] and Microsoft Power Platform. By definition, the data for virtual tables does not reside in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. Instead, it continues to reside in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. To enable operations on [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tables in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], tables must be made available as virtual tables in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] Virtual table, which is published on AppSource, is a virtual data source in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], and enables create, read, update, delete (CRUD) operations from [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] and Microsoft Power Platform. By definition, the data for virtual tables does not reside in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. Instead, it continues to reside in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. To enable operations on [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tables in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], tables must be made available as virtual tables in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].
 
 ## Prerequisite reading
 
-To work with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual tables, you must understand how [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] and virtual tables work. Therefore, the following documentation is a prerequisite:
+To work with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] virtual tables, you must understand how [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] and virtual tables work. Therefore, the following documentation is a prerequisite:
 
 - [What is [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
 - [Table overview](https://docs.microsoft.com/powerapps/maker/common-data-service/table-overview)
@@ -37,24 +37,24 @@ To work with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual t
 
 ## Virtual tables for Business Central
 
-Open Data Protocol (OData) APIs exposed through API Pages in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] can be consumed in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] and virtual tables can be generated. 
-Virtual tables in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] acts as regular tables and therefore also in Power Platform. Makers can now build experiences in customer engagement apps with data directly from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] with full CRUD capability and without copying to [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], and leverage all the logic already residing in [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
+Open Data Protocol (OData) APIs exposed through API Pages in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] can be consumed in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] and virtual tables can be generated. 
+Virtual tables in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] acts as regular tables and therefore also in Power Platform. Makers can now build experiences in customer engagement apps with data directly from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] with full CRUD capability and without copying to [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], and leverage all the logic already residing in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 ### Using Custom APIs as basis for virtual tables
 
-Since the virtual tables depend on APIs exposed on [!INCLUDE[prodshort](../developer/includes/prodshort.md)], custom APIs can also used for generating virtual tables. For more information, see [Developing a Custom API](../developer/devenv-develop-custom-api.md).
+Since the virtual tables depend on APIs exposed on [!INCLUDE[prod_short](../developer/includes/prod_short.md)], custom APIs can also used for generating virtual tables. For more information, see [Developing a Custom API](../developer/devenv-develop-custom-api.md).
 
 ## Known limitations
 
-There are known limitations with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual tables including:
+There are known limitations with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] virtual tables including:
 
-- Flows are not triggered for virtual tables. Currently, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] has no way to signal [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] about data change events.
+- Flows are not triggered for virtual tables. Currently, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] has no way to signal [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] about data change events.
 - Virtual tables cannot be used in Charts. [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]s does not support virtual tables being using in Charts.
-- Relations between native and virtual tables. This is currently a limitation of the **Preview** version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual tables solution.
-- Virtual tables cannot be customized on [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], for example, adding new columns. All modifications to virtual tables must happen in the API exposed on [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. But custom APIs can be developed and consumed as virtual tables.  
+- Relations between native and virtual tables. This is currently a limitation of the **Preview** version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] virtual tables solution.
+- Virtual tables cannot be customized on [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], for example, adding new columns. All modifications to virtual tables must happen in the API exposed on [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. But custom APIs can be developed and consumed as virtual tables.  
 - Attachment and Images/Pictures are not supported for virtual tables.
 - BLOB to multiline support is not supported in the preview.
-- Advanced search has some limitations. Each query designed translates to an OData query against [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. 
+- Advanced search has some limitations. Each query designed translates to an OData query against [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. 
   * The following predicates are not supported: **Does Not Equal**, **Does Not Contain**, **Does Not Begin With**, **Does Not End With**, **Does Not Contain Data**, and **Contains Data**.
   * Combining **And** and **Or** groups across columns.
   * Filtering on related tables.

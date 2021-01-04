@@ -13,7 +13,7 @@ ms.date: 11/25/2020
 ---
 
 # Create a .NET Wrapper Module
-This topic provides a description of how to contribute a .NET wrapper module to [!INCLUDE[prodshort](../developer/includes/prodshort.md)], using the Regex module as an example. The Regex module is published in the [AlAppExtensions](https://github.com/microsoft/ALAppExtensions/) repository, and if you aren't already familiar with the Regex class in .NET, see the [.NET documentation](/dotnet/api/system.text.regularexpressions.regex?view=netcore-3.1).
+This topic provides a description of how to contribute a .NET wrapper module to [!INCLUDE[prod_short](../developer/includes/prod_short.md)], using the Regex module as an example. The Regex module is published in the [AlAppExtensions](https://github.com/microsoft/ALAppExtensions/) repository, and if you aren't already familiar with the Regex class in .NET, see the [.NET documentation](/dotnet/api/system.text.regularexpressions.regex?view=netcore-3.1).
 
 ## Converting the Regex architecture
 In .NET, the Regex class provides functionality for regular expressions. You can implement the functionality in a similar way as a system module by creating a Regex codeunit that provides an interface and an internal Regex implementation that contains the logic.

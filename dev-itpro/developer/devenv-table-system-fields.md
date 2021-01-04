@@ -89,7 +89,7 @@ The **SystemId** field is exposed in the platform code and for AL code, allowing
 
 [!INCLUDE[2020_releasewave2](../includes/2020_releasewave2.md)]
 
-Every table in [!INCLUDE[prodshort](includes/prodshort.md)] includes the following four system fields, which can be used for auditing records:
+Every table in [!INCLUDE[prod_short](includes/prod_short.md)] includes the following four system fields, which can be used for auditing records:
 
 |Field name (in AL) |Column name (in database)|Data type|Field number|Description|
 |-------------------|-------------------------|---------|------------|-----------|

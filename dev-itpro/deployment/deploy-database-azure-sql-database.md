@@ -12,7 +12,7 @@ author: jswymer
 ---
 # Running a Business Central Database on Azure SQL Database
 
-This article describes how you can deploy a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database to Microsoft Azure SQL Database.  
+This article describes how you can deploy a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database to Microsoft Azure SQL Database.  
 
 > [!TIP]  
 > For multi-tenancy mode installations, the procedures outlined here must be performed both for the application database as well as for the tenant databases.  
@@ -23,15 +23,15 @@ Make sure that you have the following prerequisites for completing this procedur
 
 - A Microsoft Azure subscription and access to the Azure portal.  
 
-- A [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database installed on a SQL Server Database Engine instance.
+- A [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database installed on a SQL Server Database Engine instance.
 
 ## Create and configure an Azure SQL Database Server  
 
-In the Azure portal, create an SQL Database Server for hosting the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database. For more information about how to create and configure an SQL Database server, see [Create your first Azure SQL Database](https://azure.microsoft.com/documentation/articles/sql-database-get-started/).
+In the Azure portal, create an SQL Database Server for hosting the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database. For more information about how to create and configure an SQL Database server, see [Create your first Azure SQL Database](https://azure.microsoft.com/documentation/articles/sql-database-get-started/).
 
 Here are some important notes when creating the Azure SQL Database:
 
-1. Specify a login name and password for the server. You'll use this information in the next steps when you deploy the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database to Azure SQL and set up the [!INCLUDE[server](../developer/includes/server.md)] to authenticate with the database.  
+1. Specify a login name and password for the server. You'll use this information in the next steps when you deploy the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database to Azure SQL and set up the [!INCLUDE[server](../developer/includes/server.md)] to authenticate with the database.  
 
 2. Configure the server to allow for access by Windows Azure Services.  
 
@@ -39,15 +39,15 @@ Here are some important notes when creating the Azure SQL Database:
 
     The name has a format similar to: `mysqldatabaseserver.database.windows.net`.
 
-4. Configure the server firewall to allow for access by the IP address of the computer that you're using to deploy the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database.
+4. Configure the server firewall to allow for access by the IP address of the computer that you're using to deploy the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database.
 
     For information, see [How to: Configure Firewall Settings \(Azure SQL Database\)](https://azure.microsoft.com/documentation/articles/sql-database-configure-firewall-settings/).
 
-## Prepare the [!INCLUDE[prodshort](../developer/includes/prodshort.md)]  Database(s)
+## Prepare the [!INCLUDE[prod_short](../developer/includes/prod_short.md)]  Database(s)
 
 Make sure the database meets these requirements:
 
-1. Upload a valid [!INCLUDE[prodshort](../developer/includes/prodshort.md)] license file to the database.
+1. Upload a valid [!INCLUDE[prod_short](../developer/includes/prod_short.md)] license file to the database.
 
     For more information, see [Uploading a License File for a Specific Database](../cside/cside-upload-license-file.md#UploadtoDatabase).
 
@@ -55,7 +55,7 @@ Make sure the database meets these requirements:
 
     Make sure to delete `NT AUTHORITY\NETWORK SERVICE` and `NT AUTHORITY\SYSTEM`. Only users with SQL authentication are allowed in Azure SQL Database.
 
-3. Delete any deadlock monitors for the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database.
+3. Delete any deadlock monitors for the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database.
 
     SQL Server Management Studio, you can run a query similar to the following query:
 
@@ -140,7 +140,7 @@ The next task is to configure the [!INCLUDE[server](../developer/includes/server
 
 3. Restart the  [!INCLUDE[server](../developer/includes/server.md)] instance.
 
-    The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database is now deployed and configured on Azure.
+    The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database is now deployed and configured on Azure.
     
     - If you have a single-tenant server instance, your deployment is ready to use.
     - If you have a multitenant server instance, go to the next step.
@@ -169,7 +169,7 @@ If you want to use a different login account for the database, do the following 
   
     For more information, see [Create a Login](https://msdn.microsoft.com/library/aa337562.aspx).  
   
-2. Map the login to a user in the [!INCLUDE[!INCLUDE[prodshort](../developer/includes/prodshort.md)] database, and add the user to the **db\_owner** role of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database.  
+2. Map the login to a user in the [!INCLUDE[!INCLUDE[prod_short](../developer/includes/prod_short.md)] database, and add the user to the **db\_owner** role of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database.  
   
     For more information, see [Create a Database User](https://msdn.microsoft.com/library/aa337545.aspx).  
 

@@ -12,7 +12,7 @@ author: jswymer
 ---
 # Export and Import Permission Sets and Permissions
 
-This articles describes how to import and export permission sets and permissions as XML files. This is useful when upgrading from [!INCLUDE[navnow](../developer/includes/navnow_md.md)] to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] or from one version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to another.
+This articles describes how to import and export permission sets and permissions as XML files. This is useful when upgrading from [!INCLUDE[navnow](../developer/includes/navnow_md.md)] to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] or from one version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] to another.
 
 ## <a name="ExportPerms"></a>Export permission sets and permissions 
 
@@ -24,7 +24,7 @@ This articles describes how to import and export permission sets and permissions
     4. Choose the **OK** button, and then specify the name and location of the permission sets XML file.
 
     > [!IMPORTANT]
-    > If you intend to import the exported permission sets as part of the upgrade from [!INCLUDE[navnow](../developer/includes/navnow_md.md)] to [!INCLUDE[prodshort](../developer/includes/prodshort.md)], modify the exported permission sets file to accommodate user-defined permission sets. See the [Permission Sets file](#PermissionSetsFile) details.
+    > If you intend to import the exported permission sets as part of the upgrade from [!INCLUDE[navnow](../developer/includes/navnow_md.md)] to [!INCLUDE[prod_short](../developer/includes/prod_short.md)], modify the exported permission sets file to accommodate user-defined permission sets. See the [Permission Sets file](#PermissionSetsFile) details.
 
 2.  To export permissions, run XMLport 9172 **Import/Export Permissions**.  
 
@@ -36,7 +36,7 @@ Before you import the exported permission sets file, you might have to make some
 
 ### Background
 
-The reason for this is that the implementation of permission sets has changed in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] compared to [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)]. In [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)], you could modify any permission set, even those provided by Microsoft. This is not the case in [!INCLUDE[prodshort](../developer/includes/prodshort.md)], where permission sets are categorized in to three distinct types:
+The reason for this is that the implementation of permission sets has changed in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] compared to [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)]. In [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)], you could modify any permission set, even those provided by Microsoft. This is not the case in [!INCLUDE[prod_short](../developer/includes/prod_short.md)], where permission sets are categorized in to three distinct types:
 
 |Type|Description|
 |----|-----------|

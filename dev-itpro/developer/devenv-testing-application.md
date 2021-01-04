@@ -13,17 +13,17 @@ author: jswymer
 
 # Testing the Application Overview
 
-Before you release your [!INCLUDE[prodshort](includes/prodshort.md)] application, you should test its functionality to ensure it works as expected. Testing is an iterative process. It's important to create repeatable tests, and helpful to create tests that can be automated. This article describes the features in [!INCLUDE[prodshort](includes/prodshort.md)] that help you test the business logic in your application, and it provides some best practices for testing.
+Before you release your [!INCLUDE[prod_short](includes/prod_short.md)] application, you should test its functionality to ensure it works as expected. Testing is an iterative process. It's important to create repeatable tests, and helpful to create tests that can be automated. This article describes the features in [!INCLUDE[prod_short](includes/prod_short.md)] that help you test the business logic in your application, and it provides some best practices for testing.
 
 For a walkthrough concerning advanced extension testing, see [Testing the Advanced Extension Sample](devenv-extension-advanced-example-test.md).
 
-[!INCLUDE[prodshort](includes/prodshort.md)] includes the below features to help you test your application.
+[!INCLUDE[prod_short](includes/prod_short.md)] includes the below features to help you test your application.
 
 ## Environment testing support and limitations
 
-The extent to which you can run automated tests will depend on your [!INCLUDE[prodshort](includes/prodshort.md)] solution type and environment. The following table gives an overview.
+The extent to which you can run automated tests will depend on your [!INCLUDE[prod_short](includes/prod_short.md)] solution type and environment. The following table gives an overview.
 
-|[!INCLUDE[prodshort](includes/prodshort.md)] solution|Environment|Testing allowed|More details|
+|[!INCLUDE[prod_short](includes/prod_short.md)] solution|Environment|Testing allowed|More details|
 |-----------------------------------------------------|-----------|-------|----|
 |Online |Production||Running tests isn't allowed because it might have an adverse effect on your business. Testing can incidentally invoke external systems, like CDS, PayPal, and web hook subscriptions. Invoking these systems may slow down the solution for other users or cause data corruption.|
 ||Sandbox|![check mark for feature](media/check.png)|You can use a sandbox environment to run tests manually to verify functionality on an environment. Running a large number of tests or tests that take a long time (more than 15 minutes per test method) isn't allowed. It's recommended that you don't run tests more that one or two hours a day.|
@@ -136,7 +136,7 @@ We recommend the following best practices for designing your application tests:
 <!-- TO DO: Check this-->
 - Only use hardcoded values in tests when you really need it. For all other data, consider using random data.
 
-    For example, you want to test the `Ext. Doc. No. Mandatory` field in the `Purchases & Payables Setup` table. To do this, you need to create and post typical purchase invoice. The typical purchase invoice line specifies an amount. For most tests, it doesn't matter exactly what amount. For inspiration, see the use of the **GenerateRandomCode** method in the tests that are included in the **TestToolkit** folder on the [!INCLUDE[prodshort](includes/prodshort.md)] product media. For more information, see [Random Test Data](devenv-random-test-data.md). 
+    For example, you want to test the `Ext. Doc. No. Mandatory` field in the `Purchases & Payables Setup` table. To do this, you need to create and post typical purchase invoice. The typical purchase invoice line specifies an amount. For most tests, it doesn't matter exactly what amount. For inspiration, see the use of the **GenerateRandomCode** method in the tests that are included in the **TestToolkit** folder on the [!INCLUDE[prod_short](includes/prod_short.md)] product media. For more information, see [Random Test Data](devenv-random-test-data.md). 
 
     > [!TIP]
     > Use the [Any module](https://github.com/microsoft/ALAppExtensions/tree/master/Modules/DevTools/TestFramework/TestLibraries/Any) in the Microsoft/ALAppExtensions GitHub repo to generate pseudo-random values during test set-up. This module generates the same set of numbers, allowing you to reproduce test failures.

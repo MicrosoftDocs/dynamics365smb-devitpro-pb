@@ -15,7 +15,7 @@ author: jswymer
 
 # Installing Business Central Using Setup
 
-You use [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] to install the different components that comprise a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] production, demonstration, or development environment. For a list of components, see [Components and Topology](product-and-architecture-overview.md).
+You use [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] to install the different components that comprise a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] production, demonstration, or development environment. For a list of components, see [Components and Topology](product-and-architecture-overview.md).
 
 ## About Setup
 
@@ -30,9 +30,9 @@ During Setup, you're presented with various configuration settings. Some setting
 There are some components that require other software to run. For example, the database requires SQL Server and the Web client requires IIS. Setup will install several of these prerequisites, like installing SQL Server Express and enabling IIS. You can see which prerequisites Setup installs in the [System Requirements](system-requirement-business-central.md).  
 
 
-## Downloading [!INCLUDE[prodshort](../developer/includes/prodshort.md)] for installation 
+## Downloading [!INCLUDE[prod_short](../developer/includes/prod_short.md)] for installation 
 
-[!INCLUDE[prodshort](../developer/includes/prodshort.md)] is available for downloading from Microsoft Support. For each major release, minor updates are published on a regular basis. The downloaded files contain the installation media, which includes the setup.exe file.
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] is available for downloading from Microsoft Support. For each major release, minor updates are published on a regular basis. The downloaded files contain the installation media, which includes the setup.exe file.
 
 > [!IMPORTANT]
 > We recommend that you install the latest update for the release you want to install. However, if you are installing a version for upgrade, make sure that you choose a target version that is compatible with the version that you will be upgrading. For more information, see [Dynamics 365 Business Central Upgrade Compatibility Matrix](../upgrade/upgrade-v14-v15-compatibility.md).
@@ -76,7 +76,7 @@ There are some components that require other software to run. For example, the d
  or to capture a set of custom setup settings to save in a setup configuration file. In this procedure, you run [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] without any customization or configuration. Opportunities for customization and configuration are described throughout the procedure.
 -->  
 1. In the installation media (DVD) folder, double-click the setup.exe.
-2. Follow Setup until you get to the **[!INCLUDE[prodlong](../developer/includes/prodlong.md)]** page.
+2. Follow Setup until you get to the **[!INCLUDE[prod_long](../developer/includes/prod_long.md)]** page.
 
     ![Business Central Setup](../media/setup.png "Business Central Setup")
 
@@ -86,11 +86,11 @@ There are some components that require other software to run. For example, the d
 
 ## Cancel Setup
 
-Setup doesn't provide a **Cancel** button on all pages. But, you can cancel the installation from any page by choosing the **Close** button. All [!INCLUDE[prodshort](../developer/includes/prodshort.md)] components are removed from the computer. The only software that Setup can't remove are:  
+Setup doesn't provide a **Cancel** button on all pages. But, you can cancel the installation from any page by choosing the **Close** button. All [!INCLUDE[prod_short](../developer/includes/prod_short.md)] components are removed from the computer. The only software that Setup can't remove are:  
 
 - Database files, such as the Demo database.  
 
-- Prerequisites for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] components that Setup can install, such as the .NET Framework. 
+- Prerequisites for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] components that Setup can install, such as the .NET Framework. 
 
 ## Run Setup from a command prompt
 
@@ -108,8 +108,8 @@ You can use the following options with Setup.exe.
 |**/help**|Displays Help about Setup.exe options.|  
 |**/log \<log path>**|Specifies path and file name information for a Setup log file to be created by Setup. The file must not exist before you run Setup.|  
 |**/quiet**|Specifies that Setup doesn't display anything on the screen. All configuration information is taken from the specified configuration file.|  
-|**/repair**|Repairs the current installation of [!INCLUDE[prodshort](../developer/includes/prodshort.md)].|  
-|**/uninstall**|Removes the current installation [!INCLUDE[prodshort](../developer/includes/prodshort.md)].|
+|**/repair**|Repairs the current installation of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].|  
+|**/uninstall**|Removes the current installation [!INCLUDE[prod_short](../developer/includes/prod_short.md)].|
 
 ## Save, Edit, and Load a Setup Configuration File
 During Setup, you can save the configuration settings to a file before you finish. Then later, you can load the configuration file. Using a configuration file makes it faster to replicate the same configuration for another deployment.
@@ -139,7 +139,7 @@ You edit the file using an XML editor or text editor. Setup configuration files 
 The option to load a Setup configuration file is on the **Choose an installation option** page in Setup.
 
 > [!NOTE] 
-> If you are using a Setup configuration file that was created from an earlier version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] or [!INCLUDE[navnow_md.md](../developer/includes/navnow_md.md)], be aware that there might be some elements that are no longer supported because the feature has been deprecated. For example, the elements that have the following IDs are no longer supported as og 2019 release wave 2: "RoleTailoredClient", "ExcelAddin, "ClassicClient", "ClickOnceInstallerTools", "STOutlookIntegration", "PublicWinBaseUrl", and "ACSUri".
+> If you are using a Setup configuration file that was created from an earlier version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] or [!INCLUDE[navnow_md.md](../developer/includes/navnow_md.md)], be aware that there might be some elements that are no longer supported because the feature has been deprecated. For example, the elements that have the following IDs are no longer supported as og 2019 release wave 2: "RoleTailoredClient", "ExcelAddin, "ClassicClient", "ClickOnceInstallerTools", "STOutlookIntegration", "PublicWinBaseUrl", and "ACSUri".
 
 
 1. On the **Choose an installation option** page, choose **Load Configuration**.  

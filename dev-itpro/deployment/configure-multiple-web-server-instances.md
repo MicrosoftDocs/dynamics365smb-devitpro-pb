@@ -23,7 +23,7 @@ Although you can use the [!INCLUDE[prodsetup](../developer/includes/prodsetup.md
 
 ## <a name="GetStartedWebServerCmdlets"></a>Get started with the [!INCLUDE[webserver](../developer/includes/webserver.md)] cmdlets 
 
-The [!INCLUDE[webserver](../developer/includes/webserver.md)] cmdlets are contained in the PowerShell script module **NAVWebClientManagement.psm1**, which is available on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation media (DVD).
+The [!INCLUDE[webserver](../developer/includes/webserver.md)] cmdlets are contained in the PowerShell script module **NAVWebClientManagement.psm1**, which is available on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] installation media (DVD).
 
 The module is installed with the [!INCLUDE[server](../developer/includes/server.md)] or the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)].
 
@@ -52,7 +52,7 @@ There are different ways to launch this module and start using the cmdlets:
 ### Get Access to the WebPublish folder
 To create a new web server instance, you need access to the **WebPublish** folder that contains the content files for the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)].
 
-- This folder is available on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation media (DVD) and has the path "DVD\WebClient\Microsoft Dynamics NAV\13x\Web Client\WebPublish". 
+- This folder is available on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] installation media (DVD) and has the path "DVD\WebClient\Microsoft Dynamics NAV\13x\Web Client\WebPublish". 
 
 - If you installed the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)], this folder has the path "[!INCLUDE[prodinstallpath](../developer/includes/prodinstallpath.md)]\Web Client\WebPublish".
 

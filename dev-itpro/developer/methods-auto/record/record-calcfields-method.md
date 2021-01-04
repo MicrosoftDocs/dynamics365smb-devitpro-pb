@@ -52,11 +52,11 @@ An instance of the [Record](record-data-type.md) data type.
   
  You can also use the **CalcFields** method to retrieve binary large objects \(BLOBs\). For more information, see [BLOB Data Type](../blob/BLOB-Data-Type.md).  
   
-[!INCLUDE[prodlong](../../includes/prodlong.md)] automatically maintains a count for all SIFT indexes. Therefore, SumIndexField Technology (SIFT) is used by default when the calculation method for a FlowField is **Count** or **Average**.
+[!INCLUDE[prod_long](../../includes/prod_long.md)] automatically maintains a count for all SIFT indexes. Therefore, SumIndexField Technology (SIFT) is used by default when the calculation method for a FlowField is **Count** or **Average**.
 
- You can prevent the SIFT indexes from being updated by setting the [MaintainSIFTIndex Property](../../properties/devenv-maintainsiftindex-property.md) of the index in the base table to **False**. Then [!INCLUDE[prodshort](../../includes/prodshort.md)] will traverse all records in the base table to perform the calculation instead of using SIFT. This can reduce the number of required SIFT indexes, which can improve performance. For more information, see [SIFT and Performance](../../devenv-sift-performance.md).
+ You can prevent the SIFT indexes from being updated by setting the [MaintainSIFTIndex Property](../../properties/devenv-maintainsiftindex-property.md) of the index in the base table to **False**. Then [!INCLUDE[prod_short](../../includes/prod_short.md)] will traverse all records in the base table to perform the calculation instead of using SIFT. This can reduce the number of required SIFT indexes, which can improve performance. For more information, see [SIFT and Performance](../../devenv-sift-performance.md).
  
- In [!INCLUDE[prodlong](../../includes/prodlong.md)], an index is not required to support a certain sorting, but sorting without an index could lead to bad performance if a search returns a large result set, which would then have to be sorted before the first row is returned.  
+ In [!INCLUDE[prod_long](../../includes/prod_long.md)], an index is not required to support a certain sorting, but sorting without an index could lead to bad performance if a search returns a large result set, which would then have to be sorted before the first row is returned.  
   
 ## Example  
  This example shows how to use the **CalcFields** method to find the balance on December 31, 2008 and the net change for a customer in 2008.  
