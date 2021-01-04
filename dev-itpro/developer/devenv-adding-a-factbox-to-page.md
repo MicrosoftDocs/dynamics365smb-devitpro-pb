@@ -36,8 +36,6 @@ You define the FactBox by adding a FactBox area container control to the page. T
 
 - List  
   
-- Navigate  
-  
 - Worksheet 
 
 > [!NOTE]  
