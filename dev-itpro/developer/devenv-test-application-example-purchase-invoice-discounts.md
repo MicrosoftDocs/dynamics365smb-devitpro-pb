@@ -112,7 +112,7 @@ codeunit 50111 "ERM Vendor Discount"
         // Create vendor invoice discount
         VendorInvoiceDisc.Init;
         VendorInvoiceDisc.Code := VendorNo;
-        VendorInvoiceDisc.Valicate("Currency Code", '');
+        VendorInvoiceDisc.Validate("Currency Code", '');
         VendorInvoiceDisc.Validate("Minimum Amount", MinAmount);
         VendorInvoiceDisc.Validate("Discount %", DiscountPct);
         VendorInvoiceDisc.Insert(TRUE);
