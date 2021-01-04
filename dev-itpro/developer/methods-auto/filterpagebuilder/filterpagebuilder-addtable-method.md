@@ -46,21 +46,21 @@ The text that is specified by the Name parameter. If an error occurs at runtime,
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- In the filter page that is rendered in the client, the ADDTABLE method defines a filter control for the specified table where the user can set filters on specific fields in the table.  
+ In the filter page that is rendered in the client, the AddTable method defines a filter control for the specified table where the user can set filters on specific fields in the table.  
 
- You can use the **ADDFIELD Method** or [ADDFIELDNO Method](../../methods-auto/filterpagebuilder/filterpagebuilder-addfieldno-method.md) method to add field of the table to the filter control.  
+ You can use the **AddField Method** or [AddFieldNo Method](../../methods-auto/filterpagebuilder/filterpagebuilder-addfieldno-method.md) method to add field of the table to the filter control.  
 
 ## Example  
  The following example initializes a filter page object that includes a filter control that uses the Date system table. The filter control has the caption of **Date record**.  
 
-```  
+```al
 var
     varDateItem: Text[30];
     varFilterPageBuilder: FilterPageBuilder;
 
 begin
     varDateItem := 'Date record';  
-    varFilterPageBuilder.ADDTABLE(varDateItem, DATABASE::Date);
+    varFilterPageBuilder.AddTable(varDateItem, Database::Date);
     varFilterPageBuilder.RunModal(); 
 end;
 ```  

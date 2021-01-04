@@ -42,7 +42,7 @@ The number of filter controls in the current FilterPageBuilder object instance.
 ## Example  
  The following example uses the COUNT method on a filter page object that includes a two filter controls for the **Date** system table.  
  
-```
+```al
 var
     varDateItem: Text[30];  
     varCount: Integer;  
@@ -50,11 +50,11 @@ var
 
 begin 
     varDateItem := 'Date record';  
-    varFilterPageBuilder.ADDTABLE(varDateItem + ' 1',DATABASE::Date);  
-    varFilterPageBuilder.ADDTABLE(varDateItem + ' 2',DATABASE::Date);  
-    varCount := varFilterPageBuilder.COUNT;  
+    varFilterPageBuilder.AddTable(varDateItem + ' 1',DATABASE::Date);  
+    varFilterPageBuilder.AddTable(varDateItem + ' 2',DATABASE::Date);  
+    varCount := varFilterPageBuilder.Count;  
     if varCount <> 2 then   
-      ERROR('There should be two controls in varFilterPageBuilder');
+      Error('There should be two controls in varFilterPageBuilder');
     varFilterPageBuilder.RunModal();  
 end; 
 ```  

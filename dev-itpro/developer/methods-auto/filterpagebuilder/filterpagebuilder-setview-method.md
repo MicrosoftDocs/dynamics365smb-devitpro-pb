@@ -46,12 +46,13 @@ The filter view to apply. This can be the output of the GetView method invoked o
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- The SETVIEW method will overwrite any previously defined filters for the fields that are also included in the view.  
+ The SetView method will overwrite any previously defined filters for the fields that are also included in the view.  
   
-## Example  
- The following example initializes a filter page object that includes a filter control for the **Date** system table. The filter control has the caption of **Date record**. The example adds two filter fields to the filter control on the filter page as the result of applying a default view from the [GETVIEW Method](../../methods-auto/filterpagebuilder/filterpagebuilder-getview-method.md).  
+## Example
+
+The following example initializes a filter page object that includes a filter control for the **Date** system table. The filter control has the caption of **Date record**. The example adds two filter fields to the filter control on the filter page as the result of applying a default view from the [GetView Method](../../methods-auto/filterpagebuilder/filterpagebuilder-getview-method.md).  
   
-```  
+```al
 var
     varDateItem: Text[30];  
     varDateRecord: Record Date;  
@@ -60,11 +61,11 @@ var
 
 begin
     varDateItem := 'Date record';  
-    varDateRecord.SETFILTER("Period End", '20151212D');  
-    varDateRecord.SETFILTER("Period Start", '20150101D');  
-    varDefaultView := varDateRecord.GETVIEW;  
-    varFilterPageBuilder.ADDTABLE(varDateItem, DATABASE::Date);  
-    varFilterPageBuilder.SETVIEW(varDateItem, varDefaultView);
+    varDateRecord.SetFilter("Period End", '20151212D');  
+    varDateRecord.SetFilter("Period Start", '20150101D');  
+    varDefaultView := varDateRecord.GetView;  
+    varFilterPageBuilder.AddTable(varDateItem, Database::Date);  
+    varFilterPageBuilder.SetView(varDateItem, varDefaultView);
     varFilterPageBuilder.RunModal();
 end; 
 ```  
