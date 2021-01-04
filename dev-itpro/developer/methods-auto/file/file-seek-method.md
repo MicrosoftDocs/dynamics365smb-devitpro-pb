@@ -52,7 +52,7 @@ The following example sets a pointer at position 20 in a file and truncates the 
  var
     TestFile: File;
 begin
-    TestFile.WriteMODE(TRUE);  
+    TestFile.WriteMode(TRUE);  
     TestFile.Open('C:\TestFolder\TestFile.txt');  
     TestFile.Seek(20);  
     TestFile.Trunc;  
