@@ -55,7 +55,7 @@ The following example uses the Exists method to determine whether the specified 
     FileName: Text;
 begin
     FileName := 'C:\TestFolder\TestFile2.txt';  
-    if EXISTS(FileName) then begin  
+    if exists(FileName) then begin  
       TestFile.WriteMode(true);  
       TestFile.Open(FileName);  
       TestFile.Write('Hello World');  
@@ -65,8 +65,8 @@ begin
 end;
 ```  
   
-
 ## See Also
+
 [File Data Type](file-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

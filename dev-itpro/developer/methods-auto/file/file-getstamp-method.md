@@ -64,8 +64,8 @@ The time that the file was last written to. Optional.
     Text000: Label 'This document was last written to on %1 at %2.';
 begin
     varFileName := 'C:\MyFolder\MyText.txt';  
-    GETSTAMP(VarFileName, varDate, varTime);  
-    MESSAGE(Text000, varDate, varTime);  
+    GetStamp(VarFileName, varDate, varTime);  
+    Message(Text000, varDate, varTime);  
 end;
 ```  
 
