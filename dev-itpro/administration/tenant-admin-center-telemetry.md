@@ -36,6 +36,9 @@ You can set up your environments to send telemetry to Application Insights. Appl
 
 For an overview of the telemetry types that are currently emitted, see [Monitoring and Analyzing with Telemetry](telemetry-overview.md).
 
+> [!IMPORTANT]
+> Currently, emitting data to Azure Application Insights resources in Germany regions, like **(Europe) Germany West Central** or **(Europe) Germany North** , doesn't work. Until this issue is fixed, the mitigation is to create an Azure Application Insights resource in a region outside of Germany. Then, when the issue has been fixed, move the resource to the preferred region.
+
 ### <a name="appinsights"></a>Enable Application Insights
 
 1. If you don't already have one, get a subscription to [Microsoft Azure](https://azure.microsoft.com).

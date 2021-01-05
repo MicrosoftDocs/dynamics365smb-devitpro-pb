@@ -50,5 +50,5 @@ Make sure to make the right reference throughout your content:
 
 ## Microsoft images 
 - You can include the [AppSource badge](https://appsource.microsoft.com/blogs/new-get-it-from-badging-for-microsoft-appsource-and-azure-marketplace-available-in-the-marketing-resources-guide) in your marketing material. 
-- Besides the AppSource badge, don’t include any Microsoft logos or icons (such as the Business Central icon or Dynamics 365 logo) in your offer. 
+- Besides the AppSource badge, don’t include any Microsoft logos or icons (such as the Business Central icon or Dynamics 365 logo) in any of your marketing material. 
 

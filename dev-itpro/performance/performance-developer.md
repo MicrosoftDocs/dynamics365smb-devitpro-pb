@@ -25,27 +25,27 @@ In this article, you can read about ways to tune performance when developing for
 
 ## Writing efficient pages 
 
-There are a number of patterns that a developer can use to get a page to load faster. Consider the following patterns:
+There are many patterns that a developer can use to get a page to load faster. Consider the following patterns:
 
 - Avoid unnecessary recalculation
 - Do less
 - Offloading the UI thread
 
-### Pattern - Avoid unnecessary recalculation 
+### Pattern - Avoid unnecessary recalculation
 
-To avoid unnecessary recalculation of expensive results, consider caching the data and refresh the cache on a regular basis. Let's say you want to show the top five open sales orders or a VIP customers list on the role center. The content of such a list probably doesn't change significantly every hour. There's no need to calculate that from raw data every time the page is loaded. Instead, create a table that can contain the calculated data and refresh every hour/day using a background job.
+To avoid unnecessary recalculation of expensive results, consider caching the data and refresh the cache regularly. Let's say you want to show the top five open sales orders or a VIP customers list on the role center. The content of such a list probably doesn't change significantly every hour. There's no need to calculate that from raw data every time the page is loaded. Instead, create a table that can contain the calculated data and refresh every hour/day using a background job.
 
 Another example of unexpected recalculation is when using query objects. In contrast to using the record API, query results aren't cached in the primary key cache in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server. Any use of a query object will always go to the database. So, sometimes it's faster to not use a query object. 
 
 ### Pattern - Do less
 
-One way to speed up things is to reduce the work that the system must do. For example, to reduce slowness of role centers, consider how many page parts are needed for the user. An additional benefit of a simple page with few UI elements can also be ease of use and navigation.
+One way to speed up things is to reduce the work that the system must do. For example, to reduce slowness of role centers, consider how many page parts are needed for the user. Another benefit of a simple page with few UI elements can also be ease of use and navigation.
 
 Remove calculated fields from lists if they aren't needed, especially on larger tables. Also, if indexing is inadequate, calculated fields can significantly slow down a list page.
 
 Consider creating dedicated lookup pages instead of the normal pages when adding a lookup (the one that looks like a dropdown) from a field. Default list pages will run all triggers and FactBoxes even if they aren't shown in the lookup. For example, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2019 release wave 1 added dedicated lookup pages for Customer, Vendor, and Item to the Base Application.
  
-### Pattern - Offloading the UI thread 
+### Pattern - Offloading the UI thread
 
 To get to a responsive UI fast, consider using Page Background Tasks for calculated values, for example, the values shown in cues.
 
@@ -57,31 +57,31 @@ For more information about Page Background Tasks, see [Page Background Tasks](..
 
 ### Endpoint performance  
 
-#### Anti-patterns (do not do this)
+#### Anti-patterns (don't do this)
 Avoid using standard UI pages to expose as web service endpoints. Many things, like FactBoxes, aren't exposed in OData, but will use resources to compute.
 
 Things that have historically caused performance issues on pages that are exposed as endpoints are:
 
 - Heavy logic in `OnAfterGetCurrRecord`
-- Many SIFT fields 
-- FactBoxes 
- 
+- Many SIFT fields
+- FactBoxes
+
 Avoid exposing calculated fields, because calculated fields are expensive. Try to move them to a separate page or to refactor the code so the value is stored on the physical table (if applicable). Complex types are also a performance hit because they take a lot of time to calculate. 
 
-Don't use temp tables as a source if you have a lot of records. Temp tables based APIs are a performance hit. The server has to fetch and insert every record, and there is no caching on data in temp tables. Paging becomes difficult to do in a performant manner. A rule of thumb is if you have more than 100 records, don't use temp tables.
+Don't use temp tables as a source if you have many records. Temp tables that are based on APIs are a performance hit. The server has to fetch and insert every record, and there's no caching on data in temp tables. Paging becomes difficult to do in a performant manner. A rule of thumb is if you have more than 100 records, don't use temp tables.
 
-Don't insert child records belonging to same parent in parallel. This causes locks on parent and Integration Record tables because parallel calls try to update the same parent record. The solution is to wait for the first call to finish or use $batch, which will make sure calls get executed one after another.
+Don't insert child records belonging to same parent in parallel. This condition causes locks on parent and Integration Record tables because parallel calls try to update the same parent record. The solution is to wait for the first call to finish or use $batch, which will make sure calls get executed one after another.
 
 #### Performance patterns (do this)
 - Instead of exposing UI pages as web service endpoints, use the built-in API pages because they've been optimized for this scenario. Select the highest API version available. Don't use the beta version of the API pages. To read more about API pages, see [API Page Type](../developer/devenv-api-pagetype.md).
 
-- The choice of protocol for the endpoint can have a significant impact on performance. Favor OData version 4 for the fastest performance. It's possible to expose procedures in a code unit as an OData end point using unbound actions. To read more about OData unbound actions, see [Creating and Interacting with an OData V4 Unbound Action](../developer/devenv-creating-and-interacting-with-odatav4-unbound-action.md).
+- The choice of protocol for the endpoint can have a significant impact on performance. Favor OData version 4 for the fastest performance. It's possible to expose procedures in a codeunit as an OData end point using unbound actions. To read more about OData unbound actions, see [Creating and Interacting with an OData V4 Unbound Action](../developer/devenv-creating-and-interacting-with-odatav4-unbound-action.md).
 
 - For OData, limit the set ($filter or $top) if you're using an expensive $expand statement. If you've moved calculated fields to a separate page, then it's good practice to limit the set to get better performance.
 
-- If you want OData endpoints that work as data readers (e.g. for consumption in PowerBI), then consider using API queries and set DataAccessIntent = ReadOnly, see [API Query Type](../developer/devenv-api-querytype.md) and [DataAccessIntent Property](../developer/properties/devenv-dataaccessintent-property.md).
+- If you want OData endpoints that work as data readers (like for consumption in Power BI), consider using API queries and set DataAccessIntent = ReadOnly. For more information, see [API Query Type](../developer/devenv-api-querytype.md) and [DataAccessIntent Property](../developer/properties/devenv-dataaccessintent-property.md).
 
-- Use OData transaction $batch requests where relevant because they can reduce the number of requests the client needs to do when errors occur. For more information, see [Tips for working with the APIs - OData transactional $batch requests](../developer/devenv-connect-apps-tips.md#batch).
+- Use OData transaction $batch requests where relevant. They can reduce the number of requests the client needs to do when errors occur. For more information, see [Tips for working with the APIs - OData transactional $batch requests](../developer/devenv-connect-apps-tips.md#batch).
 
 ### Web service client performance 
 
@@ -89,18 +89,18 @@ The online version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)
 
 Make sure that your client respects the two HTTP status codes *429 (Too Many Requests)* and *504 (Gateway Timeout)*.
 
-Handling Status Code 429 requires the client to adopt a retry logic while providing a cool off period. You can apply different strategies, like:
+- Handling status code 429 requires the client to adopt a retry logic while providing a cool off period. You can apply different strategies, like:
 
-- regular interval retry
-- incremental intervals retry
-- exponential back-off
-- randomization.
+    - Regular interval retry
+    - Incremental intervals retry
+    - Exponential back-off
+    - Randomization
 
-Handling 504 - Gateway Timeout requires the client to refactor long running request to execute within time limit by splitting the request into multiple requests, then dealing with potential 429 codes by applying a back off strategy.
+- Handling status code 504 - Gateway Timeout requires the client to refactor the long running request to execute within time limit by splitting the request into multiple requests. Then, deal with potential 429 codes by applying a back off strategy.
 
 Read more about web service limits, see [Working with API limits in Dynamics 365 Business Central](/dynamics-nav/api-reference/v1.0/dynamics-rate-limits).
 
-The same advice applies for outgoing web service calls using the AL module HttpClient. Make sure that your AL code can handle slow response times, throttling, and failures in external services that you integrate to.
+The same advice applies for outgoing web service calls using the AL module HttpClient. Make sure your AL code can handle slow response times, throttling, and failures in external services that you integrate with.
 
 ## Writing efficient reports
 
@@ -113,7 +113,18 @@ Reports generally fall into two categories. They can be specific to a single ins
 Read more about how to tune RDLC reports here:
 - [RDLC Performance Optimization Tips](https://community.dynamics.com/business/b/navteam/posts/a-couple-of-rdlc-performance-optimization-tips)
 
-## AL performance patterns 
+## Efficient extracts to data warehouses
+
+When establishing a data warehouse, you typically need to do two types of data extraction:
+
+1. A historical load (all data from a given point-in-time)
+2. Delta loads (what's changed since the historical load)
+
+The fastest way to get a historical load from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online is to get a database export as a BACPAC file (using the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] admin center) and restore it in Azure SQL Database or on a SQL Server. For on-premises installations, you can just take a backup of the tenant database.
+
+The fastest (and the less disruptive) way to get delta loads from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online is to set up API queries configured with read-scaleout and use the data audit field **LastModifiedOn** (introduced in version 17.0) on filters.
+
+## AL performance patterns
 
 Knowledge about different AL performance patterns can greatly improve the performance of the code you write. In this section, we'll describe the following patterns and their impact on performance.
 
@@ -193,11 +204,11 @@ Read more about query objects here:
 
 ### <a name="partialrecords"></a>Pattern - Use partial records when looping over data or when table extension fields aren't needed
 
-When writing AL code where the fields needed on a record is known, you can use the partial records capability to only load out these fields initially. The remaining fields are still accessible, but they'll be loaded as needed.
+When writing AL code for which the fields needed on a record are known, you can use the partial records capability to only load out these fields initially. The remaining fields are still accessible, but they'll be loaded as needed.
 
-Partial records improve performance in two major ways. First, they limit the fields that need to be loaded from the database. Loading more fields leads to more data being read, sent over the connection, and created on the record. Second, partial records limit the amount of table extensions that need to be joined.
+Partial records improve performance in two major ways. First, they limit the fields that need to be loaded from the database. Loading more fields leads to more data being read, sent over the connection, and created on the record. Second, partial records limit the number of table extensions that need to be joined.
 
-The performance gains compound when looping over many records, because both effects scale with the amount of rows loaded.
+The performance gains compound when looping over many records, because both effects scale with the number of rows loaded.
 
 For more information, see [Using Partial Records](../developer/devenv-partial-records.md).
 
@@ -310,6 +321,7 @@ You can use the `SessionInformation` data type in unit tests that track the numb
 For more information, see [SessionInformation Data Type](../developer/methods-auto/sessioninformation/sessioninformation-data-type.md).
 
 ### Performance Scenario and Regression Testing
+
 Use the Performance Toolkit to simulate the amount of resources that customers use in realistic scenarios to compare performance between builds of their solutions.
 
 The Performance Toolkit helps answer questions such as, "Does my solution for Business Central support X number of users doing this, that, and the other thing at the same time?" 
@@ -317,6 +329,7 @@ The Performance Toolkit helps answer questions such as, "Does my solution for Bu
 For more information, see [The Performance Toolkit Extension](../developer/devenv-performance-toolkit.md).
 
 ### Performance Throughput Analysis
+
 The Performance Toolkit doesn't answer questions such as, "How many orders can Business Central process per hour?" For this kind of analysis, test the time to execute key scenarios using the Performance Toolkit, and then use the guidance on [Operational Limits for Business Central Online](/dynamics365/business-central/dev-itpro/administration/operational-limits-online). For advanced analysis, consider using a queueing model such as a [M/M/1 queue](https://en.wikipedia.org/wiki/M/M/1_queue) to answer whether the system can process the workload you intend.
 
 ### Performance telemetry
