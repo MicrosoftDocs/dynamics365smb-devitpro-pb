@@ -15,8 +15,10 @@ author: jswymer
 
 [!INCLUDE[2019_releasewave2.md](../includes/2019_releasewave2.md)]
 
+This article describes how to set up tenants to send telemetry data to Azure Application Insights for on-premises environments.
 
-This article describes how to set up tenants to send telemetry data to Application Insights for on-premises environments.
+> [!IMPORTANT]
+> Currently, emitting data to Azure Application Insights resources in Germany regions, like **(Europe) Germany West Central** or **(Europe) Germany North** , doesn't work. Until this issue is fixed, the mitigation is to create an Azure Application Insights resource in a region outside of Germany. Then, when the issue has been fixed, move the resource to the preferred region.
 
 ## <a name="ApplicationInsights"></a>Get started
 
