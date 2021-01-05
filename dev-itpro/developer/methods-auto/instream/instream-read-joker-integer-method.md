@@ -45,16 +45,16 @@ Describes the number of characters to be read. If you do not specify Length, the
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
-READ reads until the specified length or a zero byte. For more information about how zero bytes and line endings are read, see [WRITE, WRITETEXT, READ, and READTEXT Method Behavior Regarding Line Endings and Zero Terminators](../../devenv-write-read-methods-line-break-behavior.md).
+Read reads until the specified length or a zero byte. For more information about how zero bytes and line endings are read, see [WRITE, WRITETEXT, Read, and ReadTEXT Method Behavior Regarding Line Endings and Zero Terminators](../../devenv-write-read-methods-line-break-behavior.md).
 
-If the optional return value \(*READ*\) is not present and the data being read is less than the length requested to be read, then you receive an error message.  
+If the optional return value \(*Read*\) is not present and the data being read is less than the length requested to be read, then you receive an error message.  
   
  If the return value is present, then you must verify the validity of the data that has been read.  
   
 ## Example  
- The following example shows how to use the **Instream.READ** method to read data in binary format. The **FIND** method finds the first record from the **Company Information** table. The **CALCFIELDS** method retrieves the **Picture** field, which is a BLOB field. The **CREATEINSTREAM** method uses the recBinaries variable to create an InStream object that is named varInstream. The **varInstream.READ** method then reads three characters from the varInstream variable and stores the binary data in the varChars variable. The number of characters that is read is stored in the numChars variable. The binary data and the number of characters that is read are displayed in a message box.  
+ The following example shows how to use the **Instream.Read** method to read data in binary format. The **Find** method finds the first record from the **Company Information** table. The **CalcFields** method retrieves the **Picture** field, which is a BLOB field. The **CreateInStream** method uses the recBinaries variable to create an InStream object that is named varInstream. The **varInstream.Read** method then reads three characters from the varInstream variable and stores the binary data in the varChars variable. The number of characters that is read is stored in the numChars variable. The binary data and the number of characters that is read are displayed in a message box.  
   
-```
+```al
  var
     recBinaries: Record "Company Information";
     varInstream: Instream;
@@ -62,11 +62,11 @@ If the optional return value \(*READ*\) is not present and the data being read i
     numChars: Integer;
     Text000: Label 'Number of characters read: %1. Characters read: %2.';
 begin
-    recBinaries.FIND('-');  
-    recBinaries.CALCFIELDS(recBinaries.Picture);  
-    recBinaries.Picture.CREATEINSTREAM(varInstream);  
-    numChars := varInstream.READ(varChars,3);  
-    MESSAGE(Text000, numChars, varChars);  
+    recBinaries.Find('-');  
+    recBinaries.CalcFields(recBinaries.Picture);  
+    recBinaries.Picture.CreateInStream(varInstream);  
+    numChars := varInstream.Read(varChars,3);  
+    Message(Text000, numChars, varChars);  
 end;
 ```  
   
