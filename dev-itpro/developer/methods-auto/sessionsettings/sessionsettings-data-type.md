@@ -2,7 +2,7 @@
 title: "SessionSettings Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 12/09/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,14 +25,14 @@ The following methods are available on instances of the SessionSettings data typ
 |Method name|Description|
 |-----------|-----------|
 |[Company([String])](sessionsettings-company-method.md)|Gets or sets the company property in a SessionSettings object.|
-|[ProfileId([String])](sessionsettings-profileid-method.md)|Gets or sets the profile ID property in a SessionSettings object.|
-|[ProfileAppId([Guid])](sessionsettings-profileappid-method.md)|Gets or sets the ID of an extension, which provides a profile, in a SessionSettings object.|
-|[ProfileSystemScope([Boolean])](sessionsettings-profilesystemscope-method.md)|Gets or sets the profile scope property in a SessionSettings object.|
+|[Init()](sessionsettings-init-method.md)|Populates the instance of a SessionsSettings with the current client user's personalization properties (such as Profile ID and Company) that are stored in the database.|
 |[LanguageId([Integer])](sessionsettings-languageid-method.md)|Gets or sets the language ID property in a SessionSettings object.|
 |[LocaleId([Integer])](sessionsettings-localeid-method.md)|Gets or sets the locale ID property in a SessionSettings object.|
-|[TimeZone([String])](sessionsettings-timezone-method.md)|Gets or sets the time zone property in a SessionSettings object.|
-|[Init()](sessionsettings-init-method.md)|Populates the instance of a SessionsSettings with the current client user's personalization properties (such as Profile ID and Company) that are stored in the database.|
+|[ProfileAppId([Guid])](sessionsettings-profileappid-method.md)|Gets or sets the ID of an extension, which provides a profile, in a SessionSettings object.|
+|[ProfileId([String])](sessionsettings-profileid-method.md)|Gets or sets the profile ID property in a SessionSettings object.|
+|[ProfileSystemScope([Boolean])](sessionsettings-profilesystemscope-method.md)|Gets or sets the profile scope property in a SessionSettings object.|
 |[RequestSessionUpdate(Boolean)](sessionsettings-requestsessionupdate-method.md)|Passes a SessionSettings object to the client to request a new session that uses the user personalization properties that are set in the object. The current client session is abandoned and a new session is started.|
+|[TimeZone([String])](sessionsettings-timezone-method.md)|Gets or sets the time zone property in a SessionSettings object.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

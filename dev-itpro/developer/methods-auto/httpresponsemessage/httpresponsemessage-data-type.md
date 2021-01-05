@@ -2,7 +2,7 @@
 title: "HttpResponseMessage Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 12/09/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,10 +26,10 @@ The following methods are available on instances of the HttpResponseMessage data
 |-----------|-----------|
 |[Content()](httpresponsemessage-content-method.md)|Gets the contents of the HTTP response.|
 |[Headers()](httpresponsemessage-headers-method.md)|Gets the HTTP response's HTTP headers.|
-|[IsSuccessStatusCode()](httpresponsemessage-issuccessstatuscode-method.md)|Gets a value that indicates if the HTTP response was successful.|
-|[IsBlockedByEnvironment()](httpresponsemessage-isblockedbyenvironment-method.md)|Gets a value that indicates if the HTTP response is the result of the environment blocking an outgoing HTTP request.|
-|[ReasonPhrase()](httpresponsemessage-reasonphrase-method.md)|Gets the reason phrase which typically is sent by servers together with the status code.|
 |[HttpStatusCode()](httpresponsemessage-httpstatuscode-method.md)|Gets the status code of the HTTP response.|
+|[IsBlockedByEnvironment()](httpresponsemessage-isblockedbyenvironment-method.md)|Gets a value that indicates if the HTTP response is the result of the environment blocking an outgoing HTTP request.|
+|[IsSuccessStatusCode()](httpresponsemessage-issuccessstatuscode-method.md)|Gets a value that indicates if the HTTP response was successful.|
+|[ReasonPhrase()](httpresponsemessage-reasonphrase-method.md)|Gets the reason phrase which typically is sent by servers together with the status code.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
