@@ -2,7 +2,7 @@
 title: "RecordRef.Reset Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 12/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,7 +16,7 @@ author: SusanneWindfeldPedersen
 # RecordRef.Reset Method
 > **Version**: _Available from runtime version 1.0._
 
-Removes all filters, including any special filters set by the MARKEDONLY method (Record) and changes the current key to the primary key. Also removes any marks on the record and clears any AL variables on the record.
+Removes all filters, including any special filters set by the MarkedOnly method (Record), changes fields select for loading back to all, and changes the current key to the primary key. Also removes any marks on the record and clears any AL variables defined on its table definition.
 
 
 ## Syntax
