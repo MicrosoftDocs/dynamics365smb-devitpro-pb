@@ -75,6 +75,7 @@ Structure:
 - A minimum of 3 screenshots are required (up to a maximum of 5 are permitted).
 - Upload only .png images with a resolution on 1280 x 720 px.
 - Use images that demos your offer in Dynamics 365 Business Central and if possible, what problem your offer is solving.
+- Make sure to use the newsest Business Central UI. 
 - Use screenshots that includes realistic demo data and tell a compelling story 
 - Use visual images that highlights and demonstrates the key competitive differential between your product and others.
 - Our brains love contrast, so use comparisons if you can (i.e. screenshots of "before" and "after" using your offer).
