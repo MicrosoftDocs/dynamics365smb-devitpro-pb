@@ -54,7 +54,7 @@ Write adds a zero byte at the end of the stream. This is differs from WriteText,
   
 ## Example  
     
-```
+```al
  var
     recBinaries: Record "Company Information";
     OStream: OutStream;

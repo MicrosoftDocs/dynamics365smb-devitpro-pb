@@ -48,7 +48,7 @@ The number of bytes that were written. If you omit this optional return value an
 
 This example requires that you create the following variables.  
   
-```
+```al
  var
     recBinaries: Record "Company Information";
     OStream: OutStream;

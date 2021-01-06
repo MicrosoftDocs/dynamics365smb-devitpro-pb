@@ -52,7 +52,7 @@ The number of bytes that were written. If you omit this optional return value an
   
 ## Example  
   
-```  
+```al
 recBinaries.Find('-');  
 recBinaries.Data.CreateOutstream(OutStream);  
 OutStream.Write('Secretary');  

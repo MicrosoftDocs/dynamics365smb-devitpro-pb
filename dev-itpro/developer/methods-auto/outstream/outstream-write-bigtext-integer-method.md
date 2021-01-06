@@ -54,7 +54,7 @@ If the optional return value, *Written*, is not specified and it was not possibl
   
 ## Example  
   
-```  
+```al
 recBinaries.Find('-');  
 recBinaries.Data.CreateOutstream(OutStream);  
 OutStream.Write('Secretary');  

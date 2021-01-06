@@ -52,12 +52,12 @@ For more information about how zero bytes and line endings are written and read,
 
  This example also requires that the c:\\TestFiles folder exists.  
   
-```  
- var
+```al
+var
     MyHTMLFile: File;
     TestOutStream: OutStream;
 begin
-    MyHTMLFile.CREATE('c:\TestFiles\main.html');  
+    MyHTMLFile.Create('c:\TestFiles\main.html');  
     MyHTMLFile.CreateOutstream(TestOutStream);  
     TestOutStream.WriteText('<html>');  
     TestOutStream.WriteText;  
@@ -68,7 +68,7 @@ begin
     TestOutStream.WriteText('<P>Hello world!</p>');  
     TestOutStream.WriteText;  
     TestOutStream.WriteText('</html>');  
-    FileMyHTML.CLOSE;  
+    FileMyHTML.Close;  
 end;
 ```  
   

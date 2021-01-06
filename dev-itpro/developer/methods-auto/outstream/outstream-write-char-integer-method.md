@@ -54,7 +54,7 @@ Write adds a zero byte at the end of the stream. This is differs from WriteText,
   
 ## Example  
   
-```  
+```al
 recBinaries.Find('-');  
 recBinaries.Data.CreateOutstream(OutStream);  
 OutStream.Write('Secretary');  

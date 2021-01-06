@@ -55,7 +55,7 @@ If the optional return value, *Written*, is not specified and it was not possibl
 ## Example  
   
 
-```
+```al
  var
     recBinaries: Record "Company Information";
     OStream: OutStream;
