@@ -48,16 +48,16 @@ A typical reason that the RECALL method returns **false** is a failure in the co
 
 The following code creates a notification and sends it if NewBalance is greater than the credit limit. If it is lower than the credit limit, it recalls the notification.
 
-```
+```al
 MyNotification.ID := '00000000-0000-0000-0000-000000000001';
-IF NewBalance > Rec. "Credit Limit" THEN BEGIN
-  MyNotification.MESSAGE := 'The customer's current balance exceeds their credit limit.';
-  MyNotification.SCOPE := NOTIFICATIONSCOPE::LocalScope;
-  MyNotification.ADDACTION('Fix it.', 50001, 'FixCustomerCreditLimit');
-  MyNotification.SETDATA('CustomerNo.', Rec."No.");
-  MyNotification.SEND;
-END ELSE
-  MyNotification.RECALL;
+IF NewBalance > Rec. "Credit Limit" then begin
+  MyNotification.Message := 'The customer's current balance exceeds their credit limit.';
+  MyNotification.Scope := NotificationScope::LocalScope;
+  MyNotification.AddAction('Fix it.', 50001, 'FixCustomerCreditLimit');
+  MyNotification.SetData('CustomerNo.', Rec."No.");
+  MyNotification.Send;
+end else
+  MyNotification.Recall;
 ```
 
 ## See Also

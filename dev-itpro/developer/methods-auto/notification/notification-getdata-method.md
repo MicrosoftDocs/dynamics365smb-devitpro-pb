@@ -16,7 +16,7 @@ author: SusanneWindfeldPedersen
 # Notification.GetData Method
 > **Version**: _Available from runtime version 1.0._
 
-Retrieves data that was passed to a notification instance as specified by a SETDATA method call.
+Retrieves data that was passed to a notification instance as specified by a SetData method call.
 
 
 ## Syntax
@@ -30,7 +30,7 @@ An instance of the [Notification](notification-data-type.md) data type.
 
 *Name*  
 &emsp;Type: [String](../string/string-data-type.md)  
-The name of the data item that is specified by the SETDATA method call.  
+The name of the data item that is specified by the SetData method call.  
 
 
 ## Return Value
@@ -42,26 +42,28 @@ The data retrieved
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
-You use the [SETDATA Method (Notification)](../../methods-auto/notification/notification-setdata-method.md) and GETDATA methods for transferring data in a notification. The methods are typically needed for handling actions on the notification. The [SETDATA Method (Notification)](../../methods-auto/notification/notification-setdata-method.md) method is called from the source of the notification, while the GETDATA method is called from the action code.
+You use the [SetData Method (Notification)](../../methods-auto/notification/notification-setdata-method.md) and GetData methods for transferring data in a notification. The methods are typically needed for handling actions on the notification. The [SetData Method (Notification)](../../methods-auto/notification/notification-setdata-method.md) method is called from the source of the notification, while the GetData method is called from the action code.
 
 For more information and a detailed example, see [Notifications](../../devenv-notifications-developing.md).
 
 ##  Example
 The following code sets the data for a notification:
+
+```al
+MyNotification.Message := 'This is a notification';
+MyNotification.Scope := NotificationScope::LocalScope;
+MyNotification.SetData('Created',Format(CurrentDateTime,0,9));
+MyNotification.SetData('ID',Format(CreateGUID,0,9));
+MyNotification.AddAction('Action 1',CodeUnit::"Action Handler",'RunAction1');
+MyNotification.AddAction('Action 2',CodeUnit::"Action Handler",'RunAction2');
+MyNotification.Send;
 ```
-MyNotification.MESSAGE := 'This is a notification';
-MyNotification.SCOPE := NOTIFICATIONSCOPE::LocalScope;
-MyNotification.SETDATA('Created',FORMAT(CURRENTDATETIME,0,9));
-MyNotification.SETDATA('ID',FORMAT(CREATEGUID,0,9));
-MyNotification.ADDACTION('Action 1',CODEUNIT::"Action Handler",'RunAction1');
-MyNotification.ADDACTION('Action 2',CODEUNIT::"Action Handler",'RunAction2');
-MyNotification.SEND;
-```
+
 The following code gets the data for a notification:
 
-```
-MyNotification.GETDATA('Created');
-MyNotification.GETDATA('ID');
+```al
+MyNotification.GetData('Created');
+MyNotification.GetData('ID');
 ```
 
 ## See Also
