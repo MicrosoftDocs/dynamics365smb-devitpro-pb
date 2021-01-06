@@ -57,10 +57,10 @@ The number of bytes that were written. If you omit this optional return value an
     recBinaries: Record "Company Information";
     OStream: OutStream;
 begin
-    recBinaries.FIND('-');  
-    recBinaries.Picture.CREATEOUTSTREAM(OStream);   
-    OStream.WRITE('Hello World');  
-    recBinaries.MODIFY();  
+    recBinaries.Find('-');  
+    recBinaries.Picture.CreateOutstream(OStream);   
+    OStream.Write('Hello World');  
+    recBinaries.Modify();  
 end;
 ```    
   

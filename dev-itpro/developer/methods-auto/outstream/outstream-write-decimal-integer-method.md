@@ -46,7 +46,7 @@ The number of bytes that were written. If you omit this optional return value an
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
-WRITE adds a zero byte at the end of the stream. This is differs from WRITETEXT, which does not. For more information about how zero bytes and line endings are written and read, see [WRITE, WRITETEXT, READ, and READTEXT Method Behavior Regarding Line Endings and Zero Terminators](../../devenv-write-read-methods-line-break-behavior.md).
+Write adds a zero byte at the end of the stream. This is differs from WriteText, which does not. For more information about how zero bytes and line endings are written and read, see [Write, WriteText, Read, and ReadText Method Behavior Regarding Line Endings and Zero Terminators](../../devenv-write-read-methods-line-break-behavior.md).
  
  If the optional return value, *Written*, is not specified and it was not possible to write all the data, an error message is displayed.  
   
@@ -61,10 +61,10 @@ This example requires that you create the following variables.
     recBinaries: Record "Company Information";
     OStream: OutStream;
 begin 
-    recBinaries.FIND('-');  
-    recBinaries.Picture.CREATEOUTSTREAM(OStream);   
-    OStream.WRITE(0.33);  
-    recBinaries.MODIFY();  
+    recBinaries.Find('-');  
+    recBinaries.Picture.CreateOutstream(OStream);   
+    OStream.Write(0.33);  
+    recBinaries.Modify();  
 end;
 ```    
   

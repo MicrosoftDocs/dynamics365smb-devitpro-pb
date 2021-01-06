@@ -52,10 +52,10 @@ The number of bytes that were written. If you omit this optional return value an
     OStream: OutStream;
     Lbl: Label 'Hello World';
 begin
-    recBinaries.FIND('-');  
-    recBinaries.Picture.CREATEOUTSTREAM(OStream);   
-    OStream.WRITE(lbl);  
-    recBinaries.MODIFY();  
+    recBinaries.Find('-');  
+    recBinaries.Picture.CreateOutstream(OStream);   
+    OStream.Write(lbl);  
+    recBinaries.Modify();  
 end;
 ``` 
 

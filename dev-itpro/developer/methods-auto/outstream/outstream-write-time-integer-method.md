@@ -60,10 +60,10 @@ This example requires that you create the following variables.
     OStream: OutStream;
     Tme: Time;
 begin
-    recBinaries.FIND('-');  
-    recBinaries.Picture.CREATEOUTSTREAM(OStream);   
-    OStream.WRITE(Tme);  
-    recBinaries.MODIFY();  
+    recBinaries.Find('-');  
+    recBinaries.Picture.CreateOutstream(OStream);   
+    OStream.Write(Tme);  
+    recBinaries.Modify();  
 end;
 ```   
   

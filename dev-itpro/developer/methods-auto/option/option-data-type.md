@@ -25,7 +25,7 @@ Denotes an option value. In the code snippet below, you can see how the Option d
 
 ## Syntax example
 
-```
+```al
 procedure HelloWithOptions(OptionParameter : Option Alpha, "Bra-vo")
     var 
         OptionVariable : Option C, "or D";
@@ -39,8 +39,9 @@ procedure HelloWithOptions(OptionParameter : Option Alpha, "Bra-vo")
 > [!NOTE]  
 > It is not possible to reference the members of the `OptionParameter` from outside the body of the procedure. 
   
-## Remarks  
- In the [OptionString Property](../../properties/devenv-optionstring-property.md) of the field or variable, you can enter the option values as a comma-separated list. The Option type is a zero-based enumerator type, which means that the option values are assigned to sequential numbers, starting with 0. You can convert option data types to integers.  
+## Remarks
+
+In the [OptionString Property](../../properties/devenv-optionstring-property.md) of the field or variable, you can enter the option values as a comma-separated list. The Option type is a zero-based enumerator type, which means that the option values are assigned to sequential numbers, starting with 0. You can convert option data types to integers.  
  <!-- 
  For more information about option variables in multilanguage-enabled applications, see [Developing Multilanguage-Enabled Applications](../../dynamics-nav/Developing-Multilanguage-Enabled-Applications.md).  
  --> 
@@ -49,7 +50,7 @@ procedure HelloWithOptions(OptionParameter : Option Alpha, "Bra-vo")
 
 In the Purchase Header table, the Status field is an Option data type. In the following example, the option value is converted into an integer.
 
- ```
+```al
  var
     Number: Integer;
     PurchHeaderRec: Record "Purchase Header";
@@ -62,7 +63,7 @@ end;
 
 This example shows how you can use the value of an option field as a constant in your AL code.  
   
-```  
+```al
 PurchHeaderRec."Document Type" := PurchHeaderRec."Document Type"::Invoice;   
 ```
 ## See Also
