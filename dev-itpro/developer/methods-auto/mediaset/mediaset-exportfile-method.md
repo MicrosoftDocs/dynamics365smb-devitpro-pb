@@ -65,8 +65,8 @@ For using media sets on records, the **Item** table includes a **MediaSet** data
 
  The code imports the JPEG image files \(.jpg\) from the folder *C:\images* to record *1000* in the **Item** table, and then exports the media files to the folder *C:\images\export*.  
 
-```  
- var
+```al
+var
     itemRec: Record Item;
     count: Boolean;
     Text000: Label '%1 media files were exported.';

@@ -44,9 +44,9 @@ The OutStream object that is created by the object that will receive the media c
 ## Example  
  This example uses the ExportStream to iterate over a sample table named **My Items** table and export any media that is used on records to an OutStream that is created on a file object.  
 
- This example assumes that the **My Item** table contains a **Media** data type field that is named **Image**, and that you have already imported some media on records. For information about importing media, see [IMPORTFILE Function \(Media\)](../../methods-auto/media/media-importfile-method.md) or [IMPORTSTREAM Function \(Media\)](../../methods-auto/media/media-importstream-instream-text-text-method.md).  
+ This example assumes that the **My Item** table contains a **Media** data type field that is named **Image**, and that you have already imported some media on records. For information about importing media, see [ImportFile Method \(Media\)](../../methods-auto/media/media-importfile-method.md) or [ImportStream Method \(Media\)](../../methods-auto/media/media-importstream-instream-text-text-method.md).  
 
-```
+```al
  var
     myItemRec: Record "My Items";
     fileName: Text;

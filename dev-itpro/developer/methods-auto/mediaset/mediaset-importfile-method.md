@@ -53,7 +53,7 @@ The unique ID that is assigned to the MediaSet of the record. If you omit this o
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- You use this method to upload a media file as part of a collection of media objects that you want to associate with a record. The method is similar to the [IMPORTFILE Method \(Media\)](../../methods-auto/media/media-importfile-method.md) except that this method enables you to import multiple media files for the same record. For example, you can add multiple images for an item in table **27 Item**.
+ You use this method to upload a media file as part of a collection of media objects that you want to associate with a record. The method is similar to the [ImportFile Method \(Media\)](../../methods-auto/media/media-importfile-method.md) except that this method enables you to import multiple media files for the same record. For example, you can add multiple images for an item in table **27 Item**.
 
  When a media file is imported, a media object is created and stored in the system table **2000000181 Tenant Media** of the application database. The media object is assigned a unique identifier \(GUID\).
 
@@ -74,7 +74,7 @@ In support of the example code, you alsmust complete these tasks:
 
 With these tasks in place, you can add the following AL code for importing the images. For this code example, create a codeunit, and add the code to the **OnRun** trigger.  
 
-```
+```al
  var
     itemRec: Record Item;
     count: Integer;

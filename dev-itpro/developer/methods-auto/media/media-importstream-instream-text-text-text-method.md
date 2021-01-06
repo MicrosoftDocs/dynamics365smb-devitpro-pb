@@ -93,7 +93,7 @@ With the objects in place, you can add and run the following AL code to import t
 
 This code iterates over records in the **My Items** table. For each record, it looks in the *C:\\images* folder for a file whose name matches the **No.** field of the record. If there is a match the file, an InStream object is created for the file, the media is imported into the record, and a confirmation message is returned.
 
-```
+```al
  var
     myItemRec: Record "My Items";
     fileName: Text;
