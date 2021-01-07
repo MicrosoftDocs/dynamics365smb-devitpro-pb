@@ -33,7 +33,7 @@ The following feature will be **Removed** with [!INCLUDE[prod_short](../develope
 
 |Moved, Removed, or Replaced? |Why?|
 |---------|---------|
-|Removed (for SaaS)| The capability to access web services in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] using Basic Auth will be deprecated for SaaS. OAuth2 will be the only authentication option for SaaS. OAuth flows that are currently supported are **Implicit** and **Auth Token**. Efforts are being made for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 2, to support OAuth flows, that will support Service to Service auth flows. For on-premises, Basic Auth will remain an option for the time being. This change has no impact on how [!INCLUDE[prod_short](../developer/includes/prod_short.md)] connects to external services.|
+|Removed (for SaaS)| The capability to access web services in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] using Basic Auth is deprecated for SaaS. OAuth2 will be the authentication option for SaaS. OAuth samples are published in the [BCTech repo](https://github.com/microsoft/BCTech/tree/master/samples/PSOAuthBCAccess). For on-premises, Basic Auth will remain an option for the time being. This change has no impact on how [!INCLUDE[prod_short](../developer/includes/prod_short.md)] connects to external services.|
 
 ## Changes in 2021 release wave 2
 
