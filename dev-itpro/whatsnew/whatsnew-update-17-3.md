@@ -20,15 +20,15 @@ Would you like to know what has changed in update 17.3? Below you'll find an ove
 Find an overview of hotfixes in this [article](https://support.microsoft.com/help/4583554/update-17-2-for-microsoft-dynamics-365-business-central-2020-release).
 
 ## Feature changes
-- [Restoring environments in Business Central admin center](../administration/tenant-admin-center-environments)
--	Handle Price List Exceptions with Allow Updating Defaults (Ivan) 
--	Use Shortcut dimensions in G/L Entries for Financial reporting (Ivan)
+- [Restoring environments in Business Central admin center](../administration/tenant-admin-center-environments.md)
+-	Handle Price List Exceptions with Allow Updating Defaults <!--(Ivan)--> 
+-	Use Shortcut dimensions in G/L Entries for Financial reporting <!--(Ivan)-->
 -	Business Central in Microsoft Teams (Mike)
--	Signal from job queue execution added to Application Insights telemetry for partners (Kennie)
--	Signal from permission changes added to Application Insights telemetry for partners (Kennie)
--	Signal from the email feature added to Application Insights telemetry for partners (Kennie)
--	Signal from application packages lifecycle added to Application Insights Telemetry for partners (Kennie)
--	Signal from web service key authentication added to Application Insights telemetry for partners (Kennie)
+-	Signal from job queue execution added to Application Insights telemetry for partners <!--(Kennie)-->
+-	Signal from permission changes added to Application Insights telemetry for partners <!--(Kennie)-->
+-	Signal from the email feature added to Application Insights telemetry for partners <!--(Kennie)-->
+-	Signal from application packages lifecycle added to Application Insights Telemetry for partners <!--(Kennie)-->
+-	Signal from web service key authentication added to Application Insights telemetry for partners <!--(Kennie)-->
 
 
 ## Release Plan
