@@ -24,12 +24,11 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 - Handle Price List Exceptions with Allow Updating Defaults <!--(Ivan)--> 
 - Use Shortcut dimensions in G/L Entries for Financial reporting <!--(Ivan)-->
 - [Business Central in Microsoft Teams](/dynamics365/business-central/across-teams-overview) <!--(Mike)-->
-- Signal from job queue execution added to Application Insights telemetry for partners <!--(Kennie)-->
-- Signal from permission changes added to Application Insights telemetry for partners <!--(Kennie)-->
-- Signal from the email feature added to Application Insights telemetry for partners <!--(Kennie)-->
-- Signal from application packages lifecycle added to Application Insights Telemetry for partners <!--(Kennie)-->
+- [Signal from job queue execution added to Application Insights telemetry for partners](..\administration\telemetry-job-queue-lifecycle-trace.md) <!--(Kennie) already in 17.2 what's new?-->
+- [Signal from permission changes added to Application Insights telemetry for partners](..\administration\telemetry-permission-changes-trace.md) <!--(Kennie) already in 17.2 whats new?-->
+- [Signal from the email feature added to Application Insights telemetry for partners](..\administration\telemetry-email-trace.md) <!--(Kennie) released in 17.2 but not in 17.2 whats new?-->
+- [Signal from application packages lifecycle added to Application Insights Telemetry for partners](..\administration\telemetry-configuration-package-trace.md)<!--(Kennie) Is this configuration packages? If so, it was released in 17.2 but not in 17.2 whats new?-->
 - [Signal from web service key authentication added to Application Insights telemetry for partners](..\administration\telemetry-webservices-access-key-trace.md)<!--(Kennie)-->
-
 
 ## Release Plan
 If you want to get a comprehensive overview of what's new and planned for Business Central online for the entire 2020 release wave 2 (release from October 2020 through March 2021), find the link to the release plan [here](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/planned-features).
