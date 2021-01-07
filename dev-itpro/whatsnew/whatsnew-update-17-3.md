@@ -20,31 +20,35 @@ Would you like to know what has changed in update 17.3? Below you'll find an ove
 Find an overview of hotfixes in this [article](https://support.microsoft.com/en-us/help/4583554/update-17-2-for-microsoft-dynamics-365-business-central-2020-release).
 
 ## Feature changes
-- [Application Performance Improvements](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/application-performance-improvements) 
-- [Signal from job queue execution added to Application Insights telemetry for partners](../administration/telemetry-job-queue-lifecycle-trace.md)
-- [Signal from permission changes to added to Application Insights telemetry for partners](../administration/telemetry-permission-changes-trace.md) 
-- [Signal from the retention policy feature added to Application Insights telemetry for partners](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/signal-retention-policy-feature-added-application-insights-telemetry-partners) 
-- [Signal from the sensitive field audit feature added to Application Insights telemetry for partners](../administration/telemetry-field-monitoring-trace.md)
+- [Restoring environments in Business Central admin center](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-environments)
+-	Handle Price List Exceptions with Allow Updating Defaults (Ivan) 
+-	Use Shortcut dimensions in G/L Entries for Financial reporting (Ivan)
+-	Business Central in Microsoft Teams (Mike)
+-	Signal from job queue execution added to Application Insights telemetry for partners (Kennie)
+-	Signal from permission changes added to Application Insights telemetry for partners (Kennie)
+-	Signal from the email feature added to Application Insights telemetry for partners (Kennie)
+-	Signal from application packages lifecycle added to Application Insights Telemetry for partners (Kennie)
+-	Signal from web service key authentication added to Application Insights telemetry for partners (Kennie)
 
 
 ## Release Plan
 If you want to get a comprehensive overview of what's new and planned for Business Central online for the entire 2020 release wave 2 (release from October 2020 through March 2021), find the link to the release plan [here](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/planned-features).
 
 
-## Upgrade to 17.2
-Please note that new customers will automatically get the latest builds of Business Central (17.2). If you are an existing partner/customer, you will receive an email notification as soon as your environment has been upgraded.
+## Upgrade to 17.3
+Please note that new customers will automatically get the latest builds of Business Central (17.3). If you are an existing partner/customer, you will receive an email notification as soon as your environment has been upgraded.
 
 ## Good to know
 
-**Business Central Office Hours**  
-The Office Hours are back! Find an overview of the topics and register here: https://aka.ms/BCOfficeHours. 
+**Basic Authentication**  
+Basic Authentication (Web Service Access Key) removal for SaaS has been postponed until April 2022. We see that some integrations needs more time to move from Web Service Access Key usage to OAuth. PowerShell samples on how to connect to Business Central is published on GitHub. 
 
-**Small update for Business Central mobile app**  
-A small update for the Business Central mobile app (with added languages and some fixes) is being released to the app stores on all three platforms (Windows, iOS, and Android). Please remember to update the Business central app on your device (version 3.1.12032 or later). Direct links: [Windows (Microsoft Store)](https://www.microsoft.com/p/microsoft-dynamics-365-business-central/9nblggh4ql79?rtc=1&activetab=pivot:overviewtab), [iOS (Apple's App Store)](https://apps.apple.com/app/project-madeira/id1093325047), [Android (Google's Play Store)](https://play.google.com/store/apps/details?id=com.microsoft.dynamics.ProjectMadeira).
+**Business Central Office Hours Calls in January**  
+Make sure to join the office hours calls around ‘Customer Migration Tooling’ on January 12 and ‘Power Platform Integration – Power BI’ on January 26. Register and stay tuned for the upcoming calls: https://aka.ms/BCOfficeHours. 
 
-**Watch what's new sessions on demand**  
-You can still watch the sessions from the Business Central Launch Event in October. Register and get access to 30+ sessions [here](https://aka.ms/MSDyn365BCLaunchEvent).
 
-**Migrate directly from version 14, 15, and 16 to Business Central online**  
-Business Central includes a cloud migration tool that administrators can use to migrate customer data from on-premises databases to Business Central online. Starting now, the Cloud Migration app also supports migration from the earlier on-premises versions of Business Central, with the latest cumulative update applied: Migrate directly from versions 14.x, 15.x, and 16.x to version 17.x. 
-This helps customers reduce their costs of migrating to the Business Central cloud significantly, as they can skip upgrading their on-premises environments to the latest version of Business Central and just migrate the data, including all historical transactions. The Cloud Migration app now includes all the necessary data upgrade logic to convert the data from the previous versions to the data structure of 2020 release wave 2 (version 17.0). Learn more [here](/dynamics365/business-central/dev-itpro/administration/migrate-business-central-on-premises).
+**Want to improve the performance of Business Central?**  
+Visit aka.ms/bcperformance and learn about best practices, dos and don'ts and different ways to make changes with a performance impact. The Performance Tuning Guide will help you understand and improve the performance of Business Central whether you are a functional consultant, a developer, or an administrator.
+
+**It’s time to switch your Dynamics 365 Business Central browser to Microsoft Edge**  
+On April 2, 2021, Microsoft will remove Internet Explorer 11 and Microsoft Edge Legacy browsers from the list of supported browsers for the Business Central modern clients. Read the details, how it applies to you and actions to take here.
