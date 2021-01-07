@@ -26,6 +26,15 @@ The next sections give a brief description of the deprecated features, state wha
 |Removed| The capability will be removed from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] in a coming release.|
 |Replaced  |Something better has become available, and will be used instead.|
 
+## Changes in 2022 release wave 1
+
+### Basic Auth / Web Service Access Keys for SaaS 
+The following feature will be **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 1.
+
+|Moved, Removed, or Replaced? |Why?|
+|---------|---------|
+|Removed (for SaaS)| The capability to access web services in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] using Basic Auth will be deprecated for SaaS. OAuth2 will be the only authentication option for SaaS. OAuth flows that are currently supported are **Implicit** and **Auth Token**. Efforts are being made for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 2, to support OAuth flows, that will support Service to Service auth flows. For on-premises, Basic Auth will remain an option for the time being. This change has no impact on how [!INCLUDE[prod_short](../developer/includes/prod_short.md)] connects to external services.|
+
 ## Changes in 2021 release wave 2
 
 ### Standard APIs, Beta version
@@ -64,13 +73,6 @@ The following feature will be **Removed** with [!INCLUDE[prod_short](../develope
 |Moved, Removed, or Replaced? |Why?|
 |---------|---------|
 |Removed | OData V3 has been superseded by OData v4. OData V3 is deprecated, and will be removed as of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1. It's recommended that integrations are migrated to OData v4 as soon as possible.  |
-
-### Basic Auth / Web Service Access Keys for SaaS 
-The following feature will be **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1.
-
-|Moved, Removed, or Replaced? |Why?|
-|---------|---------|
-|Removed (for SaaS)| The capability to access web services in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] using Basic Auth will be deprecated for SaaS. OAuth2 will be the only authentication option for SaaS. OAuth flows that are currently supported are **Implicit** and **Auth Token**. Efforts are being made for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 2, to support OAuth flows, that will support Service to Service auth flows. For on-premises, Basic Auth will remain an option for the time being. This change has no impact on how [!INCLUDE[prod_short](../developer/includes/prod_short.md)] connects to external services.|
 
 ## Deprecated Features in 2020 release wave 1
 The following feature was marked as obsolete:pending in 2020 release wave 1.
