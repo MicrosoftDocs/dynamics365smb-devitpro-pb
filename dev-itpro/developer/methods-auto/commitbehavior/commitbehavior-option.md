@@ -1,9 +1,8 @@
 ---
 title: "CommitBehavior System Option"
-description: "The CommitBehavior System Option in AL for Business Central"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 12/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

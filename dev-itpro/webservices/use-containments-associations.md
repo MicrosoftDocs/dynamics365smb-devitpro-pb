@@ -1,7 +1,8 @@
 ---
 title: "Using Containments and Associations"
+description: Learn how to use containments and associations with OData for creating relationships between pages. 
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 01/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,7 +23,7 @@ Containments and associations are relationships between pages in [!INCLUDE[prod_
 <NavigationProperty Name="SalesOrderSalesLines" ToRole="SalesOrderSalesLines" FromRole="SalesOrder" Relationship="NAV.SalesOrder_SalesOrderSalesLines"/>  
 ```  
   
- This tag is followed by metadata that specific to the **SalesOrderSalesLines** subpage. This page metadata indicates that this **NavigationProperty** tag is a containment:  
+ This tag is followed by metadata that's specific to the **SalesOrderSalesLines** subpage. This page metadata indicates that this **NavigationProperty** tag is a containment:  
   
 ```  
 <EntityType Name="SalesOrderSalesLines">  
