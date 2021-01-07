@@ -3,7 +3,7 @@ title: "Deprecated Features in W1"
 description: describes the features that have been moved, removed, or replaced in the W1 version 
 author: bholtorf
 ms.custom: na
-ms.date: 12/22/2020
+ms.date: 01/07/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,6 +25,15 @@ The next sections give a brief description of the deprecated features, state wha
 |Moved     |The capability has been moved from local functionality to W1 because it was no longer specific to one or more country versions. The capability was combined with other related functionality to eliminate redundancy.|
 |Removed| The capability will be removed from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] in a coming release.|
 |Replaced  |Something better has become available, and will be used instead.|
+
+## Changes in 2022 release wave 1
+
+### Web Service Access Keys (Basic Auth) for SaaS 
+The following feature will be **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 1.
+
+|Moved, Removed, or Replaced? |Why?|
+|---------|---------|
+|Removed (for SaaS)| The capability to access web services in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] using Web Service Access Key (Basic Auth) is deprecated for SaaS. OAuth2 will be the authentication option for SaaS. OAuth samples are published in the [BCTech repo](https://github.com/microsoft/BCTech/tree/master/samples/PSOAuthBCAccess). For on-premises, Web Service Access Key (Basic Auth) will remain an option for the time being. This change has no impact on how [!INCLUDE[prod_short](../developer/includes/prod_short.md)] connects to external services.|
 
 ## Changes in 2021 release wave 2
 
@@ -64,13 +73,6 @@ The following feature will be **Removed** with [!INCLUDE[prod_short](../develope
 |Moved, Removed, or Replaced? |Why?|
 |---------|---------|
 |Removed | OData V3 has been superseded by OData v4. OData V3 is deprecated, and will be removed as of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1. It's recommended that integrations are migrated to OData v4 as soon as possible.  |
-
-### Basic Auth / Web Service Access Keys for SaaS 
-The following feature will be **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1.
-
-|Moved, Removed, or Replaced? |Why?|
-|---------|---------|
-|Removed (for SaaS)| The capability to access web services in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] using Basic Auth will be deprecated for SaaS. OAuth2 will be the only authentication option for SaaS. OAuth flows that are currently supported are **Implicit** and **Auth Token**. Efforts are being made for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 2, to support OAuth flows, that will support Service to Service auth flows. For on-premises, Basic Auth will remain an option for the time being. This change has no impact on how [!INCLUDE[prod_short](../developer/includes/prod_short.md)] connects to external services.|
 
 ## Deprecated Features in 2020 release wave 1
 The following feature was marked as obsolete:pending in 2020 release wave 1.
