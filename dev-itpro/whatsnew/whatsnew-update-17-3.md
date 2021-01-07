@@ -3,7 +3,7 @@ title: "Update 17.3 for Microsoft Dynamics 365 Business Central 2020 Release Wav
 description: Get an overview of new and changed capabilities in the 17.3 update of Business Central online, which is part of 2020 release wave 2.
 ms.author: solsen
 ms.custom: na
-ms.date: 07/01/2021
+ms.date: 01/07/2021
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,10 +17,10 @@ author: EmmaNielsson
 Would you like to know what has changed in update 17.3? Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update. In addition, we have gathered some good to know information and links, you might find interesting.
 
 ## Hotfixes
-Find an overview of hotfixes in this [article](https://support.microsoft.com/en-us/help/4583554/update-17-2-for-microsoft-dynamics-365-business-central-2020-release).
+Find an overview of hotfixes in this [article](https://support.microsoft.com/help/4583554/update-17-2-for-microsoft-dynamics-365-business-central-2020-release).
 
 ## Feature changes
-- [Restoring environments in Business Central admin center](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-environments)
+- [Restoring environments in Business Central admin center](../administration/tenant-admin-center-environments)
 -	Handle Price List Exceptions with Allow Updating Defaults (Ivan) 
 -	Use Shortcut dimensions in G/L Entries for Financial reporting (Ivan)
 -	Business Central in Microsoft Teams (Mike)
