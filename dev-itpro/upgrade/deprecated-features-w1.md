@@ -28,7 +28,7 @@ The next sections give a brief description of the deprecated features, state wha
 
 ## Changes in 2022 release wave 1
 
-### Basic Auth / Web Service Access Keys for SaaS 
+### Web Service Access Keys (Basic Auth) for SaaS 
 The following feature will be **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 1.
 
 |Moved, Removed, or Replaced? |Why?|
