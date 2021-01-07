@@ -21,8 +21,8 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 
 ## Feature changes
 - [Restoring environments in Business Central admin center](../administration/tenant-admin-center-environments.md)
-- Handle Price List Exceptions with Allow Updating Defaults <!--(Ivan)--> 
-- Use Shortcut dimensions in G/L Entries for Financial reporting <!--(Ivan)-->
+- [Handle Price List Exceptions with Allow Updating Defaults](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/handle-price-list-exceptions-with-allow-updating-defaults) <!--(Ivan)--> 
+- Use Shortcut dimensions in G/L Entries for Financial reporting[](/dynamics365/business-central/finance-dimensions#to-set-up-global-and-shortcut-dimensions) <!--(Ivan) https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/use-shortcut-dimensions-gl-entries-financial-reporting-->
 - [Business Central in Microsoft Teams](/dynamics365/business-central/across-teams-overview) <!--(Mike)-->
 - [Signal from job queue execution added to Application Insights telemetry for partners](..\administration\telemetry-job-queue-lifecycle-trace.md) <!--(Kennie) already in 17.2 what's new?-->
 - [Signal from permission changes added to Application Insights telemetry for partners](..\administration\telemetry-permission-changes-trace.md) <!--(Kennie) already in 17.2 whats new?-->
