@@ -24,8 +24,6 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 - [Handle Price List Exceptions with Allow Updating Defaults](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/handle-price-list-exceptions-with-allow-updating-defaults) <!--(Ivan)--> 
 - [Use Shortcut dimensions in G/L Entries for Financial reporting](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/use-shortcut-dimensions-gl-entries-financial-reporting) <!--(Ivan) /dynamics365/business-central/finance-dimensions#to-set-up-global-and-shortcut-dimensionshttps://docs.microsoft.com/en-us-->
 - [Business Central in Microsoft Teams](/dynamics365/business-central/across-teams-overview) <!--(Mike)-->
-- [Signal from the email feature added to Application Insights telemetry for partners](../administration/telemetry-email-trace.md) <!--(Kennie) released in 17.2 but not in 17.2 whats new?-->
-- [Signal from application packages lifecycle added to Application Insights Telemetry for partners](../administration/telemetry-configuration-package-trace.md)<!--(Kennie) Is this configuration packages? If so, it was released in 17.2 but not in 17.2 whats new?-->
 - [Signal from web service key authentication added to Application Insights telemetry for partners](../administration/telemetry-webservices-access-key-trace.md)<!--(Kennie)-->
 
 ## Release Plan
