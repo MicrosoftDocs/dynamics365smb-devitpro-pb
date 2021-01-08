@@ -62,4 +62,4 @@ You can use SetCurrentKey for selecting a key and sorting When you use SetCurren
 [Record Data Type](record-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
-[SETCURRENTKEY, SETRANGE, SETFILTER, GETRANGEMIN, and GETRANGEMAX Methods](../../devenv-setcurrentkey-setrange-setfilter-getrangemin-and-getrangemax-methods.md)  
+[SetCurrentKey, SETRANGE, SETFILTER, GETRANGEMIN, and GETRANGEMAX Methods](../../devenv-setcurrentkey-setrange-setfilter-getrangemin-and-getrangemax-methods.md)  

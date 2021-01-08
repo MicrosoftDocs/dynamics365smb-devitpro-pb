@@ -46,7 +46,7 @@ The inserted record will automatically get assigned a SystemId by the platform. 
 
 This example shows how to use the INSERT method without a return value.  
   
-```  
+```al
 Customer.Init;  
 Customer."No." := '1120';  
 Customer.Insert();  
@@ -58,7 +58,7 @@ If customer 1120 already exists, then a run-time error occurs.
   
 This example shows how to use the INSERT method with a return value.
 
-```
+```al
 var
     CustomerRec: Record Customer;
     Text000: Label 'Customer no: %1 inserted.';
@@ -66,7 +66,7 @@ var
 begin
     CustomerRec.Init();  
     CustomerRec."No." := '1120';  
-    if CustomerRec.INSERT() then  
+    if CustomerRec.Insert() then  
       Message(Text000, CustomerRec."No.")  
     else  
       Message(Text001, CustomerRec."No.");
