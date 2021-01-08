@@ -3,7 +3,7 @@ title: "Snapshot Debugging"
 description: "Overview of how snapshot debugging allows recording running AL code for Business Central"
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 11/09/2020
+ms.date: 01/08/2021
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
@@ -12,12 +12,10 @@ ms.author: solsen
 
 # Snapshot Debugging
 
-[!INCLUDE[2020_releasewave2_preview](../includes/2020_releasewave2_preview.md)]
+> [!NOTE]  
+> With [!INCLUDE[prod_short](includes/prod_short.md)] 17.2 Snapshot Debugging is available in production cloud environments.
 
 Snapshot debugging allows a delegated admin to record AL code that runs on the server, and once it has run, debug the recorded *snapshot* in Visual Studio Code. For a delegated admin to create and download a snapshot file that exists on the server on behalf of an end-user, the delegated admin must be part of the **D365 Snapshot Debug** permission group. For more information, see [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions). One of the advantages of snapshot debugging is that it provides the ability to inspect code execution and variables in the production environment in a cloud service, on a specified user session.
-
-> [!IMPORTANT]  
-> With this release snapshot debugging is enabled in *sandbox environments* only. Debugging in a production environment will be enabled with a later release. You can, however, use snapshot debugging in this release to attach to a specific user session, which is currently not possible with regular debugging.
 
 Snapshot debugging introduces the concept of *snappoints*. A snappoint is a breakpoint in Visual Studio Code that is set when creating a snapshot, they do not, however, stop execution of code like when using regular debugging. Snappoints instruct execution to log the state at the breakpoint for later offline inspection. Snapshot debugging will record AL code as it runs on the server, but will only collect variable information on: 
 
