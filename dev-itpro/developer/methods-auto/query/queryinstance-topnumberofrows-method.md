@@ -45,16 +45,16 @@ Gets the current maximum number of rows included in the resulting data set
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
-You use the **TOPNUMBEROFROWS** method to limit the resulting dataset to the first set of rows that are generated for the query. For example, you can include only the first 10 or first 100 rows in the resulting dataset. The **TOPNUMBEROFROWS** method is useful for key performance indicators such as the top number of customers or sales.  
+You use the **TopNumberOfRows** method to limit the resulting dataset to the first set of rows that are generated for the query. For example, you can include only the first 10 or first 100 rows in the resulting dataset. The **TopNumberOfRows** method is useful for key performance indicators such as the top number of customers or sales.  
   
-You can also specify the number of rows to include in the dataset by setting the [TopNumberOfRows Property](../../properties/devenv-topnumberofrows-property.md). The **TOPNUMBEROFROWS** method will overwrite the **TopNumberOfRows** property setting.  
+You can also specify the number of rows to include in the dataset by setting the [TopNumberOfRows Property](../../properties/devenv-topnumberofrows-property.md). The **TopNumberOfRows** method will overwrite the **TopNumberOfRows** property setting.  
   
 ## Example  
-This code example demonstrates how to use the **TOPNUMBEROFROWS** method on a query to return the top 10 customer sales orders based on the quantity of items.
+This code example demonstrates how to use the **TopNumberOfRows** method on a query to return the top 10 customer sales orders based on the quantity of items.
 
 The following query object links table **18 Customer** and table **37 Sales Line** and uses the **TopNumberOfRows** property to get top 5 customer sales orders based on the quantity of items.
   
-```
+```al
 query 50123 "Customer_Sales_Quantity"
 {
     QueryType = Normal;
@@ -90,14 +90,14 @@ query 50123 "Customer_Sales_Quantity"
 
 The following codeunit runs the query, saves it as a CSV file, and displays a message that states the number of rows that are returned in the resulting dataset.
 
-```
+```al
 codeunit 50100 MyQueryTop10
 {
     trigger OnRun()
     begin
 
         // Overwrites the TopNumberOfRows property and returns the first 10 rows in the dataset.  
-        //MyQuery.TOPNUMBEROFROWS(10);
+        //MyQuery.TopNumberOfRows(10);
         // Opens the query.  
         MyQuery.Open;
         // Reads each row of the dataset and counts the number of rows.  

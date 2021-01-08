@@ -48,14 +48,14 @@ All filters of the query
   
  Filters that are set by the **SetFilter** method and **SetRange** method are applied to a query when the query is opened by using a call to the **Open**, the **SaveAsXML**, or **SaveAsCSV** methods. You must consider the location of the **GetFilterS** method with respect to these methods to obtain the results that you want. For example, in the following two code examples, the **GetFilterS** method will return the filter set by the **SetFilter** method call. However, in the first example, the filter has been applied to the query dataset; in the second example, the filter has not been applied.  
   
-```  
+```al
 Query.SetFilter(Column, String);  
 Query.Open;   
 Query.GetFilterS;  
 Query.Read;  
 ```  
   
-```  
+```al
 Query.Open;   
 Query.SetFilter(Column, String);  
 Query.GetFilterS;  

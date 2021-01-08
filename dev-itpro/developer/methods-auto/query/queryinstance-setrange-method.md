@@ -50,16 +50,16 @@ The upper limit of the range. The data type of this parameter must match the dat
   
  To apply filters to a dataset, the **SetRange** method must be called before the **Open**, **SaveAsXML**, and **SaveAsCSV** methods, as shown in the following example. To remove filters, you call the [CLEAR Method](../system/system-clear-joker-method.md) or **SetRange** without values for the *FromValue* and *ToValue* parameters.  
   
-```  
+```al
 Query.SetRange(Column1, FromValue, ToValue);  
 Query.Open;  
 Query.Read;  
-CLEAR(Query);  
+Clear(Query);  
 ```  
   
  A call to the **SetRange** method automatically closes a query dataset that is currently open. Therefore, the following code is unauthorized and will fail because there is no open dataset for the **Read** method to read.  
   
-```  
+```al
 Query.Open;  
 Query.Read;  
 Query.SetRange(Column1, FromValue, ToValue);  
@@ -99,7 +99,7 @@ Query.Read;
   
 2.  Create the following AL variables and text constant in the object that will run the query, such as a codeunit.  
   
-      ```
+    ```al
      var
         MyQuery: Query "Customer SalesQuantity";
         Text000: Label 'Customer name = %1, Quantity = %2';
@@ -107,7 +107,7 @@ Query.Read;
   
  The following AL code uses the **SetRange** method to filter a query dataset over a range of values on the **Quantity** column. You can add the code to a codeunit, and then run the codeunit to see the results.  
   
-```  
+```al
 // Sets a filter to display only sales quantities greater than 10.  
 MyQuery.SetRange(Quantity, '10', '50');  
 // Sets a filter to display the columns with the value Selangorian Ltd. only.  

@@ -44,7 +44,7 @@ An instance of the [Query](query-data-type.md) data type.
 
 -   To read a row from the dataset, you must call the **Open** method before the **Read** method, as shown in the following code example.  
 
-    ```  
+    ```al
     Query.SetFilter(Column1, String);  
     Query.Open;  
     Query.Read;  
@@ -54,7 +54,7 @@ An instance of the [Query](query-data-type.md) data type.
 
 -   If the **Open** method is called on a query that is already in the opened or in the reading state, then the query dataset is closed, and then the query is executed again. To continue to loop through the dataset, the **Read** method must be called again. The next **Read** method call returns the first row in the dataset, as shown in the following code example.  
 
-    ```  
+    ```al
     // Opens the query and generates a dataset.  
     Query.Open;  
     Query.Read;  
@@ -66,11 +66,11 @@ An instance of the [Query](query-data-type.md) data type.
 
 -  **Open** method does not clear any filters that were set by the **SetFilter** or **SetRange** methods on a previous **Open** call. If you want to clear the filters, then you must call the **CLEAR** method on the query variable.  
 
-    ```  
+    ```al
     Query.SetFilter(Column1, String);  
     Query.Open;  
     Query.Read;  
-    CLEAR(query);  
+    Clear(query);  
     Query.Open;  
     Query.Read;  
     ```  
@@ -86,7 +86,7 @@ An instance of the [Query](query-data-type.md) data type.
 
  The following AL code opens the query, reads each row of the dataset, and then displays a message that uses the content of the row. You can add the code to a codeunit, and then run the codeunit to see the results.  
 
-```  
+```al
 var
     MyQuery: Query "Customer SalesQuantity";
     Text000: Label 'Customer name = %1, Quantity = %2';

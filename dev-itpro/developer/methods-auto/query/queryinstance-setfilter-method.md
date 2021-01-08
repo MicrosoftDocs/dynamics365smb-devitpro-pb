@@ -47,16 +47,16 @@ Replacement values to insert in replacement fields in the filter expression. The
 ## Remarks  
  To apply filters to a dataset, the **SetFilter** method must be called before the **Open**, **SaveAsXML**, and **SaveAsCSV** methods, as shown in the following example. To remove filters from query, you call the [CLEAR Method](../../methods/devenv-clear-method.md).  
   
-```  
+```al
 Query.SetFilter(Column1, String);  
 Query.Open;  
 Query.Read;  
-CLEAR(Query);  
+Clear(Query);  
 ```  
   
  A call to the **SetFilter** method automatically closes a query dataset that is currently open. Therefore, the following code is unauthorized and will fail because there is no open dataset for the **Read** method to read.  
   
-```  
+```al
 Query.Open;  
 Query.Read;  
 Query.SetFilter(Column2, String);  
@@ -95,7 +95,7 @@ Query.Read;
 
         <!--NAV For step-by-step instructions for creating this query, see [Walkthrough: Creating a Query to Link Two Tables](Walkthrough--Creating-a-Query-to-Link-Two-Tables.md).-->  
   
-```  
+```al
 var
   MyQuery: Query "Customer SalesQuantity";
   Text000: Label 'Customer name = %1, Quantity = %2';

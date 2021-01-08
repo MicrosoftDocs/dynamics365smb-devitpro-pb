@@ -42,7 +42,7 @@ An instance of the [Query](query-data-type.md) data type.
   
  To read a row in the dataset, you must call the **Open** method before the **Read** method. After the **Read** method call, columns can be accessed as shown in the following code example.  
   
-```  
+```al
 query.Open;  
 query.Read;  
 query.ColumnName  
@@ -51,7 +51,7 @@ query.ColumnName
   
  You can call the **Read** method multiple times after the **Open** method to read consecutive rows in the dataset. The first **Read** method call retrieves the first row from the resulting dataset and each subsequent **Read** method retrieves the next row from the dataset. For example, the second **Read** method call retrieves the second row, the third **Read** method call retrieves the third row, and so on.  
   
-```  
+```al
 Query.Open;  
 // Reads the first row in the dataset.  
 Query.Read;   
@@ -75,7 +75,7 @@ Query.ColumnName
   
  The following AL code opens the query, reads each row of dataset, and then displays a message that has the content of the row. You can add the code to a codeunit, and then run the codeunit to see the results.  
   
-``` 
+```al
 var
   MyQuery: Query "Customer SalesQuantity";
   Text000: Label 'Customer name = %1, Quantity = %2'; 
