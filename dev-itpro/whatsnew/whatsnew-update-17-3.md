@@ -25,6 +25,7 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 - [Use Shortcut dimensions in G/L Entries for Financial reporting](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/use-shortcut-dimensions-gl-entries-financial-reporting) <!--(Ivan) /dynamics365/business-central/finance-dimensions#to-set-up-global-and-shortcut-dimensionshttps://docs.microsoft.com/en-us-->
 - [Business Central in Microsoft Teams](/dynamics365/business-central/across-teams-overview) <!--(Mike)-->
 - [Signal from web service key authentication added to Application Insights telemetry for partners](../administration/telemetry-webservices-access-key-trace.md)<!--(Kennie)-->
+- [Snapshot debugging enabled in production environments](/dynamics365/business-central/dev-itpro/developer/devenv-snapshot-debugging)
 
 ## Release Plan
 If you want to get a comprehensive overview of what's new and planned for Business Central online for the entire 2020 release wave 2 (release from October 2020 through March 2021), find the link to the release plan [here](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/planned-features).
