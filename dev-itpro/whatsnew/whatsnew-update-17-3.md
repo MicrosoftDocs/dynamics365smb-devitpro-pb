@@ -45,7 +45,7 @@ Make sure to join the office hours calls around ‘Customer Migration Tooling’
 
 
 **Want to improve the performance of Business Central?**  
-Visit aka.ms/bcperformance and learn about best practices, dos and don'ts and different ways to make changes with a performance impact. The Performance Tuning Guide will help you understand and improve the performance of Business Central whether you are a functional consultant, a developer, or an administrator.
+Visit https://aka.ms/bcperformance and learn about best practices, dos and don'ts and different ways to make changes with a performance impact. The Performance Tuning Guide will help you understand and improve the performance of Business Central whether you are a functional consultant, a developer, or an administrator.
 
 **It’s time to switch your Dynamics 365 Business Central browser to Microsoft Edge**  
 On April 2, 2021, Microsoft will remove Internet Explorer 11 and Microsoft Edge Legacy browsers from the list of supported browsers for the Business Central modern clients. Read the details, how it applies to you and actions to take [here](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/21/its-time-to-switch-your-dynamics-365-business-central-browser-to-microsoft-edge/).
