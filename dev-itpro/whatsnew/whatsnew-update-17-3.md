@@ -38,7 +38,7 @@ Please note that new customers will automatically get the latest builds of Busin
 ## Good to know
 
 **Basic Authentication**  
-Basic Authentication (Web Service Access Key) removal for SaaS has been postponed until [April 2022](/dynamics365/business-central/dev-itpro/upgrade/deprecated-features-w1#basic-auth--web-service-access-keys-for-saas). We see that some integrations needs more time to move from Web Service Access Key usage to OAuth. PowerShell samples on how to connect to Business Central is published on [GitHub](https://github.com/microsoft/BCTech/tree/master/samples/PSOAuthBCAccess). 
+Basic Authentication (Web Service Access Key) removal for Business Central online has been postponed until [April 2022](/dynamics365/business-central/dev-itpro/upgrade/deprecated-features-w1#basic-auth--web-service-access-keys-for-saas). We see that some integrations needs more time to move from Web Service Access Key usage to OAuth. PowerShell samples on how to connect to Business Central is published on [GitHub](https://github.com/microsoft/BCTech/tree/master/samples/PSOAuthBCAccess). 
 
 **Business Central Office Hours Calls in January**  
 Make sure to join the office hours calls around ‘Customer Migration Tooling’ on January 12 and ‘Power Platform Integration – Power BI’ on January 26. Register and stay tuned for the upcoming calls: https://aka.ms/BCOfficeHours. 
