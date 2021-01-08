@@ -40,11 +40,19 @@ This table gives you an overview of the licenses needed for these features in a 
 |View a card|![Teams license check mark](media/check.png "Business Central license check mark")||
 |View card details|![Teams license check mark](media/check.png "check")|![Business Central license check mark](media/check.png "check")|
 
-### What permissions in [!INCLUDE [prod_short](includes/prod_short.md)] are required for these features to work?
+## What permissions in [!INCLUDE [prod_short](includes/prod_short.md)] are required for these features to work?
 
 A user who pastes a link into a conversation must have at least read permission to the page and data that is targeted by the link. Otherwise, the link won't expand into card. This requirement is identical to what is required in [!INCLUDE [prod_short](includes/prod_short.md)].
 
 Once a card has been submitted in a conversation, any user in that conversation can view that card without having permission to [!INCLUDE [prod_short](includes/prod_short.md)]. However, to view the card details, users have to have at least read permission to the target page and data. To make changes to data, they'll need modify permissions.
+
+## Does the [!INCLUDE [prod_short](includes/prod_short.md)] app for Teams allow me to create tabs in Teams for displaying Business Central?
+
+No. This scenario isn't supported. The [!INCLUDE [prod_short](includes/prod_short.md)] platform doesn't provide any extensibility or standard features to display a page inside a Teams tab.
+
+## Does the Business Central app for Teams allow me to connect to Teams APIs? 
+
+The [!INCLUDE [prod_short](includes/prod_short.md)] platform doesn't provide any specific ways to call Team APIs from AL code, such as programmatically creating a new team with channels and users. To extend [!INCLUDE [prod_short](includes/prod_short.md)] using Teams APIs, known as “connectors”, see Teams extensibility documentation at [https://developer.microsoft.com/en-us/microsoft-teams](https://developer.microsoft.com/en-us/microsoft-teams).
 
 ## See Also
 
