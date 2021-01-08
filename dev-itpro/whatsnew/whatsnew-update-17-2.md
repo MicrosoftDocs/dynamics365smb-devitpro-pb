@@ -25,7 +25,8 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/en-
 - [Signal from permission changes to added to Application Insights telemetry for partners](../administration/telemetry-permission-changes-trace.md) 
 - [Signal from the retention policy feature added to Application Insights telemetry for partners](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/signal-retention-policy-feature-added-application-insights-telemetry-partners) 
 - [Signal from the sensitive field audit feature added to Application Insights telemetry for partners](../administration/telemetry-field-monitoring-trace.md)
-
+- [Signal from the email feature added to Application Insights telemetry for partners](../administration/telemetry-email-trace.md)
+- [Signal from application packages lifecycle added to Application Insights Telemetry for partners](..\administration\telemetry-configuration-package-trace.md)<
 
 ## Release Plan
 If you want to get a comprehensive overview of what's new and planned for Business Central online for the entire 2020 release wave 2 (release from October 2020 through March 2021), find the link to the release plan [here](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/planned-features).
