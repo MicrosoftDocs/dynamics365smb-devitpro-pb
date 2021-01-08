@@ -50,60 +50,62 @@ You set the FormatArgument parameter based on the setting of the Format paramete
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks  
- A CSV file stores data in a plain text format. When you save a query dataset as a CSV file, each row of the dataset is stored on a separate line in the file, and each column in a row is separated by a comma or another delimiter of your choice. The first line of the file will contain the column names of the query. A query column name is specified by its [Name Property](../../properties/devenv-name-property.md).  
+## Remarks
 
- When the **SAVEASCSV** method is called the query dataset is generated and then saved in CSV format to the file that is designated by the *FileName* parameter.  
+A CSV file stores data in a plain text format. When you save a query dataset as a CSV file, each row of the dataset is stored on a separate line in the file, and each column in a row is separated by a comma or another delimiter of your choice. The first line of the file will contain the column names of the query. A query column name is specified by its [Name Property](../../properties/devenv-name-property.md).  
 
- To apply filters with the **SETFILTER** and **SETRANGE** methods, the SAVEASCSV method must be called after **SETFILTER** and **SETRANGE** methods, as shown in the following example.  
+When the **SaveAsCSV** method is called the query dataset is generated and then saved in CSV format to the file that is designated by the *FileName* parameter.  
 
-```  
+To apply filters with the **SetFilter** and **SetRange** methods, the SaveAsCSV method must be called after **SetFilter** and **SetRange** methods, as shown in the following example.  
+
+```al
 // Sets a filter on the Quantity column of the query  
-Query.SETFILTER(Quantity, '>50');  
+Query.SetFilter(Quantity, '>50');  
 
-// Opens a new query that is filtered by the SETFILTER method and saves the dataset  
-Query.SAVEASCSV('c:\test.csv');  
+// Opens a new query that is filtered by the SetFilter method and saves the dataset  
+Query.SaveAsCSV('c:\test.csv');  
 ```  
 
- The **SAVEASCSV** method can be called at any place in the code and does not require that the **CLOSE**, **OPEN** or **READ** methods are called before it. When the **SAVEASCSV** method is called, a new instance of the query is created. The query is implicitly opened, read, and closed. If there is currently a dataset in the opened state when the **SAVEASCSV** method is called, then that instance is closed. This means that the following code is illegal because the query is not open on the second **READ** call.  
+The **SaveAsCSV** method can be called at any place in the code and does not require that the **Close**, **Open** or **Read** methods are called before it. When the **SaveAsCSV** method is called, a new instance of the query is created. The query is implicitly opened, read, and closed. If there is currently a dataset in the opened state when the **SaveAsCSV** method is called, then that instance is closed. This means that the following code is illegal because the query is not open on the second **Read** call.  
 
-```  
-Query.OPEN;  
-Query.READ;  
-Query.SAVEASCSV('c:\test.csv');  
-Query.READ;   
-```  
-
- The correct code for this example is as follows.  
-
-```  
-Query.OPEN;  
-Query.READ;  
-Query.SAVEASCSV('c:\test.csv');  
-Query.OPEN;  
-Query.READ;   
+```al
+Query.Open;  
+Query.Read;  
+Query.SaveAsCSV('c:\test.csv');  
+Query.Read;   
 ```  
 
-## Example  
- The following example shows how to save the dataset of a query with the name **My Customers Query** as a CSV file. The file is given the name **mycustomers.csv** and is saved on the c: drive of the computer running [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)]. The query consists of three columns: No., Name, and City. The file is set to place the columns at the following positions: 1, 10, and 40.  
+The correct code for this example is as follows.  
 
- This example requires that you create a query called **My Customer Query** that is based on table **18 Customer** and contains the **No**, **Name**, and **City** columns. <!--NAV For more information, see [How to: Create Queries](How-to-Create-Queries.md). -->  
+```al
+Query.Open;  
+Query.Read;  
+Query.SaveAsCSV('c:\test.csv');  
+Query.Open;  
+Query.Read;   
+```  
 
-```
+## Example
+
+The following example shows how to save the dataset of a query with the name **My Customers Query** as a CSV file. The file is given the name **mycustomers.csv** and is saved on the c: drive of the computer running [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)]. The query consists of three columns: No., Name, and City. The file is set to place the columns at the following positions: 1, 10, and 40.  
+
+This example requires that you create a query called **My Customer Query** that is based on table **18 Customer** and contains the **No**, **Name**, and **City** columns. <!--NAV For more information, see [How to: Create Queries](How-to-Create-Queries.md). -->  
+
+```al
   var
     MyCustomerQuery: Query "My Customer Query";
     OK: Boolean;
     Text000: Label 'Query was not saved.';
 begin
-    OK := MyCustomerQuery.SAVEASCSV('c:\mycustomers.csv', 0, '1,10,40');  
+    OK := MyCustomerQuery.SaveAsCSV('c:\mycustomers.csv', 0, '1,10,40');  
     if not OK then  
-          ERROR(Text000);  
+          Error(Text000);  
 end;
 ```  
 
- The following code shows an example of the content of the saved file.  
+The following code shows an example of the content of the saved file.  
 
-```  
+```
 No       Name                          City  
 01121212 Spotsmeyer's Furnishings      Miami  
 01445544 Progressive Home Furnishings  Chicago  
@@ -114,7 +116,7 @@ No       Name                          City
 
 ```  
 
- If for some reason the file cannot be saved, then the message **Query was not saved.** appears.
+If for some reason the file cannot be saved, then the message **Query was not saved.** appears.
 
 
 ## See Also
