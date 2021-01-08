@@ -99,7 +99,7 @@ codeunit 50100 MyQueryTop10
         // Overwrites the TopNumberOfRows property and returns the first 10 rows in the dataset.  
         //MyQuery.TOPNUMBEROFROWS(10);
         // Opens the query.  
-        MyQuery.OPEN;
+        MyQuery.Open;
         // Reads each row of the dataset and counts the number of rows.  
         while MyQuery.Read do begin
             Counter += 1;
@@ -107,7 +107,7 @@ codeunit 50100 MyQueryTop10
         // Saves the dataset as a CSV file.  
         MyQuery.SaveAsCsv('c:\temp\CustomerSales.csv');
         // Displays a message that shows the number of rows.  
-        MESSAGE(Text000, counter);
+        Message(Text000, counter);
 
     end;
 
