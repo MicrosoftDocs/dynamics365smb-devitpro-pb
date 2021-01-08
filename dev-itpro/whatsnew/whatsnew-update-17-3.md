@@ -21,14 +21,15 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 
 ## Feature changes
 - [Restoring environments in Business Central admin center](../administration/tenant-admin-center-environments.md)
--	Handle Price List Exceptions with Allow Updating Defaults <!--(Ivan)--> 
--	Use Shortcut dimensions in G/L Entries for Financial reporting <!--(Ivan)-->
--	Business Central in Microsoft Teams (Mike)
--	Signal from job queue execution added to Application Insights telemetry for partners <!--(Kennie)-->
--	Signal from permission changes added to Application Insights telemetry for partners <!--(Kennie)-->
--	Signal from the email feature added to Application Insights telemetry for partners <!--(Kennie)-->
--	Signal from application packages lifecycle added to Application Insights Telemetry for partners <!--(Kennie)-->
--	Signal from web service key authentication added to Application Insights telemetry for partners <!--(Kennie)-->
+- Handle Price List Exceptions with Allow Updating Defaults <!--(Ivan)--> 
+- Use Shortcut dimensions in G/L Entries for Financial reporting <!--(Ivan)-->
+- Business Central in Microsoft Teams (Mike)
+- [Snapshot debugging enabled in production environments](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-snapshot-debugging)
+- Signal from job queue execution added to Application Insights telemetry for partners <!--(Kennie)-->
+- Signal from permission changes added to Application Insights telemetry for partners <!--(Kennie)-->
+- Signal from the email feature added to Application Insights telemetry for partners <!--(Kennie)-->
+- Signal from application packages lifecycle added to Application Insights Telemetry for partners <!--(Kennie)-->
+- Signal from web service key authentication added to Application Insights telemetry for partners <!--(Kennie)-->
 
 
 ## Release Plan
