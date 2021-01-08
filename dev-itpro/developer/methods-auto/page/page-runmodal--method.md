@@ -54,27 +54,29 @@ In some cases, the actions for the return values are different when the page dis
 |RunObject|The user selected an option that ran another object.|  
 |RunSystem|The user selected an option that ran an external program.|  
 
-## Remarks  
- If you know the specific page that you want to run when you are designing your application, then you can create a Page variable, set the Subtype of the variable to a specific page, and then use this method or the [RUN Method \(Page\)](page-run--method.md).  
+## Remarks
 
- If you do not know the specific page that you want to run, then use the [RUN Method \(Page\)](page-run--method.md) or the **RUNMODAL Method \(Page\)** and specify the page in the *Number* parameter.  
+If you know the specific page that you want to run when you are designing your application, then you can create a Page variable, set the Subtype of the variable to a specific page, and then use this method or the [Run Method \(Page\)](page-run--method.md).  
 
- After you define the page variable, you can use it before and after you run the page. If you use the [RUN Method \(Page\)](page-run--method.md), then you can only use the variable before you run the page.  
+If you do not know the specific page that you want to run, then use the [Run Method \(Page\)](page-run--method.md) or the **RunModal Method \(Page\)** and specify the page in the *Number* parameter.  
 
-## Example  
- This example shows how to use this method. Assume that the *SomePage* variable has been defined as `Page 1`.  
+After you define the page variable, you can use it before and after you run the page. If you use the [RUN Method \(Page\)](page-run--method.md), then you can only use the variable before you run the page.  
 
-```  
-CLEAR(SomePage);  
+## Example
+
+This example shows how to use this method. Assume that the *SomePage* variable has been defined as `Page 1`.  
+
+```al
+Clear(SomePage);  
 SomePage.XXX; // Any user-defined method  
-SomePage.SETTABLEVIEW(MyRecord);  
-SomePage.SETRECORD(MyRecord);  
-if SomePage.RUNMODAL = Action::LookupOK then  
-  SomePage.GETRECORD(MyRecord)...  
+SomePage.SetTableView(MyRecord);  
+SomePage.SetRecord(MyRecord);  
+if SomePage.RunModal = Action::LookupOK then  
+  SomePage.GetRecord(MyRecord)...  
 ```  
 
 > [!NOTE]  
->  This code example includes the [CLEAR Method](../system/system-clear-joker-method.md) to make sure that the variable has been cleared.  
+> This code example includes the [Clear Method](../system/system-clear-joker-method.md) to make sure that the variable has been cleared.  
 
 ## See Also
 [Page Data Type](page-data-type.md)  

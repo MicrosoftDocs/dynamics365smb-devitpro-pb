@@ -44,7 +44,7 @@ Specifies the ID of the page background task to cancel. The ID is assigned to th
 ## Example
 The following example uses the CANCELBACKGROUNDTASK method to cancel an existing page background task, based on its task ID.
  
-```
+```al
 var​
   WaitTaskId: Integer;​
 ​
