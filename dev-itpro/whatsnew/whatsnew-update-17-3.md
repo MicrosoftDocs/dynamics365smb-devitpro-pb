@@ -37,7 +37,7 @@ Please note that new customers will automatically get the latest builds of Busin
 ## Good to know
 
 **Basic Authentication**  
-Basic Authentication (Web Service Access Key) removal for SaaS has been postponed until April 2022. We see that some integrations needs more time to move from Web Service Access Key usage to OAuth. PowerShell samples on how to connect to Business Central is published on GitHub. 
+Basic Authentication (Web Service Access Key) removal for SaaS has been postponed until [April 2022](/dynamics365/business-central/dev-itpro/upgrade/deprecated-features-w1#basic-auth--web-service-access-keys-for-saas). We see that some integrations needs more time to move from Web Service Access Key usage to OAuth. PowerShell samples on how to connect to Business Central is published on [GitHub](https://github.com/microsoft/BCTech/tree/master/samples/PSOAuthBCAccess). 
 
 **Business Central Office Hours Calls in January**  
 Make sure to join the office hours calls around ‘Customer Migration Tooling’ on January 12 and ‘Power Platform Integration – Power BI’ on January 26. Register and stay tuned for the upcoming calls: https://aka.ms/BCOfficeHours. 
@@ -47,4 +47,4 @@ Make sure to join the office hours calls around ‘Customer Migration Tooling’
 Visit aka.ms/bcperformance and learn about best practices, dos and don'ts and different ways to make changes with a performance impact. The Performance Tuning Guide will help you understand and improve the performance of Business Central whether you are a functional consultant, a developer, or an administrator.
 
 **It’s time to switch your Dynamics 365 Business Central browser to Microsoft Edge**  
-On April 2, 2021, Microsoft will remove Internet Explorer 11 and Microsoft Edge Legacy browsers from the list of supported browsers for the Business Central modern clients. Read the details, how it applies to you and actions to take here.
+On April 2, 2021, Microsoft will remove Internet Explorer 11 and Microsoft Edge Legacy browsers from the list of supported browsers for the Business Central modern clients. Read the details, how it applies to you and actions to take [here](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/21/its-time-to-switch-your-dynamics-365-business-central-browser-to-microsoft-edge/).
