@@ -51,7 +51,7 @@ var
 begin 
     InvtEventBuf.Find('-');  
     RecID := InvtEventBuf."Source Line ID";  
-    RecRef := RecID.GETRECORD;  
+    RecRef := RecID.GetRECORD;  
     RecRef.SETTABLE(ProdOrderComp);  
 end;
 ```  

@@ -43,7 +43,7 @@ An instance of the [RecordRef](recordref-data-type.md) data type.
  This method works just like the [HASFILTER Method \(Record\)](../record/record-hasfilter-method.md).  
   
 ## Example  
- The following example opens the Customer table with a RecordRef variable that is named RecRef. The HASFILTER method determines whether a filter has been applied in the Customer table. The method returns **false** because no filters are applied. The return value is stored in the varHasFilters variable. The [SETRECFILTER Method \(RecordRef\)](recordref-setrecfilter-method.md) is used to set a filter. The HASFILTER method now returns **true**. This example requires that you create the following global variables and text constant.  
+ The following example opens the Customer table with a RecordRef variable that is named RecRef. The HASFILTER method determines whether a filter has been applied in the Customer table. The method returns **false** because no filters are applied. The return value is stored in the varHasFilters variable. The [SetRecFilter Method \(RecordRef\)](recordref-setrecfilter-method.md) is used to set a filter. The HASFILTER method now returns **true**. This example requires that you create the following global variables and text constant.  
     
 ```   
 var
@@ -54,7 +54,7 @@ begin
     RecRef.Open(Database::Customer);  
     VarHasFilters := RecRef.HASFILTER;  
     Message('Are there any filters? %1', VarHasFilters);  
-    RecRef.SETRECFILTER;  
+    RecRef.SetRecFilter;  
     VarHasFilters := RecRef.HASFILTER;  
     Message(Text000, VarHasFilters);  
 end;

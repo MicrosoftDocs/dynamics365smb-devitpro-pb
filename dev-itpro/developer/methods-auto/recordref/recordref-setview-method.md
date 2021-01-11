@@ -37,7 +37,7 @@ The string format is the same as the SourceTableView property on pages.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- The value of the *String* parameter can be returned by the [GETVIEW Method \(RecordRef\)](recordref-getview-method.md).  
+ The value of the *String* parameter can be returned by the [GetVIEW Method \(RecordRef\)](recordref-getview-method.md).  
   
  If the SetView method is executed with an empty string, all the filters are removed and the primary key is used.  
   
@@ -46,7 +46,7 @@ The string format is the same as the SourceTableView property on pages.
  This method works the same as the [SetView Method \(Record\)](../record/record-setview-method.md).  
   
 ## Example  
- The following example opens the Customer \(18\) table as a RecordRef variable that is named CustomerRecRef. The SetView method sets the sort key to the Name field, sort order to Ascending and sets a filter that selects records between 1000 and 2000. The [GETVIEW Method \(RecordRef\)](recordref-getview-method.md) retrieves the sort order, key and filters that have been set and stores the value in the ViewString variable. The value in the ViewString variable is displayed in a message box. 
+ The following example opens the Customer \(18\) table as a RecordRef variable that is named CustomerRecRef. The SetView method sets the sort key to the Name field, sort order to Ascending and sets a filter that selects records between 1000 and 2000. The [GetVIEW Method \(RecordRef\)](recordref-getview-method.md) retrieves the sort order, key and filters that have been set and stores the value in the ViewString variable. The value in the ViewString variable is displayed in a message box. 
 
 ```  
 var
@@ -56,7 +56,7 @@ var
 begin   
     CustomerRecRef.Open(18);  
     CustomerRecRef.SetView('Sorting(Name) Order(Ascending) Where(No.=Const(10000..20000))');  
-    ViewString := CustomerRecRef.GETVIEW;  
+    ViewString := CustomerRecRef.GetVIEW;  
     Message(Text000, ViewString);  
 end;
   

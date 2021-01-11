@@ -44,12 +44,12 @@ The ID of the filter group.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
-A filtergroup can contain a filter for a RecordRef that has been set earlier with SETFILTER or SetRange. The total filter applied is the combination of all the filters set in all the filtergroups.  
+A filtergroup can contain a filter for a RecordRef that has been set earlier with SetFilter or SetRange. The total filter applied is the combination of all the filters set in all the filtergroups.  
   
 ## Example  
-The following example determines the filtergroup that is set on the Customer table and then changes filtergroup to 1, which is the filtergroup that is applied globally to the entire application. The code starts by opening the Customer table with a RecordRef variable. The [SETRECFILTER Method (RecordRef)](recordref-setrecfilter-method.md) sets the values in the current key of the current record as a record filter. This filter is a standard filtergroup so it has a filtergroup number of 0. Then the FILTERGROUP method returns the number for the filtergroup. This filtergroup is a standard filter so the return value is 0. This value is stored in the varOrigGroup variable and displayed in a message box. The FILTERGROUP method changes the filtergroup to 1, which is the number for the global filtergroup. The new value is stored in the varCurrGroup variable and displayed in a message box. 
+The following example determines the filtergroup that is set on the Customer table and then changes filtergroup to 1, which is the filtergroup that is applied globally to the entire application. The code starts by opening the Customer table with a RecordRef variable. The [SetRecFilter Method (RecordRef)](recordref-setrecfilter-method.md) sets the values in the current key of the current record as a record filter. This filter is a standard filtergroup so it has a filtergroup number of 0. Then the FilterGroup method returns the number for the filtergroup. This filtergroup is a standard filter so the return value is 0. This value is stored in the varOrigGroup variable and displayed in a message box. The FilterGroup method changes the filtergroup to 1, which is the number for the global filtergroup. The new value is stored in the varCurrGroup variable and displayed in a message box. 
 
-```  
+```al
 var
     MyRecordRef: RecordRef;
     varOrigGroup: Integer;
@@ -58,10 +58,10 @@ var
     Text001: Label 'The current filtergroup is: %1';
 begin
     MyRecordRef.Open(Database::Customer);  
-    MyRecordRef.SETRECFILTER;  
-    varOrigGroup := MyRecordRef.FILTERGROUP;  
+    MyRecordRef.SetRecFilter;  
+    varOrigGroup := MyRecordRef.FilterGroup;  
     Message(Text000, varOrigGroup);  
-    varCurrGroup := MyRecordRef.FILTERGROUP(1);  
+    varCurrGroup := MyRecordRef.FilterGroup(1);  
     Message(Text001, varCurrGroup);  
 end;
 ```  

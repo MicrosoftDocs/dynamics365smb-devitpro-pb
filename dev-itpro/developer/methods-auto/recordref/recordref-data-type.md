@@ -41,7 +41,7 @@ The following methods are available on instances of the RecordRef data type.
 |[CountApprox()](recordref-countapprox-method.md)|Gets an approximate count of the number of records in the table|
 |[CurrentCompany()](recordref-currentcompany-method.md)|Gets the current company of a database table referred to by a RecordRef.|
 |[CurrentKey()](recordref-currentkey-method.md)|Gets the current key of the table referred to by the RecordRef. The current key is returned as a string.|
-|[CurrentKeyIndex([Integer])](recordref-currentkeyindex-method.md)|Gets or sets the current key of the table referred to by the RecordRef. The current key is set or returned as a number. This first key = 1, and so on. If RecordRef does not have an active record, CURRENTKEYINDEX will return -1. If this value is then passed to KEYINDEX, an index out of bounds error will occur. Therefore it is important to implement a check of the RecordRef parameter.|
+|[CurrentKeyIndex([Integer])](recordref-currentkeyindex-method.md)|Gets or sets the current key of the table referred to by the RecordRef. The current key is set or returned as a number. This first key = 1, and so on. If RecordRef does not have an active record, CurrentKeyIndex will return -1. If this value is then passed to KEYIndex, an index out of bounds error will occur. Therefore it is important to implement a check of the RecordRef parameter.|
 |[Delete([Boolean])](recordref-delete-method.md)|Deletes a record in a table.|
 |[DeleteAll([Boolean])](recordref-deleteall-method.md)|Deletes all records in a table that fall within a specified range.|
 |[DeleteLink(Integer)](recordref-deletelink-method.md)|Deletes a specified link from a record in a table.|
@@ -72,7 +72,7 @@ The following methods are available on instances of the RecordRef data type.
 |[IsEmpty()](recordref-isempty-method.md)|Determines whether any records exist in a filtered set of records in a table.|
 |[IsTemporary()](recordref-istemporary-method.md)|Determines whether a RecordRef refers to a temporary table.|
 |[KeyCount()](recordref-keycount-method.md)|Gets the number of keys that exist in the table that is referred to by the RecordRef. Returns an error if no table is selected.|
-|[KeyIndex(Integer)](recordref-keyindex-method.md)|Gets the KeyRef of the key that has the index specified in the table that is currently selected. The key can be composed of fields of any supported data type. Data types that are not supported include BLOBs, FlowFilters, variables, and functions. If the sorting key is set to a field that is not part of a key, then the KEYINDEX is -1.|
+|[KeyIndex(Integer)](recordref-keyindex-method.md)|Gets the KeyRef of the key that has the index specified in the table that is currently selected. The key can be composed of fields of any supported data type. Data types that are not supported include BLOBs, FlowFilters, variables, and functions. If the sorting key is set to a field that is not part of a key, then the KEYIndex is -1.|
 |[LoadFields(Integer,...)](recordref-loadfields-method.md)|Accesses the table's corresponding data source and loads the values of the specified fields on the record.|
 |[LockTable([Boolean] [, Boolean])](recordref-locktable-method.md)|Locks a table to protect it from write transactions that conflict with each other.|
 |[Mark([Boolean])](recordref-mark-method.md)|Marks a record. You can also use this method to determine whether a record is marked.|
@@ -104,11 +104,11 @@ The following methods are available on instances of the RecordRef data type.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
+## Remarks 
  
- 
-The RecordRef object can refer to any table in the database. Use the [Open method](recordref-open-method.md) to use the table number to select the table that you want to access, or use the [GETTABLE method](recordref-gettable-method.md) to use another record variable to select the table that you want to access.  
+The RecordRef object can refer to any table in the database. Use the [Open method](recordref-open-method.md) to use the table number to select the table that you want to access, or use the [GetTable method](recordref-gettable-method.md) to use another record variable to select the table that you want to access.  
   
- If one RecordRef variable is assigned to another RecordRef variable, then they both refer to the same table instance. 
+If one RecordRef variable is assigned to another RecordRef variable, then they both refer to the same table instance. 
 
 ## See Also  
 [Getting Started with AL](../../devenv-get-started.md)  

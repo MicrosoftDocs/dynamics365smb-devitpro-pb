@@ -67,11 +67,11 @@ The new values for the primary key.
   
  **Enter your changes again in the updated window, or start the interrupted activity again.**  
   
- In earlier versions of [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)], certain situations allowed code that an end-user runs to modify a record after a newer version of the record was written and committed to the database. This would overwrite the newer changes. However, in [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)], we have restricted the [MODIFY Method \(RecordRef\)](recordref-modify-method.md), **RENAME** Method \(RecordRef\), and [DELETE Method \(RecordRef\)](recordref-delete-method.md) so that the end-user receives the following run-time error in these certain situations:  
+ In earlier versions of [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)], certain situations allowed code that an end-user runs to modify a record after a newer version of the record was written and committed to the database. This would overwrite the newer changes. However, in [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)], we have restricted the [Modify Method \(RecordRef\)](recordref-modify-method.md), **Rename** Method \(RecordRef\), and [Delete Method \(RecordRef\)](recordref-delete-method.md) so that the end-user receives the following run-time error in these certain situations:  
   
  **Unable to change an earlier version of the \<Table Name> record. The record should be read from the database again. This is a programming error.**  
   
- You must design your application so that you use the most up-to-date version of the record for modifications to the database. You use the [GET Method \(RecordRef\)](recordref-get-method.md) to refresh the record with the latest version.  
+ You must design your application so that you use the most up-to-date version of the record for modifications to the database. You use the [Get Method \(RecordRef\)](recordref-get-method.md) to refresh the record with the latest version.  
   
 ## Example  
  This example shows how to change the value of the primary key of a Record variable, and how to change the value of the primary key of a RecordRef variable. 
@@ -84,19 +84,19 @@ var
     result: Boolean;
     CustomerRec: Record Cutomer;
 begin 
-    CustomerRec.GET('0112121');  
+    CustomerRec.Get('0112121');  
     NewNo1 := ‘9999999’;  
     NewNo2 := ‘8888888’;  
     Message('Customer name: %1; Customer number: %2',CustomerRec.Name, CustomerRec."No.");  
-    result := CustomerRec.RENAME(NewNo1);  
+    result := CustomerRec.Rename(NewNo1);  
     if result then  
       Message('After rename - Customer name: %1; Customer number: %2',CustomerRec.Name, CustomerRec."No.")  
     else  
       Message('No rename.');  
-    CustRecRef.GETTABLE(CustomerRec);  
-    result := CustRecRef.RENAME(NewNo2);  
+    CustRecRef.GetTABLE(CustomerRec);  
+    result := CustRecRef.Rename(NewNo2);  
     if result then begin  
-      CustomerRec.GET(NewNo2);  
+      CustomerRec.Get(NewNo2);  
       Message('After rename 2 - Customer name: %1; Customer number: %2',CustomerRec.Name, CustomerRec."No.")  
     end else  
       Message('No rename.');  

@@ -44,10 +44,10 @@ The string format is the same as the SourceTableView property on pages.
 ## Remarks  
  If the [SetView Method \(RecordRef\)](recordref-setview-method.md) has been executed, the *String* parameter will return the value set by SetView.  
   
- This method works the same way as the [GETVIEW Method \(Record\)](recordref-getview-method.md).  
+ This method works the same way as the [GetVIEW Method \(Record\)](recordref-getview-method.md).  
   
 ## Example  
- The following example opens the Customer table as a RecordRef variable that is named RecRef. The RecRef variable uses the GETVIEW method to retrieve the field that the table is sorted on and stores the value in the varView variable. The Customer table does not have any filters and keys set so no filters or keys are displayed. The *UseCaptions* parameter is set to **true** so the name of the field is displayed. If you set the *UseCaptions* to **false**, the field number will be displayed. 
+ The following example opens the Customer table as a RecordRef variable that is named RecRef. The RecRef variable uses the GetVIEW method to retrieve the field that the table is sorted on and stores the value in the varView variable. The Customer table does not have any filters and keys set so no filters or keys are displayed. The *UseCaptions* parameter is set to **true** so the name of the field is displayed. If you set the *UseCaptions* to **false**, the field number will be displayed. 
  
 ```   
 var
@@ -56,7 +56,7 @@ var
     Text000: Label 'The current view of the table is: %1';
 begin    
     RecRef.Open(Database::Customer);  
-    varView := RecRef.GETVIEW(TRUE);  
+    varView := RecRef.GetVIEW(TRUE);  
     Message(Text000, varView);  
 end;
 ```  

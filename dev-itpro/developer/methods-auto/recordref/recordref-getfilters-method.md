@@ -40,13 +40,13 @@ Filters that have been applied to the table that is referred to by the RecordRef
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- This method works just like the [GETFILTERS Method \(Record\)](../record/record-getfilters-method.md).  
+ This method works just like the [GetFilters Method \(Record\)](../record/record-getfilters-method.md).  
   
 ## Property Value/Return Value  
  Filters that have been applied to the table that is referred to by the *RecordRef* parameter.  
   
 ## Example  
- The following example opens a table as a RecorRef variable. The variable, RecRef, is used with the GETFILTERS method to retrieve the filters that are applied in the Customer table. If filters are applied, they will be stored in the Filters1 variable. The Filters1 variable does not contain any filters because filters have not been set. Then the [SETRECFILTER Method \(RecordRef\)](recordref-setrecfilter-method.md) is used to set the value in the current key of the current record as a filter. The variable Filters2 will now contain No. as a filter. 
+ The following example opens a table as a RecorRef variable. The variable, RecRef, is used with the GetFilters method to retrieve the filters that are applied in the Customer table. If filters are applied, they will be stored in the Filters1 variable. The Filters1 variable does not contain any filters because filters have not been set. Then the [SetRecFilter Method \(RecordRef\)](recordref-setrecfilter-method.md) is used to set the value in the current key of the current record as a filter. The variable Filters2 will now contain No. as a filter. 
    
 ```   
 var
@@ -56,9 +56,9 @@ var
     Text000: TexConst ENU='Filters1 contains : %1  Filters2 contains: %2';
 begin   
     RecRef.Open(Database::Customer);  
-    Filters1 := RecRef.GETFILTERS;  
-    RecRef.SETRECFILTER;  
-    Filters2 := RecRef.GETFILTERS;  
+    Filters1 := RecRef.GetFilters;  
+    RecRef.SetRecFilter;  
+    Filters2 := RecRef.GetFilters;  
     Message(Text000, Filters1, Filters2);  
 end;
 ```  

@@ -41,13 +41,13 @@ The name of the current key of the record.
 
 ## Example  
 
-```  
+```al
 var
     RecRef: RecordRef;
     Text000: Label 'The current key in the "%1" table is "%2".';
 begin
     RecRef.Open(18);  
-    Message(Text000,RecRef.Caption,RecRef.CURRENTKEY);
+    Message(Text000,RecRef.Caption,RecRef.CurrentKey);
 end;  
 ```  
   
@@ -55,7 +55,7 @@ end;
   
  `RecRef.Caption` - Returns the caption of the table.  
   
- `RecRef.CURRENTKEY` - Returns the caption of the current key in the table.  
+ `RecRef.CurrentKey` - Returns the caption of the current key in the table.  
   
 
 ## See Also
