@@ -59,12 +59,12 @@ This method assigns default values to each field in the record, including the Sy
 > [!NOTE]  
 > Primary key and timestamp fields are not initialized.  
   
-After the method runs, you can change the values in any or all of the fields before you call the [INSERT Method (RecordRef)](recordref-insert-method.md) to enter the record in the table. Be sure that the fields that make up the primary key contain values that make the total primary key unique. If the primary key is not unique (such as the record already exists), then the record is rejected.  
+After the method runs, you can change the values in any or all of the fields before you call the [Insert Method (RecordRef)](recordref-insert-method.md) to enter the record in the table. Be sure that the fields that make up the primary key contain values that make the total primary key unique. If the primary key is not unique (such as the record already exists), then the record is rejected.  
   
 The method works in the same way as the [INIT Method (Record)](../record/record-init-method.md).  
   
 ## Example  
-The following example opens a table 18 (Customer) with a RecordRef variable that is named CustomerRecref. The [Field Method (RecordRef)](recordref-field-method.md) creates a FieldRef variable that is named MyFieldRef for the field. The INIT method initializes the values in the fields by using default values and then uses the [INSERT Method (RecordRef)](recordref-insert-method.md) to insert a new record. The new record is 1120. This is the primary key for the new record.  
+The following example opens a table 18 (Customer) with a RecordRef variable that is named CustomerRecref. The [Field Method (RecordRef)](recordref-field-method.md) creates a FieldRef variable that is named MyFieldRef for the field. The INIT method initializes the values in the fields by using default values and then uses the [Insert Method (RecordRef)](recordref-insert-method.md) to insert a new record. The new record is 1120. This is the primary key for the new record.  
   
 > [!NOTE]  
 > In this example, the INIT method is called before the primary key is assigned a value. The INIT method does not initialize primary key fields. Therefore calling the INIT method before or after you assign values to the primary key field does not make any difference.  
@@ -81,7 +81,7 @@ begin
     CustomerRecref.INIT;  
     Message(‘%1’, MyFieldRef.Value);  
     MyFieldRef.Value := '1120';  
-    CustomerRecref.INSERT;  
+    CustomerRecref.Insert;  
     Message(‘%1’, MyFieldRef.Value);  
 end;
 ```  

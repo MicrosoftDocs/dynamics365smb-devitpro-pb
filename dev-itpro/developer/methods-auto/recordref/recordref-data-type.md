@@ -55,7 +55,7 @@ The following methods are available on instances of the RecordRef data type.
 |[Find([String])](recordref-find-method.md)|Finds a record in a table based on the values stored in the key fields.|
 |[FindFirst()](recordref-findfirst-method.md)|Finds the first record in a table based on the current key and filter.|
 |[FindLast()](recordref-findlast-method.md)|Finds the last record in a table based on the current key and filter.|
-|[FindSet([Boolean] [, Boolean])](recordref-findset-method.md)|Finds a set of records in a table based on the current key and filter. FindSET can only retrieve records in ascending order.|
+|[FindSet([Boolean] [, Boolean])](recordref-findset-method.md)|Finds a set of records in a table based on the current key and filter. FindSet can only retrieve records in ascending order.|
 |[Get(RecordId)](recordref-get-method.md)|Gets a record based on the ID of the record.|
 |[GetBySystemId(Guid)](recordref-getbysystemid-method.md)|Gets a record based on the ID of the record. The RecordRef must already be opened.|
 |[GetFilters()](recordref-getfilters-method.md)|Determines which filters have been applied to the table referred to by the RecordRef.|

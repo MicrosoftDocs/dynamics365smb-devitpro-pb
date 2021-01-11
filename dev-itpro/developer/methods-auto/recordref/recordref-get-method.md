@@ -47,7 +47,7 @@ The RecordID that contains the table number and the primary key of the table and
 ## Example  
  The following example opens the Customer table with the RecordRef variable, RecRef. The code assigns the first field in the table, which is the No. field, to MyFieldRef variable. The variable is assigned a value of 30000 by using the [Field Method \(RecordRef\)](recordref-field-method.md). The [RecordId Method \(RecordRef\)](recordref-recordid-method.md) retrieves the record ID of the record that has a value of 30000 in the No. field. The Get method then uses the RecID variable then to retrieves the record.
  
-```   
+```al
 var
     RecRef: RecordRef;
     MyFieldRef: FieldRef;

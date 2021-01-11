@@ -54,7 +54,7 @@ You can combine the '=', '\>', and '\<' characters. If this parameter contains '
 ## Example  
  The following example opens table 18 \(Customer\) as a RecordRef variable named CustomerRecref. The value for the field 1 \(No.\) is set to a specified record. In this example, the field is set to record 40000. The code uses the Find method to find the record that matches. 40000 in the table. If the record is found, the number, name, address and city of the customer are displayed in message boxes. The values in the fields are retrieved by using the [Field Method \(RecordRef\)](recordref-field-method.md). 
  
-```  
+```al
 var
     CustomerRecref: RecordRef;
     MyFieldRef: FieldRef;

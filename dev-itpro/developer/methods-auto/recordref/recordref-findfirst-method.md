@@ -45,7 +45,7 @@ An instance of the [RecordRef](recordref-data-type.md) data type.
 ## Example  
  The following example opens the Item table \(27\) as a RecordRef variable that is named ItemRecref. The FindFIRST method searches for the first record in the table. If the record is found, the description and unit price of the item in the record are displayed in a message box. Otherwise, a message that indicates that the first item was not found is displayed. 
  
-```  
+```al
 var
     ItemRecref: RecordRef;
     Text000: Label 'The first item is %1 and the unit price is %2.';

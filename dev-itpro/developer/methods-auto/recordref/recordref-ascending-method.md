@@ -73,7 +73,7 @@ CustomerRecref.Open(18);
 CustomerRecref.SetView('Sorting(Name) Order(Descending) Where(No.=Const(10000..20000))');  
 IsAscending := CustomerRecref.Ascending;  
 Message(Text000, IsAscending);  
-IsAscending := CustomerRecref.Ascending(TRUE);  
+IsAscending := CustomerRecref.Ascending(True);  
 Message(Text000, IsAscending);  
 ```  
   

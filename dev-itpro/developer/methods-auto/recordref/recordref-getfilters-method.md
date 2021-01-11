@@ -48,7 +48,7 @@ Filters that have been applied to the table that is referred to by the RecordRef
 ## Example  
  The following example opens a table as a RecorRef variable. The variable, RecRef, is used with the GetFilters method to retrieve the filters that are applied in the Customer table. If filters are applied, they will be stored in the Filters1 variable. The Filters1 variable does not contain any filters because filters have not been set. Then the [SetRecFilter Method \(RecordRef\)](recordref-setrecfilter-method.md) is used to set the value in the current key of the current record as a filter. The variable Filters2 will now contain No. as a filter. 
    
-```   
+```al
 var
     RecRef: RecordRef;
     Filters1: Text;

@@ -42,19 +42,19 @@ The name or number of the field that contains the primary key.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- This method works just like the [GetPOSITION Method \(Record\)](../../methods/devenv-getposition-method-record.md).  
+ This method works just like the [GetPosition Method \(Record\)](../../methods/devenv-getposition-method-record.md).  
   
 ## Example  
- The following example opens the Customer table as a RecodRef that is named RecRef. The RecordRef variable uses the GetPOSITION method to retrieve the position of the primary key. The *UseCaptions* parameter is set to **true** so the caption of the field that contains the primary key is returned. If you set *UseCaptions* to **false**, the number of the field is returned. 
+ The following example opens the Customer table as a RecordRef that is named RecRef. The RecordRef variable uses the GetPosition method to retrieve the position of the primary key. The *UseCaptions* parameter is set to **true** so the caption of the field that contains the primary key is returned. If you set *UseCaptions* to **false**, the number of the field is returned. 
    
-```   
+```al
 var
     RecRef: RecordRef;
     varPrimaryKey: Text;
     Text000: Label 'The primary key is: %1.';
 begin    
     RecRef.Open(Database::Customer);  
-    varPrimaryKey := RecRef.GetPOSITION(TRUE);  
+    varPrimaryKey := RecRef.GetPosition(True);  
     Message(Text000, varPrimaryKey);  
 end;
 ```  
