@@ -1,9 +1,8 @@
 ---
 title: "Obsolete Tag format."
-description: Explains AppSourceCop Rule AS0076.
 ms.author: solsen
 ms.custom: na
-ms.date: 12/03/2020
+ms.date: 01/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
