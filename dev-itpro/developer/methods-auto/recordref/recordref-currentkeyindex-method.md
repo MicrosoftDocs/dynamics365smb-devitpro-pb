@@ -16,7 +16,7 @@ author: SusanneWindfeldPedersen
 # RecordRef.CurrentKeyIndex Method
 > **Version**: _Available from runtime version 1.0._
 
-Gets or sets the current key of the table referred to by the RecordRef. The current key is set or returned as a number. This first key = 1, and so on. If RecordRef does not have an active record, CurrentKeyIndex will return -1. If this value is then passed to KEYIndex, an index out of bounds error will occur. Therefore it is important to implement a check of the RecordRef parameter.
+Gets or sets the current key of the table referred to by the RecordRef. The current key is set or returned as a number. This first key = 1, and so on. If RecordRef does not have an active record, CurrentKeyIndex will return -1. If this value is then passed to KeyIndex, an index out of bounds error will occur. Therefore it is important to implement a check of the RecordRef parameter.
 
 
 ## Syntax

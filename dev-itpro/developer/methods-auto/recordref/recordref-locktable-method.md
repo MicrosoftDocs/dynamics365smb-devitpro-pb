@@ -49,9 +49,9 @@ The table lock is released (unlocked) when the transaction is committed.
   
 ## Example 1
 
- The following example opens table number 18 \(Customer\) as a RecordRef that is named MyRecordRef. The LockTable method locks the table. This ensures that no records are inserted or deleted during the counting process. The [COUNT Method \(RecordRef\)](recordref-count-method.md) then retrieves the number of records in the table. The number of records is stored in the Count variable. The name of the table and the number of records in the table is displayed in a message box. The varTableNo variable can be used to open any table and get the number of records in that table by changing the value of the varTableNo variable. 
+ The following example opens table number 18 \(Customer\) as a RecordRef that is named MyRecordRef. The LockTable method locks the table. This ensures that no records are inserted or deleted during the counting process. The [Count Method \(RecordRef\)](recordref-count-method.md) then retrieves the number of records in the table. The number of records is stored in the Count variable. The name of the table and the number of records in the table is displayed in a message box. The varTableNo variable can be used to open any table and get the number of records in that table by changing the value of the varTableNo variable. 
   
-```  
+```al
 var
     CustomerRecref: RecordRef;
     Count: Integer;
@@ -61,7 +61,7 @@ begin
     varTableNo := 18;  
     MyRecordRef.Open(varTableNo);  
     MyRecordRef.LockTable;  
-    Count := MyRecordRef.COUNT;  
+    Count := MyRecordRef.Count;  
     Message(Text000, MyRecordRef.Name, Count);  
 end;
 ```  

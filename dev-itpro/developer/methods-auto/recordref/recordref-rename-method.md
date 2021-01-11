@@ -76,13 +76,13 @@ The new values for the primary key.
 ## Example  
  This example shows how to change the value of the primary key of a Record variable, and how to change the value of the primary key of a RecordRef variable. 
  
-```  
+```al
 var
     CustomerRecRef: RecordRef;
     NewNo1: Code;
     NewNo2: Code;
     result: Boolean;
-    CustomerRec: Record Cutomer;
+    CustomerRec: Record Customer;
 begin 
     CustomerRec.Get('0112121');  
     NewNo1 := ‘9999999’;  
@@ -93,7 +93,7 @@ begin
       Message('After rename - Customer name: %1; Customer number: %2',CustomerRec.Name, CustomerRec."No.")  
     else  
       Message('No rename.');  
-    CustRecRef.GetTABLE(CustomerRec);  
+    CustRecRef.GetTable(CustomerRec);  
     result := CustRecRef.Rename(NewNo2);  
     if result then begin  
       CustomerRec.Get(NewNo2);  

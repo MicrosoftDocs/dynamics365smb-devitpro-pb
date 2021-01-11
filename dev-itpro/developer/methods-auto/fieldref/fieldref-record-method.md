@@ -39,7 +39,7 @@ An instance of the [FieldRef](fieldref-data-type.md) data type.
 
 ## Example
 
-The following example opens the Item table as a RecordRef variable that is named ItemRecref, creates a reference to field 1 \(No.\), and stores the value in the variable named MyFieldRef. The RECORD method uses the MyFieldRef variable to return the RecordRef of field 1 and stores the reference in a variable named MyRecRef. `MyRecRef.Number` returns the table that the selected field belongs to. 
+The following example opens the Item table as a RecordRef variable that is named ItemRecref, creates a reference to field 1 \(No.\), and stores the value in the variable named MyFieldRef. The Record method uses the MyFieldRef variable to return the RecordRef of field 1 and stores the reference in a variable named MyRecRef. `MyRecRef.Number` returns the table that the selected field belongs to. 
 
 ```al
 var

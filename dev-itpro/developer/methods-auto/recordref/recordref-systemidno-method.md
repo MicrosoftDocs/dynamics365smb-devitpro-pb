@@ -41,9 +41,9 @@ The field number of the SystemId field.
 
 ## Example
   
-This example shows how to use the SYSTEMIDNO method to retrieve the field number that is used by the SystemId field of a table.
+This example shows how to use the SystemIdNo method to retrieve the field number that is used by the SystemId field of a table.
 
-```
+```al
 var
     CustomerRec: Record Customer;
     SystemIdFieldNo: Integer;

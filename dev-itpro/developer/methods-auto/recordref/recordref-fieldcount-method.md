@@ -40,7 +40,7 @@ The number of fields in the table.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example  
- The following example loops through tables 3 through 5 and displays the number of fields that are defined in each table. The code starts by opening table 3 \(Payment Terms\) as a RecordRef variable that is named MyRecordRef. MyRecordRef variable uses the FieldCOUNT method to retrieve the number of fields that are defined in the table and stores it in the varFieldCount variable. The name of each table and the total number of fields in the table are displayed in a message box. The table that is open is closed before the next one is open. 
+ The following example loops through tables 3 through 5 and displays the number of fields that are defined in each table. The code starts by opening table 3 \(Payment Terms\) as a RecordRef variable that is named MyRecordRef. MyRecordRef variable uses the FieldCount method to retrieve the number of fields that are defined in the table and stores it in the varFieldCount variable. The name of each table and the total number of fields in the table are displayed in a message box. The table that is open is closed before the next one is open. 
 
 ```al
 var

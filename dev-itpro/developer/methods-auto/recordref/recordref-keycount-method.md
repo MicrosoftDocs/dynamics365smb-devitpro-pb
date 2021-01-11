@@ -40,16 +40,16 @@ The number of keys that have been identified in the table.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example  
- The following example opens the Customer table \(18\) as a RecordRef variable that is named CustomerRecref. The KEYCOUNT method retrieves the number of keys that are defined in the Customer table. The return value of the method is stored in the KeyCount variable and displayed in a message box. The KeyCount variable contains the number 13 because 13 keys are defined in the Customer table. 
+ The following example opens the Customer table \(18\) as a RecordRef variable that is named CustomerRecref. The KeyCount method retrieves the number of keys that are defined in the Customer table. The return value of the method is stored in the KeyCount variable and displayed in a message box. The KeyCount variable contains the number 13 because 13 keys are defined in the Customer table. 
   
-```  
+```al
 var
     CustomerRecref: RecordRef;
     KeyCount: Integer;
     Text000: Label 'The table has %1 keys.';
 begin     
     CustomerRecref.Open(18);  
-    KeyCount := CustomerRecref.KEYCOUNT;  
+    KeyCount := CustomerRecref.KeyCount;  
     Message(Text000, KeyCount);  
 end;
   

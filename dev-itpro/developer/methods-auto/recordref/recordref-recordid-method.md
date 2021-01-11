@@ -40,16 +40,16 @@ The ID of the table.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example  
- The following example opens table 18 \(Customer\) as a RecordRef variable that is named MyRecordRef. The [FindLAST Method \(RecordRef\)](recordref-findlast-method.md) finds the last record in the table. The record id of the last record is retrieved, stored in the RecID variable displayed in message box. 
+ The following example opens table 18 \(Customer\) as a RecordRef variable that is named MyRecordRef. The [FindLast Method \(RecordRef\)](recordref-findlast-method.md) finds the last record in the table. The record id of the last record is retrieved, stored in the RecID variable displayed in message box. 
  
-```  
+```al
 var
     MyRecordRef: RecordRef;
     RecID: RecordId;
     Text000: Label 'The record id for the last record is: %1'; 
 begin   
     MyRecordRef.Open(18);  
-    MyRecordRef.FindLAST;  
+    MyRecordRef.FindLast;  
     RecID := MyRecordRef.RecordId;  
     Message(Text000, RecID);  
 end;

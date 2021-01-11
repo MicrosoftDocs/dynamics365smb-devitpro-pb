@@ -40,12 +40,12 @@ The table ID of the table that contains the record that was referred to by the R
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- In versions of [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)] earlier than [!INCLUDE[nav7long](../../includes/nav7long_md.md)], if a RecordRef referred to a temporary table, then the table number value of the RecordRef was the run-time generated sequence ID, which is from the base value of 2000100000. You could use the table number to determine whether a RecordRef referred to a temporary table. In [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)], the table number value of a RecordRef always contains the ID of the originating physical table and not the run-time generated sequence ID. If you previously used the NUMBER Method \(RECORDREF\) to test for the sequence number and determine whether the RecordRef was temporary, then you must use the [ISTEMPORARY Method \(RecordRef\)](recordref-istemporary-method.md) in [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)] instead.  
+ In versions of [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)] earlier than [!INCLUDE[nav7long](../../includes/nav7long_md.md)], if a RecordRef referred to a temporary table, then the table number value of the RecordRef was the run-time generated sequence ID, which is from the base value of 2000100000. You could use the table number to determine whether a RecordRef referred to a temporary table. In [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)], the table number value of a RecordRef always contains the ID of the originating physical table and not the run-time generated sequence ID. If you previously used the Number Method \(RecordRef\) to test for the sequence number and determine whether the RecordRef was temporary, then you must use the [IsTemporary Method \(RecordRef\)](recordref-istemporary-method.md) in [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)] instead.  
   
 ## Example  
- The following example opens the Customer table \(18\) as a RecordRef object. The [Open Method \(RecordRef\)](recordref-open-method.md) accepts `Database::Customer` as an integer. The NUMBER method retrieves the table number and displays the name and number of the table in a message box. 
+ The following example opens the Customer table \(18\) as a RecordRef object. The [Open Method \(RecordRef\)](recordref-open-method.md) accepts `Database::Customer` as an integer. The Number method retrieves the table number and displays the name and number of the table in a message box. 
   
-```  
+```al
 var
     MyRecordRef: RecordRef;
     varDatabaseName: Integer;
@@ -54,7 +54,7 @@ var
 begin   
     varDatabaseName := Database::Customer;  
     MyRecordRef.Open(varDatabaseName);  
-    varTableNumber := MyRecordRef.NUMBER;  
+    varTableNumber := MyRecordRef.Number;  
     Message(Text000, MyRecordRef.Caption, varTableNumber);  
 end;
   

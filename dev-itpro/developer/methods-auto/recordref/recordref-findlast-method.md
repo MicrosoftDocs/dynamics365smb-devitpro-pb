@@ -43,7 +43,7 @@ An instance of the [RecordRef](recordref-data-type.md) data type.
  You should use this method only when you explicitly want to find the last record in a table or set. Do not use this method in combination with repeat..until.  
   
 ## Example  
- The following example opens the Item table \(27\) as a RecordRef variable that is named ItemRecref. The FindLAST method searches for the last record in the table. If the record is found, the description and unit price of the item in the record are displayed in a message box. Otherwise, a message that indicates that the last item was not found is displayed.
+ The following example opens the Item table \(27\) as a RecordRef variable that is named ItemRecref. The FindLast method searches for the last record in the table. If the record is found, the description and unit price of the item in the record are displayed in a message box. Otherwise, a message that indicates that the last item was not found is displayed.
  
 ```al
 var
@@ -52,7 +52,7 @@ var
     Text001: Label 'The last item was not found.';
 begin    
     ItemRecref.Open(27);  
-    if ItemRecref.FindLAST then  
+    if ItemRecref.FindLast then  
       Message(Text000, ItemRecref.Field(3),  ItemRecref.Field(18))  
     else  
       Message(Text001);  

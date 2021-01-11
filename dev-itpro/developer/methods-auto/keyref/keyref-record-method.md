@@ -47,7 +47,7 @@ var
 begin    
     RecRef.Open(18);  
     varKeyRef := RecRef.KeyIndex(1);  
-    RecRef := varKeyRef.RECORD;  
+    RecRef := varKeyRef.Record;  
 end;
 ```  
   

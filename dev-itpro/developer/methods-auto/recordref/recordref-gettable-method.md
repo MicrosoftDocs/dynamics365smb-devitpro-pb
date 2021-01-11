@@ -42,7 +42,7 @@ Use this record variable to specify the table to which the RecordRefVar refers.
  Another way to select the table to which a RecordRef refers is to use the [Open Method \(RecordRef\)](recordref-open-method.md) and specify a table number in the parameters.  
   
 ## Example  
- The following example is an excerpt from codeunit 8, AccSchedManagement. It iterates through records in the G/L Account table. It sets some values on the fields of a new record in the Acc. Schedule Line table based on the current G/L Account record and inserts the new record into the Acc. Schedule Line table. It calls GetTABLE to cause a RecordRef variable to refer to the same table as the new Acc. Schedule Line record, and then calls the LogInsertion method from codeunit 423, Change Log Management to log the change. The LogInsertion method requires a RecordRef as a parameter.  
+ The following example is an excerpt from codeunit 8, AccSchedManagement. It iterates through records in the G/L Account table. It sets some values on the fields of a new record in the Acc. Schedule Line table based on the current G/L Account record and inserts the new record into the Acc. Schedule Line table. It calls GetTable to cause a RecordRef variable to refer to the same table as the new Acc. Schedule Line record, and then calls the LogInsertion method from codeunit 423, Change Log Management to log the change. The LogInsertion method requires a RecordRef as a parameter.  
   
  This example assumes that the AccSchedLineNo variable has been assigned a value previously in the code.  
 
@@ -56,7 +56,7 @@ var
 begin 
     if GLAcc.Find('-') then  
       repeat  
-        AccSchedLine.INIT;  
+        AccSchedLine.Init;  
         AccSchedLine."Line No." := AccSchedLineNo;  
         AccSchedLineNo := AccSchedLineNo + 10000;  
         AccSchedLine.Description := GLAcc.Name;  
@@ -69,7 +69,7 @@ begin
         else  
           AccSchedLine."Totaling Type" := AccSchedLine."Totaling Type"::"Posting Accounts";  
         AccSchedLine.Insert;  
-        RecRef.GetTABLE(AccSchedLine);  
+        RecRef.GetTable(AccSchedLine);  
         ChangeLogMgt.LogInsertion(RecRef);  
       until GLAcc.Next = 0;  
 end;

@@ -50,9 +50,9 @@ var
     CustomerRec: Record Customer;
     SomeReport: Report "Salesperson - Sales Statistics";
 begin
-    CustomerRec.SETCURRENTKEY("No.");  
+    CustomerRec.SETCURRENTKey("No.");  
     CustomerRec.SETFILTER("Salesperson Code", 'JR|PS');  
-    SomeReport.SETTABLEVIEW(CustomerRec);  
+    SomeReport.SETTableVIEW(CustomerRec);  
     SomeReport.RUN;
 end;
 ```  

@@ -62,7 +62,7 @@ var r : record 2000000006;
 
 The following example uses the Open method to create a RecordRef variable that is named MyRecordRef for the Customer table. The parameters are omitted in this example because there is only one company in this example and the table will not be open as temporary table. The caption and number of records in the table are displayed in a Message box. At the end of the display, the [Close Method \(RecordRef\)](recordref-close-method.md) closes the table. 
 
-```  
+```al
 var
     MyRecordRef: RecordRef;
     Text000: Label 'The %1 table contains %2 records.'; 
@@ -77,7 +77,7 @@ end;
 
 This example shows how to use the Open method. In this example, "MyRecordRef" opens table 27 and then "Find\('-'\)" finds the first record in the table. "TempMyRecordRef" opens a temporary table which is empty and therefore the "Find\('-'\)" returns false.
   
-```  
+```al
 var
     MyRecordRef: RecordRef;
     TempMyRecordRef: RecordRef;

@@ -16,7 +16,7 @@ author: SusanneWindfeldPedersen
 # System.ImportEncryptionKey Method
 > **Version**: _Available from runtime version 1.0._
 
-Points to a password protected file that contains the key on the current server. When encrypting or decrypting data in Dynamics 365 Business Central, an encryption key is used. A single key is used per tenant, and every tenant will have a different key. Keys can be created or imported if one exists already, as may be the case if upgrading or migrating a system from one set of hardware to another. The IMPORTENCRYPTIONKEY method allows an administrator to specify a file (password protected) which contains a key and imports it to the current Dynamics 365 Business Central service.
+Points to a password protected file that contains the key on the current server. When encrypting or decrypting data in Dynamics 365 Business Central, an encryption key is used. A single key is used per tenant, and every tenant will have a different key. Keys can be created or imported if one exists already, as may be the case if upgrading or migrating a system from one set of hardware to another. The IMPORTENCRYPTIONKey method allows an administrator to specify a file (password protected) which contains a key and imports it to the current Dynamics 365 Business Central service.
 
 > [!NOTE]
 > This method is supported only in Business Central on-premises.

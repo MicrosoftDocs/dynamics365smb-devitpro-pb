@@ -55,7 +55,7 @@ begin
     CLEAR(CustomerRec);  
     CustomerRec.SETRECFILTER;  
     SomeReport.XXX; // Any user-defined method.  
-    SomeReport.SETTABLEVIEW(CustomerRec);  
+    SomeReport.SETTableVIEW(CustomerRec);  
     SomeReport.RUNMODAL();
 end;  
 ```  

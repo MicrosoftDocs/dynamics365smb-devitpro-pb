@@ -50,7 +50,7 @@ Specifies whether to run the AL code in the OnModify Trigger. If this parameter 
   
  **Enter your changes again in the updated window, or start the interrupted activity again.**  
   
- In earlier versions of [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)], certain situations allowed code that an end-user runs to modify a record after a newer version of the record was written and committed to the database. This would overwrite the newer changes. However, in [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)], we have restricted the **Modify** Method \(RECORDREF\), [Rename Method \(RecordRef\)](recordref-rename-method.md), and [Delete Method \(RecordRef\)](recordref-delete-method.md) so that the end-user receives the following run-time error in these certain situations:  
+ In earlier versions of [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)], certain situations allowed code that an end-user runs to modify a record after a newer version of the record was written and committed to the database. This would overwrite the newer changes. However, in [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)], we have restricted the **Modify** Method \(RecordRef\), [Rename Method \(RecordRef\)](recordref-rename-method.md), and [Delete Method \(RecordRef\)](recordref-delete-method.md) so that the end-user receives the following run-time error in these certain situations:  
   
  **Unable to change an earlier version of the \<Table Name> record. The record should be read from the database again. This is a programming error.**  
   

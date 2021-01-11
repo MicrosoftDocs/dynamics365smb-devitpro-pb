@@ -84,7 +84,7 @@ REPORT.RUN(1001, FALSE, TRUE);
 var
     MyRec: Record Customer;
 begin
-    MyRec.FINDLAST;  
+    MyRec.FINDLast;  
     MyRec.SETRECFILTER;  
     Report.RUN(101, TRUE, TRUE, MyRec);  
 end;

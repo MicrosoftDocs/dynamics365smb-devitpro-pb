@@ -49,7 +49,7 @@ Defines the direction of the search and how many records to include.
 ## Example  
  The following example opens the Customer table as a RecordRef object, creates a reference to the first \(No.\) field, and stores the reference in the MyFieldRef variable. The SetRange method sets a filter that selects all records from 10000 to 40000 in the No. field. The [Find Method \(RecordRef\)](recordref-find-method.md) searches and selects the first record in the filter and counts the number of records that are found. The number of records is stored in the Count variable. The process is repeated by looping through all the records in the filter until no more records are found. The Next method steps through the records and finds the next record because no value is specified for the *Steps* parameter. The number of records that are found in the range is stored in the Count variable and displayed in a message box. 
   
-```  
+```al
 var
     CustomerRecref: RecordRef;
     MyFieldRef: FieldRef;

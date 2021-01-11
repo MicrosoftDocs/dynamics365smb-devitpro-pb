@@ -37,12 +37,12 @@ Specifies the Record that you want to refer to the table.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- Any filters that are applied to the RecordRef are also applied to the Record. If you change the filter that is applied to the RecordRef, you must call SetTABLE again to apply the new filter to the Record.  
+ Any filters that are applied to the RecordRef are also applied to the Record. If you change the filter that is applied to the RecordRef, you must call SetTable again to apply the new filter to the Record.  
 
 ## Example  
  This example shows that if you have a RecordID data type, you can get a RecordRef for the table that the RecordID refers to. Then you can use the RecordRef to set the table to which a Record variable refers.  
 
-```  
+```al
 var
     RecRef: RecordRef;
     InvtEventBuf: Record "Inventory Event Buffer";
@@ -51,8 +51,8 @@ var
 begin 
     InvtEventBuf.Find('-');  
     RecID := InvtEventBuf."Source Line ID";  
-    RecRef := RecID.GetRECORD;  
-    RecRef.SetTABLE(ProdOrderComp);  
+    RecRef := RecID.GetRecord;  
+    RecRef.SetTable(ProdOrderComp);  
 end;
 ```  
 

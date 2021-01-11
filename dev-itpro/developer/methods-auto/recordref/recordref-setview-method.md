@@ -48,7 +48,7 @@ The string format is the same as the SourceTableView property on pages.
 ## Example  
  The following example opens the Customer \(18\) table as a RecordRef variable that is named CustomerRecRef. The SetView method sets the sort key to the Name field, sort order to Ascending and sets a filter that selects records between 1000 and 2000. The [GetView Method \(RecordRef\)](recordref-getview-method.md) retrieves the sort order, key and filters that have been set and stores the value in the ViewString variable. The value in the ViewString variable is displayed in a message box. 
 
-```  
+```al
 var
     CustomerRecRef: RecordRef;
     ViewString: Text;

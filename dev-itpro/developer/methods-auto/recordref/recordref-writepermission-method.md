@@ -48,12 +48,12 @@ Specifies if you have permission to write to the table
   
  If you do not have permission to write to a table and you attempt to write, a run-time error occurs. This method lets you determine in advance if you have write permission. When the permissions are checked, the combination of permissions in the license file and the user's permissions in the Permission table is considered.  
   
- This method works the same as the [WRITEPERMISSION Method \(Record\)](../record/record-writepermission-method.md).  
+ This method works the same as the [WritePermission Method \(Record\)](../record/record-writepermission-method.md).  
   
 ## Example  
- The following example opens table 18 \(Customer\) and creates a RecordRef variable that is named MyRecordRef for the table. The WRITEPERMISSION method determines whether the table has write permission and stores the return value in the varHasWritePerm variable. The Customer table has write permission, so the message displays **Yes**. You can initialize the varTableNo variable with any table number. 
+ The following example opens table 18 \(Customer\) and creates a RecordRef variable that is named MyRecordRef for the table. The WritePermission method determines whether the table has write permission and stores the return value in the varHasWritePerm variable. The Customer table has write permission, so the message displays **Yes**. You can initialize the varTableNo variable with any table number. 
   
-```  
+```al
 var
     MyRecordRef: RecordRef;
     varTableNo: Integer;
@@ -62,7 +62,7 @@ var
 begin  
     varTableNo := 18;  
     MyRecordRef.Open(varTableNo);  
-    varHasWritePerm := MyRecordRef.WRITEPERMISSION;  
+    varHasWritePerm := MyRecordRef.WritePermission;  
     Message(Text000, MyRecordRef.Name, varHasWritePerm);  
 end;
 ```  
