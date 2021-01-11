@@ -49,7 +49,7 @@ var
     RecID: RecordId;
     ProdOrderComp: Record "Prod. Order Component";
 begin 
-    InvtEventBuf.FIND('-');  
+    InvtEventBuf.Find('-');  
     RecID := InvtEventBuf."Source Line ID";  
     RecRef := RecID.GETRECORD;  
     RecRef.SETTABLE(ProdOrderComp);  

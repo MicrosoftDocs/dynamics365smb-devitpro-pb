@@ -63,11 +63,11 @@ var
     MyRecordRef: RecordRef;
     Text000: Label 'Record to be deleted: %1';
 begin
-    MyRecordRef.OPEN(18);  
+    MyRecordRef.Open(18);  
     MyRecordRef.CHANGECOMPANY('Company B');  
-    MyRecordRef.FINDLAST;  
+    MyRecordRef.FindLAST;  
     RecID := MyRecordRef.RECORDID;  
-    MESSAGE(Text000, RecID);  
+    Message(Text000, RecID);  
     MyRecordRef.DELETE;  
 end;
 ```  

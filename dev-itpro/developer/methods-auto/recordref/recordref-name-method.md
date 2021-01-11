@@ -43,7 +43,7 @@ The name of the table.
  This method works the same as the [TABLENAME Method \(Record\)](../../methods/devenv-tablename-method-record.md).  
   
 ## Example  
- The following example opens a table as a RecordRef variable that is named MyRecordRef. You can specify any table number in the [OPEN Method \(RecordRef\)](recordref-open-method.md). In this example, the table 18 \(Customer\) is open. The NAME method retrieves the name of table 18 and stores it in the varTableName variable. The table number and name are displayed in a message box. 
+ The following example opens a table as a RecordRef variable that is named MyRecordRef. You can specify any table number in the [Open Method \(RecordRef\)](recordref-open-method.md). In this example, the table 18 \(Customer\) is open. The NAME method retrieves the name of table 18 and stores it in the varTableName variable. The table number and name are displayed in a message box. 
   
 ```  
 var
@@ -52,9 +52,9 @@ var
     Text000: Label 'Table %1 is the %2 table.'; 
 begin  
     TableNo := 18;  
-    MyRecordRef.OPEN(TableNo);  
+    MyRecordRef.Open(TableNo);  
     varTableName := MyRecordRef.NAME;  
-    MESSAGE(Text000, TableNo, varTableName);  
+    Message(Text000, TableNo, varTableName);  
 end;
 ```  
 

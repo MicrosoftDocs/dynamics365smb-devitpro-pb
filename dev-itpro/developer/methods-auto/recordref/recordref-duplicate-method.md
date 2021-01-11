@@ -49,9 +49,9 @@ var
     RecordRef2: RecordRef;
     Text000: Label 'RecordRef1 refers to the %1 table.\\ RecordRef2 refers to the %2 table.';
 begin   
-    RecordRef1.OPEN(18);  
+    RecordRef1.Open(18);  
     RecordRef2 := RecordRef1.DUPLICATE;  
-    MESSAGE(Text000, RecordRef1.CAPTION, RecordRef2.CAPTION); 
+    Message(Text000, RecordRef1.CAPTION, RecordRef2.CAPTION); 
 end; 
 ```  
 

@@ -38,12 +38,12 @@ An instance of the [RecordRef](recordref-data-type.md) data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- You should use this method instead of FIND\('+'\) when you need only the last record.  
+ You should use this method instead of Find\('+'\) when you need only the last record.  
   
  You should use this method only when you explicitly want to find the last record in a table or set. Do not use this method in combination with repeat..until.  
   
 ## Example  
- The following example opens the Item table \(27\) as a RecordRef variable that is named ItemRecref. The FINDLAST method searches for the last record in the table. If the record is found, the description and unit price of the item in the record are displayed in a message box. Otherwise, a message that indicates that the last item was not found is displayed.
+ The following example opens the Item table \(27\) as a RecordRef variable that is named ItemRecref. The FindLAST method searches for the last record in the table. If the record is found, the description and unit price of the item in the record are displayed in a message box. Otherwise, a message that indicates that the last item was not found is displayed.
  
 ```  
 var
@@ -51,11 +51,11 @@ var
     Text000: Label 'The last item is %1 and the unit price is %2.';
     Text001: Label 'The last item was not found.';
 begin    
-    ItemRecref.OPEN(27);  
-    if ItemRecref.FINDLAST then  
-      MESSAGE(Text000, ItemRecref.FIELD(3),  ItemRecref.FIELD(18))  
+    ItemRecref.Open(27);  
+    if ItemRecref.FindLAST then  
+      Message(Text000, ItemRecref.Field(3),  ItemRecref.Field(18))  
     else  
-      MESSAGE(Text001);  
+      Message(Text001);  
 end;
   
 ```  

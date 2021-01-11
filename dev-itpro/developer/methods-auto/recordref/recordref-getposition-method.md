@@ -53,9 +53,9 @@ var
     varPrimaryKey: Text;
     Text000: Label 'The primary key is: %1.';
 begin    
-    RecRef.OPEN(DATABASE::Customer);  
+    RecRef.Open(DATABASE::Customer);  
     varPrimaryKey := RecRef.GETPOSITION(TRUE);  
-    MESSAGE(Text000, varPrimaryKey);  
+    Message(Text000, varPrimaryKey);  
 end;
 ```  
   

@@ -54,10 +54,10 @@ var
     varKeyRef: KeyRef;
     Text000: Label 'KeyIndex: %1   KeyRef: %2'; 
 begin
-    CustomerRecref.OPEN(18);  
+    CustomerRecref.Open(18);  
       for i := 1 to CustomerRecref.KEYCOUNT do begin  
         varKeyRef := CustomerRecref.KEYINDEX(i);  
-        MESSAGE(Text000, i, varKeyRef);  
+        Message(Text000, i, varKeyRef);  
       end;  
     CustomerRecref.CLOSE;  
 end;

@@ -39,7 +39,7 @@ Use this record variable to specify the table to which the RecordRefVar refers.
 ## Remarks  
  Any filters that are applied to the *RecordVar* are also applied to the *RecordRefVar*.  
   
- Another way to select the table to which a RecordRef refers is to use the [OPEN Method \(RecordRef\)](recordref-open-method.md) and specify a table number in the parameters.  
+ Another way to select the table to which a RecordRef refers is to use the [Open Method \(RecordRef\)](recordref-open-method.md) and specify a table number in the parameters.  
   
 ## Example  
  The following example is an excerpt from codeunit 8, AccSchedManagement. It iterates through records in the G/L Account table. It sets some values on the fields of a new record in the Acc. Schedule Line table based on the current G/L Account record and inserts the new record into the Acc. Schedule Line table. It calls GETTABLE to cause a RecordRef variable to refer to the same table as the new Acc. Schedule Line record, and then calls the LogInsertion method from codeunit 423, Change Log Management to log the change. The LogInsertion method requires a RecordRef as a parameter.  
@@ -54,7 +54,7 @@ var
     RecRef: RecordRef;
     ChangeLogMgt: Codeunit "Change Log Management";
 begin 
-    if GLAcc.FIND('-') then  
+    if GLAcc.Find('-') then  
       repeat  
         AccSchedLine.INIT;  
         AccSchedLine."Line No." := AccSchedLineNo;  

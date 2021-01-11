@@ -57,7 +57,7 @@ Specifies whether the code in the OnDelete trigger will be executed. If this par
  You must design your application so that you use the most up-to-date version of the record for modifications to the database. You use the [GET Method \(RecordRef\)](recordref-get-method.md) to refresh the record with the latest version.  
 
 ## Example  
- The following example deletes a record from the Customer table. The code starts by opening the **Customer** table \(18\) as a RecordRef variable that is named MyRecordRef. The [FIELD Method \(RecordRef\)](recordref-field-method.md) creates a FieldRef that is named MyFieldRef for field 1, which is the primary key of the **Customer** table. The [VALUE Method \(FieldRef, TestPage Field\)](../fieldref/fieldref-value-method.md) assigns the value 10000 to the field that the MyFieldRef variable refers to. The [FIND Method \(RecordRef\)](recordref-find-method.md) searches the table for a record with field 1 = 10000. If the record is found, then it is deleted, the table is modified, and a message is displayed. 
+ The following example deletes a record from the Customer table. The code starts by opening the **Customer** table \(18\) as a RecordRef variable that is named MyRecordRef. The [Field Method \(RecordRef\)](recordref-field-method.md) creates a FieldRef that is named MyFieldRef for field 1, which is the primary key of the **Customer** table. The [Value Method \(FieldRef, TestPage Field\)](../fieldref/fieldref-value-method.md) assigns the value 10000 to the field that the MyFieldRef variable refers to. The [Find Method \(RecordRef\)](recordref-find-method.md) searches the table for a record with field 1 = 10000. If the record is found, then it is deleted, the table is modified, and a message is displayed. 
  
 ```  
 var
@@ -66,13 +66,13 @@ var
     Text000: Label 'Customer %1 is deleted.;
 begin
     varRecordToDelete := '10000';  
-    MyRecordRef.OPEN(18);  
-    MyFieldRef := MyRecordRef.FIELD(1);  
-    MyFieldRef.VALUE := varRecordToDelete;  
-    if MyRecordRef.FIND('=') then begin  
+    MyRecordRef.Open(18);  
+    MyFieldRef := MyRecordRef.Field(1);  
+    MyFieldRef.Value := varRecordToDelete;  
+    if MyRecordRef.Find('=') then begin  
       ifMyRecordRef.DELETE then begin  
         MyRecordRef.MODIFY;  
-        MESSAGE(Text000, MyFieldRef.VALUE);  
+        Message(Text000, MyFieldRef.Value);  
       end;  
     end;  
 end;

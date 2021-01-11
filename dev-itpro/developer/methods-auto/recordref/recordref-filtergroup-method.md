@@ -57,12 +57,12 @@ var
     Text000: Label 'The original filtergroup is: %1';
     Text001: Label 'The current filtergroup is: %1';
 begin
-    MyRecordRef.OPEN(DATABASE::Customer);  
+    MyRecordRef.Open(DATABASE::Customer);  
     MyRecordRef.SETRECFILTER;  
     varOrigGroup := MyRecordRef.FILTERGROUP;  
-    MESSAGE(Text000, varOrigGroup);  
+    Message(Text000, varOrigGroup);  
     varCurrGroup := MyRecordRef.FILTERGROUP(1);  
-    MESSAGE(Text001, varCurrGroup);  
+    Message(Text001, varCurrGroup);  
 end;
 ```  
   

@@ -56,9 +56,9 @@ var
     CustomerRecref: RecordRef;
     Text000: Label 'Is the table empty? %1.';
 begin 
-    CustomerRecref.OPEN(18);  
+    CustomerRecref.Open(18);  
     IsEmpty := CustomerRecref.ISEMPTY;  
-    MESSAGE(Text000, IsEmpty);  
+    Message(Text000, IsEmpty);  
 end;
 ```  
 

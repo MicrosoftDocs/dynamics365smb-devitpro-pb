@@ -50,7 +50,7 @@ Specifies whether to run the AL code in the OnInsert Trigger. If this parameter 
  This method works the same as the [INSERT Method \(Record\)](../record/record-insert-method.md).  
   
 ## Example  
- The following example opens a table 18 \(Customer\) with a RecordRef variable that is named CustomerRecref. The [FIELD Method \(RecordRef\)](recordref-field-method.md) creates a FieldRef variable that is named MyFieldRef for the field. The [INIT Method \(RecordRef\)](recordref-init-method.md) initializes the values in the fields by using default values and then the INSERT method inserts a new record. The new record is 1120. This is the primary key for the new record.  
+ The following example opens a table 18 \(Customer\) with a RecordRef variable that is named CustomerRecref. The [Field Method \(RecordRef\)](recordref-field-method.md) creates a FieldRef variable that is named MyFieldRef for the field. The [INIT Method \(RecordRef\)](recordref-init-method.md) initializes the values in the fields by using default values and then the INSERT method inserts a new record. The new record is 1120. This is the primary key for the new record.  
   
 > [!NOTE]  
 >  In this example, the INIT method is called before the primary key is assigned a value. The INIT method does not initialize primary key fields. Therefore calling the [INIT Method \(RecordRef\)](recordref-init-method.md) before or after you assign values to the primary key field does not make any difference.  
@@ -61,12 +61,12 @@ var
     MyFieldRef: FieldRef;
     Text000: Label 'The value of the field after you insert the record is %1.';
 begin 
-    CustomerRecref.OPEN(18);  
-    MyFieldRef := CustomerRecref.FIELD(1);  
+    CustomerRecref.Open(18);  
+    MyFieldRef := CustomerRecref.Field(1);  
     CustomerRecref.INIT;  
-    MyFieldRef.VALUE := '1120';  
+    MyFieldRef.Value := '1120';  
     CustomerRecref.INSERT;  
-    MESSAGE(‘%1’, MyFieldRef.VALUE);  
+    Message(‘%1’, MyFieldRef.Value);  
 end;
 ```  
 

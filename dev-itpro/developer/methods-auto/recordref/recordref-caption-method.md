@@ -53,9 +53,9 @@ var
     Text000: Label 'Table No: %1 Caption: %2';
 begin
     for i := 3 TO 6 do begin  
-        MyRecordRef.OPEN(i);  
+        MyRecordRef.Open(i);  
         varCaption := MyRecordRef.CAPTION;  
-        MESSAGE(Text000, i, varCaption);  
+        Message(Text000, i, varCaption);  
         MyRecordRef.CLOSE;  
         end;  
 end;

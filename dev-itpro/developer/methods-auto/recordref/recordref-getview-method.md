@@ -42,7 +42,7 @@ The string format is the same as the SourceTableView property on pages.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- If the [SETVIEW Method \(RecordRef\)](recordref-setview-method.md) has been executed, the *String* parameter will return the value set by SETVIEW.  
+ If the [SetView Method \(RecordRef\)](recordref-setview-method.md) has been executed, the *String* parameter will return the value set by SetView.  
   
  This method works the same way as the [GETVIEW Method \(Record\)](recordref-getview-method.md).  
   
@@ -55,9 +55,9 @@ var
     varView: Text;
     Text000: Label 'The current view of the table is: %1';
 begin    
-    RecRef.OPEN(DATABASE::Customer);  
+    RecRef.Open(DATABASE::Customer);  
     varView := RecRef.GETVIEW(TRUE);  
-    MESSAGE(Text000, varView);  
+    Message(Text000, varView);  
 end;
 ```  
   

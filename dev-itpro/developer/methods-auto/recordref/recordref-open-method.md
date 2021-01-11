@@ -75,7 +75,7 @@ end;
   
 ## Example 2
 
-This example shows how to use the OPEN method. In this example, "MyRecordRef" opens table 27 and then "Find\('-'\)" finds the first record in the table. "TempMyRecordRef" opens a temporary table which is empty and therefore the "Find\('-'\)" returns false.
+This example shows how to use the Open method. In this example, "MyRecordRef" opens table 27 and then "Find\('-'\)" finds the first record in the table. "TempMyRecordRef" opens a temporary table which is empty and therefore the "Find\('-'\)" returns false.
   
 ```  
 var

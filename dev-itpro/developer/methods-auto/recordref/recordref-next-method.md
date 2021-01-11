@@ -47,7 +47,7 @@ Defines the direction of the search and how many records to include.
  This method works the same as the [NEXT Method \(Record\)](../record/record-next-method.md).  
   
 ## Example  
- The following example opens the Customer table as a RecordRef object, creates a reference to the first \(No.\) field, and stores the reference in the MyFieldRef variable. The SETRANGE method sets a filter that selects all records from 10000 to 40000 in the No. field. The [FIND Method \(RecordRef\)](recordref-find-method.md) searches and selects the first record in the filter and counts the number of records that are found. The number of records is stored in the Count variable. The process is repeated by looping through all the records in the filter until no more records are found. The NEXT method steps through the records and finds the next record because no value is specified for the *Steps* parameter. The number of records that are found in the range is stored in the Count variable and displayed in a message box. 
+ The following example opens the Customer table as a RecordRef object, creates a reference to the first \(No.\) field, and stores the reference in the MyFieldRef variable. The SETRANGE method sets a filter that selects all records from 10000 to 40000 in the No. field. The [Find Method \(RecordRef\)](recordref-find-method.md) searches and selects the first record in the filter and counts the number of records that are found. The number of records is stored in the Count variable. The process is repeated by looping through all the records in the filter until no more records are found. The NEXT method steps through the records and finds the next record because no value is specified for the *Steps* parameter. The number of records that are found in the range is stored in the Count variable and displayed in a message box. 
   
 ```  
 var
@@ -56,15 +56,15 @@ var
     Count: Integer;
     Text000: Label '%1 records were retrieved.'; 
 begin    
-    CustomerRecref.OPEN(DATABASE::Customer);  
-    MyFieldRef := CustomerRecref.FIELD(1);  
+    CustomerRecref.Open(DATABASE::Customer);  
+    MyFieldRef := CustomerRecref.Field(1);  
     MyFieldRef.SETRANGE('10000' , '40000');  
     Count := 0;  
-    if CustomerRecref.FIND('-') then  
+    if CustomerRecref.Find('-') then  
       repeat  
         Count := Count + 1;  
       until CustomerRecref.NEXT = 0;  
-    MESSAGE(Text000 , Count);  
+    Message(Text000 , Count);  
 end;
 ``` 
 

@@ -61,9 +61,9 @@ var
     Text000: Label 'Does the %1 table have write permission? %2';
 begin  
     varTableNo := 18;  
-    MyRecordRef.OPEN(varTableNo);  
+    MyRecordRef.Open(varTableNo);  
     varHasWritePerm := MyRecordRef.WRITEPERMISSION;  
-    MESSAGE(Text000, MyRecordRef.NAME, varHasWritePerm);  
+    Message(Text000, MyRecordRef.NAME, varHasWritePerm);  
 end;
 ```  
   

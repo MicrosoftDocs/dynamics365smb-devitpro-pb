@@ -60,10 +60,10 @@ var
     Text000: Label 'The number of records in the %1 table is: %2.';
 begin
     varTableNo := 18;  
-    MyRecordRef.OPEN(varTableNo);  
+    MyRecordRef.Open(varTableNo);  
     MyRecordRef.LOCKTABLE;  
     Count := MyRecordRef.COUNT;  
-    MESSAGE(Text000, MyRecordRef.NAME, Count);  
+    Message(Text000, MyRecordRef.NAME, Count);  
 end;
 ```  
   

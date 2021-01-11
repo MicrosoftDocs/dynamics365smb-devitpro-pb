@@ -48,9 +48,9 @@ var
     KeyCount: Integer;
     Text000: Label 'The table has %1 keys.';
 begin     
-    CustomerRecref.OPEN(18);  
+    CustomerRecref.Open(18);  
     KeyCount := CustomerRecref.KEYCOUNT;  
-    MESSAGE(Text000, KeyCount);  
+    Message(Text000, KeyCount);  
 end;
   
 ```  
