@@ -55,9 +55,9 @@ begin
     MyFieldRef := MyRecordRef.Field(1);  
     MyFieldRef.SETFILTER('10000..20000');  
     MyRecordRef.FindLAST;  
-    Message(Text000, MyRecordRef.RECORDID, MyRecordRef.Field(2));  
+    Message(Text000, MyRecordRef.RecordId, MyRecordRef.Field(2));  
     MyRecordRef.SETPOSITION(InputString);  
-    Message(Text001, MyRecordRef.RECORDID, MyRecordRef.Field(2));  
+    Message(Text001, MyRecordRef.RecordId, MyRecordRef.Field(2));  
 end;
   
 ```  

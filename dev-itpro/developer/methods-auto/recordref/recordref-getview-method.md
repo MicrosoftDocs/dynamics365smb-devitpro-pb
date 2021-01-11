@@ -55,7 +55,7 @@ var
     varView: Text;
     Text000: Label 'The current view of the table is: %1';
 begin    
-    RecRef.Open(DATABASE::Customer);  
+    RecRef.Open(Database::Customer);  
     varView := RecRef.GETVIEW(TRUE);  
     Message(Text000, varView);  
 end;

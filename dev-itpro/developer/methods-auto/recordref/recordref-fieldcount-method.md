@@ -52,7 +52,7 @@ begin
       MyRecordRef.Open(i);  
       varFieldCount := MyRecordRef.FieldCOUNT;  
       Message(Text000, MyRecordRef.NAME, varFieldCount);  
-      MyRecordRef.CLOSE;  
+      MyRecordRef.Close;  
      end;  
 end;
 ```  

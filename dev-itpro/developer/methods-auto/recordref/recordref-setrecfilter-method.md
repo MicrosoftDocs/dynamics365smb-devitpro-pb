@@ -44,7 +44,7 @@ var
     varFilters: Text;
     Text000: Label 'The filter is set on the %1 field.';
 begin 
-    MyRecordRef.Open(DATABASE::Customer);  
+    MyRecordRef.Open(Database::Customer);  
     MyRecordRef.SETRECFILTER;  
     varFilters := MyRecordRef.GETFILTERS;  
     Message(Text000, varFilters);  

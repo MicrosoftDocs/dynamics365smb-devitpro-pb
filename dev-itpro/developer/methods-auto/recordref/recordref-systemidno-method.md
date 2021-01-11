@@ -50,7 +50,7 @@ var
     Text000: Label 'The field number is: %1.';
 
 begin
-    CustomerRec.Open(DATABASE::Customer);
+    CustomerRec.Open(Database::Customer);
     SystemIdFieldNo := CustomerRec.SystemIdNo();
     Message(Text000, Format(SystemIdFieldNo));
 end;

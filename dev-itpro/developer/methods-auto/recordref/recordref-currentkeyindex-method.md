@@ -61,7 +61,7 @@ begin
       MyRecordRef.Open(i);  
       CurrentKeyIndex := MyRecordRef.CURRENTKEYINDEX;  
       Message(Text000, MyRecordRef.NAME, CurrentKeyIndex);  
-      MyRecordRef.CLOSE;  
+      MyRecordRef.Close;  
     end;  
 end;
 ```  

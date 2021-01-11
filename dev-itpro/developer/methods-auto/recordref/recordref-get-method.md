@@ -45,7 +45,7 @@ The RecordID that contains the table number and the primary key of the table and
  This method always uses the primary key for the table. It ignores any filters that are set, except security filters. Security filters are applied or ignored based on the Security Filter Mode. The current key and filters are not changed after you call this method. <!--Links For more information, see [Security Filter Modes](Security-Filter-Modes.md)-->.  
   
 ## Example  
- The following example opens the Customer table with the RecordRef variable, RecRef. The code assigns the first field in the table, which is the No. field, to MyFieldRef variable. The variable is assigned a value of 30000 by using the [Field Method \(RecordRef\)](recordref-field-method.md). The [RECORDID Method \(RecordRef\)](recordref-recordid-method.md) retrieves the record ID of the record that has a value of 30000 in the No. field. The GET method then uses the RecID variable then to retrieves the record.
+ The following example opens the Customer table with the RecordRef variable, RecRef. The code assigns the first field in the table, which is the No. field, to MyFieldRef variable. The variable is assigned a value of 30000 by using the [Field Method \(RecordRef\)](recordref-field-method.md). The [RecordId Method \(RecordRef\)](recordref-recordid-method.md) retrieves the record ID of the record that has a value of 30000 in the No. field. The GET method then uses the RecID variable then to retrieves the record.
  
 ```   
 var
@@ -53,11 +53,11 @@ var
     MyFieldRef: FieldRef;
     RecID: RecordId;
 begin     
-    RecRef.Open(DATABASE::Customer);  
+    RecRef.Open(Database::Customer);  
     MyFieldRef := RecRef.Field(1);  
     MyFieldRef.Value := '30000';  
     if RecRef.Find('=') then begin  
-      RecID := RecRef.RECORDID;  
+      RecID := RecRef.RecordId;  
       RecRef.GET(RecID);  
     end;  
 end;

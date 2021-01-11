@@ -55,7 +55,7 @@ var
     Filters2: Text;
     Text000: TexConst ENU='Filters1 contains : %1  Filters2 contains: %2';
 begin   
-    RecRef.Open(DATABASE::Customer);  
+    RecRef.Open(Database::Customer);  
     Filters1 := RecRef.GETFILTERS;  
     RecRef.SETRECFILTER;  
     Filters2 := RecRef.GETFILTERS;  

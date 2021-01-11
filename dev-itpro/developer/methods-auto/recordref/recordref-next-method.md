@@ -44,10 +44,10 @@ Defines the direction of the search and how many records to include.
 ## Remarks  
  This method locates a record positioned a given number of steps forward or backward from the record specified by *RecordRef*. Movement through the table is governed by the filters and the current key associated with the records. The fields in the record which will be compared with the current key fields must contain appropriate values before the method is called.  
   
- This method works the same as the [NEXT Method \(Record\)](../record/record-next-method.md).  
+ This method works the same as the [Next Method \(Record\)](../record/record-next-method.md).  
   
 ## Example  
- The following example opens the Customer table as a RecordRef object, creates a reference to the first \(No.\) field, and stores the reference in the MyFieldRef variable. The SETRANGE method sets a filter that selects all records from 10000 to 40000 in the No. field. The [Find Method \(RecordRef\)](recordref-find-method.md) searches and selects the first record in the filter and counts the number of records that are found. The number of records is stored in the Count variable. The process is repeated by looping through all the records in the filter until no more records are found. The NEXT method steps through the records and finds the next record because no value is specified for the *Steps* parameter. The number of records that are found in the range is stored in the Count variable and displayed in a message box. 
+ The following example opens the Customer table as a RecordRef object, creates a reference to the first \(No.\) field, and stores the reference in the MyFieldRef variable. The SetRange method sets a filter that selects all records from 10000 to 40000 in the No. field. The [Find Method \(RecordRef\)](recordref-find-method.md) searches and selects the first record in the filter and counts the number of records that are found. The number of records is stored in the Count variable. The process is repeated by looping through all the records in the filter until no more records are found. The Next method steps through the records and finds the next record because no value is specified for the *Steps* parameter. The number of records that are found in the range is stored in the Count variable and displayed in a message box. 
   
 ```  
 var
@@ -56,14 +56,14 @@ var
     Count: Integer;
     Text000: Label '%1 records were retrieved.'; 
 begin    
-    CustomerRecref.Open(DATABASE::Customer);  
+    CustomerRecref.Open(Database::Customer);  
     MyFieldRef := CustomerRecref.Field(1);  
-    MyFieldRef.SETRANGE('10000' , '40000');  
+    MyFieldRef.SetRange('10000' , '40000');  
     Count := 0;  
     if CustomerRecref.Find('-') then  
       repeat  
         Count := Count + 1;  
-      until CustomerRecref.NEXT = 0;  
+      until CustomerRecref.Next = 0;  
     Message(Text000 , Count);  
 end;
 ``` 

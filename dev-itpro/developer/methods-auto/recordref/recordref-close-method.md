@@ -36,20 +36,20 @@ An instance of the [RecordRef](recordref-data-type.md) data type.
  You must use this method if you have several recordrefs defined as variables because these will be maintained until the variable gets out of scope.  
   
 ## Example  
-The following example opens tables 3 through 10 as a Recordref variable that is named MyRecordRef. For each table that is open, the [CAPTION Method (RecordRef)](recordref-caption-method.md) retrieves the caption of the table and displays the table number and the caption in a messages box. After each caption is displayed, the CLOSE method closes the table before the next table is open. 
+The following example opens tables 3 through 10 as a Recordref variable that is named MyRecordRef. For each table that is open, the [Caption Method (RecordRef)](recordref-caption-method.md) retrieves the caption of the table and displays the table number and the caption in a messages box. After each caption is displayed, the Close method closes the table before the next table is open. 
   
-```  
+```al
 var
     varCaption: Text;
     MyRecordRef: RecordRef;
     i: Integer;
     Text000: Label 'Table No: %1 Caption: %2';
 begin
-    for i := 3 TO 10 do begin  
+    for i := 3 to 10 do begin  
         MyRecordRef.Open(i);  
-        varCaption := MyRecordRef.CAPTION;  
+        varCaption := MyRecordRef.Caption;  
         Message(Text000, i, varCaption);  
-        MyRecordRef.CLOSE;  
+        MyRecordRef.Close;  
     end; 
 end; 
 ```  

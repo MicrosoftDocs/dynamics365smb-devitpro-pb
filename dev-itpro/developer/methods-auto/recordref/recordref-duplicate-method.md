@@ -51,7 +51,7 @@ var
 begin   
     RecordRef1.Open(18);  
     RecordRef2 := RecordRef1.DUPLICATE;  
-    Message(Text000, RecordRef1.CAPTION, RecordRef2.CAPTION); 
+    Message(Text000, RecordRef1.Caption, RecordRef2.Caption); 
 end; 
 ```  
 

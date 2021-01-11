@@ -71,7 +71,7 @@ begin
         AccSchedLine.INSERT;  
         RecRef.GETTABLE(AccSchedLine);  
         ChangeLogMgt.LogInsertion(RecRef);  
-      until GLAcc.NEXT = 0;  
+      until GLAcc.Next = 0;  
 end;
 ```  
 

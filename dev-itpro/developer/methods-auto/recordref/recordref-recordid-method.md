@@ -50,7 +50,7 @@ var
 begin   
     MyRecordRef.Open(18);  
     MyRecordRef.FindLAST;  
-    RecID := MyRecordRef.RECORDID;  
+    RecID := MyRecordRef.RecordId;  
     Message(Text000, RecID);  
 end;
 ```  

@@ -51,7 +51,7 @@ var
     RecRef: RecordRef;
     Text000: Label 'Are there any filters? %1';
 begin   
-    RecRef.Open(DATABASE::Customer);  
+    RecRef.Open(Database::Customer);  
     VarHasFilters := RecRef.HASFILTER;  
     Message('Are there any filters? %1', VarHasFilters);  
     RecRef.SETRECFILTER;  

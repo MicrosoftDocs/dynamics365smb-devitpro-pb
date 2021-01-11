@@ -47,7 +47,7 @@ var
     Text000: Label 'The current key in the "%1" table is "%2".';
 begin
     RecRef.Open(18);  
-    Message(Text000,RecRef.CAPTION,RecRef.CURRENTKEY);
+    Message(Text000,RecRef.Caption,RecRef.CURRENTKEY);
 end;  
 ```  
   

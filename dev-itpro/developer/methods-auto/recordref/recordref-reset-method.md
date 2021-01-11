@@ -35,10 +35,10 @@ An instance of the [RecordRef](recordref-data-type.md) data type.
 ## Remarks  
  If no table is selected, this method returns an error.  
   
- This method works the same as the [RESET Method \(Record\)](../../methods/devenv-reset-method-record.md).  
+ This method works the same as the [Reset Method \(Record\)](../../methods/devenv-reset-method-record.md).  
   
 ## Example  
- The following example opens the Customer \(18\) table and creates a RecordRef variable that is named RecRef. The [GETFILTERS Method \(RecordRef\)](recordref-getfilters-method.md) gets filters that have been applied to records in the table. The filters that are returned, if any, are stored in the Filters1 variable and displayed in message box. In this example, no filters are set so the message is blank. The [SETRECFILTER Method \(RecordRef\)](recordref-setrecfilter-method.md) sets a filter on the current key of the current record that is represented by the RecRef variable. The [GETFILTERS Method \(RecordRef\)](recordref-getfilters-method.md) gets the filters that have been set and stores the value in the Filters2 variable. The message displays No. because the No. field is set as a filter. The RESET method removes the filter that was set. The value of the filter that is returned by the [GETFILTERS Method \(RecordRef\)](recordref-getfilters-method.md) after the [RESET Method \(RECORDREF\)](recordref-reset-method.md) is executed is stored in the Filters3 variable. Filter3 is blank because the filter that was set by `RecRef.SETRECFILTER;` is removed by the RESET method. 
+ The following example opens the Customer \(18\) table and creates a RecordRef variable that is named RecRef. The [GETFILTERS Method \(RecordRef\)](recordref-getfilters-method.md) gets filters that have been applied to records in the table. The filters that are returned, if any, are stored in the Filters1 variable and displayed in message box. In this example, no filters are set so the message is blank. The [SETRECFILTER Method \(RecordRef\)](recordref-setrecfilter-method.md) sets a filter on the current key of the current record that is represented by the RecRef variable. The [GETFILTERS Method \(RecordRef\)](recordref-getfilters-method.md) gets the filters that have been set and stores the value in the Filters2 variable. The message displays No. because the No. field is set as a filter. The Reset method removes the filter that was set. The value of the filter that is returned by the [GETFILTERS Method \(RecordRef\)](recordref-getfilters-method.md) after the [Reset Method \(RECORDREF\)](recordref-reset-method.md) is executed is stored in the Filters3 variable. Filter3 is blank because the filter that was set by `RecRef.SETRECFILTER;` is removed by the Reset method. 
    
 ```  
 var
@@ -50,13 +50,13 @@ var
     Text001: Label 'Filter after filter is set is: %1.';
     Text002: Label 'Filter before filter is reset is: %1.';
 begin   
-    RecRef.Open(DATABASE::Customer);  
+    RecRef.Open(Database::Customer);  
     Filters1 := RecRef.GETFILTERS;  
     Message(Text000, Filters1);  
     RecRef.SETRECFILTER;  
     Filters2 := RecRef.GETFILTERS;  
     Message(Text001, Filters2);  
-    RecRef.RESET;  
+    RecRef.Reset;  
     Filters3 := RecRef.GETFILTERS;  
     Message(Text002, Filters3);  
 end;

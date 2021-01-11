@@ -59,7 +59,7 @@ begin
         varKeyRef := CustomerRecref.KEYINDEX(i);  
         Message(Text000, i, varKeyRef);  
       end;  
-    CustomerRecref.CLOSE;  
+    CustomerRecref.Close;  
 end;
 ```  
   
