@@ -24,7 +24,6 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 - [Handle Price List Exceptions with Allow Updating Defaults](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/handle-price-list-exceptions-with-allow-updating-defaults) <!--(Ivan)--> 
 - [Use Shortcut dimensions in G/L Entries for Financial reporting](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/use-shortcut-dimensions-gl-entries-financial-reporting) <!--(Ivan) /dynamics365/business-central/finance-dimensions#to-set-up-global-and-shortcut-dimensionshttps://docs.microsoft.com/en-us-->
 - [Business Central in Microsoft Teams](/dynamics365/business-central/across-teams-overview) <!--(Mike)-->
-- [Snapshot debugging enabled in production environments](/dynamics365/business-central/dev-itpro/developer/devenv-snapshot-debugging)
 - [Signal from web service key authentication added to Application Insights telemetry for partners](../administration/telemetry-webservices-access-key-trace.md)<!--(Kennie)-->
 
 
@@ -49,3 +48,7 @@ Visit https://aka.ms/bcperformance and learn about best practices, dos and don't
 
 **It’s time to switch your Dynamics 365 Business Central browser to Microsoft Edge**  
 On April 2, 2021, Microsoft will remove Internet Explorer 11 and Microsoft Edge Legacy browsers from the list of supported browsers for the Business Central modern clients. Read the details, how it applies to you and actions to take [here](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/21/its-time-to-switch-your-dynamics-365-business-central-browser-to-microsoft-edge/).
+
+**Snapshot debugging is now enabled in production environments**  
+From version 17.2 and forward it is now possible to use snapshot debugging to investigate production environments. For more information, see the [help page](/dynamics365/business-central/dev-itpro/developer/devenv-snapshot-debugging) or view the Virtual Event for 2020 Wave 2 release recording on the What’s New in Visual Studio and AL, covering snapshot debugging in details.
+
