@@ -89,6 +89,7 @@ table 50 MyTable
 ```
 
 Version 2.0 of the app:
+
 ```
 table 50 MyTable
 {
@@ -101,13 +102,14 @@ table 50 MyTable
     }
 }
 ```
-The field `Cust. Rep.` was renamed to `Alt. Name`. It is not allowed to change the name of a field if it is obsolete in both the previous and the new version, because the field is still part of the extension's API. 
+
+The field `Cust. Rep.` was renamed to `Alt. Name`. It is not allowed to change the name of a field if it is obsolete in both the previous and the new version, because the field is still part of the extension's API.
 
 > [!NOTE]
-> Even when a field has `ObsoleteState=Removed` the name change is not allowed because it is consumed by the sync engine which is used when synchronizing the schema defined in the extension to the database.
+> This rule validates all fields independently of their Accessibility or ObsoleteState, because they are used when synchronizing the schema defined in the extension to the database.
 
+## See Also
 
-## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+[Developing Extensions](../devenv-dev-overview.md)
