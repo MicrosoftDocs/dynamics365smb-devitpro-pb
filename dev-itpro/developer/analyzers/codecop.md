@@ -2,7 +2,7 @@
 title: "CodeCop Analyzer"
 ms.author: solsen
 ms.custom: na
-ms.date: 12/14/2020
+ms.date: 01/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -69,9 +69,9 @@ CodeCop is an analyzer that enforces the official AL Coding Guidelines.
 |[AA0215](codecop-aa0215-followfilenameguide.md)|Follow [the style guide](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/compliance/apptest-bestpracticesforalcode#file-naming) about the best practices for naming.|Readability|Warning|
 |[AA0216](codecop-aa0216-passusermessageanderrorbytextconstant.md)|Use a text constant for passing user messages and errors without concatenations.|Localizability|Warning|
 |[AA0217](codecop-aa0217-strsubstnoformatstringshouldbetextconstantorlabel.md)|Use a text constant or label for format string in StrSubstNo.|Localizability|Warning|
-|[AA0218](codecop-aa0218-tooltipmustbefilledonpageforfieldsandactions.md)|You must write a tooltip in the Tooltip property for all controls of type Action and Field that exist on page objects. See [the style guide](https://styleguides.azurewebsites.net/Styleguide/Read?id=2748&topicid=38066) for more information.|Localizability|Warning|
-|[AA0219](codecop-aa0219-tooltipforfieldmuststartwithspecifies.md)|The Tooltip property of Fields must start with 'Specifies'. See [the style guide](https://styleguides.azurewebsites.net/Styleguide/Read?id=2748&topicid=38066) for more information.|Localizability|Warning|
-|[AA0220](codecop-aa0220-tooltiplanguagevaluemustbefilled.md)|The value of the Tooltip property of Fields must be filled. See [the style guide](https://styleguides.azurewebsites.net/Styleguide/Read?id=2748&topicid=38066) for more information.|Localizability|Warning|
+|[AA0218](codecop-aa0218-tooltipmustbefilledonpageforfieldsandactions.md)|You must write a tooltip in the Tooltip property for all controls of type Action and Field that exist on page objects.|Localizability|Warning|
+|[AA0219](codecop-aa0219-tooltipforfieldmuststartwithspecifies.md)|The Tooltip property of Fields must start with 'Specifies'.|Localizability|Warning|
+|[AA0220](codecop-aa0220-tooltiplanguagevaluemustbefilled.md)|The value of the Tooltip property of Fields must be filled.|Localizability|Warning|
 |[AA0221](codecop-aa0221-optioncaptionmustbefilledonpageforoptionfields.md)|You must specify a OptionCaption property for all fields which source expressions is not a table field.|Localizability|Warning|
 |[AA0222](codecop-aa0222-siftindexshouldnotbeusedforprimaryanduniquekey.md)|SIFT index should not be used on primary or unique key.|Design|Warning|
 |[AA0223](codecop-aa0223-optioncaptionlanguagevaluemustbefilled.md)|The value of the OptionCaption property of Fields must be filled in.|Localizability|Warning|
