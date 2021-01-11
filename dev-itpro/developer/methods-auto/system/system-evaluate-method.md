@@ -87,7 +87,7 @@ The message window displays the following:
   
 **VarDuration = 2 days 4 hours 3 seconds 717 milliseconds. The return code is: Yes.**  
   
-This example shows that although Value \('010196'\) can be interpreted as both an integer and a date expression, it cannot be interpreted as a Boolean expression. This causes an error, shown in the return code Ok3 \(=FALSE\).  
+This example shows that although Value \('010196'\) can be interpreted as both an integer and a date expression, it cannot be interpreted as a Boolean expression. This causes an error, shown in the return code Ok3 \(=False\).  
   
 This example also shows that when you evaluate a string as a duration data type, you can use certain words in the string to describe the duration. The following words or abbreviations are supported:  
   

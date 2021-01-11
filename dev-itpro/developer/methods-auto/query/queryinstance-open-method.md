@@ -64,7 +64,7 @@ An instance of the [Query](query-data-type.md) data type.
     Query.Read;  
     ```  
 
--  **Open** method does not clear any filters that were set by the **SetFilter** or **SetRange** methods on a previous **Open** call. If you want to clear the filters, then you must call the **CLEAR** method on the query variable.  
+-  **Open** method does not clear any filters that were set by the **SetFilter** or **SetRange** methods on a previous **Open** call. If you want to clear the filters, then you must call the **Clear** method on the query variable.  
 
     ```al
     Query.SetFilter(Column1, String);  
@@ -96,7 +96,7 @@ begin
     // Runs the query.  
     MyQuery.Open;  
     // Reads each row in the dataset and displays a message with column values.  
-    // Stops reading when there are no more rows remaining in the dataset (Read is FALSE).  
+    // Stops reading when there are no more rows remaining in the dataset (Read is False).  
     while MyQuery.Read do  
     begin  
       Message(Text000, MyQuery.Name, MyQuery.Quantity);  

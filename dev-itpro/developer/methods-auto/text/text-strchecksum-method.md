@@ -63,7 +63,7 @@ begin
     Weight := '1234';  
     Modulus := 7;   
     CheckSum := STRCHECKSUM(StrNumber, Weight, Modulus);   
-    MESSAGE(Text000 + Text001, StrNumber, CheckSum);  
+    Message(Text000 + Text001, StrNumber, CheckSum);  
 end;
 ```  
 
@@ -107,7 +107,7 @@ begin
     StrNumber := '577622135746';  
     Weight := '131313131313';  
     CheckSum := STRCHECKSUM(StrNumber, Weight);  
-    MESSAGE(Text000 + Text001, StrNumber, CheckSum);  
+    Message(Text000 + Text001, StrNumber, CheckSum);  
 end;
 ```  
 

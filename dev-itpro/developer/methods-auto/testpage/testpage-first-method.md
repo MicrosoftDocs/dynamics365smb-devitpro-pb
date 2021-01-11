@@ -44,9 +44,9 @@ An instance of the [TestPage](testpage-data-type.md) data type.
  This example sets the current row to the first customer in the dataset. It requires that you create a TestPage variable named CustomerList with a Subtype of Customer List.  
   
 ```  
-CustomerList.OPENVIEW;  
+CustomerList.OpenVIEW;  
 CustomerList.FIRST;  
-MESSAGE(CustomerList.Name.Value);  
+Message(CustomerList.Name.Value);  
   
 ```  
   

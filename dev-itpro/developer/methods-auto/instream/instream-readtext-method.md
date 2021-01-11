@@ -63,7 +63,7 @@ If you use the return value, you must verify the validity of the data that has b
     Txt: Text;
     Int: Integer;
 begin
-    FileTest.OPEN('c:\XMLDocs\NewTest.txt');  
+    FileTest.Open('c:\XMLDocs\NewTest.txt');  
     FileTest.CreateInStream(StreamInTest);  
     // Starting a loop  
     while not (StreamInTest.EOS) do begin 

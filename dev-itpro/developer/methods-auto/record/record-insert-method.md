@@ -59,7 +59,7 @@ If customer 1120 already exists, then a run-time error occurs.
   
 ## Example 2
   
-This example shows how to use the INSERT method with a return value.
+This example shows how to use the Insert method with a return value.
 
 ```al
 var
@@ -69,7 +69,7 @@ var
 begin
     CustomerRec.Init();  
     CustomerRec."No." := '1120';  
-    if CustomerRec.INSERT(true) then  
+    if CustomerRec.Insert(true) then  
       Message(Text000, CustomerRec."No.")  
     else  
       Message(Text001, CustomerRec."No.");

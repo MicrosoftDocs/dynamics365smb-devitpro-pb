@@ -44,11 +44,11 @@ XML string that contains the request page parameters that are entered on the req
 ## Remarks  
  This method opens the request page for the specified report, where the user can provide parameters for the report. When the user closes the request page by choosing the **OK** button, a string that contains the parameter values that were set by the user is returned. When the user chooses the **Cancel** button, an empty string will be returned. The returned parameter string can be picked up by calling one of the following methods:  
 
--   [EXECUTE Method](../../methods/devenv-execute-method.md)  
+-   [Execute Method](../../methods/devenv-execute-method.md)  
 
--   [PRINT Method](../../methods/devenv-print-method.md)  
+-   [Print Method](../../methods/devenv-print-method.md)  
 
--   [SAVEAS Method](../../methods/devenv-saveas-method.md)  
+-   [SaveAs Method](../../methods/devenv-saveas-method.md)  
 
 > [!NOTE]  
 >  You can use these methods to schedule reports in the job queue.  
@@ -56,7 +56,7 @@ XML string that contains the request page parameters that are entered on the req
 Because the request page runs in the context of where it was invoked from, users cannot bookmark a link to this page from the user interface.  
 
 ## Example  
- This example illustrates how to use the RUNREQUESTPAGE method to run the request page for report ID 206 Sales Invoice. The request page parameters are saved to a table, and then uses the parameters with the EXECUTE, SAVEAS, and PRINT methods to preview the report, save it as a PDF file, and print it.  
+ This example illustrates how to use the RunRequestPage method to run the request page for report ID 206 Sales Invoice. The request page parameters are saved to a table, and then uses the parameters with the Execute, SaveAs, and Print methods to preview the report, save it as a PDF file, and print it.  
 
  This example requires that you create a table for holding parameters that are entered on the report request page and a codeunit that runs the report methods.  
 
@@ -81,48 +81,48 @@ var
     Content: File;
     TempFileName: Text;
 begin
-    // Use the REPORT.RUNREQUESTPAGE method to run the request page to get report parameters  
-    XmlParameters := REPORT.RUNREQUESTPAGE(206);  
-    CurrentUser := USERID;  
+    // Use the Report.RunRequestPage method to run the request page to get report parameters  
+    XmlParameters := Report.RunRequestPage(206);  
+    CurrentUser := UserId;  
     
     // Save the request page parameters to the database table  
     with ReportParameters do begin  
         // Cleanup  
-        if GET(206,CurrentUser) then  
-        DELETE;  
+        if Get(206,CurrentUser) then  
+        Delete;  
     
-        SETAUTOCALCFIELDS(Parameters);  
+        SetAutoCalcFields(Parameters);  
         ReportId := 206;  
         UserId := CurrentUser;  
-        Parameters.CREATEOUTSTREAM(OStream,TEXTENCODING::UTF8);  
-        MESSAGE(XmlParameters);  
-        OStream.WRITETEXT(XmlParameters);  
+        Parameters.CreateOutStream(OStream,TextEncoding::UTF8);  
+        Message(XmlParameters);  
+        OStream.WriteText(XmlParameters);  
     
-        INSERT;  
+        Insert;  
     end;  
     
-    CLEAR(ReportParameters);  
+    Clear(ReportParameters);  
     XmlParameters := '';  
     
     // Read the request page parameters from the database table  
     with ReportParameters do begin  
-        SETAUTOCALCFIELDS(Parameters);  
-        GET(206,CurrentUser);  
-        Parameters.CREATEINSTREAM(IStream,TEXTENCODING::UTF8);  
-        IStream.READTEXT(XmlParameters);  
+        SetAutoCalcFields(Parameters);  
+        Get(206,CurrentUser);  
+        Parameters.CreateInStream(IStream,TextEncoding::UTF8);  
+        IStream.ReadText(XmlParameters);  
     end;  
     
-    // Use the REPORT.SAVEAS method to save the report as a PDF file  
-    Content.CREATE('TestFile.pdf');  // only supported in Business Central on-premises
-    Content.CREATEOUTSTREAM(OStream);  // only supported in Business Central on-premises
-    REPORT.SAVEAS(206,XmlParameters,REPORTFORMAT::Pdf,OStream);  
-    Content.CLOSE;  // only supported in Business Central on-premises
+    // Use the Report.SaveAs method to save the report as a PDF file  
+    Content.Create('TestFile.pdf');  // only supported in Business Central on-premises
+    Content.CreateOutStream(OStream);  // only supported in Business Central on-premises
+    Report.SaveAs(206,XmlParameters,ReportFORMAT::Pdf,OStream);  
+    Content.Close;  // only supported in Business Central on-premises
     
-    // Use the REPORT.EXECUTE method to preview the report  
-    REPORT.EXECUTE(206,XmlParameters);  
+    // Use the Report.Execute method to preview the report  
+    Report.Execute(206,XmlParameters);  
     
-    // Use the REPORT.Print method to print the report  
-    REPORT.PRINT(206,XmlParameters);  
+    // Use the Report.Print method to print the report  
+    Report.Print(206,XmlParameters);  
 end;
 
 ```  

@@ -57,13 +57,13 @@ var
     i: Integer;
     Text000: Label 'The caption for field %1 is "%2".';
 begin
-    CustomerRecref.OPEN(18);  
+    CustomerRecref.Open(18);  
     for i := 1 to 9 do begin  
       MyFieldRef := CustomerRecref.FIELD(i);  
       varCaption := MyFieldRef.CAPTION;  
-      MESSAGE(Text000, i, varCaption);  
+      Message(Text000, i, varCaption);  
     end;  
-    CustomerRecref.CLOSE;  
+    CustomerRecref.Close;  
 end;
 ```  
   

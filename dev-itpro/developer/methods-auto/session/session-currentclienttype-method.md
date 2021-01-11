@@ -54,8 +54,8 @@ if CURRENTCLIENTTYPE = CLIENTTYPE::Tablet then
  In the following example, CURRENTCLIENTTYPE is used as a parameter of the [GetURL Method](../system/system-geturl-clienttype-string-objecttype-integer-table-boolean-method.md) to return the URL of the client that invokes the code.  
 
 ```  
-url := GETURL(CURRENTCLIENTTYPE);  
-MESSAGE('The URL is %1.', url);  
+url := GetURL(CURRENTCLIENTTYPE);  
+Message('The URL is %1.', url);  
 ```  
 
 

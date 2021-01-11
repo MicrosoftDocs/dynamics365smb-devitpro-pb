@@ -85,7 +85,7 @@ begin
     // Runs the query.  
     MyQuery.Open;  
     // Reads each row in the dataset and displays message with column values.  
-    // Stops reading when there are no more rows remaining in the dataset (Read is FALSE).  
+    // Stops reading when there are no more rows remaining in the dataset (Read is False).  
     while MyQuery.Read do  
     begin  
       Message(Text000, MyQuery.Name, MyQuery.Quantity);   

@@ -38,7 +38,7 @@ The default client that is configured for the server instance that is used by th
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- You can use DEFAULTCLIENTTYPE in a [GETURL Method](../../methods/devenv-geturl-method.md) call to get the URL of the default client.  
+ You can use DEFAULTCLIENTTYPE in a [GetURL Method](../../methods/devenv-geturl-method.md) call to get the URL of the default client.  
 
 ## Example 1
 
@@ -51,11 +51,11 @@ if DEFAULTCLIENTTYPE = CLIENTTYPE::Web then
 
 ## Example 2
 
- In the following example, DEFAULTCLIENTTYPE is used as a parameter in the GETURL method to return the URL of the default client that is configured for the [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] instance.  
+ In the following example, DEFAULTCLIENTTYPE is used as a parameter in the GetURL method to return the URL of the default client that is configured for the [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] instance.  
 
 ```  
-url := GETURL(DEFAULTCLIENTTYPE);  
-MESSAGE('The URL is %1.', url);  
+url := GetURL(DEFAULTCLIENTTYPE);  
+Message('The URL is %1.', url);  
 ```  
 
 ## See Also

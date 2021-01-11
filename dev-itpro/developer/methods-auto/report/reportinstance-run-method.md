@@ -34,9 +34,9 @@ An instance of the [Report](report-data-type.md) data type.
 
 ## Remarks  
 
-After you define the *Report* variable, you can run this method or the [RUNMODAL Method \(Report\)](reportinstance-runmodal-method.md) on the variable. With the RUN method, the variable is automatically cleared after the method is executed. With the RUNMODAL method, the variable is not automatically cleared. 
+After you define the *Report* variable, you can run this method or the [RunModal Method \(Report\)](reportinstance-runmodal-method.md) on the variable. With the Run method, the variable is automatically cleared after the method is executed. With the RunModal method, the variable is not automatically cleared. 
 
-Use RUN method or the RUNMODAL method if you know at design time the exact report that you want to run. Otherwise, use the [REPORT.RUN Method](report-run-method.md) or [REPORT.RUNMODAL Method](report-runmodal-method.md).  
+Use Run method or the RunModal method if you know at design time the exact report that you want to run. Otherwise, use the [Report.Run Method](report-run-method.md) or [Report.RunModal Method](report-runmodal-method.md).  
   
 If the report you specify does not exist, then a compile error occurs.  
 
@@ -53,7 +53,7 @@ begin
     CustomerRec.SETCURRENTKey("No.");  
     CustomerRec.SETFILTER("Salesperson Code", 'JR|PS');  
     SomeReport.SETTableVIEW(CustomerRec);  
-    SomeReport.RUN;
+    SomeReport.Run;
 end;
 ```  
 

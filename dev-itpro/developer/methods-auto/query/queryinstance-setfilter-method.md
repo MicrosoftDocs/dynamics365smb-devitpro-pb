@@ -45,7 +45,7 @@ Replacement values to insert in replacement fields in the filter expression. The
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- To apply filters to a dataset, the **SetFilter** method must be called before the **Open**, **SaveAsXML**, and **SaveAsCSV** methods, as shown in the following example. To remove filters from query, you call the [CLEAR Method](../../methods/devenv-clear-method.md).  
+ To apply filters to a dataset, the **SetFilter** method must be called before the **Open**, **SaveAsXML**, and **SaveAsCSV** methods, as shown in the following example. To remove filters from query, you call the [Clear Method](../../methods/devenv-clear-method.md).  
   
 ```al
 Query.SetFilter(Column1, String);  
@@ -107,7 +107,7 @@ begin
     // Runs the query.  
     MyQuery.Open;  
     // Reads each row in the dataset and displays message with column values.  
-    // Stops reading when there are no more rows remaining in the dataset (Read is FALSE).  
+    // Stops reading when there are no more rows remaining in the dataset (Read is False).  
     while MyQuery.Read do  
     begin  
       Message(Text000, MyQuery.Name, MyQuery.Quantity);  

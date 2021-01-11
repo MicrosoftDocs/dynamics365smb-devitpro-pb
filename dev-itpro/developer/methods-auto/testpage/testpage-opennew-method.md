@@ -40,7 +40,7 @@ An instance of the [TestPage](testpage-data-type.md) data type.
   
 ```  
 // Opens a blank Customer Card test page.   
-CustTestPage.OPENNEW;  
+CustTestPage.OpenNEW;  
 ```
 
 ## See Also

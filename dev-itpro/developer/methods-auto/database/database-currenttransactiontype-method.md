@@ -98,19 +98,19 @@ CurrentTransactionType := TransactionType::Browse;
   
 ## Example 5
 
-In Example 5, the initial transaction type is UpdateNoLocks. This is usually the default transaction type for a trigger. When you try to change the transaction type from UpdateNoLocks to Browse, which is a less isolated transaction type, the method call is ignored. The current transaction type remains UpdateNoLocks. After the first Table.GET line, again, when you try to change the transaction type from UpdateNoLocks to Browse, the method call is ignored. The current transaction type remains UpdateNoLocks. Next, when you try to change the transaction type from UpdateNoLocks to Update, which is a more isolated transaction type, the method call causes an error message to be generated. The current transaction type remains UpdateNoLocks. After the [Commit Method](../../methods-auto/database/database-commit-method.md), you can set a new transaction type and change it again if it is required. After the second Table.GET line, the CurrentTransactionType method call is ignored. The transaction type remains Update.  
+In Example 5, the initial transaction type is UpdateNoLocks. This is usually the default transaction type for a trigger. When you try to change the transaction type from UpdateNoLocks to Browse, which is a less isolated transaction type, the method call is ignored. The current transaction type remains UpdateNoLocks. After the first Table.Get line, again, when you try to change the transaction type from UpdateNoLocks to Browse, the method call is ignored. The current transaction type remains UpdateNoLocks. Next, when you try to change the transaction type from UpdateNoLocks to Update, which is a more isolated transaction type, the method call causes an error message to be generated. The current transaction type remains UpdateNoLocks. After the [Commit Method](../../methods-auto/database/database-commit-method.md), you can set a new transaction type and change it again if it is required. After the second Table.Get line, the CurrentTransactionType method call is ignored. The transaction type remains Update.  
   
 ```  
 //Example 5  
 OnInsert  
 CurrentTransactionType := TransactionType::Browse;  
-Table.GET;  
+Table.Get;  
 CurrentTransactionType := TransactionType::Browse;  
 CurrentTransactionType := TransactionType::Update;  
 Commit;  
 CurrentTransactionType := TransactionType::Browse;  
 CurrentTransactionType := TransactionType::Update;  
-Table.GET;  
+Table.Get;  
 CurrentTransactionType := TransactionType::Browse;  
 OnInsert.RETURN  
 Commit;  

@@ -53,9 +53,9 @@ begin
     MyTime := TIME;  
     MyVariant := MyTime;  
     varResult := MyVariant.ISTIME;  
-    MESSAGE(Text000,MyVariant,varResult);  
+    Message(Text000,MyVariant,varResult);  
     varResult := MyVariant.ISCODE;  
-    MESSAGE(Text001,MyVariant,varResult);
+    Message(Text001,MyVariant,varResult);
 end;
 ```  
   

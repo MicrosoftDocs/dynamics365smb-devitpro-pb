@@ -60,7 +60,7 @@ If you know the specific page that you want to run when you are designing your a
 
 If you do not know the specific page that you want to run, then use the [Run Method \(Page\)](page-run--method.md) or the **RunModal Method \(Page\)** and specify the page in the *Number* parameter.  
 
-After you define the page variable, you can use it before and after you run the page. If you use the [RUN Method \(Page\)](page-run--method.md), then you can only use the variable before you run the page.  
+After you define the page variable, you can use it before and after you run the page. If you use the [Run Method \(Page\)](page-run--method.md), then you can only use the variable before you run the page.  
 
 ## Example
 

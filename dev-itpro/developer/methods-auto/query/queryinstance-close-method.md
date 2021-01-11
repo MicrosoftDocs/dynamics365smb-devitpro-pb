@@ -33,7 +33,7 @@ An instance of the [Query](query-data-type.md) data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- The **Close** method does not clear any filters that are set by the SetFilterS method. If you want to clear the filters, then you must call the CLEAR method.  
+ The **Close** method does not clear any filters that are set by the SetFilterS method. If you want to clear the filters, then you must call the Clear method.  
 
  In most cases, you do not have to call the **Close** method explicitly. The **Close** method is called implicitly when the following conditions are true:  
 
@@ -61,7 +61,7 @@ begin
     // Runs the query.  
     MyQuery.Open;  
     // Reads each row in the dataset and displays a message with column values.   
-    // Stops reading when there are no more rows remaining in the dataset (Read is FALSE).  
+    // Stops reading when there are no more rows remaining in the dataset (Read is False).  
     while MyQuery.Read do  
     begin  
       Message(Text000, MyQuery.Name, MyQuery.Quantity);   

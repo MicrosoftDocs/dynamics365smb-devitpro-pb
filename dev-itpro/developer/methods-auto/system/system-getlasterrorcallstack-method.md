@@ -46,7 +46,7 @@ For some errors, such as divide by zero errors and overflow errors, **GetLastErr
   
 ## Example  
 
-In this example, an error occurs in codeunit 50003. The text of the MESSAGE includes a call to the GetLastErrorCallStack method.  
+In this example, an error occurs in codeunit 50003. The text of the Message includes a call to the GetLastErrorCallStack method.  
   
 ```al
 // Codeunit 50001, TestErrors1  

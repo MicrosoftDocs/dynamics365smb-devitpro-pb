@@ -57,7 +57,7 @@ The following methods are available on instances of the Record data type.
 |[FindLast()](record-findlast-method.md)|Finds the last record in a table based on the current key and filter.|
 |[FindSet([Boolean] [, Boolean])](record-findset-method.md)|Finds a set of records in a table based on the current key and filter.|
 |[Get([Any,...])](record-get-method.md)|Gets a record based on values stored in primary key fields.|
-|[GetAscending(Any)](record-getascending-method.md)|Gets the sort order for the records returned. You can use GETASCENDING to identify the sort order of the specified field because fields can be sorted in ascending or descending order. For example, you can read data from an ODATA web service where the data is sorted in ascending order on the Name field but in descending order on the City field.|
+|[GetAscending(Any)](record-getascending-method.md)|Gets the sort order for the records returned. You can use GetASCENDING to identify the sort order of the specified field because fields can be sorted in ascending or descending order. For example, you can read data from an ODATA web service where the data is sorted in ascending order on the Name field but in descending order on the City field.|
 |[GetBySystemId(Guid)](record-getbysystemid-method.md)|Gets a record by its SystemId.|
 |[GetFilter(Any)](record-getfilter-method.md)|Gets a list of the filters within the current filter group that are applied to a field.|
 |[GetFilters()](record-getfilters-method.md)|Gets a string that contains a list of the filters within the current filter group for all fields in a record. In addition, this method also returns the state of the MARKEDONLY method (Record).|

@@ -68,13 +68,13 @@ Text000	The record was found.
 Text001	The record could not be found.
 
 Copy
-CustomerRec.GET('1120');  
+CustomerRec.Get('1120');  
 // This statement causes a run-time error if customer 1120 cannot be   
 // found. To avoid this, use the following construct:  
-IF CustomerRec.GET('1120') THEN  
-  MESSAGE(Text000)  
+IF CustomerRec.Get('1120') THEN  
+  Message(Text000)  
 ELSE  
-  MESSAGE(Text001);  
+  Message(Text001);  
 
 -->
 ## See Also

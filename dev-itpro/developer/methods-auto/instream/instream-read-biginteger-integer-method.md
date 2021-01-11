@@ -45,7 +45,7 @@ Describes the number of characters to be read. If you do not specify Length, the
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
-Read reads until the specified length or a zero byte. For more information about how zero bytes and line endings are read, see [WRITE, WRITETEXT, Read, and ReadTEXT Method Behavior Regarding Line Endings and Zero Terminators](../../devenv-write-read-methods-line-break-behavior.md).
+Read reads until the specified length or a zero byte. For more information about how zero bytes and line endings are read, see [WRITE, WriteText, Read, and ReadTEXT Method Behavior Regarding Line Endings and Zero Terminators](../../devenv-write-read-methods-line-break-behavior.md).
   
  If the optional return value \(*Read*\) is not present and the data being read is less than the length requested to be read, then you receive an error message.  
   

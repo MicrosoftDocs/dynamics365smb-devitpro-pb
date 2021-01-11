@@ -68,7 +68,7 @@ begin
     // Add the following code to the TestSaveAsXML test method.  
     LabelsFilename := TEMPORARYPATH + 'MyLabels.xml';  
     DatasetFilename := TEMPORARYPATH + 'MyDataset.xml';  
-    REPORT.RUN(111);  
+    Report.Run(111);  
     if not FILE.EXISTS(LabelsFilename) then  
       ERROR('Labels file should exist!');  
     if not FILE.EXISTS(DatasetFilename) then  
@@ -77,7 +77,7 @@ begin
     // Add the following code to the ReqPageHandler method.  
     RequestPage.Customer.SETFILTER("No.", '20000');  
     RequestPage.ChartType.VALUE('Pie chart');  
-    RequestPage.SAVEASXML(LabelsFilename,DatasetFilename);  
+    RequestPage.SaveAsXML(LabelsFilename,DatasetFilename);  
 end;
   
 ```  

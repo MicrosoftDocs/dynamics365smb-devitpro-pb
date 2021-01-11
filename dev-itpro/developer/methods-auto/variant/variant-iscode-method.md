@@ -53,9 +53,9 @@ begin
     MyCode := 'A1297';  
     MyVariant :=  MyCode;  
     varResult := MyVariant.ISCODE;  
-    MESSAGE(Text000,MyVariant,varResult);  
+    Message(Text000,MyVariant,varResult);  
     varResult := MyVariant.ISTEXT;  
-    MESSAGE(Text001,MyVariant,varResult);  
+    Message(Text001,MyVariant,varResult);  
 end;
 ```  
   

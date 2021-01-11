@@ -72,7 +72,7 @@ An instance of the [File](file-data-type.md) data type.
 begin
     FileName := 'C:\TestFolder\TestFile.txt';  
     if Exists(FileName) then begin
-      TestFile.WriteMode(TRUE);  
+      TestFile.WriteMode(True);  
       TestFile.Open(FileName);  
       TestFile.Write('Hello World');  
       TestFile.Close;  

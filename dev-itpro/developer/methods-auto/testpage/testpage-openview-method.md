@@ -42,7 +42,7 @@ An instance of the [TestPage](testpage-data-type.md) data type.
   
 ```  
 // Opens the Customer Card on the first Customer in the dataset.  
-CustTestPage.OPENVIEW;  
+CustTestPage.OpenVIEW;  
 ```
 
 ## See Also

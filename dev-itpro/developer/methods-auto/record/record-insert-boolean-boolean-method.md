@@ -52,7 +52,7 @@ The inserted record will automatically get assigned a SystemId by the platform. 
 
 ## Example
   
-This example shows how to use the INSERT method to insert a record with a specified SystemId.
+This example shows how to use the Insert method to insert a record with a specified SystemId.
 
 ```al
 var

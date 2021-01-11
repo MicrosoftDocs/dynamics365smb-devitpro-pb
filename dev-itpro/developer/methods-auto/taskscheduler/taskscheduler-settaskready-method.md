@@ -50,7 +50,7 @@ Sets a task that runs a codeunit to the ready state. The task will not run unles
 var
     TaskID: GUID;
 begin
-    TaskID := TASKSCHEDULER.CREATETASK(CODEUNIT::"Job Queue Dispatcher", CODEUNIT::"Job Queue Error Handler");  
+    TaskID := TASKSCHEDULER.CreateTASK(CODEUNIT::"Job Queue Dispatcher", CODEUNIT::"Job Queue Error Handler");  
     TASKSCHEDULER.SETTASKREADY(taskID);  
 end;
 ```  

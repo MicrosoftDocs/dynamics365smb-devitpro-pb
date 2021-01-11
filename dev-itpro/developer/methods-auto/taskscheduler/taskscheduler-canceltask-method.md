@@ -26,7 +26,7 @@ Cancels and deletes a scheduled task that runs a specific codeunit.
 ## Parameters
 *Task*  
 &emsp;Type: [Guid](../guid/guid-data-type.md)  
-Specifies the unique identifier of the task. The unique identifier is returned by the CREATETASK method.
+Specifies the unique identifier of the task. The unique identifier is returned by the CreateTASK method.
           
 
 

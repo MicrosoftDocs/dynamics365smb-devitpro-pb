@@ -68,7 +68,7 @@ The following example determines whether the specified file exists. If it exists
 begin
     FileName := 'C:\TestFolder\TestFile.txt';  
     if Exists(FileName) then begin
-      TestFile.WriteMode(TRUE);  
+      TestFile.WriteMode(True);  
       TestFile.Open(FileName);  
       TestFile.Write(Bool);  
       TestFile.Close;  

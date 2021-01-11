@@ -52,7 +52,7 @@ begin
     MyByte := 'A';  
     MyVariant := MyByte;  
     varResult := MyVariant.ISBYTE;  
-    MESSAGE(Text000,varResult);  
+    Message(Text000,varResult);  
 end;
 ```  
   

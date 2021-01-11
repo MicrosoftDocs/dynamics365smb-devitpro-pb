@@ -53,7 +53,7 @@ The following example opens the text file in a folder that is named MyFolder. Th
     FileTest: File;
     Buffer: Text;
 begin
-    FileTest.OPEN('c:\MyFolder\MyText.txt');  
+    FileTest.Open('c:\MyFolder\MyText.txt');  
     FileTest.CreateInStream(StreamInTest);  
     while not StreamInTest.EOS do begin 
       StreamInTest.ReadTet(Buffer);  

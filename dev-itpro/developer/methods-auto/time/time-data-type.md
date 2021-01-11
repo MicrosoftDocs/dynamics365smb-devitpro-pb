@@ -30,15 +30,15 @@ The following are examples of valid assignments of times to a Time variable *MyT
 ```  
 MyTime := 0T;  
 MyTime := 115900T;  
-MESSAGE(FORMAT(MyTime));  
+Message(FORMAT(MyTime));  
 MyTime := 115934T;  
-MESSAGE(FORMAT(MyTime));  
+Message(FORMAT(MyTime));  
 MyTime := 115934.444T;  
-MESSAGE(FORMAT(MyTime));  
+Message(FORMAT(MyTime));  
 MyTime := 235900T;  
-MESSAGE(FORMAT(MyTime));  
+Message(FORMAT(MyTime));  
 MyTime := 030000T;  
-MESSAGE(FORMAT(MyTime));  
+Message(FORMAT(MyTime));  
 ```  
   
 The following shows what the message windows display accordingly on a computer with the regional format set to English (United States) for the syntax examples above.  

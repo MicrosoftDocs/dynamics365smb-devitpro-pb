@@ -72,7 +72,7 @@ begin
     SubStr2 := SELECTSTR(4, CommaStr); // Pick out the 4th substring.  
     SubStr3 := SELECTSTR(1, CommaStr2);  
     SubStr4 := SELECTSTR(3, CommaStr2);  
-    MESSAGE(Text001 + '>%1<\' + '>%2<\' + '>%3<\' + '>%4<\', SubStr1, SubStr2, SubStr3, SubStr4);  
+    Message(Text001 + '>%1<\' + '>%2<\' + '>%3<\' + '>%4<\', SubStr1, SubStr2, SubStr3, SubStr4);  
 end;
 ```  
   
@@ -98,7 +98,7 @@ var
 begin
     CommaStr2 := Text002;  
     SubStr5 := SELECTSTR(6,CommaStr2);  
-    MESSAGE('>%1<\', SubStr5);  
+    Message('>%1<\', SubStr5);  
 end;
 ```  
   

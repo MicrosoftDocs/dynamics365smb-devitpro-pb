@@ -40,11 +40,11 @@ An instance of the [TestPage](testpage-data-type.md) data type.
   
 ```  
 // Open the test page.  
-CustPage.OPENEDIT;  
+CustPage.OpenEDIT;  
 // Add code to test the Customer List page.  
 // …  
 // Close the Customer Card   
-CustPage.CLOSE;  
+CustPage.Close;  
 ```  
   
 

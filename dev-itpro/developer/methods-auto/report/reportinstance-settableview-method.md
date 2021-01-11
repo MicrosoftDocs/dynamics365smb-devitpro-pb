@@ -55,7 +55,7 @@ begin
     SalesHeader.SETCURRENTKey("Document Type");  
     SalesHeader.SETRANGE("Document Type",SalesHeader."Document Type"::Order);  
     SomePage.SETTableVIEW(SalesHeader); // Only view sales orders.  
-    SomePage.RUN; 
+    SomePage.Run; 
 end; 
 ```  
   

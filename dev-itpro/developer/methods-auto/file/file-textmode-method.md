@@ -59,8 +59,8 @@ The following example sets the TextMode to **true** when the file is open for wr
 var
     TestFile: File;
 begin 
-    TestFile.TextMode(TRUE);  
-    TestFile.WriteMode(TRUE);  
+    TestFile.TextMode(True);  
+    TestFile.WriteMode(True);  
     TestFile.Open('C:\TestFolder\TestFile.txt');  
     TestFile.Write('Hello World');  
     TestFile.Close;  

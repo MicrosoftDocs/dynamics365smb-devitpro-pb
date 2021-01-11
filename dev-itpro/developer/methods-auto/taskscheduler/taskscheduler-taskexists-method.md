@@ -26,7 +26,7 @@ Exists :=   TaskScheduler.TaskExists(Task: Guid)
 ## Parameters
 *Task*  
 &emsp;Type: [Guid](../guid/guid-data-type.md)  
-The unique identifier of the task. The unique identifier is returned by the CREATETASK method.
+The unique identifier of the task. The unique identifier is returned by the CreateTASK method.
           
 
 

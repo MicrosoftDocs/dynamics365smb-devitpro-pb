@@ -44,11 +44,11 @@ An instance of the [TestPage](testpage-data-type.md) data type.
  This example requires that you create a TestPage variable named CustomerList with a Subtype of Customer List.  
   
 ```  
-CustomerList.OPENVIEW;  
+CustomerList.OpenVIEW;  
 // Loops through all customers and displays the customer name.  
 if CustomerList.FIRST then  
   repeat  
-    MESSAGE('%1';CustomerList.Name);  
+    Message('%1';CustomerList.Name);  
 until not CustomerList.NEXT;  
   
 ```

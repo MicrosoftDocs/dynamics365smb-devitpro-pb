@@ -48,7 +48,7 @@ The upper limit of the range. The data type of this parameter must match the dat
 ## Remarks  
  SetRange is a quick way to set a simple filter on a field. The SetRange method is functionally equivalent to calling *Query*.SetFilter\(ColumnName, 'FromValue..ToValue'\).  
   
- To apply filters to a dataset, the **SetRange** method must be called before the **Open**, **SaveAsXML**, and **SaveAsCSV** methods, as shown in the following example. To remove filters, you call the [CLEAR Method](../system/system-clear-joker-method.md) or **SetRange** without values for the *FromValue* and *ToValue* parameters.  
+ To apply filters to a dataset, the **SetRange** method must be called before the **Open**, **SaveAsXML**, and **SaveAsCSV** methods, as shown in the following example. To remove filters, you call the [Clear Method](../system/system-clear-joker-method.md) or **SetRange** without values for the *FromValue* and *ToValue* parameters.  
   
 ```al
 Query.SetRange(Column1, FromValue, ToValue);  
@@ -115,7 +115,7 @@ MyQuery.SetFilter(NAME, 'Selangorian Ltd.');
 // Runs the query.  
 MyQuery.Open;  
 // Reads each row in the dataset and displays message with column values.  
-// Stops reading when there are no more rows remaining in the dataset (Read is FALSE).  
+// Stops reading when there are no more rows remaining in the dataset (Read is False).  
 while MyQuery.Read do  
 begin  
   Message(Text000, MyQuery.Name, MyQuery.Quantity);  

@@ -66,7 +66,7 @@ The data that you want to write to the file.
 begin
     FileName := 'C:\TestFolder\TestFile.txt';  
     if Exists(FileName) then begin
-      TestFile.WriteMode(TRUE);  
+      TestFile.WriteMode(True);  
       TestFile.Open(FileName);  
       TestFile.Write(RecId);  
       TestFile.Close;  

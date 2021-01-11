@@ -28,12 +28,12 @@ Clears the value of a single variable. Also, it clears all the filters that were
 ## Parameters
 *Variable*  
 &emsp;Type: [Any](../any/any-data-type.md)  
-The identifier (variable) of any AL data type, including simple and composite data types. The following rules apply when you run the CLEAR method:
+The identifier (variable) of any AL data type, including simple and composite data types. The following rules apply when you run the Clear method:
 -   A number variable is set to 0 (zero)
 -   A string variable is set to empty string
 -   A date variable is set to 0D (undefined date)
 -   A time variable is set to 0T (undefined time)
--   A Boolean variable is set to FALSE
+-   A Boolean variable is set to False
           
 
 
@@ -51,7 +51,7 @@ For a composite data type, such as a record or an array, all elements are cleare
  **Clear** can also be used to deselect a company. For more information, see [ChangeCompany Method \(Record\)](../../methods-auto/record/record-changecompany-method.md).  
 
 <!-- not relevant in web client/d365
-For an Automation object, **CLEAR** releases the Automation object and decreases the reference count. The Automation server determines if this should cause a shutdown. After **CLEAR**, you can use the [CREATE Method \(Automation\)](devenv-CREATE-Method-Automation.md) on the Automation variable to create a new instance of the object.;  -->
+For an Automation object, **Clear** releases the Automation object and decreases the reference count. The Automation server determines if this should cause a shutdown. After **Clear**, you can use the [Create Method \(Automation\)](devenv-Create-Method-Automation.md) on the Automation variable to create a new instance of the object.;  -->
 
 If you use **Clear** on a codeunit, only the reference to the codeunit is deleted and not the codeunit itself, as with Automation objects. This means that the content of the codeunit stays intact.  
 
@@ -67,7 +67,7 @@ This example shows how to use the **Clear** method.
 var
     Text000: Label 'Joe Raybon';
     Text001: Label 'Initially the variable "Name" contains: >;%1\>';
-    Text002: Label 'After using CLEAR, the variable "Name" contains: >;%1\>';
+    Text002: Label 'After using Clear, the variable "Name" contains: >;%1\>';
 begin
     Name := Text000;  
     Message(Text001, Name);  
@@ -82,7 +82,7 @@ The first message window displays the following:
 
 The second message window displays the following:  
 
-**After using CLEAR, the variable "Name" contains: >;\>**  
+**After using Clear, the variable "Name" contains: >;\>**  
 
 ## Example 2
 
@@ -126,11 +126,11 @@ end;
 
  The second message window displays the following:  
 
- **After using CLEAR\(MyTextVar\), the variable "MyTextVar" contains: >;\> and GuidVar is still defined as >;12345678-1234-1234-1234-1234567890AB\>**  
+ **After using Clear\(MyTextVar\), the variable "MyTextVar" contains: >;\> and GuidVar is still defined as >;12345678-1234-1234-1234-1234567890AB\>**  
 
  The third message window displays the following:  
 
- **After using CLEAR\(GuidVar\) the variable "GuidVar" becomes undefined**  
+ **After using Clear\(GuidVar\) the variable "GuidVar" becomes undefined**  
 
  The fourth message window displays the following:  
 

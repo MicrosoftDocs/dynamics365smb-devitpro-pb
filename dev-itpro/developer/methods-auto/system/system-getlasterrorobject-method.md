@@ -53,7 +53,7 @@ var
     Exception: DotNet "'System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'.System.Net.WebException";
     WebException: DotNet "'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'.System.Exception";
 begin
-    if not MyCodeunit.RUN then begin  
+    if not MyCodeunit.Run then begin  
         Exception := GetLastErrorObject;  
       
         if not Exception.InnerException.GetType.Equals(WebException.GetType) then  

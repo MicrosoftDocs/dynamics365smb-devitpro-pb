@@ -62,16 +62,16 @@ This example shows how to open an .xml file for reading in text mode. To use thi
 ```
   
 ```al
-TestFile.TextMode(TRUE);  
-TestFile.WriteMode(FALSE);  
+TestFile.TextMode(True);  
+TestFile.WriteMode(False);  
 TestFile.Open('C:\temp\simple.xml');  
 ```  
   
 If you want to be explicit about the encoding of a file, you can set the *TextEncoding* parameter. The following code example replaces the last statement in the previous example.  
   
 ```al
-TestFile.TextMode(TRUE);  
-TestFile.WriteMode(FALSE);  
+TestFile.TextMode(True);  
+TestFile.WriteMode(False);  
 TestFile.Open('C:\temp\simple.xml', TextEncoding::Windows);  
 ```  
   

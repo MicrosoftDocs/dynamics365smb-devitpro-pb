@@ -57,7 +57,7 @@ begin
     SalesHeader.SetCurrentKey("Document Type");  
     SalesHeader.SetRange("Document Type",SalesHeader."Document Type"::Order);  
     SomePage.SetTableView(SalesHeader); // Only view sales orders.  
-    SomePage.RUN;
+    SomePage.Run;
 end;
 ```  
   

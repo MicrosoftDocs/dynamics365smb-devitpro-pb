@@ -117,7 +117,7 @@ begin
     DayOfWeek := 1;  
     Week := 1;  
     OutputDate := DWY2DATE(DayOfWeek, Week);  
-    MESSAGE(Text000, DayOfWeek, Week, OutputDate);  
+    Message(Text000, DayOfWeek, Week, OutputDate);  
 end;
 ```  
   

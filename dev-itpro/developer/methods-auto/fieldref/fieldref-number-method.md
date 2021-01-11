@@ -53,7 +53,7 @@ var
     LocationRecref: RecordRef;
     FieldIndex: Integer;
 begin
-    LocationRecref.OPEN(DATABASE::Location);  
+    LocationRecref.Open(DATABASE::Location);  
     FieldIndex := 0;  
     repeat  
       FieldIndex  := FieldIndex + 1;  

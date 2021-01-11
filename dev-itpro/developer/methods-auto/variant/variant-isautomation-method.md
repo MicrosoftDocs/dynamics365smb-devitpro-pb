@@ -52,9 +52,9 @@ var
 begin
     MyVariant := MyAutomation;  
     varResult := MyVariant.ISAUTOMATION;  
-    MESSAGE(Text000,varResult);  
+    Message(Text000,varResult);  
     varResult := MyVariant.ISCODE;  
-    MESSAGE(Text001, varResult);  
+    Message(Text001, varResult);  
 end;
 ```  
   

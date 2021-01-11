@@ -61,17 +61,17 @@ var
 begin
     //Test method: TestSaveAsExcel  
     Filename := TEMPORARYPATH + 'MyRep.xls';  
-    MESSAGE(Filename);  
+    Message(Filename);  
     if not FILE.ERASE(Filename) then  
       ERROR('Cannot erase %1',Filename);  
-    REPORT.RUN(111);  
+    Report.Run(111);  
     if not FILE.EXISTS(Filename) then  
       ERROR('File should exist!');  
       
     //Request Page Handler method  
     RequestPage.Customer.SETFILTER("No.", '20000');  
     RequestPage.ChartType.VALUE('Pie chart');  
-    RequestPage.SAVEASEXCEL(Filename);  
+    RequestPage.SaveAsExcel(Filename);  
 end;
   
 ```  

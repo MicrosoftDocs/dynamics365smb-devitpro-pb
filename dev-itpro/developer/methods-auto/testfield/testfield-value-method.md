@@ -60,14 +60,14 @@ var
     Text000: Label 'Customer name has changed to %1.';
 begin
     CustomerNo := '50000';  
-    CustomerRecref.OPEN(18);  
+    CustomerRecref.Open(18);  
     MyFieldRef := CustomerRecref.FIELD(1);  
     if MyFieldRef.ACTIVE then begin  
       MyFieldRef.VALUE(CustomerNo);  
       MyFieldRef := CustomerRecref.FIELD(2);  
       MyFieldRef.VALUE('Contoso');  
       CustomerRecref.MODIFY;  
-      MESSAGE(Text000, MyFieldRef.VALUE);  
+      Message(Text000, MyFieldRef.VALUE);  
     end;  
 end;
 ```  

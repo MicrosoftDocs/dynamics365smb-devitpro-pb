@@ -42,7 +42,7 @@ An instance of the [TestPage](testpage-data-type.md) data type.
   
 ```  
 // Opens the TestPage in edit mode.  
-CustTestPage.OPENEDIT()  
+CustTestPage.OpenEDIT()  
   
 ```
 

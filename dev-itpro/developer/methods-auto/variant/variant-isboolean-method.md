@@ -54,9 +54,9 @@ begin
     MyBoolean := ItemRec.Critical;  
     MyVariant := MyBoolean;  
     varResult := MyVariant.ISBOOLEAN;  
-    MESSAGE(Text000,MyVariant,varResult);  
+    Message(Text000,MyVariant,varResult);  
     varResult := MyVariant.ISCODE;  
-    MESSAGE(Text001,MyVariant,varResult);  
+    Message(Text001,MyVariant,varResult);  
 end;
 ```  
 

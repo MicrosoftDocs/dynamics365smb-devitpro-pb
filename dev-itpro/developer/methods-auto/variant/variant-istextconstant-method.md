@@ -51,8 +51,8 @@ var
 begin
     MyVariant := Text000;  
     varResult := MyVariant.ISTEXTCONSTANT;  
-    MESSAGE(Text001,MyVariant,varResult);  
-    MESSAGE(Text001,varResult);  
+    Message(Text001,MyVariant,varResult);  
+    Message(Text001,varResult);  
 end;
 ```  
 

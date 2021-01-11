@@ -46,7 +46,7 @@ An instance of the [Record](record-data-type.md) data type.
 
 ## Remarks
 
- FlowFields are virtual fields. The values in these fields are not saved in the table. This means that you must use either the **CalcFields** method or the [SetAutoCalcFields Method \(Record\)](record-SETAUTOCALCFIELDS-method.md) to update them. For example, if you retrieve a record using the [Find Method \(Record\)](record-Find-method.md) and [Next Method \(Record\)](record-next-method.md), the FlowFields in those records are set to zero \(0\). Then, when you call **CalcFields**, their values are updated.  
+ FlowFields are virtual fields. The values in these fields are not saved in the table. This means that you must use either the **CalcFields** method or the [SetAutoCalcFields Method \(Record\)](record-SetAutoCalcFields-method.md) to update them. For example, if you retrieve a record using the [Find Method \(Record\)](record-Find-method.md) and [Next Method \(Record\)](record-next-method.md), the FlowFields in those records are set to zero \(0\). Then, when you call **CalcFields**, their values are updated.  
   
  When a FlowField is a direct source expression on a page or a report, the calculation is performed automatically.  
   
