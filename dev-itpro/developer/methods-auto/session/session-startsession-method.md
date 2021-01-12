@@ -75,7 +75,7 @@ var
     SessionID: Integer;
     OK: Boolean;
 begin  
-    OK := STARTSESSION(SessionId, CODEUNIT::"Cache Stress Test", COMPANYNAME, CacheStressTestRec);  
+    OK := StartSession(SessionId, CODEUNIT::"Cache Stress Test", COMPANYNAME, CacheStressTestRec);  
     if OK then  
       STOPSESSION(SessionId, 'Logoff cache stress test session')  
     else  

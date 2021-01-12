@@ -44,7 +44,7 @@ When a message statement in the AL code is executed, the message is not immediat
   
 The window is automatically sized to hold the longest line of text and the total number of lines.  
   
-For NAS sessions or [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)] sessions \(including NAS\) that are started by the [STARTSESSION Method \(Sessions\)](../../methods-auto/session/session-startsession-method.md), messages are recorded in the event log of the computer that is running [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)]. The message entries have the ID 100 and type Information.  
+For NAS sessions or [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)] sessions \(including NAS\) that are started by the [StartSession Method \(Sessions\)](../../methods-auto/session/session-startsession-method.md), messages are recorded in the event log of the computer that is running [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)]. The message entries have the ID 100 and type Information.  
   
 ## Programming Guidelines  
 

@@ -68,7 +68,7 @@ var
     CacheStressTestRec: Record Customer;
     SessionID: Integer;
 begin
-    STARTSESSION(SessionId, CODEUNIT::"Cache Stress Test", COMPANYNAME, CacheStressTestRec);  
+    StartSession(SessionId, CODEUNIT::"Cache Stress Test", COMPANYNAME, CacheStressTestRec);  
     STOPSESSION(SessionId, 'Logoff cache stress test session');  
 end;
 
