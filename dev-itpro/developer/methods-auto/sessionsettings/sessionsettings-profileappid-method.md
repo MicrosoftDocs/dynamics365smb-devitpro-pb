@@ -51,16 +51,16 @@ A profile can be included as part of an extension, instead of being defined as p
 The PROFILEAPPID property in a SessionSettings object corresponds to the **App ID** field in the in the system table **2000000073 User Personalization**
 
 ## Example
-This example creates a SessionSettings object that is populated with the current client user's personalization data, and then uses the PROFILEAPPID method and PROFILEID method to set the object to use the profile that has the ID 'MyExtensionProfile', which is provided in the extension that has the ID '12345678-1234-1234-1234-1234567890AB'. Finally, the REQUESTSESSIONUPDATE method sends a request to the client to abandon the current client session and start a new session that uses the new profile. This example requires a SessionSettings data type variable.
+This example creates a SessionSettings object that is populated with the current client user's personalization data, and then uses the PROFILEAPPID method and PROFILEID method to set the object to use the profile that has the ID 'MyExtensionProfile', which is provided in the extension that has the ID '12345678-1234-1234-1234-1234567890AB'. Finally, the RequestSessionUpdate method sends a request to the client to abandon the current client session and start a new session that uses the new profile. This example requires a SessionSettings data type variable.
 
 ```
 var
   MySessionSettings : SessionSettings;
 begin
-  MySessionSettings.INIT;
+  MySessionSettings.Init;
   MySessionSettings.PROFILEID('MyExtensionProfile');
   MySessionSettings.PROFILEAPPID('12345678-1234-1234-1234-1234567890AB');
-  MySessionSettings.REQUESTSESSIONUPDATE(false);
+  MySessionSettings.RequestSessionUpdate(false);
 end;  
 ```  
 

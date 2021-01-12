@@ -41,20 +41,20 @@ If you set this to **false**, when the new client session is closed, the next ti
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
-Within the scope of the REQUESTSESSIONUPDATE method, it is not recommended to run code after the REQUESTSESSIONUPDATE method call that requires client communication because the current client session will be abandoned.
+Within the scope of the RequestSessionUpdate method, it is not recommended to run code after the RequestSessionUpdate method call that requires client communication because the current client session will be abandoned.
 
-Before the REQUESTSESSIONUPDATE method is called, be sure that all user personalization properties in the SessionSettings object have values; otherwise the system default values will be used for empty properties. To help, you can use the INIT method to populate the object with the values in the database.
+Before the RequestSessionUpdate method is called, be sure that all user personalization properties in the SessionSettings object have values; otherwise the system default values will be used for empty properties. To help, you can use the Init method to populate the object with the values in the database.
 
 ## Example  
-This example uses the INIT method to create a SessionSettings object that includes the current client user's personalization settings from the database, and then uses the COMPANY method to set the company to 'MyCompany'. Finally, the REQUESTSESSIONUPDATE method sends a request that saves the SessionSettings object property values to the database and starts a new client session that uses the new company.
+This example uses the Init method to create a SessionSettings object that includes the current client user's personalization settings from the database, and then uses the Company method to set the company to 'MyCompany'. Finally, the RequestSessionUpdate method sends a request that saves the SessionSettings object property values to the database and starts a new client session that uses the new company.
 
 ```
 var
   MySessionSettings : SessionSettings;
 begin
-  MySessionSettings.INIT
-  MySessionSettings.COMPANY('MyCompany');
-  MySessionSettings.REQUESTSESSIONUPDATE(true);
+  MySessionSettings.Init
+  MySessionSettings.Company('MyCompany');
+  MySessionSettings.RequestSessionUpdate(true);
 end;  
 ```  
 

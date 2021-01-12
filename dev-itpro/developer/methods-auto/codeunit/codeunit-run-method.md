@@ -51,7 +51,7 @@ var
     AppMgmtInstance: Codeunit ApplicationManagement;
     AccountRecord: Record "Accounting Period";
 begin  
-    AccountRecord.INIT;  
+    AccountRecord.Init;  
     if not FiscalYearCloseInstance.Run(AccountRecord) then  
       Error('Codeunit run failed (with record).');  
     if not AppMgmtInstance.Run then  
