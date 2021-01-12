@@ -60,7 +60,7 @@ begin
     AssertError FileObj2.Create(FileObj1.Name);  
     ErrorCode := GetLastErrorCode;  
     if ErrorCode <> ExpectedErrorCode then  
-      ERROR(Text001, ExpectedErrorCode, ErrorCode, GetLastErrorText);  
+      Error(Text001, ExpectedErrorCode, ErrorCode, GetLastErrorText);  
 end;
 ``` 
  

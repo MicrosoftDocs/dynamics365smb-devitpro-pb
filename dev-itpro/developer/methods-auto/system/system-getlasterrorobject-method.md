@@ -57,10 +57,10 @@ begin
         Exception := GetLastErrorObject;  
       
         if not Exception.InnerException.GetType.Equals(WebException.GetType) then  
-            ERROR(Exception.Message);  
+            Error(Exception.Message);  
       
         WebException := Exception.InnerException;  
-        ERROR(WebException.Message);  
+        Error(WebException.Message);  
     end;  
 end;
 ``` 

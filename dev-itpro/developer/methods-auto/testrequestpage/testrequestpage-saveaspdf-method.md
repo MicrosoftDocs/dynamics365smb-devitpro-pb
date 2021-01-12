@@ -63,10 +63,10 @@ begin
     Filename := TEMPORARYPATH + 'MyRep.pdf';  
     Message(Filename);  
     if not FILE.ERASE(Filename) then  
-      ERROR('Cannot erase %1',Filename);  
+      Error('Cannot erase %1',Filename);  
     Report.Run(111);  
     if not FILE.EXISTS(Filename) then  
-      ERROR('File should exist!');  
+      Error('File should exist!');  
       
     //Request Page Handler method  
     RequestPage.Customer.SETFILTER("No.", '20000');  

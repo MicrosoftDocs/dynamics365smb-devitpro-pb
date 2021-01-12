@@ -59,8 +59,8 @@ A record that is passed to the OnRun trigger of the codeunit that runs when the 
 
 |Method that creates the dialog box|Behavior|  
 |------------------------------------------|--------------|  
-|[CONFIRM Method \(Dialog\)](../../methods/devenv-confirm-method-dialog.md)|-   Dialog box is suppressed.<br />-   The following error occurs on the [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] instance: **[!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] attempted to issue a client callback to show a confirmation dialog box.**|  
-|[ERROR Method \(Dialog\)](../../methods/devenv-error-method-dialog.md)|-   Dialog box is suppressed.<br />-   AL code execution ends.<br />-   The error is logged to the event log of the [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] instance.<br />-   The error is added to the **Comments** field of the **Session Event** table.|  
+|[Confirm Method \(Dialog\)](../../methods/devenv-confirm-method-dialog.md)|-   Dialog box is suppressed.<br />-   The following error occurs on the [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] instance: **[!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] attempted to issue a client callback to show a confirmation dialog box.**|  
+|[Error Method \(Dialog\)](../../methods/devenv-error-method-dialog.md)|-   Dialog box is suppressed.<br />-   AL code execution ends.<br />-   The error is logged to the event log of the [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] instance.<br />-   The error is added to the **Comments** field of the **Session Event** table.|  
 |[Message Method \(Dialog\)](../../methods/devenv-message-method-dialog.md)|-   Dialog box is suppressed.<br />-   The message is recorded in the event log of the computer that is running [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] instance. The log entry has type Information and includes the context of the message.|  
 |[Open Method \(Dialog\)](../../methods/devenv-open-method-dialog.md)|-   Dialog box is suppressed.<br />-   Dialog box text is not displayed or logged.|  
 
@@ -69,17 +69,17 @@ A record that is passed to the OnRun trigger of the codeunit that runs when the 
 ## Example  
  In this example, the Cache Stress Test codeunit is a custom codeunit.  
 
-```
+```al
 var
     CacheStressTestRec: Record Customer;
     SessionID: Integer;
     OK: Boolean;
 begin  
-    OK := StartSession(SessionId, CODEUNIT::"Cache Stress Test", COMPANYNAME, CacheStressTestRec);  
+    OK := StartSession(SessionId, CodeUnit::"Cache Stress Test", CompanyName, CacheStressTestRec);  
     if OK then  
-      STOPSESSION(SessionId, 'Logoff cache stress test session')  
+      StopSession(SessionId, 'Logoff cache stress test session')  
     else  
-      ERROR('The session was not started successfully.');  
+      Error('The session was not started successfully.');  
 end;
 ```  
 

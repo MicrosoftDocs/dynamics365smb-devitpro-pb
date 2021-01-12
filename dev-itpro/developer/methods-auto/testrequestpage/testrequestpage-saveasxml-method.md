@@ -70,9 +70,9 @@ begin
     DatasetFilename := TEMPORARYPATH + 'MyDataset.xml';  
     Report.Run(111);  
     if not FILE.EXISTS(LabelsFilename) then  
-      ERROR('Labels file should exist!');  
+      Error('Labels file should exist!');  
     if not FILE.EXISTS(DatasetFilename) then  
-      ERROR('Dataset file should exist!');  
+      Error('Dataset file should exist!');  
       
     // Add the following code to the ReqPageHandler method.  
     RequestPage.Customer.SETFILTER("No.", '20000');  

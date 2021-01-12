@@ -43,7 +43,7 @@ AL debugger also lets you to monitor the number of SQL statements executed. For 
 
 The following code gets the number of SQL statements executed and displays the number in a message.
 
-```
+```al
 var
     SqlStatementsExecuted : BigText;
 

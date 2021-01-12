@@ -52,7 +52,7 @@ begin
     varFilterPageBuilder.ADDTable(varDateItem + ‘ 1’,DATABASE::Date);  
     myVariant := varFilterPageBuilder;  
     if not myVariant.ISFILTERPAGEBUILDER then   
-      ERROR(‘This variant should contain a FilterPageBuilder variable’);  
+      Error(‘This variant should contain a FilterPageBuilder variable’);  
 end;
   
 ```  
