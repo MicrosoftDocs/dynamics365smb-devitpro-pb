@@ -40,7 +40,7 @@ The aggregate methods and grouping are further explained in the following sectio
   
 ## Sample Query
 
-The following sample query object retrieves the number of line items in every sales order for each customer. The query links the **Customer** table and the **Sales Line** table. In its current state, the `Method` property is commented out so it doesn't implement any aggregate method. 
+The following sample query object retrieves the number of line items in every sales order for each customer. The query links the **Customer** table and the **Sales Line** table. In its current state, the `Method` property is commented out so it doesn't implement any aggregate method.
   
 ```AL
 query 50101 "Customer_Sales_Quantity"
@@ -68,7 +68,8 @@ query 50101 "Customer_Sales_Quantity"
 
                 column(Qty; Quantity)
                 {
-                    // Change the value of the property to perform a different aggregate method on grouped columns: Sum, Average, Max, Min, or Count
+                    // Change the value of the property to perform a different aggregate method on grouped columns:
+                    // Sum, Average, Max, Min, or Count
                     // Method = Sum|Average|Min|Max|Count;
                 }
             }
@@ -81,13 +82,13 @@ The following table represents a simplified version of the resulting dataset for
   
 |Customer_Number|Customer_Name|Qty|  
 |---------------------|-------------------|--------------|  
+|20000|Selangorian Ltd.|400|
+|30000|Blanemark Hifi|350|  
+|20000|Selangorian Ltd.|300|
+|40000|Deerfield Graphics|250|
 |20000|Selangorian Ltd.|200|  
 |30000|Blanemark Hifi|150|  
-|20000|Selangorian Ltd.|300|  
-|40000|Deerfield Graphics|250|  
-|20000|Selangorian Ltd.|400|  
-|30000|Blanemark Hifi|350|  
-  
+
 The following sections explain how you can modify the query to implement the different aggregate methods by changing the value of the [Method property](properties/devenv-method-property.md).
   
 ##  <a name="Sum"></a> Sum
@@ -149,9 +150,9 @@ Looking at the sample query, you can use `Min` method to get the least number of
   
 |Customer_Number|Customer_Name|Qty|
 |---------------------|-------------------|--------------|  
+|40000|Deerfield Graphics|250|  
 |20000|Selangorian Ltd.|200|  
 |30000|Blanemark Hifi|150|  
-|40000|Deerfield Graphics|250|  
   
 ##  <a name="Maximum"></a> Max
 
@@ -161,7 +162,7 @@ Looking at the sample query, you can use `Min` method to get the least number of
 ...
 column(Qty; Quantity)
 {
-    Method = Min;
+    Method = Max;
 }
 ...
 ```
