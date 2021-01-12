@@ -183,10 +183,10 @@ To set up a `Count` method in the sample query, the `column` element definition 
 
 ```AL
 ...
-                column(Qty)
-                {
-                   Method = Count;
-                }
+column(Qty)
+{
+    Method = Count;
+}
   
 ```
 
