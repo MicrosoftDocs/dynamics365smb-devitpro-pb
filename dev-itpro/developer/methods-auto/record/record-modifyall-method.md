@@ -44,7 +44,34 @@ If this parameter is true, the code in the OnModify Trigger is executed. If this
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+If no filter is set, the field is modified in all records in the table. If a filter is set, the fields are modified only in the records which fall within the range specified by the filter.
+
+The `OnValidate` field trigger is never run when `ModifyAll` is used.
+
+## Example
+
+```al
+var
+    customerRec: record Customer;
+
+begin
+    // The result of this statement:  
+    customerRec.ModifyAll("Statistics Group", 2);  
+    // is equivalent to:  
+    if customerRec.Find('-') then
+        repeat  
+            customerRec."Statistics Group" := 2;  
+            customerRec.Modify;  
+        until customerRec.Next = 0;  
+end;
+
+```
+
 ## See Also
+
 [Record Data Type](record-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
