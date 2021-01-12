@@ -2,7 +2,7 @@
 title: Setting up App Key Vaults for Business Central on-premises
 description: Describes how to set up App Key Vault with Business Central on-premises.
 ms.custom: na
-ms.date: 11/16/2020
+ms.date: 01/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -172,7 +172,10 @@ To complete this task, you'll need the user name of the service account that run
     > Setting the `AzureKeyVaultAppSecretsPublisherValidationEnabled` to false means the server instance won't do any additional validation to ensure extensions have the right to read secrets from the key vaults that they specify. This condition implies some risk of unauthorized access to key vaults that you should be aware of. Please see the "Security considerations" section below for more details.
 -->
 
-At this point, you can run your extensions that use key vault secrets to read secrets from key vault.
+At this point, you can run your extensions that use key vault secrets to read secrets from key vault.  
+
+> [!TIP]
+> If your on-premises solution uses the [ImportStreamWithUrlAccess](../developer/methods-auto/system/system-importstreamwithurlaccess-method.md) method, you must have set up an Azure blob storage account and stored the account name and account keys in the current subscription's Azure KeyVault using the identifiers TEMPORARYDOCUMENTSTORAGEACCOUNT and TEMPORARYDOCUMENTSTORAGEKEY. That way, your users can use the integration with Outlook.
 
 ## See Also  
 
