@@ -20,7 +20,7 @@ Would you like to know what has changed in update 17.3? Below you'll find an ove
 Find an overview of hotfixes in this [article](https://support.microsoft.com/en-us/help/4595152/update-17-3-for-microsoft-dynamics-365-business-central-2020-release).
 
 ## Feature changes
-- [Restoring environments in Business Central admin center](../administration/tenant-admin-center-environments.md)
+- [Restoring environments in Business Central admin center](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-environments?#restoring-an-environment)
 - [Handle Price List Exceptions with Allow Updating Defaults](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/handle-price-list-exceptions-with-allow-updating-defaults) <!--(Ivan)--> 
 - [Use Shortcut dimensions in G/L Entries for Financial reporting](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/use-shortcut-dimensions-gl-entries-financial-reporting) <!--(Ivan) /dynamics365/business-central/finance-dimensions#to-set-up-global-and-shortcut-dimensionshttps://docs.microsoft.com/en-us-->
 - [Business Central in Microsoft Teams](/dynamics365/business-central/across-teams-overview) <!--(Mike)-->
