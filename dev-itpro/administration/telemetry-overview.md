@@ -47,6 +47,7 @@ In Application Insights, telemetry from [!INCLUDE[prod_short](../developer/inclu
 |Report generation|Provides information about the execution of reports.|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|[See...](telemetry-reports-trace.md)|
 |Incoming web service requests|Provides information about the execution time of incoming web service requests.|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|[See...](telemetry-webservices-trace.md)|
 |Outgoing web service requests|Provides information about the execution time of outgoing web service requests.|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|[See...](telemetry-webservices-outgoing-trace.md)|
+|Web service access key authentication |Provides information about the authentication of web server access keys on web service requests.|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[See...](telemetry-webservices-access-key-trace.md)|
 
 <sup>1</sup><a name="1"></a>This signal is only emitted to the Application Insights resource that's specified in the extension.
 

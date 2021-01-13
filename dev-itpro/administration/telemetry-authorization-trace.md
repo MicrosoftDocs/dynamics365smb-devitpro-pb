@@ -71,6 +71,9 @@ Occurs when a user has been successfully authorized.
 
 -->
 
+> [!NOTE]
+> The client type is not known when the server emits the pre-open company events (RT0001 and RT0003). You need to join to data for the events RT0002/RT0004 if you need both userType and clientType.
+
 ## Authorization Failed (Pre Open Company)
 
 Occurs when a user sign-in has failed authorization.

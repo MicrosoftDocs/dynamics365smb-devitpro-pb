@@ -27,7 +27,7 @@ When [!INCLUDE[prod_short](../developer/includes/prod_short.md)] data is consume
   
 The same limitation applies to exposing [!INCLUDE[prod_short](../developer/includes/prod_short.md)] data in external products such as a browser or a Microsoft .NET Framework assembly.
 
-## How to use an Access Key for SOAP and OData Web Service Authentication
+## <a name="accesskey"></a>How to use an Access Key for SOAP and OData Web Service Authentication
 
 If your solution is configured for NavUserPassword or AccessControlService authentication, then you can configure [!INCLUDE[prod_short](../developer/includes/prod_short.md)] user accounts to include an access key that can be used instead of a password to authenticate SOAP and OData web service requests. A web service access key is a random 44 character string that is associated with the user account. Because it can only be used for SOAP and OData web services, it doesn't require the same level of protection as a password.  
   
