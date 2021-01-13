@@ -3,7 +3,7 @@ title: "Update 17.3 for Microsoft Dynamics 365 Business Central 2020 Release Wav
 description: Get an overview of new and changed capabilities in the 17.3 update of Business Central online, which is part of 2020 release wave 2.
 ms.author: solsen
 ms.custom: na
-ms.date: 01/07/2021
+ms.date: 01/13/2021
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -42,11 +42,8 @@ Basic Authentication (Web Service Access Key) removal for Business Central onlin
 **Snapshot debugging is now enabled in production environments**  
 From version 17.2 and forward it is now possible to use snapshot debugging to investigate production environments. For more information, see the [help page](/dynamics365/business-central/dev-itpro/developer/devenv-snapshot-debugging) or view the [Virtual Event for 2020 Wave 2 release recording](https://events1.social27.com/MSDyn365BCLaunchEvent/agenda/player/61355) on the What’s New in Visual Studio and AL, covering snapshot debugging in details.
 
-
-
 **Business Central Office Hours Calls in January**  
 Make sure to join the office hours calls around ‘Customer Migration Tooling’ on January 12 and ‘Power Platform Integration – Power BI’ on January 26. Register and stay tuned for the upcoming calls: https://aka.ms/BCOfficeHours. 
-
 
 **Want to improve the performance of Business Central?**  
 Visit https://aka.ms/bcperformance and learn about best practices, dos and don'ts and different ways to make changes with a performance impact. The Performance Tuning Guide will help you understand and improve the performance of Business Central whether you are a functional consultant, a developer, or an administrator.
