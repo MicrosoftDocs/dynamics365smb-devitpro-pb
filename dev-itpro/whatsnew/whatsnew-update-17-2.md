@@ -25,6 +25,9 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/en-
 - [Signal from permission changes to added to Application Insights telemetry for partners](../administration/telemetry-permission-changes-trace.md) 
 - [Signal from the retention policy feature added to Application Insights telemetry for partners](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/signal-retention-policy-feature-added-application-insights-telemetry-partners) 
 - [Signal from the sensitive field audit feature added to Application Insights telemetry for partners](../administration/telemetry-field-monitoring-trace.md)
+- [Signal from the email feature added to Application Insights telemetry for partners](../administration/telemetry-email-trace.md)
+- [Signal from application packages lifecycle added to Application Insights Telemetry for partners](..\administration\telemetry-configuration-package-trace.md)
+- [Snapshot debugging enabled in production environments](dynamics365/business-central/dev-itpro/developer/devenv-snapshot-debugging)  
 
 
 ## Release Plan
