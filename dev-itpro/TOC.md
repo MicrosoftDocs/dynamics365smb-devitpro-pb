@@ -1,4 +1,4 @@
-# [Development and administration](index.md)
+﻿# [Development and administration](index.md)
 # [New and planned](/dynamics365/business-central/product-news?toc=/dynamics365/business-central/dev-itpro/toc.json)
 # Get started
 ## [Overview of business functionality](/dynamics365/business-central/across-business-functionality?toc=/dynamics365/business-central/dev-itpro/toc.json)
@@ -35,7 +35,7 @@
 #### [Using Application Family](deployment/embed-app-using-application-family.md)
 #### Application Access Management
 ##### [Application Access Management for ISVs and VARs](embedapps/embed-app-application-access-management.md)
-##### [Application Access Managment API](embedapps/embed-app-application-access-management-api.md)
+##### [Application Access Management API](embedapps/embed-app-application-access-management-api.md)
 #### App Management
 ##### [Introduction](administration/appmanagement/app-management-overview.md)
 ##### [App Management API](administration/appmanagement/app-management-api.md)
@@ -260,6 +260,8 @@
 ### [Raising Events](developer/devenv-raising-events.md)
 ### [Subscribing to Events](developer/devenv-subscribing-to-events.md)
 ### [Discover Events Using the Event Recorder](developer/devenv-events-discoverability.md)
+### [Event Example](developer/devenv-events-example.md)
+### [Walkthrough: Implementing New Workflow Events and Responses](developer/devenv-walkthrough-workflow-events-responses.md)  
 ## [Notifications](developer/devenv-notifications-developing.md)
 ## [Task Scheduler](developer/devenv-task-scheduler.md)
 ## App Key Vaults for Secrets
@@ -2326,7 +2328,7 @@
 #### [Transitioning From Codeunit 1](upgrade/transition-from-codeunit1.md)
 #### Technical Upgrade
 ##### [Technical Upgrade](upgrade/Converting-a-Database.md)
-##### [Tecnical Upgrade Quick Reference](upgrade/technical-upgrade-checklist.md)
+##### [Technical Upgrade Quick Reference](upgrade/technical-upgrade-checklist.md)
 #### Application and Data Upgrade
 ##### [Upgrading the Application Code](upgrade/Upgrading-the-Application-Code.md)
 #### Upgrading the Data: Single-Tenant Mode
