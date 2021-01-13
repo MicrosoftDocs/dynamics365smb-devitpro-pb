@@ -21,9 +21,9 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/en-
 
 ## Feature changes
 - [Restoring environments in Business Central admin center](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-environments?#restoring-an-environment)
-- [Handle Price List Exceptions with Allow Updating Defaults](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/handle-price-list-exceptions-with-allow-updating-defaults) <!--(Ivan)--> 
 - [Use Shortcut dimensions in G/L Entries for Financial reporting](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/use-shortcut-dimensions-gl-entries-financial-reporting) <!--(Ivan) /dynamics365/business-central/finance-dimensions#to-set-up-global-and-shortcut-dimensionshttps://docs.microsoft.com/en-us-->
 - [Signal from web service key authentication added to Application Insights telemetry for partners](../administration/telemetry-webservices-access-key-trace.md)<!--(Kennie)-->
+- Handle Price List Exceptions with Allow Updating Defaults (link coming soon) <!--(/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/handle-price-list-exceptions-with-allow-updating-defaults)--> 
 
 
 ## Release Plan
