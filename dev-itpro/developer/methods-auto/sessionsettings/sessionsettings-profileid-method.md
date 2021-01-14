@@ -46,7 +46,7 @@ The profile ID that is set in the SessionSettings object.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
-The profile ID determines the Role Center that is used in the client session. The PROFILEID property in a SessionSettings object corresponds to the **Profile ID** field in the in the system table **2000000073 User Personalization**.
+The profile ID determines the Role Center that is used in the client session. The ProfileId property in a SessionSettings object corresponds to the **Profile ID** field in the in the system table **2000000073 User Personalization**.
 
 ## Example
 This example creates a SessionSettings object that is populated with the current client user's personalization data, and uses the changes the PROFILE method to set  the profile to 'Business Manager'. Finally, the RequestSessionUpdate method sends a request to the client to abandon the current session and start a new session that uses the new profile ID. This example requires a SessionSettings data type variable.
@@ -56,7 +56,7 @@ var
   MySessionSettings : SessionSettings;
 begin
   MySessionSettings.Init;
-  MySessionSettings.PROFILEID('Business Manager');
+  MySessionSettings.ProfileId('Business Manager');
   MySessionSettings.RequestSessionUpdate(false);
 end;  
 ```  
