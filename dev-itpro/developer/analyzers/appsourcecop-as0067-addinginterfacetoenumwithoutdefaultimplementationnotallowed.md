@@ -23,7 +23,7 @@ Adding an interface to an enum that has been published must have a default imple
 
 ## Remarks
 
-When an extensible enum implements an interface, the AL compiler validates that all its enum values implement this interface. This applies to enum values defined in the enum itself and to the ones defined in enum extensions. When an extensible enum that was part of the previous version of this extension implements a new interface, a default interface implementation must be specified using the [Default Implementation](../properties/devenv-defaultimplementation-property.md) property because dependent extensions extending this enum won't be implementing the interface explicitly.
+When an extensible enum implements an interface, the AL compiler validates that all of its enum values implement this interface. This applies to enum values defined in the enum itself and to the enums defined in enum extensions. When an extensible enum that was part of the previous version of this extension implements a new interface, a default interface implementation must be specified using the [Default Implementation](../properties/devenv-defaultimplementation-property.md) property because dependent extensions extending this enum won't be implementing the interface explicitly.
 
 ## How to fix this diagnostic?
 
@@ -70,7 +70,7 @@ enum 50100 MyEnum implements MyInterface
 }
 ```
 
-In version 2.0, the enum implements am interface. If a dependent extension extends this enum, this will lead to a compilation error similar to `Value 'MyExtValue' does not implement interface 'MyInterface' and there is no default implementation for the mentioned interface. (AL0596)`.
+In version 2.0, the enum implements an interface. If a dependent extension extends this enum, this will lead to a compilation error similar to `Value 'MyExtValue' does not implement interface 'MyInterface' and there is no default implementation for the mentioned interface. (AL0596)`.
 
 For example, the following extension compiles when depending on version 1.0, but fails to compile with version 2.0:
 
