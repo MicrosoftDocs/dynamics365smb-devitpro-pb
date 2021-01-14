@@ -75,7 +75,7 @@ Query.Read;
   
  The following AL code runs the query and displays a message that contains the filter that is set on a query column. You can add the code to the OnRun trigger of a codeunit, and then run the codeunit to see the results.  
   
-```  
+```al
 var
     MyQuery: Query "Customer SalesQuantity";
     MyFilter: Text;
@@ -84,7 +84,7 @@ begin
     // Sets a filter to display only sales quantities greater than 10. This overwrites the value of ColumnFilter property.  
     MyQuery.SetFilter(Quantity, '>10');  
     // Sets a filter to display the columns with the value Selangorian Ltd. only.  
-    MyQuery.SetFilter(NAME, 'Selangorian Ltd.');  
+    MyQuery.SetFilter(Name, 'Selangorian Ltd.');  
     // Runs the query and applies the filter.  
     MyQuery.Open;  
     // Returns the filters that are on the Quantity column and displays the filters in a message.  

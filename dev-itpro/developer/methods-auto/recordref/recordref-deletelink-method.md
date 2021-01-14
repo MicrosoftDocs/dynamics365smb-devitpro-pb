@@ -57,7 +57,7 @@ begin
     MyFieldRef := CustomerRecref.Field(1);  
     MyFieldRef.Value := CustomerNum;  
     if CustomerRecref.Find('=') then begin  
-      CustomerRecref.DeleteLINK(varLinkid);  
+      CustomerRecref.DeleteLink(varLinkid);  
       Message(Text000, varLinkid);  
     end else
       Message(Text001);  

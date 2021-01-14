@@ -55,7 +55,7 @@ begin
     Clear(CustomerRec);  
     CustomerRec.SetRecFilter;  
     SomeReport.XXX; // Any user-defined method.  
-    SomeReport.SETTableView(CustomerRec);  
+    SomeReport.SetTableView(CustomerRec);  
     SomeReport.RunModal();
 end;  
 ```  

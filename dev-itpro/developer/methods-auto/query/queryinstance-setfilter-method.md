@@ -76,9 +76,9 @@ Query.Read;
   
  For example, a query has the following filters set on the **Quantity** column:  
   
--   **DataItemTableFilter** property: Quantity=FILTER\(\<100\)  
+-   **DataItemTableFilter** property: Quantity=Filter\(\<100\)  
   
--   **ColumnFilter** property: Quantity=FILTER\(\<>50\)  
+-   **ColumnFilter** property: Quantity=Filter\(\<>50\)  
   
  `Query.SetFilter ("Quantity", '>1')` will result in a filter that is equivalent to: 1\<Quantity \<100.  
   

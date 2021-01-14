@@ -40,9 +40,9 @@ An instance of the [Variant](variant-data-type.md) data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example  
- The following example determines whether an AL variant contains a record variable. The Get method gets customer number 10000 from the **Customer** table. The record is stored in the MyRecord variable. The MyRecord variable is assigned to the variant variable that is named MyVariant. The **ISRecord** method determines whether the variant contains a Record variable and stores the return value in the varResult variable. In this case, the variant contains a Record variable so **true** is returned and displayed in a message box. The [ISCODE Method (Variant)](../../methods/devenv-iscode-method-variant.md)determines whether the variant contains a code variable. The return value is **false** because the variant does not contain a code. 
+ The following example determines whether an AL variant contains a record variable. The Get method gets customer number 10000 from the **Customer** table. The record is stored in the MyRecord variable. The MyRecord variable is assigned to the variant variable that is named MyVariant. The **ISRecord** method determines whether the variant contains a Record variable and stores the return value in the varResult variable. In this case, the variant contains a Record variable so **true** is returned and displayed in a message box. The [IsCode Method (Variant)](../../methods/devenv-iscode-method-variant.md)determines whether the variant contains a code variable. The return value is **false** because the variant does not contain a code. 
  
-```  
+```al
 var
     MyRecord: Record Customer;
     MyVariant: Variant;
@@ -52,9 +52,9 @@ var
 begin
     MyRecord.Get('10000');  
     MyVariant := MyRecord;  
-    varResult := MyVariant.ISRecord;  
+    varResult := MyVariant.IsRecord;  
     Message(Text000,MyVariant,varResult);  
-    varResult := MyVariant.ISCODE;  
+    varResult := MyVariant.IsCode;  
     Message(Text001,MyVariant,varResult);  
 end;
 ```  

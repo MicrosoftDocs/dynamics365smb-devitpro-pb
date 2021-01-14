@@ -27,7 +27,7 @@ The following methods are available on instances of the HttpClient data type.
 |[AddCertificate(String [, String])](httpclient-addcertificate-method.md)|Adds a certificate to the HttpClient class.|
 |[Clear()](httpclient-clear-method.md)|Sets the HttpClient variable to the default value.|
 |[DefaultRequestHeaders()](httpclient-defaultrequestheaders-method.md)|Gets the default request headers which should be sent with each request.|
-|[Delete(String, var HttpResponseMessage)](httpclient-delete-method.md)|Sends a Delete request to delete the resource identified by the request URL.|
+|[Delete(String, var HttpResponseMessage)](httpclient-delete-method.md)|Sends a DELETE request to delete the resource identified by the request URL.|
 |[Get(String, var HttpResponseMessage)](httpclient-get-method.md)|Sends a Get request to get the resource identified by the request URL.|
 |[GetBaseAddress()](httpclient-getbaseaddress-method.md)|Gets the base address of Uniform Resource Identifier (URI) of the Internet resource used when sending requests.|
 |[Post(String, HttpContent, var HttpResponseMessage)](httpclient-post-method.md)|Sends a POST request to the specified URI as an asynchronous operation.|

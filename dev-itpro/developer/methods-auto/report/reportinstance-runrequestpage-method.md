@@ -62,7 +62,7 @@ Because the request page runs in the context of where it was invoked from, users
 
  Create a table called **Request Parameters** that has the following fields.  
 
-```  
+```al
 var
     ReportId: Integer;
     UserId: Code[100];
@@ -71,7 +71,7 @@ var
 
  Create a codeunit and add the following code to the *OnRun* trigger of the codeunit.  
 
-```  
+```al
 var
     ReportParameters: Record "Report Parameters";
     XmlParameters: Text;

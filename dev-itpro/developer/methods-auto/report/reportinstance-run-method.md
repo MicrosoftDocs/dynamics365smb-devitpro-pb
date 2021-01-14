@@ -50,9 +50,9 @@ var
     CustomerRec: Record Customer;
     SomeReport: Report "Salesperson - Sales Statistics";
 begin
-    CustomerRec.SETCURRENTKey("No.");  
+    CustomerRec.SetCurrentKey("No.");  
     CustomerRec.SetFilter("Salesperson Code", 'JR|PS');  
-    SomeReport.SETTableView(CustomerRec);  
+    SomeReport.SetTableView(CustomerRec);  
     SomeReport.Run;
 end;
 ```  

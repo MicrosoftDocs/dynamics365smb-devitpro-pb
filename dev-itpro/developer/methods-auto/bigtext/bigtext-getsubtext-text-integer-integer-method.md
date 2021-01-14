@@ -58,7 +58,7 @@ To delete the content in a BigText variable use the [Clear Method](../../methods
   
 ## Example 1
 
-The following examples demonstrate how to use the GetSUBTEXT method. This example requires that you create the following global variables and text constant.  
+ The following examples demonstrate how to use the GetSubText method. This example requires that you create the following global variables and text constant.  
   
 ```al
 var

@@ -77,9 +77,9 @@ Query.Read;
   
  For example, a query has the following filters set on the **Quantity** column:  
   
--   **DataItemTableFilter** property: Quantity=FILTER\(\<>10\)  
+-   **DataItemTableFilter** property: Quantity=Filter\(\<>10\)  
   
--   **ColumnFilter** property: Quantity=FILTER\(\<>5\)  
+-   **ColumnFilter** property: Quantity=Filter\(\<>5\)  
   
  `Query.setRange(Quantity, 1, 15)` will result in a filter that is equivalent to: 1 \< Quantity \<15, except for 10.  
   
@@ -111,7 +111,7 @@ Query.Read;
 // Sets a filter to display only sales quantities greater than 10.  
 MyQuery.SetRange(Quantity, '10', '50');  
 // Sets a filter to display the columns with the value Selangorian Ltd. only.  
-MyQuery.SetFilter(NAME, 'Selangorian Ltd.');  
+MyQuery.SetFilter(Name, 'Selangorian Ltd.');  
 // Runs the query.  
 MyQuery.Open;  
 // Reads each row in the dataset and displays message with column values.  
