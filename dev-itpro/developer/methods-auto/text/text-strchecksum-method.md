@@ -49,9 +49,9 @@ The resulting checksum value.
 
 ## Example 1
 
- This example shows how to use the STRCHECKSUM method to calculate a checksum.  
+ This example shows how to use the StrCheckSum method to calculate a checksum.  
  
-```  
+```al
 var
     StrNumber: Text[30];
     Weight: Text[30];
@@ -62,7 +62,7 @@ begin
     StrNumber := '4378';  
     Weight := '1234';  
     Modulus := 7;   
-    CheckSum := STRCHECKSUM(StrNumber, Weight, Modulus);   
+    CheckSum := StrCheckSum(StrNumber, Weight, Modulus);   
     Message(Text000 + Text001, StrNumber, CheckSum);  
 end;
 ```  
@@ -79,9 +79,9 @@ end;
 
 ## Example 2
 
- This example shows how to use the STRCHECKSUM method to calculate a modulus 10 checksum for a bar code.  
+ This example shows how to use the StrCheckSum method to calculate a modulus 10 checksum for a bar code.  
 
- The STRCHECKSUM method can be used to calculate checksums for 13- and 8-digit European Article Number \(EAN\) and EAN-compatible bar codes such as a Universal Product Code \(UPC\) or Japanese Article Number \(JAN\).  
+ The StrCheckSum method can be used to calculate checksums for 13- and 8-digit European Article Number \(EAN\) and EAN-compatible bar codes such as a Universal Product Code \(UPC\) or Japanese Article Number \(JAN\).  
 
  A 13-digit EAN code has the following format:  
 
@@ -96,7 +96,7 @@ end;
 5.  The modulus 10 checksum is then \(10 - Total MOD 10\) MOD 10.  
 
  
-```  
+```al
 var
     StrNumber: Text[30];
     Weight: Text[30];
@@ -106,7 +106,7 @@ var
 begin
     StrNumber := '577622135746';  
     Weight := '131313131313';  
-    CheckSum := STRCHECKSUM(StrNumber, Weight);  
+    CheckSum := StrCheckSum(StrNumber, Weight);  
     Message(Text000 + Text001, StrNumber, CheckSum);  
 end;
 ```  

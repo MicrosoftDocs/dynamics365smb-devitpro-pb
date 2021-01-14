@@ -47,7 +47,7 @@ The length of the string.
 ## Example  
  This example shows the difference between the StrLen and the MaxStrLen methods.  
   
-```  
+```al
 var
     City: Text[30];
     MaxLength: Integer;
@@ -69,7 +69,7 @@ end;
   
  **whereas the StrLen method returns: 7**  
   
- This shows that the MAXLENGTH method returns the maximum possible length according to the definition of the string variable, whereas StrLen returns the actual length of the text.  
+ This shows that the MaxLength method returns the maximum possible length according to the definition of the string variable, whereas StrLen returns the actual length of the text.  
   
 
 ## See Also
