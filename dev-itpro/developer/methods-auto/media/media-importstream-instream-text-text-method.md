@@ -99,7 +99,7 @@ This code iterates over records in the **My Items** table. For each record, it l
 begin
     if  myItemRec.FindFirst() then begin  
         repeat begin
-            fileName := 'C:\images\' + FORMAT(myItemRec."No.") + '.jpg';  
+            fileName := 'C:\images\' + Format(myItemRec."No.") + '.jpg';  
     
             if File.Exists(fileName) then begin  
                 importFile.Open(fileName);  

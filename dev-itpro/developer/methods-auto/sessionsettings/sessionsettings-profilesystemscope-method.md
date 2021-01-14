@@ -50,7 +50,7 @@ The ProfileSystemScope property in a SessionSettings object corresponds to the *
 ## Example
 This example creates a SessionSettings object, and then uses the ProfileSystemScope method to set the profile scope to apply to the system. This example requires a SessionSettings data type variable.
 
-```
+```al
 var
   MySessionSettings : SessionSettings;
 begin

@@ -46,7 +46,7 @@ The value of this field.
 ## Remarks  
 If you omit NewValue, the method returns the current value of the field.  
   
-If you want to format the value of a FieldRef you must use `FORMAT(FieldRef)` instead of `FORMAT(FieldRef.VALUE)`.  
+If you want to format the value of a FieldRef you must use `Format(FieldRef)` instead of `Format(FieldRef.VALUE)`.  
 
 
 ## Example  

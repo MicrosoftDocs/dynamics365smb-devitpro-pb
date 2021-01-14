@@ -48,14 +48,14 @@ The locale ID that is set in the SessionSettings object.
 The locale ID in the SessionSettings object corresponds to the **Locale ID** field in the system table **2000000073 User Personalization** for the client session user.
 
 ## Example
-This example creates a SessionSettings object that is populated with the current client user's personalization data, and then uses the LOCALEID method to set the locale ID to '1033'. Finally, the RequestSessionUpdate method sends a request to the client to abandon the current client session and start a new session that uses the new locale ID. This example requires a SessionSettings data type variable.
+This example creates a SessionSettings object that is populated with the current client user's personalization data, and then uses the LocaleId method to set the locale ID to '1033'. Finally, the RequestSessionUpdate method sends a request to the client to abandon the current client session and start a new session that uses the new locale ID. This example requires a SessionSettings data type variable.
 
 ```
 var
   MySessionSettings : SessionSettings;
 begin
   MySessionSettings.Init;
-  MySessionSettings.LOCALEID(1033);
+  MySessionSettings.LocaleId(1033);
   MySessionSettings.RequestSessionUpdate(false);
 end;  
 ```  

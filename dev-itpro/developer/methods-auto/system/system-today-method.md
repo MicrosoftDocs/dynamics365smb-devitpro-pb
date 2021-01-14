@@ -51,7 +51,7 @@ This example shows how to use the **Today** method.
 var
     Text000: Label 'The current date is: %1';
 begin
-    Message(Text000, TODAY);  
+    Message(Text000, Today);  
 end;
 ```  
   

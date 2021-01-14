@@ -53,7 +53,7 @@ The ProfileAppId property in a SessionSettings object corresponds to the **App I
 ## Example
 This example creates a SessionSettings object that is populated with the current client user's personalization data, and then uses the ProfileAppId method and ProfileId method to set the object to use the profile that has the ID 'MyExtensionProfile', which is provided in the extension that has the ID '12345678-1234-1234-1234-1234567890AB'. Finally, the RequestSessionUpdate method sends a request to the client to abandon the current client session and start a new session that uses the new profile. This example requires a SessionSettings data type variable.
 
-```
+```al
 var
   MySessionSettings : SessionSettings;
 begin

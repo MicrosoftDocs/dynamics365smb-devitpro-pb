@@ -48,7 +48,7 @@ Before the RequestSessionUpdate method is called, be sure that all user personal
 ## Example  
 This example uses the Init method to create a SessionSettings object that includes the current client user's personalization settings from the database, and then uses the Company method to set the company to 'MyCompany'. Finally, the RequestSessionUpdate method sends a request that saves the SessionSettings object property values to the database and starts a new client session that uses the new company.
 
-```
+```al
 var
   MySessionSettings : SessionSettings;
 begin

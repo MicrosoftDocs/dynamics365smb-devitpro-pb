@@ -57,7 +57,7 @@ When the input date to the **Date2DWY** method is in a week that spans two years
 
 This example shows a special case that occurs when you use the **Date2DWY** method in a week that spans two years. 
  
-```  
+```al
 var
     InputDate: Date;
     DayOfWeek: Integer;

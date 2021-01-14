@@ -49,7 +49,7 @@ The four-digit number of the year. If you omit this optional parameter, the year
 
 ## Remarks
 
-A special situation occurs if the week \(*Week*\) that is input into DWY2DATE spans two years. Depending on *Weekday*, the year of the output *Date* can differ from the input year. This scenario is shown in the following code example.  
+A special situation occurs if the week \(*Week*\) that is input into DWY2Date spans two years. Depending on *Weekday*, the year of the output *Date* can differ from the input year. This scenario is shown in the following code example.  
   
 ## Example 1
 
@@ -66,7 +66,7 @@ begin
     DayOfWeek := 1;  
     Week := 1;  
     Year := 2014;  
-    OutputDate := DWY2DATE(DayOfWeek, Week, Year);  
+    OutputDate := DWY2Date(DayOfWeek, Week, Year);  
     Message(Text000, DayOfWeek, Week, Year, OutputDate);  
 end;
 ```  
@@ -92,7 +92,7 @@ begin
     DayOfWeek := 1;  
     Week := 1;  
     Year := 2016;  
-    OutputDate := DWY2DATE(DayOfWeek, Week, Year);  
+    OutputDate := DWY2Date(DayOfWeek, Week, Year);  
     Message(Text000, DayOfWeek, Week, Year, OutputDate);  
 end;
 ```  
@@ -105,9 +105,9 @@ end;
   
 ## Example 3
 
- This example shows how to use the DWY2DATE method without specifying the optional *Year* parameter. The output in this example depends on the day on which you run the code. 
+ This example shows how to use the DWY2Date method without specifying the optional *Year* parameter. The output in this example depends on the day on which you run the code. 
    
-```  
+```al
 var
     DayOfWeek: Integer;
     Week: Integer;
@@ -116,7 +116,7 @@ var
 begin
     DayOfWeek := 1;  
     Week := 1;  
-    OutputDate := DWY2DATE(DayOfWeek, Week);  
+    OutputDate := DWY2Date(DayOfWeek, Week);  
     Message(Text000, DayOfWeek, Week, OutputDate);  
 end;
 ```  

@@ -68,7 +68,7 @@ begin
     // Starting a loop  
     while not (StreamInTest.EOS) do begin 
       Int := StreamInTest.ReadText(Txt,100);  
-      Message(Txt + '\Size: ' + FORMAT(Int));  
+      Message(Txt + '\Size: ' + Format(Int));  
     end;  
     FileTest.Close();  
 end;

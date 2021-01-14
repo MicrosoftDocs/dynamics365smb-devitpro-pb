@@ -47,7 +47,7 @@ The input date.
 
 This example shows how to use the **Date2DMY** method.
  
-```  
+```al
 var
     InputDate: Date;
     Day: Integer;

@@ -78,7 +78,7 @@ end;
 
 The message window displays the following:  
 
-**ROUNDDATETIME\(11/27/08 09:35:24.567, 1000\) returns 11/27/08 09:35:25.000.**  
+**RoundDateTime\(11/27/08 09:35:24.567, 1000\) returns 11/27/08 09:35:25.000.**  
 
 ## See Also
 

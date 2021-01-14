@@ -118,7 +118,7 @@ begin
     // Use the Report.SaveAs method to save the report as a PDF file  
     Content.Create('TestFile.pdf');  
     Content.CreateOutStream(OStream);  
-    Report.SaveAs(206,XmlParameters,ReportFORMAT::Pdf,OStream);  
+    Report.SaveAs(206,XmlParameters,ReportFormat::Pdf,OStream);  
     Content.Close;  
     
     // Use the Report.Execute method to preview the report  

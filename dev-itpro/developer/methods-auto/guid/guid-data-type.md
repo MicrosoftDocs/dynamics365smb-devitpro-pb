@@ -71,7 +71,7 @@ ISNULLGUID takes a GUID value as a required argument and returns True/False depe
 **AutoSplitKey** is a property, not a method and can be applied to pages. If you have defined a GUID field as part of the primary key, the **AutoSplitKey** property automatically generates a new valid GUID value. When a new record is created and the GUID field is left as NULL, the **AutoSplitKey** property ensures that a valid GUID value is automatically inserted into the field. If you then enter a NULL GUID into this record, for example, by using the Clear method, this new NULL GUID value is not automatically replaced by the **AutoSplitKey** property. The **AutoSplitKey** property only applies to new records.  
   
 ## Format  
-The GUID value can also be represented as text. You can use the standard AL methods [FORMAT](../system/system-format-joker-integer-string-method.md) and [EVALUATE](../system/system-evaluate-method.md) to convert from GUID values to Text values. If you do not use the correct format when you edit a GUID value in its textual format, the following error message is displayed:  
+The GUID value can also be represented as text. You can use the standard AL methods [Format](../system/system-format-joker-integer-string-method.md) and [EVALUATE](../system/system-evaluate-method.md) to convert from GUID values to Text values. If you do not use the correct format when you edit a GUID value in its textual format, the following error message is displayed:  
   
 **Invalid Format of GUID string. The correct format of the GUID string is {CDEF7890-ABCD-1234-ABCD-1234567890AB} where 0-9, A-F symbolizes hexadecimal digits.**  
 

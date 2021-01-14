@@ -68,7 +68,7 @@ The following example schedules a task to run the **Job Queue Dispatcher** and u
 var
     JobQueueEntry: Record "Job Queue Entry";
 begin
-    TASKSCHEDULER.CreateTASK(CodeUnit::"Job Queue Dispatcher", CodeUnit::"Job Queue Error Handler", True, CompanyName, CURRENTDATETIME + 1000 + RANDOM(3000), JobQueueEntry.RecordID);  
+    TASKSCHEDULER.CreateTASK(CodeUnit::"Job Queue Dispatcher", CodeUnit::"Job Queue Error Handler", True, CompanyName, CURRENTDATETime + 1000 + RANDOM(3000), JobQueueEntry.RecordID);  
 end;
 ```  
 

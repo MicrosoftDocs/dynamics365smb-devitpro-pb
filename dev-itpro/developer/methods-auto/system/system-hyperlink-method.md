@@ -44,13 +44,13 @@ If you use this method for an application that runs on the [!INCLUDE[nav_windows
 
 At runtime, a new tab is opened in the same browser window where [!INCLUDE[d365_bus_central_md](../../includes/d365_bus_central_md.md)] is running.
 
-The HuperLink method works with different protocols and file types as along as the syntax is valid. When using the *file://* protocol to open a file, the file should be stored on a network file share, not locally; otherwise the file will not open<!--NAV in the [!INCLUDE[nav_web](includes/nav_web_md.md)]-->. Also, certain browsers, including Google Chrome, Mozilla Firefox, block hyperlinks to files from a web page. Therefore, using the *files://* protocol in the HYPERLINK function will not work<!--NAV in the [!INCLUDE[nav_web](includes/nav_web_md.md)]--> with these browsers.  
+The HuperLink method works with different protocols and file types as along as the syntax is valid. When using the *file://* protocol to open a file, the file should be stored on a network file share, not locally; otherwise the file will not open<!--NAV in the [!INCLUDE[nav_web](includes/nav_web_md.md)]-->. Also, certain browsers, including Google Chrome, Mozilla Firefox, block hyperlinks to files from a web page. Therefore, using the *files://* protocol in the HyperLink function will not work<!--NAV in the [!INCLUDE[nav_web](includes/nav_web_md.md)]--> with these browsers.  
 
 The HyperLink method does not work on NAS services.  
 
 ## Example
 
-The following example shows two uses of the HYPERLINK method to open the specified URL in the default browser. In the first line of code, the URL is specified in code. The second line of code illustrates how you can get a URL that is stored in a field on the current table.  
+The following example shows two uses of the HyperLink method to open the specified URL in the default browser. In the first line of code, the URL is specified in code. The second line of code illustrates how you can get a URL that is stored in a field on the current table.  
 
 ```al
 HyperLink('https://www.microsoft.com');   

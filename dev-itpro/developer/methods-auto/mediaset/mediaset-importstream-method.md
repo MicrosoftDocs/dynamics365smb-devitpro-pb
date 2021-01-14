@@ -94,7 +94,7 @@ begin
     fileName := 'C:\images\1000-v2.jpg';
     importFile.Open(fileName);  
     importFile.CreateInStream(inStreamObject);  
-    itemRec.Picture.ImportStream(inStreamObject, 'Demo image for item ' + FORMAT(itemRec."No."));  
+    itemRec.Picture.ImportStream(inStreamObject, 'Demo image for item ' + Format(itemRec."No."));  
     itemRec.Modify;  
     importFile.Close;
     

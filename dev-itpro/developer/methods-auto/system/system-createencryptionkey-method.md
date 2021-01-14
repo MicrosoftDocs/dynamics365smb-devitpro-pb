@@ -43,7 +43,7 @@ If a key already exists, the following error will be displayed: **Unable to crea
 
 This code example creates an encryption key for the current tenant. It uses the [EncryptionEnabled](../../methods-auto/system/system-encryptionenabled-method.md) method to perform a check.  
 
-```  
+```al
 if not EncryptionEnabled then  
         CreateEncryptionKey();  
 ```

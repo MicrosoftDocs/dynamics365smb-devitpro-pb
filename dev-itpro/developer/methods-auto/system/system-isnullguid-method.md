@@ -47,7 +47,7 @@ The Guid data type is useful when you want to uniquely identify data so that it 
 
 The following example initializes two variables named validGuid and nullGuid. The validGuid variable is assigned a valid Guid value, and the nullGuid variable is assigned a null GUID that consists of only zeros. The IsNullGuid method determines whether the Guid that is contained in the *validGuid* parameter is null. In this case, the Guid is not null so a message that states that the Guid is not null is displayed and the value is displayed. The method then checks the *nullGuid* parameter. This time, a message that states that the Guid is null is displayed because the Guid is a null Guid that consists of only zeros. 
  
-```  
+```al
 var
     validGuid: Guid;
     nullGuid: Guid;

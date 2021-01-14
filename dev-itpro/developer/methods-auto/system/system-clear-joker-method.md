@@ -63,7 +63,7 @@ If you have an array of automation servers, you may clear the whole array at onc
 
 This example shows how to use the **Clear** method.  
 
-```  
+```al
 var
     Text000: Label 'Joe Raybon';
     Text001: Label 'Initially the variable "Name" contains: >;%1\>';

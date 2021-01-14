@@ -50,7 +50,7 @@ var
 begin
     Text000 := 'ABC123';  
     Message('Value: ' + Text000);  
-    Text000 := ENCRYPT(Text000);  
+    Text000 := Encrypt(Text000);  
     Message('Value: ' + Text000);  
 end;
 ```  

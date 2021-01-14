@@ -50,7 +50,7 @@ var
     Text000: Label 'Does the variant >%1< contain a date variable? %2.';
     Text001: Label 'Does the variant >%1< contain a code variable? %2.';
 begin
-    MyDate := TODAY;  
+    MyDate := Today;  
     MyVariant :=  MyDate;  
     varResult := MyVariant.ISDATE;  
     Message(Text000,MyVariant,varResult);  
