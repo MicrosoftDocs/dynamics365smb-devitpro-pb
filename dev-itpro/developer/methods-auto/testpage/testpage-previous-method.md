@@ -43,12 +43,12 @@ An instance of the [TestPage](testpage-data-type.md) data type.
 ## Example  
  This example requires that you create a TestPage variable named CustomerList with a Subtype of Customer List.  
   
-```  
-CustomerList.OpenVIEW;  
+```al
+CustomerList.OpenView;  
 …  
 if CustomerList.Last then repeat  
   Message(CustomerList.Name);  
-until not CustomerList.PREVIOUS;  
+until not CustomerList.Previous;  
 ```
   
 

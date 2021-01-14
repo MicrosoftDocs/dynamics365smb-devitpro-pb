@@ -48,7 +48,7 @@ This method is like the [FieldActive Method \(Record\)](../../methods-auto/recor
 
 ## Example
 
-The following example opens table 18 \(Customer\) as a RecordRef variable that is named Recref. The [Field Method \(RecordRef\)](../../methods-auto/recordref/recordref-field-method.md) uses Recref to create a FieldRef variable that is named MyFieldRef. MyFieldRef sets a reference to the first field \(field 1\) in the table. The [SetRange Method \(FieldRef\)](../../methods-auto/fieldref/fieldref-setrange-method.md) sets a filter that selects record 30000. The [Field Method \(RecordRef\)](../../methods-auto/recordref/recordref-field-method.md) selects the record and then loops through fields 1 through 6. For each field, the ACTIVE method determines whether the field is enabled. If the field is enabled, a message that states that the field is enabled is displayed. Otherwise, a message that states that the field is not enabled is displayed.  
+The following example opens table 18 \(Customer\) as a RecordRef variable that is named Recref. The [Field Method \(RecordRef\)](../../methods-auto/recordref/recordref-field-method.md) uses Recref to create a FieldRef variable that is named MyFieldRef. MyFieldRef sets a reference to the first field \(field 1\) in the table. The [SetRange Method \(FieldRef\)](../../methods-auto/fieldref/fieldref-setrange-method.md) sets a filter that selects record 30000. The [Field Method \(RecordRef\)](../../methods-auto/recordref/recordref-field-method.md) selects the record and then loops through fields 1 through 6. For each field, the Active method determines whether the field is enabled. If the field is enabled, a message that states that the field is enabled is displayed. Otherwise, a message that states that the field is not enabled is displayed.  
 
 > [!NOTE]  
 > You can use the name of the table instead of the table number to open the table by using the following syntax: 
@@ -66,7 +66,7 @@ var
     Text001: Label 'Field %1 is not enabled.';
 begin
     Recref.Open(18);  
-    MyFieldRef := Recref.FIELD(1);  
+    MyFieldRef := Recref.Field(1);  
     MyFieldRef.SetRange('30000');  
     Recref.Find('-');  
     for i := 1 to 5 do begin

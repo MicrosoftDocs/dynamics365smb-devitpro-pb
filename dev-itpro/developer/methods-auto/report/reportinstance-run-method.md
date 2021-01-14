@@ -52,7 +52,7 @@ var
 begin
     CustomerRec.SETCURRENTKey("No.");  
     CustomerRec.SETFILTER("Salesperson Code", 'JR|PS');  
-    SomeReport.SETTableVIEW(CustomerRec);  
+    SomeReport.SETTableView(CustomerRec);  
     SomeReport.Run;
 end;
 ```  

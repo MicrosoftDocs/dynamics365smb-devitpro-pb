@@ -65,8 +65,8 @@ The following example inserts the string 'ZZZ' after the character B in the MyBi
   
 ```al
 // Example 1   
-MyBigText.ADDTEXT('ABCDEFG');  
-MyBigText.ADDTEXT('ZZZ', 3); // Returns the subtext ABZZZCDEFG.  
+MyBigText.AddTEXT('ABCDEFG');  
+MyBigText.AddTEXT('ZZZ', 3); // Returns the subtext ABZZZCDEFG.  
   
 ```  
   

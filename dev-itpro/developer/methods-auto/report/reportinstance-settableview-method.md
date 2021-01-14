@@ -42,10 +42,10 @@ The record that has a table view that you want to apply to the page or data item
  This method only narrows the view of the table that was set through the [SourceTableView Property](../../properties/devenv-sourcetableview-property.md) of the page or through the [DataItemTableView Property](../../properties/devenv-dataitemtableview-property.md) of the data item.  
   
 > [!IMPORTANT]  
->  SETTableVIEW is not supported for setting views on subpages from code on table headers. For example, you cannot set a table view on the SalesOrder subpage from the SalesHeader.  
+>  SETTableView is not supported for setting views on subpages from code on table headers. For example, you cannot set a table view on the SalesOrder subpage from the SalesHeader.  
   
 ## Example  
- This example is based on the Sales Header table and shows how SETTableVIEW is used for a page object. 
+ This example is based on the Sales Header table and shows how SETTableView is used for a page object. 
  
 ```  
 var
@@ -54,7 +54,7 @@ var
 begin
     SalesHeader.SETCURRENTKey("Document Type");  
     SalesHeader.SETRANGE("Document Type",SalesHeader."Document Type"::Order);  
-    SomePage.SETTableVIEW(SalesHeader); // Only view sales orders.  
+    SomePage.SETTableView(SalesHeader); // Only view sales orders.  
     SomePage.Run; 
 end; 
 ```  

@@ -76,7 +76,7 @@ begin
       
     // Add the following code to the ReqPageHandler method.  
     RequestPage.Customer.SETFILTER("No.", '20000');  
-    RequestPage.ChartType.VALUE('Pie chart');  
+    RequestPage.ChartType.Value('Pie chart');  
     RequestPage.SaveAsXML(LabelsFilename,DatasetFilename);  
 end;
   

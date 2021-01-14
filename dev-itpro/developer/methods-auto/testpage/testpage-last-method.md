@@ -45,8 +45,8 @@ The Last method loops over all records until it sets  the identifies the current
 ## Example  
  This example sets the current row to the last customer in the dataset. It requires that you create a TestPage variable named CustomerList with a Subtype of Customer List.  
   
-```  
-CustomerList.OpenVIEW;  
+```al
+CustomerList.OpenView;  
 CustomerList.Last;  
 Message(CustomerList.Name.Value);  
   

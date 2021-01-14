@@ -52,7 +52,7 @@ A default filter on the field that is specified by the Field parameter.
 ## Remarks    
  If the filter page implementation will call a SetView method, then the SetView method must be called before the AddField method call, otherwise the filter that is specified by the *Filter* parameter will be cleared by SetView.  
   
- The filter that is specified by the *Filter* parameter will overwrite any previously defined filters for the field which were set by ADDVIEW method or read from the record or recordRef instance that defined the filter control.  
+ The filter that is specified by the *Filter* parameter will overwrite any previously defined filters for the field which were set by AddView method or read from the record or recordRef instance that defined the filter control.  
   
 ## Example  
  The following example initializes a filter page object that includes a filter control for the **Date** system table. The filter control has the caption of **Date record**. The example adds two fields of the **Date** record variable which will be available in the filter control on the filter page: **Period End** and **Period Start**. A default filter is set on the **Period End** field.  

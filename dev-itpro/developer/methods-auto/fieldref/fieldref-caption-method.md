@@ -41,7 +41,7 @@ An instance of the [FieldRef](fieldref-data-type.md) data type.
 
 ## Remarks
 
-The Caption method returns the caption of a field. Caption first looks for a [CaptionML Property](../../properties/devenv-captionml-property.md). If it does not find one, it will use the [Name Property](../../properties/devenv-name-property.md). This means that CAPTION is enabled for multilanguage functionality.  
+The Caption method returns the caption of a field. Caption first looks for a [CaptionML Property](../../properties/devenv-captionml-property.md). If it does not find one, it will use the [Name Property](../../properties/devenv-name-property.md). This means that Caption is enabled for multilanguage functionality.  
   
 This method is similar to the [FieldCaption Method \(Record\)](../../methods-auto/record/record-fieldcaption-method.md).  
   
