@@ -50,7 +50,7 @@ var
 begin     
     CustomerRecref.OPEN(18);  
     KeyCount := CustomerRecref.KEYCOUNT;  
-    MESSAGE(Text000, KeyCount);  
+    Message(Text000, KeyCount);  
 end;
   
 ```  

@@ -45,7 +45,7 @@ The text of the object
  If you add the following code to a page method or trigger, then the returned string is displayed in a message window.  
   
 ```  
-MESSAGE(CurrPage.OBJECTID(TRUE));  
+Message(CurrPage.OBJECTID(TRUE));  
   
 ```
 ## See Also

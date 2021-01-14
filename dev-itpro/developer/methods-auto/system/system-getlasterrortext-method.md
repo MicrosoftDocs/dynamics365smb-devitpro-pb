@@ -54,7 +54,7 @@ ERROR(‘Some error message.’);
 // OnRun trigger  
 CLEARLASTERROR();  
 if not Codeunit.RUN(50001) then  
-  MESSAGE(‘The last error was: ’ + GETLASTERRORTEXT);  
+  Message(‘The last error was: ’ + GETLASTERRORTEXT);  
 ```  
 
  In this example, because the if statement uses the return value of the Codeunit.RUN method, the error from codeunit 50001 is not displayed. Instead, you use the GETLASTERRORTEXT method to display the error.  

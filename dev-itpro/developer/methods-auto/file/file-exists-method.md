@@ -60,7 +60,7 @@ begin
       TestFile.WRITE('Hello World');  
       TestFile.CLOSE;  
     end else  
-        MESSAGE('%1 does not exist.', FileName);  
+        Message('%1 does not exist.', FileName);  
 end;
 ```  
   

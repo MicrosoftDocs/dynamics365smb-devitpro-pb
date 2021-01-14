@@ -60,7 +60,7 @@ begin
     FldRef1 := SalesInvHdr.FIELDINDEX(1);  
     FldRef2 := SalesInvHdr.FIELDINDEX(2);  
     FldRef3 := SalesInvHdr.FIELDINDEX(3);  
-    MESSAGE(Text001 + Text002 + Text003, FldRef1.CAPTION, FldRef2.CAPTION, FldRef3.CAPTION);  
+    Message(Text001 + Text002 + Text003, FldRef1.CAPTION, FldRef2.CAPTION, FldRef3.CAPTION);  
 end;
 ```  
 

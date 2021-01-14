@@ -55,7 +55,7 @@ if DEFAULTCLIENTTYPE = CLIENTTYPE::Web then
 
 ```  
 url := GETURL(DEFAULTCLIENTTYPE);  
-MESSAGE('The URL is %1.', url);  
+Message('The URL is %1.', url);  
 ```  
 
 ## See Also

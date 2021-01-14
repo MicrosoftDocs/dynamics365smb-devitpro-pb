@@ -63,7 +63,7 @@ var
 ```  
 MyBigText.ADDTEXT('ABCDEFG');  
 VarPosition := MyBigText.TEXTPOS('BCD'); // Returns 2.  
-MESSAGE(Text000, VarPosition);  
+Message(Text000, VarPosition);  
   
 ```  
   
@@ -74,7 +74,7 @@ MESSAGE(Text000, VarPosition);
 ```  
 MyBigText.ADDTEXT('ABCDEFG');  
 VarPosition := MyBigText.TEXTPOS(''); // Returns 0.  
-MESSAGE(Text000, VarPosition);  
+Message(Text000, VarPosition);  
 ```  
   
 ## Example 3
@@ -84,7 +84,7 @@ MESSAGE(Text000, VarPosition);
 ```  
 MyBigText.ADDTEXT('ABCDEFG');  
 VarPosition := MyBigText.TEXTPOS('XYZ'); // Returns 0.  
-MESSAGE(Text000, VarPosition);  
+Message(Text000, VarPosition);  
 ``` 
 
 ## See Also

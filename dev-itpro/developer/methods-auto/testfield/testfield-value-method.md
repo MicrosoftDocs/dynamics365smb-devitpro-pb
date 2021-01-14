@@ -67,7 +67,7 @@ begin
       MyFieldRef := CustomerRecref.FIELD(2);  
       MyFieldRef.VALUE('Contoso');  
       CustomerRecref.MODIFY;  
-      MESSAGE(Text000, MyFieldRef.VALUE);  
+      Message(Text000, MyFieldRef.VALUE);  
     end;  
 end;
 ```  

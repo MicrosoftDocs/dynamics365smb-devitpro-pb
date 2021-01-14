@@ -71,7 +71,7 @@ begin
       TestFile.WRITE(DteTme);  
       TestFile.CLOSE;  
     end else 
-      MESSAGE('%1 does not exit.', FileName); 
+      Message('%1 does not exit.', FileName); 
 end;
 ```
   

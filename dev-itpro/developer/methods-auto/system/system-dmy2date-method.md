@@ -61,7 +61,7 @@ begin
     Month := 2;  
     Year := 2014;  
     OutputDate := DMY2DATE(Day, Month, Year);  
-    MESSAGE(Text000, Day, Month, Year, OutputDate);  
+    Message(Text000, Day, Month, Year, OutputDate);  
 end;
 ```  
   

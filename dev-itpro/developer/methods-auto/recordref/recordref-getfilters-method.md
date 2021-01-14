@@ -59,7 +59,7 @@ begin
     Filters1 := RecRef.GETFILTERS;  
     RecRef.SETRECFILTER;  
     Filters2 := RecRef.GETFILTERS;  
-    MESSAGE(Text000, Filters1, Filters2);  
+    Message(Text000, Filters1, Filters2);  
 end;
 ```  
   

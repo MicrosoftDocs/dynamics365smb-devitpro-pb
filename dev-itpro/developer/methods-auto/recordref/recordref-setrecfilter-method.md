@@ -47,7 +47,7 @@ begin
     MyRecordRef.OPEN(DATABASE::Customer);  
     MyRecordRef.SETRECFILTER;  
     varFilters := MyRecordRef.GETFILTERS;  
-    MESSAGE(Text000, varFilters);  
+    Message(Text000, varFilters);  
 end;
 ```  
 

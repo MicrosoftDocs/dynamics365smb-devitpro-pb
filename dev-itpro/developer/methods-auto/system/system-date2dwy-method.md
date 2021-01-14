@@ -72,7 +72,7 @@ begin
     DayOfWeek := DATE2DWY(InputDate, 1);  
     WeekNumber := DATE2DWY(InputDate, 2);  
     Year := DATE2DWY(InputDate, 3);  
-    MESSAGE(Text000 + Text001 + Text002 + Text003, InputDate, DayOfWeek, WeekNumber, Year);  
+    Message(Text000 + Text001 + Text002 + Text003, InputDate, DayOfWeek, WeekNumber, Year);  
 end;
 ```  
   

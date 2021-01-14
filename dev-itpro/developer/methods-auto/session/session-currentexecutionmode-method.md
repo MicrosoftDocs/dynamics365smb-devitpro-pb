@@ -42,7 +42,7 @@ The mode in which the session is running.
 
 ```  
 Mode := CURRENTEXECUTIONMODE;   
-MESSAGE('Current execution mode is %1.', Mode); 
+Message('Current execution mode is %1.', Mode); 
 ```
 
 ## See Also

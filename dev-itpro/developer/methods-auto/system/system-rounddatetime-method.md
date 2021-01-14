@@ -70,7 +70,7 @@ begin
     Precision := 1000L;  
     FormatString := '<Month,2>/<Day,2>/<Year> <Hours24,2>:<Minutes,2>:<Seconds,2>.<Thousands,3>';  
     Result := ROUNDDATETIME(DateTimeToRound, Precision);  
-    MESSAGE(TEXT000, Format(DateTimeToRound,0,FormatString), Precision, Format(Result,0,FormatString)); 
+    Message(TEXT000, Format(DateTimeToRound,0,FormatString), Precision, Format(Result,0,FormatString)); 
 end;
 ```  
 

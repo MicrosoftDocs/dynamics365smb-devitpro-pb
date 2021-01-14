@@ -65,7 +65,7 @@ The time that the file was last written to. Optional.
 begin
     varFileName := 'C:\MyFolder\MyText.txt';  
     GETSTAMP(VarFileName, varDate, varTime);  
-    MESSAGE(Text000, varDate, varTime);  
+    Message(Text000, varDate, varTime);  
 end;
 ```  
 

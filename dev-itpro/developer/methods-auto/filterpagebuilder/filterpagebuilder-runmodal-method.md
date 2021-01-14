@@ -59,7 +59,7 @@ begin
     varDateRecord.SETFILTER("Period End", '20151212D');  
     varDateRecord.SETFILTER("Period Start", '20150101D');  
     varDefaultView := varDateRecord.GETVIEW;  
-    varFilterPageBuilder.ADDTABLE(varDateItem, DATABASE::Date);  
+    varFilterPageBuilder.AddTable(varDateItem, DATABASE::Date);  
     varFilterPageBuilder.SETVIEW(varDateItem, varDefaultView);  
     if varFilterPageBuilder.RUNMODAL = TRUE then  
       varDateRecord.SETVIEW(varFilterPageBuilder.GETVIEW(varDateItem));  

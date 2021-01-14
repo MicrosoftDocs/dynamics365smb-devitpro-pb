@@ -60,7 +60,7 @@ begin
     CustomerRecref.OPEN(18);  
     CustomerRecref.SETVIEW('SORTING(Name) ORDER(Ascending) WHERE(No.=CONST(10000..20000))');  
     IsAscending := CustomerRecref.ASCENDING;  
-    MESSAGE(Text000, IsAscending);  
+    Message(Text000, IsAscending);  
 end;
 ```  
   
@@ -72,9 +72,9 @@ end;
 CustomerRecref.OPEN(18);  
 CustomerRecref.SETVIEW('SORTING(Name) ORDER(Descending) WHERE(No.=CONST(10000..20000))');  
 IsAscending := CustomerRecref.ASCENDING;  
-MESSAGE(Text000, IsAscending);  
+Message(Text000, IsAscending);  
 IsAscending := CustomerRecref.ASCENDING(TRUE);  
-MESSAGE(Text000, IsAscending);  
+Message(Text000, IsAscending);  
 ```  
   
 

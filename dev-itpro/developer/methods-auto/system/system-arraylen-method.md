@@ -55,10 +55,10 @@ var
     Array1: array[2] of Integer;
     Array2: array[3,4] of Integer;
 begin
-    MESSAGE('Array1, Total number of elements: %1', ARRAYLEN(Array1));  
-    MESSAGE('Array2, Dimension 1 size: %1', ARRAYLEN(Array2,1));  
-    MESSAGE('Array2, Dimension 2 size: %1', ARRAYLEN(Array2,2));  
-    MESSAGE('Array2, Total number of elements: %1', ARRAYLEN(Array2));  
+    Message('Array1, Total number of elements: %1', ARRAYLEN(Array1));  
+    Message('Array2, Dimension 1 size: %1', ARRAYLEN(Array2,1));  
+    Message('Array2, Dimension 2 size: %1', ARRAYLEN(Array2,2));  
+    Message('Array2, Total number of elements: %1', ARRAYLEN(Array2));  
 end;
 ```  
   

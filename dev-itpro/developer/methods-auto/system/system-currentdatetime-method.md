@@ -42,7 +42,7 @@ Datetime :=   System.CurrentDateTime()
   
 ```  
 TestDateTime := CURRENTDATETIME;  
-MESSAGE(Format(TestDateTime));  
+Message(Format(TestDateTime));  
 ```  
   
  The message window displays the current date and time.

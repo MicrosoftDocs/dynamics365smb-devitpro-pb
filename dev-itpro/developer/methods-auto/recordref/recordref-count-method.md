@@ -63,7 +63,7 @@ begin
     MyRecordRef.OPEN(varTableNo);  
     MyRecordRef.LOCKTABLE;  
     Count := MyRecordRef.COUNT;  
-    MESSAGE(Text000, MyRecordRef.NAME, Count);  
+    Message(Text000, MyRecordRef.NAME, Count);  
 end;
 ```  
   

@@ -46,7 +46,7 @@ An instance of the [TestPage](testpage-data-type.md) data type.
 ```  
 CustomerList.OPENVIEW;  
 CustomerList.FIRST;  
-MESSAGE(CustomerList.Name.Value);  
+Message(CustomerList.Name.Value);  
   
 ```  
   

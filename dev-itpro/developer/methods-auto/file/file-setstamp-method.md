@@ -63,10 +63,10 @@ The time that you want stamped on the file.
     Text000: Label 'The timestamp for this file is Date: %1 Time: %2.';
 begin
     VarFileName := 'C:\MyFolder\MyText.txt';  
-    varDate := TODAY;  
+    varDate := Today;  
     varTime := TIME;  
     SETSTAMP(VarFileName, varDate, varTime);  
-    MESSAGE(Text000, varDate, varTime);  
+    Message(Text000, varDate, varTime);  
 end;
 ```  
   

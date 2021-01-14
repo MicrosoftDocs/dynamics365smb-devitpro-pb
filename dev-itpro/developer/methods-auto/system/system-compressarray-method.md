@@ -67,9 +67,9 @@ begin
     CustomerData[4] := '  '; // A non-empty string that contains blanks.  
     CustomerData[5] := 'Atlanta';  
     CustomerData[6] := ''; // Empty string.  
-    MESSAGE('Before compression the address is: \%1\%2\%3\%4\%5\%6', CustomerData[1], CustomerData[2], CustomerData[3], CustomerData[4], CustomerData[5], CustomerData[6]);  
+    Message('Before compression the address is: \%1\%2\%3\%4\%5\%6', CustomerData[1], CustomerData[2], CustomerData[3], CustomerData[4], CustomerData[5], CustomerData[6]);  
     COMPRESSARRAY(CustomerData); // The empty lines (strings) are removed.  
-    MESSAGE('After compression the address is: \%1\%2\%3\%4\%5\%6', CustomerData[1], CustomerData[2], CustomerData[3], CustomerData[4], CustomerData[5], CustomerData[6]);  
+    Message('After compression the address is: \%1\%2\%3\%4\%5\%6', CustomerData[1], CustomerData[2], CustomerData[3], CustomerData[4], CustomerData[5], CustomerData[6]);  
 end;
 ```  
   

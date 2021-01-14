@@ -53,7 +53,7 @@ begin
     CustomerRecref.OPEN(DATABASE::Customer);  
     for i := 1 to 5 do begin  
       MyFieldRef := CustomerRecref.FIELD(i);  
-      MESSAGE(Text000, i, MyFieldRef.TYPE);  
+      Message(Text000, i, MyFieldRef.TYPE);  
     end;  
 END;
   

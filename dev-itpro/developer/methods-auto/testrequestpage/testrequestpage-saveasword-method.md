@@ -61,7 +61,7 @@ var
 begin
     //Test method: TestSaveAsWord  
     Filename := TEMPORARYPATH + 'MyRep.doc';  
-    MESSAGE(Filename);  
+    Message(Filename);  
     if not FILE.ERASE(Filename) then  
       ERROR('Cannot erase %1',Filename);  
     REPORT.RUN(111);  
