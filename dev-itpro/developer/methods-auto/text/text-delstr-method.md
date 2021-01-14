@@ -32,7 +32,7 @@ The input string.
         
 *Position*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-The position of the first character that you want to delete. Position must be greater than zero (0). If Position exceeds the length of String, DELSTR returns the original string, unchanged.
+The position of the first character that you want to delete. Position must be greater than zero (0). If Position exceeds the length of String, DelStr returns the original string, unchanged.
         
 *Length*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
@@ -54,8 +54,9 @@ The input string without the specified substring.
   
  If you omit *Length* and *Position* is greater than the length of *String*, then *String* is returned unchanged.  
   
-## Example  
-```
+## Example
+
+```al
 var
     Str: Text[40];
     NewStr: Text[40];
@@ -68,7 +69,7 @@ begin
     Str := Text000;  
     Position := 11; // Remove the word 'prices' and a blank.  
     Length := 7;  
-    NewStr := DELSTR(Str, Position, Length);  
+    NewStr := DelStr(Str, Position, Length);  
     Message(Text001, Str);  
     Message(Text002, NewStr);  
 end;

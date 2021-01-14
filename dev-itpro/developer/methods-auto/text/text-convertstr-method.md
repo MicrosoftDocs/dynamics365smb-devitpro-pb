@@ -56,7 +56,7 @@ The input string with the converted characters.
   
 ## Example  
 
-```  
+```al
 var
     OriginalString: Text[30];
     FromChars: Text[30];
@@ -71,7 +71,7 @@ begin
     OriginalString := Text000;  
     FromChars := Text001;  
     ToChars := Text002;   
-    NewString := CONVERTSTR(OriginalString, FromChars, ToChars);  
+    NewString := ConvertStr(OriginalString, FromChars, ToChars);  
     Message(Text003, OriginalString);  
     Message(Text004, NewString);  
 end;

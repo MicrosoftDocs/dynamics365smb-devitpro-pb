@@ -42,7 +42,7 @@ Typically, you use this method together with [Seek Method \(File\)](../../method
   
 ## Example
 
-The following example sets a pointer at position 20 in a file and truncates the file at the pointer position. The [WriteMode Method \(File\)](../../methods-auto/file/file-writemode-method.md) allows the file that is named C:\\TestFolder\\TestFile.txt to open in write mode. The Seek method sets a pointer at position 20 in the file and then the [Trunc Method \(FILE\)](../../methods-auto/file/file-trunc-method.md) truncates the contents at the pointer position. This example assumes that you have created a text file named C:\\TestFolder\\TestFile.txt. The file is then saved a truncated file. 
+The following example sets a pointer at position 20 in a file and truncates the file at the pointer position. The [WriteMode Method \(File\)](../../methods-auto/file/file-writemode-method.md) allows the file that is named C:\\TestFolder\\TestFile.txt to open in write mode. The Seek method sets a pointer at position 20 in the file and then the [Trunc Method \(File\)](../../methods-auto/file/file-trunc-method.md) truncates the contents at the pointer position. This example assumes that you have created a text file named C:\\TestFolder\\TestFile.txt. The file is then saved a truncated file. 
   
 ```al
  var

@@ -32,7 +32,7 @@ This string contains the number for which you want to calculate a checksum. You 
         
 *WeightString*  
 &emsp;Type: [String](../string/string-data-type.md)  
-This string contains numbers that you want to use as weights when calculating the checksum. The default value is a string that contains STRLEN(String) '1'-characters.
+This string contains numbers that you want to use as weights when calculating the checksum. The default value is a string that contains StrLen(String) '1'-characters.
         
 *Modulus*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  

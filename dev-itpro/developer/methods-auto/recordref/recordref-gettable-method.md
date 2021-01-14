@@ -62,7 +62,7 @@ begin
         AccSchedLine.Description := GLAcc.Name;  
         if GLAcc."Account Type" IN [GLAcc."Account Type"::Posting,GLAcc."Account Type"::Total,GLAcc."Account Type"::"End-Total"] then begin  
           AccSchedLine.Totaling := GLAcc."No.";  
-          AccSchedLine."Row No." := CopyStr(GLAcc."No.",1,MAXSTRLEN(AccSchedLine."Row No."));  
+          AccSchedLine."Row No." := CopyStr(GLAcc."No.",1,MaxStrLen(AccSchedLine."Row No."));  
         end;  
         if GLAcc."Account Type" IN [GLAcc."Account Type"::Total,GLAcc."Account Type"::"End-Total"] then  
           AccSchedLine."Totaling Type" := AccSchedLine."Totaling Type"::"Total Accounts"  

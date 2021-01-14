@@ -56,7 +56,7 @@ The data that you want to write to the file.
  To read or write files in Unicode or in other formats, we recommend that you use .NET Framework interoperability and use the [System.IO Namespace](https://go.microsoft.com/fwlink/?LinkId=262250).  
   
 ## Example  
- The following example determines whether the specified file exists. If it exists, the [WriteMode Method \(File\)](../../methods-auto/file/file-writemode-method.md) allows the file to be open for writing. The [Open Method \(File\)](../../methods-auto/file/file-open-method.md) opens the file, the [Write Method \(FILE\)](../../methods/devenv-write-method-file.md) writes the text “Hello World” to the file and then the [Close Method \(File\)](../../methods-auto/file/file-close-method.md) closes the file. If the file does not exist, then an error message is displayed. This example assumes that you have created the following file: C:\\TestFolder\\TestFile.txt. 
+ The following example determines whether the specified file exists. If it exists, the [WriteMode Method \(File\)](../../methods-auto/file/file-writemode-method.md) allows the file to be open for writing. The [Open Method \(File\)](../../methods-auto/file/file-open-method.md) opens the file, the [Write Method \(File\)](../../methods/devenv-write-method-file.md) writes the text “Hello World” to the file and then the [Close Method \(File\)](../../methods-auto/file/file-close-method.md) closes the file. If the file does not exist, then an error message is displayed. This example assumes that you have created the following file: C:\\TestFolder\\TestFile.txt. 
  
 ```
  var

@@ -60,22 +60,22 @@ The path and file name to which the data set file is saved.
 -   A handler method of type RequestPageHandler called ReqPageHandler. This handler method has one parameter called RequestPage of Type TestRequestPage and Subtype Customer – Top 10 List. The RequestPage parameter is specified as VAR and is passed by reference to the handler method. 
 <!--Links For more information, see [How to: Create Handler Methods](devenv-How-to--Create-Handler-Methods.md).-->  
   
-```  
+```al
 var
     LabelsFilename: Text;
     DatasetFilename: Text;
 begin
     // Add the following code to the TestSaveAsXML test method.  
-    LabelsFilename := TEMPORARYPATH + 'MyLabels.xml';  
-    DatasetFilename := TEMPORARYPATH + 'MyDataset.xml';  
+    LabelsFilename := TemporaryPath + 'MyLabels.xml';  
+    DatasetFilename := TemporaryPath + 'MyDataset.xml';  
     Report.Run(111);  
-    if not FILE.EXISTS(LabelsFilename) then  
+    if not File.Exists(LabelsFilename) then  
       Error('Labels file should exist!');  
-    if not FILE.EXISTS(DatasetFilename) then  
+    if not File.Exists(DatasetFilename) then  
       Error('Dataset file should exist!');  
       
     // Add the following code to the ReqPageHandler method.  
-    RequestPage.Customer.SETFILTER("No.", '20000');  
+    RequestPage.Customer.SetFilter("No.", '20000');  
     RequestPage.ChartType.Value('Pie chart');  
     RequestPage.SaveAsXML(LabelsFilename,DatasetFilename);  
 end;

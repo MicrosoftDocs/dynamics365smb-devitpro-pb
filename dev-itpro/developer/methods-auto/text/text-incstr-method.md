@@ -50,11 +50,11 @@ The incremented string.
   
  If *String* does not contain any number, the output string is an empty string. For example, 'aaa' is changed to ''.  
   
- INCSTR only increments integer numbers within strings, not decimals. For example, if you call INCSTR on the string **a99.99b** then the result is **a99.100b**.  
+ IncStr only increments integer numbers within strings, not decimals. For example, if you call IncStr on the string **a99.99b** then the result is **a99.100b**.  
   
 ## Example  
 
-```  
+```al
 var
     Account: Text[60]; 
     NegAccount: Text[60];  
@@ -68,25 +68,25 @@ var
     Text001: TexConst ENU='Account no. 2342 shows a total of $-452.';  
     Text002: TexConst ENU='My bank account is empty.';
     Text003: TexConst ENU='My bank account shows a total of $0.';  
-    Text004: TexConst ENU='The text strings before INCSTR is called:\\%1\\%2\\%3\\%4';  
-    Text005: TexConst ENU='The text strings after INCSTR is called:\\%1\\%2\\%3\\%5'; 
+    Text004: TexConst ENU='The text strings before IncStr is called:\\%1\\%2\\%3\\%4';  
+    Text005: TexConst ENU='The text strings after IncStr is called:\\%1\\%2\\%3\\%5'; 
 begin
     Account := Text000;  
     NegAccount := Text001;  
     EmptyAccount := Text002;  
     MyAccount := Text003;  
     Message(Text004, Account, NegAccount, EmptyAccount, MyAccount);  
-    ResultAccount := INCSTR(Account);  
-    ResultNegAccount := INCSTR(NegAccount);  
-    ResultEmptyAccount := INCSTR(EmptyAccount);  
-    ResultMyAccount := INCSTR(MyAccount);  
+    ResultAccount := IncStr(Account);  
+    ResultNegAccount := IncStr(NegAccount);  
+    ResultEmptyAccount := IncStr(EmptyAccount);  
+    ResultMyAccount := IncStr(MyAccount);  
     Message(Text005, ResultAccount, ResultNegAccount, ResultEmptyAccount, ResultMyAccount);  
 end;
 ```  
   
  The first message displays the following:  
   
- **The text strings before INCSTR is called:**  
+ **The text strings before IncStr is called:**  
   
  **Account no. 99 does not balance.**  
   
@@ -98,7 +98,7 @@ end;
   
  The second message displays the following:  
   
- **The text strings after INCSTR has been called:**  
+ **The text strings after IncStr has been called:**  
   
  **Account no. 100 does not balance.**  
   

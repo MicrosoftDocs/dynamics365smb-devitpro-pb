@@ -51,7 +51,7 @@ var
     SomeReport: Report "Salesperson - Sales Statistics";
 begin
     CustomerRec.SETCURRENTKey("No.");  
-    CustomerRec.SETFILTER("Salesperson Code", 'JR|PS');  
+    CustomerRec.SetFilter("Salesperson Code", 'JR|PS');  
     SomeReport.SETTableView(CustomerRec);  
     SomeReport.Run;
 end;

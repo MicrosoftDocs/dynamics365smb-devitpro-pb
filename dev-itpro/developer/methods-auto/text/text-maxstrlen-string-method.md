@@ -42,28 +42,29 @@ The maximum length of the string variable.
 ## Remarks  
  If you call this method on a Variant, it returns an error.  
   
-## Example  
-```  
+## Example
+
+```al
 var
     City: Text[30];
     MaxLength: Integer;
     Length: Integer;
     Text000: Label 'Vedbaek';
-    Text001: Label 'The MAXSTRLEN method returns %1,\\';
-    Text002: Label 'whereas the STRLEN method returns %2';
+    Text001: Label 'The MaxStrLen method returns %1,\\';
+    Text002: Label 'whereas the StrLen method returns %2';
 begin
     City := Text000;  
-    MaxLength := MAXSTRLEN(City);  
-    Length := STRLEN(City);  
+    MaxLength := MaxStrLen(City);  
+    Length := StrLen(City);  
     Message(Text001 + Text002, MaxLength, Length);  
 end;
 ```  
   
  The message window displays the following:  
   
- **The MAXSTRLEN method returns 30,**  
+ **The MaxStrLen method returns 30,**  
   
- **whereas the STRLEN method returns 7.**  
+ **whereas the StrLen method returns 7.**  
   
 
 ## See Also

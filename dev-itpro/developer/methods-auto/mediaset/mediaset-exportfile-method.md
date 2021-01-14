@@ -59,7 +59,7 @@ The method has the following behavior:
 -   If a media in the media set cannot be found in the database, no file will be generated for this object.  
 
 ## Example  
-This example first imports two media files \(JPEG image files\) from a local folder to the media set of a record in the table **27 Item** of the [!INCLUDE[demolonglight_md](../../includes/demolonglight_md.md)]. Then, using the EXPORTFILE method, the media objects are exported to files again in another local folder.
+This example first imports two media files \(JPEG image files\) from a local folder to the media set of a record in the table **27 Item** of the [!INCLUDE[demolonglight_md](../../includes/demolonglight_md.md)]. Then, using the EXPORTFile method, the media objects are exported to files again in another local folder.
 
 For using media sets on records, the **Item** table includes a **MediaSet** data type field that is named **Picture**.  
 

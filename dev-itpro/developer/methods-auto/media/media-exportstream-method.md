@@ -16,7 +16,7 @@ author: SusanneWindfeldPedersen
 # Media.ExportStream Method
 > **Version**: _Available from runtime version 1.0._
 
-Exports the current media object (such as a JPEG image) that is used on record to an OUTSTREAM object. The OUTSTREAM object can be created from a BLOB field, a FILE or from a .NET Framework interoperability object. In the record, the media is referenced in a Media data type field.
+Exports the current media object (such as a JPEG image) that is used on record to an OUTSTREAM object. The OUTSTREAM object can be created from a BLOB field, a File or from a .NET Framework interoperability object. In the record, the media is referenced in a Media data type field.
 
 
 ## Syntax
