@@ -89,7 +89,7 @@ For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, you can'
 | Max execution timeout | The maximum execution time that it can take to generate a query. If exceeded, the query will be canceled.|30 minutes|
 | Max rows | The maximum number of rows that can be processed in a query. If exceeded, the query will be canceled.|1,000,000|
 
-##  <a name="ODataServices"></a> OData request limits
+##  <a name="ODataServices"></a> OData request limits (per environment)
   
 |Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
 |---------|--------------------------------------------------------------------------------|------|
@@ -103,7 +103,7 @@ For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, you can'
 <!--
 |Request timeout|HTTP response code `504 - Gateway Timeout` is returned when a request exceeds 10-minutes execution time.|10 minutes|
 -->
-##  <a name="SOAPServices"></a> SOAP request limits
+##  <a name="SOAPServices"></a> SOAP request limits (per environment)
 
 |Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
 |---------|--------------------------------------------------------------------------------|------|

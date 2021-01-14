@@ -14,7 +14,7 @@ author: jswymer
 The following sections list the minimum hardware and software requirements to install and run [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises (version 17). **Minimum** means that later versions \(such as SP1, SP2, or R2 versions\) of a required software product are also supported.  
 
 > [!NOTE]  
-> [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] installs some software if it'sn't already present in the target computer. For more information, see the "Additional Information" section for each component.  
+> [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] installs some software if it's not already present in the target computer. For more information, see the "Additional Information" section for each component.  
 
 ## CLIENT COMPONENTS
 
