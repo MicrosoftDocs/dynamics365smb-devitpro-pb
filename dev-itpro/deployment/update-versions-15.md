@@ -7,7 +7,7 @@ ms.reviewer: edupont
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
-ms.date: 12/07/2020
+ms.date: 01/11/2021
 
 ---
 
@@ -27,6 +27,7 @@ The following table lists the updates that have been released for 2019 release w
 
 |Knowledge Base ID                                           |Title                |Release date  |Build No. |Local versions included |
 |------------------------------------------------------------|---------------------|--------------|----------|------------------------|
+|[4595150](https://support.microsoft.com/help/4595150)|Update 15.14|January 2021|Application Build 5.14.46107</br>Platform Build 15.0.46099|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
 |[4583552](https://support.microsoft.com/help/4583552)|Update 15.13|December 2020|Application Build 15.13.45740</br>Platform Build 15.0.45731|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
 |[4583512](https://support.microsoft.com/help/4583512)|Update 15.12|November 2020|Application Build 15.12.45390</br>Platform Build 15.0.45381|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
 |[4583500](https://support.microsoft.com/help/4583500)|Update 15.11|October 2020|Application Build 15.11.44966</br>Platform Build 15.0.44957|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
