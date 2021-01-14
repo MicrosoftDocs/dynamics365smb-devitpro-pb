@@ -40,7 +40,7 @@ An instance of the [Variant](variant-data-type.md) data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example  
- The following example uses the ISFILTERPAGEBUILDER method on a filter page object that includes a filter control for the **Date** system table.  
+ The following example uses the IsFilterPageBuilder method on a filter page object that includes a filter control for the **Date** system table.  
    
 ```  
 var
@@ -51,8 +51,8 @@ begin
     varDateItem := 'Date record';  
     varFilterPageBuilder.AddTable(varDateItem + ‘ 1’,DATABASE::Date);  
     myVariant := varFilterPageBuilder;  
-    if not myVariant.ISFILTERPAGEBUILDER then   
-      Error(‘This variant should contain a FilterPageBuilder variable’);  
+    if not myVariant.IsFilterPageBuilder then   
+      ERROR(‘This variant should contain a FilterPageBuilder variable’);  
 end;
   
 ```  

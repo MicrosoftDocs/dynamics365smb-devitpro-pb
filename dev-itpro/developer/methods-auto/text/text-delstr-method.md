@@ -61,7 +61,7 @@ var
     Str: Text[40];
     NewStr: Text[40];
     Position: Integer;
-    Lenght: Integer;
+    Length: Integer;
     Text000: TexConst ENU='Adjusting prices - Please wait.';
     Text001: TexConst ENU='The original string:>%1<';
     Text002: TexConst ENU='The original modified:>%2<';

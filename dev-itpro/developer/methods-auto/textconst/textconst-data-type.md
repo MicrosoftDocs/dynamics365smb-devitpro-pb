@@ -32,7 +32,7 @@ The `TextConst` data type is typically used for UI messages; process or error me
 ## Example
 The data type can be declared with the syntax as shown in the example below.
 
-```
+```al
 codeunit 50100 MyCodeunit
 {
     procedure MyProcedure()

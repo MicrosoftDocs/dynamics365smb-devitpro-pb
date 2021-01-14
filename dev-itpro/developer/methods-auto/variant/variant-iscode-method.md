@@ -40,9 +40,9 @@ An instance of the [Variant](variant-data-type.md) data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example  
- The following example determines whether an AL variant contains a code variable. The code initializes the MyCode variable with a string value. The MyCode variable is assigned to the variant variable that is named MyVariant. The **ISCODE** method determines whether the variant contains a code variable and stores the return value in the varResult variable. In this case, the variant contains a code variable so **true** is returned and displayed in a message box. The [ISTEXT Method (Variant)](../../methods/devenv-istext-method-variant.md) determines whether the variant contains a text variable. The return value is **false** because the variant does not contain a text.
+ The following example determines whether an AL variant contains a code variable. The code initializes the MyCode variable with a string value. The MyCode variable is assigned to the variant variable that is named MyVariant. The **IsCode** method determines whether the variant contains a code variable and stores the return value in the varResult variable. In this case, the variant contains a code variable so **true** is returned and displayed in a message box. The [IsText Method (Variant)](../../methods/devenv-istext-method-variant.md) determines whether the variant contains a text variable. The return value is **false** because the variant does not contain a text.
    
-```  
+```al
 var
     MyCode: Code[100];
     MyVariant: Variant;
@@ -52,9 +52,9 @@ var
 begin
     MyCode := 'A1297';  
     MyVariant :=  MyCode;  
-    varResult := MyVariant.ISCODE;  
+    varResult := MyVariant.IsCode;  
     Message(Text000,MyVariant,varResult);  
-    varResult := MyVariant.ISTEXT;  
+    varResult := MyVariant.IsText;  
     Message(Text001,MyVariant,varResult);  
 end;
 ```  

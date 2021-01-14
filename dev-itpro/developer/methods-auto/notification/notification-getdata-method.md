@@ -58,7 +58,6 @@ MyNotification.AddAction('Action 1',CodeUnit::"Action Handler",'RunAction1');
 MyNotification.AddAction('Action 2',CodeUnit::"Action Handler",'RunAction2');
 MyNotification.Send;
 ```
-
 The following code gets the data for a notification:
 
 ```al

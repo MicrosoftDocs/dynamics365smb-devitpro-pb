@@ -42,7 +42,7 @@ The upper limit of the range. If you omit this parameter, the FromValue you spec
 
 ## Remarks
 
-The SetRangeE method provides a quick way to set a simple filter on a field.  If you call this method by using a field that already has a filter, that filter is removed before the new filter is set.  
+The SetRange method provides a quick way to set a simple filter on a field.  If you call this method by using a field that already has a filter, that filter is removed before the new filter is set.  
   
 If you omit all of the optional parameters, all filters set for that field are removed. The SetRange method fails if no field is selected.  
   
@@ -50,7 +50,7 @@ This method is like the [SetRange Method \(Record\)](../../methods-auto/record/r
   
 ## Example
 
-The following example opens the Customer table as a RecordRef object, creates a reference to the first \(No.\) field, and stores the reference in the MyFieldRef variable. The SETRANGE method sets a filter that selects all records from 10000 to 40000 in the No. field. The [Find Method \(RecordRef\)](../../methods-auto/recordref/recordref-find-method.md) searches and selects the first record in the filter and counts the number of records that are found. The number of records is stored in the Count variable. The process is repeated by looping through all the records in the filter until no more records are found. The number of records that are found in the range is stored in the Count variable and displayed in a message box. 
+The following example opens the Customer table as a RecordRef object, creates a reference to the first \(No.\) field, and stores the reference in the MyFieldRef variable. The SetRange method sets a filter that selects all records from 10000 to 40000 in the No. field. The [Find Method \(RecordRef\)](../../methods-auto/recordref/recordref-find-method.md) searches and selects the first record in the filter and counts the number of records that are found. The number of records is stored in the Count variable. The process is repeated by looping through all the records in the filter until no more records are found. The number of records that are found in the range is stored in the Count variable and displayed in a message box. 
  
 ```al
 var

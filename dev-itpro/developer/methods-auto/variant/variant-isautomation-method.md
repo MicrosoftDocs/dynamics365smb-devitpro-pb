@@ -40,9 +40,9 @@ An instance of the [Variant](variant-data-type.md) data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example  
- The following example determines whether an AL variant contains an Automation variable. The MyAutomation variable is assigned to the variant variable that is named MyVariant. The **ISAUTOMATION** method determines whether the variant contains an Automation variable and stores the return value in the varResult variable. In this case, the variant contains an Automation variable so **Yes** is returned and displayed in a message box. The [ISCODE Method (Variant)](../../methods/devenv-iscode-method-variant.md) determines whether the variant contains a code variable. The return value is **No** because the variant does not contain a code.
+ The following example determines whether an AL variant contains an Automation variable. The MyAutomation variable is assigned to the variant variable that is named MyVariant. The **IsAutomation** method determines whether the variant contains an Automation variable and stores the return value in the varResult variable. In this case, the variant contains an Automation variable so **Yes** is returned and displayed in a message box. The [IsCode Method (Variant)](../../methods/devenv-iscode-method-variant.md) determines whether the variant contains a code variable. The return value is **No** because the variant does not contain a code.
  
-```  
+```al 
 var
     MyAutomation: Automation "AFormAut 1.0 Type Library";
     MyVariant: Variant;
@@ -51,9 +51,9 @@ var
     Text001: Label 'Does the variant- contain a code variable? %1.';
 begin
     MyVariant := MyAutomation;  
-    varResult := MyVariant.ISAUTOMATION;  
+    varResult := MyVariant.IsAutomation;  
     Message(Text000,varResult);  
-    varResult := MyVariant.ISCODE;  
+    varResult := MyVariant.IsCode;  
     Message(Text001, varResult);  
 end;
 ```  

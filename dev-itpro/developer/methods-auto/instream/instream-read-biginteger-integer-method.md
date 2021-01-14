@@ -54,7 +54,7 @@ Read reads until the specified length or a zero byte. For more information about
 ## Example  
  The following example shows how to use the **Instream.Read** method to read data in binary format. The **Find** method finds the first record from the **Company Information** table. The **CalcFields** method retrieves the **Picture** field, which is a BLOB field. The **CreateInStream** method uses the recBinaries variable to create an InStream object that is named varInstream. The **varInstream.Read** method then reads three characters from the varInstream variable and stores the binary data in the varChars variable. The number of characters that is read is stored in the numChars variable. The binary data and the number of characters that is read are displayed in a message box. 
 
-```
+```al
  var
     recBinaries: Record "Company Information";
     varInstream: Instream;

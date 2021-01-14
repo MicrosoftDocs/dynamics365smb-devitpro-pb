@@ -40,7 +40,7 @@ An instance of the [Variant](variant-data-type.md) data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example  
- The following example determines whether an AL variant contains a text variable. The code initializes the MyText variable with a text value. The MyText variable is assigned to the variant variable that is named MyVariant. The **ISTEXT** method determines whether the variant contains a text variable and stores the return value in the varResult variable. In this case, the variant contains a text variable so **Yes** is returned and displayed in a message box. The **ISCODE** method determines whether the variant contains a code variable. The return value is **No** because the variant does not contain a code. 
+ The following example determines whether an AL variant contains a text variable. The code initializes the MyText variable with a text value. The MyText variable is assigned to the variant variable that is named MyVariant. The **IsText** method determines whether the variant contains a text variable and stores the return value in the varResult variable. In this case, the variant contains a text variable so **Yes** is returned and displayed in a message box. The **IsCode** method determines whether the variant contains a code variable. The return value is **No** because the variant does not contain a code. 
 
 ```  
 var
@@ -52,9 +52,9 @@ var
 begin
     MyText := 'This is some text';  
     MyVariant :=  MyText;  
-    varResult := MyVariant.ISTEXT;  
+    varResult := MyVariant.IsText;  
     Message(Text000,MyVariant,varResult);  
-    varResult := MyVariant.ISCODE;  
+    varResult := MyVariant.IsCode;  
     Message(Text001,MyVariant,varResult);  
 end;
 ```  
