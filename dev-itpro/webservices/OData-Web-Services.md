@@ -1,7 +1,7 @@
 ---
 title: "OData Web Services"
 ms.custom: na
-ms.date: 10/27/2020
+ms.date: 01/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
