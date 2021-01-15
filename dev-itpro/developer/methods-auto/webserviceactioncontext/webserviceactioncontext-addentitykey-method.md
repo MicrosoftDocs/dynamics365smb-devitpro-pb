@@ -46,7 +46,8 @@ The value for the field in the entity key.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example
-```
+
+```al
 actionContext.AddEntityKey(Rec.FieldNO(Id), ToSalesHeader.Id);
 ```
 For a complete code example, see [Creating and Interacting with an OData V4 Bound Action](../../devenv-creating-and-interacting-with-odatav4-bound-action.md).

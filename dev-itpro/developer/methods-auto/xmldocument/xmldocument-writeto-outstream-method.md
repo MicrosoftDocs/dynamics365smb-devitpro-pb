@@ -46,7 +46,7 @@ The OutStream to which you want to save the serialized representation of the nod
 
 The following example illustrates how to create a Stream from a Blob and write to a Stream from an XML document.
 
-```
+```al
 pageextension 50100 CustomerListExt extends "Customer List"
 {
     trigger OnOpenPage();
