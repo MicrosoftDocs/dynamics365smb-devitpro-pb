@@ -70,7 +70,9 @@ Jan 26, 2021 | Power Platform Integration - Power BI |
 Feb 9, 2021 | Power Platform, Power Apps, and Dataverse (formerly known as CDS) |
 Feb 23, 2021 | Performance Toolkit and Telemetry; How to deploy for performance |
 Mar 9, 2021 | Integrating with Microsoft Teams.
-
+ 
+ > [!NOTE]
+  > If you’ve registered for a call, you will receive an email with a link to the on-demand recording approximately one week after the call. If you didn’t register prior to the call, you can register at any point after the call and watch the recording. 
 
 ## Social
 
