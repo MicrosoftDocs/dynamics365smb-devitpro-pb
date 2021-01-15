@@ -55,7 +55,7 @@ if CURRENTCLIENTTYPE = CLIENTTYPE::Tablet then
 
 ```  
 url := GETURL(CURRENTCLIENTTYPE);  
-MESSAGE('The URL is %1.', url);  
+Message('The URL is %1.', url);  
 ```  
 
 

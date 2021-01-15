@@ -56,7 +56,7 @@ begin
     repeat  
       FieldIndex  := FieldIndex + 1;  
       MyFieldRef := LocationRecref.FIELDINDEX(FieldIndex);  
-      MESSAGE('Field Number: %1  Field Caption: %2.' , MyFieldRef.NUMBER, MyFieldRef.CAPTION);  
+      Message('Field Number: %1  Field Caption: %2.' , MyFieldRef.NUMBER, MyFieldRef.CAPTION);  
     until FieldIndex = 10;  
 end;
 ```  

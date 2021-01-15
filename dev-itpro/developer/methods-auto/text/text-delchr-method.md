@@ -85,7 +85,7 @@ begin
     Where := '<>';  
     Which := 'Ws';  
     NewString := DELCHR(String, Where, Which);  
-    MESSAGE(Text001, String,NewString);  
+    Message(Text001, String,NewString);  
 end;
 ```  
   
@@ -110,7 +110,7 @@ begin
     Where := '=';  
     Which := 'sx';  
     NewString := DELCHR(String, Where, Which);  
-    MESSAGE(Text001, String,NewString);  
+    Message(Text001, String,NewString);  
 end;
 ```  
   
@@ -135,7 +135,7 @@ begin
     Where := '>';  
     Which := 'Tely';  
     NewString := DELCHR(String, Where, Which);  
-    MESSAGE(Text001, String,NewString);  
+    Message(Text001, String,NewString);  
 end;
 ```  
   
@@ -160,7 +160,7 @@ begin
     Where := '<';  
     Which := 'This ';  
     NewString := DELCHR(String, Where, Which);  
-    MESSAGE(Text001, String,NewString);  
+    Message(Text001, String,NewString);  
 end;
 ```  
   
@@ -184,7 +184,7 @@ begin
     String := Text000;  
     Where := '<';  
     NewString := DELCHR(String, Where);  
-    MESSAGE(Text001, String,NewString);  
+    Message(Text001, String,NewString);  
 end;
 ```  
   
@@ -205,7 +205,7 @@ var
 begin
     String := Text000;
     NewString := DELCHR(String);
-    MESSAGE(Text001, String, NewString);
+    Message(Text001, String, NewString);
 end;
 ```
 The message window displays the following:

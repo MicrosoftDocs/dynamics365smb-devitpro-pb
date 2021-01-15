@@ -55,7 +55,7 @@ var
 begin
     x := -10.235; // x is assigned a negative value  
     y := ABS(x); // y is assigned the value of x without sign  
-    MESSAGE(Text000, x, y);  
+    Message(Text000, x, y);  
 end;
 ```  
 

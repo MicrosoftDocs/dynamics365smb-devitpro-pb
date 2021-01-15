@@ -51,7 +51,7 @@ begin
     for i := 3 to 5 do begin  
       MyRecordRef.OPEN(i);  
       varFieldCount := MyRecordRef.FIELDCOUNT;  
-      MESSAGE(Text000, MyRecordRef.NAME, varFieldCount);  
+      Message(Text000, MyRecordRef.NAME, varFieldCount);  
       MyRecordRef.CLOSE;  
      end;  
 end;

@@ -68,10 +68,10 @@ begin
     MyFieldRef := CustomerRecref.FIELD(1);  
     MyFieldRef.VALUE := varCustomerNo;  
     if CustomerRecref.FIND('=') then begin  
-      MESSAGE(Text000 + Text001,  CustomerRecref.FIELD(1), CustomerRecref.FIELD(2));  
-      MESSAGE('Address: %1, %2',  CustomerRecref.FIELD(5),  CustomerRecref.FIELD(7));  
+      Message(Text000 + Text001,  CustomerRecref.FIELD(1), CustomerRecref.FIELD(2));  
+      Message('Address: %1, %2',  CustomerRecref.FIELD(5),  CustomerRecref.FIELD(7));  
     end else
-      MESSAGE(Text002);  
+      Message(Text002);  
 end;
 ```  
   

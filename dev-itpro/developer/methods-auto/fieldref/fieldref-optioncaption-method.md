@@ -58,7 +58,7 @@ begin
     ItemRecref.OPEN(DATABASE::Item);  
     MyFieldRef := ItemRecref.FIELD(19);  
     OptionCaption := MyFieldRef.OPTIONCAPTION;  
-    MESSAGE('%1', OptionCaption);  
+    Message('%1', OptionCaption);  
 end;
 ```  
   

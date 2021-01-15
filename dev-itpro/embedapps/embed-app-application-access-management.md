@@ -45,10 +45,10 @@ Follow these steps to provide your VARs with access to the Application Access Ma
 
 1. Go to [Lifecycle Services](https://lcs.dynamics.com/v2) and open your project.
 2. Select the **Manage VARs** tile.
-3. On the **Manage VARs access** page, turn on the **Allow VARs to whitelist customers** switch.
+3. On the **Manage VARs access** page, specify if VARs must be able to approve customers.
 
     > [!IMPORTANT]
-    > This step enables application access management. When first you turn on this switch, it won't take effect until you save the change. Be aware that once you save, any existing VAR customers already using your [!INCLUDE[embedapp](../developer/includes/embedapp.md)] and any new customers will be blocked from access by default, until the VAR explicitly enables the app for them.
+    > This step enables application access management. Once you have allowed VARs to approve customers, it won't take effect until you save the change. Be aware that once you save, any existing VAR customers already using your [!INCLUDE[embedapp](../developer/includes/embedapp.md)] and any new customers will be blocked from access by default, until the VAR explicitly enables the app for them.
 
 4. Now you start to register VARs. Select **+Add**.
 5. On the **Register new VAR Tenant**, enter the VAR's Microsoft ID in the **Tenant ID** box.
@@ -60,10 +60,10 @@ Once a VAR is registered, they can start to enable and disable the [!INCLUDE[emb
 
 ### Disabling and enabling application access management
 
-In your LCS project, you can turn the **Allow VARs to whitelist customers** switch off and on&mdash;without having to remove VARs from the list. This capability is useful if you need to temporarily allow access to all VARs and all customers. For example, suppose a VAR is registered but they're not ready to use the API yet.
+In your LCS project, you can specify that VARs can or cannot approve customers without having to remove VARs from the list. This capability is useful if you need to temporarily allow access to all VARs and all customers. For example, suppose a VAR is registered but they're not ready to use the API yet.
 
 > [!IMPORTANT]
-> If you turn the **Allow VARs to whitelist customers** switch off, even if the VARs are still listed on the **Manage VARs access** page, the environment access settings made by VARs for their customers will be ignored. The existing access settings will be enforced again once you turn the **Allow Vars to whitelist customers** switch on and save the changes. 
+> If you specify that VARs cannot approve customers, even if the VARs are still listed on the **Manage VARs access** page, the environment access settings made by VARs for their customers will be ignored. The existing access settings will be enforced again once you allow the VARs to approve customers again and save the changes.
 
 ## VAR: Manage customer access to the [!INCLUDE[embedapp](../developer/includes/embedapp.md)] environments
 

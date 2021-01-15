@@ -75,12 +75,12 @@ begin
     NegAccount := Text001;  
     EmptyAccount := Text002;  
     MyAccount := Text003;  
-    MESSAGE(Text004, Account, NegAccount, EmptyAccount, MyAccount);  
+    Message(Text004, Account, NegAccount, EmptyAccount, MyAccount);  
     ResultAccount := INCSTR(Account);  
     ResultNegAccount := INCSTR(NegAccount);  
     ResultEmptyAccount := INCSTR(EmptyAccount);  
     ResultMyAccount := INCSTR(MyAccount);  
-    MESSAGE(Text005, ResultAccount, ResultNegAccount, ResultEmptyAccount, ResultMyAccount);  
+    Message(Text005, ResultAccount, ResultNegAccount, ResultEmptyAccount, ResultMyAccount);  
 end;
 ```  
   

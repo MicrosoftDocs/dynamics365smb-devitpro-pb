@@ -65,9 +65,9 @@ begin
     Str := Text000;  
     Position := 7;  
     Length := 8;  
-    MESSAGE(Text001, Str);  
+    Message(Text001, Str);  
     NewStr := COPYSTR(Str, Position, Length);  
-    MESSAGE(Text002, NewStr);  
+    Message(Text002, NewStr);  
 end;
 ```  
   

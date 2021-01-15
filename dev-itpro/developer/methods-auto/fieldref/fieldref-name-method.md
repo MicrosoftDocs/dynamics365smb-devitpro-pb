@@ -59,7 +59,7 @@ begin
         CustomerRecref.OPEN(DATABASE::Customer);  
         MyFieldRef := CustomerRecref.FIELD(i);  
         varName := MyFieldRef.NAME;  
-        MESSAGE(Text000, i, varName);  
+        Message(Text000, i, varName);  
         CustomerRecref.CLOSE;  
     end;  
 end;

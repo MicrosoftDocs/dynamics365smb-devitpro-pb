@@ -59,7 +59,7 @@ begin
     Testfile.SEEK(6);  
     Testfile.READ(varString);  
     varLength := Testfile.LEN;  
-    MESSAGE('The text is: %1. The length of the file is: %2', varString, varLength);  
+    Message('The text is: %1. The length of the file is: %2', varString, varLength);  
 end;
 ```  
   

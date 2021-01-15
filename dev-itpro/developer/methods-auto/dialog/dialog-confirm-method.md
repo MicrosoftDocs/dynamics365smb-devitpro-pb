@@ -66,7 +66,7 @@ begin
     CustomerNo := 01121212;  
     Question := Text000;  
     Answer := Dialog.CONFIRM(Question, TRUE, CustomerNo);  
-    MESSAGE(Text001, Answer);  
+    Message(Text001, Answer);  
 end;
 ```  
 

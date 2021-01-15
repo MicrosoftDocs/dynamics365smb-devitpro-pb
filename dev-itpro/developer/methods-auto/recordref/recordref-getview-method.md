@@ -57,7 +57,7 @@ var
 begin    
     RecRef.OPEN(DATABASE::Customer);  
     varView := RecRef.GETVIEW(TRUE);  
-    MESSAGE(Text000, varView);  
+    Message(Text000, varView);  
 end;
 ```  
   

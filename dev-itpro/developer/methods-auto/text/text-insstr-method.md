@@ -67,9 +67,9 @@ var
 begin
     Str := Text000;  
     SubString := Text001;  
-    MESSAGE(Text002, Str);  
+    Message(Text002, Str);  
     NewString := INSSTR(Str, SubString, 13);  
-    MESSAGE(Text003, NewString);  
+    Message(Text003, NewString);  
 end;
 ```  
   

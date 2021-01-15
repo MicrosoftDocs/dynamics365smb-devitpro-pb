@@ -40,9 +40,9 @@ Ok :=   System.EncryptionEnabled()
 
 ```  
 if ENCRYPTIONENABLED then  
-        MESSAGE('Encryption has been enabled')  
+        Message('Encryption has been enabled')  
 else  
-  MESSAGE('Encryption has not been enabled')  
+  Message('Encryption has not been enabled')  
 ```   
 
 ## See Also

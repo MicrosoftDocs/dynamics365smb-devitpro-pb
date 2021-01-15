@@ -72,8 +72,8 @@ begin
     FromChars := Text001;  
     ToChars := Text002;   
     NewString := CONVERTSTR(OriginalString, FromChars, ToChars);  
-    MESSAGE(Text003, OriginalString);  
-    MESSAGE(Text004, NewString);  
+    Message(Text003, OriginalString);  
+    Message(Text004, NewString);  
 end;
 ```  
   

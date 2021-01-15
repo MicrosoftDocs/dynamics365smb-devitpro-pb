@@ -44,7 +44,7 @@ var
     Text000: Label 'The name is %1.';
 begin
     CompName := COMPANYNAME;  
-    MESSAGE(Text000, CompName);  
+    Message(Text000, CompName);  
 end;
 ```  
 

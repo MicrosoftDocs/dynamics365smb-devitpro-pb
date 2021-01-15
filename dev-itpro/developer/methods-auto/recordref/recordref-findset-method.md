@@ -76,7 +76,7 @@ begin
     MyFieldRef := MyRecordRef.FIELD(2);  
     if MyRecordRef.FINDSET(FALSE, FALSE) then begin  
       repeat  
-        MESSAGE(Text000 , MyRecordRef.RECORDID, MyFieldRef.VALUE);  
+        Message(Text000 , MyRecordRef.RECORDID, MyFieldRef.VALUE);  
       until MyRecordRef.NEXT = 0;  
     end;  
 end;

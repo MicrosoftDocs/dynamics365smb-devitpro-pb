@@ -70,9 +70,9 @@ begin
     for i := 1 to 5 do begin
       MyFieldRef := Recref.FIELDINDEX(i);  
       if MyFieldRef.ACTIVE then  
-        MESSAGE(Text000, i)  
+        Message(Text000, i)  
       else begin 
-        MESSAGE(Text001, i)  
+        Message(Text001, i)  
       end;  
     end;  
 end;

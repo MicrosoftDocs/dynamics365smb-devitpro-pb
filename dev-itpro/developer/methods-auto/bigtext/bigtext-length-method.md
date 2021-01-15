@@ -55,7 +55,7 @@ var
 begin
     MyBigText.ADDTEXT('ABCDEFG');  
     VarLength := MyBigText.LENGTH;  
-    MESSAGE(Text000, VarLength);  
+    Message(Text000, VarLength);  
 end;
   
 ```  

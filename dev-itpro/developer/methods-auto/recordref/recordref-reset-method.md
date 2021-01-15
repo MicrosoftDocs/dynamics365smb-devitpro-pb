@@ -52,13 +52,13 @@ var
 begin   
     RecRef.OPEN(DATABASE::Customer);  
     Filters1 := RecRef.GETFILTERS;  
-    MESSAGE(Text000, Filters1);  
+    Message(Text000, Filters1);  
     RecRef.SETRECFILTER;  
     Filters2 := RecRef.GETFILTERS;  
-    MESSAGE(Text001, Filters2);  
+    Message(Text001, Filters2);  
     RecRef.RESET;  
     Filters3 := RecRef.GETFILTERS;  
-    MESSAGE(Text002, Filters3);  
+    Message(Text002, Filters3);  
 end;
   
 ```  

@@ -54,7 +54,7 @@ begin
       MyPage.SETRECORD(MyRecord);  
       MyPage.RUN;
     end else begin
-      MESSAGE(Text000);  
+      Message(Text000);  
     end;  
 end;
 ```

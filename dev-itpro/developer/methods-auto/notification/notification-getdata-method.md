@@ -49,7 +49,7 @@ For more information and a detailed example, see [Notifications](../../devenv-no
 ##  Example
 The following code sets the data for a notification:
 ```
-MyNotification.MESSAGE := 'This is a notification';
+MyNotification.Message := 'This is a notification';
 MyNotification.SCOPE := NOTIFICATIONSCOPE::LocalScope;
 MyNotification.SETDATA('Created',FORMAT(CURRENTDATETIME,0,9));
 MyNotification.SETDATA('ID',FORMAT(CREATEGUID,0,9));

@@ -42,11 +42,11 @@ Ok :=   System.EncryptionKeyExists()
 ```  
 if ENCRYPTIONENABLED then  
         if ENCRYPTIONKEYEXISTS then  
-          MESSAGE('Encryption has been enabled and the encryption key is present in this server instance')  
+          Message('Encryption has been enabled and the encryption key is present in this server instance')  
         else  
-          MESSAGE('Encryption has been enabled but the encryption key is not present on this server instance')  
+          Message('Encryption has been enabled but the encryption key is not present on this server instance')  
 else  
-  MESSAGE('Encryption has not been enabled');  
+  Message('Encryption has not been enabled');  
 ``` 
 
 ## See Also

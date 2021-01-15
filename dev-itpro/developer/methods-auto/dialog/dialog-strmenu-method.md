@@ -62,7 +62,7 @@ begin
     Options := Text000;  
     // Sets the default to option 3  
     Selected := Dialog.STRMENU(Options, 3, Text002);  
-    MESSAGE(Text001, Selected);  
+    Message(Text001, Selected);  
 end;
 ```  
   

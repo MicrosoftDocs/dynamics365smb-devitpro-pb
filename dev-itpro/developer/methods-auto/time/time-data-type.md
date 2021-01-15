@@ -27,18 +27,18 @@ The displayed text format of the time is determined by your Regional and Languag
   
 The following are examples of valid assignments of times to a Time variable *MyTime*. Time must be set by specifying hours, minutes, and seconds. 
   
-```  
+```al
 MyTime := 0T;  
 MyTime := 115900T;  
-MESSAGE(FORMAT(MyTime));  
+Message(FORMAT(MyTime));  
 MyTime := 115934T;  
-MESSAGE(FORMAT(MyTime));  
+Message(FORMAT(MyTime));  
 MyTime := 115934.444T;  
-MESSAGE(FORMAT(MyTime));  
+Message(FORMAT(MyTime));  
 MyTime := 235900T;  
-MESSAGE(FORMAT(MyTime));  
+Message(FORMAT(MyTime));  
 MyTime := 030000T;  
-MESSAGE(FORMAT(MyTime));  
+Message(FORMAT(MyTime));  
 ```  
   
 The following shows what the message windows display accordingly on a computer with the regional format set to English (United States) for the syntax examples above.  
@@ -57,7 +57,7 @@ The following shows what the message windows display accordingly on a computer w
 
 Microsoft SQL Server stores information about both date and time in columns of the DATETIME type. [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)] uses only the time part and inserts a constant value for the date: 01-01-1754.  
   
-The [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)] undefined time is represented by the same value as an undefined date. The undefined date is represented by the earliest valid DATETIME in SQL Server, which is 01-01-1753 00:00:00:000.  
+The [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)] undefined time is represented by the same value as an undefined date. The undefined date is represented by the earliest valid DateTime in SQL Server, which is 01-01-1753 00:00:00:000.  
   
 ## See Also
 

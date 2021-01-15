@@ -55,9 +55,9 @@ begin
     if RecRef.FIND('-') then begin  
       RecID := RecRef.RECORDID;  
       varTableNumber := RecID.TABLENO;  
-      MESSAGE('The Customer table is number: %1', varTableNumber);  
+      Message('The Customer table is number: %1', varTableNumber);  
     end else begin
-    MESSAGE('No records found in the table');  
+    Message('No records found in the table');  
     end;  
 end;
 ```  

@@ -49,9 +49,9 @@ var
     Text002: Label 'The string after UPPERCASE is called:\\%1';  
 begin
     Lower := Text000;  
-    MESSAGE(Text001, Lower);  
+    Message(Text001, Lower);  
     Upper := UPPERCASE(Lower);  
-    MESSAGE(Text002, Upper);  
+    Message(Text002, Upper);  
 end;
 ```  
   

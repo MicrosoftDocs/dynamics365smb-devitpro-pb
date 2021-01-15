@@ -51,9 +51,9 @@ begin
     CustomerRecRef.OPEN(18);  
     MyFieldRef := CustomerRecRef.FIELD(1);  
     MyFieldRef.SETRANGE('10000' , '20000');  
-    MESSAGE(Text000 ,CustomerRecRef.COUNT);  
+    Message(Text000 ,CustomerRecRef.COUNT);  
     CustomerRecRef.DELETEALL;  
-    MESSAGE(Text000 ,CustomerRecRef.COUNT);  
+    Message(Text000 ,CustomerRecRef.COUNT);  
 end;
 ```  
   

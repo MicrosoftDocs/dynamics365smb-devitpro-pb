@@ -48,9 +48,9 @@ var
     Text000: Text;
 begin
     Text000 := 'ABC123';  
-    MESSAGE('Value: ' + Text000);  
+    Message('Value: ' + Text000);  
     Text000 := ENCRYPT(Text000);  
-    MESSAGE('Value: ' + Text000);  
+    Message('Value: ' + Text000);  
 end;
 ```  
 

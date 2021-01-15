@@ -56,7 +56,7 @@ begin
     MyFieldRef := CustomerRecref.FIELD(1);  
     MyFieldRef.SETFILTER('10000..40000');  
     varMax := MyFieldRef.GETRANGEMAX();  
-    MESSAGE(Text000, varMax);  
+    Message(Text000, varMax);  
 end;
 ```  
   

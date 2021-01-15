@@ -66,7 +66,7 @@ begin
       repeat  
         Count := Count + 1;  
       until CustomerRecref.NEXT = 0;  
-    MESSAGE(Text000 , Count);  
+    Message(Text000 , Count);  
 end;
 ```  
   
