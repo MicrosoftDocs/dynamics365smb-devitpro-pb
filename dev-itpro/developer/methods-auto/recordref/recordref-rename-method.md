@@ -87,19 +87,19 @@ begin
     CustomerRec.GET('0112121');  
     NewNo1 := ‘9999999’;  
     NewNo2 := ‘8888888’;  
-    MESSAGE('Customer name: %1; Customer number: %2',CustomerRec.Name, CustomerRec."No.");  
+    Message('Customer name: %1; Customer number: %2',CustomerRec.Name, CustomerRec."No.");  
     result := CustomerRec.RENAME(NewNo1);  
     if result then  
-      MESSAGE('After rename - Customer name: %1; Customer number: %2',CustomerRec.Name, CustomerRec."No.")  
+      Message('After rename - Customer name: %1; Customer number: %2',CustomerRec.Name, CustomerRec."No.")  
     else  
-      MESSAGE('No rename.');  
+      Message('No rename.');  
     CustRecRef.GETTABLE(CustomerRec);  
     result := CustRecRef.RENAME(NewNo2);  
     if result then begin  
       CustomerRec.GET(NewNo2);  
-      MESSAGE('After rename 2 - Customer name: %1; Customer number: %2',CustomerRec.Name, CustomerRec."No.")  
+      Message('After rename 2 - Customer name: %1; Customer number: %2',CustomerRec.Name, CustomerRec."No.")  
     end else  
-      MESSAGE('No rename.');  
+      Message('No rename.');  
 end;
 ```  
   

@@ -53,7 +53,7 @@ For more information and a detailed example, see [Notifications](../../devenv-no
 The following code creates two actions for a notification. The actions call the **RunAction1** and **RunAction2** methods in the codeunit **Action Handler**.
 
 ```
-MyNotification.MESSAGE := 'This is a notification';
+MyNotification.Message := 'This is a notification';
 MyNotification.SCOPE := NOTIFICATIONSCOPE::LocalScope;
 MyNotification.ADDACTION('Action 1',CODEUNIT::"Action Handler",'RunAction1');
 MyNotification.ADDACTION('Action 2',CODEUNIT::"Action Handler",'RunAction2');
@@ -63,12 +63,12 @@ To handle the actions, the **Action Handler** codeunit has two global methods th
 ```
 PROCEDURE RunAction1@1(MyNotification@1000 : Notification);
 BEGIN
-    MESSAGE('This is RunAction1');
+    Message('This is RunAction1');
 end;
 
 PROCEDURE RunAction2@2(MyNotification@1000 : Notification);
 BEGIN
- MESSAGE('This is RunAction2');
+ Message('This is RunAction2');
 end;
 ```
 

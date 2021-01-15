@@ -56,9 +56,9 @@ begin
     while not StreamInTest.EOS do begin 
       StreamInTest.READTEXT(Buffer);  
       //Do some processing  
-      MESSAGE('Stream is still processing')  
+      Message('Stream is still processing')  
     end;  
-    MESSAGE('End of Stream');  
+    Message('End of Stream');  
 end;
 ```  
   

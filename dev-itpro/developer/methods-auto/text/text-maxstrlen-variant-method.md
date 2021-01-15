@@ -57,7 +57,7 @@ begin
     City := Text000;  
     MaxLength := MaxStrLen(City);  
     Length := StrLen(City);  
-    MESSAGE(Text001 + Text002, MaxLength, Length);  
+    Message(Text001 + Text002, MaxLength, Length);  
 end;
 ```  
   

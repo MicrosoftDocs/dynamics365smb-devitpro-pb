@@ -55,7 +55,7 @@ begin
     varDatabaseName := DATABASE::Customer;  
     MyRecordRef.OPEN(varDatabaseName);  
     varTableNumber := MyRecordRef.NUMBER;  
-    MESSAGE(Text000, MyRecordRef.CAPTION, varTableNumber);  
+    Message(Text000, MyRecordRef.CAPTION, varTableNumber);  
 end;
   
 ```  

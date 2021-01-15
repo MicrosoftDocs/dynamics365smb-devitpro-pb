@@ -57,7 +57,7 @@ begin
     CustomerRecRef.OPEN(18);  
     CustomerRecRef.SETVIEW('SORTING(Name) ORDER(Ascending) WHERE(No.=CONST(10000..20000))');  
     ViewString := CustomerRecRef.GETVIEW;  
-    MESSAGE(Text000, ViewString);  
+    Message(Text000, ViewString);  
 end;
   
 ```  

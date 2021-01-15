@@ -54,11 +54,11 @@ var
     Year: Integer;
     Text000: Label 'Today is day %1 of month %2 of the year %3.';
 begin
-    InputDate := TODAY;  
+    InputDate := Today;  
     Day := DATE2DMY(InputDate,1);  
     Month := DATE2DMY(InputDate,2);  
     Year := DATE2DMY(InputDate,3);  
-    MESSAGE(Text000,Day,Month,Year); 
+    Message(Text000,Day,Month,Year); 
 end; 
 ```  
   

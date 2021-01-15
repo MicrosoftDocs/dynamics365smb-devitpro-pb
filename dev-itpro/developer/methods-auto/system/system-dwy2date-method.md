@@ -66,7 +66,7 @@ begin
     Week := 1;  
     Year := 2014;  
     OutputDate := DWY2DATE(DayOfWeek, Week, Year);  
-    MESSAGE(Text000, DayOfWeek, Week, Year, OutputDate);  
+    Message(Text000, DayOfWeek, Week, Year, OutputDate);  
 end;
 ```  
   
@@ -92,7 +92,7 @@ begin
     Week := 1;  
     Year := 2016;  
     OutputDate := DWY2DATE(DayOfWeek, Week, Year);  
-    MESSAGE(Text000, DayOfWeek, Week, Year, OutputDate);  
+    Message(Text000, DayOfWeek, Week, Year, OutputDate);  
 end;
 ```  
   
@@ -116,7 +116,7 @@ begin
     DayOfWeek := 1;  
     Week := 1;  
     OutputDate := DWY2DATE(DayOfWeek, Week);  
-    MESSAGE(Text000, DayOfWeek, Week, OutputDate);  
+    Message(Text000, DayOfWeek, Week, OutputDate);  
 end;
 ```  
   

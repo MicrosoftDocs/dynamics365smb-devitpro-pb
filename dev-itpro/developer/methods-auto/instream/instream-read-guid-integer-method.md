@@ -67,7 +67,7 @@ begin
     recBinaries.CALCFIELDS(recBinaries.Picture);  
     recBinaries.Picture.CREATEINSTREAM(varInstream);  
     numChars := varInstream.READ(varChars,3);  
-    MESSAGE(Text000, numChars, varChars);  
+    Message(Text000, numChars, varChars);  
 end;
 ```  
   

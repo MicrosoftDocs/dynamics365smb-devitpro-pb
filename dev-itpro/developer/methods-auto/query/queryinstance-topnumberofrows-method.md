@@ -107,7 +107,7 @@ codeunit 50100 MyQueryTop10
         // Saves the dataset as a CSV file.  
         MyQuery.SaveAsCsv('c:\temp\CustomerSales.csv');
         // Displays a message that shows the number of rows.  
-        MESSAGE(Text000, counter);
+        Message(Text000, counter);
 
     end;
 

@@ -69,8 +69,8 @@ begin
     Position := 11; // Remove the word 'prices' and a blank.  
     Length := 7;  
     NewStr := DELSTR(Str, Position, Length);  
-    MESSAGE(Text001, Str);  
-    MESSAGE(Text002, NewStr);  
+    Message(Text001, Str);  
+    Message(Text002, NewStr);  
 end;
 ```  
   

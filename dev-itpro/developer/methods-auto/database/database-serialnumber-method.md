@@ -44,7 +44,7 @@ var
     Text000: Label 'The serial number for this software package is:%1.';
 begin 
     SN := SERIALNUMBER;  
-    MESSAGE(Text000, SN);  
+    Message(Text000, SN);  
 end;
 ```  
   

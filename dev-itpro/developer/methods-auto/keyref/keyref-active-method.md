@@ -51,7 +51,7 @@ begin
     RecRef.OPEN(18);  
     varKeyRef := RecRef.KEYINDEX(1);  
     IsActive := varKeyRef.ACTIVE;  
-    MESSAGE('Is the key active =  %1 ', IsActive);  
+    Message('Is the key active =  %1 ', IsActive);  
 end;
 ```  
   

@@ -44,7 +44,7 @@ The new work date you want to set.
 If you do not set a value for the *NewDate* parameter, then the method returns the work date that is specified by the **Set Work Date** option on the **Application** menu ![Application Menu button in menu bar](media/ApplicationMenuIcon.png "ApplicationMenuIcon") in the [!INCLUDE[nav_windows](../includes/nav_windows_md.md)]. If there is no work date selected,  then the current system date is returned.  
 -->
 
- To set the work date to follow the calendar day so that the work date is always the current date, set *NewDate* to `TODAY` or `0D`. If you explicitly set *NewDate* to the current date, then the work date will also follow the calendar day.  
+ To set the work date to follow the calendar day so that the work date is always the current date, set *NewDate* to `Today` or `0D`. If you explicitly set *NewDate* to the current date, then the work date will also follow the calendar day.  
 
 ## Example  
  This example shows how to use the WORKDATE method. 
@@ -55,7 +55,7 @@ var
     Text000: Label 'The new work date is: %1';
 begin
     NewDate := WORKDATE(20180101D);  
-    MESSAGE(Text000, NewDate);  
+    Message(Text000, NewDate);  
 end;
 ```  
 

@@ -55,7 +55,7 @@ var
 begin    
     RecRef.OPEN(DATABASE::Customer);  
     varPrimaryKey := RecRef.GETPOSITION(TRUE);  
-    MESSAGE(Text000, varPrimaryKey);  
+    Message(Text000, varPrimaryKey);  
 end;
 ```  
   

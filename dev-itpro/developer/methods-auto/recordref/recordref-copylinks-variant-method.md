@@ -62,7 +62,7 @@ begin
       repeat  
         Count := Count + 1;  
         CustomerRecref.COPYLINKS(VendorRecord);  
-        MESSAGE(Text000, CustomerRecref.RECORDID);  
+        Message(Text000, CustomerRecref.RECORDID);  
       until CustomerRecref.NEXT = 0;  
     CustomerRecref.CLOSE;  
 end;

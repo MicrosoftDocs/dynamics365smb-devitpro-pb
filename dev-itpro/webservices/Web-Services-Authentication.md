@@ -11,11 +11,15 @@ ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 # Web Services Authentication
-When users send a request for a web service, they're authenticated according to the credential type that is configured for [!INCLUDE[server](../developer/includes/server.md)]. To access a web service, users must provide valid credentials for the credential type being used. If [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is configured for Windows credential type, then users are automatically authenticated against the Windows account that their computer is running under. In this case, they aren't prompted for their credentials. For other credential types, users are prompted to enter a user name and password. 
+
+When users send a request for a web service, they're authenticated according to the credential type that is configured for [!INCLUDE[server](../developer/includes/server.md)]. To access a web service, users must provide valid credentials for the credential type being used. If [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is configured for Windows credential type, then users are automatically authenticated against the Windows account that their computer is running under. In this case, they aren't prompted for their credentials. For other credential types, users are prompted to enter a user name and password.
+
+> [!IMPORTANT]
+> With [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, the use of access keys (Basic Auth) for web service authentication is [deprecated](../upgrade/deprecated-features-w1.md#accesskeys). We recommend that you use OAuth2 instead. For more information, see [Using OAuth to Authorize Business Central Web Services](../webservices/authenticate-web-services-using-oauth.md).
 
 ## About NavUserPassword and AccessControlService credential types
   
-If your solution uses NavUserPassword or AccessControlService as the credential type, users can access data through SOAP and OData web services if they specify a password or a web service access key. You set up the user accounts in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client, based on how they will access [!INCLUDE[prod_short](../developer/includes/prod_short.md)] data. For example, if you set up a user account that will allow an external application to read [!INCLUDE[prod_short](../developer/includes/prod_short.md)] data through a web service, you can generate a web service access key and specify that key for the relevant user accounts. Then, you add the access key to the configuration of the application that consumes the web service. In contrast, when users access [!INCLUDE[prod_short](../developer/includes/prod_short.md)] data through a web service in Microsoft Excel, for example, they specify a password instead of a web service access key.  
+If your solution uses NavUserPassword or AccessControlService as the credential type, users can access data through SOAP and OData web services by specifying a password or access key. You set up the user accounts in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client, based on how they'll access [!INCLUDE[prod_short](../developer/includes/prod_short.md)] data. For example, if you set up a user account that will allow an external application to read [!INCLUDE[prod_short](../developer/includes/prod_short.md)] data through a web service, you can generate a web service access key and specify that key for the relevant user accounts. Then, you add the access key to the configuration of the application that consumes the web service. In contrast, when users access [!INCLUDE[prod_short](../developer/includes/prod_short.md)] data through a web service in Microsoft Excel, for example, they specify a password instead of a web service access key.  
   
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] also supports OAuth authentication on OData and SOAP endpoints. OAuth is an open standard for authorization that provides client applications with secure delegated access to server resources. OAuth enables you to extend single sign-on with Microsoft 365 to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] web services. For more information, see [Using OAuth to Authorize Business Central Web Services \(OData and SOAP\)](authenticate-web-services-using-oauth.md).  
 
@@ -23,7 +27,7 @@ If your solution uses NavUserPassword or AccessControlService as the credential 
 > If the [!INCLUDE[server](../developer/includes/server.md)] is configured to use NavUserPassword or AccessControlService authentication, then the username, password, and access key can be exposed if the SOAP or OData data traffic is intercepted and the connection string is decoded. To avoid this condition, configure SOAP and OData web services to use Secure Socket Layer \(SSL\). 
   
 ## Unicode characters in user name or password  
-When [!INCLUDE[prod_short](../developer/includes/prod_short.md)] data is consumed by a web service, users can't be authenticated if their user name or password contains Unicode characters. This is a limitation in the basic authentication mechanism that is defined in the HTTP/1.1 specification.  
+When [!INCLUDE[prod_short](../developer/includes/prod_short.md)] data is consumed by a web service, users can't be authenticated if their user name or password contains Unicode characters. This condition is a limitation in the basic authentication mechanism that is defined in the HTTP/1.1 specification.  
   
 The same limitation applies to exposing [!INCLUDE[prod_short](../developer/includes/prod_short.md)] data in external products such as a browser or a Microsoft .NET Framework assembly.
 
@@ -43,7 +47,7 @@ Follow these instructions to generate a web service access key for a user. You p
   
 4. Choose the **OK** button.  
   
-    The access key is automatically generated. If you're signed in as the user that you just modified, the key appears in the **Web Service Access Key** field. Otherwise, the key is masked so only asterisks (*) are shown.
+    The access key is automatically generated. If you're signed in as the user that you modified, the key appears in the **Web Service Access Key** field. Otherwise, the key is masked so only asterisks (*) are shown.
   
 ### Implement the Web Service Access Key
 

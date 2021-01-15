@@ -58,7 +58,7 @@ begin
     SaleRecref.OPEN(37);  
     MyFieldRef := SaleRecref.FIELD(2);  
     varRelation := MyFieldRef.RELATION;  
-    MESSAGE(Text000, varRelation);  
+    Message(Text000, varRelation);  
 end;
 ```  
   

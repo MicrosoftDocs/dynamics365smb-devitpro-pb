@@ -50,9 +50,9 @@ var
     Text002: Label 'The string after LOWERCASE is:>%1<';
 begin
     Str := Text000;  
-    MESSAGE(Text001, Str);  
+    Message(Text001, Str);  
     Lower := LOWERCASE(Str);  
-    MESSAGE(Text002, Lower);  
+    Message(Text002, Lower);  
 end;
 ```  
   

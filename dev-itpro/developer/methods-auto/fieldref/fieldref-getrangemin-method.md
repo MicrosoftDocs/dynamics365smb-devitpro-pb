@@ -56,7 +56,7 @@ begin
     MyFieldRef := CustomerRecref.FIELD(1);  
     MyFieldRef.SETFILTER('10000..40000');  
     varMin := MyFieldRef.GETRANGEMIN();  
-    MESSAGE(Text000, varMin);  
+    Message(Text000, varMin);  
 end;
 ```  
   

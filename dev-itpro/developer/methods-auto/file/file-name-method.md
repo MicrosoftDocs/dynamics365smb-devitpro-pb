@@ -56,7 +56,7 @@ An instance of the [File](file-data-type.md) data type.
 begin
     TestFile.OPEN('C:\TestFolder\TestFile.txt');  
     varName := TestFile.NAME;  
-    MESSAGE('The name of the file is: %1',varName);  
+    Message('The name of the file is: %1',varName);  
 end;
 ```  
   

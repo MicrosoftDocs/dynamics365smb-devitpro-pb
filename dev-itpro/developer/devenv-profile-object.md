@@ -37,7 +37,7 @@ profile MyProfile
 { 
     Description = 'Some internal comment that only the Dev can see'; 
     Caption = 'My User-friendly Name'; 
-    ProfileDescription = 'A detailed description of who is this profile for, why/how to use it (etc)' 
+    ProfileDescription = 'A detailed description of who is this profile for, why/how to use it (etc)'; 
     RoleCenter = MyRoleCenter; 
     Enabled = true; 
     Promoted = true; 

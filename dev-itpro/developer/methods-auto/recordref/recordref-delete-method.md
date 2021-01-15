@@ -72,7 +72,7 @@ begin
     if MyRecordRef.FIND('=') then begin  
       ifMyRecordRef.DELETE then begin  
         MyRecordRef.MODIFY;  
-        MESSAGE(Text000, MyFieldRef.VALUE);  
+        Message(Text000, MyFieldRef.VALUE);  
       end;  
     end;  
 end;

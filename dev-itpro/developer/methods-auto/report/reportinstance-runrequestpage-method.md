@@ -95,7 +95,7 @@ begin
         ReportId := 206;  
         UserId := CurrentUser;  
         Parameters.CREATEOUTSTREAM(OStream,TEXTENCODING::UTF8);  
-        MESSAGE(XmlParameters);  
+        Message(XmlParameters);  
         OStream.WRITETEXT(XmlParameters);  
     
         INSERT;  

@@ -54,7 +54,7 @@ begin
     TableNo := 18;  
     MyRecordRef.OPEN(TableNo);  
     varTableName := MyRecordRef.NAME;  
-    MESSAGE(Text000, TableNo, varTableName);  
+    Message(Text000, TableNo, varTableName);  
 end;
 ```  
 
