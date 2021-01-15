@@ -3,7 +3,7 @@ title: "Country/region availability and supported languages"
 description: "Overview of availability and supported languages."
 author: sorenfriisalexandersen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 01/15/2021
 ms.reviewer: edupont
 ms.topic: article
 ms.service: "dynamics365-business-central"
@@ -60,9 +60,9 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Russia **(on-premises only)**|Microsoft|Available|(Not listed)|
 |Serbia|Partner|Available|RS|
 |Singapore|Partner|Available|SG|
-|Slovenia|Partner|Available|SL|
+|Slovenia|Partner|Available|SI|
 |South Africa|Partner|Available|ZA|
-|South Korea|Partner|Available|KO|
+|South Korea|Partner|Available|KR|
 |Spain|Microsoft|Available|ES|
 |Sweden|Microsoft|Available|SE|
 |Switzerland|Microsoft|Available|CH|
