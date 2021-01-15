@@ -11,7 +11,7 @@ ms.service: "dynamics365-business-central"
 
 # OData Web Services
 
-The Open Data Protocol \(OData\) is a web protocol that is designed for querying tabular data and provides you with an alternative to SOAP-based web services. OData builds on web technologies such as HTTP, the Atom Publishing Protocol \(AtomPub\), and JavaScript Object Notation \(JSON\) to provide access to information from different applications, services, and stores. OData uses URIs for resource identification and commits to an HTTP-based, uniform interface for interacting with resources. This commitment to core Web principles allows for OData to enable a new level of data integration and interoperability across a broad range of clients, servers, services, and tools.  
+The Open Data Protocol \(OData\) is a web protocol that is designed for querying tabular data and provides you with an alternative to SOAP-based web services. OData builds on web technologies such as HTTP and JavaScript Object Notation \(JSON\) to provide access to information from different applications, services, and stores. OData uses URIs for resource identification and commits to an HTTP-based, uniform interface for interacting with resources. This commitment to core Web principles allows for OData to enable a new level of data integration and interoperability across a broad range of clients, servers, services, and tools.  
   
  You can use OData web services to show [!INCLUDE[prod_short](../developer/includes/prod_short.md)] data, and you can update data in a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database using OData web services.  
   
@@ -21,8 +21,8 @@ The Open Data Protocol \(OData\) is a web protocol that is designed for querying
   
 - Microsoft SharePoint can expose its list-oriented data with OData.  
   
-- Microsoft Azure Table Services are based on OData.  
-  
+- Microsoft Azure Table Services are based on OData.
+      
 The topics in this section describe the key concepts and techniques for accessing [!INCLUDE[prod_short](../developer/includes/prod_short.md)] data from OData applications that are supported by [!INCLUDE[prod_short](../developer/includes/prod_short.md)] .  
   
 |To|See|  

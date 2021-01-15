@@ -56,7 +56,7 @@ FlowFilters are a special kind of filter that you use to set ranges on calculati
      This is the "ATHENS Mobile Pedestal" item. The value for the *Qty\_on\_Sales\_Order* parameter is 33:  
   
     ```  
-    <d:Qty_on_Sales_Order m:type="Edm.Decimal">33</d:Qty_on_Sales_Order>  
+    "Qty_on_Purch_Order": 20
     ```  
   
 5.  Apply a FlowFilter to that item and specify **GREEN** as the value for the **Location\_Filter**:  
@@ -68,7 +68,7 @@ FlowFilters are a special kind of filter that you use to set ranges on calculati
      The item is returned as before, the value of the FlowField that has changed. The value for the *Qty\_on\_Sales\_Order* parameter is now 27:  
   
     ```  
-    <d:Qty_on_Sales_Order m:type="Edm.Decimal">27</d:Qty_on_Sales_Order>  
+    "Qty_on_Purch_Order": 27  
     ```  
   
      This indicates that there are 27 ATHENS Mobile Pedestals on sales orders designated for the GREEN location.  
