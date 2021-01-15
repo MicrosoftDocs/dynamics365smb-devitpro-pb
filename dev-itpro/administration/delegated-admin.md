@@ -1,6 +1,6 @@
 ---
-title: Delegated administrator access to Business Central Online
-description: Learn about how you as the reselling partner can help customers manage Dynamics 365 Business Central online and offer technical support, provided that you have given your users the Admin agent or Helpdesk agent roles.  
+title: Delegated admin access to Business Central online
+description: As the reselling partner, help customers manage their Business Central online, and provide them with technical support.  
 author: edupont04
 
 ms.service: dynamics365-business-central
