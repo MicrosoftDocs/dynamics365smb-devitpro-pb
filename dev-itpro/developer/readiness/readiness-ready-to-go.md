@@ -49,18 +49,18 @@ Discover the latest Business Central Launch Event here: https://aka.ms/MSDyn365B
 - Directions North America: https://www.directionsna.com
 - Directions EMEA: https://directions4partners.com
 - Directions ASIA: https://directions4partners.com
-- TechDays: https://navtechdays.com  
+- TechDays: https://navtechdays.com 
 
 ## Engagement
 
 **GitHub**  
-Use the GitHub forum to post questions about Visual Studio Code and AL Language to the community and Microsoft experts here: https://github.com/microsoft/al/issues. 
+Use the GitHub forum to post questions about Visual Studio Code and AL Language to the community and Microsoft experts: https://github.com/microsoft/al/issues 
 
 **Yammer**  
-Join the conversation about Business Central for partners on Yammer here: https://aka.ms/bcyammer  
+Join the conversation about Business Central for partners on Yammer: https://aka.ms/bcyammer  
 
 **Business Central Office Hours Calls**  
-Join the Business Central Office Hours to learn more and connect with the Business Central engineering team. Find the full list of office hours calls from December 2020 throughout March 2021 below. Register for the live calls and find on-demand recordings here: https://aka.ms/BCOfficehours.
+Join the Business Central Office Hours to learn more and connect with the Business Central engineering team. Find the full list of office hours calls from December 2020 throughout March 2021 below. Register for the live calls and find on-demand recordings: https://aka.ms/BCOfficehours.
 
 | Date      | Topic |
 |--------------|--------------|
