@@ -14,8 +14,8 @@ ms.author: solsen
 
 ![ReadyToGo Banner](../media/readytogo-banner.png)
 
-## Roadmap and What’s New 
-### Overall roadmap  
+### Roadmap and what’s new 
+#### Overall roadmap  
 Find the overall roadmap for Business Central here: https://dynamics.microsoft.com/en-us/roadmap/business-central/ 
 
 ### What’s new in Business Central  
