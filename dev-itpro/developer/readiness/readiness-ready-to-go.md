@@ -60,7 +60,7 @@ Use the GitHub forum to post questions about Visual Studio Code and AL Language 
 Join the conversation about Business Central for partners on Yammer: https://aka.ms/bcyammer  
 
 **Business Central Office Hours Calls**  
-Join the Business Central Office Hours to learn more and connect with the Business Central engineering team. Find the full list of office hours calls from December 2020 throughout March 2021 below. Register for the live calls and find on-demand recordings: https://aka.ms/BCOfficehours.
+Join the Business Central Office Hours to learn more and connect with the Business Central engineering team. Find the full list of office hours calls from December 2020 throughout March 2021 below. Register for the live calls and find on-demand recordings: https://aka.ms/BCOfficehours
 
 | Date      | Topic |
 |--------------|--------------|
