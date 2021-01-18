@@ -48,8 +48,8 @@ Discover the latest Business Central Launch Event here: https://aka.ms/MSDyn365B
 **Global community hosted events**  
 - Directions North America: https://www.directionsna.com
 - Directions EMEA: https://directions4partners.com
-- Directions ASIA: https://directions4partners.com 
-- TechDays: https://navtechdays.com 
+- Directions ASIA: https://directions4partners.com
+- TechDays: https://navtechdays.com
 
 ## Engagement
 
@@ -84,10 +84,10 @@ Follow us on Twitter to stay tuned about what’s going on in the #MSDyn365BC co
 Subscribe to the Microsoft Dynamics 365 channel on YouTube: https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ  
 
 **Blog for IT Professionals**  
-Business Central on the Dynamics 365 blog for IT Professionals: https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/   
+Business Central on the Dynamics 365 blog for IT Professionals: https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/   
  
 **Blog for Decision Makers**  
-The Dynamics 365 blog for Business Decision Makers: https://cloudblogs.microsoft.com/dynamics365/bdm/  
+The Dynamics 365 blog for Business Decision Makers: https://cloudblogs.microsoft.com/dynamics365/bdm/  
 
 ### See Also:  
 - Get started with developing apps: https://aka.ms/bcpublisher
