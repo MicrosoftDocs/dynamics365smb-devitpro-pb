@@ -2,7 +2,7 @@
 title: "Variant Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 12/09/2020
+ms.date: 01/12/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -60,7 +60,7 @@ The following methods are available on instances of the Variant data type.
 |[IsRecord()](variant-isrecord-method.md)|Indicates whether an AL variant contains a Record variable.|
 |[IsRecordId()](variant-isrecordid-method.md)|Indicates whether an AL variant contains a RecordId variable.|
 |[IsRecordRef()](variant-isrecordref-method.md)|Indicates whether an AL variant contains a RecordRef variable.|
-|[IsReportFormat()](variant-isreportformat-method.md)|Indicates whether an AL variant contains a RecordFormat variable.|
+|[IsReportFormat()](variant-isreportformat-method.md)|Indicates whether an AL variant contains a ReportFormat variable.|
 |[IsSecurityFiltering()](variant-issecurityfiltering-method.md)|Indicates whether an AL variant contains a SecurityFiltering variable.|
 |[IsTableConnectionType()](variant-istableconnectiontype-method.md)|Indicates whether an AL variant contains a TableConnectionType variable.|
 |[IsTestPermissions()](variant-istestpermissions-method.md)|Indicates whether an AL variant contains a TestPermissions variable.|
