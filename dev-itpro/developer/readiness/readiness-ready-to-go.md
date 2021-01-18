@@ -29,37 +29,37 @@ Find out what's new in Microsoft Dynamics 365 applications and Microsoft Power P
 Find the latest minor update here: https://aka.ms/bclastminorupdate 
 
 
-## Country/regional availability and supported languages 
-##### Supported countries, regions and languages  
+## Country availability and supported languages 
+**Supported countries, regions and languages**  
 Find the countries/regions where Dynamics 365 Business Central is available and which languages are supported: https://aka.ms/bccountries
 
 ## Training and coaching 
-### ISV Development Center  
+**ISV Development Center**  
 Online or in-person coaching for Business Central. Get in touch with an ISV Development Center: https://partner.microsoft.com/en-us/isv-resource-hub/development-centers/find-a-center  
 
-### Microsoft Learn page 
-
+**Microsoft Learn page**  
 Browse all Business Central training videos and courses on Microsoft Learn: https://aka.ms/BCLearn 
 
 ## Events
 
-### Microsoft hosted events  
+**Microsoft hosted events**  
 Discover the latest Business Central Launch Event here: https://aka.ms/BClaunch   
 
-### Global community hosted events 
-- Directions North America: https://www.directionsna.com/
-- Directions EMEA: https://directions4partners.com/
-- Directions ASIA: https://directions4partners.com/
-- TechDays: https://navtechdays.com/  
+**Global community hosted events**  
+- Directions North America: https://www.directionsna.com
+- Directions EMEA: https://directions4partners.com
+- Directions ASIA: https://directions4partners.com
+- TechDays: https://navtechdays.com  
 
 ## Engagement
-### GitHub  
+
+**GitHub**  
 Use the GitHub forum to post questions about Visual Studio Code and AL Language to the community and Microsoft experts here: https://github.com/microsoft/al/issues. 
 
-### Yammer  
+**Yammer**  
 Join the conversation about Business Central for partners on Yammer here: https://aka.ms/bcyammer  
 
-### Business Central Office Hours Calls  
+**Business Central Office Hours Calls**  
 Join the Business Central Office Hours to learn more and connect with the Business Central engineering team. Find the full list of office hours calls from December 2020 throughout March 2021 below. Register for the live calls and find on-demand recordings here: https://aka.ms/BCOfficehours.
 
 | Date      | Topic |
@@ -77,20 +77,19 @@ Mar 9, 2021 | Integrating with Microsoft Teams.
 
 ## Social
 
-### Twitter  
+**Twitter**  
 Follow us on Twitter to stay tuned about what’s going on in the #MSDyn365BC community: https://www.twitter.com/MSDYN365BC 
 
-### YouTube  
+**YouTube**  
 Subscribe to the Microsoft Dynamics 365 channel on YouTube: https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ  
 
-### Blog for IT Professionals  
+**Blog for IT Professionals**  
 Business Central on the Dynamics 365 blog for IT Professionals: https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/   
  
-
-### Blog for Decision Makers:  
+**Blog for Decision Makers**  
 The Dynamics 365 blog for Business Decision Makers: https://cloudblogs.microsoft.com/dynamics365/bdm/  
 
-## See Also: 
+### See Also: 
 - Get started on Microsoft Learn: https://aka.ms/bclearn 
 - Get started with developing apps: https://aka.ms/bcpublisher
 - Get started with reselling apps: https://aka.ms/bcreseller  
