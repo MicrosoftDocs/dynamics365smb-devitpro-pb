@@ -16,16 +16,16 @@ ms.author: solsen
 
 ## Roadmap and what’s new 
 
-#### Overall roadmap  
+**Overall roadmap**  
 Find the overall roadmap for Business Central here: https://dynamics.microsoft.com/en-us/roadmap/business-central/ 
 
-### What’s new in Business Central  
+**What’s new in Business Central**  
 Find what’s new and planned here: https://docs.microsoft.com/dynamics365/business-central/product-news 
 
-### Release plan landing page  
+**Release plan landing page**  
 Find out what's new in Microsoft Dynamics 365 applications and Microsoft Power Platform: https://docs.microsoft.com/dynamics365/release-plans/ 
 
-### Minor updates  
+**Minor updates**  
 Find the latest minor update here: https://aka.ms/bclastminorupdate 
 
 
