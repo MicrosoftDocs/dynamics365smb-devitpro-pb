@@ -17,13 +17,13 @@ ms.author: solsen
 ## Roadmap and what’s new 
 
 **Overall roadmap**  
-Find the overall roadmap for Business Central here: https://dynamics.microsoft.com/en-us/roadmap/business-central/ 
+Find the overall roadmap for Business Central [here](https://dynamics.microsoft.com/en-us/roadmap/business-central/) 
 
 **What’s new in Business Central**  
-Find what’s new and planned here: https://docs.microsoft.com/dynamics365/business-central/product-news 
+Find what’s new and planned [here](https://docs.microsoft.com/dynamics365/business-central/product-news)
 
 **Release plan landing page**  
-Find out what's new in Microsoft Dynamics 365 applications and Microsoft Power Platform: https://docs.microsoft.com/dynamics365/release-plans/ 
+Find out what's new in Microsoft Dynamics 365 applications and Microsoft Power Platform [here](https://docs.microsoft.com/dynamics365/release-plans/) 
 
 **Minor updates**  
 Find the latest minor update here: [aka.ms/BCLastMinorUpdate](https://aka.ms/bclastminorupdate) 
@@ -34,8 +34,8 @@ Find the latest minor update here: [aka.ms/BCLastMinorUpdate](https://aka.ms/bcl
 Find the countries/regions where Business Central is available and which languages are supported: [aka.ms/BCCountries](https://aka.ms/bccountries)
 
 ## Training and coaching 
-**ISV Development Center**  
-Online or in-person coaching for Business Central. Get in touch with an ISV Development Center: https://partner.microsoft.com/en-us/isv-resource-hub/development-centers/find-a-center  
+**ISV Development Centers**  
+Online or in-person coaching for Business Central. Get in touch with an ISV Development Center [here](https://partner.microsoft.com/en-us/isv-resource-hub/development-centers/find-a-center)  
 
 **Microsoft Learn page**  
 Browse all Business Central training videos and courses on Microsoft Learn: [aka.ms/BCLearn](https://aka.ms/BCLearn)
@@ -54,7 +54,7 @@ Discover the latest Business Central Launch Event here: [aka.ms/MSDyn365BCLaunch
 ## Engagement
 
 **GitHub**  
-Use the GitHub forum to post questions about Visual Studio Code and AL Language to the community and Microsoft experts: https://github.com/microsoft/al/issues/ 
+Use the GitHub forum to post questions about Visual Studio Code and AL Language to the community and Microsoft experts: [github.com/microsoft/al/issues](https://github.com/microsoft/al/issues/) 
 
 **Yammer**  
 Join the conversation about Business Central for partners on Yammer: [aka.ms/BCYammer](https://aka.ms/bcyammer)  
@@ -81,13 +81,13 @@ Mar 9, 2021 | Integrating with Microsoft Teams.
 Follow us on Twitter to stay tuned about what’s going on in the #MSDyn365BC community: [twitter.com/MSDYN365BC](https://www.twitter.com/MSDYN365BC) 
 
 **YouTube**  
-Subscribe to the Microsoft Dynamics 365 channel on YouTube: https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ  
+Subscribe to the Microsoft Dynamics 365 channel on YouTube [here](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) 
 
 **Blog for IT Professionals**  
-Business Central on the Dynamics 365 blog for IT Professionals: https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/   
+Business Central on the Dynamics 365 blog for IT Professionals: [cloudblogs.microsoft.com/dynamics365/it/product/business-central](https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/)
  
 **Blog for Decision Makers**  
-The Dynamics 365 blog for Business Decision Makers: https://cloudblogs.microsoft.com/dynamics365/bdm/  
+The Dynamics 365 blog for Business Decision Makers: [cloudblogs.microsoft.com/dynamics365/bdm](https://cloudblogs.microsoft.com/dynamics365/bdm/)
 
 ### See Also:  
 - Get started with developing apps: [aka.ms/BCPublisher](https://aka.ms/bcpublisher)
