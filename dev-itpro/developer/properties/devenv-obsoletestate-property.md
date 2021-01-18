@@ -2,7 +2,7 @@
 title: "ObsoleteState Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/24/2020
+ms.date: 01/18/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -49,6 +49,7 @@ Marks whether the table, field, or key is or will become obsolete (deprecated).
 -   Profile
 -   Interface
 -   Control Add In
+-   Permission Set
 
 ## Property Value
 

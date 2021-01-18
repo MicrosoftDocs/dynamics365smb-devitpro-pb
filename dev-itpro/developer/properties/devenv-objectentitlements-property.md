@@ -1,5 +1,5 @@
 ---
-title: "MultiLine Property"
+title: "ObjectEntitlements Property"
 ms.author: solsen
 ms.custom: na
 ms.date: 01/18/2021
@@ -13,27 +13,15 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# MultiLine Property
-> **Version**: _Available from runtime version 3.2._
+# ObjectEntitlements Property
+> **Version**: _Available from runtime version 7.0._
 
-Sets the value that indicates whether a field can display multiple lines of text.
+Determines the object permissions that this entitlement object permits a user or application to use.
 
 ## Applies to
--   Page Label
--   Page Field
+-   Entitlement
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-
-## Property Value  
-
-**True** if you want to display multiple lines; otherwise, **false**. The default is **false**.  
-
-## Syntax
-
-```AL
-MultiLine = true;
-```
-  
-## See Also
-
-[Properties](devenv-properties.md)
+## See Also  
+[Getting Started with AL](../devenv-get-started.md)  
+[Developing Extensions](../devenv-dev-overview.md)  

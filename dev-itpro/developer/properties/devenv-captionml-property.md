@@ -2,7 +2,7 @@
 title: "CaptionML Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/24/2020
+ms.date: 01/18/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -42,7 +42,7 @@ Sets the text string that displays with the object, control, or other element in
 -   Page View
 -   Profile
 -   Enum Type
-
+-   Permission Set
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

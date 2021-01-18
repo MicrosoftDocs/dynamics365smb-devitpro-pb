@@ -2,7 +2,7 @@
 title: "Access Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/24/2020
+ms.date: 01/18/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,6 +25,7 @@ Sets the object accessibility level, which controls whether the object can be us
 -   Table Field
 -   Enum Type
 -   Interface
+-   Permission Set
 
 ## Property Value
 

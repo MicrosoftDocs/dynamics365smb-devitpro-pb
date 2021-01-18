@@ -2,7 +2,7 @@
 title: "ObsoleteReason Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/24/2020
+ms.date: 01/18/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -49,7 +49,7 @@ Specifies why a table, field, or key has been marked as Pending or Obsolete in t
 -   Profile
 -   Interface
 -   Control Add In
-
+-   Permission Set
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

@@ -2,7 +2,7 @@
 title: "HideValue Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 01/04/2020
+ms.date: 01/18/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,13 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # HideValue Property
-> **Version**: _Available from runtime version 4.0._
+> **Version**: _Available from runtime version 3.2._
 
 Sets whether to show or hide a value for the user based on an expression.
 
 ## Applies to
 -   Page Label
 -   Page Field
-
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

@@ -2,7 +2,7 @@
 title: "Permissions Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/24/2020
+ms.date: 01/18/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,7 +26,8 @@ Sets whether an object has additional permission required to perform some operat
 -   Xml Port
 -   Report
 -   Query
-
+-   Permission Set
+-   Permission Set Extension
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

@@ -1,23 +1,22 @@
 ---
 title: "AllowScheduling Property"
-description: Describes the AllowScheduling Property in AL for report objects.
-ms.author: jswymer
+ms.author: solsen
 ms.custom: na
-ms.date: 11/17/2020
+ms.date: 01/18/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-author: jswymer
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AllowScheduling Property
-> **Version**: _Available from runtime version 7.0._
+> **Version**: _Available from runtime version 6.2._
 
-Sets whether the report can be run in the background.
+Sets whether a report can be scheduled to run in the background.
 
 ## Applies to
 -   Report

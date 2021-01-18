@@ -2,7 +2,7 @@
 title: "Extensible Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 01/18/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,9 +16,10 @@ author: SusanneWindfeldPedersen
 # Extensible Property
 > **Version**: _Available from runtime version 7.0._
 
-Sets whether the object can be extended.
+Sets whether the report can be extended.
 
 ## Applies to
+-   Report
 -   Enum Type
 -   Table
 -   Page
