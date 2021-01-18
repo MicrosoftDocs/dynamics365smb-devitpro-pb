@@ -43,7 +43,7 @@ Browse all Business Central training videos and courses on Microsoft Learn: http
 ## Events
 
 **Microsoft hosted events**  
-Discover the latest Business Central Launch Event here: https://aka.ms/BClaunch   
+Discover the latest Business Central Launch Event here: https://aka.ms/MSDyn365BCLaunchEvent  
 
 **Global community hosted events**  
 - Directions North America: https://www.directionsna.com
