@@ -60,7 +60,7 @@ begin
     for i := varFromTable to varToTable do begin  
       MyRecordRef.OPEN(i);  
       CurrentKeyIndex := MyRecordRef.CURRENTKEYINDEX;  
-      MESSAGE(Text000, MyRecordRef.NAME, CurrentKeyIndex);  
+      Message(Text000, MyRecordRef.NAME, CurrentKeyIndex);  
       MyRecordRef.CLOSE;  
     end;  
 end;

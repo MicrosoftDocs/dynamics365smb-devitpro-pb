@@ -61,7 +61,7 @@ begin
     for i := 1 to 9 do begin  
       MyFieldRef := CustomerRecref.FIELD(i);  
       varCaption := MyFieldRef.CAPTION;  
-      MESSAGE(Text000, i, varCaption);  
+      Message(Text000, i, varCaption);  
     end;  
     CustomerRecref.CLOSE;  
 end;

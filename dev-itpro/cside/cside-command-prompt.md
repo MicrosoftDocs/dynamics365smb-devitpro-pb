@@ -61,13 +61,13 @@ The following table describes the notation that is used to indicate syntax.
 |logfile|Specifies the path and file name for the file that contains error messages that result from running finsql.exe with the *command* parameter. If there are no errors, then a log file isn't created.|All|  
 |navservername|Specifies the name of the server that hosts the [!INCLUDE[server](../developer/includes/server.md)] instance, such as *MyServer*.|[CompileObjects](#CompileObjects)<br /><br /> [DeleteObjects](#DeleteObjects)<br /><br /> [ImportObjects](#ImportObjects)|  
 |navserverinstance|Specifies the [!INCLUDE[server](../developer/includes/server.md)] instance that is being used, such as [!INCLUDE[nav_server_instance](../developer/includes/nav_server_instance_md.md)].|[CompileObjects](#CompileObjects)<br /><br /> [DeleteObjects](#DeleteObjects)<br /><br /> [ImportObjects](#ImportObjects)|  
-|navservermanagementport|Specifies the port on the [!INCLUDE[server](../developer/includes/server.md)] that the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Windows PowerShell cmdlets access, such as *7045*.|[CompileObjects](#CompileObjects)<br /><br /> [DeleteObjects](#DeleteObjects)<br /><br /> [ImportObjects](#ImportObjects)|  
+|navservermanagementport|Specifies the port on the [!INCLUDE[server](../developer/includes/server.md)] that the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Windows PowerShell cmdlets access, such as *7045*.|[CompileObjects](#CompileObjects)<br /><br /> [DeleteObjects](#DeleteObjects)<br /><br /> [ImportObjects](#ImportObjects)|  
 |ntauthentication|Specifies if you want to use NT authentication. The possible values are **yes**, **no**, **1**, or **0**. If you specify the *username* and *password* parameters, then you must specify **ntauthentication=no** or **ntauthentication=0**.|All|  
 |objectcache|Specifies the size of the object cache, in kilobytes. Objects such as code, descriptions, and windows that are used on the computer that is running the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] are stored in the object cache.<br /><br /> The default value is 32000.<br /><br /> For example, the following command sets the object cache to 50000:<br /><br /> `finsql.exe objectcache=50000`<br /><br /> You can also set the object cache from the **Options** window in the Tools menu of the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)].|None. You use this as a stand-alone parameter with the finsql.exe.|  
 |password|Specifies the password to use with the *username* parameter to authenticate to the database. If you don't specify a user name and password, then the command uses the Windows user name and password of the current user to authenticate to the database.|All|  
 |servername|Specifies the name of the database server.<br /><br /> If you don't specify both the *servername* parameter and the *database* parameter, then the database server and database that are stored in the .zup file are used. If you don't specify the *servername* parameter but you do specify the *database* parameter, then the **Open Database** window opens so that you can specify the database server name.<br /><br /> For more information, see [Saving Setup Parameters in the Zup File](/dynamics-nav/saving-setup-parameters-in-the-zup-file).|All|  
-|synchronizeschemachanges|Synchronizes table schema changes for all tables in the database. This is useful when you upgrade from an earlier version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] or when you made changes to a table or multiple tables previously and chose to synchronize later. For more information, see [Synchronizing the Tenant Database with the Application Database](../administration/synchronize-tenant-database-and-application-database.md).|All|  
-|temppath|Specifies the path of the location to store temporary files that are created while [!INCLUDE[prodshort](../developer/includes/prodshort.md)] runs. These files are automatically deleted when [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is closed.<br /><br /> By default, these files are put in the Temp folder for the user, such as \<C:\\Users\\*\<user name>*\\AppData\\Local\\Temp>.<br /><br /> For example, the following command sets the temporary file path to C:\\Temp:<br /><br /> `finsql.exe temppath="c:\temp"`<br /><br /> You can also set the temporary file path from the **Options** window in the Tools menu of the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)].|None. You use this as a stand-alone parameter with the finsql.exe.|  
+|synchronizeschemachanges|Synchronizes table schema changes for all tables in the database. This is useful when you upgrade from an earlier version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] or when you made changes to a table or multiple tables previously and chose to synchronize later. For more information, see [Synchronizing the Tenant Database with the Application Database](../administration/synchronize-tenant-database-and-application-database.md).|All|  
+|temppath|Specifies the path of the location to store temporary files that are created while [!INCLUDE[prod_short](../developer/includes/prod_short.md)] runs. These files are automatically deleted when [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is closed.<br /><br /> By default, these files are put in the Temp folder for the user, such as \<C:\\Users\\*\<user name>*\\AppData\\Local\\Temp>.<br /><br /> For example, the following command sets the temporary file path to C:\\Temp:<br /><br /> `finsql.exe temppath="c:\temp"`<br /><br /> You can also set the temporary file path from the **Options** window in the Tools menu of the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)].|None. You use this as a stand-alone parameter with the finsql.exe.|  
 |tenant|Specifies the ID of the tenant that is accessed when you run objects from the development environment. If your solution isn't set up to deploy in a multitenant deployment architecture, leave the parameter empty.|[CompileObjects](#CompileObjects)<br /><br /> [DeleteObjects](#DeleteObjects)<br /><br /> [ImportObjects](#ImportObjects)|  
 |unicode|Specifies if you want to open the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] with Unicode enabled.<br /><br />Add the `unicode=1` parameter to finsql.exe if your application objects contain strings such as €, and you want to compile and use the objects on computers with different codepages. |None. This parameter isn't relevant when you use command because the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] doesn't open.|  
 |useoldeditor|Specifies whether to use the C/AL Editor that was available in [!INCLUDE[navcrete](../developer/includes/navcrete_md.md)] and earlier versions. The C/AL Editor was redesigned in [!INCLUDE[navcorfu](../developer/includes/navcorfu_md.md)].<br /><br /> To use the old editor, specify the parameter as `useoldeditor=yes` or `useoldeditor`.<br /><br /> To use the new editor, omit the parameter or specify it as `useoldeditor=no`.|None. This parameter isn't relevant when you use command because the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] doesn´'t open.|  
@@ -76,7 +76,7 @@ The following table describes the notation that is used to indicate syntax.
 |suppresselevationcheck|Specifies whether to check that finsql.exe is running in elevated mode (as an administrator). If not in elevated mode, you get a warning that proceeding might cause errors. You are given the option to continue or cancel.</br></br>The possible values are: **no**, **0**, **yes**, and **1**.</br></br> **no** or **0** runs the check. This value is the default setting.</br></br>**yes** or **1** suppresses the check.|[UpgradeDatabase](#UpgradeDatabase)</br></br>Database conversion|
 
 ## <a name="BuildVirtualMetadata"></a>BuildVirtualMetadata
-Regenerates C\# and metadata information in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] virtual tables for a specified language.  
+Regenerates C\# and metadata information in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] virtual tables for a specified language.  
 
 ### Syntax  
 
@@ -92,7 +92,7 @@ finsql.exe command=buildvirtualmetadata,servername=TestComputer01\BCDEMO,databas
 ```  
 
 ## <a name="CreateDatabase"></a>CreateDatabase
-Creates a new database for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on an SQL server.  
+Creates a new database for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on an SQL server.  
   
 ### Syntax  
   
@@ -146,7 +146,7 @@ Specifies how to synchronize table definition changes in the business \(tenant\)
 
  *navservermanagementport*  
 
- Specifies the port on the [!INCLUDE[server](../developer/includes/server.md)] server that the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Windows PowerShell cmdlets access, such as **7045**.  
+ Specifies the port on the [!INCLUDE[server](../developer/includes/server.md)] server that the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Windows PowerShell cmdlets access, such as **7045**.  
 
  *tenant*  
 
@@ -165,7 +165,7 @@ finsql.exe command=compileobjects,servername=TestComputer01\BCDEMO,database="Dem
 ```  
 
 ## <a name="CreateLanguage"></a>CreateLanguage
-Creates captions on [!INCLUDE[prodshort](../developer/includes/prodshort.md)] objects for a specified language.  
+Creates captions on [!INCLUDE[prod_short](../developer/includes/prod_short.md)] objects for a specified language.  
   
 ### Syntax  
   
@@ -192,7 +192,7 @@ finsql.exe command=createlanguage,langid=DAN,servername=TestComputer01\BCDEMO,da
 ```  
 
 ## <a name="DeleteObjects"></a>DeleteObjects
-Deletes objects from the specified [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database.  
+Deletes objects from the specified [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database.  
 
 ### Syntax  
 
@@ -312,7 +312,7 @@ finsql.exe command=exportobjects,file=C:\QueryExport.txt,servername=TestComputer
 ```
 
 ## <a name="ExportToNewSyntax"></a>ExportToNewSyntax
-Export application objects to a .txt file in the syntax that is supported by the Txt2Al conversion tool. The Txt2Al conversion tool enables you to convert [!INCLUDE[prodshort](../developer/includes/prodshort.md)] objects that are written in the C/AL language (using the [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)]) to the AL (.al) format. 
+Export application objects to a .txt file in the syntax that is supported by the Txt2Al conversion tool. The Txt2Al conversion tool enables you to convert [!INCLUDE[prod_short](../developer/includes/prod_short.md)] objects that are written in the C/AL language (using the [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)]) to the AL (.al) format. 
 
 ### Syntax  
 
@@ -334,7 +334,7 @@ finsql.exe command=exporttonewsyntax,file=exportedobjects.txt,database="Demo Dat
 ```
   
 ## <a name="ExportTranslate"></a>ExportTranslate
-Exports UI text strings of objects from a specified [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database to a text file.  
+Exports UI text strings of objects from a specified [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database to a text file.  
 
 ### Syntax  
 
@@ -348,7 +348,7 @@ finsql.exe command=exporttranslate,file=<exportfile>[,servername=<server>][,data
  Specifies the path and name of the text file in which to export the text strings, for example *C:\\translatestrings.txt*. This parameter is required.  
 
 ### Remarks  
- You can use this command for translating text strings in multilanguage setup of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. This command exports all text strings that are associated with objects. It includes text strings that are defined by for properties of the objects in all languages. For more information, see [How to: Add Translated Strings By Importing and Exporting Multilanguage Files in Dynamics NAV](/dynamics-nav/how-to--add-translated-strings-by-importing-and-exporting-multilanguage-files). 
+ You can use this command for translating text strings in multilanguage setup of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. This command exports all text strings that are associated with objects. It includes text strings that are defined by for properties of the objects in all languages. For more information, see [How to: Add Translated Strings By Importing and Exporting Multilanguage Files in Dynamics NAV](/dynamics-nav/how-to--add-translated-strings-by-importing-and-exporting-multilanguage-files). 
 
 ### Example  
  This example shows how to run the ExportTranslate command to export text strings from the *Demo Database BC* database to a txt type file that has the path and file name *C:\\bctextstrings.txt*.  
@@ -372,7 +372,7 @@ finsql.exe Command=generatesymbolreference,Database="Demo Database BC",ServerNam
 ```
 
 ## <a name="GetBuildVersion"></a>GetBuildVersion
-Gets the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] product name and build version number that is currently installed and saves the information to a txt type file.  
+Gets the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] product name and build version number that is currently installed and saves the information to a txt type file.  
   
 ### Syntax  
   
@@ -396,7 +396,7 @@ finsql.exe command=getbuildversion,file=<versionfile>[,logfile=<path and filenam
 >  If User Access Control \(UAC\) is turned on and you don't run the command prompt as an Administrator, then the command prompt window runs as a standard user. In this case, if you don't specify the *logfile* parameter, then the command fails because the standard user cannot write to the default location of the finsql.exe file.  
   
 ### Example  
- This example shows how to run the GetBuildVersions command to get the product name and version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] that is currently installed on the computer. The example saves the build version information to a txt type file that has the path and file name *C:\\temp\\navbuildversion.txt*. The example also specifies a log file that has the path and file name *C:\\temp\\bcbuildversionlog.txt*  
+ This example shows how to run the GetBuildVersions command to get the product name and version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] that is currently installed on the computer. The example saves the build version information to a txt type file that has the path and file name *C:\\temp\\navbuildversion.txt*. The example also specifies a log file that has the path and file name *C:\\temp\\bcbuildversionlog.txt*  
   
 ```  
 finsql.exe command=getbuildversion,file=C:\temp\navbuildversion.txt,logfile= C:\temp\bcbuildversionlog.txt  
@@ -409,7 +409,7 @@ finsql.exe command=getbuildversion,file=C:\temp\navbuildversion.txt,logfile= C:\
  `Product Version: 13.0.38865.0` 
 
 ## <a name="ImportLangModule"></a>ImportLangModule
-Imports a language module from a file to the specified [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database.  
+Imports a language module from a file to the specified [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database.  
 
 ### Syntax  
 
@@ -482,13 +482,13 @@ Setting `suppressbuildsearchindex=yes` can be useful if you're importing several
  
 
 ### Example  
- This example shows how to run a command to import the objects from a fob file into [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. If any of the objects to import already exist in the database, then overwrite them with the objects from the import file.  
+ This example shows how to run a command to import the objects from a fob file into [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. If any of the objects to import already exist in the database, then overwrite them with the objects from the import file.  
   
 ```  
 finsql.exe command=importobjects,file=C:\NewObjects.fob,servername=TestComputer01,database="Demo Database BC",ImportAction=overwrite  
 ```  
 ## <a name="ImportTranslate"></a>ImportTranslate
-Imports UI text strings for objects from a text file to a specified [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database.  
+Imports UI text strings for objects from a text file to a specified [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database.  
 
 ### Syntax  
 
@@ -502,7 +502,7 @@ finsql.exe command=importtranslate,file=<importfile>[,servername=<server>][,data
  Specifies the path and name of the text file that contains the text strings to import, for example *C:\\translatestrings.txt*. This parameter is required.  
 
 ### Remarks  
- You can use this command for translating text strings in multilanguage setup of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. The contents of the text file must be compatible with [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. Therefore, the text file will typically have originated from a text file that was previously exported from the database, and then modified. For more information, see [How to: Add Translated Strings By Importing and Exporting Multilanguage Files in Dynamics NAV](/dynamics-nav/how-to--add-translated-strings-by-importing-and-exporting-multilanguage-files).
+ You can use this command for translating text strings in multilanguage setup of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. The contents of the text file must be compatible with [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. Therefore, the text file will typically have originated from a text file that was previously exported from the database, and then modified. For more information, see [How to: Add Translated Strings By Importing and Exporting Multilanguage Files in Dynamics NAV](/dynamics-nav/how-to--add-translated-strings-by-importing-and-exporting-multilanguage-files).
 
 ### Example  
  This example shows how to run the ImportTranslate command to import text strings from a text file to the *Demo Database NAV \(10-0\)* database. The text file that has the path and file name *C:\\bctextstrings.txt*.  
@@ -512,7 +512,7 @@ finsql.exe command=importtranslate,file=C:\bctextstrings.txt,servername=TestComp
 ```  
 
 ## <a name="UpgradeDatabase"></a>UpgradeDatabase
-Upgrades an existing [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database.  
+Upgrades an existing [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database.  
   
 ### Syntax  
   
@@ -521,7 +521,7 @@ finsql.exe command=upgradedatabase, servername=<server>, database=<database>[, l
 ```  
   
 ### Remarks  
- You use the **UpgradeDatabase** command together with the finsql.exe executable when you want to convert a database from an earlier version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to the new version. For example, if you are upgrading several databases, you can create scripts that help you repeat the steps. finsql.exe is the executable file that runs the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]. By default, finsql.exe is located at [!INCLUDE[navnow_x86install](../developer/includes/navnow_x86install_md.md)]RoleTailored Client\\.  
+ You use the **UpgradeDatabase** command together with the finsql.exe executable when you want to convert a database from an earlier version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] to the new version. For example, if you are upgrading several databases, you can create scripts that help you repeat the steps. finsql.exe is the executable file that runs the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]. By default, finsql.exe is located at [!INCLUDE[navnow_x86install](../developer/includes/navnow_x86install_md.md)]RoleTailored Client\\.  
   
 > [!IMPORTANT]  
 >  The upgrade isn't completed when you have run this command. You must compile all objects, and you must connect to a [!INCLUDE[server](../developer/includes/server.md)] instance. For more information, see [Converting a Database](../upgrade/Converting-a-Database.md).  

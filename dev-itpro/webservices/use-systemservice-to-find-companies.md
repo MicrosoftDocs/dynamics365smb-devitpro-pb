@@ -9,7 +9,7 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 ---
 # Using SystemService to Find Companies
-You can use the SystemService service in a SOAP web service application to retrieve a list of companies available in a specific database. A company name is typically part of the URI when you access a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] web service, and the system service lets you retrieve names of available companies. If you do not specify a company name in a URI, then the default company is used.  
+You can use the SystemService service in a SOAP web service application to retrieve a list of companies available in a specific database. A company name is typically part of the URI when you access a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] web service, and the system service lets you retrieve names of available companies. If you do not specify a company name in a URI, then the default company is used.  
   
  In this procedure, you use the SystemService service to retrieve and print a list of companies in Visual Studio.  
   

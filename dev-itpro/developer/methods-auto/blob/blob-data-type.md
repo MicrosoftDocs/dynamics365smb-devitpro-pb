@@ -1,9 +1,8 @@
 ---
 title: "Blob Data Type"
-description: "The Blob Data Type in AL for Business Central"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 12/09/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,12 +24,12 @@ The following methods are available on instances of the Blob data type.
 
 |Method name|Description|
 |-----------|-----------|
-|[HasValue()](blob-hasvalue-method.md)|Determines whether a binary large object (BLOB) has a value.|
-|[Length()](blob-length-method.md)|Returns the number of bytes in the binary large object (BLOB).|
-|[Import(String)](blob-import-method.md)|Imports a binary large object (BLOB) from a file.|
-|[Export(String)](blob-export-method.md)|Exports a binary large object (BLOB) to a file.|
 |[CreateInStream(InStream [, TextEncoding])](blob-createinstream-method.md)|Creates an InStream object for a binary large object (BLOB). This enables you to read data from the BLOB.|
 |[CreateOutStream(OutStream [, TextEncoding])](blob-createoutstream-method.md)|Creates an OutStream object for a binary large object (BLOB). This enables you to write data to the BLOB.|
+|[Export(String)](blob-export-method.md)|Exports a binary large object (BLOB) to a file.|
+|[HasValue()](blob-hasvalue-method.md)|Determines whether a binary large object (BLOB) has a value.|
+|[Import(String)](blob-import-method.md)|Imports a binary large object (BLOB) from a file.|
+|[Length()](blob-length-method.md)|Returns the number of bytes in the binary large object (BLOB).|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

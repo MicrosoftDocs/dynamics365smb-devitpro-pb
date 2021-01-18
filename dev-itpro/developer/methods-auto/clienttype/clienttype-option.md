@@ -2,7 +2,7 @@
 title: "ClientType System Option"
 ms.author: solsen
 ms.custom: na
-ms.date: 12/03/2020
+ms.date: 12/22/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -36,6 +36,7 @@ Represents the type of the client executing the operation.
 |Default|The default client.|
 |ODataV4|A ODataV4 client.|
 |Api|An API client.|
+|Teams|Microsoft Teams client.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

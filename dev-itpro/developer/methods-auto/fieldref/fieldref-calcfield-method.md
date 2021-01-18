@@ -60,7 +60,7 @@ begin
       repeat  
         MyFieldRef := CustRecordref.FIELD(66);  
         MyFieldRef.CALCFIELD;  
-        MESSAGE(Text000, CustRecordref.RECORDID, MyFieldRef);  
+        Message(Text000, CustRecordref.RECORDID, MyFieldRef);  
         Count := Count + 1;  
       until CustRecordref.NEXT = 0;  
 end;

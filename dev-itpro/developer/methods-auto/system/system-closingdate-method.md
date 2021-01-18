@@ -60,7 +60,7 @@ var
 begin
     Date1 := 20140404D;  
     CloDate := CLOSINGDATE(Date1);  
-    MESSAGE(Text000, Date1, CloDate);  
+    Message(Text000, Date1, CloDate);  
 end;
 ```  
   
@@ -95,7 +95,7 @@ begin
     CloDate2 := CLOSINGDATE(CloDate1);  
     // The previous statement compiles.  
     // CloDate1 is a Date data type.  
-    MESSAGE(Text001, CloDate1, CloDate2);  
+    Message(Text001, CloDate1, CloDate2);  
 end;
 ```  
   

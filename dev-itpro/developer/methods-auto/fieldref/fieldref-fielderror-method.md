@@ -79,7 +79,7 @@ end;
   
 -   Use a text constant for the *Text* parameter.  
   
- For more information, see [Progress Windows, MESSAGE, ERROR, and CONFIRM Methods](../../devenv-progress-windows-message-error-and-confirm-methods.md). 
+ For more information, see [Progress Windows, Message, ERROR, and CONFIRM Methods](../../devenv-progress-windows-message-error-and-confirm-methods.md). 
 
  
 ## See Also

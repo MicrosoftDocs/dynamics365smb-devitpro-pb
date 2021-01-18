@@ -47,7 +47,7 @@ var
     TextDate: Date;
     variant1: Variant;
 begin
-    variant1 := TODAY;  
+    variant1 := Today;  
     TestDate := VARIANT2DATE(variant1);  
 end;
 ```  

@@ -68,7 +68,7 @@ begin
     // The execution stops when the error statement is executed  
     // and all following statements will never be executed.  
     ERROR(Text000, AccountNo);  
-    MESSAGE(Text001); // This line is not executed.  
+    Message(Text001); // This line is not executed.  
 end;
 ```  
 

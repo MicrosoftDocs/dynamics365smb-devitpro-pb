@@ -65,7 +65,7 @@ begin
     String := Text000;  
     SubStr := Text001  
     Pos := STRPOS(String, SubStr);  
-    MESSAGE(Text002 + Text003 + Text004, SubStr, String, Pos);  
+    Message(Text002 + Text003 + Text004, SubStr, String, Pos);  
     // The STRPOS method is case-sensitive. Furthermore, it only  
     // returns the position of the 1st occurrence of the substring.  
 end;

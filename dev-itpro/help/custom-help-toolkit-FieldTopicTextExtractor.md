@@ -12,10 +12,10 @@ ms.author: jowilco
 
 # Custom Help Toolkit: The FieldTopicTextExtractor tool
 
-If you are migrating a solution from Dynamics NAV to [!INCLUDE [prodshort](../developer/includes/prodshort.md)], you can use this tool to export the text contained in the first paragraph of field-level Help topics for Microsoft Dynamics NAV 2018 or earlier versions. You can then use these paragraphs as tooltip text in your [!INCLUDE [prodshort](../developer/includes/prodshort.md)] solution.  
+If you are migrating a solution from Dynamics NAV to [!INCLUDE [prod_short](../developer/includes/prod_short.md)], you can use this tool to export the text contained in the first paragraph of field-level Help topics for Microsoft Dynamics NAV 2018 or earlier versions. You can then use these paragraphs as tooltip text in your [!INCLUDE [prod_short](../developer/includes/prod_short.md)] solution.  
 
 > [!NOTE]
-> The tool does not import the tooltip text directly into your [!INCLUDE [prodshort](../developer/includes/prodshort.md)] page objects. Instead it creates a spreadsheet that will make it easier to reuse the text from field-level Help topics in your [!INCLUDE [prodshort](../developer/includes/prodshort.md)] solution.
+> The tool does not import the tooltip text directly into your [!INCLUDE [prod_short](../developer/includes/prod_short.md)] page objects. Instead it creates a spreadsheet that will make it easier to reuse the text from field-level Help topics in your [!INCLUDE [prod_short](../developer/includes/prod_short.md)] solution.
 
 ## Use the FieldTopicTextExtractor tool to extract content Excel
 
@@ -44,9 +44,9 @@ NavFieldsTooltips.exe --n D:\NAV --o D:\BC
 
 ## After extracting the Dynamics NAV field topic text
 
-Excel makes it easy to bulk-apply and bulk-edit strings because you can sort and filter data. If you work with dedicated technical writers, then they are probably more efficient if they can work with tooltip text in Excel prior to adding tooltip text to your [!INCLUDE [prodshort](../developer/includes/prodshort.md)] solution. You can also take the opportunity to revise the text. For more information, see [Guidelines for tooltip text](../user-assistance.md#guidelines-for-tooltip-text).  
+Excel makes it easy to bulk-apply and bulk-edit strings because you can sort and filter data. If you work with dedicated technical writers, then they are probably more efficient if they can work with tooltip text in Excel prior to adding tooltip text to your [!INCLUDE [prod_short](../developer/includes/prod_short.md)] solution. You can also take the opportunity to revise the text. For more information, see [Guidelines for tooltip text](../user-assistance.md#guidelines-for-tooltip-text).  
 
-Before you import the tooltips into your solution, map the original field IDs to page control IDs in your [!INCLUDE [prodshort](../developer/includes/prodshort.md)] solution. It requires knowledge of the actual solution to determine which tooltips are relevant for which pages, and Excel is very handy to help you in this process.  
+Before you import the tooltips into your solution, map the original field IDs to page control IDs in your [!INCLUDE [prod_short](../developer/includes/prod_short.md)] solution. It requires knowledge of the actual solution to determine which tooltips are relevant for which pages, and Excel is very handy to help you in this process.  
 
 ## See also
 

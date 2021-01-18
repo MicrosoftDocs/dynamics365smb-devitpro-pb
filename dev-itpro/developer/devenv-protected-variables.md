@@ -29,7 +29,7 @@ var
 The example below illustrates how to declare and use a protected variable.
 
 ```AL
-page 500100 MyPage
+page 50100 MyPage
 {
     SourceTable = Customer;
     PageType = Card;
@@ -62,7 +62,7 @@ page 500100 MyPage
         ShowBalance: Boolean;
 }
 
-pageextension 500101 MyPageExt extends MyPage
+pageextension 50101 MyPageExt extends MyPage
 {
     layout
     {

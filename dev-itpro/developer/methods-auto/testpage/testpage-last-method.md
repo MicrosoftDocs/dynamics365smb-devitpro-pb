@@ -48,7 +48,7 @@ The LAST method loops over all records until it sets  the identifies the current
 ```  
 CustomerList.OPENVIEW;  
 CustomerList.LAST;  
-MESSAGE(CustomerList.Name.Value);  
+Message(CustomerList.Name.Value);  
   
 ```
 

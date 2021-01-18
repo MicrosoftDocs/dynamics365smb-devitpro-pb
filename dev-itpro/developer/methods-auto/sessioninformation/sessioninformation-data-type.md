@@ -2,7 +2,7 @@
 title: "SessionInformation Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 12/09/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +24,8 @@ The following methods are available on the SessionInformation data type.
 
 |Method name|Description|
 |-----------|-----------|
-|[SqlStatementsExecuted()](sessioninformation-sqlstatementsexecuted-method.md)|Gets the amount of SQL statements executed on the session, since the session started.|
 |[SqlRowsRead()](sessioninformation-sqlrowsread-method.md)|Gets the amount of SQL rows read on the session, since the session started.|
+|[SqlStatementsExecuted()](sessioninformation-sqlstatementsexecuted-method.md)|Gets the amount of SQL statements executed on the session, since the session started.|
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

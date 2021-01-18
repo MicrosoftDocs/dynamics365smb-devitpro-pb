@@ -13,11 +13,11 @@ ms.date: 10/01/2020
 
 # The Lifecycle of Apps and Extensions for Business Central
 
-When you build an app or extension to [!INCLUDE[prodshort](includes/prodshort.md)] and get that published to AppSource, it becomes an app like so many others - the app itself can be updated, and the platform that it sits on, [!INCLUDE[prodshort](includes/prodshort.md)] online itself, will also get updated. But what happens after your app gets published?
+When you build an app or extension to [!INCLUDE[prod_short](includes/prod_short.md)] and get that published to AppSource, it becomes an app like so many others - the app itself can be updated, and the platform that it sits on, [!INCLUDE[prod_short](includes/prod_short.md)] online itself, will also get updated. But what happens after your app gets published?
 
 When your app has passed all of our validations and has gone live to App Source, customers can install your extension and use it for their business. But you are expected to keep it compliant with the service and update it if something changes.  
 
-The following sections describe the different upgrade scenarios that we have seen play out as we update [!INCLUDE[prodshort](includes/prodshort.md)]. For more information about your responsibility for keeping your app updated and the resources that are available to you, see [Maintain AppSource Apps and Per-Tenant Extensions](app-maintain.md).  
+The following sections describe the different upgrade scenarios that we have seen play out as we update [!INCLUDE[prod_short](includes/prod_short.md)]. For more information about your responsibility for keeping your app updated and the resources that are available to you, see [Maintain AppSource Apps and Per-Tenant Extensions](app-maintain.md).  
 
 ## Scenario 1: Business Central service update
 
@@ -25,7 +25,7 @@ You don't need to make any bug fixes, feature adds, or app changes to your app. 
 
 ### Impact of service updates
 
-The monthly service upgrades to [!INCLUDE[prodshort](includes/prodshort.md)] do not impact your app. Your app just gets moved along and no upgrade code from your app needs to get used. [!INCLUDE[prodshort](includes/prodshort.md)] itself gets upgraded on your tenant, and once complete, the customer sees no difference with your app.
+The monthly service upgrades to [!INCLUDE[prod_short](includes/prod_short.md)] do not impact your app. Your app just gets moved along and no upgrade code from your app needs to get used. [!INCLUDE[prod_short](includes/prod_short.md)] itself gets upgraded on your tenant, and once complete, the customer sees no difference with your app.
 
 ## Scenario 2: App update
 
@@ -33,7 +33,7 @@ You (our partner) add some features to your app and also some minor bug fixes. T
 
 ### Impact of app updates
 
-Customers can either do an uninstall and then reinstall on their own, or they can ask their partner do it on their behalf from the Extension Management window within [!INCLUDE[prodshort](includes/prodshort.md)]. Otherwise, they would have to wait until our every 6-month major release. That is the only time we do a force upgrade of extensions (except for critical bug hotfix extension updates)
+Customers can either do an uninstall and then reinstall on their own, or they can ask their partner do it on their behalf from the Extension Management window within [!INCLUDE[prod_short](includes/prod_short.md)]. Otherwise, they would have to wait until our every 6-month major release. That is the only time we do a force upgrade of extensions (except for critical bug hotfix extension updates)
 
 ## Scenario 3: Reported bugs in your app
 
@@ -49,7 +49,7 @@ If a bug which leads to core functionality being broken or data loss/corruption/
 
 ## Scenario 5: Microsoft feature breaks your app
 
-Microsoft has to break your app file for a needed [!INCLUDE[prodshort](includes/prodshort.md)] core change. Some reasons for breaking could be security, bugs in the underlying code, high priority feature adds, and so on. Keep in mind, we do our very best to not break your app through our changes. We try and find proper ways of doing the changes without breaking your app. However, if we can't find a proper (non-breaking) way, then we could break your app. This won't be as likely in a minor update release (unless a security change is required on our part and that is the change that breaks you), but it can be more likely in our major (every 6-month) releases.
+Microsoft has to break your app file for a needed [!INCLUDE[prod_short](includes/prod_short.md)] core change. Some reasons for breaking could be security, bugs in the underlying code, high priority feature adds, and so on. Keep in mind, we do our very best to not break your app through our changes. We try and find proper ways of doing the changes without breaking your app. However, if we can't find a proper (non-breaking) way, then we could break your app. This won't be as likely in a minor update release (unless a security change is required on our part and that is the change that breaks you), but it can be more likely in our major (every 6-month) releases.
 
 ### Impact of breaking changes
 
@@ -58,8 +58,8 @@ Here is our process when this takes place:
 - First of all, Microsoft will not make a breaking change in the production environment at any point. Therefore, existing tenants are not expected to see this breaking change occur.
 - When we make a breaking change, we do it in a build branch that is for a future release (monthly service minor or major release)
 - We notify the partner in advance and give the partner ample time to fix their app, get it validated, and have it ready
-- The fixed app will already be in our service and slotted as required for when your tenant is to be moved to the [!INCLUDE[prodshort](includes/prodshort.md)] release that has the app breaking change
-- As a result, the customer (tenant owner) should never see their [!INCLUDE[prodshort](includes/prodshort.md)] break. Because the tenant gets moved from one monthly service update of [!INCLUDE[prodshort](includes/prodshort.md)] to another, the tenant is being upgraded to the release of ours that breaks the specific app. However, our service detects that there is a new required version of that app (your fixed version). Therefore, we auto install the fixed version of the app for the tenant
+- The fixed app will already be in our service and slotted as required for when your tenant is to be moved to the [!INCLUDE[prod_short](includes/prod_short.md)] release that has the app breaking change
+- As a result, the customer (tenant owner) should never see their [!INCLUDE[prod_short](includes/prod_short.md)] break. Because the tenant gets moved from one monthly service update of [!INCLUDE[prod_short](includes/prod_short.md)] to another, the tenant is being upgraded to the release of ours that breaks the specific app. However, our service detects that there is a new required version of that app (your fixed version). Therefore, we auto install the fixed version of the app for the tenant
 
 ## Conclusions
 

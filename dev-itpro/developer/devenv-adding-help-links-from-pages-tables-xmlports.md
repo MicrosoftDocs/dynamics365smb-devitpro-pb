@@ -14,7 +14,7 @@ ms.author: edupont
 
 # Adding Help Links from Pages, Reports, and XMLports
 
-When creating new pages, you can specify which Help file to open if the user selects the *Learn more* links in the UI of [!INCLUDE[prodshort](includes/prodshort.md)].  
+When creating new pages, you can specify which Help file to open if the user selects the *Learn more* links in the UI of [!INCLUDE[prod_short](includes/prod_short.md)].  
 
 The context-sensitive Help link is generated based on a configuration setting in the `app.json` file and the name of the relevant Help file that you specify as part of the metadata for the page object. For more information, see [Configure Context-Sensitive Help](../help/context-sensitive-help.md).  
 

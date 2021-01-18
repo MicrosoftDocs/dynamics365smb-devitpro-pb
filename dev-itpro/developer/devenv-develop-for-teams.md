@@ -14,7 +14,7 @@ author: jswymer
 
 [!INCLUDE [team_preview](includes/teams_preview.md)]
 
-[Microsoft Teams](https://www.microsoft.com/en-us/microsoft-365/microsoft-teams) is a Microsoft 365 product that lets you meet, chat, call, and collaborate with people you work with. [!INCLUDE [prodshort](includes/prodshort.md)] offers an app that connects Teams to your business data in [!INCLUDE [prodshort](includes/prodshort.md)] so users can quickly share details across team members and respond faster to inquiries. In this article, you'll learn how you can develop pages and tables so that data appears in Teams as you want. 
+[Microsoft Teams](https://www.microsoft.com/en-us/microsoft-365/microsoft-teams) is a Microsoft 365 product that lets you connect with others, collaborate seamlessly and simplify work. [!INCLUDE [prod_short](includes/prod_short.md)] offers an app that connects Teams to your business data in [!INCLUDE [prod_short](includes/prod_short.md)] so users can quickly share details across team members and respond faster to inquiries. In this article, you'll learn how you can develop pages and tables so that data appears in Teams as you want. 
 
 ## Introduction to the Business Central app for Teams
 
@@ -28,7 +28,7 @@ In short, the app lets users:
 
 ## Managing, Installing, and Using the Business Central App for Teams
 
-For more details about installing and using the [!INCLUDE [prodshort](includes/prodshort.md)] app in Teams from an admin and user perspective, see [Business Central and Microsoft Teams Integration](/dynamics365/business-central/across-teams-overview).
+For more details about installing and using the [!INCLUDE [prod_short](includes/prod_short.md)] app in Teams from an admin and user perspective, see [Business Central and Microsoft Teams Integration](/dynamics365/business-central/across-teams-overview).
 
 ## Development overview
 
@@ -36,7 +36,7 @@ Users can choose which links to records are pasted into Teams. The pasted links 
 
 ### About cards
 
-The [!INCLUDE [prodshort](includes/prodshort.md)] app for Teams is designed to work with entity pages that represent a single record. More specifically, it's designed for Card, Document, or ListPlus pages. Teams is ready to work with links to these page types and the underlying data in the source tables. 
+The [!INCLUDE [prod_short](includes/prod_short.md)] app for Teams is designed to work with entity pages that represent a single record. More specifically, it's designed for Card, Document, or ListPlus pages. Teams is ready to work with links to these page types and the underlying data in the source tables. 
 In most cases, displaying a card in Teams requires no additional development effort. But if a card doesn't display the fields and data you want, you have a couple options in AL code for making changes:
 
 -  Use a field group control on the source table
@@ -55,11 +55,11 @@ For more information about these two development options, see [Extending Teams C
 
 Users can select the **Details** button on a Teams card to drill into the details of the card. This button opens the [!INCLUDE [webclient](includes/webclient.md)] in a window that's embedded inside Teams. The window displays the target page object. The page includes any extensions to the page and its source table, role customizations, and user personalization. The experience is nearly identical to that of displaying the same record in the [!INCLUDE [webclient](includes/webclient.md)], except with some minor client differences.
 
-You can modify or extend the layout and behavior of the page, like you would any page. The changes you make will affect the page in all [!INCLUDE [prodshort](includes/prodshort.md)] clients, not just in Teams. You can't implement functionality that is available only in Teams but not other [!INCLUDE [prodshort](includes/prodshort.md)] clients. For more information about implementing pages, see [Pages Overview](devenv-pages-overview.md).
+You can modify or extend the layout and behavior of the page, like you would any page. The changes you make will affect the page in all [!INCLUDE [prod_short](includes/prod_short.md)] clients, not just in Teams. You can't implement functionality that is available only in Teams but not other [!INCLUDE [prod_short](includes/prod_short.md)] clients. For more information about implementing pages, see [Pages Overview](devenv-pages-overview.md).
 
 ## Preparing your environment for development and testing
 
-Developing for Teams integration is similar to other development activities in [!INCLUDE [prodshort](includes/prodshort.md)]. It requires Visual Studio Code, installed with the AL language extension, and knowledge of the AL language. However, because the [!INCLUDE [prodshort](includes/prodshort.md)] app for Teams only supports [!INCLUDE [prodshort](includes/prodshort.md)] online, you must deploy your extensions to an online sandbox to test the implementation. For more information about sandboxes, see [Sandbox Environments for Dynamics 365 Business Central Development](devenv-sandbox-overview.md).
+Developing for Teams integration is similar to other development activities in [!INCLUDE [prod_short](includes/prod_short.md)]. It requires Visual Studio Code, installed with the AL language extension, and knowledge of the AL language. However, because the [!INCLUDE [prod_short](includes/prod_short.md)] app for Teams only supports [!INCLUDE [prod_short](includes/prod_short.md)] online, you must deploy your extensions to an online sandbox to test the implementation. For more information about sandboxes, see [Sandbox Environments for Dynamics 365 Business Central Development](devenv-sandbox-overview.md).
 
 ## See Also
 [FAQ for Teams Integration](devenv-dev-faq-teams.md)  

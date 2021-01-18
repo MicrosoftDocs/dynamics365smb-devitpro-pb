@@ -2,7 +2,7 @@
 title: "System.Clear Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 12/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -69,9 +69,9 @@ var
     Text002: Label 'After using CLEAR, the variable "Name" contains: >;%1\>';
 begin
     Name := Text000;  
-    MESSAGE(Text001, Name);  
+    Message(Text001, Name);  
     CLEAR(Name);  
-    MESSAGE(Text002, Name);  
+    Message(Text002, Name);  
 end;
 ```  
 
@@ -106,16 +106,16 @@ var
 begin
     MyTextVar : Text000;  
     GuidVar := CREATEGUID();  
-    MESSAGE(Text001,MyTextVar,GuidVar);  
+    Message(Text001,MyTextVar,GuidVar);  
     CLEAR(MyTextVar);  
-    MESSAGE(Text002,MyTextVar,GuidVar);  
+    Message(Text002,MyTextVar,GuidVar);  
     CLEAR(GuidVar);  
-    MESSAGE(Text003,GuidVar);  
+    Message(Text003,GuidVar);  
     MyTextVar := Text000;  
     GuidVar := CREATEGUID();  
-    MESSAGE(Text004,MyTextVar,GuidVar);  
+    Message(Text004,MyTextVar,GuidVar);  
     CLEARALL;  
-    MESSAGE(Text005,MyTextVar,GuidVar); 
+    Message(Text005,MyTextVar,GuidVar); 
 end; 
 ```  
 

@@ -34,7 +34,7 @@ When you mention the product, both throughout your description text, as well as 
  
 **Secondary mentions:** Dynamics 365 Business Central  
  
-**Subsequent mentions:** [!INCLUDE[prodshort](../includes/prodshort.md)] 
+**Subsequent mentions:** [!INCLUDE[prod_short](../includes/prod_short.md)] 
  
 Therefore, you cannot use any abbreviations such as “MS Dyn 365 BC” or “Microsoft Dynamics NAV”. 
  
@@ -48,7 +48,7 @@ You are required to submit two distinct pages for support and help i.e. they can
 
 ## Can I use the Microsoft Dynamics 365 Business Central logo?  
 
-No, you cannot use the [!INCLUDE[prodshort](../includes/prodshort.md)] logo, as it’s a Microsoft trademarked logo. However, you can use the “Get it from Microsoft AppSource” badge, which you can find [here](https://appsource.microsoft.com/blogs/new-get-it-from-badging-for-microsoft-appsource-and-azure-marketplace-available-in-the-marketing-resources-guide). 
+No, you cannot use the [!INCLUDE[prod_short](../includes/prod_short.md)] logo, as it’s a Microsoft trademarked logo. However, you can use the “Get it from Microsoft AppSource” badge, which you can find [here](https://appsource.microsoft.com/blogs/new-get-it-from-badging-for-microsoft-appsource-and-azure-marketplace-available-in-the-marketing-resources-guide). 
 
 ## See Also
 

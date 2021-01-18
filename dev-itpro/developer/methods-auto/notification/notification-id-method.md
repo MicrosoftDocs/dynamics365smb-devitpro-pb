@@ -54,7 +54,7 @@ The example uses a pre-defined ID so that the notification can be recalled.
 ```
 MyNotification.ID := '00000000-0000-0000-0000-000000000001';
 IF NewBallance > Rec. "Credit Limit" THEN BEGIN
-  MyNotification.MESSAGE := 'The customer's current balance exceeds their credit limit.';
+  MyNotification.Message := 'The customer's current balance exceeds their credit limit.';
   MyNotification.SCOPE := NOTIFICATIONSCOPE::LocalScope;
   MyNotification.ADDACTION('Fix it.', 50001, 'FixCustomerCreditLimit');
   MyNotification.SETDATA('CustomerNo.', Rec."No.");

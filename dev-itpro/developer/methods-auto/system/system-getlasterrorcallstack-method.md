@@ -44,7 +44,7 @@ String :=   System.GetLastErrorCallStack()
  <!-- Links For more information, see [How to: Break on Errors](How-to-Break-on-Errors.md). --> 
   
 ## Example  
- In this example, an error occurs in codeunit 50003. The text of the MESSAGE includes a call to the GETLASTERRORCALLSTACK method.  
+ In this example, an error occurs in codeunit 50003. The text of the Message includes a call to the GETLASTERRORCALLSTACK method.  
   
 ```  
 // Codeunit 50001, TestErrors1  
@@ -55,7 +55,7 @@ ERROR('Some error message')
 // OnRun trigger  
 CLEARLASTERROR;  
 if not Codeunit.RUN(50001) then  
-  MESSAGE('The call stack for the last error is:\' + GETLASTERRORCALLSTACK);  
+  Message('The call stack for the last error is:\' + GETLASTERRORCALLSTACK);  
   
 ```  
   

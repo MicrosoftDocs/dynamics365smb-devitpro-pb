@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 ---
 # Enable Business Central Debug Logs in Event Viewer
 
-Some [!INCLUDE[server](../developer/includes/server.md)] events are collected in the following **Debug** logs specific to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in Event Viewer:
+Some [!INCLUDE[server](../developer/includes/server.md)] events are collected in the following **Debug** logs specific to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] in Event Viewer:
 
 -   **Applications and Services Logs** > **Microsoft** > **DynamicsNAV** > **Server**
 

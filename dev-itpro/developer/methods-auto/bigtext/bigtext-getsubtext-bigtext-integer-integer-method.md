@@ -1,9 +1,8 @@
 ---
 title: "BigText.GetSubText Method"
-description: "The BigText GetSubText Method in AL for Business Central"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 12/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -73,7 +72,7 @@ var
   
 MyBigText.ADDTEXT('ABCDEFG');  
 MyBigText.GETSUBTEXT(VarSubText, 3, 2); // Returns CD.  
-MESSAGE(Text000, VarSubText);  
+Message(Text000, VarSubText);  
 ```  
   
 ## Example 2 
@@ -83,7 +82,7 @@ MESSAGE(Text000, VarSubText);
   
 MyBigText.ADDTEXT('ABCDEFG');  
 MyBigText.GETSUBTEXT(VarSubText, 0, 4); // Returns an error.  
-MESSAGE(Text000, VarSubText);  
+Message(Text000, VarSubText);  
   
 ```  
   
@@ -94,7 +93,7 @@ MESSAGE(Text000, VarSubText);
   
 MyBigText.ADDTEXT('ABCDEFG');  
 MyBigText.GETSUBTEXT(VarSubText, 5, -2); // Returns an error.  
-MESSAGE(Text000, VarSubText);  
+Message(Text000, VarSubText);  
 ```  
   
 ## Example 4 
@@ -104,7 +103,7 @@ MESSAGE(Text000, VarSubText);
   
 MyBigText.ADDTEXT('ABCDEFG');  
 MyBigText.GETSUBTEXT(VarSubText, 15, 4); // Returns an empty string.  
-MESSAGE(Text000, VarSubText);  
+Message(Text000, VarSubText);  
   
 ```  
   
@@ -115,7 +114,7 @@ MESSAGE(Text000, VarSubText);
   
 MyBigText.ADDTEXT('ABCDEFG');  
 MyBigText.GETSUBTEXT(VarSubText, 4, 15); // Returns DEFG.  
-MESSAGE(Text000, VarSubText);  
+Message(Text000, VarSubText);  
   
 ```  
 

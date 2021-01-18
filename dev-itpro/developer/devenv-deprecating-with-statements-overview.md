@@ -15,11 +15,11 @@ author: esbenk
 
 [!INCLUDE[2020_releasewave2](../includes/2020_releasewave2.md)]
 
-The extensibility model and the AL programming language is a successor to the C/AL language. And the `with` statement has up until now been supported in AL. While using the `with` statement might make code harder to read, it can also prevent code in [!INCLUDE[prodshort](includes/prodshort.md)] online from being upgraded without changes to the code or even worse - upgraded, but with changed behavior. We distinguish between two types of with statements; the explicit type of `with` using the keyword, and the implicit with which is not expressed directly in code. The next sections describe these one by one.
+The extensibility model and the AL programming language is a successor to the C/AL language. And the `with` statement has up until now been supported in AL. While using the `with` statement might make code harder to read, it can also prevent code in [!INCLUDE[prod_short](includes/prod_short.md)] online from being upgraded without changes to the code or even worse - upgraded, but with changed behavior. We distinguish between two types of with statements; the explicit type of `with` using the keyword, and the implicit with which is not expressed directly in code. The next sections describe these one by one.
 
 ## The explicit with statement
 
-In [!INCLUDE[prodshort](includes/prodshort.md)] online your code is recompiled when the platform and application versions are upgraded. The recompilation ensures that it is working and the recompile regenerates the runtime artifacts to match the new platform. Breaking changes without due warning are not allowed, but the use of the `with` statement makes it impossible, as Microsoft, to make even additive changes in a completely non-breaking way. This problem is not alone isolated to changes made by Microsoft; any additive change has the potential to break a `with` statement in consuming code.
+In [!INCLUDE[prod_short](includes/prod_short.md)] online your code is recompiled when the platform and application versions are upgraded. The recompilation ensures that it is working and the recompile regenerates the runtime artifacts to match the new platform. Breaking changes without due warning are not allowed, but the use of the `with` statement makes it impossible, as Microsoft, to make even additive changes in a completely non-breaking way. This problem is not alone isolated to changes made by Microsoft; any additive change has the potential to break a `with` statement in consuming code.
 
 The following example illustrates code written using the `with` statement; referred to in this context as the explicit `with`.
 
@@ -163,10 +163,10 @@ On pages it is not only the code in triggers and procedures that is spanned by t
 
 ## Warnings and using pragma
 
-From [!INCLUDE[prodshort](includes/prodshort.md)] 2020 release wave 2 we begin to warn about the use of explicit and implicit with for extensions that are targeting the cloud. There are two different warnings: `AL0604` and `AL0606`.
+From [!INCLUDE[prod_short](includes/prod_short.md)] 2020 release wave 2 we begin to warn about the use of explicit and implicit with for extensions that are targeting the cloud. There are two different warnings: `AL0604` and `AL0606`.
 
 > [!NOTE]  
-> The warnings will become errors with a future release. We will at the earliest remove with statement support from the [!INCLUDE[prodshort](includes/prodshort.md)] 2021 release wave 2.
+> The warnings will become errors with a future release. We will at the earliest remove with statement support from the [!INCLUDE[prod_short](includes/prod_short.md)] 2021 release wave 2.
 
 ### AL0606 - use of explicit with
 

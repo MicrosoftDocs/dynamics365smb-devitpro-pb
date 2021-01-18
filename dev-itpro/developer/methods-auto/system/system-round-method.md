@@ -67,7 +67,7 @@ begin
     Direction := '>';  
     Precision := 0.001;  
     Result := ROUND(DecimalToRound, Precision, Direction);  
-    MESSAGE(Text000, Format(DecimalToRound,0,1), Precision, Direction, Result);  
+    Message(Text000, Format(DecimalToRound,0,1), Precision, Direction, Result);  
 end;
 ```  
 

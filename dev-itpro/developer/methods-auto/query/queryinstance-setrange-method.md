@@ -118,7 +118,7 @@ MyQuery.OPEN;
 // Stops reading when there are no more rows remaining in the dataset (READ is FALSE).  
 while MyQuery.READ do  
 begin  
-  MESSAGE(Text000, MyQuery.Name, MyQuery.Quantity);  
+  Message(Text000, MyQuery.Name, MyQuery.Quantity);  
 end;   
 // Saves the resulting dataset as a CSV file.  
 MyQuery.SAVEASCSV('c:\temp\CustomerSales.csv');  

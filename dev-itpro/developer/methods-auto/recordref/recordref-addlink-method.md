@@ -66,9 +66,9 @@ begin
     MyFieldRef.VALUE := CustomerNum;  
     if CustomerRecref.FIND('=') then begin  
       LinkID := CustomerRecref.ADDLINK(varLink);  
-      MESSAGE(Text000, LinkID);  
+      Message(Text000, LinkID);  
     end else
-      MESSAGE(Text001);  
+      Message(Text001);  
 end;
 ```  
 

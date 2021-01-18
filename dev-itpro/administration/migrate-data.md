@@ -17,9 +17,9 @@ ms.author: edupont
 
 # Migrating On-Premises Data to Business Central Online
 
-Organizations that run their workloads on-premises but are looking to move to the cloud can easily migrate to [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online. By moving to the cloud, users get the benefits of cloud scenarios such as Machine Learning, Power BI, Power Automate, and others to drive suggested actions.  
+Organizations that run their workloads on-premises but are looking to move to the cloud can easily migrate to [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online. By moving to the cloud, users get the benefits of cloud scenarios such as Machine Learning, Power BI, Power Automate, and others to drive suggested actions.  
 
-The cloud migration tool in [!INCLUDE [prodshort](../developer/includes/prodshort.md)] supports migration from specific versions of specific software. For more information, see the following articles:
+The cloud migration tool in [!INCLUDE [prod_short](../developer/includes/prod_short.md)] supports migration from specific versions of specific software. For more information, see the following articles:
 
 * [Migrate to Business Central Online from Business Central On-premises](migrate-business-central-on-premises.md)  
 * [Migrate to Business Central Online from Dynamics GP](migrate-dynamics-gp.md)  
@@ -27,9 +27,9 @@ The cloud migration tool in [!INCLUDE [prodshort](../developer/includes/prodshor
 
 ## Data migration
 
-Data migration is the process of securely migrating data from your on-premises SQL Server instance to your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant. The process uses the Azure Data Factory (ADF) to migrate the data between databases directly, meaning it does not look at any permissions within the applications you are transferring data between, only SQL permissions.  
+Data migration is the process of securely migrating data from your on-premises SQL Server instance to your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online tenant. The process uses the Azure Data Factory (ADF) to migrate the data between databases directly, meaning it does not look at any permissions within the applications you are transferring data between, only SQL permissions.  
 
-To migrate data, run the [Cloud Migration Setup](migration-tool.md) assisted setup wizard in your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online tenant. Once the wizard is complete and data migration is activated, an initial data migration will happen at the scheduled time. Alternatively, you can trigger the data migration process manually.  
+To migrate data, run the [Cloud Migration Setup](migration-tool.md) assisted setup wizard in your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online tenant. Once the wizard is complete and data migration is activated, an initial data migration will happen at the scheduled time. Alternatively, you can trigger the data migration process manually.  
 
 > [!TIP]
 > [!INCLUDE [migrate-limits](../developer/includes/migrate-limits.md)]

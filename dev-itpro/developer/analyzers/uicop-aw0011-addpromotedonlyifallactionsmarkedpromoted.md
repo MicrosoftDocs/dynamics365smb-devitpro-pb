@@ -1,9 +1,8 @@
 ---
-title: Add PromotedOnly to some or all promoted actions to avoid identical actions from appearing in both the promoted and default sections of the command bar.
-description: UICop Rule AW0011
+title: "Add PromotedOnly="true" to some or all promoted actions to avoid identical actions from appearing in both the promoted and default sections of the command bar."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 12/14/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

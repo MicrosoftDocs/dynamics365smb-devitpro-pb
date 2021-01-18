@@ -13,13 +13,13 @@ ms.author: jswymer
 
 # Operational Limits for Business Central Online
 
-To ensure the availability and quality of Business Central services, there are limits on certain operations. This article describes the limits and, in some cases, the strategy behind them. The limits are per-tenant limits.
+To ensure the availability and quality of Business Central services, there are limits on certain operations. This article describes the limits and, in some cases, the strategy behind them.
 
 > [!TIP]
 > Telemetry is gathered on some of the operations that have a limit. The telemetry provides insight into operations for which limits were exceeded. For more information, see [Monitoring and Analyzing Telemetry](telemetry-overview.md).
 
 <!--
-For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, you can't change these limits, but it's useful to be aware of them. For on-premises installation, you can adjust most of the limits by configuring the [!INCLUDE[server](../developer/includes/server.md)].-->
+For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, you can't change these limits, but it's useful to be aware of them. For on-premises installation, you can adjust most of the limits by configuring the [!INCLUDE[server](../developer/includes/server.md)].-->
 
 ##  <a name="ClientServices"></a> Client connection limits
   
@@ -89,7 +89,7 @@ For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, you can't 
 | Max execution timeout | The maximum execution time that it can take to generate a query. If exceeded, the query will be canceled.|30 minutes|
 | Max rows | The maximum number of rows that can be processed in a query. If exceeded, the query will be canceled.|1,000,000|
 
-##  <a name="ODataServices"></a> OData request limits
+##  <a name="ODataServices"></a> OData request limits (per environment)
   
 |Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
 |---------|--------------------------------------------------------------------------------|------|
@@ -103,7 +103,7 @@ For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, you can't 
 <!--
 |Request timeout|HTTP response code `504 - Gateway Timeout` is returned when a request exceeds 10-minutes execution time.|10 minutes|
 -->
-##  <a name="SOAPServices"></a> SOAP request limits
+##  <a name="SOAPServices"></a> SOAP request limits (per environment)
 
 |Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
 |---------|--------------------------------------------------------------------------------|------|

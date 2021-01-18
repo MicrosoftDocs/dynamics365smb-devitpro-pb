@@ -49,7 +49,7 @@ var
 begin
     RANDOMIZE();  
     x := RANDOM(5);  
-    MESSAGE(Text000, x);  
+    Message(Text000, x);  
 end;
 ```  
 

@@ -51,7 +51,7 @@ var
 begin
     InputDate := 20140404D;  
     OutputDate := NORMALDATE(InputDate);  
-    MESSAGE(Text000, InputDate, OutputDate);  
+    Message(Text000, InputDate, OutputDate);  
 end;
 ```  
   
@@ -71,7 +71,7 @@ var
 begin
     InputDate := CLOSINGDATE(20140404C);  
     OutputDate := NORMALDATE(InputDate);  
-    MESSAGE(Text001, InputDate, OutputDate);  
+    Message(Text001, InputDate, OutputDate);  
 end;
 ```  
   

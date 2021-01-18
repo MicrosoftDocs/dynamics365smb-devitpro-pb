@@ -50,7 +50,7 @@ begin
     ItemRecref.OPEN(DATABASE::Item);  
     MyFieldRef := ItemRecref.FIELD(1);  
     MyRecRef := MyFieldRef.RECORD;  
-    MESSAGE(Text000, MyRecRef.NUMBER);  
+    Message(Text000, MyRecRef.NUMBER);  
 end;
 ```  
   

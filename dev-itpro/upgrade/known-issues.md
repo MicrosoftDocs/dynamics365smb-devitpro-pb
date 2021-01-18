@@ -12,9 +12,9 @@ author: jswymer
 ms.service: "dynamics365-business-central"
 ---
 
-# Some Known Issues in [!INCLUDE[prod long](../developer/includes/prodlong.md)] On-premises
+# Some Known Issues in [!INCLUDE[prod long](../developer/includes/prod_long.md)] On-premises
 
-This article describes some known issues in [!INCLUDE[prod short](../developer/includes/prodshort.md)] versions. These issues can impact installation, upgrade, and various operations of [!INCLUDE[prod short](../developer/includes/prodshort.md)] on-premises.
+This article describes some known issues in [!INCLUDE[prod short](../developer/includes/prod_short.md)] versions. These issues can impact installation, upgrade, and various operations of [!INCLUDE[prod short](../developer/includes/prod_short.md)] on-premises.
 
 > [!NOTE]
 > The article doesn't include a complete list of known issues. Instead, it addresses some common issues that you might experience or might consider when upgrading to a version. If you're aware of issues that aren't in this article, or you'd like more help, see [Resources for Help and Support](../help-and-support.md).
@@ -57,7 +57,7 @@ The issue occurs when synchronizing extensions. You'll get an error similar to o
 
 ### Problem
 
-[!INCLUDE[prod short](../developer/includes/prodshort.md)] version 17 introduced [data audit](../developer/devenv-table-system-fields.md#audit) fields on tables. When you upgrade from version 15 or 16, the $systemModifiedAt field is populated with values from field **5120 ModifiedOn** in table **5151 Integration Record**. However, this mapping doesn't work in a version 14-to-17 upgrade.  
+[!INCLUDE[prod short](../developer/includes/prod_short.md)] version 17 introduced [data audit](../developer/devenv-table-system-fields.md#audit) fields on tables. When you upgrade from version 15 or 16, the $systemModifiedAt field is populated with values from field **5120 ModifiedOn** in table **5151 Integration Record**. However, this mapping doesn't work in a version 14-to-17 upgrade.  
 
 ### Impact
 
@@ -77,7 +77,7 @@ Version 16.5 includes the wrong .NET 4.5 assemblies for connecting to external s
 
 ### Impact
 
-In the [!INCLUDE[prod short](../developer/includes/prodshort.md)] client, you can set up external service connections from the **Service Connections** page. When you try to set up a connection, it will fail because [!INCLUDE[prod short](../developer/includes/prodshort.md)] can't obtain an access token for connecting to the service.
+In the [!INCLUDE[prod short](../developer/includes/prod_short.md)] client, you can set up external service connections from the **Service Connections** page. When you try to set up a connection, it will fail because [!INCLUDE[prod short](../developer/includes/prod_short.md)] can't obtain an access token for connecting to the service.
 
 In the client, you'll get an error similar to the following message:
 

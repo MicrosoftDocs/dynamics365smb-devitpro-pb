@@ -15,7 +15,7 @@ caps.latest.revision: 28
 Events that occur on the [!INCLUDE[server](../developer/includes/server.md)] instances can be recorded in event logs on the computer that is running [!INCLUDE[server](../developer/includes/server.md)]. You can view the events by using Event Viewer.  
   
 ##  <a name="ViewEventViewer"></a> About Business Central Server Events in Event Viewer  
-Events that occur on [!INCLUDE[server](../developer/includes/server.md)] instances are recorded in the event channels specific to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] and also in the general Windows Application log. Event channels provide a way to collect and view events from a specific event trace provider. This differs from the Windows Application log which contains system-wide events from multiple publishers \(applications and components\).   
+Events that occur on [!INCLUDE[server](../developer/includes/server.md)] instances are recorded in the event channels specific to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] and also in the general Windows Application log. Event channels provide a way to collect and view events from a specific event trace provider. This differs from the Windows Application log which contains system-wide events from multiple publishers \(applications and components\).   
 
 ## Business Central channel logs
 In the Event Viewer console tree, open **Applications and Services Logs** > **Microsoft** > **DynamicsNAV**.

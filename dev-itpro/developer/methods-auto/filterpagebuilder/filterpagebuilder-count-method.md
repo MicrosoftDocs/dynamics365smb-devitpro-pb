@@ -50,8 +50,8 @@ var
 
 begin 
     varDateItem := 'Date record';  
-    varFilterPageBuilder.ADDTABLE(varDateItem + ' 1',DATABASE::Date);  
-    varFilterPageBuilder.ADDTABLE(varDateItem + ' 2',DATABASE::Date);  
+    varFilterPageBuilder.AddTable(varDateItem + ' 1',DATABASE::Date);  
+    varFilterPageBuilder.AddTable(varDateItem + ' 2',DATABASE::Date);  
     varCount := varFilterPageBuilder.COUNT;  
     if varCount <> 2 then   
       ERROR('There should be two controls in varFilterPageBuilder');

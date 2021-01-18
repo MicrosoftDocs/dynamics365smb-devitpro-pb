@@ -55,9 +55,9 @@ begin
     for i := 1 to 12 do begin  
       if MyRecordRef.FIELDEXIST(i) then begin  
          VarFieldName := MyRecordRef.FIELD(i);  
-         MESSAGE(Text000, i, VarFieldName.NAME);  
+         Message(Text000, i, VarFieldName.NAME);  
         end else  
-        MESSAGE(Text001, i);  
+        Message(Text001, i);  
       end;  
 end;
 ```  

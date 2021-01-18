@@ -60,9 +60,9 @@ begin
     MyRecordRef.OPEN(DATABASE::Customer);  
     MyRecordRef.SETRECFILTER;  
     varOrigGroup := MyRecordRef.FILTERGROUP;  
-    MESSAGE(Text000, varOrigGroup);  
+    Message(Text000, varOrigGroup);  
     varCurrGroup := MyRecordRef.FILTERGROUP(1);  
-    MESSAGE(Text001, varCurrGroup);  
+    Message(Text001, varCurrGroup);  
 end;
 ```  
   

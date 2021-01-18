@@ -53,10 +53,10 @@ var
 begin   
     RecRef.OPEN(DATABASE::Customer);  
     VarHasFilters := RecRef.HASFILTER;  
-    MESSAGE('Are there any filters? %1', VarHasFilters);  
+    Message('Are there any filters? %1', VarHasFilters);  
     RecRef.SETRECFILTER;  
     VarHasFilters := RecRef.HASFILTER;  
-    MESSAGE(Text000, VarHasFilters);  
+    Message(Text000, VarHasFilters);  
 end;
 ```  
 

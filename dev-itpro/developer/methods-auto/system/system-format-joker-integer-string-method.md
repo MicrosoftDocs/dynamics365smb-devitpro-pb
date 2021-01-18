@@ -88,9 +88,9 @@ The *FormatNumber* parameter specifies the format that you want to use. The basi
 var
     Text000: Label 'The formatted value >%1<';
 begin
-    MESSAGE(Text000, FORMAT(-123456.78, 12, 3));  
-    MESSAGE(Text000, FORMAT(-123456.78, 12, '<Standard Format,3>'));  
-    MESSAGE(Text000, FORMAT(-123456.78, 12, '<Integer Thousand><Decimals><Sign,1>'));  
+    Message(Text000, FORMAT(-123456.78, 12, 3));  
+    Message(Text000, FORMAT(-123456.78, 12, '<Standard Format,3>'));  
+    Message(Text000, FORMAT(-123456.78, 12, '<Integer Thousand><Decimals><Sign,1>'));  
 end;
 
 ```  
@@ -118,7 +118,7 @@ This example shows how to use a string to build a format.
 var
     Text000: Label 'Today is %1';
 begin 
-    MESSAGE(Text000, FORMAT(TODAY,0,'<Month Text> <Day>'));  
+    Message(Text000, FORMAT(Today,0,'<Month Text> <Day>'));  
 end;
 ```  
 

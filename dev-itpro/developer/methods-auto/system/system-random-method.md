@@ -66,7 +66,7 @@ begin
     Number1 := RANDOM(x);  
     Number2 := RANDOM(y);  
     Number3 := RANDOM(z);  
-    MESSAGE(Text000, Number1, Number2, Number3);  
+    Message(Text000, Number1, Number2, Number3);  
 end;
 ```  
 

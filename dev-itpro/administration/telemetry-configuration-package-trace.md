@@ -14,7 +14,7 @@ ms.author: jswymer
 
 # Analyzing Configuration Package Lifecycle Trace Telemetry
 
-**APPLIES TO:** [!INCLUDE[prodshort](../includes/prodshort.md)] 2020 release wave 2, version 17.2, and later
+**APPLIES TO:** [!INCLUDE[prod_short](../includes/prod_short.md)] 2020 release wave 2, version 17.2, and later
 
 Configuration package telemetry gathers data about the following operations on configuration packages:
 
@@ -23,7 +23,7 @@ Configuration package telemetry gathers data about the following operations on c
 - Apply 
 - Delete
 
-For information about working with configuration packages, see [Prepare a Configuration Package](/dynamics365/business-central/admin-how-to-prepare-a-configuration-package) in the [!INCLUDE[prodshort](../includes/prodshort.md)] Application Help.
+For information about working with configuration packages, see [Prepare a Configuration Package](/dynamics365/business-central/admin-how-to-prepare-a-configuration-package) in the [!INCLUDE[prod_short](../includes/prod_short.md)] Application Help.
 
 ## <a name="exportstarted"></a>Configuration package export started
 
@@ -65,7 +65,7 @@ The following table explains additional custom dimensions that are common to all
 |component|**Dynamics 365 Business Central Server**.|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments).|
-|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
+|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 
 
 ## <a name="exportsuccessful"></a>Configuration package exported successfully
@@ -247,4 +247,4 @@ Occurs when a configuration package is deleted successfully.
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Enabling Application Insights for Tenant Telemetry On-Premises](telemetry-enable-application-insights.md)  
 [Enable Sending Telemetry to Application Insights](tenant-admin-center-telemetry.md#appinsights)  
-[Prepare a Configuration Package](/dynamics365/business-central/admin-how-to-prepare-a-configuration-package) in the [!INCLUDE[prodshort](../includes/prodshort.md)]  
+[Prepare a Configuration Package](/dynamics365/business-central/admin-how-to-prepare-a-configuration-package) in the [!INCLUDE[prod_short](../includes/prod_short.md)]  
