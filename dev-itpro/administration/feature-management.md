@@ -40,14 +40,6 @@ Learn about [new features available in the last minor update](https://aka.ms/bcl
 > [!TIP]
 > To prepare for an upcoming feature, consider enabling the feature on a sandbox environment that has a copy of production data. Invite business users to test out the change using real-world tasks. Once you and your users are satisfied with the change, you can then enable it on production environments where they can immediately benefit from that feature.  
 
-## Scheduling Data Updates for New Features
-Enabling application features that change the user experience or update data can be a disruptive process, and you might want to go at your own pace by scheduling an update per company, for example, for a time that is after your users have been trained for the new experiences. 
-
-You can schedule a data update on the **Feature Management** page by choosing the **Schedule**action, or by choosing **All Users** in the **Enable for** column. Both of those actions start the **Feature Data Update** setup guide, which allows you to review the affected data and schedule the update process. When the data update process is completed, the feature is enabled in the company where you ran the data update.
-
-> [!NOTE]
-> For a feature that requires data update, data is created based on the data for the existing feature. The data for the existing feature may remain available, however, it is not synchronized with data for the new feature. Therefore, we recommend that you use one feature or the other, but not both.
-
 ## How to enable an optional feature
 
 1. Sign in to your environment and navigate to the **Feature Management** page, or use this link: [https://businesscentral.dynamics.com/?page=2610](https://businesscentral.dynamics.com/?page=2610).
@@ -65,6 +57,14 @@ Some features or feature improvements may permanently affect the state and capab
 
 > [!NOTE]
 > When you choose to enable an irreversible feature, a warning dialog that describes the consequences is displayed. Choose **Yes** to proceed with permanently enabling the feature on that environment.
+
+## Scheduling Data Updates for New Features
+Enabling application features that change the user experience or update data can be a disruptive process, and you might want to go at your own pace by scheduling an update per company, for example, for a time that is after your users have been trained for the new experiences. 
+
+You can schedule a data update on the **Feature Management** page by choosing the **Schedule**action, or by choosing **All Users** in the **Enable for** column. Both of those actions start the **Feature Data Update** setup guide, which allows you to review the affected data and schedule the update process. When the data update process is completed, the feature is enabled in the company where you ran the data update.
+
+> [!NOTE]
+> For a feature that requires data update, data is created based on the data for the existing feature. The data for the existing feature may remain available, however, it is not synchronized with data for the new feature. Therefore, we recommend that you use one feature or the other, but not both.
 
 ## FAQ about Feature Management
 
