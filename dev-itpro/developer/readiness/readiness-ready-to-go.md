@@ -31,7 +31,7 @@ Find the latest minor update here: https://aka.ms/bclastminorupdate
 
 ## Country availability and supported languages 
 **Supported countries, regions and languages**  
-Find the countries/regions where Dynamics 365 Business Central is available and which languages are supported: https://aka.ms/bccountries
+Find the countries/regions where Business Central is available and which languages are supported: https://aka.ms/bccountries
 
 ## Training and coaching 
 **ISV Development Center**  
