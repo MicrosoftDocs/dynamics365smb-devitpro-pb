@@ -71,12 +71,12 @@ begin
     Str2 := Text001;  
     Len1 := STRLEN(Str1);  
     Len2 := STRLEN(Str2);  
-    MESSAGE(Text002 + Text003 + Text004, Str1, Len1, Str2, Len2);  
+    Message(Text002 + Text003 + Text004, Str1, Len1, Str2, Len2);  
     Str1 := PADSTR(Str1, 5); // Truncate the length to 5  
     Str2 := PADSTR(Str2, 15, 'w'); // Concatenate w until length = 15  
     Len1 := STRLEN(Str1);  
     Len2 := STRLEN(Str2);  
-    MESSAGE(Text005 + Text003 + Text004, Str1, Len1, Str2, Len2);  
+    Message(Text005 + Text003 + Text004, Str1, Len1, Str2, Len2);  
 end;
 ```  
   

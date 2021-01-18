@@ -51,7 +51,7 @@ begin
     RecRef.OPEN(18);  
     varKeyRef := RecRef.KEYINDEX(2);  
     VarCount := varKeyRef.FIELDCOUNT;  
-    MESSAGE('The number of fields defined in the key is: %1', VarCount);  
+    Message('The number of fields defined in the key is: %1', VarCount);  
 end;
 ```  
   

@@ -15,7 +15,7 @@ ms.author: bholtorf
 ---
 
 # Deprecated Features in the Mexican Version of Microsoft Dynamics 365 Business Central
-This topic lists and describes the local functionality for the Mexico that has been removed from [!INCLUDE[prodshort](../developer/includes/prodshort.md)], made available from a new page or report, or replaced by a new feature.
+This topic lists and describes the local functionality for the Mexico that has been removed from [!INCLUDE[prod_short](../developer/includes/prod_short.md)], made available from a new page or report, or replaced by a new feature.
 
 ## Customer Statement Report
 Shows a list of financial transactions for a selected customer statements for a given period of time. For example, use the report as part of your payment collection process.
@@ -43,7 +43,7 @@ Shows a list of aged remaining balances for each customer for a given period of 
 [!INCLUDE [fields-obsolete-mx](../includes/fields-obsolete-mx.md)]
 
 ## See Also
-[Upgrading [!INCLUDE[prodshort](../developer/includes/prodshort.md)]](upgrading-to-business-central.md)  
+[Upgrading [!INCLUDE[prod_short](../developer/includes/prod_short.md)]](upgrading-to-business-central.md)  
 [Upgrading the Application Code](upgrading-the-application-code.md)  
 [Deprecated Fields, and Fields Marked as Obsolete](deprecated-fields.md)  
-[Mexican Local Functionality in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]](/dynamics-nav-app/LocalFunctionality/Mexico/mexico-local-functionality)  
+[Mexican Local Functionality in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]](/dynamics-nav-app/LocalFunctionality/Mexico/mexico-local-functionality)  

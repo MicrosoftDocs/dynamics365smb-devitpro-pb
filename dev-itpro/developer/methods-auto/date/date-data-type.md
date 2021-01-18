@@ -53,7 +53,7 @@ var
     Date1: Date;
 begin
     Date1 := 20180612D;  
-    MESSAGE(FORMAT(Date1));  
+    Message(FORMAT(Date1));  
 end;
 ```  
   

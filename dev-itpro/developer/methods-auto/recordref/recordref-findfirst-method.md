@@ -53,9 +53,9 @@ var
 begin 
     ItemRecref.OPEN(27);  
     if ItemRecref.FINDFIRST then  
-      MESSAGE(Text000, ItemRecref.FIELD(3),  ItemRecref.FIELD(18))  
+      Message(Text000, ItemRecref.FIELD(3),  ItemRecref.FIELD(18))  
     else  
-      MESSAGE(Text001);  
+      Message(Text001);  
 end;
   
 ```  

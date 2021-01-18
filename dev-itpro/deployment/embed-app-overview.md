@@ -16,7 +16,7 @@ ms.date: 10/01/2020
 
 [!INCLUDE[embedapp](../developer/includes/embedapp.md)] is a term that defines an end-to-end solution meeting the specific needs of a vertical or micro-vertical industry.  
 
-[!INCLUDE[d365_bus_central_md](../developer/includes/d365_bus_central_md.md)] plays a vital role in the Embed App, as [!include[prodshort](../developer/includes/prodshort.md)] is embedded as an integral part of the overall solution.   
+[!INCLUDE[d365_bus_central_md](../developer/includes/d365_bus_central_md.md)] plays a vital role in the Embed App, as [!include[prod_short](../developer/includes/prod_short.md)] is embedded as an integral part of the overall solution.   
 
 Some examples of an [!INCLUDE[embedapp](../developer/includes/embedapp.md)] include:  
 - A Dentist solution  
@@ -42,7 +42,7 @@ On a high level, an [!INCLUDE[embedapp](../developer/includes/embedapp.md)] is a
     This includes additional [!INCLUDE[embedapp](../developer/includes/embedapp.md)] properties that are specific to this type of app and not otherwise available for other types of apps (see the list below).  
 - Base application and tenant template (optional)  
 
-The following capabilities are only available for the [!INCLUDE[embedapp](../developer/includes/embedapp.md)] and not for other types of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] apps (Connect and Add-on).
+The following capabilities are only available for the [!INCLUDE[embedapp](../developer/includes/embedapp.md)] and not for other types of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] apps (Connect and Add-on).
 
 ### Partner Branding
 
@@ -73,10 +73,10 @@ Partners can choose to bring their own code-customized base application as an [!
 
 - Shortening time-to-market ("lift and shift" approach).
 
-    The partner's current solution is a significantly customized version of the [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] application and it will require substantial time and effort to migrate it into extensions. A partner can lift their solution as-is (upgraded to a supported platform) to [!INCLUDE[[prodshort](../developer/includes/prodshort.md)] service and start offering it to their new and prospective customers. Then, they can gradually start moving their functionality into extensions to achieve the benefits that come with the extension model.  
+    The partner's current solution is a significantly customized version of the [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] application and it will require substantial time and effort to migrate it into extensions. A partner can lift their solution as-is (upgraded to a supported platform) to [!INCLUDE[[prod_short](../developer/includes/prod_short.md)] service and start offering it to their new and prospective customers. Then, they can gradually start moving their functionality into extensions to achieve the benefits that come with the extension model.  
 - Overcoming the limitations of the current extensions framework.
 
-    Extensions today can support many scenarios and the Microsoft team is working on extending these capabilities even more. However, some customization needs of the partners are not yet possible using the current version of the extensions framework, so partners can choose to do these changes directly in the base application using C/SIDE Development Environment based on [!INCLUDE [prodshort](../developer/includes/prodshort.md)] version 14.  
+    Extensions today can support many scenarios and the Microsoft team is working on extending these capabilities even more. However, some customization needs of the partners are not yet possible using the current version of the extensions framework, so partners can choose to do these changes directly in the base application using C/SIDE Development Environment based on [!INCLUDE [prod_short](../developer/includes/prod_short.md)] version 14.  
 - Availability of 3rd party add-ins as extensions.
     
 - Usage of .NET interoperability and custom assemblies.
@@ -99,7 +99,7 @@ At this stage, within the extensions and base application, the partner can work 
 
 #### Platform version availability
 
-Microsoft is going to make new versions of the [!include[prodshort](../developer/includes/prodshort.md)] platform available to [!INCLUDE [embedapp](../developer/includes/embedapp.md)] partners through the Lifecycle Services portal (LCS). The partner will then have to pick the platform they want to use for deployment of their solution.
+Microsoft is going to make new versions of the [!include[prod_short](../developer/includes/prod_short.md)] platform available to [!INCLUDE [embedapp](../developer/includes/embedapp.md)] partners through the Lifecycle Services portal (LCS). The partner will then have to pick the platform they want to use for deployment of their solution.
 
 #### Deploying versions
 
@@ -113,6 +113,6 @@ Any existing deployments, running on platform versions that are older than 3 upd
 [Qualification and Onboarding](embed-app-qualifications-onboarding.md)  
 [Managing in Microsoft Lifecycle Services](embed-app-lifecycle-services.md)  
 [Components and Capabilities](app-components.md)  
-[Deployment of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](Deployment.md)  
+[Deployment of [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](Deployment.md)  
 [Administration of Business Central Online](../administration/tenant-administration.md)  
 [Administration of Business Central On-Premises](../administration/Administration.md)  

@@ -56,11 +56,11 @@ begin
     validGuid := '{FC841BE6-0ADA-46C4-A6A9-142AEC211613}';  
     nullGuid  := '{00000000-0000-0000-0000-000000000000}';        
     if ISNULLGUID(validGuid) then  
-      MESSAGE(Text000)  
+      Message(Text000)  
     else   
-      MESSAGE(Text001 + Text002, validGuid);  
+      Message(Text001 + Text002, validGuid);  
     if ISNULLGUID(nullGuid) then  
-      MESSAGE(Text000);  
+      Message(Text000);  
 end;
 ```  
   

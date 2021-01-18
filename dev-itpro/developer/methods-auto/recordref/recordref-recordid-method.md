@@ -51,7 +51,7 @@ begin
     MyRecordRef.OPEN(18);  
     MyRecordRef.FINDLAST;  
     RecID := MyRecordRef.RECORDID;  
-    MESSAGE(Text000, RecID);  
+    Message(Text000, RecID);  
 end;
 ```  
   

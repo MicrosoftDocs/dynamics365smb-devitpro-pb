@@ -66,7 +66,7 @@ begin
     CustomerRecref.INIT;  
     MyFieldRef.VALUE := '1120';  
     CustomerRecref.INSERT;  
-    MESSAGE(‘%1’, MyFieldRef.VALUE);  
+    Message(‘%1’, MyFieldRef.VALUE);  
 end;
 ```  
 

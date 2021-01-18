@@ -18,7 +18,7 @@ In this article, you'll learn how to customize the fields that display on a Team
 
 ## Extend Teams cards by using field groups 
 
-This section explains how to customize the fields that display on Teams card by setting metadata in [!INCLUDE [prodshort](includes/prodshort.md)] page and table objects.
+This section explains how to customize the fields that display on Teams card by setting metadata in [!INCLUDE [prod_short](includes/prod_short.md)] page and table objects.
 
 ###  <a name="card"></a>Understanding the card layout in Teams
 

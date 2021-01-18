@@ -67,7 +67,7 @@ begin
     MyRecordRef.CHANGECOMPANY('Company B');  
     MyRecordRef.FINDLAST;  
     RecID := MyRecordRef.RECORDID;  
-    MESSAGE(Text000, RecID);  
+    Message(Text000, RecID);  
     MyRecordRef.DELETE;  
 end;
 ```  

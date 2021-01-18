@@ -63,7 +63,7 @@ An instance of the [File](file-data-type.md) data type.
     TestFile: File;
 begin
     if TestFile.CREATE('C:\TestFolder\TestFile.txt') then begin  
-      MESSAGE('%1 is created', TestFile.NAME);  
+      Message('%1 is created', TestFile.NAME);  
     end else  
     ERROR('The file could not be created');  
 end;

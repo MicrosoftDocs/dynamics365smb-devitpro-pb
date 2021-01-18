@@ -79,10 +79,10 @@ begin
     CustomerRecref.OPEN(18);  
     MyFieldRef := CustomerRecref.FIELD(1);  
     CustomerRecref.INIT;  
-    MESSAGE(‘%1’, MyFieldRef.VALUE);  
+    Message(‘%1’, MyFieldRef.VALUE);  
     MyFieldRef.VALUE := '1120';  
     CustomerRecref.INSERT;  
-    MESSAGE(‘%1’, MyFieldRef.VALUE);  
+    Message(‘%1’, MyFieldRef.VALUE);  
 end;
 ```  
   

@@ -10,29 +10,29 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
-# Setting Up the Add-In for Outlook Integration with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] On-Premises
+# Setting Up the Add-In for Outlook Integration with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] On-Premises
 
-If your organization uses Exchange Server or Exchange Online (alone or part of Microsoft 365), [!INCLUDE[prodshort](../developer/includes/prodshort.md)] includes integration with Outlook that enable users to complete [!INCLUDE[prodshort](../developer/includes/prodshort.md)] business tasks from their Outlook inbox.  
+If your organization uses Exchange Server or Exchange Online (alone or part of Microsoft 365), [!INCLUDE[prod_short](../developer/includes/prod_short.md)] includes integration with Outlook that enable users to complete [!INCLUDE[prod_short](../developer/includes/prod_short.md)] business tasks from their Outlook inbox.  
 
 ## Overview
 
-[!INCLUDE[prodshort](../developer/includes/prodshort.md)] includes the following capabilities for Outlook:
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] includes the following capabilities for Outlook:
 
 - Contact Insights
 
-    The add-in provides users with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] customer or vendor information in Outlook emails and calendar appointments. It also enables users to create and send [!INCLUDE[prodshort](../developer/includes/prodshort.md)] business documents, such a sales quotes and invoices to a contact. To support these task, the add-in adds actions to the Outlook ribbon, in the **Business Central** group.  
+    The add-in provides users with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] customer or vendor information in Outlook emails and calendar appointments. It also enables users to create and send [!INCLUDE[prod_short](../developer/includes/prod_short.md)] business documents, such a sales quotes and invoices to a contact. To support these task, the add-in adds actions to the Outlook ribbon, in the **Business Central** group.  
 
 - Create and view documents
 
-    When a business document is sent as an email, the add-in provides a direct link from email to the actual business document in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. The add-in adds a **Document Links** action in the email header, which a user can select to display the document.  
+    When a business document is sent as an email, the add-in provides a direct link from email to the actual business document in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. The add-in adds a **Document Links** action in the email header, which a user can select to display the document.  
 
 <!--    ![Office Add-ins for Outlook](../media/OutlookAddinsCallouts.png "Office Add-ins for Outlook")-->
 
-Setting up the add-in involves two procedures. First, you configure the [!INCLUDE[server](../developer/includes/server.md)] instance to work with the add-ins. Then, you deploy the add-ins from the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client to users' Outlook. Before you begin, make sure that the deployment environment meets the prerequisites.
+Setting up the add-in involves two procedures. First, you configure the [!INCLUDE[server](../developer/includes/server.md)] instance to work with the add-ins. Then, you deploy the add-ins from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client to users' Outlook. Before you begin, make sure that the deployment environment meets the prerequisites.
 
 ## Prerequisites
 
-1. [!INCLUDE[prodshort](../developer/includes/prodshort.md)] deployment prerequisites
+1. [!INCLUDE[prod_short](../developer/includes/prod_short.md)] deployment prerequisites
 
     1. [!INCLUDE[webserver](../developer/includes/webserver.md)] installed and configured to use SSL (https).
     1. [Install Business Central using Setup](../deployment/install-using-setup.md)  
@@ -47,7 +47,7 @@ Setting up the add-in involves two procedures. First, you configure the [!INCLUD
 
     If you are using Exchange Server, configure it to allow access to Exchange Web Services (EWS). For more information, see [Control access to EWS in Exchange](/exchange/client-developer/exchange-web-services/how-to-control-access-to-ews-in-exchange).  
 
-3. Some browser versions, such as Google Chrome 80, include changes to how cookies are handled. To ensure that the Outlook add-in works with these browser versions, make sure that the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] platform has been upgraded to a recommended update version as described in [Preparing Dynamics NAV or Dynamics 365 Business Central for Upcoming Changes to Browser Cookie Policy](../administration/prepare-for-cookie-samesite-policy.md).
+3. Some browser versions, such as Google Chrome 80, include changes to how cookies are handled. To ensure that the Outlook add-in works with these browser versions, make sure that the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] platform has been upgraded to a recommended update version as described in [Preparing Dynamics NAV or Dynamics 365 Business Central for Upcoming Changes to Browser Cookie Policy](../administration/prepare-for-cookie-samesite-policy.md).
 
 
 ## Configure the [!INCLUDE[server](../developer/includes/server.md)] instance to work with the Office Add-ins
@@ -72,23 +72,23 @@ The Outlook add-ins can be deployed by the users themselves to their own Outlook
 
 ### Individual user deployment
 
-To deploy both the **Contact Insight** and **Document View** add-ins, users run the **Outlook for Business Central** assisted setup in their [!INCLUDE [prodshort](../developer/includes/prodshort.md)] and choose the **My Mailbox** option. Depending on the user authentication method used by [!INCLUDE[prodshort](../developer/includes/prodshort.md)], users will have to provide their email address and password:
+To deploy both the **Contact Insight** and **Document View** add-ins, users run the **Outlook for Business Central** assisted setup in their [!INCLUDE [prod_short](../developer/includes/prod_short.md)] and choose the **My Mailbox** option. Depending on the user authentication method used by [!INCLUDE[prod_short](../developer/includes/prod_short.md)], users will have to provide their email address and password:
 
-- If [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is configured for NavUserPassword or Access Control Service authentication, users must provide their Exchange email address and password.
-- If [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is configured for Azure AD authentication, users are not prompted for their email credentials because authentication against the Exchange or Exchange Online is done using an authentication token.
+- If [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is configured for NavUserPassword or Access Control Service authentication, users must provide their Exchange email address and password.
+- If [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is configured for Azure AD authentication, users are not prompted for their email credentials because authentication against the Exchange or Exchange Online is done using an authentication token.
 
 ### Organization deployment as an Exchange administrator
 
 With an Exchange Server or Exchange Online administrator account, you can deploy the add-ins for the entire organization. There are two ways to deploy the add-ins:
 
-- Run the **Outlook for Business Central** assisted setup in [!INCLUDE [prodshort](../developer/includes/prodshort.md)] and choose the **My Organization** option. This method deploys both the Contact Insights and Document View add-ins.
+- Run the **Outlook for Business Central** assisted setup in [!INCLUDE [prod_short](../developer/includes/prod_short.md)] and choose the **My Organization** option. This method deploys both the Contact Insights and Document View add-ins.
 - Use the **Office Add-ins Management** page. The **Office Add-ins Management** page lets deploy  the Contact Insights and Document View add-ins individually.
 
-Both methods will lead you through the deployment. The information that you must provide depends on whether you are using Exchange Online (or Microsoft 365) or Exchange Server, and the user authentication method that is used by [!INCLUDE[prodshort](../developer/includes/prodshort.md)]:
+Both methods will lead you through the deployment. The information that you must provide depends on whether you are using Exchange Online (or Microsoft 365) or Exchange Server, and the user authentication method that is used by [!INCLUDE[prod_short](../developer/includes/prod_short.md)]:
 
 - For Exchange Online or Microsoft 365
 
-    If [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is configured for NavUserPassword or Access Control Service authentication, you must provide an email address and password for an Exchange administrator account. If [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is configured for Azure AD authentication, you are not prompted for these credentials because authentication against the Exchange or Exchange Online is done using an authentication token.
+    If [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is configured for NavUserPassword or Access Control Service authentication, you must provide an email address and password for an Exchange administrator account. If [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is configured for Azure AD authentication, you are not prompted for these credentials because authentication against the Exchange or Exchange Online is done using an authentication token.
 
 - For Exchange Server
 

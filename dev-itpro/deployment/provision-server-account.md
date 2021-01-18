@@ -12,7 +12,7 @@ author: jswymer
 ---
 # Provisioning the [!INCLUDE[server](../developer/includes/server.md)] Service Account
 
-The [!INCLUDE[server](../developer/includes/server.md)] account is used by [!INCLUDE[prodshort](../developer/includes/prodshort.md)] clients to log on to the [!INCLUDE[server](../developer/includes/server.md)] instance. The [!INCLUDE[server](../developer/includes/server.md)] then uses the service account to log on to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database. When you install [!INCLUDE[server](../developer/includes/server.md)], you identify an Active Directory account to provide credentials for the server. By default, Setup runs [!INCLUDE[server](../developer/includes/server.md)] under the Network Service account, a predefined local account used by the service control manager. This account has minimum privileges on the local computer and acts as the computer on the network.  
+The [!INCLUDE[server](../developer/includes/server.md)] account is used by [!INCLUDE[prod_short](../developer/includes/prod_short.md)] clients to log on to the [!INCLUDE[server](../developer/includes/server.md)] instance. The [!INCLUDE[server](../developer/includes/server.md)] then uses the service account to log on to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database. When you install [!INCLUDE[server](../developer/includes/server.md)], you identify an Active Directory account to provide credentials for the server. By default, Setup runs [!INCLUDE[server](../developer/includes/server.md)] under the Network Service account, a predefined local account used by the service control manager. This account has minimum privileges on the local computer and acts as the computer on the network.  
 
 ## <a name="NSA"></a> Domain user account versus Network Service account
 
@@ -26,7 +26,7 @@ The only circumstance where it is necessary to take any action regarding the Net
 
 <!--
 > [!NOTE]  
->  Because [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Setup and the New-NavDatabase cmdlet configure the required permissions for the [!INCLUDE[server](../developer/includes/server.md)] account, you will typically use the procedures in this topic when you change the [!INCLUDE[server](../developer/includes/server.md)] account for an existing installation.
+>  Because [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Setup and the New-NavDatabase cmdlet configure the required permissions for the [!INCLUDE[server](../developer/includes/server.md)] account, you will typically use the procedures in this topic when you change the [!INCLUDE[server](../developer/includes/server.md)] account for an existing installation.
 --> 
 
 ##  <a name="DUA"></a> Provisioning a domain user account
@@ -44,7 +44,7 @@ If you are running the [!INCLUDE[server](../developer/includes/server.md)] under
 
 ### Prerequisite
 
-Delete the **[!INCLUDE[prodslong](../developer/includes/prodlong.md)]** folder in the **ProgramData** folder of your system drive, for example, `C:\ProgramData\Microsoft\Microsoft Dynamics 365 Business Central`. 
+Delete the **[!INCLUDE[prodslong](../developer/includes/prod_long.md)]** folder in the **ProgramData** folder of your system drive, for example, `C:\ProgramData\Microsoft\Microsoft Dynamics 365 Business Central`. 
 
 The **ProgramData** is folder is typically hidden, so you might have to change the folder options for your system drive to show hidden files, folders, and drives.
 
@@ -86,7 +86,7 @@ For more information, see [Service Principal Names](/windows/desktop/ad/service-
 -->
 ### Add the account to the SMSvcHost.exe.config file
 
-[!INCLUDE[prodshort](../developer/includes/prodshort.md)] uses Net.TCP Port Sharing Service, which is managed by SMSvcHost.exe. The SMSvcHost.exe.config contains information about the identities (or accounts) that can use the service. These accounts are specified as security identifiers (SIDs) in the <allowAccounts> section of the SMSvcHost.exe.config file. By default, permission is implicitly granted to system accounts, such as NetworkService. For other accounts, you must  explicitly add the SID for the account to the SMSvcHost.exe.config file as follows:
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] uses Net.TCP Port Sharing Service, which is managed by SMSvcHost.exe. The SMSvcHost.exe.config contains information about the identities (or accounts) that can use the service. These accounts are specified as security identifiers (SIDs) in the <allowAccounts> section of the SMSvcHost.exe.config file. By default, permission is implicitly granted to system accounts, such as NetworkService. For other accounts, you must  explicitly add the SID for the account to the SMSvcHost.exe.config file as follows:
 
 1. Get the SID of the user account.
 
@@ -129,7 +129,7 @@ There is not action required for provisioning the Network Service account. The o
 
 ##  <a name="dbo"></a> Giving the service account database privileges in SQL Server
 
-The [!INCLUDE[server](../developer/includes/server.md)] service account must have specific roles and permissions in SQL Server to access a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database. The roles and permissions are applied on the server-level and database-level, as outlined in the following table and explained in detail in the sections that follow:
+The [!INCLUDE[server](../developer/includes/server.md)] service account must have specific roles and permissions in SQL Server to access a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database. The roles and permissions are applied on the server-level and database-level, as outlined in the following table and explained in detail in the sections that follow:
 
 |Level|Roles and permissions|
 |-----|--------------------|
@@ -140,13 +140,13 @@ The [!INCLUDE[server](../developer/includes/server.md)] service account must hav
 |Level|Roles and permissions|Remarks|
 |-----|--------------------|--------|
 |Server-level|Login:<br />**dbcreator** role<br />**Alter any event session** permission<br />**View server state** permission<br /><br />On master database:<br />**Select** permission on the database<br />**Select** permission on the dbo.$ndo$srvproperty table|
-|Database-level|On [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database:<br />**db_datareader**, **db_datawriter**, and **db_ddladmin** roles<br /> **View database state** permission on database<br />**View change tracking** permission on the database schema|
+|Database-level|On [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database:<br />**db_datareader**, **db_datawriter**, and **db_ddladmin** roles<br /> **View database state** permission on database<br />**View change tracking** permission on the database schema|
 
 -->
 
-When you install the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database by using [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] or the [New-NAVDatabase](/powershell/module/microsoft.dynamics.nav.management/new-navdatabase) cmdlet, you can specify the [!INCLUDE[server](../developer/includes/server.md)] account. In these cases, the server account that you specify will be given privileges in SQL Server. However, we recommend that you use the guidelines in this section to ensure that the service account has the minimum required privileges.
+When you install the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database by using [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] or the [New-NAVDatabase](/powershell/module/microsoft.dynamics.nav.management/new-navdatabase) cmdlet, you can specify the [!INCLUDE[server](../developer/includes/server.md)] account. In these cases, the server account that you specify will be given privileges in SQL Server. However, we recommend that you use the guidelines in this section to ensure that the service account has the minimum required privileges.
 
-To verify server-level and database-level privileges on SQL Server after you create your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database, use SQL Server Management Studio and, if necessary, modify privileges. If you do not already have it, you can download and install SQL Server Management Studio from [here](/sql/ssms/download-sql-server-management-studio-ssms).
+To verify server-level and database-level privileges on SQL Server after you create your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database, use SQL Server Management Studio and, if necessary, modify privileges. If you do not already have it, you can download and install SQL Server Management Studio from [here](/sql/ssms/download-sql-server-management-studio-ssms).
 
 ### Assign privileges on the server-level
 On the server-level, the service account must be set up with a login that has the following roles and permissions:
@@ -166,7 +166,7 @@ On the server-level, the service account must be set up with a login that has th
 
 To assign privileges on the server-level, complete the following tasks in SQL Server Management Studio:
 
-1. Start SQL Server Management Studio and connect to the instance where the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database is installed.  
+1. Start SQL Server Management Studio and connect to the instance where the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database is installed.  
 2. Create a login for the [!INCLUDE[server](../developer/includes/server.md)] account:
 
     1. Navigate the tree view: **Security**, **Logins**.
@@ -208,9 +208,9 @@ To assign privileges on the server-level, complete the following tasks in SQL Se
     5. Under **Permissions for \<username>**, on the **Explicit** tab, scroll down to down to the **Select** line, and select the check box in the **Grant** column.  
     6. Choose **OK** to exit the **Table Properties – dbo.$ndo$srvproperty** dialog box.  
 
-### <a name="BCdb"></a>Assign privileges on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database-level
+### <a name="BCdb"></a>Assign privileges on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database-level
 
-On the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database, the service account must have the following roles and permissions:
+On the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database, the service account must have the following roles and permissions:
 
 <!-- **View database state** permission on the database -->
 - **db_datareader**, **db_datawriter**, and **db_ddladmin** database roles

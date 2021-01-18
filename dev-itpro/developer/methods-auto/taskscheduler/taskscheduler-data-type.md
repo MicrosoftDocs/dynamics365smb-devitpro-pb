@@ -2,7 +2,7 @@
 title: "TaskScheduler Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 12/09/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,11 +24,11 @@ The following methods are available on the TaskScheduler data type.
 
 |Method name|Description|
 |-----------|-----------|
-|[CreateTask(Integer, Integer [, Boolean] [, String] [, DateTime] [, RecordId])](taskscheduler-createtask-method.md)|Adds a task to ensure that a codeunit is not run before the specified time.|
-|[TaskExists(Guid)](taskscheduler-taskexists-method.md)|Checks whether a specific task exists.|
 |[CancelTask(Guid)](taskscheduler-canceltask-method.md)|Cancels and deletes a scheduled task that runs a specific codeunit.|
-|[SetTaskReady(Guid [, DateTime])](taskscheduler-settaskready-method.md)|Sets a task that runs a codeunit to the ready state. The task will not run unless it is in the ready state.|
 |[CanCreateTask()](taskscheduler-cancreatetask-method.md)|Checks whether it is possible to schedule tasks in this session.|
+|[CreateTask(Integer, Integer [, Boolean] [, String] [, DateTime] [, RecordId])](taskscheduler-createtask-method.md)|Adds a task to ensure that a codeunit is not run before the specified time.|
+|[SetTaskReady(Guid [, DateTime])](taskscheduler-settaskready-method.md)|Sets a task that runs a codeunit to the ready state. The task will not run unless it is in the ready state.|
+|[TaskExists(Guid)](taskscheduler-taskexists-method.md)|Checks whether a specific task exists.|
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

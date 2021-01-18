@@ -11,7 +11,7 @@ ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 # Resolving Page 6400 and 6401 Compilation Errors 
-This article explains how to resolve the compilation error that you get for page **6400 Flow Selector** and page **6401 Flow Template Selector** when converting a [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] database to  [!INCLUDE[prodhort](../developer/includes/prodshort.md)].
+This article explains how to resolve the compilation error that you get for page **6400 Flow Selector** and page **6401 Flow Template Selector** when converting a [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] database to  [!INCLUDE[prodhort](../developer/includes/prod_short.md)].
 
 ## Resolution
 

@@ -99,9 +99,9 @@ begin
     Str := Text000;  
     AccountNo := 3452;   
     Balance := 2345 + 5462;  
-    MESSAGE(Text001, Str);  
+    Message(Text001, Str);  
     Str := STRSUBSTNO(Str, AccountNo, Balance);  
-    MESSAGE(Text002, Str);  
+    Message(Text002, Str);  
 end;
 ```  
   

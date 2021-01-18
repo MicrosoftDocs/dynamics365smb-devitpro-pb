@@ -2,7 +2,7 @@
 title: "Enum Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 12/09/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,9 +24,9 @@ The following methods are available on the Enum data type.
 
 |Method name|Description|
 |-----------|-----------|
+|[FromInteger(Integer)](enum-frominteger-method.md)|Returns an enum with the integer value|
 |[Names()](enum-names--method.md)|Gets the value names|
 |[Ordinals()](enum-ordinals--method.md)|Gets the ordinal numbers/ID's for the values|
-|[FromInteger(Integer)](enum-frominteger-method.md)|Returns an enum with the integer value|
 
 The following methods are available on instances of the Enum data type.
 

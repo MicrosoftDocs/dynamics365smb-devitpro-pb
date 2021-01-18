@@ -52,7 +52,7 @@ var
     TestTime: Time;
     TestDateTime: DateTime;
 begin
-    TestDate := TODAY;  
+    TestDate := Today;  
     TestTime := TIME;  
     TestDateTime := CREATEDATETIME(TestDate,TestTime);  
     …  

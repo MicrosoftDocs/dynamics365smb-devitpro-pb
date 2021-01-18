@@ -40,7 +40,7 @@ An instance of the [Variant](variant-data-type.md) data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example  
- The following example determines whether an AL variant contains a text constant. The code assigns the Text000 text constant to the variant variable that is named MyVariant. The **ISTEXTCONSTANT** method determines whether the variant contains a text constant and stores the return value in the varResult variable. In this case, the variant contains a text constant so **Yes** is returned and displayed in a message box. 
+ The following example determines whether an AL variant contains a text constant. The code assigns the Text000 text constant to the variant variable that is named MyVariant. The **IsTextCONSTANT** method determines whether the variant contains a text constant and stores the return value in the varResult variable. In this case, the variant contains a text constant so **Yes** is returned and displayed in a message box. 
  
 ```  
 var
@@ -50,9 +50,9 @@ var
     Text001: Label 'DOes the variant contain a text constant? %1.';
 begin
     MyVariant := Text000;  
-    varResult := MyVariant.ISTEXTCONSTANT;  
-    MESSAGE(Text001,MyVariant,varResult);  
-    MESSAGE(Text001,varResult);  
+    varResult := MyVariant.IsTextCONSTANT;  
+    Message(Text001,MyVariant,varResult);  
+    Message(Text001,varResult);  
 end;
 ```  
 

@@ -1,9 +1,8 @@
 ---
 title: "BigText.TextPos Method"
-description: "The BigText TextPos Method in AL for Business Central"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 12/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -64,7 +63,7 @@ var
 ```  
 MyBigText.ADDTEXT('ABCDEFG');  
 VarPosition := MyBigText.TEXTPOS('BCD'); // Returns 2.  
-MESSAGE(Text000, VarPosition);  
+Message(Text000, VarPosition);  
   
 ```  
   
@@ -75,7 +74,7 @@ MESSAGE(Text000, VarPosition);
 ```  
 MyBigText.ADDTEXT('ABCDEFG');  
 VarPosition := MyBigText.TEXTPOS(''); // Returns 0.  
-MESSAGE(Text000, VarPosition);  
+Message(Text000, VarPosition);  
 ```  
   
 ## Example 3
@@ -85,7 +84,7 @@ MESSAGE(Text000, VarPosition);
 ```  
 MyBigText.ADDTEXT('ABCDEFG');  
 VarPosition := MyBigText.TEXTPOS('XYZ'); // Returns 0.  
-MESSAGE(Text000, VarPosition);  
+Message(Text000, VarPosition);  
 ``` 
 
 ## See Also

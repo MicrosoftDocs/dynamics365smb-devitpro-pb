@@ -56,7 +56,7 @@ begin
     MyFieldRef := CustomerRecref.FIELD(1);  
     MyFieldRef.VALUE := '20000';  
     varHasLinks := CustomerRecref.HASLINKS;  
-    MESSAGE(Text000, varHasLinks);  
+    Message(Text000, varHasLinks);  
 end;
 ```  
   

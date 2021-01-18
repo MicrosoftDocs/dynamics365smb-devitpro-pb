@@ -72,7 +72,7 @@ begin
     Ok3 := EVALUATE(VarYesNo, Value);  
     Value := '2days 4hours 3.7 seconds 17 milliseconds';  
     Ok4 := EVALUATE(VarDuration, Value);  
-    MESSAGE(Text000 + Text001 + Text002 + Text003, VarInteger, Ok1, VarDate, Ok2, VarYesNo, Ok3, VarDuration, Ok4); 
+    Message(Text000 + Text001 + Text002 + Text003, VarInteger, Ok1, VarDate, Ok2, VarYesNo, Ok3, VarDuration, Ok4); 
 end; 
 ```  
   

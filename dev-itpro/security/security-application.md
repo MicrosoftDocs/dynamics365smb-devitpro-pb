@@ -15,13 +15,13 @@ author: jswymer
 
 This section helps you understand and improve the security of your Business Central application regardless of where it is hosted. In the articles listed below, you will find guidance and recommended practices related to authentication, authorization, and auditing, as well as data encryption and secure development practices that can be applied to any Business Central environment.
 
-[!INCLUDE[prodshort](../developer/includes/prodshort.md)] uses a layered approach to application security, as outlined in the following diagram.
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] uses a layered approach to application security, as outlined in the following diagram.
 
 ![Security overview](../developer/media/security-overview.png "Security overview")
 
 ## Authentication
 
-Before users can sign-in to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application, they must be authenticated as valid user in the system. Business Central On-Premises supports several authentication methods, such as Windows and Azure Active Directory. Business Central Online uses strictly Azure Active Directory (Azure AD).  For more information, see the following articles:
+Before users can sign-in to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application, they must be authenticated as valid user in the system. Business Central On-Premises supports several authentication methods, such as Windows and Azure Active Directory. Business Central Online uses strictly Azure Active Directory (Azure AD).  For more information, see the following articles:
 
 [Managing Users and Permissions](/dynamics365/business-central/ui-how-users-permissions)
 
@@ -32,12 +32,14 @@ Before users can sign-in to the [!INCLUDE[prodshort](../developer/includes/prods
 [Multi-factor Authentication](multifactor-authentication.md)  
 
 The authentication method configured for Business Central Server is also used to access web services. For more information, see [Web Services Authentication](../webservices/web-services-authentication.md).
- 
+
 ## Authorization
 
 Once authenticated, authorization determines which areas a user can access, such as the pages and reports that they can open, and the permissions that they have on associated data. For more information, see the following articles:
 
-[User Permissions in the Application](user-security.md#user-permissions-in-the-application) 
+[User Permissions in the Application](user-security.md#user-permissions-in-the-application)
+
+[Analyzing Permission Changes Trace Telemetry](../administration/telemetry-permission-changes-trace.md)
 
 [Data Security](data-security.md?tabs=database-level)
 
@@ -51,7 +53,7 @@ Once authenticated, authorization determines which areas a user can access, such
 
 ## Auditing
 
-[!INCLUDE[prodshort](../developer/includes/prodshort.md)] includes several auditing features that help you track information about who is signing-in, what their permissions are, what data have they changed, and more.  For more information, see the following articles:
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] includes several auditing features that help you track information about who is signing-in, what their permissions are, what data have they changed, and more.  For more information, see the following articles:
 
 [Authorization Assessment](/dynamics365/business-central/ui-how-users-permissions#to-get-an-overview-of-a-users-permissions)
   

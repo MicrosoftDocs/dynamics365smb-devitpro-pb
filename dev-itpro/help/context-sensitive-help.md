@@ -11,7 +11,7 @@ ms.date: 10/01/2020
 
 # Configure Context-Sensitive Help
 
-A key pillar of helping users help themselves is to give them access to Help for the particular part of [!INCLUDE [prodshort](../developer/includes/prodshort.md)] that they are working in.  
+A key pillar of helping users help themselves is to give them access to Help for the particular part of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] that they are working in.  
 
 ## App-level configuration
 
@@ -39,7 +39,7 @@ Help calls for Microsoft objects will continue to go to the *docs.microsoft.com*
 
 ### Localization apps
 
-Specifically for localization apps that translate [!INCLUDE [prodshort](../developer/includes/prodshort.md)] into languages that are not offered by Microsoft, the app.json file must be set to specify the destination of links to Help as shown in the following example:
+Specifically for localization apps that translate [!INCLUDE [prod_short](../developer/includes/prod_short.md)] into languages that are not offered by Microsoft, the app.json file must be set to specify the destination of links to Help as shown in the following example:
 
 ```json
   "helpBaseUrl": "https://mysite.com/{0}/documentation/",
@@ -88,16 +88,16 @@ For page extensions, the value of the *ContextSensitiveHelpPage* property will a
 
 ### How it works for the base application
 
-In the current version of [!INCLUDE [prodshort](../developer/includes/prodshort.md)], the context-sensitive links to Help for the base application is based on a different UI-to-Help mapping that is stored in table 2000000198 **Page Documentation**. In this table, all page objects in the default version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] are listed, and have a target Help article associated with each of them. Multiple page objects can be associated with the same Help article, such as when a specific workflow involves multiple pages.  
+In the current version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)], the context-sensitive links to Help for the base application is based on a different UI-to-Help mapping that is stored in table 2000000198 **Page Documentation**. In this table, all page objects in the default version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] are listed, and have a target Help article associated with each of them. Multiple page objects can be associated with the same Help article, such as when a specific workflow involves multiple pages.  
 
 The base URL to the location of the target articles that are listed in table 2000000198 **Page Documentation** is specified at the app level as [https://docs.microsoft.com/dynamics365/business-central/](/dynamics365/business-central/). In an extension, you can overrule this URL so that all calls for Help go to your site instead. This is especially important for localization apps where all context-sensitive Help calls for that app's language must go to the provider's website. For more information, see [Configuring the Help Experience](../deployment/configure-help.md).  
 
 ### Adding page-level UI-to-Help mapping to the system table
 
-You can run a script that populates the **Page Documentation** table with a mapping for Microsoft's page objects and your own page objects. This is useful if you want to reuse legacy [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] Help for your [!INCLUDE [prodshort](../developer/includes/prodshort.md)] on-premises deployment.  
+You can run a script that populates the **Page Documentation** table with a mapping for Microsoft's page objects and your own page objects. This is useful if you want to reuse legacy [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] Help for your [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premises deployment.  
 
 > [!CAUTION]
-> While it is possible to reuse the [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] legacy Help with the legacy [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] Help Server, and to populate the system table, **Page Documentation**, we recommend that you convert any existing content to the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] format, and that you fork our GitHub repos. For more information, see [Extend, Customize, and Collaborate on the Help for [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](contributor-guide.md) and [Migrate Legacy Help to the [!INCLUDE[prodlong](../developer/includes/prodlong.md)] Format](../upgrade/migrate-help.md).  
+> While it is possible to reuse the [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] legacy Help with the legacy [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] Help Server, and to populate the system table, **Page Documentation**, we recommend that you convert any existing content to the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] format, and that you fork our GitHub repos. For more information, see [Extend, Customize, and Collaborate on the Help for [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](contributor-guide.md) and [Migrate Legacy Help to the [!INCLUDE[prod_long](../developer/includes/prod_long.md)] Format](../upgrade/migrate-help.md).  
 
 In the following example, you have chosen not to apply context-sensitive Help links to your page objects and instead you want to overwrite the UI-to-Help mapping that Microsoft has made in the system table.  
 
@@ -122,7 +122,7 @@ You can find a couple of suggestions for how to go about this in our blog post, 
 ## See also
 
 [User Assistance Model](../user-assistance.md)  
-[Resources for Help and Support for [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](../help-and-support.md)  
+[Resources for Help and Support for [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](../help-and-support.md)  
 [Adding Help Links from Pages, Reports, and XMLports](../developer/devenv-adding-help-links-from-pages-tables-xmlports.md)  
 [Migrate Legacy Help to the Business Central Format](../upgrade/migrate-help.md)  
 [Building Your First Sample Extension With Extension Objects, Install Code, and Upgrade Code](../developer/devenv-extension-example.md)  

@@ -54,7 +54,7 @@ Occurs when a database lock has timed out.
 |alObjectType|Specifies the type of the running AL object that requested the lock, such as a page or report. |
 |alStackTrace|The stack trace in AL.|
 |clientType|Specifies the type of client that executed the SQL Statement, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
-|companyName|Specifies the display name of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] company.|
+|companyName|Specifies the display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company.|
 |component|**Dynamics 365 Business Central Server**|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
@@ -67,7 +67,7 @@ Occurs when a database lock has timed out.
 |sessionId|Specifies the ID of the session that requested the lock. |
 |snapshotId|Specifies the ID of the database snapshot. This ID is used to identify associated **Database lock snapshot** trace events.|
 |sqlServerSessionId|Specifies the ID of the SQL server session that requested the lock. |
-|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
+|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 
 ## Database lock snapshot
 
@@ -106,7 +106,7 @@ Occurs when a database lock has timed out. Each **Database lock snapshot** trace
 |sqlLockResourceType|Specifies the database resource affected by the lock. For example, `DATABASE`, `FILE`, `OBJECT`, `PAGE`, `KEY`, and more. |
 |sqlServerSessionId|Specifies the ID of the SQL server session that requested the lock. |
 |sqlTableName|Specifies the name of table on which the lock was held.|
-|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
+|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 
 ## See also
 

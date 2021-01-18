@@ -158,7 +158,7 @@ page 50130 PageWithAddIn
 
 ## Loading static resources using AJAX requests
 
-You can design a control add-in to load static resources from the add-in package by using AJAX requests. For example, the control add-in could load HTML content and inject it into add-in's HTML structure. In this case, you must use the `withCrendentials` property set to `true` in the AJAX request. Otherwise, the request won't contain the necessary context and important cookies required by the [!INCLUDE[prodshort](includes/prodshort.md)] service, and it may fail in production. This concept is illustrated in the following examples.
+You can design a control add-in to load static resources from the add-in package by using AJAX requests. For example, the control add-in could load HTML content and inject it into add-in's HTML structure. In this case, you must use the `withCrendentials` property set to `true` in the AJAX request. Otherwise, the request won't contain the necessary context and important cookies required by the [!INCLUDE[prod_short](includes/prod_short.md)] service, and it may fail in production. This concept is illustrated in the following examples.
 
 Wrong:
 

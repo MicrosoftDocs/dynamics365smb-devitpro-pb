@@ -43,7 +43,7 @@ begin
     DateTime1 := CREATEDATETIME(20090101D, 080000T); // January 1, 2009 at 08:00:00 AM  
     DateTime2 := CREATEDATETIME(20090505D, 133001T); // May 5, 2009 at 1:30:01 PM  
     Duration := DateTime2 - DateTime1;  
-    MESSAGE(FORMAT(Duration));  
+    Message(FORMAT(Duration));  
 end;
 ```  
   

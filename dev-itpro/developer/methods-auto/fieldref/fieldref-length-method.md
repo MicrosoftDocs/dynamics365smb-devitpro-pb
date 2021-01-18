@@ -57,7 +57,7 @@ begin
     CustomerRecref.OPEN(DATABASE::Customer);  
     MyFieldRef := CustomerRecref.FIELD(varFieldNo);  
     varLength := MyFieldRef.LENGTH();  
-    MESSAGE(Text000, varLength);  
+    Message(Text000, varLength);  
 end;
 ```  
 

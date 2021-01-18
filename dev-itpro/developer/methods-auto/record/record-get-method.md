@@ -72,9 +72,9 @@ CustomerRec.GET('1120');
 // This statement causes a run-time error if customer 1120 cannot be   
 // found. To avoid this, use the following construct:  
 IF CustomerRec.GET('1120') THEN  
-  MESSAGE(Text000)  
+  Message(Text000)  
 ELSE  
-  MESSAGE(Text001);  
+  Message(Text001);  
 
 -->
 ## See Also

@@ -58,7 +58,7 @@ var
 begin 
     CustomerRecref.OPEN(18);  
     IsEmpty := CustomerRecref.ISEMPTY;  
-    MESSAGE(Text000, IsEmpty);  
+    Message(Text000, IsEmpty);  
 end;
 ```  
 

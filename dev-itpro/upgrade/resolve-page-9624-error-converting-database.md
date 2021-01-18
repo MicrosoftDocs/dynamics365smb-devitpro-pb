@@ -11,7 +11,7 @@ ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 # Resolving Page 9624 Compilation Error 
-This article explains how to resolve the compilation error that you get for page **9624 Finish Design List Part** when converting a [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] database to  [!INCLUDE[prodhort](../developer/includes/prodshort.md)].
+This article explains how to resolve the compilation error that you get for page **9624 Finish Design List Part** when converting a [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] database to  [!INCLUDE[prodhort](../developer/includes/prod_short.md)].
 
 In Business Central, page 9624 is no longer used or referenced. It's source table re-purposed for other features, so we recommend that it not be used as a source table for other purposes.
 

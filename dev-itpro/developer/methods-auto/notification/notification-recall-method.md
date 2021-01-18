@@ -51,7 +51,7 @@ The following code creates a notification and sends it if NewBalance is greater 
 ```
 MyNotification.ID := '00000000-0000-0000-0000-000000000001';
 IF NewBalance > Rec. "Credit Limit" THEN BEGIN
-  MyNotification.MESSAGE := 'The customer's current balance exceeds their credit limit.';
+  MyNotification.Message := 'The customer's current balance exceeds their credit limit.';
   MyNotification.SCOPE := NOTIFICATIONSCOPE::LocalScope;
   MyNotification.ADDACTION('Fix it.', 50001, 'FixCustomerCreditLimit');
   MyNotification.SETDATA('CustomerNo.', Rec."No.");

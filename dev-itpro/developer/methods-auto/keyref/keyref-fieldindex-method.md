@@ -56,7 +56,7 @@ begin
     RecRef.OPEN(18);  
     varKeyRef := RecRef.KEYINDEX(2);  
     varFieldRef := varKeyRef.FIELDINDEX(1);  
-    MESSAGE('The Field name is: %1' ,varFieldRef.CAPTION);  
+    Message('The Field name is: %1' ,varFieldRef.CAPTION);  
 end;
 ```  
   

@@ -89,7 +89,7 @@ begin
     MyQuery.OPEN;  
     // Returns the filters that are on the Quantity column and displays the filters in a message.  
     MyFilters := MyQuery.GETFILTERS;  
-    MESSAGE(Text000, MyFilters);  
+    Message(Text000, MyFilters);  
 end;
 ```  
   

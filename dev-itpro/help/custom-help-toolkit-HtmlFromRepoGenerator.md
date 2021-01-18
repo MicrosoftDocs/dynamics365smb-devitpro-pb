@@ -21,7 +21,7 @@ HtmlFromRepoGenerator.exe provides functionality that supports the creation of c
 
 - Clone a Microsoft documentation repository (repo)
 - Update links to files that are no longer in the clone
-- Update the **ms.locale** value to match the language options that are supported by [!INCLUDE [prodshort](../developer/includes/prodshort.md)]
+- Update the **ms.locale** value to match the language options that are supported by [!INCLUDE [prod_short](../developer/includes/prod_short.md)]
 - Generate HTML files that can be used for publishing to your own website
 
     The HTML files will be generated in the **business-central\d365businesscentral** subfolder, such as *D:\BC\de-DE\business-central\d365businesscentral*. This name of the subfolder is set in the docfx.json file in the en-US source repo. The tool applies the `<meta name="robots" content="NOINDEX, NOFOLLOW">` tag to the HTML files, so if you use the tool to process your own content, you should remove these tags from your files but leave the tags in your version of Microsoft's content.

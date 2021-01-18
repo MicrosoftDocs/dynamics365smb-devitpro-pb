@@ -55,7 +55,7 @@ begin
     for i := 3 TO 6 do begin  
         MyRecordRef.OPEN(i);  
         varCaption := MyRecordRef.CAPTION;  
-        MESSAGE(Text000, i, varCaption);  
+        Message(Text000, i, varCaption);  
         MyRecordRef.CLOSE;  
         end;  
 end;

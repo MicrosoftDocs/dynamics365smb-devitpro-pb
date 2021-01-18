@@ -1,9 +1,8 @@
 ---
 title: "Database.CompanyName Method"
-description: "The Database CompanyName Method in AL for Business Central"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 12/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -45,7 +44,7 @@ var
     Text000: Label 'The name is %1.';
 begin
     CompName := COMPANYNAME;  
-    MESSAGE(Text000, CompName);  
+    Message(Text000, CompName);  
 end;
 ```  
 

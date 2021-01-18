@@ -43,7 +43,7 @@ CompressionType = None|Page|Row|Unspecified;
 > [!NOTE]
 > The [TableType property](devenv-tabletype-property.md) must be `Normal`. This property cannot be used on table extension objects.
 
-With `None`, `Page`, and `Row`, the [!INCLUDE[prodshort](../includes/prodshort.md)] table synchronization process will make changes to table in SQL Server, overwriting the current compression setting in SQL Server, if any. `Unspecified` lets you control data compression directly on SQL Server or by specifying a database default compression level using the [Set-NAVTenant cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navtenant) with the `-Compression` parameter set.
+With `None`, `Page`, and `Row`, the [!INCLUDE[prod_short](../includes/prod_short.md)] table synchronization process will make changes to table in SQL Server, overwriting the current compression setting in SQL Server, if any. `Unspecified` lets you control data compression directly on SQL Server or by specifying a database default compression level using the [Set-NAVTenant cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navtenant) with the `-Compression` parameter set.
 
 For information about compression types, see [Data Compression](../../administration/optimize-sql-data-access.md#Compression).
 

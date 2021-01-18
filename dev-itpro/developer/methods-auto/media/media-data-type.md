@@ -2,7 +2,7 @@
 title: "Media Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 12/09/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,15 +24,18 @@ The following methods are available on instances of the Media data type.
 
 |Method name|Description|
 |-----------|-----------|
-|[HasValue()](media-hasvalue-method.md)|Checks whether a Media data type field in a record has been initialized with a media object and that the specified media object exists in the database.|
 |[ExportFile(String)](media-exportfile-method.md)|Exports the media object (such as an image) that is currently used on record to a file on your computer or network. On the record, the media object is referenced in a Media data type field.|
 |[ExportStream(OutStream)](media-exportstream-method.md)|Exports the current media object (such as a JPEG image) that is used on record to an OUTSTREAM object. The OUTSTREAM object can be created from a BLOB field, a FILE or from a .NET Framework interoperability object. In the record, the media is referenced in a Media data type field.|
+|[HasValue()](media-hasvalue-method.md)|Checks whether a Media data type field in a record has been initialized with a media object and that the specified media object exists in the database.|
 |[ImportFile(Text, Text [, Text])](media-importfile-method.md)|Adds a media type, such as a JPEG image, from a file to a Media data type field of a record for displaying the media with the record in the client. The media file is imported to the application database, and a reference to the media is included in the Media data type field.|
 |[ImportStream(InStream, Text [, Text])](media-importstream-instream-text-text-method.md)|Adds a media type (MIME), such as jpeg image, from an InStream object to a Media data type field of a record for displaying the media in the client. The media file is imported to the application database and a reference to the media is included in the Media data type field.|
 |[ImportStream(InStream, Text, Text, Text)](media-importstream-instream-text-text-text-method.md)|Adds a media type (MIME), such as jpeg image, from an InStream object to a Media data type field of a record for displaying the media in the client. The media file is imported to the application database and a reference to the media is included in the Media data type field.|
 |[MediaId()](media-mediaid-method.md)|Gets the unique identifier of a media object on a record.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+
+## See Also
+
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
+[Working With Media on Records](../../devenv-working-with-media-on-records.md)

@@ -17,7 +17,7 @@ author: jswymer
 You use certificates to help secure connections over a wide area network \(WAN\), such as connections from the [!INCLUDE[webserver](../developer/includes/webserver.md)], [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)], and web services to the [!INCLUDE[server](../developer/includes/server.md)]. Implementing security certificates on your deployment environment requires modifications to various components, like the [!INCLUDE[server](../developer/includes/server.md)], [!INCLUDE[webserver](../developer/includes/webserver.md)], and clients.
 
 ## About Security Certificates
-A certificate is a file that [!INCLUDE[server](../developer/includes/server.md)] uses to prove its identity and establish a trusted connection with the client that is trying to connect. [!INCLUDE[prodshort](../developer/includes/prodshort.md)] can support the following configurations:  
+A certificate is a file that [!INCLUDE[server](../developer/includes/server.md)] uses to prove its identity and establish a trusted connection with the client that is trying to connect. [!INCLUDE[prod_short](../developer/includes/prod_short.md)] can support the following configurations:  
   
 -   *Chain trust*, which specifies that each certificate must belong to a hierarchy of certificates that ends in a root authority at the top of the chain.  
   
@@ -44,7 +44,7 @@ You implement chain trust by obtaining X.509 service certificates from a trusted
 Most enterprises and hosting providers have their own infrastructure for issuing and managing certificates. You can also use these certificate infrastructures. The only requirement is that the service certificates must be set up for key exchange and therefore must contain both private and public keys. Additionally, the service certificates that are installed on [!INCLUDE[server](../developer/includes/server.md)] instances must have the Service Authentication and Client Authentication certificate purposes enabled.  
 
 > [!IMPORTANT]
-> Microsoft recommends against using wildcard SSL certificates in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installations. Wildcard certificates pose security risks because if one server or sub-domain is compromised, all sub-domains may be compromised. Wildcard certificates also introduce a new style of impersonation attack. In this attack, the victim is lured to a fraudulent resource in the certified domain through phishing. Conventional certificates detect this attack, because the user’s browser checks that the private key is hosted on a server whose name matches the one displayed in the browser’s address window. 
+> Microsoft recommends against using wildcard SSL certificates in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] installations. Wildcard certificates pose security risks because if one server or sub-domain is compromised, all sub-domains may be compromised. Wildcard certificates also introduce a new style of impersonation attack. In this attack, the victim is lured to a fraudulent resource in the certified domain through phishing. Conventional certificates detect this attack, because the user’s browser checks that the private key is hosted on a server whose name matches the one displayed in the browser’s address window. 
   
   
 ## Run the Certificates Snap-in for Microsoft Management Console
@@ -114,7 +114,7 @@ The [!INCLUDE[server](../developer/includes/server.md)] instance configuration i
   
 ## Configure the [!INCLUDE[webserver](../developer/includes/webserver.md)] and [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)]
 
-The chain trust configuration allows client users to log on to one or more instances of [!INCLUDE[server](../developer/includes/server.md)] as long as their login credentials have been associated with user accounts in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. The client validates that the server certificate is signed with the root CA.  
+The chain trust configuration allows client users to log on to one or more instances of [!INCLUDE[server](../developer/includes/server.md)] as long as their login credentials have been associated with user accounts in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. The client validates that the server certificate is signed with the root CA.  
   
 After you have installed the root CA on the computer running the [!INCLUDE[webserver](../developer/includes/webserver.md)] or [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)], you must modify the client configuration file. 
   
@@ -136,7 +136,7 @@ After you have installed the root CA on the computer running the [!INCLUDE[webse
   
 1.  Open the ClientUserSettings.config configuration file.  
   
-     The location of this file is *Users\\\<*username*>\\AppData\\RoamingLocal\\Microsoft\\[!INCLUDE[prodlong](../developer/includes/prodlong.md)]\\<version>*.
+     The location of this file is *Users\\\<*username*>\\AppData\\RoamingLocal\\Microsoft\\[!INCLUDE[prod_long](../developer/includes/prod_long.md)]\\<version>*.
   
      By default, this file is hidden. Therefore, you may have to change your folder options in Windows Explorer to view hidden files.  
   

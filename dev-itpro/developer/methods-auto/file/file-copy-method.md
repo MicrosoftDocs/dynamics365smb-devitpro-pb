@@ -67,10 +67,10 @@ begin
     NewFile := 'new.txt';  
     if FILE.COPY('c:\Old\' + OldFile, 'c:\New\' + NewFile) then  
       // Continue your program.  
-      MESSAGE('The file was copied.');  
+      Message('The file was copied.');  
     else  
       // Handle the error.  
-      MESSAGE('The file was not copied.');  
+      Message('The file was not copied.');  
 end;
 ```  
   

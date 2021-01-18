@@ -51,7 +51,7 @@ Here is a quick overview of capabilities in **Designer**:
 
 ## Start and stop designing
 
-In the [!INCLUDE[prodshort](includes/prodshort.md)] client, you start Designer by choosing ![Settings icon](media/settings_icon_small.png) **Designer** in the top-right corner of any page that you want to make modifications to, and start designing using drag-and-drop components. In Visual Studio Code, you can start Designer by using the **F6** shortcut, which launches a browser that opens the [!INCLUDE[prodshort](includes/prodshort.md)] client in Designer.
+In the [!INCLUDE[prod_short](includes/prod_short.md)] client, you start Designer by choosing ![Settings icon](media/settings_icon_small.png) **Designer** in the top-right corner of any page that you want to make modifications to, and start designing using drag-and-drop components. In Visual Studio Code, you can start Designer by using the **F6** shortcut, which launches a browser that opens the [!INCLUDE[prod_short](includes/prod_short.md)] client in Designer.
 
 After you are done with the changes, choose **Stop Designing**. You can name the extension and download code to save it for the tenant. Once you're done, the extension is automatically installed. If you choose to download the code, the project will be downloaded as a .zip folder<!--, where the `app.json` file has the main extension as a dependency-->. You extract the files and open the folder from Visual Studio Code, where you can deploy it as you would do with any other extension.
 
@@ -91,7 +91,7 @@ You can use Designer to set the [QuickEntry property](properties/devenv-quickent
 
 To set the QuickEntry property from Designer, select the field or column heading, and then choose either **Include in Quick Entry** (sets the **QuickEntry** property to `true`) or **Exclude from Quick Entry** (sets the **QuickEntry** property to `false`).  
 
-For more information about Quick Entry, from a user perspective, see [Accelerating Data Entry Using Quick Entry](/dynamics365/business-central/ui-enter-data#QuickEntry) in the [!INCLUDE[prodshort](includes/prodshort.md)] Application Help.
+For more information about Quick Entry, from a user perspective, see [Accelerating Data Entry Using Quick Entry](/dynamics365/business-central/ui-enter-data#QuickEntry) in the [!INCLUDE[prod_short](includes/prod_short.md)] Application Help.
 
 ## Working with the Navigation Menu and Navigation Bar
 
@@ -100,7 +100,7 @@ Designer lets you add actions that link to pages and reports in the navigation b
 > [!NOTE]
 > Bookmarking is only available for pages and reports that are discoverable from Tell Me. For more information on how to make pages and reports searchable, see [Adding Pages and Reports to Tell me](devenv-al-menusuite-functionality.md).
 
-This allows the user to efficiently create multiple links and build up the set of important or commonly used links for a specific profile in the Role Center navigation bar. For more information about bookmarking, see [Bookmark a Link to a Page or Report on Your Role Center](/dynamics365/business-central/ui-bookmarks) in the [!INCLUDE[prodshort](includes/prodshort.md)] Application Help.
+This allows the user to efficiently create multiple links and build up the set of important or commonly used links for a specific profile in the Role Center navigation bar. For more information about bookmarking, see [Bookmark a Link to a Page or Report on Your Role Center](/dynamics365/business-central/ui-bookmarks) in the [!INCLUDE[prod_short](includes/prod_short.md)] Application Help.
 
 You can also move actions to reorder them in the navigation bar, or move them into groups or subgroups to design the Navigation Menu.
 

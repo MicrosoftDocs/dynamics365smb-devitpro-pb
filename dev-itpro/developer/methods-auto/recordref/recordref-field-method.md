@@ -64,10 +64,10 @@ begin
     MyFieldRef.VALUE := MyRecord;  
     if MyRecordRef.FIND('=') then begin  
       varOldName := MyRecordRef.FIELD(2);  
-      MESSAGE('Old Name: %1', varOldName);  
+      Message('Old Name: %1', varOldName);  
       varOldName.VALUE := varNewName;  
       MyRecordRef.MODIFY;    
-      MESSAGE('New Name: %1', MyRecordRef.FIELD(2));  
+      Message('New Name: %1', MyRecordRef.FIELD(2));  
     end;  
 end;
 ```  

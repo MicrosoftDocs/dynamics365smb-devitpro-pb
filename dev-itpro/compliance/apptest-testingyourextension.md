@@ -44,7 +44,7 @@ When we validate apps, we use the base CRONUS demo data. This of course is there
 4. If there are popups at all, just choose **Yes** or **OK**.
 5. Once the process is complete, choose the **Apply Package** button, and then choose **Yes**.
 7. Again, if any popups or anything just click through them.
-8. Once it completes, sign out of [!INCLUDE[prodshort](../includes/prodshort.md)] and then sign back in again.
+8. Once it completes, sign out of [!INCLUDE[prod_short](../includes/prod_short.md)] and then sign back in again.
 9. You now have data.
 
 ## Use the right user for your testing
@@ -59,7 +59,7 @@ Now it is time to test your app. The following are all things you must do as par
 - We are not going to test 100% of the functionality of your app. We expect you to be doing that.
 - If the testing works for you, it will most likely work for us.
 - Ensure that no permission errors are thrown for any of your app's functionality.
-- With the ESSENTIAL user (before you assign your permission sets to it), make sure that the user can still use the core [!INCLUDE[prodshort](../includes/prodshort.md)] without facing permission errors. You must allow that user to do things such as accessing the Customer card, posting sales order, and so on.
+- With the ESSENTIAL user (before you assign your permission sets to it), make sure that the user can still use the core [!INCLUDE[prod_short](../includes/prod_short.md)] without facing permission errors. You must allow that user to do things such as accessing the Customer card, posting sales order, and so on.
 
 ## Maintaining your app
 

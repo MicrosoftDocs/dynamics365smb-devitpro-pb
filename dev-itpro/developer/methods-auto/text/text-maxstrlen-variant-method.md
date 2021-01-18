@@ -2,7 +2,7 @@
 title: "Text.MaxStrLen Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 12/10/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,7 +16,7 @@ author: SusanneWindfeldPedersen
 # Text.MaxStrLen Method
 > **Version**: _Available from runtime version 1.0 until version 1.0 where it was deprecated._
 
-Gets the maximum defined length of a variant variable. Calling this method always results in a run-time exception.
+Gets the maximum defined length of a variant variable.
 
 
 ## Syntax
@@ -57,7 +57,7 @@ begin
     City := Text000;  
     MaxLength := MaxStrLen(City);  
     Length := StrLen(City);  
-    MESSAGE(Text001 + Text002, MaxLength, Length);  
+    Message(Text001 + Text002, MaxLength, Length);  
 end;
 ```  
   

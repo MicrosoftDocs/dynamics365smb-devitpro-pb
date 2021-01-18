@@ -40,7 +40,7 @@ An instance of the [Variant](variant-data-type.md) data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example  
- The following example determines whether an AL variant contains a time variable. The code initializes the MyTime variable with a Time value. The MyTime variable is assigned to the variant variable that is named MyVariant. The **ISTIME** method determines whether the variant contains a Time variable and stores the return value in the varResult variable. In this case, the variant contains a Time variable so **Yes** is returned and displayed in a message box. The [ISCODE Method (Variant)](../../methods/devenv-iscode-method-variant.md) determines whether the variant contains a Code variable. The return value is **No** because the variant does not contain a code. 
+ The following example determines whether an AL variant contains a time variable. The code initializes the MyTime variable with a Time value. The MyTime variable is assigned to the variant variable that is named MyVariant. The **ISTIME** method determines whether the variant contains a Time variable and stores the return value in the varResult variable. In this case, the variant contains a Time variable so **Yes** is returned and displayed in a message box. The [IsCode Method (Variant)](../../methods/devenv-iscode-method-variant.md) determines whether the variant contains a Code variable. The return value is **No** because the variant does not contain a code. 
  
 ```  
 var
@@ -53,9 +53,9 @@ begin
     MyTime := TIME;  
     MyVariant := MyTime;  
     varResult := MyVariant.ISTIME;  
-    MESSAGE(Text000,MyVariant,varResult);  
-    varResult := MyVariant.ISCODE;  
-    MESSAGE(Text001,MyVariant,varResult);
+    Message(Text000,MyVariant,varResult);  
+    varResult := MyVariant.IsCode;  
+    Message(Text001,MyVariant,varResult);
 end;
 ```  
   

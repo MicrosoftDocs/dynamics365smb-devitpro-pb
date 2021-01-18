@@ -1,9 +1,8 @@
 ---
 title: "BigText.Length Method"
-description: "The BigText Length Method in AL for Business Central"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 12/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -56,7 +55,7 @@ var
 begin
     MyBigText.ADDTEXT('ABCDEFG');  
     VarLength := MyBigText.LENGTH;  
-    MESSAGE(Text000, VarLength);  
+    Message(Text000, VarLength);  
 end;
   
 ```  

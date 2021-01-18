@@ -15,7 +15,7 @@ author: jswymer
 
 [!INCLUDE[d365fin_long_md](../includes/2020_releasewave2.md)]
 
-The partial records capability in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] allows for loading a subset of normal table fields when accessing a SQL based data source. Using partial records improves performance of objects like reports and OData pages - objects whose source code loops through records. It's particularly beneficial when table extensions are used in the application.  
+The partial records capability in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] allows for loading a subset of normal table fields when accessing a SQL based data source. Using partial records improves performance of objects like reports and OData pages - objects whose source code loops through records. It's particularly beneficial when table extensions are used in the application.  
 
 Accessing a data source from AL code is typically done by using the record's methods [GET, FIND, NEXT](devenv-get-find-and-next-methods.md), and so on. Without using partial records, the runtime loads all normal fields when accessing the data source. Using the partial records API, you can now select a set of fields and only load them.
 

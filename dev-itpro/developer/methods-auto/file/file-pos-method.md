@@ -57,10 +57,10 @@ begin
     File.WRITEMODE(TRUE);  
     TestFile.OPEN('C:\TestFolder\TestFile.txt');  
     Position := TestFile.POS;  
-    MESSAGE('Pointer position before SEEK: %1', Position);  
+    Message('Pointer position before SEEK: %1', Position);  
     Testfile.SEEK(5);  
     Position := Testfile.POS;  
-    MESSAGE('Pointer position after SEEK: %1', Position);  
+    Message('Pointer position after SEEK: %1', Position);  
 end;
 ```  
   

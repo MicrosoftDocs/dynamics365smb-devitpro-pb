@@ -12,7 +12,7 @@ ms.author: edupont
 
 # Custom Help Toolkit
 
-Microsoft has published a GitHub repository with scripts and tools that can help you prepare customized Help for your [!INCLUDE [prodshort](../developer/includes/prodshort.md)] solution. This Help content can then be accessed from the user interface through the *Learn more* links as described in [Configure Context-Sensitive Help](context-sensitive-help.md). You are welcome to use any tools or processes to build and deploy content; this toolkit is intended to help you in some of the steps that are required.
+Microsoft has published a GitHub repository with scripts and tools that can help you prepare customized Help for your [!INCLUDE [prod_short](../developer/includes/prod_short.md)] solution. This Help content can then be accessed from the user interface through the *Learn more* links as described in [Configure Context-Sensitive Help](context-sensitive-help.md). You are welcome to use any tools or processes to build and deploy content; this toolkit is intended to help you in some of the steps that are required.
 
 The GitHub repository includes source code for the tools, and we welcome contributions and feedback to collaborate on improving the toolkit.  
 
@@ -32,11 +32,11 @@ The toolkit is available at [https://github.com/microsoft/dynamics365smb-custom-
 
 ## Custom Help
 
-Depending on your solution, you are expected to deploy Help to a website that can be accessed by users of your solution. For more information, see [User Assistance Model](../user-assistance.md) and [Configuring the Help Experience for [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](../deployment/configure-help.md).
+Depending on your solution, you are expected to deploy Help to a website that can be accessed by users of your solution. For more information, see [User Assistance Model](../user-assistance.md) and [Configuring the Help Experience for [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](../deployment/configure-help.md).
 
 ## See also
 
 [Configure Context-Sensitive Help](context-sensitive-help.md)  
 [User Assistance Model](../user-assistance.md)  
-[Migrate Legacy Help to the [!INCLUDE[prodlong](../developer/includes/prodlong.md)] Format](../upgrade/migrate-help.md)  
-[Extend, Customize, and Collaborate on the Help for [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](contributor-guide.md)  
+[Migrate Legacy Help to the [!INCLUDE[prod_long](../developer/includes/prod_long.md)] Format](../upgrade/migrate-help.md)  
+[Extend, Customize, and Collaborate on the Help for [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](contributor-guide.md)  

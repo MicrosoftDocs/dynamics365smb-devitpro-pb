@@ -1,9 +1,8 @@
 ---
 title: "Blob.Export Method"
-description: "The Blob Export Method in AL for Business Central"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 12/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

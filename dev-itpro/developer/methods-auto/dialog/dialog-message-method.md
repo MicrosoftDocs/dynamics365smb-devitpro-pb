@@ -71,7 +71,7 @@ begin
         // The backslash indicates a new line.  
         // You can concatenate strings using the + operator.  
         // You can insert variable values using the % symbol.  
-        MESSAGE(Text000 + Text001 + '%1\' + Text002 + '%2\', Number, Text);
+        Message(Text000 + Text001 + '%1\' + Text002 + '%2\', Number, Text);
     end;
 
 

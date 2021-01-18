@@ -63,7 +63,7 @@ begin
     varTableNo := 18;  
     MyRecordRef.OPEN(varTableNo);  
     varHasWritePerm := MyRecordRef.WRITEPERMISSION;  
-    MESSAGE(Text000, MyRecordRef.NAME, varHasWritePerm);  
+    Message(Text000, MyRecordRef.NAME, varHasWritePerm);  
 end;
 ```  
   

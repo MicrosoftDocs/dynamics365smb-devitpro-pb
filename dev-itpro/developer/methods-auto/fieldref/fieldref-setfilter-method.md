@@ -72,10 +72,10 @@ begin
     CustomerRecref.OPEN(DATABASE::Customer);  
     MyFieldRef := CustomerRecref.FIELD(1);  
     Filter1 := MyFieldRef.GETFILTER;  
-    MESSAGE(Text000, Filter1);  
+    Message(Text000, Filter1);  
     MyFieldRef.SETFILTER('10000..40000');  
     Filter2 := MyFieldRef.GETFILTER;  
-    MESSAGE(Text001, Filter2);  
+    Message(Text001, Filter2);  
 end;
 ```  
   

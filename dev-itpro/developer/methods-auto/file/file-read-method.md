@@ -69,7 +69,7 @@ Streams a BigText object that is stored as a BLOB in a table to a BigText variab
 begin
     TestFile.OPEN('C:\TestFolder\TestFile.txt');  
     varSize := TestFile.READ(String);  
-    MESSAGE('The text "%1" is %2 bytes.', String, varSize);  
+    Message('The text "%1" is %2 bytes.', String, varSize);  
 end;
 ```  
   

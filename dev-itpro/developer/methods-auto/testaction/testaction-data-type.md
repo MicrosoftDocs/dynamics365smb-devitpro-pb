@@ -2,7 +2,7 @@
 title: "TestAction Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 12/09/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +24,8 @@ The following methods are available on instances of the TestAction data type.
 
 |Method name|Description|
 |-----------|-----------|
-|[Invoke()](testaction-invoke-method.md)|Invokes an action on a test page.|
 |[Enabled()](testaction-enabled-method.md)|Enables an action on a test page.|
+|[Invoke()](testaction-invoke-method.md)|Invokes an action on a test page.|
 |[Visible()](testaction-visible-method.md)|Sets whether to display the action on a test page.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

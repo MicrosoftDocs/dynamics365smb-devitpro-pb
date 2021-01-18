@@ -27,7 +27,8 @@ Removing the event attribute on Business and Integration type events is not allo
 > [!NOTE]
 > Internal events are also available for the modules specified in the `internalsVisibleTo` property in your [app.json](../devenv-json-files.md) file.
 
-## Bad code example
+## Code examples triggering the rule
+
 In the following examples, the version 1.0 of the extension defines a Business type event whose accessibility is not public. This means that this event cannot be raised from other extensions, but it can still be subscribed to from other extensions.
 
 Version 1.0 of the extension:
