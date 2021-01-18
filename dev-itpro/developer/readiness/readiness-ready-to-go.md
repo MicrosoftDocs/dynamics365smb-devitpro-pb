@@ -46,10 +46,10 @@ Browse all Business Central training videos and courses on Microsoft Learn: [aka
 Discover the latest Business Central Launch Event here: [aka.ms/MSDyn365BCLaunchEvent](https://aka.ms/MSDyn365BCLaunchEvent)  
 
 **Global community hosted events**  
-- Directions North America: https://www.directionsna.com
-- Directions EMEA: https://directions4partners.com
-- Directions ASIA: https://directions4partners.com
-- TechDays: https://navtechdays.com
+- [Directions North America](https://www.directionsna.com)
+- [Directions EMEA](https://directions4partners.com)
+- [Directions ASIA](https://directions4partners.com)
+- [TechDays](https://navtechdays.com)
 
 ## Engagement
 
