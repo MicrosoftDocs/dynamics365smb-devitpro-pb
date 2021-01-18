@@ -48,13 +48,13 @@ Discover the latest Business Central Launch Event here: https://aka.ms/MSDyn365B
 **Global community hosted events**  
 - Directions North America: https://www.directionsna.com
 - Directions EMEA: https://directions4partners.com
-- Directions ASIA: https://directions4partners.com
+- Directions ASIA: https://directions4partners.com 
 - TechDays: https://navtechdays.com 
 
 ## Engagement
 
 **GitHub**  
-Use the GitHub forum to post questions about Visual Studio Code and AL Language to the community and Microsoft experts: https://github.com/microsoft/al/issues 
+Use the GitHub forum to post questions about Visual Studio Code and AL Language to the community and Microsoft experts: https://github.com/microsoft/al/issues/ 
 
 **Yammer**  
 Join the conversation about Business Central for partners on Yammer: https://aka.ms/bcyammer  
