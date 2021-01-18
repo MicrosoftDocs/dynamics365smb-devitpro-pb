@@ -26,24 +26,24 @@ Find what’s new and planned here: https://docs.microsoft.com/dynamics365/busin
 Find out what's new in Microsoft Dynamics 365 applications and Microsoft Power Platform: https://docs.microsoft.com/dynamics365/release-plans/ 
 
 **Minor updates**  
-Find the latest minor update here: https://aka.ms/bclastminorupdate 
+Find the latest minor update here: [aka.ms/BCLastMinorUpdate](https://aka.ms/bclastminorupdate) 
 
 
 ## Country availability and supported languages 
 **Supported countries, regions and languages**  
-Find the countries/regions where Business Central is available and which languages are supported: https://aka.ms/bccountries
+Find the countries/regions where Business Central is available and which languages are supported: [aka.ms/BCCountries](https://aka.ms/bccountries)
 
 ## Training and coaching 
 **ISV Development Center**  
 Online or in-person coaching for Business Central. Get in touch with an ISV Development Center: https://partner.microsoft.com/en-us/isv-resource-hub/development-centers/find-a-center  
 
 **Microsoft Learn page**  
-Browse all Business Central training videos and courses on Microsoft Learn: https://aka.ms/BCLearn 
+Browse all Business Central training videos and courses on Microsoft Learn: [aka.ms/BCLearn](https://aka.ms/BCLearn)
 
 ## Events
 
 **Microsoft hosted events**  
-Discover the latest Business Central Launch Event here: https://aka.ms/MSDyn365BCLaunchEvent  
+Discover the latest Business Central Launch Event here: [aka.ms/MSDyn365BCLaunchEvent](https://aka.ms/MSDyn365BCLaunchEvent)  
 
 **Global community hosted events**  
 - Directions North America: https://www.directionsna.com
