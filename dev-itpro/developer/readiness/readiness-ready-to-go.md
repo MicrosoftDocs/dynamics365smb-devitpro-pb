@@ -57,10 +57,10 @@ Discover the latest Business Central Launch Event here: [aka.ms/MSDyn365BCLaunch
 Use the GitHub forum to post questions about Visual Studio Code and AL Language to the community and Microsoft experts: https://github.com/microsoft/al/issues/ 
 
 **Yammer**  
-Join the conversation about Business Central for partners on Yammer: https://aka.ms/bcyammer  
+Join the conversation about Business Central for partners on Yammer: [aka.ms/BCYammer](https://aka.ms/bcyammer)  
 
 **Business Central Office Hours Calls**  
-Join the Business Central Office Hours to learn more and connect with the Business Central engineering team. Find the full list of office hours calls from December 2020 throughout March 2021 below. Register for the live calls and find on-demand recordings: https://aka.ms/BCOfficehours
+Join the Business Central Office Hours to learn more and connect with the Business Central engineering team. Find the full list of office hours calls from December 2020 throughout March 2021 below. Register for the live calls and find on-demand recordings: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficehours)
 
 | Date      | Topic |
 |--------------|--------------|
@@ -78,7 +78,7 @@ Mar 9, 2021 | Integrating with Microsoft Teams.
 ## Social
 
 **Twitter**  
-Follow us on Twitter to stay tuned about what’s going on in the #MSDyn365BC community: https://www.twitter.com/MSDYN365BC 
+Follow us on Twitter to stay tuned about what’s going on in the #MSDyn365BC community: [twitter.com/MSDYN365BC](https://www.twitter.com/MSDYN365BC) 
 
 **YouTube**  
 Subscribe to the Microsoft Dynamics 365 channel on YouTube: https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ  
@@ -90,5 +90,5 @@ Business Central on the Dynamics 365 blog for IT Professionals: https://cloudblo
 The Dynamics 365 blog for Business Decision Makers: https://cloudblogs.microsoft.com/dynamics365/bdm/  
 
 ### See Also:  
-- Get started with developing apps: https://aka.ms/bcpublisher
-- Get started with reselling apps: https://aka.ms/bcreseller  
+- Get started with developing apps: [aka.ms/BCPublisher](https://aka.ms/bcpublisher)
+- Get started with reselling apps: [aka.ms/BCReseller](https://aka.ms/bcreseller)  
