@@ -51,7 +51,7 @@ For more information, see [Configuring [!INCLUDE[webserver](developer/includes/w
 > The **Help and Support** page is available only in the browser.  
 -->
 
-## Escalation path for issues in AppSource apps
+## Getting support for extension issues
 
 As a partner, you must identify if the issue is caused by application logic or platform behavior:
 
