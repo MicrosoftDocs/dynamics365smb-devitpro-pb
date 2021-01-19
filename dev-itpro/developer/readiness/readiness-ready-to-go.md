@@ -17,7 +17,7 @@ ms.author: solsen
 ## Roadmap and what’s new 
 
 **Overall roadmap**  
-Find the overall roadmap for Business Central [here](https://dynamics.microsoft.com/en-us/roadmap/business-central/) 
+Find the overall roadmap for Business Central [here](https://dynamics.microsoft.com/roadmap/business-central/) 
 
 **What’s new in Business Central**  
 Find what’s new and planned [here](https://docs.microsoft.com/dynamics365/business-central/product-news)
@@ -35,7 +35,7 @@ Find the countries/regions where Business Central is available and which languag
 
 ## Training and coaching 
 **ISV Development Centers**  
-Online or in-person coaching for Business Central. Get in touch with an ISV Development Center [here](https://partner.microsoft.com/en-us/isv-resource-hub/development-centers/find-a-center)  
+Online or in-person coaching for Business Central. Get in touch with an ISV Development Center [here](https://partner.microsoft.com/isv-resource-hub/development-centers/find-a-center)  
 
 **Microsoft Learn page**  
 Browse all Business Central training videos and courses on Microsoft Learn: [aka.ms/BCLearn](https://aka.ms/BCLearn)
