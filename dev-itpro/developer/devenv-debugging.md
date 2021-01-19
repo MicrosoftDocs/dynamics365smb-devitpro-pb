@@ -70,7 +70,7 @@ Specify if the debugger breaks on record changes by using the `breakOnRecordWrit
 
 The default value of the `breakOnRecordWrite` property is **false**, which means that the debugger is not set to break on record changes by default. To break on record changes, you can set the `breakOnRecordWrite` property to **true** in the `launch.json` file. For more information, see [JSON Files](devenv-json-files.md).
 
-## Debugging large variable values
+## Debugging large size variable values
 
 Variables that contain values that are larger than 1024 bytes are truncated (`…`) and cannot be fully inspected from the **VARIABLES** window. In order to inspect a large size variable, instead use the **DEBUG CONSOLE** and write the name of the variable to inspect at the prompt and then press **Enter**.
 
