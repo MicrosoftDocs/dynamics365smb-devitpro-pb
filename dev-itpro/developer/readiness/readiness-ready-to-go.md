@@ -89,6 +89,6 @@ Business Central on the Dynamics 365 blog for IT Professionals: [cloudblogs.micr
 **Blog for Decision Makers**  
 The Dynamics 365 blog for Business Decision Makers: [cloudblogs.microsoft.com/dynamics365/bdm](https://cloudblogs.microsoft.com/dynamics365/bdm/)
 
-### See Also: 
-- Get started with developing apps: [aka.ms/BCPublisher](https://aka.ms/bcpublisher)
-- Get started with reselling apps: [aka.ms/BCReseller](https://aka.ms/bcreseller)  
+### See Also 
+Get started with developing apps: [aka.ms/BCPublisher](https://aka.ms/bcpublisher)
+Get started with reselling apps: [aka.ms/BCReseller](https://aka.ms/bcreseller)  
