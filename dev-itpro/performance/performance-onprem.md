@@ -15,7 +15,7 @@ author: KennieNP
 
 In this section, we highlight a number of resources that might be useful when doing performance investigations and tuning of on-premises installations. On-premises, in this context, means deployment to any environment that isn't the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service. Running [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on Azure resources is also considered on-premises.
 
-Content is ordered into four groups:
+Content is ordered into the following groups:
 
 - [Tuning the technology stack](#tuningstack)
 - [Scaling [!INCLUDE[prod_short](../developer/includes/prod_short.md)]](#scaling)
@@ -31,7 +31,7 @@ A [!INCLUDE[prod_short](../developer/includes/prod_short.md)] installation typic
 - Server (service-tier)
 - Database
 
-### Client 
+### Client
 
 There are three things of importance when dealing with client performance:
 
@@ -39,9 +39,9 @@ There are three things of importance when dealing with client performance:
 - Choice of browser
 - Network bandwidth and latency between the client and the data center running [!INCLUDE[prod_short](../developer/includes/prod_short.md)]
 
-These subjects are described in [Performance in Business Central Online](performance-online.md).
+These subjects are described in [Performance Tips for Business Users](performance-users.md).
 
-### Web Server 
+### Web Server
 
 You can improve web server performance by configuring Kernel-mode authentication:
 
@@ -60,8 +60,7 @@ You can adjust the following [!INCLUDE[server](../developer/includes/server.md)]
 |EnableProfileCacheSynchronization|	Specifies whether profile cache synchronization across multiple server instances is enabled. However, enabling this setting may lower the tenant performance.|[Configuring Business Central Server - EnableProfileCacheSynchronization](../administration/configure-server-instance.md#profilecache)|
 | SqlBulkImportBatchSize | Specifies how many SQL memory chunks that a data import must be distributed across. Lowering the value increases the number of network transfers and decreases performance. But it also lowers the amount of memory that the server instance consumes.  | [Database Settings](../administration/configure-server-instance.md#Database) |
 
-
-#### Web service limits 
+#### Web service limits
 
 You can adjust server instance settings related to web service calls to implement resource governance (and avoid resource starvation on the server instances) here: 
 
@@ -73,7 +72,6 @@ You can adjust server instance settings related to web service calls to implemen
 You can adjust server instance settings related to the task scheduler to implement resource governance (and avoid resource starvation on the server instances) here: 
 
 - [Maximum Concurrent Running Tasks](../administration/configure-server-instance.md#Task)
-
 
 ### Database (SQL Server or Azure SQL database)
 

@@ -1,7 +1,8 @@
 ---
-title: "Security and Protection"
-description: Get an overview of the articles about security and protection in Business Central
+title: Security and Protection
+description: Get an overview of the articles about security and protection in Business Central, so that you can configure your solution.
 author: jswymer
+
 ms.custom: na
 ms.reviewer: na
 ms.suite: na

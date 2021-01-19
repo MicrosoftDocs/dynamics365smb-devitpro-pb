@@ -1,14 +1,15 @@
 ---
-title: "Security Filter Modes"
-ms.custom: na
-ms.date: 10/01/2020
+title: Using Security Filters in Business Central
+description: Learn how you can configure security filters at different levels in your Business Central solution so that you can limit access to data.
+author: jswymer
+
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
-author: jswymer
+ms.date: 10/01/2020
 ---
 # Using Security Filters
 
@@ -17,7 +18,7 @@ For record-level security in [!INCLUDE[prod_short](../developer/includes/prod_sh
 There are two parts to implementing security filters.
 
 - Creating the security filters on the table is typically done by an application administrator.
--  Defining how the application behaves when the filters are applied is done in application code by a developer. 
+- Defining how the application behaves when the filters are applied is done in application code by a developer.  
 
 ## Creating security filters
 
