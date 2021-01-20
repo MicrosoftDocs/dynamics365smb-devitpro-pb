@@ -54,7 +54,7 @@ For information about lifecycle support for [!INCLUDE [prod_short](includes/prod
 
 ## How often are production databases backed up?
 
-Databases are protected by automatic backups that are retained for 30 days. As an administrator, you cannot access or manage these backups because they are managed automatically by Microsoft. For more information about the underlying technology, see [Automatic backups](/azure/sql-database/sql-database-automated-backups).
+[!INCLUDE [database-backup](includes/database-backup.md)]
 
 ## Can I request a copy of the backup of my production database?
 

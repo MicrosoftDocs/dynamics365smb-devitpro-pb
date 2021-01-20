@@ -1,6 +1,6 @@
 ---
 title: Preparing test environments of Business Central
-description: Get an overview of your options for deploying test environments for Dynamics 365 Business Central
+description: Get an overview of your options for deploying test environments for Dynamics 365 Business Central for performance testing.
 author: edupont04
 ms.custom: na
 ms.reviewer: na

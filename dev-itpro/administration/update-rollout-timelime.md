@@ -1,6 +1,6 @@
 ---
-title: Major Updates of Business Central Online | Microsoft Docs
-description: Learn about the timeline for how major updates roll out and how you can prepare for an update.  
+title: Major Updates of Business Central Online
+description: Learn about the timeline for how major updates of Business Central online roll out, and how you can prepare for an update.  
 author: edupont04
 
 ms.service: dynamics365-business-central

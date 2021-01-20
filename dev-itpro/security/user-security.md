@@ -1,6 +1,6 @@
 ---
-title: "User Security"
-description: Provides information about managing security in the database
+title: User Permissions and Security in Business Central
+description: Provides information about managing user access to the database based on permissions and the different levels of security.
 ms.custom: na
 ms.date: 10/01/2020
 ms.reviewer: na
