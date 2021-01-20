@@ -2,7 +2,7 @@
 title: "FieldRef.Validate Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # FieldRef.Validate Method
+> **Version**: _Available from runtime version 1.0._
+
 Use this method to enter a new value into a field and have the new value validated by the properties and code that have been defined for that field.
 
 
@@ -22,9 +24,9 @@ Use this method to enter a new value into a field and have the new value validat
  FieldRef.Validate([NewValue: Any])
 ```
 ## Parameters
-*FieldRef*  
-&emsp;Type: [FieldRef](fieldref-data-type.md)  
-An instance of the [FieldRef](fieldref-data-type.md) data type.  
+*FieldRef*
+&emsp;Type: [FieldRef](fieldref-data-type.md)
+An instance of the [FieldRef](fieldref-data-type.md) data type.
 
 *NewValue*  
 &emsp;Type: [Any](../any/any-data-type.md)  
@@ -42,7 +44,7 @@ The value to insert in the field.
  This method is like the [VALIDATE Method \(Record\)](../../methods-auto/record/record-validate-method.md).  
 
 ## Example  
- The following example opens table 17 \(G/L Entry\) as a RecordRef that is named EntryRecref. The [FINDFIRST Method \(RecordRef\)](../../methods-auto/recordref/recordref-findfirst-method.md) searches for the first record in the table. The [FIELD Method \(RecordRef\)](../../methods-auto/recordref/recordref-field-method.md) sets the field to 3, which is the G/L Account No. field. The **VALIDATE** method validates and inserts the specified value \(1210\) into the field. The [MODIFY Method \(RecordRef\)](../../methods-auto/recordref/recordref-modify-method.md) modifies the table. A message that indicates the G/L Account No. field has changed is displayed. To show that the code in the **OnValidate** trigger is executed, design the **G/L Entry** table and add the following code to the **G/L Account No. – OnValidate** trigger: `MESSAGE('The OnValidate trigger is called.');`  
+ The following example opens table 17 \(G/L Entry\) as a RecordRef that is named EntryRecref. The [FINDFIRST Method \(RecordRef\)](../../methods-auto/recordref/recordref-findfirst-method.md) searches for the first record in the table. The [FIELD Method \(RecordRef\)](../../methods-auto/recordref/recordref-field-method.md) sets the field to 3, which is the G/L Account No. field. The **VALIDATE** method validates and inserts the specified value \(1210\) into the field. The [MODIFY Method \(RecordRef\)](../../methods-auto/recordref/recordref-modify-method.md) modifies the table. A message that indicates the G/L Account No. field has changed is displayed. To show that the code in the **OnValidate** trigger is executed, design the **G/L Entry** table and add the following code to the **G/L Account No. – OnValidate** trigger: `Message('The OnValidate trigger is called.');`  
 
  ```
 var
@@ -54,10 +56,10 @@ begin
     EntryRecref.OPEN(17);  
     if EntryRecref.FINDFIRST then begin  
       MyFieldRef := EntryRecref.FIELD(3);  
-      MESSAGE(Text000, EntryRecref.RECORDID, MyFieldRef.VALUE);  
+      Message(Text000, EntryRecref.RECORDID, MyFieldRef.VALUE);  
       MyFieldRef.VALIDATE('1210');  
       EntryRecref.MODIFY;  
-      MESSAGE(Text001, EntryRecref.RECORDID, MyFieldRef.VALUE);  
+      Message(Text001, EntryRecref.RECORDID, MyFieldRef.VALUE);  
     end;  
 end;
 ```  

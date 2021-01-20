@@ -2,7 +2,7 @@
 title: "FieldRef.SetFilter Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # FieldRef.SetFilter Method
+> **Version**: _Available from runtime version 1.0._
+
 Assigns a filter to a field that you specify.
 
 
@@ -22,9 +24,9 @@ Assigns a filter to a field that you specify.
  FieldRef.SetFilter(String: String [, Value: Any,...])
 ```
 ## Parameters
-*FieldRef*  
-&emsp;Type: [FieldRef](fieldref-data-type.md)  
-An instance of the [FieldRef](fieldref-data-type.md) data type.  
+*FieldRef*
+&emsp;Type: [FieldRef](fieldref-data-type.md)
+An instance of the [FieldRef](fieldref-data-type.md) data type.
 
 *String*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -70,10 +72,10 @@ begin
     CustomerRecref.OPEN(DATABASE::Customer);  
     MyFieldRef := CustomerRecref.FIELD(1);  
     Filter1 := MyFieldRef.GETFILTER;  
-    MESSAGE(Text000, Filter1);  
+    Message(Text000, Filter1);  
     MyFieldRef.SETFILTER('10000..40000');  
     Filter2 := MyFieldRef.GETFILTER;  
-    MESSAGE(Text001, Filter2);  
+    Message(Text001, Filter2);  
 end;
 ```  
   

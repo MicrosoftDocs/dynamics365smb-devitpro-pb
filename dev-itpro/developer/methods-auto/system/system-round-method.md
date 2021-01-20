@@ -2,7 +2,7 @@
 title: "System.Round Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # System.Round Method
+> **Version**: _Available from runtime version 1.0._
+
 Rounds the value of a numeric variable.
 
 
@@ -21,8 +23,8 @@ Rounds the value of a numeric variable.
 ```
 NewNumber :=   System.Round(Number: Decimal [, Precision: Decimal] [, Direction: String])
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *Number*  
 &emsp;Type: [Decimal](../decimal/decimal-data-type.md)  
@@ -43,9 +45,9 @@ This optional parameter specifies how to round the Number parameter. The default
 
 
 ## Return Value
-*NewNumber*  
-&emsp;Type: [Decimal](../decimal/decimal-data-type.md)  
-  
+*NewNumber*
+&emsp;Type: [Decimal](../decimal/decimal-data-type.md)
+
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -65,7 +67,7 @@ begin
     Direction := '>';  
     Precision := 0.001;  
     Result := ROUND(DecimalToRound, Precision, Direction);  
-    MESSAGE(Text000, Format(DecimalToRound,0,1), Precision, Direction, Result);  
+    Message(Text000, Format(DecimalToRound,0,1), Precision, Direction, Result);  
 end;
 ```  
 

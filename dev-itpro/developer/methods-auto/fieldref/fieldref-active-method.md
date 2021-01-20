@@ -2,7 +2,7 @@
 title: "FieldRef.Active Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # FieldRef.Active Method
+> **Version**: _Available from runtime version 1.0._
+
 Checks whether the field that is currently selected is enabled.
 
 
@@ -21,18 +23,18 @@ Checks whether the field that is currently selected is enabled.
 ```
 Ok :=   FieldRef.Active()
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 
 ## Parameters
-*FieldRef*  
-&emsp;Type: [FieldRef](fieldref-data-type.md)  
-An instance of the [FieldRef](fieldref-data-type.md) data type.  
+*FieldRef*
+&emsp;Type: [FieldRef](fieldref-data-type.md)
+An instance of the [FieldRef](fieldref-data-type.md) data type.
 
 ## Return Value
-*Ok*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-  
+*Ok*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -68,9 +70,9 @@ begin
     for i := 1 to 5 do begin
       MyFieldRef := Recref.FIELDINDEX(i);  
       if MyFieldRef.ACTIVE then  
-        MESSAGE(Text000, i)  
+        Message(Text000, i)  
       else begin 
-        MESSAGE(Text001, i)  
+        Message(Text001, i)  
       end;  
     end;  
 end;

@@ -2,7 +2,7 @@
 title: "Query.SetRange Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Query.SetRange Method
+> **Version**: _Available from runtime version 1.0._
+
 Sets a filter on a range of values on a column of a query data set.
 
 
@@ -22,9 +24,9 @@ Sets a filter on a range of values on a column of a query data set.
  Query.SetRange(Column: Any [, FromValue: Any] [, ToValue: Any])
 ```
 ## Parameters
-*Query*  
-&emsp;Type: [Query](query-data-type.md)  
-An instance of the [Query](query-data-type.md) data type.  
+*Query*
+&emsp;Type: [Query](query-data-type.md)
+An instance of the [Query](query-data-type.md) data type.
 
 *Column*  
 &emsp;Type: [Any](../any/any-data-type.md)  
@@ -116,7 +118,7 @@ MyQuery.OPEN;
 // Stops reading when there are no more rows remaining in the dataset (READ is FALSE).  
 while MyQuery.READ do  
 begin  
-  MESSAGE(Text000, MyQuery.Name, MyQuery.Quantity);  
+  Message(Text000, MyQuery.Name, MyQuery.Quantity);  
 end;   
 // Saves the resulting dataset as a CSV file.  
 MyQuery.SAVEASCSV('c:\temp\CustomerSales.csv');  

@@ -13,7 +13,7 @@ author: solsen
 
 # GetEnvironment Method
 
-Gets information about the environment that the control add-in is using.  
+Gets information about the environment that the control add-in is using. For more information, see [Control Addin Object](../devenv-control-addin-object.md).
   
 ## Method signature  
 

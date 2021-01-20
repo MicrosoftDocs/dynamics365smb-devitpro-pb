@@ -2,7 +2,7 @@
 title: "Session.CurrentExecutionMode Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Session.CurrentExecutionMode Method
+> **Version**: _Available from runtime version 1.0._
+
 Specifies the mode in which the session is running.
 
 
@@ -21,16 +23,16 @@ Specifies the mode in which the session is running.
 ```
 ExecutionMode :=   Session.CurrentExecutionMode()
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 
 
 ## Return Value
-*ExecutionMode*  
-&emsp;Type: [ExecutionMode](../executionmode/executionmode-option.md)  
-The mode in which the session is running.  
+*ExecutionMode*
+&emsp;Type: [ExecutionMode](../executionmode/executionmode-option.md)
+The mode in which the session is running.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -40,7 +42,7 @@ The mode in which the session is running.
 
 ```  
 Mode := CURRENTEXECUTIONMODE;   
-MESSAGE('Current execution mode is %1.', Mode); 
+Message('Current execution mode is %1.', Mode); 
 ```
 
 ## See Also

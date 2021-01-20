@@ -2,7 +2,7 @@
 title: "RecordRef.Rename Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # RecordRef.Rename Method
+> **Version**: _Available from runtime version 1.0._
+
 Changes the value of a primary key in a table.
 
 
@@ -22,9 +24,9 @@ Changes the value of a primary key in a table.
 [Ok := ]  RecordRef.Rename(Value1: Any [, Value2: Any,...])
 ```
 ## Parameters
-*RecordRef*  
-&emsp;Type: [RecordRef](recordref-data-type.md)  
-An instance of the [RecordRef](recordref-data-type.md) data type.  
+*RecordRef*
+&emsp;Type: [RecordRef](recordref-data-type.md)
+An instance of the [RecordRef](recordref-data-type.md) data type.
 
 *Value1*  
 &emsp;Type: [Any](../any/any-data-type.md)  
@@ -35,9 +37,9 @@ The new values for the primary key.
 
 
 ## Return Value
-*Ok*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+*Ok*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+**true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -85,19 +87,19 @@ begin
     CustomerRec.GET('0112121');  
     NewNo1 := ‘9999999’;  
     NewNo2 := ‘8888888’;  
-    MESSAGE('Customer name: %1; Customer number: %2',CustomerRec.Name, CustomerRec."No.");  
+    Message('Customer name: %1; Customer number: %2',CustomerRec.Name, CustomerRec."No.");  
     result := CustomerRec.RENAME(NewNo1);  
     if result then  
-      MESSAGE('After rename - Customer name: %1; Customer number: %2',CustomerRec.Name, CustomerRec."No.")  
+      Message('After rename - Customer name: %1; Customer number: %2',CustomerRec.Name, CustomerRec."No.")  
     else  
-      MESSAGE('No rename.');  
+      Message('No rename.');  
     CustRecRef.GETTABLE(CustomerRec);  
     result := CustRecRef.RENAME(NewNo2);  
     if result then begin  
       CustomerRec.GET(NewNo2);  
-      MESSAGE('After rename 2 - Customer name: %1; Customer number: %2',CustomerRec.Name, CustomerRec."No.")  
+      Message('After rename 2 - Customer name: %1; Customer number: %2',CustomerRec.Name, CustomerRec."No.")  
     end else  
-      MESSAGE('No rename.');  
+      Message('No rename.');  
 end;
 ```  
   

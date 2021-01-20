@@ -2,7 +2,7 @@
 title: "System.RoundDateTime Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # System.RoundDateTime Method
+> **Version**: _Available from runtime version 1.0._
+
 Rounds a DateTime.
 
 
@@ -21,8 +23,8 @@ Rounds a DateTime.
 ```
 NewDatetime :=   System.RoundDateTime(Datetime: DateTime [, Precision: BigInteger] [, Direction: String])
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *Datetime*  
 &emsp;Type: [DateTime](../datetime/datetime-data-type.md)  
@@ -41,9 +43,9 @@ This optional parameter specifies how to round the DateTime. The default roundin
 
 
 ## Return Value
-*NewDatetime*  
-&emsp;Type: [DateTime](../datetime/datetime-data-type.md)  
-The rounded result.  
+*NewDatetime*
+&emsp;Type: [DateTime](../datetime/datetime-data-type.md)
+The rounded result.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -68,7 +70,7 @@ begin
     Precision := 1000L;  
     FormatString := '<Month,2>/<Day,2>/<Year> <Hours24,2>:<Minutes,2>:<Seconds,2>.<Thousands,3>';  
     Result := ROUNDDATETIME(DateTimeToRound, Precision);  
-    MESSAGE(TEXT000, Format(DateTimeToRound,0,FormatString), Precision, Format(Result,0,FormatString)); 
+    Message(TEXT000, Format(DateTimeToRound,0,FormatString), Precision, Format(Result,0,FormatString)); 
 end;
 ```  
 

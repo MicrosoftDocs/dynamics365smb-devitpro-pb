@@ -2,7 +2,7 @@
 title: "System.GetLastErrorCallStack Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # System.GetLastErrorCallStack Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets the call stack from where the last error occurred.
 
 
@@ -21,16 +23,16 @@ Gets the call stack from where the last error occurred.
 ```
 String :=   System.GetLastErrorCallStack()
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 
 
 ## Return Value
-*String*  
-&emsp;Type: [String](../string/string-data-type.md)  
-  
+*String*
+&emsp;Type: [String](../string/string-data-type.md)
+
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -42,7 +44,7 @@ String :=   System.GetLastErrorCallStack()
  <!-- Links For more information, see [How to: Break on Errors](How-to-Break-on-Errors.md). --> 
   
 ## Example  
- In this example, an error occurs in codeunit 50003. The text of the MESSAGE includes a call to the GETLASTERRORCALLSTACK method.  
+ In this example, an error occurs in codeunit 50003. The text of the Message includes a call to the GETLASTERRORCALLSTACK method.  
   
 ```  
 // Codeunit 50001, TestErrors1  
@@ -53,7 +55,7 @@ ERROR('Some error message')
 // OnRun trigger  
 CLEARLASTERROR;  
 if not Codeunit.RUN(50001) then  
-  MESSAGE('The call stack for the last error is:\' + GETLASTERRORCALLSTACK);  
+  Message('The call stack for the last error is:\' + GETLASTERRORCALLSTACK);  
   
 ```  
   

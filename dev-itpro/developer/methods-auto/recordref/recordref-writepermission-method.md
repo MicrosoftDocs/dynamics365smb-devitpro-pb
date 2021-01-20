@@ -2,7 +2,7 @@
 title: "RecordRef.WritePermission Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # RecordRef.WritePermission Method
+> **Version**: _Available from runtime version 1.0._
+
 Determines if you can write to a table.
 
 
@@ -21,18 +23,18 @@ Determines if you can write to a table.
 ```
 Ok :=   RecordRef.WritePermission()
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 
 ## Parameters
-*RecordRef*  
-&emsp;Type: [RecordRef](recordref-data-type.md)  
-An instance of the [RecordRef](recordref-data-type.md) data type.  
+*RecordRef*
+&emsp;Type: [RecordRef](recordref-data-type.md)
+An instance of the [RecordRef](recordref-data-type.md) data type.
 
 ## Return Value
-*Ok*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-Specifies if you have permission to write to the table  
+*Ok*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+Specifies if you have permission to write to the table
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -61,7 +63,7 @@ begin
     varTableNo := 18;  
     MyRecordRef.OPEN(varTableNo);  
     varHasWritePerm := MyRecordRef.WRITEPERMISSION;  
-    MESSAGE(Text000, MyRecordRef.NAME, varHasWritePerm);  
+    Message(Text000, MyRecordRef.NAME, varHasWritePerm);  
 end;
 ```  
   

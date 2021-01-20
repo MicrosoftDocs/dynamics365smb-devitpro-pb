@@ -48,7 +48,7 @@ The process for upgrading is similar for a single-tenant and multitenant deploym
 
 1. Your version 14 is compatible with version 17.
 
-    There are several updates for version 14. The updates have a compatible version 17 update. For more information, see [[!INCLUDE[prodlong](../developer/includes/prodlong.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md). 
+    There are several updates for version 14. The updates have a compatible version 17 update. For more information, see [[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md). 
 
 2. The version 14 [!INCLUDE[devshell](../developer/includes/devshell.md)] and [!INCLUDE[adminshell](../developer/includes/adminshell.md)] are installed. 
 
@@ -58,9 +58,9 @@ The process for upgrading is similar for a single-tenant and multitenant deploym
 
 ## Install version 17
 
-1. Download the latest available update for [!INCLUDE[prodlong](../developer/includes/prodlong.md)] (version 17) that is compatible with your version 14.
+1. Download the latest available update for [!INCLUDE[prod_long](../developer/includes/prod_long.md)] (version 17) that is compatible with your version 14.
 
-    For more information, see [[!INCLUDE[prodlong](../developer/includes/prodlong.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
+    For more information, see [[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
 
 2. Before you install version 17, it can be useful to create desktop shortcuts to the version 14.0 tools, such as the [!INCLUDE[admintool](../developer/includes/admintool.md)], [!INCLUDE[adminshell](../developer/includes/adminshell.md)], and [!INCLUDE[devshell](../developer/includes/devshell.md)] because the Start menu items for these tools will be replaced with the version 17 tools.
 
@@ -215,12 +215,13 @@ You can create the empty extension like any other extension by adding an AL proj
 2. Delete the HelloWorld.al sample file from the project.
 3. Modify the app.json file.
 
-    The important settings in the app.json file `"id"`, `"name"`, `"version"`, `"publisher"`, and `"dependencies"`.
+    The important settings in the app.json file are: `"id"`, `"name"`, `"version"`, `"publisher"`, `"dependencies"`, and `"runtime"`.
     
     - The `id` and `name` must match the value used by Microsoft's extensions.
     - Set the `version` to any version lower than 17.0.0.0, like 14.0.0.0.
     - You'll also have to include the `"publisher"`. You can use your own publisher name or `"Microsoft"`.
     - Remove all other settings. It's important that there are no `"dependencies"` set.
+    - Set the `runtime` to `"6.0"`.
 
     The app.json files for the **System Application** and **Base Application** extensions, should look similar to following examples:
     
@@ -230,7 +231,8 @@ You can create the empty extension like any other extension by adding an AL proj
       "id": "63ca2fa4-4f03-4f2b-a480-172fef340d3f",
       "name": "System Application",
       "publisher": "Microsoft",
-      "version": "14.0.0.0"
+      "version": "14.0.0.0",
+      "runtime": "6.0"
     ```
     
     **Base Application**   
@@ -239,7 +241,8 @@ You can create the empty extension like any other extension by adding an AL proj
       "id": "437dbf0e-84ff-417a-965d-ed2bb9650972",
       "name": "Base Application",
       "publisher": "Microsoft",
-      "version": "14.0.0.0"
+      "version": "14.0.0.0",
+      "runtime": "6.0"
     ```
 
 4.  Build and compile the extension package. To build the extension package, press Ctrl+Shift+B.
@@ -574,7 +577,7 @@ The [!INCLUDE[server](../developer/includes/server.md)] installation includes ne
 
 To upgrade the control add-ins from the client, do the following steps:
 
-1. Open the [!INCLUDE[](../developer/includes/prodshort.md)] client.
+1. Open the [!INCLUDE[](../developer/includes/prod_short.md)] client.
 2. Search for and open the **Control Add-ins** page.
 3. Choose **Actions** > **Control Add-in Resource** > **Import**.
 4. Locate and select the .zip file for the control add-in and choose **Open**.

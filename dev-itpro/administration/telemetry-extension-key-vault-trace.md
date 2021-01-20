@@ -13,9 +13,9 @@ ms.author: jswymer
 ---
 # Analyzing App Key Vault Secret Trace Telemetry
 
-[!INCLUDE[prodshort](../includes/2020_releasewave2.md)]
+[!INCLUDE[prod_short](../includes/2020_releasewave2.md)]
 
-App key vault telemetry gathers information about the acquisition of secrets in Azure Key Vaults by extensions at runtime. For an overview of app key vaults and secrets, see [Using App Key Vaults with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Extensions](../developer/devenv-app-key-vault-overview.md).
+App key vault telemetry gathers information about the acquisition of secrets in Azure Key Vaults by extensions at runtime. For an overview of app key vaults and secrets, see [Using App Key Vaults with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Extensions](../developer/devenv-app-key-vault-overview.md).
 
 The app key vault secret process has two operations: *initialization* and *retrieval*. The telemetry data provides information about the success or failure for each of these operations. There are various conditions that cause a failure. The failure messages provide insight into the cause of the failure, helping you identify, troubleshoot, and resolve issues.
 
@@ -35,7 +35,7 @@ Retrieval is the second stage, and occurs after a successful initialization. In 
 - The key vault doesn't exist.
 - The application ID doesn't have permission to read from the key vault.
 
-For more information about using key vault secrets with extensions, see [App Key Vaults with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Extensions](../developer/devenv-app-key-vault-overview.md).
+For more information about using key vault secrets with extensions, see [App Key Vaults with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Extensions](../developer/devenv-app-key-vault-overview.md).
 
 ## <a name="initializedsuccess"></a>App Key Vault secret initialization succeeded
 
@@ -58,7 +58,7 @@ Occurs when an extension secret was successfully initialized.
 |alStackTrace|The stack trace in AL.|
 |clientType|Specifies the type of client that executed the request, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
 |component|**Dynamics 365 Business Central Server**.|
-|componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number.|
+|componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |deprecatedKeys|A comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
 |eventId|**RT0014**|
 |extensionId|Specifies the AppID of the extension that requested the secret.|
@@ -66,7 +66,7 @@ Occurs when an extension secret was successfully initialized.
 |extensionPublisher|Specifies the publisher of the extension that requested the secret. |
 |extensionVersion|Specifies the version of the extension that requested the secret.|
 |keyVaultUrls|Specifies the DNS name of the Azure key vault that was used in the request. The keyVaultUris are specified in the [app.json](../developer/devenv-json-files.md) file of the extension.|
-|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
+|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 
 <!--
 Example:
@@ -95,7 +95,7 @@ Occurs when a key vault failed to be initialized.
 |alStackTrace|The stack trace in AL.|
 |clientType|Specifies the type of client that executed request, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
 |component|**Dynamics 365 Business Central Server**.|
-|componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number.|
+|componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |deprecatedKeys|A comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
 |eventId|**RT0015**|
 |extensionId|Specifies the AppID of the extension that requested the secret.|
@@ -103,7 +103,7 @@ Occurs when a key vault failed to be initialized.
 |extensionPublisher|Specifies the publisher of the extension that requested the secret. |
 |extensionVersion|Specifies the version of the extension that requested the secret.|
 |failureReason|Specifies the error that occurred.|
-|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
+|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 
 
 <!--
@@ -133,7 +133,7 @@ Occurs when a secret used by an extension is successfully retrieved from an Azur
 |alStackTrace|The stack trace in AL.|
 |clientType|Specifies the type of client that executed the SQL Statement, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
 |component|**Dynamics 365 Business Central Server**.|
-|componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number.|
+|componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |deprecatedKeys|A comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
 |eventId|**RT0016**|
 |extensionId|Specifies the AppID of the extension that requested the secret.|
@@ -141,7 +141,7 @@ Occurs when a secret used by an extension is successfully retrieved from an Azur
 |extensionPublisher|Specifies the publisher of the extension that requested the secret. |
 |extensionVersion|Specifies the version of the extension that requested the secret.|
 |keyVaultUrl|Specifies the DNS name of the Azure key vault that was used in the request. The keyVaultUris are specified in the [app.json](../developer/devenv-json-files.md) file of the extension.|
-|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
+|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 
 <!--
 {"Component":"Dynamics 365 Business Central Server","Telemetry schema version":"0.1","telemetrySchemaVersion":"0.1","Component version":"16.0.14248.0","componentVersion":"16.0.14248.0","deprecatedKeys":"Company name, AL Object Id, AL Object type, AL Object name, AL Stack trace, Client type, Extension name, Extension App Id, Extension version, Telemetry schema version, Component, Component version, Extension name, Extension App Id, Extension version, Telemetry schema version","extensionPublisher":"Microsoft","Company name":"CRONUS International Ltd.","AL Object Id":"3801","Extension version":"17.0.14320.0","Extension App Id":"63ca2fa4-4f03-4f2b-a480-172fef340d3f","extensionVersion":"17.0.14320.0","Client type":"WebClient","companyName":"CRONUS International Ltd.","component":"Dynamics 365 Business Central Server","alObjectId":"3801","clientType":"WebClient","Extension name":"System Application","extensionName":"System Application","eventId":"RT0016","extensionId":"63ca2fa4-4f03-4f2b-a480-172fef340d3f","AL Object name":"App Key Vault Secret Pr. Impl.","AL Stack trace":"AppObjectType: CodeUnit\r\n AppObjectId: 3801\r\n AL CallStack: \"App Key Vault Secret Pr. Impl.\"(CodeUnit 3801).GetSecret - System Application by Microsoft\r\n\"App Key Vault Secret Provider\"(CodeUnit 3800).GetSecret - System Application by Microsoft\r\nHelloWorldPage(Page 50103).OnOpenPage(Trigger) line 6 - ALProject4 by Me","AL Object type":"CodeUnit","alObjectName":"App Key Vault Secret Pr. Impl.","alObjectType":"CodeUnit","alStackTrace":"AppObjectType: CodeUnit\r\n AppObjectId: 3801\r\n AL CallStack: \"App Key Vault Secret Pr. Impl.\"(CodeUnit 3801).GetSecret - System Application by Microsoft\r\n\"App Key Vault Secret Provider\"(CodeUnit 3800).GetSecret - System Application by Microsoft\r\nHelloWorldPage(Page 50103).OnOpenPage(Trigger) line 6 - ALProject4 by Me","keyVaultUrl":"https://jswymer-keyvault-1.vault.azure.net/"}
@@ -168,7 +168,7 @@ Occurs when an extension failed to retrieve a secret from a specified Azure key 
 |alStackTrace|The stack trace in AL.|
 |clientType|Specifies the type of client that executed the SQL Statement, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
 |component|**Dynamics 365 Business Central Server**.|
-|componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number.|
+|componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |deprecatedKeys|A comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
 |eventId|**RT0017**|
 |extensionId|Specifies the AppID of the extension that requested the secret.|
@@ -176,7 +176,7 @@ Occurs when an extension failed to retrieve a secret from a specified Azure key 
 |extensionPublisher|Specifies the publisher of the extension that requested the secret. |
 |extensionVersion|Specifies the version of the extension that requested the secret.|
 |keyVaultUrl|Specifies the DNS name of the Azure key vault that was used in the request. The keyVaultUris are specified in the [app.json](../developer/devenv-json-files.md) file of the extension.|
-|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
+|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 
 <!--
 ### Example
@@ -187,7 +187,7 @@ Occurs when an extension failed to retrieve a secret from a specified Azure key 
 
 ## See also
 
-[App Key Vaults with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Extensions](../developer/devenv-app-key-vault.md)  
+[App Key Vaults with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Extensions](../developer/devenv-app-key-vault.md)  
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Enabling Application Insights for Tenant Telemetry On-Premises](telemetry-enable-application-insights.md)  
 [Enable Sending Telemetry to Application Insights](tenant-admin-center-telemetry.md#appinsights)  

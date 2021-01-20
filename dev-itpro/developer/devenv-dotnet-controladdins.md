@@ -13,9 +13,9 @@ ms.author: solsen
 ---
 
 # .NET Control Add-Ins
-In [!INCLUDE[prodlong](includes/prodlong.md)] on-premises you can use existing .NET and Javascript control add-ins from the AL Language through .NET interoperability. It is recommended that you convert your existing .NET and Javascript add-ins to native AL control add-ins that are supported both on-premises and in the cloud. For more information about native AL control add-ins, see [Control Add-In Object](devenv-control-addin-object.md). 
+In [!INCLUDE[prod_long](includes/prod_long.md)] on-premises you can use existing .NET and Javascript control add-ins from the AL Language through .NET interoperability. It is recommended that you convert your existing .NET and Javascript add-ins to native AL control add-ins that are supported both on-premises and in the cloud. For more information about native AL control add-ins, see [Control Add-In Object](devenv-control-addin-object.md). 
 
-To declare the usage of a .NET or Javascript add-in in AL, you need three critical pieces of information about the .NET type that represent the interface of the add-in. These are the name of the assembly containing the add-in, the name of the control add-in, and the name of the class that implements the control add-in. We will show how to retrieve this information for the `Microsoft.Dynamics.Nav.Client.PingPong` control add-in that ships with [!INCLUDE[prodshort](includes/prodshort.md)].
+To declare the usage of a .NET or Javascript add-in in AL, you need three critical pieces of information about the .NET type that represent the interface of the add-in. These are the name of the assembly containing the add-in, the name of the control add-in, and the name of the class that implements the control add-in. We will show how to retrieve this information for the `Microsoft.Dynamics.Nav.Client.PingPong` control add-in that ships with [!INCLUDE[prod_short](includes/prod_short.md)].
 
 The name of the assembly can be retrieved from the AssemblyName element in the `.csproj` file associated with the .NET project that represents the control add-in. In this case the name of the assembly is `Microsoft.Dynamics.Nav.Client.PingPong`.
 

@@ -2,7 +2,7 @@
 title: "HttpHeaders.GetValues Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # HttpHeaders.GetValues Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets the values for the specified key.
 
 
@@ -22,9 +24,9 @@ Gets the values for the specified key.
 [Ok := ]  HttpHeaders.GetValues(Key: String, Values: Array of [Text])
 ```
 ## Parameters
-*HttpHeaders*  
-&emsp;Type: [HttpHeaders](httpheaders-data-type.md)  
-An instance of the [HttpHeaders](httpheaders-data-type.md) data type.  
+*HttpHeaders*
+&emsp;Type: [HttpHeaders](httpheaders-data-type.md)
+An instance of the [HttpHeaders](httpheaders-data-type.md) data type.
 
 *Key*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -36,9 +38,9 @@ The specified header values.
 
 
 ## Return Value
-*Ok*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the specified header name and values are stored in the collection; otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+*Ok*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+**true** if the specified header name and values are stored in the collection; otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

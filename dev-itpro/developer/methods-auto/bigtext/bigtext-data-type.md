@@ -2,7 +2,7 @@
 title: "BigText Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 12/09/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # BigText Data Type
+> **Version**: _Available from runtime version 1.0._
+
 Handles large text documents.
 
 
@@ -22,14 +24,14 @@ The following methods are available on instances of the BigText data type.
 
 |Method name|Description|
 |-----------|-----------|
-|[Length()](bigtext-length-method.md)|Retrieves the length of the text stored in this BigText instance.|
 |[AddText(String [, Integer])](bigtext-addtext-string-integer-method.md)|Adds a text string to a BigText variable.|
 |[AddText(BigText [, Integer])](bigtext-addtext-bigtext-integer-method.md)|Adds a text string to a BigText variable.|
 |[GetSubText(var Text, Integer [, Integer])](bigtext-getsubtext-text-integer-integer-method.md)|Gets part of a BigText variable.|
 |[GetSubText(var BigText, Integer [, Integer])](bigtext-getsubtext-bigtext-integer-integer-method.md)|Gets part of a BigText variable.|
+|[Length()](bigtext-length-method.md)|Retrieves the length of the text stored in this BigText instance.|
+|[Read(InStream)](bigtext-read-method.md)|Streams a BigText object that is stored as a BLOB in a table to a BigText variable.|
 |[TextPos(String)](bigtext-textpos-method.md)|Gets the position at which a specific string first occurs in this BigText instance.|
 |[Write(OutStream)](bigtext-write-method.md)|Streams a BigText object to a BLOB field in a table.|
-|[Read(InStream)](bigtext-read-method.md)|Streams a BigText object that is stored as a BLOB in a table to a BigText variable.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

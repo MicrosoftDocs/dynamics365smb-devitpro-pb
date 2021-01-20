@@ -2,7 +2,7 @@
 title: "Text.MaxStrLen Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 12/10/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,15 +14,17 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Text.MaxStrLen Method
-Gets the maximum defined length of a variant variable. Calling this method always results in a run-time exception.
+> **Version**: _Available from runtime version 1.0 until version 1.0 where it was deprecated._
+
+Gets the maximum defined length of a variant variable.
 
 
 ## Syntax
 ```
 MaxLength :=   Text.MaxStrLen(Variant: Variant)
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *Variant*  
 &emsp;Type: [Variant](../variant/variant-data-type.md)  
@@ -30,9 +32,9 @@ The source variant for which you want to find the maximum length.
 
 
 ## Return Value
-*MaxLength*  
-&emsp;Type: [Integer](../integer/integer-data-type.md)  
-The maximum length of the string variable.  
+*MaxLength*
+&emsp;Type: [Integer](../integer/integer-data-type.md)
+The maximum length of the string variable.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -55,7 +57,7 @@ begin
     City := Text000;  
     MaxLength := MaxStrLen(City);  
     Length := StrLen(City);  
-    MESSAGE(Text001 + Text002, MaxLength, Length);  
+    Message(Text001 + Text002, MaxLength, Length);  
 end;
 ```  
   

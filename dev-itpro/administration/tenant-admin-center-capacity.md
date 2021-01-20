@@ -1,5 +1,5 @@
 ---
-title: Managing Capacity | Microsoft Docs
+title: Managing Capacity
 description: Use the Business Central administration center to manage your tenant capacity 
 author: jswymer
 ms.service: dynamics365-business-central
@@ -8,7 +8,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox
-ms.date: 10/01/2020
+ms.date: 12/04/2020
 ms.author: jswymer
 ---
 
@@ -22,7 +22,7 @@ Customers can purchase additional database capacity and environments via their r
 
 ## Number of environments
 
-[!INCLUDE[prodshort](../developer/includes/prodshort.md)] administrators can create multiple sandbox and production type environments for various purposes, like:
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] administrators can create multiple sandbox and production type environments for various purposes, like:
 - Creating more business branches
 - Moving into more countries
 - Expanding within their current country
@@ -30,30 +30,33 @@ Customers can purchase additional database capacity and environments via their r
 - Testing changes
 - Learning new product capabilities
 
-Every [!INCLUDE[prodshort](../developer/includes/prodshort.md)] customer with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Premium or Essential subscriptions can use one production environment and three sandbox environments, at no extra charge.  
+Every [!INCLUDE[prod_short](../developer/includes/prod_short.md)] customer with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Premium or Essential subscriptions can use one production environment and three sandbox environments, at no extra charge.  
 
 > [!NOTE]
-> Existing customers with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Premium or Essentials subscriptions purchased before October 1st 2020 will keep their existing environment entitlements for a period of 1 year until October 1st 2021 or until their subscription is renewed or ended, whichever occurs last. This won't increase their overall database storage capacity and won't enable extra sandbox environments. These benefits are only activated with the production environments purchased by the customers separately.
+> Existing customers with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Premium or Essentials subscriptions purchased before October 1st 2020 will keep their existing environment entitlements for a period of 1 year until October 1st 2021 or until their subscription is renewed or ended, whichever occurs last. This won't increase their overall database storage capacity and won't enable extra sandbox environments. These benefits are only activated with the production environments purchased by the customers separately.
 
 Customers can also choose to purchase any number of additional production environments via their CSP partner. Each production environment comes with three additional sandbox environments.  
 
-Production and sandbox environments can be created and used in any country where [!INCLUDE[prodshort](../developer/includes/prodshort.md)] service is available, also in the country where the default [!INCLUDE[prodshort](../developer/includes/prodshort.md)] environments are located. Additional environments can be created by customers, administrators, and partners by using the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]. 
+Production and sandbox environments can be created and used in any country where [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service is available, also in the country where the default [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments are located. Additional environments can be created by customers, administrators, and partners by using the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]. 
 
-When customer administrators create users in Microsoft 365 Admin Center and assign them [!INCLUDE[prodshort](../developer/includes/prodshort.md)] licenses, each user, by default, gets access to all [!INCLUDE[prodshort](../developer/includes/prodshort.md)] environments (sandbox and production) under the same single [!INCLUDE[prodshort](../developer/includes/prodshort.md)] license, still acting within the scope of their license within each of these environments. Administrators can limit users' access to any particular environment by [changing their permissions](/dynamics365/business-central/ui-define-granular-permissions), or by [removing users' access](/dynamics365/business-central/ui-how-users-permissions#to-remove-a-users-access-to-the-system) within that environment. 
+When customer administrators create users in Microsoft 365 Admin Center and assign them [!INCLUDE[prod_short](../developer/includes/prod_short.md)] licenses, each user, by default, gets access to all [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments (sandbox and production) under the same single [!INCLUDE[prod_short](../developer/includes/prod_short.md)] license, still acting within the scope of their license within each of these environments. Administrators can limit users' access to any particular environment by [changing their permissions](/dynamics365/business-central/ui-define-granular-permissions), or by [removing users' access](/dynamics365/business-central/ui-how-users-permissions#to-remove-a-users-access-to-the-system) within that environment. 
 
 ## Storage
 
-Storage capacity usage of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is represented by **Database** and **File** on the **Capacity** page.  
+Storage capacity usage of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is represented by **Database** and **File** on the **Capacity** page.  
 
-[!INCLUDE[prodshort](../developer/includes/prodshort.md)] customers can use up to 80 GB of database storage capacity across all of their environments (production and sandbox), meaning that the sum of database capacity usage of all of their environments must not exceed 80 GB.  
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] customers can use up to 80 GB of database storage capacity across all of their environments (production and sandbox), meaning that the sum of database capacity usage of all of their environments must not exceed 80 GB.  
 
-Some businesses have unique scenarios that may require additional storage. For those organizations that need more space, there is an option to purchase extra database capacity as an add-on to their existing [!INCLUDE[prodshort](../developer/includes/prodshort.md)] subscriptions through their reselling CSP partner. Every add-on increases overall database capacity quota by 1 GB.  
+Some businesses have unique scenarios that may require additional storage. For those organizations that need more space, there is an option to purchase extra database capacity as an add-on to their existing [!INCLUDE[prod_short](../developer/includes/prod_short.md)] subscriptions through their reselling CSP partner. Every add-on increases overall database capacity quota by 1 GB.  
 
 Every additional production environment purchased by the customer also increases tenant-wide database capacity quota by 4 GB.  
 
+> [!TIP]
+> Use the **Capacity** page to help manage the migration when you migrate to [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online. That way, you know if your migration will bring you close to or over the current limits on database size, for example.
+
 #### Storage usage by environment
 
-The **Storage usage by environment** section of the **Capacity** page provides a tenant-level view of where your organization is using storage capacity. Here you can see how much database and file storage is used by each environment. For each of your environments, you can also navigate to the [Table Information page](/dynamics365/business-central/admin-view-table-information) within [!INCLUDE[prodshort](../developer/includes/prodshort.md)], which let's you see the distribution of data size across tables.
+The **Storage usage by environment** section of the **Capacity** page provides a tenant-level view of where your organization is using storage capacity. Here you can see how much database and file storage is used by each environment. For each of your environments, you can also navigate to the [Table Information page](/dynamics365/business-central/admin-view-table-information) within [!INCLUDE[prod_short](../developer/includes/prod_short.md)], which let's you see the distribution of data size across tables.
 
 > [!NOTE]
 > Only the environments running on version 17 (2020 release wave 2) and later are included in the database capacity calculations.  
@@ -74,7 +77,7 @@ Exceeding the paid database storage limit won't interrupt transaction processing
 
 However, once the capacity limits are exceeded, the customers won't be able to create new environments or copy their existing environments until the storage used by the existing environments is decreased to fit the quota or additional capacity is purchased.  
 
-Administrative actions are currently not limited by the File storage, however similar restrictions will be applied to the File storage with one of the next releases of [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
+Administrative actions are currently not limited by the File storage, however similar restrictions will be applied to the File storage with one of the next releases of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 ## Reducing Data Stored in Databases
 

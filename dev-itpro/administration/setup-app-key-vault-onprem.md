@@ -2,7 +2,7 @@
 title: Setting up App Key Vaults for Business Central on-premises
 description: Describes how to set up App Key Vault with Business Central on-premises.
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 01/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -10,13 +10,13 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
-# Setting up App Key Vaults for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] On-premises
+# Setting up App Key Vaults for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] On-premises
 
 [!INCLUDE[2020_releasewave2](../includes/2020_releasewave2.md)]
 
-[!INCLUDE[prodshort](../developer/includes/prodshort.md)] extensions can be developed to get secrets from Azure Keys Vaults. This article describes the tasks required to set up Azure Keys Vaults for storing extension secrets and configure them in your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] deployment.
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] extensions can be developed to get secrets from Azure Keys Vaults. This article describes the tasks required to set up Azure Keys Vaults for storing extension secrets and configure them in your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] deployment.
 
-For more information about developing extensions with key vaults, see [Using Key Vault Secrets in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Extensions](../developer/devenv-app-key-vault.md).
+For more information about developing extensions with key vaults, see [Using Key Vault Secrets in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Extensions](../developer/devenv-app-key-vault.md).
 
 ## Prerequisites
 
@@ -30,7 +30,7 @@ To complete the tasks in this article, you need:
 
     Later, you'll have to register and configure an application in Azure AD for reading key vaults. This step requires a certificate. The certificate is used to prove the application's identity when requesting upon request. For a production environment, obtain a certificate from a certification authority or trusted provider. 
 
-    In a test environment, if you don't have a certificate, then you can create your own self-signed certificate. For example, on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] server computer, start Windows PowerShell as an administrator. Then at the prompt, run the following commands:
+    In a test environment, if you don't have a certificate, then you can create your own self-signed certificate. For example, on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server computer, start Windows PowerShell as an administrator. Then at the prompt, run the following commands:
         
     ```powershell
     $cert = New-SelfSignedCertificate -Subject "BusinessCentralKeyVaultReader" -Provider "Microsoft Strong Cryptographic Provider"
@@ -72,7 +72,7 @@ The steps in this task are done from the [Azure portal](https://portal.azure.com
 
     <!--
         |Directory Access|Choose **Single Sign-On**.|
-            |App ID URI|The URI to a domain in your Azure AD tenant, such as *https://solutions.onmicrosoft.com/ExcelAddinforBusinessCentral*. **Important:**  The App ID URI must be unique within the Azure AD tenant and not the same as you specified for your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution.|
+            |App ID URI|The URI to a domain in your Azure AD tenant, such as *https://solutions.onmicrosoft.com/ExcelAddinforBusinessCentral*. **Important:**  The App ID URI must be unique within the Azure AD tenant and not the same as you specified for your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] solution.|
                 |Sign-on URL (App URL)|The URI for signing in to your [!INCLUDE[nav_web_server](../developer/includes/nav_web_server_md.md)], such as `https://www.solutions.com/BC`|
     -->
     When completed, the **Overview** displays in the portal for the new application.
@@ -104,16 +104,24 @@ At this point, the work in Azure is finished.
 
 Next, you configure the [!INCLUDE[server](../developer/includes/server.md)] instance to use the key vault reader application and its certificate, which you registered in Azure AD, for authenticating to the key vaults.
 
+If you're running a container-based environment, you have two options for configuring the server instance. You can either do it manually or use the Set-BcContainerKeyVaultAadAppAndCertificate script. Using the Set-BcContainerKeyVaultAadAppAndCertificate script is simpler and recommended. <!--See [Configure a container-based [!INCLUDE[server](../developer/includes/server.md)] instance](#script).-->
+
+### <a name="script"></a>Configure a container-based [!INCLUDE[server](../developer/includes/server.md)] instance
+
+If you are running a container-based environment, use the Set-BcContainerKeyVaultAadAppAndCertificate.ps1 script that is available in the NAV Container Helper GitHub repository at [https://github.com/microsoft/navcontainerhelper/blob/master/ContainerHandling/Set-BcContainerKeyVaultAadAppAndCertificate.ps1](https://github.com/microsoft/navcontainerhelper/blob/master/ContainerHandling/Set-BcContainerKeyVaultAadAppAndCertificate.ps1).
+
+### Manually configure a [!INCLUDE[server](../developer/includes/server.md)] instance
+
 To complete this task, you'll need the user name of the service account that runs the [!INCLUDE[server](../developer/includes/server.md)].
 
-1. If not already done, import your key vault certificate to the local certificate store for the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] server computer.
+1. If not already done, import your key vault certificate and its private keys to the local certificate store for the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server computer.
 
-    You can import the certificate either using the [MMC snap-in](/dotnet/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in) or [Import-Certificate cmdlet](/powershell/module/pkiclient/import-certificate) from a Windows PowerShell prompt.
+    You can import the certificate either using the [MMC snap-in](/dotnet/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in) or [Import-PfxCertificate cmdlet](/powershell/module/pkiclient/import-pfxcertificate) from a Windows PowerShell prompt.
 
     For example, the following PowerShell command installs a certificate to the local machine's personal store: 
     
       ```powershell
-      Import-Certificate -FilePath "C:\certificates\BusinessCentralKeyVaultReader.cer" -CertStoreLocation Cert:\LocalMachine\My
+      Import-PfxCertificate -FilePath "C:\certificates\BusinessCentralKeyVaultReader.pfx" -Password (ConvertTo-SecureString -String "pfxpassword" -AsPlainText -Force) -CertStoreLocation Cert:\LocalMachine\My\
       ```
 
 2. Give the service account used by the [!INCLUDE[server](../developer/includes/server.md)] instance permission to access the certificates private key.
@@ -144,11 +152,11 @@ To complete this task, you'll need the user name of the service account that run
     |Client Certificate Store Name<br />(AzureKeyVaultClientCertificateStoreName)|Set to the certificate store name where key vault certificate was stored.<br /><br />Example:<br />MY|
     |Client Certificate Thumbprint<br />(AzureKeyVaultClientCertificateThumbprint)|Set to the thumbprint for the key vault certificate.<br /><br />Example:<br />649419e4fbb87340f5a0f995e605b74c5f6d943e|
     |Client ID<br />(AzureKeyVaultClientId)|Set to the **Application (client) ID** of the key vault reader application registered in your Azure AD tenant.<br /><br />Example:<br />ed4129d9-b913-4514-83db-82e305163bec|
-    |Enable Publisher Validation<br />(AzureKeyVaultAppSecretsPublisherValidationEnabled)|Specifies whether extensions can only use key vaults that belong to their publishers. <br /><br />Enabling this setting (`true`) blocks attempts in AL to read secrets from another publisher's key vault. When extensions that use key vault secrets are published, you must provide your Azure AD tenant ID. <br /><br />**Important** We recommend that you only set it to `false` if you trust all extensions that will be installed. For more information, see [App Key Vaults - Security considerations](../developer/devenv-app-key-vault.md#security).<br /><br />Example:<br />true|
+    |Enable Publisher Validation<br />(AzureKeyVaultAppSecretsPublisherValidationEnabled)|Specifies whether extensions can only use key vaults that belong to their publishers. <br /><br />Enabling this setting (`true`) blocks attempts in AL to read secrets from another publisher's key vault. When extensions that use key vault secrets are published, you must provide your Azure AD tenant ID, which is done by using the [Publish-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/publish-navapp) with the `-PublisherAzureActiveDirectoryTenantId` parameter.<br /><br />**Important** We recommend that you only set it to `false` if you trust all extensions that will be installed. For more information, see [App Key Vaults - Security considerations](../developer/devenv-app-key-vault.md#security).<br /><br />Example:<br />true|
 
     You can configure the instance using the [[!INCLUDE[admintool](../developer/includes/admintool.md)]](administration-tool.md) or [Set-NAVServerConfiguration cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration).
       
-    To use the Set-NAVServerConfiguration cmdlet, start the [[!INCLUDE[admintool](../developer/includes/admintool.md)] as an administrator, and run the following commands one at a time. Replace brackets with your own values. 
+    To use the Set-NAVServerConfiguration cmdlet, start the [!INCLUDE[adminsehll](../developer/includes/adminshell.md)] as an administrator, and run the following commands one at a time. Replace brackets with your own values. 
 
     ```powershell
     Set-NAVServerConfiguration -ServerInstance <serverInstance> -KeyName AzureKeyVaultClientCertificateStoreLocation -KeyValue <certificate store location>    
@@ -164,11 +172,14 @@ To complete this task, you'll need the user name of the service account that run
     > Setting the `AzureKeyVaultAppSecretsPublisherValidationEnabled` to false means the server instance won't do any additional validation to ensure extensions have the right to read secrets from the key vaults that they specify. This condition implies some risk of unauthorized access to key vaults that you should be aware of. Please see the "Security considerations" section below for more details.
 -->
 
-At this point, you can run your extensions that use key vault secrets to read secrets from key vault.
+At this point, you can run your extensions that use key vault secrets to read secrets from key vault.  
+
+> [!TIP]
+> If your on-premises solution uses the [ImportStreamWithUrlAccess](../developer/methods-auto/system/system-importstreamwithurlaccess-method.md) method, you must have set up an Azure blob storage account and stored the account name and account keys in the current subscription's Azure KeyVault using the identifiers TEMPORARYDOCUMENTSTORAGEACCOUNT and TEMPORARYDOCUMENTSTORAGEKEY. That way, your users can use the integration with Outlook.
 
 ## See Also  
 
-[Using App Key Vaults with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Extensions](../developer/devenv-app-key-vault-overview.md)
+[Using App Key Vaults with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Extensions](../developer/devenv-app-key-vault-overview.md)  
 [Security Considerations With App Key Vaults](../developer/devenv-app-key-vault.md#security)  
 [Monitoring and Troubleshooting App Key Vaults](../developer/devenv-app-key-vault.md#troubleshooting)  
 [Authentication and Credential Types](Users-Credential-Types.md)  

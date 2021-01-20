@@ -2,7 +2,7 @@
 title: "Variant.IsText Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Variant.IsText Method
+> **Version**: _Available from runtime version 1.0._
+
 Indicates whether an AL variant contains a Text variable.
 
 
@@ -21,24 +23,24 @@ Indicates whether an AL variant contains a Text variable.
 ```
 Ok :=   Variant.IsText()
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 
 ## Parameters
-*Variant*  
-&emsp;Type: [Variant](variant-data-type.md)  
-An instance of the [Variant](variant-data-type.md) data type.  
+*Variant*
+&emsp;Type: [Variant](variant-data-type.md)
+An instance of the [Variant](variant-data-type.md) data type.
 
 ## Return Value
-*Ok*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the AL variant contains a Text variable, otherwise **false**.  
+*Ok*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+**true** if the AL variant contains a Text variable, otherwise **false**.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example  
- The following example determines whether an AL variant contains a text variable. The code initializes the MyText variable with a text value. The MyText variable is assigned to the variant variable that is named MyVariant. The **ISTEXT** method determines whether the variant contains a text variable and stores the return value in the varResult variable. In this case, the variant contains a text variable so **Yes** is returned and displayed in a message box. The **ISCODE** method determines whether the variant contains a code variable. The return value is **No** because the variant does not contain a code. 
+ The following example determines whether an AL variant contains a text variable. The code initializes the MyText variable with a text value. The MyText variable is assigned to the variant variable that is named MyVariant. The **IsText** method determines whether the variant contains a text variable and stores the return value in the varResult variable. In this case, the variant contains a text variable so **Yes** is returned and displayed in a message box. The **IsCode** method determines whether the variant contains a code variable. The return value is **No** because the variant does not contain a code. 
 
 ```  
 var
@@ -50,10 +52,10 @@ var
 begin
     MyText := 'This is some text';  
     MyVariant :=  MyText;  
-    varResult := MyVariant.ISTEXT;  
-    MESSAGE(Text000,MyVariant,varResult);  
-    varResult := MyVariant.ISCODE;  
-    MESSAGE(Text001,MyVariant,varResult);  
+    varResult := MyVariant.IsText;  
+    Message(Text000,MyVariant,varResult);  
+    varResult := MyVariant.IsCode;  
+    Message(Text001,MyVariant,varResult);  
 end;
 ```  
 

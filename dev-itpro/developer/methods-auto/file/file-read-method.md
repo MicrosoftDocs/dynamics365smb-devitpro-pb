@@ -2,7 +2,7 @@
 title: "File.Read Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # File.Read Method
+> **Version**: _Available from runtime version 1.0._
+
 Reads from an MS-DOS encoded file or binary file.
 
 > [!NOTE]
@@ -23,12 +25,12 @@ Reads from an MS-DOS encoded file or binary file.
 ```
 [Read := ]  File.Read(var Read: Any)
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
-*File*  
-&emsp;Type: [File](file-data-type.md)  
-An instance of the [File](file-data-type.md) data type.  
+*File*
+&emsp;Type: [File](file-data-type.md)
+An instance of the [File](file-data-type.md) data type.
 
 *Read*  
 &emsp;Type: [Any](../any/any-data-type.md)  
@@ -36,9 +38,9 @@ Streams a BigText object that is stored as a BLOB in a table to a BigText variab
 
 
 ## Return Value
-*Read*  
-&emsp;Type: [Integer](../integer/integer-data-type.md)  
- If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+*Read*
+&emsp;Type: [Integer](../integer/integer-data-type.md)
+ If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -67,7 +69,7 @@ Streams a BigText object that is stored as a BLOB in a table to a BigText variab
 begin
     TestFile.OPEN('C:\TestFolder\TestFile.txt');  
     varSize := TestFile.READ(String);  
-    MESSAGE('The text "%1" is %2 bytes.', String, varSize);  
+    Message('The text "%1" is %2 bytes.', String, varSize);  
 end;
 ```  
   

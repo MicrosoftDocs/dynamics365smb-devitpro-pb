@@ -2,7 +2,7 @@
 title: "XmlDocument.GetChildElements Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # XmlDocument.GetChildElements Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets a list containing the child elements for this document, in document order.
 
 
@@ -22,9 +24,9 @@ Gets a list containing the child elements for this document, in document order.
 ChildElements :=   XmlDocument.GetChildElements(LocalName: String, NamespaceUri: String)
 ```
 ## Parameters
-*XmlDocument*  
-&emsp;Type: [XmlDocument](xmldocument-data-type.md)  
-An instance of the [XmlDocument](xmldocument-data-type.md) data type.  
+*XmlDocument*
+&emsp;Type: [XmlDocument](xmldocument-data-type.md)
+An instance of the [XmlDocument](xmldocument-data-type.md) data type.
 
 *LocalName*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -36,9 +38,9 @@ The namespace URI of the elements to retrieve.
 
 
 ## Return Value
-*ChildElements*  
-&emsp;Type: [XmlNodeList](../xmlnodelist/xmlnodelist-data-type.md)  
-A list containing the child elements for this document, in document order.  
+*ChildElements*
+&emsp;Type: [XmlNodeList](../xmlnodelist/xmlnodelist-data-type.md)
+A list containing the child elements for this document, in document order.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

@@ -7,12 +7,12 @@ ms.date: 10/01/2020
 ms.reviewer: edupont
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.author: rweigel
+ms.author: freddyk
 ---
 
 # FAQ about Testing your Business Central App
 
-This section contains answers to frequently asked questions about testing your app when you submit an app for [!INCLUDE[prodshort](../includes/prodshort.md)].
+This section contains answers to frequently asked questions about testing your app when you submit an app for [!INCLUDE[prod_short](../includes/prod_short.md)].
 
 ## Since my app goes through validation, do I really need to thoroughly test my app?
 
@@ -24,11 +24,11 @@ No. Please do not submit your app for validation until it has been 100% tested. 
 
 ## Is it ok to test my AppSource app in an on-premises environment?
 
-No. You must test your app using [!INCLUDE[prodshort](includes/prodshort.md)] online. Although [!INCLUDE[prodshort](includes/prodshort.md)] online and on-premises are very similar, they are not the exact same. If you only test on-premises, invariably issues will be found in our validation testing.
+No. You must test your app using [!INCLUDE[prod_short](includes/prod_short.md)] online. Although [!INCLUDE[prod_short](includes/prod_short.md)] online and on-premises are very similar, they are not the exact same. If you only test on-premises, invariably issues will be found in our validation testing.
 
 ## Does it really matter what version of Business Central I test on before submitting my app for validation?
 
-Yes. It is critical that you always test on the latest version at the time when you are ready to submit for validation. Testing on the wrong version usually leads to validation failure. For example, let’s say the latest version of [!INCLUDE[prodshort](includes/prodshort.md)] is 15.4 at the time when you submit for validation You tested on 15.0. The product has changed between those versions, and deprecated features or other changes could result in your app behavior changing.
+Yes. It is critical that you always test on the latest version at the time when you are ready to submit for validation. Testing on the wrong version usually leads to validation failure. For example, let’s say the latest version of [!INCLUDE[prod_short](includes/prod_short.md)] is 15.4 at the time when you submit for validation You tested on 15.0. The product has changed between those versions, and deprecated features or other changes could result in your app behavior changing.
 
 We recommend that you consider using Docker containers. Use the `Get-BcArtifactUrl` function in the BCContainerHelper PowerShell module to give you the artifact URL for the latest sandbox build for the specified country. You don’t have to figure out what product version is active at time of submission. That function does it for you.
 

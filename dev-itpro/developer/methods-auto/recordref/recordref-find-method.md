@@ -2,7 +2,7 @@
 title: "RecordRef.Find Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # RecordRef.Find Method
+> **Version**: _Available from runtime version 1.0._
+
 Finds a record in a table based on the values stored in the key fields.
 
 
@@ -22,9 +24,9 @@ Finds a record in a table based on the values stored in the key fields.
 [Ok := ]  RecordRef.Find([Which: String])
 ```
 ## Parameters
-*RecordRef*  
-&emsp;Type: [RecordRef](recordref-data-type.md)  
-An instance of the [RecordRef](recordref-data-type.md) data type.  
+*RecordRef*
+&emsp;Type: [RecordRef](recordref-data-type.md)
+An instance of the [RecordRef](recordref-data-type.md) data type.
 
 *Which*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -39,9 +41,9 @@ You can combine the '=', '\>', and '\<' characters. If this parameter contains '
 
 
 ## Return Value
-*Ok*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+*Ok*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+**true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -66,10 +68,10 @@ begin
     MyFieldRef := CustomerRecref.FIELD(1);  
     MyFieldRef.VALUE := varCustomerNo;  
     if CustomerRecref.FIND('=') then begin  
-      MESSAGE(Text000 + Text001,  CustomerRecref.FIELD(1), CustomerRecref.FIELD(2));  
-      MESSAGE('Address: %1, %2',  CustomerRecref.FIELD(5),  CustomerRecref.FIELD(7));  
+      Message(Text000 + Text001,  CustomerRecref.FIELD(1), CustomerRecref.FIELD(2));  
+      Message('Address: %1, %2',  CustomerRecref.FIELD(5),  CustomerRecref.FIELD(7));  
     end else
-      MESSAGE(Text002);  
+      Message(Text002);  
 end;
 ```  
   

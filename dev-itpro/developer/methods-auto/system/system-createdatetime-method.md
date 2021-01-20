@@ -2,7 +2,7 @@
 title: "System.CreateDateTime Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # System.CreateDateTime Method
+> **Version**: _Available from runtime version 1.0._
+
 Creates a DateTime object from a date and a time.
 
 
@@ -21,8 +23,8 @@ Creates a DateTime object from a date and a time.
 ```
 Datetime :=   System.CreateDateTime(Date: Date, Time: Time)
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *Date*  
 &emsp;Type: [Date](../date/date-data-type.md)  
@@ -35,9 +37,9 @@ The time that you want to use to create a DateTime. You cannot use an undefined 
 
 
 ## Return Value
-*Datetime*  
-&emsp;Type: [DateTime](../datetime/datetime-data-type.md)  
-  
+*Datetime*
+&emsp;Type: [DateTime](../datetime/datetime-data-type.md)
+
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -50,7 +52,7 @@ var
     TestTime: Time;
     TestDateTime: DateTime;
 begin
-    TestDate := TODAY;  
+    TestDate := Today;  
     TestTime := TIME;  
     TestDateTime := CREATEDATETIME(TestDate,TestTime);  
     …  

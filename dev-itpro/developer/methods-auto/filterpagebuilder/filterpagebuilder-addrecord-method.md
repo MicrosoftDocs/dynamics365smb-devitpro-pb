@@ -2,7 +2,7 @@
 title: "FilterPageBuilder.AddRecord Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # FilterPageBuilder.AddRecord Method
+> **Version**: _Available from runtime version 1.0._
+
 Adds a filter control for a table to a filter page. The table is specified by a record data type variable that is passed to the method.
 
 
@@ -22,9 +24,9 @@ Adds a filter control for a table to a filter page. The table is specified by a 
 [Name := ]  FilterPageBuilder.AddRecord(Name: String, Record: Record)
 ```
 ## Parameters
-*FilterPageBuilder*  
-&emsp;Type: [FilterPageBuilder](filterpagebuilder-data-type.md)  
-An instance of the [FilterPageBuilder](filterpagebuilder-data-type.md) data type.  
+*FilterPageBuilder*
+&emsp;Type: [FilterPageBuilder](filterpagebuilder-data-type.md)
+An instance of the [FilterPageBuilder](filterpagebuilder-data-type.md) data type.
 
 *Name*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -36,10 +38,10 @@ The record to use in the filter control.
 
 
 ## Return Value
-*Name*  
-&emsp;Type: [String](../string/string-data-type.md)  
+*Name*
+&emsp;Type: [String](../string/string-data-type.md)
 The text that is specified by the Name parameter. If an error occurs at runtime, an empty text string is returned.
-       If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+       If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

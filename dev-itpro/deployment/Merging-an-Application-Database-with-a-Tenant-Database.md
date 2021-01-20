@@ -1,5 +1,6 @@
 ---
-title: "Merging an Application Database with a Tenant Database"
+title: "Migrating to Single-Tenancy From Multitenancy"
+description: Learn how to migrate from a single-tenant Business Central deployment to a multitenant deployment.
 ms.custom: na
 ms.date: 10/01/2020
 ms.reviewer: na
@@ -12,7 +13,7 @@ author: jswymer
 ---
 # Migrating to Single-Tenancy From Multitenancy
 
-With a multitenant deployment of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], you separate the application data into a dedicated application database, separate from the business data in the tenant database. If you want to revert a single-tenant deployment, you can revert the separation of application data and business data, merging the two databases. [!INCLUDE[prodshort](../developer/includes/prodshort.md)] includes [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] cmdlets that can help you merge the databases, and you can use the cmdlets in a script that runs in [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)]. This topic provides sample scripts that you can use.  
+With a multitenant deployment of [!INCLUDE[prod_short](../developer/includes/prod_short.md)], you separate the application data into a dedicated application database, separate from the business data in the tenant database. If you want to revert a single-tenant deployment, you can revert the separation of application data and business data, merging the two databases. [!INCLUDE[prod_short](../developer/includes/prod_short.md)] includes [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] cmdlets that can help you merge the databases, and you can use the cmdlets in a script that runs in [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)]. This topic provides sample scripts that you can use.  
   
 When you merge the two databases, you migrate to single-tenancy. In a multitenant deployment, you can merge a single tenant with the application tables and leave the remaining tenants in the existing deployment. In that case, you add the application tables to the relevant tenant database and leave the original application database unchanged. If you have separated the application data into a dedicated database but you have not used it in a multitenant deployment, you can also use the cmdlet and a sample script to merge the two databases.  
   
@@ -142,4 +143,4 @@ Write-Host "Operation complete." -foregroundcolor cyan
 ## See Also  
  [Migrating to Multitenancy](Migrating-to-Multitenancy.md)   
  [Separating Application Data from Business Data](Separating-Application-Data-from-Business-Data.md)   
-[Business Central Windows PowerShell Cmdlets](/powershell/business-central/overview.md)
+[Business Central Windows PowerShell Cmdlets](/powershell/business-central/overview)

@@ -2,7 +2,7 @@
 title: "FieldRef.GetRangeMin Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # FieldRef.GetRangeMin Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets the minimum value in a range for a field.
 
 
@@ -21,18 +23,18 @@ Gets the minimum value in a range for a field.
 ```
 Value :=   FieldRef.GetRangeMin()
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 
 ## Parameters
-*FieldRef*  
-&emsp;Type: [FieldRef](fieldref-data-type.md)  
-An instance of the [FieldRef](fieldref-data-type.md) data type.  
+*FieldRef*
+&emsp;Type: [FieldRef](fieldref-data-type.md)
+An instance of the [FieldRef](fieldref-data-type.md) data type.
 
 ## Return Value
-*Value*  
-&emsp;Type: [Any](../any/any-data-type.md)  
-  
+*Value*
+&emsp;Type: [Any](../any/any-data-type.md)
+
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -54,7 +56,7 @@ begin
     MyFieldRef := CustomerRecref.FIELD(1);  
     MyFieldRef.SETFILTER('10000..40000');  
     varMin := MyFieldRef.GETRANGEMIN();  
-    MESSAGE(Text000, varMin);  
+    Message(Text000, varMin);  
 end;
 ```  
   

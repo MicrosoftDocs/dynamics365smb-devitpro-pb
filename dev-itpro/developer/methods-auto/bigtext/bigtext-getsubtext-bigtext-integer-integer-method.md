@@ -2,7 +2,7 @@
 title: "BigText.GetSubText Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 12/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # BigText.GetSubText Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets part of a BigText variable.
 
 
@@ -22,9 +24,9 @@ Gets part of a BigText variable.
 [Length := ]  BigText.GetSubText(var Variable: BigText, Position: Integer [, Length: Integer])
 ```
 ## Parameters
-*BigText*  
-&emsp;Type: [BigText](bigtext-data-type.md)  
-An instance of the [BigText](bigtext-data-type.md) data type.  
+*BigText*
+&emsp;Type: [BigText](bigtext-data-type.md)
+An instance of the [BigText](bigtext-data-type.md) data type.
 
 *Variable*  
 &emsp;Type: [BigText](bigtext-data-type.md)  
@@ -41,9 +43,9 @@ The length of the sub text that should be retrieved. This parameter is optional.
 
 
 ## Return Value
-*Length*  
-&emsp;Type: [Integer](../integer/integer-data-type.md)  
-The length of the result text.  
+*Length*
+&emsp;Type: [Integer](../integer/integer-data-type.md)
+The length of the result text.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -70,7 +72,7 @@ var
   
 MyBigText.ADDTEXT('ABCDEFG');  
 MyBigText.GETSUBTEXT(VarSubText, 3, 2); // Returns CD.  
-MESSAGE(Text000, VarSubText);  
+Message(Text000, VarSubText);  
 ```  
   
 ## Example 2 
@@ -80,7 +82,7 @@ MESSAGE(Text000, VarSubText);
   
 MyBigText.ADDTEXT('ABCDEFG');  
 MyBigText.GETSUBTEXT(VarSubText, 0, 4); // Returns an error.  
-MESSAGE(Text000, VarSubText);  
+Message(Text000, VarSubText);  
   
 ```  
   
@@ -91,7 +93,7 @@ MESSAGE(Text000, VarSubText);
   
 MyBigText.ADDTEXT('ABCDEFG');  
 MyBigText.GETSUBTEXT(VarSubText, 5, -2); // Returns an error.  
-MESSAGE(Text000, VarSubText);  
+Message(Text000, VarSubText);  
 ```  
   
 ## Example 4 
@@ -101,7 +103,7 @@ MESSAGE(Text000, VarSubText);
   
 MyBigText.ADDTEXT('ABCDEFG');  
 MyBigText.GETSUBTEXT(VarSubText, 15, 4); // Returns an empty string.  
-MESSAGE(Text000, VarSubText);  
+Message(Text000, VarSubText);  
   
 ```  
   
@@ -112,7 +114,7 @@ MESSAGE(Text000, VarSubText);
   
 MyBigText.ADDTEXT('ABCDEFG');  
 MyBigText.GETSUBTEXT(VarSubText, 4, 15); // Returns DEFG.  
-MESSAGE(Text000, VarSubText);  
+Message(Text000, VarSubText);  
   
 ```  
 

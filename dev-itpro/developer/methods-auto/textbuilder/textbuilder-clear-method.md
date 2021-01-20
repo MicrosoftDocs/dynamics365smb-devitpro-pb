@@ -2,7 +2,7 @@
 title: "TextBuilder.Clear Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # TextBuilder.Clear Method
+> **Version**: _Available from runtime version 1.0._
+
 Removes all characters from the current TextBuilder instance.
 
 
@@ -23,9 +25,9 @@ Removes all characters from the current TextBuilder instance.
 ```
 
 ## Parameters
-*TextBuilder*  
-&emsp;Type: [TextBuilder](textbuilder-data-type.md)  
-An instance of the [TextBuilder](textbuilder-data-type.md) data type.  
+*TextBuilder*
+&emsp;Type: [TextBuilder](textbuilder-data-type.md)
+An instance of the [TextBuilder](textbuilder-data-type.md) data type.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

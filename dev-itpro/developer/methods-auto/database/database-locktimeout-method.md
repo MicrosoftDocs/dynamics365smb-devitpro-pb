@@ -2,7 +2,7 @@
 title: "Database.LockTimeout Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 12/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Database.LockTimeout Method
+> **Version**: _Available from runtime version 1.0._
+
 Determines whether the lock time-out setting is set to On. You can also use this method to override the default setting.
 
 
@@ -21,10 +23,10 @@ Determines whether the lock time-out setting is set to On. You can also use this
 ```
 [LockTimeout := ]  Database.LockTimeout([LockTimeout: Boolean])
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *LockTimeout*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
@@ -32,9 +34,9 @@ The new setting for whether the lock time-out is on.
 
 
 ## Return Value
-*LockTimeout*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-This value shows whether to use a lock time-out.  
+*LockTimeout*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+This value shows whether to use a lock time-out.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

@@ -38,7 +38,7 @@ A comma-separated list of warning numbers.
 When no warning numbers are specified, `disable` disables all warnings and `restore` enables all warnings.
 
 > [!NOTE]  
-> To find warning numbers in AL, build your AL project in Visual Studio Code and then look for the warning numbers in the **Output** window.
+> To find warning numbers in AL, build your AL project in Visual Studio Code and then look for the warning numbers in the **Output** window. For more information, see [Using the Code Analysis Tool](../devenv-using-code-analysis-tool.md).
 
 ## Example
 

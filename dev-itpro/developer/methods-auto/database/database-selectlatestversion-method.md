@@ -2,7 +2,7 @@
 title: "Database.SelectLatestVersion Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 12/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Database.SelectLatestVersion Method
+> **Version**: _Available from runtime version 1.0._
+
 Forces the latest version of the database to be used.
 
 
@@ -21,8 +23,8 @@ Forces the latest version of the database to be used.
 ```
  Database.SelectLatestVersion()
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 
 
 

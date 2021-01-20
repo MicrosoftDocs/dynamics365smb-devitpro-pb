@@ -2,7 +2,7 @@
 title: "Query.TopNumberOfRows Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Query.TopNumberOfRows Method
+> **Version**: _Available from runtime version 1.0._
+
 Specifies the maximum number of rows to include in the resulting data set of a query.
 
 
@@ -21,12 +23,12 @@ Specifies the maximum number of rows to include in the resulting data set of a q
 ```
 [CurrentRows := ]  Query.TopNumberOfRows([NewRows: Integer])
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 ## Parameters
-*Query*  
-&emsp;Type: [Query](query-data-type.md)  
-An instance of the [Query](query-data-type.md) data type.  
+*Query*
+&emsp;Type: [Query](query-data-type.md)
+An instance of the [Query](query-data-type.md) data type.
 
 *NewRows*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
@@ -35,9 +37,9 @@ The number of rows to include in the resulting data set. If you do not set the N
 
 
 ## Return Value
-*CurrentRows*  
-&emsp;Type: [Integer](../integer/integer-data-type.md)  
-Gets the current maximum number of rows included in the resulting data set  
+*CurrentRows*
+&emsp;Type: [Integer](../integer/integer-data-type.md)
+Gets the current maximum number of rows included in the resulting data set
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -105,7 +107,7 @@ codeunit 50100 MyQueryTop10
         // Saves the dataset as a CSV file.  
         MyQuery.SaveAsCsv('c:\temp\CustomerSales.csv');
         // Displays a message that shows the number of rows.  
-        MESSAGE(Text000, counter);
+        Message(Text000, counter);
 
     end;
 

@@ -1,13 +1,13 @@
 ---
 title: "Updates for the Business Central 2019 Release Wave 2 version"
 description: "Learn about the updates for Dynamics 365 Business Central 2019 Release Wave 2 on-premises deployments."
-author: MartinNielander
+author: jswymer
 ms.custom: na
 ms.reviewer: edupont
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.author: martinni
-ms.date: 10/01/2020
+ms.author: jswymer
+ms.date: 01/11/2021
 
 ---
 
@@ -27,7 +27,9 @@ The following table lists the updates that have been released for 2019 release w
 
 |Knowledge Base ID                                           |Title                |Release date  |Build No. |Local versions included |
 |------------------------------------------------------------|---------------------|--------------|----------|------------------------|
-|[4583512](https://support.microsoft.com/help/4583512)|Update 15.12|November 2020|Application Build 5.12.45390</br>Platform Build 15.0.45381|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
+|[4595150](https://support.microsoft.com/help/4595150)|Update 15.14|January 2021|Application Build 5.14.46107</br>Platform Build 15.0.46099|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
+|[4583552](https://support.microsoft.com/help/4583552)|Update 15.13|December 2020|Application Build 15.13.45740</br>Platform Build 15.0.45731|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
+|[4583512](https://support.microsoft.com/help/4583512)|Update 15.12|November 2020|Application Build 15.12.45390</br>Platform Build 15.0.45381|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
 |[4583500](https://support.microsoft.com/help/4583500)|Update 15.11|October 2020|Application Build 15.11.44966</br>Platform Build 15.0.44957|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
 |[4576663](https://support.microsoft.com/help/4576663)|Update 15.10|September 2020|Application Build 15.10.44664</br>Platform Build 15.10.44655|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
 |[4563414](https://support.microsoft.com/help/4563414)|Update 15.9|August 2020|Application Build 15.9.44343</br>Platform Build 15.0.44325|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|

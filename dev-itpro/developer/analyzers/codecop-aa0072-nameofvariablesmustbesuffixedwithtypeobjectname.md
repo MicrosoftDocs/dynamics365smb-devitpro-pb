@@ -1,9 +1,8 @@
 ---
 title: "The name of variables and parameters must be suffixed with the type or object name."
-description: Explains CodeCop Rule AA0072.
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/25/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,6 +20,11 @@ The name of variables and parameters must be suffixed with the type or object na
 To improve readability the name of variables and parameters must be suffixed with the type or object name.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+For more information about best practices for AL, including using suffixes, see [Best Practices for AL](../../compliance/apptest-bestpracticesforalcode.md).
+
 ## See Also  
 [CodeCop Analyzer](codecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  

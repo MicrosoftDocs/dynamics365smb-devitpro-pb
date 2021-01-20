@@ -38,7 +38,7 @@ If successful, this method returns a ```200 OK``` response code and list of  **c
 
 Here is an example of the request.
 ```json
-GET https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v1.0/companies({id})/configurationPackages
+GET https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({id})/configurationPackages
 ```
 
 **Response**
@@ -50,6 +50,7 @@ Here is an example of the response.
 
 ```json
 {
+    "id": "b6d25c66-f33d-eb11-846f-0022482037e2",
     "code": "MyRSPackage",
     "packageName": "SAMPLE",
     "languageId": 0,

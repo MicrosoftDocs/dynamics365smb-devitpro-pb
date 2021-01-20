@@ -2,7 +2,7 @@
 title: "System.ClosingDate Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # System.ClosingDate Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets the closing date for a Date Data Type.
 
 
@@ -21,8 +23,8 @@ Gets the closing date for a Date Data Type.
 ```
 ClosingDate :=   System.ClosingDate(Date: Date)
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *Date*  
 &emsp;Type: [Date](../date/date-data-type.md)  
@@ -30,9 +32,9 @@ The input date.
 
 
 ## Return Value
-*ClosingDate*  
-&emsp;Type: [Date](../date/date-data-type.md)  
-  
+*ClosingDate*
+&emsp;Type: [Date](../date/date-data-type.md)
+
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -58,7 +60,7 @@ var
 begin
     Date1 := 20140404D;  
     CloDate := CLOSINGDATE(Date1);  
-    MESSAGE(Text000, Date1, CloDate);  
+    Message(Text000, Date1, CloDate);  
 end;
 ```  
   
@@ -93,7 +95,7 @@ begin
     CloDate2 := CLOSINGDATE(CloDate1);  
     // The previous statement compiles.  
     // CloDate1 is a Date data type.  
-    MESSAGE(Text001, CloDate1, CloDate2);  
+    Message(Text001, CloDate1, CloDate2);  
 end;
 ```  
   

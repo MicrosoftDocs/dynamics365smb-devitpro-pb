@@ -2,7 +2,7 @@
 title: "RecordRef.Next Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # RecordRef.Next Method
+> **Version**: _Available from runtime version 1.0._
+
 Steps through a specified number of records and retrieves a record.
 
 
@@ -22,9 +24,9 @@ Steps through a specified number of records and retrieves a record.
 [Steps := ]  RecordRef.Next([Steps: Integer])
 ```
 ## Parameters
-*RecordRef*  
-&emsp;Type: [RecordRef](recordref-data-type.md)  
-An instance of the [RecordRef](recordref-data-type.md) data type.  
+*RecordRef*
+&emsp;Type: [RecordRef](recordref-data-type.md)
+An instance of the [RecordRef](recordref-data-type.md) data type.
 
 *Steps*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
@@ -32,9 +34,9 @@ Defines the direction of the search and how many records to step include. If thi
 
 
 ## Return Value
-*Steps*  
-&emsp;Type: [Integer](../integer/integer-data-type.md)  
-Defines the direction of the search and how many records to include.  
+*Steps*
+&emsp;Type: [Integer](../integer/integer-data-type.md)
+Defines the direction of the search and how many records to include.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -62,7 +64,7 @@ begin
       repeat  
         Count := Count + 1;  
       until CustomerRecref.NEXT = 0;  
-    MESSAGE(Text000 , Count);  
+    Message(Text000 , Count);  
 end;
 ``` 
 

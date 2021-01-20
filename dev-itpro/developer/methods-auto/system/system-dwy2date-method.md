@@ -2,7 +2,7 @@
 title: "System.DWY2Date Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # System.DWY2Date Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets a Date that is based on a week day, a week, and a year.
 
 
@@ -21,8 +23,8 @@ Gets a Date that is based on a week day, a week, and a year.
 ```
 Date :=   System.DWY2Date(WeekDay: Integer [, Week: Integer] [, Year: Integer])
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *WeekDay*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
@@ -38,9 +40,9 @@ The four-digit number of the year. If you omit this optional parameter, the year
 
 
 ## Return Value
-*Date*  
-&emsp;Type: [Date](../date/date-data-type.md)  
-  
+*Date*
+&emsp;Type: [Date](../date/date-data-type.md)
+
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -64,7 +66,7 @@ begin
     Week := 1;  
     Year := 2014;  
     OutputDate := DWY2DATE(DayOfWeek, Week, Year);  
-    MESSAGE(Text000, DayOfWeek, Week, Year, OutputDate);  
+    Message(Text000, DayOfWeek, Week, Year, OutputDate);  
 end;
 ```  
   
@@ -90,7 +92,7 @@ begin
     Week := 1;  
     Year := 2016;  
     OutputDate := DWY2DATE(DayOfWeek, Week, Year);  
-    MESSAGE(Text000, DayOfWeek, Week, Year, OutputDate);  
+    Message(Text000, DayOfWeek, Week, Year, OutputDate);  
 end;
 ```  
   
@@ -114,7 +116,7 @@ begin
     DayOfWeek := 1;  
     Week := 1;  
     OutputDate := DWY2DATE(DayOfWeek, Week);  
-    MESSAGE(Text000, DayOfWeek, Week, OutputDate);  
+    Message(Text000, DayOfWeek, Week, OutputDate);  
 end;
 ```  
   

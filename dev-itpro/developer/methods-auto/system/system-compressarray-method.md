@@ -2,7 +2,7 @@
 title: "System.CompressArray Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # System.CompressArray Method
+> **Version**: _Available from runtime version 1.0._
+
 Moves all non-empty strings (text) in an array to the beginning of the array. The resulting StringArray has the same number of elements as the input array, but empty entries appear at the end of the array.
 
 
@@ -21,8 +23,8 @@ Moves all non-empty strings (text) in an array to the beginning of the array. Th
 ```
 [Count := ]  System.CompressArray(StringArray: Array of [String])
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *StringArray*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -30,9 +32,9 @@ The string array that you want to compress.
 
 
 ## Return Value
-*Count*  
-&emsp;Type: [Integer](../integer/integer-data-type.md)  
-  
+*Count*
+&emsp;Type: [Integer](../integer/integer-data-type.md)
+
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -65,9 +67,9 @@ begin
     CustomerData[4] := '  '; // A non-empty string that contains blanks.  
     CustomerData[5] := 'Atlanta';  
     CustomerData[6] := ''; // Empty string.  
-    MESSAGE('Before compression the address is: \%1\%2\%3\%4\%5\%6', CustomerData[1], CustomerData[2], CustomerData[3], CustomerData[4], CustomerData[5], CustomerData[6]);  
+    Message('Before compression the address is: \%1\%2\%3\%4\%5\%6', CustomerData[1], CustomerData[2], CustomerData[3], CustomerData[4], CustomerData[5], CustomerData[6]);  
     COMPRESSARRAY(CustomerData); // The empty lines (strings) are removed.  
-    MESSAGE('After compression the address is: \%1\%2\%3\%4\%5\%6', CustomerData[1], CustomerData[2], CustomerData[3], CustomerData[4], CustomerData[5], CustomerData[6]);  
+    Message('After compression the address is: \%1\%2\%3\%4\%5\%6', CustomerData[1], CustomerData[2], CustomerData[3], CustomerData[4], CustomerData[5], CustomerData[6]);  
 end;
 ```  
   

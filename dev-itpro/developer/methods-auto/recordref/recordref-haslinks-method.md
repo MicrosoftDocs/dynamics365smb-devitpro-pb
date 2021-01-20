@@ -2,7 +2,7 @@
 title: "RecordRef.HasLinks Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # RecordRef.HasLinks Method
+> **Version**: _Available from runtime version 1.0._
+
 Determines whether a record contains any links.
 
 
@@ -21,18 +23,18 @@ Determines whether a record contains any links.
 ```
 Ok :=   RecordRef.HasLinks()
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 
 ## Parameters
-*RecordRef*  
-&emsp;Type: [RecordRef](recordref-data-type.md)  
-An instance of the [RecordRef](recordref-data-type.md) data type.  
+*RecordRef*
+&emsp;Type: [RecordRef](recordref-data-type.md)
+An instance of the [RecordRef](recordref-data-type.md) data type.
 
 ## Return Value
-*Ok*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the record contains any links, otherwise **false**.  
+*Ok*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+**true** if the record contains any links, otherwise **false**.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -54,7 +56,7 @@ begin
     MyFieldRef := CustomerRecref.FIELD(1);  
     MyFieldRef.VALUE := '20000';  
     varHasLinks := CustomerRecref.HASLINKS;  
-    MESSAGE(Text000, varHasLinks);  
+    Message(Text000, varHasLinks);  
 end;
 ```  
   

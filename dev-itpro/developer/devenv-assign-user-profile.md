@@ -13,11 +13,12 @@ ms.service: "dynamics365-business-central"
 ---
 
 # Assign a User to a Profile
+
 When you have created a profile, you can use the **User Personalization** page to assign a user to a profile.  
   
 ## Assigning a user to a profile  
 
-1. In the **Tell Me** box, enter **User Personalization**, and then choose the related link.  
+1. In [!INCLUDE[prod_short](includes/prod_short.md)], in the **Tell Me** box, enter **User Personalization**, and then choose the related link.  
 2. Choose **New** to open.
 3. In the **User Personalization** window, fill in the fields described in the following table.  
   
@@ -31,6 +32,7 @@ When you have created a profile, you can use the **User Personalization** page t
 > [!NOTE]  
 > The **Language ID** and **Company** values are overwritten by any user values when the user starts a session. 
   
-## See Also  
+## See Also
+
 [Profile Object](devenv-profile-object.md)  
 [Managing Users and Permissions](/dynamics365/business-central/ui-how-users-permissions)  

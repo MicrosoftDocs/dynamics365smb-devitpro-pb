@@ -2,7 +2,7 @@
 title: "RecordRef.CopyLinks Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # RecordRef.CopyLinks Method
+> **Version**: _Available from runtime version 1.0._
+
 Copies all the links from a particular record.
 
 
@@ -22,9 +24,9 @@ Copies all the links from a particular record.
  RecordRef.CopyLinks(FromRecord: RecordRef)
 ```
 ## Parameters
-*RecordRef*  
-&emsp;Type: [RecordRef](recordref-data-type.md)  
-An instance of the [RecordRef](recordref-data-type.md) data type.  
+*RecordRef*
+&emsp;Type: [RecordRef](recordref-data-type.md)
+An instance of the [RecordRef](recordref-data-type.md) data type.
 
 *FromRecord*  
 &emsp;Type: [RecordRef](recordref-data-type.md)  
@@ -58,7 +60,7 @@ begin
       repeat  
         Count := Count + 1;  
         CustomerRecref.COPYLINKS(VendorRecord);  
-        MESSAGE(Text000, CustomerRecref.RECORDID);  
+        Message(Text000, CustomerRecref.RECORDID);  
       until CustomerRecref.NEXT = 0;  
     CustomerRecref.CLOSE;  
 end;

@@ -2,7 +2,7 @@
 title: "FilterPageBuilder.Count Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # FilterPageBuilder.Count Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets the number of filter controls that are specified in the FilterPageBuilder object instance.
 
 
@@ -21,18 +23,18 @@ Gets the number of filter controls that are specified in the FilterPageBuilder o
 ```
 Count :=   FilterPageBuilder.Count()
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 
 ## Parameters
-*FilterPageBuilder*  
-&emsp;Type: [FilterPageBuilder](filterpagebuilder-data-type.md)  
-An instance of the [FilterPageBuilder](filterpagebuilder-data-type.md) data type.  
+*FilterPageBuilder*
+&emsp;Type: [FilterPageBuilder](filterpagebuilder-data-type.md)
+An instance of the [FilterPageBuilder](filterpagebuilder-data-type.md) data type.
 
 ## Return Value
-*Count*  
-&emsp;Type: [Integer](../integer/integer-data-type.md)  
-The number of filter controls in the current FilterPageBuilder object instance.  
+*Count*
+&emsp;Type: [Integer](../integer/integer-data-type.md)
+The number of filter controls in the current FilterPageBuilder object instance.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -48,8 +50,8 @@ var
 
 begin 
     varDateItem := 'Date record';  
-    varFilterPageBuilder.ADDTABLE(varDateItem + ' 1',DATABASE::Date);  
-    varFilterPageBuilder.ADDTABLE(varDateItem + ' 2',DATABASE::Date);  
+    varFilterPageBuilder.AddTable(varDateItem + ' 1',DATABASE::Date);  
+    varFilterPageBuilder.AddTable(varDateItem + ' 2',DATABASE::Date);  
     varCount := varFilterPageBuilder.COUNT;  
     if varCount <> 2 then   
       ERROR('There should be two controls in varFilterPageBuilder');

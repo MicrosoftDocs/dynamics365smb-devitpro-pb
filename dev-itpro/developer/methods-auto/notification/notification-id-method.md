@@ -2,7 +2,7 @@
 title: "Notification.Id Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/23/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Notification.Id Method
+> **Version**: _Available from runtime version 1.0._
+
 Specifies the identifier for a notification.
 
 
@@ -21,12 +23,12 @@ Specifies the identifier for a notification.
 ```
 [Id := ]  Notification.Id([Id: Guid])
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 ## Parameters
-*Notification*  
-&emsp;Type: [Notification](notification-data-type.md)  
-An instance of the [Notification](notification-data-type.md) data type.  
+*Notification*
+&emsp;Type: [Notification](notification-data-type.md)
+An instance of the [Notification](notification-data-type.md) data type.
 
 *Id*  
 &emsp;Type: [Guid](../guid/guid-data-type.md)  
@@ -34,9 +36,9 @@ An instance of the [Notification](notification-data-type.md) data type.
 
 
 ## Return Value
-*Id*  
-&emsp;Type: [Guid](../guid/guid-data-type.md)  
-  
+*Id*
+&emsp;Type: [Guid](../guid/guid-data-type.md)
+
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -52,7 +54,7 @@ The example uses a pre-defined ID so that the notification can be recalled.
 ```
 MyNotification.ID := '00000000-0000-0000-0000-000000000001';
 IF NewBallance > Rec. "Credit Limit" THEN BEGIN
-  MyNotification.MESSAGE := 'The customer's current balance exceeds their credit limit.';
+  MyNotification.Message := 'The customer's current balance exceeds their credit limit.';
   MyNotification.SCOPE := NOTIFICATIONSCOPE::LocalScope;
   MyNotification.ADDACTION('Fix it.', 50001, 'FixCustomerCreditLimit');
   MyNotification.SETDATA('CustomerNo.', Rec."No.");

@@ -2,7 +2,7 @@
 title: "Text.MaxStrLen Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Text.MaxStrLen Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets the maximum defined length of a string variable.
 
 
@@ -21,8 +23,8 @@ Gets the maximum defined length of a string variable.
 ```
 MaxLength :=   Text.MaxStrLen(String: String)
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *String*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -30,9 +32,9 @@ The string variable for which you want to find the maximum length.
 
 
 ## Return Value
-*MaxLength*  
-&emsp;Type: [Integer](../integer/integer-data-type.md)  
-The maximum length of the string variable.  
+*MaxLength*
+&emsp;Type: [Integer](../integer/integer-data-type.md)
+The maximum length of the string variable.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -53,7 +55,7 @@ begin
     City := Text000;  
     MaxLength := MAXSTRLEN(City);  
     Length := STRLEN(City);  
-    MESSAGE(Text001 + Text002, MaxLength, Length);  
+    Message(Text001 + Text002, MaxLength, Length);  
 end;
 ```  
   

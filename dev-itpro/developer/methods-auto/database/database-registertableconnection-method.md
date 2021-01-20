@@ -2,7 +2,7 @@
 title: "Database.RegisterTableConnection Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 12/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Database.RegisterTableConnection Method
+> **Version**: _Available from runtime version 1.0._
+
 Registers a table connection to an external database.
 
 
@@ -21,8 +23,8 @@ Registers a table connection to an external database.
 ```
  Database.RegisterTableConnection(Type: TableConnectionType, Name: String, Connection: String)
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *Type*  
 &emsp;Type: [TableConnectionType](../tableconnectiontype/tableconnectiontype-option.md)  

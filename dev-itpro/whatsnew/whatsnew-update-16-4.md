@@ -27,7 +27,7 @@ For a list of next wave release plans, see the [2020 release wave 2 release plan
 
 ## Upgrade to 16.4
 
-Please note that new customers will automatically get the latest builds of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] (16.4). If you are an existing partner/customer, you will receive an email notification as soon as your environment has been upgraded. 
+Please note that new customers will automatically get the latest builds of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] (16.4). If you are an existing partner/customer, you will receive an email notification as soon as your environment has been upgraded. 
 
 ## Good to know
 

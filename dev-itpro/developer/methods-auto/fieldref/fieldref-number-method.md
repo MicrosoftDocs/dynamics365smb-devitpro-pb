@@ -2,7 +2,7 @@
 title: "FieldRef.Number Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # FieldRef.Number Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets the number of a field as an integer.
 
 
@@ -21,18 +23,18 @@ Gets the number of a field as an integer.
 ```
 No :=   FieldRef.Number()
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 
 ## Parameters
-*FieldRef*  
-&emsp;Type: [FieldRef](fieldref-data-type.md)  
-An instance of the [FieldRef](fieldref-data-type.md) data type.  
+*FieldRef*
+&emsp;Type: [FieldRef](fieldref-data-type.md)
+An instance of the [FieldRef](fieldref-data-type.md) data type.
 
 ## Return Value
-*No*  
-&emsp;Type: [Integer](../integer/integer-data-type.md)  
-  
+*No*
+&emsp;Type: [Integer](../integer/integer-data-type.md)
+
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -54,7 +56,7 @@ begin
     repeat  
       FieldIndex  := FieldIndex + 1;  
       MyFieldRef := LocationRecref.FIELDINDEX(FieldIndex);  
-      MESSAGE('Field Number: %1  Field Caption: %2.' , MyFieldRef.NUMBER, MyFieldRef.CAPTION);  
+      Message('Field Number: %1  Field Caption: %2.' , MyFieldRef.NUMBER, MyFieldRef.CAPTION);  
     until FieldIndex = 10;  
 end;
 ```  

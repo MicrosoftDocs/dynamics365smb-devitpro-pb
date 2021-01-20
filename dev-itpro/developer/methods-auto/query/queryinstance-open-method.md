@@ -2,7 +2,7 @@
 title: "Query.Open Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Query.Open Method
+> **Version**: _Available from runtime version 1.0._
+
 Runs a query object and generates a data set that can be read. The following code shows the syntax of the OPEN method. Query is a variable of the Query data type that specifies the query object.
 
 
@@ -23,14 +25,14 @@ Runs a query object and generates a data set that can be read. The following cod
 ```
 
 ## Parameters
-*Query*  
-&emsp;Type: [Query](query-data-type.md)  
-An instance of the [Query](query-data-type.md) data type.  
+*Query*
+&emsp;Type: [Query](query-data-type.md)
+An instance of the [Query](query-data-type.md) data type.
 
 ## Return Value
-*Ok*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+*Ok*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+**true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -97,7 +99,7 @@ begin
     // Stops reading when there are no more rows remaining in the dataset (READ is FALSE).  
     while MyQuery.READ do  
     begin  
-      MESSAGE(Text000, MyQuery.Name, MyQuery.Quantity);  
+      Message(Text000, MyQuery.Name, MyQuery.Quantity);  
     end;  
     MyQuery.CLOSE;  
 end;

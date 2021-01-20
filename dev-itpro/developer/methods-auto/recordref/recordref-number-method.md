@@ -2,7 +2,7 @@
 title: "RecordRef.Number Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # RecordRef.Number Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets the table ID (number) of the table that contains the record that was referred to by the RecordRef.
 
 
@@ -21,18 +23,18 @@ Gets the table ID (number) of the table that contains the record that was referr
 ```
 No :=   RecordRef.Number()
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 
 ## Parameters
-*RecordRef*  
-&emsp;Type: [RecordRef](recordref-data-type.md)  
-An instance of the [RecordRef](recordref-data-type.md) data type.  
+*RecordRef*
+&emsp;Type: [RecordRef](recordref-data-type.md)
+An instance of the [RecordRef](recordref-data-type.md) data type.
 
 ## Return Value
-*No*  
-&emsp;Type: [Integer](../integer/integer-data-type.md)  
-The table ID of the table that contains the record that was referred to by the RecordRef.  
+*No*
+&emsp;Type: [Integer](../integer/integer-data-type.md)
+The table ID of the table that contains the record that was referred to by the RecordRef.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -53,7 +55,7 @@ begin
     varDatabaseName := DATABASE::Customer;  
     MyRecordRef.OPEN(varDatabaseName);  
     varTableNumber := MyRecordRef.NUMBER;  
-    MESSAGE(Text000, MyRecordRef.CAPTION, varTableNumber);  
+    Message(Text000, MyRecordRef.CAPTION, varTableNumber);  
 end;
   
 ```  

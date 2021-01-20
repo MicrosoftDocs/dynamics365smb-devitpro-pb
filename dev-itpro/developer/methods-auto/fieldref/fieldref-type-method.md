@@ -2,7 +2,7 @@
 title: "FieldRef.Type Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # FieldRef.Type Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets the data type of the field that is currently selected.
 
 
@@ -21,18 +23,18 @@ Gets the data type of the field that is currently selected.
 ```
 Type :=   FieldRef.Type()
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 
 ## Parameters
-*FieldRef*  
-&emsp;Type: [FieldRef](fieldref-data-type.md)  
-An instance of the [FieldRef](fieldref-data-type.md) data type.  
+*FieldRef*
+&emsp;Type: [FieldRef](fieldref-data-type.md)
+An instance of the [FieldRef](fieldref-data-type.md) data type.
 
 ## Return Value
-*Type*  
-&emsp;Type: [FieldType](../fieldtype/fieldtype-option.md)  
-  
+*Type*
+&emsp;Type: [FieldType](../fieldtype/fieldtype-option.md)
+
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -51,7 +53,7 @@ begin
     CustomerRecref.OPEN(DATABASE::Customer);  
     for i := 1 to 5 do begin  
       MyFieldRef := CustomerRecref.FIELD(i);  
-      MESSAGE(Text000, i, MyFieldRef.TYPE);  
+      Message(Text000, i, MyFieldRef.TYPE);  
     end;  
 END;
   

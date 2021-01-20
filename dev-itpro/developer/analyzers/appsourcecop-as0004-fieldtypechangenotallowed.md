@@ -1,9 +1,8 @@
 ---
 title: "Fields must not change type, since dependent extensions may break"
-description: Explains AppSourceCop Rule AS0004
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/25/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,7 +25,11 @@ The validation of the length of table fields was previously done with [AS0004](a
 - [AS0080](appsourcecop-as0080-fieldlengthdecreasenotallowed.md) - which validates against decreasing the length of fields
 - [AS0086](appsourcecop-as0086-fieldlengthincreasenotallowed.md) - which validates against increasing the length of fields
 
-## See Also  
+> [!NOTE]  
+> This rule validates all fields independently of their Accessibility or ObsoleteState, because they are used when synchronizing the schema defined in the extension to the database.
+
+## See Also
+
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+[Developing Extensions](../devenv-dev-overview.md)

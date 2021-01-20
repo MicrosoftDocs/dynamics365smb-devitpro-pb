@@ -21,7 +21,7 @@ This document describes how administrators can turn on new features using the Fe
 
 Some new features can be enabled ahead of time on sandbox and production environments. This capability allows you to benefit as early as possible from feature improvements and innovative new features. It gives you the time you need to test and prepare your organization for change.
 
-When Microsoft releases features or feature design improvements as part of minor updates, some features aren't immediately enabled. Administrators can learn about these features and independently enable each feature from the **Feature Management** page. Once a feature is enabled, it becomes available for all users on that environment no matter how they access [!INCLUDE[prodshort](../includes/prodshort.md)].
+When Microsoft releases features or feature design improvements as part of minor updates, some features aren't immediately enabled. Administrators can learn about these features and independently enable each feature from the **Feature Management** page. Once a feature is enabled, it becomes available for all users on that environment no matter how they access [!INCLUDE[prod_short](../includes/prod_short.md)].
 
 These features are only optional for a while. The option period typically starts from the minor update in which they're made generally available. The period ends when the features become mandatory and are automatically enabled in a later major update. To see the approximate date and service update when each feature is expected to become mandatory, see the **Automatically enabled from** field in the **Feature Management** page. After this date, the feature will no longer appear in the Feature Management page and can no longer be turned off.
 
@@ -53,10 +53,18 @@ As soon as you enable the feature, any user that signs in to that environment ex
 
 ## Features that can't be turned off
 
-Some features or feature improvements may permanently affect the state and capabilities of [!INCLUDE[prodshort](../includes/prodshort.md)] and can't be safely reverted. These irreversible features can't be turned off again after they've been enabled. Before you enable an irreversible feature on a production environment, we recommend that you first enable and evaluate it on a sandbox environment that has a copy of production data.
+Some features or feature improvements may permanently affect the state and capabilities of [!INCLUDE[prod_short](../includes/prod_short.md)] and can't be safely reverted. These irreversible features can't be turned off again after they've been enabled. Before you enable an irreversible feature on a production environment, we recommend that you first enable and evaluate it on a sandbox environment that has a copy of production data.
 
 > [!NOTE]
 > When you choose to enable an irreversible feature, a warning dialog that describes the consequences is displayed. Choose **Yes** to proceed with permanently enabling the feature on that environment.
+
+## Scheduling Data Updates for New Features
+Enabling application features that change the user experience or update data can be a disruptive process, and you might want to go at your own pace by scheduling an update per company, for example, for a time that is after your users have been trained for the new experiences. 
+
+You can schedule a data update on the **Feature Management** page by choosing the **Schedule**action, or by choosing **All Users** in the **Enable for** column. Both of those actions start the **Feature Data Update** setup guide, which allows you to review the affected data and schedule the update process. When the data update process is completed, the feature is enabled in the company where you ran the data update.
+
+> [!NOTE]
+> For a feature that requires data update, data is created based on the data for the existing feature. The data for the existing feature may remain available, however, it is not synchronized with data for the new feature. Therefore, we recommend that you use one feature or the other, but not both.
 
 ## FAQ about Feature Management
 
@@ -82,7 +90,7 @@ No. Users and administrators don't receive any in-app or email notifications abo
 
 #### Do these features show in the Microsoft 365 admin center Message center?
 
-At this time, new [!INCLUDE[prodshort](../includes/prodshort.md)] features are not listed in Message center.  
+At this time, new [!INCLUDE[prod_short](../includes/prod_short.md)] features are not listed in Message center.  
 
 #### How is feature management different to the Early Access program?
 
@@ -90,7 +98,7 @@ The Early Access program that is used by some Dynamics 365 apps makes a large se
 
 #### How is feature management different to preview environments?
 
-Preview environments are [!INCLUDE[prodshort](../includes/prodshort.md)] online sandbox environments that include all new platform and application features that will later be made available with the major update. The most significant difference is that a preview environment includes all new features bundled together. You don't have the opportunity to select which feature to enable and test. 
+Preview environments are [!INCLUDE[prod_short](../includes/prod_short.md)] online sandbox environments that include all new platform and application features that will later be made available with the major update. The most significant difference is that a preview environment includes all new features bundled together. You don't have the opportunity to select which feature to enable and test. 
 
 #### How is feature management different to Application Areas?
 
@@ -122,5 +130,5 @@ Yes. You can turn optional features on or off in a similar way.
 ## See also
 
 [New and planned features](https://aka.ms/Dynamics365ReleasePlan)  
-[Administration of [!INCLUDE[prodshort](../includes/prodshort.md)] Online](tenant-administration.md)  
-[Major updates of [!INCLUDE[prodshort](../includes/prodshort.md)] Online](update-rollout-timelime.md)  
+[Administration of [!INCLUDE[prod_short](../includes/prod_short.md)] Online](tenant-administration.md)  
+[Major updates of [!INCLUDE[prod_short](../includes/prod_short.md)] Online](update-rollout-timelime.md)  

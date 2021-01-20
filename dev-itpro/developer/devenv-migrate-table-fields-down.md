@@ -1,8 +1,9 @@
 ---
 title: "Moving Tables and Fields to Extensions Down the Dependency Graph"
+description: Explains how to move tables and fields from an extension to another extension that is down the dependency graph.
 author: jswymer
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 10/28/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,6 +27,10 @@ The steps in this article are based on the example illustrated in the following 
 ![Data migration](media/data-migration-tables-fields.png "data migration") 
 
 In the example, **TableB** and **Field C-2** are customizations. You'll keep these elements in the original extension, but create a new version without **TableA** and **TableC**. You'll move **TableA** and **TableC** down the dependency chain to a new, separate extension.
+
+## Prerequisite
+
+If you're moving [enum type](../developer/devenv-extensible-enums.md) fields, then your solution must be running on [!INCLUDE[prod_short](../includes/prod_short.md)] 2020 release wave 1, version 16.5 or later. For more information, see [Known Issues](../upgrade/known-issues.md#enum).
 
 ## Create receiving extension (Ext Y)
 
@@ -67,7 +72,7 @@ The receiving extension will contain the table and fields that you want to move.
 
     - Ensure that `"target": "OnPrem"`.
     - Increase the `"version"` value.
-    - In the `""dependencies"` parameter, set up a dependency on the new receiving extension **Ext Y**.
+    - In the `"dependencies"` parameter, set up a dependency on the new receiving extension **Ext Y**.
 
     For more information, see [App.json file](devenv-json-files.md#Appjson).
 3. Complete the following steps for **TableC**.

@@ -2,7 +2,7 @@
 title: "Dialog.Message Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Dialog.Message Method
+> **Version**: _Available from runtime version 1.0._
+
 Displays a text string in a message window.
 
 
@@ -21,8 +23,8 @@ Displays a text string in a message window.
 ```
  Dialog.Message(String: String [, Value: Any,...])
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *String*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -69,7 +71,7 @@ begin
         // The backslash indicates a new line.  
         // You can concatenate strings using the + operator.  
         // You can insert variable values using the % symbol.  
-        MESSAGE(Text000 + Text001 + '%1\' + Text002 + '%2\', Number, Text);
+        Message(Text000 + Text001 + '%1\' + Text002 + '%2\', Number, Text);
     end;
 
 

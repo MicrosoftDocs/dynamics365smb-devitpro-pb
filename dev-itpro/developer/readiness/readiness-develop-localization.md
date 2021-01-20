@@ -69,8 +69,8 @@ Apart from [fulfilling the technical checklist for your app](../devenv-checklist
 * Setup data RapidStart package for the localization app.
 * [Translation of a localization app to local language(s)](../devenv-work-with-translation-files.md) and base app if you are the first partner enabling localization for the country (Learn more about [Dynamics Translation Services](/dynamics365/unified-operations/fin-ops-core/dev-itpro/lifecycle-services/translation-service-overview)).
 * Translation of the localization app's documentation. For more information, see [Translate the Help](../../user-assistance.md#translate-the-help) and [Translate documentation files](/dynamics365/unified-operations/dev-itpro/lifecycle-services/use-translation-service-ua).
-* National Standard Features (local part) are recommended to be built as additional [add-on apps](readiness-add-on-apps.md) or [connect apps](readiness-connect-apps.md) – separate from the localization app.
-* Market Required and Local Competitive Features are recommended to be built as additional [add-on apps](readiness-add-on-apps.md) or [connect apps](readiness-connect-apps.md) – separate from the localization app.
+* National Standard Features (local part) are recommended to be built as an [app](opportunity-app-publisher.md) – separate from the localization app.
+* Market Required and Local Competitive Features are recommended to be built as an [app](opportunity-app-publisher.md) – separate from the localization app.
 * Using .NET assemblies in your localization app will fail in the technical validation of an app. Instead, contribute to [C/AL Open Library](https://github.com/Microsoft/cal-open-library) GitHub repository with requests you have for .NET.
 * It is recommended to logically break down the full local functionality set, at a minimum within the above categories. This approach provides optimal flexibility for customers to choose what they really need in terms of local functionality while making sure critical pieces of local functionality do not break upgrade processes nor are upgrade heavy.
 * The majority of customers in the local market will need most of the local regulatory features. In the category of local regulatory features there will be some features that, even though they are legally required, apply to companies of a certain size, revenue threshold etc. Such situations are opportunities to further logically break down localization apps into smaller focused-functionality sets.
@@ -86,19 +86,15 @@ Apart from [fulfilling the technical checklist for your app](../devenv-checklist
 * If you're converting an existing localization (developed in C/AL) to localization apps (check this [video](https://mbspartner.microsoft.com/D365/Videos/101769)(requires PartnerSource access)), as described in technical checklist for your app, you'll need to set the ApplicationArea property on UI elements that you want to make visible in Business Central. To help you with that use [NAVApplicationAreaHelper powershell command let](https://blogs.msdn.microsoft.com/nav/2018/06/06/navapplicationareahelper/) to do this in bulk.  
 
 > [!NOTE]  
-> You can also create Connect apps if you find it beneficial to have some functionality placed outside the [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] environment and instead connect to [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] using for example APIs or Web services.
+> You can also create an integration if you find it beneficial to have some functionality placed outside the [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] environment and instead connect to [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] using for example APIs or Web services.
 
 > [!NOTE]  
 > If you have questions for building localization apps, please contact the [Microsoft localization team](mailto:d365bcloc@microsoft.com).
 
-Also, consider joining the [Ready to Go](readiness-ready-to-go.md) program for assistance on bringing you localization apps to AppSource.
-
 ## See Also
 
-[Build Your Business on Dynamics 365 Business Central](readiness-welcome.md)  
-[Business Central Learning Catalog](https://go.microsoft.com/fwlink/?linkid=2002101)  
-[Integrate a 3rd Party Solution](readiness-thirdparty-solution.md)  
-[Development of a Vertical Solution](readiness-develop-vertical.md)  
-[Development of a Horizontal Solution](readiness-develop-horizontal.md)  
-[Resell Different Solutions](readiness-reseller.md)  
+[Get Started with Building Apps](get-started.md)  
+[The SMB Opportunity for App Publishers](opportunity-app-publisher.md)  
+[Get Started as a Reseller of Business Central Online](../../administration/get-started-online.md)  
 [Countries and Translations Supported](../../compliance/apptest-countries-and-translations.md)  
+[Business Central Learning Catalog](https://go.microsoft.com/fwlink/?linkid=2002101)  

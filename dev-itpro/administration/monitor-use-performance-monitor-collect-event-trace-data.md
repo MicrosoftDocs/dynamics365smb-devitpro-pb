@@ -13,7 +13,7 @@ caps.latest.revision: 14
 # How to: Use Performance Monitor to Collect Event Trace Data
 This topic describes how to use Windows Performance Monitor to collect event trace data for [!INCLUDE[server](../developer/includes/server.md)]. To collect trace event data, you create a Data Collector Set, and then start the Data Collector Set.  
   
-## Create a Data Collector Set for collecting [!INCLUDE[prodshort](../developer/includes/prodshort.md)] trace event data  
+## Create a Data Collector Set for collecting [!INCLUDE[prod_short](../developer/includes/prod_short.md)] trace event data  
   
 1.  Start Windows Performance Monitor.  
   

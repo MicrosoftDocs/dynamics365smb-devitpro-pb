@@ -41,9 +41,9 @@ Occurs when the company has been successfully created.
 |---------|-----|
 |aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
 |clientType|Specifies the type of client that executed the SQL Statement, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
-|companyName|Specifies the display name of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] company.|
+|companyName|Specifies the display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company.|
 |component|**Dynamics 365 Business Central Server**|
-|componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number.|
+|componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
 |environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
 |environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
@@ -52,7 +52,7 @@ Occurs when the company has been successfully created.
 |serverExecutionTime|Specifies the amount of time it took the server to create the company. The time has the format hh:mm:ss.sssssss.|
 |sqlExecutes|Specifies the number of SQL statements that were executed.|
 |sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.|
-|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
+|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 |totalTime|Specifies the amount of time it took to create the company. The time has the format hh:mm:ss.sssssss.|
 
 <!--
@@ -76,9 +76,9 @@ Occurs when creating a company was canceled.
 |---------|-----|
 |aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
 |clientType|Specifies the type of client that executed the SQL Statement, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
-|companyName|Specifies the display name of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] company.|
+|companyName|Specifies the display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company.|
 |component|**Dynamics 365 Business Central Server**.|
-|componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number.|
+|componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
 |environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 |eventId|**LC0002**|
@@ -87,7 +87,7 @@ Occurs when creating a company was canceled.
 |serverExecutionTime|Specifies the amount of time it took the server create the company before being canceled. The time has the format hh:mm:ss.sssssss.|
 |sqlExecutes|Specifies the number of SQL statements that were executed by the operation.|
 |sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.|
-|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
+|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 |totalTime|Specifies the amount of time used to create the company before being canceled. The time has the format hh:mm:ss.sssssss.|
 
 ## Company creation failed
@@ -107,9 +107,9 @@ Occurs when a company failed to be created.
 |---------|-----|
 |aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
 |clientType|Specifies the type of client that executed the SQL Statement, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
-|companyName|Specifies the display name of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] company.|
+|companyName|Specifies the display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company.|
 |component|**Dynamics 365 Business Central Server**.|
-|componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number.|
+|componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
 |environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 |eventId|**LC0003**|
@@ -118,7 +118,7 @@ Occurs when a company failed to be created.
 |serverExecutionTime|Specifies the amount of time it took the server create the company before it failed. The time has the format hh:mm:ss.sssssss.|
 |sqlExecutes|Specifies the number of SQL statements that were executed by the operation.|
 |sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.|
-|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
+|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 |totalTime|Specifies the amount of time used to create the company before it failed. The time has the format hh:mm:ss.sssssss.|
 
 <!--
@@ -143,9 +143,9 @@ Occurs when a company has been copied from another company successfully.
 |aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
 |clientType|Specifies the type of client that executed the SQL Statement, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
 |companyNameDestination|Specifies the name of the new company.|
-|companyNameSource|Specifies the name of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] company.|
+|companyNameSource|Specifies the name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company.|
 |component|**Dynamics 365 Business Central Server**.|
-|componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number.|
+|componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
 |environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 |eventId|**LT0004**|
@@ -153,7 +153,7 @@ Occurs when a company has been copied from another company successfully.
 |serverExecutionTime|Specifies the amount of time it took the server to copy the company. The time has the format hh:mm:ss.sssssss.|
 |sqlExecutes|Specifies the number of SQL statements that were executed by the operation.|
 |sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.|
-|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
+|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 |totalTime|Specifies the amount of time it took to copy the company. The time has the format hh:mm:ss.sssssss.|
 
 <!--
@@ -177,9 +177,9 @@ Occurs when a copying a company was canceled.
 |---------|-----|
 |aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
 |clientType|Specifies the type of client that executed operation, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
-|companyName|Specifies the display name of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] company.|
+|companyName|Specifies the display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company.|
 |component|**Dynamics 365 Business Central Server**.|
-|componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number.|
+|componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 |eventId|**LC0005**|
 |failureReason|**Operation was canceled**. |
@@ -187,7 +187,7 @@ Occurs when a copying a company was canceled.
 |serverExecutionTime|Specifies the amount of time it took the server to copy the company. The time has the format hh:mm:ss.sssssss.|
 |sqlExecutes|Specifies the number of SQL statements that were executed. |
 |sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.|
-|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
+|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 |totalTime|Specifies the amount of time used to do the operation. The time has the format hh:mm:ss.sssssss.|
 
 <!--
@@ -211,9 +211,9 @@ Occurs when a company failed to be copied from another company.
 |---------|-----|
 |aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
 |clientType|Specifies the type of client that executed the SQL Statement, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
-|companyName|Specifies the display name of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] company.|
+|companyName|Specifies the display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company.|
 |component|**Dynamics 365 Business Central Server**.|
-|componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number.|
+|componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 |eventId|**LC0006**|
 |failureReason|Specifies the exception that indicates the cause of the failure.|
@@ -221,7 +221,7 @@ Occurs when a company failed to be copied from another company.
 |serverExecutionTime|Specifies the amount of time on the server. The time has the format hh:mm:ss.sssssss.|
 |sqlExecutes|Specifies the number of SQL statements that were executed.|
 |sqlRowsRead|Specifies the number of table rows that by the SQL statements.|
-|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
+|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 |totalTime|Specifies the amount of time used to create the company before it failed. The time has the format hh:mm:ss.sssssss.|
 
 <!--
@@ -245,16 +245,16 @@ Occurs when a company has been deleted successfully.
 |---------|-----|
 |aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
 |clientType|Specifies the type of client that executed the SQL Statement, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
-|companyName|Specifies the display name of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] company.|
+|companyName|Specifies the display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company.|
 |component|**Dynamics 365 Business Central Server**.|
-|componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number.|
+|componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 |eventId|**LC0007**|
 |result|**Success**|
 |serverExecutionTime|Specifies the amount of time it took on server. The time has the format hh:mm:ss.sssssss.|
 |sqlExecutes|Specifies the number of SQL statements that the operation executed.|
 |sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.|
-|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
+|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 |totalTime|Specifies the amount of time it took to delete the company. The time has the format hh:mm:ss.sssssss.|
 
 
@@ -281,9 +281,9 @@ Occurs when deleting a company failed was canceled.
 |---------|-----|
 |aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
 |clientType|Specifies the type of client that executed the SQL Statement, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
-|companyName|Specifies the display name of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] company.|
+|companyName|Specifies the display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company.|
 |component|**Dynamics 365 Business Central Server**.|
-|componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number.|
+|componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 |eventId|**LC0008**|
 |failureReason|**Operation was canceled**|
@@ -291,7 +291,7 @@ Occurs when deleting a company failed was canceled.
 |serverExecutionTime|Specifies the amount of time it took on server. The time has the format hh:mm:ss.sssssss.|
 |sqlExecutes|Specifies the number of SQL statements that executed by the operation.|
 |sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.|
-|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
+|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 |totalTime|Specifies the amount of time used to delete the company before being canceled. The time has the format hh:mm:ss.sssssss.|
 
 ## Company deletion failed
@@ -311,9 +311,9 @@ Occurs when a company failed to be deleted.
 |---------|-----|
 |aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
 |clientType|Specifies the type of client that executed the SQL Statement, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
-|companyName|Specifies the display name of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] company.|
+|companyName|Specifies the display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company.|
 |component|**Dynamics 365 Business Central Server**.|
-|componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number.|
+|componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 |eventId|**LC0009**|
 |failureReason|Specifies the exception that caused the failure.|
@@ -321,7 +321,7 @@ Occurs when a company failed to be deleted.
 |serverExecutionTime|Specifies the amount of time it took on server. The time has the format hh:mm:ss.sssssss.|
 |sqlExecutes|Specifies the number of SQL statements that executed by the operation.|
 |sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.|
-|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
+|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 |totalTime|Specifies the amount of time used to delete the company before it failed. The time has the format hh:mm:ss.sssssss.|
 
 

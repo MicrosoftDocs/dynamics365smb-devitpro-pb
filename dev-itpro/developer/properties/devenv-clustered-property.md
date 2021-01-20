@@ -1,24 +1,30 @@
 ---
 title: "Clustered Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.assetid: 78bf605e-99ae-40b3-8c93-f46c2c808e64
-caps.latest.revision: 4
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Clustered Property
+> **Version**: _Available from runtime version 1.0._
 
-Sets a value that indicates whether the index is clustered.  
-  
-## Applies to  
+Sets a value that indicates whether the key also defines the clustered index in the database.  
 
-Table keys  
+By default the primary key is configured as the clustered key.
+
+## Applies to
+-   Table Key
+
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 > [!NOTE]  
 > The `Clustered` property cannot be used in table extension objects.
@@ -45,6 +51,7 @@ The following example defines a secondary key to be a clustered index.
 ```AL
 keys
 {
+    // the first key defined in the keys section is the primary key
     key(PrimaryKey; ID)
     {
         Clustered = false;

@@ -2,7 +2,7 @@
 title: "JsonObject.SelectToken Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # JsonObject.SelectToken Method
+> **Version**: _Available from runtime version 1.0._
+
 Selects a JsonToken using a JPath expression.
 
 
@@ -22,9 +24,9 @@ Selects a JsonToken using a JPath expression.
 [Ok := ]  JsonObject.SelectToken(Path: String, var Result: JsonToken)
 ```
 ## Parameters
-*JsonObject*  
-&emsp;Type: [JsonObject](jsonobject-data-type.md)  
-An instance of the [JsonObject](jsonobject-data-type.md) data type.  
+*JsonObject*
+&emsp;Type: [JsonObject](jsonobject-data-type.md)
+An instance of the [JsonObject](jsonobject-data-type.md) data type.
 
 *Path*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -35,9 +37,9 @@ A JsonToken variable that will contain the result if the operation is successful
 
 
 ## Return Value
-*Ok*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the read was successful; otherwise, **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+*Ok*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+**true** if the read was successful; otherwise, **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -79,6 +81,9 @@ begin
     salary := salaryToken.AsValue().AsDecimal();    
 end;
 ```
+> [!NOTE]
+> Ensure that the selected expression contains ' (single quotation mark) and not " (double quotation mark) to decorate the string value.
+
 
 ## See Also
 [JsonObject Data Type](jsonobject-data-type.md)  

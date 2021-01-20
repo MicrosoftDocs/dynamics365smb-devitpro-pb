@@ -2,7 +2,7 @@
 title: "RecordRef.Close Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # RecordRef.Close Method
+> **Version**: _Available from runtime version 1.0._
+
 Closes the current page or table.
 
 
@@ -23,9 +25,9 @@ Closes the current page or table.
 ```
 
 ## Parameters
-*RecordRef*  
-&emsp;Type: [RecordRef](recordref-data-type.md)  
-An instance of the [RecordRef](recordref-data-type.md) data type.  
+*RecordRef*
+&emsp;Type: [RecordRef](recordref-data-type.md)
+An instance of the [RecordRef](recordref-data-type.md) data type.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -46,7 +48,7 @@ begin
     for i := 3 TO 10 do begin  
         MyRecordRef.OPEN(i);  
         varCaption := MyRecordRef.CAPTION;  
-        MESSAGE(Text000, i, varCaption);  
+        Message(Text000, i, varCaption);  
         MyRecordRef.CLOSE;  
     end; 
 end; 

@@ -2,7 +2,7 @@
 title: "Text.InsStr Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Text.InsStr Method
+> **Version**: _Available from runtime version 1.0._
+
 Inserts a substring into a string.
 
 
@@ -21,8 +23,8 @@ Inserts a substring into a string.
 ```
 NewString :=   Text.InsStr(String: String, SubString: String, Position: Integer)
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *String*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -38,9 +40,9 @@ Specifies where to insert SubString. Position must be greater than or equal to 1
 
 
 ## Return Value
-*NewString*  
-&emsp;Type: [String](../string/string-data-type.md)  
-The input string including the specified substring  
+*NewString*
+&emsp;Type: [String](../string/string-data-type.md)
+The input string including the specified substring
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -65,9 +67,9 @@ var
 begin
     Str := Text000;  
     SubString := Text001;  
-    MESSAGE(Text002, Str);  
+    Message(Text002, Str);  
     NewString := INSSTR(Str, SubString, 13);  
-    MESSAGE(Text003, NewString);  
+    Message(Text003, NewString);  
 end;
 ```  
   

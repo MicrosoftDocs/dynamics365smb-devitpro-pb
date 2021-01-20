@@ -3,7 +3,7 @@ title: "Deprecated Features in W1"
 description: describes the features that have been moved, removed, or replaced in the W1 version 
 author: bholtorf
 ms.custom: na
-ms.date: 11/05/2020
+ms.date: 01/12/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,40 +14,66 @@ caps.latest.revision: 16
 ---
 
 # Deprecated Features in W1
-This article describes the features that have been moved, removed, or replaced in the W1 version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. This information will change with future releases, and might not include each deprecated feature.
+This article describes the features that have been moved, removed, or replaced in the W1 version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. This information will change with future releases, and might not include each deprecated feature.
 
-Deprecated features won't be available in future versions of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], which can happen for different kinds of reasons. <!--Should we talk about how long we're obligated to provide support for previous versions? --> For example, a feature may no longer be relevant, or something better may have become available. If you use a feature that is listed, either the feature itself or an extension of it, you should look for or develop an alternative.
+Deprecated features won't be available in future versions of [!INCLUDE[prod_short](../developer/includes/prod_short.md)], which can happen for different kinds of reasons. <!--Should we talk about how long we're obligated to provide support for previous versions? --> For example, a feature may no longer be relevant, or something better may have become available. If you use a feature that is listed, either the feature itself or an extension of it, you should look for or develop an alternative.
 
 The next sections give a brief description of the deprecated features, state what happened to the feature, and explain why. The following table gives a few examples of what we mean by "moved, removed, or replaced."
 
 |State  |Examples  |
 |---------|---------|
 |Moved     |The capability has been moved from local functionality to W1 because it was no longer specific to one or more country versions. The capability was combined with other related functionality to eliminate redundancy.|
-|Removed| The capability will be removed from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in a coming release.|
+|Removed| The capability will be removed from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] in a coming release.|
 |Replaced  |Something better has become available, and will be used instead.|
 
-## Deprecated Features in 2021 release wave 1
+## Changes in 2022 release wave 1
+
+### <a name="accesskeys"></a>Web Service Access Keys (Basic Auth) for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Online (SaaS)
+
+The following feature will be **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 1.
+
+|Moved, Removed, or Replaced? |Why?|
+|---------|---------|
+|Removed (for SaaS only)| The capability to access web services in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] using Web Service Access Key (Basic Auth) is deprecated for SaaS. OAuth2 will be the authentication option for SaaS. OAuth samples are published in the [BCTech repo](https://github.com/microsoft/BCTech/tree/master/samples/PSOAuthBCAccess). For on-premises, Web Service Access Key (Basic Auth) will remain an option for the time being. This change has no impact on how [!INCLUDE[prod_short](../developer/includes/prod_short.md)] connects to external services.|
+
+## Changes in 2021 release wave 2
+
+### Standard APIs, Beta version
+
+The following feature will be **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 2.
+
+
+|Moved, Removed, or Replaced? |	Why?|
+|-----------------------------|-----|
+|Removed | Beta version of the standard APIs will be removed by 2021 release wave 2. At this point, Beta APIs will not be available in new releases of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. There are many improvements to v1.0 and v2.0 of the standard APIs. Improvements include more APIs, better performance and improved OData capabilities. It's recommended that integrations move to v2.0 of the standard APIs.|
+
+### Automation APIs, Beta version
+
+The following feature will be **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 2.
+
+
+|Moved, Removed, or Replaced?|	Why?|
+|----------------------------|------|
+|Removed | Beta version of the Automation APIs will be removed by 2021 release wave 2. At this point, Automation Beta APIs will not be available in new releases of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. It's recommended that integrations move to v2.0 of the Automation APIs.|
+
+
+## Changes in 2021 release wave 1
 
 ### Expose UI pages as SOAP endpoints (Warning)
-In [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2021 release wave 1, a warning will be shown if you expose UI pages as SOAP endpoints. The capability of exposing UI pages as SOAP endpoints will be removed in a later release.
+
+In [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1, a warning will be shown if you expose UI pages as SOAP endpoints. The capability of exposing UI pages as SOAP endpoints will be removed in a later release.
 
 |Moved, Removed, or Replaced? |Why?|
 |---------|---------|
-|Replaced | SOAP has been superseded by OData V4. SOAP endpoints will be deprecated as of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2021 release wave 1, but the feature won't be removed in this release. It's recommended that integrations are migrated to OData V4 as soon as possible.|
+|Replaced | SOAP has been superseded by OData V4. SOAP endpoints will be deprecated as of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1, but the feature won't be removed in this release. It's recommended that integrations are migrated to OData V4 as soon as possible.|
 
-### OData V3 
-The following feature will be Removed with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2021 release wave 1.
+### OData V3
 
-|Moved, Removed, or Replaced? |Why?|
-|---------|---------|
-|Removed | OData V3 has been superseded by OData v4. OData V3 will be deprecated as of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2021 release wave 1. It's recommended that integrations are migrated to OData v4 as soon as possible.  |
-
-### Basic Auth / Web Service Access Keys for SaaS 
-The following feature will be Removed with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2021 release wave 1.
+The following feature will be **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1.
 
 |Moved, Removed, or Replaced? |Why?|
 |---------|---------|
-|Removed (for SaaS)| The capability to access web services in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] using Basic Auth will be deprecated for SaaS. OAuth2 will be the only authentication option for SaaS. OAuth flows that are currently supported are **Implicit** and **Auth Token**. Efforts are being made for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2020 release wave 2, to support OAuth flows, that will support Service to Service auth flows. For on-premises, Basic Auth will remain an option for the time being. This change has no impact on how [!INCLUDE[prodshort](../developer/includes/prodshort.md)] connects to external services.|
+|Removed | OData V3 has been superseded by OData v4. OData V3 is deprecated, and will be removed as of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1. It's recommended that integrations are migrated to OData v4 as soon as possible.  |
 
 ## Deprecated Features in 2020 release wave 1
 The following feature was marked as obsolete:pending in 2020 release wave 1.
@@ -63,14 +89,14 @@ When you have recorded special prices and line discounts for sales and purchases
 The following sections describe the features that were deprecated in 2019 release wave 2.
 
 ### The Bank Data Conversion Service
-You can use the bank data conversion service from AMC to convert bank data from an XML file that you export from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] into a format that your bank can accept.
+You can use the bank data conversion service from AMC to convert bank data from an XML file that you export from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] into a format that your bank can accept.
 
 |Moved, Removed, or Replaced?|Why?|
 |----|----|
 |Moved|The functionality has been moved to an extension. It now ships as the AMC Banking 365 Fundamentals extension, which can convert bank data to formats that are used by more than 600 banks worldwide. For more information, see [Using the AMC Banking 365 Fundamentals extension](/dynamics365/business-central/ui-extensions-amc-banking).|
 
 ### The Windows Client
-You can use [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in the Windows client that is installed on your computer.
+You can use [!INCLUDE[prod_short](../developer/includes/prod_short.md)] in the Windows client that is installed on your computer.
 
 |Moved, Removed, or Replaced?|Why?|
 |----|----|
@@ -95,7 +121,7 @@ The reports in the 204-207 range are replaced by the following updated reports i
 <!--This is just stubbed in. Need the actual names of the reports and a better description of the information they provided.-->
 
 ### User Personalizations and Profile Configurations
-You can personalize pages and configure profiles by adding or removing fields, and [!INCLUDE[prodshort](../developer/includes/prodshort.md)] will save your changes.
+You can personalize pages and configure profiles by adding or removing fields, and [!INCLUDE[prod_short](../developer/includes/prod_short.md)] will save your changes.
 
 |Moved, Removed, or Replaced? |Why?|
 |---------|---------|
@@ -116,7 +142,7 @@ You can print documents such as invoices automatically, without prompting the us
 |Removed| This feature was tied to the Windows Client, which is no longer available. |
 
 ## Objects that have been marked as obsolete
-Part of deprecating features is marking the objects that comprise them as "obsolete." Before we deprecate an object, we tag it as "obsolete:pending" to alert our partners of it's deprecation. The object will have the tag for one year before we remove it from [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
+Part of deprecating features is marking the objects that comprise them as "obsolete." Before we deprecate an object, we tag it as "obsolete:pending" to alert our partners of it's deprecation. The object will have the tag for one year before we remove it from [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 <!--should probably mention the other tags too. For example, "after one year we will mark the object as "ObsoleteState:Removed."-->
 
 ## Breaking Changes
@@ -124,7 +150,7 @@ When we move, remove, or replace an object, breaking changes can result in other
 
 ## Features that are available only in the online version
 <!--Should we include a section about this?-->
-Some features are available only under very specific circumstances, or not at all intended for use in on-premises versions of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. For a list and descriptions of those features, see [Features not implemented in on-premises deployments](/dynamics365/business-central/dev-itpro/features-not-implemented-on-premises).
+Some features are available only under very specific circumstances, or not at all intended for use in on-premises versions of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. For a list and descriptions of those features, see [Features not implemented in on-premises deployments](/dynamics365/business-central/dev-itpro/features-not-implemented-on-premises).
 
 ## See Also
 [AlAppExtensions repository](https://github.com/microsoft/ALAppExtensions)
