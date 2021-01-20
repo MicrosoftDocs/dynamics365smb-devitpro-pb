@@ -72,7 +72,7 @@ The default value of the `breakOnRecordWrite` property is **false**, which means
 
 ## Debugging large size variable values
 
-Variables that contain values that are larger than 1024 bytes are truncated (`…`) and cannot be fully inspected from the **VARIABLES** window. In order to inspect a large size variable value, instead use the **DEBUG CONSOLE** and write the name of the variable to inspect at the prompt and then press **Enter**.
+Variables that contain values that are larger than 1024 bytes are truncated (`…`) and cannot be fully inspected from the **VARIABLES** window. In order to inspect a large size variable value, instead use the **DEBUG CONSOLE** and write the name or qualified name of a variable to inspect at the prompt and then press **Enter**.
 
 ## Attach and Debug Next
 
