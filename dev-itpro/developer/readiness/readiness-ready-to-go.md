@@ -91,4 +91,5 @@ The Dynamics 365 blog for Business Decision Makers: [cloudblogs.microsoft.com/
 
 ### See Also 
 Get started with developing apps: [aka.ms/BCPublisher](https://aka.ms/bcpublisher)
+
 Get started with reselling apps: [aka.ms/BCReseller](https://aka.ms/bcreseller)  
