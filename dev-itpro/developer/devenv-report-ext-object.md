@@ -16,6 +16,8 @@ ms.author: solsen
 
 With the report extension object, you can extend existing report objects, for example, by adding fields to the report dataset and modifying the report layout to reflect the new fields. Or, you can simply change the layout of an existing report by adding an extension object that provides a new layout.
 
+
+
 > [!NOTE]  
 > Extension objects can have a name with a maximum length of 30 characters. 
 
@@ -27,9 +29,48 @@ Typing the shortcut `treportext` will create the basic layout for a report exten
 
 ## Report extension example
 
-The following example is an extension of the ...
+The following example illustrates a table extension which adds a new field to the `Customer` table, `MyField`. The report extension `MyExtension` then adds the new field as well as an additional field in original `Customer` table.
 
 ```AL
+tableextension 50110 CustomerTableExt extends Customer
+{
+    fields
+    {
+        field(50100; MyField; Integer)
+        {
+            DataClassification = ToBeClassified;
+
+        }
+    }
+}
+```
+
+```al
+reportextension 50110 MyExtension extends "Customer - Top 10 List"
+{
+    dataset
+    {
+        add(Integer)
+        {
+            // add existing field from base table to dataset
+            column(fromBaseTable; Customer.GLN) { }
+            // add field from table extending Customer
+            column(fromBaseTableExt; Customer.MyField) { }
+        }
+    }
+
+    requestpage
+    {
+        layout
+        {
+            addafter(Show)
+            {
+                // add field from table extension to request page
+                field(fromBaseTableExt; Customer.myField) { }
+            }
+        }
+    }
+}
 
 ```
 
