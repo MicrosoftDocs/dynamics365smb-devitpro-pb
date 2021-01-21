@@ -15,6 +15,9 @@ author: SusanneWindfeldPedersen
 
 Try methods in AL enable you to handle errors that occur in the application during code execution. For example, with try methods, you can provide more user-friendly error messages to the end user than those thrown by the system.  
 
+> [!NOTE]
+> Try Methods are available from runtime version 2.0.
+
 ## Behavior and usage
 
 The main purpose of try methods is to catch errors/exceptions that are thrown by [!INCLUDE[prod_short](includes/prod_short.md)] or exceptions that are thrown during .NET Framework interoperability operations. Try methods catch errors similar to a conditional Codeunit.Run method call, except try method calls do not require that write transactions are committed to the database, and changes to the database that are made with a try method are not rolled back.
