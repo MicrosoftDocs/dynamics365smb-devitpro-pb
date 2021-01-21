@@ -31,7 +31,7 @@ end;
 
 ## Remarks
 
-This trigger is introduced with version ? to address issues that arise when, for example, more items have the same Description. With former solutions, the lookup mechanism would find the selected record based on the filtering in the lookup dialog. This made it impossible to predict which record the user had selected.
+This trigger is introduced with runtime 7.0 to address issues that arise when, for example, more items have the same Description. With former solutions, the lookup mechanism would find the selected record based on the filtering in the lookup dialog. This made it impossible to predict which record the user had selected.
 
 ## See Also  
 
