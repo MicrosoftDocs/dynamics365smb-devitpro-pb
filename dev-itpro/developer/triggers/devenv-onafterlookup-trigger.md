@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 
 # OnAfterLookup Trigger
 
-Runs after a field in a lookup has been selected and the lookup is closed. This trigger is only called in when `TableRelation` is set. 
+Runs after a field in a lookup has been selected and the lookup is closed. This trigger is only called when a `TableRelation` is defined. 
 
 ## Applies to
 
