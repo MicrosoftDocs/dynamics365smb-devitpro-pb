@@ -33,6 +33,73 @@ end;
 
 This trigger is introduced with runtime 7.0 to address issues that arise when, for example, more items have the same Description. With former solutions, the lookup mechanism would find the selected record based on the filtering in the lookup dialog. This made it impossible to predict which record the user had selected.
 
+## Example
+
+```al
+
+table 37 "Sales Line"
+{
+    // Skipped
+
+    fields
+    {
+        // Skipped
+
+        field(6; "No."; Code[20])
+        {
+            TableRelation = Item;
+        }
+        field(11; Description; Text[100])
+        {
+            TableRelation = Item.Description;
+            ValidateTableRelation = false;
+        }
+
+        // Skipped
+    }
+}
+
+page 46 "Sales Order Subform"
+{
+    SourceTable = "Sales Line";
+
+    layout
+    {
+        area(content)
+        {
+            repeater(Control1)
+            {
+                // Skipped 
+
+                field("No."; "No.")
+                {
+                    trigger OnAfterLookup(Selected: RecordRef)
+                    var
+                        Item: record Item;
+                    begin
+                        Selected.SetTable(Item);
+                        Validate(Description, Item.Description);
+                    end;
+                }
+                field(Description; Description)
+                {
+
+                    trigger OnAfterLookup(Selected: RecordRef)
+                    var
+                        Item: record Item;
+                    begin
+                        Selected.SetTable(Item);
+                        Validate("No.", Item."No.");
+                    end;
+                }
+                // Skipped
+            }
+        }
+    }
+}
+
+```
+
 ## See Also  
 
 [Triggers](devenv-triggers.md)  
