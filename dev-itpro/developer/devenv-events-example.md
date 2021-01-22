@@ -55,8 +55,8 @@ pageextension 50100 MyCustomerExt extends "Customer Card"
 
 codeunit 50101 MySubscribers
 {
-    //Set the event subscribers to manual binding;
-    EventSubscriberInstance = Manual;
+    //Set the event subscribers to bind automatically to the event
+    EventSubscriberInstance = StaticAutomatic;
 
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"MyPublishers", 'OnAddressLineChanged', '', true, true)]
     procedure CheckAddressLine(line: Text[100]);
