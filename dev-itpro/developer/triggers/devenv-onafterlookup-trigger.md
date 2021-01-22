@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 
 # OnAfterLookup Trigger
 
+[!INCLUDE [2021_releasewave1](../../includes/2021_releasewave1.md)]
+
 Runs after a field in a lookup has been selected and the lookup is closed. 
 
 > [!NOTE]  
