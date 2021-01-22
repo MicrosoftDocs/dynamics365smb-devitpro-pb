@@ -14,6 +14,8 @@ ms.author: solsen
 
 # Report Extension Object
 
+[!INCLUDE [2021_releasewave1](../includes/2021_releasewave1.md)]
+
 With the report extension object, you can extend existing report objects, for example, by adding fields to the report dataset and modifying the report layout to reflect the new fields. Or, you can simply change the layout of an existing report by adding an extension object that provides a new layout.
 
 

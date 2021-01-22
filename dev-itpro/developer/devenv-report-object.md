@@ -22,6 +22,8 @@ For more information about defining database tables and fields, see [Defining a 
 
 You build the layout of a report by arranging data items and columns, and specifying the general format, such as text font and size. There are two types of report layouts; client report definition, also called RDL layouts and Word layouts. RDL layouts are defined in Visual Studio Report Designer or Microsoft SQL Server Reporting Services Report Builder. Word layouts are created using Word. Word layouts are based on a Word document that includes a custom XML part representing the report dataset. 
 
+If you want to modify an existing report; add new fields, or simply modify the layout, you can create a report extension instead. For more information, see [Report Extension Object](devenv-report-ext-object.md).
+
 > [!NOTE]  
 > Extension objects can have a name with a maximum length of 30 characters. 
 
@@ -222,6 +224,8 @@ report 50103 "Customer List"
 ```
 
 ## See Also
+
+[Report Extension Object](devenv-report-ext-object.md)  
 [Request Pages](devenv-request-pages.md)  
 [Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md)  
 [Creating a Word Layout Report](devenv-howto-report-layout.md)  
