@@ -3,7 +3,7 @@ title: "Table and Field Triggers"
 description: "Table and field triggers in AL for Business Central."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 01/22/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -44,7 +44,7 @@ Fields have the following triggers.
 |-------------------|-------------------|  
 |[OnValidate (Fields) Trigger](devenv-onvalidate-fields-trigger.md)|Data is entered in a field or when the [Validate (Record) method](../methods-auto/record/record-validate-method.md) is run.|  
 |[OnLookup (Fields) Trigger](devenv-onlookup-fields-trigger.md)|Lookup is activated.|  
-|[OnAfterLookup (Fields) Trigger](devenv-onafterlookup-trigger.md)||
+|[OnAfterLookup (Fields) Trigger](devenv-onafterlookup-trigger.md)|Field is selected and lookup is closed.|
 |[OnBeforeValidate (Fields) Trigger](devenv-onbeforevalidate-fields-trigger.md)|Before data is entered in a field.|
 |[OnAfterValidate (Fields) Trigger](devenv-onaftervalidate-fields-trigger.md)|After data is entered in a field.|
 
