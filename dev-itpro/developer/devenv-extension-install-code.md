@@ -3,7 +3,7 @@ author: jswymer
 title: "Writing extensions installation code"
 description: "Describes how to add code to run to initialize data when an extension is installed."
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 01/22/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -11,9 +11,8 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 ---
 
- 
-
 # Writing Extension Install Code
+
 There might be certain operations outside of the extension code itself that you want performed when an extension is installed. These operations could include, for example, populating empty records with data, service callbacks and telemetry, version checks, and messages to users. To perform these types of operations, you write extension install code. Extension install code is run when:
 
 -   An extension is installed for the very first time.
@@ -22,7 +21,8 @@ There might be certain operations outside of the extension code itself that you 
 This enables you to write different code for initial installation and reinstallation.
 
 ## How to write install code
-You write install logic in an *install* codeunit. This is a codeunit that has the [SubType property](properties/devenv-subtype-property-codeunit.md) is set to **Install**. An install codeunit supports two system triggers on which you can add the install code.
+
+You write install logic in an *install* codeunit. This is a codeunit that has the [SubType property](properties/devenv-subtype-property-codeunit.md) set to **Install**. An install codeunit supports two system triggers on which you can add the install code.
 
 |Trigger |Description |
 |--------|------------|
