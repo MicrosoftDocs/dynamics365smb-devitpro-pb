@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 
 # OnAfterLookup Trigger
 
-Runs after a record a field in a lookup has been selected and the lookup is closed.
+Runs after a field in a lookup has been selected and the lookup is closed.
 
 ## Applies to
 
