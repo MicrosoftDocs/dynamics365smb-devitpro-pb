@@ -93,7 +93,8 @@ codeunit 50100 MyInstallCodeunit
         // Do work needed when reinstalling the same version of this extension back on this tenant.
         // Some possible usages:
         // - Service callback/telemetry indicating that extension was reinstalled
-        // - Data 'patchup' work, for example, detecting if new 'base' records have been changed while you have been working 'offline'.
+        // - Data 'patchup' work, for example, detecting if new 'base' records have been
+        //   changed while you have been working 'offline'.
         // - Setup 'welcome back' messaging for next user access.
     end;
 }
