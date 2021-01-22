@@ -2,7 +2,7 @@
 title: "OnAfterLookup Trigger"
 description: "OnAfterLookup trigger in AL for Business Central."
 ms.custom: na
-ms.date: 11/30/2020
+ms.date: 01/22/2021
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 
 # OnAfterLookup Trigger
 
-Runs after a field in a lookup has been selected and the lookup is closed.
+Runs after a field in a lookup has been selected and the lookup is closed. This trigger is only called in when `TableRelation` is set. 
 
 ## Applies to
 
@@ -34,6 +34,9 @@ end;
 This trigger is introduced with runtime 7.0 to address issues that arise when, for example, more items have the same Description. With former solutions, the lookup mechanism would find the selected record based on the filtering in the lookup dialog. This made it impossible to predict which record the user had selected.
 
 ## Example
+
+The following is a simplified example of how the `OnAfterLookup` trigger works. The `No.` and `Description` fields point to fields in the `Item` table and should be updated at the same time, even if only one of the fields is available in a dropdown, the corresponding field must also be set. `No.` is the primary key and unique, but there could be more records in the `Item` table with the same `Description`. The `OnAfterLookup` trigger, looks up the chosen record up and returns it in `RecordRef`.
+
 
 ```al
 
