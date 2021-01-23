@@ -36,7 +36,7 @@ Any keys defined after the primary key in a table definition are called *seconda
 
 A secondary key is implemented on SQL Server using a structure that is called an *index*. This structure is like an index that is used in textbooks. A textbook index alphabetically lists important terms at the end of a book. Next to each term are page numbers. You can quickly search the index to find a list of page numbers (addresses), and you can locate the term by searching the specified pages. The index is an exact indicator that shows where each term occurs in the textbook.  
 
-When you define a secondary key and mark it as enabled, an index is automatically maintained on SQL Server. The index reflects the sorting order that is defined by the key. Several secondary keys can be active at the same time.  
+When you define a secondary key and mark it as [enabled](properties/devenv-enabled-property.md), an index is automatically maintained on SQL Server. The index reflects the sorting order that is defined by the key. Several secondary keys can be active at the same time.  
 
 A secondary key can be disabled so that it doesn't occupy database space or use time during updates to maintain its index. Disabled keys can be re-enabled, although this operation can be time-consuming because SQL Server must scan the whole table to rebuild the index.  
 
@@ -48,7 +48,7 @@ A key definition includes the [Unique](properties/devenv-unique-property.md) pro
 
 You can create unique secondary keys that are composed of multiple fields, like with primary keys. In this case, it's the combination of the values in the secondary key that must be unique. Consider the **Customer** table, for example. Suppose you wanted to make sure there are no customers that have the same combination of values for the **Name**, **Address**, and **City** fields. You could create a unique key for these fields.
 
-Unlike primary keys, it's possible to define multiple unique secondary keys on a table. 
+Unlike primary keys, it's possible to define multiple unique secondary keys on a table.
 
 > [!NOTE]  
 > The `Unique` property isn't supported in table extension objects.
