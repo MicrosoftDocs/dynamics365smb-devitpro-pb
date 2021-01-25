@@ -79,6 +79,24 @@ codeunit 50100 MyPublishers
 }
 ```
 
+The following code declares the `CheckAddressLine` event subscriber in the event subscriber codeunit **50101 MySubscribers**. The event subscriber displays a message in the client when '+' is used in the **Address** field.
+
+```AL
+codeunit 50101 MySubscribers
+{
+    //Set the event subscribers to manual binding;
+    EventSubscriberInstance = Manual;
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"MyPublishers", 'OnAddressLineChanged', '', true, true)]
+    procedure CheckAddressLine(line: Text[100]);
+    begin
+        if (STRPOS(line, '+') > 0) then begin
+            MESSAGE('Can''t use a plus sign (+) in the address [' + line + ']');
+        end;
+    end;
+}
+```
+
 The following code extends the **Customer Card** page to raise the `OnAddressLineChanged` event when the **Address** field is changed: 
 
 ```AL
@@ -101,24 +119,6 @@ pageextension 50100 MyCustomerExt extends "Customer Card"
             end;
         }
     }
-}
-```
-
-The following code declares the `CheckAddressLine` event subscriber in the event subscriber codeunit **50101 MySubscribers**. The event subscriber displays a message in the client when '+' is used in the **Address** field.
-
-```AL
-codeunit 50101 MySubscribers
-{
-    //Set the event subscribers to manual binding;
-    EventSubscriberInstance = Manual;
-
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"MyPublishers", 'OnAddressLineChanged', '', true, true)]
-    procedure CheckAddressLine(line: Text[100]);
-    begin
-        if (STRPOS(line, '+') > 0) then begin
-            MESSAGE('Can''t use a plus sign (+) in the address [' + line + ']');
-        end;
-    end;
 }
 ```
 
