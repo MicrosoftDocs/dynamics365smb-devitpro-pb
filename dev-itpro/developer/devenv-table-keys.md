@@ -19,9 +19,8 @@ The database management system, which is SQL Server, keeps track of data in a ta
 A table definition in AL can contain a list of keys. A key is a sequence of one or more field IDs from the table. Up to 40 keys can be associated to a table. 
 
 ## Primary keys
-The first key in the list of keys in a table definition is the primary key.
 
-The primary key determines the logical order in which records are stored, regardless of their physical placement.  
+The first key in the list of keys in a table object definition is the primary key. The primary key determines the logical order in which records are stored, regardless of their physical placement. 
 
 Logically, records are stored sequentially in ascending order and sorted by the primary key. Before adding a new record to a table, SQL Server checks if the information in the record's primary key fields is unique. If so, it then inserts the record into the correct logical position. Records are sorted dynamically so the database is always structurally correct. This sorting allows for fast data manipulation and retrieval.  
 
@@ -30,9 +29,13 @@ The primary key is always active. SQL Server keeps the table sorted in primary k
 > [!NOTE]  
 > In the development environment, it's technically possible to create a primary key based on up to 20 fields. However, because of SQL Server limitations, only the first 16 are used.
 
+### Primary keys for table extension objects
+
+You don't define a primary key for a table extension object. A table extension object will use the primary key of the table object it extends. So any key that you define in a table extension object is considered a secondary key. You'll see the primary key if you view the companion table for the table extension object in SQL Server.
+
 ## Secondary keys
 
-Any keys defined after the primary key in a table definition are called *secondary keys*.
+In a table object, any keys defined after the primary key are called *secondary keys*. All keys defined in a table extension object are considered secondary keys.
 
 A secondary key is implemented on SQL Server using a structure that is called an *index*. This structure is like an index that is used in textbooks. A textbook index alphabetically lists important terms at the end of a book. Next to each term are page numbers. You can quickly search the index to find a list of page numbers (addresses), and you can locate the term by searching the specified pages. The index is an exact indicator that shows where each term occurs in the textbook.  
 
@@ -122,7 +125,13 @@ The overall speed depends on the following factors:
 
 ## Defining new keys
 
-You define keys in AL code of a table object or table extension object. To define keys, add the `keys` keyword after the `fields` definition, and then add a `key` keyword for each key:
+You define keys in AL code of a table object or table extension object. 
+
+- A secondary key in a table extension object can include either fields from the table object it extends only or fields from the table extension object only. You can't mix fields from the base table object and and table extension object in a key definition.
+- Secondary keys that include fields the base table object are added to the base table in SQL Server able fields are adare 
+
+
+To define keys, add the `keys` keyword after the `fields` definition, and then add a `key` keyword for each key:
 
 ```AL
 keys
