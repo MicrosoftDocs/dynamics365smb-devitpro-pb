@@ -82,7 +82,8 @@ When the CaptionML property does not include an entry for the language used in t
     |XMLport|Name property|  
     |Codeunit|Name property|  
     |Menu button and menu item|Name property|  
-    |Page objects and page controls (container, group, part, and field)|Name property| |Query objects|Name property|  
+    |Page objects and page controls (container, group, part, and field)|Name property|
+    |Query objects|Name property|  
     |Query columns|CaptionML property of the underlying table field for the column|  
 
 ## See Also  
