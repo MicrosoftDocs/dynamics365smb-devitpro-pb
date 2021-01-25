@@ -40,7 +40,7 @@ EventSubscriberInstance = StaticAutomatic|Manual;
 
 The bindings are always considered static on the event publisher side. For example, if you bind instance *A* of a given subscriber codeunit, all instances of publisher application objects will start calling the event subscribers. You can't design it so that a specific instance of publisher table *X* calls only a specific instance of subscriber codeunit *A*. You can, however, achieve the same by using/storing some global state on the subscriber.  
 
-### StaticAutomatic bounding
+### StaticAutomatic binding
 
 If the subscriber codeunit is defined as single instance (as specified by the [SingleInstance Property](devenv-singleinstance-property.md)), the first call to an event subscriber creates in instance of the codeunit. This instance is kept for the lifespan of the session.
 
@@ -48,7 +48,7 @@ If the codeunit isn't declared as single instance, each event subscriber will be
 
 **Note:**  With this setting, you can't call the [BINDSUBSCRIPTION Method](../methods-auto/session/session-bindsubscription-method.md) or [UNBINDSUBSCRIPTION Method](../methods-auto/session/session-unbindsubscription-method.md) for any events in this codeunit; otherwise, an error occurs.
 
-### Manual bounding
+### Manual binding
 
 This setting enables you to control which event subscriber instances are called when an event is raised. With this setting, you can essentially activate event subscribers on demand. If the **BINDSUBSCRIPTION** method isn't called, then nothing will happen when the event is raised.
 
