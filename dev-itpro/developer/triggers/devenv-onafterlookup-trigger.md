@@ -16,7 +16,7 @@ author: SusanneWindfeldPedersen
 
 [!INCLUDE [2021_releasewave1](../../includes/2021_releasewave1.md)]
 
-Runs after a record in a lookup has been selected and the lookup is closed. The trigger applies to page fields that have a `TableRelation` defined, looking up values in another table. The parameter of the `OnAfterLookup` trigger is the record that is selected in the lookup.
+Runs after a record in a lookup has been selected and the lookup is closed. The trigger applies to page fields that have a `TableRelation` defined, looking up values in another table.
 
 ## Applies to
 
@@ -25,11 +25,17 @@ Runs after a record in a lookup has been selected and the lookup is closed. The 
 ## Syntax
 
 ```al
-trigger OnAfterLookup()
+trigger OnAfterLookup(RecordRef)
 begin
     ...
 end;
 ```
+
+#### Parameters
+
+ *RecordRef*  
+
+ The record selected in the lookup.
 
 ## Remarks
 
