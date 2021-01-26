@@ -1,5 +1,5 @@
 ---
-title: "Report Extemsopm Object"
+title: "Report Extension Object"
 description: "Reports are used to print or display information from a database."
 author: SusanneWindfeldPedersen
 ms.custom: na
@@ -18,10 +18,8 @@ ms.author: solsen
 
 With the report extension object, you can extend existing report objects, for example, by adding fields to the report dataset and modifying the report layout to reflect the new fields. Or, you can simply change the layout of an existing report by adding an extension object that provides a new layout.
 
-
-
 > [!NOTE]  
-> Extension objects can have a name with a maximum length of 30 characters. 
+> Extension objects can have a name with a maximum length of 30 characters.
 
 ## Snippet support
 
