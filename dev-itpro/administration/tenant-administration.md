@@ -111,7 +111,7 @@ Trials can expire, and so can a apid subscription, such as if the customer does 
 [The Business Central Administration Center API](administration-center-api.md)  
 [Submitting support requests on behalf of your customer](manage-technical-support.md#submitsupportrequest)  
 [Resources for Help and Support for Dynamics 365 Business Central](../help-and-support.md)  
-[How does Microsoft handle database sizes?](../faq.md#how-does-microsoft-handle-database-sizes)  
+[How does Microsoft handle database sizes?](../faq.yml#how-does-microsoft-handle-database-sizes)  
 [Version numbers in Business Central](version-numbers.md)  
 [Get Started as a Reseller of Business Central Online](get-started-online.md)  
 [Deliver consulting services as a VAR: aka.ms/BusinessCentralConsultingServices](https://aka.ms/BusinessCentralConsultingServices)  
