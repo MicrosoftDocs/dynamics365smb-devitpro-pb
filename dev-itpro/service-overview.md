@@ -58,7 +58,7 @@ An exception to this type of schedule is the continuous updates to the underlyin
 
 ## See also
 
-[FAQ for Dynamics 365 Business Central](faq.md)  
+[FAQ for Dynamics 365 Business Central](faq.yml)  
 [Administration of Business Central Online](administration/tenant-administration.md)  
 [Technical Support for Business Central](technical-support.md)  
 [Escalating support issues to Microsoft](administration/manage-technical-support.md#escalating-support-issues-to-microsoft)  

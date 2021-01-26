@@ -72,7 +72,7 @@ If you are completely new to [!INCLUDE [prod_short](developer/includes/prod_shor
 
 [[!INCLUDE[prod_long](includes/prod_long.md)] Business Functionality Help](/dynamics365/business-central/index)  
 [Dynamics 365 Business Central on Microsoft Learn](/learn/dynamics365/business-central?WT.mc_id=dyn365bc_landingpage-docs)  
-[FAQ for Dynamics 365 Business Central Development and Administration](faq.md)  
+[FAQ for Dynamics 365 Business Central Development and Administration](faq.yml)  
 [Resources for Help and Support for [!INCLUDE[prod_long](includes/prod_long.md)]](help-and-support.md)  
 [The Lifecycle of Apps and Extensions](developer/devenv-app-life-cycle.md)  
 [Maintainance of AppSource Apps and Per-Tenant Extensions](developer/app-maintain.md)  
