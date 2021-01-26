@@ -57,5 +57,7 @@ https://localhost:7048/BC130/OData/Company('CRONUS International Ltd.')/Customer
 
 For more information about data types and other information about conventions and standards for OData URIs, see [Atom Publishing Protocol: URI Conventions](https://go.microsoft.com/fwlink/?LinkId=214635). Conventions for data types are addressed in section 2.2.2, "Abstract Type System."  
 
-## See Also  
- [OData Web Services](OData-Web-Services.md)
+## See Also
+
+[OData Web Services](OData-Web-Services.md)  
+[Microsoft OData Docs - Query options overview](/odata/concepts/queryoptions-overview)  
