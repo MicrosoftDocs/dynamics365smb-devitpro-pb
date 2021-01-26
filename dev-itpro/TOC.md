@@ -45,7 +45,7 @@
 ### [Connect with customers](/partner-center/connect-with-your-customers?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Customize Business Central](/dynamics365/business-central/ui-customizing-overview?toc=/dynamics365/business-central/dev-itpro/toc.json) 
 ## Frequently asked questions
-### [Frequently asked questions (general)](faq.md)
+### [Frequently asked questions (general)](faq.yml)
 ### [FAQ about Connecting to the Intelligent Cloud from On-Premises Solutions](administration/FAQ-Intelligent-Cloud.md)
 ### [FAQ for Developing in AL](developer/devenv-dev-faq.md)
 ### [FAQ about Library and Dependency Apps in Business Central](developer/app-faq-dependencies-libraries.md)
