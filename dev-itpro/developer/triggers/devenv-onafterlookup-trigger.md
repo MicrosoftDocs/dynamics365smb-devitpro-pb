@@ -43,7 +43,7 @@ This trigger is introduced with runtime 7.0 to address issues that arise when, f
 
 ## Example
 
-The following is a simplified example of how the `OnAfterLookup` trigger works. The `No.` and `Description` fields point to fields in the `Item` table and should be updated at the same time, even if only one of the fields is available in a dropdown; the corresponding field must also be set. `No.` is the primary key and unique, but there could be more records in the `Item` table with the same `Description`. The `OnAfterLookup` trigger looks up the chosen record and returns it in `RecordRef`.
+The following is a simplified example of how the `OnAfterLookup` trigger can be used. The `No.` and `Description` fields point to fields in the `Item` table and should be updated at the same time, even if only one of the fields is available in a dropdown; the corresponding field must also be set. `No.` is the primary key and unique, but there could be more records in the `Item` table with the same `Description`. The `OnAfterLookup` trigger looks up the chosen record and returns it in a RecordRef.
 
 
 ```al
