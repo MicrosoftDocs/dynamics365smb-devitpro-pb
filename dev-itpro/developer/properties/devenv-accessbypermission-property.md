@@ -2,7 +2,7 @@
 title: "AccessByPermission Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/24/2020
+ms.date: 01/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AccessByPermission Property
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Sets a value for a table field or UI element that determines the permission mask for an object that a user must have to see and access the related page fields or UI element in the client. The UI element will be removed at runtime if the user does not have permissions to a certain object as specified in the AccessByPermission property.
 
@@ -37,7 +37,6 @@ All types of UI elements will be removed if they relate to an object to which th
 -   Page Action
 -   Page
 -   Report
-
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
