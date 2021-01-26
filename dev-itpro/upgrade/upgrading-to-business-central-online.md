@@ -27,7 +27,7 @@ Use the following table to determine the procedures that you must complete for y
 
 ## Upgrading to the latest version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)]
 
-[!INCLUDE [prod_short](../developer/includes/prod_short.md)] online, is a managed environment where Microsoft manages the upgrade process. You can specify upgrade windows in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], and Microsoft will notify you if your tenant runs into problems during the upgrade. For more information, see [How often is [!INCLUDE[prod_short](../developer/includes/prod_short.md)] updated?](../faq.md#how-often-is--updated).  
+[!INCLUDE [prod_short](../developer/includes/prod_short.md)] online, is a managed environment where Microsoft manages the upgrade process. You can specify upgrade windows in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], and Microsoft will notify you if your tenant runs into problems during the upgrade. For more information, see [How often is [!INCLUDE[prod_short](../developer/includes/prod_short.md)] updated?](../faq.yml#how-often-is--updated).  
 
 > [!NOTE]
 > The concept of technical upgrades that you might have been used to in on-premises deployments is not supported in [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online.

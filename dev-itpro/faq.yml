@@ -36,11 +36,11 @@ summary: |
 sections:
   - name: Ignored
     questions:
-      - question: Is [!INCLUDE[prod_short](includes/prod_short.md)] available in my country?
+      - question: Is Business Central available in my country?
         answer: |
           [!INCLUDE[prod_short](includes/prod_short.md)] is available in a limited number of markets, but new countries are added through Microsoft-led localization or through partner-led localization on a quarterly basis. For more information, see [Countries and Translations Supported](compliance/apptest-countries-and-translations.md).  
           
-      - question: How often is [!INCLUDE[prod_short](includes/prod_short.md)] updated?
+      - question: How often is Business Central updated?
         answer: |
           [!INCLUDE [prod_short](developer/includes/prod_short.md)] online is governed by [Microsoft's Modern Lifecycle Policy](https://support.microsoft.com/help/30881). This means continuous service updates and a major update every 6 months. For more information, see [Dynamics 365 Business Central Service Compliance](/dynamics365/business-central/compliance/compliance-service-compliance) and [Dynamics 365 release schedule and early access](/dynamics365/get-started/release-schedule).  
           
@@ -96,7 +96,7 @@ sections:
           
       - question: What's going on with the Help?
         answer: |
-          If you have a background with [!INCLUDE [navnow_md](developer/includes/navnow_md.md)], you will find that in-product Help is very different in [!INCLUDE [prod_short](developer/includes/prod_short.md)]. For more information, see [[!INCLUDE[prod_long](developer/includes/prod_long.md)] User Assistance Model](user-assistance.md).
+          If you have a background with [!INCLUDE [navnow_md](developer/includes/navnow_md.md)], you will find that in-product Help is very different in [!INCLUDE [prod_short](developer/includes/prod_short.md)]. For more information, see [User Assistance Model](user-assistance.md).
           
       - question: Which IP addresses or ranges does my environment's API use?
         answer: |
@@ -120,11 +120,7 @@ sections:
             Outbound requests come from [!INCLUDE [prod_short](includes/prod_short.md)] environment, such as code that uses the `HttpClient`data type to send HTTP requests. The requests come from an IP address in the IP ranges of the Azure region in which the environment is hosted. You can see where an environment is hosted on the **Environment details** page in the [!INCLUDE [prod_short](includes/prod_short.md)] admin center. For more information, see [Managing Environments](administration/tenant-admin-center-environments.md).  
           
           You can find the IP addresses of the Azure regions [as a download on the Download center](https://www.microsoft.com/en-us/download/details.aspx?id=56519).  
-          
-          <!--## How do I join the "Ready to Go" program?
-          
-          Read [this](developer/readiness/readiness-ready-to-go.md?tabs=learning), and then send email to [Dyn365BEP@microsoft.com](mailto:Dyn365BEP@microsoft.com).-->
-          
+                 
       - question: See Also
         answer: |
           [FAQ for Developing in AL](developer/devenv-dev-faq.md)  
