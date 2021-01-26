@@ -16,7 +16,7 @@ ms.service: "dynamics365-business-central"
 
 ## Get started with development and administration documentation
 
-The content in this section of the Docs.microsoft.com site is intended for people who are [!INCLUDE [prod_short](developer/includes/prod_short.md)] resellers, administrators, or developers, and people who want to get started with [!INCLUDE [prod_short](developer/includes/prod_short.md)] development or administration. If you are a functional consultant or enduser of [!INCLUDE [prod_short](developer/includes/prod_short.md)], check out the [Business Functionality Help](/dynamics365/business-central/index) instead.  
+The content in this section of the Docs.microsoft.com site is intended for people who are [!INCLUDE [prod_short](developer/includes/prod_short.md)] resellers, administrators, or developers, and people who want to get started with [!INCLUDE [prod_short](developer/includes/prod_short.md)] development or administration. If you are a functional consultant or user of [!INCLUDE [prod_short](developer/includes/prod_short.md)], check out the [Business Functionality Help](/dynamics365/business-central/index) instead.  
 
 ## Resources for an administrator
 
@@ -75,6 +75,6 @@ If you are completely new to [!INCLUDE [prod_short](developer/includes/prod_shor
 [FAQ for Dynamics 365 Business Central Development and Administration](faq.yml)  
 [Resources for Help and Support for [!INCLUDE[prod_long](includes/prod_long.md)]](help-and-support.md)  
 [The Lifecycle of Apps and Extensions](developer/devenv-app-life-cycle.md)  
-[Maintainance of AppSource Apps and Per-Tenant Extensions](developer/app-maintain.md)  
+[Maintenance of AppSource Apps and Per-Tenant Extensions](developer/app-maintain.md)  
 [Microsoft Dynamics 365 Business Central on the Dynamics 365 blog](https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/)  
 [Dynamics NAV Developer and ITPro Content](/dynamics-nav/index)  
