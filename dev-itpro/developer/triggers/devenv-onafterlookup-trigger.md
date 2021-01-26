@@ -16,14 +16,11 @@ author: SusanneWindfeldPedersen
 
 [!INCLUDE [2021_releasewave1](../../includes/2021_releasewave1.md)]
 
-Runs after a field in a lookup has been selected and the lookup is closed. 
-
-> [!NOTE]  
-> This trigger is only called when a `TableRelation` is defined. 
+Runs after a record in a lookup has been selected and the lookup is closed. The trigger applies to page fields that have a `TableRelation` defined, looking up values in another table. The parameter of the `OnAfterLookup` trigger is the record that is selected in the lookup.
 
 ## Applies to
 
-- Fields
+- Page fields (controls)
   
 ## Syntax
 
