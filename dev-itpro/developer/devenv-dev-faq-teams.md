@@ -12,7 +12,7 @@ author: jswymer
 ---
 # FAQ for Microsoft Teams Integration with Business Central
 
-[!INCLUDE [team_preview](includes/teams_preview.md)]
+[!INCLUDE [online_only](includes/online_only.md)]
 
 ## What's the technology behind the card in Teams?
 
@@ -26,7 +26,7 @@ Adaptive cards are platform-agnostic way to display compact blocks of informatio
 
 ## What's the technology behind the card details?
 
-Within the portfolio of extensibility points, Teams offers *task modules*. A task module is a mechanism to display a task-focused window within Teams. Leveraging the strengths of [!INCLUDE [prod_short](includes/prod_short.md)]'s modern client stack, Teams displays an adaptation of the [!INCLUDE [webclient](includes/webclient.md)] in this window.
+Within the portfolio of extensibility points, Teams offers *task modules*. A task module is a mechanism to display a task-focused window within Teams. Applying the strengths of [!INCLUDE [prod_short](includes/prod_short.md)]'s modern client stack, Teams displays an adaptation of the [!INCLUDE [web_client](includes/webclient.md)] in this window.
 
 To learn more, see [Task Modules](/microsoftteams/platform/task-modules-and-cards/what-are-task-modules) in the Teams documentation.
 
