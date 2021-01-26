@@ -10,7 +10,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
 ms. search.keywords: cloud, edge,
-ms.date: 12/04/2020
+ms.date: 01/26/2021
 ms.author: edupont
 
 ---
@@ -30,7 +30,7 @@ The cloud migration tool in [!INCLUDE [prod_short](../developer/includes/prod_sh
 Data migration is the process of securely migrating data from your on-premises SQL Server instance to your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online tenant. The process uses the Azure Data Factory (ADF) to migrate the data between databases directly, meaning it does not look at any permissions within the applications you are transferring data between, only SQL permissions.  
 
 > [!TIP]
-> Before you start the migration process, please update statistics and reorganize indexes on all tables on the source database. This will ensure that the migration runs as fast as possible. See the documentation for [sp_updatestats (Transact-SQL)](https://docs.microsoft.com/en-us/sql/relational-databases/system-stored-procedures/sp-updatestats-transact-sql) and [Resolve index fragmentation by reorganizing or rebuilding indexes](https://docs.microsoft.com/en-us/sql/relational-databases/indexes/reorganize-and-rebuild-indexes) to learn more.
+> Before you start the migration process, please update statistics and reorganize indexes on all tables on the source database. This will ensure that the migration runs as fast as possible. For more information, see the documentation for [sp_updatestats (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-updatestats-transact-sql) and [Resolve index fragmentation by reorganizing or rebuilding indexes](/sql/relational-databases/indexes/reorganize-and-rebuild-indexes).
 
 To migrate data, run the [Cloud Migration Setup](migration-tool.md) assisted setup wizard in your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online tenant. Once the wizard is complete and data migration is activated, an initial data migration will happen at the scheduled time. Alternatively, you can trigger the data migration process manually.  
 
