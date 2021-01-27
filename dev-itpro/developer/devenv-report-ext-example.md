@@ -14,10 +14,12 @@ ms.author: solsen
 
 # Report Extension Example
 
-The following topic illustrates a scenario where we extend an existing table and report by using extension objects. The code snippets shown in this example do not provide a full end-to-end scenario that can be deployed, but illustrates the ways to extend existing functionality.
+The following topic illustrates a scenario where we extend an existing table and report by using extension objects. The code snippets shown in this example do not provide a full end-to-end scenario that can be deployed, but illustrates the way to extend existing functionality by using [Page Extension Object](devenv-page-ext-object.md) and [Report Extension Object](devenv-report-ext-object.md).
 
 
 ## Creating a base table
+
+The following base table holds information about food and specific details that applies to that. The `Color` field in this table is an enum, which is defined next in the `FoodColor` enum.
 
 ```al
 table 50100 BaseFoodTable
@@ -50,7 +52,7 @@ table 50100 BaseFoodTable
 }
 ```
 
-And defining the enum `FoodColor`.
+And defining the enum `FoodColor` to enable selecting a descriptive color of an item.
 
 ```al
 enum 50100 FoodColor
@@ -66,6 +68,7 @@ enum 50100 FoodColor
     value(6; Blue) { }
 }
 ```
+
 <!--
 ## Creating a page to display
 
@@ -94,7 +97,7 @@ page 50101 BaseFoodPage
 ```
 -->
 
-Then we'll create a `FoodReport` with `BaseFoodTable` as a data source. There's a DataItemLink to a second table that displays restaurant information. The report is defined with a RDL layout.
+Now, the following `FoodReport` object is a report based on `BaseFoodTable` as a data source. There's a `DataItemLink` to a second table that displays restaurant information. The report is defined with a RDL layout.
 
 ```al
 report 50100 FoodReport
