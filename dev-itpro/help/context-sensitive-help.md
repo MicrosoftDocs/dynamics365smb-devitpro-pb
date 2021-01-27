@@ -86,7 +86,7 @@ For page extensions, the value of the *ContextSensitiveHelpPage* property will a
 > [!NOTE]
 > The app.json file also contains a *help* property that is used by AppSource to specify the link that describes the app or solution.  
 
-### How it works for the base application
+## UI-to-Help mapping for the base application
 
 In the current version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)], the context-sensitive links to Help for the base application is based on a different UI-to-Help mapping that is stored in table 2000000198 **Page Documentation**. In this table, all page objects in the default version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] are listed, and have a target Help article associated with each of them. Multiple page objects can be associated with the same Help article, such as when a specific workflow involves multiple pages.  
 
