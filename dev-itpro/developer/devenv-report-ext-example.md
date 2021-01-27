@@ -14,11 +14,10 @@ ms.author: solsen
 
 # Report Extension Example
 
-The following topic illustrates an example of ...
+The following topic illustrates a scenario where we extend an existing table and report by using extension objects. The code snippets shown in this example do not provide a full end-to-end scenario that can be deployed, but illustrates the ways to extend existing functionality.
 
-## Creating a Base Application
 
-### Creating a base table
+## Creating a base table
 
 ```al
 table 50100 BaseFoodTable
