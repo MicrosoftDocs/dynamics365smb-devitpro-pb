@@ -97,6 +97,8 @@ page 50101 BaseFoodPage
 ```
 -->
 
+## Creating a base report
+
 Now, the following `FoodReport` object is a report based on `BaseFoodTable` as a data source. There's a `DataItemLink` to a second table that displays restaurant information. The report is defined with a RDL layout.
 
 ```al
@@ -129,7 +131,9 @@ report 50100 FoodReport
 }
 ```
 
-Extending the existing `FoodReport` report. First, we'll create an additional table that extends `BaseFoodTable` with some extra fields. We will call it `GMOFood`. This table adds four new fields. We will also add ...
+## Extending the base table
+
+The next code snippet is a table extension `GMOFood` that extends the `BaseFoodTable` with extra fields to register more details about food. The code snippet also adds a new table `Producer` adding information about origin of an item.
 
 ```al
 tableextension 50200 GMOFood extends BaseFoodTable
@@ -159,7 +163,9 @@ table 50202 Producer
 }
 ```
 
-Next, we will extend the `FoodReport` to enable displaying an additional set of fields from both the existing `FoodTable`...
+## Extending the base report
+
+Having extended the base table, we want to extend the `FoodReport` to enable displaying the additional set of fields from both the existing `FoodTable` and from the new table `Producer`.
 
 ```al
 reportextension 50200 FoodExtension extends FoodReport
