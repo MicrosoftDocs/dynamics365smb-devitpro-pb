@@ -48,13 +48,13 @@ report 50103 "Customer List"
     dataitem(Customer;Customer)
     {
       RequestFilterFields="No.","Search Name","Customer Posting Group";
-      column(COMPANYNAME;COMPANYNAME)
+      column(CompanyName;CompanyName)
       {
       }
-      column(CurrReport_PAGENO;Customer."no.")
+      column(CurrReport_PageNo;Customer."no.")
       {
       }
-      column(Customer_TABLECAPTION_CustFilter;TABLECAPTION + ': ' + CustFilter)
+      column(Customer_TableCaption_CustFilter;TableCaption + ': ' + CustFilter)
       {
       }
       column(CustFilter;CustFilter)
@@ -124,10 +124,10 @@ report 50103 "Customer List"
       column(Customer_ListCaption;Customer_ListCaptionLbl)
       {
       }
-      column(CurrReport_PAGENOCaption;CurrReport_PAGENOCaptionLbl)
+      column(CurrReport_PageNoCaption;CurrReport_PageNoCaptionLbl)
       {
       }
-      column(Customer_NoCaption;FIELDCAPTION("No."))
+      column(Customer_NoCaption;FieldCaption("No."))
       {
       }
       column(Customer_Customer_Posting_GroupCaption;Customer_Customer_Posting_GroupCaptionLbl)
@@ -142,28 +142,28 @@ report 50103 "Customer List"
       column(Customer_Customer_Price_GroupCaption;Customer_Customer_Price_GroupCaptionLbl)
       {
       }
-      column(Customer_Fin_Charge_Terms_CodeCaption;FIELDCAPTION("Fin. Charge Terms Code"))
+      column(Customer_Fin_Charge_Terms_CodeCaption;FieldCaption("Fin. Charge Terms Code"))
       {
       }
       column(Customer_Payment_Terms_CodeCaption;Customer_Payment_Terms_CodeCaptionLbl)
       {
       }
-      column(Customer_Salesperson_CodeCaption;FIELDCAPTION("Salesperson Code"))
+      column(Customer_Salesperson_CodeCaption;FieldCaption("Salesperson Code"))
       {
       }
       column(Customer_Currency_CodeCaption;Customer_Currency_CodeCaptionLbl)
       {
       }
-      column(Customer_Credit_Limit_LCYCaption;FIELDCAPTION("Credit Limit (LCY)"))
+      column(Customer_Credit_Limit_LCYCaption;FieldCaption("Credit Limit (LCY)"))
       {
       }
-      column(Customer_Balance_LCYCaption;FIELDCAPTION("Balance (LCY)"))
+      column(Customer_Balance_LCYCaption;FieldCaption("Balance (LCY)"))
       {
       }
-      column(Customer_ContactCaption;FIELDCAPTION(Contact))
+      column(Customer_ContactCaption;FieldCaption(Contact))
       {
       }
-      column(Customer_Phone_NoCaption;FIELDCAPTION("Phone No."))
+      column(Customer_Phone_NoCaption;FieldCaption("Phone No."))
       {
       }
       column(Total_LCY_Caption;Total_LCY_CaptionLbl)
@@ -211,7 +211,7 @@ report 50103 "Customer List"
     CustFilter : Text;
     CustAddr : ARRAY [8] OF Text[50];
     Customer_ListCaptionLbl : Label 'Customer - List';
-    CurrReport_PAGENOCaptionLbl : Label 'Page';
+    CurrReport_PageNoCaptionLbl : Label 'Page';
     Customer_Customer_Posting_GroupCaptionLbl : Label 'Customer Posting Group';
     Customer_Customer_Disc_GroupCaptionLbl : Label 'Cust./Item Disc. Gr.';
     Customer_Invoice_Disc_CodeCaptionLbl : Label 'Invoice Disc. Code';
