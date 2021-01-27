@@ -67,7 +67,7 @@ enum 50100 FoodColor
     value(6; Blue) { }
 }
 ```
-
+<!--
 ## Creating a page to display
 
 To be able to display data from and enter data in the `BaseFoodTable`, we will create the following page called `BaseFoodPage`.
@@ -93,8 +93,99 @@ page 50101 BaseFoodPage
     }
 }
 ```
+-->
+
+Then we'll create a `FoodReport` with `BaseFoodTable` as a data source. There's a DataItemLink to a second table that displays restaurant information. The report is defined with a RDL layout.
+
+```al
+report 50100 FoodReport
+{
+    UsageCategory = Administration;
+    ApplicationArea = All;
+    DefaultLayout = RDLC;
+    RDLCLayout = 'FoodReport.rdl';
+    AllowScheduling = true;
+
+    dataset
+    {
+        dataitem(FoodTable; BaseFoodTable)
+        {
+            column(Name; Name) { }
+            column(Color; Color) { }
+            column(Flavour; Flavour) { }
+            column(Vegan_Friendly; "Vegan Friendly") { }
+            column(Vegetarian_Friendly; "Vegetarian Friendly") { }
+            column(Price; Price) { }
+            dataitem(Restaurant; Restaurant)
+            {
+                DataItemLink = ID = field(Restaurant);
+                column(RestaurantName; Name) { }
+            }
+
+        }
+    }
+}
+```
+
+Extending the existing `FoodReport` report. First, we'll create an additional table that extends `BaseFoodTable` with some extra fields. We will call it `GMOFood`. This table adds four new fields. We will also add ...
+
+```al
+tableextension 50200 GMOFood extends BaseFoodTable
+{
+    fields
+    {
+        field(100; "GMO Free"; Boolean) { }
+        field(101; Organic; Boolean) { }
+
+        field(103; Calories; Decimal)
+        {
+            DecimalPlaces = 3;
+        }
+        field(102; ProducerID; Integer) { }
+    }
+}
 
 
+table 50202 Producer
+{
+    DataPerCompany = false;
+    fields
+    {
+        field(1; ID; Integer) { }
+        field(2; Name; Text[256]) { }
+    }
+}
+```
+
+Next, we will extend the `FoodReport` to enable displaying an additional set of fields from both the existing `FoodTable`...
+
+```al
+reportextension 50200 FoodExtension extends FoodReport
+{
+    DefaultLayout = RDLC;
+    RDLCLayout = 'ExtendedFoodReport.rdl';
+
+    dataset
+    {
+        add(FoodTable)
+        {
+            column(GMO_Free; "GMO Free") { }
+            column(Organic; Organic) { }
+            column(Calories; Calories) { }
+        }
+
+        addfirst(Restaurant)
+        {
+            dataitem(Producer; Producer)
+            {
+                DataItemLink = ID = field(ProducerID);
+                DataItemLinkReference = FoodTable;
+                column(ProducerName; Name) { }
+            }
+        }
+    }
+}
+```
 
 ## See Also
 

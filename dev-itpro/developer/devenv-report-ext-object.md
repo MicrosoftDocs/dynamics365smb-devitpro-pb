@@ -27,7 +27,7 @@ Typing the shortcut `treportext` will create the basic layout for a report exten
 
 [!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
 
-## Report extension example
+## Report extension example 1
 
 The following example illustrates a simplified table extension which adds a new field to the `Customer` table, `MyField`. The report extension `MyExtension` then adds `MyField` as well as an additional field in original `Customer` table to the **Customer - Top 10 List** report.
 
@@ -73,6 +73,7 @@ reportextension 50110 MyExtension extends "Customer - Top 10 List"
 }
 
 ```
+
 
 ## See Also
 
