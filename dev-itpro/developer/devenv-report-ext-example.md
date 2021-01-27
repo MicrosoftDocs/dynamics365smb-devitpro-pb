@@ -16,7 +16,6 @@ ms.author: solsen
 
 The following topic illustrates a scenario where we extend an existing table and report by using extension objects. The code snippets shown in this example do not provide a full end-to-end scenario that can be deployed, but illustrates the way to extend existing functionality by using [Page Extension Object](devenv-page-ext-object.md) and [Report Extension Object](devenv-report-ext-object.md).
 
-
 ## Creating a base table
 
 The following base table holds information about food and specific details that applies to that. The `Color` field in this table is an enum, which is defined next in the `FoodColor` enum.

@@ -16,7 +16,14 @@ ms.author: solsen
 
 [!INCLUDE [2021_releasewave1](../includes/2021_releasewave1.md)]
 
-With the report extension object, you can extend existing report objects, for example, by adding fields to the report dataset and modifying the report layout to reflect the new fields. Or, you can simply change the layout of an existing report by adding an extension object that provides a new layout.
+With the report extension object, you can extend existing report objects, similar to how you extend tables and pages. With report extensions, you can extend an existing report by:
+
+- Adding fields to the existing report dataset
+- Adding new datasets
+- Adding to request pages
+- Modifying columns
+- Modifying the report layout to reflect the new fields that are added with an extension
+- Changing the layout of an existing report by adding a custom report layout to the extension
 
 > [!NOTE]  
 > Extension objects can have a name with a maximum length of 30 characters.
@@ -27,9 +34,9 @@ Typing the shortcut `treportext` will create the basic layout for a report exten
 
 [!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
 
-## Report extension example 1
+## Report extension example
 
-The following example illustrates a simplified table extension which adds a new field to the `Customer` table, `MyField`. The report extension `MyExtension` then adds `MyField` as well as an additional field in original `Customer` table to the **Customer - Top 10 List** report.
+The following example illustrates a simplified table extension which adds a new field to the `Customer` table, `MyField`. The report extension `MyExtension` then adds `MyField` as well as an additional field in original `Customer` table to the **Customer - Top 10 List** report. For a more advanced example, see [Report Extension Example](devenv-report-ext-example.md).
 
 ```AL
 tableextension 50110 CustomerTableExt extends Customer
@@ -74,9 +81,9 @@ reportextension 50110 MyExtension extends "Customer - Top 10 List"
 
 ```
 
-
 ## See Also
 
+[Report Extension Example](devenv-report-ext-example.md)  
 [Request Pages](devenv-request-pages.md)  
 [Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md)  
 [Creating a Word Layout Report](devenv-howto-report-layout.md)  
