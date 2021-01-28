@@ -70,10 +70,13 @@ Dec 15, 2020 | Controlling your database sizes |
 Jan 26, 2021 | Power Platform Integration - Power BI |
 Feb 9, 2021 | Power Platform, Power Apps, and Dataverse (formerly known as CDS) |
 Feb 23, 2021 | Performance Toolkit and Telemetry; How to deploy for performance |
-Mar 9, 2021 | Integrating with Microsoft Teams.
+Mar 9, 2021 | Integrating with Microsoft Teams
  
- > [!NOTE]
-  > If you’ve registered for a call, you will receive an email with a link to the on-demand recording approximately one week after the call. If you didn’t register prior to the call, you can register at any point after the call and watch the recording. 
+**Business Central Localization Apps Office Hours Calls**  
+Join the Business Central Localization Apps Office Hours to learn more about how to deliver localization apps for Business Central online and connect with the Microsoft subject matter experts. The calls typically take place on the first Thursday of every month. There are two calls for each date to accommodate different time zones. First call is from 09.00am-10.00am CET and the second call is from 17.00pm-18.00pm CET. Register for the live calls here: [aka.ms/BCLocOfficeHours](https://aka.ms/BCLocOfficeHours).
+
+ > [!NOTE]  
+ > If you’ve registered for a call, you will receive an email with a link to the on-demand recording approximately one week after the call. If you didn’t register before the call, you can register at any point after the call and then watch the recording. 
 
 ## Social
 
@@ -91,4 +94,5 @@ The Dynamics 365 blog for Business Decision Makers: [cloudblogs.microsoft.com/
 
 ### See Also 
 Get started with developing apps: [aka.ms/BCPublisher](https://aka.ms/bcpublisher)
+
 Get started with reselling apps: [aka.ms/BCReseller](https://aka.ms/bcreseller)  

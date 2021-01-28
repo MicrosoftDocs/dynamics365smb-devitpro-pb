@@ -2,7 +2,7 @@
 title: "Publishing Events"
 description: This article describes how to create an event publisher method to publish business and integration events.
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 01/22/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -63,7 +63,7 @@ The following procedure provides an outline of the tasks that are involved in cr
 
      You can include as many parameters of any type as necessary.  
 
-     Make sure to expose enough information. Parameters to enable subscriber methods to add value to the application. However, don't expose unnecessary parameters that may constrain you from changing or extending methodically in the future.  
+     Make sure to expose enough information. Parameters enable subscriber methods to add value to the application. However, don't expose unnecessary parameters that may constrain you from changing or extending methodically in the future.  
 
  You can now add code to the application that raises the event by calling the event publisher method. You can also create subscriber methods that handle the event when it's raised. 
 

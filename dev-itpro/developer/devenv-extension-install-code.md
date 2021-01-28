@@ -3,7 +3,7 @@ author: jswymer
 title: "Writing extensions installation code"
 description: "Describes how to add code to run to initialize data when an extension is installed."
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 01/22/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -11,18 +11,18 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 ---
 
- 
-
 # Writing Extension Install Code
-There might be certain operations outside of the extension code itself that you want performed when an extension is installed. These operations could include, for example, populating empty records with data, service callbacks and telemetry, version checks, and messages to users. To perform these types of operations, you write extension install code. Extension install code is run when:
 
--   An extension is installed for the very first time.
+There might be certain operations outside of the extension code itself that you want run when an extension is installed. These operations could include, for example, populating empty records with data, service callbacks and telemetry, version checks, and messages to users. To do these types of operations, you write extension install code. Extension install code is run when:
+
+-   An extension is installed for the first time.
 -   An uninstalled version is installed again.
 
 This enables you to write different code for initial installation and reinstallation.
 
 ## How to write install code
-You write install logic in an *install* codeunit. This is a codeunit that has the [SubType property](properties/devenv-subtype-property-codeunit.md) is set to **Install**. An install codeunit supports two system triggers on which you can add the install code.
+
+You write install logic in an *install* codeunit. This is a codeunit that has the [SubType property](properties/devenv-subtype-property-codeunit.md) set to **Install**. An install codeunit supports two system triggers on which you can add the install code.
 
 |Trigger |Description |
 |--------|------------|
@@ -55,7 +55,7 @@ codeunit [ID] [NAME]
 > Use the shortcuts `tcodeunit` and `ttrigger` to create the basic structure for the codeunit and trigger.
 
 ### Get information about an extension
-Each extension version has a set of properties that contain information about the extension, including: AppVersion, DataVersion, Dependencies, Id, Name, and Publisher. This information can be useful when installing. For example, one of the more important properties is the `DataVersion` property, which tells you what version of data you are dealing with. These properties are encapsulated in a `ModuleInfo` data type. You can access these properties by through the `NAVApp.GetCurrentModuleInfo()` and `NAVAPP.GetModuleInfo()` methods.
+Each extension version has a set of properties that contain information about the extension, including: AppVersion, DataVersion, Dependencies, Id, Name, and Publisher. This information can be useful when installing. For example, one of the more important properties is the `DataVersion` property, which tells you what version of data you are dealing with. These properties are encapsulated in a `ModuleInfo` data type. You can access these properties by through the `NAVApp.GetCurrentModuleInfo()` and `NAVAPP.GetModuleInfo()` methods. For more information, see [NavApp Data Type](methods-auto/navapp/navapp-data-type.md)
 
 ### Install codeunit example
 This example uses the ` OnInstallAppPerDatabase()` trigger to check whether the data version of the previous extension version is compatible for the upgrade.
@@ -69,12 +69,15 @@ codeunit 50100 MyInstallCodeunit
     var
         myAppInfo : ModuleInfo;
     begin
-        NavApp.GetCurrentModuleInfo(myAppInfo); // Get info about the currently executing module
+        // Get info about the currently executing module
+        NavApp.GetCurrentModuleInfo(myAppInfo); 
 
-        if myAppInfo.DataVersion = Version.Create(0,0,0,0) then // A 'DataVersion' of 0.0.0.0 indicates a 'fresh/new' install
+        // A 'DataVersion' of 0.0.0.0 indicates a 'fresh/new' install
+        if myAppInfo.DataVersion = Version.Create(0,0,0,0) then 
             HandleFreshInstall
         else
-            HandleReinstall; // If not a fresh install, then we are Re-installing the same version of the extension
+            // If not a fresh install, then we are Re-installing the same version of the extension
+            HandleReinstall;
     end;
 
     local procedure HandleFreshInstall();
@@ -90,7 +93,8 @@ codeunit 50100 MyInstallCodeunit
         // Do work needed when reinstalling the same version of this extension back on this tenant.
         // Some possible usages:
         // - Service callback/telemetry indicating that extension was reinstalled
-        // - Data 'patchup' work, for example, detecting if new 'base' records have been changed while you have been working 'offline'.
+        // - Data 'patchup' work, for example, detecting if new 'base' records have been
+        //   changed while you have been working 'offline'.
         // - Setup 'welcome back' messaging for next user access.
     end;
 }
