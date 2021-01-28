@@ -104,12 +104,13 @@ enum 50135 SomeEnum implements IFoo
 
 ## Remarks
 
-Enums can be used to select an interface implementation. However, due to the plugable nature, an enum extension (and its corresponding interface implementation) could have been uninstalled from the tenant, while the setting for the enum is kept, now pointing to an "unknown" value.
+The `UnknownValueImplementation` property applies to enums. Enums are often used to select an interface implementation. However, due to the nature of an extensible development model; an enum extension and its corresponding interface implementation can be uninstalled from a tenant, while the value for the specific enum is still available, but now pointing to an unknown value. Using the `UnknownValueImplementation` property when defining an enum prevents throwing a technical error message in the UI and allows for a more user-friendly error handling.
 
-Instead of having app code add validation logic for handling this scenario, the platform should catch when an invalid enum value is provided, and allow for an extensible way to handle that
+Related to `UnknownValueImplementation` is the `DefaultImplementation` property, used for fallback to a default value when no enum value is provided. For more information, see [DefaultImplementation Property](devenv-defaultimplementation-property.md).
 
-This is related to, but not the same as, fallback to default value (which is used when no enum value is provided)
 
-## See Also  
+## See Also
+
+[DefaultImplementation Property](devenv-defaultimplementation-property.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
