@@ -32,6 +32,8 @@ DefaultImplementation = Interface = InterfaceImplementation;
 
 ## Example
 
+The following example illustrates different implementations of the `IFoo` interface.
+
 ```al
 pageextension 50130 CustListExt extends "Customer List"
 {
