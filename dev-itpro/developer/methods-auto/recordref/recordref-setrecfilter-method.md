@@ -33,20 +33,20 @@ An instance of the [RecordRef](recordref-data-type.md) data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- This method works the same as the [SETRECFILTER Method \(Record\)](../../methods/devenv-setrecfilter-method-record.md).  
+ This method works the same as the [SetRecFilter Method \(Record\)](../../methods/devenv-setrecfilter-method-record.md).  
 
 ## Example  
- The following example opens the Customer table as a RecordRef variable that is named MyRecordRef. The SETRECFILTER method sets the values in the current key of the current record as a record filter. The [GETFILTERS Method \(RecordRef\)](recordref-getfilters-method.md) retrieves the filters that have been set and displays them in a message box. No. is displayed because the filter is set on the No. field, which is the current key. 
+ The following example opens the Customer table as a RecordRef variable that is named MyRecordRef. The SetRecFilter method sets the values in the current key of the current record as a record filter. The [GetFilters Method \(RecordRef\)](recordref-getfilters-method.md) retrieves the filters that have been set and displays them in a message box. No. is displayed because the filter is set on the No. field, which is the current key. 
  
-```  
+```al
 var
     MyRecordRef: RecordRef;
     varFilters: Text;
     Text000: Label 'The filter is set on the %1 field.';
 begin 
-    MyRecordRef.OPEN(DATABASE::Customer);  
-    MyRecordRef.SETRECFILTER;  
-    varFilters := MyRecordRef.GETFILTERS;  
+    MyRecordRef.Open(Database::Customer);  
+    MyRecordRef.SetRecFilter;  
+    varFilters := MyRecordRef.GetFilters;  
     Message(Text000, varFilters);  
 end;
 ```  

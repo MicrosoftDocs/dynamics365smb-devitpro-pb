@@ -39,18 +39,19 @@ An instance of the [KeyRef](keyref-data-type.md) data type.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Example  
- The following example uses the `KeyRef.ACTIVE` method to determine whether a key in a record is enabled. The table with ID 18 \(the Customer table\) is open with a reference to table 18. The [KEYINDEX Method \(RecordRef\)](../../methods/devenv-keyindex-method-recordref.md) method retrieves the first key in the record and the `varKeyRef.ACTIVE` method returns a Boolean value that indicates whether the retrieved key is enabled. The Boolean value is displayed in a message box. 
+## Example
+
+The following example uses the `KeyRef.Active` method to determine whether a key in a record is enabled. The table with ID 18 \(the Customer table\) is open with a reference to table 18. The [KeyIndex Method \(RecordRef\)](../../methods/devenv-keyindex-method-recordref.md) method retrieves the first key in the record and the `varKeyRef.Active` method returns a Boolean value that indicates whether the retrieved key is enabled. The Boolean value is displayed in a message box. 
  
-```  
+```al
 var
     RecRef: RecordRef;
     varKeyRef: KeyRef;
     IsActive: Boolean;
 begin
-    RecRef.OPEN(18);  
-    varKeyRef := RecRef.KEYINDEX(1);  
-    IsActive := varKeyRef.ACTIVE;  
+    RecRef.Open(18);  
+    varKeyRef := RecRef.KeyIndex(1);  
+    IsActive := varKeyRef.Active;  
     Message('Is the key active =  %1 ', IsActive);  
 end;
 ```  

@@ -49,7 +49,7 @@ This method is part of the partial records capability for improving performance.
 
 This example shows how to use the AreFieldsLoaded method when you only need to load either the **Name** or the **Name 2** field on the **Customer** table. The procedure selects which ever field is actually loaded. If neither is loaded, this causes a JIT load.
 
-```
+```al
 procedure GetLoadedName(Cust: Record Customer): Text 
 begin 
     if Cust.AreFieldsLoaded(Cust.Name) then 

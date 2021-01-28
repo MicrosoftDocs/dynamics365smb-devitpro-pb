@@ -38,7 +38,7 @@ The HTTP method used by the request message.
 ## Return Value
 *CurrentMethod*
 &emsp;Type: [String](../string/string-data-type.md)
-The HTTP method used by the request message. The default is the GET method.
+The HTTP method used by the request message. The default is the Get method.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

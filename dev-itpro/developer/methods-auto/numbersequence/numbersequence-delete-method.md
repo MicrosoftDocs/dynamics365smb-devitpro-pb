@@ -38,7 +38,7 @@ Specifies if the number sequence is company-specific. Default is true.
 ## Example
 The following example checks whether the number sequence `MyNumberSequence` exists, and if so, it deletes it.
  
-```
+```al
 if NumberSequence.Exists('MyNumberSequence', false) then
     NumberSequence.Delete('MyNumberSequence', false);
 ```

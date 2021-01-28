@@ -40,36 +40,36 @@ The length of the string.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- The difference between the STRLEN method and the [MAXSTRLEN Method \(Code, Text\)](../../methods/devenv-maxstrlen-method-code-text.md) is that the STRLEN returns the actual number of characters in the input string, whereas MAXSTRLEN returns the maximum defined length of the input string.  
+ The difference between the StrLen method and the [MaxStrLen Method \(Code, Text\)](../../methods/devenv-maxstrlen-method-code-text.md) is that the StrLen returns the actual number of characters in the input string, whereas MaxStrLen returns the maximum defined length of the input string.  
   
- In [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)], if you call STRLEN on a Variant, then you get an error that the contents of the parameter are not valid. In earlier versions of [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)], if you call STRLEN on a Variant, then 0 is returned.  
+ In [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)], if you call StrLen on a Variant, then you get an error that the contents of the parameter are not valid. In earlier versions of [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)], if you call StrLen on a Variant, then 0 is returned.  
   
 ## Example  
- This example shows the difference between the STRLEN and the MAXSTRLEN methods.  
+ This example shows the difference between the StrLen and the MaxStrLen methods.  
   
-```  
+```al
 var
     City: Text[30];
     MaxLength: Integer;
     Length: Integer;
     Text000: Label 'Atlanta';
-    Text001: Label 'The MAXSTRLEN method returns: %1,\\';
-    Text002: Label 'whereas the STRLEN method returns: %2';
+    Text001: Label 'The MaxStrLen method returns: %1,\\';
+    Text002: Label 'whereas the StrLen method returns: %2';
 begin
     City := Text000;  
-    MaxLength := MAXSTRLEN(City);  
-    Length := STRLEN(City);  
+    MaxLength := MaxStrLen(City);  
+    Length := StrLen(City);  
     Message(Text001 + Text002, MaxLength, Length);  
 end;
 ```  
   
  The message window displays the following:  
   
- **The MAXSTRLEN method returns: 30**  
+ **The MaxStrLen method returns: 30**  
   
- **whereas the STRLEN method returns: 7**  
+ **whereas the StrLen method returns: 7**  
   
- This shows that the MAXLENGTH method returns the maximum possible length according to the definition of the string variable, whereas STRLEN returns the actual length of the text.  
+ This shows that the MaxLength method returns the maximum possible length according to the definition of the string variable, whereas StrLen returns the actual length of the text.  
   
 
 ## See Also

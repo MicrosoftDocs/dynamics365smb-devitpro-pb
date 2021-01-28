@@ -32,7 +32,7 @@ The name of the company that you want to copy data from.
         
 *DestinationName*  
 &emsp;Type: [String](../string/string-data-type.md)  
-The name of the company that you want to create and copy data to. The company name can have a maximum of 30 characters. If the database collation is case-sensitive, you can have one company called COMPANY and another called Company. However, if the database is case-insensitive, you cannot create companies with names that differ only by case.  
+The name of the company that you want to create and copy data to. The company name can have a maximum of 30 characters. If the database collation is case-sensitive, you can have one company called Company and another called Company. However, if the database is case-insensitive, you cannot create companies with names that differ only by case.  
 
 
 ## Return Value
@@ -47,11 +47,12 @@ The name of the company that you want to create and copy data to. The company na
 
 Links and notes on records are not copied to the new company.
 
-## Example  
- The following example is based on the **Copy Company** batch job, which is part of the [!INCLUDE[demo](../../includes/demo_md.md)]. The batch job takes the Company system table as a data item and uses the **Name** field as the value of the *SourceName* parameter. The value of the *DestinationName* parameter is specified in the **New Company Name** field in the request page, which is represented by the `NewCompanyName` variable.  
+## Example
 
-```  
-COPYCOMPANY(Name, NewCompanyName);  
+The following example is based on the **Copy Company** batch job, which is part of the [!INCLUDE[demo](../../includes/demo_md.md)]. The batch job takes the Company system table as a data item and uses the **Name** field as the value of the *SourceName* parameter. The value of the *DestinationName* parameter is specified in the **New Company Name** field in the request page, which is represented by the `NewCompanyName` variable.  
+
+```al
+CopyCompany(Name, NewCompanyName);  
 ```  
 
 ## See Also

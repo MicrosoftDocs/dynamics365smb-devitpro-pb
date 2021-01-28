@@ -37,7 +37,8 @@ The new web service action result status code.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example
-```
+
+```al
 ...
 // Set the result code to inform the caller that an item was created.
 actionContext.SetResultCode(WebServiceActionResultCode::Created);

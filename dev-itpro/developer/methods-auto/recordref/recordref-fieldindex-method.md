@@ -47,7 +47,8 @@ The FieldRef of the field that has the specified index.
  If the index is out of the range supplied or if no table is selected, then the method returns an error.  
 
 ## Example  
-```  
+
+```al
 var
     SalesInvHdr: RecordRef;
     FldRef: FieldRef;
@@ -56,11 +57,11 @@ var
     Text002: Label 'Index 2: %2\\';
     Text003: Label 'Index 3: %3';
 begin
-    SalesInvHdr.OPEN(112);  
-    FldRef1 := SalesInvHdr.FIELDINDEX(1);  
-    FldRef2 := SalesInvHdr.FIELDINDEX(2);  
-    FldRef3 := SalesInvHdr.FIELDINDEX(3);  
-    Message(Text001 + Text002 + Text003, FldRef1.CAPTION, FldRef2.CAPTION, FldRef3.CAPTION);  
+    SalesInvHdr.Open(112);  
+    FldRef1 := SalesInvHdr.FieldIndex(1);  
+    FldRef2 := SalesInvHdr.FieldIndex(2);  
+    FldRef3 := SalesInvHdr.FieldIndex(3);  
+    Message(Text001 + Text002 + Text003, FldRef1.Caption, FldRef2.Caption, FldRef3.Caption);  
 end;
 ```  
 

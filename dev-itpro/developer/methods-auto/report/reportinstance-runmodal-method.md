@@ -33,9 +33,9 @@ An instance of the [Report](report-data-type.md) data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
-After you define the *Report* variable, you can run this method or the [RUN Method \(Report\)](reportinstance-run-method.md) on the variable. As opposed to the RUN method, with the RUNMODAL method, the variable is not cleared after it executes this function. You must handle clearing the variable.
+After you define the *Report* variable, you can run this method or the [Run Method \(Report\)](reportinstance-run-method.md) on the variable. As opposed to the Run method, with the RunModal method, the variable is not cleared after it executes this function. You must handle clearing the variable.
 
-Use the RUNMODAL method or the RUN method if you know at design time the exact report you want to run. Otherwise, use the [REPORT.RUNMODAL Method](report-runmodal-method.md) or [REPORT.RUN Method](report-run-method.md).  
+Use the RunModal method or the Run method if you know at design time the exact report you want to run. Otherwise, use the [Report.RunModal Method](report-runmodal-method.md) or [Report.Run Method](report-run-method.md).  
   
  If the report you specify does not exist, then a compile error occurs.  
   
@@ -52,11 +52,11 @@ var
     SomeReport: Report "Chart of Accounts";
 begin
     …  
-    CLEAR(CustomerRec);  
-    CustomerRec.SETRECFILTER;  
+    Clear(CustomerRec);  
+    CustomerRec.SetRecFilter;  
     SomeReport.XXX; // Any user-defined method.  
-    SomeReport.SETTABLEVIEW(CustomerRec);  
-    SomeReport.RUNMODAL();
+    SomeReport.SetTableView(CustomerRec);  
+    SomeReport.RunModal();
 end;  
 ```  
 

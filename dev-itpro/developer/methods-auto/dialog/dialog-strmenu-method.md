@@ -51,7 +51,7 @@ The number of the menu option that the user selected. If the user presses the Es
 
 This example shows how to use the Dialog.StrMenu method.  
  
-```
+```al
 var
     Options: Text[30];
     Selected: Integer;
@@ -61,7 +61,7 @@ var
 begin
     Options := Text000;  
     // Sets the default to option 3  
-    Selected := Dialog.STRMENU(Options, 3, Text002);  
+    Selected := Dialog.StrMenu(Options, 3, Text002);  
     Message(Text001, Selected);  
 end;
 ```  
@@ -83,6 +83,7 @@ Option 3, **Exit**, is highlighted. The option that the user selects is stored i
 **You selected option 3.**  
 
 ## See Also
+
 [Dialog Data Type](dialog-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

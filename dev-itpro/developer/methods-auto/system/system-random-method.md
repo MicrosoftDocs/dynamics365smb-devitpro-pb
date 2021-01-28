@@ -39,18 +39,19 @@ The largest acceptable number. In effect, you are setting a range from one (1) t
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
+## Remarks
 
-## Remarks  
- If *MaxNumber* is negative it acts as a positive.  
+If *MaxNumber* is negative it acts as a positive.  
   
- If *MaxNumber* is zero, this method always returns 1.  
+If *MaxNumber* is zero, this method always returns 1.  
   
- A number is always chosen from the same set of numbers. Use [RANDOMIZE Method \(Integer\)](../../methods/devenv-randomize-method-integer.md) to generate a new set of numbers.  
+A number is always chosen from the same set of numbers. Use [Randomize Method \(Integer\)](../../methods/devenv-randomize-method-integer.md) to generate a new set of numbers.  
   
-## Example  
- This example shows how to generate a pseudo-random number. The value of the variable Number2 is positive though the value of *MaxNumber* is negative and the value of the variable Number3 is always 1 because *MaxNumber* is 0.  
+## Example
+
+This example shows how to generate a pseudo-random number. The value of the variable Number2 is positive though the value of *MaxNumber* is negative and the value of the variable Number3 is always 1 because *MaxNumber* is 0.  
   
-```  
+```al
 var
     x: Integer;
     y: Integer;
@@ -63,14 +64,15 @@ begin
     x := 100; // x is assigned a positive value.  
     y := -100; // y is assigned a negative value.  
     z := 0; // z is assigned zero.  
-    Number1 := RANDOM(x);  
-    Number2 := RANDOM(y);  
-    Number3 := RANDOM(z);  
+    Number1 := Random(x);  
+    Number2 := Random(y);  
+    Number3 := Random(z);  
     Message(Text000, Number1, Number2, Number3);  
 end;
 ```  
 
 ## See Also
+
 [System Data Type](system-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

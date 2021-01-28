@@ -54,7 +54,7 @@ A copy of the string with the expected length.
   
 ## Example  
 
-```  
+```al
 var
     Str1: Text[30];
     Str2: Text[30];
@@ -62,27 +62,27 @@ var
     Len2: Integer;
     Text000: Label '13 characters';
     Text001: Label 'Four';
-    Text002: Label 'Before PADSTR is called:\\';
+    Text002: Label 'Before PadStr is called:\\';
     Text003: Label '>%1< has the length %2\\';
     Text004: Label '>%3< has the length %4\\';  
-    Text005: Label 'After PADSTR is called:\\';    
+    Text005: Label 'After PadStr is called:\\';    
 begin
     Str1 := Text000;  
     Str2 := Text001;  
-    Len1 := STRLEN(Str1);  
-    Len2 := STRLEN(Str2);  
+    Len1 := StrLen(Str1);  
+    Len2 := StrLen(Str2);  
     Message(Text002 + Text003 + Text004, Str1, Len1, Str2, Len2);  
-    Str1 := PADSTR(Str1, 5); // Truncate the length to 5  
-    Str2 := PADSTR(Str2, 15, 'w'); // Concatenate w until length = 15  
-    Len1 := STRLEN(Str1);  
-    Len2 := STRLEN(Str2);  
+    Str1 := PadStr(Str1, 5); // Truncate the length to 5  
+    Str2 := PadStr(Str2, 15, 'w'); // Concatenate w until length = 15  
+    Len1 := StrLen(Str1);  
+    Len2 := StrLen(Str2);  
     Message(Text005 + Text003 + Text004, Str1, Len1, Str2, Len2);  
 end;
 ```  
   
  The first message window displays the following:  
   
- **Before PADSTR is called:**  
+ **Before PadStr is called:**  
   
  **>13 characters\< has the length 13**  
   
@@ -90,7 +90,7 @@ end;
   
  The second message window displays the following:  
   
- **After PADSTR is called:**  
+ **After PadStr is called:**  
   
  **>13 ch\< has the length 5**  
   

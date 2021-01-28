@@ -47,21 +47,23 @@ An instance of the [File](file-data-type.md) data type.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks  
- This method should be used before File.OPEN is used to open the file. If you use this method on a file that is already open, then an error occurs.  
+## Remarks
+
+This method should be used before File.Open is used to open the file. If you use this method on a file that is already open, then an error occurs.  
   
 ## Example  
- The following example sets the TEXTMODE to **true** when the file is open for writing. This means the file contents will be written to a text file that is named 'C:\\TestFolder\\TestFile.txt' by using ASCII characters. The [WRITEMODE Method \(File\)](../../methods-auto/file/file-writemode-method.md) and the [OPEN Method \(File\)](../../methods-auto/file/file-open-method.md) open the file for writing and the text ‘Hello World’ is written. The [CLOSE Method \(File\)](../../methods-auto/file/file-close-method.md) closes the file after the file is written to. This example assumes that you have created a text file that is named C:\\TestFolder\\TestFile.txt.  
+
+The following example sets the TextMode to **true** when the file is open for writing. This means the file contents will be written to a text file that is named 'C:\\TestFolder\\TestFile.txt' by using ASCII characters. The [WriteMode Method \(File\)](../../methods-auto/file/file-writemode-method.md) and the [Open Method \(File\)](../../methods-auto/file/file-open-method.md) open the file for writing and the text ‘Hello World’ is written. The [Close Method \(File\)](../../methods-auto/file/file-close-method.md) closes the file after the file is written to. This example assumes that you have created a text file that is named C:\\TestFolder\\TestFile.txt.  
   
- ```
- var
+```al
+var
     TestFile: File;
 begin 
-    TestFile.TEXTMODE(TRUE);  
-    TestFile.WRITEMODE(TRUE);  
-    TestFile.OPEN('C:\TestFolder\TestFile.txt');  
-    TestFile.WRITE('Hello World');  
-    TestFile.CLOSE;  
+    TestFile.TextMode(True);  
+    TestFile.WriteMode(True);  
+    TestFile.Open('C:\TestFolder\TestFile.txt');  
+    TestFile.Write('Hello World');  
+    TestFile.Close;  
 end;
 ```  
   

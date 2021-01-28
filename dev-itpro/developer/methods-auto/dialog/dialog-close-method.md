@@ -16,7 +16,7 @@ author: SusanneWindfeldPedersen
 # Dialog.Close Method
 > **Version**: _Available from runtime version 1.0._
 
-Closes a dialog window that has been opened by the OPEN method.
+Closes a dialog window that has been opened by the Open method.
 
 
 ## Syntax

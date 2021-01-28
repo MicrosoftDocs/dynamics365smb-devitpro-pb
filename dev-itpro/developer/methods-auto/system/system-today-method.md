@@ -43,10 +43,11 @@ The date that is returned is different for the [!INCLUDE[webclient](../../includ
 
 You can only use the **Today** method to retrieve the current date from the operating system. You cannot use it to set the date in the operating system.  
   
-## Example  
- This example shows how to use the **Today** method. 
+## Example
+
+This example shows how to use the **Today** method. 
  
-```  
+```al
 var
     Text000: Label 'The current date is: %1';
 begin
@@ -54,12 +55,13 @@ begin
 end;
 ```  
   
- The message window could display the following:  
+The message window could display the following:  
   
- **The current date is: 05/27/08**  
+**The current date is: 05/27/08**  
   
 
 ## See Also
+
 [System Data Type](system-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

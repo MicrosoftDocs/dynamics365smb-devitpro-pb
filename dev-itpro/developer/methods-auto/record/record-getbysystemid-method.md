@@ -46,9 +46,9 @@ Every record has a SystemId, which is stored in the SystemId field of the table.
 
 ## Example
   
-This example shows how to use the GETBYSYSTEMID method to retrieve a record.
+This example shows how to use the GetBySystemId method to retrieve a record.
 
-```
+```al
 var
     CustomerRec: Record Customer;
     Text000: Label 'Customer was found.';

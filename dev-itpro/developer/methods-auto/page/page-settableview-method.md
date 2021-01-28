@@ -36,30 +36,32 @@ The record that has a table view that you want to apply to the page or data item
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks  
- The table view is the view of the table that you present to the user. You determine what records that the user can see by setting filters, determining the sorting order, and selecting the keys.  
+## Remarks
+
+The table view is the view of the table that you present to the user. You determine what records that the user can see by setting filters, determining the sorting order, and selecting the keys.  
   
- This method only narrows the view of the table that was set through the [SourceTableView Property](../../properties/devenv-sourcetableview-property.md) of the page or through the [DataItemTableView Property](../../properties/devenv-dataitemtableview-property.md) of the data item.  
+This method only narrows the view of the table that was set through the [SourceTableView Property](../../properties/devenv-sourcetableview-property.md) of the page or through the [DataItemTableView Property](../../properties/devenv-dataitemtableview-property.md) of the data item.  
   
 > [!IMPORTANT]  
->  SETTABLEVIEW is not supported for setting views on subpages from code on table headers. For example, you cannot set a table view on the SalesOrder subpage from the SalesHeader.  
+> SetTableView is not supported for setting views on subpages from code on table headers. For example, you cannot set a table view on the SalesOrder subpage from the SalesHeader.  
   
-## Example  
- This example is based on the Sales Header table and shows how SETTABLEVIEW is used for a page object.
+## Example
 
-```
+This example is based on the Sales Header table and shows how SetTableView is used for a page object.
+
+```al
  var
     SalesHeader: Record "Sales Header";
     SomePage: Page "Sales List";
 begin
-    SalesHeader.SETCURRENTKEY("Document Type");  
-    SalesHeader.SETRANGE("Document Type",SalesHeader."Document Type"::Order);  
-    SomePage.SETTABLEVIEW(SalesHeader); // Only view sales orders.  
-    SomePage.RUN;
+    SalesHeader.SetCurrentKey("Document Type");  
+    SalesHeader.SetRange("Document Type",SalesHeader."Document Type"::Order);  
+    SomePage.SetTableView(SalesHeader); // Only view sales orders.  
+    SomePage.Run;
 end;
 ```  
   
- The page that is reference by the SomePage variable can be any page object that has Sales Header as the value of the [SourceTable Property](../../properties/devenv-sourcetable-property.md).  
+The page that is reference by the SomePage variable can be any page object that has Sales Header as the value of the [SourceTable Property](../../properties/devenv-sourcetable-property.md).  
 
 ## See Also
 [Page Data Type](page-data-type.md)  

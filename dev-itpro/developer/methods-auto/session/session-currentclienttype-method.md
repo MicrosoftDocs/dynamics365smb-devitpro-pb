@@ -44,17 +44,17 @@ You can use CurrentClientType as a parameter in the [GetURL Method](../system/sy
 
 In the following example, CurrentClientType is used to get the client type for the session and return a message if the session uses the [!INCLUDE[d365fin_tablet_md](../../includes/d365fin_tablet_md.md)].  
 
-```  
-if CURRENTCLIENTTYPE = CLIENTTYPE::Tablet then  
+```al
+if CurrentClientType = ClientType::Tablet then  
   Message('The session is running the Tablet client');  
 ```  
 
 ## Example 2
 
- In the following example, CURRENTCLIENTTYPE is used as a parameter of the [GetURL Method](../system/system-geturl-clienttype-string-objecttype-integer-table-boolean-method.md) to return the URL of the client that invokes the code.  
+ In the following example, CurrentClientType is used as a parameter of the [GetURL Method](../system/system-geturl-clienttype-string-objecttype-integer-table-boolean-method.md) to return the URL of the client that invokes the code.  
 
-```  
-url := GETURL(CURRENTCLIENTTYPE);  
+```al
+url := GetURL(CurrentClientType);  
 Message('The URL is %1.', url);  
 ```  
 

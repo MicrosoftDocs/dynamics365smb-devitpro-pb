@@ -46,9 +46,9 @@ The codeunit instance that event subscribers are bound to will be this exact ins
   
 ## Example  
  
-The following sample code illustrates a typical use of the BINDSUBSCRIPTION method.  
+The following sample code illustrates a typical use of the BindSubscription method.  
   
-```  
+```
 Method MyFunction(….)  
 LocalVar  
   SubScriberCodeunit5000;  
@@ -57,7 +57,7 @@ begin
   // You can rely on the instance being the same as the one receiving the event subscriber call  
   
   SubScriberCodeunit5000.MySetGlobalInfo(<info you can later test in the subscriber event method>)  
-  BINDSUBSCRIPTION(SubscriberCodeunit5000);  
+  BindSubscription(SubscriberCodeunit5000);  
   DoSomething(…);  // After binding, all subscriptions on SubscriberCodeunit5000 are "active".  
   
 end; // Notice, that when SubScriberCodeunit5000 goes out of scope, all bindings are removed.  
