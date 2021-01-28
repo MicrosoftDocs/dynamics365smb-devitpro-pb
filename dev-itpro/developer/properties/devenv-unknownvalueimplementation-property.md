@@ -26,14 +26,14 @@ Specifies the implementers used for ordinal values that are not included in the 
 ## Syntax
 
 ```al
-UnknownValueImplementation = 
+UnknownValueImplementation = Interface = InterfaceImplementation;
 
 ```
 
 ## Example
 
 ```al
-pageextension 50130 CustListE extends "Customer List"
+pageextension 50130 CustListExt extends "Customer List"
 {
 
     trigger OnOpenPage()
@@ -87,7 +87,7 @@ codeunit 50147 YesFooImpl implements IFoo
 enum 50135 SomeEnum implements IFoo
 {
     Extensible = true;
-    UnknownImplementation = IFoo = ErrorFooImpl;
+    UnknownValueImplementation = IFoo = ErrorFooImpl;
     DefaultImplementation = IFoo = DefaultFooImpl;
 
     value(0; Yes)
