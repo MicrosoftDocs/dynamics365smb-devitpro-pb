@@ -32,6 +32,9 @@ UnknownValueImplementation = Interface = InterfaceImplementation;
 
 ## Example
 
+The following example illustrates different implementations of the `IFoo` interface. `SomeEnum` has `UnknownValueImplementation` set to catch the case where some extension uses an unknown enum value.
+
+
 ```al
 pageextension 50130 CustListExt extends "Customer List"
 {
