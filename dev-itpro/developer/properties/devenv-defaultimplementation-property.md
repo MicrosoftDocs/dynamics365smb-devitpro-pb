@@ -32,7 +32,7 @@ DefaultImplementation = Interface = InterfaceImplementation;
 
 ## Example
 
-The following example illustrates different implementations of the `IFoo` interface.
+The following example illustrates different implementations of the `IFoo` interface. `SomeEnum` has `DefaultImplementation` set to catch the case where some extension uses an enum value that does not implement the `IFoo` interface.
 
 ```al
 pageextension 50130 CustListExt extends "Customer List"
