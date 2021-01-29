@@ -1,6 +1,6 @@
 ---
 title: "Permission Set Extension Object"
-description: "Description of the permission set extension object in AL for Business Central    ."
+description: "Description of the permission set extension object in AL for Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 11/30/2020
@@ -12,9 +12,10 @@ ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
-# Permission Set Object
+# Permission Set Extension Object
 
-The permission set extension object in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] allows you to add 
+The permission set object in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] describes which objects an administrator or a partner has assigned to a user. The permission set extension object describes which additional assignments an administrator or a partner has assigned to a user. The extension of the permission set object ...
+
 
 ## Snippet support
 

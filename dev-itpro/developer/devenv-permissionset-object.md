@@ -14,7 +14,7 @@ ms.author: solsen
 
 # Permission Set Object
 
-The permission set object in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] allows you to add 
+The permission set object in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] describes which objects an administrator or a partner has assigned to a user.
 
 ## Snippet support
 
