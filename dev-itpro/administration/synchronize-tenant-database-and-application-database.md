@@ -34,32 +34,22 @@ This article describes how to synchronize the business data \(tenant\) database 
 
     - If the [!INCLUDE[server](../developer/includes/server.md)] instance isn't configured to be a multitenant instance:  
 
-        ```
+        ```powershell
         Sync-NAVTenant –ServerInstance <ServerInstanceName>  
         ```  
 
     - If the [!INCLUDE[server](../developer/includes/server.md)] instance is configured to be a multitenant instance:  
 
-        ```
+        ```powershell
         Sync-NAVTenant –ServerInstance ServerInstanceName -Tenant TenantId  
         ```  
 
      Change the following parameter values.  
 
-     <table>
-     <tr>
-     <th>Parameter</th>
-     <th>Description</th>
-     </tr>
-     <tr>
-     <td>NAVServerInstance</td>
-     <td>Specifies the [!INCLUDE[server](../developer/includes/server.md)] instance.</td>
-     </tr>
-     <tr>
-     <td>TenantId</td>
-     <td>Specifies the ID of the tenant.</td>
-     </tr>
-     </table>
+    |Parameter|Description|
+    |---------|-----------|
+    |ServererInstanceName|Specifies the [!INCLUDE[server](../developer/includes/server.md)] instance.|
+    |TenantId|Specifies the ID of the tenant.|
 
 3.  Press Enter to run the cmdlet.  
 
