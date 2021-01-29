@@ -104,6 +104,11 @@ enum 50135 SomeEnum implements IFoo
 
 ```
 
+## Remarks
+
+Related to `DefaultImplementation` is the `UnknownValueImplementation` property, used for handling unknown enum values. For more information, see [UnknownValueImplementation Property](devenv-defaultimplementation-property.md).
+
+
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
