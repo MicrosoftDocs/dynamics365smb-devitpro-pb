@@ -42,7 +42,8 @@ table 50111 MyTable
 ```
 
 ## Remarks
-If the value is **true**, the object can be extended using a `tableextension`, `pageextension`, or `enumextension` respectively.
+
+If the value is **true**, the object can be extended using a `tableextension`, `pageextension`, `reportextension`, or `enumextension` respectively.
 
 ## See Also
 
