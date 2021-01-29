@@ -25,9 +25,10 @@ Sets whether the report can be extended.
 -   Page
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## Property Value  
 
-**True** if the table, page, or enum can be extended; otherwise, **false**. The default is **true** on tables and pages, and **false** on enums.  
+**True** if the table, page, report, or enum can be extended; otherwise, **false**. The default is **true** on tables, pages, and reports, whereas it is **false** on enums.  
 
 ## Syntax
 
