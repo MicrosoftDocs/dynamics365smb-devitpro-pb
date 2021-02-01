@@ -33,6 +33,10 @@ Please note that new customers will automatically get the latest builds of Busin
 
 ## Good to know
 
+**OData V3 will be removed with 2021 Wave 1**  
+As previously announced, OData Version 3.0 (V3) has been deprecated since April 2020 and support for it will be removed in Dynamics 365 Business Central 2021 release wave 1. OData V4 is the current recommended version of OData and current integrations needs to move to OData V4. To identify incoming OData V3 requests, enable and use the Web Service Request telemetry that's available to partners. Notifications has also been sent via M365 Message Center to tenants with identified usage.
+
+
 **Basic Authentication**  
 Basic Authentication (Web Service Access Key) removal for Business Central online has been postponed until [April 2022](/dynamics365/business-central/dev-itpro/upgrade/deprecated-features-w1#basic-auth--web-service-access-keys-for-saas). We see that some integrations needs more time to move from Web Service Access Key usage to OAuth. PowerShell samples on how to connect to Business Central is published on [GitHub](https://github.com/microsoft/BCTech/tree/master/samples/PSOAuthBCAccess). 
 
