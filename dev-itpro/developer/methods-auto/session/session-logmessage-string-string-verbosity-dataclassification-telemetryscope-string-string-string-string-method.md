@@ -66,10 +66,10 @@ For more information about using this method, see [Creating Custom Telemetry Eve
 
 ## Example
 
-```
+```al
 trigger OnRun();
 begin
-    LogMessage('MyExt-0001', 'This is a critical error message', Verbosity::Critical, DATACLASSIFICATION::CustomerContent, TelemetryScope::ExtensionPublisher, 'result', 'failed', 'reason', 'critical error in code');
+    LogMessage('MyExt-0001', 'This is a critical error message', Verbosity::Critical, DataClassification::CustomerContent, TelemetryScope::ExtensionPublisher, 'result', 'failed', 'reason', 'critical error in code');
 end;
 ```
 ## See Also

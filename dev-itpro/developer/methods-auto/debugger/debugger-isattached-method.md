@@ -36,6 +36,7 @@ Ok :=   Debugger.IsAttached()
 **true** if the debugger is attached to a session; otherwise, **false**. 
 
 ## See Also
+
 [Debugger Data Type](debugger-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

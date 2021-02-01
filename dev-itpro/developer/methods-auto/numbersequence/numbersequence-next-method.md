@@ -43,7 +43,7 @@ Returns the next value from number sequence.
 ## Example
 The following example gets the next value in the number sequence `MyNumberSequence`. The number series is not company specific.
  
-```
+```al
 number := NumberSequence.Next('MyNumberSequence', false);
 ```
 

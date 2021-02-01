@@ -40,8 +40,8 @@ The mode in which the session is running.
 ## Example  
  This example requires that you create a variable named Mode that has a DataType of ExecutionMode.  
 
-```  
-Mode := CURRENTEXECUTIONMODE;   
+```al
+Mode := CurrentExecutionMode;   
 Message('Current execution mode is %1.', Mode); 
 ```
 

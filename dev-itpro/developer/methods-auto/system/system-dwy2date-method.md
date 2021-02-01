@@ -47,14 +47,15 @@ The four-digit number of the year. If you omit this optional parameter, the year
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks  
- A special situation occurs if the week \(*Week*\) that is input into DWY2DATE spans two years. Depending on *Weekday*, the year of the output *Date* can differ from the input year. This scenario is shown in the following code example.  
+## Remarks
+
+A special situation occurs if the week \(*Week*\) that is input into DWY2Date spans two years. Depending on *Weekday*, the year of the output *Date* can differ from the input year. This scenario is shown in the following code example.  
   
 ## Example 1
 
- The input week in this example spans two years. 
+The input week in this example spans two years. 
 
-```  
+```al
 var
     DayOfWeek: Integer;
     Week: Integer;
@@ -65,22 +66,22 @@ begin
     DayOfWeek := 1;  
     Week := 1;  
     Year := 2014;  
-    OutputDate := DWY2DATE(DayOfWeek, Week, Year);  
+    OutputDate := DWY2Date(DayOfWeek, Week, Year);  
     Message(Text000, DayOfWeek, Week, Year, OutputDate);  
 end;
 ```  
   
- On a computer that has the regional format set to English \(United States\), the message window displays the following:  
+On a computer that has the regional format set to English \(United States\), the message window displays the following:  
   
- **Day 1 of week 1 in the year 2014 is the date: 12/30/13.**  
+**Day 1 of week 1 in the year 2014 is the date: 12/30/13.**  
   
- The example shows that the first day of the week in the first week of the year 2014 is regarded as the date December 30, 2013. The first week of the year 2014 is the first week that has four or more days in the year 2014. That week starts on Monday, December 30, 2013, and ends on Sunday, January 5, 2014.  
+The example shows that the first day of the week in the first week of the year 2014 is regarded as the date December 30, 2013. The first week of the year 2014 is the first week that has four or more days in the year 2014. That week starts on Monday, December 30, 2013, and ends on Sunday, January 5, 2014.  
   
 ## Example 2
 
- The input week in this example spans two years.
+The input week in this example spans two years.
 
-```  
+```al
 var
     DayOfWeek: Integer;
     Week: Integer;
@@ -91,7 +92,7 @@ begin
     DayOfWeek := 1;  
     Week := 1;  
     Year := 2016;  
-    OutputDate := DWY2DATE(DayOfWeek, Week, Year);  
+    OutputDate := DWY2Date(DayOfWeek, Week, Year);  
     Message(Text000, DayOfWeek, Week, Year, OutputDate);  
 end;
 ```  
@@ -104,9 +105,9 @@ end;
   
 ## Example 3
 
- This example shows how to use the DWY2DATE method without specifying the optional *Year* parameter. The output in this example depends on the day on which you run the code. 
+ This example shows how to use the DWY2Date method without specifying the optional *Year* parameter. The output in this example depends on the day on which you run the code. 
    
-```  
+```al
 var
     DayOfWeek: Integer;
     Week: Integer;
@@ -115,7 +116,7 @@ var
 begin
     DayOfWeek := 1;  
     Week := 1;  
-    OutputDate := DWY2DATE(DayOfWeek, Week);  
+    OutputDate := DWY2Date(DayOfWeek, Week);  
     Message(Text000, DayOfWeek, Week, OutputDate);  
 end;
 ```  

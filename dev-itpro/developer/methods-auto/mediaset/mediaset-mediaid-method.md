@@ -40,12 +40,12 @@ The GUID of MediaSet on the record.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
-When you import media on a table record by using either the [ImportFile Method \(MediaSet\)](../../methods-auto/mediaset/mediaset-importfile-method.md) or [ImportStream Method \(MediaSet\)](../../methods-auto/mediaset/mediaset-importstream-method.md), the media is assigned to a MediaSet GUID in the system table **2000000183 Tenant Media Set** of the application database. You can use the MEDIAID method to retrieve the MediaSet GUID. Note that the imported media object is also assigned a GUID. To get the media object's GUID, you can use the [MediaId Method \(Media\)](../../methods-auto/media/media-mediaid-method.md).  
+When you import media on a table record by using either the [ImportFile Method \(MediaSet\)](../../methods-auto/mediaset/mediaset-importfile-method.md) or [ImportStream Method \(MediaSet\)](../../methods-auto/mediaset/mediaset-importstream-method.md), the media is assigned to a MediaSet GUID in the system table **2000000183 Tenant Media Set** of the application database. You can use the MediaId method to retrieve the MediaSet GUID. Note that the imported media object is also assigned a GUID. To get the media object's GUID, you can use the [MediaId Method \(Media\)](../../methods-auto/media/media-mediaid-method.md).  
 
 ## Example  
 This example is gets the GUID of the MediaSet that is used on item No. 1000 in the **Item** table. The field in the **Item** table that is used for the MediaSet data type is **Picture**.  
 
-```
+```al
  var
     item: Record Item;
     mediasetId: GUID;

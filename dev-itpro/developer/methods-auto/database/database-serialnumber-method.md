@@ -37,22 +37,23 @@ The serial number.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Example  
-```
+## Example
+
+```al
 var
     SN: Text[30];
     Text000: Label 'The serial number for this software package is:%1.';
 begin 
-    SN := SERIALNUMBER;  
+    SN := SerialNumber;  
     Message(Text000, SN);  
 end;
 ```  
   
- The output of this example is as follows:  
+The output of this example is as follows:  
   
- **The serial number for this software package is:**  
+**The serial number for this software package is:**  
   
- **W1-ZA-002-6R75A-7**  
+**W1-ZA-002-6R75A-7**
   
 > [!NOTE]  
 > The serial number depends on your licensed version of [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)]. The serial number shown here is an example.

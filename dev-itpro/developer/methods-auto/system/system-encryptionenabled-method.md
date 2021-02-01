@@ -38,14 +38,15 @@ Ok :=   System.EncryptionEnabled()
 ## Example  
  This code example checks if the tenant is configured for encryption.  
 
-```  
-if ENCRYPTIONENABLED then  
+```al
+if EncryptionEnabled then  
         Message('Encryption has been enabled')  
 else  
   Message('Encryption has not been enabled')  
-```   
+```
 
 ## See Also
+
 [System Data Type](system-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

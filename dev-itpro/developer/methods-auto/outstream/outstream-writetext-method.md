@@ -47,28 +47,28 @@ The number of characters to be written.
 
 ## Remarks
 
-For more information about how zero bytes and line endings are written and read, see [WRITE, WRITETEXT, READ, and READTEXT Method Behavior Regarding Line Endings and Zero Terminators](../../devenv-write-read-methods-line-break-behavior.md).
+For more information about how zero bytes and line endings are written and read, see [Write, WriteText, Read, and ReadText Method Behavior Regarding Line Endings and Zero Terminators](../../devenv-write-read-methods-line-break-behavior.md).
 ## Example  
 
  This example also requires that the c:\\TestFiles folder exists.  
   
-```  
- var
+```al
+var
     MyHTMLFile: File;
     TestOutStream: OutStream;
 begin
-    MyHTMLFile.CREATE('c:\TestFiles\main.html');  
-    MyHTMLFile.CREATEOUTSTREAM(TestOutStream);  
-    TestOutStream.WRITETEXT('<html>');  
-    TestOutStream.WRITETEXT;  
-    TestOutStream.WRITETEXT('<head>');  
-    TestOutStream.WRITETEXT('<title>My Page</title>');  
-    TestOutStream.WRITETEXT('</head>');  
-    TestOutStream.WRITETEXT;  
-    TestOutStream.WRITETEXT('<P>Hello world!</p>');  
-    TestOutStream.WRITETEXT;  
-    TestOutStream.WRITETEXT('</html>');  
-    FileMyHTML.CLOSE;  
+    MyHTMLFile.Create('c:\TestFiles\main.html');  
+    MyHTMLFile.CreateOutstream(TestOutStream);  
+    TestOutStream.WriteText('<html>');  
+    TestOutStream.WriteText;  
+    TestOutStream.WriteText('<head>');  
+    TestOutStream.WriteText('<title>My Page</title>');  
+    TestOutStream.WriteText('</head>');  
+    TestOutStream.WriteText;  
+    TestOutStream.WriteText('<P>Hello world!</p>');  
+    TestOutStream.WriteText;  
+    TestOutStream.WriteText('</html>');  
+    FileMyHTML.Close;  
 end;
 ```  
   

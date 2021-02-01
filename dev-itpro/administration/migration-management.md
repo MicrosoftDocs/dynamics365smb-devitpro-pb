@@ -10,17 +10,18 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
 ms. search.keywords: cloud, edge
-ms.date: 10/19/2020
+ms.date: 01/27/2021
 ms.author: edupont
 
 ---
 
 # Managing the Migration to the Cloud
 
-You can connect your on-premises solution to a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online tenant for the purpose of migrating your data to the cloud. Once you have set up this configuration, you can manage your cloud environment and data migration from the **Cloud Migration Management** page in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online.  
+You can connect your on-premises solution to your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online tenant for the purpose of migrating your data to the cloud. Once you have set up this configuration, you can manage your cloud environment and data migration from the **Cloud Migration Management** page in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online.  
 
 > [!NOTE]
-> To manage migrations and run the migration tool, you must have the SUPER permission set.
+> To manage migrations and run the migration tool, you must have the SUPER permission set in [!INCLUDE [prod_short](../includes/prod_short.md)] and be an administrator of the Microsoft 365 tenant.
+.
 
 ## Cloud Migration Management
 
@@ -61,4 +62,4 @@ When a company is created in [!INCLUDE [prod_short](../developer/includes/prod_s
 [Migrate to Business Central Online from Dynamics GP](migrate-dynamics-gp.md)  
 [Upgrading from Dynamics NAV to Business Central Online](../upgrade/Upgrade-Considerations.md#online)  
 [Migrating On-Premises Data to Business Central Online](migrate-data.md)  
-[FAQ about Connecting to the Intelligent Cloud](faq-intelligent-cloud.md)  
+[FAQ about Connecting to Business Central Online from On-Premises Solutions](faq-intelligent-cloud.md)  

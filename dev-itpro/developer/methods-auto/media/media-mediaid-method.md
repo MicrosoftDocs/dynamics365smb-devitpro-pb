@@ -47,7 +47,7 @@ This example uses the MediaId method to get the GUID of the media object that is
 
 The example assumes that  the **My Items** table already exists and has a **Media** data type field named **Image**.
 
-```
+```al
  var
     myItemRec: Record "My Items";
     imageID: GUID;

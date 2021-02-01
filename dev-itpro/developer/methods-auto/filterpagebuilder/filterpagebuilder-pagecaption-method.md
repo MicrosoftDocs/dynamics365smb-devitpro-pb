@@ -45,7 +45,7 @@ The current value of the FilterPageBuilder UI caption.
 
 ## Example
 
-```  
+```al
 var
     varFilterPageBuilder: FilterPageBuilder;
     Customer: Record Customer;

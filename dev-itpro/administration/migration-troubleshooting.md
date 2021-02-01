@@ -90,7 +90,7 @@ Users without a license, such as internal administrators or delegated administra
     When downloading and installing Integration Runtime, choose version 5 (IntegrationRuntime_5.x.x.x.msi) only if your machine runs .NET Framework Runtime 4.7.2. Otherwise, or if in doubt, choose version 4 (IntegrationRuntime_4.x.x.x.msi).
 
     > [!IMPORTANT]
-    > Running Integration Runtime v5 on a machine that doesn’t have .NET Framework Runtime 4.7.2 can cause timeouts when connecting to the on-premise SQL Server, which will break the cloud migration setup.
+    > Running Integration Runtime v5 on a machine that doesn't have .NET Framework Runtime 4.7.2 can cause timeouts when connecting to the on-premise SQL Server, which will break the cloud migration setup.
   
     Before you install a new Integration Runtime version, uninstall the old version. When you uninstall the old version, choose to delete the user data (such as authentication key and data source credentials) when prompted. Then, install the Integration Runtime again and connect it to the online environment using the new authentication key. 
 
@@ -120,14 +120,13 @@ If you experience problems with Microsoft Integration Runtime, also see [Trouble
     
 - Avoid running several migrations of the same on-prem database to different online environment at the same time.
 
-    If you need to do this type of migration, then migrate data sequentially. First, migrate data into the online environment and disable the migration. Then restore the on-prem database from backup and enable the migration again by providing a connection string to this database. You can use the same Integration Runtime and Authorization key.     
+    If you need to do this type of migration, then migrate data sequentially. First, migrate data into the online environment and disable the migration. Then restore the on-prem database from backup and enable the migration again by providing a connection string to this database. You can use the same Integration Runtime and Authorization key.  
 
 - Don't try to migrate data from several on-premise databases into the same online environment at the same time. 
 
-    For example, you may have two companies, where each company is in its own on-premise database. If you need to do this type of migration, the migrate data sequentially. First, migrate data from one database into the online environment and disable the migration. Then setup the migration in the same online enviornment, provide a new connection string to the next on-prem database. You can use the same Integration Runtime and Authorization key.  
+    For example, you may have two companies, where each company is in its own on-premise database. If you need to do this type of migration, the migrate data sequentially. First, migrate data from one database into the online environment and disable the migration. Then set up the migration in the same online environment, provide a new connection string to the next on-prem database. You can use the same Integration Runtime and Authorization key.  
 
-
-## Product version 
+## Product version
 
 > Database: online
 
@@ -163,4 +162,4 @@ When you've completed the migration, disable cloud migration by using the **Disa
 [Migrate to Business Central Online from Dynamics GP](migrate-dynamics-gp.md)  
 [Upgrading from Dynamics NAV to Business Central Online](../upgrade/Upgrade-Considerations.md#online)  
 [Migrating On-Premises Data to Business Central Online](migrate-data.md)  
-[FAQ about Connecting to the Intelligent Cloud](faq-intelligent-cloud.md)  
+[FAQ about Connecting to Business Central Online from On-Premises Solutions](faq-intelligent-cloud.md)  

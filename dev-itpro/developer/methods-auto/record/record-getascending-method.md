@@ -16,7 +16,7 @@ author: SusanneWindfeldPedersen
 # Record.GetAscending Method
 > **Version**: _Available from runtime version 1.0._
 
-Gets the sort order for the records returned. You can use GETASCENDING to identify the sort order of the specified field because fields can be sorted in ascending or descending order. For example, you can read data from an ODATA web service where the data is sorted in ascending order on the Name field but in descending order on the City field.
+Gets the sort order for the records returned. You can use GetASCENDING to identify the sort order of the specified field because fields can be sorted in ascending or descending order. For example, you can read data from an ODATA web service where the data is sorted in ascending order on the Name field but in descending order on the City field.
 
 
 ## Syntax

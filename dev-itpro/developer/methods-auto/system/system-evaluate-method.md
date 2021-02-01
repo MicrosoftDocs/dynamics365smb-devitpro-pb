@@ -47,10 +47,11 @@ This optional value can be used when exporting data with an XmlPort. The only va
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Example  
- This example shows how to use the **EVALUATE** method when it is called with four different types of variables.  
+## Example
+
+This example shows how to use the **Evaluate** method when it is called with four different types of variables.  
     
-```  
+```al
 var
     VarInteger: Integer;  
     VarDate: Date;
@@ -67,42 +68,43 @@ var
     Text003: Label 'VarDuration = %7. The return code is: %8.';
 begin
     Value := '19960101';  
-    Ok1 := EVALUATE(VarInteger, Value);  
-    Ok2 := EVALUATE(VarDate, Value);  
-    Ok3 := EVALUATE(VarYesNo, Value);  
+    Ok1 := Evaluate(VarInteger, Value);  
+    Ok2 := Evaluate(VarDate, Value);  
+    Ok3 := Evaluate(VarYesNo, Value);  
     Value := '2days 4hours 3.7 seconds 17 milliseconds';  
-    Ok4 := EVALUATE(VarDuration, Value);  
+    Ok4 := Evaluate(VarDuration, Value);  
     Message(Text000 + Text001 + Text002 + Text003, VarInteger, Ok1, VarDate, Ok2, VarYesNo, Ok3, VarDuration, Ok4); 
 end; 
 ```  
   
- The message window displays the following:  
+The message window displays the following:  
   
- **VarInteger = 10196   . The return code is: Yes.**  
+**VarInteger = 10196   . The return code is: Yes.**  
   
- **VarDate = 01/01/96. The return code is: Yes.**  
+**VarDate = 01/01/96. The return code is: Yes.**  
   
- **VarYesNo = No      . The return code is: No.**  
+**VarYesNo = No      . The return code is: No.**  
   
- **VarDuration = 2 days 4 hours 3 seconds 717 milliseconds. The return code is: Yes.**  
+**VarDuration = 2 days 4 hours 3 seconds 717 milliseconds. The return code is: Yes.**  
   
- This example shows that although Value \('010196'\) can be interpreted as both an integer and a date expression, it cannot be interpreted as a Boolean expression. This causes an error, shown in the return code Ok3 \(=FALSE\).  
+This example shows that although Value \('010196'\) can be interpreted as both an integer and a date expression, it cannot be interpreted as a Boolean expression. This causes an error, shown in the return code Ok3 \(=False\).  
   
- This example also shows that when you evaluate a string as a duration data type, you can use certain words in the string to describe the duration. The following words or abbreviations are supported:  
+This example also shows that when you evaluate a string as a duration data type, you can use certain words in the string to describe the duration. The following words or abbreviations are supported:  
   
--   day, days, d  
+- day, days, d  
   
--   hour, hours, h  
+- hour, hours, h  
   
--   minute, minutes, min, m  
+- minute, minutes, min, m  
   
--   second, seconds, sec, s  
+- second, seconds, sec, s  
   
--   millisecond, milliseconds, milli, millis  
+- millisecond, milliseconds, milli, millis  
   
- You can include decimal values in the string that you evaluate as a duration, except for milliseconds, which must be a whole number.  
+You can include decimal values in the string that you evaluate as a duration, except for milliseconds, which must be a whole number.  
 
 ## See Also
+
 [System Data Type](system-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

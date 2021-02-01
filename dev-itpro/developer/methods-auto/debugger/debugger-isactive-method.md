@@ -33,14 +33,15 @@ Ok :=   Debugger.IsActive()
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks  
- When the debugger is activated, it is in one of the following states:  
+## Remarks
+
+When the debugger is activated, it is in one of the following states:  
   
--   Attached to a session.  
-  
--   Waiting to attach to a session.  
+- Attached to a session.
+- Waiting to attach to a session.  
 
 ## See Also
+
 [Debugger Data Type](debugger-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

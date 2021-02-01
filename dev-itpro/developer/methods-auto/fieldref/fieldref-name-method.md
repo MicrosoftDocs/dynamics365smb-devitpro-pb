@@ -39,15 +39,17 @@ An instance of the [FieldRef](fieldref-data-type.md) data type.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks  
- The [CAPTION Method \(FieldRef, TestPage Field\)](../../methods/devenv-caption-method-fieldref-testpage-field.md) method retrieves the [Caption Property](../../properties/devenv-caption-property.md) of a field. To enable your application for multilanguage functionality, you must use the [FIELDCAPTION Method \(Record\)](../../methods-auto/record/record-fieldcaption-method.md) instead.  
+## Remarks
 
- This method is similar to the [FIELDNAME Method \(Record\)](../../methods-auto/record/record-fieldname-method.md).  
+The [Caption Method \(FieldRef, TestPage Field\)](../../methods/devenv-caption-method-fieldref-testpage-field.md) method retrieves the [Caption Property](../../properties/devenv-caption-property.md) of a field. To enable your application for multilanguage functionality, you must use the [FieldCaption Method \(Record\)](../../methods-auto/record/record-fieldcaption-method.md) instead.  
 
-## Example  
- The following example opens the Customer table as a RecordRef variable that is named CustomerRecref. The [FIELD Method \(RecordRef\)](../../methods-auto/recordref/recordref-field-method.md) creates a reference to the fields in the table and stores the FieldRef in the MyFieldRef variable. The code loops through field 1 through 5. For each field, the NAME method retrieves the name of the field and stores the value in the varName variable. The field number and the value in the varName variable are displayed in a message box. 
+This method is similar to the [FieldName Method \(Record\)](../../methods-auto/record/record-fieldname-method.md).  
 
-```
+## Example
+
+The following example opens the Customer table as a RecordRef variable that is named CustomerRecref. The [Field Method \(RecordRef\)](../../methods-auto/recordref/recordref-field-method.md) creates a reference to the fields in the table and stores the FieldRef in the MyFieldRef variable. The code loops through field 1 through 5. For each field, the Name method retrieves the name of the field and stores the value in the varName variable. The field number and the value in the varName variable are displayed in a message box.
+
+```al
 var
     MyFieldRef: FieldRef;
     CustomerRecref: RecordRef;
@@ -56,16 +58,14 @@ var
     Text000: Label 'The name of field %1 is "%2".\\';
 begin
     for i := 1 to 5 do begin  
-        CustomerRecref.OPEN(DATABASE::Customer);  
-        MyFieldRef := CustomerRecref.FIELD(i);  
-        varName := MyFieldRef.NAME;  
+        CustomerRecref.Open(Database::Customer);  
+        MyFieldRef := CustomerRecref.Field(i);  
+        varName := MyFieldRef.Name;  
         Message(Text000, i, varName);  
-        CustomerRecref.CLOSE;  
+        CustomerRecref.Close;  
     end;  
 end;
-
 ```  
-
 
 ## See Also
 [FieldRef Data Type](fieldref-data-type.md)  

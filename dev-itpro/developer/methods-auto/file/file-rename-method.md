@@ -52,24 +52,27 @@ The new name that you want to assign to the file, including its path. When you e
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks  
- Typically, the return value is **false** if the file does not exist, or if the file is a system or hidden file.  
+## Remarks
+
+Typically, the return value is **false** if the file does not exist, or if the file is a system or hidden file.  
   
 ## Example  
- The following example changes the name of a text file that is named Testfile.txt to NewTestFile.txt. The path of the file that is renamed is C:\\TestFolder\\Testfile.txt. The name and path are stored in the varOldFile variable. The new name and path of the file are stored the varNewfile variable. The RENAME method uses the variables to change the name of the file. This example assumes that you have created the following file on your computer: C:\\TestFolder\\Testfile.txt. 
 
-```
+The following example changes the name of a text file that is named Testfile.txt to NewTestFile.txt. The path of the file that is renamed is C:\\TestFolder\\Testfile.txt. The name and path are stored in the varOldFile variable. The new name and path of the file are stored the varNewfile variable. The RENAME method uses the variables to change the name of the file. This example assumes that you have created the following file on your computer: C:\\TestFolder\\Testfile.txt. 
+
+```al
  var
     varOldfile: Text;
     varNewfile: Text;
 begin
     varOldfile := 'C:\TestFolder\Testfile.txt' ;  
     varNewfile := 'C:\TestFolder\NewTestFile.txt';  
-    RENAME(varOldfile, varNewfile);  
+    Rename(varOldfile, varNewfile);  
 end;
 ```  
   
 ## See Also
+
 [File Data Type](file-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

@@ -45,9 +45,9 @@ The path and the name of the file that you want to save the report as. The path 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- You can use the SAVEASEXCEL method on the global REPORT object and on Report variables. If, at design time, you do not know the specific report that you want to run, then use the global REPORT object and specify the report number in the *Number* parameter. If you do know which report you want to run, then create a Report variable, set the Subtype of the variable to a specific report, and use this variable when you call the SAVEASEXCEL method.  
+ You can use the SaveAsExcel method on the global Report object and on Report variables. If, at design time, you do not know the specific report that you want to run, then use the global Report object and specify the report number in the *Number* parameter. If you do know which report you want to run, then create a Report variable, set the Subtype of the variable to a specific report, and use this variable when you call the SaveAsExcel method.  
 
- When you call the SAVEASEXCEL method, the report is generated and saved to "*FileName*." The request page is not shown.  
+ When you call the SaveAsExcel method, the report is generated and saved to "*FileName*." The request page is not shown.  
 
  If the destination folder that you specify in *FileName* does not exist, then you get the following error:  
 
@@ -62,7 +62,7 @@ The path and the name of the file that you want to save the report as. The path 
  **Either the caller does not have the required permission or the specified path is read-only.**  
 
 ## Example  
- This example shows how to use the SAVEASEXCEL method to save the Excel workbook to the  [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] and then download the file to a  computer that is running the [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)] application. 
+ This example shows how to use the SaveAsExcel method to save the Excel workbook to the  [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] and then download the file to a  computer that is running the [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)] application. 
  
 ```  
 var
@@ -73,24 +73,24 @@ var
     ReturnValue: Boolean;
 begin
     // Specify that TempFile is opened as a binary file.  
-    TempFile.TEXTMODE(FALSE);  
+    TempFile.TextMode(False);  
     // Specify that you can write to TempFile.  
-    TempFile.WRITEMODE(TRUE);  
+    TempFile.WriteMode(True);  
     Name := 'C:\Temp\TempReport.xls';  
     // Create and open TempFile.  
-    TempFile.CREATE(Name);  
-    // Close TempFile so that the SAVEASEXCEL method can write to it.  
-    TempFile.CLOSE;  
+    TempFile.Create(Name);  
+    // Close TempFile so that the SaveAsExcel method can write to it.  
+    TempFile.Close;  
     
-    REPORT.SAVEASEXCEL(406,Name);  
+    Report.SaveAsExcel(406,Name);  
     
-    TempFile.OPEN(Name);  
-    TempFile.CREATEINSTREAM(NewStream);  
+    TempFile.Open(Name);  
+    TempFile.CreateInStream(NewStream);  
     ToFile := 'Report.xls';  
     
     // Transfer the content from the temporary file on the  
     // server to a file on the client.  
-    ReturnValue := DOWNLOADFROMSTREAM(  
+    ReturnValue := DownloadFromStream(  
       NewStream,  
       'Save file to client',  
       '',  
@@ -98,7 +98,7 @@ begin
       ToFile);  
     
     // Close the temporary file.  
-    TempFile.CLOSE();  
+    TempFile.Close();  
 end;
 ```  
 

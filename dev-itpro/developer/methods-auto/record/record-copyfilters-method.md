@@ -16,7 +16,7 @@ author: SusanneWindfeldPedersen
 # Record.CopyFilters Method
 > **Version**: _Available from runtime version 1.0._
 
-Copies all the filters set by the SETFILTER method (Record) or the SETRANGE method (Record) from one record to another.
+Copies all the filters set by the SetFilter method (Record) or the SETRANGE method (Record) from one record to another.
 
 
 ## Syntax

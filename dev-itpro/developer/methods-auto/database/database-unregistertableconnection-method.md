@@ -28,7 +28,7 @@ Unregisters a table connection to an external database.
 ## Parameters
 *Type*  
 &emsp;Type: [TableConnectionType](../tableconnectiontype/tableconnectiontype-option.md)  
-Specifies the type of table connection as defined in the TableType property. If the table is of type ExternalSQL, UNREGISTERTABLECONNECTION rolls back the current transaction.
+Specifies the type of table connection as defined in the TableType property. If the table is of type ExternalSQL, UNREGISTERTableCONNECTION rolls back the current transaction.
         
 *Name*  
 &emsp;Type: [String](../string/string-data-type.md)  

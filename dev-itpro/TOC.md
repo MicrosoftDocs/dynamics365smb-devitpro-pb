@@ -46,7 +46,6 @@
 ### [Customize Business Central](/dynamics365/business-central/ui-customizing-overview?toc=/dynamics365/business-central/dev-itpro/toc.json) 
 ## Frequently asked questions
 ### [Frequently asked questions (general)](faq.yml)
-### [FAQ about Connecting to the Intelligent Cloud from On-Premises Solutions](administration/FAQ-Intelligent-Cloud.md)
 ### [FAQ for Developing in AL](developer/devenv-dev-faq.md)
 ### [FAQ about Library and Dependency Apps in Business Central](developer/app-faq-dependencies-libraries.md)
 ### [FAQ about Testing your Business Central App](developer/app-faq-test.md)
@@ -55,6 +54,7 @@
 ### [FAQ for Marketing Validation](developer/readiness/readiness-marketing-validation-faq.md)
 ### [FAQ for Update Lifecycle for AppSource Apps](developer/devenv-update-app-life-cycle-faq.md)
 ### [FAQ About the Windows Client and Business Central](faq-win-cli.md)
+### [FAQ about Connecting to Business Central Online from On-Premises Solutions](administration/FAQ-Intelligent-Cloud.md)
 ## Help and Support
 ### [Resources for Help and Support](help-and-support.md)
 ### [Legal Resources](terms/legal.md)
@@ -150,7 +150,7 @@
 ### [Migrating from Business Central On-Premises](administration/migrate-business-central-on-premises.md)
 ### [Migrating from Dynamics GP](administration/migrate-dynamics-gp.md)
 ### [Migrating from Dynamics NAV](upgrade/Upgrade-Considerations.md#online)
-### [FAQ about Connecting to the Intelligent Cloud](administration/faq-intelligent-cloud.md)
+### [FAQ about Connecting to Business Central Online from On-Premises Solutions](administration/faq-intelligent-cloud.md)
 ### [Troubleshooting Cloud Migration](administration/migration-troubleshooting.md)
 <!--### [Migrating from Dynamics SL](administration/migrate-data.md)-->
 <!-- end migrate -->
