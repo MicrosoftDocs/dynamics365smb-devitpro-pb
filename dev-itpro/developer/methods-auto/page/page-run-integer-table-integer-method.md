@@ -16,7 +16,7 @@ author: SusanneWindfeldPedersen
 # Page.Run Method
 > **Version**: _Available from runtime version 1.0._
 
-Creates and launches a page that you specify. You can use CLEAR method to remove the page.
+Creates and launches a page that you specify. You can use Clear method to remove the page.
 
 
 ## Syntax

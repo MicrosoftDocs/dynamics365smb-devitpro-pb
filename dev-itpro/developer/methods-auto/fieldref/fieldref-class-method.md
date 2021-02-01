@@ -39,34 +39,36 @@ An instance of the [FieldRef](fieldref-data-type.md) data type.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks  
- The FieldRef refers to the field that you are interested in.  
+## Remarks
+
+The FieldRef refers to the field that you are interested in.  
   
- The CLASS method returns the class as an Option. However, you cannot assign the class to an Option variable directly. Instead, you must use the [EVALUATE Method](../../methods/devenv-evaluate-method.md). The EVALUATE method has a variable parameter to which the value is assigned and a string parameter. You use the forMAT method to convert the result of the FieldRef.CLASS method to Text, and then use the EVALUATE method to convert the Text to an Option.  
+The Class method returns the class as an Option. However, you cannot assign the class to an Option variable directly. Instead, you must use the [Evaluate Method](../../methods/devenv-evaluate-method.md). The Evaluate method has a variable parameter to which the value is assigned and a string parameter. You use the forMAT method to convert the result of the FieldRef.Class method to Text, and then use the Evaluate method to convert the Text to an Option.  
   
 ## Example 1
 
- In this example, the return value of the CLASS method is converted to Text and then converted to an Option. The value of the **OptionString** property of OptionVar is Normal,FlowFilter,FlowField.  
+In this example, the return value of the Class method is converted to Text and then converted to an Option. The value of the **OptionString** property of OptionVar is Normal,FlowFilter,FlowField.  
   
-```  
+```al
 var
     OptionVar: Option;
     FldRef: FieldRef;
 begin
-    EVALUATE(OptionVar,forMAT(FldRef.CLASS));  
+    Evaluate(OptionVar,Format(FldRef.Class));  
 end;
 ```  
   
 ## Example 2
 
- In this example, the return value of the CLASS method is converted to Text and then converted to an Option. This example uses the Field virtual table instead of an Option variable. The Field virtual table has a Class field, which is an Option and already has the correct OptionString.  
+ 
+In this example, the return value of the Class method is converted to Text and then converted to an Option. This example uses the Field virtual table instead of an Option variable. The Field virtual table has a Class field, which is an Option and already has the correct OptionString.  
 
-```
+```al
 var
     FieldRec: Record Field;
     FldRef: FieldRef;
 begin
-    EVALUATE(FieldRec.Class,FORMAT(FldRef.CLASS));  
+    Evaluate(FieldRec.Class,Format(FldRef.Class));  
 end;
 ```  
 

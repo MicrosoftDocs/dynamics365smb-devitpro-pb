@@ -16,7 +16,7 @@ author: SusanneWindfeldPedersen
 # HttpClient.Get Method
 > **Version**: _Available from runtime version 1.0._
 
-Sends a GET request to get the resource identified by the request URL.
+Sends a Get request to get the resource identified by the request URL.
 
 
 ## Syntax

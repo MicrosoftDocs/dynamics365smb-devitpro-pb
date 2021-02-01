@@ -50,7 +50,7 @@ var
     Text001: Label 'DOes the variant contain a text constant? %1.';
 begin
     MyVariant := Text000;  
-    varResult := MyVariant.IsTextCONSTANT;  
+    varResult := MyVariant.IsTextConstant;  
     Message(Text001,MyVariant,varResult);  
     Message(Text001,varResult);  
 end;

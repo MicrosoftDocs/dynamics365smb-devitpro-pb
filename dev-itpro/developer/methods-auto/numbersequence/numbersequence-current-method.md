@@ -43,7 +43,7 @@ Returns the current value from number sequence.
 ## Example
 The following example gets the current value for the number sequence `MyNumberSequence`, which is not company specific.
  
-```
+```al
 number := NumberSequence.Current('MyNumberSequence', false);
 ```
 

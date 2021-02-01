@@ -49,25 +49,25 @@ The InStream object from which you want to copy; the source stream.
 
 ## Example  
 
-```  
+```al
 var
     F1: File;
     F2: File;
     InS: InStream;
     OutS: OutStream;
 begin
-    F1.OPEN('c:\Test.txt');  
-    F1.CREATEINSTREAM(InS);  
-    F2.CREATE('c:\CopyTest.txt');  
-    F2.CREATEOUTSTREAM(OutS);  
-    COPYSTREAM(OutS,InS);  
-    F1.CLOSE();  
-    F2.CLOSE();  
+    F1.Open('c:\Test.txt');  
+    F1.CreateInStream(InS);  
+    F2.Create('c:\CopyTest.txt');  
+    F2.CreateOutStream(OutS);  
+    CopyStream(OutS,InS);  
+    F1.Close();  
+    F2.Close();  
 end;
 ```  
 
-
 ## See Also
+
 [System Data Type](system-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

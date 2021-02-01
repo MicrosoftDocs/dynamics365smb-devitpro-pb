@@ -40,30 +40,30 @@ The string converted to uppercase.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example  
- The following example shows how to use the **UPPERCASE** method.  
+ The following example shows how to use the **UpperCase** method.  
   
-```  
+```al
 var
     Text000: Label 'Outstanding Order Status';  
-    Text001: Label 'The test string before UPPERCASE is called:\\%1';  
-    Text002: Label 'The string after UPPERCASE is called:\\%1';  
+    Text001: Label 'The test string before UpperCase is called:\\%1';  
+    Text002: Label 'The string after UpperCase is called:\\%1';  
 begin
     Lower := Text000;  
     Message(Text001, Lower);  
-    Upper := UPPERCASE(Lower);  
+    Upper := UpperCase(Lower);  
     Message(Text002, Upper);  
 end;
 ```  
   
  The first message window displays the following:  
   
- **The test-string before UPPERCASE is called:**  
+ **The test-string before UpperCase is called:**  
   
  **Outstanding Order Status**  
   
  The second message window displays the following:  
   
- **The string after UPPERCASE is called:**  
+ **The string after UpperCase is called:**  
   
  **OUTSTANDING ORDER STATUS**  
 

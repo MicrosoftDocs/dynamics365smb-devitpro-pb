@@ -61,23 +61,24 @@ The path and file name to give the uploaded file. If you do not provide a path, 
 ## Remarks  
 
 > [!NOTE]  
->  This method is not supported<!--NAV by the [!INCLUDE[d365fin_web_md](../includes/d365fin_web_md.md)]--> on devices that run Apple iOS, such as iPad. The dialog box for uploading a file displays, but it is disabled and the user cannot select a file.  
+> This method is not supported<!--NAV by the [!INCLUDE[d365fin_web_md](../includes/d365fin_web_md.md)]--> on devices that run Apple iOS, such as iPad. The dialog box for uploading a file displays, but it is disabled and the user cannot select a file.  
 
 The business logic is run on the [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] and not on the client. Files are created on the [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] and not locally on the client.  
 
-[UPLOAD Method \(FILE\)](../../methods-auto/file/file-upload-method.md) and [UPLOADINTOSTREAM Method \(File\)](../../methods-auto/file/file-uploadintostream-method.md) are used to send a file from the client to a [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)].  
+[Upload Method \(File\)](../../methods-auto/file/file-upload-method.md) and [UploadIntoStream Method \(File\)](../../methods-auto/file/file-uploadintostream-method.md) are used to send a file from the client to a [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)].  
 
-[DOWNLOAD Method \(File\)](../../methods-auto/file/file-download-method.md) and [DOWNLOADFROMSTREAM Method \(File\)](../../methods-auto/file/file-downloadfromstream-method.md) are used to send a file from a [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] to the client.  
+[Download Method \(File\)](../../methods-auto/file/file-download-method.md) and [DownloadFromStream Method \(File\)](../../methods-auto/file/file-downloadfromstream-method.md) are used to send a file from a [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] to the client.  
 
 We recommend that you use the methods in codeunit 419, File Management, to upload and download files.  
 
 ## Example  
 
 ```  
-UPLOAD('Upload file','C:\','Text file(*.txt)|*.txt','Test.txt',varTest);  
+Upload('Upload file','C:\','Text file(*.txt)|*.txt','Test.txt',varTest);  
 ```  
 
 ## See Also
+
 [File Data Type](file-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

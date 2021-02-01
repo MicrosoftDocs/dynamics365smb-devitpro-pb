@@ -28,7 +28,7 @@ Stores whole numbers with values that range from -2,147,483,647 to 2,147,483,647
   
  If you assign -2,147,483,648 directly to an Integer variable, then you get an error when you try to compile the code. However, you can indirectly assign -2,147,483,648 to an Integer variable by using the following code.  
   
-```  
+```al
 IntegerVar := -2147483647;  
 IntegerVar := IntegerVar - 1;  
 ```  
@@ -40,7 +40,7 @@ IntegerVar := IntegerVar - 1;
 
  The following are examples of integer values.  
   
-```  
+```al
 546  
 -3425  
 ```  
@@ -49,7 +49,7 @@ IntegerVar := IntegerVar - 1;
 
  The following example is a decimal and not an integer.  
   
-```  
+```al
 342.45  
 ```  
   

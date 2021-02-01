@@ -46,7 +46,7 @@ The message
 
 
 ## Remarks
-The Message method defines the notification. You use the [SEND Method (Notification)](../../methods-auto/notification/notification-send-method.md) to send the notification to the client, where it will be displayed.
+The Message method defines the notification. You use the [Send Method (Notification)](../../methods-auto/notification/notification-send-method.md) to send the notification to the client, where it will be displayed.
 
 For more information and a detailed example, see [Notifications](../../devenv-notifications-developing.md).
 
@@ -54,8 +54,8 @@ For more information and a detailed example, see [Notifications](../../devenv-no
 The following code creates a notification and sends it in the local scope.
 ```
 MyNotification.Message := 'This is a notification';
-MyNotification.SCOPE := NOTIFICATIONSCOPE::LocalScope;
-MyNotification.SEND;
+MyNotification.Scope := NotificationScope::LocalScope;
+MyNotification.Send;
 ```
 
 ## See Also

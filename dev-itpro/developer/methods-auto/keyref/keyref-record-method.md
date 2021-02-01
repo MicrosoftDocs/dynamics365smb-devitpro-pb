@@ -38,16 +38,16 @@ The RecordRef of the record that is currently selected referenced by the key. If
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
   
- The table with ID 18 \(the Customer table\) is open with a reference. The [KeyRef Data Type](../../datatypes/devenv-keyref-data-type.md) for the record is retrieved by using the [KEYINDEX Method \(RecordRef\)](../../methods/devenv-keyindex-method-recordref.md). The method retrieves the key that has an index of 1 in the record and stores the value in the varKeyRef variable. The varKeyRef variable is then used to return the [RecordRef Data Type](../../datatypes/devenv-recordref-data-type.md).
+ The table with ID 18 \(the Customer table\) is open with a reference. The [KeyRef Data Type](../../datatypes/devenv-keyref-data-type.md) for the record is retrieved by using the [KeyIndex Method \(RecordRef\)](../../methods/devenv-keyindex-method-recordref.md). The method retrieves the key that has an index of 1 in the record and stores the value in the varKeyRef variable. The varKeyRef variable is then used to return the [RecordRef Data Type](../../datatypes/devenv-recordref-data-type.md).
 
 ```  
 var
     RecRef: RecordRef;
     varKeyRef: KeyRef;
 begin    
-    RecRef.OPEN(18);  
-    varKeyRef := RecRef.KEYINDEX(1);  
-    RecRef := varKeyRef.RECORD;  
+    RecRef.Open(18);  
+    varKeyRef := RecRef.KeyIndex(1);  
+    RecRef := varKeyRef.Record;  
 end;
 ```  
   

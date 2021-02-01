@@ -34,7 +34,7 @@ All of the parameters below are optional and the order is not enforced.
 
 ## Syntax example
 
-```
+```al
 var
     a : Label 'Label Text', Comment='Foo', MaxLength=999, Locked=true;
 ```

@@ -45,13 +45,13 @@ The folder path and name of the file that you want to save the report as. The pa
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- The SAVEASHTML method uses the logic in the codeunit **9651 Document Report Mgt.** code unit to handle the format transformation.  
+ The SaveAsHTML method uses the logic in the codeunit **9651 Document Report Mgt.** code unit to handle the format transformation.  
   
- The SAVEASHTML method can be used on the Report data type and on Report variables. When you are programming the SAVEASHTML method, if you do not know the specific report that you want to run, then use the global REPORT object and specify the report number in the *Number* parameter. If you know which report you want to run, then create a Report variable, set the **Subtype** of the variable to a specific report, and then use this variable when you call the SAVEASHTML method.  
+ The SaveAsHTML method can be used on the Report data type and on Report variables. When you are programming the SaveAsHTML method, if you do not know the specific report that you want to run, then use the global Report object and specify the report number in the *Number* parameter. If you know which report you want to run, then create a Report variable, set the **Subtype** of the variable to a specific report, and then use this variable when you call the SaveAsHTML method.  
   
- When you call the SAVEASXML method, the report is generated and saved to "FileName." The request page is not shown.  
+ When you call the SaveAsXML method, the report is generated and saved to "FileName." The request page is not shown.  
   
- Reports that use an RDLC layout when run cannot be saved in the HTML format. A runtime error will occur if SAVEASHTML is used on an RDLC report.  
+ Reports that use an RDLC layout when run cannot be saved in the HTML format. A runtime error will occur if SaveAsHTML is used on an RDLC report.  
   
 
 ## See Also

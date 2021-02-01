@@ -16,7 +16,7 @@ author: SusanneWindfeldPedersen
 # Query.Open Method
 > **Version**: _Available from runtime version 1.0._
 
-Runs a query object and generates a data set that can be read. The following code shows the syntax of the OPEN method. Query is a variable of the Query data type that specifies the query object.
+Runs a query object and generates a data set that can be read. The following code shows the syntax of the Open method. Query is a variable of the Query data type that specifies the query object.
 
 
 ## Syntax
@@ -38,47 +38,47 @@ An instance of the [Query](query-data-type.md) data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- When the **OPEN** method is called, the query is executed and the *Query* variable is put in a state in which the resulting dataset can be read by the **READ** method. The **OPEN** method has the following behavior:  
+ When the **Open** method is called, the query is executed and the *Query* variable is put in a state in which the resulting dataset can be read by the **Read** method. The **Open** method has the following behavior:  
 
--   To apply filters for the **SETFILTERS** method or **SETRANGE** method, you call the **SETFILTERS** method or **SETRANGE** method before the **OPEN** method.  
+-   To apply filters for the **SetFilterS** method or **SetRange** method, you call the **SetFilterS** method or **SetRange** method before the **Open** method.  
 
--   To read a row from the dataset, you must call the **OPEN** method before the **READ** method, as shown in the following code example.  
+-   To read a row from the dataset, you must call the **Open** method before the **Read** method, as shown in the following code example.  
 
+    ```al
+    Query.SetFilter(Column1, String);  
+    Query.Open;  
+    Query.Read;  
     ```  
-    Query.SETFILTER(Column1, String);  
-    Query.OPEN;  
-    Query.READ;  
-    ```  
 
--   To close an open query and return it to the initialized state, you can call the **CLOSE** method. However, you can call the **OPEN** method multiple times without calling the **CLOSE** method because the **OPEN** method implicitly calls the **CLOSE** method if the query dataset is currently in an opened state.  
+-   To close an open query and return it to the initialized state, you can call the **Close** method. However, you can call the **Open** method multiple times without calling the **Close** method because the **Open** method implicitly calls the **Close** method if the query dataset is currently in an opened state.  
 
--   If the **OPEN** method is called on a query that is already in the opened or in the reading state, then the query dataset is closed, and then the query is executed again. To continue to loop through the dataset, the **READ** method must be called again. The next **READ** method call returns the first row in the dataset, as shown in the following code example.  
+-   If the **Open** method is called on a query that is already in the opened or in the reading state, then the query dataset is closed, and then the query is executed again. To continue to loop through the dataset, the **Read** method must be called again. The next **Read** method call returns the first row in the dataset, as shown in the following code example.  
 
-    ```  
+    ```al
     // Opens the query and generates a dataset.  
-    Query.OPEN;  
-    Query.READ;  
+    Query.Open;  
+    Query.Read;  
     // Closes the query and reopens it.  
-    Query.OPEN;  
+    Query.Open;  
     // Reads the first row in the new dataset.  
-    Query.READ;  
+    Query.Read;  
     ```  
 
--  **OPEN** method does not clear any filters that were set by the **SETFILTER** or **SETRANGE** methods on a previous **OPEN** call. If you want to clear the filters, then you must call the **CLEAR** method on the query variable.  
+-  **Open** method does not clear any filters that were set by the **SetFilter** or **SetRange** methods on a previous **Open** call. If you want to clear the filters, then you must call the **Clear** method on the query variable.  
 
-    ```  
-    Query.SETFILTER(Column1, String);  
-    Query.OPEN;  
-    Query.READ;  
-    CLEAR(query);  
-    Query.OPEN;  
-    Query.READ;  
+    ```al
+    Query.SetFilter(Column1, String);  
+    Query.Open;  
+    Query.Read;  
+    Clear(query);  
+    Query.Open;  
+    Query.Read;  
     ```  
 
--   You are required to call the **OPEN** method before the [SAVEASXML Method](../../methods/devenv-saveasxml-method.md) or [SAVEASCSV Method](../../methods/devenv-saveascsv-method.md). The **SAVEASXML** and **SAVEASCSV** methods automatically close the current query dataset and initialize a new instance of the query.  
+-   You are required to call the **Open** method before the [SaveAsXML Method](../../methods/devenv-saveasxml-method.md) or [SaveAsCSV Method](../../methods/devenv-saveascsv-method.md). The **SaveAsXML** and **SaveAsCSV** methods automatically close the current query dataset and initialize a new instance of the query.  
 
 ## Example  
- The following example demonstrates how to use the **OPEN** method on a query. The example code sets filters on the query, opens the query, and then reads the dataset. For each row in the dataset, a message box is displayed that contains the values of the columns in the row.  
+ The following example demonstrates how to use the **Open** method on a query. The example code sets filters on the query, opens the query, and then reads the dataset. For each row in the dataset, a message box is displayed that contains the values of the columns in the row.  
 
  This example requires that you create a query called **Customer\_SalesQuantity** that links table **18 Customer** with table  **37 Sales Lines** from the [!INCLUDE[demolong](../../includes/demolong_md.md)]. Include columns for the **Name** and **No.** fields from the Customer table and the **Quantity** field from Sales Lines table.  
 
@@ -86,22 +86,22 @@ An instance of the [Query](query-data-type.md) data type.
 
  The following AL code opens the query, reads each row of the dataset, and then displays a message that uses the content of the row. You can add the code to a codeunit, and then run the codeunit to see the results.  
 
-```  
+```al
 var
     MyQuery: Query "Customer SalesQuantity";
     Text000: Label 'Customer name = %1, Quantity = %2';
 begin
     // Sets a filter to display only sales quantities greater than 20.  
-    MyQuery.SETFILTER(Quantity, '>20');   
+    MyQuery.SetFilter(Quantity, '>20');   
     // Runs the query.  
-    MyQuery.OPEN;  
+    MyQuery.Open;  
     // Reads each row in the dataset and displays a message with column values.  
-    // Stops reading when there are no more rows remaining in the dataset (READ is FALSE).  
-    while MyQuery.READ do  
+    // Stops reading when there are no more rows remaining in the dataset (Read is False).  
+    while MyQuery.Read do  
     begin  
       Message(Text000, MyQuery.Name, MyQuery.Quantity);  
     end;  
-    MyQuery.CLOSE;  
+    MyQuery.Close;  
 end;
 ```  
 

@@ -28,12 +28,12 @@ Represents the emission scope of the telemetry signal.
 
 ## Examples
 
-```
+```al
 if not FileManagement.ServerFileExists(ServerFile) then begin
             LogInternalError(SomethingWentWrongErr, DataClassification::SystemMetadata, Verbosity::Error);
 ```
 
-```
+```al
 if not XmlDocument.ReadFrom('<?xml version="1.0" encoding="UTF-8"?>' + '<Elster xmlns="' + XmlNameSpace + '"></Elster>', XmlSubDoc) then
             LogInternalError(XMLDocHasNotBeenCreatedErr, DataClassification::SystemMetadata, Verbosity::Error);
 ```

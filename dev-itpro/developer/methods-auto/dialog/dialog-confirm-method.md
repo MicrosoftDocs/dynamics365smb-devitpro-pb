@@ -52,10 +52,11 @@ The message window is automatically sized. The height of the window corresponds 
 
 We recommend that you always end `Confirm` messages with a question mark. For more information about best practices for end-user messages, see [Progress Windows, Message, Error, and Confirm Methods](../../devenv-progress-windows-message-error-and-confirm-methods.md).  
 
-## Example  
- In the following example, the Dialog.CONFIRM method prompts the user for a **true** or **false** answer. 
+## Example
 
-```
+In the following example, the Dialog.Confirm method prompts the user for a **true** or **false** answer. 
+
+```al
 var
     Question: Text;
     Answer: Boolean;
@@ -65,7 +66,7 @@ var
 begin
     CustomerNo := 01121212;  
     Question := Text000;  
-    Answer := Dialog.CONFIRM(Question, TRUE, CustomerNo);  
+    Answer := Dialog.Confirm(Question, true, CustomerNo);  
     Message(Text001, Answer);  
 end;
 ```  

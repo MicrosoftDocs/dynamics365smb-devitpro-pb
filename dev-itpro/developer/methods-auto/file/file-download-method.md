@@ -62,35 +62,36 @@ The name to give the downloaded file. This is the default file name that is show
 <!-- This method is not fully supported by the [!INCLUDE[d365fin_web_md](../includes/d365fin_web_md.md)] on devices that run Apple iOS, such as iPad.-->
 
 > [!NOTE]  
->  On devices that run Apple iOS, such as iPad, you can only download a file if the Apple iOS device on which you are downloading the file has an application which supports the file type.  
+> On devices that run Apple iOS, such as iPad, you can only download a file if the Apple iOS device on which you are downloading the file has an application which supports the file type.  
 
 Files are saved to the default download location that is configured in the end-user's browser.
 
 The business logic is run on the computer that is running [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] and not on the client. Files are created on the computer that is running [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] and not locally on the client computer.  
 
- [UPLOAD Method \(File\)](../../methods-auto/file/file-upload-method.md) and [UPLOADINTOSTREAM Method \(File\)](../../methods-auto/file/file-uploadintostream-method.md) are used to send a file from the client to a [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] instance.  
+[Upload Method \(File\)](../../methods-auto/file/file-upload-method.md) and [UploadIntoStream Method \(File\)](../../methods-auto/file/file-uploadintostream-method.md) are used to send a file from the client to a [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] instance.  
 
- [DOWNLOAD Method \(FILE\)](../../methods-auto/file/file-download-method.md) and [DOWNLOADFROMSTREAM Method \(File\)](../../methods-auto/file/file-downloadfromstream-method.md) are used to send a file from a [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] instance to the client.  
+[Download Method \(File\)](../../methods-auto/file/file-download-method.md) and [DownloadFromStream Method \(File\)](../../methods-auto/file/file-downloadfromstream-method.md) are used to send a file from a [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] instance to the client.  
 
- We recommend that you use the methods in codeunit **419 File Management** to upload and download files. 
+We recommend that you use the methods in codeunit **419 File Management** to upload and download files. 
 
+[!INCLUDE[multi_file_download_web_client](../../includes/multi_file_download_web_client.md)]
 
-[!INCLUDE[multi_file_download_web_client](../../includes/multi_file_download_web_client.md)]    
+## Example
 
-## Example  
- This example shows how to use the DOWNLOAD method.
+This example shows how to use the Download method.
 
- ```
+```al
  var
     ToFile: Text;
 begin
     ToFile := 'ToFile.txt';  
-    DOWNLOAD('FromFile.txt','Download file','C:\','Text file(*.txt)|*.txt',ToFile);  
+    Download('FromFile.txt','Download file','C:\','Text file(*.txt)|*.txt',ToFile);  
 end;
 ```  
 
 
 ## See Also
+
 [File Data Type](file-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

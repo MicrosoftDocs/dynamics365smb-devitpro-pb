@@ -41,11 +41,12 @@ Specifies the record from which you want to copy links.
 
  The link can be a link to a Web site, a file stored on the local or on a remote computer, or a link to a page in your application.  
 
-## Example  
- The following example copies all links from a source record that is named VendorRecord to the currently open record in the Customer table. The source record is record 10000 from the Vendor table. The code opens the Customer table as a RecordRef variable that is named CustomerRecref. The [FIELD Method \(RecordRef\)](recordref-field-method.md) creates a FieldRef variable that is named MyFieldRef for field 1 \(No.\) in the Customer table. The [SETRANGE Method \(FieldRef\)](../fieldref/fieldref-setrange-method.md) selects records in the range 20000 to 40000 from the Customer table and record 10000 from the Vendor table. The [FIND Method \(RecordRef\)](recordref-find-method.md) searches the Customer table for the records in the filtered range. If the record that meets the filter criteria is found, the links from the Vendor record No. 10000 are copied to the customer records in the range 30000 to 40000. The record id of the record to which the links were copied is displayed in a message box. The process is repeated until there is no more record in the range. The [CLOSE Method \(RecordRef\)](recordref-close-method.md) closes the table. 
+## Example
+
+The following example copies all links from a source record that is named VendorRecord to the currently open record in the Customer table. The source record is record 10000 from the Vendor table. The code opens the Customer table as a RecordRef variable that is named CustomerRecref. The [Field Method \(RecordRef\)](recordref-field-method.md) creates a FieldRef variable that is named MyFieldRef for field 1 \(No.\) in the Customer table. The [SetRange Method \(FieldRef\)](../fieldref/fieldref-setrange-method.md) selects records in the range 20000 to 40000 from the Customer table and record 10000 from the Vendor table. The [Find Method \(RecordRef\)](recordref-find-method.md) searches the Customer table for the records in the filtered range. If the record that meets the filter criteria is found, the links from the Vendor record No. 10000 are copied to the customer records in the range 30000 to 40000. The record id of the record to which the links were copied is displayed in a message box. The process is repeated until there is no more record in the range. The [Close Method \(RecordRef\)](recordref-close-method.md) closes the table. 
 
 
-```  
+```al
 var
     MyFieldRef: FieldRef;
     CustomerRecref: RecordRef;
@@ -53,18 +54,18 @@ var
     Count: Integer;
     Text000: Label 'The links have been copied to %1';
 begin
-    CustomerRecref.OPEN(DATABASE::Customer);  
-    MyFieldRef := CustomerRecref.FIELD(1);  
-    MyFieldRef.SETRANGE('30000' , '40000');  
-    VendorRecord.SETRANGE("No.", '10000');  
+    CustomerRecref.Open(Database::Customer);  
+    MyFieldRef := CustomerRecref.Field(1);  
+    MyFieldRef.SetRange('30000' , '40000');  
+    VendorRecord.SetRange("No.", '10000');  
     Count := 0;  
-    if CustomerRecref.FIND('-') then  
+    if CustomerRecref.Find('-') then  
       repeat  
         Count := Count + 1;  
-        CustomerRecref.COPYLINKS(VendorRecord);  
-        Message(Text000, CustomerRecref.RECORDID);  
-      until CustomerRecref.NEXT = 0;  
-    CustomerRecref.CLOSE;  
+        CustomerRecref.CopyLinks(VendorRecord);  
+        Message(Text000, CustomerRecref.RecordId);  
+      until CustomerRecref.Next = 0;  
+    CustomerRecref.Close;  
 end;
 ```  
 

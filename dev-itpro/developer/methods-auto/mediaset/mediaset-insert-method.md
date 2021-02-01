@@ -53,7 +53,7 @@ This example uses the Insert method and [Item Method \(MediaSet\)](../../methods
 -   Each table contains the record number '1000'.
 -   There is at least 1 media object in the MediaSet of record 1000 in TableA.
 
-```
+```al
  var
     recA: Record TableA;
     recB: Record TableB;

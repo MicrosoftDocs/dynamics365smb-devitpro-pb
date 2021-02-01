@@ -40,18 +40,18 @@ If this parameter is true, the version of the RecordRef will be checked. If this
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- Because all write operations automatically lock the table that is being used, LOCKTABLE would appear unnecessary. However, you could have a transaction in which an application wants to inspect data before possibly changing it, with a guarantee that the data being changed has not been modified by other applications since the read operation. The solution is to explicitly lock the table before the read operation. This makes sure that no other application makes changes between the read operation and the possible write operation. 
+ Because all write operations automatically lock the table that is being used, LockTable would appear unnecessary. However, you could have a transaction in which an application wants to inspect data before possibly changing it, with a guarantee that the data being changed has not been modified by other applications since the read operation. The solution is to explicitly lock the table before the read operation. This makes sure that no other application makes changes between the read operation and the possible write operation. 
 
  
 The table lock is released (unlocked) when the transaction is committed. 
   
- This method works the same as the [LOCKTABLE Method \(Record\)](../record/record-locktable-method.md).  
+ This method works the same as the [LockTable Method \(Record\)](../record/record-locktable-method.md).  
   
 ## Example 1
 
- The following example opens table number 18 \(Customer\) as a RecordRef that is named MyRecordRef. The LOCKTABLE method locks the table. This ensures that no records are inserted or deleted during the counting process. The [COUNT Method \(RecordRef\)](recordref-count-method.md) then retrieves the number of records in the table. The number of records is stored in the Count variable. The name of the table and the number of records in the table is displayed in a message box. The varTableNo variable can be used to open any table and get the number of records in that table by changing the value of the varTableNo variable. 
+ The following example opens table number 18 \(Customer\) as a RecordRef that is named MyRecordRef. The LockTable method locks the table. This ensures that no records are inserted or deleted during the counting process. The [Count Method \(RecordRef\)](recordref-count-method.md) then retrieves the number of records in the table. The number of records is stored in the Count variable. The name of the table and the number of records in the table is displayed in a message box. The varTableNo variable can be used to open any table and get the number of records in that table by changing the value of the varTableNo variable. 
   
-```  
+```al
 var
     CustomerRecref: RecordRef;
     Count: Integer;
@@ -59,10 +59,10 @@ var
     Text000: Label 'The number of records in the %1 table is: %2.'; 
 begin
     varTableNo := 18;  
-    MyRecordRef.OPEN(varTableNo);  
-    MyRecordRef.LOCKTABLE;  
-    Count := MyRecordRef.COUNT;  
-    Message(Text000, MyRecordRef.NAME, Count);  
+    MyRecordRef.Open(varTableNo);  
+    MyRecordRef.LockTable;  
+    Count := MyRecordRef.Count;  
+    Message(Text000, MyRecordRef.Name, Count);  
 end;
 ```  
   

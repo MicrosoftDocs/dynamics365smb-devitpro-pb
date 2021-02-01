@@ -55,7 +55,7 @@ Specifies the level of error handling on page background task level.
 
 ## Remarks
 
-The enqueued page background task stores the record ID of the current page. If the current record ID on the page changes, or the page is closed, the task is canceled. Typically, you call the ENQUEUEBACKGROUNDTASK method from a page trigger. The ID of the current record of the page must remain static after the call is made and while the background task is running. Otherwise, the task will be canceled. For this reason, we recommend that you don't enqueue the background task from the `OnOpenPage` trigger. Instead, use the  `OnAfterGetRecord` or `OnAfterGetCurrRecord` triggers.
+The enqueued page background task stores the record ID of the current page. If the current record ID on the page changes, or the page is closed, the task is canceled. Typically, you call the EnqueueBackgroundTask method from a page trigger. The ID of the current record of the page must remain static after the call is made and while the background task is running. Otherwise, the task will be canceled. For this reason, we recommend that you don't enqueue the background task from the `OnOpenPage` trigger. Instead, use the  `OnAfterGetRecord` or `OnAfterGetCurrRecord` triggers.
 
 ​The **Child Session Max Concurrency** setting of the [!INCLUDE[server](../../includes/server.md)] controls how many page background tasks can be run simultaneously for a parent session.  The setting has a default value of 5. If this number is exceeded, then they'll be queued and run when a slot becomes available as other tasks are finished. Enqueuing the task will fail if the total number of enqueued tasks exceed the **Child Sessions Max Queue Length** server configuration setting.​ For more information, see [Configuring Business Central Server - Asynchronous Processing](../../../administration/configure-server-instance.md#PBT).
 
@@ -74,9 +74,9 @@ It's possible to enqueue the task again in the completion trigger or error trigg
 
 ## Example
 
-The following code extends the **Customer Card** page with a page background task by using the ENQUEUEBACKGROUNDTASK method. For more information about this example, see [Page Background Tasks](../../devenv-page-background-tasks.md).
+The following code extends the **Customer Card** page with a page background task by using the EnqueueBackgroundTask method. For more information about this example, see [Page Background Tasks](../../devenv-page-background-tasks.md).
   
-```
+```al
 pageextension 50100 CustomerCardExt extends "Customer Card"
 {
     layout

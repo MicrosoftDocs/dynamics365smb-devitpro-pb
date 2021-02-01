@@ -52,16 +52,16 @@ The number of bytes that were written. If you omit this optional return value an
   
 ## Example  
   
-```
+```al
  var
     recBinaries: Record "Company Information";
     OStream: OutStream;
     Opt: Option;
 begin
-    recBinaries.FIND('-');  
-    recBinaries.Picture.CREATEOUTSTREAM(OStream);   
-    OStream.WRITE(Opt);  
-    recBinaries.MODIFY(); 
+    recBinaries.Find('-');  
+    recBinaries.Picture.CreateOutstream(OStream);   
+    OStream.Write(Opt);  
+    recBinaries.Modify(); 
 end;
 ```   
   
