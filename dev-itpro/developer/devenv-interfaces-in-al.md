@@ -81,16 +81,6 @@ page 50200 MyAddressPage
     ApplicationArea = All;
     UsageCategory = Administration;
 
-    layout
-    {
-        area(Content)
-        {
-            group(GroupName)
-            {
-            }
-        }
-    }
-
     actions
     {
         area(Processing)
@@ -153,6 +143,7 @@ page 50200 MyAddressPage
     var
         sendTo: enum SendTo;
 
+}
 ```
 
 ## See Also
