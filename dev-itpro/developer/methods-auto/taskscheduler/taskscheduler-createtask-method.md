@@ -64,11 +64,11 @@ Scheduled tasks are recorded in table **2000000175 Scheduled Task**.  For more i
 ## Example  
 The following example schedules a task to run the **Job Queue Dispatcher** and uses codeunit **Job Queue Error Handler** as the failure codeunit. 
 
-```  
+```al
 var
     JobQueueEntry: Record "Job Queue Entry";
 begin
-    TASKSCHEDULER.CREATETASK(CODEUNIT::"Job Queue Dispatcher", CODEUNIT::"Job Queue Error Handler", TRUE, COMPANYNAME, CURRENTDATETIME + 1000 + RANDOM(3000), JobQueueEntry.RECORDID);  
+    TaskScheduler.CreateTASK(CodeUnit::"Job Queue Dispatcher", CodeUnit::"Job Queue Error Handler", True, CompanyName, CurrentDateTime + 1000 + Random(3000), JobQueueEntry.RecordID);  
 end;
 ```  
 

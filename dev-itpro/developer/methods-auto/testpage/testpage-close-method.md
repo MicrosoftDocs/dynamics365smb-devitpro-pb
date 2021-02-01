@@ -38,13 +38,13 @@ An instance of the [TestPage](testpage-data-type.md) data type.
 ## Example  
  This example requires that you create a TestPage variable named CustTestPage with a Subtype of Customer List and that the codeunit in which you write the code is a test codeunit.  
   
-```  
+```al
 // Open the test page.  
-CustPage.OPENEDIT;  
+CustPage.OpenEdit;  
 // Add code to test the Customer List page.  
 // …  
 // Close the Customer Card   
-CustPage.CLOSE;  
+CustPage.Close;  
 ```  
   
 

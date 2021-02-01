@@ -43,7 +43,7 @@ AL debugger also lets you monitor the number of SQL rows read. For more informat
 
 The following code gets the number of SQL rows read for the session and displays the number in a message.
 
-```
+```al
 var
     SqlRowsRead := BigText;
 

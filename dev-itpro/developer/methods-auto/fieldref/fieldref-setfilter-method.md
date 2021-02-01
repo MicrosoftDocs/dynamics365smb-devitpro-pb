@@ -39,8 +39,9 @@ Replacement values to insert in replacement fields in the filter expression. The
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks  
- If the method is called with a field for which a filter already exists, the filter is removed before a new one is set. You can construct filters using the following operators.  
+## Remarks
+
+If the method is called with a field for which a filter already exists, the filter is removed before a new one is set. You can construct filters using the following operators.  
   
 |Operator|Description|  
 |--------------|-----------------|  
@@ -55,12 +56,13 @@ Replacement values to insert in replacement fields in the filter expression. The
 |\*|Forms a part of value|  
 |@|Case-insensitive|  
   
- This method is like the [SETFILTER Method \(Record\)](../../methods/devenv-setfilter-method-record.md) method.  
+This method is like the [SetFilter Method \(Record\)](../../methods/devenv-setfilter-method-record.md) method.  
   
-## Example  
- The following example opens the Customer table as a RecordRef variable that is named CustomerRecref. The [FIELD Method \(RecordRef\)](../../methods/devenv-field-method-recordref.md) creates a FieldRef for the first field \(No.\) and stores the reference in the MyFieldRef variable. The [GETFILTER Method \(FieldRef\)](../../methods/devenv-getfilter-method-fieldref.md) retrieves the filters that are set on the No. field and stores the value in the Filter1 variable. The value of any filter that is set is displayed in a message box. The SETFILTER method sets a filter that selects records from 10000 to 40000 in the No. field. The [GETFILTER Method \(FieldRef\)](../../methods/devenv-getfilter-method-fieldref.md) retrieves and stores the new filter in the Filter2 variable and displays it in a message. The value in the Filter1 variable is blank because no filter is set. The value in Filter2 is 10000..40000 because of the filter that is set by the SETFILTER method.
+## Example
+
+The following example opens the Customer table as a RecordRef variable that is named CustomerRecref. The [Field Method \(RecordRef\)](../../methods/devenv-field-method-recordref.md) creates a FieldRef for the first field \(No.\) and stores the reference in the MyFieldRef variable. The [GetFilter Method \(FieldRef\)](../../methods/devenv-getfilter-method-fieldref.md) retrieves the filters that are set on the No. field and stores the value in the Filter1 variable. The value of any filter that is set is displayed in a message box. The SetFilter method sets a filter that selects records from 10000 to 40000 in the No. field. The [GetFilter Method \(FieldRef\)](../../methods/devenv-getfilter-method-fieldref.md) retrieves and stores the new filter in the Filter2 variable and displays it in a message. The value in the Filter1 variable is blank because no filter is set. The value in Filter2 is 10000..40000 because of the filter that is set by the SetFilter method.
  
-```
+```al
 var
     MyFieldRef: FieldRef;
     CustomerRecref: RecordRef;
@@ -69,12 +71,12 @@ var
     Text000: Label 'Filter before filters set: %1.';
     Text001: Label 'Filter after filters set: %1.';
 begin
-    CustomerRecref.OPEN(DATABASE::Customer);  
-    MyFieldRef := CustomerRecref.FIELD(1);  
-    Filter1 := MyFieldRef.GETFILTER;  
+    CustomerRecref.Open(Database::Customer);  
+    MyFieldRef := CustomerRecref.Field(1);  
+    Filter1 := MyFieldRef.GetFilter;  
     Message(Text000, Filter1);  
-    MyFieldRef.SETFILTER('10000..40000');  
-    Filter2 := MyFieldRef.GETFILTER;  
+    MyFieldRef.SetFilter('10000..40000');  
+    Filter2 := MyFieldRef.GetFilter;  
     Message(Text001, Filter2);  
 end;
 ```  

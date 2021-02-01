@@ -45,7 +45,7 @@ If you call this method on a Variant, it returns an error.
   
 ## Example
 
-```
+```al
 var
     City: Text[30];
     MaxLength: Integer;

@@ -25,8 +25,8 @@ The following methods are available on instances of the Notification data type.
 |Method name|Description|
 |-----------|-----------|
 |[AddAction(String, Integer, String)](notification-addaction-method.md)|Specifies an action for the notification.|
-|[GetData(String)](notification-getdata-method.md)|Retrieves data that was passed to a notification instance as specified by a SETDATA method call.|
-|[HasData(String)](notification-hasdata-method.md)|Checks if data was passed to a notification instance as specified by a SETDATA method call.|
+|[GetData(String)](notification-getdata-method.md)|Retrieves data that was passed to a notification instance as specified by a SetData method call.|
+|[HasData(String)](notification-hasdata-method.md)|Checks if data was passed to a notification instance as specified by a SetData method call.|
 |[Id([Guid])](notification-id-method.md)|Specifies the identifier for a notification.|
 |[Message([String])](notification-message-method.md)|Specifies the content of the notification.|
 |[Recall()](notification-recall-method.md)|Recall a sent notification.|

@@ -44,7 +44,7 @@ The one-based index of the first occurrence of the substring inside the string.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- The STRPOS method returns the position of the first occurrence of the substring.  
+ The StrPos method returns the position of the first occurrence of the substring.  
   
  If *SubString* cannot be found, then the method returns zero.  
   
@@ -52,9 +52,9 @@ The one-based index of the first occurrence of the substring inside the string.
   
 ## Example 1
 
- This example shows how to use the STRPOS method.  
+ This example shows how to use the StrPos method.  
   
-```  
+```al
 var
     Text000: Label 'ABC abc abc xy';  
     Text001: Label 'abc'; 
@@ -64,9 +64,9 @@ var
 begin
     String := Text000;  
     SubStr := Text001  
-    Pos := STRPOS(String, SubStr);  
+    Pos := StrPos(String, SubStr);  
     Message(Text002 + Text003 + Text004, SubStr, String, Pos);  
-    // The STRPOS method is case-sensitive. Furthermore, it only  
+    // The StrPos method is case-sensitive. Furthermore, it only  
     // returns the position of the 1st occurrence of the substring.  
 end;
 ```  
@@ -81,7 +81,7 @@ end;
   
 ## Example 2
   
-```  
+```al
 Pos1 := StrPos("abc",""); // Returns 0.  
 Pos2 := StrPos("abc","c"); // Returns 3.  
 Pos3 := StrPos("abc","bc"); // Returns 2.  

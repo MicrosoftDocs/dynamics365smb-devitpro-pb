@@ -42,22 +42,23 @@ The output string that is encrypted.
 ## Remarks  
  If encryption is not enabled or the encryption key is not found, the following error will be displayed: **An encryption key is required to complete the request**.   
 
-## Example  
-```  
+## Example
+
+```al
 var
     Text000: Text;
 begin
     Text000 := 'ABC123';  
     Message('Value: ' + Text000);  
-    Text000 := ENCRYPT(Text000);  
+    Text000 := Encrypt(Text000);  
     Message('Value: ' + Text000);  
 end;
 ```  
 
- This code example takes the string value **ABC123** and outputs the encrypted value of the string. The encrypted value will vary from system to system due to differences in the encryption key.  
-
+This code example takes the string value **ABC123** and outputs the encrypted value of the string. The encrypted value will vary from system to system due to differences in the encryption key.  
 
 ## See Also
+
 [System Data Type](system-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

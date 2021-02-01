@@ -37,15 +37,16 @@ Datetime :=   System.CurrentDateTime()
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Example  
- This example requires that you create a DateTime variable named TestDateTime.  
+## Example
+
+This example requires that you create a DateTime variable named TestDateTime.  
   
-```  
-TestDateTime := CURRENTDATETIME;  
+```al
+TestDateTime := CurrentDateTime;  
 Message(Format(TestDateTime));  
 ```  
   
- The message window displays the current date and time.
+The message window displays the current date and time.
  
 ## See Also
 [System Data Type](system-data-type.md)  

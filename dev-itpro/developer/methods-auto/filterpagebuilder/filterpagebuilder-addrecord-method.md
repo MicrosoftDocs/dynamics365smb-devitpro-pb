@@ -47,14 +47,14 @@ The text that is specified by the Name parameter. If an error occurs at runtime,
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- In the filter page that is rendered in the client, the ADDRECORD method defines a filter control for the specified table where the user can set filters on specific fields in the table.  
+ In the filter page that is rendered in the client, the AddRecord method defines a filter control for the specified table where the user can set filters on specific fields in the table.  
 
  Fields in the table that already have filters are automatically included in the filter control. Filters in the record passed to the method will not be modified by any method in the FilterPageBuilder object.  
 
 ## Example  
  The following example initializes a filter page object that includes a filter control that uses the Date system table. The filter control has the caption of **Date record**. The example set two filters are on the **Date** record variable, which results in a filter control that includes two fields by default.  
 
-```  
+```al
 var
     varDateItem: Text[30];  
     varDateRecord: Record Date;  
@@ -62,9 +62,9 @@ var
 
 begin
     varDateItem := 'Date record';  
-    varDateRecord.SETFILTER("Period End",'12122015D');  
-    varDateRecord.SETFILTER("Period Start",'01012015D');  
-    varFilterPageBuilder.ADDRECORD(varDateItem, varDateRecord);
+    varDateRecord.SetFilter("Period End",'12122015D');  
+    varDateRecord.SetFilter("Period Start",'01012015D');  
+    varFilterPageBuilder.AddRecord(varDateItem, varDateRecord);
     varFilterPageBuilder.RunModal(); 
 
 end;

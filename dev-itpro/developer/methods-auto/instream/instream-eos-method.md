@@ -39,22 +39,24 @@ An instance of the [InStream](instream-data-type.md) data type.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks  
- If you are reading data from an external component, EOS can return **FALSE** even though no more data is available. This may occur if you have not called READ first.  
-  
-## Example  
- The following example opens the text file in a folder that is named MyFolder. The data in the text file is read into and input stream variable named StreamInTest. The [InStream.EOS Method](../../methods/devenv-instream.eos-method.md) is used to determine whether the input stream has reached the end. If the stream has not reached the end, the stream is read into a text buffer, which indicates that the stream has not reached the end until the stream reaches the end. You must also create the following file 'c:\\MyFolder\\MyText.txt'.  
+## Remarks
 
-```
+If you are reading data from an external component, EOS can return **false** even though no more data is available. This may occur if you have not called Read first.  
+  
+## Example
+
+The following example opens the text file in a folder that is named MyFolder. The data in the text file is read into and input stream variable named StreamInTest. The [InStream.EOS Method](../../methods/devenv-instream.eos-method.md) is used to determine whether the input stream has reached the end. If the stream has not reached the end, the stream is read into a text buffer, which indicates that the stream has not reached the end until the stream reaches the end. You must also create the following file 'c:\\MyFolder\\MyText.txt'.  
+
+```al
  var
     StreamInTest: InStream;
     FileTest: File;
     Buffer: Text;
 begin
-    FileTest.OPEN('c:\MyFolder\MyText.txt');  
-    FileTest.CREATEINSTREAM(StreamInTest);  
+    FileTest.Open('c:\MyFolder\MyText.txt');  
+    FileTest.CreateInStream(StreamInTest);  
     while not StreamInTest.EOS do begin 
-      StreamInTest.READTEXT(Buffer);  
+      StreamInTest.ReadTet(Buffer);  
       //Do some processing  
       Message('Stream is still processing')  
     end;  

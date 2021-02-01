@@ -39,7 +39,7 @@ The HttpContent data type is a value type. This means that when assigning an ins
 ## Example
 The following example illustrates how to use the HttpContent type to send a simple POST request containing JSON data.
 
-```
+```al
 codeunit 50110 MyCodeunit
 {
     procedure MakeRequest(uri: Text; payload: Text) responseText: Text;

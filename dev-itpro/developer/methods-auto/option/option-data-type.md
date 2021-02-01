@@ -25,7 +25,7 @@ Denotes an option value. In the code snippet below, you can see how the Option d
 
 ## Syntax example
 
-```
+```al
 procedure HelloWithOptions(OptionParameter : Option Alpha, "Bra-vo")
     var 
         OptionVariable : Option C, "or D";
@@ -51,7 +51,7 @@ In the [OptionString Property](../../properties/devenv-optionstring-property.md)
 
 This example shows how you can use the value of an option field as a constant in your AL code.  
   
-```  
+```al
 PurchHeaderRec."Document Type" := PurchHeaderRec."Document Type"::Invoice;   
 ```
 

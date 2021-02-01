@@ -44,7 +44,7 @@ Specifies if the number sequence is company-specific. Default is true.
 ## Example
 The following example creates the number sequence `MyNumberSequence` that starts at zero and increments by a value of ten. The number series is not company specific.
  
-```
+```al
 NumberSequence.Insert('MyNumberSequence', 0, 10, false);
 ```
 ## See Also

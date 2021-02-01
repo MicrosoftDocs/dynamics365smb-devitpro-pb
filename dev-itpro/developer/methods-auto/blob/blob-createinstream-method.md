@@ -43,7 +43,7 @@ The encoding that will be used by the stream.
  Optionally, you can specify the encoding on the stream. By specifying the [File Handling and Text Encoding](../../devenv-file-handling-and-text-encoding.md), you ensure that all the language-specific characters are represented correctly in [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)] when you read data and write data. The following example illustrates how you can set the encoding to Windows when you create a stream for a BLOB field.  
   
 ```  
-MyTable.MyBLOBfield.CREATEINSTREAM(MyStream, TextEncoding::WINDOWS);
+MyTable.MyBLOBfield.CreateInStream(MyStream, TextEncoding::WINDOWS);
 ```  
   
  For more information, see [File Handling and Text Encoding](../../devenv-file-handling-and-text-encoding.md).  

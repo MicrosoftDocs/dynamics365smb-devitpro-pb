@@ -16,7 +16,7 @@ author: SusanneWindfeldPedersen
 # HttpClient.Delete Method
 > **Version**: _Available from runtime version 1.0._
 
-Sends a DELETE request to delete the resource identified by the request URL.
+Sends a Delete request to delete the resource identified by the request URL.
 
 
 ## Syntax

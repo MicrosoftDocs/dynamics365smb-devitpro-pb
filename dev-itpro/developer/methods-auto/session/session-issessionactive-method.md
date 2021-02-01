@@ -40,7 +40,7 @@ The ID of the session that you want to test if it is still active.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
-Use this method to test if a session has completed or is still active, for example if you want to check that a session started with STARTSESSION is still running.  
+Use this method to test if a session has completed or is still active, for example if you want to check that a session started with StartSession is still running.  
 
 >[!NOTE]     
 >The method looks for sessions on the local machine.

@@ -43,26 +43,28 @@ The stream to which you write a BigText.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks  
- To delete the content in a BigText variable, use the [CLEAR Method](../../methods-auto/system/system-clear-joker-method.md).  
-  
-```  
-CLEAR(BigText)  
-```  
-  
-## Example  
- This example shows how to stream a BigText to a BLOB field in a table.  
+## Remarks
 
-```
+To delete the content in a BigText variable, use the [Clear Method](../../methods-auto/system/system-clear-joker-method.md).  
+  
+```al
+Clear(BigText)  
+```  
+  
+## Example
+
+This example shows how to stream a BigText to a BLOB field in a table.  
+
+```al
 var
     Bstr: BigText;
     Ostream: OutStream;
     ItemRec: Record Item;
 begin 
-    Bstr.ADDTEXT('This is the text string that we want to store in a BLOB field.');  
-    ItemRec.Picture.CREATEOUTSTREAM(Ostream);  
-    Bstr.WRITE(Ostream);  
-    ItemRec.INSERT;  
+    Bstr.AddText('This is the text string that we want to store in a BLOB field.');  
+    ItemRec.Picture.CreateOutStream(Ostream);  
+    Bstr.Write(Ostream);  
+    ItemRec.Insert;  
 end;
 ```  
 

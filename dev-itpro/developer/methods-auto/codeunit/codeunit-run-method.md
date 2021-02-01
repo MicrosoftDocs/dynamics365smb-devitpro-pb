@@ -41,20 +41,21 @@ This optional parameter identifies a record. This parameter is a record data typ
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Example  
- This example runs two codeunits. The first uses a record parameter. The second is defined without a source table.
+## Example
 
- ```
+This example runs two codeunits. The first uses a record parameter. The second is defined without a source table.
+
+```al
 var
     FiscalYearCloseInstance: Codeunit "Fiscal Year-Close";
     AppMgmtInstance: Codeunit ApplicationManagement;
     AccountRecord: Record "Accounting Period";
 begin  
-    AccountRecord.INIT;  
-    if not FiscalYearCloseInstance.RUN(AccountRecord) then  
-      ERROR('Codeunit run failed (with record).');  
-    if not AppMgmtInstance.RUN then  
-      ERROR('Codeunit run failed.');  
+    AccountRecord.Init;  
+    if not FiscalYearCloseInstance.Run(AccountRecord) then  
+      Error('Codeunit run failed (with record).');  
+    if not AppMgmtInstance.Run then  
+      Error('Codeunit run failed.');  
 end;
 ```  
 

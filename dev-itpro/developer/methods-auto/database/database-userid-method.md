@@ -39,16 +39,16 @@ This string contains the value of the User Name field in table 2000000120, the U
 
 ## Example
 
-```
-User := USERID;  
+```al
+User := UserId;  
 Message('The system was started by %1', User);  
 ```
 The following is an example of the output of the previous code:
 
 **The system was started by cronus\simon.**
 
-
 ## See Also
+
 [Database Data Type](database-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)
