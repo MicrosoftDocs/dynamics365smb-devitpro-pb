@@ -40,12 +40,12 @@ The `MyAddressPage` is a simple page with an action that captures the choice of 
 ```AL
 interface IAddressProvider
 {
-    procedure GetAddress(): Text;
+    procedure GetAddress(): Text
 }
 
 codeunit 50200 CompanyAddressProvider implements IAddressProvider
 {
-    procedure GetAddress(): Text;
+    procedure GetAddress(): Text
 
     begin
         exit('Company address \ Denmark 2800')
@@ -54,7 +54,7 @@ codeunit 50200 CompanyAddressProvider implements IAddressProvider
 
 codeunit 50201 PrivateAddressProvider implements IAddressProvider
 {
-    procedure GetAddress(): Text;
+    procedure GetAddress(): Text
 
     begin
         exit('My Home address \ Denmark 2800')
@@ -81,16 +81,6 @@ page 50200 MyAddressPage
     ApplicationArea = All;
     UsageCategory = Administration;
 
-    layout
-    {
-        area(Content)
-        {
-            group(GroupName)
-            {
-            }
-        }
-    }
-
     actions
     {
         area(Processing)
@@ -109,7 +99,6 @@ page 50200 MyAddressPage
                     Message(iAddressProvider.GetAddress());
 
                 end;
-
             }
 
             action(SendToHome)
@@ -147,12 +136,11 @@ page 50200 MyAddressPage
 
         if sendTo = sendTo::Private then
             iAddressProvider := PrivateImplementer;
-
     end;
 
     var
         sendTo: enum SendTo;
-
+}
 ```
 
 ## See Also
