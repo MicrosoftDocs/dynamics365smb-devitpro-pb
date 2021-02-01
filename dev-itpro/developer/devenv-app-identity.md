@@ -16,6 +16,22 @@ ms.author: solsen
 
 What makes an app for Business Central unique, what makes up the app identity?
 
+Apps built using AL extend the functionality of Business Central. The `app.json` file is, together with the `launch.json` file, automatically generated when you create a new AL project. The `app.json` file contains information about the extension that you are building, such as publisher information and specifies the minimum version of base application objects that the extension is built on. Often the `app.json` file is referred to as the manifest. The `app.json` file contains numerous project settings, but a few of them constitutes the actual identity of the app that you are creating.
+
+|Setting|Example|Description|
+|-------|------|-----|
+|`id`   |`"id": "ef4dabfc-1de7-4d90-b948-4a9c2933d794"`| The `id`, also known as the appId. This is a GUID which is auto-generated when the project is created. The appId is also bound to how tables are named in Business Central and how the identity of an application is computed. Changing the appId may have severe consequences, such as the app not functioning properly, or data not being available.|
+|`name`|||
+|`Publisher`|||
+
+
+<!-- The appId with a tenantId identifies an application in the service architecture of business central. --> 
+
+## When is it okay to change the app identity?
+
+## App identity and AppSource apps
+
+
 ## See Also
 
 [JSON Files](devenv-json-files.md)  
