@@ -29,7 +29,7 @@ The following table describes the settings in the `app.json` file. For an exampl
 |Setting|Mandatory|Value|
 |-------|---------|-----|
 |id|Yes|The unique ID of the extension. When the `app.json` file is automatically created, the ID is set to a new GUID value. <br>**Note:** The appId is used at runtime to bind table names contained in the application. Changing the appId will result in data from old tables not being used.|
-|name|Yes|The unique extension name.|
+|name|Yes|The unique extension name. For more information, see [App Identity](devenv-app-identity.md).|
 |publisher|Yes|The name of your publisher, for example: **NAV Partner**, **LLC**.|
 |brief|No, but required for AppSource submission|Short description of the extension.|
 |description|No, but required for AppSource submission|Longer description of the extension.|
