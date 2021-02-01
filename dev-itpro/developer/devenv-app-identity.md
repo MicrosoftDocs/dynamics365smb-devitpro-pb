@@ -14,6 +14,8 @@ ms.author: solsen
 
 # App Identity
 
+What makes an app for Business Central unique, what makes up the app identity?
+
 ## See Also
 
 [JSON Files](devenv-json-files.md)  
