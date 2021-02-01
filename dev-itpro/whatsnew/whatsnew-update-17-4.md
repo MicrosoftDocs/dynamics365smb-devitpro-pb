@@ -21,7 +21,7 @@ Find an overview of hotfixes in this [article](Insert).
 
 ## Feature changes
 - [Use recurring journals to allocate balances by dimension values](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/use-recurring-journals-allocate-balances-dimension-values)
-
+- [The Busines Central app for Microsoft Teams reaches General Availability](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/business-central-teams) 
 
 
 ## Release Plan
