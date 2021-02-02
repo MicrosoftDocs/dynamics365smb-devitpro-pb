@@ -345,6 +345,8 @@
 ### [Reports Overview](developer/devenv-reports.md)
 ### [Report Design Overview](developer/devenv-report-design-overview.md)
 ### [Report Object](developer/devenv-report-object.md)
+### [Report Extension Object](developer/devenv-report-ext-object.md)
+### [Report Extension Example](developer/devenv-report-example.md)
 ### [Defining a Report Dataset](developer/devenv-report-dataset.md)
 ### [Request Pages](developer/devenv-request-pages.md)
 ### [Report Triggers](developer/triggers/devenv-report-triggers.md)
