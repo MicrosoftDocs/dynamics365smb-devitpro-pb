@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -36,7 +36,7 @@ The name of the external table connection. You must already have registered a ta
         
 *Scoped*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-If true, when the method ends where you have used SETDEFAULTTABLECONNECTION, the default table connection returns to the value it had before. Use the Scope parameter when you want to use a specific table connection for a specific task and then return to the normal configuration.  
+If true, when the method ends where you have used SETDEFAULTTableCONNECTION, the default table connection returns to the value it had before. Use the Scope parameter when you want to use a specific table connection for a specific task and then return to the normal configuration.  
 
 
 

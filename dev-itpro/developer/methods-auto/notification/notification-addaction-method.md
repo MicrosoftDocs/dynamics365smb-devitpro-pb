@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -52,22 +52,24 @@ For more information and a detailed example, see [Notifications](../../devenv-no
 ##  Example
 The following code creates two actions for a notification. The actions call the **RunAction1** and **RunAction2** methods in the codeunit **Action Handler**.
 
-```
+```al
 MyNotification.Message := 'This is a notification';
-MyNotification.SCOPE := NOTIFICATIONSCOPE::LocalScope;
-MyNotification.ADDACTION('Action 1',CODEUNIT::"Action Handler",'RunAction1');
-MyNotification.ADDACTION('Action 2',CODEUNIT::"Action Handler",'RunAction2');
-MyNotification.SEND;
+MyNotification.Scope := NotificationScope::LocalScope;
+MyNotification.AddAction('Action 1',CodeUnit::"Action Handler",'RunAction1');
+MyNotification.AddAction('Action 2',CodeUnit::"Action Handler",'RunAction2');
+MyNotification.Send;
 ```
+
 To handle the actions, the **Action Handler** codeunit has two global methods that have a **Notification** data type parameter:
-```
-PROCEDURE RunAction1@1(MyNotification@1000 : Notification);
-BEGIN
+
+```al
+procedure RunAction1@1(MyNotification@1000 : Notification);
+begin
     Message('This is RunAction1');
 end;
 
-PROCEDURE RunAction2@2(MyNotification@1000 : Notification);
-BEGIN
+procedure RunAction2@2(MyNotification@1000 : Notification);
+begin
  Message('This is RunAction2');
 end;
 ```

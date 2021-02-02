@@ -6,7 +6,7 @@ ms.date: 12/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -50,15 +50,15 @@ The default time zone is **UTC**. This method can also be used with web service 
 
 ## Example
 
-This example creates a SessionSettings object that is populated with the current client user's personalization data, and then uses the TIMEZONE method to set the time zone to 'UTC' (Coordinated Universal Time). Finally, the REQUESTSESSIONUPDATE method sends a request to the client to abandon the current session and start a new session that uses the new profile ID. This example requires a SessionSettings data type variable.
+This example creates a SessionSettings object that is populated with the current client user's personalization data, and then uses the TimeZone method to set the time zone to 'UTC' (Coordinated Universal Time). Finally, the RequestSessionUpdate method sends a request to the client to abandon the current session and start a new session that uses the new profile ID. This example requires a SessionSettings data type variable.
 
-```
+```al
 var
   MySessionSettings : SessionSettings;
 begin
-  MySessionSettings.INIT;
-  MySessionSettings.TIMEZONE('UTC');
-  MySessionSettings.REQUESTSESSIONUPDATE(false);
+  MySessionSettings.Init;
+  MySessionSettings.TimeZone('UTC');
+  MySessionSettings.RequestSessionUpdate(false);
 end;  
 ```  
 

@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -52,14 +52,14 @@ The number of bytes that were written. If you omit this optional return value an
   
 ## Example  
   
-```  
-recBinaries.FIND('-');  
-recBinaries.Data.CREATEOUTSTREAM(OutStream);  
-OutStream.WRITE('Secretary');  
-OutStream.WRITE('Alice');  
-OutStream.WRITE('Hart');  
-OutStream.WRITE(19960106D);  
-recBinaries.MODIFY();  
+```al
+recBinaries.Find('-');  
+recBinaries.Data.CreateOutstream(OutStream);  
+OutStream.Write('Secretary');  
+OutStream.Write('Alice');  
+OutStream.Write('Hart');  
+OutStream.Write(19960106D);  
+recBinaries.Modify();  
 ```  
   
 

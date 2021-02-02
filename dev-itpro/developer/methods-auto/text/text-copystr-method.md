@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -32,11 +32,11 @@ The string that you want to copy from.
         
 *Position*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-The position of the first character to copy. If the value of Position is less than 1, then the COPYSTR function returns an error. If Position is greater than the length of the string, then the COPYSTR function returns an empty string.
+The position of the first character to copy. If the value of Position is less than 1, then the CopyStr function returns an error. If Position is greater than the length of the string, then the CopyStr function returns an empty string.
         
 *Length*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-The number of characters to copy. If the value of Length is less than 0, then the COPYSTR function returns an error. If the value of Length causes Position + Length to be \> (total length of the string), then the result includes all the characters from Position to the end of the string. If you omit Length, then the resulting string includes all the characters from Position to the end of the string.  
+The number of characters to copy. If the value of Length is less than 0, then the CopyStr function returns an error. If the value of Length causes Position + Length to be \> (total length of the string), then the result includes all the characters from Position to the end of the string. If you omit Length, then the resulting string includes all the characters from Position to the end of the string.  
 
 
 ## Return Value
@@ -52,13 +52,13 @@ The copied string.
   
 ## Example  
 
-```  
+```al
 var
     Str: Text[30];
     Position: Integer;
     Length: Integer;
     NewStr: Text[30];
-    Text000: Label 'Using the COPYSTR method';
+    Text000: Label 'Using the CopyStr method';
     Text001: Label 'The original string is:>%1<';
     Text002: Label 'The copied string is:>%1<';
 begin
@@ -66,7 +66,7 @@ begin
     Position := 7;  
     Length := 8;  
     Message(Text001, Str);  
-    NewStr := COPYSTR(Str, Position, Length);  
+    NewStr := CopyStr(Str, Position, Length);  
     Message(Text002, NewStr);  
 end;
 ```  
@@ -75,7 +75,7 @@ end;
   
  **The original string is:**  
   
- **>Using the COPYSTR method\<**  
+ **>Using the CopyStr method\<**  
   
  The second message window shows the copied string:  
   

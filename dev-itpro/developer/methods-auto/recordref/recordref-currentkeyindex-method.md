@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -16,7 +16,7 @@ author: SusanneWindfeldPedersen
 # RecordRef.CurrentKeyIndex Method
 > **Version**: _Available from runtime version 1.0._
 
-Gets or sets the current key of the table referred to by the RecordRef. The current key is set or returned as a number. This first key = 1, and so on. If RecordRef does not have an active record, CURRENTKEYINDEX will return -1. If this value is then passed to KEYINDEX, an index out of bounds error will occur. Therefore it is important to implement a check of the RecordRef parameter.
+Gets or sets the current key of the table referred to by the RecordRef. The current key is set or returned as a number. This first key = 1, and so on. If RecordRef does not have an active record, CurrentKeyIndex will return -1. If this value is then passed to KeyIndex, an index out of bounds error will occur. Therefore it is important to implement a check of the RecordRef parameter.
 
 
 ## Syntax
@@ -44,9 +44,9 @@ The number of the current key.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example  
- The following example loops through four tables \(36-39\) opens each table as a RecordRef variable that is named MyRecordRef. The CURRENTKEYINDEX method retrieves the current key index of the tables. The name of the table and the current key index of each table are displayed in a message box. Each table is close before the next one is opened. 
+ The following example loops through four tables \(36-39\) opens each table as a RecordRef variable that is named MyRecordRef. The CurrentKeyIndex method retrieves the current key index of the tables. The name of the table and the current key index of each table are displayed in a message box. Each table is close before the next one is opened. 
 
-```  
+```al
 var
     MyRecordRef: RecordRef;
     CurrentKeyIndex: Integer;
@@ -58,10 +58,10 @@ begin
     varFromTable := 36;  
     varToTable := 39;  
     for i := varFromTable to varToTable do begin  
-      MyRecordRef.OPEN(i);  
-      CurrentKeyIndex := MyRecordRef.CURRENTKEYINDEX;  
-      Message(Text000, MyRecordRef.NAME, CurrentKeyIndex);  
-      MyRecordRef.CLOSE;  
+      MyRecordRef.Open(i);  
+      CurrentKeyIndex := MyRecordRef.CurrentKeyIndex;  
+      Message(Text000, MyRecordRef.Name, CurrentKeyIndex);  
+      MyRecordRef.Close;  
     end;  
 end;
 ```  

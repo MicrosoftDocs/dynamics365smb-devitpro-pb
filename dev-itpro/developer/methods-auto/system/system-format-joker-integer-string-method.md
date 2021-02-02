@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -28,7 +28,7 @@ String :=   System.Format(Value: Any, Length: Integer, FormatString: String)
 ## Parameters
 *Value*  
 &emsp;Type: [Any](../any/any-data-type.md)  
-This is an AL variable (expression) of any simple data type, such as Option, Integer, BigInteger, Decimal, Char, Text, Code, Date, Time, DateTime, Boolean, or GUID. If, when the system formats Value, the result is a value larger than the maximum length MAXSTRLEN method (Code, Text) of String, a run-time error occurs.
+This is an AL variable (expression) of any simple data type, such as Option, Integer, BigInteger, Decimal, Char, Text, Code, Date, Time, DateTime, Boolean, or GUID. If, when the system formats Value, the result is a value larger than the maximum length MaxStrLen method (Code, Text) of String, a run-time error occurs.
           
 *Length*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
@@ -48,6 +48,7 @@ A literal string that defines a format as in the Format Property.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
+
 For the *Length* parameter, the following rules apply:  
 
 - If *Length* = 0 then the entire value is returned (default).  
@@ -64,7 +65,7 @@ For the *Length* parameter, the following rules apply:
 
    If *Value* exceeds *Length* characters, then *String* is truncated to *Length* characters.
 
-For the *Format* parameter, see [Format Property](../../properties/devenv-format-property.md) for more information.
+For the *Format* parameter, see [Format Property](../../devenv-format-property.md) for more information.
 
 The *FormatNumber* parameter specifies the format that you want to use. The basic options for the Decimal data type are as follows:  
 
@@ -84,13 +85,13 @@ The *FormatNumber* parameter specifies the format that you want to use. The basi
 ## Example 1
 
 
-```  
+```al
 var
     Text000: Label 'The formatted value >%1<';
 begin
-    Message(Text000, FORMAT(-123456.78, 12, 3));  
-    Message(Text000, FORMAT(-123456.78, 12, '<Standard Format,3>'));  
-    Message(Text000, FORMAT(-123456.78, 12, '<Integer Thousand><Decimals><Sign,1>'));  
+    Message(Text000, Format(-123456.78, 12, 3));  
+    Message(Text000, Format(-123456.78, 12, '<Standard Format,3>'));  
+    Message(Text000, Format(-123456.78, 12, '<Integer Thousand><Decimals><Sign,1>'));  
 end;
 
 ```  
@@ -114,11 +115,12 @@ On a computer that has the regional format set to Danish \(Denmark\), the messag
 ## Example 2
 
 This example shows how to use a string to build a format.
-```  
+
+```al
 var
     Text000: Label 'Today is %1';
 begin 
-    Message(Text000, FORMAT(Today,0,'<Month Text> <Day>'));  
+    Message(Text000, Format(Today,0,'<Month Text> <Day>'));  
 end;
 ```  
 

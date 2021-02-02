@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -50,68 +50,65 @@ Dialog windows that are opened by an object are closed when the object terminate
   
  We recommend the following guidelines:  
   
--   Enter messages as text constants.  
-  
--   Write messages using active voice. For example, write "Processing items" instead of writing "Items are being processed."  
-  
--   Align the \# field to the left with at least one space character between the text and the variable.
+- Enter messages as text constants.  
+- Write messages using active voice. For example, write "Processing items" instead of writing "Items are being processed."  
+- Align the \# field to the left with at least one space character between the text and the variable.
 
-> [!NOTE]
+> [!NOTE]  
 > With the [!INCLUDE[nav_windows_md](../../includes/nav_windows_md.md)], you can use @ characters instead of # characters for the *String* parameter to display the value as percentage and a progress indicator. The percentage value that is displayed is the percentage of the variable value from 0 to 9999. This is not supported in the [!INCLUDE[webclient](../../includes/webclient.md)].  
   
 ## Example 1
 
- This example shows how to use the dialog.OPEN method.  
+This example shows how to use the dialog.Open method.  
   
- ```
+```al
 var
     MyDialog: Dialog;
     MyNext: Integer;
     Text000: Label 'Counting to 4 #1:';
 begin
     MyNext := 0;  
-    MyDialog.OPEN(Text000,MyNext);  
+    MyDialog.Open(Text000,MyNext);  
     repeat  
       // Do some processing.  
-      SLEEP(1000);  
+      Sleep(1000);  
       MyNext := MyNext + 1;  
-      MyDialog.UPDATE(); // Update the field in the dialog.  
+      MyDialog.Update(); // Update the field in the dialog.  
     until MyNext = 4;  
-    SLEEP(1000);  
-    MyDialog.CLOSE();  
+    Sleep(1000);  
+    MyDialog.Close();  
 end;
 ```  
   
- The dialog window opens and displays this text:  
+The dialog window opens and displays this text:  
   
- **Counting to 4: 0**  
+**Counting to 4: 0**  
   
- Every one second, the dialog window updates with the new value of *MyNext* until it reaches 4, then the dialog window closes.  
+Every one second, the dialog window updates with the new value of *MyNext* until it reaches 4, then the dialog window closes.  
   
 ## Example 2
 
- This example shows how to use the dialog.OPEN method to display a progress indicator in the [!INCLUDE[nav_windows_md](../../includes/nav_windows_md.md)]. The progress indicator will not display in the [!INCLUDE[webclient](../../includes/webclient.md)].
+This example shows how to use the dialog.Open method to display a progress indicator in the [!INCLUDE[nav_windows_md](../../includes/nav_windows_md.md)]. The progress indicator will not display in the [!INCLUDE[webclient](../../includes/webclient.md)].
   
-```  
+```al
 var
     MyDialog: Dialog;
     MyNext: Integer;
     Text000: Label 'Progress from 0 to 9999 #1#####';
 begin
     MyNext := 0;  
-    MyDialog.OPEN(Text000,MyNext);  
+    MyDialog.Open(Text000,MyNext);  
     repeat  
       // Do some processing.  
       MyNext := MyNext + 1;  
-      MyDialog.UPDATE(); // Update the field in the dialog.  
+      MyDialog.Update(); // Update the field in the dialog.  
     until MyNext = 9999;  
-    SLEEP(1000);  
-    MyDialog.CLOSE();  
+    Sleep(1000);  
+    MyDialog.Close();  
 end;
 ```  
   
 The dialog window opens and displays the progress indicator and percentage.  
-  
 
 ## See Also
 [Dialog Data Type](dialog-data-type.md)  

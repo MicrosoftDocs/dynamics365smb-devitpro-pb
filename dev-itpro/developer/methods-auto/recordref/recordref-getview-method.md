@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -42,21 +42,21 @@ The string format is the same as the SourceTableView property on pages.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- If the [SETVIEW Method \(RecordRef\)](recordref-setview-method.md) has been executed, the *String* parameter will return the value set by SETVIEW.  
+ If the [SetView Method \(RecordRef\)](recordref-setview-method.md) has been executed, the *String* parameter will return the value set by SetView.  
   
- This method works the same way as the [GETVIEW Method \(Record\)](recordref-getview-method.md).  
+ This method works the same way as the [GetView Method \(Record\)](recordref-getview-method.md).  
   
 ## Example  
- The following example opens the Customer table as a RecordRef variable that is named RecRef. The RecRef variable uses the GETVIEW method to retrieve the field that the table is sorted on and stores the value in the varView variable. The Customer table does not have any filters and keys set so no filters or keys are displayed. The *UseCaptions* parameter is set to **true** so the name of the field is displayed. If you set the *UseCaptions* to **false**, the field number will be displayed. 
+ The following example opens the Customer table as a RecordRef variable that is named RecRef. The RecRef variable uses the GetView method to retrieve the field that the table is sorted on and stores the value in the varView variable. The Customer table does not have any filters and keys set so no filters or keys are displayed. The *UseCaptions* parameter is set to **true** so the name of the field is displayed. If you set the *UseCaptions* to **false**, the field number will be displayed. 
  
-```   
+```al
 var
     RecRef: RecordRef;
     varView: Text;
     Text000: Label 'The current view of the table is: %1';
 begin    
-    RecRef.OPEN(DATABASE::Customer);  
-    varView := RecRef.GETVIEW(TRUE);  
+    RecRef.Open(Database::Customer);  
+    varView := RecRef.GetView(True);  
     Message(Text000, varView);  
 end;
 ```  

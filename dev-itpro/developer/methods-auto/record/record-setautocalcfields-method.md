@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -43,7 +43,7 @@ An instance of the [Record](record-data-type.md) data type.
 
 ## Example
 
-See [AL Database Methods and Performance on SQL Server - SETAUTOCALCFIELDS](../../../administration/optimize-sql-al-database-methods-and-performance-on-server.md#setautocalcfields).
+See [AL Database Methods and Performance on SQL Server - SetAutoCalcFields](../../../administration/optimize-sql-al-database-methods-and-performance-on-server.md#setautocalcfields).
 
 ## See Also
 [Record Data Type](record-data-type.md)  

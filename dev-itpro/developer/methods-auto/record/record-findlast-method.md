@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -38,13 +38,13 @@ An instance of the [Record](record-data-type.md) data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
-This method should be used instead of FIND\('+'\) when you only need the last record.  
+This method should be used instead of Find\('+'\) when you only need the last record.  
   
-You should only use this method when you explicitly want to find the last record in a table/set. Do not use this method in combination with REPEAT...UNTIL. 
+You should only use this method when you explicitly want to find the last record in a table/set. Do not use this method in combination with Repeat...Until. 
 
-Calling FINDLAST on an empty table from the [OnNewRecord trigger](../../triggers/devenv-onnewrecord-trigger.md) causes the [!INCLUDE[server](../../includes/server.md)] to throw an exception, and the AL execution stops. However, the client suppresses this error and does not show any error message to the user. Therefore, when using FINDLAST inside this trigger, you should add code that conditionally verifies whether a record was found, and if not, notify the user with a message. For example:
+Calling FindLast on an empty table from the [OnNewRecord trigger](../../triggers/devenv-onnewrecord-trigger.md) causes the [!INCLUDE[server](../../includes/server.md)] to throw an exception, and the AL execution stops. However, the client suppresses this error and does not show any error message to the user. Therefore, when using FindLast inside this trigger, you should add code that conditionally verifies whether a record was found, and if not, notify the user with a message. For example:
 
-```
+```al
 if not MyRecord.FindLast then
     Error('error message');
 ```
@@ -52,7 +52,7 @@ if not MyRecord.FindLast then
 ## Example  
 This example requires that you create a Record variable named GLEntryRec for the G/L Entry table.  
   
-```  
+```al
 // Read the last record only.   
 if GLEntryRec.FindLast then  
   ...  

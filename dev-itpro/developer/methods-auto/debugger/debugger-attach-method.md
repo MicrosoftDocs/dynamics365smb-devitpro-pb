@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -44,11 +44,13 @@ The ID of the session that you want to attach the debugger to.The session can be
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks 
+## Remarks
+
 The **Attach** method behaves like the **Debug** action on the **Sessions** page.
 You can call the **Attach** method to activate the debugger.
 
 ## See Also
+
 [Debugger Data Type](debugger-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

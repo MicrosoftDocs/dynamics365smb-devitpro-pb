@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -79,8 +79,8 @@ To support the example code that follows, create the following objects:
   -   List type page that uses the **My Items** table as its source.
   -   A repeater control that contains the fields of the **My Items** table.
 
-      >[!NOTE]
-      >It is not necessary to include the **Media** data type field on the page.
+      > [!NOTE]  
+      > It is not necessary to include the **Media** data type field on the page.
 
   Use the page to add one or more items to the table, assigning each item a number like 1,2,3, and so on.
 
@@ -94,7 +94,7 @@ With the objects in place, you can add and run the following AL code to import t
 
 The example code iterates over records in the **My Items** table. For each record, it looks in the *C:\images* folder for a file whose name matches the **No.** field of the record. If there is a match, the file is imported and a message appears; otherwise, nothing happens.
 
-```
+```al
  var
     myItemRec: Record "My Items";
     fileName: Text;

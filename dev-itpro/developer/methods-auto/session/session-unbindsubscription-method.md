@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -42,12 +42,12 @@ The codeunit that contains the event subscribers.
 ## Remarks  
  You can only call this method on codeunits that have the [EventSubscriberInstance Property](../../properties/devenv-eventsubscriberinstance-property.md) set to **Manual**.  
   
- Calling this method on a codeunit that hasn't been bound \(by the [BINDSUBSCRIPTION Method](../../methods-auto/session/session-bindsubscription-method.md)\) will result in an error. If the call to this method is successful, all bindings are removed.  
+ Calling this method on a codeunit that hasn't been bound \(by the [BindSubscription Method](../../methods-auto/session/session-bindsubscription-method.md)\) will result in an error. If the call to this method is successful, all bindings are removed.  
   
  The codeunit instance that is unbound will be the same instance that previously was bound.  
   
 ## Example  
- The following sample code illustrates a typical use of the BINDSUBSCRIPTION method.  
+ The following sample code illustrates a typical use of the BindSubscription method.  
   
 ```  
 Method MyFunction(….)  
@@ -58,9 +58,9 @@ begin
   // You can rely on the instance being the same as the one receiving the event subscriber call  
   
   SubScriberCodeunit5000.MySetGlobalInfo(<info you can later test in the subscriber event method>)  
-  BINDSUBSCRIPTION(SubscriberCodeunit5000);  
+  BindSubscription(SubscriberCodeunit5000);  
   DoSomething(…);  // After binding, all subscriptions on SubscriberCodeunit5000 are "active".  
-  UNBINDSUBSCRIPTION(SubscriberCodeunit888);  // Now deactivating again  
+  UNBindSubscription(SubscriberCodeunit888);  // Now deactivating again  
   DoStuff(…);  // This time no events are raised inside SubscriberCodeunit888;  
   
 end;  

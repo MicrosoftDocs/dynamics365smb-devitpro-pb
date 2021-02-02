@@ -6,7 +6,7 @@ ms.date: 12/09/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -35,7 +35,7 @@ The following methods are available on instances of the Record data type.
 |[Consistent(Boolean)](record-consistent-method.md)|Marks a table as being consistent or inconsistent.|
 |[Copy(var Record [, Boolean])](record-copy-method.md)|Copies a specified record's filters, views, automatically calculated FlowFields, marks, fields, and keys that are associated with the record from a table or creates a reference to a record.|
 |[CopyFilter(Any, Any)](record-copyfilter-method.md)|Copies the filter that has been set for one field and applies it to another field.|
-|[CopyFilters(var Record)](record-copyfilters-method.md)|Copies all the filters set by the SETFILTER method (Record) or the SETRANGE method (Record) from one record to another.|
+|[CopyFilters(var Record)](record-copyfilters-method.md)|Copies all the filters set by the SetFilter method (Record) or the SETRANGE method (Record) from one record to another.|
 |[CopyLinks(var Record)](record-copylinks-table-method.md)|Copies all the links from a specified record.|
 |[CopyLinks(RecordRef)](record-copylinks-recordref-method.md)|Copies all the links from a specified record.|
 |[Count()](record-count-method.md)|Counts the number of records in a table.|
@@ -57,7 +57,7 @@ The following methods are available on instances of the Record data type.
 |[FindLast()](record-findlast-method.md)|Finds the last record in a table based on the current key and filter.|
 |[FindSet([Boolean] [, Boolean])](record-findset-method.md)|Finds a set of records in a table based on the current key and filter.|
 |[Get([Any,...])](record-get-method.md)|Gets a record based on values stored in primary key fields.|
-|[GetAscending(Any)](record-getascending-method.md)|Gets the sort order for the records returned. You can use GETASCENDING to identify the sort order of the specified field because fields can be sorted in ascending or descending order. For example, you can read data from an ODATA web service where the data is sorted in ascending order on the Name field but in descending order on the City field.|
+|[GetAscending(Any)](record-getascending-method.md)|Gets the sort order for the records returned. You can use GetASCENDING to identify the sort order of the specified field because fields can be sorted in ascending or descending order. For example, you can read data from an ODATA web service where the data is sorted in ascending order on the Name field but in descending order on the City field.|
 |[GetBySystemId(Guid)](record-getbysystemid-method.md)|Gets a record by its SystemId.|
 |[GetFilter(Any)](record-getfilter-method.md)|Gets a list of the filters within the current filter group that are applied to a field.|
 |[GetFilters()](record-getfilters-method.md)|Gets a string that contains a list of the filters within the current filter group for all fields in a record. In addition, this method also returns the state of the MARKEDONLY method (Record).|
@@ -88,7 +88,7 @@ The following methods are available on instances of the Record data type.
 |[Rename(Any [, Any,...])](record-rename-method.md)|Changes the value of a primary key in a table.|
 |[Reset()](record-reset-method.md)|Removes all filters, including any special filters set by MarkedOnly, changes fields select for loading back to all, and changes the current key to the primary key. Also removes any marks on the record and clears any AL variables defined on its table definition.|
 |[SecurityFiltering([SecurityFilter])](record-securityfiltering-method.md)||
-|[SetAscending(Any, Boolean)](record-setascending-method.md)|Sets the sort order for the records returned. Use this method after you have set the keys to sort after, using SETCURRENTKEY. The default sort order is ascending. You can use SETASCENDING to change the sort order to descending for a specific field, while the other fields in the specified key are sorted in ascending order.|
+|[SetAscending(Any, Boolean)](record-setascending-method.md)|Sets the sort order for the records returned. Use this method after you have set the keys to sort after, using SetCurrentKey. The default sort order is ascending. You can use SetAscending to change the sort order to descending for a specific field, while the other fields in the specified key are sorted in ascending order.|
 |[SetAutoCalcFields([Any,...])](record-setautocalcfields-method.md)|Sets the FlowFields that you specify to be automatically calculated when the record is retrieved from the database.|
 |[SetCurrentKey(Any [, Any,...])](record-setcurrentkey-method.md)|Selects a key for a table.|
 |[SetFilter(Any, String [, Any,...])](record-setfilter-method.md)|Assigns a filter to a field that you specify.|

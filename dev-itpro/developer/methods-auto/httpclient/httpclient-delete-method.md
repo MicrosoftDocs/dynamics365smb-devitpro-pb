@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -16,7 +16,7 @@ author: SusanneWindfeldPedersen
 # HttpClient.Delete Method
 > **Version**: _Available from runtime version 1.0._
 
-Sends a DELETE request to delete the resource identified by the request URL.
+Sends a Delete request to delete the resource identified by the request URL.
 
 
 ## Syntax

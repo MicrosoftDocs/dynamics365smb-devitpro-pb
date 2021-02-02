@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -43,8 +43,9 @@ The substring from the comma-separated string at the index specified.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks  
- SELECTSTR treats string values as OPTIONS. This means that identical values in different strings are not allowed.  
+## Remarks
+
+ SelectStr treats string values as OPTIONS. This means that identical values in different strings are not allowed.  
   
  Any trailing commas are removed before the operation starts.  
   
@@ -54,7 +55,7 @@ The substring from the comma-separated string at the index specified.
   
 ## Example 1
  
-```  
+```al
 var
     CommaStr: Text[60];  
     CommaStr2: Text[60];  
@@ -63,22 +64,22 @@ var
     SubStr3: Text[60];  
     SubStr4: Text[60];  
     Text000: Label 'This,is a comma,separated,string';
-    Text001: Label 'The calls to SELECTSTR return:\\';
+    Text001: Label 'The calls to SelectStr return:\\';
     Text002: Label '11,22,33,,55,,,';
 begin
     CommaStr := Text000;  
     CommaStr2 := Text002;  
-    SubStr1 := SELECTSTR(2, CommaStr); // Pick out the 2nd substring.  
-    SubStr2 := SELECTSTR(4, CommaStr); // Pick out the 4th substring.  
-    SubStr3 := SELECTSTR(1, CommaStr2);  
-    SubStr4 := SELECTSTR(3, CommaStr2);  
+    SubStr1 := SelectStr(2, CommaStr); // Pick out the 2nd substring.  
+    SubStr2 := SelectStr(4, CommaStr); // Pick out the 4th substring.  
+    SubStr3 := SelectStr(1, CommaStr2);  
+    SubStr4 := SelectStr(3, CommaStr2);  
     Message(Text001 + '>%1<\' + '>%2<\' + '>%3<\' + '>%4<\', SubStr1, SubStr2, SubStr3, SubStr4);  
 end;
 ```  
   
  The message window displays the following text:  
   
- **The calls to SELECTSTR return:**  
+ **The calls to SelectStr return:**  
   
  **>is a comma\<**  
   
@@ -90,14 +91,14 @@ end;
   
 ## Example 2
 
-```  
+```al
 var
     CommaStr2: Text[60];  
     SubStr5: Text[60];  
     Text002: Label '11,22,33,,55,,,';
 begin
     CommaStr2 := Text002;  
-    SubStr5 := SELECTSTR(6,CommaStr2);  
+    SubStr5 := SelectStr(6,CommaStr2);  
     Message('>%1<\', SubStr5);  
 end;
 ```  
