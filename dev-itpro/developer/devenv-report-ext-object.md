@@ -25,6 +25,9 @@ With the report extension object, you can extend existing report objects, simila
 - Modifying the report layout to reflect the new fields that are added with an extension
 - Changing the layout of an existing report by adding a custom report layout to the extension
 
+For a report to be extended, the `Extensible` property must be set to `true`. This is the default value, which means that reports can by default be extended, unless they have the `Extensible` property explicitly set to `false`. For more information, see [Extensible Property](properties/devenv-extensible-property.md).
+
+
 > [!NOTE]  
 > Extension objects can have a name with a maximum length of 30 characters.
 
