@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -43,7 +43,7 @@ Returns the current value from number sequence.
 ## Example
 The following example gets the current value for the number sequence `MyNumberSequence`, which is not company specific.
  
-```
+```al
 number := NumberSequence.Current('MyNumberSequence', false);
 ```
 

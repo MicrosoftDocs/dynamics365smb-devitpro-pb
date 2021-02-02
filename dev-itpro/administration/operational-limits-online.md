@@ -25,9 +25,11 @@ For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, you can'
   
 |Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
 |---------|--------------------------------------------------------------------------------|------|
+<!-- these settings are per node. We should not expose these to partners 
 |Max concurrent calls|The maximum number of concurrent client calls that can be active.|1000|  
 |Max concurrent connections|The maximum number of concurrent client connections that the service accepts. |500|
 |Max number of orphaned connections|Th maximum number of orphaned connections to be kept alive at the same time for the time that is specified by **ReconnectPeriod**.<br /><br /> A connection is orphaned when the client is involuntarily disconnected from service.<br /><br /> You can also use **MaxValue** as a value to indicate no limit.o| 20|
+-->
 |Reconnect period|The time during which a client can reconnect to the service after being disconnected.|  10 minutes|
 
 <!-- no limit

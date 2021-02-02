@@ -6,7 +6,7 @@ ms.date: 12/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -36,13 +36,15 @@ The number of the key you want to check.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks  
- The license file turns on or off different system capabilities. Use this method to check a key in the file for the current user. If the user has no access rights to the object, a message is displayed and the process is terminated.  
-  
- If you omit this method, the user will have the ability to continue regardless of whether the appropriate license file is open. 
+## Remarks
 
- 
+The license file turns on or off different system capabilities. Use this method to check a key in the file for the current user. If the user has no access rights to the object, a message is displayed and the process is terminated.  
+  
+If you omit this method, the user will have the ability to continue regardless of whether the appropriate license file is open. 
+
+
 ## See Also
+
 [Database Data Type](database-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

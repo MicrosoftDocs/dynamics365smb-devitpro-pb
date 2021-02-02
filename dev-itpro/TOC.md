@@ -45,8 +45,7 @@
 ### [Connect with customers](/partner-center/connect-with-your-customers?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Customize Business Central](/dynamics365/business-central/ui-customizing-overview?toc=/dynamics365/business-central/dev-itpro/toc.json) 
 ## Frequently asked questions
-### [Frequently asked questions (general)](faq.md)
-### [FAQ about Connecting to the Intelligent Cloud from On-Premises Solutions](administration/FAQ-Intelligent-Cloud.md)
+### [Frequently asked questions (general)](faq.yml)
 ### [FAQ for Developing in AL](developer/devenv-dev-faq.md)
 ### [FAQ about Library and Dependency Apps in Business Central](developer/app-faq-dependencies-libraries.md)
 ### [FAQ about Testing your Business Central App](developer/app-faq-test.md)
@@ -55,6 +54,7 @@
 ### [FAQ for Marketing Validation](developer/readiness/readiness-marketing-validation-faq.md)
 ### [FAQ for Update Lifecycle for AppSource Apps](developer/devenv-update-app-life-cycle-faq.md)
 ### [FAQ About the Windows Client and Business Central](faq-win-cli.md)
+### [FAQ about Connecting to Business Central Online from On-Premises Solutions](administration/FAQ-Intelligent-Cloud.md)
 ## Help and Support
 ### [Resources for Help and Support](help-and-support.md)
 ### [Legal Resources](terms/legal.md)
@@ -90,6 +90,7 @@
 ## [Enabling New Features Ahead of Time](administration/feature-management.md)
 ## [Managing Technical Support](administration/manage-technical-support.md)
 ## [Special Permission Sets](administration/administration-special-permission-sets.md)
+## [Setting up the Excel Add-In](administration/configuring-excel-addin.md)
 ## [Network Configuration for the Excel Add-In](administration/configuring-network-for-addins.md)
 ## [Setting up App Key Vaults for Extensions](administration/setup-app-key-vault.md)
 ## [Upgrading AppSource Apps in Production](developer/devenv-upgrade-appsource-app-in-prod.md)
@@ -149,7 +150,7 @@
 ### [Migrating from Business Central On-Premises](administration/migrate-business-central-on-premises.md)
 ### [Migrating from Dynamics GP](administration/migrate-dynamics-gp.md)
 ### [Migrating from Dynamics NAV](upgrade/Upgrade-Considerations.md#online)
-### [FAQ about Connecting to the Intelligent Cloud](administration/faq-intelligent-cloud.md)
+### [FAQ about Connecting to Business Central Online from On-Premises Solutions](administration/faq-intelligent-cloud.md)
 ### [Troubleshooting Cloud Migration](administration/migration-troubleshooting.md)
 <!--### [Migrating from Dynamics SL](administration/migrate-data.md)-->
 <!-- end migrate -->
@@ -500,6 +501,7 @@
 #### [Test Codeunits and Text Methods](developer/devenv-test-codeunits-and-test-methods.md)
 #### [Method Attributes](developer/methods/devenv-method-attributes.md)
 #### [Procedure Overload](developer/methods/devenv-overload-method.md)
+#### [Joker Data Type](developer/methods/devenv-joker-datatype.md)
 #### Option Types
 <!-- [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -2100,6 +2102,7 @@
 ## Compliance
 ### [Compliance Overview](/dynamics365/business-central/compliance/compliance-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
 <!-- end security -->
+## [Service Overview](service-overview.md)
 <!-- begin performance -->
 # Performance
 ## [Performance Overview](performance/performance-overview.md)

@@ -6,7 +6,7 @@ ms.date: 12/10/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -45,7 +45,7 @@ If you call this method on a Variant, it returns an error.
   
 ## Example
 
-```
+```al
 var
     City: Text[30];
     MaxLength: Integer;

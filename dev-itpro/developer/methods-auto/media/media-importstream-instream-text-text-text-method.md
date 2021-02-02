@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -93,7 +93,7 @@ With the objects in place, you can add and run the following AL code to import t
 
 This code iterates over records in the **My Items** table. For each record, it looks in the *C:\\images* folder for a file whose name matches the **No.** field of the record. If there is a match the file, an InStream object is created for the file, the media is imported into the record, and a confirmation message is returned.
 
-```
+```al
  var
     myItemRec: Record "My Items";
     fileName: Text;
@@ -104,7 +104,7 @@ This code iterates over records in the **My Items** table. For each record, it l
 begin
     if  myItemRec.FindFirst() then begin  
         repeat begin
-            fileName := 'C:\images\' + FORMAT(myItemRec."No.") + '.jpg';  
+            fileName := 'C:\images\' + Format(myItemRec."No.") + '.jpg';  
     
             if File.Exists(fileName) then begin  
                 importFile.Open(fileName);  

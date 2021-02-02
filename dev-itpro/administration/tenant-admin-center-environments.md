@@ -122,6 +122,17 @@ Database backups are an essential part of any business continuity and disaster r
 
 As an administrator, you can restore an existing environment from a time in the past, within the 30-day retention period. An environment can only be restored within the same [!INCLUDE[prod_short](../developer/includes/prod_short.md)] version (minor and major).
 
+### Users who can restore environments
+
+Permission to restore environments is limited to specific types of users: internal and delegated administrators. The following users are allowed to restore environments.
+
+- Delegated administrators from reselling partners
+- Administrators from the organization that subscribes to [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online
+
+Also, these users must have the **D365 BACKUP/RESTORE** permission set assigned to their user account in the environment they're trying to export.
+
+For more information about permissions sets and user groups, see [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions).
+
 ### Considerations and limitations
 
 - Environments can only be restored if the customer has a paid [!INCLUDE[prod_short](../developer/includes/prod_short.md)] subscription.

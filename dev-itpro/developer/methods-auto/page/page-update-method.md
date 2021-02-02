@@ -2,11 +2,11 @@
 title: "Page.Update Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 01/22/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -35,7 +35,13 @@ Set this parameter to true if you want to save the current record. Set this para
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+The `SaveRecord` default value is true. The default value of SaveRecord, however, depends on whether SourceTable is specified or not. If SourceTable is not defined (== null), then the default value is `false`. If SourceTable is specified then the default value is `true`.
+
 ## See Also
+
 [Page Data Type](page-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

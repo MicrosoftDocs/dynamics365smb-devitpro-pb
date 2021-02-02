@@ -6,7 +6,7 @@ ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -46,7 +46,8 @@ Sets the text string that displays with the object, control, or other element in
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks  
+## Remarks
+
 > [!NOTE]  
 > To submit an app to AppSource, you must use .xliff translation files. For more information, see [Working with Translation Files](../devenv-work-with-translation-files.md).
 
@@ -82,7 +83,8 @@ When the CaptionML property does not include an entry for the language used in t
     |XMLport|Name property|  
     |Codeunit|Name property|  
     |Menu button and menu item|Name property|  
-    |Page objects and page controls (container, group, part, and field)|Name property| |Query objects|Name property|  
+    |Page objects and page controls (container, group, part, and field)|Name property|
+    |Query objects|Name property|  
     |Query columns|CaptionML property of the underlying table field for the column|  
 
 ## See Also  

@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -43,7 +43,7 @@ AL debugger also lets you to monitor the number of SQL statements executed. For 
 
 The following code gets the number of SQL statements executed and displays the number in a message.
 
-```
+```al
 var
     SqlStatementsExecuted : BigText;
 

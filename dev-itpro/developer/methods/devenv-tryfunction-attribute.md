@@ -13,6 +13,8 @@ author: SusanneWindfeldPedersen
 
 # TryFunction Attribute
 
+> **Version**: _Available from runtime version 2.0._
+
 Specifies the method to be a try method, which can be used to catch and handle errors and exceptions that occur when code is run.  
   
 ## Applies to

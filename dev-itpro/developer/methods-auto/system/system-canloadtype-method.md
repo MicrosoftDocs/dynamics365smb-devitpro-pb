@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -41,15 +41,16 @@ A variable of the DotNet data type to represent the .NET Framework type.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Example  
- The following code example is based on codeunit 5300 in the [!INCLUDE[demolong](../../includes/demolong_md.md)]. 
+## Example
 
-```
+The following code example is based on codeunit 5300 in the [!INCLUDE[demolong](../../includes/demolong_md.md)]. 
+
+```al
 var
     OObjLibrary: DotNet "Microsoft.Dynamics.NAV.OLSync.OLSyncSupplier.OutlookObjectLibrary.'Microsoft.Dynamics.NAV.OLSync.OLSyncSupplier, Version=7.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'";
     MyError: Label 'Cannot access the specified type.';
-if not CANLOADTYPE(OObjLibrary) then  
-   ERROR(MyError);  
+if not CanLoadType(OObjLibrary) then  
+   Error(MyError);  
 ```  
 
 ## See Also

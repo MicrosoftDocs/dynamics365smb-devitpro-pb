@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -38,7 +38,7 @@ Enum with integer value :=   Enum.FromInteger(Value: Integer)
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Example
 
-```
+```al
 enum 50130 YesNo
 {
     value(0; Yes) { }

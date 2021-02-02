@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -43,7 +43,7 @@ Returns the next value from number sequence.
 ## Example
 The following example gets the next value in the number sequence `MyNumberSequence`. The number series is not company specific.
  
-```
+```al
 number := NumberSequence.Next('MyNumberSequence', false);
 ```
 
