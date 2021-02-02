@@ -9,7 +9,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.author: rweigel
+ms.author: freddyk
 ---
 
 # Rules and Guidelines for AL Code
@@ -51,7 +51,7 @@ To help you save time, we're sharing a list of the top 15 common pitfalls that r
 
     For your app to be a good citizen in [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)], permission errors must not appear unless it is a necessary reason for showing the error.  
     It is acceptable to throw an error to a user that does not have your permission set marked and tries to access your page object.
-    It is not acceptable to throw an error to that same user trying to access [!INCLUDE[prodshort](../includes/prodshort.md)] pages in the base application, or to throw an error to a user who is not trying to access your app's functionality.
+    It is not acceptable to throw an error to that same user trying to access [!INCLUDE[prod_short](../includes/prod_short.md)] pages in the base application, or to throw an error to a user who is not trying to access your app's functionality.
 6. Missing application area tagging
 
     Tag in which part your app participates. Pages, controls, actions, and fields will not appear in [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] if the [Application Area property](../developer/properties/devenv-applicationarea-property.md) has not been set.

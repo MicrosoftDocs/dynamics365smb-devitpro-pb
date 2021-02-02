@@ -2,11 +2,11 @@
 title: "XmlAttribute.CreateNamespaceDeclaration Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # XmlAttribute.CreateNamespaceDeclaration Method
+> **Version**: _Available from runtime version 1.0._
+
 Creates an attribute that represents a namespace declaration.
 
 
@@ -32,9 +34,9 @@ The URI of the attribute. If the prefix is xmlns, then this parameter must be ht
 
 
 ## Return Value
-*XmlAttribute*  
-&emsp;Type: [XmlAttribute](xmlattribute-data-type.md)  
-The created XmlAttribute node.  
+*XmlAttribute*
+&emsp;Type: [XmlAttribute](xmlattribute-data-type.md)
+The created XmlAttribute node.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

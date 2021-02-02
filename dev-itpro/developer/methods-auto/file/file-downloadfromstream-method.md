@@ -2,11 +2,11 @@
 title: "File.DownloadFromStream Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # File.DownloadFromStream Method
+> **Version**: _Available from runtime version 1.0._
+
 Sends a file from server computer to the client computer. The client computer is the computer that is running the Windows client or the computer that is running the browser that accesses the web client.
 
 
@@ -21,8 +23,8 @@ Sends a file from server computer to the client computer. The client computer is
 ```
 [Ok := ]  File.DownloadFromStream(InStream: InStream, DialogTitle: String, ToFolder: String, ToFilter: String, var ToFile: Text)
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *InStream*  
 &emsp;Type: [InStream](../instream/instream-data-type.md)  
@@ -46,9 +48,9 @@ The name to give the downloaded file. This is the default file name that is show
 
 
 ## Return Value
-*Ok*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+*Ok*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+**true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -60,30 +62,29 @@ The name to give the downloaded file. This is the default file name that is show
 > [!NOTE]  
 > On devices that run Apple iOS, such as iPad, you can only download a file if the Apple iOS device on which you are downloading the file has an application that supports the file type.  
 
- The business logic runs on the computer that is running [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] and not on the client. Files are created on a [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)] service and not locally on the client computer. When you write code, you must consider where files are created.  
+The business logic runs on the computer that is running [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] and not on the client. Files are created on a [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)] service and not locally on the client computer. When you write code, you must consider where files are created.  
 
- Use [UPLOAD Method \(File\)](../../methods-auto/file/file-upload-method.md) and [UPLOADINTOSTREAM Method \(File\)](../../methods-auto/file/file-uploadintostream-method.md) to send a file from a client to a [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] instance.  
+Use [Upload Method \(File\)](../../methods-auto/file/file-upload-method.md) and [UploadIntoStream Method \(File\)](../../methods-auto/file/file-uploadintostream-method.md) to send a file from a client to a [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] instance.  
 
- Use [DOWNLOAD Method \(File\)](../../methods-auto/file/file-download-method.md) and [DOWNLOADFROMSTREAM Method \(FILE\)](../../methods-auto/file/file-downloadfromstream-method.md) to send a file from a [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] instance to a client.  
+Use [Download Method \(File\)](../../methods-auto/file/file-download-method.md) and [DownloadFromStream Method \(File\)](../../methods-auto/file/file-downloadfromstream-method.md) to send a file from a [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] instance to a client.  
 
- We recommend that you use the methods in codeunit **419 File Management** to upload and download files.
+We recommend that you use the methods in codeunit **419 File Management** to upload and download files.
 
-
-[!INCLUDE[multi_file_download_web_client](../../includes/multi_file_download_web_client.md)]   
+[!INCLUDE[multi_file_download_web_client](../../includes/multi_file_download_web_client.md)]
 
 ## Example  
 
-```
+```al
  var
     TempFile: File;
     NewStream: InsTream;
     ToFileName: Variant;
 begin  
-    TempFile.CREATETEMPFILE();  
-    TempFile.WRITE('abc');  
-    TempFile.CREATEINSTREAM(NewStream);  
+    TempFile.CreateTempFile();  
+    TempFile.Write('abc');  
+    TempFile.CreateInStream(NewStream);  
     ToFileName := 'SampleFile.txt';  
-    DOWNLOADFROMSTREAM(NewStream,'Export','','All Files (*.*)|*.*',ToFileName);
+    DownloadFromStream(NewStream,'Export','','All Files (*.*)|*.*',ToFileName);
 end;
 ```  
 

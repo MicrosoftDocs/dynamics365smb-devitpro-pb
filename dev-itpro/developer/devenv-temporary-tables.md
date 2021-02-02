@@ -23,7 +23,7 @@ You can use a temporary table just like you use a database table. The difference
 
 ## Advantage of using a temporary table  
 
-The advantage of using a temporary table is that all the interaction with a temporary table occurs on [!INCLUDE[prodlong](includes/prodlong.md)]. A temporary table reduces the load on both the network and the SQL database server.  
+The advantage of using a temporary table is that all the interaction with a temporary table occurs on [!INCLUDE[prod_long](includes/prod_long.md)]. A temporary table reduces the load on both the network and the SQL database server.  
 
 When you want to do many operations on the data in a specific table in the database, you can load the data into a temporary table when you modify it. Loading the data into a temporary table speeds up the process because all the operations are done in memory on the [!INCLUDE[server](includes/server.md)].
 

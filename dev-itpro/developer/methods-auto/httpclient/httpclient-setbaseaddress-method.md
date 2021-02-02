@@ -2,11 +2,11 @@
 title: "HttpClient.SetBaseAddress Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # HttpClient.SetBaseAddress Method
+> **Version**: _Available from runtime version 1.0._
+
 Sets the base address of Uniform Resource Identifier (URI) of the Internet resource used when sending requests.
 
 
@@ -22,9 +24,9 @@ Sets the base address of Uniform Resource Identifier (URI) of the Internet resou
 [Ok := ]  HttpClient.SetBaseAddress(NewBaseAddress: String)
 ```
 ## Parameters
-*HttpClient*  
-&emsp;Type: [HttpClient](httpclient-data-type.md)  
-An instance of the [HttpClient](httpclient-data-type.md) data type.  
+*HttpClient*
+&emsp;Type: [HttpClient](httpclient-data-type.md)
+An instance of the [HttpClient](httpclient-data-type.md) data type.
 
 *NewBaseAddress*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -32,9 +34,9 @@ The base address of the Uniform Resource Identifier (URI) of the Internet resour
 
 
 ## Return Value
-*Ok*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+*Ok*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+**true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

@@ -2,11 +2,11 @@
 title: "Record.Insert Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/23/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Record.Insert Method
+> **Version**: _Available from runtime version 1.0._
+
 Inserts a record into a table without executing the code in the OnInsert trigger.
 
 
@@ -23,14 +25,14 @@ Inserts a record into a table without executing the code in the OnInsert trigger
 ```
 
 ## Parameters
-*Record*  
-&emsp;Type: [Record](record-data-type.md)  
-An instance of the [Record](record-data-type.md) data type.  
+*Record*
+&emsp;Type: [Record](record-data-type.md)
+An instance of the [Record](record-data-type.md) data type.
 
 ## Return Value
-*Ok*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+*Ok*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+**true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -42,9 +44,9 @@ The inserted record will automatically get assigned a SystemId by the platform. 
 
 ## Example 1
 
-This example shows how to use the INSERT method without a return value.  
+This example shows how to use the Insert method without a return value.  
   
-```  
+```al
 Customer.Init;  
 Customer."No." := '1120';  
 Customer.Insert();  
@@ -54,9 +56,9 @@ If customer 1120 already exists, then a run-time error occurs.
 
 ## Example 2
   
-This example shows how to use the INSERT method with a return value.
+This example shows how to use the Insert method with a return value.
 
-```
+```al
 var
     CustomerRec: Record Customer;
     Text000: Label 'Customer no: %1 inserted.';
@@ -64,7 +66,7 @@ var
 begin
     CustomerRec.Init();  
     CustomerRec."No." := '1120';  
-    if CustomerRec.INSERT() then  
+    if CustomerRec.Insert() then  
       Message(Text000, CustomerRec."No.")  
     else  
       Message(Text001, CustomerRec."No.");

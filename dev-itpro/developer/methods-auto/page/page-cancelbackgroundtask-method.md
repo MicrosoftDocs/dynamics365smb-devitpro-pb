@@ -2,11 +2,11 @@
 title: "Page.CancelBackgroundTask Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Page.CancelBackgroundTask Method
+> **Version**: _Available from runtime version 4.0._
+
 Attempt to cancel a page background task.
 
 
@@ -22,9 +24,9 @@ Attempt to cancel a page background task.
 [Ok := ]  Page.CancelBackgroundTask(TaskId: Integer)
 ```
 ## Parameters
-*Page*  
-&emsp;Type: [Page](page-data-type.md)  
-An instance of the [Page](page-data-type.md) data type.  
+*Page*
+&emsp;Type: [Page](page-data-type.md)
+An instance of the [Page](page-data-type.md) data type.
 
 *TaskId*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
@@ -32,17 +34,17 @@ Specifies the ID of the page background task to cancel. The ID is assigned to th
 
 
 ## Return Value
-*Ok*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the page background task was marked for cancellation; otherwise **false**.  
+*Ok*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+**true** if the page background task was marked for cancellation; otherwise **false**.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example
-The following example uses the CANCELBACKGROUNDTASK method to cancel an existing page background task, based on its task ID.
+The following example uses the CancelBackgroundTask method to cancel an existing page background task, based on its task ID.
  
-```
+```al
 var​
   WaitTaskId: Integer;​
 ​

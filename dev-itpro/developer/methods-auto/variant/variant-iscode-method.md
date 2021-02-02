@@ -2,11 +2,11 @@
 title: "Variant.IsCode Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Variant.IsCode Method
+> **Version**: _Available from runtime version 1.0._
+
 Indicates whether an AL variant contains a Code variable.
 
 
@@ -21,26 +23,26 @@ Indicates whether an AL variant contains a Code variable.
 ```
 Ok :=   Variant.IsCode()
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 
 ## Parameters
-*Variant*  
-&emsp;Type: [Variant](variant-data-type.md)  
-An instance of the [Variant](variant-data-type.md) data type.  
+*Variant*
+&emsp;Type: [Variant](variant-data-type.md)
+An instance of the [Variant](variant-data-type.md) data type.
 
 ## Return Value
-*Ok*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the AL variant contains a Code variable, otherwise **false**.  
+*Ok*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+**true** if the AL variant contains a Code variable, otherwise **false**.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example  
- The following example determines whether an AL variant contains a code variable. The code initializes the MyCode variable with a string value. The MyCode variable is assigned to the variant variable that is named MyVariant. The **ISCODE** method determines whether the variant contains a code variable and stores the return value in the varResult variable. In this case, the variant contains a code variable so **true** is returned and displayed in a message box. The [ISTEXT Method (Variant)](../../methods/devenv-istext-method-variant.md) determines whether the variant contains a text variable. The return value is **false** because the variant does not contain a text.
+ The following example determines whether an AL variant contains a code variable. The code initializes the MyCode variable with a string value. The MyCode variable is assigned to the variant variable that is named MyVariant. The **IsCode** method determines whether the variant contains a code variable and stores the return value in the varResult variable. In this case, the variant contains a code variable so **true** is returned and displayed in a message box. The [IsText Method (Variant)](../../methods/devenv-istext-method-variant.md) determines whether the variant contains a text variable. The return value is **false** because the variant does not contain a text.
    
-```  
+```al
 var
     MyCode: Code[100];
     MyVariant: Variant;
@@ -50,10 +52,10 @@ var
 begin
     MyCode := 'A1297';  
     MyVariant :=  MyCode;  
-    varResult := MyVariant.ISCODE;  
-    MESSAGE(Text000,MyVariant,varResult);  
-    varResult := MyVariant.ISTEXT;  
-    MESSAGE(Text001,MyVariant,varResult);  
+    varResult := MyVariant.IsCode;  
+    Message(Text000,MyVariant,varResult);  
+    varResult := MyVariant.IsText;  
+    Message(Text001,MyVariant,varResult);  
 end;
 ```  
   

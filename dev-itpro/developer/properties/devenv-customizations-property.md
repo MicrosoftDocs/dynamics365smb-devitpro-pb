@@ -1,23 +1,28 @@
 ---
 title: "Customizations Property"
-author: SusanneWindfeldPedersen
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
-ms.author: solsen
+author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Customizations Property
+> **Version**: _Available from runtime version 1.0._
 
-Specifies the list of page customizations associated with this profile.
-  
-## Applies to  
-  
-- Profile object  
+Specifies the Page Customizations which are applied with this profile.
+
+## Applies to
+-   Profile
+
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Property Value
 
@@ -33,7 +38,7 @@ Customizations = SimpleCustomization, "My Customization";
 
 Page customizations allow you to add changes to a page's layout and actions. You can apply several customizations to a same RoleCenter and use a single customization for different RoleCenters. For more information about creating page customizations, see [Page Customization Object](../devenv-page-customization-object.md).
 
-Page customizations only apply to the RoleCenter they are specified for. In order to see them, in [!INCLUDE[prodlong](../includes/prodlong.md)] under **My Settings**, **Role Center** change to the specific RoleCenter for which a page customization is defined.
+Page customizations only apply to the RoleCenter they are specified for. In order to see them, in [!INCLUDE[prod_long](../includes/prod_long.md)] under **My Settings**, **Role Center** change to the specific RoleCenter for which a page customization is defined.
 
 ## See Also  
 

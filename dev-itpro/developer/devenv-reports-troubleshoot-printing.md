@@ -28,7 +28,7 @@ Refer to the [Printer Payload](devenv-onaftersetupprinters-event.md#printpayload
 
 ### Getting more information from the Windows Event Log
 
-If you're running [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises, you can use the Windows Event log get more information about printer payload issues than what appears in the client. With errors related to an incorrect payload format, a warning is also recorded in the Windows Event Log of the computer running the [!INCLUDE[server](../developer/includes/server.md)]. This warning provides more details than what is shown in the client. For example, let's say the client displays the following message:
+If you're running [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises, you can use the Windows Event log get more information about printer payload issues than what appears in the client. With errors related to an incorrect payload format, a warning is also recorded in the Windows Event Log of the computer running the [!INCLUDE[server](../developer/includes/server.md)]. This warning provides more details than what is shown in the client. For example, let's say the client displays the following message:
 
 'The provided payload for printer '{0}' isn't formatted correctly. Please update the payload and try again.'
 

@@ -2,11 +2,11 @@
 title: "Decimal Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Decimal Data Type
+> **Version**: _Available from runtime version 1.0._
+
 Denotes decimal numbers ranging from -999,999,999,999,999.99 to +999,999,999,999,999.99.
 
 
@@ -23,9 +25,9 @@ Denotes decimal numbers ranging from -999,999,999,999,999.99 to +999,999,999,999
 
 ## Example 1
 
- The following are examples of decimal values.  
+The following are examples of decimal values.  
 
-```  
+```
 546.88  
 3425.57  
 ```  
@@ -34,7 +36,7 @@ Denotes decimal numbers ranging from -999,999,999,999,999.99 to +999,999,999,999
 
  The following is not a decimal, but rather an [Integer Data Type](../../datatypes/devenv-integer-data-type.md).  
 
-```  
+```
 342  
 ```  
 
@@ -46,7 +48,7 @@ The following table shows the limits for variables of type `Decimal`.
 
 |Limit|Value|
 |-----------|------------------------------|  
-|Maximum format value.<br /><br /> This is the maximum value that can be:<br /><br /> -   Formatted into a TEXT variable by the FORMAT function.<br />-   Input from the UI or XMLPorts.<br />-   Assigned directly in source code.|+/- 999,999,999,999,999.99|
+|Maximum format value.<br /><br /> This is the maximum value that can be:<br /><br /> -   Formatted into a TEXT variable by the Format function.<br />-   Input from the UI or XMLPorts.<br />-   Assigned directly in source code.|+/- 999,999,999,999,999.99|
 |Maximum field data type value.<br /><br /> This is the maximum value that a field variable in a record can hold while not being persisted.|+/- 999,999,999,999,999.99| 
 |Maximum persisted value.<br /><br /> This is the maximum value that can be stored in the database.|Can read previous stored values but cannot store values outside the formatting range since field variables cannot be assigned values outside the formatting range.|
 |Maximum calculating value.<br /><br /> This is the maximum value that can be calculated by code statements while not assigning to a field variable, storing to the database, or formatting to a text variable.|+/- 79,228,162,514,264,337,593,543,950,335|

@@ -2,11 +2,11 @@
 title: "NumberSequence.Delete Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # NumberSequence.Delete Method
+> **Version**: _Available from runtime version 4.0._
+
 Deletes a specific number sequence.
 
 
@@ -36,7 +38,7 @@ Specifies if the number sequence is company-specific. Default is true.
 ## Example
 The following example checks whether the number sequence `MyNumberSequence` exists, and if so, it deletes it.
  
-```
+```al
 if NumberSequence.Exists('MyNumberSequence', false) then
     NumberSequence.Delete('MyNumberSequence', false);
 ```

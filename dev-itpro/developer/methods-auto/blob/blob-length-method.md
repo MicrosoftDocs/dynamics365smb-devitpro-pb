@@ -2,11 +2,11 @@
 title: "Blob.Length Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 12/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Blob.Length Method
+> **Version**: _Available from runtime version 1.0._
+
 Returns the number of bytes in the binary large object (BLOB).
 
 
@@ -21,18 +23,18 @@ Returns the number of bytes in the binary large object (BLOB).
 ```
 Length :=   Blob.Length()
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 
 ## Parameters
-*Blob*  
-&emsp;Type: [Blob](blob-data-type.md)  
-An instance of the [Blob](blob-data-type.md) data type.  
+*Blob*
+&emsp;Type: [Blob](blob-data-type.md)
+An instance of the [Blob](blob-data-type.md) data type.
 
 ## Return Value
-*Length*  
-&emsp;Type: [Integer](../integer/integer-data-type.md)  
-The number of bytes in the binary large object (BLOB).  
+*Length*
+&emsp;Type: [Integer](../integer/integer-data-type.md)
+The number of bytes in the binary large object (BLOB).
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

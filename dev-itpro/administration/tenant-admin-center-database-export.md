@@ -17,7 +17,7 @@ ms.author: jswymer
 
 [!INCLUDE[2019_releasewave2](../includes/2019_releasewave2.md)]
 
-From the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], you can export the database for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online environments as BACPAC files to an Azure storage container.
+From the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], you can export the database for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online environments as BACPAC files to an Azure storage container.
 
 ## Considerations before you begin
 
@@ -37,7 +37,7 @@ For more information setting up an Azure storage account, see [Create a storage 
 
 ### Generating a shared access signature (SAS)
 
-The next step is to generate a shared access signature (SAS) that provides secure delegated access to your storage account. [!INCLUDE[prodshort](../developer/includes/prodshort.md)] uses the signature to write the BACPAC file to your storage account.
+The next step is to generate a shared access signature (SAS) that provides secure delegated access to your storage account. [!INCLUDE[prod_short](../developer/includes/prod_short.md)] uses the signature to write the BACPAC file to your storage account.
 
 #### To generate a shared access signature (SAS)
 
@@ -77,29 +77,24 @@ All database export activity is logged for auditing purposes. To view the histor
 
 ## Users who can export databases
 
-Permission to export databases is limited to specific types of users, typically internal and delegated administrators. This isn't a task that a typical [!INCLUDE [prodshort](../developer/includes/prodshort.md)] user should be able to do, but an administrator can grant permission to a user to export databases, should this be necessary.
+Permission to export databases is limited to specific types of users: internal and delegated administrators. The following users are allowed to export databases.
 
-- Users from reselling partners
+- Delegated administrators from reselling partners
 
-  - Employees who have the **Admin agent** role for this customer in the Partner Center
+- Administrators from the organization that subscribes to [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online
 
-    In contrast, employees who have the **Helpdesk agent** role *cannot* export databases.
+Also, these users must have the **D365 BACKUP/RESTORE** permission set assigned to their user account in the environment they're trying to export.
 
-- Users from the organization that subscribes to [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online
-
-  - Users who are internal administrators and have the **Global admin** role in the Microsoft 365 tenant
-  - Users who are members of the *D365 BACKUP/RESTORE* user group
-
-    To add a user to this user group, go to the **User Groups** page in [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. For more information, see [To manage permissions through user groups](/dynamics365/business-central/ui-define-granular-permissions#to-manage-permissions-through-user-groups).  
+For more information about permissions sets and user groups, see [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions).  
 
 ## Using the exported data
 
-The BACPAC file contains data that is customer-specific business data. Technically, [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online is a multitenant deployment, which means that each customer tenant has their own business database while the data that defines the application is in a shared application database.  
+The BACPAC file contains data that is customer-specific business data. Technically, [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online is a multitenant deployment, which means that each customer tenant has their own business database while the data that defines the application is in a shared application database.  
 
-This means that if you want to export the data in order to change the customer's [!INCLUDE [prodshort](../developer/includes/prodshort.md)] from an online deployment to an on-premises deployment, you must also get the application data from the installation media from the same version of [!INCLUDE [prodshort](../developer/includes/prodshort.md)] that the online tenant is using. You can see the version number in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] or the **Help and Support** page in the customer's [!INCLUDE [prodshort](../developer/includes/prodshort.md)].  
+This means that if you want to export the data in order to change the customer's [!INCLUDE [prod_short](../developer/includes/prod_short.md)] from an online deployment to an on-premises deployment, you must also get the application data from the installation media from the same version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] that the online tenant is using. You can see the version number in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] or the **Help and Support** page in the customer's [!INCLUDE [prod_short](../developer/includes/prod_short.md)].  
 
 > [!IMPORTANT]
-> While you can import the downloaded BACPAC file into your own SQL Server instance, Microsoft does not provide support for creating a working on-premises environment from the BACPAC that you download from [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online.  
+> While you can import the downloaded BACPAC file into your own SQL Server instance, Microsoft does not provide support for creating a working on-premises environment from the BACPAC that you download from [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online.  
 
 For more information, see [Quickstart: Import a BACPAC file to a database in Azure SQL Database](/azure/sql-database/sql-database-import), [Migrating to Single-Tenancy From Multitenancy](../deployment/Merging-an-Application-Database-with-a-Tenant-Database.md), and [When to choose on-premises deployment](../deployment/Deployment.md#when-to-choose-on-premises-deployment).  
 

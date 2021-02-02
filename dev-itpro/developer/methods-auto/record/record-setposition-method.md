@@ -2,11 +2,11 @@
 title: "Record.SetPosition Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Record.SetPosition Method
+> **Version**: _Available from runtime version 1.0._
+
 Sets the fields in a primary key on a record to the values specified in the supplied string. The remaining fields are not changed.
 
 
@@ -22,9 +24,9 @@ Sets the fields in a primary key on a record to the values specified in the supp
  Record.SetPosition(String: String)
 ```
 ## Parameters
-*Record*  
-&emsp;Type: [Record](record-data-type.md)  
-An instance of the [Record](record-data-type.md) data type.  
+*Record*
+&emsp;Type: [Record](record-data-type.md)
+An instance of the [Record](record-data-type.md) data type.
 
 *String*  
 &emsp;Type: [String](../string/string-data-type.md)  

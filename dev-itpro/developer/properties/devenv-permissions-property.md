@@ -1,29 +1,35 @@
 ---
 title: "Permissions Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
-ms.assetid: 99eb343f-7bff-4956-ad1b-605440b7858c
-caps.latest.revision: 9
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Permissions Property
+> **Version**: _Available from runtime version 1.0._
 
-Sets whether an object has additional permission required to perform some operations on one or more tables. The operations can be to read, insert, modify, and delete data.  
-  
-## Applies to  
-  
-- Codeunits  
-- Pages  
-- Queries  
-- Reports  
-- Tables  
-- XMLports  
+Sets whether an object has additional permission required to perform some operations on one or more tables. The operations can be to read, insert, modify, and delete data.
+
+## Applies to
+-   Codeunit
+-   Table
+-   Request Page
+-   Page
+-   Xml Port
+-   Report
+-   Query
+
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 
 ## Syntax
 

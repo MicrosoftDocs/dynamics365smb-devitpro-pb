@@ -2,11 +2,11 @@
 title: "Variant.IsFilterPageBuilder Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Variant.IsFilterPageBuilder Method
+> **Version**: _Available from runtime version 1.0._
+
 Indicates whether an AL variant contains a FilterPageBuilder variable.
 
 
@@ -21,24 +23,24 @@ Indicates whether an AL variant contains a FilterPageBuilder variable.
 ```
 Ok :=   Variant.IsFilterPageBuilder()
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 
 ## Parameters
-*Variant*  
-&emsp;Type: [Variant](variant-data-type.md)  
-An instance of the [Variant](variant-data-type.md) data type.  
+*Variant*
+&emsp;Type: [Variant](variant-data-type.md)
+An instance of the [Variant](variant-data-type.md) data type.
 
 ## Return Value
-*Ok*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the AL variant contains a FilterPageBuilder variable, otherwise **false**.  
+*Ok*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+**true** if the AL variant contains a FilterPageBuilder variable, otherwise **false**.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example  
- The following example uses the ISFILTERPAGEBUILDER method on a filter page object that includes a filter control for the **Date** system table.  
+ The following example uses the IsFilterPageBuilder method on a filter page object that includes a filter control for the **Date** system table.  
    
 ```  
 var
@@ -47,9 +49,9 @@ var
     myVariant: Variant;
 begin
     varDateItem := 'Date record';  
-    varFilterPageBuilder.ADDTABLE(varDateItem + ‘ 1’,DATABASE::Date);  
+    varFilterPageBuilder.AddTable(varDateItem + ‘ 1’,DATABASE::Date);  
     myVariant := varFilterPageBuilder;  
-    if not myVariant.ISFILTERPAGEBUILDER then   
+    if not myVariant.IsFilterPageBuilder then   
       ERROR(‘This variant should contain a FilterPageBuilder variable’);  
 end;
   

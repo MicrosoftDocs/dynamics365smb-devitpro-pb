@@ -2,11 +2,11 @@
 title: "Record.FindFirst Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Record.FindFirst Method
+> **Version**: _Available from runtime version 1.0._
+
 Finds the first record in a table based on the current key and filter.
 
 
@@ -23,26 +25,26 @@ Finds the first record in a table based on the current key and filter.
 ```
 
 ## Parameters
-*Record*  
-&emsp;Type: [Record](record-data-type.md)  
-An instance of the [Record](record-data-type.md) data type.  
+*Record*
+&emsp;Type: [Record](record-data-type.md)
+An instance of the [Record](record-data-type.md) data type.
 
 ## Return Value
-*Ok*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+*Ok*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+**true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- This method should be used instead of **FIND**\('-'\) when you only need the first record.  
+ This method should be used instead of **Find**\('-'\) when you only need the first record.  
   
- You should only use this method when you explicitly want to find the first record in a table or set. Do not use this method in combination with **REPEAT**.. **UNTIL**.  
+ You should only use this method when you explicitly want to find the first record in a table or set. Do not use this method in combination with **Repeat**.. **Until**.  
 
-Calling FINDFIRST on an empty table from the [OnNewRecord trigger](../../triggers/devenv-onnewrecord-trigger.md) causes the [!INCLUDE[server](../../includes/server.md)] to throw an exception, and the AL execution stops. However, the client suppresses this error and does not show any error message to the user. Therefore, when using FINDFIRST inside this trigger, you should add code that conditionally verifies whether a record was found, and if not, notify the user with a message. For example:
+Calling FindFirst on an empty table from the [OnNewRecord trigger](../../triggers/devenv-onnewrecord-trigger.md) causes the [!INCLUDE[server](../../includes/server.md)] to throw an exception, and the AL execution stops. However, the client suppresses this error and does not show any error message to the user. Therefore, when using FindFirst inside this trigger, you should add code that conditionally verifies whether a record was found, and if not, notify the user with a message. For example:
 
-```
+```al
 if not MyRecord.FindFirst then
     Error('error message');
 ```
@@ -50,7 +52,7 @@ if not MyRecord.FindFirst then
  
 This example also assumes that you have a **ConfigurePost** method.
  
-```  
+```al
 var
     SalesSetupRec: Record "Sales & Receivables Setup";
 begin

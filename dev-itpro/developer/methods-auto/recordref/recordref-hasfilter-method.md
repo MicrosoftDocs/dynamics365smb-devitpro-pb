@@ -2,11 +2,11 @@
 title: "RecordRef.HasFilter Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # RecordRef.HasFilter Method
+> **Version**: _Available from runtime version 1.0._
+
 Determines whether a filter has been applied to the table that the RecordRef refers to.
 
 
@@ -21,40 +23,40 @@ Determines whether a filter has been applied to the table that the RecordRef ref
 ```
 Ok :=   RecordRef.HasFilter()
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 
 ## Parameters
-*RecordRef*  
-&emsp;Type: [RecordRef](recordref-data-type.md)  
-An instance of the [RecordRef](recordref-data-type.md) data type.  
+*RecordRef*
+&emsp;Type: [RecordRef](recordref-data-type.md)
+An instance of the [RecordRef](recordref-data-type.md) data type.
 
 ## Return Value
-*Ok*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the table referred to by RecordRef has a filter; otherwise, **false**.  
+*Ok*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+**true** if the table referred to by RecordRef has a filter; otherwise, **false**.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- This method works just like the [HASFILTER Method \(Record\)](../record/record-hasfilter-method.md).  
+ This method works just like the [HasFilter Method \(Record\)](../record/record-hasfilter-method.md).  
   
 ## Example  
- The following example opens the Customer table with a RecordRef variable that is named RecRef. The HASFILTER method determines whether a filter has been applied in the Customer table. The method returns **false** because no filters are applied. The return value is stored in the varHasFilters variable. The [SETRECFILTER Method \(RecordRef\)](recordref-setrecfilter-method.md) is used to set a filter. The HASFILTER method now returns **true**. This example requires that you create the following global variables and text constant.  
+ The following example opens the Customer table with a RecordRef variable that is named RecRef. The HasFilter method determines whether a filter has been applied in the Customer table. The method returns **false** because no filters are applied. The return value is stored in the varHasFilters variable. The [SetRecFilter Method \(RecordRef\)](recordref-setrecfilter-method.md) is used to set a filter. The HasFilter method now returns **true**. This example requires that you create the following global variables and text constant.  
     
-```   
+```al
 var
     varHasFilters: Text;
     RecRef: RecordRef;
     Text000: Label 'Are there any filters? %1';
 begin   
-    RecRef.OPEN(DATABASE::Customer);  
-    VarHasFilters := RecRef.HASFILTER;  
-    MESSAGE('Are there any filters? %1', VarHasFilters);  
-    RecRef.SETRECFILTER;  
-    VarHasFilters := RecRef.HASFILTER;  
-    MESSAGE(Text000, VarHasFilters);  
+    RecRef.Open(Database::Customer);  
+    VarHasFilters := RecRef.HasFilter;  
+    Message('Are there any filters? %1', VarHasFilters);  
+    RecRef.SetRecFilter;  
+    VarHasFilters := RecRef.HasFilter;  
+    Message(Text000, VarHasFilters);  
 end;
 ```  
 

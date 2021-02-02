@@ -5,7 +5,7 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 ms.assetid: 59701d5d-65f8-42e8-9b1b-8c47709cf4bc
 caps.latest.revision: 22
@@ -13,13 +13,15 @@ author: jswymer
 ---
 
 # Width Property
+> **Version**: _Available from runtime version 1.0._
 
 Sets the width of a field when it appears as a column in a list. The width is specified by an integer that corresponds to the number of characters. <!-- and must be a fixed number when specified. --> 
   
 ## Applies to  
   
-- Page fields  
-- Table fields  
+-   Table Field
+-   Page Field
+-   Page Label
 
 ## Syntax
 

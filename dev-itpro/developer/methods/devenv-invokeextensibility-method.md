@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 
 # InvokeExtensibilityMethod Method
 
-Invokes an AL trigger on the [!INCLUDE[d365fin_server_md](../includes/d365fin_server_md.md)] on the page that contains the control add-in.  
+Invokes an AL trigger on the [!INCLUDE[d365fin_server_md](../includes/d365fin_server_md.md)] on the page that contains the control add-in. For more information, see [Control Addin Object](../devenv-control-addin-object.md).
   
 ## Method signature
 

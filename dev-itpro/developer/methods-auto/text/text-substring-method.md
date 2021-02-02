@@ -2,11 +2,11 @@
 title: "Text.Substring Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Text.Substring Method
+> **Version**: _Available from runtime version 1.0._
+
 Retrieves a substring from this instance.
 
 
@@ -21,12 +23,12 @@ Retrieves a substring from this instance.
 ```
 Substring :=   Text.Substring(StartIndex: Integer [, Count: Integer])
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
-*Text*  
-&emsp;Type: [Text](text-data-type.md)  
-An instance of the [Text](text-data-type.md) data type.  
+*Text*
+&emsp;Type: [Text](text-data-type.md)
+An instance of the [Text](text-data-type.md) data type.
 
 *StartIndex*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
@@ -38,9 +40,9 @@ The number of characters in the substring.
 
 
 ## Return Value
-*Substring*  
-&emsp;Type: [Text](text-data-type.md)  
-The substring extracted from this instance.  
+*Substring*
+&emsp;Type: [Text](text-data-type.md)
+The substring extracted from this instance.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

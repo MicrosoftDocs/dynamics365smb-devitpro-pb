@@ -2,11 +2,11 @@
 title: "TestRequestPage.SaveAsXml Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # TestRequestPage.SaveAsXml Method
+> **Version**: _Available from runtime version 1.0._
+
 Saves a report data set and the labels on a report as two XML (.xml) files.
 
 > [!NOTE]
@@ -24,9 +26,9 @@ Saves a report data set and the labels on a report as two XML (.xml) files.
  TestRequestPage.SaveAsXml(ParameterFileName: String, DataSetFileName: String)
 ```
 ## Parameters
-*TestRequestPage*  
-&emsp;Type: [TestRequestPage](testrequestpage-data-type.md)  
-An instance of the [TestRequestPage](testrequestpage-data-type.md) data type.  
+*TestRequestPage*
+&emsp;Type: [TestRequestPage](testrequestpage-data-type.md)
+An instance of the [TestRequestPage](testrequestpage-data-type.md) data type.
 
 *ParameterFileName*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -58,24 +60,24 @@ The path and file name to which the data set file is saved.
 -   A handler method of type RequestPageHandler called ReqPageHandler. This handler method has one parameter called RequestPage of Type TestRequestPage and Subtype Customer – Top 10 List. The RequestPage parameter is specified as VAR and is passed by reference to the handler method. 
 <!--Links For more information, see [How to: Create Handler Methods](devenv-How-to--Create-Handler-Methods.md).-->  
   
-```  
+```al
 var
     LabelsFilename: Text;
     DatasetFilename: Text;
 begin
     // Add the following code to the TestSaveAsXML test method.  
-    LabelsFilename := TEMPORARYPATH + 'MyLabels.xml';  
-    DatasetFilename := TEMPORARYPATH + 'MyDataset.xml';  
-    REPORT.RUN(111);  
-    if not FILE.EXISTS(LabelsFilename) then  
-      ERROR('Labels file should exist!');  
-    if not FILE.EXISTS(DatasetFilename) then  
-      ERROR('Dataset file should exist!');  
+    LabelsFilename := TemporaryPath + 'MyLabels.xml';  
+    DatasetFilename := TemporaryPath + 'MyDataset.xml';  
+    Report.Run(111);  
+    if not File.Exists(LabelsFilename) then  
+      Error('Labels file should exist!');  
+    if not File.Exists(DatasetFilename) then  
+      Error('Dataset file should exist!');  
       
     // Add the following code to the ReqPageHandler method.  
-    RequestPage.Customer.SETFILTER("No.", '20000');  
-    RequestPage.ChartType.VALUE('Pie chart');  
-    RequestPage.SAVEASXML(LabelsFilename,DatasetFilename);  
+    RequestPage.Customer.SetFilter("No.", '20000');  
+    RequestPage.ChartType.Value('Pie chart');  
+    RequestPage.SaveAsXML(LabelsFilename,DatasetFilename);  
 end;
   
 ```  

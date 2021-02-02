@@ -2,11 +2,11 @@
 title: "Notification.AddAction Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/23/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Notification.AddAction Method
+> **Version**: _Available from runtime version 1.0._
+
 Specifies an action for the notification.
 
 
@@ -22,9 +24,9 @@ Specifies an action for the notification.
  Notification.AddAction(Caption: String, CodeunitID: Integer, MethodName: String)
 ```
 ## Parameters
-*Notification*  
-&emsp;Type: [Notification](notification-data-type.md)  
-An instance of the [Notification](notification-data-type.md) data type.  
+*Notification*
+&emsp;Type: [Notification](notification-data-type.md)
+An instance of the [Notification](notification-data-type.md) data type.
 
 *Caption*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -50,23 +52,25 @@ For more information and a detailed example, see [Notifications](../../devenv-no
 ##  Example
 The following code creates two actions for a notification. The actions call the **RunAction1** and **RunAction2** methods in the codeunit **Action Handler**.
 
+```al
+MyNotification.Message := 'This is a notification';
+MyNotification.Scope := NotificationScope::LocalScope;
+MyNotification.AddAction('Action 1',CodeUnit::"Action Handler",'RunAction1');
+MyNotification.AddAction('Action 2',CodeUnit::"Action Handler",'RunAction2');
+MyNotification.Send;
 ```
-MyNotification.MESSAGE := 'This is a notification';
-MyNotification.SCOPE := NOTIFICATIONSCOPE::LocalScope;
-MyNotification.ADDACTION('Action 1',CODEUNIT::"Action Handler",'RunAction1');
-MyNotification.ADDACTION('Action 2',CODEUNIT::"Action Handler",'RunAction2');
-MyNotification.SEND;
-```
+
 To handle the actions, the **Action Handler** codeunit has two global methods that have a **Notification** data type parameter:
-```
-PROCEDURE RunAction1@1(MyNotification@1000 : Notification);
-BEGIN
-    MESSAGE('This is RunAction1');
+
+```al
+procedure RunAction1@1(MyNotification@1000 : Notification);
+begin
+    Message('This is RunAction1');
 end;
 
-PROCEDURE RunAction2@2(MyNotification@1000 : Notification);
-BEGIN
- MESSAGE('This is RunAction2');
+procedure RunAction2@2(MyNotification@1000 : Notification);
+begin
+ Message('This is RunAction2');
 end;
 ```
 

@@ -2,11 +2,11 @@
 title: "Report.RunModal Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Report.RunModal Method
+> **Version**: _Available from runtime version 1.0._
+
 Loads and executes the report that you specify.
 
 
@@ -45,7 +47,7 @@ Specifies which record to use in the report. Any filters that are attached to th
 
 ## Remarks
   
-Use this method, or the [REPORT.RUN Method](report-run-method.md), if you do not know the specific report that you want to run when you are designing your application. If you do know the specific report that you want to run, then you can use the [RUNMODAL Method](reportinstance-runmodal-method.md) or the [RUN Method](reportinstance-run-method.md).  
+Use this method, or the [Report.Run Method](report-run-method.md), if you do not know the specific report that you want to run when you are designing your application. If you do know the specific report that you want to run, then you can use the [RunModal Method](reportinstance-runmodal-method.md) or the [Run Method](reportinstance-run-method.md).  
 
  The request page is run modally when you use this method. However, when the user chooses **Preview** on the request page, the **Print Preview** page does not run modally. 
 
@@ -54,22 +56,22 @@ Use this method, or the [REPORT.RUN Method](report-run-method.md), if you do not
 ## Example 1
  This example shows how to run a report. This example displays the request window and sends the report to the printer selected through the Printer Selection table.  
 
-```  
-REPORT.RUNMODAL(1001);  
+```al
+Report.RunModal(1001);  
 ```  
 
 ## Example 2
  This example shows how to run a report. This example skips the request window, starts the report immediately, and sends the report to the printer that is selected in the Printer Selection table.  
 
-```  
-REPORT.RUNMODAL(1001, FALSE);  
+```al
+Report.RunModal(1001, False);  
 ```  
 
 ## Example 3
  This example shows how to run a report. This example skips the request window and starts the report immediately. It sends the report to the system printer instead of the printer that is selected in the Printer Selection table.  
 
-```  
-REPORT.RUNMODAL(1001, FALSE, TRUE);  
+```al
+Report.RunModal(1001, False, True);  
 ```  
 
 ## See Also

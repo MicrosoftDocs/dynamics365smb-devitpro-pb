@@ -2,11 +2,11 @@
 title: "NumberSequence.Insert Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # NumberSequence.Insert Method
+> **Version**: _Available from runtime version 4.0._
+
 Creates a number sequence in the database, with the given parameters.
 
 
@@ -42,7 +44,7 @@ Specifies if the number sequence is company-specific. Default is true.
 ## Example
 The following example creates the number sequence `MyNumberSequence` that starts at zero and increments by a value of ten. The number series is not company specific.
  
-```
+```al
 NumberSequence.Insert('MyNumberSequence', 0, 10, false);
 ```
 ## See Also

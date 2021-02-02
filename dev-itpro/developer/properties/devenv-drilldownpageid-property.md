@@ -1,28 +1,29 @@
 ---
-title: "DrillDownPageID Property"
+title: "DrillDownPageId Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
+# DrillDownPageId Property
+> **Version**: _Available from runtime version 1.0._
 
-# DrillDownPageID Property
+Sets the ID of the page to use as a drill-down.
 
-Sets the ID of the page to use as a drill-down.  
-  
-## Applies to  
-  
-- Page Fields  
-- Tables  
+## Applies to
+-   Table
+-   Page Field
 
-<!--  //NAV
-> [!IMPORTANT]  
->  This property is not supported on Repeater controls on pages when it is displayed in the [!INCLUDE[nav_web](includes/nav_web_md.md)].  
---> 
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Syntax
 

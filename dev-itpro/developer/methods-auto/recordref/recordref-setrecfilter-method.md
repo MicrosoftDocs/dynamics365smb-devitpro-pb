@@ -2,11 +2,11 @@
 title: "RecordRef.SetRecFilter Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # RecordRef.SetRecFilter Method
+> **Version**: _Available from runtime version 1.0._
+
 Sets a filter on a record that is referred to by a RecordRef.
 
 
@@ -23,29 +25,29 @@ Sets a filter on a record that is referred to by a RecordRef.
 ```
 
 ## Parameters
-*RecordRef*  
-&emsp;Type: [RecordRef](recordref-data-type.md)  
-An instance of the [RecordRef](recordref-data-type.md) data type.  
+*RecordRef*
+&emsp;Type: [RecordRef](recordref-data-type.md)
+An instance of the [RecordRef](recordref-data-type.md) data type.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- This method works the same as the [SETRECFILTER Method \(Record\)](../../methods/devenv-setrecfilter-method-record.md).  
+ This method works the same as the [SetRecFilter Method \(Record\)](../../methods/devenv-setrecfilter-method-record.md).  
 
 ## Example  
- The following example opens the Customer table as a RecordRef variable that is named MyRecordRef. The SETRECFILTER method sets the values in the current key of the current record as a record filter. The [GETFILTERS Method \(RecordRef\)](recordref-getfilters-method.md) retrieves the filters that have been set and displays them in a message box. No. is displayed because the filter is set on the No. field, which is the current key. 
+ The following example opens the Customer table as a RecordRef variable that is named MyRecordRef. The SetRecFilter method sets the values in the current key of the current record as a record filter. The [GetFilters Method \(RecordRef\)](recordref-getfilters-method.md) retrieves the filters that have been set and displays them in a message box. No. is displayed because the filter is set on the No. field, which is the current key. 
  
-```  
+```al
 var
     MyRecordRef: RecordRef;
     varFilters: Text;
     Text000: Label 'The filter is set on the %1 field.';
 begin 
-    MyRecordRef.OPEN(DATABASE::Customer);  
-    MyRecordRef.SETRECFILTER;  
-    varFilters := MyRecordRef.GETFILTERS;  
-    MESSAGE(Text000, varFilters);  
+    MyRecordRef.Open(Database::Customer);  
+    MyRecordRef.SetRecFilter;  
+    varFilters := MyRecordRef.GetFilters;  
+    Message(Text000, varFilters);  
 end;
 ```  
 

@@ -2,11 +2,11 @@
 title: "Xmlport.ImportFile Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Xmlport.ImportFile Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets or sets the ImportFile property.
 
 
@@ -21,12 +23,12 @@ Gets or sets the ImportFile property.
 ```
 [ImportFile := ]  Xmlport.ImportFile([ImportFile: Boolean])
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 ## Parameters
-*Xmlport*  
-&emsp;Type: [Xmlport](xmlport-data-type.md)  
-An instance of the [Xmlport](xmlport-data-type.md) data type.  
+*Xmlport*
+&emsp;Type: [Xmlport](xmlport-data-type.md)
+An instance of the [Xmlport](xmlport-data-type.md) data type.
 
 *ImportFile*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
@@ -35,9 +37,9 @@ The new value of the ImportFile property. If the XmlPort is designed for export 
 
 
 ## Return Value
-*ImportFile*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-The current value of the ImportFile property.  
+*ImportFile*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+The current value of the ImportFile property.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

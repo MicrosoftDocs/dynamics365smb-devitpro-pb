@@ -2,11 +2,11 @@
 title: "System.DMY2Date Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # System.DMY2Date Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets a Date object based on a day, month, and year.
 
 
@@ -21,8 +23,8 @@ Gets a Date object based on a day, month, and year.
 ```
 Date :=   System.DMY2Date(Day: Integer [, Month: Integer] [, Year: Integer])
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *Day*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
@@ -38,16 +40,16 @@ The four-digit number of the year. If you omit this optional parameter, the curr
 
 
 ## Return Value
-*Date*  
-&emsp;Type: [Date](../date/date-data-type.md)  
-  
+*Date*
+&emsp;Type: [Date](../date/date-data-type.md)
+
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example  
  
-```
+```al
 var
     Day: Integer;
     Month: Integer;
@@ -58,14 +60,14 @@ begin
     Day := 17;  
     Month := 2;  
     Year := 2014;  
-    OutputDate := DMY2DATE(Day, Month, Year);  
-    MESSAGE(Text000, Day, Month, Year, OutputDate);  
+    OutputDate := DMY2Date(Day, Month, Year);  
+    Message(Text000, Day, Month, Year, OutputDate);  
 end;
 ```  
   
- On a computer that has the regional format set to English \(United States\), the message window displays the following:  
+On a computer that has the regional format set to English \(United States\), the message window displays the following:  
   
- **Day number 17, month number 2, and year number 2014 corresponds to the date 02/17/14.**
+**Day number 17, month number 2, and year number 2014 corresponds to the date 02/17/14.**
  
 ## See Also
 [System Data Type](system-data-type.md)  

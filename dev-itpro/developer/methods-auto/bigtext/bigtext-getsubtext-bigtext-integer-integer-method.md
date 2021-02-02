@@ -2,11 +2,11 @@
 title: "BigText.GetSubText Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 12/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # BigText.GetSubText Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets part of a BigText variable.
 
 
@@ -22,9 +24,9 @@ Gets part of a BigText variable.
 [Length := ]  BigText.GetSubText(var Variable: BigText, Position: Integer [, Length: Integer])
 ```
 ## Parameters
-*BigText*  
-&emsp;Type: [BigText](bigtext-data-type.md)  
-An instance of the [BigText](bigtext-data-type.md) data type.  
+*BigText*
+&emsp;Type: [BigText](bigtext-data-type.md)
+An instance of the [BigText](bigtext-data-type.md) data type.
 
 *Variable*  
 &emsp;Type: [BigText](bigtext-data-type.md)  
@@ -41,79 +43,79 @@ The length of the sub text that should be retrieved. This parameter is optional.
 
 
 ## Return Value
-*Length*  
-&emsp;Type: [Integer](../integer/integer-data-type.md)  
-The length of the result text.  
+*Length*
+&emsp;Type: [Integer](../integer/integer-data-type.md)
+The length of the result text.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 
-## Remarks  
- The first character in a BigText variable is position 1.  
+## Remarks
+
+The first character in a BigText variable is position 1.  
   
- To delete the content in a BigText variable use the [CLEAR Method](../../methods-auto/system/system-clear-joker-method.md). The following code snippet shows the syntax for the clear method. `CLEAR(BigText)`.  
+To delete the content in a BigText variable use the [Clear Method](../../methods-auto/system/system-clear-joker-method.md). The following code snippet shows the syntax for the clear method. `Clear(BigText)`.  
   
-## Example 1 
- The following examples demonstrate how to use the GETSUBTEXT method. This example requires that you create the following global variables and text constant.  
+## Example 1
+
+The following examples demonstrate how to use the GetSubText method. This example requires that you create the following global variables and text constant.  
   
-```
+```al
 var
     MyBigText: BigText;
     VarSubText: Text;
     Text000: Label 'VarSubText = %1';
 ```
   
- The following example initializes the content of the MyBigText variable with the text `ABCDEFG`. The method starts from the third position \(the character C\) in the MyBigText variable and retrieves two characters. The result is the subtext CD. This is because the number 2 is specified for *Length* .  
+The following example initializes the content of the MyBigText variable with the text `ABCDEFG`. The method starts from the third position \(the character C\) in the MyBigText variable and retrieves two characters. The result is the subtext CD. This is because the number 2 is specified for *Length* .  
   
+```al
+  
+MyBigText.AddText('ABCDEFG');  
+MyBigText.GetSubText(VarSubText, 3, 2); // Returns CD.  
+Message(Text000, VarSubText);  
 ```  
   
-MyBigText.ADDTEXT('ABCDEFG');  
-MyBigText.GETSUBTEXT(VarSubText, 3, 2); // Returns CD.  
-MESSAGE(Text000, VarSubText);  
-```  
+## Example 2
+
+The following example initializes the content of the MyBigText variable with the text `ABCDEFG`. The method returns an error because zero is specified for *Position*.  
   
-## Example 2 
- The following example initializes the content of the MyBigText variable with the text `ABCDEFG`. The method returns an error because zero is specified for *Position*.  
-  
-```  
-  
-MyBigText.ADDTEXT('ABCDEFG');  
-MyBigText.GETSUBTEXT(VarSubText, 0, 4); // Returns an error.  
-MESSAGE(Text000, VarSubText);  
+```al
+MyBigText.AddText('ABCDEFG');  
+MyBigText.GetSubText(VarSubText, 0, 4); // Returns an error.  
+Message(Text000, VarSubText);  
   
 ```  
   
 ## Example 3 
- The following example initializes the content of the MyBigText variable with the text `ABCDEFG`. The method returns an error because a negative number is specified for *Length*.  
+
+The following example initializes the content of the MyBigText variable with the text `ABCDEFG`. The method returns an error because a negative number is specified for *Length*.  
   
+```al
+MyBigText.AddText('ABCDEFG');  
+MyBigText.GetSubText(VarSubText, 5, -2); // Returns an error.  
+Message(Text000, VarSubText);  
 ```  
   
-MyBigText.ADDTEXT('ABCDEFG');  
-MyBigText.GETSUBTEXT(VarSubText, 5, -2); // Returns an error.  
-MESSAGE(Text000, VarSubText);  
+## Example 4
+
+The following example initializes the content of the MyBigText variable with the text `ABCDEFG`. The method returns an empty string because the number specified for *position* is greater than the length of the MyBigText variable.  
+  
+```al
+MyBigText.AddText('ABCDEFG');  
+MyBigText.GetSubText(VarSubText, 15, 4); // Returns an empty string.  
+Message(Text000, VarSubText);  
 ```  
   
-## Example 4 
- The following example initializes the content of the MyBigText variable with the text `ABCDEFG`. The method returns an empty string because the number specified for *position* is greater than the length of the MyBigText variable.  
+## Example 5
+
+The following example initializes the content of the MyBigText variable with the text `ABCDEFG`. The method starts from the forth position \(the character D\) and retrieves all the characters in the MyBigText string. The result is the subtext DEFG. This is because the number specified for *Length* is greater than the length of the MyBigText variable.  
   
-```  
-  
-MyBigText.ADDTEXT('ABCDEFG');  
-MyBigText.GETSUBTEXT(VarSubText, 15, 4); // Returns an empty string.  
-MESSAGE(Text000, VarSubText);  
-  
-```  
-  
-## Example 5 
- The following example initializes the content of the MyBigText variable with the text `ABCDEFG`. The method starts from the forth position \(the character D\) and retrieves all the characters in the MyBigText string. The result is the subtext DEFG. This is because the number specified for *Length* is greater than the length of the MyBigText variable.  
-  
-```  
-  
-MyBigText.ADDTEXT('ABCDEFG');  
-MyBigText.GETSUBTEXT(VarSubText, 4, 15); // Returns DEFG.  
-MESSAGE(Text000, VarSubText);  
-  
+```al
+MyBigText.AddText('ABCDEFG');  
+MyBigText.GetSubText(VarSubText, 4, 15); // Returns DEFG.  
+Message(Text000, VarSubText);  
 ```  
 
 ## See Also

@@ -15,8 +15,10 @@ author: jswymer
 
 [!INCLUDE[2019_releasewave2.md](../includes/2019_releasewave2.md)]
 
+This article describes how to set up tenants to send telemetry data to Azure Application Insights for on-premises environments.
 
-This article describes how to set up tenants to send telemetry data to Application Insights for on-premises environments.
+> [!IMPORTANT]
+> Currently, emitting data to Azure Application Insights resources in Germany regions, like **(Europe) Germany West Central** or **(Europe) Germany North** , doesn't work. Until this issue is fixed, the mitigation is to create an Azure Application Insights resource in a region outside of Germany. Then, when the issue has been fixed, move the resource to the preferred region.
 
 ## <a name="ApplicationInsights"></a>Get started
 
@@ -39,6 +41,20 @@ The way you enable Application Insights depends on whether the [!INCLUDE[server]
     ```
     Mount-NAVTenant -ServerInstance BC150 -Tenant tenant1 -DatabaseName "Demo Database BC (15-0)" -DatabaseServer localhost -DatabaseInstance BCDEMO -ApplicationInsightsKey 11111111-2222-3333-4444-555555555555
     ```
+
+## Enable in Docker
+
+If you are running Business Central in Docker using the latest BcContainerHelper, you can specify the Application Insights Key when creating the container and this will be used in server instance settings if the container is single-tenant or for the default tenant if the container is multi-tenant.
+
+    New-BcContainer `
+        -accept_eula `
+        -updateHosts `
+        -artifactUrl (Get-BCArtifactUrl -country us) `
+        -applicationInsightsKey "11111111-2222-3333-4444-555555555555" 
+
+You can specify the same or another key when creating additional tenants:
+
+    New-BcContainerTenant -tenantId "additional" -applicationInsightsKey "55555555-4444-3333-2222-111111111111" 
 
 ## See Also
 

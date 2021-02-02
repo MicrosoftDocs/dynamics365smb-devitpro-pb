@@ -11,18 +11,18 @@ ms.author: jswymer
 ms.date: 10/01/2020
 ---
 # Moving from Dynamics NAV On-premises to Business Central Online
-This article describes you can move your on-premise [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution, including the application and its tenants, to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online.
+This article describes you can move your on-premise [!INCLUDE[prod_short](../developer/includes/prod_short.md)] solution, including the application and its tenants, to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online.
 
 ## Prerequisites
 To complete the tasks in this article, you will need the following:
 
--   The installation media (DVD) for the latest [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version.
+-   The installation media (DVD) for the latest [!INCLUDE[prod_short](../developer/includes/prod_short.md)] version.
 
     Download the version from [Microsoft Collaborate](https://developer.microsoft.com/dashboard/collaborate/packages).
 
--   A [!INCLUDE[prodshort](../developer/includes/prodshort.md)] license.
+-   A [!INCLUDE[prod_short](../developer/includes/prod_short.md)] license.
 
--   A working environment of your current [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application, including the following tools:
+-   A working environment of your current [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application, including the following tools:
     -   [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]
     -   [!INCLUDE[nav_dev_shell_md](../developer/includes/nav_dev_shell_md.md)]
     -   [!INCLUDE[nav_shell_md](../developer/includes/nav_shell_md.md)]
@@ -36,18 +36,18 @@ To complete the tasks in this article, you will need the following:
     You will use LCS to upload your solution for deployment. To get a subscription, follow the step in [Sign up for a preview subscription](/dynamics365/unified-operations/dev-itpro/dev-tools/sign-up-preview-subscription).
 
 ## Upgrade your application
-1. Complete a technical upgrade of your current application to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version.
+1. Complete a technical upgrade of your current application to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] version.
 
-    This will convert your application database so that is runs on the new [!INCLUDE[prodshort](../developer/includes/prodshort.md)] platform. For more information, see [Converting a Database - Technical Upgrade](/dynamics-nav/converting-a-database).
+    This will convert your application database so that is runs on the new [!INCLUDE[prod_short](../developer/includes/prod_short.md)] platform. For more information, see [Converting a Database - Technical Upgrade](/dynamics-nav/converting-a-database).
 
     > [!IMPORTANT]  
-    >  Be sure to upload your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to converted database.
+    >  Be sure to upload your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] to converted database.
     >
     > After the technical upgrade, make sure that all the components are compiled successfully.
 
-2. Optionally, upgrade your application to the new [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application.
+2. Optionally, upgrade your application to the new [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application.
 
-    You only have to complete this step if you want any new application features that are part of the latest [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version.
+    You only have to complete this step if you want any new application features that are part of the latest [!INCLUDE[prod_short](../developer/includes/prod_short.md)] version.
 
     For more information, see [Upgrading the Application Code in Dynamics NAV](/dynamics-nav/upgrading-the-application-code).
 
@@ -140,7 +140,7 @@ To upload your deployable package, you will create a project in LCS.
 
     |  Field  |  Value  |
     |---------|---------|
-    |Product name|[!INCLUDE[prodshort](../developer/includes/prodshort.md)]|
+    |Product name|[!INCLUDE[prod_short](../developer/includes/prod_short.md)]|
     |Country|Set this to the country where your solution will be published.|
     |Import roles and users from existing LCS project|No|
 
@@ -155,11 +155,11 @@ To upload your deployable package, you will create a project in LCS.
 8. In the **Upload Software deployable package file** box, enter a name, select **Add a file**.
 9. In the **Upload file asset** box, select **Browse** > *select your deployable package* > **Open** > **Upload**.
 
-    When the file has been uploaded, go to the nect step to assign the project to a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] user for processing.
+    When the file has been uploaded, go to the nect step to assign the project to a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] user for processing.
 
 10. Go back to you project home page, and select **Project users**.
 11. On the **Project user management** page, select **+**.
 
      ![Shows the users assigned to a project in the LCS portal](../media/LCSProjectUsers.png "Shows the users assigned to a project in the LCS portal")  
 
-12. In the **Invite user** box, use the **User lookup** field to find the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] user or enter the email address directly in the **Email** field, and then select **Invite**.  
+12. In the **Invite user** box, use the **User lookup** field to find the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] user or enter the email address directly in the **Email** field, and then select **Invite**.  

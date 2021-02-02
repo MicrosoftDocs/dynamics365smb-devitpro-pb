@@ -2,11 +2,11 @@
 title: "IsolatedStorage.Contains Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # IsolatedStorage.Contains Method
+> **Version**: _Available from runtime version 2.0._
+
 Determines whether the storage contains a value with the specified key.
 
 
@@ -32,9 +34,9 @@ The scope in which to check for the existence of a value with the given key. If 
 
 
 ## Return Value
-*HasValue*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if a value with the specified key exists in the storage, otherwise **false**.  
+*HasValue*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+**true** if a value with the specified key exists in the storage, otherwise **false**.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

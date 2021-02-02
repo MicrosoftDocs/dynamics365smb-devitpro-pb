@@ -8,22 +8,26 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
 # Profile Properties
+
 The following topic lists properties that apply to [Profiles](../devenv-profile-object.md) specifically.
 
-- [ProfileDescription](devenv-profiledescription-property.md)  
-- [Enabled](devenv-enabled-profile-property.md)  
-- [Promoted](devenv-promoted-profile-property.md)
-- [RoleCenter](devenv-rolecenter-property.md)
-- [Customizations](devenv-customizations-property.md)
-- [Caption](devenv-caption-property.md)
+|Property Name| Object |
+|-------------|--------|
+|[ProfileDescription](devenv-profiledescription-property.md)  | Profiles |
+|[Enabled](devenv-enabled-profile-property.md)  | Profiles |
+|[Promoted](devenv-promoted-profile-property.md) | Profiles |
+|[RoleCenter](devenv-rolecenter-property.md) | Profiles |
+|[Customizations](devenv-customizations-property.md) | Profiles |
+|[Caption](devenv-caption-property.md) | Profiles |
 
 ## See also
+
 [Codeunit Properties](devenv-codeunit-properties.md)  
 [Page Properties](devenv-page-property-overview.md)  
 [Query Properties](devenv-query-properties.md)  

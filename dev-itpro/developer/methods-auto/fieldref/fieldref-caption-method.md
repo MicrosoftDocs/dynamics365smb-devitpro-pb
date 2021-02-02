@@ -2,11 +2,11 @@
 title: "FieldRef.Caption Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # FieldRef.Caption Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets the current caption of a field as a String.
 
 
@@ -21,31 +23,33 @@ Gets the current caption of a field as a String.
 ```
 Caption :=   FieldRef.Caption()
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 
 ## Parameters
-*FieldRef*  
-&emsp;Type: [FieldRef](fieldref-data-type.md)  
-An instance of the [FieldRef](fieldref-data-type.md) data type.  
+*FieldRef*
+&emsp;Type: [FieldRef](fieldref-data-type.md)
+An instance of the [FieldRef](fieldref-data-type.md) data type.
 
 ## Return Value
-*Caption*  
-&emsp;Type: [String](../string/string-data-type.md)  
-  
+*Caption*
+&emsp;Type: [String](../string/string-data-type.md)
+
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks  
-CAPTION returns the caption of a field. CAPTION first looks for a [CaptionML Property](../../properties/devenv-captionml-property.md).  If it does not find one, it will use the [Name Property](../../properties/devenv-name-property.md). This means that CAPTION is enabled for multilanguage functionality.  
-  
- This method is similar to the [FIELDCAPTION Method \(Record\)](../../methods-auto/record/record-fieldcaption-method.md).  
-  
-## Example  
- The following example opens table 18 \(Customer\) as a RecordRef variable that is named CustomerRecref. The code uses the [FIELD Method \(RecordRef\)](../../methods-auto/recordref/recordref-field-method.md) to loop through field 1 through 9 and creates a FieldRef variable that is named MyFieldRef. For each field, the CAPTION method retrieves the caption of the field, stores it in the varCaption variable and displays it in a message box. 
+## Remarks
 
-```
+The Caption method returns the caption of a field. Caption first looks for a [CaptionML Property](../../properties/devenv-captionml-property.md). If it does not find one, it will use the [Name Property](../../properties/devenv-name-property.md). This means that Caption is enabled for multilanguage functionality.  
+  
+This method is similar to the [FieldCaption Method \(Record\)](../../methods-auto/record/record-fieldcaption-method.md).  
+  
+## Example
+
+The following example opens table 18 \(Customer\) as a RecordRef variable that is named CustomerRecref. The code uses the [Field Method \(RecordRef\)](../../methods-auto/recordref/recordref-field-method.md) to loop through field 1 through 9 and creates a FieldRef variable that is named MyFieldRef. For each field, the Caption method retrieves the caption of the field, stores it in the varCaption variable and displays it in a message box. 
+
+```al
 var
     MyFieldRef: FieldRef;
     CustomerRecref: RecordRef;
@@ -53,13 +57,13 @@ var
     i: Integer;
     Text000: Label 'The caption for field %1 is "%2"';
 begin
-    CustomerRecref.OPEN(18);  
+    CustomerRecref.Open(18);  
     for i := 1 to 9 do begin  
-      MyFieldRef := CustomerRecref.FIELD(i);  
-      varCaption := MyFieldRef.CAPTION;  
-      MESSAGE(Text000, i, varCaption);  
+      MyFieldRef := CustomerRecRef.Field(i);  
+      varCaption := MyFieldRef.Caption;  
+      Message(Text000, i, varCaption);  
     end;  
-    CustomerRecref.CLOSE;  
+    CustomerRecref.Close;  
 end;
 ```  
 

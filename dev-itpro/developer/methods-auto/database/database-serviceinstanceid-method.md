@@ -2,11 +2,11 @@
 title: "Database.ServiceInstanceId Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 12/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Database.ServiceInstanceId Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets the ID of the service instance.
 
 
@@ -21,14 +23,14 @@ Gets the ID of the service instance.
 ```
 ID :=   Database.ServiceInstanceId()
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 
 
 ## Return Value
-*ID*  
-&emsp;Type: [Integer](../integer/integer-data-type.md)  
-The ID of the service instance.  
+*ID*
+&emsp;Type: [Integer](../integer/integer-data-type.md)
+The ID of the service instance.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

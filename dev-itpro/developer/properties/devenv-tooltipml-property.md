@@ -1,42 +1,48 @@
 ---
 title: "ToolTipML Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
-ms.reviewer: solsen
+ms.date: 11/24/2020
+ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # ToolTipML Property
+> **Version**: _Available from runtime version 1.0._
 
-Sets the text used for the tooltip of an action, a field, a factbox, or an activity button.  
+Sets the text used for the tooltip of an action, a field, a FactBox, or an activity button. In the client, tooltips appear when you point to caption of the control.
 
-In the client, tooltips appear when you point to caption of the control.
+## Applies to
+-   Page Label
+-   Page Field
+-   Page Part
+-   Page System Part
+-   Page Chart Part
+-   Page Action Area
+-   Page Action
+-   Page Action Group
+
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 
 > [!NOTE]  
 > To submit an app to AppSource, you must use .xliff translation files. For more information, see [Working with Translation Files](../devenv-work-with-translation-files.md).
 
-## Applies to  
+> [!NOTE]  
+> List page field tooltips are only shown in the [!INCLUDE[nav_web](../includes/nav_web_md.md)] and [!INCLUDE[nav_tablet_md](../includes/nav_tablet_md.md)].
 
--   Actions in the ribbon  
--   Fields on pages  
+> [!NOTE]  
+> Activity button tooltips are only shown in the [!INCLUDE[nav_web](../includes/nav_web_md.md)].  
 
-    > [!NOTE]  
-    >  List page field tooltips are only shown in the [!INCLUDE[nav_web](../includes/nav_web_md.md)] and [!INCLUDE[nav_tablet_md](../includes/nav_tablet_md.md)].
-
--   Factboxes  
--   Activity buttons  
-
-    > [!NOTE]  
-    >  Activity button tooltips are only shown in the [!INCLUDE[nav_web](../includes/nav_web_md.md)].  
-
--   ActionContainers  
-
-    > [!NOTE]  
-    >  ActionContainers tooltips are only shown on the [!INCLUDE[nav_web](../includes/nav_web_md.md)] for the subtype **Embedding**.  
+> [!NOTE]  
+> ActionContainers tooltips are only shown on the [!INCLUDE[nav_web](../includes/nav_web_md.md)] for the subtype **Embedding**.  
 
 ## Remarks  
 

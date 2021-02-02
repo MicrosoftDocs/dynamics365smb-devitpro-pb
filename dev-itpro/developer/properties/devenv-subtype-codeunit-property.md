@@ -5,7 +5,7 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 ms.assetid: c31be95f-e083-4d87-84e4-27b2373349d6
 caps.latest.revision: 13
@@ -13,6 +13,7 @@ author: SusanneWindfeldPedersen
 ---
 
 # SubType Property (Codeunit)
+> **Version**: _Available from runtime version 1.0._
 
 Sets the codeunit to method as a normal, test, test runner, or upgrade codeunit.  
   
@@ -49,9 +50,9 @@ A test runner codeunit runs the test codeunits that are programmed to run from i
 - Calls the [OnAfterTestRun Trigger](../triggers/devenv-onaftertestrun-trigger.md) after each test code unit, and the OnRun trigger and test method is executed.  
   
 - Indicates that a test method has failed if it invokes the user interface.  
-<!-- 
-For more information, see [Testing the Application](Testing-the-Application.md).  
---> 
+
+For more information, see [Testing the Application](../devenv-testing-application.md).  
+
 When developing a new extension version, you can use upgrade codeunits to upgrade data from the previous version and make it compatible with the new one. <!-- The data upgrade code is implemented through upgrade triggers, which are invoked when you run the upgrade process. --> For more information, see [Upgrading Extensions](../devenv-upgrading-extensions.md). 
 
 For more information on how to use install codeunits to write extension install code, see [Writing Extension Install Code](../devenv-extension-install-code.md). 
@@ -60,9 +61,9 @@ For more information on how to use install codeunits to write extension install 
 
 [Properties](devenv-properties.md)  
 [Codeunit Properties](devenv-codeunit-properties.md)  
-[Subtype BLOB Property](devenv-subtype-blob-property.md)
+[Subtype BLOB Property](devenv-subtype-blob-property.md)  
+[Testing the Application](../devenv-testing-application.md)  
 <!--
-[Testing the Application](Testing-the-Application.md)   
 [How to: Create Test Codeunits and Test Methods](How-to-Create-Test-Codeunits-and-Test-Methods.md)   
 [How to: Create Handler Methods](How-to-Create-Handler-Methods.md)   
 [Walkthrough: Testing Purchase Invoice Discounts](Walkthrough-Testing-Purchase-Invoice-Discounts.md)   

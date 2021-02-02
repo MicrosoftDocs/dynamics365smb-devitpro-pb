@@ -2,7 +2,7 @@
 title: Install a version 17 update
 description: This article describes the tasks required for getting the monthly version 17 update applied to your Dynamics 365 Business Central on-premises.
 ms.custom: na
-ms.date: 11/03/2020
+ms.date: 01/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -11,16 +11,16 @@ ms.author: jswymer
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
-# Installing a [!INCLUDE[prod short](../developer/includes/prodshort.md)] 2020 Release Wave 2 Update
+# Installing a [!INCLUDE[prod short](../developer/includes/prod_short.md)] 2020 Release Wave 2 Update
 
 
-This article describes how to install an update for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises. An update is a set of files that includes all hotfixes and regulatory features that have been released for Business Central.
+This article describes how to install an update for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises. An update is a set of files that includes all hotfixes and regulatory features that have been released for Business Central.
 
 You can choose to update only the platform or both the platform and application code. The installation guidelines are separated into PLATFORM tasks and APPLICATION tasks.
 
 ## Overview
 
-The following figure provides a high-level representation of a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution and the components that are involved in the installation of an update.
+The following figure provides a high-level representation of a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] solution and the components that are involved in the installation of an update.
 
 ![Business Central application stack](../developer/media/bc15-architecture-overview.png "Business Central application stack")  
 
@@ -40,7 +40,7 @@ The application includes AL extensions that define the objects and code that mak
 
 - Application extension
 
-    The Application extension logically encapsulates all of the extensions making up a solution, for example, version `16.0.0.0` of the base and system application package files, and it provides a convenient way to define and refer to this solution identity. This extension is required fro Microsoft extensions, but is optional for third-party extensions. For more information, see [The Microsoft_Application.app File](../developer/devenv-application-app-file.md).
+    The Application extension logically encapsulates all of the extensions making up a solution, for example, version `16.0.0.0` of the base and system application package files, and it provides a convenient way to define and refer to this solution identity. This extension is required for Microsoft extensions, but is optional for third-party extensions. For more information, see [The Microsoft_Application.app File](../developer/devenv-application-app-file.md).
 
 - Customization extensions
 
@@ -87,7 +87,7 @@ When this step is completed, you can continue to update your Business Central so
     In this step, you uninstall the Base Application, System Application (if used), and any other extensions that are currently installed on the database.
 
     1. Get a list of installed extensions.
-    
+
         This step is optional, but it can be useful to the names and versions of the extensions.
 
         To get a list of installed extensions, use the [Get-NAVAppInfo cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/get-navappinfo).
@@ -97,13 +97,13 @@ When this step is completed, you can continue to update your Business Central so
         ``` 
 
     2. Uninstall the extensions.
-    
+
         To uninstall an extension, you use the [Uninstall-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp) cmdlet.
-    
+
         ```powershell 
         Uninstall-NAVApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name <extensions name> -Version <extension version> -Force
         ```
-        
+
         Replace  `<extension name>` and `<extension version>` with the exact name and version the installed extension. For single-tenant deployment, set `<tenant ID>` to `default` or omit the `-Tenant` parameter.
 
         For example, together with the Get-NAVApp cmdlet, you can uninstall all extensions with a single command:
@@ -111,11 +111,12 @@ When this step is completed, you can continue to update your Business Central so
         ```powershell 
         Get-NAVAppInfo -ServerInstance <server instance name> -Tenant <tenant ID> | % { Uninstall-NAVApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name $_.Name -Version $_.Version -Force}
         ```
+
 4. Unpublish the existing system symbols.
 
     To unpublish the system symbols, use the [Unpublish-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/unpublish-navapp) as follows:
-    
-    ```
+
+    ```powershell
     Unpublish-NAVApp -ServerInstance <server instance> -Name System -version <version>
     ```
 
@@ -138,23 +139,25 @@ From the installation media (DVD), run setup.exe to uninstall the current Busine
     ```powershell
     Stop-NAVServerInstance -ServerInstance <server instance>
     ```
-2. Run setup.exe to uninstall your current version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
+
+2. Run setup.exe to uninstall your current version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 3. Run setup.exe again to install components of the update.
 
-    1. Follow setup pages until you get to the **Microsoft [!INCLUDE[prodlong](../developer/includes/prodlong.md)] Setup** page.
+    1. Follow setup pages until you get to the **Microsoft [!INCLUDE[prod_long](../developer/includes/prod_long.md)] Setup** page.
     2. Select **Advanced installation options** > **Choose an installation option** > **Custom**.
     3. On the **Customize the installation** page, select the following components as a minimum:
 
         - AL Development Environment (optional but recommended)
         - Server
         - Web Server Components.
-    3. Select **Next**.
-    4. On the **Specify parameters** page, set the fields as needed.
+
+    4. Select **Next**.
+    5. On the **Specify parameters** page, set the fields as needed.
 
         > [!IMPORTANT]
         > Clear the **SQL Database** field so that it is blank. At this time, do not set this to the database that you want to update; otherwise, the installation of the [!INCLUDE[server](../developer/includes/server.md)] will fail. You will connect the database to the [!INCLUDE[server](../developer/includes/server.md)] later after it is converted to the new platform.
 
-    5. Select **Apply** to complete the installation.
+    6. Select **Apply** to complete the installation.
 
 For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
 
@@ -183,7 +186,7 @@ Also, to ensure that the existing published extensions work on the new platform,
 
     When completed, a message like the following displays in the console:
 
-    ```
+    ```powershell
     DatabaseServer      : .\BCDEMO
     DatabaseName        : Demo Database BC (17-0)
     DatabaseCredentials :
@@ -234,12 +237,13 @@ Compile all published extensions against the new platform.
     ```powershell  
     Repair-NAVApp -ServerInstance <server instance> -Name <extension name> -Version <extension name>
     ```
-    
+
     To compile all published extensions at once, you can use this command:
-    
+
     ```powershell  
     Get-NAVAppInfo -ServerInstance <server instance> | Repair-NAVApp  
     ```
+
 2. Restart the server instance.
 
     ```powershell
@@ -276,6 +280,7 @@ To install an extension, you use the [Install-NAVApp cmdlet](/powershell/module/
     ```powershell 
     Install-NAVApp -ServerInstance <server instance> -Name "System Application" -Version <extension version>
     ```
+
     Replace `<extension version>` with the exact version of the published System Application.
 
 2. Install the Base Application.
@@ -283,12 +288,14 @@ To install an extension, you use the [Install-NAVApp cmdlet](/powershell/module/
     ```powershell
     Install-NAVApp -ServerInstance <server instance> -Name "Base Application" -Version <extension version>
     ```
+
     Replace `<extension version>` with the exact version of the published System Application.
 3. Install other extensions, including Microsoft and third-party extensions.
-    
+
     ```powershell
     Install-NAVApp -ServerInstance <server instance name> -Name <extension name> -Version <extension version>
     ```
+
 At this point, your solution has been updated to the latest platform.
 
 > [!IMPORTANT]
@@ -314,6 +321,7 @@ Follow these steps if your existing solution uses the Microsoft System Applicati
     ```powershell
     Publish-NAVApp -ServerInstance <server instance name> -Path "<path to Microsoft_System Application.app>"
     ```
+
 2. Synchronize the tenant(s) with the **System Application** extension (Microsoft_System Application):
 
     Use the [Sync-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp) cmdlet:
@@ -323,10 +331,10 @@ Follow these steps if your existing solution uses the Microsoft System Applicati
     ```
 
     Replace `<extension version>` with the exact version of the published System Application.
-    
+
     > [!TIP]
     > To get a list of all published extensions, along with their names and versions, use the [Get-NAVAppInfo cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/get-navappinfo).
-    
+
 3. Run the data upgrade on the System Application.
 
     To run the data upgrade, use the [Start-NavAppDataUpgrade](/powershell/module/microsoft.dynamics.nav.apps.management/start-navappdataupgrade) cmdlet:
@@ -350,11 +358,13 @@ Follow these steps if your existing solution uses the Microsoft Base Application
     ```powershell
     Publish-NAVApp -ServerInstance <server instance name> -Path "<path to Microsoft_Base Application.app>"
     ```
+
 2. Synchronize the tenant with the Business Central Base Application extension (Microsoft_BaseApp):
 
     ```powershell
     Sync-NAVApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name "Base Application" -Version <extension version>
     ```
+
     Replace `<extension version>` with the exact version of the published Base Application.
 
     With this step, the base app takes ownership of the database tables. When completed, in SQL Server, the table names will be suffixed with the base app extension ID. This process can take several minutes.
@@ -378,34 +388,30 @@ After you've created the new version of your custom application, you publish it 
 
 ##  <a name="AddExtensions"></a>Upgrade Microsoft extensions
 
-If your old solution used Microsoft extensions, then you upgrade these extensions to the new versions that are available on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation media (DVD). The new versions are in the **Applications** folder, which contains a subfolder for each extension. The extension package (.app file) that you need for publishing the extension is in the **Source** folder, for example, **Applications\SalesAndInventoryForecast\Source\SalesAndInventoryForecast.app**.
+If your old solution used Microsoft extensions, then you upgrade these extensions to the new versions that are available on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] installation media (DVD). The new versions are in the **Applications** folder, which contains a subfolder for each extension. The extension package (.app file) that you need for publishing the extension is in the **Source** folder, for example, **Applications\SalesAndInventoryForecast\Source\SalesAndInventoryForecast.app**.
 
 The general steps for this task are listed below. For detailed steps, see [Publishing, Upgrading, and Installing Extensions During Upgrade](upgrade-publish-extensions.md).
 
 ### Publish and install Microsoft_Application extension
 
 The Microsoft_Application extension was introduced in 15.3. In short, it's used to contain the dependency declarations on the system and base application extensions. For more information about this extension, see [The Microsoft_Application.app File](../developer/devenv-application-app-file.md).
-    
+
 1. Publish the Microsoft_Application.app package.
 
     The installation media path to the extension package (.app file) is **Applications\Application\Source\Microsoft_Application.app"**  
 
-    <!--
-    
-    ```powershell
-    Publish-NAVApp -ServerInstance <server instance name> -Path "DVD\Applications\Application\Source\Microsoft_Application.app"
-    ```
-    -->
     ```powershell
     Publish-NAVApp -ServerInstance <server instance name> -Path "<folder path>\Microsoft_Application.app"
     ```
-3. Synchronize the tenant database with the schema changes of the Microsoft_Application extension.
+
+2. Synchronize the tenant database with the schema changes of the Microsoft_Application extension.
 
     ```powershell
     Sync-NavApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name <extension name> -Tenant <tenant ID>
     ```
-4. Upgrade the Microsoft_Application extension on your tenants.
-    
+
+3. Upgrade the Microsoft_Application extension on your tenants.
+
     ```powershell
     Start-NAVAppDataUpgrade -ServerInstance <server instance name> -Tenant <tenant ID> -Name Application 
     ```
@@ -426,7 +432,7 @@ Complete these steps for each Microsoft extension that you want to upgrade.
     Sync-NavApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name <extension name> -Version <extension version>
     ```
 
-4. Upgrade the data associated with the Microsoft extensions. This step will automatically install the new version on the tenant
+3. Upgrade the data associated with the Microsoft extensions. This step will automatically install the new version on the tenant
 
     ```powershell
     Start-NAVAppDataUpgrade -ServerInstance <server instance name> -Tenant <tenant ID> -Name <extension name> -Version <extension version>
@@ -446,7 +452,7 @@ The [!INCLUDE[server](../developer/includes/server.md)] installation includes ne
 
 To upgrade the control add-ins, do the following steps:
 
-1. Open the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client.
+1. Open the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client.
 2. Search for and open the **Control Add-ins** page.
 3. Choose **Actions** > **Control Add-in Resource** > **Import**.
 4. Locate and select the .zip file for the control add-in and choose **Open**.

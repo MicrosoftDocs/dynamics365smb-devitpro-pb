@@ -1,43 +1,37 @@
 ---
 title: "DataAccessIntent Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
-ms.author: jswymer
-author: jswymer
+author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # DataAccessIntent Property
+> **Version**: _Available from runtime version 5.0._
 
-[!INCLUDE[2020_releasewave1.md](../../includes/2020_releasewave1.md)]
+Sets the data access intent of the page.
 
-Sets whether to get data for the object from a read-only replica of the database or the primary database.
-
-<!-- 
-When you enable Read Scale-Out for a database, the ApplicationIntent option in the connection string provided by the client dictates whether the connection is routed to the write replica or to a read-only replica. Specifically, if the ApplicationIntent value is ReadWrite (the default value), the connection will be directed to the database's read-write replica. This is identical to existing behavior. If the ApplicationIntent value is ReadOnly, the connection is routed to a read-only replica.-->
-
-## Applies to  
-
-- Pages of the type API.
-
-    The [Editable property](devenv-editable-property.md) must be set to **false**.
-
-- Query
-- Reports
+## Applies to
+-   Page
+-   Report
+-   Query
 
 ## Property Value
 
-The property has the following values.  
+|Value|Description|
+|-----------|---------------------------------------|
+|**ReadOnly**|Intent to access records, but not to modify them. Read-only pages are run against a replica of the database leading to improved performance, but preventing modifications to the database records.|
+|**ReadWrite**|Intent to access and modify records.|
 
-|  Value  |  Description  |
-|---------|---------------|  
-|**ReadOnly**|Specifies to get the data from a read-only replica.|  
-|**ReadWrite**|Specifies to get the data from the primary database. **ReadWrite** is the default value.|  
-  
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## Syntax
 
 ```AL
@@ -45,6 +39,9 @@ DataAccessIntent = ReadOnly|ReadWrite;
 ```
 
 ## Remarks  
+
+> [!NOTE]
+> It only applies to pages of the type API. For such, The [Editable property](devenv-editable-property.md) must be set to **false**.
 
 For reports, API pages, and queries, the Business Central server can use read-only database replicas on Azure SQL Database and SQL Server. If replicas are enabled, use this property to reduce the load on the primary database. Using **ReadOnly** might also improve performance when viewing objects. **ReadOnly** works as a hint for the server to route the connection to a secondary (read-only) replica, if one is available. When a workload is executed against the replica, insert/delete/modify operations aren't possible. If any of these operations are executed against the replica, an exception is thrown at runtime.
 

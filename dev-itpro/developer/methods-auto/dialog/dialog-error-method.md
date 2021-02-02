@@ -6,7 +6,7 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -58,7 +58,7 @@ For more information, see [Progress Windows, Message, Error, and Confirm Methods
 
 This example shows how to use the `Error` method. 
  
-```
+```al
 var
     AccountNo: Integer;
     Text000: Label 'Finance Account #1#### must not be blocked.';
@@ -67,8 +67,8 @@ begin
     AccountNo := 1230;  
     // The execution stops when the error statement is executed  
     // and all following statements will never be executed.  
-    ERROR(Text000, AccountNo);  
-    MESSAGE(Text001); // This line is not executed.  
+    Error(Text000, AccountNo);  
+    Message(Text001); // This line is not executed.  
 end;
 ```  
 

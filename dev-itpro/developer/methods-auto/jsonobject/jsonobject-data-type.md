@@ -2,11 +2,11 @@
 title: "JsonObject Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 12/09/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # JsonObject Data Type
+> **Version**: _Available from runtime version 1.0._
+
 Is a container for any well-formed JSON object. A default JsonObject contains an empty JSON object.
 
 
@@ -22,18 +24,6 @@ The following methods are available on instances of the JsonObject data type.
 
 |Method name|Description|
 |-----------|-----------|
-|[Path()](jsonobject-path-method.md)|Retrieves the JSON path of the object relative to the root of its containing tree.|
-|[Keys()](jsonobject-keys-method.md)|Gets a set of keys of the JsonObject.|
-|[Values()](jsonobject-values-method.md)|Gets a set of values of the JsonObject.|
-|[ReadFrom(String)](jsonobject-readfrom-string-method.md)|Reads the JSON data from the string into a JsonObject variable.|
-|[ReadFrom(InStream)](jsonobject-readfrom-instream-method.md)|Reads the JSON data from the stream into a JsonObject variable.|
-|[WriteTo(var Text)](jsonobject-writeto-text-method.md)|Serializes and writes the JSON data of the JsonObject to a given Text object.|
-|[WriteTo(OutStream)](jsonobject-writeto-outstream-method.md)|Serializes and writes the JSON data of the JsonObject to a given OutStream object.|
-|[SelectToken(String, var JsonToken)](jsonobject-selecttoken-method.md)|Selects a JsonToken using a JPath expression.|
-|[Clone()](jsonobject-clone-method.md)|Creates a deep-copy of the JsonToken value.|
-|[AsToken()](jsonobject-astoken-method.md)|Converts the value in a JsonObject to a JsonToken data type.|
-|[Contains(String)](jsonobject-contains-method.md)|Verifies if a JsonObject contains a property with a given key.|
-|[Get(String, var JsonToken)](jsonobject-get-method.md)|Retrieves the value of a property with a given key from a JsonObject.|
 |[Add(String, JsonToken)](jsonobject-add-string-jsontoken-method.md)|Adds a new property to a JsonObject.|
 |[Add(String, JsonObject)](jsonobject-add-string-jsonobject-method.md)|Adds a new property to a JsonObject.|
 |[Add(String, JsonValue)](jsonobject-add-string-jsonvalue-method.md)|Adds a new property to a JsonObject.|
@@ -50,6 +40,15 @@ The following methods are available on instances of the JsonObject data type.
 |[Add(String, Date)](jsonobject-add-string-date-method.md)|Adds a new property to a JsonObject.|
 |[Add(String, Time)](jsonobject-add-string-time-method.md)|Adds a new property to a JsonObject.|
 |[Add(String, DateTime)](jsonobject-add-string-datetime-method.md)|Adds a new property to a JsonObject.|
+|[AsToken()](jsonobject-astoken-method.md)|Converts the value in a JsonObject to a JsonToken data type.|
+|[Clone()](jsonobject-clone-method.md)|Creates a deep-copy of the JsonToken value.|
+|[Contains(String)](jsonobject-contains-method.md)|Verifies if a JsonObject contains a property with a given key.|
+|[Get(String, var JsonToken)](jsonobject-get-method.md)|Retrieves the value of a property with a given key from a JsonObject.|
+|[Keys()](jsonobject-keys-method.md)|Gets a set of keys of the JsonObject.|
+|[Path()](jsonobject-path-method.md)|Retrieves the JSON path of the object relative to the root of its containing tree.|
+|[ReadFrom(String)](jsonobject-readfrom-string-method.md)|Reads the JSON data from the string into a JsonObject variable.|
+|[ReadFrom(InStream)](jsonobject-readfrom-instream-method.md)|Reads the JSON data from the stream into a JsonObject variable.|
+|[Remove(String)](jsonobject-remove-method.md)|Removes the property with the given key from the object.|
 |[Replace(String, JsonToken)](jsonobject-replace-string-jsontoken-method.md)|Replaces the value of the property with the given key with the new value.|
 |[Replace(String, JsonArray)](jsonobject-replace-string-jsonarray-method.md)|Replaces the value of the property with the given key with the new value.|
 |[Replace(String, JsonObject)](jsonobject-replace-string-jsonobject-method.md)|Replaces the value of the property with the given key with the new value.|
@@ -66,7 +65,10 @@ The following methods are available on instances of the JsonObject data type.
 |[Replace(String, Time)](jsonobject-replace-string-time-method.md)|Replaces the value of the property with the given key with the new value.|
 |[Replace(String, DateTime)](jsonobject-replace-string-datetime-method.md)|Replaces the value of the property with the given key with the new value.|
 |[Replace(String, String)](jsonobject-replace-string-string-method.md)|Replaces the value of the property with the given key with the new value.|
-|[Remove(String)](jsonobject-remove-method.md)|Removes the property with the given key from the object.|
+|[SelectToken(String, var JsonToken)](jsonobject-selecttoken-method.md)|Selects a JsonToken using a JPath expression.|
+|[Values()](jsonobject-values-method.md)|Gets a set of values of the JsonObject.|
+|[WriteTo(var Text)](jsonobject-writeto-text-method.md)|Serializes and writes the JSON data of the JsonObject to a given Text object.|
+|[WriteTo(OutStream)](jsonobject-writeto-outstream-method.md)|Serializes and writes the JSON data of the JsonObject to a given OutStream object.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

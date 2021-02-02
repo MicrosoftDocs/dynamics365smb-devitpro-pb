@@ -2,11 +2,11 @@
 title: "HttpHeaders.Add Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # HttpHeaders.Add Method
+> **Version**: _Available from runtime version 1.0._
+
 Adds the specified header and its value into the HttpHeaders collection. Validates the provided value.
 
 
@@ -22,9 +24,9 @@ Adds the specified header and its value into the HttpHeaders collection. Validat
 [Ok := ]  HttpHeaders.Add(Name: String, Value: String)
 ```
 ## Parameters
-*HttpHeaders*  
-&emsp;Type: [HttpHeaders](httpheaders-data-type.md)  
-An instance of the [HttpHeaders](httpheaders-data-type.md) data type.  
+*HttpHeaders*
+&emsp;Type: [HttpHeaders](httpheaders-data-type.md)
+An instance of the [HttpHeaders](httpheaders-data-type.md) data type.
 
 *Name*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -36,9 +38,9 @@ The content of the header.
 
 
 ## Return Value
-*Ok*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the value was added successfully, otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+*Ok*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+**true** if the value was added successfully, otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
