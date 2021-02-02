@@ -293,6 +293,10 @@
 #### [Moving Tables and Fields Down](developer/devenv-migrate-table-fields-down.md)
 #### [Moving Tables and Fields Up](developer/devenv-migrate-table-fields-up.md)
 #### [Migration.json File](developer/devenv-migration-json-file.md)
+## Permission Sets and Entitlements
+### [Entitlement Object](developer/devenv-entitlement-object.md)
+### [Permissionset Object](developer/devenv-permissionset-object.md)
+### [Permissionset Extension Object](developer/devenv-permissionset-ext-object.md)
 ## Pages
 ### [Pages Overview](developer/devenv-pages-overview.md)
 ### [Page Object](developer/devenv-page-object.md)
