@@ -107,7 +107,7 @@ enum 50135 SomeEnum implements IFoo
 
 ## Remarks
 
-The `UnknownValueImplementation` property applies to enums. Uninstalling enum extensions can result in persisted values becoming unknown. The `UnknownValueImplementation` provides a generic error handling in such cases. Enums are often used to select an interface implementation. However, due to the nature of an extensible development model; an enum extension and its corresponding interface implementation can be uninstalled from a tenant, while the value for the specific enum is still available, but now pointing to an unknown value. Using the `UnknownValueImplementation` property when defining an enum prevents throwing a technical error message in the UI and allows for a more user-friendly error handling.
+The `UnknownValueImplementation` property applies to enums. Uninstalling enum extensions can result in persisted values becoming unknown. The `UnknownValueImplementation` provides a generic error handling in such cases. Enums are often used to select an interface implementation. However, due to the nature of an extensible development model, an enum extension and its corresponding interface implementation can be uninstalled from a tenant, while the value for the specific enum is still available, but now pointing to an unknown value. Using the `UnknownValueImplementation` property when defining an enum prevents throwing a technical error message in the UI and allows for a more user-friendly error handling.
 
 Related to `UnknownValueImplementation` is the `DefaultImplementation` property, used for fallback to a default value when no enum value is provided. For more information, see [DefaultImplementation Property](devenv-defaultimplementation-property.md).
 
