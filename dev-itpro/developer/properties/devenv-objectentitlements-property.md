@@ -22,6 +22,9 @@ Determines the object permissions that this entitlement object permits a user or
 -   Entitlement
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+
+## See Also
+
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
+[Entitlement Object](../devenv-entitlement-object.md)  

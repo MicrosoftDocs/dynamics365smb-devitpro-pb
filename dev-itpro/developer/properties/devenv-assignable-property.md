@@ -22,6 +22,10 @@ Sets whether the permission set can be assigned to a user.
 -   Permission Set
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## See Also  
+
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
+[PermissionSet Object](../devenv-permissionset-object.md)  
+[PermissionSet Extension Object](../devenv-permissionset-ext-object.md)  

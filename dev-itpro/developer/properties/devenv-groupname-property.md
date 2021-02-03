@@ -22,6 +22,9 @@ If the entitlement type is ConcurrentUserServicePlan, the GroupName determines w
 -   Entitlement
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+
+## See Also
+
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
+[Entitlement Object](../devenv-entitlement-object.md)  

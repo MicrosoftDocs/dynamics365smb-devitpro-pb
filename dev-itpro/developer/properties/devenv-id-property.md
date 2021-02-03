@@ -22,6 +22,11 @@ The ID of the service plan, role, etc. as determined by the type.
 -   Entitlement
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+
+## See Also
+
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
+[Type Property](devenv-type-property.md)  
+[PermissionSet Object](../devenv-permissionset-object.md)  
+[PermissionSet Extension Object](../devenv-permissionset-ext-object.md)  
