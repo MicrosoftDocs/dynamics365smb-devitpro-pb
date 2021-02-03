@@ -57,23 +57,7 @@ The relevant contract can be requested through your local Regional Operations Ce
 
 When you develop an app for [!INCLUDE [prod_short](../includes/prod_short.md)], you must request access to an object range that holds a certain number of objects for your solution. To avoid overlap between objects used in different solution, each partner is assigned a number of objects in a unique object range. For example, a partner is assigned the object range 70,001,000 – 70,001,999. The object range gives them 1000 numbered objects that they can use to develop [!INCLUDE [prod_short](../includes/prod_short.md)] solutions.
 
-Depending on where you will deploy your [!INCLUDE [prod_short](../includes/prod_short.md)] solution, online or on-premises, you can use different licensing methods and object ranges. There are currently two available ranges that you can request. Both have some characteristics to keep in mind:
-
-- The RSP Object Range (1-69 million ID range)
-
-    This object range is tied to [the RSP Program](https://businesscenter.mbs.microsoft.com/#contentdetail/RegisterSolutionProgram) details.
-
-    > [!IMPORTANT]
-    > We currently advise NEW publishers NOT to request an RSP object range
-
-- The App Object Range (70-75 million ID range)
-
-    This object range was originally designed to run in the [!INCLUDE [prod_short](../includes/prod_short.md)] service only for apps in the Microsoft commercial marketplace.
-
-    > [!IMPORTANT]
-    > We currently advise NEW Publishers to request an App Object Range.
-
-Currently, you can implement apps developed in both the RSP Range and the app object range in [!INCLUDE [prod_short](../includes/prod_short.md)] online and on-premises, as well as partner-hosted.
+Depending on where you will deploy your [!INCLUDE [prod_short](../includes/prod_short.md)] solution, online or on-premises, you can use different licensing methods and object ranges. [!INCLUDE [object-ranges](../includes/object-ranges.md)]
 
 You can request an object range by downloading the object range request form [here](https://businesscenter.mbs.microsoft.com/#contentdetail/RegisterSolutionProgram). After completion, send them to your Regional Operational Center (ROC) for processing:
 
