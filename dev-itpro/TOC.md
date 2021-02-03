@@ -490,6 +490,9 @@
 #### [Query Object](developer/devenv-query-object.md)
 #### [XMLPort Object](developer/devenv-xmlport-object.md)
 #### [Control Add-In Object](developer/devenv-control-addin-object.md)
+#### [Entitlement Object](developer/devenv-entitlement-object.md)
+#### [Permissionset Object](developer/devenv-permissionset-object.md)
+#### [Permissionset Extension Object](developer/devenv-permissionset-ext-object.md)
 ### Methods
 #### [Methods Overview](developer/methods-auto/library.md)
 #### [Array Methods](developer/methods/devenv-array-methods.md)
