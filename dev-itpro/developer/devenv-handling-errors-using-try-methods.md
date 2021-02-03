@@ -64,6 +64,7 @@ begin
     message('Everything went well');
 end;
 ```
+
 ```AL
 local procedure MyTryMethod()
 begin
