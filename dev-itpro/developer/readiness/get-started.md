@@ -57,7 +57,9 @@ The relevant contract can be requested through your local Regional Operations Ce
 
 When you develop an app for [!INCLUDE [prod_short](../includes/prod_short.md)], you must request access to an object range that holds a certain number of objects for your solution. To avoid overlap between objects used in different solution, each partner is assigned a number of objects in a unique object range. For example, a partner is assigned the object range 70,001,000 – 70,001,999. The object range gives them 1000 numbered objects that they can use to develop [!INCLUDE [prod_short](../includes/prod_short.md)] solutions.
 
-Depending on where you will deploy your [!INCLUDE [prod_short](../includes/prod_short.md)] solution, online or on-premises, you can use different licensing methods and object ranges. [!INCLUDE [object-ranges](../includes/object-ranges.md)]
+Depending on where you will deploy your [!INCLUDE [prod_short](../includes/prod_short.md)] solution, online or on-premises, you can use different licensing methods and object ranges.  
+
+[!INCLUDE [object-ranges](../includes/object-ranges.md)]
 
 You can request an object range by downloading the object range request form [here](https://businesscenter.mbs.microsoft.com/#contentdetail/RegisterSolutionProgram). After completion, send them to your Regional Operational Center (ROC) for processing:
 
