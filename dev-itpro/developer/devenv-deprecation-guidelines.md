@@ -19,7 +19,9 @@ This topic provides guidelines that describe how code in the Base App is obsolet
 When we obsolete code, we:
 
 - Add the preprocessor statements `#if`, `#else`, and `#endif` surrounding the code to be obsoleted.
-- Use one of the following preprocessor symbols, where the pattern is: pattern is `CLEAN<Version>`, such as `CLEAN15`, `CLEAN16`, `CLEAN17`, and `CLEAN18`.
+- Use one of the following preprocessor symbols, where the pattern is: pattern is `CLEAN<Version>`, such as `CLEAN15`, `CLEAN16`, `CLEAN17`, and `CLEAN18`. 
+    > [!NOTE]  
+    > These symbols are not shipped with the product.
 - The version to use matches the `<major>` of the `ObsoleteTag`. For example:
 
     - If a method is to be removed, then we are using `#if not`
