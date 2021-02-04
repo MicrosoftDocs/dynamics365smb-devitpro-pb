@@ -1,6 +1,6 @@
 ---
-title: "Guidelines for Deprecation of Code"
-description: "Description of best practices and guidelines for deprecating code in AL for Business Central."
+title: "Guidelines for Deprecation of Base App Code"
+description: "Description of best practices and guidelines for deprecating code in the Base App for Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 10/01/2020
@@ -10,19 +10,19 @@ ms.service: "dynamics365-business-central"
 ms.author: 
 ---
 
-# Guidelines for Deprecation of Code
+# Guidelines for Deprecation of Code in the Base App
 
-This topic provides guidelines that describe what to do when you need to obsolete code. For obsoleting code, preprocessor statements in AL can be used. For more information, see [Directives in AL](directives/devenv-directives-in-al.md).
+This topic provides guidelines that describe how code in the Base App is obsoleted. The topic describes some best practices that Microsoft is using for obsoleting code, and is meant as a non-enforced guidance and best practice. For obsoleting code preprocessor statements in AL can be used. For more information, see [Directives in AL](directives/devenv-directives-in-al.md).
 
 ## Obsoleting Code
 
-Whenever you obsolete code, you need to:
+When we obsolete code, we:
 
 - Add the preprocessor statements `#if`, `#else`, and `#endif` surrounding the code to be obsoleted.
-- Use one of the following preprocessor symbols, where the pattern is: pattern is `CLEAN<Version>`, such as `CLEAN15`, `CLEAN16`, `CLEAN17`, and `CLEAN18`. It's important to use these standard symbols.
-- The version to use must match the `<major>` of the `ObsoleteTag`. For example:
+- Use one of the following preprocessor symbols, where the pattern is: pattern is `CLEAN<Version>`, such as `CLEAN15`, `CLEAN16`, `CLEAN17`, and `CLEAN18`.
+- The version to use matches the `<major>` of the `ObsoleteTag`. For example:
 
-    - If a method is to be removed, then use `#if not`
+    - If a method is to be removed, then we are using `#if not`
         
         ```al
         #if not CLEAN18
@@ -34,7 +34,7 @@ Whenever you obsolete code, you need to:
         #endif
         ```
 
-    - If an action is to be removed, then you should also use `#if not`
+    - If an action is to be removed, then we are also using `#if not`
         ```al
         
         #if not CLEAN17
@@ -51,7 +51,7 @@ Whenever you obsolete code, you need to:
         #endif
         ```
 
-    - If a table is to be removed, then use `#if #else #endif`
+    - If a table is to be removed, then we'll use `#if #else #endif`
         ```al
 
         table 1808 "Aggregated Assisted Setup"
@@ -67,7 +67,7 @@ Whenever you obsolete code, you need to:
             ObsoleteTag = '16.0';
         ```        
 
-    - If a table is to be marked as `Temporary`, then use `#if #else #endif`
+    - If a table is to be marked as `Temporary`, then we'll use `#if #else #endif`
         ```al
         
         table 5503 "Acc. Schedule Line Entity"
@@ -83,7 +83,7 @@ Whenever you obsolete code, you need to:
         #endif
         ```
 
-In order to have the compiler take the new ‘clean’ code path, you need to define the symbols. You do this in the `app.json` file with the following setting. For more information, see [JSON Files](devenv-json-files.md).
+In order to have the compiler take the new ‘clean’ code path, the symbols must be defined. This is done in the `app.json` file with the following setting. For more information, see [JSON Files](devenv-json-files.md).
 
 ```al
 "preprocessorSymbols": [ "CLEAN15", "CLEAN16", "CLEAN17", "CLEAN18" ]
@@ -94,7 +94,7 @@ In order to have the compiler take the new ‘clean’ code path, you need to de
 
 ## Fixing code when objects are removed
 
-If an action or other code element point to a now removed object, then you must:
+If an action or other code element points to a now removed object, then the guidance is to:
 
 - Ensure that the action is obsoleted.
 - Add preprocessor statements to fix the issue. 
