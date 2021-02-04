@@ -20,7 +20,7 @@ Whenever you obsolete code, you need to:
 
 - Add the preprocessor statements `#if`, `#else`, and `#endif` surrounding the code to be obsoleted.
 - Use one of the following preprocessor symbols, where the pattern is: pattern is `CLEAN<Version>`, such as `CLEAN15`, `CLEAN16`, `CLEAN17`, and `CLEAN18`. It's important to use these standard symbols.
-- The version that to use must match the `<major>` of the `ObsoleteTag`. For example:
+- The version to use must match the `<major>` of the `ObsoleteTag`. For example:
 
     - If a method is to be removed, then use `#if not`
         
