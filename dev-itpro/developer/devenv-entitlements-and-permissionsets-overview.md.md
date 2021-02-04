@@ -12,7 +12,27 @@ author: SusanneWindfeldPedersen
 
 # Entitlements and Permission Sets Overview
 
-  
+[!INCLUDE[prod_short](includes/d365fin_long_md.md)][!INCLUDE [prod_long](includes/prod_long.md)] uses two main concepts for defining access to the functionality:
+- Entitlements
+- Permissions
+
+Entitlements describe which objects in Business Central a customer is entitled to use according to the license that they purchased from Microsoft or the Azure Active Directory role that they have assigned in Microsoft 365 Admin Center (e.g. Global Administrator).  
+
+Permissions describe which objects an administrator or a partner gave to the customer user. 
+
+In the previous releases of Business Central, permissions and entitlements were defined as data in the application database. Keeping such sensitive information as data comes with additional security and audit risks. Changes applied to this data should ideally be well traceable. "Treat your critical data as you treat your code" is a mantra applied to this type of sensitive data in DevOps practices. With this release of Business Central we are turning this data into code.  
+
+Three new object types are introduced in the AL language: 
+	• Entitlement
+	• PermissionSet
+	• PermissionSetExtension
+
+This change will give you all of the advantages of using the AL Language extension in Visual Studio Code and source control systems (as Visual Studio Online and GitHub) to design, get an overview, and track changes to the objects which describe users access. 
+
+Permissions and entitlements issues also fall into a category of frequently experienced issues online and on-prem. Turning this data into code has another significant advantage; the ability to apply hotfixes to the entitlements and permissions in the same way that the hotfixes are applied to the apps themselves, simply by updating an app to a new version which carries fixed code. This improves Business Central online support agility considerably, ultimately improving customer satisfaction with the service.  
+
+And finally, the new objects that we introduce in this release are envisioned to become the core building blocks in the story of monetizing the AppSource apps. It is through these new AL objects that AppSource ISVs will be able to define which capabilities of their apps should be made available to their users, when the customers purchase their app licenses. With the current release we are paving the way by moving the entitlements and permission sets into AL objects for Microsoft apps, so that ISVs could follow the same approach for their apps, when the monetization story is introduced with one of the next releases of Business Central. 
+
 ## See Also
 
 [Getting Started with AL](devenv-get-started.md)  

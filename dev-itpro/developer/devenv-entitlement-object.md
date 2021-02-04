@@ -14,7 +14,7 @@ ms.author: solsen
 
 # Entitlement Object
 
-The entitlement object in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] describes <!--which objects an administrator or a partner has assigned to a user. -->
+The entitlement object in [!INCLUDE[prod_short](includes/d365fin_long_md.md)][!INCLUDE [prod_long](includes/prod_long.md)] describes <!--which objects an administrator or a partner has assigned to a user. -->
 
 ## Snippet support
 
