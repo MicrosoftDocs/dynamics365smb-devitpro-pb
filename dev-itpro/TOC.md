@@ -2240,11 +2240,16 @@
 #### [Configure IIS](deployment/configure-iis.md)
 #### [Configure SSL](deployment/configure-ssl-web-client-connection.md)
 #### [Setting Up Multiple Web Server Instances](deployment/configure-multiple-web-server-instances.md)
-### [Migrating to Multitenancy](deployment/migrating-to-multitenancy.md)
+### Multitenant Deployment
+#### [Architecture Overview](deployment/multitenant-deployment-architecture.md)
+#### [Setup Guide](administration/multitenant-setup-guide.md)
+#### Migrating From Single to Multitenancy
+##### [Overview](deployment/migrating-to-multitenancy.md)
+##### [Separating Application Data from Business Data](deployment/separating-application-data-from-business-data.md)
 ### Database
 #### [Installation Considerations for SQL Server](deployment/installation-considerations-for-microsoft-sql-server.md)
 #### [Configuring Database Authentication](administration/configure-sql-server-authentication.md)
-#### [Creating Databases](deployment/devenv-create-databases.md)
+#### [Creating Application and Tenant Databases](deployment/devenv-create-databases.md)
 #### [Deploying to Azure SQL Database](deployment/deploy-database-azure-sql-database.md)
 #### [Reducing Database Size](administration/database-reduce-data.md)
 ### Business Central Mobile App
