@@ -83,18 +83,20 @@ Whenever you obsolete code, you need to:
         #endif
         ```
 
-In order to have the compiler take the new ‘clean’ code path, you need to define the symbols. You do this in the `app.json` file with the following setting:
+In order to have the compiler take the new ‘clean’ code path, you need to define the symbols. You do this in the `app.json` file with the following setting. For more information, see [JSON Files](devenv-json-files.md).
+
 ```al
 "preprocessorSymbols": [ "CLEAN15", "CLEAN16", "CLEAN17", "CLEAN18" ]
 ```
 
-A best practice is to change this locally to make sure everything compiles, run tests locally, and submit test jobs.
+> [!IMPORTANT]  
+> A best practice is to change this locally to make sure everything compiles, run tests locally, and submit test jobs.
 
 ## Fixing code when objects are removed
 
 If an action or other code element points to a now removed object, then you must:
 
-- Ensure that the action is obsoleted
+- Ensure that the action is obsoleted.
 - Add preprocessor statements to fix the issue. 
     - If code points to an obsoleted method, then use directives to put in the fixed code.
     - If code points to an obsoleted table/field, then use directives to put in the fixed code.
@@ -103,3 +105,6 @@ If an action or other code element points to a now removed object, then you must
 
 [AL Development Environment](devenv-reference-overview.md)  
 [Directives in AL](directives/devenv-directives-in-al.md)  
+[ObsoleteTag Property](properties/devenv-obsoletetag-property.md)  
+[ObsoleteState Property](properties/devenv-obsoletestate-property.md)  
+[ObsoleteReason Property](properties/devenv-obsoletereason-property.md)  
