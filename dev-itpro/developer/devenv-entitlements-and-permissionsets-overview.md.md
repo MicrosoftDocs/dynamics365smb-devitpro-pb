@@ -18,15 +18,15 @@ author: SusanneWindfeldPedersen
 
 *Permissions* describe which objects an administrator or a partner has given the user.
 
-> [!NOTE]  
-> In previous releases of [!INCLUDE [prod_short](includes/prod_short.md)], permissions and entitlements were defined as data in the application database. Keeping such sensitive information as data comes with additional security and audit risks. Changes applied to this data should ideally be well traceable. With this release of [!INCLUDE [prod_short](includes/prod_short.md)] we are turning this data into code.
+In AL, there are three object types used for handling entitlements and permissions: 
 
-Three new object types are introduced in the AL language: 
-	• Entitlement
-	• PermissionSet
-	• PermissionSetExtension
+- [Entitlement Object](devenv-entitlement-object.md)
+- [PermissionSet](devenv-permissionset-object.md)
+- [PermissionSetExtension](devenv-permissionset-ext-object.md)
 
-This change will give you all of the advantages of using the AL Language extension in Visual Studio Code and source control systems (as Visual Studio Online and GitHub) to design, get an overview, and track changes to the objects which describe users access. 
+## Earlier versions of Business Central
+
+In previous releases of [!INCLUDE [prod_short](includes/prod_short.md)], permissions and entitlements were defined as data in the application database. Keeping such sensitive information as data comes with additional security and audit risks. Changes applied to this data should ideally be well traceable. With this release of [!INCLUDE [prod_short](includes/prod_short.md)] we are turning this data into code.
 
 Permissions and entitlements issues also fall into a category of frequently experienced issues online and on-prem. Turning this data into code has another significant advantage; the ability to apply hotfixes to the entitlements and permissions in the same way that the hotfixes are applied to the apps themselves, simply by updating an app to a new version which carries fixed code. This improves Business Central online support agility considerably, ultimately improving customer satisfaction with the service.  
 
