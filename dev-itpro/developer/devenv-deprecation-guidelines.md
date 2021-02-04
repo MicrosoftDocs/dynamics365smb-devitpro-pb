@@ -12,7 +12,7 @@ ms.author:
 
 # Guidelines for Deprecation of Code
 
-This topic provides guidelines that describe what to do when you need to obsolete code.
+This topic provides guidelines that describe what to do when you need to obsolete code. For obsoleting code, preprocessor statements in AL can be used. For more information, see [Directives in AL](directives/devenv-directives-in-al.md).
 
 ## Obsoleting Code
 
@@ -83,22 +83,23 @@ Whenever you obsolete code, you need to:
         #endif
         ```
 
-o	Etc… There are as many examples as there are things we can obsolete. You can put these #if’s anywhere. We will use simple contructs that you already know #if, #if not, #else, #endif and we will only use the CLEAN<Version> symbols.
--	You ALSO now need to deal with the consequences of these changes. In order to have the compiler take the new ‘clean’ code path, you need to define the symbols. You do this in the app.json like this:
--	    "preprocessorSymbols": [ "CLEAN15", "CLEAN16", "CLEAN17", "CLEAN18" ]
-o	We will not ship app.jsons with preprocessor symbols.
-o	You can change this locally to make sure everything compiles, you can run tests locally, you can submit test jobs, but you should NOT check in the app.json with preprocessor symbols
-o	There will be a postgate test run with preprocessor symbols that will ensure the new ‘clean’ code path works and that all tests pass.
--	When you have defined the preprocessor symbols, you now need to fix all the broken places.
-o	If an action points to a now removed object:
-	Ensure the action is obsoleted
-	Add preprocessor statements to ‘fix’ the issue. 
-o	If code points to an obsoleted function -> use directives to put in the fixed code
-o	If code points to an obsoleted table/field -> use directives to put in the fixed code
-o	Etc…
+In order to have the compiler take the new ‘clean’ code path, you need to define the symbols. You do this in the `app.json` file with the following setting:
+```al
+"preprocessorSymbols": [ "CLEAN15", "CLEAN16", "CLEAN17", "CLEAN18" ]
+```
 
+A best practice is to change this locally to make sure everything compiles, run tests locally, and submit test jobs.
 
+## Fixing code when objects are removed
+
+If an action or other code element points to a now removed object, then you must:
+
+- Ensure that the action is obsoleted
+- Add preprocessor statements to fix the issue. 
+    - If code points to an obsoleted method, then use directives to put in the fixed code.
+    - If code points to an obsoleted table/field, then use directives to put in the fixed code.
 
 ## See Also
 
 [AL Development Environment](devenv-reference-overview.md)  
+[Directives in AL](directives/devenv-directives-in-al.md)  
