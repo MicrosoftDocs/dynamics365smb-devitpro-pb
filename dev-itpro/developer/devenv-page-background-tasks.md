@@ -16,7 +16,7 @@ ms.service: "dynamics365-business-central"
 
 [!INCLUDE[2019_releasewave2](../includes/2019_releasewave2.md)]
 
-To improve the performance of a page, you can develop the page to run read-only computations and long processes asynchronously in background tasks. Background tasks make a page quicker to open and more responsive, faster for users to enter information. Users aren't blocked from working while waiting for the computations to finish. Typical place where you might use background tasks is on cues and pages in FactBoxes.
+To improve the performance of a page, you can develop the page to run read-only computations and long processes asynchronously in background tasks. Background tasks make a page quicker to open and more responsive, faster for users to enter information. Users aren't blocked from working while waiting for the computations to finish. Typical places where you might use background tasks are on cues and pages in FactBoxes.
 
 ## About background tasks
 
