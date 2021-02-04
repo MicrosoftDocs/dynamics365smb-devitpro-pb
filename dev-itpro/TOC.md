@@ -295,6 +295,8 @@
 #### [Moving Tables and Fields Up](developer/devenv-migrate-table-fields-up.md)
 #### [Migration.json File](developer/devenv-migration-json-file.md)
 ## Permission Sets and Entitlements
+### [Entitlements and Permission Sets Overview](developer/devenv-entitlements-and-permissionsets-overview.md)
+### [Permissions on Database Objects](developer/devenv-permissions-on-database-objects.md)
 ### [Entitlement Object](developer/devenv-entitlement-object.md)
 ### [Permissionset Object](developer/devenv-permissionset-object.md)
 ### [Permissionset Extension Object](developer/devenv-permissionset-ext-object.md)
