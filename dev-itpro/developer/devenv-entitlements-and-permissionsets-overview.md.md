@@ -12,15 +12,14 @@ author: SusanneWindfeldPedersen
 
 # Entitlements and Permission Sets Overview
 
-[!INCLUDE[prod_short](includes/d365fin_long_md.md)][!INCLUDE [prod_long](includes/prod_long.md)] uses two main concepts for defining access to the functionality:
-- Entitlements
-- Permissions
+[!INCLUDE [prod_short](includes/prod_short.md)] uses two main concepts for defining access to functionality: Entitlements and Permissions.
 
-Entitlements describe which objects in Business Central a customer is entitled to use according to the license that they purchased from Microsoft or the Azure Active Directory role that they have assigned in Microsoft 365 Admin Center (e.g. Global Administrator).  
+*Entitlements* describe which objects in [!INCLUDE [prod_short](includes/prod_short.md)] a customer is entitled to use according to the license that they purchased from Microsoft or according to the Azure Active Directory role that they have assigned in Microsoft 365 Admin Center, for example, Global Administrator.  
 
-Permissions describe which objects an administrator or a partner gave to the customer user. 
+*Permissions* describe which objects an administrator or a partner has given the user.
 
-In the previous releases of Business Central, permissions and entitlements were defined as data in the application database. Keeping such sensitive information as data comes with additional security and audit risks. Changes applied to this data should ideally be well traceable. "Treat your critical data as you treat your code" is a mantra applied to this type of sensitive data in DevOps practices. With this release of Business Central we are turning this data into code.  
+> [!NOTE]  
+> In previous releases of [!INCLUDE [prod_short](includes/prod_short.md)], permissions and entitlements were defined as data in the application database. Keeping such sensitive information as data comes with additional security and audit risks. Changes applied to this data should ideally be well traceable. With this release of [!INCLUDE [prod_short](includes/prod_short.md)] we are turning this data into code.
 
 Three new object types are introduced in the AL language: 
 	• Entitlement
