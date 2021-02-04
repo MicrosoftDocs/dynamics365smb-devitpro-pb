@@ -1,5 +1,6 @@
 ---
 title: "Separating Application Data from Business Data"
+description: Learn how to create an split your database into an application database and business database
 ms.custom: na
 ms.date: 10/01/2020
 ms.reviewer: na
@@ -70,7 +71,7 @@ The application tables are system tables that define the application. Other syst
 |**Client Add-in**||  
 |**Client Add-in Resources**||  -->
 
-## Exporting the Application Tables to a Dedicated Application Database
+## <a name="exportapplication"></a>Exporting the Application Tables to a Dedicated Application Database
 
 To export the application tables from an existing database to another database, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] provides a [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] cmdlet as part of the [!INCLUDE[adminshell](../developer/includes/adminshell.md)].  
 
