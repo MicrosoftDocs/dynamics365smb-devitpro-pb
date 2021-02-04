@@ -23,14 +23,29 @@ Sometimes, when you open a page it displays information from several tables. To 
 [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] has a number of standard predefined security permission sets. You can use these permission sets as defined or you can change a permission sets to suit your particular needs. You can also create your own permission sets and assign them the permissions that you want.  
   
 ### Permissions on Objects  
-  
-|Permission|Description|  
-|----------------|-----------------|  
-|Read|You can read this object.|  
-|Insert|You can insert data into this object.|  
-|Modify|You can modify data in this object.|  
-|Delete|You can delete data from this object.|  
-|Execute|You can run this object.|  
+
+The following table describes the permissions that can be assigned for specific objects. When assigning permissions by using the object types [PermissionSet Object](devenv-permissionset-object.md) and [PermissionSet Extension Object](devenv-permissionset-ext-object.md) these permissions have been shortened. The table illustrates the abbreviations used.
+
+
+|Permission|Description|Abbreviation in AL  |
+|----------|-----------------|----------|
+|Read      |You can read this object.| `R` for direct read access, `r` for indirect read access. |
+|Insert    |You can insert data into this object.| `I` for direct insert permission, `i` for indirect insert permission. |
+|Modify    |You can modify data in this object.| `M` for direct modify permission, `m` for indirect modify permission. |
+|Delete    |You can delete data from this object.| `D` for direct delete permission, `d` for indirect delete permission.| 
+|Execute   |You can run this object.| ?? |
+
+These permissions can be combined into a group of permissions for any given object. For example:
+
+```al
+...
+tabledata Customer = RIMD,
+        tabledata "Payment Terms" = RMD,
+        tabledata Currency = RM,
+        tabledata "Sales Header" = RIM,
+        tabledata "Sales Line" = RIMD;
+...
+```
   
 ## See Also
 
