@@ -14,7 +14,7 @@ ms.author: solsen
 
 # Entitlement Object
 
-The entitlement object in [!INCLUDE[prod_short](includes/d365fin_long_md.md)][!INCLUDE [prod_long](includes/prod_long.md)] describes <!--which objects an administrator or a partner has assigned to a user. -->
+The entitlement object in [!INCLUDE[prod_short](includes/d365fin_long_md.md)][!INCLUDE [prod_long](includes/prod_long.md)] describes which objects in [!INCLUDE [prod_short](includes/prod_short.md)] a customer is entitled to use according to the license that they purchased from Microsoft or according to the Azure Active Directory role that they have assigned in Microsoft 365 Admin Center, for example, Global Administrator.  
 
 ## Snippet support
 
@@ -24,35 +24,17 @@ Typing the shortcut `t?` will create the basic layout for an entitlement object 
 
 ## Entitlement example
 
-The following entitlement example ...
-
 ```al
 entitlement MyEntitlement
 {
     LicenseType = Role;
-    Roletype = Delegate;
+    Roletype = Delegated;
     Entitlements = 
         "MyPermission ""Set", 
         OtherSet;
 }
 
 ```
-<!--
-```AL
-permissionset 50130 MyPermissionSet 
-{ 
-    Access = Internal; 
-    ObsoleteState = No; 
-    IncludedPermissionSets = SomeSet; 
-
-    Permissions = 
-        codeunitSomeCode = x, 
-        tabledata Customer = rim,
-        tabledata Vendor = RIm,
-        codeunitAccSchedManagement= X; 
-} 
-```
--->
 
 ## See Also
 
