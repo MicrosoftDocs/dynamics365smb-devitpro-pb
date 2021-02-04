@@ -94,7 +94,7 @@ In order to have the compiler take the new ‘clean’ code path, you need to de
 
 ## Fixing code when objects are removed
 
-If an action or other code element points to a now removed object, then you must:
+If an action or other code element point to a now removed object, then you must:
 
 - Ensure that the action is obsoleted.
 - Add preprocessor statements to fix the issue. 
