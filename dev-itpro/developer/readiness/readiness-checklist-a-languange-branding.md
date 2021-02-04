@@ -19,14 +19,14 @@ Your app can be in any language; if not in English, a document with English tran
 |------------|---------------|
 |Offer name:| Can be in any language |
 |Summary:| Can be in any one language (not more because of length constraints).|
-|Description:| Can be in multiple languages (max 3) but must be the same content for each language. If English is not one of the languages chosen, an English document must be added.|
-|Screenshots:| Can be in any language|
-|Videos:|Can be in any language, no captioning required, however English captioning recommended|
-|Documents:| If description is not in English, a supporting document with description in English is required.|
+|Description:| Can be in multiple languages (max 3) but must be the same content for each language.|
+|Screenshots:| Can be in any language.|
+|Videos:|Can be in any language. If the audio is not in English, English captioning is required.|
+|Documents:| Can be in any language.|
 |Keywords:| Can be in any language.|
-|Support / Help:| Can be in any language. Recommended in English. |
-|Privacy:| If hosted on partner website, can be any language.|
-|Licensing:| Must be in English if hosted on AppSource, can be in any language if hosted on partner website.|
+|Support / Help:|Can be in any language.|
+|Privacy:| Can be in any language.|
+|Licensing:| Can be in any language.|
 |Supported countries:| Must be in English.|
 |Supported editions:| Must be in English.|
 |Supported languages:| Must be in English.|
