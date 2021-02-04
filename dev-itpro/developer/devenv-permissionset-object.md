@@ -26,12 +26,11 @@ Typing the shortcut `tpermissionset` will create the basic layout for a permissi
 
 The following permission set example ...
 
-<!--
 ```AL
 permissionset 50130 MyPermissionSet 
 { 
-    Access = Internal; 
-    ObsoleteState = No; 
+    Assignable = true;
+    Caption = 'My PermissionSet';
     IncludedPermissionSets = SomeSet; 
 
     Permissions = 
@@ -41,7 +40,6 @@ permissionset 50130 MyPermissionSet
         codeunitAccSchedManagement= X; 
 } 
 ```
--->
 
 ## See Also
 
