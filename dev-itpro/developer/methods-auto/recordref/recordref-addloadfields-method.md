@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -49,7 +49,7 @@ This method is part of the partial records capability for improving performance.
 
 This code example uses the AddLoadFields method to make sure that if a record is a **Currency**, then the **Currency Factor** field is loaded. This code would have to be called before a database operation is executed on the RecordRef.
 
-```
+```al
 procedure AlwaysNeededFields(VAR MyRecordRef: RecordRef)
 var
         Currency: Record Currency;

@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -47,14 +47,14 @@ The text that is specified by the Name parameter. If an error occurs at runtime,
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- In the filter page that is rendered in the client, the ADDRECORDREF method defines a filter control for the specified table where the user can add and set the filters on the table.  
+ In the filter page that is rendered in the client, the AddRecordREF method defines a filter control for the specified table where the user can add and set the filters on the table.  
   
  Fields in the table that already have filters are automatically included in the filter control. Filters in the record reference passed to the method will not be modified by any method in the FilterPageBuilder object.  
   
 ## Example  
  The following example initializes a filter page object that includes a filter control that uses the Date system table. The filter control has the caption of **Date record**. The example set two filters are on the **Date** record variable, which results in a filter control that includes two fields by default.  
   
-```
+```al
 var
 
     varDateItem: Text[30];  
@@ -64,10 +64,10 @@ var
 
 begin   
     varDateItem := 'Date record';  
-    varDateRecord.SETFILTER("Period End",'12122015D');  
-    varDateRecord.SETFILTER("Period Start",'01012015D');  
+    varDateRecord.SetFilter("Period End",'12122015D');  
+    varDateRecord.SetFilter("Period Start",'01012015D');  
     varDateRecordRef.GetTable(varDateRecord);  
-    varFilterPageBuilder.ADDRECORDREF(varDateItem,varDateRecordRef);
+    varFilterPageBuilder.AddRecordREF(varDateItem,varDateRecordRef);
     varFilterPageBuilder.RunModal(); 
 end; 
 ```  

@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -41,13 +41,15 @@ The SID of the specified Windows user account.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks  
- If you create a page for adding Windows logins, then you must use the SID method to retrieve the SID for the user account so that you can enter the new login into the Windows Login table.  
+## Remarks
+
+If you create a page for adding Windows logins, then you must use the SID method to retrieve the SID for the user account so that you can enter the new login into the Windows Login table.  
   
- This method runs only on the computer that is running [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)]. If you call this method from the client computer, then no action occurs.  
+This method runs only on the computer that is running [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)]. If you call this method from the client computer, then no action occurs.  
   
-## Example  
-```
+## Example
+
+```al
 var
     NewSID: Text[119];
     UserAccount: Text[132];

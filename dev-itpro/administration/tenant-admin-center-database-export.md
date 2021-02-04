@@ -77,20 +77,15 @@ All database export activity is logged for auditing purposes. To view the histor
 
 ## Users who can export databases
 
-Permission to export databases is limited to specific types of users, typically internal and delegated administrators. This isn't a task that a typical [!INCLUDE [prod_short](../developer/includes/prod_short.md)] user should be able to do, but an administrator can grant permission to a user to export databases, should this be necessary.
+Permission to export databases is limited to specific types of users: internal and delegated administrators. The following users are allowed to export databases.
 
-- Users from reselling partners
+- Delegated administrators from reselling partners
 
-  - Employees who have the **Admin agent** role for this customer in the Partner Center
+- Administrators from the organization that subscribes to [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online
 
-    In contrast, employees who have the **Helpdesk agent** role *cannot* export databases.
+Also, these users must have the **D365 BACKUP/RESTORE** permission set assigned to their user account in the environment they're trying to export.
 
-- Users from the organization that subscribes to [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online
-
-  - Users who are internal administrators and have the **Global admin** role in the Microsoft 365 tenant
-  - Users who are members of the *D365 BACKUP/RESTORE* user group
-
-    To add a user to this user group, go to the **User Groups** page in [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. For more information, see [To manage permissions through user groups](/dynamics365/business-central/ui-define-granular-permissions#to-manage-permissions-through-user-groups).  
+For more information about permissions sets and user groups, see [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions).  
 
 ## Using the exported data
 

@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -40,14 +40,14 @@ An instance of the [FilterPageBuilder](filterpagebuilder-data-type.md) data type
 ## Remarks  
  The page is run modally and includes an **OK** and **Cancel** button for closing to modal popup.  
   
- You can call the [GETVIEW Method](../../methods-auto/filterpagebuilder/filterpagebuilder-getview-method.md) method to retrieve the current filter view that is configured on the filter control and apply to the record.  
+ You can call the [GetView Method](../../methods-auto/filterpagebuilder/filterpagebuilder-getview-method.md) method to retrieve the current filter view that is configured on the filter control and apply to the record.  
 
 Because the filter page runs modally in the context of where it was invoked from, users cannot bookmark a link to this page from the user interface.  
 
 ## Example  
- The following example initializes a filter page object that includes a filter control for the **Date** system table. The filter control has the caption of **Date record**. The example adds two filter fields to the filter control on the filter page as the result of applying a default view. The [GETVIEW Method](../../methods-auto/filterpagebuilder/filterpagebuilder-getview-method.md) is used to capture that filter view from the FilterPageBuilder object, and then apply it to the record.  
+ The following example initializes a filter page object that includes a filter control for the **Date** system table. The filter control has the caption of **Date record**. The example adds two filter fields to the filter control on the filter page as the result of applying a default view. The [GetView Method](../../methods-auto/filterpagebuilder/filterpagebuilder-getview-method.md) is used to capture that filter view from the FilterPageBuilder object, and then apply it to the record.  
   
-```
+```al
 var
     varDateItem: Text[300];  
     varDateRecord: Record Date;  
@@ -56,13 +56,13 @@ var
 
 begin
     varDateItem := 'Date record';  
-    varDateRecord.SETFILTER("Period End", '20151212D');  
-    varDateRecord.SETFILTER("Period Start", '20150101D');  
-    varDefaultView := varDateRecord.GETVIEW;  
-    varFilterPageBuilder.AddTable(varDateItem, DATABASE::Date);  
-    varFilterPageBuilder.SETVIEW(varDateItem, varDefaultView);  
-    if varFilterPageBuilder.RUNMODAL = TRUE then  
-      varDateRecord.SETVIEW(varFilterPageBuilder.GETVIEW(varDateItem));  
+    varDateRecord.SetFilter("Period End", '20151212D');  
+    varDateRecord.SetFilter("Period Start", '20150101D');  
+    varDefaultView := varDateRecord.GetView;  
+    varFilterPageBuilder.AddTable(varDateItem, Database::Date);  
+    varFilterPageBuilder.SetView(varDateItem, varDefaultView);  
+    if varFilterPageBuilder.RunModal = true then  
+      varDateRecord.SetView(varFilterPageBuilder.GetView(varDateItem));  
 end; 
 ```  
 

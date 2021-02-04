@@ -2,7 +2,7 @@
 title: "Format Property"
 description: Explains the Format property in Business Central.
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 03/02/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,7 +20,7 @@ All data types in AL.
   
 ## Remarks  
 
-You can set the `Format` property to a predefined format, or you can build your own format. For more information, see [Format Method (Integer, Text)](../methods-auto/system/system-format-joker-integer-string-method.md).  
+You can set the `Format` property to a predefined format, or you can build your own format. For more information, see [Format Method (Integer, Text)](methods-auto/system/system-format-joker-integer-string-method.md).  
   
 ## Basic Settings  
 

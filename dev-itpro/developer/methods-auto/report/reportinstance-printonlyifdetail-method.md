@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -54,7 +54,7 @@ var
     GLEntryPage: Record "G/L Entry";
     PageGroupNo: Integer;
 begin
-    if CurrReport.PRINTONLYifDETAIL and GLEntryPage.FIND('-') then  
+    if CurrReport.PrintONLYifDETAIL and GLEntryPage.Find('-') then  
       PageGroupNo := PageGroupNo + 1;  
 end;
 ```  
@@ -64,7 +64,7 @@ end;
  The following example sets the value of the [PrintOnlyIfDetail Property](../../properties/devenv-printonlyifdetail-property.md) to true. It requires that you create a Report variable named Report111. The Subtype of the variable is report 111, Customer - Top 10 List.  
   
 ```  
-IsPrintOnlyIfDetail := Report111.PRINTONLYifDETAIL(true);  
+IsPrintOnlyIfDetail := Report111.PrintONLYifDETAIL(true);  
 ```  
   
 

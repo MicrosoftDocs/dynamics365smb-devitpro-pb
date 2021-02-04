@@ -35,7 +35,7 @@ This article describes how to set up [!INCLUDE [prod_short](../developer/include
 
 ## Register an application in Azure Active Directory
 
-The first task is to use Azure portal to register an application for Business Central on your Azure AD tenant. As part of the registration, you'll also give the relevant services access to the application. The purpose of registration is to ensure [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premises and the services to know each other's Azure Active Directory (Azure AD) details.
+The first task is to use Azure portal to register an application for Business Central on your Azure AD tenant. As part of the registration, you'll also give the relevant services access to the application. The purpose of registration is to ensure [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premises and the services know each other's Azure Active Directory (Azure AD) details.
 
 > [!TIP]
 > The following steps describe how to register a new application. However, if you're using AZure AD authentication, you already have a registered application for [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. So instead of registering a new application, you can use the existing application. But if you do, make sure you modify it based on the information in the steps that follow. 

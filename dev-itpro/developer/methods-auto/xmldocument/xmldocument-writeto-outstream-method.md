@@ -6,7 +6,7 @@ ms.date: 12/07/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -46,7 +46,7 @@ The OutStream to which you want to save the serialized representation of the nod
 
 The following example illustrates how to create a Stream from a Blob and write to a Stream from an XML document.
 
-```
+```al
 pageextension 50100 CustomerListExt extends "Customer List"
 {
     trigger OnOpenPage();

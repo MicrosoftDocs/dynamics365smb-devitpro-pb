@@ -6,7 +6,7 @@ ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -46,7 +46,8 @@ Sets the text string that displays with the object, control, or other element in
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks  
+## Remarks
+
 > [!NOTE]  
 > To submit an app to AppSource, you must use .xliff translation files. For more information, see [Working with Translation Files](../devenv-work-with-translation-files.md).
 

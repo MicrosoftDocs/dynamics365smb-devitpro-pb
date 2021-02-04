@@ -3,7 +3,7 @@ title: "JSON Files"
 description: "Description of the settings of the app and launch JSON files for AL in Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 12/16/2020
+ms.date: 02/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,7 +28,7 @@ The following table describes the settings in the `app.json` file. For an exampl
 
 |Setting|Mandatory|Value|
 |-------|---------|-----|
-|id|Yes|The unique ID of the extension. When the `app.json` file is automatically created, the ID is set to a new GUID value.|
+|id|Yes|The unique ID of the extension. When the `app.json` file is automatically created, the ID is set to a new GUID value. <br>**Note:** The appId is used at runtime to bind table names contained in the application. Changing the appId will result in data from old tables not being used.|
 |name|Yes|The unique extension name.|
 |publisher|Yes|The name of your publisher, for example: **NAV Partner**, **LLC**.|
 |brief|No, but required for AppSource submission|Short description of the extension.|
