@@ -1,5 +1,5 @@
 ---
-title: "Guidelines for Deprecation of Base App Code"
+title: "Guidelines for Deprecation of Code in the Base App"
 description: "Description of best practices and guidelines for deprecating code in the Base App for Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
@@ -12,7 +12,7 @@ ms.author:
 
 # Guidelines for Deprecation of Code in the Base App
 
-This topic provides guidelines that describe how code in the Base App is obsoleted. The topic describes some best practices that Microsoft is using for obsoleting code, and is meant as a non-enforced guidance and best practice. For obsoleting code preprocessor statements in AL can be used. For more information, see [Directives in AL](directives/devenv-directives-in-al.md).
+This topic provides guidelines that describe how code in the Base App is obsoleted. The topic describes some best practices that Microsoft is using for obsoleting code, and is meant as a non-enforced guidance and best practice. You can use this topic as an inspiration on how to set up a best practice for your own code. For obsoleting code preprocessor statements in AL can be used. For more information, see [Directives in AL](directives/devenv-directives-in-al.md).
 
 ## Obsoleting Code
 
