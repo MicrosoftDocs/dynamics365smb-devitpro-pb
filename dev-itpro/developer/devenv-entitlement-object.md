@@ -29,9 +29,8 @@ entitlement MyEntitlement
 {
     LicenseType = Role;
     Roletype = Delegated;
-    Entitlements = 
-        "MyPermission ""Set", 
-        OtherSet;
+    ObjectEntitlements = 
+        ”D365 BUS PREMIUM - BaseApp”;​
 }
 
 ```
