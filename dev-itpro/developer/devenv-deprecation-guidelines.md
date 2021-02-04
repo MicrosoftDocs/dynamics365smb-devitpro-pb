@@ -34,7 +34,7 @@ Whenever you obsolete code, you need to:
         #endif
         ```
 
-    - If an action is to be removed, then use `#if not`
+    - If an action is to be removed, then you should also use `#if not`
         ```al
         
         #if not CLEAN17
