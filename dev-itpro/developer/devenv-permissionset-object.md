@@ -24,9 +24,23 @@ Typing the shortcut `tpermissionset` will create the basic layout for a permissi
 
 ## Permission set example
 
-The following permission set example ...
+```al
+permissionset 50134 "Sales Person"
+{
+    Assignable = true;
+    Caption = 'Sales Person';
 
-```AL
+    Permissions = 
+        tabledata Customer = RIMD,
+        tabledata "Payment Terms" = RMD,
+        tabledata Currency = RM,
+        tabledata "Sales Header" = RIM,
+        tabledata "Sales Line" = RIMD;
+}
+
+```
+
+```al
 permissionset 50130 MyPermissionSet 
 { 
     Assignable = true;

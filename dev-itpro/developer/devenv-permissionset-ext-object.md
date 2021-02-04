@@ -27,22 +27,16 @@ Typing the shortcut `tpermissionsetextension` will create the basic layout for a
 
 The following permission set example ...
 
-<!--
 ```AL
-permissionset 50130 MyPermissionSet 
-{ 
-    Access = Internal; 
-    ObsoleteState = No; 
-    IncludedPermissionSets = SomeSet; 
+permissionsetextension 50140 "Extended Sales Doc" extends "Sales Person"
+{​
+    Assignable = true;​
+    Caption = 'Extended Sales Doc';​
 
-    Permissions = 
-        codeunitSomeCode = x, 
-        tabledata Customer = rim,
-        tabledata Vendor = RIm,
-        codeunitAccSchedManagement= X; 
-} 
+    Permissions =​
+        tabledata Currency RIM;
+}
 ```
--->
 
 ## See Also
 
