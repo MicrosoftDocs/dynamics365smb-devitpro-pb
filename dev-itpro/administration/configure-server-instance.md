@@ -240,7 +240,7 @@ These settings are used when you want to use Azure Key Vaults to store extension
 |  Client Certificate Store Location|AzureKeyVaultClientCertificateStoreLocation| Specifies the location of the certificate store where the key vault reader certificate is stored.<br /><br />**LocalMachine** specifies that the certificate is stored in a certificate store for the computer that the [!INCLUDE[server](../developer/includes/server.md)] is running on.<br /><br />**CurrentUser** specifies that the certificate is stored in a certificate store for your account on the computer that the [!INCLUDE[server](../developer/includes/server.md)] is running on.<br /><br />Default: LocalMachine <br />Dynamically Updatable: No|
 |  Client Certificate Store Name|AzureKeyVaultClientCertificateStoreName|  Specifies the certificate store where the key vault reader certificate is stored.<br /><br />Default: My <br />Dynamically Updatable: No|
 |  Client Certificate Thumbprint|AzureKeyVaultClientCertificateThumbprint|  Specifies the thumbprint of the certificate used by the key vault reader application in Azure.<br /><br />Default: My<br />Dynamically Updatable: No|
-|  Client ID  |AzureKeyVaultClientId|  Specifies the appication (client) ID of the key vault reader application in Azure. The value is a GUID.<br /><br />Default: 00000000-0000-0000-0000-000000000000 <br />Dynamically Updatable: No |
+|  Client ID  |AzureKeyVaultClientId|  Specifies the application (client) ID of the key vault reader application in Azure. The value is a GUID.<br /><br />Default: 00000000-0000-0000-0000-000000000000 <br />Dynamically Updatable: No |
 
 ## <a name="keyvault"></a>Azure Key Vault Extension Secrets Tab Settings
 
@@ -402,7 +402,7 @@ The following table describes fields on the **Upgrade** tab in the [!INCLUDE[adm
   
 The [!INCLUDE[adminshell](../developer/includes/adminshell.md)] includes several `Set-` cmdlets that enable you to create and modify [!INCLUDE[server](../developer/includes/server.md)] instances.
 
-The main cmdlet for configuring a server instance is the Set-NAVServerConfiguration cmdlet. You can use this cmdlet to change any of the configuration settings that are listed in the previous sections. To change a configuration setting, you set `-KeyName` parameter to the **Key Name** that corresponds to the setting, and set the `-KeyValue`parameter to the new value. For example, you can change the value for `DatabaseServer` to `DatabaseServer.Domain.Com` for the server instance named `MyInstance` by executing this cmdlet:  
+The main cmdlet for configuring a server instance is the Set-NAVServerConfiguration cmdlet. You can use this cmdlet to change any of the configuration settings that are listed in the previous sections. To change a configuration setting, you set `-KeyName` parameter to the **Key Name** that corresponds to the setting, and set the `-KeyValue` parameter to the new value. For example, you can change the value for `DatabaseServer` to `DatabaseServer.Domain.Com` for the server instance named `MyInstance` by executing this cmdlet:  
 
 ```  
 Set-NAVServerConfiguration -ServerInstance "MyInstance" -KeyName "DatabaseServer" -KeyValue "DatabaseServer.Domain.Com"  
