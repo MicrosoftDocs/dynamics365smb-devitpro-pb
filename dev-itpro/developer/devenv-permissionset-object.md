@@ -14,7 +14,7 @@ ms.author: solsen
 
 # Permission Set Object
 
-The permission set object in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] describes which objects an administrator or a partner has assigned to a user.
+The permission set object in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] describes which objects an administrator or a partner has assigned to a user. Permission sets are included in an [Entitlement Object](devenv-entitlement-object.md) that constitutes the set of permissions that a customer is entitled to use.
 
 ## Snippet support
 
