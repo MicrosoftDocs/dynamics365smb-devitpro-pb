@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -30,15 +30,15 @@ The following are examples of valid assignments of times to a Time variable *MyT
 ```al
 MyTime := 0T;  
 MyTime := 115900T;  
-Message(FORMAT(MyTime));  
+Message(Format(MyTime));  
 MyTime := 115934T;  
-Message(FORMAT(MyTime));  
+Message(Format(MyTime));  
 MyTime := 115934.444T;  
-Message(FORMAT(MyTime));  
+Message(Format(MyTime));  
 MyTime := 235900T;  
-Message(FORMAT(MyTime));  
+Message(Format(MyTime));  
 MyTime := 030000T;  
-Message(FORMAT(MyTime));  
+Message(Format(MyTime));  
 ```  
   
 The following shows what the message windows display accordingly on a computer with the regional format set to English (United States) for the syntax examples above.  
@@ -55,7 +55,7 @@ The following shows what the message windows display accordingly on a computer w
 
 ## SQL Server
 
-Microsoft SQL Server stores information about both date and time in columns of the DATETIME type. [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)] uses only the time part and inserts a constant value for the date: 01-01-1754.  
+Microsoft SQL Server stores information about both date and time in columns of the DATETime type. [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)] uses only the time part and inserts a constant value for the date: 01-01-1754.  
   
 The [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)] undefined time is represented by the same value as an undefined date. The undefined date is represented by the earliest valid DateTime in SQL Server, which is 01-01-1753 00:00:00:000.  
   

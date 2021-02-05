@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -43,11 +43,13 @@ An instance of the [File](file-data-type.md) data type.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks  
- This method is often used with [POS Method \(File\)](../../methods-auto/file/file-pos-method.md) and [SEEK Method \(File\)](../../methods-auto/file/file-seek-method.md).  
+## Remarks
+
+This method is often used with [Pos Method \(File\)](../../methods-auto/file/file-pos-method.md) and [Seek Method \(File\)](../../methods-auto/file/file-Seek-method.md).  
   
 ## Example  
- The following example opens a text file that is named 'C:\\TestFolder\\TestFile.txt' and contains the text ‘Hello World’. The [SEEK Method \(File\)](../../methods/devenv-seek-method-file.md) sets a pointer to position 6 in the file. The [READ Method \(File\)](../../methods-auto/file/file-read-method.md) reads the file and stores the retrieved contents in the varString variable. The LEN method retrieves the length of the file and stores it the varLength variable. The text that is read starts from the position of the pointer, so the text ‘World’ and the length of 12 are displayed in the message box. The length of the file is not affected by the [SEEK Method \(File\)](../../methods-auto/file/file-seek-method.md). This example assumes that you have created the text file that is named C:\\TestFolder\\TestFile.txt and contains the text ‘Hello World’. This example requires that you create the following global variables.  
+
+The following example opens a text file that is named 'C:\\TestFolder\\TestFile.txt' and contains the text ‘Hello World’. The [Seek Method \(File\)](../../methods/devenv-Seek-method-file.md) sets a pointer to position 6 in the file. The [Read Method \(File\)](../../methods-auto/file/file-read-method.md) reads the file and stores the retrieved contents in the varString variable. The LEN method retrieves the length of the file and stores it the varLength variable. The text that is read starts from the position of the pointer, so the text ‘World’ and the length of 12 are displayed in the message box. The length of the file is not affected by the [Seek Method \(File\)](../../methods-auto/file/file-Seek-method.md). This example assumes that you have created the text file that is named C:\\TestFolder\\TestFile.txt and contains the text ‘Hello World’. This example requires that you create the following global variables.  
 
  ```
  var
@@ -55,9 +57,9 @@ An instance of the [File](file-data-type.md) data type.
     varString: Text[200];
     varLength: Integer;
 begin
-    Testfile.OPEN('C:\TestFolder\TestFile.txt');  
-    Testfile.SEEK(6);  
-    Testfile.READ(varString);  
+    Testfile.Open('C:\TestFolder\TestFile.txt');  
+    Testfile.Seek(6);  
+    Testfile.Read(varString);  
     varLength := Testfile.LEN;  
     Message('The text is: %1. The length of the file is: %2', varString, varLength);  
 end;

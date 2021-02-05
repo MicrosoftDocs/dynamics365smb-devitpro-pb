@@ -6,7 +6,7 @@ ms.date: 01/12/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -25,7 +25,7 @@ Denotes an option value. In the code snippet below, you can see how the Option d
 
 ## Syntax example
 
-```
+```al
 procedure HelloWithOptions(OptionParameter : Option Alpha, "Bra-vo")
     var 
         OptionVariable : Option C, "or D";
@@ -51,7 +51,7 @@ In the [OptionString Property](../../properties/devenv-optionstring-property.md)
 
 This example shows how you can use the value of an option field as a constant in your AL code.  
   
-```  
+```al
 PurchHeaderRec."Document Type" := PurchHeaderRec."Document Type"::Invoice;   
 ```
 

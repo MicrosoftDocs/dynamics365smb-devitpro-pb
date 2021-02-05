@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -50,13 +50,13 @@ Specifies whether to run the AL code in the OnModify Trigger. If this parameter 
   
  **Enter your changes again in the updated window, or start the interrupted activity again.**  
   
- In earlier versions of [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)], certain situations allowed code that an end-user runs to modify a record after a newer version of the record was written and committed to the database. This would overwrite the newer changes. However, in [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)], we have restricted the **MODIFY** Method \(RECORDREF\), [RENAME Method \(RecordRef\)](recordref-rename-method.md), and [DELETE Method \(RecordRef\)](recordref-delete-method.md) so that the end-user receives the following run-time error in these certain situations:  
+ In earlier versions of [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)], certain situations allowed code that an end-user runs to modify a record after a newer version of the record was written and committed to the database. This would overwrite the newer changes. However, in [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)], we have restricted the **Modify** Method \(RecordRef\), [Rename Method \(RecordRef\)](recordref-rename-method.md), and [Delete Method \(RecordRef\)](recordref-delete-method.md) so that the end-user receives the following run-time error in these certain situations:  
   
  **Unable to change an earlier version of the \<Table Name> record. The record should be read from the database again. This is a programming error.**  
   
- You must design your application so that you use the most up-to-date version of the record for modifications to the database. You use the [GET Method \(RecordRef\)](recordref-get-method.md) to refresh the record with the latest version.  
+ You must design your application so that you use the most up-to-date version of the record for modifications to the database. You use the [Get Method \(RecordRef\)](recordref-get-method.md) to refresh the record with the latest version.  
   
- This method works the same as the [MODIFY Method \(Record\)](../record/record-modify-method.md).  
+ This method works the same as the [Modify Method \(Record\)](../record/record-modify-method.md).  
   
 
 ## See Also

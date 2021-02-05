@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -43,10 +43,11 @@ The input date.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 
-## Example  
- This example shows how to use the **DATE2DMY** method.
+## Example
+
+This example shows how to use the **Date2DMY** method.
  
-```  
+```al
 var
     InputDate: Date;
     Day: Integer;
@@ -55,18 +56,19 @@ var
     Text000: Label 'Today is day %1 of month %2 of the year %3.';
 begin
     InputDate := Today;  
-    Day := DATE2DMY(InputDate,1);  
-    Month := DATE2DMY(InputDate,2);  
-    Year := DATE2DMY(InputDate,3);  
+    Day := Date2DMY(InputDate,1);  
+    Month := Date2DMY(InputDate,2);  
+    Year := Date2DMY(InputDate,3);  
     Message(Text000,Day,Month,Year); 
 end; 
 ```  
   
- The message window displays the following:  
+The message window displays the following:  
   
- **Today is day 16 of month 2 of the year 2014.**  
+**Today is day 16 of month 2 of the year 2014.**  
  
 ## See Also
+
 [System Data Type](system-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

@@ -1,5 +1,6 @@
 ---
 title: "Multitenant Deployment Architecture"
+description: Get an overview of a multitenant deployment
 ms.custom: na
 ms.date: 10/01/2020
 ms.reviewer: na
@@ -12,9 +13,11 @@ author: jswymer
 # Multitenant Deployment Architecture in Business Central
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] supports deployments where several different companies access a centrally maintained [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application. By using this *multitenancy* support, you can add new customers to your solution easily, and you can roll out updates quickly with limited downtime for your customers.  
+
+![Multitenant architecture overview](../developer/media/architecture-multitenant.png "Multitenant architecture overview")  
   
 > [!NOTE]  
->  You do not have to turn your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] solution into a multitenant deployment. You can install and run [!INCLUDE[prod_short](../developer/includes/prod_short.md)] as a classic one-server-one-database deployment.  
+>  You don't have to turn your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] solution into a multitenant deployment. You can install and run [!INCLUDE[prod_short](../developer/includes/prod_short.md)] as a classic one-server-one-database deployment.  
   
  In a multitenant deployment, information about the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application is stored in a separate application database. Your customers’ data is stored in separate business databases, each of which is a *tenant* in your deployment. By separating application from data, you can deploy the same solution to many customers with centralized maintenance of the application and isolation of each tenant. The application database contains the tables that define an application, such as the **Object** table and other system tables.  
   
@@ -32,10 +35,10 @@ author: jswymer
  When you refer to a tenant, you refer to it by the tenant ID. The first tenant that is mounted against a [!INCLUDE[server](../developer/includes/server.md)] instance has the tenant ID **default**. However, you can choose to set up host names for the tenants in your deployment. For example, if you want a tenant to access [!INCLUDE[prod_short](../developer/includes/prod_short.md)] through a URL, you can set up a tenant-specific subdomain. The users in that tenant will then access [!INCLUDE[prod_short](../developer/includes/prod_short.md)] through a URL such as *https://mytenant.myservice.com*. The tenant host name, *mytenant.myservice.com*, must be specified as an alternative ID in the tenant configuration. You can specify alternative IDs for a tenant by using the **Mount-NAVTenant** Windows PowerShell cmdlet.  
   
 ### Companies  
- A tenant database can contain one or more [!INCLUDE[prod_short](../developer/includes/prod_short.md)] companies. It is not the number of companies in a database that determines whether you are running a multitenant environment. The deciding factor is whether you have created an application database, and if you have more than one tenant database connected to the application database.  
+ A tenant database can contain one or more [!INCLUDE[prod_short](../developer/includes/prod_short.md)] companies. It's not the number of companies in a database that determines whether you are running a multitenant environment. The deciding factor is whether you have created an application database, and if you have more than one tenant database connected to the application database.  
   
 ### Databases  
- When information about the application is stored in a separate application database, you maintain the application centrally without affecting the various tenants that use the application. Each tenant database contains the business data for one or more specific companies and does not contain all of the application metadata.  
+ When information about the application is stored in a separate application database, you maintain the application centrally without affecting the various tenants that use the application. Each tenant database contains the business data for one or more specific companies and doesn't contain all of the application metadata.  
   
  For example, if you want to modify a report, and your solution is used by 25 customers, you modify the report in the application database. When each customer then accesses the report, they see the modified report.  
   

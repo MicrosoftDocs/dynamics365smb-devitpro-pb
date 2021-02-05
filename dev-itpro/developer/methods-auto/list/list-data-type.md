@@ -6,7 +6,7 @@ ms.date: 12/09/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -51,18 +51,19 @@ The List can only be used with simple types i.e. you can have a List of [Integer
 Lists are 1-based indexed, that is, the indexing of a List begins with 1.
 
 
-> [!WARNING]
+> [!WARNING]  
 > Previously in C/AL, one would have typically used an in-memory temporary table to create an unbounded "array" data structure, as shown in the code below. In AL you use the List Data Type instead.
 > 
-> ```
+> ```al
 > listRec.Value := ‘Some Value’;​
-> listRec.INSERT();​
+> listRec.Insert();​
 > ```
 
-## Example  
- In the following example, the variable `CustomerNames` is a list of Text values which represent customer names. The procedure `WorkWithListOfCustomers` displays how one would work with the List data type. The `Add` method is used to add the string `'John'` to the `CustomerNames` list. The `Contains` method is used to check whether the list contains the specified value, in this case, the string `'John'`. We continue by using the Message procedure to display a relevant message. 
+## Example
 
-```
+In the following example, the variable `CustomerNames` is a list of Text values which represent customer names. The procedure `WorkWithListOfCustomers` displays how one would work with the List data type. The `Add` method is used to add the string `'John'` to the `CustomerNames` list. The `Contains` method is used to check whether the list contains the specified value, in this case, the string `'John'`. We continue by using the Message procedure to display a relevant message. 
+
+```al
 procedure WorkWithListOfCustomers();
 var
     customerNames : List of [Text];

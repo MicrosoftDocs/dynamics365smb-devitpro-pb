@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -52,10 +52,11 @@ The time that you want stamped on the file.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Example  
- The following example sets timestamp for that a file that is named varFileName. The date and time are set to the current date and on your computer respectively. The code example assumes that you have created the following file: 'C:\\MyFolder\\MyText.txt'. The following example requires that you create the following global variables and text constant.  
+## Example
 
-```
+The following example sets timestamp for that a file that is named varFileName. The date and time are set to the current date and on your computer respectively. The code example assumes that you have created the following file: 'C:\\MyFolder\\MyText.txt'. The following example requires that you create the following global variables and text constant.  
+
+```al
  var
     varFileName: Text;
     varDate: Date;
@@ -64,8 +65,8 @@ The time that you want stamped on the file.
 begin
     VarFileName := 'C:\MyFolder\MyText.txt';  
     varDate := Today;  
-    varTime := TIME;  
-    SETSTAMP(VarFileName, varDate, varTime);  
+    varTime := Time;  
+    SetStamp(VarFileName, varDate, varTime);  
     Message(Text000, varDate, varTime);  
 end;
 ```  

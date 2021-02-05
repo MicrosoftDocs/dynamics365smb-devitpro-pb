@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -43,9 +43,9 @@ An instance of the [TestPage](testpage-data-type.md) data type.
 ## Example  
  This example sets the current row to the first customer in the dataset. It requires that you create a TestPage variable named CustomerList with a Subtype of Customer List.  
   
-```  
-CustomerList.OPENVIEW;  
-CustomerList.FIRST;  
+```al
+CustomerList.OpenView;  
+CustomerList.First;  
 Message(CustomerList.Name.Value);  
   
 ```  

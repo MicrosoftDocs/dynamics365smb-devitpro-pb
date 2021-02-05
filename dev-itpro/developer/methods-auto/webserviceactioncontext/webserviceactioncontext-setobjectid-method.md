@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -37,7 +37,8 @@ The new object ID.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example
-```
+
+```al
 actionContext.SetObjectId(Page::SalesInvoiceCopy);
 ```
 For a complete code example, see [Creating and Interacting with an OData V4 Bound Action](../../devenv-creating-and-interacting-with-odatav4-bound-action.md).

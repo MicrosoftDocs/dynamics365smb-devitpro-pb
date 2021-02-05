@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -57,7 +57,7 @@ A string representation of the report data structure as structured XML that is c
 |`....<DataItem2>`<br /><br /> `......<DataItem2Column1>DataItem2Column1</DataItem2Column1>`<br /><br /> `....</DataItem2>`<br /><br /> `....<DataItem3>`<br /><br /> `......<DataItem3Column1>DataItem3Column1</DataItem3Column1>`<br /><br /> `....</DataItem3>`|Data items and columns that are nested in the top-level data item. Columns are listed in alphabetical order under the respective data item.|  
 |`..</DataItem1>`<br /><br /> `</NavWordReportXmlPart>`|Closing elements.|  
 
- Word custom XML parts enable you to integrate business data into Word documents. For example, the WORDXMLPART method is used internally by [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)] when you are creating report layouts in Word. You can use this method to create a custom XML part, and then, together with the [SAVEASXML Method \(Reports\)](../../methods/devenv-saveasxml-method-reports.md) method and additional data merging tools, you can implement your own functionality for mapping and laying out report data in Word documents. To create a custom XML part, you can save the return value to an .xml file that is encoded in UTF-16 \(16-bit Unicode Transformation Format\). The resultant file can be added to Word documents as a custom XML part to map the report data set as XML data.  
+ Word custom XML parts enable you to integrate business data into Word documents. For example, the WORDXMLPART method is used internally by [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)] when you are creating report layouts in Word. You can use this method to create a custom XML part, and then, together with the [SaveAsXML Method \(Reports\)](../../methods/devenv-saveasxml-method-reports.md) method and additional data merging tools, you can implement your own functionality for mapping and laying out report data in Word documents. To create a custom XML part, you can save the return value to an .xml file that is encoded in UTF-16 \(16-bit Unicode Transformation Format\). The resultant file can be added to Word documents as a custom XML part to map the report data set as XML data.  
 
 ## Example  
  The following example uses the WORDXMLPART method to save the data structure of Report 112 Sales Statistics in an XML file in a predefined folder *C:\\Report Documents*. The resultant file can be used in Word as a custom XML part. 
@@ -67,12 +67,12 @@ var
     SalesStatsReport: File;
     ReportAsString: Text;
 begin
-    ReportAsString := REPORT.WORDXMLPART(112);  
-    SalesStatsReport.TEXTMODE(TRUE);  
-    SalesStatsReport.WRITEMODE(TRUE);  
-    SalesStatsReport.CREATE('C:\Report Documents\SalesStatsReport.xml', TextEncoding::UTF16);  
+    ReportAsString := Report.WORDXMLPART(112);  
+    SalesStatsReport.TextMode(True);  
+    SalesStatsReport.WriteMode(True);  
+    SalesStatsReport.Create('C:\Report Documents\SalesStatsReport.xml', TextEncoding::UTF16);  
     SalesStatsReport.WRITE(ReportAsString);  
-    SalesStatsReport.CLOSE;  
+    SalesStatsReport.Close;  
 end;
 ```  
 

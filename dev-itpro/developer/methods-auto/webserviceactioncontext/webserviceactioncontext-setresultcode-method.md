@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -37,7 +37,8 @@ The new web service action result status code.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example
-```
+
+```al
 ...
 // Set the result code to inform the caller that an item was created.
 actionContext.SetResultCode(WebServiceActionResultCode::Created);

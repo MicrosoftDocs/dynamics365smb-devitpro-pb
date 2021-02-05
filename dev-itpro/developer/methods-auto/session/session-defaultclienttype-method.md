@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -38,23 +38,23 @@ The default client that is configured for the server instance that is used by th
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- You can use DEFAULTCLIENTTYPE in a [GETURL Method](../../methods/devenv-geturl-method.md) call to get the URL of the default client.  
+ You can use DefaultClientType in a [GetURL Method](../../methods/devenv-geturl-method.md) call to get the URL of the default client.  
 
 ## Example 1
 
- In the following example, DEFAULTCLIENTTYPE is used to return the default client type that is configured for the [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] instance that is used by the current session.  
+ In the following example, DefaultClientType is used to return the default client type that is configured for the [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] instance that is used by the current session.  
 
-```  
-if DEFAULTCLIENTTYPE = CLIENTTYPE::Web then  
+```al
+if DefaultClientType = ClientType::Web then  
   Message('The default client is Web client');  
 ```  
 
 ## Example 2
 
- In the following example, DEFAULTCLIENTTYPE is used as a parameter in the GETURL method to return the URL of the default client that is configured for the [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] instance.  
+ In the following example, DefaultClientType is used as a parameter in the GetURL method to return the URL of the default client that is configured for the [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] instance.  
 
-```  
-url := GETURL(DEFAULTCLIENTTYPE);  
+```al
+url := GetURL(DefaultClientType);  
 Message('The URL is %1.', url);  
 ```  
 

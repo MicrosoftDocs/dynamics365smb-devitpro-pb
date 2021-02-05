@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -36,6 +36,7 @@ Ok :=   Debugger.IsAttached()
 **true** if the debugger is attached to a session; otherwise, **false**. 
 
 ## See Also
+
 [Debugger Data Type](debugger-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

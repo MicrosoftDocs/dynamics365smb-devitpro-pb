@@ -6,7 +6,7 @@ ms.date: 12/09/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -36,7 +36,7 @@ The following methods are available on instances of the Dialog data type.
 
 |Method name|Description|
 |-----------|-----------|
-|[Close()](dialog-close-method.md)|Closes a dialog window that has been opened by the OPEN method.|
+|[Close()](dialog-close-method.md)|Closes a dialog window that has been opened by the Open method.|
 |[HideSubsequentDialogs([Boolean])](dialog-hidesubsequentdialogs-method.md)|Specifies that subsequent child dialogs are not shown.|
 |[Open(String [, var Any,...])](dialog-open-method.md)|Opens a dialog window.|
 |[Update([Integer] [, Any])](dialog-update-method.md)|Updates the value of a '#'-or '@' field in the active window.|

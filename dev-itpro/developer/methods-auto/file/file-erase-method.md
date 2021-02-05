@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -47,15 +47,16 @@ The name of the file that you want to delete, including the path. When you enter
 
 If the user who runs this method does not have the required permission to delete the file or if the file is read-only, then the file is not deleted.  
   
-## Example  
- The following example deletes the file that is named C:\\TestFolder\\NewTestFile.txt.This example assumes that you have created the file on your computer.  
+## Example
+
+The following example deletes the file that is named C:\\TestFolder\\NewTestFile.txt.This example assumes that you have created the file on your computer.  
   
+```al
+Erase('C:\TestFolder\NewTestFile.txt');  
 ```  
-ERASE('C:\TestFolder\NewTestFile.txt');  
-```  
-  
 
 ## See Also
+
 [File Data Type](file-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)
