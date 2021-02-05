@@ -14,7 +14,7 @@ ms.author: solsen
 
 # Permission Set Extension Object
 
-The permission set object in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] describes which objects an administrator or a partner has assigned to a user. The permission set extension object describes which additional assignments an administrator or a partner has assigned to a user. The extension of the permission set object ...
+The permission set object in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] describes which objects an administrator or a partner has assigned to a user. The permission set extension object describes which *additional* assignments an administrator or a partner has assigned to a user.
 
 
 ## Snippet support
@@ -25,7 +25,7 @@ Typing the shortcut `tpermissionsetextension` will create the basic layout for a
 
 ## Permission set example
 
-The following permission set example ...
+The following permission set extension example extends the `Sales Person` permission set by adding Read, Insert, and Modify permissions to the Currency table data.
 
 ```AL
 permissionsetextension 50140 "Extended Sales Doc" extends "Sales Person"
