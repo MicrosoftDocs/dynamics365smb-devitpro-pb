@@ -1,5 +1,6 @@
 ---
 title: "How to: Use OData to Return-Obtain an AtomPub Document"
+description: Learn how OData V3 clients can use Atom Publishing Protocol documents to interact with Business Central data
 ms.custom: na
 ms.date: 10/01/2020
 ms.reviewer: na
@@ -8,13 +9,20 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ---
-# Using OData to Return-Obtain an AtomPub Document
-When you register an OData web service, you expose an OData service that can be accessed from a uniform resource identifier \(URI\) by using a web browser or any other HTTP client. OData clients can use Atom Publishing Protocol \(AtomPub\) documents to interact with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] data. AtomPub is a simple HTTP-based protocol for creating and updating web resources. It is related to the Atom Syndication Format, which is XML for web feeds. In these procedures, you obtain different kinds of AtomPub documents or feeds from a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] OData web service. AtomPub documents and feeds are XML.  
+# Using OData V3 to Return-Obtain an AtomPub Document
+
+When you register an OData web service, you expose an OData V3 service endpoint that can be accessed from a uniform resource identifier \(URI\) by using a web browser or any other HTTP client. OData V3 clients can use Atom Publishing Protocol \(AtomPub\) documents to interact with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] data. AtomPub is a simple HTTP-based protocol for creating and updating web resources. It is related to the Atom Syndication Format, which is XML for web feeds. In these procedures, you obtain different kinds of AtomPub documents or feeds from a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] OData web service. AtomPub documents and feeds are XML.  
   
 > [!NOTE]  
->  To use the URIs in this topic, you must have access to the [!INCLUDE[demolong](../developer/includes/demolong_md.md)].  
-  
-## Obtain an AtomPub Document or Feed  
+> This article applies only to OData V3. You can't use the article with OData V4 endpoints.  
+
+<!--
+> [!NOTE]  
+>  To use the URIs in this article, you must have access to the [!INCLUDE[demolong](../developer/includes/demolong_md.md)].  
+ -->
+ 
+## Obtain an AtomPub Document or Feed
+
  Depending on how you construct your URI, you can return an AtomPub document or an AtomPub feed. A feed is a request for data that can change over time. For example, this can be news content or other kinds of information. In the case of [!INCLUDE[prod_short](../developer/includes/prod_short.md)], the information is database content.  
  
 1.  Register and publish a page web service by using the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)]. See [Publishing a Web Service](publish-web-service.md).

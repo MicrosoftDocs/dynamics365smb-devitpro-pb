@@ -22,7 +22,6 @@ To understand the components is useful to first look at the base topology of a [
 
 ![Architecture overview](../media/architecture-overview.png "Architecture overview")  
 
-
 ## Components
 
 ### Main components
