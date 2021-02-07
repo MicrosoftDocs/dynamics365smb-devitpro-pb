@@ -78,7 +78,7 @@ This section describes how to upgrade the application code. This work involves c
 
 The first step, and the largest step, is to create extensions for the customizations compared to the Microsoft base application.
 
-- Create extensions for the target platform **6.0 Business Central 2020 release wave 2**.
+- Create extensions for the target platform **7.0 Business Central 2021 release wave 1**.
 - Include dependencies for the Microsoft System, Base, and Application extensions for version 18.0.0.0.
 
 ## Task 2: Create table migration extension
