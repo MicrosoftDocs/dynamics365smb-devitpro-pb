@@ -17,7 +17,7 @@ author: EmmaNielsson
 Would you like to know what has changed in update 17.4? Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update. In addition, we have gathered some good to know information and links, you might find interesting.
 
 ## Hotfixes
-Find an overview of hotfixes in this [article](Insert).
+Find an overview of hotfixes in this [article](https://support.microsoft.com/en-us/topic/update-17-4-for-microsoft-dynamics-365-business-central-2020-release-wave-2-application-build-17-4-21531-platform-build-17-0-21516-a98ea8e3-b93c-4f14-b1bd-f115a00d6d11).
 
 ## Feature changes
 - [Use recurring journals to allocate balances by dimension values](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/use-recurring-journals-allocate-balances-dimension-values)
@@ -34,8 +34,10 @@ Please note that new customers will automatically get the latest builds of Busin
 ## Good to know
 
 **OData V3 will be removed with 2021 Wave 1**  
-As previously announced, OData Version 3.0 (V3) has been deprecated since April 2020 and support for it will be removed in Dynamics 365 Business Central 2021 release wave 1. OData V4 is the current recommended version of OData and current integrations needs to move to OData V4. To identify incoming OData V3 requests, enable and use the Web Service Request telemetry that's available to partners. Notifications has also been sent via M365 Message Center to tenants with identified usage.
+As previously [announced](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fdynamics365%2Fbusiness-central%2Fdev-itpro%2Fupgrade%2Fdeprecated-features-w1%23odata-v3&data=04%7C01%7Ca-emniel%40microsoft.com%7C7aa180a3769141bff89f08d8c6a2c84e%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637477749732577916%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&sdata=iOEIW2bGcGMS3Q8kCjNDpk5pzGg5Vl4PXDBNtiZOF0Y%3D&reserved=0), OData Version 3.0 (V3) has been deprecated since April 2020 and support for it will be removed in Dynamics 365 Business Central 2021 release wave 1. OData V4 is the current recommended version of OData and current integrations needs to move to OData V4. To identify incoming OData V3 requests, enable and use the [Web Service Request telemetry](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fdynamics365%2Fbusiness-central%2Fdev-itpro%2Fadministration%2Ftelemetry-webservices-trace&data=04%7C01%7Ca-emniel%40microsoft.com%7C7aa180a3769141bff89f08d8c6a2c84e%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637477749732577916%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&sdata=1IbqoCHPSLXvT8%2FfRxJX252f5Bvtpn6bMZknet0wx2o%3D&reserved=0) that's available to partners. Notifications has also been sent via M365 Message Center to tenants with identified usage.
 
+**Release Plan for wave 1 2021 is out**  
+The release 
 
 **Basic Authentication**  
 Basic Authentication (Web Service Access Key) removal for Business Central online has been postponed until [April 2022](/dynamics365/business-central/dev-itpro/upgrade/deprecated-features-w1#basic-auth--web-service-access-keys-for-saas). We see that some integrations needs more time to move from Web Service Access Key usage to OAuth. PowerShell samples on how to connect to Business Central is published on [GitHub](https://github.com/microsoft/BCTech/tree/master/samples/PSOAuthBCAccess). 
