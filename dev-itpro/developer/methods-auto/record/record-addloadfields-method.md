@@ -42,7 +42,7 @@ The FieldNo's of the fields to be loaded.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
-It is not necessary to include the following fields: Primary key, SystemId, and Audit fields (SystemCreatedAt, SystemCreatedBy, SystemModifiedAt, SystemModifiedBy) since they are always selcted for loading.
+It is not necessary to include the following fields, because they are always selected for loading: Primary key, SystemId, and data audit fields (SystemCreatedAt, SystemCreatedBy, SystemModifiedAt, SystemModifiedBy).
 
 This method is part of the partial records capability for improving performance. For more information, see [Using Partial Records](../../devenv-partial-records.md).
 
