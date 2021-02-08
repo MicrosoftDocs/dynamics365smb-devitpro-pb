@@ -17,10 +17,10 @@ ms.author: solsen
 When developing extensions in the AL development environment, you have a wide range of possibilities. Designer in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] complements the development experience in Visual Studio Code. It provides an easy and convenient way to make immediate changes to your design by dragging and dropping the components on the page.  
 
 > [!IMPORTANT]  
-> Designer is currently only available from a [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] sandbox.<br> Every time you start designing, you're effectively creating a new extension. Your changes are *immediately visible to other users*.<br> Designer *cannot be used by multiple users at the same time* in sandboxes.
+> Designer is currently only available from a [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] sandbox.<br> Every time you start designing, you're effectively creating a new extension. Your changes are *immediately visible to other users* in the sandbox environment.<br> Designer *cannot be used by multiple users at the same time* in sandboxes.  
 
 > [!NOTE]  
-> Extensions created using Designer are discarded when an environment is upgraded or moved to another node. See [Sandbox Environments for Dynamics 365 Business Central Development](devenv-sandbox-overview.md) for more information.
+> Extensions created using Designer are removed when the sandbox environment is updated or relocated within our service. Thus, you should not rely on using the sandbox environment as a source control for these Designer extensions, but remember to frequently download and backup the Designer extension source. For more information, see [Production and Sandbox Environments](../administration/environment-types.md).
 
 ## Designer capabilities
 
