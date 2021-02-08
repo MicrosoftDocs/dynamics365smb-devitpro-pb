@@ -60,9 +60,9 @@ With the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)], you can find A
 
 For things that are not possible to achieve in AL code, the recommendation is to use Azure Functions to host the DLL or C# code previously embedded and call that service from AL.
 
-## Extensions published from Visual Studio Code or created using Designer have disappeared. Why?
+## Extensions published from Visual Studio Code or created using Designer have disappeared from a sandbox environment. Why?
 
-Extensions that have been published to a sandbox environment from Visual Studio Code or created using Designer are removed when the environment is updated or relocated within our service. However, the data of an app is not removed, so you only have to re-publish and install the app to make it available.
+Extensions that have been published to a sandbox environment from Visual Studio Code or created using Designer are removed when the sandbox environment is updated or relocated within our service. However, the data of an app is not removed, so you only have to re-publish and install the app to make it available.
 
 For more information, see [Sandbox Environments](../administration/environment-types.md).
 
