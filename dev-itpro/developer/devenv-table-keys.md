@@ -14,13 +14,18 @@ author: jswymer
 
 # Table Keys
 
-The database management system, which is SQL Server, keeps track of data in a table using a primary key. The primary key is composed of up to 16 fields in a record. The combination of values in fields in the primary key makes it possible to uniquely identify each record. 
+The database management system, which is SQL Server, uses keys to identify rows in a table and to speed up data retrieval. Keys identify the rows by combining one or more columns (fields) of a table. In AL, a key definition is a sequence of one or more field IDs from a table. You can define keys in table objects and table extension objects. There are two types of keys: primary and secondary.
 
-A table definition in AL can contain a list of keys. A key is a sequence of one or more field IDs from the table. Up to 40 keys can be associated to a table. 
+- Primary keys are defined on table objects only. There is only one primary key per table.
+
+    Table extension objects inherit the primary key of the table object they extend. So any key that you define in a table extension object is considered a secondary key. You'll see the primary key if you view the companion table for the table extension object in SQL Server.
+- Secondary keys can be defined in both table objects and table extension objects.
+
+- Up to 40 keys can be associated with a table.
 
 ## Primary keys
 
-The first key in the list of keys in a table object definition is the primary key. The primary key determines the logical order in which records are stored, regardless of their physical placement. 
+The primary key keeps track of data in a table. The primary key is composed of up to 16 fields in a record. The combination of values in fields in the primary key makes it possible to uniquely identify each record. In AL, the first key defined in a table object is the primary key. The primary key determines the logical order in which records are stored, regardless of the physical placement of the fields in the table object.
 
 Logically, records are stored sequentially in ascending order and sorted by the primary key. Before adding a new record to a table, SQL Server checks if the information in the record's primary key fields is unique. If so, it then inserts the record into the correct logical position. Records are sorted dynamically so the database is always structurally correct. This sorting allows for fast data manipulation and retrieval.  
 
@@ -28,10 +33,6 @@ The primary key is always active. SQL Server keeps the table sorted in primary k
 
 > [!NOTE]  
 > In the development environment, it's technically possible to create a primary key based on up to 20 fields. However, because of SQL Server limitations, only the first 16 are used.
-
-### Primary keys for table extension objects
-
-You don't define a primary key for a table extension object. A table extension object will use the primary key of the table object it extends. So any key that you define in a table extension object is considered a secondary key. You'll see the primary key if you view the companion table for the table extension object in SQL Server.
 
 ## Secondary keys
 
@@ -125,10 +126,10 @@ The overall speed depends on the following factors:
 
 ## Defining new keys
 
-You define keys in AL code of a table object or table extension object. 
+You define keys in AL code of a table object or table extension object.  
 
-- A secondary key in a table extension object can include either fields from the table object it extends only or fields from the table extension object only. You can't mix fields from the base table object and and table extension object in a key definition.
-- Secondary keys that include fields the base table object are added to the base table in SQL Server able fields are adare 
+- A secondary key in a table extension object can include fields from the table object it extends only or fields from the table extension object only. You can't mix fields from the base table object and and table extension object in a key definition.
+- In SQL Server, secondary keys that use fields the base table object are added to the base table in SQL Server.
 
 
 To define keys, add the `keys` keyword after the `fields` definition, and then add a `key` keyword for each key:
