@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -44,19 +44,19 @@ The name of the field in the record.
 
 ## Remarks
 
-The advantage of using the FIELDNAME method call instead of a static assignment, like NameOfField := 'MyField', is that using the FIELDNAME method dynamically adapts to any change to the field name made in the development environment.
+The advantage of using the FieldName method call instead of a static assignment, like NameOfField := 'MyField', is that using the FieldName method dynamically adapts to any change to the field name made in the development environment.
 
 ## Example
 
 The following example gets the name of the **No.** field in the **Customer** table, and stores it in a string.
 
-```
+```al
 var
     NameOfField: Text;
     CustomerRec: Record Customer;
 
 begin
-    NameOfField := CustomerRec.FIELDNAME("No.");
+    NameOfField := CustomerRec.FieldName("No.");
 end;
 ```
 

@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -42,20 +42,20 @@ The FieldNo that you want to know whether exists in the table.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example  
- The following example opens table 18 \(Customer\) as a RecordRef variable that is named MyRecordRef. The code loops through fields 1 through 12 and uses the FIELDEXIST method to determine whether the specified field exists. If the field exists, the name of the field and a message that indicates that the field exists is displayed. Otherwise, a message that indicates that the field does not exist is displayed. 
+ The following example opens table 18 \(Customer\) as a RecordRef variable that is named MyRecordRef. The code loops through fields 1 through 12 and uses the FieldEXIST method to determine whether the specified field exists. If the field exists, the name of the field and a message that indicates that the field exists is displayed. Otherwise, a message that indicates that the field does not exist is displayed. 
   
-```  
+```al
 var
     MyRecordRef: RecordRef;
     i: Integer;
     VarFieldName: FieldRef;
     Text000: Label 'The %1 table contains %2 field\(s\).\\';
 begin  
-    MyRecordRef.OPEN(18);  
+    MyRecordRef.Open(18);  
     for i := 1 to 12 do begin  
-      if MyRecordRef.FIELDEXIST(i) then begin  
-         VarFieldName := MyRecordRef.FIELD(i);  
-         Message(Text000, i, VarFieldName.NAME);  
+      if MyRecordRef.FieldExist(i) then begin  
+         VarFieldName := MyRecordRef.Field(i);  
+         Message(Text000, i, VarFieldName.Name);  
         end else  
         Message(Text001, i);  
       end;  

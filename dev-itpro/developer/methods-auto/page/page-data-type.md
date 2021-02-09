@@ -6,7 +6,7 @@ ms.date: 12/09/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -25,8 +25,8 @@ The following methods are available on the Page data type.
 |Method name|Description|
 |-----------|-----------|
 |[GetBackgroundParameters()](page-getbackgroundparameters-method.md)|Gets the page background task input parameters.|
-|[Run(Integer [, Record] [, Any])](page-run-integer-table-joker-method.md)|Creates and launches a page that you specify. You can use CLEAR method to remove the page.|
-|[Run(Integer, Record, Integer)](page-run-integer-table-integer-method.md)|Creates and launches a page that you specify. You can use CLEAR method to remove the page.|
+|[Run(Integer [, Record] [, Any])](page-run-integer-table-joker-method.md)|Creates and launches a page that you specify. You can use Clear method to remove the page.|
+|[Run(Integer, Record, Integer)](page-run-integer-table-integer-method.md)|Creates and launches a page that you specify. You can use Clear method to remove the page.|
 |[RunModal(Integer [, Record] [, Any])](page-runmodal-integer-table-joker-method.md)|Creates, opens, and closes a page that you specify. When a page is run modally, no input, such as a keyboard or mouse click, can occur except for objects on the modal page.|
 |[RunModal(Integer, Record, Integer)](page-runmodal-integer-table-integer-method.md)|Creates, opens, and closes a page that you specify. When a page is run modally, no input, such as a keyboard or mouse click, can occur except for objects on the modal page.|
 |[RunModal(Integer, Record, FieldRef)](page-runmodal-integer-table-fieldref-method.md)|Creates, opens, and closes a page that you specify. When a page is run modally, no input, such as a keyboard or mouse click, can occur except for objects on the modal page.|
@@ -45,7 +45,7 @@ The following methods are available on instances of the Page data type.
 |[GetRecord(var Record)](page-getrecord-method.md)|Gets the current record of the page.|
 |[LookupMode([Boolean])](page-lookupmode-method.md)|Gets or sets the default lookup mode for the page.|
 |[ObjectId([Boolean])](page-objectid-method.md)|Returns a string in the "Page xxx" format, where xxx is the caption or ID of the application object.|
-|[Run()](page-run--method.md)|Creates and launches a page that you specify. You can use CLEAR method to remove the page.|
+|[Run()](page-run--method.md)|Creates and launches a page that you specify. You can use Clear method to remove the page.|
 |[RunModal()](page-runmodal--method.md)|Creates, opens, and closes a page that you specify. When a page is run modally, no input, such as a keyboard or mouse click, can occur except for objects on the modal page.|
 |[SaveRecord()](page-saverecord-method.md)|Saves the current record as if performed by the client. If the record does not exist it is inserted, otherwise it is modified.|
 |[SetRecord(var Record)](page-setrecord-method.md)|Sets the current record for the page.|

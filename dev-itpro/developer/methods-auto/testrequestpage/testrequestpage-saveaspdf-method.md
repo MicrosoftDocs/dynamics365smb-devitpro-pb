@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -55,23 +55,23 @@ The path and file name to which the report is saved. The file name extension sho
 -   A handler method of type RequestPageHandler called ReqPageHandler. This handler method has one parameter called RequestPage of Type TestRequestPage and Subtype Customer – Top 10 List. The RequestPage parameter is specified as VAR and is passed by reference to the handler method. 
 <!--Links For more information, see [How to: Create Handler Methods](devenv-How-to--Create-Handler-Methods.md). --> 
   
-```  
+```al
 var
     Filename: Text;
 begin
     //Test method: TestSaveAsPDF  
-    Filename := TEMPORARYPATH + 'MyRep.pdf';  
+    Filename := TemporaryPath + 'MyRep.pdf';  
     Message(Filename);  
-    if not FILE.ERASE(Filename) then  
-      ERROR('Cannot erase %1',Filename);  
-    REPORT.RUN(111);  
-    if not FILE.EXISTS(Filename) then  
-      ERROR('File should exist!');  
+    if not File.Erase(Filename) then  
+      Error('Cannot erase %1',Filename);  
+    Report.Run(111);  
+    if not File.Exists(Filename) then  
+      Error('File should exist!');  
       
     //Request Page Handler method  
-    RequestPage.Customer.SETFILTER("No.", '20000');  
-    RequestPage.ChartType.VALUE('Pie chart');  
-    RequestPage.SAVEASPDF(Filename);  
+    RequestPage.Customer.SetFilter("No.", '20000');  
+    RequestPage.ChartType.Value('Pie chart');  
+    RequestPage.SaveAsPDF(Filename);  
 end;
   
 ```  

@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -38,7 +38,7 @@ Specifies if the number sequence is company-specific. Default is true.
 ## Example
 The following example checks whether the number sequence `MyNumberSequence` exists, and if so, it deletes it.
  
-```
+```al
 if NumberSequence.Exists('MyNumberSequence', false) then
     NumberSequence.Delete('MyNumberSequence', false);
 ```

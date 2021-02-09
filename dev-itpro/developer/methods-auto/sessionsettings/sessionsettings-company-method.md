@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -49,15 +49,15 @@ The name of the company that is set in the SessionSettings object.
 The company property in the SessionSettings object corresponds to the **Company** field in the in the system table **2000000073 User Personalization**.
 
 ## Example
-This example creates a SessionSettings object that is populated with the current client user's personalization data, and then calls the COMPANY method to change the company to 'MyCompany'. Finally, the REQUESTSESSIONUPDATE method sends a request to the client to abandon the current session and start a new session that uses the new company. This example requires a SessionSettings data type variable.
+This example creates a SessionSettings object that is populated with the current client user's personalization data, and then calls the Company method to change the company to 'MyCompany'. Finally, the RequestSessionUpdate method sends a request to the client to abandon the current session and start a new session that uses the new company. This example requires a SessionSettings data type variable.
 
-```
+```al
 var
   MySessionSettings : SessionSettings;
 begin
-  MySessionSettings.INIT;
-  MySessionSettings.COMPANY('MyCompany');
-  MySessionSettings.REQUESTSESSIONUPDATE(false);
+  MySessionSettings.Init;
+  MySessionSettings.Company('MyCompany');
+  MySessionSettings.RequestSessionUpdate(false);
 end;  
 ```  
 

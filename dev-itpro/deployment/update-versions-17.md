@@ -6,7 +6,7 @@ ms.custom: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
-ms.date: 01/11/2021
+ms.date: 02/06/2021
 ---
 
 # Dynamics 365 Business Central On-Premises 2020 Release Wave 2 Updates
@@ -25,6 +25,7 @@ The following table lists the updates that have been released for 2020 release w
 
 |Knowledge Base ID                                           |Title                |Release date  |Build No. |Local versions included |
 |------------------------------------------------------------|---------------------|--------------|----------|------------------------|
+|[5000696](https://support.microsoft.com/help/5000696)|Update 17.4 |February 2021|Application Build 17.4.21531</br>Platform Build 17.0.21516|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
 |[4595152](https://support.microsoft.com/help/4595152)|Update 17.3 |January 2021|Application Build 17.3.20605</br>Platform Build 17.0.20517|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
 |[4583554](https://support.microsoft.com/help/4583554)|Update 17.2 |December 2020|Application Build 17.2.19367.19396</br>Platform Build 17.0.19353.19391|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
 |[4583515](https://support.microsoft.com/help/4583515)|Update 17.1 |November 2020|Application Build 17.1.18256.18792</br>Platform Build 17.0.18204.18738|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|

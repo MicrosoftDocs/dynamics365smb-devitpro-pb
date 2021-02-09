@@ -13,9 +13,9 @@ ms.service: "dynamics365-business-central"
 
 # Writing Extension Install Code
 
-There might be certain operations outside of the extension code itself that you want performed when an extension is installed. These operations could include, for example, populating empty records with data, service callbacks and telemetry, version checks, and messages to users. To perform these types of operations, you write extension install code. Extension install code is run when:
+There might be certain operations outside of the extension code itself that you want run when an extension is installed. These operations could include, for example, populating empty records with data, service callbacks and telemetry, version checks, and messages to users. To do these types of operations, you write extension install code. Extension install code is run when:
 
--   An extension is installed for the very first time.
+-   An extension is installed for the first time.
 -   An uninstalled version is installed again.
 
 This enables you to write different code for initial installation and reinstallation.
@@ -69,12 +69,15 @@ codeunit 50100 MyInstallCodeunit
     var
         myAppInfo : ModuleInfo;
     begin
-        NavApp.GetCurrentModuleInfo(myAppInfo); // Get info about the currently executing module
+        // Get info about the currently executing module
+        NavApp.GetCurrentModuleInfo(myAppInfo); 
 
-        if myAppInfo.DataVersion = Version.Create(0,0,0,0) then // A 'DataVersion' of 0.0.0.0 indicates a 'fresh/new' install
+        // A 'DataVersion' of 0.0.0.0 indicates a 'fresh/new' install
+        if myAppInfo.DataVersion = Version.Create(0,0,0,0) then 
             HandleFreshInstall
         else
-            HandleReinstall; // If not a fresh install, then we are Re-installing the same version of the extension
+            // If not a fresh install, then we are Re-installing the same version of the extension
+            HandleReinstall;
     end;
 
     local procedure HandleFreshInstall();
@@ -90,7 +93,8 @@ codeunit 50100 MyInstallCodeunit
         // Do work needed when reinstalling the same version of this extension back on this tenant.
         // Some possible usages:
         // - Service callback/telemetry indicating that extension was reinstalled
-        // - Data 'patchup' work, for example, detecting if new 'base' records have been changed while you have been working 'offline'.
+        // - Data 'patchup' work, for example, detecting if new 'base' records have been
+        //   changed while you have been working 'offline'.
         // - Setup 'welcome back' messaging for next user access.
     end;
 }

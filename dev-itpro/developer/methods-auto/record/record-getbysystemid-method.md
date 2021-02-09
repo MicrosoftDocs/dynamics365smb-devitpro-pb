@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -46,9 +46,9 @@ Every record has a SystemId, which is stored in the SystemId field of the table.
 
 ## Example
   
-This example shows how to use the GETBYSYSTEMID method to retrieve a record.
+This example shows how to use the GetBySystemId method to retrieve a record.
 
-```
+```al
 var
     CustomerRec: Record Customer;
     Text000: Label 'Customer was found.';

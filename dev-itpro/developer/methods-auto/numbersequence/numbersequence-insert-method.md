@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -44,7 +44,7 @@ Specifies if the number sequence is company-specific. Default is true.
 ## Example
 The following example creates the number sequence `MyNumberSequence` that starts at zero and increments by a value of ten. The number series is not company specific.
  
-```
+```al
 NumberSequence.Insert('MyNumberSequence', 0, 10, false);
 ```
 ## See Also

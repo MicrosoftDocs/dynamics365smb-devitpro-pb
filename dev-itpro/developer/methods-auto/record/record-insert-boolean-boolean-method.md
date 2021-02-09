@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -52,9 +52,9 @@ The inserted record will automatically get assigned a SystemId by the platform. 
 
 ## Example
   
-This example shows how to use the INSERT method to insert a record with a specified SystemId.
+This example shows how to use the Insert method to insert a record with a specified SystemId.
 
-```
+```al
 var
     CustomerRec: Record Customer;
     Text000: Label 'Customer no: %1 inserted.';
@@ -63,7 +63,7 @@ begin
     CustomerRec.Init(); 
     CustomerRec."No." := '1120'; 
     CustomerRec.SystemId := '{B6666666-F5A2-E911-8180-001DD8B7338E}';  
-    if CustomerRec.INSERT(true, true) then  
+    if CustomerRec.Insert(true, true) then  
       Message(Text000, CustomerRec."No.")  
     else  
       Message(Text001, CustomerRec."No.");

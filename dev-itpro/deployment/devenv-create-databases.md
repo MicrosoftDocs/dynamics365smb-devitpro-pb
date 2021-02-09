@@ -35,9 +35,9 @@ If you have a multitenant deployment architecture, you create an application dat
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] supports Windows collations only. For a list of Windows collations, see [Windows Collations
 ](/sql/t-sql/statements/windows-collation-name-transact-sql#windows-collations) in the SQL Server documentation.
 
-## Create an application database
+## <a name="application"></a>Create an application database
 
-To create an application database, for either a single-tenant or multitenant deployment, you use the [New-NAVApplicationDatabase cmdlet](/powershell/module/microsoft.dynamics.nav.management/new-navapplicationdatabase). This cmdlet is available in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]. You use the  New-NAVApplicationDatabase cmdlet to create either new database or initialize an existing empty database to make it an [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application database.
+To create an application database, for either a single-tenant or multitenant deployment, you use the [New-NAVApplicationDatabase cmdlet](/powershell/module/microsoft.dynamics.nav.management/new-navapplicationdatabase). This cmdlet is available in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]. You use the New-NAVApplicationDatabase cmdlet to create either new database or initialize an existing empty database to make it an [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application database.
 
 - If you create a new database, the cmdlet will add a database in SQL Server. The database includes the tables and data required for a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application database. The cmdlet creates a master data file (MDF) and log data file (LDF). Using the cmdlet, you can set the database name, the collation, and where to store the data files. Other database options are set for you.
 
@@ -109,7 +109,7 @@ To create an application database, complete the following steps:
 
     This step will create the tenant-related tables in the database.
 
-## Create a tenant database
+## <a name="tenant"></a>Create a tenant database
 
 Complete the followings step to create a new tenant database in a multitenant deployment.
 
@@ -149,7 +149,9 @@ Complete the following steps to get the application up and running on your tenan
 
     See [Publishing and Installing an Extension](../developer/devenv-how-publish-and-install-an-extension-v2.md)
 
-2. Install extensions on the tenant.
+2. Synchronize and install extensions on the tenant.
+
+    See [Publishing and Installing an Extension](../developer/devenv-how-publish-and-install-an-extension-v2.md)
 
 3. Add a company to the database.
 
@@ -158,7 +160,7 @@ Complete the following steps to get the application up and running on your tenan
 4. Export and import existing permissions sets.
 
     A new database won't include any permission sets except for the SUPER permission set. Also, there will only be one user, typically for your account. You can either create permissions sets from scratch or export the sets from an existing database. As a minimum, it's a good idea to export the BASIC permissions set. The BASIC permission set grants the minimum permissions required for any user to access the application.
-    
+
     For more information, see [Export Permission Sets](../developer/devenv-export-permission-sets.md) and [Special Permission Sets](../administration/administration-special-permission-sets.md).
 
 ## See also

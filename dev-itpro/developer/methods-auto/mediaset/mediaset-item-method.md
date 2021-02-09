@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -42,7 +42,7 @@ The unique identifier (GUID) of the media object.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example  
-For an example of using the ITEM method, see this [example](../../methods-auto/mediaset/mediaset-insert-method.md).
+For an example of using the Item method, see this [example](../../methods-auto/mediaset/mediaset-insert-method.md).
 
 ## See Also
 [MediaSet Data Type](mediaset-data-type.md)  
