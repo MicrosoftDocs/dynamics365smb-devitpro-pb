@@ -44,7 +44,10 @@ If you use this method for an application that runs on the [!INCLUDE[nav_windows
 
 At runtime, a new tab is opened in the same browser window where [!INCLUDE[d365_bus_central_md](../../includes/d365_bus_central_md.md)] is running. 
 
-The HyperLink method works with different protocols and file types as along as the syntax is valid. When using the *file://* protocol to open a file, the file should be stored on a network file share, not locally; otherwise the file will not open<!--NAV in the [!INCLUDE[nav_web](includes/nav_web_md.md)]-->. Browsers block hyperlinks to files from a web page for security reasons and the hyperlink must be manually copied and pasted into a manually opened tab page.
+The `HyperLink` method works with different protocols and file types as along as the syntax is valid. 
+
+> [!NOTE]  
+> When using the *file://* protocol to open a file, the file should be stored on a network file share, not locally; otherwise the file will not open<!--NAV in the [!INCLUDE[nav_web](includes/nav_web_md.md)]-->. Browsers block hyperlinks to files from a web page for security reasons and the hyperlink must be manually copied and pasted into a manually opened tab page.
 
 The HyperLink method does not work on NAS services.  
 
