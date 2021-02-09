@@ -22,9 +22,10 @@ In AL, a key definition is a sequence of one or more field IDs from a table. You
 
 - Primary keys are defined on table objects only. There's one primary key per table.
 
-    Table extension objects inherit the primary key of the table object they extend. So any key that you define in a table extension object is considered a secondary key. You'll see the primary key if you view the companion table for the table extension object in SQL Server.
+    In SQL, table extension objects inherit the primary key of the table object they extend (the base table). So any key that you define in a table extension object is considered a secondary key. <!--You'll see the primary key if you view the companion table for the table extension object in SQL Server.-->
 - Secondary keys can be defined in both table objects and table extension objects.
-- Up to 40 keys can be associated with a table.
+
+    There are some limitations and restrictions, depending on your version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. For more information, see [Limitations and Restrictions]([!INCLUDE[prod_short](../developer/includes/prod_short.md)]).
 
 ## Primary keys
 
@@ -149,13 +150,6 @@ Replace `Name` with descriptive text that you want to use to identify the key. R
 
 In a table object, the first `key` keyword defines the primary key. Subsequent `key` keywords define secondary keys.
 
-### Keys in a table extension object
-
-In table extension objects, you can define multiple keys just like in a table object. However there are following limitations:
-
-- In [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 2 and earlier, keys in table extension objects can only include fields from the table extension object itself.
-- In [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1 and later, keys in table extension objects can also include fields from the base table object. However, a single key can't include fields from both the base table object and table extension object. Each key must contain fields from either the base table object or the table extension object.
-
 ### Key properties
 
 There are several properties that configure the behavior of a key, such as the [Enabled](properties/devenv-enabled-property.md), [Clustered](properties/devenv-clustered-property.md), and [Unique](properties/devenv-unique-property.md) properties:
@@ -180,7 +174,20 @@ keys
 
 For a more information about the different key properties, see [Key Properties](properties/devenv-key-properties.md).
 
-## Restrictions on key modifications
+## <a name="limits"></a>Limitations and Restrictions
+
+### Keys in table extension objects
+
+In table extension objects, you can define multiple keys, just like in a table object. However, the following limitations apply:
+
+- In [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 2 and earlier, keys in table extension objects can only include fields from the table extension object itself.
+- In [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1 and later, keys in table extension objects can include fields from the base table object and table extension object. However, a single key can't include fields from both the base table object and table extension object. In other words, each key must contain fields from either the base table object or the table extension object.
+
+### Total number of keys
+
+Up to 40 keys can be associated with a table.
+
+### Key modifications
 
 When developing a new version of an extension, be aware of the following restrictions to avoid schema synchronization errors that prevent you from publishing the new version:
 
