@@ -2,7 +2,7 @@
 title: Install a version 17 update
 description: This article describes the tasks required for getting the monthly version 17 update applied to your Dynamics 365 Business Central on-premises.
 ms.custom: na
-ms.date: 01/11/2021
+ms.date: 02/06/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,6 @@ ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 # Installing a [!INCLUDE[prod short](../developer/includes/prod_short.md)] 2020 Release Wave 2 Update
-
 
 This article describes how to install an update for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises. An update is a set of files that includes all hotfixes and regulatory features that have been released for Business Central.
 

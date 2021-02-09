@@ -17,13 +17,10 @@ ms.author: solsen
 To get started developing for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] it is important to understand the different options you have at hand. You can either choose to run a sandbox environment deployed as a [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] service, or you can run a container-based image either hosted as an Azure VM or locally. Both options provide the AL development tools; the container-based sandbox additionally provides access to the C/SIDE development tools. You can also choose to run a sandbox environment with production data using the **Business Central Admin Center**. For more information, see [Business Central Admin Center](../administration/tenant-admin-center.md).
 
 > [!NOTE]  
-> When you publish an app from Visual Studio Code to an online sandbox for testing or you create an app using Designer, it is published within the scope of the service node that is hosting that sandbox. Upgrading the sandbox to a new version means that the sandbox is moved to another node that is running the new version. All apps deployed from Visual Studio Code or created using Designer are removed before the sandbox is moved because they will not be available on the new node. However, the data of an app is not removed, so you only have to re-publish and install the app to make it available. Apps that are uploaded to the environments of both types (production and sandbox) on the **Extension Management** page using the **Upload Extension** action are published within a global scope and downloaded to the service node and installed during the upgrade, which means that they will not disappear.
-
-For more information, see [Production and Sandbox Environments](../administration/environment-types.md).  
+> Extensions that have been published to a sandbox environment from Visual Studio Code or created using [Designer](devenv-inclient-designer.md) are removed when the environment is updated or relocated within our service. For more information, see [Production and Sandbox Environments](../administration/environment-types.md).  
 
 > [!IMPORTANT]  
 > It is not supported to publish, from Visual Studio Code, an extension with the same identifiers as an extension published to AppSource. Identifiers include the combination of appID and version or name, publisher, and version. If you do publish such an extension, it can be removed at any time.
-
 
 ## Development sandbox overview
 
@@ -45,6 +42,7 @@ The following table outlines the most important capabilities on the offered deve
 |From Visual Studio Code|Available.|Available.|
 
 ## Getting started
+
 Based on the overview above and the requirements for your development environment, you can get started with a sandbox by following the links below:
 
 + [Online Sandbox with Demo Data](devenv-get-started.md)  
