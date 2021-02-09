@@ -2,51 +2,53 @@
 title: "Object Ranges"
 description: "Description of the object ranges in Business Central."
 author: SusanneWindfeldPedersen
-ms.custom: na
-ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: solsen
+ms.date: 02/03/2021
 ---
 
-# Object Ranges in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]
+# Object Ranges in [!INCLUDE[prod_short](includes/prod_short.md)]
 
-In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] running in the cloud, there are three different object ranges in terms of licensing. Developing for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] is done using Visual Studio Code with the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]. All tenants in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] are able to freely use objects in the following ranges:
+When you develop an app for [!INCLUDE [prod_short](includes/prod_short.md)] online, you must request an object range in terms of licensing. Developing for [!INCLUDE[prod_short](includes/prod_short.md)] is done using Visual Studio Code with the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)].  
 
-- 50,000-99,999
-- 1,000,000-69,999,999
-- 70,000,000-74,999,999
+[!INCLUDE [object-ranges](includes/object-ranges.md)]
 
-In the following each individual range is explained.
+For more information, see [Requesting an object range](readiness/get-started.md#requesting-an-object-range).  
+
+The following sections describe the different object ranges that you can find in the base application and extensions.
 
 ## 0-49,999
 
-This range is assigned to [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] base app functionality and must not be used.
+This range is assigned to [!INCLUDE[prod_short](includes/prod_short.md)] base app functionality and must not be used in extensions or customizations.
 
-## 50,000-99,999 
+## 50,000-99,999
 
-This range is for customizations. A partner can develop an extension tailored to the individual tenant to fit the needs. The partner will develop this either by using a sandbox tenant or by running a build of [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] on Docker that matches the version of the tenant. Once the development is done, the extension can be deployed to the individual tenant.
+This range is for customizations, and for test purposes. For [!INCLUDE [prod_short](includes/prod_short.md)] online, a partner can develop an extension tailored to the individual tenant to fit the needs. The partner will develop this either by using a sandbox tenant or by obtaining a Docker image. Once the development is done, the extension can be deployed to the individual tenant.
+
+Also, use this range as part of training and similar, such as if you are using a sandbox tenant or a build of [!INCLUDE[prod_short](includes/prod_short.md)] on Docker.
 
 ## 100,000-999,999
 
-The objects in this range are mainly designed when the Microsoft team localizes [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] for a specific country or region. These objects cannot be used by partners.
+The objects in this range are mainly designed when the Microsoft team localizes [!INCLUDE[prod_short](includes/prod_short.md)] for a specific country or region. These objects cannot be used by partners.
 
 ## 1,000,000-69,999,999
 
-This is the Registered Solution Program (RSP) range which partners that have an ISV solution for on-premise have access to. The partner can choose to use this range for developing extensions that can be used either in [!INCLUDE[navnow_md](includes/navnow_md.md)] on-premise or in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] in the cloud. When used in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] these extensions are obtained as apps from [appsource.microsoft.com](https://appsource.microsoft.com).
+This object range is intended for the Registered Solution Program (RSP). The partner can choose to use this range for developing extensions that can be used in [!INCLUDE[prod_short](includes/prod_short.md)] online or on-premises. When used in [!INCLUDE[prod_short](includes/prod_short.md)] online, these extensions are obtained as apps from [appsource.microsoft.com](https://appsource.microsoft.com).
 
 ## 70,000,000-74,999,999
 
-Partners can obtain ranges for extension development that runs in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] in the cloud. This range is only available for extension development and only in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. These extensions are obtained as apps from [appsource.microsoft.com](https://appsource.microsoft.com).
+Partners can obtain IDs in this range for extensions for [!INCLUDE[prod_short](includes/prod_short.md)] online. These extensions are obtained as apps from [appsource.microsoft.com](https://appsource.microsoft.com).
 
-For more information, please see the [Ready To Go](https://aka.ms/readytogo) program.
+For more information, see [Get Started with Building Apps](readiness/get-started.md).
 
-Download the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] licensing guide [here](https://go.microsoft.com/fwlink/?LinkId=871590&clcid=0x409).
+Download the [!INCLUDE[prod_short](includes/prod_short.md)] licensing guide [here](https://go.microsoft.com/fwlink/?LinkId=871590&clcid=0x409).
 
 ## See Also
-[Ready To Go](https://aka.ms/readytogo)  
-[Blog Post](https://community.dynamics.com/business/b/businesscentraldevitpro/archive/2018/10/17/which-object-ranges-can-we-use-with-microsoft-dynamics-365-business-central)
 
+[Get Started with Building Apps](readiness/get-started.md)  
+[Getting Started with AL](devenv-get-started.md)  
+[Blog Post](https://community.dynamics.com/business/b/businesscentraldevitpro/archive/2018/10/17/which-object-ranges-can-we-use-with-microsoft-dynamics-365-business-central)

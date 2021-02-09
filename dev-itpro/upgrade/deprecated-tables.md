@@ -13,6 +13,8 @@ ms.author: solsen
 
 # Deprecated Tables
 
+[!INCLUDE [2020_releasewave1](../includes/2020_releasewave1.md)]
+
 In the latest version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)], a number of tables have been deprecated. The following tables have been marked with an `ObsoleteState:Removed`. Code that uses the deprecated table or tables, must be rewritten to use the new table or tables. The deprecated tables are mapped as follows:
 
 <br>
