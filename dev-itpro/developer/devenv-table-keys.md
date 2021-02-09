@@ -22,14 +22,14 @@ In AL, a key definition is a sequence of one or more field IDs from a table. You
 
 - Primary keys are defined on table objects only. There's one primary key per table.
 
-    In SQL, table extension objects inherit the primary key of the table object they extend (the base table). So any key that you define in a table extension object is considered a secondary key. <!--You'll see the primary key if you view the companion table for the table extension object in SQL Server.-->
+    In SQL, table extension objects inherit the primary key of the table object they extend (the base table object). So any key that you define in a table extension object is considered a secondary key. <!--You'll see the primary key if you view the companion table for the table extension object in SQL Server.-->
 - Secondary keys can be defined in both table objects and table extension objects.
 
-    There are some limitations and restrictions, depending on your version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. For more information, see [Limitations and Restrictions]([!INCLUDE[prod_short](../developer/includes/prod_short.md)]).
+    A key in table extension object can include fields from the base table object or the table extension object. There are some limitations, however. For more information, see [Limitations and Restrictions]([!INCLUDE[prod_short](../developer/includes/prod_short.md)]).
 
 ## Primary keys
 
-The primary key keeps track of data in a table. The primary key is composed of up to 16 fields in a record. The combination of values in fields in the primary key makes it possible to uniquely identify each record. In AL, the first key defined in a table object is the primary key. The primary key determines the logical order in which records are stored, regardless of the physical placement of the fields in the table object.
+The primary key keeps track of data in a table. The primary key is composed of up to 16 fields in a record. The combination of values in fields in the primary key makes it possible to uniquely identify each record. In AL, the first key defined in a table object is the primary key. The primary key determines the logical order in which records are stored, no matter the physical placement of the fields in the table object.
 
 Logically, records are stored sequentially in ascending order and sorted by the primary key. Before adding a new record to a table, SQL Server checks if the information in the record's primary key fields is unique. If so, it then inserts the record into the correct logical position. Records are sorted dynamically so the database is always structurally correct. This sorting allows for fast data manipulation and retrieval.  
 
