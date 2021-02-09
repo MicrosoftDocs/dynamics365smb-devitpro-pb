@@ -14,13 +14,16 @@ author: jswymer
 
 # Table Keys
 
-The database management system, which is SQL Server, uses keys to identify rows in a table and to speed up data retrieval. Keys identify the rows by combining one or more columns (fields) of a table. In AL, a key definition is a sequence of one or more field IDs from a table. You can define keys in table objects and table extension objects. There are two types of keys: primary and secondary.
+The database management system, which is SQL Server, uses keys to identify rows in a table and to speed up data retrieval. Keys identify the rows by combining one or more columns of a table.
 
-- Primary keys are defined on table objects only. There is only one primary key per table.
+## Keys in AL
+
+In AL, a key definition is a sequence of one or more field IDs from a table. You can define keys in table objects and table extension objects. There are two types of keys: primary and secondary.
+
+- Primary keys are defined on table objects only. There's one primary key per table.
 
     Table extension objects inherit the primary key of the table object they extend. So any key that you define in a table extension object is considered a secondary key. You'll see the primary key if you view the companion table for the table extension object in SQL Server.
 - Secondary keys can be defined in both table objects and table extension objects.
-
 - Up to 40 keys can be associated with a table.
 
 ## Primary keys
@@ -126,22 +129,16 @@ The overall speed depends on the following factors:
 
 ## Defining new keys
 
-You define keys in AL code of a table object or table extension object.  
-
-- A secondary key in a table extension object can include fields from the table object it extends only or fields from the table extension object only. You can't mix fields from the base table object and and table extension object in a key definition.
-- In SQL Server, secondary keys that use fields the base table object are added to the base table in SQL Server.
-
-
 To define keys, add the `keys` keyword after the `fields` definition, and then add a `key` keyword for each key:
 
 ```AL
 keys
 {
-    key(Name; Fields)
+    key(Name1; Fields)
     {
 
     }
-    key(Name; Fields)
+    key(Name2; Fields)
     {
 
     }
@@ -150,7 +147,14 @@ keys
 
 Replace `Name` with descriptive text that you want to use to identify the key. Replace `Field` with the name of a field that you want to use as the key. If you want to include multiple fields in a single key, separate each field with a comma.
 
-The first `key` keyword defines the primary key. Subsequent `key` keywords define secondary keys.
+In a table object, the first `key` keyword defines the primary key. Subsequent `key` keywords define secondary keys.
+
+### Keys in a table extension object
+
+In table extension objects, you can define multiple keys just like in a table object. However there are following limitations:
+
+- In [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 2 and earlier, keys in table extension objects can only include fields from the table extension object itself.
+- In [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1 and later, keys in table extension objects can also include fields from the base table object. However, a single key can't include fields from both the base table object and table extension object. Each key must contain fields from either the base table object or the table extension object.
 
 ### Key properties
 
