@@ -29,7 +29,7 @@ This article describes how to set up tenants to send telemetry data to Azure App
     See [Create an Application Insights resource](/azure/azure-monitor/app/create-new-resource).
 
     > [!IMPORTANT]
-    > If you using [!INCLUDE[prod_short](../includes/prod_short.md)] 2020 release wave 2 (v17) or earlier, don't use an Azure Application Insights resource in Germany regions, like **(Europe) Germany West Central** or **(Europe) Germany North**, because there are problems connecting to the resource using the instrumentation key.
+    > If you using [!INCLUDE[prod_short](../includes/prod_short.md)] 2020 release wave 2 (v17) or earlier, don't use an Azure Application Insights resource in Germany regions, like **(Europe) Germany West Central** or **(Europe) Germany North**, because you may have problems connecting to the resource using the instrumentation key.
 
 2. Get the connection string or the instrumentation key of the Application Insights resource. You get this information from the [Azure Portal](/azure/bot-service/bot-service-resources-app-insights-keys?view=azure-bot-service-4.0).
 
