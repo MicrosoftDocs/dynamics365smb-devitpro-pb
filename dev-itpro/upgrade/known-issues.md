@@ -20,7 +20,7 @@ This article describes some known issues in [!INCLUDE[prod short](../developer/i
 > The article doesn't include a complete list of known issues. Instead, it addresses some common issues that you might experience or might consider when upgrading to a version. If you're aware of issues that aren't in this article, or you'd like more help, see [Resources for Help and Support](../help-and-support.md).
 
 ## <a name="keys"></a>Primary key mismatch between converted tables in local 14 versions and Microsoft Base Application
-<!--defect 386740 https://dynamicssmb2.visualstudio.com/Dynamics%20SMB/_workitems/edit/386740/-->
+<!--https://dynamicssmb2.visualstudio.com/Dynamics%20SMB/_workitems/edit/387119 -->
 
 > Applies to: 14.18-14.x, 15.12-15.x, 16.7-16.x, 17.1-17.x
 
