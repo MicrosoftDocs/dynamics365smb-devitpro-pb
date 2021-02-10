@@ -19,7 +19,7 @@ This article describes how to set up tenants to send telemetry data to Azure App
 
 <!--
 > [!IMPORTANT]
-> If you using [!INCLUDE[prodshort](../includes/prodshort.md)] 2020 release wave 2 (v17) or earlier, emitting data to Azure Application Insights resources in Germany regions, like **(Europe) Germany West Central** or **(Europe) Germany North** , doesn't work. Until this issue is fixed, the mitigation is to create an Azure Application Insights resource in a region outside of Germany. Then, when the issue has been fixed, move the resource to the preferred region.
+> If you using [!INCLUDE[prod_short](../includes/prod_short.md)] 2020 release wave 2 (v17) or earlier, emitting data to Azure Application Insights resources in Germany regions, like **(Europe) Germany West Central** or **(Europe) Germany North** , doesn't work. Until this issue is fixed, the mitigation is to create an Azure Application Insights resource in a region outside of Germany. Then, when the issue has been fixed, move the resource to the preferred region.
 -->
 
 ## <a name="ApplicationInsights"></a>Get started
@@ -29,11 +29,11 @@ This article describes how to set up tenants to send telemetry data to Azure App
     See [Create an Application Insights resource](/azure/azure-monitor/app/create-new-resource).
 
     > [!IMPORTANT]
-    > If you using [!INCLUDE[prodshort](../includes/prodshort.md)] 2020 release wave 2 (v17) or earlier, don't use an Azure Application Insights resource in Germany regions, like **(Europe) Germany West Central** or **(Europe) Germany North**, because there are problems connecting to the resource using the instrumentation key.
+    > If you using [!INCLUDE[prod_short](../includes/prod_short.md)] 2020 release wave 2 (v17) or earlier, don't use an Azure Application Insights resource in Germany regions, like **(Europe) Germany West Central** or **(Europe) Germany North**, because there are problems connecting to the resource using the instrumentation key.
 
 2. Get the connection string or the instrumentation key of the Application Insights resource. You get this information from the [Azure Portal](/azure/bot-service/bot-service-resources-app-insights-keys?view=azure-bot-service-4.0).
 
-    - If you using [!INCLUDE[prodshort](../includes/prodshort.md)] 2020 release wave 2 (v17) or earlier, use the instrumentation key. The instrumentation key looks something like this: 11111111-2222-3333-4444-555555555555.
+    - If you using [!INCLUDE[prod_short](../includes/prod_short.md)] 2020 release wave 2 (v17) or earlier, use the instrumentation key. The instrumentation key looks something like this: 11111111-2222-3333-4444-555555555555.
 
     - For all later versions, use the connection string. The connection string looks something like this: InstrumentationKey=11111111-2222-3333-4444-555555555555;IngestionEndpoint=https://westeurope-1.in.applicationinsights.azure.com/
 
