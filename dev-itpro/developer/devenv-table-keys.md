@@ -14,16 +14,18 @@ author: jswymer
 
 # Table Keys
 
-The database management system, which is SQL Server, uses keys to identify rows in a table and to speed up data retrieval. Keys identify the rows by combining one or more columns of a table.
+The database management system, which is SQL Server, uses keys to identify rows in a table. Keys identify the rows by combining one or more columns of a table. SQL also uses indexes to speed up data retrieval from rows in a table. This article explains how to create  keys and indexes for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tables from AL code. 
 
 ## Keys in AL
 
-In AL, a key definition is a sequence of one or more field IDs from a table. You can define keys in table objects and table extension objects. There are two types of keys: primary and secondary.
+In AL, a key definition is a sequence of one or more field IDs from a table. You can define keys in table objects and table extension objects, depending on the type of key. There are two types of keys: primary and secondary.
 
-- Primary keys are defined on table objects only. There's one primary key per table.
+- Primary keys
 
-    In SQL, table extension objects inherit the primary key of the table object they extend (the base table object). So any key that you define in a table extension object is considered a secondary key. <!--You'll see the primary key if you view the companion table for the table extension object in SQL Server.-->
-- Secondary keys can be defined in both table objects and table extension objects.
+    Every table has a primary key. There can only be one primary key per table. Primary keys are defined on table objects only. In SQL, table extension objects inherit the primary key of the table object they extend (the base table object). So any key that you define in a table extension object is considered a secondary key. <!--You'll see the primary key if you view the companion table for the table extension object in SQL Server.-->
+- Secondary keys
+
+    Secondary keys create indexes in SQL. They defined in both table objects and table extension objects, and multiple secondary can be defined for single table object and table extension object. 
 
     A key in table extension object can include fields from the base table object or the table extension object. There are some limitations, however. For more information, see [Limitations and Restrictions]([!INCLUDE[prod_short](../developer/includes/prod_short.md)]).
 
