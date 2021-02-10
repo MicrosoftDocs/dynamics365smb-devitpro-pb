@@ -24,18 +24,19 @@ This article describes how to set up tenants to send telemetry data to Azure App
 
 ## <a name="ApplicationInsights"></a>Get started
 
-1. Create an Application Insights resource.
-
-    See [Create an Application Insights resource](/azure/azure-monitor/app/create-new-resource).
+1. Sign in to the [Azure portal](https://portal.azure.com)
+2. Create an Application Insights resource:Create an Application Insights resource by following the guidelines at [Workspace-based Application Insights resources](/azure/azure-monitor/app/create-workspace-resource).
 
     > [!IMPORTANT]
     > If you're running [!INCLUDE[prod_short](../includes/prod_short.md)] 2020 release wave 2 (v17) or earlier, don't use an Azure Application Insights resource in Germany regions, like **(Europe) Germany West Central** or **(Europe) Germany North**. If you do, traces from [!INCLUDE[prod_short](../includes/prod_short.md)] might not be recorded in Application Insights.
 
-2. Copy the connection string or the instrumentation key of the Application Insights resource, depending on your [!INCLUDE[prod_short](../includes/prod_short.md)] version. You get this information from the [Azure portal](/azure/bot-service/bot-service-resources-app-insights-keys?view=azure-bot-service-4.0).
+3. Depending on your [!INCLUDE[prod_short](../includes/prod_short.md)] version, get the **Connection String** or **Instrumentation Key** of the Application Insights resource.
+
+    You can copy this information from the **Overview** page for resource in the Azure portal.
 
     - For [!INCLUDE[prod_short](../includes/prod_short.md)] 2020 release wave 2 (v17) or earlier, copy the instrumentation key.
 
-    - For all later versions, copy the connection string.
+    - For later versions, copy the connection string.
 
         > [!NOTE]
         > For these versions, you can use the instrumentation key. However, for reliability, we recommend that you use the connection string.  
@@ -50,19 +51,19 @@ The way you enable Application Insights depends on whether the [!INCLUDE[server]
 
 - For a multitenant server instance, you enable this feature on a per-tenant basis when you mount tenants on the [!INCLUDE[server](../developer/includes/server.md)] instance. The [Mount-NAVTenant cmdlet](/powershell/module/microsoft.dynamics.nav.management/mount-navtenant?view=businesscentral-ps) includes the `-ApplicationInsightsConnectionString` parameter that you set to the instrumentation key, for example:
 
-    ```
+    ```powershell
     Mount-NAVTenant -ServerInstance BC150 -Tenant tenant1 -DatabaseName "Demo Database BC (18-0)" -DatabaseServer localhost -DatabaseInstance BCDEMO -ApplicationInsightsConnectionString InstrumentationKey=11111111-2222-3333-4444-555555555555;IngestionEndpoint=https://westeurope-1.in.applicationinsights.azure.com/
     ```
 
     or
 
-    ```
+    ```powershell
     Mount-NAVTenant -ServerInstance BC150 -Tenant tenant1 -DatabaseName "Demo Database BC (18-0)" -DatabaseServer localhost -DatabaseInstance BCDEMO -ApplicationInsightsKey 11111111-2222-3333-4444-555555555555
     ```
 
 ## Enable in Docker
 
-If you're using the BcContainerHelper, specify the Application Insights instrumentation key when you create the container. The key is used on the server instance for a single-tenant container. For a multi-tenant container, it's used on the default tenant.
+If you're using the BcContainerHelper module, specify the Application Insights instrumentation key when you create the container. The key is used on the server instance for a single-tenant container. For a multi-tenant container, it's used on the default tenant.
 
 ```
 New-BcContainer `
