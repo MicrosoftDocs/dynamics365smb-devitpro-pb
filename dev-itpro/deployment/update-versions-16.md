@@ -3,7 +3,7 @@ title: "Updates for the Business Central 2020 Release Wave 1 version"
 description: "Learn about the updates for Dynamics 365 Business Central 2020 Release Wave 1 on-premises deployments."
 author: jswymer
 ms.custom: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
 ms.date: 02/06/2021

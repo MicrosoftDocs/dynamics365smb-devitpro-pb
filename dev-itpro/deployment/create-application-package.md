@@ -5,7 +5,7 @@ author: jswymer
 
 ms.custom: na
 ms.reviewer: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
 ms.date: 10/01/2020

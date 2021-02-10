@@ -5,7 +5,7 @@ author: bmeier94
 
 ms.reviewer: edupont
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms. search.keywords: cloud, edge
 ms.date: 01/26/2021
 ms.author: edupont

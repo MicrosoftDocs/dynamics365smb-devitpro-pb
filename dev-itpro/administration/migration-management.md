@@ -4,7 +4,7 @@ description: Get a cloud copy of your data so you are connected to the intellige
 author: bmeier94
 
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
