@@ -4,7 +4,7 @@ description: "Labels syntax and usage in Business Central."
 ms.custom: na
 ms.reviewer: solsen
 ms.date: 10/01/2020
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: t-blrobl
 author: blrobl
