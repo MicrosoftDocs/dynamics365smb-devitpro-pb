@@ -1,6 +1,6 @@
 ---
 title: "Enabling Application Insights for Tenant Telemetry On-Premises"
-description: This topic describes how to enable Application Insights for telemetry on-premises. 
+description: This article describes how to enable Application Insights for telemetry on-premises. 
 ms.custom: na
 ms.date: 10/01/2020
 ms.reviewer: na
@@ -29,20 +29,20 @@ This article describes how to set up tenants to send telemetry data to Azure App
     See [Create an Application Insights resource](/azure/azure-monitor/app/create-new-resource).
 
     > [!IMPORTANT]
-    > If you using [!INCLUDE[prod_short](../includes/prod_short.md)] 2020 release wave 2 (v17) or earlier, don't use an Azure Application Insights resource in Germany regions, like **(Europe) Germany West Central** or **(Europe) Germany North**, because you may have problems connecting to the resource using the instrumentation key.
+    > If you're running [!INCLUDE[prod_short](../includes/prod_short.md)] 2020 release wave 2 (v17) or earlier, don't use an Azure Application Insights resource in Germany regions, like **(Europe) Germany West Central** or **(Europe) Germany North**. If you do, traces from [!INCLUDE[prod_short](../includes/prod_short.md)] might not be recorded in Application Insights.
 
-2. Get the connection string or the instrumentation key of the Application Insights resource. You get this information from the [Azure Portal](/azure/bot-service/bot-service-resources-app-insights-keys?view=azure-bot-service-4.0).
+2. Copy the connection string or the instrumentation key of the Application Insights resource, depending on your [!INCLUDE[prod_short](../includes/prod_short.md)] version. You get this information from the [Azure portal](/azure/bot-service/bot-service-resources-app-insights-keys?view=azure-bot-service-4.0).
 
-    - If you using [!INCLUDE[prod_short](../includes/prod_short.md)] 2020 release wave 2 (v17) or earlier, use the instrumentation key. The instrumentation key looks something like this: 11111111-2222-3333-4444-555555555555.
+    - For [!INCLUDE[prod_short](../includes/prod_short.md)] 2020 release wave 2 (v17) or earlier, copy the instrumentation key.
 
-    - For all later versions, use the connection string. The connection string looks something like this: InstrumentationKey=11111111-2222-3333-4444-555555555555;IngestionEndpoint=https://westeurope-1.in.applicationinsights.azure.com/
+    - For all later versions, copy the connection string.
 
         > [!NOTE]
-        > For these versions, you can use the instrumentation key. However, for reliability reasons, we recommend that you use the connection string.  
+        > For these versions, you can use the instrumentation key. However, for reliability, we recommend that you use the connection string.  
 
 ## Enable on tenants
 
-Once you have the resource and its connection string , you can enable your tenants to send telemetry to your Application Insights resource.
+Once you have the resource and its connection string or instrumentation key, you can enable your tenants to send telemetry to your Application Insights resource.
 
 The way you enable Application Insights depends on whether the [!INCLUDE[server](../developer/includes/server.md)] instance is configured as a single-tenant or multitenant instance:
 
@@ -62,17 +62,21 @@ The way you enable Application Insights depends on whether the [!INCLUDE[server]
 
 ## Enable in Docker
 
-If you are running Business Central in Docker using the latest BcContainerHelper, you can specify the Application Insights Key when creating the container and this will be used in server instance settings if the container is single-tenant or for the default tenant if the container is multi-tenant.
+If you're using the BcContainerHelper, specify the Application Insights instrumentation key when you create the container. The key is used on the server instance for a single-tenant container. For a multi-tenant container, it's used on the default tenant.
 
-    New-BcContainer `
-        -accept_eula `
-        -updateHosts `
-        -artifactUrl (Get-BCArtifactUrl -country us) `
-        -applicationInsightsKey "11111111-2222-3333-4444-555555555555" 
+```
+New-BcContainer `
+    -accept_eula `
+    -updateHosts `
+    -artifactUrl (Get-BCArtifactUrl -country us) `
+    -applicationInsightsKey "11111111-2222-3333-4444-555555555555" 
+```
 
-You can specify the same or another key when creating additional tenants:
+You can specify the same or another key when creating more tenants:
 
-    New-BcContainerTenant -tenantId "additional" -applicationInsightsKey "55555555-4444-3333-2222-111111111111" 
+```powershell
+New-BcContainerTenant -tenantId "additional" -applicationInsightsKey "55555555-4444-3333-2222-111111111111" 
+```
 
 ## See Also
 
