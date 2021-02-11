@@ -16,6 +16,8 @@ ms.author: solsen
 
 The permission set object in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] describes which objects an administrator or a partner has assigned to a user. The permission set extension object describes which *additional* assignments an administrator or a partner has assigned to a user meaning that an extension cannot remove permissions from an existing permission set.
 
+For information about which permissions can be assigned to objects, see [Permissions on Database Objects](devenv-permissions-on-database-objects.md).
+
 ## Snippet support
 
 Typing the shortcut `tpermissionsetextension` will create the basic layout for a permission set extension object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
@@ -24,7 +26,7 @@ Typing the shortcut `tpermissionsetextension` will create the basic layout for a
 
 ## Permission set example
 
-The following permission set extension example extends the `Sales Person` permission set by adding Read, Insert, and Modify permissions to the Currency table data.
+The following permission set extension example extends the `Sales Person` [permission set](devenv-permissionset-object.md#permission-set-example) by adding direct I(nsert) and D(elete) permissions to the Currency table data.
 
 ```AL
 permissionsetextension 50140 "Extended Sales Doc" extends "Sales Person"
@@ -33,7 +35,7 @@ permissionsetextension 50140 "Extended Sales Doc" extends "Sales Person"
     Caption = 'Extended Sales Doc';​
 
     Permissions =​
-        tabledata Currency RIM;
+        tabledata Currency ID;
 }
 ```
 
@@ -41,4 +43,5 @@ permissionsetextension 50140 "Extended Sales Doc" extends "Sales Person"
 
 [Developing Extensions](devenv-dev-overview.md)  
 [AL Development Environment](devenv-reference-overview.md)  
-[Permission Set Object](devenv-permissionset-object.md)
+[Permission Set Object](devenv-permissionset-object.md)  
+[Permissions on Database Objects](devenv-permissions-on-database-objects.md)

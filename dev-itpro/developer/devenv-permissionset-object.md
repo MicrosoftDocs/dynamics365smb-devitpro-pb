@@ -16,6 +16,9 @@ ms.author: solsen
 
 The permission set object in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] describes which objects an administrator or a partner has assigned to a user. Permission sets are included in an [Entitlement Object](devenv-entitlement-object.md) that constitutes the set of permissions that a customer is entitled to use. With a [Permission Set Extension Object](devenv-permissionset-ext-object.md) you can make *additive* changes to an existing permission set. This means that you cannot remove permissions from a permission set with an extension object.
 
+For information about which permissions can be assigned to objects, see [Permissions on Database Objects](devenv-permissions-on-database-objects.md).
+
+
 ## Snippet support
 
 Typing the shortcut `tpermissionset` will create the basic layout for a permission set object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
@@ -59,4 +62,5 @@ permissionset 50130 MyPermissionSet
 
 [Developing Extensions](devenv-dev-overview.md)  
 [AL Development Environment](devenv-reference-overview.md)  
-[Permission Set Extension Object](devenv-permissionset-ext-object.md)
+[Permission Set Extension Object](devenv-permissionset-ext-object.md)  
+[Permissions on Database Objects](devenv-permissions-on-database-objects.md)
