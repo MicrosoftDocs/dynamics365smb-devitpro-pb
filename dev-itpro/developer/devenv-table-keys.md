@@ -152,7 +152,7 @@ Replace `Name` with descriptive text that you want to use to identify the key. R
 
 In a table object, the first `key` keyword defines the primary key. Subsequent `key` keywords define secondary keys.
 
-The following code illustrates simple example for a table object and table extension object.
+The following code illustrates simple examples of a table object and table extension object.
 
 ```AL
 table 50120 MyBaseTable
