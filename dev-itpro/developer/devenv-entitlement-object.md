@@ -14,7 +14,14 @@ ms.author: solsen
 
 # Entitlement Object
 
-The entitlement object in [!INCLUDE[prod_short](includes/d365fin_long_md.md)][!INCLUDE [prod_long](includes/prod_long.md)] describes which objects in [!INCLUDE [prod_short](includes/prod_short.md)] a customer is entitled to use according to the license that they purchased. An entitlement consists of a number of [PermissionSet Object](devenv-permissionset-object.md) put together to constitute a set of meaningful permissions for a user.
+The entitlement object in [!INCLUDE[prod_short](includes/d365fin_long_md.md)][!INCLUDE [prod_long](includes/prod_long.md)] describes which objects in [!INCLUDE [prod_short](includes/prod_short.md)] a customer is entitled to use according to the license that they purchased or the role that they have in AAD. 
+
+An entitlement consists of a number of [PermissionSet Object](devenv-permissionset-object.md) put together to constitute a set of meaningful permissions for a user. An entitelment can only include [PermissionSet Object](devenv-permissionset-object.md) which reference the objects included within the same app. This is to ensure that the entitlements included with one app cannot alter or redefine the entitlements included with another app. 
+
+Entitlements can only be used with the online version of [!INCLUDE[prod_short](includes/d365fin_long_md.md)][!INCLUDE [prod_long](includes/prod_long.md)].
+
+> [!NOTE]
+> In the current version of [!INCLUDE[prod_short](includes/d365fin_long_md.md)][!INCLUDE [prod_long](includes/prod_long.md)] the entitlements can only be included with Microsoft apps (enforced by the AppSource cop rules and the technical validation checks we run for the apps submitted to AppSource). These objects will become available for the ISV apps when we introduce ability to monetize AppSource apps in one of our future releases. 
 
 ## Snippet support
 
