@@ -3,7 +3,7 @@ title: Testing Reports
 description: How to validate if a report produces correct data
 author: ailie13
 ms.reviewer: solsen
-ms.topic: article
+ms.topic: conceptual
 ms.service: dynamics365-business-central
 ms.author: solsen
 ms.date: 10/01/2020

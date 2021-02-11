@@ -3,7 +3,7 @@ title: Outgoing Web Service Request Trace | Microsoft Docs
 description: Learn about the outgoing web service request telemetry in Business Central  
 author: jswymer
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na

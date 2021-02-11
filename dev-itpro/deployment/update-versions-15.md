@@ -4,7 +4,7 @@ description: "Learn about the updates for Dynamics 365 Business Central 2019 Rel
 author: jswymer
 ms.custom: na
 ms.reviewer: edupont
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
 ms.date: 02/06/2021
