@@ -4,7 +4,7 @@ description: Get a cloud tenant so you can migrate to the cloud from your on-pre
 
 author: jenolson
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na

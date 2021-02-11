@@ -3,7 +3,7 @@ title: Version numbers in Business Central
 description: Learn what version numbers mean in Business Central to help you troubleshoot any issues.
 author: edupont04
 
-ms.topic: article
+ms.topic: conceptual
 ms.service: dynamics365-business-central
 ms.author: edupont
 ms.date: 10/01/2020

@@ -3,7 +3,7 @@ title: Generate HTML files from the contents of a Microsoft GitHub repository
 description: This article describes the HtmlFromRepoGenerator tool in the custom help toolkit for Business Central. 
 
 author: edupont04
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.date: 10/01/2020
 ms.author: edupont
