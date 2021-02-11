@@ -4,7 +4,7 @@ description: This article provides the specifications of minimum hardware and so
 ms.custom: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.date: 10/01/2020
 author: jswymer

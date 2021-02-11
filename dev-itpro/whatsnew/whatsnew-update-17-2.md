@@ -7,7 +7,7 @@ ms.date: 12/09/2020
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: EmmaNielsson
 ---
@@ -27,7 +27,7 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/en-
 - [Signal from the sensitive field audit feature added to Application Insights telemetry for partners](../administration/telemetry-field-monitoring-trace.md)
 - [Signal from the email feature added to Application Insights telemetry for partners](../administration/telemetry-email-trace.md)
 - [Signal from application packages lifecycle added to Application Insights Telemetry for partners](..\administration\telemetry-configuration-package-trace.md)
-- [Snapshot debugging enabled in production environments](dynamics365/business-central/dev-itpro/developer/devenv-snapshot-debugging)  
+- [Snapshot Debugging](../developer/devenv-snapshot-debugging.md)  
 
 
 ## Release Plan

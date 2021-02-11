@@ -4,7 +4,7 @@ description: Learn about tips and tricks for how to tweak your Business Central 
 ms.custom: na
 ms.date: 10/12/2020
 ms.reviewer: solsen
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: KennieNP
 ---
