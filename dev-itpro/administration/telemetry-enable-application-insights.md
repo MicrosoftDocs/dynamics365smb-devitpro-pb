@@ -24,8 +24,8 @@ This article describes how to set up tenants to send telemetry data to Azure App
 
 ## <a name="ApplicationInsights"></a>Get started
 
-1. Sign in to the [Azure portal](https://portal.azure.com)
-2. Create an Application Insights resource:Create an Application Insights resource by following the guidelines at [Workspace-based Application Insights resources](/azure/azure-monitor/app/create-workspace-resource).
+1. Sign in to the [Azure portal](https://portal.azure.com).
+2. Create an Application Insights resource by following the guidelines at [Workspace-based Application Insights resources](/azure/azure-monitor/app/create-workspace-resource).
 
     > [!IMPORTANT]
     > If you're running [!INCLUDE[prod_short](../includes/prod_short.md)] 2020 release wave 2 (v17) or earlier, don't use an Azure Application Insights resource in Germany regions, like **(Europe) Germany West Central** or **(Europe) Germany North**. If you do, traces from [!INCLUDE[prod_short](../includes/prod_short.md)] might not be recorded in Application Insights.
