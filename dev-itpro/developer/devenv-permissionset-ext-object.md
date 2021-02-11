@@ -14,8 +14,7 @@ ms.author: solsen
 
 # Permission Set Extension Object
 
-The permission set object in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] describes which objects an administrator or a partner has assigned to a user. The permission set extension object describes which *additional* assignments an administrator or a partner has assigned to a user.
-
+The permission set object in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] describes which objects an administrator or a partner has assigned to a user. The permission set extension object describes which *additional* assignments an administrator or a partner has assigned to a user meaning that an extension cannot remove permissions from an existing permission set.
 
 ## Snippet support
 
