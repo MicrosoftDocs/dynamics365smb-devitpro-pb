@@ -152,6 +152,72 @@ Replace `Name` with descriptive text that you want to use to identify the key. R
 
 In a table object, the first `key` keyword defines the primary key. Subsequent `key` keywords define secondary keys.
 
+The following code illustrates simple example for a table object and table extension object.
+
+```AL
+table 50120 MyBaseTable
+{
+    DataClassification = ToBeClassified;
+
+    fields
+    {
+        field(1; MyBaseField1; Integer)
+        {
+            DataClassification = ToBeClassified;
+        }
+
+        field(2; MyBaseField2; Integer)
+        {
+            DataClassification = ToBeClassified;
+        }
+    }
+
+    keys
+    {
+        key(PK; MyBaseField1) //primary key
+        {
+            Clustered = true;
+        }
+        key(Key1; MyBaseField2)
+        {
+        }
+    }
+}
+```
+
+```AL
+tableextension 50121 MyBaseTableExt extends MyBaseTable
+{
+    fields
+    {
+        field(3; MyExtField1; Integer)
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(4; MyExtField2; Integer)
+        {
+            DataClassification = ToBeClassified;
+        }
+    }
+    keys
+    {
+        key(ExtKey1; MyExtField1)
+        {
+        }
+        key(ExtKey2; MyBaseField1, MyBaseField2)
+        {
+        }
+        // The following key isn't allowed because it contains fields from base table and table extension
+        //key(ExtKey3; MyBaseField1, MyExtField2)
+        //{
+        //}
+    }
+}
+```
+
+
+**Examples**
+
 ### Key properties
 
 There are several properties that configure the behavior of a key, such as the [Enabled](properties/devenv-enabled-property.md), [Clustered](properties/devenv-clustered-property.md), and [Unique](properties/devenv-unique-property.md) properties:
