@@ -5,7 +5,7 @@ ms.custom: na
 ms.date: 10/29/2020
 ms.reviewer: solsen
 ms.suite: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: blrobl
 ms.author: t-blrobl

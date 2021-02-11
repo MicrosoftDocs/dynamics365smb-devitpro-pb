@@ -4,7 +4,7 @@ description: Tips and tricks for authoring in MarkDown files when you extend or 
 author: edupont04
 ms.custom: na
 ms.reviewer: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.date: 12/16/2020
 ms.author: edupont

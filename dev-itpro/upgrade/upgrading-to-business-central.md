@@ -4,7 +4,7 @@ ms.custom: na
 ms.reviewer: edupont
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
 ms.service: "dynamics365-business-central"

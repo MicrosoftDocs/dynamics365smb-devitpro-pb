@@ -4,7 +4,7 @@ description: "Learn about the cumulative updates for Dynamics 365 Business Centr
 author: jswymer
 ms.custom: na
 ms.reviewer: edupont
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
 ms.date: 02/06/2021
