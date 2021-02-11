@@ -157,18 +157,13 @@ The following code illustrates simple example for a table object and table exten
 ```AL
 table 50120 MyBaseTable
 {
-    DataClassification = ToBeClassified;
-
     fields
     {
         field(1; MyBaseField1; Integer)
         {
-            DataClassification = ToBeClassified;
         }
-
         field(2; MyBaseField2; Integer)
         {
-            DataClassification = ToBeClassified;
         }
     }
 
@@ -178,7 +173,7 @@ table 50120 MyBaseTable
         {
             Clustered = true;
         }
-        key(Key1; MyBaseField2)
+        key(Key1; MyBaseField2) //secondary key
         {
         }
     }
@@ -192,19 +187,18 @@ tableextension 50121 MyBaseTableExt extends MyBaseTable
     {
         field(3; MyExtField1; Integer)
         {
-            DataClassification = ToBeClassified;
         }
         field(4; MyExtField2; Integer)
         {
-            DataClassification = ToBeClassified;
         }
     }
+
     keys
     {
-        key(ExtKey1; MyExtField1)
+        key(ExtKey1; MyExtField1) //secondary key
         {
         }
-        key(ExtKey2; MyBaseField1, MyBaseField2)
+        key(ExtKey2; MyBaseField1, MyBaseField2) //secondary key
         {
         }
         // The following key isn't allowed because it contains fields from base table and table extension
