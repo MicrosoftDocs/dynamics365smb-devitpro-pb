@@ -39,7 +39,7 @@ This article describes how to set up tenants to send telemetry data to Azure App
     - For later versions, copy the connection string.
 
         > [!NOTE]
-        > For these versions, you can use the instrumentation key. However, for reliability, we recommend that you use the connection string.  
+        > For these versions, you can use the instrumentation key instead of the connection string. However, for reliability, we recommend that you use the connection string.  
 
 ## Enable on tenants
 
@@ -47,7 +47,7 @@ Once you have the resource and its connection string or instrumentation key, you
 
 The way you enable Application Insights depends on whether the [!INCLUDE[server](../developer/includes/server.md)] instance is configured as a single-tenant or multitenant instance:
 
-- For a single-tenant server instance, you set the **Application Insights Connection String** setting of the server instance. For more information, see [Configuring Business Central Server](configure-server-instance.md#General).
+- For a single-tenant server instance, you set the **Application Insights Connection String** or **Application Insights Instrumentation Key** setting of the server instance. For more information, see [Configuring Business Central Server](configure-server-instance.md#General).
 
 - For a multitenant server instance, you enable this feature on a per-tenant basis when you mount tenants on the [!INCLUDE[server](../developer/includes/server.md)] instance. The [Mount-NAVTenant cmdlet](/powershell/module/microsoft.dynamics.nav.management/mount-navtenant?view=businesscentral-ps) includes the `-ApplicationInsightsConnectionString` parameter that you set to the instrumentation key, for example:
 
@@ -76,7 +76,7 @@ New-BcContainer `
 You can specify the same or another key when creating more tenants:
 
 ```powershell
-New-BcContainerTenant -tenantId "additional" -applicationInsightsKey "55555555-4444-3333-2222-111111111111" 
+New-BcContainerTenant -tenantId "additional" -applicationInsightsKey "11111111-2222-3333-4444-555555555555" 
 ```
 
 ## See Also
