@@ -215,9 +215,6 @@ tableextension 50121 MyBaseTableExt extends MyBaseTable
 }
 ```
 
-
-**Examples**
-
 ### Key properties
 
 There are several properties that configure the behavior of a key, such as the [Enabled](properties/devenv-enabled-property.md), [Clustered](properties/devenv-clustered-property.md), and [Unique](properties/devenv-unique-property.md) properties:
