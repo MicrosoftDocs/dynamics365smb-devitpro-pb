@@ -34,9 +34,9 @@ This article describes how to set up tenants to send telemetry data to Azure App
 
     You can copy this information from the **Overview** page for resource in the Azure portal.
 
-    - For [!INCLUDE[prod_short](../includes/prod_short.md)] 2020 release wave 2 (v17) or earlier, copy the instrumentation key.
+    - For [!INCLUDE[prod_short](../includes/prod_short.md)] 2020 release wave 2 (v17) or earlier, copy the **Instrumentation Key**.
 
-    - For later versions, copy the connection string.
+    - For later versions, copy the **Connection String**.
 
         > [!NOTE]
         > For these versions, you can use the instrumentation key instead of the connection string. However, for reliability, we recommend that you use the connection string.  
@@ -49,7 +49,9 @@ The way you enable Application Insights depends on whether the [!INCLUDE[server]
 
 - For a single-tenant server instance, you set the **Application Insights Connection String** or **Application Insights Instrumentation Key** setting of the server instance. For more information, see [Configuring Business Central Server](configure-server-instance.md#General).
 
-- For a multitenant server instance, you enable this feature on a per-tenant basis when you mount tenants on the [!INCLUDE[server](../developer/includes/server.md)] instance. The [Mount-NAVTenant cmdlet](/powershell/module/microsoft.dynamics.nav.management/mount-navtenant?view=businesscentral-ps) includes the `-ApplicationInsightsConnectionString` parameter that you set to the instrumentation key, for example:
+- For a multitenant server instance, you enable this feature on a per-tenant basis when you mount tenants on the [!INCLUDE[server](../developer/includes/server.md)] instance.
+
+    The [Mount-NAVTenant cmdlet](/powershell/module/microsoft.dynamics.nav.management/mount-navtenant?view=businesscentral-ps) includes the `-ApplicationInsightsConnectionString` and `-ApplicationInsightsKey` parameters. For example:
 
     ```powershell
     Mount-NAVTenant -ServerInstance BC150 -Tenant tenant1 -DatabaseName "Demo Database BC (18-0)" -DatabaseServer localhost -DatabaseInstance BCDEMO -ApplicationInsightsConnectionString InstrumentationKey=11111111-2222-3333-4444-555555555555;IngestionEndpoint=https://westeurope-1.in.applicationinsights.azure.com/
