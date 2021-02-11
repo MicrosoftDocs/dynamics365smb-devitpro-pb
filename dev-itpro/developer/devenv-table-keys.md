@@ -22,7 +22,7 @@ In AL, a key definition is a sequence of one or more field IDs from a table. You
 
 - Primary keys
 
-    Every table has a primary key. There can only be one primary key per table. Primary keys are defined on table objects only. In SQL, table extension objects inherit the primary key of the table object they extend (the base table object). So any key that you define in a table extension object is considered a secondary key. <!--You'll see the primary key if you view the companion table for the table extension object in SQL Server.-->
+    A primary key uniquely identifies each record in a table. Every table has a primary key, and there can only be one primary key per table. Primary keys are defined on table objects only. In SQL, table extension objects inherit the primary key of the table object they extend (the base table object). So any key that you define in a table extension object is considered a secondary key. <!--You'll see the primary key if you view the companion table for the table extension object in SQL Server.-->
 - Secondary keys
 
     Secondary keys create indexes in SQL. They're defined in both table objects and table extension objects. You can define multiple secondary keys for a single table object and table extension object.
