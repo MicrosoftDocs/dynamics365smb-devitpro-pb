@@ -35,7 +35,7 @@ permissionsetextension 50140 "Extended Sales Doc" extends "Sales Person"
     Caption = 'Extended Sales Doc';​
 
     Permissions =​
-        tabledata Currency ID;
+        tabledata Currency = ID;
 }
 ```
 

@@ -33,7 +33,7 @@ The following table describes the permissions that can be assigned for specific 
 |Insert    |You can insert data into this object.| `I` for direct insert permission, `i` for indirect insert permission. |
 |Modify    |You can modify data in this object.| `M` for direct modify permission, `m` for indirect modify permission. |
 |Delete    |You can delete data from this object.| `D` for direct delete permission, `d` for indirect delete permission.| 
-|All  | Specifies all permissions. | `X` for direct `RIMD` permissions, `x` for indirect `rimd` permissions. |
+|Execute  | You can execute this object | `X` for direct execute permissions, `x` for indirect execute permissions. |
 
 These permissions can be combined into a group of permissions for any given object. For example:
 
@@ -41,9 +41,9 @@ These permissions can be combined into a group of permissions for any given obje
 ...
 tabledata Customer = RIMD,
         tabledata "Payment Terms" = RMD,
-        tabledata Currency = RM,
+        tabledata Currency = rimd,        // Full indirect access
         tabledata "Sales Header" = RIM,
-        tabledata "Sales Line" = RIMD;
+        tabledata "Sales Line" = RIMD;    // Full access
 ...
 ```
   
