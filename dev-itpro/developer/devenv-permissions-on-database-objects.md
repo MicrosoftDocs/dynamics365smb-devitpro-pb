@@ -35,6 +35,8 @@ The following table describes the permissions that can be assigned for specific 
 |Delete    |You can delete data from this object.| `D` for direct delete permission, `d` for indirect delete permission.| 
 |Execute  | You can execute this object | `X` for direct execute permissions, `x` for indirect execute permissions. |
 
+<!-- wildcard? -->
+
 These permissions can be combined into a group of permissions for any given object. For example:
 
 ```al
