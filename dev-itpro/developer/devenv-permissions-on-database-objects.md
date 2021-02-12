@@ -33,7 +33,7 @@ The following table describes the permissions that can be assigned for specific 
 |Insert    |You can insert data into this object.| `I` for direct insert permission, `i` for indirect insert permission. |
 |Modify    |You can modify data in this object.| `M` for direct modify permission, `m` for indirect modify permission. |
 |Delete    |You can delete data from this object.| `D` for direct delete permission, `d` for indirect delete permission.| 
-|Wildcard  | The wildcard specifies all permissions. | `X` for direct `RIMD` permissions, `x` for indirect `rimd` permissions. |
+|All  | Specifies all permissions. | `X` for direct `RIMD` permissions, `x` for indirect `rimd` permissions. |
 
 These permissions can be combined into a group of permissions for any given object. For example:
 
