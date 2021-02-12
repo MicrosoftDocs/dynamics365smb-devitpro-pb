@@ -91,6 +91,7 @@ The following properties all apply to the page object, only some of these proper
 |[Permissions Property](devenv-permissions-property.md)||<ul><li>Page object</li></ul>|
 |[PopulateAllFields Property](devenv-populateallfields-property.md)||<ul><li>Page object</li></ul>|
 |[Promoted Property](devenv-promoted-property.md)|X|<ul><li>Action</li></ul>|
+|[PromotedActionCategories Property](devenv-promotedactioncategories-property.md)|X|<ul><li>Page object</li></ul>|
 |[PromotedActionCategoriesML Property](devenv-promotedactioncategoriesml-property.md)|X|<ul><li>Page object</li></ul>|
 |[PromotedCategory Property](devenv-promotedcategory-property.md)|X|<ul><li>Action</li></ul>|
 |[PromotedIsBig Property](devenv-promotedisbig-property.md)|X|<ul><li>Action</li></ul>|
