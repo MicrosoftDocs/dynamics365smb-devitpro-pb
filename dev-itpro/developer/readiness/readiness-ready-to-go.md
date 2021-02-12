@@ -70,7 +70,7 @@ Dec 15, 2020 | Controlling your database sizes |
 Jan 26, 2021 | Power Platform Integration - Power BI |
 Feb 9, 2021 | Power Platform, Power Apps, and Dataverse (formerly known as CDS) |
 Feb 23, 2021 | Performance Toolkit and Telemetry; How to deploy for performance |
-Mar 9, 2021 | Integrating with Microsoft Teams
+Mar 9, 2021 | Integrating with Microsoft Teams 
 |Mar 23, 2021 | Business Central apps in AppSource | 
  
 **Business Central Localization Apps Office Hours Calls**  
