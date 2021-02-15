@@ -54,12 +54,12 @@ When you create security filters, you limit a user's access to data in a table. 
   
 You can resolve potential conflicts with security filters and specify the desired behavior by setting the security filtering mode on Record variables to determine how the security filters are applied.  
 
-Query objects and record objects, including both explicit record variables and implicit records on pages, reports, or XMLports, have a property named [SecurityFiltering](../developer/properties/devenv-securityfiltering-property.md), which describes how security filters are applied. The possible values of the **SecurityFiltering** property are:  
+Query objects and record objects, including both explicit record variables and implicit records on pages, reports, or XMLports, have an option type for methods, [SecurityFilter Option Type](../developer/methods-auto/securityfilter/securityfilter-option.md), which describes how security filters are applied. The possible values of the **SecurityFiltering** property are:  
 
--   **Filtered**  
--   **Validated**  
--   **Ignored**  
--   **Disallowed**  
+- **Filtered**  
+- **Validated**  
+- **Ignored**  
+- **Disallowed**  
 
 ## Filtered
   
@@ -73,11 +73,12 @@ Query objects and record objects, including both explicit record variables and i
 
  An example scenario in which you use the **Validated** value is that one parts purchaser in a warehouse is responsible for only one location and can view and create purchase orders for only that location. However, some purchase orders have lines for multiple locations. Only a parts purchaser who has access to all locations should be allowed to post these purchase orders that have lines for multiple locations. All other purchasers receive an error.  
 
->[!IMPORTANT]
->Before you use the **Validated** value, you should consider the following:
->-  If security filters have been set, then the **Validated** value decreases performance. For more information, see [Performance Impact of Security Filtering Mode](Security-Filters.md#PerformanceImpact).  
->-  The **Validated** value is used mainly for compatibility with the security model in earlier versions of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. We recommend that you use the other modes when you implement your security model.
->-  The **Validated** value is only supported for security filters that consist of a single field. If you set up more than one field on a security filter, you may get undesired results.
+> [!IMPORTANT]
+> Before you use the **Validated** value, you should consider the following:
+>
+> - If security filters have been set, then the **Validated** value decreases performance. For more information, see [Performance Impact of Security Filtering Mode](Security-Filters.md#PerformanceImpact).
+> - The **Validated** value is used mainly for compatibility with the security model in earlier versions of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. We recommend that you use the other modes when you implement your security model.
+> - The **Validated** value is only supported for security filters that consist of a single field. If you set up more than one field on a security filter, you may get undesired results.
 
 ## Ignored
   
