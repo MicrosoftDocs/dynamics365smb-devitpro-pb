@@ -2,7 +2,7 @@
 title: "File Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 12/09/2020
+ms.date: 02/15/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # File Data Type
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Represents a file.
 
@@ -40,7 +40,7 @@ The following methods are available on instances of the File data type.
 
 |Method name|Description|
 |-----------|-----------|
-|[Close()](file-close-method.md)|Closes a file that has been opened by the Open method (File).|
+|[Close()](file-close-method.md)|Closes a file that has been opened by the OPEN method (File).|
 |[Create(String [, TextEncoding])](file-create-method.md)|Creates an Automation object.|
 |[CreateInStream(InStream)](file-createinstream-method.md)|Creates an InStream object for a file. This enables you to import or read data from the file.|
 |[CreateOutStream(OutStream)](file-createoutstream-method.md)|Creates an OutStream object for a file. This enables you to export or write data to the file.|
@@ -74,7 +74,7 @@ The following methods are available on instances of the File data type.
 |[Write(RecordId)](file-write-recordid-method.md)|Writes to an MS-DOS encoded file or binary file.|
 |[Write(String)](file-write-string-method.md)|Writes to an MS-DOS encoded file or binary file.|
 |[Write(Any)](file-write-joker-method.md)|Writes to an MS-DOS encoded file or binary file.|
-|[WriteMode([Boolean])](file-writemode-method.md)|Use this method before you use Open method (File)] to set or test whether you can write to a file in later calls.|
+|[WriteMode([Boolean])](file-writemode-method.md)|Use this method before you use OPEN method (File)] to set or test whether you can write to a file in later calls.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also

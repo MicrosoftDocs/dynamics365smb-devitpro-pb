@@ -2,7 +2,7 @@
 title: "HttpRequestMessage.Method Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 02/15/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # HttpRequestMessage.Method Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Gets or sets the method type as defined in the HTTP standard.
 
@@ -38,7 +38,7 @@ The HTTP method used by the request message.
 ## Return Value
 *CurrentMethod*
 &emsp;Type: [String](../string/string-data-type.md)
-The HTTP method used by the request message. The default is the Get method.
+The HTTP method used by the request message. The default is the GET method.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
