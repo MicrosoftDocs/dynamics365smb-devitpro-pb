@@ -150,7 +150,7 @@ The method `DMY2DATE` is an example of a method that can be called by using a va
 NewDate := DMY2DATE(5, 11, 1992); //Returns the date November 5, 1992  
 ```  
   
-Depending on the use of the `DMY2DATE` method, one, two, or three parameters can be passed to the method because the second and third parameters are optional. When the second and third parameters are not used, values from the system date are used as default.  
+Depending on the use of the `DMY2DATE` method, one, two, or three parameters can be passed to the method because the second and third parameters are optional. When the second and third parameters are not used, values from the system date are used as default values.  
   
 ## Example 4  
 
