@@ -5,7 +5,7 @@ author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 01/15/2021
 ms.reviewer: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
