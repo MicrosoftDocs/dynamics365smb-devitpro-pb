@@ -2,7 +2,7 @@
 title: "Working with AL methods"
 description: "Methods also known as procedures are a fundamental programming element in AL for Business Central."
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 02/15/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -36,7 +36,7 @@ Typing the shortcut `tprocedure` will create the basic structure for a method wh
 
 ### Attributes (optional)
 
-An attribute is modifier on a method declaration that specifies information that controls the method's use and behavior. For example, decorating a method with the Integration attribute sets the method to be an event publisher. An attribute can have one or more arguments that set properties for the method instance.
+An attribute is modifier on a method declaration that specifies information that controls the method's use and behavior. Adding an attribute on a method declaration is also known as *decorating* a method. For example, decorating a method with the Integration attribute sets the method to be an event publisher. An attribute can have one or more arguments that set properties for the method instance.
 
 Attributes are placed before the method. For information about the available attributes, see [Method Attributes](methods/devenv-method-attributes.md).
 
