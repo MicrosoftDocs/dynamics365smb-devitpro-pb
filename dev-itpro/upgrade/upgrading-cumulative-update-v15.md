@@ -167,13 +167,19 @@ Also, to ensure that the existing published extensions work on the new platform,
     In a multitenant deployment, run this cmdlet against the application database.
 
     ```powershell
-    Invoke-NAVApplicationDatabaseConversion -DatabaseServer <database server name>\<database server instance> -DatabaseName "<database name>"
+    Invoke-NAVApplicationDatabaseConversion -DatabaseServer <database server name>\<database server instance> -DatabaseName "<database name>" [-Force]
     ```
 
-    For example:
+    For example, in a single tenant deployment:
 
     ```powershell
     Invoke-NAVApplicationDatabaseConversion -DatabaseServer .\BCDEMO -DatabaseName "Demo Database BC (15-0)"
+    ```
+
+    In a multitenant deployment, run this cmdlet against the application database and use the `-Force` parameter. For example:
+
+    ```powershell
+    Invoke-NAVApplicationDatabaseConversion -DatabaseServer .\BCDEMO -DatabaseName "BC15 Application" -Force
     ```
 
     When completed, a message like the following displays in the console:
@@ -195,7 +201,13 @@ Also, to ensure that the existing published extensions work on the new platform,
 
 ## Connect server instance to database
 
-1. Connect the server instance to connect to the database.
+1. (Multitenant only) Enable the server instance as a multitenant instance:
+
+    ```powershell
+    Set-NAVServerConfiguration -ServerInstance <server instance> -KeyName Multitenant -KeyValue true
+    ```
+
+2. Connect the server instance to connect to the database.
 
     ```powershell
     Set-NAVServerConfiguration -ServerInstance <server instance> -KeyName DatabaseName -KeyValue "<database name>"
@@ -203,7 +215,7 @@ Also, to ensure that the existing published extensions work on the new platform,
 
     In a multitenant deployment, the database is the application database. For more information, see [Connecting a Server Instance to a Database](../administration/connect-server-to-database.md).
 
-2. Restart the server instance.
+3. Restart the server instance.
 
     ```powershell
     Restart-NAVServerInstance -ServerInstance <server instance>
@@ -292,12 +304,21 @@ To install an extension, you use the [Install-NAVApp cmdlet](/powershell/module/
     ```powershell
     Install-NAVApp -ServerInstance <server instance> -Name "Base Application" -Version <extension version>
     ```
-    Replace `<extension version>` with the exact version of the published System Application.
-3. Install other extensions, including Microsoft and third-party extensions.
-    
+    Replace `<extension version>` with the exact version of the published Base Application.
+
+3. Install the Application extension as needed.
+
+    ```powershell
+    Install-NAVApp -ServerInstance <server instance> -Name "Application" -Version <extension version>
+    ```
+    Replace `<extension version>` with the exact version of the published Application extension.
+
+4. Install other extensions, including Microsoft and third-party extensions.
+
     ```powershell
     Install-NAVApp -ServerInstance <server instance name> -Name <extension name> -Version <extension version>
     ```
+
 At this point, your solution has been updated to the latest platform.
 
 ## <a name="Application"></a> APPLICATION UPDATE

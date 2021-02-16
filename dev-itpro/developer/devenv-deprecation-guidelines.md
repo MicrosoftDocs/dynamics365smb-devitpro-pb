@@ -63,7 +63,7 @@ When we obsolete code, we:
             Access = Internal;
             Caption = 'Aggregated Assisted Setup';
         #if CLEAN16
-            OsboleteState = Removed;
+            ObsoleteState = Removed;
         #else
             ObsoleteState = Pending;
         #endif
