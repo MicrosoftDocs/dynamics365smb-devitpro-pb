@@ -2,7 +2,7 @@
 title: "AL Simple Statements"
 description: "Describes the simple statements in AL for Business Central with examples"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 02/16/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -36,8 +36,12 @@ Count := 1;
 Amount := 2 * Price;  
 ```  
 
-### Example  
+### Example
+
 The following example assigns the return value of the [Open Method (File)](methods-auto/file/file-open-method.md) to a Boolean variable that you have defined.  
+
+> [!NOTE]
+> This method is supported only in Business Central on-premises.
 
 ```AL  
 OK := TestFile.Open('C:\temp\simple.xml');  
