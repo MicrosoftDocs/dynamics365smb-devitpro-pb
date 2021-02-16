@@ -5,7 +5,7 @@ author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 02/05/2021
 ms.reviewer: solsen
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: grobyns
 ---
@@ -63,7 +63,7 @@ When we obsolete code, we:
             Access = Internal;
             Caption = 'Aggregated Assisted Setup';
         #if CLEAN16
-            OsboleteState = Removed;
+            ObsoleteState = Removed;
         #else
             ObsoleteState = Pending;
         #endif

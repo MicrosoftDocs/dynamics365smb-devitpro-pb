@@ -7,7 +7,7 @@ ms.custom: na
 ms.date: 10/01/2020
 ms.reviewer: na
 ms.service: "dynamics365-business-central"
-ms.topic: article
+ms.topic: conceptual
 ---
 
 # Registering Business Central On-Premises in Azure AD for Integrating with Other Services

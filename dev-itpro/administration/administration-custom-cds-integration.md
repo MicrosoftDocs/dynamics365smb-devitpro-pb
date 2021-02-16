@@ -4,7 +4,7 @@ description: Learn how to integrate your extension with Microsoft Dataverse.
 author: bholtorf
 ms.custom: na
 ms.reviewer: solsen
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: bholtorf
 ms.date: 10/29/2020
