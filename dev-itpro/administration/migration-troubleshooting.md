@@ -134,19 +134,19 @@ If you experience problems with Microsoft Integration Runtime, also see [Trouble
 
     |Option|When to use|
     |------|-----------|
-    |Dynamics 365 Business Central|Select this option if you're migrating from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)]  version that matches the version of your online environment, for example, version 17 to version 17|
-    |Dynamics 365 Business Central - Previous Version|Select this option if you're migrating from the previous major version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)], for example, version 15 to version 17.|
-    |Dynamics GP|Select this option if you're migrating from the Dynamics GP product.| 
+    |Dynamics 365 Business Central|Select this option if you're migrating from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)]  latest version, currently version 17|
+    |Dynamics 365 Business Central - Previous Version|Select this option if you're migrating from the an earlier supported version. [!INCLUDE [bc-cloud-versions](../includes/bc-cloud-versions.md)]|
+    |Dynamics GP|Select this option if you're migrating from the Dynamics GP product.|
 
 - When migrating data from [!INCLUDE[prod_short](../developer/includes/prod_short.md)], check the `applicationVersion` field in the `$ndo$tenantdatabaseproperty` table. Set this field to the correct version in the SQL if it's blank or not up to date. The migration code uses the field's value for the following reasons:
 
-    - Verifies that you're migrating from a supported version
-    - Verifies that you've selected the right product version in the **Data Migration Setup** assisted setup, like Dynamics 365 Business Central or Dynamics 365 Business Central - Previous Version.
-    - Determines which upgrade code will be executed.
+  - Verifies that you're migrating from a supported version
+  - Verifies that you've selected the right product version in the **Data Migration Setup** assisted setup, like Dynamics 365 Business Central or Dynamics 365 Business Central - Previous Version.
+  - Determines which upgrade code will be executed.
 
     If that field is blank, the migration can't run.  
 
-## Disabling the Cloud Migration 
+## Disabling the Cloud Migration
 
 > Database: online
 
