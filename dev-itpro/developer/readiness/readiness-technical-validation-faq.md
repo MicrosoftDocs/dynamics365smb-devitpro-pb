@@ -1,7 +1,7 @@
 ---
-title: "Marketing Validation FAQ"
-description: "The marketing validation FAQ for Business Central apps"
-author: SusanneWindfeldPedersen
+title: "Technical Validation FAQ"
+description: "The technical validation FAQ for Business Central apps"
+author: EmmaNielsson
 ms.custom: na
 ms.date: 10/01/2020
 ms.reviewer: solsen
