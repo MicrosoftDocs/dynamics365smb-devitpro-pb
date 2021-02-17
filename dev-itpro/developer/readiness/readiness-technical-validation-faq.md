@@ -3,52 +3,36 @@ title: "Technical Validation FAQ"
 description: "The technical validation FAQ for Business Central apps"
 author: EmmaNielsson
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 02/17/2021
 ms.reviewer: solsen
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
-ms.author: solsen
+ms.author: ENielsson
 ---
 
-# Marketing Validation FAQ
+# Technical Validation FAQ
  
 
-## Where do I state the countries, editions and languages that my offer supports?  
-You are required to state the countries, editions and languages that your offer supports in the very bottom of your offer’s description text. You can use the following format:  
-**Supported Editions:**  
-    The app supports the Essentials and Premium Editions of Microsoft Dynamics 365 Business Central.  
-**Supported Countries:**  
-    Canada, Mexico and United States  
-**Supported Languages:**
-    This app is available in English (United States) and Spanish (Mexico). 
+### How many automated tests do we need to run for validation? How high must the test coverage be?  
+Test automation is something we expect you to run, to test your app and to make sure that the quality of your app is high. We do not run tests of your app in our environment nor do we have a set value i.e., we do not state that you need to have a code coverage of a certain percentage. Instead, we rely on you to test your app properly to give your customers a good experience.     
  
-## Do you have any tips and tricks for what I should write in the description text?  
+### Is there a forum, where we can ask questions about AppSource submissions and get information about what's new when it comes to AppSource apps and validation? 
+Yes, you can join our AppSource group in our Yammer network at [aka.ms/BCYammer](http://aka.ms/bcyammer) (note that you need to be a Microsoft partner to do so). In this group, you will find announcements from Microsoft together with discussions around various AppSource related topics. If you are having problems connecting, please email dyn365bep@microsoft.com 
 
-Yes. We have detailed guidelines and good advice about that [here](readiness-checklist-c-offer-description.md).  
 
-## How do I refer correctly to the product?  
+### Can we create apps with the same ID several times?  
+Each unique codebase have one unique ID. If you have four apps in AppSource, you need to have four unique IDs for these apps. Otherwise you'll get conflicts. 
 
-When you mention the product, both throughout your description text, as well as in your marketing material, you need to refer to the product, in the following way:  
+### What if we already have an app on AppSource but we need to create the same app for another country; can we then have the same app ID for two different apps targeting two different countries?  
+If they are different apps (different code) they should have different identity. Identity is used in e.g., app management, dependencies, support cases and telemetry. If reused across different apps, identity uniqueness is lost. Another approach could be a common shared (internal/library) app across countries (with one app identity) and localized functionality as extensions on top (with their own identity). 
  
-**First mentions:** Microsoft Dynamics 365 Business Central  
- 
-**Secondary mentions:** Dynamics 365 Business Central  
- 
-**Subsequent mentions:** [!INCLUDE[prod_short](../includes/prod_short.md)] 
- 
-Therefore, you cannot use any abbreviations such as “MS Dyn 365 BC” or “Microsoft Dynamics NAV”. 
- 
-## What are the requirements for my offer’s help and support page?
+### How can we issue hotfixes fast once our app is live in AppSource? Let's say we have customers live on our app and we need to deloy something instantly; do we need to wait an entire calendar week for that to be validated?  
+Normally it wont take an entire calendar week. We are typically way faster and we will generally be much faster at passing an app than failing an app. We run the app trough automated testing and if an app passes, it's just a few clicks and it will be live within 6 hours after it has been passed. Our recommendation is to make sure your app passes (you fulfilled all the requirements inclucing self-validation), then it will be a fast experience. From the moment we receive the app it takes between 30 min to 5 hours to validate (depending on the number of countries you are targetting) and then it takes about 6 hours until it reaches production. In case you need to deploy an urgent hotfix you should email d365val@microsoft.com and we can try to expedite the submission.
+In the future, we aim to offer you full control and visibility over the validation process so that you can upload your app to production, see the validation status and then push it to the environments that are waiting for the hotfix, but this is within the next 2-3 releases timeline.
 
-You are required to submit two distinct pages for support and help i.e. they cannot be the same. You can see what you have to include on both pages in the table below.  
+### Can I use the Microsoft Dynamics 365 Business Central logo?  
 
-|Help|Support|
-|----|-------|
-|Learning material such as FAQs, step by step guides, video tutorials, webinars etc.|At least two contact options (e.g. e-mail, phone, chat) and a defined SLA for how much time it takes before you answer to support inquires.|
-
-## Can I use the Microsoft Dynamics 365 Business Central logo?  
-
-No, you cannot use the [!INCLUDE[prod_short](../includes/prod_short.md)] logo, as it’s a Microsoft trademarked logo. However, you can use the “Get it from Microsoft AppSource” badge, which you can find [here](https://appsource.microsoft.com/blogs/new-get-it-from-badging-for-microsoft-appsource-and-azure-marketplace-available-in-the-marketing-resources-guide). 
+No
 
 ## See Also
 
