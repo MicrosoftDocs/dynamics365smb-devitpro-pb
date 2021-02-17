@@ -31,11 +31,14 @@ Represents a user resource type in [!INCLUDE[d365fin_long_md](../developer/inclu
 |state            |string|Minor version of the extension.     |
 |expiryDate|DateTimeOffset|Specifies the installation status.|
 
+
 ## Relationships / Navigation properties
 
-The navigational property to userGroupMembers.  
-The navigational property to userPermissions.
-The navigational property to scheduledJobs.
+| Navigation property	      | Type |Description                             |
+|:----------------|:-----|:---------------------------------------|
+|[userGroupMembers](dynamics-microsoft-automation-usergroupmember.md)|userGroupMember|Gets userGroupMembers.|
+|[userPermissions](dynamics-microsoft-automation-userpermission.md)|userPermission|Gets available userPermissions.|
+|[scheduledJobs](dynamics-microsoft-automation-scheduledjob.md)|scheduledJob|Gets available scheduledJobs.|
 
 ## Bound Actions
 
