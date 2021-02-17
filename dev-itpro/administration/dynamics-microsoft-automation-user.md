@@ -32,8 +32,16 @@ Represents a user resource type in [!INCLUDE[d365fin_long_md](../developer/inclu
 |expiryDate|DateTimeOffset|Specifies the installation status.|
 
 ## Relationships / Navigation properties
-The navigational property to userGroupMembers.
+
+The navigational property to userGroupMembers.  
 The navigational property to userPermissions.
+The navigational property to scheduledJobs.
+
+## Bound Actions
+
+| Actions         | Return Type  |Description|
+|:---------------|:-------------|:----------|
+|[Microsoft.NAV.createNewUsersFromAzureAD](dynamics-microsoft-automation-configurationpackage-post.md)|none|.|
 
 ## JSON representation
 Here is a JSON representation of the user.
