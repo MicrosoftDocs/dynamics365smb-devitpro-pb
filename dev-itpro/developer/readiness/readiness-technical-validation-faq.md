@@ -1,13 +1,13 @@
 ---
 title: "Technical Validation FAQ"
 description: "The technical validation FAQ for Business Central apps"
-author: EmmaNielsson
+author: a-emniel
 ms.custom: na
 ms.date: 02/17/2021
 ms.reviewer: solsen
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
-ms.author: ENielsson
+ms.author: a-emniel
 ---
 
 # Technical Validation FAQ
