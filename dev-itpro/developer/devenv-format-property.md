@@ -117,7 +117,7 @@ This table shows the standard Decimal formats with the regional setting of a Eur
 |\<Sign>\<Integer>\<Decimals>\<Comma,.>|2|-76543.21|  
 |\<Integer Thousand>\<Decimals>\<Sign,1>|3|76.543,21-|  
 |\<Integer>\<Decimals>\<Sign,1>|4|76543,21-|  
-|\<XML format>\|9|-76543.21|  
+|\<XML format>|9|-76543.21|  
   
 The following table shows the standard Decimal formats with the regional setting of English \(US\).  
   
@@ -128,7 +128,7 @@ The following table shows the standard Decimal formats with the regional setting
 |\<Sign>\<Integer>\<Decimals>|2|-76543.21|  
 |\<Integer Thousand>\<Decimals>\<Sign,1>|3|76,543.21-|  
 |\<Integer>\<Decimals>\<Sign,1>|4|76543.21-|  
-|\<XML format>\|9|-76543.21|  
+|\<XML format>|9|-76543.21|  
   
 ## Standard Date Formats  
 The following table shows the standard Date formats with the regional setting of a European country/region.  
@@ -143,7 +143,7 @@ The following table shows the standard Date formats with the regional setting of
 |\<Closing>\<Day,2>\<Month,2>\<Year>|5|050403|  
 |\<Closing>\<Year>\<Month,2>\<Day,2>|6|030405|  
 |\<Day,2>\<Filler Character, >. \<Month Text,3> \<Year4>|7|5. Apr 2003|  
-|\<XML format>\|9|2003-04-05|  
+|\<XML format>|9|2003-04-05|  
   
 The following table shows the standard Date formats with the regional setting of English \(US\).  
   
@@ -157,7 +157,7 @@ The following table shows the standard Date formats with the regional setting of
 |\<Closing>\<Month,2>\<Day,2>\<Year>|5|040503|  
 |\<Closing>\<Year>\<Month,2>\<Day,2>|6|030405|  
 |\<Day,2>\<Filler Character, >. \<Month Text,3> \<Year4>|7|5. Apr 2003|  
-|\<XML format>\|9|2003-04-05|  
+|\<XML format>|9|2003-04-05|  
   
 ## Standard Time Formats    
 The following table shows the standard Time formats with the regional setting of a European country/region.  
@@ -167,7 +167,7 @@ The following table shows the standard Time formats with the regional setting of
 |\<Hours24>.\<Minutes,2>.\<Seconds,2>|0|4.35.55|  
 |\<Hours24>.\<Minutes,2>.\<Seconds,2>\<Second dec.>|1|4.35.55.553|  
 |\<Hours24,2>\<Filler Character,0>\<Minutes,2>\<Seconds,2> \<Second dec.>\<Comma,.>T|2|043555.553T|  
-|\<XML format>\|9|04:35:55.553|  
+|\<XML format>|9|04:35:55.553|  
   
 The following table shows the standard Time formats with the regional setting of English \(US\).  
   
@@ -176,7 +176,7 @@ The following table shows the standard Time formats with the regional setting of
 |\<Hours12>:\<Minutes,2>:\<Seconds,2>\<Second dec.> \<AM/PM>|0|4:35:55 AM|  
 |\<Hours12>:\<Minutes,2>:\<Seconds,2>\<Second dec.> \<AM/PM>|1|4:35:55.553 AM|  
 |\<Hours24,2>\<Filler Character,0>\<Minutes,2>\<Seconds,2> \<Second dec.>T|2|043555 .553T|  
-|\<XML format>\|9|04:35:55.553|  
+|\<XML format>|9|04:35:55.553|  
 
 ## Standard DateTime Formats  
 The following table shows the standard DateTime formats with the regional setting of a European country/region.  
@@ -187,7 +187,7 @@ The following table shows the standard DateTime formats with the regional settin
 |\<Day,2>-\<Month,2>-\<Year> \<Hours24,2>.\<Minutes,2>.\<Seconds,2>\<Second dec>|1|05-04-03 04:35:55,553|  
 |\<Day,2>-\<Month,2>-\<Year> \<Hours24,2>.\<Minutes,2>|2|05-04-03 04:35|  
 |\<Day,2>-\<Month,2>-\<Year> \<Hours24,2>.\<Minutes,2>.\<Seconds,2>|3|05-04-03 04:35:55|  
-|\<XML format>\ **Warning:**  A DateTime is stored in the database as Coordinated Universal Time \(UTC\). For example, on a computer in the \(UTC+01:00\) Brussels, Copenhagen, Madrid, Paris time zone, UTC is one hour earlier than local time on the computer and probably two hours earlier during summer time.|9|2003-04-05T03:35:55.553Z|  
+|\<XML format> **Warning:**  A DateTime is stored in the database as Coordinated Universal Time \(UTC\). For example, on a computer in the \(UTC+01:00\) Brussels, Copenhagen, Madrid, Paris time zone, UTC is one hour earlier than local time on the computer and probably two hours earlier during summer time.|9|2003-04-05T03:35:55.553Z|  
   
 The following table shows the standard DateTime formats with the regional setting of English \(US\).  
   
@@ -197,7 +197,7 @@ The following table shows the standard DateTime formats with the regional settin
 |\<Month,2>/\<Day,2>/\<Year> \<Hours12,2>:\<Minutes,2>:\<Seconds,2>\<Second dec> \<AM/PM>|1|04/05/03 04:35:55.553 AM|  
 |\<Month,2>/\<Day,2>/\<Year> \<Hours12,2>:\<Minutes,2> \<AM/PM>|2|04/05/03 04:35 AM|  
 |\<Month,2>/\<Day,2>/\<Year> \<Hours12,2>:\<Minutes,2>:\<Seconds,2> \<AM/PM>|3|04/05/03 04:35:55 AM|  
-|\<XML format>\ **Warning:**  A DateTime is stored in the database as Coordinated Universal Time \(UTC\). For example, on a computer in the \(UTC-08:00\) Pacific Time zone, UTC is eight hours later than local time on the computer.|9|2003-04-05T12:35:55.553Z|  
+|\<XML format> **Warning:**  A DateTime is stored in the database as Coordinated Universal Time \(UTC\). For example, on a computer in the \(UTC-08:00\) Pacific Time zone, UTC is eight hours later than local time on the computer.|9|2003-04-05T12:35:55.553Z|  
 
 ## Standard Integer Formats  
 
@@ -206,7 +206,7 @@ The following table shows the standard DateTime formats with the regional settin
 |\<Sign>\<Integer>|0|-567|  
 |\<Sign>\<Integer>|1|-567|  
 |\<Sign>\<Integer>|2|-567|  
-|\<XML format>\|9|-567|  
+|\<XML format>|9|-567|  
 
 ## Standard Boolean Formats  
 
@@ -215,7 +215,7 @@ The following table shows the standard DateTime formats with the regional settin
 |\<Text>|0|True/False|  
 |\<Text>|1|True/False|  
 |\<Number>|2|1/0|  
-|\<XML format>\|9|true/false|  
+|\<XML format>|9|true/false|  
 
 ## Standard GUID Formats  
 
@@ -228,7 +228,7 @@ The following table shows the standard DateTime formats with the regional settin
 |<4byte>-<2byte>-<2byte>-<2byte>-<6byte>|4|EA48A3E0-48E0-4AB7-B1A1-E3EA85BF1B75|  
 |(<4byte>-<2byte>-<2byte>-<2byte>-<6byte>)|5|(EA48A3E0-48E0-4AB7-B1A1-E3EA85BF1B75)|  
 |{0X<4byte>,0X<2byte>,0X<2byte>,{0X<1byte>,0X<1byte>,0X<1byte>,0X<1byte>,<br/>0X<1byte>,0X<1byte>,0X<1byte>,0X<1byte>}}|6|{0XEA48A3E0,0X48E0,0X4AB7,{0XB1,0XA1,0XE3,0XEA,0X85,0XBF,0X1B,0X75}}|  
-|\<XML format>\|9|{EA48A3E0-48E0-4AB7-B1A1-E3EA85BF1B75}|  
+|\<XML format>|9|{EA48A3E0-48E0-4AB7-B1A1-E3EA85BF1B75}|  
 
 ## Standard Enum Formats  
 
@@ -237,7 +237,7 @@ The following table shows the standard DateTime formats with the regional settin
 |\<Text>|0|Bronze|  
 |\<Text>|1|Bronze|  
 |\<Number>|2|1|  
-|\<XML format>\|9|1|  
+|\<XML format>|9|1|  
 
 ## Standard Option Formats  
 |**Option**|**Format**|**Example**|  
@@ -245,7 +245,7 @@ The following table shows the standard DateTime formats with the regional settin
 |\<Text>|0|Blue|  
 |\<Text>|1|Blue|  
 |\<Number>|2|1|  
-|\<XML format>\|9|1|  
+|\<XML format>|9|1|  
 
 ## Standard XML and String Formats  
 Standard format 9 is used to display the data in the standard XML formats.  
