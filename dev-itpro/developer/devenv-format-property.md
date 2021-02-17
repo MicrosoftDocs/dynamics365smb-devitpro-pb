@@ -135,29 +135,29 @@ The following table shows the standard Date formats with the regional setting of
   
 |**Europe Date**|**Format**|**Example**|  
 |---------------------|----------------|-----------------|  
-|\<Closing>\<Day,2>-\<Month,2>-\<Year>|0|05-04-03|  
-|\<Closing>\<Day,2>-\<Month,2>-\<Year>|1|05-04-03|  
-|\<Day,2>\<Month,2>\<Year>\<Closing>D|2|050403D|  
-|\<Closing>\<Year>-\<Month,2>-\<Day,2>|3|03-04-05|  
-|\<Closing>\<Day>. \<Month Text> \<Year4>|4|5. April 2003|  
-|\<Closing>\<Day,2>\<Month,2>\<Year>|5|050403|  
-|\<Closing>\<Year>\<Month,2>\<Day,2>|6|030405|  
-|\<Day,2>\<Filler Character, >. \<Month Text,3> \<Year4>|7|5. Apr 2003|  
-|\<XML format>|9|2003-04-05|  
+|\<Closing>\<Day,2>-\<Month,2>-\<Year>|0|05-04-21|  
+|\<Closing>\<Day,2>-\<Month,2>-\<Year>|1|05-04-21|  
+|\<Day,2>\<Month,2>\<Year>\<Closing>D|2|050421D|  
+|\<Closing>\<Year>-\<Month,2>-\<Day,2>|3|21-04-05|  
+|\<Closing>\<Day>. \<Month Text> \<Year4>|4|5. April 2021|  
+|\<Closing>\<Day,2>\<Month,2>\<Year>|5|050421|  
+|\<Closing>\<Year>\<Month,2>\<Day,2>|6|210405|  
+|\<Day,2>\<Filler Character, >. \<Month Text,3> \<Year4>|7|5. Apr 2021|  
+|\<XML format>|9|2021-04-05|  
   
 The following table shows the standard Date formats with the regional setting of English \(US\).  
   
 |**US Date**|**Format**|**Example**|  
 |-----------------|----------------|-----------------|  
-|\<Closing>\<Month,2>/\<Day,2>/\<Year>|0|04/05/03|  
-|\<Closing>\<Month,2>/\<Day,2>/\<Year>|1|04/05/03|  
-|\<Month,2>\<Day,2>\<Year>\<Closing>D|2|040503D|  
-|\<Closing>\<Year>/\<Month,2>/\<Day,2>|3|03/04/05|  
-|\<Month Text> \<Closing>\<Day>, \<Year4>|4|April 5, 2003|  
-|\<Closing>\<Month,2>\<Day,2>\<Year>|5|040503|  
-|\<Closing>\<Year>\<Month,2>\<Day,2>|6|030405|  
-|\<Day,2>\<Filler Character, >. \<Month Text,3> \<Year4>|7|5. Apr 2003|  
-|\<XML format>|9|2003-04-05|  
+|\<Closing>\<Month,2>/\<Day,2>/\<Year>|0|04/05/21|  
+|\<Closing>\<Month,2>/\<Day,2>/\<Year>|1|04/05/21|  
+|\<Month,2>\<Day,2>\<Year>\<Closing>D|2|040521D|  
+|\<Closing>\<Year>/\<Month,2>/\<Day,2>|3|21/04/05|  
+|\<Month Text> \<Closing>\<Day>, \<Year4>|4|April 5, 2021|  
+|\<Closing>\<Month,2>\<Day,2>\<Year>|5|040521|  
+|\<Closing>\<Year>\<Month,2>\<Day,2>|6|210405|  
+|\<Day,2>\<Filler Character, >. \<Month Text,3> \<Year4>|7|5. Apr 2021|  
+|\<XML format>|9|2021-04-05|  
   
 ## Standard Time Formats    
 The following table shows the standard Time formats with the regional setting of a European country/region.  
@@ -183,21 +183,21 @@ The following table shows the standard DateTime formats with the regional settin
   
 |**Europe DateTime**|**Format**|**Example**|  
 |-------------------------|----------------|-----------------|  
-|\<Day,2>-\<Month,2>-\<Year> \<Hours24,2>.\<Minutes,2>|0|05-04-03 04:35|  
-|\<Day,2>-\<Month,2>-\<Year> \<Hours24,2>.\<Minutes,2>.\<Seconds,2>\<Second dec>|1|05-04-03 04:35:55,553|  
-|\<Day,2>-\<Month,2>-\<Year> \<Hours24,2>.\<Minutes,2>|2|05-04-03 04:35|  
-|\<Day,2>-\<Month,2>-\<Year> \<Hours24,2>.\<Minutes,2>.\<Seconds,2>|3|05-04-03 04:35:55|  
-|\<XML format> **Warning:**  A DateTime is stored in the database as Coordinated Universal Time \(UTC\). For example, on a computer in the \(UTC+01:00\) Brussels, Copenhagen, Madrid, Paris time zone, UTC is one hour earlier than local time on the computer and probably two hours earlier during summer time.|9|2003-04-05T03:35:55.553Z|  
+|\<Day,2>-\<Month,2>-\<Year> \<Hours24,2>.\<Minutes,2>|0|05-04-21 04:35|  
+|\<Day,2>-\<Month,2>-\<Year> \<Hours24,2>.\<Minutes,2>.\<Seconds,2>\<Second dec>|1|05-04-21 04:35:55,553|  
+|\<Day,2>-\<Month,2>-\<Year> \<Hours24,2>.\<Minutes,2>|2|05-04-21 04:35|  
+|\<Day,2>-\<Month,2>-\<Year> \<Hours24,2>.\<Minutes,2>.\<Seconds,2>|3|05-04-21 04:35:55|  
+|\<XML format> **Warning:**  A DateTime is stored in the database as Coordinated Universal Time \(UTC\). For example, on a computer in the \(UTC+01:00\) Brussels, Copenhagen, Madrid, Paris time zone, UTC is one hour earlier than local time on the computer and probably two hours earlier during summer time.|9|2021-04-05T03:35:55.553Z|  
   
 The following table shows the standard DateTime formats with the regional setting of English \(US\).  
   
 |**US DateTime**|**Format**|**Example**|  
 |---------------------|----------------|-----------------|  
-|\<Month,2>/\<Day,2>/\<Year> \<Hours12,2>:\<Minutes,2> \<AM/PM>|0|04/05/03 04:35 AM|  
-|\<Month,2>/\<Day,2>/\<Year> \<Hours12,2>:\<Minutes,2>:\<Seconds,2>\<Second dec> \<AM/PM>|1|04/05/03 04:35:55.553 AM|  
-|\<Month,2>/\<Day,2>/\<Year> \<Hours12,2>:\<Minutes,2> \<AM/PM>|2|04/05/03 04:35 AM|  
-|\<Month,2>/\<Day,2>/\<Year> \<Hours12,2>:\<Minutes,2>:\<Seconds,2> \<AM/PM>|3|04/05/03 04:35:55 AM|  
-|\<XML format> **Warning:**  A DateTime is stored in the database as Coordinated Universal Time \(UTC\). For example, on a computer in the \(UTC-08:00\) Pacific Time zone, UTC is eight hours later than local time on the computer.|9|2003-04-05T12:35:55.553Z|  
+|\<Month,2>/\<Day,2>/\<Year> \<Hours12,2>:\<Minutes,2> \<AM/PM>|0|04/05/21 04:35 AM|  
+|\<Month,2>/\<Day,2>/\<Year> \<Hours12,2>:\<Minutes,2>:\<Seconds,2>\<Second dec> \<AM/PM>|1|04/05/21 04:35:55.553 AM|  
+|\<Month,2>/\<Day,2>/\<Year> \<Hours12,2>:\<Minutes,2> \<AM/PM>|2|04/05/21 04:35 AM|  
+|\<Month,2>/\<Day,2>/\<Year> \<Hours12,2>:\<Minutes,2>:\<Seconds,2> \<AM/PM>|3|04/05/21 04:35:55 AM|  
+|\<XML format> **Warning:**  A DateTime is stored in the database as Coordinated Universal Time \(UTC\). For example, on a computer in the \(UTC-08:00\) Pacific Time zone, UTC is eight hours later than local time on the computer.|9|2021-04-05T12:35:55.553Z|  
 
 ## Standard Integer Formats  
 
