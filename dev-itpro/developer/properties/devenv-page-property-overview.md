@@ -28,12 +28,12 @@ The following properties all apply to the page object, only some of these proper
 |[AdditionalSearchTerms Property](devenv-additionalsearchterms-property.md)||<ul><li>Page object</li></ul>|
 |[AdditionalSearchTermsML Property](devenv-additionalsearchtermsml-property.md)||<ul><li>Page object</li></ul>|
 |[ApplicationArea Property](devenv-applicationarea-property.md)|X (see next column)|<ul><li>Page object (cannot be specified for a page extension object)</li><li>Field control</li><li>Part control</li><li>Action</li></ul>|
-|[AssistEdit Property](devenv-assistedit-property.md)||<ul><li>Field control</li></ul>|
+|[AssistEdit Property](devenv-assistedit-property.md)|X|<ul><li>Field control</li></ul>|
 |[AutoFormatExpression Property](devenv-autoformatexpression-property.md)||<ul><li>Field control</li></ul>|
 |[AutoFormatType Property](devenv-autoformattype-property.md)||<ul><li>Field control</li></ul>|
 |[AutoSplitKey Property](devenv-autosplitkey-property.md)||<ul><li>Page object</li></ul>|
 |[BlankNumbers Property](devenv-blanknumbers-property.md)||<ul><li>Field control</li></ul>|
-|[BlankZero Property](devenv-blankzero-property.md)||<ul><li>Field control</li></ul>|
+|[BlankZero Property](devenv-blankzero-property.md)|X|<ul><li>Field control</li></ul>|
 |[CaptionML Property](devenv-captionml-property.md)|X|<ul><li>Page object</li><li>Container control</li><li>Group control</li><li>Field control</li><li>Part control</li><li>ActionGroup</li><li>Action</li><li>Separator</li></ul>|
 |[CaptionClass Property](devenv-captionclass-property.md)|X|<ul><li>Field control</li></ul>|
 |[CharAllowed Property](devenv-charallowed-property.md)||<ul><li>Field control</li></ul>|
@@ -48,8 +48,8 @@ The following properties all apply to the page object, only some of these proper
 |[DeleteAllowed Property](devenv-deleteallowed-property.md)||<ul><li>Page object</li></ul>|
 |[Description Property](devenv-description-property.md)|X|<ul><li>Page object</li><li>Container control</li><li>Group control</li><li>Field control</li><li>Part control</li><li>ActionGroup</li><li>Action</li></ul>|
 |[DrillDown Property](devenv-drilldown-property.md)||<ul><li>Field control</li></ul>|
-|[DrillDownPageId Property](devenv-drilldownpageid-property.md)||<ul><li>Field control</li></ul>|
-|[Editable Property](devenv-editable-property.md)||<ul><li>Page object</li><li>Group control</li><li>Field control</li><li>Part control</li></ul>|
+|[DrillDownPageId Property](devenv-drilldownpageid-property.md)|X|<ul><li>Field control</li></ul>|
+|[Editable Property](devenv-editable-property.md)|X|<ul><li>Page object</li><li>Group control</li><li>Field control</li><li>Part control</li></ul>|
 |[Ellipsis Property](devenv-ellipsis-property.md)||<ul><li>Action</li></ul>|
 |[Enabled Property](devenv-enabled-property.md)|X|<ul><li>Group control</li><li>Field control</li><li>Part control</li><li>ActionGroup</li><li>Action</li></ul>|
 |[EntityCaption Property](devenv-entitycaption-property.md)||<ul><li>Page object</li></ul>|
@@ -64,14 +64,14 @@ The following properties all apply to the page object, only some of these proper
 |[GridLayout Property](devenv-gridlayout-property.md)||<ul><li>Group control</li></ul>|
 |[Gesture Property](devenv-gesture-property.md)||<ul><li>Action</li></ul>|
 |[HideValue Property](devenv-hidevalue-property.md)|X|<ul><li>Field control</li></ul>|
-|[IndentationControls Property](devenv-indentationcontrols-property.md)||<ul><li>Group control</li></ul>|
+|[IndentationControls Property](devenv-indentationcontrols-property.md)|X|<ul><li>Group control</li></ul>|
 |[InFooterBar Property](devenv-infooterbar-property.md)|X|<ul><li>Action</li></ul>|
 |[InsertAllowed Property](devenv-insertallowed-property.md)||<ul><li>Page object</li></ul>|
 |[InstructionalTextML Property](devenv-instructionaltextml-property.md)|X|<ul><li>Page object</li><li>Group control</li></ul>|
 |[Image Property](devenv-image-property.md)||<ul><li>Field control</li><li>ActionGroup</li><li>Action</li></ul>|
 |[Importance Property](devenv-importance-property.md)|X|<ul><li>Field control</li></ul>|
 |[LinksAllowed Property](devenv-linksallowed-property.md)||<ul><li>Page object</li></ul>|
-|[LookupPageId Property](devenv-lookuppageid-property.md)||<ul><li>Field control</li></ul>|
+|[LookupPageId Property](devenv-lookuppageid-property.md)|X|<ul><li>Field control</li></ul>|
 |[Lookup Property](devenv-lookup-property.md)||<ul><li>Field control</li></ul>|
 |[ModifyAllowed Property](devenv-modifyallowed-property.md)||<ul><li>Page object</li></ul>|
 |[MultipleNewLines Property](devenv-multiplenewlines-property.md)||<ul><li>Page object</li></ul>|
@@ -86,7 +86,7 @@ The following properties all apply to the page object, only some of these proper
 |[ObsoleteReason Property](devenv-obsoletereason-property.md)||<ul><li>Page object</li><li>Action</li><li>Action area</li><li>Action group</li><li>Action separator</li><li>Area</li><li>Chart part</li><li>Field control</li><li>Group</li><li>Label</li><li>Part</li><li>System part</li><ul>|
 |[ODataEDMType Property](devenv-odataedmtype-property.md)|X|<ul><li>Page object</li><li>Field control</li></ul>|
 |[ODataKeyFields Property](devenv-odatakeyfields-property.md)||<ul><li>Page object</li></ul>|
-|[OptionCaptionML Property](devenv-optioncaptionml-property.md)||<ul><li>Field control</li></ul>|
+|[OptionCaptionML Property](devenv-optioncaptionml-property.md)|X|<ul><li>Field control</li></ul>|
 |[PageType Property](devenv-pagetype-property.md)||<ul><li>Page object</li></ul>|
 |[Permissions Property](devenv-permissions-property.md)||<ul><li>Page object</li></ul>|
 |[PopulateAllFields Property](devenv-populateallfields-property.md)||<ul><li>Page object</li></ul>|
@@ -111,7 +111,7 @@ The following properties all apply to the page object, only some of these proper
 |[ShowAsTree Property](devenv-showastree-property.md)||<ul><li>Group control</li></ul>|
 |[ShowCaption Property](devenv-showcaption-property.md)|X|<ul><li>Group control</li><li>Field control</li></ul>|
 |[ShowFilter Property](devenv-showfilter-property.md)||<ul><li>Page object</li><li>Part control</li></ul>|
-|[ShowMandatory Property](devenv-showmandatory-property.md)||<ul><li>Field control</li></ul>|
+|[ShowMandatory Property](devenv-showmandatory-property.md)|X|<ul><li>Field control</li></ul>|
 |[SignDisplacement Property](devenv-signdisplacement-property.md)||<ul><li>Field control</li></ul>|
 |[SourceTable Property](devenv-sourcetable-property.md)||<ul><li>Page object</li></ul>|
 |[SourceTableTemporary Property](devenv-sourcetabletemporary-property.md)||<ul><li>Page object</li></ul>|
