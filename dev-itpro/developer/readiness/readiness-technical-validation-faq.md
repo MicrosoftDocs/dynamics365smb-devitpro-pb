@@ -27,12 +27,21 @@ Each unique codebase have one unique ID. If you have four apps in AppSource, you
 If they are different apps (different code) they should have different identity. Identity is used in e.g., app management, dependencies, support cases and telemetry. If reused across different apps, identity uniqueness is lost. Another approach could be a common shared (internal/library) app across countries (with one app identity) and localized functionality as extensions on top (with their own identity). 
  
 ### How can we issue hotfixes fast once our app is live in AppSource? Let's say we have customers live on our app and we need to deloy something instantly; do we need to wait an entire calendar week for that to be validated?  
-Normally it wont take an entire calendar week. We are typically way faster and we will generally be much faster at passing an app than failing an app. We run the app trough automated testing and if an app passes, it's just a few clicks and it will be live within 6 hours after it has been passed. Our recommendation is to make sure your app passes (you fulfilled all the requirements inclucing self-validation), then it will be a fast experience. From the moment we receive the app it takes between 30 min to 5 hours to validate (depending on the number of countries you are targetting) and then it takes about 6 hours until it reaches production. In case you need to deploy an urgent hotfix you should email d365val@microsoft.com and we can try to expedite the submission.
+Normally it will not take an entire calendar week. We are typically way faster and we will generally be much faster at passing an app than failing an app. We run the app trough automated testing and if an app passes, it's just a few clicks and it will be live within 6 hours after it has been passed. Our recommendation is to make sure your app passes (you fulfilled all the requirements inclucing self-validation), then it will be a fast experience. From the moment we receive the app it takes between 30 min to 5 hours to validate (depending on the number of countries you are targetting) and then it takes about 6 hours until it reaches production. In case you need to deploy an urgent hotfix you should email d365val@microsoft.com and we can try to expedite the submission.
 In the future, we aim to offer you full control and visibility over the validation process so that you can upload your app to production, see the validation status and then push it to the environments that are waiting for the hotfix, but this is within the next 2-3 releases timeline.
 
-### Can I use the Microsoft Dynamics 365 Business Central logo?  
+### Why do we need to offer add-on apps as "free" or "free trial". Why can add-on apps not be listed as "contact me"?  
+We have had some good discussions about this interally. We do want to open up for this eventually, but we need to add proper guidance for it. We want you to know that the "contact me" option is not attractive to prospects - there's a bad conversion rate on this. Note that if you take free trial you also get a 'contact me' form so people will have to register anyway. We've seen a lot of apps having a lot of different approaches to getting registrations; some are intrusive and some are very nice. So you can do a lot of great things instead of 'contact me'. 'Contact me' is like the easy way out, not necessarily the best way. Therefore, think about how you list your app!
 
-No
+### hej
+
+### hej
+
+### hej
+
+### hej
+
+
 
 ## See Also
 
