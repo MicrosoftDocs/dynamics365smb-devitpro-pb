@@ -44,7 +44,7 @@ Represents a user resource type in [!INCLUDE[d365fin_long_md](../developer/inclu
 
 | Actions         | Return Type  |Description|
 |:---------------|:-------------|:----------|
-|[Microsoft.NAV.createNewUsersFromAzureAD](dynamics-microsoft-automation-configurationpackage-post.md)|none|.|
+|[Microsoft.NAV.createNewUsersFromAzureAD](dynamics-microsoft-automation-configurationpackage-post.md)|none|Creates new users from Azure AD.|
 
 ## JSON representation
 Here is a JSON representation of the user.
