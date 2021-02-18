@@ -27,7 +27,7 @@ Typing the shortcut `tpermissionset` will create the basic layout for a permissi
 
 ## Permission set example
 
-The following example illustrates a permissionset `Sales Person` with permissions given to data in tables, each with different level of access. The `RIMD` access assigned to data in the `Customer` table provides full access, whereas, for example, access is limited for data in the `Currency` table only allowing full read and modify permission. The <!-- [Assignable property](properties/devenv-assignable-property.md)--> [Assignable property](https://review.docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/properties/devenv-assignable-property?branch=new-properties) set to `true` allows the permissionset to be assigned to a user. 
+The following example illustrates a permissionset `Sales Person` with permissions given to data in tables, each with different level of access. The <!-- [Assignable property](properties/devenv-assignable-property.md)--> [Assignable property](https://review.docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/properties/devenv-assignable-property?branch=new-properties) is set to `true` which allows the permissionset to be assigned to a user. The <!--[Permissions property](properties/devenv-permissions-property.md)--> [Permissions property](https://review.docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/properties/devenv-permissions-property?branch=new-properties) is set to the list of objects to give permissions to. The `RIMD` access assigned to data in the `Customer` table provides full access, whereas, for example, access is limited for data in the `Currency` table only allowing full read and modify permission. 
 
 
 ```al
