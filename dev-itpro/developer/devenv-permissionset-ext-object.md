@@ -45,4 +45,6 @@ permissionsetextension 50140 "Extended Sales Doc" extends "Sales Person"
 [AL Development Environment](devenv-reference-overview.md)  
 [Entitlements and Permission Set Overview](devenv-entitlements-and-permissionsets-overview.md)  
 [Permission Set Object](devenv-permissionset-object.md)  
-[Permissions on Database Objects](devenv-permissions-on-database-objects.md)
+[Permissions on Database Objects](devenv-permissions-on-database-objects.md)  
+[Assignable Property](properties/devenv-assignable-property.md)  
+[Permissions Property](properties/devenv-permissions-property.md)

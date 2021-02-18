@@ -70,4 +70,5 @@ permissionset 50130 MyPermissionSet
 [Permission Set Extension Object](devenv-permissionset-ext-object.md)  
 [Permissions on Database Objects](devenv-permissions-on-database-objects.md)  
 [Assignable Property](properties/devenv-assignable-property.md)  
-[IncludedPermissionSets](properties/devenv-includedpermissionsets-property.md)
+[IncludedPermissionSets](properties/devenv-includedpermissionsets-property.md)  
+[Permissions Property](properties/devenv-permissions-property.md)
