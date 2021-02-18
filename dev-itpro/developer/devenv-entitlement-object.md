@@ -31,11 +31,13 @@ Typing the shortcut `t?` will create the basic layout for an entitlement object 
 
 ## Entitlement example
 
+This example illustrates a simple entitlement object with a the <!--[Type property](properties/devenv-type-property.md)--> [Type property](https://review.docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/properties/devenv-type-property?branch=new-properties) set to `Role`, which means that the is entitlement is associated with an AAD role. When `Type` is set to `Role`, the <!-- [RoleType property](properties/devenv-roletype-property.md)--> [RoleType property](https://review.docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/properties/devenv-roletype-property?branch=new-properties) is used to distinguish between local and delegated assignments of the role, in this case it is `Delegated`.
+
 ```al
 entitlement MyEntitlement
 {
-    LicenseType = Role;
-    Roletype = Delegated;
+    Type = Role;
+    RoleType = Delegated;
     ObjectEntitlements = 
         ”D365 BUS PREMIUM - BaseApp”;​
 }
