@@ -17,7 +17,7 @@ ms.author: a-emniel
 Test automation is something we expect you to run, to test your app and to make sure that the quality of your app is high. We do not run tests of your app in our environment nor do we have a set value i.e., we do not state that you need to have a code coverage of a certain percentage. Instead, we rely on you to test your app properly to give your customers a good experience.     
  
 #### Is there a forum, where we can ask questions about AppSource submissions?
-Yes, you can join our AppSource group in our Yammer network at [aka.ms/BCYammer](http://aka.ms/bcyammer) (note that you need to be a Microsoft partner to do so). In this group, you will find announcements from Microsoft together with discussions around various AppSource related topics. If you have problems connecting, please email dyn365bep@microsoft.com 
+Yes, you can join our AppSource group in our Yammer network at [aka.ms/BCYammer](http://aka.ms/bcyammer) (note that you need to be a Microsoft partner to do so). In this group, you will find announcements from Microsoft together with discussions around various AppSource related topics. If you have problems connecting, please email dyn365bep@microsoft.com. 
 
 #### Is it possible to create apps with the same ID several times?  
 Each unique codebase have one unique ID. If you have four apps in AppSource, you need to have four unique IDs for these apps. Otherwise you'll get conflicts. 
