@@ -18,15 +18,6 @@ author: SusanneWindfeldPedersen
 
 *Permissions* describe which objects an administrator or a partner has given the user.
 
-<!--
-In AL, there are three object types used for handling entitlements and permissions: 
-
-- [Entitlement Object](devenv-entitlement-object.md)
-- [PermissionSet](devenv-permissionset-object.md)
-- [PermissionSetExtension](devenv-permissionset-ext-object.md)
-
--->
-
 ## Permission Set Scope
 
 A [!INCLUDE [prod_short](includes/prod_short.md)] solution contains a number of predefined permission sets that are added by Microsoft or by your software provider (ISV application you installed from AppSource). These permission sets are of type **System** or **Extension**. End-users cannot create or edit these types of permission sets or the permissions within them. However, they can copy these permission sets to define their own permission sets and permissions.
@@ -35,7 +26,7 @@ Permission sets that users create, from new or as copies, are of the type **User
 
 ## Creating Entitlements and Permission Sets
 
-When developing an app, you can create new entitlement and permissionset objects or extend existing permission sets in AL. The following object types are used for handling entitlements and permissions:  
+When developing an app, you can create new entitlement and permission set objects or extend existing permission sets in AL. The following object types are used for handling entitlements and permissions:  
     - [Entitlement Object](devenv-entitlement-object.md)  
     - [PermissionSet](devenv-permissionset-object.md)  
     - [PermissionSetExtension](devenv-permissionset-ext-object.md)
@@ -43,6 +34,10 @@ When developing an app, you can create new entitlement and permissionset objects
 
 > [!NOTE]  
 > In the current version of [!INCLUDE[prod_short](includes/d365fin_long_md.md)][!INCLUDE[prod_long](includes/prod_long.md)] the entitlements can only be included with Microsoft apps (enforced by the AppSource cop rules and the technical validation checks that we run for the apps submitted to AppSource). These objects will become available for the ISV apps when we introduce ability to monetize AppSource apps in one of our future releases. 
+
+## Security
+
+<!-- From security review, we need to call out the trust model that lies in the modeling of entitlements and permissions -->
 
 ## Earlier versions of Business Central
 
