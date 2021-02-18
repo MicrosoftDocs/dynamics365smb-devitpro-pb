@@ -24,9 +24,10 @@ A [!INCLUDE [prod_short](includes/prod_short.md)] solution contains a number of 
 
 Permission sets that users create, from new or as copies, are of the type **User-Defined** and they can be edited.
 
-## Creating Entitlements and Permission Sets
+## Creating Entitlements and Permission Sets in AL
 
-When developing an app, you can create new entitlement and permission set objects or extend existing permission sets in AL. The following object types are used for handling entitlements and permissions:  
+When developing an app, you can create new entitlement and permission set objects or extend existing permission sets in AL. The following object types are used for handling entitlements and permissions:
+
 - [Entitlement Object](devenv-entitlement-object.md)  
 - [PermissionSet](devenv-permissionset-object.md)  
 - [PermissionSetExtension](devenv-permissionset-ext-object.md)
@@ -34,13 +35,13 @@ When developing an app, you can create new entitlement and permission set object
 > [!NOTE]  
 > In the current version of [!INCLUDE[prod_short](includes/d365fin_long_md.md)][!INCLUDE[prod_long](includes/prod_long.md)] the entitlements can only be included with Microsoft apps (enforced by the AppSource cop rules and the technical validation checks that we run for the apps submitted to AppSource). These objects will become available for the ISV apps when we introduce ability to monetize AppSource apps in one of our future releases. 
 
-## Security
-
+> [!IMPORTANT]  
+> If a permission set is extended through AL, that extension will make additive changes to the permission set. This means that an extension can provide elevated privileges to an otherwise limited set of permissions. Building permission sets that can be extended must be done carefully with this in mind.
 <!-- From security review, we need to call out the trust model that lies in the modeling of entitlements and permissions -->
 
 ## Earlier versions of Business Central
 
-In releases of [!INCLUDE [prod_short](includes/prod_short.md)] prior to release 2021 Wave 1 (v.18.0), System and Extension permissions and entitlements were defined as data in the application database: 
+In releases of [!INCLUDE [prod_short](includes/prod_short.md)] prior to 2021 release wave 1 (v.18.0), System and Extension permissions and entitlements were defined as data in the application database: 
 
 Entitlements: 
   - dbo.Entitlement
@@ -51,11 +52,11 @@ Permissions:
   - dbo.Permission Set
   - dbo.Permission
 
-Keeping such sensitive information as data comes with additional maintenance, security and audit risks for the software providers (ISVs). Changes applied to this data should ideally be well traceable, easy to update and maintain. Starting with release 2021 Wave 1, the System and Extensions permissions and entitlements are defined in code, using Entitlement, PermissionSet and PermissionSetextension AL objects. This change provides ISVs with all of the advantages of using the AL Language extension in Visual Studio Code and source control systems (as Visual Studio Online and GitHub) to design, get an overview, and track changes to the objects that describe user access. 
+Keeping such sensitive information as data comes with additional maintenance, security, and audit risks for the software providers (ISVs). Changes applied to this data should ideally be well traceable, easy to update and maintain. Starting with [!INCLUDE [prod_short](includes/prod_short.md)] 2021 release wave 1, the System and Extensions permissions and entitlements are defined in code, using Entitlement, PermissionSet, and PermissionSetExtension AL objects. This change provides ISVs with all of the advantages of using the AL Language extension in Visual Studio Code and source control systems (as Visual Studio Online and GitHub) to design, get an overview, and track changes to the objects that describe user access. 
 
 Turning this data into code has another significant advantage: the ability to apply hotfixes to the entitlements and permissions in the same way that the hotfixes are applied to the apps themselves, simply by updating an app to a new version which carries fixed code. This improves [!INCLUDE [prod_short](includes/prod_short.md)] support agility considerably, ultimately improving customer satisfaction with the service.
 
-And finally, the new AL objects are envisioned to become the core building blocks in the story of monetizing the AppSource apps. It is through these new AL objects that AppSource ISVs will be able to define which capabilities of their apps should be made available to their users, when the customers purchase their app licenses. With release 2021 Wave 1 we are paving the way by moving the entitlements and permission sets into AL objects for Microsoft apps, so that ISVs could follow the same approach for their apps, when the monetization story is introduced with one of the next releases of [!INCLUDE [prod_short](includes/prod_short.md)].
+And finally, the new AL objects are envisioned to become the core building blocks in the story of monetizing the AppSource apps. It is through these new AL objects that AppSource ISVs will be able to define which capabilities of their apps should be made available to their users, when the customers purchase their app licenses. With [!INCLUDE [prod_short](includes/prod_short.md)] 2021 release wave 1 we are paving the way by moving the entitlements and permission sets into AL objects for Microsoft apps, so that ISVs can follow the same approach for their apps, when the monetization story is introduced with one of the next releases of [!INCLUDE [prod_short](includes/prod_short.md)].
 
 User-Defined permission sets and permissions, and functionality around them remain unchanged. They are still stored as data in the tenant database: 
 
@@ -64,15 +65,15 @@ User-Defined permission sets and permissions, and functionality around them rema
 
 ## Upgrade considerations
 
-Starting with release 2021 Wave 1 (v.18.0), [!INCLUDE [prod_short](includes/prod_short.md)] demo database, which is shipped with our on-prem installation does not contain any data in the `dbo.Permission Set` and `dbo.Permission` tables in the application database. Instead, the System permission sets and permissions are provided as AL objects of type PermissionSet and PermissionSetExtension, included with Microsoft apps. 
+Starting with [!INCLUDE [prod_short](includes/prod_short.md)] 2021 release wave 1 (v.18.0), the [!INCLUDE [prod_short](includes/prod_short.md)] demo database, which is shipped with our on-prem installation does not contain any data in the `dbo.Permission Set` and `dbo.Permission` tables in the application database. Instead, the **System** permission sets and permissions are provided as AL objects of type `PermissionSet` and `PermissionSetExtension`, included with Microsoft apps. 
 
 [!INCLUDE [prod_short](includes/prod_short.md)] server configuration file (CustomSettings.config) includes a setting which allows on-prem administrators to decide whether they want to continue using the permissions defined as data or as AL objects: 
 
-```CustomSettings.config
+```
 UsePermissionSetsFromExtensions: ‘true’
 ```
 
-The default value for this setting is `true`, meaning that the server will be retrieving System permission sets and permissions from the AL objects of type PermissionSet and PermissionSetExtension. 
+The default value for this setting is `true`, meaning that the server will be retrieving **System** permission sets and permissions from the AL objects of type `PermissionSet` and `PermissionSetExtension`. 
 
 
 [WORK IN PROGRESS] Permissions:
