@@ -94,6 +94,8 @@
 ## [Network Configuration for the Excel Add-In](administration/configuring-network-for-addins.md)
 ## [Setting up App Key Vaults for Extensions](administration/setup-app-key-vault.md)
 ## [Upgrading AppSource Apps in Production](developer/devenv-upgrade-appsource-app-in-prod.md)
+## Entitlements and Permissions
+### [Entitlements and Permission Sets Overview](developer/devenv-entitlements-and-permissionsets-overview.md)
 ## Environment Types
 ### [Production and Sandbox Environments](administration/environment-types.md)
 ### [Preparing Demo Environments](administration/demo-environment.md)
@@ -295,8 +297,7 @@
 #### [Moving Tables and Fields Down](developer/devenv-migrate-table-fields-down.md)
 #### [Moving Tables and Fields Up](developer/devenv-migrate-table-fields-up.md)
 #### [Migration.json File](developer/devenv-migration-json-file.md)
-## Permission Sets and Entitlements
-### [Entitlements and Permission Sets Overview](developer/devenv-entitlements-and-permissionsets-overview.md)
+## Developing Permission Sets and Entitlements
 ### [Permissions on Database Objects](developer/devenv-permissions-on-database-objects.md)
 ### [Entitlement Object](developer/devenv-entitlement-object.md)
 ### [Permissionset Object](developer/devenv-permissionset-object.md)
