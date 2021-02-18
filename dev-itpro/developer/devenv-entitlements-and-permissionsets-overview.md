@@ -26,7 +26,7 @@ Permission sets that users create, from new or as copies, are of the type **User
 
 ## Creating Entitlements and Permission Sets in AL
 
-When developing an app, you can create new entitlement and permission set objects or extend existing permission sets in AL. The following object types are used for handling entitlements and permissions:  
+When developing an app, you can create new entitlement and permission set objects or extend existing permission sets in AL. The following object types are used for handling entitlements and permissions:<br>  
     - [Entitlement Object](devenv-entitlement-object.md)  
     - [PermissionSet](devenv-permissionset-object.md)  
     - [PermissionSetExtension](devenv-permissionset-ext-object.md)
