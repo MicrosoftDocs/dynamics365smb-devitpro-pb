@@ -26,7 +26,7 @@ Typing the shortcut `tpermissionsetextension` will create the basic layout for a
 
 ## Permission set example
 
-The following permission set extension example extends the `Sales Person` [permission set](devenv-permissionset-object.md#permission-set-example) by adding direct I(nsert) and D(elete) permissions to the Currency table data.
+The following permission set extension example extends the `Sales Person` [permission set](devenv-permissionset-object.md#permission-set-example) by adding direct insert and delete permissions to the `Currency` table data.
 
 ```AL
 permissionsetextension 50140 "Extended Sales Doc" extends "Sales Person"
@@ -43,5 +43,6 @@ permissionsetextension 50140 "Extended Sales Doc" extends "Sales Person"
 
 [Developing Extensions](devenv-dev-overview.md)  
 [AL Development Environment](devenv-reference-overview.md)  
+[Entitlements and Permission Set Overview](devenv-entitlements-and-permissionsets-overview.md)  
 [Permission Set Object](devenv-permissionset-object.md)  
 [Permissions on Database Objects](devenv-permissions-on-database-objects.md)

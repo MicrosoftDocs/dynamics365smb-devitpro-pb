@@ -27,7 +27,7 @@ Typing the shortcut `tpermissionset` will create the basic layout for a permissi
 
 ## Permission set example
 
-The following example illustrates a permissionset `Sales Person` with permissions given to data in tables, each with different level of access. The `RIMD` access assigned to data in the `Customer` table provides full access, whereas, for example, access is limited for data in the `Currency` table only allowing full read and modify permission. The [Assignable property](properties/devenv-assignable-property.md) set to `true` allows the permissionset to be assigned to a user. 
+The following example illustrates a permissionset `Sales Person` with permissions given to data in tables, each with different level of access. The `RIMD` access assigned to data in the `Customer` table provides full access, whereas, for example, access is limited for data in the `Currency` table only allowing full read and modify permission. The <!-- [Assignable property](properties/devenv-assignable-property.md)--> [Assignable property](https://review.docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/properties/devenv-assignable-property?branch=new-properties) set to `true` allows the permissionset to be assigned to a user. 
 
 
 ```al
@@ -46,7 +46,7 @@ permissionset 50134 "Sales Person"
 
 ```
 
-The following example of a permissionset illustrates assigned permissions to run codeunits. With the [IncludedPermissionSet property](properties/devenv-includedpermissionset-property.md), we specify that the permissionset `Sales Person` is also included in `MyPermissionSet`.
+The following example of a permissionset illustrates assigned permissions to run codeunits. With the <!-- [IncludedPermissionSets property](properties/devenv-includedpermissionsets-property.md) -->[IncludedPermissionSets property](https://review.docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/properties/devenv-includedpermissionsets-property?branch=new-properties), we specify that the permissionset `Sales Person` is also included in `MyPermissionSet`.
 
 ```al
 permissionset 50130 MyPermissionSet 
@@ -66,6 +66,7 @@ permissionset 50130 MyPermissionSet
 
 [Developing Extensions](devenv-dev-overview.md)  
 [AL Development Environment](devenv-reference-overview.md)  
+[Entitlements and Permission Set Overview](devenv-entitlements-and-permissionsets-overview.md)  
 [Permission Set Extension Object](devenv-permissionset-ext-object.md)  
 [Permissions on Database Objects](devenv-permissions-on-database-objects.md)  
 [Assignable Property](properties/devenv-assignable-property.md)  
