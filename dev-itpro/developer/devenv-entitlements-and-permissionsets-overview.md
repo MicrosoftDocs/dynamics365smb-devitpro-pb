@@ -27,10 +27,9 @@ Permission sets that users create, from new or as copies, are of the type **User
 ## Creating Entitlements and Permission Sets
 
 When developing an app, you can create new entitlement and permission set objects or extend existing permission sets in AL. The following object types are used for handling entitlements and permissions:  
-    - [Entitlement Object](devenv-entitlement-object.md)  
-    - [PermissionSet](devenv-permissionset-object.md)  
-    - [PermissionSetExtension](devenv-permissionset-ext-object.md)
-
+- [Entitlement Object](devenv-entitlement-object.md)  
+- [PermissionSet](devenv-permissionset-object.md)  
+- [PermissionSetExtension](devenv-permissionset-ext-object.md)
 
 > [!NOTE]  
 > In the current version of [!INCLUDE[prod_short](includes/d365fin_long_md.md)][!INCLUDE[prod_long](includes/prod_long.md)] the entitlements can only be included with Microsoft apps (enforced by the AppSource cop rules and the technical validation checks that we run for the apps submitted to AppSource). These objects will become available for the ISV apps when we introduce ability to monetize AppSource apps in one of our future releases. 
