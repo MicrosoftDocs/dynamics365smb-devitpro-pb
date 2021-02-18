@@ -52,4 +52,7 @@ tabledata Customer = RIMD,
   
 ## See Also
 
-[Getting Started with AL](devenv-get-started.md)
+[Getting Started with AL](devenv-get-started.md)  
+[Entitlements and Permission Set Overview](devenv-entitlements-and-permissionsets-overview.md)  
+[Permission Set Object](devenv-permissionset-object.md)  
+[Permissions on Database Objects](devenv-permissions-on-database-objects.md)  
