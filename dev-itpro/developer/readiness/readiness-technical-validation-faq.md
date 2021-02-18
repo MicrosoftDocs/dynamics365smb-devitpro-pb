@@ -43,7 +43,7 @@ There are a few options:
 1. Request a runtime package from the AppSource developer and deploy that on your sandbox. 
 2. Test your application on an online sandbox. The latest ContainerHelper does support running full CI/CD pipelines using an online sandbox.
 
-#### Is there going to be made any changes to the character limitation in regards to object names within the near future? 
+#### Is there going to be made any changes to the character limitation (30 characters) in regards to object names within the near future? 
 We would like longer names as well. Introducing namespaces could be one investment. However, such a changes has down-stream breaking impact (any caller needs to qualify calls) and there are SQL constraints on name lengths for tables, which currently include company name, table name, app ID and needs to be maximum 255. Currently a solution will not be available in 2021. 
 
 
