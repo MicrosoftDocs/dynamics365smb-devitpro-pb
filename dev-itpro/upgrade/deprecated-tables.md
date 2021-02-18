@@ -27,6 +27,9 @@ In the latest version of [!INCLUDE[prod_short](../developer/includes/prod_short.
 |NAV App Dependencies| Application Dependency|
 |NAV App Tenant App| Installed Application|
 
+> [!IMPORTANT]
+> The Temp Blob table is marked with `ObsoleteState:Pending`, however we have a firm plan to remove the table in 2021 release wave 2. If you have code that depends on the Temp Blob table, you must rewrite it to use the Blob Storage module in the System Application before 2021 release wave 2 becomes available.
+
 ## See Also
 
 [Technical Upgrade](upgrade-technical-upgrade-v15-v16.md)
