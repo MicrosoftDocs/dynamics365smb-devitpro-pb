@@ -25,7 +25,7 @@ Entitlements can only be used with the online version of [!INCLUDE[prod_short](i
 
 ## Snippet support
 
-Typing the shortcut `t?` will create the basic layout for an entitlement object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
+Typing the shortcut `tentitlement` will create the basic layout for an entitlement object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
 
 [!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
 
