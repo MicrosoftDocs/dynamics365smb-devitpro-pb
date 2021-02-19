@@ -67,10 +67,14 @@ The first task is to use Azure portal to register an application for Business Ce
 
     Use the following table to help you set the minimum permissions:
 
-    |API / Permission name|Type|Description|
+    |API | Permission name|Type|Description|
     |---------------------|----|-----------|
-    |Microsoft Graph / User.Read|Delegated|Sign in and read user profile|
-    |Power BI Service / Report.Read.All|Delegated|View all reports|
+    |Microsoft Graph | User.Read|Delegated|Sign in and read user profile|
+	||PrinterShare.ReadBasic.All|Delegated|Read basic information about printer shares|
+    ||PrintJob.Create|Delegated|Create print jobs|
+    ||PrintJob.ReadBasic|Delegated|Read basic information of user's print jobs|
+    ||PrintSettings.Read.All|Delegated|Read tenant-wide print settings
+    |Power BI Service|Report.Read.All|Delegated|View all reports|
 
 ## Set up the registered application in Business Central
 
