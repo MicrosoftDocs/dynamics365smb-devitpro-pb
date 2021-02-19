@@ -29,20 +29,20 @@ Represents an extension in [!INCLUDE[d365fin_long_md](../../includes/d365fin_lon
 
 ## Bound Actions
 
-The extension resource type offers a bound action called `install` which posts the corresponding extension batch.
-Posting the extension batch is illustrated in the following example:
+The extension resource type offers a bound action called `install` which installs the corresponding extension batch.
+This is illustrated in the following example:
 `INSTALL https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/extensions({id})/Microsoft.NAV.install`
 
 The response has no content; the response code is 204.
 
-The extension resource type offers a bound action called `uninstallAndDeleteExtensionData` which posts the corresponding extension batch.
-Posting the extension batch is illustrated in the following example:
+The extension resource type offers a bound action called `uninstallAndDeleteExtensionData` which uninstalls and deletes extension data the corresponding extension batch.
+This is illustrated in the following example:
 `UNINSTALLANDDELETEEXTENSIONDATA https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/extensions({id})/Microsoft.NAV.uninstallAndDeleteExtensionData`
 
 The response has no content; the response code is 204.
 
-The extension resource type offers a bound action called `uninstall` which posts the corresponding extension batch.
-Posting the extension batch is illustrated in the following example:
+The extension resource type offers a bound action called `uninstall` which uninstalls the corresponding extension batch.
+This is illustrated in the following example:
 `UNINSTALL https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/extensions({id})/Microsoft.NAV.uninstall`
 
 The response has no content; the response code is 204.

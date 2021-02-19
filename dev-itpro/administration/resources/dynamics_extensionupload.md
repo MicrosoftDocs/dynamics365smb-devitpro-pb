@@ -31,8 +31,8 @@ Represents an extension upload in [!INCLUDE[d365fin_long_md](../../includes/d365
 
 ## Bound Actions
 
-The extensionUpload resource type offers a bound action called `upload` which posts the corresponding extensionUpload batch.
-Posting the extensionUpload batch is illustrated in the following example:
+The extensionUpload resource type offers a bound action called `upload` which uploads the corresponding extensionUpload batch.
+This is illustrated in the following example:
 `UPLOAD https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/extensionUploads({id})/Microsoft.NAV.upload`
 
 The response has no content; the response code is 204.

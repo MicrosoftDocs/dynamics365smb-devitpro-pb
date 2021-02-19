@@ -22,7 +22,7 @@ Retrieves the properties and relationships of an user group object for [!INCLUDE
 Replace the URL prefix for [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
 <!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different -->
 ```
-GET businesscentralPrefix/companies({id})/userGroup({id})
+GET businesscentralPrefix/companies({id})/userGroups({id})
 ```
 <!-- END>EDIT_IS_REQUIRED -->
 ## Request headers
@@ -46,7 +46,7 @@ If successful, this method returns a ```200 OK``` response code and an **userGro
 Here is an example of the request.
 <!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different -->
 ```json
-GET https://{businesscentralPrefix}/api/v2.0/companies({id})/userGroup({id})
+GET https://{businesscentralPrefix}/api/v2.0/companies({id})/userGroups({id})
 ```
 <!-- END>EDIT_IS_REQUIRED -->
 **Response**

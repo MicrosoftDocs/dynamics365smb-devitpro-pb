@@ -30,8 +30,8 @@ Represents an user in [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.
 
 ## Bound Actions
 
-The user resource type offers a bound action called `createNewUsersFromAzureAD` which posts the corresponding user batch.
-Posting the user batch is illustrated in the following example:
+The user resource type offers a bound action called `createNewUsersFromAzureAD` which creates new users from azure ad the corresponding user batch.
+This is illustrated in the following example:
 `CREATENEWUSERSFROMAZUREAD https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/users({id})/Microsoft.NAV.createNewUsersFromAzureAD`
 
 The response has no content; the response code is 204.

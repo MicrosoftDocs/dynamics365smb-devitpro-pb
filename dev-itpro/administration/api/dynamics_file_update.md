@@ -22,7 +22,7 @@ Updates the properties of a file object for [!INCLUDE[d365fin_long_md](../../inc
 Replace the URL prefix for [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
 <!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different or there might be more than one-->
 ```
-PATCH businesscentralPrefix/companies({id})/file({id})
+PATCH businesscentralPrefix/companies({id})/files({id})
 ```
 <!-- END>EDIT_IS_REQUIRED-->
 ## Request headers
@@ -48,7 +48,7 @@ If successful, this method returns a ```200 OK``` response code and an updated *
 Here is an example of the request.
 <!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different. Fill in the property values)
 ```json
-PATCH https://{businesscentralPrefix}/api/v2.0/companies({id})/file({id})
+PATCH https://{businesscentralPrefix}/api/v2.0/companies({id})/files({id})
 Content-type: application/json
 {
     "code" : ,

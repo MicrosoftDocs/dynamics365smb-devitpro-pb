@@ -22,7 +22,7 @@ Creates an extension upload in [!INCLUDE[d365fin_long_md](../../includes/d365fin
 Replace the URL prefix for [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
 <!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different or there might be more than one -->
 ```
-POST businesscentralPrefix/companies({id})/extensionUpload({id})
+POST businesscentralPrefix/companies({id})/extensionUploads({id})
 ```
 <!-- END>EDIT_IS_REQUIRED -->
 ## Request headers
@@ -49,7 +49,7 @@ If successful, this method returns ```201 Created``` response code and a **exten
 Here is an example of the request.
 <!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different. Fill in the property values -->
 ```json
-POST https://{businesscentralPrefix}/api/v2.0/companies({id})/extensionUpload({id})
+POST https://{businesscentralPrefix}/api/v2.0/companies({id})/extensionUploads({id})
 Content-type: application/json
 {
     "systemId" : "",

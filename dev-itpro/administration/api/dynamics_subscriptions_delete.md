@@ -13,7 +13,6 @@ ms.author: solsen
 
 <!-- NOTE: This article is an auto-generated stub from the metadata file. -->
 <!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
-
 # Delete subscriptions
 
 Deletes a subscriptions from [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)].
@@ -26,7 +25,6 @@ Replaces the URL prefix for [!INCLUDE[d365fin_long_md](../../includes/d365fin_lo
 DELETE businesscentralPrefix/companies({id})/subscriptions({id})
 ```
 <!-- END>EDIT_IS_REQUIRED -->
-
 ## Request headers
 
 |Header|Value|
@@ -53,7 +51,6 @@ Here is an example of the request.
 DELETE https://{businesscentralPrefix}/api/v2.0/companies({id})/subscriptions({id})
 ```
 <!-- END>EDIT_IS_REQUIRED -->
-
 **Response**
 
 Here is an example of the response.
