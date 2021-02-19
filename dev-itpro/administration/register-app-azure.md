@@ -70,11 +70,11 @@ The first task is to use Azure portal to register an application for Business Ce
     |API | Permission name|Type|Description|
     |---------------------|----|-----------|
     |Microsoft Graph | User.Read|Delegated|Sign in and read user profile|
-	||PrinterShare.ReadBasic.All|Delegated|Read basic information about printer shares|
-    ||PrintJob.Create|Delegated|Create print jobs|
-    ||PrintJob.ReadBasic|Delegated|Read basic information of user's print jobs|
-    ||PrintSettings.Read.All|Delegated|Read tenant-wide print settings
-    |Power BI Service|Report.Read.All|Delegated|View all reports|
+	||PrinterShare.ReadBasic.All|Delegated|Read basic information about printer shares. Required for using Universal Print printers.|
+    ||PrintJob.Create|Delegated|Create print jobs. Required for using Universal Print printers|
+    ||PrintJob.ReadBasic|Delegated|Read basic information of user's print jobs. Required for using Universal Print printers.|
+    ||PrintSettings.Read.All|Delegated|Read tenant-wide print settings. Required for using Universal Print printers.|
+    |Power BI Service|Report.Read.All|Delegated|View all reports. Required for viewing Power BI reports in Business Central.|
 
 ## Set up the registered application in Business Central
 
