@@ -62,4 +62,4 @@ Here is a JSON representation of the extensionDeploymentStatus resource.
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
 ## See Also
-[GET extensionDeploymentStatus](../api/dynamics_extensiondeploymentstatus_get.md)
+[GET extensionDeploymentStatus](../api/dynamics_extensiondeploymentstatus_get.md)  

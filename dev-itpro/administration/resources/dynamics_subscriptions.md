@@ -71,7 +71,7 @@ Here is a JSON representation of the subscriptions resource.
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
 ## See Also
-[GET subscriptions](../api/dynamics_subscriptions_get.md)
-[DELETE subscriptions](../api/dynamics_subscriptions_delete.md)
-[POST subscriptions](../api/dynamics_subscriptions_create.md)
-[PATCH subscriptions](../api/dynamics_subscriptions_update.md)
+[GET subscriptions](../api/dynamics_subscriptions_get.md)  
+[DELETE subscriptions](../api/dynamics_subscriptions_delete.md)  
+[POST subscriptions](../api/dynamics_subscriptions_create.md)  
+[PATCH subscriptions](../api/dynamics_subscriptions_update.md)  

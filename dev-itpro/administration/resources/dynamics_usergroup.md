@@ -55,5 +55,5 @@ Here is a JSON representation of the userGroup resource.
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
 ## See Also
-[GET userGroup](../api/dynamics_usergroup_get.md)
-[PATCH userGroup](../api/dynamics_usergroup_update.md)
+[GET userGroup](../api/dynamics_usergroup_get.md)  
+[PATCH userGroup](../api/dynamics_usergroup_update.md)  

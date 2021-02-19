@@ -35,7 +35,7 @@ This is illustrated in the following example:
 
 The response has no content; the response code is 204.
 
-The extension resource type offers a bound action called `uninstallAndDeleteExtensionData` which uninstalls and deletes extension data the corresponding extension batch.
+The extension resource type offers a bound action called `uninstallAndDeleteExtensionData` which uninstall and delete extension datas the corresponding extension batch.
 This is illustrated in the following example:
 `UNINSTALLANDDELETEEXTENSIONDATA https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/extensions({id})/Microsoft.NAV.uninstallAndDeleteExtensionData`
 
@@ -85,4 +85,4 @@ Here is a JSON representation of the extension resource.
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
 ## See Also
-[GET extension](../api/dynamics_extension_get.md)
+[GET extension](../api/dynamics_extension_get.md)  

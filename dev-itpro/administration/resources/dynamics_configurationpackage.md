@@ -95,7 +95,7 @@ Here is a JSON representation of the configurationPackage resource.
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
 ## See Also
-[GET configurationPackage](../api/dynamics_configurationpackage_get.md)
-[DELETE configurationPackage](../api/dynamics_configurationpackage_delete.md)
-[POST configurationPackage](../api/dynamics_configurationpackage_create.md)
-[PATCH configurationPackage](../api/dynamics_configurationpackage_update.md)
+[GET configurationPackage](../api/dynamics_configurationpackage_get.md)  
+[DELETE configurationPackage](../api/dynamics_configurationpackage_delete.md)  
+[POST configurationPackage](../api/dynamics_configurationpackage_create.md)  
+[PATCH configurationPackage](../api/dynamics_configurationpackage_update.md)  

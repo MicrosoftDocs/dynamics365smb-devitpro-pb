@@ -69,5 +69,5 @@ Here is an example of the response.
 <!-- END>EDIT_IS_REQUIRED -->
 ## See Also
 
-[Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)
+[Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  
 [company](../resources/dynamics_company.md)

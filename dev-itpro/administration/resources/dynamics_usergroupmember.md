@@ -64,7 +64,7 @@ Here is a JSON representation of the userGroupMember resource.
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
 ## See Also
-[GET userGroupMember](../api/dynamics_usergroupmember_get.md)
-[DELETE userGroupMember](../api/dynamics_usergroupmember_delete.md)
-[POST userGroupMember](../api/dynamics_usergroupmember_create.md)
-[PATCH userGroupMember](../api/dynamics_usergroupmember_update.md)
+[GET userGroupMember](../api/dynamics_usergroupmember_get.md)  
+[DELETE userGroupMember](../api/dynamics_usergroupmember_delete.md)  
+[POST userGroupMember](../api/dynamics_usergroupmember_create.md)  
+[PATCH userGroupMember](../api/dynamics_usergroupmember_update.md)  

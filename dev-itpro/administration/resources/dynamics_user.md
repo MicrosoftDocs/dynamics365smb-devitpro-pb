@@ -30,7 +30,7 @@ Represents an user in [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.
 
 ## Bound Actions
 
-The user resource type offers a bound action called `createNewUsersFromAzureAD` which creates new users from azure ad the corresponding user batch.
+The user resource type offers a bound action called `createNewUsersFromAzureAD` which create new users from azure ads the corresponding user batch.
 This is illustrated in the following example:
 `CREATENEWUSERSFROMAZUREAD https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/users({id})/Microsoft.NAV.createNewUsersFromAzureAD`
 
@@ -71,5 +71,5 @@ Here is a JSON representation of the user resource.
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
 ## See Also
-[GET user](../api/dynamics_user_get.md)
-[PATCH user](../api/dynamics_user_update.md)
+[GET user](../api/dynamics_user_get.md)  
+[PATCH user](../api/dynamics_user_update.md)  

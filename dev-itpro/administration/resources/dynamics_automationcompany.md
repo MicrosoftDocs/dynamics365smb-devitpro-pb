@@ -59,7 +59,7 @@ Here is a JSON representation of the automationCompany resource.
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
 ## See Also
-[GET automationCompany](../api/dynamics_automationcompany_get.md)
-[DELETE automationCompany](../api/dynamics_automationcompany_delete.md)
-[POST automationCompany](../api/dynamics_automationcompany_create.md)
-[PATCH automationCompany](../api/dynamics_automationcompany_update.md)
+[GET automationCompany](../api/dynamics_automationcompany_get.md)  
+[DELETE automationCompany](../api/dynamics_automationcompany_delete.md)  
+[POST automationCompany](../api/dynamics_automationcompany_create.md)  
+[PATCH automationCompany](../api/dynamics_automationcompany_update.md)  

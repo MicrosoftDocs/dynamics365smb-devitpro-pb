@@ -70,7 +70,7 @@ Here is a JSON representation of the userPermission resource.
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
 ## See Also
-[GET userPermission](../api/dynamics_userpermission_get.md)
-[DELETE userPermission](../api/dynamics_userpermission_delete.md)
-[POST userPermission](../api/dynamics_userpermission_create.md)
-[PATCH userPermission](../api/dynamics_userpermission_update.md)
+[GET userPermission](../api/dynamics_userpermission_get.md)  
+[DELETE userPermission](../api/dynamics_userpermission_delete.md)  
+[POST userPermission](../api/dynamics_userpermission_create.md)  
+[PATCH userPermission](../api/dynamics_userpermission_update.md)  

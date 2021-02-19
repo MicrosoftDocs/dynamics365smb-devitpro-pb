@@ -53,7 +53,7 @@ Here is a JSON representation of the file resource.
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
 ## See Also
-[GET file](../api/dynamics_file_get.md)
-[DELETE file](../api/dynamics_file_delete.md)
-[POST file](../api/dynamics_file_create.md)
-[PATCH file](../api/dynamics_file_update.md)
+[GET file](../api/dynamics_file_get.md)  
+[DELETE file](../api/dynamics_file_delete.md)  
+[POST file](../api/dynamics_file_create.md)  
+[PATCH file](../api/dynamics_file_update.md)  
