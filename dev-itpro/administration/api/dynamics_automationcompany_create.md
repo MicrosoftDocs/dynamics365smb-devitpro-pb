@@ -22,7 +22,7 @@ Creates an automation company in [!INCLUDE[d365fin_long_md](../../includes/d365f
 Replace the URL prefix for [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
 <!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different or there might be more than one -->
 ```
-POST businesscentralPrefix/companies({id})/automationCompanies({id})
+POST /microsoft/automation/{apiVersion}/companies({companyId})/automationCompanies
 ```
 <!-- END>EDIT_IS_REQUIRED -->
 ## Request headers
@@ -47,22 +47,22 @@ If successful, this method returns ```201 Created``` response code and a **autom
 **Request**
 
 Here is an example of the request.
-<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different. Fill in the property values -->
+
 ```json
-POST https://{businesscentralPrefix}/api/v2.0/companies({id})/automationCompanies({id})
+POST https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v1.0/companies({id})/automationCompanies
 Content-type: application/json
+
 {
-    "id" : "",
-    "name" : "",
-    "evaluationCompany" : "",
-    "displayName" : "",
-    "businessProfileId" : ""
+    "name": "CRONUS",
+    "evaluationCompany": false,
+    "displayName": "CRONUS",
+    "businessProfileId": ""
 }
 ```
-<!-- END>EDIT_IS_REQUIRED -->
+<!--
 **Response**
-Here is an example of the response.
-<!-- START>EDIT_IS_REQUIRED. Fill in values for properties -->
+Here is an example of the response.-->
+<!-- START>EDIT_IS_REQUIRED. Fill in values for properties
 ```json
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -74,7 +74,7 @@ Content-type: application/json
     "businessProfileId" : ""
 }
 ```
-<!-- END>EDIT_IS_REQUIRED -->
+-->
 ## See Also
 
 [Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  
