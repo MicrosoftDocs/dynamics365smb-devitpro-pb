@@ -1,40 +1,41 @@
 ---
-title: "Data Security"
+title: Data Security in Business Central
+description: Learn about the four different levels of data security in Business Central. Also learn how you control access to data. 
 ms.custom: na
 ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
-# [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Data Security
+# Data Security in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]
 
 The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] security system allows you to control which objects or tables a user can access within each database. You can specify the type of access that each user has to these objects and tables, whether they are able to read, modify, or enter data.  
 
- You can specify which records are stored in the tables that each user is allowed to access. This means that permissions can be allocated at both the table level and the record level.  
+You can specify which records are stored in the tables that each user is allowed to access. This means that permissions can be allocated at both the table level and the record level.  
   
- The security system contains information about the permissions that have been granted to each user who can access a particular database.  
+The security system contains information about the permissions that have been granted to each user who can access a particular database.  
   
- This information includes the roles that the users have been assigned, as well as any permissions that they have been granted to individual users.  
+This information includes the roles that the users have been assigned, as well as any permissions that they have been granted to individual users.  
   
- There are four different levels of security:  
+There are four different levels of security:  
   
--   Database  
+- Database  
   
--   Company  
+- Company  
   
--   Object  
+- Object  
   
--   Record  
+- Record  
   
-Graphically, these can be represented as the layers, where the central layer is the records in the database. 
+Graphically, these can be represented as the layers, where the central layer is the records in the database.  
 
 ## [Database-level security](#tab/database-level)
 
 The first layer of security when you open [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is database security.  
- 
+
 After you start [!INCLUDE[prod_short](../developer/includes/prod_short.md)] and attempt to open the database, your credentials are checked.  For more information about granting a user permission to create or work with a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database, see [Setting Database Owner and Security Administration Permissions](Setting-Database-Owner-and-Security-Administration-Permissions.md).  
 
 ## [Company-level security](#tab/company-level)
@@ -47,7 +48,7 @@ In [!INCLUDE[prod_short](../developer/includes/prod_short.md)], you can only ope
 
 ### Managing user access to companies
   
-Users' access to companies is controlled by permission sets. When you assign a permission set to a user, you can specify a company to restrict the user’s access for that permission set to that specific company. For more information, see [Managing Users and Permissions](/dynamics365/business-central/ui-how-users-permissions) in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application help .
+Users' access to companies is controlled by permission sets. When you assign a permission set to a user, you can specify a company to restrict the user's access for that permission set to that specific company. For more information, see [Managing Users and Permissions](/dynamics365/business-central/ui-how-users-permissions) in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application help .
 
 ## [Object-level security](#tab/object-level)
 
@@ -88,22 +89,22 @@ Record-level security filters are handled by SQL Server just like other filters 
 Users are given a database login when they have their own user ID and password in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. The user must enter the user ID and password to access the database.  
   
 > [!NOTE]  
->  Database logins are only valid for connecting to the database from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)].  
+> Database logins are only valid for connecting to the database from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)].  
   
 ### How database logins work
   
- Users must also have a login on SQL Server. SQL Server has its own authentication of the user’s ID and password. SQL Server does this by checking whether a SQL Server login with this user’s ID and password has been created.  
+ Users must also have a login on SQL Server. SQL Server has its own authentication of the user's ID and password. SQL Server does this by checking whether a SQL Server login with this user's ID and password has been created.  
   
  This login must first be created by a SQL Server administrator, with a SQL Server tool. If a SQL Server login has not been set up, authentication fails and the user receives an error. For more information, see [Setting Database Owner and Security Administration Permissions](Setting-Database-Owner-and-Security-Administration-Permissions.md).  
   
- The user is granted access to the server after his login has been authenticated. Database security then validates the user’s permissions by checking the database user accounts on the server. The permissions that the user has been granted to the various objects within the database, such as tables, are determined by the information contained in the user’s database user account. This account also contains information about any additional permissions that the user may have been granted to alter the database itself.
+ The user is granted access to the server after his login has been authenticated. Database security then validates the user's permissions by checking the database user accounts on the server. The permissions that the user has been granted to the various objects within the database, such as tables, are determined by the information contained in the user's database user account. This account also contains information about any additional permissions that the user may have been granted to alter the database itself.
 
 ## [Permissions on database objects](#tab/permissions)
 
 This section provides an overview of permissions and permission sets in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]  
   
 ### Permissions
- 
+
  If you have been granted permission to read a page, then you can open the page and view the data that it displays. If, however, you do not have write permission, you are not allowed to enter data into this page.  
   
  Sometimes, when you open a page it displays information from several tables. To access this page, you must have permission to view all the data displayed by the page. You might not have permission to read directly from all the tables that the page uses. In this case, you must have indirect permission to read from the tables in question. Having indirect permission to a table means that you cannot open the table and read from it but can only view the data it contains indirectly through another object, such as a page or report, that you have direct permission to access.  
@@ -119,8 +120,8 @@ This section provides an overview of permissions and permission sets in [!INCLUD
 |Modify|You can modify data in this object.|  
 |Delete|You can delete data from this object.|  
 |Execute|You can run this object.|
-    
+
 ## See Also  
 
- [Users and Credential Types](../administration/users-credential-types.md)   
- [Security Considerations](Security-Considerations.md)
+[Users and Credential Types](../administration/users-credential-types.md)  
+[Security Considerations](Security-Considerations.md)  

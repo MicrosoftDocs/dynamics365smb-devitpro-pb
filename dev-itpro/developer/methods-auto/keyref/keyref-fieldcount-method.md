@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -39,19 +39,20 @@ The number of fields that have been defined in the key.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Example  
- The following example retrieves the number of fields that are defined in a key in record. The table with ID 18 \(the Customer table\) is open with a reference to table 18. The [KEYINDEX Method \(RecordRef\)](../../methods/devenv-keyindex-method-recordref.md) method retrieves the second key in the record and store the *KeyRef* in the varKeyRef variable. The [FIELDCOUNT Method \(KEYREF\)](../../methods/devenv-fieldcount-method-keyref.md) is then used to return the number of fields defined in the key and displayed in a message box.
+## Example
+
+The following example retrieves the number of fields that are defined in a key in record. The table with ID 18 \(the Customer table\) is open with a reference to table 18. The [KeyIndex Method \(RecordRef\)](../../methods/devenv-keyindex-method-recordref.md) method retrieves the second key in the record and store the *KeyRef* in the varKeyRef variable. The [FieldCount Method \(KeyREF\)](../../methods/devenv-fieldcount-method-keyref.md) is then used to return the number of fields defined in the key and displayed in a message box.
  
-```  
+```al
 var
     RecRef: RecordRef;
     varKeyRef: KeyRef;
     VarCount: Integer;
 begin 
-    RecRef.OPEN(18);  
-    varKeyRef := RecRef.KEYINDEX(2);  
-    VarCount := varKeyRef.FIELDCOUNT;  
-    MESSAGE('The number of fields defined in the key is: %1', VarCount);  
+    RecRef.Open(18);  
+    varKeyRef := RecRef.KeyIndex(2);  
+    VarCount := varKeyRef.FieldCount;  
+    Message('The number of fields defined in the key is: %1', VarCount);  
 end;
 ```  
   

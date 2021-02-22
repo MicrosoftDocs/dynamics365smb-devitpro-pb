@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -40,9 +40,9 @@ The mode in which the session is running.
 ## Example  
  This example requires that you create a variable named Mode that has a DataType of ExecutionMode.  
 
-```  
-Mode := CURRENTEXECUTIONMODE;   
-MESSAGE('Current execution mode is %1.', Mode); 
+```al
+Mode := CurrentExecutionMode;   
+Message('Current execution mode is %1.', Mode); 
 ```
 
 ## See Also

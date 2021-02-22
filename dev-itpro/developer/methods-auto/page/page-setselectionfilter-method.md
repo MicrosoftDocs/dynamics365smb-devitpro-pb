@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -36,21 +36,22 @@ An instance of the [Page](page-data-type.md) data type.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks  
+## Remarks
+
 If all records are selected, marks will not be used.  
   
 If only the current record is selected on the page, then SetSelectionFilter does the following:  
   
--   Sets the current filter group to 0 on the destination record  
--   Adds filters on the primary key fields that point to the current record of the page  
+- Sets the current filter group to `0` on the destination record  
+- Adds filters on the primary key fields that point to the current record of the page  
   
 If more than one record is selected on the page, then SetSelectionFilter does the following:  
   
--   Copies the current key from the page source table to the destination record  
--   Copies the current sort order from the table to the destination record  
--   Copies the current filters that are set in all filter groups  
--   Copies the current filter group  
--   Marks the selected records and sets the "marked only" filter 
+- Copies the current key from the page source table to the destination record  
+- Copies the current sort order from the table to the destination record  
+- Copies the current filters that are set in all filter groups  
+- Copies the current filter group  
+- Marks the selected records and sets the "marked only" filter 
 
 ## See Also
 [Page Data Type](page-data-type.md)  

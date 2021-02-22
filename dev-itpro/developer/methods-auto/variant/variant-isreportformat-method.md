@@ -2,11 +2,11 @@
 title: "Variant.IsReportFormat Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 01/12/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -16,7 +16,7 @@ author: SusanneWindfeldPedersen
 # Variant.IsReportFormat Method
 > **Version**: _Available from runtime version 1.0._
 
-Indicates whether an AL variant contains a RecordFormat variable.
+Indicates whether an AL variant contains a ReportFormat variable.
 
 
 ## Syntax
@@ -34,7 +34,7 @@ An instance of the [Variant](variant-data-type.md) data type.
 ## Return Value
 *Ok*
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)
-**true** if the AL variant contains a RecordFormat variable, otherwise **false**.
+**true** if the AL variant contains a ReportFormat variable, otherwise **false**.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

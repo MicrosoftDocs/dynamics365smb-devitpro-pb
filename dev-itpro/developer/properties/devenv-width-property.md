@@ -5,7 +5,7 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 ms.assetid: 59701d5d-65f8-42e8-9b1b-8c47709cf4bc
 caps.latest.revision: 22

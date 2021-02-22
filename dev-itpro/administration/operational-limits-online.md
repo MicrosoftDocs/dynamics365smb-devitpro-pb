@@ -7,13 +7,13 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.author: jswymer
 ---
 
 # Operational Limits for Business Central Online
 
-To ensure the availability and quality of Business Central services, there are limits on certain operations. This article describes the limits and, in some cases, the strategy behind them. The limits are per-tenant limits.
+To ensure the availability and quality of Business Central services, there are limits on certain operations. This article describes the limits and, in some cases, the strategy behind them.
 
 > [!TIP]
 > Telemetry is gathered on some of the operations that have a limit. The telemetry provides insight into operations for which limits were exceeded. For more information, see [Monitoring and Analyzing Telemetry](telemetry-overview.md).
@@ -25,12 +25,14 @@ For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, you can'
   
 |Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
 |---------|--------------------------------------------------------------------------------|------|
-<!-- These are per webcore limits and should not be documented as they confuse partners
+|Reconnect period|The time during which a client can reconnect to the service after being disconnected.|  10 minutes|
+<!-- these settings are per node. We should not expose these to partners 
 |Max concurrent calls|The maximum number of concurrent client calls that can be active.|1000|  
 |Max concurrent connections|The maximum number of concurrent client connections that the service accepts. |500|
 |Max number of orphaned connections|Th maximum number of orphaned connections to be kept alive at the same time for the time that is specified by **ReconnectPeriod**.<br /><br /> A connection is orphaned when the client is involuntarily disconnected from service.<br /><br /> You can also use **MaxValue** as a value to indicate no limit.o| 20|
 -->
-|Reconnect period|The time during which a client can reconnect to the service after being disconnected.|  10 minutes|
+
+
 
 <!-- no limit
 |Operation timeout|The maximum time for the service to return a call from the client.||  

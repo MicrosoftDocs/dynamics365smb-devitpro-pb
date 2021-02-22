@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -53,11 +53,11 @@ Classification of data in message.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks 
-You use the SENDTRACETAG method for instrumenting the application for telemetry. When the SENDTRACETAG method called, a telemetry trace event is emitted. The event can then be recorded in the Windows event log or collected by other event trace collection tools, like PerfView, Logman, and Performance Monitor. 
+You use the SendTraceTag method for instrumenting the application for telemetry. When the SendTraceTag method called, a telemetry trace event is emitted. The event can then be recorded in the Windows event log or collected by other event trace collection tools, like PerfView, Logman, and Performance Monitor. 
 
-A telemetry event is given one of the following event IDs, depending on the `DATACLASSIFICATION`and `VERBOSITY`:
+A telemetry event is given one of the following event IDs, depending on the `DataClassification`and `Verbosity`:
 
-|  DATACLASSIFICATION |  VERBOSITY |  ID  |
+|  DataClassification |  Verbosity |  ID  |
 |---------------------|------------|------|
 |All except `CustomerContent` and `EndUserIdentifiableInformation`|Critical|700|
 ||Error|701|
@@ -74,16 +74,16 @@ A telemetry event is given one of the following event IDs, depending on the `DAT
 <!-- For more information about instrumenting and monitoring telemetry, see [Instrumenting an Application for Telemetry](../../instrumenting-application-for-telemetry.md) and [Monitoring-Dynamics NAV Server Events](../../Monitoring-Microsoft-Dynamics-NAV-Server-Events.md). -->
 
 > [!NOTE]
-> The SENDTRACETAG method is marked as obsolete in [!INCLUDE[prod_short](../../includes/prod_short.md)] 2020 release wave 2 (v17). You can still use it, but we recommend that you send traces to Application Insights using the LOGMESSAGE method instead. For more information, see [Creating Custom Telemetry Traces for Application Insights Monitoring](../../devenv-instrument-application-for-telemetry-app-insights.md).
+> The SendTraceTag method is marked as obsolete in [!INCLUDE[prod_short](../../includes/prod_short.md)] 2020 release wave 2 (v17). You can still use it, but we recommend that you send traces to Application Insights using the LOGMessage method instead. For more information, see [Creating Custom Telemetry Traces for Application Insights Monitoring](../../devenv-instrument-application-for-telemetry-app-insights.md).
 
 ## Example 
 The following code defines simple telemetry events for the five different severity levels. 
-```  
-SENDTRACETAG('Cronus-0001', 'Action', VERBOSITY::Critical, 'This is a critical message.', DATACLASSIFICATION::CustomerContent);
-SENDTRACETAG('Cronus-0002', 'Action', VERBOSITY::Error, 'This is an error message.',  DATACLASSIFICATION::EndUserIdentifiableInformation);
-SENDTRACETAG('Cronus-0003', 'Action', VERBOSITY::Warning, 'This is a warning message.', DATACLASSIFICATION::AccountData);
-SENDTRACETAG('Cronus-0004', 'Action', VERBOSITY::Normal, 'This is an informational message.', DATACLASSIFICATION::OrganizationIdentifiableInformation);
-SENDTRACETAG('Cronus-0005', 'Action', VERBOSITY::Verbose, 'This is a verbose message.', DATACLASSIFICATION::SystemMetadata);
+```al
+SendTraceTag('Cronus-0001', 'Action', Verbosity::Critical, 'This is a critical message.', DataClassification::CustomerContent);
+SendTraceTag('Cronus-0002', 'Action', Verbosity::Error, 'This is an error message.',  DataClassification::EndUserIdentifiableInformation);
+SendTraceTag('Cronus-0003', 'Action', Verbosity::Warning, 'This is a warning message.', DataClassification::AccountData);
+SendTraceTag('Cronus-0004', 'Action', Verbosity::Normal, 'This is an informational message.', DataClassification::OrganizationIdentifiableInformation);
+SendTraceTag('Cronus-0005', 'Action', Verbosity::Verbose, 'This is a verbose message.', DataClassification::SystemMetadata);
 ```  
 
 The events emitted by this code will have the events IDs (listed in the order that the are called): 707, 708, 705, 702, and 704.

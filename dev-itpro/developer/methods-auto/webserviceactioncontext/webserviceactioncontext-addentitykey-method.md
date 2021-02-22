@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -46,8 +46,9 @@ The value for the field in the entity key.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example
-```
-actionContext.AddEntityKey(Rec.FIELDNO(Id), ToSalesHeader.Id);
+
+```al
+actionContext.AddEntityKey(Rec.FieldNO(Id), ToSalesHeader.Id);
 ```
 For a complete code example, see [Creating and Interacting with an OData V4 Bound Action](../../devenv-creating-and-interacting-with-odatav4-bound-action.md).
 

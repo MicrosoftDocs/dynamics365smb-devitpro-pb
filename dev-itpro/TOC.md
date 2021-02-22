@@ -1,4 +1,4 @@
-# [Development and administration](index.md)
+﻿# [Development and administration](index.md)
 # [New and planned](/dynamics365/business-central/product-news?toc=/dynamics365/business-central/dev-itpro/toc.json)
 # Get started
 ## [Overview of business functionality](/dynamics365/business-central/across-business-functionality?toc=/dynamics365/business-central/dev-itpro/toc.json)
@@ -35,7 +35,7 @@
 #### [Using Application Family](deployment/embed-app-using-application-family.md)
 #### Application Access Management
 ##### [Application Access Management for ISVs and VARs](embedapps/embed-app-application-access-management.md)
-##### [Application Access Managment API](embedapps/embed-app-application-access-management-api.md)
+##### [Application Access Management API](embedapps/embed-app-application-access-management-api.md)
 #### App Management
 ##### [Introduction](administration/appmanagement/app-management-overview.md)
 ##### [App Management API](administration/appmanagement/app-management-api.md)
@@ -45,8 +45,7 @@
 ### [Connect with customers](/partner-center/connect-with-your-customers?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Customize Business Central](/dynamics365/business-central/ui-customizing-overview?toc=/dynamics365/business-central/dev-itpro/toc.json) 
 ## Frequently asked questions
-### [Frequently asked questions (general)](faq.md)
-### [FAQ about Connecting to the Intelligent Cloud from On-Premises Solutions](administration/FAQ-Intelligent-Cloud.md)
+### [Frequently asked questions (general)](faq.yml)
 ### [FAQ for Developing in AL](developer/devenv-dev-faq.md)
 ### [FAQ about Library and Dependency Apps in Business Central](developer/app-faq-dependencies-libraries.md)
 ### [FAQ about Testing your Business Central App](developer/app-faq-test.md)
@@ -55,6 +54,7 @@
 ### [FAQ for Marketing Validation](developer/readiness/readiness-marketing-validation-faq.md)
 ### [FAQ for Update Lifecycle for AppSource Apps](developer/devenv-update-app-life-cycle-faq.md)
 ### [FAQ About the Windows Client and Business Central](faq-win-cli.md)
+### [FAQ about Connecting to Business Central Online from On-Premises Solutions](administration/FAQ-Intelligent-Cloud.md)
 ## Help and Support
 ### [Resources for Help and Support](help-and-support.md)
 ### [Legal Resources](terms/legal.md)
@@ -90,6 +90,7 @@
 ## [Enabling New Features Ahead of Time](administration/feature-management.md)
 ## [Managing Technical Support](administration/manage-technical-support.md)
 ## [Special Permission Sets](administration/administration-special-permission-sets.md)
+## [Setting up the Excel Add-In](administration/configuring-excel-addin.md)
 ## [Network Configuration for the Excel Add-In](administration/configuring-network-for-addins.md)
 ## [Setting up App Key Vaults for Extensions](administration/setup-app-key-vault.md)
 ## [Upgrading AppSource Apps in Production](developer/devenv-upgrade-appsource-app-in-prod.md)
@@ -149,11 +150,12 @@
 ### [Migrating from Business Central On-Premises](administration/migrate-business-central-on-premises.md)
 ### [Migrating from Dynamics GP](administration/migrate-dynamics-gp.md)
 ### [Migrating from Dynamics NAV](upgrade/Upgrade-Considerations.md#online)
-### [FAQ about Connecting to the Intelligent Cloud](administration/faq-intelligent-cloud.md)
+### [FAQ about Connecting to Business Central Online from On-Premises Solutions](administration/faq-intelligent-cloud.md)
 ### [Troubleshooting Cloud Migration](administration/migration-troubleshooting.md)
 <!--### [Migrating from Dynamics SL](administration/migrate-data.md)-->
 <!-- end migrate -->
 ## What's New or Changed
+### [Update 17.4](whatsnew/whatsnew-update-17-4.md)
 ### [Update 17.3](whatsnew/whatsnew-update-17-3.md)
 ### [Update 17.2](whatsnew/whatsnew-update-17-2.md)
 ### [Update 17.1](whatsnew/whatsnew-update-17-1.md)
@@ -260,6 +262,8 @@
 ### [Raising Events](developer/devenv-raising-events.md)
 ### [Subscribing to Events](developer/devenv-subscribing-to-events.md)
 ### [Discover Events Using the Event Recorder](developer/devenv-events-discoverability.md)
+### [Event Example](developer/devenv-events-example.md)
+### [Walkthrough: Implementing New Workflow Events and Responses](developer/devenv-walkthrough-workflow-events-responses.md)  
 ## [Notifications](developer/devenv-notifications-developing.md)
 ## [Task Scheduler](developer/devenv-task-scheduler.md)
 ## App Key Vaults for Secrets
@@ -427,6 +431,7 @@
 ## Rules and Guidelines
 ### [Rules and Guidelines for AL Code](compliance/apptest-overview.md)
 ### [Best Practices for AL](compliance/apptest-bestpracticesforalcode.md)
+### [Best Practices for Deprecation of Code in the Base App](developer/devenv-deprecation-guidelines.md)
 ### [Benefits and Guidelines for using a Prefix or Suffix](compliance/apptest-prefix-suffix.md)
 ### [Instrumenting an Application for Telemetry](developer/devenv-instrument-application-for-telemetry.md)
 ### [Testing your Extension](compliance/apptest-testingyourextension.md)
@@ -494,6 +499,7 @@
 #### [Test Codeunits and Text Methods](developer/devenv-test-codeunits-and-test-methods.md)
 #### [Method Attributes](developer/methods/devenv-method-attributes.md)
 #### [Procedure Overload](developer/methods/devenv-overload-method.md)
+#### [Joker Data Type](developer/methods/devenv-joker-datatype.md)
 #### Option Types
 <!-- [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -2094,6 +2100,7 @@
 ## Compliance
 ### [Compliance Overview](/dynamics365/business-central/compliance/compliance-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
 <!-- end security -->
+## [Service Overview](service-overview.md)
 <!-- begin performance -->
 # Performance
 ## [Performance Overview](performance/performance-overview.md)
@@ -2236,11 +2243,16 @@
 #### [Configure IIS](deployment/configure-iis.md)
 #### [Configure SSL](deployment/configure-ssl-web-client-connection.md)
 #### [Setting Up Multiple Web Server Instances](deployment/configure-multiple-web-server-instances.md)
-### [Migrating to Multitenancy](deployment/migrating-to-multitenancy.md)
+### Multitenant Deployment
+#### [Architecture Overview](deployment/multitenant-deployment-architecture.md)
+#### [Setup Guide](administration/multitenant-setup-guide.md)
+#### Migrating From Single to Multitenancy
+##### [Overview](deployment/migrating-to-multitenancy.md)
+##### [Separating Application Data from Business Data](deployment/separating-application-data-from-business-data.md)
 ### Database
 #### [Installation Considerations for SQL Server](deployment/installation-considerations-for-microsoft-sql-server.md)
 #### [Configuring Database Authentication](administration/configure-sql-server-authentication.md)
-#### [Creating Databases](deployment/devenv-create-databases.md)
+#### [Creating Application and Tenant Databases](deployment/devenv-create-databases.md)
 #### [Deploying to Azure SQL Database](deployment/deploy-database-azure-sql-database.md)
 #### [Reducing Database Size](administration/database-reduce-data.md)
 ### Business Central Mobile App
@@ -2327,7 +2339,7 @@
 #### [Transitioning From Codeunit 1](upgrade/transition-from-codeunit1.md)
 #### Technical Upgrade
 ##### [Technical Upgrade](upgrade/Converting-a-Database.md)
-##### [Tecnical Upgrade Quick Reference](upgrade/technical-upgrade-checklist.md)
+##### [Technical Upgrade Quick Reference](upgrade/technical-upgrade-checklist.md)
 #### Application and Data Upgrade
 ##### [Upgrading the Application Code](upgrade/Upgrading-the-Application-Code.md)
 #### Upgrading the Data: Single-Tenant Mode

@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -41,17 +41,17 @@ Sets a task that runs a codeunit to the ready state. The task will not run unles
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- For more information about tasks and **TASKSCEDULER** data type methods, see managing tasks [Task Scheduler](../../devenv-task-scheduler.md).  
+ For more information about tasks and **TaskScheduler** data type methods, see managing tasks [Task Scheduler](../../devenv-task-scheduler.md).  
 
 ## Example  
- The following example creates a task, and then uses the SETTASKREADY method to set the task to ready.  
+ The following example creates a task, and then uses the SetTaskReady method to set the task to ready.  
  
-```  
+```al
 var
     TaskID: GUID;
 begin
-    TaskID := TASKSCHEDULER.CREATETASK(CODEUNIT::"Job Queue Dispatcher", CODEUNIT::"Job Queue Error Handler");  
-    TASKSCHEDULER.SETTASKREADY(taskID);  
+    TaskID := TaskScheduler.CreateTASK(CodeUnit::"Job Queue Dispatcher", CodeUnit::"Job Queue Error Handler");  
+    TaskScheduler.SetTaskReady(taskID);  
 end;
 ```  
 

@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -45,7 +45,7 @@ The current value of the FilterPageBuilder UI caption.
 
 ## Example
 
-```  
+```al
 var
     varFilterPageBuilder: FilterPageBuilder;
     Customer: Record Customer;

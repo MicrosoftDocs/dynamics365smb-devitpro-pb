@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -41,11 +41,12 @@ The text of the object
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Example  
- If you add the following code to a page method or trigger, then the returned string is displayed in a message window.  
+## Example
+
+If you add the following code to a page method or trigger, then the returned string is displayed in a message window.  
   
-```  
-MESSAGE(CurrPage.OBJECTID(TRUE));  
+```al
+Message(CurrPage.ObjectId(true));  
   
 ```
 ## See Also

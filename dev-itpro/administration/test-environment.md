@@ -1,12 +1,12 @@
 ---
 title: Preparing test environments of Business Central
-description: Get an overview of your options for deploying test environments for Dynamics 365 Business Central
+description: Get an overview of your options for deploying test environments for Dynamics 365 Business Central for performance testing.
 author: edupont04
 ms.custom: na
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: edupont
 ms.date: 10/01/2020
@@ -55,7 +55,7 @@ This type of environment can be useful if you want to run benchmark tests, for e
     1. Open another browser window in InPrivate or Incognito mode. This way, you can make sure that you are not logging in with your own credentials.
 
         > [!TIP]
-        > We recommend that you use profiles in the New Edge browser instead. For more information, see [Microsoft Edge documentation](/microsoft-edge/).
+        > We recommend that you use profiles in the Microsoft Edge browser instead. For more information, see [Microsoft Edge documentation](/microsoft-edge/).
 
     2. Go to *[https://businesscentral.dynamics.com/](https://businesscentral.dynamics.com/)*, and then, when you are asked to sign in, use the credentials of the user you created in step 2.
 

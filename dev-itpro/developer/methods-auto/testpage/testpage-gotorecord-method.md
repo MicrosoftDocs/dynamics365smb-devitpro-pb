@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -42,7 +42,7 @@ The record to find.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
-The GOTORECORD method loops over all records until it finds the identifies record.  For each record, the [OnAfterGetCurrentRecord Trigger](../../triggers/devenv-onaftergetcurrrecord-trigger.md) is executed. 
+The GoToRecord method loops over all records until it finds the identifies record.  For each record, the [OnAfterGetCurrentRecord Trigger](../../triggers/devenv-onaftergetcurrrecord-trigger.md) is executed. 
 
 ## See Also
 [TestPage Data Type](testpage-data-type.md)  

@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -39,28 +39,27 @@ An instance of the [FieldRef](fieldref-data-type.md) data type.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Example  
- The following example opens the Customer table as a RecordRef variable that is named CustomerRecref. The code loops through fields 1 to 5 and creates a FieldRef that is named MyFieldRef for each field that is selected. `MyFieldRef.TYPE` retrieves the data of each field and displays it in a message box. 
+## Example
+
+The following example opens the Customer table as a RecordRef variable that is named CustomerRecref. The code loops through fields 1 to 5 and creates a FieldRef that is named MyFieldRef for each field that is selected. `MyFieldRef.Type` retrieves the data of each field and displays it in a message box. 
  
- 
- ```
+```al
 var
     MyFieldRef: FieldRef;
     CustomerRecref: RecordRef;
     varType: Variant;
     Text000: Label 'Field %1 is a %2 data type.';
 begin
-    CustomerRecref.OPEN(DATABASE::Customer);  
+    CustomerRecref.Open(Database::Customer);  
     for i := 1 to 5 do begin  
-      MyFieldRef := CustomerRecref.FIELD(i);  
-      MESSAGE(Text000, i, MyFieldRef.TYPE);  
+      MyFieldRef := CustomerRecref.Field(i);  
+      Message(Text000, i, MyFieldRef.Type);  
     end;  
 END;
-  
 ```  
-  
-  
+    
 ## See Also
+
 [FieldRef Data Type](fieldref-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

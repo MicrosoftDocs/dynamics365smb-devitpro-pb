@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -56,7 +56,7 @@ The input string with the converted characters.
   
 ## Example  
 
-```  
+```al
 var
     OriginalString: Text[30];
     FromChars: Text[30];
@@ -71,9 +71,9 @@ begin
     OriginalString := Text000;  
     FromChars := Text001;  
     ToChars := Text002;   
-    NewString := CONVERTSTR(OriginalString, FromChars, ToChars);  
-    MESSAGE(Text003, OriginalString);  
-    MESSAGE(Text004, NewString);  
+    NewString := ConvertStr(OriginalString, FromChars, ToChars);  
+    Message(Text003, OriginalString);  
+    Message(Text004, NewString);  
 end;
 ```  
   

@@ -1,12 +1,13 @@
 ---
-title: "Security and Protection"
-description: Get an overview of the articles about security and protection in Business Central
+title: Security and Protection
+description: Get an overview of the articles about security and protection in Business Central, so that you can configure your solution.
 author: jswymer
+
 ms.custom: na
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.date: 10/01/2020
 ms.author: jswymer

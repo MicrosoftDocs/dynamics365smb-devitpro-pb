@@ -1,12 +1,12 @@
 ---
-title: "Technical Support"
-description: Learn about how to support your Business Central customers, online and on-premises.
+title: Technical Support Overview for Dynamics 365 Business Central
+description: Learn about how to support your Business Central customers, online and on-premises, troubleshoot issues, and when to escalate problems to Microsoft.
 author: edupont04
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 10/28/2020
+ms.date: 01/19/2021
 ---
 # Technical Support for [!INCLUDE[prod_long](developer/includes/prod_long.md)]
 
@@ -50,6 +50,15 @@ For more information, see [Configuring [!INCLUDE[webserver](developer/includes/w
 > [!NOTE]
 > The **Help and Support** page is available only in the browser.  
 -->
+
+## Getting support for extension issues
+
+As a partner, you must identify if the issue is caused by application logic or platform behavior:
+
+- If the issue is caused by application logic, you must identify the publisher of the extension.
+- If the extension is a per-tenant extension, as a partner, you must fix the issue.
+- If the extension is an AppSource extension, you must contact the AppSource partner that developed the extension.
+- If the extension is published by Microsoft, you must contact Microsoft support.
 
 ## Troubleshooting and support
 

@@ -3,7 +3,7 @@ title: Managing Environments | Microsoft Docs
 description: Use the Business Central administration center to manage your tenant environments. 
 author: jswymer
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -121,6 +121,17 @@ To cancel a session, select it from the list and then select **Cancel selected s
 Database backups are an essential part of any business continuity and disaster recovery strategy, because they protect your data from corruption or deletion. [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online service uses Azure SQL Database as the underlying database backup technology for its environments. All databases are protected by automated backups that are continuously created and maintained by the Azure SQL service. The backup retention period for Business Central databases is set to 30 days for both production and sandbox environments. For more information about this backup process, see [Automated backups - Azure SQL Database & SQL Managed Instance](/azure/azure-sql/database/automated-backups-overview).  
 
 As an administrator, you can restore an existing environment from a time in the past, within the 30-day retention period. An environment can only be restored within the same [!INCLUDE[prod_short](../developer/includes/prod_short.md)] version (minor and major).
+
+### Users who can restore environments
+
+Permission to restore environments is limited to specific types of users: internal and delegated administrators. The following users are allowed to restore environments.
+
+- Delegated administrators from reselling partners
+- Administrators from the organization that subscribes to [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online
+
+Also, these users must have the **D365 BACKUP/RESTORE** permission set assigned to their user account in the environment they're trying to export.
+
+For more information about permissions sets and user groups, see [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions).
 
 ### Considerations and limitations
 

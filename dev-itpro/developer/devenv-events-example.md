@@ -2,11 +2,11 @@
 title: "Event example"
 description: This article shows a simple example of how to use events in Business Central.
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 01/22/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
@@ -26,7 +26,7 @@ This article includes a simple code example to explain how to use Business Centr
 codeunit 50100 MyPublishers
 {
     [IntegrationEvent(false, false)]
-    procedure OnAddressLineChanged(line: Text[100]);
+    procedure OnAddressLineChanged(line: Text[100])
     begin
     end;
 }
@@ -55,8 +55,8 @@ pageextension 50100 MyCustomerExt extends "Customer Card"
 
 codeunit 50101 MySubscribers
 {
-    //Set the event subscribers to manual binding;
-    EventSubscriberInstance = Manual;
+    //Set the event subscribers to bind automatically to the event
+    EventSubscriberInstance = StaticAutomatic;
 
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"MyPublishers", 'OnAddressLineChanged', '', true, true)]
     procedure CheckAddressLine(line: Text[100]);

@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -51,25 +51,25 @@ An optional comment about the session event. The comment is stored in Table 2000
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- The session that you want to stop and the session that calls STOPSESSION must be running on the same instance of [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)]. The session is stopped before the next AL statement executes. Open transactions are rolled back.  
+ The session that you want to stop and the session that calls StopSession must be running on the same instance of [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)]. The session is stopped before the next AL statement executes. Open transactions are rolled back.  
 
 > [!NOTE]  
->  If the current executing statement is the **SLEEP** method, then the session is stopped immediately.  
+>  If the current executing statement is the **Sleep** method, then the session is stopped immediately.  
 
- When a session is executing AL that does not interact with the server connection or the access lock used by the connection, STOPSESSION cannot terminate the connection. STOPSESSION can terminate connections that are inactive, idle, or using the database but not blocked.  
+ When a session is executing AL that does not interact with the server connection or the access lock used by the connection, StopSession cannot terminate the connection. StopSession can terminate connections that are inactive, idle, or using the database but not blocked.  
 
- You cannot stop the current, active session in which you are executing the **STOPSESSION** call.  
+ You cannot stop the current, active session in which you are executing the **StopSession** call.  
 
 ## Example  
  This example assumes that you have a table named CacheStressTest that you use for testing.  
 
-```
+```al
 var
     CacheStressTestRec: Record Customer;
     SessionID: Integer;
 begin
-    STARTSESSION(SessionId, CODEUNIT::"Cache Stress Test", COMPANYNAME, CacheStressTestRec);  
-    STOPSESSION(SessionId, 'Logoff cache stress test session');  
+    StartSession(SessionId, CodeUnit::"Cache Stress Test", CompanyName, CacheStressTestRec);  
+    StopSession(SessionId, 'Logoff cache stress test session');  
 end;
 
 ```

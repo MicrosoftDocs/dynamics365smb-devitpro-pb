@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -43,15 +43,15 @@ A RecordRef that refers to a new record with the same filters, current keys, and
 ## Example  
  The following example opens table 18 \(Customer\) as a RecordRef variable named RecordRef1 and uses the DUPLICATE method to copy the filters, current keys and marks from RecordRef1 into a new RecordRef variable named RecordRef2. After the DUPLICATE method is executed, the RecordRef1 and RecordRef2 variables are identical. 
  
-```  
+```al
 var
     RecordRef1: RecordRef;
     RecordRef2: RecordRef;
     Text000: Label 'RecordRef1 refers to the %1 table.\\ RecordRef2 refers to the %2 table.';
 begin   
-    RecordRef1.OPEN(18);  
-    RecordRef2 := RecordRef1.DUPLICATE;  
-    MESSAGE(Text000, RecordRef1.CAPTION, RecordRef2.CAPTION); 
+    RecordRef1.Open(18);  
+    RecordRef2 := RecordRef1.Duplicate;  
+    Message(Text000, RecordRef1.Caption, RecordRef2.Caption); 
 end; 
 ```  
 

@@ -3,7 +3,8 @@ title: The SMB opportunity for app publishers
 description: Learn about the business opportunity we see for software companies in the SMB space if you build your solution on Dynamics 365 Business Central.
 author: edupont04
 manager: edupont
-ms.topic: article
+
+ms.topic: conceptual
 ms.service: dynamics365-business-central
 ms.date: 11/30/2020
 ms.author: kurtju
@@ -65,11 +66,11 @@ Learn more on how to build your app: [Getting Started with AL](/dynamics365/busi
 
 Embed Business Central as an integral component in an end-to-end industry solution. Here are a few examples of embed solutions available on Microsoft AppSource:  
 
-- [4PS construct, an all-in one solution for construction](https://appsource.microsoft.com/product/dynamics-365-business-central/TYPE.connect%7CPUBID.4psbv_ah%7CAID.4ps_construct%7CPAPPID.00000000-0000-0000-0000-000000000000). 4PS has specifically developed an integrated software solution based on the Microsoft platform and tailored for construction, civil engineering, mechanical and electrical, service and maintenance, house builders and equipment rental companies
+- [4PS construct, an all-in one solution for construction](https://appsource.microsoft.com/product/dynamics-365-business-central/TYPE.connect%7CPUBID.4psbv_ah%7CAID.4ps_construct%7CPAPPID.3a58b871-bfa9-4fd3-ba37-f16f72144ac6?tab=Overview). 4PS has specifically developed an integrated software solution based on the Microsoft platform and tailored for construction, civil engineering, mechanical and electrical, service and maintenance, house builders and equipment rental companies
 
-- [LSCentral](https://appsource.microsoft.com/product/dynamics-365-business-central/TYPE.connect%7CPUBID.ls_retail%7CAID.ls008-454%7CPAPPID.c1fed350-1023-4877-957a-37a6657341e6) from LSRetail. The complete, unified commerce online platform to manage your entire retail and food service operations
+- [LS Central](https://appsource.microsoft.com/product/dynamics-365-business-central/TYPE.connect%7CPUBID.ls_retail%7CAID.ls008-454%7CPAPPID.90e5423d-5b61-45da-99ae-d34752f11a87?tab=Overview) from LS Retail. The complete, unified commerce online platform to manage your entire retail and food service operations
 
-- [Dynamics Empire online](https://appsource.microsoft.com/product/dynamics-365-business-central/TYPE.connect%7CPUBID.cegekanv%7CAID.dynamicsempireonline%7CPAPPID.00000000-0000-0000-0000-000000000000), cegeka-dsa's open, secure and innovative real estate solution.
+- [Dynamics Empire Online](https://appsource.microsoft.com/product/dynamics-365-business-central/TYPE.connect%7CPUBID.cegekanv%7CAID.dynamicsempireonline%7CPAPPID.b62d9fda-7b6a-4808-a0c7-0f995693c47d?tab=Overview), cegeka-dsa's open, secure and innovative real estate solution.
 
 <!--- Progressus,-->
 

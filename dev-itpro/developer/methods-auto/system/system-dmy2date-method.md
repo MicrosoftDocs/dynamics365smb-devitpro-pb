@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -49,7 +49,7 @@ The four-digit number of the year. If you omit this optional parameter, the curr
 
 ## Example  
  
-```
+```al
 var
     Day: Integer;
     Month: Integer;
@@ -60,14 +60,14 @@ begin
     Day := 17;  
     Month := 2;  
     Year := 2014;  
-    OutputDate := DMY2DATE(Day, Month, Year);  
-    MESSAGE(Text000, Day, Month, Year, OutputDate);  
+    OutputDate := DMY2Date(Day, Month, Year);  
+    Message(Text000, Day, Month, Year, OutputDate);  
 end;
 ```  
   
- On a computer that has the regional format set to English \(United States\), the message window displays the following:  
+On a computer that has the regional format set to English \(United States\), the message window displays the following:  
   
- **Day number 17, month number 2, and year number 2014 corresponds to the date 02/17/14.**
+**Day number 17, month number 2, and year number 2014 corresponds to the date 02/17/14.**
  
 ## See Also
 [System Data Type](system-data-type.md)  

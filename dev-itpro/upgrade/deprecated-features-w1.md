@@ -3,11 +3,11 @@ title: "Deprecated Features in W1"
 description: describes the features that have been moved, removed, or replaced in the W1 version 
 author: bholtorf
 ms.custom: na
-ms.date: 01/07/2020
+ms.date: 01/12/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.assetid: d60655a7-3e9b-4577-a2e3-d12427a656c2
 caps.latest.revision: 16
@@ -28,12 +28,13 @@ The next sections give a brief description of the deprecated features, state wha
 
 ## Changes in 2022 release wave 1
 
-### Web Service Access Keys (Basic Auth) for SaaS 
+### <a name="accesskeys"></a>Web Service Access Keys (Basic Auth) for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Online (SaaS)
+
 The following feature will be **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 1.
 
 |Moved, Removed, or Replaced? |Why?|
 |---------|---------|
-|Removed (for SaaS)| The capability to access web services in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] using Web Service Access Key (Basic Auth) is deprecated for SaaS. OAuth2 will be the authentication option for SaaS. OAuth samples are published in the [BCTech repo](https://github.com/microsoft/BCTech/tree/master/samples/PSOAuthBCAccess). For on-premises, Web Service Access Key (Basic Auth) will remain an option for the time being. This change has no impact on how [!INCLUDE[prod_short](../developer/includes/prod_short.md)] connects to external services.|
+|Removed (for SaaS only)| The capability to access web services in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] using Web Service Access Key (Basic Auth) is deprecated for SaaS. OAuth2 will be the authentication option for SaaS. OAuth samples are published in the [BCTech repo](https://github.com/microsoft/BCTech/tree/master/samples/PSOAuthBCAccess). For on-premises, Web Service Access Key (Basic Auth) will remain an option for the time being. This change has no impact on how [!INCLUDE[prod_short](../developer/includes/prod_short.md)] connects to external services.|
 
 ## Changes in 2021 release wave 2
 

@@ -34,7 +34,7 @@ ms.author: dmitrych
     <!--Alternatively, if you used the **Dynamics 365 [!INCLUDE [prod_short](prod_short.md)]** content pack, go to [https://businesscentral.dynamics.com/?redirectedFromSignup=1&response=AlreadyAssignedLicense](https://businesscentral.dynamics.com/?redirectedFromSignup=1&response=AlreadyAssignedLicense) and sign in with the new administrator account that you got as part of your demo account, typically called something like `admin@CRMbc123456.onmicrosoft.com`, or `admin@contoso.onmicrosoft.com`.-->
 
     > [!TIP]
-    > We recommend that you use profiles in the New Edge browser rather than InPrivate or Incognito browser mode. For more information, see [Microsoft Edge documentation](/microsoft-edge/).
+    > We recommend that you use profiles in the Microsoft Edge browser rather than InPrivate or Incognito browser mode. For more information, see [Microsoft Edge documentation](/microsoft-edge/).
 
 By now, you have a dedicated demonstration organization in Azure that includes multiple demo users with Microsoft 365 licenses, and a [!INCLUDE [prod_short](prod_short.md)] environment.
 

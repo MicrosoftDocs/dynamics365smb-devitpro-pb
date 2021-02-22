@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -37,18 +37,20 @@ Ok :=   System.GuiAllowed()
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks  
- User Portal Application Server accepts GUIALLOWED.  
+## Remarks
+
+User Portal Application Server accepts GuiAllowed.  
 
 ## Example  
- This example shows how to use the GUIALLOWED method.  
 
-```  
+This example shows how to use the GuiAllowed method.  
+
+```al
 var
     Text000: Label 'Code is running on a client.';
 begin
-    if GUIALLOWED then  
-     MESSAGE(Text000);  
+    if GuiAllowed then  
+     Message(Text000);  
 end;
 ```  
 
@@ -59,9 +61,10 @@ end;
  If the code runs on Microsoft Dynamics NAV Application Server, then the message will not be displayed.  
 
 > [!NOTE]  
->  If the [MESSAGE Method \(Dialog\)](../../methods-auto/dialog/dialog-message-method.md) or the [ERROR Method \(Dialog\)](../../methods-auto/dialog/dialog-error-method.md) is called when the code is running on Microsoft Dynamics NAV Application Server, then the message is written to the event log of the operating system. 
+> If the [Message Method \(Dialog\)](../../methods-auto/dialog/dialog-message-method.md) or the [Error Method \(Dialog\)](../../methods-auto/dialog/dialog-error-method.md) is called when the code is running on Microsoft Dynamics NAV Application Server, then the message is written to the event log of the operating system. 
 
 ## See Also
+
 [System Data Type](system-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

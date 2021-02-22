@@ -6,7 +6,7 @@ ms.custom: na
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: edupont
 ms.date: 11/20/2020
@@ -34,9 +34,9 @@ Such Microsoft demo accounts give you environments that you can use for demos an
 
 [!INCLUDE [admin-m365admin](../developer/includes/admin-m365admin.md)]
 
-### Use profiles in the Edge browser
+### Use profiles in Microsoft Edge
 
-If you demo in the new [Microsoft Edge](https://www.microsoft.com/edge) browser, you can easily switch between different browser profiles. That way, you do not have to use private mode for browsing, and you can let Edge save passwords and sites to any of your browser profiles, including a Microsoft 365 demo account. [!INCLUDE [prod_short](../developer/includes/prod_short.md)] also performs well in the new Edge for even better demos. You can also switch the page layout to *Focused* to minimize demo distraction. For more information, see [Microsoft Edge documentation](/deployedge/).  
+If you demo in the new [Microsoft Edge](https://www.microsoft.com/edge) browser, you can easily switch between different browser profiles. That way, you do not have to use private mode for browsing, and you can let Microsoft Edge save passwords and sites to any of your browser profiles, including a Microsoft 365 demo account. [!INCLUDE [prod_short](../developer/includes/prod_short.md)] also performs well in the Microsoft Edge for even better demos. You can also switch the page layout to *Focused* to minimize demo distraction. For more information, see [Microsoft Edge documentation](/deployedge/).  
 
 > [!TIP]
 > We recommend that you connect to a low-latency network for a faster response time during demos, and that you always plug in your laptop if you are about to demo anything. Performance impact may vary depending on your device and choice of browser, but being plugged in generally helps overall snappiness.  

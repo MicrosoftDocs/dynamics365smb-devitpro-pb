@@ -3,11 +3,11 @@ author: jswymer
 title: "Upgrading Extensions"
 description: "Describes how to add code to upgrade data in a new extension version."
 ms.custom: na
-ms.date: 12/03/2020
+ms.date: 01/22/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ---
 
@@ -105,7 +105,7 @@ Another one of the more important properties is the `DataVersion` property, that
 - Upgrade code:
     - The version of the extension you're upgrading from. Either what was last uninstalled, or what is currently installed.
 
-All these properties are encapsulated in a `ModuleInfo` data type. You can access these properties through the `NAVApp.GetCurrentModuleInfo()` and `NAVApp.GetModuleInfo()` methods.
+All these properties are encapsulated in a `ModuleInfo` data type. You can access these properties through the `NAVApp.GetCurrentModuleInfo()` and `NAVApp.GetModuleInfo()` methods. For more information, see [NavApp Data Type](methods-auto/navapp/navapp-data-type.md).
 
 ### Upgrade codeunit example
 

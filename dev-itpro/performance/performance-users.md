@@ -6,7 +6,7 @@ ms.date: 10/01/2020
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: mikebcMSFT
 ms.author: mikebc
@@ -35,7 +35,7 @@ The overall structure of a page (but not business data) is cached on the client 
 
 |Browser|Page caching availability|
 |--------|---------|
-|New Edge|Available|
+|Microsoft Edge|Available|
 |Chrome|Available|
 |Safari|Partly available. In some cases, users won't benefit from page caching across sessions. |
 |FireFox|Partly available. In some cases, users won't benefit from page caching across sessions. |
