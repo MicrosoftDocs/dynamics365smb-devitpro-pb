@@ -22,7 +22,7 @@ Deletes a configuration package from [!INCLUDE[d365fin_long_md](../../includes/d
 Replaces the URL prefix for [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
 <!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different or there might be more than one -->
 ```
-DELETE businesscentralPrefix/companies({id})/configurationPackages({id})
+DELETE /microsoft/automation/2.0/companies({companyId})/configurationPackages({packageId})
 ```
 <!-- END>EDIT_IS_REQUIRED -->
 ## Request headers
@@ -45,12 +45,13 @@ If successful, this method returns ```204 No Content``` response code and delete
 
 **Request**
 
+**Request**
+
 Here is an example of the request.
-<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different -->
 ```json
-DELETE https://{businesscentralPrefix}/api/v2.0/companies({id})/configurationPackages({id})
+DELETE https://api.businesscentral.dynamics.com/v1.0/api//microsoft/automation/v1.0/companies({companyId})/configurationPackages('{packageName}')
 ```
-<!-- END>EDIT_IS_REQUIRED -->
+
 **Response**
 
 Here is an example of the response.

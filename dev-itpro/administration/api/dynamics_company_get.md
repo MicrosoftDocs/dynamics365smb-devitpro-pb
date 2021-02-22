@@ -22,7 +22,7 @@ Retrieves the properties and relationships of a company object for [!INCLUDE[d36
 Replace the URL prefix for [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
 <!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different -->
 ```
-GET businesscentralPrefix/companies({id})/companies({id})
+GET /microsoft/automation/{apiVersion}/companies
 ```
 <!-- END>EDIT_IS_REQUIRED -->
 ## Request headers
@@ -44,29 +44,27 @@ If successful, this method returns a ```200 OK``` response code and a **company*
 **Request**
 
 Here is an example of the request.
-<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different -->
 ```json
-GET https://{businesscentralPrefix}/api/v2.0/companies({id})/companies({id})
+GET https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v1.0/companies
 ```
-<!-- END>EDIT_IS_REQUIRED -->
-**Response**
-Here is an example of the response.
 
-<!-- START>EDIT_IS_REQUIRED. Fill in values for properties -->
+**Response**
+
+Here is an example of the response. 
+
+> [!NOTE]  
+>   The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 ```json
 {
-    "id" : "",
-    "systemVersion" : "",
-    "name" : "",
-    "displayName" : "",
-    "businessProfileId" : "",
-    "systemCreatedAt" : "",
-    "systemCreatedBy" : "",
-    "systemModifiedAt" : "",
-    "systemModifiedBy" : ""
+    "id": "3496bbf8-fcae-4e48-a4f8-cb17c27de0b3",
+    "systemVersion": "24012",
+    "name": "CRONUS USA, Inc.",
+    "displayName": "CRONUS USA, Inc.",
+    "businessProfileId": ""
 }
 ```
-<!-- END>EDIT_IS_REQUIRED -->
+
 ## See Also
 
 [Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  
