@@ -21,8 +21,8 @@ Creates an user permission in [!INCLUDE[d365fin_long_md](../../includes/d365fin_
 
 Replace the URL prefix for [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
 <!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different or there might be more than one -->
-```
-POST businesscentralPrefix/companies({id})/userPermissions({id})
+```json
+POST /microsoft/automation/{apiVersion}/companies({companyId})/users({userSecurityID})/userPermissions({id})
 ```
 <!-- END>EDIT_IS_REQUIRED -->
 ## Request headers
@@ -47,37 +47,35 @@ If successful, this method returns ```201 Created``` response code and a **userP
 **Request**
 
 Here is an example of the request.
-<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different. Fill in the property values -->
 ```json
-POST https://{businesscentralPrefix}/api/v2.0/companies({id})/userPermissions({id})
-Content-type: application/json
-{
-    "userSecurityId" : "",
-    "id" : "",
-    "displayName" : "",
-    "company" : "",
-    "appId" : "",
-    "extensionName" : "",
-    "scope" : ""
+POST https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v1.0/companies({companyId})/users({userSecurityID})/userPermissions
+Content-Type:application/json
+{ 
+    "id": "SECURITY", 
+    "company" : "CRONUS"
 }
+
 ```
-<!-- END>EDIT_IS_REQUIRED -->
+
 **Response**
+
 Here is an example of the response.
-<!-- START>EDIT_IS_REQUIRED. Fill in values for properties -->
+
+> [!NOTE]  
+>   The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 ```json
-HTTP/1.1 201 Created
-Content-type: application/json
 {
-    "userSecurityId" : "",
-    "id" : "",
-    "displayName" : "",
-    "company" : "",
-    "appId" : "",
-    "extensionName" : "",
-    "scope" : ""
+    "userSecurityID": "82ae94d5-3445-47de-8668-714b5113a9c2",
+    "id": "SECURITY",
+    "company": "",
+    "scope": "System",
+    "appID": "00000000-0000-0000-0000-000000000000",
+    "displayName": "",
+    "extensionName": ""
 }
 ```
+
 <!-- END>EDIT_IS_REQUIRED -->
 ## See Also
 
