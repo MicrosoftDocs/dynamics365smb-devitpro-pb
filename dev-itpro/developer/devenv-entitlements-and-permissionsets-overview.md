@@ -65,9 +65,14 @@ User-Defined permission sets and permissions, and functionality around them rema
 - dbo.Tenant Permission
 - dbo.Tenant Permission Set
 
+Permission sets and permissions [included with apps in XML format](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-export-permission-sets) will continue to work as before, however we recommend you to start using the AL objects of type PermissionSet and PermissionSetExtension instead. 
+
+
 ## Upgrade considerations
 
 Starting with [!INCLUDE [prod_short](includes/prod_short.md)] 2021 release wave 1 (v.18.0), the [!INCLUDE [prod_short](includes/prod_short.md)] demo database, which is shipped with our on-prem installation does not contain any data in the `dbo.Permission Set` and `dbo.Permission` tables in the application database. Instead, the **System** permission sets and permissions are provided as AL objects of type `PermissionSet` and `PermissionSetExtension`, included with Microsoft apps. 
+
+The application database tables which used to store the entitlements will not contain any data either, as the entitlements are now defined as AL objects.
 
 [!INCLUDE [prod_short](includes/prod_short.md)] server configuration file (CustomSettings.config) includes a setting which allows on-prem administrators to decide whether they want to continue using the permissions defined as data or as AL objects: 
 
@@ -75,37 +80,15 @@ Starting with [!INCLUDE [prod_short](includes/prod_short.md)] 2021 release wave 
 UsePermissionSetsFromExtensions: ‘true’
 ```
 
-The default value for this setting is `true`, meaning that the server will be retrieving **System** permission sets and permissions from the AL objects of type `PermissionSet` and `PermissionSetExtension`. 
+The default value for this setting is `true`, meaning that the server will be retrieving **System** and **Extensions** permission sets and permissions from the AL objects of type `PermissionSet` and `PermissionSetExtension`. 
 
+It is not possible to customize the System and Extension permission sets and permissions used in the online version of [!INCLUDE [prod_short](includes/prod_short.md)], the users can only copy those to new permission sets, whcih they can then adjust to their needs (https://docs.microsoft.com/en-us/dynamics365/business-central/ui-define-granular-permissions#to-create-or-modify-a-permission-set).
 
-[WORK IN PROGRESS] Permissions:
+In the on-prem version of [!INCLUDE [prod_short](includes/prod_short.md)], even though it is not recommended, the partners could customize the permission sets and permissions shipped in the application database. In this case, as for any upgrade before, the changes in Microsoft permissions should be merged with the customized permissions by VARs during upgrade. 
 
-ISVs/VARs are encouraged to uptake the new objects, but no hard requirement to do so in this release
+Although starting with [!INCLUDE [prod_short](includes/prod_short.md)] 2021 release wave 1 (v.18.0) System permissions are no longer shipped as data in the applicaiton database, the partners can use the same procedure as before to export the new permissions, which are defined using AL objects. The new permission sets and permissions can be exported into  XML file by running XMLport 9171 Import/Export Permission Sets, making it possible to compare and merge the customized permission sets in your old database with the newly shipped permission sets. Find more details [here](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/upgrade/how-to--import-export-permission-sets-permissions). 
 
-Advantages: manage in code, ability to HF more easily, getting ready for AppSource monetization
-
-No entitlement/permissions data in the App database 
-
-Demotool part that generates permissions is removed  
-
-If MS permission sets were customized, the changes should be merged by VARs during upgrade
-
-Continue using data: export new permissions and permission sets using XML ports, then merge XML files
-
-Switch to the new AL objects: use PS sample script from GitHub to export old data into AL objects, then merge AL objects 
-
-Permissions supplied within apps as XML permissions will still work (as Tenant permissions)
-
-New AL objects can be used by ISVs to define their System permissions (instead of including XML into Apps)
-
-Entitlements: 
-
-In this release created/used only for MS apps/licenses
-
-ISVs cannot use yet, no option for them to create their own service plans in AppSource
-
-No requirement to for ISVs/VARs to uptake MS entitlements or create their own
-
+If you decide to start using the new AL objects, it is also possible to compare the permissions defined as data, in the previous versions of [!INCLUDE [prod_short](includes/prod_short.md)], with permissions defined as code. To generate permission set AL objects from the data in your applicaiton database, use a sample PowerShell script available in our GitHub repository https://github.com/Microsoft/ALAppExtensions [add the exact path later]. 
 
 
 ## See Also
