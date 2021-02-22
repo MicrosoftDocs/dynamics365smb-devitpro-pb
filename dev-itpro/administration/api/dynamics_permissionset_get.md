@@ -22,7 +22,7 @@ Retrieves the properties and relationships of a permission set object for [!INCL
 Replace the URL prefix for [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
 <!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different -->
 ```
-GET businesscentralPrefix/companies({id})/permissionSets({id})
+GET /microsoft/automation/{apiVersion}/companies({{companyId}})/permissionSets
 ```
 <!-- END>EDIT_IS_REQUIRED -->
 ## Request headers
@@ -44,25 +44,28 @@ If successful, this method returns a ```200 OK``` response code and a **permissi
 **Request**
 
 Here is an example of the request.
-<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different -->
 ```json
-GET https://{businesscentralPrefix}/api/v2.0/companies({id})/permissionSets({id})
+GET https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v1.0/companies({companyId})/users({userSecurityID})/userPermissions
 ```
-<!-- END>EDIT_IS_REQUIRED -->
-**Response**
-Here is an example of the response.
 
-<!-- START>EDIT_IS_REQUIRED. Fill in values for properties -->
+**Response**
+
+Here is an example of the response. 
+
+> [!NOTE]  
+>   The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 ```json
 {
-    "scope" : "",
-    "appId" : "",
-    "id" : "",
-    "displayName" : "",
-    "extensionName" : ""
+    "userSecurityID": "82ae94d5-3445-47de-8668-714b5113a9c2",
+    "id": "D365 ACC. PAYABLE",
+    "scope": "System",
+    "appID": "00000000-0000-0000-0000-000000000000",
+    "displayName": "Dynamics 365 Accounts payable",
+    "extensionName": ""
 }
 ```
-<!-- END>EDIT_IS_REQUIRED -->
+
 ## See Also
 
 [Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  
