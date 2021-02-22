@@ -22,7 +22,7 @@ Creates an user group member in [!INCLUDE[d365fin_long_md](../../includes/d365fi
 Replace the URL prefix for [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
 <!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different or there might be more than one -->
 ```
-POST businesscentralPrefix/companies({id})/userGroupMembers({id})
+POST /microsoft/automation/{apiVersion}/companies({companyId})/users({userSecurityID})/userGroupMembers
 ```
 <!-- END>EDIT_IS_REQUIRED -->
 ## Request headers
@@ -47,32 +47,31 @@ If successful, this method returns ```201 Created``` response code and a **userG
 **Request**
 
 Here is an example of the request.
-<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different. Fill in the property values -->
 ```json
-POST https://{businesscentralPrefix}/api/v2.0/companies({id})/userGroupMembers({id})
-Content-type: application/json
+POST https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v1.0/companies({companyId})/users({userSecurityID})/userGroupMembers
+Content-Type:application/json
 {
-    "userSecurityId" : "",
-    "code" : "",
-    "displayName" : "",
-    "companyName" : ""
+    "code": "D365 EXT. ACCOUNTANT",
+    "companyName" :"CRONUS USA, Inc."
 }
 ```
-<!-- END>EDIT_IS_REQUIRED -->
+
 **Response**
+
 Here is an example of the response.
-<!-- START>EDIT_IS_REQUIRED. Fill in values for properties -->
+
+> [!NOTE]  
+>   The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 ```json
-HTTP/1.1 201 Created
-Content-type: application/json
 {
-    "userSecurityId" : "",
-    "code" : "",
-    "displayName" : "",
-    "companyName" : ""
+    "code": "D365 EXT. ACCOUNTANT",
+    "userSecurityID": "7ae30772-481f-4895-a042-98f36e280680",
+    "companyName": "CRONUS USA, Inc.",
+    "displayName": ""
 }
 ```
-<!-- END>EDIT_IS_REQUIRED -->
+
 ## See Also
 
 [Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  

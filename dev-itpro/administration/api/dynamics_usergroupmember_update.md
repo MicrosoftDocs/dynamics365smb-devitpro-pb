@@ -22,7 +22,7 @@ Updates the properties of an user group member object for [!INCLUDE[d365fin_long
 Replace the URL prefix for [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
 <!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different or there might be more than one-->
 ```
-PATCH businesscentralPrefix/companies({id})/userGroupMembers({id})
+PATCH /microsoft/automation/{apiVersion}/companies({companyId})/users({userSecurityID})/userGroupMembers
 ```
 <!-- END>EDIT_IS_REQUIRED-->
 ## Request headers
@@ -46,13 +46,14 @@ If successful, this method returns a ```200 OK``` response code and an updated *
 **Request**
 
 Here is an example of the request.
-<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different. Fill in the property values)
+<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different. Fill in the property values)-->
 ```json
-PATCH https://{businesscentralPrefix}/api/v2.0/companies({id})/userGroupMembers({id})
+PATCH https:///microsoft/automation/{apiVersion}/companies({companyId})/users({userSecurityID})/userGroupMembers
+
 Content-type: application/json
 {
-    "userSecurityId" : ,
-    "code" :
+    "code": "D365 BUS PREMIUM",
+    "userSecurityID": "7ae30772-481f-4895-a042-98f36e280680"
 }
 ```
 <!-- END>EDIT_IS_REQUIRED -->
@@ -64,10 +65,10 @@ Here is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 {
-    "userSecurityId" : ,
-    "code" : ,
-    "displayName" : ,
-    "companyName" :
+    "code": "D365 BUS PREMIUM",
+    "userSecurityID": "7ae30772-481f-4895-a042-98f36e280680",
+    "companyName": "CRONUS USA, Inc.",
+    "displayName": "D365 Premium Business Access"
 }
 ```
 <!-- END>EDIT_IS_REQUIRED-->
