@@ -22,7 +22,7 @@ Updates the properties of an user object for [!INCLUDE[d365fin_long_md](../../in
 Replace the URL prefix for [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
 <!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different or there might be more than one-->
 ```
-PATCH businesscentralPrefix/companies({id})/users({id})
+PATCH /microsoft/automation/{apiVersion}/companies({companyid})/users({securityId})
 ```
 <!-- END>EDIT_IS_REQUIRED-->
 ## Request headers
@@ -46,16 +46,15 @@ If successful, this method returns a ```200 OK``` response code and an updated *
 **Request**
 
 Here is an example of the request.
-<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different. Fill in the property values)
 ```json
-PATCH https://{businesscentralPrefix}/api/v2.0/companies({id})/users({id})
+PATCH https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v1.0/companies({id})/users({userSecurityId})
 Content-type: application/json
+If-Match:*
 {
-    "userSecurityId" : ,
-    "userName" :
+    "state": "Enabled",
+    "expiryDate": "2035-01-01T21:03:53.444Z"
 }
 ```
-<!-- END>EDIT_IS_REQUIRED -->
 **Response**
 Here is an example of the response.
 
@@ -64,14 +63,15 @@ Here is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 {
-    "userSecurityId" : ,
-    "userName" : ,
-    "displayName" : ,
-    "state" : ,
-    "expiryDate" :
+    "userSecurityId": "7ae30772-481f-4895-a042-98f36e280680",
+    "userName": "JOE",
+    "displayName": "JOE JONES",
+    "state": "Enabled",
+    "expiryDate": "2035-01-01T21:03:53.443Z"
 }
 ```
 <!-- END>EDIT_IS_REQUIRED-->
+
 ## See Also
 
 [Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  
