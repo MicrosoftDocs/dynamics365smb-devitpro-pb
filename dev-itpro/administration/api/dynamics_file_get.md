@@ -22,7 +22,7 @@ Retrieves the properties and relationships of a file object for [!INCLUDE[d365fi
 Replace the URL prefix for [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
 <!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different -->
 ```
-GET businesscentralPrefix/companies({id})/files({id})
+GET /microsoft/automation/{apiVersion}/companies({companyId})/files({id}
 ```
 <!-- END>EDIT_IS_REQUIRED -->
 ## Request headers

@@ -22,7 +22,7 @@ Updates the properties of an extension upload object for [!INCLUDE[d365fin_long_
 Replace the URL prefix for [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
 <!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different or there might be more than one-->
 ```
-PATCH businesscentralPrefix/companies({id})/extensionUploads({id})
+PATCH /microsoft/automation/{apiVersion}/companies({companyId})/extensionUpload(0)/content
 ```
 <!-- END>EDIT_IS_REQUIRED-->
 ## Request headers
@@ -44,18 +44,15 @@ If successful, this method returns a ```200 OK``` response code and an updated *
 ## Example
 
 **Request**
-
 Here is an example of the request.
-<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different. Fill in the property values)
+
 ```json
-PATCH https://{businesscentralPrefix}/api/v2.0/companies({id})/extensionUploads({id})
-Content-type: application/json
-{
-    "systemId" : ,
-    "schedule" :
-}
+PATCH https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v1.0/companies({companyId})/extensionUpload(0)/content
+Authorization : Bearer {token}
+Content-type : application/octet-stream
+If-Match:-*
 ```
-<!-- END>EDIT_IS_REQUIRED -->
+
 **Response**
 Here is an example of the response.
 
