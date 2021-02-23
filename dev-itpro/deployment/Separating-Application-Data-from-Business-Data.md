@@ -81,18 +81,30 @@ The following procedure illustrates how you can separate the application tables 
 
 1. Stop all [!INCLUDE[server](../developer/includes/server.md)] services that access the database that you are modifying. This includes the [!INCLUDE[server](../developer/includes/server.md)] instance.
 
-2. Open the [!INCLUDE[adminshell](../developer/includes/adminshell.md)].  
+2. Back up your databases.
+
+3. Run the [!INCLUDE[admin shell](../developer/includes/adminshell.md)] as an administrator.
 
     > [!IMPORTANT]  
     >  You must run the program as administrator. Also, you must ensure that scripting is enabled on the computer.  
 
-     For more information, see [Business Central Windows PowerShell Cmdlets](/powershell/business-central/overview).  
+     For more information, see [Business Central Windows PowerShell Cmdlets](/powershell/business-central/overview).
+ 
+4. Uninstall the extensions.
 
-3. For an overview of the cmdlet, type the following command:  
+    To uninstall an extension, you use the [Uninstall-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp) cmdlet.
 
-    ```  
-    get-help Export-NAVApplication  
-    ```  
+    ```powershell 
+    Uninstall-NAVApp -ServerInstance <server instance name> -Tenant default -Name <extensions name> -Version <extension version> 
+    ```
+
+    Replace  `<extension name>` and `<extension version>` with the exact name and version the installed extension. Set `<tenant ID>` to `default` or omit the `-Tenant` parameter.
+
+    For example, together with the Get-NAVApp cmdlet, you can uninstall all extensions with a single command:
+
+    ```powershell 
+    Get-NAVAppInfo -ServerInstance <server instance name> -Tenant default | % { Uninstall-NAVApp -ServerInstance <server instance name> -Tenant default -Name $_.Name -Version $_.Version -Force}
+    ```
 
 4. To export the application tables, type the following command:  
 
@@ -101,8 +113,8 @@ The following procedure illustrates how you can separate the application tables 
     ```  
 
      For example, to run the cmdlet against the [!INCLUDE[demolong](../developer/includes/demolong_md.md)], type the following command:  
-
-    ```  
+    
+    ```powershell
     Export-NAVApplication –DatabaseServer 'MyServer' –DatabaseInstance 'BCDemo' –DatabaseName 'Demo Database BC' –DestinationDatabaseName 'Business Central App'  
     ```  
 
@@ -117,13 +129,13 @@ The following procedure illustrates how you can separate the application tables 
 
 5. To remove the application tables from the original database, run the [Remove-NAVApplication](/powershell/module/microsoft.dynamics.nav.management/remove-navapplication) cmdlet as follows:  
 
-    ```  
+    ```powershell  
     Remove-NAVApplication –DatabaseServer <server name> -DatabaseInstance <instance name> –DatabaseName <name of the original database>  
     ```  
 
     For example, to run the cmdlet against the [!INCLUDE[demolong](../developer/includes/demolong_md.md)] where you have exported the application tables, type the following command:  
 
-    ```  
+    ```powershell  
     Remove-NAVApplication –DatabaseServer 'MyServer' –DatabaseInstance 'BCDEMO' –DatabaseName 'Demo Database BC'  
     ```  
 
@@ -144,26 +156,66 @@ The following procedure illustrates how you can separate the application tables 
     
     -->  
 6. Clear the `DatabaseName` setting in the [!INCLUDE[server](../developer/includes/server.md)] instance configuration file by using the [Set-NAVServerConfiguration](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) cmdlet: 
-    
+
+    ```powershell
+    Set-NAVServerConfiguration –ServerInstance <server instance name> –element appSettings –KeyName 'DatabaseName' –KeyValue '' 
     ```
-    Set-NAVServerConfiguration –ServerInstance <server instance name> –element appSettings –KeyName 'DatabaseName' –KeyValue ''
-    
-    ```
+
 7. Start the [!INCLUDE[server](../developer/includes/server.md)] instance by using the [Start-NAVServerInstance](/powershell/module/microsoft.dynamics.nav.management/start-navserverinstance) cmdlet: 
 
-    ```
+    ```powershell
     Start-NAVServerInstance –ServerInstance <server instance name>
     ```
 8. Mount the application database on the [!INCLUDE[server](../developer/includes/server.md)] instance by using the [Mount-NAVApplication](/powershell/module/microsoft.dynamics.nav.management/mount-navapplication) cmdlet:
 
-    ```
+    ```powershell
     Mount-NAVApplication –ServerInstance <server instance name> –DatabaseServer <server name\instance name> –DatabaseName <application database name>
     ```
-9.  Mount the business data database (tenant) on the server instance by using the [Mount-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/mount-navtenant) cmdlet: 
 
-    ```
+9. Mount the business data database (tenant) on the server instance by using the [Mount-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/mount-navtenant) cmdlet: 
+
+    ```powershell
     Mount-NAVTenant –ServerInstance <server instance name> -Id <tenant name> –DatabaseServer <server name\instance name> -DatabaseName <business data database> -OverwriteTenantIdInDatabase  
     ```
+
+10. Reinstall extensions.
+
+    In this step, you reinstall the same extensions that were installed on the tenant before. To install an extension, you use the [Install-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp).
+
+    1. It can be helpful to get a list of the published extensions and their version. To get a list of all published extensions, use the [Get-NAVAppInfo cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/get-navappinfo):
+
+        ```powershell  
+        Get-NAVAppInfo -ServerInstance <server instance> | Repair-NAVApp  
+        ```
+
+    2. If your solution uses the System Application, install this first.
+
+        ```powershell 
+        Install-NAVApp -ServerInstance <server instance> -Name "System Application" -Version <extension version>
+        ```
+
+        Replace `<extension version>` with the exact version of the published System Application.
+
+    3. Install the Base Application.
+
+        ```powershell
+        Install-NAVApp -ServerInstance <server instance> -Name "Base Application" -Version <extension version>
+        ```
+
+        Replace `<extension version>` with the exact version of the published Base Application.
+
+    4. Install the Application extension. This extension is required to install Microsoft extensions.
+
+        ```powershell
+        Install-NAVApp -ServerInstance <server instance> -Name "Application" -Version <extension version>
+        ```
+
+        Replace `<extension version>` with the exact version of the published Application extension.
+    5. Install other extensions, including Microsoft and third-party extensions.
+
+        ```powershell
+        Install-NAVApp -ServerInstance <server instance name> -Name <extension name> -Version <extension version>
+        ```
 
 For more information, see [Business Central Windows PowerShell Cmdlets](/powershell/business-central/overview).  
 
