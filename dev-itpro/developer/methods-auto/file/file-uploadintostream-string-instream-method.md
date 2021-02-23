@@ -42,6 +42,25 @@ The type of file that can be uploaded to the server. A user can try to upload an
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Example
+
+```al
+codeunit 50100 MyCodeunit
+{
+
+    procedure MyProcedure()
+    var
+        FromFilter: Text;
+        NVInStream: InStream;
+    begin
+        FromFilter := ' All Files (*.*)|*.*';
+        UploadIntoStream(FromFilter, NVInStream);
+    end;
+
+}
+```
+
 ## See Also
 [File Data Type](file-data-type.md)
 [Getting Started with AL](../devenv-get-started.md)
