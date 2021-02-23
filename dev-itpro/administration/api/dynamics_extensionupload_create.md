@@ -43,9 +43,6 @@ POST /microsoft/automation/v2.0/companies({companyId})/extensionUpload
 
 In the request body, supply a JSON representation of a **extensionUpload** object.
 
-Note:
-schedule in the body can be "Current version", "Next minor version" or "Next major version"
-
 ### Response
 
 If successful, this method returns ```201 Created``` response code and a **extensionUpload** object in the response body.
