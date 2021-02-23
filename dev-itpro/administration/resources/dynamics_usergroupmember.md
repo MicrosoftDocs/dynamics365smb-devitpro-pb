@@ -43,6 +43,7 @@ Represents an user group member in [!INCLUDE[d365fin_long_md](../../includes/d36
 
 | Property           | Type   |Description     |
 |:-------------------|:-------|:---------------|
+|id|GUID|The unique ID of the user group member.|
 |userSecurityId|GUID|The unique ID of the user security.|
 |code|string|The code of the user group member.|
 |displayName|string|Specifies the user group member's name. This name will appear on all sales documents for the user group member.|
@@ -55,6 +56,7 @@ Here is a JSON representation of the userGroupMember resource.
 
 ```json
 {
+    "id": "GUID",
     "userSecurityId": "GUID",
     "code": "string",
     "displayName": "string",

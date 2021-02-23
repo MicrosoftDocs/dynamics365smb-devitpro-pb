@@ -20,11 +20,11 @@ Retrieves the properties and relationships of an extension upload object for [!I
 ## HTTP request
 
 Replace the URL prefix for [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
-<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different -->
+
 ```
-GET /microsoft/automation/{apiVersion}/companies({companyId})/extensionUpload(0)/content
+GET /microsoft/automation/v2.0/companies({companyId})/extensionUpload({extensionUploadId})
 ```
-<!-- END>EDIT_IS_REQUIRED -->
+
 ## Request headers
 
 |Header|Value|
@@ -44,23 +44,21 @@ If successful, this method returns a ```200 OK``` response code and an **extensi
 **Request**
 
 Here is an example of the request.
-<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different -->
 ```json
-GET https://microsoft/automation/{apiVersion}/companies({companyId})/extensionUpload(0)/content
+GET https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/extensionUpload({extensionUploadId})
 ```
-<!-- END>EDIT_IS_REQUIRED -->
+
 **Response**
 Here is an example of the response.
 
-<!-- START>EDIT_IS_REQUIRED. Fill in values for properties -->
 ```json
 {
-    "systemId" : "",
-    "schedule" : "",
+    "systemId" : "f99be650-07ce-45df-a285-3afe69a953eb",
+    "schedule" : "Next major version",
     "extensionContent" : ""
 }
 ```
-<!-- END>EDIT_IS_REQUIRED -->
+
 ## See Also
 
 [Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  

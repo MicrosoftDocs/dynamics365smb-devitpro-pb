@@ -32,15 +32,15 @@ Represents a configuration package in [!INCLUDE[d365fin_long_md](../../includes/
 
 ## Bound Actions
 
-The configurationPackage resource type offers a bound action called `apply` which applys the corresponding configurationPackage batch.
+The configurationPackage resource type offers a bound action called `import` which imports the corresponding configurationPackage batch.
 This is illustrated in the following example:
-`APPLY https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/configurationPackages({id})/Microsoft.NAV.apply`
+`POST https://<server address>:<server API port>/<server instance name>/api/microsoft/automation/v2.0/companies({id})/configurationPackages({id})/Microsoft.NAV.import`
 
 The response has no content; the response code is 204.
 
-The configurationPackage resource type offers a bound action called `import` which imports the corresponding configurationPackage batch.
+The configurationPackage resource type offers a bound action called `apply` which applys the corresponding configurationPackage batch.
 This is illustrated in the following example:
-`IMPORT https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/configurationPackages({id})/Microsoft.NAV.import`
+`POST https://<server address>:<server API port>/<server instance name>/api/microsoft/automation/v2.0/companies({id})/configurationPackages({id})/Microsoft.NAV.apply`
 
 The response has no content; the response code is 204.
 

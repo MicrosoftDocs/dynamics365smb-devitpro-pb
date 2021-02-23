@@ -34,6 +34,7 @@ Represents an user group in [!INCLUDE[d365fin_long_md](../../includes/d365fin_lo
 
 | Property           | Type   |Description     |
 |:-------------------|:-------|:---------------|
+|id|GUID|The unique ID of the user group. Non-editable.|
 |code|string|The code of the user group.|
 |displayName|string|Specifies the user group's name. This name will appear on all sales documents for the user group.|
 |defaultProfileID|string|The ID of the defaultProfile.|
@@ -46,6 +47,7 @@ Here is a JSON representation of the userGroup resource.
 
 ```json
 {
+    "id": "GUID",
     "code": "string",
     "displayName": "string",
     "defaultProfileID": "string",

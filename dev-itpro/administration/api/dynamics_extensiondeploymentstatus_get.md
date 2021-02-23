@@ -20,11 +20,11 @@ Retrieves the properties and relationships of an extension deployment status obj
 ## HTTP request
 
 Replace the URL prefix for [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
-<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different -->
+
 ```
-GET /microsoft/automation/{apiVersion}/companies({companyId})/extensionDeploymentStatus
+GET /microsoft/automation/v2.0/companies({companyId})/extensionDeploymentStatus
 ```
-<!-- END>EDIT_IS_REQUIRED -->
+
 ## Request headers
 
 |Header|Value|
@@ -45,7 +45,7 @@ If successful, this method returns a ```200 OK``` response code and an **extensi
 
 Here is an example of the request.
 ```json
-GET https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v1.0/companies({id})/extensionDeploymentStatus
+GET https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/extensionDeploymentStatus
 ```
 
 **Response**

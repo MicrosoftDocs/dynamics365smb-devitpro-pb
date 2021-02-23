@@ -20,11 +20,11 @@ Deletes an user group member from [!INCLUDE[d365fin_long_md](../../includes/d365
 ## HTTP request
 
 Replaces the URL prefix for [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
-<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different or there might be more than one -->
+
 ```json
-DELETE /microsoft/automation/{apiVersion}/companies({companyId})/users({userSecurityID})/userGroupMembers('{code}',{userSecurityID},'{companyName}')
+DELETE /microsoft/automation/v2.0/companies({companyId})/users({userSecurityId})/userGroupMembers({userGroupMemberId})
 ```
-<!-- END>EDIT_IS_REQUIRED -->
+
 ## Request headers
 
 |Header|Value|
@@ -46,12 +46,12 @@ If successful, this method returns ```204 No Content``` response code and delete
 **Request**
 
 Here is an example of the request.
-<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different -->
+
 ```json
-DELETE https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v1.0/companies({{companyId}})/users({{securityId}})/userGroupMembers('D365%20EXT.%20ACCOUNTANT',{{userSecurityId}},'CRONUS USA, Inc.')
+DELETE https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/users({userSecurityId})/userGroupMembers({userGroupMemberId})
 If-Match:*
 ```
-<!-- END>EDIT_IS_REQUIRED -->
+
 **Response**
 
 Here is an example of the response.

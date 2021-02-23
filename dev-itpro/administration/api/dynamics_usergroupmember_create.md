@@ -20,18 +20,17 @@ Creates an user group member in [!INCLUDE[d365fin_long_md](../../includes/d365fi
 ## HTTP request
 
 Replace the URL prefix for [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
-<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different or there might be more than one -->
+
 ```
-POST /microsoft/automation/{apiVersion}/companies({companyId})/users({userSecurityID})/userGroupMembers
+POST /microsoft/automation/v2.0/companies({companyId})/users({userSecurityId})/userGroupMembers
 ```
-<!-- END>EDIT_IS_REQUIRED -->
+
 ## Request headers
 
 |Header|Value|
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
 |Content-Type  |application/json|
-|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **userGroupMember**, the **userGroupMember** will not be updated. |
 
 ## Request body
 
@@ -48,9 +47,10 @@ If successful, this method returns ```201 Created``` response code and a **userG
 
 Here is an example of the request.
 ```json
-POST https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v1.0/companies({companyId})/users({userSecurityID})/userGroupMembers
+POST https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/users({userSecurityId})/userGroupMembers
 Content-Type:application/json
 {
+    "id": "d38a92e2-9d74-eb11-bb5c-00155df3a615",
     "code": "D365 EXT. ACCOUNTANT",
     "companyName" :"CRONUS USA, Inc."
 }
@@ -65,8 +65,9 @@ Here is an example of the response.
 
 ```json
 {
+    "id": "d38a92e2-9d74-eb11-bb5c-00155df3a615",
     "code": "D365 EXT. ACCOUNTANT",
-    "userSecurityID": "7ae30772-481f-4895-a042-98f36e280680",
+    "userSecurityId": "7ae30772-481f-4895-a042-98f36e280680",
     "companyName": "CRONUS USA, Inc.",
     "displayName": ""
 }

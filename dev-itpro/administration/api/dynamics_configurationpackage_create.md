@@ -17,60 +17,68 @@ ms.author: solsen
 
 Creates a configuration package in [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)].
 
-## HTTP request
-
-Replace the URL prefix for [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
-<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different or there might be more than one -->
-```
-POST /microsoft/automation/2.0/companies({companyId})/configurationPackages({packageId})
-```
-<!-- END>EDIT_IS_REQUIRED -->
-## Request headers
-
-|Header|Value|
-|------|-----|
-|Authorization  |Bearer {token}. Required. |
-|Content-Type  |application/json|
-|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **configurationPackage**, the **configurationPackage** will not be updated. |
-
 ## Bound Actions
 
 | Actions         | Return Type  |Description|
 |:---------------|:-------------|:----------|
 |[Microsoft.NAV.import](dynamics-microsoft-automation-extension-post.md)|none|Imports a configurationPackage.|
-|[Microsoft.NAV.apply](dynamics-microsoft-automation-extension-post.md)|extension|Applies a configurationPackage.|
+|[Microsoft.NAV.apply](dynamics-microsoft-automation-extension-post.md)|none|Applies a configurationPackage.|
 
 ## HTTP requests
+
+Replace the URL prefix for [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
+
 ### Insert configurationPackage
 ```json
-POST /microsoft/automation/2.0/companies({companyId})/configurationPackages
+POST /microsoft/automation/v2.0/companies({companyId})/configurationPackages
 Content-type: application/json
 {
-    "code":"YourPackageName"
+    "code":"YourPackageCode",
+    "packageName": "YourPackageName"
 }
 ```
 
+### Response
+If successful, this method returns ```201 Created``` response code and a **configurationPackage** object in the response body.
+
+### Request headers
+
+|Header|Value|
+|------|-----|
+|Authorization  |Bearer {token}. Required. |
+|Content-Type  |application/json|
+
+### Request body
+
+In the request body, supply a JSON representation of a **configurationPackage** object.
+
 ### Import configurationPackage
+
 ```json
-POST /microsoft/automation/2.0/companies({companyId})/configurationPackages('{packageName}')/Microsoft.NAV.import
+POST /microsoft/automation/v2.0/companies({companyId})/configurationPackages({packageId})/Microsoft.NAV.import
 
 ```
 ### Apply configurationPackage
+
 ```json
-POST /microsoft/automation/2.0/companies({companyId})/configurationPackages('{packageName}')/Microsoft.NAV.apply
+POST /microsoft/automation/v2.0/companies({companyId})/configurationPackages({packageId})/Microsoft.NAV.apply
 
 ```
 
-## Request headers
+### Request headers
+
 |Header|Value|
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
 
-## Request body
+### Request body
+
 Do not supply a request body for this method.
 
-## Response
-If successful, this method returns a ```200 OK``` response code.
+### Response
+
+If successful, this method returns ```204 No Content``` response code.
+
 
 ## Example
 
@@ -78,7 +86,12 @@ If successful, this method returns a ```200 OK``` response code.
 
 Here is an example of the request.
 ```json
-GET https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/configurationPackages('{packageName}')/Microsoft.NAV.import
+POST https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/configurationPackages
+Content-type: application/json
+{
+    "code":"YourPackageCode",
+    "packageName": "YourPackageName"
+}
 ```
 
 **Response**
@@ -89,10 +102,12 @@ Here is an example of the response.
 > The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 
 ```json
+HTTP/1.1 201 Created
+Content-type: application/json
 {
     "id": "b6d25c66-f33d-eb11-846f-0022482037e2",
-    "code": "RAS2",
-    "packageName": "SAMPLE",
+    "code": "YourPackageCode",
+    "packageName": "YourPackageName",
     "languageId": 0,
     "productVersion": "",
     "processingOrder": 0,
@@ -101,7 +116,9 @@ Here is an example of the response.
     "numberOfRecords": 3,
     "numberOfErrors": 3,
     "importStatus": "Completed",
-    "applyStatus": "Completed"
+    "applyStatus": "Completed",
+    "applyError": "",
+    "importError": ""
 }
 ```
 

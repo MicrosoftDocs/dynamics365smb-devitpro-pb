@@ -20,11 +20,11 @@ Updates the properties of an extension upload object for [!INCLUDE[d365fin_long_
 ## HTTP request
 
 Replace the URL prefix for [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
-<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different or there might be more than one-->
+```json
+PATCH /microsoft/automation/v2.0/companies({companyId})/extensionUpload({extensionUploadId})/content
+Content-type: application/octet-stream
+Body: binary content of the extension
 ```
-PATCH /microsoft/automation/{apiVersion}/companies({companyId})/extensionUpload(0)/content
-```
-<!-- END>EDIT_IS_REQUIRED-->
 ## Request headers
 
 |Header|Value|
@@ -39,7 +39,7 @@ In the request body, supply the values for relevant fields that should be update
 
 ## Response
 
-If successful, this method returns a ```200 OK``` response code and an updated **extensionUpload ** object in the response body.
+If successful, this method returns a ```204 No Content```.
 
 ## Example
 
@@ -47,26 +47,13 @@ If successful, this method returns a ```200 OK``` response code and an updated *
 Here is an example of the request.
 
 ```json
-PATCH https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v1.0/companies({companyId})/extensionUpload(0)/content
+PATCH https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/extensionUpload({extensionUploadId})/content
 Authorization : Bearer {token}
 Content-type : application/octet-stream
 If-Match:-*
+Body: binary stream
 ```
 
-**Response**
-Here is an example of the response.
-
-<!-- START>EDIT_IS_REQUIRED. Fill in values for properties -->
-```json
-HTTP/1.1 200 OK
-Content-type: application/json
-{
-    "systemId" : ,
-    "schedule" : ,
-    "extensionContent" :
-}
-```
-<!-- END>EDIT_IS_REQUIRED-->
 ## See Also
 
 [Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  

@@ -33,7 +33,6 @@ Represents a company in [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_m
 | Navigation |Return Type| Description |
 |:----------|:----------|:-----------------|
 |[configurationPackages](dynamics_configurationpackage.md)|configurationPackages |Gets the configurationpackages of the company.|
-|[file](dynamics_file.md)|file |Gets the file of the company.|
 |[automationCompanies](dynamics_automationcompany.md)|automationCompanies |Gets the automationcompanies of the company.|
 |[extensions](dynamics_extension.md)|extensions |Gets the extensions of the company.|
 |[userGroups](dynamics_usergroup.md)|userGroups |Gets the usergroups of the company.|
