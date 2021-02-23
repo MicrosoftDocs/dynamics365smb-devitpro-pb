@@ -2,7 +2,7 @@
 title: "File Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 02/15/2021
+ms.date: 02/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -34,7 +34,8 @@ The following methods are available on the File data type.
 |[Rename(String, String)](file-rename-method.md)|Renames an ASCII or binary file.|
 |[SetStamp(String, Date [, Time])](file-setstamp-method.md)|Sets a timestamp for a file.|
 |[Upload(String, String, String, String, var Text)](file-upload-method.md)|Sends a file from the client computer to the server computer. The client computer is the computer that is running the Windows client or the computer that is running a browser that accesses the web client.|
-|[UploadIntoStream(String, String, String, var Text, var InStream)](file-uploadintostream-method.md)|Sends a file from the client computer to the corresponding server. The client computer is the computer that is running the Windows client or the computer that is running a browser that accesses the web client.|
+|[UploadIntoStream(String, String, String, var Text, var InStream)](file-uploadintostream-string-string-string-text-instream-method.md)|Sends a file from the client computer to the corresponding server. The client computer is the computer that is running the Windows client or the computer that is running a browser that accesses the web client.|
+|[UploadIntoStream(String, var InStream)](file-uploadintostream-string-instream-method.md)|Sends a file from the client computer to the corresponding server. The client computer is the computer that is running a browser that accesses the web client.|
 
 The following methods are available on instances of the File data type.
 
