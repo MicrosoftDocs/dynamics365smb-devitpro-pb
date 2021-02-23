@@ -54,6 +54,11 @@ The default file to upload to the service. The name displays in the dialog box f
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+> [!IMPORTANT]  
+> This method is deprecated from runtime 7.0. Use [File.UploadIntoStream Method](file-uploadintostream-string-instream-method.md) instead.
+
+
 ## See Also
 [File Data Type](file-data-type.md)
 [Getting Started with AL](../devenv-get-started.md)
