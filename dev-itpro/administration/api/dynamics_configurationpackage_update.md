@@ -22,7 +22,7 @@ Updates the properties of a configuration package object for [!INCLUDE[d365fin_l
 ### Upload RapidStart package
 
 ```json
-PATCH /microsoft/automation/2.0/companies({companyId})/configurationPackages({packageId})/file('{packageName}')/content
+PATCH /microsoft/automation/v2.0/companies({companyId})/configurationPackages({packageId})/file('{packageCode}')/content
 Content-type: application/octet-stream
 Body: binary content of the RapidStart package
 ```
@@ -41,7 +41,7 @@ In the request body, supply the values for relevant fields that should be update
 
 ## Response
 
-If successful, this method returns a ```200 OK``` response code and an updated **configurationPackage ** object in the response body.
+If successful, this method returns a ```204 No Content```.
 
 ## Example
 
@@ -49,7 +49,7 @@ If successful, this method returns a ```200 OK``` response code and an updated *
 
 Here is an example of the request.
 ```json
-PATCH https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/configurationPackages({packageId})/file('{packageName}')/content
+PATCH https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/configurationPackages({packageId})/file('{packageCode}')/content
 Authorization : Bearer {token}
 Content-type : application/octet-stream
 If-Match:*

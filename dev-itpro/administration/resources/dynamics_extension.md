@@ -30,19 +30,19 @@ Represents an extension in [!INCLUDE[d365fin_long_md](../../includes/d365fin_lon
 
 The extension resource type offers a bound action called `install` which installs the corresponding extension batch.
 This is illustrated in the following example:
-`INSTALL https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/extensions({id})/Microsoft.NAV.install`
-
-The response has no content; the response code is 204.
-
-The extension resource type offers a bound action called `uninstallAndDeleteExtensionData` which uninstall and delete extension datas the corresponding extension batch.
-This is illustrated in the following example:
-`UNINSTALLANDDELETEEXTENSIONDATA https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/extensions({id})/Microsoft.NAV.uninstallAndDeleteExtensionData`
+`POST https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/extensions({id})/Microsoft.NAV.install`
 
 The response has no content; the response code is 204.
 
 The extension resource type offers a bound action called `uninstall` which uninstalls the corresponding extension batch.
 This is illustrated in the following example:
-`UNINSTALL https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/extensions({id})/Microsoft.NAV.uninstall`
+`POST https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/extensions({id})/Microsoft.NAV.uninstall`
+
+The response has no content; the response code is 204.
+
+The extension resource type offers a bound action called `uninstallAndDeleteExtensionData` which uninstalls the corresponding extension batch and deletes the tables that contain data owned by the extension on uninstall. This action cannot be undone.
+This is illustrated in the following example:
+`POST https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/extensions({id})/Microsoft.NAV.uninstallAndDeleteExtensionData`
 
 The response has no content; the response code is 204.
 

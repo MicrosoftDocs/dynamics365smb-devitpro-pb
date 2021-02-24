@@ -20,11 +20,11 @@ Deletes an automation company from [!INCLUDE[d365fin_long_md](../../includes/d36
 ## HTTP request
 
 Replaces the URL prefix for [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
-<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different or there might be more than one -->
+
 ```
-DELETE /microsoft/automation/{apiVersion}/companies({companyID})/automationCompanies({companyIDToBeDeleted})
+DELETE /microsoft/automation/v2.0/companies({companyId})/automationCompanies({automationCompanyId})
 ```
-<!-- END>EDIT_IS_REQUIRED -->
+
 ## Request headers
 
 |Header|Value|
@@ -47,7 +47,7 @@ If successful, this method returns ```204 No Content``` response code and delete
 
 Here is an example of the request.
 ```json
-DELETE https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v1.0/companies({id})/automationCompanies({{companyIDToBeDeleted}})
+DELETE https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/automationCompanies({automationCompanyId})
 ```
 
 **Response**

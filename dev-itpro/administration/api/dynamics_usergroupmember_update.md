@@ -20,11 +20,11 @@ Updates the properties of an user group member object for [!INCLUDE[d365fin_long
 ## HTTP request
 
 Replace the URL prefix for [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
-<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different or there might be more than one-->
+
 ```
-PATCH /microsoft/automation/{apiVersion}/companies({companyId})/users({userSecurityID})/userGroupMembers
+PATCH /microsoft/automation/v2.0/companies({companyId})/users({userSecurityId})/userGroupMembers({userGroupMemberId})
 ```
-<!-- END>EDIT_IS_REQUIRED-->
+
 ## Request headers
 
 |Header|Value|
@@ -46,32 +46,32 @@ If successful, this method returns a ```200 OK``` response code and an updated *
 **Request**
 
 Here is an example of the request.
-<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different. Fill in the property values)-->
+
 ```json
-PATCH https:///microsoft/automation/{apiVersion}/companies({companyId})/users({userSecurityID})/userGroupMembers
+PATCH https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/users({userSecurityId})/userGroupMembers({userGroupMemberId})
 
 Content-type: application/json
 {
-    "code": "D365 BUS PREMIUM",
-    "userSecurityID": "7ae30772-481f-4895-a042-98f36e280680"
+    "displayName": "YourDisplayName"
 }
 ```
-<!-- END>EDIT_IS_REQUIRED -->
+
 **Response**
 Here is an example of the response.
 
-<!-- START>EDIT_IS_REQUIRED. Fill in values for properties -->
+
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
 {
+    "id": "d38a92e2-9d74-eb11-bb5c-00155df3a615",
     "code": "D365 BUS PREMIUM",
-    "userSecurityID": "7ae30772-481f-4895-a042-98f36e280680",
+    "userSecurityId": "7ae30772-481f-4895-a042-98f36e280680",
     "companyName": "CRONUS USA, Inc.",
-    "displayName": "D365 Premium Business Access"
+    "displayName": "YourDisplayName"
 }
 ```
-<!-- END>EDIT_IS_REQUIRED-->
+
 ## See Also
 
 [Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  

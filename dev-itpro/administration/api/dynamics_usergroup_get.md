@@ -20,11 +20,11 @@ Retrieves the properties and relationships of an user group object for [!INCLUDE
 ## HTTP request
 
 Replace the URL prefix for [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
-<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different -->
+
 ```
-GET /microsoft/automation/{apiVersion}/companies({companyId})/userGroups
+GET /microsoft/automation/v2.0/companies({companyId})/userGroups({userGroupId})
 ```
-<!-- END>EDIT_IS_REQUIRED -->
+
 ## Request headers
 
 |Header|Value|
@@ -44,24 +44,23 @@ If successful, this method returns a ```200 OK``` response code and an **userGro
 **Request**
 
 Here is an example of the request.
-<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different -->
+
 ```json
-GET https://microsoft/automation/{apiVersion}/companies({companyId})/userGroups
+GET https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/userGroups({userGroupId})
 ```
-<!-- END>EDIT_IS_REQUIRED -->
+
 **Response**
 Here is an example of the response.
 
-<!-- START>EDIT_IS_REQUIRED. Fill in values for properties -->
 ```json
 {
+    "id": "d38a92e2-9d74-eb11-bb5c-00155df3a615",
     "code": "D365 ACCOUNTANTS",
     "displayName": "Dynamics 365 for Accountants",
     "defaultProfileID": "ACCOUNTANT PORTAL",
     "assignToAllNewUsers": false
 }
 ```
-<!-- END>EDIT_IS_REQUIRED -->
 ## See Also
 
 [Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  

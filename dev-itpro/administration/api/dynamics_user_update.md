@@ -20,11 +20,11 @@ Updates the properties of an user object for [!INCLUDE[d365fin_long_md](../../in
 ## HTTP request
 
 Replace the URL prefix for [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
-<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different or there might be more than one-->
+
 ```
-PATCH /microsoft/automation/{apiVersion}/companies({companyid})/users({securityId})
+PATCH /microsoft/automation/v2.0/companies({companyId})/users({userSecurityId})
 ```
-<!-- END>EDIT_IS_REQUIRED-->
+
 ## Request headers
 
 |Header|Value|
@@ -47,7 +47,7 @@ If successful, this method returns a ```200 OK``` response code and an updated *
 
 Here is an example of the request.
 ```json
-PATCH https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v1.0/companies({id})/users({userSecurityId})
+PATCH https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/users({userSecurityId})
 Content-type: application/json
 If-Match:*
 {
@@ -58,7 +58,6 @@ If-Match:*
 **Response**
 Here is an example of the response.
 
-<!-- START>EDIT_IS_REQUIRED. Fill in values for properties -->
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -70,7 +69,6 @@ Content-type: application/json
     "expiryDate": "2035-01-01T21:03:53.443Z"
 }
 ```
-<!-- END>EDIT_IS_REQUIRED-->
 
 ## See Also
 

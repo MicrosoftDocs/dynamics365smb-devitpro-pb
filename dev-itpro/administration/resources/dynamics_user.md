@@ -29,11 +29,17 @@ Represents an user in [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.
 
 ## Bound Actions
 
-The user resource type offers a bound action called `createNewUsersFromAzureAD` which create new users from azure ads the corresponding user batch.
+The user resource type offers a bound action called `getNewUsersFromOffice365` which retrieves new users or new user information from the Office 365 portal. Note that existing, unchanged users will not be updated.
 This is illustrated in the following example:
-`CREATENEWUSERSFROMAZUREAD https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/users({id})/Microsoft.NAV.createNewUsersFromAzureAD`
+`POST https://<server address>:<server API port>/<server instance name>/api/microsoft/automation/v2.0/companies({id})/users({id})/Microsoft.NAV.createNewUsersFromAzureAD`
 
 The response has no content; the response code is 204.
+
+The user resource type offers a bound action called `getNewUsersFromOffice365Async` which schedules a background job to retrieve new users or new user information from the Office 365 portal. Note that existing, unchanged users will not be updated.
+This is illustrated in the following example:
+`POST https://<server address>:<server API port>/<server instance name>/api/microsoft/automation/v2.0/companies({id})/users({id})/Microsoft.NAV.createNewUsersFromAzureADAsync`
+
+The response has a reference to the scheduled job to track the progress of the scheduled background job; the response code is 201.
 
 ## Navigation
 

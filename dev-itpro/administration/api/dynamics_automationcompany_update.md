@@ -20,11 +20,12 @@ Updates the properties of an automation company object for [!INCLUDE[d365fin_lon
 ## HTTP request
 
 Replace the URL prefix for [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
-<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different or there might be more than one-->
+
+
 ```
-PATCH /microsoft/automation/{apiVersion}/companies({{companyid}})/automationCompanies
+PATCH /microsoft/automation/v2.0/companies({{companyid}})/automationCompanies({automationCompanyId})
 ```
-<!-- END>EDIT_IS_REQUIRED-->
+
 ## Request headers
 
 |Header|Value|
@@ -47,7 +48,7 @@ If successful, this method returns a ```200 OK``` response code and an updated *
 
 Here is an example of the request.
 ```json
-PATCH https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v1.0/companies({id})/automationCompanies
+PATCH https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/automationCompanies({automationCompanyId})
 Content-type: application/json
 If-Match:*
 {

@@ -42,8 +42,9 @@ Represents an user permission in [!INCLUDE[d365fin_long_md](../../includes/d365f
 
 | Property           | Type   |Description     |
 |:-------------------|:-------|:---------------|
+|id|GUID|The unique ID of the user permission. Read-Only.|
 |userSecurityId|GUID|The unique ID of the user security.|
-|id|string|The unique ID of the user permission. Read-Only.|
+|roleId|string|The unique ID of the user permission role.|
 |displayName|string|Specifies the user permission's name. This name will appear on all sales documents for the user permission.|
 |company|string|The company name.|
 |appId|GUID|The ID of the App.|
@@ -57,8 +58,9 @@ Here is a JSON representation of the userPermission resource.
 
 ```json
 {
+    "id": "GUID",
     "userSecurityId": "GUID",
-    "id": "string",
+    "roleId": "string",
     "displayName": "string",
     "company": "string",
     "appId": "GUID",
