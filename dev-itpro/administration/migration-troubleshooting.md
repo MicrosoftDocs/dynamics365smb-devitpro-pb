@@ -3,7 +3,7 @@ title: Troubleshooting the Cloud Migration
 description: Learn how to troubleshoot problems that you may experience with the cloud migration.
 author: dmc-dk
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -36,21 +36,21 @@ ALTER DATABASE YourDatabaseName SET COMPATIBILITY_LEVEL = 130;
 ```
 
 > [!NOTE]
-> You may also get the following error when compatibility level isn't set to the expected value: "A database operation failed with the following error: Invalid length parameter passed to the LEFT or SUBSTRING function." 
+> You may also get the following error when compatibility level isn't set to the expected value: "A database operation failed with the following error: Invalid length parameter passed to the LEFT or SUBSTRING function."
 
-## Migration user 
+## Migration user
 
 > Database: on-premises
 
-Make sure that the database user that the Integration Runtime uses to connect to your database has access to the database. 
+Make sure that the database user that the Integration Runtime uses to connect to your database has access to the database.  
 
-You can verify the database user, for example, by running the following command using Microsoft PowerShell ISE. 
+You can verify the database user, for example, by running the following command using Microsoft PowerShell ISE.  
 
 ```powershell
 sqlcmd -S 'ServerName\ServerInstance' -d 'DatabaseName' -U 'UserID' -P 'Password' -Q 'select * from [dbo].[CRONUS USA, Inc_$Accounting Period$437dbf0e-84ff-417a-965d-ed2bb9650972]' 
 ```
 
-## Change tracking 
+## Change tracking
 
 > Database: on-premises
 
@@ -79,20 +79,20 @@ If a user has problems managing a cloud migration, like starting migration, init
 
 Users without a license, such as internal administrators or delegated administrators, aren't allowed to run the migration.  
 
-## Self-Hosted Integration Runtime 
+## Self-Hosted Integration Runtime
 
 > Database: on-premises
 
 - Ensure that you're running the latest, compatible version of Microsoft Integration Runtime (IR).
 
-    You can check for and download the latest version from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=39717#:~:text=The%20Integration%20Runtime%20is%20a%20customer%20managed%20data,It%20was%20formerly%20called%20as%20Data%20Management%20Gateway).
+    You can check for and download the latest version from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=39717).
 
     When downloading and installing Integration Runtime, choose version 5 (IntegrationRuntime_5.x.x.x.msi) only if your machine runs .NET Framework Runtime 4.7.2. Otherwise, or if in doubt, choose version 4 (IntegrationRuntime_4.x.x.x.msi).
 
     > [!IMPORTANT]
     > Running Integration Runtime v5 on a machine that doesn't have .NET Framework Runtime 4.7.2 can cause timeouts when connecting to the on-premise SQL Server, which will break the cloud migration setup.
   
-    Before you install a new Integration Runtime version, uninstall the old version. When you uninstall the old version, choose to delete the user data (such as authentication key and data source credentials) when prompted. Then, install the Integration Runtime again and connect it to the online environment using the new authentication key. 
+    Before you install a new Integration Runtime version, uninstall the old version. When you uninstall the old version, choose to delete the user data (such as authentication key and data source credentials) when prompted. Then, install the Integration Runtime again and connect it to the online environment using the new authentication key.  
 
 - If you get a "Failed to enable your replication." error when running the **Data Migration Setup** assisted setup, check the IR logs.
 
@@ -100,9 +100,9 @@ Users without a license, such as internal administrators or delegated administra
 
 - Synchronization errors can sometimes occur because IR is installed on a laptop or desktop computer where the hibernate feature is turned on.
 
-    The computer where IR is installed ideally shouldn't be switched off, go to sleep, or hibernate. If these conditions happen, the IR may get into an error state. In this case, we recommend that you reinstall the IR and turn off sleep hibernate on the computer. 
-    
- - Make sure the machine, which you use for hosting IR has plenty of memory (RAM) available. Migration can be interrupted by your machine running out of memory, and you can find this issue described in the IR log. To prevent this situation, avoid running too many migrations simultaneously using the same IR. Every additional parallel migration slows down the overall progress considerably.
+    The computer where IR is installed ideally shouldn't be switched off, go to sleep, or hibernate. If these conditions happen, the IR may get into an error state. In this case, we recommend that you reinstall the IR and turn off sleep hibernate on the computer.  
+
+- Make sure the machine, which you use for hosting IR has plenty of memory (RAM) available. Migration can be interrupted by your machine running out of memory, and you can find this issue described in the IR log. To prevent this situation, avoid running too many migrations simultaneously using the same IR. Every additional parallel migration slows down the overall progress considerably.
 
 If you experience problems with Microsoft Integration Runtime, also see [Troubleshoot self-hosted integration runtime](/azure/data-factory/self-hosted-integration-runtime-troubleshoot-guide).
 
@@ -117,12 +117,12 @@ If you experience problems with Microsoft Integration Runtime, also see [Trouble
 - Use a restored backup when migrating the same on-premise database to different online environments.
 
     Cloud migration stores some data in the on-premise database. So using the same on-premise database to migrate into another online environment can affect the next synchronization run. If you need to migrate to several online environments, we recommend you make a backup of the on-premise database before enabling the data migration. Then, restore the on-premise database to this backup before setting up migration to another online environment.  
-    
+
 - Avoid running several migrations of the same on-prem database to different online environment at the same time.
 
     If you need to do this type of migration, then migrate data sequentially. First, migrate data into the online environment and disable the migration. Then restore the on-prem database from backup and enable the migration again by providing a connection string to this database. You can use the same Integration Runtime and Authorization key.  
 
-- Don't try to migrate data from several on-premise databases into the same online environment at the same time. 
+- Don't try to migrate data from several on-premise databases into the same online environment at the same time.  
 
     For example, you may have two companies, where each company is in its own on-premise database. If you need to do this type of migration, the migrate data sequentially. First, migrate data from one database into the online environment and disable the migration. Then set up the migration in the same online environment, provide a new connection string to the next on-prem database. You can use the same Integration Runtime and Authorization key.  
 
@@ -134,19 +134,19 @@ If you experience problems with Microsoft Integration Runtime, also see [Trouble
 
     |Option|When to use|
     |------|-----------|
-    |Dynamics 365 Business Central|Select this option if you're migrating from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)]  version that matches the version of your online environment, for example, version 17 to version 17|
-    |Dynamics 365 Business Central - Previous Version|Select this option if you're migrating from the previous major version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)], for example, version 15 to version 17.|
-    |Dynamics GP|Select this option if you're migrating from the Dynamics GP product.| 
+    |Dynamics 365 Business Central|Select this option if you're migrating from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)]  latest version, currently version 17|
+    |Dynamics 365 Business Central - Previous Version|Select this option if you're migrating from the an earlier supported version. [!INCLUDE [bc-cloud-versions](../includes/bc-cloud-versions.md)]|
+    |Dynamics GP|Select this option if you're migrating from the Dynamics GP product.|
 
 - When migrating data from [!INCLUDE[prod_short](../developer/includes/prod_short.md)], check the `applicationVersion` field in the `$ndo$tenantdatabaseproperty` table. Set this field to the correct version in the SQL if it's blank or not up to date. The migration code uses the field's value for the following reasons:
 
-    - Verifies that you're migrating from a supported version
-    - Verifies that you've selected the right product version in the **Data Migration Setup** assisted setup, like Dynamics 365 Business Central or Dynamics 365 Business Central - Previous Version.
-    - Determines which upgrade code will be executed.
+  - Verifies that you're migrating from a supported version
+  - Verifies that you've selected the right product version in the **Data Migration Setup** assisted setup, like Dynamics 365 Business Central or Dynamics 365 Business Central - Previous Version.
+  - Determines which upgrade code will be executed.
 
     If that field is blank, the migration can't run.  
 
-## Disabling the Cloud Migration 
+## Disabling the Cloud Migration
 
 > Database: online
 

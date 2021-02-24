@@ -6,7 +6,7 @@ ms.custom: na
 ms.date: 10/01/2020
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
@@ -68,4 +68,5 @@ For more information, see [JSON Files](../devenv-json-files.md).
 [Conditional directives](devenv-directives-in-al.md#conditional-directives)  
 [Region Directive in AL](devenv-directive-region.md)  
 [Pragma Directive in AL](devenv-directive-pragma.md)  
-[Deprecating Explicit and Implicit With Statements](../devenv-deprecating-with-statements-overview.md)
+[Deprecating Explicit and Implicit With Statements](../devenv-deprecating-with-statements-overview.md)  
+[Best Practices for Deprecation of Code in the Base App](../devenv-deprecation-guidelines.md)

@@ -4,7 +4,7 @@ description: Learn how to give your customers access to the right Help content f
 author: edupont04
 ms.custom: na
 ms.reviewer: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.date: 01/27/2021
 ms.author: edupont

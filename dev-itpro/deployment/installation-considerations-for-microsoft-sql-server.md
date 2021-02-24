@@ -6,7 +6,7 @@ ms.date: 10/29/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
@@ -106,6 +106,9 @@ SQL Server (2014 and earlier) uses a threshold based on the percent of rows chan
 SQL Server (starting with 2016 and under the compatibility level 130) uses a threshold that adjusts according to the number of rows in the table. With this change, statistics on large tables will be updated more often.
 
 Even with "Auto Update Statistics" enabled, we still strongly recommend running a periodic SQL Agent job to update statistics. This is because "Auto Update Statistics" will only be triggered according to the rules described above. On large tables with tens of millions of records (such as Value Entry, Item Ledger Entry and G/L Entry), a small percentage of data in a given statistic such as [Entry No.] can change and have a material effect on the overall data distribution in that statistic. This can cause inefficient query plans, resulting  in degraded query performance until any threshold is reached. We recommend using the T-SQL procedure "sp_updatestats" to update statistics, as it will only update statistics where data has been changed. We recommend creating a SQL Agent Job that runs daily or weekly (depending on transaction volume) during off-peak hours to update all statistics where data has changed.
+
+#### Index fragmentation
+Another important administration task that helps to reduce data size and improve performance is to reduce fragmentation for tables and non-clustered indexes. This article in the SQL Server documentation is a good starting point to learn more: [Resolve index fragmentation by reorganizing or rebuilding indexes](/sql/relational-databases/indexes/reorganize-and-rebuild-indexes).
 
 #### Other database options
 

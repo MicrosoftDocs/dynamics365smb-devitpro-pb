@@ -5,7 +5,7 @@ author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 01/15/2021
 ms.reviewer: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
@@ -65,12 +65,13 @@ Join the Business Central Office Hours to learn more and connect with the Busine
 | Date      | Topic |
 |--------------|--------------|
 |Dec 1, 2020 | AppSource; What do you need to do to pass validation?  |
-Dec 15, 2020 | Controlling your database sizes |
+|Dec 15, 2020 | Controlling your database sizes |
 |Jan 12, 2021 | Customer Migration Tooling |
-Jan 26, 2021 | Power Platform Integration - Power BI |
-Feb 9, 2021 | Power Platform, Power Apps, and Dataverse (formerly known as CDS) |
-Feb 23, 2021 | Performance Toolkit and Telemetry; How to deploy for performance |
-Mar 9, 2021 | Integrating with Microsoft Teams
+|Jan 26, 2021 | Power Platform Integration - Power BI |
+|Feb 9, 2021 | Power Platform, Power Apps, and Dataverse (formerly known as CDS) |
+|Feb 23, 2021 | Performance Toolkit and Telemetry; How to deploy for performance |
+|Mar 9, 2021 | Integrating with Microsoft Teams |
+|Mar 23, 2021 | Business Central apps in AppSource | 
  
 **Business Central Localization Apps Office Hours Calls**  
 Join the Business Central Localization Apps Office Hours to learn more about how to deliver localization apps for Business Central online and connect with the Microsoft subject matter experts. The calls typically take place on the first Thursday of every month. There are two calls for each date to accommodate different time zones. First call is from 09.00am-10.00am CET and the second call is from 17.00pm-18.00pm CET. Register for the live calls here: [aka.ms/BCLocOfficeHours](https://aka.ms/BCLocOfficeHours).
@@ -92,7 +93,7 @@ Business Central on the Dynamics 365 blog for IT Professionals: [cloudblogs.micr
 **Blog for Decision Makers**  
 The Dynamics 365 blog for Business Decision Makers: [cloudblogs.microsoft.com/dynamics365/bdm](https://cloudblogs.microsoft.com/dynamics365/bdm/)
 
-### See Also 
-Get started with developing apps: [aka.ms/BCPublisher](https://aka.ms/bcpublisher)
+### See Also
 
+Get started with developing apps: [aka.ms/BCPublisher](https://aka.ms/bcpublisher)  
 Get started with reselling apps: [aka.ms/BCReseller](https://aka.ms/bcreseller)  
