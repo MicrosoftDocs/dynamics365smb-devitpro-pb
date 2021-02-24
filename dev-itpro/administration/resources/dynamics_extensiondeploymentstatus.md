@@ -1,4 +1,3 @@
-
 ---
 title: extensionDeploymentStatus resource type | Microsoft Docs
 description: An extension deployment status object in Dynamics 365 Business Central.

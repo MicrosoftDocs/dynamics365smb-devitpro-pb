@@ -1,4 +1,3 @@
-
 ---
 title: file resource type | Microsoft Docs
 description: A file object in Dynamics 365 Business Central.

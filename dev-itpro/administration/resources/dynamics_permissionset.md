@@ -1,4 +1,3 @@
-
 ---
 title: permissionSet resource type | Microsoft Docs
 description: A permission set object in Dynamics 365 Business Central.

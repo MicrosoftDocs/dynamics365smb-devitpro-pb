@@ -1,4 +1,3 @@
-
 ---
 title: subscriptions resource type | Microsoft Docs
 description: A subscriptions object in Dynamics 365 Business Central.

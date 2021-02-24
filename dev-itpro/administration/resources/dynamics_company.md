@@ -1,4 +1,3 @@
-
 ---
 title: company resource type | Microsoft Docs
 description: A company object in Dynamics 365 Business Central.

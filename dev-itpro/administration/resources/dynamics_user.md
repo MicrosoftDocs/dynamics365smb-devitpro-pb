@@ -1,4 +1,3 @@
-
 ---
 title: user resource type | Microsoft Docs
 description: An user object in Dynamics 365 Business Central.

@@ -1,4 +1,3 @@
-
 ---
 title: extensionUpload resource type | Microsoft Docs
 description: An extension upload object in Dynamics 365 Business Central.

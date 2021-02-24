@@ -1,4 +1,3 @@
-
 ---
 title: userGroup resource type | Microsoft Docs
 description: An user group object in Dynamics 365 Business Central.

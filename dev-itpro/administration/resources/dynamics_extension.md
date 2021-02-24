@@ -1,4 +1,3 @@
-
 ---
 title: extension resource type | Microsoft Docs
 description: An extension object in Dynamics 365 Business Central.

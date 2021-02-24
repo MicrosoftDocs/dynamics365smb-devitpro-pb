@@ -1,4 +1,3 @@
-
 ---
 title: scheduledJob resource type | Microsoft Docs
 description: A scheduled job object in Dynamics 365 Business Central.
