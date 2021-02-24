@@ -24,10 +24,8 @@ The following table provides an overview of the available resource types on a [!
 |[extension resource type](api/dynamics_extension.md)|Represents an extension resource type in [!INCLUDE[d365fin_long_md](../developer/includes/d365fin_long_md.md)].|
 |[extensionDeploymentStatus resource type](api/dynamics_extensiondeploymentstatus.md)|Represents a extensionDeploymentStatus resource type in [!INCLUDE[d365fin_long_md](../developer/includes/d365fin_long_md.md)].|
 |[extensionUpload resource type](api/dynamics_extensionupload.md)|Represents a extensionDeploymentStatus resource type in [!INCLUDE[d365fin_long_md](../developer/includes/d365fin_long_md.md)].|
-|[file resource type](api/dynamics_file.md)|Represents a extensionDeploymentStatus resource type in [!INCLUDE[d365fin_long_md](../developer/includes/d365fin_long_md.md)].|
 |[permissionSet resource type](api/dynamics_permissionset.md)|Represents a permissionSet resource type in [!INCLUDE[d365fin_long_md](../developer/includes/d365fin_long_md.md)].|
 |[sceduledJob resource type](api/dynamics_scheduledjob.md)|Represents a extensionDeploymentStatus resource type in [!INCLUDE[d365fin_long_md](../developer/includes/d365fin_long_md.md)].|
-|[subscriptions resource type](api/dynamics_subscriptions.md)|Represents a extensionDeploymentStatus resource type in [!INCLUDE[d365fin_long_md](../developer/includes/d365fin_long_md.md)].|
 |[user resource type](api/dynamics_user.md)|Represents a user resource type in [!INCLUDE[d365fin_long_md](../developer/includes/d365fin_long_md.md)].|
 |[userGroup resource type](api/dynamics_usergroup.md)|Represents a userGroup resource type in [!INCLUDE[d365fin_long_md](../developer/includes/d365fin_long_md.md)].|
 |[userGroupMember resource type](api/dynamics_usergroupmember.md)|Represents a userGroupMember resource type in [!INCLUDE[d365fin_long_md](../developer/includes/d365fin_long_md.md)].|
