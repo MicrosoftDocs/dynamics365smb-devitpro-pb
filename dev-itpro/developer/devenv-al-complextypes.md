@@ -13,7 +13,9 @@ author: esbenk
 
 # AL Complex Types
 
-With the latest version of Business central, it is possible to return most types from procedures - both user-defined types and most built-in types.
+[!INCLUDE[2021_releasewave1.md](../includes/2021_releasewave1.md)]
+
+With the latest version of [!INCLUDE[prod_short](includes/prod_short.md)], it is possible to return most types from procedures - both user-defined types and most built-in types.
 
 
 ```al
