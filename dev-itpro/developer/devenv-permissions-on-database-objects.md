@@ -26,7 +26,7 @@ Sometimes, when you open a page it displays information from several tables. To 
 
 The following table describes the permissions that can be assigned for specific objects. When assigning permissions by using the object types [PermissionSet Object](devenv-permissionset-object.md) and [PermissionSet Extension Object](devenv-permissionset-ext-object.md) these permissions have been shortened. The table illustrates the abbreviations used.
 
-Permissions on `tabledata` is specified with the following abbreviations:
+Permissions on `tabledata` are specified with the following abbreviations:
 
 |Permission|Description|Abbreviation in AL  |
 |----------|-----------------|----------|
@@ -35,7 +35,7 @@ Permissions on `tabledata` is specified with the following abbreviations:
 |Modify    |You can modify data.| `M` for direct modify permission, `m` for indirect modify permission. |
 |Delete    |You can delete data.| `D` for direct delete permission, `d` for indirect delete permission.| 
 
-Permissions on all objects is specified with the following abbreviations:
+Permissions on all objects are specified with the following abbreviations:
 
 |Permission|Description|Abbreviation in AL  |
 |----------|-----------------|----------|
