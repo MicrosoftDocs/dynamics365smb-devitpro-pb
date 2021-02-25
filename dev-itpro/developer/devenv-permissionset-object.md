@@ -59,9 +59,9 @@ permissionset 50130 MyPermissionSet
     IncludedPermissionSets = "Sales Person"; 
 
     Permissions = 
-        codeunitSomeCode = x, 
+        codeunit SomeCode = x, 
         tabledata Vendor = RIm,
-        codeunitAccSchedManagement= X; 
+        codeunit AccSchedManagement= X; 
 } 
 ```
 
