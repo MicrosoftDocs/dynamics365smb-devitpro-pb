@@ -57,10 +57,11 @@ All of the permissions illustrated above can be combined into a group of permiss
 
 ```al
 ...
-tabledata Customer = RIMD,
-    tabledata "Payment Terms" = RMD,
+Permissions =     
+    tabledata Customer = RIMD,        // Full access
+    tabledata "Payment Terms" = RMD,  // Full read, modify, and delete access - no insert
     tabledata Currency = rimd,        // Full indirect access
-    tabledata "Sales Header" = RIM,
+    tabledata "Sales Header" = RIM,   // full read, insert, and modify access - no delete
     tabledata "Sales Line" = RIMD,    // Full access
     report "Sales Statistics" = X;    // Full access
 ...
