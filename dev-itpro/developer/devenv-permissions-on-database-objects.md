@@ -52,7 +52,6 @@ Permissions = codeunit * = X;
 > [!IMPORTANT]  
 > The wildcard must be used with caution, because when it is used in a permission set it grants the permission to all objects of that type across all permissions. If a permission set with a wildcard is included in an entitlement, it only covers the objects of that type in the current extension.
 
-
 All of the permissions illustrated above can be combined into a group of permissions for any given object. For example:
 
 ```al
