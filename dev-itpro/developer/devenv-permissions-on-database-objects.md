@@ -39,7 +39,7 @@ Permissions on all objects are specified with the following abbreviations:
 
 |Permission|Description|Abbreviation in AL  |
 |----------|-----------------|----------|
-|Execute  | You can execute this object. | `X` for direct execute permissions, `x` for indirect execute permissions. |
+|Execute   |You can run this object. | `X` for direct execute permissions, `x` for indirect execute permissions. |
 
 These permissions can be combined into a group of permissions for any given object. For example:
 
@@ -50,7 +50,7 @@ tabledata Customer = RIMD,
     tabledata Currency = rimd,        // Full indirect access
     tabledata "Sales Header" = RIM,
     tabledata "Sales Line" = RIMD,    // Full access
-    report "Sales Statistics" = X;
+    report "Sales Statistics" = X;    // Full access
 ...
 ```
   
