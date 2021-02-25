@@ -26,27 +26,31 @@ Sometimes, when you open a page it displays information from several tables. To 
 
 The following table describes the permissions that can be assigned for specific objects. When assigning permissions by using the object types [PermissionSet Object](devenv-permissionset-object.md) and [PermissionSet Extension Object](devenv-permissionset-ext-object.md) these permissions have been shortened. The table illustrates the abbreviations used.
 
+Permissions on `tabledata` is specified with the following abbreviations:
 
 |Permission|Description|Abbreviation in AL  |
 |----------|-----------------|----------|
-|Read      |You can read this object.| `R` for direct read access, `r` for indirect read access. |
-|Insert    |You can insert data into this object.| `I` for direct insert permission, `i` for indirect insert permission. |
-|Modify    |You can modify data in this object.| `M` for direct modify permission, `m` for indirect modify permission. |
-|Delete    |You can delete data from this object.| `D` for direct delete permission, `d` for indirect delete permission.| 
-|Execute  | You can execute this object. | `X` for direct execute permissions, `x` for indirect execute permissions. |
+|Read      |You can read data.| `R` for direct read access, `r` for indirect read access. |
+|Insert    |You can insert data.| `I` for direct insert permission, `i` for indirect insert permission. |
+|Modify    |You can modify data.| `M` for direct modify permission, `m` for indirect modify permission. |
+|Delete    |You can delete data.| `D` for direct delete permission, `d` for indirect delete permission.| 
 
-<!-- wildcard? -->
+Permissions on all objects is specified with the following abbreviations:
+
+|Permission|Description|Abbreviation in AL  |
+|----------|-----------------|----------|
+|Execute  | You can execute this object. | `X` for direct execute permissions, `x` for indirect execute permissions. |
 
 These permissions can be combined into a group of permissions for any given object. For example:
 
 ```al
 ...
 tabledata Customer = RIMD,
-        tabledata "Payment Terms" = RMD,
-        tabledata Currency = rimd,        // Full indirect access
-        tabledata "Sales Header" = RIM,
-        tabledata "Sales Line" = RIMD,    // Full access
-        report "Sales Statistics" = X;
+    tabledata "Payment Terms" = RMD,
+    tabledata Currency = rimd,        // Full indirect access
+    tabledata "Sales Header" = RIM,
+    tabledata "Sales Line" = RIMD,    // Full access
+    report "Sales Statistics" = X;
 ...
 ```
   
