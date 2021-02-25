@@ -41,7 +41,19 @@ Permissions on all objects are specified with the following abbreviations:
 |----------|-----------------|----------|
 |Execute   |You can run this object. | `X` for direct execute permissions, `x` for indirect execute permissions. |
 
-These permissions can be combined into a group of permissions for any given object. For example:
+#### Wildcard
+
+The wildcard can be used as a shortcut to assign multiple permissions at a time, such as:
+
+```al
+Permissions = codeunit * = X;
+```
+
+> [!IMPORTANT]  
+> The wildcard must be used with caution, because when it is used in a permission set it grants the permission to all objects of that type across all permissions. If a permission set with a wildcard is included in an entitlement, it only covers the objects of that type in the current extension.
+
+
+All of the permissions illustrated above can be combined into a group of permissions for any given object. For example:
 
 ```al
 ...
@@ -53,6 +65,7 @@ tabledata Customer = RIMD,
     report "Sales Statistics" = X;    // Full access
 ...
 ```
+
   
 ## See Also
 
