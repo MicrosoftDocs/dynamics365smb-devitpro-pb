@@ -14,7 +14,9 @@ ms.author: solsen
 
 # Permission Set Object
 
-The permission set object in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] describes which objects an administrator or a partner has assigned to a user. Permission sets are included in an [Entitlement Object](devenv-entitlement-object.md) that constitutes the set of permissions that a customer is entitled to use. With a [Permission Set Extension Object](devenv-permissionset-ext-object.md) you can make *additive* changes to an existing permission set. This means that you cannot remove permissions from a permission set with an extension object.
+The permission set object in [!INCLUDE[prod_short](includes/prod_short.md)] describes permissions on objects. Permission sets are building blocks used to compose assignable permission sets and [entitlements](devenv-entitlement-object.md). Assignable permission sets are permissions that an admin can assign to users in Business Central, using the **Permission Sets** page. An entitlement is a collection of permission sets that constitute a set of meaningful permissions for a user.
+
+Some permission sets can be non-assignable, meaning that they are not discoverable and assignable in the UI in Business Central, but they can be used as building blocks to compose functional assignable permission sets.
 
 For information about which permissions can be assigned to objects, see [Permissions on Database Objects](devenv-permissions-on-database-objects.md).
 
@@ -30,7 +32,7 @@ Typing the shortcut `tpermissionset` will create the basic layout for a permissi
 
 ## Permission set example
 
-The following example illustrates a permissionset `Sales Person` with permissions given to data in tables, each with different level of access. The <!-- [Assignable property](properties/devenv-assignable-property.md)--> [Assignable property](https://review.docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/properties/devenv-assignable-property?branch=new-properties) is set to `true` which allows the permissionset to be assigned to a user. The <!--[Permissions property](properties/devenv-permissions-property.md)--> [Permissions property](https://review.docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/properties/devenv-permissions-property?branch=new-properties) is set to the list of objects to give permissions to. The `RIMD` access assigned to data in the `Customer` table provides full access, whereas, for example, access is limited for data in the `Currency` table only allowing full read and modify permission. 
+The following example illustrates a permission set `Sales Person` with permissions given to data in tables, each with different level of access. The <!-- [Assignable property](properties/devenv-assignable-property.md)--> [Assignable property](https://review.docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/properties/devenv-assignable-property?branch=new-properties) is set to `true` which allows the permission set to be assigned to a user. The <!--[Permissions property](properties/devenv-permissions-property.md)--> [Permissions property](https://review.docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/properties/devenv-permissions-property?branch=new-properties) is set to the list of objects to give permissions to. The `RIMD` access assigned to data in the `Customer` table provides full access, whereas, for example, access is limited for data in the `Currency` table only allowing full read and modify permission. 
 
 
 ```al
@@ -49,7 +51,7 @@ permissionset 50134 "Sales Person"
 
 ```
 
-The following example of a permissionset illustrates assigned permissions to run codeunits. With the <!-- [IncludedPermissionSets property](properties/devenv-includedpermissionsets-property.md) -->[IncludedPermissionSets property](https://review.docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/properties/devenv-includedpermissionsets-property?branch=new-properties), we specify that the permissionset `Sales Person` is also included in `MyPermissionSet`.
+The following example of a permission set illustrates assigned permissions to run codeunits. With the <!-- [IncludedPermissionSets property](properties/devenv-includedpermissionsets-property.md) -->[IncludedPermissionSets property](https://review.docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/properties/devenv-includedpermissionsets-property?branch=new-properties), we specify that the permissionset `Sales Person` is also included in `MyPermissionSet`.
 
 ```al
 permissionset 50130 MyPermissionSet 
