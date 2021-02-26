@@ -23,6 +23,18 @@ Determines the object permissions that this entitlement object permits a user or
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
+## Syntax
+
+```al
+entitlement MyEntitlement
+{
+    ...
+    ObjectEntitlements = 
+        ”D365 BUS PREMIUM - BaseApp”;​
+}
+```
+
+
 ## See Also
 
 [Getting Started with AL](../devenv-get-started.md)  

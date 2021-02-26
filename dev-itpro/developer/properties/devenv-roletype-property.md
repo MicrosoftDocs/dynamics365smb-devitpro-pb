@@ -30,6 +30,19 @@ If the entitlement type is Role, the RoleType is used to distinguish between loc
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
+## Syntax
+
+```al
+entitlement MyEntitlement
+{
+    ...
+    Type = Role;                    // Entitlement type, if Role, then specify RoleType property
+    RoleType = Delegated;
+    ObjectEntitlements = 
+        ”D365 BUS PREMIUM - BaseApp”;​
+}
+```
+
 ## Remarks
 
 When the [Type Property](devenv-type-property.md) is set to `Role`, the `RoleType` property is used to further define whether the `RoleType` is `Local` or `Delegated`.

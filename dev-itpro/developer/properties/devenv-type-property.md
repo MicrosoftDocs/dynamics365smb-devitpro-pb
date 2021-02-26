@@ -35,6 +35,19 @@ The type of entitlement. When a user logs into Business Central, it is checked i
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
+## Syntax
+
+```al
+entitlement MyEntitlement
+{
+    ...
+    Type = Role;                    // Entitlement type, if Role, then specify RoleType property
+    RoleType = Delegated;
+    ObjectEntitlements = 
+        ”D365 BUS PREMIUM - BaseApp”;​
+}
+```
+
 ## Remarks
 
 When `Type` is set to `Role`, the [RoleType Property](devenv-roletype-property.md) is used to further define whether the `RoleType` is `Local` or `Delegated`.
