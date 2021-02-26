@@ -14,7 +14,7 @@ ms.author: solsen
 
 # Permission Set Extension Object
 
-The permission set object in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] describes which objects an administrator or a partner has assigned to a user. The permission set extension object describes which *additional* assignments an administrator or a partner has assigned to a user meaning that an extension cannot remove permissions from an existing permission set.
+The permission set extension object adds permissions to existing permission set defined in AL. A permission set extension object *cannot remove* permissions from an existing permission set, it can only *add* permissions. If you, for example, add an extension to Business Central, you can use permission set extension objects to grant permissions to the objects in your extension. This means that the admin of Business Central does not have to assign additional permission sets to the users, because that automatically happens when the extension is installed, and the permissions go away if the extension is uninstalled.
 
 For information about which permissions can be assigned to objects, see [Permissions on Database Objects](devenv-permissions-on-database-objects.md).
 
