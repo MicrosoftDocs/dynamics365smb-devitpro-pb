@@ -17,6 +17,7 @@ author: esbenk
 
 With the latest version of [!INCLUDE[prod_short](includes/prod_short.md)], it is possible to return most types from procedures - both user-defined types and most built-in types.
 
+As an example, the below method will take a name, and return the first customer record that matches the name. The signature specifies the return type at the end of the procedure declaration, and the procedure exits by returning the found customer record.
 
 ```al
 /// <summary> 
