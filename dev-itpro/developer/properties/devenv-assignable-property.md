@@ -23,6 +23,19 @@ Sets whether the permission set can be assigned to a user.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
+## Syntax
+
+```al
+permissionset 50100 MyPermissionSet
+{
+    Assignable = true;
+...
+```
+
+## Remarks
+
+Assignable permission sets are permissions that an admin can assign to users in [!INCLUDE[prod_short](../../includes/prod_short.md)], using the **Permission Sets** page.
+
 ## See Also  
 
 [Getting Started with AL](../devenv-get-started.md)  
