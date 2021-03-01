@@ -74,7 +74,7 @@ The application database tables which used to store the entitlements will not co
 UsePermissionSetsFromExtensions: ‘true’
 ```
 
-The default value for this setting is `true`, meaning that the server will be retrieving **System** and **Extensions** permission sets and permissions from the AL objects of type `PermissionSet` and `PermissionSetExtension`. 
+The default value for this setting is `true`, meaning that the server will be retrieving all **System** and **Extensions** permission sets and permissions from the AL objects of type `PermissionSet` and `PermissionSetExtension`. With the value for this setting set to `true`, the permissions data, in case it is still present in the application database, will be disregarded. 
 
 It is not possible to customize the System and Extension permission sets and permissions used in the online version of [!INCLUDE [prod_short](includes/prod_short.md)], the users can only copy those to new permission sets, which they can then adjust to their needs (https://docs.microsoft.com/en-us/dynamics365/business-central/ui-define-granular-permissions#to-create-or-modify-a-permission-set).
 
