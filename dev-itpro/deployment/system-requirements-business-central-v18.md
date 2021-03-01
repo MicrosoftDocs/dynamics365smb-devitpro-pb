@@ -24,7 +24,7 @@ The following table shows the minimum system requirements for the [!INCLUDE[prod
 
 |Specification|Requirement|
 |------|-----|  
-|Supported browsers|Recommended browsers:<ul><li>New Microsoft Edge, latest version</li><li>Google Chrome for Windows, latest version</li><li>Mozilla Firefox for Windows, latest version</li><li>Safari for macOS, latest version</li></ul>Other supported browsers:<ul><li>Internet Explorer 11, latest version</li><li>Microsoft Edge Legacy, latest version</li></ul>Cookies and JavaScript must be enabled in the browser.|
+|Supported browsers|<ul><li>New Microsoft Edge, latest version</li><li>Google Chrome for Windows, latest version</li><li>Mozilla Firefox for Windows, latest version</li><li>Safari for macOS, latest version</li></ul>Cookies and JavaScript must be enabled in the browser.|
 
 <!--
 ## <a name="NavApps"></a> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Tablet Client and Phone Client \(in a Browser\)
@@ -56,10 +56,10 @@ For the latest information, see the app in the Windows Store, App Store, or Goog
 
 |Specification|Requirement|  
 |------|-----|  
-|Excel|<ul><li>Sending data to Excel requires Microsoft Office 2019, Excel for web, or Excel mobile app for iOS or Android&trade;trade;.</li><li>Editing in Excel using the Excel Add-In requires Microsoft Office 2019 or Excel for web.</li></ul>|  
-|Word|<ul><li>Microsoft Office 2019, Word for web, or Word mobile app for iOS or Android&trade;trade;.</li></ul>|
-|Outlook|Please see [Business Inbox in Microsoft Outlook](system-requirement-business-central-v17.md#BusInboxOutlook).|  
-|Additional software|<ul><li>A third-party telephony or VoIP app such as Skype or Microsoft Teams is required for placing calls from [!INCLUDE[prod_short](../developer/includes/prod_short.md)].|  
+|Excel|<ul><li>Sending data to Excel requires Excel 2019, Excel on the web, or Excel mobile app for iOS or Android&trade;.</li><li>Editing in Excel using the Excel Add-In requires Microsoft Office 2019 or Excel on the web.</li></ul>|  
+|Word|<ul><li>Microsoft Office 2019, Word for the web, or Word mobile app for iOS or Android&trade;.</li></ul>|
+|Outlook|Please see [Business Inbox in Microsoft Outlook](system-requirement-business-central-v18.md#BusInboxOutlook).|  
+|Additional software|<ul><li>A third-party telephony or VoIP app such as Microsoft Teams is required for placing calls from [!INCLUDE[prod_short](../developer/includes/prod_short.md)].|  
 
 ## AL Development
 
@@ -92,7 +92,7 @@ The following table shows the minimum system requirements for [!INCLUDE[server](
 
 |Specification|Requirement|  
 |----|----|  
-|Supported operating systems|<ul><li>Windows 10 Pro, Enterprise, or Education \(64-bit edition)</li><li>Windows Server 2019 (Datacenter, Standard)</li><li>Windows Server, version 1809 or later (Datacenter, Standard)</li><li>Windows Server 2016 (Datacenter, Standard)</li></ul>For information about the supported versions and their lifecycles, see [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).|  
+|Supported operating systems|<ul><li>Windows 10 Pro, Enterprise, or Education \(64-bit edition)</li><li>Windows Server 2019 (Datacenter, Standard)</li><li>Windows Server, version 2004 or later (Datacenter, Standard)</li><li>Windows Server 2016 (Datacenter, Standard)</li></ul>For information about the supported versions and their lifecycles, see [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).|  
 |Web server|<ul><li>Internet Information Services 10.|   
 |Additional software|<ul><li>Microsoft .NET Framework 4.8</li><li>Windows PowerShell 4.0.|  
 |Additional information|<ul><li>[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] installs the following software if it's not already present on the target computer.<ul><li>Microsoft .NET Core 1.0 Windows Server Hosting. This software is installed by [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] if not already present.</li><li>Microsoft .NET Framework 4.8</li><li>Internet Information Services 10 is installed with the required features enabled.</li></ul></li><li>For more information about configuring IIS, see [Configuring IIS](configure-iis.md)</li></ul>|  
@@ -138,11 +138,11 @@ The following table shows the minimum system requirements for using [!INCLUDE[pr
 
 |Specification|Requirement|  
 |-----|-----|
-|Supported Outlook Applications |<ul><li>Outlook 2019 or later</li><li>Outlook on the web<!--Outlook Web App--></li><li>Outlook Web App for iPad</li><li>Outlook Web App for iPhone</li><li> Outlook Web App for Android&trade;trade;.</li></ul>|
+|Supported Outlook Applications |<ul><li>Outlook 2019</li><li>Outlook on the web</li><li>Outlook for iOS</li><li>Outlook for Android&trade;.</li></ul>|
 |Supported Exchange Servers|<ul><li>Exchange Online</li><li>Exchange Server 2019<br />In deployments that use Exchange Server, the Exchange PowerShell endpoint must be accessible by [!INCLUDE[server](../developer/includes/server.md)].</li></ul>|
 |Supported Authentication|<ul><li>The [!INCLUDE[server](../developer/includes/server.md)] must be configured to run with NavUserPassword, ACS, or AAD Credentials Type.<br /> Also, the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)] must be configured for Secure Sockets Layer (SSL).</li></ul>|
-|Supported Browsers|<ul><li>When using Outlook on the web<!--the Outlook Web App (Microsoft Outlook Web App)-->, your computer must be running a supported browser listed in the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)] Requirements.</li></ul>|
-|Supported Operating Systems|<ul><li>When using Outlook Web App for iPad, iPhone, or Android&trade;, your mobile device must use a supported operating system that's listed in the [[!INCLUDE[nav_uni_app_md](../developer/includes/nav_uni_app_md.md)]](#DynNAVApp) section.</li></ul>|  
+|Supported Browsers|<ul><li>When using Outlook on the web, your computer must be running a supported browser listed in the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)] Requirements.</li></ul>|
+|Supported Operating Systems|<ul><li>When using Outlook for iOS or Outlook for Android&trade;, your mobile device must use a supported operating system that's listed in the [[!INCLUDE[nav_uni_app_md](../developer/includes/nav_uni_app_md.md)]](#DynNAVApp) section.</li></ul>|  
 
 ## <a name="Outlook"></a>Microsoft Outlook Legacy Add-In
 
@@ -179,7 +179,7 @@ The following table shows the minimum system requirements for [!INCLUDE[prod_sho
 
 |Specification|Requirement|  
 |-|-|  
-|Supported SharePoint servers|<ul><li>SharePoint Server 2016</li><li>SharePoint Online.</li></ul>|  
+|Supported SharePoint servers|<ul><li>SharePoint Server 2019</li><li>SharePoint Online.</li></ul>|  
 
 ## See Also
 
