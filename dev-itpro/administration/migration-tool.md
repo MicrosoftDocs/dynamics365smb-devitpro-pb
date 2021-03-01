@@ -10,7 +10,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
 ms. search.keywords: cloud, migration
-ms.date: 01/27/2021
+ms.date: 03/01/2021
 ms.author: edupont
 
 ---
@@ -25,12 +25,12 @@ The cloud migration tool supports migration from specific versions of specific s
 * [Migrate to Business Central Online from Dynamics GP](migrate-dynamics-gp.md)  
 * [Upgrading from Dynamics NAV to Business Central Online](../upgrade/Upgrade-Considerations.md#online)
 
-Use the same assisted setup to set up a connection to the intelligent cloud but still remain on-premises. For the list of on-premises solutions that currently supported for connecting to the intelligent cloud, see [Which products and versions are supported for connecting to the intelligent cloud?](/dynamics365/business-central/dev-itpro/administration/faq-intelligent-cloud#which-products-and-versions-are-supported-for-connecting-to-the-intelligent-cloud) in the FAQ.  
+Use the same assisted setup to set up a connection to the intelligent cloud but still remain on-premises. For the list of on-premises solutions that currently supported for connecting to the intelligent cloud, see [Which products and versions are supported for connecting to the intelligent cloud?](faq-intelligent-cloud.md#which-products-and-versions-are-supported-for-connecting-to-the-intelligent-cloud) in the FAQ.  
 
 In the following sections, you're working in your [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online tenant and connecting it to your on-premises database. Either because you are migrating from on-premises to online, or because you are connecting to the intelligent cloud.  
 
 > [!TIP]
-> In migration scenarios, we recommend that you start the migration by running the assisted setup from a company other than the company that you are migrating data to. For example, you can log into the demonstration company, CRONUS, and start the process there. This way, you can make sure that all users are logged out of the original company and the target company.
+> we recommend that you start the migration by running the assisted setup from a company other than the company that you are migrating data to. For example, sign into the demonstration company, CRONUS, and start the process there. This way, you can make sure that all users are logged out of the original company and the target company. This is especially important when you migrate from [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises current version because you can run the migration tool multiple times.
 
 ## Best practices
 
@@ -39,13 +39,16 @@ This section provides best practices and recommendations for migrating to the cl
 > [!IMPORTANT]
 > You must be signed in as an administrator of the [!INCLUDE [prod_short](../includes/prod_short.md)] online tenant and the Microsoft 365 tenant.
 
-* As a best practice, test this configuration in your sandbox environment before making changes to a production tenant.  
+* Make sure that at least one user has *SUPER* permissions in your [!INCLUDE [prod_short](../includes/prod_short.md)] online tenant.  
+
+    This is the only user who can make changes in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online tenant. All users that do not have *SUPER* permissions will be automatically reassigned to the intelligent cloud user group. This will limit them to read-only access to data in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online tenant. For more information, se the [User groups and permission sets](#user-groups-and-permission-sets) section.  
+* Test the connection in a sandbox environment before you make changes to a production environment.  
 
     For more information, see [Managing Environments](tenant-admin-center-environments.md).
 * Any existing data in your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant will be overwritten with data from your on-premises solution, or source, once the data migration process is run.  
 
-    If you do not want data in your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online tenant to be overwritten, do not configure the connection.
-* All users that do not have *SUPER* permissions will be automatically reassigned to the intelligent cloud user group. This will limit them to read-only access within the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant. See more below.
+    If you do not want data in your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online tenant to be overwritten, do not configure the connection. The only exception is when you migrate from [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises current version because you can run the migration tool multiple times in that very specific scenario.
+
 * If your data source is [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises, several stored procedures will be added to the SQL Server instance that you define. These stored procedures are required to migrate data from your SQL Server database to the Azure SQL server associated with your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant.
 * Consider reducing the amount of data that you migrate.  
     [!INCLUDE [migrate-limits](../developer/includes/migrate-limits.md)]
@@ -56,7 +59,6 @@ This section provides best practices and recommendations for migrating to the cl
 
     In certain cases, the customer wants to migrate very large amounts of data. In those cases, you must first run the assisted setup once to create a pipeline, and then contact Support to increase the limitations on your [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online tenant. For more information, see [Escalating support issues to Microsoft](manage-technical-support.md#escalating-support-issues-to-microsoft). We are continually working on improving and optimizing the migration tool for larger database sizes, and since [2020 release wave 2](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/support-unlimited-number-production-sandbox-environments), customers can buy additional environments, for example.
 
-* Before you set up the cloud migration, make sure that at least one user in the system has *SUPER* permissions. This is the only user that will be allowed to make changes in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant.  
 * Configuring the cloud environment will have no impact on any users or data in your on-premises solution.
 
 To begin configuring the connection, navigate to the assisted setup page and launch the **Set up Cloud Migration** assisted setup guide.  
@@ -76,7 +78,7 @@ When you choose the **Set up Cloud Migration** assisted setup, it launches the *
 
     On this page, specify the on-premises solution that you want to replicate data from. All supported sources will appear in the list. If you don't see your product, navigate to the **Manage Extensions** page, and then verify that the intelligent cloud extension for your on-premises solution is installed.
 
-    To set up migration from the previous version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)], in the **Data Migration Setup** dialog, choose *Dynamics 365 Business Central (Previous Version)* as the product.
+    To set up migration from earlier versions of [!INCLUDE [prod_short](../developer/includes/prod_short.md)], in the **Data Migration Setup** dialog, choose *Dynamics 365 Business Central (Previous Version)* as the product.
 
     > [!TIP]
     > Use the migration tool to migrate from the latest version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] or the previous version. If your current version is older than the previous version, then you must upgrade your on-premises solution. For more information, see [Supported Upgrade Paths to [!INCLUDE[prod_long](../developer/includes/prod_long.md)] Releases](../upgrade/upgrade-paths.md).  
@@ -130,10 +132,10 @@ Complete the steps in the wizard to update the runtime service. If the change wa
 
 When running as connected with an on-premises solution, the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online tenant will be read-only with few exceptions. Because the on-premises solution is your primary application for running your business, including activities such as data entry, tax reporting, and sending invoices, these tasks must be completed in the on-premises solution. We limit the amount of data that you can enter in your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant to data that is not migrated. Otherwise any data that was written to the tenant database would be continuously overwritten during the migration process.  
 
-To make setting up this read-only tenant more efficient, we created a new *Intelligent Cloud* user group and an *Intelligent Cloud* permission set. Once the cloud migration environment is configured, all users without SUPER permissions will be automatically assigned to the *Intelligent Cloud* user group. Only users with SUPER permissions will be allowed to make modifications to the system at this point.  
+To make setting up this read-only tenant more efficient, we created the *Intelligent Cloud* user group and the *Intelligent Cloud* permission set. Once the cloud migration environment is configured, all users without SUPER permissions will be automatically assigned to the *Intelligent Cloud* user group. Only users with SUPER permissions will be allowed to make modifications to the system at this point.  
 
 > [!NOTE]  
-> Before you configure the a connection from on-premises to [!INCLUDE [prod_short](../developer/includes/prod_short.md)], make sure that at least one user in each company is assigned SUPER permissions.  
+> Before you configure a connection from on-premises to [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online, make sure that at least one user in each company is assigned SUPER permissions.  
 
 Users that are reassigned to the *Intelligent Cloud* user group will have access to read ALL data by default. If you need to further restrict what data a user should be able to read, the SUPER user may create new user groups and permissions sets and assign users accordingly. It is highly recommended to create any new permissions sets from a copy of the *Intelligent Cloud* permission set and then take away permissions you do not want users to have.  
 
