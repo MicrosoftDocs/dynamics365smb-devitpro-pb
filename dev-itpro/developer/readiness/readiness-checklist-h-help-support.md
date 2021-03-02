@@ -30,7 +30,7 @@ Help link | You need to provide a URL for a distinct help page where prospects c
 For more information, see [Help users learn more](../../user-assistance.md#help-users-learn-more).  
 
 > [!TIP]  
-> *Example* of a help site that is set up according to our best practices: [Continia Docs](https://docs.continia.com/docs.continia-home/en-GB/index.html)
+> *Example* of a help site that is set up according to our best practices: [Continia Docs](https://docs.continia.com/en-us/continia-document-capture)
 
 
 ## Support link
@@ -41,14 +41,15 @@ Support link | You need to provide a URL for a distinct support page, where pros
 
 
 **About the support page:**
+
 - The support page can be in any language 
 - There needs to be a clear distinction between the support and the help site. We require two separate pages (unless a single page covers all Help Link and Support Link requirements). 
 
 **What should I include on my support page?**
+
 - You need to provide a link for a distinct support page where prospects can find different contact options (suh as email address, phone number, live-chat etc.)
 - It is a requirement that the support page is accessible without a login
 - It is a recommendation that you include the time frame for replies (such as within 1-2 business days).
-
 
 > [!TIP]  
 > *Example:* of a support page that is set up according to our best practices: [EOS Solutions' support page.]( https://www.eos-solutions.it/en/contact-support.html)
