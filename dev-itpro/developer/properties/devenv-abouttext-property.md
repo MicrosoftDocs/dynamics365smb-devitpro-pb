@@ -28,6 +28,13 @@ Sets the text of the entity used in the About box for synopsis and callouts in t
 -   Request Page
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Syntax
+
+```al
+AboutText = 'This text shows up as a callout in the UI to describe functionality.';
+```
+
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
