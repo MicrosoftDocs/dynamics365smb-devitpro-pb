@@ -39,7 +39,7 @@ The following conditional preprocessor directives are supported in AL.
 |#define                | Defines a symbol that can be used to specify conditions for a compilation. For example, `#define DEBUG`. The scope of the symbol is the file that it was defined in.|
 |#undef                 | Undefines a symbol. |
 
-## Defining symbols
+## Defining preprocessorSymbols
 
 Symbols can be defined globally in the `app.json` file. A symbol can also be defined using the `#define` directive in code, but if symbols are defined in the `app.json` file, they can be used globally. The following example defines `DEBUG` as a global symbol. This can then be used from code as illustrated in the [Conditional code](devenv-directives-in-al.md#conditional-directives) example below. A symbol has a boolean value, that means it evaluates to `true` or `false`.
 
