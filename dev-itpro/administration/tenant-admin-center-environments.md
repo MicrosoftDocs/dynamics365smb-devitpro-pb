@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: administration, tenant, admin, environment, sandbox
+ms.search.keywords: administration, tenant, admin, environment, sandbox, restore, backup
 ms.date: 01/06/2021
 ms.author: jswymer
 ---

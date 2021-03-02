@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: administration, tenant, admin, environment, sandbox
+ms.search.keywords: administration, tenant, admin, environment, sandbox, storage, capacity, quota, limit, database size
 ms.date: 12/04/2020
 ms.author: jswymer
 ---
