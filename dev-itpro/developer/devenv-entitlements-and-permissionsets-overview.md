@@ -18,11 +18,18 @@ author: SusanneWindfeldPedersen
 
 *Permissions* describe which objects an administrator or a partner has given the user.
 
+*Permission Sets* allow combining objects permissions into logical groups (or sets), which can then be assigned to the users explicitly or via the User Group. 
+
 ## Permission Set Scope
 
-A [!INCLUDE [prod_short](includes/prod_short.md)] solution contains a number of predefined permission sets that are added by Microsoft or by your software provider (ISV application you installed from AppSource). These permission sets are of type **System** or **Extension**. End-users cannot create or edit these types of permission sets or the permissions within them. However, they can copy these permission sets to define their own permission sets and permissions.
+A [!INCLUDE [prod_short](includes/prod_short.md)] solution contains a number of predefined permission sets that are added by Microsoft or by your software provider (ISV application you installed from AppSource). 
+
+Permission sets included with Microsoft and AppSource apps as AL objects are of type **System**, if they are included in XML format, they are of type **Extension**.
+
+End-users cannot create or edit these types of permission sets or the permissions within them. However, they can copy these permission sets to define their own permission sets and permissions.
 
 Permission sets that users create, from new or as copies, are of the type **User-Defined** and they can be edited.
+
 
 ## Creating Entitlements and Permission Sets in AL
 
