@@ -28,6 +28,13 @@ Sets the title of the entity used in the About box for synopsis and callouts in 
 -   Request Page
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Syntax
+
+```al
+AboutTitle = 'This shows up as the title of the callout in the UI';
+```
+
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

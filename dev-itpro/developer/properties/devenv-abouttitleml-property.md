@@ -28,6 +28,13 @@ Sets the title of the entity used in the About box for synopsis and callouts in 
 -   Request Page
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Syntax
+
+```al
+AboutTitleML = ENU = 'The title of the callout in the UI', DAN = 'Titlen på callout i UI';
+```
+
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
