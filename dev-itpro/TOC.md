@@ -155,6 +155,7 @@
 <!--### [Migrating from Dynamics SL](administration/migrate-data.md)-->
 <!-- end migrate -->
 ## What's New or Changed
+### [Update 17.5](whatsnew/whatsnew-update-17-5.md)
 ### [Update 17.4](whatsnew/whatsnew-update-17-4.md)
 ### [Update 17.3](whatsnew/whatsnew-update-17-3.md)
 ### [Update 17.2](whatsnew/whatsnew-update-17-2.md)
