@@ -39,6 +39,9 @@ When you sign in to your customers' [!INCLUDE [prod_short](../developer/includes
 The following tasks are *not* available to the delegated administrator:
 
 - Set up jobs to run as scheduled tasks in the job queue
+
+    Starting with 2021 release wave 1 (version 18), you can pause a job queue that has been scheduled by a licensed user<!-- and restart a failed job queue-->. You can also run a job queue once, for one full cycle, to verify that it works. You can then call it as many times as you need before you hand it over to your customerso that they can start it as a recurrent job. After the job queue completes, it will be put in the on-hold status and can't be rescheduled.  
+
 - Use the **Edit in Excel** action or interact with [!INCLUDE [prod_short](../developer/includes/prod_short.md)] data in Excel using the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] add-in for Excel.
 
     You can still use the **Open in Excel** action to view data in Excel.
