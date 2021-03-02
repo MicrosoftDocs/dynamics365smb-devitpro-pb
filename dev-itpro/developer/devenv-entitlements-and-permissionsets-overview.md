@@ -24,7 +24,7 @@ author: SusanneWindfeldPedersen
 
 A [!INCLUDE [prod_short](includes/prod_short.md)] solution contains a number of predefined permission sets that are added by Microsoft or by your software provider (ISV application you installed from AppSource). 
 
-Permission sets included with Microsoft and AppSource apps as AL objects are of type **System**, if they are included in XML format, they are of type **Extension**.
+Permission sets included with Microsoft and AppSource apps as AL objects are of type **System**. If they are included in XML format, they are of type **Extension**.
 
 End-users cannot create or edit these types of permission sets or the permissions within them. However, they can copy these permission sets to define their own permission sets and permissions.
 
@@ -81,15 +81,40 @@ The application database tables which used to store the entitlements will not co
 UsePermissionSetsFromExtensions: ‘true’
 ```
 
-The default value for this setting is `true`, meaning that the server will be retrieving all **System** and **Extensions** permission sets and permissions from the AL objects of type `PermissionSet` and `PermissionSetExtension`. With the value for this setting set to `true`, the permissions data, in case it is still present in the application database, will be disregarded. 
+The default value for this setting is `true`, meaning that the server will be retrieving all **System** permission sets and permissions from the AL objects of type `PermissionSet` and `PermissionSetExtension`. With the value for this setting set to `true`, the permissions data, in case it is still present in the application database, will be disregarded. 
 
-It is not possible to customize the System and Extension permission sets and permissions used in the online version of [!INCLUDE [prod_short](includes/prod_short.md)], the users can only copy those to new permission sets, which they can then adjust to their needs (https://docs.microsoft.com/en-us/dynamics365/business-central/ui-define-granular-permissions#to-create-or-modify-a-permission-set).
+It is not possible to customize the System permission sets and permissions used in the online version of [!INCLUDE [prod_short](includes/prod_short.md)], the users can only copy those to new permission sets, which they can then adjust to their needs (https://docs.microsoft.com/en-us/dynamics365/business-central/ui-define-granular-permissions#to-create-or-modify-a-permission-set).
 
-In the on-prem version of [!INCLUDE [prod_short](includes/prod_short.md)], even though it is not recommended, the partners could customize the permission sets and permissions shipped in the application database. In this case, as for any upgrade before, the changes in Microsoft permissions should be merged with the customized permissions by VARs during upgrade. 
+In the on-prem version of [!INCLUDE [prod_short](includes/prod_short.md)], even though it is not recommended, the partners could customize the permission sets and permissions shipped in the application database. In this case, as for any upgrade before, the changes in Microsoft permissions should be merged with the customized permissions by partners during upgrade. 
 
 Although starting with [!INCLUDE [prod_short](includes/prod_short.md)] 2021 release wave 1 (v.18.0) System permissions are no longer shipped as data in the application database, the partners can use the same procedure as before to export the new permissions, which are defined using AL objects. The new permission sets and permissions can be exported into XML file by running XMLport 9171 Import/Export Permission Sets, making it possible to compare and merge the customized permission sets in your old database with the newly shipped permission sets. Find more details [here](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/upgrade/how-to--import-export-permission-sets-permissions). 
 
-If you decide to start using the new AL objects, it is also possible to compare the permissions defined as data, in the previous versions of [!INCLUDE [prod_short](includes/prod_short.md)], with permissions defined as code. To generate permission set AL objects from the data in your applicaiton database, use a sample PowerShell script available in our GitHub repository https://github.com/Microsoft/ALAppExtensions [add the exact path later]. 
+If you decide to start using the new AL objects, it is also possible to compare the permissions defined as data, in the previous versions of [!INCLUDE [prod_short](includes/prod_short.md)], with permissions defined as code. To generate permission set AL objects from the data in your application database, use a sample PowerShell script available in our GitHub repository https://github.com/Microsoft/ALAppExtensions [add the exact path later]. 
+
+If you want to compare the System permission sets in your database (defined as data) with the System permission sets shipped with the new version of [!INCLUDE [prod_short](includes/prod_short.md)] (defined as AL objects), follow this procedure: 
+- Export permission sets from your current version of [!INCLUDE [prod_short](includes/prod_short.md)] in XML format by running XMLport 9171 Import/Export Permission Sets. 
+- Export permission sets from the new version of [!INCLUDE [prod_short](includes/prod_short.md)] in XML format by running XMLport 9171 Import/Export Permission Sets.
+- Compare the changes using some standard file comparison tools, merge the changes as necessary.
+
+To bring the System permission sets into the latest version of [!INCLUDE [prod_short](includes/prod_short.md)], follow this procedure: 
+
+If you want to continue using permission sets defined as data:
+
+- Set the UsePermissionSetsFromExtensions property to ‘false’ in the [!INCLUDE [prod_short](includes/prod_short.md)] server settings
+- Use XMLport 9171 Import/Export Permission Sets to import your permission sets
+
+If you want to start using permission sets defined as AL objects:
+
+- Set the UsePermissionSetsFromExtensions property to ‘false’ in the [!INCLUDE [prod_short](includes/prod_short.md)] server settings
+- Use XMLport 9171 Import/Export Permission Sets to import your permission sets
+- Run the sample script from GitHub to convert System permission sets to AL objects
+- Import and compile the AL objects
+- Set the UsePermissionSetsFromExtensions property to ‘true’ in the [!INCLUDE [prod_short](includes/prod_short.md)] server settings
+
+
+
+![image](https://user-images.githubusercontent.com/6399500/109657527-e0e5c500-7b65-11eb-8fbf-7079036a8fd1.png)
+
 
 
 ## See Also
