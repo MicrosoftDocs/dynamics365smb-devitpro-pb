@@ -40,13 +40,13 @@ When developing an app, you can create new entitlement and permission set object
 In releases of [!INCLUDE [prod_short](includes/prod_short.md)] prior to 2021 release wave 1 (v.18.0), System and Extension permissions and entitlements were defined as data in the application database: 
 
 Entitlements: 
-  - dbo.Entitlement
-  - dbo.Entitlement Set
-  - dbo.Membership Entitlement
+  - Entitlement
+  - Entitlement Set
+  - Membership Entitlement
 
 Permissions:
-  - dbo.Permission Set
-  - dbo.Permission
+  - Permission Set
+  - Permission
 
 Keeping such sensitive information as data comes with additional maintenance, security, and audit risks for the software providers (ISVs). Changes applied to this data should ideally be well traceable, easy to update and maintain. Starting with [!INCLUDE [prod_short](includes/prod_short.md)] 2021 release wave 1, the System and Extensions permissions and entitlements are defined in code, using Entitlement, PermissionSet, and PermissionSetExtension AL objects. This change provides ISVs with all of the advantages of using the AL Language extension in Visual Studio Code and source control systems (as Visual Studio Online and GitHub) to design, get an overview, and track changes to the objects that describe user access. 
 
@@ -56,8 +56,8 @@ And finally, the new AL objects are envisioned to become the core building block
 
 User-Defined permission sets and permissions, and functionality around them remain unchanged. They are still stored as data in the tenant database: 
 
-- dbo.Tenant Permission
-- dbo.Tenant Permission Set
+- Tenant Permission
+- Tenant Permission Set
 
 Permission sets and permissions [included with apps in XML format](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-export-permission-sets) will continue to work as before, however we recommend you to start using the AL objects of type PermissionSet and PermissionSetExtension instead. 
 
