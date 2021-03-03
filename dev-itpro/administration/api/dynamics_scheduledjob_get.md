@@ -19,7 +19,7 @@ Retrieves the properties and relationships of a scheduled job object for [!INCLU
 
 ## HTTP request
 
-Replace the URL prefix for [!INCLUDE [prod_short](../../includes/prod_short.md)] depending on environment following the [guideline](dynamics-nav/api-reference/v2.0/enabling-apis-for-dynamics-nav).
+Replace the URL prefix for [!INCLUDE [prod_short](../../includes/prod_short.md)] depending on environment following the [guideline](/dynamics365/dynamics-nav/api-reference/v2.0/enabling-apis-for-dynamics-nav).
 
 
 ```

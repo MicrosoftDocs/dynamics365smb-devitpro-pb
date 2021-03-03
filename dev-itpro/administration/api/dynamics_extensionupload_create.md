@@ -25,7 +25,7 @@ Creates an extension upload in [!INCLUDE[d365fin_long_md](../../includes/d365fin
 
 ## HTTP requests
 
-Replace the URL prefix for [!INCLUDE [prod_short](../../includes/prod_short.md)] depending on environment following the [guideline](dynamics-nav/api-reference/v2.0/enabling-apis-for-dynamics-nav).
+Replace the URL prefix for [!INCLUDE [prod_short](../../includes/prod_short.md)] depending on environment following the [guideline](/dynamics365/dynamics-nav/api-reference/v2.0/enabling-apis-for-dynamics-nav).
 
 
 ### Insert extensionUpload
