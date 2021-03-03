@@ -1,4 +1,4 @@
-﻿# [Development and administration](index.md)
+# [Development and administration](index.md)
 # [New and planned](/dynamics365/business-central/product-news?toc=/dynamics365/business-central/dev-itpro/toc.json)
 # Get started
 ## [Overview of business functionality](/dynamics365/business-central/across-business-functionality?toc=/dynamics365/business-central/dev-itpro/toc.json)
@@ -2260,7 +2260,7 @@
 #### [RequestFilterHeadingML Property](developer/properties/devenv-requestfilterheadingml-property.md)
 #### [ReverseSign Property](developer/properties/devenv-reversesign-property.md)
 #### [RoleCenter Property](developer/properties/devenv-rolecenter-property.md)
-#### [Roletype Property](developer/properties/devenv-roletype-property.md)
+#### [RoleType Property](developer/properties/devenv-roletype-property.md)
 #### [RowSpan Property](developer/properties/devenv-rowspan-property.md)
 #### [RunObject Property](developer/properties/devenv-runobject-property.md)
 #### [RunPageLink Property](developer/properties/devenv-runpagelink-property.md)
