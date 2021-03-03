@@ -254,6 +254,17 @@ Here are some areas where the environment name is used, which will be affected w
   - CI/CD pipelines for test and deployment could be impacted by environment renames.
 - Azure Application Insights logs and metrics
 
+## Reassign an environment from one Azure Active Directory organization to another (through Microsoft Support)
+
+In some cases, the Azure AD organization of a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] customer changes after they acquire a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment. For example, this can occur if business entities merge, or if an acquisition takes place, or if the customer decides to use one Azure AD organization in a specific region and stop using other Azure AD organizations that they created in other regions. It also can happen if the environment was mistakenly created by the reselling partner for the wrong Azure AD organization.  
+
+In all such cases, the customers want to preserve the Business Central environments they created for the original Azure AD organizations, and link them to the new ones instead. 
+
+Microsoft Support can reassign an environment from one Azure AD organization to another, based on the partner's support request. Partners can initiate support request by following [this guidance](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/manage-technical-support#escalating-support-issues-to-microsoft).
+
+When logging such support requests, the partner must provide proof of their delegated admin rights in both Azure AD tenants as well as a confirmation from the customer that the environment move is authorized by them.
+
+
 ## <a name="opslog"></a>Log of administrative operations
 
 The **Operations** section of [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] provides a log of operations that internal administrators and delegated administrators from the partner have made in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] or through the admin center API. Currently, the log includes the following operations: renaming environments restoring environments.
