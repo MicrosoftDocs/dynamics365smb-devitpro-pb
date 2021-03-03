@@ -19,7 +19,8 @@ Deletes an user permission from [!INCLUDE[d365fin_long_md](../../includes/d365fi
 
 ## HTTP request
 
-Replaces the URL prefix for [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
+Replace the URL prefix for [!INCLUDE [prod_short](../../includes/prod_short.md)] depending on environment following the [guideline](dynamics-nav/api-reference/v2.0/enabling-apis-for-dynamics-nav).
+
 <!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different or there might be more than one -->
 ```json
 DELETE /microsoft/automation/v2.0/companies({companyId})/users({userSecurityId})/userPermissions({userPermissionId})

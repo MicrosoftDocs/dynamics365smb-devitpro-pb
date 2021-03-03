@@ -19,7 +19,8 @@ Updates the properties of an extension upload object for [!INCLUDE[d365fin_long_
 
 ## HTTP request
 
-Replace the URL prefix for [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
+Replace the URL prefix for [!INCLUDE [prod_short](../../includes/prod_short.md)] depending on environment following the [guideline](dynamics-nav/api-reference/v2.0/enabling-apis-for-dynamics-nav).
+
 ```json
 PATCH /microsoft/automation/v2.0/companies({companyId})/extensionUpload({extensionUploadId})/content
 Content-type: application/octet-stream
