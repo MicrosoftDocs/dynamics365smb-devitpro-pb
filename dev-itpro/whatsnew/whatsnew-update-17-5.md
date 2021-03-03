@@ -22,6 +22,14 @@ Find an overview of hotfixes in this [article](INSERT).
 ## Feature changes
 - 
 
+## Regulatory features 
+
+| Country| Feature |
+|-------------|--------------|
+Denmark | Test|
+|Sweden | Test |
+Norway | Test
+Finland| Test
 
 ## Release Plan
 If you want to get a comprehensive overview of what's new and planned for Business Central online for the entire 2020 release wave 2 (release from October 2020 through March 2021), find the link to the release plan [here](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/planned-features).
