@@ -44,14 +44,14 @@ Specifically for major updates, you can choose a specific date on which the envi
 To schedule an update date:
 
 1. On the **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], choose the **Name** of the relevant environment to open the environment details.
-2. Choose the **Schedule Update** action on the **Update** list on the action ribbon.
+2. Choose the **Set update date** action on the **Update Settings** list on the action ribbon.
 3. In the **Schedule Environment Update** pane, specify the update date.
     > [!NOTE]
     > The specified date must be within a given date range that is shown in the pane.
 
 4. Choose **Schedule Update**.
 
-If an administrator has chosen the **Schedule Update** action but not set a date, then the update is applied automatically to each tenant environment with a default date range. The default date range is communicated in advance to tenant administrators through administrative notifications. You can then choose to override that with a custom date by following the steps that are provided above. Not selecting an update date does not prevent the environment from being updated.
+If an administrator has chosen the **Set update date** action but not set a date, then the update is applied automatically to each tenant environment with a default date range. The default date range is communicated in advance to tenant administrators through administrative notifications. You can then choose to override that with a custom date by following the steps that are provided above. Not selecting an update date does not prevent the environment from being updated.
 
 ## <a name="notify"></a>Get notified of updates
 
