@@ -132,7 +132,6 @@
 ### [Administration Center API](administration/administration-center-api.md)
 ## Automation
 ### [Introduction to Automation APIs](administration/itpro-introduction-to-automation-apis.md)
-### [Automation API Overview](administration/dynamics-microsoft-automation-overview.md)
 <!-- START>DO_NOT_EDIT -->
 <!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 ### [Automation company](resources/dynamics_automationcompany.md)

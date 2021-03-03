@@ -5779,6 +5779,11 @@
     "source_path": "dev-itpro/administration/dynamics-microsoft-automation-file.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/administration/dynamics-microsoft-automation-overview",
     "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/administration/dynamics-automation-overview.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/administration/itpro-introduction-to-automation-apis",
+    "redirect_document_id": false
    }
   ]
 }
