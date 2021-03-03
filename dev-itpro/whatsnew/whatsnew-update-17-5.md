@@ -19,14 +19,11 @@ Would you like to know what has changed in update 17.5? Below you'll find an ove
 ## Hotfixes
 Find an overview of hotfixes in this [article](INSERT).
 
-## Feature changes
-- 
+## Localization updates 
 
-## Regulatory features 
-
-| Country| Feature |
+| Country| Feature change |
 |-------------|--------------|
-Denmark | Test|
+Netherlands | Test|
 |Sweden | Test |
 Norway | Test
 Finland| Test
