@@ -66,8 +66,7 @@ User-Defined permission sets and permissions, and functionality around them rema
 - Tenant Permission
 - Tenant Permission Set
 
-Permission sets and permissions [included with apps in XML format](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-export-permission-sets) will continue to work as before, however we recommend you to start using the AL objects of type PermissionSet and PermissionSetExtension instead. 
-
+Permission sets and permissions [included with apps in XML format](devenv-export-permission-sets.md) will continue to work as before, however, we recommend you to start using the AL objects of type `PermissionSet` and `PermissionSetExtension` instead. 
 
 ## Upgrade considerations
 
@@ -83,7 +82,7 @@ UsePermissionSetsFromExtensions: ‘true’
 
 The default value for this setting is `true`, meaning that the server will be retrieving all **System** permission sets and permissions from the AL objects of type `PermissionSet` and `PermissionSetExtension`. With the value for this setting set to `true`, the permissions data, in case it is still present in the application database, will be disregarded. 
 
-It is not possible to customize the System permission sets and permissions used in the online version of [!INCLUDE [prod_short](includes/prod_short.md)], the users can only copy those to new permission sets, which they can then adjust to their needs (https://docs.microsoft.com/en-us/dynamics365/business-central/ui-define-granular-permissions#to-create-or-modify-a-permission-set).
+It is not possible to customize the System permission sets and permissions used in the online version of [!INCLUDE [prod_short](includes/prod_short.md)], the users can only copy those to new permission sets, which they can then adjust to their needs. For more information, see [](/dynamics365/business-central/ui-define-granular-permissions#to-create-or-modify-a-permission-set).
 
 In the on-prem version of [!INCLUDE [prod_short](includes/prod_short.md)], even though it is not recommended, the partners could customize the permission sets and permissions shipped in the application database. In this case, as for any upgrade before, the changes in Microsoft permissions should be merged with the customized permissions by partners during upgrade. 
 
