@@ -18,7 +18,8 @@ ms.author: solsen
 Represents an user group member in [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)].
 
 > [!NOTE]
-> For information about enabling APIs for [!INCLUDE[navnow](../../includes/navnow_md.md)] see [Enabling the APIs for Dynamics 365 Business Central](../enabling-apis-for-dynamics-nav.md).
+> For information about enabling APIs for [!INCLUDE [prod_short](../../includes/prod_short.md)] see [Enabling the APIs for Dynamics 365 Business Central](dynamics-nav/api-reference/v2.0/enabling-apis-for-dynamics-nav).
+
 
 ## Methods
 
