@@ -105,6 +105,26 @@ Trials can expire, and so can a apid subscription, such as if the customer does 
 
 [!INCLUDE [admin-extendtrials-periods](../developer/includes/admin-extendtrials-periods.md)]
 
+## <a name="infrastructure"></a>Understanding Business Central online infrastructure
+
+You have your tenant (AAD/Office) where users are created
+That you can create multiple environments, each of them tied to a specific country and localization
+That each environment can have X number of companies/legal entities within them
+That users have access to all of these by default
+(linking out to other relevant docs articles that elaborate)
+To ensure they understand this:
+
+AAD Tenant / Office 365 (user creation)
+Environment (DK) (Included with first full user)
+Company 1
+Company 2
+Company 3
+Environment (UK) (Cost)
+Company A
+Company B
+Company C
+Of course with proper terminolog
+
 ## See Also
 
 [The Business Central Administration Center](tenant-admin-center.md)  
