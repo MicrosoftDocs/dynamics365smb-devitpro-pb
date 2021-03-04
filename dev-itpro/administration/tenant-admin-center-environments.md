@@ -256,14 +256,19 @@ Here are some areas where the environment name is used, which will be affected w
 
 ## Reassign an environment from one Azure Active Directory organization to another (through Microsoft Support)
 
-In some cases, the Azure AD organization of a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] customer changes after they acquire a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment. For example, this can occur if business entities merge, or if an acquisition takes place, or if the customer decides to use one Azure AD organization in a specific region and stop using other Azure AD organizations that they created in other regions. It also can happen if the environment was mistakenly created by the reselling partner for the wrong Azure AD organization.  
+In some cases, the Azure AD organization of a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] customer changes after they acquire a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment. This situation can occur for various reasons, for example:
 
-In all such cases, the customers want to preserve the Business Central environments they created for the original Azure AD organizations, and link them to the new ones instead. 
+- Business entities merge
+- An acquisition takes place
+- The customer decides to use one Azure AD organization in a specific region and stop using Azure AD organizations they created in other regions.
+- The environment was mistakenly created by the reselling partner for the wrong Azure AD organization.  
 
-Microsoft Support can reassign an environment from one Azure AD organization to another, based on the partner's support request. Partners can initiate support request by following [this guidance](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/manage-technical-support#escalating-support-issues-to-microsoft).
+In almost all such cases, the customers want to preserve the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments they created for the original Azure AD organizations, and link them to the new ones instead.
 
-When logging such support requests, the partner must provide proof of their delegated admin rights in both Azure AD tenants as well as a confirmation from the customer that the environment move is authorized by them.
+Microsoft Support can reassign an environment from one Azure AD organization to another, based on the partner's support request. Partners can submit a support request by following the guidance at [Escalating support issues to Microsoft](manage-technical-support#escalating-support-issues-to-microsoft). When submitting such support requests, the partner must provide the following information:
 
+- Proof of their delegated admin rights in both Azure AD tenants
+- Confirmation from the customer that the environment move is authorized by them.
 
 ## <a name="opslog"></a>Log of administrative operations
 
