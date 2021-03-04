@@ -272,7 +272,7 @@ As a partner, you can submit a support request to Microsoft Support by following
 - Proof of your delegated admin rights in both Azure AD tenants
 - Confirmation from the customer that the environment move is authorized by them
 
-You can request moving one or more environments. For Microsoft to do the move, you'll need to provide some information about the source and destination Azure AD tenants, such as:
+You can request to move one or more environments. For Microsoft to do the move, you'll need to provide information about the source and destination Azure AD tenants, such as:
 
 - Source tenant ID, domain, and country
 - Destination tenant ID, domain, and country
