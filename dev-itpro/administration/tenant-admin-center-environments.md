@@ -258,8 +258,8 @@ Here are some areas where the environment name is used, which will be affected w
 
 In some cases, the Azure AD organization (also known as the Azure AD tenant) of a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] customer changes after they acquire a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment. This situation can occur for various reasons, for example:
 
-- Business entities merge
-- An acquisition takes place
+- Business entities merge.
+- An acquisition takes place.
 - The customer decides to use one Azure AD tenant in a specific region and stop using Azure AD tenants they created in other regions.
 - The environment was mistakenly created by the reselling partner for the wrong Azure AD tenant.  
 
@@ -268,7 +268,7 @@ In almost all such cases, the customers want to preserve the [!INCLUDE[prod_shor
 Microsoft Support can move an environment from one Azure AD tenant to another, based on the partner's support request. As a partner, you can submit a support request by following the guidance at [Escalating support issues to Microsoft](manage-technical-support.md#escalating-support-issues-to-microsoft). When submitting these support requests, you must provide the following information:
 
 - Proof of your delegated admin rights in both Azure AD tenants
-- Confirmation from the customer that the environment move is authorized by them.
+- Confirmation from the customer that the environment move is authorized by them
 
 You can request moving one or more environments. For Microsoft to do the move, you'll need to provide some information about the source and destination Azure AD tenants, such as:
 
@@ -286,7 +286,7 @@ Once the move is completed, your environments will appear in your new tenant.
 - Environment data will remain unchanged during this procedure, the exact same environment will be linked to a specified Azure AD tenant.  
 - The country and Azure region of the environment will remain the same, and cannot be changed during this procedure.
 - The operation will involve a brief downtime period for the environment being reassigned (typically not exceeding 1 hour), so it needs to be coordinated with the customer and Microsoft Support. 
-- [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Support does not provide help with moving the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] subscriptions between the Azure AD tenants. 
+- [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Support doesn't provide help with moving the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] subscriptions between the Azure AD tenants. 
 
 ## <a name="opslog"></a>Log of administrative operations
 
