@@ -93,7 +93,7 @@ After you create the application registration, the next task is to configure the
 5. In the **Key** field, specify the value of the client secret that's used by the Business Central application in Azure AD.
 6. Choose **Next**.
 
-    If you're using NavUserPassword authentication, you're prompted to sign in to the Azure AD tenant. In this case, enter the sign in email and password of a valid account.
+    If you're using NavUserPassword authentication, you're prompted to sign in to the Azure AD tenant. In this case, enter the sign-in email and password of a valid account.
 
 Unless you see an error message, you're now done. The [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premises solution is registered and ready to connect to services such as Cortana Intelligence, or embedding Power BI in [!INCLUDE [prod_short](../developer/includes/prod_short.md)].
 
