@@ -229,4 +229,15 @@ GET https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microso
 
 ## See Also
 
-[Automation API overview](dynamics-microsoft-automation-overview.md)  
+[Automation company](resources/dynamics_automationcompany.md)  
+[Company](resources/dynamics_company.md)  
+[Configuration package](resources/dynamics_configurationpackage.md)  
+[Extension](resources/dynamics_extension.md)  
+[Extension deployment status](resources/dynamics_extensiondeploymentstatus.md)  
+[Extension upload](resources/dynamics_extensionupload.md)  
+[Permission set](resources/dynamics_permissionset.md)  
+[Scheduled job](resources/dynamics_scheduledjob.md)  
+[User](resources/dynamics_user.md)  
+[User group](resources/dynamics_usergroup.md)  
+[User group member](resources/dynamics_usergroupmember.md)  
+[User permission](resources/dynamics_userpermission.md)  

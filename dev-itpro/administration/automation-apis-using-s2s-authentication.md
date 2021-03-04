@@ -103,5 +103,3 @@ Complete these steps to set up the Azure AD application for service-to-service a
 
 
 ## See Also
-
-[Automation API overview](dynamics-microsoft-automation-overview.md)  
