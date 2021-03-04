@@ -254,7 +254,7 @@ Here are some areas where the environment name is used, which will be affected w
   - CI/CD pipelines for test and deployment could be impacted by environment renames.
 - Azure Application Insights logs and metrics
 
-## Move an environment from one Azure Active Directory organization to another through Microsoft Support
+## Move an environment to another Azure Active Directory organization
 
 In some cases, the Azure AD organization (also known as the Azure AD tenant) of a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] customer changes after they acquire a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment. This situation can occur for various reasons, for example:
 
@@ -265,7 +265,7 @@ In some cases, the Azure AD organization (also known as the Azure AD tenant) of 
 
 In all such cases, the customers want to preserve the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments they created for the original Azure AD tenants, and link them to the new ones instead. Microsoft Support can move an environment from one Azure AD tenant to another, based on a support request.
 
-## Request to move an environment
+### Request to move an environment
 
 As a partner, you can submit a support request to Microsoft Support by following the guidance at [Escalating support issues to Microsoft](manage-technical-support.md#escalating-support-issues-to-microsoft). When submitting these support requests, you must provide the following information:
 
