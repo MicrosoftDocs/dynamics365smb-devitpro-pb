@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -41,13 +41,13 @@ The name of the current key of the record.
 
 ## Example  
 
-```  
+```al
 var
     RecRef: RecordRef;
     Text000: Label 'The current key in the "%1" table is "%2".';
 begin
-    RecRef.OPEN(18);  
-    Message(Text000,RecRef.CAPTION,RecRef.CURRENTKEY);
+    RecRef.Open(18);  
+    Message(Text000,RecRef.Caption,RecRef.CurrentKey);
 end;  
 ```  
   
@@ -55,7 +55,7 @@ end;
   
  `RecRef.Caption` - Returns the caption of the table.  
   
- `RecRef.CURRENTKEY` - Returns the caption of the current key in the table.  
+ `RecRef.CurrentKey` - Returns the caption of the current key in the table.  
   
 
 ## See Also

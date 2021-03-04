@@ -3,7 +3,7 @@ title: Report Generation Telemetry Trace | Microsoft Docs
 description: Learn about the report telemetry in Business Central  
 author: jswymer
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -68,6 +68,7 @@ The custom dimensions that are of particular interest for this operation include
 |extensionName|Specifies the name of the extension that the report object belongs to.|
 |extensionVersion|Specifies the version of the extension that the report object belongs to.|
 |numberOfRows|Specifies the number of rows/records generated for the report dataset.|
+|reportingEngine | Specifies the reporting engine used to generate the report, such as **ProcessingOnly**, **Rdlc**, or **Word**. This dimension was added in version 17.3 |
 |result|**Success**|
 |serverExecutionTime|Specifies the amount of time it took the service to complete the request<sup>[\[1\]](#1)</sup>. The time has the format hh:mm:ss.sssssss.|
 |sqlExecutes|Specifies the number of SQL statements that the report executed<sup>[\[1\]](#1)</sup>.|

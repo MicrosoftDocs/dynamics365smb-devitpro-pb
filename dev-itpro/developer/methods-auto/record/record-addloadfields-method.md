@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -42,6 +42,7 @@ The FieldNo's of the fields to be loaded.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
+It is not necessary to include the following fields, because they are always selected for loading: Primary key, SystemId, and data audit fields (SystemCreatedAt, SystemCreatedBy, SystemModifiedAt, SystemModifiedBy).
 
 This method is part of the partial records capability for improving performance. For more information, see [Using Partial Records](../../devenv-partial-records.md).
 
@@ -49,7 +50,7 @@ This method is part of the partial records capability for improving performance.
 
 The following example code shows how to use the AddLoadFields method to add a field for loading on a report. The example loads a field that is outside of the default fields selected by DataColumns of the report. The field is added by using the AddLoadFields on the [OnPreDataItem trigger](../../triggers/devenv-onpredataitem-trigger.md).
 
-```
+```al
 trigger OnPreDataItem()
 begin
     CurrencyDataItem.AddLoadFields(CurrencyDataItem."ISO Numeric Code");

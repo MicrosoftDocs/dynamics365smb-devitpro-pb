@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -46,16 +46,16 @@ The number of bytes that were written. If you omit this optional return value an
 
 ## Example
 
-```
+```al
  var
     recBinaries: Record "Company Information";
     OStream: OutStream;
     Lbl: Label 'Hello World';
 begin
-    recBinaries.FIND('-');  
-    recBinaries.Picture.CREATEOUTSTREAM(OStream);   
-    OStream.WRITE(lbl);  
-    recBinaries.MODIFY();  
+    recBinaries.Find('-');  
+    recBinaries.Picture.CreateOutstream(OStream);   
+    OStream.Write(lbl);  
+    recBinaries.Modify();  
 end;
 ``` 
 

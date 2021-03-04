@@ -6,7 +6,7 @@ ms.date: 01/12/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -25,7 +25,7 @@ Denotes an option value. In the code snippet below, you can see how the Option d
 
 ## Syntax example
 
-```
+```al
 procedure HelloWithOptions(OptionParameter : Option Alpha, "Bra-vo")
     var 
         OptionVariable : Option C, "or D";
@@ -46,12 +46,24 @@ In the [OptionString Property](../../properties/devenv-optionstring-property.md)
  For more information about option variables in multilanguage-enabled applications, see [Developing Multilanguage-Enabled Applications](../../dynamics-nav/Developing-Multilanguage-Enabled-Applications.md).  
  --> 
 
- 
-## Example
+## Example 1
+
+The following code sample shows how to define an option field in a table.  
+  
+```al
+field(0; PreferredContactMethodCode; Option)
+{
+    Caption = 'Preferred Method of Contact';
+    // The OptionMembers property must be defined on an option field. It specifies which values can the field take.
+    OptionMembers = Any,Email,Phone,Fax,Mail;
+}
+```
+
+## Example 2
 
 This example shows how you can use the value of an option field as a constant in your AL code.  
   
-```  
+```al
 PurchHeaderRec."Document Type" := PurchHeaderRec."Document Type"::Invoice;   
 ```
 

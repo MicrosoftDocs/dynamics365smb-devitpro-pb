@@ -4,7 +4,7 @@ description: Learn about the business opportunity we see for software companies 
 author: edupont04
 manager: edupont
 
-ms.topic: article
+ms.topic: conceptual
 ms.service: dynamics365-business-central
 ms.date: 11/30/2020
 ms.author: kurtju

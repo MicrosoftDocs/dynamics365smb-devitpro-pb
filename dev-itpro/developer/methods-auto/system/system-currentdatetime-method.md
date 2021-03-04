@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -37,15 +37,16 @@ Datetime :=   System.CurrentDateTime()
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Example  
- This example requires that you create a DateTime variable named TestDateTime.  
+## Example
+
+This example requires that you create a DateTime variable named TestDateTime.  
   
-```  
-TestDateTime := CURRENTDATETIME;  
+```al
+TestDateTime := CurrentDateTime;  
 Message(Format(TestDateTime));  
 ```  
   
- The message window displays the current date and time.
+The message window displays the current date and time.
  
 ## See Also
 [System Data Type](system-data-type.md)  

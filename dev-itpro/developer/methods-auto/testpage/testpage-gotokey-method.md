@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -42,7 +42,7 @@ The value or list of values to use to find the row. If this parameter is omitted
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
-The GOTOKEY method loops over all records until it finds the identifies row.  For each record, the [OnAfterGetCurrentRecord Trigger](../../triggers/devenv-onaftergetcurrrecord-trigger.md) is executed.  
+The GoToKey method loops over all records until it finds the identifies row.  For each record, the [OnAfterGetCurrentRecord Trigger](../../triggers/devenv-onaftergetcurrrecord-trigger.md) is executed.  
 
 ## See Also
 [TestPage Data Type](testpage-data-type.md)  

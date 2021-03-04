@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -45,16 +45,16 @@ Specifies whether the profile applies to the system or to a tenant only. **true*
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
-The PROFILESYSTEMSCOPE property in a SessionSettings object corresponds to the **Scope** field in the in the system table **2000000073 User Personalization**.
+The ProfileSystemScope property in a SessionSettings object corresponds to the **Scope** field in the in the system table **2000000073 User Personalization**.
 
 ## Example
-This example creates a SessionSettings object, and then uses the PROFILESYSTEMSCOPE method to set the profile scope to apply to the system. This example requires a SessionSettings data type variable.
+This example creates a SessionSettings object, and then uses the ProfileSystemScope method to set the profile scope to apply to the system. This example requires a SessionSettings data type variable.
 
-```
+```al
 var
   MySessionSettings : SessionSettings;
 begin
-  MySessionSettings.PROFILESYSTEMSCOPE(true);
+  MySessionSettings.ProfileSystemScope(true);
 end;  
 ```  
 

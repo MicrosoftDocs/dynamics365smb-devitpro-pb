@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -42,7 +42,7 @@ The number of media objects that are included in the MediaSet of a record.
 ## Example  
  This example counts the number of media objects that are available for item No. 1000 in table **27 Item** of the [!INCLUDE[demolonglight_md](../../includes/demolonglight_md.md)]. In this example, the field in the **Item** table that is used for the MediaSet data type is **Picture**.  
 
-```
+```al
  var
     itemRec: Record Item;
     count: Integer;

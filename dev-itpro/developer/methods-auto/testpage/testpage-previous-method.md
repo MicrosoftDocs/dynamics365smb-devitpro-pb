@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -43,12 +43,12 @@ An instance of the [TestPage](testpage-data-type.md) data type.
 ## Example  
  This example requires that you create a TestPage variable named CustomerList with a Subtype of Customer List.  
   
-```  
-CustomerList.OPENVIEW;  
+```al
+CustomerList.OpenView;  
 …  
-if CustomerList.LAST then repeat  
+if CustomerList.Last then repeat  
   Message(CustomerList.Name);  
-until not CustomerList.PREVIOUS;  
+until not CustomerList.Previous;  
 ```
   
 

@@ -3,7 +3,7 @@ title: "Code Conversion from C/AL to AL"
 description: "Description of the conversion process from C/AL to AL."
 ms.custom: na
 ms.date: 10/01/2020
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: jswymer
 ms.author: jswymer
@@ -28,6 +28,8 @@ Get familiar with the basics of setting up and developing in Visual Studio Code 
 
 > [!NOTE]  
 > Moving on-premise C/AL code customizations to [!INCLUDE[d365fin_long_md](../developer/includes/d365fin_long_md.md)] online, requires converting these to AL extensions. This could include converting the C/AL deltas to AL extension code as a starting point, as outlined in [The Txt2Al Conversion Tool](../developer/devenv-txt2al-tool.md).
+
+Also, review the [Known Issues](known-issues.md) for information about issues that may affect the upgrade.
 
 #### Breaking changes
 
@@ -166,7 +168,7 @@ In version 15.0 CodeViewer is no longer used, but it's required because of refer
 -->
 ## Task 6: Create a new application database for development
 
-To build your base application, you'll create a new application database on the Business Central version 15 or version 16 platform. This will only be used during development.
+To build your base application, you'll create a new application database on the Business Central version 15, 16, or 17 platform. This will only be used during development.
 
 1. Start the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 16 as an administrator.
 2. Run the New-NAVApplicationDatabase cmdlet to create the database. For example:
@@ -195,11 +197,11 @@ To build your base application, you'll create a new application database on the 
     Publish-NAVApp -ServerInstance BC150 -Path "C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\AL Development Environment\System.app" -PackageType SymbolsOnly
     ```
 -->
-## Task 7: Create and build an AL project for custom base application
+## <a name="build"></a>Task 7: Create and build an AL project for custom base application
 
 In this task, you'll create a AL project in Visual Studio code that you'll use for building your custom base application extension based on your converted C/AL application.
 
-1. If you haven't already, install Visual Studio Code and the latest AL Language extension for version 15.0 or 16.0 as outlined in [Getting Started with AL](../developer/devenv-get-started.md).
+1. If you haven't already, install Visual Studio Code and the latest AL Language extension for version 15, 16, or 17 as outlined in [Getting Started with AL](../developer/devenv-get-started.md).
 
 2. Configure Visual Studio Code for optimal performance with AL projects.
 
@@ -210,7 +212,7 @@ In this task, you'll create a AL project in Visual Studio code that you'll use f
     Specify the path for the project, and set the **Target Platform** to **4.0 Business Central 2019 release wave 2** or **5.0 Business Central 2020 release wave 1**. When prompted to select your server, choose <!--Microsoft cloud sandbox or--> **Your own server**.
 4. Create a **.alpackages** folder in the root folder of the project and then copy the system (platform) symbols extension (System.app file) to the folder.
 
-    The System.app file is located where you installed the AL Development Environment, which by default is the C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\<150 or 160>\AL Development Environment folder. This package contains the symbols for all the system tables and codeunits.
+    The System.app file is located where you installed the AL Development Environment, which by default is the C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\<150, 160, or 170>\AL Development Environment folder. This package contains the symbols for all the system tables and codeunits.
 5. Delete the **HelloWorld.al** sample file from the project.
 
 6. Modify the `settings.json` file of Visual Studio Code to configure the assembly probing path.
@@ -261,7 +263,7 @@ In this task, you'll create a AL project in Visual Studio code that you'll use f
         ```
 10. Delete objects that are related to the client debugger client.
 
-     Debugging from the client has been discontinued, and replaced by AL Debugger. The version 14 debugger objects are not supported on version 15. To avoid compilation errors, delete the following objects:
+     Debugging from the client has been discontinued, and replaced by AL Debugger. The version 14 debugger objects are not supported on version 15, 16, or 17. To avoid compilation errors, delete the following objects:
     
     - Debugger.Page.al
     - DebuggerBreakpointCondition.Page.al
@@ -460,7 +462,7 @@ If you converted the test library form C/AL to AL, you'll now create and build a
 
 ## Next Steps
 
-If you are performing a technical upgrade from version 14.0 to version 15.0 or 16, return to the [technical upgrade step](upgrade-technical-upgrade-v14-v15.md#Preparedb) where you left off.
+If you are performing a technical upgrade from version 14.0 to version 15, 16, or 17, return to the [technical upgrade step](upgrade-technical-upgrade-v14-v15.md#Preparedb) where you left off.
 
 - [Technical Upgrade to version 15.0](upgrade-technical-upgrade-v14-v15.md#Preparedb)
 - [Technical Upgrade to to version 16.0](upgrade-technical-upgrade-v14-v16.md#Preparedb)

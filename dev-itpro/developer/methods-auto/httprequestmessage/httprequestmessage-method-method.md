@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -38,7 +38,7 @@ The HTTP method used by the request message.
 ## Return Value
 *CurrentMethod*
 &emsp;Type: [String](../string/string-data-type.md)
-The HTTP method used by the request message. The default is the GET method.
+The HTTP method used by the request message. The default is the Get method.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

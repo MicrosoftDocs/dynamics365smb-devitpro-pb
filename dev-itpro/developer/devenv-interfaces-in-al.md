@@ -3,11 +3,11 @@ title: "Interfaces in AL"
 description: "Interfaces in AL are syntactical contracts that can be implemented by a non-abstract method."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 02/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
@@ -40,12 +40,12 @@ The `MyAddressPage` is a simple page with an action that captures the choice of 
 ```AL
 interface IAddressProvider
 {
-    procedure GetAddress(): Text;
+    procedure GetAddress(): Text
 }
 
 codeunit 50200 CompanyAddressProvider implements IAddressProvider
 {
-    procedure GetAddress(): Text;
+    procedure GetAddress(): Text
 
     begin
         exit('Company address \ Denmark 2800')
@@ -54,7 +54,7 @@ codeunit 50200 CompanyAddressProvider implements IAddressProvider
 
 codeunit 50201 PrivateAddressProvider implements IAddressProvider
 {
-    procedure GetAddress(): Text;
+    procedure GetAddress(): Text
 
     begin
         exit('My Home address \ Denmark 2800')
@@ -81,16 +81,6 @@ page 50200 MyAddressPage
     ApplicationArea = All;
     UsageCategory = Administration;
 
-    layout
-    {
-        area(Content)
-        {
-            group(GroupName)
-            {
-            }
-        }
-    }
-
     actions
     {
         area(Processing)
@@ -109,7 +99,6 @@ page 50200 MyAddressPage
                     Message(iAddressProvider.GetAddress());
 
                 end;
-
             }
 
             action(SendToHome)
@@ -147,12 +136,11 @@ page 50200 MyAddressPage
 
         if sendTo = sendTo::Private then
             iAddressProvider := PrivateImplementer;
-
     end;
 
     var
         sendTo: enum SendTo;
-
+}
 ```
 
 ## See Also

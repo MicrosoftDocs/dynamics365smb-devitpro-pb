@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -44,23 +44,23 @@ An instance of the [Notification](notification-data-type.md) data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
-If left unassigned the notification will be assigned an ID when the SEND method is called. For more information, see [SEND Method (Notification)](../../methods-auto/notification/notification-send-method.md).
+If left unassigned the notification will be assigned an ID when the Send method is called. For more information, see [Send Method (Notification)](../../methods-auto/notification/notification-send-method.md).
 
 ##  Example
 The following code creates a notification and sends it if NewBalance is greater than the credit limit. If it is lower than the credit limit, it recalls the notification.
 
 The example uses a pre-defined ID so that the notification can be recalled.
 
-```
+```al
 MyNotification.ID := '00000000-0000-0000-0000-000000000001';
-IF NewBallance > Rec. "Credit Limit" THEN BEGIN
+IF NewBallance > Rec. "Credit Limit" THEN begin
   MyNotification.Message := 'The customer's current balance exceeds their credit limit.';
-  MyNotification.SCOPE := NOTIFICATIONSCOPE::LocalScope;
-  MyNotification.ADDACTION('Fix it.', 50001, 'FixCustomerCreditLimit');
-  MyNotification.SETDATA('CustomerNo.', Rec."No.");
-  MyNotification.SEND;
+  MyNotification.Scope := NotificationScope::LocalScope;
+  MyNotification.AddAction('Fix it.', 50001, 'FixCustomerCreditLimit');
+  MyNotification.SetData('CustomerNo.', Rec."No.");
+  MyNotification.Send;
 END ELSE
-  MyNotification.RECALL;
+  MyNotification.Recall;
 ```
 
 ## See Also

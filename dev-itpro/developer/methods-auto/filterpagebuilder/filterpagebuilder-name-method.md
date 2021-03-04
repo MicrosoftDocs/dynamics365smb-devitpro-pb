@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -44,7 +44,7 @@ The name of the filter control.
 ## Example  
  The following example initializes a filter page object that includes two filter controls for the **Date** system table. The NAME method returns the names of filter control in a message dialog box.  
  
-```  
+```al
     var
         varDateItem: Text[30];
         varCount: Integer;
@@ -53,11 +53,11 @@ The name of the filter control.
 
     begin
         varDateItem := 'Date record';
-        varFilterPageBuilder.AddTable(varDateItem + ' 1', DATABASE::Date);
-        varFilterPageBuilder.AddTable(varDateItem + ' 2', DATABASE::Date);
+        varFilterPageBuilder.AddTable(varDateItem + ' 1', Database::Date);
+        varFilterPageBuilder.AddTable(varDateItem + ' 2', Database::Date);
         varCount := varFilterPageBuilder.COUNT;
         if varCount <> 2 then
-            ERROR('There should be two controls in FilterPageBuilder');
+            Error('There should be two controls in FilterPageBuilder');
         for varIndex := 1 to varCount do
             Message('Control item %1 is named %2', varIndex, varFilterPageBuilder.Name(varIndex));
         varFilterPageBuilder.RunModal();
