@@ -37,7 +37,7 @@ To set the update window for an environment:
    > The update window must be a minimum of six hours.
 4. Choose **Save**.
 
-## Schedule an update date
+## <a name="schedule"></a>Schedule an update date
 
 Specifically for major updates, you can choose a specific date on which the environment is updated. The **Update version** field in the **Version Management** section of the environment details also displays the version number of the available update version.
 

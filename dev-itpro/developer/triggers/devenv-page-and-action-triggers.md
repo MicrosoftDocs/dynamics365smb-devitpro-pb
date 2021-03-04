@@ -35,7 +35,7 @@ Page triggers allow you to use AL code to control the behavior of the system as 
 |[OnClosePage Trigger](devenv-onclosepage-trigger.md)|When the page about to close and after [OnQueryClosePage Trigger](devenv-onqueryclosepage-trigger.md) trigger.|  
 |[OnFindRecord Trigger](devenv-onfindrecord-trigger.md)|When the page is opened and a record is retrieved from a table.|  
 |[OnNextRecord Trigger](devenv-onnextrecord-Trigger.md)|When the page changes from displaying one record to another record in a table. For example, on a Customer card page, this happens when a user selects **Next** (Ctrl+Page Down) or **Previous** (Ctrl+Page Up).|  
-|[OnAfterGetCurrRecord Trigger](devenv-onaftergetcurrrecord-trigger.md)|After the current record is retrieved from the table.|  
+|[OnAfterGetCurrRecord Trigger](devenv-onaftergetcurrrecord-trigger.md)|After the record has been selected as the current record in the page.| 
 |[OnAfterGetRecord Trigger](devenv-onaftergetrecord-trigger.md)|When a record has been retrieved but not yet displayed.|  
 |[OnNewRecord Trigger](devenv-onnewrecord-trigger.md)|When a new record has been initialized but not yet displayed.|  
 |[OnInsertRecord Trigger](devenv-oninsertrecord-trigger.md)|When a new record is about to be inserted in the table.|  
