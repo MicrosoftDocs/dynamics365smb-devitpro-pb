@@ -30,7 +30,6 @@ End-users cannot create or edit these types of permission sets or the permission
 
 Permission sets that users create, from new or as copies, are of the type **User-Defined** and they can be edited.
 
-
 ## Creating Entitlements and Permission Sets in AL
 
 When developing an app, you can create new entitlement and permission set objects or extend existing permission sets in AL. The following object types are used for handling entitlements and permissions:
@@ -47,30 +46,30 @@ When developing an app, you can create new entitlement and permission set object
 In releases of [!INCLUDE [prod_short](includes/prod_short.md)] prior to 2021 release wave 1 (v.18.0), System and Extension permissions and entitlements were defined as data in the application database: 
 
 Entitlements: 
-  - Entitlement
-  - Entitlement Set
-  - Membership Entitlement
+- Entitlement
+- Entitlement Set
+- Membership Entitlement
 
 Permissions:
-  - Permission Set
-  - Permission
+- Permission Set
+- Permission
 
 Keeping such sensitive information as data comes with additional maintenance, security, and audit risks for the software providers (ISVs). Changes applied to this data should ideally be well traceable, easy to update and maintain. Starting with [!INCLUDE [prod_short](includes/prod_short.md)] 2021 release wave 1, the System and Extensions permissions and entitlements are defined in code, using Entitlement, PermissionSet, and PermissionSetExtension AL objects. This change provides ISVs with all of the advantages of using the AL Language extension in Visual Studio Code and source control systems (as Visual Studio Online and GitHub) to design, get an overview, and track changes to the objects that describe user access. 
 
 Turning this data into code has another significant advantage: the ability to apply hotfixes to the entitlements and permissions in the same way that the hotfixes are applied to the apps themselves, simply by updating an app to a new version which carries fixed code. This improves [!INCLUDE [prod_short](includes/prod_short.md)] support agility considerably, ultimately improving customer satisfaction with the service.
 
-And finally, the new AL objects are envisioned to become the core building blocks in the story of monetizing the AppSource apps. It is through these new AL objects that AppSource ISVs will be able to define which capabilities of their apps should be made available to their users, when the customers purchase their app licenses. With [!INCLUDE [prod_short](includes/prod_short.md)] 2021 release wave 1 we are paving the way by moving the entitlements and permission sets into AL objects for Microsoft apps, so that ISVs can follow the same approach for their apps, when the monetization story is introduced with one of the next releases of [!INCLUDE [prod_short](includes/prod_short.md)].
+And finally, the new AL objects are envisioned to become the core building blocks in the story of monetizing the AppSource apps. It's through these new AL objects that AppSource ISVs will be able to define which capabilities of their apps should be made available to their users, when the customers purchase their app licenses. With [!INCLUDE [prod_short](includes/prod_short.md)] 2021 release wave 1, we're paving the way by moving the entitlements and permission sets into AL objects for Microsoft apps, so that ISVs can follow the same approach for their apps, when the monetization story is introduced with one of the next releases of [!INCLUDE [prod_short](includes/prod_short.md)].
 
-User-Defined permission sets and permissions, and functionality around them remain unchanged. They are still stored as data in the tenant database: 
+User-Defined permission sets and permissions, and functionality around them, remain unchanged. They're still stored as data in the tenant database:
 
 - Tenant Permission
 - Tenant Permission Set
 
-Permission sets and permissions [included with apps in XML format](devenv-export-permission-sets.md) will continue to work as before, however, we recommend you to start using the AL objects of type `PermissionSet` and `PermissionSetExtension` instead. 
+Permission sets and permissions [included with apps in XML format](devenv-export-permission-sets.md) will continue to work as before, however, we recommend you to start using the AL objects of type `PermissionSet` and `PermissionSetExtension` instead.
 
 ## Upgrade considerations
 
-Starting with [!INCLUDE [prod_short](includes/prod_short.md)] 2021 release wave 1 (v.18.0), the [!INCLUDE [prod_short](includes/prod_short.md)] demo database, which is shipped with our on-prem installation does not contain any data in the `dbo.Permission Set` and `dbo.Permission` tables in the application database. Instead, the **System** permission sets and permissions are provided as AL objects of type `PermissionSet` and `PermissionSetExtension`, included with Microsoft apps. 
+Starting with [!INCLUDE [prod_short](includes/prod_short.md)] 2021 release wave 1 (v.18.0), the [!INCLUDE [prod_short](includes/prod_short.md)] demo database, which is shipped with our on-prem installation doesn't contain any data in the `dbo.Permission Set` and `dbo.Permission` tables in the application database. Instead, the **System** permission sets and permissions are provided as AL objects of type `PermissionSet` and `PermissionSetExtension`, included with Microsoft apps. 
 
 The application database tables which used to store the entitlements will not contain any data either, as the entitlements are now defined as AL objects.
 
