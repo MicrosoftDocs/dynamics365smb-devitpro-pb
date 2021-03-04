@@ -256,7 +256,7 @@ Here are some areas where the environment name is used, which will be affected w
 
 ## Move an environment from one Azure Active Directory organization to another through Microsoft Support
 
-In some cases, the Azure AD organization (also known as Azure AD tenant) of a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] customer changes after they acquire a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment. This situation can occur for various reasons, for example:
+In some cases, the Azure AD organization (also known as the Azure AD tenant) of a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] customer changes after they acquire a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment. This situation can occur for various reasons, for example:
 
 - Business entities merge
 - An acquisition takes place
