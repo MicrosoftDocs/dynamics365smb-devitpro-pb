@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 
 # OnAfterGetRecord Trigger
 
-Runs after a record is retrieved from a table but before it is displayed to the user.  
+Runs after a record is retrieved from a table, but before it is displayed to the user.  
 
 ## Applies to
 
@@ -32,8 +32,7 @@ end;
 
 Use this trigger to calculate variables that depend on the current record. 
 
-This trigger is independent of the currently selected record in the UI. When it gets raised depends on when the UI needs to load more data and the block size of the data read.
-So, for example, in a list page, where rows are read in larger blocks, then the `OnAfterGetRecord` trigger will be raised for each of the records read before the page is shown.
+This trigger is independent of the currently selected record in the UI. When it gets raised depends on when the UI needs to load more data and the block size of the data read. So, for example, in a list page, where rows are read in larger blocks, then the `OnAfterGetRecord` trigger will be raised for each of the records read before the page is shown.
 
 Within the trigger, the `Rec` variable will refer to the record just read.
   
