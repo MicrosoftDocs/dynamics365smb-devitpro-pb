@@ -2423,6 +2423,7 @@
 ## Connect Apps
 ### [Developing Connect Apps](developer/devenv-develop-connect-apps.md)
 ### [Tips for working with the APIs](developer/devenv-connect-apps-tips.md)
+### [Using Filtering](developer/devenv-connect-apps-filtering.md)
 ## [Developing a Custom API](developer/devenv-develop-custom-api.md)
 <!-- CDS -->
 ## Integrating with Microsoft Dataverse

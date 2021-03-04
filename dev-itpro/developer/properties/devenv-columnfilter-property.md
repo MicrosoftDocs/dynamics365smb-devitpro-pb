@@ -1,14 +1,15 @@
 ---
 title: "ColumnFilter Property"
-ms.author: solsen
+description: Explains the ColumnFilter property on query objects
+ms.author: jswymer
 ms.custom: na
-ms.date: 01/26/2021
+ms.date: 03/03/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.service: "dynamics365-business-central"
-author: SusanneWindfeldPedersen
+author: jswymer
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -52,6 +53,11 @@ The following example sets a filter on the ColumnFilter property of the Quantity
 Quantity=Filter(>20&<50);  
 ```  
 
+For a more detailed example, see [Filtering on columns and filter rows in query object](../../developer/devenv-query-filters.md#columns).
+
 ## See Also
 
-[Properties](devenv-properties.md)  
+[Queries in Business Central](../devenv-query-overview.md)  
+[Filtering in Query Objects](../devenv-query-filters.md)  
+[Aggregating Data in Query Objects](../devenv-query-totals-grouping.md)  
+[Properties](devenv-properties.md) 
