@@ -274,8 +274,9 @@ As a partner, you can submit a support request to Microsoft Support by following
 
 You can request to move one or more environments. For Microsoft to do the move, you'll need to provide information about the source and destination Azure AD tenants, such as:
 
-- Source tenant ID, domain, and country
-- Destination tenant ID, domain, and country
+- Environments name, type and country
+- Source tenant ID and domain
+- Destination tenant ID and domain
 - Does the destination tenant have a valid [!INCLUDE[prod_short](../developer/includes/prod_short.md)] subscription?
 - Does the destination tenant have enough available user licenses?
 - Does the destination tenant have enough environment licenses?
@@ -292,16 +293,15 @@ Once the move is completed, your environments will appear in your new tenant.
 
 ### Before you request your environment to be moved
 
-- If you don't have a subscription or trial in the destination tenant, you'll need to create one. You might need to purchase a new subscription in the destination tenant (or convert a trial to paid), if not already done.
+- If you don't have a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] subscription (paid or trial) in the destination tenant, you'll need to create one. You might need to purchase a new subscription in the destination tenant (or convert a trial to paid), if not already done.
 - Make sure the destination tenant meets the following requirements:
-
   - It has at least as many active user licenses as the source tenant.
-  - It has enough environment licenses to cover the environments being moved
-  - It has at least as much storage as the source tenant.
+  - It has enough [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment add-on licenses to cover the environments being moved
+  - It has at least as much [!INCLUDE[prod_short](../developer/includes/prod_short.md)] storage as the source tenant.
 
 ### After the environment has been moved
 
-- Users may have been added to the environment during the move operation, while it was still connected to the old Azure AD tenant. If so, these users won't be migrated to the new Azure AD tenant. You'll need to recreate the users on the target tenant if you still want them. You can add multiple user accounts at once [using Excel spreadsheet or other file saved in CSV format](/microsoft-365/enterprise/add-several-users-at-the-same-time). After the users are created on the target Azure AD tenant, assign them the required roles or licenses and [import these users into the migrated environment](/dynamics365/business-central/ui-how-users-permissions).
+- Users may have been added to the environment prior to the move operation, while it was still connected to the old Azure AD tenant. If so, these users won't be migrated to the new Azure AD tenant. You'll need to recreate the users on the target tenant if you still want them. You can add multiple user accounts at once [using Excel spreadsheet or other file saved in CSV format](/microsoft-365/enterprise/add-several-users-at-the-same-time). After the users are created on the target Azure AD tenant, assign them the required roles or licenses and [import these users into the moved environment](/dynamics365/business-central/ui-how-users-permissions).
 - You might need to reconfigure some add-ins, external applications, and settings after the tenant-to-tenant migration. Some examples include the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Outlook add-in, Excel add-in, Power BI, Power Apps, Power Automate connectors, Dataverse, and more.
 
 ## <a name="opslog"></a>Log of administrative operations
