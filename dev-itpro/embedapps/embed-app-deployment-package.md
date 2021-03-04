@@ -126,6 +126,9 @@ The manifest.json file, supplied within the deployment package, contains importa
 
 #### "images"
 
+> [!IMPORTANT]
+> The combined size of all images you include with the deployment package must not exceed 490Kb.
+
 |Setting|Type|Description|
 |----|----|-----------|
 | appleTouchIconPath| String |Format: PNG. Dimensions: 114x114  |
