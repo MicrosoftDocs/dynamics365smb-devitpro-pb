@@ -92,7 +92,7 @@ The following examples demonstrate how to use the `Format` property:
   
 - Using a standard format with an attribute.  
   
-     <Precision,2:3><Standard Format,0> will use Standard Format 0 and will format the data with a minimum of 2 and a maximum of 3 decimal places. For more information, see [DecimalPlaces Property](devenv-decimalplaces-property.md). If you do not specify a precision, then the page uses the precision that is specified in the [DecimalPlaces Property](devenv-decimalplaces-property.md) of the corresponding field in the table.  
+     <Precision,2:3><Standard Format,0> will use Standard Format 0 and will format the data with a minimum of 2 and a maximum of 3 decimal places. For more information, see [DecimalPlaces Property](properties/devenv-decimalplaces-property.md). If you do not specify a precision, then the page uses the precision that is specified in the [DecimalPlaces Property](properties/devenv-decimalplaces-property.md) of the corresponding field in the table.  
   
 - Building a format.  
   
@@ -256,4 +256,4 @@ For Text and Code, all formats should resemble the following: \<Text>.
   
 ## See Also
 
-[DecimalPlaces Property](devenv-decimalplaces-property.md)
+[DecimalPlaces Property](properties/devenv-decimalplaces-property.md)
