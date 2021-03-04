@@ -265,7 +265,7 @@ In some cases, the Azure AD organization (also known as the Azure AD tenant) of 
 
 In almost all such cases, the customers want to preserve the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments they created for the original Azure AD tenants, and link them to the new ones instead.
 
-Microsoft Support can move an environment from one Azure AD tenant to another, based on the partner's support request. As a partner, you can submit a support request by following the guidance at [Escalating support issues to Microsoft](manage-technical-support#escalating-support-issues-to-microsoft). When submitting these support requests, you must provide the following information:
+Microsoft Support can move an environment from one Azure AD tenant to another, based on the partner's support request. As a partner, you can submit a support request by following the guidance at [Escalating support issues to Microsoft](manage-technical-support.md#escalating-support-issues-to-microsoft). When submitting these support requests, you must provide the following information:
 
 - Proof of your delegated admin rights in both Azure AD tenants
 - Confirmation from the customer that the environment move is authorized by them.
