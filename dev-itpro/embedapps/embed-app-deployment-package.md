@@ -127,7 +127,7 @@ The manifest.json file, supplied within the deployment package, contains importa
 #### "images"
 
 > [!IMPORTANT]
-> The combined size of all images you include with the deployment package must not exceed 490Kb.
+> The combined size of all images you include with the deployment package must not exceed 490 KB.
 
 |Setting|Type|Description|
 |----|----|-----------|
