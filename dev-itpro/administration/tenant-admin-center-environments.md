@@ -263,16 +263,18 @@ In some cases, the Azure AD organization (also known as the Azure AD tenant) of 
 - The customer decides to use one Azure AD tenant in a specific region and stop using Azure AD tenants they created in other regions.
 - The environment was mistakenly created by the reselling partner for the wrong Azure AD tenant.  
 
-In almost all such cases, the customers want to preserve the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments they created for the original Azure AD tenants, and link them to the new ones instead.
+In all such cases, the customers want to preserve the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments they created for the original Azure AD tenants, and link them to the new ones instead. Microsoft Support can move an environment from one Azure AD tenant to another, based on a support request.
 
-Microsoft Support can move an environment from one Azure AD tenant to another, based on a support request. As a partner, you can submit a support request by following the guidance at [Escalating support issues to Microsoft](manage-technical-support.md#escalating-support-issues-to-microsoft). When submitting these support requests, you must provide the following information:
+## Request to move an environment
+
+As a partner, you can submit a support request to Microsoft Support by following the guidance at [Escalating support issues to Microsoft](manage-technical-support.md#escalating-support-issues-to-microsoft). When submitting these support requests, you must provide the following information:
 
 - Proof of your delegated admin rights in both Azure AD tenants
 - Confirmation from the customer that the environment move is authorized by them
 
 You can request moving one or more environments. For Microsoft to do the move, you'll need to provide some information about the source and destination Azure AD tenants, such as:
 
-- Source tenant ID, domain, and country 
+- Source tenant ID, domain, and country
 - Destination tenant ID, domain, and country
 - Does the destination tenant have a valid [!INCLUDE[prod_short](../developer/includes/prod_short.md)] subscription?
 - Does the destination tenant have enough available user licenses?
