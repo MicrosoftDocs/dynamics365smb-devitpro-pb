@@ -20,13 +20,14 @@ This section describes how you can work with end-users to improve the performanc
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] supports multiple browsers. Each browser offers a variety of features and capabilities. The browser plays a significant role in the responsiveness and fluidity of the user interface.
 
-- Where possible, avoid older browsers such as Internet Explorer and Edge Legacy. Modern browsers generally offer better performance. See the list of supported and recommended browsers for [Business Central online](https://go.microsoft.com/fwlink/?linkid=2110804) and [Business Central on-premises](https://go.microsoft.com/fwlink/?linkid=2110719).
+- Where possible, avoid older browsers such as Internet Explorer and Edge Legacy. Modern browsers generally offer better performance. See the list of supported and recommended browsers for [Business Central online](https://go.microsoft.com/fwlink/?linkid=2110804) and [Business Central on-premises](https://go.microsoft.com/fwlink/?linkid=2110719). 
 
   <!-- If other legacy applications require you to remain on Internet Explorer, consider using [Edge in Internet Explorer mode](https://www.microsoft.com/edge/business). For more information, see [Microsoft Edge documentation](/deployedge/edge-ie-mode).-->
   > [!IMPORTANT] 
   > [!INCLUDE[prod_short](../developer/includes/prod_short.md)] will end support for Internet Explorer and Edge Legacy in April 2021. Consider switching to a modern browser, such as the [new Microsoft Edge](https://www.microsoft.com/edge/), before support ends.
 
-- Always keep your browser updated to the latest version, which may include the latest performance enhancements.
+- Always keep your browser updated to the latest version, which may include the latest performance enhancements. 
+- Be cautious using development versions of browsers as they can have instabilities that are not present in the stable releases.
 - Some [!INCLUDE[prod_short](../developer/includes/prod_short.md)] performance features and optimizations, such as page caching, are only available for modern browsers.
 
 ### Browsers and page caching
