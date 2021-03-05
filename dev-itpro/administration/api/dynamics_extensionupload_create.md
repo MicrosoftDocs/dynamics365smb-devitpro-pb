@@ -21,7 +21,7 @@ Creates an extension upload in [!INCLUDE[d365fin_long_md](../../includes/d365fin
 
 | Actions         | Return Type  |Description|
 |:---------------|:-------------|:----------|
-|[Microsoft.NAV.upload](dynamics-microsoft-automation-extension-post.md)|none|Uploads an extension.|
+|[Microsoft.NAV.upload](dynamics_extensionupload_create.md)|none|Uploads an extension.|
 
 ## HTTP requests
 

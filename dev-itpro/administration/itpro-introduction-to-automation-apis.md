@@ -217,7 +217,7 @@ POST https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/micros
 Authorization: Bearer {token}
 ```
 
-Uninstalling the extension can be done through the bound action [Microsoft.NAV.uninstall](api/dynamics_extension_create.md), as with the add-on extensions. The bound action [Microsoft.NAV.uninstallAndDeleteExtensionData] can be used to delete the tables that contain data owned by the extension on uninstall. This action cannot be undone.
+Uninstalling the extension can be done through the bound action [Microsoft.NAV.uninstall](api/dynamics_extensionupload_create.md), as with the add-on extensions. The bound action [Microsoft.NAV.uninstallAndDeleteExtensionData] can be used to delete the tables that contain data owned by the extension on uninstall. This action cannot be undone.
 
 ### Monitoring extension installation progress
 
