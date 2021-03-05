@@ -543,7 +543,7 @@
 #### [Procedure Overload](developer/methods/devenv-overload-method.md)
 #### [Joker Data Type](developer/methods/devenv-joker-datatype.md)
 #### Option Types
-<!-- [//]: # (START>DO_NOT_EDIT)
+<!-- [//]: # (START>DO_NOT_EDIT_METHODS)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.) -->
 ##### [Action Option Type](developer/methods-auto/action/action-option.md)
@@ -2095,7 +2095,7 @@
 ##### [WriteTo(XmlWriteOptions, var Text) Method](developer/methods-auto/xmltext/xmltext-writeto-xmlwriteoptions-text-method.md)
 #### [XmlWriteOptions Data Type](developer/methods-auto/xmlwriteoptions/xmlwriteoptions-data-type.md)
 ##### [PreserveWhitespace([Boolean]) Method](developer/methods-auto/xmlwriteoptions/xmlwriteoptions-preservewhitespace-method.md)
-<!-- [//]: # (IMPORTANT: END>DO_NOT_EDIT) -->
+<!-- [//]: # (IMPORTANT: END>DO_NOT_EDIT_METHODS) -->
 ### Properties
 #### [Properties Overview](developer/properties/devenv-properties.md)
 #### [Table, Table Fields, and Table Extension Properties](developer/properties/devenv-table-properties.md)
