@@ -21,8 +21,8 @@ Creates a configuration package in [!INCLUDE[d365fin_long_md](../../includes/d36
 
 | Actions         | Return Type  |Description|
 |:---------------|:-------------|:----------|
-|[Microsoft.NAV.import](dynamics-microsoft-automation-extension-post.md)|none|Imports a configurationPackage.|
-|[Microsoft.NAV.apply](dynamics-microsoft-automation-extension-post.md)|none|Applies a configurationPackage.|
+|[Microsoft.NAV.import](dynamics_extension_get.md)|none|Imports a configurationPackage.|
+|[Microsoft.NAV.apply](dynamics_extension_get.md)|none|Applies a configurationPackage.|
 
 ## HTTP requests
 
