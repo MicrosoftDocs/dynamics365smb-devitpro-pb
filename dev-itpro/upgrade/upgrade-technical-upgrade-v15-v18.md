@@ -11,9 +11,9 @@ ms.author: jswymer
 author: jswymer
 ms.service: "dynamics365-business-central"
 ---
-# Technical Upgrade from Version 15 to Version 17
+# Technical Upgrade from Version 15 to Version 18
 
-Use this process to upgrade from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2019 release wave 2 (version 15) to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 1 platform (version 17). This process won't upgrade the application to the latest version.
+Use this process to upgrade from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2019 release wave 2 (version 15) to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 1 platform (version 18). This process won't upgrade the application to the latest version.
 
  ![Upgrade on customized Business Central application](../developer/media/bc15-to-17-technical-upgrade-unmodified-app.png "Upgrade on customize Business Central application")   
 

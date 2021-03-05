@@ -43,6 +43,8 @@ In version 16, a number of tables have been deprecated and replaced by new table
 <!--
 This change introduces several breaking changes. For more information about resolving the changes, see [Breaking Changes](https://github.com/microsoft/ALAppExtensions/blob/master/BREAKINGCHANGES.md). To complete this task, you modify your base application AL source, and compile a new extension.
 -->
+
+<!-- $OldBCServer $NewBCServer $DBServer $DBInstance- $BCAppDB $BCTenantDB $BCTenantID->
 ## <a name="Preparedb"></a> Task 1: Prepare databases
 
 In this task, you prepare the application and tenant databases for the upgrade.
@@ -138,6 +140,12 @@ When you installed version 18 in **Task 1**, a version 18 [!INCLUDE[server](../d
     ```
 
     In a single tenant deployment, this command mounts the tenant automatically. For more information, see [Connecting a Server Instance to a Database](../administration/connect-server-to-database.md).
+
+2. If you want to use the legacy permission sets, set the `UserPermissionSetsFromExtensions` setting to `false`.
+
+    ```powershell
+    Set-NavServerConfiguration -ServerInstance <BC18 server instance> -KeyName "UsePermissionSetsFromExtensions" -KeyValue false
+    ```
 
 2. Disable task scheduler on the server instance for purposes of upgrade.
 
