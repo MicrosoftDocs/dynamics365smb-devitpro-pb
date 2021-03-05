@@ -69,7 +69,7 @@ Permission sets and permissions [included with apps in XML format](devenv-export
 
 ## Upgrade considerations
 
-Starting with [!INCLUDE [prod_short](includes/prod_short.md)] 2021 release wave 1 (v.18.0), the [!INCLUDE [prod_short](includes/prod_short.md)] demo database, which is shipped with our on-prem installation doesn't contain any data in the `dbo.Permission Set` and `dbo.Permission` tables in the application database. Instead, the **System** permission sets and permissions are provided as AL objects of type `PermissionSet` and `PermissionSetExtension`, included with Microsoft apps. 
+Starting with [!INCLUDE [prod_short](includes/prod_short.md)] 2021 release wave 1 (v18.0), the [!INCLUDE [prod_short](includes/prod_short.md)] demo database, which is shipped with our on-prem installation doesn't contain any data in the `dbo.Permission Set` and `dbo.Permission` tables in the application database. Instead, the **System** permission sets and permissions are provided as AL objects of type `PermissionSet` and `PermissionSetExtension`, included with Microsoft apps. 
 
 The application database tables which used to store the entitlements will not contain any data either, as the entitlements are now defined as AL objects.
 
