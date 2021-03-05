@@ -11,7 +11,7 @@ ms.author: jswymer
 author: jswymer
 ms.service: "dynamics365-business-central"
 ---
-# Technical Upgrade from Version 17 to Version 18
+# Technical Upgrade to Version 18
 
 Use this process to upgrade from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 1 (version 17) to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1 platform (version 18). This process won't upgrade the application to the latest version.
 
