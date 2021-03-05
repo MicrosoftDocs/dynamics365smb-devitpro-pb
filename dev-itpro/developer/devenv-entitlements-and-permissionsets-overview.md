@@ -24,7 +24,7 @@ author: SusanneWindfeldPedersen
 
 A [!INCLUDE [prod_short](includes/prod_short.md)] solution contains a number of predefined permission sets that are added by Microsoft or by your software provider (ISV application you installed from AppSource). 
 
-Permission sets included with Microsoft and AppSource apps as AL objects are of type **System**. If they are included in XML format, they are of type **Extension**.
+Permission sets included with Microsoft and AppSource apps as AL objects are of type **System**. If they are included in XML format, they are of type **Extension**. <!-- Old data-sourced permissions are also tagged as System type. These are permission sets that on-premises admins/devs can add using our PowerShell cmdlets or creating and importing XML files with scope=system-->
 
 End-users cannot create or edit these types of permission sets or the permissions within them. However, they can copy these permission sets to define their own permission sets and permissions.
 
@@ -83,7 +83,7 @@ The default value for this setting is `true`, meaning that the server will be re
 
 It is not possible to customize the System permission sets and permissions used in the online version of [!INCLUDE [prod_short](includes/prod_short.md)], the users can only copy those to new permission sets, which they can then adjust to their needs. For more information, see [](/dynamics365/business-central/ui-define-granular-permissions#to-create-or-modify-a-permission-set).
 
-In the on-prem version of [!INCLUDE [prod_short](includes/prod_short.md)], even though it is not recommended, the partners could customize the permission sets and permissions shipped in the application database. In this case, as for any upgrade before, the changes in Microsoft permissions should be merged with the customized permissions by partners during upgrade. 
+In the on-prem version of [!INCLUDE [prod_short](includes/prod_short.md)], even though it is not recommended, the partners could customize the permission sets and permissions shipped in the application database. In this case, as for any upgrade before, the changes in Microsoft permissions should be merged with the customized permissions by partners during upgrade.
 
 Although starting with [!INCLUDE [prod_short](includes/prod_short.md)] 2021 release wave 1 (v.18.0) System permissions are no longer shipped as data in the application database, the partners can use the same procedure as before to export the new permissions, which are defined using AL objects. The new permission sets and permissions can be exported into XML file by running XMLport 9171 Import/Export Permission Sets, making it possible to compare and merge the customized permission sets in your old database with the newly shipped permission sets. Find more details [here](/dynamics365/business-central/dev-itpro/upgrade/how-to--import-export-permission-sets-permissions). 
 
