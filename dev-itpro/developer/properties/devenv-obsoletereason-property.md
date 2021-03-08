@@ -2,7 +2,7 @@
 title: "ObsoleteReason Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 01/26/2021
+ms.date: 03/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,7 +16,7 @@ author: SusanneWindfeldPedersen
 # ObsoleteReason Property
 > **Version**: _Available or changed with runtime version 1.0._
 
-Specifies why a table, field, or key has been marked as Pending or Obsolete in the ObsoleteState property.
+Specifies why the object or element has been marked as Pending or Obsolete in the ObsoleteState property.
 
 ## Applies to
 -   Table Field

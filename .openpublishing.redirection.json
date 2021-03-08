@@ -5599,6 +5599,186 @@
     "source_path": "dev-itpro/developer/readiness/readiness-welcome.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/readiness/opportunity-app-publisher",
     "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/administration/dynamics-microsoft-automation-automationcompanies-delete.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/administration/resources/automationcompany",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/administration/dynamics-microsoft-automation-automationcompanies-get.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/administration/resources/automationcompany",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/administration/dynamics-microsoft-automation-automationcompanies-patch.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/administration/resources/automationcompany",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/administration/dynamics-microsoft-automation-automationcompanies-post.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/administration/resources/automationcompany",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/administration/dynamics-microsoft-automation-automationcompany.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/administration/resources/automationcompany",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/administration/dynamics-microsoft-automation-company-get.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/administration/resources/company",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/administration/dynamics-microsoft-automation-company.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/administration/resources/company",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/administration/dynamics-microsoft-automation-configurationpackage-delete.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/administration/resources/configurationpackage",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/administration/dynamics-microsoft-automation-configurationpackage-get.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/administration/resources/configurationpackage",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/administration/dynamics-microsoft-automation-configurationpackage-patch.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/administration/resources/configurationpackage",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/administration/dynamics-microsoft-automation-configurationpackage-post.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/administration/resources/configurationpackage",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/administration/dynamics-microsoft-automation-configurationpackages.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/administration/resources/configurationpackage",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/administration/dynamics-microsoft-automation-extension-get.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/administration/resources/extension",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/administration/dynamics-microsoft-automation-extension-post.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/administration/resources/extension",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/administration/dynamics-microsoft-automation-extension.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/administration/resources/extension",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/administration/dynamics-microsoft-automation-extensiondeploymentstatus-get.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/administration/resources/extensiondeploymentstatus",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/administration/dynamics-microsoft-automation-extensiondeploymentstatus.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/administration/resources/extensiondeploymentstatus",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/administration/dynamics-microsoft-automation-extensionupload-patch.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/administration/resources/extensionupload",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/administration/dynamics-microsoft-automation-extensionupload.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/administration/resources/extensionupload",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/administration/dynamics-microsoft-automation-permissionset-get.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/administration/resources/permissionset",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/administration/dynamics-microsoft-automation-permissionset.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/administration/resources/permissionset",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/administration/dynamics-microsoft-automation-user-get.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/administration/resources/user",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/administration/dynamics-microsoft-automation-user-patch.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/administration/resources/user",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/administration/dynamics-microsoft-automation-user.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/administration/resources/user",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/administration/dynamics-microsoft-automation-usergroup-get.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/administration/resources/usergroup",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/administration/dynamics-microsoft-automation-usergroup.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/administration/resources/usergroup",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/administration/dynamics-microsoft-automation-usergroupmember-delete.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/administration/resources/usergroupmember",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/administration/dynamics-microsoft-automation-usergroupmember-get.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/administration/resources/usergroupmember",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/administration/dynamics-microsoft-automation-usergroupmember-post.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/administration/resources/usergroupmember",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/administration/dynamics-microsoft-automation-usergroupmember.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/administration/resources/usergroupmember",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/administration/dynamics-microsoft-automation-userpermission-delete.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/administration/resources/userpermission",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/administration/dynamics-microsoft-automation-userpermission-get.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/administration/resources/userpermission",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/administration/dynamics-microsoft-automation-userpermission-post.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/administration/resources/userpermission",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/administration/dynamics-microsoft-automation-userpermission.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/administration/resources/userpermission",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/administration/dynamics-microsoft-automation-file.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/administration/dynamics-microsoft-automation-overview",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/administration/dynamics-automation-overview.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/administration/itpro-introduction-to-automation-apis",
+    "redirect_document_id": false
    }
   ]
 }
