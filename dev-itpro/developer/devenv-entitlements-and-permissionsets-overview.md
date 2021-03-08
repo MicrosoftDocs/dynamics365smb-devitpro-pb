@@ -125,7 +125,7 @@ If you've customized Microsoft permission sets, it's important to know what you'
 
     Option 2:
 
-    1. Get the PowerShell script for permissions from GitHub https://github.com/microsoft/BCTech/tree/master/samples
+    1. Get the PowerShell script called Convert-PermissionSets.psm1 from [Business Central Tech Samples](https://github.com/microsoft/BCTech/tree/master/samples/PermissionSetConversion) on GitHub.
     2. Run the script against the old [!INCLUDE [prod_short](includes/prod_short.md)] version to export the permission sets to AL object.
     3. Compare the exported AL objects with permission set objects from the version 18.  
 
@@ -138,12 +138,15 @@ If you've customized Microsoft permission sets, it's important to know what you'
    |Only added new permissions to the existing permission sets|Create AL permission set extension objects with the added permissions.|
    |Removed or changed permissions in objects|<ol><li>Find the AL objects from Microsoft that implement the permission sets that you modified in the previous version.</li><li>Make copies of these AL objects</li><li>Modify the copies to include the customizations you want.</li></ol> |
 
-3. Convert your own permission sets to new AL objects.
+3. Convert your other custom permission sets to new AL objects.
 
-    1. Get the PowerShell script for permissions from GitHub https://github.com/microsoft/BCTech/tree/master/samples.
+    1. Get the PowerShell script called Convert-PermissionSets.psm1 from [Business Central Tech Samples](https://github.com/microsoft/BCTech/tree/master/samples/PermissionSetConversion) on GitHub.
     2. Connect to the old version's database.
     3. Run the script to generate AL objects.
-    4. Import and compile.
+
+4. Include the new AL permission sets and permission set extension objects into an AL project and compile the extension package.
+
+5. Publish and install the extension on your version 18 deployment.
 
 ## See Also
 
