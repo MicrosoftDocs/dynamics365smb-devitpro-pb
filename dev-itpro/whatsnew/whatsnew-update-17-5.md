@@ -3,7 +3,7 @@ title: "Update 17.5 for Microsoft Dynamics 365 Business Central 2020 Release Wav
 description: Get an overview of new and changed capabilities in the 17.5 update of Business Central online, which is part of 2020 release wave 2.
 ms.author: solsen
 ms.custom: na
-ms.date: 03/02/2021
+ms.date: 03/08/2021
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
