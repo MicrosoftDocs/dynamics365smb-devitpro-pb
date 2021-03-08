@@ -2,7 +2,7 @@
 title: "Pages and PageExtensions that have been published must not be deleted, since dependent extensions may break"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 03/08/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AppSourceCop Rule AS0029
-Pages and PageExtensions that have been published must not be deleted, since dependent extensions may break  
+Pages and PageExtensions that have been published must not be deleted, since dependent extensions may break
 
 ## Description
 Pages and PageExtensions that have been published must not be deleted.
