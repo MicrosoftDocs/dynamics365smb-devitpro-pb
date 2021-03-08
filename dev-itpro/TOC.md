@@ -199,6 +199,7 @@
 <!--### [Migrating from Dynamics SL](administration/migrate-data.md)-->
 <!-- end migrate -->
 ## What's New or Changed
+### [Update 17.5](whatsnew/whatsnew-update-17-5.md)
 ### [Update 17.4](whatsnew/whatsnew-update-17-4.md)
 ### [Update 17.3](whatsnew/whatsnew-update-17-3.md)
 ### [Update 17.2](whatsnew/whatsnew-update-17-2.md)
@@ -238,6 +239,7 @@
 #### [Marketing Validation Checklist](developer/readiness/readiness-checklist-marketing.md)
 #### [Technical Validation Checklist](developer/devenv-checklist-submission.md)
 #### [How to Make Compelling Videos](developer/readiness/readiness-how-to-make-compelling-videos.md)
+#### [Technical Validation FAQ](developer/readiness/readiness-technical-validation-faq.md)
 #### [How to Create an Effective Sales Landing Page](developer/readiness/readiness-how-to-create-sales-landing-page.md)
 ### Getting Started with AL for On-Premises
 #### [Getting Started with C/SIDE and AL Side-by-Side for On-Premises](developer/devenv-get-started-al-for-onprem.md)
@@ -553,7 +555,7 @@
 #### [Procedure Overload](developer/methods/devenv-overload-method.md)
 #### [Joker Data Type](developer/methods/devenv-joker-datatype.md)
 #### Option Types
-<!-- [//]: # (START>DO_NOT_EDIT)
+<!-- [//]: # (START>DO_NOT_EDIT_METHODS)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.) -->
 ##### [Action Option Type](developer/methods-auto/action/action-option.md)
@@ -2105,7 +2107,7 @@
 ##### [WriteTo(XmlWriteOptions, var Text) Method](developer/methods-auto/xmltext/xmltext-writeto-xmlwriteoptions-text-method.md)
 #### [XmlWriteOptions Data Type](developer/methods-auto/xmlwriteoptions/xmlwriteoptions-data-type.md)
 ##### [PreserveWhitespace([Boolean]) Method](developer/methods-auto/xmlwriteoptions/xmlwriteoptions-preservewhitespace-method.md)
-<!-- [//]: # (IMPORTANT: END>DO_NOT_EDIT) -->
+<!-- [//]: # (IMPORTANT: END>DO_NOT_EDIT_METHODS) -->
 ### Properties
 #### [Properties Overview](developer/properties/devenv-properties.md)
 #### [Table, Table Fields, and Table Extension Properties](developer/properties/devenv-table-properties.md)
