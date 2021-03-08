@@ -89,7 +89,7 @@ Although starting with [!INCLUDE [prod_short](includes/prod_short.md)] 2021 rele
 
 ### Before you start upgrading
 
-When upgrading to version 18, decide whether you want to use the permissions defined as data or switch to permissions defined as AL objects. Then, use the following guidelines to help you complete the upgrade.
+When upgrading to version 18, decide whether you want to use the permissions defined as data or switch to permissions defined as AL objects. Then, use the following guidelines to help you complete the permissions upgrade.
 
 ### To continue using permission sets defined as data
 
