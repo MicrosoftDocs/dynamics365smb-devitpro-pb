@@ -117,13 +117,12 @@ If you've customized Microsoft permission sets, it's important to know what you'
 
     There are two ways to do this task.
 
-    Option 1:
-
+    **Option 1**
     1. From your old [!INCLUDE [prod_short](includes/prod_short.md)] version, export the customized Microsoft permissions sets to XML.
     2. Connect to a demonstration database of previous version, then export the Microsoft permission sets to XML.
     3. Compare the XML files. 
 
-    Option 2:
+    **Option 2**
 
     1. Get the PowerShell script called Convert-PermissionSets.psm1 from [Business Central Tech Samples](https://github.com/microsoft/BCTech/tree/master/samples/PermissionSetConversion) on GitHub.
     2. Run the script against the old [!INCLUDE [prod_short](includes/prod_short.md)] version to export the permission sets to AL object.
