@@ -31,6 +31,7 @@ The following table describes the user and workspace settings for the AL Languag
 |Editor Services Path|Specifies the path to the Editor Services host executable.|
 |Enable Code Actions|Specifies whether code actions should be enabled for all source files in the current project. Default is `false`.|
 |Enable Code Analysis|Specifies whether code analysis should be performed for all source files in the current project. Default is `false`. If this is set to `true`, you must specify the **Code Analyzers** setting with the list of code analyzers to use.|
+|Enable Script IntelliSense|Specifies whether IntelliSense should be enabled for control addin script files. Turn this off if it interferes with advanced JavaScript or TypeScript configurations. Default is `true`.|
 |Incognito|Specifies whether to open the browser in Incognito/InPrivate mode when launching the application from Visual Studio Code. This option will take effect only if the **Browser** option is set to a non-default value.|
 |Package Cache Path|Sets the directory path where reference symbol packages are located.|
 |Rule Set Path|Sets the path to the file containing the customized rules to use when running code analysis.|
