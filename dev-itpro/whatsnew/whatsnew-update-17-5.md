@@ -17,7 +17,7 @@ author: EmmaNielsson
 Would you like to know what has changed in update 17.5? Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update. In addition, we have gathered some good to know information and links, you might find interesting.
 
 ## Hotfixes
-Find an overview of hotfixes in this [article](INSERT).
+Find an overview of hotfixes in this [article](https://support.microsoft.com/office/update-17-5-for-microsoft-dynamics-365-business-central-2020-release-wave-2-application-build-17-5-22499-22546-platform-build-17-0-22463-22540-94cdc7cc-0aaf-43cd-a070-c9c9f1147679?ui=en-US&rs=en-US&ad=US).
 
 ## Localization updates 
 
