@@ -100,6 +100,7 @@ The mapping of object types in the XML such as `<ObjectType>0</ObjectType>` gene
 
 ## See Also
 
+[Entitlements and Permission Sets Overview](devenv-entitlements-and-permissionsets-overview.md)  
 [Permissions on Database Objects](devenv-permissions-on-database-objects.md)  
 [Permissions Property](properties/devenv-permissions-property.md)  
 [TestPermissions Property](properties/devenv-testpermissions-property.md)  
