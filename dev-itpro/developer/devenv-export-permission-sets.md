@@ -1,6 +1,6 @@
 ---
-title: "Exporting Permission Sets"
-description: Export permission sets for Dynamics 365 for Business Central.
+title: "Exporting Permission Sets to XML"
+description: Export permission sets to XML for Dynamics 365 for Business Central.
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 10/01/2020
@@ -12,11 +12,9 @@ ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
-# Exporting Permission Sets
+# Exporting Permission Sets to XML
 
-Permission sets that exist in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] can be exported and packaged for your extension directly from the client, instead of defining XML by hand. These permission sets are also known as *tenant* permissions, and are shown in the UI as **User-Defined** permissions. The underlying functionality of permissions has changed with the latest version of [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)].
-
-<!-- TODO - I think these are called Extension permissions in the UI -->
+Permission sets that exist in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] can be exported and packaged for your extension directly from the client, instead of defining XML by hand. These permission sets are also known as *tenant* permissions, and are shown in the UI as **Extension** permissions. The underlying functionality of permissions has changed with the latest version of [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)].
 
 > [!IMPORTANT]  
 > With the latest version of [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] permissions are no longer defined as data in the application database. Permissions that can be created by using AL objects are called *system* permissions. For more information, see [Entitlements and Permission Sets Overview](devenv-entitlements-and-permissionsets-overview.md).
