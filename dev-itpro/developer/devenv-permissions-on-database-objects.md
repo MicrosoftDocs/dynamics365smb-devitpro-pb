@@ -35,7 +35,7 @@ Permissions on `tabledata` are specified with the following abbreviations:
 |Modify    |You can modify data.| `M` for direct modify permission, `m` for indirect modify permission. |
 |Delete    |You can delete data.| `D` for direct delete permission, `d` for indirect delete permission.| 
 
-Permissions on all objects are specified with the following abbreviations:
+Permissions on *all objects* are specified with the following abbreviations:
 
 |Permission|Description|Abbreviation in AL  |
 |----------|-----------------|----------|
@@ -52,6 +52,8 @@ Permissions = codeunit * = X;
 > [!IMPORTANT]  
 > The wildcard must be used with caution, because when it is used in a permission set it grants the permission to all objects of that type across all permissions. If a permission set with a wildcard is included in an entitlement, it only covers the objects of that type in the current extension.
 
+## Example
+
 All of the permissions illustrated above can be combined into a group of permissions for any given object. For example:
 
 ```al
@@ -66,7 +68,6 @@ Permissions =
 ...
 ```
 
-  
 ## See Also
 
 [Getting Started with AL](devenv-get-started.md)  
