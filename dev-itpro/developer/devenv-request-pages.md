@@ -12,7 +12,7 @@ ms.author: solsen
 
 # Request Pages
 
-A request page is a page that is run before the report or XMLport starts to execute. Request pages enable end users to specify options and filters for a report and an XMLport. Request pages are defined as part of designing a [Report object](devenv-report-object.md) and an [XMLport object](devenv-XMLport-object.md). The syntax is shown further down in this topic. You design the filters on request pages by using the following report and XMLport properties:
+A request page is a page that is run before the report or XMLport starts to execute. Request pages enable end users to specify options and filters for a report and an XMLport. Request pages are defined as part of designing a [Report object](devenv-report-object.md), a [Report Extension Object](devenv-report-ext-object.md), or an [XMLport object](devenv-XMLport-object.md). The syntax is shown further down in this topic. You design the filters on request pages by using the following report and XMLport properties:
 
 |Property|Description|
 |--------|-----------|
@@ -57,7 +57,7 @@ report 50103 "Customer List"
 ```
 
 > [!NOTE]  
-> We recommend that you add fields that the end-users of the report will frequently set filters on.
+> It is recommended to add fields that the end-users of the report will frequently set filters on.
 
 For more information about the report object, see [Report Object](devenv-report-object.md).
 
@@ -83,14 +83,14 @@ For more information about the XMLport object, see [XMLport Object](devenv-XMLpo
 
 By default, for every data item in the report and table element in a XMLport, a FastTab for defining filters and sorting is created on the request page. To remove a FastTab from a request page, do not define any `RequestFilterFields` for the data item or table element and set the [DataItemTableView](properties/devenv-dataitemtableview-property.md) property in a report or the [SourceTableView](properties/devenv-sourcetableview-XMLports-property.md) property in an XMLport to define sorting. The request page is displayed, but there is no tab for this data item or table element.
 
-If a `DataItemTableView` or `SourceTableView` is not defined, then end users can select a sort field and sort order at runtime.
+If a `DataItemTableView` or `SourceTableView` is not defined, then end-users can select a sort field and sort order at runtime.
 
-In a complex report or XMLport that uses data from several tables, the functionality may depend on a specific key and sort order. Design your reports and XMLports so that end users can't change the sort order in a way that affects their functionality.
+In a complex report or XMLport that uses data from several tables, the functionality may depend on a specific key and sort order. Design your reports and XMLports so that end-users can't change the sort order in a way that affects their functionality.
 
 For data items and table elements whose source table contains calculated fields, such as amounts and quantities, the **Filter totals by:** section is automatically included on the request page, which allows you to adjust various dimensions that influence calculations.
 
 > [!TIP]
-> For information about how to enter filter criteria on the request page, see [Filtering](/dynamics365/business-central/ui-enter-criteria-filters#-filtering) in the Business Central application help.
+> For information about how to enter filter criteria on the request page, see [Filtering](/dynamics365/business-central/ui-enter-criteria-filters#-filtering) in the [!INCLUDE[prod_short](../includes/prod_short.md)] application help.
 
 
 ## Defining a `requestpage` section
@@ -134,8 +134,11 @@ requestpage
     }
 ...
 ```
+
 ## See Also
+
 [Report Object](devenv-report-object.md)  
+[Report Extension Object](devenv-report-ext-object.md)  
 [XMLport Object](devenv-XMLport-object.md)  
 [Reports Overview](devenv-reports.md)  
 [Report Design Overview](devenv-report-design-overview.md)  

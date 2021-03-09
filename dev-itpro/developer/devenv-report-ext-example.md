@@ -165,7 +165,7 @@ table 50202 Producer
 
 ## Creating a report extension - FoodExtension
 
-Having extended the base table, we also want to extend the `FoodReport` to enable displaying the additional set of fields that were added, both to the existing `FoodTable` and to the new table `Producer`.
+Having extended the base table, we also want to extend the `FoodReport` to enable displaying the additional set of fields that were added, both to the existing `FoodTable` and to the new table `Producer`. For more information, see [Report Extension Object](devenv-report-ext-object.md).
 
 ```al
 reportextension 50200 FoodExtension extends FoodReport
