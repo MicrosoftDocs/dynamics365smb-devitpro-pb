@@ -2,7 +2,7 @@
 title: "RecordRef.FieldCount Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 03/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,7 +16,7 @@ author: SusanneWindfeldPedersen
 # RecordRef.FieldCount Method
 > **Version**: _Available from runtime version 1.0._
 
-Gets the number of fields in the table that are currently selected or returns the number of fields that have been defined in a key. Returns an error if no table or no key is selected.
+Gets the number of fields in the table that is currently selected or returns the number of fields that have been defined in a key. Returns an error if no table or no key is selected.
 
 
 ## Syntax
