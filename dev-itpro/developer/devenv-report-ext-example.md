@@ -14,9 +14,9 @@ ms.author: solsen
 
 # Report Extension Example
 
-The following topic illustrates a scenario where we extend an existing table and report by using extension objects. The code snippets shown in this example do not provide a full end-to-end scenario that can be deployed, but illustrates the way to extend existing functionality by using [Page Extension Object](devenv-page-ext-object.md) and [Report Extension Object](devenv-report-ext-object.md).
+The following topic illustrates a scenario where an existing table and report is extended by using extension objects. The code snippets shown in this example do not provide a full end-to-end scenario that can be deployed, but illustrates the way to extend existing functionality by using the [Page Extension Object](devenv-page-ext-object.md) and [Report Extension Object](devenv-report-ext-object.md).
 
-## Creating a base table
+## Creating a base table - BaseFoodTable
 
 The following base table holds information about food and specific details that applies to that. The `Color` field in this table is an enum, which is defined next in the `FoodColor` enum.
 
@@ -50,6 +50,7 @@ table 50100 BaseFoodTable
     }
 }
 ```
+#### Defining an enum - FoodColor
 
 And defining the enum `FoodColor` to enable selecting a descriptive color of an item.
 
@@ -96,9 +97,9 @@ page 50101 BaseFoodPage
 ```
 -->
 
-## Creating a base report
+## Creating a base report - FoodReport
 
-Now, the following `FoodReport` object is a report based on `BaseFoodTable` as a data source. There's a `DataItemLink` to a second table that displays restaurant information. The report is defined with a RDL layout.
+Now, the following `FoodReport` object is a report based on `BaseFoodTable` as a data source. There's a `DataItemLink` to a second table that displays restaurant information. The report is defined with a RDL layout. For more information, see [Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md).
 
 ```al
 report 50100 FoodReport
@@ -130,9 +131,9 @@ report 50100 FoodReport
 }
 ```
 
-## Extending the base table
+## Creating a table extension - GMOFood
 
-The next code snippet is a table extension `GMOFood` that extends the `BaseFoodTable` with extra fields to register more details about food. The code snippet also adds a new table `Producer` adding information about origin of an item.
+The next code snippet is a table extension `GMOFood` that extends the `BaseFoodTable` with extra fields to register more details about food. The code snippet also adds a new table `Producer` adding information about the origin of an item.
 
 ```al
 tableextension 50200 GMOFood extends BaseFoodTable
@@ -162,9 +163,9 @@ table 50202 Producer
 }
 ```
 
-## Extending the base report
+## Creating a report extension - FoodExtension
 
-Having extended the base table, we want to extend the `FoodReport` to enable displaying the additional set of fields from both the existing `FoodTable` and from the new table `Producer`.
+Having extended the base table, we also want to extend the `FoodReport` to enable displaying the additional set of fields that were added, both to the existing `FoodTable` and to the new table `Producer`.
 
 ```al
 reportextension 50200 FoodExtension extends FoodReport
