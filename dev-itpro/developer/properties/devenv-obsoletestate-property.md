@@ -2,7 +2,7 @@
 title: "ObsoleteState Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/24/2020
+ms.date: 03/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,7 +16,7 @@ author: SusanneWindfeldPedersen
 # ObsoleteState Property
 > **Version**: _Available from runtime version 1.0._
 
-Marks whether the table, field, or key is or will become obsolete (deprecated).
+Marks whether the object or element is or will become obsolete (deprecated).
 
 ## Applies to
 -   Table Field
