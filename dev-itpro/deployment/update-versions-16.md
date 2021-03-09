@@ -3,10 +3,10 @@ title: "Updates for the Business Central 2020 Release Wave 1 version"
 description: "Learn about the updates for Dynamics 365 Business Central 2020 Release Wave 1 on-premises deployments."
 author: jswymer
 ms.custom: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
-ms.date: 02/06/2021
+ms.date: 03/01/2021
 
 ---
 
@@ -24,18 +24,21 @@ You should always install the latest update.
 
 The following table lists the updates that have been released for 2020 release wave 1 of Business Central (version 16). The updates include hotfixes that apply to all countries and hotfixes that apply to specific local versions. Check the relevant Support article for a description.
 
-|Knowledge Base ID                                           |Title                |Release date  |Build No. |Local versions included |
-|------------------------------------------------------------|---------------------|--------------|----------|------------------------|
-|[5000695](https://support.microsoft.com/help/5000695)|Update 16.10 |February 2021|Application Build 16.10.21502</br>Platform Build 16.0.21469|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
-|[4595151](https://support.microsoft.com/help/4595151)|Update 16.9 |January 2021|Application Build 16.9.20537</br>Platform Build 16.0.20513|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
-|[4583553](https://support.microsoft.com/help/4583553)|Update 16.8 |December 2020|Application Build 16.8.19389</br>Platform Build 16.0.19389|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
-|[4583513](https://support.microsoft.com/help/4583513)|Update 16.7 |November 2020|Application Build 16.7.18411</br>Platform Build 16.0.18359|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
-|[4583501](https://support.microsoft.com/help/4583501)|Update 16.6 |October 2020|Application Build 16.6.17046</br>Platform Build 16.0.17024|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
-|[4563415](https://support.microsoft.com/help/4576664)|Update 16.5 |September 2020|Application Build 16.5.15953</br>Platform Build 16.5.15941|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
-|[4563415](https://support.microsoft.com/help/4563415)|Update 16.4 |August 2020|Application Build 16.4.15445</br>Platform Build 16.0.15420|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
-|[4563407](https://support.microsoft.com/help/4563407)|Update 16.3 |July 2020|Application Build 16.3.14238</br>Platform Build 16.0.14195|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
-|[4549686](https://support.microsoft.com/help/4564072)|Update 16.2 |June 2020|Application Build 16.2.13779</br>Platform Build 16.0.13772|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
-|[4549686](https://support.microsoft.com/help/4549686)|Update 16.1 |May 2020|Application Build 16.1.12805</br>Platform Build 16.0.12758|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
+Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK
+
+|Knowledge Base ID                                           |Title                |Release date  |Build No. |
+|------------------------------------------------------------|---------------------|--------------|----------|
+|[5001234](https://support.microsoft.com/help/5001234)|Update 16.11 |March 2021|Application Build 16.11.22526</br>Platform Build 16.0.22511|
+|[5000695](https://support.microsoft.com/help/5000695)|Update 16.10 |February 2021|Application Build 16.10.21502</br>Platform Build 16.0.21469|
+|[4595151](https://support.microsoft.com/help/4595151)|Update 16.9 |January 2021|Application Build 16.9.20537</br>Platform Build 16.0.20513|
+|[4583553](https://support.microsoft.com/help/4583553)|Update 16.8 |December 2020|Application Build 16.8.19389</br>Platform Build 16.0.19389|
+|[4583513](https://support.microsoft.com/help/4583513)|Update 16.7 |November 2020|Application Build 16.7.18411</br>Platform Build 16.0.18359|
+|[4583501](https://support.microsoft.com/help/4583501)|Update 16.6 |October 2020|Application Build 16.6.17046</br>Platform Build 16.0.17024|
+|[4563415](https://support.microsoft.com/help/4576664)|Update 16.5 |September 2020|Application Build 16.5.15953</br>Platform Build 16.5.15941|
+|[4563415](https://support.microsoft.com/help/4563415)|Update 16.4 |August 2020|Application Build 16.4.15445</br>Platform Build 16.0.15420|
+|[4563407](https://support.microsoft.com/help/4563407)|Update 16.3 |July 2020|Application Build 16.3.14238</br>Platform Build 16.0.14195|
+|[4549686](https://support.microsoft.com/help/4564072)|Update 16.2 |June 2020|Application Build 16.2.13779</br>Platform Build 16.0.13772|
+|[4549686](https://support.microsoft.com/help/4549686)|Update 16.1 |May 2020|Application Build 16.1.12805</br>Platform Build 16.0.12758|
 
 ## See Also
 
