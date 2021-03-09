@@ -1,6 +1,6 @@
 ---
 title: "Technical Upgrade from Version 17 to Version 18"
-description: Describes how to do a technical upgrade from Business Central 17 to 18
+description: Describes how to do a technical upgrade from Business Central V15, 16, and 17, to V18
 ms.custom: na
 ms.date: 10/01/2020
 ms.reviewer: na
@@ -19,7 +19,7 @@ Use this process to upgrade any of the following versions to the [!INCLUDE[prod_
 - [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 1 (version 16)
 - [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2019 release wave 2 (version 15)
 
- ![Upgrade on customized Business Central application](../developer/media/bc16-to-17-technical-upgrade-unmodified-app.png "Upgrade on customize Business Central application")   
+ ![Upgrade on customized Business Central application](../developer/media/18-technical-upgrade.png "Upgrade on customize Business Central application")   
 
 #### Single-tenant and multitenant deployments
 
@@ -27,9 +27,9 @@ The process for upgrading is similar for a single-tenant and multitenant deploym
 
 ## Prerequisites
 
-1. Your version 17 platform is compatible with version 18.
+1. Your current version platform is compatible with version 18.
 
-    There are several updates for version 17. The updates have a compatible version 18 update. For more information, see [[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md). For example, if your solution is currently running 17.6, you can't upgrade to 18.0. You must wait until 17.7 is available.  
+    There are several updates for each Business Central version. The update of your current version must be compatible version 18 update that you want to upgrade to. For more information, see [[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md). For example, if your solution is currently running 17.6, you can't upgrade to 18.0. You must wait until 17.7 is available.  
 
 2. Disable data encryption.
 
@@ -48,7 +48,7 @@ In version 16, a number of tables have been deprecated and replaced by new table
 This change introduces several breaking changes. For more information about resolving the changes, see [Breaking Changes](https://github.com/microsoft/ALAppExtensions/blob/master/BREAKINGCHANGES.md). To complete this task, you modify your base application AL source, and compile a new extension.
 -->
 
-<!-- $OldBCServer $NewBCServer $DBServer $DBInstance- $BCAppDB $BCTenantDB $BCTenantID->
+<!-- $OldBCServer $NewBCServer $DBServer $DBInstance- $BCAppDB $BCTenantDB $BCTenantID-->
 ## <a name="Preparedb"></a> Task 1: Prepare databases
 
 In this task, you prepare the application and tenant databases for the upgrade.
@@ -60,7 +60,7 @@ In this task, you prepare the application and tenant databases for the upgrade.
 
     You'll need these packages later to re-publish and install the extensions again.
 -->
-3. (Single-tenant only) Uninstall all extensions from the old tenants.
+2. (Single-tenant only) Uninstall all extensions from the old tenants.
 
     Run the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 17.0 as an administrator. Use the [Uninstall-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp) cmdlet to uninstall an extension. For example, together with the Get-NAVAppInfo cmdlet, you can uninstall all extensions with a single command:
 
@@ -68,7 +68,7 @@ In this task, you prepare the application and tenant databases for the upgrade.
     Get-NAVAppInfo -ServerInstance <BC17 server instance> | % { Uninstall-NAVApp -ServerInstance <BC17 server instance> -Name $_.Name -Version $_.Version }
     ```
 
-4. Unpublish all system, test, and application symbols.
+3. Unpublish all system, test, and application symbols.
 
     To unpublish symbols, use the Unpublish-NAVAPP cmdlet.  You can unpublish all symbols by using the Get-NAVAppInfo cmdlet with the `-SymbolsOnly` switch as follows:
 
@@ -78,7 +78,7 @@ In this task, you prepare the application and tenant databases for the upgrade.
 
     [What are symbols?](upgrade-overview-v15.md#Symbols)  
 
-5. (Multitenant only) Dismount the tenants from the application server instance.
+4. (Multitenant only) Dismount the tenants from the application server instance.
 
     To dismount a tenant, use the [Dismount-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/dismount-navtenant) cmdlet:
 
@@ -86,7 +86,7 @@ In this task, you prepare the application and tenant databases for the upgrade.
     Dismount-NAVTenant -ServerInstance <BC17 server instance> -Tenant <tenant ID>
     ```
 
-6. Stop the server instance.
+5. Stop the server instance.
 
     ```powershell
     Stop-NAVServerInstance -ServerInstance <BC17 server instance>
