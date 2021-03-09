@@ -98,7 +98,7 @@ When upgrading to version 18, decide whether you want to use the permissions def
    For more information, see [To export and import a permission set](https://docs.microsoft.com/dynamics365/business-central/ui-define-granular-permissions#to-export-and-import-a-permission-set).
 2. Install version 18 with the demonstration database.
 3. From the version 18 client, export the permission sets to XML.
-4. Using standard file comparison tools, compare to XML files and merge the necessary changes. 
+4. Using standard file comparison tools, compare XML files and merge the necessary changes. 
 
     Now you have upgraded permissions as XML files.
 5. Upgrade your [!INCLUDE [prod_short](includes/prod_short.md)] to version 18.
@@ -120,12 +120,12 @@ If you've customized Microsoft permission sets, it's important to know what you'
     **Option 1**
     1. From your old [!INCLUDE [prod_short](includes/prod_short.md)] version, export the customized Microsoft permissions sets to XML.
     2. Connect to a demonstration database of previous version, then export the Microsoft permission sets to XML.
-    3. Compare the XML files. 
+    3. Compare the XML files.
 
     **Option 2**
 
     1. Get the PowerShell script called Convert-PermissionSets.psm1 from [Business Central Tech Samples](https://github.com/microsoft/BCTech/tree/master/samples/PermissionSetConversion) on GitHub.
-    2. Run the script against the old [!INCLUDE [prod_short](includes/prod_short.md)] version to export the permission sets to AL object.
+    2. Run the script against the old [!INCLUDE [prod_short](includes/prod_short.md)] version to export the permission sets to AL objects.
     3. Compare the exported AL objects with permission set objects from the version 18.  
 
     Now you have the list of changes that you made compared to the version 18 permission sets from Microsoft.
