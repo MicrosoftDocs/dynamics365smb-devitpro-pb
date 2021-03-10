@@ -204,14 +204,15 @@
 ### [Update 17.3](whatsnew/whatsnew-update-17-3.md)
 ### [Update 17.2](whatsnew/whatsnew-update-17-2.md)
 ### [Update 17.1](whatsnew/whatsnew-update-17-1.md)
-### [Update 16.5](whatsnew/whatsnew-update-16-5.md)
-### [Update 16.4](whatsnew/whatsnew-update-16-4.md)
-### [Update 16.3](whatsnew/whatsnew-update-16-3.md)
-### [Update 16.2](whatsnew/whatsnew-update-16-2.md)
-### [Update 16.1](whatsnew/whatsnew-update-16-1.md)
-### [Update 15.4](whatsnew/whatsnew-update-15-4.md)
-### [Update 15.3](whatsnew/whatsnew-update-15-3.md)
-### [Update 15.2](whatsnew/whatsnew-update-15-2.md)
+### Updates for earlier major versions
+#### [Update 16.5](whatsnew/whatsnew-update-16-5.md)
+#### [Update 16.4](whatsnew/whatsnew-update-16-4.md)
+#### [Update 16.3](whatsnew/whatsnew-update-16-3.md)
+#### [Update 16.2](whatsnew/whatsnew-update-16-2.md)
+#### [Update 16.1](whatsnew/whatsnew-update-16-1.md)
+#### [Update 15.4](whatsnew/whatsnew-update-15-4.md)
+#### [Update 15.3](whatsnew/whatsnew-update-15-3.md)
+#### [Update 15.2](whatsnew/whatsnew-update-15-2.md)
 <!-- end admin -->
 <!-- Development-->
 # Development
