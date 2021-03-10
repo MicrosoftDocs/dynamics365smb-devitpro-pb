@@ -38,11 +38,14 @@ entitlement MyEntitlement
 {
     Type = Role;
     RoleType = Delegated;
+    Id = '1a2aaaaa-3aa4-5aa6-789a-a1234567aaaa';
     ObjectEntitlements = 
         ”D365 BUS PREMIUM - BaseApp”;​
 }
 
 ```
+
+
 
 ## See Also
 

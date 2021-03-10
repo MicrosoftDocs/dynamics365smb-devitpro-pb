@@ -39,7 +39,7 @@ When developing an app, you can create new entitlement and permission set object
 - [PermissionSetExtension](devenv-permissionset-ext-object.md)
 
 > [!NOTE]  
-> In the current version of [!INCLUDE[prod_short](includes/d365fin_long_md.md)][!INCLUDE[prod_long](includes/prod_long.md)] the entitlements can only be included with Microsoft apps (enforced by the AppSource cop rules and the technical validation checks that we run for the apps submitted to AppSource). These objects will become available for the ISV apps when we introduce ability to monetize AppSource apps in one of our future releases. 
+> In the current version of [!INCLUDE[prod_short](includes/d365fin_long_md.md)] the entitlements can only be included with Microsoft apps (enforced by the AppSource cop rules and the technical validation checks that we run for the apps submitted to AppSource). These objects will become available for the ISV apps when we introduce ability to monetize AppSource apps in one of our future releases. 
 
 ## Earlier versions of Business Central
 
