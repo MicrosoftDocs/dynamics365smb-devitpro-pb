@@ -27,6 +27,7 @@ Represents an extension resource type in [!INCLUDE[d365fin_long_md](../developer
 |:---------------|:-------------|:----------|
 |[Microsoft.NAV.install](dynamics-microsoft-automation-extension-post.md)|none|Installs a published extension.|
 |[Microsoft.NAV.uninstall](dynamics-microsoft-automation-extension-post.md)|none|Uninstalls an extension.|
+|[Microsoft.NAV.uninstallAndDeleteExtensionData](dynamics-microsoft-automation-extension-post.md)|none|Uninstalls an extension and deletes extension data.|
 
 ## Properties
 
