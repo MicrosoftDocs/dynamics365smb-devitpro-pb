@@ -65,6 +65,8 @@ A record that is passed to the OnRun trigger of the codeunit that runs when the 
 |[Open Method \(Dialog\)](../../methods/devenv-open-method-dialog.md)|-   Dialog box is suppressed.<br />-   Dialog box text is not displayed or logged.|  
 
  Each background session has the same impact on resources as a regular user session. In addition, it takes time and resources to start each background session. Therefore, we recommend that you consider when and how you use background sessions. For example, do not use background sessions for small tasks that occur often because the cost of starting the session for each tasks is high.  
+ 
+ Starting from version 19.0, StartSession will be ignored if called during installation or upgrade of an extension. If the return value is used, it will be **false**.
 
 ## Example  
  In this example, the Cache Stress Test codeunit is a custom codeunit.  
