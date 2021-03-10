@@ -23,6 +23,7 @@ The following sections describe the triggers that are available for the differen
 - [XMLport Triggers](devenv-xmlport-triggers.md)  
 - [Query Triggers](devenv-query-triggers.md)  
 
-## See Also  
-[AL Method Reference](../methods/devenv-al-method-reference.md)  
+## See Also
+
+[AL Method Reference](../methods-auto/library.md)  
 [Properties](../properties/devenv-properties.md)  
