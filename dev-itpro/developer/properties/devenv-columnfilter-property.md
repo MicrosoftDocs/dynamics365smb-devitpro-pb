@@ -1,15 +1,14 @@
 ---
 title: "ColumnFilter Property"
-description: Explains the ColumnFilter property on query objects
-ms.author: jswymer
+ms.author: solsen
 ms.custom: na
-ms.date: 03/03/2021
+ms.date: 03/10/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.service: "dynamics365-business-central"
-author: jswymer
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
