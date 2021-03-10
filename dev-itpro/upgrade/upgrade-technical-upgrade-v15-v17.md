@@ -23,7 +23,7 @@ The process for upgrading is similar for a single-tenant and multitenant deploym
 
 #### Considerations
 
-In version 17, a number of tables have been deprecated and replaced by new tables compared to version 15. For a list of these tables and the corresponding new tables, see [Deprecated Tables](deprecated-tables.md). Code that uses the deprecated table or tables, must be rewritten to use the tables. In this article, this work is done under Task 2.
+In version 17, a number of tables have been deprecated and replaced by new tables compared to version 15. For a list of these tables and the corresponding new tables, see [Deprecated Tables](deprecated-tables.md). Code that uses the deprecated tables, must be rewritten to use the new tables. In this article, this work is done under Task 2.
 
 ## Prerequisites
 

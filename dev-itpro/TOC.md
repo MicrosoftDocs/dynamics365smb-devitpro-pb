@@ -197,18 +197,20 @@
 <!--### [Migrating from Dynamics SL](administration/migrate-data.md)-->
 <!-- end migrate -->
 ## What's New or Changed
+### [Update 17.5](whatsnew/whatsnew-update-17-5.md)
 ### [Update 17.4](whatsnew/whatsnew-update-17-4.md)
 ### [Update 17.3](whatsnew/whatsnew-update-17-3.md)
 ### [Update 17.2](whatsnew/whatsnew-update-17-2.md)
 ### [Update 17.1](whatsnew/whatsnew-update-17-1.md)
-### [Update 16.5](whatsnew/whatsnew-update-16-5.md)
-### [Update 16.4](whatsnew/whatsnew-update-16-4.md)
-### [Update 16.3](whatsnew/whatsnew-update-16-3.md)
-### [Update 16.2](whatsnew/whatsnew-update-16-2.md)
-### [Update 16.1](whatsnew/whatsnew-update-16-1.md)
-### [Update 15.4](whatsnew/whatsnew-update-15-4.md)
-### [Update 15.3](whatsnew/whatsnew-update-15-3.md)
-### [Update 15.2](whatsnew/whatsnew-update-15-2.md)
+### Updates for earlier major versions
+#### [Update 16.5](whatsnew/whatsnew-update-16-5.md)
+#### [Update 16.4](whatsnew/whatsnew-update-16-4.md)
+#### [Update 16.3](whatsnew/whatsnew-update-16-3.md)
+#### [Update 16.2](whatsnew/whatsnew-update-16-2.md)
+#### [Update 16.1](whatsnew/whatsnew-update-16-1.md)
+#### [Update 15.4](whatsnew/whatsnew-update-15-4.md)
+#### [Update 15.3](whatsnew/whatsnew-update-15-3.md)
+#### [Update 15.2](whatsnew/whatsnew-update-15-2.md)
 <!-- end admin -->
 <!-- Development-->
 # Development
@@ -236,6 +238,7 @@
 #### [Marketing Validation Checklist](developer/readiness/readiness-checklist-marketing.md)
 #### [Technical Validation Checklist](developer/devenv-checklist-submission.md)
 #### [How to Make Compelling Videos](developer/readiness/readiness-how-to-make-compelling-videos.md)
+#### [Technical Validation FAQ](developer/readiness/readiness-technical-validation-faq.md)
 #### [How to Create an Effective Sales Landing Page](developer/readiness/readiness-how-to-create-sales-landing-page.md)
 ### Getting Started with AL for On-Premises
 #### [Getting Started with C/SIDE and AL Side-by-Side for On-Premises](developer/devenv-get-started-al-for-onprem.md)
