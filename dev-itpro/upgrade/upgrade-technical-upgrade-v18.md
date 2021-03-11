@@ -106,7 +106,7 @@ In this task, you prepare the application and tenant databases for the upgrade.
 
 <!-- this i think only required coming from 16 and earlier, ahh maybe not -->
 
-The Dynamics Online Connect add-in was been deprecated in version 17. As a result, it has been removed from the DVD and is no longer installed as part of the [!INCLUDE[server](../developer/includes/server.md)]. However, when doing a technical upgrade, it is still required for the old System Application. To meet this requirement, copy the **Add-ins\Connect** folder of the version 17 server installation to the **Add-ins** folder of the version 18 server installation.
+The Dynamics Online Connect add-in was been deprecated in version 17. As a result, it has been removed from the DVD and is no longer installed as part of the [!INCLUDE[server](../developer/includes/server.md)]. However, the add-in may still be required byfor the old System Application. If your current requirement, copy the **Add-ins\Connect** folder of the version 17 server installation to the **Add-ins** folder of the version 18 server installation.
 
 ## Task 4: Convert the version 17.0 application database
 
@@ -174,6 +174,7 @@ Import-NAVServerLicense -ServerInstance <BC18 server instance> -LicenseFile "<pa
 
 For more information, see [Uploading a License File for a Specific Database](../cside/cside-upload-license-file.md#UploadtoDatabase).  
 
+<!--
 ## Task 7: Publish new system symbols
 
 Use the Publish-NAVApp cmdlet to publish the new symbols extension package. This package is called **System.app**. If you've installed the **AL Development Environment**, you find the file in the installation folder. By default, the folder path is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\180\AL Development Environment.
@@ -181,8 +182,9 @@ Use the Publish-NAVApp cmdlet to publish the new symbols extension package. This
 ```powershell
 Publish-NAVApp -ServerInstance <BC18 server instance> -Path "<path to the System.app file>" -PackageType SymbolsOnly
 ```
+-->
 
-## Task 8: Recompile published extensions
+## Task 7: Recompile published extensions
 
 Compile all published extensions against the new platform.
 
