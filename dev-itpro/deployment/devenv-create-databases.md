@@ -44,7 +44,7 @@ To create an application database, for either a single-tenant or multitenant dep
 - If you use the cmdlet with an existing database, the cmdlet modifies the existing database to include [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application tables and data. You configure a database beforehand, setting options that aren't done by the cmdlet, such as options for the data files (MDF/NDF/LDF) and their filegroups, [table partitioning](../administration/optimize-sql-data-access.md#TablePartitioning), and more.
 
 > [!TIP]
-> Starting in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1, the application database will automatically also include the platform [symbols](upgrade-overview-v15.md#Symbols).
+> Starting in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1, the application database will automatically include the platform [symbols](upgrade-overview-v15.md#Symbols).
 
 To create an application database, complete the following steps:
 
@@ -152,7 +152,7 @@ Complete the following steps to get the application up and running on your tenan
 
     See [Publishing and Installing an Extension](../developer/devenv-how-publish-and-install-an-extension-v2.md).
 
-    For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1 and later, you don't have to publish the symbols, because this has been done for you.
+    For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1 and later, you don't have to publish the symbols, because they've been automatically published for you.
 
 2. Synchronize and install extensions on the tenant.
 
