@@ -24,7 +24,7 @@ author: SusanneWindfeldPedersen
 
 A [!INCLUDE [prod_short](includes/prod_short.md)] solution contains a number of predefined permission sets that are added by Microsoft or by your software provider (ISV application you installed from AppSource). 
 
-Permission sets included with Microsoft and AppSource apps as AL objects are of type **System**. If they are included in XML format, they are of type **Extension**. <!-- Old data-sourced permissions are also tagged as System type. These are permission sets that on-premises admins/devs can add using our PowerShell cmdlets or creating and importing XML files with scope=system-->
+Permission sets included with Microsoft and AppSource apps as AL objects are of type **System**. If they are included in XML format, they are of type **Extension**. <!-- should we just remove this last sentence about XML like we talked about?--> <!-- Old data-sourced permissions are also tagged as System type. These are permission sets that on-premises admins/devs can add using our PowerShell cmdlets or creating and importing XML files with scope=system-->
 
 End-users cannot create or edit these types of permission sets or the permissions within them. However, they can copy these permission sets to define their own permission sets and permissions.
 
@@ -39,7 +39,7 @@ When developing an app, you can create new entitlement and permission set object
 - [PermissionSetExtension](devenv-permissionset-ext-object.md)
 
 > [!NOTE]  
-> In the current version of [!INCLUDE[prod_short](includes/d365fin_long_md.md)] the entitlements can only be included with Microsoft apps (enforced by the AppSource cop rules and the technical validation checks that we run for the apps submitted to AppSource). These objects will become available for the ISV apps when we introduce ability to monetize AppSource apps in one of our future releases. 
+> In the current version of [!INCLUDE[prod_short](includes/d365fin_long_md.md)] entitlements can only be included with Microsoft apps (enforced by the AppSource cop rules and the technical validation checks that we run for the apps submitted to AppSource). These objects will become available for the ISV apps when we introduce ability to monetize AppSource apps in one of our future releases. 
 
 ## Earlier versions of Business Central
 
