@@ -29,7 +29,7 @@ The process for upgrading is similar for a single-tenant and multitenant deploym
 
 1. Your current version platform is compatible with version 18.
 
-    There are several updates for each Business Central version. The update of your current version must be compatible version 18 update that you want to upgrade to. For more information, see [[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md). For example, if your solution is currently running 17.6, you can't upgrade to 18.0. You must wait until 17.7 is available.  
+    There are several updates for each Business Central version. The update of your current version must be compatible version 18 update that you want to upgrade to. For more information, see [[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md). If your solution, for example, is currently running 17.6, you can't upgrade to 18.0. You'll have to wait until 17.7 is available.  
 
 2. Disable data encryption.
 
@@ -106,14 +106,14 @@ In this task, you prepare the application and tenant databases for the upgrade.
 
 <!-- this i think only required coming from 16 and earlier, ahh maybe not -->
 
-The Dynamics Online Connect add-in was been deprecated in version 17. As a result, it has been removed from the DVD and is no longer installed as part of the [!INCLUDE[server](../developer/includes/server.md)]. However, the add-in may still be required byfor the old System Application. If your current requirement, copy the **Add-ins\Connect** folder of the version 17 server installation to the **Add-ins** folder of the version 18 server installation.
+The Dynamics Online Connect add-in was deprecated in version 17. As a result, it has been removed from the DVD and is no longer installed as part of the [!INCLUDE[server](../developer/includes/server.md)]. However, the add-in may still be required for the old System Application to upgrade. If the [!INCLUDE[server](../developer/includes/server.md)] installation for your current version includes the **Add-ins\Connect** folder, then copy the **Connect** folder to the **Add-ins** folder of the version 18 server installation.
 
-## Task 4: Convert the version 17.0 application database
+## Task 4: Convert the current application database to version 18
 
-This task runs a technical upgrade on the application database. A technical upgrade converts the database from the version 16.0 platform to the version 18.0 platform. This conversion updates the system tables of the database to the new schema (data structure). It also provides the latest platform features and performance enhancements.
+This task runs a technical upgrade on the application database. A technical upgrade converts the current database to the version 18.0 platform. This conversion updates the system tables of the database to the new schema (data structure). It also provides the latest platform features and performance enhancements.
 
 > [!IMPORTANT]
-> The conversion does not modify the application objects, but it will remove any modifications that you have made to system tables. After the conversion you will no longer be able to use it with Business Central 14.
+> The conversion does not modify the application objects, but it will remove any modifications that you have made to system tables. After the conversion you will no longer be able to use it with current version.
 
 1. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 18.0 as an administrator.
 
@@ -166,7 +166,7 @@ When you installed version 18 in **Task 1**, a version 18 [!INCLUDE[server](../d
 
 ## <a name="UploadLicense"></a> Task 6: Upload [!INCLUDE[prod_short](../developer/includes/prod_short.md)] partner license  
 
-If you have a new [!INCLUDE[prod_short](../developer/includes/prod_short.md)] partner license, make sure that it has been uploaded to the database. To upload the license, use the [Import-NAVServerLicense cmdlet](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense): 
+If you've gotten a new [!INCLUDE[prod_short](../developer/includes/prod_short.md)] partner license, make sure that it has been uploaded to the database. To upload the license, use the [Import-NAVServerLicense cmdlet](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense):
 
 ```powershell
 Import-NAVServerLicense -ServerInstance <BC18 server instance> -LicenseFile "<path to the license>"
@@ -287,7 +287,7 @@ To upgrade the control add-ins, do the following steps:
     The .zip files are located in the **Add-ins** folder of the [!INCLUDE[server](../developer/includes/server.md)] installation. There's a subfolder for each add-in. For example, the path to the Business Chart control add-in is `C:\Program Files\Microsoft Dynamics 365 Business Central\170\Service\Add-ins\BusinessChart\Microsoft.Dynamics.Nav.Client.BusinessChart.zip`.
 5. After you've imported all the new control add-in versions, restart Business Central Server instance.
 
-Alternatively, you can use the [Set-NAVAddin cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navaddin) of the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]. For example, the following commands update the control add-ins installed by default. Modify the commands to suit:
+As an alternate, you can use the [Set-NAVAddin cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navaddin) of the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]. For example, the following commands update the control add-ins installed by default. Modify the commands to suit:
 
 ```powershell
 $InstanceName = 'BC180'
