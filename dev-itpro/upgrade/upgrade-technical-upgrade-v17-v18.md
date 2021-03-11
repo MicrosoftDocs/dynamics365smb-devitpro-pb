@@ -174,14 +174,6 @@ Import-NAVServerLicense -ServerInstance <BC18 server instance> -LicenseFile "<pa
 
 For more information, see [Uploading a License File for a Specific Database](../cside/cside-upload-license-file.md#UploadtoDatabase).  
 
-## Task 7: Publish new system symbols
-
-Use the Publish-NAVApp cmdlet to publish the new symbols extension package. This package is called **System.app**. If you've installed the **AL Development Environment**, you find the file in the installation folder. By default, the folder path is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\180\AL Development Environment.
-
-```powershell
-Publish-NAVApp -ServerInstance <BC18 server instance> -Path "<path to the System.app file>" -PackageType SymbolsOnly
-```
-
 ## Task 8: Recompile published extensions
 
 Compile all published extensions against the new platform.
