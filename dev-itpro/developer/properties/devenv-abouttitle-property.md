@@ -32,7 +32,7 @@ Sets the title of the entity used in the About box for synopsis and callouts in 
 ## Syntax
 
 ```al
-AboutTitle = 'This shows up as the title of the callout in the UI';
+AboutTitle = 'This shows up as the title of the teaching tip in the UI';
 ```
 
 ## See Also  

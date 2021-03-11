@@ -32,7 +32,7 @@ Sets the text of the entity used in the About box for synopsis and callouts in t
 ## Syntax
 
 ```al
-AboutTextML = ENU = 'This text shows up as a callout in the UI to describe functionality.', DAN = 'Denne tekst vises som en callout i UI for at beskrive funktionalitet';
+AboutTextML = ENU = 'This text shows up as a teaching tip in the UI.', DAN = 'Denne tekst vises som et læringstip på brugergrænsefladen.';
 ```
 
 ## See Also  

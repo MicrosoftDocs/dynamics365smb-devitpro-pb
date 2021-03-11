@@ -32,7 +32,7 @@ Sets the title of the entity used in the About box for synopsis and callouts in 
 ## Syntax
 
 ```al
-AboutTitleML = ENU = 'The title of the callout in the UI', DAN = 'Titlen på callout i UI';
+AboutTitleML = ENU = 'The title of the teaching tip in the UI', DAN = 'Titlen på læringstippet på brugergrænsefladen';
 ```
 
 ## See Also

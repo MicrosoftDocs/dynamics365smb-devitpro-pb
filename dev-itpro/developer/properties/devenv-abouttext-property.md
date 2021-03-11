@@ -32,7 +32,7 @@ Sets the text of the entity used in the About box for synopsis and callouts in t
 ## Syntax
 
 ```al
-AboutText = 'This text shows up as a callout in the UI to describe functionality.';
+AboutText = 'This text shows up as a teaching tip in the UI.';
 ```
 
 ## See Also  
