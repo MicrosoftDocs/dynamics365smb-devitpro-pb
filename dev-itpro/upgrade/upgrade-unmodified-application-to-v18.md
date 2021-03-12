@@ -251,7 +251,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     Publish-NAVApp -ServerInstance BC180 -Path "C:\W1DVD\Applications\SalesAndInventoryForecast\Source\SalesAndInventoryForecast.app"
     ```
 
-6. Publish new versions of 3rd-party extensions.
+6. Publish new versions of 3rd-party extensions. Be sure to include new extensions that contain custom permission sets as AL objects.
 
     If you have new versions of these extensions, built on the Business Central version 18, then publish the new versions.  
 
@@ -411,7 +411,21 @@ Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Cl
 Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Client.WelcomeWizard' -PublicKeyToken 31bf3856ad364e35 -ResourceFile ($AppName = Join-Path $ServicesAddinsFolder 'WelcomeWizard\Microsoft.Dynamics.Nav.Client.WelcomeWizard.zip')
 ```
 
-At this point, the upgrade is complete, and you can open the client.
+## Install upgraded permissions sets
+
+### For permission sets as AL objects
+
+1. Publish the extension or extensions that include the permission sets.
+2. Sync the extensions with the tenant.
+3. Install the extensions on the tenant.
+
+### For permission sets as data in XML
+
+1. Open the [!INCLUDE[webclient](../developer/includes/webclient.md)].
+2. Search for and open the **Permission Sets** page.
+3. Select **Import Permission Sets**, and follow the instructions to import the XML file.
+
+For more information, see [To export and import a permission set](/dynamics365/business-central/ui-define-granular-permissions#to-export-and-import-a-permission-set)
 
 ## Post-upgrade tasks
 

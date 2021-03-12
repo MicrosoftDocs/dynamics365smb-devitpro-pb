@@ -2455,9 +2455,7 @@
 ##### [Upgrading Permission Sets](upgrade/upgrade-permission-sets.md)
 #### Technical Upgrade
 ##### [From Version 14](upgrade/upgrade-technical-upgrade-v14-v18.md)
-##### [From Version 15](upgrade/upgrade-technical-upgrade-v15-v18.md)
-##### [From Version 16](upgrade/upgrade-technical-upgrade-v16-v18.md)
-##### [From Version 17](upgrade/upgrade-technical-upgrade-v17-v18.md)
+##### [From Version 15, 16, or 17](upgrade/upgrade-technical-upgrade-v18.md)
 #### [Installing a Minor Update](upgrade/upgrading-cumulative-update-v18.md)
 ### [Some Known Issues](upgrade/known-issues.md)
 ## [Migrate Legacy Help to the Business Central Format](upgrade/migrate-help.md)
