@@ -27,7 +27,7 @@ The process for upgrading is similar for a single-tenant and multitenant deploym
 
 ## Prerequisites
 
-1. Your current version platform is compatible with version 18.
+1. Your current platform version is compatible with version 18.
 
     There are several updates for each Business Central version. The update of your current version must be compatible version 18 update that you want to upgrade to. For more information, see [[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md). If your solution, for example, is currently running 17.6, you can't upgrade to 18.0. You'll have to wait until 17.7 is available.  
 
@@ -49,6 +49,7 @@ This change introduces several breaking changes. For more information about reso
 -->
 
 <!-- $OldBCServer $NewBCServer $DBServer $DBInstance- $BCAppDB $BCTenantDB $BCTenantID-->
+
 ## <a name="Preparedb"></a> Task 1: Prepare databases
 
 In this task, you prepare the application and tenant databases for the upgrade.
