@@ -27,12 +27,11 @@ The process for upgrading is similar for a single-tenant and multitenant deploym
 
 ## Prepare and upgrade permissions and permission sets
 
-1. Prepare for upgrading permissions sets.
+Version 18 introduces the capability to define permissions sets as AL objects, instead data. Permissions sets as AL objects is now the default and recommended model for permissions. However, for now, you can choose to use the legacy model, where permissions are defined and stored as data in the database. Whichever model you choose, there are certain tasks and process you'll have to go through during upgrade.
 
-    Version 18 introduces the capability to define permissions sets as AL objects, instead data. Permissions sets as AL objects is now the default and recommended model for permissions. However, for now, you can choose to use the legacy model, where permissions are defined and stored as data in the database. Whichever model you choose, there are certain tasks and process you'll have to go through during upgrade. 
+For more information, see [Permissions Upgrade Considerations](https://review.docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-entitlements-and-permissionsets-overview?branch=permissionset#upgrade-considerations).
 
-    For more information, see []().
- 
+<!-- ## Prereuisites 
 1. Your current platform version is compatible with version 18.
 
     There are several updates for each Business Central version. The update of your current version must be compatible version 18 update that you want to upgrade to. For more information, see [[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md). If your solution, for example, is currently running 17.6, you can't upgrade to 18.0. You'll have to wait until 17.7 is available.  
@@ -44,6 +43,7 @@ The process for upgrading is similar for a single-tenant and multitenant deploym
     For more information, see [Managing Encryption and Encryption Keys](how-to-export-and-import-encryption-keys.md#encryption).
 
     Instead of disabling encryption, you can export the current encryption key, which you'll then import after upgrade. However, we recommend disabling encryption before upgrading.
+-->
 
 ## Task 1: Install version 18
 
