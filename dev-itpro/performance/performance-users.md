@@ -65,7 +65,6 @@ Newer browsers and operating systems are generally better at handling resources 
 - The time taken to load any page is also affected by the number of controls shown on the page. Users can improve performance on complex pages using these methods: 
   - By *collapsing* secondary content that may be needed only occasionally. For example, when the FactBox pane on a page is collapsed, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] saves time from attempting to process and display all the related facts.
   - By *hiding* secondary content entirely from the page. For example, hiding Role Center parts or columns that are not used by the user, department, or organization will also improve the time needed to load the page. Learn more about [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user).
-- 
 
 ## Agility of navigating and entering data
 
