@@ -2445,8 +2445,7 @@
 #### Application and Data
 ##### [From version 14 Unmodified C/AL Application](upgrade/upgrade-unmodified-application-v14-v18.md)
 ##### [From version 14 Customized C/AL Application](upgrade/upgrade-to-microsoft-base-app-v18.md)
-##### [From Version 15 Microsoft Base Application](upgrade/upgrade-unmodified-application-v15-to-v18.md)
-##### [From Version 16 Microsoft Base Application](upgrade/upgrade-unmodified-application-v16-to-v18.md)
+##### [From Version 15, 16, or 17 Microsoft Base Application](upgrade/upgrade-unmodified-application-to-v18.md)
 ##### [Convert to AL](upgrade/devenv-code-conversion.md)
 ##### Migrating Tables and Fields Between Extensions
 ###### [Overview](developer/devenv-migrate-table-fields.md)
