@@ -25,10 +25,15 @@ Use this process to upgrade any of the following versions to the [!INCLUDE[prod_
 
 The process for upgrading is similar for a single-tenant and multitenant deployment. However, there are some inherent differences. With a single-tenant deployment, the application and business data are included in the same database. While with a multitenant deployment, application code is in a separate database (the application database) than the business data (tenant). In the procedures that follow, for a single-tenant deployment, consider references to the *application database* and *tenant database* as the same database. Steps are marked as *Single-tenant only* or *Multitenant only* where applicable.
 
-## Prerequisites
+## Prepare and upgrade permissions and permission sets
 
-1. Determine permssion model.
-2. Your current platform version is compatible with version 18.
+1. Prepare for upgrading permissions sets.
+
+    Version 18 introduces the capability to define permissions sets as AL objects, instead data. Permissions sets as AL objects is now the default and recommended model for permissions. However, for now, you can choose to use the legacy model, where permissions are defined and stored as data in the database. Whichever model you choose, there are certain tasks and process you'll have to go through during upgrade. 
+
+    For more information, see []().
+ 
+1. Your current platform version is compatible with version 18.
 
     There are several updates for each Business Central version. The update of your current version must be compatible version 18 update that you want to upgrade to. For more information, see [[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md). If your solution, for example, is currently running 17.6, you can't upgrade to 18.0. You'll have to wait until 17.7 is available.  
 
@@ -55,11 +60,11 @@ The process for upgrading is similar for a single-tenant and multitenant deploym
     For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
 4. Copy Dynamics Online Connect add-in.
 
-    The Dynamics Online Connect add-in was deprecated in version 17. As a result, it's been removed from the DVD and is no longer installed as part of the [!INCLUDE[server](../developer/includes/server.md)]. However, for uograde, the add-in may still be required for the old System Application. If the [!INCLUDE[server](../developer/includes/server.md)] installation for your current version includes the **Add-ins\Connect** folder, then copy the **Connect** folder to the **Add-ins** folder of the version 18 server installation.
+    The Dynamics Online Connect add-in was deprecated in version 17. As a result, it's been removed from the DVD and is no longer installed as part of the [!INCLUDE[server](../developer/includes/server.md)]. However, for upgrade, the add-in may still be required for the old System Application. If the [!INCLUDE[server](../developer/includes/server.md)] installation for your current version includes the **Add-ins\Connect** folder, then copy the **Connect** folder to the **Add-ins** folder of the version 18 server installation.
 
 ## Task 2: Rewrite code to handle obsoleted system tables (v15 only)
 
-In version 16, several tables were removed and replaced by new tables, compared to version 15. For a list of these tables and the corresponding new tables, see [Deprecated Tables](deprecated-tables.md). Code that uses the deprecated tables, must be rewritten to use the tables. This change will typically affect your base application or the Microsoft System Application, if you're using it.
+In version 16, several system tables were removed and replaced by new tables, compared to version 15. For a list of these tables and the corresponding new tables, see [Deprecated Tables](deprecated-tables.md). Code that uses the deprecated tables, must be rewritten to use the new tables. This change will typically affect your base application or the Microsoft System Application, if you're using it.
 
 For the base application or system application extensions, you'll have to create a new version that uses the new tables. The basic steps are as follows:
 
