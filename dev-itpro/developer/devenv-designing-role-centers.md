@@ -97,10 +97,10 @@ The following table describes some of the most common parts for Role Centers, as
 
 Role Centers that have many parts that process data from different sources can degrade performance. To improve responsiveness and the time it takes to sign in to the Role Center, [!INCLUDE[prod_short](includes/prod_short.md)] 2021 release wave 1 (and later) optimizes the sequence in which content is loaded. The sequence is as follows:
 
-1. Content directly on the Role Center page object is loaded first, and users can immediately begin interacting with it. Examples of such content are the navigation menu and actions.
-2. Parts are loaded next, where parts are loaded one by one from top to bottom.
-3. Parts having the Visible property evaluate to false won't be loaded.
-4. Parts that aren't within view are only loaded when the user scrolls them into view.
+1. Content directly on the Role Center page object is loaded first, and users can immediately interact with it. Examples of such content are the navigation menu and actions.
+2. Parts are loaded one by one from top to bottom.
+3. Parts for which the [Visible property](properties/devenv-visible-property.md) evaluates to `false` won't be loaded.
+4. Parts that aren't in view are loaded when the user scrolls to display them.
 
 Here are some practical tips to help you make the most of this optimization:
 
