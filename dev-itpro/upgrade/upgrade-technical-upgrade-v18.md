@@ -27,11 +27,12 @@ The process for upgrading is similar for a single-tenant and multitenant deploym
 
 ## Prerequisites
 
-1. Your current platform version is compatible with version 18.
+1. Determine permssion model.
+2. Your current platform version is compatible with version 18.
 
     There are several updates for each Business Central version. The update of your current version must be compatible version 18 update that you want to upgrade to. For more information, see [[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md). If your solution, for example, is currently running 17.6, you can't upgrade to 18.0. You'll have to wait until 17.7 is available.  
 
-2. Disable data encryption.
+3. Disable data encryption.
 
     If the current server instance uses data encryption, disable it. You can enable it again after upgrading.
 
@@ -39,18 +40,58 @@ The process for upgrading is similar for a single-tenant and multitenant deploym
 
     Instead of disabling encryption, you can export the current encryption key, which you'll then import after upgrade. However, we recommend disabling encryption before upgrading.
 
-<!--
-## Task 2: Rewrite code for obsoleted system tables
+## Task 1: Install version 18
 
-In version 16, a number of tables have been deprecated and replaced by new tables. You must rewrite code that uses the deprecated tables to use the new tables. For a list of the deprecated tables and new tables, see [Deprecated Tables](deprecated-tables.md).
+1. Choose a version 18 that's compatible with your current platform version.
 
-<!--
-This change introduces several breaking changes. For more information about resolving the changes, see [Breaking Changes](https://github.com/microsoft/ALAppExtensions/blob/master/BREAKINGCHANGES.md). To complete this task, you modify your base application AL source, and compile a new extension.
--->
+    There are several updates for each Business Central version. The update of your current version must be compatible version 18 update that you want to upgrade to. For more information, see [[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md). If your solution, for example, is currently running 17.6, you can't upgrade to 18.0. You'll have to wait until 17.7 is available. 
 
-<!-- $OldBCServer $NewBCServer $DBServer $DBInstance- $BCAppDB $BCTenantDB $BCTenantID-->
+2. Before you install version 18, it can be useful to create desktop shortcuts to the version 16.0 tools, such as the [!INCLUDE[admintool](../developer/includes/admintool.md)], [!INCLUDE[adminshell](../developer/includes/adminshell.md)], and [!INCLUDE[devshell](../developer/includes/devshell.md)] because the Start menu items for these tools will be replaced with the version 17.0 tools.
 
-## <a name="Preparedb"></a> Task 1: Prepare databases
+3. Install version 18 components.
+
+    You'll keep version 17 installed for now. When you install version 18, you must either specify different port numbers for components (like the [!INCLUDE[server](../developer/includes/server.md)] instance and web services) or stop the version 17.0 [!INCLUDE[server](../developer/includes/server.md)] instance before you run the installation. Otherwise, you'll get an error that the [!INCLUDE[server](../developer/includes/server.md)] failed to install.
+
+    For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
+4. Copy Dynamics Online Connect add-in.
+
+    The Dynamics Online Connect add-in was deprecated in version 17. As a result, it's been removed from the DVD and is no longer installed as part of the [!INCLUDE[server](../developer/includes/server.md)]. However, for uograde, the add-in may still be required for the old System Application. If the [!INCLUDE[server](../developer/includes/server.md)] installation for your current version includes the **Add-ins\Connect** folder, then copy the **Connect** folder to the **Add-ins** folder of the version 18 server installation.
+
+## Task 2: Rewrite code to handle obsoleted system tables (v15 only)
+
+In version 16, several tables were removed and replaced by new tables, compared to version 15. For a list of these tables and the corresponding new tables, see [Deprecated Tables](deprecated-tables.md). Code that uses the deprecated tables, must be rewritten to use the tables. This change will typically affect your base application or the Microsoft System Application, if you're using it.
+
+For the base application or system application extensions, you'll have to create a new version that uses the new tables. The basic steps are as follows:
+
+1. Create AL project in Visual Studio Code for the system and/or base application.
+
+    If you're using the Microsoft System Application, start with this project first.
+
+2. Include the source files of the current version in the project.
+
+3. Copy the version 18 System symbols (System.app) file to the **.alpackages** folder of the project.
+
+    You'll find the System.app file on the installation media (DVD) for version 18 or in the **AL Development Environment** installation folder. By default, the folder is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\180\AL Development Environment.
+
+    For the base application, also include the extension package (.app) for the new version of the Microsoft System Application, if you're using it.
+
+4. Modify the app.json:
+
+    - Increase `"version"` number. You have to increase the version so you can run a data upgrade later in this process.
+    - Set `"runtime"` to `7.0`
+    - Set `"platform"` to `18.0.0.0`
+    - Set `"target"` to `OnPrem`
+
+    For more information about the app.json file, see [App.json file](../developer/devenv-json-files.md#Appjson).
+5. In the **dotnet.al** files in the project, find and delete all instances of `Version = '15.0.0.0';` in **Microsoft.Dynamics.Nav** and  **Microsoft.Dynamics.Framework** assembly declarations.
+
+6. Rewrite code that references the deprecated table to reference the new tables.
+
+    Try to build the project first to see what errors you get. Then, resolve the errors. <!-- For help about most of the errors, see [Rewriting Code for Breaking Changes](deprecated-tables-fix-compile-errors.md).-->
+
+7. Compile and build the new version of the extension.
+
+## <a name="Preparedb"></a> Task 3: Prepare databases
 
 In this task, you prepare the application and tenant databases for the upgrade.
 
@@ -61,7 +102,16 @@ In this task, you prepare the application and tenant databases for the upgrade.
 
     You'll need these packages later to re-publish and install the extensions again.
 -->
-2. (Single-tenant only) Uninstall all extensions from the old tenants.
+
+2. Disable data encryption.
+
+    If the current server instance uses data encryption, disable it. You can enable it again after upgrading.
+
+    For more information, see [Managing Encryption and Encryption Keys](how-to-export-and-import-encryption-keys.md#encryption).
+
+    Instead of disabling encryption, you can export the current encryption key, which you'll then import after upgrade. However, we recommend disabling encryption before upgrading.
+
+3. (Single-tenant only) Uninstall all extensions from the old tenants.
 
     Run the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 17.0 as an administrator. Use the [Uninstall-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp) cmdlet to uninstall an extension. For example, together with the Get-NAVAppInfo cmdlet, you can uninstall all extensions with a single command:
 
@@ -69,7 +119,7 @@ In this task, you prepare the application and tenant databases for the upgrade.
     Get-NAVAppInfo -ServerInstance <BC17 server instance> | % { Uninstall-NAVApp -ServerInstance <BC17 server instance> -Name $_.Name -Version $_.Version }
     ```
 
-3. Unpublish all system, test, and application symbols.
+4. Unpublish all system, test, and application symbols.
 
     To unpublish symbols, use the Unpublish-NAVAPP cmdlet.  You can unpublish all symbols by using the Get-NAVAppInfo cmdlet with the `-SymbolsOnly` switch as follows:
 
@@ -79,7 +129,7 @@ In this task, you prepare the application and tenant databases for the upgrade.
 
     [What are symbols?](upgrade-overview-v15.md#Symbols)  
 
-4. (Multitenant only) Dismount the tenants from the application server instance.
+5. (Multitenant only) Dismount the tenants from the application server instance.
 
     To dismount a tenant, use the [Dismount-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/dismount-navtenant) cmdlet:
 
@@ -87,27 +137,11 @@ In this task, you prepare the application and tenant databases for the upgrade.
     Dismount-NAVTenant -ServerInstance <BC17 server instance> -Tenant <tenant ID>
     ```
 
-5. Stop the server instance.
+6. Stop the server instance.
 
     ```powershell
     Stop-NAVServerInstance -ServerInstance <BC17 server instance>
     ```
-
-## Task 2: Install version 18
-
-1. Before you install version 18, it can be useful to create desktop shortcuts to the version 16.0 tools, such as the [!INCLUDE[admintool](../developer/includes/admintool.md)], [!INCLUDE[adminshell](../developer/includes/adminshell.md)], and [!INCLUDE[devshell](../developer/includes/devshell.md)] because the Start menu items for these tools will be replaced with the version 17.0 tools.
-
-2. Install version 18 components.
-
-    You'll keep version 17 installed for now. When you install version 18, you must either specify different port numbers for components (like the [!INCLUDE[server](../developer/includes/server.md)] instance and web services) or stop the version 17.0 [!INCLUDE[server](../developer/includes/server.md)] instance before you run the installation. Otherwise, you'll get an error that the [!INCLUDE[server](../developer/includes/server.md)] failed to install.
-
-    For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
-
-## Task 3: Copy Dynamics Online Connect add-in
-
-<!-- this i think only required coming from 16 and earlier, ahh maybe not -->
-
-The Dynamics Online Connect add-in was deprecated in version 17. As a result, it has been removed from the DVD and is no longer installed as part of the [!INCLUDE[server](../developer/includes/server.md)]. However, the add-in may still be required for the old System Application to upgrade. If the [!INCLUDE[server](../developer/includes/server.md)] installation for your current version includes the **Add-ins\Connect** folder, then copy the **Connect** folder to the **Add-ins** folder of the version 18 server installation.
 
 ## Task 4: Convert the current application database to version 18
 
