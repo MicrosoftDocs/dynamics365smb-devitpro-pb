@@ -27,7 +27,7 @@ Use this scenario if you have one of the following versions that uses the Micros
 
 The process for upgrading the similar for a single-tenant and multitenant deployment. However, there are some inherent differences. With a single-tenant deployment, the application code and business data are in the same database. In a multitenant deployment, application code is in a separate database (the application database) than the business data (tenant). In the procedures that follow, for a single-tenant deployment, consider references to the *application database* and *tenant database* as the same database. Steps are marked as *Single-tenant only* or *Multitenant only* where applicable.
 
-## Prepare and upgrade permissions and permission sets
+## Task 1: Prepare and upgrade permissions and permission sets
 
 Version 18 introduces the capability to define permissions sets as AL objects, instead data. Permissions sets as AL objects is now the default and recommended model for permissions. However, for now, you can choose to use the legacy model, where permissions are defined and stored as data in the database. Whichever model you choose, there are certain tasks and process you'll have to go through during upgrade.
 
@@ -49,7 +49,7 @@ For more information, see [Permissions Upgrade Considerations](https://review.do
 
     Instead of disabling encryption, you can export the current encryption key, which you'll then import after upgrade. However, we recommend disabling encryption before upgrading.
 -->
-## Task 1: Install version 18
+## Task 2: Install version 18
 
 1. Download the latest available update for Business Central 2020 (version 18) that is compatible with your current version.
 
@@ -63,7 +63,7 @@ For more information, see [Permissions Upgrade Considerations](https://review.do
 
     For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
 
-## Task 1: Prepare the existing databases
+## Task 3: Prepare the existing databases
 
 1. Make backup of the databases.
 2. Disable data encryption.
@@ -130,7 +130,7 @@ For more information, see [Permissions Upgrade Considerations](https://review.do
     Stop-NAVServerInstance -ServerInstance <server instance name>
     ```
 
-## Task 3: Convert the database to version 18
+## Task 4: Convert the database to version 18
 
 This task runs a technical upgrade on the application database to convert it to the version 18 platform. The conversion updates the system tables of the database to the new schema (data structure). It provides the latest platform features and performance enhancements.
 
@@ -152,7 +152,7 @@ This task runs a technical upgrade on the application database to convert it to 
     Collation           :
     ```
 
-## Task 4: Configure version 18 server
+## Task 5: Configure version 18 server
 
 When you installed version 18 in **Task 2**, a version 18 [!INCLUDE[server](../developer/includes/server.md)] instance was created. In this task, you change server configuration settings that are required to complete the upgrade. Some of the changes are only required for version 16 to version 17 upgrade and can be reverted after you complete the upgrade.
 
@@ -182,7 +182,7 @@ When you installed version 18 in **Task 2**, a version 18 [!INCLUDE[server](../d
     Restart-NAVServerInstance -ServerInstance <server instance name>
     ```
 
-## Task 5: Import version 18 license
+## Task 6: Import version 18 license
 
 1. Use the [Import-NAVServerLicense](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense) to upload the version 18 license to the database. 
 
@@ -196,7 +196,7 @@ When you installed version 18 in **Task 2**, a version 18 [!INCLUDE[server](../d
     Restart-NAVServerInstance -ServerInstance <server instance name>
     ```
 
-## Task 6: Publish extensions
+## Task 7: Publish extensions
 
 In this task, you'll publish the extensions. As minimum, you publish the new base application and system application extensions from the installation media (DVD). You also publish new versions of any Microsoft extensions and third-party extensions that were used on your old deployment.
 
@@ -275,7 +275,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
 
     Restart the [!INCLUDE[server](../developer/includes/server.md)] when completed.
 
-## Task 7: Synchronize tenant
+## Task 8: Synchronize tenant
 
 You'll synchronize the tenant's database schema with any schema changes in the application database and extensions. If you have a multitenant deployment, do these steps for each tenant.
 
@@ -336,7 +336,7 @@ You'll synchronize the tenant's database schema with any schema changes in the a
     Sync-NAVApp -ServerInstance BC150 -Tenant default -Name "<extension name>" -Version <extension version>
     ```
 
-## Task 8: Upgrade data
+## Task 9: Upgrade data
 
 In this task, you run a data upgrade for extensions.
 
@@ -371,7 +371,7 @@ Start-NAVDataUpgrade -ServerInstance <server instance name> -Tenant <tenant ID> 
 
 This command will upgrade and install the extensions on the tenant.
 
-## Task 9: Install 3rd-party extensions
+## Task 10: Install 3rd-party extensions
 
 Complete this task to install third-party extensions for which a new version wasn't published. For each extension, run the [Install-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp):
 
@@ -379,7 +379,7 @@ Complete this task to install third-party extensions for which a new version was
 Install-NAVApp -ServerInstance <server instance name> -Name <extension name> -Version <extension version>
 ```
 
-## Task 10: <a name="JSaddins"></a>Upgrade control add-ins
+## Task 11: <a name="JSaddins"></a>Upgrade control add-ins
 
 The [!INCLUDE[server](../developer/includes/server.md)] installation includes new versions of the Microsoft-provided Javascript-based control add-ins, like Microsoft.Dynamics.Nav.Client.BusinessChart, Microsoft.Dynamics.Nav.Client.VideoPlayer, and more. If your solution uses any of these control add-ins, upgrade them to the latest version.
 
@@ -411,7 +411,7 @@ Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Cl
 Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Client.WelcomeWizard' -PublicKeyToken 31bf3856ad364e35 -ResourceFile ($AppName = Join-Path $ServicesAddinsFolder 'WelcomeWizard\Microsoft.Dynamics.Nav.Client.WelcomeWizard.zip')
 ```
 
-## Install upgraded permissions sets
+## Task 12: Install upgraded permissions sets
 
 ### For permission sets as AL objects
 
