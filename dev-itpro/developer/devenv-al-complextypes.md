@@ -73,7 +73,7 @@ The returned value does not have to be used in an assignment statement. It can b
 DoSomethingWithSales(GetCustomerByName('spo').GetSalesLCY()); 
 ```
  
-This is not only for user-defined types like records, codeunits, etc., but also for built-in types. For example, when using the HttpClient type, it is possible to write code like illustrated below.
+This is not only for user-defined types like records, codeunits, etc., but also for built-in types. For example, when using the [HttpClient Data Type](methods-auto/httpclient/httpclient-data-type.md), it is possible to write code like illustrated below.
 
 ```al
 
@@ -120,4 +120,5 @@ end;
 [Programming in AL](devenv-programming-in-al.md)  
 [AL Simple Statements](devenv-al-simple-statements.md)  
 [Directives in AL](directives/devenv-directives-in-al.md)  
-[AL Essential Methods](devenv-essential-al-methods.md)
+[AL Essential Methods](devenv-essential-al-methods.md)  
+[HttpClient Data Type](methods-auto/httpclient/httpclient-data-type.md)
