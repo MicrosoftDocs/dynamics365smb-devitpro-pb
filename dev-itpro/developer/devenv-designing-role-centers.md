@@ -99,8 +99,9 @@ Role Centers that have many parts that process data from different sources can d
 
 1. Content directly on the Role Center page object is loaded first, and users can immediately interact with it. Examples of such content are the navigation menu and actions.
 2. Parts are loaded one by one from top to bottom.
-3. Parts for which the [Visible property](properties/devenv-visible-property.md) evaluates to `false` won't be loaded.
-4. Parts that aren't in view are loaded when the user scrolls to display them.
+
+   Parts on which the [Visible property](properties/devenv-visible-property.md) evaluates to `false` won't be loaded.
+3. Parts that aren't in view are loaded when the user scrolls to display them.
 
 Here are some practical tips to help you make the most of this optimization:
 
