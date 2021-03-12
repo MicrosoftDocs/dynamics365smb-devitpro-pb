@@ -61,7 +61,7 @@ Newer browsers and operating systems are generally better at handling resources 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] has numerous mechanisms that make the user interface more responsive and help pages load faster. For example:
 - List pages load records in small batches while the user scrolls through the list, allowing it to scale to very large tables.
 - The overall structure of a page (but not business data) is cached on the client device after a page is accessed the first time.
-- Parts on the Role Center and FactBox pane load on-demand. This behavior means that only parts that are currently in view are loaded&mdash; the other parts are loaded only if you scroll to them.
+- Parts on the Role Center and in the FactBox pane load on-demand. This behavior means that only parts that are currently in view are loaded&mdash; the other parts are loaded only if you scroll to them.
 - The time taken to load any page is also affected by the number of controls shown on the page. Users can improve performance on complex pages using these methods: 
   - By *collapsing* secondary content that may be needed only occasionally. For example, when the FactBox pane on a page is collapsed, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] saves time from attempting to process and display all the related facts.
   - By *hiding* secondary content entirely from the page. For example, hiding Role Center parts or columns that are not used by the user, department, or organization will also improve the time needed to load the page. Learn more about [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user).
