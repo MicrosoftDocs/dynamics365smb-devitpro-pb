@@ -27,7 +27,7 @@ When upgrading from previous version, decide which model you want to use. Then, 
 
 When you upgrade, the existing permission sets and permissions stored as data aren't affected during upgrade. They'll exist as before in the database even after upgrade. Included are permissions sets from Microsoft, partners, extensions, and user-defined permission sets. If you have customized Microsoft permission sets, or made your own from copies, you'll probably want to keep them up to date with the latest from Business Central.
 
-1. From the old [!INCLUDE [prod_short](includes/prod_short.md)] version, open the **Permissions Sets** page and export the **System** permission sets as XML to a file.
+1. From the old [!INCLUDE [prod_short](../developer/includes/prod_short.md)] version, open the **Permissions Sets** page and export the **System** permission sets as XML to a file.
 
     You can export all permission sets. But you're mostly interested in the Microsoft permission sets and custom permission sets based on Microsoft permission sets.  
 
@@ -41,15 +41,15 @@ When you upgrade, the existing permission sets and permissions stored as data ar
 4. Using a file comparison tool, compare the to XML files and merge the necessary changes into a single XML file.
 
     Now you have upgraded permissions as XML.
-5. Upgrade your [!INCLUDE [prod_short](includes/prod_short.md)] to version 18.
+5. Upgrade your [!INCLUDE [prod_short](../developer/includes/prod_short.md)] to version 18.
 
     > [!IMPORTANT]
     > If you have a multitenant deployment, make sure the application database is writeable.
 
-6. If not already done during upgrade, set the `UsePermissionSetsFromExtensions` parameter of [!INCLUDE [server](includes/server.md)] instance (version 18) to `false`.
+6. If not already done during upgrade, set the `UsePermissionSetsFromExtensions` parameter of [!INCLUDE [server](../developer/includes/server.md)] instance (version 18) to `false`.
 
     > [!NOTE]
-    >  Restart the [!INCLUDE [server](includes/server.md)] instance.
+    >  Restart the [!INCLUDE [server](../developer/includes/server.md)] instance.
 7. From the version 18 client, open the **Permissions Sets** page, and import the permission sets from the newly created XML file.
 
 ### Start using permission sets defined as AL objects
@@ -61,13 +61,13 @@ If you've customized Microsoft permission sets, it's important to know what you'
     You identify the customizations by comparing the old permission sets with the new permission sets. There are two ways to compare the permission sets:  
 
     **Compare as XML**
-    1. From your old [!INCLUDE [prod_short](includes/prod_short.md)] version, export the customized Microsoft permissions sets to XML.
+    1. From your old [!INCLUDE [prod_short](../developer/includes/prod_short.md)] version, export the customized Microsoft permissions sets to XML.
     2. Connect to a demonstration database of previous version, then export the Microsoft permission sets to XML.
     3. Compare the XML files.
 
     **Compare as AL objects**
 
-    [!INCLUDE [server](includes/server.md)] provides a Windows PowerShell script that converts databased permission sets to AL objects. 
+    [!INCLUDE [server](../developer/includes/server.md)] provides a Windows PowerShell script that converts databased permission sets to AL objects. 
 
     1. Go to [Business Central Tech Samples](https://github.com/microsoft/BCTech/tree/master/samples/PermissionSetConversion) on GitHub.
     2. Download the PowerShell script called **Convert-PermissionSets.psm1** to a folder on your computer.
@@ -81,7 +81,7 @@ If you've customized Microsoft permission sets, it's important to know what you'
 
        Replace `C:\folderpath\` with the folder path to the file.
 
-    5. Run the following command to export permission sets from the current [!INCLUDE [prod_short](includes/prod_short.md)] database to AL object files.
+    5. Run the following command to export permission sets from the current [!INCLUDE [prod_short](../developer/includes/prod_short.md)] database to AL object files.
 
        ```powershell
        Convert-PermissionSets -DatabaseServer server_name -DatabaseName BC_database -Destination "C:\new_permission_sets"
@@ -90,7 +90,7 @@ If you've customized Microsoft permission sets, it's important to know what you'
        Replace:
 
        - `server_name` with the name of the SQL Server computer, like localhost if the server is on the computer you're working with.
-       - `BC_database` with the name of the [!INCLUDE [prod_short](includes/prod_short.md)] application database.
+       - `BC_database` with the name of the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] application database.
        -  `C:\new_permission_sets` with the path to the folder where you want to store the converted permission sets
 
        This command create a separate AL file for each permission set. The file names have the format *name*.permissionset.al. 
