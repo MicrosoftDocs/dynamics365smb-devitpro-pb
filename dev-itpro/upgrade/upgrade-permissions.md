@@ -52,7 +52,7 @@ When you upgrade, the existing permission sets and permissions stored as data ar
     >  Restart the [!INCLUDE [server](../developer/includes/server.md)] instance.
 7. From the version 18 client, open the **Permissions Sets** page, and import the permission sets from the newly created XML file.
 
-### Start using permission sets defined as AL objects
+## Start using permission sets defined as AL objects
 
 If you've customized Microsoft permission sets, it's important to know what you've changed in these permission sets. Knowing these changes will let you reimplement the permission sets as new AL permission set objects or permission set extension objects.
 
@@ -84,14 +84,14 @@ If you've customized Microsoft permission sets, it's important to know what you'
     5. Run the following command to export permission sets from the current [!INCLUDE [prod_short](../developer/includes/prod_short.md)] database to AL object files.
 
        ```powershell
-       Convert-PermissionSets -DatabaseServer server_name -DatabaseName BC_database -Destination "C:\new_permission_sets"
+       Convert-PermissionSets -DatabaseServer server_name -DatabaseName BC_database -Destination "C:\permission_sets_folder"
        ```
 
        Replace:
 
        - `server_name` with the name of the SQL Server computer, like localhost if the server is on the computer you're working with.
        - `BC_database` with the name of the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] application database.
-       -  `C:\new_permission_sets` with the path to the folder where you want to store the converted permission sets
+       -  `C:\permission_sets_folder` with the path to the folder where you want to store the converted permission sets
 
        This command create a separate AL file for each permission set. The file names have the format *name*.permissionset.al. 
     6. Compare the exported AL objects with permission set objects from the version 18 to determine the differences  
