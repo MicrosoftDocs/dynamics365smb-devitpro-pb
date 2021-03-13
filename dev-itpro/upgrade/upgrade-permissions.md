@@ -71,7 +71,7 @@ If you've customized Microsoft permission sets, it's important to know what you'
 
     1. Go to [Business Central Tech Samples](https://github.com/microsoft/BCTech/tree/master/samples/PermissionSetConversion) on GitHub.
     2. Download the PowerShell script called **Convert-PermissionSets.psm1** to a folder on your computer.
-    3. Create a folder whee you want to store the converted permission sets.
+    3. Create a folder where you want to store the converted permission sets.
     4. Start Windows PowerShell as an administrator.
     5. From the command prompt, run the following command import the Convert-PermissionSets.psm1:
 
@@ -113,7 +113,7 @@ If you've customized Microsoft permission sets, it's important to know what you'
 
 4. Include the new AL permission sets and permission set extension objects into an AL project and compile the extension package.
 
-5. Publish and install the extension on your version 18 deployment.e
+5. Publish and install the extension on your version 18 deployment.
 
 ## See Also  
 
