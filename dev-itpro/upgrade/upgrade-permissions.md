@@ -81,7 +81,7 @@ If you've customized Microsoft permission sets, it's important to know what you'
 
        Replace `C:\folderpath\` with the folder path to the file.
 
-    5. Run the following command to export permission sets from the current [!INCLUDE [prod_short](../developer/includes/prod_short.md)] database to AL object files.
+    6. Run the Convert-PermissionSets cmdlet to export permission sets from the current [!INCLUDE [prod_short](../developer/includes/prod_short.md)] database to AL permission set object files:
 
        ```powershell
        Convert-PermissionSets -DatabaseServer server_name -DatabaseName BC_database -Destination "C:\permission_sets_folder"
@@ -91,29 +91,35 @@ If you've customized Microsoft permission sets, it's important to know what you'
 
        - `server_name` with the name of the SQL Server computer, like localhost if the server is on the computer you're working with.
        - `BC_database` with the name of the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] application database.
-       -  `C:\permission_sets_folder` with the path to the folder where you want to store the converted permission sets
+       - `C:\permission_sets_folder` with the path to the folder where you want to store the converted permission sets
 
-       This command create a separate AL file for each permission set. The file names have the format *name*.permissionset.al. 
-    6. Compare the exported AL objects with permission set objects from the version 18 to determine the differences  
+       This command creates a separate AL file for each permission set. The file names have the format *name*.permissionset.al.
+
+    7. Compare the exported AL permission set files with permission set files from the version 18 to determine the differences.
+
+      Find the new AL permission set files are on the installation media (DVD) in the **Applications\BaseApp\Source\Base Application.Source.zip\Permissions** folder.
 
     Now you have the list of changes that you made compared to the version 18 permission sets from Microsoft.
 
 2. Create new AL objects based on the change list.
 
-   |If the change|Then|
-   |----|----|
-   |Only added new permissions to the existing permission sets|Create AL permission set extension objects with the added permissions.|
-   |Removed or changed permissions in objects|<ol><li>Find the AL objects from Microsoft that implement the permission sets that you modified in the previous version.</li><li>Make copies of these AL objects</li><li>Modify the copies to include the customizations you want.</li></ol> |
+    Use the following table as a guide for permission set.
 
-3. Convert your other custom permission sets to new AL objects.
+   |If the change|Then|See...|
+   |----|----|---|
+   |Only added new permissions to an existing permission set|Create an AL permission set extension object with the added permissions.|[Permission Set Extension Object](https://review.docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-permissionset-ext-object?branch=permissionset)|
+   |Removed or changed permissions in a permission set|<ol><li>Make a copy of version 18 AL permission set file.</li><li>Modify the copy to include the customizations you want.</li></ol> |[Permission Set Extension Object](https://review.docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-permissionset-ext-object?branch=permissionset)
 
-    1. Get the PowerShell script called Convert-PermissionSets.psm1 from [Business Central Tech Samples](https://github.com/microsoft/BCTech/tree/master/samples/PermissionSetConversion) on GitHub.
-    2. Connect to the old version's database.
-    3. Run the script to generate AL objects.
+3. Create an AL project for version 18. Include the permission set files that you created in step 2 and other custom permission sets generated in step 1.6.
 
-4. Include the new AL permission sets and permission set extension objects into an AL project and compile the extension package.
+4. Compile and build the extension package.
 
-5. Publish and install the extension on your version 18 deployment.
+5. Upgrade your [!INCLUDE [prod_short](../developer/includes/prod_short.md)] to version 18.
+
+    > [!IMPORTANT]
+    > If you have a multitenant deployment, make sure the application database is writeable.
+
+6. Publish and install the extension on your version 18 deployment.
 
 ## See Also  
 
