@@ -2451,7 +2451,7 @@
 ###### [Overview](developer/devenv-migrate-table-fields.md)
 ###### [Moving Tables and Fields Down](developer/devenv-migrate-table-fields-down.md)
 ###### [Moving Tables and Fields Up](developer/devenv-migrate-table-fields-up.md)
-##### [Upgrading Permission Sets](upgrade/upgrade-permission-sets.md)
+##### [Upgrading Permission Sets](upgrade/upgrade-permissions.md)
 #### Technical Upgrade
 ##### [From Version 14](upgrade/upgrade-technical-upgrade-v14-v18.md)
 ##### [From Version 15, 16, or 17](upgrade/upgrade-technical-upgrade-v18.md)
