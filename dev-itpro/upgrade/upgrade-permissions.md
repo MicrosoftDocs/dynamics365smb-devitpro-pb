@@ -13,7 +13,7 @@ ms.service: "dynamics365-business-central"
 ---
 # Upgrading Permissions Sets and Permissions
 
-[!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1 (v18) introduced a new model for permissions. In previous versions, permission sets and permissions are only defined in data, which means they're stored in the tables of the application and tenant databases. Permission sets and permissions can now be defined in AL code. They're created in extensions by using the `permissionset` and `permissionsetextension` objects. See [Entitlements and Permissions](https://review.docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-entitlements-and-permissionsets-overview?branch=permissionset) to learn more. This change has implications on upgrade as discussed in this article.
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1 (v18) introduced a new model for permissions. In previous versions, permission sets and permissions are only defined in data, which means they're stored in the tables of the application and tenant databases. Permission sets and permissions can now be defined in AL code. They're created by using the `permissionset` and `permissionsetextension` objects, and packaged in extensions. See [Entitlements and Permissions](https://review.docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-entitlements-and-permissionsets-overview?branch=permissionset) to learn more. This change has implications on upgrade as discussed in this article.
 
 ## Overview
 
