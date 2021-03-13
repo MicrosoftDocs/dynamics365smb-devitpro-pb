@@ -25,7 +25,24 @@ Use this process to upgrade any of the following versions to the [!INCLUDE[prod_
 
 The process for upgrading is similar for a single-tenant and multitenant deployment. However, there are some inherent differences. With a single-tenant deployment, the application and business data are included in the same database. While with a multitenant deployment, application code is in a separate database (the application database) than the business data (tenant). In the procedures that follow, for a single-tenant deployment, consider references to the *application database* and *tenant database* as the same database. Steps are marked as *Single-tenant only* or *Multitenant only* where applicable.
 
-## Prepare and upgrade permissions and permission sets
+## Task 1: Install version 18
+
+1. Choose a version 18 that's compatible with your current platform version.
+
+    There are several updates for each Business Central version. The update of your current version must be compatible version 18 update that you want to upgrade to. For more information, see [[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md). If your solution, for example, is currently running 17.6, you can't upgrade to 18.0. You'll have to wait until 17.7 is available. 
+
+2. Before you install version 18, it can be useful to create desktop shortcuts to the version 16.0 tools, such as the [!INCLUDE[admintool](../developer/includes/admintool.md)], [!INCLUDE[adminshell](../developer/includes/adminshell.md)], and [!INCLUDE[devshell](../developer/includes/devshell.md)] because the Start menu items for these tools will be replaced with the version 17.0 tools.
+
+3. Install version 18 components.
+
+    You'll keep version 17 installed for now. When you install version 18, you must either specify different port numbers for components (like the [!INCLUDE[server](../developer/includes/server.md)] instance and web services) or stop the version 17.0 [!INCLUDE[server](../developer/includes/server.md)] instance before you run the installation. Otherwise, you'll get an error that the [!INCLUDE[server](../developer/includes/server.md)] failed to install.
+
+    For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
+4. Copy Dynamics Online Connect add-in.
+
+    The Dynamics Online Connect add-in was deprecated in version 17. As a result, it's been removed from the DVD and is no longer installed as part of the [!INCLUDE[server](../developer/includes/server.md)]. However, for upgrade, the add-in may still be required for the old System Application. If the [!INCLUDE[server](../developer/includes/server.md)] installation for your current version includes the **Add-ins\Connect** folder, then copy the **Connect** folder to the **Add-ins** folder of the version 18 server installation.
+
+## Task 2: Prepare and upgrade permissions and permission sets
 
 Version 18 introduces the capability to define permissions sets as AL objects, instead of as data. Permissions sets as AL objects is now the default and recommended model for defining permissions. However for now, you can choose to use the legacy model, where permissions are defined and stored as data in the database. Whichever model you choose, there are certain tasks and process you'll have to go through during upgrade.
 
@@ -45,24 +62,7 @@ For more information, see [Permissions Upgrade Considerations](https://review.do
     Instead of disabling encryption, you can export the current encryption key, which you'll then import after upgrade. However, we recommend disabling encryption before upgrading.
 -->
 
-## Task 1: Install version 18
-
-1. Choose a version 18 that's compatible with your current platform version.
-
-    There are several updates for each Business Central version. The update of your current version must be compatible version 18 update that you want to upgrade to. For more information, see [[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md). If your solution, for example, is currently running 17.6, you can't upgrade to 18.0. You'll have to wait until 17.7 is available. 
-
-2. Before you install version 18, it can be useful to create desktop shortcuts to the version 16.0 tools, such as the [!INCLUDE[admintool](../developer/includes/admintool.md)], [!INCLUDE[adminshell](../developer/includes/adminshell.md)], and [!INCLUDE[devshell](../developer/includes/devshell.md)] because the Start menu items for these tools will be replaced with the version 17.0 tools.
-
-3. Install version 18 components.
-
-    You'll keep version 17 installed for now. When you install version 18, you must either specify different port numbers for components (like the [!INCLUDE[server](../developer/includes/server.md)] instance and web services) or stop the version 17.0 [!INCLUDE[server](../developer/includes/server.md)] instance before you run the installation. Otherwise, you'll get an error that the [!INCLUDE[server](../developer/includes/server.md)] failed to install.
-
-    For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
-4. Copy Dynamics Online Connect add-in.
-
-    The Dynamics Online Connect add-in was deprecated in version 17. As a result, it's been removed from the DVD and is no longer installed as part of the [!INCLUDE[server](../developer/includes/server.md)]. However, for upgrade, the add-in may still be required for the old System Application. If the [!INCLUDE[server](../developer/includes/server.md)] installation for your current version includes the **Add-ins\Connect** folder, then copy the **Connect** folder to the **Add-ins** folder of the version 18 server installation.
-
-## Task 2: Rewrite code to handle obsoleted system tables (v15 only)
+## Task 3: Rewrite code to handle obsoleted system tables (v15 only)
 
 In version 16, several system tables were removed and replaced by new tables, compared to version 15. For a list of these tables and the corresponding new tables, see [Deprecated Tables](deprecated-tables.md). Code that uses the deprecated tables, must be rewritten to use the new tables. This change will typically affect your base application or the Microsoft System Application, if you're using it.
 
@@ -96,7 +96,7 @@ For the base application or system application extensions, you'll have to create
 
 7. Compile and build the new version of the extension.
 
-## <a name="Preparedb"></a> Task 3: Prepare databases
+## <a name="Preparedb"></a> Task 4: Prepare databases
 
 In this task, you prepare the application and tenant databases for the upgrade.
 
@@ -148,7 +148,7 @@ In this task, you prepare the application and tenant databases for the upgrade.
     Stop-NAVServerInstance -ServerInstance <BC17 server instance>
     ```
 
-## Task 4: Convert the current application database to version 18
+## Task 5: Convert the current application database to version 18
 
 This task runs a technical upgrade on the application database. A technical upgrade converts the current database to the version 18.0 platform. This conversion updates the system tables of the database to the new schema (data structure). It also provides the latest platform features and performance enhancements.
 
@@ -173,7 +173,7 @@ This task runs a technical upgrade on the application database. A technical upgr
     Collation           :
     ```
 
-## Task 5: Configure version 18 server
+## Task 6: Configure version 18 server
 
 When you installed version 18 in **Task 1**, a version 18 [!INCLUDE[server](../developer/includes/server.md)] instance was created. In this task, you change server configuration settings that are required to complete the upgrade. Some of the changes are only required for version 17 to version 18.0 upgrade and can be reverted after you complete the upgrade.
 
@@ -204,7 +204,7 @@ When you installed version 18 in **Task 1**, a version 18 [!INCLUDE[server](../d
     Restart-NAVServerInstance -ServerInstance <BC18 server instance>
     ```
 
-## <a name="UploadLicense"></a> Task 6: Upload [!INCLUDE[prod_short](../developer/includes/prod_short.md)] partner license  
+## <a name="UploadLicense"></a> Task 7: Upload [!INCLUDE[prod_short](../developer/includes/prod_short.md)] partner license  
 
 If you've gotten a new [!INCLUDE[prod_short](../developer/includes/prod_short.md)] partner license, make sure that it has been uploaded to the database. To upload the license, use the [Import-NAVServerLicense cmdlet](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense):
 
@@ -224,7 +224,7 @@ Publish-NAVApp -ServerInstance <BC18 server instance> -Path "<path to the System
 ```
 -->
 
-## Task 7: Recompile published extensions
+## Task 8: Recompile published extensions
 
 Compile all published extensions against the new platform.
 
@@ -344,6 +344,22 @@ Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Cl
 Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Client.WebPageViewer' -PublicKeyToken 31bf3856ad364e35 -ResourceFile ($AppName = Join-Path $ServicesAddinsFolder 'WebPageViewer\Microsoft.Dynamics.Nav.Client.WebPageViewer.zip')
 Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Client.WelcomeWizard' -PublicKeyToken 31bf3856ad364e35 -ResourceFile ($AppName = Join-Path $ServicesAddinsFolder 'WelcomeWizard\Microsoft.Dynamics.Nav.Client.WelcomeWizard.zip')
 ```
+
+## Task 12: Install upgraded permissions sets
+
+### For permission sets as AL objects
+
+1. Publish the extension or extensions that include the permission sets.
+2. Sync the extensions with the tenant.
+3. Install the extensions on the tenant.
+
+### For permission sets as data in XML
+
+1. Open the [!INCLUDE[webclient](../developer/includes/webclient.md)].
+2. Search for and open the **Permission Sets** page.
+3. Select **Import Permission Sets**, and follow the instructions to import the XML file.
+
+For more information, see [To export and import a permission set](/dynamics365/business-central/ui-define-granular-permissions#to-export-and-import-a-permission-set).
 
 ## Task 12: Post-upgrade
 

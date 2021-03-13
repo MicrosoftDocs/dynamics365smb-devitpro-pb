@@ -27,7 +27,21 @@ Use this scenario if you have one of the following versions that uses the Micros
 
 The process for upgrading the similar for a single-tenant and multitenant deployment. However, there are some inherent differences. With a single-tenant deployment, the application code and business data are in the same database. In a multitenant deployment, application code is in a separate database (the application database) than the business data (tenant). In the procedures that follow, for a single-tenant deployment, consider references to the *application database* and *tenant database* as the same database. Steps are marked as *Single-tenant only* or *Multitenant only* where applicable.
 
-## Task 1: Prepare and upgrade permissions and permission sets
+## Task 1: Install version 18
+
+1. Download the latest available update for Business Central 2020 (version 18) that is compatible with your current version.
+
+    For more information, see [[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
+
+2. Before you install version 18, it can be useful to create desktop shortcuts to the tools of the current version, such as the [!INCLUDE[admintool](../developer/includes/admintool.md)], [!INCLUDE[adminshell](../developer/includes/adminshell.md)], and [!INCLUDE[devshell](../developer/includes/devshell.md)] because the Start menu items for these tools will be replaced with the version 18 tools.
+
+3. Install Business Central version 18 components.
+
+    You keep the current version installed to complete some steps in the upgrade process. When you install version 18, you must either specify different port numbers for components (like the [!INCLUDE[server](../developer/includes/server.md)] instance and web services) or you must stop the current version's [!INCLUDE[server](../developer/includes/server.md)] instance before you run the installation. Otherwise, you'll get an error that the [!INCLUDE[server](../developer/includes/server.md)] failed to install.
+
+    For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
+
+## Task 2: Prepare and upgrade permissions and permission sets
 
 Version 18 introduces the capability to define permissions sets as AL objects, instead data. Permissions sets as AL objects is now the default and recommended model for permissions. However, for now, you can choose to use the legacy model, where permissions are defined and stored as data in the database. Whichever model you choose, there are certain tasks and process you'll have to go through during upgrade.
 
@@ -49,19 +63,6 @@ For more information, see [Permissions Upgrade Considerations](https://review.do
 
     Instead of disabling encryption, you can export the current encryption key, which you'll then import after upgrade. However, we recommend disabling encryption before upgrading.
 -->
-## Task 2: Install version 18
-
-1. Download the latest available update for Business Central 2020 (version 18) that is compatible with your current version.
-
-    For more information, see [[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
-
-2. Before you install version 18, it can be useful to create desktop shortcuts to the tools of the current version, such as the [!INCLUDE[admintool](../developer/includes/admintool.md)], [!INCLUDE[adminshell](../developer/includes/adminshell.md)], and [!INCLUDE[devshell](../developer/includes/devshell.md)] because the Start menu items for these tools will be replaced with the version 18 tools.
-
-3. Install Business Central version 18 components.
-
-    You keep the current version installed to complete some steps in the upgrade process. When you install version 18, you must either specify different port numbers for components (like the [!INCLUDE[server](../developer/includes/server.md)] instance and web services) or you must stop the current version's [!INCLUDE[server](../developer/includes/server.md)] instance before you run the installation. Otherwise, you'll get an error that the [!INCLUDE[server](../developer/includes/server.md)] failed to install.
-
-    For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
 
 ## Task 3: Prepare the existing databases
 
@@ -425,7 +426,7 @@ Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Cl
 2. Search for and open the **Permission Sets** page.
 3. Select **Import Permission Sets**, and follow the instructions to import the XML file.
 
-For more information, see [To export and import a permission set](/dynamics365/business-central/ui-define-granular-permissions#to-export-and-import-a-permission-set)
+For more information, see [To export and import a permission set](/dynamics365/business-central/ui-define-granular-permissions#to-export-and-import-a-permission-set).
 
 ## Post-upgrade tasks
 
