@@ -131,7 +131,7 @@ For more information, see [Upgrading Permissions Sets and Permissions](upgrade-p
     Stop-NAVServerInstance -ServerInstance <server instance name>
     ```
 
-## Task 4: Convert the database to version 18
+## Task 4: Convert application database to version 18
 
 This task runs a technical upgrade on the application database to convert it to the version 18 platform. The conversion updates the system tables of the database to the new schema (data structure). It provides the latest platform features and performance enhancements.
 
@@ -430,7 +430,7 @@ In this task, you install the custom permission sets that you upgraded earlier i
 
 For more information, see [To export and import a permission set](/dynamics365/business-central/ui-define-granular-permissions#to-export-and-import-a-permission-set).
 
-## Post-upgrade tasks
+## Task 13: Post-upgrade
 
 1. Enable task scheduler on the server instance.
 2. (Multitenant only) For tenants other than the tenant that you use for administration purposes, if you mounted the tenants using the `-AllowAppDatabaseWrite` parameter, dismount the tenants, then mount them again without using the `-AllowAppDatabaseWrite` parameter.
