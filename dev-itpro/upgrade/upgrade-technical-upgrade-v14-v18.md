@@ -26,7 +26,7 @@ The process for upgrading is similar for a single-tenant and multitenant deploym
 1. Upgrade to Business Central Spring 2019 (version 14).
 
    There are several updates for version 14. When upgrading from Business Central Fall 2018 (version 13) or Dynamics NAV, upgrade to the latest version 14 update that has a compatible version 18 update. For more information, see [[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
-   
+
    If your solution is already on version 14, then you don't have to upgrade to the latest version 18 update.
 
    To download the latest update, go to [Released Cumulative Updates for Microsoft Dynamics 365 Business Central Spring 2019 Update on-premises](https://support.microsoft.com/help/4501292).
