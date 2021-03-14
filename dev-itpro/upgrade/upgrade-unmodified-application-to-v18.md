@@ -41,7 +41,7 @@ The process for upgrading the similar for a single-tenant and multitenant deploy
 
     For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
 
-## Task 2: Prepare and upgrade permissions and permission sets
+## Task 2: Upgrade permission sets
 
 Version 18 introduces the capability to define permissions sets as AL objects, instead data. Permissions sets as AL objects is now the default and recommended model for permissions. However, for now, you can choose to use the legacy model, where permissions are defined and stored as data in the database. Whichever model you choose, there are certain tasks and process you'll have to go through during upgrade.
 
@@ -413,6 +413,8 @@ Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Cl
 ```
 
 ## Task 12: Install upgraded permissions sets
+
+In this task, you install the custom permission sets that you upgraded earlier in this procedure. The steps depend on whether you've decided to use permission sets as AL objects or as data.
 
 ### For permission sets as AL objects
 

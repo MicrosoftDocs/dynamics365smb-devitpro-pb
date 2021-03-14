@@ -17,9 +17,9 @@ ms.service: "dynamics365-business-central"
 
 ## Overview
 
-Permissions as AL objects is now the default model. For example, you'll see this change in a v18 demonstration database. If you view the permissions-related tables in the database, like the **Permission Set** and **Permission** tables, you'll notice that tables are almost empty.
+Permissions as AL objects is now the default model. You'll see this change, for example, in a v18 demonstration database. If you view the permissions-related tables in the database, like the **Permission Set** and **Permission** tables, you'll notice that tables are almost empty.
 
-Although it's recommended to transition to permissions defined as AL objects, you can choose to continue using the legacy databased permissions model. The permissions model used by your solution is changed by a server setting called **Use Permission Sets From Extensions**.
+Although it's recommended to transition to permissions defined as AL objects, you can choose to continue using the legacy databased permissions model. You specify which permissions model your solution uses by changing [!INCLUDE[server](../developer/includes/server.md)] setting called **Use Permission Sets From Extensions**.
 
 When upgrading from previous version, decide which model you want to use. Then, follow the appropriate instructions in the next sections.
 
@@ -101,9 +101,9 @@ If you've customized Microsoft permission sets, it's important to know what you'
 
     Now you have the list of changes that you made compared to the version 18 permission sets from Microsoft.
 
-2. Create new AL objects based on the change list.
+2. Create new AL objects for permissions sets based on the change list.
 
-    Use the following table as a guide for permission set.
+    Use the following table as a guide.
 
    |If the change|Then|See...|
    |----|----|---|
