@@ -183,7 +183,7 @@ When you installed version 18 in **Task 1**, a version 18 [!INCLUDE[server](../d
     Restart-NAVServerInstance -ServerInstance <BC18 server instance>
     ```
 
-## <a name="UploadLicense"></a> Task 6: Upload [!INCLUDE[prod_short](../developer/includes/prod_short.md)] partner license  
+## <a name="UploadLicense"></a> Task 6: Import [!INCLUDE[prod_short](../developer/includes/prod_short.md)] partner license  
 
 If you have a new [!INCLUDE[prod_short](../developer/includes/prod_short.md)] partner license, make sure that it has been uploaded to the database. To upload the license, use the [Import-NAVServerLicense cmdlet](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense): 
 
