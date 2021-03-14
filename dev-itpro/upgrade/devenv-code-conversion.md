@@ -12,7 +12,7 @@ ms.author: jswymer
 
 This article explains how to convert a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] (version 14) C/AL code-customized on-premises solution to AL code.
 
-You'll use this procedure as part of the upgrade process when going from version 14 to a later version, like 15, 16, or 17. 
+You'll use this procedure as part of the upgrade process when going from version 14 to a later version, like 15, 16, 17, or 18. 
 
 
 <!--
