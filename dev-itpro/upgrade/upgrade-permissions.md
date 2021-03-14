@@ -44,7 +44,7 @@ When you upgrade, the existing permission sets and permissions stored as data ar
 5. Upgrade your [!INCLUDE [prod_short](../developer/includes/prod_short.md)] to version 18.
 
     > [!IMPORTANT]
-    > If you have a multitenant deployment, make sure the application database is writeable.
+    > If you have a multitenant deployment, make sure the tenants are allowed to write to application database.
 
 6. If not already done during upgrade, set the `UsePermissionSetsFromExtensions` parameter of [!INCLUDE [server](../developer/includes/server.md)] instance (version 18) to `false`.
 
@@ -117,7 +117,7 @@ If you've customized Microsoft permission sets, it's important to know what you'
 5. Upgrade your [!INCLUDE [prod_short](../developer/includes/prod_short.md)] to version 18.
 
     > [!IMPORTANT]
-    > If you have a multitenant deployment, make sure the application database is writeable.
+    > If you have a multitenant deployment, when you mount tenants, give tenants permission to write to the application database.
 
 6. Publish and install the extension on your version 18 deployment.
 

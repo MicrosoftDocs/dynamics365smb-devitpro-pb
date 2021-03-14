@@ -185,7 +185,7 @@ When you installed version 18 in **Task 1**, a version 18 [!INCLUDE[server](../d
 
     In a single tenant deployment, this command mounts the tenant automatically. For more information, see [Connecting a Server Instance to a Database](../administration/connect-server-to-database.md).
 
-2. If you want to use the legacy permission sets, set the `UserPermissionSetsFromExtensions` setting to `false`.
+2. If you want to use permission sets defined as data, set the `UserPermissionSetsFromExtensions` setting to `false`.
 
     ```powershell
     Set-NavServerConfiguration -ServerInstance <BC18 server instance> -KeyName "UsePermissionSetsFromExtensions" -KeyValue false
@@ -251,7 +251,18 @@ Compile all published extensions against the new platform.
 1. (Multitenant only) Mount the tenant to the new Business Central Server instance.
 
     You'll have to do this step and the next for each tenant. For more information, see [Mount or Dismount a Tenant](../administration/mount-dismount-tenant.md).
- 
+
+    To mount the tenant, use the [Mount-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/mount-navtenant) cmdlet:
+
+    ```powershell
+    Mount-NAVTenant -ServerInstance <server instance name> -DatabaseName <database name> -DatabaseServer <database server>\<database instance> -Tenant <tenant ID> -AllowAppDatabaseWrite
+    ```
+
+    > [!IMPORTANT]
+    > You must use the same tenant ID for the tenant that was used in the old deployment; otherwise you'll get an error when mounting or syncing the tenant. If you want to use a different ID for the tenant, you can either use the `-AlternateId` parameter now or after upgrading, dismount the tenant, then mount it again using the new ID and the `OverwriteTenantIdInDatabase` parameter.  
+    >  
+    > For upgrade, set the `-AllowAppDatabaseWrite` parameter. After upgrade, you can dismount and mount the tenant again without the parameter if needed.
+
 2. Synchronize the tenant.
   
     Use the [Sync-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/sync-navtenant) cmdlet:
@@ -363,7 +374,7 @@ In this task, you install the custom permission sets that you upgraded earlier i
 
 For more information, see [To export and import a permission set](/dynamics365/business-central/ui-define-granular-permissions#to-export-and-import-a-permission-set).
 
-## Task 13: Post-upgrade
+## Post-upgrade tasks
 
 1. Enable task scheduler on the server instance.
 2. (Multitenant only) For tenants other than the tenant that you use for administration purposes, if you mounted the tenants using the `-AllowAppDatabaseWrite` parameter, dismount the tenants, then mount them again without using the `-AllowAppDatabaseWrite` parameter.

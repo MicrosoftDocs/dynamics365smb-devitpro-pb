@@ -23,7 +23,7 @@ The process for upgrading the similar for a single-tenant and multitenant deploy
 
 ## Prerequisite
 
-1. Upgrade to Business Central Spring 2019 (version 14).
+- Upgrade to Business Central Spring 2019 (version 14).
 
    - If your solution is already on version 14, then no action on this step is required.
    - If you're upgrading from Business Central Fall 2018 (version 13) or Dynamics NAV, we recommend you upgrade to the latest update for version 14 that has a compatible update for version 18. For more information, see [[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
@@ -32,6 +32,7 @@ The process for upgrading the similar for a single-tenant and multitenant deploy
 
    For information about how to do the upgrade, see [Upgrading to Dynamics 365 Business Central On-Premises](upgrading-to-business-central-on-premises.md).
 
+<!-- 
 2. Disable data encryption.
 
     If the current server instance uses data encryption, disable it. You can enable it again after upgrading.
@@ -39,6 +40,7 @@ The process for upgrading the similar for a single-tenant and multitenant deploy
     For more information, see [Managing Encryption and Encryption Keys](how-to-export-and-import-encryption-keys.md#encryption).
 
     Instead of disabling encryption, you can export the current encryption key, which you'll then import after upgrade. However, we recommend disabling encryption before upgrading.
+-->
 
 ## Task 1: Install version 18
 
@@ -56,17 +58,29 @@ The process for upgrading the similar for a single-tenant and multitenant deploy
 
     For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
 
-## Task 2: Prepare version 14 databases
+## Task 2: Upgrade permission sets
+
+Version 18 introduces the capability to define permissions sets as AL objects, instead data. Permissions sets as AL objects is now the default and recommended model for permissions. However, for now, you can choose to use the legacy model, where permissions are defined and stored as data in the database. Whichever model you choose, there are certain tasks and process you'll have to go through during upgrade.
+
+For more information, see [Upgrading Permissions Sets and Permissions](upgrade-permissions.md)<!--[Permissions Upgrade Considerations](https://review.docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-entitlements-and-permissionsets-overview?branch=permissionset#upgrade-considerations)-->.
+
+## Task 3: Prepare version 14 databases
 
 1. Make backup of the databases.
+2. Disable data encryption.
 
-2. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 14 as an administrator.
-3. Uninstall all extensions from the old tenants.
+    If the current server instance uses data encryption, disable it. You can enable it again after upgrading.
+
+    For more information, see [Managing Encryption and Encryption Keys](how-to-export-and-import-encryption-keys.md#encryption).
+
+    Instead of disabling encryption, you can export the current encryption key, which you'll then import after upgrade. However, we recommend disabling encryption before upgrading.
+3. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 14 as an administrator.
+4. Uninstall all extensions from the old tenants.
 
     In this step, you uninstall any extensions that are currently installed on the database.
 
     1. Get a list of installed extensions.
-    
+
         This step is optional, but it can be useful to the names and versions of the extensions.
 
         To get a list of installed extensions, use the [Get-NAVAppInfo cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/get-navappinfo).
@@ -77,13 +91,13 @@ The process for upgrading the similar for a single-tenant and multitenant deploy
 
         For a single-tenant deployment, set the `<tenant ID>` to default. 
     2. Uninstall the extensions.
-    
+
         To uninstall an extension, you use the [Uninstall-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp) cmdlet.
-    
+
         ```powershell 
         Uninstall-NAVApp -ServerInstance <server instance name> -Name <extensions name> -Tenant <tenant ID> -Version <extension version> -Force
         ```
-        
+
         Replace  `<extension name>` and `<extension version>` with the exact name and version the published System Application.
 
         For example, together with the Get-NAVApp cmdlet, you can uninstall all extensions with a single command:
@@ -92,13 +106,13 @@ The process for upgrading the similar for a single-tenant and multitenant deploy
         Get-NAVAppInfo -ServerInstance <server instance name> -Tenant <tenant ID>| % { Uninstall-NAVApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name $_.Name -Version $_.Version -Force}
         ``` 
 
-4. Unpublish all extensions from the application server instance.
+5. Unpublish all extensions from the application server instance.
 
     To unpublish an extension, use the [Unpublish-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/unpublish-navapp):
-    
+
     ```powershell 
     Unpublish-NAVApp -ServerInstance <server instance name> -Name <extension name> -Version <extension version>
-    ``` 
+    ```
 
     Together with the [Get-NAVAppInfo cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/get-navappinfo), you can unpublish all extensions by using a single command:
 
@@ -106,7 +120,7 @@ The process for upgrading the similar for a single-tenant and multitenant deploy
     Get-NAVAppInfo -ServerInstance <BC14 server instance> | % { Unpublish-NAVApp -ServerInstance <BC14 server instance> -Name $_.Name -Version $_.Version }
     ```
 
-5. Unpublish all system, test, and application symbols.
+6. Unpublish all system, test, and application symbols.
 
     To unpublish symbols, use the Unpublish-NAVAPP cmdlet with the `-SymbolsOnly` switch.
 
@@ -115,20 +129,21 @@ The process for upgrading the similar for a single-tenant and multitenant deploy
     ```
 
     [What are symbols?](upgrade-overview-v15.md#Symbols)  
-6. (Multitenant only) Dismount the tenants from the application server instance.
+7. (Multitenant only) Dismount the tenants from the application server instance.
 
     To dismount a tenant, use the [Dismount-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/dismount-navtenant) cmdlet:
 
     ```powershell
     Dismount-NAVTenant -ServerInstance <server instance name> -Tenant <tenant ID>
     ```
-7. Stop the server instance.
+
+8. Stop the server instance.
 
     ```powershell
     Stop-NAVServerInstance -ServerInstance <server instance name>
     ```
 
-## Task 3: Convert the version 14 database
+## Task 4: Convert the application database to version 18
 
 This task runs a technical upgrade on the application database to convert it from the version 14 platform to the version 18 platform. The conversion updates the system tables of the database to the new schema (data structure). It provides the latest platform features and performance enhancements.
 
@@ -149,7 +164,7 @@ This task runs a technical upgrade on the application database to convert it fro
     Collation           :
     ```
 
-## Task 4: Configure version 18 server for DestinationAppsForMigration
+## Task 5: Configure version 18 server for DestinationAppsForMigration
 
 When you installed version 18 in **Task 1**, a version 18 [!INCLUDE[server](../developer/includes/server.md)] instance was created. In this task, you change server configuration settings that are required to complete the upgrade. Some of the changes are only required for version 14 to version 18.0 upgrade and can be reverted after you complete the upgrade.
 
@@ -158,7 +173,9 @@ When you installed version 18 in **Task 1**, a version 18 [!INCLUDE[server](../d
     ```powershell
     Set-NAVServerConfiguration -ServerInstance <server instance name> -KeyName DatabaseName -KeyValue "<database name>"
     ```
+
     In a single tenant deployment, this command will mount the tenant automatically. For more information, see [Connecting a Server Instance to a Database](../administration/connect-server-to-database.md).
+
 2. Configure the server instance for migrate extensions to the use the new base application and system application extensions. 
 
     ```powershell
@@ -172,20 +189,26 @@ When you installed version 18 in **Task 1**, a version 18 [!INCLUDE[server](../d
 
     For more information about this setting, see [DestinationAppsForMigration](upgrade-destinationappsformigration.md).
 
-2. Disable task scheduler on the server instance for purposes of upgrade.
+3. If you want to use the permission sets defined as data, set the `UserPermissionSetsFromExtensions` setting to `false`.
+
+    ```powershell
+    Set-NavServerConfiguration -ServerInstance <BC18 server instance> -KeyName "UsePermissionSetsFromExtensions" -KeyValue false
+    ```
+
+4. Disable task scheduler on the server instance for purposes of upgrade.
 
     ```powershell
     Set-NavServerConfiguration -ServerInstance <server instance name> -KeyName "EnableTaskScheduler" -KeyValue false
     ```
 
     Be sure to re-enable task scheduler after upgrade if needed.
-3. Restart the server instance.
+5. Restart the server instance.
 
     ```powershell
     Restart-NAVServerInstance -ServerInstance <server instance name>
     ```
 
-## <a name="UploadLicense"></a>Task 5: Import version 18 license
+## <a name="UploadLicense"></a>Task 6: Import version 18 license
 
 If you have a new [!INCLUDE[prod_short](../developer/includes/prod_short.md)] partner license, make sure that it has been uploaded to the database.
 
@@ -202,15 +225,16 @@ If you have a new [!INCLUDE[prod_short](../developer/includes/prod_short.md)] pa
     ```
 
 For more information, see [Uploading a License File for a Specific Database](../cside/cside-upload-license-file.md#UploadtoDatabase).
- 
-## Task 6: Publish symbols and extensions
 
-In this task, you'll publish the platform symbols and extensions. As minimum, you publish the new base application and system application extensions from the installation media (DVD). You also publish new versions of any Microsoft extensions and third-party extensions that were used on your old deployment.
+## Task 7: Publish extensions
+
+In this task, you'll publish the extensions. As minimum, you publish the new base application and system application extensions from the installation media (DVD). You also publish new versions of any Microsoft extensions and third-party extensions that were used on your old deployment.
 
 Publishing an extension adds the extension to the application database that is mounted on the server instance. Once published, it's available for installing on tenants. This task updates internal tables, compiles the components of the extension behind-the-scenes, and builds the necessary metadata objects that are used at runtime.
 
 The steps in this task continue to use the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 14 that you started in the previous task.
 
+<!--
 1. Publish version 18 system symbols extension.
 
     The symbols extension contains the required platform symbols that the base application depends on. The symbols extension package is called **System.app**. You find it where the **AL Development Environment** is installed. The default path is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\180\AL Development Environment.  
@@ -220,7 +244,8 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     ```
 
     [What are symbols?](upgrade-overview-v15.md#Symbols)
-2. Publish the **System Application** extension (Microsoft_System Application.app).
+-->
+1. Publish the **System Application** extension (Microsoft_System Application.app).
 
     You find the (Microsoft_System Application.app in the **Applications\System Application\Source** folder of installation media (DVD).
 
@@ -229,7 +254,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     ```
 
     [What is the System Application?](upgrade-overview-v15.md#SystemApplication)
-3. Publish the Business Central base application extension (Microsoft_Base Application.app).
+2. Publish the Business Central base application extension (Microsoft_Base Application.app).
 
     The **Base Application** extension contains the application business objects. You find the (Microsoft_Base Application.app in the **Applications\BaseApp\Source** folder of installation media (DVD).
 
@@ -237,7 +262,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     Publish-NAVApp -ServerInstance <server instance name> -Path "<path to Microsoft_Base Application.app>"
     ```
 
-4. Publish the Microsoft_Application extension
+3. Publish the Microsoft_Application extension
 
     The Microsoft_Application extension is a new extension introduced in 15.3. For more information about this extension, see [The Microsoft_Application.app File](../developer/devenv-application-app-file.md).
 
@@ -245,7 +270,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     Publish-NAVApp -ServerInstance <server instance name> -Path "<folder path>\Microsoft_Application.app"
     ```
 
-5. Publish the new versions of Microsoft extensions.
+4. Publish the new versions of Microsoft extensions.
 
     In this step, you publish new versions of Microsoft extensions that were used on your version 14 deployment. You find the extensions in the **Applications** folder of the installation media (DVD).
 
@@ -259,7 +284,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     Publish-NAVApp -ServerInstance BC180 -Path "C:\W1DVD\Applications\SalesAndInventoryForecast\Source\SalesAndInventoryForecast.app"
     ```
 
-6. Publish 3rd-party extensions.
+5. Publish 3rd-party extensions.
 
     Publish 3rd-party extensions that were used on your version 14 solution. If you have new versions of these extensions, built on the Business Central version 18, then publish the new versions. Otherwise, republish the same versions that were previously published in the old deployment.  
 
@@ -267,7 +292,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     Publish-NAVApp -ServerInstance <server instance name> -Path "<path to extension>"
     ```
 
-## Task 7: Restart server instance
+## Task 8: Restart server instance
 
 Restart the [!INCLUDE[server](../developer/includes/server.md)] to free up resources for completing the upgrade.
 
@@ -277,7 +302,7 @@ Restart-NAVServerInstance -ServerInstance <server instance name>
 
 This step is important, otherwise you might experience issues when you run the data upgrade.
 
-## Task 8: Synchronize tenant
+## Task 9: Synchronize tenant
 
 In this task, you'll synchronize the tenant's database schema with any schema changes in the application database and extensions.
 
@@ -286,16 +311,15 @@ If you have a multitenant deployment, do these steps for each tenant.
 1. (Multitenant only) Mount the tenant to the version 18 server instance.
 
     To mount the tenant, use the [Mount-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/mount-navtenant) cmdlet:
-    
+
     ```powershell
     Mount-NAVTenant -ServerInstance <server instance name> -DatabaseName <database name> -DatabaseServer <database server>\<database instance> -Tenant <tenant ID> -AllowAppDatabaseWrite
     ```
-    
+
     > [!IMPORTANT]
     > You must use the same tenant ID for the tenant that was used in the old deployment; otherwise you'll get an error when mounting or syncing the tenant. If you want to use a different ID for the tenant, you can either use the `-AlternateId` parameter now or after upgrading, dismount the tenant, then mount it again using the new ID and the `OverwriteTenantIdInDatabase` parameter.  
-    
-    > [!NOTE]  
-    > For upgrade, we recommend that you use the `-AllowAppDatabaseWrite` parameter. After upgrade, you can dismount and mount the tenant again without the parameter if needed.
+    >  
+    > For upgrade, set the `-AllowAppDatabaseWrite` parameter. After upgrade, you can dismount and mount the tenant again without the parameter if needed.
 
     At this stage, the tenant state is OperationalWithSyncPending.
 2. Synchronize the tenant with the application database.
@@ -305,7 +329,7 @@ If you have a multitenant deployment, do these steps for each tenant.
     ```powershell  
     Sync-NAVTenant -ServerInstance <server instance name> -Mode Sync -Tenant <tenant ID>
     ```
-    
+
     With a single-tenant deployment, you can omit the `-Tenant` parameter and value.
 
 3. Synchronize the tenant with the **System Application** extension. 
@@ -317,21 +341,22 @@ If you have a multitenant deployment, do these steps for each tenant.
     ```
 
     Replace `<extension version>` with the exact version of the published System Application. To get the version, you can use the [Get-NAVAppInfo cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/get-navappinfo).
-    
+
 4. Synchronize the tenant with the **Base Application** extension.
 
     ```powershell
     Sync-NAVApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name "Base Application" -Version <extension version>
     ```
+
    Replace `<extension version>` with the exact version of the published Base Application.
 
-4. Synchronize the tenant with the **Application** extension.
+5. Synchronize the tenant with the **Application** extension.
 
     ```powershell
     Sync-NAVApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name "Application"
     ```
 
-5. Synchronize the tenant with Microsoft and 3rd-party extensions.
+6. Synchronize the tenant with Microsoft and 3rd-party extensions.
 
     For each extension, run the Sync-NAVApp cmdlet:
 
@@ -342,7 +367,7 @@ If you have a multitenant deployment, do these steps for each tenant.
 > [!TIP]
 > When you synchronize an extension, the extension takes ownership of any tables that it includes. In SQL Server, you'll notice that the table names will be suffixed with the extension ID. For example, Base Application tables will have `437dbf0e-84ff-417a-965d-ed2bb9650972` in the name. In addition, the systemId column is added to application tables that are not already part of an extension.
 
-## Task 9: Upgrade data
+## Task 10: Upgrade data
 
 In this task, you run a data upgrade on tables to handle data changes made by platform and extensions.
 
@@ -360,10 +385,11 @@ If you have a multitenant deployment, do these steps for each tenant.
     2. To view the progress of the data upgrade, you can run Get-NavDataUpgrade cmdlet with the `–Progress` switch.
 
     This step will automatically install the base application and system application on the tenant.
+
 2. Upgrade the new versions of Microsoft extensions and third-party extensions.
 
     Complete this task to upgrade any Microsoft extension and third-party extension. Microsoft extensions used in the old deployment to new versions on the installation media. The new versions are in the **Application** folder of the DVD. There's a folder for each extension. The extension package (.app file) is in the **Source** folder. 
-    
+
     1. Install **Application** extension.
 
         You'll have to install the **Application** extension first, otherwise you can't upgrade Microsoft extensions.
@@ -371,25 +397,26 @@ If you have a multitenant deployment, do these steps for each tenant.
         ```powershell
         Install-NAVApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name "Application"
         ```
+
     2. For each extension, run [Start-NAVAppDataUpgrade cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/start-navappdataupgrade):
 
         ```powershell
         Start-NAVAppDataUpgrade -ServerInstance <server instance name> -Name "<extension name>" -Version <extension version>
         ```
-    
+
         This step will also automatically install the new extension version on the tenant.
 
-4. (Multitenant only) Repeat steps 1 through 3 for each tenant.
+3. (Multitenant only) Repeat steps 1 through 3 for each tenant.
 
-## Task 10: Install 3rd-party extensions
+## Task 11: Install 3rd-party extensions
 
 Complete this task to install third-party extensions for which a new version wasn't published. For each extension, run the [Install-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp):
 
-```
+```powershell
 Install-NAVApp -ServerInstance <server instance name> -Name <extension name> -Version <extension version>
 ```
 
-## Task 11: <a name="JSaddins"></a>Upgrade control add-ins
+## Task 12: <a name="JSaddins"></a>Upgrade control add-ins
 
 The [!INCLUDE[server](../developer/includes/server.md)] installation includes new versions of the Microsoft-provided Javascript-based control add-ins, like Microsoft.Dynamics.Nav.Client.BusinessChart, Microsoft.Dynamics.Nav.Client.VideoPlayer, and more. If your solution uses any of these control add-ins, upgrade them to the latest version.
 
@@ -422,6 +449,24 @@ Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Cl
 ```
 
 At this point, the upgrade is complete, and you can open the client.
+
+## Task 13: Install upgraded permissions sets
+
+In this task, you install the custom permission sets that you upgraded earlier in this procedure. The steps depend on whether you've decided to use permission sets as AL objects or as data.
+
+### For permission sets as AL objects
+
+1. Publish the extension or extensions that include the permission sets.
+2. Sync the extensions with the tenant.
+3. Install the extensions on the tenant.
+
+### For permission sets as data in XML
+
+1. Open the [!INCLUDE[webclient](../developer/includes/webclient.md)].
+2. Search for and open the **Permission Sets** page.
+3. Select **Import Permission Sets**, and follow the instructions to import the XML file.
+
+For more information, see [To export and import a permission set](/dynamics365/business-central/ui-define-granular-permissions#to-export-and-import-a-permission-set).
 
 ## Post-upgrade tasks
 
