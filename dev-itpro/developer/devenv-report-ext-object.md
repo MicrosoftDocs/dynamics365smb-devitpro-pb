@@ -41,8 +41,13 @@ Typing the shortcut `treportext` will create the basic layout for a report exten
 The following example illustrates a simplified table extension which adds a new field to the `Customer` table, `MyField`. The report extension `MyExtension` then adds `MyField` as well as an additional field in original `Customer` table to the **Customer - Top 10 List** report. For a more advanced example, see [Report Extension Example](devenv-report-ext-example.md).
 
 > [!NOTE]  
-> For `dataset`, syntax for modifying data is not supported, meaning that you cannot add new triggers to existing dataitems, nor can you modify existing dataitem or column properties.
+> Inside the `dataset` element, syntax for modifying data is not supported, meaning that you cannot add new triggers to existing dataitems, nor can you modify existing dataitem or column properties.
 
+> [!NOTE]  
+> Inside the `requestpage` element, you cannot modify any properties.
+
+> [!NOTE]  
+> Using the `OnInitReport` trigger is not supported for report extensions.
 
 ```AL
 tableextension 50110 CustomerTableExt extends Customer
@@ -56,9 +61,7 @@ tableextension 50110 CustomerTableExt extends Customer
         }
     }
 }
-```
 
-```al
 reportextension 50110 MyExtension extends "Customer - Top 10 List"
 {
     dataset
@@ -83,6 +86,14 @@ reportextension 50110 MyExtension extends "Customer - Top 10 List"
             }
         }
     }
+
+    trigger OnPreReport()
+    begin
+    end;
+
+    trigger OnPostReport()
+    begin
+    end;
 }
 
 ```
