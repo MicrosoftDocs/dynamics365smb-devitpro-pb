@@ -134,7 +134,7 @@ report 50100 FoodReport
 
 ## The table extension - GMOFood
 
-The next code snippet is a table extension `GMOFood` that extends the `BaseFoodTable` with extra fields to register more details about food. The code snippet also adds a new table `Producer` adding information about the origin of an item.
+In the next code snippet, the table extension `GMOFood` is defined. This table extension extends the `BaseFoodTable` with extra fields to register more details about food. The code snippet also adds a new table `Producer` adding information about the origin of an item.
 
 ```al
 tableextension 50200 GMOFood extends BaseFoodTable
@@ -164,9 +164,9 @@ table 50202 Producer
 }
 ```
 
-## Creating a report extension - FoodExtension
+## The report extension - FoodExtension
 
-Having extended the base table, we also want to extend the `FoodReport` to enable displaying the additional set of fields that were added, both to the existing `FoodTable` and to the new table `Producer`. For more information, see [Report Extension Object](devenv-report-ext-object.md).
+The base table `BaseFoodTable` was extended with the `GMOFood` extension. It now makes sense to to extend the `FoodReport` to enable displaying the additional set of fields that were added; both to the existing `FoodTable` and to the new table `Producer`. To do that, we need to use a report extension object. For more information, see [Report Extension Object](devenv-report-ext-object.md).
 
 ```al
 reportextension 50200 FoodExtension extends FoodReport
