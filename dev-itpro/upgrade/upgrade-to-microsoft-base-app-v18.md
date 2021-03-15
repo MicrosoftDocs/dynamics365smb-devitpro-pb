@@ -529,10 +529,10 @@ Synchronize the extensions in the following order:
 
 1. Microsoft System Application
 2. Microsoft Base Application
-2. Microsoft Application
-3. Microsoft and third-party extensions
-4. Customization extensions
-5. Second version of the table migration extension (empty version)
+3. Microsoft Application
+4. Microsoft and third-party extensions
+5. Customization extensions
+6. Second version of the table migration extension (empty version)
 
 > [!IMPORTANT]
 > Synchronize extensions in the order of dependencies. The migration extension must be synchronized last. This step will change table ownership to the system and base application.
