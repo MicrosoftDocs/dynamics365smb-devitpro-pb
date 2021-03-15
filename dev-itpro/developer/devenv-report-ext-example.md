@@ -53,7 +53,7 @@ table 50100 BaseFoodTable
 
 ### Defining an enum - FoodColor
 
-And defining the enum `FoodColor` to enable selecting a descriptive color of an item.
+The `FoodColor` enum enables selecting a descriptive color of an item in the `BaseFoodTable`.
 
 ```al
 enum 50100 FoodColor
@@ -98,9 +98,9 @@ page 50101 BaseFoodPage
 ```
 -->
 
-## Creating a base report - FoodReport
+## The base report - FoodReport
 
-Now, the following `FoodReport` object is a report based on `BaseFoodTable` as a data source. There's a `DataItemLink` to a second table that displays restaurant information. The report is defined with a RDL layout. For more information, see [Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md).
+The following `FoodReport` object defines a report based on `BaseFoodTable` as a data source. There's a `DataItemLink` to a second table that displays restaurant information. The report is defined with an RDL layout. For more information, see [Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md).
 
 ```al
 report 50100 FoodReport
@@ -132,7 +132,7 @@ report 50100 FoodReport
 }
 ```
 
-## Creating a table extension - GMOFood
+## The table extension - GMOFood
 
 The next code snippet is a table extension `GMOFood` that extends the `BaseFoodTable` with extra fields to register more details about food. The code snippet also adds a new table `Producer` adding information about the origin of an item.
 
