@@ -25,6 +25,9 @@ When upgrading from previous version, decide which model you want to use. Then, 
 
 ## Continue using the permission sets defined as data
 
+> [!NOTE]
+> Permission sets defined as data has been deprecated and will be removed in an upcoming release. For more information, see [Deprecated Features in W1](https://review.docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/upgrade/deprecated-features-w1?branch=permissionset#permissions).
+
 When you upgrade, the existing permission sets and permissions stored as data aren't affected during upgrade. They'll exist as before in the database even after upgrade. Included are permissions sets from Microsoft, partners, extensions, and user-defined permission sets. If you have customized Microsoft permission sets, or made your own from copies, you'll probably want to keep them up to date with the latest from Business Central.
 
 1. From the old [!INCLUDE [prod_short](../developer/includes/prod_short.md)] version, open the **Permissions Sets** page and export the **System** permission sets as XML to a file.
