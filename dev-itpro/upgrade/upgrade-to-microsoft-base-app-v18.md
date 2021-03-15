@@ -207,7 +207,7 @@ You'll create two versions of this extension. The first version contains the tab
 
     To build the extension package, press Ctrl+Shift+B.
 
-## Task 3: Create empty extensions System, Base, and customization extensions
+## Task 3: Create empty System, Base, and customization extensions
 
 Create two empty extensions: one for the Microsoft base application and another for the System Application. Also, create an empty extension for each new customization extension. The only file in the extension project that is required is an app.json.
 
@@ -459,7 +459,7 @@ If you have a multitenant deployment, do these steps for each tenant.
 
 ## Task 10: Install DestinationAppsForMigration and move tables
 
-In this task, you run a data upgrade on tables to handle data changes made by platform and extensions. The step installs table migration extension. It moves data from the old tables to the new tables owned by the table migration extension.
+In this task, you run a data upgrade on tables to handle data changes made by platform and extensions. The step installs the table migration extension. It moves data from the old tables to the new tables owned by the table migration extension.
 
 1. To run the data upgrade, use the [Start-NavDataUpgrade](/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade) cmdlet:
 
@@ -513,7 +513,7 @@ Publish the extensions in the following order:
 
 4. Customization extensions.
 5. Application extension.
-5. Microsoft and third-party extensions.
+6. Microsoft and third-party extensions.
 
     The Microsoft extensions are in the **Applications** folder of installation media (DVD).
 
