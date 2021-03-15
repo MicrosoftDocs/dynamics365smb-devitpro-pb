@@ -375,9 +375,9 @@ Import-NAVServerLicense $-ServerInstance <server instance name> -LicenseFile <pa
 
 Restart the server instance.
 
-## Task 8: Publish symbols and DestinationAppsForMigrations
+## Task 8: Publish DestinationAppsForMigrations extensions
 
-In this task, you'll publish the platform symbols and the extensions configured as DestinationAppsForMigration.
+In this task, you'll publish the extensions configured as DestinationAppsForMigration.
 
 <!-- no longer required because part of convert
 1. Publish version 18 system symbols extension.
