@@ -196,6 +196,8 @@ reportextension 50200 FoodExtension extends FoodReport
 }
 ```
 
+The example code above illustrates how additive changes to tables that are used reports, can use report extension objects to reflect these additive changes.
+
 ## See Also
 
 [Report Object](devenv-report-object.md)  
