@@ -12,13 +12,15 @@ author: SusanneWindfeldPedersen
 
 # Entitlements and Permission Sets Overview
 
+[!INCLUDE [2021_releasewave1](../includes/2021_releasewave1.md)]
+
 [!INCLUDE [prod_short](includes/prod_short.md)] uses two main concepts for defining access to functionality: Entitlements and Permissions.
 
 *Entitlements* describe which objects in [!INCLUDE [prod_short](includes/prod_short.md)] a customer is entitled to use according to the license that they purchased from Microsoft or according to the Azure Active Directory role that they have assigned in Microsoft 365 Admin Center, for example, Global Administrator. Entitlements are only used in the online version of [!INCLUDE [prod_short](includes/prod_short.md)]. 
 
 *Permissions* describe which objects an administrator or a partner has given the user.
 
-*Permission Sets* allow combining objects permissions into logical groups (or sets), which can then be assigned to the users explicitly or via the User Group. 
+*Permission Sets* allow combining objects permissions into logical groups (or sets), which can then be assigned to the users explicitly or via the User Group.
 
 ## Permission Set Scope
 
