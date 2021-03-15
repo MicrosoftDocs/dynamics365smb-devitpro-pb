@@ -24,13 +24,11 @@ author: SusanneWindfeldPedersen
 
 ## Permission Set Scope
 
-A [!INCLUDE [prod_short](includes/prod_short.md)] solution contains a number of predefined permission sets that are added by Microsoft or by your software provider (ISV application you installed from AppSource). 
+A [!INCLUDE [prod_short](includes/prod_short.md)] solution contains a number of predefined permission sets that are added by Microsoft or by your software provider (by an ISV application that you installed from AppSource).
 
-Permission sets included with Microsoft and AppSource apps as AL objects are of type **System**. If they are included in XML format, they are of type **Extension**. <!-- should we just remove this last sentence about XML like we talked about?--> <!-- Old data-sourced permissions are also tagged as System type. These are permission sets that on-premises admins/devs can add using our PowerShell cmdlets or creating and importing XML files with scope=system-->
+Permission sets included with Microsoft and AppSource apps defined as AL objects are of the type **System**. <!-- If they are included in XML format, they are of the type **Extension**.--> <!-- Old data-sourced permissions are also tagged as System type. These are permission sets that on-premises admins/devs can add using our PowerShell cmdlets or creating and importing XML files with scope=system-->
 
-End-users cannot create or edit these types of permission sets or the permissions within them. However, they can copy these permission sets to define their own permission sets and permissions.
-
-Permission sets that users create, from new or as copies, are of the type **User-Defined** and they can be edited.
+End-users cannot create or edit these types of permission sets or the permissions within them. However, they can copy these permission sets to define their own permission sets and permissions. Permission sets that users create, from new or as copies, are of the type **User-Defined** and they can be edited.
 
 ## Creating Entitlements and Permission Sets in AL
 
