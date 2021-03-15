@@ -91,19 +91,19 @@ You'll create two versions of this extension. The first version contains the tab
 
 1. Create a folder where you'll store exported txt files for tables (for example, C:\export2al\bc14tablesonly\).
 
-1. Start the [!INCLUDE[devshell](../developer/includes/devshell.md)] for version 14.
+2. Start the [!INCLUDE[devshell](../developer/includes/devshell.md)] for version 14.
 
-2. Run the [Export-NAVApplicationObject cmdlet](/powershell/module/microsoft.dynamics.nav.ide/export-navapplicationobject) to export only tables from the database.
+3. Run the [Export-NAVApplicationObject cmdlet](/powershell/module/microsoft.dynamics.nav.ide/export-navapplicationobject) to export only tables from the database.
 
     ```powershell
     Export-NAVApplicationObject -DatabaseServer .\BCDEMO -DatabaseName "Demo Database BC (14-0)" -ExportToNewSyntax -Path "C:\export2al\bc14tablesonly\exportedbc14-tables.txt" -Filter 'Type=Table;Id=1..1999999999'
     ```
 
-3. Use the txt2al conversion tool to convert the exported tables to the AL syntax. Use the `--tableDataOnly` parameter to include table and field definitions only.
+4. Use the txt2al conversion tool to convert the exported tables to the AL syntax. Use the `--tableDataOnly` parameter to include table and field definitions only.
 
     1. Create a folder for storing the AL files for base application objects (for example, C:\export2al\bc14tablesonly\al\).
     2. Start a command prompt as an administrator, and navigate to the folder that contains txt2al.exe file.
-    
+
         By default, the location is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\140\RoleTailored Client.
     3. Run the txt2al command:
 
@@ -115,16 +115,16 @@ You'll create two versions of this extension. The first version contains the tab
 
     > [!NOTE]
     > If the `--tableDataOnly` parameter isn't available, you'll need a later version ot the txt2al conversion tool. See [Prerequisites](#prereqs) for more information.
-4. Make sure you have installed the latest AL Extension for Visual Studio Code from the version 18 DVD.
+
+5. Make sure you have installed the latest AL Extension for Visual Studio Code from the version 18 DVD.
 
    For more information, see [Getting Started with AL](../developer/devenv-get-started.md).
 
-5. In Visual Studio Code, create an AL project for table migration extension using the **AL: Go!** command.
+6. In Visual Studio Code, create an AL project for table migration extension using the **AL: Go!** command.
 
+   Set the target platform to **7.0 Business Central 2021 release wave 1**.
 
-    Set the target platform to **6.0 Business Central 2020 release wave 2**.
-
-4. Configure the project's app.json file:
+7. Configure the project's app.json file:
 
     - Set the `"name"`, `"publisher"`, and `"version"`. You can use any valid values. 
     - Delete the `"application"` parameter.
@@ -134,7 +134,7 @@ You'll create two versions of this extension. The first version contains the tab
 
     Make a note of the `"id"` setting value, which is the ID assigned to the table migration extension. You'll use this ID later in the process.
 
-    ```
+    ```json
     {
       "id": "135f990f-8915-4a53-83fb-b8888b33e925",
       "name": "bc14baseapptablesonly",
@@ -153,17 +153,18 @@ You'll create two versions of this extension. The first version contains the tab
       "idRanges": [  ],
       "contextSensitiveHelpUrl": "https://bc14baseapptablesonly.com/help/",
       "showMyCode": true,
-      "runtime": "6.0",
+      "runtime": "7.0",
       "target": "OnPrem"
     }
+    ```
 
-5. Create an `.alpackages` folder in the root folder of the project and then copy the version 18 system symbols extension (System.app file) to the folder.
+8. Create an `.alpackages` folder in the root folder of the project and then copy the version 18 system symbols extension (System.app file) to the folder.
 
     The System.app file is located where you installed the AL Development Environment. By default, the folder path is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\180\AL Development Environment. This package contains the symbols for all the system tables and codeunits.
 
-6. Add the AL files for tha tables that you converted earlier to the root folder for the project.
+9. Add the AL files for tha tables that you converted earlier to the root folder for the project.
 
-7. Build the extension package for the first version.
+10. Build the extension package for the first version.
 
     To build the extension package, press Ctrl+Shift+B. This step creates an .app file for your extension. The file name has the format \<publisher\>\_\<name\>\_\<version\>.app.
 
