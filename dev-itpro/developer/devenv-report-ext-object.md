@@ -18,13 +18,11 @@ ms.author: solsen
 
 With the report extension object, you can extend existing report objects, similar to how you extend tables and pages. With report extensions, you can extend an existing report by:
 
-- Adding fields to the existing report dataset
-- Adding new datasets
+- Adding columns to existing dataitems in the report dataset
+- Adding new dataitems
 - Adding trigger implementations
 - Adding to request pages
-- Modifying columns
-- Modifying the report layout to reflect the new fields that are added with an extension
-- Changing the layout of an existing report to add a custom report layout to the extension
+- Adding to a new report layout to reflect the new fields that are added with an extension
 
 For a report to be extended, the `Extensible` property must be set to `true`. This is the default value, which means that reports by default can be extended, unless they explicitly have the `Extensible` property set to `false`. For more information, see [Extensible Property](properties/devenv-extensible-property.md).
 
