@@ -70,34 +70,6 @@ enum 50100 FoodColor
 }
 ```
 
-<!--
-## Creating a page to display
-
-To be able to display data from and enter data in the `BaseFoodTable`, we will create the following page called `BaseFoodPage`.
-
-```al
-page 50101 BaseFoodPage
-{
-    PageType = Card;
-    ApplicationArea = All;
-    UsageCategory = Administration;
-    SourceTable = BaseFoodTable;
-
-    layout
-    {
-        area(Content)
-        {
-            group(GroupName)
-            {
-                field(Name; Rec.Name) { }
-                field(Color; Rec.Color) { }
-            }
-        }
-    }
-}
-```
--->
-
 ## The base report - FoodReport
 
 The following `FoodReport` object defines a report based on `BaseFoodTable` as a data source. There's a `DataItemLink` to a second table that displays restaurant information. The report is defined with an RDL layout. For more information, see [Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md).
