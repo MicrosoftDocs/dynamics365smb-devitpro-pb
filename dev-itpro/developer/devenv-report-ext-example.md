@@ -14,7 +14,7 @@ ms.author: solsen
 
 # Report Extension Example
 
-The following topic illustrates how an existing table and report is extended by using extension objects. The code snippets shown in this example do not provide a full end-to-end scenario that can be deployed, but illustrates the way to extend existing functionality by using the [Page Extension Object](devenv-page-ext-object.md) and [Report Extension Object](devenv-report-ext-object.md).
+The following topic illustrates how an existing table and report is extended by using extension objects. The code snippets shown in this example do not provide a full end-to-end scenario that can be deployed, but illustrates the way to extend existing functionality by using the [Table Extension Object](devenv-table-ext-object.md) and [Report Extension Object](devenv-report-ext-object.md).
 
 ## The base table - BaseFoodTable
 
@@ -134,7 +134,7 @@ report 50100 FoodReport
 
 ## The table extension - GMOFood
 
-In the next code snippet, the table extension `GMOFood` is defined. This table extension extends the `BaseFoodTable` with extra fields to register more details about food. The code snippet also adds a new table `Producer` adding information about the origin of an item.
+In the next code snippet, the table extension `GMOFood` is defined. This table extension extends the `BaseFoodTable` with extra fields to register more details about food. `GMOFood` adds a relation to the `Producer` table through the `ProducerID` key.
 
 ```al
 tableextension 50200 GMOFood extends BaseFoodTable
@@ -171,7 +171,6 @@ The base table `BaseFoodTable` was extended with the `GMOFood` extension. It now
 ```al
 reportextension 50200 FoodExtension extends FoodReport
 {
-    DefaultLayout = RDLC;
     RDLCLayout = 'ExtendedFoodReport.rdl';
 
     dataset
