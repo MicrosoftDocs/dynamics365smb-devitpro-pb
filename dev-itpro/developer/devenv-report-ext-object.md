@@ -20,6 +20,7 @@ With the report extension object, you can extend existing report objects, simila
 
 - Adding fields to the existing report dataset
 - Adding new datasets
+- Adding trigger implementations
 - Adding to request pages
 - Modifying columns
 - Modifying the report layout to reflect the new fields that are added with an extension
