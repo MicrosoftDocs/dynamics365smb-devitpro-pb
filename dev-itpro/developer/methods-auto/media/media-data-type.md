@@ -34,6 +34,10 @@ The following methods are available on instances of the Media data type.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
+> [!NOTE]
+> When importing Microsoft Word files (.docx), macro packages (VBA code) will automatically be removed from the file when stored in the database. If macros are needed for end-user scenarios, the macro must be in the Word template (.dotx) associated with the document being imported.
+
+
 ## See Also
 
 [Getting Started with AL](../../devenv-get-started.md)  
