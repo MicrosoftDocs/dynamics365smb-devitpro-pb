@@ -87,6 +87,12 @@ You now create a new extension that contains the customization you want to move 
 
 1. Create an AL project for **Ext Y**.
 2. In the app.json file, set up a dependency on the releasing extension **Ext X**.
+
+   ```json
+     "dependencies": [{"id": "77777777-eeee-8888-ffff-999999999999", "name": "releaseextension", "publisher": "Default publisher", "version": "1.0.0.0"}],
+   ```
+  
+  For purposes of the example, the ID is `77777777-eeee-8888-ffff-999999999999`. The value for your extension will be different.
 3. Add a table definition and code for **TableB** that exactly matches the definition in the original releasing extension.
 4. Add a table extension object called **TableExtC**. Then, add a field definition for field **C-2** that matches its definition in the original **TableC** object of the releasing extension.
 5. Compile the extension package.
