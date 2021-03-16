@@ -37,6 +37,9 @@ The **Media** data type associates a record with a single media object. For exam
 
 If a media object is added to Media data type field, the field references the media object by its ID.
 
+> [!NOTE]
+> Starting with Business Central 2021 release wave 1, when importing Microsoft Word files (.docx), macro packages (VBA code) will automatically be removed from the file when stored in the database. If macros are needed for end-user scenarios, the macro must be in the Word template (.dotx) associated with the document being imported.
+
 ## MediaSet data type
 
 The **MediaSet** data type associates a record with one or more media objects. This enables you to set up a collection or catalog of media for a record. For example, you can use this data type to set up a slide show of images for a record in a card type page.
