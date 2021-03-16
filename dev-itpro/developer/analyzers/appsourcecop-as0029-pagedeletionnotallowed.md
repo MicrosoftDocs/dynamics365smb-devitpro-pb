@@ -2,7 +2,7 @@
 title: "Pages and PageExtensions that have been published must not be deleted, since dependent extensions may break"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/19/2020
+ms.date: 03/16/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,7 +30,7 @@ It is not allowed to remove pages or page extensions which have been published. 
 
 ## How to fix this diagnostic
 
-Revert the change by adding the page or page extension back and marking it as [Obsolete](../properties/devenv-obsoletestate-property.md).
+Revert the change by adding the page back and marking it as [Obsolete](../properties/devenv-obsoletestate-property.md). Marking a page extension as obsolete is not currently supported, so undoing the deletion is the only available fix.
 
 ## Examples of errors for dependent extensions
 
