@@ -1,24 +1,24 @@
 ---
 title: Query Totals and Grouping
-description: Perform calculation on the fields of a column and return the calculated value in the dataset. Know the Dynamics NAV Total methods for running queries.
+description: Do calculations on the fields of a column and return the calculated value in the dataset. Know the Dynamics NAV Total methods for running queries.
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 01/08/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 
 # Aggregating Data in Query Objects
 
-In a query object, you use aggregate methods to perform a calculation on the fields of a column and return the calculated value in the dataset. For example, you can sum all the fields in a column or find the average value. The following table outlines the available aggregate methods.  
+In a query object, you can use the [Method property](properties/devenv-method-property.md) to do a calculation on the fields of a column and return the calculated value in the dataset. For example, you can sum all the fields in a column or find the average value. The `Method` property is set on `column` controls and can be set to any of the following aggregate methods.  
   
-|Method|[!INCLUDE[bp_tabledescription](includes/bp_tabledescription_md.md)]|
+|Aggregate method|[!INCLUDE[bp_tabledescription](includes/bp_tabledescription_md.md)]|
 |-----|---------------------------------------|
 |[Sum](devenv-query-totals-grouping.md#Sum)|Calculates the sum of the values of the field in the designated column for all records that are selected as part of the grouped set.|  
-|[Average](devenv-query-totals-grouping.md#Average)|Calculates the average value of the field in the designated column for all records that are selected as part of the grouped set.<br /><br /> When averaging fields that have an integer data type \(such as `Integer` or `BigInteger`\), integer division is used. This means that result is not rounded, and the remainder is discarded. For example, 5÷2=2 instead of 2.5 \(or 2 1/2\).|  
+|[Average](devenv-query-totals-grouping.md#Average)|Calculates the average value of the field in the designated column for all records that are selected as part of the grouped set.<br /><br /> When averaging fields that have an integer data type \(such as `Integer` or `BigInteger`\), integer division is used. The result isn't rounded, and the remainder is discarded. For example, 5÷2=2 instead of 2.5 \(or 2 1/2\).|  
 |[Min](devenv-query-totals-grouping.md#Minimum)|Retrieves the lowest value of the field in the designated column for all records that are selected as part of the grouped set.|  
 |[Max](devenv-query-totals-grouping.md#Maximum)|Retrieves the highest value of the field in the designated column for all records that are selected as part of the grouped set.|  
 |[Count](devenv-query-totals-grouping.md#Count)|Returns the number of records that are selected as part of the grouped set.|  
@@ -34,13 +34,13 @@ column(Name; Field)
 }
 ```
 
-Setting an aggregate method on a column will automatically group the resultant data set by the other columns in the query. This means that records that have matching values for the other columns are grouped together into a single row in the results. The aggregate method is then applied against the group and a summary value returned in the row. This is similar to the GROUP BY clause in SQL SELECT statements (see [Creating Queries with Aggregates in SQL](devenv-query-totals-grouping.md#SQL)).
+Setting an aggregate method on a column will automatically group the resultant data set by the other columns in the query. Records that have matching values for the other columns are grouped together into a single row in the results. The aggregate method is then applied against the group and a summary value returned in the row. It's similar to the GROUP BY clause in SQL SELECT statements (see [Creating Queries with Aggregates in SQL](devenv-query-totals-grouping.md#SQL)).
 
 The aggregate methods and grouping are further explained in the following sections.  
   
 ## Sample Query
 
-The following sample query object retrieves the number of line items in every sales order for each customer. The query links the **Customer** table and the **Sales Line** table. In its current state, the query does not specify the Method property so it does implement aggregate method.  
+The following sample query object retrieves the number of line items in every sales order for each customer. The query links the **Customer** table and the **Sales Line** table. In its current state, the `Method` property is commented out so it doesn't implement any aggregate method.
   
 ```AL
 query 50101 "Customer_Sales_Quantity"
@@ -68,8 +68,9 @@ query 50101 "Customer_Sales_Quantity"
 
                 column(Qty; Quantity)
                 {
-                    // Change the value of the property to perform a different aggregate method on grouped columns: Sum, Average, Max, Min, or Count
-                    Method = Sum;
+                    // Change the value of the property to perform a different aggregate method on grouped columns:
+                    // Sum, Average, Max, Min, or Count
+                    // Method = Sum|Average|Min|Max|Count;
                 }
             }
         }
@@ -81,18 +82,18 @@ The following table represents a simplified version of the resulting dataset for
   
 |Customer_Number|Customer_Name|Qty|  
 |---------------------|-------------------|--------------|  
+|20000|Selangorian Ltd.|400|
+|30000|Blanemark Hifi|350|  
+|20000|Selangorian Ltd.|300|
+|40000|Deerfield Graphics|250|
 |20000|Selangorian Ltd.|200|  
 |30000|Blanemark Hifi|150|  
-|20000|Selangorian Ltd.|300|  
-|40000|Deerfield Graphics|250|  
-|20000|Selangorian Ltd.|400|  
-|30000|Blanemark Hifi|350|  
-  
-The following sections explain how you can modify the query to implement the different aggregate methods by changing the value of the [Method property](properties/devenv-method-property.md). 
+
+The following sections explain how you can modify the query to implement the different aggregate methods by changing the value of the [Method property](properties/devenv-method-property.md).
   
 ##  <a name="Sum"></a> Sum
 
-The `Sum` method adds the values of all fields for the specified column within a group. To set up a `Sum` method on the **Quantity** column of the sample query, set the `Method` property to `Sum`. The query is automatically grouped by the **No.** and **Name** columns. 
+The `Sum` method adds the values of all fields for the specified column within a group. To set up a `Sum` method on the **Quantity** column of the sample query, set the `Method` property to `Sum`. The query is automatically grouped by the **No.** and **Name** columns.
 
 ```AL
 ...
@@ -111,7 +112,6 @@ Looking at the sample query, you can use `Sum` method to get the total number of
 |30000|Blanemark Hifi|500|  
 |40000|Deerfield Graphics|250|  
   
-  
 ##  <a name="Average"></a> Average
 
  The `Average` method calculates the average value of the fields in the column within a group. To set up an Average method on the **Quantity** column of the sample query, set the `Method` property to `Average`. The query is automatically grouped by the **No.** and **Name** columns:
@@ -123,7 +123,7 @@ column(Qty; Quantity)
     Method = Average;
 }
 ...
-``` 
+```
   
 Looking at the sample query, you can use `Average` method to get the average number of items in sales orders for each customer. The following table illustrates the resulting dataset for the query.
   
@@ -144,15 +144,15 @@ column(Qty; Quantity)
     Method = Min;
 }
 ...
-``` 
+```
   
 Looking at the sample query, you can use `Min` method to get the least number of items in sales orders for each customer. The following table illustrates the resulting dataset for the query. 
   
 |Customer_Number|Customer_Name|Qty|
 |---------------------|-------------------|--------------|  
+|40000|Deerfield Graphics|250|  
 |20000|Selangorian Ltd.|200|  
 |30000|Blanemark Hifi|150|  
-|40000|Deerfield Graphics|250|  
   
 ##  <a name="Maximum"></a> Max
 
@@ -162,10 +162,10 @@ Looking at the sample query, you can use `Min` method to get the least number of
 ...
 column(Qty; Quantity)
 {
-    Method = Min;
+    Method = Max;
 }
 ...
-``` 
+```
   
 Looking at the sample query, you can use `Max` method to get the greatest number of items in sales orders for each customer. The following table illustrates the resulting dataset for the query.  
   
@@ -181,13 +181,12 @@ The `Count` method returns the number of records from the data item table that c
 
 To set up a `Count` method in the sample query, the `column` element definition cannot include a source table; only a name. Therefore, you can delete the reference to the `Quantity` field in the `column(Qty; Quantity)` element and set the `Method`property to `Count`:  
 
-  
 ```AL
 ...
-                column(Qty)
-                {
-                   Method = Count;
-                }
+column(Qty)
+{
+    Method = Count;
+}
   
 ```
 
@@ -203,9 +202,9 @@ In SQL SELECT statements, the Count method corresponds to a COUNT\(\*\) or COUNT
   
 ##  <a name="SQL"></a> Creating queries with aggregates in SQL  
 
-If you are familiar with SQL, then it is helpful to know how the aggregate methods in [!INCLUDE[prodshort](includes/prodshort.md)] relate to SQL statements. To specify a aggregate method in an SQL statement, you add the method to the SELECT statement and then add a GROUP BY clause. To group results on columns, you add the GROUPED BY statement.  
+If you're familiar with SQL, then it's helpful to know how the aggregate methods in [!INCLUDE[prod_short](includes/prod_short.md)] relate to SQL statements. To specify an aggregate method in an SQL statement, you add the method to the SELECT statement and then add a GROUP BY clause. To group results on columns, you add the GROUPED BY statement.  
   
-The following example shows how to use an SQL statement to create an inner join of the Customer table and the Sales Line table and a sum of items for each customer. The result is grouped by the **No.** and **Name** columns.  
+The following example shows how to use an SQL statement to create an inner join of the Customer table and Sales Line table, and a sum of items for each customer. The result is grouped by the **No.** and **Name** columns.  
   
 ```sql  
 SELECT Customer."No.", Customer.Name, SUM("Sales Line".Quantity)  

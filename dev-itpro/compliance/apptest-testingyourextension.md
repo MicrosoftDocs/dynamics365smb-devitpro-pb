@@ -5,9 +5,9 @@ author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 10/01/2020
 ms.reviewer: edupont
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
-ms.author: rweigel
+ms.author: freddyk
 ---
 
 # Testing your Extension
@@ -28,7 +28,7 @@ Use Docker for your development and testing. At least, run your full test in [!I
 
 If you test in an on-premises deployment, you might miss errors that would be seen online.
 
-Make sure that you use the correct artifacts for Docker to set up the correct [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] version number. Use the function `Get-BCArtifactUrl` in the NavContainerHelper module to retrieve the artifactUrl of the current version. If you test on a build that is older or much newer than the current version, your app will most likely fail validation.
+Make sure that you use the correct artifacts for Docker to set up the correct [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] version number. Use the function `Get-BCArtifactUrl` in the BcContainerHelper module to retrieve the artifactUrl of the current version. If you test on a build that is older or much newer than the current version, your app will most likely fail validation.
 
 Also make sure that you refresh the Docker instance each time you want to submit. If you haven't run your Docker script to refresh for months, then you are on a much older build.
 
@@ -44,7 +44,7 @@ When we validate apps, we use the base CRONUS demo data. This of course is there
 4. If there are popups at all, just choose **Yes** or **OK**.
 5. Once the process is complete, choose the **Apply Package** button, and then choose **Yes**.
 7. Again, if any popups or anything just click through them.
-8. Once it completes, sign out of [!INCLUDE[prodshort](../includes/prodshort.md)] and then sign back in again.
+8. Once it completes, sign out of [!INCLUDE[prod_short](../includes/prod_short.md)] and then sign back in again.
 9. You now have data.
 
 ## Use the right user for your testing
@@ -59,15 +59,13 @@ Now it is time to test your app. The following are all things you must do as par
 - We are not going to test 100% of the functionality of your app. We expect you to be doing that.
 - If the testing works for you, it will most likely work for us.
 - Ensure that no permission errors are thrown for any of your app's functionality.
-- With the ESSENTIAL user (before you assign your permission sets to it), make sure that the user can still use the core [!INCLUDE[prodshort](../includes/prodshort.md)] without facing permission errors. You must allow that user to do things such as accessing the Customer card, posting sales order, and so on.
+- With the ESSENTIAL user (before you assign your permission sets to it), make sure that the user can still use the core [!INCLUDE[prod_short](../includes/prod_short.md)] without facing permission errors. You must allow that user to do things such as accessing the Customer card, posting sales order, and so on.
 
 ## Maintaining your app
 
 Although we do regular testing of your app when we prepare a new version of [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)], we expect you to do the same on your end. You have access to the same builds that we do through the Collaborate program. You can do more thorough testing than we can because you know your app the best. By doing this testing, you can catch future [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] changes that may impact or break your app. Catching these changes in advance leaves less risk for customers to run into them.
 
-You should be doing regular testing against our release branch that ports into our monthly service updates. To test against these builds, sign into [aka.ms/collaborate](https://aka.ms/collaborate), navigate to packages, and locate the build named **Daily Builds - Maintaining an app in AppSource for Dynamics 365 Business Central**.
-
-We also recommend that you do regular testing against our release branch that eventually becomes our major release in April or October. For more information, see **Daily Builds - Developing for a future release of Dynamics 365 Business Central** on [aka.ms/collaborate](https://aka.ms/collaborate).
+You should be doing regular testing against our next minor (monthly) and next major (bi-annual) release branches that ports into our monthly service updates. To test against these builds, sign into [aka.ms/collaborate](https://aka.ms/collaborate), navigate to packages, and locate the package named **Working With Business Central Insider Builds**. The package contains a Shared Access Signature token with which you can download artifacts of future releases for use with Docker.
 
 ## See Also
 [Checklist for Submitting Your App](../developer/devenv-checklist-submission.md)  

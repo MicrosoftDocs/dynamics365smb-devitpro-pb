@@ -2,11 +2,11 @@
 title: "Debugger.EnableSqlTrace Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Debugger.EnableSqlTrace Method
+> **Version**: _Available from runtime version 1.0._
+
 Enables or verifies SQL tracing. If you enable SQL tracing, then SQL Server events for selected sessions on the server instance are collected.
 
 
@@ -33,14 +35,15 @@ If you specify the optional NewIsEnabled parameter, then the method sets whether
 
 
 ## Return Value
-*IsEnabled*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-  
+*IsEnabled*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks  
+## Remarks
+
 You use Microsoft SQL Server Profiler to view traces. For more information, see [Using SQL Server Profiler](https://go.microsoft.com/fwlink/?LinkId=257789). To start SQL Server Profiler, in **SQL Server Management Studio**, on the **Tools** menu, choose **SQL Server Profiler**.  
   
 You can also enable and disable SQL tracing by using the **Start Full SQL Tracing** and **Stop Full SQL Tracing** buttons on the **Session List** page.  

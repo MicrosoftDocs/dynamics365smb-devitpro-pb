@@ -2,11 +2,11 @@
 title: "TaskScheduler.CreateTask Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # TaskScheduler.CreateTask Method
+> **Version**: _Available from runtime version 1.0._
+
 Adds a task to ensure that a codeunit is not run before the specified time.
 
 
@@ -49,9 +51,9 @@ Specifies the recordID of the record that you want to run the task on.
 
 
 ## Return Value
-*Task*  
-&emsp;Type: [Guid](../guid/guid-data-type.md)  
-  
+*Task*
+&emsp;Type: [Guid](../guid/guid-data-type.md)
+
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -62,11 +64,11 @@ Scheduled tasks are recorded in table **2000000175 Scheduled Task**.  For more i
 ## Example  
 The following example schedules a task to run the **Job Queue Dispatcher** and uses codeunit **Job Queue Error Handler** as the failure codeunit. 
 
-```  
+```al
 var
     JobQueueEntry: Record "Job Queue Entry";
 begin
-    TASKSCHEDULER.CREATETASK(CODEUNIT::"Job Queue Dispatcher", CODEUNIT::"Job Queue Error Handler", TRUE, COMPANYNAME, CURRENTDATETIME + 1000 + RANDOM(3000), JobQueueEntry.RECORDID);  
+    TaskScheduler.CreateTASK(CodeUnit::"Job Queue Dispatcher", CodeUnit::"Job Queue Error Handler", True, CompanyName, CurrentDateTime + 1000 + Random(3000), JobQueueEntry.RecordID);  
 end;
 ```  
 

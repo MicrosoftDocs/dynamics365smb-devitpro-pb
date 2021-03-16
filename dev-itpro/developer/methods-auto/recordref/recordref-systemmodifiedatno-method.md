@@ -2,11 +2,11 @@
 title: "RecordRef.SystemModifiedAtNo Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # RecordRef.SystemModifiedAtNo Method
+> **Version**: _Available from runtime version 6.0._
+
 Gets the field number that is used by the SystemModifiedAt field. The SystemModifiedAt field is a system field that the platform adds to all table objects.
 
 
@@ -21,18 +23,18 @@ Gets the field number that is used by the SystemModifiedAt field. The SystemModi
 ```
 SystemModifiedAtFieldNo :=   RecordRef.SystemModifiedAtNo()
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 
 ## Parameters
-*RecordRef*  
-&emsp;Type: [RecordRef](recordref-data-type.md)  
-An instance of the [RecordRef](recordref-data-type.md) data type.  
+*RecordRef*
+&emsp;Type: [RecordRef](recordref-data-type.md)
+An instance of the [RecordRef](recordref-data-type.md) data type.
 
 ## Return Value
-*SystemModifiedAtFieldNo*  
-&emsp;Type: [Integer](../integer/integer-data-type.md)  
-The field number of the SystemModifiedAt field.  
+*SystemModifiedAtFieldNo*
+&emsp;Type: [Integer](../integer/integer-data-type.md)
+The field number of the SystemModifiedAt field.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

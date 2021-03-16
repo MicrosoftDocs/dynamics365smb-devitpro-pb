@@ -5,13 +5,13 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 # Transitioning from Codeunit 1 to System Codeunits
 
-With [!INCLUDE[prodshort](../developer/includes/prodshort.md)], codeunit 1 **Application Management** has been removed and replaced with new System codeunits. No functionality has been removed by this change. All system method triggers, event publishers, and their code have been moved to other codeunits.
+With [!INCLUDE[prod_short](../developer/includes/prod_short.md)], codeunit 1 **Application Management** has been removed and replaced with new System codeunits. No functionality has been removed by this change. All system method triggers, event publishers, and their code have been moved to other codeunits.
 
 However, this change will affect the upgrade process from [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] and how you develop from now on.
 
@@ -139,7 +139,7 @@ Move custom logic from the old codeunit 1 to the management codeunits and method
 
 ### Technical upgrade
 
-After you convert the old database to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] platform, import and compile the replacement codeunit 1 object. You get the replacement object from [Codeunit 1 Replacement](codeunit1-replacement.md).
+After you convert the old database to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] platform, import and compile the replacement codeunit 1 object. You get the replacement object from [Codeunit 1 Replacement](codeunit1-replacement.md).
 
 ## See Also  
  [Converting a Database](Converting-a-Database.md)  

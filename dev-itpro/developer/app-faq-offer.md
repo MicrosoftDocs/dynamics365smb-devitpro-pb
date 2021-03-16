@@ -5,14 +5,14 @@ author: rweigel
 ms.custom: na
 ms.date: 10/01/2020
 ms.reviewer: edupont
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
-ms.author: rweigel
+ms.author: freddyk
 ---
 
 # FAQ about Managing and Submitting your Business Central Offer
 
-This section contains answers to frequently asked questions about managing the offer in Partner Center when you submit an app for [!INCLUDE[prodshort](../includes/prodshort.md)].
+This section contains answers to frequently asked questions about managing the offer in Partner Center when you submit an app for [!INCLUDE[prod_short](../includes/prod_short.md)].
 
 ## If I click the Go Live button, does that mean my app will go live to AppSource?
 

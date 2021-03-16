@@ -2,11 +2,11 @@
 title: "MediaSet.Insert Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # MediaSet.Insert Method
+> **Version**: _Available from runtime version 1.0._
+
 Adds a media object that already exists in the database to a MediaSet of a record.
 
 
@@ -22,9 +24,9 @@ Adds a media object that already exists in the database to a MediaSet of a recor
 [Result := ]  MediaSet.Insert(MediaId: Guid)
 ```
 ## Parameters
-*MediaSet*  
-&emsp;Type: [MediaSet](mediaset-data-type.md)  
-An instance of the [MediaSet](mediaset-data-type.md) data type.  
+*MediaSet*
+&emsp;Type: [MediaSet](mediaset-data-type.md)
+An instance of the [MediaSet](mediaset-data-type.md) data type.
 
 *MediaId*  
 &emsp;Type: [Guid](../guid/guid-data-type.md)  
@@ -33,9 +35,9 @@ Specifies the unique ID that is assigned to the media object that you want to in
 
 
 ## Return Value
-*Result*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the media is successfully added to the MediaSet, otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+*Result*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+**true** if the media is successfully added to the MediaSet, otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -51,7 +53,7 @@ This example uses the Insert method and [Item Method \(MediaSet\)](../../methods
 -   Each table contains the record number '1000'.
 -   There is at least 1 media object in the MediaSet of record 1000 in TableA.
 
-```
+```al
  var
     recA: Record TableA;
     recB: Record TableB;

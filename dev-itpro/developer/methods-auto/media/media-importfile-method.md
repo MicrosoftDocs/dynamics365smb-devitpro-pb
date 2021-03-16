@@ -2,11 +2,11 @@
 title: "Media.ImportFile Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Media.ImportFile Method
+> **Version**: _Available from runtime version 1.0._
+
 Adds a media type, such as a JPEG image, from a file to a Media data type field of a record for displaying the media with the record in the client. The media file is imported to the application database, and a reference to the media is included in the Media data type field.
 
 > [!NOTE]
@@ -24,9 +26,9 @@ Adds a media type, such as a JPEG image, from a file to a Media data type field 
 [ID := ]  Media.ImportFile(Filename: Text, Description: Text [, MimeType: Text])
 ```
 ## Parameters
-*Media*  
-&emsp;Type: [Media](media-data-type.md)  
-An instance of the [Media](media-data-type.md) data type.  
+*Media*
+&emsp;Type: [Media](media-data-type.md)
+An instance of the [Media](media-data-type.md) data type.
 
 *Filename*  
 &emsp;Type: [Text](../text/text-data-type.md)  
@@ -42,9 +44,9 @@ Specifies the media content type. MIME type is used by browsers, and is an Inter
 
 
 ## Return Value
-*ID*  
-&emsp;Type: [Guid](../guid/guid-data-type.md)  
-The unique ID that is assigned to the media object in the database. You can also get the ID by using the MediaId method. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+*ID*
+&emsp;Type: [Guid](../guid/guid-data-type.md)
+The unique ID that is assigned to the media object in the database. You can also get the ID by using the MediaId method. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -77,8 +79,8 @@ To support the example code that follows, create the following objects:
   -   List type page that uses the **My Items** table as its source.
   -   A repeater control that contains the fields of the **My Items** table.
 
-      >[!NOTE]
-      >It is not necessary to include the **Media** data type field on the page.
+      > [!NOTE]  
+      > It is not necessary to include the **Media** data type field on the page.
 
   Use the page to add one or more items to the table, assigning each item a number like 1,2,3, and so on.
 
@@ -92,7 +94,7 @@ With the objects in place, you can add and run the following AL code to import t
 
 The example code iterates over records in the **My Items** table. For each record, it looks in the *C:\images* folder for a file whose name matches the **No.** field of the record. If there is a match, the file is imported and a message appears; otherwise, nothing happens.
 
-```
+```al
  var
     myItemRec: Record "My Items";
     fileName: Text;

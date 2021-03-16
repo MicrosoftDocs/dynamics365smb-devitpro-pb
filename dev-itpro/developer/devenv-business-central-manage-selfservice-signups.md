@@ -5,14 +5,14 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 
 # Enable and Disable Dynamics 365 Business Central Self-service Signups
 
-Administrators for an Microsoft 365 Tenant might not want their users to sign up for the [!INCLUDE[d365_bus_central_md](includes/d365_bus_central_md.md)] service without their awareness. You can complete the following procedure in Azure Active Directory to block individual user signups.  
+Administrators for a Microsoft 365 tenant might not want their users to sign up for the [!INCLUDE[d365_bus_central_md](includes/d365_bus_central_md.md)] service without their awareness. You can complete the following procedure in Azure Active Directory to block individual user signups.  
 
 To complete this procedure, you must install and use Azure AD cmdlets. For a list of MSOnline cmdlets that are available for Azure AD using Windows PowerShell, see [MSOnline](/powershell/module/MSOnline/?view=azureadps-1.0&redirectedfrom=msdn).   
 

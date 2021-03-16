@@ -5,7 +5,7 @@ author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 10/01/2020
 ms.reviewer: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
@@ -21,7 +21,7 @@ A request page is a page that is run before the report or XMLport starts to exec
 |[RequestFilterFields Property](properties/devenv-requestfilterfields-property.md)|Specifies which fields are automatically included on the tab of the request page that is related  to a report's data item or an XMLport's table element. The user can set filters on these fields. |
 
 > [!NOTE]  
-> Request pages for XMLports are not supported by the [!INCLUDE[webclient](includes/webclient.md)] in versions prior to [!INCLUDE[prodlong](includes/prodlong.md)] 2019 release wave 2. If you try to run an XMLport with a Request page from the web client in these versions, you receive an error that the XMLport page type is not supported. Alternatively, XMLport request pages do work in the [!INCLUDE[webclient](includes/nav_windows_md.md)].
+> Request pages for XMLports are not supported by the [!INCLUDE[webclient](includes/webclient.md)] in versions prior to [!INCLUDE[prod_long](includes/prod_long.md)] 2019 release wave 2. If you try to run an XMLport with a Request page from the web client in these versions, you receive an error that the XMLport page type is not supported. Alternatively, XMLport request pages do work in the [!INCLUDE[webclient](includes/nav_windows_md.md)].
 
 By default, a request page is displayed, unless the [UseRequestPage](properties/devenv-userequestpage-property.md) is set to `false`; then the report or XMLport will start to print as soon as it is run. In this case, end users can't cancel the report or XMLport run. It is still possible to cancel the report or XMLport, but some pages may print.
 

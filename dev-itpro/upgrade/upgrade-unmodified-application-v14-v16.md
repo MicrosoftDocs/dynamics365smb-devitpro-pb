@@ -6,14 +6,14 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
 ms.service: "dynamics365-business-central"
 ---
 # Upgrading Unmodified C/AL Application to Version 16
 
-Use this scenario if you have a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Spring 2019 (version 14) application or earlier that doesn't include any code customization. Your solution might include Microsoft (first party) extensions and customization extensions (3rd-party). With this upgrade, you'll replace the C/AL base application with the new system and base application extensions. The result will be a fully upgraded Business Central 2020 release wave 1 (version 16) application and platform.
+Use this scenario if you have a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Spring 2019 (version 14) application or earlier that doesn't include any code customization. Your solution might include Microsoft (first party) extensions and customization extensions (3rd-party). With this upgrade, you'll replace the C/AL base application with the new system and base application extensions. The result will be a fully upgraded Business Central 2020 release wave 1 (version 16) application and platform.
 
  ![Upgrade on unmodified Business Central application](../developer/media/bc14-to-16-upgrade-unmodified-app.png "Upgrade on unmodified Business Central application") 
 
@@ -26,7 +26,7 @@ The process for upgrading the similar for a single-tenant and multitenant deploy
 1. Upgrade to Business Central Spring 2019 (version 14).
 
    - If your solution is already on version 14, then no action on this step is required.
-   - If you're upgrading from Business Central Fall 2018 (version 13) or Dynamics NAV, we recommend you upgrade to the latest update for version 14 that has a compatible update for version 16. For more information, see [[!INCLUDE[prodlong](../developer/includes/prodlong.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
+   - If you're upgrading from Business Central Fall 2018 (version 13) or Dynamics NAV, we recommend you upgrade to the latest update for version 14 that has a compatible update for version 16. For more information, see [[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
 
    To download the latest update, go to [Released Cumulative Updates for Microsoft Dynamics 365 Business Central Spring 2019 Update on-premises](https://support.microsoft.com/help/4501292).
 
@@ -410,7 +410,7 @@ The [!INCLUDE[server](../developer/includes/server.md)] installation includes ne
 
 To upgrade the control add-ins from the client, do the following steps:
 
-1. Open the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client.
+1. Open the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client.
 2. Search for and open the **Control Add-ins** page.
 3. Choose **Actions** > **Control Add-in Resource** > **Import**.
 4. Locate and select the .zip file for the control add-in and choose **Open**.

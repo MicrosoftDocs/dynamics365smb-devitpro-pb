@@ -2,11 +2,11 @@
 title: "MediaSet.ExportFile Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # MediaSet.ExportFile Method
+> **Version**: _Available from runtime version 1.0._
+
 Exports the media objects in the current media set of a record to individual files on your computer or network. In the record, the media set is referenced in a MediaSet data type field.
 
 > [!NOTE]
@@ -24,9 +26,9 @@ Exports the media objects in the current media set of a record to individual fil
 [Count := ]  MediaSet.ExportFile(FilenamePrefix: String)
 ```
 ## Parameters
-*MediaSet*  
-&emsp;Type: [MediaSet](mediaset-data-type.md)  
-An instance of the [MediaSet](mediaset-data-type.md) data type.  
+*MediaSet*
+&emsp;Type: [MediaSet](mediaset-data-type.md)
+An instance of the [MediaSet](mediaset-data-type.md) data type.
 
 *FilenamePrefix*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -38,9 +40,9 @@ Specifies the location and name of the exported media files. Each exported media
 
 
 ## Return Value
-*Count*  
-&emsp;Type: [Integer](../integer/integer-data-type.md)  
-The number of exported elements. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+*Count*
+&emsp;Type: [Integer](../integer/integer-data-type.md)
+The number of exported elements. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -57,14 +59,14 @@ The method has the following behavior:
 -   If a media in the media set cannot be found in the database, no file will be generated for this object.  
 
 ## Example  
-This example first imports two media files \(JPEG image files\) from a local folder to the media set of a record in the table **27 Item** of the [!INCLUDE[demolonglight_md](../../includes/demolonglight_md.md)]. Then, using the EXPORTFILE method, the media objects are exported to files again in another local folder.
+This example first imports two media files \(JPEG image files\) from a local folder to the media set of a record in the table **27 Item** of the [!INCLUDE[demolonglight_md](../../includes/demolonglight_md.md)]. Then, using the EXPORTFile method, the media objects are exported to files again in another local folder.
 
 For using media sets on records, the **Item** table includes a **MediaSet** data type field that is named **Picture**.  
 
  The code imports the JPEG image files \(.jpg\) from the folder *C:\images* to record *1000* in the **Item** table, and then exports the media files to the folder *C:\images\export*.  
 
-```  
- var
+```al
+var
     itemRec: Record Item;
     count: Boolean;
     Text000: Label '%1 media files were exported.';

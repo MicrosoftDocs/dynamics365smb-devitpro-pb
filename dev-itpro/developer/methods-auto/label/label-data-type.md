@@ -2,11 +2,11 @@
 title: "Label Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Label Data Type
+> **Version**: _Available from runtime version 1.0._
+
 Denotes a string constant that can be optionally translated into multiple languages.
 
 
@@ -28,11 +30,11 @@ All of the parameters below are optional and the order is not enforced.
 |-------------|--------------|
 |**Comment**  | It is used for general comments about the label, specifically about the placeholders in that label.|
 |**Locked**   | When Locked is set to **true**, the label should not be translated. Default value is **false**.|
-|**MaxLength**| It determines how much of the label is used.</br>`Label 'ALLOWED POSTING DATE', Comment='{MaxLength=30}';`<br>If no maximum length is specified, the string can be any length.|
+|**MaxLength**| It determines how much of the label is used.</br> `<br>If no maximum length is specified, the string can be any length.|
 
 ## Syntax example
 
-```
+```al
 var
     a : Label 'Label Text', Comment='Foo', MaxLength=999, Locked=true;
 ```

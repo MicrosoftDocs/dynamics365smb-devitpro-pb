@@ -6,7 +6,7 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
@@ -24,7 +24,7 @@ The following illustration shows the component infrastructure that supports [!IN
 
  ![Installation on one computer](../media/single-computer-topology.png "Installation on one computer")   
 
-Each [!INCLUDE[webserver](../developer/includes/webserver.md)] instance must connect to a [!INCLUDE[server](../developer/includes/server.md)], which in turn connects to the database that contains the application and business data. Multiple [!INCLUDE[webserver](../developer/includes/webserver.md)] instances can connect to the same [!INCLUDE[server](../developer/includes/server.md)]. You can deploy these components on one computer or on separate computers. For example, you can install the [!INCLUDE[webserver](../developer/includes/webserver.md)] instance on one computer and the [!INCLUDE[server](../developer/includes/server.md)] and SQL Server database on another computer. The topology that you choose depends on the network resources and the infrastructure of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] components. The installation and configuration process is different for each scenario.
+Each [!INCLUDE[webserver](../developer/includes/webserver.md)] instance must connect to a [!INCLUDE[server](../developer/includes/server.md)], which in turn connects to the database that contains the application and business data. Multiple [!INCLUDE[webserver](../developer/includes/webserver.md)] instances can connect to the same [!INCLUDE[server](../developer/includes/server.md)]. You can deploy these components on one computer or on separate computers. For example, you can install the [!INCLUDE[webserver](../developer/includes/webserver.md)] instance on one computer and the [!INCLUDE[server](../developer/includes/server.md)] and SQL Server database on another computer. The topology that you choose depends on the network resources and the infrastructure of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] components. The installation and configuration process is different for each scenario.
 
 For information about the common deployment scenarios, see [Deployment Topologies](deployment-scenarios.md).  
 
@@ -39,7 +39,7 @@ Setup is the quickest way to get a web server instance up and running, and is ty
 
     -   Installs and configure IIS with the required prerequisites, including Microsoft .NET Core - Windows Server Hosting <!--[Microsoft .NET Core - Windows Server Hosting package](https://aka.ms/dotnetcore.2.0.0-windowshosting)-->
     -   Installs a web server instance on IIS.
-    -   Installs components and files in a **WebPublish** folder that enables you to add additional web server instances without having to use the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation media (DVD).
+    -   Installs components and files in a **WebPublish** folder that enables you to add additional web server instances without having to use the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] installation media (DVD).
 
 -   You can only use Setup to install a single [!INCLUDE[webserver](../developer/includes/webserver.md)] instance.
 
@@ -65,18 +65,18 @@ For information about how to create a [!INCLUDE[webserver](../developer/includes
 ## Security  
 
 ### User Authentication  
- [!INCLUDE[prodshort](../developer/includes/prodshort.md)] supports four methods for authenticating users who try to access the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]: Windows, UserName, NavUserPassword, and AccessControlService. Windows authentication is configured by default. For more information, see [Users and Credential Types](../administration/users-credential-types.md) and [Authentication and User Credential Type](../administration/users-credential-types.md).  
+ [!INCLUDE[prod_short](../developer/includes/prod_short.md)] supports four methods for authenticating users who try to access the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]: Windows, UserName, NavUserPassword, and AccessControlService. Windows authentication is configured by default. For more information, see [Users and Credential Types](../administration/users-credential-types.md) and [Authentication and User Credential Type](../administration/users-credential-types.md).  
 
-### Service Account for [!INCLUDE[server](../developer/includes/server.md)] and [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Database Access  
- When you install [!INCLUDE[server](../developer/includes/server.md)] and [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database components, you must identify an Active Directory account to provide credentials for the servers. By default, Setup runs [!INCLUDE[server](../developer/includes/server.md)] and the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database under the Network Service account, a predefined local account that is used by the service control manager.  
+### Service Account for [!INCLUDE[server](../developer/includes/server.md)] and [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Database Access  
+ When you install [!INCLUDE[server](../developer/includes/server.md)] and [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database components, you must identify an Active Directory account to provide credentials for the servers. By default, Setup runs [!INCLUDE[server](../developer/includes/server.md)] and the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database under the Network Service account, a predefined local account that is used by the service control manager.  
 
 > [!TIP]  
->  We recommend that you create and use a domain user account for running [!INCLUDE[server](../developer/includes/server.md)] and accessing the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database. The Network Service account is considered less secure because it is a shared account that can be used by other unrelated network services.  
+>  We recommend that you create and use a domain user account for running [!INCLUDE[server](../developer/includes/server.md)] and accessing the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database. The Network Service account is considered less secure because it is a shared account that can be used by other unrelated network services.  
 
 For more information, see [Provisioning a Service Account](provision-server-account.md).  
 
 ### Securing the Connection to Microsoft Dynamics NAV Web Client With SSL  
-You can help secure [!INCLUDE[prodshort](../developer/includes/prodshort.md)] data that is transmitted over the Internet by enabling Secure Sockets Layer \(SSL\) on the connection to the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]. You can configure SSL when you install the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)] or after the installation.  
+You can help secure [!INCLUDE[prod_short](../developer/includes/prod_short.md)] data that is transmitted over the Internet by enabling Secure Sockets Layer \(SSL\) on the connection to the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]. You can configure SSL when you install the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)] or after the installation.  
 
  For more information, see [Configure SSL to Secure the Web Client Connection](configure-ssl-web-client-connection.md).  
 

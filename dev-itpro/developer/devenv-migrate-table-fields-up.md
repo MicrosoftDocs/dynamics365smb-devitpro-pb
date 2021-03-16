@@ -1,13 +1,13 @@
 ---
-title: "Migrating Tables and Fields Between Extensions"
-description: "Explains how to migrate tables and fields from one extension to another."
+title: "Moving Tables and Fields to Extensions Up the Dependency Graph"
+description: Explains how to move tables and fields from an extension to another extension that is up the dependency graph
 author: jswymer
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 10/28/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
 ---
@@ -24,13 +24,13 @@ This article explains how to move tables and fields from an extension to another
 
 The steps are based on the example illustrated in the following figure. Although your scenario is different, the concept and process are much the same.
 
-![Data migration](media/migrate-tables-fields-up-overview.png "data migration")
+![Data migration](media/migrate-tables-fields-up-overview.png "data migration overview")
 
 In the example, **TableB** and **Field C-2** are customizations. You'll move these elements from the original extension up to a new extension. This new extension will have a dependency on the original extension. You'll keep **TableA** and **TableC** in the original extension.
 
 To accommodate data migration, you'll have to create an extension that is only used for deployment. This extension is **Ext Z** in the figure. There are two stages of deployment:
 
-![Data migration](media/migrate-tables-fields-up.png "data migration")
+![Data migration Up](media/migrate-tables-fields-up.png "data migration up")
 
 - In the first stage, **Ext Z** temporarily takes ownership of tables and fields from **Ext X**.
 - In the second stage, **Ext Z** releases ownership to extensions **Ext X** and **Ext Y**. You uninstall and unpublish transition extension **Ext Z**  when you finish deployment.
@@ -40,7 +40,11 @@ This process is a two-step process because we only support moving down the depen
 **Ext Z** is used just as a temporary extension for moving ownership. So, it only includes schema objects. As a result, customers can't run on the tenant until both steps have been done.
 
 > [!NOTE]
-> You can only use this process for on-premise solutions. 
+> You can only use this process for on-premise solutions.
+
+## Prerequisite
+
+If you're moving [enum type](../developer/devenv-extensible-enums.md) fields, then your solution must be running on [!INCLUDE[prod_short](../includes/prod_short.md)] 2020 release wave 1, version 16.5 or later. For more information, see [Known Issues](../upgrade/known-issues.md#enum).
 
 ## Create transition extension (Ext Z v1)
 
@@ -97,9 +101,9 @@ In this step, you create another version of the releasing extension **Ext X**. T
 1. Create an AL project for **Ext X**.
 2. Add a table definition and code for **TableA** that exactly matches the definition in the original releasing extension.
 3. Add a table object for **TableC** and field definition for **C-1** that matches the definitions in the original **TableC** object of the releasing extension.
-3. In the app.json file, increase the `version` value.
-4. Compile the extension package.
-5. Make a note of the `ID` of the extension. You'll use this ID in the next task.
+4. In the app.json file, increase the `version` value.
+5. Compile the extension package.
+6. Make a note of the `ID` of the extension. You'll use this ID in the next task.
 
     For purposes of the example, the ID is `77777777-eeee-8888-ffff-999999999999`. The value for your extension will be different.
 
@@ -135,7 +139,7 @@ In this step, you create a new version of **Ext Z** that only contains a `migrat
 
     1. Publish the transition extension **Ext Z** and empty version of **Ext X v2**.
     2. Synchronize the transition extension **Ext Z**.
-    
+
        This step creates empty database tables **TableA**, **TableB**, and **TableC** that are owned by **Ext Z**.
 
        > [!IMPORTANT]
@@ -145,20 +149,20 @@ In this step, you create a new version of **Ext Z** that only contains a `migrat
 
         This step will read the migration.json of the extension. Then transfer ownership of the original tables **TableA**, **TableB**, and **TableC** to **Ext Z**.
 
-2. Complete the following steps for the second stage of deployment:
+3. Complete the following steps for the second stage of deployment:
 
     1. Publish the next version for **Ext Z v2** and **Ext X v3**, and the first version of **Ext Y**.
     2. Synchronize the extensions in the following order: **Ext X v3**, **Ext Y v1**, and **Ext Z v2**.
 
        Synchronize **Ext Z v2** last. When you synchronize **Ext Z v2**, ownership of the tables is transferred from **Ext Z** to **Ext X** and **Ext Y**.
-      
-6. Run [Start-NAVAppDataUpgrade cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/start-navappdataupgrade) on the new releasing extension version**Ext X v3**.
+
+4. Run [Start-NAVAppDataUpgrade cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/start-navappdataupgrade) on the new releasing extension version**Ext X v3**.
 
     This step basically installs the new extension version. You run a data upgrade because an earlier version has been installed and is still published.
 
 5. Install the new receiving extension **Ext Y v1**.
 
-7. Unpublish both versions of **Ext Z**.
+6. Unpublish both versions of **Ext Z**.
 
 <!--
 PS C:\Windows\system32> Publish-NAVApp bc160 -Path "C:\Users\jswymer\Documents\AL\ExtX\Default publisher_ExtX_1.0.0.0.app" -SkipVerification

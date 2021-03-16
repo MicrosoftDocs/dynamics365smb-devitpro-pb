@@ -5,7 +5,7 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.assetid: 9981a5d5-10f1-4939-bfd8-050d4d667835
 caps.latest.revision: 14
@@ -13,7 +13,7 @@ caps.latest.revision: 14
 # How to: Use Performance Monitor to Collect Event Trace Data
 This topic describes how to use Windows Performance Monitor to collect event trace data for [!INCLUDE[server](../developer/includes/server.md)]. To collect trace event data, you create a Data Collector Set, and then start the Data Collector Set.  
   
-## Create a Data Collector Set for collecting [!INCLUDE[prodshort](../developer/includes/prodshort.md)] trace event data  
+## Create a Data Collector Set for collecting [!INCLUDE[prod_short](../developer/includes/prod_short.md)] trace event data  
   
 1.  Start Windows Performance Monitor.  
   
@@ -27,7 +27,7 @@ This topic describes how to use Windows Performance Monitor to collect event tra
   
 5.  On the **Which event trace providers would you like to enable** page, choose the **Add** button to add a provider.  
   
-6.  In the **Event Trace Providers** list, select **Microsoft-Dynamics365BusinessCentral-Server**, and then choose the **OK** button.  
+6.  In the **Event Trace Providers** list, select **Microsoft-DynamicsNAV-Server**, and then choose the **OK** button.  
   
 7.  If you want to collect data for all trace events, choose the **Next** button. If you want to collect data on specific trace events, do the following:  
   

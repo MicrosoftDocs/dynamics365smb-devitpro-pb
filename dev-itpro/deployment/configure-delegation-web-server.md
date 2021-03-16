@@ -6,7 +6,7 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.assetid: 186b2dcd-97d5-499d-928e-15c069bb18f1
 caps.latest.revision: 13
@@ -24,7 +24,7 @@ When the client device, [!INCLUDE[webserver](../developer/includes/webserver.md)
 -   [Configuring Kernel Mode Authentication on the Web Server](configure-delegation-web-server.md#Kernel)  
   
 ##  <a name="Delegate"></a> Delegating Access from the Web Server to [!INCLUDE[server](../developer/includes/server.md)]  
- Configuring delegation means explicitly configuring the computer that is running [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)] to delegate its access to the [!INCLUDE[server](../developer/includes/server.md)] on behalf of the device that is trying to connect to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. To make the access more secure, you specify delegation to a specific service on a specific server. This is known as *constrained delegation*.  
+ Configuring delegation means explicitly configuring the computer that is running [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)] to delegate its access to the [!INCLUDE[server](../developer/includes/server.md)] on behalf of the device that is trying to connect to [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. To make the access more secure, you specify delegation to a specific service on a specific server. This is known as *constrained delegation*.  
   
 > [!NOTE]  
 >  You must run the following procedure on a domain controller computer or on a computer that is installed with Active Directory Domain Services tools.  
@@ -44,7 +44,7 @@ When the client device, [!INCLUDE[webserver](../developer/includes/webserver.md)
 5.  On the **Delegation** tab, choose **Trust this user for delegation to specified services only**, and then choose **Use Kerberos only**.  
   
     > [!NOTE]  
-    >  The **Use Kerberos Only** option does not work for some network configurations with [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. If you get a server error when you try open the [!INCLUDE[webserver](../developer/includes/webserver.md)], then disable the **Use Kerberos Only** option and see whether this fixes the error. For more information about this error, see [Troubleshooting: A server error occurred and the content cannot be displayed](/dynamics-nav/Troubleshooting--A-server-error-occurred-and-the-content-cannot-be-displayed).  
+    >  The **Use Kerberos Only** option does not work for some network configurations with [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. If you get a server error when you try open the [!INCLUDE[webserver](../developer/includes/webserver.md)], then disable the **Use Kerberos Only** option and see whether this fixes the error. For more information about this error, see [Troubleshooting: A server error occurred and the content cannot be displayed](/dynamics-nav/Troubleshooting--A-server-error-occurred-and-the-content-cannot-be-displayed).  
   
 6.  You must add the following service entries for the computer that is running [!INCLUDE[server](../developer/includes/server.md)], where **BCSERVER** indicates the name of the computer that is running [!INCLUDE[server](../developer/includes/server.md)].  
   
@@ -102,11 +102,11 @@ When the client device, [!INCLUDE[webserver](../developer/includes/webserver.md)
      For example, if **BCSERVER** is the name of the computer that is running [!INCLUDE[server](../developer/includes/server.md)] and **[!INCLUDE[serverinstance](../developer/includes/serverinstance.md)]** is the instance name, the actual command has the following format.  
   
     ```  
-    setspn -A BC150/BCSERVER.corp:7046 corp\bcdomainuser  
+    setspn -A BC160/BCSERVER.corp:7046 corp\bcdomainuser  
     ```  
   
 ##  <a name="Kernel"></a> Configuring Kernel Mode Authentication on the [!INCLUDE[webserver](../developer/includes/webserver.md)]   
-By default, Windows authentication on the [!INCLUDE[webserver](../developer/includes/webserver.md)] site on IIS is set to use kernel mode authentication. Kernel-mode authentication improves authentication performance. However, when you are using delegation with Kerberos, you must either disable kernel mode or configure it to use the credentials of the application pool of [!INCLUDE[webserver](../developer/includes/webserver.md)]; otherwise, authentication will fail and [!INCLUDE[webserver](../developer/includes/webserver.md)] will not be able to connect to [!INCLUDE[server](../developer/includes/server.md)]. This is because kernel mode authentication runs under the machine account of the computer that is running IIS and the [!INCLUDE[!INCLUDE[webserver](../developer/includes/webserver.md)], while the [!INCLUDE[webserver](../developer/includes/webserver.md)] runs under the user account of the user trying to access [!INCLUDE[prodshort](../developer/includes/prodshort.md)].  
+By default, Windows authentication on the [!INCLUDE[webserver](../developer/includes/webserver.md)] site on IIS is set to use kernel mode authentication. Kernel-mode authentication improves authentication performance. However, when you are using delegation with Kerberos, you must either disable kernel mode or configure it to use the credentials of the application pool of [!INCLUDE[webserver](../developer/includes/webserver.md)]; otherwise, authentication will fail and [!INCLUDE[webserver](../developer/includes/webserver.md)] will not be able to connect to [!INCLUDE[server](../developer/includes/server.md)]. This is because kernel mode authentication runs under the machine account of the computer that is running IIS and the [!INCLUDE[!INCLUDE[webserver](../developer/includes/webserver.md)], while the [!INCLUDE[webserver](../developer/includes/webserver.md)] runs under the user account of the user trying to access [!INCLUDE[prod_short](../developer/includes/prod_short.md)].  
   
  As a best practice, you should configure kernel mode authentication to use the application pool credentials, as described in the following procedure.  
   
@@ -141,7 +141,7 @@ By default, Windows authentication on the [!INCLUDE[webserver](../developer/incl
   
      On the **Start** menu, in the **Search Programs and Files** box, type **inetmgr**, and then press Enter.  
   
-2.  In the **Connections** pane, expand **Sites**, and then select **[!INCLUDE[prodlong](../developer/includes/prodlong.md)] Web client**.  
+2.  In the **Connections** pane, expand **Sites**, and then select **[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Web client**.  
   
 3.  In the **IIS** section, double-click **Authentication**.  
   

@@ -6,7 +6,7 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -80,6 +80,8 @@ You can always add more breakpoints while debugging.
 
 [AL Development Environment](devenv-reference-overview.md)  
 [Developing Extensions in AL](devenv-dev-overview.md)  
+[Debugging](devenv-debugging.md)  
+[Snapshot Debugging](devenv-snapshot-debugging.md)  
 [JSON Files](devenv-json-files.md)  
 [EnableLongRunningSQLStatements Property](properties/devenv-enablelongrunningsqlstatements-property.md)  
 [EnableSQLInformationDebugger Property](properties/devenv-enablesqlinformationdebugger-property.md)  

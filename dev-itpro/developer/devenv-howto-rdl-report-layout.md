@@ -7,7 +7,7 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
@@ -71,12 +71,12 @@ To facilitate testing your report layout, the following simple example extends t
 You will now see the generated report in preview mode.
 
 > [!NOTE]  
-> If the report layout is not generated, open the `settings.json` from Visual Studio Code. Use **Ctrl+Shift+P**, then choose **Preferences: Open User Settings**, locate the **AL Language extension**. Under **Compilation Options**, choose **Edit in settings.json** and add the following line: 
-    ```json
-    "al.compilationOptions": {
-            "generateReportLayout": true
-        }
-    ```
+> If the report layout is not generated, open the `settings.json` from Visual Studio Code. Use **Ctrl+Shift+P**, then choose **Preferences: Open User Settings**, locate the **AL Language extension**. Under **Compilation Options**, choose **Edit in settings.json** and add the following line:  
+>    ```json
+>    "al.compilationOptions": {
+>            "generateReportLayout": true
+>        }
+>    ```
 
 ## See Also
 

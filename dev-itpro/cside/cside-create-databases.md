@@ -1,5 +1,5 @@
 ---
-title: Creating and Altering Business Central Databases
+title: Creating and Altering Business Central Databases in CSIDE
 description: Create a new database in the development environment and by using the New-NAVDatabase cmdlet in the Administration Shell. 
 ms.custom: na
 ms.date: 10/01/2020
@@ -10,11 +10,11 @@ ms.topic: article
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
-# Creating and Altering [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Databases
+# Creating and Altering [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Databases
 
 [!INCLUDE[2019_Spring](../includes/2019_Spring.md)]
 
-You can create new [!INCLUDE[prodshort](../developer/includes/prodshort.md)] databases in the [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] and by using the [New-NAVDatabase](https://go.microsoft.com/fwlink/?LinkID=401374) cmdlet in the [!INCLUDE[devshell](../developer/includes/devshell.md)].  
+You can create new [!INCLUDE[prod_short](../developer/includes/prod_short.md)] databases in the [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] and by using the [New-NAVDatabase](https://go.microsoft.com/fwlink/?LinkID=401374) cmdlet in the [!INCLUDE[devshell](../developer/includes/devshell.md)].  
 
 >[!NOTE]
 > [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] is [!INCLUDE[2019_releasewave2_deprecated](../includes/2019_releasewave2_deprecated.md)].
@@ -53,7 +53,7 @@ Open the [!INCLUDE[nav_shell](../developer/includes/nav_shell_md.md)] as an admi
 
 5.  In the **Password** field, enter your password if you have selected **Database Server Authentication**.  
 
-6.  To set the network type to be used when connecting to the server, choose the **Advanced** tab and select the net type from the drop down list box in the **Net Type** field. However, it is not usually necessary to change the network type from the default setting. The **Default** net type setting allows [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to connect to a server using the default client network type assigned by SQL Server. You can change the net type with the Client Network Utility, which is part of the SQL Server Client Utilities, if they have been installed on the client computer.  
+6.  To set the network type to be used when connecting to the server, choose the **Advanced** tab and select the net type from the drop down list box in the **Net Type** field. However, it is not usually necessary to change the network type from the default setting. The **Default** net type setting allows [!INCLUDE[prod_short](../developer/includes/prod_short.md)] to connect to a server using the default client network type assigned by SQL Server. You can change the net type with the Client Network Utility, which is part of the SQL Server Client Utilities, if they have been installed on the client computer.  
 
 7.  Choose **OK** to connect to the server and open the **New Database** window.  
 
@@ -74,7 +74,7 @@ Open the [!INCLUDE[nav_shell](../developer/includes/nav_shell_md.md)] as an admi
 > [!WARNING]  
 >  You can always enlarge a database later on, but you cannot make it smaller.  
 
- After you have created the database, you can enter program objects and company data. Before you can create company data, you must import some basic data from another [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database. The imported data must at least include **Data Common to All Companies** and **Application Objects**. <!-- For more information, see [Exporting and Importing Companies and Other Data](Exporting-and-Importing-Companies-and-Other-Data.md).-->  
+ After you have created the database, you can enter program objects and company data. Before you can create company data, you must import some basic data from another [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database. The imported data must at least include **Data Common to All Companies** and **Application Objects**. <!-- For more information, see [Exporting and Importing Companies and Other Data](Exporting-and-Importing-Companies-and-Other-Data.md).-->  
 
 ## Alter a Database
 
@@ -123,7 +123,7 @@ If you change the collation from a case-sensitive to a case-insensitive collatio
 > Changing the collation can be a lengthy process that depends on the size of the database and the number of companies in the database. The system tables and all user table indexes that contain character data must be rebuilt.  
 -->
 
-The **Language** drop-down list displays the friendly name of the language, not the full Windows collation name. For some languages, there are multiple collations that sort characters differently. For example, the Windows collation languages include multiple Scandinavian languages, some of which sort Aa after Z, Æ, Ø, and some of which sort Aa after A and before B. If you upgrade from [!INCLUDE[nav2009](../developer/includes/nav2009_md.md)] to [!INCLUDE[prodshort](../developer/includes/prodshort.md)], you upgrade the database to the Windows collations. If you used SQL collation in earlier versions of [!INCLUDE[navnow](../developer/includes/navnow_md.md)], then after you upgrade, verify that the Windows collation sorts characters in the way that you expect.  
+The **Language** drop-down list displays the friendly name of the language, not the full Windows collation name. For some languages, there are multiple collations that sort characters differently. For example, the Windows collation languages include multiple Scandinavian languages, some of which sort Aa after Z, Æ, Ø, and some of which sort Aa after A and before B. If you upgrade from [!INCLUDE[nav2009](../developer/includes/nav2009_md.md)] to [!INCLUDE[prod_short](../developer/includes/prod_short.md)], you upgrade the database to the Windows collations. If you used SQL collation in earlier versions of [!INCLUDE[navnow](../developer/includes/navnow_md.md)], then after you upgrade, verify that the Windows collation sorts characters in the way that you expect.  
   
 If you set the **Validate Collation** check box, then collation languages that run with a different non-Unicode code page from your system non-Unicode code page are filtered out of the **Language** drop-down list. An example scenario of when you might want to choose a collation language that has a different code page from your system code page is if you want to prepare a Japanese database on a Danish computer.
   

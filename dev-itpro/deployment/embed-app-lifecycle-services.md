@@ -6,21 +6,21 @@ ms.custom: na
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
 ms.date: 10/01/2020
 ---
 
-# Managing an [!INCLUDE [prodshort](../developer/includes/prodshort.md)] [!INCLUDE[embed app](../developer/includes/embedapp.md)] in Microsoft Lifecycle Services
+# Managing an [!INCLUDE [prod_short](../developer/includes/prod_short.md)] [!INCLUDE[embed app](../developer/includes/embedapp.md)] in Microsoft Lifecycle Services
 
-Microsoft provides essential functionality within [Microsoft Lifecycle Services](https://lcs.dynamics.com/v2) collaboration portal (LCS) to support qualified ISVs in managing the [!INCLUDE[embedapp](../developer/includes/embedapp.md)] based on [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online.  
+Microsoft provides essential functionality within [Microsoft Lifecycle Services](https://lcs.dynamics.com/v2) collaboration portal (LCS) to support qualified ISVs in managing the [!INCLUDE[embedapp](../developer/includes/embedapp.md)] based on [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online.  
 
 ## Creating LCS project
 
-In LCS, you should create a project for each [!INCLUDE[embedapp](../developer/includes/embedapp.md)] and each country you would like to deploy to [!INCLUDE [prodshort](../developer/includes/prodshort.md)] service. You provide the list of countries where you want to run your Embed app during onboarding. You can only deploy your solution to the country that is already supported in the Business Central online service. Find the list of supported countries here: https://aka.ms/bccountries. 
+In LCS, you should create a project for each [!INCLUDE[embedapp](../developer/includes/embedapp.md)] and each country you would like to deploy to [!INCLUDE [prod_short](../developer/includes/prod_short.md)] service. You provide the list of countries where you want to run your Embed app during onboarding. You can only deploy your solution to the country that is already supported in the Business Central online service. Find the list of supported countries here: https://aka.ms/bccountries. 
 
-Before you can create a project, you need to unlock a corresponding Private Preview feature. Once you sign in to LCS, click on the **Preview feature management** action. Then on the Preview feature management page, select the "+" action to add a new preview feature using a preview code. In the **Preview code** field, enter the code you received from Microsoft during onboarding. You should now see the "Microsoft Dynamics 365 Business Central (SaaS)" feature on the list of the Private preview features on this page.     
+Before you can create a project, you need to unlock a corresponding Private Preview feature. Once you sign in to LCS, select the **Preview feature management** action. Then on the Preview feature management page, select the "+" action to add a new preview feature using a preview code. In the **Preview code** field, enter the code you received from Microsoft during onboarding. You should now see the "Microsoft Dynamics 365 Business Central (SaaS)" feature on the list of the private preview features on this page.     
 
 > [!IMPORTANT]  
 > Even though the project will be created by one user, every user you are planning to add to your LCS project will have to activate the "Microsoft Dynamics 365 Business Central (SaaS)" feature using the same preview code you received from Microsoft. Without this activation, the users you add to your LCS project will run into permissions issues when trying to open the LCS project that you created. 
@@ -34,38 +34,64 @@ Next, provide a short description for your project (optional), select **Microsof
 
 After you create the project, send its ID to the e-mail alias specified on the main project page for safe listing purposes. You can find the project ID in the URL displayed in your browser, such as `https://lcs.dynamics.com/V2/NavProjectDashboard/[projectID]`
 
-## Uploading deployment package
+Once your LCS project ID has been safe listed by Microsoft, you can start performing deployments of your solution to [!INCLUDE [prod_short](../developer/includes/prod_short.md)] service.
 
-Once your LCS project ID has been safe listed by Microsoft, you can continue to upload the [!INCLUDE[embedapp](../developer/includes/embedapp.md)] deployment package into the Asset library. <!-- COMMENTED OUT UNTIL THE FILE IS FOUND You can read more about the the content and structure of the deployment package [here]: https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/embedapps/embed-app-deployment-package.--> 
+## Deploying the [!INCLUDE[embedapp](../developer/includes/embedapp.md)]
 
-In your LCS project, select the **Asset library** action to navigate to the Asset library page. Then, select the **+** action to open the **Upload Software deployable package file** wizard. Provide the **Name** and **Description** (optional) for your package. The asset name you provide here will be displayed on the Application Version list inside your project. Select the Add the file action to select and upload the deployment package. Wait for the package to get uploaded and select the Confirm button to close the upload wizard.  
+### Prerequisites
 
-## Deploying the Embed app
+Before deploying the [!INCLUDE[embedapp](../developer/includes/embedapp.md)], complete the following tasks:
 
-To deploy the package you uploaded in the **Asset library**, do these steps:
+1. Create the deployment package for the Embed App.
+
+    The deployment package is a .zip file that contains components required for any Embed app. For more information, see [Creating Deployment Packages for Embed Apps](../embedapps/embed-app-deployment-package.md). 
+
+2. Upload your apps into the App Repository
+
+    Upload new versions of your own apps into the App Repository using the App Management API. Don't upload Microsoft apps or apps from other ISVs. The Microsoft team regularly uploads Microsoft apps and AppSource apps to this repository, so you don't have to. For more information, see [App Management API](../administration/appmanagement/app-management-api.md#upload-version).
+
+### Upload the deployment package
+
+Once you have the deployment package and uploaded the apps, you can upload the Embed App deployment package into the **Asset library** within your LCS project.
+
+1. In your LCS project, select the **Asset library** action to navigate to the Asset library page.
+2. Select the **+** action to open the **Upload Software deployable package file** wizard.
+3. Provide the **Name** and **Description** (optional) for your package.
+
+    The asset name you provide will be displayed on the Application Version list inside your project.
+4. Select the **Add the file** action to select and upload the deployment package.
+
+5. Wait for the package to get uploaded, then select the **Confirm** button to close the upload wizard.  
+
+### Start the Embed App deployment
+
+Now, start deploying the package you uploaded in the **Asset library** by doing the following steps:
 
 1. Go to the **Rings** section of your project.
 2. Select **Maintain** menu, then select **Deploy** action to open the **Deploy package** wizard.
 3. Select the package you want to deploy in the **Package name** field.
 4. Select the **Target platform**, then select **Deploy** button to start the deployment. 
 
-> [!IMPORTANT]
-> The [!INCLUDE [prodshort](../developer/includes/prodshort.md)] platform is updated monthly. You are responsible for updating the Embed App to operate with the updated version of Business Central. The Embed App must run on a supported build of Business Central, for example, the current version of Business Central or one of the two immediately preceding versions. The immediately preceding versions can be both minor and major versions of Business Central. The list of supported versions is displayed in the LCS portal on the **Deploy package wizard** in the **Target platform** field. The versions, which aren't displayed on that list are out of support. You customers running on these versions can't be serviced at the service levels set forth in the published [Service Level Agreement](https://www.microsoft.com/licensing/product-licensing/products). 
+The deployment routine will pull the apps that are listed in the `[apps]` section of the `manifest.json` file in your deployment package from the App Repository. It will then publish and install the apps based on the instructions you provided in the `manifest.json` file.
 
-After the Environment is successfully provisioned, its status on the list of application versions will be set to **Deployed**. To allow sign-ups to be directed to this application version, you select the **Use for new tenants** check box. You can only have one application version marked this way at a time. 
+After the environment is successfully provisioned, its status on the list of application versions will be set to **Deployed**. To allow sign-ups to be directed to this application version, you select the **Use for new tenants** check box. You can only have one application version marked this way at a time. 
+
+> [!IMPORTANT]
+> The [!INCLUDE [prod_short](../developer/includes/prod_short.md)] platform is updated monthly. You are responsible for updating the Embed App to operate with the updated version of Business Central. The Embed App must run on a supported build of Business Central, for example, the current version of Business Central or one of the two immediately preceding versions. The immediately preceding versions can be both minor and major versions of Business Central. The list of supported versions is displayed in the LCS portal on the **Deploy package wizard** in the **Target platform** field. The versions, which aren't displayed on that list are out of support. You customers running on these versions can't be serviced at the service levels set forth in the published [Service Level Agreement](https://www.microsoft.com/licensing/product-licensing/products).
+
 
 ## Onboarding customers and creating environments
 
-Partners who support an [!INCLUDE[embedapp](../developer/includes/embedapp.md)] based on [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online can onboard customers in two ways:
+Partners who support an [!INCLUDE[embedapp](../developer/includes/embedapp.md)] based on [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online can onboard customers in two ways:
 
 - Using the self-service IW sign-up – for acquiring a free evaluation version of the app.  
 - Through the Microsoft Partner Center Cloud Solution Provider (CSP) program by contacting the partner - for acquiring a paid production version of the [!INCLUDE[embedapp](../developer/includes/embedapp.md)].
 
-Tenant provisioning is happening automatically (just-in-time) on the first attempt to login into the solution.
+Tenant provisioning is happening automatically (just-in-time) on the first attempt to sign in to the solution.
 
 Navigating to `https://businesscentral.dynamics.com` will trigger provisioning of the Business Central tenant, while navigating to `https://[application name].bc.dynamics.com` will trigger provisioning of the tenant running on the *application name* application.  
 
-### Self Service (IW) sign-up - evaluation
+### Self-Service (IW) sign-up - evaluation
 
 The Embed App partner can choose to allow customers to use a self-service sign-up (also known as IW sign-up and viral sign-up) for their [!INCLUDE[embedapp](../developer/includes/embedapp.md)]. In that case, the partner must prepare a sign-up URL that will redirect the Microsoft 365 sign-up flow to their application URL. The sign-up URL must have the following format:
 
@@ -78,12 +104,12 @@ To work with an [!INCLUDE[embedapp](../developer/includes/embedapp.md)], the cus
 - Client: `https://[application name].bc.dynamics.com`
 - Web Services: `https://[application name].api.bc.dynamics.com`
 
-In contrast, to work with [!include[prodshort](../developer/includes/prodshort.md)], they would use these URLs:
+In contrast, to work with [!include[prod_short](../developer/includes/prod_short.md)], they would use these URLs:
 
 - Client: `https://businesscentral.dynamics.com` 
 - Web Services: `https://api.businesscentral.dynamics.com`  
 
-Once you've established the reseller relationship with the customer and added [!INCLUDE [prodshort](../developer/includes/prodshort.md)] subscriptions with required number of licenses for them, you must use your own branded Embed app URL to sign in their environment and [!INCLUDE [prodshort](../developer/includes/prodshort.md)] Administration center.
+Once you've established the reseller relationship with the customer and added [!INCLUDE [prod_short](../developer/includes/prod_short.md)] subscriptions with required number of licenses for them, you must use your own branded Embed app URL to sign in their environment and [!INCLUDE [prod_short](../developer/includes/prod_short.md)] Administration center.
 
 To create a new production environment for your customers, go to this URL:
 
@@ -91,7 +117,7 @@ To create a new production environment for your customers, go to this URL:
 https://[your application family].bc.dynamics.com/[Customer's Azure AD Tenant ID]/Production
 ```
 
-To open your customer's [!INCLUDE [prodshort](../developer/includes/prodshort.md)] Administration center, go to this URL:
+To open your customer's [!INCLUDE [prod_short](../developer/includes/prod_short.md)] Administration center, go to this URL:
 
 ```http
 https://[your application family].bc.dynamics.com/[Customer's Azure AD Tenant ID]/admin
@@ -126,5 +152,5 @@ It's important to always review the logs before submitting any issues to Microso
 [Licensing in Dynamics 365 Business Central](licensing.md)  
 [Components and Capabilities](app-components.md)  
 [Microsoft Responsibilities for Apps on Business Central online](microsoft-responsibilities.md)  
-[Preparing Demonstration Environments of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](../administration/demo-environment.md)  
-[Preparing Test Environments of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](../administration/test-environment.md)  
+[Preparing Demonstration Environments of [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](../administration/demo-environment.md)  
+[Preparing Test Environments of [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](../administration/test-environment.md)  

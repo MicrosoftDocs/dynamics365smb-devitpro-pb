@@ -1,13 +1,12 @@
 ---
-title: "When using 'OnInstallPerCompany' you should also add 'Company - Initialize'::'OnCompanyInitialize' event subscriber."
-description: Explains CodeCop Rule AA0235.
+title: "When using 'OnInstallPerCompany' you should also add 'Company-Initialize'::'OnCompanyInitialize' event subscriber."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 03/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -15,10 +14,10 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # CodeCop Rule AA0235
-When using 'OnInstallPerCompany' you should also add 'Company - Initialize'::'OnCompanyInitialize' event subscriber.  
+When using 'OnInstallPerCompany' you should also add 'Company-Initialize'::'OnCompanyInitialize' event subscriber.  
 
 ## Description
-When using trigger 'OnInstallPerCompany' in a codeunit with 'Subtype = Install' you should also add a 'Company - Initialize'::'OnCompanyInitialize' event subscriber to ensure that new companies also have the correct setup.
+When using trigger 'OnInstallPerCompany' in a codeunit with 'Subtype = Install' you should also add a 'Company-Initialize'::'OnCompanyInitialize' event subscriber to ensure that new companies also have the correct setup.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -51,7 +50,7 @@ codeunit 1160 "AP Install"
    ...
    end;
 
-   [EventSubscriber(ObjectType::Codeunit, Codeunit::""Company - Initialize"", 'OnCompanyInitialize', '', false, false)]
+   [EventSubscriber(ObjectType::Codeunit, Codeunit::"Company - Initialize", 'OnCompanyInitialize', '', false, false)]
    local procedure CompanyInitialize()
    begin
    ...

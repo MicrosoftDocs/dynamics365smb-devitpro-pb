@@ -5,7 +5,7 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.assetid: ddd157e5-069a-44c5-b25b-1e90cb0bf1d0
 caps.latest.revision: 4
@@ -13,11 +13,11 @@ author: SusanneWindfeldPedersen
 ---
 # Enable Business Central Debug Logs in Event Viewer
 
-Some [!INCLUDE[server](../developer/includes/server.md)] events are collected in the following **Debug** logs specific to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in Event Viewer:
+Some [!INCLUDE[server](../developer/includes/server.md)] events are collected in the following **Debug** logs specific to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] in Event Viewer:
 
--   **Applications and Services Logs** > **Microsoft** > **Dynamics365BusinessCentral** > **Server**
+-   **Applications and Services Logs** > **Microsoft** > **DynamicsNAV** > **Server**
 
-- **Applications and Services Logs** > **Microsoft** > **Dynamics365BusinessCentral** > **Common**
+- **Applications and Services Logs** > **Microsoft** > **DynamicsNAV** > **Common**
 
 By default the **Debug** logs are disabled and may also be hidden in the Event Viewer. To collect trace event data, you must enable the **Debug** logs.  
   
@@ -27,7 +27,7 @@ By default the **Debug** logs are disabled and may also be hidden in the Event V
   
      For more information, see [How to Start Event Viewer](https://technet.microsoft.com/library/gg163894.aspx).  
   
-2.  In the console tree, choose **Applications and Services Logs**, **Microsoft**, **Dynamics365BusinessCentral**, and then **Server** or **Common**.  
+2.  In the console tree, choose **Applications and Services Logs**, **Microsoft**, **DynamicsNAV**, and then **Server** or **Common**.  
   
 3.  If the **Debug** log is not shown under **Server**, then on the **View** menu, select **Show Analytic and Debug Logs**.  
   

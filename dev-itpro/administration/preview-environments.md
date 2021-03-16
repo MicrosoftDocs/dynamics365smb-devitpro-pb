@@ -1,10 +1,10 @@
 ---
 title: Prepare for major updates with preview environments | Microsoft Docs
-description: Use preview sandboxes to help prepare for the next major update of Business Central.  
+description: Learn how to use preview sandboxes to help prepare for the next major update of Business Central online.
 author: edupont04
 
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -31,7 +31,7 @@ Once you have the preview, start using it:
 
 3. Test the quality. If you run into issues related to the preview, please provide [feedback on Collaborate](#provide-feedback-on-the-preview).
 
-Finally, as always, if you have ideas for features you would like to see in future releases of [!INCLUDE [prodshort](../developer/includes/prodshort.md)], let us know at [https://aka.ms/bcideas](https://aka.ms/bcideas).
+Finally, as always, if you have ideas for features you would like to see in future releases of [!INCLUDE [prod_short](../developer/includes/prod_short.md)], let us know at [https://aka.ms/bcideas](https://aka.ms/bcideas).
 
 ## Provide feedback on the preview
 
@@ -43,7 +43,7 @@ We need your feedback on the preview! Let us know about your experiences with th
 
 3. Choose **Engagements**, and then choose **Join**
 
-4. Under the **Ready! for Dynamics 365 Business Central program**, find **2020 release wave 2 Preview** in the list of available engagements, and choose **Join**
+4. Under the **Ready! for Dynamics 365 Business Central** program, find **2021 release wave 1 Preview** in the list of available engagements, and choose **Join**
 
 Once you have joined the preview engagement, you can submit your feedback by filling in the form. You must specify if you are reporting a technical issue, a translation issue, or a documentation issue. The default severity is set to 3, which is the normal severity for most defects and means that the system is not crashing and users are not blocked from doing their work, but you can change that. When we have triaged your issue, you can see changes in Collaborate.
 
@@ -58,4 +58,4 @@ Once you have joined the preview engagement, you can submit your feedback by fil
 [The Business Central Administration Center](tenant-admin-center.md)  
 [Managing Environments](tenant-admin-center-environments.md)  
 [Managing Tenant Notifications](tenant-admin-center-notifications.md)  
-[Register on Collaborate](../developer/readiness/readiness-add-on-apps-getting-you-started.md#register-on-collaborate)  
+[Step 4: Getting access to preview bits](../developer/readiness/get-started.md#step-4-getting-access-to-preview-bits)  

@@ -6,13 +6,13 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.assetid: f64156c7-0319-40ef-adfa-2c1d4ee1b852
 caps.latest.revision: 15
 manager: edupont
 ---
-# Table Keys and Performance in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
+# Table Keys and Performance in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]
 When you write AL code that searches through a subset of the records in a table, you must consider what keys are defined for the table and write code that optimizes for the keys. For example, the entries for a specific customer are usually a small subset of a table containing entries for all the customers.  
 
 ## Defining Keys to Improve Performance  
@@ -37,7 +37,7 @@ REPEAT
 UNTIL NEXT = 0;  
 ```  
 
- SQL Server automatically chooses which index to use in order to retrieve data in the most efficient way. SQL Server calculates the cost of retrieving data using different indexes and then chooses the path that has the smallest cost. For [!INCLUDE[prodshort](../developer/includes/prodshort.md)], that calculation is based only on the statistical distribution of values in a column.  
+ SQL Server automatically chooses which index to use in order to retrieve data in the most efficient way. SQL Server calculates the cost of retrieving data using different indexes and then chooses the path that has the smallest cost. For [!INCLUDE[prod_short](../developer/includes/prod_short.md)], that calculation is based only on the statistical distribution of values in a column.  
 
  For example, if a table contains 1000 rows and a column in the table contains either the value 0 or the value 1, then that column is said to have a low selectivity. If instead a column contained the values ranging from 1 to 500 then the column is said to have a high selectivity. In the following code example, SQL Server chooses an index that contains the HighSelectivityColumn and then sorts the rows by the LowSelectivityColumn.  
 

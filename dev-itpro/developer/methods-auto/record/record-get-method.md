@@ -2,11 +2,11 @@
 title: "Record.Get Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Record.Get Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets a record based on values stored in primary key fields.
 
 
@@ -22,9 +24,9 @@ Gets a record based on values stored in primary key fields.
 [Ok := ]  Record.Get([Value: Any,...])
 ```
 ## Parameters
-*Record*  
-&emsp;Type: [Record](record-data-type.md)  
-An instance of the [Record](record-data-type.md) data type.  
+*Record*
+&emsp;Type: [Record](record-data-type.md)
+An instance of the [Record](record-data-type.md) data type.
 
 *Value*  
 &emsp;Type: [Any](../any/any-data-type.md)  
@@ -32,16 +34,16 @@ An instance of the [Record](record-data-type.md) data type.
 
 
 ## Return Value
-*Ok*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+*Ok*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+**true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
 
-This method always uses the primary key for the table. It ignores any filters that are set, except security filters. Security filters are applied or ignored based on the Security Filter Mode. The current key and filters are not changed after you call this function. <!-- For more information, see Security Filter Modes.-->
+This method always uses the primary key for the table. It ignores any filters that are set, except security filters. Security filters are applied or ignored based on the Security Filter Mode. The current key and filters are not changed after you call this method. <!-- For more information, see Security Filter Modes.-->
 
 > [!NOTE]  
 > `Get` does not require specifying all fields of the key in the call; any omitted field is treated as default value (for example, ‘’ for text/code, false for boolean). You can only omit from the end of the key, not a field in the middle of a key. If a record with a blank/default value exists that is the one being returned, otherwise it will fail with a record does not exist error.
@@ -66,13 +68,13 @@ Text000	The record was found.
 Text001	The record could not be found.
 
 Copy
-CustomerRec.GET('1120');  
+CustomerRec.Get('1120');  
 // This statement causes a run-time error if customer 1120 cannot be   
 // found. To avoid this, use the following construct:  
-IF CustomerRec.GET('1120') THEN  
-  MESSAGE(Text000)  
+IF CustomerRec.Get('1120') THEN  
+  Message(Text000)  
 ELSE  
-  MESSAGE(Text001);  
+  Message(Text001);  
 
 -->
 ## See Also

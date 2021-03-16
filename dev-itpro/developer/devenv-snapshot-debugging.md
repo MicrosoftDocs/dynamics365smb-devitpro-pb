@@ -3,24 +3,19 @@ title: "Snapshot Debugging"
 description: "Overview of how snapshot debugging allows recording running AL code for Business Central"
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 01/08/2021
 ms.reviewer: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
 # Snapshot Debugging
 
-[!INCLUDE[2020_releasewave2_preview](../includes/2020_releasewave2_preview.md)]
-
-> [!IMPORTANT]  
-> The Snapshot Debugging feature in 17.0 is not yet active in 17.0 sandbox tenants because of the delay of the deployment of some of our SaaS components. We are working on a mitigation to get this fixed as soon as possible. At this point any attempt at Snapshot Debugging will return an Internal Server Error in Visual Studio Code.
+> [!NOTE]  
+> With [!INCLUDE[prod_short](includes/prod_short.md)] 17.2 - Snapshot Debugging is available in production cloud environments.
 
 Snapshot debugging allows a delegated admin to record AL code that runs on the server, and once it has run, debug the recorded *snapshot* in Visual Studio Code. For a delegated admin to create and download a snapshot file that exists on the server on behalf of an end-user, the delegated admin must be part of the **D365 Snapshot Debug** permission group. For more information, see [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions). One of the advantages of snapshot debugging is that it provides the ability to inspect code execution and variables in the production environment in a cloud service, on a specified user session.
-
-> [!IMPORTANT]  
-> With this release snapshot debugging is enabled in *sandbox environments* only. Debugging in a production environment will be enabled with a later release. You can, however, use snapshot debugging in this release to attach to a specific user session, which is currently not possible with regular debugging.
 
 Snapshot debugging introduces the concept of *snappoints*. A snappoint is a breakpoint in Visual Studio Code that is set when creating a snapshot, they do not, however, stop execution of code like when using regular debugging. Snappoints instruct execution to log the state at the breakpoint for later offline inspection. Snapshot debugging will record AL code as it runs on the server, but will only collect variable information on: 
 
@@ -28,7 +23,7 @@ Snapshot debugging introduces the concept of *snappoints*. A snappoint is a brea
 - AL exceptions
 
 > [!IMPORTANT]  
-> To enable snapshot debugging it is very important that the symbols on the tenant match the symbols on the server. This is not automatically detected, and must be manually checked. In this release, you can ensure this by copying the specific sandbox and download symbols from that copy. Furthermore, any code that snappoints are set in, must have been deployed, otherwise debugging will not work.
+> To enable snapshot debugging it is very important that the symbols on the tenant match the symbols on the server. This is not automatically detected, and must be manually checked. In this release, you can ensure this by copying the specific sandbox and download symbols from that copy. Furthermore, any code that snappoints are set in, must have been deployed, otherwise debugging will not work. For more information, see the section [Downloading symbols on the snapshot debugger endpoint](devenv-snapshot-debugging.md#downloading-symbols-on-the-snapshot-debugger-endpoint).
 
 ## Snapshot debugging keyboard shortcuts
 
@@ -44,8 +39,8 @@ In the following sections you can read more about how to initialize, view the st
 
 From Visual Studio Code, you start a snapshot by creating a snapshot configuration file. There are two template configurations for a snapshot, which are accessed by selecting **Add Configuration** in Visual Studio Code.
 
-- AL: Initialize a snapshot debugging session locally 
-- AL: Initialize a snapshot debugging session on cloud 
+- AL: Initialize a snapshot debugging session locally
+- AL: Initialize a snapshot debugging session on cloud
 
 Choose whether to run the session on a cloud service or locally. The configuration file will now contain the following information: 
 
@@ -87,6 +82,33 @@ You finish a snapshot debugging session by pressing **Alt+F7**. This brings up a
 > The snapshot file can contain customer privacy data and must therefore be handled according to privacy compliance and should be deleted when it is not needed anymore.
 
 Snapshot debugging sessions that have produced a snapshot file can be debugged. The location of a snapshot file is controlled by the `al.snapshotOutputPath` configuration parameter. By default it is local to the current workspace and it is called `./.snapshots`. For more information, see [AL Language Extension Configuration](devenv-al-extension-configuration.md).
+
+## Downloading symbols on the snapshot debugger endpoint
+
+In order to download symbols on a production server, you need permission related entries:
+
+- Be a delegated admin
+- The read-only access to the **Published Application** table emphasized in the **D365 EXTENSION MGT** permission set should also be granted.
+
+Debugging requires that symbols on the server are matched with the symbols that the user has locally. If this is not the case, and you set a breakpoint on a given line in Visual Studio Code, the line of code may differ from what is on the server.
+
+Symbols download is using the **snapshotInitialize** debug configuration settings in Visual Studio Code, which is set up when you choose either **AL: Initialize a snapshot debugging session locally** or **AL: Initialize a snapshot debugging session on cloud**.
+
+```al
+{
+            "name": "snapshotInitialize: MyServer",
+            "type": "al",
+            "request": "snapshotInitialize",
+            "environmentType": "OnPrem",
+            "server": "http://localhost",
+            "serverInstance": "BC170",
+            "authentication": "UserPassword",
+            "breakOnNext": "WebClient"
+        },
+```
+
+> [!IMPORTANT]  
+> Debugging requires that symbols on the server are matched with the symbols that the user has locally. If this is not the case, and you set a breakpoint on a given line in Visual Studio Code, the line of code may differ from what is on the server. This is why you must download symbols from production servers for snapshot debugging in order for a breakpoint set on one line to match with what the server understands of this line. This is to avoid a scenario where you set a breakpoint in a DAL file on line 12, but line 12 on the server is an empty line or a completely different line if the symbols are not the same.
 
 ## Debugging a snapshot file 
 

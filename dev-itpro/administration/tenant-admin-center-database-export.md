@@ -1,42 +1,44 @@
 ---
 title: Exporting Databases
 description: Use the Business Central administration center to export tenant databases per environment.  
-author: edupont04
+author: jswymer
 
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: administration, tenant, admin, environment, sandbox, database, export
-ms.date: 10/01/2020
-ms.author: edupont
+ms.search.keywords: administration, tenant, admin, environment, sandbox, database, export, bacpac, backup
+ms.date: 11/04/2020
+ms.author: jswymer
 
 ---
 # Exporting Databases
 
 [!INCLUDE[2019_releasewave2](../includes/2019_releasewave2.md)]
 
-From the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], you can export the database for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online environments as .bacpac files to an Azure storage container.
+From the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], you can export the database for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online environments as BACPAC files to an Azure storage container.
 
-> [!IMPORTANT]
-> You can only request a database export for production environments. If you want to export data from a sandbox environment, you can use Excel or RapidStart.
->
-> Also, you must have explicit permission to export databases. For more information, see the [Users who can export databases](#users-who-can-export-databases) section.
+## Considerations before you begin
+
+- You can only request a database export for production environments. If you want to export data from a sandbox environment, you can use Excel or RapidStart.
+- You can only request a database export if the customer has a paid Business Central subscription.
+- You must have explicit permission to export databases. For more information, see the [Users who can export databases](#users-who-can-export-databases) section.
+- You can't export your database to an Azure premium storage account. The steps in this article are only supported on Azure standard storage accounts.
 
 ## Setting up Azure storage
 
-Before you can export the file, you must first set up the Azure storage account container that the .bacpac file will be exported to.  
+Before you can export the file, you must first set up the Azure storage account container that the BACPAC file will be exported to.  
 
 ### Creating the storage account
 
-The first step of creating the storage account container is to create the Azure storage account. To set up the export, you must first have a subscription to Microsoft Azure and access to the [Azure portal](https://portal.azure.com). 
+The first step is to create an Azure standard storage account, if you don't already have one. To set up the export, you must first have a subscription to Microsoft Azure and access to the [Azure portal](https://portal.azure.com). 
 
 For more information setting up an Azure storage account, see [Create a storage account](/azure/storage/common/storage-quickstart-create-account?tabs=azure-portal).
 
 ### Generating a shared access signature (SAS)
 
-The next step is to generate a shared access signature (SAS) that provides secure delegated access to your storage account. [!INCLUDE[prodshort](../developer/includes/prodshort.md)] uses this to write the .bacpac file to your storage account.
+The next step is to generate a shared access signature (SAS) that provides secure delegated access to your storage account. [!INCLUDE[prod_short](../developer/includes/prod_short.md)] uses the signature to write the BACPAC file to your storage account.
 
 #### To generate a shared access signature (SAS)
 
@@ -57,48 +59,43 @@ For more information on generating and using a SAS, see [Grant limited access to
 
 ## Creating the database export
 
-When you have created the Azure storage account and generated the SAS URI, you can then create the export file from the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)].
+When you've created the Azure storage account and generated the SAS URI, you can then create the export file from the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)].
 
 1. On the Environments list page, choose the relevant production environment to view the environment details.
 2. On the action ribbon of the environment details, choose **Database**, and then choose **Create Database Export**.
 3. In the **File Name** field, specify a name for the export file, or leave the default value.
 4. In the **SAS URI** field, specify the **Blob service SAS URL** value that you copied in the previous section.
-5. In the **Container Name** field, enter the name of the container in the Azure storage account to which you want the .bacpac file exported. If you have already created a container in your Azure storage account, you can enter the name of that container here. Otherwise, if the name that is specified in the **Container Name** field does not already exist in the Azure storage account, it will be created for you.
+5. In the **Container Name** field, enter the name of the container in the Azure storage account to which you want the BACPAC file exported. If you've already created a container in your Azure storage account, you can enter the name of that container here. Otherwise, if the name that is specified in the **Container Name** field doesn't already exist in the Azure storage account, it will be created for you.
 
-Once the export operation begins, the .bacpac file is generated and exported to the indicated Azure storage account. The operation may take several minutes to several hours depending on the size of the database. You can close the browser window with the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] during the export. When the export completes, you can access the export file in the defined container in your Azure storage account. Optionally, you can import the data into a new database such as Azure SQL Database or SQL Server for further processing. For more information, see [Quickstart: Import a BACPAC file to a database in Azure SQL Database](/azure/sql-database/sql-database-import).  
+Once the export operation begins, the BACPAC file is generated and exported to the indicated Azure storage account. The operation may take several minutes to several hours depending on the size of the database. You can close the browser window with the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] during the export. When the export completes, you can access the export file in the defined container in your Azure storage account. Optionally, you can import the data into a new database in Azure SQL Database or SQL Server for further processing. For more information, see [Quickstart: Import a BACPAC file to a database in Azure SQL Database](/azure/sql-database/sql-database-import).  
 
 > [!NOTE]
 > There is a limit to the number of times you can export the database for each environment in any given month. The **Create Database Export** pane includes information about the number of exports still remaining that month.
 
 ## Viewing the export history
 
-All database export activity is logged for auditing purposes. To view the history, choose **Database**, and then choose **View Export History** on the action ribbon of the environment details page of the environment.
+All database export activity is logged for auditing purposes. To view the history, choose **Database**, then choose **View Export History** on the environment details page of the environment.
 
 ## Users who can export databases
 
-Permission to export databases is limited to specific types of users, typically internal and delegated administrators. This is not a task that a typical [!INCLUDE [prodshort](../developer/includes/prodshort.md)] user should be able to do, but an administrator can grant permission to a user to export databases, should this be necessary.
+Permission to export databases is limited to specific types of users: internal and delegated administrators. The following users are allowed to export databases.
 
-- Users from reselling partners
+- Delegated administrators from reselling partners
 
-  - Employees who have the **Admin agent** role for this customer in the Partner Center
+- Administrators from the organization that subscribes to [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online
 
-    In contrast, employees who have the **Helpdesk agent** role *cannot* export databases.
+Also, these users must have the **D365 BACKUP/RESTORE** permission set assigned to their user account in the environment they're trying to export.
 
-- Users from the organization that subscribes to [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online
-
-  - Users who are internal administrators and have the **Global admin** role in the Microsoft 365 tenant
-  - Users who are members of the *D365 BACKUP/RESTORE* user group
-
-    To add a user to this user group, go to the **User Groups** page in [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. For more information, see [To manage permissions through user groups](/dynamics365/business-central/ui-define-granular-permissions#to-manage-permissions-through-user-groups).  
+For more information about permissions sets and user groups, see [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions).  
 
 ## Using the exported data
 
-The .bacpac file contains data that is customer-specific business data. Technically, [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online is a multitenant deployment, which means that each customer tenant has their own business database while the data that defines the application is in a shared application database.  
+The BACPAC file contains data that is customer-specific business data. Technically, [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online is a multitenant deployment, which means that each customer tenant has their own business database while the data that defines the application is in a shared application database.  
 
-This means that if you want to export the data in order to change the customer's [!INCLUDE [prodshort](../developer/includes/prodshort.md)] from an online deployment to an on-premises deployment, you must also get the application data from the installation media from the same version of [!INCLUDE [prodshort](../developer/includes/prodshort.md)] that the online tenant is using. You can see the version number in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] or the **Help and Support** page in the customer's [!INCLUDE [prodshort](../developer/includes/prodshort.md)].  
+This means that if you want to export the data in order to change the customer's [!INCLUDE [prod_short](../developer/includes/prod_short.md)] from an online deployment to an on-premises deployment, you must also get the application data from the installation media from the same version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] that the online tenant is using. You can see the version number in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] or the **Help and Support** page in the customer's [!INCLUDE [prod_short](../developer/includes/prod_short.md)].  
 
 > [!IMPORTANT]
-> While you can import the downloaded .bacpac file into your own SQL Server instance, Microsoft does not provide support for creating a working on-premises environment from the .bacpac that you download from [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online.  
+> While you can import the downloaded BACPAC file into your own SQL Server instance, Microsoft does not provide support for creating a working on-premises environment from the BACPAC that you download from [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online.  
 
 For more information, see [Quickstart: Import a BACPAC file to a database in Azure SQL Database](/azure/sql-database/sql-database-import), [Migrating to Single-Tenancy From Multitenancy](../deployment/Merging-an-Application-Database-with-a-Tenant-Database.md), and [When to choose on-premises deployment](../deployment/Deployment.md#when-to-choose-on-premises-deployment).  
 

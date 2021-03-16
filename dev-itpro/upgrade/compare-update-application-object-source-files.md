@@ -6,7 +6,7 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 author: jswymer
 ms.service: "dynamics365-business-central"
 ---
@@ -19,9 +19,9 @@ You can use [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] cmdlets to comp
   
 |Version label|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|  
 |-------------------|---------------------------------------|  
-|ORIGINAL|The Microsoft release of [!INCLUDE[prodshort](../developer/includes/prodshort.md)].|  
-|MODIFIED|The updated version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], such as Cumulative Update 1.|  
-|TARGET|Your solution that is based on [!INCLUDE[prodshort](../developer/includes/prodshort.md)], such as **MySolution**.|  
+|ORIGINAL|The Microsoft release of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].|  
+|MODIFIED|The updated version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)], such as Cumulative Update 1.|  
+|TARGET|Your solution that is based on [!INCLUDE[prod_short](../developer/includes/prod_short.md)], such as **MySolution**.|  
   
  The steps in the following procedures compare the ORIGINAL version to the MODIFIED solution and apply the relevant changes to your TARGET solution. As a result, you have an application that contains your solution with the updates from the MODIFIED application. Alternatively, the MODIFIED solution can be your solution and the TARGET solution can be the new release from Microsoft. The actual versions that you use to set each cmdlet parameter depend on your concrete scenario. However, we recommend that MODIFIED contains the solution with the fewest changes compared to ORIGINAL. The Compare-NAVApplicationObject cmdlet compares two sets of application objects and stores the differences in DELTA files in the specified folder.  
   
@@ -97,7 +97,7 @@ You can use [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] cmdlets to comp
   
      This merges the difference between ORIGINAL and MODIFIED with the target solution and puts the resulting solution in the RESULT folder.  
   
- You can now import the merged objects into a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database. For more information, see [Merge Application Changes](merge-application-changes.md).  
+ You can now import the merged objects into a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database. For more information, see [Merge Application Changes](merge-application-changes.md).  
   
 ## See Also  
  [Merge Application Changes](merge-application-changes.md)   

@@ -3,7 +3,7 @@ title:  Extension Update Trace Telemetry | Microsoft Docs
 description: Learn about the extension upgrade telemetry in Business Central  
 author: jswymer
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -41,9 +41,9 @@ Occurs when an extension upgrade fails because of an exception in an upgrade cod
 |aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
 |alObjectId|Specifies the ID of the AL object that was run by request.|
 |alStackTrace|The stack trace in AL.|
-|companyName|The display name of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] company that was used at time of execution. ||
+|companyName|The display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company that was used at time of execution. |
 |component|**Dynamics 365 Business Central Server**.|
-|componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number.|
+|componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |deprecatedKeys|A comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
 |environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
 |environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
@@ -54,7 +54,7 @@ Occurs when an extension upgrade fails because of an exception in an upgrade cod
 |extensionVersion|Specifies the old version of the extension being upgraded.|
 |failureReason|Specifies the exception that was thrown by the upgrade code. Some exception messages can contain customer data. As a precaution, Business Central only emits information that's classified as [SystemMetadata](../developer/devenv-classifying-data.md). Exception messages that contain other data classifications, like customer data, are not shown. Instead, the following message is shown: "Message not shown because the NavBaseException(string, Exception, bool) constructor was used."|
 |failureType|**DataUpdate**|
-|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
+|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 
 ### Example
 

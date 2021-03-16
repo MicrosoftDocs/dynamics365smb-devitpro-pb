@@ -2,11 +2,11 @@
 title: "Record.SetLoadFields Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Record.SetLoadFields Method
+> **Version**: _Available from runtime version 6.0._
+
 Sets the fields to be initially loaded when the record is retrieved from its data source. This will overwrite fields previously selected for initial load.
 
 
@@ -22,9 +24,9 @@ Sets the fields to be initially loaded when the record is retrieved from its dat
 [Ok := ]  Record.SetLoadFields([Fields: Any,...])
 ```
 ## Parameters
-*Record*  
-&emsp;Type: [Record](record-data-type.md)  
-An instance of the [Record](record-data-type.md) data type.  
+*Record*
+&emsp;Type: [Record](record-data-type.md)
+An instance of the [Record](record-data-type.md) data type.
 
 *Fields*  
 &emsp;Type: [Any](../any/any-data-type.md)  
@@ -32,9 +34,9 @@ The FieldNo's of the fields to be loaded.
 
 
 ## Return Value
-*Ok*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if all fields are selected for subsequent loads; otherwise, **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+*Ok*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+**true** if all fields are selected for subsequent loads; otherwise, **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -43,13 +45,15 @@ The FieldNo's of the fields to be loaded.
 
 Calling SetLoadFields on a record without passing any fields will reset the fields selected to load to the default, where all readable normal fields are selected for load.
 
+It is not necessary to include the following fields, because they are always selected for loading: Primary key, SystemId, and data audit fields (SystemCreatedAt, SystemCreatedBy, SystemModifiedAt, SystemModifiedBy).
+
 This method is part of the partial records capability for improving performance. For more information, see [Using Partial Records](../../devenv-partial-records.md).
 
 ## Example
 
 This example uses the SetLoadFields method to speedup the calculation of the mean for values of the **Standard Cost** field in the **Item** table. Instead of loading all fields, only the **Standard Cost** is loaded. The other fields aren't needed for the calculation, so they're not loaded.
 
-```
+```al
 procedure ComputeArithmeticMean(): Decimal;
 var
     Item: Record Item;
@@ -64,7 +68,7 @@ begin
         until Item.Next() = 0;
         exit(SumTotal / Counter);
     end;
-    end;
+end;
 ```
 
 ## See Also

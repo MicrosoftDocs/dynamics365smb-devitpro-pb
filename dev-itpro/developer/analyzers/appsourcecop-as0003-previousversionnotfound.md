@@ -6,7 +6,7 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -23,28 +23,32 @@ The previous version of the extension, used as a baseline for detecting breaking
 
 ## Remarks
 
-This rule validates that the version of the extension specified as a baseline for detecting breaking changes can be found in the package cache folder.
+This rule validates that the version of the extension specified as a baseline for detecting breaking changes can be found in the baseline package cache folder.
+
+> [!NOTE]  
+> The rule [AS0091](appsourcecop-as0091-previousversiondependencynotfound.md) verifies that the dependencies of the baseline can be found in the baseline package cache folder.
 
 ### Setting up AppSourceCop to detect breaking changes
 
-In order to set up AppSourceCop to detect breaking changes, the version of the extension used as a baseline must be specified in the AppSourceCop.json file using the `version` property. The version specified is the exact version against which the breaking changes are validated. It is also possible to specify the `name` and the `publisher` of the extension in the AppSourceCop.json file.
+In order to set up AppSourceCop to detect breaking changes, the version of the extension used as a baseline must be specified in the AppSourceCop.json file using the `version` property. The version specified is the exact version against which the breaking changes are validated. It is also possible to specify the `name` and the `publisher` of the extension in the AppSourceCop.json file. The `baselinePackageCachePath` allows you to specify the folder that will act as a cache for the baseline package and its dependencies for the AppSourceCop analyzer.
+
+If the `baselinePackageCachePath` is not specified, the baseline and its dependencies are expected to be found in the dependency package cache path. The `al.packageCachePath` setting allows you to specify the path to a folder that will act as the cache for the symbol files used by your project. This is sufficient for most scenarios, but `baselinePackageCachePath` provides a higher accuracy as it ensures that the previous version of the extension will be loaded using the right version of its dependencies.
 
 For example:
 ```json
 {
     "name": "ExtensionName",
     "publisher": "ExtensionPublisher",
-    "version": "1.1.0.0"
+    "version": "1.1.0.0",
+    "baselinePackageCachePath": "./.appSourceCopPackages"
 }
 ```
-
-The previous version of the extension must be added to the package cache where the symbols for your extension's dependencies are located. The `al.packageCachePath` setting allows you to specify the path to a folder that will act as the cache for the symbol files used by your project. 
 
 ## How to fix this diagnostic?
 
 If you do not want to detect breaking changes in your extension, remove the property `version` in the AppSourceCop.json file.
 
-If you want to detect breaking changes, verify that the version specified in the AppSourceCop.json file is correct and that the extension can be found in the package cache.
+If you want to detect breaking changes, verify that the version specified in the AppSourceCop.json file is correct and that the extension can be found in the baseline package cache.
 
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  

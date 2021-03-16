@@ -1,13 +1,12 @@
 ---
 title: "InternalsVisibleTo should not be used as a security feature."
-description: Explains AppSourceCop Rule AS0081.
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/25/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -21,7 +20,11 @@ InternalsVisibleTo should not be used as a security feature.
 The InternalsVisibleTo setting will expose your internal objects to any extension with the given name, publisher, and ID. Access modifiers are not designed to be used as a security boundary, but for API development.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+
+For more information, see [JSON Files](../devenv-json-files.md).
+
+## See Also
+
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

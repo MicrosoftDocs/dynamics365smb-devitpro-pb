@@ -6,7 +6,7 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
 ---
@@ -507,6 +507,32 @@ POST https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200
 }
 ```
 
+### Download version 
+
+Downloads the .app file linked to the specified version.
+```
+POST https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{countryCode}/versions/{versionNumber}/getPackageContents -OutFile {saveToFile}
+```
+
+#### Parameters
+
+|Type|Name|Description|Schema|
+|---|---|---|---|
+|path|appId|The ID of the app that the version belongs to.|string (uuid)|
+|path|countryCode|The country code.|string|
+|path|versionNumber|The version number of the version to update.|string|
+|path|saveToFile|The path and the name you want to use for file you download.|string|
+
+#### Example Request
+
+Downloads an app file.
+
+```
+POST https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-f10f36a2e213/countries/US/versions/16.0.1.2/getPackageContents -OutFile "C:\temp\ExampleApp-16.0.1.2.app"
+```
+
+
+
 ### Get version
 
 Gets the `version` in the specified `app` and `country`.
@@ -525,7 +551,7 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{count
 #### Example Request
 
 ```
-GET https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-f10f36a2e213/countries/US/versions/16.0.1.2
+GET https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-f10f36a2e213/countries/US/versions/16.0.1.2 
 ```
 
 #### Example Response
@@ -576,11 +602,29 @@ PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{cou
 
 #### Example Request
 
+Marking an app version as deprecated.
+
+```
+PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-f10f36a2e213/countries/US/versions/16.0.1.2 
+
+{
+    "availability": "Deprecated"
+}
+```
+#### Example Request
+
+Marks older versions of your app as incompatible with a dependency app, starting with a specific version. In such cases, make sure you upload another version of your app that is compatible with the new version of the dependency app. 
+
 ```
 PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-f10f36a2e213/countries/US/versions/16.0.1.2
 
 {
-    "availability": "Deprecated"
+    "dependencies": [
+        {
+            "appId": "63ca2fa4-4f03-4f2b-a480-172fef340d3f",
+            "incompatibleFromVersion": "16.0.0.0"
+        }
+    ]
 }
 ```
 

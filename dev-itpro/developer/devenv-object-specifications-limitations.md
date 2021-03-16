@@ -5,7 +5,7 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
@@ -39,7 +39,7 @@ The following characteristics are based on maximum capacity specifications for S
 |Maximum number of fields in a record|500|  
 |Range for field numbers|1 – 999,999,999|  
 |Maximum number of keys for a table|40|  
-|Maximum size of a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] key|900 bytes|  
+|Maximum size of a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] key|900 bytes|  
 |Maximum number of distinct fields per key|16|  
 |Maximum size of an (non-key) index|1700 bytes|  
 |Maximum number of SumIndexFields per key|20|  

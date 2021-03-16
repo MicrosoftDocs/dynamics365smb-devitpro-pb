@@ -6,9 +6,8 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: dynamics365-business-central
-ms.assetid: c4141c46-ce87-480a-98eb-390a0fe0573b
 author: SusanneWindfeldPedersen
 ---
 
@@ -23,6 +22,7 @@ The length of a dimension determines the valid range of indices for that dimensi
 ## Syntax 
 
 The syntax for declaring an array of a specific type is the following:
+
 ```AL
 Array [Dimension] of Type;
 ```
@@ -32,6 +32,7 @@ The `Dimension` is a comma-delimited list of integer literals greater than 0, wh
 The `Type` is the element type of the array.
 
 ## Code example 
+
 The following code sample shows the declaration of an array with a simple element type.
 
 ```AL
@@ -55,13 +56,12 @@ ArrayOfDotNetVariables: Array [10] of DotNet String;
 ```
 
 ## Methods
+
 The following AL methods for arrays are available:  
 
-[ArrayLen Method](../methods-auto/system/system-arraylen-method.md) 
-
-[CompressArray Method](../methods-auto/system/system-compressarray-method.md)
-
-[CopyArray Method](../methods-auto/system/system-copyarray-method.md)
+[ArrayLen Method](../methods-auto/system/system-arraylen-method.md)  
+[CompressArray Method](../methods-auto/system/system-compressarray-method.md)  
+[CopyArray Method](../methods-auto/system/system-copyarray-method.md)  
 
 ## See Also  
 

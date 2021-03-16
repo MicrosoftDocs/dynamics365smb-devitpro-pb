@@ -3,7 +3,7 @@ title: Authorization Trace | Microsoft Docs
 description: Learn about the Authorization telemetry in Business Central  
 author: jswymer
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -36,11 +36,11 @@ Occurs when a user has been successfully authorized.
 
 ### General dimensions
 
-|Dimension|Description or value||
-|---------|-----|-----------|
-|message|Version 16.1 and later:<br />**Authorization Succeeded (Pre Open Company)**<br /><br />Before Version 16.1:<br />**Authorization steps prior to the open company trigger succeeded.**||
+|Dimension|Description or value|
+|---------|-----|
+|message|Version 16.1 and later:<br />**Authorization Succeeded (Pre Open Company)**<br /><br />Before Version 16.1:<br />**Authorization steps prior to the open company trigger succeeded.**|
 |operation_Name|**Authorization Succeeded (Pre Open Company)** <br /><br />**Note:** The use of the `operation_Name` column was deprecated in version 16.1. In future versions, data won't be stored in this column. So in version 16.1 and later, use the custom dimension column `eventID` column custom in Kusto queries instead of `operation_Name`.|
-|severityLevel|**1**||
+|severityLevel|**1**|
 
 ### Custom dimensions
 
@@ -49,13 +49,13 @@ Occurs when a user has been successfully authorized.
 |authorizationStatus|**Succeeded**|
 |aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
 |component|**Dynamics 365 Business Central Server**.|
-|componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number.|
+|componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
 |environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 |entitlementSetIds |Specifies the entitlements that the user has in Business Central.|
 |eventId|**RT0003**|
 |guestUser|**true** indicates that the user is a guest user on the tenant.<br />**false** indicates the user belongs to the tenant.|
-|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
+|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 |userType|Specifies whether the user is a **Delegated_admin**, **Internal_Admin**, or  **Normal user**. See [UserType](#usertype).|
 
 ### <a name="usertype"></a> UserType
@@ -70,6 +70,9 @@ Occurs when a user has been successfully authorized.
 {"Component":"Dynamics 365 Business Central Server","Telemetry schema version":"0.2","telemetrySchemaVersion":"0.2","authorizationStatus":"Succeeded","Component version":"15.0.40073.41395","Environment type":"Production","componentVersion":"15.0.40073.41395","Environment name":"Production","environmentType":"Production","environmentName":"Production","deprecatedKeys":", AadTenantId, Environment name, Environment type, Component, Component version, Telemetry schema version","aadTenantId":"36093cb7-8b61-47a2-8f12-078ce1cbbf8b","AadTenantId":"36093cb7-8b61-47a2-8f12-078ce1cbbf8b","component":"Dynamics 365 Business Central Server","entitlementSetIds":"INTERNAL_ADMIN,DYN365_FINANCIALS_BUSINESS","guestUser":"False","userType":"INTERNAL_ADMIN"}
 
 -->
+
+> [!NOTE]
+> The client type is not known when the server emits the pre-open company events (RT0001 and RT0003). You need to join to data for the events RT0002/RT0004 if you need both userType and clientType.
 
 ## Authorization Failed (Pre Open Company)
 
@@ -104,11 +107,11 @@ Occurs when a user sign-in has failed authorization.
 <!--
 |aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
 |component|**Dynamics 365 Business Central Server**.|
-|componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number.|
+|componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
 |environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 
-|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod short](../developer/includes/prodshort.md)] telemetry schema. |
+|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod short](../developer/includes/prod_short.md)] telemetry schema. |
 -->
 
 ### <a name="authorizationfailures"></a> Troubleshooting failures
@@ -141,11 +144,11 @@ Occurs when the company has opened successfully.
 
 ### General dimensions
 
-|Dimension|Description or value||
+|Dimension|Description or value|
 |---------|-----|-----------|
-|message|Version 16.1 and later:<br />**Authorization Succeeded (Open Company)**<br /><br />Before version 16.1:<br />**Authorization steps in the open company trigger succeeded.**||
+|message|Version 16.1 and later:<br />**Authorization Succeeded (Open Company)**<br /><br />Before version 16.1:<br />**Authorization steps in the open company trigger succeeded.**|
 |operation_Name|**Authorization Succeeded (Open Company)**<br /><br />**Note:** The use of the `operation_Name` column was deprecated in version 16.1. In future versions, data won't be stored in this column. So in version 16.1 and later, use the custom dimension column `eventID` column custom in Kusto queries instead of `operation_Name`.|
-|severityLevel|**1**||
+|severityLevel|**1**|
 
 <!--
 |operation_Name|**Authorization Succeeded (Open Company)**||
@@ -158,10 +161,10 @@ Occurs when the company has opened successfully.
 |---------|-----|
 |authorizationStatus|**Success**|
 |aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
-|clientType|Specifies the type of client that executed the SQL Statement, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
-|companyName|Specifies the display name of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] company for which the report was run.|
+|clientType|Specifies the type of client that opened the session, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
+|companyName|Specifies the display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company for which the report was run.|
 |component|**Dynamics 365 Business Central Server**.|
-|componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number.|
+|componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
 |environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 |eventId|**RT0004**|
@@ -169,7 +172,7 @@ Occurs when the company has opened successfully.
 |serverExecutionTime|Specifies the amount of time it took the server to open the company**. The time has the format hh:mm:ss.sssssss.<br /><br />Doesn't apply to the **Cancellation report generation** trace. |
 |sqlExecutes|Specifies the number of SQL statements that the report executed**. <br /><br />Doesn't apply to the **Cancellation report generation** trace.|
 |sqlRowsRead|Specifies the number of table rows that were read by the SQL statements**.<br /><br />Doesn't apply to the **Cancellation report generation** trace.|
-|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
+|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 |totalTime|Specifies the amount of time it took to open the company**. The time has the format hh:mm:ss.sssssss.<br /><br />Doesn't apply to the **Cancellation report generation** trace.|
 
 ** From telemetrySchemaVersion **0.6** and onwards, this value also includes the CompanyOpen operation.

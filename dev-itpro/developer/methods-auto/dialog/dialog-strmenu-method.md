@@ -1,13 +1,12 @@
 ---
 title: "Dialog.StrMenu Method"
-description: Describes the StrMenu method in Business Central
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -15,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Dialog.StrMenu Method
+> **Version**: _Available from runtime version 1.0._
+
 Creates a menu window that displays a series of options.
 
 
@@ -22,8 +23,8 @@ Creates a menu window that displays a series of options.
 ```
 OptionNumber :=   Dialog.StrMenu(OptionMembers: String [, DefaultNumber: Integer] [, Instruction: String])
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *OptionMembers*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -39,9 +40,9 @@ Use this optional parameter to add a description to the option values.
 
 
 ## Return Value
-*OptionNumber*  
-&emsp;Type: [Integer](../integer/integer-data-type.md)  
-The number of the menu option that the user selected. If the user presses the Esc key to exit the menu, zero (0) is returned.  
+*OptionNumber*
+&emsp;Type: [Integer](../integer/integer-data-type.md)
+The number of the menu option that the user selected. If the user presses the Esc key to exit the menu, zero (0) is returned.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -50,7 +51,7 @@ The number of the menu option that the user selected. If the user presses the Es
 
 This example shows how to use the Dialog.StrMenu method.  
  
-```
+```al
 var
     Options: Text[30];
     Selected: Integer;
@@ -60,8 +61,8 @@ var
 begin
     Options := Text000;  
     // Sets the default to option 3  
-    Selected := Dialog.STRMENU(Options, 3, Text002);  
-    MESSAGE(Text001, Selected);  
+    Selected := Dialog.StrMenu(Options, 3, Text002);  
+    Message(Text001, Selected);  
 end;
 ```  
   
@@ -82,6 +83,7 @@ Option 3, **Exit**, is highlighted. The option that the user selects is stored i
 **You selected option 3.**  
 
 ## See Also
+
 [Dialog Data Type](dialog-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

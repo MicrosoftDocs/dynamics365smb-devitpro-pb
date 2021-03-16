@@ -6,27 +6,27 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ---
-# [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Web Services
+# [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Web Services
 
-[!INCLUDE[prodshort](../developer/includes/prodshort.md)] supports two types of web services: SOAP and OData. Web services are a lightweight, industry-standard way to make application functionality available to a variety of external systems and users. Developers can create and publish functionality as web services, where they expose pages, codeunits, or queries, and even enhance a page web service by using an extension codeunit. When [!INCLUDE[prodshort](../developer/includes/prodshort.md)] objects are published as web services, they are immediately available on the network.  
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] supports two types of web services: SOAP and OData. Web services are a lightweight, industry-standard way to make application functionality available to a variety of external systems and users. Developers can create and publish functionality as web services, where they expose pages, codeunits, or queries, and even enhance a page web service by using an extension codeunit. When [!INCLUDE[prod_short](../developer/includes/prod_short.md)] objects are published as web services, they are immediately available on the network.  
 
 
-[!INCLUDE[prodshort](../developer/includes/prodshort.md)] web services are stateless and do not preserve the values of global variables or single-instance codeunits between calls.  
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] web services are stateless and do not preserve the values of global variables or single-instance codeunits between calls.  
 
 ## Comparing SOAP and OData Web Services
 
 Developers planning to create [!INCLUDE[dyn_nav](../developer/includes/dyn_nav_md.md)] web services may need to decide which type of web service is better suited to their needs. The following table shows the types of web service applications that you can create for the web service protocols.  
 
-||SOAP web services|OData web services|  
+|Object|SOAP web services|OData web services|  
 |-|-----------------------|------------------------|  
 |Pages|Yes: Create, Read, Update, and Delete operations \(CRUD\)|Yes: Create, Read, Update, and Delete operations \(CRUD\)|  
-|Codeunits|Yes|No|  
+|Codeunits|Yes|Yes (through OData unbound actions)|  
 |Queries|No|Yes: Read-only|  
 
-[!INCLUDE[prodshort](../developer/includes/prodshort.md)] supports OData web services in addition to the SOAP web services that have been available since [!INCLUDE[nav2009](../developer/includes/nav2009_md.md)]. 
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] supports OData web services in addition to the SOAP web services that have been available since [!INCLUDE[nav2009](../developer/includes/nav2009_md.md)]. 
   
 ### SOAP Web Services  
  SOAP web services allow full flexibility for building operation-centric services. They provide industry standard interoperability. Windows Communication Framework \(WCF\) has supported SOAP services since its initial release in .NET Framework 3.0, and later releases of the .NET Framework have added additional support and default bindings to make it easier to build SOAP services using WCF.  
@@ -42,7 +42,7 @@ Developers planning to create [!INCLUDE[dyn_nav](../developer/includes/dyn_nav_m
   
  The extensions to the Atom Publishing Protocol defined in the AtomPub extensions to the OData protocol documentation \(which you can download [here](https://go.microsoft.com/fwlink/?LinkID=262184)\) describe how REST-based data services can enable resources, identified using URIs and defined in an abstract data model \(EDM\), to be published and edited by web clients within corporate networks and across the Internet using simple HTTP messages.  
   
-In addition to the AtomPub format, the OData implementation in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] also supports the JSON format, a somewhat less verbose format that may perform better in low-bandwidth environments.  
+In addition to the AtomPub format, the OData implementation in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] also supports the JSON format, a somewhat less verbose format that may perform better in low-bandwidth environments.  
 
 ### Page Web Services  
 When you expose a page as an OData web service, you can query that data to return a service metadata \(EDMX\) document, an AtomPub document, or a JavaScript Object Notation \(JSON\) document. You can also write back to the database if the exposed page is writable. For more information, see [OData Web Services](OData-Web-Services.md).  
@@ -55,7 +55,7 @@ For SOAP services, you can also use extension codeunits to extend the default se
  For SOAP services only, codeunit web services provide you with the most control and flexibility. When a codeunit is exposed as a web service, all functions defined in the codeunit are exposed as operations.  
 
 ### Query Web Services  
- When you expose a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] query as an OData web service, you can query that data to return a service metadata \(EDMX\) document or an AtomPub document. For more information about how to create and use [!INCLUDE[prodshort](../developer/includes/prodshort.md)] queries, see [Query Object](../developer/devenv-query-object.md).  
+ When you expose a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] query as an OData web service, you can query that data to return a service metadata \(EDMX\) document or an AtomPub document. For more information about how to create and use [!INCLUDE[prod_short](../developer/includes/prod_short.md)] queries, see [Query Object](../developer/devenv-query-object.md).  
 
 ### Web Services and Regional Settings  
  Data is formatted according to the value of the **Services Language** setting for the relevant [!INCLUDE[server](../developer/includes/server.md)] instance. The default value is **en-us**. This means that [!INCLUDE[server](../developer/includes/server.md)] interprets all incoming data as the specified culture, such as dates and amounts.  
@@ -65,9 +65,9 @@ For SOAP services, you can also use extension codeunits to extend the default se
  Similarly, you can use the **ServicesOptionFormat** setting to specify how [!INCLUDE[server](../developer/includes/server.md)] must understand option values. If you set the **ServicesOptionFormat** setting to *OptionString*, [!INCLUDE[server](../developer/includes/server.md)] understand option values as the *name* of the option value, which is always en\-us. If you set the setting to *OptionCaption*, web service data will be interpreted in the language specified by the **Services Language** setting.  
 
 ## Web Services in Multitenant Deployments  
- If your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution is used in a multitenant deployment architecture, you must make sure that any code that generates or consumes a web service specifies the relevant tenant. Web services are set up in the application, but typically you want to consume company-specific and tenant-specific data.  
+ If your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] solution is used in a multitenant deployment architecture, you must make sure that any code that generates or consumes a web service specifies the relevant tenant. Web services are set up in the application, but typically you want to consume company-specific and tenant-specific data.  
 
- If you use the GETURL method, the generated URL will automatically apply to the user’s tenant ID. For more information, see [GETURL Method](../developer/methods-auto/system/system-geturl-clienttype-string-objecttype-integer-recordref-boolean-method.md).
+ If you use the GETURL method, the generated URL will automatically apply to the user's tenant ID. For more information, see [GETURL Method](../developer/methods-auto/system/system-geturl-clienttype-string-objecttype-integer-recordref-boolean-method.md).
 
  The URL for accessing a web service in a multitenant deployment must specify the tenant ID in one of two ways: As a query parameter, or as a host name. If you use host names for tenants, the host name must be specified as an alternative ID.  
 

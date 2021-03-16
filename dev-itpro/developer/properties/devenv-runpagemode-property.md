@@ -1,24 +1,36 @@
 ---
 title: "RunPageMode Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
-ms.assetid: cab556be-8e1d-48a9-bf2b-fd89e755a609
-caps.latest.revision: 2
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # RunPageMode Property
+> **Version**: _Available from runtime version 1.0._
 
-Sets the mode in which the page is run. Choose between View, Edit, or Create.  
+Sets the mode in which the page is run. Choose between View, Edit, or Create.
 
-## Applies to  
+## Applies to
+-   Page Action
 
-- Page actions  
+## Property Value
+
+|Value|Description|
+|-----------|---------------------------------------|
+|**View**|The page is run in View mode.|
+|**Edit**|The page is run in Edit mode.|
+|**Create**|The page is run in Create mode.|
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 
 ## Syntax
 

@@ -2,11 +2,11 @@
 title: "Report.WordXmlPart Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Report.WordXmlPart Method
+> **Version**: _Available from runtime version 1.0._
+
 Returns the report data structure as structured XML that is compatible with Microsoft Word custom XML parts. The method has an instance call and a static call. The following code shows the syntax of the WORDXMLPART function. The first line of code is the syntax for an instance method call. The second line of code is the syntax for a static method call.
 
 
@@ -39,9 +41,9 @@ The following example illustrates the same XML with the ExtendedFormat set to fa
 
 
 ## Return Value
-*String*  
-&emsp;Type: [String](../string/string-data-type.md)  
-The report data structure as structured XML that is compatible with Microsoft Word custom XML parts.  
+*String*
+&emsp;Type: [String](../string/string-data-type.md)
+The report data structure as structured XML that is compatible with Microsoft Word custom XML parts.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -58,7 +60,7 @@ The report data structure as structured XML that is compatible with Microsoft Wo
 |`....<DataItem2>`<br /><br /> `......<DataItem2Column1>DataItem2Column1</DataItem2Column1>`<br /><br /> `....</DataItem2>`<br /><br /> `....<DataItem3>`<br /><br /> `......<DataItem3Column1>DataItem3Column1</DataItem3Column1>`<br /><br /> `....</DataItem3>`|Data items and columns that are nested in the top-level data item. Columns are listed in alphabetical order under the respective data item.|  
 |`..</DataItem1>`<br /><br /> `</NavWordReportXmlPart>`|Closing elements.|  
 
- Word custom XML parts enable you to integrate business data into Word documents. For example, the WORDXMLPART method is used internally by [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)] when you are creating report layouts in Word. You can use this method to create a custom XML part, and then, together with the [SAVEASXML Method \(Report\)](../../methods-auto/report/report-saveasxml-method.md) method and additional data merging tools, you can implement your own functionality for mapping and laying out report data in Word documents. To create a custom XML part, you can save the return value to an .xml file that is encoded in UTF-16 \(16-bit Unicode Transformation Format\). The resultant file can be added to Word documents as a custom XML part to map the report data set as XML data.  
+ Word custom XML parts enable you to integrate business data into Word documents. For example, the WORDXMLPART method is used internally by [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)] when you are creating report layouts in Word. You can use this method to create a custom XML part, and then, together with the [SaveAsXML Method \(Report\)](../../methods-auto/report/report-saveasxml-method.md) method and additional data merging tools, you can implement your own functionality for mapping and laying out report data in Word documents. To create a custom XML part, you can save the return value to an .xml file that is encoded in UTF-16 \(16-bit Unicode Transformation Format\). The resultant file can be added to Word documents as a custom XML part to map the report data set as XML data.  
 
 ## Example  
  The following example uses the WORDXMLPART method to save the data structure of Report 112 Sales Statistics in an XML file in a predefined folder *C:\\Report Documents*. The resultant file can be used in Word as a custom XML part. 
@@ -68,12 +70,12 @@ var
     ReportAsString Text;
     SalesStatsReport: File;
 begin 
-    ReportAsString := REPORT.WORDXMLPART(112);  
-    SalesStatsReport.TEXTMODE(TRUE);  
-    SalesStatsReport.WRITEMODE(TRUE);  
-    SalesStatsReport.CREATE('C:\Report Documents\SalesStatsReport.xml', TextEncoding::UTF16);  
+    ReportAsString := Report.WORDXMLPART(112);  
+    SalesStatsReport.TextMode(True);  
+    SalesStatsReport.WriteMode(True);  
+    SalesStatsReport.Create('C:\Report Documents\SalesStatsReport.xml', TextEncoding::UTF16);  
     SalesStatsReport.WRITE(ReportAsString);  
-    SalesStatsReport.CLOSE;  
+    SalesStatsReport.Close;  
 end;
 ```  
 

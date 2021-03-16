@@ -1,11 +1,13 @@
 ---
-title: "How to: Set Up Multiple Web Server Instances for the Business Central"
+title: Set Up Multiple Business Central Web Server Instances using PowerShell
+description: Learn how to use Windows PowerShell to set up more than one web server instance on IIS for the Business Central web client.
+
 ms.custom: na
 ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
@@ -22,7 +24,7 @@ Although you can use the [!INCLUDE[prodsetup](../developer/includes/prodsetup.md
 
 ## <a name="GetStartedWebServerCmdlets"></a>Get started with the [!INCLUDE[webserver](../developer/includes/webserver.md)] cmdlets 
 
-The [!INCLUDE[webserver](../developer/includes/webserver.md)] cmdlets are contained in the PowerShell script module **NAVWebClientManagement.psm1**, which is available on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation media (DVD).
+The [!INCLUDE[webserver](../developer/includes/webserver.md)] cmdlets are contained in the PowerShell script module **NAVWebClientManagement.psm1**, which is available on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] installation media (DVD).
 
 The module is installed with the [!INCLUDE[server](../developer/includes/server.md)] or the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)].
 
@@ -36,22 +38,25 @@ There are different ways to launch this module and start using the cmdlets:
 
 - Otherwise, start Windows PowerShell as an administrator, and use the [Import-Module](/powershell/module/microsoft.powershell.core/import-module) cmdlet to import the **NAVWebClientManagement.psm1** file:
 
-  ```
+  ```powershell
   Import-Module -Name [filepath]
-  ```  
-  For example:
   ```
+
+  For example:
+
+  ```powershell
   Import-Module -Name "C:\Program Files\Microsoft Dynamics 365 Business Central\130\Service\NAVWebClientManagement.psm1"
   ```
 
-    For more information about starting Windows PowerShell, see [Starting Windows PowerShell](/powershell/scripting/setup/starting-windows-powershell).
+  For more information, see [the Windows PowerShell docs](/powershell/scripting/overview).
 
 ## Creating [!INCLUDE[webserver](../developer/includes/webserver.md)] instances
 
 ### Get Access to the WebPublish folder
+
 To create a new web server instance, you need access to the **WebPublish** folder that contains the content files for the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)].
 
-- This folder is available on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation media (DVD) and has the path "DVD\WebClient\Microsoft Dynamics NAV\13x\Web Client\WebPublish". 
+- This folder is available on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] installation media (DVD) and has the path "DVD\WebClient\Microsoft Dynamics NAV\13x\Web Client\WebPublish". 
 
 - If you installed the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)], this folder has the path "[!INCLUDE[prodinstallpath](../developer/includes/prodinstallpath.md)]\Web Client\WebPublish".
 
@@ -125,19 +130,19 @@ New-NAVWebServerInstance -WebServerInstance MyWebApp -Server MyBCServer -ServerI
   
 - Susbtitute *MyBCServer* to the name of the computer that is running the [!INCLUDE[server](../developer/includes/server.md)] to which you want to connect.  
   
--   Susbtitute *MyBCServerInstance* with the name of the [!INCLUDE[server](../developer/includes/server.md)] instance to use.
+- Susbtitute *MyBCServerInstance* with the name of the [!INCLUDE[server](../developer/includes/server.md)] instance to use.
 
--  Substitute *MySiteContainer* with name of the container web site under which you want to add the instance. If you specify a name that does not exist, then a new container web site will be created, which contains the new web server instance.
+- Substitute *MySiteContainer* with name of the container web site under which you want to add the instance. If you specify a name that does not exist, then a new container web site will be created, which contains the new web server instance.
 
--  Susbtitute *8081* with the port number that you want to bind the instance to. If you do not specify a port number, then port 80 is used. 
+- Susbtitute *8081* with the port number that you want to bind the instance to. If you do not specify a port number, then port 80 is used. 
     
--  Substitute *C:\WebClient\WebPublish* with the path to your WebPublish folder. By default, the cmdlet looks in the'[!INCLUDE[prodinstallpath](../developer/includes/prodinstallpath.md)]\Web Client' folder. So if you are working on a computer where the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)] are installed, you do not have to set this parameter.
+- Substitute *C:\WebClient\WebPublish* with the path to your WebPublish folder. By default, the cmdlet looks in the'[!INCLUDE[prodinstallpath](../developer/includes/prodinstallpath.md)]\Web Client' folder. So if you are working on a computer where the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)] are installed, you do not have to set this parameter.
 
 > [!NOTE]  
 >  This command only sets the required parameters of the NAVWebServerInstance cmdlet. The cmdlet has several other parameters that can use to configure the web server instance. For more information about the syntax and parameters, see [New-NAVWebServerInstance](/powershell/module/navwebclientmanagement/New-NAVWebServerInstance).  
 
 ## Modifying a [!INCLUDE[webserver](../developer/includes/webserver.md)] instance
- 
+
 After you create the web server instance, if you want to change its configuration, you can use the Set-NAVWebServerInstanceConfiguration cmdlet. Or, you can modify the configuration file (navsettings.json) of the instance directly. For more information, see [Configuring Web Server Instances](../administration/configure-web-server.md).  
 
 ## See Also  

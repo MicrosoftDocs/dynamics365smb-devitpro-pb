@@ -5,7 +5,7 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: mikebcMSFT
 ---
@@ -14,7 +14,7 @@ author: mikebcMSFT
 
 In the client, when filtering lists using the filter pane, users can enter filter tokens, which are special words that resolve to one or more values. This powerful feature makes filtering easier by reducing the need to navigate to other pages to look up values to enter as filter criteria.
 
-There are several useful filter tokens available in [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. For example, entering **%mycustomers** in a **Customer No.** field will resolve to the set of customers in the user's **My Customers** list such as `1001|1002`, making it easy to find relevant sales orders for customers 1001 and 1002.
+There are several useful filter tokens available in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. For example, entering **%mycustomers** in a **Customer No.** field will resolve to the set of customers in the user's **My Customers** list such as `1001|1002`, making it easy to find relevant sales orders for customers 1001 and 1002.
 
 You can add custom filter tokens and make these available in any language and across the application. To add your custom filter token, you need to define the token word that users will enter as filter criteria, and define a handler that resolves the token to a concrete value at runtime. For more information, see [Filter Tokens](https://github.com/microsoft/ALAppExtensions/tree/master/Modules/System/Filter%20Tokens) in our ALAppExtensions repository on GitHub.
 
@@ -77,7 +77,7 @@ This example extends the application with a new token word "%mysalesperson" repr
 
 ## Design considerations
 
-Resolving tokens is intended to be fast, simple, and reliable. When implementing event subscribers to resolve filter tokens, keep in mind that these events can be triggered from any user task in [!INCLUDE[prodshort](../developer/includes/prodshort.md)], and in some cases may be triggered repeatedly such as when searching across columns. To improve usability and reduce the impact on performance, do consider the following practices:
+Resolving tokens is intended to be fast, simple, and reliable. When implementing event subscribers to resolve filter tokens, keep in mind that these events can be triggered from any user task in [!INCLUDE[prod_short](../developer/includes/prod_short.md)], and in some cases may be triggered repeatedly such as when searching across columns. To improve usability and reduce the impact on performance, do consider the following practices:
 
  - Avoid implementing tokens that are only relevant to few business tasks, or assume they are used in the context of a specific page.
  - Avoid implementing tokens that are time-consuming to resolve. Examples of this include looking up records in large or poorly indexed tables, or fetching data from a remote service.  

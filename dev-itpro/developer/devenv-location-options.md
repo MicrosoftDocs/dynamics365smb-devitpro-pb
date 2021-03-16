@@ -5,7 +5,7 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: blrobl
 ---
@@ -16,11 +16,16 @@ When implementing location from AL, there are some options that you can optional
 
 ## Location Options List  
 
-||  
-|-|  
-|`bool EnableHighAccuracy`<br /><br /> A value to provide a hint to the device that this request must have the best possible location accuracy.|  
-|`int Timeout`<br /><br /> The maximum length of time \(milliseconds\) that is allowed to pass to a location request.|  
-|`int MaximumAge`<br /><br /> The maximum length of time \(milliseconds\) of a cached location.|  
+`bool EnableHighAccuracy`
+
+A value to provide a hint to the device that this request must have the best possible location accuracy.
+
+`int Timeout`
+
+The maximum length of time \(milliseconds\) that is allowed to pass to a location request.
+
+`int MaximumAge`
+The maximum length of time \(milliseconds\) of a cached location. 
 
 ## See Also  
 [Implementing Location in AL](devenv-implement-location-al.md)  

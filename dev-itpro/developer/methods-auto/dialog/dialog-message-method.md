@@ -2,11 +2,11 @@
 title: "Dialog.Message Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Dialog.Message Method
+> **Version**: _Available from runtime version 1.0._
+
 Displays a text string in a message window.
 
 
@@ -21,8 +23,8 @@ Displays a text string in a message window.
 ```
  Dialog.Message(String: String [, Value: Any,...])
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *String*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -42,7 +44,7 @@ When a message statement in the AL code is executed, the message is not immediat
   
 The window is automatically sized to hold the longest line of text and the total number of lines.  
   
-For NAS sessions or [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)] sessions \(including NAS\) that are started by the [STARTSESSION Method \(Sessions\)](../../methods-auto/session/session-startsession-method.md), messages are recorded in the event log of the computer that is running [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)]. The message entries have the ID 100 and type Information.  
+For NAS sessions or [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)] sessions \(including NAS\) that are started by the [StartSession Method \(Sessions\)](../../methods-auto/session/session-startsession-method.md), messages are recorded in the event log of the computer that is running [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)]. The message entries have the ID 100 and type Information.  
   
 ## Programming Guidelines  
 
@@ -59,7 +61,7 @@ For more information, see [Progress Windows, Message, Error, and Confirm Methods
 
 This example shows how to use the `Message` method.  
  
-```
+```al
 begin
         Message('App published: Hello world');
 
@@ -69,7 +71,7 @@ begin
         // The backslash indicates a new line.  
         // You can concatenate strings using the + operator.  
         // You can insert variable values using the % symbol.  
-        MESSAGE(Text000 + Text001 + '%1\' + Text002 + '%2\', Number, Text);
+        Message(Text000 + Text001 + '%1\' + Text002 + '%2\', Number, Text);
     end;
 
 

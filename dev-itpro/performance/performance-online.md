@@ -5,21 +5,21 @@ ms.date: 10/01/2020
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: KennieNP
 ---
 
-# Performance in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Online
+# Performance in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Online
 
-These sections describe how settings in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online impact the performance experience of users. 
+These sections describe how settings in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online impact the performance experience of users. 
 
 ## Performance on sandbox environments
 
-The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] service offers the ability to test code in a sandbox environment before to deploying to a production environment. 
+The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service offers the ability to test code in a sandbox environment before to deploying to a production environment. 
 
 <!-- section partly rephrased -->
-Users often can't get the same performance and reliability in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online as they get in their production environments. This discrepancy is caused by a couple factors.
+Users often can't get the same performance and reliability in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online as they get in their production environments. This discrepancy is caused by a couple factors.
 
 Firstly, it's the nature of the operations that our users do in the sandbox environments. Some typical examples of this are:
 
@@ -34,7 +34,7 @@ Due to the nature of the operations our users perform in the sandbox environment
 
 ## Telemetry
 
-For monitoring and analyzing performance issues in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] service, we recommend connecting Azure AppInsights to the environments that you want to get signals from. For more information, see [Sending telemetry to Microsoft Azure Application Insights](../administration/tenant-admin-center-telemetry.md#appinsights). 
+For monitoring and analyzing performance issues in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service, we recommend connecting Azure AppInsights to the environments that you want to get signals from. For more information, see [Sending telemetry to Microsoft Azure Application Insights](../administration/tenant-admin-center-telemetry.md#appinsights). 
 
 Here are some ways where telemetry can help troubleshoot performance issues:
 

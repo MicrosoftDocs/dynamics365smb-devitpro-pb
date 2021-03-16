@@ -6,45 +6,47 @@ ms.custom: na
 ms.reviewer: edupont
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: dynamics365-business-central
-ms.date: 10/01/2020
+ms.date: 10/20/2020
 ms.author: jswymer
 ---
-# Important Information and Considerations for Before Upgrading to [!INCLUDE[prodlong](../developer/includes/prodlong.md)] Spring 2019 and Later Versions
+# Important Information and Considerations for Before Upgrading to [!INCLUDE[prod_long](../developer/includes/prod_long.md)] Spring 2019 and Later Versions
 
-Depending on which version you are upgrading from, and the degree to which your solution differs from the standard version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], you may want to prepare your solution for the upgrade. This topic provides important information and tips for things to consider when you prepare to upgrade to [!INCLUDE[prodshort](../developer/includes/prodshort.md)].  
+Depending on which version you are upgrading from, and the degree to which your solution differs from the standard version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)], you may want to prepare your solution for the upgrade. This topic provides important information and tips for things to consider when you prepare to upgrade to [!INCLUDE[prod_short](../developer/includes/prod_short.md)].  
 
-## <a name="online"></a>Migrate from [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online
+## <a name="online"></a>Migrate from [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online
 
-You can upgrade to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online from supported versions of [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] on-premises, provided that your application customization is handled by extensions. Any data from tables with code customizations cannot be carried forward from [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)].  
+You can upgrade to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online from supported versions of [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] on-premises, provided that your application customization is handled by extensions. Any data from tables with code customizations cannot be carried forward from [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)].  
 
 > [!NOTE]
-> Upgrade your solution to 2020 release wave 2 (version 17), and then migrate to [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online.
+> Upgrade your solution to Business Central Spring 2019 (version 14) or later, and then migrate to [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online.
 
 The process consists of two parts:
 
-- Upgrade from [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] using the tools described in [Upgrading to Business Central on-premises](upgrading-to-business-central-on-premises.md).
+- Upgrade from [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] using the tools described in [Upgrading to Business Central on-premises (version 14)](upgrading-to-business-central-on-premises.md). For more information, see [Supported Upgrade Paths to [!INCLUDE[prod_long](../developer/includes/prod_long.md)] Releases](upgrade-paths.md).  
 - Convert non-standard functionality and customizations to apps and per-tenant extensions. For more information, see [Deploying a Tenant Customization](../developer/devenv-deploy-tenant-customization.md).
-- Run the cloud migration tool as described in [Running the Cloud Migration Tool](../administration/migration-tool.md), and then switch to use [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online going forward.
+- Run the cloud migration tool as described in [Running the Cloud Migration Tool](../administration/migration-tool.md), and then switch to use [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online going forward.
 
 ## Upgrading from [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)]
 
+This section lists specific changes between [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] and [!INCLUDE [prod_short](../developer/includes/prod_short.md)].  
+
 ### Codeunit 1 has been deprecated and replaced
 
-[!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] included codeunit **1 ApplicationManagement**. In [!INCLUDE[prodshort](../developer/includes/prodshort.md)], this codeunit has been retired, and new 'system' codeunits have been introduced in the 2 billion range.
+[!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] included codeunit **1 ApplicationManagement**. In [!INCLUDE[prod_short](../developer/includes/prod_short.md)], this codeunit has been retired, and new 'system' codeunits have been introduced in the 2 billion range.
 
 For information, see [Transitioning from Codeunit 1 to System Codeunits](transition-from-codeunit1.md).
 
 ### V1 Extensions have been discontinued
 
-With [!INCLUDE[prodshort](../developer/includes/prodshort.md)], extensions V1 are no longer supported for on-premise installations. As a result, any custom extensions V1 must be converted to extensions V2 in the old environment before upgrading to [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
+With [!INCLUDE[prod_short](../developer/includes/prod_short.md)], extensions V1 are no longer supported for on-premise installations. As a result, any custom extensions V1 must be converted to extensions V2 in the old environment before upgrading to [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 For information about how to convert to extensions V2, see [Converting Extensions V1 to Extensions V2](../developer/devenv-upgrade-v1-to-v2-overview.md).
 
 ### MenuSuite not used for page and report search 
 
-With [!INCLUDE[prodshort](../developer/includes/prodshort.md)], the MenuSuite is no longer used to control whether a page or report can be found in the search feature of the Web client. This is now determined by specific properties on the page and report objects. As part of the application code upgrade process, you change these properties on existing pages and reports used by the MenuSuite to ensure that they are still searchable from the Web client. For more information, see [Making Pages and Reports Searchable After an Upgrade](upgrade-pages-report-for-search.md).
+With [!INCLUDE[prod_short](../developer/includes/prod_short.md)], the MenuSuite is no longer used to control whether a page or report can be found in the search feature of the Web client. This is now determined by specific properties on the page and report objects. As part of the application code upgrade process, you change these properties on existing pages and reports used by the MenuSuite to ensure that they are still searchable from the Web client. For more information, see [Making Pages and Reports Searchable After an Upgrade](upgrade-pages-report-for-search.md).
 
 ## <a name="CRM"></a>[!INCLUDE[crm_md](../developer/includes/crm_md.md)] integration
 
@@ -52,23 +54,23 @@ Because of changes in [!INCLUDE[crm_md](../developer/includes/crm_md.md)] and th
 
 ## New and changed application features
 
-There a several new and changed application features available in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] April 2019 for users, administrators, and developers. For an overview of these features, see [Overview of Dynamics 365 Business Central April '19 release](/business-applications-release-notes/April19/dynamics365-business-central).
+There a several new and changed application features available in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] April 2019 for users, administrators, and developers. For an overview of these features, see [Overview of Dynamics 365 Business Central April '19 release](/business-applications-release-notes/April19/dynamics365-business-central).
 
 To take advantage of these all these features, you will have to perform an application code upgrade, not just a technical (platform) upgrade.  
 
 ### Changes to profiles in the [!INCLUDE[demolong_md](../developer/includes/demolong_md.md)] and promoted actions
 
-With the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] April 2019 release, profiles that are part of the [!INCLUDE[demolong_md](../developer/includes/demolong_md.md)], such as the **Sales Order Processor** profile, customize fewer pages compared to earlier releases. For customers that rely on these profiles, their users might experience slight differences in the layout of actions in the action bar on pages. Additionally, the layout of promoted actions on over 380 core application pages has been fine-tuned.
+With the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] April 2019 release, profiles that are part of the [!INCLUDE[demolong_md](../developer/includes/demolong_md.md)], such as the **Sales Order Processor** profile, customize fewer pages compared to earlier releases. For customers that rely on these profiles, their users might experience slight differences in the layout of actions in the action bar on pages. Additionally, the layout of promoted actions on over 380 core application pages has been fine-tuned.
 
-To ensure that users are not disrupted by these changes, we recommend that administrators and partners who are upgrading a customer to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] April 2019, review the layout of promoted actions when combined with their own code and profile customization.
+To ensure that users are not disrupted by these changes, we recommend that administrators and partners who are upgrading a customer to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] April 2019, review the layout of promoted actions when combined with their own code and profile customization.
 
 ## Names of variables
   
- [!INCLUDE[prodshort](../developer/includes/prodshort.md)] introduces new methods and statements. If your solution includes variables where the name is now used by a standard AL method or statement such as REGISTERTABLECONNECTION or FOREACH, you must change the variables before you upgrade to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. Alternatively, you can enclose the variable names in quotation marks. If you do not, and you import an object that has this code in text format, you cannot compile the object. 
+ [!INCLUDE[prod_short](../developer/includes/prod_short.md)] introduces new methods and statements. If your solution includes variables where the name is now used by a standard AL method or statement such as REGISTERTABLECONNECTION or FOREACH, you must change the variables before you upgrade to [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. Alternatively, you can enclose the variable names in quotation marks. If you do not, and you import an object that has this code in text format, you cannot compile the object. 
 
 ## Deprecated or redesigned functionality
   
- If you are upgrading a solution that depends on functionality that is deprecated or changed in the default version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], you must verify that the upgrade codeunits migrate data correctly. See the See Also section for links to descriptions of deprecated functionality.
+ If you are upgrading a solution that depends on functionality that is deprecated or changed in the default version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)], you must verify that the upgrade codeunits migrate data correctly. See the See Also section for links to descriptions of deprecated functionality.
 
 ## Deprecated fields and fields marked as obsolete
 
@@ -76,7 +78,7 @@ Sometimes Microsoft will refactor code so that fields are no longer used, or the
 
 ## Upgrade codeunits
   
- When you introduce changes to the database schema, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] will check if these changes are destructive or not. If the database check indicates that the change may lead to data deletion, such as if you are dropping a table column so that the contents of that column will be deleted, this is considered a destructive change. You will be prompted to handle the situation using upgrade codeunits. <!-- For more information, see [Upgrade Codeunits]Upgrade-Codeunits.md.-->  
+ When you introduce changes to the database schema, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] will check if these changes are destructive or not. If the database check indicates that the change may lead to data deletion, such as if you are dropping a table column so that the contents of that column will be deleted, this is considered a destructive change. You will be prompted to handle the situation using upgrade codeunits. <!-- For more information, see [Upgrade Codeunits]Upgrade-Codeunits.md.-->  
 
 ## Company names
   

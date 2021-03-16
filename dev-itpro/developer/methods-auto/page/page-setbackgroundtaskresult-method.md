@@ -2,11 +2,11 @@
 title: "Page.SetBackgroundTaskResult Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Page.SetBackgroundTaskResult Method
+> **Version**: _Available from runtime version 4.0._
+
 Sets the page background task result as a dictionary. When the task is completed, the OnPageBackgroundCompleted trigger will be invoked on the page with this result dictionary.
 
 
@@ -36,9 +38,9 @@ You use this method in a page background task codeunit to pass the results of th
     
 ## Example
 
-The following code is an example of a page background task codeunit that uses the SETBACKGROUNDTASKRESULT method to set a dictionary of results that will be passed to the calling page. For more details about this example, see [Page Background Tasks](../../devenv-page-background-tasks.md).
+The following code is an example of a page background task codeunit that uses the SetBackgroundTaskResult method to set a dictionary of results that will be passed to the calling page. For more details about this example, see [Page Background Tasks](../../devenv-page-background-tasks.md).
    
-```
+```al
 codeunit 50100 PBTWaitCodeunit
 {
     trigger OnRun()

@@ -2,11 +2,11 @@
 title: "HttpContent Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 12/09/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # HttpContent Data Type
+> **Version**: _Available from runtime version 1.0._
+
 Represents an HTTP entity body and content headers.
 
 
@@ -23,11 +25,11 @@ The following methods are available on instances of the HttpContent data type.
 |Method name|Description|
 |-----------|-----------|
 |[Clear()](httpcontent-clear-method.md)|Sets the HttpContent object to a default value. The content contains an empty string and empty headers.|
-|[WriteFrom(Text)](httpcontent-writefrom-text-method.md)|Sets HttpContent content to the provided text or stream.|
-|[WriteFrom(InStream)](httpcontent-writefrom-instream-method.md)|Sets HttpContent content to the provided text or stream.|
 |[GetHeaders(var HttpHeaders)](httpcontent-getheaders-method.md)|Gets the HTTP content headers as defined in RFC 2616.|
 |[ReadAs(var Text)](httpcontent-readas-text-method.md)|Reads the content into the provided text.|
 |[ReadAs(var InStream)](httpcontent-readas-instream-method.md)|Reads the content into the provided text.|
+|[WriteFrom(Text)](httpcontent-writefrom-text-method.md)|Sets HttpContent content to the provided text or stream.|
+|[WriteFrom(InStream)](httpcontent-writefrom-instream-method.md)|Sets HttpContent content to the provided text or stream.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -37,7 +39,7 @@ The HttpContent data type is a value type. This means that when assigning an ins
 ## Example
 The following example illustrates how to use the HttpContent type to send a simple POST request containing JSON data.
 
-```
+```al
 codeunit 50110 MyCodeunit
 {
     procedure MakeRequest(uri: Text; payload: Text) responseText: Text;

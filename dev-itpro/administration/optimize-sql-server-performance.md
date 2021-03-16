@@ -5,7 +5,7 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.assetid: e4c70172-b5bb-4649-a5cb-27fe0afd988c
 caps.latest.revision: 3
@@ -13,7 +13,7 @@ author: jswymer
 ---
 # Optimizing SQL Server Performance with Business Central
 
-The following articles describe how to optimize performance in [!INCLUDE[prodlong](../developer/includes/prodlong.md)] when accessing data from the SQL Server database.  
+The following articles describe how to optimize performance in [!INCLUDE[prod_long](../developer/includes/prod_long.md)] when accessing data from the SQL Server database.  
 
 [Setting SQL Compatibility Level to Optimize Database Performance](optimize-sql-set-compatibility-level.md)
 

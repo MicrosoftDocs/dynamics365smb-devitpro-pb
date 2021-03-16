@@ -6,14 +6,14 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: solsen
 ---
 
 # GetEnvironment Method
 
-Gets information about the environment that the control add-in is using.  
+Gets information about the environment that the control add-in is using. For more information, see [Control Addin Object](../devenv-control-addin-object.md).
   
 ## Method signature  
 

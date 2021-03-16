@@ -7,21 +7,21 @@ ms.date: 10/01/2020
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ---
 
 # Page Types and Layouts
 
-Understanding how [!INCLUDE[prodshort](includes/prodshort.md)] displays a page dependent on its *page type* is important to be able to create a good user experience. There are also several page properties and variations of the page structures that can help create an intuitive and efficient user interface.
+Understanding how [!INCLUDE[prod_short](includes/prod_short.md)] displays a page dependent on its *page type* is important to be able to create a good user experience. There are also several page properties and variations of the page structures that can help create an intuitive and efficient user interface.
 
-In the following we are focusing on how pages appear when a user accesses [!INCLUDE[prodshort](includes/prodshort.md)] from a desktop browser. But it is an important point that the same page types apply across the different form factors of apps, and that the [!INCLUDE[prodshort](includes/prodshort.md)] page type layouts automatically adapt to work well on different devices, e.g. on a phone or a tablet. 
+In the following we are focusing on how pages appear when a user accesses [!INCLUDE[prod_short](includes/prod_short.md)] from a desktop browser. But it is an important point that the same page types apply across the different form factors of apps, and that the [!INCLUDE[prod_short](includes/prod_short.md)] page type layouts automatically adapt to work well on different devices, e.g. on a phone or a tablet. 
 
 ## Understanding page types 
 
 Choosing the right page type is the first step when creating or modifying a page. The next step is to organize the page contents to suit its purpose in your solution. We recommend that you design pages based on the user tasks that you want to support. 
 
-The following table provides an overview of the page types supported in [!INCLUDE[prodshort](includes/prodshort.md)], their typical uses, and basic characteristics. To specify the page type, use the `PageType` property. For more information, see [PageType Property](properties/devenv-pagetype-property.md).
+The following table provides an overview of the page types supported in [!INCLUDE[prod_short](includes/prod_short.md)], their typical uses, and basic characteristics. To specify the page type, use the `PageType` property. For more information, see [PageType Property](properties/devenv-pagetype-property.md).
 
 
 |Page type|Examples of use|Main data display|Characteristics|
@@ -50,7 +50,7 @@ A fundamental characteristic of a page type is how it relates to the data presen
 
 #### Entity-oriented pages 
 
-In [!INCLUDE[prodshort](includes/prodshort.md)], entity-oriented pages are used to support users when their tasks revolve around a single business entity. The most typical entity-oriented page is the `Card`, which provides details about a single customer or other master data, and the `Document`, which represents a single transaction, or other important business event, e.g. a sales transaction.
+In [!INCLUDE[prod_short](includes/prod_short.md)], entity-oriented pages are used to support users when their tasks revolve around a single business entity. The most typical entity-oriented page is the `Card`, which provides details about a single customer or other master data, and the `Document`, which represents a single transaction, or other important business event, e.g. a sales transaction.
 
 `ListPlus` is also an entity-oriented page type. Unlike `Card` and `Document` pages, the `ListPlus` page type is for pages that have a prominent `ListPart` and either few or no header fields.
 
@@ -61,7 +61,7 @@ The `CardPart` page type is an entity-oriented page type for inclusion in anothe
 
 #### Collection-oriented pages 
 
-In [!INCLUDE[prodshort](includes/prodshort.md)], collection-oriented pages are used to support users when their tasks involve multiple entities or records at the same time. The most typical collection-oriented page type is the `List` (for example showing customers, items, and so on.) from which the user can seek out the entities to work with.
+In [!INCLUDE[prod_short](includes/prod_short.md)], collection-oriented pages are used to support users when their tasks involve multiple entities or records at the same time. The most typical collection-oriented page type is the `List` (for example showing customers, items, and so on.) from which the user can seek out the entities to work with.
 
 The `Worksheet` is the other prominent collection-oriented page type, suited for data entry (for example, in journal pages) and other tasks related to managing a set of entities/entries based on custom fields above and/or below the collection.
 
@@ -69,7 +69,7 @@ The `ListPart` page type is a collection-oriented page type for inclusion in ano
 
 #### Dialog pages
 
-The page types in [!INCLUDE[prodshort](includes/prodshort.md)] that are available exclusively for displaying dialogs, such as the `StandardDialog` and `ConfirmationDialog` page types, can represent an entity *or* a collection. The title caption and actions are suited for both types.
+The page types in [!INCLUDE[prod_short](includes/prod_short.md)] that are available exclusively for displaying dialogs, such as the `StandardDialog` and `ConfirmationDialog` page types, can represent an entity *or* a collection. The title caption and actions are suited for both types.
 
 ## Composing pages 
 
@@ -77,7 +77,7 @@ Within a page, the developer can combine page fields into groups. This can help 
 
 Besides adding fields and groups to a page, it is possible to embed another page of type `CardPart` or `ListPart`. (These two page types can in turn not embed other pages.) 
 
-When pages are created that embed parts, [!INCLUDE[prodshort](includes/prodshort.md)] divides the available screen real estate between the page's groups of fields and any embedded pages. Screen space is divided between field groups and embedded pages such that the user can get access to the full contents of the page and collapse/expand specific sections of interest. 
+When pages are created that embed parts, [!INCLUDE[prod_short](includes/prod_short.md)] divides the available screen real estate between the page's groups of fields and any embedded pages. Screen space is divided between field groups and embedded pages such that the user can get access to the full contents of the page and collapse/expand specific sections of interest. 
 
 How space allocation takes place for a given page depends on the chosen page type, the structure of page contents (field groups and page parts), and on the size of the browser window.
 
@@ -105,7 +105,7 @@ In the following sections you find descriptions of typical page layouts, recomme
 
 The groups of fields and page parts making up a page are rendered when the user opens the page.
 
-Dependent on the size of the available screen real estate, for example, in the browser window on a desktop computer, [!INCLUDE[prodshort](includes/prodshort.md)] sizes the sections automatically to make the most of the space.
+Dependent on the size of the available screen real estate, for example, in the browser window on a desktop computer, [!INCLUDE[prod_short](includes/prod_short.md)] sizes the sections automatically to make the most of the space.
 
 There are three different ways a section's size are determined. 
 
@@ -221,13 +221,13 @@ From the user's perspective, the following are qualities of a well-designed work
 
 ## Dialog page layouts 
 
-Some page types in [!INCLUDE[prodshort](includes/prodshort.md)] are available exclusively for displaying dialogs, such as the `StandardDialog` and `ConfirmationDialog` page types. In addition, there are programmatic ways in AL to display a dialog to the user with the Dialog data type, as well as dialogs defined as report request pages.
+Some page types in [!INCLUDE[prod_short](includes/prod_short.md)] are available exclusively for displaying dialogs, such as the `StandardDialog` and `ConfirmationDialog` page types. In addition, there are programmatic ways in AL to display a dialog to the user with the Dialog data type, as well as dialogs defined as report request pages.
 
 It is also possible to use the common page types (`Card`, `Document`, `List`, etc.) to present a dialog to the user. In this case, pages are created, composed, and can embed the same elements, as when displayed ordinarily. Presenting the page to the user as a dialog requires certain AL code that activates the dialog mode. When this happens, the page is shown with dismiss buttons in the page footer.
 
 ![Dialog page layouts example](media/page-layout-dialog.png "Dialog page layout")
 
-Generally, [!INCLUDE[prodshort](includes/prodshort.md)] displays dialogs on the screen in a frame that is more narrow and not taking up full vertical height, compared to how pages appear ordinarily. Aside from that, pages lay out their contents according to the same principles, whether displayed as a dialog or not.
+Generally, [!INCLUDE[prod_short](includes/prod_short.md)] displays dialogs on the screen in a frame that is more narrow and not taking up full vertical height, compared to how pages appear ordinarily. Aside from that, pages lay out their contents according to the same principles, whether displayed as a dialog or not.
 
 Given the size of the screen where the dialog appears, more or less of the page contents will be visible without scrolling. When a page contains a lot of content, it is possible for the user to increase the dialog size with the maximize button.  
 > [!NOTE]  

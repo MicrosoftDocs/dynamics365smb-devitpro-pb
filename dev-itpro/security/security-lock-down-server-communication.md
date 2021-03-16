@@ -1,17 +1,18 @@
 ---
-title: "User Security in Business Central"
+title: "Locking Down Server Communication"
+description: List the server configuration settings that you can use to help secure and limit communication with clients and the database.
 ms.custom: na
 ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 # Locking Down Server Communication
 
-The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] instance includes several configuration settings that you can use to help secure and limit communication with clients and the database. The configuration settings are listed below. For more detailed information about each setting, and additional settings, see [Configuring Business Central Server](../administration/configure-server-instance.md).
+The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] instance includes several configuration settings that you can use to help secure and limit communication with clients and the database. The configuration settings are listed below. For more detailed information about each setting, and additional settings, see [Configuring Business Central Server](../administration/configure-server-instance.md).
 
 |Setting|
 |-------|

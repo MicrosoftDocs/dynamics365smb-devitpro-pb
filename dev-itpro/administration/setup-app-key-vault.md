@@ -6,20 +6,23 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
-# Setting up App Key Vaults for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Online
+# Setting up App Key Vaults for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Online
 
 [!INCLUDE[2020_releasewave2](../includes/2020_releasewave2.md)]
 
-AppSource apps for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] can be developed to get secrets from Azure Keys Vaults. The app key vault feature is readily available for use on the service by all App Source apps. However, there are some onboarding tasks required.  
+AppSource apps for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] can be developed to get secrets from Azure Keys Vaults. The app key vault feature is readily available for use on the service by all App Source apps. However, there are some onboarding tasks required.
+
+> [!IMPORTANT]
+> With [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online, App key vaults can only be used with AppSource apps. They're not supported with per-tenant extensions.
 
 > [!TIP]
-> You must also specify secrets in a key vault if you deploy [!INCLUDE [prodshort](../developer/includes/prodshort.md)] as part of the Embed App program. Especially if you must support the Outlook add-in, in which case you must specify secrets for TEMPORARYDOCUMENTSTORAGEACCOUNT and TEMPORARYDOCUMENTSTORAGEKEY. <!--For more information, see [Setting Up the Office Add-Ins for Outlook Integration with [!INCLUDE[prodshort](../developer/includes/prodshort.md)]](Setting-up-Office-Add-Ins-Outlook-Inbox.md).-->
+> You must also specify secrets in a key vault if you deploy [!INCLUDE [prod_short](../developer/includes/prod_short.md)] as part of the Embed App program. Especially if you must support the Outlook add-in, in which case you must specify secrets for TEMPORARYDOCUMENTSTORAGEACCOUNT and TEMPORARYDOCUMENTSTORAGEKEY. <!--For more information, see [Setting Up the Office Add-Ins for Outlook Integration with [!INCLUDE[prod_short](../developer/includes/prod_short.md)]](Setting-up-Office-Add-Ins-Outlook-Inbox.md).-->
 
-For more information about developing extensions with key vaults, see [Using Key Vault Secrets in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Extensions](../developer/devenv-app-key-vault.md).
+For more information about developing extensions with key vaults, see [Using Key Vault Secrets in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Extensions](../developer/devenv-app-key-vault.md).
 
 ## Create the Azure Key Vault with secrets
 
@@ -48,7 +51,7 @@ To provision the key vault reader application, use the [Azure Active Directory P
     ```powershell
     Import-Module AzureAD 
     ```
-4. Connect to your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Azure AD tenant.
+4. Connect to your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Azure AD tenant.
 
     1. Run the following command:
 
@@ -81,7 +84,13 @@ The next task is to grant the key vault reader application permission to read se
 
 Send an email to [bcappkeyvaultonboard@microsoft.com](mailto:bcappkeyvaultonboard@microsoft.com) to start the onboarding process. Do this step before you publish your updated extension to Partner Center.
 
-The onboarding process involves a manual verification step that verifies that you own the AAD tenant that contains the key vaults. 
+The onboarding process involves a manual verification step that verifies that you own the AAD tenant that contains the key vaults.
+
+Provide the following information in the email:
+- Your AAD tenant ID. Obtain this information from the Azure portal by going to the Azure Active Directory Overview page.
+- Your AppSource extensions, including names and App IDs, that should be enabled to read secrets from your key vaults.
+- Optionally, a screenshot from the Azure portal showing the key vault and its access policies. The screenshot can help Microsoft catch configuration mistakes early in the process.
+
 
 ## See Also  
 

@@ -2,11 +2,11 @@
 title: "Codeunit.Run Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 12/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Codeunit.Run Method
+> **Version**: _Available from runtime version 1.0._
+
 Loads and runs the unit of AL code you specify. To use this method, you can specify a table associated with the codeunit when you defined the codeunit properties. This allows you to pass a variable with the method. The transaction that the codeunit contains is always committed due to the Boolean return value.
 
 
@@ -32,27 +34,28 @@ This optional parameter identifies a record. This parameter is a record data typ
 
 
 ## Return Value
-*Ok*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+*Ok*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+**true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Example  
- This example runs two codeunits. The first uses a record parameter. The second is defined without a source table.
+## Example
 
- ```
+This example runs two codeunits. The first uses a record parameter. The second is defined without a source table.
+
+```al
 var
     FiscalYearCloseInstance: Codeunit "Fiscal Year-Close";
     AppMgmtInstance: Codeunit ApplicationManagement;
     AccountRecord: Record "Accounting Period";
 begin  
-    AccountRecord.INIT;  
-    if not FiscalYearCloseInstance.RUN(AccountRecord) then  
-      ERROR('Codeunit run failed (with record).');  
-    if not AppMgmtInstance.RUN then  
-      ERROR('Codeunit run failed.');  
+    AccountRecord.Init;  
+    if not FiscalYearCloseInstance.Run(AccountRecord) then  
+      Error('Codeunit run failed (with record).');  
+    if not AppMgmtInstance.Run then  
+      Error('Codeunit run failed.');  
 end;
 ```  
 

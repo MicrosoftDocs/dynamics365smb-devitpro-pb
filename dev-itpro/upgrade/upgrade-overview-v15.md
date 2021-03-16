@@ -6,23 +6,23 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
 ms.service: "dynamics365-business-central"
 ---
-# Upgrading to [!INCLUDE[prodlong](../developer/includes/prodlong.md)] 2019 Release Wave 2
+# Upgrading to [!INCLUDE[prod_long](../developer/includes/prod_long.md)] 2019 Release Wave 2
 <!--
 > [!IMPORTANT]  
 > [!INCLUDE[vnext_preview](../developer/includes/vnext_preview.md)] 
 >
 > Please note that this topic is a draft in progress. We are still working on adding more details to the steps described in this topic.
 -->
-[!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 release wave 2 (version 15) marks the release where C/AL has been completely replaced by AL. The 2019 release wave 2 is the first version that does not include the classic development environment (also known as C/SIDE). From an application perspective, this means that [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 Wave 2 is completely extension-based. The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] base application is now delivered as an AL extension instead of C/AL. Additionally, application functionality that is not related to the business logic has been moved into separate modules that are combined into an extension known as the System Application. This change will influence how you perform the upgrade compared to earlier releases.
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2019 release wave 2 (version 15) marks the release where C/AL has been completely replaced by AL. The 2019 release wave 2 is the first version that does not include the classic development environment (also known as C/SIDE). From an application perspective, this means that [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2019 Wave 2 is completely extension-based. The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] base application is now delivered as an AL extension instead of C/AL. Additionally, application functionality that is not related to the business logic has been moved into separate modules that are combined into an extension known as the System Application. This change will influence how you perform the upgrade compared to earlier releases.
 
 ## Upgrade paths
 
-When upgrading your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Spring 2019 (version 14) solution to version 15, the goal is to move towards a full uptake of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] base and system applications, as they are, and migrating code customizations to add-on extensions. There are different upgrade paths that you follow to get to this state, as illustrated in the following figure. 
+When upgrading your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Spring 2019 (version 14) solution to version 15, the goal is to move towards a full uptake of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] base and system applications, as they are, and migrating code customizations to add-on extensions. There are different upgrade paths that you follow to get to this state, as illustrated in the following figure. 
 
 ![Upgrade path on Business Central application](../developer/media/bc15-upgrade-paths.png "Upgrade paths")
 
@@ -49,11 +49,11 @@ For details about each path, see the following articles:
 -->
 
 > [!NOTE]
-> Upgrading to [!INCLUDE[prodlong](../developer/includes/prodlong.md)] 2019 Release Wave 2 requires that you first upgrade to [!INCLUDE[prodlong](../developer/includes/prodlong.md)] Spring 2019 (version 14).
+> Upgrading to [!INCLUDE[prod_long](../developer/includes/prod_long.md)] 2019 Release Wave 2 requires that you first upgrade to [!INCLUDE[prod_long](../developer/includes/prod_long.md)] Spring 2019 (version 14).
 <!--
-## Upgrade an unmodified [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application
+## Upgrade an unmodified [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application
 
-Use this scenario if you have a Business Central application that does not include any code customization in C/AL. Customizations, if any, are done by extensions, which can be Microsoft (1st party) extensions and custom extensions (3rd party). With this upgrade, you will replace the C/AL base application with the new Business Central version 15 base application extension and the system application. The result will be a fully upgraded application and platform on [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 release wave 2.
+Use this scenario if you have a Business Central application that does not include any code customization in C/AL. Customizations, if any, are done by extensions, which can be Microsoft (1st party) extensions and custom extensions (3rd party). With this upgrade, you will replace the C/AL base application with the new Business Central version 15 base application extension and the system application. The result will be a fully upgraded application and platform on [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2019 release wave 2.
 
  ![Upgrade on unmodified Business Central application](../developer/media/bc15-upgrade-unmodified-app.png "Upgrade on unmodified Business Central application") 
 
@@ -61,7 +61,7 @@ For more information, see [Upgrading an Unmodified Application](upgrade-unmodifi
 
 ## Technical upgrade of a custom application to version 15 platform
 
-Use this process when you have a customized Business Central application that you want to upgrade to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 release wave 2 platform. This will not upgrade the application to the latest version. With this process, you will convert the entire application from C/AL to an base application extension.
+Use this process when you have a customized Business Central application that you want to upgrade to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2019 release wave 2 platform. This will not upgrade the application to the latest version. With this process, you will convert the entire application from C/AL to an base application extension.
 
 
  ![Upgrade on customized Business Central application](../developer/media/bc15-upgrade-customized-app.png "Upgrade on customize Business Central application")  
@@ -90,7 +90,7 @@ For more information, see [Upgrade to the Microsoft Base Application](upgrade-fu
 
 ## New and changed application features
 
-There a several new and changed platform application features available in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] April 2019 release wave2 for users, administrators, and developers. For an overview of these features, see [Overview of Dynamics 365 Business Central 2019 release wave 2](/dynamics365-release-plan/2019wave2/dynamics365-business-central/).
+There a several new and changed platform application features available in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] April 2019 release wave2 for users, administrators, and developers. For an overview of these features, see [Overview of Dynamics 365 Business Central 2019 release wave 2](/dynamics365-release-plan/2019wave2/dynamics365-business-central/).
 
 To take advantage of these all these features, you will have to perform an application code upgrade, not just a technical (platform) upgrade.  
 
@@ -669,4 +669,4 @@ Customization extensions are AL extensions that add functionality to the base ap
 
 [Upgrade of an Unmodified Application](upgrade-unmodified-application.md)  
 [Technical Upgrade of Customized Application](upgrade-technical-upgrade-v14-v15.md)  
-[[!INCLUDE[prodlong](../developer/includes/prodlong.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md)  
+[[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md)  

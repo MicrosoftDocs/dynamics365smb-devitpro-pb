@@ -1,11 +1,12 @@
 ---
 title: "Web Client URL"
+description: Learn about the URL for opening the Web client. 
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/12/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
@@ -35,7 +36,7 @@ This article describes how you can construct URLs. A well-constructed URL can be
 The [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)] URL has the following syntax:
 
 ```
-https://<hostname>[/<aadtenantid>][/<environmentname>]/?[company=<companyname>]&[page|report|table=<ID>]&[tenant=<tenantID>]&[mode=<View|Edit|Create>]&[profile=<profileID>]&[customize]&[bookmark=<bookmark>]&[captionhelpdisabled=<0|1>]&[showribbon=<0|1>]&[shownavigation=<0|1>]&[showuiparts=<0|1>]&[showheader=<0|1>]&[isembedded=1]&[pagesize=<number of lines>]&[redirect<0|1>]&[extension=<extensionID>]
+https://<hostname>[/<aadtenantid>][/<environmentname>]/?[company=<companyname>]&[page|query|report|table=<ID>]&[tenant=<tenantID>]&[mode=<View|Edit|Create>]&[profile=<profileID>]&[customize]&[bookmark=<bookmark>]&[captionhelpdisabled=<0|1>]&[showribbon=<0|1>]&[shownavigation=<0|1>]&[showuiparts=<0|1>]&[showheader=<0|1>]&[isembedded=1]&[pagesize=<number of lines>]&[redirect<0|1>]&[extension=<extensionID>]
 ```
 
 <!-- onprem
@@ -90,13 +91,14 @@ The following table describes the parameters of the URL for displaying a page.
 |`<environmentname>`|(online only) Specifies the display name of sandbox or production environment to target.|
 |`company`|The name of the company in [!INCLUDE[d365fin_md](includes/d365fin_md.md)] that you want to target.<br /><br /> If you only have one company, then you can omit this parameter.|
 |`page`|Opens a page object.|
+|`query`|Opens a query object. **Note:** The [TopNumberOfRows property](properties\devenv-topnumberofrows-property.md) is ignored when the query opens in the browser.|
 |`report`|Opens a report object.|
 |`table`|Opens a table object. Opening a table requires special permissions. For more information about opening a table, see [Viewing Table Data](devenv-view-table-data.md).|
 |`ID`|The ID of the page, report, or table to open. |
 |`tenant`|(on-premises only) Specifies the ID of the tenant to connect to. Use this parameter when [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)] is deployed in multitenant architecture. The tenant that you specify must be mounted on the [!INCLUDE[d365fin_server_md](includes/d365fin_server_md.md)] instance that the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)] connects to. For more information, see [Multitenant Deployment Architecture](../deployment/Multitenant-Deployment-Architecture.md).|
 |`mode`|Specifies the mode in which to display the page when it opens. Once the page opens, you can switch modes as usual, unless restricted by the page itself. <br /><br />- `View`<br /> The page can only be viewed. The user can't change data on the page. **Note:** Worksheet page types only display in the edit mode, even if the value is set to `View`.<br /><br />- `Edit`<br /> The user can change data on the page. **Note:** To use the edit mode, the [Editable Property](properties/devenv-editable-property.md) of the page in Page Designer must be set to **Yes**. This mode isn't supported for pages of the type List, RoleCenter, and CardPart. If you set the value to `Edit`, pages of these types still display in the view mode. For List type pages, the user can modify the list by choosing **Edit List** on the page.<br /><br />-  `Create`<br />Opens a blank page that enables the user to create a new item.<br /><br />**Note:** The `Create` mode isn't supported for pages of the type CardPart, List, ListPart, RoleCenter, and Worksheet. For pages of the type CardPart, List, and ListPart, the page displays in the view mode. Don't use this mode for Worksheet pages; otherwise you'll get an error when you try to open the page.|
 |`profile`|Specifies the ID of the profile to open, such as `accountant` or `order processor`.<br /><br />It's possible for two or more profiles have the same ID. Profiles can have a scope of either system or tenant. Also, tenant profiles can be either user-defined (added by using the **Profiles** page in the client) or extension-based (added by an extension). Among these different types, the IDs of some profiles might be the same. If there's more than one profile with the same ID as you provide, the profile is selected as follows:<ol><li>If there's a matching system profile, it's used.</li><li>If there's a matching user-defined tenant profile, it's used.</li><li>If there's only one matching extension-based profile, it's used.</li><li>If there are two or more extensions-based profiles with the same ID, then the error message `More than one profile has the ID '<ID>' within the Tenant scope.` appears. In this case, you can't use the `profile` parameter for this profile.</li></ol> |
-|`customize`|Opens the profile for customization, enabling you to change the layout of pages as seen by users of the profile. If you omit the `profile`, then the default profile opens. For more information, see [Customizing the Workspace for Profiles (Roles)](/dynamics365/business-central/ui-personalization-manage)  in the [!INCLUDE[prodshort](includes/prodshort.md)] Application Help.|
+|`customize`|Opens the profile for customization, enabling you to change the layout of pages as seen by users of the profile. If you omit the `profile`, then the default profile opens. For more information, see [Customizing the Workspace for Profiles (Roles)](/dynamics365/business-central/ui-personalization-manage)  in the [!INCLUDE[prod_short](includes/prod_short.md)] Application Help.|
 |`bookmark`|Specifies a record in the underlying table of the page. The value of a bookmark is an alphanumeric string of characters, for example, `27%3bEgAAAAJ7CDAAMQA5ADAANQA4ADkAMw%3d%3`.<br /><br /> For the page types Card, CardPart, and Document, the bookmark specifies the record that is shown in the page. For page types List, ListPart, and Worksheet, the bookmark specifies the record that is selected in the list on the page.<br /><br /> **Important:**  Bookmarks are generated automatically. You can only determine a value for the bookmark by displaying the page in the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)] and looking at its address. So, a bookmark is only relevant when the address you're working with was copied from another page instance.|
 |`captionhelpdisabled`|Specifies that the ability to look up Help by selecting a field caption is disabled.<br /><br />If you want the Help look up from the field captions, either omit this parameter or set its value to `0`, such as `captionhelpdisabled=0`. <br /><br />If you don't want the Help lookup from field captions, set the value to `1`, such as `captionhelpdisabled=1`.<br /><br /> **Note:** For this parameter to take effect, add it at the first request when the user signs in. Adding the parameter on an existing session has no effect.|
 |`showribbon`|Specifies whether to show the action bar on pages when they open. To show the action bar, omit this parameter or use `showribbon=1`. To hide the action bar, use `showribbon=0`.<br /><br />When you hide the action bar, it will remain hidden as you move to different pages, until you refresh or reload the browser or use `showribbon=1` in the URL. Once you move to another page, the parameter is no longer shown in the URL, even though it's still in effect.|

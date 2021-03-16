@@ -1,24 +1,33 @@
 ---
 title: "NamespacePrefix Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
-ms.assetid: 1e0022d4-97e7-4bed-9cf9-e07e43d8ad85
-caps.latest.revision: 5
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # NamespacePrefix Property
+> **Version**: _Available from runtime version 1.0._
 
-Specifies the namespace prefix on an XMLport element.  
-  
-## Applies to  
-  
-- Table elements, Field elements and Text elements in XMLports that have the [Format Property (XMLports)](devenv-format-xmlports-property.md) set to **Xml**.  
+Specifies the namespace prefix on an XmlPort element.
+
+## Applies to
+-   Xml Port Text Element
+-   Xml Port Field Element
+-   Xml Port Table Element
+-   Xml Port Field Attribute
+-   Xml Port Text Attribute
+
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 
 ## Syntax
 
@@ -34,9 +43,7 @@ This property only applies to element node types and will be ignored if it is se
 
 For more information about using namespaces with XMLports, see  [Using Namespaces with XMLports](../devenv-using-namespaces-with-xmlports.md).  
 
-## See Also
+## See Also  
 
-[Properties](devenv-properties.md)  
-[Namespaces Property](devenv-namespaces-property.md)  
-[DefaultNamespace Property](devenv-defaultnamespace-property.md)  
-[UseDefaultNamespace Property](devenv-usedefaultnamespace-property.md)
+[Getting Started with AL](../devenv-get-started.md)  
+[Developing Extensions](../devenv-dev-overview.md)  

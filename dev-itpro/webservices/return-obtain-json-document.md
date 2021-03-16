@@ -5,7 +5,7 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ---
 # Using OData to Return or Obtain a JSON Document
@@ -13,7 +13,7 @@ You can publish a page as a web service and consume it using JavaScript Object N
   
 ## Obtain a document based on JSON  
   
-1.  You can build applications that consume and display [!INCLUDE[prodshort](../developer/includes/prodshort.md)] data using JSON. This example assumes that you have registered and published a page web service in [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
+1.  You can build applications that consume and display [!INCLUDE[prod_short](../developer/includes/prod_short.md)] data using JSON. This example assumes that you have registered and published a page web service in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
   
 2.  Start Windows Internet Explorer. In the **Address** field, enter a URI in this format:  
   

@@ -1,37 +1,38 @@
 ---
-title: "SQLJoinType Property"
+title: "SqlJoinType Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
-ms.assetid: 87e3c92e-3651-45cb-9741-05ca8cde85bd
-caps.latest.revision: 7
 author: SusanneWindfeldPedersen
 ---
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
+# SqlJoinType Property
+> **Version**: _Available from runtime version 1.0._
 
+Sets the data item link type between data items in a query to determine the records that are included in the resulting data set.
 
-# SQLJoinType Property
+## Applies to
+-   Query Data Item
 
-Sets the data item link type between data items in a query to determine the records that are included in the resulting dataset.  
-  
-## Applies to  
-  
-- Query data items  
-  
-## Property Value  
+## Property Value
 
-The **SQLJoinType** property has the following values.  
-  
-|Value|Description| 
-|-----------|---------------------------------------|  
-|`LeftOuterJoin`|The resulting dataset contains every record from the upper data item table, even if a record does not have a matching value in the lower data item for fields that are linked by the [DataItemLink Property \(Query\)](devenv-dataitemlink-query-property.md).|  
-|`InnerJoin`|The resulting dataset contains records from data item tables where a match is found between the fields that are linked by the **DataItemLink** property of the lower data item.|  
-|`RightOuterJoin`|The resulting dataset set contains every record from the lower data item table, even if a record does not have a matching value in the upper data item for fields that are linked by the **DataItemLink** property.|  
-|`FullOuterJoin`|The resulting dataset contains all the records from the upper data item table, and all records from the lower data item, including records that do not have a matching value for columns that are linked by the **DataItemLink** property.|  
-|`CrossJoin`|The resulting dataset contains rows that combine each row from the upper data item table with each row from a lower data item table. Cross joins are also called Cartesian products.<br /><br /> **Important:** Cross Join does not require any comparisons between fields of data items, so the **DataItemLink** property must be left blank.|  
+|Value|Description|
+|-----------|---------------------------------------|
+|**LeftOuterJoin**|The resulting dataset contains every record from the upper data item table, even if a record does not have a matching value in the lower data item for fields that are linked by the [DataItemLink Property \(Query\)](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/properties/devenv-dataitemlink-query-property).|
+|**InnerJoin**|The resulting dataset contains records from data item tables where a match is found between the fields that are linked by the **DataItemLink** property of the lower data item.|
+|**RightOuterJoin**|The resulting dataset set contains every record from the lower data item table, even if a record does not have a matching value in the upper data item for fields that are linked by the **DataItemLink** property.|
+|**FullOuterJoin**|The resulting dataset contains all the records from the upper data item table, and all records from the lower data item, including records that do not have a matching value for columns that are linked by the **DataItemLink** property.|
+|**CrossJoin**|The resulting dataset contains rows that combine each row from the upper data item table with each row from a lower data item table. Cross joins are also called Cartesian products.<br /><br /> **Important:** Cross Join does not require any comparisons between fields of data items, so the **DataItemLink** property must be left blank.|
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 
 ## Syntax
 

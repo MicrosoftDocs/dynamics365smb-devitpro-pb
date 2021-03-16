@@ -5,7 +5,7 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 You can set up the system to log deadlocks that occur in the SQL database. The deadlocks are recorded in the Windows Event Log of computer running [!INCLUDE[server](../developer/includes/server.md)]. The log entries provide information about the AL code that was run when the deadlock occurred, along with the deadlock report from SQL Server. This information can help you identify and resolve problem areas in the application design.
 
 ## About Deadlocks
-Deadlocks can prevent users from completing tasks in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client. A deadlock occurs when two or more processes or transactions block each other from continuing because each has locked a database resource that the other transaction needs. SQL Server handles deadlocks by terminating and rolling back transactions that were started after the first transaction.
+Deadlocks can prevent users from completing tasks in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client. A deadlock occurs when two or more processes or transactions block each other from continuing because each has locked a database resource that the other transaction needs. SQL Server handles deadlocks by terminating and rolling back transactions that were started after the first transaction.
 
 For general information about deadlocks, see [Detecting and Ending Deadlocks](https://aka.ms/detectingendingdeadlocks).
 
@@ -25,20 +25,20 @@ Setting up deadlock logging requires you to configure the SQL Server instance an
 ### Configure the SQL Server instance
 To configure the SQL Server instance to log deadlocks, you must assign specific permissions to the database login for the service account that is used on the [!INCLUDE[server](../developer/includes/server.md)] instance. You can do this using SQL Server Management Studio.
 
-In SQL Server Management Studio, connect to the SQL server instance for [!INCLUDE[prodshort](../developer/includes/prodshort.md)], and then grant the following permissions:
+In SQL Server Management Studio, connect to the SQL server instance for [!INCLUDE[prod_short](../developer/includes/prod_short.md)], and then grant the following permissions:
 -   On the database level, grant the login the **View database state** permission.
 -   On the SQL server instance level, grant the login both **Alter any event session** and **View server state** permissions.
 
 For detailed steps on how to do this, see [Giving the account necessary database privileges in SQL Server](../deployment/provision-server-account.md#dbo).
 
-The next time a client session is established with the database, a session for monitoring the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database appears under  **Management**, **Extended Events**.
+The next time a client session is established with the database, a session for monitoring the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database appears under  **Management**, **Extended Events**.
 
 #### Configure where to store deadlock events
 
 By default, SQL Server uses an in-memory data structure called a *ring_buffer target* to store deadlock events. When the [!INCLUDE[server](../developer/includes/server.md)] is notified about the deadlock, it reads data from the target *ring_buffer* target. You have the option to also store the events to a file on the SQL Server, called an *event_file target*, and configure the [!INCLUDE[server](../developer/includes/server.md)] to read from this file instead of the ring_buffer target. An important difference between the ring_buffer target and event_file target is that the ring_buffer target has a storage size limitation of 5MB, while the event_file target provides a much greater storage capacity. Using the event_file target can eliminate potential overloads in high volume situations. So, if your setup has a high volume of database traffic, you might have to change the SQL Server to write deadlock events to an event_file target as described the steps that follow. If you want to use the default ring_buffer target, then no further action is required.
 
 > [!NOTE]
-> Reading from the event_file target is only supported in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Cumulative Update 3 and later.
+> Reading from the event_file target is only supported in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Cumulative Update 3 and later.
 1. Modify the deadlock monitoring session to use a file-based target (known as an *event_file target*).
 
     The event_file target writes event session output from a buffer to a disk file that you specify. There are two ways to do this:
@@ -56,7 +56,7 @@ By default, SQL Server uses an in-memory data structure called a *ring_buffer ta
    
     For more information see [Alter an Extended Events Session](/sql/relational-databases/extended-events/alter-an-extended-events-session?view=sql-server-2017) and [Targets for Extended Events in SQL Server](/sql/relational-databases/extended-events/targets-for-extended-events-in-sql-server?view=sql-server-2017#eventfile-target).
     
-2. In the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database, create a view that has the name `deadlock_report_event_file_view` and uses the new event_file target.  
+2. In the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database, create a view that has the name `deadlock_report_event_file_view` and uses the new event_file target.  
 
     <!--You can create this view based on the default `dbo.deadlock_report_ring_buffer_view` view. To use the event_file target, you change `xt.target_name = N'ring_buffer'` to `xt.target_name = N'event_file'`.--> For example:
 
@@ -86,7 +86,7 @@ By default, SQL Server uses an in-memory data structure called a *ring_buffer ta
 
      Replace `C:\logging\` with the path to the event file.
 <!--
-3. Change the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database synonym `dbo.syn_deadlock_event_view` to point to the deadlock report event file view that you created.
+3. Change the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database synonym `dbo.syn_deadlock_event_view` to point to the deadlock report event file view that you created.
 
     This synonym is used by the [!INCLUDE[server](../developer/includes/server.md)] to query the deadlock data. To alter a synonym, you first drop it, and then create a new synonym that has the same name. For example:
     ```
@@ -115,7 +115,7 @@ To log deadlocks, you must enable deadlock logging on the [!INCLUDE[server](../d
     For more information about how to use the [!INCLUDE[adminshell](../developer/includes/adminshell.md)], see [Business Central PowerShell Cmdlets](/powershell/business-central/overview) and [Set-NAVServerConfiguration Cmdlet](https://go.microsoft.com/fwlink/?linkid=401394).
 
 ## Viewing Deadlocks in the Windows Event Log
-Similar to other errors and events in [!INCLUDE[prodshort](../developer/includes/prodshort.md)], you can monitor deadlocks by using Event Viewer on the computer running [!INCLUDE[server](../developer/includes/server.md)]. Deadlocks are recorded as warnings in the [!INCLUDE[server](../developer/includes/server.md)]  **Admin** channel log in the **Applications and Services Logs**. For general information about how to view the [!INCLUDE[server](../developer/includes/server.md)] logs, see [Monitor Business Central Server Events Using Event Viewer](monitor-server-events-windows-event-log.md).
+Similar to other errors and events in [!INCLUDE[prod_short](../developer/includes/prod_short.md)], you can monitor deadlocks by using Event Viewer on the computer running [!INCLUDE[server](../developer/includes/server.md)]. Deadlocks are recorded as warnings in the [!INCLUDE[server](../developer/includes/server.md)]  **Admin** channel log in the **Applications and Services Logs**. For general information about how to view the [!INCLUDE[server](../developer/includes/server.md)] logs, see [Monitor Business Central Server Events Using Event Viewer](monitor-server-events-windows-event-log.md).
 
 ### Deadlock Event Overview
 Deadlock event log entries have the event ID 705 and task category 33 (TelemetryData). The following table describes some of important information that is included in deadlock log entry:
@@ -123,8 +123,8 @@ Deadlock event log entries have the event ID 705 and task category 33 (Telemetry
 |  Information |  Description  |
 |--------------|---------------|
 |serverInstanceName|Specifies the [!INCLUDE[server](../developer/includes/server.md)] instance on which the event occurred.|
-|user|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] user account that ran the transaction that caused the event.|
-|AL ObjectType|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] object in AL that ran the transaction, such as a page or report.|
+|user|Specifies the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] user account that ran the transaction that caused the event.|
+|AL ObjectType|Specifies the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] object in AL that ran the transaction, such as a page or report.|
 |AL ObjectNumber|Specifies the ID of the object that was run.|
 |AL ScopeName|Specifies the AL function that ran the transaction that caused the event.|
 |SQL Server deadlock XML report|Includes the deadlock report that was recieved from SQL Server. For more information, see [Analyze Deadlocks](https://aka.ms/analyzedeadlocks).|
@@ -143,8 +143,8 @@ All deadlock events have the trace tag **00000DI**. If you only want to see dead
 
 ```
 <QueryList>
-  <Query Id="0" Path="Microsoft-Dynamics365BusinessCentral-Server/Admin">
-    <Select Path="Microsoft-Dynamics365BusinessCentral-Server/Admin">
+  <Query Id="0" Path="Microsoft-DynamicsNAV-Server/Admin">
+    <Select Path="Microsoft-DynamicsNAV-Server/Admin">
                  *[EventData[Data[@Name='tag'] and (Data='00000DI')]]
                </Select>
   </Query>

@@ -5,7 +5,7 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
@@ -13,7 +13,7 @@ author: jswymer
 Server-driven paging ensures that the quantity of data that is returned by an OData URI does not overwhelm [!INCLUDE[server](../developer/includes/server.md)] or client program that you use to capture data, while optimizing performance.  
   
 > [!NOTE] 
->  The term *page* in this topic refers only to a page that contains OData results and is not related to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] page objects.  
+>  The term *page* in this topic refers only to a page that contains OData results and is not related to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] page objects.  
   
 ## Configuring Server-Driven Paging  
  You configure server-driven paging with the **Max Page Size** setting in the configuration for the [!INCLUDE[server](../developer/includes/server.md)] instance that you are using for OData services. To modify the setting, you can use [Server Administration Tool](../administration/administration-tool.md) or [Business Central Windows PowerShell Cmdlets]((/powershell/business-central/overview). For more information about **Max Page Size** and other [!INCLUDE[server](../developer/includes/server.md)] parameters, see [Configuring Business Central Server](../administration/configure-server-instance.md).  

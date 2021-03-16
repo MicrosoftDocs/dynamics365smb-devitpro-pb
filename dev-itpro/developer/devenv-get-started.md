@@ -7,7 +7,7 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
@@ -21,7 +21,7 @@ To get started writing extensions for [!INCLUDE[d365fin_long_md](includes/d365fi
 Go through the following steps to set up a sandbox environment. With this you get sample code that compiles and runs with just a few commands. 
 
 > [!NOTE]  
-> If you want to create a container-based sandbox, see [Get started with the Container Sandbox Development Environment](devenv-get-started-container-sandbox.md). For information about which sandboxes you can choose, see [Choosing Your Dynamics 365 Business Central Development Sandbox Environment](devenv-sandbox-overview.md).
+> If you want to create a container-based sandbox, see [Get started with the Container Sandbox Development Environment](devenv-get-started-container-sandbox.md). For information about which sandboxes you can choose, see [Sandbox Environments for Dynamics 365 Business Central Development](devenv-sandbox-overview.md).
 
 > [!IMPORTANT]  
 > It is not supported to publish, from Visual Studio Code, an extension with the same identifiers as an extension published to AppSource. Identifiers include the combination of appID and version or name, publisher, and version. If you do publish such an extension, it can be removed at any time.
@@ -36,7 +36,7 @@ Go through the following steps to set up a sandbox environment. With this you ge
 6) Enter the credentials that you provided for the sign-up.
 7) Press **Ctrl+F5** to deploy and run the extension on your online sandbox tenant.  
 
-You now have a HelloWorld sample that compiles and runs. The JSON files in the project are automatically updated with the settings that allows you to press **Ctrl+F5** to build and deploy the solution to [!INCLUDE[prodshort](includes/prodshort.md)]. For more information, see [JSON Files](devenv-json-files.md).
+You now have a HelloWorld sample that compiles and runs. The JSON files in the project are automatically updated with the settings that allows you to press **Ctrl+F5** to build and deploy the solution to [!INCLUDE[prod_short](includes/prod_short.md)]. For more information, see [JSON Files](devenv-json-files.md).
 
 ## Tips and tricks
 
@@ -76,7 +76,7 @@ The symbol file contains metadata of the application. This is what your extensio
 
 ## Installing and publishing an extension
 
-To make your extension available to users, the package must be published to a specific [!INCLUDE[prodshort](includes/prodshort.md)] server instance. The extension can be installed for one or more tenants. For more information about how to install and publish an extension, see [How to: Publish and Install an Extension](devenv-how-publish-and-install-an-extension-v2.md). 
+To make your extension available to users, the package must be published to a specific [!INCLUDE[prod_short](includes/prod_short.md)] server instance. The extension can be installed for one or more tenants. For more information about how to install and publish an extension, see [How to: Publish and Install an Extension](devenv-how-publish-and-install-an-extension-v2.md). 
 
 ## Controlling user access to developing and publishing extensions
 

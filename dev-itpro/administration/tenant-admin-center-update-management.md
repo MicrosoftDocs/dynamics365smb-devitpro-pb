@@ -4,7 +4,7 @@ description: Use the Business Central administration center to manage environmen
 author: edupont04
 
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -15,18 +15,18 @@ ms.author: edupont
 
 # Managing Updates in the Business Central Admin Center
 
-[!INCLUDE[prodshort](../developer/includes/prodshort.md)] environments are updated according to the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] [roadmap](https://dynamics.microsoft.com/roadmap/business-central/) with two major updates in April and October each year, and monthly service updates. For more information, see [Dynamics 365 Release Plans](/dynamics365/release-plans/).
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments are updated according to the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] [roadmap](https://dynamics.microsoft.com/roadmap/business-central/) with two major updates in April and October each year, and monthly service updates. For more information, see [Dynamics 365 Release Plans](/dynamics365/release-plans/).
 
 Updates of the base application and platform are managed by Microsoft. As an internal administrator or as a partner, you can use the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] to specify certain parameters of the timing of updates for each environment, and you can specify the people who must receive [notifications of when an update is available](#notify). You can also help prepare your solution and your users by creating preview environments so that you can get acquainted with new functionality in the product. For more information, see [Major Updates of Business Central Online](update-rollout-timelime.md).  
 
 ## Set the update window for each environment
 
-The update window for an environment defines a window of time during the day in which the environment can be updated. When an update is rolling out to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, regardless of whether it's the monthly service update or a major update, the update will be applied to an environment within the time frame that the update window defines. This helps to ensure that updates are applied outside of the normal business hours of the organization, for example.
+The update window for an environment defines a window of time during the day in which the environment can be updated. When an update is rolling out to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, regardless of whether it's the monthly service update or a major update, the update will be applied to an environment within the time frame that the update window defines. This helps to ensure that updates are applied outside of the normal business hours of the organization, for example.
 
 The update window must be a minimum of six hours.
 
 > [!NOTE]
-> Desktop users who are signed in during the update will receive an alert in [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
+> Desktop users who are signed in during the update will receive an alert in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 To set the update window for an environment:
 
@@ -37,21 +37,21 @@ To set the update window for an environment:
    > The update window must be a minimum of six hours.
 4. Choose **Save**.
 
-## Schedule an update date
+## <a name="schedule"></a>Schedule an update date
 
 Specifically for major updates, you can choose a specific date on which the environment is updated. The **Update version** field in the **Version Management** section of the environment details also displays the version number of the available update version.
 
 To schedule an update date:
 
 1. On the **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], choose the **Name** of the relevant environment to open the environment details.
-2. Choose the **Schedule Update** action on the **Update** list on the action ribbon.
+2. Choose the **Set update date** action on the **Update Settings** list on the action ribbon.
 3. In the **Schedule Environment Update** pane, specify the update date.
     > [!NOTE]
     > The specified date must be within a given date range that is shown in the pane.
 
 4. Choose **Schedule Update**.
 
-If an administrator has chosen the **Schedule Update** action but not set a date, then the update is applied automatically to each tenant environment with a default date range. The default date range is communicated in advance to tenant administrators through administrative notifications. You can then choose to override that with a custom date by following the steps that are provided above. Not selecting an update date does not prevent the environment from being updated.
+If an administrator has chosen the **Set update date** action but not set a date, then the update is applied automatically to each tenant environment with a default date range. The default date range is communicated in advance to tenant administrators through administrative notifications. You can then choose to override that with a custom date by following the steps that are provided above. Not selecting an update date does not prevent the environment from being updated.
 
 ## <a name="notify"></a>Get notified of updates
 

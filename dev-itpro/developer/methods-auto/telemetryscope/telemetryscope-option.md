@@ -2,11 +2,11 @@
 title: "TelemetryScope System Option"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # TelemetryScope Option Type
+> **Version**: _Available from runtime version 5.4._
+
 Represents the emission scope of the telemetry signal.
 
 ## Members
@@ -26,12 +28,12 @@ Represents the emission scope of the telemetry signal.
 
 ## Examples
 
-```
+```al
 if not FileManagement.ServerFileExists(ServerFile) then begin
             LogInternalError(SomethingWentWrongErr, DataClassification::SystemMetadata, Verbosity::Error);
 ```
 
-```
+```al
 if not XmlDocument.ReadFrom('<?xml version="1.0" encoding="UTF-8"?>' + '<Elster xmlns="' + XmlNameSpace + '"></Elster>', XmlSubDoc) then
             LogInternalError(XMLDocHasNotBeenCreatedErr, DataClassification::SystemMetadata, Verbosity::Error);
 ```

@@ -4,7 +4,7 @@ description: "Description of how you use AL to add pages and reports so that the
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 10/01/2020
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
@@ -13,7 +13,7 @@ ms.author: solsen
 
 # Adding Pages and Reports to Tell me
 
-The [!INCLUDE[prodshort](includes/prodshort.md)] client includes the **Tell me** feature that lets users find objects and online help articles by entering search terms. When you have added a page or a report in your extension, you most likely want it to be discoverable to users in **Tell me**. In AL, you make a page or report searchable from **Tell me** by setting the [UsageCategory property](properties/devenv-usagecategory-property.md) in code. The **UsageCategory** setting will make the page or report searchable, and the value chosen for the setting will further sub categorize the item.
+The [!INCLUDE[prod_short](includes/prod_short.md)] client includes the **Tell me** feature that lets users find objects and online help articles by entering search terms. When you have added a page or a report in your extension, you most likely want it to be discoverable to users in **Tell me**. In AL, you make a page or report searchable from **Tell me** by setting the [UsageCategory property](properties/devenv-usagecategory-property.md) in code. The **UsageCategory** setting will make the page or report searchable, and the value chosen for the setting will further sub categorize the item.
 
 ![TellMe](media/tellmeApril19.png)
 
@@ -38,10 +38,10 @@ The values for the **UsageCategory** property are listed below. The sub category
 
 ## Adding additional search terms
 
-You can specify other words or phrases that can help users find a page or report by using the [AdditionalSearchTerms](../developer/properties/devenv-additionalsearchterms-property.md) and [AdditionalSearchTermsML](../developer/properties/devenv-additionalsearchtermsml-property.md) properties. If the page or report is searchable by **Tell me** (that is, th **UsageCategory** property is set a value other than `None`), the search terms specified by these properties are used in addition to the caption of the page or report. These properties are useful when the caption does not always reflect what users will look for. A good example of this in [!INCLUDE[prodshort](includes/prodshort.md)] is pages and reports associated with **Item**. Users unfamiliar with [!INCLUDE[prodshort](includes/prodshort.md)] might look for 'product' or 'merchandise' instead of 'item'.  
+You can specify other words or phrases that can help users find a page or report by using the [AdditionalSearchTerms](../developer/properties/devenv-additionalsearchterms-property.md) and [AdditionalSearchTermsML](../developer/properties/devenv-additionalsearchtermsml-property.md) properties. If the page or report is searchable by **Tell me** (that is, th **UsageCategory** property is set a value other than `None`), the search terms specified by these properties are used in addition to the caption of the page or report. These properties are useful when the caption does not always reflect what users will look for. A good example of this in [!INCLUDE[prod_short](includes/prod_short.md)] is pages and reports associated with **Item**. Users unfamiliar with [!INCLUDE[prod_short](includes/prod_short.md)] might look for 'product' or 'merchandise' instead of 'item'.  
 
 > [!NOTE]  
-> For [!INCLUDE[prodshort](includes/prodshort.md)] on-premises, the [!INCLUDE[webserverinstance](includes/webserverinstance.md)] configuration file (navsettings.json) includes a setting called `UseAdditionalSearchTerms` that enables or disables the use of additional search terms by the **Tell me**. For more information, see [Configuring [!INCLUDE[webserver](includes/webserver.md)] Instances](../administration/configure-web-server.md#Settings).
+> For [!INCLUDE[prod_short](includes/prod_short.md)] on-premises, the [!INCLUDE[webserverinstance](includes/webserverinstance.md)] configuration file (navsettings.json) includes a setting called `UseAdditionalSearchTerms` that enables or disables the use of additional search terms by the **Tell me**. For more information, see [Configuring [!INCLUDE[webserver](includes/webserver.md)] Instances](../administration/configure-web-server.md#Settings).
 
 ## Example
 The following example creates a `SimpleItemList` page and sets a `UsageCategory` property to the page, so that the `SimpleItemList` page is discoverable through search using the **Tell me** feature. Also, the example sets the   `AdditionalSearchTerms` property to add two search terms for the page. 

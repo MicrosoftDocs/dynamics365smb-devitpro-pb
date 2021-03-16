@@ -7,7 +7,7 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics-nav-2018"
 ms.assetid: 60509047-8419-4b08-a391-83117489fdee
 caps.latest.revision: 17
@@ -16,7 +16,7 @@ ms.author: solsen
 
 # Serializing .NET Framework Types
 
-In Microsoft .NET Framework, serialization is the process of converting an object into a format that can be transmitted across a network connection. Microsoft .NET Framework interoperability uses serialization for communication between client-side .NET Framework objects and server-side .NET Framework objects. When you configure DotNet variables in a [!INCLUDE[prodlong](includes/prodlong.md)] object, you can specify .NET Framework objects to target either the Business Central Windows client or [!INCLUDE[server](includes/server.md)]. In some cases, a client-side object and a server-side object must communicate and share data, such as return values and parameters. The serialization occurs when the following conditions are true:  
+In Microsoft .NET Framework, serialization is the process of converting an object into a format that can be transmitted across a network connection. Microsoft .NET Framework interoperability uses serialization for communication between client-side .NET Framework objects and server-side .NET Framework objects. When you configure DotNet variables in a [!INCLUDE[prod_long](includes/prod_long.md)] object, you can specify .NET Framework objects to target either the Business Central Windows client or [!INCLUDE[server](includes/server.md)]. In some cases, a client-side object and a server-side object must communicate and share data, such as return values and parameters. The serialization occurs when the following conditions are true:  
 
 - When a server-side object is assigned to a client-side object, and vice-versa.  
 
@@ -58,7 +58,7 @@ To implement custom serialization, you create a class that implements the [ISeri
 The common language runtime calls the constructor during deserialization to construct a replica of the source object. The constructor takes two parameters, a **SerializationInfo** type and a [System.Runtime.Serialization.StreamingContext](https://go.microsoft.com/fwlink/?LinkID=262182) type. The **StreamingContext** parameter describes the source and destination of a given serialized stream.  
 
 ### Custom Serialization Example  
-The following code example demonstrates a custom serialization object that implements the basic functionality that is required for compliance with the **ISerializable** interface. In the first procedure of this example, you create a .NET Framework assembly that includes a serializable type. In the second procedure, in the [!INCLUDE[prodshort](includes/prodshort.md)] development environment, you create a codeunit that includes two DotNet variables for the serializable type. You set one variable to target the Business Central Windows client and the other to target the [!INCLUDE[server](includes/server.md)]. In AL code, you add code that transfers the value for the DotNet variable on the [!INCLUDE[server](includes/server.md)] to the Business Central Windows client. You will also add code that verifies that the data transfer is successful.  
+The following code example demonstrates a custom serialization object that implements the basic functionality that is required for compliance with the **ISerializable** interface. In the first procedure of this example, you create a .NET Framework assembly that includes a serializable type. In the second procedure, in the [!INCLUDE[prod_short](includes/prod_short.md)] development environment, you create a codeunit that includes two DotNet variables for the serializable type. You set one variable to target the Business Central Windows client and the other to target the [!INCLUDE[server](includes/server.md)]. In AL code, you add code that transfers the value for the DotNet variable on the [!INCLUDE[server](includes/server.md)] to the Business Central Windows client. You will also add code that verifies that the data transfer is successful.  
 
 ##### To create the custom serialization object  
 1.  In Microsoft Visual Studio, create a C\# Class Library project called *SerializationSample*.  

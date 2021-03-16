@@ -1,33 +1,32 @@
 ---
 title: "ExecutionTimeout Property"
-description: Explains the ExecutionTimeout property on reports in Business Central
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
-author: jswymer
+author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # ExecutionTimeout Property
+> **Version**: _Available from runtime version 6.0._
 
-Sets the maximum time the report will run after which it is automatically terminated. 
-  
-## Applies To  
+Sets the maximum time the report will run after which it is automatically terminated.
 
-- Reports
+## Applies to
+-   Report
+
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Property Value
 
 A string in the format `hh:mm:ss`.
-
-## Syntax
-
-```AL
-ExecutionTimeout := `10:05:55`;
-```
 
 ## Remarks
 

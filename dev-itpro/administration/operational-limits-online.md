@@ -7,28 +7,32 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.author: jswymer
 ---
 
 # Operational Limits for Business Central Online
 
-To ensure the availability and quality of Business Central services, there are limits on certain operations. This article describes the limits and, in some cases, the strategy behind them. The limits are per-tenant limits.
+To ensure the availability and quality of Business Central services, there are limits on certain operations. This article describes the limits and, in some cases, the strategy behind them.
 
 > [!TIP]
 > Telemetry is gathered on some of the operations that have a limit. The telemetry provides insight into operations for which limits were exceeded. For more information, see [Monitoring and Analyzing Telemetry](telemetry-overview.md).
 
 <!--
-For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, you can't change these limits, but it's useful to be aware of them. For on-premises installation, you can adjust most of the limits by configuring the [!INCLUDE[server](../developer/includes/server.md)].-->
+For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, you can't change these limits, but it's useful to be aware of them. For on-premises installation, you can adjust most of the limits by configuring the [!INCLUDE[server](../developer/includes/server.md)].-->
 
 ##  <a name="ClientServices"></a> Client connection limits
   
 |Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
 |---------|--------------------------------------------------------------------------------|------|
+|Reconnect period|The time during which a client can reconnect to the service after being disconnected.|  10 minutes|
+<!-- these settings are per node. We should not expose these to partners 
 |Max concurrent calls|The maximum number of concurrent client calls that can be active.|1000|  
 |Max concurrent connections|The maximum number of concurrent client connections that the service accepts. |500|
 |Max number of orphaned connections|Th maximum number of orphaned connections to be kept alive at the same time for the time that is specified by **ReconnectPeriod**.<br /><br /> A connection is orphaned when the client is involuntarily disconnected from service.<br /><br /> You can also use **MaxValue** as a value to indicate no limit.o| 20|
-|Reconnect period|The time during which a client can reconnect to the service after being disconnected.|  10 minutes|
+-->
+
+
 
 <!-- no limit
 |Operation timeout|The maximum time for the service to return a call from the client.||  
@@ -55,7 +59,7 @@ For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, you can't 
 |Search timeout|The time (in seconds) that a search operation on lists in the client continues before it's stopped. When the limit is reached, the following message displays in the client: **Searching for rows is taking too long. Try to search or filter using different criteria.**|10 seconds|
 |SQL command timeout|The contextual time-out for a SQL command.|30 minutes|
 |SQL connection idle timeout|The time that a SQL connection can remain idle before being closed.|5 minutes|
-|SQL connection timeout|The time to wait for the service to connect to the database. When the time is exceeded, the attempt is canceled and an error occurs. This setting also applies to begin, rollback, and commit of transactions.|1.5 hours|
+|SQL connection timeout|The time to wait for the service to connect to the database. When the time is exceeded, the attempt is canceled and an error occurs. This setting also applies to begin, rollback, and commit of transactions.|1.5 minutes|
 |Long running SQL query threshold|The amount of time that an SQL query can run before a warning telemetry event occurs. If this threshold is exceeded, the following event is logged: Action completed successfully, but it took longer than the given threshold.|1000 ms|
 
 <!--
@@ -75,8 +79,8 @@ For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, you can't 
 
 |Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
 |---------|--------------------------------------------------------------------------------|------|
-|Default max documents | The maximum number of documents that can be merged in report by default Users can override this setting on a report-basis from the report request page. If exceeded, the report will be canceled.<br /><br />Developers can override this setting by using [MaximumDocumentCount property](../developer/properties/devenv-maximumdocumentcount-property.md) of a report. Client users can do the same when running a report from the report request page|200|
-|Max documents | The maximum number of documents that can be merged in report. If exceeded, the report will be canceled.|500|
+|Default max documents | The maximum number of documents that can be merged in a report using a Word layout. Users can override this setting on a report-basis from the report request page. If exceeded, the report will be canceled.<br /><br />Developers can override this setting by using [MaximumDocumentCount property](../developer/properties/devenv-maximumdocumentcount-property.md) of a report. Client users can do the same when running a report from the report request page|200|
+|Max documents | The maximum number of documents that can be merged in a report using a Word layout. If exceeded, the report will be canceled.|500|
 |Default max execution timeout | The maximum execution time that it can take to generate a report by default. Users can override this setting on a report-basis from the report request page. If exceeded, the report will be canceled.<br /><br />Developers can override this setting by using the [ExecutionTimeout property](../developer/properties/devenv-executiontimeout-property.md) of a report. Client users can do the same when running a report from the report request page.|6 hours|
 |Max execution timeout | The maximum execution time that it can take to generate a report. If exceeded, the report will be canceled.|12 hours|
 |Default max rows|The maximum number of rows that can be processed in a report by default. Users can override this setting on a report-basis from the report request page. If exceeded, the report will be canceled.<br /><br />Developers can override this setting by using the [MaximumDataSetSize property](../developer/properties/devenv-maximumdatasetsize-property.md) of a report. Client users can do the same when running a report from the report request page.|500,000|
@@ -89,7 +93,7 @@ For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, you can't 
 | Max execution timeout | The maximum execution time that it can take to generate a query. If exceeded, the query will be canceled.|30 minutes|
 | Max rows | The maximum number of rows that can be processed in a query. If exceeded, the query will be canceled.|1,000,000|
 
-##  <a name="ODataServices"></a> OData request limits
+##  <a name="ODataServices"></a> OData request limits (per environment)
   
 |Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
 |---------|--------------------------------------------------------------------------------|------|
@@ -103,7 +107,7 @@ For [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online, you can't 
 <!--
 |Request timeout|HTTP response code `504 - Gateway Timeout` is returned when a request exceeds 10-minutes execution time.|10 minutes|
 -->
-##  <a name="SOAPServices"></a> SOAP request limits
+##  <a name="SOAPServices"></a> SOAP request limits (per environment)
 
 |Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
 |---------|--------------------------------------------------------------------------------|------|

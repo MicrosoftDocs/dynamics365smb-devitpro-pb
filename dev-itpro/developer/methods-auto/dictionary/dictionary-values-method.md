@@ -2,11 +2,11 @@
 title: "Dictionary.Values Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Dictionary.Values Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets a collection containing the values in the Dictionary.
 
 
@@ -21,18 +23,18 @@ Gets a collection containing the values in the Dictionary.
 ```
 Values :=   Dictionary.Values()
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 
 ## Parameters
-*Dictionary*  
-&emsp;Type: [Dictionary](dictionary-data-type.md)  
-An instance of the [Dictionary](dictionary-data-type.md) data type.  
+*Dictionary*
+&emsp;Type: [Dictionary](dictionary-data-type.md)
+An instance of the [Dictionary](dictionary-data-type.md) data type.
 
 ## Return Value
-*Values*  
-&emsp;Type: [List of [TValue]](../list/list-data-type.md)  
-A list containing the values of the Dictionary.  
+*Values*
+&emsp;Type: [List of [TValue]](../list/list-data-type.md)
+A list containing the values of the Dictionary.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

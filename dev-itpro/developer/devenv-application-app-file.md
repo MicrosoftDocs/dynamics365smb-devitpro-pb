@@ -6,14 +6,14 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 
 # The Microsoft_Application.app File
 
-The Microsoft_Application.app file is included with [!INCLUDE[prodshort](includes/prodshort.md)] and is located in the `\Applications\Application\Source` folder. The `Microsoft_Application.app` file logically encapsulates all of the extensions making up a solution, for example, version `16.0.0.0` of the base and system application package files, and it provides a convenient way to define and refer to this solution identity. 
+The Microsoft_Application.app file is included with [!INCLUDE[prod_short](includes/prod_short.md)] and is located in the `\Applications\Application\Source` folder. The `Microsoft_Application.app` file logically encapsulates all of the extensions making up a solution, for example, version `16.0.0.0` of the base and system application package files, and it provides a convenient way to define and refer to this solution identity. 
 
 > [!NOTE]  
 > In previous versions the references to base and system application were stated explicitly under `dependencies` in the `app.json` file of the extension. Instead you must now use the `Application` version property in the `app.json` file. For more information, see [JSON Files](devenv-json-files.md).
@@ -28,7 +28,7 @@ The file name of the reference is `Microsoft_Application.app` and in the app.jso
 
 ## Changing the app.json file for a code-customized base application
 
-The `app.json` file of the `Microsoft_Application.app` file looks like the following example for [!INCLUDE[prodshort](includes/prodshort.md)] version 15.3.
+The `app.json` file of the `Microsoft_Application.app` file looks like the following example for [!INCLUDE[prod_short](includes/prod_short.md)] version 15.3.
 
 ```json
 {
@@ -87,7 +87,7 @@ The Application app logically encapsulates apps making up a solution (such as Ba
 
 When using it, future refactoring of the referenced solution; like extracting some areas into separate apps, or changes to the identities of the apps which comprise the solution, will not be forcing all other dependent apps to change or add new apps to their dependencies, as these dependencies will be resolved implicitly via the reference to the Application app. 
 
-Additionally, it is meant to simplify the on-premises upgrade scenarios, when customizations are extracted from the Base Application into extensions. And finally it makes it possible to make the same apps available not only to the [!INCLUDE[prodshort](includes/prodshort.md)] customers, but also to the customers of the rich, vertical solutions called Embed Apps, which are also running in the [!INCLUDE[prodshort](includes/prodshort.md)] service. 
+Additionally, it is meant to simplify the on-premises upgrade scenarios, when customizations are extracted from the Base Application into extensions. And finally it makes it possible to make the same apps available not only to the [!INCLUDE[prod_short](includes/prod_short.md)] customers, but also to the customers of the rich, vertical solutions called Embed Apps, which are also running in the [!INCLUDE[prod_short](includes/prod_short.md)] service. 
 
 To enable these benefits, all you need to do, as an AppSource or PTE app owner, is to add the `"application"` property in the `app.json` file of your app and provide the minimum Microsoft Base Application version that this app is compatible with. For more information, see [JSON Files](devenv-json-files.md). Also, you need to remove the direct dependencies to the Base Application and System Application from the `app.json` file. See the following example:
 
@@ -116,7 +116,7 @@ To enable these benefits, all you need to do, as an AppSource or PTE app owner, 
 ```
 
 > [!IMPORTANT]  
-> Soon up-taking the Application app will also be a mandatory requirement for AppSource apps, enforced by the AppSource technical validation. Thus it is highly recommended to change the existing AppSource apps at first convenience, for example with your next planned app update, and adopt the `"application"` property for all new AppSource apps. We also recommend up-taking the Application app for the customized Base Applications on-premise, and per-tenant-extensions (PTEs) that you use in the [!INCLUDE[prodshort](includes/prodshort.md)] online environments.
+> Soon up-taking the Application app will also be a mandatory requirement for AppSource apps, enforced by the AppSource technical validation. Thus it is highly recommended to change the existing AppSource apps at first convenience, for example with your next planned app update, and adopt the `"application"` property for all new AppSource apps. We also recommend up-taking the Application app for the customized Base Applications on-premise, and per-tenant-extensions (PTEs) that you use in the [!INCLUDE[prod_short](includes/prod_short.md)] online environments.
 
 
 ## See Also

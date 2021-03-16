@@ -1,12 +1,13 @@
 ---
 title: "App Management for ISVs"
+description: The App Management API can help you manage your apps running in different customer Business Central environments.
 author: jswymer
 ms.custom: na
 ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
 ---
@@ -15,9 +16,9 @@ ms.author: jswymer
 
 [!INCLUDE[2020_releasewave1](../../includes/2020_releasewave1.md)]
 
-Each [!INCLUDE[prodshort](../../developer/includes/prodshort.md)] environment is built as a collection of apps. These apps include Microsoft apps and apps from AppSource that reselling partners have installed for customers. The apps are working together to provide customers with a broad set of features to address their various business, market, and industry needs.
+Each [!INCLUDE[prod_short](../../developer/includes/prod_short.md)] environment is built as a collection of apps. These apps include Microsoft apps and apps from AppSource that reselling partners have installed for customers. The apps are working together to provide customers with a broad set of features to address their various business, market, and industry needs.
 
-As an authorized ISV, there are three types of apps that you can make available to customers: Add-on, Connect, and Embed. You can find more details about each type [Getting You Started with Building Apps](../../developer/readiness/readiness-add-on-apps-getting-you-started.md). To help you manage your apps running in different customer Business Central environments, [!INCLUDE[prodshort](../../developer/includes/prodshort.md)] provides the App Management API.
+As an authorized ISV, you can deliver your functionality or your services as apps in AppSource. For more information, see [Get Started with Building Apps](../../developer/readiness/get-started.md). To help you manage your apps running in different customer Business Central environments, [!INCLUDE[prod_short](../../developer/includes/prod_short.md)] provides the App Management API.
 
 ## About the App Management API
 

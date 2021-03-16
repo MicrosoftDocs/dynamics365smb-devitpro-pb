@@ -7,7 +7,7 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
@@ -15,7 +15,7 @@ author: jswymer
 
 [!INCLUDE[d365fin_long_md](../includes/2020_releasewave2.md)]
 
-The partial records capability in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] allows for loading a subset of normal table fields when accessing a SQL based data source. Using partial records improves performance of objects like reports and OData pages - objects whose source code loops through records. It's particularly beneficial when table extensions are used in the application.  
+The partial records capability in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] allows for loading a subset of normal table fields when accessing a SQL based data source. Using partial records improves performance of objects like reports and OData pages - objects whose source code loops through records. It's particularly beneficial when table extensions are used in the application.  
 
 Accessing a data source from AL code is typically done by using the record's methods [GET, FIND, NEXT](devenv-get-find-and-next-methods.md), and so on. Without using partial records, the runtime loads all normal fields when accessing the data source. Using the partial records API, you can now select a set of fields and only load them.
 
@@ -36,6 +36,8 @@ To accommodate partial record loading, the following methods are available on bo
 |------|-----------|--------|
 |AreFieldsLoaded|Checks whether the specified fields are all initially loaded.|[Record.AreFieldsLoaded](methods-auto/record/record-arefieldsloaded-method.md)<br /><br />[RecordRef.AreFieldsLoaded](methods-auto/recordref/recordref-arefieldsloaded-method.md)|
 |LoadFields|Accesses the table's corresponding data source to load the specified fields.|[Record.LoadFields](methods-auto/record/record-loadfields-method.md)<br /><br />[RecordRef.LoadFields](methods-auto/recordref/recordref-loadfields-method.md)|
+
+A record instance that has been previously loaded with fields can be reset to a non-partial load either by calling [Record.SetLoadFields](methods-auto/record/record-setloadfields-method.md) without any parameters, or by calling [Reset](methods-auto/record/record-reset-method.md). After being reset, subsequent loads will behave as if SetLoadFields hadn't previously been called on the record instance.
 
 ## Example
 
@@ -72,7 +74,7 @@ The main goal of the feature is to provide the ability to limit the number of fi
 > [!TIP]
 > Testing on the previous example code showed that the execution time for loading only the "Standard Cost" field was nine times faster than loading all normal fields. Your performance numbers will vary depending on the machine and the setup with the SQL database.
 
-For performance reasons, it's not recommended to use partial records on a record that will do inserts, deletes, or copies to temporary records. All these operations require that the record is fully loaded, so you lose the performance gains of loading fewer. For this reason, the feature is especially advantageous in reading-based scenarios.
+For performance reasons, it's not recommended to use partial records on a record that will do inserts, deletes, renames, transferfields, or copies to temporary records. All these operations require that all fields on the record are loaded, so the platform will emit a JIT load if they're not already loaded. A JIT load requires to access the data source again, this cost is larger than the gains of loading fewer fields. For this reason, the feature is especially advantageous in reading-based scenarios.
 
 ## Reports and OData pages
 
@@ -105,7 +107,7 @@ The same issue arises for pages called through OData. If a field isn't requested
 
 When a record is loaded as a partial record, the obvious question is: What happens when accessing a field that hasn't been selected for loading?". The answer is JIT loading. The platform, in such a case, does an implicit GET on the record and loads out the missing field.
 
-When JIT loading occurs, another access to the data source is required. These operations tend to be faster because they're GET calls. GET calls can often be served by the server's data cache or become clustered index seeks on the database.
+When JIT loading occurs, another access to the data source is required. These operations tend to be fast because they're GET calls. GET calls can often be served by the server's data cache or can be resolved as a clustered index operation on the database.
 
 A JIT load may fail for multiple reasons, like:
 
@@ -129,7 +131,7 @@ There are a few options to remedy this situation:
 
 ## See Also
 
-[FAQ for Partial Records](devenv-partial-records.md)  
+[FAQ for Partial Records](devenv-partial-records-faq.md)  
 [Performance Articles For Developers](../performance/performance-developer.md)  
 [Get, Find, and Next Methods](devenv-get-find-and-next-methods.md)  
 [Configuring Business Central Server](../administration/configure-server-instance.md)  

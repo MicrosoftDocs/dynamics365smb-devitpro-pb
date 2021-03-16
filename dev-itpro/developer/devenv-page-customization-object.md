@@ -7,7 +7,7 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
@@ -26,6 +26,9 @@ The page customization object has more restrictions than the [page extension obj
 
 > [!NOTE]  
 > Modifying actions in Cue groups on page extensions is not supported.
+
+> [!NOTE]  
+> `showMyCode` does not apply to page customizations. Page customizations defined in an extension with `showMyCode` set to `false` can still be copied using Designer.
 
 
 ## Snippet support

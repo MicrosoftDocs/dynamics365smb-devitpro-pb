@@ -4,7 +4,7 @@ description: We are constantly streamlining and adjusting our app in-step with m
 author: bholtorf
 
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -14,8 +14,8 @@ ms.author: bholtorf
 
 ---
 
-# Deprecated Features in the UK Version of [!INCLUDE [prodlong](../developer/includes/prodlong.md)]
-This topic lists and describes the local functionality for the United Kingdom that has been removed from [!INCLUDE[prodshort](../developer/includes/prodshort.md)], made available from a new page or report, or replaced by a new feature.
+# Deprecated Features in the UK Version of [!INCLUDE [prod_long](../developer/includes/prod_long.md)]
+This topic lists and describes the local functionality for the United Kingdom that has been removed from [!INCLUDE[prod_short](../developer/includes/prod_short.md)], made available from a new page or report, or replaced by a new feature.
 
 ## Accounting periods and system calendar
 If your fiscal year is different than the calendar, you can measure your fiscal period in other units of time, such as months or quarters. To do this, you set up system calendars and accounting periods.
@@ -99,7 +99,7 @@ You can view headers with order numbers and descriptions from sales and purchase
 |----|----|
 |Removed| Lack of use.
 
-## Objects and Fields that are deleted in [!INCLUDE [prodlong](../developer/includes/prodlong.md)]
+## Objects and Fields that are deleted in [!INCLUDE [prod_long](../developer/includes/prod_long.md)]
 Table 10505 has been deleted. The following list shows additional fields that are deleted as a result of the features that have been removed.  
 
 |Table ID|Field ID|Comments|

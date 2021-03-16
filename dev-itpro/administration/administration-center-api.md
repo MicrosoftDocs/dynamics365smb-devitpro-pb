@@ -3,7 +3,7 @@ title: Business Central Administration Center API | Microsoft Docs
 description: Learn about the Business Central administration center API.
 author: edupont04
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -14,7 +14,7 @@ ms.date: 10/01/2020
 
 # The Business Central Administration Center API
 
-The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API enables administrators to programmatically do administrative tasks for a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant. With the API, administrators can, for example:
+The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API enables administrators to programmatically do administrative tasks for a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant. With the API, administrators can, for example:
 
 - Query and work with production and sandbox environments for the tenant.
 - Set up administrative notifications.
@@ -28,7 +28,7 @@ For more information about administrative capabilities, see [The Business Centra
 
 The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API is located at the following URL: https://api.businesscentral.dynamics.com.
 
-## Setting up Azure Active Directory (Azure AD) based authentication
+## <a name="azuread"></a>Setting up Azure Active Directory (Azure AD) based authentication
 
 Sign in to the [Azure portal](https://portal.azure.com) to register your client application as an app and enable it to call the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API.
 
@@ -824,68 +824,6 @@ Returns the notification settings.
 #### Expected Error Codes
 
 `tenantNotFound` - the calling tenant information couldn't be found
-
-## Application Access Management
-It's possible for a **Delegated Tenant Admin** to manage access to application families available in the service. The application family is [!INCLUDE[prodshort](../developer/includes/prodshort.md)] or other independent software vendor (ISV) applications that may be provisioned through the service. 
-
-You can get the list of applications that are available to the tenant. From this list you can determine, by setting the access property, for which applications an environment may be provisioned on the tenant.
-
-### Get List Of Manageable Applications
-Returns a list of manageable applications by family and country code.
-
-```
-GET /admin/v2.3/manageableapplications
-```
-
-#### Response
-Returns a wrapped array of applications.
-
-```
-{
-  "value": [
-    {
-      "applicationFamily":  string, // The name of the family for a given Business Central offered application. (Typically this will just be "BusinessCentral") 
-      "access":  boolean, // Indicates if the tenant has access to the application family/country code combination
-      "countryCode": string, // The country code of the application.
-    }
-  ]
-}
-```
-
-### Control the access to Applications
-Pass the application family name in the URL and a boolean in the body. 
-- True - enables the access.
-- False - disables the access.
-
-```
-Content-Type: application/json
-PUT /admin/v2.3/manageableapplications/{applicationFamily}/countries/{countryCode}
-```
-
-#### Route Parameters
-
-`applicationFamily` - The name of the family for a given Business Central offered application. (Typically this value will just be "BusinessCentral")
-
-`countryCode` - Country code for the targeted application.
-
-#### Body
-```
-{
-  <boolean> // Desired access state
-}
-```
-
-> [!NOTE]  
-> It's only possible to disable the access to applications for the AAD tenant if it has first created an environment somewhere.
-
-#### Expected Error Codes
-
-`invalidInput` - the targeted property in invalid in some way
-
-   - target: {targeted tenant's AAD Id} - attempt to remove access to an application but the targeted tenant already has an environment in that application
-
-`resourceDoesNotExist` - couldn't find the targeted application
-
 
 ## Reschedule Updates
 Allows for the management of scheduled updates such as rescheduling the update to a run on or after a specific date within a provided range.

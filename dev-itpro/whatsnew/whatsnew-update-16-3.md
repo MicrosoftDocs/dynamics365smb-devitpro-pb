@@ -6,7 +6,7 @@ ms.date: 10/01/2020
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: ManuelaHochstrasser
 ---
@@ -30,11 +30,11 @@ Below you'll find an overview and relevant links to what has been done on hotfix
 
 ## Release Plan
 
-If you want to get a comprehensive overview of what's new and planned for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online for the entire 2020 release wave 1 (release from April 2020 through September 2020), find the link to the release plan [here](/dynamics365-release-plan/2020wave1/dynamics365-business-central/planned-features).
+If you want to get a comprehensive overview of what's new and planned for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online for the entire 2020 release wave 1 (release from April 2020 through September 2020), find the link to the release plan [here](/dynamics365-release-plan/2020wave1/dynamics365-business-central/planned-features).
 
 ## Upgrade to 16.3
 
-Please note that new customers will automatically get the latest builds of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] (16.3). If you are an existing partner/customer, you will receive an email notification as soon as your environment has been upgraded. 
+Please note that new customers will automatically get the latest builds of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] (16.3). If you are an existing partner/customer, you will receive an email notification as soon as your environment has been upgraded. 
 
 ## Good to know
 

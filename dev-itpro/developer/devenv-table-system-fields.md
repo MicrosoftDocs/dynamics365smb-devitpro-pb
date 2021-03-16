@@ -7,7 +7,7 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
 --- 
@@ -78,11 +78,18 @@ The **SystemId** field is exposed in the platform code and for AL code, allowing
         ...
     ```
 
-## Data audit fields
+[!INCLUDE[2020_releasewave2](../includes/2020_releasewave2.md)]
+
+- If the **SystemId** field is specified in a Web Service POST request, the OData stack persists the value in the database.
+- The **SystemId** field can be used as part of a (non-primary) key.
+- You can show the **SystemId** field as a field on a page.
+- You can link FactBoxes/page parts using the **SystemId** field.
+
+## <a name="audit"></a>Data audit fields
 
 [!INCLUDE[2020_releasewave2](../includes/2020_releasewave2.md)]
 
-Every table in [!INCLUDE[prodshort](includes/prodshort.md)] includes the following four system fields, which can be used for auditing records:
+Every table in [!INCLUDE[prod_short](includes/prod_short.md)] includes the following four system fields, which can be used for auditing records:
 
 |Field name (in AL) |Column name (in database)|Data type|Field number|Description|
 |-------------------|-------------------------|---------|------------|-----------|

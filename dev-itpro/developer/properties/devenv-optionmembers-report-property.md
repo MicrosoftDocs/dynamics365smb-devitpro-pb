@@ -5,7 +5,7 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 ms.assetid: c90654ad-da85-496c-900a-1c2fc7dd2f2b
 caps.latest.revision: 13
@@ -16,6 +16,8 @@ caps.latest.revision: 13
 This property seemed new to Niels, he can only guess about how this property works. He suggested talking to Esben from our team.
 -->
 # OptionMembers Property (Report)
+> **Version**: _Available from runtime version 1.0._
+
 Gets the list of options that are available in the field that is currently selected.
   
 ## Applies to  

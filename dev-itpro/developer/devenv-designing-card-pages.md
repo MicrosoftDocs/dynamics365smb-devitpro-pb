@@ -7,7 +7,7 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
 ---
@@ -53,7 +53,7 @@ The following figure illustrates the general layout and elements of a card page 
 
 The following table describes the elements of the page.
 
-|    |Area|Description|Usage Guidelines|
+| No.   |Area|Description|Usage Guidelines|
 |----|-------|-----------|----------------|
 |1|System actions|The icons provide users the ability to edit the record, create a new record, and delete the current record.<br /><br />The actions are only active if the [Editable](properties/devenv-editable-property.md) property is set to `true`.|These actions appear on all pages; you cannot remove them or add other actions.<br /><br />|
 |2|Action bar|The action bar provides links to other pages, reports, and codeunits. The action bar is defined by an `actions` control in the page code, and individual actions are defined by an `action()` control.<br /><br /> Actions can be displayed on three standard menus in the action bar, **Actions**, **Navigate**, and **Report**, or in a promoted category. You can arrange actions on menus in the root-level or grouped in a sub-menu.<br /><br /> The objects targeted by these links will open in a separate window.<br /><br />For more information, see [Adding Actions to a Page](devenv-adding-actions-to-a-page.md).|Organize the action bar to contain the actions that users need to complete a task, such as posting, running a report, and opening another page with related information. Place the most important action at the root-level, and group closely related actions in a sub-menu.|
@@ -72,7 +72,7 @@ The following table describes the elements of the page.
 
 ## [Developer tips](#tab/tips)
 
-From the user’s perspective, the following are qualities of a well-designed card and document page:
+From the user's perspective, the following are qualities of a well-designed card and document page:
 
 ### Card pages
 
@@ -113,7 +113,7 @@ Only promoted actions will display on mobile devices, so make sure you promote t
 
 -    Configure the gesture for actions
 
-        Using the [Gesture](properties/devenv-gesture-property.md) property, configure the swipe direction for running actions on a device with a touch interface. For more information, see [Implementation Tips for Gestures](properties/devenv-implementation-tips-gestures-property.md).
+        Using the [Gesture](properties/devenv-gesture-property.md) property, configure the swipe direction for running actions on a device with a touch interface. For more information, see [Implementation Tips for Gestures](devenv-implementation-tips-gestures-property.md).
 
  
 ## See Also

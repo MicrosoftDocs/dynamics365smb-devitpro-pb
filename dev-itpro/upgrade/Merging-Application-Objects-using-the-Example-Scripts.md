@@ -5,16 +5,16 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 # Merging Application Objects using the Example Scripts
-The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] product media includes a folder with examples of how you can use [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] cmdlets to compare and merge application objects. In the **WindowsPowerShellScripts** folder on the product media, the **ApplicationMergeUtilities** folder contains [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] sample scripts and folders that contain demonstration data.  
+The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] product media includes a folder with examples of how you can use [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] cmdlets to compare and merge application objects. In the **WindowsPowerShellScripts** folder on the product media, the **ApplicationMergeUtilities** folder contains [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] sample scripts and folders that contain demonstration data.  
   
  You can run the sample scripts from the [!INCLUDE[devshell](../developer/includes/devshell.md)]. Alternatively, you can use the [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] Integrated Scripting Environment \(ISE\) as described in the following section.  
   
- The individual scripts provide different variations of how you can use the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cmdlets. For example, the HowTo-Merge-N-Conflicts-External-Tools.ps1 script shows different ways of displaying conflicts. By opening the scripts in the [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] ISE, you can examine the different variations and decide how you want to use the cmdlets to upgrade and maintain your own application.  
+ The individual scripts provide different variations of how you can use the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] cmdlets. For example, the HowTo-Merge-N-Conflicts-External-Tools.ps1 script shows different ways of displaying conflicts. By opening the scripts in the [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] ISE, you can examine the different variations and decide how you want to use the cmdlets to upgrade and maintain your own application.  
   
 ## Using the Sample Scripts in the [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] ISE  
  If you want to use the [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] ISE, you must you must import the Microsoft.Dynamics.Nav.Model.Tools.psd1 module. The module installs to the equivalent of [!INCLUDE[prodx86installpath](../developer/includes/prodx86installpath.md)]\\RoleTailored Client when you choose the Developer option in [!INCLUDE[nav_setup](../developer/includes/nav_setup_md.md)].  
@@ -33,7 +33,7 @@ Get-Help "NAV"
   
  The HowTo-Start-Import-NAV-Module.ps1 script imports the Microsoft.Dynamics.Nav.Model.Tools.psd1 module into the [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] ISE. The \_\_Run-Application-Merge-Utilities.ps1 and \_\_Reset-HowTo-Sample.ps1 scripts enable you to run the sample scripts repeatedly.  
   
- For Help for a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] cmdlet, type `Get-Help <cmd name>`. For Help for the [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] ISE, press F1, or choose the Help menu, and then choose [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] ISE Help.  
+ For Help for a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] cmdlet, type `Get-Help <cmd name>`. For Help for the [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] ISE, press F1, or choose the Help menu, and then choose [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] ISE Help.  
   
 ## See Also  
  [Business Central PowerShell Cmdlets](/powershell/business-central/overview)

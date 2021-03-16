@@ -6,15 +6,15 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.assetid: 2b2c8383-8e5a-47ea-bfd0-8621021a697a
 caps.latest.revision: 9
 ---
 # Creating a Data Collector for Business Central Performance Counters
-This topic describes how to create a Data Collector Set in Performance Monitor that contains [!INCLUDE[prodshort](../developer/includes/prodshort.md)] performance counters.  
+This topic describes how to create a Data Collector Set in Performance Monitor that contains [!INCLUDE[prod_short](../developer/includes/prod_short.md)] performance counters.  
   
-### To create a Data Collector Set for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] performance counters  
+### To create a Data Collector Set for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] performance counters  
   
 1.  On the computer that is running [!INCLUDE[server](../developer/includes/server.md)], start Performance Monitor.  
   
@@ -28,7 +28,7 @@ This topic describes how to create a Data Collector Set in Performance Monitor t
   
 5.  In the **Add Counters** window, in the **Select counters from computer:** drop-down list, choose the computer that is running [!INCLUDE[server](../developer/includes/server.md)].  
   
-6.  In the **Available counters** list, expand **[!INCLUDE[prodshort](../developer/includes/prodshort.md)]**, and select one or more counters.  
+6.  In the **Available counters** list, expand **[!INCLUDE[prod_short](../developer/includes/prod_short.md)]**, and select one or more counters.  
   
 7.  In the **Instances of selected object** list, select **\<All instances>** to collect data for all [!INCLUDE[server](../developer/includes/server.md)] instances on the computer or individually select one or more instances from the list.  
   

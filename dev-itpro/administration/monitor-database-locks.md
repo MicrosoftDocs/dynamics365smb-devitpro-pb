@@ -5,7 +5,7 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
@@ -26,16 +26,16 @@ To view database locks, open page **9511 Database Locks** in the client.
 The **Database Locks** page gives a snapshot of all current database locks in SQL Server. It provides information like the table and database resource affected by the lock. Or, the AL object or method that ran the transaction that caused the lock. These details can help you better understand the locking condition. For an explanation about the fields shown, use the tooltips on the page or refer to [sp_lock (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-lock-transact-sql)
 
 > [!TIP]
-> If you are running [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Fall 2018 or earlier, you'll have to use the [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)]. On the **Tools** menu, choose **Debugger**, and then choose **Database Locks**.
+> If you are running [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Fall 2018 or earlier, you'll have to use the [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)]. On the **Tools** menu, choose **Debugger**, and then choose **Database Locks**.
 
 <!--
 |  Field |  Description  |
 |--------------|---------------|
-|Table Name|Specifies the name of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] table affected by the lock.|
+|Table Name|Specifies the name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] table affected by the lock.|
 |SQL Lock Resource Type|Specifies the database resource affected by the lock, such as DATABASE, FILE, OBJECT, PAGE, KEY, and more.|  
 |SQL Lock Request Mode|Specifies the lock mode that determines how concurrent transactions can access the resource. For more information, see /sql/relational-databases/sql-server-transaction-locking-and-row-versioning-guide [Lock Modes](https://aka.ms/sqldatabaselockmodes).|
 |SQL Lock Request Status|Specifies the current status of the lock, which can be one of the following:</br></br>**CNVRT** means that the lock is transitioning from another mode, but the conversion is blocked by another process that holds a lock with a conflicting mode.</br>**GRANT** means that the lock is active.</br>**WAIT** means that the lock is blocked by another process that holds a lock with a conflicting mode.|
-|Executing AL Object Type|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] object in AL that is running the transaction, such as a page or report.|
+|Executing AL Object Type|Specifies the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] object in AL that is running the transaction, such as a page or report.|
 |Executing AL Object Id|Specifies the ID of the object that is running.|
 |Executing AL Method|Specifies the AL function that is running the transaction that caused the lock.|
 -->

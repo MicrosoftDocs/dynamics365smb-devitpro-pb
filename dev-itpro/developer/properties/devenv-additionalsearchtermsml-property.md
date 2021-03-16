@@ -1,29 +1,30 @@
 ---
-title: "AdditionalSearchTerms Property"
-description: "Describes the AdditionalSearchTerms Property in AL."
-author: jswymer
+title: "AdditionalSearchTermsML Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/24/2020
 ms.reviewer: na
-ms.topic: article
+ms.suite: na
+ms.tgt_pltfrm: na
+ms.topic: reference
 ms.service: "dynamics365-business-central"
-ms.author: jswymer
+author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AdditionalSearchTermsML Property
+> **Version**: _Available from runtime version 3.0._
 
-Specifies search terms (words and phrases) for the page or report in different languages. In addition to the caption of the page or report, the terms are used by the search feature (**Tell me**) in the Web client and mobile apps. 
-
-## Syntax
-
-```AL
-AdditionalSearchTermsML = <language ID> = '<term>[,<term>]'[, <language ID> = '<term>[,<term>]'];
-```
+Specifies search terms (words and phrases) for the page in different languages. In addition to the page caption, the terms are used by the search feature in the Web client and mobile apps. Separate terms with a comma.
 
 ## Applies to
+-   Page
+-   Report
 
-- Page objects
-- Report objects
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 
 ## Property Values
 
@@ -32,9 +33,15 @@ AdditionalSearchTermsML = <language ID> = '<term>[,<term>]'[, <language ID> = '<
 |`<language ID>`   |The standard Windows three-letter language ID, such as ENU or DAN. Separate each language by a comma.|
 |`<term>`  |The search word or phrase, which can consist of letters, numbers and special characters. Separate each term by a comma.|
 
+## Syntax
+
+```AL
+AdditionalSearchTermsML = <language ID> = '<term>[,<term>]'[, <language ID> = '<term>[,<term>]'];
+```
+
 ## Remarks
 
-For [!INCLUDE[prodshort](../includes/prodshort.md)] on-premises, the [!INCLUDE[webserverinstance](../includes/webserverinstance.md)] configuration file (navsettings.json) includes a setting called `UseAdditionalSearchTerms` that enables or disables the use of additional search terms by the **Tell me**. For more information, see [Configuring [!INCLUDE[webserver](../includes/webserver.md)] Instances](../../administration/configure-web-server.md#Settings).
+For [!INCLUDE[prod_short](../includes/prod_short.md)] on-premises, the [!INCLUDE[webserverinstance](../includes/webserverinstance.md)] configuration file (navsettings.json) includes a setting called `UseAdditionalSearchTerms` that enables or disables the use of additional search terms by the **Tell me**. For more information, see [Configuring [!INCLUDE[webserver](../includes/webserver.md)] Instances](../../administration/configure-web-server.md#Settings).
 
 ## Dependent Properties
 

@@ -5,13 +5,13 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 # Codeunit 1 Replacement
 
-With [!INCLUDE[prodshort](../developer/includes/prodshort.md)], codeunit **1 Application Management** has been removed and replaced with system codeunits and management codeunits. However, for technical upgrades from [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)], you must import the replacement codeunit 1 that is provided in this article into your application database. For more information about the codeunit 1 removal and what it means, see [Transitioning From Codeunit 1](transition-from-codeunit1.md). 
+With [!INCLUDE[prod_short](../developer/includes/prod_short.md)], codeunit **1 Application Management** has been removed and replaced with system codeunits and management codeunits. However, for technical upgrades from [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)], you must import the replacement codeunit 1 that is provided in this article into your application database. For more information about the codeunit 1 removal and what it means, see [Transitioning From Codeunit 1](transition-from-codeunit1.md). 
 
 
 

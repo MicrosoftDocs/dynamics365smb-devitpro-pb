@@ -2,11 +2,11 @@
 title: "Media.MediaId Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Media.MediaId Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets the unique identifier of a media object on a record.
 
 
@@ -21,18 +23,18 @@ Gets the unique identifier of a media object on a record.
 ```
 MediaId :=   Media.MediaId()
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 
 ## Parameters
-*Media*  
-&emsp;Type: [Media](media-data-type.md)  
-An instance of the [Media](media-data-type.md) data type.  
+*Media*
+&emsp;Type: [Media](media-data-type.md)
+An instance of the [Media](media-data-type.md) data type.
 
 ## Return Value
-*MediaId*  
-&emsp;Type: [Guid](../guid/guid-data-type.md)  
-The GUID of the Media object in the database.  
+*MediaId*
+&emsp;Type: [Guid](../guid/guid-data-type.md)
+The GUID of the Media object in the database.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -45,7 +47,7 @@ This example uses the MediaId method to get the GUID of the media object that is
 
 The example assumes that  the **My Items** table already exists and has a **Media** data type field named **Image**.
 
-```
+```al
  var
     myItemRec: Record "My Items";
     imageID: GUID;

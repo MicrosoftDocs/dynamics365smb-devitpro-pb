@@ -2,26 +2,37 @@
 title: "ApplicationArea Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # ApplicationArea Property
-Sets the application areas that apply to the control.
+> **Version**: _Available from runtime version 1.0._
 
-Application areas represent a feature in the system that offers developers, administrators, and users the ability to define differentiated user experiences. They are mapped to controls to show or hide them on page objects to enable more or fewer business scenarios.
-  
-## Applies to  
-  
-- Page object and page field, part, and action controls 
-  
-- Report object, request page, and field controls  
-  
+Sets the application areas that apply to the control. Standard values are All, Basic, Suite, and Advanced.
+
+## Applies to
+-   Page Label
+-   Page Field
+-   Page Part
+-   Page System Part
+-   Page Chart Part
+-   Page Action
+-   Page User Control
+-   Page
+-   Report
+
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+
 ## Property Values  
 A text string that contains a comma-separated list of application area tags.  
   
@@ -35,6 +46,8 @@ ApplicationArea = Basic, Suite;
 ```
 
 ## Remarks  
+Application areas represent a feature in the system that offers developers, administrators, and users the ability to define differentiated user experiences. They are mapped to controls to show or hide them on page objects to enable more or fewer business scenarios.
+
 The **ApplicationArea** property is used together with the [ApplicationArea method](../methods-auto/session/session-applicationarea-method.md) to hide user interface elements.  
   
 If one or more application areas are enabled in a session, any controls that are not tagged with an application area will not appear in the user interface. 

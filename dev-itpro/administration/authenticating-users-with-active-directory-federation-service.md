@@ -5,13 +5,13 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 # Authenticating Users with Active Directory Federation Services
 
-[!INCLUDE[prodshort](../developer/includes/prodshort.md)] supports Active Directory Federation Services (AD FS) authentication for authenticating users, without having to use the Access Control Service (ACS). This article walks you through the steps about how to set up AD FS authentication in AD FS Management console, and then how to configure it in [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] supports Active Directory Federation Services (AD FS) authentication for authenticating users, without having to use the Access Control Service (ACS). This article walks you through the steps about how to set up AD FS authentication in AD FS Management console, and then how to configure it in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 ## Prerequisites
 Your deployment must meet the following prerequisites:
@@ -25,7 +25,7 @@ Your deployment must meet the following prerequisites:
     >[!Note]
     >The steps in this article are based on using the AD FS version on Windows Server 2016, but should also work with earlier versions of AD FS. Be aware that some dialog box references in the steps might be slightly different in earlier versions of AD FS.
 
--  A working [!INCLUDE[prodshort](../developer/includes/prodshort.md)] deployment that includes the following components:
+-  A working [!INCLUDE[prod_short](../developer/includes/prod_short.md)] deployment that includes the following components:
     -   [!INCLUDE[server](../developer/includes/server.md)].
         
     -   [!INCLUDE[webserver](../developer/includes/webserver.md)].
@@ -40,11 +40,11 @@ Your deployment must meet the following prerequisites:
     >[!Important]
     > The deployment must be configured with security certificates to secure remote connections. For more information, see [Using Security Certificates with Business Central On-Premises](../deployment/implement-security-certificates-production-environment.md).
 
-## Configure AD FS to allow [!INCLUDE[prodshort](../developer/includes/prodshort.md)] authentication
+## Configure AD FS to allow [!INCLUDE[prod_short](../developer/includes/prod_short.md)] authentication
 
 These steps are done by using the AD FS Management console on the server where AD FS is running.
 
-### Set up a Relying Party Trust for the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] clients
+### Set up a Relying Party Trust for the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] clients
 
 You must complete these steps separately for [!INCLUDE[webserver](../developer/includes/webserver.md)] for the Web client and [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)]. 
 
@@ -66,7 +66,7 @@ You must complete these steps separately for [!INCLUDE[webserver](../developer/i
 
     ![AD FS Configure URL](../media/ADFS_Relying_Trust_ConfigureURL.png "AD FS Configure URL")
 
-    Then, in **Relying party WS-Federation Passive Control URL** field, enter the URL for the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client according to the following:
+    Then, in **Relying party WS-Federation Passive Control URL** field, enter the URL for the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client according to the following:
 
     -    If you are setting up AD FS for the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)], set this to the full URL for the Web client. The URL typically has the format:
 
@@ -178,9 +178,9 @@ Based on whether you will be using SAML tokens or JSON Web Tokens (JWT), which a
     Set-ADFSRelyingPartyTrust –TargetIdentifier "https://dynamicsnavwinclient" –EnableJWT $true
     ```
 
-## Configure [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to use AD FS authentication
+## Configure [!INCLUDE[prod_short](../developer/includes/prod_short.md)] to use AD FS authentication
 
-To setup [!INCLUDE[prodshort](../developer/includes/prodshort.md)] for ADFS authentication, you must modify the configuration of the [!INCLUDE[server](../developer/includes/server.md)], [!INCLUDE[webserver](../developer/includes/webserver.md)], and [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)]s.
+To setup [!INCLUDE[prod_short](../developer/includes/prod_short.md)] for ADFS authentication, you must modify the configuration of the [!INCLUDE[server](../developer/includes/server.md)], [!INCLUDE[webserver](../developer/includes/webserver.md)], and [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)]s.
 
 ### [!INCLUDE[server](../developer/includes/server.md)] instance setup
 
@@ -189,12 +189,12 @@ The [!INCLUDE[server](../developer/includes/server.md)] instance must be configu
 <!-- 1. Clear the **Disable Token-Signing Certificate Validation** check box (In the CustomSettings.config file, you set the `DisableTokenSigningCertificateValidation` value to `true`.) -->
 
 1.  Set the **Credential Type** (ClientServicesCredentialType) to `NavUserPassword` or `AccessControlService`.
-    -   If you set this to `NavUserPassword`, client users can use either NavUserPassword or claims based authentication to access [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. The CustomSettings.config file should include the following line:
+    -   If you set this to `NavUserPassword`, client users can use either NavUserPassword or claims based authentication to access [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. The CustomSettings.config file should include the following line:
 
         ```
         <add key="ClientServicesCredentialType" value="NavUserPassword"/>
         ```
-    -   If you set this to `AccessControlService`, only clients that use claims based authentication will be allowed to access [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. The CustomSettings.config file should include the following line:
+    -   If you set this to `AccessControlService`, only clients that use claims based authentication will be allowed to access [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. The CustomSettings.config file should include the following line:
 
         ```
         <add key="ClientServicesCredentialType" value="AccessControlService"/>
@@ -228,7 +228,7 @@ The [!INCLUDE[server](../developer/includes/server.md)] instance must be configu
 
     Replace `<Public URL for AD FS server>` with the URL for your installation.
 
-    Replace `<Relying party trust identifier>` with the exact value that was specified as the  **Relying party trust identifier** in the earlier task (**Set up a Relying Party Trust for the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] clients**).  
+    Replace `<Relying party trust identifier>` with the exact value that was specified as the  **Relying party trust identifier** in the earlier task (**Set up a Relying Party Trust for the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] clients**).  
 
     Replace `<Business Central Web Client URL>` with the exact value that was specified for **Relying party WS-Federation Passive Control URL** field in the Relying Party Trust set up for the client in AD FS. Make sure that the case matches exactly.
 
@@ -243,7 +243,7 @@ The [!INCLUDE[server](../developer/includes/server.md)] instance must be configu
     ```
     https://corp.sample.com/adfs/ls/?wa=wsignin1.0%26wtrealm=https://bcwebclient%26wreply=https://corp.sample.com/BC130/SignIn
     ```
-4. For the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)], set the **Valid Audiences** (ValidAudiences) to the exact value that was specified as the  **Relying party trust identifier** in the earlier task (**Set up a Relying Party Trust for the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] clients**). For example:
+4. For the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)], set the **Valid Audiences** (ValidAudiences) to the exact value that was specified as the  **Relying party trust identifier** in the earlier task (**Set up a Relying Party Trust for the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] clients**). For example:
     ```
     https://dynamicsnavwindowsclient
     ```
@@ -286,7 +286,7 @@ You configure the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md
     ```
     Replace `<Public URL for AD FS server>` with the URL for your installation.
 
-    Replace `<Relying party trust identifier>` with the exact value that was specified as the  **Relying party trust identifier** in the earlier task (**Set up a Relying Party Trust for the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] clients**).  
+    Replace `<Relying party trust identifier>` with the exact value that was specified as the  **Relying party trust identifier** in the earlier task (**Set up a Relying Party Trust for the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] clients**).  
 
     Replace `<Relying Party Trust Endpoint>` with the same value that was specified for **Relying party WS-Federation Passive Control URL** field in the Relying Party Trust set up for the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)] in AD FS.
 
@@ -298,12 +298,12 @@ You configure the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md
 3. Restart the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)].
 
 
-### [!INCLUDE[prodshort](../developer/includes/prodshort.md)] User setup
-You must map the user accounts in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to corresponding user accounts in AD FS. The mapping is based on the User Principal Name (UPN) that is assigned to the user in Active Directory. The UPN is the user's name in email address format, such as `username@corp.sample.com`.
+### [!INCLUDE[prod_short](../developer/includes/prod_short.md)] User setup
+You must map the user accounts in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] to corresponding user accounts in AD FS. The mapping is based on the User Principal Name (UPN) that is assigned to the user in Active Directory. The UPN is the user's name in email address format, such as `username@corp.sample.com`.
 
-You can do this by using the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client. Open the **User Card** page for a user, and then in the **Office 365 Authentication** section, set the **Authentication Email** field to the UPN of the AD FS user.
+You can do this by using the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client. Open the **User Card** page for a user, and then in the **Office 365 Authentication** section, set the **Authentication Email** field to the UPN of the AD FS user.
 
-When you initially set the **Authentication Email**, the **Authentication Status** will be **Inactive**. After the first time the user signs in to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] by using AD FS, the status will be change to **Active**. This means that the Primary SID from AD FS has been registered on the user in [!INCLUDE[prodshort](../developer/includes/prodshort.md)], and all subsequent authentication mappings will be done on the Primary SID and not on the Authentication Email (UPN).
+When you initially set the **Authentication Email**, the **Authentication Status** will be **Inactive**. After the first time the user signs in to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] by using AD FS, the status will be change to **Active**. This means that the Primary SID from AD FS has been registered on the user in [!INCLUDE[prod_short](../developer/includes/prod_short.md)], and all subsequent authentication mappings will be done on the Primary SID and not on the Authentication Email (UPN).
 
 For more information, see [Managing Users and Permissions](/dynamics365/business-central/ui-how-users-permissions).
 

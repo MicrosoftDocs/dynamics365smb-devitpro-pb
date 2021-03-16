@@ -5,13 +5,13 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 # Removing Elements from the User Interface According to Permissions
 
-You can configure [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to show and hide user interface \(UI\) elements based on the license or the user's permissions to the underlying tables. All elements, fields, actions, and page parts, can be removed from the user’s view of [!INCLUDE[dyn_nav](../developer/includes/dyn_nav_md.md)].
+You can configure [!INCLUDE[prod_short](../developer/includes/prod_short.md)] to show and hide user interface \(UI\) elements based on the license or the user's permissions to the underlying tables. All elements, fields, actions, and page parts, can be removed from the user’s view of [!INCLUDE[dyn_nav](../developer/includes/dyn_nav_md.md)].
 
 > [!Note]
 > You can also show or hide \(UI\) elements based on the application area that is assigned to the element.
@@ -38,7 +38,7 @@ The following table describes a sequence of tasks, with links to the topics that
 |------------|-------------|  
 |Configure [!INCLUDE[server](../developer/includes/server.md)] to automatically remove UI elements from the user’s interface if they are on objects that are not in the license or on objects that the user does not have permissions for.|[How to: Specify When UI Elements Are Removed]|  
 |Use the **AccessByPermission** property to define which user permissions to a certain object are required before the user can see and access the UI element. This method can be used to remove UI elements without a direct object relation from the user’s interface based on permissions.|[How to: Remove UI Elements Using the AccessByPermission Property]|  
-|To experience how UI elements are removed for a user performing the task to create and edit a new customer, create a sample user interface based on two permission sets that are provided with [!INCLUDE[prodshort](../developer/includes/prodshort.md)].|[How to: Try Out the UI Elements Removal Feature Based on Demonstration Permission Sets|  
+|To experience how UI elements are removed for a user performing the task to create and edit a new customer, create a sample user interface based on two permission sets that are provided with [!INCLUDE[prod_short](../developer/includes/prod_short.md)].|[How to: Try Out the UI Elements Removal Feature Based on Demonstration Permission Sets|  
 |Learn about FOUNDATION and other special permission sets.|[Special Permission Sets](administration-special-permission-sets.md)|  
 |Modify the existing permission sets to fully support the FOUNDATION permission set.|[How to: Create or Modify Permission Sets]|  
 -->

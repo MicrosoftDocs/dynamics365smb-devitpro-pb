@@ -6,14 +6,14 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
 ms.service: "dynamics365-business-central"
 ---
 # Technical Upgrade from Version 16 to Version 17
 
-Use this process to upgrade from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2020 release wave 1 (version 16) to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2020 release wave 2 platform (version 17). This process won't upgrade the application to the latest version.
+Use this process to upgrade from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 1 (version 16) to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 2 platform (version 17). This process won't upgrade the application to the latest version.
 
  ![Upgrade on customized Business Central application](../developer/media/bc16-to-17-technical-upgrade-unmodified-app.png "Upgrade on customize Business Central application")   
 
@@ -25,7 +25,7 @@ The process for upgrading is similar for a single-tenant and multitenant deploym
 
 1. Your version 16 platform is compatible with version 17.
 
-    There are several updates for version 16. The updates have a compatible version 17 update. For more information, see [[!INCLUDE[prodlong](../developer/includes/prodlong.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md). For example, if your solution is currently running 16.6, you can't upgrade to 17.0. You must wait until 17.1 is available.  
+    There are several updates for version 16. The updates have a compatible version 17 update. For more information, see [[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md). For example, if your solution is currently running 16.6, you can't upgrade to 17.0. You must wait until 17.1 is available.  
 
 2. Disable data encryption.
 
@@ -54,7 +54,8 @@ In this task, you prepare the application and tenant databases for the upgrade.
 
     You'll need these packages later to re-publish and install the extensions again.
 -->
-3. (Single-tenant only) Uninstall all extensions from the old tenants.
+
+2. (Single-tenant only) Uninstall all extensions from the old tenants.
 
     Run the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 16.0 as an administrator. Use the [Uninstall-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp) cmdlet to uninstall an extension. For example, together with the Get-NAVAppInfo cmdlet, you can uninstall all extensions with a single command:
 
@@ -62,7 +63,7 @@ In this task, you prepare the application and tenant databases for the upgrade.
     Get-NAVAppInfo -ServerInstance <BC16 server instance> | % { Uninstall-NAVApp -ServerInstance <BC16 server instance> -Name $_.Name -Version $_.Version }
     ```
 
-4. Unpublish all system, test, and application symbols.
+3. Unpublish all system, test, and application symbols.
 
     To unpublish symbols, use the Unpublish-NAVAPP cmdlet.  You can unpublish all symbols by using the Get-NAVAppInfo cmdlet with the `-SymbolsOnly` switch as follows:
 
@@ -72,7 +73,7 @@ In this task, you prepare the application and tenant databases for the upgrade.
 
     [What are symbols?](upgrade-overview-v15.md#Symbols)  
 
-5. (Multitenant only) Dismount the tenants from the application server instance.
+4. (Multitenant only) Dismount the tenants from the application server instance.
 
     To dismount a tenant, use the [Dismount-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/dismount-navtenant) cmdlet:
 
@@ -80,7 +81,7 @@ In this task, you prepare the application and tenant databases for the upgrade.
     Dismount-NAVTenant -ServerInstance <BC16 server instance> -Tenant <tenant ID>
     ```
 
-6. Stop the server instance.
+5. Stop the server instance.
 
     ```powershell
     Stop-NAVServerInstance -ServerInstance <BC16 server instance>
@@ -150,9 +151,9 @@ When you installed version 17 in **Task 1**, a version 17 [!INCLUDE[server](../d
     Restart-NAVServerInstance -ServerInstance <BC17 server instance>
     ```
 
-## <a name="UploadLicense"></a> Task 6: Upload [!INCLUDE[prodshort](../developer/includes/prodshort.md)] partner license  
+## <a name="UploadLicense"></a> Task 6: Upload [!INCLUDE[prod_short](../developer/includes/prod_short.md)] partner license  
 
-If you have a new [!INCLUDE[prodshort](../developer/includes/prodshort.md)] partner license, make sure that it has been uploaded to the database. To upload the license, use the [Import-NAVServerLicense cmdlet](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense): 
+If you have a new [!INCLUDE[prod_short](../developer/includes/prod_short.md)] partner license, make sure that it has been uploaded to the database. To upload the license, use the [Import-NAVServerLicense cmdlet](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense): 
 
 ```powershell
 Import-NAVServerLicense -ServerInstance <BC17 server instance> -LicenseFile "<path to the license>"
@@ -263,7 +264,7 @@ The [!INCLUDE[server](../developer/includes/server.md)] installation includes ne
 
 To upgrade the control add-ins, do the following steps:
 
-1. Open the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client.
+1. Open the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client.
 2. Search for and open the **Control Add-ins** page.
 3. Choose **Actions** > **Control Add-in Resource** > **Import**.
 4. Locate and select the .zip file for the control add-in and choose **Open**.

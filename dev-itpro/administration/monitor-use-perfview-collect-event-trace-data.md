@@ -5,7 +5,7 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.assetid: 0a53dde8-c139-46d0-a13c-56391eed7f95
 caps.latest.revision: 14
@@ -32,11 +32,11 @@ This topic describes how to use PerfView to collect event trace data for [!INCLU
   
      The upper part of the **Advanced options**area includes check boxes and fields that specify the providers from which to collect event trace data.  
   
-5.  In the **Additional providers** field, type **Microsoft-Dynamics365BusinessCentral-Server**.  
+5.  In the **Additional providers** field, type **Microsoft-DynamicsNAV-Server**.  
   
-    -   If you want to filter on a specific trace event, include a colon after **Microsoft-Dynamics365BusinessCentral-Server**, followed by the hexadecimal keyword value for the trace event. For example, to collect trace events data on service call trace events only, then type  **Microsoft-Dynamics365BusinessCentral-Server:0x4**.  
+    -   If you want to filter on a specific trace event, include a colon after **Microsoft-DynamicsNAV-Server**, followed by the hexadecimal keyword value for the trace event. For example, to collect trace events data on service call trace events only, then type  **Microsoft-DynamicsNAV-Server:0x4**.  
   
-    -   If you want to collect data on more than one trace event, add the keyword values for each trace event and then use the sum in the field. For example, if you want to collect data on service calls \(keyword value = 0x4\) and AL function traces \(keyword value = 0x8\), then type **Microsoft-Dynamics365BusinessCentral-Server:0xC** in the field. In hexadecimal, the sum of 0x4 and 0x8 is 0xC.  
+    -   If you want to collect data on more than one trace event, add the keyword values for each trace event and then use the sum in the field. For example, if you want to collect data on service calls \(keyword value = 0x4\) and AL function traces \(keyword value = 0x8\), then type **Microsoft-DynamicsNAV-Server:0xC** in the field. In hexadecimal, the sum of 0x4 and 0x8 is 0xC.  
   
 6.  Clear the check boxes above the **Additional providers** field for any providers that you do not want to collect data for.  
   

@@ -13,14 +13,14 @@ author: jswymer
 ---
 # Uploading the License File for Business Central On-Premises
 
-After an administrator or a Microsoft Certified Partner initially installs [!INCLUDE[prodshort](../developer/includes/prodshort.md)] on-premises, the next step is to upload the license file that is supplied by Microsoft.  
+After an administrator or a Microsoft Certified Partner initially installs [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises, the next step is to upload the license file that is supplied by Microsoft.  
 
  To save the license file, you must have the necessary roles and permissions in SQL Server. See [Setting Database Owner and Security Administration Permissions](../security/Setting-Database-Owner-and-Security-Administration-Permissions.md).  
 
 > [!NOTE]  
 > Uploading the license file is typically something you do once for each database installation, not once for each client installation. If you need to upload a license for a specific database, see [Uploading a License File for a Specific Database](#UploadtoDatabase).  
 
-Initially, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] uses CRONUS.flf, which is the demonstration license file. All license files that are not demonstration license files are named FIN.flf. The demonstration license file has been given a different name so that it cannot be mistakenly overwritten.  
+Initially, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] uses CRONUS.flf, which is the demonstration license file. All license files that are not demonstration license files are named FIN.flf. The demonstration license file has been given a different name so that it cannot be mistakenly overwritten.  
 
 ## Upload the License File to SQL Server
 
@@ -44,9 +44,9 @@ To upload the license, use the [Import-NAVServerLicense cmdlet](/powershell/modu
 
 ## Upload the License File to SQL Server using the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]
 
-> **APPLIES TO:** [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Spring 2019 and earlier.
+> **APPLIES TO:** [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Spring 2019 and earlier.
 
-The following procedure uploads the license for all [!INCLUDE[prodshort](../developer/includes/prodshort.md)] databases on the SQL Server instance.  
+The following procedure uploads the license for all [!INCLUDE[prod_short](../developer/includes/prod_short.md)] databases on the SQL Server instance.  
 
 1.  Start the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)].  
 
@@ -83,5 +83,5 @@ The following procedure uploads the license for all [!INCLUDE[prodshort](../deve
 3.  Restart all [!INCLUDE[server](../developer/includes/server.md)] instances on the computer to activate the license for other clients.  
 
 ## See Also  
- [Microsoft Dynamics ERP Software License Terms (requires login)](https://go.microsoft.com/fwlink/?LinkId=247426)   
- [Microsoft Dynamics ERP Licensing Guide (requires PartnerSource login)](https://go.microsoft.com/fwlink/?LinkID=318024)
+ [Business Central Software License Terms](https://www.microsoft.com/en-us/download/details.aspx?id=57274)  
+ [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544)  

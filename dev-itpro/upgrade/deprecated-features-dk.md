@@ -4,7 +4,7 @@ description: We are constantly streamlining and adjusting our app in-step with m
 author: bholtorf
 
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -14,9 +14,9 @@ ms.author: edupont
 
 ---
 
-# Deprecated Features in the Danish Version of [!INCLUDE [prodlong](../developer/includes/prodlong.md)]
+# Deprecated Features in the Danish Version of [!INCLUDE [prod_long](../developer/includes/prod_long.md)]
 
-This topic lists and describes the local functionality for Denmark that has been removed from [!INCLUDE[prodshort](../developer/includes/prodshort.md)], made available from a new page or report, or replaced by a new feature.
+This topic lists and describes the local functionality for Denmark that has been removed from [!INCLUDE[prod_short](../developer/includes/prod_short.md)], made available from a new page or report, or replaced by a new feature.
 
 ## Fields marked as ObsoleteState:Pending
 

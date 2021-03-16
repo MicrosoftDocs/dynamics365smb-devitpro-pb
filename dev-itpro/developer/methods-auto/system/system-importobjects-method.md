@@ -2,11 +2,11 @@
 title: "System.ImportObjects Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # System.ImportObjects Method
+> **Version**: _Available from runtime version 1.0 until version 1.0 where it was deprecated._
+
 Imports application objects from a file.
 
 > [!NOTE]
@@ -23,8 +25,8 @@ Imports application objects from a file.
 ```
  System.ImportObjects(FileName: String [, Format: Integer])
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *FileName*  
 &emsp;Type: [String](../string/string-data-type.md)  

@@ -5,12 +5,12 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 # Turn Off or Limit Telemetry Trace Events
-The application and platform can emit many telemetry trace events, which can be collected using various event trace tools. For example, telemetry trace events are recorded in the [!INCLUDE[server](../developer/includes/server.md)] channel logs, which you can see in Event Viewer, under **Applications and Services Logs** > **Microsoft** > **Dynamics365BusinessCentral** > **Common** > **Admin**. 
+The application and platform can emit many telemetry trace events, which can be collected using various event trace tools. For example, telemetry trace events are recorded in the [!INCLUDE[server](../developer/includes/server.md)] channel logs, which you can see in Event Viewer, under **Applications and Services Logs** > **Microsoft** > **DynamicsNAV** > **Common** > **Admin**. 
 
 The number of events can place a large demand on the logging resources on the computer running the [!INCLUDE[server](../developer/includes/server.md)] instance. To help alleviate this demand, the [!INCLUDE[server](../developer/includes/server.md)] instance includes a configuration setting called **Diagnostic Trace Level** (`TraceLevel` in the customsettings.config file) that enables you to specify the lowest severity level of customer telemetry trace events that are emitted from the application, or even turn off telemetry events altogether. Custom telemetry trace events have IDs from  700-712. 
   
@@ -37,9 +37,9 @@ To configure the **Diagnostic Trace Level** setting, you can use the [!INCLUDE[a
   
      You must restart the [!INCLUDE[server](../developer/includes/server.md)] instance for the changes to take effect.  
   
-6.  To restart, the [!INCLUDE[server](../developer/includes/server.md)] instance, in the left pane, select the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] computer.  
+6.  To restart, the [!INCLUDE[server](../developer/includes/server.md)] instance, in the left pane, select the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] computer.  
   
-     Unless you are administering a remote computer, this is [!INCLUDE[prodshort](../developer/includes/prodshort.md)] \(local\).  
+     Unless you are administering a remote computer, this is [!INCLUDE[prod_short](../developer/includes/prod_short.md)] \(local\).  
   
 7.  In the center pane, right-click an instance, and then select **Restart**.  
   

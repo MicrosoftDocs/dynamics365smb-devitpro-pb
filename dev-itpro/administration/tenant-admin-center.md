@@ -3,7 +3,7 @@ title: Business Central Admin Center| Microsoft Docs
 description: Learn about how a VAR or an internal administrator can set update windows and other admin tasks.  
 author: edupont04
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -13,7 +13,7 @@ ms.author: edupont
 ---
 # The Business Central Administration Center
 
-The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provides a portal for administrators to do administrative tasks for a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant. Here, administrators can:
+The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provides a portal for administrators to do administrative tasks for a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant. Here, administrators can:
 
 - [view and work with production and sandbox environments](tenant-admin-center-environments.md) for the tenant.
 - [set up upgrade notifications](tenant-admin-center-notifications.md).
@@ -32,22 +32,18 @@ The following users are authorized to access the [!INCLUDE[prodadmincenter](../d
 
 *Internal administrators* are users who are assigned the **Global admin** role or the **Dynamics 365 Admin** role in the Microsoft 365 admin center. These users are typically system administrators, IT professionals, or super users at the customer's company. For more information, see [About admin roles](/office365/admin/add-users/about-admin-roles) in the Microsoft 365 admin content.  
 
-The *admin agent* and *helpdesk agent* roles are assigned through the [Microsoft Partner Center](https://partner.microsoft.com) for the partner that is associated with the tenant. These roles can access the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant as *delegated administrators*. For more information, see [Administration of Business Central Online](tenant-administration.md).  
-
-### Mobile apps
-
-Mobile apps cannot natively handle a setup where there's no production environment called 'production'. In this case, you must use the protocol handler. For more information about the protocol handler, see [Linking to the Dynamics 365 Business Central App](../developer/devenv-link-to-mobile-app.md). We recommend you don't remove the 'production' environment if mobile apps are in use.  
+The *admin agent* and *helpdesk agent* roles are assigned through the [Microsoft Partner Center](https://partner.microsoft.com) for the partner that is associated with the tenant. These roles can access the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant as *delegated administrators*. For more information, see [Administration of Business Central Online](tenant-administration.md).  
 
 ## Internal administrators
 
-As the internal administrator, you can choose the link in the **Settings** menu when you're signed in to [!INCLUDE [prodshort](../developer/includes/prodshort.md)].  
+As the internal administrator, you can choose the link in the **Settings** menu when you're signed in to [!INCLUDE [prod_short](../developer/includes/prod_short.md)].  
 
-Alternatively, you can access the administration center from the URL, use the following pattern but replace *[TENANT_ID]* with the tenant ID of your [!INCLUDE [prodshort](../developer/includes/prodshort.md)]:
+Alternatively, you can access the administration center from the URL, use the following pattern but replace *[TENANT_ID]* with the tenant ID of your [!INCLUDE [prod_short](../developer/includes/prod_short.md)]:
 
 `https://businesscentral.dynamics.com/[TENANT_ID]/admin`
 
 > [!TIP]
-> The tenant ID is shown in the **Help and Support** page in your [!INCLUDE [prodshort](../developer/includes/prodshort.md)].  
+> The tenant ID is shown in the **Help and Support** page in your [!INCLUDE [prod_short](../developer/includes/prod_short.md)].  
   
 In the administration center, you can [create and monitor environments](tenant-admin-center-environments.md). This is also where you manage the people who must be [notified of administrative events](tenant-admin-center-notifications.md) for your tenant.  
 
@@ -83,16 +79,16 @@ As a partner, you can access the administration center from the Partner Dashboar
 2. Select the **Customers** link in the navigation pane.
 3. Select the customer tenant that you want to do administrative tasks for.
 4. Select **Service Management**.
-5. Under the **Administer Services** heading, select [!INCLUDE[prodlong](../developer/includes/prodlong.md)].
+5. Under the **Administer Services** heading, select [!INCLUDE[prod_long](../developer/includes/prod_long.md)].
 
 You can also get to the administration center by using the URL of a tenant, as described in the previous section.
 
 In the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], you can [specify support information](../technical-support.md#configuring-the-support-experience), create and remove [environments](tenant-admin-center-environments.md), and [submit support request](manage-technical-support.md#escalating-support-issues-to-microsoft) for your customer.  
 
-From the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], you can access your customer's [!INCLUDE [prodshort](../developer/includes/prodshort.md)] for troubleshooting, for example.  
+From the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], you can access your customer's [!INCLUDE [prod_short](../developer/includes/prod_short.md)] for troubleshooting, for example.  
 
 > [!NOTE]
-> As the partner, there are certain tasks that you cannot do in your customers' [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. For more information, see [Acting as a delegated administrator](tenant-administration.md#acting-as-a-delegated-administrator).
+> As the partner, there are certain tasks that you cannot do in your customers' [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. For more information, see [Acting as a delegated administrator](tenant-administration.md#acting-as-a-delegated-administrator).
 
 ## See also
 

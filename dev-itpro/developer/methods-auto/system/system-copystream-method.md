@@ -2,11 +2,11 @@
 title: "System.CopyStream Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # System.CopyStream Method
+> **Version**: _Available from runtime version 1.0._
+
 Copies the information that is contained in an InStream to an OutStream.
 
 
@@ -21,8 +23,8 @@ Copies the information that is contained in an InStream to an OutStream.
 ```
 [Ok := ]  System.CopyStream(OutStream: OutStream, InStream: InStream [, BytesToRead: Integer])
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *OutStream*  
 &emsp;Type: [OutStream](../outstream/outstream-data-type.md)  
@@ -38,34 +40,34 @@ The InStream object from which you want to copy; the source stream.
 
 
 ## Return Value
-*Ok*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+*Ok*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+**true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example  
 
-```  
+```al
 var
     F1: File;
     F2: File;
     InS: InStream;
     OutS: OutStream;
 begin
-    F1.OPEN('c:\Test.txt');  
-    F1.CREATEINSTREAM(InS);  
-    F2.CREATE('c:\CopyTest.txt');  
-    F2.CREATEOUTSTREAM(OutS);  
-    COPYSTREAM(OutS,InS);  
-    F1.CLOSE();  
-    F2.CLOSE();  
+    F1.Open('c:\Test.txt');  
+    F1.CreateInStream(InS);  
+    F2.Create('c:\CopyTest.txt');  
+    F2.CreateOutStream(OutS);  
+    CopyStream(OutS,InS);  
+    F1.Close();  
+    F2.Close();  
 end;
 ```  
 
-
 ## See Also
+
 [System Data Type](system-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

@@ -1,12 +1,13 @@
 ---
-title: "Troubleshooting: Long Running SQL Queries Involving FlowFields by Disabling SmartSQL"
+title: "Troubleshooting: Long Running SQL Queries Involving FlowFields"
+description: Learn how to fix long running SQL queries involving FlowFields by disabling SmartSQL.
 author: jswymer
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 10/29/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.assetid: 014e3285-02be-459c-9a54-eae45ea71e04
 ---
@@ -87,7 +88,7 @@ Now, when loading the page, each FlowField calculation is performed as a separat
 
 Once the slow subquery has been identified, you can create an index to improve its performance (or enable the MaintainSIFTIndex property of the key, if it is disabled).
 
-As you can see, poor performance might not be caused by the SmartSQL optimization. However, the fact that SmartSQL queries are not cached will only amplify the issue. It won’t help to customize the page or change the visibility of the field either. If a FlowField is contained in the metadata of the page, it will be calculated.
+As you can see, poor performance might not be caused by the SmartSQL optimization. However, the fact that SmartSQL queries are not cached will only amplify the issue. It won't help to customize the page or change the visibility of the field either. If a FlowField is contained in the metadata of the page, it will be calculated.
 
 ## See Also
 [Business Central Server Administration Tool](administration-tool.md)  

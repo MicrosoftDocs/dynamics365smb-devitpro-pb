@@ -6,7 +6,7 @@ ms.date: 10/01/2020
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: ManuelaHochstrasser
 ---
@@ -27,10 +27,10 @@ Would you like to know what has changed in update 15.3? Below you'll find an ove
 
 
 ## Release Plan
-If you want to get a comprehensive overview of what's new and planned for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online for the entire wave 2 (release from October 2019 through March 2020), find the link to the release plan [here](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-business-central/planned-features) 
+If you want to get a comprehensive overview of what's new and planned for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online for the entire wave 2 (release from October 2019 through March 2020), find the link to the release plan [here](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-business-central/planned-features) 
 
 ## Upgrade to 15.3
-Please note that new customers will automatically get the latest builds of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] (15.3). If you are an existing partner/customer, you will receive an email notification as soon as your environment has been upgraded. 
+Please note that new customers will automatically get the latest builds of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] (15.3). If you are an existing partner/customer, you will receive an email notification as soon as your environment has been upgraded. 
 
 ## Good to know
 
@@ -38,8 +38,8 @@ Please note that new customers will automatically get the latest builds of [!INC
 Avoid disruption by following these steps to prepare for tighter security policies starting February 2020 in Google Chrome and Microsoft Edge. For more information, see [Preparing Dynamics NAV or Dynamics 365 Business Central for Upcoming Changes to Browser Cookie Policy](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/administration/prepare-for-cookie-samesite-policy).
     
 - Using Internet Explorer  
-From Update 15.3 onwards, users who access [!INCLUDE[prodshort](../developer/includes/prodshort.md)] from Internet Explorer will receive a notification suggesting they consider a different browser. Users who switch to a modern browser, such as Microsoft Edge, typically observe improved performance and a generally smoother experience. Learn more about our supported and recommended browsers for Business Central on premises and online.
+From Update 15.3 onwards, users who access [!INCLUDE[prod_short](../developer/includes/prod_short.md)] from Internet Explorer will receive a notification suggesting they consider a different browser. Users who switch to a modern browser, such as Microsoft Edge, typically observe improved performance and a generally smoother experience. Learn more about our supported and recommended browsers for Business Central on premises and online.
     
-- To support partners who are interested in monetizing the app they have published to AppSource, update 15.3 comes with new options. These options allow partners to understand number, type and state of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] licenses in the current tenant as well as number of allocated seats. That data enables the partner to implement user-based billing into their apps. To learn more, see [Azure AD Licensing](https://github.com/microsoft/ALAppExtensions/tree/master/Modules/System/Azure%20AD%20Licensing).
+- To support partners who are interested in monetizing the app they have published to AppSource, update 15.3 comes with new options. These options allow partners to understand number, type and state of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] licenses in the current tenant as well as number of allocated seats. That data enables the partner to implement user-based billing into their apps. To learn more, see [Azure AD Licensing](https://github.com/microsoft/ALAppExtensions/tree/master/Modules/System/Azure%20AD%20Licensing).
 
-- Visit our new [aka.ms/bcperformance](https://aka.ms/bcperformance) page and start your learning about [!INCLUDE[prodshort](../developer/includes/prodshort.md)] performance. 
+- Visit our new [aka.ms/bcperformance](https://aka.ms/bcperformance) page and start your learning about [!INCLUDE[prod_short](../developer/includes/prod_short.md)] performance. 

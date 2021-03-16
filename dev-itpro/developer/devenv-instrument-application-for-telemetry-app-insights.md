@@ -6,7 +6,7 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
@@ -86,7 +86,7 @@ var
 begin
     CustDimension.Add('result', 'failed');
     CustDimension.Add('reason', 'critical error in code');
-    LogMessage('MyExt-0001', 'This is an critical error message', Verbosity::Normal, DATACLASSIFICATION::SystemMetadata, TelemetryScope::ExtensionPublisher, CustDimension);
+    LogMessage('MyExt-0001', 'This is a critical error message', Verbosity::Normal, DATACLASSIFICATION::SystemMetadata, TelemetryScope::ExtensionPublisher, CustDimension);
 end;
 ```
 
@@ -95,13 +95,13 @@ end;
 ```AL
 trigger OnRun();
 begin
-    LogMessage('MyExt-0001', 'This is an critical error message', Verbosity::Critical, DATACLASSIFICATION::SystemMetadata, TelemetryScope::ExtensionPublisher, 'result', 'failed', 'reason', 'critical error in code');
+    LogMessage('MyExt-0001', 'This is a critical error message', Verbosity::Critical, DATACLASSIFICATION::SystemMetadata, TelemetryScope::ExtensionPublisher, 'result', 'failed', 'reason', 'critical error in code');
 end;
 ```
 
 ## <a name="*"></a>Design considerations
 
-- For [!INCLUDE[prodshort](../includes/prodshort.md)] on-premises, the **Diagnostic Trace Level** setting on the [!INCLUDE[server](includes/server.md)] instance controls which signals are sent, based on their severity level.
+- For [!INCLUDE[prod_short](../includes/prod_short.md)] on-premises, the **Diagnostic Trace Level** setting on the [!INCLUDE[server](includes/server.md)] instance controls which signals are sent, based on their severity level.
 
     If the **Diagnostic Trace Level** is set to **Warning** for example, then **Normal** and **Verbose** signals won't be sent to Application Insights. For more information, see [Configuring Business Central Server - General](../administration/configure-server-instance.md#General).
 
@@ -109,7 +109,7 @@ end;
 
 <!--
 ```  
-LogMessage('MyExt-0001', 'This is an critical message', Verbosity::Critical, DATACLASSIFICATION::CustomerContent, TelemetryScope::ExtensionPublisher, 'result', 'failed', 'reason', 'critical error in code');
+LogMessage('MyExt-0001', 'This is a critical message', Verbosity::Critical, DATACLASSIFICATION::CustomerContent, TelemetryScope::ExtensionPublisher, 'result', 'failed', 'reason', 'critical error in code');
 LogMessage('MyExt-0002', 'This is an error message', Verbosity::Error, DATACLASSIFICATION::EndUserIdentifiableInformation, TelemetryScope::ExtensionPublisher, 'result', 'failed', 'reason', 'error in code');
 LogMessage('MyExt-0003', 'This is an warning message', Verbosity::Warning, DATACLASSIFICATION::AccountData, TelemetryScope::ExtensionPublisher, 'result', 'succeeded', 'reason', 'warning in code');
 LogMessage('MyExt-0004', 'This is an informational message', Verbosity::Normal, DATACLASSIFICATION::OrganizationIdentifiableInformation, TelemetryScope::ExtensionPublisher, 'result', 'succeeded');

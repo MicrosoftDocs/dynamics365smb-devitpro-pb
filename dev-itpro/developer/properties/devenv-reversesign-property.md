@@ -1,25 +1,30 @@
 ---
 title: "ReverseSign Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
-ms.assetid: 1a82a17a-7145-4cf9-a1d7-8ae71c9fb1b7
-caps.latest.revision: 6
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # ReverseSign Property
+> **Version**: _Available from runtime version 1.0._
 
-Changes negative values into positive values and positive values into negative values in a column of a resulting query dataset.  
-  
-## Applies to  
+Changes negative values into positive values and positive values into negative values in a column of a resulting query data set.
 
-- Query columns  
-  
+## Applies to
+-   Query Column
+
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+
 > [!NOTE]  
 > The **ReverseSign** property applies only to columns that have a numeric data type. If you set the **ReverseSign** property on a column that does not have a numeric data type, you will get an error.  
   
@@ -40,5 +45,4 @@ Field values in a database table can be negative numbers, as well as positive. F
 ## See Also  
 
 [Properties](devenv-properties.md)   
-[AL Data Types](../datatypes/devenv-al-data-types.md)   
- 
+[AL Data Types](../datatypes/devenv-al-data-types.md)  

@@ -6,14 +6,14 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
 ms.service: "dynamics365-business-central"
 ---
-# Upgrading the Application Code in [!INCLUDE[prodlong](../developer/includes/prodlong.md)]
+# Upgrading the Application Code in [!INCLUDE[prod_long](../developer/includes/prod_long.md)]
 
-Typically, customers want all the customizations that have been implemented in their existing databases to be migrated to their new [!INCLUDE[prodshort](../developer/includes/prodshort.md)] databases. Depending on the version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] that a database is being upgraded from, the amount of code changes between the two versions can vary. To upgrade the application code, you must merge code from different versions of the application. This merge process is known as a *code upgrade* or *application upgrade*. You must upgrade the application before you upgrade the data.
+Typically, customers want all the customizations that have been implemented in their existing databases to be migrated to their new [!INCLUDE[prod_short](../developer/includes/prod_short.md)] databases. Depending on the version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] that a database is being upgraded from, the amount of code changes between the two versions can vary. To upgrade the application code, you must merge code from different versions of the application. This merge process is known as a *code upgrade* or *application upgrade*. You must upgrade the application before you upgrade the data.
 
 > [!IMPORTANT]  
 > Before you begin, read the article [Important Information and Considerations for Before Upgrading](upgrade-considerations.md). This article contains information about limitations and things that might require you to perform extra tasks before you upgrade, such as the use of extensions V1 and the deprecation of codeunit 1.
@@ -26,11 +26,11 @@ For the application portion of the upgrade, you must analyze and process code ch
 
 |Version|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|  
 |-------------|---------------------------------------|  
-|*Original version*|This is the baseline version of the solution that you want to upgrade, such as the original release of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] October 2018 or [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)].|  
-|*Modified version*|This is the version that you want to upgrade, such as a customer's [!INCLUDE[prodshort](../developer/includes/prodshort.md)] October 2018 or [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] database with customizations and add-on solutions.|  
-|*Target version*|This is the target of the merge process that you want to upgrade your application to, such as the standard version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database.|  
+|*Original version*|This is the baseline version of the solution that you want to upgrade, such as the original release of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] October 2018 or [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)].|  
+|*Modified version*|This is the version that you want to upgrade, such as a customer's [!INCLUDE[prod_short](../developer/includes/prod_short.md)] October 2018 or [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] database with customizations and add-on solutions.|  
+|*Target version*|This is the target of the merge process that you want to upgrade your application to, such as the standard version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database.|  
 
-When you merge the application objects from these three versions, you can import the result into a new [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database that then contains the upgraded application. At the end of the process, you export the merged [!INCLUDE[prodshort](../developer/includes/prodshort.md)] objects from this database to a .fob file that you will use during the data upgrade.
+When you merge the application objects from these three versions, you can import the result into a new [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database that then contains the upgraded application. At the end of the process, you export the merged [!INCLUDE[prod_short](../developer/includes/prod_short.md)] objects from this database to a .fob file that you will use during the data upgrade.
 
 ### Single-tenant and multitenant deployments
 
@@ -55,26 +55,26 @@ With a multitenant deployment, you will perform the steps in this article on the
 
 ### Different ways of upgrading application code
 
-You can use any tool or set of tools to help you compare and merge code. [!INCLUDE[navnow](../developer/includes/navnow_md.md)] and [!INCLUDE[proshort](../developer/includes/prodshort.md)] include [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] cmdlets and sample scripts that can help you upgrade your application. The cmdlets are available through the [!INCLUDE[nav_dev_shell_md](../developer/includes/nav_dev_shell_md.md)] and [!INCLUDE[devshell](../developer/includes/devshell.md)], or by importing the Microsoft.Dynamics.NAV.Model.Tools.psd1 module into the Windows PowerShell Integrated Scripting Environment (ISE). You can find the sample scripts on the product installation media, in the *WindowsPowerShellScripts\ApplicationMergeUtilities* folder.
+You can use any tool or set of tools to help you compare and merge code. [!INCLUDE[navnow](../developer/includes/navnow_md.md)] and [!INCLUDE[proshort](../developer/includes/prod_short.md)] include [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] cmdlets and sample scripts that can help you upgrade your application. The cmdlets are available through the [!INCLUDE[nav_dev_shell_md](../developer/includes/nav_dev_shell_md.md)] and [!INCLUDE[devshell](../developer/includes/devshell.md)], or by importing the Microsoft.Dynamics.NAV.Model.Tools.psd1 module into the Windows PowerShell Integrated Scripting Environment (ISE). You can find the sample scripts on the product installation media, in the *WindowsPowerShellScripts\ApplicationMergeUtilities* folder.
 We recommend that you use these cmdlets and sample scripts because they can make it faster to merge most changes. For example, you can combine several steps in a command that uses a cmdlet such as the [Merge-NAVApplicationObject](https://go.microsoft.com/fwlink/?linkid=398884). The sections in this article describe how you can use the Merge-NAVApplicationObject cmdlet and other [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] cmdlets. For more information, see [Comparing and Merging Application Object Source Files](Comparing-and-Merging-Application-Object-Source-Files.md).
 
 ## Task 1: Install the Prerequisites and Tools
 
-To complete the tasks in this article, you will use various tools and components of the old [!INCLUDE[navnow](../developer/includes/navnow_md.md)] version and [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. Ensure that you have the following installed:
+To complete the tasks in this article, you will use various tools and components of the old [!INCLUDE[navnow](../developer/includes/navnow_md.md)] version and [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. Ensure that you have the following installed:
 
-#### [!INCLUDE[navnow](../developer/includes/navnow_md.md)] to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] upgrade
+#### [!INCLUDE[navnow](../developer/includes/navnow_md.md)] to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] upgrade
 
-|    |  Tool/Component  |
+|  Product  |  Tool/Component  |
 |----|------------------|
 | Old [!INCLUDE[navnow](../developer/includes/navnow_md.md)] version  |<ul><li>[!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]</li><li>[!INCLUDE[navnow](../developer/includes/navnow_md.md)] Development Shell</li></ul>|
-|[!INCLUDE[prodshort](../developer/includes/prodshort.md)] |<ul><li>[!INCLUDE[server](../developer/includes/server.md)]</li><li>[!INCLUDE[devshell](../developer/includes/devshell.md)]([!INCLUDE[2019_releasewave2_deprecated](../includes/2019_releasewave2_deprecated.md)])</li><li>[!INCLUDE[adminshell](../developer/includes/adminshell.md)]</li><li>[!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] ([!INCLUDE[2019_releasewave2_deprecated](../includes/2019_releasewave2_deprecated.md)])</li> </ul>|
+|[!INCLUDE[prod_short](../developer/includes/prod_short.md)] |<ul><li>[!INCLUDE[server](../developer/includes/server.md)]</li><li>[!INCLUDE[devshell](../developer/includes/devshell.md)]([!INCLUDE[2019_releasewave2_deprecated](../includes/2019_releasewave2_deprecated.md)])</li><li>[!INCLUDE[adminshell](../developer/includes/adminshell.md)]</li><li>[!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] ([!INCLUDE[2019_releasewave2_deprecated](../includes/2019_releasewave2_deprecated.md)])</li> </ul>|
 
-#### [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to [!INCLUDE[prodshort](../developer/includes/prodshort.md)] upgrade
+#### [!INCLUDE[prod_short](../developer/includes/prod_short.md)] to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] upgrade
 
-|    |  Tool/Component  |
+| Product   |  Tool/Component  |
 |----|------------------|
-| Old [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version  |<ul><li>[!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]</li><li>[!INCLUDE[devshell](../developer/includes/devshell.md)]</li></ul>|
-|New [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version |<ul><li>[!INCLUDE[server](../developer/includes/server.md)]</li><li>[!INCLUDE[devshell](../developer/includes/devshell.md)]([!INCLUDE[2019_releasewave2_deprecated](../includes/2019_releasewave2_deprecated.md)])</li><li>[!INCLUDE[adminshell](../developer/includes/adminshell.md)]</li><li>[!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]([!INCLUDE[2019_releasewave2_deprecated](../includes/2019_releasewave2_deprecated.md)])</li> </ul>|
+| Old [!INCLUDE[prod_short](../developer/includes/prod_short.md)] version  |<ul><li>[!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]</li><li>[!INCLUDE[devshell](../developer/includes/devshell.md)]</li></ul>|
+|New [!INCLUDE[prod_short](../developer/includes/prod_short.md)] version |<ul><li>[!INCLUDE[server](../developer/includes/server.md)]</li><li>[!INCLUDE[devshell](../developer/includes/devshell.md)]([!INCLUDE[2019_releasewave2_deprecated](../includes/2019_releasewave2_deprecated.md)])</li><li>[!INCLUDE[adminshell](../developer/includes/adminshell.md)]</li><li>[!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]([!INCLUDE[2019_releasewave2_deprecated](../includes/2019_releasewave2_deprecated.md)])</li> </ul>|
 
 <!-- Get application version ans family of the old application
 
@@ -109,7 +109,7 @@ There are three ways to export application objects to text files:
 
     - **ORIGINAL**  
 
-        This folder will be used to store the application object text file(s) from the baseline version, such as the original release of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] October 2018, [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)], or [!INCLUDE[nav2017](../developer/includes/nav2017.md)].  
+        This folder will be used to store the application object text file(s) from the baseline version, such as the original release of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] October 2018, [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)], or [!INCLUDE[nav2017](../developer/includes/nav2017.md)].  
 
     - **MODIFIED**  
 
@@ -117,7 +117,7 @@ There are three ways to export application objects to text files:
 
     - **TARGET**  
 
-        This folder will be used to store the application object text file(s) from the latest [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version.  
+        This folder will be used to store the application object text file(s) from the latest [!INCLUDE[prod_short](../developer/includes/prod_short.md)] version.  
 
     - **RESULT**  
 
@@ -143,13 +143,13 @@ There are three ways to export application objects to text files:
     ```  
 
     > [!TIP]  
-    >  In some cases, existing customizations might be irrelevant after the upgrade because they correspond to new functionality in [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
+    >  In some cases, existing customizations might be irrelevant after the upgrade because they correspond to new functionality in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
-4.  Export all application objects, except system tables, from the new base version, such as the original [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database.
+4.  Export all application objects, except system tables, from the new base version, such as the original [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database.
 
     Name the file **NewBaseVersion.txt**, and then save the file in the **TARGET** folder that you created earlier.
 
-    For example, using the [!INCLUDE[devshell](../developer/includes/devshell.md)] for [!INCLUDE[prodshort](../developer/includes/prodshort.md)], run the following command:
+    For example, using the [!INCLUDE[devshell](../developer/includes/devshell.md)] for [!INCLUDE[prod_short](../developer/includes/prod_short.md)], run the following command:
     ```  
     Export-NAVApplicationObject –DatabaseServer MyServer –DatabaseName "Demo Database BC (14-0)" –Path C:\Upgrade\Target\NewBaseVersion.txt -Filter 'Id=1..1999999999'
     ```  
@@ -181,26 +181,26 @@ The product installation media contains sample scripts that provide examples of 
     ```  
 Depending on the number of objects that you are merging and the number of differences found, this can take a few seconds, a few minutes, or longer. When the cmdlet completes, the result of the merge is shown, including a description of any application objects with conflicting code. The **RESULT** folder will contain a text file (.TXT) for each merged application object and possibly one or more .CONFLICT files that describe the code conflicts that occurred during the merge.
 
-At this point, you can either go to Task 4 to analyze and eventually resolve the conflicts, or you can go directly to Task 5 to import the merged objects as-is from the **RESULT** folder to the new [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database.  
+At this point, you can either go to Task 4 to analyze and eventually resolve the conflicts, or you can go directly to Task 5 to import the merged objects as-is from the **RESULT** folder to the new [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database.  
 
 ## Task 4: Handling Conflicts
 
-Depending on the application that you are upgrading, you can choose to analyze and fix the conflicting code before you import the merged objects into the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] for [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. The conflicts are shown in the merged text files but are also identified in .CONFLICT files in the subfolders of the **RESULT** folder. The subfolders **ConflictOriginal**, **ConflictModified**, and **ConflictTarget** folders then contain copies of the source files from the versions that have conflicting code.
+Depending on the application that you are upgrading, you can choose to analyze and fix the conflicting code before you import the merged objects into the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] for [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. The conflicts are shown in the merged text files but are also identified in .CONFLICT files in the subfolders of the **RESULT** folder. The subfolders **ConflictOriginal**, **ConflictModified**, and **ConflictTarget** folders then contain copies of the source files from the versions that have conflicting code.
 
 You can analyze the conflicts in any tool, make the relevant changes, and then run the merge operation again. For more information, see [Handling Merge Conflicts](Handling-Merge-Conflicts.md). Alternatively, you can go directly to task 5 to import the merged files into the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)], and resolve the conflicts there. 
 
 ## Task 5: Import and Compile Merged Objects in an Empty Database
 
-After you have completed the merge, you import the new merged application objects as text files into a new (empty) [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database, and then compile all objects. You must resolve any compilation errors before you can continue. The text files include successfully merged code, and code that is partially merged. You can import the partially merged objects into the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] development environment and resolve the conflicts there.
+After you have completed the merge, you import the new merged application objects as text files into a new (empty) [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database, and then compile all objects. You must resolve any compilation errors before you can continue. The text files include successfully merged code, and code that is partially merged. You can import the partially merged objects into the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] development environment and resolve the conflicts there.
 
-1. Create a new [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database for the new upgraded application. The database should be empty, except for the system tables.
+1. Create a new [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database for the new upgraded application. The database should be empty, except for the system tables.
 
     For example, give the database the name *My Upgraded App*. For more information, see [Creating and Altering Databases](../cside/cside-create-databases.md).
 
     >[!IMPORTANT]  
     > You must set the collation of the new database to match the collation of the old application database. To see the collation of the old database, open it in the old [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] version, then choose **File** > **Database** > **Alter** > **Collation**. 
 
-2. Make sure the database includes a valid [!INCLUDE[prodshort](../developer/includes/prodshort.md)] license.
+2. Make sure the database includes a valid [!INCLUDE[prod_short](../developer/includes/prod_short.md)] license.
 
     For more information, see [Uploading a License File for a Specific Database](../cside/cside-upload-license-file.md)
 
@@ -208,7 +208,7 @@ After you have completed the merge, you import the new merged application object
 
     There are three ways to import the files:
 
-    - Use the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] for [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
+    - Use the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] for [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
         For more information see [To import objects by using the development environment UI](../cside/cside-import-objects.md#ImportObjectsDevEnv).
     - Use the finsql.exe to run the [ImportObjects](/dynamics-nav/importobjects) command.
@@ -232,7 +232,7 @@ After you have completed the merge, you import the new merged application object
 
 4. Connect the new [!INCLUDE[server](../developer/includes/server.md)] instance to the database.  
 
-    You can do this with the [!INCLUDE[admintool](../developer/includes/admintool.md)] or the [Set-NAVServerConfiguration cmdlet](https://go.microsoft.com/fwlink/?linkid=401394) in the [!INCLUDE[adminshell](../developer/includes/nav_shell_md.md)]. In addition, you must add the service account that is used by the [!INCLUDE[server](../developer/includes/server.md)] instance as a member of the **db\_owner** role in the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] database on SQL Server.  
+    You can do this with the [!INCLUDE[admintool](../developer/includes/admintool.md)] or the [Set-NAVServerConfiguration cmdlet](https://go.microsoft.com/fwlink/?linkid=401394) in the [!INCLUDE[adminshell](../developer/includes/nav_shell_md.md)]. In addition, you must add the service account that is used by the [!INCLUDE[server](../developer/includes/server.md)] instance as a member of the **db\_owner** role in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database on SQL Server.  
 
     For more information about how to do this using the [!INCLUDE[admintool](../developer/includes/admintool.md)], see [How to: Connect a Microsoft Dynamics NAV Server Instance to a Database](../administration/connect-server-to-database.md) and [Giving the account necessary database privileges in SQL Server](../deployment/provision-server-account.md#dbo).  
 
@@ -280,7 +280,7 @@ For more information, see [Making Pages and Reports Searchable After an Upgrade]
 
 ## Task 8: Build object search index
 
-Build the object search index to make objects able to be searched from **Tell Me** in the client. If you completed step 6, you can skip this step.
+Build the object search index to make objects able to be searched from **Tell Me** in the client. If you completed step 7, you can skip this step.
 
 In the **Tools** menu of the [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)], select **Build Object Search Index**.
 
@@ -288,13 +288,13 @@ For more information, see [Making Pages and Reports Searchable After an Upgrade]
 
 ## Task 9. ([!INCLUDE[navnow](../developer/includes/navnow_md.md)] upgrade only) Transition the custom code from old codeunit 1 to use the new implementation
 
-Because codeunit 1 has been deprecated in [!INCLUDE[prodshort](../developer/includes/prodshort.md)], you must move any custom logic that was included in the old codeunit 1 into the management codeunits and methods described in the article [Transitioning from Codeunit 1](transition-from-codeunit1.md).
+Because codeunit 1 has been deprecated in [!INCLUDE[prod_short](../developer/includes/prod_short.md)], you must move any custom logic that was included in the old codeunit 1 into the management codeunits and methods described in the article [Transitioning from Codeunit 1](transition-from-codeunit1.md).
 
 You now have a new database with a fully upgraded application. For a multitenant deployment, you can start the data upgrade. For this, you will use the new server instance that connects to the upgraded application database. See [Upgrading the Data](Upgrading-the-Data.md).
 
 ## Task 10: (Single-tenant mode only) Export all objects
 
-With a single-tenant deployment, export all objects of the new database to a .fob type file, such as **objects.fob** file. You will use this .fob file as part of the data upgrade process. The export must include customized objects, upgraded reports, and all other [!INCLUDE[prodshort](../developer/includes/prodshort.md)] objects.
+With a single-tenant deployment, export all objects of the new database to a .fob type file, such as **objects.fob** file. You will use this .fob file as part of the data upgrade process. The export must include customized objects, upgraded reports, and all other [!INCLUDE[prod_short](../developer/includes/prod_short.md)] objects.
 
 As with exporting objects in Task 1, you can use either the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)], finsql.exe, or [!INCLUDE[devshell](../developer/includes/devshell.md)].
 
@@ -310,7 +310,7 @@ This completes the upgrade of the application code for single-tenant deployment.
 
 The upgrade toolkit includes upgrade codeunits for handling the data upgrade.
 
-For W1 versions, you can find the default upgrade toolkit objects in the  **UpgradeToolKit\Data Conversion Tools** folder on the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation media (DVD). Choose the FOB that matches the [!INCLUDE[navnow](../developer/includes/navnow_md.md)] version from which you are upgrading:
+For W1 versions, you can find the default upgrade toolkit objects in the  **UpgradeToolKit\Data Conversion Tools** folder on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] installation media (DVD). Choose the FOB that matches the [!INCLUDE[navnow](../developer/includes/navnow_md.md)] version from which you are upgrading:
 
 |  From  |  To Business Central April 2019  |  To Business Central October 2018   |
 |-----------|-------|-----------|
@@ -318,7 +318,7 @@ For W1 versions, you can find the default upgrade toolkit objects in the  **Upgr
 | [!INCLUDE[navcorfu](../developer/includes/navcorfu_md.md)]| Upgrade90014x.FOB| Upgrade900130.FOB|
 |[!INCLUDE[nav2017](../developer/includes/nav2017.md)]| Upgrade100014x.FOB| Upgrade1000130.FOB|
 |[!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)]| Upgrade110014x.FOB|Upgrade1100130.FOB|
-|[!INCLUDE[prodshort](../developer/includes/prodshort.md)] Fall 2018| Upgrade13x14x.FOB|Not applicable|
+|[!INCLUDE[prod_short](../developer/includes/prod_short.md)] Fall 2018| Upgrade13x14x.FOB|Not applicable|
 
 For local versions, you will find the upgrade toolkit objects in the **UpgradeToolKit\Local Objects** folder. The files follow the same naming convention except they include the 2-letter local version, such as **Upgrade110014x.DK.fob** for Denmark or **Upgrade110014x.DE.fob** for Germany.
 
@@ -328,9 +328,9 @@ For information about importing objects, see [Importing Objects](../cside/cside-
 
 1. Unpublish the existing system, test, and application symbols by using the [Unpublish-NAVAPP cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/unpublish-navapp):
        
-        ```
-        Unpublish-NAVApp -ServerInstance <ServerInstanceName> -Name <name> -Version <n.n.n.n>
-        ```
+    ```
+    Unpublish-NAVApp -ServerInstance <ServerInstanceName> -Name <name> -Version <n.n.n.n>
+    ```
 2. Publish the system and test symbols.
   
     Symbols are a prerequisite for extensions. If you installed the **AL Development Environment**, you can find the symbol files where your installed the environment, which by default is [!INCLUDE[prodx86installpath](../developer/includes/prodx86installpath.md)]. Otherwise, you can find the files in the **ModernDev** folder on the installation media. 
@@ -375,7 +375,7 @@ For information about importing objects, see [Importing Objects](../cside/cside-
 
 4. <a name="PublishNew"></a>Publish new versions of the Microsoft extensions.
 
-    The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation media (DVD) includes several new versions of Microsoft extensions (that is, extensions that have **Microsoft** as the publisher). If your old deployment uses these extensions, you have to upgrade the old versions to the new versions.
+    The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] installation media (DVD) includes several new versions of Microsoft extensions (that is, extensions that have **Microsoft** as the publisher). If your old deployment uses these extensions, you have to upgrade the old versions to the new versions.
 
     > [!IMPORTANT]
     > For Denmark (DK) and German (DE) versions. Some of the local functionality has been moved from the base application to extensions.
@@ -389,7 +389,7 @@ For information about importing objects, see [Importing Objects](../cside/cside-
     >|Payment and Reconciliation Formats (DK)|FIK.app |
     >|Tax File Formats (DK)| VATReportsDK.app|
     >
-    > If you are upgrading from a German (DE) version of Dynamics NAV or [!INCLUDE[prodshort](../developer/includes/prodshort.md)] October 2018 (Cumulative Update 2 or earlier), you must publish and install the following extensions to get the local functionality:
+    > If you are upgrading from a German (DE) version of Dynamics NAV or [!INCLUDE[prod_short](../developer/includes/prod_short.md)] October 2018 (Cumulative Update 2 or earlier), you must publish and install the following extensions to get the local functionality:
     >
     >|Name|Extension package|
     >|----|---------|

@@ -4,7 +4,7 @@ author: jswymer
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
 ms.date: 10/01/2020
@@ -12,7 +12,7 @@ ms.date: 10/01/2020
 
 # Add your App to AppSource
 
-AppSource is a market place where partners can provide marketing details, such as descriptions, whitepapers, or videos about their app for [!INCLUDE [prodshort](../developer/includes/prodshort.md)].  
+AppSource is a market place where partners can provide marketing details, such as descriptions, whitepapers, or videos about their app for [!INCLUDE [prod_short](../developer/includes/prod_short.md)].  
 
 [!INCLUDE[embedapp](../developer/includes/embedapp.md)] partners can choose to promote themselves and their [!INCLUDE[embedapp](../developer/includes/embedapp.md)] on AppSource.
 

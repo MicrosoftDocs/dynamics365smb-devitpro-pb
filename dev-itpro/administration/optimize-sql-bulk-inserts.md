@@ -5,14 +5,14 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.assetid: 6bbe737c-305f-48d2-8cd3-857c7efb9866
 caps.latest.revision: 21
 manager: edupont
 ---
 # Bulk Inserts
-By default, [!INCLUDE[prodshort](../developer/includes/prodshort.md)] automatically buffers inserts in order to send them to Microsoft SQL Server at one time.  
+By default, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] automatically buffers inserts in order to send them to Microsoft SQL Server at one time.  
 
  By using bulk inserts, the number of server calls is reduced, thereby improving performance.  
 

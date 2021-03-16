@@ -2,11 +2,11 @@
 title: "Data Types and Methods in AL"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 12/09/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -117,6 +117,7 @@ The following data types are available as part of the AL Language. Each data typ
 |[XmlWriteOptions](xmlwriteoptions/xmlwriteoptions-data-type.md)|Represents the options configuring how XML is saved.|
 |[Action](action/action-option.md)|Represents the action that the user took on the page.|
 |[ClientType](clienttype/clienttype-option.md)|Represents the type of the client executing the operation.|
+|[CommitBehavior](commitbehavior/commitbehavior-option.md)|Specifies whether commit is allowed within the scope of the method.|
 |[DataClassification](dataclassification/dataclassification-option.md)|Sets the classification of the data in the table or field.|
 |[DataScope](datascope/datascope-option.md)|Identifies the scope of stored data in the isolated storage.|
 |[DefaultLayout](defaultlayout/defaultlayout-option.md)|The default layout to be used by a report.|
@@ -132,7 +133,6 @@ The following data types are available as part of the AL Language. Each data typ
 |[SecurityFilter](securityfilter/securityfilter-option.md)|Specifies how security filters are applied to the record.|
 |[TableConnectionType](tableconnectiontype/tableconnectiontype-option.md)|Use variables of this data type to specify the type of connection to an external database.|
 |[TelemetryScope](telemetryscope/telemetryscope-option.md)|Represents the emission scope of the telemetry signal.|
-|[CommitBehavior](commitbehavior/commitbehavior-option.md)|Specifies whether commit is allowed within the scope of the method.|
 |[TestPermissions](testpermissions/testpermissions-option.md)|Specifies a value that can be used to determine which permission sets are used on tests that are run by test codunits or test functions.|
 |[TextEncoding](textencoding/textencoding-option.md)|Represents a file encoding.|
 |[TransactionModel](transactionmodel/transactionmodel-option.md)|Represents a test transaction model.|

@@ -6,13 +6,15 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 ms.assetid: 729f3649-f7c8-498d-8c16-961771f192a0
 ms.author: jswymer
 ---
  
 # CustomAPIName Property (Page)
+> **Version**: _Available from runtime version 1.0._
+
 Sets the custom name of the API endpoint that the page is exposed in. The custom name must be unique.
 
 ## Applies to  

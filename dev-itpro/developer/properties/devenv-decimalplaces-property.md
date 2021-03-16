@@ -1,30 +1,31 @@
 ---
 title: "DecimalPlaces Property"
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/24/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # DecimalPlaces Property
+> **Version**: _Available from runtime version 1.0._
 
-Sets display and storage requirements for the [Decimal Data Type](../datatypes/devenv-decimal-data-type.md).  
-  
-## Applies to  
-  
-- Page Fields  
-- Table Fields
-- Report Columns  
+Sets display and storage requirements for the Decimal Data Type.
 
-## Syntax
+## Applies to
+-   Table Field
+-   Page Field
+-   Report Column
 
-```AL
-DecimalPlaces = 0 : 5;
-```
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 
 ## Property Value  
 
@@ -37,6 +38,11 @@ You can enter minimum, maximum, or both values for the number of decimal places,
 |**2:**|At least 2 decimal places.|  
 |**:2**|No more than 2 decimal places.|  
 
+## Syntax
+
+```AL
+DecimalPlaces = 0 : 5;
+```
   
 ## Remarks
 

@@ -6,22 +6,21 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.assetid: 275aad2c-ea2c-4291-8381-82b0b92dc1a0
 caps.latest.revision: 29
 author: jswymer
 ---
-# [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Component and System Topology
+# [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Component and System Topology
 
-The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] deployment includes three core components for serving the application to users. It also includes various tools and components for managing, developing, extending, and testing the application.
+The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] deployment includes three core components for serving the application to users. It also includes various tools and components for managing, developing, extending, and testing the application.
 
 ## Multi-Tier System Topology
  
-To understand the components is useful to first look at the base topology of a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] deployment, as illustrated in the following diagram:
+To understand the components is useful to first look at the base topology of a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] deployment, as illustrated in the following diagram:
 
 ![Architecture overview](../media/architecture-overview.png "Architecture overview")  
-
 
 ## Components
 
@@ -51,20 +50,20 @@ Every deployment must include the core components: Web server, Server, and SQL D
 |Component|Description| More Information  |
 |---------|-----------|---|
 |Demo Database|A database that contains application objects and sample business data for demonstration purposes.||
-|[!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)]|The C/SIDE client that was available in [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] for developing applications using C/AL. In [!INCLUDE[prodshort](../developer/includes/prodshort.md)], this component is only required for doing upgrades but you can still use it to develop applications.|[!INCLUDE[2019_releasewave2_deprecated](../includes/2019_releasewave2_deprecated.md)]<br /><br />[Development in C/AL](/dynamics-nav/development) in the Dynamics NAV Developer and IT Pro Help.|
+|[!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)]|The C/SIDE client that was available in [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] for developing applications using C/AL. In [!INCLUDE[prod_short](../developer/includes/prod_short.md)], this component is only required for doing upgrades but you can still use it to develop applications.|[!INCLUDE[2019_releasewave2_deprecated](../includes/2019_releasewave2_deprecated.md)]<br /><br />[Development in C/AL](/dynamics-nav/development) in the Dynamics NAV Developer and IT Pro Help.|
 |[!INCLUDE[devshell](../developer/includes/devshell.md)]|Windows PowerShell modules for merging and modifying application object files and creating extension packages. Installed with the [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)].|[!INCLUDE[2019_releasewave2_deprecated](../includes/2019_releasewave2_deprecated.md)]<br /><br />[Windows PowerShell Cmdlets for Business Central](/powershell/business-central/overview)|
-|[!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)]|Windows Desktop application for accessing [!INCLUDE[prodshort](../developer/includes/prodshort.md)].|[!INCLUDE[2019_releasewave2_deprecated](../includes/2019_releasewave2_deprecated.md)]<br /><br />|
+|[!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)]|Windows Desktop application for accessing [!INCLUDE[prod_short](../developer/includes/prod_short.md)].|[!INCLUDE[2019_releasewave2_deprecated](../includes/2019_releasewave2_deprecated.md)]<br /><br />|
 |Microsoft Outlook Integration|A [!INCLUDE[server](../developer/includes/server.md)] component for integrating with Microsoft Outlook.|[!INCLUDE[2019_releasewave2_deprecated](../includes/2019_releasewave2_deprecated.md)]<br /><br />|
-|Microsoft Outlook Add-in| A component to synchronize data, such as to-dos, contacts, and tasks, between [!INCLUDE[prodshort](../developer/includes/prodshort.md)] and Outlook. The Outlook Add-In uses [!INCLUDE[prodshort](../developer/includes/prodshort.md)] web services.|[Setting Up the Office Add-ins for Outlook Integration](../administration/Setting-up-Office-Add-Ins-Outlook-Inbox.md)|
-|Microsoft Excel Add-in|A component that enables users to export data from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to Excel.|[!INCLUDE[2019_releasewave2_deprecated](../includes/2019_releasewave2_deprecated.md)]<br /><br />|
-|Excel Add-in|A component that enables users to export data from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to Excel.|[Setting up the Excel Add-In](../administration/configuring-excel-addin.md)|
+|Microsoft Outlook Add-in| A component to synchronize data, such as to-dos, contacts, and tasks, between [!INCLUDE[prod_short](../developer/includes/prod_short.md)] and Outlook. The Outlook Add-In uses [!INCLUDE[prod_short](../developer/includes/prod_short.md)] web services.|[Setting Up the Office Add-ins for Outlook Integration](../administration/Setting-up-Office-Add-Ins-Outlook-Inbox.md)|
+|Microsoft Excel Add-in|A component that enables users to export data from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] to Excel.|[!INCLUDE[2019_releasewave2_deprecated](../includes/2019_releasewave2_deprecated.md)]<br /><br />|
+|Excel Add-in|A component that enables users to export data from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] to Excel.|[Setting up the Excel Add-In](../administration/configuring-excel-addin.md)|
 |Page Testability|A [!INCLUDE[server](../developer/includes/server.md)] component for testing pages.||
 |Automated Data Capture System|A system that tracks the movement of items in a warehouse.|[Use Automated Data Capture Systems (ADCS](/dynamics365/business-central/warehouse-use-automated-data-capture-systems-adcs)<br /><br />[!INCLUDE[2020_releasewave1_deprecated](../includes/2020_releasewave1_deprecated.md)]. The VT100 Plug-in is no longer included on the product installation media.|
 |ClickOnce Installer Tools|Tools for implementing ClickOnce installation for the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)].|[!INCLUDE[2019_releasewave2_deprecated](../includes/2019_releasewave2_deprecated.md)]<br /><br />[Deploying Microsoft Dynamics NAV Windows client Using ClickOnce](/dynamics-nav/deploying-microsoft-dynamics-nav-using-clickonce) in the Dynamics NAV Developer and IT Pro Help.|
-|NAS Service|A server component that executes business logic without a user interface or user interaction. NAS services in [!INCLUDE[server](../developer/includes/server.md)] support applications such as Microsoft Office Outlook Integration and the NAV Job Queue.| Instead of using NAS services, we recommend that you use the Task Scheduler (see [Task Scheduler](../developer/devenv-task-scheduler.md). If you decide to use NAS, and want to read more about its configuration, see [Configuring NAS Services](/dynamics-nav/configuring-nas-services) in the Dev and IT Pro Help for [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)].|
+|NAS Service|A server component that executes business logic without a user interface or user interaction. NAS services in [!INCLUDE[server](../developer/includes/server.md)] support applications such as Microsoft Outlook Integration and the Job Queue.| Instead of using NAS services, we recommend that you use the Task Scheduler (see [Task Scheduler](../developer/devenv-task-scheduler.md). If you decide to use NAS, and want to read more about its configuration, see [Configuring NAS Services](/dynamics-nav/configuring-nas-services) in the Dev and IT Pro Help for [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)].|
 
+## See Also
 
-## See Also  
- [Deployment](Deployment.md)   
- [Installing Business Central Using Setup](install-using-setup.md)   
- [Multitenant Deployment Architecture](Multitenant-Deployment-Architecture.md)
+[Deployment](Deployment.md)  
+[Installing Business Central Using Setup](install-using-setup.md)  
+[Multitenant Deployment Architecture](Multitenant-Deployment-Architecture.md)  

@@ -1,6 +1,6 @@
 ---
 title: "Legal Resources for Business Central online"
-description: Provides links to legal information for Business Central. 
+description: Get a list of links to legal information for Business Central, including the online service terms for Business Central online. 
 author: jswymer
 ms.custom: na
 ms.date: 10/01/2020
@@ -20,11 +20,12 @@ This page provides links to legal information for Business Central.
 
 ## Microsoft AL Language
 
-- [AL Language - Terms of Use](https://go.microsoft.com/fwlink/?linkid=724013)
+- [AL Language - Terms of Use](https://go.microsoft.com/fwlink/?linkid=2147711)
+- [AL Extension Third Party Notice](https://go.microsoft.com/fwlink/?linkid=2147610)
 
 ## Envestnet Yodlee - Bank Feeds
 
-- [Envestnet Yodlee - Bank Feeds Terms and Conditions](https://go.microsoft.com/fwlink/?linkid=724013)
+- [Envestnet Yodlee - Bank Feeds Terms and Conditions](https://go.microsoft.com/fwlink/?linkid=2147413)
 
 ## Trial Services terms 
 

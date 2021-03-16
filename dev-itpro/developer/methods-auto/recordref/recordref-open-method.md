@@ -2,11 +2,11 @@
 title: "RecordRef.Open Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # RecordRef.Open Method
+> **Version**: _Available from runtime version 1.0._
+
 Causes a RecordRef variable to refer to a table, which is identified by its number in a particular company.
 
 
@@ -22,9 +24,9 @@ Causes a RecordRef variable to refer to a table, which is identified by its numb
  RecordRef.Open(No: Integer [, Temp: Boolean] [, CompanyName: String])
 ```
 ## Parameters
-*RecordRef*  
-&emsp;Type: [RecordRef](recordref-data-type.md)  
-An instance of the [RecordRef](recordref-data-type.md) data type.  
+*RecordRef*
+&emsp;Type: [RecordRef](recordref-data-type.md)
+An instance of the [RecordRef](recordref-data-type.md) data type.
 
 *No*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
@@ -56,11 +58,11 @@ var r : record 2000000006;
 ```
 -->
 
-## Example  
+## Example 1
 
 The following example uses the Open method to create a RecordRef variable that is named MyRecordRef for the Customer table. The parameters are omitted in this example because there is only one company in this example and the table will not be open as temporary table. The caption and number of records in the table are displayed in a Message box. At the end of the display, the [Close Method \(RecordRef\)](recordref-close-method.md) closes the table. 
 
-```  
+```al
 var
     MyRecordRef: RecordRef;
     Text000: Label 'The %1 table contains %2 records.'; 
@@ -71,11 +73,11 @@ begin
 end;
 ```  
   
-## Example
+## Example 2
 
-This example shows how to use the OPEN method. In this example, "MyRecordRef" opens table 27 and then "Find\('-'\)" finds the first record in the table. "TempMyRecordRef" opens a temporary table which is empty and therefore the "Find\('-'\)" returns false.
+This example shows how to use the Open method. In this example, "MyRecordRef" opens table 27 and then "Find\('-'\)" finds the first record in the table. "TempMyRecordRef" opens a temporary table which is empty and therefore the "Find\('-'\)" returns false.
   
-```  
+```al
 var
     MyRecordRef: RecordRef;
     TempMyRecordRef: RecordRef;

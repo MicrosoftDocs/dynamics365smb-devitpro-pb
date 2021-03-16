@@ -6,7 +6,7 @@ ms.custom: na
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
 ms.date: 10/01/2020
@@ -17,14 +17,14 @@ ms.date: 10/01/2020
 If you as a software development partner are interested in developing an app that meets the description of [!INCLUDE[embedapp](../developer/includes/embedapp.md)] in [Embed App Overview](embed-app-overview.md), your app must meet qualification requirements. The main criteria for [!INCLUDE[embedapp](../developer/includes/embedapp.md)] onboarding at this point are:
 
 - Partner must provide all day, every day support. Their customers do not get to call Microsoft support. They always call the partner.  
-- Partner must live up to the standards for user assistance and documentation that are outlined in [[!INCLUDE[prodlong](../developer/includes/prodlong.md)] User Assistance Model](../user-assistance.md). Good user assistance is part of [!INCLUDE[embedapp](../developer/includes/embedapp.md)] success and uptake, and it also lowers the work load on their support center.  
+- Partner must live up to the standards for user assistance and documentation that are outlined in [[!INCLUDE[prod_long](../developer/includes/prod_long.md)] User Assistance Model](../user-assistance.md). Good user assistance is part of [!INCLUDE[embedapp](../developer/includes/embedapp.md)] success and uptake, and it also lowers the work load on their support center.  
 - Partner is committed to stay on the supported platform.  
 - Partner provides an SLA for requests from Microsoft towards the partner  
 - Partners must have a support agreement with Microsoft  
 
 Apps with a code-customized base application will have additional volume (number of users) requirements associated with it.  
 
-When an [!INCLUDE[embedapp](../developer/includes/embedapp.md)] is qualified for onboarding to [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online, the partner must provide the following information about the [!INCLUDE[embedapp](../developer/includes/embedapp.md)] to the Microsoft’s onboarding team:
+When an [!INCLUDE[embedapp](../developer/includes/embedapp.md)] is qualified for onboarding to [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online, the partner must provide the following information about the [!INCLUDE[embedapp](../developer/includes/embedapp.md)] to the Microsoft’s onboarding team:
 
 - The name of the application to be used for the client and web service URL. For example, an ISV for the *fabrikamapples* app would provide the following information:
 

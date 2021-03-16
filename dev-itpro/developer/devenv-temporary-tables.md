@@ -6,7 +6,7 @@ ms.date: 10/01/2020
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"    
 author: blrobl
 ---
@@ -23,7 +23,7 @@ You can use a temporary table just like you use a database table. The difference
 
 ## Advantage of using a temporary table  
 
-The advantage of using a temporary table is that all the interaction with a temporary table occurs on [!INCLUDE[prodlong](includes/prodlong.md)]. A temporary table reduces the load on both the network and the SQL database server.  
+The advantage of using a temporary table is that all the interaction with a temporary table occurs on [!INCLUDE[prod_long](includes/prod_long.md)]. A temporary table reduces the load on both the network and the SQL database server.  
 
 When you want to do many operations on the data in a specific table in the database, you can load the data into a temporary table when you modify it. Loading the data into a temporary table speeds up the process because all the operations are done in memory on the [!INCLUDE[server](includes/server.md)].
 
@@ -31,7 +31,7 @@ When you want to do many operations on the data in a specific table in the datab
 
 There are three ways to implement a temporary table:
 
-- Setting the [TableType property](properties/devenv-tabletype-property.md) on the table object to **Temporary**
+- Setting the [TableType property](properties/devenv-tabletype-property.md) on the table object to **Temporary**.
 - Using a temporary record variable.
 - Setting the [SourceTableTemporary property](properties/devenv-sourcetabletemporary-property.md) on a page.
 
@@ -44,7 +44,7 @@ Whichever way you choose, you must create the [table object](devenv-table-object
 
 [!INCLUDE[2020_releasewave2.md](../includes/2020_releasewave2.md)]
 
-With this implementation, a physical table is not created in the database. In the table object, set the `TableType` property to `true`:
+With this implementation, a physical table is not created in the database. In the table object, set the `TableType` property to `Temporary`:
 
 ```AL
 table 50100 MyTable

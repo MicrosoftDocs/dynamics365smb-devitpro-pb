@@ -5,14 +5,14 @@ author: rweigel
 ms.custom: na
 ms.date: 10/01/2020
 ms.reviewer: edupont
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
-ms.author: rweigel
+ms.author: freddyk
 ---
 
 # FAQ about Library and Dependency Apps in Business Central
 
-This section contains answers to frequently asked questions about library apps and dependency apps in [!INCLUDE[prodshort](includes/prodshort.md)].
+This section contains answers to frequently asked questions about library apps and dependency apps in [!INCLUDE[prod_short](includes/prod_short.md)].
 
 ## What is a library app?
 
@@ -20,7 +20,7 @@ A library app contains common code that other apps depend on. If you are going t
 
 ## How does the library app get installed to a tenant?
 
-A library app does not appear on AppSource. It only lives in [!INCLUDE[prodshort](includes/prodshort.md)]. Our service is built to install the library apps behind the scenes. Here is how it works. Customers finds an app they want to install on AppSource. That customer does not know the app even has library app(s). When they click to install the app, our service looks into that apps json/manifest to see if it first needs to install any library/dependency apps it may depend on. If so, it installs them first before installing the main AppSource app.
+A library app does not appear on AppSource. It only lives in [!INCLUDE[prod_short](includes/prod_short.md)]. Our service is built to install the library apps behind the scenes. Here is how it works. Customers finds an app they want to install on AppSource. That customer does not know the app even has library app(s). When they click to install the app, our service looks into that apps json/manifest to see if it first needs to install any library/dependency apps it may depend on. If so, it installs them first before installing the main AppSource app.
 
 ## What is a dependency app?
 

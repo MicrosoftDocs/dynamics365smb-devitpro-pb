@@ -2,11 +2,11 @@
 title: "Blob.Import Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 12/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Blob.Import Method
+> **Version**: _Available from runtime version 1.0._
+
 Imports a binary large object (BLOB) from a file.
 
 
@@ -22,9 +24,9 @@ Imports a binary large object (BLOB) from a file.
 [ImportName := ]  Blob.Import(Name: String)
 ```
 ## Parameters
-*Blob*  
-&emsp;Type: [Blob](blob-data-type.md)  
-An instance of the [Blob](blob-data-type.md) data type.  
+*Blob*
+&emsp;Type: [Blob](blob-data-type.md)
+An instance of the [Blob](blob-data-type.md) data type.
 
 *Name*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -36,9 +38,9 @@ The path and name of the BLOB that you want to import. When you enter the path, 
 
 
 ## Return Value
-*ImportName*  
-&emsp;Type: [String](../string/string-data-type.md)  
-The name of the imported file.  
+*ImportName*
+&emsp;Type: [String](../string/string-data-type.md)
+The name of the imported file.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

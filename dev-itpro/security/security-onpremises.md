@@ -7,18 +7,18 @@ ms.custom: na
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
 ms.date: 10/01/2020
 ---
 # Business Central On-Premises Security
 
-This section helps you understand and improve the security of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] hosted on-premises. In the links below you will find information, hardening guidance and recommended best practices addressing client, database, server and network security.  
+This section helps you understand and improve the security of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] hosted on-premises. In the links below you will find information, hardening guidance and recommended best practices addressing client, database, server and network security.  
 
 ## Authentication
 
-Before users can sign-in to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application, they must be authenticated as valid user in the system. Business Central supports several authentication methods. You configure the authentication method on the server-tiers of Business Central.
+Before users can sign-in to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application, they must be authenticated as valid user in the system. Business Central supports several authentication methods. You configure the authentication method on the server-tiers of Business Central.
 
 For more information, see [Authentication and Credential Types](../administration/users-credential-types.md).
 
@@ -26,7 +26,7 @@ For more information, see [Authentication and Credential Types](../administratio
 
 [!INCLUDE[server](../developer/includes/server.md)] handles communication between clients and databases, controlling authentication, event logging, scheduled tasks, reporting and more. The following articles explain how to improve the security of [!INCLUDE[server](../developer/includes/server.md)] instances.
 
-[Hardening [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Server Security](enhancing-server-instance-security.md)  
+[Hardening [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Server Security](enhancing-server-instance-security.md)  
 
 [Locking Down Server Communication settings](security-lock-down-server-communication.md)  
 
@@ -42,7 +42,7 @@ The following articles explain how to improve the security of connections from t
 
 ## Database Security
 
-The articles in this section explain how to improve database security in [!INCLUDE[prodshort](../developer/includes/prodshort.md)].
+The articles in this section explain how to improve database security in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 The following articles discuss configurations that you can perform on the Business Central Server:
 

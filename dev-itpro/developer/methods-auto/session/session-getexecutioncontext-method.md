@@ -2,11 +2,11 @@
 title: "Session.GetExecutionContext Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -14,6 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Session.GetExecutionContext Method
+> **Version**: _Available from runtime version 1.0._
+
 Gets the current session's execution context.
 
 
@@ -21,16 +23,16 @@ Gets the current session's execution context.
 ```
 ExecutionContext :=   Session.GetExecutionContext()
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 
 
 ## Return Value
-*ExecutionContext*  
-&emsp;Type: [ExecutionContext](../executioncontext/executioncontext-option.md)  
-The current session's execution context.  
+*ExecutionContext*
+&emsp;Type: [ExecutionContext](../executioncontext/executioncontext-option.md)
+The current session's execution context.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

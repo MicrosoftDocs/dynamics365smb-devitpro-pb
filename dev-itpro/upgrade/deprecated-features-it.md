@@ -4,7 +4,7 @@ description: We are constantly streamlining and adjusting our app in-step with m
 author: bholtorf
 
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -14,8 +14,8 @@ ms.author: edupont
 
 ---
 
-# Deprecated Features in the Italian Version of [!INCLUDE [prodlong](../developer/includes/prodlong.md)]
-This topic lists and describes the local functionality for Italy that has been removed from [!INCLUDE[prodshort](../developer/includes/prodshort.md)], made available from a new page or report, or replaced by a new feature.
+# Deprecated Features in the Italian Version of [!INCLUDE [prod_long](../developer/includes/prod_long.md)]
+This topic lists and describes the local functionality for Italy that has been removed from [!INCLUDE[prod_short](../developer/includes/prod_short.md)], made available from a new page or report, or replaced by a new feature.
 
 ## Report Trade with Customers and Vendors in Blocked Countries/Regions
 You must submit a periodic report of transactions with customers and vendors in certain countries/regions that the Italian government has identified in a block list.

@@ -6,7 +6,7 @@ ms.date: 10/01/2020
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: ManuelaHochstrasser
 ---
@@ -26,13 +26,13 @@ Would you like to know what has changed in update 15.2? Below you'll find an ove
 
 
 ## Release Plan
-If you want to get a comprehensive overview of what's new and planned for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online for the entire wave 2 (release from October 2019 through March 2020), find the link to the release plan [here](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-business-central/planned-features) 
+If you want to get a comprehensive overview of what's new and planned for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online for the entire wave 2 (release from October 2019 through March 2020), find the link to the release plan [here](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-business-central/planned-features) 
 
 ## Upgrade to 15.2
-Please note that new customers will automatically get the latest builds of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] (15.2). If you are an existing partner/customer, you will receive an email notification as soon as your environment has been upgraded. 
+Please note that new customers will automatically get the latest builds of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] (15.2). If you are an existing partner/customer, you will receive an email notification as soon as your environment has been upgraded. 
 
 ## Good to know
-Please find an overview of new "How to videos" recently published on Dynamics 365 YouTube channel for the Business users and the Functional Consultants. These videos complement the extensive [MS Learn](/learn/browse/?products=dynamics-business-central) and [Documentation](/dynamics365/business-central/index) content already available for Business Central.  
+Please find an overview of new "How to videos" recently published on Dynamics 365 YouTube channel for the Business users and the Functional Consultants. These videos complement the extensive [MS Learn](/learn/dynamics365/business-central?WT.mc_id=dyn365bc_landingpage-docs) and [Documentation](/dynamics365/business-central/index) content already available for Business Central.  
 
 - [How to set up a customer](https://youtu.be/2ZKLMwzcUFI)  
 - [How to adjust exchange rates](https://youtu.be/TucRBwvBJGY)  

@@ -3,16 +3,18 @@ title: "Interfaces in AL"
 description: "Interfaces in AL are syntactical contracts that can be implemented by a non-abstract method."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 02/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
 # Interfaces in AL
+
+[!INCLUDE[2020_releasewave1](../includes/2020_releasewave1.md)]
 
 An interface in AL is similar to an interface in any other programming language; it is a syntactical contract that can be implemented by a non-abstract method. The interface is used to define which capabilities must be available for an object, while allowing actual implementations to differ, as long as they comply with the defined interface.
 
@@ -25,6 +27,7 @@ The AL compiler checks to ensure that implementations adhere to assigned interfa
 You can declare variables as a given interface to allow passing objects that implement the interface, and then call interface implementations on the passed object in a polymorphic manner.
 
 ## Snippet support
+
 Typing the shortcut `tinterface` will create the basic layout for an interface object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
 
 
@@ -37,12 +40,12 @@ The `MyAddressPage` is a simple page with an action that captures the choice of 
 ```AL
 interface IAddressProvider
 {
-    procedure GetAddress(): Text;
+    procedure GetAddress(): Text
 }
 
 codeunit 50200 CompanyAddressProvider implements IAddressProvider
 {
-    procedure GetAddress(): Text;
+    procedure GetAddress(): Text
 
     begin
         exit('Company address \ Denmark 2800')
@@ -51,7 +54,7 @@ codeunit 50200 CompanyAddressProvider implements IAddressProvider
 
 codeunit 50201 PrivateAddressProvider implements IAddressProvider
 {
-    procedure GetAddress(): Text;
+    procedure GetAddress(): Text
 
     begin
         exit('My Home address \ Denmark 2800')
@@ -78,16 +81,6 @@ page 50200 MyAddressPage
     ApplicationArea = All;
     UsageCategory = Administration;
 
-    layout
-    {
-        area(Content)
-        {
-            group(GroupName)
-            {
-            }
-        }
-    }
-
     actions
     {
         area(Processing)
@@ -106,7 +99,6 @@ page 50200 MyAddressPage
                     Message(iAddressProvider.GetAddress());
 
                 end;
-
             }
 
             action(SendToHome)
@@ -144,12 +136,11 @@ page 50200 MyAddressPage
 
         if sendTo = sendTo::Private then
             iAddressProvider := PrivateImplementer;
-
     end;
 
     var
         sendTo: enum SendTo;
-
+}
 ```
 
 ## See Also

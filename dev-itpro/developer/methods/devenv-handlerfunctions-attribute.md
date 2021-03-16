@@ -6,7 +6,7 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -22,7 +22,7 @@ AL test methods on test codeunits. A test method is a method that has the [Test 
 ## Syntax
 
 ```AL
-[HandlerFunctions('HandlerName1, [HandlerName2, ...]]
+[HandlerFunctions('HandlerName1, [HandlerName2, ...]')]
 ```
 
 ### Arguments  

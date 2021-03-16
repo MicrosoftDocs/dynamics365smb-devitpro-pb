@@ -1,27 +1,28 @@
 ---
-title: "Security Filter Modes"
-ms.custom: na
-ms.date: 10/01/2020
+title: Using Security Filters in Business Central
+description: Learn how you can configure security filters at different levels in your Business Central solution so that you can limit access to data.
+author: jswymer
+
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
-author: jswymer
+ms.date: 10/01/2020
 ---
 # Using Security Filters
 
-For record-level security in [!INCLUDE[prodshort](../developer/includes/prodshort.md)], you use security filters to limit a user's access to data in a table. You create security filters on table data. A security filter describes a set of records in a table that a user has permission to access. You can specify, for example, that a user can only read the records that contain information about a particular customer. This means that the user cannot access the records that contain information about other customers.
+For record-level security in [!INCLUDE[prod_short](../developer/includes/prod_short.md)], you use security filters to limit a user's access to data in a table. You create security filters on table data. A security filter describes a set of records in a table that a user has permission to access. You can specify, for example, that a user can only read the records that contain information about a particular customer. This means that the user cannot access the records that contain information about other customers.
 
 There are two parts to implementing security filters.
 
 - Creating the security filters on the table is typically done by an application administrator.
--  Defining how the application behaves when the filters are applied is done in application code by a developer. 
+- Defining how the application behaves when the filters are applied is done in application code by a developer.  
 
 ## Creating security filters
 
-You create security filter by using the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client. You set security filters on permission sets, which you assign to users. For more information about permission sets, see [Managing Users and Permissions](/dynamics365/business-central/ui-how-users-permissions).  
+You create security filter by using the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client. You set security filters on permission sets, which you assign to users. For more information about permission sets, see [Managing Users and Permissions](/dynamics365/business-central/ui-how-users-permissions).  
   
   
 1.  Open the **Permission Sets** page.  
@@ -53,12 +54,12 @@ When you create security filters, you limit a user's access to data in a table. 
   
 You can resolve potential conflicts with security filters and specify the desired behavior by setting the security filtering mode on Record variables to determine how the security filters are applied.  
 
-Query objects and record objects, including both explicit record variables and implicit records on pages, reports, or XMLports, have a property named [SecurityFiltering](../developer/properties/devenv-securityfiltering-property.md), which describes how security filters are applied. The possible values of the **SecurityFiltering** property are:  
+Query objects and record objects, including both explicit record variables and implicit records on pages, reports, or XMLports, have an option type for methods, [SecurityFilter Option Type](../developer/methods-auto/securityfilter/securityfilter-option.md), which describes how security filters are applied. The possible values of the **SecurityFiltering** property are:  
 
--   **Filtered**  
--   **Validated**  
--   **Ignored**  
--   **Disallowed**  
+- **Filtered**  
+- **Validated**  
+- **Ignored**  
+- **Disallowed**  
 
 ## Filtered
   
@@ -72,11 +73,12 @@ Query objects and record objects, including both explicit record variables and i
 
  An example scenario in which you use the **Validated** value is that one parts purchaser in a warehouse is responsible for only one location and can view and create purchase orders for only that location. However, some purchase orders have lines for multiple locations. Only a parts purchaser who has access to all locations should be allowed to post these purchase orders that have lines for multiple locations. All other purchasers receive an error.  
 
->[!IMPORTANT]
->Before you use the **Validated** value, you should consider the following:
->-  If security filters have been set, then the **Validated** value decreases performance. For more information, see [Performance Impact of Security Filtering Mode](Security-Filters.md#PerformanceImpact).  
->-  The **Validated** value is used mainly for compatibility with the security model in earlier versions of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]. We recommend that you use the other modes when you implement your security model.
->-  The **Validated** value is only supported for security filters that consist of a single field. If you set up more than one field on a security filter, you may get undesired results.
+> [!IMPORTANT]
+> Before you use the **Validated** value, you should consider the following:
+>
+> - If security filters have been set, then the **Validated** value decreases performance. For more information, see [Performance Impact of Security Filtering Mode](Security-Filters.md#PerformanceImpact).
+> - The **Validated** value is used mainly for compatibility with the security model in earlier versions of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. We recommend that you use the other modes when you implement your security model.
+> - The **Validated** value is only supported for security filters that consist of a single field. If you set up more than one field on a security filter, you may get undesired results.
 
 ## Ignored
   
@@ -108,7 +110,7 @@ Query objects and record objects, including both explicit record variables and i
 
 ## Security filters and FlowFields
   
- If you set a security filter on a table that is used in a FlowField calculation, then the calculated value of the FlowField is filtered, based on the security filter and the security filter mode of the record variable for the record in the table. For example, if you set a security filter so that a user can only view sales with a specific salesperson code, and if the security filter mode is **Filtered**, then when the user views a FlowField that calculates total sales, the user can see the total of only those sales that have the specific salesperson code. In earlier versions of [!INCLUDE[prodshort](../developer/includes/prodshort.md)], the security filter mode value was **Validated** and in this example, the user received an error.  
+ If you set a security filter on a table that is used in a FlowField calculation, then the calculated value of the FlowField is filtered, based on the security filter and the security filter mode of the record variable for the record in the table. For example, if you set a security filter so that a user can only view sales with a specific salesperson code, and if the security filter mode is **Filtered**, then when the user views a FlowField that calculates total sales, the user can see the total of only those sales that have the specific salesperson code. In earlier versions of [!INCLUDE[prod_short](../developer/includes/prod_short.md)], the security filter mode value was **Validated** and in this example, the user received an error.  
 
 ## Programming examples
   
@@ -133,5 +135,6 @@ If security filters are not set, then setting the **SecurityFiltering** property
 > We recommend that you change commonly used record variables from the default value of **Validated** to either **Filtered** or **Ignored** to improve performance.  
 
 ## See Also  
- [Record-Level Security](data-security.md)   
- [SecurityFiltering Property](../developer/properties/devenv-SecurityFiltering-Property.md)  
+
+[Record-Level Security](data-security.md)   
+

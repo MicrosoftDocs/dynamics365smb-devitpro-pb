@@ -1,13 +1,12 @@
 ---
 title: "The country codes specified in the 'supportedCountries' property must be valid ISO 3166-1 alpha-2 codes"
-description: Explains AppSourceCop Rule AS0056.
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/25/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---

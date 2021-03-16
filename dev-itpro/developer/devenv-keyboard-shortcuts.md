@@ -3,11 +3,11 @@ title: "Keyboard Shortcuts"
 description: "List of keyboard shortcuts for the new development environment."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/10/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
@@ -25,7 +25,7 @@ The following table provides an overview of some of the shortcut key combination
 |**Alt+A Alt+L**|AL Go! Generates a HelloWorld project|
 |**Ctrl+Shift+B**|Package|
 |**F5**|Publish|  
-|**Ctrl+F5**|Publish without debugging|  
+|**Ctrl+F5**|Build and publish without debugging. **Note:** The keyboard shortcut has a different meaning when debugging.|
 |**F6**|Publish and open Designer|
 |**Ctrl+F2**|Update the compiler used by the service tier(s)|
 
@@ -69,6 +69,7 @@ For topics on debugging in AL, see [Debugging](devenv-debugging.md) and [Snapsho
 |Keyboard Shortcut|Action|
 |-----------------|------|
 |**F5**           |Start debugging session|
+|**Ctrl+F5**|Publish without building. **Note:** The keyboard shortcut has a different meaning when not debugging.|  
 |**Ctrl+Alt+F5**  |Start RAD publishing without debugging|
 |**Alt+F5**      |Start RAD with debugging|
 |**F7**|Start a snapshot debugging session|
