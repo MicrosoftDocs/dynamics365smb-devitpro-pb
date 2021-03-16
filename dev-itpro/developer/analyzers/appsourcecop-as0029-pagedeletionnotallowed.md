@@ -30,7 +30,7 @@ It is not allowed to remove pages which have been published. This will break dep
 
 ## How to fix this diagnostic
 
-Revert the change by adding the page back and marking it as [Obsolete](../properties/devenv-obsoletestate-property.md). Marking a page extension as obsolete is not currently supported, so undoing the deletion is the only available fix.
+Revert the change by adding the page back and marking it as [Obsolete](../properties/devenv-obsoletestate-property.md). Marking a *page extension* as obsolete is not currently supported, which means that undoing the deletion at this point is the only available fix.
 
 ## Examples of errors for dependent extensions
 
