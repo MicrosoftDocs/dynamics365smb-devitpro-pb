@@ -86,10 +86,10 @@ In this step, you create a new version of the releasing extension that doesn't c
 You now create a new extension that contains the customization you want to move from the releasing. In this example, the customizations include **TableB** and a **TableExtC**.
 
 1. Create an AL project for **Ext Y**.
-2. In the app.json file, set up a dependency on the releasing extension **Ext X**.
+2. In the app.json file, set up a dependency on the second version of releasing extension **Ext X**.
 
    ```json
-     "dependencies": [{"id": "77777777-eeee-8888-ffff-999999999999", "name": "releaseextension", "publisher": "Default publisher", "version": "1.0.0.0"}],
+     "dependencies": [{"id": "77777777-eeee-8888-ffff-999999999999", "name": "releaseextension", "publisher": "Default publisher", "version": "1.0.0.1"}],
    ```
   
   For purposes of the example, the ID is `77777777-eeee-8888-ffff-999999999999`. The value for your extension will be different.
