@@ -29,6 +29,11 @@ For a report to be extended, the `Extensible` property must be set to `true`. Th
 > [!NOTE]  
 > Extension objects can have a name with a maximum length of 30 characters.
 
+## Report extension layout
+
+The layout in a report extension will not automatically be used when the report extension is deployed. In [!INCLUDE [prod_short](../includes/prod_short.md)], use the **Report Layout Selection** page to choose to use the new layout from the report extension for the report in question by choosing it from the **Custom Layout Description** drop-down box.
+
+
 ## Snippet support
 
 Typing the shortcut `treportext` will create the basic layout for a report extension object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
