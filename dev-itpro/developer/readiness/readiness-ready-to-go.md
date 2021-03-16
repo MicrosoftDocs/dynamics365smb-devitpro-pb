@@ -71,7 +71,11 @@ Join the Business Central Office Hours to learn more and connect with the Busine
 |Feb 9, 2021 | Power Platform, Power Apps, and Dataverse (formerly known as CDS) |
 |Feb 23, 2021 | Performance Toolkit and Telemetry; How to deploy for performance |
 |Mar 9, 2021 | Integrating with Microsoft Teams |
-|Mar 23, 2021 | Business Central apps in AppSource | 
+|Mar 23, 2021 | Business Central apps in AppSource
+|April 7, 2021 | Rolling out 2021 Release Wave 1 |
+|April 20, 2021 | Environments in Business Central Online |
+|May 4, 2021 | Report Extensibility |
+|May 20, 2021 | Snapshot Debugging (in production and troubleshooting in general) | 
  
 **Business Central Localization Apps Office Hours Calls**  
 Join the Business Central Localization Apps Office Hours to learn more about how to deliver localization apps for Business Central online and connect with the Microsoft subject matter experts. The calls typically take place on the first Thursday of every month. There are two calls for each date to accommodate different time zones. First call is from 09.00am-10.00am CET and the second call is from 17.00pm-18.00pm CET. Register for the live calls here: [aka.ms/BCLocOfficeHours](https://aka.ms/BCLocOfficeHours).
