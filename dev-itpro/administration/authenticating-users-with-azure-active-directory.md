@@ -98,7 +98,7 @@ In this task, you register your [!INCLUDE[prod_short](../developer/includes/prod
 
 1. Sign in to [Azure portal](https://portal.azure.com) and open the Active Directory tenant.
 
-2. To register the application, follow the guidelines at [Register your application with your Azure Active Directory tenant](/azure/active-directory/active-directory-app-registration).
+2. To register the application, follow the guidelines at [Registering Business Central On-Premises in Azure AD for Integrating with Other Services](/dynamics365/business-central/dev-itpro/administration/register-app-azure).
 
     When you add an application to an Azure AD tenant, you specify the following information. The configuration is slightly different in for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] single-tenant and multitenant deployment.
 
@@ -107,7 +107,7 @@ In this task, you register your [!INCLUDE[prod_short](../developer/includes/prod
     | Setting | Description |
     |--|--|
     |Name|Specifies the name of your application as it will display to your users, such as **Business Central App by My Solutions**.|
-    |Supported account types|Specifies the accounts that you would like your application to support. You can choose either **Accounts in this organizational directory only (Single tenant)** or **Accounts in any organizational directory (Any Azure AD directory - Multitenant)**. Otherwise, select **Help me choose** link on the **Register an Application** page in the portal.|
+    |Supported account types|Select Accounts in any organizational directory (Any Azure AD directory - Multitenant)|
     |Redirect URI|Specifies the type of application that you're registering and the redirect URI (or reply URL) for your application. Set the type to **Web**, and in the redirect URL box, enter URL for signing in to the [!INCLUDE[webclient](../developer/includes/webclient.md)], for example `https://localhost:443/BC170/SignIn`.<br /><br />The URI has the format `https://<domain or computer name>/<webserver-instance>/SignIn`, such as `https://cronusinternationltd.onmicrosoft.com/BC170/SignIn` or `https://MyBcWebServer/BC170/Signin`. <br /> <br />**Important** The portion of the reply URL after the domain name (in this case `BC170/SignIn`) is case-sensitive, so make sure that the web server instance name matches the case of the web server instance name as it is defined on IIS for your [!INCLUDE[webserver](../developer/includes/webserver.md)] installation.|
 
     # [Multitenant-tenant](#tab/multitenant)
