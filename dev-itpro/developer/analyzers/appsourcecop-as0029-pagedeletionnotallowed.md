@@ -2,7 +2,7 @@
 title: "Pages and PageExtensions that have been published must not be deleted, since dependent extensions may break"
 ms.author: solsen
 ms.custom: na
-ms.date: 03/16/2020
+ms.date: 03/16/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,7 +23,7 @@ Pages and PageExtensions that have been published must not be deleted.
 
 ## Remarks
 
-It is not allowed to remove pages or page extensions which have been published. This will break dependent extensions which:
+It is not allowed to remove pages which have been published. This will break dependent extensions which:
 - are referencing this page from code,
 - are extending the page using a page extension,
 - are customizing the page using page customizations.
