@@ -517,6 +517,7 @@ Publish the extensions in the following order:
 
     The Microsoft extensions are in the **Applications** folder of installation media (DVD).
 
+<!-- At this point, you'll see duplicate tables in SQL Server for the each table defiend in the tables-only extension. The duplicate tables will be owned by the system and base apps-->
 ## Task 12: Synchronize final extensions
 
 Synchronize the newly published extensions using the Sync-NAVApp cmdlet like you did in previous steps.
@@ -536,6 +537,8 @@ Synchronize the extensions in the following order:
 
 > [!IMPORTANT]
 > Synchronize extensions in the order of dependencies. The migration extension must be synchronized last. This step will change table ownership to the system and base application.
+
+<!-- At this point, you'll see duplicate tables in SQL Server for the each table defiend in the tables-only extension. The duplicate tables will be owned by the system and base apps. But the tables are empty -->
 
 ## Task 13: Upgrade empty table migration extension
 
