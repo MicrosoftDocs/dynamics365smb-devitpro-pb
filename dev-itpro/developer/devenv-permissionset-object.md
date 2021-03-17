@@ -14,6 +14,8 @@ ms.author: solsen
 
 # Permission Set Object
 
+[!INCLUDE [2021_releasewave1](../includes/2021_releasewave1.md)]
+
 The permission set object in [!INCLUDE[prod_short](includes/prod_short.md)] describes permissions on objects. Permission sets are building blocks used to compose assignable permission sets and [entitlements](devenv-entitlement-object.md). Assignable permission sets are permissions that an admin can assign to users in [!INCLUDE[prod_short](includes/prod_short.md)], using the **Permission Sets** page. An entitlement is a collection of permission sets that constitute a set of meaningful permissions for a user.
 
 Some permission sets can be non-assignable, meaning that they are not discoverable and assignable in the UI in [!INCLUDE[prod_short](includes/prod_short.md)], instead they can be used as building blocks to compose functional assignable permission sets.

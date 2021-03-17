@@ -14,6 +14,8 @@ ms.author: solsen
 
 # Permission Set Extension Object
 
+[!INCLUDE [2021_releasewave1](../includes/2021_releasewave1.md)]
+
 The permission set extension object in [!INCLUDE[prod_short](includes/prod_short.md)] adds permissions to an existing permission set defined in AL. A permission set extension object *cannot remove* permissions from an existing permission set, it can only *add* permissions. If you, for example, add an extension to [!INCLUDE[prod_short](includes/prod_short.md)], you can use permission set extension objects to grant permissions to the objects in your extension. This means that the admin of [!INCLUDE[prod_short](includes/prod_short.md)] does not have to assign additional permission sets to the users, because that automatically happens when the extension is installed, and the permissions go away if the extension is uninstalled.
 
 For information about which permissions can be assigned to objects, see [Permissions on Database Objects](devenv-permissions-on-database-objects.md).
