@@ -90,10 +90,12 @@ reportextension 50110 MyExtension extends "Customer - Top 10 List"
 
     trigger OnPreReport()
     begin
+        // add code to run before the report is run
     end;
 
     trigger OnPostReport()
     begin
+        // add code to run after the report is run
     end;
 }
 
