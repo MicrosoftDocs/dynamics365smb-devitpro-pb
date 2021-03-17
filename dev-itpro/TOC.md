@@ -2442,6 +2442,7 @@
 ### Business Central 2021 Release Wave 1
 #### [Overview](upgrade/upgrade-overview-v18.md)
 #### [Upgrade Compatibility Matrix](upgrade/upgrade-v14-v15-compatibility.md)
+#### [Upgrading Permission Sets](upgrade/upgrade-permissions.md)
 #### Application and Data
 ##### [From version 14 Unmodified C/AL Application](upgrade/upgrade-unmodified-application-v14-v18.md)
 ##### [From version 14 Customized C/AL Application](upgrade/upgrade-to-microsoft-base-app-v18.md)
@@ -2455,7 +2456,6 @@
 #### Technical Upgrade
 ##### [From Version 14](upgrade/upgrade-technical-upgrade-v14-v18.md)
 ##### [From Version 15, 16, or 17](upgrade/upgrade-technical-upgrade-v18.md)
-#### [Upgrading Permission Sets](upgrade/upgrade-permissions.md)
 #### [Installing a Minor Update](upgrade/upgrading-cumulative-update-v18.md)
 ### [Some Known Issues](upgrade/known-issues.md)
 ## [Migrate Legacy Help to the Business Central Format](upgrade/migrate-help.md)
