@@ -3,7 +3,7 @@ title: "Deprecated Features in W1"
 description: describes the features that have been moved, removed, or replaced in the W1 version 
 author: bholtorf
 ms.custom: na
-ms.date: 01/12/2021
+ms.date: 03/17/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
