@@ -47,7 +47,7 @@ entitlement BC_Role_Delegated
 
 ```
 
-Other examples of entitlements are:
+An example of an entitlement where `Type` is `PerUserServicePlan`:
 
 ```al
 entitlement BC_PerUserServicePlan
@@ -59,9 +59,6 @@ entitlement BC_PerUserServicePlan
    
 }
 ```
-
-
-
 
 ## See Also
 
