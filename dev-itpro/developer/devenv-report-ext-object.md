@@ -33,7 +33,6 @@ For a report to be extended, the `Extensible` property must be set to `true`. Th
 
 The layout in a report extension will not automatically be used when the report extension is deployed. To use the report extension layout, in [!INCLUDE [prod_short](../includes/prod_short.md)], go to the **Report Layout Selection** page to choose to use the new layout for the report in question by choosing it from the **Custom Layout Description** drop-down box.
 
-
 ## Snippet support
 
 Typing the shortcut `treportext` will create the basic layout for a report extension object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
@@ -46,11 +45,9 @@ The following example illustrates a simplified table extension which adds a new 
 
 > [!NOTE]  
 > Inside the `dataset` element, syntax for modifying data is not supported, meaning that you cannot add new triggers to existing dataitems, nor can you modify existing dataitem or column properties.
-
-> [!NOTE]  
+>
 > Inside the `requestpage` element, you cannot modify any properties.
-
-> [!NOTE]  
+>
 > Using the `OnInitReport` trigger is not supported for report extensions.
 
 ```AL
