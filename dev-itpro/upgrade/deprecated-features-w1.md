@@ -28,6 +28,15 @@ The next sections give a brief description of the deprecated features, state wha
 
 ## Changes in 2022 release wave 1
 
+### .NET add-ins not using .NET Standard (Removal)
+
+The following feature will be **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 1.
+
+|Moved, Removed, or Replaced? |Why?|
+|---------|---------|
+|Replaced| .NET Framework has been superseded by .NET Standard. .NET add-ins compiled with .NET Framework will not work in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1. |
+
+
 ### <a name="accesskeys"></a>Web Service Access Keys (Basic Auth) for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Online (SaaS)
 
 The following feature will be **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 1.
@@ -58,6 +67,15 @@ The following feature will be **Removed** with [!INCLUDE[prod_short](../develope
 
 
 ## Changes in 2021 release wave 1
+
+### .NET add-ins not using .NET Standard (Warning)
+
+In [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1, a warning will be shown if you include .NET add-ins that are compiled with .NET Framework and not with .NET Standard. The capability of using .NET add-ins compiled with .NET Franework will be removed in a later release.
+
+|Moved, Removed, or Replaced? |Why?|
+|---------|---------|
+|Replaced | .NET Framework has been superseded by .NET Standard. .NET add-ins compiled with .NET Framework will be deprecated as of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1, but the feature won't be removed in this release. It's recommended that .NET add-ins are migrated to .NET Standard as soon as possible.|
+
 
 ### Expose UI pages as SOAP endpoints (Warning)
 
