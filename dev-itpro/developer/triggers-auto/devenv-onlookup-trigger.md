@@ -16,7 +16,7 @@ author: SusanneWindfeldPedersen
 # OnLookup Trigger
 > **Version**: _Available or changed with runtime version 3.0._
 
-
+Runs in place of the normal lookup features for the current page.
 
 ## Syntax
 
@@ -28,7 +28,7 @@ author: SusanneWindfeldPedersen
 
 *Ok*  
     Type: [Boolean](../../methods-auto/Boolean/Boolean-data-type.md)  
-**true** to lookup a field, otherwise, **false**.
+**true** if the lookup was carried out, otherwise, **false**.
 
 ## Applies To
 - ControlExtension

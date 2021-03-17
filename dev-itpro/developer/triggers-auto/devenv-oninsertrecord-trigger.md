@@ -28,7 +28,7 @@ Runs before a new record is inserted into the table.
 
 *Ok*  
     Type: [Boolean](../../methods-auto/Boolean/Boolean-data-type.md)  
-Determines whether to insert a new record. **true** if the record is inserted, otherwise **false**. The return value is checked after each call.
+**true** if the record was inserted, otherwise **false**. The return value is checked after each call. The default value is **true**.
 
 ## Applies To
 - PageExtension

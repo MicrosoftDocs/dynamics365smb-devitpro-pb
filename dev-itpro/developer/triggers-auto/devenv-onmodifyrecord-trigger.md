@@ -25,7 +25,7 @@ Runs before a record is modified in the table.
 
 *Ok*  
     Type: [Boolean](../../methods-auto/Boolean/Boolean-data-type.md)  
-Indicates whether a record should be modified. **true** if the record is modified, otherwise **false**. The return value is checked after each call.
+**true** if the record was modified, otherwise **false**. The return value is checked after each call. The default value is **true**.
 
 ## Applies To
 - PageExtension

@@ -25,7 +25,7 @@ Runs before a record is deleted from the table.
 
 *Ok*  
     Type: [Boolean](../../methods-auto/Boolean/Boolean-data-type.md)  
-**true** if the record is deleted, otherwise, **false**. The return value is checked after each call.
+**true** if the record was deleted, otherwise, **false**. The return value is checked after each call. The default value is **true**.
 
 ## Applies To
 - PageExtension

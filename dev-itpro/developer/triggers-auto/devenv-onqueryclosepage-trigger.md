@@ -28,7 +28,7 @@ Runs as a page closes and before the OnClosePage trigger executes.
 
 *Ok*  
     Type: [Boolean](../../methods-auto/Boolean/Boolean-data-type.md)  
-**true** to close the page, otherwise **false**. This value is checked after each call.
+**true** if page was closed, otherwise **false**. This value is checked after each call. The default value is **true**.
 
 ## Applies To
 - PageExtension

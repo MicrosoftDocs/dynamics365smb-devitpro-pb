@@ -28,7 +28,7 @@ Runs before a test of a test codeunit is run.
 
 *Ok*  
     Type: [Boolean](../../methods-auto/Boolean/Boolean-data-type.md)  
-**true** to run the test, otherwise, **false**.
+**true** if the test was run, otherwise, **false**. The default value is **true**.
 
 ## Applies To
 - Codeunit
