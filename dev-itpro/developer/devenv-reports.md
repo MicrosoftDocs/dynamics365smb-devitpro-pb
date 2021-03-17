@@ -25,7 +25,7 @@ Reports can also be used to process data without printing or displaying content.
 
 ## Creating reports
 
-Creating a report involves two primary tasks. First, you create a report object and design the dataset. The dataset determines the data that is extracted or calculated from the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] database tables that can be used in a report. After the dataset has been designed, you design the visual layout of the report. There are two types of report layouts that you can create: layouts using report definition language (RDL) and Word report layouts. Another option is to extend the functionality of an existing report with a [report extension object](devenv-report-ext-object.md) by adding columns to the existing report dataset, adding new dataitems, adding to the request page, or adding a new layout.
+Creating a report involves two primary tasks. First, you create a report object and design the dataset. The dataset determines the data that is extracted or calculated from the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] database tables that can be used in a report. After the dataset has been designed, you design the visual layout of the report. There are two types of report layouts that you can create: layouts using report definition language (RDL) and Word report layouts. Another option is to extend the functionality of an existing report with a [Report Extension Object](devenv-report-ext-object.md) by adding columns to the existing report dataset, adding new dataitems, adding to the request page, or adding a new layout.
 
 ## Getting started
 

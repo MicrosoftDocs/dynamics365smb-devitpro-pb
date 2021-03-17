@@ -26,7 +26,8 @@ end;
  
 ## Applies to
 
-- Reports  
+- Report objects
+- Report extension objects
   
 ## Remarks  
 
