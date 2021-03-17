@@ -6,7 +6,7 @@ ms.custom: na
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
-ms.date: 02/06/2021
+ms.date: 03/01/2021
 ---
 
 # Dynamics 365 Business Central On-Premises 2020 Release Wave 2 Updates
@@ -23,12 +23,15 @@ You should always install the latest update.
 
 The following table lists the updates that have been released for 2020 release wave 2 of Business Central (version 17). The updates include hotfixes that apply to all countries and hotfixes that apply to specific local versions. Check the relevant Support article for a description.
 
-|Knowledge Base ID                                           |Title                |Release date  |Build No. |Local versions included |
-|------------------------------------------------------------|---------------------|--------------|----------|------------------------|
-|[5000696](https://support.microsoft.com/help/5000696)|Update 17.4 |February 2021|Application Build 17.4.21531</br>Platform Build 17.0.21516|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
-|[4595152](https://support.microsoft.com/help/4595152)|Update 17.3 |January 2021|Application Build 17.3.20605</br>Platform Build 17.0.20517|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
-|[4583554](https://support.microsoft.com/help/4583554)|Update 17.2 |December 2020|Application Build 17.2.19367.19396</br>Platform Build 17.0.19353.19391|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
-|[4583515](https://support.microsoft.com/help/4583515)|Update 17.1 |November 2020|Application Build 17.1.18256.18792</br>Platform Build 17.0.18204.18738|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
+Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK
+
+|Knowledge Base ID                                           |Title                |Release date  |Build No. |
+|------------------------------------------------------------|---------------------|--------------|----------|
+|[5001235](https://support.microsoft.com/help/5001235)|Update 17.5 |March 2021|Application Build 17.5.22499.22546</br>Platform Build 17.0.22463.22540|
+|[5000696](https://support.microsoft.com/help/5000696)|Update 17.4 |February 2021|Application Build 17.4.21531</br>Platform Build 17.0.21516|
+|[4595152](https://support.microsoft.com/help/4595152)|Update 17.3 |January 2021|Application Build 17.3.20605</br>Platform Build 17.0.20517|
+|[4583554](https://support.microsoft.com/help/4583554)|Update 17.2 |December 2020|Application Build 17.2.19367.19396</br>Platform Build 17.0.19353.19391|
+|[4583515](https://support.microsoft.com/help/4583515)|Update 17.1 |November 2020|Application Build 17.1.18256.18792</br>Platform Build 17.0.18204.18738|
 
 ## See Also
 

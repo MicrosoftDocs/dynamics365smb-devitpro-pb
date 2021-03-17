@@ -2,7 +2,7 @@
 title: "ToolTipML Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/24/2020
+ms.date: 03/12/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -54,7 +54,7 @@ The ToolTipML property value has the following format.
 <Language ID>=<tooltip>  
 ```  
 
-<Language ID> is a Windows standard three-letter language ID and <caption> is the caption text for this language. Semicolons are used to separate entries.  
+`<Language ID>` is a Windows standard three-letter language ID and `<caption>` is the caption text for this language. Semicolons are used to separate entries.  
 
 In the following example, values are set for Danish (DAN) and English (ENG).  
 
