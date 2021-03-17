@@ -43,14 +43,16 @@ When developing an app, entitlements and permission sets are handled as objects 
 
 ## Earlier versions of Business Central
 
-In releases of [!INCLUDE [prod_short](includes/prod_short.md)] prior to 2021 release wave 1 (v.18.0), System and Extension permissions and entitlements were defined as data in the application database: 
+In releases of [!INCLUDE [prod_short](includes/prod_short.md)] prior to 2021 release wave 1 (v18.0), System and Extension permissions and entitlements were defined as data in the application database: 
 
-Entitlements: 
+Entitlements tables:
+
 - Entitlement
 - Entitlement Set
 - Membership Entitlement
 
-Permissions:
+Permissions tables:
+
 - Permission Set
 - Permission
 
