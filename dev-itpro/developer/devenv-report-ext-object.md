@@ -48,7 +48,7 @@ The following example illustrates a simplified table extension which adds a new 
 >
 > Inside the `requestpage` element, you cannot modify any properties.
 >
-> Using the `OnInitReport` trigger is not supported for report extensions.
+> Using the `OnInitReport` trigger is not supported for report extensions. The `OnPreReport` and `OnPostReport` triggers are run after the original report's equivalent triggers.
 
 ```AL
 tableextension 50110 CustomerTableExt extends Customer
