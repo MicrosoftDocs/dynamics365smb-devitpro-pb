@@ -528,7 +528,6 @@ codeunit 50106 RewardsUpgradeCode
     // "OnUpgradePerCompany" trigger is used to perform the actual upgrade.
     trigger OnUpgradePerCompany();
     var
-        InstallCode : Codeunit RewardsInstallCode;
         Reward : Record Reward;
 
         // "ModuleInfo" is the current executing module. 
