@@ -36,7 +36,7 @@ end;
 
 ## Remarks
 
- There are three lookup options:  
+There are three lookup options:  
 
 - Default Lookup - The lookup into the table is performed without applying filters or other special parameters.  
 
@@ -44,18 +44,22 @@ end;
 
 - Text box Lookup - You can use this trigger to define a lookup based on the value of a text box. This value will be used in place of the default lookup or the field lookup.  
 
- For example, for the Customer Code field, a lookup into the Customer table is provided. If you want a lookup into another table or if you want to place a filter on the table before displaying the lookup, use this trigger.  
+For example, for the Customer Code field, a lookup into the Customer table is provided. If you want a lookup into another table or if you want to place a filter on the table before displaying the lookup, use this trigger.  
 
- If an error occurs in the trigger code, the lookup is canceled.  
+If an error occurs in the trigger code, the lookup is canceled.  
 
- You can use this trigger to write to the database.  
+You can use this trigger to write to the database.  
+
+When the user has selected a record in the lookup, the [OnAfterLookup Trigger](devenv-onafterlookup-trigger.md) runs. This trigger applies to page fields that have a `TableRelation` defined, looking up values in another table.
+
 
 > [!NOTE]  
-> **OnLookup** is also a field trigger at the table level. The flow is different for this trigger. When a lookup is requested, the page field's OnLookup trigger is executed if it is defined in the field lookup or system default. If no control lookup trigger is defined, the [OnLookup (Fields) Trigger](devenv-onlookup-fields-trigger.md) \(if defined\) replaces the system default lookup .  
+> **OnLookup** is also a field trigger at the table level. The flow is different for this trigger. When a lookup is requested, the page field's OnLookup trigger is executed if it is defined in the field lookup or system default. If no control lookup trigger is defined, the [OnLookup (Fields) Trigger](devenv-onlookup-fields-trigger.md) \(if defined\) replaces the system default lookup.  
 
 ## See Also
 
-[Onlookup (Fields) Trigger](devenv-onlookup-fields-trigger.md)  
+[OnLookup (Fields) Trigger](devenv-onlookup-fields-trigger.md)  
+[OnAfterLookup Trigger](devenv-onafterlookup-trigger.md)  
 [Page and Action Triggers](devenv-page-and-action-triggers.md)  
 [Page Properties](../properties/devenv-page-properties.md)  
 [Triggers](devenv-triggers.md)  
