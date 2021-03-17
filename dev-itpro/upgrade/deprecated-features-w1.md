@@ -47,6 +47,16 @@ The following feature will be **Removed** with [!INCLUDE[prod_short](../develope
 
 ## Changes in 2021 release wave 2
 
+### StartSession calls in upgrade/install context will fail
+
+The following feature will be **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 2.
+
+
+|Moved, Removed, or Replaced? |	Why?|
+|-----------------------------|-----|
+|Removed | A new session created with AL StartSession has no link to the session that created it. This implementation can cause problems, for example, in cases where the creating session is an upgrade codeunit. If an error occurs later in the process, which requires a rollback, the server can't roll back any transactions done in the session created by the AL StartSession. This condition can leave data in the system in a bad state. Starting with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 2, any StartSession call in upgrade/install context will fail immediately. |
+
+
 ### Standard APIs, Beta version
 
 The following feature will be **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 2.
