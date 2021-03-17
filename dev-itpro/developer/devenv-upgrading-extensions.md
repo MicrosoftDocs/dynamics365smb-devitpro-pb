@@ -122,7 +122,7 @@ codeunit 50100 MyUpgradeCodeunit
     begin
         if NavApp.GetCurrentModuleInfo(myInfo) then
             if myInfo.DataVersion = Version.Create(1, 0, 0, 1) then
-                error('The upgrade isn''t compatible');
+                error('The upgrade is not compatible');
     end;
 
     trigger OnUpgradePerDatabase()
@@ -315,7 +315,7 @@ begin
         // Check whether code is triggered by the extension
         if Session.GetCurrentModuleExecutionContext() <> ExecutionContext::Normal then
             // Something is wrong, so you want to abort here because the code doesn't raise the EnqueuePrintingCheck trigger
-            Error('Check can''t be printed')
+            Error('Check can not be printed')
         else begin
             // Other code is invoking the upgrade, so use Job queue or similar mechanism to roll back if upgrade fails
             EnqueuePrintingCheck(PurchInvHeader);
