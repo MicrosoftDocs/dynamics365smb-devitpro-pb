@@ -41,6 +41,9 @@ end;
 
 This trigger is introduced with runtime 7.0 of AL to address issues that arise when in [!INCLUDE [prod_short](../../includes/prod_short.md)], for example, more items have the same Description. With former solutions, the lookup mechanism would find the selected record based on the filtering in the lookup dialog. This made it impossible to predict which record the user had selected.
 
+> [!NOTE]  
+> If you have defined an [OnLookup Trigger](devenv-onlookup-page-fields-trigger.md), the [OnAfterLookup Trigger](devenv-onafterlookup-trigger.md) will not be fired.
+
 ## Example
 
 The following is a simplified example of how the `OnAfterLookup` trigger can be used. The `No.` and `Description` fields point to fields in the `Item` table and should be updated at the same time, even if only one of the fields is available in a dropdown; the corresponding field must also be set. `No.` is the primary key and unique, but there could be more records in the `Item` table with the same `Description`. The `OnAfterLookup` trigger looks up the chosen record and returns it in a RecordRef.

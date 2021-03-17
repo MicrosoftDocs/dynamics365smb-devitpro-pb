@@ -50,7 +50,8 @@ If an error occurs in the trigger code, the lookup is canceled.
 
 You can use this trigger to write to the database.  
 
-When the user has selected a record in the lookup, the [OnAfterLookup Trigger](devenv-onafterlookup-trigger.md) runs. This trigger applies to page fields that have a `TableRelation` defined, looking up values in another table.
+> [!NOTE]  
+> If you have defined an `OnLookup` trigger, the [OnAfterLookup Trigger](devenv-onafterlookup-trigger.md) will not be fired.
 
 
 > [!NOTE]  
