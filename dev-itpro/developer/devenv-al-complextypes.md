@@ -42,7 +42,7 @@ begin
 end;
 ```
  
-It is also possible to use a named return value. Internally, the exit-statement causes an assignment to an allocated return value. The assignment will have a small performance cost based on the type. Since the record type is treated as a value-type it is better.  
+It is also possible to use a named return value. Internally, the exit-statement as seen in the example above causes an assignment to an allocated return value. The assignment will have a small performance cost based on the type. Since the record type is treated as a value-type it is better.  
 
 ```al
 procedure GetCustomerByName(Name: Text) Customer: record Customer; 
@@ -57,7 +57,7 @@ end;
 
 ```
  
-The method `GetCustomerByName()` returns a Customer record. It can be used as you would expect: 
+The method `GetCustomerByName()` returns a Customer record. It can be used as you would expect in the following example.
 
 ```al
 // Get the first customer with name starting with 'spo' 
@@ -65,7 +65,7 @@ The method `GetCustomerByName()` returns a Customer record. It can be used as yo
 Customer := GetCustomerByName('spo'); 
 ```
 
-The returned value does not have to be used in an assignment statement. It can be used as part of an expression like: 
+The returned value does not have to be used in an assignment statement. It can be used as part of an expression like in the following example.
 
 ```al
 // Use the returned value as an expression. 
@@ -73,7 +73,7 @@ The returned value does not have to be used in an assignment statement. It can b
 DoSomethingWithSales(GetCustomerByName('spo').GetSalesLCY()); 
 ```
  
-This is not only for user-defined types like records, codeunits, etc., but also for built-in types. For example, when using the [HttpClient Data Type](methods-auto/httpclient/httpclient-data-type.md), it is possible to write code like illustrated below.
+This does not only work for user-defined types like records, codeunits, etc., but also for built-in types. For example, when using the [HttpClient Data Type](methods-auto/httpclient/httpclient-data-type.md), it is possible to write code as illustrated below.
 
 ```al
 
