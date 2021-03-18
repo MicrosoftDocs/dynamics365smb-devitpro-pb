@@ -194,7 +194,7 @@ After restoring an environment, you should inspect and adjust data to prepare it
 - Put all job queues in the restored environment to on hold immediately after restore.
 - If needed, you can upload the per-tenant extensions targeting the next version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] again.
 
-The original environment will remain available and isn't affected by the restore operation. You can then get back to the original environment if you need to look up data. Or maybe you'll have to migrate some data to the restored environment. You can, for example, migrate data by using [!INCLUDE[prod_short](../developer/includes/prod_short.md)] RapidStart services. For more information, see [Migrate Customer Data](https://docs.microsoft.com/dynamics365/business-central/admin-migrate-customer-data).
+The original environment will remain available and isn't affected by the restore operation. You can then get back to the original environment if you need to look up data. Or maybe you'll have to migrate some data to the restored environment. You can, for example, migrate data by using [!INCLUDE[prod_short](../developer/includes/prod_short.md)] RapidStart services. For more information, see [Migrate Customer Data](/dynamics365/business-central/admin-migrate-customer-data).
 
 > [!IMPORTANT]
 > You can restore your production environment into a new production environment even if doing so results in exceeding your number of environments or database capacity quotas. You can however only exceed this quota by one extra production environment, regardless of how many production environments you have available for your subscription. This capability is provided as an exception, to ensure that you can always restore your production environment in critical situations. You must return within your quota within 30 days following the restore by either removing the original production environment or by purchasing an additional production environment. Before removing the environment, we recommend you [export the environment to an Azure storage container](tenant-admin-center-database-export.md) in case you need to access some data at a later point. This exception isn't available for restoring from and to sandbox environments.
@@ -318,4 +318,4 @@ Use this log to see which operations were created and when. You can also access 
 [Managing Apps](tenant-admin-center-manage-apps.md)  
 [Updating Environments](tenant-admin-center-update-management.md)  
 [Managing Tenant Notifications](tenant-admin-center-notifications.md)  
-[Introduction to automation APIs](itpro-introduction-to-automation-apis.md)  
+[Introduction to automation APIs](itpro-introduction-to-automation-apis.md)

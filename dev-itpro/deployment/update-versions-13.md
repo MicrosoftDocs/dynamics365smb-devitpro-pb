@@ -13,7 +13,7 @@ ms.date: 10/01/2020
 
 # Dynamics 365 Business Central On-Premises October'18 Updates
 
-This article lists cumulative updates released for the October'18 release of Microsoft Dynamics 365 Business Central on-premises. A cumulative update is a cumulative set of files that includes hotfixes and regulatory features for Business Central. If you have customers using Business Central October'18 on-premises, we recommend applying the latest cumulative update. For customers using Business Central online, check the [Business Central Admin center](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center) to see whether the tenants have been updated.  
+This article lists cumulative updates released for the October'18 release of Microsoft Dynamics 365 Business Central on-premises. A cumulative update is a cumulative set of files that includes hotfixes and regulatory features for Business Central. If you have customers using Business Central October'18 on-premises, we recommend applying the latest cumulative update. For customers using Business Central online, check the [Business Central Admin center](../administration/tenant-admin-center.md) to see whether the tenants have been updated.  
 
 Each cumulative update is intended mainly for solutions that are experiencing the problems described in the Support articles linked to below. However, you're advised to always keep your solution updated with the latest cumulative update. Support professionals in Customer Support Services are ready to help you if:
 
@@ -62,4 +62,4 @@ The following table lists the cumulative updates that have been released for the
 [Countries and Translations Supported](../compliance/apptest-countries-and-translations.md)  
 [Welcome to Dynamics 365 Business Central](/dynamics365/business-central/index)  
 [Microsoft Dynamics 365 Business Central on the Dynamics 365 blog](https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/)  
-[Dynamics NAV developer and ITpro content](/dynamics-nav/index)  
+[Dynamics NAV developer and ITpro content](/dynamics-nav/index)
