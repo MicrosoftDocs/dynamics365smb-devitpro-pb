@@ -27,7 +27,7 @@ This article provides an overview of the technical upgrade process for Business 
 
 |Step|More info| Done |
 |----|-----------|--|
-|Backup the database(s).|[See...](https://go.microsoft.com/fwlink/?LinkID=296465)||
+|Backup the database(s).|[See...](/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server)||
 |(Single-tenant mode only) Uninstall all extensions. (Multitenant mode) Unintsall all V1 extensions.|[See...](/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp)||
 |(Optional) Unpublish unwanted extension versions .|[See...](/powershell/module/microsoft.dynamics.nav.apps.management/unpublish-navapp)||
 |Ensure all objects are compiled, unlocked, and tables are synchronized.|[See...](../cside/cside-compiling-objects.md)||
