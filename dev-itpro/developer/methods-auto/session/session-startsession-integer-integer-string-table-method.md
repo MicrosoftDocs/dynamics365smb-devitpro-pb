@@ -53,5 +53,5 @@ A record that is passed to the OnRun trigger of the codeunit that runs when the 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [Session Data Type](session-data-type.md)
-[Getting Started with AL](../devenv-get-started.md)
+[Getting Started with AL](../../devenv-get-started.md)
 [Developing Extensions](../devenv-dev-overview.md)

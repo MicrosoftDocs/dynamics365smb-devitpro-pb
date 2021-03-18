@@ -40,5 +40,5 @@ Exclude sensitive data, such as primary key values, from the error message.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [System Data Type](system-data-type.md)
-[Getting Started with AL](../devenv-get-started.md)
+[Getting Started with AL](../../devenv-get-started.md)
 [Developing Extensions](../devenv-dev-overview.md)

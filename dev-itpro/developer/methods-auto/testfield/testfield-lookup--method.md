@@ -33,5 +33,5 @@ An instance of the [TestField](testfield-data-type.md) data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [TestField Data Type](testfield-data-type.md)
-[Getting Started with AL](../devenv-get-started.md)
+[Getting Started with AL](../../devenv-get-started.md)
 [Developing Extensions](../devenv-dev-overview.md)
