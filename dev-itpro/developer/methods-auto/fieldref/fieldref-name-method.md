@@ -41,7 +41,7 @@ An instance of the [FieldRef](fieldref-data-type.md) data type.
 
 ## Remarks
 
-The [Caption Method \(FieldRef, TestPage Field\)](../../methods/devenv-caption-method-fieldref-testpage-field.md) method retrieves the [Caption Property](../../properties/devenv-caption-property.md) of a field. To enable your application for multilanguage functionality, you must use the [FieldCaption Method \(Record\)](../../methods-auto/record/record-fieldcaption-method.md) instead.  
+The [Caption Method \(FieldRef, TestPage Field\)](../library.md) method retrieves the [Caption Property](../../properties/devenv-caption-property.md) of a field. To enable your application for multilanguage functionality, you must use the [FieldCaption Method \(Record\)](../../methods-auto/record/record-fieldcaption-method.md) instead.  
 
 This method is similar to the [FieldName Method \(Record\)](../../methods-auto/record/record-fieldname-method.md).  
 

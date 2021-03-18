@@ -41,7 +41,7 @@ An instance of the [File](file-data-type.md) data type.
   
 ## Example
 
-The following example determines whether the specified file exists. If it exists, the [WriteMode Method \(File\)](../../methods-auto/file/file-writemode-method.md) allows the file to be open for writing. The [Open Method \(File\)](../../methods-auto/file/file-open-method.md) opens the file, the [Write Method \(File\)](../../methods/devenv-write-method-file.md) writes the text “Hello World” to the file, and then the Close method closes the file. If the file does not exist, an error message is displayed. This example assumes that you have created the following file C:\\TestFolder\\TestFile2.txt.  
+The following example determines whether the specified file exists. If it exists, the [WriteMode Method \(File\)](../../methods-auto/file/file-writemode-method.md) allows the file to be open for writing. The [Open Method \(File\)](../../methods-auto/file/file-open-method.md) opens the file, the [Write Method \(File\)](../library.md) writes the text “Hello World” to the file, and then the Close method closes the file. If the file does not exist, an error message is displayed. This example assumes that you have created the following file C:\\TestFolder\\TestFile2.txt.  
 
 ```al
 var
