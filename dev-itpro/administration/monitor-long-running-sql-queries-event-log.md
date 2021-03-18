@@ -129,9 +129,7 @@ If you have access to an Application Insights resource in Microsoft Azure, you c
 [Troubleshooting: Using the Event Log to Monitor Long Running SQL Queries](troubleshoot-long-running-queries-using-event-log.md)  
 [Troubleshooting: Analyzing Long Running SQL Queries Involving FlowFields by Disabling SmartSQL](troubleshooting-queries-involving-flowfields-by-disabling-smartsql.md)  
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
-[Set-NAVServerConfiguration](https://go.microsoft.com/fwlink/?linkid=401394)  
+[Set-NAVServerConfiguration](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration)  
 [Tools for Monitoring Performance Counters and Events](tools-monitor-performance-counters-and-events.md)  
 [Monitoring Business Central Server Using Performance Counters](monitor-server-using-performance-counters.md)  
-[Monitoring Business Central Server Events](monitor-server-events.md)  
-
-
+[Monitoring Business Central Server Events](monitor-server-events.md)
