@@ -35,7 +35,7 @@ An instance of the [Report](report-data-type.md) data type.
 ## Remarks  
  BREAK causes the current trigger to end. When used inside a loop, such as a WHILE-DO or REPEAT-UNTIL construction, BREAK interrupts the loop and causes the current trigger to end.  
 
- Compare this with the [QUIT Method \(Report, XMLport\)](../../methods/devenv-quit-method-report-xmlport.md).  
+ Compare this with the [QUIT Method \(Report, XMLport\)](../library.md).  
 
 > [!TIP]  
 >  You can also use the [AL BREAK Statement](../../devenv-al-control-statements.md) to exit an iteration or loop. The difference is that the BREAK statement does not terminate the trigger. It just exits the loop.  

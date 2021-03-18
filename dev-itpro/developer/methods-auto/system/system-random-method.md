@@ -45,7 +45,7 @@ If *MaxNumber* is negative it acts as a positive.
   
 If *MaxNumber* is zero, this method always returns 1.  
   
-A number is always chosen from the same set of numbers. Use [Randomize Method \(Integer\)](../../methods/devenv-randomize-method-integer.md) to generate a new set of numbers.  
+A number is always chosen from the same set of numbers. Use [Randomize Method \(Integer\)](../library.md) to generate a new set of numbers.  
   
 ## Example
 

@@ -31,7 +31,7 @@ RecordId := Record.RecordId;
   
 ## Remarks  
 
-You can show strings that include RecordId in the user interface by using the [Format Method \(Code, Text\)](devenv-format-method-code-text.md). In most cases, use the standard format value 1, which ensures that captions are shown in the current language. The following table illustrates the effect of the different standard formats when RecordId is used in a Format statement in a Danish locale.  
+You can show strings that include RecordId in the user interface by using the [Format Method \(Code, Text\)](../methods-auto/library.md). In most cases, use the standard format value 1, which ensures that captions are shown in the current language. The following table illustrates the effect of the different standard formats when RecordId is used in a Format statement in a Danish locale.  
   
 |Standard Format|Renders as|  
 |---------------------|----------------|  
@@ -43,7 +43,7 @@ When you use standard format 1, the caption of the record is returned. When you 
   
 ## Example
 
-The following example opens table 18 \(Customer\) as a Record variable that is named MyRecord. The [FindLast Method \(Record\)](devenv-findlast-method-record.md) finds the last record in the table. The record ID of the last record is retrieved, stored in the RecID variable displayed in message box.  
+The following example opens table 18 \(Customer\) as a Record variable that is named MyRecord. The [FindLast Method \(Record\)](../methods-auto/library.md) finds the last record in the table. The record ID of the last record is retrieved, stored in the RecID variable displayed in message box.  
   
 |Variable name|DataType|Subtype|  
 |-------------|--------|-------|  
@@ -63,5 +63,5 @@ MESSAGE(MyTextConst, RecID);
 ## See Also  
 
 [AL Method Reference](../methods-auto/library.md)  
-[Record Data Type](../datatypes/devenv-record-data-type.md)  
+[Record Data Type](../methods-auto/library.md)  
 [Format Property](../properties/devenv-format-property.md)
