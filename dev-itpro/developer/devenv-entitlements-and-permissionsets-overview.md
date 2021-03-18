@@ -89,6 +89,13 @@ In the on-premises version of [!INCLUDE [prod_short](includes/prod_short.md)], e
 
 Although starting with [!INCLUDE [prod_short](includes/prod_short.md)] 2021 release wave 1 (v.18.0), System permissions are no longer shipped as data in the application database, the partners can use the same procedure as before to export the new permissions that are defined using AL objects. The new permission sets and permissions can be exported into XML file by running XMLport 9171 Import/Export Permission Sets, making it possible to compare and merge the customized permission sets in your old database with the newly shipped permission sets. Find more details [here](/dynamics365/business-central/dev-itpro/upgrade/how-to--import-export-permission-sets-permissions.md).
 
+### How to upgrade permission sets
+
+When upgrading to version 18, first decide whether you want to use the permissions defined as data or switch to permissions defined as AL objects. Then, follow the guidelines at [Upgrading Permission Sets](https://review.docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/upgrade/upgrade-permissions?branch=deliv390525-2021-rw1-upgrade) for details on how to do the upgrade.
+
+
+
+<!--
 ### Before you start upgrading
 
 When upgrading to version 18, decide whether you want to use the permissions defined as data or switch to permissions defined as AL objects. Then, use the following guidelines to help you complete the permissions upgrade.
@@ -148,6 +155,7 @@ If you've customized Microsoft permission sets, it's important to know what you'
 4. Include the new AL permission sets and permission set extension objects into an AL project and compile the extension package.
 
 5. Publish and install the extension on your version 18 deployment.
+-->
 
 ## See Also
 
