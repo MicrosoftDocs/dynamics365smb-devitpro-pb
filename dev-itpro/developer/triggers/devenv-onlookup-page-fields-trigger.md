@@ -57,5 +57,5 @@ end;
 
 [Onlookup (Fields) Trigger](devenv-onlookup-fields-trigger.md)  
 [Page and Action Triggers](devenv-page-and-action-triggers.md)  
-[Page Properties](../properties/devenv-page-properties.md)  
-[Triggers](devenv-triggers.md)  
+[Page Properties](../properties/devenv-properties.md)  
+[Triggers](devenv-triggers.md)

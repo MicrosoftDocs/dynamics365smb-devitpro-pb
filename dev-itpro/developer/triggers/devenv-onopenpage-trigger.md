@@ -39,7 +39,7 @@ The `OnOpenPage` trigger is the only trigger that can toggle the [Visible Proper
 If an error occurs in the trigger execution, then the page closes.  
 
 > [!NOTE]  
-> If you use the [LockTable Record](../methods/devenv-locktable-method-record.md) in the OnOpenPage trigger, then the table lock will be released when the trigger completes execution and not when the user closes the page.  
+> If you use the [LockTable Record](../methods-auto/library.md) in the OnOpenPage trigger, then the table lock will be released when the trigger completes execution and not when the user closes the page.  
 
 > [!NOTE]  
 > The OnOpenPage trigger does not support calls to control add-in methods and properties because the trigger is invoked before the page is instantiated. <!-- For more information see, [Exposing Methods and Properties in a Windows Client Control Add-in](exposing-methods-and-properties-in-a-windows-client-control-add-in.md).-->
@@ -48,4 +48,4 @@ If an error occurs in the trigger execution, then the page closes.
 
 [Triggers](devenv-triggers.md)  
 [Page and Action Triggers](devenv-page-and-action-triggers.md)  
-[LockTable Record](../methods/devenv-locktable-method-record.md)  
+[LockTable Record](../methods-auto/library.md)
