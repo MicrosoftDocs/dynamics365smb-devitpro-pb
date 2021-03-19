@@ -19,10 +19,6 @@ This article explains how to add barcodes to a report. There are things to think
 - Prepare the data that you want to encode
 - Add a barcode font to the report layout.
 
-## Overview
-
-The barcode functionality is contained in the Barcode module of the System Application. This  mosue
-
 ## Supported barcode font and symbologies 
 
 Business Central supports the following one-dimensional barcode fonts and symbologies. These fonts are available with Business Central online. For Business Central on-premises,  
@@ -45,8 +41,9 @@ If you would like to use a different set of barcode fonts for your on-premises i
 
 ### Overview
 
-Barcoding functionality is provided by the **Barcode** module of the System Application. This module exposes functionality for encoding barcodes in reports, and uses to define a barcode font provider for generating barcodes. By default, the module is designed to use IDAutomation 1D as the barcode provider. The module requires that provider's barcode fonts are included barcode encode library. With Business Central online, the required fonts are already available in this library. e barcode extension libary. For on-premises, you have to obtain the barcode fonts. You can either use the  are e module is ready to use
+The barcode functionality for reports is provided by the **Barcode** module of the System Application. The module provides the objects and tools that developers need to add barcodes to reports. exposes functionality for encoding barcodes, and uses to define a barcode font provider for generating barcodes. By default, the module is designed to use IDAutomation 1D as the barcode provider. The module requires that barcode fonts used by the provider are included barcode encode library. With Business Central online, the required fonts are already available in this library. For on-premises, you have to obtain the barcode fonts. You can either use the  are e module is ready to use
 
+The Barcode Encoder module in the system application provides the objects and tools that developers need to add barcodes to reports. The module also provides the barcode fonts that you can use out-of-the-box in Business Central online. However, if you are using Business Central on-premises, you must license the fonts from IDAutomation and install them on the virtual machine where the Business Central server (NST) is running.
 Extending the barcode encoder library (on-premises)
 If you would like to use a different set of barcode fonts for your on-premises installation, you need to extend the barcode encoder library (adhering to the interface in the module) to supply encoding functions that work with those fonts. Consider contributing to the open source project if you do that.
 
