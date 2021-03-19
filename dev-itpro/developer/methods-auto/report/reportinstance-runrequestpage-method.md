@@ -44,11 +44,11 @@ XML string that contains the request page parameters that are entered on the req
 ## Remarks  
  This method opens the request page for the specified report, where the user can provide parameters for the report. When the user closes the request page by choosing the **OK** button, a string that contains the parameter values that were set by the user is returned. When the user chooses the **Cancel** button, an empty string will be returned. The returned parameter string can be picked up by calling one of the following methods:  
 
--   [Execute Method](../library.md)  
+-   [Execute Method](../reportinstance-execute-method.md)  
 
--   [Print Method](../library.md)  
+-   [Print Method](../reportinstance-print-method.md)  
 
--   [SaveAs Method](../library.md)  
+-   [SaveAs Method](../reportinstance-saveas-method.md)  
 
 > [!NOTE]  
 >  You can use these methods to schedule reports in the job queue.  

@@ -39,11 +39,10 @@ The name of the table.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks  
- This method works the same as the [TableName Method \(Record\)](../library.md).  
-  
+
 ## Example  
- The following example opens a table as a RecordRef variable that is named MyRecordRef. You can specify any table number in the [Open Method \(RecordRef\)](recordref-open-method.md). In this example, the table 18 \(Customer\) is open. The Name method retrieves the name of table 18 and stores it in the varTableName variable. The table number and name are displayed in a message box. 
+
+The following example opens a table as a RecordRef variable that is named MyRecordRef. You can specify any table number in the [Open Method \(RecordRef\)](recordref-open-method.md). In this example, the table 18 \(Customer\) is open. The Name method retrieves the name of table 18 and stores it in the varTableName variable. The table number and name are displayed in a message box. 
   
 ```al
 var
