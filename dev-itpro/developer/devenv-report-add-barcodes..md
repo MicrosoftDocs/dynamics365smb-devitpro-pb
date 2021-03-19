@@ -21,9 +21,19 @@ This article explains how to add barcodes to a report. There are things to think
 
 ## Overview
 
-The barcode functionality for reports is provided by the **Barcode** module of the System Application. The module includes the objects and tools that developers need to add barcodes to reports. It exposes functionality for encoding barcodes from font provider for generating barcodes on reports.
+The barcode functionality for reports is provided by the **Barcode** module of the System Application. The module includes the objects and tools that developers need to add barcodes to reports. This module is used to create for barcode providers. A barcode provider is used to generate data strings on reports as barcodes. The barcode provider includes a library of different barcode fonts that avialable to report throu the barecode provider's API.
 
-By default, the module is designed to use fonts from IDAutomation, which is defined as the barcode provider. Business Central online comes fully equipped the IDAutomation fonts. For on-premises, you have two options:
+Business Central online comes fully equipped with a barcode provider and a library of fonts, so you can start adding barcodes to reports right away.
+
+With Business Cenral on-premises, you'll have to develope a barcode provider. This task involves:
+
+1. Get the barcode fonts that you want to to use on reports.
+2. Install the fonts on the machine where Business Central server is running.
+3. Extend the barcode encoder library to provide encoding functions that work with these fonts.
+
+    Be sure to adhere to the interface in the module. Consider contributing to the open-source project if you do.
+
+<!--
 
 - License the fonts from IDAutomation
 
@@ -31,51 +41,49 @@ By default, the module is designed to use fonts from IDAutomation, which is defi
 
 - Obtain barcode fonts from other manufactures
 
-    In this case, you'll have to extend the barcode encoder library to provide encoding functions that work with these fonts. Be sure to adhere to the interface in the module. Consider contributing to the open-source project if you do.
+    In this case, you'll have to extend the barcode encoder library to provide encoding functions that work with these fonts. Be sure to adhere to the interface in the module. -->
 
 For more information about this module, see the [ALExtensions on GitHub](https://github.com/microsoft/ALAppExtensions/tree/master/Modules/System/Barcode).
 
-## Supported barcode font and symbologies 
+## Supported barcode font and symbologies for Business Central online 
 
-Business Central supports the following one-dimensional barcode fonts and symbologies. These fonts are available with Business Central online. For Business Central on-premises,   
-A barcode symbology is the mapping between data and the barcode image. It defines how to encode the data, including computation of a checksum and required start and stop marker symbols.
+Business Central online supports the following one-dimensional barcode fonts and symbologies. The fonts have different specifications for characteristics like encode numbers, symbols, uppercase and lowercase text. Knowing the specifications is useful for calibrating fonts used on report layouts.
 
-|Font|Symbologies|Specifications|
+|Font|Symbologies|Description|
 |----|-----------|--------------
-|Code39|Code39|https://www.idautomation.com/barcode-fonts/code-39/fontnames/
-|Codabar|Codabar|
-|Code 128|Code 128|
-|Interleaved 2 of 5|Interleaved 2 of 5|
-|MSI Plessey|MSI Plessey|
+|Code39|Code39|<ul><li>Variable length</li><li>43 characters, uppercase letters (A through Z), numeric digits (0 through 9) and special characters (-, ., $, /, +, %, and space)</li><li>* is used for both start and stop delimiters. </li><li>Nine elements per character (five bars and four spaces).</li></ul> [](https://www.idautomation.com/barcode-fonts/code-39/fontnames/). |
+|Codabar|Codabar|<ul><li>Characters 0-9, letters A to D and the following symbols: - $ / +. </li><li>Self-checking, no checksum characters requirement.</li><li>Uppercase letters A, B, C, and D are used for start and stop codes.</li><li>Parentheses ( ) can be used as the start and stop code so letters don't appear readable version of the fonts.</li></ul>|
+|Code 128|Code 128|<ul><li> High-density linear barcode symbology for alphanumeric or numeric-only barcodes </li><li>Encodes 128 ASCII characters</li><li>Uppercase letters A, B, C, and D are used for start and stop codes.</li><li>Compact barcodes compared to other fonts like Code 39, especially when text is mostly digits</li></ul>|
+|Interleaved 2 of 5|Interleaved 2 of 5|<ul><li>Continuous two-width barcode symbology encoding digits</li><li>Encodes pairs of digits. The first digit is encoded in the five bars (black lines). The second digit is encoded in the five interleaved spaces (or white lines). </li><li>Two out of five bars or spaces are wide</li></ul>
+|MSI Plessey|MSI Plessey|<ul><li>Continuous symbology</li><li>Not self-checking.</li><li>primarily for inventory control, marking storage containers and shelves in warehouse environments</li></ul>|
 |UPC/EAN|<ul><li> UPC-A</li><li>UPC-E</li><li>EAN-8</li><li>EAN-13</li></ul>|
 |USPS|<ul><li> IMB</li><li>Postnet</li><li>Planet</li></ul>|
 
 > [!NOTE]
-> These fonts are available with Business Central online.
+> Fonts have different specifications for characteristics like encode numbers, symbols, uppercase and lowercase text. Knowing the specifications is useful for calibrating fonts used on report layouts. Refer to the material provided by the font provider for details.
 
+A barcode symbology is the mapping between data and the barcode image. It defines how to encode the data, including computation of a checksum and required start and stop marker symbols.
 
 ## Encoding a string in AL
 
 To represent a string as a barcode in a report, it must be encoded according to the wanted symbology. The Barcode module has encoder functions in codeunit **9215 "IDAutomation 1D Provider" that can be used with barcode fonts from IDAutomation (which are available in BC online). 
 You use the procedure ValidateInput to validate if a string can be encoded in a given symbology, and then the EncodeFont procedure to do the actual encoding.
 In the table 9203 "Barcode Encode Settings" you can configure smaller variations in how different symbologies work, such as enabling extended character set or checksums in Code39, or setting the code set (A, B, or C) used in Code128. 
-Adding the encoded string to the report dataset
+
+## Adding the encoded string to the report dataset
+
 To show the barcode in a report, you must add the encoded string to the report dataset. 
-Using a barcode font in the report layout
-Each of the supported symbologies have corresponding fonts installed in BC Online. To use a barcode font in the report layout, simply mark the encoded string from the dataset with the font.
+
+## Using a barcode font in the report layout
+
+Each of the supported symbologies have corresponding fonts installed in Business Central online. To use a barcode font in the report layout, simply mark the encoded string from the dataset with the font.
+
 For develeopers, it's possible to use a font in a layout without having it installed on the machine you use to develop the layout. Without the font, the report won't show the barcode, but when you then test the report in a BC online sandbox, then it will be shown on the report.
 If you want to use the IDAutomation barcode fonts from in an on-premises installation, you need to license them from IDAutomation and install them on the VM that runs the BC server (NST).
-
-See also
-Available barcode fonts
-
 
 ## See Also
 [Request Pages](devenv-request-pages.md)  
 [Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md)  
 [Creating a Word Layout Report](devenv-howto-report-layout.md)  
-[Adding Help Links from Pages, Reports, and XMLports](devenv-adding-help-links-from-pages-tables-xmlports.md)  
-[Page Extension Object](devenv-page-ext-object.md)  
-[Page Properties](properties/devenv-page-property-overview.md)  
 [Developing Extensions](devenv-dev-overview.md)  
 [AL Development Environment](devenv-reference-overview.md)  
