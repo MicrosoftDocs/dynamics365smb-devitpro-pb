@@ -38,9 +38,9 @@ When you sign in to your customers' [!INCLUDE [prod_short](../developer/includes
 
 The following tasks are *not* available to the delegated administrator:
 
-- Set up jobs to run as scheduled tasks in the job queue
+- Run scheduled tasks in the job queue. 
 
-    Starting with 2021 release wave 1 (version 18), you can pause a job queue that has been scheduled by a licensed user<!-- and restart a failed job queue-->. You can also run a job queue once, for one full cycle, to verify that it works. You can then call it as many times as you need before you hand it over to your customerso that they can start it as a recurrent job. After the job queue completes, it will be put in the on-hold status and can't be rescheduled.  
+    However, starting with 2021 release wave 1 (version 18), delegated administrators can test that the job queue can run without issues, before asking the customer to start it, by using **Run once (forground)** action on the Job Queue Entry card. This will create a temporary non-recurrent copy of this job and will run it once in the foreground. You can then call it as many times as you need before you hand it over to your customer so that they can start it as a recurrent job. After the job queue completes, it will be put in the on-hold status and can't be rescheduled.  
 
 - Use the **Edit in Excel** action or interact with [!INCLUDE [prod_short](../developer/includes/prod_short.md)] data in Excel using the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] add-in for Excel.
 
@@ -49,12 +49,14 @@ The following tasks are *not* available to the delegated administrator:
 - Use the **Invite External Accountant** assisted setup guide
 
     Instead, you can add the external user in the Azure portal and assign this user the **External Accountant** license.
-- Change the experience to Premium
+
 - Use the **Cloud Migration Setup** assisted setup guide to migrate data from [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premises to [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online
 
-    Instead, a user who is assigned the SUPER permission set in [!INCLUDE [prod_short](../developer/includes/prod_short.md)] can run the assisted setup guide.
+    Instead, a licensed user who is assigned the SUPER permission set in [!INCLUDE [prod_short](../developer/includes/prod_short.md)] can run the assisted setup guide.
 
 - Access a web service by using a Web Service Access key.
+   
+    Usage of Web Service Access key is being deprecated. Find out more [here](../upgrade/deprecated-features-w1.md#accesskeys).
 
 ## Managing delegated permissions as a partner
 
