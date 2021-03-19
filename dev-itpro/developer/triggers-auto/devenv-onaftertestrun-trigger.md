@@ -2,7 +2,7 @@
 title: "OnAfterTestRun Trigger"
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2021
+ms.date: 03/19/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,6 +22,25 @@ Runs after a test of a test codeunit has been run.
 
 ### Parameters
 
+*CodeunitId*  
+&emsp;Type: [Integer](../methods-auto/integer/integer-data-type.md)  
+Specifies the ID of the codeunit that has run.  
+*CodeunitName*  
+&emsp;Type: [Text](../methods-auto/text/text-data-type.md)  
+Specifies the name of the test codeunit that has run.  
+*FunctionName*  
+&emsp;Type: [Text](../methods-auto/text/text-data-type.md)  
+Specifies the name of the test that has run.  
+*Permissions*  
+&emsp;Type: [TestPermissions](../methods-auto/testpermissions/testpermissions-data-type.md)  
+Specifies the permission set level to use on the test run. The value is retrieved from the TestPermissions property of the test codeunit or test that is run. The parameter accepts the following values:
+- Disabled
+- Restrictive
+- NonRestrictive
+- InheritFromTestCodunit - Specifies that a test the uses the TestPermissions property setting of the test codeunit to which it belongs.  
+*Success*  
+&emsp;Type: [Boolean](../methods-auto/boolean/boolean-data-type.md)  
+True indicates that the test run succeeded; otherwise, false indicates that the test run failed.  
 
 
 

@@ -2,7 +2,7 @@
 title: "OnLookup Trigger"
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2021
+ms.date: 03/19/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,12 +22,15 @@ Runs in place of the normal lookup features for the current page.
 
 ### Parameters
 
+*Text*  
+&emsp;Type: [Text](../methods-auto/text/text-data-type.md)  
+Text string entered into the text box and used as the lookup value.  
 
 
 ## Return Value
 
-*Ok*  
-    Type: [Boolean](../../methods-auto/Boolean/Boolean-data-type.md)  
+*Ok*
+    Type: [Boolean](../methods-auto/boolean/boolean-data-type.md)
 **true** if the lookup was carried out, otherwise, **false**.
 
 ## Applies To

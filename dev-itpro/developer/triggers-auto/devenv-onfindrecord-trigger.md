@@ -2,7 +2,7 @@
 title: "OnFindRecord Trigger"
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2021
+ms.date: 03/19/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,12 +22,18 @@ Overrides the default page behavior and enables you to specify which record you 
 
 ### Parameters
 
+*Which*  
+&emsp;Type: [Text](../methods-auto/text/text-data-type.md)  
+Text or code value with the following options:
+- (a dash): First record,
++ (a plus sign): Last record,
+=\<\>: Record defined in the Rec variable or the closest match.  
 
 
 ## Return Value
 
-*Ok*  
-    Type: [Boolean](../../methods-auto/Boolean/Boolean-data-type.md)  
+*Ok*
+    Type: [Boolean](../methods-auto/boolean/boolean-data-type.md)
 **true** if the specified record was found, otherwise, **false**.
 
 ## Applies To

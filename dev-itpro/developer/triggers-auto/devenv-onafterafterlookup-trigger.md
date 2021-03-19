@@ -2,7 +2,7 @@
 title: "OnAfterAfterLookup Trigger"
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2021
+ms.date: 03/19/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,6 +22,9 @@ Runs after a lookup is activated passing the selected record as a RecordRef.
 
 ### Parameters
 
+*Selected*  
+&emsp;Type: [RecordRef](../methods-auto/recordref/recordref-data-type.md)  
+The selected record.  
 
 
 

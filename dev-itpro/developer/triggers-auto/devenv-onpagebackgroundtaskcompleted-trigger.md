@@ -2,7 +2,7 @@
 title: "OnPageBackgroundTaskCompleted Trigger"
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2021
+ms.date: 03/19/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,6 +22,12 @@ author: SusanneWindfeldPedersen
 
 ### Parameters
 
+*TaskId*  
+&emsp;Type: [Integer](../methods-auto/integer/integer-data-type.md)  
+  
+*Results*  
+&emsp;Type: [Dictionary[Text,Text]](../methods-auto/dictionary[text,text]/dictionary[text,text]-data-type.md)  
+  
 
 
 
