@@ -41,4 +41,4 @@ Exclude sensitive data, such as primary key values, from the error message.
 ## See Also
 [System Data Type](system-data-type.md)
 [Getting Started with AL](../../devenv-get-started.md)
-[Developing Extensions](../devenv-dev-overview.md)
+[Developing Extensions](../../devenv-dev-overview.md)  

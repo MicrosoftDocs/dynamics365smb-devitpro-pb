@@ -38,4 +38,4 @@ Specifies the record that is selected during lookup.
 ## See Also
 [TestField Data Type](testfield-data-type.md)
 [Getting Started with AL](../../devenv-get-started.md)
-[Developing Extensions](../devenv-dev-overview.md)
+[Developing Extensions](../../devenv-dev-overview.md)  
