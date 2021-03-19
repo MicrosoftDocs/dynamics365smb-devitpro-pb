@@ -21,7 +21,7 @@ This article explains how to add barcodes to a report. There are things to think
 
 ## Overview
 
-The barcode functionality for reports is provided by the **Barcode** module of the System Application. The module includes the objects and tools that developers need to add barcodes to reports. This module is used to create barcode providers, which are used to generate data strings on reports as barcodes. A barcode provider includes a library of different barcode fonts that are made available to report through the barcode provider's API.
+The barcode functionality for reports is provided by the **Barcode** module of the System Application. The module includes the objects and tools that developers need to add barcodes to reports. This module is used to create barcode providers, for generating data strings on reports as barcodes. A barcode provider includes a library of different barcode fonts that are made available to report through the barcode provider's API.
 
 Business Central online comes fully equipped with a barcode provider and a library of fonts, so you can start adding barcodes to reports right away.
 
