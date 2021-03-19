@@ -56,7 +56,7 @@ The following tasks are *not* available to the delegated administrator:
 
 - Access a web service by using a Web Service Access key.
    
-    Usage of Web Service Access key is being deprecated. Find out more [here](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/upgrade/deprecated-features-w1#accesskeys).
+    Usage of Web Service Access key is being deprecated. Find out more [here](../upgrade/deprecated-features-w1.md#accesskeys).
 
 ## Managing delegated permissions as a partner
 
