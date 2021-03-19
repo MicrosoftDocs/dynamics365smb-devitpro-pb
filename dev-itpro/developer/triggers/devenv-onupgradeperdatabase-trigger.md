@@ -15,7 +15,7 @@ author: blrobl
 Runs during the upgrade of an extension.
 
 ## Applies to  
--  Upgrade codeunits. These codeunits have the [SubType Property \(Codeunit\)](/dynamics365/business-central/dev-itpro/developer/triggers/devenv-subtype-codeunit-property) set to **Upgrade**.  
+-  Upgrade codeunits. These codeunits have the [SubType Property \(Codeunit\)](../properties/devenv-subtype-codeunit-property.md) set to **Upgrade**.  
 
 > [!NOTE]  
 >  This trigger is also available in upgrade codeunits for the base application, not just for extensions.  

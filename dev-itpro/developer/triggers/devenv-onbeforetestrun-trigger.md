@@ -65,7 +65,7 @@ Specifies the permission set level to use on the test run. The value is retrieve
 
 ## Applies to  
 
-- Test runner codeunits. Test runner codeunits have the [SubType Property \(Codeunit\)](/dynamics365/business-central/dev-itpro/developer/triggers/devenv-subtype-codeunit-property) set to **TestRunner**.  
+- Test runner codeunits. Test runner codeunits have the [SubType Property \(Codeunit\)](../properties/devenv-subtype-codeunit-property.md) set to **TestRunner**.  
 
 > [!NOTE]  
 > This trigger is optional and not available on a test runner codeunit by default. To implement this trigger, you must manually add it.  

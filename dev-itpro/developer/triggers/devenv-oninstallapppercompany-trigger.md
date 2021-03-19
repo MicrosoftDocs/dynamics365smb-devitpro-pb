@@ -15,7 +15,7 @@ author: blrobl
 Runs during the installation or reinstallation of an extension.
 
 ## Applies to  
--  Install codeunits. These codeunits have the [SubType Property \(Codeunit\)](/dynamics365/business-central/dev-itpro/developer/triggers/devenv-subtype-codeunit-property) set to **Install**.  
+-  Install codeunits. These codeunits have the [SubType Property \(Codeunit\)](../properties/devenv-subtype-codeunit-property.md) set to **Install**.  
 
 ## Remarks  
 Includes code for company-related operations. 
