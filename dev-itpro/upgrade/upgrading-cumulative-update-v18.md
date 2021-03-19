@@ -225,7 +225,7 @@ Also, to ensure that the existing published extensions work on the new platform,
     ```powershell
     Restart-NAVServerInstance -ServerInstance <server instance>
     ```
-
+<!--
 ## Publish the new system symbols
 
 Use the Publish-NAVApp cmdlet to publish the new symbols extension package. This package is called **System.app**. If you've installed the **AL Development Environment**, you find the file in the installation folder. By default, the folder path is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\180\AL Development Environment. Or, it's also on the installation media (DVD) in the ModernDev\program files\Microsoft Dynamics NAV\180\AL Development Environment folder.
@@ -233,7 +233,7 @@ Use the Publish-NAVApp cmdlet to publish the new symbols extension package. This
 ```
 Publish-NAVApp -ServerInstance <server instance> -Path "<path to the System.app file>" -PackageType SymbolsOnly
 ```
-
+-->
 ## <a name="repair"></a>Recompile published extensions
 
 Compile all published extensions against the new platform.
