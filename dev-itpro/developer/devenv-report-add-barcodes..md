@@ -12,7 +12,7 @@ ms.service: "dynamics365-business-central"
 ms.author: jswymer
 ---
 
-## Adding barcodes to reports
+# Adding Barcodes to Reports
 
 This article explains how to add barcodes to a report. There are things to think about
 
@@ -21,11 +21,11 @@ This article explains how to add barcodes to a report. There are things to think
 
 ## Overview
 
-The barcode functionality for reports is provided by the **Barcode** module of the System Application. The module includes the objects and tools that developers need to add barcodes to reports. This module is used to create for barcode providers. A barcode provider is used to generate data strings on reports as barcodes. The barcode provider includes a library of different barcode fonts that avialable to report throu the barecode provider's API.
+The barcode functionality for reports is provided by the **Barcode** module of the System Application. The module includes the objects and tools that developers need to add barcodes to reports. This module is used to create barcode providers, which are used to generate data strings on reports as barcodes. A barcode provider includes a library of different barcode fonts that are made available to report through the barcode provider's API.
 
 Business Central online comes fully equipped with a barcode provider and a library of fonts, so you can start adding barcodes to reports right away.
 
-With Business Cenral on-premises, you'll have to develope a barcode provider. This task involves:
+With Business Cenral on-premises, you'll have to develop your barcode provider. This task involves:
 
 1. Get the barcode fonts that you want to to use on reports.
 2. Install the fonts on the machine where Business Central server is running.
@@ -53,7 +53,7 @@ Business Central online supports the following one-dimensional barcode fonts and
 |----|-----------|--------------
 |Code39|Code39|<ul><li>Variable length</li><li>43 characters, uppercase letters (A through Z), numeric digits (0 through 9) and special characters (-, ., $, /, +, %, and space)</li><li>* is used for both start and stop delimiters. </li><li>Nine elements per character (five bars and four spaces).</li></ul> See [Specs](https://www.idautomation.com/barcode-fonts/code-39/fontnames/). |
 |Code_93|Code_39|<ul><li>Primarily by Canada Post to encode delivery information.</li><li>Alphanumeric</li><li>Variable length</li><li>Every symbol includes two check characters.</li><li>Each character is nine modules wide, with three bars and three spaces.</li><li> Each bar and space is from 1 to 4 modules wide.</li></ul> See [Specs](https://www.idautomation.com/barcode-fonts/code-39/fontnames/). |
-|Codabar|Codabar|<ul><li>Characters 0-9, letters A to D and the following symbols: - $ / +. </li><li>Self-checking, no checksum characters requirement.</li><li>Uppercase letters A, B, C, and D are used for start and stop codes.</li><li>Parentheses ( ) can be used as the start and stop code so letters don't appear readable version of the fonts.</li></ul>See [Specs]((https://www.idautomation.com/barcode-fonts/codabar/user-manual/)|
+|Codabar|Codabar|<ul><li>Characters 0-9, letters A to D and the following symbols: - $ / +. </li><li>Self-checking, no checksum characters requirement.</li><li>Uppercase letters A, B, C, and D are used for start and stop codes.</li><li>Parentheses ( ) can be used as the start and stop code so letters don't appear readable version of the fonts.</li></ul>See [Specs](https://www.idautomation.com/barcode-fonts/codabar/user-manual/)|
 |Code 128|Code 128|<ul><li> High-density linear barcode symbology for alphanumeric or numeric-only barcodes </li><li>Encodes 128 ASCII characters</li><li>Uppercase letters A, B, C, and D are used for start and stop codes.</li><li>Compact barcodes compared to other fonts like Code 39, especially when text is mostly digits</li></ul>See [Specs](https://www.idautomation.com/barcode-fonts/code-128/user-manual/)|
 |Interleaved 2 of 5|Interleaved 2 of 5|<ul><li>Continuous two-width barcode symbology encoding digits</li><li>Encodes pairs of digits. The first digit is encoded in the five bars (black lines). The second digit is encoded in the five interleaved spaces (or white lines). </li><li>Two out of five bars or spaces are wide</li></ul>See [Specs](https://www.idautomation.com/barcode-fonts/interleaved-2of5/)|
 |MSI Plessey|MSI Plessey|<ul><li>Continuous symbology</li><li>Not self-checking.</li><li>Primarily for inventory control, marking storage containers and shelves in warehouse environments</li></ul>See [Specs](https://www.idautomation.com/barcode-fonts/msi/).|
