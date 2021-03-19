@@ -26,7 +26,7 @@ author: SusanneWindfeldPedersen
 &emsp;Type: [Integer](../methods-auto/integer/integer-data-type.md)  
   
 *Results*  
-&emsp;Type: [Dictionary[Text,Text]](../methods-auto/dictionary[text,text]/dictionary[text,text]-data-type.md)  
+&emsp;Type: [Dictionary[Text,Text]](../methods-auto/dictionary-text-text/dictionary-text-text-data-type.md)  
   
 
 
