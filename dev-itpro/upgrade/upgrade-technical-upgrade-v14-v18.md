@@ -199,6 +199,7 @@ In this task, you'll publish extensions to the version 18.0 server instance. Pub
 
 The steps in this task continue to use the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 18.0 that you started in the previous task.
 
+<!-- 
 1. Publish the system symbols extension for version 18.
 
     The symbols extension contains the required platform symbols that the base application depends on. The symbols extension package is called **System.app**. You find it where the **AL Development Environment** is installed. The default installation path is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\180\AL Development Environment.  
@@ -206,14 +207,14 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     ```powershell
     Publish-NAVApp -ServerInstance <BC18 server instance> -Path "<path to the System.app file>" -PackageType SymbolsOnly
     ```
-
-2. Publish the custom base application extension that you created in **Task 2**.
+-->
+1. Publish the custom base application extension that you created in **Task 2**.
 
     ```powershell
     Publish-NAVApp -ServerInstance <BC18 server instance> -Path "<path to the base application extension package file>"
     ```
 
-3. Publish the test library extension if you created one in **Task 2**.
+2. Publish the test library extension if you created one in **Task 2**.
 
     ```powershell
     Publish-NAVApp -ServerInstance <BC18 server instance> -Path "<path to the test library extension package file>"
@@ -340,6 +341,31 @@ Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Cl
 Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Client.WebPageViewer' -PublicKeyToken 31bf3856ad364e35 -ResourceFile ($AppName = Join-Path $ServicesAddinsFolder 'WebPageViewer\Microsoft.Dynamics.Nav.Client.WebPageViewer.zip')
 Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Client.WelcomeWizard' -PublicKeyToken 31bf3856ad364e35 -ResourceFile ($AppName = Join-Path $ServicesAddinsFolder 'WelcomeWizard\Microsoft.Dynamics.Nav.Client.WelcomeWizard.zip')
 ```
+
+## Task 12: Install upgraded permissions sets
+
+In this task, you install the custom permission sets that you upgraded earlier in this procedure. The steps depend on whether you've decided to use permission sets as AL objects or as data.
+
+### For permission sets as AL objects
+
+1. Publish the extension or extensions that include the permission sets.
+2. Sync the extensions with the tenant.
+3. Install the extensions on the tenant.
+
+### For permission sets as data in XML
+
+1. Set the `UserPermissionSetsFromExtensions` setting of the [!INCLUDE[server](../developer/includes/server.md)] instance to `false`.
+
+    ```powershell
+    Set-NavServerConfiguration -ServerInstance <BC18 server instance> -KeyName "UsePermissionSetsFromExtensions" -KeyValue false
+    ```
+
+2. Restart the serve insatnce.
+3. Open the [!INCLUDE[webclient](../developer/includes/webclient.md)].
+4. Search for and open the **Permission Sets** page.
+5. Select **Import Permission Sets**, and follow the instructions to import the XML file.
+
+For more information, see [To export and import a permission set](/dynamics365/business-central/ui-define-granular-permissions#to-export-and-import-a-permission-set).
 
 ## Post-upgrade tasks
 
