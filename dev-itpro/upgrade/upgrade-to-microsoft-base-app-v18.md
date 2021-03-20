@@ -48,7 +48,7 @@ The process for upgrading is similar for a single-tenant and multitenant deploym
 
 1. Your version 14 is compatible with version 18.
 
-    There are several updates for version 14. The updates have a compatible version 18 update. For more information, see [[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md). 
+    There are several updates for version 14. The updates have a compatible version 18 update. For more information, see [[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
 
 2. The version 14 [!INCLUDE[devshell](../developer/includes/devshell.md)] and [!INCLUDE[adminshell](../developer/includes/adminshell.md)] are installed. 
 
@@ -56,7 +56,7 @@ The process for upgrading is similar for a single-tenant and multitenant deploym
 
     During the upgrade, you'll use the txt2al conversion tool to convert existing tables to the AL syntax. You'll need to use a version of txt2al conversion tool that supports the `--tableDataOnly` parameter. This parameter was first introduced in [version 14.12 (cumulative update 11, platform 14.0.41862)](https://support.microsoft.com/en-us/help/4549684/cumulative-update-12-for-microsoft-dynamics-365-business-central-april). So if you're upgrading from version 14.11 (cumulative update 10) or earlier, you'll have to download the txt2al conversion tool from a later version 14 update. See [Released Cumulative Updates for Microsoft Dynamics 365 Business Central Spring 2019 Update on-premises](https://support.microsoft.com/en-us/help/4501292/released-cumulative-updates-for-microsoft-dynamics-365-business). 
 
-## Install version 18
+## Task 1: Install version 18
 
 1. Download the latest available update for [!INCLUDE[prod_long](../developer/includes/prod_long.md)] (version 18) that is compatible with your version 14.
 
@@ -70,18 +70,23 @@ The process for upgrading is similar for a single-tenant and multitenant deploym
 
     For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
 
+## Task 2: Upgrade permission sets
+
+Version 18 introduces the capability to define permissions sets as AL objects, instead of as data. Permissions sets as AL objects is now the default and recommended model for defining permissions. However for now, you can choose to use the legacy model, where permissions are defined and stored as data in the database. Whichever model you choose, there are certain tasks and process you'll have to go through during upgrade.
+
+For more information, see [Upgrading Permissions Sets and Permissions](upgrade-permissions.md)<!--[Permissions Upgrade Considerations](https://review.docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-entitlements-and-permissionsets-overview?branch=permissionset#upgrade-considerations)-->.
 ## APPLICATION UPGRADE
 
 This section describes how to upgrade the application code. This work involves creating various extensions.
 
-## Task 1: Move code customizations to extensions
+## Task 3: Move code customizations to extensions
 
 The first step, and the largest step, is to create extensions for the customizations compared to the Microsoft base application.
 
 - Create extensions for the target platform **7.0 Business Central 2021 release wave 1**.
 - Include dependencies for the Microsoft System, Base, and Application extensions for version 18.0.0.0.
 
-## Task 2: Create table migration extension
+## Task 4: Create table migration extension
 
 In this step, you create an extension that consists only of the non-system table objects from your custom base application. The table objects will only include the properties and field definitions. They won't include AL code on triggers or methods. This extension is an interim extension used only during the upgrade. 
 
@@ -217,7 +222,7 @@ You'll create two versions of this extension. The first version contains the tab
 
     To build the extension package, press Ctrl+Shift+B.
 
-## Task 3: Create empty System, Base, and customization extensions
+## Task 5: Create empty System, Base, and customization extensions
 
 Create two empty extensions: one for the Microsoft base application and another for the System Application. Also, create an empty extension for each new customization extension. The only file in the extension project that is required is an app.json.
 
@@ -264,7 +269,7 @@ You can create the empty extension like any other extension by adding an AL proj
 
 ## DATA UPGRADE
 
-## Task 4: Prepare databases
+## Task 6: Prepare databases
 
 1. Make backup of the databases.
 2. Disable data encryption.
@@ -312,7 +317,7 @@ You can create the empty extension like any other extension by adding an AL proj
     Stop-NAVServerInstance -ServerInstance <server instance name>
     ```
 
-## Task 5: Convert version 14 database
+## Task 7: Convert version 14 database
 
 This task runs a technical upgrade on the application database. The task converts the database from the version 14 platform to the version 18 platform. The conversion updates the system tables of the database to the new schema (data structure). It provides the latest platform features and performance enhancements.
 
@@ -334,7 +339,7 @@ This task runs a technical upgrade on the application database. The task convert
     Collation           :
     ```
 
-## Task 6: Configure version 18 server for DestinationAppsForMigration
+## Task 8: Configure version 18 server for DestinationAppsForMigration
 
 In this step, you configure the version 18 server instance. In particular, you configure it to migrate the table migration extension that you created earlier. The migration is controlled by the `DestinationAppsForMigration` setting for the server instance. For more information about the `DestinationAppsForMigration` setting, see [DestinationAppsForMigration](upgrade-destinationappsformigration.md).
 
@@ -357,13 +362,7 @@ In this step, you configure the version 18 server instance. In particular, you c
     > [!NOTE]
     > You can add multiple extensions to this setting.
 
-3. If you want to use the permission sets defined as data, set the `UserPermissionSetsFromExtensions` setting to `false`.
-
-    ```powershell
-    Set-NavServerConfiguration -ServerInstance <BC18 server instance> -KeyName "UsePermissionSetsFromExtensions" -KeyValue false
-    ```
-
-4. Disable task scheduler on the server instance for purposes of upgrade.
+3. Disable task scheduler on the server instance for purposes of upgrade.
 
     ```powershell
     Set-NavServerConfiguration -ServerInstance <server instance name> -KeyName "EnableTaskScheduler" -KeyValue false
@@ -375,7 +374,7 @@ In this step, you configure the version 18 server instance. In particular, you c
     Restart-NAVServerInstance -ServerInstance <server instance name>
     ```
 
-## Task 7: Import License
+## Task 9: Import License
 
 Import the version 18 partner license. To import the license, use the [Import-NAVServerLicense cmdlet](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense):
 
@@ -385,7 +384,7 @@ Import-NAVServerLicense $-ServerInstance <server instance name> -LicenseFile <pa
 
 Restart the server instance.
 
-## Task 8: Publish DestinationAppsForMigrations extensions
+## Task 10: Publish DestinationAppsForMigrations extensions
 
 In this task, you'll publish the extensions configured as DestinationAppsForMigration.
 
@@ -420,7 +419,7 @@ In this task, you'll publish the extensions configured as DestinationAppsForMigr
     Restart-NAVServerInstance -ServerInstance <server instance name>
     ```
 
-## Task 9: Synchronize tenant
+## Task 11: Synchronize tenant
 
 In this task, you'll synchronize the tenant's database schema with any schema changes in the application database and extensions.
 
@@ -467,7 +466,7 @@ If you have a multitenant deployment, do these steps for each tenant.
     > `Get-NAVTenant <server instance> -Tenant <default> -ForceRefresh`
 4. Synchronize the empty versions of system application, base application, and customization extensions that you published in Task 8.
 
-## Task 10: Install DestinationAppsForMigration and move tables
+## Task 12: Install DestinationAppsForMigration and move tables
 
 In this task, you run a data upgrade on tables to handle data changes made by platform and extensions. The step installs the table migration extension. It moves data from the old tables to the new tables owned by the table migration extension.
 
@@ -498,7 +497,7 @@ In this task, you run a data upgrade on tables to handle data changes made by pl
 
 4. (Multitenant only) Repeat steps 1 and 2 for each tenant.
 
-## Task 11: Publish final extensions
+## Task 13: Publish final extensions
 
 This step starts the second phase of the data upgrade. You'll publish the second version of the table migration extension and the production versions of extensions. The production extensions include the new versions of Microsoft System Application, Base Application extension, and customization extensions. The extension packages for Microsoft extensions are on the installation media (DVD). Customization extensions include the extension versions that you created in Task 1, not the empty versions.
 
@@ -529,7 +528,7 @@ Publish the extensions in the following order:
 
 <!-- At this point, you'll see duplicate tables in SQL Server for the each table defiend in the tables-only extension. The duplicate tables will be owned by the system and base apps-->
 
-## Task 12: Synchronize final extensions
+## Task 14: Synchronize final extensions
 
 Synchronize the newly published extensions using the Sync-NAVApp cmdlet like you did in previous steps.
 
@@ -563,7 +562,7 @@ At line:1 char:1
     + FullyQualifiedErrorId : MicrosoftDynamicsNavServer$BC180/nav-systemapplication,Microsoft.Dynamics.Nav.Apps.Management.Cmdlets.SyncNavApp
 -->
 
-## Task 13: Upgrade empty table migration extension
+## Task 15: Upgrade empty table migration extension
 
 Run data upgrade on the table migration extension (empty version) by using the [Start-NAVAppDataUpgrade](/powershell/module/microsoft.dynamics.nav.apps.management/start-navappdataupgrade) cmdlet. For example:
 
@@ -571,7 +570,7 @@ Run data upgrade on the table migration extension (empty version) by using the [
 Start-NAVAppDataUpgrade -ServerInstance <server instance> -Name "<table migration extension>" -version <version 2>
 ```
 
-## Task 14: Uninstall/clean sync empty table migration extension
+## Task 16: Uninstall/clean sync empty table migration extension
 
 This step removes the temporary tables included in this extension from the database to avoid duplicate object conflicts when upgrading the System and Base applications in the next task. 
 
@@ -585,7 +584,11 @@ This step removes the temporary tables included in this extension from the datab
    ```powershell
    Sync-NAVApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name "<extension name>" -Version <extension version> -Mode clean
    ```
-<!-- Error during upgrade 
+
+3. Unpublish the two versions of the table migration extension.
+
+
+<!-- Error during upgrade when the table migration versions haven't been unpublsihed.
 PS C:\Windows\system32> Start-NAVAppDataUpgrade -ServerInstance $NewInstanceName -Name "System Application" -version $Version -Force
 WARNING: This license is not compatible with this version of Business Central.
 WARNING: This license is not compatible with this version of Business Central.
@@ -598,7 +601,7 @@ At line:1 char:1
  
 -->
 
-## Task 15: Upgrade and install final extensions
+## Task 17: Upgrade and install final extensions
 
 The final step is to upgrade to the new extension versions in the following order. Use the Start-NAVAppDataUpgrade or Install-NAVApp cmdlets like you did in the previous task.
 
@@ -611,7 +614,30 @@ Run the data upgrade on the extensions in the following order:
 
    For customization extensions, only do this task for those extensions that have an empty version currently installed on the tenant (see **Task 11**). If you have a customization extension for which you didn't create and publish an empty version, complete the next task to install these extensions.
 
-## Task 16: Install remaining customization extensions
+<!-- Error when UsePermissionsFromExtensions false
+PS C:\Windows\system32> Start-NAVAppDataUpgrade -ServerInstance $NewInstanceName -Name "Base Application" -version $Version -Force
+WARNING: This license is not compatible with this version of Business Central.
+WARNING: This license is not compatible with this version of Business Central.
+Start-NAVAppDataUpgrade : Could not upgrade the extension 'Base Application' by 'Microsoft' from version '14.0.0.0' to '18.0.23223.0' for tenant 'default' and company '' due to the following error: 'The following SQL error occurred after the SQL command was canceled:
+Invalid column name '$systemCreatedAt'.
+Invalid column name '$systemCreatedBy'.
+Invalid column name '$systemModifiedAt'.
+Invalid column name '$systemModifiedBy'.
+Statement(s) could not be prepared.
+' and AL stack trace: 
+"Upgrade Plan Permissions"(CodeUnit 104030).TryInsertPermissionSet line 10 - Base Application by Microsoft
+"Upgrade Plan Permissions"(CodeUnit 104030).AddBackupRestorePermissionSet line 5 - Base Application by Microsoft
+"Upgrade Plan Permissions"(CodeUnit 104030).SetBackupRestorePermissions line 8 - Base Application by Microsoft
+"Upgrade Plan Permissions"(CodeUnit 104030).OnUpgradePerDatabase line 2 - Base Application by Microsoft
+"Upgrade Triggers"(CodeUnit 2000000008).OnUpgradePerDatabase line 2
+At line:1 char:1
++ Start-NAVAppDataUpgrade -ServerInstance $NewInstanceName -Name "Base  ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Start-NAVAppDataUpgrade], InvalidOperationException
+    + FullyQualifiedErrorId : MicrosoftDynamicsNavServer$BC180/default,Microsoft.Dynamics.Nav.Apps.Management.Cmdlets.StartNavAppDataUpgrade
+ 
+-->
+## Task 18: Install remaining customization extensions
 
 Complete this task for customizations extension that you created in Task 1, but create and publish an empty version first.
 
@@ -665,6 +691,31 @@ Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Cl
 Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Client.WebPageViewer' -PublicKeyToken 31bf3856ad364e35 -ResourceFile ($AppName = Join-Path $ServicesAddinsFolder 'WebPageViewer\Microsoft.Dynamics.Nav.Client.WebPageViewer.zip')
 Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Client.WelcomeWizard' -PublicKeyToken 31bf3856ad364e35 -ResourceFile ($AppName = Join-Path $ServicesAddinsFolder 'WelcomeWizard\Microsoft.Dynamics.Nav.Client.WelcomeWizard.zip')
 ```
+
+## Task 17: Install upgraded permissions sets
+
+In this task, you install the custom permission sets that you upgraded earlier in this procedure. The steps depend on whether you've decided to use permission sets as AL objects or as data.
+
+### For permission sets as AL objects
+
+1. Publish the extension or extensions that include the permission sets.
+2. Sync the extensions with the tenant.
+3. Install the extensions on the tenant.
+
+### For permission sets as data in XML
+
+1. Set the `UserPermissionSetsFromExtensions` setting of the [!INCLUDE[server](../developer/includes/server.md)] instance to `false`.
+
+    ```powershell
+    Set-NavServerConfiguration -ServerInstance <BC18 server instance> -KeyName "UsePermissionSetsFromExtensions" -KeyValue false
+    ```
+
+2. Restart the serve insatnce.
+3. Open the [!INCLUDE[webclient](../developer/includes/webclient.md)].
+4. Search for and open the **Permission Sets** page.
+5. Select **Import Permission Sets**, and follow the instructions to import the XML file.
+
+For more information, see [To export and import a permission set](/dynamics365/business-central/ui-define-granular-permissions#to-export-and-import-a-permission-set).
 
 ## Post-upgrade tasks
 
