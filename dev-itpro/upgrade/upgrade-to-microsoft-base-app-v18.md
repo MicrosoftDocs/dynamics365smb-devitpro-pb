@@ -178,10 +178,10 @@ You'll create two versions of this extension. The first version contains the tab
     {
         "apprules": [
             {
-                "id": "63ca2fa4-4f03-4f2b-a480-182fef340d3f"
+                "id": "63ca2fa4-4f03-4f2b-a480-172fef340d3f"
             },
             {
-                "id": "437dbf0e-84ff-418a-965d-ed2bb9650972"
+                "id": "437dbf0e-84ff-417a-965d-ed2bb9650972"
             },
             {
                 "id": "<NNNNNNNN-NNNN-NNNN-NNNN-NNNNNNNNNNNN>"
@@ -195,13 +195,23 @@ You'll create two versions of this extension. The first version contains the tab
 
     In the example code:
 
-    - `63ca2fa4-4f03-4f2b-a480-182fef340d3f` identifies the system application extension
-    - `437dbf0e-84ff-418a-965d-ed2bb9650972` identifies the base application extension
+    - `63ca2fa4-4f03-4f2b-a480-172fef340d3f` identifies the system application extension
+    - `437dbf0e-84ff-417a-965d-ed2bb9650972` identifies the base application extension
     - The two other IDs are examples that identify other new customization extensions you might have. Replace or remove these entries as needed.
 
     For more information about the migration.json, see [The Migration.json File](../developer/devenv-migration-json-file.md).
 
-3. Delete the AL objects.
+3. Delete the AL table object files except for the following tables: 
+
+    |Table|File|Modifications|
+    |-----|----|-------------|
+    |table 7330 "Bin Content Buffer" |BinContentBuffer.Table.al|Remove `TableRelation =` lines. |
+    |table 265 "Document Entry"| DocumentEntry.Table.al||
+    |table 338 "Entry Summary" |EntrySummary.Table.al|Remove line `AccessByPermission = TableData "Warehouse Source Filter" = R;`|
+    |table 1754 "Field Content Buffer"|FieldContentBuffer.Table.al||
+    |table 1670 "Option Lookup Buffer"|OptionLookupBuffer.Table.al ||
+
+    In version 18, these tables have been changed to temporary tables. For now, you'll have to include these objects in the table migration extension; otherwise you'll have problems syncing the extension later.
 4. Increase the `version` in the app.json file.
 5. Build the extension package for the second version.
 
@@ -230,7 +240,7 @@ You can create the empty extension like any other extension by adding an AL proj
     **System Application** 
     
     ```json
-      "id": "63ca2fa4-4f03-4f2b-a480-182fef340d3f",
+      "id": "63ca2fa4-4f03-4f2b-a480-172fef340d3f",
       "name": "System Application",
       "publisher": "Microsoft",
       "version": "14.0.0.0",
@@ -240,7 +250,7 @@ You can create the empty extension like any other extension by adding an AL proj
     **Base Application**   
     
     ```json
-      "id": "437dbf0e-84ff-418a-965d-ed2bb9650972",
+      "id": "437dbf0e-84ff-417a-965d-ed2bb9650972",
       "name": "Base Application",
       "publisher": "Microsoft",
       "version": "14.0.0.0",
@@ -518,6 +528,7 @@ Publish the extensions in the following order:
     The Microsoft extensions are in the **Applications** folder of installation media (DVD).
 
 <!-- At this point, you'll see duplicate tables in SQL Server for the each table defiend in the tables-only extension. The duplicate tables will be owned by the system and base apps-->
+
 ## Task 12: Synchronize final extensions
 
 Synchronize the newly published extensions using the Sync-NAVApp cmdlet like you did in previous steps.
@@ -539,6 +550,18 @@ Synchronize the extensions in the following order:
 > Synchronize extensions in the order of dependencies. The migration extension must be synchronized last. This step will change table ownership to the system and base application.
 
 <!-- At this point, you'll see duplicate tables in SQL Server for the each table defiend in the tables-only extension. The duplicate tables will be owned by the system and base apps. But the tables are empty -->
+<!-- Error when temp tables not included 
+Sync-NAVApp : Table Document Entry :: The table 'Document Entry' cannot be located. Removing tables is not allowed unless they are temporary or are being moved by migration to another app.
+Table Entry Summary :: The table 'Entry Summary' cannot be located. Removing tables is not allowed unless they are temporary or are being moved by migration to another app.
+Table Option Lookup Buffer :: The table 'Option Lookup Buffer' cannot be located. Removing tables is not allowed unless they are temporary or are being moved by migration to another app.
+Table Field Content Buffer :: The table 'Field Content Buffer' cannot be located. Removing tables is not allowed unless they are temporary or are being moved by migration to another app.
+Table Bin Content Buffer :: The table 'Bin Content Buffer' cannot be located. Removing tables is not allowed unless they are temporary or are being moved by migration to another app.
+At line:1 char:1
++ Sync-NAVApp -ServerInstance $NewInstanceName -Name $TableMigrationExt ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Sync-NAVApp], InvalidOperationException
+    + FullyQualifiedErrorId : MicrosoftDynamicsNavServer$BC180/nav-systemapplication,Microsoft.Dynamics.Nav.Apps.Management.Cmdlets.SyncNavApp
+-->
 
 ## Task 13: Upgrade empty table migration extension
 
@@ -548,7 +571,34 @@ Run data upgrade on the table migration extension (empty version) by using the [
 Start-NAVAppDataUpgrade -ServerInstance <server instance> -Name "<table migration extension>" -version <version 2>
 ```
 
-## Task 14: Upgrade and install final extensions
+## Task 14: Uninstall/clean sync empty table migration extension
+
+This step removes the temporary tables included in this extension from the database to avoid duplicate object conflicts when upgrading the System and Base applications in the next task. 
+
+1. Uninstall
+
+   ```powershell
+   Uninstall-NAVApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name "<extension name>" -Version <extension version>
+   ```
+2. Sync the extension by using the clean mode:
+
+   ```powershell
+   Sync-NAVApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name "<extension name>" -Version <extension version> -Mode clean
+   ```
+<!-- Error during upgrade 
+PS C:\Windows\system32> Start-NAVAppDataUpgrade -ServerInstance $NewInstanceName -Name "System Application" -version $Version -Force
+WARNING: This license is not compatible with this version of Business Central.
+WARNING: This license is not compatible with this version of Business Central.
+Start-NAVAppDataUpgrade : The application object of type 'Table' with the ID '1754' is defined in multiple apps. The apps are: System Application by Microsoft 18.0.23223.0; bc14baseapptablesonly by My publisher 1.0.0.5.
+At line:1 char:1
++ Start-NAVAppDataUpgrade -ServerInstance $NewInstanceName -Name "Syste ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Start-NAVAppDataUpgrade], InvalidOperationException
+    + FullyQualifiedErrorId : MicrosoftDynamicsNavServer$BC180/default,Microsoft.Dynamics.Nav.Apps.Management.Cmdlets.StartNavAppDataUpgrade
+ 
+-->
+
+## Task 15: Upgrade and install final extensions
 
 The final step is to upgrade to the new extension versions in the following order. Use the Start-NAVAppDataUpgrade or Install-NAVApp cmdlets like you did in the previous task.
 
@@ -561,7 +611,7 @@ Run the data upgrade on the extensions in the following order:
 
    For customization extensions, only do this task for those extensions that have an empty version currently installed on the tenant (see **Task 11**). If you have a customization extension for which you didn't create and publish an empty version, complete the next task to install these extensions.
 
-## Task 15: Install remaining customization extensions
+## Task 16: Install remaining customization extensions
 
 Complete this task for customizations extension that you created in Task 1, but create and publish an empty version first.
 
