@@ -570,9 +570,9 @@ Run data upgrade on the table migration extension (empty version) by using the [
 Start-NAVAppDataUpgrade -ServerInstance <server instance> -Name "<table migration extension>" -version <version 2>
 ```
 
-## Task 16: Uninstall/clean sync empty table migration extension
+## Task 16: Clean sync and unpublish table migration extensions
 
-This step removes the temporary tables included in this extension from the database to avoid duplicate object conflicts when upgrading the System and Base applications in the next task. 
+This step removes the temporary tables included in this table migration extensions from the database, and unpublishes both versions of the extension. This step must be doen to avoid duplicate object conflicts when upgrading the System and Base applications in the next task. 
 
 1. Uninstall
 
@@ -587,6 +587,7 @@ This step removes the temporary tables included in this extension from the datab
 
 3. Unpublish the two versions of the table migration extension.
 
+For more information, see [Unpublishing and Uninstalling Extensions](../developer/devenv-unpublish-and-uninstall-extension-v2.md).
 
 <!-- Error during upgrade when the table migration versions haven't been unpublsihed.
 PS C:\Windows\system32> Start-NAVAppDataUpgrade -ServerInstance $NewInstanceName -Name "System Application" -version $Version -Force

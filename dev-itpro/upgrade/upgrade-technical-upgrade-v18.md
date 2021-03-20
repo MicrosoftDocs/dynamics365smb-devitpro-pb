@@ -360,6 +360,7 @@ Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Cl
 
 In this task, you install the custom permission sets that you upgraded earlier in this procedure. The steps depend on whether you've decided to use permission sets as AL objects or as data.
 
+
 ### For permission sets as AL objects
 
 1. Publish the extension or extensions that include the permission sets.
@@ -368,9 +369,16 @@ In this task, you install the custom permission sets that you upgraded earlier i
 
 ### For permission sets as data in XML
 
-1. Open the [!INCLUDE[webclient](../developer/includes/webclient.md)].
-2. Search for and open the **Permission Sets** page.
-3. Select **Import Permission Sets**, and follow the instructions to import the XML file.
+1. Set the `UserPermissionSetsFromExtensions` setting of the [!INCLUDE[server](../developer/includes/server.md)] instance to `false`.
+
+    ```powershell
+    Set-NavServerConfiguration -ServerInstance <BC18 server instance> -KeyName "UsePermissionSetsFromExtensions" -KeyValue false
+    ```
+
+2. Restart the serve insatnce.
+3. Open the [!INCLUDE[webclient](../developer/includes/webclient.md)].
+4. Search for and open the **Permission Sets** page.
+5. Select **Import Permission Sets**, and follow the instructions to import the XML file.
 
 For more information, see [To export and import a permission set](/dynamics365/business-central/ui-define-granular-permissions#to-export-and-import-a-permission-set).
 

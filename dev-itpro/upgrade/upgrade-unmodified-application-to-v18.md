@@ -164,20 +164,14 @@ When you installed version 18 in **Task 2**, a version 18 [!INCLUDE[server](../d
     ```
     In a single tenant deployment, this command will mount the tenant automatically. For more information, see [Connecting a Server Instance to a Database](../administration/connect-server-to-database.md).
 
-2. If you want to use the permission sets defined as data, set the `UserPermissionSetsFromExtensions` setting to `false`.
-
-    ```powershell
-    Set-NavServerConfiguration -ServerInstance <BC18 server instance> -KeyName "UsePermissionSetsFromExtensions" -KeyValue false
-    ```
-
-3. Disable task Scheduler on the server instance for purposes of upgrade.
+2. Disable task Scheduler on the server instance for purposes of upgrade.
 
     ```powershell
     Set-NavServerConfiguration -ServerInstance <server instance name> -KeyName "EnableTaskScheduler" -KeyValue false
     ```
 
     Be sure to re-enable task scheduler after upgrade if needed.
-4. Restart the server instance.
+3. Restart the server instance.
 
     ```powershell
     Restart-NAVServerInstance -ServerInstance <server instance name>
@@ -423,11 +417,19 @@ In this task, you install the custom permission sets that you upgraded earlier i
 
 ### For permission sets as data in XML
 
-1. Open the [!INCLUDE[webclient](../developer/includes/webclient.md)].
-2. Search for and open the **Permission Sets** page.
-3. Select **Import Permission Sets**, and follow the instructions to import the XML file.
+1. Set the `UserPermissionSetsFromExtensions` setting of the [!INCLUDE[server](../developer/includes/server.md)] instance to `false`.
+
+    ```powershell
+    Set-NavServerConfiguration -ServerInstance <BC18 server instance> -KeyName "UsePermissionSetsFromExtensions" -KeyValue false
+    ```
+
+2. Restart the serve insatnce.
+3. Open the [!INCLUDE[webclient](../developer/includes/webclient.md)].
+4. Search for and open the **Permission Sets** page.
+5. Select **Import Permission Sets**, and follow the instructions to import the XML file.
 
 For more information, see [To export and import a permission set](/dynamics365/business-central/ui-define-granular-permissions#to-export-and-import-a-permission-set).
+
 
 ## Post-upgrade tasks
 
