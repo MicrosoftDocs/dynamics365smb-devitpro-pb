@@ -43,7 +43,7 @@ The process for upgrading the similar for a single-tenant and multitenant deploy
 
 ## Task 2: Upgrade permission sets
 
-Version 18 introduces the capability to define permissions sets as AL objects, instead data. Permissions sets as AL objects is now the default and recommended model for permissions. However, for now, you can choose to use the legacy model, where permissions are defined and stored as data in the database. Whichever model you choose, there are certain tasks and process you'll have to go through during upgrade.
+Version 18 introduces the capability to define permissions sets as AL objects, instead data. Permissions sets as AL objects is now the default and recommended model for permissions. For now, you can choose to use the legacy model, where permissions are defined and stored as data in the database. Whichever model you choose, there are certain tasks and process you'll have to go through during upgrade.
 
 For more information, see [Upgrading Permissions Sets and Permissions](upgrade-permissions.md)<!--[Permissions Upgrade Considerations](https://review.docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-entitlements-and-permissionsets-overview?branch=permissionset#upgrade-considerations)-->.
 
@@ -256,7 +256,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
 
 7. Recompile extensions not build on version 18.
 
-    This step pertains to any published extension versions that aren't built on version 18, which you want to reinstall on tenants. These extensions must be recompiled to work with version 18. To recompile the extensions, use the [Repair-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/repair-navapp) cmdlet:
+    Do this step for any published extension versions that aren't built on version 18, and you want to reinstall on tenants. These extensions must be recompiled to work with version 18. To recompile the extensions, use the [Repair-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/repair-navapp) cmdlet:
 
     ```powershell  
     Repair-NAVApp -ServerInstance <server instance> -Name <extension name> -Version <extension name>
@@ -349,7 +349,7 @@ Run the data upgrade on extensions in order of dependency.
     This step will automatically install the new system application and base application versions on the tenant.
 2. Upgrade the new versions of Microsoft extensions and third-party extensions.
 
-    Complete this task to upgrade any Microsoft and third-party extension used in the old deployment to new versions on the installation media. The new versions are in the **Application** folder of the DVD. There's a folder for each extension. The extension package (.app file) is in the **Source** folder. 
+    Upgrade any Microsoft and third-party extension that are used in the old deployment to new versions found on the installation media. The new versions are in the **Application** folder of the DVD. There's a folder for each extension. The extension package (.app file) is in the **Source** folder. 
 
     For each extension, run [Start-NAVAppDataUpgrade cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/start-navappdataupgrade). First, run the data upgrade for the Application extension, then run it for other Microsoft extensions and third-party extensions. 
 
