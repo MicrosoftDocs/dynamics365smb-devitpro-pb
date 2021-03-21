@@ -187,7 +187,7 @@ When you installed version 18 in **Task 1**, a version 18 [!INCLUDE[server](../d
     Restart-NAVServerInstance -ServerInstance <BC18 server instance>
     ```
 
-## <a name="UploadLicense"></a> Task 6: Import [!INCLUDE[prod_short](../developer/includes/prod_short.md)] partner license  
+## <a name="UploadLicense"></a> Task 7: Import [!INCLUDE[prod_short](../developer/includes/prod_short.md)] partner license  
 
 If you have a new [!INCLUDE[prod_short](../developer/includes/prod_short.md)] partner license, make sure that it has been uploaded to the database. To upload the license, use the [Import-NAVServerLicense cmdlet](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense): 
 
@@ -199,7 +199,7 @@ Restart the server instance after you import the license.
 
 For more information, see [Uploading a License File for a Specific Database](../cside/cside-upload-license-file.md#UploadtoDatabase).  
 
-## Task 7: Publish base application and test library extensions
+## Task 8: Publish base application and test library extensions
 
 In this task, you'll publish extensions to the version 18.0 server instance. Publishing adds the extension to the application database that is mounted on the server instance. The extension is then available for installing on tenants later. It updates internal tables, compiles the components of the extension behind-the-scenes, and builds the necessary metadata objects that are used at runtime.
 
@@ -214,19 +214,19 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     Publish-NAVApp -ServerInstance <BC18 server instance> -Path "<path to the System.app file>" -PackageType SymbolsOnly
     ```
 -->
-1. Publish the custom base application extension that you created in **Task 2**.
+1. Publish the custom base application extension that you created in **Task 3**.
 
     ```powershell
     Publish-NAVApp -ServerInstance <BC18 server instance> -Path "<path to the base application extension package file>"
     ```
 
-2. Publish the test library extension if you created one in **Task 2**.
+2. Publish the test library extension if you created one in **Task 3**.
 
     ```powershell
     Publish-NAVApp -ServerInstance <BC18 server instance> -Path "<path to the test library extension package file>"
     ```
 
-## Task 8: Synchronize tenant
+## Task 9: Synchronize tenant
 
 This task updates the tenant database schema with schema changes in system objects and application objects.
 
@@ -258,7 +258,7 @@ If you have a multitenant deployment, run these steps for each tenant (replacing
 
     At this stage, the tenant state is **Operational**.
 
-## Task 9: Install base and test applications
+## Task 10: Install base and test applications
 
 You'll synchronize the tenant to the custom base application and test library extension (if any). When you synchronize the tenant, extensions take ownership of the tables in the SQL Database.
 
@@ -288,7 +288,7 @@ If you have a multitenant deployment, run these steps for each tenant (replacing
 
     This step is like what you did for the custom base application in steps 1 and 2.
 
-## Task 10: Publish and install extensions
+## Task 11: Publish and install extensions
 
 Now, you can install the Microsoft and 3rd-party extensions that were installed on the tenant before the upgrade.
 
@@ -316,7 +316,7 @@ Now, you can install the Microsoft and 3rd-party extensions that were installed 
 
 Now, your application is fully upgraded to the version 18 platform.
 
-## Task 11: <a name="JSaddins"></a>Upgrade control add-ins
+## Task 12: <a name="JSaddins"></a>Upgrade control add-ins
 
 The [!INCLUDE[server](../developer/includes/server.md)] installation includes new versions of the Microsoft-provided Javascript-based control add-ins, like Microsoft.Dynamics.Nav.Client.BusinessChart, Microsoft.Dynamics.Nav.Client.VideoPlayer, and more. If your solution uses any of these control add-ins, upgrade them to the latest version.
 
@@ -348,7 +348,7 @@ Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Cl
 Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Client.WelcomeWizard' -PublicKeyToken 31bf3856ad364e35 -ResourceFile ($AppName = Join-Path $ServicesAddinsFolder 'WelcomeWizard\Microsoft.Dynamics.Nav.Client.WelcomeWizard.zip')
 ```
 
-## Task 12: Install upgraded permissions sets
+## Task 13: Install upgraded permissions sets
 
 In this task, you install the custom permission sets that you upgraded earlier in this procedure. The steps depend on whether you've decided to use permission sets as AL objects or as data.
 

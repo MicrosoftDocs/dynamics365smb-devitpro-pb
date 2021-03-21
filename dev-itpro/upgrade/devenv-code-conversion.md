@@ -241,24 +241,6 @@ In this task, you'll create a AL project in Visual Studio code that you'll use f
 
 7. Modify the `app.json` for the project as follows:
 
-<!--
-    > [!IMPORTANT]
-    > If you upgrading to 15-0-15.2, the ID, name, and publisher, and version of the custom base application must match the Business Central base application. Set the parameters to the following values`:
-
-        ```json
-          "id": "437dbf0e-84ff-417a-965d-ed2bb9650972",
-          "name": "Base Application",
-          "publisher": "Microsoft",
-          "version": "14.13.0.0"
-        ```
-
-        We recommend that you set the "version" to the same version as the C/AL application.  
-    - Add the setting `"target": "OnPrem"` somewhere in the file.
-    - Change the `idRange` to include all the IDs used by your base application (or leave blank).
-    - Delete the values in the `dependencies` parameter.
-    - If you're upgrading to version 16 or later, delete the `application`
-    - -->
-
     |Parameter|Value|
     |---------|-----|
     |`"id":`|Use the default that was created for you.|
@@ -489,24 +471,6 @@ If you converted the test library form C/AL to AL, you'll now create and build a
 
 2. As with base application project, you have to modify the `app.json` file, but in this case, you have to change the version and add a dependency on the base application that you created.
 
-<!--
-    - Set the `"version"` to the old application version, such as `14.5.0.0`.
-    - Set the `"dependencies"` to include information about your custom the base application. 
-
-        ``` 
-        "dependencies": [
-        {
-            "appId": "437dbf0e-84ff-417a-965d-ed2bb9650972",
-            "publisher": "Microsoft",
-            "name": "Base Application",
-            "version": "14.5.0.0"
-        }
-        ],
-        ```
-    - Set the `target` to `OnPrem`.
-    - Change the `idRange` to include all the IDs used by your test application (or leave blank).
-    -->
-    
     |Parameter|Value|
     |---------|-----|
     |`"id":`|Use the default that was created for you.|
