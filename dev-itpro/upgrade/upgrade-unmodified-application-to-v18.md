@@ -423,7 +423,7 @@ In this task, you install the custom permission sets that you upgraded earlier i
     Set-NavServerConfiguration -ServerInstance <BC18 server instance> -KeyName "UsePermissionSetsFromExtensions" -KeyValue false
     ```
 
-2. Restart the serve insatnce.
+2. Restart the serve instance.
 3. Open the [!INCLUDE[webclient](../developer/includes/webclient.md)].
 4. Search for and open the **Permission Sets** page.
 5. Select **Import Permission Sets**, and follow the instructions to import the XML file.
