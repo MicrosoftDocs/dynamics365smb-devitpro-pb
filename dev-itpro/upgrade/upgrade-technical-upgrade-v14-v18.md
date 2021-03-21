@@ -71,6 +71,10 @@ The process for upgrading is similar for a single-tenant and multitenant deploym
 
     CodeViewer is no longer used in version 18. But it's required because of references that exist in the converted application. If you omit this step, you might get compilation errors later.
 
+4. Copy Dynamics Online Connect add-in.
+
+    The Dynamics Online Connect add-in was deprecated in version 17. As a result, it's been removed from the DVD and is no longer installed as part of the [!INCLUDE[server](../developer/includes/server.md)]. However, for upgrade, the add-in may still be required for the old System Application. If the [!INCLUDE[server](../developer/includes/server.md)] installation for your current version includes the **Add-ins\Connect** folder, then copy the **Connect** folder to the **Add-ins** folder of the version 18 server installation.
+
 ## Task 2: Upgrade permission sets
 
 Version 18 introduces the capability to define permissions sets as AL objects, instead data. Permissions sets as AL objects is now the default and recommended model for permissions. However, for now, you can choose to use the legacy model, where permissions are defined and stored as data in the database. Whichever model you choose, there are certain tasks and process you'll have to go through during upgrade.
@@ -191,9 +195,11 @@ If you have a new [!INCLUDE[prod_short](../developer/includes/prod_short.md)] pa
 Import-NAVServerLicense -ServerInstance <BC18 server instance> -LicenseFile "<path to the license>"
 ```
 
+Restart the server instance after you import the license.
+
 For more information, see [Uploading a License File for a Specific Database](../cside/cside-upload-license-file.md#UploadtoDatabase).  
 
-## Task 7: Publish system symbols, base application, and test library extensions
+## Task 7: Publish base application and test library extensions
 
 In this task, you'll publish extensions to the version 18.0 server instance. Publishing adds the extension to the application database that is mounted on the server instance. The extension is then available for installing on tenants later. It updates internal tables, compiles the components of the extension behind-the-scenes, and builds the necessary metadata objects that are used at runtime.
 
@@ -360,7 +366,7 @@ In this task, you install the custom permission sets that you upgraded earlier i
     Set-NavServerConfiguration -ServerInstance <BC18 server instance> -KeyName "UsePermissionSetsFromExtensions" -KeyValue false
     ```
 
-2. Restart the serve insatnce.
+2. Restart the serve instance.
 3. Open the [!INCLUDE[webclient](../developer/includes/webclient.md)].
 4. Search for and open the **Permission Sets** page.
 5. Select **Import Permission Sets**, and follow the instructions to import the XML file.

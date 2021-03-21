@@ -241,9 +241,10 @@ In this task, you'll create a AL project in Visual Studio code that you'll use f
 
 7. Modify the `app.json` for the project as follows:
 
-    > [!IMPORTANT]
-    > The ID, name, and publisher, and version of the custom base application must match the Business Central base application. Set the parameters to the following values`:
 <!--
+    > [!IMPORTANT]
+    > If you upgrading to 15-0-15.2, the ID, name, and publisher, and version of the custom base application must match the Business Central base application. Set the parameters to the following values`:
+
         ```json
           "id": "437dbf0e-84ff-417a-965d-ed2bb9650972",
           "name": "Base Application",
@@ -260,9 +261,9 @@ In this task, you'll create a AL project in Visual Studio code that you'll use f
 
     |Parameter|Value|
     |---------|-----|
-    |`"id":`|`"437dbf0e-84ff-417a-965d-ed2bb9650972"`|
-    |`"name":`|`"Base Application"`|
-    |`"publisher":`|`"Microsoft"`|
+    |`"id":`|Use the default that was created for you.|
+    |`"name":`|Specify any valid name.|
+    |`"publisher":`|Specify any valid publisher name.|
     |`"version":`|You can use any valid version number, but it's recommended to set it to the same version as the C/AL application.|
     |`"dependencies":`|Delete all values, so this parameter is empty.|
     |`"platform":`|Set to match the platform version that you're upgrading to: <ul><li>`"18.0.0.0"`- version 18</li><li>`"17.0.0.0"`- version 17</li><li>`"16.0.0.0"`- version 16</li><li>`"15.0.0.0"`- version 15</li></ul>|
@@ -508,7 +509,7 @@ If you converted the test library form C/AL to AL, you'll now create and build a
     
     |Parameter|Value|
     |---------|-----|
-    |`"id":`|Use the default that was createwd for you.|
+    |`"id":`|Use the default that was created for you.|
     |`"name":`|Specify any valid name.|
     |`"publisher":`|Specify any valid publisher name.|
     |`"version":`|You can use any valid version number, but it's recommended to set it to the same version as the C/AL application.|
@@ -564,6 +565,7 @@ If you are performing a technical upgrade from version 14.0 to version 15, 16, o
 - [Technical Upgrade to version 15.0](upgrade-technical-upgrade-v14-v15.md#Preparedb)
 - [Technical Upgrade to to version 16.0](upgrade-technical-upgrade-v14-v16.md#Preparedb)
 - [Technical Upgrade to to version 17.0](upgrade-technical-upgrade-v14-v17.md#Preparedb)
+- [Technical Upgrade to to version 18.0](upgrade-technical-upgrade-v14-v18.md#Preparedb)
 
 <!--
 ## Task 11: Publish your project
