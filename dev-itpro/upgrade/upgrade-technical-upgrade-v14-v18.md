@@ -59,7 +59,7 @@ The process for upgrading is similar for a single-tenant and multitenant deploym
 
 2. Install all components of version 18.
 
-    You'll have to keep version 14.0 installed, because you'll need it to complete the C/AL to AL conversion in this process. Therefore, when you install version 18, you must either specify different port numbers for components during installation or stop the version 14.0 [!INCLUDE[server](../developer/includes/server.md)] instance before you run the installation. Otherwise, you'll get an error that the [!INCLUDE[server](../developer/includes/server.md)] failed to install.
+    You keep version 14.0 installed, because you'll need it to complete the C/AL to AL conversion. So when you install version 18, you must either specify different port numbers for components during installation or stop the version 14.0 [!INCLUDE[server](../developer/includes/server.md)] instance before you run the installation. Otherwise, you'll get an error that the [!INCLUDE[server](../developer/includes/server.md)] failed to install.
 
     For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
 
@@ -77,7 +77,7 @@ The process for upgrading is similar for a single-tenant and multitenant deploym
 
 ## Task 2: Upgrade permission sets
 
-Version 18 introduces the capability to define permissions sets as AL objects, instead data. Permissions sets as AL objects is now the default and recommended model for permissions. However, for now, you can choose to use the legacy model, where permissions are defined and stored as data in the database. Whichever model you choose, there are certain tasks and process you'll have to go through during upgrade.
+Version 18 introduces the capability to define permissions sets as AL objects, instead data. Permissions sets as AL objects is now the default and recommended model for permissions. For now, you can choose to use the legacy model, where permissions are defined and stored as data in the database. Whichever model you choose, there are certain tasks and process you'll have to go through during upgrade.
 
 For more information, see [Upgrading Permissions Sets and Permissions](upgrade-permissions.md)<!--[Permissions Upgrade Considerations](https://review.docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-entitlements-and-permissionsets-overview?branch=permissionset#upgrade-considerations)-->.
 
@@ -330,7 +330,7 @@ To upgrade the control add-ins from the client, do the following steps:
     The .zip files are located in the **Add-ins** folder of the [!INCLUDE[server](../developer/includes/server.md)] installation. There's a subfolder for each add-in. For example, the path to the Business Chart control add-in is `C:\Program Files\Microsoft Dynamics 365 Business Central\180\Service\Add-ins\BusinessChart\Microsoft.Dynamics.Nav.Client.BusinessChart.zip`.
 5. After you've imported all the new control add-in versions, restart Business Central Server instance.
 
-Alternatively, you can use the [Set-NAVAddin cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navaddin) of the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]. For example, the following commands update the control add-ins installed by default. Modify the commands to suit:
+You could, instead, use the [Set-NAVAddin cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navaddin) of the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]. For example, the following commands update the control add-ins installed by default. Modify the commands to suit:
 
 ```powershell
 $InstanceName = 'BC180'
@@ -350,7 +350,7 @@ Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Cl
 
 ## Task 13: Install upgraded permissions sets
 
-In this task, you install the custom permission sets that you upgraded earlier in this procedure. The steps depend on whether you've decided to use permission sets as AL objects or as data.
+In this task, you install the custom permission sets that you upgraded earlier in this procedure. The steps depend on whether you've decided to use permission sets as AL objects or data.
 
 ### For permission sets as AL objects
 

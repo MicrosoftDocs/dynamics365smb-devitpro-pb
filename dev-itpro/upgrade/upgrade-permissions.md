@@ -13,11 +13,13 @@ ms.service: "dynamics365-business-central"
 ---
 # Upgrading Permissions Sets and Permissions
 
-[!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1 (v18) introduced a new model for permissions. In previous versions, permission sets and permissions are only defined in data, which means they're stored in the tables of the application and tenant databases. Permission sets and permissions can now be defined in AL code. They're created by using the `permissionset` and `permissionsetextension` objects, and packaged in extensions. See [Entitlements and Permissions](https://review.docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-entitlements-and-permissionsets-overview?branch=permissionset) to learn more. This change has implications on upgrade as discussed in this article.
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1 (v18) introduced a new model for permissions. In previous versions, permission sets and permissions are defined only as data, which means they're stored in the tables of the application and tenant databases. Permission sets and permissions can now be defined in AL code. They're created by using the `permissionset` and `permissionsetextension` objects in AL code, and then packaging them in extensions. See [Entitlements and Permissions](https://review.docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-entitlements-and-permissionsets-overview?branch=permissionset) to learn more.
+
+This change has implications on upgrade, which are discussed in this article.
 
 ## Overview
 
-Permissions as AL objects is now the default model. You'll see this change, for example, in a v18 demonstration database. If you view the permissions-related tables in the database, like the **Permission Set** and **Permission** tables, you'll notice that tables are almost empty.
+Permissions as AL objects is now the default model in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. You'll see this change, for example, if you install v18 demonstration database. If you view the permissions-related tables in the database, like the **Permission Set** and **Permission** tables, you'll notice that tables are almost empty.
 
 Although it's recommended to transition to permissions defined as AL objects, you can choose to continue using the legacy databased permissions model. You specify which permissions model your solution uses by changing [!INCLUDE[server](../developer/includes/server.md)] setting called **Use Permission Sets From Extensions**.
 
@@ -28,7 +30,7 @@ When upgrading from previous version, decide which model you want to use. Then, 
 > [!NOTE]
 > Permission sets defined as data has been deprecated and will be removed in an upcoming release. For more information, see [Deprecated Features in W1](https://review.docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/upgrade/deprecated-features-w1?branch=permissionset#permissions).
 
-When you upgrade, the existing permission sets and permissions stored as data aren't affected during upgrade. They'll exist as before in the database even after upgrade. Included are permissions sets from Microsoft, partners, extensions, and user-defined permission sets. If you have customized Microsoft permission sets, or made your own from copies, you'll probably want to keep them up to date with the latest from Business Central.
+When you upgrade, the existing permission sets and permissions stored as data aren't affected during upgrade. They'll exist as before in the database even after upgrade. Included are permissions sets from Microsoft, partners, extensions, and user-defined permission sets. If you have customized Microsoft permission sets, you'll probably want to keep them up to date with the latest from Business Central.
 
 1. From the old [!INCLUDE [prod_short](../developer/includes/prod_short.md)] version, open the **Permissions Sets** page and export the **System** permission sets as XML to a file.
 
