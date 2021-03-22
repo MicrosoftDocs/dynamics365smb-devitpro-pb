@@ -577,13 +577,13 @@ This step removes the temporary tables included in this table migration extensio
 1. Uninstall the second version of the table migration extension.
 
    ```powershell
-   Uninstall-NAVApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name "<extension name>" -Version <extension version>
+   Uninstall-NAVApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name "<table migration extension>" -Version <extension version>
    ```
 
 2. Synchronize the extension by using the clean mode:
 
    ```powershell
-   Sync-NAVApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name "<extension name>" -Version <extension version> -Mode clean
+   Sync-NAVApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name "<table migration extension>" -Version <extension version> -Mode clean
    ```
 
 3. Unpublish the two versions of the table migration extension.
