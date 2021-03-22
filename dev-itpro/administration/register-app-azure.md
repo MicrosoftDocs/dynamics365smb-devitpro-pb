@@ -74,7 +74,6 @@ The first task is to use Azure portal to register an application for Business Ce
     |[Universal Print integration](/dynamics365/business-central/ui-specify-printer-selection-reports#set-up-universal-print)|Microsoft Graph |PrinterShare.ReadBasic.All|Delegated|Read basic information about printer shares. Required for using Universal Print printers.|
     |||PrintJob.Create|Delegated|Create print jobs. Required for using Universal Print printers|
     |||PrintJob.ReadBasic|Delegated|Read basic information of user's print jobs. Required for using Universal Print printers.|
-    |||PrintSettings.Read.All|Delegated|Read tenant-wide print settings. Required for using Universal Print printers.|
     |[Power BI Integration](/dynamics365/business-central/admin-powerbi-setup)|Power BI Service|Report.Read.All|Delegated|View all reports. Required for viewing Power BI reports in Business Central.|
 
 ## Set up the registered application in Business Central
