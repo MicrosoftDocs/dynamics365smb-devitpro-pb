@@ -32,7 +32,7 @@ IndentationColumn = IntegerFieldName;
   
 ## Remarks
 
-This property must be set to a field or variable of the [Integer Data Type](../methods-auto/library.md).
+This property must be set to a field or variable of the [Integer Data Type](../methods-auto/integer/integer-data-type.md).
 
 The IndentationColumn property is used together with either the IndentationControls property or ShowAsTree property to create an indented hierarchy list. This property has no effect if the IndentationControls property is not set and ShowAsTree property is set to false (default).
 
