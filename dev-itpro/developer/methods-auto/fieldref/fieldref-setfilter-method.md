@@ -56,11 +56,11 @@ If the method is called with a field for which a filter already exists, the filt
 |\*|Forms a part of value|  
 |@|Case-insensitive|  
   
-This method is like the [SetFilter Method \(Record\)](../library.md) method.  
+This method is like the [SetFilter Method \(Record\)](../record/record-setfilter-method.md) method.  
   
 ## Example
 
-The following example opens the Customer table as a RecordRef variable that is named CustomerRecref. The [Field Method \(RecordRef\)](../library.md) creates a FieldRef for the first field \(No.\) and stores the reference in the MyFieldRef variable. The [GetFilter Method \(FieldRef\)](../library.md) retrieves the filters that are set on the No. field and stores the value in the Filter1 variable. The value of any filter that is set is displayed in a message box. The SetFilter method sets a filter that selects records from 10000 to 40000 in the No. field. The [GetFilter Method \(FieldRef\)](../library.md) retrieves and stores the new filter in the Filter2 variable and displays it in a message. The value in the Filter1 variable is blank because no filter is set. The value in Filter2 is 10000..40000 because of the filter that is set by the SetFilter method.
+The following example opens the Customer table as a RecordRef variable that is named CustomerRecref. The [Field Method \(RecordRef\)](../recordref/recordref-field-method.md) creates a FieldRef for the first field \(No.\) and stores the reference in the MyFieldRef variable. The [GetFilter Method \(FieldRef\)](fieldref-getfilter-method.md) retrieves the filters that are set on the No. field and stores the value in the Filter1 variable. The value of any filter that is set is displayed in a message box. The SetFilter method sets a filter that selects records from 10000 to 40000 in the No. field. The [GetFilter Method \(FieldRef\)](fieldref-getfilter-method.md) retrieves and stores the new filter in the Filter2 variable and displays it in a message. The value in the Filter1 variable is blank because no filter is set. The value in Filter2 is 10000..40000 because of the filter that is set by the SetFilter method.
  
 ```al
 var
