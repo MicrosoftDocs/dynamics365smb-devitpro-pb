@@ -66,7 +66,7 @@ For example, if a user who has language set to ENG \(English\) enters the date f
 
 If a date formula is entered with \< > delimiters surrounding it, then the date formula is stored in a generic, nonlanguage-dependent format. This makes it possible to develop date formulas that are not dependent on the currently selected language.  
 
-For more information about how to calculate the duration between two DateTimes, see [Duration Data Type](../library.md).  
+For more information about how to calculate the duration between two DateTimes, see [Duration Data Type](../duration/duration-data-type.md).  
 
 ## Example 1
 

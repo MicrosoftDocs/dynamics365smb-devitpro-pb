@@ -36,15 +36,16 @@ An instance of the [SessionSettings](sessionsettings-data-type.md) data type.
 The method gets the data from the following fields in system table **2000000073 User Personalization**: App ID, Company, Language ID, Locale ID, Profile ID, Scope, and Time Zone. In the SessionSettings object, the data is stored in properties that correspond to the fields of the system table.
 
 After you call the Init method, you can change the values in the object by calling the following methods:
--   [Company](../library.md)
--   [LanguageId](../library.md)
--   [LocalId method](../library.md)
--   [ProfileAppId](../library.md)
--   [ProfileId](../library.md)
--   [ProfileSystemScope](../library.md)
--   [TimeZone](../library.md)
 
-The Init method is useful before calling the [RequestSessionUpdate](../library.md) method to ensure that all properties are initialized before sending the request to the server instance to start a new client session.
+- [Company](sessionsettings-company-method.md)
+- [LanguageId](sessionsettings-languageid-method.md)
+- [LocalId method](sessionsettings-localeid-method.md)
+- [ProfileAppId](sessionsettings-profileappid-method.md)
+- [ProfileId](sessionsettings-profileid-method.md)
+- [ProfileSystemScope](sessionsettings-profilesystemscope-method.md)
+- [TimeZone](sessionsettings-timezone-method.md)
+
+The Init method is useful before calling the [RequestSessionUpdate](sessionsettings-requestsessionupdate-method.md) method to ensure that all properties are initialized before sending the request to the server instance to start a new client session.
 
 ## Example  
 This example uses the Init method to create a SessionSettings object that includes the current client user's personalization settings from the database, and uses the Company method to set the company to 'MyCompany'. Then, the RequestSessionUpdate method sends a request to the client to abandon the current client session and start a new session that uses the personalization settings in the SessionSettings object.
