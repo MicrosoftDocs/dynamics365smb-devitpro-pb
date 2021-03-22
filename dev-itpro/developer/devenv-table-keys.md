@@ -201,7 +201,7 @@ tableextension 50121 MyBaseTableExt extends MyBaseTable
         key(ExtKey2; MyBaseField1, MyBaseField2) //secondary key
         {
         }
-        // The following key isn't allowed because it contains fields from base table and table extension
+        // The following key isn't allowed because it contains fields from the base table and the table extension
         //key(ExtKey3; MyBaseField1, MyExtField2)
         //{
         //}
