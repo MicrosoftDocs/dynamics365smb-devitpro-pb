@@ -48,14 +48,13 @@ https://localhost:7048/BC130/OData/Company('CRONUS International Ltd.')/Customer
 |floor|`$filter=floor(FDecimal) eq 0`||  
 |ceiling|`$filter=ceiling(FDecimal) eq 1`||  
 
-## Referencing Different Data Types in Filter Expressions  
- You must use the appropriate notation for different data types with filter expressions.  
+## Referencing Different Data Types in Filter Expressions
+
+You must use the appropriate notation for different data types with filter expressions.  
 
 - String values must be delimited by single quotation marks.  
 
 - Numeric values require no delimiters.  
-
-For more information about data types and other information about conventions and standards for OData URIs, see [Atom Publishing Protocol: URI Conventions](https://go.microsoft.com/fwlink/?LinkId=214635). Conventions for data types are addressed in section 2.2.2, "Abstract Type System."  
 
 ## See Also
 
