@@ -1,12 +1,13 @@
 ---
-title: "How to: Set Up Multiple Web Server Instances"
-description: Explains how to set up more than one web server instance on IIS for the web client. 
+title: Set Up Multiple Business Central Web Server Instances using PowerShell
+description: Learn how to use Windows PowerShell to set up more than one web server instance on IIS for the Business Central web client.
+
 ms.custom: na
 ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
@@ -37,19 +38,22 @@ There are different ways to launch this module and start using the cmdlets:
 
 - Otherwise, start Windows PowerShell as an administrator, and use the [Import-Module](/powershell/module/microsoft.powershell.core/import-module) cmdlet to import the **NAVWebClientManagement.psm1** file:
 
-  ```
+  ```powershell
   Import-Module -Name [filepath]
-  ```  
-  For example:
   ```
+
+  For example:
+
+  ```powershell
   Import-Module -Name "C:\Program Files\Microsoft Dynamics 365 Business Central\130\Service\NAVWebClientManagement.psm1"
   ```
 
-    For more information about starting Windows PowerShell, see [Starting Windows PowerShell](/powershell/scripting/setup/starting-windows-powershell).
+  For more information, see [the Windows PowerShell docs](/powershell/scripting/overview).
 
 ## Creating [!INCLUDE[webserver](../developer/includes/webserver.md)] instances
 
 ### Get Access to the WebPublish folder
+
 To create a new web server instance, you need access to the **WebPublish** folder that contains the content files for the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)].
 
 - This folder is available on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] installation media (DVD) and has the path "DVD\WebClient\Microsoft Dynamics NAV\13x\Web Client\WebPublish". 

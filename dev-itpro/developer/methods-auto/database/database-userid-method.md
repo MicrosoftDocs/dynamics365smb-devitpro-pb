@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -39,16 +39,16 @@ This string contains the value of the User Name field in table 2000000120, the U
 
 ## Example
 
-```
-User := USERID;  
-MESSAGE('The system was started by %1', User);  
+```al
+User := UserId;  
+Message('The system was started by %1', User);  
 ```
 The following is an example of the output of the previous code:
 
 **The system was started by cronus\simon.**
 
-
 ## See Also
+
 [Database Data Type](database-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

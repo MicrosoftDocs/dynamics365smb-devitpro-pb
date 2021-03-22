@@ -6,7 +6,7 @@ ms.date: 12/03/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -37,18 +37,20 @@ The name of the company, or an empty string if no company has been selected.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Example  
-```
+## Example
+
+```al
 var
     CompName: Text[1024];
     Text000: Label 'The name is %1.';
 begin
-    CompName := COMPANYNAME;  
-    MESSAGE(Text000, CompName);  
+    CompName := CompanyName;  
+    Message(Text000, CompName);  
 end;
 ```  
 
 ## See Also
+
 [Database Data Type](database-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

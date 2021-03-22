@@ -1,81 +1,103 @@
 ---
 title: "Ready to Go"
-description: "The Ready to Go program contains a set of resources, services and tools to support Microsoft Dynamics 365 Business Central."
+description: "Ready to Go contains a set of resources, services and tools to support Microsoft Dynamics 365 Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 01/15/2021
 ms.reviewer: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
-# The "Ready to Go" Program
+# "Ready to Go" Resources
 
 ![ReadyToGo Banner](../media/readytogo-banner.png)
 
-[!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] is a business management solution that helps companies connect their financials, sales, service, and operations to streamline business processes, improve customer interactions, and make better decisions.  
+## Roadmap and what’s new 
 
-[!INCLUDE[prod_short](../includes/prod_short.md)] creates multiple [opportunities for partners to provide apps or consulting services](https://aka.ms/businesscentralapps) on Microsoft AppSource.
+**Overall roadmap**  
+Find the overall roadmap for Business Central [here](https://dynamics.microsoft.com/roadmap/business-central/) 
 
-The "Ready to Go" program is designed to support you in the journey of bringing offerings to market. The program contains learning, coaching, and tooling. Use the tabs below to read more about the elements of the "Ready to Go" program.  
+**What’s new in Business Central**  
+Find what’s new and planned [here](https://docs.microsoft.com/dynamics365/business-central/product-news)
 
-> [!TIP]
-> Keep on top of news, tips, tools, programs, and new capabilities by following [Business Central on the Dynamics 365 cloudblog](https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/).
+**Release plan landing page**  
+Find out what's new in Microsoft Dynamics 365 applications and Microsoft Power Platform [here](https://docs.microsoft.com/dynamics365/release-plans/) 
 
-# [**Learning**](#tab/learning)
-**The "Ready to Go" online learning catalog** is an extensive collection of materials for [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)], including training resources, white papers, and tools for both app developers (ISVs) as well as resellers (VARs). It is designed for marketeers, business decision makers, sales and pre-sales roles, architects, consultants, and developers. [Access the "Ready to Go" learning catalog](https://go.microsoft.com/fwlink/?linkid=2002101).
+**Minor updates**  
+Find the latest minor update here: [aka.ms/BCLastMinorUpdate](https://aka.ms/bclastminorupdate) 
 
-# [**Coaching**](#tab/coaching)
-Several Development Centers, Master VARs, and Training Centers provide **"Ready to Go" coaching**.
 
-The coaches are independently owned companies which provide services to partners, tailored to their needs. Over time they have developed lots of best practices by supporting multiple partners, they also have strong ties with [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] teams and are always up to date on the latest strategy and product innovation.
+## Country availability and supported languages 
+**Supported countries, regions and languages**  
+Find the countries/regions where Business Central is available and which languages are supported: [aka.ms/BCCountries](https://aka.ms/bccountries)
 
-An example of one of the coaching sessions provided by the Development Centers and Master VARs are **the "Ready to Go" validation workshops**. This workshop is an 8h workshop at a fixed price which is designed to coach you in bringing your app into Microsoft AppSource or help you with the implementation of your first customer.  
+## Training and coaching 
+**ISV Development Centers**  
+Online or in-person coaching for Business Central. Get in touch with an ISV Development Center [here](https://partner.microsoft.com/isv-resource-hub/development-centers/find-a-center)  
 
-Please find the coaches in your region and explore which "Ready to Go" offerings they provide:
+**Microsoft Learn page**  
+Browse all Business Central training videos and courses on Microsoft Learn: [aka.ms/BCLearn](https://aka.ms/BCLearn)
 
-|Company|Coaching services provided|More info|
-|-------|--------------------------|---------|
-|**1ClickFactory** <br>(Development Center)|Coaching and training services in person and online in Europe, North and South America, Asia, and Africa.|[ReadyToGo Contacts](https://www.1clickfactory.com/readytogo/)|
-|**Ciellos** <br>(Development Center)|Coaching and training services in person and online in Europe, North, and South America.|[ReadyToGo Contacts](https://www.ciellos.com/ready-to-go)|
-|**Cloud-Ready-Software**(Development Center)|Coaching and training services in person and online in Europe, North and South America, Asia, and Africa.|[ReadyToGo Contacts](https://cloud-ready-software.com/readytogo/)|
-|**Innova Consulting**<br>(Development Center)|Coaching and training services in person and online in Europe and South America.|[ReadyToGo Contacts](https://www.innovaconsulting.es/en/readytogo/)|
-|**QBS Group**<br>(MasterVAR)|Coaching and training services in person and online in Europe, Middle East, and Africa.|[ReadyToGo Contacts](https://www.qbsgroup.com/service/ready-to-go-for-dynamics-365-business-central/)|
-|**Velosio**<br>(MasterVar)|Coaching and training services in person and online in North America.|[ReadyToGo Contacts](https://www.velosio.com/landing/readytogo/)|
-|**Plataan**<br>(Training Center)|Training services in person and online in Europe, North and South America, Asia, and Africa.|[ReadyToGo Contacts](https://plataan.tv/en)|
+## Events
 
-# [**Tooling**](#tab/tooling)
-**The "Ready to Go" tooling** is designed to support you in the actual app development, including testing and learning scenarios. The platform provides you with various insider builds of [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] (cf. both current, upcoming and daily builds are available).  
-The platform also enables you to provide direct feedback to the Microsoft engineers who are working on [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)]. 
+**Microsoft hosted events**  
+Discover the latest Business Central Launch Event here: [aka.ms/MSDyn365BCLaunchEvent](https://aka.ms/MSDyn365BCLaunchEvent)  
 
-# [**Resources**](#tab/resources)
-### Business Central on the Dynamics 365 Blog for partners
+**Global community hosted events**  
+- [Directions North America](https://www.directionsna.com)
+- [Directions EMEA](https://directions4partners.com)
+- [Directions ASIA](https://directions4partners.com)
+- [TechDays](https://navtechdays.com)
 
-The blog talks about opportunities, processes, programs, and tools for the Business Central partner community. Follow the blog here: [Business Central on the Dynamics 365 Blog for partners](https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/)
+## Engagement
 
-### Monthly "Ready to Go" Office Hours call
-"Ready to Go" Office Hours is a monthly call that takes place the second Tuesday of every month. The call is structured as a FAQ session, where a team of our different experts will be present to answer any questions that you may have in relation to bringing your offerings into AppSource. Sign up here: [aka.ms/ReadyToGoOfficeHours](https://aka.ms/ReadyToGoOfficeHours).
+**GitHub**  
+Use the GitHub forum to post questions about Visual Studio Code and AL Language to the community and Microsoft experts: [github.com/microsoft/al/issues](https://github.com/microsoft/al/issues/) 
 
-### GitHub
-Use the GitHub forum to post questions about AL to the community and Microsoft experts here: [https://github.com/microsoft/al/issues](https://github.com/microsoft/al/issues).
+**Yammer**  
+Join the conversation about Business Central for partners on Yammer: [aka.ms/BCYammer](https://aka.ms/bcyammer)  
 
-### Follow "Ready to Go" activity on social media
-Get insights into what's happening with [!INCLUDE[prod_short](../../includes/prod_short.md)]. Follow us on [Twitter](https://twitter.com/search?q=%23ReadyToGo%20%23MSDYN365BC&src=typd). 
+**Business Central Office Hours Calls**  
+Join the Business Central Office Hours to learn more and connect with the Business Central engineering team. Find the full list of office hours calls from December 2020 throughout March 2021 below. Register for the live calls and find on-demand recordings: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficehours)
 
-### Learn more about the offering types
-+ [Build Add-on apps: https://aka.ms/BusinessCentralAddonApps](https://aka.ms/BusinessCentralAddonApps)  
-+ [Build Embed apps: https://aka.ms/BusinessCentralEmbedApps](https://aka.ms/BusinessCentralEmbedApps)  
-+ [Build Connect apps: https://aka.ms/BusinessCentralConnectApps](https://aka.ms/BusinessCentralConnectApps)  
-+ [Build Localization apps: https://aka.ms/BusinessCentralLocalizationApps](https://aka.ms/BusinessCentralLocalizationApps)  
-+ [Deliver consulting services as a VAR: https://aka.ms/BusinessCentralConsultingServices](https://aka.ms/BusinessCentralConsultingServices) 
+| Date      | Topic |
+|--------------|--------------|
+|Dec 1, 2020 | AppSource; What do you need to do to pass validation?  |
+|Dec 15, 2020 | Controlling your database sizes |
+|Jan 12, 2021 | Customer Migration Tooling |
+|Jan 26, 2021 | Power Platform Integration - Power BI |
+|Feb 9, 2021 | Power Platform, Power Apps, and Dataverse (formerly known as CDS) |
+|Feb 23, 2021 | Performance Toolkit and Telemetry; How to deploy for performance |
+|Mar 9, 2021 | Integrating with Microsoft Teams |
+|Mar 23, 2021 | Business Central apps in AppSource |
+|April 7, 2021 | Rolling out 2021 Release Wave 1 |
+|April 20, 2021 | Environments in Business Central Online |
+|May 4, 2021 | Report Extensibility |
+|May 20, 2021 | Snapshot Debugging (in production and troubleshooting in general) | 
+ 
+**Business Central Localization Apps Office Hours Calls**  
+Join the Business Central Localization Apps Office Hours to learn more about how to deliver localization apps for Business Central online and connect with the Microsoft subject matter experts. The calls typically take place on the first Thursday of every month. There are two calls for each date to accommodate different time zones. First call is from 09.00am-10.00am CET and the second call is from 17.00pm-18.00pm CET. Register for the live calls here: [aka.ms/BCLocOfficeHours](https://aka.ms/BCLocOfficeHours).
 
-### Shortcuts to developing and publishing Business Central apps documentation
+ > [!NOTE]  
+ > If you’ve registered for a call, you will receive an email with a link to the on-demand recording approximately one week after the call. If you didn’t register before the call, you can register at any point after the call and then watch the recording. 
 
-+ [Marketing Validation Checklist](/dynamics365/business-central/dev-itpro/developer/readiness/readiness-checklist-marketing)
-+ [Technical Validation Checklist](/dynamics365/business-central/dev-itpro/developer/devenv-checklist-submission)
-+ [How to create an effective sales landing page](/dynamics365/business-central/dev-itpro/developer/readiness/readiness-how-to-create-sales-landing-page)
-+ [How to make compelling videos](/dynamics365/business-central/dev-itpro/developer/readiness/readiness-how-to-make-compelling-videos)
+## Social
 
-### Learning catalog
-+ [Business Central Learning Catalog](https://go.microsoft.com/fwlink/?linkid=2002101)  
+**Twitter**  
+Follow us on Twitter to stay tuned about what’s going on in the #MSDyn365BC community: [twitter.com/MSDYN365BC](https://www.twitter.com/MSDYN365BC) 
+
+**YouTube**  
+Subscribe to the Microsoft Dynamics 365 channel on YouTube [here](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) 
+
+**Blog for IT Professionals**  
+Business Central on the Dynamics 365 blog for IT Professionals: [cloudblogs.microsoft.com/dynamics365/it/product/business-central](https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/)
+ 
+**Blog for Decision Makers**  
+The Dynamics 365 blog for Business Decision Makers: [cloudblogs.microsoft.com/dynamics365/bdm](https://cloudblogs.microsoft.com/dynamics365/bdm/)
+
+### See Also
+
+Get started with developing apps: [aka.ms/BCPublisher](https://aka.ms/bcpublisher)  
+Get started with reselling apps: [aka.ms/BCReseller](https://aka.ms/bcreseller)  

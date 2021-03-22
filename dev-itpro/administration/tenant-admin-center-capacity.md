@@ -3,11 +3,11 @@ title: Managing Capacity
 description: Use the Business Central administration center to manage your tenant capacity 
 author: jswymer
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: administration, tenant, admin, environment, sandbox
+ms.search.keywords: administration, tenant, admin, environment, sandbox, storage, capacity, quota, limit, database size
 ms.date: 12/04/2020
 ms.author: jswymer
 ---
@@ -16,13 +16,15 @@ ms.author: jswymer
 
 To help customers manage and plan their storage costs on an ongoing basis, the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] includes the **Capacity** page. The **Capacity** page provides an overview of the total database and file storage usage, with details about the storage used by every environment. The page also displays the currently used and the maximum allowed number of production and sandbox environments available for the customer.  
 
-Customers can purchase additional database capacity and environments via their reselling partner by using the following add-ons:  
+Customers can purchase additional database capacity and environments via their reselling partner by using the following add-ons:
+  
 - Dynamics 365 Business Central Database Capacity 
 - Dynamics 365 Business Central Additional Environment Add-on
 
 ## Number of environments
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] administrators can create multiple sandbox and production type environments for various purposes, like:
+
 - Creating more business branches
 - Moving into more countries
 - Expanding within their current country
@@ -32,14 +34,31 @@ Customers can purchase additional database capacity and environments via their r
 
 Every [!INCLUDE[prod_short](../developer/includes/prod_short.md)] customer with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Premium or Essential subscriptions can use one production environment and three sandbox environments, at no extra charge.  
 
-> [!NOTE]
-> Existing customers with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Premium or Essentials subscriptions purchased before October 1st 2020 will keep their existing environment entitlements for a period of 1 year until October 1st 2021 or until their subscription is renewed or ended, whichever occurs last. This won't increase their overall database storage capacity and won't enable extra sandbox environments. These benefits are only activated with the production environments purchased by the customers separately.
-
 Customers can also choose to purchase any number of additional production environments via their CSP partner. Each production environment comes with three additional sandbox environments.  
 
-Production and sandbox environments can be created and used in any country where [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service is available, also in the country where the default [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments are located. Additional environments can be created by customers, administrators, and partners by using the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]. 
+Production and sandbox environments can be created and used in any country where [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service is available, also in the country where the default [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments are located. Additional environments can be created by customers, administrators, and partners by using the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)].
 
-When customer administrators create users in Microsoft 365 Admin Center and assign them [!INCLUDE[prod_short](../developer/includes/prod_short.md)] licenses, each user, by default, gets access to all [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments (sandbox and production) under the same single [!INCLUDE[prod_short](../developer/includes/prod_short.md)] license, still acting within the scope of their license within each of these environments. Administrators can limit users' access to any particular environment by [changing their permissions](/dynamics365/business-central/ui-define-granular-permissions), or by [removing users' access](/dynamics365/business-central/ui-how-users-permissions#to-remove-a-users-access-to-the-system) within that environment. 
+When customer administrators create users in Microsoft 365 Admin Center and assign them [!INCLUDE[prod_short](../developer/includes/prod_short.md)] licenses, each user, by default, gets access to all [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments (sandbox and production) under the same single [!INCLUDE[prod_short](../developer/includes/prod_short.md)] license, still acting within the scope of their license within each of these environments. Administrators can limit users' access to any particular environment by [changing their permissions](/dynamics365/business-central/ui-define-granular-permissions), or by [removing users' access](/dynamics365/business-central/ui-how-users-permissions#to-remove-a-users-access-to-the-system) within that environment.
+
+### Customers with Premium or Essentials subscriptions purchased before October 1 2020
+
+Existing customers with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Premium or Essentials subscriptions purchased before October 1 2020 will keep their existing environment entitlements (three production and three sandbox environments) for a period of one year until October 1 2021 or until their subscription is renewed or ended, whichever occurs last. 
+
+Access to two additional production environments during this period won't increase your overall database storage capacity and won't enable extra sandbox environments. These benefits are only activated with the production environments purchased by the customers separately.
+
+Examples:
+
+- Your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] subscription renews **before** October 1 2021
+
+    You can use up to three production environments until October 1 2021. After that date, you'll only be entitled to one production and three sandbox environments.
+
+- Your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] subscription renews **after** October 1 2021
+
+    You can use up to three production environments until the day your subscription renews. After that date, you'll only be entitled to one production and three sandbox environments.
+
+When your entitlement for two additional production environments expires, the additional production environments you may have created during that period will still be fully available, you will not be automatically charged for the extra environments, but in order to become compliant you will have to purchase additional production environments via your CSP partner within 30 days following the expiration date. See the **Exceeding capacity quotas** section for more details. 
+
+Use the **Capacity** page to see how many environments of each type you have available for your organization.  
 
 ## Storage
 
@@ -73,11 +92,11 @@ The content of the other tables is counted towards the **Database usage** storag
 
 ## Exceeding capacity quotas 
 
-Exceeding the paid database storage limit won't interrupt transaction processing within the existing environments. The existing environments that organically grow and eventually exceed the quota will still be accessible and available for the customers to continue their business operations.
+Exceeding the paid database storage limit won't interrupt transaction processing within the existing environments. The existing environments that organically grow and eventually exceed the quota will still be accessible and available for the customers to continue their business operations. You won't be automatically charged for the extra storage occupied by these environments.
 
-However, once the capacity limits are exceeded, the customers won't be able to create new environments or copy their existing environments until the storage used by the existing environments is decreased to fit the quota or additional capacity is purchased.  
+However, once the capacity limits are exceeded, the customers won't be able to create new environments or copy their existing environments until the storage used by the existing environments is decreased to fit the quota or additional capacity is purchased. These operations will also be blocked for the customers who have more environments than they're entitled to, according to their subscription and purchased environment add-ons.  
 
-Administrative actions are currently not limited by the File storage, however similar restrictions will be applied to the File storage with one of the next releases of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
+Administrative actions are currently not limited by the File storage. However, similar restrictions will be applied to the File storage with one of the next releases of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 ## Reducing Data Stored in Databases
 

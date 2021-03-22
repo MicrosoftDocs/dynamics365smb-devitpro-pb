@@ -2,11 +2,11 @@
 title: "Text.TrimStart Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 03/09/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -38,7 +38,7 @@ A string containing the characters to remove.
 ## Return Value
 *Result*
 &emsp;Type: [Text](text-data-type.md)
-A copy of this string without all leading white-space characters.
+A copy of this string without all leading occurrences of the characters specified in the *Chars* parameter.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

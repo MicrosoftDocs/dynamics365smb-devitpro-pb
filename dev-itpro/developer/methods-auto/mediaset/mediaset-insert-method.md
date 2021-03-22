@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -53,7 +53,7 @@ This example uses the Insert method and [Item Method \(MediaSet\)](../../methods
 -   Each table contains the record number '1000'.
 -   There is at least 1 media object in the MediaSet of record 1000 in TableA.
 
-```
+```al
  var
     recA: Record TableA;
     recB: Record TableB;

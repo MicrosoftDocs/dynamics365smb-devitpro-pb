@@ -6,7 +6,7 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ---
 # [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Web Services
@@ -23,7 +23,7 @@ Developers planning to create [!INCLUDE[dyn_nav](../developer/includes/dyn_nav_m
 |Object|SOAP web services|OData web services|  
 |-|-----------------------|------------------------|  
 |Pages|Yes: Create, Read, Update, and Delete operations \(CRUD\)|Yes: Create, Read, Update, and Delete operations \(CRUD\)|  
-|Codeunits|Yes|Yes (through OData unbound actions|  
+|Codeunits|Yes|Yes (through OData unbound actions)|  
 |Queries|No|Yes: Read-only|  
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] supports OData web services in addition to the SOAP web services that have been available since [!INCLUDE[nav2009](../developer/includes/nav2009_md.md)]. 

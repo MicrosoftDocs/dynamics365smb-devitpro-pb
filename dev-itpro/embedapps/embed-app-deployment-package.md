@@ -6,7 +6,7 @@ ms.custom: na
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
 ms.date: 10/01/2020
@@ -125,6 +125,9 @@ The manifest.json file, supplied within the deployment package, contains importa
 | images| Object | Object that contains paths to the branding images included with the package. See the `"images"` section below.| 
 
 #### "images"
+
+> [!IMPORTANT]
+> The combined size of all images you include with the deployment package must not exceed 490 KB.
 
 |Setting|Type|Description|
 |----|----|-----------|

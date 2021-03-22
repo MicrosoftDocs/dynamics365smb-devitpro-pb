@@ -7,7 +7,7 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
@@ -59,6 +59,12 @@ For cloud solutions .NET interop is not available due to safety issues in runnin
 With the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)], you can find AL types that replace the most typical usages of .NET like HTTP, JSON, XML, StringBuilder, Dictionaries, and Lists. Many .NET usages can be replaced directly by the AL types resulting in much cleaner code. For more information, see [HTTP, JSON, TextBuilder, and XML API Overview](devenv-restapi-overview.md).
 
 For things that are not possible to achieve in AL code, the recommendation is to use Azure Functions to host the DLL or C# code previously embedded and call that service from AL.
+
+## Extensions published from Visual Studio Code or created using Designer have disappeared from a sandbox environment. Why?
+
+Extensions that have been published to a sandbox environment from Visual Studio Code or created using Designer are removed when the sandbox environment is updated or relocated within our service. However, the data of an app is not removed, so you only have to re-publish and install the app to make it available.
+
+For more information, see [Sandbox Environments](../administration/environment-types.md).
 
 ## See Also
 [Getting Started with AL](devenv-get-started.md)  

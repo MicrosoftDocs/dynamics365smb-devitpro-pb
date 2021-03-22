@@ -2,11 +2,11 @@
 title: Known Issues with On-premises
 description: Provides an overview of the known issues in Business Central versions
 ms.custom: na
-ms.date: 11/20/2020
+ms.date: 02/08/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
 ms.service: "dynamics365-business-central"
@@ -18,6 +18,89 @@ This article describes some known issues in [!INCLUDE[prod short](../developer/i
 
 > [!NOTE]
 > The article doesn't include a complete list of known issues. Instead, it addresses some common issues that you might experience or might consider when upgrading to a version. If you're aware of issues that aren't in this article, or you'd like more help, see [Resources for Help and Support](../help-and-support.md).
+
+## <a name="keys"></a>Primary key mismatch between converted tables in local 14 versions and Microsoft Base Application
+<!--https://dynamicssmb2.visualstudio.com/Dynamics%20SMB/_workitems/edit/387119 -->
+
+> Applies to: 14.18-14.x, 15.12-15.x, 16.7-16.x, 17.1-17.x
+
+### Problem
+
+In some local versions, new table objects were added as part of a minor update. In version 14, which is still C/AL based, the primary keys of these tables are unnamed. When you convert the tables from CAL to AL using the txt2AL tool, primary keys are given the name `Key1`. In version 15, 16, and 17, which is fully AL-based, these tables have been moved to Microsoft base application extension, and the primary keys have the name `PK`. This difference can cause problems when you upgrade to use the Microsoft Base Application because it introduces breaking changes.
+
+The affected local versions and tables include:
+
+|Local 14 version|Tables|
+|-------------|------|
+|CH|<ul><li>QRBill Buffer</li><li>QRBill Billing Detail</li><li>QRBill Billing Info</li><li>QRBill Layout QRBill</li><li>QRBill Setup</li><li>VAT Reg. No. Srv. Template</li><li>VAT Registration Log Details</li></ul>|
+|NA|<ul><li>VAT Reg. No. Srv. Template</li><li>VAT Registration Log Details</li></ul>|
+
+> [!NOTE]
+> You don't experience this problem with table objects in other Microsoft extension because the primary keys are named `KEY1`.
+
+### Impact
+
+If you don't resolve this conflict, you'll experience problems when upgrading a customized version 14 (C/AL) application to the Microsoft Base Application.
+
+For example, consider the following articles:
+
+- [Upgrading Customized C/AL Application to Microsoft Base Application Version 16](upgrade-to-microsoft-base-app.md)
+- [Upgrading Customized C/AL Application to Microsoft Base Application Version 17](upgrade-to-microsoft-base-app-v17.md)
+
+During this upgrade process, you'll create two versions of an extension referred to as the *table migration* extension. This extension is used for transferring ownership of existing tables in the database to other extensions. The first version contains table objects. The second version contains a migration.json file instead of the table objects. When you try synchronize the second version of the table migration extension ([Task 13.5](upgrade-to-microsoft-base-app.md#syncfinal) or [Task 12.6](upgrade-to-microsoft-base-app-v17.md#syncfinal)), you'll get the following errors for each affected table:
+
+<!--
+More specifically, you'll get the following errors when synchronizing the table migration extension. Depending on the upgrade article you're following, the error occurs in either [Task 13.5](upgrade-to-microsoft-base-app.md#syncfinal) or [Task 12.6](upgrade-to-microsoft-base-app-v17.md#syncfinal).
+-->
+
+`Table <table name> :: The previous primary key 'Key1' cannot be located. Changing the primary key is not allowed.`
+
+`Table <table name> :: Introducing a new key 'PK' as the primary key is not allowed. Please make the key 'Key1' the primary key again.`
+
+### Workaround
+
+To avoid these errors, after converting the version 14 tables to AL, rename instances of the primary key `Key1 ` to `PK` in the affected table objects before building your extensions.
+
+- If you're following the upgrade articles listed above, do this change as part of Task 2. If you've already published the first table migration extension with the wrong key names, we recommend restore the databases and go through the upgrade again, starting from Task 2.
+- You should also make these changes if you're only doing a technical upgrade, so you won't run into problems later if eventually uptake the Microsoft Base Application.
+
+For each affected table object, do the following steps:
+
+1. Open the \.al file.
+2. Locate the primary key  definition. For example: 
+
+    ```al
+    keys
+    {
+        key(Key1; "Primary key")
+        {
+            Clustered = true;
+        }
+    }
+    ```
+
+3. Change the name from `Key1` to `PK`. For example:
+
+    ```al
+    keys
+    {
+        key(PK; "Primary key")
+        {
+            Clustered = true;
+        }
+    }
+    ```
+
+<!-- 
+
+1. Create another version of the table migration extension that contains the table objects.
+2. In this version, change the name of the primary keys in the affected tables to `PK`.
+3. Build the extension package.
+4. Publish the extension version.
+5. Synchronize the extension version by using Sync-NAVApp cmdlet with the `-Mode ForceSync` parameter.
+6. Synchronize the table migration extension that contains the migration.json.
+7. Complete the upgrade.
+-->
 
 ## <a name="enum"></a>Enum type fields not transferred as part of schema migration between extensions
 

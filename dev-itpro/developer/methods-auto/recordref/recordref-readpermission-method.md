@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -48,12 +48,12 @@ An instance of the [RecordRef](recordref-data-type.md) data type.
   
  If you do not have permission to read from a table and you attempt to read, a run-time error occurs. This method lets you determine in advance if you have read permission. When the permissions are checked, the combination of the permissions in the license file and the user's permissions in the Permission table is considered.  
   
- This method works the same as the [READPERMISSION Method \(Record\)](../record/record-readpermission-method.md).  
+ This method works the same as the [ReadPermission Method \(Record\)](../record/record-readpermission-method.md).  
   
 ## Example  
- The following example opens table 18 \(Customer\) and creates a RecordRef variable that is named MyRecordRef for the table. The READPERMISSION method determines whether the table has read permission and stores the return value in the varHasReadPerm variable. The Customer table has read permission, so the message displays **Yes**. You can initialize the varTableNo variable with any table number. 
+ The following example opens table 18 \(Customer\) and creates a RecordRef variable that is named MyRecordRef for the table. The ReadPermission method determines whether the table has read permission and stores the return value in the varHasReadPerm variable. The Customer table has read permission, so the message displays **Yes**. You can initialize the varTableNo variable with any table number. 
   
-```  
+```al
 var
     MyRecordRef: RecordRef;
     varHasReadPerm: Boolean;
@@ -61,9 +61,9 @@ var
     Text000: Label 'Does the %1 table have read permission? %2'; 
 begin      
     varTableNo := 18;  
-    MyRecordRef.OPEN(varTableNo);  
-    varHasReadPerm := MyRecordRef.READPERMISSION;  
-    MESSAGE(Text000, MyRecordRef.NAME, varHasReadPerm);  
+    MyRecordRef.Open(varTableNo);  
+    varHasReadPerm := MyRecordRef.ReadPermission;  
+    Message(Text000, MyRecordRef.Name, varHasReadPerm);  
 end;
 ```  
   

@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -49,7 +49,7 @@ The end result String.
 
 ## Remarks  
 
-The DELCHR method is case-sensitive.  
+The DelChr method is case-sensitive.  
   
 If you omit the *Which* parameter, then the method deletes spaces from *String* based on the contents of the *Where* parameter as follows:  
   
@@ -72,7 +72,7 @@ The *Which* parameter contains an array of the characters that you want to delet
   
 ## Example 1
 
-```
+```al
 var
     String: Text;
     Where: Text;
@@ -84,8 +84,8 @@ begin
     String := Text000;  
     Where := '<>';  
     Which := 'Ws';  
-    NewString := DELCHR(String, Where, Which);  
-    MESSAGE(Text001, String,NewString);  
+    NewString := DelChr(String, Where, Which);  
+    Message(Text001, String,NewString);  
 end;
 ```  
   
@@ -97,7 +97,7 @@ end;
   
 ## Example 2
 
-```
+```al
 var
     String: Text;
     Where: Text;
@@ -109,8 +109,8 @@ begin
     String := Text000;  
     Where := '=';  
     Which := 'sx';  
-    NewString := DELCHR(String, Where, Which);  
-    MESSAGE(Text001, String,NewString);  
+    NewString := DelChr(String, Where, Which);  
+    Message(Text001, String,NewString);  
 end;
 ```  
   
@@ -122,7 +122,7 @@ end;
   
 ## Example 3
  
-```
+```al
 var
     String: Text;
     Where: Text;
@@ -134,8 +134,8 @@ begin
     String := Text000;  
     Where := '>';  
     Which := 'Tely';  
-    NewString := DELCHR(String, Where, Which);  
-    MESSAGE(Text001, String,NewString);  
+    NewString := DelChr(String, Where, Which);  
+    Message(Text001, String,NewString);  
 end;
 ```  
   
@@ -147,7 +147,7 @@ end;
   
 ## Example 4
 
-```
+```al
 var
     String: Text;
     Where: Text;
@@ -159,8 +159,8 @@ begin
     String := Text000;  
     Where := '<';  
     Which := 'This ';  
-    NewString := DELCHR(String, Where, Which);  
-    MESSAGE(Text001, String,NewString);  
+    NewString := DelChr(String, Where, Which);  
+    Message(Text001, String,NewString);  
 end;
 ```  
   
@@ -172,7 +172,7 @@ end;
   
 ## Example 5
 
-```
+```al
 var
     String: Text;
     Where: Text;
@@ -183,8 +183,8 @@ var
 begin
     String := Text000;  
     Where := '<';  
-    NewString := DELCHR(String, Where);  
-    MESSAGE(Text001, String,NewString);  
+    NewString := DelChr(String, Where);  
+    Message(Text001, String,NewString);  
 end;
 ```  
   
@@ -196,7 +196,7 @@ end;
   
 ## Example 6
 
-```
+```al
 var
     String: Text;
     NewString: Text;
@@ -204,8 +204,8 @@ var
     Text001: Label '>%1< is transformed to >%2<';
 begin
     String := Text000;
-    NewString := DELCHR(String);
-    MESSAGE(Text001, String, NewString);
+    NewString := DelChr(String);
+    Message(Text001, String, NewString);
 end;
 ```
 The message window displays the following:

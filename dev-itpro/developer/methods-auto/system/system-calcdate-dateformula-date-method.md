@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -56,39 +56,40 @@ Use this optional parameter to define a reference date. The default is the curre
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 
-## Remarks  
- DateExpression can be a field or variable of type Text or Code, and it can be a field or variable of type [DATEFORMULA](../../methods-auto/dateformula/dateformula-data-type.md). The benefit of using a DateFormula field or variable is that the date formula becomes language independent.  
+## Remarks
 
- The user can enter formulas in the currently selected language. The formula is stored in a generic format in a field or variable. When the formula must be displayed, the actual string that is displayed is converted to the currently selected language.  
+DateExpression can be a field or variable of type Text or Code, and it can be a field or variable of type [DateFormula](../../methods-auto/dateformula/dateformula-data-type.md). The benefit of using a DateFormula field or variable is that the date formula becomes language independent.  
 
- For example, if a user who has language set to ENG \(English\) enters the date formula "1W+1D" for one week and one day, then a user who has the language set to FRA \(French\) sees "1S+1J," and a user who has the language set to ESP \(Spanish\) sees "1S+1D".  
+The user can enter formulas in the currently selected language. The formula is stored in a generic format in a field or variable. When the formula must be displayed, the actual string that is displayed is converted to the currently selected language.  
 
- If a date formula is entered with \< > delimiters surrounding it, then the date formula is stored in a generic, nonlanguage-dependent format. This makes it possible to develop date formulas that are not dependent on the currently selected language.  
+For example, if a user who has language set to ENG \(English\) enters the date formula "1W+1D" for one week and one day, then a user who has the language set to FRA \(French\) sees "1S+1J," and a user who has the language set to ESP \(Spanish\) sees "1S+1D".  
 
- For more information about how to calculate the duration between two DateTimes, see [Duration Data Type](../../datatypes/devenv-duration-data-type.md).  
+If a date formula is entered with \< > delimiters surrounding it, then the date formula is stored in a generic, nonlanguage-dependent format. This makes it possible to develop date formulas that are not dependent on the currently selected language.  
+
+For more information about how to calculate the duration between two DateTimes, see [Duration Data Type](../../datatypes/devenv-duration-data-type.md).  
 
 ## Example 1
 
- This code example shows how to use the production rules that were previously described.  
+This code example shows how to use the production rules that were previously described.  
 
-```  
+```al
 <CQ+1M-10D>  
 ```  
 
- This should be interpreted as the following: current quarter + 1 month - 10 days.  
+This should be interpreted as the following: current quarter + 1 month - 10 days.  
 
- The DateExpression is composed of the following:  
+The DateExpression is composed of the following:  
 
- \<Prefix>\<Unit>\<Sign>\<Number>\<Unit>\<Sign>\<Number>\<Unit>  
+\<Prefix>\<Unit>\<Sign>\<Number>\<Unit>\<Sign>\<Number>\<Unit>  
 
 > [!NOTE]  
->  The angle brackets \(\< >\) specify that the expression is not translated, regardless of the application language. <!-- For more information about multilanguage capabilities with date formulas, see [Developing Multilanguage-Enabled Applications](Developing-Multilanguage-Enabled-Applications.md).  -->
+> The angle brackets \(\< >\) specify that the expression is not translated, regardless of the application language. <!-- For more information about multilanguage capabilities with date formulas, see [Developing Multilanguage-Enabled Applications](Developing-Multilanguage-Enabled-Applications.md).  -->
 
 ## Example 2
 
- This example shows how to use the CALCDATE method.  
+This example shows how to use the CalcDate method.  
 
-```  
+```al
 var
     Expr1: Text[30];
     Expr2: Text[30];
@@ -106,26 +107,27 @@ begin
     Expr2 := '<-WD2>'; // The last weekday no.2, (last Tuesday)  
     Expr3 := '<CM+30D>'; // Current month + 30 days  
     RefDate := 19960521D;  
-    Date1 := CALCDATE(Expr1, RefDate);  
-    Date2 := CALCDATE(Expr2, RefDate);  
-    Date3 := CALCDATE(Expr3, RefDate);  
-    MESSAGE(Text000 + Text001 + Text002 + Text003,  
+    Date1 := CalcDate(Expr1, RefDate);  
+    Date2 := CalcDate(Expr2, RefDate);  
+    Date3 := CalcDate(Expr3, RefDate);  
+    Message(Text000 + Text001 + Text002 + Text003,  
       RefDate, Expr1, Date1, Expr2, Date2, Expr3, Date3);  
 end;
 ```  
 
- The message window displays the following text:  
+The message window displays the following text:  
 
- **The reference date is: 05/21/96**  
+**The reference date is: 05/21/96**  
 
- **The expression: CQ+1M-10D returns 07/20/96**  
+**The expression: CQ+1M-10D returns 07/20/96**  
 
- **The expression: -WD2 returns 05/14/96**  
+**The expression: -WD2 returns 05/14/96**  
 
- **The expression: CM+30D returns 06/30/96**  
+**The expression: CM+30D returns 06/30/96**  
 
  
 ## See Also
+
 [System Data Type](system-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

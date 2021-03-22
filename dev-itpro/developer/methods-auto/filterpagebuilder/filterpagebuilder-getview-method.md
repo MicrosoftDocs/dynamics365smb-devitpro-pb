@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -47,9 +47,9 @@ The view that is configured for the filter control that is identified by Name.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example  
- The following example initializes a filter page object that includes a filter control for the **Date** system table. The filter control has the caption of **Date record**. The example adds two filter fields to the filter control on the filter page as the result of applying a default view. The GETVIEW method is used to capture that filter view from the FilterPageBuilder object, and then apply it to the record.  
+ The following example initializes a filter page object that includes a filter control for the **Date** system table. The filter control has the caption of **Date record**. The example adds two filter fields to the filter control on the filter page as the result of applying a default view. The GetView method is used to capture that filter view from the FilterPageBuilder object, and then apply it to the record.  
 
-```
+```al
 var
     varDateItem: Text[300];  
     varDateRecord: Record Date;  
@@ -58,13 +58,13 @@ var
 
 begin
     varDateItem := 'Date record';  
-    varDateRecord.SETFILTER("Period End", '12122015D');  
-    varDateRecord.SETFILTER("Period Start", '01012015D');  
-    varDefaultView := varDateRecord.GETVIEW;  
-    varFilterPageBuilder.ADDTABLE(varDateItem, DATABASE::Date);  
-    varFilterPageBuilder.SETVIEW(varDateItem, varDefaultView);  
-    if varFilterPageBuilder.RUNMODAL = true then  
-      varDateRecord.SETVIEW(varFilterPageBuilder.GETVIEW(varDateItem));
+    varDateRecord.SetFilter("Period End", '12122015D');  
+    varDateRecord.SetFilter("Period Start", '01012015D');  
+    varDefaultView := varDateRecord.GetView;  
+    varFilterPageBuilder.AddTable(varDateItem, DATABASE::Date);  
+    varFilterPageBuilder.SetView(varDateItem, varDefaultView);  
+    if varFilterPageBuilder.RunModal = true then  
+      varDateRecord.SetView(varFilterPageBuilder.GetView(varDateItem));
       varFilterPageBuilder.RunModal(); 
 end;
 ```  

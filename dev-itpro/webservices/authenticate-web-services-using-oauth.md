@@ -2,18 +2,18 @@
 title: "Using OAuth to Authenticate Business Central Web Services (OData and SOAP)"
 description: Learn how to use OAuth to authenticate Business Central web services (OData and SOAP)
 ms.custom: na
-ms.date: 01/13/2021
+ms.date: 01/20/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 
 # Using OAuth to Authorize Business Central Web Services (OData and SOAP)
 
-[!INCLUDE[prod_short](../developer/includes/prod_short.md)] supports the OAuth authorization protocol for SOAP and OData web services. This article some basics behind the use and configuration of OAuth authentication in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. It describes the general aspects of the OAuth authorization protocol, including how to set it up for [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. The article also provides a guide on how to create a custom .NET application that connects to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] web services and authenticates by using OAuth.
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] supports the OAuth authorization protocol for SOAP and OData web services. This article describes some basics behind the use and configuration of OAuth authentication in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. It describes the general aspects of the OAuth authorization protocol, including how to set it up for [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. The article also provides a guide on how to create a custom .NET application that connects to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] web services and authenticates by using OAuth.
 
 > [!TIP]
 > For some samples about setting up OAuth, see the [BCTech repo](https://github.com/microsoft/BCTech/tree/master/samples/PSOAuthBCAccess).
@@ -131,7 +131,7 @@ To complete the following tasks in this article, make sure your system meets the
     |Setting/option|[Description|
     |-----------------|---------------------------------|---------------------------------------|
     |Azure Active Directory Tenant ID|The ID of the directory that's used by [!INCLUDE[prod_short](../developer/includes/prod_short.md)] in Azure AD.  The Azure Active Directory Tenant ID can be the tenant's domain name or GUID. In most cases, you can use the domain name. The domain name is typically in the form *mytenant.onmicrosoft.com*, which is the case if you have a Microsoft 365 subscription. You get the domain name from the **Domain** or **Custom domain names** settings for the AD tenant in the Azure portal. The Azure AD Tenant ID also makes up part of the **WS-federation login endpoint** setting that is configured for the [!INCLUDE[server](../developer/includes/server.md)] instance||
-    |App ID URI|When you configured [!INCLUDE[prod_short](../developer/includes/prod_short.md)] for Azure AD or Microsoft 365 authentication, you had to register [!INCLUDE[prod_short](../developer/includes/prod_short.md)] as an application in the Azure Active Directory (Azure AD) and also specify an APP ID URI. The  APP ID URI has the format `https://<domain>/<guid>`, like `https://mytenant.onmicrosoft.com/91ce5ad2-c339-46b3-831f-67e43c4c6abd`. You need the APP ID URI later to enable OAuth. You can get the ID from the Azure portal by viewing the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application **Settings** in Active Directory. This value is also specified as the `wtrealm` in the `WS-Federation Login Endpoint` setting of the [!INCLUDE[server](../developer/includes/server.md)] instance configuration. For more information, [Azure Active Directory Settings](../administration/configure-server-instance.md#AzureAd).|
+    |App ID URI|When you configured [!INCLUDE[prod_short](../developer/includes/prod_short.md)] for Azure AD or Microsoft 365 authentication, you had to register [!INCLUDE[prod_short](../developer/includes/prod_short.md)] as an application in the Azure Active Directory (Azure AD) and also specify an APP ID URI. The  APP ID URI has the format `https://<domain>/<guid>`, like `https://mytenant.onmicrosoft.com/91ce5ad2-c339-46b3-831f-67e43c4c6abd`. You need the APP ID URI later to enable OAuth. You can get the ID from the Azure portal by viewing the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application **Settings** in Active Directory. This value is also specified as the `wtrealm` in the `WS-Federation Login Endpoint` setting of the [!INCLUDE[server](../developer/includes/server.md)] instance configuration. For more information, see [Azure Active Directory Settings](../administration/configure-server-instance.md#AzureAd).|
   
 - Enable OData Services and V4 Endpoint on the [!INCLUDE[server](../developer/includes/server.md)] instance.
 

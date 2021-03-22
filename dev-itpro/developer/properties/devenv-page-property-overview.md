@@ -7,7 +7,7 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 ms.assetid: a0ac492d-e3c8-4a76-87b4-b469e08c58e7
 ms.author: solsen
@@ -91,6 +91,7 @@ The following properties all apply to the page object, only some of these proper
 |[Permissions Property](devenv-permissions-property.md)||<ul><li>Page object</li></ul>|
 |[PopulateAllFields Property](devenv-populateallfields-property.md)||<ul><li>Page object</li></ul>|
 |[Promoted Property](devenv-promoted-property.md)|X|<ul><li>Action</li></ul>|
+|[PromotedActionCategories Property](devenv-promotedactioncategories-property.md)|X|<ul><li>Page object</li></ul>|
 |[PromotedActionCategoriesML Property](devenv-promotedactioncategoriesml-property.md)|X|<ul><li>Page object</li></ul>|
 |[PromotedCategory Property](devenv-promotedcategory-property.md)|X|<ul><li>Action</li></ul>|
 |[PromotedIsBig Property](devenv-promotedisbig-property.md)|X|<ul><li>Action</li></ul>|

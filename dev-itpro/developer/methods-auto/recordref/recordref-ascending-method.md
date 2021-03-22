@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -44,37 +44,37 @@ Specifies the order in which a search will be performed.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- This method works just like the [ASCENDING Method \(Record\)](../../methods/devenv-ascending-method-record.md).  
+ This method works just like the [Ascending Method \(Record\)](../../methods/devenv-ascending-method-record.md).  
   
 ## Example 1
 
- The following example opens table 18 \(Customer\) as a RecordRef variable that is named CustomerRecref. The [SETVIEW Method (RecordRef)](recordref-setview-method.md) sets a filter that includes sorting the data in ascending order. The ASCENDING method then checks whether the sort order is ascending, stores the return value in the IsAscending variable and displays **True** in a message box. 
+ The following example opens table 18 \(Customer\) as a RecordRef variable that is named CustomerRecref. The [SetView Method (RecordRef)](recordref-setview-method.md) sets a filter that includes sorting the data in ascending order. The Ascending method then checks whether the sort order is ascending, stores the return value in the IsAscending variable and displays **True** in a message box. 
     
   
-```
+```al
 var
     IsAscending: Boolean;
     CustomerRecref: RecordRef;
     Text000: Label 'Is the sort order ascending?  %1';
 begin
-    CustomerRecref.OPEN(18);  
-    CustomerRecref.SETVIEW('SORTING(Name) ORDER(Ascending) WHERE(No.=CONST(10000..20000))');  
-    IsAscending := CustomerRecref.ASCENDING;  
-    MESSAGE(Text000, IsAscending);  
+    CustomerRecref.Open(18);  
+    CustomerRecref.SetView('Sorting(Name) Order(Ascending) Where(No.=Const(10000..20000))');  
+    IsAscending := CustomerRecref.Ascending;  
+    Message(Text000, IsAscending);  
 end;
 ```  
   
 ## Example 2
 
- The following example opens table 18 \(Customer\) as a RecordRef variable that is named CustomerRecref. The [SETVIEW Method (RecordRef)](recordref-setview-method.md) sets a filter that includes sorting the data in descending order. The ASCENDING method then checks whether the sort order is ascending, stores the return value in the IsAscending variable and displays **False** in a message box because the sort order is descending. The ASCENDING method changes the sort order to ascending by setting the *SetAscending* parameter to **true**. The ASCENDING method checks the sort order again. This time **True** is displayed.  
+ The following example opens table 18 \(Customer\) as a RecordRef variable that is named CustomerRecref. The [SetView Method (RecordRef)](recordref-setview-method.md) sets a filter that includes sorting the data in descending order. The Ascending method then checks whether the sort order is ascending, stores the return value in the IsAscending variable and displays **False** in a message box because the sort order is descending. The Ascending method changes the sort order to ascending by setting the *SetAscending* parameter to **true**. The Ascending method checks the sort order again. This time **True** is displayed.  
   
-```  
-CustomerRecref.OPEN(18);  
-CustomerRecref.SETVIEW('SORTING(Name) ORDER(Descending) WHERE(No.=CONST(10000..20000))');  
-IsAscending := CustomerRecref.ASCENDING;  
-MESSAGE(Text000, IsAscending);  
-IsAscending := CustomerRecref.ASCENDING(TRUE);  
-MESSAGE(Text000, IsAscending);  
+```al
+CustomerRecref.Open(18);  
+CustomerRecref.SetView('Sorting(Name) Order(Descending) Where(No.=Const(10000..20000))');  
+IsAscending := CustomerRecref.Ascending;  
+Message(Text000, IsAscending);  
+IsAscending := CustomerRecref.Ascending(True);  
+Message(Text000, IsAscending);  
 ```  
   
 

@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -40,15 +40,15 @@ An instance of the [TestPage](testpage-data-type.md) data type.
 ## Remarks  
 If *TestPage* is closed or has never been opened, then the method call fails.  
 
-The LAST method loops over all records until it sets  the identifies the current record.  For each record, the [OnAfterGetCurrentRecord Trigger](../../triggers/devenv-onaftergetcurrrecord-trigger.md) is executed.  
+The Last method loops over all records until it sets  the identifies the current record.  For each record, the [OnAfterGetCurrentRecord Trigger](../../triggers/devenv-onaftergetcurrrecord-trigger.md) is executed.  
   
 ## Example  
  This example sets the current row to the last customer in the dataset. It requires that you create a TestPage variable named CustomerList with a Subtype of Customer List.  
   
-```  
-CustomerList.OPENVIEW;  
-CustomerList.LAST;  
-MESSAGE(CustomerList.Name.Value);  
+```al
+CustomerList.OpenView;  
+CustomerList.Last;  
+Message(CustomerList.Name.Value);  
   
 ```
 

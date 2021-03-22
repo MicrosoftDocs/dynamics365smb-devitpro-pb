@@ -2,11 +2,11 @@
 title: "Pages that have been published must not be renamed."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 03/16/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -27,6 +27,8 @@ It is not allowed to rename pages which have been published. This will break dep
 - are referencing this page from code by name,
 - are extending the page by name using a page extension,
 - are customizing the page by name using page customizations.
+
+It is allowed to rename page extensions, because page extensions cannot be referenced by name from a dependent extension.
 
 ## How to fix this diagnostic
 

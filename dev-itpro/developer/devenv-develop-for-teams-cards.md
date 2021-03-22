@@ -6,15 +6,15 @@ ms.date: 10/08/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 # Extending Teams Cards
 
-[!INCLUDE [team_preview](includes/teams_preview.md)]
+[!INCLUDE [online_only](includes/online_only.md)]
 
-In this article, you'll learn how to customize the fields that display on a Teams card. You can customize the fields by using a field groups control on the source table and by using events. You can combine these two methods to achieve the results that you want.  
+In this article, you'll learn how to customize the fields that display on a Teams card. You customize the fields by using a field groups control on the source table or using events. You can also combine these two methods to achieve the results that you want.  
 
 ## Extend Teams cards by using field groups 
 
@@ -148,12 +148,10 @@ Business Central offers the following events for customizing the fields and data
 
 |Event|Description|
 |-----|-----------|
+|OnBeforeGetPageSummary|Use this event to override **all data** for a Card. By handling the event, you can specify a custom set of key-value pairs that will be displayed. The platform won't attempt to select any list of fields or their corresponding values if you subscribe to this event.|
 |OnAfterGetSummaryFields|Use this event to specify a custom set of fields from the same table as the record. Using this method you can add more fields than are those fields specified by the  `Brick` field group on the source table. For example, you could add fields that are added to the source table by a table extension.|
 |OnAfterGetPageSummary |Use this event to modify fields and their values that are already selected for the card by the platform. For example, you could change the captions or value of a field.|
 
-<!--
-
-|OnBeforeGetPageSummary|This is ideal for overriding all data for a Card by specifying a custom set of key-value pairs that will be displayed. The platform will not attempt to select any list of fields or their corresponding values if you subscribe to this event.|-->
 The events are part of the [Page Summary Provider](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Page%20Summary%20Provider/README.md) module of the Microsoft System Application.
 
 > [!NOTE]
@@ -163,10 +161,11 @@ The events are part of the [Page Summary Provider](https://github.com/microsoft/
 
 The following figure illustrates the sequence of the events and operations involved in building the card in Teams. The flow has been simplified for illustration purposes.
 
-![Sequence of events and operations for building a card in Teams](media/teams-events-flow-v17.png)
+<!-- ![Sequence of events and operations for building a card in Teams](media/teams-events-flow-v17.png) -->
 
-<!--
-## OnBeforeGetPageSummary event
+![Sequence of events and operations for building a card in Teams](media/teams-events-flow-v17_3.png)
+
+### OnBeforeGetPageSummary event
 
 The OnBeforeGetPageSummary event gives you the most control over the fields and data that appears in the card. With this event, you specify a complete set of fields as key-value pairs using JSON Array. Only these fields will appear on the card, even if the source table has a `Brick` field group or other extensions include code that modifies the card.
 
@@ -176,7 +175,7 @@ The OnBeforeGetPageSummary event subscription has the following syntax:
 
 ```
 [EventSubscriber(ObjectType::Codeunit, Codeunit::"Page Summary Provider", 'OnBeforeGetPageSummary', '', false, false)]
-local procedure OnBeforeGetPageSummary(PageId: Integer; RecId: RecordId; var FieldsJsonArray: JsonArray; Handled: Boolean);
+local procedure OnBeforeGetPageSummary(PageId: Integer; RecId: RecordId; var FieldsJsonArray: JsonArray; var Handled: Boolean);
 ```
 
 #### Parameters
@@ -190,7 +189,7 @@ local procedure OnBeforeGetPageSummary(PageId: Integer; RecId: RecordId; var Fie
 
 #### Behavior and recommended use
 
-This event is raised before platform tries to get summary fields for the card from the table, for example, from the `Brick` field group. So when you subscribe to this event, the fields in the `Brick` field group aren't used. Subscribing to this event prohibits other extensions from adding, modifying, or removing summary fields on the card.
+This event is raised before platform tries to get summary fields for the card from the table, for example, from the `Brick` field group. So when you subscribe to this event, the fields in the `Brick` field group aren't used. Subscribing to this event prohibits other extensions from adding, modifying, or removing summary fields on the card by the other event.
 
 For these reasons, use this event only if you don't want to use any fields of the source table in the card.
 
@@ -200,12 +199,11 @@ The following code example uses the OnBeforeGetPageSummary event to change the f
 
 |Before|After|
 |------|-----|
-|![Vendor card before OnBeforeGetPageSummary event](media/teams-card-vendor-before-1.png)|![Vendor card after OnBeforeGetPageSummary event](media/teams-card-vendor-after-1.png)|
-
+|![Vendor card in Teams before OnBeforeGetPageSummary event](media/teams-card-vendor-before-1.png)|![Vendor card in Teams after OnBeforeGetPageSummary event](media/teams-card-vendor-after-1.png)|
 
 ```
 [EventSubscriber(ObjectType::Codeunit, Codeunit::"Page Summary Provider", 'OnBeforeGetPageSummary', '', false, false)]
-local procedure OnBeforeGetPageSummary(PageId: Integer; RecId: RecordId; FieldsJsonArray: JsonArray; Handled: Boolean)
+local procedure OnBeforeGetPageSummary(PageId: Integer; RecId: RecordId; FieldsJsonArray: JsonArray; var Handled: Boolean)
 var
     Vendor: Record Vendor;
 begin
@@ -233,7 +231,7 @@ begin
     FieldsJsonArray.Add(FieldsJsonObject);
 end;
 ```
--->
+
 ### OnAfterGetSummaryFields event
 
 The OnAfterGetSummaryFields event lets you add or remove from the set of fields selected by the platform. For example, if the platform automatically selects fields based on its `Brick` field group, use this event to add fields from the same table, which aren't part of the `Brick` field group.
@@ -359,6 +357,7 @@ end;
 In the code, the **Vendor Role Name** field is defined in a table extension object that extends the **Vendor** table.
 
 ## See Also
+
 [FAQ for Teams Integration](devenv-dev-faq-teams.md)  
 [Field Groups](devenv-field-groups.md)  
 [Designing List Pages](devenv-designing-list-pages.md)  

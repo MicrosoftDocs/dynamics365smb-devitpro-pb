@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -40,23 +40,23 @@ The caption of the table.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- This method works just like the [TABLECAPTION Method (Record)](../record/record-tablecaption-method.md).  
+ This method works just like the [TableCaption Method (Record)](../record/record-tablecaption-method.md).  
   
 ## Example  
- The following example selects tables 3 through 5 and opens each table as a RecordRef variable that is named MyRecordRef. The CAPTION method uses the RecorRef variable to retrieve the caption for each of the tables and displays the table number and the caption in a message box. The [CLOSE Method (RecordRef)](recordref-close-method.md) closes the table.
+ The following example selects tables 3 through 5 and opens each table as a RecordRef variable that is named MyRecordRef. The Caption method uses the RecorRef variable to retrieve the caption for each of the tables and displays the table number and the caption in a message box. The [Close Method (RecordRef)](recordref-close-method.md) closes the table.
   
-```
+```al
 var
     varCaption: Text;
     i: Integer;
     MyRecordRef: RecordRef;
     Text000: Label 'Table No: %1 Caption: %2';
 begin
-    for i := 3 TO 6 do begin  
-        MyRecordRef.OPEN(i);  
-        varCaption := MyRecordRef.CAPTION;  
-        MESSAGE(Text000, i, varCaption);  
-        MyRecordRef.CLOSE;  
+    for i := 3 to 6 do begin  
+        MyRecordRef.Open(i);  
+        varCaption := MyRecordRef.Caption;  
+        Message(Text000, i, varCaption);  
+        MyRecordRef.Close;  
         end;  
 end;
 ```  

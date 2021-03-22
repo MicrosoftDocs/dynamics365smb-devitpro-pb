@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -52,9 +52,9 @@ begin
       MyVar := MyVar + 1;  
       if MyVar = 5 then  
         CurrReport.BREAK;  
-      MESSAGE(Text000,MyVar);  
+      Message(Text000,MyVar);  
     until Myvar = 10;  
-    MESSAGE('After REPEAT-UNTIL loop'); //This statement is never called.  
+    Message('After REPEAT-UNTIL loop'); //This statement is never called.  
 end;
 ```  
 

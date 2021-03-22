@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -43,7 +43,7 @@ Use this optional parameter to include the text of the error message. If you do 
 
 ## Remarks  
 
-Like a run-time error, this method causes the system to automatically abort any transaction.  
+Like a run-time error, this method causes the system to automatically end any transaction.  
   
 ## Programming guidelines
 
@@ -60,7 +60,7 @@ For more information, see [Progress Windows, Message, Error, and Confirm Methods
  
 In the first example, there is no *Text* parameter and the field does not have a value.
   
-```  
+```al
 var
     CustomerRec: Record Customer;
 
@@ -78,7 +78,7 @@ The following message is displayed:
  
 In the next example, there is no *Text* parameter and the field has a value.
   
-```
+```al
 var
     CustomerRec: Record Customer;
 
@@ -95,7 +95,7 @@ The following message is displayed:
 
 The third example uses a non-empty string as the *Text* parameter.
   
-```  
+```al
 var
     CustomerRec: Record Customer;
     Text001: Label 'is not valid';

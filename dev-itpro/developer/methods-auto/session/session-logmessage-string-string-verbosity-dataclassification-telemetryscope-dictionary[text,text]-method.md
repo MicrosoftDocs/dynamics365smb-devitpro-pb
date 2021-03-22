@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -57,14 +57,14 @@ For more information about using this method, see [Creating Custom Telemetry Eve
 
 ## Example
 
-```
+```al
 trigger OnRun();
 var
     CustDimension: Dictionary of [Text, Text];
 begin
     CustDimension.Add('result', 'failed');
     CustDimension.Add('reason', 'critical error in code');
-    LogMessage('MyExt-0001', 'This is a critical error message', Verbosity::Normal, DATACLASSIFICATION::OrganizationIdentifiableInformation, TelemetryScope::ExtensionPublisher, CustDimension);
+    LogMessage('MyExt-0001', 'This is a critical error message', Verbosity::Normal, DataClassification::OrganizationIdentifiableInformation, TelemetryScope::ExtensionPublisher, CustDimension);
 end;
 ```
 

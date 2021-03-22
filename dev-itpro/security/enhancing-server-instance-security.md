@@ -1,13 +1,16 @@
 ---
-title: "Hardening Microsoft Dynamics 365 Business Central Server Security"
+title: Hardening Business Central Server Security
+description: Learn how you can harden security on the Business Central Server component to protect access to the configuration settings.
+author: SusanneWindfeldPedersen
+
 ms.custom: na
-ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
-author: SusanneWindfeldPedersen
+ms.author: solsen
+ms.date: 10/01/2020
 ---
 # Hardening [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Server Security
 

@@ -4,11 +4,11 @@ description: Use the Business Central administration center to export tenant dat
 author: jswymer
 
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: administration, tenant, admin, environment, sandbox, database, export
+ms.search.keywords: administration, tenant, admin, environment, sandbox, database, export, bacpac, backup
 ms.date: 11/04/2020
 ms.author: jswymer
 
@@ -22,6 +22,7 @@ From the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], 
 ## Considerations before you begin
 
 - You can only request a database export for production environments. If you want to export data from a sandbox environment, you can use Excel or RapidStart.
+- You can only request a database export if the customer has a paid Business Central subscription.
 - You must have explicit permission to export databases. For more information, see the [Users who can export databases](#users-who-can-export-databases) section.
 - You can't export your database to an Azure premium storage account. The steps in this article are only supported on Azure standard storage accounts.
 
@@ -77,20 +78,15 @@ All database export activity is logged for auditing purposes. To view the histor
 
 ## Users who can export databases
 
-Permission to export databases is limited to specific types of users, typically internal and delegated administrators. This isn't a task that a typical [!INCLUDE [prod_short](../developer/includes/prod_short.md)] user should be able to do, but an administrator can grant permission to a user to export databases, should this be necessary.
+Permission to export databases is limited to specific types of users: internal and delegated administrators. The following users are allowed to export databases.
 
-- Users from reselling partners
+- Delegated administrators from reselling partners
 
-  - Employees who have the **Admin agent** role for this customer in the Partner Center
+- Administrators from the organization that subscribes to [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online
 
-    In contrast, employees who have the **Helpdesk agent** role *cannot* export databases.
+Also, these users must have the **D365 BACKUP/RESTORE** permission set assigned to their user account in the environment they're trying to export.
 
-- Users from the organization that subscribes to [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online
-
-  - Users who are internal administrators and have the **Global admin** role in the Microsoft 365 tenant
-  - Users who are members of the *D365 BACKUP/RESTORE* user group
-
-    To add a user to this user group, go to the **User Groups** page in [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. For more information, see [To manage permissions through user groups](/dynamics365/business-central/ui-define-granular-permissions#to-manage-permissions-through-user-groups).  
+For more information about permissions sets and user groups, see [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions).  
 
 ## Using the exported data
 

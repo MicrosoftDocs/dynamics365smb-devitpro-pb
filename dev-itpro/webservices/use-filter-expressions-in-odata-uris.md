@@ -7,7 +7,7 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ---
 # Using Filter Expressions in OData URIs
 You can use filter expressions in OData URIs to limit the results that are returned in an AtomPub document. This topic identifies the filter expressions that you can use, describes the equivalent field or table filter that you can use in AL, and presents examples to show the syntax for using filter expressions in OData web service URIs and applications.  
@@ -57,5 +57,7 @@ https://localhost:7048/BC130/OData/Company('CRONUS International Ltd.')/Customer
 
 For more information about data types and other information about conventions and standards for OData URIs, see [Atom Publishing Protocol: URI Conventions](https://go.microsoft.com/fwlink/?LinkId=214635). Conventions for data types are addressed in section 2.2.2, "Abstract Type System."  
 
-## See Also  
- [OData Web Services](OData-Web-Services.md)
+## See Also
+
+[OData Web Services](OData-Web-Services.md)  
+[Microsoft OData Docs - Query options overview](/odata/concepts/queryoptions-overview)  

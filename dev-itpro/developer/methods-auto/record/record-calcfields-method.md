@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -46,7 +46,7 @@ An instance of the [Record](record-data-type.md) data type.
 
 ## Remarks
 
- FlowFields are virtual fields. The values in these fields are not saved in the table. This means that you must use either the **CalcFields** method or the [SetAutoCalcFields Method \(Record\)](record-SETAUTOCALCFIELDS-method.md) to update them. For example, if you retrieve a record using the [Find Method \(Record\)](record-FIND-method.md) and [Next Method \(Record\)](record-next-method.md), the FlowFields in those records are set to zero \(0\). Then, when you call **CalcFields**, their values are updated.  
+ FlowFields are virtual fields. The values in these fields are not saved in the table. This means that you must use either the **CalcFields** method or the [SetAutoCalcFields Method \(Record\)](record-SetAutoCalcFields-method.md) to update them. For example, if you retrieve a record using the [Find Method \(Record\)](record-Find-method.md) and [Next Method \(Record\)](record-next-method.md), the FlowFields in those records are set to zero \(0\). Then, when you call **CalcFields**, their values are updated.  
   
  When a FlowField is a direct source expression on a page or a report, the calculation is performed automatically.  
   
@@ -61,7 +61,7 @@ An instance of the [Record](record-data-type.md) data type.
 ## Example  
  This example shows how to use the **CalcFields** method to find the balance on December 31, 2008 and the net change for a customer in 2008.  
   
-```  
+```al
 var
     CustomerRec: Record Customer;
 begin
@@ -70,7 +70,8 @@ begin
 end;
 ```  
   
- The first line sets up a filter for the Date Filter field in the Customer record. This field is a FlowFilter field which is used in the filter definition for several FlowFields in the Customer record. In the second line, the FlowFields are calculated.  
+The first line sets up a filter for the Date Filter field in the Customer record. This field is a FlowFilter field which is used in the filter definition for several FlowFields in the Customer record. In the second line, the FlowFields are calculated.  
+
 ## See Also
 [Record Data Type](record-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  

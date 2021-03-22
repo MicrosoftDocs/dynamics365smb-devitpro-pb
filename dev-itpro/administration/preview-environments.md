@@ -1,10 +1,10 @@
 ---
 title: Prepare for major updates with preview environments | Microsoft Docs
-description: Use preview sandboxes to help prepare for the next major update of Business Central.  
+description: Learn how to use preview sandboxes to help prepare for the next major update of Business Central online.
 author: edupont04
 
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -43,7 +43,7 @@ We need your feedback on the preview! Let us know about your experiences with th
 
 3. Choose **Engagements**, and then choose **Join**
 
-4. Under the **Ready! for Dynamics 365 Business Central program**, find **2020 release wave 2 Preview** in the list of available engagements, and choose **Join**
+4. Under the **Ready! for Dynamics 365 Business Central** program, find **2021 release wave 1 Preview** in the list of available engagements, and choose **Join**
 
 Once you have joined the preview engagement, you can submit your feedback by filling in the form. You must specify if you are reporting a technical issue, a translation issue, or a documentation issue. The default severity is set to 3, which is the normal severity for most defects and means that the system is not crashing and users are not blocked from doing their work, but you can change that. When we have triaged your issue, you can see changes in Collaborate.
 

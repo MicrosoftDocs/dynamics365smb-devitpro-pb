@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -58,7 +58,7 @@ When a media is imported, it is assigned a unique identifier \(GUID\) and stored
 In addition, the media object is assigned to a MediaSet which also has a specific GUID. This GUID is included in the MediaSet data type field as a reference to the media objects. The MediaSet and its GUID are created with the first media that is imported, and the information is stored in table **2000000183 Tenant Media Set**. All additional media objects for the record are then associated with the same MediaSet GUID.
 
 ## Example  
- This example uses the IMPORTSTREAM method to add images to records in table **27 Item** of the [!INCLUDE[demolonglight_md](../../includes/demolonglight_md.md)].
+ This example uses the ImportStream method to add images to records in table **27 Item** of the [!INCLUDE[demolonglight_md](../../includes/demolonglight_md.md)].
 
  To support the example code that follows, you also have to complete these tasks:  
 
@@ -72,7 +72,7 @@ In addition, the media object is assigned to a MediaSet which also has a specifi
 
 With these tasks in place, you can add and run the following AL code to import the images. For this code example, create a codeunit and add the code to the OnRun trigger.  
 
-```
+```al
  var
     itemRec: Record Item;
     count: Integer;
@@ -94,7 +94,7 @@ begin
     fileName := 'C:\images\1000-v2.jpg';
     importFile.Open(fileName);  
     importFile.CreateInStream(inStreamObject);  
-    itemRec.Picture.ImportStream(inStreamObject, 'Demo image for item ' + FORMAT(itemRec."No."));  
+    itemRec.Picture.ImportStream(inStreamObject, 'Demo image for item ' + Format(itemRec."No."));  
     itemRec.Modify;  
     importFile.Close;
     

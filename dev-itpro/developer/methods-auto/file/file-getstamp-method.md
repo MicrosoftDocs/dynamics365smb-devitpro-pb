@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -64,8 +64,8 @@ The time that the file was last written to. Optional.
     Text000: Label 'This document was last written to on %1 at %2.';
 begin
     varFileName := 'C:\MyFolder\MyText.txt';  
-    GETSTAMP(VarFileName, varDate, varTime);  
-    MESSAGE(Text000, varDate, varTime);  
+    GetStamp(VarFileName, varDate, varTime);  
+    Message(Text000, varDate, varTime);  
 end;
 ```  
 

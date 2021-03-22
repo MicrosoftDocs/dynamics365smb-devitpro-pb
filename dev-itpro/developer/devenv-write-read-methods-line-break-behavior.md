@@ -7,7 +7,7 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
@@ -51,8 +51,8 @@ begin
     MyInStream.Read(Result); // Reads A\B\C
     Message(Result);
 
-    CRLF[1] := 10;
-    CRLF[2] := 13;
+    CRLF[1] := 13;
+    CRLF[2] := 10;
     MyRecord.MyBlobField.CreateOutStream(MyOutStream);
     MyOutStream.WRITE('A' + CRLF + 'B');
     MyOutStream.WRITE('C');

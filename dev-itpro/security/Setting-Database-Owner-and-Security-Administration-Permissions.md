@@ -1,13 +1,16 @@
 ---
-title: "Setting Database Owner and Security Administration Permissions"
+title: Granting permissions to manage databases
+description: Learn how to set database owner and security admin permissions in SQL Server for your Business Central solution.
+author: jswymer
+
 ms.custom: na
-ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
-author: jswymer
+ms.author: jswymer
+ms.date: 10/01/2020
 ---
 # Granting Permissions to Manage [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Databases in SQL Server
 
@@ -18,7 +21,7 @@ Special permissions are required in SQL Server to create and manage [!INCLUDE[pr
 The administrator who installs [!INCLUDE[prod_short](../developer/includes/prod_short.md)] automatically has access to the database. To give another user permission to create new databases, grant that user the **sysadmin** Server Role for the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] SQL Server instance in SQL Server Management Studio.  
   
 > [!NOTE]  
-> The administrator must also have a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] developer’s license to use the development environment, and be assigned the SUPER permission set.  
+> The administrator must also have a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] developer's license to use the development environment, and be assigned the SUPER permission set.  
   
 In the Object Explorer pane in SQL Server Management Studio, follow these steps after connecting to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] SQL Server instance:  
   

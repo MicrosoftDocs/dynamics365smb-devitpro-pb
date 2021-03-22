@@ -1,23 +1,23 @@
 ---
 title: Running the Cloud Migration Tool
-description: Get a cloud tenant so you can migrate to the cloud when you have an on-premises solution based on Business Central, Dynamics GP, Dynamics SL.
+description: Get a cloud tenant so you can migrate to the cloud when you have an on-premises solution based on Business Central, Dynamics GP, Dynamics NAV.
 
 author: bmeier94
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
 ms. search.keywords: cloud, migration
-ms.date: 10/22/2020
+ms.date: 01/27/2021
 ms.author: edupont
 
 ---
 
 # Running the Cloud Migration Tool
 
-Organizations that run their workloads on-premises but are looking to move to the cloud can easily migrate to [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online by running the **Set up Cloud Migration** assisted setup that runs the cloud migration tool.  
+The **Set up Cloud Migration** assisted setup guide helps administrators migrate data from supported on-premises solutions to their [!INCLUDE [prod_short](../includes/prod_short.md)] online tenant as part of the migration to the cloud.  
 
 The cloud migration tool supports migration from specific versions of specific software. For more information, see the following articles:
 
@@ -36,6 +36,9 @@ In the following sections, you're working in your [!INCLUDE [prod_short](../deve
 
 This section provides best practices and recommendations for migrating to the cloud.  
 
+> [!IMPORTANT]
+> You must be signed in as an administrator of the [!INCLUDE [prod_short](../includes/prod_short.md)] online tenant and the Microsoft 365 tenant.
+
 * As a best practice, test this configuration in your sandbox environment before making changes to a production tenant.  
 
     For more information, see [Managing Environments](tenant-admin-center-environments.md).
@@ -51,7 +54,7 @@ This section provides best practices and recommendations for migrating to the cl
 
     If you want to add more companies after the first selection of companies, you can add additional companies in the **Cloud Migration Management** page in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online tenant. For more information, see [Adding a tenant to an existing runtime service, or updating companies](#adding-a-tenant-to-an-existing-runtime-service-or-updating-companies). But use the [Capacity](tenant-admin-center-capacity.md) section of the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] to keep track of how much data you migrate.  
 
-    In certain cases, the customer wants to migrate very large amounts of data. In those cases, you must first run the assisted setup once to create a pipeline, and then contact Support to increase the limitations on your [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online tenant. For more information, see [Escalating support issues to Microsoft](manage-technical-support.md#escalating-support-issues-to-microsoft). We are continually working on improving and optimizing the migration tool for larger database sizes, and starting with [2020 release wave 2](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/support-unlimited-number-production-sandbox-environments), customers can buy additional environments, for example.
+    In certain cases, the customer wants to migrate very large amounts of data. In those cases, you must first run the assisted setup once to create a pipeline, and then contact Support to increase the limitations on your [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online tenant. For more information, see [Escalating support issues to Microsoft](manage-technical-support.md#escalating-support-issues-to-microsoft). We are continually working on improving and optimizing the migration tool for larger database sizes, and since [2020 release wave 2](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/support-unlimited-number-production-sandbox-environments), customers can buy additional environments, for example.
 
 * Before you set up the cloud migration, make sure that at least one user in the system has *SUPER* permissions. This is the only user that will be allowed to make changes in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant.  
 * Configuring the cloud environment will have no impact on any users or data in your on-premises solution.
@@ -121,7 +124,7 @@ Another example is that if you are a hosting partner and want to add tenants to 
 
 In both examples, you will be making updates to an existing runtime service. When you get to the point of the wizard where you can specify an existing runtime services name, open the Microsoft Integration Runtime Service Manager and enter the runtime name in the field in the wizard; you will not be allowed to copy/paste. The runtime service will identify that you are making updates to an existing service and will not create a new one.  
 
-Complete the steps in the wizard to update the runtime service. If the change was related to adding tenants to an existing service, a new data pipeline will be created for that tenant. Changing your migration schedule or regenerating an Azure Data Factory (ADF) key may be done using the **Cloud Migration Management** page in your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] cloud tenant. For more information, see [Managing your Intelligent Cloud environment](manage-intelligent-edge.md).  
+Complete the steps in the wizard to update the runtime service. If the change was related to adding tenants to an existing service, a new data pipeline will be created for that tenant. Changing your migration schedule or regenerating an Azure Data Factory (ADF) key may be done using the **Cloud Migration Management** page in your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] cloud tenant. For more information, see [Managing the Migration to the Cloud](migration-management.md).  
 
 ## User groups and permission sets
 
@@ -132,7 +135,7 @@ To make setting up this read-only tenant more efficient, we created a new *Intel
 > [!NOTE]  
 > Before you configure the a connection from on-premises to [!INCLUDE [prod_short](../developer/includes/prod_short.md)], make sure that at least one user in each company is assigned SUPER permissions.  
 
-Users that are reassigned to the Intelligent Cloud user group will have access to read ALL data by default. If you need to further restrict what data a user should be able to read, the SUPER user may create new user groups and permissions sets and assign users accordingly. It is highly recommended to create any new permissions sets from a copy of the Intelligent Cloud permission set and then take away permissions you do not want users to have.  
+Users that are reassigned to the *Intelligent Cloud* user group will have access to read ALL data by default. If you need to further restrict what data a user should be able to read, the SUPER user may create new user groups and permissions sets and assign users accordingly. It is highly recommended to create any new permissions sets from a copy of the *Intelligent Cloud* permission set and then take away permissions you do not want users to have.  
 
 > [!WARNING]
 > If you grant insert, modify or delete permissions to any resource in the application that was set to read-only, it could have a negative impact on the data in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] cloud tenant. If this occurs, you may have to clear all your data and rerun a full migration to correct this.  
@@ -148,6 +151,5 @@ It is highly recommended that you test the impact of any extension in a sandbox 
 [Migrate to Business Central Online from Business Central On-premises](migrate-business-central-on-premises.md)  
 [Migrate to Business Central Online from Dynamics GP](migrate-dynamics-gp.md)  
 [Upgrading from Dynamics NAV to Business Central Online](../upgrade/Upgrade-Considerations.md#online)  
-[FAQ about connecting to the intelligent cloud](faq-intelligent-cloud.md)  
-[Your Access to the Intelligent Cloud](/dynamics365/business-central/about-intelligent-cloud)  
-[Managing your intelligent cloud environment](manage-intelligent-edge.md)  
+[FAQ about Connecting to Business Central Online from On-Premises Solutions](faq-intelligent-cloud.md)  
+[Intelligent Insights with Business Central Online](/dynamics365/business-central/about-intelligent-cloud)  

@@ -6,7 +6,7 @@ ms.date: 11/23/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -40,7 +40,7 @@ An instance of the [Variant](variant-data-type.md) data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example  
- The following example uses the ISFILTERPAGEBUILDER method on a filter page object that includes a filter control for the **Date** system table.  
+ The following example uses the IsFilterPageBuilder method on a filter page object that includes a filter control for the **Date** system table.  
    
 ```  
 var
@@ -49,9 +49,9 @@ var
     myVariant: Variant;
 begin
     varDateItem := 'Date record';  
-    varFilterPageBuilder.ADDTABLE(varDateItem + ‘ 1’,DATABASE::Date);  
+    varFilterPageBuilder.AddTable(varDateItem + ‘ 1’,DATABASE::Date);  
     myVariant := varFilterPageBuilder;  
-    if not myVariant.ISFILTERPAGEBUILDER then   
+    if not myVariant.IsFilterPageBuilder then   
       ERROR(‘This variant should contain a FilterPageBuilder variable’);  
 end;
   
