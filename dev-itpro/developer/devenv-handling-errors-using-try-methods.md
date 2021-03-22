@@ -6,7 +6,7 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -64,6 +64,7 @@ begin
     message('Everything went well');
 end;
 ```
+
 ```AL
 local procedure MyTryMethod()
 begin
@@ -71,7 +72,7 @@ begin
 end;
 ```
 
-When you run this codeunit, the execution of the `OnRun` trigger, the calling method, stops and the error message `An error occurred during the operation` is thrown in the UI.
+When you run this codeunit, the execution of the `OnRun` trigger stops. The error message `An error occurred during the operation` is thrown in the UI.
 
 Now, set the [TryFunction Attribute](methods/devenv-tryfunction-attribute.md) of the  `MyTrymethod` method. Then, add code to the `OnRun` trigger to handle the return value of the try method: 
 

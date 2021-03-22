@@ -3,7 +3,7 @@ title: Application Access Management API
 description: Learn about the Application Access Management API.
 author: jswymer
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na

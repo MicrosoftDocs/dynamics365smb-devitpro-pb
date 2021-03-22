@@ -5,9 +5,9 @@ author: bmeier94
 
 ms.reviewer: edupont
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms. search.keywords: cloud, edge
-ms.date: 01/26/2021
+ms.date: 02/17/2021
 ms.author: edupont
 ---
 
@@ -23,9 +23,9 @@ This section contains answers to frequently asked questions about connecting on-
 The current version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] can connect the following products in order to provide intelligent insights:
 
 - Dynamics GP (supported major versions)
-- [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises (current version + the two previous major versions)
+- [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises  
 
-  This means that if the current version is version 17, then you can connect to [!INCLUDE [prod_short](../includes/prod_short.md)] online if you are on version 17, 16, or 15.  
+  [!INCLUDE [bc-cloud-versions](../includes/bc-cloud-versions.md)]  
 
 If you are currently on a version of Dynamics NAV, you must upgrade to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises, and then switch to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online. For more information, see [Upgrading from Dynamics NAV to Business Central online](../upgrade/upgrade-considerations.md#online).
 
@@ -50,6 +50,16 @@ If you are looking at migrating databases larger than 80 GB, we recommend that y
 ## Is my SQL connection string required to set up the connection?
 
 Yes. The SQL connection string is passed to Azure Data Factory, where it is encrypted and delivered to your Self-Hosted Integration Runtime. The connection string is used to communicate with your SQL Server instance during the data replication process. For more information, see [How do I find my SQL connection string?](#how-do-i-find-my-sql-connection-string).  
+
+## How do I find my SQL connection string?
+
+Find the connection string to your SQL database in SQL Management Studio or Visual Studio. The user name and password defined in the connection requires a SQL Authenticated user name/password. Your connection string will look something like this:
+
+*Server=tcp:{ServerName},1433;Initial Catalog={DatabaseName};Persist Security Info=False; User ID={UserName};Password={Password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=True;Connection Timeout=30;*
+
+## How do I find the Integration Runtime name?
+
+Find the Integration Runtime name in the Microsoft Integration Runtime Manager, which you can find in your Windows system tray or by searching for the program. You must type the name. You will not be able to copy and paste the name.  
 
 ## I am a hosting partner - do I need to configure the Self-Hosted Runtime Service for each tenant?
 
@@ -102,16 +112,6 @@ Not necessarily. Most extensions will run without issues in the online environme
 ## How do I build an extension that enables data replication?
 
 The extension must be created in the same manner as any other extension. For data to replicate, you must add a **ReplicateData** property to your table and set the value to *True*. If your extension connects with an external service and you want to restrict any service calls from your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online tenant, a good practice would be to store the connection information in a separate table and set the **ReplicateData** property to *False*. This would enable you to keep the extension installed but prevent it from making any type of service calls from the read-only [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant. Once the extension is installed in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online and on-premises, the data will begin to replicate.  
-
-## How do I find my SQL connection string?
-
-Find the connection string to your SQL database in SQL Management Studio or Visual Studio. The user name and password defined in the connection requires a SQL Authenticated user name/password. Your connection string will look something like this:
-
-*Server=tcp:{ServerName},1433;Initial Catalog={DatabaseName};Persist Security Info=False; User ID={UserName};Password={Password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=True;Connection Timeout=30;*
-
-## How do I find the Integration Runtime name?
-
-Find the Integration Runtime name in the Microsoft Integration Runtime Manager, which you can find in your Windows system tray or by searching for the program. You must type the name. You will not be able to copy and paste the name.  
 
 ## See also
 

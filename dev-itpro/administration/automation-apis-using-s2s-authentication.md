@@ -7,7 +7,7 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
 ---
@@ -104,4 +104,15 @@ Complete these steps to set up the Azure AD application for service-to-service a
 
 ## See Also
 
-[Automation API overview](dynamics-microsoft-automation-overview.md)  
+[Automation company](resources/dynamics_automationcompany.md)  
+[Company](resources/dynamics_company.md)  
+[Configuration package](resources/dynamics_configurationpackage.md)  
+[Extension](resources/dynamics_extension.md)  
+[Extension deployment status](resources/dynamics_extensiondeploymentstatus.md)  
+[Extension upload](resources/dynamics_extensionupload.md)  
+[Permission set](resources/dynamics_permissionset.md)  
+[Scheduled job](resources/dynamics_scheduledjob.md)  
+[User](resources/dynamics_user.md)  
+[User group](resources/dynamics_usergroup.md)  
+[User group member](resources/dynamics_usergroupmember.md)  
+[User permission](resources/dynamics_userpermission.md)  

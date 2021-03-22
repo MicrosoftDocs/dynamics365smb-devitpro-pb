@@ -3,7 +3,7 @@ title: "Working with Translation Files"
 description: "How to work with translations, multilanguage, and XLIFF files in Business Central"
 ms.custom: na
 ms.date: 10/08/2020
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 author: SusanneWindfeldPedersen
@@ -29,7 +29,7 @@ In the app.json file of your extension, add the following line:
 Now, when you run the build command (**Ctrl+Shift+B**) in Visual Studio Code, a `\Translations` folder will be generated and populated with the .xlf file that contains all the labels, label properties, and report labels that you are using in the extension. The generated .xlf file can now be translated.
 
 > [!IMPORTANT]  
-> Make sure to rename the translated file to avoid that the file is overwritten next time the extension is built.
+> Make sure to rename the translation file to avoid the file being overwritten the next time the extension is built.
 
 By setting the `GenerateCaptions` flag in the app.json file, you specify that you want to generate captions based on the object name for pages, tables, reports, XMLports, request pages, and table fields. If the object already has a `Caption` or `CaptionML` property set, that value will be used, for table fields the `OptionCaption` is used. The syntax is the following:
 

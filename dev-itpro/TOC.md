@@ -132,7 +132,49 @@
 ### [Administration Center API](administration/administration-center-api.md)
 ## Automation
 ### [Introduction to Automation APIs](administration/itpro-introduction-to-automation-apis.md)
-### [Automation API Overview](administration/dynamics-microsoft-automation-overview.md)
+<!-- START>DO_NOT_EDIT -->
+<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
+### [Automation company](administration/resources/dynamics_automationcompany.md)
+#### [Get automation company](administration/api/dynamics_automationcompany_get.md)
+#### [Delete automation company](administration/api/dynamics_automationcompany_delete.md)
+#### [Create automation company](administration/api/dynamics_automationcompany_create.md)
+#### [Update automation company](administration/api/dynamics_automationcompany_update.md)
+### [Company](administration/resources/dynamics_company.md)
+#### [Get company](administration/api/dynamics_company_get.md)
+### [Configuration package](administration/resources/dynamics_configurationpackage.md)
+#### [Get configuration package](administration/api/dynamics_configurationpackage_get.md)
+#### [Delete configuration package](administration/api/dynamics_configurationpackage_delete.md)
+#### [Create configuration package](administration/api/dynamics_configurationpackage_create.md)
+#### [Update configuration package](administration/api/dynamics_configurationpackage_update.md)
+### [Extension](administration/resources/dynamics_extension.md)
+#### [Get extension](administration/api/dynamics_extension_get.md)
+### [Extension deployment status](administration/resources/dynamics_extensiondeploymentstatus.md)
+#### [Get extension deployment status](administration/api/dynamics_extensiondeploymentstatus_get.md)
+### [Extension upload](administration/resources/dynamics_extensionupload.md)
+#### [Get extension upload](administration/api/dynamics_extensionupload_get.md)
+#### [Create extension upload](administration/api/dynamics_extensionupload_create.md)
+#### [Update extension upload](administration/api/dynamics_extensionupload_update.md)
+### [Permission set](administration/resources/dynamics_permissionset.md)
+#### [Get permission set](administration/api/dynamics_permissionset_get.md)
+### [Scheduled job](administration/resources/dynamics_scheduledjob.md)
+#### [Get scheduled job](administration/api/dynamics_scheduledjob_get.md)
+### [User](administration/resources/dynamics_user.md)
+#### [Get user](administration/api/dynamics_user_get.md)
+#### [Update user](administration/api/dynamics_user_update.md)
+### [User group](administration/resources/dynamics_usergroup.md)
+#### [Get user group](administration/api/dynamics_usergroup_get.md)
+#### [Update user group](administration/api/dynamics_usergroup_update.md)
+### [User group member](administration/resources/dynamics_usergroupmember.md)
+#### [Get user group member](administration/api/dynamics_usergroupmember_get.md)
+#### [Delete user group member](administration/api/dynamics_usergroupmember_delete.md)
+#### [Create user group member](administration/api/dynamics_usergroupmember_create.md)
+#### [Update user group member](administration/api/dynamics_usergroupmember_update.md)
+### [User permission](administration/resources/dynamics_userpermission.md)
+#### [Get user permission](administration/api/dynamics_userpermission_get.md)
+#### [Delete user permission](administration/api/dynamics_userpermission_delete.md)
+#### [Create user permission](administration/api/dynamics_userpermission_create.md)
+#### [Update user permission](administration/api/dynamics_userpermission_update.md)
+<!-- IMPORTANT: END>DO_NOT_EDIT -->
 ### [Using Service-to-Service Authentication](administration/automation-apis-using-s2s-authentication.md)
 ## Onboard your customers
 ### [Trials and Sign-ups](deployment/customer-signup.md)
@@ -155,17 +197,20 @@
 <!--### [Migrating from Dynamics SL](administration/migrate-data.md)-->
 <!-- end migrate -->
 ## What's New or Changed
+### [Update 17.5](whatsnew/whatsnew-update-17-5.md)
+### [Update 17.4](whatsnew/whatsnew-update-17-4.md)
 ### [Update 17.3](whatsnew/whatsnew-update-17-3.md)
 ### [Update 17.2](whatsnew/whatsnew-update-17-2.md)
 ### [Update 17.1](whatsnew/whatsnew-update-17-1.md)
-### [Update 16.5](whatsnew/whatsnew-update-16-5.md)
-### [Update 16.4](whatsnew/whatsnew-update-16-4.md)
-### [Update 16.3](whatsnew/whatsnew-update-16-3.md)
-### [Update 16.2](whatsnew/whatsnew-update-16-2.md)
-### [Update 16.1](whatsnew/whatsnew-update-16-1.md)
-### [Update 15.4](whatsnew/whatsnew-update-15-4.md)
-### [Update 15.3](whatsnew/whatsnew-update-15-3.md)
-### [Update 15.2](whatsnew/whatsnew-update-15-2.md)
+### Updates for earlier major versions
+#### [Update 16.5](whatsnew/whatsnew-update-16-5.md)
+#### [Update 16.4](whatsnew/whatsnew-update-16-4.md)
+#### [Update 16.3](whatsnew/whatsnew-update-16-3.md)
+#### [Update 16.2](whatsnew/whatsnew-update-16-2.md)
+#### [Update 16.1](whatsnew/whatsnew-update-16-1.md)
+#### [Update 15.4](whatsnew/whatsnew-update-15-4.md)
+#### [Update 15.3](whatsnew/whatsnew-update-15-3.md)
+#### [Update 15.2](whatsnew/whatsnew-update-15-2.md)
 <!-- end admin -->
 <!-- Development-->
 # Development
@@ -193,6 +238,7 @@
 #### [Marketing Validation Checklist](developer/readiness/readiness-checklist-marketing.md)
 #### [Technical Validation Checklist](developer/devenv-checklist-submission.md)
 #### [How to Make Compelling Videos](developer/readiness/readiness-how-to-make-compelling-videos.md)
+#### [Technical Validation FAQ](developer/readiness/readiness-technical-validation-faq.md)
 #### [How to Create an Effective Sales Landing Page](developer/readiness/readiness-how-to-create-sales-landing-page.md)
 ### Getting Started with AL for On-Premises
 #### [Getting Started with C/SIDE and AL Side-by-Side for On-Premises](developer/devenv-get-started-al-for-onprem.md)
@@ -430,6 +476,7 @@
 ## Rules and Guidelines
 ### [Rules and Guidelines for AL Code](compliance/apptest-overview.md)
 ### [Best Practices for AL](compliance/apptest-bestpracticesforalcode.md)
+### [Best Practices for Deprecation of Code in the Base App](developer/devenv-deprecation-guidelines.md)
 ### [Benefits and Guidelines for using a Prefix or Suffix](compliance/apptest-prefix-suffix.md)
 ### [Instrumenting an Application for Telemetry](developer/devenv-instrument-application-for-telemetry.md)
 ### [Testing your Extension](compliance/apptest-testingyourextension.md)
@@ -499,7 +546,7 @@
 #### [Procedure Overload](developer/methods/devenv-overload-method.md)
 #### [Joker Data Type](developer/methods/devenv-joker-datatype.md)
 #### Option Types
-<!-- [//]: # (START>DO_NOT_EDIT)
+<!-- [//]: # (START>DO_NOT_EDIT_METHODS)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.) -->
 ##### [Action Option Type](developer/methods-auto/action/action-option.md)
@@ -2051,7 +2098,7 @@
 ##### [WriteTo(XmlWriteOptions, var Text) Method](developer/methods-auto/xmltext/xmltext-writeto-xmlwriteoptions-text-method.md)
 #### [XmlWriteOptions Data Type](developer/methods-auto/xmlwriteoptions/xmlwriteoptions-data-type.md)
 ##### [PreserveWhitespace([Boolean]) Method](developer/methods-auto/xmlwriteoptions/xmlwriteoptions-preservewhitespace-method.md)
-<!-- [//]: # (IMPORTANT: END>DO_NOT_EDIT) -->
+<!-- [//]: # (IMPORTANT: END>DO_NOT_EDIT_METHODS) -->
 ### Properties
 #### [Properties Overview](developer/properties/devenv-properties.md)
 #### [Table, Table Fields, and Table Extension Properties](developer/properties/devenv-table-properties.md)
@@ -2156,6 +2203,7 @@
 ## Connect Apps
 ### [Developing Connect Apps](developer/devenv-develop-connect-apps.md)
 ### [Tips for working with the APIs](developer/devenv-connect-apps-tips.md)
+### [Using Filtering](developer/devenv-connect-apps-filtering.md)
 ## [Developing a Custom API](developer/devenv-develop-custom-api.md)
 <!-- CDS -->
 ## Integrating with Microsoft Dataverse
@@ -2240,11 +2288,16 @@
 #### [Configure IIS](deployment/configure-iis.md)
 #### [Configure SSL](deployment/configure-ssl-web-client-connection.md)
 #### [Setting Up Multiple Web Server Instances](deployment/configure-multiple-web-server-instances.md)
-### [Migrating to Multitenancy](deployment/migrating-to-multitenancy.md)
+### Multitenant Deployment
+#### [Architecture Overview](deployment/multitenant-deployment-architecture.md)
+#### [Setup Guide](administration/multitenant-setup-guide.md)
+#### Migrating From Single to Multitenancy
+##### [Overview](deployment/migrating-to-multitenancy.md)
+##### [Separating Application Data from Business Data](deployment/separating-application-data-from-business-data.md)
 ### Database
 #### [Installation Considerations for SQL Server](deployment/installation-considerations-for-microsoft-sql-server.md)
 #### [Configuring Database Authentication](administration/configure-sql-server-authentication.md)
-#### [Creating Databases](deployment/devenv-create-databases.md)
+#### [Creating Application and Tenant Databases](deployment/devenv-create-databases.md)
 #### [Deploying to Azure SQL Database](deployment/deploy-database-azure-sql-database.md)
 #### [Reducing Database Size](administration/database-reduce-data.md)
 ### Business Central Mobile App

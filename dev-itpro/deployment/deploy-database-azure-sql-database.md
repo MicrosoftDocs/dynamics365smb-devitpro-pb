@@ -2,11 +2,11 @@
 title: "Running a Business Central Database to Azure SQL Database"
 description: Learn how to deploy a Business Central database to Azure SQL Database
 ms.custom: na
-ms.date: 10/28/2020
+ms.date: 02/19/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
@@ -23,7 +23,8 @@ Make sure that you have the following prerequisites for completing this procedur
 
 - A Microsoft Azure subscription and access to the Azure portal.  
 
-- A [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database installed on a SQL Server Database Engine instance.
+- A [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database installed on a SQL Server Database Engine instance. The database must use a supported Windows collation. For a list of Windows collations, see [Windows Collations
+](/sql/t-sql/statements/windows-collation-name-transact-sql#windows-collations) in the SQL Server documentation.
 
 ## Create and configure an Azure SQL Database Server  
 
@@ -189,3 +190,4 @@ When comparing the performance of Azure SQL database and a SQL Server deployed t
 
 [Installation Considerations for Microsoft SQL Server](installation-considerations-for-microsoft-sql-server.md)  
 [Optimizing SQL Server Performance](../administration/optimize-sql-server-performance.md)  
+[Creating Databases in Business Central](devenv-create-databases.md)  
