@@ -21,8 +21,8 @@ Apps built using AL extend the functionality of [!INCLUDE[prod_short](../include
 |Setting|Example|Description|
 |-------|------|-----|
 |`id`   |`"id": "ef4dabfc-1de7-4d90-b948-4a9c2933d794"`| The `id`, also known as the app ID. This is a GUID which is auto-generated when the project is created. The app ID is also bound to how tables are named in [!INCLUDE[prod_short](../includes/prod_short.md)] and how the identity of an application is computed. Changing the app ID may have severe consequences, such as the app not functioning properly, or data not being available.|
-|`name`|`"name": "Partner X extension"`|The unique extension name.|
-|`Publisher`|`"publisher": "Business Central Partner X"`|The name of the publisher.|
+|`name`|`"name": "Partner X extension"`|The unique extension name. <br>**Note:** The name can be used by other extensions to express a compile-time dependency on the extension. Changing the name of your extension will force any extensions that have taken a dependency to update their manifest and can cause upgrade/extension deployment issues. |
+|`Publisher`|`"publisher": "Business Central Partner X"`|The name of your publisher, for example: **NAV Partner**, **LLC**. <br>**Note:** The publisher can be used by other extensions to express a compile-time dependency on the extension. Changing the publisher of your extension will force any extensions that have taken a dependency to update their manifest and can cause upgrade/extension deployment issues. |
 
 
 <!-- The appId with a tenantId identifies an application in the service architecture of business central. --> 
