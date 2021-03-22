@@ -48,6 +48,7 @@ By setting the `GenerateLockedTranslations` flag in the app.json file, you speci
 ```
 
 ## Label syntax
+
 The label syntax is shown in the example below for the **Caption** property: 
 
 ```AL
@@ -75,6 +76,7 @@ var
 
 > [!IMPORTANT]  
 > The **ML** versions of properties are **not** included in the .xlf file:  
+>
 > - [CaptionML](properties/devenv-captionml-property.md)
 > - [ConstValueML](properties/devenv-constvalueml-property.md)
 > - [InstructionalTextML](properties/devenv-instructionaltextml-property.md)
@@ -118,6 +120,7 @@ When the extension is built and published, you change the language of [!INCLUDE[
 To translate other extensions, for example, adding translations to the Base Application, you must reference the project to be translated using the `dependencies` section in the app.json file. For more information, see [JSON Files](devenv-json-files.md). When you have the dependencies added, you can add xliff files in your current project that translates the object captions of the referenced extension. Create a directory named **Translations** in the root of the extension, and place the translated xliff file there. When your extension is then built and published, change the language of [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] to view the UI in the translated language. 
 
 
+<!-- removing bug 394765
 ## Translation and Localization apps
 
 > [!NOTE]  
@@ -128,10 +131,11 @@ The .xlf files approach cannot be used for translating the base application. If 
 We recommend that you use only one .txt file per language. There is no enforced naming on the .txt files, but a suggested good practice is to name it `<extensionname>.<language>.txt`.  
 
 For more information about importing and exporting .txt files, see [How to: Add Translated Strings By Importing and Exporting Multilanguage Files in Dynamics NAV](/dynamics-nav/how-to--add-translated-strings-by-importing-and-exporting-multilanguage-files).
+-->
 
 ## See Also
-[How to: Add Translated Strings By Importing and Exporting Multilanguage Files in Dynamics NAV](/dynamics-nav/how-to--add-translated-strings-by-importing-and-exporting-multilanguage-files)   
-[Working with labels](devenv-using-labels.md)    
+
+[Working with labels](devenv-using-labels.md)  
 [Working with multiple AL project folders within one workspace](devenv-multiroot-workspaces.md)  
 [JSON Files](devenv-json-files.md)
 
