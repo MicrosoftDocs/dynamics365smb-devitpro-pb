@@ -11,7 +11,7 @@ author: SusanneWindfeldPedersen
 ---
 
 # File Handling and Text Encoding
-There are several AL methods that you can use to open files, import and export files to and from [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], and more. For a list of methods, see [File Data Type](./methods-auto/library.md).
+There are several AL methods that you can use to open files, import and export files to and from [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], and more. For a list of methods, see [File Data Type](./methods-auto/file/file-data-type.md).
 
 The following are recommended best practices for working with files:
 
@@ -28,8 +28,8 @@ You can specify text encoding for the following objects.
 |Object or data type|For more information, see|  
 |-------------|----------------|  
 |**XMLports**|[TextEncoding Property \(XMLports\)](/dynamics365/business-central/dev-itpro/developer/devenv-textencoding-property)|  
-|**File**|[OPEN Method \(File\)](./methods-auto/library.md)|  
-|**BLOB**|[CREATEINSTREAM Method \(BLOB\)](./methods-auto/library.md)<br /><br /> [CREATEOUTSTREAM Method \(BLOB\)](./methods-auto/library.md)|  
+|**File**|[OPEN Method \(File\)](./methods-auto/file/file-open-method.md)|  
+|**BLOB**|[CREATEINSTREAM Method \(BLOB\)](./methods-auto/blob/blob-createinstream-method.md)<br /><br /> [CREATEOUTSTREAM Method \(BLOB\)](./methods-auto/library.md)|  
   
 There are several industry text encoding formats and different systems support different formats. Internally, [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] uses Unicode encoding. For exporting and importing data with an XMLport, it supports MS-DOS, UTF-8, UTF-16, and Windows encoding formats.
 
