@@ -91,14 +91,14 @@ These counters pertain to the data caching on the server instance.
 
 |  Counter  |  [!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]  |
 |-----------|-----------------------------------------------------------------------|
-|\# Calculated fields cache total requests|Count of the total number of requests to the calculated fields cache. The calculated fields cache contains the results of [CALCFIELDS method \(Record\)](../developer/methods-auto/library.md) calls.|
+|\# Calculated fields cache total requests|Count of the total number of requests to the calculated fields cache. The calculated fields cache contains the results of [CalcFields method \(Record\)](../developer/methods-auto/record/record-calcfields-method.md) calls.|
 |% Calculated fields cache hit rate|Percentage of hits in the calculated fields cache, compared to the total requests to the calculated fields cache.|
 |\# Command cache total requests|Count of the total number of requests to the command cache. The command cache contains the results of all SQL commands.|
 |% Command cache hit rate|Percentage of hits in the command cache, compared to the total requests to the command cache.|
 |\# Primary key cache total requests|Count of the total number of requests to the primary key cache. The primary key cache contains the results of requests to get a record by using its primary key.|
 |% Primary key cache hit rate|Percentage of hits in the primary key cache, compared to the total requests to the primary key cache.|  
 |\# Result set cache total requests|Count of the total number of requests to the result set cache. The result set cache contains result sets that are returned from SQL Server.|
-|% Result set cache hit rate|Percentage of hits in the result set cache, compared to the total requests to the result set cache.<BR /><BR />The value also depends on the usage pattern and which parts of the application are is used. For example, the [SELECTLATESTVERSION method](../developer/methods-auto/library.md) will clear the cache, which results in a lower hit rate.<BR /><BR />In general, reading frequently updated values will lower the hit rate because the cache synchronization across [!INCLUDE[server](../developer/includes/server.md)] instances will remove stale values, which causes re-reads.|
+|% Result set cache hit rate|Percentage of hits in the result set cache, compared to the total requests to the result set cache.<BR /><BR />The value also depends on the usage pattern and which parts of the application are is used. For example, the [SelectLatestVersion method](../developer/methods-auto/database/database-selectlatestversion-method.md) will clear the cache, which results in a lower hit rate.<BR /><BR />In general, reading frequently updated values will lower the hit rate because the cache synchronization across [!INCLUDE[server](../developer/includes/server.md)] instances will remove stale values, which causes re-reads.|
 |\# Rows in all temporary tables|Count of number of rows in all temporary tables.|
 
 ## Scheduled task counters
