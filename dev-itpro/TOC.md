@@ -401,6 +401,7 @@
 ### [How to: Create an RDL Layout Report](developer/devenv-howto-rdl-report-layout.md)
 ### [Walkthrough: Designing a Report from Multiple Tables](developer/devenv-walktrough-designing-reports-multiple-tables.md)
 ### [Formatting Decimal Values in Fields](developer/devenv-format-field-data.md)
+### [Adding Barcodes](developer/devenv-report-add-barcodes.md)
 ### Developing Printer Extensions
 #### [Printer Extension Overview](developer/devenv-reports-printing.md)
 #### [Creating a Printer Extension](developer/devenv-reports-create-printer-extension.md)
