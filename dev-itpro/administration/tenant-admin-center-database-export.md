@@ -4,11 +4,11 @@ description: Use the Business Central administration center to export tenant dat
 author: jswymer
 
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: administration, tenant, admin, environment, sandbox, database, export
+ms.search.keywords: administration, tenant, admin, environment, sandbox, database, export, bacpac, backup
 ms.date: 11/04/2020
 ms.author: jswymer
 
@@ -22,6 +22,7 @@ From the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], 
 ## Considerations before you begin
 
 - You can only request a database export for production environments. If you want to export data from a sandbox environment, you can use Excel or RapidStart.
+- You can only request a database export if the customer has a paid Business Central subscription.
 - You must have explicit permission to export databases. For more information, see the [Users who can export databases](#users-who-can-export-databases) section.
 - You can't export your database to an Azure premium storage account. The steps in this article are only supported on Azure standard storage accounts.
 

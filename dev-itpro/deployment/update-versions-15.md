@@ -4,10 +4,10 @@ description: "Learn about the updates for Dynamics 365 Business Central 2019 Rel
 author: jswymer
 ms.custom: na
 ms.reviewer: edupont
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
-ms.date: 02/06/2021
+ms.date: 03/01/2021
 
 ---
 
@@ -25,23 +25,26 @@ You should always install the latest update.
 
 The following table lists the updates that have been released for 2019 release wave 2 of Business Central (version 15). The updates include hotfixes that apply to all countries and hotfixes that apply to specific local versions. Check the relevant Support article for a description.
 
-|Knowledge Base ID                                           |Title                |Release date  |Build No. |Local versions included |
-|------------------------------------------------------------|---------------------|--------------|----------|------------------------|
-|[5000694](https://support.microsoft.com/help/5000694)|Update 15.15|February 2021|Application Build 15.15.46359</br>Platform Build 15.0.46345|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
-|[4595150](https://support.microsoft.com/help/4595150)|Update 15.14|January 2021|Application Build 15.14.46107</br>Platform Build 15.0.46099|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
-|[4583552](https://support.microsoft.com/help/4583552)|Update 15.13|December 2020|Application Build 15.13.45740</br>Platform Build 15.0.45731|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
-|[4583512](https://support.microsoft.com/help/4583512)|Update 15.12|November 2020|Application Build 15.12.45390</br>Platform Build 15.0.45381|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
-|[4583500](https://support.microsoft.com/help/4583500)|Update 15.11|October 2020|Application Build 15.11.44966</br>Platform Build 15.0.44957|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
-|[4576663](https://support.microsoft.com/help/4576663)|Update 15.10|September 2020|Application Build 15.10.44664</br>Platform Build 15.10.44655|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
-|[4563414](https://support.microsoft.com/help/4563414)|Update 15.9|August 2020|Application Build 15.9.44343</br>Platform Build 15.0.44325|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
-|[4563406](https://support.microsoft.com/help/4563406)|Update 15.8|July 2020|Application Build 15.8.43801</br>Platform Build 15.0.43794|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
-|[4564071](https://support.microsoft.com/help/4564071)|Update 15.7|June 2020|Application Build 15.7.43293</br>Platform Build 15.0.43283|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
-|[4549685](https://support.microsoft.com/help/4549685)|Update 15.6|May 2020|Application Build 15.6.42646</br>Platform Build 15.0.42629|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
-|[4549678](https://support.microsoft.com/help/4549678)|Update 15.5|April 2020|Application Build 15.5.41926</br>Platform Build 15.0.41893|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
-|[4538888](https://support.microsoft.com/help/4538888)|Update 15.4|March 2020|Application Build 15.4.41213</br>Platform Build 15.0.41193|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
-|[4539530](https://support.microsoft.com/help/4539530)|Update 15.3|February 2020|Application Build 15.3.40822</br>Platform Build 15.0.40791|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
-|[4533389](https://support.microsoft.com/help/4533389)|Update 15.2|December 2019|Application Build 15.2.39040</br>Platform Build 15.0.38951|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
-|[4528699](https://support.microsoft.com/help/4528699) |Update 15.1 |November 2019|Application Build 15.1.38071</br>Platform Build 15.0.37898|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
+Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK
+
+|Knowledge Base ID                                           |Title                |Release date  |Build No. |
+|------------------------------------------------------------|---------------------|--------------|----------|
+|[5001233](https://support.microsoft.com/help/5001233)|Update 15.16|March 2021|Application Build 15.16.46612</br>Platform Build 15.0.46600|
+|[5000694](https://support.microsoft.com/help/5000694)|Update 15.15|February 2021|Application Build 15.15.46359</br>Platform Build 15.0.46345|
+|[4595150](https://support.microsoft.com/help/4595150)|Update 15.14|January 2021|Application Build 15.14.46107</br>Platform Build 15.0.46099|
+|[4583552](https://support.microsoft.com/help/4583552)|Update 15.13|December 2020|Application Build 15.13.45740</br>Platform Build 15.0.45731|
+|[4583512](https://support.microsoft.com/help/4583512)|Update 15.12|November 2020|Application Build 15.12.45390</br>Platform Build 15.0.45381|
+|[4583500](https://support.microsoft.com/help/4583500)|Update 15.11|October 2020|Application Build 15.11.44966</br>Platform Build 15.0.44957|
+|[4576663](https://support.microsoft.com/help/4576663)|Update 15.10|September 2020|Application Build 15.10.44664</br>Platform Build 15.10.44655|
+|[4563414](https://support.microsoft.com/help/4563414)|Update 15.9|August 2020|Application Build 15.9.44343</br>Platform Build 15.0.44325|
+|[4563406](https://support.microsoft.com/help/4563406)|Update 15.8|July 2020|Application Build 15.8.43801</br>Platform Build 15.0.43794|
+|[4564071](https://support.microsoft.com/help/4564071)|Update 15.7|June 2020|Application Build 15.7.43293</br>Platform Build 15.0.43283|
+|[4549685](https://support.microsoft.com/help/4549685)|Update 15.6|May 2020|Application Build 15.6.42646</br>Platform Build 15.0.42629|
+|[4549678](https://support.microsoft.com/help/4549678)|Update 15.5|April 2020|Application Build 15.5.41926</br>Platform Build 15.0.41893|
+|[4538888](https://support.microsoft.com/help/4538888)|Update 15.4|March 2020|Application Build 15.4.41213</br>Platform Build 15.0.41193|
+|[4539530](https://support.microsoft.com/help/4539530)|Update 15.3|February 2020|Application Build 15.3.40822</br>Platform Build 15.0.40791|
+|[4533389](https://support.microsoft.com/help/4533389)|Update 15.2|December 2019|Application Build 15.2.39040</br>Platform Build 15.0.38951|
+|[4528699](https://support.microsoft.com/help/4528699) |Update 15.1 |November 2019|Application Build 15.1.38071</br>Platform Build 15.0.37898|
 
 ## See Also
 

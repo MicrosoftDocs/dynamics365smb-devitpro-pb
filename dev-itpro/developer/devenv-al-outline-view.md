@@ -5,7 +5,7 @@ description: "Description of the outline view in VS Code."
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 10/01/2020
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---

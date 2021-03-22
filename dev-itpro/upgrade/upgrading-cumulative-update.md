@@ -6,7 +6,7 @@ ms.date: 10/01/2020
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.author: jswymer
 ms.service: "dynamics365-business-central"
 author: jswymer
@@ -14,7 +14,6 @@ author: jswymer
 # Installing a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Spring 2019 Cumulative Update
 
 This article describes how to install a cumulative update for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises. A cumulative update is a set of files that include hotfixes and regulatory features released for Business Central.
- 
 
 ## Download the cumulative update package
 
