@@ -106,7 +106,7 @@ Your application can use permission sets from various sources, like Microsoft, p
     You can export all permission sets. But you're mostly interested in the Microsoft permission sets and custom permission sets based on Microsoft permission sets.  
 
     > [!IMPORTANT]
-    > If you're upgrading the application, either exclude the SUPER permission set when exporting or be sure to remove it later from the XML file that you'll import. You can't replace or modify the SUPER permission set. If you doing a technical upgrade, you'll have to include the SUPER permission set.
+    > If you're upgrading the application, either exclude the SUPER permission set when exporting or be sure to remove it later from the XML file that you'll import. You can't replace or modify the SUPER permission set. If you're doing a technical upgrade, you'll have to include the SUPER permission set.
 
     For more information, see [To export and import a permission set](https://docs.microsoft.com/dynamics365/business-central/ui-define-granular-permissions#to-export-and-import-a-permission-set).
 
