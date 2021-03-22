@@ -46,7 +46,7 @@ Use the [ClearAll Method](../../methods-auto/system/system-clearall-method.md) t
 
 For a composite data type, such as a record or an array, all elements are cleared. Furthermore, all fields in a record will be initialized with the [InitValue Property](../../properties/devenv-initvalue-property.md) of the field.  
 
-**Clear** can also be used on the [Guid Data Type](../library.md). It converts the GUID to zeros. Use the [CreateGuid Method \(Guid\)](../../methods-auto/system/system-createguid-method.md) to create a new unique GUID.  
+**Clear** can also be used on the [Guid Data Type](../guid/guid-data-type.md). It converts the GUID to zeros. Use the [CreateGuid Method \(Guid\)](../../methods-auto/system/system-createguid-method.md) to create a new unique GUID.  
 
  **Clear** can also be used to deselect a company. For more information, see [ChangeCompany Method \(Record\)](../../methods-auto/record/record-changecompany-method.md).  
 
