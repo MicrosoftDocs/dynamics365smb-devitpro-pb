@@ -10,8 +10,6 @@ ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ---
 
-<!--TODO John: This is only valid for V3. We should delete. -->
-
 # Using OData V3 to Return-Obtain an AtomPub Document
 
 > **APPLIES TO:** [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 2 and earlier. OData V3 isn't supported in later versions.
@@ -20,11 +18,6 @@ When you register an OData web service, you expose an OData V3 service endpoint 
   
 > [!NOTE]  
 > This article applies only to OData V3. You can't use the article with OData V4 endpoints.  
-
-<!--
-> [!NOTE]  
->  To use the URIs in this article, you must have access to the [!INCLUDE[demolong](../developer/includes/demolong_md.md)].  
- -->
 
 ## Obtain an AtomPub Document or Feed
 
