@@ -1,5 +1,6 @@
 ---
 title: "Using Filter Expressions in OData URIs"
+description: Learn how to use filter expressions in OData URIs to limit the results returned in a document.
 author: jswymer
 ms.author: jswymer
 ms.custom: na
@@ -10,7 +11,8 @@ ms.tgt_pltfrm: na
 ms.topic: conceptual
 ---
 # Using Filter Expressions in OData URIs
-You can use filter expressions in OData URIs to limit the results that are returned in an AtomPub document. This topic identifies the filter expressions that you can use, describes the equivalent field or table filter that you can use in AL, and presents examples to show the syntax for using filter expressions in OData web service URIs and applications.  
+
+You use filter expressions in OData URIs to limit the results in a returned document. This article lists the filter expressions, and describes the equivalent field or table filter in AL. It provides examples of syntax for using filter expressions in OData URIs and applications.  
 
 ## Filter Expressions  
  To add a filter to an OData URI, add `$filter=` to the end of the name of the published web service. For example, the following URI filters the **City** field in the **Customer** page to return all customers who are located in Miami:  
@@ -50,7 +52,7 @@ https://localhost:7048/BC130/OData/Company('CRONUS International Ltd.')/Customer
 
 ## Referencing Different Data Types in Filter Expressions
 
-You must use the appropriate notation for different data types with filter expressions.  
+Use the appropriate notation for different data types with filter expressions.  
 
 - String values must be delimited by single quotation marks.  
 
