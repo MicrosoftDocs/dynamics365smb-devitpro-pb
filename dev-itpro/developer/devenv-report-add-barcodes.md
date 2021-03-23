@@ -14,10 +14,7 @@ ms.author: jswymer
 
 # Adding Barcodes to Reports
 
-This article explains how to add barcodes to a report. There are things to think about
-
-- Prepare the data that you want to encode
-- Add a barcode font to the report layout.
+This article explains how to add barcodes to a report. 
 
 ## Overview
 
@@ -25,7 +22,7 @@ The barcode functionality for reports is provided by the **Barcode** module of t
 
 Business Central online comes fully equipped with a barcode provider and a library of fonts, so you can start adding barcodes to reports right away.
 
-With Business Cenral on-premises, you'll have to develop your barcode provider. This task involves:
+With Business Central on-premises, you'll have to develop your barcode provider. This task involves:
 
 1. Get the barcode fonts that you want to to use on reports.
 2. Install the fonts on the machine where Business Central server is running.
