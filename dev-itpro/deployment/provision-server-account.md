@@ -116,7 +116,7 @@ For more information, see [Service Principal Names](/windows/desktop/ad/service-
         </net.tcp>
     ```
 
-For more information about SMSvcHost.exe and the SMSvcHost.exe.config file, see [Configuring the Net.TCP Port Sharing Service](https://msdn.microsoft.com/library/aa702669%28v=vs.110%29.aspx).
+For more information about SMSvcHost.exe and the SMSvcHost.exe.config file, see [Configuring the Net.TCP Port Sharing Service](/dotnet/framework/wcf/feature-details/configuring-the-net-tcp-port-sharing-service).
 
 <!--
 ##  <a name="NSA"></a> Provisioning the Network Service Account  
@@ -319,4 +319,4 @@ GO
 ## See Also
 
 [Creating Databases](devenv-create-databases.md)  
-[Configuring Business Central Server](../administration/configure-server-instance.md)  
+[Configuring Business Central Server](../administration/configure-server-instance.md)

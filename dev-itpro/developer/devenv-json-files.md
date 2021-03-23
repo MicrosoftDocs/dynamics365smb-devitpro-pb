@@ -29,8 +29,8 @@ The following table describes the settings in the `app.json` file. For an exampl
 |Setting|Mandatory|Value|
 |-------|---------|-----|
 |id|Yes|The unique ID of the extension. When the `app.json` file is automatically created, the ID is set to a new GUID value. <br>**Note:** The appId is used at runtime to bind table names contained in the application. Changing the appId will result in data from old tables not being used.|
-|name|Yes|The unique extension name.|
-|publisher|Yes|The name of your publisher, for example: **NAV Partner**, **LLC**.|
+|name|Yes|The unique extension name. <br>**Note:** The name can be used by other extensions to express a compile-time dependency on the extension. Changing the name of your extension will force any extensions that have taken a dependency to update their manifest and can cause upgrade/extension deployment issues. |
+|publisher|Yes|The name of your publisher, for example: **NAV Partner**, **LLC**. <br>**Note:** The publisher can be used by other extensions to express a compile-time dependency on the extension. Changing the publisher of your extension will force any extensions that have taken a dependency to update their manifest and can cause upgrade/extension deployment issues. |
 |brief|No, but required for AppSource submission|Short description of the extension.|
 |description|No, but required for AppSource submission|Longer description of the extension.|
 |version|Yes|The version of the app package.|
