@@ -153,9 +153,11 @@ The following table shows the minimum system requirements for the [!INCLUDE[prod
 |Supported Outlook Applications |<ul><li>Outlook 2019.</li></ul>|
 |Supported Exchange Servers|<ul><li>Exchange Server 2019</li><li>Exchange Online.</li></ul>|  
 
-## <a name="CRM"></a>Microsoft Dynamics 365 for Sales Integration
+## <a name="CRM"></a>Microsoft Dataverse and Dynamics 365 for Sales Integration
 
-The following table shows the product version requirements for integrating [!INCLUDE[prod_short](../developer/includes/prod_short.md)] with [!INCLUDE[crm](../developer/includes/crm_md.md)], and the versions in which users can view the availability of items in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] from [!INCLUDE[crm](../developer/includes/crm_md.md)].  
+The following table shows the product version requirements for integrating [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online and on premise with Dataverse and [!INCLUDE[crm](../developer/includes/crm_md.md)] online and on premises.
+
+
 
 |Sales/Dynamics NAV/Business Central|2016/Update 1/online|Sales Enterprise (v8.x)|Sales Enterprise and Sales Professional (v9.x)|  
 |---|----|---|---|---|
