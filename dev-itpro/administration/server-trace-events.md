@@ -105,7 +105,7 @@ The following table lists the AL function tracing events.
 |ID|Event \(task/opcode\)|What is traced|  
 |--------|----------------------------|--------------------|  
 |400|ExecuteALFunction/Start|AL functions that are called.| |401|ExecuteALFunction/Stop|AL functions that are called.|  
-|402|ExecuteALFunctionFailed|Errors that occur when executing AL functions. The errors can be caused by exceptions or [ERROR Function \(Dialog\)](../developer/methods/devenv-ERROR-method-Dialog.md) calls.|  
+|402|ExecuteALFunctionFailed|Errors that occur when executing AL functions. The errors can be caused by exceptions or [ERROR Function \(Dialog\)](../developer/methods-auto/library.md) calls.|  
 |403|ExecuteALFunction|AL statements that are executed.<br /><br /> **Important:** This trace event is only traced when the [!INCLUDE[server](../developer/includes/server.md)] is configured to full AL function tracing.|  
 
 ## Telemetry Trace Events
@@ -116,7 +116,7 @@ Telemetry trace events can provide data about operations in the application and 
 |-------------|-------------|-------------------|-----------------------|  
 |Microsoft-DynamicsNAV-Common|TelemetryTracing|32|0x20|  
 
-Custom telemetry trace events are emitted from the application. These are events that are sent by [SENDTRACETAG method](../developer/methods/devenv-sendtracetag-method.md) calls from inside the application. For more information about custom telemetry trace events, see [Instrumenting an Application for Telemetry](../developer/devenv-instrument-application-for-telemetry.md).
+Custom telemetry trace events are emitted from the application. These are events that are sent by [SENDTRACETAG method](../developer/methods-auto/library.md) calls from inside the application. For more information about custom telemetry trace events, see [Instrumenting an Application for Telemetry](../developer/devenv-instrument-application-for-telemetry.md).
 
 Some of the important event data that is collected for both system and custom telemetry trace events includes: tag, category, message, dataclassification.  For more information about this data, see [Event Trace Data](server-trace-events.md#ArgRef). 
 
@@ -163,4 +163,4 @@ The following table lists the arguments that make up the data collected for trac
 
 ## See Also  
  [Monitoring Business Central Server Events](monitor-server-events.md)   
- [Classifying Data](../developer/devenv-classifying-data.md)  
+ [Classifying Data](../developer/devenv-classifying-data.md)

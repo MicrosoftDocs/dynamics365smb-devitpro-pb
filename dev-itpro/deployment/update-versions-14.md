@@ -13,7 +13,7 @@ ms.date: 03/01/2021
 
 # Dynamics 365 Business Central On-Premises Spring 2019 Updates
 
-This article lists updates released for the Spring '19 release of Business Central on-premises. A cumulative update is a cumulative set of files that includes hotfixes and regulatory features for Business Central. We recommend applying the latest cumulative update. For customers using Business Central online, check the [Business Central Admin center](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center) to see whether the tenants have been updated.
+This article lists updates released for the Spring '19 release of Business Central on-premises. A cumulative update is a cumulative set of files that includes hotfixes and regulatory features for Business Central. We recommend applying the latest cumulative update. For customers using Business Central online, check the [Business Central Admin center](../administration/tenant-admin-center.md) to see whether the tenants have been updated.
 
 Each cumulative update is intended mainly for solutions that are experiencing the problems described in the linked Support. However, you're advised to always keep your solution updated with the latest cumulative update. Support professionals in Customer Support Services are ready to help you if:
 
@@ -72,4 +72,4 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 [Countries and Translations Supported](../compliance/apptest-countries-and-translations.md)  
 [Welcome to Dynamics 365 Business Central](/dynamics365/business-central/index)  
 [Microsoft Dynamics 365 Business Central on the Dynamics 365 blog](https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/)  
-[Dynamics NAV developer and ITpro content](/dynamics-nav/index)  
+[Dynamics NAV developer and ITpro content](/dynamics-nav/index)
