@@ -30,7 +30,7 @@ The following example assumes that you have a Char variable named C and a Text o
 You can assign a constant string of the length 1 to a Char variable, as shown in the first line of the following code example. You can assign a single Char in a Text or Code variable to a Char variable, as shown in the second line of the following code example. You can assign a numeric value to a Char variable, as shown in the third line of the following code example.  
 
  <!-- //NAV 
- A Char variable represents Unicode characters in the same way as the .NET Framework Char structure. For more information about the .NET Framework Char structure, see [Char Structure](https://go.microsoft.com/fwlink/?LinkId=253590).  --> 
+ A Char variable represents Unicode characters in the same way as the .NET Framework Char structure. For more information about the .NET Framework Char structure, see [Char Structure](/dotnet/api/system.char).  --> 
   
 ```al
 C := 'A';  
@@ -47,4 +47,4 @@ MyText[5] := 'e';
 ## See Also
 
 [Getting Started with AL](../../devenv-get-started.md)  
-[Developing Extensions](../../devenv-dev-overview.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

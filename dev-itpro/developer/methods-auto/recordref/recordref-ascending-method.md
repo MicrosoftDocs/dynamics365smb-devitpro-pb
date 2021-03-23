@@ -44,7 +44,7 @@ Specifies the order in which a search will be performed.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- This method works just like the [Ascending Method \(Record\)](../../methods/devenv-ascending-method-record.md).  
+ This method works just like the [Ascending Method \(Record\)](../library.md).  
   
 ## Example 1
 

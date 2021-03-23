@@ -44,4 +44,4 @@ You can write to the database using this trigger.
 
 [Triggers](devenv-triggers.md)  
 [Page and Action Trigger](devenv-page-and-action-triggers.md)  
-[Page Properties](../properties/devenv-page-properties.md)  
+[Page Properties](../properties/devenv-properties.md)

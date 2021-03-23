@@ -35,7 +35,7 @@ An instance of the [RecordRef](recordref-data-type.md) data type.
 ## Remarks  
  If no table is selected, this method returns an error.  
   
- This method works the same as the [Reset Method \(Record\)](../../methods/devenv-reset-method-record.md).  
+ This method works the same as the [Reset Method \(Record\)](../record/record-reset-method.md).  
   
 ## Example  
  The following example opens the Customer \(18\) table and creates a RecordRef variable that is named RecRef. The [GetFilters Method \(RecordRef\)](recordref-getfilters-method.md) gets filters that have been applied to records in the table. The filters that are returned, if any, are stored in the Filters1 variable and displayed in message box. In this example, no filters are set so the message is blank. The [SetRecFilter Method \(RecordRef\)](recordref-setrecfilter-method.md) sets a filter on the current key of the current record that is represented by the RecRef variable. The [GetFilters Method \(RecordRef\)](recordref-getfilters-method.md) gets the filters that have been set and stores the value in the Filters2 variable. The message displays No. because the No. field is set as a filter. The Reset method removes the filter that was set. The value of the filter that is returned by the [GetFilters Method \(RecordRef\)](recordref-getfilters-method.md) after the [Reset Method \(RecordRef\)](recordref-reset-method.md) is executed is stored in the Filters3 variable. Filter3 is blank because the filter that was set by `RecRef.SetRecFilter;` is removed by the Reset method. 
