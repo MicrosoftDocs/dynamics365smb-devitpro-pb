@@ -29,4 +29,4 @@ For more information about configuring the [!INCLUDE[server](../developer/includ
   
 [Optimizing SQL Server Performance with Business Central](optimize-sql-server-performance.md)  
 [Installation Considerations for Microsoft SQL Server](../deployment/installation-considerations-for-microsoft-sql-server.md)  
-[Microsoft SQL Server documentation](https://go.microsoft.com/fwlink/?LinkId=253107)
+[Microsoft SQL Server documentation](/sql/sql-server/)
