@@ -13,7 +13,7 @@ ms.date: 03/01/2021
 
 # Dynamics 365 Business Central On-Premises 2019 Release Wave 2 Updates
 
-This article lists updates released for the Microsoft Dynamics 365 Business Central 2019 release wave 2 for on-premises. An update is a set of files that includes all hotfixes and regulatory features that have been released for Business Central. If you have customers using Business Central 2019 release wave 2 on-premises, we recommend you apply this update so that your customers are using the latest version of Business Central. If you have customers using Business Central online, check the [Business Central Admin center](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center) to see if the tenants have been updated.  
+This article lists updates released for the Microsoft Dynamics 365 Business Central 2019 release wave 2 for on-premises. An update is a set of files that includes all hotfixes and regulatory features that have been released for Business Central. If you have customers using Business Central 2019 release wave 2 on-premises, we recommend you apply this update so that your customers are using the latest version of Business Central. If you have customers using Business Central online, check the [Business Central Admin center](../administration/tenant-admin-center.md) to see if the tenants have been updated.  
 
 Each update is intended mainly for solutions that are experiencing the problems described in the Support articles linked to below. However, you're advised to always keep your solution updated with the latest update. If you're in doubt about whether this update addresses your specific problem, or you want to confirm whether any special compatibility, installation, or download issues are associated with a particular update, then contact Customer Support Services. They are ready to help you. For more information, see [https://support.microsoft.com/contactus/](https://support.microsoft.com/contactus/).
 
@@ -58,4 +58,4 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 [Countries and Translations Supported](../compliance/apptest-countries-and-translations.md)  
 [Welcome to Dynamics 365 Business Central](/dynamics365/business-central/index)  
 [Microsoft Dynamics 365 Business Central on the Dynamics 365 blog](https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/)  
-[Dynamics NAV developer and IT Pro content](/dynamics-nav/index)  
+[Dynamics NAV developer and IT Pro content](/dynamics-nav/index)
