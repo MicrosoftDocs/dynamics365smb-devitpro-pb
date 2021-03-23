@@ -203,6 +203,6 @@ If you decide to code application areas as an extension, there are some aspects 
 ## See Also
 
 [ApplicationArea Property](properties/devenv-applicationarea-property.md)  
-[ApplicationArea Method](methods/devenv-applicationarea-method.md)  
+[ApplicationArea Method](./methods-auto/library.md)  
 [AccessByPermission Property](properties/devenv-accessbypermission-property.md)  
-[Properties](properties/devenv-properties.md)  
+[Properties](properties/devenv-properties.md)
