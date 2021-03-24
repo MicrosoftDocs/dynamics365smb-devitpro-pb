@@ -2,7 +2,7 @@
 title: "SIFT index should not be used on primary or unique key."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 03/08/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # CodeCop Rule AA0222
-SIFT index should not be used on primary or unique key.  
+SIFT index should not be used on primary or unique key.
 
 ## Description
 SIFT index should not be used on primary or unique key.

@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AppSourceCop Rule AS0029
-Pages and PageExtensions that have been published must not be deleted, since dependent extensions may break  
+Pages and PageExtensions that have been published must not be deleted, since dependent extensions may break
 
 ## Description
 Pages and PageExtensions that have been published must not be deleted.

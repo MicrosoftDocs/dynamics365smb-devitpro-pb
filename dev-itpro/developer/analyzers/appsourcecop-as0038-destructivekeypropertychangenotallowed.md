@@ -2,7 +2,7 @@
 title: "Unsupported table key property change"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 03/08/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AppSourceCop Rule AS0038
-Unsupported table key property change  
+Unsupported table key property change
 
 ## Description
 Modifying table key properties can lead to destructive changes that will break the upgrade of existing installations and dependent extensions.
