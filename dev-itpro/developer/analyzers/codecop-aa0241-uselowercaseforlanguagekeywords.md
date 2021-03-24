@@ -2,7 +2,7 @@
 title: "Use all lowercase letters for reserved language keywords."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 03/08/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # CodeCop Rule AA0241
-Use all lowercase letters for reserved language keywords.  
+Use all lowercase letters for reserved language keywords.
 
 ## Description
 Use all lowercase letters for reserved language keywords. This rule does not apply to built-in methods and types; they must be written using Pascal case.
