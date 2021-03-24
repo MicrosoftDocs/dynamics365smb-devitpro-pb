@@ -47,7 +47,7 @@ If possible, the CalcSum method uses SumIndexField Technology \(SIFT\). SIFT is 
 
 - The SumIndexFields on the [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)] key contain the field to which the FieldRef parameter refers.  
 
-- The [MaintainSIFTIndex Property](../../properties/devenv-maintainsift-index-property.md) is set to **true**.  
+- The [MaintainSIFTIndex Property](/dynamics365/business-central/dev-itpro/developer/methods-auto/fieldref/devenv-maintainsiftindex-property) is set to **true**.  
 
 > [!NOTE]  
 > By default this property is set to **true** for all keys.  

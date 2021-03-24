@@ -75,5 +75,5 @@ Content-type: application/json
 
 ## See Also
 
-[Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  
-[automationCompany](../resources/dynamics_automationCompany.md)  
+[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)  
+[automationCompany](../resources/dynamics_automationCompany.md)

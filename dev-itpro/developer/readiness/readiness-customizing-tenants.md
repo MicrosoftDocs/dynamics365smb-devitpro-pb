@@ -47,4 +47,4 @@ To learn more about customization, select the following links:
 - [Using Designer](../devenv-inclient-designer.md)  
 - [Getting started with AL](../devenv-get-started.md)  
 - [AL Development Environment](../devenv-reference-overview.md)  
-- [Business Central Learning Catalog](https://go.microsoft.com/fwlink/?linkid=2002101)  
+- [Business Central Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-catalog)

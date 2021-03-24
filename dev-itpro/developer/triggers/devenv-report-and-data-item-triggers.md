@@ -22,7 +22,8 @@ In reports, triggers are typically used to perform calculations and verification
 |[OnInitReport Trigger](devenv-oninitreport-trigger.md)|When the report is loaded.|  
 |[OnPreReport Trigger](devenv-onprereport-trigger.md)|Before the report is run, but after the **RequestPage** has been run.|  
 |[OnPostReport Trigger](devenv-onpostreport-trigger.md)|After the report has run, but not if the report was stopped manually or by the |
-|[Quit Method (Report, XMLport)](../methods/devenv-quit-method-report-xmlport.md).|  
+|[Quit Method (Report, XMLport)](../methods-auto/report/reportinstance-quit-method.md).|  
+|[OnPostReport Trigger](devenv-onpostreport-trigger.md)|After the report has run, but not if the report was stopped manually or by the [QUIT Method (Report, XMLport)](../methods-auto/report/reportinstance-quit-method.md).|  
 
 ## Data Item Triggers  
 

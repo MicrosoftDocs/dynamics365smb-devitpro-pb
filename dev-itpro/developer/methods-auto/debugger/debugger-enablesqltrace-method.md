@@ -44,7 +44,7 @@ If you specify the optional NewIsEnabled parameter, then the method sets whether
 
 ## Remarks
 
-You use Microsoft SQL Server Profiler to view traces. For more information, see [Using SQL Server Profiler](https://go.microsoft.com/fwlink/?LinkId=257789). To start SQL Server Profiler, in **SQL Server Management Studio**, on the **Tools** menu, choose **SQL Server Profiler**.  
+You use Microsoft SQL Server Profiler to view traces. For more information, see [Using SQL Server Profiler](/previous-versions/sql/sql-server-2008-r2/ms187929(v=sql.105)). To start SQL Server Profiler, in **SQL Server Management Studio**, on the **Tools** menu, choose **SQL Server Profiler**.  
   
 You can also enable and disable SQL tracing by using the **Start Full SQL Tracing** and **Stop Full SQL Tracing** buttons on the **Session List** page.  
 

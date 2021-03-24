@@ -15,7 +15,7 @@ If a [!INCLUDE[server](../developer/includes/server.md)] instance is configured 
 
 Mounting a tenant by using the [!INCLUDE[admintool](../developer/includes/admintool.md)] requires that you have a running [!INCLUDE[server](../developer/includes/server.md)] instance. This isn't required when you use the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]. With the **Mount-NAVTenant**, you can mount a tenant by either specifying the [!INCLUDE[server](../developer/includes/server.md)] instance, if it's running, or the application database.  
 
-This article describes how to use the [!INCLUDE[admintool](../developer/includes/admintool.md)] to mount or dismount a tenant. For more information about how to use the [!INCLUDE[adminshell](../developer/includes/adminshell.md)], see [Mount-NAVTenant](https://go.microsoft.com/FwLink/?LinkId=401372) and [Dismount-NAVTenant](https://go.microsoft.com/FwLink/?LinkId=401354).  
+This article describes how to use the [!INCLUDE[admintool](../developer/includes/admintool.md)] to mount or dismount a tenant. For more information about how to use the [!INCLUDE[adminshell](../developer/includes/adminshell.md)], see [Mount-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/mount-navtenant) and [Dismount-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/dismount-navtenant).  
 
 ## To mount or dismount a tenant
 

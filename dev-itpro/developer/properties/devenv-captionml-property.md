@@ -51,7 +51,7 @@ Sets the text string that displays with the object, control, or other element in
 > [!NOTE]  
 > To submit an app to AppSource, you must use .xliff translation files. For more information, see [Working with Translation Files](../devenv-work-with-translation-files.md).
 
-The CaptionML property is multilanguage enabled, so it can contain a list of text strings in different languages. The string that is used is selected according to the user's language settings. For more information, see [Multilanguage Development](../devenv-multilanguage-development.md).  
+The CaptionML property is multilanguage enabled, so it can contain a list of text strings in different languages. The string that is used is selected according to the user's language settings. For more information, see [Multilanguage Development](/dynamics365/business-central/dev-itpro/developer/properties/devenv-work-with-translation-files).  
 
 The CaptionML property has the following format.  
 
@@ -89,4 +89,4 @@ When the CaptionML property does not include an entry for the language used in t
 
 ## See Also  
  [Caption Property](devenv-caption-property.md)   
- [Name Property](devenv-name-property.md)
+ [Name Property](./devenv-properties.md)

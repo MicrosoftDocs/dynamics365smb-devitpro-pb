@@ -23,7 +23,7 @@ For the API page type, the following naming conventions exist:
 - Alphanumeric characters allowed (A-Z+a-z+0-9) in above elements. 
 - APIVersion follows the pattern vX.Y or beta.
 
-At design time, the compiler will show warnings on casing violations and errors on naming violations. Once an API page is deployed, the corresponding [$metadata](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips) is exposed on the endpoint of the page. 
+At design time, the compiler will show warnings on casing violations and errors on naming violations. Once an API page is deployed, the corresponding [$metadata](./devenv-connect-apps-tips.md) is exposed on the endpoint of the page. 
 
 [!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
 
@@ -76,4 +76,4 @@ page 50120 MyCustomerApi
 [APIVersion Property](properties/devenv-apiversion-page-property.md)   
 [EntityName Property](properties/devenv-entityname-property.md)  
 [EntitySetName Property](properties/devenv-entitysetname-property.md)  
-[Developing Extensions](devenv-dev-overview.md)  
+[Developing Extensions](devenv-dev-overview.md)
