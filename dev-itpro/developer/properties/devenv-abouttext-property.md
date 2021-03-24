@@ -2,7 +2,7 @@
 title: "AboutText Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 03/03/2021
+ms.date: 03/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,7 +16,7 @@ author: SusanneWindfeldPedersen
 # AboutText Property
 > **Version**: _Available or changed with runtime version 7.0._
 
-Sets the text of the entity used in the About box for synopsis and callouts in the UI
+Sets the text of the entity used in the About box for teaching tips in the UI
 
 ## Applies to
 -   Page
