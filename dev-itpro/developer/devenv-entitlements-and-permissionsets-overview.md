@@ -22,7 +22,7 @@ author: SusanneWindfeldPedersen
 
 *Permission Sets* allow combining objects permissions into logical groups (or sets), which can then be assigned to the users explicitly or via the User Group.
 
-## Permission Set Scope
+## Permission Set scope
 
 A [!INCLUDE [prod_short](includes/prod_short.md)] solution contains a number of predefined permission sets that are added by Microsoft or by your software provider (by an ISV application that you installed from AppSource).
 
