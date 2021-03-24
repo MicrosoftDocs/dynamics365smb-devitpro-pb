@@ -347,6 +347,7 @@
 ### [Permissionset Extension Object](developer/devenv-permissionset-ext-object.md)
 ### [Entitlement Object](developer/devenv-entitlement-object.md)
 ### [Permissions on Database Objects](developer/devenv-permissions-on-database-objects.md)
+### [Exporting Permission Sets to XML](developer/devenv-export-permission-sets.md)
 ## Pages
 ### [Pages Overview](developer/devenv-pages-overview.md)
 ### [Page Object](developer/devenv-page-object.md)
@@ -458,7 +459,6 @@
 ### [Creating Custom Events for Application Insights](developer/devenv-instrument-application-for-telemetry-app-insights.md)
 ### [Sending Extension Telemetry to Application Insights](developer/devenv-application-insights-for-extensions.md)
 ### [Creating Custom Events for Event Log](developer/devenv-instrument-application-for-telemetry-event-log.md)
-## [Exporting Permission Sets](developer/devenv-export-permission-sets.md)
 ## .NET in AL
 ### [Getting started with Microsoft .NET Interoperability from AL](developer/devenv-get-started-call-dotnet-from-al.md)
 ### [.NET Control Add-Ins](developer/devenv-dotnet-controladdins.md)
