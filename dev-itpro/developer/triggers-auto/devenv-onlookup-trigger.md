@@ -2,7 +2,7 @@
 title: "OnLookup Trigger"
 ms.author: solsen
 ms.custom: na
-ms.date: 03/19/2021
+ms.date: 03/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,7 +26,6 @@ Runs in place of the normal lookup features for the current page.
 &emsp;Type: [Text](../methods-auto/text/text-data-type.md)  
 Text string entered into the text box and used as the lookup value.  
 
-
 ## Return Value
 
 *Ok*
@@ -34,6 +33,8 @@ Text string entered into the text box and used as the lookup value.
 **true** if the lookup was carried out, otherwise, **false**.
 
 ## Applies To
+- Field
+- Control
 - ControlExtension
 
 

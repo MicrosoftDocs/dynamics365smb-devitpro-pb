@@ -2,7 +2,7 @@
 title: "OnAssistEdit Trigger"
 ms.author: solsen
 ms.custom: na
-ms.date: 03/19/2021
+ms.date: 03/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,6 +23,7 @@ Runs in place of the AssistEdit property features that are provided in the appli
 
 
 ## Applies To
+- Control
 - ControlExtension
 
 

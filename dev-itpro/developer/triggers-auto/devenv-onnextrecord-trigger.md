@@ -2,7 +2,7 @@
 title: "OnNextRecord Trigger"
 ms.author: solsen
 ms.custom: na
-ms.date: 03/19/2021
+ms.date: 03/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,7 +26,6 @@ Determines the next record to be displayed.
 &emsp;Type: [Integer](../methods-auto/integer/integer-data-type.md)  
 The number of records stepped through before displaying another record. A negative value indicates steps backwards.  
 
-
 ## Return Value
 
 *ActualSteps*
@@ -34,6 +33,7 @@ The number of records stepped through before displaying another record. A negati
 This return value contains the actual number of steps or records cycled through. The default value is 0.
 
 ## Applies To
+- Page
 - RequestPage
 
 

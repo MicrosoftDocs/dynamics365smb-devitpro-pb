@@ -2,7 +2,7 @@
 title: "OnDeleteRecord Trigger"
 ms.author: solsen
 ms.custom: na
-ms.date: 03/19/2021
+ms.date: 03/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,6 +28,9 @@ Runs before a record is deleted from the table.
 **true** if the record was deleted, otherwise, **false**. The return value is checked after each call. The default value is **true**.
 
 ## Applies To
+- Page
+- RequestPage
+- RequestPageExtension
 - PageExtension
 
 

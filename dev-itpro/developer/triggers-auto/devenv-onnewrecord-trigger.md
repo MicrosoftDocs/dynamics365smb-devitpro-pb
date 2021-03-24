@@ -2,7 +2,7 @@
 title: "OnNewRecord Trigger"
 ms.author: solsen
 ms.custom: na
-ms.date: 03/19/2021
+ms.date: 03/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,8 +27,10 @@ Runs after a new record is initialized, but before it is inserted as a record in
 This return value indicates whether the new record is to be inserted after the last record in the table (xRec). If false, the record is to be inserted between an existing record and the last record. If true, the record is to be inserted below the last record in the table (xRec).  
 
 
-
 ## Applies To
+- Page
+- RequestPage
+- RequestPageExtension
 - PageExtension
 
 

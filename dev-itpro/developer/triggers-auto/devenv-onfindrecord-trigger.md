@@ -2,7 +2,7 @@
 title: "OnFindRecord Trigger"
 ms.author: solsen
 ms.custom: na
-ms.date: 03/19/2021
+ms.date: 03/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,7 +29,6 @@ Text or code value with the following options:
 + (a plus sign): Last record,
 =\<\>: Record defined in the Rec variable or the closest match.  
 
-
 ## Return Value
 
 *Ok*
@@ -37,6 +36,7 @@ Text or code value with the following options:
 **true** if the specified record was found, otherwise, **false**.
 
 ## Applies To
+- Page
 - RequestPage
 
 

@@ -2,7 +2,7 @@
 title: "OnQueryClosePage Trigger"
 ms.author: solsen
 ms.custom: na
-ms.date: 03/19/2021
+ms.date: 03/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,7 +26,6 @@ Runs as a page closes and before the OnClosePage trigger executes.
 &emsp;Type: [Action](../methods-auto/action/action-data-type.md)  
 The CloseAction chosen by the user; usually OK or Cancel.  
 
-
 ## Return Value
 
 *Ok*
@@ -34,6 +33,9 @@ The CloseAction chosen by the user; usually OK or Cancel.
 **true** if page was closed, otherwise **false**. This value is checked after each call. The default value is **true**.
 
 ## Applies To
+- Page
+- RequestPage
+- RequestPageExtension
 - PageExtension
 
 
