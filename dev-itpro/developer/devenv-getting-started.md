@@ -14,7 +14,7 @@ author: bholtorf
 This topic provides information about requirements for working with modules in the System Application.
 
 ## AL
-Get familiar with development in AL. For more information, see [Getting Started with AL](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-get-started).  
+Get familiar with development in AL. For more information, see [Getting Started with AL](./devenv-get-started.md).  
 
 ## Git
 Familiarize yourself with Git. For a quick introduction, see [git - the simple guide](https://rogerdudler.github.io/git-guide/).

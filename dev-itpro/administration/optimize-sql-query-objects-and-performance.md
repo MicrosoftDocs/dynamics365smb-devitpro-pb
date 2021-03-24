@@ -29,9 +29,9 @@ A *query* is an object in [!INCLUDE[prod_long](../developer/includes/prod_long.m
   
  The SQL Server optimizer automatically chooses a covering index strategy whenever possible.  
   
- For more information about SQL Server covering indexes, see [SQL Server Optimization](https://go.microsoft.com/fwlink/?LinkId=257836).  
+ For more information about SQL Server covering indexes, see [SQL Server Optimization](/previous-versions/sql/sql-server-2005/administrator/aa964133(v=sql.90)).  
   
- For more information about SQL Server clustered and non-clustered indexes, see [Types of Indexes](https://go.microsoft.com/fwlink/?LinkID=257835).  
+ For more information about SQL Server clustered and non-clustered indexes, see [Types of Indexes](/previous-versions/sql/sql-server-2008-r2/ms175049(v=sql.105)).  
   
 ## Covering SIFT Indexes  
  Similar to how indexes can be used to retrieve data for a query, SIFT indexes can be used to retrieve data for a query that contains totals. SIFT totals are maintained after each insert, modify, or delete call, and so some or all of the totals are already calculated. A SIFT index can be used when the following conditions are true:  

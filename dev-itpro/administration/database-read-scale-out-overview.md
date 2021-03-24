@@ -37,7 +37,7 @@ For on-premises installations, see [Configuring your [!INCLUDE[prod_short](../de
 
 ### Define the default database access intent in AL code
 
-When you develop solutions for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] in AL, you can set the default intended database access intent (read-only or read-write) on reports and query objects that you create. For more information, see [DataAccessIntent property](/dynamics365/business-central/dev-itpro/developer/properties/devenv-dataaccessintent-property).
+When you develop solutions for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] in AL, you can set the default intended database access intent (read-only or read-write) on reports and query objects that you create. For more information, see [DataAccessIntent property](../developer/properties/devenv-dataaccessintent-property.md).
 
 ### Overwrite the database access intent on reports, API pages, and queries
 

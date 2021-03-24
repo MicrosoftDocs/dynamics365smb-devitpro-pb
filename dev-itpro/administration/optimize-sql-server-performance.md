@@ -39,5 +39,5 @@ The following articles describe how to optimize performance in [!INCLUDE[prod_lo
 
 ## See Also  
 [Installation Considerations for Microsoft SQL Server](../deployment/installation-considerations-for-microsoft-sql-server.md)   
-[Microsoft SQL Server documentation](https://go.microsoft.com/fwlink/?LinkId=253107)  
-[SumIndexField Technology \(SIFT\)](../developer/devenv-sift-technology.md)  
+[Microsoft SQL Server documentation](/sql/sql-server/)  
+[SumIndexField Technology \(SIFT\)](../developer/devenv-sift-technology.md)

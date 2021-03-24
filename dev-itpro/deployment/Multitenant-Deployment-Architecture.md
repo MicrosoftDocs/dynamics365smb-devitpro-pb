@@ -65,7 +65,7 @@ author: jswymer
  If you have an existing [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application that you want to use in a multitenant deployment, there are a number of changes that you have to make. This includes setting up the permission sets in a way that supports all tenants that use that application.  
   
 ### URLs and Tenants  
- In multitenant deployments, URLs must specify the tenant that the URL applies to. If you have C/AL code that constructs URLs, you must update the code to include the tenant. Alternatively, update your code with the [GETURL Function](../developer/methods/devenv-GETURL-method.md) to get the URLs calculated for you. The same applies to hyperlinks in report objects, for example.  
+ In multitenant deployments, URLs must specify the tenant that the URL applies to. If you have C/AL code that constructs URLs, you must update the code to include the tenant. Alternatively, update your code with the [GETURL Function](../developer/methods-auto/library.md) to get the URLs calculated for you. The same applies to hyperlinks in report objects, for example.  
   
  The URL can specify the tenant ID or the tenant host name if you specify host names as alternative IDs for tenants. For example, the following URL consumes the **Customer** ODATA web service for a specific tenant:  
   

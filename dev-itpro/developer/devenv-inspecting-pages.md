@@ -55,8 +55,8 @@ The following sections describe details about what is shown.
 
 The **Page** field shows information about the main page or a selected (highlighted) subpage in a part. The field shows the following information:
 
-- The name, as specified by its [Name property](properties/devenv-name-property.md)
-- The ID as specified by the [ID property](properties/devenv-id-property.md).
+- The name, as specified by its [Name property](./properties/devenv-properties.md)
+- The ID as specified by the [ID property](./properties/devenv-properties.md).
 - The type, as specified by the [PageType property](properties/devenv-pagetype-property.md).
 
 
@@ -77,8 +77,8 @@ The **Page** field shows information about the main page or a selected (highligh
 
 If the main page or the selected page part has a source table, the **Table** field displays information about the source table. The source table is specified by the page's [SourceTable property](properties/devenv-sourcetable-property.md). The **Table** field shows the following information:
 
-- The name, as specified by its [Name property](properties/devenv-name-property.md)
-- The ID as specified by the [ID property](properties/devenv-id-property.md).
+- The name, as specified by its [Name property](./properties/devenv-properties.md)
+- The ID as specified by the [ID property](./properties/devenv-properties.md).
 
 If the page uses a query object as a data source, the table field shows the query name and ID instead.
 
@@ -97,16 +97,16 @@ The **Table Fields** tab displays information about all fields in the source tab
 
 Each field is shown with the following information:
 
-- Field name as specified by the [Name property](properties/devenv-name-property.md).
+- Field name as specified by the [Name property](./properties/devenv-properties.md).
 - Field number as specified by the [Field No property](properties/devenv-field-no.-property.md).
-- Data type as specified by the [Data Type property](properties/devenv-data-type-property.md).
-- If the field is a primary key, it's indicated by **PK**. A primary is  specified by the [Key property](properties/devenv-key-property.md).
+- Data type as specified by the [Data Type property](./properties/devenv-properties.md).
+- If the field is a primary key, it's indicated by **PK**. A primary is  specified by the [Key property](./properties/devenv-properties.md).
 - Value of the field.
 - If the field is added by an extension, the name of the extension appears under the value.
 
 #### What field information isn't shown
 
-- Page fields that are not bound to the source table by the [SourceExp property](properties/devenv-sourceexpr-property.md).
+- Page fields that are not bound to the source table by the [SourceExp property](./properties/devenv-properties.md).
 - The value of fields that have a data type of blob, byte, media, or mediaset.
 
 ## [Extensions](#tab/extensions)
@@ -158,4 +158,4 @@ The following table describes the different filter types.
 [Actions Overview](devenv-actions-overview.md)  
 [Adding Pages and Reports to Search](devenv-al-menusuite-functionality.md)  
 [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user)  
-[Using Designer](devenv-inclient-designer.md)  
+[Using Designer](devenv-inclient-designer.md)
