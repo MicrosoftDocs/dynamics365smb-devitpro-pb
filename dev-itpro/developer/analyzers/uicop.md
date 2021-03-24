@@ -2,7 +2,7 @@
 title: "UICop Analyzer"
 ms.author: solsen
 ms.custom: na
-ms.date: 12/14/2020
+ms.date: 03/08/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -31,6 +31,7 @@ UICop is an analyzer that enforces rules that must be respected by extensions me
 |[AW0009](uicop-aw0009-blobbitmapusageonpagefielddeprecated.md)|Using a Blob with subtype Bitmap on a page field is deprecated. Instead use the Media/MediaSet data types.|WebClient|Warning|
 |[AW0010](uicop-aw0010-repeatersingroupsnotsupportedinlistpages.md)|A Repeater control used on a List page must be defined at the beginning of the area(Content) section.|WebClient|Warning|
 |[AW0011](uicop-aw0011-addpromotedonlyifallactionsmarkedpromoted.md)|Add PromotedOnly="true" to some or all promoted actions to avoid identical actions from appearing in both the promoted and default sections of the command bar.|WebClient|Info|
+|[AW0012](uicop-aw0012-synopsispropertieslimitedsupport.md)|The Web client does not support About properties in certain contexts.|WebClient|Warning|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
