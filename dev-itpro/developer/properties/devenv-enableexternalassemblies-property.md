@@ -42,7 +42,7 @@ EnableExternalAssemblies = true;
 
 When you use the Visual Studio Report Designer for creating reports for the RoleTailored client, you can reference external assemblies to add functionality to a report. The location of the assembly must be accessible from the RoleTailored client. To use external assemblies on a report, the EnableExternalAssemblies property must be set to **true**.  
   
-For more information about referencing assemblies, see [Adding Custom Code to a Report \(Visual Studio Report Designer\)](https://go.microsoft.com/fwlink/?LinkID=184561&clcid=0x409).  
+For more information about referencing assemblies, see [Adding Custom Code to a Report \(Visual Studio Report Designer\)](/previous-versions/ms252130(v=vs.100)).  
   
 ## Security Considerations  
 
@@ -50,4 +50,4 @@ For more information about referencing assemblies, see [Adding Custom Code to a 
   
 ## See Also
 
-[Properties](devenv-properties.md)   
+[Properties](devenv-properties.md)

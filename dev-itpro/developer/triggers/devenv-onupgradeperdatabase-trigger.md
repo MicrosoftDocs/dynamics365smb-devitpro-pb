@@ -15,7 +15,7 @@ author: blrobl
 Runs during the upgrade of an extension.
 
 ## Applies to  
--  Upgrade codeunits. These codeunits have the [SubType Property \(Codeunit\)](../properties/devenv-subtype-property-codeunit.md) set to **Upgrade**.  
+-  Upgrade codeunits. These codeunits have the [SubType Property \(Codeunit\)](../properties/devenv-subtype-codeunit-property.md) set to **Upgrade**.  
 
 > [!NOTE]  
 >  This trigger is also available in upgrade codeunits for the base application, not just for extensions.  
@@ -27,4 +27,4 @@ This trigger is run once in the entire upgrade process, in a single system sessi
 
 ## See Also  
  [Triggers](devenv-triggers.md)  
- [Codeunit Triggers](devenv-codeunit-triggers.md)  
+ [Codeunit Triggers](devenv-codeunit-triggers.md)
