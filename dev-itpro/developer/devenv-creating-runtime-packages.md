@@ -32,7 +32,7 @@ The following example gets the NAV App runtime package with the provided name an
 
 `Get-NAVAppRuntimePackage -ServerInstance DynamicsNAV -AppName 'Proseware SmartApp' -Version 2.3.4.500 -Path 'Prosware SmartApp_2.3.4.500_runtime.app'`
 
-For publishing and installing the package, use the [Publish-NavApp](https://go.microsoft.com/fwlink/?linkid=616079) and the [Install-NAVApp](https://go.microsoft.com/fwlink/?linkid=618056) PowerShell cmdlets. 
+For publishing and installing the package, use the [Publish-NavApp](/powershell/module/microsoft.dynamics.nav.apps.management/publish-navapp) and the [Install-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp) PowerShell cmdlets. 
 
 ## Limitations
 
@@ -46,5 +46,5 @@ The limitation of runtime packages is that they only work for on-premise install
 
 ## See Also
 
-[Publish-NAVApp cmdlet](https://go.microsoft.com/fwlink/?linkid=616079)  
-[Install-NAVApp cmdlet](https://go.microsoft.com/fwlink/?linkid=618056)  
+[Publish-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/publish-navapp)  
+[Install-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp)

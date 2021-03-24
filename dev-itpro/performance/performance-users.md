@@ -20,7 +20,7 @@ This section describes how you can work with end-users to improve the performanc
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] supports multiple browsers. Each browser offers a variety of features and capabilities. The browser plays a significant role in the responsiveness and fluidity of the user interface.
 
-- Where possible, avoid older browsers such as Internet Explorer and Edge Legacy. Modern browsers generally offer better performance. See the list of supported and recommended browsers for [Business Central online](https://go.microsoft.com/fwlink/?linkid=2110804) and [Business Central on-premises](https://go.microsoft.com/fwlink/?linkid=2110719). 
+- Where possible, avoid older browsers such as Internet Explorer and Edge Legacy. Modern browsers generally offer better performance. See the list of supported and recommended browsers for [Business Central online](/dynamics365/business-central/product-requirements) and [Business Central on-premises](../deployment/system-requirement-business-central-v15.md). 
 
   <!-- If other legacy applications require you to remain on Internet Explorer, consider using [Edge in Internet Explorer mode](https://www.microsoft.com/edge/business). For more information, see [Microsoft Edge documentation](/deployedge/edge-ie-mode).-->
   > [!IMPORTANT] 
@@ -98,4 +98,4 @@ Users experiencing slow search in lists should consider using a column filter in
 [Performance Topics For Developers](performance-developer.md)  
 [Performance Online](performance-online.md)  
 [Performance of On-Premises Installations](performance-onprem.md)  
-[How to Work with a Performance Problem](performance-work-perf-problem.md)  
+[How to Work with a Performance Problem](performance-work-perf-problem.md)

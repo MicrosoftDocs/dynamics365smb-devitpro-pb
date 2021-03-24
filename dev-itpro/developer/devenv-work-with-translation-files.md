@@ -76,7 +76,7 @@ var
 > [!IMPORTANT]  
 > The **ML** versions of properties are **not** included in the .xlf file:  
 > - [CaptionML](properties/devenv-captionml-property.md)
-> - [ConstValueML](properties/devenv-constvalueml-property.md)
+> - [ConstValueML](./properties/devenv-properties.md)
 > - [InstructionalTextML](properties/devenv-instructionaltextml-property.md)
 > - [OptionCaptionML](properties/devenv-optioncaptionml-property.md)
 > - [PromotedActionCategoriesML](properties/devenv-promotedactioncategoriesml-property.md)
@@ -134,4 +134,3 @@ For more information about importing and exporting .txt files, see [How to: Add 
 [Working with labels](devenv-using-labels.md)    
 [Working with multiple AL project folders within one workspace](devenv-multiroot-workspaces.md)  
 [JSON Files](devenv-json-files.md)
-

@@ -158,5 +158,5 @@ For information about troubleshooting access to camera, see [Troubleshooting: Ca
 [Getting started with Microsoft .NET Interoperability from AL](devenv-get-started-call-dotnet-from-al.md)  
 [Implementing Location in AL](devenv-implement-location-al.md)  
 [CameraOptions Overview](devenv-Camera-options.md)  
-[RunOnClient property](properties/devenv-runonclient-property.md)  
-[WithEvents property](properties/devenv-withevents-property.md) 
+[RunOnClient property](./properties/devenv-properties.md)  
+[WithEvents property](./properties/devenv-properties.md)

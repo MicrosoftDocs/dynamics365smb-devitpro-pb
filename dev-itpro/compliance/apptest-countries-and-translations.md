@@ -15,7 +15,7 @@ ms.author: soalex
 This page lists the countries/regions where [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available and which languages are supported.
 
 > [!NOTE]  
-> In countries where Microsoft has not delivered a localization, partners can build [localizations](/dynamics365/business-central/dev-itpro/developer/readiness/readiness-develop-localization) using translation and localization apps that are published on AppSource. These apps are built on top of the international (W1) version of [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. 
+> In countries where Microsoft has not delivered a localization, partners can build [localizations](../developer/readiness/readiness-develop-localization.md) using translation and localization apps that are published on AppSource. These apps are built on top of the international (W1) version of [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. 
 
 The following table provides the list of all countries/regions where [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available or in planning for future availability, and states whether the localization is provided by Microsoft or partner(s).
 
@@ -141,4 +141,4 @@ This table gives an overview of supported languages and how application language
 ## See Also
 
 [Rules and Guidelines for AL Code](apptest-overview.md)  
-[Checklist for Submitting Your App](../developer/devenv-checklist-submission.md)  
+[Checklist for Submitting Your App](../developer/devenv-checklist-submission.md)

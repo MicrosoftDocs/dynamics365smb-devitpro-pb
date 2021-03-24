@@ -62,5 +62,5 @@ You can use this trigger to write to the database.
 [OnLookup (Fields) Trigger](devenv-onlookup-fields-trigger.md)  
 [OnAfterLookup Trigger](devenv-onafterlookup-trigger.md)  
 [Page and Action Triggers](devenv-page-and-action-triggers.md)  
-[Page Properties](../properties/devenv-page-properties.md)  
-[Triggers](devenv-triggers.md)  
+[Page Properties](../properties/devenv-properties.md)  
+[Triggers](devenv-triggers.md)

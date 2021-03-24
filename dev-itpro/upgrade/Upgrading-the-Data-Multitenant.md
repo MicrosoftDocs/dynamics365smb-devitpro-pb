@@ -152,7 +152,7 @@ You perform these tasks on each tenant that you want to upgrade.
 
     Create a full backup of the old database in the SQL Server. Alternatively, you can make a copy of the old database and perform the upgrade tasks on the copy.  
 
-    For more information, see [Create a Full Database Backup \(SQL Server\)](https://go.microsoft.com/fwlink/?LinkID=296465).  
+    For more information, see [Create a Full Database Backup \(SQL Server\)](/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server).  
 
 2. (Dynamics NAV upgrade only) Uninstall all V1 extensions.
 
