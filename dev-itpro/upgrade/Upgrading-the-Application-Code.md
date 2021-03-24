@@ -56,7 +56,7 @@ With a multitenant deployment, you will perform the steps in this article on the
 ### Different ways of upgrading application code
 
 You can use any tool or set of tools to help you compare and merge code. [!INCLUDE[navnow](../developer/includes/navnow_md.md)] and [!INCLUDE[proshort](../developer/includes/prod_short.md)] include [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] cmdlets and sample scripts that can help you upgrade your application. The cmdlets are available through the [!INCLUDE[nav_dev_shell_md](../developer/includes/nav_dev_shell_md.md)] and [!INCLUDE[devshell](../developer/includes/devshell.md)], or by importing the Microsoft.Dynamics.NAV.Model.Tools.psd1 module into the Windows PowerShell Integrated Scripting Environment (ISE). You can find the sample scripts on the product installation media, in the *WindowsPowerShellScripts\ApplicationMergeUtilities* folder.
-We recommend that you use these cmdlets and sample scripts because they can make it faster to merge most changes. For example, you can combine several steps in a command that uses a cmdlet such as the [Merge-NAVApplicationObject](https://go.microsoft.com/fwlink/?linkid=398884). The sections in this article describe how you can use the Merge-NAVApplicationObject cmdlet and other [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] cmdlets. For more information, see [Comparing and Merging Application Object Source Files](Comparing-and-Merging-Application-Object-Source-Files.md).
+We recommend that you use these cmdlets and sample scripts because they can make it faster to merge most changes. For example, you can combine several steps in a command that uses a cmdlet such as the [Merge-NAVApplicationObject](/powershell/module/microsoft.dynamics.nav.model.tools/merge-navapplicationobject). The sections in this article describe how you can use the Merge-NAVApplicationObject cmdlet and other [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] cmdlets. For more information, see [Comparing and Merging Application Object Source Files](Comparing-and-Merging-Application-Object-Source-Files.md).
 
 ## Task 1: Install the Prerequisites and Tools
 
@@ -154,16 +154,16 @@ There are three ways to export application objects to text files:
     Export-NAVApplicationObject –DatabaseServer MyServer –DatabaseName "Demo Database BC (14-0)" –Path C:\Upgrade\Target\NewBaseVersion.txt -Filter 'Id=1..1999999999'
     ```  
 
-Optionally, you can use the [Split-NAVApplicationObjectFile](https://go.microsoft.com/fwlink/?linkid=398885) cmdlet to split each text file into separate text files for each application object. This can make it easier to keep track of the process. The end result at this stage is three folders with one or more text files that contain the three sets of application objects that you want to merge.  
+Optionally, you can use the [Split-NAVApplicationObjectFile](/powershell/module/microsoft.dynamics.nav.model.tools/split-navapplicationobjectfile) cmdlet to split each text file into separate text files for each application object. This can make it easier to keep track of the process. The end result at this stage is three folders with one or more text files that contain the three sets of application objects that you want to merge.  
 
 ## Task 3: Merge Versions
 
-You now merge the three sets of application objects to create the application for the new database. This section illustrates how to do this by using the [Merge-NAVApplicationObject](https://go.microsoft.com/fwlink/?linkid=398884) cmdlet.
+You now merge the three sets of application objects to create the application for the new database. This section illustrates how to do this by using the [Merge-NAVApplicationObject](/powershell/module/microsoft.dynamics.nav.model.tools/merge-navapplicationobject) cmdlet.
 
-The product installation media contains sample scripts that provide examples of how you can use the [Merge-NAVApplicationObject](https://go.microsoft.com/fwlink/?linkid=398884) cmdlet to merge application objects. For more information, see [Merge Application Changes](merge-application-changes.md).
+The product installation media contains sample scripts that provide examples of how you can use the [Merge-NAVApplicationObject](/powershell/module/microsoft.dynamics.nav.model.tools/merge-navapplicationobject) cmdlet to merge application objects. For more information, see [Merge Application Changes](merge-application-changes.md).
 
 > [!Note]  
-> In certain scenarios, you can choose to use the [Compare-NAVApplicationObject](https://go.microsoft.com/fwlink/?linkid=398882) cmdlet to identify the changes between the existing customized application and the new application. You can then choose to use the [Update-NAVApplicationObject](https://go.microsoft.com/fwlink/?linkid=398886) cmdlet to apply all or some of the changes to the new version. For more information, see [Compare and Update Application Object Source Files](compare-update-application-object-source-files.md). However, we recommend that you use the Merge-NAVApplicationObject cmdlet in most cases.
+> In certain scenarios, you can choose to use the [Compare-NAVApplicationObject](/powershell/module/microsoft.dynamics.nav.model.tools/compare-navapplicationobject) cmdlet to identify the changes between the existing customized application and the new application. You can then choose to use the [Update-NAVApplicationObject](/powershell/module/microsoft.dynamics.nav.model.tools/update-navapplicationobject) cmdlet to apply all or some of the changes to the new version. For more information, see [Compare and Update Application Object Source Files](compare-update-application-object-source-files.md). However, we recommend that you use the Merge-NAVApplicationObject cmdlet in most cases.
 
 ### Merge the application object versions into text files
 
@@ -232,7 +232,7 @@ After you have completed the merge, you import the new merged application object
 
 4. Connect the new [!INCLUDE[server](../developer/includes/server.md)] instance to the database.  
 
-    You can do this with the [!INCLUDE[admintool](../developer/includes/admintool.md)] or the [Set-NAVServerConfiguration cmdlet](https://go.microsoft.com/fwlink/?linkid=401394) in the [!INCLUDE[adminshell](../developer/includes/nav_shell_md.md)]. In addition, you must add the service account that is used by the [!INCLUDE[server](../developer/includes/server.md)] instance as a member of the **db\_owner** role in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database on SQL Server.  
+    You can do this with the [!INCLUDE[admintool](../developer/includes/admintool.md)] or the [Set-NAVServerConfiguration cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) in the [!INCLUDE[adminshell](../developer/includes/nav_shell_md.md)]. In addition, you must add the service account that is used by the [!INCLUDE[server](../developer/includes/server.md)] instance as a member of the **db\_owner** role in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database on SQL Server.  
 
     For more information about how to do this using the [!INCLUDE[admintool](../developer/includes/admintool.md)], see [How to: Connect a Microsoft Dynamics NAV Server Instance to a Database](../administration/connect-server-to-database.md) and [Giving the account necessary database privileges in SQL Server](../deployment/provision-server-account.md#dbo).  
 
@@ -405,4 +405,4 @@ For information about importing objects, see [Importing Objects](../cside/cside-
 
 ## See Also  
 [Upgrading the Data](Upgrading-the-Data.md)   
-[Upgrading to Business Central](upgrading-to-business-central.md)  
+[Upgrading to Business Central](upgrading-to-business-central.md)

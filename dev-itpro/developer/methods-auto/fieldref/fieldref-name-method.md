@@ -41,13 +41,13 @@ An instance of the [FieldRef](fieldref-data-type.md) data type.
 
 ## Remarks
 
-The [Caption Method \(FieldRef, TestPage Field\)](../../methods/devenv-caption-method-fieldref-testpage-field.md) method retrieves the [Caption Property](../../properties/devenv-caption-property.md) of a field. To enable your application for multilanguage functionality, you must use the [FieldCaption Method \(Record\)](../../methods-auto/record/record-fieldcaption-method.md) instead.  
+The [Caption Method \(FieldRef, TestPage Field\)](fieldref-caption-method.md) method retrieves the [Caption Property](../../properties/devenv-caption-property.md) of a field. To enable your application for multilanguage functionality, you must use the [FieldCaption Method \(Record\)](../../methods-auto/record/record-fieldcaption-method.md) instead.  
 
-This method is similar to the [FieldName Method \(Record\)](../../methods-auto/record/record-fieldname-method.md).  
+This method is similar to the [FieldName Method \(Record\)](../record/record-fieldname-method.md).  
 
 ## Example
 
-The following example opens the Customer table as a RecordRef variable that is named CustomerRecref. The [Field Method \(RecordRef\)](../../methods-auto/recordref/recordref-field-method.md) creates a reference to the fields in the table and stores the FieldRef in the MyFieldRef variable. The code loops through field 1 through 5. For each field, the Name method retrieves the name of the field and stores the value in the varName variable. The field number and the value in the varName variable are displayed in a message box.
+The following example opens the Customer table as a RecordRef variable that is named CustomerRecref. The [Field Method \(RecordRef\)](../recordref/recordref-field-method.md) creates a reference to the fields in the table and stores the FieldRef in the MyFieldRef variable. The code loops through field 1 through 5. For each field, the Name method retrieves the name of the field and stores the value in the varName variable. The field number and the value in the varName variable are displayed in a message box.
 
 ```al
 var

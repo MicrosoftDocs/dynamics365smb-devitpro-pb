@@ -42,7 +42,7 @@ The current caption of the field as a String.
 ## Remarks  
 Caption returns the caption of a field. Caption first looks for a [CaptionML Property](../../properties/devenv-captionml-property.md).  
   
-If it does not find one, it will use the [Name Property](../../properties/devenv-name-property.md). This means that Caption is enabled for multilanguage functionality.  
+If it does not find one, it will use the [Name Property](../../properties/devenv-properties.md). This means that Caption is enabled for multilanguage functionality.  
   
 This method is similar to the [FieldCaption Method \(Record\)](../record/record-fieldcaption-method.md) method.  
   

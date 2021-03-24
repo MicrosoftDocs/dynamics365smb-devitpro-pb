@@ -45,7 +45,7 @@ The FieldRef that refers to the field with this index in the key.
  The first field in the index must have index 1, the second index 2, and so on. The last field must have index = FieldCount. If the index is out of the range supplied or if no table is selected, the method returns an error.  
   
 ## Example  
- The following example displays the caption of a field in a record. The table with ID 18 \(the Customer table\) is open with a reference. The *Keyref* for the record is retrieved by using the [KeyIndex Method \(RecordRef\)](../../methods/devenv-keyindex-method-recordref.md). The method retrieves the second key in the record and stores the value in the varKeyRef variable. The varKeyRef variable is then used to return the *FieldRef*. The varFieldRef variable is used to display the caption of the field. 
+ The following example displays the caption of a field in a record. The table with ID 18 \(the Customer table\) is open with a reference. The *Keyref* for the record is retrieved by using the [KeyIndex Method \(RecordRef\)](../library.md). The method retrieves the second key in the record and stores the value in the varKeyRef variable. The varKeyRef variable is then used to return the *FieldRef*. The varFieldRef variable is used to display the caption of the field. 
  
 ```al
 var

@@ -58,7 +58,7 @@ MyNotification.Send;
 ```
 
 ## Remarks 2
-The data that is specified by the SetData method can be retrieved by the [GetData Method](../../methods/devenv-getdata-method-notification.md). The SetData and GetData methods are typically used for actions with actions on the notification. The SetData method is called from the source is the notification, while the GetData method is called from the action code.
+The data that is specified by the SetData method can be retrieved by the [GetData Method](../library.md). The SetData and GetData methods are typically used for actions with actions on the notification. The SetData method is called from the source is the notification, while the GetData method is called from the action code.
 
 You can use multiple SetData method calls to specify different data items. The data remains available for the life of the notification instance. The data is cleared once the notification instance has been dismissed or an action is taken.
 

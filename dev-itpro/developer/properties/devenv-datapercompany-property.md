@@ -43,4 +43,4 @@ The value `true` means that data is available to the current company only, this 
 ## See Also  
 
 [Properties](devenv-properties.md)  
-[DataSource Property](devenv-datasource-property.md)  
+[DataSource Property](./devenv-properties.md)

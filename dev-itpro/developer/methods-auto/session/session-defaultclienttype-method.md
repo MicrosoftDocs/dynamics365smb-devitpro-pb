@@ -38,7 +38,7 @@ The default client that is configured for the server instance that is used by th
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- You can use DefaultClientType in a [GetURL Method](../../methods/devenv-geturl-method.md) call to get the URL of the default client.  
+ You can use DefaultClientType in a GetURL Method call to get the URL of the default client.  
 
 ## Example 1
 

@@ -45,7 +45,7 @@ Replacement values to insert in replacement fields in the filter expression. The
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- To apply filters to a dataset, the **SetFilter** method must be called before the **Open**, **SaveAsXML**, and **SaveAsCSV** methods, as shown in the following example. To remove filters from query, you call the [Clear Method](../../methods/devenv-clear-method.md).  
+ To apply filters to a dataset, the **SetFilter** method must be called before the **Open**, **SaveAsXML**, and **SaveAsCSV** methods, as shown in the following example. To remove filters from query, you call the [Clear Method](../library.md).  
   
 ```al
 Query.SetFilter(Column1, String);  
@@ -65,7 +65,7 @@ Query.Read;
   
  You can have multiple calls to the **SetFilter** method. If **SetFilter** method calls set filters on different columns, then the filters are combined and applied to the dataset. If consecutive **SetFilter** method calls set filters on the same column, then the last **SetFilter** method call is applied to the column.  
   
- In addition to the **SetFilter** method, you can apply filters to a query using the [SetRange Method \(Query\)](../../methods/devenv-setrange-method-query.md) method, the **FilterGroup** method, and the [DataItemTableFilter Property](../../properties/devenv-dataitemtable-filter-property.md) and [ColumnFilter Property](../../properties/devenv-columnfilter-property.md).  
+ In addition to the **SetFilter** method, you can apply filters to a query using the [SetRange Method \(Query\)](../library.md) method, the **FilterGroup** method, and the [DataItemTableFilter Property](/dynamics365/business-central/dev-itpro/developer/methods-auto/query/devenv-dataitemtablefilter-property) and [ColumnFilter Property](../../properties/devenv-columnfilter-property.md).  
   
 |If the **SetFilter** method...|then...|  
 |--------------------------------------|-------------|  

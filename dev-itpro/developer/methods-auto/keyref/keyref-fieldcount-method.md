@@ -41,7 +41,7 @@ The number of fields that have been defined in the key.
 
 ## Example
 
-The following example retrieves the number of fields that are defined in a key in record. The table with ID 18 \(the Customer table\) is open with a reference to table 18. The [KeyIndex Method \(RecordRef\)](../../methods/devenv-keyindex-method-recordref.md) method retrieves the second key in the record and store the *KeyRef* in the varKeyRef variable. The [FieldCount Method \(KeyREF\)](../../methods/devenv-fieldcount-method-keyref.md) is then used to return the number of fields defined in the key and displayed in a message box.
+The following example retrieves the number of fields that are defined in a key in record. The table with ID 18 \(the Customer table\) is open with a reference to table 18. The [KeyIndex Method \(RecordRef\)](../library.md) method retrieves the second key in the record and store the *KeyRef* in the varKeyRef variable. The [FieldCount Method \(KeyREF\)](../library.md) is then used to return the number of fields defined in the key and displayed in a message box.
  
 ```al
 var

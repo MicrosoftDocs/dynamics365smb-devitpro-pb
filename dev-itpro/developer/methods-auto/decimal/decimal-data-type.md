@@ -34,7 +34,7 @@ The following are examples of decimal values.
 
 ## Example 2
 
- The following is not a decimal, but rather an [Integer Data Type](../../datatypes/devenv-integer-data-type.md).  
+ The following is not a decimal, but rather an [Integer Data Type](../library.md).  
 
 ```
 342  
@@ -61,4 +61,4 @@ It is possible to assign to a variable the maximum value that can be formatted a
  
 ## See Also
 [Getting Started with AL](../../devenv-get-started.md)  
-[Developing Extensions](../../devenv-dev-overview.md)  
+[Developing Extensions](../../devenv-dev-overview.md)
