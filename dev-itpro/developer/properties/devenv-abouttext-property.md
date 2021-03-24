@@ -16,7 +16,7 @@ author: SusanneWindfeldPedersen
 # AboutText Property
 > **Version**: _Available or changed with runtime version 7.0._
 
-Sets the text of the entity used in the About box for teaching tips and callouts in the UI
+Sets the text of the entity used in the About box for teaching tips in the UI
 
 ## Applies to
 -   Page

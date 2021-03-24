@@ -16,7 +16,7 @@ author: SusanneWindfeldPedersen
 # AboutTitle Property
 > **Version**: _Available or changed with runtime version 7.0._
 
-Sets the title of the entity used in the About box for teaching tips and callouts in the UI.
+Sets the title of the entity used in the About box for teaching tips in the UI.
 
 ## Applies to
 -   Page
