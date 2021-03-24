@@ -1,5 +1,5 @@
 ---
-title: "Substitute the IF THEN ELSE structure with a CASE."
+title: "The Web client does not support About properties in certain contexts."
 ms.author: solsen
 ms.custom: na
 ms.date: 03/08/2021
@@ -13,14 +13,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# CodeCop Rule AA0022
-Substitute the IF THEN ELSE structure with a CASE.
+# UICop Rule AW0012
+The Web client does not support About properties in certain contexts.
 
 ## Description
-An IF followed by two or more ELSE IF should be replaced with a CASE.
+The Web client does not support About properties in certain contexts. Please see the properties' documentation for further information.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
-[CodeCop Analyzer](codecop.md)  
+[UICop Analyzer](uicop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

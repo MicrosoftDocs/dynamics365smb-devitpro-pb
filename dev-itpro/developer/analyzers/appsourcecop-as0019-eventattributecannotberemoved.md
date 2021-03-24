@@ -2,7 +2,7 @@
 title: "Event attributes cannot be removed"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 03/08/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AppSourceCop Rule AS0019
-Event attributes cannot be removed  
+Event attributes cannot be removed
 
 ## Description
 Removing Event attributes such as IntegrationEvent or BusinessEvent is not allowed because it will break dependent extensions that have subscribed to this event.

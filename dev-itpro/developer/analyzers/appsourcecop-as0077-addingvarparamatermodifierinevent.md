@@ -2,7 +2,7 @@
 title: "Adding a var modifier in events is not allowed"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 03/08/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AppSourceCop Rule AS0077
-Adding a var modifier in events is not allowed  
+Adding a var modifier in events is not allowed
 
 ## Description
 Adding a var modifier in events is not allowed as it might break the runtime behavior of extensions subscribing to it.
