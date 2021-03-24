@@ -2,7 +2,7 @@
 title: "RDLCLayout Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 01/26/2021
+ms.date: 03/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,10 +16,11 @@ author: SusanneWindfeldPedersen
 # RDLCLayout Property
 > **Version**: _Available or changed with runtime version 1.0._
 
-Sets the RDLC layout that is used on a report and returns it as a data stream.
+Sets the RDL layout that is used on a report and returns it as a data stream.
 
 ## Applies to
 -   Report
+-   Report Extension
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

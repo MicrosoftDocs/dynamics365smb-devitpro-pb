@@ -2,7 +2,7 @@
 title: "DefaultLayout Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 01/26/2021
+ms.date: 03/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,7 +16,7 @@ author: SusanneWindfeldPedersen
 # DefaultLayout Property
 > **Version**: _Available or changed with runtime version 1.0._
 
-Specifies whether the report uses the built-in RDLC or Word report layout by default.
+Specifies whether the report uses the built-in RDL or Word report layout by default.
 
 ## Applies to
 -   Report
