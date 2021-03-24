@@ -19,6 +19,12 @@ author: SusanneWindfeldPedersen
 Runs when the user tries to delete a record.
 
 ## Syntax
+```
+trigger OnDelete()
+begin
+    ...
+end;
+```
 
 
 

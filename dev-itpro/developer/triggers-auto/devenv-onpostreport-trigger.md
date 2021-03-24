@@ -19,6 +19,12 @@ author: SusanneWindfeldPedersen
 Runs after a report is run.
 
 ## Syntax
+```
+trigger OnPostReport()
+begin
+    ...
+end;
+```
 
 
 

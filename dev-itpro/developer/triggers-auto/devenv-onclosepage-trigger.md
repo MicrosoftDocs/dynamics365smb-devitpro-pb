@@ -19,6 +19,12 @@ author: SusanneWindfeldPedersen
 Runs as a page closes after the OnQueryClosePage trigger is run.
 
 ## Syntax
+```
+trigger OnClosePage()
+begin
+    ...
+end;
+```
 
 
 

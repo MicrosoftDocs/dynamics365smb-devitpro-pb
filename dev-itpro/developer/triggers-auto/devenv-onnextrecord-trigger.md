@@ -19,6 +19,12 @@ author: SusanneWindfeldPedersen
 Determines the next record to be displayed.
 
 ## Syntax
+```
+trigger OnNextRecord(Steps: Integer): ActualSteps
+begin
+    ...
+end;
+```
 
 ### Parameters
 

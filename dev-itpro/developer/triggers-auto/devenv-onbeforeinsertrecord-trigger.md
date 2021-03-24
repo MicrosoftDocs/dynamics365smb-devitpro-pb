@@ -2,7 +2,7 @@
 title: "OnBeforeInsertRecord Trigger"
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2021
+ms.date: 03/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,6 +19,12 @@ author: SusanneWindfeldPedersen
 Runs after a record has been loaded and before it is inserted into a database table.
 
 ## Syntax
+```
+trigger OnBeforeInsertRecord()
+begin
+    ...
+end;
+```
 
 
 

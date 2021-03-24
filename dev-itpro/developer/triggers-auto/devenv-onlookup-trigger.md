@@ -19,6 +19,12 @@ author: SusanneWindfeldPedersen
 Runs in place of the normal lookup features for the current page.
 
 ## Syntax
+```
+trigger OnLookup(Text: Text): Ok
+begin
+    ...
+end;
+```
 
 ### Parameters
 

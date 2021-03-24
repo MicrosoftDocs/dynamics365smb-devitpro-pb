@@ -2,7 +2,7 @@
 title: "OnPreXmlItem Trigger"
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2021
+ms.date: 03/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,6 +19,12 @@ author: SusanneWindfeldPedersen
 Runs after the table is initialized and before you start exporting data to an XML object. This trigger only applies to XMLPort elements that have a source type of Table.
 
 ## Syntax
+```
+trigger OnPreXmlItem()
+begin
+    ...
+end;
+```
 
 
 

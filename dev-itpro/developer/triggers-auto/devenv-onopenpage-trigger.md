@@ -19,6 +19,12 @@ author: SusanneWindfeldPedersen
 Runs after a page is initialized and run.
 
 ## Syntax
+```
+trigger OnOpenPage()
+begin
+    ...
+end;
+```
 
 
 

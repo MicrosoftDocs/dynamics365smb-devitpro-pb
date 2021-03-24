@@ -19,6 +19,12 @@ author: SusanneWindfeldPedersen
 Runs when a user tries to rename a record.
 
 ## Syntax
+```
+trigger OnRename()
+begin
+    ...
+end;
+```
 
 
 

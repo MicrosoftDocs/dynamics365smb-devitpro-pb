@@ -19,6 +19,12 @@ author: SusanneWindfeldPedersen
 Runs in place of the AssistEdit property features that are provided in the application.
 
 ## Syntax
+```
+trigger OnAssistEdit()
+begin
+    ...
+end;
+```
 
 
 

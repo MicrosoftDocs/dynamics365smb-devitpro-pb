@@ -19,6 +19,12 @@ author: SusanneWindfeldPedersen
 Runs when a user modifies an existing record in a table.
 
 ## Syntax
+```
+trigger OnModify()
+begin
+    ...
+end;
+```
 
 
 

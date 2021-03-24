@@ -19,6 +19,12 @@ author: SusanneWindfeldPedersen
 Overrides the default page behavior and enables you to specify which record you want to display when the page opens.
 
 ## Syntax
+```
+trigger OnFindRecord(Which: Text): Ok
+begin
+    ...
+end;
+```
 
 ### Parameters
 

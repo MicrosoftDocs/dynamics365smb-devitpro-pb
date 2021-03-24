@@ -19,6 +19,12 @@ author: SusanneWindfeldPedersen
 Runs after the user input is validated.
 
 ## Syntax
+```
+trigger OnAfterValidate()
+begin
+    ...
+end;
+```
 
 
 

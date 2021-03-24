@@ -19,6 +19,12 @@ author: SusanneWindfeldPedersen
 Runs after a field has been assigned a value and before it is validated and imported.
 
 ## Syntax
+```
+trigger OnAfterAssignField()
+begin
+    ...
+end;
+```
 
 
 

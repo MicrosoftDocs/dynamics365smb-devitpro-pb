@@ -19,6 +19,12 @@ author: SusanneWindfeldPedersen
 Runs after a record is retrieved from a table and before it is exported to the XML document.
 
 ## Syntax
+```
+trigger OnAfterGetRecord()
+begin
+    ...
+end;
+```
 
 
 

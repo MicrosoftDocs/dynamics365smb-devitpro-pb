@@ -19,6 +19,12 @@ author: SusanneWindfeldPedersen
 Runs after the value defined in the XML document is assigned to the text variable.
 
 ## Syntax
+```
+trigger OnAfterAssignVariable()
+begin
+    ...
+end;
+```
 
 
 

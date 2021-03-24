@@ -19,6 +19,12 @@ author: SusanneWindfeldPedersen
 Runs before a record is modified in the table.
 
 ## Syntax
+```
+trigger OnModifyRecord(): Ok
+begin
+    ...
+end;
+```
 
 
 ## Return Value

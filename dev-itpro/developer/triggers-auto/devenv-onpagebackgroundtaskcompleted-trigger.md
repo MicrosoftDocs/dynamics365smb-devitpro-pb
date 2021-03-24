@@ -19,6 +19,12 @@ author: SusanneWindfeldPedersen
 
 
 ## Syntax
+```
+trigger OnPageBackgroundTaskCompleted(TaskId: Integer, Results: Dictionary[Text,Text])
+begin
+    ...
+end;
+```
 
 ### Parameters
 

@@ -19,6 +19,12 @@ author: SusanneWindfeldPedersen
 Runs before the user input is validated.
 
 ## Syntax
+```
+trigger OnBeforeValidate()
+begin
+    ...
+end;
+```
 
 
 

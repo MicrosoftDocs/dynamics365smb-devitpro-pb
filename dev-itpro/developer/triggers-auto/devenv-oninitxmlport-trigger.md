@@ -2,7 +2,7 @@
 title: "OnInitXmlPort Trigger"
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2021
+ms.date: 03/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,6 +19,12 @@ author: SusanneWindfeldPedersen
 Runs when the XMLport is loaded and before any table views and filters are set.
 
 ## Syntax
+```
+trigger OnInitXmlPort()
+begin
+    ...
+end;
+```
 
 
 

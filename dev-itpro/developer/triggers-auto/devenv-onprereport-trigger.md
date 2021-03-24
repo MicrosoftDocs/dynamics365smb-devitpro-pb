@@ -19,6 +19,12 @@ author: SusanneWindfeldPedersen
 Runs before a report is run.
 
 ## Syntax
+```
+trigger OnPreReport()
+begin
+    ...
+end;
+```
 
 
 

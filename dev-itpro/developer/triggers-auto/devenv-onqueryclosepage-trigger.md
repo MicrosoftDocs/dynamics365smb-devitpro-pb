@@ -19,6 +19,12 @@ author: SusanneWindfeldPedersen
 Runs as a page closes and before the OnClosePage trigger executes.
 
 ## Syntax
+```
+trigger OnQueryClosePage(CloseAction: Action): Ok
+begin
+    ...
+end;
+```
 
 ### Parameters
 

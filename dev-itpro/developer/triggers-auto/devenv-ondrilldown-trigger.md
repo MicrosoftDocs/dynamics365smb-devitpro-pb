@@ -19,6 +19,12 @@ author: SusanneWindfeldPedersen
 Overrides the default drill-down behavior defined in the table definition for the FlowField.
 
 ## Syntax
+```
+trigger OnDrillDown()
+begin
+    ...
+end;
+```
 
 
 

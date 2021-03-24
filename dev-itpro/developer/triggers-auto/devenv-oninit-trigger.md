@@ -19,6 +19,12 @@ author: SusanneWindfeldPedersen
 Initializes the user-defined variables on the page.
 
 ## Syntax
+```
+trigger OnInit()
+begin
+    ...
+end;
+```
 
 
 

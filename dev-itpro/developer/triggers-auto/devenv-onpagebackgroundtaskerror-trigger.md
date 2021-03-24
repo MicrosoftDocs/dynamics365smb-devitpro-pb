@@ -19,6 +19,12 @@ author: SusanneWindfeldPedersen
 
 
 ## Syntax
+```
+trigger OnPageBackgroundTaskError(TaskId: Integer, ErrorCode: Text, ErrorText: Text, ErrorCallStack: Text, IsHandled: Boolean)
+begin
+    ...
+end;
+```
 
 ### Parameters
 

@@ -2,7 +2,7 @@
 title: "OnBeforeTestRun Trigger"
 ms.author: solsen
 ms.custom: na
-ms.date: 03/19/2021
+ms.date: 03/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,6 +19,12 @@ author: SusanneWindfeldPedersen
 Runs before a test of a test codeunit is run.
 
 ## Syntax
+```
+trigger OnBeforeTestRun(CodeunitId: Integer, CodeunitName: Text, FunctionName: Text, Permissions: TestPermissions): Ok
+begin
+    ...
+end;
+```
 
 ### Parameters
 
@@ -38,7 +44,6 @@ Specifies the permission set level to use on the test run. The value is retrieve
 - Restrictive
 - NonRestrictive
 - InheritFromTestCodunit - Specifies that a test the uses the TestPermissions property setting of the test codeunit to which it belongs.  
-
 
 ## Return Value
 

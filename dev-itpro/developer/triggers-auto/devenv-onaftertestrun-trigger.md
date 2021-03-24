@@ -2,7 +2,7 @@
 title: "OnAfterTestRun Trigger"
 ms.author: solsen
 ms.custom: na
-ms.date: 03/19/2021
+ms.date: 03/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,6 +19,12 @@ author: SusanneWindfeldPedersen
 Runs after a test of a test codeunit has been run.
 
 ## Syntax
+```
+trigger OnAfterTestRun(CodeunitId: Integer, CodeunitName: Text, FunctionName: Text, Permissions: TestPermissions, Success: Boolean)
+begin
+    ...
+end;
+```
 
 ### Parameters
 
@@ -41,7 +47,6 @@ Specifies the permission set level to use on the test run. The value is retrieve
 *Success*  
 &emsp;Type: [Boolean](../methods-auto/boolean/boolean-data-type.md)  
 True indicates that the test run succeeded; otherwise, false indicates that the test run failed.  
-
 
 
 ## Applies To

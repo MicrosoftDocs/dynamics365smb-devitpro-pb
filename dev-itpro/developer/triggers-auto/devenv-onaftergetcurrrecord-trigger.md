@@ -19,6 +19,12 @@ author: SusanneWindfeldPedersen
 Runs after the current record is retrieved from the table.
 
 ## Syntax
+```
+trigger OnAfterGetCurrRecord()
+begin
+    ...
+end;
+```
 
 
 

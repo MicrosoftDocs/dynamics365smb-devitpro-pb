@@ -19,6 +19,12 @@ author: SusanneWindfeldPedersen
 Runs before a new record is inserted into the table.
 
 ## Syntax
+```
+trigger OnInsertRecord(BelowxRec: Boolean): Ok
+begin
+    ...
+end;
+```
 
 ### Parameters
 

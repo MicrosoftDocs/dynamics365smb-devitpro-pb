@@ -19,6 +19,12 @@ author: SusanneWindfeldPedersen
 Runs before a record is deleted from the table.
 
 ## Syntax
+```
+trigger OnDeleteRecord(): Ok
+begin
+    ...
+end;
+```
 
 
 ## Return Value

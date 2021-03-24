@@ -19,6 +19,12 @@ author: SusanneWindfeldPedersen
 Runs before a field is passed to the XML document.
 
 ## Syntax
+```
+trigger OnBeforePassField()
+begin
+    ...
+end;
+```
 
 
 

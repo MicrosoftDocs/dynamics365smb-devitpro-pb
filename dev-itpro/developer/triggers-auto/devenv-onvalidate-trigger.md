@@ -19,6 +19,12 @@ author: SusanneWindfeldPedersen
 Runs when a field loses focus after its value has been changed.
 
 ## Syntax
+```
+trigger OnValidate()
+begin
+    ...
+end;
+```
 
 
 

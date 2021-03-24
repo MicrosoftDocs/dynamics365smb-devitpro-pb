@@ -19,6 +19,12 @@ author: SusanneWindfeldPedersen
 Runs when a user inserts a new record into the table.
 
 ## Syntax
+```
+trigger OnInsert()
+begin
+    ...
+end;
+```
 
 
 
