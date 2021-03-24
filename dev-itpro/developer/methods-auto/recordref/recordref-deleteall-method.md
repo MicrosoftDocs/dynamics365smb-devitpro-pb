@@ -37,7 +37,7 @@ Specifies whether the code in the OnDelete trigger will be executed. If this par
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- This method works the same way as the [DeleteAll Method \(Record\)](../../methods/devenv-deleteall-method-record.md).  
+ This method works the same way as the [DeleteAll Method \(Record\)](../library.md).  
   
 ## Example  
  The following example opens table 18 \(Customer\) as a RecordRef variable that is named CustomerRecRef. The [Field Method \(RecordRef\)](recordref-field-method.md) creates a FieldRef variable that is named MyFieldRef for field 1 \(No.\). From the No. field, the [SetRange Method \(FieldRef\)](../fieldref/fieldref-setrange-method.md) selects records in the range from 10000 to 20000. The number of records in the range is displayed in a message box. The DeleteALL method deletes all records in that range. The number of records is displayed again. This time, 0 is displayed because all the records in the range are deleted.

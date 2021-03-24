@@ -28,7 +28,7 @@ It is not allowed to change the return type of a public procedure that was publi
 It is only allowed to add a return type to a procedure which previously did not have one.
 
 > [!NOTE]  
-> This rule also covers the cases related to the [TryFunction](../properties/devenv-trymethod-property.md) attribute which implicitly defines a Boolean return type. 
+> This rule also covers the cases related to the [TryFunction](../methods/devenv-tryfunction-attribute.md) attribute which implicitly defines a Boolean return type. 
 
 ## Code examples triggering the rule
 
@@ -166,4 +166,4 @@ In version 2.0, the procedure is now marked as a TryFunction. This means that th
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+[Developing Extensions](../devenv-dev-overview.md)

@@ -16,7 +16,7 @@ A SumIndexField is always associated with a key and each key can have a maximum 
 >  Any field that has a numeric data type of Decimal, Integer, BigInteger, or Duration, can be associated with a key as a SumIndexField.  
 
 ## Implementing SIFT  
- [!INCLUDE[prod_short](includes/prod_short.md)] uses *Indexed Views* to maintain SIFT totals. Indexed views are a standard SQL Server feature. An indexed view is like a SQL Server view except that the contents have been materialized \(computed and stored\) to speed up the retrieval of data. For more information about indexed views, see [SQL Server Documentation](https://go.microsoft.com/fwlink/?LinkId=253107).  
+ [!INCLUDE[prod_short](includes/prod_short.md)] uses *Indexed Views* to maintain SIFT totals. Indexed views are a standard SQL Server feature. An indexed view is like a SQL Server view except that the contents have been materialized \(computed and stored\) to speed up the retrieval of data. For more information about indexed views, see [SQL Server Documentation](/sql/sql-server/).  
 
  [!INCLUDE[prod_short](includes/prod_short.md)] creates one indexed view for each SIFT key that is enabled. When you create a SIFT key for a table, you must set the [MaintainSIFTIndex Property](properties/devenv-maintainsiftindex-property.md) for that key to **True** to enable the SIFT key and create the indexed view. After SQL Server has created the indexed view, it maintains the contents of the view when any changes are made to the base table. If you set the [MaintainSIFTIndex Property](properties/devenv-maintainsiftindex-property.md) for that key to **False**, SQL Server drops the indexed view and stops maintaining the totals.  
 
@@ -58,4 +58,4 @@ AND PostingDate<=?
 ## See Also
 [SumIndexField Technology \(SIFT\)](devenv-sift-technology.md)  
 [Tuning and Tracing](devenv-sift-Tuning-and-Tracing.md)   
-[SIFT and Performance](devenv-SIFT-Performance.md)   
+[SIFT and Performance](devenv-SIFT-Performance.md)

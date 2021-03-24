@@ -41,7 +41,7 @@ procedure HelloWithOptions(OptionParameter : Option Alpha, "Bra-vo")
   
 ## Remarks
 
-In the [OptionString Property](../../properties/devenv-optionstring-property.md) of the field or variable, you can enter the option values as a comma-separated list. The Option type is a zero-based enumerator type, which means that the option values are assigned to sequential numbers, starting with 0. You can convert option data types to integers.  
+In the [OptionString Property](../../properties/devenv-optionmembers-field-property.md) of the field or variable, you can enter the option values as a comma-separated list. The Option type is a zero-based enumerator type, which means that the option values are assigned to sequential numbers, starting with 0. You can convert option data types to integers.  
  <!-- 
  For more information about option variables in multilanguage-enabled applications, see [Developing Multilanguage-Enabled Applications](../../dynamics-nav/Developing-Multilanguage-Enabled-Applications.md).  
  --> 
@@ -70,4 +70,4 @@ PurchHeaderRec."Document Type" := PurchHeaderRec."Document Type"::Invoice;
 ## See Also
 
 [Getting Started with AL](../../devenv-get-started.md)  
-[Developing Extensions](../../devenv-dev-overview.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

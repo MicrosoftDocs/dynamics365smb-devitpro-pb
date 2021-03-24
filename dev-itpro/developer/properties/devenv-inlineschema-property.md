@@ -49,4 +49,4 @@ Inline schemas can be useful in many situations. You can use inline schemas in t
 ## See Also
 
 [Properties](devenv-properties.md)   
-[XMLport Data Type](../datatypes/devenv-xmlport-data-type.md)
+[XMLport Data Type](../methods-auto/library.md)

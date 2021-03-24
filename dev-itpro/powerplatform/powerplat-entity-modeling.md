@@ -21,7 +21,7 @@ author: solsen
 > The **Business Central Virtual Entity (Preview)** app available on AppSource is being updated to reflect new terminology with an upcoming release. This also applies to that terminology used in Business Central.
 
 > [!IMPORTANT]  
-> This functionality requires version 17 for [!INCLUDE[prod_short](../developer/includes/prod_short.md)], while service update 189 is required for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The release information for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] is published on the [latest version availability page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
+> This functionality requires version 17 for [!INCLUDE[prod_short](../developer/includes/prod_short.md)], while service update 189 is required for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The release information for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] is published on the [latest version availability page](/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
 
 Building an app requires capabilities to perform relational modeling between tables that are being used in the app. In the context of virtual tables, there will be scenarios where virtual tables and native tables in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] must work together to enable the desired user experience. This topic explains concepts of relational modeling that can be implemented using virtual tables for [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
@@ -33,7 +33,7 @@ By default, virtual tables for [!INCLUDE[prod_short](../developer/includes/prod_
 
 When a virtual table is generated for a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] table, the system tries to create each field in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] table in the corresponding virtual table in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. In an ideal case, the total number of fields will be the same in both tables, unless there is a mismatch in supported data types between [!INCLUDE[prod_short](../developer/includes/prod_short.md)] and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. For data types that are supported, the column properties in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] are set based on the properties in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
-The rest of this section describes supported and unsupported data types. For more information about columns in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], see [Columns overview](https://docs.microsoft.com/powerapps/maker/common-data-service/fields-overview).
+The rest of this section describes supported and unsupported data types. For more information about columns in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], see [Columns overview](/powerapps/maker/common-data-service/fields-overview).
 
 | Data type in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] | Modeled data type in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] |
 |-------------------------------------|------------------------------------------|
@@ -124,7 +124,7 @@ Furthermore, every virtual table for a [!INCLUDE[prod_short](../developer/includ
  
 ## OData actions
 
-OData actions in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tables are made available as custom actions in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. For more information about custom actions and what they enable in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], see [Custom actions](https://docs.microsoft.com/powerapps/developer/common-data-service/custom-actions).
+OData actions in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tables are made available as custom actions in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. For more information about custom actions and what they enable in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], see [Custom actions](/powerapps/developer/common-data-service/custom-actions).
 
 OData actions generated for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] have only one parameter which is the table. There is no output parameter.
 
@@ -147,4 +147,4 @@ Calculated and unmapped fields in [!INCLUDE[prod_short](../developer/includes/pr
 [Microsoft Power Platform Integration with Business Central](powerplat-overview.md)  
 [Application Lifecycle Management for Solutions that use Virtual tables](powerplat-app-lifecycle-management.md)  
 [Business Central and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] Admin Reference](powerplat-admin-reference.md)  
-[FAQ](powerplat-faq.md)  
+[FAQ](powerplat-faq.md)

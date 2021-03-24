@@ -27,7 +27,7 @@ This can lead to unexpected behaviors when used in production code.
 For more information about the usage of AssertError, see:
 - [AssertError statements](../devenv-al-simple-statements.md#asserterror-statements)
 - [Testing the Application Overview](../devenv-testing-application.md)
-- [TransactionModel Property](../properties/devenv-transactionmodel-property.md)
+- [TransactionModel Property](../properties/devenv-properties.md)
 
 ### How to fix this diagnostic?
 
