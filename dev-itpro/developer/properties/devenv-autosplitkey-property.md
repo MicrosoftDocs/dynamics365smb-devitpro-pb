@@ -38,7 +38,7 @@ To set this property to a value of **true**, the following conditions must be me
   
 - The current key must be the primary key.  
   
-- The last field in the primary key must be an [Integer Data Type](../datatypes/devenv-integer-data-type.md), [BigInteger Data Type](../datatypes/devenv-biginteger-data-type.md), [GUID Data Type](../datatypes/devenv-guid-data-type.md), or [Decimal Data Type](../datatypes/devenv-decimal-data-type.md) field.  
+- The last field in the primary key must be an [Integer Data Type](../methods-auto/library.md), [BigInteger Data Type](../methods-auto/library.md), [GUID Data Type](../methods-auto/library.md), or [Decimal Data Type](../methods-auto/library.md) field.  
   
 ## See Also  
 [Properties](devenv-properties.md)

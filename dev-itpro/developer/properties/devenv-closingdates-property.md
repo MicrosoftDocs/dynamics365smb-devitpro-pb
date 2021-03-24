@@ -40,4 +40,4 @@ All dates have a corresponding closing date. A closing date is a period followin
   
 ## See Also  
 
-[Date and Time Methods](../methods/devenv-date-and-time-methods.md)
+[Date and Time Methods](../methods-auto/library.md)

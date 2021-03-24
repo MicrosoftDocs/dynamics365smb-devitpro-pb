@@ -50,7 +50,7 @@ You might run into compilation errors, which can typically be caused by:
 ## Write upgrade code to move data from V1 Extensions
 Just like with V1 extensions, you have to write code to handle data in tables during upgrade. Writing code for the V1-to-V2 extension upgrade is very similar to the code that you have been writing for V1 Extensions. The differences are:
 
-- Instead of adding code to normal codeunit, you write code in an upgrade codeunit, which is a codeunit whose [SubType property](properties/devenv-subtype-property-codeunit.md) is set to **Upgrade**.
+- Instead of adding code to normal codeunit, you write code in an upgrade codeunit, which is a codeunit whose [SubType property](/dynamics365/business-central/dev-itpro/developer/devenv-subtype-codeunit-property) is set to **Upgrade**.
 - Instead of adding code to the user-defined methods `OnNavAppUpgradePerDatabase()` or `OnNavAppUpgradePerCompany()`, you add code to one or more of the following system triggers for data upgrade. These triggers are invoked when a data upgrade is started. The following table lists the upgrade triggers in the order in which they run.  
 
     |Trigger |Description |
@@ -141,4 +141,4 @@ The upgrade code unit becomes an integral part of the extension. The **NAVAPP** 
 ## See Also
 [Getting Started with AL](devenv-get-started.md)  
 [Keyboard Shortcuts](devenv-keyboard-shortcuts.md)    
-[AL Development Environment](devenv-reference-overview.md)  
+[AL Development Environment](devenv-reference-overview.md)

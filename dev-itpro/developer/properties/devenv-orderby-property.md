@@ -29,7 +29,7 @@ Sorts table fields in the page view in ascending or descending order.
 
  *Column*=**Ascending**&#124;**Descending**  
   
-- *Column* is the name of the query column as specified by its [Name Property](devenv-name-property.md).  
+- *Column* is the name of the query column as specified by its [Name Property](./devenv-properties.md).  
   
 - **Ascending** sorts the column from lowest value to the highest value (A to Z, 0 to 9).  
   
@@ -90,4 +90,4 @@ OrderBy = ascending (Name,Quantity);
 ## See Also  
 
 [Query Properties](devenv-query-properties.md)  
-[View Properties](devenv-view-properties.md)  
+[View Properties](devenv-view-properties.md)

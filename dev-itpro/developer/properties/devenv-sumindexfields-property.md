@@ -83,4 +83,4 @@ Changing existing keys may affect the behavior of the application since other pa
 [Properties](devenv-properties.md)   
 [MaintainSIFTIndex Property](devenv-maintainsiftindex-property.md)   
 [MaintainSQLIndex Property](devenv-maintainsqlindex-property.md)   
-[AL Data Types](../datatypes/devenv-al-data-types.md)
+[AL Data Types](../methods-auto/library.md)

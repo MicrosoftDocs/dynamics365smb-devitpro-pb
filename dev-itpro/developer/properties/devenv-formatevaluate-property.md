@@ -66,10 +66,10 @@ The following XML Data types require evaluation.
   
 This is an XMLport property and therefore applies to all the data that is being streamed. It cannot be applied only to specific fields.  
   
-For more information about formatting AL data types, see [Format Property](devenv-format-property.md). For more information about evaluating variables, see [EVALUATE Method](../methods-auto/system/system-evaluate-method.md). For more information about using temporary tables, see [Temporary Property (XMLports)](devenv-temporary-xmlports-property.md).  
+For more information about formatting AL data types, see [Format Property](devenv-format-property.md). For more information about evaluating variables, see [EVALUATE Method](../methods-auto/system/system-evaluate-method.md). For more information about using temporary tables, see [Temporary Property (XMLports)](/dynamics365/business-central/dev-itpro/developer/devenv-usetemporary-xmlports-property).  
   
 ## See Also  
 
 [Format Property (XMLports)](devenv-format-property.md)   
 [Evaluate Method](../methods-auto/system/system-EVALUATE-method.md)   
-[Temporary Property (XMLports)](devenv-temporary-xmlports-property.md)
+[Temporary Property (XMLports)](/dynamics365/business-central/dev-itpro/developer/devenv-usetemporary-xmlports-property)

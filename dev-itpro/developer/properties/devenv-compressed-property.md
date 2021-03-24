@@ -34,8 +34,8 @@ Compressed = true;
 ```
 
 ## Remarks
-It must be applied on a field of the [BLOB Data Type](../datatypes/devenv-blob-data-type.md).
+It must be applied on a field of the [BLOB Data Type](../methods-auto/library.md).
 
 ## See Also  
 
-[BLOB Data Type](../datatypes/devenv-blob-data-type.md)
+[BLOB Data Type](../methods-auto/library.md)

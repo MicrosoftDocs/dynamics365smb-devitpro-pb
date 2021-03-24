@@ -47,5 +47,5 @@ This property is used when you specify **CDS**, **MicrosoftGraph** or **External
 
 [TableType Property](devenv-tabletype-property.md)  
 [ExternalSchema Property](devenv-externalschema-property.md)  
-[Name Property](devenv-name-property.md)  
-[Properties](devenv-properties.md)  
+[Name Property](./devenv-properties.md)  
+[Properties](devenv-properties.md)

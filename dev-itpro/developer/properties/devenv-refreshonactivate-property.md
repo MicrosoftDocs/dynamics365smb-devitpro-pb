@@ -37,4 +37,4 @@ On RoleCenters, modifying data in one part will automatically refresh data in an
 ## See Also  
 
 [Properties](devenv-properties.md)  
-[Page Properties](devenv-page-properties.md)
+[Page Properties](./devenv-properties.md)

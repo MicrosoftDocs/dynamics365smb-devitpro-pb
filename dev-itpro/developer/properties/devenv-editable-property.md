@@ -65,5 +65,5 @@ On pages, you use the **Editable** property for group, part, field, and action c
 ## See Also
 
 [Properties](devenv-properties.md)   
-[Page Properties](devenv-page-properties.md)  
-[InDataSet Property](devenv-indataset-property.md)
+[Page Properties](./devenv-properties.md)  
+[InDataSet Property](../methods/devenv-indataset-attribute.md)

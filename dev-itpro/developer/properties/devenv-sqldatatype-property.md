@@ -78,6 +78,6 @@ If you set SQL Data Type to Integer, then the following are true:
 ## See Also
 
 [Properties](devenv-properties.md)  
-[Integer Data Type](../datatypes/devenv-integer-data-type.md)  
-[BigInteger Data Type](../datatypes/devenv-biginteger-data-type.md)  
-[Variant Data Type](../datatypes/devenv-variant-data-type.md)
+[Integer Data Type](../methods-auto/library.md)  
+[BigInteger Data Type](../methods-auto/library.md)  
+[Variant Data Type](../methods-auto/library.md)

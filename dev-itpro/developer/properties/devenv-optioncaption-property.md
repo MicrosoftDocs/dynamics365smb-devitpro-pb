@@ -46,9 +46,9 @@ field(1301; "Prediction Confidence"; Option)
 
 ## Remarks
 
-**OptionCaption** sets the text used to show the option values available for a variable or a field on a page or report. The [OptionString Property](devenv-optionstring-property.md) contains the set of values that are acceptable choices. If you have set the [OptionCaptionML Property](devenv-optioncaptionml-property.md), this overrides the OptionCaption setting.  
+**OptionCaption** sets the text used to show the option values available for a variable or a field on a page or report. The [OptionString Property](./devenv-optionmembers-field-property.md) contains the set of values that are acceptable choices. If you have set the [OptionCaptionML Property](devenv-optioncaptionml-property.md), this overrides the OptionCaption setting.  
   
 ## See Also  
 
-[OptionString Property](devenv-optionstring-property.md)  
-[OptionCaptionML Property](devenv-optioncaptionml-property.md)  
+[OptionString Property](./devenv-optionmembers-field-property.md)  
+[OptionCaptionML Property](devenv-optioncaptionml-property.md)

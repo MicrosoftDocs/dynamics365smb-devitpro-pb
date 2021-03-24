@@ -41,7 +41,7 @@ Sets the maximum length of the specific RequestFilterHeading.
 
 ## Property Value  
 
-Any valid string. If [RequestFilterHeadingML Property](devenv-requestfilterheadingml-property.md) is set, then the value for the selected language is used. If [RequestFilterHeadingML Property](devenv-requestfilterheadingml-property.md) is not set, then the default is the name of the table that is the specified in the [DataItemTable Property](devenv-dataitemtable-property.md) in a report or in the [SourceTable (XMLports) Property](devenv-sourcetable-XMLports-property.md) in an XMLport. 
+Any valid string. If [RequestFilterHeadingML Property](devenv-requestfilterheadingml-property.md) is set, then the value for the selected language is used. If [RequestFilterHeadingML Property](devenv-requestfilterheadingml-property.md) is not set, then the default is the name of the table that is the specified in the [DataItemTable Property](./devenv-properties.md) in a report or in the [SourceTable (XMLports) Property](./devenv-properties.md) in an XMLport. 
 
 ## Syntax
 
@@ -52,4 +52,4 @@ RequestFilterHeading = 'Entry';
 ## See Also
 
 [Request Pages](../devenv-request-pages.md)  
-[Multilanguage Development](../devenv-multilanguage-development.md)
+[Multilanguage Development](/dynamics365/business-central/dev-itpro/developer/properties/devenv-work-with-translation-files)

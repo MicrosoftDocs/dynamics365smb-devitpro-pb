@@ -40,4 +40,4 @@ Drill-downs are a system-wide feature of [FlowFields](../devenv-flowfields.md) t
 ## See Also  
 
 [Pages Overview](../devenv-pages-overview.md)   
-[Page Properties](devenv-page-properties.md)   
+[Page Properties](./devenv-properties.md)

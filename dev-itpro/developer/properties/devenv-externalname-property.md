@@ -43,5 +43,5 @@ This property appears when you specify **CDS** or **ExternalSQL** in the **Table
 
 [TableType Property](devenv-tabletype-property.md)   
 [ExternalSchema Property](devenv-externalschema-property.md)   
-[Name Property](devenv-name-property.md)   
-[Properties](devenv-properties.md)   
+[Name Property](./devenv-properties.md)   
+[Properties](devenv-properties.md)

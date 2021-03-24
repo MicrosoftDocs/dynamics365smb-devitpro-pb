@@ -23,7 +23,7 @@ Sets whether the field value should be automatically incremented.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-The fields must be of [Integer Data Type](../datatypes/devenv-integer-data-type.md) and [BigInteger Data Type](../datatypes/devenv-biginteger-data-type.md).
+The fields must be of [Integer Data Type](../methods-auto/library.md) and [BigInteger Data Type](../methods-auto/library.md).
 
 ## Property Value  
 

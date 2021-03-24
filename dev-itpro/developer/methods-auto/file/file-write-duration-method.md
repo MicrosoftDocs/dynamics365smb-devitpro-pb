@@ -53,10 +53,10 @@ The data that you want to write to the file.
   
  We recommend that you use the File data type for files that were created in earlier versions of [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)].  
   
- To read or write files in Unicode or in other formats, we recommend that you use .NET Framework interoperability and use the [System.IO Namespace](https://go.microsoft.com/fwlink/?LinkId=262250).  
+ To read or write files in Unicode or in other formats, we recommend that you use .NET Framework interoperability and use the [System.IO Namespace](/dotnet/api/system.io).  
   
 ## Example  
- The following example determines whether the specified file exists. If it exists, the [WriteMode Method \(File\)](../../methods-auto/file/file-writemode-method.md) allows the file to be open for writing. The [Open Method \(File\)](../../methods-auto/file/file-open-method.md) opens the file, the [Write Method \(File\)](../../methods/devenv-write-method-file.md) writes the text “Hello World” to the file and then the [Close Method \(File\)](../../methods-auto/file/file-close-method.md) closes the file. If the file does not exist, then an error message is displayed. This example assumes that you have created the following file: C:\\TestFolder\\TestFile.txt. 
+ The following example determines whether the specified file exists. If it exists, the [WriteMode Method \(File\)](file-writemode-method.md) allows the file to be open for writing. The [Open Method \(File\)](file-open-method.md) opens the file, the [Write Method \(File\)](file-writemode-method.md) writes the text “Hello World” to the file and then the [Close Method \(File\)](file-close-method.md) closes the file. If the file does not exist, then an error message is displayed. This example assumes that you have created the following file: C:\\TestFolder\\TestFile.txt. 
 
   ```
  var
