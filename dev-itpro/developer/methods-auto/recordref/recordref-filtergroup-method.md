@@ -2,7 +2,7 @@
 title: "RecordRef.FilterGroup Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 02/15/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # RecordRef.FilterGroup Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Changes the filter group that is being applied to the table. You can also use this method to return the number of the current filtergroup. You cannot return the number of the filtergroup and set a new filtergroup at the same time.
 
