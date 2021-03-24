@@ -2,7 +2,7 @@
 title: "Manifest property is required for AppSource submission"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 03/08/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AppSourceCop Rule AS0051
-Manifest property is required for AppSource submission  
+Manifest property is required for AppSource submission
 
 ## Description
 The manifest property must be specified and contain a meaningful value. The value of the property might be displayed to users in the AppSource marketplace.

@@ -2,7 +2,7 @@
 title: "AppSourceCop Analyzer"
 ms.author: solsen
 ms.custom: na
-ms.date: 12/14/2020
+ms.date: 02/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -55,7 +55,7 @@ AppSourceCop is an analyzer that enforces rules that must be respected by extens
 |[AS0039](appsourcecop-as0039-destructivetablepropertyremovenotallowed.md)|Removing properties that cause destructive changes is not allowed|Upgrade|Error|
 |[AS0041](appsourcecop-as0041-destructivetablefieldpropertyremovenotallowed.md)|Table field property changes that cause destructive changes must not be removed|Upgrade|Error|
 |[AS0042](appsourcecop-as0042-destructivekeypropertyremovenotallowed.md)|Table key property changes that cause destructive changes must not be removed|Upgrade|Error|
-|[AS0043](appsourcecop-as0043-uniquekeydeletenotallowed.md)|Unique keys must not be deleted|Upgrade|Error|
+|[AS0043](appsourcecop-as0043-clusteredkeydeletenotallowed.md)|The clustered key must not be deleted|Upgrade|Error|
 |[AS0044](appsourcecop-as0044-destructivetablefieldpropertyoptionmemberschangenotallowed.md)|Property changes that cause destructive changes are not allowed|Upgrade|Error|
 |[AS0047](appsourcecop-as0047-extensionnamelengthmustnotexceedlimit.md)|The extension name is too long.|Extensibility|Error|
 |[AS0048](appsourcecop-as0048-extensionpublisherlengthmustnotexceedlimit.md)|The publisher name is too long.|Extensibility|Error|
