@@ -2,7 +2,7 @@
 title: "Page.SetSelectionFilter Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 02/15/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Page.SetSelectionFilter Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Notes the records that the user has selected on the page, marks those records in the table specified, and sets the filter to "marked only".
 
