@@ -46,7 +46,7 @@ The Microsoft language ID (LCID).
 ## Remarks  
  The LanguageID is a standard Windows language ID. The Windows Language virtual table contains a list of these IDs and the corresponding names and short names.  
   
- For more information, see [Multilanguage Development](../../devenv-multilanguage-development.md). 
+ For more information, see [Multilanguage Development](/dynamics365/business-central/dev-itpro/developer/methods-auto/system/devenv-work-with-translation-files). 
  
 ## See Also
 [System Data Type](system-data-type.md)  

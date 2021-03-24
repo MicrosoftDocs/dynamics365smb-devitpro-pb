@@ -1,5 +1,5 @@
 ---
-title: "Follow [the style guide](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/compliance/apptest-bestpracticesforalcode#file-naming) about the best practices for naming."
+title: "Follow [the style guide](../../compliance/apptest-bestpracticesforalcode.md#file-naming) about the best practices for naming."
 ms.author: solsen
 ms.custom: na
 ms.date: 10/01/2020
@@ -14,13 +14,13 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # CodeCop Rule AA0215
-Follow [the style guide](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/compliance/apptest-bestpracticesforalcode#file-naming) about the best practices for naming.  
+Follow [the style guide](../../compliance/apptest-bestpracticesforalcode.md#file-naming) about the best practices for naming.  
 
 ## Description
-Follow [the style guide](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/compliance/apptest-bestpracticesforalcode#file-naming) about the best practices for naming.
+Follow [the style guide](../../compliance/apptest-bestpracticesforalcode.md#file-naming) about the best practices for naming.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [CodeCop Analyzer](codecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+[Developing Extensions](../devenv-dev-overview.md)

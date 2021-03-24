@@ -65,7 +65,7 @@ Specifies the permission set level to use on the test run. The value is retrieve
 
 ## Applies to  
 
-- Test runner codeunits. Test runner codeunits have the [SubType Property \(Codeunit\)](../properties/devenv-subtype-property-codeunit.md) set to **TestRunner**.  
+- Test runner codeunits. Test runner codeunits have the [SubType Property \(Codeunit\)](../properties/devenv-subtype-codeunit-property.md) set to **TestRunner**.  
 
 > [!NOTE]  
 > This trigger is optional and not available on a test runner codeunit by default. To implement this trigger, you must manually add it.  
@@ -107,4 +107,4 @@ Exit(true);
 [TestPermissions Property](../properties/devenv-testpermissions-property.md)  
 [Codeunit Triggers](devenv-codeunit-triggers.md)  
 [OnAfterTestRun Trigger](devenv-onaftertestrun-trigger.md)  
-[Triggers](devenv-triggers.md)  
+[Triggers](devenv-triggers.md)
