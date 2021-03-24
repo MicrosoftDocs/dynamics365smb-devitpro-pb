@@ -83,17 +83,19 @@
 ## [Get Started as a Reseller of Business Central Online](administration/get-started-online.md)
 ## [Country/Regional availability and Supported Translations](compliance/apptest-countries-and-translations.md)
 ## [Delegated Administrator Access to Business Central Online](administration/delegated-admin.md)
-## [Licenses and Entitlements](deployment/licensing.md)
 ## [Operational Limits](administration/operational-limits-online.md)
 ## [Major Updates of Business Central Online](administration/update-rollout-timelime.md)
 ## [Version Numbers in Business Central](administration/version-numbers.md)
 ## [Enabling New Features Ahead of Time](administration/feature-management.md)
 ## [Managing Technical Support](administration/manage-technical-support.md)
-## [Special Permission Sets](administration/administration-special-permission-sets.md)
 ## [Setting up the Excel Add-In](administration/configuring-excel-addin.md)
 ## [Network Configuration for the Excel Add-In](administration/configuring-network-for-addins.md)
 ## [Setting up App Key Vaults for Extensions](administration/setup-app-key-vault.md)
 ## [Upgrading AppSource Apps in Production](developer/devenv-upgrade-appsource-app-in-prod.md)
+## Entitlements and Permissions
+### [Entitlements and Permission Sets Overview](developer/devenv-entitlements-and-permissionsets-overview.md)
+### [Licenses and Entitlements](deployment/licensing.md)
+### [Special Permission Sets](administration/administration-special-permission-sets.md)
 ## Environment Types
 ### [Production and Sandbox Environments](administration/environment-types.md)
 ### [Preparing Demo Environments](administration/demo-environment.md)
@@ -340,6 +342,11 @@
 #### [Moving Tables and Fields Down](developer/devenv-migrate-table-fields-down.md)
 #### [Moving Tables and Fields Up](developer/devenv-migrate-table-fields-up.md)
 #### [Migration.json File](developer/devenv-migration-json-file.md)
+## Developing Permission Sets and Entitlements
+### [Permissions on Database Objects](developer/devenv-permissions-on-database-objects.md)
+### [Entitlement Object](developer/devenv-entitlement-object.md)
+### [Permissionset Object](developer/devenv-permissionset-object.md)
+### [Permissionset Extension Object](developer/devenv-permissionset-ext-object.md)
 ## Pages
 ### [Pages Overview](developer/devenv-pages-overview.md)
 ### [Page Object](developer/devenv-page-object.md)
@@ -536,6 +543,9 @@
 #### [Query Object](developer/devenv-query-object.md)
 #### [XMLPort Object](developer/devenv-xmlport-object.md)
 #### [Control Add-In Object](developer/devenv-control-addin-object.md)
+#### [Entitlement Object](developer/devenv-entitlement-object.md)
+#### [Permissionset Object](developer/devenv-permissionset-object.md)
+#### [Permissionset Extension Object](developer/devenv-permissionset-ext-object.md)
 ### Methods
 #### [Methods Overview](developer/methods-auto/library.md)
 #### [Array Methods](developer/methods/devenv-array-methods.md)
