@@ -104,7 +104,7 @@ The following table lists the Business Central 17 versions and the minimum 18 ve
 |Version 17|Version 18|
 |----------|----------|
 |17.0 to 17.4|18.0|
-|17.5<sup>[\[1\]](#1)</sup>|18.1|
+|17.6<sup>[\[1\]](#1)</sup>|18.1|
 
 <!-- To see the available updates for Business Central 2021 Release Wave 1, see [Released Updates for Microsoft Dynamics 365 Business Central 2021 Release Wave 1 on-premises](https://support.microsoft.com/help/4549687).-->
 
