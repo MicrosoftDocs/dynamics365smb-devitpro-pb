@@ -50,7 +50,7 @@ The first task is to use Azure portal to register an application for Business Ce
         |-------|-----------|
         |Name|Specify a name for your Business Central on-premises solution, such as *Business Central on-premises* or *Azure Services for Business Central on-premises*. |
         |Supported account types| Select <strong>Accounts in any organizational directory (Any Azure AD directory - Multitenant)</strong> |
-        |Redirect URI|Set the first box to **Web** to specify a web application. Enter the URL for your Business Central on-premises browser client, followed by *OAuthLanding.htm*, for example: `https://MyServer/BC170/OAuthLanding` or `https://cronus.onmicrosoft.com/BC170/OAuthLanding.htm`. This file is used to manage the exchange of data between Business Central on-premises and other services through Azure AD.<br> <br>**Important:** The URL must match the URL of Web client, as it appears in the browser address. For example, even though the actual URL might be `https://MyServer:443/BC170/OAuthLanding`, the browser typically removes the port number `:443`.|
+        |Redirect URI|Set the first box to **Web** to specify a web application. Enter the URL for your Business Central on-premises browser client, followed by *OAuthLanding.htm*, for example: `https://MyServer/BC180/OAuthLanding` or `https://cronus.onmicrosoft.com/BC180/OAuthLanding.htm`. This file is used to manage the exchange of data between Business Central on-premises and other services through Azure AD.<br> <br>**Important:** The URL must match the URL of Web client, as it appears in the browser address. For example, even though the actual URL might be `https://MyServer:443/BC180/OAuthLanding`, the browser typically removes the port number `:443`.|
 
         When completed, an **Overview** displays in the portal for the new application.
 
@@ -68,10 +68,13 @@ The first task is to use Azure portal to register an application for Business Ce
 
     Use the following table to help you set the minimum permissions:
 
-    |API / Permission name|Type|Description|
-    |---------------------|----|-----------|
-    |Microsoft Graph / User.Read|Delegated|Sign in and read user profile|
-    |Power BI Service / Report.Read.All|Delegated|View all reports|
+    |Feature|API | Permission name|Type|Description|
+    |----|----|----------------|----|-----------|
+    |All|Microsoft Graph | User.Read|Delegated|Sign in and read user profile|
+    |[Universal Print integration](/dynamics365/business-central/ui-specify-printer-selection-reports#set-up-universal-print)|Microsoft Graph |PrinterShare.ReadBasic.All|Delegated|Read basic information about printer shares. Required for using Universal Print printers.|
+    |||PrintJob.Create|Delegated|Create print jobs. Required for using Universal Print printers|
+    |||PrintJob.ReadBasic|Delegated|Read basic information of user's print jobs. Required for using Universal Print printers.|
+    |[Power BI Integration](/dynamics365/business-central/admin-powerbi-setup)|Power BI Service|Report.Read.All|Delegated|View all reports. Required for viewing Power BI reports in Business Central.|
 
 ## Set up the registered application in Business Central
 
@@ -81,16 +84,15 @@ After you create the application registration, the next task is to configure the
 2. Select **Set up Azure Active Directory**, then **Next**.
 
     The **Connect With Azure** page opens.
-    <!--
-    ![Setting the Azure Active Directory](../developer/media/set-up-azure-ad.png)
-
-    -->
+<!--
+![Setting the Azure Active Directory](../developer/media/set-up-azure-ad.png)
+-->
 3. In the **Redirect URL** field, make sure the URL matches the redirect URL that's assigned the registered Business Central application in Azure AD.
 4. In the **Application ID** field, specify the application (client) ID of the Business Central application in Azure AD that you copied in the previous task.
 5. In the **Key** field, specify the value of the client secret that's used by the Business Central application in Azure AD.
 6. Choose **Next**.
 
-    If you're using NavUserPassword authentication, you're prompted to sign in to the Azure AD tenant. In this case, enter the sign in email and password of a valid account.
+    If you're using NavUserPassword authentication, you're prompted to sign in to the Azure AD tenant. In this case, enter the sign-in email and password of a valid account.
 
 Unless you see an error message, you're now done. The [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premises solution is registered and ready to connect to services such as Cortana Intelligence, or embedding Power BI in [!INCLUDE [prod_short](../developer/includes/prod_short.md)].
 
