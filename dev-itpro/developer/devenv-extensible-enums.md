@@ -160,8 +160,8 @@ Conversion to and from `enum` is more strict than for `Options` in C/SIDE.
 For information about assigment compatibility, see [AssignmentCompatibility Property](properties/devenv-assignmentcompatibility-property.md).
 
 ## See Also
-[AL Data Types](datatypes/devenv-al-data-types.md)  
+[AL Data Types](./methods-auto/library.md)  
 [TableRelation Property](properties/devenv-tablerelation-property.md)  
 [Extensible Property](properties/devenv-extensible-property.md)  
 [Enum Data Type](methods-auto/enum/enum-data-type.md)  
-[AssignmentCompatibility Property](properties/devenv-assignmentcompatibility-property.md)  
+[AssignmentCompatibility Property](properties/devenv-assignmentcompatibility-property.md)

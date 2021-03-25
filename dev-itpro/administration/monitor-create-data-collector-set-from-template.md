@@ -19,7 +19,7 @@ author: SusanneWindfeldPedersen
   
  Data that is collected by a data collector set is stored in a log file that you can view in Performance Monitor.  
   
- For more general information about Data Collector Sets, see [Creating Data Collector Sets](https://technet.microsoft.com/library/cc749337.aspx).  
+ For more general information about Data Collector Sets, see [Creating Data Collector Sets](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc749337(v=ws.11)).  
   
 ### To create a data collection set from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] template  
   

@@ -53,7 +53,7 @@ You create Word layouts by using a Word Document. Word layouts are based on a Wo
 ## See Also  
 [Reports](devenv-reports.md)  
 [Report Object](devenv-report-object.md)  
-[Report Data Type](datatypes/devenv-report-data-type.md)  
+[Report Data Type](./methods-auto/library.md)  
 [Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md)  
 [Creating a Word Layout Report](devenv-howto-report-layout.md)  
-[Request Pages](devenv-request-pages.md)  
+[Request Pages](devenv-request-pages.md)

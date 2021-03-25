@@ -34,5 +34,4 @@ If your app is an add-on app you can choose between the two contact types 'Free'
 ## Customer leads
 
 Provide connection details to the CRM system where you would like us to send customer leads. Read more about configuring customer leads
-[here](https://docs.microsoft.com/azure/marketplace/partner-center-portal/commercial-marketplace-get-customer-leads#connect-to-your-crm-system).
-
+[here](/azure/marketplace/partner-center-portal/commercial-marketplace-get-customer-leads#connect-to-your-crm-system).
