@@ -2,7 +2,7 @@
 title: "The Obsolete Tag must be the same across branches."
 ms.author: solsen
 ms.custom: na
-ms.date: 01/11/2021
+ms.date: 03/08/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AppSourceCop Rule AS0074
-The Obsolete Tag must be the same across branches.  
+The Obsolete Tag must be the same across branches.
 
 ## Description
 The Obsolete Tag must be the same across branches. This rule is only relevant only if the Major.Minor format is set.
