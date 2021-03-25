@@ -32,10 +32,6 @@ Sets the type of text this element or attribute contains.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 
-## Property Value  
-
-**BigText** if you want to display large text ; otherwise, **Text**. The default is **Text**.  
- 
 ## Syntax
 
 ```AL

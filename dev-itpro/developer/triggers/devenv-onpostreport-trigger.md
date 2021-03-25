@@ -51,5 +51,5 @@ Because this trigger is run before the End Write Transaction, you can also give 
 ## See Also
 
 [Triggers](devenv-triggers.md)  
-[Quit Method (Report, XMLport)](../methods-auto/report/report-quit-method.md)  
+[Quit Method (Report, XMLport)](../methods-auto/report/reportinstance-quit-method.md)  
 [Report and Data Item Triggers](devenv-report-and-data-item-triggers.md)

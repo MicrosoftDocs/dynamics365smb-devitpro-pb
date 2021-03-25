@@ -24,11 +24,6 @@ Used to indicate a given query can be made available as views displayed on certa
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Applies to  
-
-- Queries
-- Pages
-
 ## Syntax
 
 ```al

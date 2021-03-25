@@ -29,10 +29,6 @@ Sets which columns (controls) are indented in a list.
 IndentationControls = Field1[, Field2];
 ```
 
-## Applies to  
-  
-- Repeater controls on list page types
-
 ## Remarks  
 
 The **IndentationControls** property lets you choose which columns are indented under a repeater control on a list page.
