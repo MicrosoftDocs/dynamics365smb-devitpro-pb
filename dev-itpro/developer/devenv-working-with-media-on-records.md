@@ -3,7 +3,7 @@ title: "Working With Media on Records"
 ms.author: solsen
 description: Learn how to upload media, such as an image, to the database for displaying with records in the client. 
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 03/25/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
