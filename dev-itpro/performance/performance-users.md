@@ -20,13 +20,14 @@ This section describes how you can work with end-users to improve the performanc
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] supports multiple browsers. Each browser offers a variety of features and capabilities. The browser plays a significant role in the responsiveness and fluidity of the user interface.
 
-- Where possible, avoid older browsers such as Internet Explorer and Edge Legacy. Modern browsers generally offer better performance. See the list of supported and recommended browsers for [Business Central online](https://go.microsoft.com/fwlink/?linkid=2110804) and [Business Central on-premises](https://go.microsoft.com/fwlink/?linkid=2110719).
+- Where possible, avoid older browsers such as Internet Explorer and Edge Legacy. Modern browsers generally offer better performance. See the list of supported and recommended browsers for [Business Central online](/dynamics365/business-central/product-requirements) and [Business Central on-premises](../deployment/system-requirement-business-central-v15.md). 
 
   <!-- If other legacy applications require you to remain on Internet Explorer, consider using [Edge in Internet Explorer mode](https://www.microsoft.com/edge/business). For more information, see [Microsoft Edge documentation](/deployedge/edge-ie-mode).-->
   > [!IMPORTANT] 
   > [!INCLUDE[prod_short](../developer/includes/prod_short.md)] will end support for Internet Explorer and Edge Legacy in April 2021. Consider switching to a modern browser, such as the [new Microsoft Edge](https://www.microsoft.com/edge/), before support ends.
 
-- Always keep your browser updated to the latest version, which may include the latest performance enhancements.
+- Always keep your browser updated to the latest version, which may include the latest performance enhancements. 
+- Be cautious using development versions of browsers as they can have instabilities that are not present in the stable releases.
 - Some [!INCLUDE[prod_short](../developer/includes/prod_short.md)] performance features and optimizations, such as page caching, are only available for modern browsers.
 
 ### Browsers and page caching
@@ -58,11 +59,12 @@ Newer browsers and operating systems are generally better at handling resources 
 
 ## Making pages load faster
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] has numerous mechanisms that make the user interface more responsive and help pages load faster. For example:
- - List pages load records in small batches while the user scrolls through the list, allowing it to scale to very large tables.
- - The overall structure of a page (but not business data) is cached on the client device after a page is accessed the first time.
- - The time taken to load any page is also affected by the number of controls shown on the page. Users can improve performance on complex pages using these methods: 
-   - By *collapsing* secondary content that may be needed only occasionally. For example, when the FactBox pane on a page is collapsed, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] saves time from attempting to process and display all the related facts.
-   - By *hiding* secondary content entirely from the page. For example, hiding Role Center parts or columns that are not used by the user, department, or organization will also improve the time needed to load the page. Learn more about [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user).
+- List pages load records in small batches while the user scrolls through the list, allowing it to scale to very large tables.
+- The overall structure of a page (but not business data) is cached on the client device after a page is accessed the first time.
+- Parts on the Role Center and in the FactBox pane load on-demand. This behavior means that only parts that are currently in view are loaded&mdash; the other parts are loaded only if you scroll to them.
+- The time taken to load any page is also affected by the number of controls shown on the page. Users can improve performance on complex pages using these methods: 
+  - By *collapsing* secondary content that may be needed only occasionally. For example, when the FactBox pane on a page is collapsed, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] saves time from attempting to process and display all the related facts.
+  - By *hiding* secondary content entirely from the page. For example, hiding Role Center parts or columns that are not used by the user, department, or organization will also improve the time needed to load the page. Learn more about [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user).
 
 ## Agility of navigating and entering data
 
@@ -97,4 +99,4 @@ Users experiencing slow search in lists should consider using a column filter in
 [Performance Topics For Developers](performance-developer.md)  
 [Performance Online](performance-online.md)  
 [Performance of On-Premises Installations](performance-onprem.md)  
-[How to Work with a Performance Problem](performance-work-perf-problem.md)  
+[How to Work with a Performance Problem](performance-work-perf-problem.md)

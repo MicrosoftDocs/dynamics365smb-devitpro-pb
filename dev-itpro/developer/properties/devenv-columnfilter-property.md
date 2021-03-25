@@ -2,7 +2,7 @@
 title: "ColumnFilter Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/24/2020
+ms.date: 03/10/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,13 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # ColumnFilter Property
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Sets a filter on the column filter row of a query.
 
 ## Applies to
 -   Query Column
 -   Query Filter
-
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -33,7 +32,7 @@ The filter expression must follow the required syntax. For more information, see
   
 ## Remarks  
 
-In a query, Columns and Filter rows specify fields of the underlying table of the parent DataItem. Columns appear in the resulting dataset, whereas Filter rows do not. You use a ColumnFilter property to apply a condition on a field to limit the records in query’s resulting dataset. The ColumnFilter property resembles the [DataItemTableFilter Property](devenv-dataitemtable-filter-property.md) of the DataItem, but there are differences. The ColumnFilter property has the following behavior:  
+In a query, Columns and Filter rows specify fields of the underlying table of the parent DataItem. Columns appear in the resulting dataset, whereas Filter rows do not. You use a ColumnFilter property to apply a condition on a field to limit the records in query’s resulting dataset. The ColumnFilter property resembles the [DataItemTableFilter Property](./devenv-dataitemtablefilter-property.md) of the DataItem, but there are differences. The ColumnFilter property has the following behavior:  
   
 - Unlike filters that are set by the DataItemTableFilter property, filters that are set by the ColumnFilter property can be overwritten at runtime by calling the [SetFilter Method (Query)](../methods-auto/query/queryinstance-setfilter-method.md) and [SetRange Method (Query)](../methods-auto/query/queryinstance-setrange-method.md) from AL code.  
   
@@ -53,6 +52,11 @@ The following example sets a filter on the ColumnFilter property of the Quantity
 Quantity=Filter(>20&<50);  
 ```  
 
+For a more detailed example, see [Filtering on columns and filter rows in query object](../../developer/devenv-query-filters.md#columns).
+
 ## See Also
 
-[Properties](devenv-properties.md)  
+[Queries in Business Central](../devenv-query-overview.md)  
+[Filtering in Query Objects](../devenv-query-filters.md)  
+[Aggregating Data in Query Objects](../devenv-query-totals-grouping.md)  
+[Properties](devenv-properties.md)

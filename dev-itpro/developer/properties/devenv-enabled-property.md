@@ -2,7 +2,7 @@
 title: "Enabled Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/24/2020
+ms.date: 01/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Enabled Property
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Sets a value that indicates whether a field or key is enabled or disabled, or whether a control can respond to user-generated events.
 
@@ -30,7 +30,6 @@ Sets a value that indicates whether a field or key is enabled or disabled, or wh
 -   Page Action
 -   Page Action Group
 -   Profile
-
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -58,10 +57,10 @@ For controls, the Enabled setting for the container that contains this control o
 On pages, you use the **Enabled** property for group, part, field, and action controls. You can enable or disable the control either statically by setting the property to **true** or **false**, or dynamically by using a Boolean variable or a Boolean field on the page. The Boolean field on the page can be either a true/false Boolean or a Boolean expression, such as “Credit Limit > Sales YTD”.  
 
 > [!NOTE]  
-> You can also use as property value a **Boolean** variable that evaluates to **true** or **false**. To use a variable for the **Visible** property, it must be set as a global page variable and the [InDataSet Property](devenv-indataset-property.md) must be defined on the variable.
+> You can also use as property value a **Boolean** variable that evaluates to **true** or **false**. To use a variable for the **Visible** property, it must be set as a global page variable and the [InDataSet Property](../methods/devenv-indataset-attribute.md) must be defined on the variable.
 
 ## See Also
 
 [Table Properties](devenv-table-properties.md)  
 [Properties](devenv-properties.md)  
-[InDataSet Property](devenv-indataset-property.md)
+[InDataSet Property](../methods/devenv-indataset-attribute.md)

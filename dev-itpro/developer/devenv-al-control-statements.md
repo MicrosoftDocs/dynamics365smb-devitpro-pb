@@ -2,7 +2,7 @@
 title: "AL Control Statements"
 description: "Compound, conditional, and repetitive control statements in AL for Business Central"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 02/16/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -177,7 +177,7 @@ if Amount < 1000 then begin
     else  
         Max := J;  
     Amount := Amount * Max;  
-    end  
+    end;  
 else  
 ...  
 
@@ -195,8 +195,8 @@ case <Expression> of
 
     <Value set n>:  
         <Statement n>;  
-    [else  
-        <Statement n+1>]  
+[else  
+    <Statement n+1>]  
 end;  
 ```  
 
@@ -215,7 +215,7 @@ In most cases, the data type of the value sets are converted to the date type of
 > [!NOTE]  
 > This type conversion can cause an overflow at run time if the resulting data type cannot hold the values of the datasets.  
 
-For more information about Code variables, see [Code Data Type](datatypes/devenv-code-data-type.md).  
+For more information about Code variables, see [Code Data Type](./methods-auto/library.md).  
 
 #### Programming conventions
 
@@ -253,8 +253,8 @@ case Number of
         message('1, 2, or 9.');  
     10..100:  
         message('In the range from 10 to 100.');  
-    else  
-        message('Neither 1, 2, 9, nor in the range from 10 to 100.');  
+else  
+    message('Neither 1, 2, 9, nor in the range from 10 to 100.');  
 end;  
 ```
 
@@ -268,8 +268,8 @@ case MyCode of
         message('This message is not displayed.');   
     'def':  
         message('This message is not displayed.');  
-    else  
-      message('The value set does not match the expression.');
+else  
+    message('The value set does not match the expression.');
 end;
 ```
 
@@ -480,12 +480,15 @@ repeat
 until Customer.next <= 0;  
 message('The Customer table contains %1 records.',Count);  
 ```  
+
 This example requires the following variables.
+
 ```AL
 var
     Count : Integer;
     Customer : Record Customer;  
-```  
+```
+
 The `find` method finds the first entry in the table. Each time NEXT is called, it steps one record forward. When NEXT equals 0, there are no more entries in the table. The loop is exited, and a message displays how many entries were found.  
 
 ### Exit statement  
@@ -527,7 +530,7 @@ break;
  You typically use the break statement in the repeating statements such as for, <!--NAV forEACH, -->while, or repeat to stop an iteration or loop when certain conditions are met.  
 
 > [!NOTE]  
-> The break statement is different than the [Break Method \(Report, XMLport\)](methods/devenv-break-method-report-xmlport.md). Although both stop an iteration or loop, the break method will also terminate the trigger in which it is run.  
+> The break statement is different than the [Break Method \(Report, XMLport\)](./methods-auto/library.md). Although both stop an iteration or loop, the break method will also terminate the trigger in which it is run.  
 
 ## Example  
  The following AL code increases the variable I by one for each iteration, and terminates the iteration when I equals 10.  

@@ -219,7 +219,7 @@ The application database includes the **$ndo$dbproperty** table which stores the
 
 he Get-NavApplication cmdlet comes from the $ndo$dbproperty table in the database.
 
-To increase the application version of the application database, use the [Set-NAVApplication](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.management/set-navapplication) cmdlet to increase the application version number of the database to the version 15.0 application version.
+To increase the application version of the application database, use the [Set-NAVApplication](/powershell/module/microsoft.dynamics.nav.management/set-navapplication) cmdlet to increase the application version number of the database to the version 15.0 application version.
 
     ```
     Set-NAVApplication BC150 -ApplicationVersion 15.0.34737.0 -force

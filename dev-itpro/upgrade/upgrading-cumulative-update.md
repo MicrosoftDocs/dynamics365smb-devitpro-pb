@@ -14,7 +14,6 @@ author: jswymer
 # Installing a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Spring 2019 Cumulative Update
 
 This article describes how to install a cumulative update for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises. A cumulative update is a set of files that include hotfixes and regulatory features released for Business Central.
- 
 
 ## Download the cumulative update package
 
@@ -105,7 +104,7 @@ The APPLICATION folder includes the following files:
 Using [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] for [!INCLUDE[prod_short](../developer/includes/prod_short.md)], complete one of the following tasks.
 
 > [!NOTE]
-> If a license update is required for a regulatory feature, customers can download an updated license from CustomerSource (see [How to Download a Microsoft Dynamics 365 Business Central License from CustomerSource](https://docs.microsoft.com/dynamics/s-e/)), and partners can download their customers' updated license from VOICE (see [How to Download a Microsoft Dynamics 365 Business Central Customer License from VOICE](https://mbs.microsoft.com/partnersource/deployment/documentation/howtoarticles/howtodownloadcustomernavlicense.htm)).
+> If a license update is required for a regulatory feature, customers can download an updated license from CustomerSource (see [How to Download a Microsoft Dynamics 365 Business Central License from CustomerSource](/dynamics/s-e/)), and partners can download their customers' updated license from VOICE (see [How to Download a Microsoft Dynamics 365 Business Central Customer License from VOICE](https://mbs.microsoft.com/partnersource/deployment/documentation/howtoarticles/howtodownloadcustomernavlicense.htm)).
 
 ### Update an unmodified application to the Business Central cumulative update objects
 
@@ -205,4 +204,4 @@ The general steps for this task are listed below. For detailed steps, see [Publi
 [Upgrading to Business Central](upgrading-to-business-central.md)  
 [Synchronizing the Tenant Database and Application Database](../administration/synchronize-tenant-database-and-application-database.md)  
 [Version numbers in Business Central](../administration/version-numbers.md)  
-[Publish and Install an Extension](../developer/devenv-how-publish-and-install-an-extension-v2.md)  
+[Publish and Install an Extension](../developer/devenv-how-publish-and-install-an-extension-v2.md)

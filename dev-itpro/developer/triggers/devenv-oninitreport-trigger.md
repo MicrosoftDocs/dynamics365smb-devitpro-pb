@@ -26,11 +26,14 @@ end;
   
 ## Applies to
 
-- Reports  
+- Report objects
   
 ## Remarks  
 
 This trigger is run before the request page is run and before any table views or filters are set. This trigger performs any processing that is required before the report is run, such as initializing global variables. It can also stop the report.  
+
+> [!NOTE]  
+> This trigger is currently not supported for [Report Extension Object](../devenv-report-ext-example.md).
   
 ## See Also  
 

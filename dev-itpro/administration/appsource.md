@@ -24,7 +24,7 @@ AppSource is a market place where partners can provide marketing details, such a
 ## See Also
 
 [Get Started as a Reseller of Business Central Online](get-started-online.md)  
-[Build Your Business on Dynamics 365 Business Central](../developer/readiness/readiness-welcome.md)  
+[Build Your Business on Dynamics 365 Business Central](../developer/readiness/opportunity-app-publisher.md)  
 [Marketing Validation Checklist](../developer/readiness/readiness-checklist-marketing.md)  
 [Technical Validation Checklist](../developer/devenv-checklist-submission.md)  
-[Embed App Overview](../deployment/embed-app-overview.md)  
+[Embed App Overview](../deployment/embed-app-overview.md)

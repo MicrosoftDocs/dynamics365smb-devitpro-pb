@@ -2,7 +2,7 @@
 title: "RecordRef.Name Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 02/15/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # RecordRef.Name Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Identifies the name of the table
 
@@ -39,11 +39,10 @@ The name of the table.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks  
- This method works the same as the [TableName Method \(Record\)](../../methods/devenv-tablename-method-record.md).  
-  
+
 ## Example  
- The following example opens a table as a RecordRef variable that is named MyRecordRef. You can specify any table number in the [Open Method \(RecordRef\)](recordref-open-method.md). In this example, the table 18 \(Customer\) is open. The Name method retrieves the name of table 18 and stores it in the varTableName variable. The table number and name are displayed in a message box. 
+
+The following example opens a table as a RecordRef variable that is named MyRecordRef. You can specify any table number in the [Open Method \(RecordRef\)](recordref-open-method.md). In this example, the table 18 \(Customer\) is open. The Name method retrieves the name of table 18 and stores it in the varTableName variable. The table number and name are displayed in a message box. 
   
 ```al
 var

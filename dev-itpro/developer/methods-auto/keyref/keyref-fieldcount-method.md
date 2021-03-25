@@ -2,7 +2,7 @@
 title: "KeyRef.FieldCount Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 02/15/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # KeyRef.FieldCount Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Gets the number of fields that have been defined in a key. Returns an error if no key is selected.
 
@@ -41,7 +41,7 @@ The number of fields that have been defined in the key.
 
 ## Example
 
-The following example retrieves the number of fields that are defined in a key in record. The table with ID 18 \(the Customer table\) is open with a reference to table 18. The [KeyIndex Method \(RecordRef\)](../../methods/devenv-keyindex-method-recordref.md) method retrieves the second key in the record and store the *KeyRef* in the varKeyRef variable. The [FieldCount Method \(KeyREF\)](../../methods/devenv-fieldcount-method-keyref.md) is then used to return the number of fields defined in the key and displayed in a message box.
+The following example retrieves the number of fields that are defined in a key in record. The table with ID 18 \(the Customer table\) is open with a reference to table 18. The [KeyIndex Method \(RecordRef\)](../library.md) method retrieves the second key in the record and store the *KeyRef* in the varKeyRef variable. The [FieldCount Method \(KeyREF\)](../library.md) is then used to return the number of fields defined in the key and displayed in a message box.
  
 ```al
 var

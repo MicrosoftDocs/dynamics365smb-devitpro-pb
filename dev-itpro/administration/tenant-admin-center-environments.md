@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: administration, tenant, admin, environment, sandbox
+ms.search.keywords: administration, tenant, admin, environment, sandbox, restore, backup
 ms.date: 01/06/2021
 ms.author: jswymer
 ---
@@ -194,7 +194,7 @@ After restoring an environment, you should inspect and adjust data to prepare it
 - Put all job queues in the restored environment to on hold immediately after restore.
 - If needed, you can upload the per-tenant extensions targeting the next version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] again.
 
-The original environment will remain available and isn't affected by the restore operation. You can then get back to the original environment if you need to look up data. Or maybe you'll have to migrate some data to the restored environment. You can, for example, migrate data by using [!INCLUDE[prod_short](../developer/includes/prod_short.md)] RapidStart services. For more information, see [Migrate Customer Data](https://docs.microsoft.com/dynamics365/business-central/admin-migrate-customer-data).
+The original environment will remain available and isn't affected by the restore operation. You can then get back to the original environment if you need to look up data. Or maybe you'll have to migrate some data to the restored environment. You can, for example, migrate data by using [!INCLUDE[prod_short](../developer/includes/prod_short.md)] RapidStart services. For more information, see [Migrate Customer Data](/dynamics365/business-central/admin-migrate-customer-data).
 
 > [!IMPORTANT]
 > You can restore your production environment into a new production environment even if doing so results in exceeding your number of environments or database capacity quotas. You can however only exceed this quota by one extra production environment, regardless of how many production environments you have available for your subscription. This capability is provided as an exception, to ensure that you can always restore your production environment in critical situations. You must return within your quota within 30 days following the restore by either removing the original production environment or by purchasing an additional production environment. Before removing the environment, we recommend you [export the environment to an Azure storage container](tenant-admin-center-database-export.md) in case you need to access some data at a later point. This exception isn't available for restoring from and to sandbox environments.
@@ -254,6 +254,56 @@ Here are some areas where the environment name is used, which will be affected w
   - CI/CD pipelines for test and deployment could be impacted by environment renames.
 - Azure Application Insights logs and metrics
 
+## Move an environment to another Azure Active Directory organization
+
+In some cases, the Azure AD organization (also known as the Azure AD tenant) of a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] customer changes after they acquire a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment. This situation can occur for various reasons, for example:
+
+- Business entities merge.
+- An acquisition takes place.
+- The customer decides to use one Azure AD tenant in a specific region and stop using Azure AD tenants they created in other regions.
+- The environment was mistakenly created by the reselling partner for the wrong Azure AD tenant.  
+
+In all such cases, the customers want to preserve the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments they created for the original Azure AD tenants, and link them to the new ones instead. Microsoft Support can move an environment from one Azure AD tenant to another, based on a support request.
+
+### Request to move an environment
+
+As a partner, you can submit a support request to Microsoft Support by following the guidance at [Escalating support issues to Microsoft](manage-technical-support.md#escalating-support-issues-to-microsoft). When submitting these support requests, you must provide the following information:
+
+- Proof of your delegated admin rights in both Azure AD tenants
+- Confirmation from the customer that the environment move is authorized by them
+
+You can request to move one or more environments. For Microsoft to do the move, you'll need to provide information about the source and destination Azure AD tenants, such as:
+
+- Environments name, type and country
+- Source tenant ID and domain
+- Destination tenant ID and domain
+- Does the destination tenant have a valid [!INCLUDE[prod_short](../developer/includes/prod_short.md)] subscription?
+- Does the destination tenant have enough available user licenses?
+- Does the destination tenant have enough environment licenses?
+- Does the destination tenant have enough storage available for the environments being migrated?
+
+Once the move is completed, your environments will appear in your new tenant.
+
+### Considerations
+
+- Environment data will remain unchanged during the move operation. The exact same environment will be linked to a specified Azure AD tenant.  
+- The country, Azure region, and type of the environment (production or sandbox) will remain the same, and can't be changed during this operation.
+- The operation will involve a downtime period for the environment being moved (typically not exceeding 2 hours). So the operation needs to be coordinated with the customer and Microsoft Support.
+- [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Support doesn't provide help with moving the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] subscriptions, domains, and other resources between the Azure AD tenants. Your support representative or account manager will assist you in contacting billing to cancel or credit your previous subscription, if needed.
+
+### Before you request your environment to be moved
+
+- If you don't have a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] subscription (paid or trial) in the destination tenant, you'll need to create one. You might need to purchase a new subscription in the destination tenant (or convert a trial to paid), if not already done.
+- Make sure the destination tenant meets the following requirements:
+  - It has at least as many active user licenses as the source tenant.
+  - It has enough [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment add-on licenses to cover the environments being moved
+  - It has at least as much [!INCLUDE[prod_short](../developer/includes/prod_short.md)] storage as the source tenant.
+
+### After the environment has been moved
+
+- Users may have been added to the environment prior to the move operation, while it was still connected to the old Azure AD tenant. If so, these users won't be migrated to the new Azure AD tenant. You'll need to recreate the users on the target tenant if you still want them. You can add multiple user accounts at once [using Excel spreadsheet or other file saved in CSV format](/microsoft-365/enterprise/add-several-users-at-the-same-time). After the users are created on the target Azure AD tenant, assign them the required roles or licenses and [import these users into the moved environment](/dynamics365/business-central/ui-how-users-permissions).
+- You might need to reconfigure some add-ins, external applications, and settings after the tenant-to-tenant migration. Some examples include the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Outlook add-in, Excel add-in, Power BI, Power Apps, Power Automate connectors, Dataverse, and more.
+
 ## <a name="opslog"></a>Log of administrative operations
 
 The **Operations** section of [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] provides a log of operations that internal administrators and delegated administrators from the partner have made in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] or through the admin center API. Currently, the log includes the following operations: renaming environments restoring environments.
@@ -268,4 +318,4 @@ Use this log to see which operations were created and when. You can also access 
 [Managing Apps](tenant-admin-center-manage-apps.md)  
 [Updating Environments](tenant-admin-center-update-management.md)  
 [Managing Tenant Notifications](tenant-admin-center-notifications.md)  
-[Introduction to automation APIs](itpro-introduction-to-automation-apis.md)  
+[Introduction to automation APIs](itpro-introduction-to-automation-apis.md)
