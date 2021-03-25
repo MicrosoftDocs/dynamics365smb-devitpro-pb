@@ -104,7 +104,7 @@ To create an application database, complete the following steps:
 
 6. If you have a single-tenant deployment, you can now synchronize the tenant. For a multitenant deployment, go to the next section. 
 
-    Run the [Sync-NAVTenant](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.management/sync-navtenant) cmdlet to synchronize the tenant. For example:
+    Run the [Sync-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/sync-navtenant) cmdlet to synchronize the tenant. For example:
 
     ```powershell
     Sync-NAVTenant -ServerInstance BC160
@@ -173,4 +173,4 @@ Complete the following steps to get the application up and running on your tenan
 
 [Changing Collation of Existing Database](../cside/cside-change-database-collation.md)  
 [Multitenant Deployment Architecture in Business Central](Multitenant-Deployment-Architecture.md)  
-[Creating and Altering [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Databases (Spring 2019 and earlier)](../cside/cside-create-databases.md)  
+[Creating and Altering [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Databases (Spring 2019 and earlier)](../cside/cside-create-databases.md)

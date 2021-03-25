@@ -2,7 +2,7 @@
 title: "FieldRef.Class Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 02/15/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # FieldRef.Class Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Gets the value of the FieldClass Property of the field that is currently selected. This method returns an error if no field is selected.
 
@@ -43,7 +43,7 @@ An instance of the [FieldRef](fieldref-data-type.md) data type.
 
 The FieldRef refers to the field that you are interested in.  
   
-The Class method returns the class as an Option. However, you cannot assign the class to an Option variable directly. Instead, you must use the [Evaluate Method](../../methods/devenv-evaluate-method.md). The Evaluate method has a variable parameter to which the value is assigned and a string parameter. You use the forMAT method to convert the result of the FieldRef.Class method to Text, and then use the Evaluate method to convert the Text to an Option.  
+The Class method returns the class as an Option. However, you cannot assign the class to an Option variable directly. Instead, you must use the [Evaluate Method](../system/system-evaluate-method.md). The Evaluate method has a variable parameter to which the value is assigned and a string parameter. You use the Format method to convert the result of the FieldRef.Class method to Text, and then use the Evaluate method to convert the Text to an Option.  
   
 ## Example 1
 

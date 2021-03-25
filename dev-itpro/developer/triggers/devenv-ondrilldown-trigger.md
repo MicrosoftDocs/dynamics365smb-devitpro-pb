@@ -43,4 +43,4 @@ This trigger overrides the [DrillDownPageID Property](../properties/devenv-drill
 [Triggers](devenv-triggers.md)  
 [DrillDownPageID Property](../properties/devenv-drilldownpageid-property.md)  
 [Page and Action Triggers](devenv-page-and-action-triggers.md)  
-[Page Properties](../properties/devenv-page-properties.md)  
+[Page Properties](../properties/devenv-properties.md)

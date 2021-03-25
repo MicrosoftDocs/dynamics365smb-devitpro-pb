@@ -64,9 +64,9 @@ To configure the **Diagnostic Trace Level** setting, you can use the [!INCLUDE[a
     ```
     Substitute `MyServerInstance` with the name of the [!INCLUDE[server](../developer/includes/server.md)] instance and `level` with either `Critical`, `Error`, `Warning`, `Normal`, `Verbose`, or `Off`.
     
-For more information about how to use the [!INCLUDE[adminshell](../developer/includes/adminshell.md)], see [Business Central PowerShell Cmdlets](/powershell/business-central/overview) and [Set-NAVServerConfiguration Cmdlet](https://go.microsoft.com/fwlink/?linkid=401394).
+For more information about how to use the [!INCLUDE[adminshell](../developer/includes/adminshell.md)], see [Business Central PowerShell Cmdlets](/powershell/business-central/overview) and [Set-NAVServerConfiguration Cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration).
 
 ## See Also  
  [Monitoring Business Central Server Events Using Event Viewer](monitor-server-events-windows-event-log.md)   
  [Monitoring Business Central Server Events](monitor-server-events.md)   
- [Configuring Business Central Server](configure-server-instance.md#General)  
+ [Configuring Business Central Server](configure-server-instance.md#General)

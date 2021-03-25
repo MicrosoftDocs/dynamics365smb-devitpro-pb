@@ -2,7 +2,7 @@
 title: "CardPageId Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/24/2020
+ms.date: 01/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,13 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # CardPageId Property
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Sets the card page that is associated with items in the current list page.
 
 ## Applies to
 -   Page
 -   Request Page
-
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -36,6 +35,6 @@ CardPageID = "Customer Card";
  
  
 ## See Also  
-[PagePartID Property](devenv-pagepartid-property.md)   
-[ChartPartID Property](devenv-chartpartid-property.md)   
-[SystemPartID Property](devenv-systempartid-property.md)
+[PagePartID Property](./devenv-properties.md)   
+[ChartPartID Property](./devenv-properties.md)   
+[SystemPartID Property](./devenv-properties.md)

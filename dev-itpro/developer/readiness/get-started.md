@@ -75,7 +75,7 @@ After your Regional Operational Center has processed your Agreements and Object 
 
 ### Register your unique prefix or suffix
 
-In your extension, the name of each new application object must contain [a prefix or suffix](/dynamics365/business-central/dev-itpro/compliance/apptest-prefix-suffix). This rule applies to all objects. Email [d365val@microsoft.com](mailto:d365val@microsoft.com) with a prioritized list of three-letter affixes of your choice. You must also submit your MPN ID and the publisher name that you will use for the app.
+In your extension, the name of each new application object must contain [a prefix or suffix](../../compliance/apptest-prefix-suffix.md). This rule applies to all objects. Email [d365val@microsoft.com](mailto:d365val@microsoft.com) with a prioritized list of three-letter affixes of your choice. You must also submit your MPN ID and the publisher name that you will use for the app.
 
 ## Step 4: Getting access to preview bits
 
@@ -138,7 +138,7 @@ Find below some guiding resources on how to develop your apps for [!INCLUDE [pro
 
 - Microsoft Docs
 
-    Find [The developer and administration content on Microsoft Docs](/dynamics365/business-central/dev-itpro/)
+    Find [The developer and administration content on Microsoft Docs](../../index.md)
 
 - Join the conversation
 
@@ -162,7 +162,7 @@ Talk to one of the [ISV Development Centers](https://partner.microsoft.com/isv-r
 
 Once your app is ready for submission, you can list your app in the Microsoft commercial marketplace by submitting it in [Partner Center](https://partner.microsoft.com/dashboard/commercial-marketplace/overview). For more information, see [Create a Dynamics 365 Business Central offer](/azure/marketplace/partner-center-portal/create-new-business-central-offer).
 
-Before you submit, we recommend that you review the [technical validation checklist](/dynamics365/business-central/dev-itpro/developer/devenv-checklist-submission) and [marketing validation checklist](/dynamics365/business-central/dev-itpro/developer/readiness/readiness-checklist-marketing). The two articles list all requirements that you **must meet before you submit** an app for validation. If you do not meet these mandatory requirements, your extension will fail validation
+Before you submit, we recommend that you review the [technical validation checklist](../devenv-checklist-submission.md) and [marketing validation checklist](./readiness-checklist-marketing.md). The two articles list all requirements that you **must meet before you submit** an app for validation. If you do not meet these mandatory requirements, your extension will fail validation
 
 ## See also
 
@@ -170,4 +170,4 @@ Before you submit, we recommend that you review the [technical validation checkl
 [The Lifecycle of Apps and Extensions for [!INCLUDE [prod_short](../includes/prod_short.md)]](../devenv-app-life-cycle.md)  
 [Update Lifecycle for AppSource Apps FAQ](../devenv-update-app-life-cycle-faq.md)  
 [Maintain AppSource Apps and Per-Tenant Extensions in [!INCLUDE [prod_short](../includes/prod_short.md)] Online](../app-maintain.md)  
-[Microsoft Responsibilities for Apps on [!INCLUDE [prod_short](../includes/prod_short.md)] online](../../deployment/microsoft-responsibilities.md)  
+[Microsoft Responsibilities for Apps on [!INCLUDE [prod_short](../includes/prod_short.md)] online](../../deployment/microsoft-responsibilities.md)

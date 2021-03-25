@@ -42,7 +42,7 @@ Connect your existing online service with Business Central through a powerful AP
 
 - [Scaptify](https://appsource.microsoft.com/product/dynamics-365-business-central/PUBID.scapta%7CAID.50395b48-f7b6-4445-96df-6faaa8c96deb%7CPAPPID.96da1317-c2e8-42ec-aa19-216e33d0da19?tab=Overview), which connects your Shopify store with Business Central  
 
-Learn more about the API to build connect apps: [Getting Started Developing Connect Apps](/dynamics365/business-central/dev-itpro/developer/devenv-develop-connect-apps)  
+Learn more about the API to build connect apps: [Getting Started Developing Connect Apps](../devenv-develop-connect-apps.md)  
 
 ### Extend
 
@@ -60,7 +60,7 @@ Here are a few examples of some apps that extend Business Central:
 
 - [SwissSalary 365](https://appsource.microsoft.com/product/dynamics-365-business-central/PUBID.swisssalary%7CAID.swisssalary%7CPAPPID.ca3d5715-ac87-48ff-ace2-fc1605e50a69), which is a certified and flexible payroll app that's intuitive and easy to use for the Swiss market
 
-Learn more on how to build your app: [Getting Started with AL](/dynamics365/business-central/dev-itpro/developer/devenv-get-started)
+Learn more on how to build your app: [Getting Started with AL](../devenv-get-started.md)
 
 ### Embed
 
@@ -74,7 +74,7 @@ Embed Business Central as an integral component in an end-to-end industry soluti
 
 <!--- Progressus,-->
 
-Learn more about embed apps: [Embed app overview](/dynamics365/business-central/dev-itpro/deployment/embed-app-overview)
+Learn more about embed apps: [Embed app overview](../../deployment/embed-app-overview.md)
 
 ## Consultancy services
 
@@ -92,4 +92,4 @@ Learn more about [Consultancy Services](https://appsource.microsoft.com/partners
 
 ## See also
 
-[Get Started with Building Apps](get-started.md)  
+[Get Started with Building Apps](get-started.md)

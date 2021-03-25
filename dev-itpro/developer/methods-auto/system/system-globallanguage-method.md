@@ -2,7 +2,7 @@
 title: "System.GlobalLanguage Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 02/15/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # System.GlobalLanguage Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Gets and sets the current global language setting.
 
@@ -46,7 +46,7 @@ The Microsoft language ID (LCID).
 ## Remarks  
  The LanguageID is a standard Windows language ID. The Windows Language virtual table contains a list of these IDs and the corresponding names and short names.  
   
- For more information, see [Multilanguage Development](../../devenv-multilanguage-development.md). 
+ For more information, see [Multilanguage Development](/dynamics365/business-central/dev-itpro/developer/methods-auto/system/devenv-work-with-translation-files). 
  
 ## See Also
 [System Data Type](system-data-type.md)  

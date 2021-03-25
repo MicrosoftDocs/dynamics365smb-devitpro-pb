@@ -2,7 +2,7 @@
 title: "KeyRef.Record Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 02/15/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # KeyRef.Record Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Returns a RecordRef for the current record referred to by the key.
 
@@ -38,7 +38,7 @@ The RecordRef of the record that is currently selected referenced by the key. If
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
   
- The table with ID 18 \(the Customer table\) is open with a reference. The [KeyRef Data Type](../../datatypes/devenv-keyref-data-type.md) for the record is retrieved by using the [KeyIndex Method \(RecordRef\)](../../methods/devenv-keyindex-method-recordref.md). The method retrieves the key that has an index of 1 in the record and stores the value in the varKeyRef variable. The varKeyRef variable is then used to return the [RecordRef Data Type](../../datatypes/devenv-recordref-data-type.md).
+ The table with ID 18 \(the Customer table\) is open with a reference. The [KeyRef Data Type](../library.md) for the record is retrieved by using the [KeyIndex Method \(RecordRef\)](../library.md). The method retrieves the key that has an index of 1 in the record and stores the value in the varKeyRef variable. The varKeyRef variable is then used to return the [RecordRef Data Type](../library.md).
 
 ```  
 var

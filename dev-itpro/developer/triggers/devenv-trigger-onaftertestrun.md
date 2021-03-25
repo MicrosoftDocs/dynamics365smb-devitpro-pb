@@ -78,7 +78,7 @@ A test runner codeunit manages the execution of test codeunits that are run from
 The **OnAfterTestRun** trigger suppresses the automatic display of the results message after the test codeunit runs.
 
 > [!NOTE]  
-> To return the error message for a failed test  run, use the [GETLASTERRORTEXT Method](../methods/devenv-getlasterrortext-method.md).  
+> To return the error message for a failed test  run, use the [GetLastErrorText Method](../methods-auto/debugger/debugger-getlasterrortext-method.md).  
   
 You can use the **OnAfterTestRun** trigger to perform post-processing, such as logging, or to automate tests by integrating the test runner codeunit with a test management framework.
 

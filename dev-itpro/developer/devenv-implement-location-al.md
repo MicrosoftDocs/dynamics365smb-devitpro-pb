@@ -129,8 +129,8 @@ For information about troubleshooting access to location information, see [Troub
  [LocationOptions Overview](devenv-location-options.md)   
  [Troubleshooting: Camera and Location](/dynamics365/business-central/ui-troubleshooting-camera-location)  
  [Implementing the Camera in AL](devenv-implement-camera-al.md)    
- [RunOnClient property](properties/devenv-runonclient-property.md)  
- [WithEvents property](properties/devenv-withevents-property.md)  
+ [RunOnClient property](./properties/devenv-properties.md)  
+ [WithEvents property](./properties/devenv-properties.md)  
  <!--
  [Developing for the Business Central Mobile App](devenv-developing-for-the-business-central-mobile-app.md)   
  [Differences and Limitations When Developing Pages for the Business Central Mobile App](devenv-differences-and-limitations-developing-pages-business-central-mobile-app.md)-->

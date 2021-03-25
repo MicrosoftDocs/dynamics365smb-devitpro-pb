@@ -2,7 +2,7 @@
 title: "DrillDown Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/24/2020
+ms.date: 01/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,13 +14,12 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # DrillDown Property
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Sets a drill-down for a field on a page.
 
 ## Applies to
 -   Page Field
-
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -41,4 +40,4 @@ Drill-downs are a system-wide feature of [FlowFields](../devenv-flowfields.md) t
 ## See Also  
 
 [Pages Overview](../devenv-pages-overview.md)   
-[Page Properties](devenv-page-properties.md)   
+[Page Properties](./devenv-properties.md)
