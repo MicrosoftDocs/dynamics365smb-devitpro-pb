@@ -1,6 +1,7 @@
 ---
 title: "Working With Media on Records"
 ms.author: solsen
+description: Learn how to upload media, such as an image, to the database for displaying with records in the client. 
 ms.custom: na
 ms.date: 10/01/2020
 ms.reviewer: na
@@ -11,7 +12,7 @@ author: SusanneWindfeldPedersen
 ---
 
 # Working With Media on Records
-This topic describes how you can upload media, such as an image, to the database for displaying with records in the client. There are two ways that you can do this:  
+This article describes how you can upload media, such as an image, to the database for displaying with records in the client. There are two ways that you can do this:  
 
 - Use a BLOB data type  
 
