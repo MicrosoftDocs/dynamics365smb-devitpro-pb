@@ -1,5 +1,5 @@
 ---
-title: Upgrading PTE that conflicts with another extension
+title: Upgrading Per-Tenant Extensions that conflicts with other extensions
 description: This article describes how to upgrade a Per-Tenant Extension that contains table or a table field that conflicts with another extension in Dynamics 365 Business Central.
 ms.custom: na
 ms.date: 03/25/2021
@@ -12,11 +12,10 @@ ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 
-# Upgrading PTE That Conflicts with Another Extension
+# Upgrading Per-Tenant Extensions that Conflicts with Other Extensions
 
-In this article, you will learn how to upgrade an extension which declares a table or a field which conflicts with a table or a field declared by another extension.
+In AL, all top-level objects are declared in the same global namespace. The extensions installed in an environment cannot have the same top-level object declared multiple times or controls/fields/dataitems with the same name defined multiple times in the same logical object i.e. a table extension cannot add a field with the same name as a field in the extended table. This topic shows how to upgrade an extension which declares a table or a field that conflicts with a table or a field declared by another extension.
 
-In AL, all top-level objects are declared in the same global namespace. The extensions installed in an environment cannot have the same top-level object declared multiple times or controls/fields/dataitems with the same name defined multiple times in the same logical object i.e. a table extension cannot add a field with the same name as a field in the extended table.
 
 ## Example
 
