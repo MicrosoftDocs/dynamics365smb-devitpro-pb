@@ -149,7 +149,7 @@ The following table shows the product version requirements for integrating Busin
 
 <sup>1</sup>Effective April 2022, Office365 (legacy) authentication will no longer be supported for Dataverse/Dynamics 365 Sales environments on existing tenants. For more information, see [Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps](/power-platform/important-changes-coming#deprecation-of-office365-authentication-type-and-organizationserviceproxy-class-for-connecting-to-dataverse).
 
-<sup>2</sup> Requires the registration of a third party application in Azure AD. For more information, see [To register an application in Azure AD for connecting from Business Central to Dataverse](/dynamics365/business-central/admin-how-to-set-up-a-dynamics-crm-connection#to-register-an-application-in-azure-ad-for-connecting-from-business-central-to-dataverse).
+<sup>2</sup> AD, IFD, and OAuth types are supported with on-premises version of Dynamics 365 Sales. OAuth and Office 365 (legacy – basic) and Office 365 (modern – MFA) authentication are supported for online versions of Dynamics 365 Sales. For more information about authentication types, see [Connection strings in XRM tooling to connect to Dynamics 365](https://msdn.microsoft.com/library/mt608573.aspx).
 <!--
 ###  <a name="CRM"></a> Microsoft Dynamics 365 for Sales Integration Requirements  
  The following table shows the product version requirements for integrating [!INCLUDE[prod_short](../developer/includes/prod_short.md)] with [!INCLUDE[crm](../developer/includes/crm_md.md)], and the versions in which users can view the availability of items in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] from [!INCLUDE[crm](../developer/includes/crm_md.md)].  -->
