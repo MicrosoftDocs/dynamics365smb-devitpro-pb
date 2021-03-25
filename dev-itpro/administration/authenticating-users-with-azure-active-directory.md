@@ -71,7 +71,7 @@ If you have a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-pre
 
 4. After you've created the Azure AD tenant, add users.
 
-    For more information, see [Quickstart: Add new users to Azure Active Directory](https://go.microsoft.com/fwlink/?LinkId=317435). Later, you'll have to map the users in Azure AD to your users in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
+    For more information, see [Quickstart: Add new users to Azure Active Directory](/azure/active-directory/fundamentals/add-users-azure-active-directory). Later, you'll have to map the users in Azure AD to your users in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 ### Set the access token lifetime
 
@@ -566,4 +566,4 @@ When you mount a tenant, you can give the tenant an additional ID by setting the
 
 [Authentication and Credential Types](Users-Credential-Types.md)  
 [Troubleshooting: SAML2 token errors with Azure Active Directory/Office 365 Authentication](troubleshooting-SAML2-token-not-valid-because-validity-period-ended.md)  
-[Migrating to Multitenancy](../deployment/migrating-to-multitenancy.md) 
+[Migrating to Multitenancy](../deployment/migrating-to-multitenancy.md)

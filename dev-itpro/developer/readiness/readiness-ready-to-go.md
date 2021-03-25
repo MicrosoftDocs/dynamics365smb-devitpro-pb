@@ -20,25 +20,25 @@ ms.author: solsen
 Find the overall roadmap for Business Central [here](https://dynamics.microsoft.com/roadmap/business-central/) 
 
 **What’s new in Business Central**  
-Find what’s new and planned [here](https://docs.microsoft.com/dynamics365/business-central/product-news)
+Find what’s new and planned [here](/dynamics365/business-central/product-news)
 
 **Release plan landing page**  
-Find out what's new in Microsoft Dynamics 365 applications and Microsoft Power Platform [here](https://docs.microsoft.com/dynamics365/release-plans/) 
+Find out what's new in Microsoft Dynamics 365 applications and Microsoft Power Platform [here](/dynamics365/release-plans/) 
 
 **Minor updates**  
-Find the latest minor update here: [aka.ms/BCLastMinorUpdate](https://aka.ms/bclastminorupdate) 
+Find the latest minor update here: [aka.ms/BCLastMinorUpdate](../../whatsnew/whatsnew-update-17-5.md) 
 
 
 ## Country availability and supported languages 
 **Supported countries, regions and languages**  
-Find the countries/regions where Business Central is available and which languages are supported: [aka.ms/BCCountries](https://aka.ms/bccountries)
+Find the countries/regions where Business Central is available and which languages are supported: [aka.ms/BCCountries](../../compliance/apptest-countries-and-translations.md)
 
 ## Training and coaching 
 **ISV Development Centers**  
 Online or in-person coaching for Business Central. Get in touch with an ISV Development Center [here](https://partner.microsoft.com/isv-resource-hub/development-centers/find-a-center)  
 
 **Microsoft Learn page**  
-Browse all Business Central training videos and courses on Microsoft Learn: [aka.ms/BCLearn](https://aka.ms/BCLearn)
+Browse all Business Central training videos and courses on Microsoft Learn: [aka.ms/BCLearn](/learn/dynamics365/business-central?WT.mc_id=dyn365bc_landingpage-comms)
 
 ## Events
 
@@ -99,5 +99,5 @@ The Dynamics 365 blog for Business Decision Makers: [cloudblogs.microsoft.com/
 
 ### See Also
 
-Get started with developing apps: [aka.ms/BCPublisher](https://aka.ms/bcpublisher)  
-Get started with reselling apps: [aka.ms/BCReseller](https://aka.ms/bcreseller)  
+Get started with developing apps: [aka.ms/BCPublisher](./get-started.md)  
+Get started with reselling apps: [aka.ms/BCReseller](../../administration/get-started-online.md)

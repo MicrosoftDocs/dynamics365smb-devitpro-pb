@@ -15,7 +15,7 @@ author: SusanneWindfeldPedersen
 With an AL extension you can override the default help link for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] and re-direct users pressing the Help button to another website. This also enables translating help for base app objects.
 
 > [!NOTE]  
-> This feature is not available for per-tenant extensions, and any usage will be caught by the [PerTenantExtensionCop Analyzer](devenv-codeanalyzer-pertenantextensioncop-rules.md).
+> This feature is not available for per-tenant extensions, and any usage will be caught by the [PerTenantExtensionCop Analyzer](./analyzers/pertenantextensioncop.md).
 
 ## Help properties
 In the `app.json` file, two properties control the help URL and the supported locale of the help. For help on manifest files, see [JSON Files](devenv-json-files.md).
@@ -30,4 +30,4 @@ The `supportedLocales` property is used to specify the list of locales that are 
 
 ## See Also
 [Working with Translation files](devenv-work-with-translation-files.md)  
-[Adding Help Links from Pages, Reports, and XMLports](devenv-adding-help-links-from-pages-tables-xmlports.md)  
+[Adding Help Links from Pages, Reports, and XMLports](devenv-adding-help-links-from-pages-tables-xmlports.md)

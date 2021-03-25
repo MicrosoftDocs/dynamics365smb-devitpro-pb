@@ -2,7 +2,7 @@
 title: "Query.SetRange Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 02/15/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Query.SetRange Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Sets a filter on a range of values on a column of a query data set.
 
@@ -66,7 +66,7 @@ Query.SetRange(Column1, FromValue, ToValue);
 Query.Read;  
 ```  
   
- In addition to the **SetRange** method, you can apply filters to a query using the **SetFilter** method and the [DataItemTableFilter Property](../../properties/devenv-dataitemtable-filter-property.md) and [ColumnFilter Property](../../properties/devenv-columnfilter-property.md).  
+ In addition to the **SetRange** method, you can apply filters to a query using the **SetFilter** method and the [DataItemTableFilter Property](/dynamics365/business-central/dev-itpro/developer/methods-auto/query/devenv-dataitemtablefilter-property) and [ColumnFilter Property](../../properties/devenv-columnfilter-property.md).  
   
 |If the **SetRange** method...|then...|  
 |-------------------------------------|-------------|  
