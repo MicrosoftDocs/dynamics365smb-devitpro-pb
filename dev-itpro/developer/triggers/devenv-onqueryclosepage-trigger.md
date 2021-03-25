@@ -62,6 +62,5 @@ You can use this trigger to write to the database.
 
 [OnClosePage Trigger](devenv-onclosepage-trigger.md)  
 [Page and Action Triggers](devenv-page-and-action-triggers.md)  
-[Page Properties](../properties/devenv-page-properties.md)  
-[Triggers](devenv-triggers.md)  
-
+[Page Properties](../properties/devenv-properties.md)  
+[Triggers](devenv-triggers.md)

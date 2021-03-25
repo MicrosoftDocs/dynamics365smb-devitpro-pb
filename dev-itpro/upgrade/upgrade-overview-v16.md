@@ -75,15 +75,15 @@ To take advantage of these features, you'll have to do an application code upgra
 
 Before you upgrade, review the following articles to get an overview of features deprecated in this release:
 
-- [Deprecated Tables](/dynamics365/business-central/dev-itpro/upgrade/deprecated-tables)
+- [Deprecated Tables](./deprecated-tables.md)
 
-- [Deprecated Features in W1](/dynamics365/business-central/dev-itpro/upgrade/deprecated-features-w1)
+- [Deprecated Features in W1](./deprecated-features-w1.md)
 
   From this article, use the links in the table of content to view deprecated features specific to local versions
 
 ## Migrating from on-premises to online
 
-For information about migrating an on-premises solution to online, see [Migrate to Business Central Online from Business Central On-premises](/dynamics365/business-central/dev-itpro/administration/migrate-business-central-on-premises).
+For information about migrating an on-premises solution to online, see [Migrate to Business Central Online from Business Central On-premises](../administration/migrate-business-central-on-premises.md).
 
 
   
@@ -91,4 +91,4 @@ For information about migrating an on-premises solution to online, see [Migrate 
  
 [Upgrading to Business Central](upgrading-to-business-central.md)  
 [Upgrading Extensions](../developer/devenv-upgrading-extensions.md)  
-[[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md)  
+[[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md)

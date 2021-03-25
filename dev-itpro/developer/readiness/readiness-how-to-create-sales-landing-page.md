@@ -162,7 +162,7 @@ Include at least one customer testimonial video on your app landing page.
 
 Include one product demonstration video.
 
-- See the video best practices [https://aka.ms/ReadyToGo](https://aka.ms/ReadyToGo).
+- See the video best practices [https://aka.ms/ReadyToGo](./readiness-ready-to-go.md).
 
 ## Elements that reduce anxiety and risk, while increasing trust
 

@@ -2,7 +2,7 @@
 title: "RequestFilterHeading Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/24/2020
+ms.date: 01/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,13 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # RequestFilterHeading Property
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Sets a caption for the request page tab that is related to this data item. The value is taken from the RequestFilterHeadingML Property if this property is set.
 
 ## Applies to
 -   Xml Port Table Element
 -   Report Data Item
-
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -42,7 +41,7 @@ Sets the maximum length of the specific RequestFilterHeading.
 
 ## Property Value  
 
-Any valid string. If [RequestFilterHeadingML Property](devenv-requestfilterheadingml-property.md) is set, then the value for the selected language is used. If [RequestFilterHeadingML Property](devenv-requestfilterheadingml-property.md) is not set, then the default is the name of the table that is the specified in the [DataItemTable Property](devenv-dataitemtable-property.md) in a report or in the [SourceTable (XMLports) Property](devenv-sourcetable-XMLports-property.md) in an XMLport. 
+Any valid string. If [RequestFilterHeadingML Property](devenv-requestfilterheadingml-property.md) is set, then the value for the selected language is used. If [RequestFilterHeadingML Property](devenv-requestfilterheadingml-property.md) is not set, then the default is the name of the table that is the specified in the [DataItemTable Property](./devenv-properties.md) in a report or in the [SourceTable (XMLports) Property](./devenv-properties.md) in an XMLport. 
 
 ## Syntax
 
@@ -53,4 +52,4 @@ RequestFilterHeading = 'Entry';
 ## See Also
 
 [Request Pages](../devenv-request-pages.md)  
-[Multilanguage Development](../devenv-multilanguage-development.md)
+[Multilanguage Development](/dynamics365/business-central/dev-itpro/developer/properties/devenv-work-with-translation-files)

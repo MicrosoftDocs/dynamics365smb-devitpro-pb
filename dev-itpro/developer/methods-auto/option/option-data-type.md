@@ -2,7 +2,7 @@
 title: "Option Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 01/12/2020
+ms.date: 02/15/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Option Data Type
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Denotes an option value. In the code snippet below, you can see how the Option data type is declared.
 
@@ -41,7 +41,7 @@ procedure HelloWithOptions(OptionParameter : Option Alpha, "Bra-vo")
   
 ## Remarks
 
-In the [OptionString Property](../../properties/devenv-optionstring-property.md) of the field or variable, you can enter the option values as a comma-separated list. The Option type is a zero-based enumerator type, which means that the option values are assigned to sequential numbers, starting with 0. You can convert option data types to integers.  
+In the [OptionString Property](../../properties/devenv-optionmembers-field-property.md) of the field or variable, you can enter the option values as a comma-separated list. The Option type is a zero-based enumerator type, which means that the option values are assigned to sequential numbers, starting with 0. You can convert option data types to integers.  
  <!-- 
  For more information about option variables in multilanguage-enabled applications, see [Developing Multilanguage-Enabled Applications](../../dynamics-nav/Developing-Multilanguage-Enabled-Applications.md).  
  --> 
@@ -70,4 +70,4 @@ PurchHeaderRec."Document Type" := PurchHeaderRec."Document Type"::Invoice;
 ## See Also
 
 [Getting Started with AL](../../devenv-get-started.md)  
-[Developing Extensions](../../devenv-dev-overview.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

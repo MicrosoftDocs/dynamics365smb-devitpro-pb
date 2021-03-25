@@ -24,5 +24,5 @@ The following sections describe the triggers that are available for the differen
 - [Query Triggers](devenv-query-triggers.md)  
 
 ## See Also  
-[AL Method Reference](../methods/devenv-al-method-reference.md)  
-[Properties](../properties/devenv-properties.md)  
+[AL Method Reference](../methods-auto/library.md)  
+[Properties](../properties/devenv-properties.md)

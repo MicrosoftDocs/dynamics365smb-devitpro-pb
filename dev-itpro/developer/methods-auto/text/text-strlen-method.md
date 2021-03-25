@@ -2,7 +2,7 @@
 title: "Text.StrLen Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 02/15/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Text.StrLen Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Gets the length of a string you define.
 
@@ -40,7 +40,7 @@ The length of the string.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- The difference between the StrLen method and the [MaxStrLen Method \(Code, Text\)](../../methods/devenv-maxstrlen-method-code-text.md) is that the StrLen returns the actual number of characters in the input string, whereas MaxStrLen returns the maximum defined length of the input string.  
+ The difference between the StrLen method and the [MaxStrLen Method \(Code, Text\)](../text/text-maxstrlen-string-method.md) is that the StrLen returns the actual number of characters in the input string, whereas MaxStrLen returns the maximum defined length of the input string.  
   
  In [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)], if you call StrLen on a Variant, then you get an error that the contents of the parameter are not valid. In earlier versions of [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)], if you call StrLen on a Variant, then 0 is returned.  
   

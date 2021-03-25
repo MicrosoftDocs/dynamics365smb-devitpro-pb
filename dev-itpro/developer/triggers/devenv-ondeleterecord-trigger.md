@@ -42,4 +42,4 @@ The action is canceled but the page is not closed if an error occurs in the trig
 
 [Triggers](devenv-triggers.md)  
 [Page and Action Triggers](devenv-page-and-action-triggers.md)  
-[Page Properties](../properties/devenv-page-properties.md)  
+[Page Properties](../properties/devenv-properties.md)

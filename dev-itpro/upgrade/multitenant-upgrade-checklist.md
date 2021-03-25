@@ -39,7 +39,7 @@ This article provides an overview of the full upgrade process for Business Centr
 
 |Step|More info| Done |
 |----|-----------|--|
-|Backup the tenant database.|[See...](https://go.microsoft.com/fwlink/?LinkID=296465)||
+|Backup the tenant database.|[See...](/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server)||
 |Uninstall all V1 extensions.|[See...](/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp)||
 |Dismount the tenant from the old server instance.|[See...](/powershell/module/microsoft.dynamics.nav.management/dismount-navtenant)||
 

@@ -46,4 +46,4 @@ If an error occurs in the trigger code, the action is canceled, but the page is 
 
 [Triggers](devenv-triggers.md)  
 [Page and Action Triggers](devenv-page-and-action-triggers.md)  
-[Page Properties](../properties/devenv-page-properties.md)   
+[Page Properties](../properties/devenv-properties.md)

@@ -2,7 +2,7 @@
 title: "SqlJoinType Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/24/2020
+ms.date: 03/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # SqlJoinType Property
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Sets the data item link type between data items in a query to determine the records that are included in the resulting data set.
 
@@ -51,4 +51,4 @@ For more information, see [Linking and Joining Data Items to Define the Query Da
 ## See Also
 
 [Query Object](../devenv-query-object.md)  
-[Properties](devenv-properties.md)  
+[Properties](devenv-properties.md)
