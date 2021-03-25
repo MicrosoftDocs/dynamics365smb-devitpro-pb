@@ -53,4 +53,4 @@ profile MyProfile
 
 [Table Properties](devenv-table-properties.md)  
 [Properties](devenv-properties.md)  
-[InDataSet Property](devenv-indataset-property.md)
+[InDataSet Property](../methods/devenv-indataset-attribute.md)

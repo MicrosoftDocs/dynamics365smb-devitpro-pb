@@ -34,8 +34,8 @@ These features are only optional for a while. The option period typically starts
 > [!div class="mx-imgBorder"]
 > ![Example timeline for an optional feature](../media/timeline-optional-features.png "An example timeline for an optional feature in the Feature Management page")
 
-Learn about [What's new and planned](https://aka.ms/dynamics365releaseplan).  
-Learn about [new features available in the last minor update](https://aka.ms/bclastminorupdate).  
+Learn about [What's new and planned](/dynamics365-release-plan/2021wave1/).  
+Learn about [new features available in the last minor update](../whatsnew/whatsnew-update-17-5.md).  
 
 > [!TIP]
 > To prepare for an upcoming feature, consider enabling the feature on a sandbox environment that has a copy of production data. Invite business users to test out the change using real-world tasks. Once you and your users are satisfied with the change, you can then enable it on production environments where they can immediately benefit from that feature.  
@@ -129,6 +129,6 @@ Yes. You can turn optional features on or off in a similar way.
 
 ## See also
 
-[New and planned features](https://aka.ms/Dynamics365ReleasePlan)  
+[New and planned features](/dynamics365-release-plan/2021wave1/)  
 [Administration of [!INCLUDE[prod_short](../includes/prod_short.md)] Online](tenant-administration.md)  
-[Major updates of [!INCLUDE[prod_short](../includes/prod_short.md)] Online](update-rollout-timelime.md)  
+[Major updates of [!INCLUDE[prod_short](../includes/prod_short.md)] Online](update-rollout-timelime.md)

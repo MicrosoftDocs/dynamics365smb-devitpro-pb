@@ -44,7 +44,7 @@ sections:
         answer: |
           [!INCLUDE [prod_short](developer/includes/prod_short.md)] online is governed by [Microsoft's Modern Lifecycle Policy](https://support.microsoft.com/help/30881). This means continuous service updates and a major update every 6 months. For more information, see [Dynamics 365 Business Central Service Compliance](/dynamics365/business-central/compliance/compliance-service-compliance) and [Dynamics 365 release schedule and early access](/dynamics365/get-started/release-schedule).  
           
-          You can get an overview of new and upcoming changes in the [Dynamics 365 release plans](https://aka.ms/businessappsreleasenotes).  
+          You can get an overview of new and upcoming changes in the [Dynamics 365 release plans](/dynamics365/release-plans/).  
           
       - question: What are the service level agreements?
         answer: |
@@ -130,4 +130,3 @@ sections:
           [FAQ for Dynamics 365 Update Policies](/dynamics365/get-started/faq-update-policy)  
           [Dynamics 365 Resources](https://dynamics.microsoft.com/resources/)  
           [Welcome to [!INCLUDE[prod_long](includes/prod_long.md)]](/dynamics365/business-central/index)  
-          

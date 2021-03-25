@@ -68,10 +68,10 @@ Also, at the end of the upgrade, you must make sure that the `applicationVersion
 ## See also
 
 [Migration On-premises Data to Business Central online](migrate-data.md)  
-[Connect to the Intelligent Cloud from On-Premises](about-intelligent-edge.md)  
-[Managing your Intelligent Cloud Environment](manage-intelligent-edge.md)  
+[Connect to the Intelligent Cloud from On-Premises](./migration-tool.md)  
+[Managing your Intelligent Cloud Environment](./migration-management.md)  
 [ReplicateData Property](../developer/properties/devenv-replicatedata-property.md)  
 [Intelligent Insights with Business Central](/dynamics365/business-central/about-intelligent-cloud)  
 [Migrate Legacy Help to the [!INCLUDE[prod_long](../developer/includes/prod_long.md)] Format](../upgrade/migrate-help.md)  
 [Upgrading from Dynamics NAV to Business Central Online](../upgrade/Upgrade-Considerations.md#online)  
-[Important Information and Considerations for Before Upgrading to [!INCLUDE[prod_long](../developer/includes/prod_long.md)] Spring 2019](../upgrade/Upgrade-Considerations.md)  
+[Important Information and Considerations for Before Upgrading to [!INCLUDE[prod_long](../developer/includes/prod_long.md)] Spring 2019](../upgrade/Upgrade-Considerations.md)

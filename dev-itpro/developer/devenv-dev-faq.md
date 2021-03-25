@@ -18,7 +18,7 @@ This topic contains a number of frequently asked questions and answers to these 
 
 ## How do I get started?
 
-For an overview of developing apps for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], see [aka.ms/GetStartedWithApps](https://aka.ms/GetStartedWithApps)
+For an overview of developing apps for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], see [aka.ms/GetStartedWithApps](./readiness/get-started.md)
 
 Next, follow the [Getting Started with AL](devenv-get-started.md) to set up the tools.
 
@@ -69,4 +69,4 @@ For more information, see [Sandbox Environments](../administration/environment-t
 ## See Also
 [Getting Started with AL](devenv-get-started.md)  
 [Keyboard Shortcuts](devenv-keyboard-shortcuts.md)    
-[AL Development Environment](devenv-reference-overview.md)  
+[AL Development Environment](devenv-reference-overview.md)

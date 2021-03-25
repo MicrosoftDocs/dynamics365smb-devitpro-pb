@@ -2,7 +2,7 @@
 title: "Query.SaveAsCsv Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 02/15/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Query.SaveAsCsv Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Saves the resulting data set of a query as a comma-separated values (CSV) file.
 
@@ -54,7 +54,7 @@ You set the FormatArgument parameter based on the setting of the Format paramete
 
 ## Remarks
 
-A CSV file stores data in a plain text format. When you save a query dataset as a CSV file, each row of the dataset is stored on a separate line in the file, and each column in a row is separated by a comma or another delimiter of your choice. The first line of the file will contain the column names of the query. A query column name is specified by its [Name Property](../../properties/devenv-name-property.md).  
+A CSV file stores data in a plain text format. When you save a query dataset as a CSV file, each row of the dataset is stored on a separate line in the file, and each column in a row is separated by a comma or another delimiter of your choice. The first line of the file will contain the column names of the query. A query column name is specified by its [Name Property](../../properties/devenv-properties.md).  
 
 When the **SaveAsCSV** method is called the query dataset is generated and then saved in CSV format to the file that is designated by the *FileName* parameter.  
 

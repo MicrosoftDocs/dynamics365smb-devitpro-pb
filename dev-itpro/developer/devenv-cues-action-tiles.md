@@ -65,7 +65,7 @@ The first thing that you must do is to create a table that contains fields that 
 
     For each Cue that you want to display on the page, you must add a **Field** control in the table object. When you add the **Field** control, specify the following properties:  
   
-    - Set the [Data Type property](properties/devenv-data-type-property.md) to **Decimal**, **Integer**, or **Text**, depending on the type of data the Cue will display. 
+    - Set the [Data Type property](./properties/devenv-properties.md) to **Decimal**, **Integer**, or **Text**, depending on the type of data the Cue will display. 
 
     - Set the [FieldClass property](properties/devenv-fieldclass-property.md) to **FlowField** or **Normal**.  
   
@@ -269,4 +269,4 @@ You can set up a Cue to link to a page that displays details about the transacti
 [FlowFields](devenv-flowfields.md)  
 [Page Object](devenv-page-object.md)  
 [Pages Overview](devenv-pages-overview.md)  
-[Table Object](devenv-table-object.md)  
+[Table Object](devenv-table-object.md)

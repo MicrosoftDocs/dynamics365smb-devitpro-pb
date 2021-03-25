@@ -35,7 +35,7 @@ This topic describes how to use Windows Performance Monitor to collect and view 
   
      Windows Performance Monitor displays data for the counters that you selected.  
   
- For more information about how to use Windows Performance Monitor, see [Windows Performance Monitor](https://go.microsoft.com/fwlink/?LinkId=259406).  
+ For more information about how to use Windows Performance Monitor, see [Windows Performance Monitor](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc749249(v=ws.11)).  
   
 ## See Also  
  [Business Central Performance Counters](performance-counters.md)   
