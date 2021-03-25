@@ -41,5 +41,5 @@ You typically use the [RunObject Property](../properties/devenv-runobject-proper
 
 [RunObject Property](../properties/devenv-runobject-property.md)  
 [Page and Action Triggers](devenv-page-and-action-triggers.md)  
-[Page Properties](../properties/devenv-page-properties.md)  
-[Triggers](devenv-triggers.md)  
+[Page Properties](../properties/devenv-properties.md)  
+[Triggers](devenv-triggers.md)

@@ -29,7 +29,7 @@ This page provides links to legal information for Business Central.
 
 ## Trial Services terms 
 
-- [Trial Services terms](https://go.microsoft.com/fwlink/?linkid=828977)
+- [Trial Services terms](/dynamics365/legal/slt-dynamics365-viraltrial#2)
 
 <!--## Teams integration-->
 
@@ -39,4 +39,4 @@ This page provides links to legal information for Business Central.
 
 [Privacy FAQ](../security/PrivacyFAQ.md)  
 [Legal Resources for Business Central On-Premises](legal-onpremises.md)  
-[Developer and Administration Help for Microsoft Dynamics 365 Business Central](../index.md)  
+[Developer and Administration Help for Microsoft Dynamics 365 Business Central](../index.md)

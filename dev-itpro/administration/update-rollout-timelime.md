@@ -38,7 +38,7 @@ Dates and times differ significantly across countries and regions. Make sure tha
 
 ## Update is available
 
-The major updates are typically made available twice a year, in April and in October. Get an overview of the release plans at [Dynamics 365 and Microsoft Power Platform release plans](https://go.microsoft.com/fwlink/?linkid=2047422). For [!INCLUDE [prod_short](../developer/includes/prod_short.md)] release plans, select a release plan under **Dynamics 365**, then look under **SMB** in the table of contents.
+The major updates are typically made available twice a year, in April and in October. Get an overview of the release plans at [Dynamics 365 and Microsoft Power Platform release plans](/dynamics365/release-plans/). For [!INCLUDE [prod_short](../developer/includes/prod_short.md)] release plans, select a release plan under **Dynamics 365**, then look under **SMB** in the table of contents.
 
 On the release day, all new sign-ups and all newly created environments (sandbox and production), are directed to the new version. For existing environments, running on the previous version, updates are made available gradually within 30 days following the release date. It's not possible to expedite this process for your environment via Microsoft Support.  
 
@@ -150,5 +150,4 @@ The following table describes the suggested milestones with example dates for th
 [The Business Central Administration Center](tenant-admin-center.md)  
 [Managing Environments](tenant-admin-center-environments.md)  
 [Managing Tenant Notifications](tenant-admin-center-notifications.md)  
-[Introduction to automation APIs](itpro-introduction-to-automation-apis.md)  
-
+[Introduction to automation APIs](itpro-introduction-to-automation-apis.md)

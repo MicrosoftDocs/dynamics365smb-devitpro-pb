@@ -59,6 +59,6 @@ The exception is the value *API*. Pages of this type are used to generate web se
 
 ## See Also  
 
-[Page Properties](devenv-page-properties.md)  
+[Page Properties](./devenv-properties.md)  
 [Properties](devenv-properties.md)  
-[Pages Overview](../devenv-pages-overview.md)  
+[Pages Overview](../devenv-pages-overview.md)

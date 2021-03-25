@@ -41,5 +41,5 @@ The OnValidate trigger is also a field trigger at the table level. For more info
 
 [OnValidate (Fields) Trigger](devenv-onvalidate-fields-trigger.md)  
 [Page and Action Triggers](devenv-page-and-action-triggers.md)  
-[Page Properties](../properties/devenv-page-properties.md)  
-[Triggers](devenv-triggers.md)  
+[Page Properties](../properties/devenv-properties.md)  
+[Triggers](devenv-triggers.md)
