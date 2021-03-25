@@ -2,7 +2,7 @@
 title: "Caption Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/24/2020
+ms.date: 01/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Caption Property
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Sets the string that is used to identify a control or other object in the user interface.
 
@@ -42,7 +42,7 @@ Sets the string that is used to identify a control or other object in the user i
 -   Page View
 -   Profile
 -   Enum Type
-
+-   Permission Set
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -75,8 +75,8 @@ Caption = 'Name', Locked = true, Comment = 'Keep like this, do not translate.', 
 A caption is the text used to show the identity of a control. For example, in the caption bar of a page or a label for another control.  
 
 > [!NOTE]  
-> For query columns, when you run the query from Object Designer, the About This Query window that opens in the [!INCLUDE[rtc](../includes/rtc_md.md)] displays the value for the [Name Property](devenv-name-property.md) of the query column, not the Caption property or CaptionML Property.  
+> For query columns, when you run the query from Object Designer, the About This Query window that opens in the [!INCLUDE[rtc](../includes/rtc_md.md)] displays the value for the [Name Property](./devenv-properties.md) of the query column, not the Caption property or CaptionML Property.  
 
 ## See Also  
 [ShowCaption Property](devenv-showcaption-property.md)  
-[Multilanguage Development](../devenv-multilanguage-development.md)
+[Multilanguage Development](/dynamics365/business-central/dev-itpro/developer/properties/devenv-work-with-translation-files)

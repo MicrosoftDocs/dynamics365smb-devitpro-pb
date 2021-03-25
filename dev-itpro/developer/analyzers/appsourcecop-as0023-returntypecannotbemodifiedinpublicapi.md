@@ -2,7 +2,7 @@
 title: "A return type cannot be modified in external procedures"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 03/08/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AppSourceCop Rule AS0023
-A return type cannot be modified in external procedures  
+A return type cannot be modified in external procedures
 
 ## Description
 A return type cannot be modified in external procedures.
@@ -28,7 +28,7 @@ It is not allowed to change the return type of a public procedure that was publi
 It is only allowed to add a return type to a procedure which previously did not have one.
 
 > [!NOTE]  
-> This rule also covers the cases related to the [TryFunction](../properties/devenv-trymethod-property.md) attribute which implicitly defines a Boolean return type. 
+> This rule also covers the cases related to the [TryFunction](../methods/devenv-tryfunction-attribute.md) attribute which implicitly defines a Boolean return type. 
 
 ## Code examples triggering the rule
 
@@ -166,4 +166,4 @@ In version 2.0, the procedure is now marked as a TryFunction. This means that th
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+[Developing Extensions](../devenv-dev-overview.md)

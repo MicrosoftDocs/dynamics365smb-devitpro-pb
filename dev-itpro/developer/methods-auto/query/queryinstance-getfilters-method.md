@@ -2,7 +2,7 @@
 title: "Query.GetFilters Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 02/15/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,9 +14,9 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Query.GetFilters Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
-Returns the filters that are applied to all columns in the query. The following code shows the syntax of the GetFilterS method. Query is a variable of the Query data type that specifies the query object.
+Returns the filters that are applied to all columns in the query. The following code shows the syntax of the GETFILTERS method. Query is a variable of the Query data type that specifies the query object.
 
 
 ## Syntax
@@ -40,7 +40,7 @@ All filters of the query
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- The **GetFilterS** method returns the filters that are currently set for all data columns and filter rows by the [SetFilter Method \(Query\)](../../methods-auto/query/queryinstance-setfilter-method.md) method, [SetRange Method \(Query\)](../../methods-auto/query/queryinstance-setrange-method.md)method, and the [ColumnFilter Property](../../properties/devenv-columnfilter-property.md). The **GetFilter** method does not return filters that are set on a column's source field by the [DataItemTableFilter Property](../../properties/devenv-dataitemtable-filter-property.md) or global filters that are set by the **FilterGroup** method.  
+ The **GetFilterS** method returns the filters that are currently set for all data columns and filter rows by the [SetFilter Method \(Query\)](../../methods-auto/query/queryinstance-setfilter-method.md) method, [SetRange Method \(Query\)](../../methods-auto/query/queryinstance-setrange-method.md)method, and the [ColumnFilter Property](../../properties/devenv-columnfilter-property.md). The **GetFilter** method does not return filters that are set on a column's source field by the [DataItemTableFilter Property](/dynamics365/business-central/dev-itpro/developer/methods-auto/query/devenv-dataitemtablefilter-property) or global filters that are set by the **FilterGroup** method.  
 
 <!-- Links For more information, see [Understanding Query Filters](Understanding-Query-Filters.md) and [How to: Set Up Filter Rows in Query Designer](How-to-Set-Up-Filter-Rows-in-Query-Designer.md). -->  
   

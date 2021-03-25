@@ -31,7 +31,7 @@ Follow these steps if one or more extensions are installed on the tenant. If the
 
 3. Export the application objects, application data, and tenant data from the original database(s) to a `.navdata` type file.
 
-   To export the data, run the [Export-NAVData cmdlet](https://go.microsoft.com/fwlink/?LinkID=401400) as shown in the following example: 
+   To export the data, run the [Export-NAVData cmdlet](/powershell/module/microsoft.dynamics.nav.management/export-navdata) as shown in the following example: 
 
     ```  
     Export-NAVData -ServerInstance <server instance> -Tenant <tenant ID> -IncludeApplication -IncludeApplicationData -IncludeGlobalData -AllCompanies -FilePath <file> 
@@ -43,7 +43,7 @@ Follow these steps if one or more extensions are installed on the tenant. If the
 
 4. Import the application objects and application data from the exported file to the new application database.
 
-   To import the data, run the [Import-NAVData cmdlet](https://go.microsoft.com/fwlink/?LinkID=401402) with `-IncludeApplication` and `-IncludeApplicationData` switch parameters. For example:
+   To import the data, run the [Import-NAVData cmdlet](/powershell/module/microsoft.dynamics.nav.management/import-navdata) with `-IncludeApplication` and `-IncludeApplicationData` switch parameters. For example:
 
     ```  
     Import-NAVData -DatabaseServer <database server name> -DatabaseName <new application database name> -IncludeApplication -IncludeApplicationData -FilePath <file>
@@ -73,7 +73,7 @@ Follow these steps if one or more extensions are installed on the tenant. If the
 
 7.  Synchronize the tenant database with the application.
 
-    To synchronize the database, run the [Sync-NavTenant cmdlet](https://go.microsoft.com/fwlink/?LinkID=401399).
+    To synchronize the database, run the [Sync-NavTenant cmdlet](/powershell/module/microsoft.dynamics.nav.management/sync-navtenant).
 
     ```  
     Sync-NAVTenant -ServerInstance <server instance> -Tenant <tenant ID>
@@ -98,7 +98,7 @@ Follow these steps if one or more extensions are installed on the tenant. If the
     -->
 9. Import the tenant data from the exported file to the new tenant database.
 
-    To import the data, run the [Import-NAVData cmdlet](https://go.microsoft.com/fwlink/?LinkID=401402) with `-IncludeGlobalData` and `-AllCompanies` switch parameters. For example:
+    To import the data, run the [Import-NAVData cmdlet](/powershell/module/microsoft.dynamics.nav.management/import-navdata) with `-IncludeGlobalData` and `-AllCompanies` switch parameters. For example:
 
     ```  
     Import-NAVData -ServerInstance <server instance> -Tenant <tenant ID> -FilePath <file> -IncludeGlobalData -AllCompanies
@@ -112,7 +112,7 @@ Follow these steps if one or more extensions are installed on the tenant. If the
 
 2. Export the application objects, application data, and tenant data from the original database to a `.navdata` type file.
 
-   To export the data, run the [Export-NAVData cmdlet](https://go.microsoft.com/fwlink/?LinkID=401400) as shown in the following example: 
+   To export the data, run the [Export-NAVData cmdlet](/powershell/module/microsoft.dynamics.nav.management/export-navdata) as shown in the following example: 
 
     ```  
     Export-NAVData -DatabaseServer <database server name> -DatabaseName <original database name> -IncludeApplication -IncludeApplicationData -IncludeGlobalData -AllCompanies -FilePath c:\temp\MyDB.navdata  
@@ -124,7 +124,7 @@ Follow these steps if one or more extensions are installed on the tenant. If the
     Import-NAVData -DatabaseServer DatabaseServerName -DatabaseName NewDatabaseName -IncludeApplication -IncludeApplicationData -IncludeGlobalData -AllCompanies -FilePath c:\temp\MyDB.navdata  
     ```  
 
-    For more information, see [Import-NAVData cmdlet](https://go.microsoft.com/fwlink/?LinkID=401402).  
+    For more information, see [Import-NAVData cmdlet](/powershell/module/microsoft.dynamics.nav.management/import-navdata).  
 
 4. Connect the new database to the [!INCLUDE[server](../developer/includes/server.md)] instance.  
 
@@ -134,7 +134,7 @@ Follow these steps if one or more extensions are installed on the tenant. If the
 
 6. Synchronize the database. 
 
-    From the [!INCLUDE[adminshell](../developer/includes/adminshell.md)], run the [Sync-NavTenant cmdlet](https://go.microsoft.com/fwlink/?LinkID=401399).
+    From the [!INCLUDE[adminshell](../developer/includes/adminshell.md)], run the [Sync-NavTenant cmdlet](/powershell/module/microsoft.dynamics.nav.management/sync-navtenant).
 
     ```  
     Sync-NAVTenant -ServerInstance <server instance>

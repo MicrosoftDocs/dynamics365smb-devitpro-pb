@@ -23,7 +23,7 @@ The functionality in the default version of [!INCLUDE[prod_short](includes/prod_
 > |Name  |Location  |Description|
 > |---------|---------|---------|
 > |Business functionality docs|[/dynamics365/business-central](/dynamics365/business-central/) |Use this library to learn about business functionality. |
-> |Development and administration docs|[/dynamics365/business-central/dev-itpro/](/dynamics365/business-central/dev-itpro/)|Use this content to learn how to extend, customize, and administrate [!INCLUDE[prod_short](includes/prod_short.md)].|
+> |Development and administration docs|[/dynamics365/business-central/dev-itpro/](./index.md)|Use this content to learn how to extend, customize, and administrate [!INCLUDE[prod_short](includes/prod_short.md)].|
 
 ### AL developer documentation
 
@@ -199,4 +199,4 @@ For more information, see [Preparing Demonstration Environments](administration/
 [Configuring the Help Experience](deployment/configure-help.md)  
 [Migrate Legacy Help](upgrade/migrate-help.md)  
 <!--[The "Ready to Go" Program](developer/readiness/readiness-ready-to-go.md)  -->
-[The Business Central Administration Center](administration/tenant-admin-center.md)  
+[The Business Central Administration Center](administration/tenant-admin-center.md)

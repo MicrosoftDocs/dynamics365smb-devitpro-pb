@@ -17,7 +17,7 @@ ms.date: 01/19/2021
 
 [!INCLUDE [prod_short](includes/prod_short.md)] online is governed by [Microsoft's Modern Lifecycle Policy](https://support.microsoft.com/help/30881), which means continuous [service updates](#service-updates) and a major update every six months. For more information, see [Dynamics 365 Business Central Service Compliance](/dynamics365/business-central/compliance/compliance-service-compliance&toc=/dynamics365/business-central/dev-itpro/toc.json) and [Dynamics 365 release schedule and early access](/dynamics365/get-started/release-schedule).  
 
-Get an overview of new and upcoming changes in the [Dynamics 365 release plans](https://aka.ms/businessappsreleasenotes).  
+Get an overview of new and upcoming changes in the [Dynamics 365 release plans](/dynamics365/release-plans/).  
 
 ## Global availability
 
@@ -47,7 +47,7 @@ For more information about Azure SQL, see [High availability for Azure SQL Datab
 
 ## Service updates
 
-[!INCLUDE [prod_short](includes/prod_short.md)] online is a service that consists of a Microsoft-maintained platform and business functionality. Microsoft partners can provide more business functionality, such as to address specific industry or localization needs. Both business functionality and service components are monitored continuously and updated as appropriate. Generally, new capabilities are made available as part of major updates. Critical fixes are rolled out as soon as possible after they passed tests and have been verified in Microsoft's protected staging environment. For more information, see [Major Updates of Business Central Online](administration/update-rollout-timelime.md). You can always refer to the [release plan](https://go.microsoft.com/fwlink/?linkid=2047422) for an overview of new and upcoming functionality, and you can keep an eye out for the minor updates at [aka.ms/bclastminorupdate](https://aka.ms/bclastminorupdate).  
+[!INCLUDE [prod_short](includes/prod_short.md)] online is a service that consists of a Microsoft-maintained platform and business functionality. Microsoft partners can provide more business functionality, such as to address specific industry or localization needs. Both business functionality and service components are monitored continuously and updated as appropriate. Generally, new capabilities are made available as part of major updates. Critical fixes are rolled out as soon as possible after they passed tests and have been verified in Microsoft's protected staging environment. For more information, see [Major Updates of Business Central Online](administration/update-rollout-timelime.md). You can always refer to the [release plan](/dynamics365/release-plans/) for an overview of new and upcoming functionality, and you can keep an eye out for the minor updates at [aka.ms/bclastminorupdate](./whatsnew/whatsnew-update-17-5.md).  
 
 For each environment, administrators can set a maintenance window for when Microsoft is allowed to update that environment. For more information, see [Managing Updates in the Business Central Admin Center](administration/tenant-admin-center-update-management.md). Microsoft then schedules updates of the business functionality to be applied during these maintenance windows.  
 
@@ -65,4 +65,4 @@ An exception to this type of schedule is the continuous updates to the underlyin
 [Data and access when a trial or subscription ends](administration/tenant-administration.md#data-and-access-when-a-trial-or-subscription-ends)  
 [Azure global infrastructure](https://azure.microsoft.com/global-infrastructure)
 [Azure reliability](https://azure.microsoft.com/features/reliability/)  
-[Microsoft Service Trust](https://servicetrust.microsoft.com/)  
+[Microsoft Service Trust](https://servicetrust.microsoft.com/)

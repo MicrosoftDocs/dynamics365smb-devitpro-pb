@@ -154,5 +154,5 @@ Customer.DeleteAll;
 
 
 ## See Also
-[AL Methods](methods/devenv-al-method-reference.md)  
-[SystemId Field](devenv-table-system-fields.md#systemid)  
+[AL Methods](./methods-auto/library.md)  
+[SystemId Field](devenv-table-system-fields.md#systemid)

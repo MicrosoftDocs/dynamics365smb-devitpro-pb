@@ -97,7 +97,7 @@ When you run the codeunit, instead of stopping the execution of the `OnRun` trig
 <!--
 ## Example 2 
 
-The following example illustrates how to use a try method with .NET interoperabilty. The example uses the [System.Decimal.Divide method](https://msdn.microsoft.com/library/system.decimal.divide(v=vs.110).aspx) to divide two decimals. 
+The following example illustrates how to use a try method with .NET interoperabilty. The example uses the [System.Decimal.Divide method](/dotnet/api/system.decimal.divide) to divide two decimals. 
 
 First, create a codeunit that has a local method `MyTrymethod`, and add the following text constants and variables:
 
