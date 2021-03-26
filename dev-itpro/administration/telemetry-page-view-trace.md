@@ -13,7 +13,7 @@ ms.author: jswymer
 ---
 # Analyzing Page View Telemetry
 
-**INTRODUCED IN:** [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 1, version 16.3. Available in extension telemetry from version 18.0
+**INTRODUCED IN:** [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 1, version 16.3. Available in extension telemetry from version 18.0.
 
 Page view telemetry gathers data about the pages that users open in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client. Each page view tells you how long it took to open the page, information about the user's environment, and more.
 
