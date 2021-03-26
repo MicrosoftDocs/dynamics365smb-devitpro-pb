@@ -64,4 +64,4 @@ Specifies the timeout of the created session. If not specified a default timeout
 [TaskScheduler Data Type](taskscheduler-data-type.md)
 [Getting Started with AL](../../devenv-get-started.md)
 [Developing Extensions](../../devenv-dev-overview.md)  
-[Configuring Business Central Server - Default Task Scheduler Session](../../../administration/configure-server-instance.md#Task)  
+[Configuring Business Central Server - Default Task Scheduler Session Timeout](../../../administration/configure-server-instance.md#Task)  
