@@ -18,7 +18,7 @@ But what if you want to deploy [!INCLUDE[prod_short](../developer/includes/prod_
 
 ## Apps for online tenants
 
-When you build an app for [!INCLUDE [prod_short](../developer/includes/prod_short.md)] using the AL developer experience, you are expected to comply with the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] user assistance model. The user assistance model requires the use of tooltips and context-sensitive links to Help content that is hosted on a website. For more information, see the [Deploy content to your website](#deploy-content-to-your-website) section and the [Configure Context-Sensitive Help](../help/context-sensitive-help.md) article.  
+When you build an app for [!INCLUDE [prod_short](../developer/includes/prod_short.md)] using the AL developer experience, you are expected to apply tooltips and context-sensitive links to Help content on a website in accordance with the user assistance model. For more information, see the [Deploy content to your website](#deploy-content-to-your-website) section and the [Configure Context-Sensitive Help](../help/context-sensitive-help.md) article.  
   
 > [!TIP]
 > The website does not have to be publicly accessible, but it must be accessible to all users of the solution that it supports.
@@ -27,7 +27,7 @@ You can add Microsoft's content to your website, or you can deploy just your own
 
 ## On-premises deployments
 
-For deploying [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises, you can choose between using any online website or the legacy Dynamics NAV Help Server, and you can configure different Help experience for each [!INCLUDE[webserver](../developer/includes/webserver.md)] instance. For example, use the [Custom Help Toolkit](../help/custom-help-toolkit.md) to help you deploy content to an Aure Web App. For supported versions, the legacy Dynamics NAV Help Server component is a simple website that requires your Help to be in a specific format (HTML files), while the online website can host any content that you want to make available. Your choice depends on the needs of your solution and your users. If you add configuration for an online library, you must remove any settings for Help Server.  
+For deploying [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises, you can choose between using any online website or the legacy Dynamics NAV Help Server, and you can configure different Help experience for each [!INCLUDE[webserver](../developer/includes/webserver.md)] instance. For example, use the [Custom Help Toolkit](../help/custom-help-toolkit.md) to help you deploy content to an Azure Web App. For supported versions, the legacy Dynamics NAV Help Server component is a simple website that requires your Help to be in a specific format (HTML files). Other types of websites can host any content that you want to make available. Your choice depends on the needs of your solution and your users. If you add configuration for an online library, you must remove any settings for Help Server.  
 
 > [!IMPORTANT]
 > The legacy Dynamics NAV Help Server component is deprecated in 2021 release wave 1 (version 18). We recommend that you invest in a different type of website. For more information, see the [2020 release wave 2 release plan](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/deprecation-legacy-dynamics-nav-help-server-component-) and [Custom Help Toolkit](../help/custom-help-toolkit.md).
@@ -39,7 +39,7 @@ For deploying [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-pre
 
 ### Online library
 
-To display content from an website that hosts your user assistance content, specify the URL in the settings for the [!INCLUDE[webserver](../developer/includes/webserver.md)]. The `navsettings.json` file must contain the following setting in the `ApplicationIdSettings` element:
+To display content from a website that hosts your user assistance content, specify the URL in the settings for the [!INCLUDE[webserver](../developer/includes/webserver.md)]. The `navsettings.json` file must contain the following setting in the `ApplicationIdSettings` element:
 
 ```json
 {
@@ -88,7 +88,7 @@ The navsettings.json file must contain the following settings in the `NAVWebSett
 }
 ```
 
-In the example, `https://myserver.com` represents the URL to the Help Server instance, and the value of the `HelpServerPort`setting determines that port 49000 on that webserver is where the content is. For more information, see [Configuring Microsoft Dynamics NAV Help Server](/dynamics-nav/configuring-microsoft-dynamics-nav-help-server) in the developer and adminstration content for [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)].  
+In the example, `https://myserver.com` represents the URL to the Help Server instance, and the value of the `HelpServerPort`setting determines that port 49000 on that webserver is where the content is. For more information, see [Configuring Microsoft Dynamics NAV Help Server](/dynamics-nav/configuring-microsoft-dynamics-nav-help-server) in the developer and administration content for [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)].  
 
 > [!IMPORTANT]
 > If you use Help Server, the UI-to-Help mapping functionality that is described in [Configure Context-Sensitive Help](../help/context-sensitive-help.md) does not work. Neither does the original Help lookup mechanism that was based on filenames that reflected the object IDs, such as N_123.htm for the page object with the ID 123. For more information, see [Blog post: Reusing classic object-based Help on your Dynamics 365 Business Central Help Server](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/13/reusing-classic-object-based-help-dynamics-365-business-central-help-server?target=_blank).
@@ -103,11 +103,37 @@ In the example, `https://myserver.com` represents the URL to the Help Server ins
 
 ## Deploy content to your website
 
-[!INCLUDE [prod_short](../developer/includes/prod_short.md)] has no firm requirements for the website that hosts your online library for your [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online or on-premises. You can deploy your content using any tool and process, such as [Azure Static Web Apps](/azure/static-web-apps/), [Azure App Service](/azure/app-service/quickstart-html), a website that can render MarkDown files using a [customization of the DocFx Flavored MarkDown engine](https://dotnet.github.io/docfx/tutorial/howto_customize_docfx_flavored_markdown.html), or third-party services such as [MkDocs](https://www.mkdocs.org/).  
+[!INCLUDE [prod_short](../developer/includes/prod_short.md)] has no firm requirements for the website that hosts your online library for your [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online or on-premises. You can deploy your content using any tool and process including the following:
 
-You can see an example of how to deploy content to an Azure web app in the article [Deploy custom help to Azure](/dynamics365/fin-ops-core/dev-itpro/help/walkthrough-help-azure), which supports the custom Help toolkit for Dynamics 365 Finance, Dynamics 365 Supply Chain Management, and Dynamics 365 Commerce. That article also describes how you can build a search service for your website. This is currently not relevant for [!INCLUDE [prod_short](../developer/includes/prod_short.md)], but you might find the guidance helpful anyway.  
+* [Azure Static Web Apps](/azure/static-web-apps/)  
+* [Azure App Service](/azure/app-service/quickstart-html)  
+* Third-party services such as [MkDocs](https://www.mkdocs.org/)  
+* Any website that can render MarkDown files using a [customization of the DocFx Flavored MarkDown engine](https://dotnet.github.io/docfx/tutorial/howto_customize_docfx_flavored_markdown.html)  
 
-Use the [HtmlFromRepoGenerator tool](../help/custom-help-toolkit-HtmlFromRepoGenerator.md) tool in the custom Help toolkit to clone a repo and generate the corresponding HTML files automatically. If, instead, you want to create your own tooling and processes around [DocFx](https://dotnet.github.io/docfx/), which is an open-source tool for converting markdown files, you can see examples in the [Build HTML files](../help/contributor-guide.md#build-html-files) section of the contributor guide.  
+You can see an example of how to deploy content to an Azure web app in the article [Deploy custom help to Azure](/dynamics365/fin-ops-core/dev-itpro/help/walkthrough-help-azure), which supports the custom Help toolkit for Dynamics 365 finance and operations apps. That article also describes how you can build a search service for your website. This step is currently not relevant for [!INCLUDE [prod_short](../developer/includes/prod_short.md)], but you might find the guidance helpful anyway.  
+
+### Optional: Get Microsoft's content
+
+If you deploy a solution that is based on Microsoft's default application, then you might want to include a customized version of Microsoft's business functionality content on your website. Microsoft's source files are available as downloadable packages for each major release in the [https://github.com/MicrosoftDocs/dynamics365smb-docs/](https://github.com/MicrosoftDocs/dynamics365smb-docs/releases) GitHub repo in English (US) only. For other languages, pull files based on a commit before the next major version.  
+
+> [!TIP]
+> The content on the [https://docs.microsoft.com/dynamics365/business-central/](https://docs.microsoft.com/dynamics365/business-central/) site and in the various GitHub repos reflects the latest version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)], unless otherwise specified.
+>
+> If you deploy [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises, we recommend that you get your version of Microsoft's content close to the time the subsequent major version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] becomes available. For example, if you are deploying version 17.4, you should have taken a snapshot of the content in GitHub before version 18.0 became available.
+
+Let's take an example: You are deploying version 17.4 on-premises for a customer in Belgium in June 2021. Back in March 2021, you knew that version 18.0 was coming up, so you ran the [custom help toolkit's HtmlFromRepoGenerator tool](../help/custom-help-toolkit-HtmlFromRepoGenerator.md) to get the latest version of Microsoft's source files from the relevant repos. In this example, you would configure the tool to process the following repos:
+
+* [https://github.com/MicrosoftDocs/dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs)  
+* [https://github.com/MicrosoftDocs/dynamics365smb-docs-pr.fr-be](https://github.com/MicrosoftDocs/dynamics365smb-docs-pr.fr-be)  
+* [https://github.com/MicrosoftDocs/dynamics365smb-docs-pr.nl-be](https://github.com/MicrosoftDocs/dynamics365smb-docs-pr.nl-be)  
+
+> [!TIP]
+> The [HtmlFromRepoGenerator](../help/custom-help-toolkit-HtmlFromRepoGenerator.md) tool generates HTML files for you that you can choose to customize before you deploy them to the relevant website. But you can use any tool or script that you prefer. For more information, see [Extend, Customize, and Collaborate on the Help](../help/contributor-guide.md).
+
+> [!IMPORTANT]
+> Essential information required for user success
+
+If you want to create your own tooling and processes around [DocFx](https://dotnet.github.io/docfx/), you can see examples in the [Build HTML files](../help/contributor-guide.md#build-html-files) section of the contributor guide.  
 
 ## Fork the Microsoft repos, and customize or extend the content
 
