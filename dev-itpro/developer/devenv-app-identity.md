@@ -41,16 +41,18 @@ It is recommended to use a different `id` for the app that you publish from Visu
 
 ## When is it okay to change the name of an app?
 
-The `name` of an extension can be changed at any point before it is published to the online service as a per-tenant extension or as an AppSource app. Once the extension has been published you must not change the name because any extension that has taken a dependency on your extension will not compile against the newest version of your extension.
+The `name` of an app can be changed at any point before it is published to the online service as a per-tenant extension or as an AppSource app. Once the app has been published, you must not change the name because any other app that has taken a dependency on your app, will then not compile against the newest version of your app.
 
-## When is it okay to change the publisher of an extension?
-The `publisher` of an extension can be changed at any point before it is published to the online service as a per-tenant extension or as an AppSource app. Once the extension has been published you must not change the publisher because any extension that has taken a dependency on your extension will not compile against the newest version of your extension.
+## When is it okay to change the publisher of an app?
 
-## When is it okay to change the version of an extension?
+The `publisher` of an app can be changed at any point before it is published to the online service as a per-tenant extension or as an AppSource app. Once the app has been published you must not change the publisher because any other app that has taken a dependency on your app, will then not compile against the newest version of your app.
 
-The `version` must be incremented any time a new version of your extension is uploaded to AppSource or as a per-tenant extension. While developing it in VSCode, you can keep using the same version and iterate on your code.
+## When is it okay to change the version of an app?
 
-Please be aware that in a Visual Studio Code workspace an app's name, publisher and version are part of identifying a project and a project dependency. Thus if any of these change it is recommended that you reload the workspace.
+The `version` must be incremented any time a new version of your app is uploaded to AppSource or as a per-tenant extension. While developing it in Visual Studio Code, you can keep using the same version and iterate on your code.
+
+> [!NOTE]  
+> In a Visual Studio Code workspace an app's `name`, `publisher`, and `version` are part of identifying a project and a project dependency. Therefore, if any of these properties change, it is recommended that you reload the workspace.
  
 ## See Also
 
