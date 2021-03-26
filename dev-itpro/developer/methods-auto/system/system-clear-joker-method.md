@@ -2,7 +2,7 @@
 title: "System.Clear Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 01/12/2021
+ms.date: 03/08/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # System.Clear Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Clears the value of a single variable. Also, it clears all the filters that were set if the variable is a record and resets the key to the primary key and the company on a record variable.
 
@@ -28,12 +28,12 @@ Clears the value of a single variable. Also, it clears all the filters that were
 ## Parameters
 *Variable*  
 &emsp;Type: [Any](../any/any-data-type.md)  
-The identifier (variable) of any AL data type, including simple and composite data types. The following rules apply when you run the Clear method:
+The identifier (variable) of any AL data type, including simple and composite data types. The following rules apply when you run the CLEAR method:
 -   A number variable is set to 0 (zero)
 -   A string variable is set to empty string
 -   A date variable is set to 0D (undefined date)
 -   A time variable is set to 0T (undefined time)
--   A Boolean variable is set to False
+-   A Boolean variable is set to FALSE
           
 
 

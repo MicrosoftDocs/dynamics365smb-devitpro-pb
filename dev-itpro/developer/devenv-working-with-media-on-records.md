@@ -1,8 +1,9 @@
 ---
 title: "Working With Media on Records"
 ms.author: solsen
+description: Learn how to upload media, such as an image, to the database for displaying with records in the client. 
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 03/25/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -11,7 +12,7 @@ author: SusanneWindfeldPedersen
 ---
 
 # Working With Media on Records
-This topic describes how you can upload media, such as an image, to the database for displaying with records in the client. There are two ways that you can do this:  
+This article describes how you can upload media, such as an image, to the database for displaying with records in the client. There are two ways that you can do this:  
 
 - Use a BLOB data type  
 
@@ -36,6 +37,9 @@ Table fields support two data types for adding media to records: **Media** and *
 The **Media** data type associates a record with a single media object. For example, you can use this data type to display an image with each record in a list type page.
 
 If a media object is added to Media data type field, the field references the media object by its ID.
+
+> [!NOTE]
+> Starting with Business Central 2021 release wave 1, when importing Microsoft Word files (.docx), macro packages (VBA code) will automatically be removed from the file when stored in the database. If macros are needed for end-user scenarios, the macro must be in the Word template (.dotx) associated with the document being imported.
 
 ## MediaSet data type
 
