@@ -37,13 +37,14 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Finland|Microsoft|Available|FI|
 |France|Microsoft|Available|FR|
 |Germany|Microsoft|Available|DE|
+|Greece|Partner|Available|GR|
 |Greenland (Denmark)|Microsoft|Available|DK|
 |Hong Kong SAR|Partner|Available|HK|
 |Hungary|Partner|Available|HU|
 |Iceland|Microsoft|Available|IS|
 |Ireland|Partner|Available|IE|
 |Indonesia|Partner|Available|ID|
-|India|Microsoft|Preview|IN|
+|India|Microsoft|Available|IN|
 |Italy|Microsoft|Available|IT|
 |Japan|Partner|Available|JP|
 |Latvia|Partner|Available|LV|
@@ -57,6 +58,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Philippines|Partner|Available|PH|
 |Poland|Partner|Available|PL|
 |Portugal|Partner|Available|PT|
+|Romania|Partner|Available|RO|
 |Russia **(on-premises only)**|Microsoft|Available|(Not listed)|
 |Serbia|Partner|Available|RS|
 |Singapore|Partner|Available|SG|
@@ -68,6 +70,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Switzerland|Microsoft|Available|CH|
 |Taiwan|Partner|Available|TW|
 |Thailand|Partner|Available|TH|
+|Turkey|Partner|Available|TR|
 |United Arab Emirates|Partner|Available|AE|
 |United Kingdom|Microsoft|Available|GB|
 |United States|Microsoft|Available|US|
