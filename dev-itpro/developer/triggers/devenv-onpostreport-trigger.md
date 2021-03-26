@@ -26,7 +26,8 @@ end;
 
 ## Applies to
 
-- Reports  
+- Report objects
+- Report extension objects
 
 ## Remarks  
 
@@ -45,10 +46,10 @@ Create the following global text constant variable.
 |-----------------------|-------------------|  
 |Text000|'%1 records were not processed'|  
 
-Because this trigger is run before the End Write Transaction, you can also give the user the opportunity to roll back changes to the database by leaving the report with the [Quit Method \(Report, XMLport\)](../methods-auto/report/report-quit-method.md).  
+Because this trigger is run before the End Write Transaction, you can also give the user the opportunity to roll back changes to the database by leaving the report with the [Quit Method \(Report, XMLport\)](../methods-auto/report/reportinstance-quit-method.md).  
 
 ## See Also
 
 [Triggers](devenv-triggers.md)  
-[Quit Method (Report, XMLport)](../methods-auto/report/report-quit-method.md)  
+[Quit Method (Report, XMLport)](../methods-auto/report/reportinstance-quit-method.md)  
 [Report and Data Item Triggers](devenv-report-and-data-item-triggers.md)

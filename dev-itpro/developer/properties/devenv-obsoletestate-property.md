@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # ObsoleteState Property
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Marks whether the object or element is or will become obsolete (deprecated).
 
@@ -49,6 +49,7 @@ Marks whether the object or element is or will become obsolete (deprecated).
 -   Profile
 -   Interface
 -   Control Add In
+-   Permission Set
 
 ## Property Value
 
