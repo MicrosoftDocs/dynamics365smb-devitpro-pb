@@ -56,9 +56,9 @@ Then **Extension B** will fail to compile because the field in the table extensi
 
 In general, we recommend using affixes for your object and element names to prevent this type of conflicts. For more information, see [Prefix and suffix for naming in extensions](../compliance/apptest-prefix-suffix.md).
 
-To make the issue more concrete, we will use the following example to illustrate how this problem can manifest itself and how to resolve it:
+## Example
 
-Let us assume we have a Business Central environment running on Business Central Wave 1 2020, Update 16.5 (version 16.5). In our environment, we have a per-tenant extension, named "MyExtension" by "Contoso" version 1.0.0.0 containing the following table extension
+To make the issue more concrete, the following example illustrates how this problem can manifest itself and how to resolve it. In a [!INCLUDE[prod_short](../includes/prod_short.md)] environment running on [!INCLUDE[prod_short](../includes/prod_short.md)] 2020 release wave 1, update 16.5 (version 16.5), a per-tenant extension, named **MyExtension** by **Contoso** version 1.0.0.0 contains the following table extension:
 
 ```al
 tableextension 50100 SalesCreditMemoHeaderExt extends  "Sales Cr.Memo Header"
@@ -72,22 +72,21 @@ tableextension 50100 SalesCreditMemoHeaderExt extends  "Sales Cr.Memo Header"
 }
 ```
 
-Which adds the field "Shipping Agent Service Code" to the "Sales Cr.Memo Header" defined in the "Base Application" extension by Microsoft.
+The table extension adds the field **Shipping Agent Service Code** to the **Sales Cr.Memo Header** table defined in the **Base Application** extension by Microsoft.
 
-In Business Central Wave 2 2020 (version 17.0), Microsoft enhances the table "Sales Cr.Memo Header" by adding the following field
+In [!INCLUDE[prod_short](../includes/prod_short.md)] 2020 release wave 2 (version 17.0), Microsoft enhances the table **Sales Cr.Memo Header** by adding the following field:
 
 ```al
 field(5794; "Shipping Agent Service Code"; Code[10]) {}
 ```
 
-The service will attempt to upgrade our environment from version 16.5 to version 17.0 of the product. During the upgrade process, our per-tenant extension will be recompiled against the latest version of the "Base Application".
-The compilation will fail with an error message similar to "A member of type Field with name "Shipping Agent Service Code" is already defined in Table "Sales Cr.Memo Header" by the extension "Base Application by Microsoft (17.0.0.0)". 
+The service will attempt to upgrade the environment from version 16.5 to version 17.0 of the product. During the upgrade process, the per-tenant extension will be recompiled against the latest version of the **Base Application**. The compilation will fail with an error message similar to: *"A member of type Field with name "Shipping Agent Service Code" is already defined in Table "Sales Cr.Memo Header" by the extension "Base Application by Microsoft (17.0.0.0)"*. 
 
-The service will dismiss the upgrade of our environment and an e-mail will be sent to the administrator registered in the Tenant Administration Center containing the above error message.
+The service will dismiss the upgrade of the environment and an e-mail will be sent to the administrator registered in the **Tenant Administration Center** containing the above error message.
 
-Our first reaction is to modify the per-tenant extension, remove the conflicting field, and try to upload version 1.1.0.0 to the service. This will fail with an error message similar to "Per-tenant extension "MyExtension" version 1.0.0.0 by "Contoso" failed to synchronize the database schema."
+The first reaction may be to modify the per-tenant extension, remove the conflicting field, and then try to upload version 1.1.0.0 to the service. This will, however, fail with an error message similar to *"Per-tenant extension "MyExtension" version 1.0.0.0 by "Contoso" failed to synchronize the database schema."*.
 
-This error message is raised because the the system does not allow implicitly removing/renaming schema elements such as tables, table fields. To upgrade our environment, we must forcefully remove the conflicting field.
+This error message is raised because the system does not allow implicitly removing or renaming schema elements such as tables and table fields. To upgrade the environment, it is necessary to forcefully remove the conflicting field by following these steps:
 
 1. Create a sandbox.  
     As the following steps can lead to data-loss, we recommend that the steps are first performed in a sandbox environment created as a copy from the production environment. See https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-environments#create-a-sandbox-environment 
