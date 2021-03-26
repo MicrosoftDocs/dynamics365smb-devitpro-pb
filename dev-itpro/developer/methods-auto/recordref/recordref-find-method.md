@@ -2,7 +2,7 @@
 title: "RecordRef.Find Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 02/15/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # RecordRef.Find Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Finds a record in a table based on the values stored in the key fields.
 
@@ -36,7 +36,7 @@ Specifies how to perform the search. The table will be searched until the record
 -   \<  search for a record that is less than the key values
 -   +  search for the last record in the table (+ can only be used alone)
 -   -  search for the first record in the table (- can only be used alone)
-You can combine the '=', '\>', and '\<' characters. If this parameter contains '=', '\>', or '\<', then you must assign value to all fields of the current and primary keys before you call Find.
+You can combine the '=', '\>', and '\<' characters. If this parameter contains '=', '\>', or '\<', then you must assign value to all fields of the current and primary keys before you call FIND.
   
 
 

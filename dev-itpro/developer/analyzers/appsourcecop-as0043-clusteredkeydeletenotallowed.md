@@ -1,8 +1,8 @@
 ---
-title: "String Data Type"
+title: "The clustered key must not be deleted"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 03/08/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,15 +13,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# String Data Type
-> **Version**: _Available from runtime version 1.0._
+# AppSourceCop Rule AS0043
+The clustered key must not be deleted
 
-Denotes a sequence of characters. It can be represented by a string literal, a text value or a code value.
-
-
-
+## Description
+The clustered key must not be deleted.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
-[Getting Started with AL](../../devenv-get-started.md)  
-[Developing Extensions](../../devenv-dev-overview.md)  
+[AppSourceCop Analyzer](appsourcecop.md)  
+[Getting Started with AL](../devenv-get-started.md)  
+[Developing Extensions](../devenv-dev-overview.md)  

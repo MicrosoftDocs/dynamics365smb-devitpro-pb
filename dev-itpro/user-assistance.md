@@ -52,7 +52,7 @@ Most tooltips end with an automatically generated link to *learn more* as descri
 
 Users can always use the Ctrl+F1 keyboard shortcut to access the *learn more* content that is configured for the currently-selected item in the user interface.
 
-The tooltips in [!INCLUDE [prod_short](developer/includes/prod_short.md)] are conceptually similar to *[field descriptions](/dynamics365/fin-ops-core/fin-ops/get-started/view-export-field-descriptions?toc=/dynamics365/finance/toc.json)* in Dynamics 365 Finance and related apps, and *[flyouts](/windows/uwp/design/controls-and-patterns/dialogs-and-flyouts/flyouts)* in the Fluent Design guidelines. [!INCLUDE [prod_short](developer/includes/prod_short.md)] does not have the equivalent of [teaching tips](/windows/uwp/design/controls-and-patterns/dialogs-and-flyouts/teaching-tip) that you can add to your solution, though our platform includes a few flyouts of the same type.
+The tooltips in [!INCLUDE [prod_short](developer/includes/prod_short.md)] are conceptually similar to *[field descriptions](/dynamics365/fin-ops-core/fin-ops/get-started/view-export-field-descriptions?toc=/dynamics365/finance/toc.json)* in Dynamics 365 Finance and related apps, and *[flyouts](/windows/uwp/design/controls-and-patterns/dialogs-and-flyouts/flyouts)* in the Fluent Design guidelines. With [!INCLUDE [2021_releasewave1](includes/2021_releasewave1.md)] comes the equivalent of [teaching tips](/windows/uwp/design/controls-and-patterns/dialogs-and-flyouts/teaching-tip) that you can add to your [!INCLUDE [prod_short](developer/includes/prod_short.md)] solution. For more information, see ***.
 
 ### Guidelines for tooltip text
 
