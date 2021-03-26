@@ -13,7 +13,7 @@ ms.service: "dynamics365-business-central"
 ---
 # Upgrading Permissions Sets and Permissions
 
-[!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1 (v18) introduced a new model for permissions. In previous versions, permission sets and permissions are defined only as data, which means they're stored in the tables of the application and tenant databases. Permission sets and permissions can now be defined in AL code. They're created by using the `permissionset` and `permissionsetextension` objects in AL code, then packaged in extensions. See [Entitlements and Permissions](https://review.docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-entitlements-and-permissionsets-overview?branch=permissionset) to learn more.
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1 (v18) introduced a new model for permissions. In previous versions, permission sets and permissions are defined only as data, which means they're stored in the tables of the application and tenant databases. Permission sets and permissions can now be defined in AL code. They're created by using the `permissionset` and `permissionsetextension` objects in AL code, then packaged in extensions. See [Entitlements and Permissions](../developer/devenv-entitlements-and-permissionsets-overview.md) to learn more.
 
 This change has implications on upgrade, which are discussed in this article.
 
@@ -80,8 +80,8 @@ If you've customized Microsoft permission sets, it's important to know what you'
 
    |If the change|Then|See...|
    |----|----|---|
-   |Only added new permissions to an existing permission set|Create an AL permission set extension object with the added permissions.|[Permission Set Extension Object](https://review.docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-permissionset-ext-object?branch=permissionset)|
-   |Removed or changed permissions in a permission set|For these type of changes, you'll create an AL permission set object.<ol><li>Make a copy of version 18 AL permission set file.</li><li>Modify the copy to include the customizations you want.</li></ol> |[Permission Set Object](https://review.docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-permissionset-object?branch=permissionset)
+   |Only added new permissions to an existing permission set|Create an AL permission set extension object with the added permissions.|[Permission Set Extension Object](../developer/devenv-permissionset-ext-object.md)|
+   |Removed or changed permissions in a permission set|For these type of changes, you'll create an AL permission set object.<ol><li>Make a copy of version 18 AL permission set file.</li><li>Modify the copy to include the customizations you want.</li></ol> |[Permission Set Object](../developer/devenv-permissionset-object.md)
 
 3. Create an AL project for version 18. Include the permission set files that you created in step 2 and other custom permission sets generated in step 1.6.
 
@@ -97,7 +97,7 @@ If you've customized Microsoft permission sets, it's important to know what you'
 ## Continue using the permission sets defined as data
 
 > [!NOTE]
-> The capability to use permission sets defined as data has been deprecated and will be removed in an upcoming release. For more information, see [Deprecated Features in W1](https://review.docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/upgrade/deprecated-features-w1?branch=permissionset#permissions).
+> The capability to use permission sets defined as data has been deprecated and will be removed in an upcoming release. For more information, see [Deprecated Features in W1](deprecated-features-w1.md#permissions).
 
 Your application can use permission sets from various sources, like Microsoft, partners, extensions, and user-defined permission sets. When you upgrade, the existing permission sets and permissions stored as data aren't affected during upgrade. They'll exist as before in the database, even after upgrade. If you have customized Microsoft permission sets, you'll probably want to keep them up to date with the latest from Business Central.
 
@@ -108,7 +108,7 @@ Your application can use permission sets from various sources, like Microsoft, p
     > [!IMPORTANT]
     > If you're upgrading the application, either exclude the SUPER permission set when exporting or be sure to remove it later from the XML file that you'll import. You can't replace or modify the SUPER permission set. If you're doing a technical upgrade, you'll have to include the SUPER permission set.
 
-    For more information, see [To export and import a permission set](https://docs.microsoft.com/dynamics365/business-central/ui-define-granular-permissions#to-export-and-import-a-permission-set).
+    For more information, see [To export and import a permission set](/dynamics365/business-central/ui-define-granular-permissions#to-export-and-import-a-permission-set).
 
 2. Install version 18 with the demonstration database.
 3. From the version 18 client, open the **Permissions Sets** page, and export the **System** permission sets to a file.
