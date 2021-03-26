@@ -53,6 +53,6 @@ For some reports, their design may make it impossible to run them as scheduled r
 
 ## See Also
 
-[Report and DataI](devenv-report-and-data-item-triggers.md)  
+[Report and DataItem triggers](devenv-report-and-data-item-triggers.md)  
 [Report Object](../devenv-report-object.md)  
 [Triggers](devenv-triggers.md)  
