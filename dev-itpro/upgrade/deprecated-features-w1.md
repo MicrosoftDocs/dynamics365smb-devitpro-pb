@@ -178,7 +178,7 @@ When we move, remove, or replace an object, breaking changes can result in other
 
 ## Features that are available only in the online version
 <!--Should we include a section about this?-->
-Some features are available only under very specific circumstances, or not at all intended for use in on-premises versions of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. For a list and descriptions of those features, see [Features not implemented in on-premises deployments](/dynamics365/business-central/dev-itpro/features-not-implemented-on-premises).
+Some features are available only under very specific circumstances, or not at all intended for use in on-premises versions of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. For a list and descriptions of those features, see [Features not implemented in on-premises deployments](../features-not-implemented-on-premises.md).
 
 ## See Also
 [AlAppExtensions repository](https://github.com/microsoft/ALAppExtensions)

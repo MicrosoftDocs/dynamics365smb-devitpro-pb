@@ -92,7 +92,7 @@ For more information, see [Getting Started with AL](../developer/devenv-get-star
 
 |Specification|Requirement|  
 |-|-|  
-|Supported operating systems|<ul><li>Windows 10 Pro, Enterprise, or Education \(64-bit edition\).</li><li>Windows Server 2019</li><li>Windows Server, version 1809 or later</li><li>Windows Server 2016 Standard, Essentials, or Datacenter.</li></ul>.|  
+|Supported operating systems|<ul><li>Windows 10 Pro, Enterprise, or Education \(64-bit edition\).</li><li>Windows Server 2019 (Datacenter, Standard)</li><li>Windows Server, version 1809 or later</li><li>Windows Server 2016 Standard, Essentials, or Datacenter.</li></ul>.|  
 |Hardware resources|<ul><li>Hard disk space: 500 MB.</li><li>Memory: 2 GB.|  
 |[!INCLUDE[crm](../developer/includes/crm_md.md)] integration|<ul><li>Windows Identity Framework.<br />For a list of supported [!INCLUDE[crm](../developer/includes/crm_md.md)] versions, see [Microsoft Dynamics 365 for Sales Integration Requirements](system-requirement-business-central.md#CRM).|  
 |Additional software|<ul><li>Microsoft .NET Framework 4.7.2 or 4.8</li><li>Windows PowerShell 4.0.|  
@@ -113,7 +113,7 @@ For more information, see [Getting Started with AL](../developer/devenv-get-star
 |Specification|Requirement|  
 |-|-|  
 |Supported operating systems|<ul><li>Windows 10 Pro, Enterprise, or Education \(64-bit edition\).</li><li>Windows Server 2019 (Datacenter, Standard)</li><li>Windows Server, version 1809 or later (Datacenter, Standard)</li><li>Windows Server 2016 Standard, Essentials, or Datacenter.</li></ul> |  
-|Hardware resources|For more information, see [Hardware and Software Requirements for Installing SQL Server](https://go.microsoft.com/fwlink/?LinkId=622999). From this page, you can also access requirements for other versions of SQL Server.|  
+|Hardware resources|For more information, see [Hardware and Software Requirements for Installing SQL Server](/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server). From this page, you can also access requirements for other versions of SQL Server.|  
 |SQL Server|<ul><li>Microsoft SQL Server 2019 Express, Standard, or Enterprise.</li><li>Microsoft SQL Server 2017 Express, Standard, or Enterprise.</li> <li>Microsoft SQL Server 2016 Express, Standard, or Enterprise.</li><li>Azure SQL Database Managed Instance, Elastic Pool, or Single Database.</li></ul>|  
 |Service Packs and Cumulative Updates| Unless explicitly stated, all released Service Packs and Cumulative Updates of the above Microsoft SQL Server versions are supported. It is recommended to always be on the latest released Service Pack and Cumulative Update.|
 |Additional information|[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] installs the following software if it isn't already present on the target computer:<ul><li>SQL Server 2016 Express \(64-bit edition\).<br>If the operating system on the target computer does not support SQL Server 2016 Express, Setup displays a pre-requisite warning. In this case, you should exit Setup and then update the operating system on the computer to one that does support SQL Server 2016 Express. Then run Setup again.</li></ul>|  
@@ -163,7 +163,7 @@ The following table shows the minimum system requirements for the [!INCLUDE[prod
 
 |Specification|Requirement|  
 |-|-|  
-|Microsoft Dynamics CRM versions|<ul><li>Microsoft Dynamics CRM 2015 or Microsoft Dynamics CRM 2016<BR />Note: AD, IFD, and Claims authentication types are supported for above editions.</li><li>Microsoft Dynamics CRM Online 2015, Microsoft Dynamics CRM Online 2015 Update 1, or Microsoft Dynamics CRM Online 2016 Update 1 or Microsoft Dynamics 365<BR />Note: OAuth and Microsoft 365 authentication types are supported for these editions.</li></ul>For more information on authentication types, see [Connection strings in XRM tooling to connect to Dynamics 365](https://msdn.microsoft.com/library/mt608573.aspx).|
+|Microsoft Dynamics CRM versions|<ul><li>Microsoft Dynamics CRM 2015 or Microsoft Dynamics CRM 2016<BR />Note: AD, IFD, and Claims authentication types are supported for above editions.</li><li>Microsoft Dynamics CRM Online 2015, Microsoft Dynamics CRM Online 2015 Update 1, or Microsoft Dynamics CRM Online 2016 Update 1 or Microsoft Dynamics 365<BR />Note: OAuth and Microsoft 365 authentication types are supported for these editions.</li></ul>For more information on authentication types, see [Connection strings in XRM tooling to connect to Dynamics 365](/previous-versions/dynamicscrm-2016/developers-guide/mt608573(v=crm.8)).|
 |[!INCLUDE[prod_short](../developer/includes/prod_short.md)] Integration Solution (.zip)|For Dynamics CRM 2015, Dynamics CRM Online 2015, and Dynamics CRM Online 2015 Update 1:<ul><li>Use the DynamicsNAVIntegrationSolution.zip file that is found on the Dynamics NAV 2016 installation media (DVD) to install the solution.</li><li>Item Availability isn't supported on Dynamics CRM 2015, versions Update 1 and Online.</li></ul>For more information, see [Preparing Dynamics 365 for Sales for Integration](../administration/prepare-dynamics-365-for-sales-for-integration.md).      | 
 
 |Sales/Dynamics NAV/Business Central|2015/Update 1/online|2016/Update 1/online|Sales Enterprise (v8.x)|Sales Enterprise and Sales Professional (v9.x)|  
@@ -202,4 +202,4 @@ The following table shows the minimum system requirements for [!INCLUDE[prod_sho
 
 [Welcome to the Developer and IT-Pro Help for Business Central](../index.md)  
 [Product and Architecture Overview](product-and-architecture-overview.md)  
-[Deployment](Deployment.md)  
+[Deployment](Deployment.md)

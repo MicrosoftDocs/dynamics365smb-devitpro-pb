@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ---
 # Handling Merge Conflicts
-When you merge application changes by running the [Merge-NAVApplicationObject](https://go.microsoft.com/fwlink/?linkid=398884) cmdlet or the [Update-NAVApplicationObject](https://go.microsoft.com/fwlink/?linkid=398886) cmdlet, the differences are applied automatically if it is possible. However, when conflicts are detected, they are captured in **CONFLICT** files. The CONFLICT files clearly identify where two parties such as you and Microsoft have changed the same object or parts of it. You can open a CONFLICT file in Notepad, for example, and see the type of conflict, such as a code conflict or conflicting object property values. By clearly identifying the conflicts in this manner and automatically merging all other changes, you can more easily resolve the conflicts.  
+When you merge application changes by running the [Merge-NAVApplicationObject](/powershell/module/microsoft.dynamics.nav.model.tools/merge-navapplicationobject) cmdlet or the [Update-NAVApplicationObject](/powershell/module/microsoft.dynamics.nav.model.tools/update-navapplicationobject) cmdlet, the differences are applied automatically if it is possible. However, when conflicts are detected, they are captured in **CONFLICT** files. The CONFLICT files clearly identify where two parties such as you and Microsoft have changed the same object or parts of it. You can open a CONFLICT file in Notepad, for example, and see the type of conflict, such as a code conflict or conflicting object property values. By clearly identifying the conflicts in this manner and automatically merging all other changes, you can more easily resolve the conflicts.  
 
 ## Identifying Conflicts  
 The CONFLICT files describe differences that were not automatically merged. This includes conflicting code modifications, property settings, and application code. Each conflict is clearly marked in the corresponding application object text file in the RESULT folder. A copy of the files in ORIGINAL, MODIFIED, or TARGET that caused the conflict is added to subfolders to the RESULT folder. For example, if you run the Merge-NAVApplicationObject cmdlet on three different versions of codeunit 1, and a conflict is found, the RESULT folder will contain the following:  
@@ -45,4 +45,4 @@ In this example, the ApplicationBuild function is different in all three version
 ## See Also  
  [Merge Application Changes](merge-application-changes.md)   
  [Merging Application Objects using the Example Scripts](Merging-Application-Objects-using-the-Example-Scripts.md)   
- [Comparing and Merging Application Object Source Files](Comparing-and-Merging-Application-Object-Source-Files.md)   
+ [Comparing and Merging Application Object Source Files](Comparing-and-Merging-Application-Object-Source-Files.md)
