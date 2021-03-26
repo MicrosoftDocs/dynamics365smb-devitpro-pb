@@ -25,6 +25,7 @@ In the following sections you find descriptions of components you can use when a
 
   For more information, see [Get Users Started with the Checklist](onboarding-checklist.md).  
 - Banner
+
   For more information, see [Onboard New Users with the Welcome Banner](onboarding-welcome-banner.md).  
 - Teaching tips and tours
 
