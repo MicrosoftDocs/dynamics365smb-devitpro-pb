@@ -11,7 +11,7 @@ manager: edupont
 
 # Get Users Started with the Checklist
 
-When the user hits **Get started** on their Home page, a checklist is revealed inside the banner. The checklist provides users with an overview of their onboarding activities, while allowing them to learn and explore at their own pace. The checklist serves as a platform for surfacing page tours, guiding users in the product interface, and teaching users how to use the app in context. The checklist provides a sense of progression, nudging users to complete onboarding activities. Users can navigate between the tasks of the checklist at their own pace. Checklist tasks can point to pages or objects in [!INCLUDE [prod_short](../includes/prod_short.md)] or point to external URLs. Read more about the checklist content in the [Prerequisites for creating checklist items](#prerequisites-for-creating-checklist-items)section.
+When the user hits **Get started** on their Home page, a checklist is revealed inside the banner. The checklist provides users with an overview of their onboarding activities, while allowing them to learn and explore at their own pace. The checklist serves as a platform for surfacing page tours, guiding users in the product interface, and teaching users how to use the app in context. The checklist provides a sense of progression, nudging users to complete onboarding activities. Users can navigate between the tasks of the checklist at their own pace. Checklist tasks can point to pages or objects in [!INCLUDE [prod_short](../includes/prod_short.md)] or point to external URLs. Read more about the checklist content in the [Prerequisites for creating checklist items](#prerequisites-for-creating-checklist-items) section.
 
 As the user progresses through the checklist by either completing or skipping the steps, the banner title and status indication will change accordingly to nudge and encourage users to finish. The user can at any point minimize the banner by hitting X and resume when ready.
 
@@ -69,7 +69,7 @@ To insert a record in the **Guided Experience Item** table use the façade funct
 - `InsertAssistedSetup`
 - `InsertLearnLink`
 
-For example, let's say that you have the page **My ISV Solution Setup** where the user can configure your app. You want to invite the business manager to access this page from the checklist. In this example, you must insert a new record in the Guided Experience Item with the type "Manual Setup" and provide the metadata as data (title, descriptions etc.) as described below.
+For example, let's say that you have the page **My ISV Solution Setup** where the user can configure your app. You want to invite the business manager to access this page from the checklist. In this example, you must insert a new record in the **Guided Experience Item** table with the type **Manual Setup** and provide the metadata as data (title, descriptions, and so on) as described below.
 
 After having created this record, it can now be referenced from and inserted into a checklist.
 
@@ -79,7 +79,7 @@ Do:
 
 - Keep the list short (preferably 6 items or less) to avoid a scrollbar and to ensure a successful start for users.
 
-- Keep Checklist titles and descriptions short and to the point.
+- Keep checklist titles and descriptions short and to the point.
 
 - When writing the description, it's good practice to include the benefit of doing the task. But be brief.
 
@@ -109,7 +109,7 @@ Don't:
 
 - **Checklist: LongerTitleCard**: Max 53 characters before truncation.
 
-- **Checklist: CardDescription:** scrollbar will appear if more than 4 lines...
+- **Checklist: CardDescription:** A scrollbar appears if the description renders as more than 4 lines.
 
 ### Auto completion settings and time estimates
 

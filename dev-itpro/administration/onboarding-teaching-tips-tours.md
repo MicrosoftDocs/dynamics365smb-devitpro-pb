@@ -13,7 +13,7 @@ manager: edupont
 
 A key element in educating users about [!INCLUDE [prod_short](../includes/prod_short.md)] pages and concepts is the *tour*. A tour is a sequence of *teaching tips*.  
 
-Teaching tips can be defined at the page level, the "page teaching tip" and followed by teaching tips at the control level, the *control teaching tips*. Both types of teaching tips can be created or overwritten by using the .AL properties **AboutTitle** and **AboutText**.
+Teaching tips can be defined at the page level, the *page teaching tip*, and be followed by teaching tips at the control level, the *control teaching tips*. Both types of teaching tips defined by the .AL properties **AboutTitle** and **AboutText**, and an extension can overwrite teaching tips in the default version.
 
 ## Page teaching tips
 
@@ -33,7 +33,7 @@ Teaching tips can be defined at the page level, the "page teaching tip" and foll
 
 - After the users dismisses a teaching tip and tour, they can at any point hit or hover over the page title. This will reopen the teaching tip and allow the user to re-take the tour.
 
-- On a page that is opened from the checklist, the tour is considered an invited tour" and the page teaching tip will have a "Go back" button that takes the user back to the checklist.
+- On a page that is opened from the checklist, the tour is considered an invited tour, and  the page teaching tip has a **Go back** button that takes the user back to the checklist.
 
 The following illustration shows a page teaching tip (4) that explains what the page is about and can invite the user to take a tour.  
 
@@ -51,7 +51,7 @@ There are different rules for teaching tips for lists versus cards and documents
 |-------------------------|-------------------------|
 | :::image type="content" source="../media/onboarding-teaching-tip-list.png" alt-text="illustration of List Page with teaching tip":::| :::image type="content" source="../media/onboarding-teaching-tip-card.png" alt-text="illustration of Entity Page with teaching tip":::|
 |**AboutTitle**: About sales invoices</br>**AboutText**: Sales invoices appear in this list until they are finalized and posted. After an invoice is posted, find it again in the Posted Sales Invoices list. |**AboutTitle**: About sales invoice details</br>**AboutText**: You can update and add to the sales invoice until you post it. If you leave the invoice without posting, you can return to it later from the list of ongoing invoices. |
-| Answers the following questions:</br><ul></br><li>What can I do on this page in general?</li></br><li>Is there a related entity I should know about?</li></br><li>The title for a List page teaching tip will typically use plural form, such as *About Sales Invoices*</li></br></ul> | Answers the following questions:</br><ul></br><li>What can I do on this page with this particular field or action?</li></br><li>What is the desired outcome of the task in this page?</li></br><li>The title for a card or document page teaching tip will typically be [entity name] + *details*,  such as *About sales invoice details*</li></br></ul> |
+| Answers the following questions:</br><ul></br><li>What can I do on this page in general?</li></br><li>Is there a related entity I should know about?</li></br><li>The title for a list page teaching tip will typically use the plural form, such as *About sales invoices*</li></br></ul> | Answers the following questions:</br><ul></br><li>What can I do on this page with this particular field or action?</li></br><li>What is the desired outcome of the task in this page?</li></br><li>The title for a card or document page teaching tip will typically be [entity name] + *details*,  such as *About sales invoice details*</li></br></ul> |
 
 ## What you should know about tours
 
