@@ -50,7 +50,8 @@ The `publisher` of an extension can be changed at any point before it is publish
 
 The `version` must be incremented any time a new version of your extension is uploaded to AppSource or as a per-tenant extension. While developing it in VSCode, you can keep using the same version and iterate on your code.
 
-
+Please be aware that in a Visual Studio Code workspace an app's name, publisher and version are part of identifying a project and a project dependency. Thus if any of these change it is recommended that you reload the workspace.
+ 
 ## See Also
 
 [JSON Files](devenv-json-files.md)  
