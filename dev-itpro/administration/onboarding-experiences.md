@@ -1,7 +1,7 @@
 ﻿---
 title: Onboarding experiences
 description: As a partner, you can get your customers up to speed in a hurry with the right onboarding story. Learn about checklists and teaching tips.
-ms.date: 03-26-2021
+ms.date: 03/26/2021
 ms.topic: conceptual
 ms.service: dynamics365-business-central
 author: sorenfriisalexandersen
@@ -35,5 +35,5 @@ In the following sections you find descriptions of components you can use when a
 [Get Users Started with the Checklist](onboarding-checklist.md)  
 [Onboard New Users with the Welcome Banner](onboarding-welcome-banner.md)  
 [Teaching tips and in-app tours for onboarding users](onboarding-teaching-tips-tours.md)  
-[[!INCLUDE[prod_long](developer/includes/prod_long.md)] User Assistance Model](../user-assistance.md)  
-[Extend, Customize, and Collaborate on the Help for [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](../help/contributor-guide.md)  
+[User Assistance Model](../user-assistance.md)  
+[Extend, Customize, and Collaborate on the Help](../help/contributor-guide.md)  

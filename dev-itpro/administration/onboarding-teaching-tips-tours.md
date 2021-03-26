@@ -1,7 +1,7 @@
 ﻿---
 title: Teaching tips and in-app tours for onboarding users
 description: Learn about the teaching tips that you can apply to your Business Central to help users get started.
-ms.date: 03-26-2021
+ms.date: 03/26/2021
 ms.topic: conceptual
 ms.service: dynamics365-business-central
 author: sorenfriisalexandersen
@@ -41,7 +41,7 @@ The following illustration shows a page teaching tip (4) that explains what the 
 
 The following illustration shows how selecting the page title (5) will reopen the teaching tip so that the user can re-take the tour.  
 
-:::image type="content" source="../media/-teaching-tip-title.png" alt-text="Illustration of page with a teaching tip pointing to the page title":::
+:::image type="content" source="../media/onboarding-teaching-tip-title.png" alt-text="Illustration of page with a teaching tip pointing to the page title":::
 
 ## How to write page teaching tips
 
