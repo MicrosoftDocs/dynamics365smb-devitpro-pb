@@ -43,6 +43,9 @@ To create an application database, for either a single-tenant or multitenant dep
 
 - If you use the cmdlet with an existing database, the cmdlet modifies the existing database to include [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application tables and data. You configure a database beforehand, setting options that aren't done by the cmdlet, such as options for the data files (MDF/NDF/LDF) and their filegroups, [table partitioning](../administration/optimize-sql-data-access.md#TablePartitioning), and more.
 
+> [!TIP]
+> Starting in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1, the application database will automatically include the platform [symbols](../upgrade/upgrade-overview-v15.md#Symbols).
+
 To create an application database, complete the following steps:
 
 1. Run the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] as an administrator.
@@ -80,15 +83,15 @@ To create an application database, complete the following steps:
     For example:
 
     ```powershell
-    Set-NAVServerConfiguration BC160 -KeyName DatabaseName -KeyValue "MyBCApplicationDB"
+    Set-NAVServerConfiguration BC118 -KeyName DatabaseName -KeyValue "MyBCApplicationDB"
     ```
 
 4. Run the [Set-NAVApplication cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navapplication) to set the application version on the database.
 
-    To set the application version, use the `-ApplicationVersion` parameter. The value must have the format `major.minor.[build[.revision]]`, such as '15.1', '15.1.0', or 15.1.0.0'. For example:
+    To set the application version, use the `-ApplicationVersion` parameter. The value must have the format `major.minor.[build[.revision]]`, such as '18.1', '18.1.0', or 18.1.0.0'. For example:
 
     ```powershell
-    Set-NAVApplication BC160 -ApplicationVersion 15.1.0.0 -Force
+    Set-NAVApplication BC -ApplicationVersion 18.1.0.0 -Force
     ```
 
     This step is required to synchronize your tenant and extensions later. This step sets a value to the `applicationversion` column in the **$ndo$dbproperty** table of the application database.
@@ -104,7 +107,7 @@ To create an application database, complete the following steps:
     Run the [Sync-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/sync-navtenant) cmdlet to synchronize the tenant. For example:
 
     ```powershell
-    Sync-NAVTenant -ServerInstance BC160
+    Sync-NAVTenant -ServerInstance BC
     ```
 
     This step will create the tenant-related tables in the database.
@@ -125,7 +128,7 @@ Complete the followings step to create a new tenant database in a multitenant de
     To mount the tenant, use the [Mount-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/mount-navtenant) cmdlet. For example:
 
     ```powershell
-    Mount-NAVTenant -ServerInstance BC160 -DatabaseName "BCTenantDB" -DatabaseServer .\BCDEMO -Tenant BCTenant1 -AllowAppDatabaseWrite
+    Mount-NAVTenant -ServerInstance BC -DatabaseName "BCTenantDB" -DatabaseServer .\BCDEMO -Tenant BCTenant1 -AllowAppDatabaseWrite
     ```
 
     > [!NOTE]  
@@ -136,7 +139,7 @@ Complete the followings step to create a new tenant database in a multitenant de
     Use the [Sync-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/sync-navtenant) cmdlet. For example:
 
     ```powershell  
-    Sync-NAVTenant -ServerInstance BC160 -Tenant BCTenant1 -Mode Sync
+    Sync-NAVTenant -ServerInstance BC -Tenant BCTenant1 -Mode Sync
     ```
 
     This step will create the tenant-related tables in the database.
@@ -147,11 +150,14 @@ Complete the following steps to get the application up and running on your tenan
 
 1. Publish the system symbols and extensions that make up your application. For example, publish the system application, base application, Microsoft extensions, and third-party extensions.
 
-    See [Publishing and Installing an Extension](../developer/devenv-how-publish-and-install-an-extension-v2.md)
+    See [Publishing and Installing an Extension](../developer/devenv-how-publish-and-install-an-extension-v2.md).
+
+    For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1 and later, you don't have to publish the symbols, because they've been automatically published for you.
 
 2. Synchronize and install extensions on the tenant.
 
-    See [Publishing and Installing an Extension](../developer/devenv-how-publish-and-install-an-extension-v2.md)
+    See [Publishing and Installing an Extension](../developer/devenv-how-publish-and-install-an-extension-v2.md).
+
 
 3. Add a company to the database.
 

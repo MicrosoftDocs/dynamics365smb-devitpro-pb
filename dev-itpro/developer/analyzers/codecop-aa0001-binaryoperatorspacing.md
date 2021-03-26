@@ -2,7 +2,7 @@
 title: "There must be exactly one space character on each side of a binary operator such as := + - AND OR =."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 03/08/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # CodeCop Rule AA0001
-There must be exactly one space character on each side of a binary operator such as := + - AND OR =.  
+There must be exactly one space character on each side of a binary operator such as := + - AND OR =.
 
 ## Description
 There must be exactly one space character on each side of a binary operator such as := + - AND OR =. The parameter comma operator however, should have no spaces.

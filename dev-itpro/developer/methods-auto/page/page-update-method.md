@@ -2,7 +2,7 @@
 title: "Page.Update Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 01/22/2021
+ms.date: 02/15/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Page.Update Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Saves the current record and then updates the controls on the page. If you set the SaveRecord parameter to false, this method will not save the record before the page is updated.
 
