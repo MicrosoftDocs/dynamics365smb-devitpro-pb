@@ -40,6 +40,10 @@ The data must be exported into files to be included in the extension. To use the
     > [!WARNING]  
     > If you do not include a permission set with your extension, only users with the SUPER permission set will be able to use the extension.
 
+    > [!IMPORTANT]  
+    > With the latest version of [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] permissions are no longer defined as data in the application database. Permissions that can be created by using AL objects are called *system* permissions. For more information, see [Entitlements and Permission Sets Overview](devenv-entitlements-and-permissionsets-overview.md).
+
+
 ## To export web services
 
 1. Open the [!INCLUDE[bc_dev_shell](includes/bc_dev_shell.md)].

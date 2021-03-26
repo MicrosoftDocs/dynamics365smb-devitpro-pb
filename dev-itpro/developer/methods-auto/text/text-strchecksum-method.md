@@ -2,7 +2,7 @@
 title: "Text.StrCheckSum Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 02/15/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Text.StrCheckSum Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Calculates a checksum for a string that contains a number. If the source is empty, 0 is returned. Each char in the source and in the weight must be a numeric character 0-9, otherwise an exception is thrown. If the WeightString parameter is shorter then the source, it is padded with '1' up until the length of source. If the WeightString parameter is longer than the source, an exception is thrown.
 
@@ -32,7 +32,7 @@ This string contains the number for which you want to calculate a checksum. You 
         
 *WeightString*  
 &emsp;Type: [String](../string/string-data-type.md)  
-This string contains numbers that you want to use as weights when calculating the checksum. The default value is a string that contains StrLen(String) '1'-characters.
+This string contains numbers that you want to use as weights when calculating the checksum. The default value is a string that contains STRLEN(String) '1'-characters.
         
 *Modulus*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  

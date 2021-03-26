@@ -163,7 +163,7 @@ Add-on extensions which are already published to the tenant can be installed and
 
 There are three bound actions available on the **extensions** endpoint: `Microsoft.NAV.install`, `Microsoft.NAV.uninstall` and `Microsoft.NAV.uninstallAndDeleteExtensionData`.
 
-Issue a [POST extension](api/dynamics_extension_create.md) using the bound actions. See the example below.
+Issue a POST extension using the bound actions. See the example below.
 
 ```json
 POST https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/2.0/companies({companyId})/extensions({packageId})/Microsoft.NAV.install

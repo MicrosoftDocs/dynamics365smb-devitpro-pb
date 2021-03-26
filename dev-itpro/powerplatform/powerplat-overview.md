@@ -30,9 +30,9 @@ author: solsen
 To work with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] virtual tables, you must understand how [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] and virtual tables work. Therefore, the following documentation is a prerequisite:
 
 - [What is [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
-- [Table overview](/powerapps/maker/common-data-service/table-overview)
+- [Table overview](https://docs.microsoft.com/en-us/powerapps/maker/data-platform/entity-overview)
 - [Table relationships overview](/powerapps/maker/common-data-service/relationships-overview)
-- [Create and edit virtual tables that contain data from an external data source](/powerapps/maker/common-data-service/create-edit-virtual-tables)
+- [Create and edit virtual tables that contain data from an external data source](https://docs.microsoft.com/en-us/powerapps/maker/data-platform/create-edit-virtual-entities)
 - [Overview of creating apps in Power Apps](/powerapps/maker/)
 
 ## Virtual tables for Business Central
