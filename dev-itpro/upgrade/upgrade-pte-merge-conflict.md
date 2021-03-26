@@ -14,18 +14,17 @@ author: SusanneWindfeldPedersen
 
 # Upgrading Per-Tenant Extensions that Conflicts with Other Extensions
 
-In AL, all top-level objects are declared in the same global namespace. The extensions installed in an environment cannot have the same top-level object declared multiple times or controls/fields/dataitems with the same name defined multiple times in the same logical object i.e. a table extension cannot add a field with the same name as a field in the extended table. This topic shows how to upgrade an extension which declares a table or a field that conflicts with a table or a field declared by another extension.
+In AL, all top-level objects are declared in the same global namespace. The extensions installed in an environment cannot have the same top-level object declared multiple times or controls, fields, or dataitems with the same name defined multiple times in the same logical object. For example, this means that a table extension cannot add a field with the same name as a field in the extended table. This topic shows how to upgrade an extension which declares a table or a field that conflicts with a table or a field declared by another extension.
 
+## Two objects with the same name
 
-## Example
-
-Extension A defines
+If **Extension A** defines the following table
 
 ```al
 table 10 MyTable {}
 ```
 
-Extension B defines
+And **Extension B** defines the table below
 
 ```al
 table 20 MyTable {}
@@ -33,9 +32,9 @@ table 20 MyTable {}
 
 Extensions A and B cannot be installed in the same environment because the two tables have the same name. An error will be raised when the installation of the second extension is attempted and the installation will fail.
 
-## Example
+## Two objects with the same field name
 
-Extension A defines
+If **Extension A** defines the following table and field
 
 ```al
 table 10 MyTable 
@@ -44,7 +43,7 @@ table 10 MyTable
 }
 ```
 
-Extension B defines
+And **Extension B** defines the table and field below
 
 ```al
 tableextension 20 MyTableExt 
@@ -53,7 +52,7 @@ tableextension 20 MyTableExt
 }
 ```
 
-In this case, extension B will fail to compile because the field in the table extension has the same name as the field in the base table. Publishing extension B will fail with a compilation error.
+Then **Extension B** will fail to compile because the field in the table extension has the same name as the field in the base table. Publishing **Extension B** will fail with a compilation error.
 
 In general, we recommend using affixes for your object and element names to prevent this type of conflicts. For more information, see [Prefix and suffix for naming in extensions](../compliance/apptest-prefix-suffix.md).
 
