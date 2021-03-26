@@ -54,7 +54,11 @@ Specifies the timeout of the created session. If not specified a default timeout
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+
+
 ## See Also
 [Session Data Type](session-data-type.md)
 [Getting Started with AL](../../devenv-get-started.md)
 [Developing Extensions](../../devenv-dev-overview.md)  
+[Configuring Business Central Server - Default StartSession Timeout](../../../administration/configure-server-instance.md#General)  
