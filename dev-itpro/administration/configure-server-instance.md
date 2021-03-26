@@ -90,7 +90,7 @@ The following table describes fields on the **General** tab in the [!INCLUDE[adm
 |Lockout Failed Sign-In Attempts Window|LockoutPolicyFailedAuthenticationWindow|Specifies time window, in seconds, during which consecutive failed authentication attempts are counted. This setting works in conjunction with the **Account Lockout Max. Sign-In Attempts<!--Lockout - Failed Attempts Count-->** setting. When the number of failed sign-in attempts by a user hits the value of the **Account Lockout Max. Sign-In Attempts<!--Lockout - Failed Attempts Count-->** setting within this time window, the user account is disabled.<br /><br />Default: 0<br />Dynamically Updatable: No|
 |Max Concurrent Calls|MaxConcurrentCalls|The maximum number of concurrent client calls that can be active on this server instance.<br /><br />Range: 1 - 2,147,483,647<br /><br /> You can also use **MaxValue** as a value to indicate no limit.<br /><br />Default: 40<br />Dynamically Updatable: No|  
 |Max Data Rows Allowed to Send to Excel|MaxRowsToExportToExcel|Specifies the maximum number of rows that can be included in an Excel document that is generated from a list type page in the client.<br /><br /> If you don't want to have a limit on rows, set the value to **MaxValue**.<br /><br /> **Note:** This setting only pertains to list type pages in the client. For other pages types, like cards, the limit on rows is configured in the client.<br /><br />Default: MaxValue<br />Dynamically Updatable: Yes|
-|Maximum Session Recursion|MaximumSessionRecursionDepth|Specifies the maximum number of nested sessions that can be created before reaching infinite recursion. If the limit is exceeded, a runtime error occurs with the message: **Excessive recursive session creation detected, original session ID: \[id\], current session ID: \[id\]. This can occur, for example, if a session creates a new session inside the 'OnBeforeCompanyOpen' trigger.**<br /><br />Default: 1000000<br />Dynamically Updatable: Yes|
+|Maximum Session Recursion|MaximumSessionRecursionDepth|Specifies the maximum number of nested sessions that can be created before reaching infinite recursion. If the limit is exceeded, a runtime error occurs with the message: **Excessive recursive session creation detected, original session ID: \[id\], current session ID: \[id\]. This can occur, for example, if a session creates a new session inside the 'OnBeforeCompanyOpen' trigger.**<br /><br />Default: 14<br />Dynamically Updatable: Yes|
 |Maximum Stream Read Size|MaxStreamReadSize|Specifies the maximum number of bytes that can be read from a stream (InStream object) in a single AL read operation, such a READ or InStream.READTEXT function call. This setting pertains to UTF-8 and UTF-16 text encoding; not MS-DOS encoding.<br /><br />Default: 1000000<br />Dynamically Updatable: Yes|
 |<a name="multitenant"></a>Multitenant|Multitenant|Specifies if the [!INCLUDE[server](../developer/includes/server.md)] instance can be used in a multitenant environment.<br /><br /> Tenant databases can only be mounted on the [!INCLUDE[server](../developer/includes/server.md)] instance if this setting is selected. For more information, see [Multitenant Deployment Architecture](../deployment/Multitenant-Deployment-Architecture.md).<br /><br />Default: Not enabled<br />Dynamically Updatable: No|  
 |Network Protocol|NetworkProtocol|Specifies the network protocol for accessing the database.<br /><br /> Valid values: Default, Named, Sockets, MultiProtocol<br /><br /> Default: Default<br />Dynamically Updatable: No|
@@ -295,6 +295,7 @@ The task scheduler processes jobs and other processes on a scheduled basis. For 
 |  System Task Start Time  | TaskSchedulerSystemTaskStartTime| Specifies the time of day after which system tasks can start. The time is based on the time zone of the computer that is running the server instance. <br /><br />The value has the format hh:mm:ss.<br /><br />Default: 00:00:00 <br />Dynamically Updatable: Yes|
 |  System Task End Time  | TaskSchedulerSystemTaskEndTime| Specifies the time of day after which system tasks can't start. The time is based on the time zone of the computer that is running the server instance. <br /><br />The value has the format hh:mm:ss.<br /><br />Default: 23:59:59 <br />Dynamically Updatable: Yes|
 |*not available*|XmlMetadataCacheSize|For internal use only.<br /><br />Default: 500|
+S
 ## <a name="PBT"></a>Asynchronous Processing Settings
 
 [!INCLUDE[2019_releasewave2](../includes/2019_releasewave2.md)]
@@ -393,7 +394,7 @@ The following table describes settings that you can adjust for compatibility wit
 
 <sup><a name=2></a>2</sup> Introduced in [!INCLUDE[prod_short.md](../includes/prod_short.md)] 2021 release wave 1.
 
-
+recur
 [!INCLUDE [admin-tlswarning](../developer/includes/admin-tlswarning.md)]
 
 ## <a name="Upgrade"></a>Upgrade Settings
