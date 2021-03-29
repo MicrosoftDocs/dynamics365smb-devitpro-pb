@@ -103,8 +103,8 @@ This error message is raised because the system does not allow implicitly removi
 5. Import the data.  
     Import the data that has been backed up from the rapid start package or the external storage system used in step 2.
 6. Upgrade the environment.  
-    At this point, the conflict has been resolved and you should be able to update the environment. Schedule an update for the sandbox and ensure it is successfully updated. If upgrade fails, troubleshoot the issue.
+    At this point, the conflict is resolved and you should be able to update the environment. Schedule an update for the sandbox and ensure it is successfully updated. If upgrade fails, troubleshoot the issue.
 
-Once our sandbox environment has been successfully updated to the next release, we will replicate steps 2-6 on our production environment. Before we do so, we will ensure that our customer will not be impacted by our changes and we will clearly communicate a maintenance window in which the work will be performed.
+Once the sandbox environment has been successfully updated to the next release, steps 2-6 on our production environment must be replicated. Before doing so, ensure that the customer will not be impacted by the changes and clearly communicate a maintenance window in which the work will be performed.
 
 ## See Also
