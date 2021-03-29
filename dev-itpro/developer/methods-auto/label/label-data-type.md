@@ -24,13 +24,14 @@ Denotes a string constant that can be optionally translated into multiple langua
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Parameters
-All of the parameters below are optional and the order is not enforced.
+
+All of the parameters below are *optional* and the order is not enforced.
 
 | Attribute   | Description|
 |-------------|--------------|
-|**Comment**  | It is used for general comments about the label, specifically about the placeholders in that label.|
+|**Comment**  | Used for general comments about the label, specifically about the placeholders in that label.|
 |**Locked**   | When Locked is set to **true**, the label should not be translated. Default value is **false**.|
-|**MaxLength**| It determines how much of the label is used.</br> `<br>If no maximum length is specified, the string can be any length.|
+|**MaxLength**| Determines how much of the label is used.</br> `<br>If no maximum length is specified, the string can be any length.|
 
 ## Syntax example
 
@@ -40,10 +41,12 @@ var
 ```
 
 ## Remarks
+
 The `Label` data type is used in .xlf files for translations. For more information, see [Working with Translation Files](../../devenv-work-with-translation-files.md). 
 
 For information about naming, see [CodeCop Rule AA0074](../../analyzers/codecop-aa0074-textconstlabelvariablenamesshouldhaveapprovedsuffix.md).
 
-## See Also  
+## See Also
+
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

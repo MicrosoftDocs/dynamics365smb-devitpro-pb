@@ -11,9 +11,11 @@ manager: edupont
 
 # Onboard New Users with the Welcome Banner
 
-When a user signs in to a new company for the first time, [!INCLUDE [prod_short](../includes/prod_short.md)] shows a welcome banner that provides a clear call-to-action. The following screenshot illustrates the banner on the Home page (1).  
+When a user signs in to a new company for the first time, [!INCLUDE [prod_short](../includes/prod_short.md)] shows a welcome banner that provides a clear call-to-action.  
 
 :::image type="content" source="../media/onboarding-banner.png" alt-text="illustration of Business Central with welcome banner with a clear call-to-action for where to get started.":::
+
+<sup>1</sup><a name="1"></a>The welcome banner on the Home page.
 
 The purpose of the banner is to give users a warm and personal welcome, reduce noise, provide a clear call to action to the get started tasks, without blocking users that wish to explore the product first.  
 

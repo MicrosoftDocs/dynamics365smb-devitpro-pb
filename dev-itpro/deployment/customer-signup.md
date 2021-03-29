@@ -19,6 +19,8 @@ You can invite customers and prospects to sign up for any number of Dynamics 365
 
 This means that you can show prospects a preview of what you are offering based on trials of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] and other Dynamics 365 apps.  
 
+[!INCLUDE [2021_releasewave1](../includes/2021_releasewave1.md)]: Adjust the onboarding checklist to fit your solution. For more information, see [Onboarding experiences in Business Central](../administration/onboarding-experiences.md).
+
 ## Prospects and trials
 
 Prospects can contact you if they have signed up for the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] [free trial](/dynamics365/business-central/across-preview). This means that you can become their CSP partner. For more information, see [Connect with customers](../administration/get-started-online.md#connect-with-customers).  

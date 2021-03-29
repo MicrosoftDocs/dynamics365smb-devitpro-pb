@@ -1,17 +1,17 @@
 ---
-title: System Requirements for Business Central 2020 Release Wave 2
-description: This article provides the specifications of minimum hardware and software requirements to install and run Business Central version 17 on-premises.
+title: System Requirements for Business Central 2021 Release Wave 1
+description: This article provides the specifications of minimum hardware and software requirements to install and run Business Central version 18 on-premises.
 ms.custom: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: conceptual
+ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 10/01/2020
+ms.date: 01/13/2021
 author: jswymer
 ---
-# System Requirements for [!INCLUDE[prod_long](../developer/includes/prod_long.md)] 2020 Release Wave 2
+# System Requirements for [!INCLUDE[prod_long](../developer/includes/prod_long.md)] 2021 Release Wave 1
 
-The following sections list the minimum hardware and software requirements to install and run [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises (version 17). **Minimum** means that later versions \(such as SP1, SP2, or R2 versions\) of a required software product are also supported.  
+The following sections list the minimum hardware and software requirements to install and run [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises (version 18). **Minimum** means that later versions \(such as SP1, SP2, or R2 versions\) of a required software product are also supported.  
 
 > [!NOTE]  
 > [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] installs some software if it's not already present in the target computer. For more information, see the "Additional Information" section for each component.  
@@ -24,7 +24,7 @@ The following table shows the minimum system requirements for the [!INCLUDE[prod
 
 |Specification|Requirement|
 |------|-----|  
-|Supported browsers|Recommended browsers:<ul><li>New Microsoft Edge, latest version</li><li>Google Chrome for Windows, latest version</li><li>Mozilla Firefox for Windows, latest version</li><li>Safari for macOS, latest version</li></ul>Other supported browsers:<ul><li>Internet Explorer 11, latest version</li><li>Microsoft Edge Legacy, latest version</li></ul>Cookies and JavaScript must be enabled in the browser.|
+|Supported browsers|<ul><li>New Microsoft Edge, latest version</li><li>Google Chrome for Windows, latest version</li><li>Mozilla Firefox for Windows, latest version</li><li>Safari for macOS, latest version</li></ul>Cookies and JavaScript must be enabled in the browser.|
 
 <!--
 ## <a name="NavApps"></a> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Tablet Client and Phone Client \(in a Browser\)
@@ -56,10 +56,10 @@ For the latest information, see the app in the Windows Store, App Store, or Goog
 
 |Specification|Requirement|  
 |------|-----|  
-|Excel|<ul><li>Sending data to Excel requires Microsoft Office 2019, Excel for web, or Excel mobile app for iOS or Android&trade;trade;.</li><li>Editing in Excel using the Excel Add-In requires Microsoft Office 2019 or Excel for web.</li></ul>|  
-|Word|<ul><li>Microsoft Office 2019, Word for web, or Word mobile app for iOS or Android&trade;trade;.</li></ul>|
-|Outlook|Please see [Business Inbox in Microsoft Outlook](system-requirement-business-central-v17.md#BusInboxOutlook).|  
-|Additional software|<ul><li>A third-party telephony or VoIP app such as Skype or Microsoft Teams is required for placing calls from [!INCLUDE[prod_short](../developer/includes/prod_short.md)].|  
+|Excel|<ul><li>Sending data to Excel requires Excel 2019, Excel on the web, or Excel mobile app for iOS or Android&trade;.</li><li>Editing in Excel using the Excel Add-In requires Microsoft Office 2019 or Excel on the web.</li></ul>|  
+|Word|<ul><li>Microsoft Office 2019, Word for the web, or Word mobile app for iOS or Android&trade;.</li></ul>|
+|Outlook|Please see [Business Inbox in Microsoft Outlook](system-requirement-business-central-v18.md#BusInboxOutlook).|  
+|Additional software|<ul><li>A third-party telephony or VoIP app such as Microsoft Teams is required for placing calls from [!INCLUDE[prod_short](../developer/includes/prod_short.md)].|  
 
 ## AL Development
 
@@ -70,7 +70,7 @@ The following table shows the minimum system requirements for customizing or ext
 |Supported operating systems|<ul><li>Windows Server 2019</li><li>Windows Server, version 1809 or later</li><li>Windows 10</li></ul>For information about the supported versions and their lifecycles, see [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).|
 |Required software|<ul><li>[Visual Studio Code](https://code.visualstudio.com/Download)</li><li>[AL language extension](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al)</li></ul>|
 |Hardware resources|<ul><li>Hard disk space: 500 MB.</li><li>CPU: four cores minimum</li><li>Memory:<br />16 GB for development only. <br />16 GB for developing and locally deploying small extensions (<1000 objects>).<br />32-64 GB for developing and locally deploying large extensions (>1000 objects).</li></ul>|
-|Reports|<ul><li>For creating and editing RDL report layouts:<ul><li>Report Builder for SQL Server 2016, or</li><li>Visual Studio 2017 with [Microsoft Rdlc Report Designer for Visual Studio](https://go.microsoft.com/fwlink/?linkid=857038) installed.</li></ul></li><li>For creating and editing Word report layouts:<ul><li>Word 2016 or later</li></ul></li></ul>|  
+|Reports|<ul><li>For creating and editing RDL report layouts:<ul><li>Report Builder for SQL Server 2016, or</li><li>Visual Studio 2017 with [Microsoft Rdlc Report Designer for Visual Studio](https://go.microsoft.com/fwlink/?linkid=857038) installed.</li></ul></li><li>For creating and editing Word report layouts:<ul><li>Word 2019 or later</li></ul></li></ul>|  
 
 For more information, see [Getting Started with AL](../developer/devenv-get-started.md).
 
@@ -82,7 +82,7 @@ The following table shows the minimum system requirements for [!INCLUDE[server](
 
 |Specification|Requirement|  
 |-----|-----|  
-|Supported operating systems|<ul><li>Windows 10 Pro, Enterprise, or Education \(64-bit edition\)</li><li>Windows Server 2019 (Datacenter, Standard)</li><li>Windows Server, version 1809 or later (Datacenter, Standard)</li><li>Windows Server 2016 (Datacenter, Standard)</li></ul>For information about the supported versions and their lifecycles, see [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).|
+|Supported operating systems|<ul><li>Windows 10 Pro, Enterprise, or Education \(64-bit edition\)</li><li>Windows Server 2019  (Datacenter, Standard)</li><li>Windows Server, version 1809 or later (Datacenter, Standard)</li><li>Windows Server 2016 (Datacenter, Standard)</li></ul>For information about the supported versions and their lifecycles, see [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).|
 |Hardware resources|<ul><li>Hard disk space: 500 MB.</li><li>Memory: 2 GB.|  
 |[!INCLUDE[crm](../developer/includes/crm_md.md)] integration|<ul><li>Windows Identity Framework.<br />For a list of supported [!INCLUDE[crm](../developer/includes/crm_md.md)] versions, see [Microsoft Dynamics 365 for Sales Integration Requirements](system-requirement-business-central.md#CRM).|  
 |Additional software|<ul><li>Microsoft .NET Framework 4.8</li><li>Windows PowerShell 4.0.|  
@@ -92,24 +92,23 @@ The following table shows the minimum system requirements for [!INCLUDE[server](
 
 |Specification|Requirement|  
 |----|----|  
-|Supported operating systems|<ul><li>Windows 10 Pro, Enterprise, or Education \(64-bit edition)</li><li>Windows Server 2019 (Datacenter, Standard)</li><li>Windows Server, version 1809 or later (Datacenter, Standard)</li><li>Windows Server 2016 (Datacenter, Standard)</li></ul>For information about the supported versions and their lifecycles, see [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).|  
-|Web server|<ul><li>Internet Information Services 10</li></ul>|   
+|Supported operating systems|<ul><li>Windows 10 Pro, Enterprise, or Education \(64-bit edition)</li><li>Windows Server 2019 (Datacenter, Standard)</li><li>Windows Server, version 2004 or later (Datacenter, Standard)</li><li>Windows Server 2016 (Datacenter, Standard)</li></ul>For information about the supported versions and their lifecycles, see [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).|  
+|Web server|<ul><li>Internet Information Services 10.|   
 |Additional software|<ul><li>Microsoft .NET Framework 4.8</li><li>Windows PowerShell 4.0.|  
-|Additional information|<ul><li>[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] installs the following software if it's not already present on the target computer.<ul><li>Microsoft .NET Core 1.0 Windows Server Hosting. This software is installed by [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] if not already present.</li><li>Microsoft .NET Framework 4.8</li><li>Internet Information Services 10 is installed with the required features enabled.</li></ul></li><li>For more information about configuring IIS, see [Configuring IIS](configure-iis.md)</li></ul>|  
+|Additional information|<ul><li>[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] installs the following software if it's not already present on the target computer.<ul><li>Microsoft .NET Core 2.1.14 Windows Server Hosting. This software is installed by [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] if not already present.</li><li>Microsoft .NET Framework 4.8</li><li>Internet Information Services 10 is installed with the required features enabled.</li></ul></li><li>For more information about configuring IIS, see [Configuring IIS](configure-iis.md)</li></ul>|  
 
-## <a name="SQLReq"></a>[!INCLUDE[prod_short](../developer/includes/prod_short.md)] Database Components for SQL Server
+## <a name="SQLReq"></a>[!INCLUDE[prod_short](../developer/includes/prod_short.md)] Database Components
 
-The following table shows the minimum system requirements for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database components for SQL Server.  
+The following table shows the minimum system requirements for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database components.  
 
 |Specification|Requirement|  
 |----|-----|  
-|Supported operating systems|<ul><li>Windows 10 Pro, Enterprise, or Education \(64-bit edition\)</li><li>Windows Server 2019 (Datacenter, Standard)</li><li>Windows Server, version 1809 or later (Datacenter, Standard)</li><li>Windows Server 2016  (Datacenter, Standard)</li></ul>For information about the supported versions and their lifecycles, see [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet). |  
-|Hardware resources|For more information, see [Hardware and Software Requirements for Installing SQL Server](/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server). From this page, you can also access requirements for other versions of SQL Server.|  
-|SQL Server|<ul><li>Microsoft SQL Server 2019 Express, Standard, or Enterprise.</li> <li>Microsoft SQL Server 2017 Express, Standard, or Enterprise.</li> <li>Microsoft SQL Server 2016 Express, Standard, or Enterprise (Service Pack 2 or later).</li><li>Azure SQL Database Managed Instance, Elastic Pool, or Single Database.</li></ul>|  
+|Hardware resources|For more information, see [Hardware and Software Requirements for Installing SQL Server](https://go.microsoft.com/fwlink/?LinkId=622999). From this page, you can also access requirements for other versions of SQL Server.|  
+|Database| Business Central supports database compatibility levels 150, 140, or 130. See https://docs.microsoft.com/en-us/sql/t-sql/statements/alter-database-transact-sql-compatibility-level?view=sql-server-ver15 for details on SQL Server Database compatibility levels. |  
 |Service Packs and Cumulative Updates| Unless explicitly stated, all released Service Packs and Cumulative Updates of the above Microsoft SQL Server versions are supported. it's recommended to always be on the latest released Service Pack and Cumulative Update.|
 |Additional information|[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] installs the following software if it's not already present on the target computer:<ul><li>SQL Server 2016 Express \(64-bit edition\).<br>If the operating system on the target computer doesn't support SQL Server 2016 Express, Setup displays a pre-requisite warning. In this case, you should exit Setup. Then, update the operating system on the computer to one that does support SQL Server 2016 Express and run Setup again.</li></ul>|  
 
-## <a name="HelpServer"></a> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Help Server Requirements
+<!--expected removal ## <a name="HelpServer"></a> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Help Server Requirements
 
 The following table shows the minimum system requirements for the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Help Server.  
 
@@ -120,6 +119,7 @@ The following table shows the minimum system requirements for the [!INCLUDE[prod
 |Web server|<ul><li>Internet Information Services 10.</li></ul>|  
 |Additional software|<ul><li>Microsoft .NET Framework 4.8</li></ul>|  
 |Additional information|<ul><li>[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] installs the following software if it's not already present on the target computer.<ul><li>Microsoft .NET Framework 4.8</li><li>Internet Information Services 10.</li></ul></li><li>Windows Search must be enabled on the computer that you install the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Help Server on.</li></ul>|  
+-->
 
 ## ADDITIONAL COMPONENTS AND FEATURES
 
@@ -138,11 +138,11 @@ The following table shows the minimum system requirements for using [!INCLUDE[pr
 
 |Specification|Requirement|  
 |-----|-----|
-|Supported Outlook Applications |<ul><li>Outlook 2019 or later</li><li>Outlook on the web<!--Outlook Web App--></li><li>Outlook Web App for iPad</li><li>Outlook Web App for iPhone</li><li> Outlook Web App for Android&trade;trade;.</li></ul>|
+|Supported Outlook Applications |<ul><li>Outlook 2019</li><li>Outlook on the web</li><li>Outlook for iOS</li><li>Outlook for Android&trade;.</li></ul>|
 |Supported Exchange Servers|<ul><li>Exchange Online</li><li>Exchange Server 2019<br />In deployments that use Exchange Server, the Exchange PowerShell endpoint must be accessible by [!INCLUDE[server](../developer/includes/server.md)].</li></ul>|
 |Supported Authentication|<ul><li>The [!INCLUDE[server](../developer/includes/server.md)] must be configured to run with NavUserPassword, ACS, or AAD Credentials Type.<br /> Also, the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)] must be configured for Secure Sockets Layer (SSL).</li></ul>|
-|Supported Browsers|<ul><li>When using Outlook on the web<!--the Outlook Web App (Microsoft Outlook Web App)-->, your computer must be running a supported browser listed in the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)] Requirements.</li></ul>|
-|Supported Operating Systems|<ul><li>When using Outlook Web App for iPad, iPhone, or Android&trade;, your mobile device must use a supported operating system that's listed in the [[!INCLUDE[nav_uni_app_md](../developer/includes/nav_uni_app_md.md)]](#DynNAVApp) section.</li></ul>|  
+|Supported Browsers|<ul><li>When using Outlook on the web, your computer must be running a supported browser listed in the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)] Requirements.</li></ul>|
+|Supported Operating Systems|<ul><li>When using Outlook for iOS or Outlook for Android&trade;, your mobile device must use a supported operating system that's listed in the [[!INCLUDE[nav_uni_app_md](../developer/includes/nav_uni_app_md.md)]](#DynNAVApp) section.</li></ul>|  
 
 ## <a name="Outlook"></a>Microsoft Outlook Legacy Add-In
 
@@ -174,10 +174,10 @@ The following table shows the minimum system requirements for [!INCLUDE[prod_sho
 
 |Specification|Requirement|  
 |-|-|  
-|Supported SharePoint servers|<ul><li>SharePoint Server 2016</li><li>SharePoint Online.</li></ul>|  
+|Supported SharePoint servers|<ul><li>SharePoint Server 2019</li><li>SharePoint Online.</li></ul>|  
 
 ## See Also
 
 [Welcome to the Developer and IT-Pro Help for Business Central](../index.md)  
 [Product and Architecture Overview](product-and-architecture-overview.md)  
-[Deployment](Deployment.md)
+[Deployment](Deployment.md)  

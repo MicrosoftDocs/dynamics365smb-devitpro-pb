@@ -91,6 +91,7 @@
 ## [Setting up the Excel Add-In](administration/configuring-excel-addin.md)
 ## [Network Configuration for the Excel Add-In](administration/configuring-network-for-addins.md)
 ## [Setting up App Key Vaults for Extensions](administration/setup-app-key-vault.md)
+## [Upgrading Per-Tenant Extensions that Conflicts with Other Extensions](upgrade/upgrade-pte-merge-conflict.md)
 ## [Upgrading AppSource Apps in Production](developer/devenv-upgrade-appsource-app-in-prod.md)
 ## Entitlements and Permissions
 ### [Entitlements and Permission Sets Overview](developer/devenv-entitlements-and-permissionsets-overview.md)
@@ -184,11 +185,11 @@
 <!-- ### Do cool demos -->
 <!-- ### Partner Center stuff -->
 <!-- Performance tests-->
-### [Onboarding experiences](administration/onboarding-experiences.md)
+### [Onboarding Experiences](administration/onboarding-experiences.md)
 ### [Onboard New Users with the Welcome Banner](administration/onboarding-welcome-banner.md)
 ### [Get Users Started with the Checklist](administration/onboarding-checklist.md)
 ### [Teaching tips and in-app tours for onboarding users](administration/onboarding-teaching-tips-tours.md)
-### [Setting Up Business Central](/dynamics365/business-central/setup?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### [Set Up Business Central](/dynamics365/business-central/setup?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Deploying a Tenant Customization](developer/devenv-deploy-tenant-customization.md)
 ### [Technical Support of Business Central](technical-support.md)
 <!--migrate to BC online-->
@@ -2548,6 +2549,7 @@
 ### [Deployment Overview](deployment/deployment.md)
 ### [Features not implemented in on-premises deployments](features-not-implemented-on-premises.md)
 ### System Requirements
+#### [2021 Release Wave 1](deployment/system-requirements-business-central-v18.md)
 #### [2020 Release Wave 2](deployment/system-requirement-business-central-v17.md)
 #### [2020 Release Wave 1](deployment/system-requirement-business-central-v16.md)
 #### [2019 Release Wave 2](deployment/system-requirement-business-central-v15.md)
