@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
 ms.service: "dynamics365-business-central"
-ms.date: 10/29/2020
+ms.date: 04/01/2021
 ---
 # Upgrading to [!INCLUDE[prod_long](../developer/includes/prod_long.md)] On-Premises Spring 2019 (v.14)
 

@@ -2,7 +2,7 @@
 title: "Application lifecycle management for solutions that use virtual tables"
 description: "Lifecycle management for Microsoft Dataverse tables end-to-end solutions"
 ms.custom: na
-ms.date: 11/26/2020
+ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na

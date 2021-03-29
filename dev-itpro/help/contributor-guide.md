@@ -6,7 +6,7 @@ ms.custom: na
 ms.reviewer: na
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
-ms.date: 10/27/2020
+ms.date: 04/01/2021
 ms.author: edupont
 ---
 

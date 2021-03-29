@@ -3,7 +3,7 @@ author: dmc-dk
 ms.service: dynamics365-business-central
 ms.topic: include
 ms.reviewer: edupont
-ms.date: 11/25/2020
+ms.date: 04/01/2021
 ms.author: dmitrych
 ---
 1. Log in to [aka.ms/cdx](https://aka.ms/cdx) using your partner account.

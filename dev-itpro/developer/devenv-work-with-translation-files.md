@@ -2,7 +2,7 @@
 title: "Working with Translation Files"
 description: "How to work with translations, multilanguage, and XLIFF files in Business Central"
 ms.custom: na
-ms.date: 10/08/2020
+ms.date: 04/01/2021
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: solsen

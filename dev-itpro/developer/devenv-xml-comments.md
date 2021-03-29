@@ -3,7 +3,7 @@ title: "XML Comments in Code"
 description: "Adding documentation to AL code by including XML elements in special syntax."
 ms.custom: na
 ms.author: solsen
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

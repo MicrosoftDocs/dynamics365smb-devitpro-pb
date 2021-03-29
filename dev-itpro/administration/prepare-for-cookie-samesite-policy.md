@@ -2,7 +2,7 @@
 title: Cookie Samesite policy
 description: Deploy and administer the Web server to support the latest in browser cookie-handling policies.
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 10/28/2020
+ms.date: 04/01/2021
 ---
 
 # Resources for Help and Support for [!INCLUDE[prod_long](includes/prod_long.md)]

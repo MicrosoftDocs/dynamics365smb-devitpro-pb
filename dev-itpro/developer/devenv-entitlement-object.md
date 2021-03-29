@@ -3,7 +3,7 @@ title: "Entitlement Object"
 description: "Description of the entitlement object in AL for Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 11/30/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

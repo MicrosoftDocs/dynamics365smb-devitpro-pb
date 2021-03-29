@@ -6,7 +6,7 @@ ms.custom: na
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
-ms.date: 03/01/2021
+ms.date: 04/01/2021
 ---
 
 # Dynamics 365 Business Central On-Premises 2020 Release Wave 2 Updates

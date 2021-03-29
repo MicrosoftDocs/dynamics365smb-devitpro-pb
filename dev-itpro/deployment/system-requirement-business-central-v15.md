@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
-ms.date: 10/29/2020
+ms.date: 04/01/2021
 ---
 # System Requirements for [!INCLUDE[prod_long](../developer/includes/prod_long.md)] 2019 Release Wave 2
 
