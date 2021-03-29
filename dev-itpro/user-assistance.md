@@ -34,52 +34,44 @@ The user assistance concept of *Get Started* is not just about getting started w
 
 Assistance in the shape of wizards is helpful for set up or filling in data for a complicated report, for example. Home pages that are designed for a particular role or job help users get started with their daily work – they can easily get to their most important tasks, and that means that [!INCLUDE[prod_short](developer/includes/prod_short.md)] helps them get their work done more efficiently.  
 
-<!-- TODO: Reference to UX guidelines -->
+### Checklist
+
+[!INCLUDE [2021_releasewave1](includes/2021_releasewave1.md)]
+
+To help users set up [!INCLUDE [prod_short](includes/prod_short.md)] on the first day, administrators can add required steps to the checklist.
+
+### Teaching tips and tours
+
+[!INCLUDE [2021_releasewave1](includes/2021_releasewave1.md)]
+
+[!INCLUDE [ua-teaching-tips](includes/ua-teaching-tips.md)]
 
 ## Help users get unblocked
 
-Even the best designed user interface can still be confusing to some. It can be difficult to predict what users will find confusing, and that is why the base application includes descriptions for all controls and actions that can be accessed when you choose the caption of the control or action. In combination with descriptive captions and instructional text, these tooltips, or callouts, are our current implementation of *embedded user assistance*, which is an important principle in today's world of software design.  
+Even the best designed user interface can still be confusing to some. It can be difficult to predict what users will find confusing, and that is why the base application includes descriptions for all controls and actions that can be accessed when you choose the caption of the control or action. In combination with descriptive captions and instructional text, these tooltips, or callouts, constitutes the larger part of our current implementation of *embedded user assistance*, which is an important principle in today's world of software design.  
 
 The tooltips help users unblock themselves by providing an answer to the most likely questions the users might have, such as "What data can I input here?" or "What is the data used for?". Keep tooltips in mind when you develop the user interface of your solution.  
 
 :::image type="content" source="media/ua_tooltip_standard.png" alt-text="A standard tooltip for a field on a card page.":::
 
-Table fields can be read-only in one page and editable in another so the tooltips describe the difference. In [!INCLUDE [prod_short](developer/includes/prod_short.md)], this type of "What is this field?"-content is embedded in the page objects, and resource files can be used for translated user interfaces. For more information, see [Working with Translation Files](developer/devenv-work-with-translation-files.md).  
+These descriptions are applied to controls on pages rather than table fields. Table fields can be read-only in one page and editable in another, so the tooltips describe the difference. In [!INCLUDE [prod_short](developer/includes/prod_short.md)], this type of "What is this field?"-content is embedded in the page objects, and resource files can be used for translated user interfaces. For more information, see [Working with Translation Files](developer/devenv-work-with-translation-files.md).  
 
 Most tooltips end with an automatically generated link to *learn more* as described in the [Help users learn more](#help-users-learn-more) section; however, tooltips for actions do not have *Learn more* links:
 
 :::image type="content" source="media/ua_tooltip_client.png" alt-text="A tooltip for an action without Learn More link.":::
 
-Users can always use the Ctrl+F1 keyboard shortcut to access the *learn more* content that is configured for the currently-selected item in the user interface.
+> [!TIP]
+> Users can always use the Ctrl+F1 keyboard shortcut to access the *learn more* content that is configured for the currently-selected item in the user interface.
 
-The tooltips in [!INCLUDE [prod_short](developer/includes/prod_short.md)] are conceptually similar to *[field descriptions](/dynamics365/fin-ops-core/fin-ops/get-started/view-export-field-descriptions?toc=/dynamics365/finance/toc.json)* in Dynamics 365 Finance and related apps, and *[flyouts](/windows/uwp/design/controls-and-patterns/dialogs-and-flyouts/flyouts)* in the Fluent Design guidelines. With [!INCLUDE [2021_releasewave1](includes/2021_releasewave1.md)] comes the equivalent of [teaching tips](/windows/uwp/design/controls-and-patterns/dialogs-and-flyouts/teaching-tip) that you can add to your [!INCLUDE [prod_short](developer/includes/prod_short.md)] solution. For more information, see ***.
+The tooltips in [!INCLUDE [prod_short](developer/includes/prod_short.md)] are conceptually similar to *[field descriptions](/dynamics365/fin-ops-core/fin-ops/get-started/view-export-field-descriptions?toc=/dynamics365/finance/toc.json)* in Dynamics 365 Finance and related apps, and *[teaching tips](/windows/uwp/design/controls-and-patterns/dialogs-and-flyouts/teaching-tip)* in the Universal Windows Platform's Fluent Design guidelines. With [!INCLUDE [2021_releasewave1](includes/2021_releasewave1.md)] comes another interpretation of teaching tips that you can add to your [!INCLUDE [prod_short](developer/includes/prod_short.md)] solution. For more information, see ***.
 
 ### Guidelines for tooltip text
 
-The Microsoft user assistance model requires a tooltip for all controls of type Action and Field that exist on page objects. Follow these guidelines:
+[!INCLUDE [ua-tooltips](includes/ua-tooltips.md)]
 
-- If the control is a field, begin with the verb *Specifies*.
-- If the control is an action, begin with a verb in the imperative form , such as *Calculate* or *View*.
-- Include the most valuable information that users need to perform the task(s) that the field or action supports.
+#### Examples
 
-    For example, for the **Post** action, do not write *Post the document*. Write, for example, *Update ledgers with the amounts and quantities on the document or journal lines*.  
-- Describe complex options in tooltips for option fields.
-
-    Use a colon to call out the option name and its description. See example 3 below.
-- Try to not exceed 200 characters including spaces.
-
-    This makes the tooltip easier to scan so the user can get unblocked quickly. However, the UI will render longer tooltip text if you want to provide more detailed user assistance.  
-- Do not use line breaks in the tooltip text.
-
-    The tooltip cannot render formatting or line breaks.
-
-**Examples:**
-
-|Control Name  |Tooltip  |
-|--------------|---------|
-|**Password** field |Specifies your company's password to the service that converts bank data. The password that you enter in this field must be the same as on the service provider's sign-on page. </br>(175 characters including spaces) |
-|**Entries** action |View the history of transactions that have been posted for the customer.</br> (72 characters including spaces)|
-|**Account Type** field|Specifies the purpose of the account. Total: Used to total a series of balances on accounts from many different account groupings. To use Total, leave this field blank. Begin-Total: A marker for the beginning of a series of accounts to be totaled that ends with an End-Total account. End-Total: A total of a series of accounts that starts with the preceding Begin-Total account. The total is defined in the Totaling field. </br>(522 characters including spaces)|
+[!INCLUDE [ua-tooltips-examples](includes/ua-tooltips-examples.md)]
 
 ## Help users learn more
 

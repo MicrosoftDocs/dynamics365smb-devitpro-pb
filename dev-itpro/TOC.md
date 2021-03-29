@@ -1,4 +1,4 @@
-# [Development and administration](index.md)
+﻿# [Development and administration](index.md)
 # [New and planned](/dynamics365/business-central/product-news?toc=/dynamics365/business-central/dev-itpro/toc.json)
 # Get started
 ## [Overview of business functionality](/dynamics365/business-central/across-business-functionality?toc=/dynamics365/business-central/dev-itpro/toc.json)
@@ -178,11 +178,16 @@
 #### [Update user permission](administration/api/dynamics_userpermission_update.md)
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 ### [Using Service-to-Service Authentication](administration/automation-apis-using-s2s-authentication.md)
+<!-- onboard customers-->
 ## Onboard your customers
 ### [Trials and Sign-ups](deployment/customer-signup.md)
 <!-- ### Do cool demos -->
 <!-- ### Partner Center stuff -->
 <!-- Performance tests-->
+### [Onboarding experiences](administration/onboarding-experiences.md)
+### [Onboard New Users with the Welcome Banner](administration/onboarding-welcome-banner.md)
+### [Get Users Started with the Checklist](administration/onboarding-checklist.md)
+### [Teaching tips and in-app tours for onboarding users](administration/onboarding-teaching-tips-tours.md)
 ### [Setting Up Business Central](/dynamics365/business-central/setup?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Deploying a Tenant Customization](developer/devenv-deploy-tenant-customization.md)
 ### [Technical Support of Business Central](technical-support.md)
