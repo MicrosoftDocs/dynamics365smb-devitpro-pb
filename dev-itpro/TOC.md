@@ -93,6 +93,7 @@
 ## [Setting up the Excel Add-In](administration/configuring-excel-addin.md)
 ## [Network Configuration for the Excel Add-In](administration/configuring-network-for-addins.md)
 ## [Setting up App Key Vaults for Extensions](administration/setup-app-key-vault.md)
+## [Upgrading Per-Tenant Extensions that Conflicts with Other Extensions](administration/upgrade-pte-merge-conflict.md)
 ## [Upgrading AppSource Apps in Production](developer/devenv-upgrade-appsource-app-in-prod.md)
 ## Environment Types
 ### [Production and Sandbox Environments](administration/environment-types.md)
