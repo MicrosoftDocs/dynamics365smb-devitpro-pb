@@ -5779,6 +5779,11 @@
     "source_path": "dev-itpro/administration/dynamics-automation-overview.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/administration/itpro-introduction-to-automation-apis",
     "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-symbols.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/devenv-get-started",
+    "redirect_document_id": false
    }
   ]
 }
