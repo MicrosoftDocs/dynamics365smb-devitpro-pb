@@ -105,7 +105,7 @@ This error message is raised because the system does not allow implicitly removi
 6. Upgrade the environment.  
     At this point, the conflict is resolved and you should be able to update the environment. Schedule an update for the sandbox and ensure it is successfully updated. If upgrade fails, troubleshoot the issue.
 
-Once the sandbox environment has been successfully updated to the next release, steps 2-6 on our production environment must be replicated. Before doing so, ensure that the customer will not be impacted by the changes and clearly communicate a maintenance window in which the work will be performed.
+Once the sandbox environment has been successfully updated to the next release, steps 2-6 on the production environment must be replicated. Before doing so, ensure that the customer will not be impacted by the changes and clearly communicate a maintenance window in which the work will be performed.
 
 ## See Also
 
