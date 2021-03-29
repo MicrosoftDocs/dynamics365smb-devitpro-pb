@@ -18,7 +18,7 @@ If you want to bring the capabilities of the [!INCLUDE[d365_bus_central_md](../i
 * Reach more customers by showcasing your localization apps on Microsoft AppSource.
 * [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] provides a proven ERP platform and application for your localization apps which adapts functional areas to the requirements of the local market.  
 
-Localization apps are quite simply apps for [!INCLUDE [prodshort](../includes/prodshort.md)] - learn more about getting onboarded as an app publisher here: [Get Started with Building Apps](get-started.md).  
+Localization apps are quite simply apps for [!INCLUDE[d365_bus_central_md](../includes/d365_bus_central_md.md)] - learn more about getting onboarded as an app publisher here: [Get Started with Building Apps](get-started.md).  
 
 ## Localization apps functionality
 
