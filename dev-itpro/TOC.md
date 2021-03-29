@@ -91,6 +91,7 @@
 ## [Setting up the Excel Add-In](administration/configuring-excel-addin.md)
 ## [Network Configuration for the Excel Add-In](administration/configuring-network-for-addins.md)
 ## [Setting up App Key Vaults for Extensions](administration/setup-app-key-vault.md)
+## [Upgrading Per-Tenant Extensions that Conflicts with Other Extensions](upgrade/upgrade-pte-merge-conflict.md)
 ## [Upgrading AppSource Apps in Production](developer/devenv-upgrade-appsource-app-in-prod.md)
 ## Entitlements and Permissions
 ### [Entitlements and Permission Sets Overview](developer/devenv-entitlements-and-permissionsets-overview.md)
