@@ -108,3 +108,5 @@ This error message is raised because the system does not allow implicitly removi
 Once the sandbox environment has been successfully updated to the next release, steps 2-6 on our production environment must be replicated. Before doing so, ensure that the customer will not be impacted by the changes and clearly communicate a maintenance window in which the work will be performed.
 
 ## See Also
+
+[Upgrading AppSource Apps in Production](../developer/devenv-upgrade-appsource-app-in-prod.md)
