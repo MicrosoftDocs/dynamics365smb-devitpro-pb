@@ -2560,6 +2560,7 @@
 #### [2019 Release Wave 2 On-Premises Updates](deployment/update-versions-15.md)
 #### [2020 Release Wave 1 On-Premises Updates](deployment/update-versions-16.md)
 #### [2020 Release Wave 2 On-Premises Updates](deployment/update-versions-17.md)
+#### [2021 Release Wave 1 On-Premises Updates](deployment/update-versions-18.md)
 ### [Running a Container-Based Development Environment](developer/devenv-running-container-development.md)
 ### [Components](deployment/product-and-architecture-overview.md)
 ### [Planning](deployment/plan-for-deployment.md)
