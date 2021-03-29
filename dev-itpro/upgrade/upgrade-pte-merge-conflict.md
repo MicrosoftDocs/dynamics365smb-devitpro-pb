@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 
 # Upgrading Per-Tenant Extensions that Conflicts with Other Extensions
 
-In AL, all top-level objects are declared in the same global namespace. The extensions installed in an environment cannot have the same top-level object declared multiple times or controls, fields, or dataitems with the same name defined multiple times in the same logical object. For example, this means that a table extension cannot add a field with the same name as a field in the extended table. This topic shows how to upgrade an extension which declares a table or a field that conflicts with a table or a field declared by another extension.
+In AL, all top-level objects are declared in the same global namespace. The extensions installed in an environment cannot have the same top-level object declared multiple times or controls, fields, or dataitems with the same name defined multiple times in the same logical object. This means that a table extension, for example, cannot add a field with the same name as a field in the extended table. This topic shows how to upgrade an extension which declares a table or a field that conflicts with a table or a field declared by another extension.
 
 ## Two objects with the same name
 
@@ -30,7 +30,7 @@ And **Extension B** defines the table below
 table 20 MyTable {}
 ```
 
-Extensions A and B cannot be installed in the same environment because the two tables have the same name. An error will be raised when the installation of the second extension is attempted and the installation will fail.
+**Extension A** and **Extension B** cannot be installed in the same environment because the two tables have the same name. An error will be raised when the installation of the second extension is attempted and the installation will fail.
 
 ## Two objects with the same field name
 
