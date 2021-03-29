@@ -40,7 +40,7 @@ To help app publishers keep up with their update responsibilities, Microsoft pro
 
 - Training and coaching
 
-    Microsoft provides a set of tools, [training](/learn/browse/?products=dynamics-business-central&roles=developer), and documentation to help partners find the info they need to keep up with these responsibilities on continuous integration and continuous deployment. External providers, including ISV Development Centers, MasterVARs, and training centers, can provide in-person training and coaching.  
+    Microsoft provides a set of tools, [training](/learn/browse/?WT.mc_id=dyn365bc_landingpage-docs&products=dynamics-business-central&roles=developer), and documentation to help partners find the info they need to keep up with these responsibilities on continuous integration and continuous deployment. External providers, including ISV Development Centers, MasterVARs, and training centers, can provide in-person training and coaching.  
 
 - Service notifications
 
