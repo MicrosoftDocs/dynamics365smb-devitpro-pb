@@ -90,6 +90,57 @@ In the table 9203 "Barcode Encode Settings" you can configure smaller variations
 
 To show the barcode in a report, you must add the encoded string to the report dataset. 
 
+```al
+report 50100 ItemBarcodeReport
+{
+    UsageCategory = Administration;
+    ApplicationArea = All;
+    DefaultLayout = Word;
+    Caption = 'Item Barcodes';
+    WordLayout = 'ItemBarcodes.docx';
+
+    dataset
+    {
+        dataitem(Items; Item)
+        {
+            DataItemTableView = SORTING("No.");
+            RequestFilterFields = "No.";
+            RequestFilterHeading = 'Items';
+
+            column(No_; "No.")
+            {
+            }
+            column(Description; Description)
+            {
+            }
+
+            column(Unit_Price; "Unit Price")
+            {
+            }
+
+            column(Barcode; EncodedText)
+            {
+            }
+
+            trigger OnAfterGetRecord()
+            var
+
+                BarcodeSymbology: Enum "Barcode Symbology";
+                BarcodeFontProvider: Interface "Barcode Font Provider";
+
+            begin
+                BarcodeFontProvider := Enum::"Barcode Font Provider"::IDAutomation1D;
+                BarcodeSymbology := Enum::"Barcode Symbology"::"EAN-13";
+                EncodedText := BarcodeFontProvider.EncodeFont(GTIN, BarcodeSymbology);
+            end;
+        }
+    }
+
+    var
+        EncodedText: Text;
+}
+```
+
 ## Using a barcode font in the report layout
 
 Each of the supported symbologies have corresponding fonts installed in Business Central online. To use a barcode font in the report layout, simply mark the encoded string from the dataset with the font.
