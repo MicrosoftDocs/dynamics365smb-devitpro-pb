@@ -2,7 +2,7 @@
 title: "Report.Print Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 02/15/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,9 +14,9 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Report.Print Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
-Prints a specified report without running the request page. Instead of using the request page to obtain parameters at runtime, the method gets the parameter values as an input parameter string, typically from a RunRequestPage method call.
+Prints a specified report without running the request page. Instead of using the request page to obtain parameters at runtime, the method gets the parameter values as an input parameter string, typically from a RUNREQUESTPAGE method call.
 
 
 ## Syntax
@@ -30,7 +30,7 @@ The ID of the report that you want to print. If the report that you specify does
           
 *Parameters*  
 &emsp;Type: [String](../string/string-data-type.md)  
-A string of request page parameters as XML to use to run the report. The parameter string is typically retrieved from the return value a RunRequestPage method call.
+A string of request page parameters as XML to use to run the report. The parameter string is typically retrieved from the return value a RUNREQUESTPAGE method call.
         
 *PrinterName*  
 &emsp;Type: [String](../string/string-data-type.md)  

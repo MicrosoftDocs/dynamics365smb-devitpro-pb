@@ -43,12 +43,6 @@ This is illustrated in the following example:
 
 The response has no content; the response code is 204.
 
-## Navigation
-
-| Navigation |Return Type| Description |
-|:----------|:----------|:-----------------|
-|[file](dynamics_file.md)|file |Gets the file of the configurationPackage.|
-
 ## Properties
 
 | Property           | Type   |Description     |

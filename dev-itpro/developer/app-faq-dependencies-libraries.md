@@ -1,7 +1,7 @@
 ---
 title: "FAQ about Library & Dependency Apps in Business Central"
 description: "Get answers to some of your questions about library apps and dependency apps in Dynamics 365 Business Central"
-author: rweigel
+author: freddyk
 ms.custom: na
 ms.date: 10/01/2020
 ms.reviewer: edupont

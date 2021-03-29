@@ -2,7 +2,7 @@
 title: "Data Types and Methods in AL"
 ms.author: solsen
 ms.custom: na
-ms.date: 12/09/2020
+ms.date: 02/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -116,6 +116,7 @@ The following data types are available as part of the AL Language. Each data typ
 |[XmlText](xmltext/xmltext-data-type.md)|Represents the text content of an element or attribute.|
 |[XmlWriteOptions](xmlwriteoptions/xmlwriteoptions-data-type.md)|Represents the options configuring how XML is saved.|
 |[Action](action/action-option.md)|Represents the action that the user took on the page.|
+|[AuditCategory](auditcategory/auditcategory-option.md)|Represents an audit category for IfX audit telemetry.|
 |[ClientType](clienttype/clienttype-option.md)|Represents the type of the client executing the operation.|
 |[CommitBehavior](commitbehavior/commitbehavior-option.md)|Specifies whether commit is allowed within the scope of the method.|
 |[DataClassification](dataclassification/dataclassification-option.md)|Sets the classification of the data in the table or field.|
@@ -131,6 +132,7 @@ The following data types are available as part of the AL Language. Each data typ
 |[PageBackgroundTaskErrorLevel](pagebackgroundtaskerrorlevel/pagebackgroundtaskerrorlevel-option.md)|Specifies how an error in the page background task appears in the client.|
 |[ReportFormat](reportformat/reportformat-option.md)|Specifies the format of the report.|
 |[SecurityFilter](securityfilter/securityfilter-option.md)|Specifies how security filters are applied to the record.|
+|[SecurityOperationResult](securityoperationresult/securityoperationresult-option.md)|Represents security audit operation result.|
 |[TableConnectionType](tableconnectiontype/tableconnectiontype-option.md)|Use variables of this data type to specify the type of connection to an external database.|
 |[TelemetryScope](telemetryscope/telemetryscope-option.md)|Represents the emission scope of the telemetry signal.|
 |[TestPermissions](testpermissions/testpermissions-option.md)|Specifies a value that can be used to determine which permission sets are used on tests that are run by test codunits or test functions.|
