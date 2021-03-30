@@ -22,7 +22,7 @@ Entitlements cannot be defined in an extension because their use is restricted t
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## See Also
-For examples and guidance on fixing this diagnostic, see [!INCLUDE [prod_short](appsourcecop-as0093-entitlementobjectinappsourcenotallowed.md)]
+For examples and guidance on fixing this diagnostic, see [related AppSourceCop rule](appsourcecop-as0093-entitlementobjectinappsourcenotallowed.md).
 [PerTenantExtensionCop Analyzer](pertenantextensioncop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
