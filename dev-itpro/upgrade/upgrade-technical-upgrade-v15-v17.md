@@ -2,7 +2,7 @@
 title: "Technical Upgrade from Version 15 to Version 17" 
 description: Describes how to do a technical upgrade from Business Central 15 to 17
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

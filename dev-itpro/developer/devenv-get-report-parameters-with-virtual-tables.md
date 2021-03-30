@@ -2,7 +2,7 @@
 title: Get Report Parameters using Virtual Tables
 description: A virtual table allows you to generate report parameters, XML string without invoking the report request page. 
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,7 +15,7 @@ author: SusanneWindfeldPedersen
 
 # Get Report Parameters using Virtual Tables
 
-A few virtual tables are added which can be used to generate the report parameters and XML string without actually invoking the report request page in UI. For more information, see [ReportRequest Page](./methods/devenv-runrequestpage-method.md).  
+A few virtual tables are added which can be used to generate the report parameters and XML string without actually invoking the report request page in UI. For more information, see [ReportRequest Page](./methods-auto/report/report-runrequestpage-method.md).  
 
 The following two virtual tables can display more information about request pages and reports:
 
@@ -103,7 +103,7 @@ codeunit 50103 "Report Xml Parameters Builder"
 ```
 
 ## See Also
-[SAVEAS Method](./methods/devenv-saveas-method.md)  
+[SAVEAS Method](./methods-auto/report/report-saveas-method.md)  
 [Debugging in AL](devenv-debugging.md)  
 [Developing Extensions](devenv-dev-overview.md)  
-[Microsoft .NET Interoperability from AL](devenv-get-started-call-dotnet-from-al.md)  
+[Microsoft .NET Interoperability from AL](devenv-get-started-call-dotnet-from-al.md)

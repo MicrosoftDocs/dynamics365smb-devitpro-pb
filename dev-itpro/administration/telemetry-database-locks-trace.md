@@ -8,7 +8,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.author: jswymer
 ---
 
@@ -101,7 +101,7 @@ Occurs when a database lock has timed out. Each **Database lock snapshot** trace
 |extensionVersion|Specifies the version of that was involved in the lock.|
 |sessionId|Specifies the ID of the session that requested the lock. |
 |snapshotId|Specifies the ID of the database snapshot. All messages in the snapshot share this ID.  |
-|sqlLockRequestMode|Specifies the lock mode that determines how concurrent transactions can access the resource. For more information, see [Lock Modes](https://aka.ms/sqldatabaselockmodes). |
+|sqlLockRequestMode|Specifies the lock mode that determines how concurrent transactions can access the resource. For more information, see [Lock Modes](/previous-versions/sql/sql-server-2008-r2/ms175519(v=sql.105)). |
 |sqlLockRequestStatus|Specifies the current status of the lock, which can be one of the following values:<ul><li>`CNVRT` - means that the lock is transitioning from another mode, but the conversion is blocked by another process that holds a lock with a conflicting mode.</li><li>`GRANT` - means that the lock is active.</li><li>`WAIT`- means that the lock is blocked by another process that holds a lock with a conflicting mode.</li></ul> |
 |sqlLockResourceType|Specifies the database resource affected by the lock. For example, `DATABASE`, `FILE`, `OBJECT`, `PAGE`, `KEY`, and more. |
 |sqlServerSessionId|Specifies the ID of the SQL server session that requested the lock. |
@@ -112,4 +112,4 @@ Occurs when a database lock has timed out. Each **Database lock snapshot** trace
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Enabling Application Insights for Tenant Telemetry On-Premises](telemetry-enable-application-insights.md)  
-[Enable Sending Telemetry to Application Insights](tenant-admin-center-telemetry.md#appinsights)  
+[Enable Sending Telemetry to Application Insights](tenant-admin-center-telemetry.md#appinsights)

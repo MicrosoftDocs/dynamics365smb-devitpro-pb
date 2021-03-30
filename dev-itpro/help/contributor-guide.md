@@ -6,7 +6,7 @@ ms.custom: na
 ms.reviewer: na
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
-ms.date: 10/27/2020
+ms.date: 04/01/2021
 ms.author: edupont
 ---
 
@@ -167,7 +167,7 @@ If you do not want to collaborate with Microsoft on the content, you can get the
 
 For publishing to your own website, you can use the [HtmlFromRepoGenerator](custom-help-toolkit-HtmlFromRepoGenerator.md) tool that is part of the custom Help toolkit for [!INCLUDE [prod_short](../developer/includes/prod_short.md)] to clone a repo and generate the corresponding HTML files.  
 
-Alternatively, you can create your own tooling and processes around [DocFx](https://dotnet.github.io/docfx/), which is an open-source tool for converting markdown files. This section provides some guidance on how you can use DocFx to publish HTML files from your fork of one of the Microsoft repos. You can find additional tips in the [Custom Help Toolkit](custom-help-toolkit.md) article.  
+Alternatively, you can create your own tooling and processes around [DocFx](https://dotnet.github.io/docfx/), which is an open-source tool for converting markdown files. This section provides some guidance on how you can use DocFx to publish HTML files from your fork of one of the Microsoft repos *without* using the [HtmlFromRepoGenerator](custom-help-toolkit-HtmlFromRepoGenerator.md) tool. You can find additional tips in the [Custom Help Toolkit](custom-help-toolkit.md) article.  
 
 > [!TIP]
 > You can also use DocFx to generate content for the legacy Dynamics NAV Help Server. In that case, use the NAV docfx.json file from [dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs).
@@ -186,13 +186,15 @@ Alternatively, you can create your own tooling and processes around [DocFx](http
     |----------|-------------|
     |**dest**  | Specifies the output folder of the generated HTML files, such as `c:\Working\output\`. |
     |**template**     | Specifies the templates that the HTML files will be generated after. The default for Microsoft is blank, but the value can be a string or an array.|
-    |**globalMetadata**  | Contains metadata that will be applied to every file, in key-value pair format. We encourage you to use this property to apply the `ROBOTS: NOINDEX, NOFOLLOW` metadata to each HTML file. The intent is that search engines will find Microsoft's original content on the docs.microsoft.com site rather than any customizations that you and hundreds of other may have published. For an example, see the NAVdocfx.json file. If you use the NAVdocfx.json file to build HTML files for non-Microsoft functionality, then change the value of the `ROBOTS` property. You can also add other global metadata, or metadata that applies to specific subfolders.  |
+    |**globalMetadata**  | Contains metadata that will be applied to every file, in key-value pair format.  You can also add other global metadata, or metadata that applies to specific subfolders.  |
     |**fileMetadata**|Contains metadata that will be applied to specific files, based on the specified parameters, in key-value pair format. The default is currently blank.|
     |**markdownEngineName**|Specifies the "flavor" of MarkDown to use to build the HTML files. The default is `markdig`.|
 
     For more information, see the [Properties for build](https://dotnet.github.io/docfx/tutorial/docfx.exe_user_manual.html#32-properties-for-build) section in the DocFx user manual.
 
     The docfx.json files in the Microsoft repos have additional settings for the docs.microsoft.com site. If you build the HTML files based on the docfx.json in the Microsoft repos, make sure that you have configured it for your needs.  
+
+    For example, in the globalMetadata section, set the ROBOTS property. [!INCLUDE [ua-robots](../includes/ua-robots.md)]
 
 3. If you have cloned a localization repo such as [dynamics365smb-docs-pr.da-dk](https://github.com/MicrosoftDocs/dynamics365smb-docs-pr.da-dk), you must also clone the [dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs) repo and copy the content of the \business-central\media\ folder.
 
@@ -217,7 +219,7 @@ Alternatively, you can create your own tooling and processes around [DocFx](http
 The files are generated as .html files and stored in the output location that is specified in the docfx.json file.
 
 > [!IMPORTANT]
-> Depending on the website that the HTML files will be deployed to, you might not be able to use the table of contents file (TOC.html) that is generated in this process. That file is structured based on the configuration of the [https://docs.microsoft.com](https://docs.microsoft.com) site. If you use the legacy Dynamics NAV Help Server, then you must use the ToC.xml file instead.
+> Depending on the website that the HTML files will be deployed to, you might not be able to use the table of contents file (TOC.html) that is generated in this process. That file is structured based on the configuration of the [https://docs.microsoft.com]() site. If you use the legacy Dynamics NAV Help Server, then you must use the ToC.xml file instead.
 
 The table of contents on the docs.microsoft.com site is currently a MarkDown file, TOC.md, but we are planning to convert it to a YAML file in order to be more compliant with the docs.microsoft.com site. Once we have converted the TOC.md file to TOC.yml, you will still be able to use DocFx.exe to build HTML files, but you will have to port your customizations of the TOC.md file to the new YAML format.  
 
@@ -283,4 +285,4 @@ To translate content for either [!INCLUDE [prod_short](../developer/includes/pro
 [Atom](https://atom.io/)  
 [DocFx](https://dotnet.github.io/docfx/)  
 [Blog post: Extending and customizing the Help](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/14/extending-and-customizing-the-help-in-dynamics-365-business-central)  
-[Blog post: Collaborate on content for Business Central](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/14/collaborate-on-content-for-dynamics-365-business-central/)  
+[Blog post: Collaborate on content for Business Central](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/14/collaborate-on-content-for-dynamics-365-business-central/)

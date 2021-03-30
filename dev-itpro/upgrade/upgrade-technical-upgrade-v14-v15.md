@@ -2,7 +2,7 @@
 title: Technical Upgrade 
 description: The article explains how to upgrade the application code and how to merge code from different versions of the application.
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -219,7 +219,7 @@ The application database includes the **$ndo$dbproperty** table which stores the
 
 he Get-NavApplication cmdlet comes from the $ndo$dbproperty table in the database.
 
-To increase the application version of the application database, use the [Set-NAVApplication](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.management/set-navapplication) cmdlet to increase the application version number of the database to the version 15.0 application version.
+To increase the application version of the application database, use the [Set-NAVApplication](/powershell/module/microsoft.dynamics.nav.management/set-navapplication) cmdlet to increase the application version number of the database to the version 15.0 application version.
 
     ```
     Set-NAVApplication BC150 -ApplicationVersion 15.0.34737.0 -force

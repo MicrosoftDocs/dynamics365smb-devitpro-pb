@@ -2,7 +2,7 @@
 title: Install a version 15 update
 description: This article describes the tasks required for getting the monthly version 15 update applied to your Dynamics 365 Business Central on-premises.
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -328,7 +328,7 @@ Follow the next tasks to update the application code to the new features and hot
 You publish the System Application extension only if it was used in old solution. Add-on extensions include Microsoft and third- party extensions that were used in the old solution.
 
 > [!NOTE]
-> If a license update is required for a regulatory feature, customers can download an updated license from CustomerSource (see [How to Download a Microsoft Dynamics 365 Business Central License from CustomerSource](https://docs.microsoft.com/dynamics/s-e/)), and partners can download their customers' updated license from VOICE (see [How to Download a Microsoft Dynamics 365 Business Central Customer License from VOICE](https://mbs.microsoft.com/partnersource/northamerica/deployment/documentation/how-to-articles/howtodownloadcustomernavlicense)).
+> If a license update is required for a regulatory feature, customers can download an updated license from CustomerSource (see [How to Download a Microsoft Dynamics 365 Business Central License from CustomerSource](/dynamics/s-e/)), and partners can download their customers' updated license from VOICE (see [How to Download a Microsoft Dynamics 365 Business Central Customer License from VOICE](https://mbs.microsoft.com/partnersource/northamerica/deployment/documentation/how-to-articles/howtodownloadcustomernavlicense)).
 
 ## Upgrade System Application
 
@@ -568,4 +568,4 @@ This step is not required for the application at runtime, but it will be needed 
 [Synchronizing the Tenant Database and Application Database](../administration/synchronize-tenant-database-and-application-database.md)  
 [Version numbers in Business Central](../administration/version-numbers.md)  
 [Publish and Install an Extension](../developer/devenv-how-publish-and-install-an-extension-v2.md)  
-[Getting Started in AL](../developer/devenv-get-started.md)  
+[Getting Started in AL](../developer/devenv-get-started.md)

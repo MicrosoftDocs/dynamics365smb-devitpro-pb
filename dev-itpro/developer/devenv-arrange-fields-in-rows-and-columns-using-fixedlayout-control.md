@@ -2,7 +2,7 @@
 title: "Arranging Fields in Rows and Columns Using a Fixed Control"
 description: A Fixed control is used to arrange page fields in rows and columns, similar to a matrix-like format which is typically used to display statistical data.
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

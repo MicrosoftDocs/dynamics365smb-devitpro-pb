@@ -2,7 +2,7 @@
 title: "TestRequestPage Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 12/09/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # TestRequestPage Data Type
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Stores test request pages. A test request page part is a logical representation of a request page on a report. A test request page does not display a user interface (UI). The subtype of a test request page is the report whose request page you want to test.
 

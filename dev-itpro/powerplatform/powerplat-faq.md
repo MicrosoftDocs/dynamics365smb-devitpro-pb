@@ -2,7 +2,7 @@
 title: "Business Central virtual tables FAQ"
 description: "Frequently asked questions for working with Business Central virtual tables"
 ms.custom: na
-ms.date: 11/26/2020
+ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ author: solsen
 > The **Business Central Virtual Entity (Preview)** app available on AppSource is being updated to reflect new terminology with an upcoming release. This also applies to that terminology used in Business Central.
 
 > [!IMPORTANT]  
-> This functionality requires version 17 of [!INCLUDE[prod_short](../developer/includes/prod_short.md)], while service update 189 is required for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The release information for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] is published on the [latest version availability page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
+> This functionality requires version 17 of [!INCLUDE[prod_short](../developer/includes/prod_short.md)], while service update 189 is required for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The release information for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] is published on the [latest version availability page](/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
 
 This topic is a collection of frequently asked questions about [!INCLUDE[prod_short](../developer/includes/prod_short.md)] virtual tables. 
 
@@ -66,4 +66,4 @@ Yes. Here is the order of calls:
 [Microsoft Power Platform Integration with Business Central](powerplat-overview.md)  
 [Table Modeling](powerplat-entity-modeling.md)  
 [Business Central and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] Admin Reference](powerplat-admin-reference.md)  
-[Application Lifecycle Management for Solutions that use Virtual tables](powerplat-app-lifecycle-management.md)  
+[Application Lifecycle Management for Solutions that use Virtual tables](powerplat-app-lifecycle-management.md)

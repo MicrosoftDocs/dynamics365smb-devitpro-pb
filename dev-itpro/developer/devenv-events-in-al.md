@@ -4,7 +4,7 @@ description: Events is a programming concept that can ease application upgrade a
 author: jswymer
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

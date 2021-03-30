@@ -2,7 +2,7 @@
 title: "Performance Article For Developers"
 description: Provides information for developers to help improve performance in Business Central
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -259,7 +259,7 @@ Many performance issues can be traced back to missing indexes (also called keys 
 These articles on indexing are worth knowing as an AL developer:
 
 - [Table Keys and Performance in Business Central](../administration/optimize-sql-table-keys-and-performance.md)  
-- [Key Property](../developer/properties/devenv-key-property.md) 
+- [Key Property](../developer/properties/devenv-properties.md) 
 - [About SQL Server indexes](/sql/relational-databases/indexes/clustered-and-nonclustered-indexes-described?view=sql-server-ver15)
 
 Indexes have a cost to update, so it's recommended to not use them too frequently. 
@@ -330,7 +330,7 @@ For more information, see [The Performance Toolkit Extension](../developer/deven
 
 ### Performance Throughput Analysis
 
-The Performance Toolkit doesn't answer questions such as, "How many orders can Business Central process per hour?" For this kind of analysis, test the time to execute key scenarios using the Performance Toolkit, and then use the guidance on [Operational Limits for Business Central Online](/dynamics365/business-central/dev-itpro/administration/operational-limits-online). For advanced analysis, consider using a queueing model such as a [M/M/1 queue](https://en.wikipedia.org/wiki/M/M/1_queue) to answer whether the system can process the workload you intend.
+The Performance Toolkit doesn't answer questions such as, "How many orders can Business Central process per hour?" For this kind of analysis, test the time to execute key scenarios using the Performance Toolkit, and then use the guidance on [Operational Limits for Business Central Online](../administration/operational-limits-online.md). For advanced analysis, consider using a queueing model such as a [M/M/1 queue](https://en.wikipedia.org/wiki/M/M/1_queue) to answer whether the system can process the workload you intend.
 
 ### Performance telemetry
 
@@ -343,7 +343,7 @@ The following performance telemetry is available in Azure Application Insights (
 - Sessions started
 - Web Service Requests
 
-Read more in this section: [How to use telemetry to analyze performance](/dynamics365/business-central/dev-itpro/performance/performance-online#telemetry)
+Read more in this section: [How to use telemetry to analyze performance](./performance-online.md#telemetry)
 
 ### Troubleshooting
 
@@ -367,4 +367,4 @@ The following articles explain what you can do as a developer to tune your devel
 [Performance Online](performance-online.md)  
 [Performance of On-Premises Installations](performance-onprem.md)  
 [How to Work with a Performance Problem](performance-work-perf-problem.md)  
-[Performance tips for business users](performance-users.md)  
+[Performance tips for business users](performance-users.md)

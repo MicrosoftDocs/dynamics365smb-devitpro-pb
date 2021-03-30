@@ -2,7 +2,7 @@
 title: "DataAccessIntent Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/24/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # DataAccessIntent Property
-> **Version**: _Available from runtime version 5.0._
+> **Version**: _Available or changed with runtime version 5.0._
 
 Sets the data access intent of the page.
 
@@ -52,5 +52,5 @@ From the client, the property value can be overwritten by using page **9880 Data
 [Using Read Scale-Out for Better Performance](../../administration/database-read-scale-out-overview.md)  
 [Optimizing SQL Server Performance](../../administration/optimize-sql-server-performance.md)  
 [Properties](devenv-properties.md)   
-[Page Properties](devenv-page-properties.md)  
-[InDataSet Property](devenv-indataset-property.md)
+[Page Properties](./devenv-properties.md)  
+[InDataSet Property](../methods/devenv-indataset-attribute.md)

@@ -2,7 +2,7 @@
 title: "Temporary Tables"
 description: Learn about temporary tables in Business Central 
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -68,7 +68,7 @@ You can change from **Normal** to **Temporary**, and the other way around. When 
 
 ## Using a temporary record variable
 
-With this implementation, a physical table is not created in the database. You create a global or local variable of the type record and set the [Temporary Property](properties/devenv-temporary-property.md) next to it. The variable that holds a temporary table is defined just like any other global or local variable. The syntax is shown in the following example:
+With this implementation, a physical table is not created in the database. You create a global or local variable of the type record and set the [Temporary Property](./properties/devenv-properties.md) next to it. The variable that holds a temporary table is defined just like any other global or local variable. The syntax is shown in the following example:
 
 ```AL
 var
@@ -108,6 +108,6 @@ For XMLPorts, if the data that you are importing has a different structure than 
 
 [Getting Started with AL](devenv-get-started.md)  
 [Table Object](devenv-table-object.md)  
-[Temporary Property](properties/devenv-temporary-property.md)  
+[Temporary Property](./properties/devenv-properties.md)  
 [UseTemporary Property (Report)](properties/devenv-usetemporary-report-property.md)  
-[UseTemporary Property (XMLPort)](properties/devenv-usetemporary-xmlport-property.md)  
+[UseTemporary Property (XMLPort)](properties/devenv-usetemporary-xmlport-property.md)

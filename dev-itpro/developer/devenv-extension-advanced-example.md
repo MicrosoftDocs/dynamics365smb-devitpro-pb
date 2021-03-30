@@ -3,7 +3,7 @@ author: SusanneWindfeldPedersen
 title: "Building an Advanced Sample Extension"
 description: "Includes code for an advanced example extension using Business Central and AL in Visual Studio Code."
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

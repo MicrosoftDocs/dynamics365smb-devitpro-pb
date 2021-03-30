@@ -2,7 +2,7 @@
 title: "Managing Time Zones with Web Services"
 description: Learn how time zones work with web services
 ms.custom: na
-ms.date: 12/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

@@ -1,7 +1,7 @@
 ---
 title: "Properties Overview"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -34,5 +34,5 @@ In the sections below, properties are sorted according to the object(s) they app
 
 ## See Also
 
-[Methods](../methods/devenv-al-method-reference.md)  
+[Methods](../methods-auto/library.md)  
 [Triggers](../triggers/devenv-triggers.md)

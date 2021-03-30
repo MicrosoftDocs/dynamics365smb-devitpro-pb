@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 03/10/2021
+ms.date: 04/01/2021
 ---
 # Features not implemented in on-premises deployments of [!INCLUDE[prod_long](includes/prod_long.md)]
 

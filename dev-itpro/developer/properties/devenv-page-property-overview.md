@@ -3,7 +3,7 @@ title: "Page, Page Fields, and Page Extension Properties"
 description: "Description of the available properties on page extensions."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ This topic lists properties that apply to the [page object](../devenv-page-objec
 
 ## Page object properties
 
-The following properties all apply to the page object, only some of these properties can be set for a page extension object as specified below. This list is sorted alphabetically by property name. For page properties sorted by method on a page, see [Page Properties](devenv-page-properties.md).
+The following properties all apply to the page object, only some of these properties can be set for a page extension object as specified below. This list is sorted alphabetically by property name. For page properties sorted by method on a page, see [Page Properties](./devenv-properties.md).
 
 |Property Name|Available for Page Extension Object|Applies to|
 |-------------|-----------|---------------------|
@@ -40,8 +40,8 @@ The following properties all apply to the page object, only some of these proper
 |[ClosingDates Property](devenv-closingdates-property.md)|X|<ul><li>Field control</li></ul>|
 |[ColumnSpan Property](devenv-columnspan-property.md)||<ul><li>Field control</li></ul>|
 |[ContextSensitiveHelpPage Property](devenv-contextsensitivehelppage-property.md)|X|<ul><li>Page object</li></ul>|
-|[ContainerType Property](devenv-containertype-property.md)|X|<ul><li>Container control</li></ul>|
-|[DataCaptionExpression Property](devenv-datacaptionexpr-property.md)|X|<ul><li>Page object</li></ul>|
+|[ContainerType Property](./devenv-properties.md)|X|<ul><li>Container control</li></ul>|
+|[DataCaptionExpression Property](./devenv-datacaptionexpression-property.md)|X|<ul><li>Page object</li></ul>|
 |[DateFormula Property](devenv-dateformula-property.md)||<ul><li>Field control</li></ul>|
 |[DecimalPlaces Property](devenv-decimalplaces-property.md)||<ul><li>Field control</li></ul>|
 |[DelayedInsert Property](devenv-delayedinsert-property.md)||<ul><li>Page object</li></ul>|
@@ -96,7 +96,7 @@ The following properties all apply to the page object, only some of these proper
 |[PromotedCategory Property](devenv-promotedcategory-property.md)|X|<ul><li>Action</li></ul>|
 |[PromotedIsBig Property](devenv-promotedisbig-property.md)|X|<ul><li>Action</li></ul>|
 |[PromotedOnly Property](devenv-promotedonly-property.md)|X|<ul><li>Action</li></ul>|
-|[Provider Property](devenv-providerid-property.md)||<ul><li>Part control</li></ul>|
+|[Provider Property](./devenv-provider-property.md)||<ul><li>Part control</li></ul>|
 |[QuickEntry Property](devenv-quickentry-property.md)|X|<ul><li>Field control</li></ul>|
 |[RefreshOnActivate Property](devenv-refreshonactivate-property.md)||<ul><li>Page object</li></ul>|
 |[RowSpan property](devenv-rowspan-property.md)||<ul><li>Field control</li></ul>|
@@ -150,7 +150,7 @@ The following properties apply to the page object.
 |[Editable Property](devenv-editable-property.md)|X||
 |[Permissions Property](devenv-permissions-property.md)|X||
 |[Description Property](devenv-description-property.md)|X|X|
-|[DataCaptionExpression Property](devenv-datacaptionexpr-property.md)|X|X|
+|[DataCaptionExpression Property](./devenv-datacaptionexpression-property.md)|X|X|
 |[InstructionalTextML Property](devenv-instructionaltextml-property.md)|X|X|
 |[SourceTable Property](devenv-sourcetable-property.md)|X||
 |[SourceTableTemporary Property](devenv-sourcetabletemporary-property.md)|X||
@@ -181,7 +181,7 @@ The following properties apply to Container controls on a page.
 |Property Name|Page Object|Page Extension Object|
 |-------------|-----------|---------------------|
 |[CaptionML Property](devenv-captionml-property.md)|X|X|
-|[ContainerType Property](devenv-containertype-property.md)|X|X|
+|[ContainerType Property](./devenv-properties.md)|X|X|
 |[Description Property](devenv-description-property.md)|X|X|
 
 ## Group control properties
@@ -196,7 +196,7 @@ The following properties apply to Group controls on a page.
 |[Description Property](devenv-description-property.md)|X||
 |[InstructionalTextML Property](devenv-instructionaltextml-property.md)|X|X|
 |[GridLayout Property](devenv-gridlayout-property.md)|X||
-|[IndentationColumn Property](devenv-indentationcolumnname-property.md)|X||
+|[IndentationColumn Property](./devenv-indentationcolumn-property.md)|X||
 |[IndentationControls Property](devenv-indentationcontrols-property.md)|X||
 |[FreezeColumn Property](devenv-freezecolumnid-property.md)|X|X|
 |[ShowAsTree Property](devenv-showastree-property.md)|X||
@@ -267,7 +267,7 @@ The following properties apply to Part controls on a page.
 |[SubPageLink Property](devenv-subpagelink-property.md)|X||
 |[ShowFilter Property](devenv-showfilter-property.md)|X||
 |[UpdatePropagation Property](devenv-updatepropagation-property.md)|X||
-|[Provider Property](devenv-providerid-property.md)|X||
+|[Provider Property](./devenv-provider-property.md)|X||
 |[AccessByPermission Property](devenv-accessbypermission-property.md)|X||
 |[Description Property](devenv-description-property.md)|X||
 |[EntityName Property](devenv-entityname-property.md)|X||

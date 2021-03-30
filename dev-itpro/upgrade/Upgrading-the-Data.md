@@ -2,7 +2,7 @@
 title: Upgrading the Data to in Single-Tenant Deployment
 description: This article describes the tasks required for upgrade the data when you have a single-tenant deployment. 
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -182,7 +182,7 @@ Using [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] for 
 
 ## <a name="ConnectToServer"></a> Task 8: Connect a [!INCLUDE[server](../developer/includes/server.md)] instance to converted database
 
-You use the [!INCLUDE[admintool](../developer/includes/admintool.md)] or [Set-NAVServerConfiguration cmdlet](https://go.microsoft.com/fwlink/?linkid=401394) in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] to connect a [!INCLUDE[server](../developer/includes/server.md)] instance to the converted database.  
+You use the [!INCLUDE[admintool](../developer/includes/admintool.md)] or [Set-NAVServerConfiguration cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] to connect a [!INCLUDE[server](../developer/includes/server.md)] instance to the converted database.  
 
 The service account that is used by the [!INCLUDE[server](../developer/includes/server.md)] instance must be a member of the **db\_owner** role in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database on SQL Server or Azure SQL Database.
 

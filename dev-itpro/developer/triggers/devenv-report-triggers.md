@@ -3,7 +3,7 @@ title: "Report Triggers"
 description: "Report triggers in AL for Business Central."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -53,6 +53,6 @@ For some reports, their design may make it impossible to run them as scheduled r
 
 ## See Also
 
-[Report and DataI](devenv-report-and-data-item-triggers.md)  
+[Report and DataItem triggers](devenv-report-and-data-item-triggers.md)  
 [Report Object](../devenv-report-object.md)  
 [Triggers](devenv-triggers.md)  

@@ -2,7 +2,7 @@
 title: "Microsoft Power Platform integration with Business Central"
 description: "Integration of Power Platform with Business Central"
 ms.custom: na
-ms.date: 11/26/2020
+ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ author: solsen
 > The **Business Central Virtual Entity (Preview)** app available on AppSource is being updated to reflect new terminology with an upcoming release. This also applies to that terminology used in Business Central.
 
 > [!IMPORTANT]  
-> This functionality requires version 17 for [!INCLUDE[prod_short](../developer/includes/prod_short.md)], while service update 189 is required for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The release information for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] is published on the [latest version availability page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
+> This functionality requires version 17 for [!INCLUDE[prod_short](../developer/includes/prod_short.md)], while service update 189 is required for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The release information for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] is published on the [latest version availability page](/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Virtual table, which is published on AppSource, is a virtual data source in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], and enables create, read, update, delete (CRUD) operations from [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] and Microsoft Power Platform. By definition, the data for virtual tables does not reside in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. Instead, it continues to reside in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. To enable operations on [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tables in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], tables must be made available as virtual tables in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].
 
@@ -30,10 +30,10 @@ author: solsen
 To work with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] virtual tables, you must understand how [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] and virtual tables work. Therefore, the following documentation is a prerequisite:
 
 - [What is [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
-- [Table overview](https://docs.microsoft.com/powerapps/maker/common-data-service/table-overview)
-- [Table relationships overview](https://docs.microsoft.com/powerapps/maker/common-data-service/relationships-overview)
-- [Create and edit virtual tables that contain data from an external data source](https://docs.microsoft.com/powerapps/maker/common-data-service/create-edit-virtual-tables)
-- [Overview of creating apps in Power Apps](https://docs.microsoft.com/powerapps/maker/)
+- [Table overview](https://docs.microsoft.com/en-us/powerapps/maker/data-platform/entity-overview)
+- [Table relationships overview](/powerapps/maker/common-data-service/relationships-overview)
+- [Create and edit virtual tables that contain data from an external data source](https://docs.microsoft.com/en-us/powerapps/maker/data-platform/create-edit-virtual-entities)
+- [Overview of creating apps in Power Apps](/powerapps/maker/)
 
 ## Virtual tables for Business Central
 
@@ -65,4 +65,4 @@ There are known limitations with [!INCLUDE[prod_short](../developer/includes/pro
 [Application Lifecycle Management for Solutions that use Virtual tables](powerplat-app-lifecycle-management.md)  
 [Business Central and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] Admin Reference](powerplat-admin-reference.md)  
 [FAQ](powerplat-faq.md)  
-[Developing a Custom API](../developer/devenv-develop-custom-api.md)  
+[Developing a Custom API](../developer/devenv-develop-custom-api.md)
