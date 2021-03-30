@@ -2,7 +2,7 @@
 title: "Entitlements cannot be defined in an extension."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/30/2021
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,7 +30,7 @@ entitlement MyLicense
 ```
 
 ## How to fix this diagnostic
-Remove the offending Entitlement object(s) from your extension and use one of the [built-in entitlements](../devenv-entitlements-and-permissionsets-overview.md) provided in [!INCLUDE [prod_short](../includes/prod_short.md)]. It is currently not possible to use entitlements outside those defined by Microsoft.
+Remove the offending Entitlement object(s) from your extension and use one of the [built-in entitlements](../devenv-entitlements-and-permissionsets-overview.md) provided in [!INCLUDE [prod_short](../includes/prod_short.md)]. It is currently not possible to create user-defined entitlements.
 
 
 ## See Also  

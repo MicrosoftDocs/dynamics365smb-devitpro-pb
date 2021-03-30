@@ -2,7 +2,7 @@
 title: "The AppSourceCop configuration must specify the list of countries/regions targeted by the application"
 ms.author: solsen
 ms.custom: na
-ms.date: 03/30/2021
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

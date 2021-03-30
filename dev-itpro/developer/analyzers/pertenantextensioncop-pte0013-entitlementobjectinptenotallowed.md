@@ -2,7 +2,7 @@
 title: "Entitlements cannot be defined in an extension."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/30/2021
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
