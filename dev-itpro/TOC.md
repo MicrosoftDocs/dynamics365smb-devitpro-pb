@@ -2564,6 +2564,7 @@
 #### [2019 Release Wave 2 On-Premises Updates](deployment/update-versions-15.md)
 #### [2020 Release Wave 1 On-Premises Updates](deployment/update-versions-16.md)
 #### [2020 Release Wave 2 On-Premises Updates](deployment/update-versions-17.md)
+#### [2021 Release Wave 1 On-Premises Updates](deployment/update-versions-18.md)
 ### [Running a Container-Based Development Environment](developer/devenv-running-container-development.md)
 ### [Components](deployment/product-and-architecture-overview.md)
 ### [Planning](deployment/plan-for-deployment.md)
@@ -2733,6 +2734,24 @@
 ##### [From Version 15](upgrade/upgrade-technical-upgrade-v15-v17.md)
 ##### [From Version 16](upgrade/upgrade-technical-upgrade-v16-v17.md)
 #### [Installing a Minor Update](upgrade/upgrading-cumulative-update-v17.md)
+### Business Central 2021 Release Wave 1
+#### [Overview](upgrade/upgrade-overview-v18.md)
+#### [Upgrade Compatibility Matrix](upgrade/upgrade-v14-v15-compatibility.md)
+#### [Upgrading Permission Sets](upgrade/upgrade-permissions.md)
+#### Application and Data
+##### [From version 14 Unmodified C/AL Application](upgrade/upgrade-unmodified-application-v14-v18.md)
+##### [From version 14 Customized C/AL Application](upgrade/upgrade-to-microsoft-base-app-v18.md)
+##### [From Version 15, 16, or 17 Microsoft Base Application](upgrade/upgrade-unmodified-application-to-v18.md)
+##### Related Articles
+###### [Convert to AL](upgrade/devenv-code-conversion.md)
+###### Migrating Tables and Fields Between Extensions
+####### [Overview](developer/devenv-migrate-table-fields.md)
+####### [Moving Tables and Fields Down](developer/devenv-migrate-table-fields-down.md)
+####### [Moving Tables and Fields Up](developer/devenv-migrate-table-fields-up.md)
+#### Technical Upgrade
+##### [From Version 14](upgrade/upgrade-technical-upgrade-v14-v18.md)
+##### [From Version 15, 16, or 17](upgrade/upgrade-technical-upgrade-v18.md)
+#### [Installing a Minor Update](upgrade/upgrading-cumulative-update-v18.md)
 ### [Some Known Issues](upgrade/known-issues.md)
 ## [Migrate Legacy Help to the Business Central Format](upgrade/migrate-help.md)
 
