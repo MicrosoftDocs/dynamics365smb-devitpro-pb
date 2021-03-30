@@ -2,7 +2,7 @@
 title: "OnAfterLookup Trigger"
 description: "OnAfterLookup trigger in AL for Business Central."
 ms.custom: na
-ms.date: 01/22/2021
+ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na

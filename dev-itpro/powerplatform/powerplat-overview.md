@@ -2,7 +2,7 @@
 title: "Microsoft Power Platform integration with Business Central"
 description: "Integration of Power Platform with Business Central"
 ms.custom: na
-ms.date: 11/26/2020
+ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na

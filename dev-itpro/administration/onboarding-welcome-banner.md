@@ -1,7 +1,7 @@
 ﻿---
 title: Onboard New Users with the Welcome Banner
 description: Learn about the banner that displays when a user signs into a new company for the first time.
-ms.date: 03/26/2021
+ms.date: 04/01/2021
 ms.topic: conceptual
 ms.service: dynamics365-business-central
 author: sorenfriisalexandersen

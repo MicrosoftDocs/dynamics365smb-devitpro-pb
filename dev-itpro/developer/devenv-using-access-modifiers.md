@@ -3,7 +3,7 @@ title: "Using Access Modifiers in AL"
 description: "Describes how the AL access modifiers can be used in code."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/20/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

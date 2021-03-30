@@ -2,7 +2,7 @@
 title: "AL Table Proxy Generator"
 description: "Tool for creating integration or proxy tables for integration with Microsoft Dataverse from Business Central"
 ms.custom: na
-ms.date: 10/29/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

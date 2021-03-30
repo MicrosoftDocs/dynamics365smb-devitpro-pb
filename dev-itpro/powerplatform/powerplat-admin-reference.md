@@ -2,7 +2,7 @@
 title: "Business Central and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] admin reference"
 description: "The admin reference for working with Business Central and Microsoft Dataverse tables"
 ms.custom: na
-ms.date: 11/26/2020
+ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na

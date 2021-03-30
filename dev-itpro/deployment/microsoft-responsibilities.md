@@ -10,7 +10,7 @@ ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ---
 
 # Microsoft Responsibilities for Apps on Business Central online

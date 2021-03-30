@@ -2,7 +2,7 @@
 author: edupont04
 ms.service: dynamics365-business-central
 ms.topic: include
-ms.date: 03/11/2021
+ms.date: 04/01/2021
 ms.author: edupont
 ---
 The following table shows examples of effective tooltips.  

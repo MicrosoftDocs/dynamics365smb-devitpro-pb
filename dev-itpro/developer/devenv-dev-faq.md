@@ -3,7 +3,7 @@ title: "FAQ for Developing in AL"
 description: "Overview of frequently asked questions for development using the AL language."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -31,6 +31,10 @@ For the latest Developer Preview releases you must use the [!INCLUDE[d365al_ext_
 ## How do I enable the debugger?
 
 To read about enabling debugging in AL, see here [Debugging](devenv-debugging.md). To read about snapshot debugging, see [Snapshot Debugging](devenv-snapshot-debugging.md).
+
+## What constitutes the identity of an app?
+
+To read about app identity and why it is important to keep certain settings for an app unchanged, see [App Identity](devenv-app-identity.md).
 
 ## File APIs are not available in Extensions V2. What do I do?
 

@@ -7,7 +7,7 @@ ms.reviewer: solsen
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: bholtorf
-ms.date: 10/29/2020
+ms.date: 04/01/2021
 ---
 
 # Customizing an Integration with [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]

@@ -1,7 +1,7 @@
 ﻿---
 title: Onboarding experiences
 description: As a partner, you can get your customers up to speed in a hurry with the right onboarding story. Learn about checklists and teaching tips.
-ms.date: 03/26/2021
+ms.date: 04/01/2021
 ms.topic: conceptual
 ms.service: dynamics365-business-central
 author: sorenfriisalexandersen

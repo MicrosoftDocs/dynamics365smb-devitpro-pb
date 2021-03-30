@@ -4,7 +4,7 @@ description: Provides some tips about working with Business Central API.
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

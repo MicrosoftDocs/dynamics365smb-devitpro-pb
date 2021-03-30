@@ -8,7 +8,7 @@ ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: solsen
-ms.date: 02/03/2021
+ms.date: 04/01/2021
 ---
 
 # Object Ranges in [!INCLUDE[prod_short](includes/prod_short.md)]

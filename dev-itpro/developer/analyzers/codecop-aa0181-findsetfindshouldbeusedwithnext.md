@@ -2,7 +2,7 @@
 title: "The FindSet() or Find() methods must be used only in connection with the Next() method."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/08/2021
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
