@@ -1,5 +1,5 @@
 ---
-title: "The AppSourceCop configuration must specify the list of countries/regions targeted by the application"
+title: "Permission Sets should not be defined in XML files."
 ms.author: solsen
 ms.custom: na
 ms.date: 03/30/2021
@@ -13,11 +13,11 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# AppSourceCop Rule AS0055
-The AppSourceCop configuration must specify the list of countries/regions targeted by the application
+# AppSourceCop Rule AS0094
+Permission Sets should not be defined in XML files.
 
 ## Description
-The AppSourceCop configuration must specify the list of countries/regions targeted by the application.
+Permission sets should not be defined in XML. Instead, use the dedicated AL object for 'PermissionSet'.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

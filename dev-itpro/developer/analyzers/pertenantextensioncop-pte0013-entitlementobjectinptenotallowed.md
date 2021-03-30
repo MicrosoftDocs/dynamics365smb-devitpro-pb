@@ -1,5 +1,5 @@
 ---
-title: "The AppSourceCop configuration must specify the list of countries/regions targeted by the application"
+title: "Entitlements cannot be defined in an extension."
 ms.author: solsen
 ms.custom: na
 ms.date: 03/30/2021
@@ -13,14 +13,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# AppSourceCop Rule AS0055
-The AppSourceCop configuration must specify the list of countries/regions targeted by the application
+# PerTenantExtensionCop Rule PTE0013
+Entitlements cannot be defined in an extension.
 
 ## Description
-The AppSourceCop configuration must specify the list of countries/regions targeted by the application.
+Entitlements cannot be defined in an extension because their use is restricted to Microsoft only.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
-[AppSourceCop Analyzer](appsourcecop.md)  
+[PerTenantExtensionCop Analyzer](pertenantextensioncop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
