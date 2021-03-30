@@ -40,7 +40,7 @@ Permission sets should not be defined in XML. Instead, use the dedicated AL obje
 ```
 
 ## How to fix this diagnostic
-You can convert XML Permission Sets to AL objects. You can see more on the upgrade page: [!INCLUDE[prod_short](../../upgrade/upgrade-permissions.md)].
+You can convert XML Permission Sets to AL objects. You can see more on the [upgrade page](../../upgrade/upgrade-permissions.md).
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
