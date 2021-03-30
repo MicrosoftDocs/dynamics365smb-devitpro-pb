@@ -19,8 +19,31 @@ Permission Sets should not be defined in XML files.
 ## Description
 Permission sets should not be defined in XML. Instead, use the dedicated AL object for 'PermissionSet'.
 
+## Example of XML file triggering the rule
+
+```XML
+<?xml version="1.0" encoding=""utf-8""?>
+<PermissionSets>
+  <PermissionSet RoleID="TestProjectPermissionSet" RoleName="Default">
+    <Permission>
+      <ObjectType>8</ObjectType>
+      <ObjectID>70000001</ObjectID>
+      <ReadPermission>1</ReadPermission>
+      <InsertPermission>1</InsertPermission>
+      <ModifyPermission>1</ModifyPermission>
+      <DeletePermission>1</DeletePermission>
+      <ExecutePermission>0</ExecutePermission>
+      <SecurityFilter />
+    </Permission>
+  </PermissionSet>
+</PermissionSets>
+```
+
+## How to fix this diagnostic
+You can convert XML Permission Sets to AL objects. You can see more on the upgrade page: [!INCLUDE[prod_short](../../upgrade/upgrade-permissions.md)].
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## See Also
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

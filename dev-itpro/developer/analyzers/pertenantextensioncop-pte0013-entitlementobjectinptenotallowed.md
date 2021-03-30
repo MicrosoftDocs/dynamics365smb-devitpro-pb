@@ -20,7 +20,9 @@ Entitlements cannot be defined in an extension.
 Entitlements cannot be defined in an extension because their use is restricted to Microsoft only.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+
+## See Also
+For examples and guidance on fixing this diagnostic, see [!INCLUDE [prod_short](appsourcecop-as0093-entitlementobjectinappsourcenotallowed.md)]
 [PerTenantExtensionCop Analyzer](pertenantextensioncop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -20,7 +20,8 @@ Permission Sets should not be defined in XML files.
 Permission sets should not be defined in XML. Instead, use the dedicated AL object 'PermissionSet'.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+## See Also
+For examples and guidance on fixing this diagnostic, see [!INCLUDE [prod_short](appsourcecop-as0094-permissionsetsshouldnotbeinxml.md)]
 [PerTenantExtensionCop Analyzer](pertenantextensioncop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
