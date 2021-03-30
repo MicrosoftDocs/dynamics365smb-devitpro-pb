@@ -45,7 +45,6 @@ The following integration capabilities of the [!include[prod_short](../developer
 |[Azure machine learning](/azure/machine-learning/studio/)| Available if the partner has an Azure ML subscription|
 |[Integration with Dynamics 365 Sales](/dynamics365/business-central/admin-how-to-set-up-a-dynamics-crm-connection)| Available|
 |[Microsoft Graph](/graph/overview)  | Currently under evaluation        |
-|[Accountant Hub](/dynamics365/accountants/)| Available in specific countries |
 
 ## See Also
 
