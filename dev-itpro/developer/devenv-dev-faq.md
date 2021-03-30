@@ -32,6 +32,10 @@ For the latest Developer Preview releases you must use the [!INCLUDE[d365al_ext_
 
 To read about enabling debugging in AL, see here [Debugging](devenv-debugging.md). To read about snapshot debugging, see [Snapshot Debugging](devenv-snapshot-debugging.md).
 
+## What constitutes the identity of an app?
+
+To read about app identity and why it is important to keep certain settings for an app unchanged, see [App Identity](devenv-app-identity.md).
+
 ## File APIs are not available in Extensions V2. What do I do?
 
 Code that relies on temporary files must be rewritten to rely on `InStream` and `OutStream` types. Code that relies on permanent files must be rewritten to use another form of permanent storage.
