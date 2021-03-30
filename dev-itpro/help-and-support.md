@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 10/28/2020
+ms.date: 04/01/2021
 ---
 
 # Resources for Help and Support for [!INCLUDE[prod_long](includes/prod_long.md)]
@@ -70,9 +70,9 @@ For more information, see [Technical Support](technical-support.md).
 
 You and your customers can find free eLearning content on the [Microsoft Learn landing page for Business Central](/learn/dynamics365/business-central?WT.mc_id=dyn365bc_landingpage-docs) with suggested collections for getting started, managing financials, and extending Business Central.  
 
-The Learn site also includes role-specific learning paths for [developers](/learn/browse/?expanded=dynamics-365&products=dynamics-business-central&resource_type=learning%20path&roles=developer), [administrators](/learn/browse/?expanded=dynamics-365&products=dynamics-business-central&resource_type=learning%20path&roles=administrator), and [functional consultants](/learn/browse/?expanded=dynamics-365&products=dynamics-business-central&resource_type=learning%20path&roles=functional-consultant).  
+The Learn site also includes role-specific learning paths for [developers](/learn/browse/?WT.mc_id=dyn365bc_landingpage-docs&expanded=dynamics-365&products=dynamics-business-central&resource_type=learning%20path&roles=developer), [administrators](/learn/browse/?WT.mc_id=dyn365bc_landingpage-docs&expanded=dynamics-365&products=dynamics-business-central&resource_type=learning%20path&roles=administrator), and [functional consultants](/learn/browse/?WT.mc_id=dyn365bc_landingpage-docs&expanded=dynamics-365&products=dynamics-business-central&resource_type=learning%20path&roles=functional-consultant).  
 
-Additionally, partners in the Business Central community offer training and books. 
+Additionally, partners in the Business Central community offer training and books.  
 
 ## Resources
 
@@ -164,13 +164,13 @@ GitHub brings together communities of developers and other contributors to disco
   * You can grab the code and contribute to the published apps.
   * If you're building your own app and need something specific from us, such as an event, you can help improve the general extensibility of the business logic.
 
-* NAV Docker
-
-  Use this repo to collaborate around the source code and the scripts of the generic docker image for [!INCLUDE [prod_short](developer/includes/prod_short.md)]: [https://github.com/Microsoft/nav-docker](https://github.com/Microsoft/nav-docker)
-
-* BcContainerHelper/NavContainerHelper
+* BcContainerHelper
 
   Use this repo to collaborate around the source code and the scripts of BcContainerHelper PowerShell module for [!INCLUDE [prod_short](developer/includes/prod_short.md)]: [https://github.com/Microsoft/NavContainerHelper](https://github.com/Microsoft/NavContainerHelper)
+
+* Business Central Tech Samples
+
+  Find Microsoft's prototypes, experiments to test performance, and other examples of what Microsoft's engineers get up to apart from shipping production code, in the [https://github.com/microsoft/BCTech](https://github.com/microsoft/BCTech) repo.
 
 * Documentation
 
@@ -198,5 +198,6 @@ For more information, see [Preparing Demonstration Environments](administration/
 [Technical Support](technical-support.md)  
 [Configuring the Help Experience](deployment/configure-help.md)  
 [Migrate Legacy Help](upgrade/migrate-help.md)  
+[User Assistance Model](user-assistance.md)  
 <!--[The "Ready to Go" Program](developer/readiness/readiness-ready-to-go.md)  -->
 [The Business Central Administration Center](administration/tenant-admin-center.md)

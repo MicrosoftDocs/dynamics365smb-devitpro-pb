@@ -2,7 +2,7 @@
 title: Configure SQL Server Authentication
 description: This topic describes how to configure SQL Server Authentication between the Dynamics Business Central instance and a Dynamics NAV database. 
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.topic: overview
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 01/19/2021
+ms.date: 04/01/2021
 ---
 
 # Service Overview for Business Central Online

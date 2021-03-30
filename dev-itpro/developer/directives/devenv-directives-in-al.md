@@ -3,7 +3,7 @@ title: "Preprocessor Directives in AL"
 description: "The different types of preprocessor directives in AL; conditional, regions, and pragmas and preprocessorSymbols setting."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual

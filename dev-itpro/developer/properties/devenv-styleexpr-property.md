@@ -2,7 +2,7 @@
 title: "StyleExpr Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/24/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # StyleExpr Property
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Sets whether the format that is specified in the Style Property is applied to text in a field. For fields in a CueGroup control, this property is used to configure the color of the color indicator on the cue.
 
@@ -23,7 +23,6 @@ This note pertains to backward compatibility only. If the property is set to Boo
 ## Applies to
 -   Page Label
 -   Page Field
-
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

@@ -3,7 +3,7 @@ title: "Customizing the User Interface for User Roles"
 description: "Description of how to customize the User Interface in Business Central by using user roles."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

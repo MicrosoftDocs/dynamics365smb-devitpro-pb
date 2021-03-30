@@ -2,7 +2,7 @@
 title: "Objects that can be referenced and which have been published must not be renamed."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/25/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AppSourceCop Rule AS0090
-Objects that can be referenced and which have been published must not be renamed.  
+Objects that can be referenced and which have been published must not be renamed.
 
 ## Description
 Objects than can be referenced and which have been published must not be renamed because it might break the upgrade of existing installations and dependent extensions.

@@ -2,7 +2,7 @@
 title: "When ApplicationArea is set to 'All', no other values for ApplicationArea should be specified."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # CodeCop Rule AA0200
-When ApplicationArea is set to 'All', no other values for ApplicationArea should be specified.  
+When ApplicationArea is set to 'All', no other values for ApplicationArea should be specified.
 
 ## Description
 'All' should always stand alone has incorrect order.

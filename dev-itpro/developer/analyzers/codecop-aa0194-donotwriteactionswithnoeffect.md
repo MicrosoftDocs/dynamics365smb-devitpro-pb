@@ -2,7 +2,7 @@
 title: "Only write actions that have an effect."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # CodeCop Rule AA0194
-Only write actions that have an effect.  
+Only write actions that have an effect.
 
 ## Description
 Remember to specify either the 'OnAction' trigger or 'RunObject' property on an action.

@@ -2,7 +2,7 @@
 title: "Code Conversion from C/AL to AL"
 description: "Description of the conversion process from C/AL to AL."
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: jswymer

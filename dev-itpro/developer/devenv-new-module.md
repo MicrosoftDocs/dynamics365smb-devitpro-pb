@@ -3,7 +3,7 @@ title: "Create a New Module in the System Application"
 description: Learn how to create a new module in the System Application.
 author: bholtorf
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
