@@ -30,7 +30,7 @@ entitlement MyLicense
 ```
 
 ## How to fix this diagnostic
-Remove the offending Entitlement object(s) from your extension and use one of the [built-in entitlements](../devenv-entitlements-and-permissionsets-overview.md) provided in [!INCLUDE [prod_short](includes/prod_short.md)]. It is currently not possible to use entitlements outside those defined by Microsoft.
+Remove the offending Entitlement object(s) from your extension and use one of the [built-in entitlements](../devenv-entitlements-and-permissionsets-overview.md) provided in [!INCLUDE [prod_short](../includes/prod_short.md)]. It is currently not possible to use entitlements outside those defined by Microsoft.
 
 
 ## See Also  
