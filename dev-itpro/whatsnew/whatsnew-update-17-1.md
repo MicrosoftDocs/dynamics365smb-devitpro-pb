@@ -26,7 +26,7 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 - [Notify users of high-risk changes in selected setup fields](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/notify-users-high-risk-changes-selected-setup-fields)
 - [Use new sales pricing experience](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/use-new-sales-pricing-experience-)
 - [Control how Account Schedules for core financial reports are generated](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/control-how-account-schedules-core-financial-reports-are-generated)
-- [Improved VAT Registration no. lookup](/dynamics365-business-central/improved-vat-registration-no-validation)
+- [Improved VAT Registration no. lookup](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/improved-vat-registration-no-validation)
 - [Extension lifecycle telemetry in Application Insights for ISVs](../administration/telemetry-extension-lifecycle-trace.md)
 - [Use environmentType and environmentName launch.json properties instead of obsoleted sandboxName](../developer/devenv-json-files.md#Launchjson)
 - [Symbols can be downloaded with a snapshot initialize launch.json configuration, using above environment properties](../developer/devenv-snapshot-debugging.md#downloading-symbols-on-the-snapshot-debugger-endpoint)

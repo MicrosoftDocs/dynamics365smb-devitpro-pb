@@ -542,7 +542,7 @@ With Azure AD authentication, [!INCLUDE[prod_short](../developer/includes/prod_s
 
 With Basic authentication, the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] user account must have web service access key. To sign in, instead using their Azure AD password, users provide the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] the web service access key. For information about setting up web service access keys, see [How to use an Access Key for SOAP and OData Web Service Authentication](../webservices/web-services-authentication.md#accesskey).
 
-With OAuth, users are authenticated based on their Azure AD credentials, providing a more direct and single sign-on experience. For more information, see [Using OAuth to Authorize Business Central Web Services (OData and SOAP)](/webservices/authenticate-web-services-using-oauth.md).
+With OAuth, users are authenticated based on their Azure AD credentials, providing a more direct and single sign-on experience. For more information, see [Using OAuth to Authorize Business Central Web Services (OData and SOAP)](../webservices/authenticate-web-services-using-oauth.md).
 
 ## Additional tips
 
