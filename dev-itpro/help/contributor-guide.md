@@ -137,18 +137,6 @@ To join Microsoft in the world of GitHub and MarkDown, there are new terminology
 
 Internally at Microsoft, some authors use Code, others use Atom, and for light-weight work, we tend to just edit the content in the browser. You can find more guidance for how to get started with MarkDown in the [Docs Contributor Guide](/contribute/). This guide is published by the team that built the Docs.microsoft.com site where the Business Central team publishes their docs.
 
-### Contributing
-
-A benefit of GitHub is the ability for you to contribute to the core content that the Microsoft team provides in the *dynamics365smb-docs repo*. For example, you might have a new article that you think would be beneficial or you might have a correction to an existing article. If you would like to contribute to the [MicrosoftDocs/dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs) repo, you create a *pull request* from your repo to the *MicrosoftDocs/dynamics365smb-docs* repo. The Microsoft team will then review the request and include the changes as appropriate.
-
-> [!NOTE]
-> Microsoft accepts pull requests to the *dynamics365smb-docs* repo only, not the language-specific repos. If you have feedback about translations, you can report a GitHub issue in the relevant repo.
-
-To create a pull request to the *MicrosoftDocs/dynamics365smb-docs* repo by using GitHub Desktop, do the following:
-
-1. Commit the changes to your repo that you want to include in the pull request.
-2. Choose **Sync** to push the changes up to your repo on GitHub.
-3. When the sync is completed, choose **Pull Request**, make sure that the pull request points at the *live* branch, and then choose **Pull Request**.
 
 ## Get the content without a GitHub account
 
@@ -269,6 +257,22 @@ To translate content for either [!INCLUDE [prod_short](../developer/includes/pro
 
 > [!div class="mx-imgBorder"]
 > ![Shows translation project for NAV or Business Central](../developer/media/admin/lcs_translation_navhelp.png)
+
+## Contributing
+
+A benefit of GitHub is the ability for you to contribute to the core content that the Microsoft team provides in the *dynamics365smb-docs repo*. For example, you might have a new article that you think would be beneficial, or you might have a correction to an existing article. If you would like to contribute to the [MicrosoftDocs/dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs) repo, you create a *pull request* from your repo to the *MicrosoftDocs/dynamics365smb-docs* repo. The Microsoft team will then review the request and include the changes as appropriate.
+
+> [!NOTE]
+> Microsoft accepts pull requests to the *dynamics365smb-docs* repo only, not the language-specific repos. If you have feedback about translations, please report a GitHub issue in the relevant repo.
+
+To create a pull request to the *MicrosoftDocs/dynamics365smb-docs* repo by using GitHub Desktop, do the following:
+
+1. Commit the changes to your repo that you want to include in the pull request.
+2. Choose **Sync** to push the changes up to your repo on GitHub.
+3. When the sync is completed, choose **Pull Request**, make sure that the pull request points at the *origin/live* branch, and then choose **Pull Request**.
+
+> [!TIP]
+> If you want to request brand new content, we ask you to submit a request of type *Documentation* at [https://aka.ms/bcideas](https://aka.ms/bcideas).
 
 ## See also
 
