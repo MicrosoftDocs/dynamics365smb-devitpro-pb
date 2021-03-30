@@ -61,7 +61,7 @@ Publishers have several tools available for them to keep their code in good shap
 
 ## When apps or PTEs cannot be updated by Microsoft
 
-This section describes the processes that are initiated during and after upgrade attempts of code provided by publishers of apps or PTEs.  
+This section describes the processes that are initiated during and after upgrade attempts of code provided by publishers of apps or PTEs. For information about handling a PTE that has conflicts with another extension, see [Upgrading Per-Tenant Extensions that Conflicts with Other Extensions](../upgrade/upgrade-pte-merge-conflict.md).
 
 - **T1 – T30**: Microsoft alerts administrators, resellers, and ISVs
 
