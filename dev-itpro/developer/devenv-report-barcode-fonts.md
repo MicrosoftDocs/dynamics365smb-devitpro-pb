@@ -1,6 +1,6 @@
 ---
-title: "Adding barcodes to reports"
-description: "Learn how you can add barcodes to a report."
+title: "Barcode Fonts"
+description: "Describes the  how you can add barcodes to a report."
 author: jswymer
 ms.custom: na
 ms.date: 03/19/2021
@@ -14,31 +14,22 @@ ms.author: jswymer
 
 # Adding Barcodes to Reports
 
-This article explains how to add barcodes to reports using the barcode functionality in Business Central. 
+This article explains how to add barcodes to reports. The barcode functionality lets you convert an alphanumeric value in a report dataset into a barcode on a generated report.
 
-## Overview and setup
+## Overview
 
-The barcode functionality lets you convert an alphanumeric value in a report dataset into a barcode on a generated report. The functionality is provided by the **Barcode** module of the System Application. The module includes the objects and tools that you need to add barcodes to reports. Using the API, you create barcode font providers for generating data strings as barcodes. A barcode provider includes a library of different barcode fonts and symbologies. Barcode font encoders in provider convert data strings to the specific font specification. 
+The barcode functionality is provided by the **Barcode** module of the System Application. The module includes the objects and tools that you need to add barcodes to reports. Through the modules API, you create barcode font providers for generating data strings as barcodes. A barcode provider includes a library of different barcode fonts and symbologies. Barcode font encoders convert data strings to the specific font specification. 
 
-Business Central online comes fully equipped with a barcode provider and fonts from IDAutomation, so you can start adding barcodes to reports right away.
+Business Central online comes fully equipped with a barcode provider and a library of fonts, so you can start adding barcodes to reports right away.
 
-
-For more information about this module, see the [AL Extensions on GitHub](https://github.com/microsoft/ALAppExtensions/tree/master/Modules/System/Barcode).
-
-### Setting up Business Central on-premises
-
-With Business Central on-premises, there a couple tasks you'll need to do before you can start adding barcodes to your reports.  
+With Business Central on-premises, you'll have to develop your barcode provider. This task involves:
 
 1. Get the barcode fonts that you want to use on reports.
+2. Install the fonts on the machine where Business Central server is running.
+3. Extend the barcode encoder library to provide encoding functions that work with these fonts.
 
-    You get barcode fonts from any recognized font provider. If you use the IDAutomation fonts then you can skip the next step and use the built-in IDAutomation barcode font provider as is.
+    Be sure to adhere to the interface in the module. Consider contributing to the open-source project if you do.
 
-2. Using the Barcode module, create your own barcode font provider that includes encoders for the fonts.
-
-   Adhere to the interface in the module. Consider contributing to the open-source project if you do.
-3. Install the fonts on the Business Central Server.
-
-    Install the fonts in the same folder as the Business Central Server instance. By default, the folder is 
 <!--
 
 - License the fonts from IDAutomation
@@ -49,6 +40,7 @@ With Business Central on-premises, there a couple tasks you'll need to do before
 
     In this case, you'll have to extend the barcode encoder library to provide encoding functions that work with these fonts. Be sure to adhere to the interface in the module. -->
 
+For more information about this module, see the [AL Extensions on GitHub](https://github.com/microsoft/ALAppExtensions/tree/master/Modules/System/Barcode).
 
 ## Barcode font and symbologies with Business Central online
 
