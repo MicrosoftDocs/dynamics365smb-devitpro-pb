@@ -34,6 +34,7 @@ Remove the offending Entitlement object(s) from your extension and use one of th
 
 
 ## See Also  
+[Entitlement Object](../devenv-entitlement-object.md)
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

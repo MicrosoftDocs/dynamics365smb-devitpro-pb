@@ -30,7 +30,7 @@ Permission sets should not be defined in XML. Instead, use the dedicated AL obje
   <PermissionSet RoleID="TestProjectPermissionSet" RoleName="Default">
     <Permission>
       <ObjectType>8</ObjectType>
-      <ObjectID>70000001</ObjectID>
+      <ObjectID>70001</ObjectID>
       <ReadPermission>1</ReadPermission>
       <InsertPermission>1</InsertPermission>
       <ModifyPermission>1</ModifyPermission>
@@ -43,12 +43,27 @@ Permission sets should not be defined in XML. Instead, use the dedicated AL obje
 ```
 
 ### Converted into a PermissionSet object
+Suppose that the object with ID 70001 is a table called "Floor Manager", then we may convert the above permissions defined in XML into a PermissionSet object defined in AL:
 
+```AL
+permissionset 50130 MyPermissionSet 
+{ 
+    Assignable = true;
+    Caption = 'My PermissionSet';
+
+    Permissions = 
+        tabledata "Floor Manager" = RIMD
+} 
+
+```
+
+The `RIMD` access allows access to **R**ead, **I**nsert, **M**odify and **D**elete entries in the table. This can be modified by adding and removing letters corresponding to the first letter of the permission you want to (dis)allow. This PermissionSet can then be assigned to users/roles.
 
 ## How to fix this diagnostic?
 You can convert XML Permission Sets to AL objects. You can see more on the [upgrade page](../../upgrade/upgrade-permissions.md).
 
 ## See Also
+[PermissionSet Object](../devenv-permissionset-object.md)
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
