@@ -58,7 +58,7 @@ For the latest information, see the app in the Windows Store, App Store, or Goog
 |------|-----|  
 |Excel|<ul><li>Sending data to Excel requires Excel 2019, Excel on the web, or Excel mobile app for iOS or Android&trade;.</li><li>Editing in Excel using the Excel Add-In requires Microsoft Office 2019 or Excel on the web.</li></ul>|  
 |Word|<ul><li>Microsoft Office 2019, Word for the web, or Word mobile app for iOS or Android&trade;.</li></ul>|
-|Outlook|Please see [Business Inbox in Microsoft Outlook](system-requirement-business-central-v18.md#BusInboxOutlook).|  
+|Outlook|Please see [Business Inbox in Microsoft Outlook](system-requirements-business-central-v18.md#BusInboxOutlook).|  
 |Additional software|<ul><li>A third-party telephony or VoIP app such as Microsoft Teams is required for placing calls from [!INCLUDE[prod_short](../developer/includes/prod_short.md)].|  
 
 ## AL Development
@@ -104,7 +104,7 @@ The following table shows the minimum system requirements for [!INCLUDE[prod_sho
 |Specification|Requirement|  
 |----|-----|  
 |Hardware resources|For more information, see [Hardware and Software Requirements for Installing SQL Server](https://go.microsoft.com/fwlink/?LinkId=622999). From this page, you can also access requirements for other versions of SQL Server.|  
-|Database| Business Central supports database compatibility levels 150, 140, or 130. See https://docs.microsoft.com/en-us/sql/t-sql/statements/alter-database-transact-sql-compatibility-level?view=sql-server-ver15 for details on SQL Server Database compatibility levels. |  
+|Database| Business Central supports database compatibility levels 150, 140, or 130. See https://docs.microsoft.com/sql/t-sql/statements/alter-database-transact-sql-compatibility-level?view=sql-server-ver15 for details on SQL Server Database compatibility levels. |  
 |Service Packs and Cumulative Updates| Unless explicitly stated, all released Service Packs and Cumulative Updates of the above Microsoft SQL Server versions are supported. it's recommended to always be on the latest released Service Pack and Cumulative Update.|
 |Additional information|[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] installs the following software if it's not already present on the target computer:<ul><li>SQL Server 2016 Express \(64-bit edition\).<br>If the operating system on the target computer doesn't support SQL Server 2016 Express, Setup displays a pre-requisite warning. In this case, you should exit Setup. Then, update the operating system on the computer to one that does support SQL Server 2016 Express and run Setup again.</li></ul>|  
 
