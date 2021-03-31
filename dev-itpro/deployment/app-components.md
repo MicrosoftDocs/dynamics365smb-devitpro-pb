@@ -14,7 +14,7 @@ ms.date: 04/01/2021
 
 # Components and Capabilities
 
-When you build an app for [!INCLUDE [prod_short](../developer/includes/prod_short.md)], be it an [!INCLUDE[embedapp](../developer/includes/embedapp.md)] or an AppSource app, you must be aware of which components and deployment steps are provided by Microsoft and which you must provide.
+When you build an app for [!INCLUDE [prod_short](../developer/includes/prod_short.md)], be it an AppSource app or an [!INCLUDE[embedapp](../developer/includes/embedapp.md)], you must be aware of which components and deployment steps are provided by Microsoft and which you must provide.
 
 ## Components
 

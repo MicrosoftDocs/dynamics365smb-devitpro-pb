@@ -35,7 +35,9 @@ For deploying [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-pre
 > [!TIP]
 > The content on the [https://docs.microsoft.com/dynamics365/business-central/](/dynamics365/business-central/) site and in the various GitHub repos reflects the latest version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)], unless otherwise specified.
 >
-> We recommend that you get your version of Microsoft's content close to the time the subsequent major version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] becomes available. For example, if you are deploying version 16.4, you should have taken a snapshot of the content in GitHub before version 17.0 became available.
+> We recommend that you get your version of Microsoft's content close to the time the subsequent major version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] becomes available. For example, if you are deploying version 16.4, you could have taken a snapshot of the content in GitHub before version 17.0 became available.
+
+[!INCLUDE [ua-github-releases](../includes/ua-github-releases.md)]
 
 ### Online library
 
@@ -119,7 +121,7 @@ If you deploy a solution that is based on Microsoft's default application, then 
 > [!TIP]
 > The content on the [https://docs.microsoft.com/dynamics365/business-central/](https://docs.microsoft.com/dynamics365/business-central/) site and in the various GitHub repos reflects the latest version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)], unless otherwise specified.
 >
-> If you deploy [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises, we recommend that you get your version of Microsoft's content close to the time the subsequent major version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] becomes available. For example, if you are deploying version 17.4, you should have taken a snapshot of the content in GitHub before version 18.0 became available.
+> [!INCLUDE [ua-github-releases](../includes/ua-github-releases.md)]
 
 Let's take an example: You are deploying version 17.4 on-premises for a customer in Belgium in June 2021. Back in March 2021, you knew that version 18.0 was coming up, so you ran the [custom help toolkit's HtmlFromRepoGenerator tool](../help/custom-help-toolkit-HtmlFromRepoGenerator.md) to get the latest version of Microsoft's source files from the relevant repos. In this example, you would configure the tool to process the following repos:
 
@@ -128,12 +130,9 @@ Let's take an example: You are deploying version 17.4 on-premises for a customer
 * [https://github.com/MicrosoftDocs/dynamics365smb-docs-pr.nl-be](https://github.com/MicrosoftDocs/dynamics365smb-docs-pr.nl-be)  
 
 > [!TIP]
-> The [HtmlFromRepoGenerator](../help/custom-help-toolkit-HtmlFromRepoGenerator.md) tool generates HTML files for you that you can choose to customize before you deploy them to the relevant website. But you can use any tool or script that you prefer. For more information, see [Extend, Customize, and Collaborate on the Help](../help/contributor-guide.md).
+> The [HtmlFromRepoGenerator](../help/custom-help-toolkit-HtmlFromRepoGenerator.md) tool generates HTML files for you that you can choose to customize before you deploy them to the relevant website. Starting with 2021 release wave 1, the tool can get content based on the release-specific packages in GitHub. For more information, see [Custom Help Toolkit](../help/custom-help-toolkit.md) and [Extend, Customize, and Collaborate on the Help](../help/contributor-guide.md).
 
-> [!IMPORTANT]
-> Essential information required for user success
-
-If you want to create your own tooling and processes around [DocFx](https://dotnet.github.io/docfx/), you can see examples in the [Build HTML files](../help/contributor-guide.md#build-html-files) section of the contributor guide.  
+Alternatively,use any tool or script that you prefer. If you want to create your own tooling and processes around [DocFx](https://dotnet.github.io/docfx/), you can see examples in the [Build HTML files](../help/contributor-guide.md#build-html-files) section of the contributor guide.  
 
 ## Fork the Microsoft repos, and customize or extend the content
 
