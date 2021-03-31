@@ -26,7 +26,7 @@ To start adding barcodes to reports, follow the instructions in the next section
 
 ### Setting up Business Central on-premises
 
-With [!INCLUDE[prod_short](includes/prod_short.md)] on-premises, there a couple tasks you'll need to do before you can start adding barcodes to your reports.  
+With [!INCLUDE[prod_short](includes/prod_short.md)] on-premises, there are couple tasks you'll need to do before you can start adding barcodes to your reports.  
 
 1. Get the barcode fonts that you want to use on reports.
 
@@ -49,7 +49,7 @@ Use table 9203 **Barcode Encode Settings** to configure smaller variations in ho
 
 ## Adding the encoded string to the report dataset
 
-To show the barcode in a report, you must add the encoded string to the report dataset. The following code shows an example report that displays the **GTIN** field of the **Item** table as a barcode. The barcode uses the EAN-13 font from the built-in IDautomation  barcode font provider.
+To show the barcode in a report, add the encoded string to the report dataset. The following code shows an example report that displays the **GTIN** field of the **Item** table as a barcode. The barcode uses the EAN-13 font from the built-in IDautomation barcode font provider.
 
 ```al
 report 50100 ItemBarcodeReport
