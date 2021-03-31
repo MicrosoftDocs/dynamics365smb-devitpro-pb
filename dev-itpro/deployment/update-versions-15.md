@@ -29,6 +29,7 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 
 |Knowledge Base ID                                           |Title                |Release date  |Build No. |
 |------------------------------------------------------------|---------------------|--------------|----------|
+|[5001733](https://support.microsoft.com/help/5001733)|Update 15.17|April 2021|Application Build 15.17.46858</br>Platform Build15.0.46845|
 |[5001233](https://support.microsoft.com/help/5001233)|Update 15.16|March 2021|Application Build 15.16.46612</br>Platform Build 15.0.46600|
 |[5000694](https://support.microsoft.com/help/5000694)|Update 15.15|February 2021|Application Build 15.15.46359</br>Platform Build 15.0.46345|
 |[4595150](https://support.microsoft.com/help/4595150)|Update 15.14|January 2021|Application Build 15.14.46107</br>Platform Build 15.0.46099|
