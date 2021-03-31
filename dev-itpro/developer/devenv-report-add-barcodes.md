@@ -14,31 +14,30 @@ ms.author: jswymer
 
 # Adding Barcodes to Reports
 
-This article explains how to add barcodes to reports using the barcode functionality in Business Central. 
+This article explains how to add barcodes to reports using the barcode functionality in [!INCLUDE[prod_short](includes/prod_short.md)].
 
 ## Overview and setup
 
-The barcode functionality lets you convert an alphanumeric value in a report dataset into a barcode on a generated report. The functionality is provided by the **Barcode** module of the System Application. The module includes the objects and tools that you need to add barcodes to reports. Using the API, you create barcode font providers for generating data strings as barcodes. A barcode provider includes a library of different barcode fonts and symbologies. Barcode font encoders in provider convert data strings to the specific font specification. 
+The barcode functionality lets you convert an alphanumeric value in a report dataset into a barcode on a generated report. The functionality is provided by the **Barcode** module of the System Application. The module includes the objects and tools that you need to add barcodes to reports. Using the API, you create barcode font providers for generating data strings as barcodes. A barcode provider includes a library of different barcode fonts and symbologies. Barcode font encoders are included in the provider to convert data strings to the specific font specification and symbology. 
 
-Business Central online comes fully equipped with a barcode provider and fonts from IDAutomation, so you can start adding barcodes to reports right away.
-
+Business Central online comes fully equipped with a barcode provider and fonts from IDAutomation, so you can start adding barcodes to reports right away. For a description of the available fonts, see [](devenv-report-barcode-fonts.md).
 
 For more information about this module, see the [AL Extensions on GitHub](https://github.com/microsoft/ALAppExtensions/tree/master/Modules/System/Barcode).
 
 ### Setting up Business Central on-premises
 
-With Business Central on-premises, there a couple tasks you'll need to do before you can start adding barcodes to your reports.  
+With [!INCLUDE[prod_short](includes/prod_short.md)] on-premises, there a couple tasks you'll need to do before you can start adding barcodes to your reports.  
 
 1. Get the barcode fonts that you want to use on reports.
 
-    You get barcode fonts from any recognized font provider. If you use the IDAutomation fonts then you can skip the next step and use the built-in IDAutomation barcode font provider as is.
+    You can get barcode fonts from any font provider. If you use the IDAutomation fonts, you can skip the next step and use the built-in IDAutomation barcode font provider.
 
-2. Using the Barcode module, create your own barcode font provider that includes encoders for the fonts.
+2. Create your own barcode font provider with encoders for the fonts.
 
-   Adhere to the interface in the module. Consider contributing to the open-source project if you do.
-3. Install the fonts on the Business Central Server.
+   Adhere to the interface in the Barcode module. Consider contributing to the open-source project if you do.
+3. Install the fonts on the [!INCLUDE[server](includes/server.md)] computer or machine.
 
-    Install the fonts in the same folder as the Business Central Server instance. By default, the folder is 
+    Install the fonts in the [!INCLUDE[server](includes/server.md)] instance installation folder. By default, the folder is C:\Program Files\Microsoft Dynamics 365 Business Central\XXX\Service
 <!--
 
 - License the fonts from IDAutomation
@@ -47,8 +46,7 @@ With Business Central on-premises, there a couple tasks you'll need to do before
 
 - Obtain barcode fonts from other manufactures
 
-    In this case, you'll have to extend the barcode encoder library to provide encoding functions that work with these fonts. Be sure to adhere to the interface in the module. -->
-
+    In this case, you'll have to extend the barcode encoder library to provide encoding functions that work with these fonts. Be sure to adhere to the interface in the module.
 
 ## Barcode font and symbologies with Business Central online
 
@@ -66,7 +64,7 @@ Business Central online includes the following one-dimensional barcode fonts and
 |EAN|<ul><li>EAN-8</li><li>EAN-13</li></ul>|Characters are all contained in a single font represented in several different heights. IDAutomation's UPC / EAN barcode fonts were created according to the latest GS1, UCC, EAN, and ISO/IEC 15420 standards so that the nominal size is achieved when printed at 16 points (or 18 points for 203 DPI printers). Because the standards allow a magnification factor of .8 to 2.0, the fonts may be printed as small as 12 points and as large as 32 points. For best results, these fonts should be printed at the largest point size and height possible in this range. When using a printer with less than 600 DPI, only certain font sizes may be used as defined. See [Specs](https://www.idautomation.com/barcode-fonts/upc-ean/user-manual/).|
 |USPS|Postnet</li></ul>|<ul><li>Postal Numeric Encoding Technique used by the United States Postal Service to assist direct mail.</li><li>ZIP code encoded in half and full height bars.</li></ul> See [Specs](https://www.idautomation.com/barcode-fonts/usps-intelligent-mail/).|
 
-
+ -->
 <!--
 
 |Font|Symbologies|Description|
@@ -84,22 +82,23 @@ Native font encoder source code is available for IMb in Visual Basic VBA, SSRS, 
 Includes a code-128 font that is used to generate the IMpb Packing Barcode, Intelligent Mail Container Barcode, and the GS1-128 Delivery Confirmation Barcode.See [Specs](https://www.idautomation.com/barcode-fonts/usps-intelligent-mail/).|
 -->
 
+<!--
 > [!NOTE]
 > Fonts have different specifications for characteristics like encode numbers, symbols, uppercase and lowercase text. Knowing the specifications is useful for calibrating fonts used on report layouts. Refer to the material provided by the font provider for details.
 
 A barcode symbology is the mapping between data and the barcode image. It defines how to encode the data, including computation of a checksum and required start and stop marker symbols.
-
+-->
 ## Encoding a string in AL
 
-To represent a string as a barcode in a report, it must be encoded according to the symbology you want. The Barcode module has encoder methods in codeunit 9215 **DAutomation 1D Provider** that can be used with barcode fonts from IDAutomation.
+To represent a string as a barcode in a report, it must be encoded according to the symbology you want. The **Barcode** module has encoder methods in codeunit 9215 **IDAutomation 1D Provider** that can be used with barcode fonts from IDAutomation.
 
-You use the `ValidateInput` procedure to validate whether a string can be encoded in a given symbology, and then the `EncodeFont` procedure to do the actual encoding.
+Use the `ValidateInput` procedure to validate whether a string can be encoded in a given symbology, and then the `EncodeFont` procedure to do the actual encoding.
 
-In table 9203 **Barcode Encode Settings**, you can configure smaller variations in how different symbologies work. For example, you can enable an extended character set or checksums in Code39, or change the code set used in Code128. 
+Use table 9203 **Barcode Encode Settings** to configure smaller variations in how different symbologies work. For example, you can enable an extended character set or checksums in Code39, or change the code set used in Code128. 
 
 ## Adding the encoded string to the report dataset
 
-To show the barcode in a report, you must add the encoded string to the report dataset. The following code shows an example report that displays the **GTIN** field of the **Item** table as a barcode. The barcode uses the EAN-13 font from the built-in IDautomation barcode font provider.
+To show the barcode in a report, you must add the encoded string to the report dataset. The following code shows an example report that displays the **GTIN** field of the **Item** table as a barcode. The barcode uses the EAN-13 font from the built-in IDautomation  barcode font provider.
 
 ```al
 report 50100 ItemBarcodeReport
