@@ -104,11 +104,9 @@ report 50100 ItemBarcodeReport
 
 ## Using a barcode font in the report layout
 
-Each supported symbologies has corresponding fonts installed in Business Central online. To use a barcode font in the report layout,  mark the encoded string from the dataset with the font.
+Each supported symbologies has corresponding fonts installed in Business Central online. To use a barcode font in the report layout, mark the encoded string from the dataset with the font.
 
-For developers, it's possible to use a font in a layout without having it installed on the machine you use to develop the layout. Without the font, the report won't show the barcode, but when you then test the report in a Business Central online sandbox, then it will be shown on the report.
-
-If you want to use the IDAutomation barcode fonts from in an on-premises installation, you need to license them from IDAutomation and install them on the machine that runs the Business Central server.
+For developers, it's possible to use a font in a layout without having it installed on the machine that you use to develop the layout. Without the font, the report won't show the barcode. But if you then test the report in a online sandbox, it will be shown on the report.
 
 ## See Also
 [Request Pages](devenv-request-pages.md)  
