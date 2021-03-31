@@ -16,6 +16,9 @@ ms.author: jswymer
 
 Business Central online includes the following one-dimensional barcode fonts and symbologies from [IDAutomation](https://www.idautomation.com). The fonts have different specifications for characteristics like encode numbers, symbols, uppercase, and lowercase text. Knowing the specifications is useful for calibrating fonts used on report layouts.
 
+> [!TIP]
+> A barcode symbology is the mapping between data and the barcode image. It defines how to encode the data, including computation of a checksum and required start and stop marker symbol
+
 |Font|Symbology|Description|
 |----|-----------|--------------
 |Code39|Code39|<ul><li>Variable length</li><li>43 characters, uppercase letters (A through Z), numeric digits (0 through 9), and special characters (-, ., $, /, +, %, and space)</li><li>* is used for both start and stop delimiters. </li><li>Nine elements per character (five bars and four spaces).</li></ul> See [Specs](https://www.idautomation.com/barcode-fonts/code-39/fontnames/). |
@@ -24,116 +27,16 @@ Business Central online includes the following one-dimensional barcode fonts and
 |Code 128|Code 128|<ul><li> High-density linear barcode symbology for alphanumeric or numeric-only barcodes </li><li>Encodes 128 ASCII characters</li><li>Uppercase letters A, B, C, and D are used for start and stop codes.</li><li>Compact barcodes compared to other fonts like Code 39, especially when text is mostly digits</li></ul>See [Specs](https://www.idautomation.com/barcode-fonts/code-128/user-manual/)|
 |Interleaved 2 of 5|Interleaved 2 of 5|<ul><li>Continuous two-width barcode symbology encoding digits</li><li>Encodes pairs of digits. The first digit is encoded in the five bars (black lines). The second digit is encoded in the five interleaved spaces (or white lines). </li><li>Two out of five bars or spaces are wide</li></ul>See [Specs](https://www.idautomation.com/barcode-fonts/interleaved-2of5/)|
 |MSI Plessey|MSI Plessey|<ul><li>Continuous symbology</li><li>Not self-checking.</li><li>Primarily for inventory control, marking storage containers and shelves in warehouse environments</li></ul>See [Specs](https://www.idautomation.com/barcode-fonts/msi/).|
-|UPC/EAN|UPC-A|<ul><li>Common and well-known 12-digit barcode</li><li> Subset of EAN-13</li><li> Encodes GTIN-12 numbers</li></ul> See [Specs](https://www.idautomation.com/barcode-fonts/upc-ean/user-manual/).|
-||UPC-E|<ul><li>6 digit variation of UPC-A that suppresses trailing zeros. </li><li>Commonly used where space is a factor. </li></ul>See [Specs](https://www.idautomation.com/barcode-fonts/upc-ean/user-manual/).|
-||EAN-8|See [Specs](https://www.idautomation.com/barcode-fonts/upc-ean/user-manual/).|
-||EAN-13|Characters are all contained in a single font represented in several different heights. IDAutomation's UPC / EAN barcode fonts were created according to the latest GS1, UCC, EAN, and ISO/IEC 15420 standards so that the nominal size is achieved when printed at 16 points (or 18 points for 203 DPI printers). Because the standards allow a magnification factor of .8 to 2.0, the fonts may be printed as small as 12 points and as large as 32 points. For best results, these fonts should be printed at the largest point size and height possible in this range. When using a printer with less than 600 DPI, only certain font sizes may be used as defined. See [Specs](https://www.idautomation.com/barcode-fonts/upc-ean/user-manual/).|
 |USPS|Postnet</li></ul>|<ul><li>Postal Numeric Encoding Technique used by the United States Postal Service to assist direct mail.</li><li>ZIP code encoded in half and full height bars.</li></ul> See [Specs](https://www.idautomation.com/barcode-fonts/usps-intelligent-mail/).|
-
-A barcode symbology is the mapping between data and the barcode image. It defines how to encode the data, including computation of a checksum and required start and stop marker symbol
-
-<!--
-
-    /// To allow the use of UPC barcodes on smaller packages, where a full 12-digit barcode may not fit, a 'zero-suppressed version of UPC was developed, called UPC-E, in which the number system digit, all trailing zeros in the manufacturer code, and all leading zeros in the product code, are suppressed (omitted). 
-    /// This symbology differs from UPC-A in that it only uses a 6-digit code, does not use M (middle) guard pattern, and the E (end) guard pattern is formed as space-bar-space-bar-space-bar, i.e. UPC-E barcode follows the pattern SDDDDDDE. 
-    /// The way in which a 6-digit UPC-E relates to a 12-digit UPC-A, is determined by UPC-E numerical pattern and UPC-E parity pattern. 
-    /// It can only correspond to UPC-A number system 0 or 1, the value of which, along with the UPC-A check digit, determines the UPC-E parity pattern of the encoding.
-The Universal Product Code (UPC; redundantly: UPC code) is a barcode symbology that is widely used in the United States, Canada, Europe, Australia, New Zealand, and other countries for tracking trade items in stores.
-    /// UPC (technically refers to UPC-A) consists of 12 numeric digits that are uniquely assigned to each trade item. Along with the related EAN barcode, the UPC is the barcode mainly used for scanning of trade items at the point of sale, per GS1 specifications. 
-    /// UPC data structures are a component of GTINs and follow the global GS1 specification, which is based on international standards. But some retailers (clothing, furniture) do not use the GS1 system (rather other barcode symbologies or article number systems). 
-    /// On the other hand, some retailers use the EAN/UPC barcode symbology, but without using a GTIN (for products sold in their own stores only).    
-|Font|Symbologies|Description|
-|----|-----------|--------------
-|Code39|Code39|<ul><li>Variable length</li><li>43 characters, uppercase letters (A through Z), numeric digits (0 through 9) and special characters (-, ., $, /, +, %, and space)</li><li>* is used for both start and stop delimiters. </li><li>Nine elements per character (five bars and four spaces).</li></ul> See [Specs](https://www.idautomation.com/barcode-fonts/code-39/fontnames/). |
-|Codabar|Codabar|<ul><li>Characters 0-9, letters A to D and the following symbols: - $ / +. </li><li>Self-checking, no checksum characters requirement.</li><li>Uppercase letters A, B, C, and D are used for start and stop codes.</li><li>Parentheses ( ) can be used as the start and stop code so letters don't appear readable version of the fonts.</li></ul>See [Specs]((https://www.idautomation.com/barcode-fonts/codabar/user-manual/)|
-|Code 128|Code 128|<ul><li> High-density linear barcode symbology for alphanumeric or numeric-only barcodes </li><li>Encodes 128 ASCII characters</li><li>Uppercase letters A, B, C, and D are used for start and stop codes.</li><li>Compact barcodes compared to other fonts like Code 39, especially when text is mostly digits</li></ul>See [Specs](https://www.idautomation.com/barcode-fonts/code-128/user-manual/)|
-|Interleaved 2 of 5|Interleaved 2 of 5|<ul><li>Continuous two-width barcode symbology encoding digits</li><li>Encodes pairs of digits. The first digit is encoded in the five bars (black lines). The second digit is encoded in the five interleaved spaces (or white lines). </li><li>Two out of five bars or spaces are wide</li></ul>See [Specs](https://www.idautomation.com/barcode-fonts/interleaved-2of5/)|
-|MSI Plessey|MSI Plessey|<ul><li>Continuous symbology</li><li>Not self-checking.</li><li>Primarily for inventory control, marking storage containers and shelves in warehouse environments</li></ul>See [Specs](https://www.idautomation.com/barcode-fonts/msi/).|
-|UPC/EAN|<ul><li> UPC-A</li><li>UPC-E</li><li>EAN-8</li><li>EAN-13</li></ul>|characters are all contained in a single font represented in several different heights. IDAutomation's UPC / EAN barcode fonts were created according to the latest GS1, UCC, EAN , and ISO/IEC 15420 standards so that the nominal size is achieved when printed at 16 points (or 18 points for 203 DPI printers). Because the standards allow a magnification factor of .8 to 2.0, the fonts may be printed as small as 12 points and as large as 32 points. For best results, these fonts should be printed at the largest point size and height possible in this range. When using a printer with less than 600 DPI, only certain font sizes may be used as definedSee [Specs](https://www.idautomation.com/barcode-fonts/upc-ean/user-manual/).
-|USPS|<ul><li> IMB</li><li>Postnet</li><li>Planet</li></ul>|POSTNET (Postal Numeric Encoding Technique) is a barcode symbology used by the United States Postal Service to assist in directing mail. 
-    /// The ZIP Code or ZIP+4 code is encoded in half- and full-height bars.This single Barcode Font Package generates all USPS Intelligent Mail barcodes including IMb Tracing, IMpb, IM Tray Labels, OneCode Confirm, and ACS, Postnet and the IM Container Barcode.
-Over 30 font encoders are provided to format data to the fonts.
-Native font encoder source code is available for IMb in Visual Basic VBA, SSRS, JavaScript, C++, C#, VB.NET, Oracle and Java.
-Includes a code-128 font that is used to generate the IMpb Packing Barcode, Intelligent Mail Container Barcode, and the GS1-128 Delivery Confirmation Barcode.See [Specs](https://www.idautomation.com/barcode-fonts/usps-intelligent-mail/).|
--->
-
-> [!NOTE]
-> Fonts have different specifications for characteristics like encode numbers, symbols, uppercase and lowercase text. Knowing the specifications is useful for calibrating fonts used on report layouts. Refer to the material provided by the font provider for details.
-
-A barcode symbology is the mapping between data and the barcode image. It defines how to encode the data, including computation of a checksum and required start and stop marker symbols.
-
-## Encoding a string in AL
-
-To represent a string as a barcode in a report, it must be encoded according to the symbology you want. The Barcode module has encoder methods in codeunit 9215 **DAutomation 1D Provider** that can be used with barcode fonts from IDAutomation.
-
-You use the `ValidateInput` procedure to validate whether a string can be encoded in a given symbology, and then the `EncodeFont` procedure to do the actual encoding.
-
-In table 9203 **Barcode Encode Settings**, you can configure smaller variations in how different symbologies work. For example, you can enable an extended character set or checksums in Code39, or change the code set used in Code128. 
-
-## Adding the encoded string to the report dataset
-
-To show the barcode in a report, you must add the encoded string to the report dataset. The following code shows an example report that displays the **GTIN** field of the **Item** table as a barcode. The barcode uses the EAN-13 font from the built-in IDautomation barcode font provider.
-
-```al
-report 50100 ItemBarcodeReport
-{
-    UsageCategory = Administration;
-    ApplicationArea = All;
-    DefaultLayout = Word;
-    Caption = 'Item Barcodes';
-    WordLayout = 'ItemBarcodes.docx';
-
-    dataset
-    {
-        dataitem(Items; Item)
-        {
-            DataItemTableView = SORTING("No.");
-            RequestFilterFields = "No.";
-            RequestFilterHeading = 'Items';
-
-            column(No_; "No.")
-            {
-            }
-            column(Description; Description)
-            {
-            }
-
-            column(Unit_Price; "Unit Price")
-            {
-            }
-
-            column(Barcode; EncodedText)
-            {
-            }
-
-            trigger OnAfterGetRecord()
-            var
-
-                BarcodeSymbology: Enum "Barcode Symbology";
-                BarcodeFontProvider: Interface "Barcode Font Provider";
-
-            begin
-                BarcodeFontProvider := Enum::"Barcode Font Provider"::IDAutomation1D;
-                BarcodeSymbology := Enum::"Barcode Symbology"::"EAN-13";
-                EncodedText := BarcodeFontProvider.EncodeFont(GTIN, BarcodeSymbology);
-            end;
-        }
-    }
-
-    var
-        EncodedText: Text;
-}
-```
-
-## Using a barcode font in the report layout
-
-Each supported symbologies has corresponding fonts installed in Business Central online. To use a barcode font in the report layout,  mark the encoded string from the dataset with the font.
-
-For developers, it's possible to use a font in a layout without having it installed on the machine you use to develop the layout. Without the font, the report won't show the barcode, but when you then test the report in a Business Central online sandbox, then it will be shown on the report.
-
-If you want to use the IDAutomation barcode fonts from in an on-premises installation, you need to license them from IDAutomation and install them on the machine that runs the Business Central server.
+|UPC/EAN|---- |UPC and EAN barcode font characters are contained in a single font represented in several different heights. The fonts can be printed in sizes from 12 points up to 32 points.<br><br>See [Specs](https://www.idautomation.com/barcode-fonts/upc-ean/user-manual/).|
+||UPC-A|<ul><li>Common and well-known 12-digit barcode</li><li> Subset of EAN-13</li><li> Encodes GTIN-12 numbers</li></ul> |
+||UPC-E|<ul><li>6 digit variation of UPC-A that suppresses trailing zeros. </li><li>Commonly used where space is a factor. </li></ul>.|
+||EAN-8|<ul><li>Linear, 12 digit barcode</li><li> Derived from EAN-13, but smaller</li><li> Encodes GTIN-8 numbers</li></ul> |
+||EAN-13|<ul><li>12-digit barcode</li><li>Superset of UPC-A, with an extra digit added to every UPC-A number <li> Encodes GTIN-13 numbers</li></ul>|
 
 ## See Also
+
+[Adding Barcodes to Reports](devenv-report-add-barcodes.md)  
 [Request Pages](devenv-request-pages.md)  
 [Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md)  
 [Creating a Word Layout Report](devenv-howto-report-layout.md)  
