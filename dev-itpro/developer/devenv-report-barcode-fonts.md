@@ -30,8 +30,8 @@ Business Central online includes the following one-dimensional barcode fonts and
 |USPS|Postnet</li></ul>|<ul><li>Postal Numeric Encoding Technique used by the United States Postal Service to assist direct mail.</li><li>ZIP code encoded in half and full height bars.</li></ul> See [Specs](https://www.idautomation.com/barcode-fonts/usps-intelligent-mail/).|
 |UPC/EAN|---- |UPC and EAN barcode font characters are contained in a single font represented in several different heights. The fonts can be printed in sizes from 12 points up to 32 points.<br><br>See [Specs](https://www.idautomation.com/barcode-fonts/upc-ean/user-manual/).|
 ||UPC-A|<ul><li>Common and well-known 12-digit barcode</li><li> Subset of EAN-13</li><li> Encodes GTIN-12 numbers</li></ul> |
-||UPC-E|<ul><li>6 digit variation of UPC-A that suppresses trailing zeros. </li><li>Commonly used where space is a factor. </li></ul>.|
-||EAN-8|<ul><li>Linear, 12 digit barcode</li><li> Derived from EAN-13, but smaller</li><li> Encodes GTIN-8 numbers</li></ul> |
+||UPC-E|<ul><li>6-digit variation of UPC-A that suppresses trailing zeros. </li><li>Commonly used where space is a factor. </li></ul>.|
+||EAN-8|<ul><li>Linear, 12-digit barcode</li><li> Derived from EAN-13, but smaller</li><li> Encodes GTIN-8 numbers</li></ul> |
 ||EAN-13|<ul><li>12-digit barcode</li><li>Superset of UPC-A, with an extra digit added to every UPC-A number <li> Encodes GTIN-13 numbers</li></ul>|
 
 ## See Also

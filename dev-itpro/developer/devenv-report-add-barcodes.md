@@ -18,11 +18,11 @@ This article explains how to add barcodes to reports using the barcode functiona
 
 ## Overview
 
-The barcode functionality lets you convert an alphanumeric value in a report dataset into a barcode on a generated report. The functionality is provided by the **Barcode** module of the System Application. The module includes the objects and tools that you need to add barcodes to reports. Using the API, you create barcode font providers for generating data strings as barcodes. A barcode provider includes a library of different barcode fonts and symbologies. As part of the provider, you add barcode font encoders that convert data strings to the specific font specification and symbology.
+The barcode functionality lets you convert an alphanumeric value in a report dataset into a barcode on a generated report. The functionality is provided by the **Barcode** module of the System Application. The module includes the objects and tools that you need to add barcodes to reports. Using the API, you create barcode font providers for generating data strings as barcodes. A barcode provider includes a library of different barcode fonts and symbologies. As part of the provider, you add barcode font encoders that convert data strings to the specific font specification and symbology. For more information about this module, see the [AL Extensions on GitHub](https://github.com/microsoft/ALAppExtensions/tree/master/Modules/System/Barcode).
 
-Business Central online comes fully equipped with a barcode provider and fonts from IDAutomation, so you can start adding barcodes to reports right away. For a description of the available fonts, see [Barcode Fonts with Business Central Online](devenv-report-barcode-fonts.md).
+Business Central online comes equipped with a barcode provider and fonts from [IDAutomation](https://www.idautomation.com). So, you can start adding barcodes to reports right away. For a description of the available fonts, see [Barcode Fonts with Business Central Online](devenv-report-barcode-fonts.md).
 
-For more information about this module, see the [AL Extensions on GitHub](https://github.com/microsoft/ALAppExtensions/tree/master/Modules/System/Barcode).
+To start adding barcodes to reports, follow the instructions in the next sections. 
 
 ### Setting up Business Central on-premises
 
@@ -41,7 +41,7 @@ With [!INCLUDE[prod_short](includes/prod_short.md)] on-premises, there a couple 
 
 ## Encoding a string in AL
 
-To represent a string as a barcode in a report, it must be encoded according to the symbology you want. The **Barcode** module has encoder methods in codeunit 9215 **IDAutomation 1D Provider** that can be used with barcode fonts from IDAutomation.
+To represent a string as a barcode in a report, encode it according to the symbology you want. The **Barcode** module has encoder methods in codeunit 9215 **IDAutomation 1D Provider**. You can use these encoders with barcode fonts from IDAutomation.
 
 Use the `ValidateInput` procedure to validate whether a string can be encoded in a given symbology, and then the `EncodeFont` procedure to do the actual encoding.
 
@@ -104,9 +104,9 @@ report 50100 ItemBarcodeReport
 
 ## Using a barcode font in the report layout
 
-Each supported symbologies has corresponding fonts installed in Business Central online. To use a barcode font in the report layout, mark the encoded string from the dataset with the font.
+Each supported symbology has a corresponding font installed in Business Central online. To use a barcode font in the report layout, mark the encoded string from the dataset with the font.
 
-For developers, it's possible to use a font in a layout without having it installed on the machine that you use to develop the layout. Without the font, the report won't show the barcode. But if you then test the report in a online sandbox, it will be shown on the report.
+It's possible as a developer to use a font in a layout without having it installed on the machine that you use to develop the layout. Without the font, the report won't show the barcode. But if you then test the report in an online sandbox, it will be shown on the report.
 
 ## See Also
 [Request Pages](devenv-request-pages.md)  
