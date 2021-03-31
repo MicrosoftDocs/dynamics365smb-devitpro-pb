@@ -29,7 +29,7 @@ For more information about the object ID ranges in Business Central, see [Object
 
 For more information about the properties in the `app.json` file, see [JSON Files](../devenv-json-files.md).
 
-## How to fix this diagnostic
+## How to fix this diagnostic?
 
 If you are targetting the AppSource markeplace, you need to update the ID range in your `app.json` file with the one that Microsoft provided you with.
 

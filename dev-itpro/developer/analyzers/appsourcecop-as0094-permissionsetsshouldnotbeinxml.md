@@ -19,6 +19,9 @@ Permission Sets should not be defined in XML files.
 ## Description
 Permission sets should not be defined in XML. Instead, use the dedicated AL object for 'PermissionSet'.
 
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## Example of XML file triggering the rule
 
 ```XML
@@ -39,10 +42,12 @@ Permission sets should not be defined in XML. Instead, use the dedicated AL obje
 </PermissionSets>
 ```
 
-## How to fix this diagnostic
+### Converted into a PermissionSet object
+
+
+## How to fix this diagnostic?
 You can convert XML Permission Sets to AL objects. You can see more on the [upgrade page](../../upgrade/upgrade-permissions.md).
 
-[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
