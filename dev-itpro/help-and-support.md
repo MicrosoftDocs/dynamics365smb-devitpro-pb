@@ -29,7 +29,7 @@ The functionality in the default version of [!INCLUDE[prod_short](includes/prod_
 
 In the [Development in AL](developer/devenv-dev-overview.md) section, you find descriptions of processes such as [compilation](developer/devenv-compilation-scope-overview.md) and [debugging](developer/devenv-debugging.md), and conceptual information about object types such as [tables](developer/devenv-tables-overview.md) and [events](developer/devenv-events-in-al.md).  
 
-The reference documentation of the AL language publishes under the [AL Programming](developer/devenv-programming-in-al.md) umbrella. This content is partly generated automatically from code, but currently most of the reference content is maintained by hand. Use the following landing pages to quickly find the reference content that you need:
+The reference documentation of the AL language publishes under the [AL Programming](developer/devenv-programming-in-al.md) umbrella. This content is partly generated automatically from code, but some of the reference content is maintained by hand. Use the following landing pages to quickly find the reference content that you need:
 
 * Methods
   * [Data Types and Methods in AL](developer/methods-auto/library.md)
@@ -54,7 +54,11 @@ The reference documentation of the AL language publishes under the [AL Programmi
 
 In general, the [!INCLUDE [prod_short](developer/includes/prod_short.md)] content on the docs.microsoft.com site reflects the latest version of [!INCLUDE [prod_short](developer/includes/prod_short.md)] online with limited support for earlier versions.  
 
-If you support [!INCLUDE [prod_short](developer/includes/prod_short.md)] on-premises, your solution might be one or two versions older than the latest version. This means that the content in the [business functionality documentation](/dynamics365/business-central/) might describe functionality that your users do not have access to. For a better experience, we recommend that you take a copy of our content at the time when that reflected the version that your on-premises solution is based on and deploy that to your own website. For more information, see the [On-premises deployments](deployment/configure-help.md#on-premises-deployments) section in the [Configure the Help Experience](deployment/configure-help.md) article.
+If you support [!INCLUDE [prod_short](developer/includes/prod_short.md)] on-premises, your solution might be one or two versions older than the latest version. This means that the content in the [business functionality documentation](/dynamics365/business-central/) might describe functionality that your users do not have access to. For a better experience, we recommend that you take a copy of our content at the time when that reflected the version that your on-premises solution is based on and deploy that to your own website.  
+
+[!INCLUDE [ua-github-releases](includes/ua-github-releases.md)]
+
+For more information, see the [On-premises deployments](deployment/configure-help.md#on-premises-deployments) section in the [Configure the Help Experience](deployment/configure-help.md) article.
 
 ### Customize and extend the user assistance
 
