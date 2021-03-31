@@ -3,7 +3,7 @@ title: "Legal Resources for Business Central online"
 description: Get a list of links to legal information for Business Central, including the online service terms for Business Central online. 
 author: jswymer
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,7 +29,7 @@ This page provides links to legal information for Business Central.
 
 ## Trial Services terms 
 
-- [Trial Services terms](https://go.microsoft.com/fwlink/?linkid=828977)
+- [Trial Services terms](/dynamics365/legal/slt-dynamics365-viraltrial#2)
 
 <!--## Teams integration-->
 
@@ -39,4 +39,4 @@ This page provides links to legal information for Business Central.
 
 [Privacy FAQ](../security/PrivacyFAQ.md)  
 [Legal Resources for Business Central On-Premises](legal-onpremises.md)  
-[Developer and Administration Help for Microsoft Dynamics 365 Business Central](../index.md)  
+[Developer and Administration Help for Microsoft Dynamics 365 Business Central](../index.md)

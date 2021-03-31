@@ -2,7 +2,7 @@
 title: "Upgrading Unmodified C/AL Application to Version 17"
 description: Describes how to upgrade an unmodified Business Central 14 application to version 17
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ ms.service: "dynamics365-business-central"
 ---
 # Upgrading Unmodified C/AL Application to Version 17
 
-Use this scenario if you have a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Spring 2019 (version 14) application or earlier that doesn't include any code customization. Your solution might include Microsoft (first party) extensions and customization extensions (3rd-party). With this upgrade, you'll replace the C/AL base application with the new Microsoft System and Base Application extensions. The result will be a fully upgraded Business Central 2020 release wave 1 (version 17) application and platform.
+Use this scenario if you have a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Spring 2019 (version 14) application or earlier that doesn't include any code customization. Your solution might include Microsoft (first party) extensions and customization extensions (3rd-party). With this upgrade, you'll replace the C/AL base application with the new Microsoft System and Base Application extensions. The result will be a fully upgraded Business Central 2020 release wave 2 (version 17) application and platform.
 
  ![Upgrade on unmodified Business Central application](../developer/media/bc14-to-17-upgrade-unmodified-app.png "Upgrade on unmodified Business Central application") 
 

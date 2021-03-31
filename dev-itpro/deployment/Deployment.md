@@ -9,7 +9,7 @@ ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ---
 # Deployment of [!INCLUDE[prod_long](../developer/includes/prod_long.md)]
 
@@ -23,7 +23,7 @@ You can give prospects a quick introduction to [!INCLUDE[prod_short](../develope
 
 If your organization has a background as resellers of [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] or other on-premises products, you have to get set up in the Microsoft Partner Center. For more information, see [Get Started as a Reseller of Business Central Online](../administration/get-started-online.md).
 
-For more information about reseller readiness for [!INCLUDE[prod_short](../developer/includes/prod_short.md)], see [Build Your Business on Dynamics 365 Business Central](../developer/readiness/readiness-welcome.md).  
+For more information about reseller readiness for [!INCLUDE[prod_short](../developer/includes/prod_short.md)], see [Build Your Business on Dynamics 365 Business Central](../developer/readiness/opportunity-app-publisher.md).  
 
 ### Give powerful demos
 
@@ -76,4 +76,4 @@ Part of your configuration is to specify where to look up the Help for the solut
 [Upgrading to Business Central](../upgrade/upgrading-to-business-central.md)  
 [Product and Architecture Overview](product-and-architecture-overview.md)  
 [System Requirements 2019 release wave 2](system-requirement-business-central-v15.md)  
-[System Requirements April '19](system-requirement-business-central.md)  
+[System Requirements April '19](system-requirement-business-central.md)

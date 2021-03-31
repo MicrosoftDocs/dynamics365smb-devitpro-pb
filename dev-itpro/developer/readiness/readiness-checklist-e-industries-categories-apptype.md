@@ -3,7 +3,7 @@ title: "App type, contact type, test drive, and customer leads"
 description: "Guidelines on app type, contact type, test drive, and customer leads."
 author: a-emniel
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
@@ -34,5 +34,4 @@ If your app is an add-on app you can choose between the two contact types 'Free'
 ## Customer leads
 
 Provide connection details to the CRM system where you would like us to send customer leads. Read more about configuring customer leads
-[here](https://docs.microsoft.com/azure/marketplace/partner-center-portal/commercial-marketplace-get-customer-leads#connect-to-your-crm-system).
-
+[here](/azure/marketplace/partner-center-portal/commercial-marketplace-get-customer-leads#connect-to-your-crm-system).

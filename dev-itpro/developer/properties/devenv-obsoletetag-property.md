@@ -2,7 +2,7 @@
 title: "ObsoleteTag Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/24/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # ObsoleteTag Property
-> **Version**: _Available from runtime version 4.3._
+> **Version**: _Available or changed with runtime version 4.3._
 
 Specifies a free-form text to support tracking of where and when the object was marked as obsolete, for example, branch, build, or date of obsoleting the object.
 
@@ -49,7 +49,7 @@ Specifies a free-form text to support tracking of where and when the object was 
 -   Profile
 -   Interface
 -   Control Add In
-
+-   Permission Set
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -63,6 +63,8 @@ ObsoleteTag = 'This field is being deprecated with the newest build of the produ
 ## Remarks
 
 Use this property to add valuable information to developers about an object or element that will become obsolete in time or is already obsolete. For procedures and variables, the obsolete tag can be specified as an optional parameter in the `Obsolete` attribute: `[Obsolete('<Reason>','<tag>')]`. For more information, see [Obsolete Attribute](../methods/devenv-obsolete-attribute.md).
+
+For an elaborate example of deprecating, see [Best Practices for Deprecation of Code in the Base App](../devenv-deprecation-guidelines.md).
 
 ## See Also  
 

@@ -2,7 +2,7 @@
 title: "Property changes that cause destructive changes are not allowed"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AppSourceCop Rule AS0044
-Property changes that cause destructive changes are not allowed  
+Property changes that cause destructive changes are not allowed
 
 ## Description
 Destructive field properties that have been published must not be modified.

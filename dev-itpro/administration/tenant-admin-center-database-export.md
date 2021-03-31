@@ -9,7 +9,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, database, export, bacpac, backup
-ms.date: 11/04/2020
+ms.date: 04/01/2021
 ms.author: jswymer
 
 ---

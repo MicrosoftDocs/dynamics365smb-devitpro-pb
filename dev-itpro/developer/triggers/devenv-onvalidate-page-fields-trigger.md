@@ -2,7 +2,7 @@
 title: "OnValidate (Page fields) Trigger"
 description: "OnValidate trigger for page fields in AL for Business Central."
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -41,5 +41,5 @@ The OnValidate trigger is also a field trigger at the table level. For more info
 
 [OnValidate (Fields) Trigger](devenv-onvalidate-fields-trigger.md)  
 [Page and Action Triggers](devenv-page-and-action-triggers.md)  
-[Page Properties](../properties/devenv-page-properties.md)  
-[Triggers](devenv-triggers.md)  
+[Page Properties](../properties/devenv-properties.md)  
+[Triggers](devenv-triggers.md)

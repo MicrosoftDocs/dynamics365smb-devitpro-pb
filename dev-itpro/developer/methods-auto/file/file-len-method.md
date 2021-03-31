@@ -2,7 +2,7 @@
 title: "File.Len Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # File.Len Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Gets the length of an ASCII or binary file.
 
@@ -49,7 +49,7 @@ This method is often used with [Pos Method \(File\)](../../methods-auto/file/fil
   
 ## Example  
 
-The following example opens a text file that is named 'C:\\TestFolder\\TestFile.txt' and contains the text ‘Hello World’. The [Seek Method \(File\)](../../methods/devenv-Seek-method-file.md) sets a pointer to position 6 in the file. The [Read Method \(File\)](../../methods-auto/file/file-read-method.md) reads the file and stores the retrieved contents in the varString variable. The LEN method retrieves the length of the file and stores it the varLength variable. The text that is read starts from the position of the pointer, so the text ‘World’ and the length of 12 are displayed in the message box. The length of the file is not affected by the [Seek Method \(File\)](../../methods-auto/file/file-Seek-method.md). This example assumes that you have created the text file that is named C:\\TestFolder\\TestFile.txt and contains the text ‘Hello World’. This example requires that you create the following global variables.  
+The following example opens a text file that is named 'C:\\TestFolder\\TestFile.txt' and contains the text ‘Hello World’. The [Seek Method \(File\)](file-seek-method.md) sets a pointer to position 6 in the file. The [Read Method \(File\)](file-read-method.md) reads the file and stores the retrieved contents in the varString variable. The LEN method retrieves the length of the file and stores it the varLength variable. The text that is read starts from the position of the pointer, so the text ‘World’ and the length of 12 are displayed in the message box. The length of the file is not affected by the [Seek Method \(File\)](file-Seek-method.md). This example assumes that you have created the text file that is named C:\\TestFolder\\TestFile.txt and contains the text ‘Hello World’. This example requires that you create the following global variables.  
 
  ```
  var

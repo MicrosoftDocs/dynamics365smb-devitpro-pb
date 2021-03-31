@@ -2,7 +2,7 @@
 title: "Technical Upgrade From Version 14 to Version 17"
 description: Describes how to do a technical upgrade from Business Central 14 to 17
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -165,7 +165,7 @@ When you installed version 17 in **Task 1**, a version 17 [!INCLUDE[server](../d
     ```
     Restart-NAVServerInstance -ServerInstance <BC17 server instance>
     ```
-## <a name="UploadLicense"></a> Task 6: Upload [!INCLUDE[prod_short](../developer/includes/prod_short.md)] partner license  
+## <a name="UploadLicense"></a> Task 6: Import [!INCLUDE[prod_short](../developer/includes/prod_short.md)] partner license  
 
 If you have a new [!INCLUDE[prod_short](../developer/includes/prod_short.md)] partner license, make sure that it has been uploaded to the database. To upload the license, use the [Import-NAVServerLicense cmdlet](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense): 
 

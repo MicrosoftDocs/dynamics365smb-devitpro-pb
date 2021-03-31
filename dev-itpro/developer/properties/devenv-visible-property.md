@@ -2,7 +2,7 @@
 title: "Visible Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/24/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Visible Property
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Sets whether to display the page or control.
 
@@ -29,7 +29,6 @@ Sets whether to display the page or control.
 -   Page Action Group
 -   Page View
 -   Page User Control
-
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -51,7 +50,7 @@ Because this property also applies to containers, such as pages and subpages, if
 ### Dynamic Visibility of Controls
 
 > [!NOTE]  
-> You can also use as property value a **Boolean** variable that evaluates to **true** or **false**. To use a variable for the **Visible** property, it must be set as a global page variable and the [InDataSet Property](devenv-indataset-property.md) must be defined on the variable.   
+> You can also use as property value a **Boolean** variable that evaluates to **true** or **false**. To use a variable for the **Visible** property, it must be set as a global page variable and the [InDataSet Property](../methods/devenv-indataset-attribute.md) must be defined on the variable.   
 
 On pages, you use the **Visible** property to show or hide group, part, field, and action controls. You can show or hide the control either statically by setting the property to **true** or **false**, or dynamically by using a Boolean variable or a Boolean field on the page. The Boolean field on the page can be either a true/false Boolean or a Boolean expression, such as "Credit Limit > Sales YTD".  
 
@@ -70,4 +69,4 @@ When the **Visible** property is specified by a Boolean variable, users can choo
 ## See Also  
 
 [Properties](devenv-properties.md)  
-[InDataSet Property](devenv-indataset-property.md)
+[InDataSet Property](../methods/devenv-indataset-attribute.md)

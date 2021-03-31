@@ -2,7 +2,7 @@
 title: "Deprecating Explicit and Implicit With Statements"
 description: "Rationale and description of why explicit and implicit with statements are deprecated in AL"
 ms.custom: na
-ms.date: 10/07/2020
+ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
