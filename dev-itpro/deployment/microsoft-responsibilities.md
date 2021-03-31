@@ -19,7 +19,7 @@ ms.date: 04/01/2021
 
 The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online model distinguishes specific roles and responsibilities for partner-provided vertical solutions, system integrators, resellers, and Microsoft throughout the life cycle of the service. Microsoft maintains the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service by deploying, actively monitoring, and servicing the customers' production tenants that are running on the service. This includes allocating the required system infrastructure to run the service and proactively communicating to customers about the service's health (which is done through the Service Health dashboard in the Microsoft 365 Admin Portal).
 
-Microsoft responsibilities in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service include:
+Microsoft responsibilities in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online service include:
 
 |Area|Responsibilities|
 |----|----------------|

@@ -46,13 +46,16 @@ To help users set up [!INCLUDE [prod_short](includes/prod_short.md)] on the firs
 
 [!INCLUDE [ua-teaching-tips](includes/ua-teaching-tips.md)]
 
-Teaching tips supplement the tooltips that provide descriptions for all fields and actions. [!INCLUDE [ua-tooltips-teachingtips](includes/ua-tooltips-teachingtips.md)]
+> [!NOTE]
+> Teaching tips supplement the tooltips that provide descriptions for all fields and actions.  
+
+[!INCLUDE [ua-tooltips-teachingtips](includes/ua-tooltips-teachingtips.md)]
 
 For more information, see [Teaching tips and in-app tours for onboarding users](administration/onboarding-teaching-tips-tours.md).  
 
 ## Help users get unblocked
 
-Even the best designed user interface can still be confusing to some. It can be difficult to predict what users will find confusing, and that is why the base application includes descriptions for all controls and actions that can be accessed when you choose the caption of the control or action. In combination with descriptive captions and instructional text, these tooltips, or callouts, constitutes the larger part of our current implementation of *embedded user assistance*, which is an important principle in today's world of software design.  
+Even the best designed user interface can still be confusing to some. It can be difficult to predict what users will find confusing, and that is why the base application includes descriptions for all controls and actions that can be accessed when you choose the caption of the control or action. In combination with descriptive captions and instructional text, these tooltips, or callouts, constitute the larger part of our current implementation of *embedded user assistance*, which is an important principle in today's world of software design.  
 
 The tooltips help users unblock themselves by providing an answer to the most likely questions the users might have, such as "What data can I input here?" or "What is the data used for?". Keep tooltips in mind when you develop the user interface of your solution.  
 

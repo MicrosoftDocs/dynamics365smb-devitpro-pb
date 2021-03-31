@@ -50,6 +50,7 @@ The following table provides an explanation of the parameters:
 |Out |Specifies the folder where your existing clone is, or the folder to clone the repo to, such as D:\BC\. If you run HtmlFromRepoGenerator to clone a repo, this folder must not already exist.|
 |DoNotClone |Set this parameter when you run the tool against a previously cloned repo. |
 |Repo |Specifies the repo URL. Optional if you run the tool based on a previously cloned repo. Examples of Microsoft documentation repo URLs include `https://github.com/MicrosoftDocs/dynamics365smb-docs` for English (US) and `https://github.com/MicrosoftDocs/dynamics365smb-docs-pr.de-de` for German (Germany).|
+|Tag |Specifies the tag corresponding to a release of the Business Central documentation. You can see a list of the releases at [https://github.com/MicrosoftDocs/dynamics365smb-docs/releases](https://github.com/MicrosoftDocs/dynamics365smb-docs/releases). |
 |RemoveGitFolder|Specifies whether to remove the `.git` folder.|
 |LogsDir|Specifies the folder to save logs files to.|
 
@@ -71,6 +72,12 @@ The following example clones the en-US repo and generates HTML files.
 
 ```console
 HtmlFromRepoGenerator.exe --out "D:\BC\en-US" --repo "https://github.com/MicrosoftDocs/dynamics365smb-docs" --LogsDir D:\BC\logs\en-US
+```
+
+The following example clones the en-US repo, checks out the repo at tag v16.5 (corresponding to the release "Microsoft Dynamics 365 Business Central v. 16.5 docs") and generates HTML files.
+
+```cmd
+HtmlFromRepoGenerator.exe --out "D:\BC\en-US" --repo "https://github.com/MicrosoftDocs/dynamics365smb-docs" --tag v16.5 --LogsDir D:\BC\logs\en-US
 ```
 
 The following example uses a previously cloned en-US repo and generates HTML files.
