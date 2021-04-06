@@ -43,7 +43,7 @@ Permission sets should not be defined in XML. Instead, use the dedicated AL obje
 ```
 
 ### Converted into a PermissionSet object
-Suppose that the object with ID 70001 is a table called "Floor Manager", then we may convert the above permissions defined in XML into a PermissionSet object defined in AL:
+For a table called "Floor Manager" with object ID 70001, we can convert the above permissions defined in XML into a permission set object defined in AL as shown below:
 
 ```AL
 permissionset 50130 MyPermissionSet 
@@ -57,10 +57,10 @@ permissionset 50130 MyPermissionSet
 
 ```
 
-The `RIMD` access allows access to **R**ead, **I**nsert, **M**odify and **D**elete entries in the table. This can be modified by adding and removing letters corresponding to the first letter of the permission you want to (dis)allow. This PermissionSet can then be assigned to users/roles.
+The `RIMD` access allows access to **R**ead, **I**nsert, **M**odify, and **D**elete entries in the table. This can be modified by adding and removing letters corresponding to the first letter of the permission that you want to (dis)allow. This permission set can then be assigned to users/roles.
 
 ## How to fix this diagnostic?
-You can convert XML Permission Sets to AL objects. You can see more on the [upgrade page](../../upgrade/upgrade-permissions.md).
+You can convert XML permission sets to AL objects. For more information, see [upgrade page](../../upgrade/upgrade-permissions.md).
 
 ## See Also
 [PermissionSet Object](../devenv-permissionset-object.md)
