@@ -3,7 +3,7 @@ title: "Adding barcodes to reports"
 description: "Learn how you can add barcodes to a report."
 author: jswymer
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 04/06/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,6 +13,8 @@ ms.author: jswymer
 ---
 
 # Adding Barcodes to Reports
+
+> **APPLIES TO:** [!INCLUDE[prod_short](includes/prod_short.md)] 2021 release wave 1 (v18.0) and later
 
 This article explains how to add barcodes to reports using the barcode functionality in [!INCLUDE[prod_short](includes/prod_short.md)].
 
