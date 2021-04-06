@@ -1,8 +1,8 @@
 ---
-title: "A Repeater control used on a List page must be defined at the beginning of the area(Content) section."
+title: "AboutTitle Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 12/14/2020
+ms.date: 03/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,14 +13,28 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# UICop Rule AW0010
-A Repeater control used on a List page must be defined at the beginning of the area(Content) section.  
+# AboutTitle Property
+> **Version**: _Available or changed with runtime version 7.0._
 
-## Description
-A Repeater control used on a List page must be defined at the beginning of the area(Content) section.
+Sets the title of the entity used in the About box for teaching tips in the UI.
+
+## Applies to
+-   Page
+-   Page Action
+-   Page Action Group
+-   Page Field
+-   Page Part
+-   Page Group
+-   Request Page
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Syntax
+
+```al
+AboutTitle = 'This shows up as the title of the teaching tip in the UI';
+```
+
 ## See Also  
-[UICop Analyzer](uicop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

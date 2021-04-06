@@ -18,7 +18,7 @@ You can create test codeunits, test methods, and test pages to test your applica
 You can use the following handler methods:
 
 |Method type|Purpose|Signature|  
-|-------------------|-------------|---------------|
+|-----------|-------|---------|
 |MessageHandler|Handles **Message** statements.|\<*Function name*>\(\<*Message*> : Text\[1024\]\)<img width=210/>|  
 |ConfirmHandler|Handles **Confirm** statements.|\<*Function name*>\(\<*Question*> : Text\[1024\]; var \<*Reply*> : Boolean\)|
 |StrMenuHandler|Handles **StrMenu** statements.|\<*Function name*>\(\<*Options* : Text\[1024\]; var \<*Choice*> : Integer; \<*Instruction*> : Text\[1024\]\)|

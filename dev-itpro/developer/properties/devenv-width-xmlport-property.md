@@ -33,7 +33,7 @@ Width = 1;
   
 ## Remarks  
 
-This property is used only if the [Format Property \(XMLports\)](devenv-format-xmlports-property.md) is **Fixed Text**.  
+This property is used only if the [Format Property \(XMLports\)](devenv-format-property.md) is **Fixed Text**.  
   
 The value is an integer that defines the number of characters in the field.  
  
