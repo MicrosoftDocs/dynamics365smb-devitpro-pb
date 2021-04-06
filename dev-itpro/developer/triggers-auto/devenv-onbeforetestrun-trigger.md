@@ -2,7 +2,7 @@
 title: "OnBeforeTestRun Trigger"
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2021
+ms.date: 04/06/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,6 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
+
 # OnBeforeTestRun Trigger
 > **Version**: _Available or changed with runtime version 1.0._
 
@@ -31,12 +32,15 @@ end;
 *CodeunitId*  
 &emsp;Type: [Integer](../methods-auto/integer/integer-data-type.md)  
 Specifies the ID of the codeunit to be run.  
+
 *CodeunitName*  
 &emsp;Type: [Text](../methods-auto/text/text-data-type.md)  
 The name of the test codeunit to be run.  
+
 *FunctionName*  
 &emsp;Type: [Text](../methods-auto/text/text-data-type.md)  
 Specifies the name of the test to be run.  
+
 *Permissions*  
 &emsp;Type: [TestPermissions](../methods-auto/testpermissions/testpermissions-data-type.md)  
 Specifies the permission set level to use on the test run. The value is retrieved from the TestPermissions property of the test codeunit or test that is run. The parameter accepts the following values:
@@ -45,15 +49,19 @@ Specifies the permission set level to use on the test run. The value is retrieve
 - NonRestrictive
 - InheritFromTestCodunit - Specifies that a test the uses the TestPermissions property setting of the test codeunit to which it belongs.  
 
+
 ## Return Value
 
 *Ok*
     Type: [Boolean](../methods-auto/boolean/boolean-data-type.md)
+
 **true** if the test was run, otherwise, **false**. The default value is **true**.
 
 ## Applies To
 - Codeunit
 
+> [!IMPORTANT]
+> When applied to a Codeunit, the [Subtype Property](../properties/devenv-subtype-property.md) must be set to TestRunner.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
