@@ -128,7 +128,43 @@ To follow the example from above, where a relation between native table Account 
 1. Open the main form of Account. Add a subgrid and choose the 'Sales Orders (accountid)' relation.
 1. Save and Publish
 
-The Account now contains the relation, and Sales Orders are shown on the main form.
+The Account now contains the relation, and Sales Orders are shown on the main form if Sales Orders exists for the Account.
+
+#### Synchronizing master data  
+ To make Native to Virtual table relations a shared key is needed to establish a foregin key relationship. In the Account and Sales Order scenario, Account Number (Account Table) needs to be identical to  Customer Number (Busienss Central Customer Table).
+
+To setup synchronization beween Microsoft Dataverse and Business Central, follow the [guide](https://docs.microsoft.com/en-us/dynamics365/business-central/admin-how-to-set-up-a-dynamics-crm-connection). To get started use the Dataverse Connection Setup assisted setup guide.
+
+A customization to the synchronization is needed, as customer number is not synced with Dataverse on default.
+The code below adds the field mapping to the synchronization. In the snippet below synchronization is uni-directional. In this case, Business Central will be the master, pushing account number to Microsoft Dataverse.
+
+codeunit 50100 SyncAdditionalFields
+{
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"CDS Setup Defaults", 'OnAfterResetCustomerAccountMapping', '', true, true)]
+    local procedure HandleOnAfterResetCustomerAccountMapping(IntegrationTableMappingName: Code[20])
+    var
+        IntegrationFieldMapping: Record "Integration Field Mapping";
+        Customer: Record Customer;
+        CRMAccount: Record "CRM Account";
+    begin
+        InsertIntegrationFieldMapping(
+          IntegrationTableMappingName,
+          Customer.FieldNo("No."),
+          CRMAccount.FieldNo(AccountNumber),
+          IntegrationFieldMapping.Direction::ToIntegrationTable,
+          '', false, false);
+    end;
+
+    procedure InsertIntegrationFieldMapping(IntegrationTableMappingName: Code[20]; TableFieldNo: Integer; IntegrationTableFieldNo: Integer; SynchDirection: Option; ConstValue: Text; ValidateField: Boolean; ValidateIntegrationTableField: Boolean)
+    var
+        IntegrationFieldMapping: Record "Integration Field Mapping";
+    begin
+        IntegrationFieldMapping.CreateRecord(IntegrationTableMappingName, TableFieldNo, IntegrationTableFieldNo, SynchDirection,
+            ConstValue, ValidateField, ValidateIntegrationTableField);
+    end;
+}
+
+More details on [customizing the synchronization with Microsoft Dataverse](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/administration-custom-cds-integration).
 
 ### Native table–to–virtual table relationships
 Native table–to–virtual table relationships works much like virtual table–to–native table relationships. One a relation has been setup between the native table and the virtual table, Subgrids or Quick Views can be added, showing relatedc native table information.
