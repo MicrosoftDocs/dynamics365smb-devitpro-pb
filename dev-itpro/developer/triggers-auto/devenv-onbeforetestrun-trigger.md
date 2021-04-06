@@ -52,8 +52,8 @@ Specifies the permission set level to use on the test run. The value is retrieve
 
 ## Return Value
 
-*Ok*
-&emsp;Type: [Boolean](../methods-auto/boolean/boolean-data-type.md)
+*Ok*  
+&emsp;Type: [Boolean](../methods-auto/boolean/boolean-data-type.md)  
 **true** if the test was run, otherwise, **false**. The default value is **true**.
 
 ## Applies To

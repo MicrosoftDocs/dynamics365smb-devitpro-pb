@@ -39,9 +39,8 @@ Text or code value with the following options:
 
 ## Return Value
 
-*Ok*
-&emsp;Type: [Boolean](../methods-auto/boolean/boolean-data-type.md)
-
+*Ok*  
+&emsp;Type: [Boolean](../methods-auto/boolean/boolean-data-type.md)  
 **true** if the specified record was found, otherwise, **false**.
 
 ## Applies To

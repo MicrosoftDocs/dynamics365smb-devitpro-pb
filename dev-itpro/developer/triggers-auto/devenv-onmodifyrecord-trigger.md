@@ -30,8 +30,8 @@ end;
 
 ## Return Value
 
-*Ok*
-&emsp;Type: [Boolean](../methods-auto/boolean/boolean-data-type.md)
+*Ok*  
+&emsp;Type: [Boolean](../methods-auto/boolean/boolean-data-type.md)  
 **true** if the record was modified, otherwise **false**. The return value is checked after each call. The default value is **true**.
 
 ## Applies To

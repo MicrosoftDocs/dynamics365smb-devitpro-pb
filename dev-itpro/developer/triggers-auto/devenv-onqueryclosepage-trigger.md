@@ -36,8 +36,8 @@ The CloseAction chosen by the user; usually OK or Cancel.
 
 ## Return Value
 
-*Ok*
-&emsp;Type: [Boolean](../methods-auto/boolean/boolean-data-type.md)
+*Ok*  
+&emsp;Type: [Boolean](../methods-auto/boolean/boolean-data-type.md)  
 **true** if page was closed, otherwise **false**. This value is checked after each call. The default value is **true**.
 
 ## Applies To
