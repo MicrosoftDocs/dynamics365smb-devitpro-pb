@@ -22,7 +22,7 @@ Permission sets should not be defined in XML. Instead, use the dedicated AL obje
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
-For examples and guidance on fixing this diagnostic, see the [related AppSourceCop rule](appsourcecop-as0094-permissionsetsshouldnotbeinxml.md)
+For examples and guidance on fixing this diagnostic, see [AppSourceCop Rule AS0094](appsourcecop-as0094-permissionsetsshouldnotbeinxml.md).
 
 ## See Also
 [PerTenantExtensionCop Analyzer](pertenantextensioncop.md)  
