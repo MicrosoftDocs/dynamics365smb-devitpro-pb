@@ -2,7 +2,7 @@
 title: "Application lifecycle management for solutions that use virtual tables"
 description: "Lifecycle management for Microsoft Dataverse tables end-to-end solutions"
 ms.custom: na
-ms.date: 11/26/2020
+ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ author: solsen
 > The **Business Central Virtual Entity (Preview)** app available on AppSource is being updated to reflect new terminology with an upcoming release. This also applies to that terminology used in Business Central.
 
 > [!IMPORTANT]  
-> This functionality requires version17 for [!INCLUDE[prod_short](../developer/includes/prod_short.md)], while service update 189 is required for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The release information for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] is published on the [latest version availability page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
+> This functionality requires version17 for [!INCLUDE[prod_short](../developer/includes/prod_short.md)], while service update 189 is required for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The release information for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] is published on the [latest version availability page](/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
 
 The application lifecycle for an end-to-end solution using [!INCLUDE[prod_short](../developer/includes/prod_short.md)] virtual tables will encompass both [!INCLUDE[prod_short](../developer/includes/prod_short.md)] as well as [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].
 
@@ -29,7 +29,7 @@ The application lifecycle for an end-to-end solution using [!INCLUDE[prod_short]
 
 Virtual tables for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] do not exist in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] until they are created. Virtual tables must be created inside a solution. The **MicrosoftBusinessCentralERPVE** solution is used for this purpose. This solution will contain all the virtual tables that are created from an instance of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
-**MicrosoftBusinessCentralERPVE** is a [managed solution](https://docs.microsoft.com/powerapps/developer/common-data-service/introduction-solutions). By definition, a managed solution cannot be modified after it has been generated. However, **MicrosoftBusinessCentralERPVE** is a managed solution that grants privileges to update the components (that is, virtual tables) that are inside it. Therefore, new virtual tables can be added to the solution as they are created, and existing virtual tables can be updated as required. Nevertheless, the privileges to modify the managed solution are available only to the platform itself. Users cannot make changes directly to the solution.
+**MicrosoftBusinessCentralERPVE** is a [managed solution](/powerapps/developer/common-data-service/introduction-solutions). By definition, a managed solution cannot be modified after it has been generated. However, **MicrosoftBusinessCentralERPVE** is a managed solution that grants privileges to update the components (that is, virtual tables) that are inside it. Therefore, new virtual tables can be added to the solution as they are created, and existing virtual tables can be updated as required. Nevertheless, the privileges to modify the managed solution are available only to the platform itself. Users cannot make changes directly to the solution.
 
 Because **MicrosoftBusinessCentralERPVE** is a managed solution, solutions from customers, partners, and independent software vendors (ISVs) can take a dependency on it. This capability allows for consistent application lifecycle management (ALM) for solutions that use and depend on the virtual tables for [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
@@ -71,4 +71,4 @@ One [!INCLUDE[prod_short](../developer/includes/prod_short.md)] instance must be
 [Microsoft Power Platform Integration with Business Central](powerplat-overview.md)  
 [Table Modeling](powerplat-entity-modeling.md)  
 [Business Central and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] Admin Reference](powerplat-admin-reference.md)  
-[FAQ](powerplat-faq.md)  
+[FAQ](powerplat-faq.md)

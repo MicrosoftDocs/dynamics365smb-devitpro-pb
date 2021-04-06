@@ -2,7 +2,7 @@
 title: "OnAfterTestRun Trigger"
 description: "OnAfterTestRun trigger in AL for Business Central."
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -64,7 +64,7 @@ Specifies the permission set level to use on the test run. The value is retrieve
 
 ## Applies to
 
-- Test runner codeunits. Test runner codeunits have the [SubType Property (Codeunit)](../properties/devenv-subtype-property-codeunit.md) set to **TestRunner**.  
+- Test runner codeunits. Test runner codeunits have the [SubType Property (Codeunit)](../properties/devenv-subtype-codeunit-property.md) set to **TestRunner**.  
 
 > [!NOTE]  
 > This trigger is optional and not available on a test runner codeunit by default. To implement this trigger, you must manually add it.  
@@ -76,7 +76,7 @@ A test runner codeunit manages the execution of test codeunits that are run from
 The **OnAfterTestRun** trigger suppresses the automatic display of the results message after the test codeunit runs.
 
 > [!NOTE]  
-> To return the error message for a failed test  run, use the [GetLastErrorText Method](../methods/devenv-getlasterrortext-method.md).  
+> To return the error message for a failed test run, use the [GetLastErrorText Method](../methods-auto/debugger/debugger-getlasterrortext-method.md).  
 
 
 You can use the **OnAfterTestRun** trigger to perform post-processing, such as logging, or to automate tests by integrating the test runner codeunit with a test management framework.
@@ -113,7 +113,7 @@ The GetLastErrorText returns the text that was contained in the last error messa
 
 ## See Also
 
-[SubType Property (Codeunit)](../properties/devenv-subtype-property-codeunit.md)  
+[SubType Property (Codeunit)](../properties/devenv-subtype-codeunit-property.md)  
 [OnBeforeTestRun Trigger](devenv-onbeforetestrun-trigger.md)  
 [Codeunit Triggers](devenv-codeunit-triggers.md)  
 [Triggers](devenv-triggers.md)
@@ -123,4 +123,4 @@ The GetLastErrorText returns the text that was contained in the last error messa
 [How to: Create Test Codeunits and Test Methods](how-to-create-test-codeunits-and-test-methods.md)   
 [How to: Create Handler Methods](../methods/devenv-how-to-create-handler-methods.md)   
 [Walkthrough: Testing Purchase Invoice Discounts](walkthrough-testing-purchase-invoice-discounts.md)   
--->  
+-->

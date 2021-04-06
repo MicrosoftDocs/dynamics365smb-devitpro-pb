@@ -2,7 +2,7 @@
 title: "Pages that have been published must not be renamed."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/16/2021
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AppSourceCop Rule AS0030
-Pages that have been published must not be renamed.  
+Pages that have been published must not be renamed.
 
 ## Description
 Pages that have been published must not be renamed because it will break dependent extensions.

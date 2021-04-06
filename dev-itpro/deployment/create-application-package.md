@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ---
 # Moving from Dynamics NAV On-premises to Business Central Online
 This article describes you can move your on-premise [!INCLUDE[prod_short](../developer/includes/prod_short.md)] solution, including the application and its tenants, to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online.
@@ -122,7 +122,7 @@ When you deploy your application online, you must provide a compressed .zip file
     You can use any name for the .bacpac file.
 4.  Repeat steps 2 and 3 for the other database.
 
-    For more information about exporting databases to .bacpac format, see [Export a Data-tier Application](https://msdn.microsoft.com/library/Hh213241.aspx).
+    For more information about exporting databases to .bacpac format, see [Export a Data-tier Application](/sql/relational-databases/data-tier-applications/export-a-data-tier-application).
 
 5. Create a single ZIP (compressed) file that contains the application and tenant database BACPAC files.
 
@@ -162,4 +162,4 @@ To upload your deployable package, you will create a project in LCS.
 
      ![Shows the users assigned to a project in the LCS portal](../media/LCSProjectUsers.png "Shows the users assigned to a project in the LCS portal")  
 
-12. In the **Invite user** box, use the **User lookup** field to find the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] user or enter the email address directly in the **Email** field, and then select **Invite**.  
+12. In the **Invite user** box, use the **User lookup** field to find the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] user or enter the email address directly in the **Email** field, and then select **Invite**.

@@ -2,7 +2,7 @@
 title: "Testing the Application Overview"
 description: Leant about how to use automated tests in Business Central
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na

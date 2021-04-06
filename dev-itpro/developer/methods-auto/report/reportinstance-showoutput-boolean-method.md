@@ -2,7 +2,7 @@
 title: "Report.ShowOutput Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Report.ShowOutput Method
-> **Version**: _Available from runtime version 2.3 until version 2.3 where it was deprecated._
+> **Version**: _Available or changed with runtime version 2.3 until version 2.3 where it was deprecated._
 
 Returns the current setting of whether a section should be printed, and changes this setting.
 

@@ -2,7 +2,7 @@
 title: "Configuring Query Hints for Optimizing SQL Server Performance"
 description: Enable query hints in a database for optimizing performance.
 ms.custom: na
-ms.date: 10/29/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,4 +29,4 @@ For more information about configuring the [!INCLUDE[server](../developer/includ
   
 [Optimizing SQL Server Performance with Business Central](optimize-sql-server-performance.md)  
 [Installation Considerations for Microsoft SQL Server](../deployment/installation-considerations-for-microsoft-sql-server.md)  
-[Microsoft SQL Server documentation](https://go.microsoft.com/fwlink/?LinkId=253107)
+[Microsoft SQL Server documentation](/sql/sql-server/)

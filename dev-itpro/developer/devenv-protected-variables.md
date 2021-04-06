@@ -1,7 +1,7 @@
 ---
 title: "Protected Variables"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -99,7 +99,7 @@ pageextension 50101 MyPageExt extends MyPage
 ```
 
 ## See Also  
-[AL Method Reference](methods/devenv-al-method-reference.md)   
+[AL Method Reference](./methods-auto/library.md)   
 [Properties](properties/devenv-properties.md)  
 [Access Property](properties/devenv-access-property.md)  
 [Extensible Property](properties/devenv-extensible-property.md)

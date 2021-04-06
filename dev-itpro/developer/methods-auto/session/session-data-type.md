@@ -2,7 +2,7 @@
 title: "Session Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 12/09/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Session Data Type
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Represents a Microsoft Dynamics Business Central session.
 
@@ -37,9 +37,11 @@ The following methods are available on the Session data type.
 |[IsSessionActive(Integer)](session-issessionactive-method.md)|Tests if the specified SessionID is active on the server instance where it was started.|
 |[LogMessage(String, String, Verbosity, DataClassification, TelemetryScope, String, String [, String] [, String])](session-logmessage-string-string-verbosity-dataclassification-telemetryscope-string-string-string-string-method.md)|Logs a trace message to a telemetry account.|
 |[LogMessage(String, String, Verbosity, DataClassification, TelemetryScope, Dictionary of [Text, Text])](session-logmessage-string-string-verbosity-dataclassification-telemetryscope-dictionary[text,text]-method.md)|Logs a trace message to a telemetry account.|
+|[LogSecurityAudit(String, SecurityOperationResult, String, AuditCategory [, Array of [String]] [, Array of [String]])](session-logsecurityaudit-method.md)|Logs an IfX audit message to a telemetry account.|
 |[SendTraceTag(String, String, Verbosity, String [, DataClassification])](session-sendtracetag-method.md)|Send a trace tag to the telemetry service.|
 |[SetDocumentServiceToken(String)](session-setdocumentservicetoken-method.md)|Sets the document service token in the current session.|
-|[StartSession(var Integer, Integer [, String] [, var Record])](session-startsession-method.md)|Starts a session without a UI and runs the specified codeunit.|
+|[StartSession(var Integer, Integer [, String] [, var Record])](session-startsession-integer-integer-string-table-method.md)|Starts a session without a UI and runs the specified codeunit.|
+|[StartSession(var Integer, Integer, String, var Record, Duration)](session-startsession-integer-integer-string-table-duration-method.md)|Starts a session without a UI and runs the specified codeunit.|
 |[StopSession(Integer [, String])](session-stopsession-method.md)|Stops a session.|
 |[UnbindSubscription(Codeunit)](session-unbindsubscription-method.md)|Unbinds the event subscriber methods from in the codeunit instance. This essentially deactivates the subscriber methods for the codeunit instance.|
 

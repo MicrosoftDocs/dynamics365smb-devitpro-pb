@@ -3,7 +3,7 @@ title: "Privacy Policy and Terms of Use"
 description: "Guidelines on privacy policy and terms of use (license agreement) links"
 author: a-emniel
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"

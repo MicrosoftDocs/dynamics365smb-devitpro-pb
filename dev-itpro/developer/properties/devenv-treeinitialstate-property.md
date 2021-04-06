@@ -2,7 +2,7 @@
 title: "TreeInitialState Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/24/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # TreeInitialState Property
-> **Version**: _Available from runtime version 5.0._
+> **Version**: _Available or changed with runtime version 5.0._
 
 Specifies the initial state of the records in a repeater control which is displayed as a tree structure.
 

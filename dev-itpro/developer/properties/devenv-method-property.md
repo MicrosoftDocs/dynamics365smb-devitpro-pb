@@ -2,7 +2,7 @@
 title: "Method Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/24/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Method Property
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Gets or sets the method type as defined in the HTTP standard.
 
@@ -56,7 +56,7 @@ A totals method performs a calculation on fields in a column and returns a singl
   
 Except for the **Count** method, you can only use a totals method on a field that has a numeric data type of **Decimal**, **Integer**, **BigInteger**, or **Duration**. The totals method returns a decimal value that is calculated from values of all fields in a column.  
   
-**Count** is only associated with its parent **DataItem**, not a specific column. Therefore, when you set a column to **Count**, you leave the [DataSource Property](devenv-datasource-property.md) of the column blank. The **Count** method returns an integer value that corresponds to the number of rows that are returned from the table that is specified by the data item associated with the column.  
+**Count** is only associated with its parent **DataItem**, not a specific column. Therefore, when you set a column to **Count**, you leave the [DataSource Property](./devenv-properties.md) of the column blank. The **Count** method returns an integer value that corresponds to the number of rows that are returned from the table that is specified by the data item associated with the column.  
 
 ### Syntax
 
@@ -67,5 +67,5 @@ Method = Max;
  
 ## See Also
 
-[MethodType Property](devenv-methodtype-property.md)   
-[Properties](devenv-properties.md)  
+[MethodType Property](./devenv-properties.md)   
+[Properties](devenv-properties.md)

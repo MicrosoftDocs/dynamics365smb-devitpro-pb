@@ -3,7 +3,7 @@ author: edupont04
 ms.service: dynamics365-business-central
 ms.topic: include
 ms.reviewer: edupont
-ms.date: 11/19/2020
+ms.date: 04/01/2021
 ms.author: mikebc
 ---
 Because you are logged in as the global administrator of the demonstration tenant, you can access the Microsoft 365 administration center. The following list illustrates the types of work that your demo account can do:

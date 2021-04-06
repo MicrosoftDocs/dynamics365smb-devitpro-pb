@@ -10,7 +10,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
 ms. search.keywords: cloud, edge,
-ms.date: 01/27/2021
+ms.date: 04/01/2021
 ms.author: edupont
 
 ---
@@ -56,5 +56,5 @@ The initial data migration time can vary depending factors such as the amount of
 [Migrate to Business Central Online from Business Central On-premises](migrate-business-central-on-premises.md)  
 [Migrate to Business Central Online from Dynamics GP](migrate-dynamics-gp.md)  
 [Upgrading from Dynamics NAV to Business Central Online](../upgrade/Upgrade-Considerations.md#online)  
-[Managing your intelligent cloud environment](manage-intelligent-edge.md)  
-[Managing Capacity](tenant-admin-center-capacity.md)  
+[Managing your intelligent cloud environment](./migration-management.md)  
+[Managing Capacity](tenant-admin-center-capacity.md)

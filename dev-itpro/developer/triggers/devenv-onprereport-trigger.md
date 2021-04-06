@@ -2,7 +2,7 @@
 title: "OnPreReport Trigger"
 description: "OnPreReport trigger in AL for Business Central."
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,7 +26,8 @@ end;
  
 ## Applies to
 
-- Reports  
+- Report objects
+- Report extension objects
   
 ## Remarks  
 
@@ -41,5 +42,5 @@ Use the ReportFilter text string as the source expression for a control in a sec
 ## See Also  
 
 [Triggers](devenv-triggers.md)  
-[GetFilters Method Record](../methods/devenv-getfilters-method-record.md)  
-[Report and Data Item Triggers](devenv-report-and-data-item-triggers.md)  
+[GetFilters Method Record](../methods-auto/record/record-getfilters-method.md)  
+[Report and Data Item Triggers](devenv-report-and-data-item-triggers.md)

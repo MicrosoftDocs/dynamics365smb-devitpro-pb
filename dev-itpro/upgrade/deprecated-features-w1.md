@@ -3,22 +3,21 @@ title: "Deprecated Features in W1"
 description: describes the features that have been moved, removed, or replaced in the W1 version 
 author: bholtorf
 ms.custom: na
-ms.date: 01/12/2021
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
-ms.assetid: d60655a7-3e9b-4577-a2e3-d12427a656c2
-caps.latest.revision: 16
 ---
 
 # Deprecated Features in W1
+
 This article describes the features that have been moved, removed, or replaced in the W1 version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. This information will change with future releases, and might not include each deprecated feature.
 
 Deprecated features won't be available in future versions of [!INCLUDE[prod_short](../developer/includes/prod_short.md)], which can happen for different kinds of reasons. <!--Should we talk about how long we're obligated to provide support for previous versions? --> For example, a feature may no longer be relevant, or something better may have become available. If you use a feature that is listed, either the feature itself or an extension of it, you should look for or develop an alternative.
 
-The next sections give a brief description of the deprecated features, state what happened to the feature, and explain why. The following table gives a few examples of what we mean by "moved, removed, or replaced."
+The next sections give a brief description of the deprecated features, state what happened to the feature, and explain why. The following table gives a few examples of what we mean by *moved*, *removed*, or *replaced*.
 
 |State  |Examples  |
 |---------|---------|
@@ -28,7 +27,16 @@ The next sections give a brief description of the deprecated features, state wha
 
 ## Changes in 2022 release wave 1
 
-### <a name="accesskeys"></a>Web Service Access Keys (Basic Auth) for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Online (SaaS)
+### .NET add-ins not using .NET Standard (Removal)
+
+The following feature will be **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 1.
+
+|Moved, Removed, or Replaced? |Why?|
+|---------|---------|
+|Replaced| .NET Framework has been superseded by .NET Standard. .NET add-ins compiled with .NET Framework won't work in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 1. |
+
+
+### <a name="accesskeys"></a>Web Service Access Keys (Basic Auth) for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Online
 
 The following feature will be **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 1.
 
@@ -36,28 +44,56 @@ The following feature will be **Removed** with [!INCLUDE[prod_short](../develope
 |---------|---------|
 |Removed (for SaaS only)| The capability to access web services in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] using Web Service Access Key (Basic Auth) is deprecated for SaaS. OAuth2 will be the authentication option for SaaS. OAuth samples are published in the [BCTech repo](https://github.com/microsoft/BCTech/tree/master/samples/PSOAuthBCAccess). For on-premises, Web Service Access Key (Basic Auth) will remain an option for the time being. This change has no impact on how [!INCLUDE[prod_short](../developer/includes/prod_short.md)] connects to external services.|
 
+### <a name="permissions"></a>Permissions defined as data
+
+The following feature will be **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 1.
+
+|Moved, Removed, or Replaced? |Why?|
+|---------|---------|
+|Removed | With releases of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] prior to 2021 release wave 1 (v.18.0), System and Extension permissions and entitlements were defined as data in the application database. This has changed with [!INCLUDE [prod_short](../developer/includes/prod_short.md)] v.18.0. With [!INCLUDE [prod_short](../developer/includes/prod_short.md)] 2022 release wave 1, the support for defining permissions and entitlements as data in the application database will be removed. For more information, see [Entitlements and Permissions Overview](../developer/devenv-entitlements-and-permissionsets-overview.md).|
+
+
 ## Changes in 2021 release wave 2
+
+### StartSession calls in upgrade/install context will fail
+
+The following feature will be **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 2.
+
+
+|Moved, Removed, or Replaced? |    Why?|
+|-----------------------------|-----|
+|Removed | A new session created with AL StartSession has no link to the session that created it. This implementation can cause problems, for example, in cases where the creating session is an upgrade codeunit. If an error occurs later in the process, which requires a rollback, the server can't roll back any transactions done in the session created by the AL StartSession. This condition can leave data in the system in a bad state. Starting with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 2, any StartSession call in upgrade/install context will fail immediately. |
+
 
 ### Standard APIs, Beta version
 
 The following feature will be **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 2.
 
 
-|Moved, Removed, or Replaced? |	Why?|
+|Moved, Removed, or Replaced? |    Why?|
 |-----------------------------|-----|
-|Removed | Beta version of the standard APIs will be removed by 2021 release wave 2. At this point, Beta APIs will not be available in new releases of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. There are many improvements to v1.0 and v2.0 of the standard APIs. Improvements include more APIs, better performance and improved OData capabilities. It's recommended that integrations move to v2.0 of the standard APIs.|
+|Removed | Beta version of the standard APIs will be removed by 2021 release wave 2. At this point, Beta APIs won't be available in new releases of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. There are many improvements to v1.0 and v2.0 of the standard APIs. Improvements include more APIs, better performance and improved OData capabilities. It's recommended that integrations move to v2.0 of the standard APIs.|
 
 ### Automation APIs, Beta version
 
 The following feature will be **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 2.
 
 
-|Moved, Removed, or Replaced?|	Why?|
+|Moved, Removed, or Replaced?|    Why?|
 |----------------------------|------|
-|Removed | Beta version of the Automation APIs will be removed by 2021 release wave 2. At this point, Automation Beta APIs will not be available in new releases of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. It's recommended that integrations move to v2.0 of the Automation APIs.|
+|Removed | Beta version of the Automation APIs will be removed by 2021 release wave 2. At this point, Automation Beta APIs won't be available in new releases of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. It's recommended that integrations move to v2.0 of the Automation APIs.|
 
 
 ## Changes in 2021 release wave 1
+
+### .NET add-ins not using .NET Standard (Warning)
+
+In [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1, a warning will be shown if you include .NET add-ins that are compiled with .NET Framework and not with .NET Standard. The capability of using .NET add-ins compiled with .NET Franework will be removed in a later release.
+
+|Moved, Removed, or Replaced? |Why?|
+|---------|---------|
+|Replaced | .NET Framework has been superseded by .NET Standard. .NET add-ins compiled with .NET Framework will be deprecated as of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1, but the feature won't be removed in this release. It's recommended that .NET add-ins are migrated to .NET Standard as soon as possible.|
+
 
 ### Expose UI pages as SOAP endpoints (Warning)
 
@@ -74,6 +110,14 @@ The following feature will be **Removed** with [!INCLUDE[prod_short](../develope
 |Moved, Removed, or Replaced? |Why?|
 |---------|---------|
 |Removed | OData V3 has been superseded by OData v4. OData V3 is deprecated, and will be removed as of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1. It's recommended that integrations are migrated to OData v4 as soon as possible.  |
+
+### The Help Server component
+
+The following component is **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1.
+
+|Moved, Removed, or Replaced? |Why?|
+|---------|---------|
+|Removed |The legacy Dynamics NAV Help Server component is no longer available on the Dynamics 365 Business Central product media for deployment on-premises. If a customer is on a version between Dynamics NAV 2016 and Business Central 2020 release wave 2 on-premises, and they rely on Help Server to provide access to Help, then nothing changes. When they upgrade to Business Central 2021 release wave 1, they must host their custom Help on another type of website. We recommend that new solutions do not rely on the Help Server component due to the deprecation. The [custom help toolkit](../help/custom-help-toolkit.md) can help deploy content to a website, for example. We have simplified the story for how to deploy Help for a customer-specific solution of Business Central, and for deploying Help for an AppSource app. No matter what your solution is, deploy your solution-specific or customized Help to any website that you prefer. Out of the box, Business Central uses the Docs.microsoft.com site for the Learn more-links and contextual Help. Each customer and each partner can override this with their own Help. It's now the same for Business Central online and on-premises, so any investment on-premises carries forward if you migrate to Business Central online.|
 
 ## Deprecated Features in 2020 release wave 1
 The following feature was marked as obsolete:pending in 2020 release wave 1.
@@ -150,7 +194,7 @@ When we move, remove, or replace an object, breaking changes can result in other
 
 ## Features that are available only in the online version
 <!--Should we include a section about this?-->
-Some features are available only under very specific circumstances, or not at all intended for use in on-premises versions of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. For a list and descriptions of those features, see [Features not implemented in on-premises deployments](/dynamics365/business-central/dev-itpro/features-not-implemented-on-premises).
+Some features are available only under very specific circumstances, or not at all intended for use in on-premises versions of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. For a list and descriptions of those features, see [Features not implemented in on-premises deployments](../features-not-implemented-on-premises.md).
 
 ## See Also
 [AlAppExtensions repository](https://github.com/microsoft/ALAppExtensions)

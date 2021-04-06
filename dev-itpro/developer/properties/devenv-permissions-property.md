@@ -2,7 +2,7 @@
 title: "Permissions Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/24/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Permissions Property
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Sets whether an object has additional permission required to perform some operations on one or more tables. The operations can be to read, insert, modify, and delete data.
 
@@ -26,7 +26,8 @@ Sets whether an object has additional permission required to perform some operat
 -   Xml Port
 -   Report
 -   Query
-
+-   Permission Set
+-   Permission Set Extension
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -36,6 +37,17 @@ Sets whether an object has additional permission required to perform some operat
 ```AL
 Permissions = TableData 1221 = rimd;
 ```
+
+## Values
+
+| Values   |Represents  |Description   |
+|----------|------------|---------------------------------------------|
+|R or r    |Read        |Specifies direct (R) or indirect (r) read permission.|
+|I or i    |Insert      |Specifies direct (I) or indirect (i) insert permission.| 
+|M or m    |Modify      |Specifies direct (M) or indirect (m) modify permission.|
+|D or d    |Delete      |Specifies direct (D) or indirect (d) delete permission.|
+|X or x    |Execute     |Specifies direct (X) or indirect (x) execute permission.|
+
   
 ## Remarks  
 
