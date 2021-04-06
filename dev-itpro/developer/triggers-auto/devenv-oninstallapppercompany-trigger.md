@@ -33,7 +33,7 @@ end;
 - Codeunit
 
 > [!IMPORTANT]
-> When applied to a Codeunit, the [Subtype Property](../properties/devenv-subtype-property.md) must be set to Install.
+> When applied to a Codeunit, the [Subtype Property](../properties/devenv-subtype-property.md) must be set to **Install**.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

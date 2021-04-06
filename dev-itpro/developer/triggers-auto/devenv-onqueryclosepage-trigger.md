@@ -30,15 +30,14 @@ end;
 ### Parameters
 
 *CloseAction*  
-&emsp;Type: [Action](../methods-auto/action/action-data-type.md)  
+&emsp;Type: [Action](../methods-auto/action/action-option.md)  
 The CloseAction chosen by the user; usually OK or Cancel.  
 
 
 ## Return Value
 
 *Ok*
-    Type: [Boolean](../methods-auto/boolean/boolean-data-type.md)
-
+&emsp;Type: [Boolean](../methods-auto/boolean/boolean-data-type.md)
 **true** if page was closed, otherwise **false**. This value is checked after each call. The default value is **true**.
 
 ## Applies To

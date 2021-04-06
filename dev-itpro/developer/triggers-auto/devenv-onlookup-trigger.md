@@ -37,8 +37,7 @@ Text string entered into the text box and used as the lookup value.
 ## Return Value
 
 *Ok*
-    Type: [Boolean](../methods-auto/boolean/boolean-data-type.md)
-
+&emsp;Type: [Boolean](../methods-auto/boolean/boolean-data-type.md)
 **true** if the lookup was carried out, otherwise, **false**.
 
 ## Applies To

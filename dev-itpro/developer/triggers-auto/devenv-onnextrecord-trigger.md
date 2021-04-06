@@ -37,7 +37,7 @@ The number of records stepped through before displaying another record. A negati
 ## Return Value
 
 *ActualSteps*
-    Type: [Integer](../methods-auto/integer/integer-data-type.md)
+&emsp;Type: [Integer](../methods-auto/integer/integer-data-type.md)
 
 This return value contains the actual number of steps or records cycled through. The default value is 0.
 

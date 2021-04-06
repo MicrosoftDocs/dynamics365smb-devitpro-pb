@@ -31,8 +31,7 @@ end;
 ## Return Value
 
 *Ok*
-    Type: [Boolean](../methods-auto/boolean/boolean-data-type.md)
-
+&emsp;Type: [Boolean](../methods-auto/boolean/boolean-data-type.md)
 **true** if the record was deleted, otherwise, **false**. The return value is checked after each call. The default value is **true**.
 
 ## Applies To

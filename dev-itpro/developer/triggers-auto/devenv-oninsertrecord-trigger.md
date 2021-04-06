@@ -37,8 +37,7 @@ This return value indicates whether the new record was inserted after the last r
 ## Return Value
 
 *Ok*
-    Type: [Boolean](../methods-auto/boolean/boolean-data-type.md)
-
+&emsp;Type: [Boolean](../methods-auto/boolean/boolean-data-type.md)
 **true** if the record was inserted, otherwise **false**. The return value is checked after each call. The default value is **true**.
 
 ## Applies To

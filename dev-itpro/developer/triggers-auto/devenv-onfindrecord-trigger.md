@@ -40,7 +40,7 @@ Text or code value with the following options:
 ## Return Value
 
 *Ok*
-    Type: [Boolean](../methods-auto/boolean/boolean-data-type.md)
+&emsp;Type: [Boolean](../methods-auto/boolean/boolean-data-type.md)
 
 **true** if the specified record was found, otherwise, **false**.
 

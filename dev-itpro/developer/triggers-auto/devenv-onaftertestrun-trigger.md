@@ -42,7 +42,7 @@ Specifies the name of the test codeunit that has run.
 Specifies the name of the test that has run.  
 
 *Permissions*  
-&emsp;Type: [TestPermissions](../methods-auto/testpermissions/testpermissions-data-type.md)  
+&emsp;Type: [TestPermissions](../methods-auto/testpermissions/testpermissions-option.md)  
 Specifies the permission set level to use on the test run. The value is retrieved from the TestPermissions property of the test codeunit or test that is run. The parameter accepts the following values:
 - Disabled
 - Restrictive
@@ -59,7 +59,7 @@ True indicates that the test run succeeded; otherwise, false indicates that the 
 - Codeunit
 
 > [!IMPORTANT]
-> When applied to a Codeunit, the [Subtype Property](../properties/devenv-subtype-property.md) must be set to TestRunner.
+> When applied to a Codeunit, the [Subtype Property](../properties/devenv-subtype-property.md) must be set to **TestRunner**.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
