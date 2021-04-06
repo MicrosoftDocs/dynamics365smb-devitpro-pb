@@ -23,9 +23,12 @@ There are repos in GitHub for the source content and each of the languages that 
 
 You can use the [HtmlFromRepoGenerator tool](custom-help-toolkit-HtmlFromRepoGenerator.md) to get the latest version of Microsoft's content and generate HTML files that you can then customize. The tool handles the GitHub work for you, but you will still have to understand the basics of the Microsoft GitHub repos.  
 
-When Microsoft publishes an update to the content, the *live* branch in the corresponding GitHub repo is updated. The source repo is updated at least weekly; however, the related language-specific repos are updated less frequently, based on when new translations are made available. You can use the [Custom Help Toolkit](custom-help-toolkit.md) to get the current version of Microsoft's content and prepare HTML files for customization.  
+When Microsoft publishes an update to the content, the *main* branch in the corresponding GitHub repo is updated. The source repo is updated at least weekly; however, the related language-specific repos are updated less frequently, based on when new translations are made available. You can use the [Custom Help Toolkit](custom-help-toolkit.md) to get the current version of Microsoft's content and prepare HTML files for customization.  
 
 Alternatively, if you customize the Microsoft content based on MarkDown, you can use scripts to get the current version. The GitHub platform and tooling will help you manage any potential merge conflicts if you have made changes to the same files as Microsoft has. For more information, see [Set up Git repository locally for documentation](/contribute/get-started-setup-local) in the Docs Authoring Guide and [Fork a repo](https://help.github.com/articles/fork-a-repo/) in the Help for GitHub.  
+
+> [!IMPORTANT]
+> In April 2021, the default branches in the public repos have been renamed from *live* to *main* . If you have any scripts that rely on the *live* branch, please update them to rely on *main* instead.
 
 > [!TIP]
 > You do not have to get acquainted with GitHub if you just want to get the Microsoft content in HTML format to deploy to a website, for example. You do not even have to get a GitHub account, as shown in the [Getting by without GitHub](#get-the-content-without-a-github-account) section. However, in many scenarios, you might want to join us in GitHub for closer collaboration and easy of extensibility.
@@ -85,10 +88,10 @@ $docfx = "C:\GitHub\DocFx\docfx.exe"
 $365docs = "C:\GitHub\MSFT\dynamics365smb-docs"
 $langDir = "c:\Working\help\dynamics365smb-docs-pr."
 
-Start-Process -FilePath $git -ArgumentList "clone --single-branch --branch live https://github.com/MicrosoftDocs/dynamics365smb-docs.git" -WorkingDirectory "C:\working\help" -Wait
+Start-Process -FilePath $git -ArgumentList "clone --single-branch --branch main https://github.com/MicrosoftDocs/dynamics365smb-docs.git" -WorkingDirectory "C:\working\help" -Wait
 foreach ($language in $languages)
 {
-    $arguments = $("clone --single-branch --branch live https://github.com/MicrosoftDocs/dynamics365smb-docs-pr." + $language + ".git")
+    $arguments = $("clone --single-branch --branch lmain https://github.com/MicrosoftDocs/dynamics365smb-docs-pr." + $language + ".git")
     Start-Process -FilePath $git -ArgumentList $arguments -WorkingDirectory "C:\working\help" -Wait
     Copy-Item $($365docs + "\business-central\docfx.json") $($langDir + $language + "\business-central")
     Copy-Item $($365docs + "\business-central\media") $($langDir + $language + "\business-central") -Recurse -Force
@@ -148,7 +151,7 @@ If you do not want to collaborate with Microsoft on the content, you can get the
 
     You can see in the browser when the content was last updated. Alternatively, go to the [releases](https://github.com/MicrosoftDocs/dynamics365smb-docs-pr.de-de/releases) tab and choose the package that you need for your solution. For more information, see [What the GitHub repos contain](#what-the-github-repos-contain).    
 2. Choose the green **Clone or download** button, and then choose **Download ZIP**.
-3. Open the downloaded *dynamics365smb-docs-pr.de-de-live.zip* file and extract to a relevant location.
+3. Open the downloaded *dynamics365smb-docs-pr.de-de-main.zip* file and extract to a relevant location.
 
     Now you have a copy of Microsoft's content. Next, you can generate HTML files for use on your website as described in the [Build HTML files](#build-html-files) section.
 
@@ -269,7 +272,7 @@ To create a pull request to the *MicrosoftDocs/dynamics365smb-docs* repo by usin
 
 1. Commit the changes to your repo that you want to include in the pull request.
 2. Choose **Sync** to push the changes up to your repo on GitHub.
-3. When the sync is completed, choose **Pull Request**, make sure that the pull request points at the *origin/live* branch, and then choose **Pull Request**.
+3. When the sync is completed, choose **Pull Request**, make sure that the pull request points at the *origin/main* branch, and then choose **Pull Request**.
 
 > [!TIP]
 > If you want to request brand new content, we ask you to submit a request of type *Documentation* at [https://aka.ms/bcideas](https://aka.ms/bcideas).
