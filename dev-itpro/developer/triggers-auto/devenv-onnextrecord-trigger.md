@@ -2,7 +2,7 @@
 title: "OnNextRecord Trigger"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/06/2021
+ms.date: 04/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -42,7 +42,7 @@ This return value contains the actual number of steps or records cycled through.
 
 ## Applies To
 - Page
-- RequestPage
+- Request Page
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

@@ -2,7 +2,7 @@
 title: "OnFindRecord Trigger"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/06/2021
+ms.date: 04/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -45,7 +45,7 @@ Text or code value with the following options:
 
 ## Applies To
 - Page
-- RequestPage
+- Request Page
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

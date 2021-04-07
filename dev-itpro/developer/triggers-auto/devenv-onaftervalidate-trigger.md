@@ -2,7 +2,7 @@
 title: "OnAfterValidate Trigger"
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2021
+ms.date: 04/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,6 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
+
 # OnAfterValidate Trigger
 > **Version**: _Available or changed with runtime version 1.0._
 
@@ -29,8 +30,8 @@ end;
 
 
 ## Applies To
-- FieldExtension
-- ControlExtension
+- Field Extension
+- Control Extension
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

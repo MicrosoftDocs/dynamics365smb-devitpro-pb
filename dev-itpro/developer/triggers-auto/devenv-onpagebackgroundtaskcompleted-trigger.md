@@ -2,7 +2,7 @@
 title: "OnPageBackgroundTaskCompleted Trigger"
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2021
+ms.date: 04/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,6 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
+
 # OnPageBackgroundTaskCompleted Trigger
 > **Version**: _Available or changed with runtime version 4.0._
 
@@ -31,14 +32,16 @@ end;
 *TaskId*  
 &emsp;Type: [Integer](../methods-auto/integer/integer-data-type.md)  
   
+
 *Results*  
 &emsp;Type: [Dictionary[Text,Text]](../methods-auto/dictionary/dictionary-text-text-data-type.md)  
   
 
 
+
 ## Applies To
 - Page
-- PageExtension
+- Page Extension
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

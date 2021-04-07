@@ -2,7 +2,7 @@
 title: "OnAfterGetRecord Trigger"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/06/2021
+ms.date: 04/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -31,11 +31,11 @@ end;
 
 ## Applies To
 - Page
-- RequestPage
-- RequestPageExtension
-- PageExtension
-- ReportDataItem
-- XmlPortTableElement
+- Request Page
+- Request Page Extension
+- Page Extension
+- Report Data Item
+- Xml Port Table Element
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

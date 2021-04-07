@@ -2,7 +2,7 @@
 title: "OnInsertRecord Trigger"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/06/2021
+ms.date: 04/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -42,9 +42,9 @@ This return value indicates whether the new record was inserted after the last r
 
 ## Applies To
 - Page
-- RequestPage
-- RequestPageExtension
-- PageExtension
+- Request Page
+- Request Page Extension
+- Page Extension
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
