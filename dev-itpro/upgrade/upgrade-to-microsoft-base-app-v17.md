@@ -418,7 +418,7 @@ In this task, you'll synchronize the tenant's database schema with any schema ch
 
 If you have a multitenant deployment, do these steps for each tenant.
 
-1. (Multitenant only) Mount the tenant to the version 15 server instance.
+1. (Multitenant only) Mount the tenant to the version 17 server instance.
 
     To mount the tenant, use the [Mount-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/mount-navtenant) cmdlet:
     

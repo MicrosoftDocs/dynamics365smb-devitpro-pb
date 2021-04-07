@@ -46,12 +46,6 @@ The process for upgrading is similar for a single-tenant and multitenant deploym
 
 ## <a name="prereqs"></a>Prerequisites
 
-<!--
-
-1. Your version 14 is compatible with version 16.
-
-    There are several updates for version 14. The updates have a compatible version 16 update. For more information, see [[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md). 
--->
 - Get the required version of the txt2al conversion tool.
 
     During the upgrade, you'll use the txt2al conversion tool to convert existing tables to the AL syntax. You'll need to use a version of txt2al conversion tool that supports the `--tableDataOnly` parameter. This parameter was first introduced in [version 14.12 (cumulative update 11, platform 14.0.41862)](https://support.microsoft.com/en-us/help/4549684/cumulative-update-12-for-microsoft-dynamics-365-business-central-april). So if you're upgrading from version 14.11 (cumulative update 10) or earlier, you'll have to download the txt2al conversion tool from a later version 14 update. See [Released Cumulative Updates for Microsoft Dynamics 365 Business Central Spring 2019 Update on-premises](https://support.microsoft.com/en-us/help/4501292/released-cumulative-updates-for-microsoft-dynamics-365-business). 
@@ -430,7 +424,7 @@ In this task, you'll synchronize the tenant's database schema with any schema ch
 
 If you have a multitenant deployment, do these steps for each tenant.
 
-1. (Multitenant only) Mount the tenant to the version 15 server instance.
+1. (Multitenant only) Mount the tenant to the version 16 server instance.
 
     To mount the tenant, use the [Mount-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/mount-navtenant) cmdlet:
     
