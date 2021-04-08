@@ -48,4 +48,4 @@ Text or code value with the following options:
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
-[OnFindRecord (Request Page) Trigger]()
+[OnFindRecord (Page) Trigger](../page/devenv-onfindrecord-page-trigger.md)

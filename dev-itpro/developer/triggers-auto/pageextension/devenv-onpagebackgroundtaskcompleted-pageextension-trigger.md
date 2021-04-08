@@ -44,4 +44,4 @@ end;
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
-[OnPageBackgroundTaskCompleted (Page Extension) Trigger]()
+[OnPageBackgroundTaskCompleted (Page) Trigger](../page/devenv-onpagebackgroundtaskcompleted-page-trigger.md)

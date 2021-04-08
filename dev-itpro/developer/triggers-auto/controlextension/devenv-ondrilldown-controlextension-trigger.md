@@ -34,4 +34,4 @@ end;
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
-[OnDrillDown (Control Extension) Trigger]()
+[OnDrillDown (Control) Trigger](../control/devenv-ondrilldown-control-trigger.md)

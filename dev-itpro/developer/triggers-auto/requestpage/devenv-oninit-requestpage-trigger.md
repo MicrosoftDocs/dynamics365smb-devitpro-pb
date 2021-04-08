@@ -34,4 +34,4 @@ end;
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
-[OnInit (Request Page) Trigger]()
+[OnInit (Page) Trigger](../page/devenv-oninit-page-trigger.md)

@@ -39,6 +39,6 @@ end;
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
+[OnDeleteRecord (Page) Trigger](../page/devenv-ondeleterecord-page-trigger.md)
 [OnDeleteRecord (Request Page) Trigger](../requestpage/devenv-ondeleterecord-requestpage-trigger.md)
-[OnDeleteRecord (Request Page Extension) Trigger]()
 [OnDeleteRecord (Page Extension) Trigger](../pageextension/devenv-ondeleterecord-pageextension-trigger.md)

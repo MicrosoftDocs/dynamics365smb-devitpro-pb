@@ -34,6 +34,6 @@ end;
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
-[OnClosePage (Request Page) Trigger]()
+[OnClosePage (Page) Trigger](../page/devenv-onclosepage-page-trigger.md)
 [OnClosePage (Request Page Extension) Trigger](../requestpageextension/devenv-onclosepage-requestpageextension-trigger.md)
 [OnClosePage (Page Extension) Trigger](../pageextension/devenv-onclosepage-pageextension-trigger.md)

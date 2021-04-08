@@ -34,4 +34,4 @@ end;
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
-[OnDelete (Table Extension) Trigger]()
+[OnDelete (Table) Trigger](../table/devenv-ondelete-table-trigger.md)

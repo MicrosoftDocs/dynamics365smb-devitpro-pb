@@ -34,5 +34,4 @@ end;
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
-[OnAfterValidate (Field Extension) Trigger]()
 [OnAfterValidate (Control Extension) Trigger](../controlextension/devenv-onaftervalidate-controlextension-trigger.md)

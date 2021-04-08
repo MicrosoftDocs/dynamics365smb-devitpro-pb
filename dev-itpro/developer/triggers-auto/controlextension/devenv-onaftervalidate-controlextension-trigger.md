@@ -35,4 +35,3 @@ end;
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
 [OnAfterValidate (Field Extension) Trigger](../fieldextension/devenv-onaftervalidate-fieldextension-trigger.md)
-[OnAfterValidate (Control Extension) Trigger]()

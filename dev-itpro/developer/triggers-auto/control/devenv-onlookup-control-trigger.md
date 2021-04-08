@@ -45,4 +45,5 @@ Text string entered into the text box and used as the lookup value.
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
+[OnLookup (Field) Trigger](../field/devenv-onlookup-field-trigger.md)
 [OnLookup (Control Extension) Trigger](../controlextension/devenv-onlookup-controlextension-trigger.md)

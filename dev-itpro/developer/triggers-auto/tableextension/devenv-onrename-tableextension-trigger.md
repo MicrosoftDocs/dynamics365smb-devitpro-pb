@@ -34,4 +34,4 @@ end;
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
-[OnRename (Table Extension) Trigger]()
+[OnRename (Table) Trigger](../table/devenv-onrename-table-trigger.md)

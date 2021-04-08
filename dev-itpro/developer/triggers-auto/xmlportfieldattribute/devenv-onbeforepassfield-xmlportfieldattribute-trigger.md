@@ -35,4 +35,3 @@ end;
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
 [OnBeforePassField (Xml Port Field Element) Trigger](../xmlportfieldelement/devenv-onbeforepassfield-xmlportfieldelement-trigger.md)
-[OnBeforePassField (Xml Port Field Attribute) Trigger]()

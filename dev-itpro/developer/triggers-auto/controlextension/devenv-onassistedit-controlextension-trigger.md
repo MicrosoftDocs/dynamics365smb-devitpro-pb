@@ -34,4 +34,4 @@ end;
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
-[OnAssistEdit (Control Extension) Trigger]()
+[OnAssistEdit (Control) Trigger](../control/devenv-onassistedit-control-trigger.md)

@@ -35,4 +35,3 @@ end;
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
 [OnAfterAssignVariable (Xml Port Text Element) Trigger](../xmlporttextelement/devenv-onafterassignvariable-xmlporttextelement-trigger.md)
-[OnAfterAssignVariable (Xml Port Text Attribute) Trigger]()

@@ -45,4 +45,4 @@ This return value contains the actual number of steps or records cycled through.
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
-[OnNextRecord (Request Page) Trigger]()
+[OnNextRecord (Page) Trigger](../page/devenv-onnextrecord-page-trigger.md)

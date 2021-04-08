@@ -34,5 +34,4 @@ end;
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
-[OnBeforePassVariable (Xml Port Text Element) Trigger]()
 [OnBeforePassVariable (Xml Port Text Attribute) Trigger](../xmlporttextattribute/devenv-onbeforepassvariable-xmlporttextattribute-trigger.md)
