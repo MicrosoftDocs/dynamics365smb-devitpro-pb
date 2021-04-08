@@ -9,7 +9,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, update, flag, keys
-ms.date: 04/01/2021
+ms.date: 04/06/2021
 ms.author: edupont
 ---
 
@@ -19,7 +19,7 @@ This article provides an overview of what you need to know about how a major [!I
 
 ## Timelines for major updates
 
-The following figure illustrates the key milestones and dates for rolling out a major update. The timeline and dates are loosely based on [2020 release wave 2](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/). The same timeline applies to all other major updates, though dates will differ.
+The following figure illustrates the key milestones and dates for rolling out a major update. The timeline and dates are loosely based on [2021 release wave 1](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/) and [2020 release wave 2](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/). The same timeline applies to all other major updates, though dates will differ.
 
 ![Update Rollout Timeline](../developer/media/update-rollout-timeline.png)
 
@@ -32,7 +32,9 @@ The following table describes the milestones with example dates for the two rele
 |Last scheduled update date|May 31 |November 30|The last date you can choose to extend your upgrade date to, typically 30 days after the update is available but extended to 60 days for 2020 release wave 2.|
 
 > [!IMPORTANT]
-> As announced in the [blog post](https://aka.ms/covid19Blog), in response to COVID-19, Microsoft made some changes to the update schedules in April, 2020. Specifically for [!INCLUDE [prod_short](../developer/includes/prod_short.md)], existing customers were given 60 days to upgrade after the new version was made generally available. The extended 60 days update window also applies to 2020 release wave 2 updates.
+> As announced in the [blog post](https://aka.ms/covid19Blog), in response to COVID-19, Microsoft made some changes to the update schedules in April, 2020. Specifically for [!INCLUDE [prod_short](../developer/includes/prod_short.md)], existing customers were given 60 days to upgrade after the new version was made generally available.  
+>
+> The extended 60 days update window also applies to 2020 release wave 2 updates and 2021 release wave 1 updates.
 
 Dates and times differ significantly across countries and regions. Make sure that you have set up notifications in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] so that you're notified when the next major update is available.  
 
@@ -44,9 +46,9 @@ On the release day, all new sign-ups and all newly created environments (sandbox
 
 ## Scheduling major updates
 
-When the update becomes available for your environment, a notification email is sent to all [notification recipients](tenant-admin-center-notifications.md) that you've registered in [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)]. A notification about the update availability is also shown in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] itself. 
+When the update becomes available for your environment, a notification email is sent to all [notification recipients](tenant-admin-center-notifications.md) that you've registered in [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)]. A notification about the update availability is also shown in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] itself.  
 
-Starting this day, you can use the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] to [schedule which date  your prefer the update to happen](tenant-admin-center-update-management.md#schedule). 
+Starting this day, you can use the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] to [schedule which date  your prefer the update to happen](tenant-admin-center-update-management.md#schedule).  
 
 The following fields on the environment page will help you plan the update:
 
@@ -63,7 +65,9 @@ The following fields on the environment page will help you plan the update:
 When the scheduled update date arrives, the update runs automatically within the update window that you've specified for this environment. All users will be disconnected from this environment, and all sign-in attempts during the update will be blocked with the message `Service is under maintenance`. We strongly encourage that you set an update window for all production environments so that updates don't start during business hours. For more information, see [Set the update window for each environment](tenant-admin-center-update-management.md#set-the-update-window-for-each-environment).  
 
 > [!NOTE]
-> When you select a current date for your update, but the update window defined for this environment has already passed, the update will start within that time window, but on the following day to the one you defined for your environment. For example, if you're changing the Scheduled update date to the current date at 6pm, and your update window is set to 1 AM - 7 AM, the update will not start immediately, but around 1 AM on the next day.  
+> When you select a current date for your update, but the update window defined for this environment has already passed, the update will start within that time window, but on the following day to the one you defined for your environment. 
+>
+> For example, if you're changing the **Scheduled update date** to the current date at 6pm, and your update window is set to 1 AM - 7 AM, the update will not start immediately, but around 1 AM on the next day.  
 
 ### Delayed scheduling of updates
 
@@ -105,7 +109,6 @@ If you didn't explicitly set a date for your environment update in the [!INCLUDE
 
 You can prepare yourself, users, and any customizations by trying out the new version before your production environment is updated.  You can do this in different ways as explained in the following sections.  
 
-
 ### Prepare for major updates by enabling select features earlier
 
 Some new features can be enabled ahead of time on sandbox and production environments, giving you time to test and prepare for change. Most times, you can enable features weeks before preview environments for the major update are available.
@@ -114,13 +117,11 @@ When Microsoft releases features or feature design improvements as part of minor
 
 For more information, see [Feature Management](feature-management.md).  
 
-
 ### Prepare for major updates with preview environments
 
 [!INCLUDE [admin-previews](../developer/includes/admin-previews.md)]
 
 For more information, see [Prepare for major updates with preview environments](preview-environments.md).  
-
 
 ### Prepare for major updates just before the production environment is updated
 
