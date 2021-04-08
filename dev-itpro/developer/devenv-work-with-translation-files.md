@@ -119,6 +119,11 @@ When the extension is built and published, you change the language of [!INCLUDE[
 
 To translate other extensions, for example, adding translations to the Base Application, you must reference the project to be translated using the `dependencies` section in the app.json file. For more information, see [JSON Files](devenv-json-files.md). When you have the dependencies added, you can add xliff files in your current project that translates the object captions of the referenced extension. Create a directory named **Translations** in the root of the extension, and place the translated xliff file there. When your extension is then built and published, change the language of [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] to view the UI in the translated language. 
 
+> [!NOTE]  
+> When translating other extensions make sure that the attribute "original" on the file element in the xliff file is **not** set to the name of the current app, otherwise translations are only used to translate labels in the same app. 
+>
+> For apps where translations are meant to translate the current app, the generated xliff file while have the correct value of the app name. 
+
 
 <!-- removing bug 394765
 ## Translation and Localization apps
