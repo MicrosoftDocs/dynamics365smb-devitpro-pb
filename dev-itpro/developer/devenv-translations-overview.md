@@ -54,7 +54,25 @@ The result caption will be **Customer** in en-US, **Cliente** in it-IT, and **De
 
 ## Picking the language
 
-Once translations on the different layers have been collected, the translations that are used on the UI depend on the context.
+Once translations on the different layers have been collected, the translations used on the UI depend on the context.
+
+The following definition of language is used.
+
+**Local language**  
+The language that the user specifies in their settings.
+
+**Global language**  
+By default it is the same as the local language, but this can be changed from AL code. 
+
+**Default Language**  
+A server setting. For cloud it is set to the same language that you picked when signing up for Business Central.
+
+**Primary language**  
+Defined as the primary culture of a language, for example, `es-MX` (Spanish-Mexico) will be `es-ES` (Spanish-Spain).
+
+**Field Caption**  
+If the page control is backed by a table field, then if no matches where found then it would use the same algorithm from the control by on the field.
+
 
 ## See Also
 
