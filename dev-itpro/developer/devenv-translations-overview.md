@@ -34,9 +34,23 @@ For example, if you want to change the text provided from  **Translation app XYZ
 
 ## Overwrites
 
-When translations from the different layers are picked up, one translation from each observed culture is kept and when it is overwritten, only the specified culture changes. In the following example, we have a caption and its page extension caption. 
+When translations from the different layers are picked up, one translation from each observed culture is kept and when it is overwritten, only the specified culture changes. In the following example, we have a caption and its page extension caption.
 
+```al
+page 50101 SimpleCustomerCard
+{
+    CaptionML = en-US = Customer,da-DK = Kunde;
 
+```
+
+```al
+pageextension 50101 SimpleCustomerCardExtension extends SimpleCustomerCard
+{
+    CaptionML = it-IT = Cliente, da-DK = Debitor;
+
+```
+
+The result caption will be **Customer** in en-US, **Cliente** in it-IT, and **Debitor** in da-DK. 
 
 ## See Also
 
