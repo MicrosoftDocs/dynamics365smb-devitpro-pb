@@ -2408,13 +2408,6 @@
 #### [XmlVersionNo Property](developer/properties/devenv-xmlversionno-property.md)
 <!-- [//]: # (IMPORTANT: END>DO_NOT_EDIT_PROPERTIES) -->
 ### Triggers
-#### [Triggers Overview](developer/triggers/devenv-triggers.md)
-#### [Table and Field Triggers](developer/triggers/devenv-table-and-field-triggers.md)
-#### [Page and Action Triggers](developer/triggers/devenv-page-and-action-triggers.md)
-#### [Codeunit Triggers](developer/triggers/devenv-codeunit-triggers.md)
-#### [Report and Data Item Triggers](developer/triggers/devenv-report-and-data-item-triggers.md)
-#### [XMLPort Triggers](developer/triggers/devenv-xmlport-triggers.md)
-#### [Query Triggers](developer/triggers/devenv-query-triggers.md)
 <!-- [//]: # (START>DO_NOT_EDIT_TRIGGERS)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.) -->
