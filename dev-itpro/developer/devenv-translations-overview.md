@@ -52,6 +52,10 @@ pageextension 50101 SimpleCustomerCardExtension extends SimpleCustomerCard
 
 The result caption will be **Customer** in en-US, **Cliente** in it-IT, and **Debitor** in da-DK. 
 
+## Picking the language
+
+Once translations on the different layers have been collected, the translations that are used on the UI depend on the context.
+
 ## See Also
 
 [Working with Translation Files](devenv-work-with-translation-files.md)  
