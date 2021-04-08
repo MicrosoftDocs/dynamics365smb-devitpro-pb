@@ -29,3 +29,5 @@ Translations provided using profile configuration cannot be overwritten by any a
 
 
 ## See Also
+
+[Working with Translation Files](devenv-work-with-translation-files.md)  
