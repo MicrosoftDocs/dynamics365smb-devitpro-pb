@@ -144,9 +144,11 @@ In this task, you prepare the application and tenant databases for the upgrade.
 
 This task runs a technical upgrade on the application database. A technical upgrade converts the database from the version 14.0 platform to the version 18.0 platform. This conversion updates the system tables of the database to the new schema (data structure). It also provides the latest platform features and performance enhancements.
 
-1. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 18.0 as an administrator.
+[!INCLUDE[convert_azure_sql_db](../developer/includes/convert_azure_sql_db.md)]
 
-2. Run the [Invoke-NAVApplicationDatabaseConversion cmdlet](/powershell/module/microsoft.dynamics.nav.management/invoke-navapplicationdatabaseconversion) to start the conversion:
+2. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 18.0 as an administrator.
+
+3. Run the [Invoke-NAVApplicationDatabaseConversion cmdlet](/powershell/module/microsoft.dynamics.nav.management/invoke-navapplicationdatabaseconversion) to start the conversion:
 
     ```powershell
     Invoke-NAVApplicationDatabaseConversion -DatabaseServer <database server>\<database instance> -DatabaseName "<BC14 database name>"

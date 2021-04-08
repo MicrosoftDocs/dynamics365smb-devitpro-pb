@@ -161,14 +161,14 @@ Before you convert the old database to [!INCLUDE[prod_short](../developer/includ
 Next, you will convert the old database so that it can be used with [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 > [!TIP]  
->  If you want to write a script that helps you convert databases, you can use the Invoke-NAVDatabaseConversion function in the [!INCLUDE[devshell](../developer/includes/devshell.md)].
+> If you want to write a script that helps you convert databases, you can use the Invoke-NAVDatabaseConversion function in the [!INCLUDE[devshell](../developer/includes/devshell.md)].
 
 > [!IMPORTANT]  
 > Before you run the technical upgrade, delete any corrupt databases that are on the same SQL Server instance as the database that you intend to upgrade. Otherwise, when you run the database conversion, you will get the error "The Symbol Reference field on the Object Metadata table does not exist in the SQL Server table or view.".    
 
 1. If the database is on Azure SQL Database, add your user account to the **dbmanager** database role on the master database.
 
-    This membership is only required for converting the database, and can be removed afterwards. 
+    This membership is only required for converting the database, and can be removed afterwards. This step isn't required for Azure SQL Managed Instance.
 
 2. Install [!INCLUDE[prod_short](../developer/includes/prod_short.md)].  
 
