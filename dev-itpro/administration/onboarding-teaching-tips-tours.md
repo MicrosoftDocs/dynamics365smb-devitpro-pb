@@ -1,12 +1,12 @@
 ﻿---
 title: Teaching tips and in-app tours for onboarding users
 description: Learn about the teaching tips that you can apply to your Business Central to help users get started.
-ms.date: 04/01/2021
+author: sorenfriisalexandersen
+manager: edupont
 ms.topic: conceptual
 ms.service: dynamics365-business-central
-author: sorenfriisalexandersen
+ms.date: 04/01/2021
 ms.author: soalex
-manager: edupont
 ---
 
 # Teaching tips and in-app tours for onboarding users

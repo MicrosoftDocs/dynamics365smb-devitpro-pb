@@ -19,6 +19,31 @@ This article describes some known issues in [!INCLUDE[prod short](../developer/i
 > [!NOTE]
 > The article doesn't include a complete list of known issues. Instead, it addresses some common issues that you might experience or might consider when upgrading to a version. If you're aware of issues that aren't in this article, or you'd like more help, see [Resources for Help and Support](../help-and-support.md).
 
+## Package Microsoft .NET Core Windows Server Hosting failed with error
+
+> Applies to: All versions up to and including version 18.0.
+
+### Problem
+
+When you install [!INCLUDE [prod_short](../includes/prod_short.md)] on premises, installation may fail with the error `Package Microsoft .NET Core Windows Server Hosting failed with error`, or with error code 1638, when the installer attempts to install prerequisite components.  
+
+This occurs when a version of Windows Server Hosting is installed on the server that is newer than version 2.1.14, which is what [!INCLUDE [prod_short](../includes/prod_short.md)] attempts to install from its installation folder.  
+
+The issue only occurs when the currently installed version is a newer minor version, not a newer major version of Windows Server Hosting.  
+
+### Impact
+
+Installation will fail and will be rolled back.
+
+### Workaround
+
+The issue can be resolved in different ways:
+
+* Manually install Windows Server Hosting version 3 or later before you install Business Central components.
+* Uninstall Windows Server Hosting from your server before you install Business Central
+* Use the installer from Business Central version 18.1 or later. In those versions, Business Central will skip installing Windows Server Hosting as a prerequisite component if the installer determines that newer Windows Server Hosting components are already installed on the server.
+
+
 <!-- never included 
 ## <a name="azuregqlmi"></a>Can't convert version 14 and earlier databases on Azure SQL Managed Instance to later Business Central platform
 
