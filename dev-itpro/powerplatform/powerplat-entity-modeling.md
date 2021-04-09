@@ -114,7 +114,7 @@ Consider an example where you want to show sales orders from [!INCLUDE[prod_shor
     2. On the **Mapping** tab, provide column mapping between the native table and the virtual table column(s). All columns included in the table key (defined in step 1) must be mapped.  
 3. Press **Save**. Validation will be performed on save.
 
-To follow the example from above, where a relation between native table **Account** and virtual table **dyn365bc_salesorder_v2_0** is needed:
+To follow the example from above, where a relation between the native table **Account** and the virtual table **dyn365bc_salesorder_v2_0** is needed:
 
 1. Create a key on the **Account** table. Choose **Account Number**. Name is 'prefix_**AccountKey**'.
 2. Make sure that **dyn365bc_salesorder_v2_0** is generated.
@@ -128,14 +128,14 @@ To follow the example from above, where a relation between native table **Accoun
         - **Native columns** to **accountnumber**
         - **Virtual columns** to **dyn365bc_customernumber**
 4. Save the **Business Central Table Relation** record.
-5. Open the main form of **Account**. Add a sub grid and choose the **Sales Orders (accountid)** relation.
+5. Open the main page of **Account**. Add a sub grid and choose the **Sales Orders (accountid)** relation.
 6. Save and publish.
 
-**Account** now contains the relation, and **Sales Orders** are shown on the main form if any sales orders exist for the account.
+**Account** now contains the relation, and **Sales Orders** are shown on the main page if any sales orders exist for the account.
 
 #### Synchronizing master data
 
-To create native-to-virtual table relations a shared key is needed in order to establish a foreign key relationship. In the Account and Sales Order scenario, the Account Number in the Account table must be identical to Customer Number in the [!INCLUDE[prod_short](../includes/prod_short.md)] Customer table.
+To create native-to-virtual table relations a shared key is needed in order to establish a foreign key relationship. In the Account and Sales Order scenario, the Account Number in the Account table must be identical to the Customer Number in the [!INCLUDE[prod_short](../includes/prod_short.md)] Customer table.
 
 To set up synchronization between Microsoft Dataverse and [!INCLUDE[prod_short](../includes/prod_short.md)], follow the [guide](/business-central/admin-how-to-set-up-a-dynamics-crm-connection). To get started use the **Dataverse Connection Setup** assisted setup guide in [!INCLUDE[prod_short](../includes/prod_short.md)].
 
@@ -173,7 +173,7 @@ For more details, see [Customizing an Integration with Microsoft Dataverse](../a
 
 ### Native table–to–virtual table relationships
 
-Native table–to–virtual table relationships work much like virtual table–to–native table relationships. Once a relation has been set up between the native table and the virtual table, Subgrids or Quick Views can be added, showing related native table information.
+Native table–to–virtual table relationships work much like virtual table–to–native table relationships. Once a relation has been set up between the native table and the virtual table, sub grids or Quick Views can be added, showing related native table information.
 
 ## Enums
 
