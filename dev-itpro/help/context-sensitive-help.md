@@ -11,7 +11,12 @@ ms.date: 04/01/2021
 
 # Configure Context-Sensitive Help
 
-A key pillar of helping users help themselves is to give them access to Help for the particular part of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] that they are working in.  
+A key pillar of helping users help themselves is to give them access to Help for the particular part of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] that they are working in. When you build an app for [!INCLUDE [prod_short](../includes/prod_short.md)] online, we expect you to provide Help for your solution that can be accessed from the *Learn more* links on tooltips. For more information, see [Help users learn more](../user-assistance.md#help-users-learn-more).  
+
+The *Learn more* links are generated based on two configuration settings:
+
+* App-level configuration of the URL
+* Page-level configuration of page-specific article
 
 ## App-level configuration
 
