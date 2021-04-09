@@ -7,7 +7,7 @@ ms.reviewer: edupont
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms. search.keywords: cloud, edge
-ms.date: 02/17/2021
+ms.date: 04/01/2021
 ms.author: edupont
 ---
 
@@ -33,7 +33,7 @@ If you are currently on a version of Dynamics NAV, you must upgrade to [!INCLUDE
 
 ### System requirements
 
-To connect to the cloud through [!INCLUDE[prod_short](../developer/includes/prod_short.md)], the on-premises solution must use SQL Server 2016 or a later version, and the database must have compatibility level 130 or higher. The on-premises solution must also be one of the supported versions.  
+To connect to the cloud through [!INCLUDE[prod_short](../developer/includes/prod_short.md)], the on-premises solution must use SQL Server 2016 or a later version, and the database must have compatibility level 130 or higher. The on-premises solution must also be one of the supported versions. For more information, see [System Requirements for [!INCLUDE[prod_long](../developer/includes/prod_long.md)] 2021 Release Wave 1](../deployment/system-requirements-business-central-v18.md) and subsequent versions.  
 
 ## How is my on-premises data replicated to my [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online tenant?
 

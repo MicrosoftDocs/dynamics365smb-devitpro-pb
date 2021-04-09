@@ -2,7 +2,7 @@
 title: "AL Control Statements"
 description: "Compound, conditional, and repetitive control statements in AL for Business Central"
 ms.custom: na
-ms.date: 02/16/2021
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

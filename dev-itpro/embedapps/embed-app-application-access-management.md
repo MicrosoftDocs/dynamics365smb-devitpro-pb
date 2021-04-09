@@ -8,7 +8,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: application, tenant, management, access, API
-ms.date: 12/15/2020
+ms.date: 04/01/2021
 ---
 # Application Access Management for the [!INCLUDE[embedapp](../developer/includes/embedapp.md)]
 

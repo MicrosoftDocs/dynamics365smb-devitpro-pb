@@ -2,7 +2,7 @@
 title: Technical Upgrade 
 description: The article explains how to upgrade the application code and how to merge code from different versions of the application.
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -136,10 +136,11 @@ Convert your solution from C/AL code to AL code. For more information, see [Code
 
 This task runs a technical upgrade on the application database. A technical upgrade converts the database from the version 14.0 platform to the version 15.0 platform. This conversion updates the system tables of the database to the new schema (data structure). It also provides the latest platform features and performance enhancements.
 
-1. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 15.0 as an administrator.
-2. Run the [Invoke-NAVApplicationDatabaseConversion cmdlet](/powershell/module/microsoft.dynamics.nav.management/invoke-navapplicationdatabaseconversion) to start the conversion:
+[!INCLUDE[convert_azure_sql_db](../developer/includes/convert_azure_sql_db.md)]
+2. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 15.0 as an administrator.
+3. Run the [Invoke-NAVApplicationDatabaseConversion cmdlet](/powershell/module/microsoft.dynamics.nav.management/invoke-navapplicationdatabaseconversion) to start the conversion:
 
-    ```
+    ```powershell
     Invoke-NAVApplicationDatabaseConversion -DatabaseServer <database server>\<database instance> -DatabaseName "<BC14 database name>"
     ```
     When completed, a message like the following displays in the console:
@@ -151,11 +152,15 @@ This task runs a technical upgrade on the application database. A technical upgr
     DatabaseLocation    :
     Collation           :
     ```
+
 ## Task 5: Connect and configure the version 15 server instance
 
 When you installed version 15 in **Task 1**, a version 15 [!INCLUDE[server](../developer/includes/server.md)] instance was created. In this task, you change server configuration settings that are required to complete the upgrade. Some of the changes are only required for version 14 to version 15.0 upgrade and can be reverted after you complete the upgrade.
 
-1. Set the server instance to connect to the application database.
+1. If the database is on Azure SQL Database, add your user account to the **dbmanager** database role on the master database.
+
+    This membership is only required for converting the database, and can be removed afterwards. This step isn't required for Azure SQL Manage Instance.
+2. Set the server instance to connect to the application database.
 
     ```
     Set-NAVServerConfiguration -ServerInstance <BC15 server instance> -KeyName DatabaseName -KeyValue "<BC14 database name>"
@@ -163,13 +168,14 @@ When you installed version 15 in **Task 1**, a version 15 [!INCLUDE[server](../d
     
     In a single tenant deployment, this command mounts the tenant automatically. For more information, see [Connecting a Server Instance to a Database](../administration/connect-server-to-database.md).
 
-2. Disable task scheduler on the server instance for purposes of upgrade.
+3. Disable task scheduler on the server instance for purposes of upgrade.
 
     ```
     Set-NavServerConfiguration -ServerInstance <BC15 server instance> -KeyName "EnableTaskScheduler" -KeyValue false
     ```
     Be sure to re-enable task scheduler after upgrade if needed.
-3. Restart the server instance.
+
+4. Restart the server instance.
 
     ```
     Restart-NAVServerInstance -ServerInstance <BC15 server instance>

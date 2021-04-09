@@ -3,7 +3,7 @@ title: "Working with labels"
 description: "Labels syntax and usage in Business Central."
 ms.custom: na
 ms.reviewer: solsen
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: t-blrobl

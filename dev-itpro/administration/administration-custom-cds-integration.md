@@ -1,16 +1,16 @@
 ---
-title: Custom Integration with [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]
-description: Learn how to integrate your extension with Microsoft Dataverse.
+title: Customizing an Integration with Microsoft Dataverse
+description: Learn how to integrate your extension with Microsoft Dataverse in this walkthrough that takes you through each step.
 author: bholtorf
 ms.custom: na
 ms.reviewer: solsen
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: bholtorf
-ms.date: 10/29/2020
+ms.date: 04/01/2021
 ---
 
-# Customizing an Integration with [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]
+# Customizing an Integration with Microsoft Dataverse
 
 [!INCLUDE[cc_data_platform_banner](../includes/cc_data_platform_banner.md)]
 
@@ -47,14 +47,16 @@ This walkthrough requires the following:
     - The URL of your [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] environment.
     - The user name and password of a user account that has full permissions to add and modify tables.  
 - [!INCLUDE[prod_short](../includes/prod_short.md)], including the following:  
-    - The CRONUS International Ltd. demonstration data.  <!--need to tell them where they can get the data -->
+    - The CRONUS International Ltd. demonstration data.  
+
+      Use a sandbox environment. For more information, see [Production and Sandbox Environments](environment-types.md).
     - Integration with [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] is enabled, including the default synchronization setup and a working connection between [!INCLUDE[prod_short](../includes/prod_short.md)] and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].
     - Visual Studio Code with the AL Language extension installed. For more information, see [Getting Started with AL](../developer/devenv-get-started.md) and [AL Language Extension Configuration](../developer/devenv-al-extension-configuration.md). The AL Language extension for Visual Studio is free, and you can download it from [Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al).
 
     > [!NOTE]  
     > Make sure that your integration user has permission to access the Worker table in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].
 
-## Create an integration table in [!INCLUDE[prod_short](../includes/prod_short.md)] for the [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] table  
+## Create an integration table in Business Central for the Dataverse table  
 
 To integrate data from a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] table into [!INCLUDE[prod_short](../includes/prod_short.md)], you must create a table object in [!INCLUDE[prod_short](../includes/prod_short.md)] that is based on the [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] table, and then import the new table into the [!INCLUDE[prod_short](../includes/prod_short.md)] database. For this walkthrough we will create a table object that describes the schema for the **Worker** table in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] in the [!INCLUDE[prod_short](../includes/prod_short.md)] database. 
 
@@ -76,11 +78,11 @@ To integrate data from a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] tab
     
     This starts the process for creating the table. When completed, the output path contains the `.al` file that contains the description of the **CDS Worker** integration table with ID 50000. This table is set to the table type **CDS**.
 
-## Create a page for displaying [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] data  
+## Create a page for displaying Dataverse data  
 
 For scenarios where we want to view [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] data for a specific table, we can create a page object that uses the integration table for the [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] table as its data source. For example, we might want to have a list page that displays the current records in a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] table, such as all workers. In this walkthrough we will create a list page that uses the generated integration table **CDS Worker** with ID 50000 as its data source.  
 
-### To create a list page to display [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] workers  
+### To create a list page to display Dataverse workers  
 
 1. Create a new page. For more information, see [Pages Overview](../developer/devenv-pages-overview.md). 
 2. Name the page **CDS Worker List**, and specify **50001** as the page ID.  
@@ -143,7 +145,7 @@ page 50001 "CDS Worker List"
 4. Add the fields from the integration table to display on the page in the `layout` section. 
 
 
-## Enable coupling and synchronization between Worker in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] and in [!INCLUDE[prod_short](../includes/prod_short.md)]
+## Enable coupling and synchronization between Worker in Dataverse and in Business Central
 
 To connect a [!INCLUDE[prod_short](../includes/prod_short.md)] table record with a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] table row, you create a coupling. A coupling consists of the primary ID, which is typically a GUID, from a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] row and the integration ID, also often a GUID, from [!INCLUDE[prod_short](../includes/prod_short.md)].  
 
@@ -324,7 +326,7 @@ During the custom uncoupling process, codeunit Int. Rec. Uncouple Invoke (ID 535
 * **OnBeforeUncoupleRecord** - Occurs before remove coupling, and can be used to change data before uncoupling. For an example, see codeunit CDS Int. Table. Subscriber, which includes the event subscriber function HandleOnBeforeUncoupleRecord. The event resets the company ID on the uncoupled tables in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].
 * **OnAfterUncoupleRecord** - Occurs after coupling is removed, and can be used to change data after uncoupling. For an example, see codeunit CDS Int. Table. Subscriber, which includes the event subscriber function HandleOnAfterUncoupleRecord. The event removes couplings to the contacts linked to the uncoupled customers and vendors.
 
-For more information about how to subscribe to events, see [Subscribing to Events](/developer/devenv-subscribing-to-events.md).
+For more information about how to subscribe to events, see [Subscribing to Events](../developer/devenv-subscribing-to-events.md).
 
 Be aware that custom uncoupling is running in background as it could modify [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] tables and it might take significant time.
 
@@ -490,7 +492,7 @@ For more information about how to subscribe to events, see [Subscribing to Event
 >``` 
 For more information on base [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] tables, see [Data Ownership Models](/dynamics365/business-central/admin-cds-company-concept).
 
-## Create a table extension for an integration table in [!INCLUDE[prod_short](../includes/prod_short.md)]
+## Create a table extension for an integration table in Business Central
 
 Let us explore another scenario. If we added an **Industry** field to the **Contact** table in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], and now want to include the field in our integration with [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].
 
@@ -576,4 +578,3 @@ After we publish the extension we can update the mappings by running the **CDS C
 [Mapping the Tables and Fields to Synchronize](/dynamics365/business-central/admin-how-to-modify-table-mappings-for-synchronization)  
 [Manually Synchronize Table Mappings](/dynamics365/business-central/admin-manual-synchronization-of-table-mappings)  
 [Schedule a Synchronization](/dynamics365/business-central/admin-scheduled-synchronization-using-the-synchronization-job-queue-entries)  
-

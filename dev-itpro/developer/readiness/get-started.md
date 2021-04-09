@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.reviewer: edupont
 ms.author: kurtju
-ms.date: 11/06/2020
+ms.date: 04/01/2021
 ---
 
 # Get Started with Building Apps

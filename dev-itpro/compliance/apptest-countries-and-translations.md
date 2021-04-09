@@ -3,7 +3,7 @@ title: "Country/region availability and supported languages"
 description: "Overview of availability and supported languages."
 author: sorenfriisalexandersen
 ms.custom: na
-ms.date: 01/15/2021
+ms.date: 04/01/2021
 ms.reviewer: edupont
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
@@ -112,6 +112,7 @@ This table gives an overview of supported languages and how application language
 |French (Canada)|fr-CA|Microsoft, Available on AppSource|
 |French (Switzerland)|fr-CH|Microsoft, Available on AppSource|
 |French (France)|fr-FR|Microsoft, Available on AppSource|
+|Greek (Greece)|gr-GR|Partner, Available on AppSource|
 |Croatian (Croatia)|hr-HR|Partner, Available on AppSource|
 |Hungarian (Hungary)|hu-HU|Partner, Available on AppSource|
 |Icelandic (Iceland)|is-IS|Microsoft, Available on AppSource|
@@ -120,12 +121,12 @@ This table gives an overview of supported languages and how application language
 |Japanese (Japan)|jp-JP|Partner, Available on AppSource|
 |Korean (Korea)|ko-KR|Partner, Available on AppSource|
 |Latvian (Latvia)|lv-LV|Partner, Available on AppSource|
-|Lithuanian (Lithuania)|lt-LT|Partner, Available on AppSource (pending)|
+|Lithuanian (Lithuania)|lt-LT|Partner, Available on AppSource|
 |Norwegian (Norway)|no-NO|Microsoft, Available on AppSource|
 |Dutch (Belgium)|nl-BE|Microsoft, Available on AppSource|
 |Dutch (Netherlands)|nl-NL|Microsoft, Available on AppSource|
 |Polish (Poland)|pl-PL|Partner, Available on AppSource|
-|Portuguese (Brazil)|pt-BR|Partner, Available on AppSource (pending)|
+|Portuguese (Brazil)|pt-BR|Partner, Available on AppSource|
 |Portuguese (Portugal)|pt-PT|Partner, Available on AppSource|
 |Romanian|ro-RO|Partner, Available on AppSource (pending)|
 |Russian (Russia)|ru-RU|Microsoft, Available on AppSource|
@@ -133,7 +134,7 @@ This table gives an overview of supported languages and how application language
 |Slovenian (Slovenia)|sl-SI|Partner, Available on AppSource|
 |Serbian (Serbia)|sr-latn-RS|Partner, Available on AppSource|
 |Swedish (Sweden)|sv-SE|Microsoft, Available on on AppSource|
-|Turkish (Turkey)|tr-TR|Partner, Available on AppSource (pending)|
+|Turkish (Turkey)|tr-TR|Partner, Available on AppSource|
 |Traditional Chinese (Hong Kong SAR)|zh-HK|Partner, Available on AppSource|
 |Traditional Chinese (Taiwan)|zh-TW|Partner, Available on AppSource|
 |Vietnamese (Vietnam)|vi-VN|Partner, Available on AppSource|

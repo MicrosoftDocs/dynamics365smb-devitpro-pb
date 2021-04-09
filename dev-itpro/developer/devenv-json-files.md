@@ -3,7 +3,7 @@ title: "JSON Files"
 description: "Description of the settings of the app and launch JSON files for AL in Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 02/01/2021
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,8 +28,8 @@ The following table describes the settings in the `app.json` file. For an exampl
 
 |Setting|Mandatory|Value|
 |-------|---------|-----|
-|id|Yes|The unique ID of the extension. When the `app.json` file is automatically created, the ID is set to a new GUID value. <br>**Note:** The appId is used at runtime to bind table names contained in the application. Changing the appId will result in data from old tables not being used.|
-|name|Yes|The unique extension name. <br>**Note:** The name can be used by other extensions to express a compile-time dependency on the extension. Changing the name of your extension will force any extensions that have taken a dependency to update their manifest and can cause upgrade/extension deployment issues. |
+|id|Yes|The unique ID of the extension. When the `app.json` file is automatically created, the ID is set to a new GUID value. <br>**Note:** The app ID is used at runtime to bind table names contained in the application. Changing the app ID will result in data from old tables not being used.|
+|name|Yes|The unique extension name. <br>**Note:** The name can be used by other extensions to express a compile-time dependency on the extension. Changing the name of your extension will force any extensions that have taken a dependency to update their manifest and can cause upgrade/extension deployment issues. For more information, see [App Identity](devenv-app-identity.md).|
 |publisher|Yes|The name of your publisher, for example: **NAV Partner**, **LLC**. <br>**Note:** The publisher can be used by other extensions to express a compile-time dependency on the extension. Changing the publisher of your extension will force any extensions that have taken a dependency to update their manifest and can cause upgrade/extension deployment issues. |
 |brief|No, but required for AppSource submission|Short description of the extension.|
 |description|No, but required for AppSource submission|Longer description of the extension.|
@@ -69,7 +69,7 @@ The following table describes the settings in the `launch.json` file. The `launc
 |Setting|Mandatory|Value|
 |-------|---------|-----|
 |name|Yes|"Your own server"|
-|type|Yes|Must be set to `".al"`. Required by Visual Studio Code.|
+|type|Yes|Must be set to `"al"`. Required by Visual Studio Code.|
 |request|Yes|Request type of the configuration. Can be set to `"launch"` or `"attach"` . Required by Visual Studio Code. For more information, see [Attach and Debug Next](devenv-attach-debug-next.md).|
 |server|Yes|The HTTP URL of your server, for example: `"https://localhost|serverInstance"`|
 |port|No|The port assigned to the development service.|
@@ -125,6 +125,7 @@ The following table describes the settings in the `launch.json` file. The `launc
 ## See Also
 
 [AL Development Environment](devenv-reference-overview.md)  
+[App Identity](devenv-app-identity.md)  
 [Debugging in AL](devenv-debugging.md)  
 [Security Setting and IP Protection](devenv-security-settings-and-ip-protection.md)  
 [AL Language Extension Configuration](devenv-al-extension-configuration.md)  

@@ -3,7 +3,7 @@ title: "Update 17.1 for Microsoft Dynamics 365 Business Central 2020 Release Wav
 description: Get an overview of new and changed capabilities in the 17.1 update of Business Central online, which is part of 2020 release wave 2.
 ms.author: solsen
 ms.custom: na
-ms.date: 11/19/2020
+ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,7 +26,7 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 - [Notify users of high-risk changes in selected setup fields](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/notify-users-high-risk-changes-selected-setup-fields)
 - [Use new sales pricing experience](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/use-new-sales-pricing-experience-)
 - [Control how Account Schedules for core financial reports are generated](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/control-how-account-schedules-core-financial-reports-are-generated)
-- [Improved VAT Registration no. lookup](/dynamics365-business-central/improved-vat-registration-no-validation)
+- [Improved VAT Registration no. lookup](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/improved-vat-registration-no-validation)
 - [Extension lifecycle telemetry in Application Insights for ISVs](../administration/telemetry-extension-lifecycle-trace.md)
 - [Use environmentType and environmentName launch.json properties instead of obsoleted sandboxName](../developer/devenv-json-files.md#Launchjson)
 - [Symbols can be downloaded with a snapshot initialize launch.json configuration, using above environment properties](../developer/devenv-snapshot-debugging.md#downloading-symbols-on-the-snapshot-debugger-endpoint)

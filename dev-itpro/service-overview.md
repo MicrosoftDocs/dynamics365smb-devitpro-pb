@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.topic: overview
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 01/19/2021
+ms.date: 04/01/2021
 ---
 
 # Service Overview for Business Central Online
@@ -15,7 +15,7 @@ ms.date: 01/19/2021
 
 ## Lifecycle policy
 
-[!INCLUDE [prod_short](includes/prod_short.md)] online is governed by [Microsoft's Modern Lifecycle Policy](https://support.microsoft.com/help/30881), which means continuous [service updates](#service-updates) and a major update every six months. For more information, see [Dynamics 365 Business Central Service Compliance](/dynamics365/business-central/compliance/compliance-service-compliance&toc=/dynamics365/business-central/dev-itpro/toc.json) and [Dynamics 365 release schedule and early access](/dynamics365/get-started/release-schedule).  
+[!INCLUDE [prod_short](includes/prod_short.md)] online is governed by [Microsoft's Modern Lifecycle Policy](https://support.microsoft.com/help/30881), which means continuous [service updates](#service-updates) and a major update every six months. For more information, see [Dynamics 365 Business Central Service Compliance](/dynamics365/business-central/compliance/compliance-service-compliance) and [Dynamics 365 release schedule and early access](/dynamics365/get-started/release-schedule).  
 
 Get an overview of new and upcoming changes in the [Dynamics 365 release plans](/dynamics365/release-plans/).  
 

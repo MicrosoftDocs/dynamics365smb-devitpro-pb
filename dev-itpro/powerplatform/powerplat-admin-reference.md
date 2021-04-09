@@ -2,7 +2,7 @@
 title: "Business Central and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] admin reference"
 description: "The admin reference for working with Business Central and Microsoft Dataverse tables"
 ms.custom: na
-ms.date: 11/26/2020
+ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,9 +29,9 @@ The following solutions are installed in [!INCLUDE[cds_long_md](../includes/cds_
 
 - **Dynamics365Company** - This adds the **cdm_company** table, which is referenced by all [!INCLUDE[prod_short](../developer/includes/prod_short.md)] virtual tables. All communication to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] requires the company ID in the request. 
 - **MicrosoftBusinessCentralVESupport** - This provides the core support for the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] virtual table feature.
-- **MicrosoftBusinessCentralERPCatalog** - This provides a list of available [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
+- **MicrosoftBusinessCentralERPCatalog** - This provides a list of available tables, including ones based on custom APIs, in a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] instance.
 - **MicrosoftBusinessCentralVEAnchor** - This serves as a container, holding information needed for AppSource. 
-- **MicrosoftBusinessCentralERPVE** - Virtual tables generated for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] will be contained in this solution. tables are added at runtime once they are made visible.
+- **MicrosoftBusinessCentralERPVE** - Virtual tables generated for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] will be contained in this solution. Tables are added automatically at runtime once they are made visible in the **MicrosoftBusinessCentralERPCatalog**.
 
 ## Authentication and authorization
 
@@ -57,13 +57,15 @@ The next step in the process is to provide [!INCLUDE[cds_long_md](../includes/cd
 
 Due to the large number of OData enabled tables available in [!INCLUDE[prod_short](../developer/includes/prod_short.md)], by default, the tables are not available as virtual tables in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The following steps allow for enabling tables to be virtual, as needed.
 
-1. In [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], go to **Data -> tables** and search for *Available Business Central table*. Make sure to search for All and not just Default.
+1. In [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], go to **Data -> Tables** and search for *Available Business Central table*. Make sure to search for All and not just Default.
 
 2. Choose **Data** in the horizontal menu to view the available data.
 
-3. Locate and edit the table that you want to enable.
+3. Locate and edit the table that you want to enable. The list also contains tables based on custom APIs.
 
-4. Set **Visible** to **Checked** and save. This will generate the virtual table, so that it will appear in all of the appropriate menus, and in advanced find dialog box.
+4. Set **Visible** to **Checked** and save. This will generate the virtual table in the **MicrosoftBusinessCentralERPVE** solution. 
+
+Selected table will appear in all of the appropriate menus, including **Data -> Tables**, and in advanced find dialog box.
 
 ## Refreshing virtual table metadata
 

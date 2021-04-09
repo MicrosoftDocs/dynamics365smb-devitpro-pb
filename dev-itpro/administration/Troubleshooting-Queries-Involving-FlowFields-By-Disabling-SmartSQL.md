@@ -3,7 +3,7 @@ title: "Troubleshooting: Long Running SQL Queries Involving FlowFields"
 description: Learn how to fix long running SQL queries involving FlowFields by disabling SmartSQL.
 author: jswymer
 ms.custom: na
-ms.date: 10/29/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

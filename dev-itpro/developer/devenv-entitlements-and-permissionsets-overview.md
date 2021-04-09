@@ -1,7 +1,7 @@
 ---
 title: "Entitlements and Permission Sets Overview"
 ms.custom: na
-ms.date: 04/02/2021
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -78,7 +78,7 @@ The application database tables that used to store the entitlements won't contai
 [!INCLUDE [prod_short](includes/prod_short.md)] server configuration file (CustomSettings.config) includes a setting that allows on-premises administrators to decide whether they want to continue using the permissions defined as data or as AL objects: 
 
 ```
-UsePermissionSetsFromExtensions: ‘true’
+ <add key="UsePermissionSetsFromExtensions" value="true" />
 ```
 
 The default value for this setting is `true`, meaning that the server will be retrieving all **System** permission sets and permissions from the AL objects of type `PermissionSet` and `PermissionSetExtension`. With the value for this setting set to `true`, the permissions data, in case it is still present in the application database, will be disregarded. 
@@ -87,75 +87,11 @@ It's not possible to customize the **System** permission sets and permissions us
 
 In the on-premises version of [!INCLUDE [prod_short](includes/prod_short.md)], even though it's not recommended, the partners can customize the permission sets and permissions shipped in the application database. In this case, as for any upgrade before, the changes in Microsoft permissions should be merged with the customized permissions by partners during upgrade.
 
-Although starting with [!INCLUDE [prod_short](includes/prod_short.md)] 2021 release wave 1 (v.18.0), System permissions are no longer shipped as data in the application database, the partners can use the same procedure as before to export the new permissions that are defined using AL objects. The new permission sets and permissions can be exported into XML file by running XMLport 9171 Import/Export Permission Sets, making it possible to compare and merge the customized permission sets in your old database with the newly shipped permission sets. Find more details [here](/dynamics365/business-central/dev-itpro/upgrade/how-to--import-export-permission-sets-permissions.md).
+Although starting with [!INCLUDE [prod_short](includes/prod_short.md)] 2021 release wave 1 (v.18.0), System permissions are no longer shipped as data in the application database, the partners can use the same procedure as before to export the new permissions that are defined using AL objects. The new permission sets and permissions can be exported into XML file by running XMLport 9171 Import/Export Permission Sets, making it possible to compare and merge the customized permission sets in your old database with the newly shipped permission sets. Find more details, see [Export and Import Permission Sets and Permissions](../upgrade/how-to--import-export-permission-sets-permissions.md).
 
 ### How to upgrade permission sets
 
-When upgrading to version 18, first decide whether you want to use the permissions defined as data or switch to permissions defined as AL objects. Then, follow the guidelines at [Upgrading Permission Sets](https://review.docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/upgrade/upgrade-permissions?branch=deliv390525-2021-rw1-upgrade) for details on how to do the upgrade.
-
-
-
-<!--
-### Before you start upgrading
-
-When upgrading to version 18, decide whether you want to use the permissions defined as data or switch to permissions defined as AL objects. Then, use the following guidelines to help you complete the permissions upgrade.
-
-### To continue using permission sets defined as data
-
-1. From the old [!INCLUDE [prod_short](includes/prod_short.md)] version, export the permission sets to XML.
-
-   For more information, see [To export and import a permission set](https://docs.microsoft.com/dynamics365/business-central/ui-define-granular-permissions#to-export-and-import-a-permission-set).
-2. Install version 18 with the demonstration database.
-3. From the version 18 client, export the permission sets to XML.
-4. Using standard file comparison tools, compare XML files and merge the necessary changes. 
-
-    Now you have upgraded permissions as XML files.
-5. Upgrade your [!INCLUDE [prod_short](includes/prod_short.md)] to version 18.
-
-    > [!IMPORTANT]
-    > If you have a multitenant deployment, make sure the application database is writeable. 
-6. Set the `UsePermissionSetsFromExtensions` parameter of [!INCLUDE [server](includes/server.md)] instance (version 18) to `false`.
-7. Restart the [!INCLUDE [server](includes/server.md)] instance.
-8. From the version 18 client, import the permission sets from the newly created XML files.
-
-### To start using permission sets defined as AL objects
-
-If you've customized Microsoft permission sets, it's important to know what you've changed in these permission sets compared to what Microsoft provides in version 18. Knowing these changes will let you re-implement the permission sets as new AL permission set objects or permission set extension objects.
-
-1. Determine what customizations you made to Microsoft permission sets.
-
-    There are two ways to do this task.
-
-    **Option 1**
-    1. From your old [!INCLUDE [prod_short](includes/prod_short.md)] version, export the customized Microsoft permissions sets to XML.
-    2. Connect to a demonstration database of previous version, then export the Microsoft permission sets to XML.
-    3. Compare the XML files.
-
-    **Option 2**
-
-    1. Get the PowerShell script called Convert-PermissionSets.psm1 from [Business Central Tech Samples](https://github.com/microsoft/BCTech/tree/master/samples/PermissionSetConversion) on GitHub.
-    2. Run the script against the old [!INCLUDE [prod_short](includes/prod_short.md)] version to export the permission sets to AL objects.
-    3. Compare the exported AL objects with permission set objects from the version 18.  
-
-    Now you have the list of changes that you made compared to the version 18 permission sets from Microsoft.
-
-2. Create new AL objects based on the change list.
-
-   |If you|Then|
-   |----|----|
-   |Only added new permissions to the existing permission sets|Create AL permission set extension objects with the added permissions.|
-   |Removed or changed permissions in objects|<ol><li>Find the AL objects from Microsoft that implement the permission sets that you modified in the previous version.</li><li>Make copies of these AL objects</li><li>Modify the copies to include the customizations you want.</li></ol> |
-
-3. Convert your other custom permission sets to new AL objects.
-
-    1. Get the PowerShell script called Convert-PermissionSets.psm1 from [Business Central Tech Samples](https://github.com/microsoft/BCTech/tree/master/samples/PermissionSetConversion) on GitHub.
-    2. Connect to the old version's database.
-    3. Run the script to generate AL objects.
-
-4. Include the new AL permission sets and permission set extension objects into an AL project and compile the extension package.
-
-5. Publish and install the extension on your version 18 deployment.
--->
+When upgrading to version 18, first decide whether you want to use the permissions defined as data or switch to permissions defined as AL objects. Then, follow the guidelines at [Upgrading Permission Sets](../upgrade/upgrade-permissions.md) for details on how to do the upgrade.
 
 ## See Also
 

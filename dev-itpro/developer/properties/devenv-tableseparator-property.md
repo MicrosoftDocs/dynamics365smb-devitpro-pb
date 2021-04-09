@@ -2,7 +2,7 @@
 title: "TableSeparator Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 01/26/2021
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -34,7 +34,7 @@ TableSeparator = '<NewLine>';
 
 **TableSeparator** property is only used if the **Format Property** is set to **Variable Text** or **Fixed Text**. Otherwise, the setting is ignored.  
  
-This property specifies how tables should be separated. The default value is a new line \(**\<NewLine>**\). 
+This property specifies how tables should be separated. The default value is (two newlines) \(**\<NewLine>\<NewLine>**\). 
 
 The strings in the preceding table must be entered literally, that is, the **<** and **>** characters must be entered. These special strings can be combined and can be mixed with other characters.  
 

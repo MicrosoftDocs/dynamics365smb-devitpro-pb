@@ -3,7 +3,7 @@ title: "User Scenario Documentation"
 description: "Describing how to generate the required scenario document to get your app approved for AppSource."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: edupont
 ms.suite: na
 ms.tgt_pltfrm: na

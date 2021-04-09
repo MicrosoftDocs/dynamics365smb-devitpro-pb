@@ -10,7 +10,7 @@ ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: solsen
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ---
 # Hardening [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Server Security
 

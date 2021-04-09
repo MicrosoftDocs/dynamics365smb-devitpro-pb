@@ -1,4 +1,4 @@
-# [Development and administration](index.md)
+﻿# [Development and administration](index.md)
 # [New and planned](/dynamics365/business-central/product-news?toc=/dynamics365/business-central/dev-itpro/toc.json)
 # Get started
 ## [Overview of business functionality](/dynamics365/business-central/across-business-functionality?toc=/dynamics365/business-central/dev-itpro/toc.json)
@@ -14,6 +14,7 @@
 <!--#### What the partner's responsibilities are -->
 ### [Update Lifecycle for Customizations](developer/devenv-customization-update-lifecycle.md)
 ### [Maintain AppSource Apps and Per-Tenant Extensions](developer/app-maintain.md)
+### [Development of a Localization Solution](developer/readiness/readiness-develop-localization.md)  
 <!--#### How Microsoft runs the service -->
 ### [Microsoft Responsibilities](deployment/microsoft-responsibilities.md)
 ### [Components and Capabilities](deployment/app-components.md)
@@ -43,7 +44,8 @@
 ### [Get Started as a Reseller of Business Central Online](administration/get-started-online.md)
 ### [Cloud Solution Provider program](/partner-center/csp-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Connect with customers](/partner-center/connect-with-your-customers?toc=/dynamics365/business-central/dev-itpro/toc.json)
-### [Customize Business Central](/dynamics365/business-central/ui-customizing-overview?toc=/dynamics365/business-central/dev-itpro/toc.json) 
+### [Customize Business Central](/dynamics365/business-central/ui-customizing-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### [Onboarding Experiences](administration/onboarding-experiences.md)
 ## Frequently asked questions
 ### [Frequently asked questions (general)](faq.yml)
 ### [FAQ for Developing in AL](developer/devenv-dev-faq.md)
@@ -91,6 +93,7 @@
 ## [Setting up the Excel Add-In](administration/configuring-excel-addin.md)
 ## [Network Configuration for the Excel Add-In](administration/configuring-network-for-addins.md)
 ## [Setting up App Key Vaults for Extensions](administration/setup-app-key-vault.md)
+## [Upgrading Per-Tenant Extensions that Conflicts with Other Extensions](upgrade/upgrade-pte-merge-conflict.md)
 ## [Upgrading AppSource Apps in Production](developer/devenv-upgrade-appsource-app-in-prod.md)
 ## Entitlements and Permissions
 ### [Entitlements and Permission Sets Overview](developer/devenv-entitlements-and-permissionsets-overview.md)
@@ -178,12 +181,17 @@
 #### [Update user permission](administration/api/dynamics_userpermission_update.md)
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 ### [Using Service-to-Service Authentication](administration/automation-apis-using-s2s-authentication.md)
+<!-- onboard customers-->
 ## Onboard your customers
 ### [Trials and Sign-ups](deployment/customer-signup.md)
 <!-- ### Do cool demos -->
 <!-- ### Partner Center stuff -->
 <!-- Performance tests-->
-### [Setting Up Business Central](/dynamics365/business-central/setup?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### [Onboarding Experiences](administration/onboarding-experiences.md)
+### [Onboard New Users with the Welcome Banner](administration/onboarding-welcome-banner.md)
+### [Get Users Started with the Checklist](administration/onboarding-checklist.md)
+### [Teaching tips and in-app tours for onboarding users](administration/onboarding-teaching-tips-tours.md)
+### [Set Up Business Central](/dynamics365/business-central/setup?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Deploying a Tenant Customization](developer/devenv-deploy-tenant-customization.md)
 ### [Technical Support of Business Central](technical-support.md)
 <!--migrate to BC online-->
@@ -246,6 +254,7 @@
 #### [Getting Started with C/SIDE and AL Side-by-Side for On-Premises](developer/devenv-get-started-al-for-onprem.md)
 #### [Running C/SIDE and AL Side-by-Side](developer/devenv-running-cside-and-al-side-by-side.md)
 #### [Creating Runtime Packages for Business Central On-Premises](developer/devenv-creating-runtime-packages.md)
+## [App Identity](developer/devenv-app-identity.md)
 ## Working in Sandboxes
 ### [Choosing Your Development Sandbox Environment](developer/devenv-sandbox-overview.md)
 ### [Get Started with the Container Sandbox Development Environment](developer/devenv-get-started-container-sandbox.md)
@@ -410,6 +419,7 @@
 ### [How to: Create a Word Layout Report](developer/devenv-howto-report-layout.md)
 ### [How to: Create an RDL Layout Report](developer/devenv-howto-rdl-report-layout.md)
 ### [Walkthrough: Designing a Report from Multiple Tables](developer/devenv-walktrough-designing-reports-multiple-tables.md)
+### [Adding Barcodes](developer/devenv-report-add-barcodes.md)
 ### [Formatting Decimal Values in Fields](developer/devenv-format-field-data.md)
 ### Developing Printer Extensions
 #### [Printer Extension Overview](developer/devenv-reports-printing.md)
@@ -2543,6 +2553,7 @@
 ### [Deployment Overview](deployment/deployment.md)
 ### [Features not implemented in on-premises deployments](features-not-implemented-on-premises.md)
 ### System Requirements
+#### [2021 Release Wave 1](deployment/system-requirements-business-central-v18.md)
 #### [2020 Release Wave 2](deployment/system-requirement-business-central-v17.md)
 #### [2020 Release Wave 1](deployment/system-requirement-business-central-v16.md)
 #### [2019 Release Wave 2](deployment/system-requirement-business-central-v15.md)
@@ -2555,6 +2566,7 @@
 #### [2019 Release Wave 2 On-Premises Updates](deployment/update-versions-15.md)
 #### [2020 Release Wave 1 On-Premises Updates](deployment/update-versions-16.md)
 #### [2020 Release Wave 2 On-Premises Updates](deployment/update-versions-17.md)
+#### [2021 Release Wave 1 On-Premises Updates](deployment/update-versions-18.md)
 ### [Running a Container-Based Development Environment](developer/devenv-running-container-development.md)
 ### [Components](deployment/product-and-architecture-overview.md)
 ### [Planning](deployment/plan-for-deployment.md)
@@ -2724,6 +2736,24 @@
 ##### [From Version 15](upgrade/upgrade-technical-upgrade-v15-v17.md)
 ##### [From Version 16](upgrade/upgrade-technical-upgrade-v16-v17.md)
 #### [Installing a Minor Update](upgrade/upgrading-cumulative-update-v17.md)
+### Business Central 2021 Release Wave 1
+#### [Overview](upgrade/upgrade-overview-v18.md)
+#### [Upgrade Compatibility Matrix](upgrade/upgrade-v14-v15-compatibility.md)
+#### [Upgrading Permission Sets](upgrade/upgrade-permissions.md)
+#### Application and Data
+##### [From version 14 Unmodified C/AL Application](upgrade/upgrade-unmodified-application-v14-v18.md)
+##### [From version 14 Customized C/AL Application](upgrade/upgrade-to-microsoft-base-app-v18.md)
+##### [From Version 15, 16, or 17 Microsoft Base Application](upgrade/upgrade-unmodified-application-to-v18.md)
+##### Related Articles
+###### [Convert to AL](upgrade/devenv-code-conversion.md)
+###### Migrating Tables and Fields Between Extensions
+####### [Overview](developer/devenv-migrate-table-fields.md)
+####### [Moving Tables and Fields Down](developer/devenv-migrate-table-fields-down.md)
+####### [Moving Tables and Fields Up](developer/devenv-migrate-table-fields-up.md)
+#### Technical Upgrade
+##### [From Version 14](upgrade/upgrade-technical-upgrade-v14-v18.md)
+##### [From Version 15, 16, or 17](upgrade/upgrade-technical-upgrade-v18.md)
+#### [Installing a Minor Update](upgrade/upgrading-cumulative-update-v18.md)
 ### [Some Known Issues](upgrade/known-issues.md)
 ## [Migrate Legacy Help to the Business Central Format](upgrade/migrate-help.md)
 

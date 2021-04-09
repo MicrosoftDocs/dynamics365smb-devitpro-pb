@@ -2,7 +2,7 @@
 title: "Performance Article For Developers"
 description: Provides information for developers to help improve performance in Business Central
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -158,7 +158,7 @@ Here are some examples of this pattern:
 
 There are many different ways to spin up a new task:
 
-- [Job Queue](/business-central/admin-job-queues-schedule-tasks.md)  
+- [Job Queue](/dynamics365/business-central/admin-job-queues-schedule-tasks)  
 - [TaskScheduler.CreateTask](../developer/methods-auto/taskscheduler/taskscheduler-data-type.md)  
 - [StartSession](../developer/methods-auto/session/session-startsession-method.md)  
 - [Page Background Task](../developer/devenv-page-background-tasks.md)  

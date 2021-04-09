@@ -2,7 +2,7 @@
 title: "To avoid confusion, do not give methods the same name as fields or actions in the same scope."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/08/2021
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

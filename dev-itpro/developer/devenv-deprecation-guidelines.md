@@ -3,7 +3,7 @@ title: "Best Practices for Deprecation of Code in the Base App"
 description: "Description of best practices and guidelines for deprecating code in the Base App for Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 02/05/2021
+ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"

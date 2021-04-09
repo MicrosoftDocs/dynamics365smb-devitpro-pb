@@ -2,7 +2,7 @@
 title: "OData Web Services"
 description: Learn about OData web services and how to create and maintain these services. 
 ms.custom: na
-ms.date: 01/14/2021
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

@@ -3,7 +3,7 @@ title: "Snapshot Debugging"
 description: "Overview of how snapshot debugging allows recording running AL code for Business Central"
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 01/08/2021
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
