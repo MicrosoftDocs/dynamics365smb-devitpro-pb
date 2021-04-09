@@ -171,11 +171,11 @@ codeunit 50100 SyncAdditionalFields
 }
 ```
 
-More details on [customizing the synchronization with Microsoft Dataverse](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/administration-custom-cds-integration).
+For more details, see [Customizing an Integration with Microsoft Dataverse](../administration/administration-custom-cds-integration.md).
 
 ### Native table–to–virtual table relationships
 
-Native table–to–virtual table relationships works much like virtual table–to–native table relationships. One a relation has been setup between the native table and the virtual table, Subgrids or Quick Views can be added, showing relatedc native table information.
+Native table–to–virtual table relationships work much like virtual table–to–native table relationships. Once a relation has been set up between the native table and the virtual table, Subgrids or Quick Views can be added, showing related native table information.
 
 ## Enums
 
