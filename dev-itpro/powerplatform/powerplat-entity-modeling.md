@@ -106,14 +106,12 @@ Therefore, in effect, the table name is the only information that is used in a r
 
 ### Virtual table–to–native table relationship
 
-Consider an example where you want to show sales orders from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] for Account A in Dataverse. A foreign key relation is needed between native table Account and virtual table **dyn365bc_salesorder_v2_0**. Once the relation is established, a virtual table can be used on forms, like other related tables. To set up a virtual table to native table relation, follow these steps:
+Consider an example where you want to show sales orders from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] for Account A in Dataverse. A foreign key relation is needed between the native table **Account** and the virtual table **dyn365bc_salesorder_v2_0**. Once the relation is established, a virtual table can be used on pages, like other related tables. To set up a virtual table to native table relation, follow these steps:
 
-1. Go to the native table that you want to create a relation to and add a Key. Choose the column(s) needed for the relation. 1 to 3 columns can be used in the native to virtual table relation.
+1. Go to the native table that you want to create a relation to and add a **Key**. Choose the column(s) needed for the relation. 1 to 3 columns can be used in the native to virtual table relation.
 2. Add a new record to the **Business Central Table Relation** table.  
-
-- On the **General** tab, provide **Relation Name**, **Native Table**, and **Native Table Key** which is the name of the key specified in step 1, and the **Virtual Table** name.  
-- On the **Mapping** tab, provide column mapping between the native table and the virtual table column(s). All columns included in the table key (defined in step 1) must be mapped.  
-
+    1. On the **General** tab, provide **Relation Name**, **Native Table**, and **Native Table Key** which is the name of the key specified in step 1, and the **Virtual Table** name.  
+    2. On the **Mapping** tab, provide column mapping between the native table and the virtual table column(s). All columns included in the table key (defined in step 1) must be mapped.  
 3. Press **Save**. Validation will be performed on save.
 
 To follow the example from above, where a relation between native table **Account** and virtual table **dyn365bc_salesorder_v2_0** is needed:
