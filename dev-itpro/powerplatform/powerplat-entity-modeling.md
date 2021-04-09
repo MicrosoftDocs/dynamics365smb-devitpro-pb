@@ -122,16 +122,16 @@ To follow the example from above, where a relation between native table **Accoun
 2. Make sure that **dyn365bc_salesorder_v2_0** is generated.
 3. Add a new record to the **Business Central Table Relation** table.
     - On the **General** tab set the following:
-        - Relation Name = dyn365bc_account2salesorder
-        - Native Table = account
-        - Native Table Key = prefix_AccountKey
-        - Virtual Table = dyn365bc_salesorder_v2_0
-    - In Mappings tab set first row
-        - Native columns = accountnumber
-        - Virtual columns = dyn365bc_customernumber
-1. Save the 'Business Central Table Relation' record.
-1. Open the main form of Account. Add a subgrid and choose the 'Sales Orders (accountid)' relation.
-1. Save and Publish
+        - **Relation Name** to **dyn365bc_account2salesorder**
+        - **Native Table** to **Account**
+        - **Native Table Key** to **prefix_AccountKey**
+        - **Virtual Table** to **dyn365bc_salesorder_v2_0**
+    - On the **Mappings** tab set first row as follows:
+        - **Native columns** to **accountnumber**
+        - **Virtual columns** to **dyn365bc_customernumber**
+4. Save the **Business Central Table Relation** record.
+5. Open the main form of **Account**. Add a sub grid and choose the **Sales Orders (accountid)** relation.
+6. Save and publish.
 
 The Account now contains the relation, and Sales Orders are shown on the main form if Sales Orders exists for the Account.
 
