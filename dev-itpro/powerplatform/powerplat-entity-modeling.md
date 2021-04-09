@@ -141,9 +141,9 @@ To create native-to-virtual table relations a shared key is needed in order to e
 
 To set up synchronization between Microsoft Dataverse and [!INCLUDE[prod_short](../includes/prod_short.md)], follow the [guide](/business-central/admin-how-to-set-up-a-dynamics-crm-connection). To get started use the **Dataverse Connection Setup** assisted setup guide in [!INCLUDE[prod_short](../includes/prod_short.md)].
 
-A customization to the synchronization is needed, as customer number is not synced with Dataverse on default.
-The code below adds the field mapping to the synchronization. In the snippet below synchronization is uni-directional. In this case, Business Central will be the master, pushing account number to Microsoft Dataverse.
+A customization to the synchronization is needed, because the customer number is not synced with Dataverse by default. The code in the example below adds the field mapping to the synchronization. In this snippet the synchronization is uni-directional. In this case, [!INCLUDE[prod_short](../includes/prod_short.md)] will be the main, pushing account number to Microsoft Dataverse.
 
+```al
 codeunit 50100 SyncAdditionalFields
 {
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"CDS Setup Defaults", 'OnAfterResetCustomerAccountMapping', '', true, true)]
@@ -169,6 +169,7 @@ codeunit 50100 SyncAdditionalFields
             ConstValue, ValidateField, ValidateIntegrationTableField);
     end;
 }
+```
 
 More details on [customizing the synchronization with Microsoft Dataverse](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/administration-custom-cds-integration).
 
