@@ -133,13 +133,13 @@ To follow the example from above, where a relation between native table **Accoun
 5. Open the main form of **Account**. Add a sub grid and choose the **Sales Orders (accountid)** relation.
 6. Save and publish.
 
-The Account now contains the relation, and Sales Orders are shown on the main form if Sales Orders exists for the Account.
+**Account** now contains the relation, and **Sales Orders** are shown on the main form if any sales orders exist for the account.
 
 #### Synchronizing master data
 
-To make Native to Virtual table relations a shared key is needed to establish a foregin key relationship. In the Account and Sales Order scenario, Account Number (Account Table) needs to be identical to  Customer Number (Busienss Central Customer Table).
+To create native-to-virtual table relations a shared key is needed in order to establish a foreign key relationship. In the Account and Sales Order scenario, the Account Number in the Account table must be identical to Customer Number in the [!INCLUDE[prod_short](../includes/prod_short.md)] Customer table.
 
-To setup synchronization beween Microsoft Dataverse and Business Central, follow the [guide](https://docs.microsoft.com/en-us/dynamics365/business-central/admin-how-to-set-up-a-dynamics-crm-connection). To get started use the Dataverse Connection Setup assisted setup guide.
+To set up synchronization between Microsoft Dataverse and [!INCLUDE[prod_short](../includes/prod_short.md)], follow the [guide](/business-central/admin-how-to-set-up-a-dynamics-crm-connection). To get started use the **Dataverse Connection Setup** assisted setup guide in [!INCLUDE[prod_short](../includes/prod_short.md)].
 
 A customization to the synchronization is needed, as customer number is not synced with Dataverse on default.
 The code below adds the field mapping to the synchronization. In the snippet below synchronization is uni-directional. In this case, Business Central will be the master, pushing account number to Microsoft Dataverse.
