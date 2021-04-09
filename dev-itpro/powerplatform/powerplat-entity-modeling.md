@@ -94,44 +94,50 @@ In summary, a relationship to another [!INCLUDE[prod_short](../developer/include
 
 ### Native table–to–native table relationships
 
-Native table–to–native table relationships are the standard [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] functionality, where relationships are resolved by using the GUID of the related table. (This GUID is the table key.) The GUID identifies the unique table record in the related table.
+Native table–to–native table relationships are the standard [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] functionality, where relationships are resolved by using the GUID of the related table. This GUID is the table key. The GUID identifies the unique table record in the related table.
 
 ### Virtual table–to–virtual table relationships
 
-The relationships between two [!INCLUDE[prod_short](../developer/includes/prod_short.md)] virtual tables are driven by the relation metadata in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tables. As was explained earlier, these relations are generated as relationships in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] when the virtual table is generated. As in the behavior for native tables in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], these relationships use the GUID to identify the unique record of the table in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. Semantically, the GUID on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] virtual table behaves like the GUID on the native [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] table. For information about the implementation of the GUID in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] virtual tables, see the [table key/primary key](powerplat-entity-modeling.md#table-key---primary-key) section earlier in this topic.
+The relationships between two [!INCLUDE[prod_short](../developer/includes/prod_short.md)] virtual tables are driven by the relation metadata in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tables. As explained earlier, these relations are generated as relationships in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] when the virtual table is generated. Just like the behavior of native tables in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], these relationships use the GUID to identify the unique record of the table in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. Semantically, the GUID on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] virtual table behaves like the GUID on the native [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] table. For information about the implementation of the GUID in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] virtual tables, see the [table key/primary key](powerplat-entity-modeling.md#table-key---primary-key) section earlier in this topic.
 
 In the preceding example, the GUID of the related table is the table key of table B and will be used to build queries to identify a record in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. The relation that table A has to table B will be used.
 
 Therefore, in effect, the table name is the only information that is used in a relation that comes from [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. The table name gives access to the primary field in the related table, so that it can be shown in the lookup. It also gives access to the GUID of the related table, so that it can be used in other queries, as was explained earlier.
 
 ### Virtual table–to–native table relationship
-Consider an example where you want to show sales orders from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] for Account A in Dataverse. A foregin key relation is needed between native table Account and virtual table dyn365bc_salesorder_v2_0. Once the relation is established, a virtual table can on forms, like other related tables. So setup a virtual table to native table relation, follow these steps:
-1. For the native table you want to create a relation to, go to that table and add a Key. Choose the column(s) which is needed for the relation. 1 to 3 columns can be used in the native to virtual table relation.
-1. Add a new record to 'Business Central Table Relation' table.
-    * In the General tab, provide any 'Relation Name', the 'Native Table', the 'Native Table Key' which is the name of the key specified in step 1, and 'Virtual Table' name.
-    * In the Mapping tab, provide column mapping between the native table and the virtual table column(s). All columns included in the table key (defined in step 1) needs to be mapped.
-1. Press save. Validation will be performed on save.
 
-To follow the example from above, where a relation between native table Account and virtual table dyn365bc_salesorder_v2_0 is needed:
-1. Create a key on Account. Choose 'Account Number'. Name is 'prefix_**AccountKey**'.
-2. Make sure that dyn365bc_salesorder_v2_0 is generated.
-1. Add a new record to 'Business Central Table Relation' table.
-    * In General tab set
-        * Relation Name = dyn365bc_account2salesorder
-        * Native Table = account
-        * Native Table Key = prefix_AccountKey
-        * Virtual Table = dyn365bc_salesorder_v2_0
-    * In Mappings tab set first row
-        * Native columns = accountnumber
-        * Virtual columns = dyn365bc_customernumber
+Consider an example where you want to show sales orders from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] for Account A in Dataverse. A foreign key relation is needed between native table Account and virtual table **dyn365bc_salesorder_v2_0**. Once the relation is established, a virtual table can be used on forms, like other related tables. To set up a virtual table to native table relation, follow these steps:
+
+1. Go to the native table that you want to create a relation to and add a Key. Choose the column(s) needed for the relation. 1 to 3 columns can be used in the native to virtual table relation.
+2. Add a new record to the **Business Central Table Relation** table.  
+
+- On the **General** tab, provide **Relation Name**, **Native Table**, and **Native Table Key** which is the name of the key specified in step 1, and the **Virtual Table** name.  
+- On the **Mapping** tab, provide column mapping between the native table and the virtual table column(s). All columns included in the table key (defined in step 1) must be mapped.  
+
+3. Press **Save**. Validation will be performed on save.
+
+To follow the example from above, where a relation between native table **Account** and virtual table **dyn365bc_salesorder_v2_0** is needed:
+
+1. Create a key on the **Account** table. Choose **Account Number**. Name is 'prefix_**AccountKey**'.
+2. Make sure that **dyn365bc_salesorder_v2_0** is generated.
+3. Add a new record to the **Business Central Table Relation** table.
+    - On the **General** tab set the following:
+        - Relation Name = dyn365bc_account2salesorder
+        - Native Table = account
+        - Native Table Key = prefix_AccountKey
+        - Virtual Table = dyn365bc_salesorder_v2_0
+    - In Mappings tab set first row
+        - Native columns = accountnumber
+        - Virtual columns = dyn365bc_customernumber
 1. Save the 'Business Central Table Relation' record.
 1. Open the main form of Account. Add a subgrid and choose the 'Sales Orders (accountid)' relation.
 1. Save and Publish
 
 The Account now contains the relation, and Sales Orders are shown on the main form if Sales Orders exists for the Account.
 
-#### Synchronizing master data  
- To make Native to Virtual table relations a shared key is needed to establish a foregin key relationship. In the Account and Sales Order scenario, Account Number (Account Table) needs to be identical to  Customer Number (Busienss Central Customer Table).
+#### Synchronizing master data
+
+To make Native to Virtual table relations a shared key is needed to establish a foregin key relationship. In the Account and Sales Order scenario, Account Number (Account Table) needs to be identical to  Customer Number (Busienss Central Customer Table).
 
 To setup synchronization beween Microsoft Dataverse and Business Central, follow the [guide](https://docs.microsoft.com/en-us/dynamics365/business-central/admin-how-to-set-up-a-dynamics-crm-connection). To get started use the Dataverse Connection Setup assisted setup guide.
 
