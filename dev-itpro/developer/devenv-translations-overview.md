@@ -13,6 +13,7 @@ author: SusanneWindfeldPedersen
 
 # Translations Overview
 
+Your [!INCLUDE [prod_short](../includes/prod_short.md)] app can be translated to other languages to adjust it to other markets. Because of the layered architecture of the extension model, the translation(s) that are displayed to the user depends on these layers.
 
 ## The life of a caption 
 
