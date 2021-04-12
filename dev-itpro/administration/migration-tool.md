@@ -25,9 +25,7 @@ The cloud migration tool supports migration from specific versions of specific s
 * [Migrate to Business Central Online from Dynamics GP](migrate-dynamics-gp.md)  
 * [Upgrading from Dynamics NAV to Business Central Online](../upgrade/Upgrade-Considerations.md#online)
 
-Use the same assisted setup to set up a connection to the intelligent cloud but still remain on-premises. For the list of on-premises solutions that currently supported for connecting to the intelligent cloud, see [Which products and versions are supported for connecting to the intelligent cloud?](./faq-intelligent-cloud.md#which-products-and-versions-are-supported-for-connecting-to-the-intelligent-cloud) in the FAQ.  
-
-In the following sections, you're working in your [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online tenant and connecting it to your on-premises database. Either because you are migrating from on-premises to online, or because you are connecting to the intelligent cloud.  
+In the following sections, you're working in your [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online tenant and connecting it to your on-premises database as part of migrating from on-premises to online.  
 
 > [!TIP]
 > we recommend that you start the migration by running the assisted setup from a company other than the company that you are migrating data to. For example, sign into the demonstration company, CRONUS, and start the process there. This way, you can make sure that all users are logged out of the original company and the target company. This is especially important when you migrate from [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises current version because you can run the migration tool multiple times.
@@ -111,7 +109,7 @@ When you choose the **Set up Cloud Migration** assisted setup, it launches the *
     >
     > We also recommend that you make sure that all users are logged out of both the source company and the target company.
 
-Once you have migrated the data that you want to migrate to [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online, you end the migration by disabling cloud migration in the **Cloud Migration Setup** page. This is an important step, because each time someone runs the migration, outstanding documents for vendors and customers, general ledger account numbers, inventory items, and any other changes made in the target company in [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online are overwritten. If you are not migrating but using the assisted setup guide to connect to the intelligent cloud, you can adjust the migration schedule.  
+Once you have migrated the data that you want to migrate to [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online, you end the migration by disabling cloud migration in the **Cloud Migration Setup** page. This is an important step, because each time someone runs the migration, outstanding documents for vendors and customers, general ledger account numbers, inventory items, and any other changes made in the target company in [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online are overwritten.  
 
 > [!NOTE]  
 > The amount of time the migration will take to complete depends on the amount of data, your SQL configuration, and your connection speed. Subsequent migrations will complete more quickly because only changed data is migrating.  
