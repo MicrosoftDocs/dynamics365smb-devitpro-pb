@@ -29,13 +29,13 @@ Translations provided using profile configuration cannot be overwritten by any a
 
 ## Translations in the same layer
 
-If there are multiple translations on the same layer, then it is possible to control which translations are applied last by setting a dependency in the `app.json` file to the layers where the translation is intended to be applied last.
+If there are *multiple translations on the same layer*, then it is possible to control which translations are applied last by setting a dependency in the `app.json` file to the layers where the translation is intended to be applied last.
 
 For example, if you want to change the text provided from  **Translation app XYZ**, you can create another translation app, and in the `app.json` file of that new translation app, you must then specify a dependency on **Translation app XYZ** to make sure that the translation in this new app is applied after and thereby overwrites the original translation.
 
 ## Overwrites
 
-When translations from the different layers are picked up, one translation from each observed culture is kept and when it is overwritten, only the specified culture changes. In the following example, we have a caption and its page extension caption.
+When *translations from different layers* are picked up, one translation from each observed culture is kept and when it is overwritten, only the specified culture changes. In the following example, we have a caption and its page extension caption.
 
 ```al
 page 50101 SimpleCustomerCard
@@ -51,7 +51,7 @@ pageextension 50101 SimpleCustomerCardExtension extends SimpleCustomerCard
 
 ```
 
-The result caption will be **Customer** in en-US, **Cliente** in it-IT, and **Debitor** in da-DK. 
+The resulting caption will then be **Customer** in en-US, **Cliente** in it-IT, and **Debitor** in da-DK. 
 
 ## Picking the language
 
@@ -78,3 +78,5 @@ If the page control is backed by a table field, then if no matches where found t
 ## See Also
 
 [Working with Translation Files](devenv-work-with-translation-files.md)  
+[CaptionML Property](properties/devenv-captionml-property.md)  
+
