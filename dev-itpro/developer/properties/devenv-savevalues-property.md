@@ -1,5 +1,6 @@
 ---
 title: "SaveValues Property"
+description: Sets whether user-specific control values are saved for this page.
 ms.author: solsen
 ms.custom: na
 ms.date: 04/01/2021
@@ -38,5 +39,5 @@ The **SaveValues** property enables the *Saved Settings* feature, that is, to sa
 ## See Also
 
 [Properties](devenv-properties.md)  
-[Manage Saved Settings for Reports and Batch jobs](/business-central/reports-saving-reusing-settings)  
-[Using Saved Settings](/business-central/ui-work-report#SavedSettings)
+[Manage Saved Settings for Reports and Batch jobs](/dynamics365/business-central/reports-saving-reusing-settings)  
+[Using Saved Settings](/dynamics365/business-central/ui-work-report#SavedSettings)  
