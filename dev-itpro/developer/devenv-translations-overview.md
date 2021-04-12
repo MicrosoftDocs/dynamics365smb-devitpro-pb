@@ -31,7 +31,7 @@ Translations provided using profile configuration cannot be overwritten by any a
 
 If there are multiple translations on the same layer, then it is possible to control which translations are applied last by setting a dependency in the `app.json` file to the layers where the translation is intended to be applied last.
 
-For example, if you want to change the text provided from  **Translation app XYZ**, another translation app can be made, and in the `app.json` file you must then specify a dependency on **Translation app XYZ** to make sure that it is applied after and thereby overwrites the original translation.
+For example, if you want to change the text provided from  **Translation app XYZ**, you can create another translation app, and in the `app.json` file of that new translation app, you must then specify a dependency on **Translation app XYZ** to make sure that the translation in this new app is applied after and thereby overwrites the original translation.
 
 ## Overwrites
 
