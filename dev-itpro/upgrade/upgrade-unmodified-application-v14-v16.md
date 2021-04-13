@@ -149,6 +149,7 @@ This task runs a technical upgrade on the application database to convert it fro
     DatabaseLocation    :
     Collation           :
     ```
+[!INCLUDE[convert_azure_sql_db_timeout](../developer/includes/convert_azure_sql_db_timeout.md)]
 
 ## Task 4: Configure version 16 server for DestinationAppsForMigration
 

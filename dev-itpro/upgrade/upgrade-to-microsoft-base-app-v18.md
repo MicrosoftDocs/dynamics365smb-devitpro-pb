@@ -340,6 +340,8 @@ This task runs a technical upgrade on the application database. The task convert
     Collation           :
     ```
 
+[!INCLUDE[convert_azure_sql_db_timeout](../developer/includes/convert_azure_sql_db_timeout.md)]
+
 ## Task 8: Configure version 18 server for DestinationAppsForMigration
 
 In this step, you configure the version 18 server instance. In particular, you configure it to migrate the table migration extension that you created earlier. The migration is controlled by the `DestinationAppsForMigration` setting for the server instance. For more information about the `DestinationAppsForMigration` setting, see [DestinationAppsForMigration](upgrade-destinationappsformigration.md).

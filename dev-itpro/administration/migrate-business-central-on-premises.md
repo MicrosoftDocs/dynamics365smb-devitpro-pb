@@ -17,7 +17,7 @@ ms.author: edupont
 
 # Migrate to Business Central Online from Business Central On-premises
 
-Your [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premises solution can have an identical twin in a [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online tenant. Use this twin to migrate to the cloud, or use it to connect to intelligent cloud scenarios. The migration can be started quite easily from the assisted setup wizard in your on-premises solution.  
+Your [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premises solution can have an identical twin in a [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online tenant. Use this twin to migrate to the cloud. The migration can be started quite easily from the assisted setup wizard in your on-premises solution.  
 
 > [!NOTE]
 > [!INCLUDE [bc-cloud-versions](../includes/bc-cloud-versions.md)] Alternatively, you can upgrade to the current version and then migrate to the cloud. For more information, see [Supported Upgrade Paths to Business Central Releases](../upgrade/upgrade-paths.md).
@@ -58,7 +58,7 @@ During the data migration process, [!INCLUDE[prod_short](../developer/includes/p
 
 ## Upgrading to a new version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)]
 
-If you upgrade to a new version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premises, including a cumulative update, then you must update the extensions as well. Depending on your on-premises solution, your [!INCLUDE [prod_short](../developer/includes/prod_short.md)] tenant contains different extensions for the cloud migration. For more information, see [Business Central Intelligent Cloud Extensions](/dynamics365/business-central/ui-extensions-data-replication?toc=/dynamics365/business-central/dev-itpro/toc.json).  
+If you upgrade to a new version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premises, including a cumulative update, then you must update the extensions as well. Depending on your on-premises solution, your [!INCLUDE [prod_short](../developer/includes/prod_short.md)] tenant contains different extensions for the cloud migration. For more information, see [Business Central Cloud Migration Extensions](/dynamics365/business-central/ui-extensions-data-replication?toc=/dynamics365/business-central/dev-itpro/toc.json).  
 
 > [!IMPORTANT]
 > In your [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online tenant, install, publish, or upgrade the **Intelligent Cloud Base** extension first, and then the product-specific extension or extensions.
@@ -68,10 +68,10 @@ Also, at the end of the upgrade, you must make sure that the `applicationVersion
 ## See also
 
 [Migration On-premises Data to Business Central online](migrate-data.md)  
-[Connect to the Intelligent Cloud from On-Premises](./migration-tool.md)  
-[Managing your Intelligent Cloud Environment](./migration-management.md)  
+[Migrate to the Cloud from On-Premises](./migration-tool.md)  
+[Managing your Online Environment](./migration-management.md)  
 [ReplicateData Property](../developer/properties/devenv-replicatedata-property.md)  
-[Intelligent Insights with Business Central](/dynamics365/business-central/about-intelligent-cloud)  
+[Intelligent Insights with Business Central Online](/dynamics365/business-central/about-intelligent-cloud)  
 [Migrate Legacy Help to the [!INCLUDE[prod_long](../developer/includes/prod_long.md)] Format](../upgrade/migrate-help.md)  
 [Upgrading from Dynamics NAV to Business Central Online](../upgrade/Upgrade-Considerations.md#online)  
 [Important Information and Considerations for Before Upgrading to [!INCLUDE[prod_long](../developer/includes/prod_long.md)] Spring 2019](../upgrade/Upgrade-Considerations.md)

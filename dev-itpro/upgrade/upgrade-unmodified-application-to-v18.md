@@ -153,6 +153,8 @@ This task runs a technical upgrade on the application database to convert it to 
     Collation           :
     ```
 
+[!INCLUDE[convert_azure_sql_db_timeout](../developer/includes/convert_azure_sql_db_timeout.md)]
+
 ## Task 5: Configure version 18 server
 
 When you installed version 18 in **Task 2**, a version 18 [!INCLUDE[server](../developer/includes/server.md)] instance was created. In this task, you change server configuration settings that are required to complete the upgrade. Some of the changes are only required for version 16 to version 17 upgrade and can be reverted after you complete the upgrade.

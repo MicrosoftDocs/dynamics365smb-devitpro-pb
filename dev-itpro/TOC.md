@@ -202,7 +202,7 @@
 ### [Migrating from Business Central On-Premises](administration/migrate-business-central-on-premises.md)
 ### [Migrating from Dynamics GP](administration/migrate-dynamics-gp.md)
 ### [Migrating from Dynamics NAV](upgrade/Upgrade-Considerations.md#online)
-### [FAQ about Connecting to Business Central Online from On-Premises Solutions](administration/faq-intelligent-cloud.md)
+### [FAQ about Migrating to Business Central Online from On-Premises Solutions](administration/faq-intelligent-cloud.md)
 ### [Troubleshooting Cloud Migration](administration/migration-troubleshooting.md)
 <!--### [Migrating from Dynamics SL](administration/migrate-data.md)-->
 <!-- end migrate -->
