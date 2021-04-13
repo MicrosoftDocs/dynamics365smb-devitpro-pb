@@ -53,7 +53,7 @@ Data is gathered when the operations are done using:
 
     - For on-premises, data for these operations is recorded when an extension is installed or uninstalled by using the [Install-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp) or [Uninstall-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp). Or, when an extension is installed or uninstalled from the **Extension Management** page in the client.
 
-    - For on-premises, data for these operations is recorded when an extension is installed or uninstalled from the **Extension Management** page in the client.
+    - For online, data for these operations is recorded when an extension is installed or uninstalled from the **Extension Management** page in the client.
 
 - Updating an extension
 
