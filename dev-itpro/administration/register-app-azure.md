@@ -123,6 +123,6 @@ This issue indicates there's a problem with the configuration of the Azure regis
 
 ## See Also
 [Business Central and Power BI](/dynamics365/business-central/admin-powerbi)  
-[FAQ about Connecting to the Intelligent Cloud from On-Premises Solutions](FAQ-Intelligent-Cloud.md)  
+[FAQ about Migrating to the Cloud from On-Premises Solutions](FAQ-Intelligent-Cloud.md)  
 [Deployment of [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](../deployment/Deployment.md)  
 [Migrating On-Premises Data to Business Central Online](migrate-data.md)  

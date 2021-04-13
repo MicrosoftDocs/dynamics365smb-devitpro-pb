@@ -38,8 +38,8 @@ https://localhost:7048/BC130/OData/Company('CRONUS International Ltd.')/Customer
 |Different from \(not equal\)|`$filter=VAT_Bus_Posting_Group ne 'EXPORT'`<br /><br /> Query on Customer service. Returns all customers with VAT\_Bus\_Posting\_Group not equal to EXPORT.|\<>|  
 |endswith|`$filter=endswith(VAT_Bus_Posting_Group,'RT')`<br /><br /> Query on Customer service. Returns all customers with VAT\_Bus\_Posting\_Group values that end in RT.|\*|  
 |startswith|`$filter=startswith(Name, 'S')`<br /><br /> Query on Customer service. Returns all customers names beginning with “S”.||  
-|substringof|`$filter=substringof(Name, ‘urn’)`<br /><br /> Query on Customer service. Returns customer records for customers with names containing the string “urn”.||  
-|indexof|`$filter=indexof(Location_Code, ‘BLUE’) eq 0`<br /><br /> Query on Customer service. Returns customer records for customers having a location code beginning with the string BLUE.||  
+|contains|`$filter=contains(Name, 'urn')`<br /><br /> Query on Customer service. Returns customer records for customers with names containing the string “urn”.||  
+|indexof|`$filter=indexof(Location_Code, 'BLUE') eq 0`<br /><br /> Query on Customer service. Returns customer records for customers having a location code beginning with the string BLUE.||  
 |replace|`$filter=replace(City, 'Miami', 'Tampa') eq 'CODERED'`||  
 |substring|`$filter=substring(Location_Code, 5) eq 'RED'`<br /><br /> Query on Customer service. Returns true for customers with the string RED in their location code starting as position 5.||  
 |tolower|`$filter=tolower(Location_Code) eq 'code red'`||  
