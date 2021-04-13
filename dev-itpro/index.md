@@ -53,13 +53,12 @@ The following table outlines recommended content for you to get started:
 
 As a reseller of [!INCLUDE [prod_short](includes/prod_short.md)] online, your route to get started depends on whether you are already familiar with [!INCLUDE [prod_short](includes/prod_short.md)] on-premises or its predecessor, [!INCLUDE [navnow_md](developer/includes/navnow_md.md)], or if you are already familiar with the Cloud Solution Provider program. The following table outlines recommended content for you to get started:
 
-|Link  |Description  |
-|------|-------------|
-|[Get Started as a Reseller of Business Central Online](administration/get-started-online.md)| Landing page for readiness for resellers. |
-|[Business Functionality
-in Business Central](/dynamics365/business-central/across-business-functionality)|Landing page for the core functionality in [!INCLUDE [prod_short](includes/prod_short.md)].|
-|[Business Central on Microsoft Learn](/learn/browse/?WT.mc_id=dyn365bc_landingpage-docs&products=dynamics-business-central&resource_type=learning%20path&roles=functional-consultant)|  Provides links to role-specific training. |
-|[Enroll in the Cloud Solution Provider program](/partner-center/enrolling-in-the-csp-program) | Describes the different models for selling in the Cloud Solution Provider (CSP) program so you can determine which works best with your business.        |
+| Link | Description |
+|--|--|
+| [Get Started as a Reseller of Business Central Online](administration/get-started-online.md) | Landing page for readiness for resellers. |
+| [Business Functionality in Business Central](/dynamics365/business-central/across-business-functionality) | Landing page for the core functionality in [!INCLUDE [prod_short](includes/prod_short.md)]. |
+| [Business Central on Microsoft Learn](/learn/browse/?WT.mc_id=dyn365bc_landingpage-docs&products=dynamics-business-central&resource_type=learning%20path&roles=functional-consultant) | Provides links to role-specific training. |
+| [Enroll in the Cloud Solution Provider program](/partner-center/enrolling-in-the-csp-program) | Describes the different models for selling in the Cloud Solution Provider (CSP) program so you can determine which works best with your business. |
 
 [!INCLUDE [csp-get-started](developer/includes/csp-get-started.md)]
 

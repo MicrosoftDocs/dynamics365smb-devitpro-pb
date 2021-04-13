@@ -95,8 +95,8 @@ codeunit 50101 MySubscribers
     [EventSubscriber(ObjectType::Page, Page::"Customer Card", 'OnBeforeValidateEvent', 'Address', true, true)]
     local procedure CheckAddressLine(var Rec : Record Customer)
     begin
-        if (STRPOS('Rec.Address', '+') > 0) then begin
-            MESSAGE('Can''t use a plus sign (+) in the address [' + 'Address' + ']');
+        if (STRPOS(Rec.Address, '+') > 0) then begin
+            MESSAGE('Can''t use a plus sign (+) in the address [%1]', Rec.Address);
         end;
     end;
 }
