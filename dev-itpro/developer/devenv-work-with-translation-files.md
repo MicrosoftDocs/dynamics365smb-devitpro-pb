@@ -125,6 +125,33 @@ To translate other extensions, for example, when adding translations to the Base
 > For apps where translations are meant to translate the current app, the generated xliff file while have the correct value of the app name. 
 
 
+### Use the `<trans-unit id>` of the label where it was defined
+
+In order to translate other apps, you must use the `<trans-unit id>` of the original property, not the ones where the property might have been modified by an extension object.
+
+An example is that if the following page:
+
+```al
+page 50000 MyPage {
+  Caption = 'Base Page'
+}
+```
+
+Has the following `<trans-unit id>` for the page `Page 2931038265 - Property 2879900210`.
+
+And the following page extension:
+
+```al
+pageextension 50000 MyPageExtension extends MyPage
+{
+    Caption = 'Extension Page';
+}
+
+```
+
+Has the following `<trans-unit id>` for the page extension `PageExtension 1716690578 - Property 2879900210`, then if you want to change the caption on the page, you must use the ID `Page 2931038265 - Property 2879900210`.
+
+
 <!-- removing bug 394765
 ## Translation and Localization apps
 
