@@ -3,7 +3,7 @@ author: jswymer
 title: "Upgrading Extensions"
 description: "Describes how to add code to upgrade data in a new extension version."
 ms.custom: na
-ms.date: 01/22/2021
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,7 +22,7 @@ This article provides information about how to make a newer version of extension
 
 When you develop a new extension version, you must consider the data from the previous version. You have to determine the modifications that must be made to the data to make it compatible with the current version. For example, maybe the new version adds a new field that needs default values set for existing records. Or, the new version adds new tables that must be linked to existing records. To address this type of data handling, you must write upgrade code for the extension version. If there are no data changes between the extension versions, you don't need to write upgrade code. All data that isn't modified by upgrade code will automatically be available when the process completes.
 
-You write upgrade logic in an upgrade codeunit, which is a codeunit whose [SubType property](properties/devenv-subtype-property-codeunit.md) is set to **Upgrade**. An upgrade codeunit supports several system triggers on which you can add data upgrade code. These triggers are invoked when you run the data upgrade process on the new extension.
+You write upgrade logic in an upgrade codeunit, which is a codeunit whose [SubType property](/dynamics365/business-central/dev-itpro/developer/devenv-subtype-codeunit-property) is set to **Upgrade**. An upgrade codeunit supports several system triggers on which you can add data upgrade code. These triggers are invoked when you run the data upgrade process on the new extension.
 
 The upgrade codeunit becomes an integral part of the extension and may be modified as needed for later versions. You can have more than one upgrade codeunit. There's a set order to the sequence of the upgrade triggers, but  the execution order of the different codeunits isn't guaranteed. If you do use multiple upgrade units, make sure that they can run independently of each other.
 
@@ -328,7 +328,7 @@ end;
 
 ## Running the upgrade for the new extension version
 
-To upgrade to the new extension version, you use the [Sync-NavApp](https://go.microsoft.com/fwlink/?linkid=846311) and [Start-NAVAppDataUpgrade](https://go.microsoft.com/fwlink/?linkid=849315) cmdlets of the [!INCLUDE[adminshell](includes/adminshell.md)]. These cmdlets synchronize table schema changes in the extension with the SQL database and run the data upgrade code.
+To upgrade to the new extension version, you use the [Sync-NavApp](/powershell/module/Microsoft.Dynamics.Nav.Apps.Management/Sync-NAVApp) and [Start-NAVAppDataUpgrade](/powershell/module/Microsoft.Dynamics.Nav.Apps.Management/Start-NAVAppDataUpgrade) cmdlets of the [!INCLUDE[adminshell](includes/adminshell.md)]. These cmdlets synchronize table schema changes in the extension with the SQL database and run the data upgrade code.
 
 1.  Publish the new extension version. For simplicity, this example assumes the extension isn't signed, which isn't allowed with [!INCLUDE[d365fin_md](includes/d365fin_md.md)] and isn't recommended with an on-premise production environment.
 
@@ -360,4 +360,4 @@ To upgrade to the new extension version, you use the [Sync-NavApp](https://go.mi
 [Converting Extensions V1 to Extensions V2](devenv-upgrade-v1-to-v2-overview.md)  
 [Sample Extension](devenv-extension-example.md)  
 [Analyzing Extension Upgrade Telemetry](../administration/telemetry-extension-update-trace.md)  
-[Analyzing Extension Lifecycle Telemetry](../administration/telemetry-extension-lifecycle-trace.md)  
+[Analyzing Extension Lifecycle Telemetry](../administration/telemetry-extension-lifecycle-trace.md)

@@ -3,7 +3,7 @@ title: "Marketing Validation Checklist"
 description: "The marketing checklist for validation of Business Central apps"
 author: a-emniel
 ms.custom: na
-ms.date: 11/24/2020
+ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.topic: reference
 ms.service: "dynamics365-business-central"

@@ -7,11 +7,11 @@ metadata:
   ms.topic: article
   ms.service: "dynamics365-business-central"
   ms.author: edupont
-  ms.date: 01/26/2021
+  ms.date: 04/01/2021
 
 title: FAQ for developer and admin experiences for Dynamics 365 Business Central
 summary: |
-  The following sections guide you to frequently asked questions about [!INCLUDE[prod_short](includes/prod_short.md)].
+  This article guides you to frequently asked questions about [!INCLUDE[prod_short](includes/prod_short.md)]. We also have more focused FAQs as show in the following list: 
   
   - Visit [FAQ about Developing in AL](developer/devenv-dev-faq.md) for questions and answers related to developing extensions in AL.
   - Visit [FAQ on Managing and submitting your business central offer](developer/app-faq-offer.md) in Partner Center.
@@ -19,18 +19,18 @@ summary: |
   - Visit [FAQ about Updating your App](developer/app-faq-update.md) to get answers to questions on tenants, versioning, and compatibility.
   - Visit [FAQ about Testing your App](developer/app-faq-test.md) to learn about testing before submitting an app.
   - Visit [FAQ about Update Lifecycle for AppSource Apps](developer/devenv-update-app-life-cycle-faq.md) for questions and answers related to the validation process.
-  - Visit [FAQ about Connecting to the Intelligent Cloud from On-Premises Solutions](administration/faq-intelligent-cloud.md) to learn about what is supported.
+  - Visit [FAQ about Migrating to the Cloud from On-Premises Solutions](administration/faq-intelligent-cloud.md) to learn about what is supported.
   - Visit [FAQ about the Windows Client](faq-win-cli.md) to learn about support for the [!INCLUDE[prod_short](includes/prod_short.md)] Windows client.
   - Visit [FAQ about Signing Up and Using](/dynamics365/business-central/across-faq) for questions about signing up for and using [!INCLUDE[prod_short](includes/prod_short.md)] in the business functionality content for.
   
-  Working with processes and UI in [!INCLUDE[prod_short](includes/prod_short.md)] here you can find answers to some of the most frequently asked questions:
+  If you work with processes in [!INCLUDE[prod_short](includes/prod_short.md)], the following list provides answers to some of the most frequently asked questions:
   
   - Visit [Copy Paste FAQ](/dynamics365/business-central/ui-copy-paste) for tips on copying and pasting.
   - Visit [Tell Me FAQ](/dynamics365/business-central/ui-search-faq) for guidance on using search.
   - Visit [List Views FAQ](/dynamics365/business-central/ui-views-faq) to find answers on list views.
   - Visit [Searching and Filtering FAQ](/dynamics365/business-central/ui-search-filter-faq) to learn about setting filters on data.
   
-  Below find some of our top-most frequently asked questions for developer and admin experiences.
+  The following sections provides some of our top-most frequently asked questions for developer and admin experiences.
   
 
 sections:
@@ -44,7 +44,7 @@ sections:
         answer: |
           [!INCLUDE [prod_short](developer/includes/prod_short.md)] online is governed by [Microsoft's Modern Lifecycle Policy](https://support.microsoft.com/help/30881). This means continuous service updates and a major update every 6 months. For more information, see [Dynamics 365 Business Central Service Compliance](/dynamics365/business-central/compliance/compliance-service-compliance) and [Dynamics 365 release schedule and early access](/dynamics365/get-started/release-schedule).  
           
-          You can get an overview of new and upcoming changes in the [Dynamics 365 release plans](https://aka.ms/businessappsreleasenotes).  
+          You can get an overview of new and upcoming changes in the [Dynamics 365 release plans](/dynamics365/release-plans/).  
           
       - question: What are the service level agreements?
         answer: |
@@ -68,7 +68,7 @@ sections:
           
       - question: How do I help my customer configure their environment?
         answer: |
-          You can find guidance for setting up [!INCLUDE [prod_short](developer/includes/prod_short.md)] in the application content. For more information, see [Setting Up Business Central](/dynamics365/business-central/setup).  
+          You can find guidance for setting up [!INCLUDE [prod_short](developer/includes/prod_short.md)] in the application content. For more information, see [Setting Up Business Central](/dynamics365/business-central/setup). Also, starting with 2021 release wave 1, you can customize the onboarding experience. For more information, see [Onboarding experiences in Business Central](administration/onboarding-experiences.md).   
           
           You can also find relevant content on the [Microsoft Learn site](/learn/dynamics365/business-central?WT.mc_id=dyn365bc_landingpage-docs).
           
@@ -130,4 +130,3 @@ sections:
           [FAQ for Dynamics 365 Update Policies](/dynamics365/get-started/faq-update-policy)  
           [Dynamics 365 Resources](https://dynamics.microsoft.com/resources/)  
           [Welcome to [!INCLUDE[prod_long](includes/prod_long.md)]](/dynamics365/business-central/index)  
-          

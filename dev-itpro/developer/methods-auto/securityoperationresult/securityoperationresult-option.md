@@ -1,8 +1,8 @@
 ---
-title: "String Data Type"
+title: "SecurityOperationResult System Option"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,13 +13,18 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# String Data Type
-> **Version**: _Available from runtime version 1.0._
+# SecurityOperationResult Option Type
+> **Version**: _Available or changed with runtime version 7.0._
 
-Denotes a sequence of characters. It can be represented by a string literal, a text value or a code value.
+Represents security audit operation result.
 
-
-
+## Members
+|  Member  |  Description  |
+|----------------|---------------|
+|Success|Identifies operation success.|
+|ClientError|Identifies client error in the operation.|
+|Failure|Identifies operation failure.|
+|Timeout|Identifies operation timeout.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

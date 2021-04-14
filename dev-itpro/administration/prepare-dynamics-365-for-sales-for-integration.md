@@ -1,7 +1,7 @@
 ---
 title: "Preparing for Dynamics 365 for Sales for Integration"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -34,7 +34,7 @@ This article describes how to set up and configure [!INCLUDE[crm_md](../develope
 
 #### Create the connection user  
 
--   For more information about how to create users in [!INCLUDE[crm_md](../developer/includes/crm_md.md)], see [https://go.microsoft.com/fwlink/?LinkID=616518](https://go.microsoft.com/fwlink/?LinkID=616518).  
+-   For more information about how to create users in [!INCLUDE[crm_md](../developer/includes/crm_md.md)], see [https://go.microsoft.com/fwlink/?LinkID=616518](/previous-versions/dynamicscrm-2016/administering-dynamics-365/dn531066(v=crm.8)).  
 
 ##  <a name="InstallNavSolution"></a> Install the Business Central Integration Solution
   
@@ -51,11 +51,11 @@ This article describes how to set up and configure [!INCLUDE[crm_md](../develope
 
      This step adds the **Business Central Connection** entity and **Business Central Account Statistics** entity in the system and additional items such as Business Central integration security roles.  
 
-     For more information about how to manage solutions in [!INCLUDE[crm_md](../developer/includes/crm_md.md)], [https://go.microsoft.com/fwlink/?LinkID=616519](https://go.microsoft.com/fwlink/?LinkID=616519).  
+     For more information about how to manage solutions in [!INCLUDE[crm_md](../developer/includes/crm_md.md)], [https://go.microsoft.com/fwlink/?LinkID=616519](/previous-versions/dynamicscrm-2016/administering-dynamics-365/dn531198(v=crm.8)).  
 
 3.  (Optional) Set up the **Business Central Connection** entity to display in the **Settings** area of [!INCLUDE[crm_md](../developer/includes/crm_md.md)].  
 
-     This setup enables [!INCLUDE[crm_md](../developer/includes/crm_md.md)] users who are assigned the **Business Central Admin** role to modify the entity in [!INCLUDE[crm_md](../developer/includes/crm_md.md)]. For more information about how to modify entities in [!INCLUDE[crm_md](../developer/includes/crm_md.md)], see [https://go.microsoft.com/fwlink/?LinkID=616521](https://go.microsoft.com/fwlink/?LinkID=616521).  
+     This setup enables [!INCLUDE[crm_md](../developer/includes/crm_md.md)] users who are assigned the **Business Central Admin** role to modify the entity in [!INCLUDE[crm_md](../developer/includes/crm_md.md)]. For more information about how to modify entities in [!INCLUDE[crm_md](../developer/includes/crm_md.md)], see [https://go.microsoft.com/fwlink/?LinkID=616521](/previous-versions/dynamicscrm-2016/admins-customizers-dynamics-365/mt826673(v=crm.8)).  
 
 4.  Assign the **Business Central Integration Administrator** role to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] connection user.  
 
@@ -85,5 +85,4 @@ For more information, see [System Requirements for Business Central](../deployme
 -->
 
 ## See Also  
-[Connecting On-Premises Versions](/dynamics365/business-central/admin-how-to-set-up-a-dynamics-crm-connection#connecting-on-premises-versions)  
-
+[Connecting On-Premises Versions](/dynamics365/business-central/admin-how-to-set-up-a-dynamics-crm-connection#connecting-on-premises-versions)

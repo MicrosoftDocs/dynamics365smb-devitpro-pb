@@ -2,7 +2,7 @@
 title: "Event example"
 description: This article shows a simple example of how to use events in Business Central.
 ms.custom: na
-ms.date: 01/22/2021
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -43,7 +43,7 @@ pageextension 50100 MyCustomerExt extends "Customer Card"
             var
                 Publisher: Codeunit MyPublishers;
             begin
-                Publisher.OnAddressLineChanged(Address);
+                Publisher.OnAddressLineChanged(Rec.Address);
             end;
         }
     }

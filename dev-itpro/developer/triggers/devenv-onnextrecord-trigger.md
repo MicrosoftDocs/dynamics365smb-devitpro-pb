@@ -2,7 +2,7 @@
 title: "OnNextRecord Trigger"
 description: "OnNextRecord trigger in AL for Business Central."
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -48,4 +48,4 @@ If an error occurs in the trigger code, the page is closed.
 
 [Triggers](devenv-triggers.md)  
 [Page and Action Triggers](devenv-page-and-action-triggers.md)  
-[Page Properties](../properties/devenv-page-properties.md)  
+[Page Properties](../properties/devenv-properties.md)

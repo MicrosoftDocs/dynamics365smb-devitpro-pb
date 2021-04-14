@@ -3,7 +3,7 @@ author: edupont04
 
 ms.service: dynamics365-business-central
 ms.topic: include
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.author: edupont
 ---
 A number of fields that are related to pictures are no longer in use, because the pictures are now stored in Image fields that are of type *Media*. The fields are marked as ObsoleteState:Pending.  

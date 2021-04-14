@@ -3,7 +3,7 @@ title: "Country/region availability and supported languages"
 description: "Overview of availability and supported languages."
 author: sorenfriisalexandersen
 ms.custom: na
-ms.date: 01/15/2021
+ms.date: 04/01/2021
 ms.reviewer: edupont
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
@@ -15,7 +15,7 @@ ms.author: soalex
 This page lists the countries/regions where [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available and which languages are supported.
 
 > [!NOTE]  
-> In countries where Microsoft has not delivered a localization, partners can build [localizations](/dynamics365/business-central/dev-itpro/developer/readiness/readiness-develop-localization) using translation and localization apps that are published on AppSource. These apps are built on top of the international (W1) version of [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. 
+> In countries where Microsoft has not delivered a localization, partners can build [localizations](../developer/readiness/readiness-develop-localization.md) using translation and localization apps that are published on AppSource. These apps are built on top of the international (W1) version of [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. 
 
 The following table provides the list of all countries/regions where [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available or in planning for future availability, and states whether the localization is provided by Microsoft or partner(s).
 
@@ -37,13 +37,14 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Finland|Microsoft|Available|FI|
 |France|Microsoft|Available|FR|
 |Germany|Microsoft|Available|DE|
+|Greece|Partner|Available|GR|
 |Greenland (Denmark)|Microsoft|Available|DK|
 |Hong Kong SAR|Partner|Available|HK|
 |Hungary|Partner|Available|HU|
 |Iceland|Microsoft|Available|IS|
 |Ireland|Partner|Available|IE|
 |Indonesia|Partner|Available|ID|
-|India|Microsoft|Preview|IN|
+|India|Microsoft|Available|IN|
 |Italy|Microsoft|Available|IT|
 |Japan|Partner|Available|JP|
 |Latvia|Partner|Available|LV|
@@ -57,6 +58,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Philippines|Partner|Available|PH|
 |Poland|Partner|Available|PL|
 |Portugal|Partner|Available|PT|
+|Romania|Partner|Available|RO|
 |Russia **(on-premises only)**|Microsoft|Available|(Not listed)|
 |Serbia|Partner|Available|RS|
 |Singapore|Partner|Available|SG|
@@ -68,6 +70,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Switzerland|Microsoft|Available|CH|
 |Taiwan|Partner|Available|TW|
 |Thailand|Partner|Available|TH|
+|Turkey|Partner|Available|TR|
 |United Arab Emirates|Partner|Available|AE|
 |United Kingdom|Microsoft|Available|GB|
 |United States|Microsoft|Available|US|
@@ -109,6 +112,7 @@ This table gives an overview of supported languages and how application language
 |French (Canada)|fr-CA|Microsoft, Available on AppSource|
 |French (Switzerland)|fr-CH|Microsoft, Available on AppSource|
 |French (France)|fr-FR|Microsoft, Available on AppSource|
+|Greek (Greece)|gr-GR|Partner, Available on AppSource|
 |Croatian (Croatia)|hr-HR|Partner, Available on AppSource|
 |Hungarian (Hungary)|hu-HU|Partner, Available on AppSource|
 |Icelandic (Iceland)|is-IS|Microsoft, Available on AppSource|
@@ -117,12 +121,12 @@ This table gives an overview of supported languages and how application language
 |Japanese (Japan)|jp-JP|Partner, Available on AppSource|
 |Korean (Korea)|ko-KR|Partner, Available on AppSource|
 |Latvian (Latvia)|lv-LV|Partner, Available on AppSource|
-|Lithuanian (Lithuania)|lt-LT|Partner, Available on AppSource (pending)|
+|Lithuanian (Lithuania)|lt-LT|Partner, Available on AppSource|
 |Norwegian (Norway)|no-NO|Microsoft, Available on AppSource|
 |Dutch (Belgium)|nl-BE|Microsoft, Available on AppSource|
 |Dutch (Netherlands)|nl-NL|Microsoft, Available on AppSource|
 |Polish (Poland)|pl-PL|Partner, Available on AppSource|
-|Portuguese (Brazil)|pt-BR|Partner, Available on AppSource (pending)|
+|Portuguese (Brazil)|pt-BR|Partner, Available on AppSource|
 |Portuguese (Portugal)|pt-PT|Partner, Available on AppSource|
 |Romanian|ro-RO|Partner, Available on AppSource (pending)|
 |Russian (Russia)|ru-RU|Microsoft, Available on AppSource|
@@ -130,7 +134,7 @@ This table gives an overview of supported languages and how application language
 |Slovenian (Slovenia)|sl-SI|Partner, Available on AppSource|
 |Serbian (Serbia)|sr-latn-RS|Partner, Available on AppSource|
 |Swedish (Sweden)|sv-SE|Microsoft, Available on on AppSource|
-|Turkish (Turkey)|tr-TR|Partner, Available on AppSource (pending)|
+|Turkish (Turkey)|tr-TR|Partner, Available on AppSource|
 |Traditional Chinese (Hong Kong SAR)|zh-HK|Partner, Available on AppSource|
 |Traditional Chinese (Taiwan)|zh-TW|Partner, Available on AppSource|
 |Vietnamese (Vietnam)|vi-VN|Partner, Available on AppSource|
@@ -141,4 +145,4 @@ This table gives an overview of supported languages and how application language
 ## See Also
 
 [Rules and Guidelines for AL Code](apptest-overview.md)  
-[Checklist for Submitting Your App](../developer/devenv-checklist-submission.md)  
+[Checklist for Submitting Your App](../developer/devenv-checklist-submission.md)

@@ -2,7 +2,7 @@
 title: "Pages that have been published must not be renamed."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AppSourceCop Rule AS0030
-Pages that have been published must not be renamed.  
+Pages that have been published must not be renamed.
 
 ## Description
 Pages that have been published must not be renamed because it will break dependent extensions.
@@ -27,6 +27,8 @@ It is not allowed to rename pages which have been published. This will break dep
 - are referencing this page from code by name,
 - are extending the page by name using a page extension,
 - are customizing the page by name using page customizations.
+
+It is allowed to rename page extensions, because page extensions cannot be referenced by name from a dependent extension.
 
 ## How to fix this diagnostic
 

@@ -2,7 +2,7 @@
 title: "Single-Tenant Full Upgrade Quick Reference"
 description: Get an overview of the steps required to upgrade from one version of Business Central on-premises to the next.
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,7 +30,7 @@ This article provides an overview of the full upgrade process for Business Centr
 
 |Step|More info| Done |
 |----|-----------|--|
-|Backup the database.|[See...](https://go.microsoft.com/fwlink/?LinkID=296465)||
+|Backup the database.|[See...](/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server)||
 |Uninstall all extensions.|[See...](../developer/devenv-unpublish-and-uninstall-extension-v2.md)|
 |Upload a [!INCLUDE[prod_short_md](../developer/includes/prod_short.md)] partner license.|[See...](../cside/cside-upload-license-file.md)||
 |Delete all objects except tables.<br /> **Important** Do not synchronize schema at this point.|[See...](upgrading-the-data.md#DeleteObjects)||
