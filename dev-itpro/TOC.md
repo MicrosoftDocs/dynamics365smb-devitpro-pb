@@ -132,10 +132,10 @@
 ### [Managing Capacity](administration/tenant-admin-center-capacity.md)
 ### [Managing Notifications](administration/tenant-admin-center-notifications.md)
 ### [Managing Updates](administration/tenant-admin-center-update-management.md)
-### [Rename Environments](tenant-admin-center-environments-rename.md)
-### [Restoring an Environment](tenant-admin-center-backup-restore.md)
+### [Rename Environments](administration/tenant-admin-center-environments-rename.md)
+### [Restoring an Environment](administration/tenant-admin-center-backup-restore.md)
 ### [Exporting Databases](administration/tenant-admin-center-database-export.md)
-### [Move an Environment to another Azure Active Directory organization](tenant-admin-center-environments-move.md)
+### [Move an Environment to another Azure Active Directory organization](administration/tenant-admin-center-environments-move.md)
 ### [Environment Telemetry](administration/tenant-admin-center-telemetry.md)
 ### [Administration Center API](administration/administration-center-api.md)
 ## Automation
