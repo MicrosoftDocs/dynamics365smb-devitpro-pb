@@ -44,8 +44,8 @@ The CloseAction chosen by the user; usually OK or Cancel.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)  
 [OnQueryClosePage (Request Page) Trigger](../requestpage/devenv-onqueryclosepage-requestpage-trigger.md)
 [OnQueryClosePage (Request Page Extension) Trigger](../requestpageextension/devenv-onqueryclosepage-requestpageextension-trigger.md)
 [OnQueryClosePage (Page Extension) Trigger](../pageextension/devenv-onqueryclosepage-pageextension-trigger.md)

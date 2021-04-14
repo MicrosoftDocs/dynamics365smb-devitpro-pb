@@ -38,8 +38,8 @@ end;
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)  
 [OnModifyRecord (Page) Trigger](../page/devenv-onmodifyrecord-page-trigger.md)
 [OnModifyRecord (Request Page) Trigger](../requestpage/devenv-onmodifyrecord-requestpage-trigger.md)
 [OnModifyRecord (Page Extension) Trigger](../pageextension/devenv-onmodifyrecord-pageextension-trigger.md)

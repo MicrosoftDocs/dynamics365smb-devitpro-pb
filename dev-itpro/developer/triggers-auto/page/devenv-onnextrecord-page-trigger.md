@@ -44,6 +44,6 @@ This return value contains the actual number of steps or records cycled through.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)  
 [OnNextRecord (Request Page) Trigger](../requestpage/devenv-onnextrecord-requestpage-trigger.md)

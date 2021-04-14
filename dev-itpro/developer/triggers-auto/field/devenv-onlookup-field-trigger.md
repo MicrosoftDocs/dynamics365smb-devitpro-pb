@@ -32,7 +32,7 @@ end;
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)  
 [OnLookup (Control) Trigger](../control/devenv-onlookup-control-trigger.md)
 [OnLookup (Control Extension) Trigger](../controlextension/devenv-onlookup-controlextension-trigger.md)

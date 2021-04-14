@@ -32,8 +32,8 @@ end;
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)  
 [OnClosePage (Page) Trigger](../page/devenv-onclosepage-page-trigger.md)
 [OnClosePage (Request Page) Trigger](../requestpage/devenv-onclosepage-requestpage-trigger.md)
 [OnClosePage (Page Extension) Trigger](../pageextension/devenv-onclosepage-pageextension-trigger.md)

@@ -44,8 +44,8 @@ This return value indicates whether the new record was inserted after the last r
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)  
 [OnInsertRecord (Page) Trigger](../page/devenv-oninsertrecord-page-trigger.md)
 [OnInsertRecord (Request Page) Trigger](../requestpage/devenv-oninsertrecord-requestpage-trigger.md)
 [OnInsertRecord (Request Page Extension) Trigger](../requestpageextension/devenv-oninsertrecord-requestpageextension-trigger.md)

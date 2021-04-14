@@ -33,6 +33,6 @@ end;
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)  
 [OnAfterAssignField (Xml Port Field Element) Trigger](../xmlportfieldelement/devenv-onafterassignfield-xmlportfieldelement-trigger.md)
