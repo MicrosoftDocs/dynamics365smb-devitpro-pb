@@ -1,6 +1,6 @@
 ---
-title: Managing Environments | Microsoft Docs
-description: Use the Business Central administration center to manage your tenant environments. 
+title: Managing Production and Sandbox Environments
+description: Use the Business Central administration center to manage your tenant environments, both sandbox and production environments. Create new environments, or restore point-in-time backups.
 author: jswymer
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -12,7 +12,7 @@ ms.date: 04/01/2021
 ms.author: jswymer
 ---
 
-# Managing Environments
+# Managing Production and Sandbox Environments in the Admin Center
 
 The **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provides you with an overview of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] production and sandbox environments for the tenant, and you can manage updates for each environment.
 
@@ -113,6 +113,7 @@ Use this log to see which operations were created and when. You can also access 
 [Managing Tenant Notifications](tenant-admin-center-notifications.md)  
 [Managing Apps](tenant-admin-center-manage-apps.md)  
 [Updating Environments](tenant-admin-center-update-management.md)  
+[Managing Sessions](tenant-admin-center-manage-sessions.md)
 [Rename Environments](tenant-admin-center-environments-rename.md)  
 [Restoring an Environment](tenant-admin-center-backup-restore.md)  
 [Move an Environment to another Azure Active Directory organization](tenant-admin-center-environments-move.md)  
