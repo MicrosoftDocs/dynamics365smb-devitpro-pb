@@ -17,8 +17,7 @@ author: SusanneWindfeldPedersen
 # OnRun (Codeunit) Trigger
 > **Version**: _Available or changed with runtime version 1.0._
 
-
-
+Runs when a codeunit is run.
 
 
 ## Syntax

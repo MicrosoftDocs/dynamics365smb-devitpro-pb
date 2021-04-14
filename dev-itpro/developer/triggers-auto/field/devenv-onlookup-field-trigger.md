@@ -17,8 +17,7 @@ author: SusanneWindfeldPedersen
 # OnLookup (Field) Trigger
 > **Version**: _Available or changed with runtime version 1.0._
 
-Causes the system to display a lookup page.
-
+Runs when a lookup page is displayed.
 
 
 ## Syntax

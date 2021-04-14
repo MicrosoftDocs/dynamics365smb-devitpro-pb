@@ -17,8 +17,7 @@ author: SusanneWindfeldPedersen
 # OnPageBackgroundTaskError (Page Extension) Trigger
 > **Version**: _Available or changed with runtime version 4.0._
 
-
-
+Runs when an error occurs in a page background task.
 
 
 ## Syntax
@@ -33,23 +32,23 @@ end;
 
 *TaskId*  
 &emsp;Type: [Integer](../../methods-auto/integer/integer-data-type.md)  
-  
+Specifies the ID of the background task that was run.  
 
 *ErrorCode*  
 &emsp;Type: [Text](../../methods-auto/text/text-data-type.md)  
-  
+Specifies the severity level of the error that occurred.  
 
 *ErrorText*  
 &emsp;Type: [Text](../../methods-auto/text/text-data-type.md)  
-  
+Specifies the message that explains the error that occurred.  
 
 *ErrorCallStack*  
 &emsp;Type: [Text](../../methods-auto/text/text-data-type.md)  
-  
+Specifies the call stack for the error that occurred.  
 
 *IsHandled*  
 &emsp;Type: [Boolean](../../methods-auto/boolean/boolean-data-type.md)  
-  
+**true** indicates that the error has been handled; **false** indicates that it has not been handled.  
 
 
 

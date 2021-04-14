@@ -17,8 +17,7 @@ author: SusanneWindfeldPedersen
 # OnControlAddIn (Control) Trigger
 > **Version**: _Available or changed with runtime version 1.0._
 
-
-
+Executed when a control add-in on the client sends event information to the server-side business logic.
 
 
 ## Syntax
@@ -33,11 +32,11 @@ end;
 
 *Index*  
 &emsp;Type: [Integer](../../methods-auto/integer/integer-data-type.md)  
-  
+An integer identifier that a control add-in sends with the event.  
 
 *Data*  
 &emsp;Type: [Text](../../methods-auto/text/text-data-type.md)  
-  
+A text string that a control add-in sends with an event.  
 
 
 

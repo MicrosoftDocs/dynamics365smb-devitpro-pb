@@ -17,8 +17,7 @@ author: SusanneWindfeldPedersen
 # OnClosePage (Request Page Extension) Trigger
 > **Version**: _Available or changed with runtime version 7.0._
 
-Runs as a page closes after the OnQueryClosePage trigger is run.
-
+Runs as a request page closes after the OnQueryClosePage trigger is run.
 
 
 ## Syntax

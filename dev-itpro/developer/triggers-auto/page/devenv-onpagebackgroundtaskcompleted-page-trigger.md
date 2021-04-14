@@ -17,8 +17,7 @@ author: SusanneWindfeldPedersen
 # OnPageBackgroundTaskCompleted (Page) Trigger
 > **Version**: _Available or changed with runtime version 4.0._
 
-
-
+Runs after a page background task has successfully completed.
 
 
 ## Syntax
@@ -33,11 +32,11 @@ end;
 
 *TaskId*  
 &emsp;Type: [Integer](../../methods-auto/integer/integer-data-type.md)  
-  
+Specifies the ID of the background task that was run. The ID is automatically assigned to the background task when it is created.  
 
 *Results*  
 &emsp;Type: [Dictionary[Text,Text]](../../methods-auto/dictionary/dictionary-text-text-data-type.md)  
-  
+Specifies the results of the page background task.  
 
 
 

@@ -17,8 +17,7 @@ author: SusanneWindfeldPedersen
 # OnOpenPage (Request Page Extension) Trigger
 > **Version**: _Available or changed with runtime version 7.0._
 
-Runs after a page is initialized and run.
-
+Runs after a request page is initialized and run.
 
 
 ## Syntax
