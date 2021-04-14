@@ -1,8 +1,8 @@
 ---
-title: "OnAfterAssignField Trigger"
+title: "OnAfterAssignField (Xml Port Field Attribute) Trigger"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/08/2021
+ms.date: 04/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,8 +17,9 @@ author: SusanneWindfeldPedersen
 # OnAfterAssignField (Xml Port Field Attribute) Trigger
 > **Version**: _Available or changed with runtime version 1.0._
 
-
 Runs after a field has been assigned a value and before it is validated and imported.
+
+
 
 ## Syntax
 ```

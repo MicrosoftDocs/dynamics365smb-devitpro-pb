@@ -1,8 +1,8 @@
 ---
-title: "OnDrillDown Trigger"
+title: "OnDrillDown (Control Extension) Trigger"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/08/2021
+ms.date: 04/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,8 +17,9 @@ author: SusanneWindfeldPedersen
 # OnDrillDown (Control Extension) Trigger
 > **Version**: _Available or changed with runtime version 3.0._
 
-
 Overrides the default drill-down behavior defined in the table definition for the FlowField.
+
+
 
 ## Syntax
 ```

@@ -1,8 +1,8 @@
 ---
-title: "OnDelete Trigger"
+title: "OnDelete (Table) Trigger"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/08/2021
+ms.date: 04/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,8 +17,9 @@ author: SusanneWindfeldPedersen
 # OnDelete (Table) Trigger
 > **Version**: _Available or changed with runtime version 1.0._
 
-
 Runs when a user tries to delete a record.
+
+
 
 ## Syntax
 ```

@@ -1,8 +1,8 @@
 ---
-title: "OnInit Trigger"
+title: "OnInit (Page) Trigger"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/08/2021
+ms.date: 04/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,8 +17,9 @@ author: SusanneWindfeldPedersen
 # OnInit (Page) Trigger
 > **Version**: _Available or changed with runtime version 1.0._
 
-
 Initializes the user-defined variables on the page.
+
+
 
 ## Syntax
 ```

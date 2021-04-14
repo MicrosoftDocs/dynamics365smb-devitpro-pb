@@ -1,8 +1,8 @@
 ---
-title: "OnPageBackgroundTaskError Trigger"
+title: "OnPageBackgroundTaskError (Page Extension) Trigger"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/08/2021
+ms.date: 04/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,6 +16,7 @@ author: SusanneWindfeldPedersen
 
 # OnPageBackgroundTaskError (Page Extension) Trigger
 > **Version**: _Available or changed with runtime version 4.0._
+
 
 
 

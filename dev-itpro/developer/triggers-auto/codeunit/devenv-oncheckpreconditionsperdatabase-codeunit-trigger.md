@@ -1,8 +1,8 @@
 ---
-title: "OnCheckPreconditionsPerDatabase Trigger"
+title: "OnCheckPreconditionsPerDatabase (Codeunit) Trigger"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/08/2021
+ms.date: 04/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,10 +17,11 @@ author: SusanneWindfeldPedersen
 # OnCheckPreconditionsPerDatabase (Codeunit) Trigger
 > **Version**: _Available or changed with runtime version 1.0._
 
+Runs before an extension upgrade.
+
 > [!IMPORTANT]
 > The [Subtype Property](../../properties/devenv-subtype-property.md) must be set to **Upgrade** in the Codeunit.
 
-Runs before an extension upgrade.
 
 ## Syntax
 ```

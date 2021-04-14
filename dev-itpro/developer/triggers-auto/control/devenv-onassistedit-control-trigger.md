@@ -1,8 +1,8 @@
 ---
-title: "OnAssistEdit Trigger"
+title: "OnAssistEdit (Control) Trigger"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/08/2021
+ms.date: 04/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,8 +17,9 @@ author: SusanneWindfeldPedersen
 # OnAssistEdit (Control) Trigger
 > **Version**: _Available or changed with runtime version 1.0._
 
-
 Runs in place of the AssistEdit property features that are provided in the application.
+
+
 
 ## Syntax
 ```

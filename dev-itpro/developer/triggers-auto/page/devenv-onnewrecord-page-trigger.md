@@ -1,8 +1,8 @@
 ---
-title: "OnNewRecord Trigger"
+title: "OnNewRecord (Page) Trigger"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/08/2021
+ms.date: 04/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,8 +17,9 @@ author: SusanneWindfeldPedersen
 # OnNewRecord (Page) Trigger
 > **Version**: _Available or changed with runtime version 1.0._
 
-
 Runs after a new record is initialized, but before it is inserted as a record in the table.
+
+
 
 ## Syntax
 ```

@@ -1,8 +1,8 @@
 ---
-title: "OnAfterAfterLookup Trigger"
+title: "OnAfterAfterLookup (Control Extension) Trigger"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/08/2021
+ms.date: 04/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,8 +17,9 @@ author: SusanneWindfeldPedersen
 # OnAfterAfterLookup (Control Extension) Trigger
 > **Version**: _Available or changed with runtime version 7.0._
 
-
 Runs after a lookup is activated passing the selected record as a RecordRef.
+
+
 
 ## Syntax
 ```
