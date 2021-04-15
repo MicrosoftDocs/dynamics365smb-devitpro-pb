@@ -26,4 +26,5 @@ The methods supported for IsolatedStorage are:
 
 ## See Also
 
-[DataScope Option Type](methods-auto/datascope/datascope-option.md)
+[DataScope Option Type](methods-auto/datascope/datascope-option.md)  
+[IsolatedStorage Data Type](methods-auto/isolatedstorage-data-type.md)  
