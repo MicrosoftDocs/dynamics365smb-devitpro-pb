@@ -17,9 +17,9 @@ ms.author: jswymer
 > [!IMPORTANT]
 > This feature is in preview. It might change or be removed in the future updates.
 
-Database backups are an essential part of any business continuity and disaster recovery strategy, because they protect your data from corruption or deletion. [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online service uses Azure SQL Database as the underlying database backup technology for its environments. All databases are protected by automated backups that are continuously created and maintained by the Azure SQL service. The backup retention period for Business Central databases is set to 30 days for both production and sandbox environments. For more information about this backup process, see [Automated backups - Azure SQL Database & SQL Managed Instance](/azure/azure-sql/database/automated-backups-overview).  
+As an administrator, you can restore an existing environment from a time in the past, within the 30-day retention period that applies to both production and sandbox environments.  
 
-As an administrator, you can restore an existing environment from a time in the past, within the 30-day retention period.  
+Database backups are an essential part of any business continuity and disaster recovery strategy, because they protect your data from corruption or deletion. [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online uses Azure SQL Database as the underlying database backup technology for its environments. All databases are protected by automated backups that are continuously created and maintained by the Azure SQL service. For more information, see [Databases and backups](../service-overview.md#databases-and-backups).  
 
 > [!NOTE]
 > An environment can only be restored within the same [!INCLUDE[prod_short](../developer/includes/prod_short.md)] version (minor and major).
@@ -43,7 +43,7 @@ For more information about permissions sets and user groups, see [Assign Permiss
 
     If you end up in the situation where you need to restore a deleted environment, contact Microsoft Support for help. In such cases, Microsoft doesn't guarantee a restore operation will succeed or all data and extensions will be available in the restored database. So before you decide to delete an environment, it's important to ensure that the environment is no longer needed.
 - An environment can only be restored within the same Azure region and country ([!INCLUDE[prod_short](../developer/includes/prod_short.md)] localization) as the original environment.
-- A production environment can be restored to either a **Production** or **Sandbox** type environment. A sandbox environment can only be restored a **Sandbox** type environment.
+- A production environment can be restored to an environment of type **Production** or **Sandbox**. A sandbox environment can only be restored to a **Sandbox** environment.
 - When restoring a sandbox environment, all development extensions (that is, extensions published directly from Visual Studio Code) won't be available in the restored environment&mdash;even if they were present at the point-in-time you're restoring to). Additionally, any per-tenant extensions that depend on such development extensions will also not be available.
 - Per-tenant extensions you may have uploaded that target the **next** version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] won't be available in the restored environment&mdash;even if they were uploaded at the point-in-time you're restoring to. Per-tenant extensions that were already installed will be available in the restored environment.
 - Every AppSource and [!INCLUDE[prod_short](../developer/includes/prod_short.md)] app in the restored environment will have the latest available hotfix installed automatically&mdash;even if the hotfix was introduced after the point-in-time you're restoring to.
@@ -113,3 +113,4 @@ When you're satisfied with the data in the restored database, enable the users, 
 [Move an Environment to another Azure Active Directory organization](tenant-admin-center-environments-move.md)  
 [The Business Central Administration Center](tenant-admin-center.md)  
 [Introduction to automation APIs](itpro-introduction-to-automation-apis.md)  
+[Service Overview for Business Central Online](../service-overview.md)  
