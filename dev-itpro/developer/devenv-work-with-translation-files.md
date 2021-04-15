@@ -27,7 +27,7 @@ In the app.json file of your extension, add the following line:
 ```
 
 > [!NOTE]  
-> If the **Incremental Build** setting is enabled in the **AL Language extension configuration** then all translations will be ignored, even though the `"features": [ "TranslationFile" ]` setting is specified in the `app.json` file.
+> If the **Incremental Build** setting is enabled in the **AL Language extension configuration** then all translations will be ignored, even though the `"features": [ "TranslationFile" ]` setting is specified in the `app.json` file. For more information, see [AL Language Extension Configuration](devenv-al-extension-configuration.md).
 
 Now, when you run the build command (**Ctrl+Shift+B**) in Visual Studio Code, a `\Translations` folder will be generated and populated with the .xlf file that contains all the labels, label properties, and report labels that you are using in the extension. The generated .xlf file can now be translated.
 
