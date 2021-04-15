@@ -60,7 +60,7 @@ permissionset 50130 MyPermissionSet
 The `RIMD` access allows access to **R**ead, **I**nsert, **M**odify, and **D**elete entries in the table. This can be modified by adding and removing letters corresponding to the first letter of the permission that you want to (dis)allow. This permission set can then be assigned to users/roles.
 
 ## How to fix this diagnostic?
-You can convert XML permission sets to AL objects. For more information, see [upgrade page](../../upgrade/upgrade-permissions.md).
+You can convert XML permission sets to AL objects. For more information, see [Upgrading Permissions Sets and Permissions](../../upgrade/upgrade-permissions.md).
 
 ## See Also
 [PermissionSet Object](../devenv-permissionset-object.md)
