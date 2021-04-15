@@ -36,7 +36,7 @@ Please note that new customers will automatically get the latest builds of Busin
 ## Good to know
 
 **Basic Authentication**  
-Basic Authentication (Web Service Access Key) removal for Business Central online has been postponed until [April 2022](../upgrade/deprecated-features-w1.md#access-keys). We see that some integrations needs more time to move from Web Service Access Key usage to OAuth. PowerShell samples on how to connect to Business Central is published on [GitHub](https://github.com/microsoft/BCTech/tree/master/samples/PSOAuthBCAccess). 
+Basic Authentication (Web Service Access Key) removal for Business Central online has been postponed until [April 2022](../upgrade/deprecated-features-w1.md#accesskeys). We see that some integrations needs more time to move from Web Service Access Key usage to OAuth. PowerShell samples on how to connect to Business Central is published on [GitHub](https://github.com/microsoft/BCTech/tree/master/samples/PSOAuthBCAccess). 
 
 **Snapshot debugging is now enabled in production environments**  
 From version 17.2 and forward it is now possible to use snapshot debugging to investigate production environments. For more information, see the [help page](../developer/devenv-snapshot-debugging.md) or view the [Virtual Event for 2020 Wave 2 release recording](https://events1.social27.com/MSDyn365BCLaunchEvent/agenda/player/61355) on the What's New in Visual Studio and AL, covering snapshot debugging in details.
