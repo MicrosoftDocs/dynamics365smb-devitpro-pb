@@ -1,8 +1,8 @@
 ---
 title: Upgrade an unmodified application
-description: The article explains how to upgrade the application code and how to merge code from different versions of the application.
+description: The article explains how to upgrade an application that has no custom code to Business Central 2019 release wave 2.
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 04/15/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -101,7 +101,7 @@ The process for upgrading the similar for a single-tenant and multitenant deploy
     Unpublish-NAVApp -ServerInstance <server instance name> -Name <extension name> -Version <extension version>
     ``` 
 
-    Together with the [Get-NAVAppInfo cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/get-navappinfo?view=businesscentral-ps), you can unpublish all extensions by using a single command:
+    Together with the [Get-NAVAppInfo cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/get-navappinfo), you can unpublish all extensions by using a single command:
 
     ```powershell
     Get-NAVAppInfo -ServerInstance <BC14 server instance> | % { Unpublish-NAVApp -ServerInstance <BC14 server instance> -Name $_.Name -Version $_.Version }
@@ -388,13 +388,13 @@ If you have a multitenant deployment, do these steps for each tenant.
     ```
    Replace `<extension version>` with the exact version of the published Base Application.
 
-4. Synchronize the tenant with the Application extension.
+5. Synchronize the tenant with the Application extension.
 
     ```powershell
     Sync-NAVApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name "Application"
     ```
 
-5. Synchronize the tenant with Microsoft and 3rd-party extensions.
+6. Synchronize the tenant with Microsoft and 3rd-party extensions.
 
     For each extension, run the Sync-NAVApp cmdlet:
 
@@ -443,8 +443,6 @@ Complete this task to install third-party extensions for which a new version was
 ```powershell
 Install-NAVApp -ServerInstance <server instance name> -Name <extension name> -Version <extension version>
 ```
-
-At this point, the upgrade is complete, and you can open the client.
 
 ## Post-upgrade tasks
 
