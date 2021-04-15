@@ -30,7 +30,7 @@ It is not allowed to rename pages which have been published. This will break dep
 
 It is allowed to rename page extensions, because page extensions cannot be referenced by name from a dependent extension.
 
-## How to fix this diagnostic
+## How to fix this diagnostic?
 
 Revert the change made on the page in order to keep the name defined previously. 
 

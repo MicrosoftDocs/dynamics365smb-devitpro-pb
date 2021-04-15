@@ -29,7 +29,7 @@ For more information about the benefits of using the `application` property, see
 
 For more information about the properties in the `app.json`, see [JSON Files](../devenv-json-files.md).
 
-## How to fix this diagnostic
+## How to fix this diagnostic?
 
 In order to fix this diagnostic, you have to replace the dependencies specifed on the 'Base Application' and 'System Application'  in the `dependencies` property by the `application` property in the `app.json` of the extension.
 
