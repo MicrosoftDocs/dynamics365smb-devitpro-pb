@@ -22,6 +22,8 @@ Snapshot debugging introduces the concept of *snappoints*. A snappoint is a brea
 - Snappoints  
 - AL exceptions
 
+With [!INCLUDE[prod_short](includes/prod_short.md)] version 18.1, built-in codeunit trigger calls will be snapshot debugged if there is placed a snappoint in an AL file on the stack trace that leads to the built-in trigger.
+
 > [!IMPORTANT]  
 > To enable snapshot debugging it is very important that the symbols on the tenant match the symbols on the server. This is not automatically detected, and must be manually checked. In this release, you can ensure this by copying the specific sandbox and download symbols from that copy. Furthermore, any code that snappoints are set in, must have been deployed, otherwise debugging will not work. For more information, see the section [Downloading symbols on the snapshot debugger endpoint](devenv-snapshot-debugging.md#downloading-symbols-on-the-snapshot-debugger-endpoint).
 
@@ -58,7 +60,7 @@ To record the AL execution, the server will now wait for a connection to happen 
 - If only a `userId` is specified for a given tenant then the next session that is specified in the `breakOnNext` configuration parameter is snapshot debugged. 
 - If no `userId` is specified then the next session on a given tenant that validates the `breakOnNext` parameter will be snapshot debugged. 
 
-Once a snapshot debugging session is initialized the snapshot debugging session counter on the status-bar will be updated and look like this:
+Once a snapshot debugging session is initialized the snapshot debugging session counter on the status bar will be updated and look like this:
 
 ![Snapshot Debugger Counter](media/snapshotdebugger.png)
 
