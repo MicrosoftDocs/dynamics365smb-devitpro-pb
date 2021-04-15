@@ -63,6 +63,8 @@ Use the listed abbreviations for each type of object in the file naming:
 |Dotnet    |Dotnet|
 |Profile   |Profile|
 |Interface |Interface|
+|Permission Set|PermissionSet|
+|Permission Set Extension|PermissionSetExt|
 
 ### Examples of object naming
 
