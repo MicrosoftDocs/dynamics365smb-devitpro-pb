@@ -32,6 +32,8 @@ PerTenantExtensionCop is an analyzer that enforces rules that must be respected 
 |[PTE0010](pertenantextensioncop-pte0010-extensionnamelengthmustnotexceedlimit.md)|The extension name length must not exceed the specified limit.|PackageValidation|Error|
 |[PTE0011](pertenantextensioncop-pte0011-extensionpublisherlengthmustnotexceedlimit.md)|The extension publisher length must not exceed the specified limit.|PackageValidation|Error|
 |[PTE0012](pertenantextensioncop-pte0012-internalsvisibletonosecurityfeature.md)|InternalsVisibleTo should not be used as a security feature.|Extensibility|Warning|
+|[PTE0013](pertenantextensioncop-pte0013-entitlementobjectinptenotallowed.md)|Entitlements cannot be defined in an extension.|Configuration|Error|
+|[PTE0014](pertenantextensioncop-pte0014-permissionsetsshouldnotbeinxml.md)|Permission Sets should not be defined in XML files.|Configuration|Warning|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
