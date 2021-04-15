@@ -27,7 +27,10 @@ Identifies the scope of stored data in the isolated storage.
 |CompanyAndUser|Indicates that the record is available for a user and specific company within the app context.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+
+
+## See Also
+
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [Isolated Storage](../../devenv-isolated-storage.md)
