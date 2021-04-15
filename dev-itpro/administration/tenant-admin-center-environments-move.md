@@ -14,7 +14,7 @@ ms.author: jswymer
 
 # Move an Environment to another Azure Active Directory organization
 
-In some cases, the Azure AD organization (also known as the Azure AD tenant) of a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] customer changes after they acquire a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment. This situation can occur for various reasons, for example:
+In some cases, the Azure Active Directory (Azure AD) organization (also known as the Azure AD tenant) of a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] customer changes after they acquire a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment. This situation can occur for various reasons, such as the following:
 
 - Business entities merge.
 - An acquisition takes place.
@@ -69,6 +69,6 @@ Once the move is completed, your environments will appear in your new tenant.
 [Updating Environments](tenant-admin-center-update-management.md)  
 [Rename Environments](tenant-admin-center-environments-rename.md)  
 [Restoring an Environment](tenant-admin-center-backup-restore.md)  
-[Move an Environment to another Azure Active Directory organization](tenant-admin-center-environments-move.md)  
+[Managing Production and Sandbox Environments](tenant-admin-center-environments.md)  
 [The Business Central Administration Center](tenant-admin-center.md)  
 [Introduction to automation APIs](itpro-introduction-to-automation-apis.md)  
