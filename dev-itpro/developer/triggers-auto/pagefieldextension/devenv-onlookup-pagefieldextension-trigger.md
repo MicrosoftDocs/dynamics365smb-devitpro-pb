@@ -1,5 +1,6 @@
 ---
 title: "OnLookup (Page Field Extension) Trigger"
+ms.description: "Runs in place of the normal lookup features for the current page."
 ms.author: solsen
 ms.custom: na
 ms.date: 04/16/2021

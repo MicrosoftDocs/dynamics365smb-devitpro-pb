@@ -1,5 +1,6 @@
 ---
 title: "OnDeleteRecordEvent (Page) Event Trigger"
+ms.description: "Executed after the OnDeleteRecord trigger, which is called before a record is deleted from a table."
 ms.author: solsen
 ms.custom: na
 ms.date: 04/16/2021

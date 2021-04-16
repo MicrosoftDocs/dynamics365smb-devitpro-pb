@@ -1,5 +1,6 @@
 ---
 title: "OnAfterGetCurrRecord (Page) Trigger"
+ms.description: "Runs after the current record is retrieved from the table."
 ms.author: solsen
 ms.custom: na
 ms.date: 04/16/2021

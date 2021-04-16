@@ -1,5 +1,6 @@
 ---
 title: "OnNextRecord (Page) Trigger"
+ms.description: "Determines the next record to be displayed."
 ms.author: solsen
 ms.custom: na
 ms.date: 04/16/2021

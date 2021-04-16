@@ -1,5 +1,6 @@
 ---
 title: "OnPreDataItem (Report Data Item) Trigger"
+ms.description: "Runs before a data item is processed."
 ms.author: solsen
 ms.custom: na
 ms.date: 04/16/2021

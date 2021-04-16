@@ -1,5 +1,6 @@
 ---
 title: "OnBeforeValidate (Page Field Extension) Trigger"
+ms.description: "Runs before the user input is validated."
 ms.author: solsen
 ms.custom: na
 ms.date: 04/16/2021

@@ -1,5 +1,6 @@
 ---
 title: "OnPostDataItem (Report Data Item) Trigger"
+ms.description: "Runs after a data item is processed."
 ms.author: solsen
 ms.custom: na
 ms.date: 04/16/2021
@@ -34,7 +35,7 @@ end;
 
 ## Remarks
 
-This trigger runs after the last record in the data item is processed but before the [OnPostReport Trigger](devenv-onpostreport-report-trigger.md) or the [OnPostXMLport Trigger](devenv-onpostxmlport-report-trigger.md) is executed, if it is the last data item of the report or XMLport.  
+This trigger runs after the last record in the data item is processed but before the [OnPostReport Trigger](../report/devenv-onpostreport-report-trigger.md) or the [OnPostXMLport Trigger](../xmlport/devenv-onpostxmlport-xmlport-trigger.md) is executed, if it is the last data item of the report or XMLport.  
   
 Use this trigger to perform any cleanup or post processing needed after a data item is processed. For example, if you create a non-printing report where records are updated, you can update all the records with the modification date like shown in the example below.  
   

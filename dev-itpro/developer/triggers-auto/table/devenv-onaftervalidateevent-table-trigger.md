@@ -1,5 +1,6 @@
 ---
 title: "OnAfterValidateEvent (Table) Event Trigger"
+ms.description: "Executed after a field is validated when its value has been changed."
 ms.author: solsen
 ms.custom: na
 ms.date: 04/16/2021

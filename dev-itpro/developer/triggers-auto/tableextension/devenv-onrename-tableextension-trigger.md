@@ -1,5 +1,6 @@
 ---
 title: "OnRename (Table Extension) Trigger"
+ms.description: "Runs when a user tries to rename a record."
 ms.author: solsen
 ms.custom: na
 ms.date: 04/16/2021

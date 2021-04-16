@@ -1,5 +1,6 @@
 ---
 title: "OnClosePage (Request Page Extension) Trigger"
+ms.description: "Runs as a request page closes after the OnQueryClosePage trigger is run."
 ms.author: solsen
 ms.custom: na
 ms.date: 04/16/2021

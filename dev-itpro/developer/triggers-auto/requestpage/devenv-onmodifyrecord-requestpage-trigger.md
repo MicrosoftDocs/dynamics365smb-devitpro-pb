@@ -1,5 +1,6 @@
 ---
 title: "OnModifyRecord (Request Page) Trigger"
+ms.description: "Runs before a record is modified in the table."
 ms.author: solsen
 ms.custom: na
 ms.date: 04/16/2021

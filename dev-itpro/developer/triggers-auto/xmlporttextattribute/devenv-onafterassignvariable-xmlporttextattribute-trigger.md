@@ -1,5 +1,6 @@
 ---
 title: "OnAfterAssignVariable (Xml Port Text Attribute) Trigger"
+ms.description: "Runs after the value defined in the XML document is assigned to the text variable."
 ms.author: solsen
 ms.custom: na
 ms.date: 04/16/2021

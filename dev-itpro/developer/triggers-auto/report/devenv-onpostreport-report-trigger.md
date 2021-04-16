@@ -1,5 +1,6 @@
 ---
 title: "OnPostReport (Report) Trigger"
+ms.description: "Runs after a report is run."
 ms.author: solsen
 ms.custom: na
 ms.date: 04/16/2021
@@ -49,7 +50,7 @@ Create the following global text constant variable.
 |-----------------------|-------------------|  
 |Text000|'%1 records were not processed'|  
 
-Because this trigger is run before the End Write Transaction, you can also give the user the opportunity to roll back changes to the database by leaving the report with the [Quit Method \(Report, XMLport\)](../methods-auto/report/reportinstance-quit-method.md).  
+Because this trigger is run before the End Write Transaction, you can also give the user the opportunity to roll back changes to the database by leaving the report with the [Quit Method \(Report, XMLport\)](../../methods-auto/report/reportinstance-quit-method.md).  
 
 ## See Also  
 [Getting Started with AL](../../devenv-get-started.md)  

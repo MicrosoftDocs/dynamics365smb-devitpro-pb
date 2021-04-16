@@ -1,5 +1,6 @@
 ---
 title: "OnInitXmlPort (Xml Port) Trigger"
+ms.description: "Runs when the XMLport is loaded and before any table views and filters are set."
 ms.author: solsen
 ms.custom: na
 ms.date: 04/16/2021

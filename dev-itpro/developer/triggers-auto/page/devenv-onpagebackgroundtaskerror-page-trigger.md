@@ -1,5 +1,6 @@
 ---
 title: "OnPageBackgroundTaskError (Page) Trigger"
+ms.description: "Runs when an error occurs in a page background task."
 ms.author: solsen
 ms.custom: na
 ms.date: 04/16/2021

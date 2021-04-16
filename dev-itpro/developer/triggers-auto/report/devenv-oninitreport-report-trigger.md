@@ -1,5 +1,6 @@
 ---
 title: "OnInitReport (Report) Trigger"
+ms.description: "Runs when the report is loaded."
 ms.author: solsen
 ms.custom: na
 ms.date: 04/16/2021

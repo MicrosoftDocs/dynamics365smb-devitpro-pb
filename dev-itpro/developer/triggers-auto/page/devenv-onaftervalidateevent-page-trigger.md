@@ -1,5 +1,6 @@
 ---
 title: "OnAfterValidateEvent (Page) Event Trigger"
+ms.description: "Executed after the OnValidate (Page fields) trigger, which is called when a field loses focus after its value has been changed."
 ms.author: solsen
 ms.custom: na
 ms.date: 04/16/2021

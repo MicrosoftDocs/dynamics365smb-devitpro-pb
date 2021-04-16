@@ -1,5 +1,6 @@
 ---
 title: "OnAfterRenameEvent (Table) Event Trigger"
+ms.description: "Executed after a record is renamed in a table."
 ms.author: solsen
 ms.custom: na
 ms.date: 04/16/2021

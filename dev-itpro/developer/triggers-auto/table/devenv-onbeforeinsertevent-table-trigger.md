@@ -1,5 +1,6 @@
 ---
 title: "OnBeforeInsertEvent (Table) Event Trigger"
+ms.description: "Executed before a record is inserted in a table."
 ms.author: solsen
 ms.custom: na
 ms.date: 04/16/2021

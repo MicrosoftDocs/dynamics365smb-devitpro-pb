@@ -1,5 +1,6 @@
 ---
 title: "OnInsertRecord (Page) Trigger"
+ms.description: "Runs before a new record is inserted into the table."
 ms.author: solsen
 ms.custom: na
 ms.date: 04/16/2021

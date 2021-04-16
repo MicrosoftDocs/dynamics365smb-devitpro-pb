@@ -1,5 +1,6 @@
 ---
 title: "OnAfterGetRecord (Request Page) Trigger"
+ms.description: "Runs after a record is retrieved from a table but before it is displayed to the user."
 ms.author: solsen
 ms.custom: na
 ms.date: 04/16/2021

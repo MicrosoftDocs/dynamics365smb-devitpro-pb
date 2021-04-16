@@ -1,5 +1,6 @@
 ---
 title: "OnLookup (Field) Trigger"
+ms.description: "Runs when a lookup page is displayed."
 ms.author: solsen
 ms.custom: na
 ms.date: 04/16/2021

@@ -1,5 +1,6 @@
 ---
 title: "OnNewRecord (Page Extension) Trigger"
+ms.description: "Runs after a new record is initialized, but before it is inserted as a record in the table."
 ms.author: solsen
 ms.custom: na
 ms.date: 04/16/2021

@@ -1,5 +1,6 @@
 ---
 title: "OnAction (Action) Trigger"
+ms.description: "Runs when a user selects an action on a page."
 ms.author: solsen
 ms.custom: na
 ms.date: 04/16/2021

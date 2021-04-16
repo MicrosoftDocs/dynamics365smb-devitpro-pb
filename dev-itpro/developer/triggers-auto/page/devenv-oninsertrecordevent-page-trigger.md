@@ -1,5 +1,6 @@
 ---
 title: "OnInsertRecordEvent (Page) Event Trigger"
+ms.description: "Executed after the OnInsertRecord trigger, which is called before a record is inserted in a table."
 ms.author: solsen
 ms.custom: na
 ms.date: 04/16/2021

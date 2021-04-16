@@ -1,5 +1,6 @@
 ---
 title: "OnValidate (Page Field) Trigger"
+ms.description: "Runs when a field loses focus after its value has been changed."
 ms.author: solsen
 ms.custom: na
 ms.date: 04/16/2021

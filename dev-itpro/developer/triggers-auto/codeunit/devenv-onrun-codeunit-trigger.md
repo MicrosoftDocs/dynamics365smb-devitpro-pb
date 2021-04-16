@@ -1,5 +1,6 @@
 ---
 title: "OnRun (Codeunit) Trigger"
+ms.description: "Runs when a codeunit is run."
 ms.author: solsen
 ms.custom: na
 ms.date: 04/16/2021

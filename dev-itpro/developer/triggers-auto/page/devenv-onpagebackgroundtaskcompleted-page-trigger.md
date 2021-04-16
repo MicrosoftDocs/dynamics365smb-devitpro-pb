@@ -1,5 +1,6 @@
 ---
 title: "OnPageBackgroundTaskCompleted (Page) Trigger"
+ms.description: "Runs after a page background task has successfully completed."
 ms.author: solsen
 ms.custom: na
 ms.date: 04/16/2021

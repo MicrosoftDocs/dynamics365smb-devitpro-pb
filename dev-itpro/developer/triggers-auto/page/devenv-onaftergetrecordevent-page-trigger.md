@@ -1,5 +1,6 @@
 ---
 title: "OnAfterGetRecordEvent (Page) Event Trigger"
+ms.description: "Executed after the OnAfterGetCurrRecord trigger, which is called after the record is retrieved from the table but before it is displayed to the user."
 ms.author: solsen
 ms.custom: na
 ms.date: 04/16/2021

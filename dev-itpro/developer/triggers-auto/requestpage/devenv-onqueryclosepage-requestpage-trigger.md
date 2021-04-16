@@ -1,5 +1,6 @@
 ---
 title: "OnQueryClosePage (Request Page) Trigger"
+ms.description: "Runs as a page closes and before the OnClosePage trigger executes."
 ms.author: solsen
 ms.custom: na
 ms.date: 04/16/2021

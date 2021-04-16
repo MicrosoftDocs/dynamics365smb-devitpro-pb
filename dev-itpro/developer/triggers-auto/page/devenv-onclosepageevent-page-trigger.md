@@ -1,5 +1,6 @@
 ---
 title: "OnClosePageEvent (Page) Event Trigger"
+ms.description: "Executed after the OnClosePage trigger, which is called when page closes after the OnQueryClosePage trigger is executed."
 ms.author: solsen
 ms.custom: na
 ms.date: 04/16/2021

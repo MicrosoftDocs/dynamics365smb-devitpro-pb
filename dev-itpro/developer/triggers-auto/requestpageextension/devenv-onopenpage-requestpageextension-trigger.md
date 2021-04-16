@@ -1,5 +1,6 @@
 ---
 title: "OnOpenPage (Request Page Extension) Trigger"
+ms.description: "Runs after a request page is initialized and run."
 ms.author: solsen
 ms.custom: na
 ms.date: 04/16/2021

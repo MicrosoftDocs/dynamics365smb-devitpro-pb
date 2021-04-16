@@ -1,5 +1,6 @@
 ---
 title: "OnInit (Request Page) Trigger"
+ms.description: "Initializes the user-defined variables on the page."
 ms.author: solsen
 ms.custom: na
 ms.date: 04/16/2021

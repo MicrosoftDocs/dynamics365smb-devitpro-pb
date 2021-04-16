@@ -1,5 +1,6 @@
 ---
 title: "OnBeforeModifyRecord (Xml Port Table Element) Trigger"
+ms.description: "Runs after a record is read from the input stream and before the existing record in the database is modified."
 ms.author: solsen
 ms.custom: na
 ms.date: 04/16/2021

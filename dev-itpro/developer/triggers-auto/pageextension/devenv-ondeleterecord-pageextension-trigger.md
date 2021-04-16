@@ -1,5 +1,6 @@
 ---
 title: "OnDeleteRecord (Page Extension) Trigger"
+ms.description: "Runs before a record is deleted from the table."
 ms.author: solsen
 ms.custom: na
 ms.date: 04/16/2021

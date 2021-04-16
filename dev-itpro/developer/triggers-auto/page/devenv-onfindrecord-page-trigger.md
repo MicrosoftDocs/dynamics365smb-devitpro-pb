@@ -1,5 +1,6 @@
 ---
 title: "OnFindRecord (Page) Trigger"
+ms.description: "Overrides the default page behavior and enables you to specify which record you want to display when the page opens."
 ms.author: solsen
 ms.custom: na
 ms.date: 04/16/2021

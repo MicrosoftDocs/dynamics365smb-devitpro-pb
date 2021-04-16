@@ -1,5 +1,6 @@
 ---
 title: "OnAfterModifyRecord (Xml Port Table Element) Trigger"
+ms.description: "Runs after a record has been modified."
 ms.author: solsen
 ms.custom: na
 ms.date: 04/16/2021

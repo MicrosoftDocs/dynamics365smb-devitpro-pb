@@ -1,5 +1,6 @@
 ---
 title: "OnOpenPageEvent (Page) Event Trigger"
+ms.description: "Executed after the OnOpenPage trigger, which is called after a page is initialized and run."
 ms.author: solsen
 ms.custom: na
 ms.date: 04/16/2021

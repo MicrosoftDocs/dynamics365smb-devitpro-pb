@@ -1,5 +1,6 @@
 ---
 title: "OnCheckPreconditionsPerDatabase (Codeunit) Trigger"
+ms.description: "Runs before an extension upgrade."
 ms.author: solsen
 ms.custom: na
 ms.date: 04/16/2021

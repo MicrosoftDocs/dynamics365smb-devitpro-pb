@@ -1,5 +1,6 @@
 ---
 title: "OnAfterValidate (Page Field Extension) Trigger"
+ms.description: "Runs after the user input is validated."
 ms.author: solsen
 ms.custom: na
 ms.date: 04/16/2021

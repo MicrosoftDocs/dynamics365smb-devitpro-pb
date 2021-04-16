@@ -1,5 +1,6 @@
 ---
 title: "OnAfterAssignField (Xml Port Field Attribute) Trigger"
+ms.description: "Runs after a field has been assigned a value and before it is validated and imported."
 ms.author: solsen
 ms.custom: na
 ms.date: 04/16/2021
