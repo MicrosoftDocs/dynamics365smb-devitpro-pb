@@ -310,7 +310,10 @@
 #### [Create a New Module](developer/devenv-new-module.md)
 #### [Create a .NET Wrapper Module](developer/devenv-create-a-wrapper-module.md)
 #### [Change a Module](developer/devenv-change-a-module.md)
-## [Deprecating Explicit and Implicit With Statements](developer/devenv-deprecating-with-statements-overview.md)
+## Code Deprecation
+### [Microsoft Timeline for Deprecating Code in Business Central](developer/devenv-deprecation-timeline.md)
+### [Best Practices for Deprecation of Code in the Base App](developer/devenv-deprecation-guidelines.md)
+### [Deprecating Explicit and Implicit With Statements](developer/devenv-deprecating-with-statements-overview.md)
 ## Events
 ### [Events in AL](developer/devenv-events-in-al.md)
 ### [Event Types](developer/devenv-event-types.md)
