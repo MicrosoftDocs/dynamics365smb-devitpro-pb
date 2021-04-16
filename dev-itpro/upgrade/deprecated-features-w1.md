@@ -204,5 +204,5 @@ Some features are available only under very specific circumstances, or not at al
 ## See Also
 
 [AlAppExtensions repository](https://github.com/microsoft/ALAppExtensions)  
-[Best Practices for Deprecation of Code in the Base App](developer/devenv-deprecation-guidelines.md)  
-[Microsoft Timeline for Deprecating Code in Business Central](devenv-deprecation-timeline.md)  
+[Best Practices for Deprecation of Code in the Base App](../developer/devenv-deprecation-guidelines.md)  
+[Microsoft Timeline for Deprecating Code in Business Central](../developer/devenv-deprecation-timeline.md)  

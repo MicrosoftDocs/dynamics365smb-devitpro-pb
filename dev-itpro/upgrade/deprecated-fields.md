@@ -144,5 +144,5 @@ The functionality for payments and reconciliation in the Danish version (FIK) ha
 [Upgrading to Business Central](upgrading-to-business-central.md)  
 [Upgrading the Application Code](upgrading-the-application-code.md)  
 [Important Information and Considerations for Before Upgrading to Dynamics 365 Business Central](upgrade-considerations.md)  
-[Best Practices for Deprecation of Code in the Base App](developer/devenv-deprecation-guidelines.md)  
-[Microsoft Timeline for Deprecating Code in Business Central](devenv-deprecation-timeline.md)  
+[Best Practices for Deprecation of Code in the Base App](../developer/devenv-deprecation-guidelines.md)  
+[Microsoft Timeline for Deprecating Code in Business Central](../developer/devenv-deprecation-timeline.md)  
