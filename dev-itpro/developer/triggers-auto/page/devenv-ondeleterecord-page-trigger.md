@@ -37,9 +37,14 @@ end;
 **true** if the record was deleted, otherwise, **false**. The return value is checked after each call. The default value is **true**.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks  
+
+The action is canceled but the page is not closed if an error occurs in the trigger code. You can use this trigger to write to the database.  
+
 ## See Also  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
-[OnDeleteRecord (Request Page) Trigger](../requestpage/devenv-ondeleterecord-requestpage-trigger.md)
-[OnDeleteRecord (Request Page Extension) Trigger](../requestpageextension/devenv-ondeleterecord-requestpageextension-trigger.md)
+[OnDeleteRecord (Request Page) Trigger](../requestpage/devenv-ondeleterecord-requestpage-trigger.md)  
+[OnDeleteRecord (Request Page Extension) Trigger](../requestpageextension/devenv-ondeleterecord-requestpageextension-trigger.md)  
 [OnDeleteRecord (Page Extension) Trigger](../pageextension/devenv-ondeleterecord-pageextension-trigger.md)

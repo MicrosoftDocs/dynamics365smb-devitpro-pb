@@ -41,6 +41,6 @@ This return value indicates whether the new record is to be inserted after the l
 ## See Also  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
-[OnNewRecord (Page) Trigger](../page/devenv-onnewrecord-page-trigger.md)
-[OnNewRecord (Request Page) Trigger](../requestpage/devenv-onnewrecord-requestpage-trigger.md)
+[OnNewRecord (Page) Trigger](../page/devenv-onnewrecord-page-trigger.md)  
+[OnNewRecord (Request Page) Trigger](../requestpage/devenv-onnewrecord-requestpage-trigger.md)  
 [OnNewRecord (Request Page Extension) Trigger](../requestpageextension/devenv-onnewrecord-requestpageextension-trigger.md)
