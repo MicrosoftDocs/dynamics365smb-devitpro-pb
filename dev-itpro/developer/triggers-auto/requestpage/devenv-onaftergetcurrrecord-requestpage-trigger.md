@@ -35,6 +35,6 @@ end;
 ## See Also  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
-[OnAfterGetCurrRecord (Page) Trigger](../page/devenv-onaftergetcurrrecord-page-trigger.md)
-[OnAfterGetCurrRecord (Request Page Extension) Trigger](../requestpageextension/devenv-onaftergetcurrrecord-requestpageextension-trigger.md)
+[OnAfterGetCurrRecord (Page) Trigger](../page/devenv-onaftergetcurrrecord-page-trigger.md)  
+[OnAfterGetCurrRecord (Request Page Extension) Trigger](../requestpageextension/devenv-onaftergetcurrrecord-requestpageextension-trigger.md)  
 [OnAfterGetCurrRecord (Page Extension) Trigger](../pageextension/devenv-onaftergetcurrrecord-pageextension-trigger.md)

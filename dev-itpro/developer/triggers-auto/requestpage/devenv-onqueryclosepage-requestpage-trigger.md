@@ -46,6 +46,6 @@ The CloseAction chosen by the user; usually OK or Cancel.
 ## See Also  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
-[OnQueryClosePage (Page) Trigger](../page/devenv-onqueryclosepage-page-trigger.md)
-[OnQueryClosePage (Request Page Extension) Trigger](../requestpageextension/devenv-onqueryclosepage-requestpageextension-trigger.md)
+[OnQueryClosePage (Page) Trigger](../page/devenv-onqueryclosepage-page-trigger.md)  
+[OnQueryClosePage (Request Page Extension) Trigger](../requestpageextension/devenv-onqueryclosepage-requestpageextension-trigger.md)  
 [OnQueryClosePage (Page Extension) Trigger](../pageextension/devenv-onqueryclosepage-pageextension-trigger.md)

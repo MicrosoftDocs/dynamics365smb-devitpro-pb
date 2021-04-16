@@ -32,6 +32,13 @@ end;
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks  
+
+This trigger is run before a data item is processed, but after the associated variable is initialized and table views and filters are set.  
+
+You can use this trigger to add additional filtering beyond what is established by the [DataItemLink Property (Reports)](../../properties/devenv-dataitemlink-reports-property.md) or [DataItemTableView Property](../../properties/devenv-dataitemtableview-property.md). For example, use this trigger if you need to filter an indented data item based on the result of a calculation. Use the [SetRange Record](../../methods-auto/record/record-setrange-method.md) or [SetFilter Record](../../methods-auto/record/record-setfilter-method.md)  to add extra delimiters.  
+
 ## See Also  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
