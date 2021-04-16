@@ -2497,20 +2497,20 @@
 ##### [OnAfterGetCurrRecord Trigger](developer/triggers-auto/pageextension/devenv-onaftergetcurrrecord-pageextension-trigger.md)
 ##### [OnPageBackgroundTaskCompleted Trigger](developer/triggers-auto/pageextension/devenv-onpagebackgroundtaskcompleted-pageextension-trigger.md)
 ##### [OnPageBackgroundTaskError Trigger](developer/triggers-auto/pageextension/devenv-onpagebackgroundtaskerror-pageextension-trigger.md)
-#### Control Triggers
-##### [OnValidate Trigger](developer/triggers-auto/control/devenv-onvalidate-control-trigger.md)
-##### [OnLookup Trigger](developer/triggers-auto/control/devenv-onlookup-control-trigger.md)
-##### [OnAfterLookup Trigger](developer/triggers-auto/control/devenv-onafterlookup-control-trigger.md)
-##### [OnDrillDown Trigger](developer/triggers-auto/control/devenv-ondrilldown-control-trigger.md)
-##### [OnAssistEdit Trigger](developer/triggers-auto/control/devenv-onassistedit-control-trigger.md)
-##### [OnControlAddIn Trigger](developer/triggers-auto/control/devenv-oncontroladdin-control-trigger.md)
-#### Control Extension Triggers
-##### [OnBeforeValidate Trigger](developer/triggers-auto/controlextension/devenv-onbeforevalidate-controlextension-trigger.md)
-##### [OnAfterValidate Trigger](developer/triggers-auto/controlextension/devenv-onaftervalidate-controlextension-trigger.md)
-##### [OnLookup Trigger](developer/triggers-auto/controlextension/devenv-onlookup-controlextension-trigger.md)
-##### [OnDrillDown Trigger](developer/triggers-auto/controlextension/devenv-ondrilldown-controlextension-trigger.md)
-##### [OnAssistEdit Trigger](developer/triggers-auto/controlextension/devenv-onassistedit-controlextension-trigger.md)
-##### [OnAfterAfterLookup Trigger](developer/triggers-auto/controlextension/devenv-onafterafterlookup-controlextension-trigger.md)
+#### Page Field Triggers
+##### [OnValidate Trigger](developer/triggers-auto/pagefield/devenv-onvalidate-pagefield-trigger.md)
+##### [OnLookup Trigger](developer/triggers-auto/pagefield/devenv-onlookup-pagefield-trigger.md)
+##### [OnAfterLookup Trigger](developer/triggers-auto/pagefield/devenv-onafterlookup-pagefield-trigger.md)
+##### [OnDrillDown Trigger](developer/triggers-auto/pagefield/devenv-ondrilldown-pagefield-trigger.md)
+##### [OnAssistEdit Trigger](developer/triggers-auto/pagefield/devenv-onassistedit-pagefield-trigger.md)
+##### [OnControlAddIn Trigger](developer/triggers-auto/pagefield/devenv-oncontroladdin-pagefield-trigger.md)
+#### Page Field Extension Triggers
+##### [OnBeforeValidate Trigger](developer/triggers-auto/pagefieldextension/devenv-onbeforevalidate-pagefieldextension-trigger.md)
+##### [OnAfterValidate Trigger](developer/triggers-auto/pagefieldextension/devenv-onaftervalidate-pagefieldextension-trigger.md)
+##### [OnLookup Trigger](developer/triggers-auto/pagefieldextension/devenv-onlookup-pagefieldextension-trigger.md)
+##### [OnDrillDown Trigger](developer/triggers-auto/pagefieldextension/devenv-ondrilldown-pagefieldextension-trigger.md)
+##### [OnAssistEdit Trigger](developer/triggers-auto/pagefieldextension/devenv-onassistedit-pagefieldextension-trigger.md)
+##### [OnAfterAfterLookup Trigger](developer/triggers-auto/pagefieldextension/devenv-onafterafterlookup-pagefieldextension-trigger.md)
 #### Action Triggers
 ##### [OnAction Trigger](developer/triggers-auto/action/devenv-onaction-action-trigger.md)
 #### Action Extension Triggers
