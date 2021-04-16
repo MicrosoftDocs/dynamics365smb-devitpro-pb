@@ -71,7 +71,7 @@ Join the Business Central Office Hours to learn more and connect with the Busine
 |Feb 9, 2021 | Power Platform, Power Apps, and Dataverse (formerly known as CDS) |
 |Feb 23, 2021 | Performance Toolkit and Telemetry; How to deploy for performance |
 |Mar 9, 2021 | Integrating with Microsoft Teams |
-|Mar 23, 2021 | Business Central apps in AppSource
+|Mar 23, 2021 | Business Central apps in AppSource |
 |April 7, 2021 | Rolling out 2021 Release Wave 1 |
 |April 20, 2021 | Environments in Business Central Online |
 |May 4, 2021 | Report Extensibility |
