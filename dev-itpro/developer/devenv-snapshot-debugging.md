@@ -22,7 +22,7 @@ Snapshot debugging introduces the concept of *snappoints*. A snappoint is a brea
 - Snappoints  
 - AL exceptions
 
-With [!INCLUDE[prod_short](includes/prod_short.md)] version 18.1, built-in method calls will be snapshot debugged if there is placed a snappoint in an AL file on the stack trace that leads to the built-in method. For an example, see [Snapshot debugging built-in methods](devenv-snapshot-debugging.md#snapshot-debugging-built--in--methods).
+With [!INCLUDE[prod_short](includes/prod_short.md)] version 18.1, it is possible to snapshot debug event subscribers triggered from built-in codeunit triggers if a snappoint is placed in an AL file on the stack trace that leads to the built-in method. For more information, see [Snapshot debugging built-in methods](devenv-snapshot-debugging.md#snapshot-debugging-built--in--methods).
 
 > [!IMPORTANT]  
 > To enable snapshot debugging it is very important that the symbols on the tenant match the symbols on the server. This is not automatically detected, and must be manually checked. In this release, you can ensure this by copying the specific sandbox and download symbols from that copy. Furthermore, any code that snappoints are set in, must have been deployed, otherwise debugging will not work. For more information, see the section [Downloading symbols on the snapshot debugger endpoint](devenv-snapshot-debugging.md#downloading-symbols-on-the-snapshot-debugger-endpoint).
@@ -123,7 +123,9 @@ Once a snapshot debugging session starts in Visual Studio Code, code execution w
 
 The user can set breakpoints and continue execution to that breakpoint for testing, for example, if a line is hit, but it is the snappoint that carries the real information.
 
-## Snapshot debugging built-in methods
+## Snapshot debugging built-in codeunit triggers
+
+
 
 Built-in methods can be snapshot-debugged if they are part of the stack trace. This provides a way to snapshot debug methods on the Base App. To help locate where system codeunit triggers are called, use the **Event Recorder** in [!INCLUDE[prod_short](includes/prod_short.md)]. From the code, when all symbols on the snapshot endpoint have been downloaded, see [Downloading symbols on the snapshot debugger endpoint](devenv-snapshot-debugging.md#downloading-symbols-on-the-snapshot-debugger-endpoint), you can add AL code that contains a reference to that particular event subscription and then use **Go to Definition** to locate the place where that particular method is defined in the .dal file. Adding a snappoint to the code in the .dal file and then initiating the snapshot debugger session will ensure that the method is part of the stacktrace. When the generated snapshot file is then opened in the debugger, the execution will break on the snappoint.
 
