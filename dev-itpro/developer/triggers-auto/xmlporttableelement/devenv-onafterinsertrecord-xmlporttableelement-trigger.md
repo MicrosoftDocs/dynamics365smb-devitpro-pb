@@ -32,6 +32,12 @@ end;
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks  
+ This trigger is only used to import data and can be used to move data from temporary tables to real tables.  
+  
+ If the [AutoSave Property](../properties/devenv-autosave-property.md) is **false**, then although the record is not inserted automatically, the **OnAfterInsertRecord** trigger is still called after the insertion would have occurred.  
+  
 ## See Also  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

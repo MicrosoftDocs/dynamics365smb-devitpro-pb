@@ -32,6 +32,10 @@ end;
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks  
+ This trigger runs before the default delete behavior is executed on a record to be deleted. It runs automatically after the user chooses to delete a record in a page from the Web client. The record is not deleted if an error occurs in the trigger code. 
+
 ## See Also  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

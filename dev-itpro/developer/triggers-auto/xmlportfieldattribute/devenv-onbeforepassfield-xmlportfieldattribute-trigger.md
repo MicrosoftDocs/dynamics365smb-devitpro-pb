@@ -32,6 +32,11 @@ end;
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks  
+ This trigger is only used to export data. This trigger gives you access to the field value in the record just before it is exported and is typically used to manipulate the field.  
+
+
 ## See Also  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
