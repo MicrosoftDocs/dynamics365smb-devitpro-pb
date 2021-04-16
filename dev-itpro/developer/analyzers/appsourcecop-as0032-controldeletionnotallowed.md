@@ -27,7 +27,7 @@ Removing a control which has been published is not allowed because it will break
 > [!NOTE]  
 > Renaming a control will also trigger this error. AppSourceCop will consider the renamed control as a new control, unrelated to the one defined in the previous version.
 
-## How to fix this diagnostic
+## How to fix this diagnostic?
 
 If the control was removed, revert the change by adding back the control and mark it as [Obsolete](../properties/devenv-obsoletestate-property.md).
 

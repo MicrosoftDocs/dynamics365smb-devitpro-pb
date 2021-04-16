@@ -202,4 +202,7 @@ When we move, remove, or replace an object, breaking changes can result in other
 Some features are available only under very specific circumstances, or not at all intended for use in on-premises versions of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. For a list and descriptions of those features, see [Features not implemented in on-premises deployments](../features-not-implemented-on-premises.md).
 
 ## See Also
-[AlAppExtensions repository](https://github.com/microsoft/ALAppExtensions)
+
+[AlAppExtensions repository](https://github.com/microsoft/ALAppExtensions)  
+[Best Practices for Deprecation of Code in the Base App](../developer/devenv-deprecation-guidelines.md)  
+[Microsoft Timeline for Deprecating Code in Business Central](../developer/devenv-deprecation-timeline.md)  

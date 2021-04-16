@@ -30,7 +30,7 @@ The validation of the length of table fields was previously done with [AS0004](a
 - [AS0080](appsourcecop-as0080-fieldlengthdecreasenotallowed.md) - which validates against decreasing the length of fields
 - [AS0086](appsourcecop-as0086-fieldlengthincreasenotallowed.md) - which validates against increasing the length of fields
 
-## How to fix this diagnostic
+## How to fix this diagnostic?
 
 Reverting the change will fix this diagnostic. If decreasing the length of the field is required, the recommended approach is to mark the field as [Obsolete Pending](../properties/devenv-obsoletestate-property.md) and introduce a new field with the desired length.
 Once all dependent extensions have uptaken the new field, you can mark the the original one as [Obsolete Removed](../properties/devenv-obsoletestate-property.md).
