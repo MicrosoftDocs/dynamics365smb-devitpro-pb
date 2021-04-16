@@ -96,4 +96,4 @@ end;
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [OnAfterTestRun Trigger](devenv-onaftertestrun-codeunit-trigger.md)  
-[TestPermissions Property](../properties/devenv-testpermissions-property.md)  
+[TestPermissions Property](../../properties/devenv-testpermissions-property.md)  

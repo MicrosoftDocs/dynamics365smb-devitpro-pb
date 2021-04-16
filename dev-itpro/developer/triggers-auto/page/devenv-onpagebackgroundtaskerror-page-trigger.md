@@ -56,7 +56,7 @@ Specifies the call stack for the error that occurred.
 
 ## Example  
 
-The following example modifies the `OnPageBackgroundTaskError` trigger to display a more user-friendly notification in the client when the error `Could not parse parameter WaitParam` or timeout occurs in the page background task. For more details about this example, see [Page Background Tasks](../devenv-page-background-tasks.md).
+The following example modifies the `OnPageBackgroundTaskError` trigger to display a more user-friendly notification in the client when the error `Could not parse parameter WaitParam` or timeout occurs in the page background task. For more details about this example, see [Page Background Tasks](../../devenv-page-background-tasks.md).
 
 ```AL
 trigger OnPageBackgroundTaskError(TaskId: Integer; ErrorCode: Text; ErrorText: Text; ErrorCallStack: Text; var IsHandled: Boolean)

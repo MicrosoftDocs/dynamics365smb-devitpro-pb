@@ -35,7 +35,7 @@ end;
 ## Remarks  
  This trigger is only used to import data. It is typically used for evaluation or calculations before the record is inserted into the database table.  
   
- If the [AutoSave Property](../properties/devenv-autosave-property.md) is **false**, then although the record is not inserted automatically, the OnBeforeInsertRecord trigger is still called before the insertion would have occurred.  
+ If the [AutoSave Property](../../properties/devenv-autosave-property.md) is **false**, then although the record is not inserted automatically, the OnBeforeInsertRecord trigger is still called before the insertion would have occurred.  
 
 ## See Also  
 [Getting Started with AL](../../devenv-get-started.md)  

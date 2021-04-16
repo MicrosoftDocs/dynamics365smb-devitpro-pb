@@ -1,8 +1,8 @@
 ---
-title: "OnLookup (Page Field) Trigger"
+title: "OnLookup (Control) Trigger"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/16/2021
+ms.date: 04/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,10 +14,11 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# OnLookup (Page Field) Trigger
+# OnLookup (Control) Trigger
 > **Version**: _Available or changed with runtime version 1.0._
 
 Runs in place of the normal lookup features for the current page.
+
 
 
 ## Syntax
@@ -38,7 +39,7 @@ Text string entered into the text box and used as the lookup value.
 ## Return Value
 
 *Ok*
-&emsp;Type: [Boolean](../../methods-auto/boolean/boolean-data-type.md)  
+&emsp;Type: [Boolean](../../methods-auto/boolean/boolean-data-type.md)
 **true** if the lookup was carried out,otherwise, **false**.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

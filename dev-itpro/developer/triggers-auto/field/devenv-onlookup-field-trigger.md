@@ -40,7 +40,7 @@ There are three lookup options:
 
 1. Default Lookup - The lookup into the table is performed without applying filters or other special parameters.  
 2. Field Lookup - You can use this trigger to define a field lookup that will be used in place of the default lookup.  
-3. Text box Lookup - You can use the [OnLookup \(Page fields\) Trigger](../devenv-onlookup-pagefield-trigger.md) to define a lookup based on the value of a text box. This value will be used in place of the default lookup or the field lookup.  
+3. Text box Lookup - You can use the [OnLookup \(Page fields\) Trigger](../pagefield/devenv-onlookup-pagefield-trigger.md) to define a lookup based on the value of a text box. This value will be used in place of the default lookup or the field lookup.  
 
 When using this trigger, follow this approach:  
 
@@ -57,7 +57,7 @@ When using this trigger, follow this approach:
 >  On non-editable fields in the [!INCLUDE[nav_windows](../includes/nav_windows_md.md)], the field gets its lookup action rendered as a hyperlink. In the [!INCLUDE[nav_web](../includes/nav_web_md.md)] the lookup for a non-editable field is not rendered. You can use the [OnDrillDown Trigger](devenv-OnDrillDown-Trigger.md) instead.  
 -->
 > [!NOTE]  
-> The lookup for a non-editable field is not rendered. You can use the [OnDrillDown Trigger](../devenv-ondrilldown-pagefield-trigger.md) instead.
+> The lookup for a non-editable field is not rendered. You can use the [OnDrillDown Trigger](../pagefield/devenv-ondrilldown-pagefield-trigger.md) instead.
 
 ## See Also  
 [Getting Started with AL](../../devenv-get-started.md)  

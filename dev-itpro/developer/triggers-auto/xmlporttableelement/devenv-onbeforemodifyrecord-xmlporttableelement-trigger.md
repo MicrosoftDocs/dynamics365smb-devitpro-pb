@@ -35,7 +35,7 @@ end;
 ## Remarks  
  This trigger is used when you import data from an XMLport and then update an existing record in a table with the data from the XMLport.  
   
- If the [AutoSave Property](../properties/devenv-autosave-property.md) is **false**, then although the record is not modified automatically, the **OnBeforeModifyRecord** trigger is still called before the modification would have occurred.  
+ If the [AutoSave Property](../../properties/devenv-autosave-property.md) is **false**, then although the record is not modified automatically, the **OnBeforeModifyRecord** trigger is still called before the modification would have occurred.  
 
 ## See Also  
 [Getting Started with AL](../../devenv-get-started.md)  
