@@ -12,7 +12,7 @@ ms.author: solsen
 
 # Microsoft Timeline for Deprecating Code in Business Central
 
-This topic provides an overview of the timeline of when to expect code to be obsoleted once you start seeing warnings when extending it. As described in the [ObsoleteTag Property](properties/devenv-obsoletetag-property.md) topic, the `ObsoleteTag` is used to specify where and when an object is marked as obsolete, for example, branch, build, or date of obsoleting the object. 
+This topic provides an overview of the timeline of when to expect code to be obsoleted once you start seeing warnings when extending it. As described in the [ObsoleteTag Property](properties/devenv-obsoletetag-property.md) topic, the `ObsoleteTag` is used to specify where and when an object is marked as obsolete, for example, branch, build, or date of obsoleting the object. For methods or variables, the [Obsolete Attribute](methods/devenv-obsolete-attribute.md) is used. 
 
 When an object is marked with the `ObsoleteTag`, another 12 months will pass before the code is removed, in some cases even longer. In many cases, Microsoft does not set a specific date for the removal. This is due to engineering and architectural considerations. This means that once you start getting warnings the feature or code will not be deprecated for at least 2 versions. If the tag is set to, for example, version 18, the code will still be present in versions 19 and 20. We will at the earliest remove the code in version 21.
 
