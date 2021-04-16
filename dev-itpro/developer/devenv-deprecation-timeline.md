@@ -26,3 +26,4 @@ When a major update of [!INCLUDE[prod_short](../includes/prod_short.md)] is rele
 [ObsoleteTag Property](properties/devenv-obsoletetag-property.md)  
 [ObsoleteState Property](properties/devenv-obsoletestate-property.md)  
 [ObsoleteReason Property](properties/devenv-obsoletereason-property.md)  
+[Obsolete Attribute](methods/devenv-obsolete-attribute.md)

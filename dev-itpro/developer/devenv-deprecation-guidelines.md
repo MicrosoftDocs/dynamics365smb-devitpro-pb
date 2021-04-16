@@ -114,3 +114,4 @@ If an action or other code element points to a now removed object, then the guid
 [ObsoleteTag Property](properties/devenv-obsoletetag-property.md)  
 [ObsoleteState Property](properties/devenv-obsoletestate-property.md)  
 [ObsoleteReason Property](properties/devenv-obsoletereason-property.md)  
+[Obsolete Attribute](methods/devenv-obsolete-attribute.md)
