@@ -16,7 +16,7 @@ This topic provides an overview of the timeline of when to expect code to be obs
 
 When an object is marked as obsolete, another 12 months will pass before the code is removed, in some cases even longer. In many cases, Microsoft does not set a specific date for the removal. This is due to engineering and architectural considerations. This means that once you start getting warnings the feature or code will not be deprecated for at least 2 versions. If the tag is set to, for example, `'18.0'`, the code will still be present in versions 19 and 20. We will at the earliest remove the code in version 21.
 
-When a major update of [!INCLUDE [prod_short](../includes/prod_short.md)] is released, and you start seeing deprecation warnings, it is strongly encouraged to start removing dependencies by refactoring the code. This work is important to do because once Microsoft does remove the code, the dependent app will be broken if it has not been refactored.
+When a major update of [!INCLUDE[prod_short](../includes/prod_short.md)] is released, and you start seeing deprecation warnings, it is strongly encouraged to start removing dependencies by refactoring the code. This work is important to do because once Microsoft does remove the code, the dependent app will be broken if it has not been refactored.
 
 ## See Also
 
