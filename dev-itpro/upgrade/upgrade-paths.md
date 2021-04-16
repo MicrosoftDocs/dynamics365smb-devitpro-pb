@@ -2,7 +2,7 @@
 title: "Upgrade paths to Business Central"
 description: Provides an overview of the different upgrade paths for Business Central
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,7 +25,7 @@ Whether you can upgrade directly to a release will depend on the source version.
 The following sections provide the supported upgrade paths to the different [!INCLUDE[prod_short](../developer/includes/prod_short.md)] releases.
 
 > [!NOTE]
-> Minor updates are regularly made available for the major releases. Make sure you upgrade to an update of the release version that is compatible with your source source version. Otherwise, you might encounter problems upgrading the application. For more information, see [Dynamics 365 Business Central Upgrade Compatibility Matrix](/dynamics365/business-central/dev-itpro/upgrade/upgrade-v14-v15-compatibility?branch=2020rw1-upgrade).
+> Minor updates are regularly made available for the major releases. Make sure you upgrade to an update of the release version that is compatible with your source source version. Otherwise, you might encounter problems upgrading the application. For more information, see [Dynamics 365 Business Central Upgrade Compatibility Matrix](./upgrade-v14-v15-compatibility.md?branch=2020rw1-upgrade).
 
 ## Upgrade to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] October 2018 (v13)
 
@@ -54,17 +54,24 @@ The following sections provide the supported upgrade paths to the different [!IN
 |<ul><li> [!INCLUDE[navcrete](../developer/includes/navcrete_md.md)]</li><li>[!INCLUDE[navcorfu](../developer/includes/navcorfu_md.md)]</li><li>[!INCLUDE[nav2017](../developer/includes/nav2017.md)]</li><li>[!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)]</li><li>[!INCLUDE[prod_short](../developer/includes/prod_short.md)] v13</li></ul>|Indirect. Upgrade to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] v14 first.|
 |<ul><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] v14)</li><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] (v15)</li></ul>|Direct|
 
-
 ## Upgrade to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 Release Wave 2 (v17) 
 
 |  Source version  |   Upgrade path  |
 |------------|--------------|
 |<ul><li> [!INCLUDE[navcrete](../developer/includes/navcrete_md.md)]</li><li>[!INCLUDE[navcorfu](../developer/includes/navcorfu_md.md)]</li><li>[!INCLUDE[nav2017](../developer/includes/nav2017.md)]</li><li>[!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)]</li><li>[!INCLUDE[prod_short](../developer/includes/prod_short.md)] v13</li></ul>|Indirect. Upgrade to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] v14 first.|
 |<ul><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] v14)</li><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] (v15)</li><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] (v16)</li></ul>|Direct|
+
+## Upgrade to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 Release Wave 1 (v18) 
+
+|  Source version  |   Upgrade path  |
+|------------|--------------|
+|<ul><li> [!INCLUDE[navcrete](../developer/includes/navcrete_md.md)]</li><li>[!INCLUDE[navcorfu](../developer/includes/navcorfu_md.md)]</li><li>[!INCLUDE[nav2017](../developer/includes/nav2017.md)]</li><li>[!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)]</li><li>[!INCLUDE[prod_short](../developer/includes/prod_short.md)] v13</li></ul>|Indirect. Upgrade to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] v14 first.|
+|<ul><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] v14)</li><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] (v15)</li><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] (v16)</li><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] (v17)</li></ul>|Direct|
+  
   
 ## See Also
 
 [Upgrading to Business Central Spring 2019](upgrading-to-business-central-on-premises.md)  
 [Upgrading to Business Central 2019 release Wave 2](upgrade-overview-v15.md)  
 [Upgrading to Business Central 2020 release Wave 1](upgrade-overview-v16.md)  
-[Migrating On-Premises Data to Business Central Online](../administration/migrate-data.md)  
+[Migrating On-Premises Data to Business Central Online](../administration/migrate-data.md)

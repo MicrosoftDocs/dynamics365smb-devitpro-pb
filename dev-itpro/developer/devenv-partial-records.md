@@ -3,7 +3,7 @@ title: "Partial Records"
 description: Describes the partial records capability in Business Central
 ms.author: jswymer
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -105,7 +105,7 @@ The same issue arises for pages called through OData. If a field isn't requested
 
 ## <a name="jit"></a>Just-in-time (JIT) loading
 
-When a record is loaded as a partial record, the obvious question is: What happens when accessing a field that hasn't been selected for loading?". The answer is JIT loading. The platform, in such a case, does an implicit GET on the record and loads out the missing field.
+When a record is loaded as a partial record, the obvious question is: What happens when accessing a field that hasn't been selected for loading? The answer is JIT loading. The platform, in such a case, does an implicit GET on the record and loads out the missing field.
 
 When JIT loading occurs, another access to the data source is required. These operations tend to be fast because they're GET calls. GET calls can often be served by the server's data cache or can be resolved as a clustered index operation on the database.
 
@@ -128,6 +128,22 @@ There are a few options to remedy this situation:
 - Pass the record reference using VAR parameter allows for updating of enumerator.
 - Call AddLoadFields(fieldnames) on the original record before passing by value.
 - Before calling FIND, GET, NEXT, and so on, use the SetLoadFields(fieldnames) to set all fields needed for load.
+
+## Preventing inconsistent read and JIT loading errors
+
+Seeing the error **Inconsistent read of field(s):…** means that a read record has changed in the database sometime between the initial load and a subsequent load. When a subsequent load (JIT load) occurs, extra fields are loaded, and all previously loaded fields are checked for consistency to verify that they haven't changed. For example, suppose the **Amount** field in a table had the value of 42 on the initial load. But at sometime before the subsequent load, another user changed the value in the database to 9001.
+
+You could categorize this error as a *read skew* consistency error. The platform, in this case, doesn't know whether the previously executed code made decisions based on the value being 42. So, instead of potentially ending up with inconsistent data, the platform invokes error handling by throwing an error.
+
+Another error related to the **Inconsistent read of field(s):...** error is the **JIT loading of field(s): ... failed ...** error. This error is a more generic error that can happen for multiple reasons during a JIT load. But the most frequent cause is that the record has been deleted in the database. It's similar the **Another User has Modified the record** error you'll get when a record is modified, but the platform detects newer data in the database.
+All these errors are the result of a race condition, meaning they depend on whether other users are also interacting with the same data concurrently.
+
+To prevent these errors, avoid JIT loads if you can. If there are no subsequent loads (JIT), the previously described race condition will never occur. To avoid JIT loads, follow these guidelines:
+
+- On the first load, select all and only the necessary the fields by using SetLoadFields calls or subsequent AddLoadFields calls.
+- When the platform implicitly uses partial records, add the extra fields by calling AddLoadFields from the OnPreDataItem trigger on reports or from the OnOpenPage trigger on OData pages.
+
+For more information, see [Reports and OData pages](#reports-and-odata-pages). Optionally, you can add the fields as a data column on reports or fields on OData pages.
 
 ## See Also
 

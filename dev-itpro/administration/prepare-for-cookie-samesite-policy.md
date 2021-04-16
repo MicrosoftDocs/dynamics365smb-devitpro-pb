@@ -2,7 +2,7 @@
 title: Cookie Samesite policy
 description: Deploy and administer the Web server to support the latest in browser cookie-handling policies.
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -91,7 +91,7 @@ You can also test on older Chrome versions by manually enabling the SameSite fla
 3. Set **SameSite by default cookies** to **Enabled**.
 5. Set **Cookies without SameSite must be secure** to **Enabled**.
 
-For more information about testing on older Chrome versions, see [https://docs.microsoft.com/aspnet/samesite/system-web-samesite#test-with-chrome](https://docs.microsoft.com/aspnet/samesite/system-web-samesite#test-with-chrome).
+For more information about testing on older Chrome versions, see [https://docs.microsoft.com/aspnet/samesite/system-web-samesite#test-with-chrome](/aspnet/samesite/system-web-samesite#test-with-chrome).
 
 ### Known issue with Dynamics NAV cumulative updates for November and December
 
@@ -107,4 +107,3 @@ Custom control add-ins sometimes rely on [!INCLUDE[prod_short](../includes/prod_
 
 **Is the Dynamics NAV Windows Client affected?**  
 The Dynamics NAV Windows client may be configured to authenticate using Azure AD. In this case, the change in cookie policy has no effect on access to the Windows client.
-

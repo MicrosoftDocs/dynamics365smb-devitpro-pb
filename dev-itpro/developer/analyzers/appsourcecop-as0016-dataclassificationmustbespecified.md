@@ -2,7 +2,7 @@
 title: "Fields of field class 'Normal' must use the DataClassification property and its value should be different from ToBeClassified"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/15/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AppSourceCop Rule AS0016
-Fields of field class 'Normal' must use the DataClassification property and its value should be different from ToBeClassified  
+Fields of field class 'Normal' must use the DataClassification property and its value should be different from ToBeClassified
 
 ## Description
 Fields of field class 'Normal' must use the DataClassification property and its value must be different from ToBeClassified. FlowFields and FlowFilter fields are automatically set to the SystemMetadata data classification.
@@ -29,7 +29,7 @@ For more information about data classification, see the documentation on the [Da
 > Tables and fields marked as [Obsolete Removed](../properties/devenv-obsoletestate-property.md) are and not deleted from the database. This is why they are 
 also validated by this rule.
 
-## How to fix this diagnostic
+## How to fix this diagnostic?
 
 In order to fix the diagnostics reported you must set the [DataClassification](../properties/devenv-dataclassification-property.md) property on the table fields in your extension following the guidelines defined in [Classifying Data in Dynamics 365](../devenv-classifying-data.md).
 

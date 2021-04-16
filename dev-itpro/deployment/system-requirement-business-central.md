@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ---
 # System Requirements for [!INCLUDE[prod_long](../developer/includes/prod_long.md)] April '19
 
@@ -92,7 +92,7 @@ For more information, see [Getting Started with AL](../developer/devenv-get-star
 
 |Specification|Requirement|  
 |-|-|  
-|Supported operating systems|<ul><li>Windows 10 Pro, Enterprise, or Education \(64-bit edition\).</li><li>Windows Server 2019</li><li>Windows Server, version 1809 or later</li><li>Windows Server 2016 Standard, Essentials, or Datacenter.</li></ul>.|  
+|Supported operating systems|<ul><li>Windows 10 Pro, Enterprise, or Education \(64-bit edition\).</li><li>Windows Server 2019 (Datacenter or Standard)</li><li>Windows Server, version 1809 or later</li><li>Windows Server 2016 Standard, Essentials, or Datacenter.</li></ul>.|  
 |Hardware resources|<ul><li>Hard disk space: 500 MB.</li><li>Memory: 2 GB.|  
 |[!INCLUDE[crm](../developer/includes/crm_md.md)] integration|<ul><li>Windows Identity Framework.<br />For a list of supported [!INCLUDE[crm](../developer/includes/crm_md.md)] versions, see [Microsoft Dynamics 365 for Sales Integration Requirements](system-requirement-business-central.md#CRM).|  
 |Additional software|<ul><li>Microsoft .NET Framework 4.7.2 or 4.8</li><li>Windows PowerShell 4.0.|  
@@ -102,7 +102,7 @@ For more information, see [Getting Started with AL](../developer/devenv-get-star
 
 |Specification|Requirement|  
 |-|-|  
-|Supported operating systems|<ul><li>Windows 10 Pro, Enterprise, or Education \(64-bit edition\).</li><li>Windows Server 2019 (Datacenter, Standard)</li><li>Windows Server, version 1809 or later (Datacenter, Standard)</li><li>Windows Server 2016 Standard, Essentials, or Datacenter.</li></ul>.|  
+|Supported operating systems|<ul><li>Windows 10 Pro, Enterprise, or Education \(64-bit edition\).</li><li>Windows Server 2019 (Datacenter or Standard)</li><li>Windows Server, version 1809 or later (Datacenter, Standard)</li><li>Windows Server 2016 Standard, Essentials, or Datacenter.</li></ul>.|  
 |Web server|<ul><li>Internet Information Server 10, Internet Information Server 8.5, or Internet Information Server 8.0.|   
 |Additional software|<ul><li>Microsoft .NET Framework 4.7.2 or 4.8.</li><li>Windows PowerShell 4.0.|  
 |Additional information|<ul><li>[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] installs the following software if it isn't already present on the target computer.<ul><li>Microsoft .NET Core 1.0 Windows Server Hosting. This version is installed by [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] if not already present.</li><li>Microsoft .NET Framework 4.7.2. </li><li>Internet Information Server 10, Internet Information Server 8.5, or Internet Information Server 8.0, depending in the operating system, with the required features enabled.</li></ul></li><li>For more information about configuring IIS, see [Configuring IIS](configure-iis.md)</li></ul>|  
@@ -112,8 +112,8 @@ For more information, see [Getting Started with AL](../developer/devenv-get-star
 
 |Specification|Requirement|  
 |-|-|  
-|Supported operating systems|<ul><li>Windows 10 Pro, Enterprise, or Education \(64-bit edition\).</li><li>Windows Server 2019 (Datacenter, Standard)</li><li>Windows Server, version 1809 or later (Datacenter, Standard)</li><li>Windows Server 2016 Standard, Essentials, or Datacenter.</li></ul> |  
-|Hardware resources|For more information, see [Hardware and Software Requirements for Installing SQL Server](https://go.microsoft.com/fwlink/?LinkId=622999). From this page, you can also access requirements for other versions of SQL Server.|  
+|Supported operating systems|<ul><li>Windows 10 Pro, Enterprise, or Education \(64-bit edition\).</li><li>Windows Server 2019 (Datacenter or Standard)</li><li>Windows Server, version 1809 or later (Datacenter, Standard)</li><li>Windows Server 2016 Standard, Essentials, or Datacenter.</li></ul> |  
+|Hardware resources|For more information, see [Hardware and Software Requirements for Installing SQL Server](/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server). From this page, you can also access requirements for other versions of SQL Server.|  
 |SQL Server|<ul><li>Microsoft SQL Server 2019 Express, Standard, or Enterprise.</li><li>Microsoft SQL Server 2017 Express, Standard, or Enterprise.</li> <li>Microsoft SQL Server 2016 Express, Standard, or Enterprise.</li><li>Azure SQL Database Managed Instance, Elastic Pool, or Single Database.</li></ul>|  
 |Service Packs and Cumulative Updates| Unless explicitly stated, all released Service Packs and Cumulative Updates of the above Microsoft SQL Server versions are supported. It is recommended to always be on the latest released Service Pack and Cumulative Update.|
 |Additional information|[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] installs the following software if it isn't already present on the target computer:<ul><li>SQL Server 2016 Express \(64-bit edition\).<br>If the operating system on the target computer does not support SQL Server 2016 Express, Setup displays a pre-requisite warning. In this case, you should exit Setup and then update the operating system on the computer to one that does support SQL Server 2016 Express. Then run Setup again.</li></ul>|  
@@ -157,30 +157,18 @@ The following table shows the minimum system requirements for the [!INCLUDE[prod
 |Supported Outlook Applications |<ul><li>Outlook 2019</li><li>Outlook 2016</li></ul>|
 |Supported Exchange Servers|<ul><li>Exchange Server 2019</li><li>Exchange Server 2016</li><li>Exchange Online.</li></ul>|
 
+### <a name="CRM"></a>Microsoft Dataverse and Dynamics 365 for Sales Integration
 
-###  <a name="CRM"></a> Microsoft Dynamics 365 for Sales Integration Requirements  
- The following table shows the product version requirements for integrating [!INCLUDE[prod_short](../developer/includes/prod_short.md)] with [!INCLUDE[crm](../developer/includes/crm_md.md)], and the versions in which users can view the availability of items in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] from [!INCLUDE[crm](../developer/includes/crm_md.md)].  
+The following table shows the product version requirements for integrating Business Central online and on premise with [!INCLUDE[cds_long_md.md](../developer/includes/cds_long_md.md)] and [!INCLUDE[crm](../developer/includes/crm_md.md)] online and on premises.
 
 |Specification|Requirement|  
-|-|-|  
-|Microsoft Dynamics CRM versions|<ul><li>Microsoft Dynamics CRM 2015 or Microsoft Dynamics CRM 2016<BR />Note: AD, IFD, and Claims authentication types are supported for above editions.</li><li>Microsoft Dynamics CRM Online 2015, Microsoft Dynamics CRM Online 2015 Update 1, or Microsoft Dynamics CRM Online 2016 Update 1 or Microsoft Dynamics 365<BR />Note: OAuth and Microsoft 365 authentication types are supported for these editions.</li></ul>For more information on authentication types, see [Connection strings in XRM tooling to connect to Dynamics 365](https://msdn.microsoft.com/library/mt608573.aspx).|
-|[!INCLUDE[prod_short](../developer/includes/prod_short.md)] Integration Solution (.zip)|For Dynamics CRM 2015, Dynamics CRM Online 2015, and Dynamics CRM Online 2015 Update 1:<ul><li>Use the DynamicsNAVIntegrationSolution.zip file that is found on the Dynamics NAV 2016 installation media (DVD) to install the solution.</li><li>Item Availability isn't supported on Dynamics CRM 2015, versions Update 1 and Online.</li></ul>For more information, see [Preparing Dynamics 365 for Sales for Integration](../administration/prepare-dynamics-365-for-sales-for-integration.md).      | 
+|-----|-----|
+|[!INCLUDE[cds_long_md.md](../developer/includes/cds_long_md.md)] and [!INCLUDE[crm](../developer/includes/crm_md.md)] online |One the following authentication types:<ul><li> Office365 (legacy)<sup>1</sup></li><li>OAuth<sup>2</sup></li>||
+|Dynamics 365 Customer Engagement on-premise<br><br>**Note**: Not supported with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online|<ul><li>Dynamics 365 Customer Engagement version 9.0.2</li><li> One of the following authentication types:<ul><li>AD</li><li>IFD</li><li>OAuth<sup>2</sup></li></ul>|
 
-|Sales/Dynamics NAV/Business Central|2015/Update 1/online|2016/Update 1/online|Sales Enterprise (v8.x)|Sales Enterprise and Sales Professional (v9.x)|  
-|-|-|-|-|-|
-|Dynamics NAV 2016|Supported \*\*\* |Supported \*\*\* |Supported \*\*\* |Supported \*\*\* |
-|Dynamics NAV 2017|Supported \*\*|Supported \*|Supported \*|Supported \*|
-|Dynamics NAV 2018|Supported \*\*|Supported \*|Supported \*|Supported \*|
-|Business Central (online)|Not supported \*\*|Not supported \*\*|Supported \*|Supported \*|
-|Business Central (on-premises)|Supported \*\*|Supported \*|Supported \*|Supported \*|  
+<sup>1</sup>Effective April 2022, Office365 (legacy) authentication will no longer be supported for Dataverse/Dynamics 365 Sales environments on existing tenants. For more information, see [Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps](/power-platform/important-changes-coming#deprecation-of-office365-authentication-type-and-organizationserviceproxy-class-for-connecting-to-dataverse).
 
-Legend:  
-* "*" item availability capability is supported.  
-* "**" integration solution can be installed from the Dynamics NAV 2016 DVD, but viewing item availability isn't supported.  
-* "***" viewing item availability isn't supported  
-
-> [!Note] 
-> AD, IFD and Claims authentication types are supported for the 2015 and 2016 on-premises versions of [!INCLUDE[crm](../developer/includes/crm_md.md)]. OAuth and Microsoft 365 authentication are supported for the 2015, 2015 Update 1, and 2016 Update 1 online versions of [!INCLUDE[crm](../developer/includes/crm_md.md)]. For more information on authentication types, see [Use connection strings in XRM tooling to connect to Dynamics 365 for Customer Engagement apps (on-premises)](/dynamics365/customer-engagement/developer/xrm-tooling/use-connection-strings-xrm-tooling-connect).
+<sup>2</sup> AD, IFD, and OAuth types are supported with on-premises version of Dynamics 365 Sales. OAuth and Office 365 (legacy – basic) and Office 365 (modern – MFA) authentication are supported for online versions of Dynamics 365 Sales. For more information about authentication types, see [Connection strings in XRM tooling to connect to Dynamics 365](https://msdn.microsoft.com/library/mt608573.aspx).
 
 <!--temporarily remove SharePoint App
 ##  <a name="SharePointApp"></a>[!INCLUDE[prod_short](../developer/includes/prod_short.md)] as an App for SharePoint Requirements  
@@ -202,4 +190,4 @@ The following table shows the minimum system requirements for [!INCLUDE[prod_sho
 
 [Welcome to the Developer and IT-Pro Help for Business Central](../index.md)  
 [Product and Architecture Overview](product-and-architecture-overview.md)  
-[Deployment](Deployment.md)  
+[Deployment](Deployment.md)

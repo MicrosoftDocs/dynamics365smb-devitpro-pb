@@ -2,7 +2,7 @@
 author: edupont04
 ms.service: dynamics365-business-central
 ms.topic: include
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.author: edupont
 ---
 An organization can sign up for a free trial of [!INCLUDE[prod_short](prod_short.md)]. When they first sign up for [!INCLUDE[prod_short](prod_short.md)], they get access to an evaluation version that does not include all capabilities in [!INCLUDE[prod_short](prod_short.md)]. They can then switch to the 30 day trial experience to enable all capabilities.  

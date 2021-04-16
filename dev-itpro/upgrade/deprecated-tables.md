@@ -1,7 +1,7 @@
 ---
 title: "Deprecated Tables"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -32,4 +32,6 @@ In the latest version of [!INCLUDE[prod_short](../developer/includes/prod_short.
 
 ## See Also
 
-[Technical Upgrade](upgrade-technical-upgrade-v15-v16.md)
+[Technical Upgrade](upgrade-technical-upgrade-v15-v16.md)  
+[Best Practices for Deprecation of Code in the Base App](../developer/devenv-deprecation-guidelines.md)  
+[Microsoft Timeline for Deprecating Code in Business Central](../developer/devenv-deprecation-timeline.md)  

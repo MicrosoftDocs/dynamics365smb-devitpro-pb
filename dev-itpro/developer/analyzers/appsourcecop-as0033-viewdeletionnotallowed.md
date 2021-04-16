@@ -2,7 +2,7 @@
 title: "Views that have been published must not be deleted."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AppSourceCop Rule AS0033
-Views that have been published must not be deleted.  
+Views that have been published must not be deleted.
 
 ## Description
 Views that have been published must not be deleted, because it will break dependent extensions.
@@ -27,7 +27,7 @@ Removing a view which has been published is not allowed because it will break de
 > [!NOTE]  
 > Renaming a view will also trigger this error. AppSourceCop will consider the renamed view as a new view, unrelated to the one defined in the previous version.
 
-## How to fix this diagnostic
+## How to fix this diagnostic?
 
 If the view was removed, revert the change by adding back the view and mark it as [Obsolete](../properties/devenv-obsoletestate-property.md).
 

@@ -2,7 +2,7 @@
 title: "InDataSet Attribute"
 description: "The InDataSet attribute in AL for Business Central"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,7 +15,7 @@ author: SusanneWindfeldPedersen
 Sets whether the AL variable's value is included in the dataset.  
 
 ## Applies to  
-AL variables of [Boolean Data Type](../datatypes/devenv-boolean-data-type.md) or [Integer Data Type](../datatypes/devenv-integer-data-type.md) on pages.  
+AL variables of [Boolean Data Type](../methods-auto/library.md) or [Integer Data Type](../methods-auto/library.md) on pages.  
 
 ## Value  
 Defined to include the variable's value in the dataset; otherwise, undefined. The default is undefined.  

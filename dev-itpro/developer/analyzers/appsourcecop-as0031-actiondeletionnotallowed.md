@@ -2,7 +2,7 @@
 title: "Actions that have been published must not be deleted."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AppSourceCop Rule AS0031
-Actions that have been published must not be deleted.  
+Actions that have been published must not be deleted.
 
 ## Description
 Actions that have been published must not be deleted, because it will break dependent extensions.
@@ -28,7 +28,7 @@ Removing an action which has been published is not allowed because it will break
 > [!NOTE]  
 > Renaming an action will also trigger this error. AppSourceCop will consider the renamed action as a new action, unrelated to the one defined in the previous version.
 
-## How to fix this diagnostic
+## How to fix this diagnostic?
 
 If the action was removed, revert the change by adding back the action and mark it as [Obsolete](../properties/devenv-obsoletestate-property.md).
 

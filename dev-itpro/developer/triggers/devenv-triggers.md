@@ -3,7 +3,7 @@ title: "Triggers Overview"
 description: "Triggers in AL for Business Central."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,5 +24,5 @@ The following sections describe the triggers that are available for the differen
 - [Query Triggers](devenv-query-triggers.md)  
 
 ## See Also  
-[AL Method Reference](../methods/devenv-al-method-reference.md)  
-[Properties](../properties/devenv-properties.md)  
+[AL Method Reference](../methods-auto/library.md)  
+[Properties](../properties/devenv-properties.md)

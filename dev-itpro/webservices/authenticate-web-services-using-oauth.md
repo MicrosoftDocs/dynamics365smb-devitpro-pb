@@ -2,7 +2,7 @@
 title: "Using OAuth to Authenticate Business Central Web Services (OData and SOAP)"
 description: Learn how to use OAuth to authenticate Business Central web services (OData and SOAP)
 ms.custom: na
-ms.date: 01/20/2021
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -198,7 +198,7 @@ Use the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client to pu
 
     In the OData URL, `myserver` is the computer that is running the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Server instance, `7048` is the port number used for OData, and `BC`is the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Server instance.
 
-    For more information about publishing, see [Publish a Web Service](/dynamics365/business-central/dev-itpro/webservices/publish-web-service).
+    For more information about publishing, see [Publish a Web Service](./publish-web-service.md).
 5. After you publish the web service, you can now enter the OData URL in the address of an Internet browser.
 
     You're prompted for your user name and password. The user name and password that you enter is the user name and password (or web service access key) of your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] account; not your Microsoft 365 or Azure AD user name and password.
@@ -638,4 +638,4 @@ private static void PromptForCredentials(out string userName, out string passwor
 [Web Services Authentication](web-services-authentication.md)  
 [OData Web Services](OData-Web-Services.md)  
 [Configuring Business Central Server](../administration/configure-server-instance.md)  
-[Authentication and Credential Types](../administration/Users-Credential-Types.md)  
+[Authentication and Credential Types](../administration/Users-Credential-Types.md)

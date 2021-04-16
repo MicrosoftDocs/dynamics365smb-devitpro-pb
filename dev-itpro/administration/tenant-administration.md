@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.workload: na
 ms.reviewer: na
 ms.search.keywords: administration, tenant, admin, environment
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.author: edupont
 ---
 
@@ -31,7 +31,7 @@ As an internal administrator you have **read-only** access to all areas of [!INC
 
 For other tasks, you can access the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], where you can manage upgrade schedules and other tasks. For more information, see [The Business Central Administration Center](tenant-admin-center.md).  
 
-You can also use telemetry to track usage and monitor user sessions, for example. For more information, see [Monitoring and Analyzing Telemetry](telemetry-overview.md) and [Managing Sessions](tenant-admin-center-environments.md#managing-sessions).  
+You can also use telemetry to track usage and monitor user sessions, for example. For more information, see [Monitoring and Analyzing Telemetry](telemetry-overview.md) and [Managing Sessions](tenant-admin-center-manage-sessions.md).  
 
 ### Administration of a trial
 
@@ -101,7 +101,7 @@ As a reselling partner, you must be the first line of support for your [!INCLUDE
 
 ## Data and access when a trial or subscription ends
 
-Trials can expire, and so can a apid subscription, such as if the customer does not renew the subscription or stops payments, or if the customer cancels the subscription.  
+Trials can expire, and so can a paid subscription, such as if the customer does not renew the subscription or stops payments, or if the customer cancels the subscription.  
 
 [!INCLUDE [admin-extendtrials-periods](../developer/includes/admin-extendtrials-periods.md)]
 

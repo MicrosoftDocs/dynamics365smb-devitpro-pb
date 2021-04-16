@@ -2,7 +2,7 @@
 title: "Technical Upgrade from Version 15 to Version 17" 
 description: Describes how to do a technical upgrade from Business Central 15 to 17
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -150,6 +150,7 @@ This task runs a technical upgrade on the application database. A technical upgr
     DatabaseLocation    :
     Collation           :
     ```
+[!INCLUDE[convert_azure_sql_db_timeout](../developer/includes/convert_azure_sql_db_timeout.md)]
 
 ## Task 5: Configure version 17 server
 

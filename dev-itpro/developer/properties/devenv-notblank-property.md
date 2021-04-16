@@ -2,7 +2,7 @@
 title: "NotBlank Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/24/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,13 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # NotBlank Property
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Sets a value that specifies whether users must enter a value in the selected field or text box.
 
 ## Applies to
 -   Table Field
 -   Page Field
-
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
