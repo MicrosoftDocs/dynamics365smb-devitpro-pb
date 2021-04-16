@@ -264,4 +264,6 @@ It is also possible to use `#pragma` to suppress individual warnings for one or 
 [Pragma Directive](directives/devenv-directive-pragma.md)  
 [Pragma ImplicitWith](directives/devenv-directive-pragma-implicitwith.md)  
 [Pragma Warning](directives/devenv-directive-pragma-warning.md)  
+[Best Practices for Deprecation of Code in the Base App](developer/devenv-deprecation-guidelines.md)  
+[Microsoft Timeline for Deprecating Code in Business Central](devenv-deprecation-timeline.md)  
 [AL Simple Statements](devenv-al-simple-statements.md)
