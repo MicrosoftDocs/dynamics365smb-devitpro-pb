@@ -2,7 +2,7 @@
 title: "OnOpenPage (Page) Trigger"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/14/2021
+ms.date: 04/16/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,7 +18,6 @@ author: SusanneWindfeldPedersen
 > **Version**: _Available or changed with runtime version 1.0._
 
 Runs after a page is initialized and run.
-
 
 
 ## Syntax
@@ -47,7 +46,7 @@ If an error occurs in the trigger execution, then the page closes.
 > If you use the [LockTable Record](../../methods-auto/record/record-locktable-method.md) in the OnOpenPage trigger, then the table lock will be released when the trigger completes execution and not when the user closes the page.  
 
 > [!NOTE]  
-> The **OnOpenPage** trigger does not support calls to control add-in methods and properties because the trigger is invoked before the page is instantiated. <!-- For more information see, [Exposing Methods and Properties in a Windows Client Control Add-in](exposing-methods-and-properties-in-a-windows-client-control-add-in.md).-->
+> The **OnOpenPage** trigger does not support calls to control add-in methods and properties because the trigger is invoked before the page is instantiated. <!-- For more information see, [Exposing Methods and Properties in a Windows Client Control Add-in](exposing-methods-and-properties-in-a-windows-client-pagefield-add-in.md).-->
 
 ## See Also  
 [Getting Started with AL](../../devenv-get-started.md)  

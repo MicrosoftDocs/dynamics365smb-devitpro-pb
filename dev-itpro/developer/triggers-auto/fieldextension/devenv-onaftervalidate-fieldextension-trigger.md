@@ -2,7 +2,7 @@
 title: "OnAfterValidate (Field Extension) Trigger"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/14/2021
+ms.date: 04/16/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,7 +18,6 @@ author: SusanneWindfeldPedersen
 > **Version**: _Available or changed with runtime version 1.0._
 
 Runs after the user input is validated.
-
 
 
 ## Syntax
@@ -59,4 +58,4 @@ tableextension 50111 "CustomerExt" extends Customer
 ## See Also  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
-[OnAfterValidate (Control Extension) Trigger](../controlextension/devenv-onaftervalidate-controlextension-trigger.md)
+[OnAfterValidate (Control Extension) Trigger](../pagefieldextension/devenv-onaftervalidate-pagefieldextension-trigger.md)

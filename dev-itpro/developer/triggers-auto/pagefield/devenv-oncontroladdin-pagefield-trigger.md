@@ -1,8 +1,8 @@
 ---
-title: "OnAfterAfterLookup (Control Extension) Trigger"
+title: "OnControlAddIn (Page Field) Trigger"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/14/2021
+ms.date: 04/16/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,16 +14,15 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# OnAfterAfterLookup (Control Extension) Trigger
-> **Version**: _Available or changed with runtime version 7.0._
+# OnControlAddIn (Page Field) Trigger
+> **Version**: _Available or changed with runtime version 1.0._
 
-Runs after a lookup is activated passing the selected record as a RecordRef.
-
+Executed when a control add-in on the client sends event information to the server-side business logic.
 
 
 ## Syntax
 ```
-trigger OnAfterAfterLookup(Selected: RecordRef)
+trigger OnControlAddIn(Index: Integer, Data: Text)
 begin
     ...
 end;
@@ -31,9 +30,13 @@ end;
 
 ### Parameters
 
-*Selected*  
-&emsp;Type: [RecordRef](../../methods-auto/recordref/recordref-data-type.md)  
-The selected record.  
+*Index*  
+&emsp;Type: [Integer](../../methods-auto/integer/integer-data-type.md)  
+An integer identifier that a control add-in sends with the event.  
+
+*Data*  
+&emsp;Type: [Text](../../methods-auto/text/text-data-type.md)  
+A text string that a control add-in sends with an event.  
 
 
 

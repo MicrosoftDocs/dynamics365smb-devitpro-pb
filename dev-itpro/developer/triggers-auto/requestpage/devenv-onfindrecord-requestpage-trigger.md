@@ -2,7 +2,7 @@
 title: "OnFindRecord (Request Page) Trigger"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/14/2021
+ms.date: 04/16/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,7 +18,6 @@ author: SusanneWindfeldPedersen
 > **Version**: _Available or changed with runtime version 1.0._
 
 Overrides the default page behavior and enables you to specify which record you want to display when the page opens.
-
 
 
 ## Syntax
@@ -42,7 +41,7 @@ Text or code value with the following options:
 ## Return Value
 
 *Ok*
-&emsp;Type: [Boolean](../../methods-auto/boolean/boolean-data-type.md)
+&emsp;Type: [Boolean](../../methods-auto/boolean/boolean-data-type.md)  
 **true** if the specified record was found, otherwise, **false**.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

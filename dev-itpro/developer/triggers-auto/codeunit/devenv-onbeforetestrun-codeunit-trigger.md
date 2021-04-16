@@ -2,7 +2,7 @@
 title: "OnBeforeTestRun (Codeunit) Trigger"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/14/2021
+ms.date: 04/16/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,6 @@ Runs before a test of a test codeunit is run.
 
 > [!IMPORTANT]
 > The [Subtype Property](../../properties/devenv-subtype-property.md) must be set to **TestRunner** in the Codeunit.
-
 
 ## Syntax
 ```
@@ -57,7 +56,7 @@ Specifies the permission set level to use on the test run. The value is retrieve
 ## Return Value
 
 *Ok*
-&emsp;Type: [Boolean](../../methods-auto/boolean/boolean-data-type.md)
+&emsp;Type: [Boolean](../../methods-auto/boolean/boolean-data-type.md)  
 **true** if the test was run, otherwise, **false**. The default value is **true**.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

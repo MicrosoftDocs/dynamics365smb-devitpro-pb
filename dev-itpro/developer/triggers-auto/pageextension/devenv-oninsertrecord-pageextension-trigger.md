@@ -2,7 +2,7 @@
 title: "OnInsertRecord (Page Extension) Trigger"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/14/2021
+ms.date: 04/16/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,7 +18,6 @@ author: SusanneWindfeldPedersen
 > **Version**: _Available or changed with runtime version 1.0._
 
 Runs before a new record is inserted into the table.
-
 
 
 ## Syntax
@@ -39,7 +38,7 @@ This return value indicates whether the new record was inserted after the last r
 ## Return Value
 
 *Ok*
-&emsp;Type: [Boolean](../../methods-auto/boolean/boolean-data-type.md)
+&emsp;Type: [Boolean](../../methods-auto/boolean/boolean-data-type.md)  
 **true** if the record was inserted, otherwise **false**. The return value is checked after each call. The default value is **true**.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

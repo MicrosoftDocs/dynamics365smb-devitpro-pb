@@ -2,7 +2,7 @@
 title: "OnValidateUpgradePerCompany (Codeunit) Trigger"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/14/2021
+ms.date: 04/16/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,6 @@ Runs after an extension upgrade.
 
 > [!IMPORTANT]
 > The [Subtype Property](../../properties/devenv-subtype-property.md) must be set to **Upgrade** in the Codeunit.
-
 
 ## Syntax
 ```

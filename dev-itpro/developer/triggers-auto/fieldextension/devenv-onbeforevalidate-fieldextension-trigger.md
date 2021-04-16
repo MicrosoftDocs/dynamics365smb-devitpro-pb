@@ -2,7 +2,7 @@
 title: "OnBeforeValidate (Field Extension) Trigger"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/14/2021
+ms.date: 04/16/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,7 +18,6 @@ author: SusanneWindfeldPedersen
 > **Version**: _Available or changed with runtime version 1.0._
 
 Runs before the user input is validated.
-
 
 
 ## Syntax
@@ -62,4 +61,4 @@ tableextension 50111 "CustomerExt" extends Customer
 ## See Also  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
-[OnBeforeValidate (Control Extension) Trigger](../controlextension/devenv-onbeforevalidate-controlextension-trigger.md)
+[OnBeforeValidate (Control Extension) Trigger](../pagefieldextension/devenv-onbeforevalidate-pagefieldextension-trigger.md)

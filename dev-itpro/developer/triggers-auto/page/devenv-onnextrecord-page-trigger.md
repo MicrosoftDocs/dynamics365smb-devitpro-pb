@@ -2,7 +2,7 @@
 title: "OnNextRecord (Page) Trigger"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/14/2021
+ms.date: 04/16/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,7 +18,6 @@ author: SusanneWindfeldPedersen
 > **Version**: _Available or changed with runtime version 1.0._
 
 Determines the next record to be displayed.
-
 
 
 ## Syntax
@@ -39,7 +38,7 @@ The number of records stepped through before displaying another record. A negati
 ## Return Value
 
 *ActualSteps*
-&emsp;Type: [Integer](../../methods-auto/integer/integer-data-type.md)
+&emsp;Type: [Integer](../../methods-auto/integer/integer-data-type.md)  
 This return value contains the actual number of steps or records cycled through. The default value is 0.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

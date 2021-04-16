@@ -2,7 +2,7 @@
 title: "OnInit (Page) Trigger"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/14/2021
+ms.date: 04/16/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,7 +18,6 @@ author: SusanneWindfeldPedersen
 > **Version**: _Available or changed with runtime version 1.0._
 
 Initializes the user-defined variables on the page.
-
 
 
 ## Syntax
@@ -40,7 +39,7 @@ The AL code in this trigger is run immediately after the variables are cleared a
 After this trigger is executed, the [OnOpenPage Trigger](devenv-onopenpage-page-trigger.md) for pages is called. If an error occurs in the trigger code, then the page is closed.  
   
 > [!NOTE]  
-> The **OnInit** trigger does not support calls to control add-in methods and properties because the trigger is invoked before the page is instantiated. <!-- For more information see, [Exposing Methods and Properties in a Windows Client Control Add-in](exposing-methods-and-properties-in-a-windows-client-control-add-in.md). --> 
+> The **OnInit** trigger does not support calls to control add-in methods and properties because the trigger is invoked before the page is instantiated. <!-- For more information see, [Exposing Methods and Properties in a Windows Client Control Add-in](exposing-methods-and-properties-in-a-windows-client-pagefield-add-in.md). --> 
 
 ## See Also  
 [Getting Started with AL](../../devenv-get-started.md)  

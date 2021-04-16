@@ -1,8 +1,8 @@
 ---
-title: "OnAfterLookup (Control) Trigger"
+title: "OnAfterLookup (Page Field) Trigger"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/14/2021
+ms.date: 04/16/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,11 +14,10 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# OnAfterLookup (Control) Trigger
+# OnAfterLookup (Page Field) Trigger
 > **Version**: _Available or changed with runtime version 7.0._
 
 Runs after a lookup is activated passing the selected record as a RecordRef.
-
 
 
 ## Syntax
@@ -44,7 +43,7 @@ The selected record.
 This trigger is introduced with runtime 7.0 of AL to address issues that arise when in [!INCLUDE [prod_short](../../includes/prod_short.md)], for example, more items have the same Description. With former solutions, the lookup mechanism would find the selected record based on the filtering in the lookup dialog. This made it impossible to predict which record the user had selected.
 
 > [!NOTE]  
-> If you have defined an [OnLookup Trigger](devenv-onlookup-control-trigger.md), the [OnAfterLookup Trigger](devenv-onafterlookup-control-trigger.md) will not be fired.
+> If you have defined an [OnLookup Trigger](devenv-onlookup-pagefield-trigger.md), the [OnAfterLookup Trigger](devenv-onafterlookup-pagefield-trigger.md) will not be fired.
 
 ## Example
 

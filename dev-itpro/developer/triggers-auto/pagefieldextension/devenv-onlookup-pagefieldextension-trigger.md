@@ -1,8 +1,8 @@
 ---
-title: "OnLookup (Control Extension) Trigger"
+title: "OnLookup (Page Field Extension) Trigger"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/14/2021
+ms.date: 04/16/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,11 +14,10 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# OnLookup (Control Extension) Trigger
+# OnLookup (Page Field Extension) Trigger
 > **Version**: _Available or changed with runtime version 3.0._
 
 Runs in place of the normal lookup features for the current page.
-
 
 
 ## Syntax
@@ -39,7 +38,7 @@ Text string entered into the text box and used as the lookup value.
 ## Return Value
 
 *Ok*
-&emsp;Type: [Boolean](../../methods-auto/boolean/boolean-data-type.md)
+&emsp;Type: [Boolean](../../methods-auto/boolean/boolean-data-type.md)  
 **true** if the lookup was carried out, otherwise, **false**.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -61,7 +60,7 @@ If an error occurs in the trigger code, the lookup is canceled.
 You can use this trigger to write to the database.  
 
 > [!NOTE]  
-> If you have defined an `OnLookup` trigger, the [OnAfterLookup Trigger](devenv-onafterlookup-control-trigger.md) will not be fired.
+> If you have defined an `OnLookup` trigger, the [OnAfterLookup Trigger](devenv-onafterlookup-pagefield-trigger.md) will not be fired.
 
 
 > [!NOTE]  
@@ -71,4 +70,4 @@ You can use this trigger to write to the database.
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [OnLookup (Field) Trigger](../field/devenv-onlookup-field-trigger.md)  
-[OnLookup (Control) Trigger](../control/devenv-onlookup-control-trigger.md)
+[OnLookup (Control) Trigger](../pagefield/devenv-onlookup-pagefield-trigger.md)

@@ -1,8 +1,8 @@
 ---
-title: "OnAssistEdit (Control) Trigger"
+title: "OnAssistEdit (Page Field Extension) Trigger"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/14/2021
+ms.date: 04/16/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,11 +14,10 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# OnAssistEdit (Control) Trigger
-> **Version**: _Available or changed with runtime version 1.0._
+# OnAssistEdit (Page Field Extension) Trigger
+> **Version**: _Available or changed with runtime version 3.0._
 
 Runs in place of the AssistEdit property features that are provided in the application.
-
 
 
 ## Syntax
@@ -47,4 +46,4 @@ You can use this trigger to write to the database.
 ## See Also  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
-[OnAssistEdit (Control Extension) Trigger](../controlextension/devenv-onassistedit-controlextension-trigger.md)
+[OnAssistEdit (Control) Trigger](../pagefield/devenv-onassistedit-pagefield-trigger.md)

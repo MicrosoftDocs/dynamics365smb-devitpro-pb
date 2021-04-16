@@ -2,7 +2,7 @@
 title: "OnDeleteRecord (Request Page Extension) Trigger"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/14/2021
+ms.date: 04/16/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 Runs before a record is deleted from the table.
 
 
-
 ## Syntax
 ```
 trigger OnDeleteRecord(): Ok
@@ -33,7 +32,7 @@ end;
 ## Return Value
 
 *Ok*
-&emsp;Type: [Boolean](../../methods-auto/boolean/boolean-data-type.md)
+&emsp;Type: [Boolean](../../methods-auto/boolean/boolean-data-type.md)  
 **true** if the record was deleted, otherwise, **false**. The return value is checked after each call. The default value is **true**.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
