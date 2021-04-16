@@ -60,6 +60,56 @@ True indicates that the test run succeeded; otherwise, false indicates that the 
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+> [!NOTE]  
+> This trigger is optional and not available on a test runner codeunit by default. To implement this trigger, you must manually add it.  
+
+A test runner codeunit manages the execution of test codeunits that are run from its [OnRun trigger](devenv-onrun-codeunit-trigger.md). When a test codeunit runs, it executes each test one at a time in the codeunit. When implemented, the **OnAfterTestRun** trigger is called after each test  has run and after all of the test codeunits have run.
+
+The **OnAfterTestRun** trigger suppresses the automatic display of the results message after the test codeunit runs.
+
+> [!NOTE]  
+> To return the error message for a failed test run, use the [GetLastErrorText Method](../../methods-auto/debugger/debugger-getlasterrortext-method.md).  
+
+
+You can use the **OnAfterTestRun** trigger to perform post-processing, such as logging, or to automate tests by integrating the test runner codeunit with a test management framework.
+
+The *Permissions* parameter, enables you can control how to handle applied permission sets, if any, after the test is run.   
+<!-- For more information about testing with permision sets, including an example, see [Testing With Permission Sets](../testing-permissionsets.md).
+-->
+
+The *FunctionName* parameter is empty when the **OnAfterTestRun** trigger is called for the whole test codeunit.  
+
+The **OnAfterTestRun** trigger is run in its own database transaction.
+
+
+## Example
+
+The following **OnAfterTestRun** trigger code logs test results to a test reporting system. This example requires that you create a record variable named *log*.  
+
+```AL
+log.Init;  
+log.UnitId := CodeunitId;  
+log.Unit := CodeunitName;  
+log.Func := MethodName;  
+log.Before := Before;  
+log.After := CURRENTDATETIME;  
+if Success then  
+  log.Status := log.Status::Success  
+else begin  
+  log.Status := log.Status::Failure;  
+  if MethodName <> '' then  
+    log.Message := GETLASTERRORTEXT;  
+end;  
+log.Insert(true);  
+```  
+
+The GetLastErrorText returns the text that was contained in the last error message.  
+
 ## See Also  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
+[SubType Property (Codeunit)](../../properties/devenv-subtype-codeunit-property.md)  
+[OnBeforeTestRun Trigger](devenv-onbeforetestrun-codeunit-trigger.md)  

@@ -32,6 +32,17 @@ end;
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+This is called after the action properties, such as the [RunObject Property](../../properties/devenv-runobject-property.md), are invoked.  
+
+You typically use the [RunObject Property](../../properties/devenv-runobject-property.md) to run objects such as pages, reports, and codeunits from an action. You can use the **OnAction** trigger when you require more processing than the [RunObject Property](../../properties/devenv-runobject-property.md) can support, such as filtering data before a page is displayed or writing to the database.  
+
+> [!NOTE]  
+> The **OnAction** trigger is not used on Role Center pages. If you add AL code to the trigger, the Role Center page will compile, but the AL code will be ignored at runtime.  
+
 ## See Also  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
+[RunObject Property](../../properties/devenv-runobject-property.md)  

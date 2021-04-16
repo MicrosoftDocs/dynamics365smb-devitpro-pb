@@ -34,6 +34,15 @@ end;
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+> [!NOTE]  
+>  This trigger is also available in upgrade codeunits for the base application, not just for extensions.  
+
+## Remarks  
+It is used to check that the upgrade was successful. If an error occurs during runtime the extension upgrade is canceled.
+
+This trigger is run once for each company in the database, and it is executed within its own system session for the company.
+
 ## See Also  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

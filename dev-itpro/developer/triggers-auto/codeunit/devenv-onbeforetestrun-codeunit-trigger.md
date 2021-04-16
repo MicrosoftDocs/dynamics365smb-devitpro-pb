@@ -61,6 +61,40 @@ Specifies the permission set level to use on the test run. The value is retrieve
 **true** if the test was run, otherwise, **false**. The default value is **true**.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+> [!NOTE]  
+> This trigger is optional and not available on a test runner codeunit by default. To implement this trigger, you must manually add it.  
+
+A test runner codeunit manages the execution of test codeunits that are run from its [OnRun trigger](devenv-onrun-codeunit-trigger.md). When a test codeunit runs, it executes each test  in the codeunit, one at a time. The **OnBeforeTestRun** trigger is called before the test codeunit, the **OnRun** , and each test .  
+
+You can use the **OnBeforeTestRun** triggers to perform preprocessing, such as general initialization and logging, or to automate tests by integrating the test runner codeunit with a test management framework.  
+  
+By using the *Permissions* parameter, you can add code to control which permission sets, if any, to test.
+  
+The *FunctionName* parameter is empty when the **OnBeforeTestRun** trigger is called for the entire test codeunit.  
+
+The **OnBeforeTestRun** trigger is run in its own database transaction.  
+
+ <!-- For more information, see [Testing the Application](../devenv-testing-the-application.md) and [How to: Create a Test Runner Codeunit](../devenv-how-to-create-a-test-runner-codeunit.md).  -->
+
+## Example  
+
+The following **OnBeforeTestRun** trigger code initializes a logging variable and returns **true** to indicate that the test should execute. 
+
+```AL
+trigger OnBeforeTestRun(CodeunitId: Integer, CodeunitName: Text, FunctionName: Text, Permissions: TestPermissions): Boolean
+var
+    Before : DateTime;
+begin
+    Before := CURRENTDATETIME;  
+    Exit(true);  
+end;
+```  
+
 ## See Also  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
+[OnAfterTestRun Trigger](devenv-onaftertestrun-codeunit-trigger.md)  
+[TestPermissions Property](../properties/devenv-testpermissions-property.md)  
