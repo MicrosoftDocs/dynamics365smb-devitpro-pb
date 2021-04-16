@@ -22,6 +22,7 @@ When a major update of [!INCLUDE[prod_short](../includes/prod_short.md)] is rele
 
 [AL Development Environment](devenv-reference-overview.md)  
 [Directives in AL](directives/devenv-directives-in-al.md)  
+[Best Practices for Deprecation of Code in the Base App](developer/devenv-deprecation-guidelines.md)  
 [ObsoleteTag Property](properties/devenv-obsoletetag-property.md)  
 [ObsoleteState Property](properties/devenv-obsoletestate-property.md)  
 [ObsoleteReason Property](properties/devenv-obsoletereason-property.md)  
