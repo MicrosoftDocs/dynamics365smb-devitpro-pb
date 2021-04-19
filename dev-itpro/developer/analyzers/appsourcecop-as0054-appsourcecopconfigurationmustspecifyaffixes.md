@@ -22,6 +22,7 @@ The AppSourceCop configuration must specify one of the following properties: 'ma
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
+
 In the `AppSourceCop.json` configuration file, use the `mandatorySuffix`, `mandatoryPrefix`, or `mandatoryAffixes` to specify which affixes apply for this particular extension. For example:
 
 ```json
@@ -29,9 +30,18 @@ In the `AppSourceCop.json` configuration file, use the `mandatorySuffix`, `manda
     "mandatoryAffixes": [ "Foo", "Bar" ]
 }
 ```
+
 For more information, see [AppSourceCop Rule AS0011](appsourcecop-as0011-identifiersmusthaveaffix.md).
 
+## Registering your affixes for AppSource submissions
+
+The use of affixes is required for extensions submitted to the AppSource marketplace, see [Technical Validation Checklist](../devenv-checklist-submission.md).
+
+In order to register your affixes, contact us at [d365val@microsoft.com](mailto:d365val@microsoft.com). For more information, see [Benefits and Guidelines for using a Prefix or Suffix](../../compliance/apptest-prefix-suffix.md).
+
 ## See Also  
+
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+[Developing Extensions](../devenv-dev-overview.md)
+[Benefits and Guidelines for using a Prefix or Suffix](../../compliance/apptest-prefix-suffix.md)
