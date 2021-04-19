@@ -1,5 +1,5 @@
 ---
-title: "Choosing Runtime in AL"
+title: "Choosing Runtime Version in AL"
 description: "How to choose runtime in AL for Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
@@ -12,15 +12,15 @@ ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
-# Choosing Runtime in AL
+# Choosing Runtime Version in AL
 
 The capabilities and features of AL for [!INCLUDE[prod_short](../includes/prod_short.md)] are determined by the runtime version. The runtime version is set in the `app.json` file for a project. It is a mandatory setting and expressed with the following syntax is `"runtime": "7.0"`.
 
 The runtime in the `app.json` file specifies which runtime the project is targeting. A project can be published to the server with an earlier or with the same runtime version as the server. 
 
-## Current available runtime versions
+## Currently available runtime versions
 
-The available options are:
+The available options for setting the `runtime` in AL are:
 
 |Runtime version|Shipped with                       |
 |---------------|-----------------------------------|
@@ -36,7 +36,7 @@ The available options are:
 |`6.4`          |Business Central 2020 release wave 2 update 17.4|
 |`7.0`          |Business Central 2021 release wave 1|
 
-## Best practices on setting runtime version
+## Best practices on setting the runtime version
 
 Setting the runtime to be most optimal depends on the circumstances. If you, for example, have customers that run on older versions, you should set the runtime to be the minimum version that works. But it is then a best practices, to have a daily or weekly build that tests the extension against the latest version of the runtime. Testing against the latest runtime is recommended to detect new diagnostics, such as warnings or errors, that are introduced in the compiler or changes in the platform runtime.
 
