@@ -43,13 +43,12 @@ The response has no content; the response code is 204.
 | Property           | Type   |Description     |
 |:-------------------|:-------|:---------------|
 |systemId|GUID|The unique ID of the system.|
-|schedule|string|Specifies the schedule for installation.|
+|schedule|string|Specifies the schedule for installation. Values can be "Current version", "Next minor version", or "Next major version".|
 |extensionContent|stream|The content of the extension.|
 
 ## JSON representation
 
 Here is a JSON representation of the extensionUpload resource.
-
 
 ```json
 {

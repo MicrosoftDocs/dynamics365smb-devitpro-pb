@@ -31,7 +31,7 @@ Body: binary content of the extension
 |Header|Value|
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
-|Content-Type  |application/json|
+|Content-Type  |application/octet-stream|
 |If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **extensionUpload**, the **extension upload** will not be updated. |
 
 ## Request body

@@ -199,7 +199,7 @@ Content-type: application/json
 Once the extension upload record is created, an extension file can be uploaded with a [PATCH extensionUpload](api/dynamics_extensionupload_update.md). See the example below.
 
 ```json
-PATCH https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/extensionUpload({extensionUploadId})/content
+PATCH https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/extensionUpload({extensionUploadId})/extensionContent
 
 Authorization: Bearer {token}
 Content-type: application/octet-stream
