@@ -18,7 +18,7 @@ The capabilities and features of AL for [!INCLUDE[prod_short](../includes/prod_s
 
 The runtime in the `app.json` file specifies which runtime the project is targeting. A project can be published to the server with an earlier or with the same runtime version as the server. 
 
-## Current available runtimes
+## Current available runtime versions
 
 The available options are:
 
