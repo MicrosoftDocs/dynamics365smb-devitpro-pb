@@ -42,7 +42,7 @@ POST /microsoft/automation/v2.0/companies({companyId})/extensionUpload
 
 ### Request body
 
-In the request body, supply a JSON representation of a **extensionUpload** object.
+In the request body, supply a JSON representation of a [**extensionUpload** object](../resources/dynamics_extensionupload).
 
 ### Response
 
