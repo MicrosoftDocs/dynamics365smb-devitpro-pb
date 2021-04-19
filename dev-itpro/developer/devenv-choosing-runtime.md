@@ -36,6 +36,9 @@ The available options are:
 |`6.4`          |Business Central 2020 release wave 2 update 17.4|
 |`7.0`          |Business Central 2021 release wave 1|
 
+## Best practices on setting runtime version
+
+Setting the runtime to be most optimal depends on the circumstances. If you, for example, have customers that run on older versions, you should set the runtime to be the minimum version that works. But it is then a best practices, to have a daily or weekly build that tests the extension against the latest version of the runtime. Testing against the latest runtime is recommended to detect new diagnostics, such as warnings or errors, that are introduced in the compiler or changes in the platform runtime.
 
 ## See Also
 
