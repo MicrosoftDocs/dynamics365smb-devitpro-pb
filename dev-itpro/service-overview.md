@@ -47,7 +47,7 @@ For more information about Azure SQL, see [High availability for Azure SQL Datab
 
 ## Service updates
 
-[!INCLUDE [minor-updates](includes/minor-updates.md)]
+[!INCLUDE [service-updates](includes/service-updates.md)]
 
 For each environment, administrators can set a maintenance window for when Microsoft is allowed to update that environment. For more information, see [Managing Updates in the Business Central Admin Center](administration/tenant-admin-center-update-management.md). Microsoft then schedules updates of the business functionality to be applied during these maintenance windows.  
 
