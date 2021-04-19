@@ -3,7 +3,7 @@ title: "User Scenario Documentation"
 description: "Describing how to generate the required scenario document to get your app approved for AppSource."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/14/2021
 ms.reviewer: edupont
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,7 +17,7 @@ ms.author: freddyk
 One of the keys to a successful extension validation is a document that guides the tester through the setup and usage of the extension. You must include a document that helps Microsoft test some of the key scenarios of your extension. We want to ensure that we are validating the functionality in the correct manner. Following are some key points to keep in mind when writing the user scenario document.
 
 - Be as detailed as possible. No detail is too small. If a field needs a specific value, include that value in your document.
-- Keep the inexperienced user in mind. You know your app well, but other users Microsoft does not.
+- Keep the inexperienced user in mind. You know your app well, but other users do not.
 - Use screenshots as much as possible. They provide a good picture of what you want the user to accomplish.
 - Provide all prerequisite and setup steps required for successful test scenario completion.  
 
@@ -46,19 +46,19 @@ We recommend that you use Docker as a guide for writing your user scenario docum
 Here is an example of the level of detail we are looking for, based on running the Assisted Setup wizard:
 
 1. On the Home Page, click the **Setup & Extensions** dropdown
-2. Click **Assisted Setup**
-3. Click the **Set up reporting data** link
+2. Choose **Assisted Setup**
+3. Choose the **Set up reporting data** link
 4. This will launch the wizard for this process
 
     > [!div class="mx-imgBorder"]
     > ![Assisted Setup Wizard page 1](../media/apptest/apptest_userdoc_wizard1.png)
 
-5. Click **Next**
+5. Choose **Next**
 
     > [!div class="mx-imgBorder"]
     > ![Assisted Setup Wizard page 2](../media/apptest/apptest_userdoc_wizard2.png)
 
-6. Click **Next**
+6. Choose **Next**
 7. New Name = TestReport1
 8. Data Source Type = Page
 9. Data Source Id = 22
@@ -67,12 +67,12 @@ Here is an example of the level of detail we are looking for, based on running t
     > [!div class="mx-imgBorder"]
     > ![Assisted Setup Wizard page 3](../media/apptest/apptest_userdoc_wizard3.png)
 
-11. Click **Next**
+11. Choose **Next**
 
     > [!div class="mx-imgBorder"]
     > ![Assisted Setup Wizard page 4](../media/apptest/apptest_userdoc_wizard4.png)
 
-12. Click **Publish**
+12. Choose **Publish**
 
 ## See Also
 

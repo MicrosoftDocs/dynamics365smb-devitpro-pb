@@ -1,6 +1,6 @@
 ---
-title: Manage the cloud migration
-description: Get a cloud copy of your data so you are connected to the intelligent cloud also when you have an on-premises solution based on Business Central, Dynamics GP, or Dynamics NAV.
+title: Manage the migration to the cloud from your Business Central online
+description: Migrate your data to the cloud from an on-premises solution based on Business Central, Dynamics GP, or Dynamics NAV.
 author: bmeier94
 
 ms.service: dynamics365-business-central
@@ -10,7 +10,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
 ms. search.keywords: cloud, edge
-ms.date: 01/27/2021
+ms.date: 04/01/2021
 ms.author: edupont
 
 ---

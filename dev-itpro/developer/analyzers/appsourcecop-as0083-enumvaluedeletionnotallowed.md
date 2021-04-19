@@ -2,7 +2,7 @@
 title: "It is not allowed to delete a value from an enum."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/25/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AppSourceCop Rule AS0083
-It is not allowed to delete a value from an enum.  
+It is not allowed to delete a value from an enum.
 
 ## Description
 Deleting an enum value is not allowed, unless the enum is marked as obsolete. This restriction prevents dependent extensions from breaking, if they use the enum value.

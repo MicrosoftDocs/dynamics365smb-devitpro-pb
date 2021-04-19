@@ -2,7 +2,7 @@
 title: User Permissions and Security in Business Central
 description: Provides information about managing user access to the database based on permissions and the different levels of security.
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

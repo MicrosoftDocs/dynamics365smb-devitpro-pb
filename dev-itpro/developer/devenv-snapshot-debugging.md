@@ -3,7 +3,7 @@ title: "Snapshot Debugging"
 description: "Overview of how snapshot debugging allows recording running AL code for Business Central"
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 01/08/2021
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
@@ -148,7 +148,7 @@ Snapshot debugging is almost the same as a regular debugging with the difference
 [Developing Extensions](devenv-dev-overview.md)  
 [JSON Files](devenv-json-files.md)  
 [AL Code Navigation](devenv-al-code-navigation.md)  
-[EnableLongRunningSQLStatements Property](properties/devenv-enablelongrunningsqlstatements-property.md)  
-[EnableSQLInformationDebugger Property](properties/devenv-enablesqlinformationdebugger-property.md)  
-[LongrunningSQLStatementsThreshold Property](properties/devenv-longrunningsqlstatementsthreshold-property.md)  
-[NumberOfSQLStatements Property](properties/devenv-numberofsqlstatements-property.md)  
+[EnableLongRunningSQLStatements Property](./properties/devenv-properties.md)  
+[EnableSQLInformationDebugger Property](./properties/devenv-properties.md)  
+[LongrunningSQLStatementsThreshold Property](./properties/devenv-properties.md)  
+[NumberOfSQLStatements Property](./properties/devenv-properties.md)

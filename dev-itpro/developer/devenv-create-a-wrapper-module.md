@@ -9,7 +9,7 @@ ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: bholtorf
-ms.date: 11/25/2020
+ms.date: 04/01/2021
 ---
 
 # Create a .NET Wrapper Module

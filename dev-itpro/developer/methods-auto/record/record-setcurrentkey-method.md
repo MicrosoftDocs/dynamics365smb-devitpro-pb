@@ -2,7 +2,7 @@
 title: "Record.SetCurrentKey Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Record.SetCurrentKey Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Selects a key for a table.
 
@@ -46,7 +46,7 @@ An instance of the [Record](record-data-type.md) data type.
 
 ## Remarks 
 
-You can use SetCurrentKey for selecting a key and sorting When you use SetCurrentKey the following rules apply:  
+You can use SetCurrentKey for selecting a key and sorting. When you use SetCurrentKey the following rules apply:  
 
 - Inactive fields are ignored. Only active keys are scanned.  
 

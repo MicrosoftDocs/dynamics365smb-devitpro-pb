@@ -1,7 +1,7 @@
 ---
 title: "Monitoring SQL Database Locks"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -33,7 +33,7 @@ The **Database Locks** page gives a snapshot of all current database locks in SQ
 |--------------|---------------|
 |Table Name|Specifies the name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] table affected by the lock.|
 |SQL Lock Resource Type|Specifies the database resource affected by the lock, such as DATABASE, FILE, OBJECT, PAGE, KEY, and more.|  
-|SQL Lock Request Mode|Specifies the lock mode that determines how concurrent transactions can access the resource. For more information, see /sql/relational-databases/sql-server-transaction-locking-and-row-versioning-guide [Lock Modes](https://aka.ms/sqldatabaselockmodes).|
+|SQL Lock Request Mode|Specifies the lock mode that determines how concurrent transactions can access the resource. For more information, see /sql/relational-databases/sql-server-transaction-locking-and-row-versioning-guide [Lock Modes](/previous-versions/sql/sql-server-2008-r2/ms175519(v=sql.105)).|
 |SQL Lock Request Status|Specifies the current status of the lock, which can be one of the following:</br></br>**CNVRT** means that the lock is transitioning from another mode, but the conversion is blocked by another process that holds a lock with a conflicting mode.</br>**GRANT** means that the lock is active.</br>**WAIT** means that the lock is blocked by another process that holds a lock with a conflicting mode.|
 |Executing AL Object Type|Specifies the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] object in AL that is running the transaction, such as a page or report.|
 |Executing AL Object Id|Specifies the ID of the object that is running.|
@@ -42,4 +42,4 @@ The **Database Locks** page gives a snapshot of all current database locks in SQ
 ##  See Also
 
 [Viewing Database Locks](/dynamics365/business-central/admin-view-database-locks)  
-[Monitoring SQL Database Deadlocks](monitor-database-deadlocks.md)  
+[Monitoring SQL Database Deadlocks](monitor-database-deadlocks.md)

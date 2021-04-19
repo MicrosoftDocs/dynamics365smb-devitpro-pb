@@ -2,7 +2,7 @@
 title: "Handling Errors by Using Try Methods"
 description: Try methods in AL enable you to handle errors that occur in the application during code execution.
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -97,7 +97,7 @@ When you run the codeunit, instead of stopping the execution of the `OnRun` trig
 <!--
 ## Example 2 
 
-The following example illustrates how to use a try method with .NET interoperabilty. The example uses the [System.Decimal.Divide method](https://msdn.microsoft.com/library/system.decimal.divide(v=vs.110).aspx) to divide two decimals. 
+The following example illustrates how to use a try method with .NET interoperabilty. The example uses the [System.Decimal.Divide method](/dotnet/api/system.decimal.divide) to divide two decimals. 
 
 First, create a codeunit that has a local method `MyTrymethod`, and add the following text constants and variables:
 

@@ -3,7 +3,7 @@ title: "Introduction to automation APIs"
 description: APIs used to hydrate a Dynamics 365 Business Central tenant. Using the automation APIs, companies can be created, extensions installed, permissions assigned, and RapidStart packages applied.
 author: henrikwh
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -42,11 +42,11 @@ The {companyId} must be the ID of an valid company on the tenant. Issue a [GET a
 > [!NOTE]  
 > The company which is created will not be initialized.
 
-To rename a company, issue a [PATCH automationCompanies](dynamics-microsoft-automation-automationcompanies-patch.md).
+To rename a company, issue a [PATCH automationCompanies](/dynamics365/business-central/dev-itpro/administration/resources/automationcompany).
 
 ## Upload and apply a RapidStart package
 
-RapidStart is uploaded, installed, and applied using the APIs described below. RapidStart operations can be time consuming. To get the current status of the RapidStart packages and running operations issue a [GET configurationPackages](dynamics-microsoft-automation-configurationpackage-get.md) as shown in the following example.
+RapidStart is uploaded, installed, and applied using the APIs described below. RapidStart operations can be time consuming. To get the current status of the RapidStart packages and running operations issue a [GET configurationPackages](/dynamics365/business-central/dev-itpro/administration/resources/configurationpackage) as shown in the following example.
 
 ```json
 GET https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/configurationPackages
@@ -163,7 +163,7 @@ Add-on extensions which are already published to the tenant can be installed and
 
 There are three bound actions available on the **extensions** endpoint: `Microsoft.NAV.install`, `Microsoft.NAV.uninstall` and `Microsoft.NAV.uninstallAndDeleteExtensionData`.
 
-Issue a [POST extension](api/dynamics_extension_create.md) using the bound actions. See the example below.
+Issue a POST extension using the bound actions. See the example below.
 
 ```json
 POST https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/2.0/companies({companyId})/extensions({packageId})/Microsoft.NAV.install
@@ -240,4 +240,4 @@ GET https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microso
 [User](resources/dynamics_user.md)  
 [User group](resources/dynamics_usergroup.md)  
 [User group member](resources/dynamics_usergroupmember.md)  
-[User permission](resources/dynamics_userpermission.md)  
+[User permission](resources/dynamics_userpermission.md)

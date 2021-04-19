@@ -1,7 +1,7 @@
 ---
 title: "How to: Use Performance Monitor to Collect Event Trace Data"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -76,11 +76,11 @@ This topic describes how to use Windows Performance Monitor to collect event tra
   
 -   To stop collecting data, right-click the Data Collector Set, and then choose **Stop**.  
   
- For information about how to schedule a time to start and stop collecting data, see [Schedule Data Collection in Windows Performance Monitor](https://technet.microsoft.com/library/cc722312.aspx).  
+ For information about how to schedule a time to start and stop collecting data, see [Schedule Data Collection in Windows Performance Monitor](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc722312(v=ws.11)).  
   
  The collected event trace data is stored in an event trace log \(.etl\) file in the location that you specified. You can view the data in the log file by using various industry-standard tools, such as PerfView. For information about how to use PerfView to view the event trace data, see [Use PerfView to View Event Trace Data](monitor-use-perfview-view-event-trace-data.md).  
   
 ## See Also  
  [Monitoring Business Central Server Events](monitor-server-events.md)   
  [Use PerfView to View Event Trace Data](monitor-use-perfview-view-event-trace-data.md)  
- [Instrumenting an Application for Telemetry](../developer/devenv-instrument-application-for-telemetry.md)  
+ [Instrumenting an Application for Telemetry](../developer/devenv-instrument-application-for-telemetry.md)

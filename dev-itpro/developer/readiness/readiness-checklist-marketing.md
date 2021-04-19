@@ -3,7 +3,7 @@ title: "Marketing Validation Checklist"
 description: "The marketing checklist for validation of Business Central apps"
 author: a-emniel
 ms.custom: na
-ms.date: 11/24/2020
+ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.topic: reference
 ms.service: "dynamics365-business-central"
@@ -38,7 +38,6 @@ The following section walks you through the marketing-related components, that i
 |-----------|--------------|--------------|
 |App type|Read more about the  types of apps you can submit to AppSource. | [Read more](readiness-checklist-e-industries-categories-apptype.md#app-type) |
 |Contact type| How do you want potential customers to interact with your offer? | [Read more](readiness-checklist-e-industries-categories-apptype.md#contact-type)|
-|Test drive | If you choose “free trial” as the contact type of your offer, you need to enable a test drive. | [Read more](readiness-checklist-e-industries-categories-apptype.md#test-drive)|
 |Customer leads| Provide connection details to the CRM system where you would like to send customer leads.  | [Read more](readiness-checklist-e-industries-categories-apptype.md#customer-leads)|
 
 ### Properties

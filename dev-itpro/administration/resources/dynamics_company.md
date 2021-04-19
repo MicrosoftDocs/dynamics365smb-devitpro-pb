@@ -7,7 +7,7 @@ ms.topic: reference
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/19/2021
+ms.date: 04/01/2021
 ms.author: solsen
 ---
 
@@ -41,7 +41,7 @@ Represents a company in [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_m
 |[scheduledJobs](dynamics_scheduledjob.md)|scheduledJobs |Gets the scheduledjobs of the company.|
 |[permissionSets](dynamics_permissionset.md)|permissionSets |Gets the permissionsets of the company.|
 |[extensionUpload](dynamics_extensionupload.md)|extensionUpload |Gets the extensionupload of the company.|
-|[extensionDeploymentStatus](dynamics_extensiondeploymentstatu.md)|extensionDeploymentStatus |Gets the extensiondeploymentstatus of the company.|
+|[extensionDeploymentStatus](dynamics_extensiondeploymentstatus.md)|extensionDeploymentStatus |Gets the extensiondeploymentstatus of the company.|
 
 ## Properties
 

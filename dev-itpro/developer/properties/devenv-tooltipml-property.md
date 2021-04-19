@@ -2,7 +2,7 @@
 title: "ToolTipML Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/24/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # ToolTipML Property
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Sets the text used for the tooltip of an action, a field, a FactBox, or an activity button. In the client, tooltips appear when you point to caption of the control.
 
@@ -27,7 +27,6 @@ Sets the text used for the tooltip of an action, a field, a FactBox, or an activ
 -   Page Action Area
 -   Page Action
 -   Page Action Group
-
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -54,7 +53,7 @@ The ToolTipML property value has the following format.
 <Language ID>=<tooltip>  
 ```  
 
-<Language ID> is a Windows standard three-letter language ID and <caption> is the caption text for this language. Semicolons are used to separate entries.  
+`<Language ID>` is a Windows standard three-letter language ID and `<caption>` is the caption text for this language. Semicolons are used to separate entries.  
 
 In the following example, values are set for Danish (DAN) and English (ENG).  
 

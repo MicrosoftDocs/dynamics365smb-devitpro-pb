@@ -2,7 +2,7 @@
 title: Known Issues with On-premises
 description: Provides an overview of the known issues in Business Central versions
 ms.custom: na
-ms.date: 02/08/2021
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,6 +18,50 @@ This article describes some known issues in [!INCLUDE[prod short](../developer/i
 
 > [!NOTE]
 > The article doesn't include a complete list of known issues. Instead, it addresses some common issues that you might experience or might consider when upgrading to a version. If you're aware of issues that aren't in this article, or you'd like more help, see [Resources for Help and Support](../help-and-support.md).
+
+## Package Microsoft .NET Core Windows Server Hosting failed with error
+
+> Applies to: All versions up to and including version 18.0.
+
+### Problem
+
+When you install [!INCLUDE [prod_short](../includes/prod_short.md)] on premises, installation may fail with the error `Package Microsoft .NET Core Windows Server Hosting failed with error`, or with error code 1638, when the installer attempts to install prerequisite components.  
+
+This occurs when a version of Windows Server Hosting is installed on the server that is newer than version 2.1.14, which is what [!INCLUDE [prod_short](../includes/prod_short.md)] attempts to install from its installation folder.  
+
+The issue only occurs when the currently installed version is a newer minor version, not a newer major version of Windows Server Hosting.  
+
+### Impact
+
+Installation will fail and will be rolled back.
+
+### Workaround
+
+The issue can be resolved in different ways:
+
+* Manually install Windows Server Hosting version 3 or later before you install Business Central components.
+* Uninstall Windows Server Hosting from your server before you install Business Central
+* Use the installer from Business Central version 18.1 or later. In those versions, Business Central will skip installing Windows Server Hosting as a prerequisite component if the installer determines that newer Windows Server Hosting components are already installed on the server.
+
+
+<!-- never included 
+## <a name="azuregqlmi"></a>Can't convert version 14 and earlier databases on Azure SQL Managed Instance to later Business Central platform
+
+defect 395751 https://dynamicssmb2.visualstudio.com/Dynamics%20SMB/_workitems/edit/395751
+
+> Applies to: 15.0-15.17, 16.0-16.12, 17.0-17.6, 18.0
+
+### Problem
+
+Converting a database from one of these versions requires that your account is a member of the **dbmanager** server role in the master database, and that the database can run in single-user mode. However, Azure SQL Managed Instance doesn't support these prerequisites.
+
+### Impact
+
+You won't be able to successfully convert the database from it's current platform the later version, which prevents you from completing technical and application upgrade scenarios. If you try to convert the database, you'll get an error similar to `Alter Database set Single_User failed`.
+
+### Workaround
+
+We recommend that use the latest update for the target version &mdash; at minimum 15.18, 16.13, 17.7, or 18.1. This issue has been fixed in these versions. Otherwise, you can make a BACPAC of the database and restore it to an on-premise SQL Server. Then, run the conversion against the SQL Server database, and restore BABPAC to Azure SQL Managed Instance.-->
 
 ## <a name="keys"></a>Primary key mismatch between converted tables in local 14 versions and Microsoft Base Application
 <!--https://dynamicssmb2.visualstudio.com/Dynamics%20SMB/_workitems/edit/387119 -->

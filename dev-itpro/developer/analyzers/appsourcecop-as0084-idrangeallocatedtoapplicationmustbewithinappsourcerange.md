@@ -2,7 +2,7 @@
 title: "The ID range assigned to the extension must be within the allowed range"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/25/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AppSourceCop Rule AS0084
-The ID range assigned to the extension must be within the allowed range  
+The ID range assigned to the extension must be within the allowed range
 
 ## Description
 The ID range assigned to the extension must be within the range allowed for AppSource applications.
@@ -29,7 +29,7 @@ For more information about the object ID ranges in Business Central, see [Object
 
 For more information about the properties in the `app.json` file, see [JSON Files](../devenv-json-files.md).
 
-## How to fix this diagnostic
+## How to fix this diagnostic?
 
 If you are targetting the AppSource markeplace, you need to update the ID range in your `app.json` file with the one that Microsoft provided you with.
 

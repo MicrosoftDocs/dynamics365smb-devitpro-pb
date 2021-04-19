@@ -2,7 +2,7 @@
 title: "Deprecating Explicit and Implicit With Statements"
 description: "Rationale and description of why explicit and implicit with statements are deprecated in AL"
 ms.custom: na
-ms.date: 10/07/2020
+ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -264,4 +264,6 @@ It is also possible to use `#pragma` to suppress individual warnings for one or 
 [Pragma Directive](directives/devenv-directive-pragma.md)  
 [Pragma ImplicitWith](directives/devenv-directive-pragma-implicitwith.md)  
 [Pragma Warning](directives/devenv-directive-pragma-warning.md)  
+[Best Practices for Deprecation of Code in the Base App](devenv-deprecation-guidelines.md)  
+[Microsoft Timeline for Deprecating Code in Business Central](devenv-deprecation-timeline.md)  
 [AL Simple Statements](devenv-al-simple-statements.md)

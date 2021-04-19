@@ -6,7 +6,7 @@ ms.custom: na
 ms.reviewer: na
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
-ms.date: 12/16/2020
+ms.date: 04/01/2021
 ms.author: edupont
 ---
 
@@ -246,6 +246,8 @@ Rather than copy-pasting content that you want to surface in two or more places,
 
 ### File naming
 
+In this section, we describe best practices for file names of MarkDown files that will publish to a website. The guidelines make the files easier to work with and better for search engines to index.
+
 #### Rules
 
 - No spaces or punctuation characters. Use hyphens to separate the words in the file name.
@@ -255,7 +257,9 @@ Rather than copy-pasting content that you want to surface in two or more places,
 - No small words - don't include a, and, the, in, or, etc.
 - All files must be in markdown and use the .md file extension.
 
-#### Examples
+    New FAQ files must use YAML format. For an example, see the `https://github.com/MicrosoftDocs/dynamics365smb-docs/blob/live/business-central/faq-copy-paste.yml` file.
+
+#### Examples of file names
 
 |Topic title |Naming  |
 |------------|--------|
@@ -271,7 +275,62 @@ Rather than copy-pasting content that you want to surface in two or more places,
 
 ### Country-specific content
 
-To simplify content localization and translation, country-specific articles live in country-specific folders. The TOC entries live under the "Local Functionality" parent node.
+To simplify content localization and translation, country-specific articles live in country-specific folders. The TOC entries live under the "Local Functionality" parent node.  
+
+## User interface text
+
+If you're a technical writer, then you're likely to either write or edit user interface text, such as captions, warnings and error messages, tooltips, and teaching tips. In this section, we describe our internal guidance, but you can choose differently.  
+
+### Tooltips
+
+[!INCLUDE [ua-tooltips](../includes/ua-tooltips.md)]
+
+#### Examples of tooltips
+
+[!INCLUDE [ua-tooltips-examples](../includes/ua-tooltips-examples.md)]
+
+### Errors, warnings, and other messages
+
+Messages that users see when they work in [!INCLUDE [prod_short](../developer/includes/prod_short.md)], some as  confirmations, others as warnings, for example, are defined in code. In this section, we describe key things to keep in mind when writing or editing this type of user interface text.
+
+- Be brief but descriptive with clear call to action.
+
+    Especially true for errors and warnings that must help the user unblock themselves.
+
+- Write to be understood worldwide.
+
+  - Write content that's easy to read and translate.  
+  - Avoid long, complex sentences. Break them up into shorter sentences that are easier to read and comprehend.
+  - Use lists and tables instead of complicated sentences and paragraphs.  
+  - Use standard English grammar. In particular, avoid incomplete sentences.  
+  - Include words that native English speakers often omit, such as that and the.  
+
+- Only use placeholders for variables and field values where the result depends on context.  
+
+    Write out all static captions, where the value is always known.  
+
+- All placeholders complicate translation, also valid ones, even when they are preceded by code comments.  
+
+    A typical challenge is to determine the gender of the noun that a placeholder represents. This is problematic for target languages such as French, German, and Russian.
+
+    |Use|Instead of  |
+    |---------|---------|
+    |The document has been posted. | The %1 has been posted. (Translators cannot determine the gender.) |
+    |The Unit Cost field is updated. | The %1 field is updated. (Where %1 always represents "Unit Cost".)|
+    |Document %1 contains invalid characters. (Where %1 represents a given document ID.) ||
+    |Option %1 is not supported. (Where %1 represents one of more options.) ||
+
+- Do not place quotation marks around placeholders.
+
+    However, if the placeholder represents free-text user input that is hard to distinguish, such as a payment comment on a bank transaction. The quotation marks then helps to distinguish the user input from other parts of the message.  
+
+    Example: *The payment line with transaction text '%1' is not applied.*, where %1 = `Hi - here is my payment of invoice 1223344`.  
+
+### Teaching tips
+
+[!INCLUDE [2021_releasewave1](../includes/2021_releasewave1.md)]
+
+[!INCLUDE [ua-teaching-tips](../includes/ua-teaching-tips.md)]
 
 ## See also
 

@@ -2,7 +2,7 @@
 title: "The property 'url' must be set to a valid URL"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AppSourceCop Rule AS0052
-The property 'url' must be set to a valid URL  
+The property 'url' must be set to a valid URL
 
 ## Description
 The property 'url' must be set to a valid URL.

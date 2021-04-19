@@ -4,7 +4,7 @@ description: "Best Practices for writing AL code."
 
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 11/24/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
@@ -63,6 +63,8 @@ Use the listed abbreviations for each type of object in the file naming:
 |Dotnet    |Dotnet|
 |Profile   |Profile|
 |Interface |Interface|
+|Permission Set|PermissionSet|
+|Permission Set Extension|PermissionSetExt|
 
 ### Examples of object naming
 

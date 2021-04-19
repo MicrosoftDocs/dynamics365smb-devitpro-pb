@@ -2,7 +2,7 @@
 title: "Notification.GetData Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,9 +14,9 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Notification.GetData Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
-Retrieves data that was passed to a notification instance as specified by a SetData method call.
+Retrieves data that was passed to a notification instance as specified by a SETDATA method call.
 
 
 ## Syntax
@@ -30,7 +30,7 @@ An instance of the [Notification](notification-data-type.md) data type.
 
 *Name*  
 &emsp;Type: [String](../string/string-data-type.md)  
-The name of the data item that is specified by the SetData method call.  
+The name of the data item that is specified by the SETDATA method call.  
 
 
 ## Return Value

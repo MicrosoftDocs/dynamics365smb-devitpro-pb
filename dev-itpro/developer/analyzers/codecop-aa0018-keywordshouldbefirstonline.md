@@ -2,7 +2,7 @@
 title: "The END, IF, REPEAT, UNTIL, FOR, WHILE, and CASE statement should always start a line."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # CodeCop Rule AA0018
-The END, IF, REPEAT, UNTIL, FOR, WHILE, and CASE statement should always start a line.  
+The END, IF, REPEAT, UNTIL, FOR, WHILE, and CASE statement should always start a line.
 
 ## Description
 The END, IF, REPEAT, UNTIL, FOR, WHILE, and CASE statement should always start a line.

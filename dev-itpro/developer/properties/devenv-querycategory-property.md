@@ -2,7 +2,7 @@
 title: "QueryCategory Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/24/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # QueryCategory Property
-> **Version**: _Available from runtime version 3.0._
+> **Version**: _Available or changed with runtime version 3.0._
 
 Used to indicate a given query can be made available as views displayed on certain main entity lists. On queries, the QueryCategory property specifies one or more query categories that the object supports. On pages, QueryCategory specifies the query category that the page supports.
 
@@ -22,13 +22,7 @@ Used to indicate a given query can be made available as views displayed on certa
 -   Page
 -   Query
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-
-## Applies to  
-
-- Queries
-- Pages
 
 ## Syntax
 

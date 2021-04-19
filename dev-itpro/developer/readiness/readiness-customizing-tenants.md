@@ -3,7 +3,7 @@ title: "Customizing Tenants"
 description: ""
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -47,4 +47,4 @@ To learn more about customization, select the following links:
 - [Using Designer](../devenv-inclient-designer.md)  
 - [Getting started with AL](../devenv-get-started.md)  
 - [AL Development Environment](../devenv-reference-overview.md)  
-- [Business Central Learning Catalog](https://go.microsoft.com/fwlink/?linkid=2002101)  
+- [Business Central Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-catalog)

@@ -3,7 +3,7 @@ title: "Write, WriteText, Read, and ReadText Method Behavior"
 description: "Write, WriteText, Read, and ReadText Method Behavior for Line Endings and Zero Terminators."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -51,8 +51,8 @@ begin
     MyInStream.Read(Result); // Reads A\B\C
     Message(Result);
 
-    CRLF[1] := 10;
-    CRLF[2] := 13;
+    CRLF[1] := 13;
+    CRLF[2] := 10;
     MyRecord.MyBlobField.CreateOutStream(MyOutStream);
     MyOutStream.WRITE('A' + CRLF + 'B');
     MyOutStream.WRITE('C');

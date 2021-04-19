@@ -1,6 +1,6 @@
 ---
 title: Migrate from Dynamics GP to Business Central online
-description: Get a cloud tenant so you can migrate to the cloud from Dynamics GP.
+description: Learn how to migrate to the cloud from Dynamics GP using an assisted setup guide in Business Central online.
 
 author: jenolson
 ms.service: dynamics365-business-central
@@ -10,7 +10,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
 ms. search.keywords: cloud, edge, gp, migration
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.author: edupont
 
 ---

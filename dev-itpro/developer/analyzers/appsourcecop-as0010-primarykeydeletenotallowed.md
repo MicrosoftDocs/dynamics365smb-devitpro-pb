@@ -2,7 +2,7 @@
 title: "Keys must not be deleted, since dependent extensions may break"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/25/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AppSourceCop Rule AS0010
-Keys must not be deleted, since dependent extensions may break  
+Keys must not be deleted, since dependent extensions may break
 
 ## Description
 The primary key must not be changed.

@@ -1,7 +1,7 @@
 ---
 title: "Monitoring Microsoft Dynamics 365 Business Central Server Events"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,7 +18,7 @@ You can monitor events on [!INCLUDE[server](../developer/includes/server.md)] to
 
  Events that occur on [!INCLUDE[server](../developer/includes/server.md)] instances are recorded in Windows Event logs on the [!INCLUDE[server](../developer/includes/server.md)] computer. [!INCLUDE[prod_long](../developer/includes/prod_long.md)] uses channels on all events. Event channels provide a way to collect and view events from a specific provider, which in this case is [!INCLUDE[server](../developer/includes/server.md)], and group the events according to predefined types, such as admin, operational, and debug. For example, in Event Viewer, [!INCLUDE[server](../developer/includes/server.md)] instance events are collected in the Admin, Operational, and Debug channel logs for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] in the Applications and Services Logs.  
 
- For more general information about ETW and event channels, see [Event Tracing for Windows](https://go.microsoft.com/fwlink/?LinkID=313939) and [Event Logs and Channels in Windows Event Log](https://go.microsoft.com/fwlink/?LinkID=517298).  
+ For more general information about ETW and event channels, see [Event Tracing for Windows](/windows/win32/etw/event-tracing-portal) and [Event Logs and Channels in Windows Event Log](/previous-versions//aa385225(v=vs.85)).  
 
 ## Monitoring Business Central Server Event Traces
 Event tracing provides detailed information about what is occurring on the [!INCLUDE[server](../developer/includes/server.md)] and application when users work with [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. This can help you identify and analyze problems or conditions that affect performance. Event tracing enables you to dynamically monitor [!INCLUDE[server](../developer/includes/server.md)] without having to restart the server or [!INCLUDE[prod_short](../developer/includes/prod_short.md)] clients. By using industry-standard tools for event tracing, you can start and stop event tracing sessions, and then view the trace event data from a stored log file.  
@@ -51,4 +51,4 @@ There are various industry-standard tools that you can use to collect event trac
   
 ## See Also    
 [Business Central Server Trace Events](server-trace-events.md)  
-[Business Central Server Admin and Operational Events](server-events.md)  
+[Business Central Server Admin and Operational Events](server-events.md)
