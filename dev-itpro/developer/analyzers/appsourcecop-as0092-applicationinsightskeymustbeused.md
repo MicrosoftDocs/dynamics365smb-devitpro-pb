@@ -40,7 +40,7 @@ See [JSON Files](../developer/devenv-json-files.md), for additional information 
 
 ## Code example triggering the rule
 
-This rule is triggered when the 'applicationInsightsKey' property is not specified in the manifest (app.json) of the extension, or when its value is set to the empty guid.
+This rule is triggered when the 'applicationInsightsKey' property is not specified in the manifest (app.json) of the extension, or when its value is set to the empty GUID.
 
 ```JSON
 {
@@ -50,7 +50,7 @@ This rule is triggered when the 'applicationInsightsKey' property is not specifi
 
 ## Benefits of using the Application Insights
 
-Using Application Insights provides telemetry to troubleshoot, understand and fix issues related to your extension in production.
+Using Application Insights provides telemetry to troubleshoot, understand, and fix issues related to your extension in production.
 
 ## Usage of Application Insights during the validation of AppSource submissions
 
