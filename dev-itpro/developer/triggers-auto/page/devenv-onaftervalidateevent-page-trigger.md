@@ -1,9 +1,9 @@
 ---
-title: "OnAfterValidateEvent (Page) Event Trigger"
+title: "OnAfterValidateEvent (Page) Trigger Event"
 ms.description: "Executed after the OnValidate (Page fields) trigger, which is called when a field loses focus after its value has been changed."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/16/2021
+ms.date: 04/20/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# OnAfterValidateEvent (Page) Event Trigger
+# OnAfterValidateEvent (Page) Trigger Event
 > **Version**: _Available or changed with runtime version 1.0._
 
 Executed after the OnValidate (Page fields) trigger, which is called when a field loses focus after its value has been changed.

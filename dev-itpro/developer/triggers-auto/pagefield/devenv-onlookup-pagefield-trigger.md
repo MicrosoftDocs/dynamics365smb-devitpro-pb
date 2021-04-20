@@ -71,4 +71,4 @@ You can use this trigger to write to the database.
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [OnLookup (Field) Trigger](../field/devenv-onlookup-field-trigger.md)  
-[OnLookup (Control Extension) Trigger](../pagefieldextension/devenv-onlookup-pagefieldextension-trigger.md)
+[OnLookup (Page Field Extension) Trigger](../pagefieldextension/devenv-onlookup-pagefieldextension-trigger.md)

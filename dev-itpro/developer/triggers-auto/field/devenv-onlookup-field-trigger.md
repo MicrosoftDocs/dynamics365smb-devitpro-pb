@@ -63,5 +63,5 @@ When using this trigger, follow this approach:
 ## See Also  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
-[OnLookup (Control) Trigger](../pagefield/devenv-onlookup-pagefield-trigger.md)  
-[OnLookup (Control Extension) Trigger](../pagefieldextension/devenv-onlookup-pagefieldextension-trigger.md)
+[OnLookup (Page Field) Trigger](../pagefield/devenv-onlookup-pagefield-trigger.md)  
+[OnLookup (Page Field Extension) Trigger](../pagefieldextension/devenv-onlookup-pagefieldextension-trigger.md)

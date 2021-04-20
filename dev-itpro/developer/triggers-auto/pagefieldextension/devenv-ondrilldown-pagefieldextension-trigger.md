@@ -46,4 +46,4 @@ This trigger overrides the [DrillDownPageID Property](../../properties/devenv-dr
 ## See Also  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
-[OnDrillDown (Control) Trigger](../pagefield/devenv-ondrilldown-pagefield-trigger.md)
+[OnDrillDown (Page Field) Trigger](../pagefield/devenv-ondrilldown-pagefield-trigger.md)

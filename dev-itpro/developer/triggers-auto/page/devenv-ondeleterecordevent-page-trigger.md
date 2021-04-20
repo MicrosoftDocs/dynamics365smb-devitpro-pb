@@ -1,9 +1,9 @@
 ---
-title: "OnDeleteRecordEvent (Page) Event Trigger"
+title: "OnDeleteRecordEvent (Page) Trigger Event"
 ms.description: "Executed after the OnDeleteRecord trigger, which is called before a record is deleted from a table."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/16/2021
+ms.date: 04/20/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# OnDeleteRecordEvent (Page) Event Trigger
+# OnDeleteRecordEvent (Page) Trigger Event
 > **Version**: _Available or changed with runtime version 1.0._
 
 Executed after the OnDeleteRecord trigger, which is called before a record is deleted from a table.

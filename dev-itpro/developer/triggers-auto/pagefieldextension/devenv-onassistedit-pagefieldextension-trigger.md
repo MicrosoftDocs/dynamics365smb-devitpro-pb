@@ -47,4 +47,4 @@ You can use this trigger to write to the database.
 ## See Also  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
-[OnAssistEdit (Control) Trigger](../pagefield/devenv-onassistedit-pagefield-trigger.md)
+[OnAssistEdit (Page Field) Trigger](../pagefield/devenv-onassistedit-pagefield-trigger.md)
