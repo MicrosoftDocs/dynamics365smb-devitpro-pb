@@ -163,7 +163,7 @@ At Fabrikam, another team is building another app, so you request a special affi
 |fab rentals salesperson code|salesperson code rentals fab|
 |FabRentalsSalesPersonCode|SalesPersonCodeRentalsfab|
 
-In this scenario, your appSourceCop.json configuration will specify `fab-rentals` and `rentals-fab` as values for `mandatoryaffixes`, even though only *fab* was registered with Microsoft.
+In this scenario, your AppSourceCop.json configuration will specify `fab-rentals` and `rentals-fab` as values for `mandatoryaffixes`, even though only *fab* was registered with Microsoft.
 
 ## See Also
 
