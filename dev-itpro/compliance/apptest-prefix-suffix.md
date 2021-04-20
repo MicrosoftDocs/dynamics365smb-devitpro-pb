@@ -20,7 +20,7 @@ In your extension, the name of each new application object (table, page, codeuni
 
 The use of affixes reduces name collisions with objects defined in other extensions.
 
-Environment that have extensions with name collisions can experience issues when deploying new extensions, when upgrading the environment, or when creating a sandbox as a copy of the current environment (for production environments).
+Environments that have extensions with name collisions can experience issues when deploying new extensions, when upgrading the environment, or when creating a sandbox as a copy of the current environment (for production environments).
 
 ## General rules
 
@@ -141,7 +141,7 @@ Let's look at some examples:
 
 ## Examples - AppSource app
 
-Alternatively, let's say your company is Fabrikam, and you're building an app called *Rentals*. First thing, you email [d365val@microsoft.com](mailto:d365val@microsoft.com) and register *fab* as your company affix.  
+Alternatively, let's say that your company is Fabrikam, and you're building an app called *Rentals*. First thing, you email [d365val@microsoft.com](mailto:d365val@microsoft.com) and register *fab* as your company affix.  
 
 A registered affix must be 3 letters, no more, no less, and you must provide the publisher name, which you will be using in app.json when you apply for an affix.  
 
