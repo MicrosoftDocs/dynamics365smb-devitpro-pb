@@ -12,7 +12,9 @@ author: SusanneWindfeldPedersen
 
 # Codeunit Properties 
 
-This topic lists properties that apply to the Codeunit object. 
+This article lists properties that apply to the Codeunit object.
+
+[!INCLUDE[properties_note](../includes/properties_note.md)]
 
 |Property Name|Applies to|
 |-------------|-----------|  
