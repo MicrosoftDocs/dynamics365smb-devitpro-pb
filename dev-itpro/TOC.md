@@ -313,6 +313,11 @@
 ## [Deprecating Explicit and Implicit With Statements](developer/devenv-deprecating-with-statements-overview.md)
 ## Events
 ### [Events in AL](developer/devenv-events-in-al.md)
+### Trigger Events
+<!-- [//]: # (START>DO_NOT_EDIT_TRIGGER_EVENTS)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.) -->
+<!-- [//]: # (IMPORTANT: END>DO_NOT_TRIGGER_EVENTS) -->
 ### [Event Types](developer/devenv-event-types.md)
 ### [Publishing Events](developer/devenv-publishing-events.md)
 ### [Raising Events](developer/devenv-raising-events.md)
