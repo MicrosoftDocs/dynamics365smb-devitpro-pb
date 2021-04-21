@@ -313,36 +313,6 @@
 ## [Deprecating Explicit and Implicit With Statements](developer/devenv-deprecating-with-statements-overview.md)
 ## Events
 ### [Events in AL](developer/devenv-events-in-al.md)
-### Trigger Events
-<!-- [//]: # (START>DO_NOT_EDIT_TRIGGER_EVENTS)
-[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.) -->
-#### Table Triggers
-##### [OnAfterDeleteEvent Trigger](developer/triggers-auto/events/table/devenv-onafterdeleteevent-table-trigger.md)
-##### [OnAfterInsertEvent Trigger](developer/triggers-auto/events/table/devenv-onafterinsertevent-table-trigger.md)
-##### [OnAfterModifyEvent Trigger](developer/triggers-auto/events/table/devenv-onaftermodifyevent-table-trigger.md)
-##### [OnAfterRenameEvent Trigger](developer/triggers-auto/events/table/devenv-onafterrenameevent-table-trigger.md)
-##### [OnAfterValidateEvent Trigger](developer/triggers-auto/events/table/devenv-onaftervalidateevent-table-trigger.md)
-##### [OnBeforeDeleteEvent Trigger](developer/triggers-auto/events/table/devenv-onbeforedeleteevent-table-trigger.md)
-##### [OnBeforeInsertEvent Trigger](developer/triggers-auto/events/table/devenv-onbeforeinsertevent-table-trigger.md)
-##### [OnBeforeModifyEvent Trigger](developer/triggers-auto/events/table/devenv-onbeforemodifyevent-table-trigger.md)
-##### [OnBeforeRenameEvent Trigger](developer/triggers-auto/events/table/devenv-onbeforerenameevent-table-trigger.md)
-##### [OnBeforeValidateEvent Trigger](developer/triggers-auto/events/table/devenv-onbeforevalidateevent-table-trigger.md)
-#### Page Triggers
-##### [OnAfterActionEvent Trigger](developer/triggers-auto/events/page/devenv-onafteractionevent-page-trigger.md)
-##### [OnAfterGetCurrRecordEvent Trigger](developer/triggers-auto/events/page/devenv-onaftergetcurrrecordevent-page-trigger.md)
-##### [OnAfterGetRecordEvent Trigger](developer/triggers-auto/events/page/devenv-onaftergetrecordevent-page-trigger.md)
-##### [OnAfterValidateEvent Trigger](developer/triggers-auto/events/page/devenv-onaftervalidateevent-page-trigger.md)
-##### [OnBeforeActionEvent Trigger](developer/triggers-auto/events/page/devenv-onbeforeactionevent-page-trigger.md)
-##### [OnBeforeValidateEvent Trigger](developer/triggers-auto/events/page/devenv-onbeforevalidateevent-page-trigger.md)
-##### [OnClosePageEvent Trigger](developer/triggers-auto/events/page/devenv-onclosepageevent-page-trigger.md)
-##### [OnDeleteRecordEvent Trigger](developer/triggers-auto/events/page/devenv-ondeleterecordevent-page-trigger.md)
-##### [OnInsertRecordEvent Trigger](developer/triggers-auto/events/page/devenv-oninsertrecordevent-page-trigger.md)
-##### [OnModifyRecordEvent Trigger](developer/triggers-auto/events/page/devenv-onmodifyrecordevent-page-trigger.md)
-##### [OnNewRecordEvent Trigger](developer/triggers-auto/events/page/devenv-onnewrecordevent-page-trigger.md)
-##### [OnOpenPageEvent Trigger](developer/triggers-auto/events/page/devenv-onopenpageevent-page-trigger.md)
-##### [OnQueryClosePageEvent Trigger](developer/triggers-auto/events/page/devenv-onqueryclosepageevent-page-trigger.md)
-<!-- [//]: # (IMPORTANT: END>DO_NOT_EDIT_TRIGGER_EVENTS) -->
 ### [Event Types](developer/devenv-event-types.md)
 ### [Publishing Events](developer/devenv-publishing-events.md)
 ### [Raising Events](developer/devenv-raising-events.md)
@@ -2438,9 +2408,35 @@
 #### [XmlVersionNo Property](developer/properties/devenv-xmlversionno-property.md)
 <!-- [//]: # (IMPORTANT: END>DO_NOT_EDIT_PROPERTIES) -->
 ### Triggers
+#### Trigger Events
 <!-- [//]: # (START>DO_NOT_EDIT_TRIGGERS)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.) -->
+##### Table Trigger Events
+###### [OnAfterDeleteEvent Trigger Event](developer/triggers-auto/events/table/devenv-onafterdeleteevent-table-trigger.md)
+###### [OnAfterInsertEvent Trigger Event](developer/triggers-auto/events/table/devenv-onafterinsertevent-table-trigger.md)
+###### [OnAfterModifyEvent Trigger Event](developer/triggers-auto/events/table/devenv-onaftermodifyevent-table-trigger.md)
+###### [OnAfterRenameEvent Trigger Event](developer/triggers-auto/events/table/devenv-onafterrenameevent-table-trigger.md)
+###### [OnAfterValidateEvent Trigger Event](developer/triggers-auto/events/table/devenv-onaftervalidateevent-table-trigger.md)
+###### [OnBeforeDeleteEvent Trigger Event](developer/triggers-auto/events/table/devenv-onbeforedeleteevent-table-trigger.md)
+###### [OnBeforeInsertEvent Trigger Event](developer/triggers-auto/events/table/devenv-onbeforeinsertevent-table-trigger.md)
+###### [OnBeforeModifyEvent Trigger Event](developer/triggers-auto/events/table/devenv-onbeforemodifyevent-table-trigger.md)
+###### [OnBeforeRenameEvent Trigger Event](developer/triggers-auto/events/table/devenv-onbeforerenameevent-table-trigger.md)
+###### [OnBeforeValidateEvent Trigger Event](developer/triggers-auto/events/table/devenv-onbeforevalidateevent-table-trigger.md)
+##### Page Trigger Events
+###### [OnAfterActionEvent Trigger Event](developer/triggers-auto/events/page/devenv-onafteractionevent-page-trigger.md)
+###### [OnAfterGetCurrRecordEvent Trigger Event](developer/triggers-auto/events/page/devenv-onaftergetcurrrecordevent-page-trigger.md)
+###### [OnAfterGetRecordEvent Trigger Event](developer/triggers-auto/events/page/devenv-onaftergetrecordevent-page-trigger.md)
+###### [OnAfterValidateEvent Trigger Event](developer/triggers-auto/events/page/devenv-onaftervalidateevent-page-trigger.md)
+###### [OnBeforeActionEvent Trigger Event](developer/triggers-auto/events/page/devenv-onbeforeactionevent-page-trigger.md)
+###### [OnBeforeValidateEvent Trigger Event](developer/triggers-auto/events/page/devenv-onbeforevalidateevent-page-trigger.md)
+###### [OnClosePageEvent Trigger Event](developer/triggers-auto/events/page/devenv-onclosepageevent-page-trigger.md)
+###### [OnDeleteRecordEvent Trigger Event](developer/triggers-auto/events/page/devenv-ondeleterecordevent-page-trigger.md)
+###### [OnInsertRecordEvent Trigger Event](developer/triggers-auto/events/page/devenv-oninsertrecordevent-page-trigger.md)
+###### [OnModifyRecordEvent Trigger Event](developer/triggers-auto/events/page/devenv-onmodifyrecordevent-page-trigger.md)
+###### [OnNewRecordEvent Trigger Event](developer/triggers-auto/events/page/devenv-onnewrecordevent-page-trigger.md)
+###### [OnOpenPageEvent Trigger Event](developer/triggers-auto/events/page/devenv-onopenpageevent-page-trigger.md)
+###### [OnQueryClosePageEvent Trigger Event](developer/triggers-auto/events/page/devenv-onqueryclosepageevent-page-trigger.md)
 #### Codeunit Triggers
 ##### [OnRun Trigger](developer/triggers-auto/codeunit/devenv-onrun-codeunit-trigger.md)
 ##### [OnCheckPreconditionsPerDatabase Trigger](developer/triggers-auto/codeunit/devenv-oncheckpreconditionsperdatabase-codeunit-trigger.md)
