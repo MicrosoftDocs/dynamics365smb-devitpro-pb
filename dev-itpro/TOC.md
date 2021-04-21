@@ -123,7 +123,7 @@
 ### [Report Generation Telemetry](administration/telemetry-reports-trace.md)
 ### [Incoming Web Services Requests Telemetry](administration/telemetry-webservices-trace.md)
 ### [Outgoing Web Services Requests Telemetry](administration/telemetry-webservices-outgoing-trace.md)
-### [Table Indexes](administration/telemetry-table-index-trace.md)
+### [Table Index Telemetry](administration/telemetry-table-index-trace.md)
 ### [Web Service Access Key Telemetry](administration/telemetry-webservices-access-key-trace.md)
 ### [Event IDs](administration/telemetry-event-ids.md)
 ## Administration Center
@@ -2673,7 +2673,7 @@
 #### [Report Generation Telemetry](administration/telemetry-reports-trace.md)
 #### [Incoming Web Services Requests Telemetry](administration/telemetry-webservices-trace.md)
 #### [Outgoing Web Services Requests Telemetry](administration/telemetry-webservices-outgoing-trace.md)
-#### [Table Indexes](administration/telemetry-table-index-trace.md)
+#### [Table Index Telemetry](administration/telemetry-table-index-trace.md)
 #### [Web Service Access Key Telemetry](administration/telemetry-webservices-access-key-trace.md)
 #### [Event IDs](administration/telemetry-event-ids.md)
 ### [Understanding Session Timeouts](administration/understanding-session-timeouts.md)
