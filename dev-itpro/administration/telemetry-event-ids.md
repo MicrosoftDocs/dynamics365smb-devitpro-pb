@@ -31,6 +31,10 @@ The following tables list the IDs of [!INCLUDE[prod_short](../developer/includes
 |AL0000E2D |Permissions|[Permission set removed from user: {alPermissionSetId}](telemetry-permission-changes-trace.md#removeduser)|
 |AL0000E2E |Permissions|[Permission set assigned to user group: {alPermissionSetId}](telemetry-permission-changes-trace.md#assignedusergroup)|
 |AL0000E2F |Permissions|[Permission set removed from user group: {alPermissionSetId}](telemetry-permission-changes-trace.md#removedusergroup)|
+|AL0000D3L |Retention Policy |[Retention Policy Log Entry Logged: {alMessageType}](telemetry-retention-policy-trace.md#info)|
+|AL0000D6H |Retention Policy|[Records Deleted Using Retention Policy: Deleted {alRecordsDeleted} records from Table {alTableNo}, {alTableName}](telemetry-retention-policy-trace.md#deleted)|
+|AL0000D6I|Retention Policy|[First retention policy enabled on: {alCompanyName}](telemetry-retention-policy-trace.md#first)|
+|AL0000D6J|	Retention Policy|[Last retention policy disabled on: {alCompanyName}](telemetry-retention-policy-trace.md#last)|
 
 ## Client events
 
