@@ -3,11 +3,12 @@ title: "Maintain AppSource apps and per-tenant extensions"
 description: "Learn about resources available to you as the publisher of an app or per-tenant extension for keeping your code in compliance with the base product."
 author: edupont04
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 04/21/2021
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: edupont
 ---
+
 # Maintain AppSource Apps and Per-Tenant Extensions in Business Central Online
 
 As a partner, keeping your apps and per-tenant extensions (PTEs) up to date is your responsibility. [!INCLUDE [prod_short](includes/prod_short.md)] is regularly updated with major and minor releases. These updates provide customers with a business application that is always compliant, secure, and enriched with new platform and application functionality. Often customers choose [!INCLUDE [prod_short](includes/prod_short.md)] because of this promise of having an always up-to-date business solution.  
@@ -58,6 +59,9 @@ Publishers have several tools available for them to keep their code in good shap
 
 > [!IMPORTANT]
 > Microsoft tests code based on technical compatibility. As the publisher, you are still responsible for all functional and logical validation.
+
+> [!NOTE]  
+> If an app has been published through AppSource, it should not be tested, installed, or in other ways treated as a PTE since this will create conflicts.
 
 ## When apps or PTEs cannot be updated by Microsoft
 
