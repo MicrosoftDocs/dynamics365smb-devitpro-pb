@@ -1,8 +1,9 @@
 ---
-title: "OnClosePageEvent (Page) Event Trigger"
+title: "OnOpenPageEvent (Page) Trigger Event"
+ms.description: "Executed after the OnOpenPage trigger, which is called after a page is initialized and run."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/14/2021
+ms.date: 04/21/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,15 +15,15 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# OnClosePageEvent (Page) Event Trigger
+# OnOpenPageEvent (Page) Trigger Event
 > **Version**: _Available or changed with runtime version 1.0._
 
-Executed after the OnClosePage trigger, which is called when page closes after the OnQueryClosePage trigger is executed.
+Executed after the OnOpenPage trigger, which is called after a page is initialized and run.
 
 
 ## Syntax
 ```
-trigger OnClosePageEvent(Rec: Record)
+trigger OnOpenPageEvent(Rec: Record)
 begin
     ...
 end;
@@ -31,12 +32,12 @@ end;
 ### Parameters
 
 *Rec*  
-&emsp;Type: [Record](../../methods-auto/record/record-data-type.md)  
+&emsp;Type: [Record](../../../methods-auto/record/record-data-type.md)  
 The table that raises the event.  
 
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
-[Getting Started with AL](../../devenv-get-started.md)  
-[Developing Extensions](../../devenv-dev-overview.md)  
+[Getting Started with AL](../devenv-get-started.md)  
+[Developing Extensions](../devenv-dev-overview.md)  
