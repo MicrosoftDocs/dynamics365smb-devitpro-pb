@@ -23,7 +23,8 @@ Executed after the OnNewRecord trigger, which is called before a new record is i
 
 ## Syntax
 ```
-trigger OnNewRecordEvent(Rec: Record, BelowxRec: Boolean, xRec: Record)
+[EventSubscriber(ObjectType::Page, Page::<Page Name>, 'OnNewRecordEvent', '', <SkipOnMissingLicense>, <SkipOnMissingPermission>)]
+local procedure MyProcedure(Rec: Record, BelowxRec: Boolean, xRec: Record)
 begin
     ...
 end;

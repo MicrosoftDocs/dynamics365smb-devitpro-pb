@@ -23,7 +23,8 @@ Executed after the OnAfterGetCurrRecord trigger, which is called after the curre
 
 ## Syntax
 ```
-trigger OnAfterGetCurrRecordEvent(Rec: Record)
+[EventSubscriber(ObjectType::Page, Page::<Page Name>, 'OnAfterGetCurrRecordEvent', '', <SkipOnMissingLicense>, <SkipOnMissingPermission>)]
+local procedure MyProcedure(Rec: Record)
 begin
     ...
 end;

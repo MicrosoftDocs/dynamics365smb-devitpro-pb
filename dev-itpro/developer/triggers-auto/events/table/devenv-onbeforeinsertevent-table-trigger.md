@@ -23,7 +23,8 @@ Executed before a record is inserted in a table.
 
 ## Syntax
 ```
-trigger OnBeforeInsertEvent(Rec: Record, RunTrigger: Boolean)
+[EventSubscriber(ObjectType::Table, Database::<Table Name>, 'OnBeforeInsertEvent', '', <SkipOnMissingLicense>, <SkipOnMissingPermission>)]
+local procedure MyProcedure(Rec: Record, RunTrigger: Boolean)
 begin
     ...
 end;

@@ -23,7 +23,8 @@ Executed after the OnValidate (Page fields) trigger, which is called when a fiel
 
 ## Syntax
 ```
-trigger OnAfterValidateEvent(Rec: Record, xRec: Record)
+[EventSubscriber(ObjectType::Page, Page::<Page Name>, 'OnAfterValidateEvent', '<Control Name>', <SkipOnMissingLicense>, <SkipOnMissingPermission>)]
+local procedure MyProcedure(Rec: Record, xRec: Record)
 begin
     ...
 end;

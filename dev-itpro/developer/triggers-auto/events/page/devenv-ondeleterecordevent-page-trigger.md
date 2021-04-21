@@ -23,7 +23,8 @@ Executed after the OnDeleteRecord trigger, which is called before a record is de
 
 ## Syntax
 ```
-trigger OnDeleteRecordEvent(Rec: Record, AllowDelete: Boolean)
+[EventSubscriber(ObjectType::Page, Page::<Page Name>, 'OnDeleteRecordEvent', '', <SkipOnMissingLicense>, <SkipOnMissingPermission>)]
+local procedure MyProcedure(Rec: Record, AllowDelete: Boolean)
 begin
     ...
 end;

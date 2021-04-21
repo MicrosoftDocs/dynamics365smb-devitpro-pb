@@ -23,7 +23,8 @@ Executed after a record is modified in a table.
 
 ## Syntax
 ```
-trigger OnAfterModifyEvent(Rec: Record, xRec: Record, RunTrigger: Boolean)
+[EventSubscriber(ObjectType::Table, Database::<Table Name>, 'OnAfterModifyEvent', '', <SkipOnMissingLicense>, <SkipOnMissingPermission>)]
+local procedure MyProcedure(Rec: Record, xRec: Record, RunTrigger: Boolean)
 begin
     ...
 end;

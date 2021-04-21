@@ -23,7 +23,8 @@ Executed before a field is validated when its value has been changed.
 
 ## Syntax
 ```
-trigger OnBeforeValidateEvent(Rec: Record, xRec: Record, CurrFieldNo: Integer)
+[EventSubscriber(ObjectType::Table, Database::<Table Name>, 'OnBeforeValidateEvent', '<Field Name>', <SkipOnMissingLicense>, <SkipOnMissingPermission>)]
+local procedure MyProcedure(Rec: Record, xRec: Record, CurrFieldNo: Integer)
 begin
     ...
 end;

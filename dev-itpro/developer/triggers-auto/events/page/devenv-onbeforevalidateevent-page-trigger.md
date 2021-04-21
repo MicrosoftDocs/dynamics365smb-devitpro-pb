@@ -23,7 +23,8 @@ Executed before the OnValidate (Page fields) trigger, which is called when a fie
 
 ## Syntax
 ```
-trigger OnBeforeValidateEvent(Rec: Record, xRec: Record)
+[EventSubscriber(ObjectType::Page, Page::<Page Name>, 'OnBeforeValidateEvent', '<Control Name>', <SkipOnMissingLicense>, <SkipOnMissingPermission>)]
+local procedure MyProcedure(Rec: Record, xRec: Record)
 begin
     ...
 end;

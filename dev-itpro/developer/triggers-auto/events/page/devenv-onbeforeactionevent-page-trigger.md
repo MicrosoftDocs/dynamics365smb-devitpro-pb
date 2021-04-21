@@ -23,7 +23,8 @@ Executed before the OnAction trigger, which is called when a user selects an act
 
 ## Syntax
 ```
-trigger OnBeforeActionEvent(Rec: Record)
+[EventSubscriber(ObjectType::Page, Page::<Page Name>, 'OnBeforeActionEvent', '<Action Name>', <SkipOnMissingLicense>, <SkipOnMissingPermission>)]
+local procedure MyProcedure(Rec: Record)
 begin
     ...
 end;

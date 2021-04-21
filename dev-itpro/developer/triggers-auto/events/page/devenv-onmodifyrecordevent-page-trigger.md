@@ -23,7 +23,8 @@ Executed after the OnModifyRecord trigger, which is called before a record is mo
 
 ## Syntax
 ```
-trigger OnModifyRecordEvent(Rec: Record, xRec: Record, AllowModify: Boolean)
+[EventSubscriber(ObjectType::Page, Page::<Page Name>, 'OnModifyRecordEvent', '', <SkipOnMissingLicense>, <SkipOnMissingPermission>)]
+local procedure MyProcedure(Rec: Record, xRec: Record, AllowModify: Boolean)
 begin
     ...
 end;

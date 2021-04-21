@@ -23,7 +23,8 @@ Executed after a field is validated when its value has been changed.
 
 ## Syntax
 ```
-trigger OnAfterValidateEvent(Rec: Record, xRec: Record, CurrFieldNo: Integer)
+[EventSubscriber(ObjectType::Table, Database::<Table Name>, 'OnAfterValidateEvent', '<Field Name>', <SkipOnMissingLicense>, <SkipOnMissingPermission>)]
+local procedure MyProcedure(Rec: Record, xRec: Record, CurrFieldNo: Integer)
 begin
     ...
 end;

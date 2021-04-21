@@ -23,7 +23,8 @@ Executed after the OnClosePage trigger, which is called when page closes after t
 
 ## Syntax
 ```
-trigger OnClosePageEvent(Rec: Record)
+[EventSubscriber(ObjectType::Page, Page::<Page Name>, 'OnClosePageEvent', '', <SkipOnMissingLicense>, <SkipOnMissingPermission>)]
+local procedure MyProcedure(Rec: Record)
 begin
     ...
 end;

@@ -23,7 +23,8 @@ Executed after the OnQueryClosePage trigger, which is called as a page closes an
 
 ## Syntax
 ```
-trigger OnQueryClosePageEvent(Rec: Record, AllowClose: Boolean)
+[EventSubscriber(ObjectType::Page, Page::<Page Name>, 'OnQueryClosePageEvent', '', <SkipOnMissingLicense>, <SkipOnMissingPermission>)]
+local procedure MyProcedure(Rec: Record, AllowClose: Boolean)
 begin
     ...
 end;

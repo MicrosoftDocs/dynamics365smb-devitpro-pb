@@ -23,7 +23,8 @@ Executed before a record is renamed in a table.
 
 ## Syntax
 ```
-trigger OnBeforeRenameEvent(Rec: Record, xRec: Record, RunTrigger: Boolean)
+[EventSubscriber(ObjectType::Table, Database::<Table Name>, 'OnBeforeRenameEvent', '', <SkipOnMissingLicense>, <SkipOnMissingPermission>)]
+local procedure MyProcedure(Rec: Record, xRec: Record, RunTrigger: Boolean)
 begin
     ...
 end;

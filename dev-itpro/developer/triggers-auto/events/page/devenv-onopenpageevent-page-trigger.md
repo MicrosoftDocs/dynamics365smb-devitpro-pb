@@ -23,7 +23,8 @@ Executed after the OnOpenPage trigger, which is called after a page is initializ
 
 ## Syntax
 ```
-trigger OnOpenPageEvent(Rec: Record)
+[EventSubscriber(ObjectType::Page, Page::<Page Name>, 'OnOpenPageEvent', '', <SkipOnMissingLicense>, <SkipOnMissingPermission>)]
+local procedure MyProcedure(Rec: Record)
 begin
     ...
 end;

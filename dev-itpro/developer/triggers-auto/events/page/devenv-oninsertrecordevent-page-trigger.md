@@ -23,7 +23,8 @@ Executed after the OnInsertRecord trigger, which is called before a record is in
 
 ## Syntax
 ```
-trigger OnInsertRecordEvent(Rec: Record, BelowxRec: Boolean, xRec: Record, AllowInsert: Boolean)
+[EventSubscriber(ObjectType::Page, Page::<Page Name>, 'OnInsertRecordEvent', '', <SkipOnMissingLicense>, <SkipOnMissingPermission>)]
+local procedure MyProcedure(Rec: Record, BelowxRec: Boolean, xRec: Record, AllowInsert: Boolean)
 begin
     ...
 end;

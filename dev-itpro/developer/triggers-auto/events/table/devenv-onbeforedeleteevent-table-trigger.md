@@ -23,7 +23,8 @@ Executed before a record is deleted from a table.
 
 ## Syntax
 ```
-trigger OnBeforeDeleteEvent(Rec: Record, RunTrigger: Boolean)
+[EventSubscriber(ObjectType::Table, Database::<Table Name>, 'OnBeforeDeleteEvent', '', <SkipOnMissingLicense>, <SkipOnMissingPermission>)]
+local procedure MyProcedure(Rec: Record, RunTrigger: Boolean)
 begin
     ...
 end;
