@@ -32,6 +32,16 @@ end;
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+> [!IMPORTANT]  
+> The trigger is only invoked when the page is hosted in a modal popup window \(MPO\).
+
+This trigger is initiated by a user action, such as when the user chooses the **Close** button, or by the CurrPage.CLOSE  being called.  
+
+You can write to the database from this trigger.
+
 ## See Also  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

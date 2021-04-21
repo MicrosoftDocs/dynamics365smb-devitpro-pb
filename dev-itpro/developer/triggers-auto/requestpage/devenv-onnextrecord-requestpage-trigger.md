@@ -43,6 +43,13 @@ The number of records stepped through before displaying another record. A negati
 This return value contains the actual number of steps or records cycled through. The default value is 0.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+This trigger is executed in place of the default next record behavior.  
+
+If an error occurs in the trigger code, the page is closed.  
+
 ## See Also  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

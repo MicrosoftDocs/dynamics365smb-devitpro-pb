@@ -46,6 +46,11 @@ Text or code value with the following options:
 **true** if the specified record was found, otherwise, **false**.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks  
+
+By default, open pages display the last record shown when the user exited the page. Use this trigger to override the default behavior and display the first record, last record, or a specific record as defined in the `Rec` variable.  
+
 ## See Also  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

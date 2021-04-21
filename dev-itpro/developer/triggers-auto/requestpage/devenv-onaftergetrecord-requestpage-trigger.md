@@ -32,6 +32,17 @@ end;
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks  
+
+Use this trigger to calculate variables that depend on the current record. 
+
+This trigger is independent of the currently selected record in the UI. When it gets raised depends on when the UI needs to load more data and the block size of the data read. So, for example, in a list page, where rows are read in larger blocks, then the `OnAfterGetRecord` trigger will be raised for each of the records read before the page is shown.
+
+Within the trigger, the `Rec` variable will refer to the record just read.
+  
+If there is an error in the trigger code, then the page is closed.
+
 ## See Also  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

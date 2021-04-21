@@ -37,6 +37,13 @@ end;
 **true** if the record was modified, otherwise **false**. The return value is checked after each call. The default value is **true**.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks  
+
+If an error occurs in the trigger code, the action is canceled, but the page is not closed.  
+  
+You can write to the database using this trigger.  
+
 ## See Also  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
