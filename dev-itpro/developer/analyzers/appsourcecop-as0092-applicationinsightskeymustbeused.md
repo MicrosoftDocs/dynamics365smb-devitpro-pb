@@ -36,7 +36,7 @@ For more information about enabling Application Insights, see [Monitoring and An
 }
 ```
 
-See [JSON Files](../developer/devenv-json-files.md), for additional information about the manifest of extensions (app.json).
+See [JSON Files](../devenv-json-files.md), for additional information about the manifest of extensions (app.json).
 
 ## Code example triggering the rule
 
