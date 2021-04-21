@@ -75,6 +75,8 @@ The following tables list the IDs of [!INCLUDE[prod_short](../developer/includes
 | LC0021 | Extension Lifecycle | [Extension failed to compile: {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})](telemetry-extension-lifecycle-trace.md#compiledfailed) |
 | LC0022 | Extension Lifecycle | [Extension updated successfully: {extensionName} version {extensionVersion} by {extensionPublisher}](telemetry-extension-lifecycle-trace.md#updatedsuccess) |
 | LC0023 | Extension Lifecycle | [Extension failed to update: {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})](telemetry-extension-lifecycle-trace.md#updatedfailed) |
+|LC0024|Table Index Lifecycle|[Index enabled: {tableName}](telemetry-table-index-trace.md#enabled)|
+|LC0025|Table Index Lifecycle|[Index disabled: {tableName}](telemetry-table-index-trace.md#disabled)|
 
 ## Runtime events
 
@@ -101,6 +103,7 @@ The following tables list the IDs of [!INCLUDE[prod_short](../developer/includes
 | RT0019 | Outgoing Web service requests  | [Web Service Called (Outgoing): {endpoint}](telemetry-webservices-outgoing-trace.md) |
 | RT0020 | Web service key request| [Authentication with Web Service Key succeeded: {endpoint}](telemetry-webservices-access-key-trace.md#succeeded) |
 | RT0021 | Web service key request| [Authentication with Web Service Key failed: {endpoint}](telemetry-webservices-access-key-trace.md#failed) |
+
 ## See also
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
