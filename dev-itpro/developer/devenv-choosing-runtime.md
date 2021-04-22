@@ -14,7 +14,7 @@ ms.author: solsen
 
 # Choosing Runtime Version in AL
 
-The capabilities and features of AL for [!INCLUDE[prod_short](../includes/prod_short.md)] are determined by the runtime version. The runtime version can be specified, if needed, in the `app.json` file for a project. It is expressed with the following syntax `"runtime": "7.0"`. Specifying the runtime version is mostly interesting for scenarios where you develop for on-prem or a mix of on-prem and SaaS. For SaaS only development, you will most likely be interested in using the current runtime.
+The capabilities and features of AL for [!INCLUDE[prod_short](../includes/prod_short.md)] are determined by the runtime version. The runtime version can be specified, in the `app.json` file for a project. It is expressed with the following syntax `"runtime": "7.0"`. Specifying the runtime version is mostly interesting for scenarios where you develop for on-prem or a mix of on-prem and SaaS. For SaaS only development, you will most likely be interested in using the current runtime. If the runtime setting is not specified, the compiler will detect the runtime that matches the server.
 
 The runtime in the `app.json` file specifies which runtime the project is targeting. A project can be published to the server with an earlier or with the same runtime version as the server. 
 
