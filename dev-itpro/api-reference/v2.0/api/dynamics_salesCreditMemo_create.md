@@ -1,0 +1,67 @@
+---
+title: Create salesCreditMemos | Microsoft Docs
+description: Creates a sales credit memo object in Dynamics 365 Business Central.
+ 
+author: SusanneWindfeldPedersen
+
+ms.service: "dynamics365-business-central"
+ms.topic: article
+ms.devlang: na
+ms.tgt_pltfrm: na
+ms.workload: na
+ms.date: 11/11/2020
+ms.author: solsen
+---
+
+# Create salesCreditMemos
+
+[!INCLUDE[api_v2_note](../../includes/api_v2_note.md)]
+
+Create a sales credit memo object in [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)].
+
+## HTTP request
+Replace the URL prefix for [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
+
+```
+POST businesscentralPrefix/companies({id})/salesCreditMemos
+```
+
+## Request headers
+
+|Header|Value|
+|------|-----|
+|Authorization  |Bearer {token}. Required.    |
+|Content-Type  |application/json    |
+
+## Request body
+In the request body, supply a JSON representation of a **salesCreditMemos** object.
+
+## Response
+If successful, this method returns ```201 Created``` response code and a **salesCreditMemos** object in the response body.
+
+## Example
+
+**Request**
+
+Here is an example of a request.
+
+```json
+POST https://{businesscentralPrefix}/api/v2.0/companies({id})/salesCreditMemos
+Content-type: application/json
+
+{
+  "id": "id-value",
+  "number": "1009",
+  "creditMemoDate": "2015-12-31",
+  "customerNumber": "GL00000008",
+  "currencyCode": "GBP",
+  "paymentTermsId": "3bb5b4b6-ea4c-43ca-ba1c-3b69e29a6668"
+}
+```
+## See also
+[Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  
+
+[Sales Credit Memo](../resources/dynamics_salescreditmemo.md)  
+[Get Sales Credit Memo](dynamics_salescreditmemo_get.md)  
+[Update Sales Credit Memo](dynamics_salescreditmemo_update.md)  
+[Delete Sales Credit Memo](dynamics_salescreditmemo_delete.md)  
