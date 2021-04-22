@@ -15,11 +15,11 @@ ms.author: solsen
 <!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
 # Delete contacts
 
-Deletes a contact from [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)].
+Deletes a contact from [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## HTTP request
 
-Replaces the URL prefix for [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
+Replaces the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
 
 ```
 DELETE businesscentralPrefix/companies({id})/contacts({id})
@@ -61,7 +61,7 @@ HTTP/1.1 204 No Content
 
 ## Remarks
 
-This resource type requires [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)] version 18.0.
+This resource type requires [!INCLUDE[prod_short](../../../includes/prod_short.md)] version 18.0.
 
 ## See Also
 

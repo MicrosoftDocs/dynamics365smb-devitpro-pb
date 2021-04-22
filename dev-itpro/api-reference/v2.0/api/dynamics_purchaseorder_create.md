@@ -15,11 +15,11 @@ ms.author: solsen
 <!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
 # Create purchaseOrders
 
-Creates a purchase order in [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)].
+Creates a purchase order in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## HTTP request
 
-Replace the URL prefix for [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
+Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
 
 ```
 POST businesscentralPrefix/companies({id})/purchaseOrders({id})

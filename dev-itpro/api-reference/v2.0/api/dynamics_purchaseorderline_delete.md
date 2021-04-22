@@ -15,11 +15,11 @@ ms.author: solsen
 <!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
 # Delete purchaseOrderLine
 
-Deletes a purchase order line from [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)].
+Deletes a purchase order line from [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## HTTP request
 
-Replaces the URL prefix for [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
+Replaces the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
 
 ```
 DELETE businesscentralPrefix/companies({id})/purchaseOrders({id})/purchaseOrderLines({purchaseOrderLineId})

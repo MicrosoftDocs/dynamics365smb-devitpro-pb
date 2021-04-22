@@ -15,7 +15,7 @@ ms.author: solsen
 
 <!-- START>DO_NOT_EDIT -->
 <!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
-Represents a contact information in [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)].
+Represents a contact information in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
 > For information about enabling APIs for [!INCLUDE[navnow](../../includes/navnow_md.md)] see [Enabling the APIs for Dynamics 365 Business Central](../enabling-apis-for-dynamics-nav.md).
@@ -65,7 +65,7 @@ Here is a JSON representation of the contactInformation resource.
 
 ## Remarks
 
-This resource type requires [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)] version 18.0.
+This resource type requires [!INCLUDE[prod_short](../../../includes/prod_short.md)] version 18.0.
 
 ## See Also
 [GET contactInformation](../api/dynamics_contactinformation_get.md)  

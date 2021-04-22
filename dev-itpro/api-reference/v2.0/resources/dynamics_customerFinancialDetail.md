@@ -17,7 +17,7 @@ ms.author: solsen
 
 <!-- START>DO_NOT_EDIT -->
 <!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
-Represents a customer financial detail in [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)].
+Represents a customer financial detail in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
 > For information about enabling APIs for [!INCLUDE[navnow](../../includes/navnow_md.md)] see [Enabling the APIs for Dynamics 365 Business Central](../enabling-apis-for-dynamics-nav.md).

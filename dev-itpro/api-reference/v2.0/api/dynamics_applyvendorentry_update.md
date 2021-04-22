@@ -15,11 +15,11 @@ ms.author: solsen
 <!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
 # Update applyVendorEntries
 
-Updates the properties of an apply vendor entry object for [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)].
+Updates the properties of an apply vendor entry object for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## HTTP request
 
-Replace the URL prefix for [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
+Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
 
 ```
 PATCH businesscentralPrefix/companies({id})/applyVendorEntries({id})
@@ -80,7 +80,7 @@ Content-type: application/json
 
 ## Remarks
 
-This resource type requires [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)] version 18.0.
+This resource type requires [!INCLUDE[prod_short](../../../includes/prod_short.md)] version 18.0.
 
 ## See Also
 
