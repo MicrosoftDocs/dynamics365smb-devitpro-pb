@@ -36,7 +36,7 @@ The available options for setting the `runtime` in AL are:
 |`6.4`          |Business Central 2020 release wave 2 update 17.4|
 |`7.0`          |Business Central 2021 release wave 1|
 
-## Best practices on setting the runtime version
+## Setting the runtime version
 
 Selecting the runtime depends on the circumstances. If you, for example, have customers that run on older versions, you should set the runtime to be the minimum version that works to ensure compatibility. This will prevent you from inadvertently using features that are not supported on the older server, for example, for on-prem scenarios, or if you develop both for on-prem and for SaaS.
 
