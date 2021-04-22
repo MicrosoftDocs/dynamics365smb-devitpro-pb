@@ -1,7 +1,6 @@
 ---
 title: Error Codes | Microsoft Docs
 description: List of error codes.
-services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 
