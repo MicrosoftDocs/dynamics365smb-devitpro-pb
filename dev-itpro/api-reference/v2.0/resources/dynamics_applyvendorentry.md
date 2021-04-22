@@ -18,7 +18,7 @@ ms.author: solsen
 Represents an apply vendor entry in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
-> For information about enabling APIs for [!INCLUDE[navnow](../../includes/navnow_md.md)] see [Enabling the APIs for Dynamics 365 Business Central](../enabling-apis-for-dynamics-nav.md).
+> For information about enabling APIs for [!INCLUDE[prod_short](../../../includes/prod_short.md)] see [Enabling the APIs for Dynamics 365 Business Central](../enabling-apis-for-dynamics-nav.md).
 
 ## Methods
 
