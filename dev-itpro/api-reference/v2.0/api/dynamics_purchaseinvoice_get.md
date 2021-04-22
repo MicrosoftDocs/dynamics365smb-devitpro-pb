@@ -1,5 +1,5 @@
 ---
-title: Get purchaseInvoices | Microsoft Docs
+title: Get purchaseInvoices  
 description: Gets a purchase invoice object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen

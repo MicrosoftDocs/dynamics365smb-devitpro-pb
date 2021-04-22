@@ -1,5 +1,5 @@
 ---
-title: currency resource type | Microsoft Docs
+title: currency resource type  
 description: A currency object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

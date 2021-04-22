@@ -1,5 +1,5 @@
 ---
-title: Create salesInvoiceLines | Microsoft Docs
+title: Create salesInvoiceLines  
 description: Creates a sales invoice line object in Dynamics 365 Business Central. 
  
 author: SusanneWindfeldPedersen

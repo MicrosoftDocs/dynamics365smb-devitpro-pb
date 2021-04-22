@@ -1,5 +1,5 @@
 ---
-title: UPDATE customerPaymentJournals  | Microsoft Docs
+title: UPDATE customerPaymentJournals   
 description: Updates a customerPaymentJournal object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

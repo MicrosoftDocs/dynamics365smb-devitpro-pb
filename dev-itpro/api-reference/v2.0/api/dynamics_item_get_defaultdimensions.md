@@ -1,5 +1,5 @@
 ---
-title: Get item defaultDimensions | Microsoft Docs
+title: Get item defaultDimensions  
 description: Gets an item default dimensions in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 

@@ -1,5 +1,5 @@
 ---
-title: Delete purchaseOrders | Microsoft Docs
+title: Delete purchaseOrders  
 description: Deletes a purchase order object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

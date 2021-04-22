@@ -1,5 +1,5 @@
 ---
-title: itemCategory resource type | Microsoft Docs
+title: itemCategory resource type  
 description: An item category object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

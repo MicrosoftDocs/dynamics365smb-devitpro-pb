@@ -1,5 +1,5 @@
 ---
-title: Update salesInvoiceLines | Microsoft Docs
+title: Update salesInvoiceLines  
 description: Updates a sales invoice line object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen

@@ -1,5 +1,5 @@
 ---
-title: GET pdfDocuments | Microsoft Docs
+title: GET pdfDocuments  
 description: Gets a pdfDocument object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

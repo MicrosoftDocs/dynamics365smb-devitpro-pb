@@ -1,5 +1,5 @@
 ---
-title: companyInformation resource type | Microsoft Docs
+title: companyInformation resource type  
 description: A company information object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

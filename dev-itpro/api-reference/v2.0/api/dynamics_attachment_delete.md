@@ -1,5 +1,5 @@
 ---
-title: Delete attachment | Microsoft Docs
+title: Delete attachment  
 description: Deletes attachments in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

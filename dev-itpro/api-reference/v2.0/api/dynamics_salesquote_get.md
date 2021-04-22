@@ -1,5 +1,5 @@
 ---
-title: Get salesQuotes | Microsoft Docs
+title: Get salesQuotes  
 description: Gets a sales quote object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen

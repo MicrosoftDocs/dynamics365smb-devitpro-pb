@@ -1,5 +1,5 @@
 ---
-title: Microsoft Graph Reference | Microsoft Docs
+title: Microsoft Graph Reference  
 description: API documentation for integration with Microsoft Graph
  
 author: SusanneWindfeldPedersen

@@ -1,5 +1,5 @@
 ---
-title: Delete items | Microsoft Docs
+title: Delete items  
 description: Deletes an item object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen

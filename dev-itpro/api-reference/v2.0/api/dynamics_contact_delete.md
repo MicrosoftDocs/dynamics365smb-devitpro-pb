@@ -1,5 +1,5 @@
 ---
-title: Delete contacts | Microsoft Docs
+title: Delete contacts  
 description: Deletes a contact object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

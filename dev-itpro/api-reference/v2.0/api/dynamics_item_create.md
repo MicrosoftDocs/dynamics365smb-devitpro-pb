@@ -1,5 +1,5 @@
 ---
-title: Create items | Microsoft Docs
+title: Create items  
 description: Creates an item object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen

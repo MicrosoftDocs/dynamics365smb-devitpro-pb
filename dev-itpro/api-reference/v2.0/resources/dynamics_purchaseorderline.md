@@ -1,5 +1,5 @@
 ---
-title: purchaseOrderLine resource type | Microsoft Docs
+title: purchaseOrderLine resource type  
 description: A purchase order line object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

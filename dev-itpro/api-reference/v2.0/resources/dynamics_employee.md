@@ -1,5 +1,5 @@
 ---
-title: employee resource type | Microsoft Docs
+title: employee resource type  
 description: An employee object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

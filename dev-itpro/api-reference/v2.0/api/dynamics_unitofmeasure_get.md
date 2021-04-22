@@ -1,5 +1,5 @@
 ---
-title: GET unitOfMeasures | Microsoft Docs
+title: GET unitOfMeasures  
 description: Gets a unitOfMeasure object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

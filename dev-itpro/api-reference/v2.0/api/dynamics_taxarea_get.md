@@ -1,5 +1,5 @@
 ---
-title: Get taxAreas | Microsoft Docs
+title: Get taxAreas  
 description: Gets a tax area object in Dynamics 365 Business Central. 
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

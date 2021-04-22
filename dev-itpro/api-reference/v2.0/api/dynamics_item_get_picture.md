@@ -1,5 +1,5 @@
 ---
-title: Get item picture | Microsoft Docs
+title: Get item picture  
 description: Gets an item default dimensions in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 

@@ -1,5 +1,5 @@
 ---
-title: Get salesInvoices | Microsoft Docs
+title: Get salesInvoices  
 description: Gets a sales invoice object in Dynamics 365 Business Central. 
  
 author: SusanneWindfeldPedersen

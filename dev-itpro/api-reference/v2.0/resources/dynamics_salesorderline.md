@@ -1,5 +1,5 @@
 ---
-title: salesOrderLine resource type | Microsoft Docs
+title: salesOrderLine resource type  
 description: A sales order line object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

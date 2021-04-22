@@ -1,5 +1,5 @@
 ---
-title: customerPaymentJournal resource type | Microsoft Docs
+title: customerPaymentJournal resource type  
 description: A customer payment journal object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

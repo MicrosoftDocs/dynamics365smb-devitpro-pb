@@ -1,5 +1,5 @@
 ---
-title: Create purchaseOrderLine | Microsoft Docs
+title: Create purchaseOrderLine  
 description: Creates a purchase order line object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

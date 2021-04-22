@@ -1,5 +1,5 @@
 ---
-title: Get customer defaultDimensions | Microsoft Docs
+title: Get customer defaultDimensions  
 description: Gets a customer default dimensions in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 

@@ -1,5 +1,5 @@
 ---
-title: Create vendors | Microsoft Docs
+title: Create vendors  
 description: Creates a vendor object in Dynamics 365 Business Central. 
  
 author: SusanneWindfeldPedersen

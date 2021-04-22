@@ -1,5 +1,5 @@
 ---
-title: Update vendors | Microsoft Docs
+title: Update vendors  
 description: Updates a vendor object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen

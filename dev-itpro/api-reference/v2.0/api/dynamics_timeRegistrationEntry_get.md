@@ -1,5 +1,5 @@
 ---
-title: Get timeRegistrationEntries | Microsoft Docs
+title: Get timeRegistrationEntries  
 description: Gets timeRegistrationEntries object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

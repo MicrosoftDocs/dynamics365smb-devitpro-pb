@@ -1,5 +1,5 @@
 ---
-title: Get pdfDocument | Microsoft Docs
+title: Get pdfDocument  
 description: Gets a PDF document on a salesCreditMemo in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen

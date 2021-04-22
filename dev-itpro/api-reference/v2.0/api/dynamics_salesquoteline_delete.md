@@ -1,5 +1,5 @@
 ---
-title: Delete salesQuoteLines | Microsoft Docs
+title: Delete salesQuoteLines  
 description: Deletes a sales quote line object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen

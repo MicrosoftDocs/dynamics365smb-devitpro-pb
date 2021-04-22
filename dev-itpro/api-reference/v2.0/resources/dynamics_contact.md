@@ -1,5 +1,5 @@
 ---
-title: contact resource type | Microsoft Docs
+title: contact resource type  
 description: A contact object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

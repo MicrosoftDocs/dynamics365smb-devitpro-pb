@@ -1,5 +1,5 @@
 ---
-title: Error Codes | Microsoft Docs
+title: Error Codes  
 description: List of error codes.
 documentationcenter: ''
 author: SusanneWindfeldPedersen

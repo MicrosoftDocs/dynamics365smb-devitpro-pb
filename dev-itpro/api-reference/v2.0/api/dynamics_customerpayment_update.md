@@ -1,5 +1,5 @@
 ---
-title: Update customerPayments | Microsoft Docs
+title: Update customerPayments  
 description: Updates a customer payment object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

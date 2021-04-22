@@ -1,5 +1,5 @@
 ---
-title: Get balanceSheet | Microsoft Docs
+title: Get balanceSheet  
 description: Gets a balance sheet object in Dynamics 365 Business Central. 
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

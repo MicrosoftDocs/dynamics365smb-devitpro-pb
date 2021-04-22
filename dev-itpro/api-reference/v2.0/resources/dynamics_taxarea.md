@@ -1,5 +1,5 @@
 ---
-title: taxArea resource type | Microsoft Docs
+title: taxArea resource type  
 description: A tax area object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

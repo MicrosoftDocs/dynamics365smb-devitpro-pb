@@ -1,5 +1,5 @@
 ---
-title: Get contacts | Microsoft Docs
+title: Get contacts  
 description: Gets a contact object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

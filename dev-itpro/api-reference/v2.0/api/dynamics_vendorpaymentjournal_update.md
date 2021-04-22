@@ -1,5 +1,5 @@
 ---
-title: UPDATE vendorPaymentJournals  | Microsoft Docs
+title: UPDATE vendorPaymentJournals   
 description: Updates a vendorPaymentJournal object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

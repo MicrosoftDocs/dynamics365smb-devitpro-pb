@@ -1,5 +1,5 @@
 ---
-title: GET dimensionSetLines | Microsoft Docs
+title: GET dimensionSetLines  
 description: Gets a dimensionSetLine object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

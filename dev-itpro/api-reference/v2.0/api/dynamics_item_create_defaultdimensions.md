@@ -1,5 +1,5 @@
 ---
-title: Create item defaultDimensions | Microsoft Docs
+title: Create item defaultDimensions  
 description: Creates a default dimensions of the item object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen

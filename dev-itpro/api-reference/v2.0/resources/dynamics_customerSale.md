@@ -1,5 +1,5 @@
 ---
-title: customerSale resource type | Microsoft Docs
+title: customerSale resource type  
 description: A customer sale object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

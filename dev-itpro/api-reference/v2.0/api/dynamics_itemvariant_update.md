@@ -1,5 +1,5 @@
 ---
-title: UPDATE itemVariants  | Microsoft Docs
+title: UPDATE itemVariants   
 description: Updates a itemVariant object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

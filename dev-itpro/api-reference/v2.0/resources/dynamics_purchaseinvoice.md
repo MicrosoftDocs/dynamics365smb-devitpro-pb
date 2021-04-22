@@ -1,5 +1,5 @@
 ---
-title: purchaseInvoice resource type | Microsoft Docs
+title: purchaseInvoice resource type  
 description: A purchase invoice object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

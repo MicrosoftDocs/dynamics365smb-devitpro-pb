@@ -1,5 +1,5 @@
 ---
-title: Patch timeRegistrationEntries| Microsoft Docs
+title: Patch timeRegistrationEntries 
 description: Patch a timeRegistrationEntries in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

@@ -1,5 +1,5 @@
 ---
-title: CREATE subscriptions | Microsoft Docs
+title: CREATE subscriptions  
 description: Creates a subscriptions object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

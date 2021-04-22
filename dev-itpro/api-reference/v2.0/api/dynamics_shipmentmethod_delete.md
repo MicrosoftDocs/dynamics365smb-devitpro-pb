@@ -1,5 +1,5 @@
 ---
-title: DELETE shipmentMethods | Microsoft Docs
+title: DELETE shipmentMethods  
 description: Deletes shipmentMethod  in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

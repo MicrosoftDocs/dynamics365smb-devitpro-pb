@@ -1,5 +1,5 @@
 ---
-title: GET companies | Microsoft Docs
+title: GET companies  
 description: Gets a company object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

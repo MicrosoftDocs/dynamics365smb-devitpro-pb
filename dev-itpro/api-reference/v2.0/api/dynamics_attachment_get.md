@@ -1,5 +1,5 @@
 ---
-title: GET attachments | Microsoft Docs
+title: GET attachments  
 description: Gets a attachments object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

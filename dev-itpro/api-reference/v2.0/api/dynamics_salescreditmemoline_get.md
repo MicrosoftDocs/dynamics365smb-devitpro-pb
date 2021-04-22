@@ -1,5 +1,5 @@
 ---
-title: Get salesCreditMemoLines | Microsoft Docs
+title: Get salesCreditMemoLines  
 description: Gets a sales credit memo line in Dynamics 365 Business Central. 
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

@@ -1,5 +1,5 @@
 ---
-title: GET projects | Microsoft Docs
+title: GET projects  
 description: Gets a project object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

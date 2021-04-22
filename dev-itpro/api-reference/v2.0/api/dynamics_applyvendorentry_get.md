@@ -1,5 +1,5 @@
 ---
-title: Get applyVendorEntries | Microsoft Docs
+title: Get applyVendorEntries  
 description: Gets an apply vendor entry object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

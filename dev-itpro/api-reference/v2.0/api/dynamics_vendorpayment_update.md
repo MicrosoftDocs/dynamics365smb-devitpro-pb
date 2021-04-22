@@ -1,5 +1,5 @@
 ---
-title: UPDATE vendorPayments  | Microsoft Docs
+title: UPDATE vendorPayments   
 description: Updates a vendorPayment object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

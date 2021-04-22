@@ -1,5 +1,5 @@
 ---
-title: Update defaultDimensions for entities| Microsoft Docs
+title: Update defaultDimensions for entities 
 description: Updates the item default dimensions in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

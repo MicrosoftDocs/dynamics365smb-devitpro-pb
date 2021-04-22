@@ -1,5 +1,5 @@
 ---
-title: GET paymentTerms | Microsoft Docs
+title: GET paymentTerms  
 description: Gets a paymentTerm object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

@@ -1,5 +1,5 @@
 ---
-title: paymentMethod resource type | Microsoft Docs
+title: paymentMethod resource type  
 description: A payment method object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

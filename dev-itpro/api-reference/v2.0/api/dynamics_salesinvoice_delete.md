@@ -1,5 +1,5 @@
 ---
-title: Delete salesInvoices | Microsoft Docs
+title: Delete salesInvoices  
 description: Deletes a sales invoice object in Dynamics 365 Business Central. 
  
 author: SusanneWindfeldPedersen

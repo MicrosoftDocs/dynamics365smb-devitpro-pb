@@ -1,5 +1,5 @@
 ---
-title: DELETE bankAccounts | Microsoft Docs
+title: DELETE bankAccounts  
 description: Deletes bankAccount  in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

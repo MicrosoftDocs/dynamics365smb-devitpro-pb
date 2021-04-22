@@ -1,5 +1,5 @@
 ---
-title: cashFlowStatement resource type | Microsoft Docs
+title: cashFlowStatement resource type  
 description: A cash flow statement object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

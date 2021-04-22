@@ -1,5 +1,5 @@
 ---
-title: Update picture | Microsoft Docs
+title: Update picture  
 description: A picture object in Dynamics 365 Business Central. 
  
 author: SusanneWindfeldPedersen

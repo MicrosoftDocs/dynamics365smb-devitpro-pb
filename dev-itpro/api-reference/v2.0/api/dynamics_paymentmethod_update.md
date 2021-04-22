@@ -1,5 +1,5 @@
 ---
-title: UPDATE paymentMethods  | Microsoft Docs
+title: UPDATE paymentMethods   
 description: Updates a paymentMethod object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

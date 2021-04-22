@@ -1,5 +1,5 @@
 ---
-title: bankAccount resource type | Microsoft Docs
+title: bankAccount resource type  
 description: A bank account object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

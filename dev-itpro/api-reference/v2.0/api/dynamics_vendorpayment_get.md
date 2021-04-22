@@ -1,5 +1,5 @@
 ---
-title: GET vendorPayments | Microsoft Docs
+title: GET vendorPayments  
 description: Gets a vendorPayment object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

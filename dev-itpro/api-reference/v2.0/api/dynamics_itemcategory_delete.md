@@ -1,5 +1,5 @@
 ---
-title: DELETE itemCategories | Microsoft Docs
+title: DELETE itemCategories  
 description: Deletes itemCategory  in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

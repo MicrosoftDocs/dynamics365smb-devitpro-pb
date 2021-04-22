@@ -1,5 +1,5 @@
 ---
-title: agedAccountsReceivable resource type | Microsoft Docs
+title: agedAccountsReceivable resource type  
 description: An aged accounts receivable object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

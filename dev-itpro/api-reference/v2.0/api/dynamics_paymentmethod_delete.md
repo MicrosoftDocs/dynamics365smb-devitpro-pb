@@ -1,5 +1,5 @@
 ---
-title: DELETE paymentMethods | Microsoft Docs
+title: DELETE paymentMethods  
 description: Deletes paymentMethod  in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

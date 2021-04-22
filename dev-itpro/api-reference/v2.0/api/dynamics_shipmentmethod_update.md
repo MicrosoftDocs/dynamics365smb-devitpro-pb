@@ -1,5 +1,5 @@
 ---
-title: UPDATE shipmentMethods  | Microsoft Docs
+title: UPDATE shipmentMethods   
 description: Updates a shipmentMethod object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

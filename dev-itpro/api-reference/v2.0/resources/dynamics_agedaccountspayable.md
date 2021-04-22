@@ -1,5 +1,5 @@
 ---
-title: agedAccountsPayable resource type | Microsoft Docs
+title: agedAccountsPayable resource type  
 description: An aged accounts payable object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

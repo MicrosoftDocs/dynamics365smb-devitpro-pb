@@ -1,5 +1,5 @@
 ---
-title: salesShipment resource type | Microsoft Docs
+title: salesShipment resource type  
 description: A sales shipment object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

@@ -1,5 +1,5 @@
 ---
-title: countryRegion resource type | Microsoft Docs
+title: countryRegion resource type  
 description: A country/region object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

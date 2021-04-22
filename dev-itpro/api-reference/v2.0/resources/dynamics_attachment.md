@@ -1,5 +1,5 @@
 ---
-title: attachment resource type | Microsoft Docs
+title: attachment resource type  
 description: An attachments object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

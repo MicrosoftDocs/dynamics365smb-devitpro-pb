@@ -1,5 +1,5 @@
 ---
-title: CREATE dimensionSetLines | Microsoft Docs
+title: CREATE dimensionSetLines  
 description: Creates a dimensionSetLine object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

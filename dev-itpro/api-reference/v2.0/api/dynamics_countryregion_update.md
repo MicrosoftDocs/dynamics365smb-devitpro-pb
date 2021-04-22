@@ -1,5 +1,5 @@
 ---
-title: UPDATE countryRegions  | Microsoft Docs
+title: UPDATE countryRegions   
 description: Updates a countryRegion object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

@@ -1,5 +1,5 @@
 ---
-title: UPDATE dimensionSetLines  | Microsoft Docs
+title: UPDATE dimensionSetLines   
 description: Updates a dimensionSetLine object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

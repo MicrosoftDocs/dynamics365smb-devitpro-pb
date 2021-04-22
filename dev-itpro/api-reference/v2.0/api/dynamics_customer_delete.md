@@ -1,5 +1,5 @@
 ---
-title: Delete customers | Microsoft Docs
+title: Delete customers  
 description: Deletes a customers object from Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen

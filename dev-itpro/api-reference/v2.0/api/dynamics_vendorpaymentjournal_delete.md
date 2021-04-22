@@ -1,5 +1,5 @@
 ---
-title: DELETE vendorPaymentJournals | Microsoft Docs
+title: DELETE vendorPaymentJournals  
 description: Deletes vendorPaymentJournal  in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

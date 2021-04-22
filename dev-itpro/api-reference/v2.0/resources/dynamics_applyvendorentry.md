@@ -1,5 +1,5 @@
 ---
-title: applyVendorEntry resource type | Microsoft Docs
+title: applyVendorEntry resource type  
 description: An apply vendor entry object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

@@ -1,5 +1,5 @@
 ---
-title: project resource type | Microsoft Docs
+title: project resource type  
 description: A project object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

@@ -1,5 +1,5 @@
 ---
-title: Get items | Microsoft Docs
+title: Get items  
 description: Gets an item object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen

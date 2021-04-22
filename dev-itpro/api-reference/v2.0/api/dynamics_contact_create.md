@@ -1,5 +1,5 @@
 ---
-title: Create contacts | Microsoft Docs
+title: Create contacts  
 description: Creates a contact object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

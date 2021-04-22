@@ -1,5 +1,5 @@
 ---
-title: CREATE itemCategories | Microsoft Docs
+title: CREATE itemCategories  
 description: Creates a itemCategory object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

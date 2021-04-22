@@ -1,5 +1,5 @@
 ---
-title: Get journals | Microsoft Docs
+title: Get journals  
 description: Gets a journal object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen

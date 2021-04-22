@@ -1,5 +1,5 @@
 ---
-title: itemVariant resource type | Microsoft Docs
+title: itemVariant resource type  
 description: An item variant object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

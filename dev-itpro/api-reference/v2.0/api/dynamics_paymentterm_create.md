@@ -1,5 +1,5 @@
 ---
-title: CREATE paymentTerms | Microsoft Docs
+title: CREATE paymentTerms  
 description: Creates a paymentTerm object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

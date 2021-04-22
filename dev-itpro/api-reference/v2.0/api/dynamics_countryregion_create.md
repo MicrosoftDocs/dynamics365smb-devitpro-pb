@@ -1,5 +1,5 @@
 ---
-title: CREATE countryRegions | Microsoft Docs
+title: CREATE countryRegions  
 description: Creates a countryRegion object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

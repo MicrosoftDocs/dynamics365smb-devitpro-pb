@@ -1,5 +1,5 @@
 ---
-title: DELETE subscriptions | Microsoft Docs
+title: DELETE subscriptions  
 description: Deletes subscriptions  in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

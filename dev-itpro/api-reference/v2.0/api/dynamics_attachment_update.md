@@ -1,5 +1,5 @@
 ---
-title: Upload attachment| Microsoft Docs
+title: Upload attachment 
 description: Uploads the attachment in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

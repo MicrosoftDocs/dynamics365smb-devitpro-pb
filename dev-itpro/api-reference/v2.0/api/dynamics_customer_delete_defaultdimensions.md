@@ -1,5 +1,5 @@
 ---
-title: Delete customer defaultDimensions | Microsoft Docs
+title: Delete customer defaultDimensions  
 description: Deletes the default dimensions of the customer in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen

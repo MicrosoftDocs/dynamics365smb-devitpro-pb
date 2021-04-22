@@ -1,5 +1,5 @@
 ---
-title: Update purchaseInvoices | Microsoft Docs
+title: Update purchaseInvoices  
 description: Updates a purchase invoice object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen

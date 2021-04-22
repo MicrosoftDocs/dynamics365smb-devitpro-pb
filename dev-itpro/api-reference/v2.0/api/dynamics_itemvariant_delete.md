@@ -1,5 +1,5 @@
 ---
-title: DELETE itemVariants | Microsoft Docs
+title: DELETE itemVariants  
 description: Deletes itemVariant  in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

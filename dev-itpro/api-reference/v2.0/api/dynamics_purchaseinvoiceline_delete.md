@@ -1,5 +1,5 @@
 ---
-title: Delete purchaseInvoiceLines | Microsoft Docs
+title: Delete purchaseInvoiceLines  
 description: Deletes a purchase invoice line object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

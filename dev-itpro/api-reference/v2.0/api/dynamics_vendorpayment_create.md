@@ -1,5 +1,5 @@
 ---
-title: CREATE vendorPayments | Microsoft Docs
+title: CREATE vendorPayments  
 description: Creates a vendorPayment object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

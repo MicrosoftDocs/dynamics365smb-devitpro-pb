@@ -1,5 +1,5 @@
 ---
-title: DELETE unitOfMeasures | Microsoft Docs
+title: DELETE unitOfMeasures  
 description: Deletes unitOfMeasure  in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

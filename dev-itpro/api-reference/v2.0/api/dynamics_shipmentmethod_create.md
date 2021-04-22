@@ -1,5 +1,5 @@
 ---
-title: CREATE shipmentMethods | Microsoft Docs
+title: CREATE shipmentMethods  
 description: Creates a shipmentMethod object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

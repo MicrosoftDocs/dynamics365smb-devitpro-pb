@@ -1,5 +1,5 @@
 ---
-title: GET purchaseReceipts | Microsoft Docs
+title: GET purchaseReceipts  
 description: Gets a purchaseReceipt object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

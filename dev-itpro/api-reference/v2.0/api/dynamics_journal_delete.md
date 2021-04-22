@@ -1,5 +1,5 @@
 ---
-title: Delete journals | Microsoft Docs
+title: Delete journals  
 description: Deletes a journal object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen

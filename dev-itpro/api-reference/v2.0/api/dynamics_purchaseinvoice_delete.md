@@ -1,5 +1,5 @@
 ---
-title: Delete purchaseInvoices | Microsoft Docs
+title: Delete purchaseInvoices  
 description: Deletes a purchase invoice object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen

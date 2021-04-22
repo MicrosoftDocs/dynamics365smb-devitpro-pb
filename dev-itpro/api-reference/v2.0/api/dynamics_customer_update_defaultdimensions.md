@@ -1,5 +1,5 @@
 ---
-title: Update customer defaultDimensions | Microsoft Docs
+title: Update customer defaultDimensions  
 description: Updates the customer default dimensions in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen

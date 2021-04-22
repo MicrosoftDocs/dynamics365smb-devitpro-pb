@@ -1,5 +1,5 @@
 ---
-title: subscriptions resource type | Microsoft Docs
+title: subscriptions resource type  
 description: A subscriptions object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

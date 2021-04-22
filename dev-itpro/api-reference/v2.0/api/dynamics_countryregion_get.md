@@ -1,5 +1,5 @@
 ---
-title: GET countryRegions | Microsoft Docs
+title: GET countryRegions  
 description: Gets a countryRegion object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

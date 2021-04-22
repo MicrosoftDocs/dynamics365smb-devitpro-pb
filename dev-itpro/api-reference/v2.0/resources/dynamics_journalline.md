@@ -1,5 +1,5 @@
 ---
-title: journalLine resource type | Microsoft Docs
+title: journalLine resource type  
 description: A journal line object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

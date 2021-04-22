@@ -1,5 +1,5 @@
 ---
-title: paymentTerm resource type | Microsoft Docs
+title: paymentTerm resource type  
 description: A payment term object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

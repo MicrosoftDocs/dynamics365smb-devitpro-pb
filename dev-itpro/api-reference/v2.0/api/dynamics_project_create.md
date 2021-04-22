@@ -1,5 +1,5 @@
 ---
-title: CREATE projects | Microsoft Docs
+title: CREATE projects  
 description: Creates a project object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

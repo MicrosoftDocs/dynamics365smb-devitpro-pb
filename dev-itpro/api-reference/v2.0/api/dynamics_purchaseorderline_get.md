@@ -1,5 +1,5 @@
 ---
-title: Get purchaseOrderLines | Microsoft Docs
+title: Get purchaseOrderLines  
 description: Gets a purchase order line object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

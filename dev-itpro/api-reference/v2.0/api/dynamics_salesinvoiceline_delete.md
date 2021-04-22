@@ -1,5 +1,5 @@
 ---
-title: Delete salesInvoiceLines | Microsoft Docs
+title: Delete salesInvoiceLines  
 description: Deletes a sales invoice line object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

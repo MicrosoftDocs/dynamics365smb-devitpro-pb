@@ -1,5 +1,5 @@
 ---
-title: GET paymentMethods | Microsoft Docs
+title: GET paymentMethods  
 description: Gets a paymentMethod object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

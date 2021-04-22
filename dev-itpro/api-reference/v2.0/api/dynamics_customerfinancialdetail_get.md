@@ -1,5 +1,5 @@
 ---
-title: GET customerFinancialDetails | Microsoft Docs
+title: GET customerFinancialDetails  
 description: Gets a customerFinancialDetail object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

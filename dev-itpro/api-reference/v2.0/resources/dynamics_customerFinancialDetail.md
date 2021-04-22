@@ -1,5 +1,5 @@
 ---
-title: customerFinancialDetail resource type | Microsoft Docs
+title: customerFinancialDetail resource type  
 description: A customer financial detail object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

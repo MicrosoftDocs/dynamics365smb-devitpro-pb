@@ -1,5 +1,5 @@
 ---
-title: Delete vendors | Microsoft Docs
+title: Delete vendors  
 description: Deletes a vendor object in Dynamics 365 Business Central. 
  
 author: SusanneWindfeldPedersen

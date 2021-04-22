@@ -1,5 +1,5 @@
 ---
-title: Get journalLines | Microsoft Docs
+title: Get journalLines  
 description: Gets a journal line object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

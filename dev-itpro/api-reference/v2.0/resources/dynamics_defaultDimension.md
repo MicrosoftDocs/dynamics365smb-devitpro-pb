@@ -1,5 +1,5 @@
 ---
-title: defaultDimension resource type | Microsoft Docs
+title: defaultDimension resource type  
 description: A default dimensions object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

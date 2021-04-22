@@ -1,5 +1,5 @@
 ---
-title: salesCreditMemoLine resource type | Microsoft Docs
+title: salesCreditMemoLine resource type  
 description: A sales credit memo line object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

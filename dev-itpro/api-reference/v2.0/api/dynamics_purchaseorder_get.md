@@ -1,5 +1,5 @@
 ---
-title: Get purchaseOrders | Microsoft Docs
+title: Get purchaseOrders  
 description: Gets a purchase order object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

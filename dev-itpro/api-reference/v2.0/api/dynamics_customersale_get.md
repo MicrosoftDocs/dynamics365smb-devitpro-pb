@@ -1,5 +1,5 @@
 ---
-title: GET customerSales | Microsoft Docs
+title: GET customerSales  
 description: Gets a customerSale object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

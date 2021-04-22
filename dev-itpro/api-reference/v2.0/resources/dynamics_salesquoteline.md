@@ -1,5 +1,5 @@
 ---
-title: salesQuoteLine resource type | Microsoft Docs
+title: salesQuoteLine resource type  
 description: A sales quote line object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

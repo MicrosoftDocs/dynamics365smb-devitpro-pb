@@ -1,5 +1,5 @@
 ---
-title: Delete salesOrders | Microsoft Docs
+title: Delete salesOrders  
 description: Deletes a sales order object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen

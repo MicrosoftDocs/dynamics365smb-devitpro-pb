@@ -1,5 +1,5 @@
 ---
-title: Update salesCreditMemoLines | Microsoft Docs
+title: Update salesCreditMemoLines  
 description: Updates a sales credit memo line object in Dynamics 365 Business Central. 
  
 author: SusanneWindfeldPedersen

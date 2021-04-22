@@ -1,5 +1,5 @@
 ---
-title: Create timeRegistrationEntry | Microsoft Docs
+title: Create timeRegistrationEntry  
 description: Creates a attachment object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen

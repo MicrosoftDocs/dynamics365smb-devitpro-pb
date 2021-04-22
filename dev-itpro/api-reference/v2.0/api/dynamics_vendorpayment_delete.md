@@ -1,5 +1,5 @@
 ---
-title: DELETE vendorPayments | Microsoft Docs
+title: DELETE vendorPayments  
 description: Deletes vendorPayment  in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

@@ -1,5 +1,5 @@
 ---
-title: Get contactInformation | Microsoft Docs
+title: Get contactInformation  
 description: Gets a contact information object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

@@ -1,5 +1,5 @@
 ---
-title: Update salesQuoteLines | Microsoft Docs
+title: Update salesQuoteLines  
 description: Updates a sales quote line in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

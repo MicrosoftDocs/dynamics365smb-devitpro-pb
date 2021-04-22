@@ -1,5 +1,5 @@
 ---
-title: Delete salesCreditMemoLines | Microsoft Docs
+title: Delete salesCreditMemoLines  
 description: Deletes a sales credit memo line object in Dynamics 365 Business Central. 
  
 author: SusanneWindfeldPedersen

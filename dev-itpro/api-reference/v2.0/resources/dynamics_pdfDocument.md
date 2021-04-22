@@ -1,5 +1,5 @@
 ---
-title: pdfDocument resource type | Microsoft Docs
+title: pdfDocument resource type  
 description: A pdf document object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

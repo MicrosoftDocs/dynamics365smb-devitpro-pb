@@ -1,5 +1,5 @@
 ---
-title: DELETE customerPaymentJournals | Microsoft Docs
+title: DELETE customerPaymentJournals  
 description: Deletes customerPaymentJournal  in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

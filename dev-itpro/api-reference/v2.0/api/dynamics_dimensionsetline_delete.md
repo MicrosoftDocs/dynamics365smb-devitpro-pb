@@ -1,5 +1,5 @@
 ---
-title: DELETE dimensionSetLines | Microsoft Docs
+title: DELETE dimensionSetLines  
 description: Deletes dimensionSetLine  in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

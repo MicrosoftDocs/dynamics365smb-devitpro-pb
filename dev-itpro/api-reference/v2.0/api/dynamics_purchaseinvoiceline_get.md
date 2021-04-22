@@ -1,5 +1,5 @@
 ---
-title: Get purchaseInvoiceLines | Microsoft Docs
+title: Get purchaseInvoiceLines  
 description: Gets a purchase invoice line object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

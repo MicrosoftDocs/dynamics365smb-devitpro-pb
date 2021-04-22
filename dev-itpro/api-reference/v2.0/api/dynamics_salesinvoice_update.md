@@ -1,5 +1,5 @@
 ---
-title: Update salesInvoices | Microsoft Docs
+title: Update salesInvoices  
 description: Updates a sales invoice object in Dynamics 365 Business Central. 
  
 author: SusanneWindfeldPedersen

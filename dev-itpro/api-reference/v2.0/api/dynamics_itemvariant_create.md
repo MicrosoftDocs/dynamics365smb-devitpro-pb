@@ -1,5 +1,5 @@
 ---
-title: CREATE itemVariants | Microsoft Docs
+title: CREATE itemVariants  
 description: Creates a itemVariant object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

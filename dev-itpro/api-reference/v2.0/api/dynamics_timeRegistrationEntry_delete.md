@@ -1,5 +1,5 @@
 ---
-title: Delete timeRegistrationEntries | Microsoft Docs
+title: Delete timeRegistrationEntries  
 description: Deletes a timeRegistrationEntry object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen

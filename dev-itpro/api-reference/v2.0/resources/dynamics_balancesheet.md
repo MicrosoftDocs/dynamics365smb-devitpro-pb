@@ -1,5 +1,5 @@
 ---
-title: balanceSheet resource type | Microsoft Docs
+title: balanceSheet resource type  
 description: A balance sheet object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

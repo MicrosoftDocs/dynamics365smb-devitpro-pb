@@ -1,5 +1,5 @@
 ---
-title: GET salesShipmentLines | Microsoft Docs
+title: GET salesShipmentLines  
 description: Gets a salesShipmentLine object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

@@ -1,5 +1,5 @@
 ---
-title: Delete salesQuotes | Microsoft Docs
+title: Delete salesQuotes  
 description: Deletes a sales quote object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen

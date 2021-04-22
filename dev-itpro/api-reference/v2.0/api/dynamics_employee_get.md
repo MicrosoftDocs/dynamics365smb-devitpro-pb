@@ -1,5 +1,5 @@
 ---
-title: Get employees | Microsoft Docs
+title: Get employees  
 description: Gets an employee object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen

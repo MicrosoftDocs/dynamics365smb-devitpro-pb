@@ -1,5 +1,5 @@
 ---
-title: Get dimensions | Microsoft Docs
+title: Get dimensions  
 description: Gets a dimension object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

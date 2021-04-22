@@ -1,5 +1,5 @@
 ---
-title: Get retainedEarningsStatement | Microsoft Docs
+title: Get retainedEarningsStatement  
 description: Gets a retained earnings statement object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

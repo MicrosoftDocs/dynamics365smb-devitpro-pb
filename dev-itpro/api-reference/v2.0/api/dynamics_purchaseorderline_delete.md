@@ -1,5 +1,5 @@
 ---
-title: Delete purchaseOrderLine | Microsoft Docs
+title: Delete purchaseOrderLine  
 description: Deletes a purchase order line object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

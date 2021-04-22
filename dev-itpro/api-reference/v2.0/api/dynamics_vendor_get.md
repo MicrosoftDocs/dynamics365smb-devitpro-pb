@@ -1,5 +1,5 @@
 ---
-title: Get vendors | Microsoft Docs
+title: Get vendors  
 description: Gets a vendor object in Dynamics 365 Business Central. 
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

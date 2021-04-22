@@ -1,5 +1,5 @@
 ---
-title: Get dimensionValues | Microsoft Docs
+title: Get dimensionValues  
 description: Gets a dimension value object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

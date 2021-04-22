@@ -1,5 +1,5 @@
 ---
-title: purchaseOrder resource type | Microsoft Docs
+title: purchaseOrder resource type  
 description: A purchase order object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

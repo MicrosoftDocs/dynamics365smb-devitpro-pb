@@ -1,5 +1,5 @@
 ---
-title: Create journalLines | Microsoft Docs
+title: Create journalLines  
 description: Creates a journal line in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

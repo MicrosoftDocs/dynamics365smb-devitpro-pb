@@ -1,5 +1,5 @@
 ---
-title: contactInformation resource type | Microsoft Docs
+title: contactInformation resource type  
 description: A contact information object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

@@ -1,5 +1,5 @@
 ---
-title: purchaseReceiptLine resource type | Microsoft Docs
+title: purchaseReceiptLine resource type  
 description: A purchase receipt line object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

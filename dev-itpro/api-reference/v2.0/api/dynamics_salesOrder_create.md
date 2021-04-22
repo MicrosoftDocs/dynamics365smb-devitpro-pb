@@ -1,5 +1,5 @@
 ---
-title: Create salesOrders | Microsoft Docs
+title: Create salesOrders  
 description: Creates a sales order object in Dynamics 365 Business Central. 
  
 author: SusanneWindfeldPedersen

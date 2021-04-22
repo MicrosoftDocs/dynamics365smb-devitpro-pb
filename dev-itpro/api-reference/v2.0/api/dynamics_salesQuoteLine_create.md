@@ -1,5 +1,5 @@
 ---
-title: Create salesQuoteLines | Microsoft Docs
+title: Create salesQuoteLines  
 description: Creates a sales quote line object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen

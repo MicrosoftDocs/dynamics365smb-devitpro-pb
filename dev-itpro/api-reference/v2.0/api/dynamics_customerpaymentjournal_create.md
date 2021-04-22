@@ -1,5 +1,5 @@
 ---
-title: CREATE customerPaymentJournals | Microsoft Docs
+title: CREATE customerPaymentJournals  
 description: Creates a customerPaymentJournal object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

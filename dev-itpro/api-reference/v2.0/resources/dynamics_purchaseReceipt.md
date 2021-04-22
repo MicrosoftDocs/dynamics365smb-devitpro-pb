@@ -1,5 +1,5 @@
 ---
-title: purchaseReceipt resource type | Microsoft Docs
+title: purchaseReceipt resource type  
 description: A purchase receipt object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

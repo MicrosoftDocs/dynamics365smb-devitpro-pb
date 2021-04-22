@@ -1,5 +1,5 @@
 ---
-title: picture resource type | Microsoft Docs
+title: picture resource type  
 description: A picture object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"
