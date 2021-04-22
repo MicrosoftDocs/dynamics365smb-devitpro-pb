@@ -25,7 +25,7 @@ Once you have the API access enabled, you can write code that integrates your we
 > With the introduction of multiple endpoints, the name of the environment being connected to, needs to go into the URI. To retrieve a list of environments deployed on the tenant, call:
 `GET https://api.businesscentral.dynamics.com/environments/v2.0/`.
 
-### [!INCLUDE[prod_short](../../../includes/prod_short.md)]
+### [!INCLUDE[prod_short](../../includes/prod_short.md)]
 
 |**Means of connection**|**Microsoft Graph**|**Common endpoint service**|**Direct tenant**|
 |--|--|--|--|
@@ -37,7 +37,7 @@ Once you have the API access enabled, you can write code that integrates your we
 |**API update cycle**|Monthly|Monthly|Monthly|
 |**Development instance**|Sign up for a [tenant](https://go.microsoft.com/fwlink/?linkid=847861)|Sign up for a [tenant](https://go.microsoft.com/fwlink/?linkid=847861)|Sign up for a [tenant](https://go.microsoft.com/fwlink/?linkid=847861)|
 
-### [!INCLUDE[prod_short](../../../includes/prod_short.md)] On-Prem
+### [!INCLUDE[prod_short](../../includes/prod_short.md)] On-Prem
 
 |**Means of connection**|**Direct installation**|
 |--|--|
