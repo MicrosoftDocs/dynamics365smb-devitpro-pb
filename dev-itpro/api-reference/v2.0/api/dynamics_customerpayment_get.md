@@ -71,7 +71,7 @@ Here is an example of the response.
 ```
 
 ## See also
-[Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)    
+[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)    
 [customerpayment](../resources/dynamics_customerpayment.md)    
 [Delete customerpayment](dynamics_customerpayment_Delete.md)    
 [Create customerpayment](dynamics_customerpayment_Create.md)    

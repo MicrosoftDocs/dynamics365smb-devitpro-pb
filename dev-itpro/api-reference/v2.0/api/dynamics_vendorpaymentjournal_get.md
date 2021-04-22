@@ -54,7 +54,7 @@ PLACE CODE HERE.
 
 
 ## See also
-[Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  
+[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)  
 [vendorPaymentJournal](../resources/dynamics_vendorPaymentJournal.md)  
 [Delete vendorPaymentJournal](dynamics_vendorPaymentJournal_Delete.md)   
 [Create vendorPaymentJournal](dynamics_vendorPaymentJournal_Create.md)   

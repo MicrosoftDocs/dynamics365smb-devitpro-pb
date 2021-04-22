@@ -67,7 +67,7 @@ Here is an example of the response.
 ```
 
 ## See also
-[Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)    
+[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)    
 [attachment](../resources/dynamics_attachment.md)    
 [Delete attachment](dynamics_attachment_Delete.md)    
 [Create attachment](dynamics_attachment_Create.md)    

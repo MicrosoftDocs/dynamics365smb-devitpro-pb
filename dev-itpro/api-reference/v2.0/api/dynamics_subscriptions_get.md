@@ -68,7 +68,7 @@ Here is an example of the response.
 
 
 ## See also
-[Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)    
+[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)    
 [subscriptions](../resources/dynamics_subscriptions.md)    
 [Delete subscriptions](dynamics_subscriptions_Delete.md)    
 [Create subscriptions](dynamics_subscriptions_Create.md)    

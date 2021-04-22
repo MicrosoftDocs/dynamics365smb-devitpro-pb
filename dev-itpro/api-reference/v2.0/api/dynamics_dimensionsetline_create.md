@@ -95,7 +95,7 @@ Content-type: application/json
 
 
 ## See also
-[Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)    
+[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)    
 [dimensionsetline](../resources/dynamics_dimensionsetline.md)    
 [Get dimensionsetline](dynamics_dimensionsetline_Get.md)    
 [Delete dimensionsetline](dynamics_dimensionsetline_Delete.md)    

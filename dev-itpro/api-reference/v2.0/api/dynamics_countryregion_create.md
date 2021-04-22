@@ -74,7 +74,7 @@ Content-type: application/json
 ```
 
 ## See also
-[Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)    
+[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)    
 [countryregion](../resources/dynamics_countryregion.md)    
 [Get countryregion](dynamics_countryregion_Get.md)    
 [Delete countryregion](dynamics_countryregion_Delete.md)    

@@ -105,7 +105,7 @@ The PDF document in binary format.
 The pdfDocument is not supported for unposted purchase invoices. The purchase invoice must be posted before it is printed; if it is not posted, the response will return an error.
 
 ## See also
-[Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)    
+[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)    
 [purchaseinvoice](../resources/dynamics_purchaseinvoice.md)    
 [Get purchaseinvoice](dynamics_purchaseinvoice_Get.md)    
 [Delete purchaseinvoice](dynamics_purchaseinvoice_Delete.md)    

@@ -84,6 +84,6 @@ This resource type requires [!INCLUDE[prod_short](../../../includes/prod_short.m
 
 ## See Also
 
-[Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  
+[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)  
 [applyVendorEntry](../resources/dynamics_applyVendorEntry.md)  
 [GET applyVendorEntry](dynamics_applyvendorentry_get.md)  

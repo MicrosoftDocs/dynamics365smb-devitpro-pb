@@ -99,7 +99,7 @@ Content-type: application/json
 ```
 
 ## See also
-[Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)    
+[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)    
 [salesorderline](../resources/dynamics_salesorderline.md)    
 [Get salesorderline](dynamics_salesorderline_Get.md)    
 [Delete salesorderline](dynamics_salesorderline_Delete.md)    

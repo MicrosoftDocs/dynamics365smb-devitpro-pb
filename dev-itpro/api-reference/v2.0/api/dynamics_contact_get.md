@@ -85,7 +85,7 @@ This resource type requires [!INCLUDE[prod_short](../../../includes/prod_short.m
 
 ## See Also
 
-[Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  
+[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)  
 [contact](../resources/dynamics_contact.md)  
 [DELETE contact](dynamics_contact_delete.md)  
 [POST contact](dynamics_contact_create.md)  
