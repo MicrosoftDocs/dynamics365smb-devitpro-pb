@@ -38,7 +38,7 @@ The available options for setting the `runtime` in AL are:
 
 ## Best practices on setting the runtime version
 
-Setting the runtime to be most optimal depends on the circumstances. If you, for example, have customers that run on older versions, you should set the runtime to be the minimum version that works to ensure compatibility. This will prevent you from inadvertently using features that are not supported on the older server. But it is then a best practices, to have a daily or weekly build that tests the extension against the latest version of the runtime. Testing against the latest runtime is recommended to detect new diagnostics, such as warnings or errors, that are introduced in the compiler or changes in the platform runtime.
+Setting the runtime to be most optimal depends on the circumstances. If you, for example, have customers that run on older versions, you should set the runtime to be the minimum version that works to ensure compatibility. This will prevent you from inadvertently using features that are not supported on the older server, for example for on-prem scenarios, or if you develop both for on-prem and for SaaS. It is a best practices, to have a daily or weekly build that tests the extension against the latest version of the runtime. Testing against the latest runtime is recommended to detect new diagnostics, such as warnings or errors, that are introduced in the compiler or changes in the platform runtime.
 
 ## See Also
 
