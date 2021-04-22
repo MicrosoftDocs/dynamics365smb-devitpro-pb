@@ -15,7 +15,7 @@ ms.author: solsen
 
 # Get pdfDocument
 
-[!INCLUDE[api_v2_note](../../includes/api_v2_note.md)]
+[!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
 Retrieve a PDF print-out of the corresponding document as binary content for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 

@@ -13,7 +13,7 @@ ms.author: solsen
 
 # Update currencies
 
-[!INCLUDE[api_v2_note](../../includes/api_v2_note.md)]
+[!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
 Update the properties of a currency object for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 

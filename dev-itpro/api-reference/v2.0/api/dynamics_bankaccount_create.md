@@ -13,7 +13,7 @@ ms.author: solsen
 
 # Create bankAccounts
 
-[!INCLUDE[api_v2_note](../../includes/api_v2_note.md)]
+[!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
 Create a bankAccount object in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 

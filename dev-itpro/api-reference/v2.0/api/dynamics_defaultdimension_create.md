@@ -13,7 +13,7 @@ ms.author: solsen
 
 # Create defaultDimensions for entities
 
-[!INCLUDE[api_v2_note](../../includes/api_v2_note.md)]
+[!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
 Creates the default dimensions for entities in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 

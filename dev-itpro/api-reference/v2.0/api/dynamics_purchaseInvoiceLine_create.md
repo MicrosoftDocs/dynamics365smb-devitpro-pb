@@ -13,7 +13,7 @@ ms.author: solsen
 
 # Create purchaseInvoiceLines
 
-[!INCLUDE[api_v2_note](../../includes/api_v2_note.md)]
+[!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
 Create a purchase invoice line object in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 

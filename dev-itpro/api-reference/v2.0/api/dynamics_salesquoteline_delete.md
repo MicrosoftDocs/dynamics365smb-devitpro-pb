@@ -15,7 +15,7 @@ ms.author: solsen
 
 # Delete salesQuoteLines
 
-[!INCLUDE[api_v2_note](../../includes/api_v2_note.md)]
+[!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
 Delete a sales quote line object from [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 

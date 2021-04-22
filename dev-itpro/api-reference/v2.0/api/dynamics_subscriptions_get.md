@@ -13,7 +13,7 @@ ms.author: solsen
 
 # Get subscriptions
 
-[!INCLUDE[api_v2_note](../../includes/api_v2_note.md)]
+[!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
 Retrieves the properties of webhook subscription objects for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 

@@ -15,7 +15,7 @@ ms.author: solsen
 
 # Delete items
 
-[!INCLUDE[api_v2_note](../../includes/api_v2_note.md)]
+[!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
 Delete an item from [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 

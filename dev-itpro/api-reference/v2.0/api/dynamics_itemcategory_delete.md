@@ -13,7 +13,7 @@ ms.author: solsen
 
 # Delete itemCategories
 
-[!INCLUDE[api_v2_note](../../includes/api_v2_note.md)]
+[!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
 Delete an itemCategory from [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 

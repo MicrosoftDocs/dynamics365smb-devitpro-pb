@@ -13,7 +13,7 @@ ms.author: solsen
 
 # Create salesCreditMemoLines
 
-[!INCLUDE[api_v2_note](../../includes/api_v2_note.md)]
+[!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
 Create a sales credit memo line object in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 

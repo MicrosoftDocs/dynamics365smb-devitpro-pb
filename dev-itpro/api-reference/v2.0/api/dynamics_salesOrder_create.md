@@ -15,7 +15,7 @@ ms.author: solsen
 
 # Create salesOrders
 
-[!INCLUDE[api_v2_note](../../includes/api_v2_note.md)]
+[!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
 Create a sales order object in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 

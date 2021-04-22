@@ -15,7 +15,7 @@ ms.author: solsen
 
 # Update salesCreditMemoLines
 
-[!INCLUDE[api_v2_note](../../includes/api_v2_note.md)]
+[!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
 Update the properties of a sales credit memo line object for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 

@@ -13,7 +13,7 @@ ms.author: solsen
 
 # Get entity defaultDimensions
 
-[!INCLUDE[api_v2_note](../../includes/api_v2_note.md)]
+[!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
 Gets the default dimensions of an entity in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 

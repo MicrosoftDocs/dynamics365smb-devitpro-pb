@@ -13,7 +13,7 @@ ms.author: solsen
 
 # Create attachments
 
-[!INCLUDE[api_v2_note](../../includes/api_v2_note.md)]
+[!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
 Creates a attachment in [!INCLUDE[prod_short](../../../includes/prod_short.md)]. 
 

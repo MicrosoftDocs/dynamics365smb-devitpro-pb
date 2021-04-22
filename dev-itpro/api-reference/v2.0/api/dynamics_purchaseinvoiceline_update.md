@@ -15,7 +15,7 @@ ms.author: solsen
 
 # Update purchaseInvoiceLines
 
-[!INCLUDE[api_v2_note](../../includes/api_v2_note.md)]
+[!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
 Update the properties of a purchase invoice line object for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 

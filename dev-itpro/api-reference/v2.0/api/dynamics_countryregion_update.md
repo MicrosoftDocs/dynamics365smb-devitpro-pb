@@ -13,7 +13,7 @@ ms.author: solsen
 
 # Update countriesRegions
 
-[!INCLUDE[api_v2_note](../../includes/api_v2_note.md)]
+[!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
 Update the properties of a country/region object for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 

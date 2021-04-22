@@ -15,7 +15,7 @@ ms.author: solsen
 
 # Update items
 
-[!INCLUDE[api_v2_note](../../includes/api_v2_note.md)]
+[!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
 Update the properties of an item object for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 

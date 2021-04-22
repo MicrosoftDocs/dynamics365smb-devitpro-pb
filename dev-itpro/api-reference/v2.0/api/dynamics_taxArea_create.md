@@ -15,7 +15,7 @@ ms.author: solsen
 
 # Create taxAreas
 
-[!INCLUDE[api_v2_note](../../includes/api_v2_note.md)]
+[!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
 Creates a tax area object in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 

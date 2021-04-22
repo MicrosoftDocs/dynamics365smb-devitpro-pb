@@ -13,7 +13,7 @@ ms.author: solsen
 
 # Create shipmentMethods
 
-[!INCLUDE[api_v2_note](../../includes/api_v2_note.md)]
+[!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
 Create a shipment method object in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 

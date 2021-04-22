@@ -15,7 +15,7 @@ ms.author: solsen
 
 # Create items
 
-[!INCLUDE[api_v2_note](../../includes/api_v2_note.md)]
+[!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
 Create an item in [!INCLUDE[prod_short](../../../includes/prod_short.md)] for use on invoices, quotes, etc.
 

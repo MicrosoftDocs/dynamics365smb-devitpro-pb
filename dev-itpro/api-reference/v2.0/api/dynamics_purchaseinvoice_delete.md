@@ -15,7 +15,7 @@ ms.author: solsen
 
 # Delete purchaseInvoices
 
-[!INCLUDE[api_v2_note](../../includes/api_v2_note.md)]
+[!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
 Delete a purchase invoice object from [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 

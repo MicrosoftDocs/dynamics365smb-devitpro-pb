@@ -15,7 +15,7 @@ ms.author: solsen
 
 # Delete employees
 
-[!INCLUDE[api_v2_note](../../includes/api_v2_note.md)]
+[!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
 Delete an employee from [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 

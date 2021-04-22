@@ -15,7 +15,7 @@ ms.author: solsen
 
 # Delete timeRegistrationEntries
 
-[!INCLUDE[api_v2_note](../../includes/api_v2_note.md)]
+[!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
 Delete a timeRegistrationEntry from [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 

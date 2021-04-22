@@ -13,7 +13,7 @@ ms.author: solsen
 
 # Create paymentTerms
 
-[!INCLUDE[api_v2_note](../../includes/api_v2_note.md)]
+[!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
 Create a payment terms object in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 

@@ -13,7 +13,7 @@ ms.author: solsen
 
 # Delete dimensionSetLines
 
-[!INCLUDE[api_v2_note](../../includes/api_v2_note.md)]
+[!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
 Deletes dimensionSetLines in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 

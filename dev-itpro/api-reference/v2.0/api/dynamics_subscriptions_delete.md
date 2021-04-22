@@ -13,7 +13,7 @@ ms.author: solsen
 
 # Delete subscriptions
 
-[!INCLUDE[api_v2_note](../../includes/api_v2_note.md)]
+[!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
 Deletes a subscriptions object for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 

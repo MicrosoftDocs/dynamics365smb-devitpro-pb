@@ -13,7 +13,7 @@ ms.author: solsen
 
 # Get incomeStatement
 
-[!INCLUDE[api_v2_note](../../includes/api_v2_note.md)]
+[!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
 Retrieve the properties and relationships of an income statement report object for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 

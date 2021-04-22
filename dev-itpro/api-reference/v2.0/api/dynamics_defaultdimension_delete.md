@@ -13,7 +13,7 @@ ms.author: solsen
 
 # Delete defaultDimensions from entities
 
-[!INCLUDE[api_v2_note](../../includes/api_v2_note.md)]
+[!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
 Deletes the default dimensions of the item in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 

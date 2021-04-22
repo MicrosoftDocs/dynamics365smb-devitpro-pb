@@ -15,7 +15,7 @@ ms.author: solsen
 
 # Delete salesInvoices
 
-[!INCLUDE[api_v2_note](../../includes/api_v2_note.md)]
+[!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
 Delete a sales invoice object from [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 

@@ -13,7 +13,7 @@ ms.author: solsen
 
 # Delete shipmentMethods
 
-[!INCLUDE[api_v2_note](../../includes/api_v2_note.md)]
+[!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
 Deletes shipmentMethods in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 

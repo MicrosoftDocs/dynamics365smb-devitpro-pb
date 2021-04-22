@@ -13,7 +13,7 @@ ms.author: solsen
 
 # Update subscriptions
 
-[!INCLUDE[api_v2_note](../../includes/api_v2_note.md)]
+[!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
 Updates a subscriptions object for [!INCLUDE[prod_short](../../../includes/prod_short.md)]. A subscription is valid for 3 days unless it is updated. `PATCH` requests will perform a handshake with the subscriber.
 

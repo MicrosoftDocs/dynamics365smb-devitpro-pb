@@ -15,7 +15,7 @@ ms.author: solsen
 
 # Update employees
 
-[!INCLUDE[api_v2_note](../../includes/api_v2_note.md)]
+[!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
 Update the properties of an employee object for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 

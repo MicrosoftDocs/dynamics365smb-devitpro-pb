@@ -13,7 +13,7 @@ ms.author: solsen
 
 # Create customerPaymentJournals
 
-[!INCLUDE[api_v2_note](../../includes/api_v2_note.md)]
+[!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
 Create a customerPaymentJournal object in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 

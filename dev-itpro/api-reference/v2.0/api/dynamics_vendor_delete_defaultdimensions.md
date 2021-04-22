@@ -15,7 +15,7 @@ ms.author: solsen
 
 # Delete vendor defaultDimensions
 
-[!INCLUDE[api_v2_note](../../includes/api_v2_note.md)]
+[!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
 Deletes the default dimensions of the vendor in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 

@@ -13,7 +13,7 @@ ms.author: solsen
 
 # Create itemCategories
 
-[!INCLUDE[api_v2_note](../../includes/api_v2_note.md)]
+[!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
 Create an item category object [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 

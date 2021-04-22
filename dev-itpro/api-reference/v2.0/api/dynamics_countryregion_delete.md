@@ -13,7 +13,7 @@ ms.author: solsen
 
 # Delete countriesRegions
 
-[!INCLUDE[api_v2_note](../../includes/api_v2_note.md)]
+[!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
 Delete a countries/regions object from [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 

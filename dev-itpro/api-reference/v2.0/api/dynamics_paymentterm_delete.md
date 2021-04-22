@@ -13,7 +13,7 @@ ms.author: solsen
 
 # Delete paymentTerms
 
-[!INCLUDE[api_v2_note](../../includes/api_v2_note.md)]
+[!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
 Delete a payment terms object from [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 

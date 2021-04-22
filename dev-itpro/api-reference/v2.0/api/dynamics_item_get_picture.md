@@ -14,7 +14,7 @@ ms.author: solsen
 
 # Get item picture
 
-[!INCLUDE[api_v2_note](../../includes/api_v2_note.md)]
+[!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
 Gets the default dimensions of the item in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 

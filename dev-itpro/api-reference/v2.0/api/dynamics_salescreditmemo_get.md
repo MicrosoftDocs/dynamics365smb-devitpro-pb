@@ -15,7 +15,7 @@ ms.author: solsen
 
 # Get salesCreditMemos
 
-[!INCLUDE[api_v2_note](../../includes/api_v2_note.md)]
+[!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
 Retrieve the properties and relationships of a sales credit memo object for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 

@@ -15,7 +15,7 @@ ms.author: solsen
 
 # Create salesQuoteLines
 
-[!INCLUDE[api_v2_note](../../includes/api_v2_note.md)]
+[!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
 Create a sales quote line object in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 

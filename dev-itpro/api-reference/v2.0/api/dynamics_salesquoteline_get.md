@@ -13,7 +13,7 @@ ms.author: solsen
 
 # Get salesQuoteLines
 
-[!INCLUDE[api_v2_note](../../includes/api_v2_note.md)]
+[!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
 Retrieve the properties and relationships of a sales quote line object for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 

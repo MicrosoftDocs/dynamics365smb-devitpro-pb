@@ -13,7 +13,7 @@ ms.author: solsen
 
 # Create paymentMethods
 
-[!INCLUDE[api_v2_note](../../includes/api_v2_note.md)]
+[!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
 Create a payment method object in D[!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
