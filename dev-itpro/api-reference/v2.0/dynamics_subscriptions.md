@@ -14,14 +14,14 @@ ms.author: solsen
 
 # Working with Webhooks in Dynamics 365 Business Central
 
-Webhooks is the way to get notified if an entity changes in [!INCLUDE[prod_short](../../../includes/prod_short.md)]. For general information about webhooks, see [Push notifications via webhooks](https://github.com/Microsoft/api-guidelines/blob/vNext/Guidelines.md#15-push-notifications-via-webhooks) in Microsoft REST API Guidelines.
+Webhooks is the way to get notified if an entity changes in [!INCLUDE[prod_short](../../includes/prod_short.md)]. For general information about webhooks, see [Push notifications via webhooks](https://github.com/Microsoft/api-guidelines/blob/vNext/Guidelines.md#15-push-notifications-via-webhooks) in Microsoft REST API Guidelines.
 
 
-In the following replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](endpoints-apis-for-dynamics.md).
+In the following replace the URL prefix for [!INCLUDE[prod_short](../../includes/prod_short.md)] depending on environment following the [guideline](endpoints-apis-for-dynamics.md).
 
 ## Register a webhook subscription
 
-Using webhooks requires the client/subscriber to perform a handshake with [!INCLUDE[prod_short](../../../includes/prod_short.md)] to register the webhook subscription.
+Using webhooks requires the client/subscriber to perform a handshake with [!INCLUDE[prod_short](../../includes/prod_short.md)] to register the webhook subscription.
  
 ```json
 POST https://{businesscentralPrefix}/api/v2.0/subscriptions 
@@ -33,9 +33,9 @@ Content-type: application/json
 }
 ```
 
-Once the `POST` is issued against the **subscription** API to create the subscription, [!INCLUDE[prod_short](../../../includes/prod_short.md)] will issue a request to the `notificationUrl`, passing a `validationToken` parameter on the query string. Subscriber needs to perform the handshake by returning `validationToken` in the response body and provide status code `200`.
+Once the `POST` is issued against the **subscription** API to create the subscription, [!INCLUDE[prod_short](../../includes/prod_short.md)] will issue a request to the `notificationUrl`, passing a `validationToken` parameter on the query string. Subscriber needs to perform the handshake by returning `validationToken` in the response body and provide status code `200`.
 
-If [!INCLUDE[prod_short](../../../includes/prod_short.md)] receives the response containing the `validationToken`, the subscription is registered and webhook notifications will be sent to the `notificationUrl`.  
+If [!INCLUDE[prod_short](../../includes/prod_short.md)] receives the response containing the `validationToken`, the subscription is registered and webhook notifications will be sent to the `notificationUrl`.  
 
 > [!IMPORTANT]  
 > Handshake is mandatory when [creating a subscription](api/dynamics_subscriptions_create.md) and [renewing a subscription](api/dynamics_subscriptions_update.md).  In both cases the client has to return the `validationToken` in the body with response code `200 OK`.
@@ -117,12 +117,12 @@ Here is a sample notification payload:
 }
 ```
 
-*Created*, *updated*, and *deleted* identifies the state change for the entity. By *collection* [!INCLUDE[prod_short](../../../includes/prod_short.md)] sends a notification that many records have been created or changed. A filter is applied to the resource, enabling the subscriber to request all entities satisfying the filter.
+*Created*, *updated*, and *deleted* identifies the state change for the entity. By *collection* [!INCLUDE[prod_short](../../includes/prod_short.md)] sends a notification that many records have been created or changed. A filter is applied to the resource, enabling the subscriber to request all entities satisfying the filter.
 
-Notifications are not sent immediately when the record changes. By delaying notifications, [!INCLUDE[prod_short](../../../includes/prod_short.md)] can ensure that only one notification is sent, even though the entity might have changed several times within a few seconds.
+Notifications are not sent immediately when the record changes. By delaying notifications, [!INCLUDE[prod_short](../../includes/prod_short.md)] can ensure that only one notification is sent, even though the entity might have changed several times within a few seconds.
 
 > [!NOTE]  
-> If [!INCLUDE[prod_short](../../../includes/prod_short.md)] cannot reach the subscriber, several retries will be attempted over the next 36 hours. The subscriber must respond with following error codes: `408 - Request Timeout`, `429 - Too Many Requests or any error in 500-599 range (5xx)`. If subscriber responds with any other code than listed, no retries will be attempted and the subscription will be deleted.
+> If [!INCLUDE[prod_short](../../includes/prod_short.md)] cannot reach the subscriber, several retries will be attempted over the next 36 hours. The subscriber must respond with following error codes: `408 - Request Timeout`, `429 - Too Many Requests or any error in 500-599 range (5xx)`. If subscriber responds with any other code than listed, no retries will be attempted and the subscription will be deleted.
 
 ## Unsubscribing
 
@@ -161,7 +161,7 @@ Content-type: application/json
 
 For Document APIs, a notification will be sent for the header if a change is made a to a line. E.g. a notification to a subscription for **salesInvoice** will be sent, if a change is made to a related **salesInvoiceLine**.  
 
-Custom APIs are also webhook-enabled and will be listed in **webhookSupportedResources** if [!INCLUDE[prod_short](../../../includes/prod_short.md)] is able to send notifications for the entity.
+Custom APIs are also webhook-enabled and will be listed in **webhookSupportedResources** if [!INCLUDE[prod_short](../../includes/prod_short.md)] is able to send notifications for the entity.
 
 > [!NOTE]
 > Webhooks are not supported for APIs in the following cases:  
