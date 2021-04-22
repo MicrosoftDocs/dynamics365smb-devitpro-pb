@@ -36,7 +36,7 @@ Environments that have extensions with name collisions can experience issues whe
 ### For AppSource extensions
 
 > [!IMPORTANT]  
-> The use of affixes for object names is required for AppSource submission as part of the [Technical Validation Checklist](../developer/devenv-checklist-submission.md). The file name validation is not enforced.
+> The use of affixes for object names is required for AppSource submissions as part of the [Technical Validation Checklist](../developer/devenv-checklist-submission.md). The file name validation is not enforced.
 
 If you do not have any affixes registered yet, contact us at [d365val@microsoft.com](mailto:d365val@microsoft.com) to reserve the prefix/suffix of your choosing.
 
