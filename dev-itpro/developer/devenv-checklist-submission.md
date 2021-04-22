@@ -23,6 +23,7 @@ If you do not meet these mandatory requirements, your extension will fail valida
 |-----------|----------------|
 |Develop your extension in Visual Studio Code.|[Developing [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]s](devenv-dev-overview.md)|
 |The app.json file has mandatory settings that you must include. Here you can also read more about dependency syntax and multiple countries per a single app syntax.|[Mandatory app.json settings](devenv-json-files.md)|
+|Your extensions uses Azure Application Insights.|[Monitoring and Analyzing Telemetry](../administration/telemetry-overview.md)|
 |Coding of `Date` must follow a specific format (**no longer region-specific**)|Use the format `yyyymmddD`. For example, `20170825D`.|
 |Remote services (including all Web services calls) can use either HTTP or HTTPS. However, HTTP calls are only possible by using the HttpRequest AL type.|[Guidance on HTTP use](devenv-restapi-overview.md)|
 |Only JavaScript based Web client add-ins are supported. The zipping process is handled automatically by the compiler. Simply include the new AL `controladdin` type, JavaScript sources, and build the app.|[Control Add-Ins](devenv-control-addin-object.md)|
@@ -99,7 +100,7 @@ Please include app and all library apps in both previousApps and apps and please
 > The Run-AlValidation cannot see whether the affixes to specify have been correctly registered with Microsoft using your MPN ID and app publisher name, please make sure registration is in place.
 
 > [!Important]
-> The Computer on which you run this command must have Docker and the latest BcContainerHelper PowerShell module installed and be able to run Business Central on Docker.
+> The computer on which you run this command must have Docker and the latest BcContainerHelper PowerShell module installed and be able to run Business Central on Docker.
 > 
 > If you are having issues with Business Central on Docker, you might be able to find help here: https://freddysblog.com/2020/10/12/troubleshooting-business-central-on-docker.
 > 

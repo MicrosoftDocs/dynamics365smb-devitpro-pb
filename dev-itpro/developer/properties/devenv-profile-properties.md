@@ -15,7 +15,9 @@ ms.author: solsen
 
 # Profile Properties
 
-The following topic lists properties that apply to [Profiles](../devenv-profile-object.md) specifically.
+The following article lists properties that apply to [Profiles](../devenv-profile-object.md) specifically.
+
+[!INCLUDE[properties_note](../includes/properties_note.md)]
 
 |Property Name| Object |
 |-------------|--------|

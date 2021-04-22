@@ -12,7 +12,10 @@ author: SusanneWindfeldPedersen
 ---
 
 # Report Properties
-This topic lists properties of the report object.  
+
+This article lists properties of the report object.  
+
+[!INCLUDE[properties_note](../includes/properties_note.md)]
 
 |Property Name|Applies to|
 |-------------|-----------|  

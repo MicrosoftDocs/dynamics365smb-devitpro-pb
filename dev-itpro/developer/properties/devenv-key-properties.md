@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 
 The keys associated with a table have properties that describe their behavior, just as tables and fields do. When you create a key, [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] automatically suggests a number of default values for these properties. Depending on the purpose of the key, you will sometimes want to change these default values.  
 
- [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] contains the following properties for keys.  
+[!INCLUDE[properties_note](../includes/properties_note.md)]
 
 |Property Name|Use|  
 |-------------------|---------|  

@@ -86,7 +86,7 @@
 ## [Country/Regional availability and Supported Translations](compliance/apptest-countries-and-translations.md)
 ## [Delegated Administrator Access to Business Central Online](administration/delegated-admin.md)
 ## [Operational Limits](administration/operational-limits-online.md)
-## [Major Updates of Business Central Online](administration/update-rollout-timelime.md)
+## [Major Updates and Minor Updates](administration/update-rollout-timelime.md)
 ## [Version Numbers in Business Central](administration/version-numbers.md)
 ## [Enabling New Features Ahead of Time](administration/feature-management.md)
 ## [Managing Technical Support](administration/manage-technical-support.md)
@@ -121,8 +121,10 @@
 ### [Page View Telemetry](administration/telemetry-page-view-trace.md)
 ### [Permission Changes Telemetry](administration/telemetry-permission-changes-trace.md)
 ### [Report Generation Telemetry](administration/telemetry-reports-trace.md)
+### [Retention Policy Telemetry](administration/telemetry-retention-policy-trace.md)
 ### [Incoming Web Services Requests Telemetry](administration/telemetry-webservices-trace.md)
 ### [Outgoing Web Services Requests Telemetry](administration/telemetry-webservices-outgoing-trace.md)
+### [Table Index Telemetry](administration/telemetry-table-index-trace.md)
 ### [Web Service Access Key Telemetry](administration/telemetry-webservices-access-key-trace.md)
 ### [Event IDs](administration/telemetry-event-ids.md)
 ## Administration Center
@@ -2137,6 +2139,7 @@
 ##### [PreserveWhitespace([Boolean]) Method](developer/methods-auto/xmlwriteoptions/xmlwriteoptions-preservewhitespace-method.md)
 <!-- [//]: # (IMPORTANT: END>DO_NOT_EDIT_METHODS) -->
 ### Properties
+#### [Overview](developer/properties/devenv-properties.md)
 <!-- [//]: # (START>DO_NOT_EDIT_PROPERTIES)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.) -->
@@ -2669,8 +2672,10 @@
 #### [Long Running AL Method Telemetry](administration/telemetry-al-method-trace.md)
 #### [Long Running SQL Queries Telemetry](administration/telemetry-long-running-sql-query-trace.md)
 #### [Report Generation Telemetry](administration/telemetry-reports-trace.md)
+#### [Retention Policy Telemetry](administration/telemetry-retention-policy-trace.md)
 #### [Incoming Web Services Requests Telemetry](administration/telemetry-webservices-trace.md)
 #### [Outgoing Web Services Requests Telemetry](administration/telemetry-webservices-outgoing-trace.md)
+#### [Table Index Telemetry](administration/telemetry-table-index-trace.md)
 #### [Web Service Access Key Telemetry](administration/telemetry-webservices-access-key-trace.md)
 #### [Event IDs](administration/telemetry-event-ids.md)
 ### [Understanding Session Timeouts](administration/understanding-session-timeouts.md)
