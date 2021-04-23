@@ -1,9 +1,9 @@
 ---
-title: "Update 17.5 for Microsoft Dynamics 365 Business Central 2020 Release Wave 2"
-description: Get an overview of new and changed capabilities in the 17.5 update of Business Central online, which is part of 2020 release wave 2.
+title: "Update 18.1 for Microsoft Dynamics 365 Business Central 2020 Release Wave 2"
+description: Get an overview of new and changed capabilities in the 18.1 update of Business Central online, which is part of 2020 release wave 2.
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 04/26/2021
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,9 +12,9 @@ ms.service: "dynamics365-business-central"
 author: EmmaNielsson
 ---
 
-# Update 17.5 for Microsoft Dynamics 365 Business Central online 2020 release wave 2
+# Update 18.1 for Microsoft Dynamics 365 Business Central online 2020 release wave 2
 
-Would you like to know what has changed in update 17.5? Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update. In addition, we have gathered some good to know information and links, you might find interesting.
+Would you like to know what has changed in update 18.1? Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update. In addition, we have gathered some good to know information and links, you might find interesting.
 
 ## Hotfixes
 Find an overview of hotfixes in this [article](https://support.microsoft.com/office/update-17-5-for-microsoft-dynamics-365-business-central-2020-release-wave-2-application-build-17-5-22499-22546-platform-build-17-0-22463-22540-94cdc7cc-0aaf-43cd-a070-c9c9f1147679?ui=en-US&rs=en-US&ad=US).
@@ -34,8 +34,8 @@ Norway| SAF-T update: Improved data export for Contact and Post Code information
 If you want to get a comprehensive overview of what's new and planned for Business Central online for the entire 2020 release wave 2 (release from October 2020 through March 2021), find the link to the release plan [here](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/planned-features).
 
 
-## Upgrade to 17.5
-Please note that new customers will automatically get the latest builds of Business Central (17.5). If you are an existing partner/customer, you will receive an email notification as soon as your environment has been upgraded.
+## Upgrade to 18.1
+Please note that new customers will automatically get the latest builds of Business Central (18.1). If you are an existing partner/customer, you will receive an email notification as soon as your environment has been upgraded.
 
 ## Good to know
 
