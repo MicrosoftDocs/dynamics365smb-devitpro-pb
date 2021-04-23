@@ -106,25 +106,25 @@ Each field is shown with the following information:
 
 #### What field information isn't shown
 
-- Page fields that are not bound to the source table by the [SourceExp property](./properties/devenv-properties.md).
+- Page fields that aren't bound to the source table by the [SourceExp property](./properties/devenv-properties.md).
 - The value of fields that have a data type of blob, byte, media, or mediaset.
 
-## [Extensions](#tab/extensions)
+### [Extensions](#tab/extensions)
 
-The **Extensions** tab displays extensions that are installed for the current environment and affect the selected page or its source table.
+The **Extensions** tab displays installed extensions that affect the selected page or its source table.
 
 ![Page Inspection Extensions Tab](media/page-inspection-extensions.png)
 
-Except for the type and performance information, the data that is shown is defined in the extension's app.json file, which you configure during development. For more information, see [App.json](devenv-json-files.md#Appjson).
+Except for the type and performance information, the data that's shown is defined in the extension's app.json file, which is configured during development. For more information, see [App.json](devenv-json-files.md#Appjson).
 
 #### Type
 
 There are four different extension types:
 
-- **Adds page** indicates that the extensions adds the page object.
-- **Extends page** indicates that the extension modifies the page, like adding a field, action, or code. In AL, this is specified by a page extension object.
+- **Adds page** indicates that the extension adds the page object.
+- **Extends page** indicates that the extension modifies the page, like adding a field, action, or code. In AL, these modifications are done by a page extension object.
 - **Adds table** indicates that the extension adds the table object.
-- **Extends table** indicates that the extension modifies the source table, like adding a field or code. In AL, this is specified by a table extension object.  
+- **Extends table** indicates that the extension modifies the source table, like adding a field or code. In AL, these modifications are specified by a table extension object.  
 
 #### Performance
 
@@ -136,9 +136,9 @@ The performance information includes two values. The first value indicates the t
 > [!NOTE]
 > For [!INCLUDE[prod_short](includes/prod_short.md)] on-premises, the performance data will only be shown if AL function timing is enabled on the [!INCLUDE[server](includes/server.md)] instance. For more information, see [Configuring Business Central Server](../administration/configure-server-instance.md#General).  
 
-## [Page Filters](#tab/pagefilters)
+### [Page Filters](#tab/pagefilters)
 
-The **Page Filters** tab displays the current filters used on the current page. This includes filters that are set by code, list views, or defined by the user in the filter pane of the page.
+The **Page Filters** tab displays the current filters used on the current page. The tab shows filters set by code, set in list views, or defined by the user in the filter pane of the page.
 
 ![Page Inspection Page Filters](media/page-inspection-page-filters.png)
 
@@ -148,8 +148,10 @@ The following table describes the different filter types.
 |----|-----------|
 |UserFilters|Filter that is defined by the client user, by using the Filter pane (see [Filtering](/dynamics365/business-central/ui-enter-criteria-filters#Filtering)), or defined in code by using filter methods like [SetFilter](methods-auto/record/record-setfilter-method.md) or [SetRange](methods-auto/record/record-setrange-method.md).|
 |TableViewFilter|Filter that is defined on the page by the [SourceTableView property](properties/devenv-sourcetableview-property.md)|
-|SubFormLinkFilters|Filter that is defined by the [SubPageLink property](properties/devenv-subpagelink-property.md) on a `part` control that contains the sub-page.|
+|SubFormLinkFilters|Filter that is defined by the [SubPageLink property](properties/devenv-subpagelink-property.md) on a `part` control that contains the subpage.|
 |FormViewFilters|Filter that is defined by the [RunPageView property](properties/devenv-runpageview-property.md) of the action that opens the page.|
+
+---
 
 ## See Also
 
