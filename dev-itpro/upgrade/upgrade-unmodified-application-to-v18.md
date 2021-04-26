@@ -29,7 +29,7 @@ The process for upgrading the similar for a single-tenant and multitenant deploy
 
 ## Task 1: Install version 18
 
-1. Download the latest available update for Business Central 2020 (version 18) that is compatible with your current version.
+1. Download the latest available update for Business Central 2021 (version 18) that is compatible with your current version.
 
     For more information, see [[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
 
