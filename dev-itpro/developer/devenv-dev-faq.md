@@ -52,6 +52,8 @@ For things that are not possible to achieve in AL code, the recommendation is to
 
 Extensions that have been published to a sandbox environment from Visual Studio Code or created using Designer are removed when the sandbox environment is updated or relocated within our service. However, the data of an app is not removed, so you only have to re-publish and install the app to make it available.
 
+If you have per-tenant extensions (PTEs) installed that depend on extensions published from Visual Studio Code, the per-tenant extensions will be removed too.
+
 For more information, see [Sandbox Environments](../administration/environment-types.md).
 
 ## Can I create something similar to Menusuites?
