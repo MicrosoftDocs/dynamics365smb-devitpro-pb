@@ -75,7 +75,7 @@ For more information, see [Upgrading Permissions Sets and Permissions](upgrade-p
 
     Instead of disabling encryption, you can export the current encryption key, which you'll then import after upgrade. However, we recommend disabling encryption before upgrading.
 
-3. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 16 as an administrator.
+3. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for your current version as an administrator.
 
 4. (Single-tenant only) Uninstall all extensions from the old tenants.
 
@@ -157,7 +157,7 @@ This task runs a technical upgrade on the application database to convert it to 
 
 ## Task 5: Configure version 18 server
 
-When you installed version 18 in **Task 2**, a version 18 [!INCLUDE[server](../developer/includes/server.md)] instance was created. In this task, you change server configuration settings that are required to complete the upgrade. Some of the changes are only required for version 16 to version 17 upgrade and can be reverted after you complete the upgrade.
+When you installed version 18 in **Task 2**, a version 18 [!INCLUDE[server](../developer/includes/server.md)] instance was created. In this task, you change server configuration settings that are required to complete the upgrade. Some of the changes are only required for upgrade and can be reverted after you complete the upgrade.
 
 1. Set the server instance to connect to the application database.
 
@@ -199,7 +199,7 @@ In this task, you'll publish the extensions. As minimum, you publish the new bas
 
 Publishing an extension adds the extension to the application database that is mounted on the server instance. Once published, it's available for installing on tenants. This task updates internal tables, compiles the components of the extension behind-the-scenes, and builds the necessary metadata objects that are used at runtime.
 
-The steps in this task continue to use the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 16 that you started in the previous task.
+The steps in this task continue to use the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 18 that you started in the previous task.
 
 1. Publish version 18 system symbols extension.
 
@@ -236,7 +236,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
 
 5. Publish the new versions of Microsoft extensions.
 
-    In this step, you publish new versions of Microsoft extensions that were used on your version 16 deployment. You find the extensions in the **Applications** folder of the installation media (DVD).
+    In this step, you publish new versions of Microsoft extensions that were used on your old deployment. You find the extensions in the **Applications** folder of the installation media (DVD).
 
     ```powershell
     Publish-NAVApp -ServerInstance <server instance name> -Path "<path to Microsoft extension>"
