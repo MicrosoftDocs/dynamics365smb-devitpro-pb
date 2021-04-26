@@ -17,7 +17,7 @@ ms.author: solsen
 To get started developing for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] it is important to understand the different options you have at hand. You can either choose to run a sandbox environment deployed as a [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] service, or you can run a container-based image either hosted as an Azure VM or locally. Both options provide the AL development tools; the container-based sandbox additionally provides access to the C/SIDE development tools. You can also choose to run a sandbox environment with production data using the **Business Central Admin Center**. For more information, see [Business Central Admin Center](../administration/tenant-admin-center.md).
 
 > [!NOTE]  
-> Extensions that have been published to a sandbox environment from Visual Studio Code or created using [Designer](devenv-inclient-designer.md) are removed when the environment is updated or relocated within our service. For more information, see [Production and Sandbox Environments](../administration/environment-types.md).  
+> Extensions that have been published to a sandbox environment from Visual Studio Code or created using [Designer](devenv-inclient-designer.md) are removed when the environment is updated or relocated within our service. For more information, see [Production and Sandbox Environments](../administration/environment-types.md) and [FAQ for Developing in AL](devenv-dev-faq.md).
 
 > [!IMPORTANT]  
 > It is not supported to publish, from Visual Studio Code, an extension with the same identifiers as an extension published to AppSource. Identifiers include the combination of appID and version or name, publisher, and version. If you do publish such an extension, it can be removed at any time.
