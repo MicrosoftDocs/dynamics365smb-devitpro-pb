@@ -81,7 +81,7 @@ Here is an example of the response.
 ```
 
 ## See also
-[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)    
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [employee](../resources/dynamics_employee.md)    
 [Delete employee](dynamics_employee_Delete.md)    
 [Create employee](dynamics_employee_Create.md)    

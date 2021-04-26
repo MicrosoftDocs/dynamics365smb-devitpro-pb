@@ -78,7 +78,7 @@ Body is the raw image data.
 
 
 ## See also
-[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)    
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [picture](../resources/dynamics_picture.md)    
 [Delete picture](dynamics_picture_Delete.md)    
 [Update picture](dynamics_picture_Update.md)    

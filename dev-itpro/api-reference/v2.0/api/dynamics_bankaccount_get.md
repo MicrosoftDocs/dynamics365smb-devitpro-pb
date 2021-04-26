@@ -59,7 +59,7 @@ Here is an example of the response.
 
 
 ## See also
-[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)    
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [bankaccount](../resources/dynamics_bankaccount.md)    
 [Delete bankaccount](dynamics_bankaccount_Delete.md)    
 [Create bankaccount](dynamics_bankaccount_Create.md)    

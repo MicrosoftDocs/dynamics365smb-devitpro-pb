@@ -121,7 +121,7 @@ Content-type: application/json
 
 
 ## See also
-[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)  
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 
 [Purchase Invoice Line](../resources/dynamics_purchaseinvoiceline.md)  
 [Get Purchase Invoice Line](dynamics_purchaseinvoiceline_get.md)  

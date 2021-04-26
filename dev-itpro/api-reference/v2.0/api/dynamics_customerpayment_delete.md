@@ -58,7 +58,7 @@ HTTP/1.1 204 No Content
 ```
 
 ## See also
-[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)    
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [customerpayment](../resources/dynamics_customerpayment.md)    
 [Get customerpayment](dynamics_customerpayment_Get.md)    
 [Create customerpayment](dynamics_customerpayment_Create.md)    

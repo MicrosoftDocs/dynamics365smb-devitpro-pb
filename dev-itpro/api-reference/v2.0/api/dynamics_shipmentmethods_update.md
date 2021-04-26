@@ -75,7 +75,7 @@ Content-type: application/json
 
 ## See also
 
-[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)  
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 [Shipment Methods](../resources/dynamics_shipmentmethod.md)  
 [Get Shipment Methods](dynamics_shipmentmethod_get.md)  
 [Create Shipment Methods](dynamics_shipmentmethod_create.md)  

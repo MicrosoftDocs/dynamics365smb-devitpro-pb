@@ -120,7 +120,7 @@ Content-type: application/json
 ```
 
 ## See also
-[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)  
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 
 [Sales Credit Memo Line](../resources/dynamics_salescreditmemoline.md)  
 [Get Sales Credit Memo Line](dynamics_salescreditmemoline_get.md)  

@@ -81,7 +81,7 @@ POST https://{businesscentralPrefix}/api/v2.0/companies({companyId})/employees({
 ```
 
 ## See also
-[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)    
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 
 [Employee](../resources/dynamics_employee.md)  
 [Get employee defaultDimensions](dynamics_employee_get_defaultdimensions.md)  

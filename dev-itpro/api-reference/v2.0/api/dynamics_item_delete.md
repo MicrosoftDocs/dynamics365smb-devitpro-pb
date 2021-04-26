@@ -55,7 +55,7 @@ Here is an example of the response.
 HTTP/1.1 204 No Content
 ```
 ## See also
-[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)    
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [item](../resources/dynamics_item.md)    
 [Get item](dynamics_item_Get.md)    
 [Create item](dynamics_item_Create.md)    

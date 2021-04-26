@@ -55,7 +55,7 @@ HTTP/1.1 204 No Content
 ```
 
 ## See also
-[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)    
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [countryregion](../resources/dynamics_countryregion.md)    
 [Get countryregion](dynamics_countryregion_Get.md)    
 [Create countryregion](dynamics_countryregion_Create.md)    

@@ -77,7 +77,7 @@ Here is an example of the response.
 
 ```
 ## See also
-[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)    
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [item](../resources/dynamics_item.md)    
 [Delete item](dynamics_item_Delete.md)    
 [Create item](dynamics_item_Create.md)    

@@ -60,7 +60,7 @@ Content-type: application/json
 ```
 
 ## See also
-[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)  
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 
 [Sales Order](../resources/dynamics_salesorder.md)  
 [Get Sales Order](dynamics_salesorder_get.md)  

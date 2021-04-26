@@ -57,4 +57,4 @@ In this section, you can find API documentation for Microsoft Graph.
 
 ## See also
 
-[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)  
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  

@@ -93,7 +93,7 @@ Content-type: application/json
 
 
 ## See also
-[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)    
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [vendor](../resources/dynamics_vendor.md)    
 [Get vendor](dynamics_vendor_Get.md)    
 [Delete vendor](dynamics_vendor_Delete.md)    

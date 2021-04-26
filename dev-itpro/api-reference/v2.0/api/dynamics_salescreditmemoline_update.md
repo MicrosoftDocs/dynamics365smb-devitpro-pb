@@ -97,7 +97,7 @@ Content-type: application/json
 ```
 
 ## See also
-[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)    
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [salescreditmemoline](../resources/dynamics_salescreditmemoline.md)    
 [Get salescreditmemoline](dynamics_salescreditmemoline_Get.md)    
 [Delete salescreditmemoline](dynamics_salescreditmemoline_Delete.md)    

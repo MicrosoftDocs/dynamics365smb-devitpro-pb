@@ -67,7 +67,7 @@ Here is an example of the response.
 
 
 ## See also
-[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)    
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [paymentterm](../resources/dynamics_paymentterm.md)    
 [Delete paymentterm](dynamics_paymentterm_Delete.md)    
 [Create paymentterm](dynamics_paymentterm_Create.md)    

@@ -113,7 +113,7 @@ Content-type: application/json
 ```
 
 ## See also
-[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)    
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [purchaseinvoice](../resources/dynamics_purchaseinvoice.md)    
 [Get purchaseinvoice](dynamics_purchaseinvoice_Get.md)    
 [Delete purchaseinvoice](dynamics_purchaseinvoice_Delete.md)    

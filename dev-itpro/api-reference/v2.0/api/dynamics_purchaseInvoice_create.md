@@ -97,7 +97,7 @@ Content-type: application/json
 ```
 
 ## See also
-[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)  
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 
 [Purchase Invoice](../resources/dynamics_purchaseinvoice.md)  
 [Get Purchase Invoice](dynamics_purchaseinvoice_get.md)  

@@ -73,7 +73,7 @@ Content-type: application/json
 
 
 ## See also
-[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)    
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [taxgroup](../resources/dynamics_taxgroup.md)    
 [Get taxgroup](dynamics_taxgroup_Get.md)    
 [Delete taxgroup](dynamics_taxgroup_Delete.md)    

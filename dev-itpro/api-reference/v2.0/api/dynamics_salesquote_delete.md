@@ -57,7 +57,7 @@ HTTP/1.1 204 No Content
 ```
 
 ## See also
-[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)    
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [salesquote](../resources/dynamics_salesquote.md)    
 [Get salesquote](dynamics_salesquote_Get.md)    
 [Create salesquote](dynamics_salesquote_Create.md)    

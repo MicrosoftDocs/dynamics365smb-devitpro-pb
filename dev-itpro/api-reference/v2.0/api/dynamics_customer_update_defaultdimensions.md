@@ -87,7 +87,7 @@ Here is an example of the response.
 ```
 
 ## See also
-[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)  
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 
 [Customers](../resources/dynamics_customer.md)  
 [Create customer defaultDimensions](dynamics_customer_create_defaultdimensions.md)  

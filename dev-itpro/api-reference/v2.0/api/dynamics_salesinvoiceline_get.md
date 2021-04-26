@@ -89,7 +89,7 @@ Here is an example of the response.
 ```
 
 ## See also
-[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)    
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [salesinvoiceline](../resources/dynamics_salesinvoiceline.md)    
 [Delete salesinvoiceline](dynamics_salesinvoiceline_Delete.md)    
 [Create salesinvoiceline](dynamics_salesinvoiceline_Create.md)    

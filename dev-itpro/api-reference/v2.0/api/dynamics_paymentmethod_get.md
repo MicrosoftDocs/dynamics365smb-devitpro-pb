@@ -63,7 +63,7 @@ Here is an example of the response.
 ```
 
 ## See also
-[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)    
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [paymentmethod](../resources/dynamics_paymentmethod.md)    
 [Delete paymentmethod](dynamics_paymentmethod_Delete.md)    
 [Create paymentmethod](dynamics_paymentmethod_Create.md)    

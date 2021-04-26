@@ -74,7 +74,7 @@ Content-type: application/json
 ```
 
 ## See also
-[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)    
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [paymentmethod](../resources/dynamics_paymentmethod.md)    
 [Get paymentmethod](dynamics_paymentmethod_Get.md)    
 [Delete paymentmethod](dynamics_paymentmethod_Delete.md)    

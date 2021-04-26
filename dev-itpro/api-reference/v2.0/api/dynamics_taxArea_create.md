@@ -74,7 +74,7 @@ Content-type: application/json
 ```
 
 ## See also
-[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)  
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 
 [Tax Area](../resources/dynamics_taxarea.md)  
 [Get Tax Area](dynamics_taxarea_get.md)  

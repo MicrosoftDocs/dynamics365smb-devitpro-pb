@@ -103,7 +103,7 @@ Here is an example of the response.
 ```
 
 ## See also
-[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)    
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [purchaseinvoice](../resources/dynamics_purchaseinvoice.md)    
 [Delete purchaseinvoice](dynamics_purchaseinvoice_Delete.md)    
 [Create purchaseinvoice](dynamics_purchaseinvoice_Create.md)    

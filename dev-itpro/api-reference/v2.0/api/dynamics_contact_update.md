@@ -93,7 +93,7 @@ This resource type requires [!INCLUDE[prod_short](../../../includes/prod_short.m
 
 ## See Also
 
-[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)  
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 [contact](../resources/dynamics_contact.md)  
 [GET contact](dynamics_contact_get.md)  
 [DELETE contact](dynamics_contact_delete.md)  

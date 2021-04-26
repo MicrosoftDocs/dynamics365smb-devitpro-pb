@@ -99,7 +99,7 @@ Content-type: application/json
 
 ## See Also
 
-[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)  
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 [purchaseOrderLine](../resources/dynamics_purchaseOrderLine.md)  
 [GET purchaseOrderLine](dynamics_purchaseorderline_get.md)  
 [DELETE purchaseOrderLine](dynamics_purchaseorderline_delete.md)  

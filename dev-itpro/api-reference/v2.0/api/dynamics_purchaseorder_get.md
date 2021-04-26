@@ -106,7 +106,7 @@ Here is an example of the response.
 
 ## See Also
 
-[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)  
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 [purchaseOrder](../resources/dynamics_purchaseOrder.md)  
 [DELETE purchaseOrder](dynamics_purchaseorder_delete.md)  
 [POST purchaseOrder](dynamics_purchaseorder_create.md)  

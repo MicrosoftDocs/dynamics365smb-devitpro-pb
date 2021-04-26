@@ -57,7 +57,7 @@ HTTP/1.1 204 No Content
 ```
 
 ## See also
-[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)    
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [salesinvoice](../resources/dynamics_salesinvoice.md)    
 [Get salesinvoice](dynamics_salesinvoice_Get.md)    
 [Create salesinvoice](dynamics_salesinvoice_Create.md)    

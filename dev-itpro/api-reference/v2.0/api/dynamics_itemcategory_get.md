@@ -64,7 +64,7 @@ Here is an example of the response.
 
 
 ## See also
-[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)    
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [itemcategory](../resources/dynamics_itemcategory.md)    
 [Delete itemcategory](dynamics_itemcategory_Delete.md)    
 [Create itemcategory](dynamics_itemcategory_Create.md)    

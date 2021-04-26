@@ -65,7 +65,7 @@ Here is an example of the response.
 
 
 ## See also
-[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)    
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [taxgroup](../resources/dynamics_taxgroup.md)    
 [Delete taxgroup](dynamics_taxgroup_Delete.md)    
 [Create taxgroup](dynamics_taxgroup_Create.md)    

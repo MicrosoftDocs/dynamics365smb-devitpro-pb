@@ -62,7 +62,7 @@ Here is an example of the response.
 
 
 ## See also
-[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)    
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [itemvariant](../resources/dynamics_itemvariant.md)    
 [Delete itemvariant](dynamics_itemvariant_Delete.md)    
 [Create itemvariant](dynamics_itemvariant_Create.md)    

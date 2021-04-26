@@ -115,7 +115,7 @@ Content-type: application/json
 
 ## See Also
 
-[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)  
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 [purchaseOrder](../resources/dynamics_purchaseOrder.md)  
 [GET purchaseOrder](dynamics_purchaseorder_get.md)  
 [DELETE purchaseOrder](dynamics_purchaseorder_delete.md)  

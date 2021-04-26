@@ -85,7 +85,7 @@ Here is an example of the response.
 ```
 
 ## See also
-[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)    
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [salesquoteline](../resources/dynamics_salesquoteline.md)    
 [Delete salesquoteline](dynamics_salesquoteline_Delete.md)    
 [Create salesquoteline](dynamics_salesquoteline_Create.md)    

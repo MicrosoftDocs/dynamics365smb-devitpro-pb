@@ -58,7 +58,7 @@ HTTP/1.1 204 No Content
 ```
 
 ## See also
-[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)    
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [salesorderline](../resources/dynamics_salesorderline.md)    
 [Get salesorderline](dynamics_salesorderline_Get.md)    
 [Create salesorderline](dynamics_salesorderline_Create.md)    

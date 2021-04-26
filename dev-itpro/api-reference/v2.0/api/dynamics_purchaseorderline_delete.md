@@ -62,7 +62,7 @@ HTTP/1.1 204 No Content
 
 ## See Also
 
-[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)  
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 [purchaseOrderLine](../resources/dynamics_purchaseOrderLine.md)  
 [GET purchaseOrderLine](dynamics_purchaseorderline_get.md)  
 [POST purchaseOrderLine](dynamics_purchaseorderline_create.md)  

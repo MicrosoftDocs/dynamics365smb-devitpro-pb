@@ -59,7 +59,7 @@ HTTP/1.1 204 No Content
 
 
 ## See also
-[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)    
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [customer](../resources/dynamics_customer.md)    
 [Get customer](dynamics_customer_Get.md)    
 [Create customer](dynamics_customer_Create.md)    

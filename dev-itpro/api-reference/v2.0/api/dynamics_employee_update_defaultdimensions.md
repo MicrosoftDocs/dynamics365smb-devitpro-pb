@@ -87,7 +87,7 @@ Here is an example of the response.
 ```
 
 ## See also
-[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)  
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 
 [Employees](../resources/dynamics_employee.md)  
 [Create employee defaultDimensions](dynamics_employee_create_defaultdimensions.md)  

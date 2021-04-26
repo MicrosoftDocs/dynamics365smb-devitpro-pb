@@ -55,7 +55,7 @@ HTTP/1.1 204 No Content
 ```
 
 ## See also
-[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)    
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [paymentmethod](../resources/dynamics_paymentmethod.md)    
 [Get paymentmethod](dynamics_paymentmethod_Get.md)    
 [Create paymentmethod](dynamics_paymentmethod_Create.md)    

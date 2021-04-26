@@ -72,7 +72,7 @@ Here is an example of the response.
 ```
 
 ## See also
-[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)    
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [journalline](../resources/dynamics_journalline.md)    
 [Delete journalline](dynamics_journalline_Delete.md)    
 [Create journalline](dynamics_journalline_Create.md)    

@@ -72,7 +72,7 @@ Content-type: application/json
 
 
 ## See also
-[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)    
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [project](../resources/dynamics_project.md)    
 [Get project](dynamics_project_Get.md)    
 [Delete project](dynamics_project_Delete.md)    

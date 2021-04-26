@@ -81,7 +81,7 @@ POST https://{businesscentralPrefix}/api/v2.0/companies({companyId})/customers({
 ```
 
 ## See also
-[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)    
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [defaultdimension](../resources/dynamics_defaultdimension.md)    
 [Get defaultdimension](dynamics_defaultdimension_Get.md)    
 [Delete defaultdimension](dynamics_defaultdimension_Delete.md)    

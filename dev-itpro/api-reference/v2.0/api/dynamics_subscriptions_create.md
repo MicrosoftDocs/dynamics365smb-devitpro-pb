@@ -88,7 +88,7 @@ Here is an example of the response.
 
 
 ## See also
-[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)  
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 [subscriptions](../resources/dynamics_subscriptions.md)  
 [Get subscriptions](dynamics_subscriptions_Get.md)  
 [Delete subscriptions](dynamics_subscriptions_Delete.md)  

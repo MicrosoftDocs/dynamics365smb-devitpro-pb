@@ -68,7 +68,7 @@ Here is an example of the response.
 ```
 
 ## See also
-[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)  
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 
 [Vendors](../resources/dynamics_vendor.md)  
 [Create vendor defaultDimensions](dynamics_vendor_create_defaultdimensions.md)  

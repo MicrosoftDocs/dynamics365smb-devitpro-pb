@@ -56,7 +56,7 @@ HTTP/1.1 204 No Content
 ```
 
 ## See also
-[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)    
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [purchaseinvoiceline](../resources/dynamics_purchaseinvoiceline.md)    
 [Get purchaseinvoiceline](dynamics_purchaseinvoiceline_Get.md)    
 [Create purchaseinvoiceline](dynamics_purchaseinvoiceline_Create.md)    

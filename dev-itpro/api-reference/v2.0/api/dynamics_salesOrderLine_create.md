@@ -128,7 +128,7 @@ Content-type: application/json
 ```
 
 ## See also
-[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)  
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 
 [Sales Order Line](../resources/dynamics_salesorderline.md)  
 [Get Sales Order Line](dynamics_salesorderline_get.md)  

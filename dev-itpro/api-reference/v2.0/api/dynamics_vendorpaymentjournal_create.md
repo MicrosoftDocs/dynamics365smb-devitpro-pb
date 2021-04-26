@@ -64,7 +64,7 @@ PLACE CODE HERE.
 
 
 ## See also
-[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)     
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)     
 [vendorPaymentJournal](../resources/dynamics_vendorPaymentJournal.md)  
 [Get vendorPaymentJournal](dynamics_vendorPaymentJournal_Get.md)   
 [Delete vendorPaymentJournal](dynamics_vendorPaymentJournal_Delete.md)   

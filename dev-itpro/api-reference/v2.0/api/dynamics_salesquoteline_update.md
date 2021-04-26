@@ -93,7 +93,7 @@ Content-type: application/json
 ```
 
 ## See also
-[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)    
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [salesquoteline](../resources/dynamics_salesquoteline.md)    
 [Get salesquoteline](dynamics_salesquoteline_Get.md)    
 [Delete salesquoteline](dynamics_salesquoteline_Delete.md)    

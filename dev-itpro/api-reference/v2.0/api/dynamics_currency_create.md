@@ -85,7 +85,7 @@ Here is an example of the response.
 
 
 ## See also
-[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)    
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [currency](../resources/dynamics_currency.md)    
 [Get currency](dynamics_currency_Get.md)    
 [Delete currency](dynamics_currency_Delete.md)    

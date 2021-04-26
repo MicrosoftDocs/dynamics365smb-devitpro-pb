@@ -75,6 +75,6 @@ This resource type requires [!INCLUDE[prod_short](../../../includes/prod_short.m
 
 ## See Also
 
-[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)  
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 [applyVendorEntry](../resources/dynamics_applyVendorEntry.md)  
 [PATCH applyVendorEntry](dynamics_applyvendorentry_update.md)  

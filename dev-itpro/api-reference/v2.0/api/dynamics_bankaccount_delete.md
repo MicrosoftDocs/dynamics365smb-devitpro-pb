@@ -56,7 +56,7 @@ HTTP/1.1 204 No Content
 
 
 ## See also
-[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)    
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 [bankaccount](../resources/dynamics_bankaccount.md)    
 [Get bankaccount](dynamics_bankaccount_Get.md)    
 [Create bankaccount](dynamics_bankaccount_Create.md)    
