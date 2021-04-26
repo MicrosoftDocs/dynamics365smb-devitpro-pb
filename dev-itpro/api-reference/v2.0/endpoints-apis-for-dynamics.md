@@ -33,7 +33,7 @@ Once you have the API access enabled, you can write code that integrates your we
 |**Endpoint**|`https://`<br>`graph.microsoft.com`<br>`/beta/financials/`| *With multiple environments (v2.0):*<br> `https://`<br>`api.businesscentral.dynamics.com/`<br> `v2.0/<environment name>/api/v2.0`  <br>Environment can be a named sandbox or production environment.<br><br> *Without environment (v2.0):* <br>  `https://`<br>`api.businesscentral.dynamics.com/`<br> `v1.0/api/v2.0` <br><br>Sandbox:<br> `https://`<br>`api.businesscentral.dynamics.com/`<br> `v2.0/sandbox/api/v2.0`  | *With multiple environments (v2.0):*  <br>`https://`<br>`api.businesscentral.dynamics.com/`<br>`v2.0/<user domain name>/<environment name>/api/v2.0`<br>Environment can be a named sandbox or production environment. <br><br>*Without multiple environments (v2.0):*<br>`https://`<br>`api.businesscentral.dynamics.com/`<br>`v1.0/<user domain name>/api/v2.0`<br>  Example: `https://`<br>`api.businesscentral.dynamics.com/`<br> `v1.0/cronus.com/api/v2.0` <br><br> Sandbox:<br> `https://`<br>`api.businesscentral.dynamics.com/`<br> `v2.0/cronus.com/sandbox/api/v2.0`|
 |**Availability**|Always enabled|Always enabled|Always enabled|
 |**Authentication**|Azure Active Directory<br> (AAD)|Azure Active Directory<br> (AAD)|Basic authentication.<br> Username and [web service<br> access key](../../developer/devenv-develop-connect-apps.md) as password.|
-|**API/Data access**|Based on user's<br> [permissions](../../developer/devenv-permissions-on-database-objects.md)|Based on user's<br> [permissions](../../permissions-on-database-objects.md)|
+|**API/Data access**|Based on user's<br> [permissions](../../developer/devenv-permissions-on-database-objects.md)|Based on user's<br> [permissions](../../developer/devenv-permissions-on-database-objects.md)|
 |**API update cycle**|Monthly|Monthly|Monthly|
 |**Development instance**|Sign up for a [tenant](https://go.microsoft.com/fwlink/?linkid=847861)|Sign up for a [tenant](https://go.microsoft.com/fwlink/?linkid=847861)|Sign up for a [tenant](https://go.microsoft.com/fwlink/?linkid=847861)|
 
@@ -51,6 +51,6 @@ Once you have the API access enabled, you can write code that integrates your we
 
 ## See Also
 
-[Developing Connect Apps for Dynamics 365 Business Central](../../../developer/devenv-develop-connect-apps.md)  
+[Developing Connect Apps for Dynamics 365 Business Central](../../developer/devenv-develop-connect-apps.md)  
 [Microsoft Web Services Overview](../../webservices/web-services.md)  
 [OpenAPI Specification](dynamics-open-api.md)  

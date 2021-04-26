@@ -12,6 +12,7 @@ ms.author: solsen
 
 Standard APIs for Business Central are available as an [OpenAPI Specification (OAS)](https://swagger.io/specification/). OAS defines a standard interface to RESTful APIs, providing a uniform access to APIs and documentation.  
 
+<!--
 ## Download Business Central OpenAPI specification
 
 |API Version|YAML|
@@ -19,7 +20,7 @@ Standard APIs for Business Central are available as an [OpenAPI Specification (O
 |1.0|[Download](../v1.0/contracts/BCOAS1.0.yaml)|
 
 The OAS is set up to use OAuth2 and accessing the default sandbox environment. Details can be changed in the contact to connect to specific environments (servers URL). YAML can be converted to JSON if needed.
-
+-->
 ## Previewing the OpenAPI contract
 
 There are [extensions](https://marketplace.visualstudio.com/search?term=openapi&target=VSCode&category=All%20categories&sortBy=Relevance) for Visual Studio Code that enable previewing and editing. [SwaggerHub](https://swagger.io/tools/swaggerhub/) enables previewing and editing online.
@@ -54,11 +55,11 @@ To run SwaggerUI locally, node.js can be used to serve the SwaggerUI, by followi
     node BC_OAS.js
     ```
 6) Browse to `https://localhost:3000`.
-7) To use **Try it out** authorization in SwaggerUI, an Azure Active Directory app must be created. [Follow these steps to create an AAD app, with access to Business Central](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-develop-connect-apps#setting-up-azure-active-directory-aad-based-authentication). Copy and paste the client ID from the AAD app into the authorization dialog of SwaggerUI.
+7) To use **Try it out** authorization in SwaggerUI, an Azure Active Directory app must be created. [Follow these steps to create an AAD app, with access to Business Central](../../developer/devenv-develop-connect-apps.md#setting-up-azure-active-directory-aad-based-authentication). Copy and paste the client ID from the AAD app into the authorization dialog of SwaggerUI.
 
 > [!NOTE]  
 > For OAuth2 testing purposes, a multi-tenant AAD app has been created. Admin consent is needed. Client ID : 060af3ac-70c3-4c14-92bb-8a88230f3f38.
 
 ## See Also
 
-[Developing Connect Apps for Dynamics 365 Business Central](/dynamics365/business-central/dev-itpro/developer/devenv-develop-connect-apps)  
+[Developing Connect Apps for Dynamics 365 Business Central](../../developer/devenv-develop-connect-apps.md)  
