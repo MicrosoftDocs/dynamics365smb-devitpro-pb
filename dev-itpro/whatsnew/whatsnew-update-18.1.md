@@ -23,18 +23,20 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/off
 
 | Country| Feature change |
 |-------------|--------------|
-Netherlands | Intrastat support for Partner VAT ID and Country of Origin|
+|Netherlands | Intrastat support for Partner VAT ID and Country of Origin|
 |Spain | Support for using Sales Invoice as substitution type in Immediate Supply of Information (SII) |
-Spain | Support for delivery of goods and services in the same foreign customer document in Immediate Supply of Information (SII) |
-Germany | Support of two new ciphers in preliminary VAT Return/Advance notification (kz37 and kz50)
-Belgium| New field to control inclusion of a customer on the VAT Annual Listing
-Norway| SAF-T update: Improved data export for Contact and Post Code information
+|Spain | Support for delivery of goods and services in the same foreign customer document in Immediate Supply of Information (SII) |
+|Germany | Support of two new ciphers in preliminary VAT Return/Advance notification (kz37 and kz50)|
+|Belgium| New field to control inclusion of a customer on the VAT Annual Listing|
+|Norway| SAF-T update: Improved data export for Contact and Post Code information|
 
 ## Release Plan
+
 If you want to get a comprehensive overview of what's new and planned for Business Central online for the entire 2020 release wave 2 (release from October 2020 through March 2021), find the link to the release plan [here](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/planned-features).
 
 
 ## Upgrade to 18.1
+
 Please note that new customers will automatically get the latest builds of Business Central (18.1). If you are an existing partner/customer, you will receive an email notification as soon as your environment has been upgraded.
 
 ## Good to know
