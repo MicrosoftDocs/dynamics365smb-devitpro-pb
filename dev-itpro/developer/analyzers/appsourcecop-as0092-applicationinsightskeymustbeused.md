@@ -21,9 +21,6 @@ The 'applicationInsightsKey' property must specify the instrumentation key of th
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-> [!IMPORTANT]
-> Specifying the instrumentation key of the Azure Application Inights resource for the extension will become mandatory for AppSource submissions from the 1st of June 2021.
-
 ## How to fix this diagnostic?
 
 You can fix this diagnostic by specifying the instrumentation key of the Azure Application Insights resource setup to monitor the operations related to this extension.

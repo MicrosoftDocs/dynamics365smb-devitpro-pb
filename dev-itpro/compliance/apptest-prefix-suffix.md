@@ -27,7 +27,7 @@ Environments that have extensions with name collisions can experience issues whe
 - The prefix/suffix must be at least 3 characters
 - The object/field name must start or end with the prefix/suffix
 - If a conflict arises, the one who registered the prefix/suffix always wins
-- For your own pages/tables/codeunits, you must set the prefix/suffix at the top object level
+- For your own objects, you must set the prefix/suffix at the top object level
 - For pages/tables in the base application or other apps that you extend, you must set the prefix/suffix at the top object level and also at the control/field/action level
 - Use the [AppSourceCop](../developer/devenv-using-code-analysis-tool.md) tool to find all missing prefixes and/or suffixes. Configuration options for this tool can be found [here](../developer/analyzers/appsourcecop.md). The Rules section explains the different checks that the analyzer will do. For prefix/suffix detection, refer to the Configuration section. It explains how to set your affixes in the AppSourceCop.json file.
 
@@ -36,7 +36,9 @@ Environments that have extensions with name collisions can experience issues whe
 ### For AppSource extensions
 
 > [!IMPORTANT]  
-> The use of affixes for object names is required for AppSource submissions as part of the [Technical Validation Checklist](../developer/devenv-checklist-submission.md). The file name validation is not enforced.
+> The use of affixes for object names is required for AppSource submissions as part of the [Technical Validation Checklist](../developer/devenv-checklist-submission.md).
+
+In order to meet the requirements for the AppSource technical validation, you must have a 3 letters affix registered for your extension publisher and you must use the affix in your extension.
 
 If you do not have any affixes registered yet, contact us at [d365val@microsoft.com](mailto:d365val@microsoft.com) to reserve the prefix/suffix of your choosing.
 

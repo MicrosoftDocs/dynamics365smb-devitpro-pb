@@ -49,7 +49,7 @@ Occurs when the field monitor feature is started or stopped in the company.
 |---------|-----|-----------|
 |aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
 |alDataClassification|**SystemMetadata**|
-|almonitorStatus|**Yes** - the field monitor feature was started.<br /><br /> **No** the field monitor feature was stopped.|
+|almonitorStatus|**Yes** - the field monitor feature was started.<br /><br /> **No** - the field monitor feature was stopped.|
 |alObjectId|**1392**|
 |alObjectName|**Monitor Sensitive Field**|
 |alObjectType|**CodeUnit**|
