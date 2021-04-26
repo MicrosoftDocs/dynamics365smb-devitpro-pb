@@ -16,9 +16,6 @@ ms.author: solsen
 
 [!INCLUDE[prod_short](../../includes/prod_short.md)] exposes an API that makes it possible to integrate with other services. To enable integration with these APIs, you must go through a few steps to enable the access for [!INCLUDE[prod_short](../../includes/prod_short.md)].
 
-> [!IMPORTANT]  
-> REST programming is not natively supported in C/SIDE. In order to run the APIs you must add the REST dependent types manually. Existing W1 objects can compile and load, but some .NET types cannot be loaded into the C/SIDE Development environment variable editor due to missing server dependencies.
-
 ## Enable access to the APIs
 
 1. Open [!INCLUDE[prod_short](../../includes/prod_short.md)] Administration tool. 
