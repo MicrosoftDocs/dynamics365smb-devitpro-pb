@@ -32,7 +32,8 @@ ms.author: solsen
 Depending on where you want to access the APIs from, you must specify the correct endpoint. For more information, see [Endpoints for APIs](endpoints-apis-for-dynamics.md).
 
 ## See Also
-[Developing Connect Apps for Dynamics 365 Business Central](/dynamics365/business-central/dev-itpro/developer/devenv-develop-connect-apps)  
-[Configuring Microsoft Dynamics NAV Server 2018](../../configuring-microsoft-dynamics-nav-server.md)  
-[Microsoft Dynamics NAV Web Services Overview](../../microsoft-dynamics-nav-web-services-overview.md)  
+
+[Developing Connect Apps for Dynamics 365 Business Central](../../developer/devenv-develop-connect-apps.md)  
+[Configuring Microsoft Dynamics NAV Server 2018](../../administration/configuring-microsoft-dynamics-nav-server.md)  
+[Microsoft Dynamics NAV Web Services Overview](../../webservices/web-services.md)  
 [OpenAPI Specification](dynamics-open-api.md)  
