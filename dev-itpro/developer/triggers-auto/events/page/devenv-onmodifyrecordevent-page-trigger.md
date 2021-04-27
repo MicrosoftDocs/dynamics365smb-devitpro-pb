@@ -1,9 +1,9 @@
 ---
 title: "OnModifyRecordEvent (Page) Trigger Event"
-ms.description: "Executed after the OnModifyRecord trigger, which is called before a record is modified in a table."
+description: "Executed after the OnModifyRecord trigger, which is called before a record is modified in a table."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/21/2021
+ms.date: 04/27/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

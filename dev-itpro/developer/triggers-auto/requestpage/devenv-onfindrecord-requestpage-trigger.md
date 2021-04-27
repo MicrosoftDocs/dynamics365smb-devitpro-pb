@@ -1,9 +1,9 @@
 ---
 title: "OnFindRecord (Request Page) Trigger"
-ms.description: "Overrides the default page behavior and enables you to specify which record you want to display when the page opens."
+description: "Overrides the default page behavior and enables you to specify which record you want to display when the page opens."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/16/2021
+ms.date: 04/27/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

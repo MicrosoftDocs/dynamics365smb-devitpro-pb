@@ -1,9 +1,9 @@
 ---
 title: "OnAfterGetRecord (Request Page Extension) Trigger"
-ms.description: "Runs after a record is retrieved from a table but before it is displayed to the user."
+description: "Runs after a record is retrieved from a table but before it is displayed to the user."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/16/2021
+ms.date: 04/27/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

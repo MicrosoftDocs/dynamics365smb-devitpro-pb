@@ -1,9 +1,9 @@
 ---
 title: "OnBeforeInsert (Table Extension) Trigger"
-ms.description: "Runs when a user inserts a new record into the table."
+description: "Runs when a user inserts a new record into the table."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/16/2021
+ms.date: 04/27/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

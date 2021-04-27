@@ -1,9 +1,9 @@
 ---
 title: "OnAfterAfterLookup (Page Field Extension) Trigger"
-ms.description: "Runs after a lookup is activated passing the selected record as a RecordRef."
+description: "Runs after a lookup is activated passing the selected record as a RecordRef."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/16/2021
+ms.date: 04/27/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

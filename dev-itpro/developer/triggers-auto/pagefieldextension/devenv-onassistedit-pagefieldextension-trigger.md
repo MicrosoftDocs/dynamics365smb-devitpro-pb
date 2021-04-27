@@ -1,9 +1,9 @@
 ---
 title: "OnAssistEdit (Page Field Extension) Trigger"
-ms.description: "Runs in place of the AssistEdit property features that are provided in the application."
+description: "Runs in place of the AssistEdit property features that are provided in the application."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/16/2021
+ms.date: 04/27/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

@@ -1,9 +1,9 @@
 ---
 title: "OnBeforeActionEvent (Page) Trigger Event"
-ms.description: "Executed before the OnAction trigger, which is called when a user selects an action on the page."
+description: "Executed before the OnAction trigger, which is called when a user selects an action on the page."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/21/2021
+ms.date: 04/27/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

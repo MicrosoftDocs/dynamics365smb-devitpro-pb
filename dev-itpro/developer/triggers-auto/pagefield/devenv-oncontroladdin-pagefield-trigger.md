@@ -1,9 +1,9 @@
 ---
 title: "OnControlAddIn (Page Field) Trigger"
-ms.description: "Executed when a control add-in on the client sends event information to the server-side business logic."
+description: "Executed when a control add-in on the client sends event information to the server-side business logic."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/16/2021
+ms.date: 04/27/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

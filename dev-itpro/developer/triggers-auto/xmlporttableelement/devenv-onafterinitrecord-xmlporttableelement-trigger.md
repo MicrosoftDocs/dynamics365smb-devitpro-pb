@@ -1,9 +1,9 @@
 ---
 title: "OnAfterInitRecord (Xml Port Table Element) Trigger"
-ms.description: "Runs after a record is loaded."
+description: "Runs after a record is loaded."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/16/2021
+ms.date: 04/27/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

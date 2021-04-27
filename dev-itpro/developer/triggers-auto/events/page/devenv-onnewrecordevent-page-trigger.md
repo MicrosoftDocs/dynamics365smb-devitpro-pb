@@ -1,9 +1,9 @@
 ---
 title: "OnNewRecordEvent (Page) Trigger Event"
-ms.description: "Executed after the OnNewRecord trigger, which is called before a new record is initialized."
+description: "Executed after the OnNewRecord trigger, which is called before a new record is initialized."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/21/2021
+ms.date: 04/27/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
