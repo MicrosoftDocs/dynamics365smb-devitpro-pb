@@ -1,0 +1,1 @@
+<Token> **NEW VERSION** This is v1.0 of the Business Central API. For the newest version, see [Business Central API (V2.0)](../v2.0/index.md).</Token>

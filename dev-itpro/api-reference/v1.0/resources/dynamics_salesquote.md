@@ -15,7 +15,7 @@ ms.author: solsen
 
 # salesQuotes resource type
 
-[!INCLUDE[d365_api_newversion](../../includes/d365_api_newversion.md)]
+[!INCLUDE[d365_api_newversion](../../../includes/d365_api_newversion.md)]
 
 Represents a salesQuote resource type in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 

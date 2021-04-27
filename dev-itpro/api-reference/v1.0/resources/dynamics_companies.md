@@ -15,7 +15,7 @@ ms.author: solsen
 
 # companies resource type
 
-[!INCLUDE[d365_api_newversion](../../includes/d365_api_newversion.md)]
+[!INCLUDE[d365_api_newversion](../../../includes/d365_api_newversion.md)]
 
 Represents a companies resource type in [!INCLUDE[prod_short](../../../includes/prod_short.md)]. 
 

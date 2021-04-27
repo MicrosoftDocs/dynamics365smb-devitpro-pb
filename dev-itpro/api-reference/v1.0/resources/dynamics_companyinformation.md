@@ -15,7 +15,7 @@ ms.author: solsen
  
 # companyInformation resource type
 
-[!INCLUDE[d365_api_newversion](../../includes/d365_api_newversion.md)]
+[!INCLUDE[d365_api_newversion](../../../includes/d365_api_newversion.md)]
 
 Represents the information specified for the current company in [!INCLUDE[prod_short](../../../includes/prod_short.md)], such as name, address, email address, and website address.
 

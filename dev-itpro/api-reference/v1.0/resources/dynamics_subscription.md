@@ -15,7 +15,7 @@ ms.author: solsen
 
 # subscription resource type
 
-[!INCLUDE[d365_api_newversion](../../includes/d365_api_newversion.md)]
+[!INCLUDE[d365_api_newversion](../../../includes/d365_api_newversion.md)]
 
 Represents a webhook subscription object in [!INCLUDE[prod_short](../../../includes/prod_short.md)]. Requests issued against the subscription entity, manages webhook subscriptions for a tenant.
 

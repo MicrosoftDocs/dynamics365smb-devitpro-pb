@@ -15,7 +15,7 @@ ms.author: solsen
 
 # shipmentMethods resource type
 
-[!INCLUDE[d365_api_newversion](../../includes/d365_api_newversion.md)]
+[!INCLUDE[d365_api_newversion](../../../includes/d365_api_newversion.md)]
 
 Represents a method of shipment in [!INCLUDE[prod_short](../../../includes/prod_short.md)], such as UPS, Fedex, and DHL.
 

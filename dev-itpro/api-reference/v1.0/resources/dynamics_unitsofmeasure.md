@@ -15,7 +15,7 @@ ms.author: solsen
 
 # unitsOfMeasure resource type
 
-[!INCLUDE[d365_api_newversion](../../includes/d365_api_newversion.md)]
+[!INCLUDE[d365_api_newversion](../../../includes/d365_api_newversion.md)]
 
 Represents a unit of measure, which is a standard of measurement of a quantity, in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 

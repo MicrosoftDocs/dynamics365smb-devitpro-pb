@@ -15,7 +15,7 @@ ms.author: solsen
 
 # countriesRegions resource type
 
-[!INCLUDE[d365_api_newversion](../../includes/d365_api_newversion.md)]
+[!INCLUDE[d365_api_newversion](../../../includes/d365_api_newversion.md)]
 
 Represents a countriesRegions object in [!INCLUDE[prod_short](../../../includes/prod_short.md)], which is part of an address.
 
