@@ -84,12 +84,12 @@ Here is an example of the response.
 ```
 
 > [!IMPORTANT]  
-> Handshake is mandatory when [creating a subscription](dynamics_subscriptions_create.md) and [renewing a subscription](dynamics_subscriptions_update.md). See [Working with Webhooks](../dynamics_subscriptions.md).  
+> Handshake is mandatory when [creating a subscription](dynamics-subscriptions_create.md) and [renewing a subscription](dynamics-subscriptions_update.md). See [Working with Webhooks](../dynamics-subscriptions.md).  
 
 
 ## See also
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
-[subscriptions](../resources/dynamics_subscriptions.md)  
-[Get subscriptions](dynamics_subscriptions_Get.md)  
-[Delete subscriptions](dynamics_subscriptions_Delete.md)  
-[Update subscriptions](dynamics_subscriptions_Update.md)  
+[subscriptions](../resources/dynamics-subscriptions.md)  
+[Get subscriptions](dynamics-subscriptions_Get.md)  
+[Delete subscriptions](dynamics-subscriptions_Delete.md)  
+[Update subscriptions](dynamics-subscriptions_Update.md)  

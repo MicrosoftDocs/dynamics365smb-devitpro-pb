@@ -61,7 +61,7 @@ HTTP/1.1 204 No Content
 
 ## See also
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
-[Error Codes](../dynamics_error_codes.md)  
+[Error Codes](../dynamics-error-codes.md)  
 [timeRegistrationEntries](../resources/dynamics_timeRegistrationEntry.md)  
 [Get timeRegistrationEntries](dynamics_timeRegistrationEntry_get.md)  
 [Post timeRegistrationEntries](dynamics_timeRegistrationEntry_create.md)  
