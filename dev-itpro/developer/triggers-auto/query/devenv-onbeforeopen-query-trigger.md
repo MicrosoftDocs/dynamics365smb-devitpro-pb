@@ -40,7 +40,7 @@ The AL code of a query object includes the **OnBeforeOpen** trigger that you can
 The **OnBeforeOpen** trigger only supports local variables; global variables are not supported.  
 
 > [!NOTE]  
-> A query cannot be run from the **OnBeforeOpen** trigger. You cannot call methods from the triggers that run the query, such as [Open](../../methods-auto/query/queryinstance-open-method.md), [SaveAsXml](../../methods-auto/query/queryinstance-saveasxml-method.md), [Read](../../methods-auto/query/queryinstance-read-method.md), or [Close](../../methods-auto/query/queryinstance-close-method.md) methods.  
+> A query cannot be run from the **OnBeforeOpen** trigger. You cannot call methods from the triggers that run the query, such as [Open](../../methods-auto/query/queryinstance-open-method.md), [SaveAsXml](../../methods-auto/query/queryinstance-saveasxml-string-method.md), [Read](../../methods-auto/query/queryinstance-read-method.md), or [Close](../../methods-auto/query/queryinstance-close-method.md) methods.  
 
 ## Example
 

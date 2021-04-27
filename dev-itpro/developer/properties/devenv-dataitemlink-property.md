@@ -21,7 +21,7 @@ The DataItemLink property is applicable to the following types:
   
 ## See Also
 
-[OnPreDataItem Trigger](../triggers/devenv-onpredataitem-trigger.md)   
+[OnPreDataItem Trigger](../triggers/reportdataitem/devenv-onpredataitem-reportdataitem-trigger.md)   
 [DataItemLinkReference Property](devenv-dataitemlinkreference-property.md)  
 [DataItemLink Property (Reports)](devenv-dataitemlink-reports-property.md)  
 [DataItemLink Property (Query)](devenv-dataitemlink-query-property.md)

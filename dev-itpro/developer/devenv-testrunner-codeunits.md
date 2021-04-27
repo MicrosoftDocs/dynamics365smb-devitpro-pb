@@ -25,11 +25,11 @@ To specify what changes in the database you want to roll back after the tests in
 
 Test runner codeunits include the following triggers:  
 
-- [OnRun Trigger](triggers/devenv-onrun-trigger.md) 
+- [OnRun Trigger](triggers/codeunit/devenv-onrun-codeunit-trigger.md) 
 
-- [OnBeforeTestRun Trigger](triggers/devenv-OnBeforeTestRun-Trigger.md)  
+- [OnBeforeTestRun Trigger](triggers/codeunit/devenv-onbeforetestrun-codeunit-trigger.md)  
 
-- [OnAfterTestRun Trigger](triggers/devenv-OnAfterTestRun-Trigger.md)  
+- [OnAfterTestRun Trigger](triggers/codeunit/devenv-onaftertestrun-codeunit-trigger.md)  
 
 In the **OnRun** trigger you enter the code to run the codeunits. It runs when you execute the codeunit and before the test methods run. You can use the **OnBeforeTestRun** and the **OnAfterTestRun** triggers to perform preprocessing and postprocessing, such as initialization or logging test results. If you implement the **OnBeforeTestRun** trigger, then it executes before each test method executes. If you implement the **OnAfterTestRun** trigger, then it executes after each test method executes and also suppresses the automatic display of the results message.  
 

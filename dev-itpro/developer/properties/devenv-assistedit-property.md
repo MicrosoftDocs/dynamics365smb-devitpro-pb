@@ -34,7 +34,7 @@ AssistEdit = true;
 ```
 
 ## Remarks  
- You can add AL code in the [OnAssistEdit Trigger](../triggers/devenv-onassistedit-trigger.md) to change the default assist-edit behavior.  
+ You can add AL code in the [OnAssistEdit Trigger](../triggers/pagefield/devenv-onassistedit-pagefield-trigger.md) to change the default assist-edit behavior.  
 
 ## See Also  
  [Lookup Property](devenv-lookup-property.md)   

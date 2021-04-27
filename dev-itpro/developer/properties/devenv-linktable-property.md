@@ -45,7 +45,7 @@ In the Customer table, the primary key is the customer number and is stored in t
   
 Set the **LinkTable** property of the Sales Header XML item to point to the Customer table and set the [LinkFields Property](devenv-linkfields-property.md) of the Sales Header XML item so that the Sell-to Customer No. field is equal to the No. field in the Customer table. This places a filter on the records in the Customer table and ensures that only those records in the Sales Header table that refer to the customers you specified are selected and exported by the XMLport.  
   
-This corresponds to placing the following AL code in the [OnPreXMLItem Trigger](../triggers/devenv-onprexmlitem-trigger.md) of the indented data item.  
+This corresponds to placing the following AL code in the [OnPreXMLItem Trigger](../triggers/xmlporttableelement/devenv-onprexmlitem-xmlporttableelement-trigger.md) of the indented data item.  
   
 ```AL
 SetRange("Sell-to Customer No.",Customer."No.");  

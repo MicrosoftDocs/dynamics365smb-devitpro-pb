@@ -38,7 +38,7 @@ The value to insert in the field.
 
 ## Remarks
 
-The Validate method first checks any [TableRelation Property](../../properties/devenv-tablerelation-property.md), and then executes the [OnValidate \(Fields\) Trigger](../../triggers/devenv-onvalidate-fields-trigger.md) of the field.  
+The Validate method first checks any [TableRelation Property](../../properties/devenv-tablerelation-property.md), and then executes the [OnValidate \(Fields\) Trigger](../../triggers/field/devenv-onvalidate-field-trigger.md) of the field.  
 
 If you omit *NewValue*, the method validates the current value.  
 

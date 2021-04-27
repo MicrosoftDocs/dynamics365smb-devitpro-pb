@@ -35,7 +35,7 @@ This note pertains to backward compatibility only. If the property is set to Boo
 > [!NOTE]  
 > The information in this topic is mainly applicable to formatting the text of page fields. <!-- For information about how to use the **StyleExpr** property for configuring Cues, see [How to: Set Up Colored Indicators on Cues by Using the Style and StyleExpr Property](devenv-How-to-Set-Up-Colored-Indicators-on-Cues-by-Using-the-Style-and-StyleExpr-Property.md).  -->
 
-You can use a conditional setting of styles by inserting the conditional code in, for example, the [OnAfterGetRecord Trigger](../triggers/devenv-onaftergetrecord-trigger.md). Remember to cover all cases in else branches to avoid incorrect styles. For example: `if (MyField = 'abc') then   MyStyleVar := 'Ambiguous' else   MyStyleVar := 'Favorable'`  
+You can use a conditional setting of styles by inserting the conditional code in, for example, the [OnAfterGetRecord Trigger](../triggers/page/devenv-onaftergetrecord-page-trigger.md). Remember to cover all cases in else branches to avoid incorrect styles. For example: `if (MyField = 'abc') then   MyStyleVar := 'Ambiguous' else   MyStyleVar := 'Favorable'`  
 
 > [!NOTE]  
 > To use a variable for the **StyleExpr** property, it must be set as a global page variable and the [InDataSet Property](../methods/devenv-indataset-attribute.md) must be defined on the variable.  

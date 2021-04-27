@@ -18,7 +18,7 @@ Test codeunits are codeunits that have the [SubType Property](properties/devenv-
 
 By default, each test method runs in a separate database transaction, but you can use the [TransactionModel Property](./properties/devenv-properties.md) on test methods and the [TestIsolation Property](properties/devenv-testisolation-property.md) on test runner codeunits to control the transactional behavior. 
 
-The results of a test codeunit and of the individual test methods are displayed in a message window, but you can use the [OnAfterTestRun Trigger](triggers/devenv-OnAfterTestRun-Trigger.md) on a test runner codeunit to capture the results. The outcome of a test method is either SUCCESS or FAILURE. If any error is raised by either the code that is being tested or the test code, then the global outcome of the test codeunit is FAILURE and the error is included in the results log file.  
+The results of a test codeunit and of the individual test methods are displayed in a message window, but you can use the [OnAfterTestRun Trigger](triggers/codeunit/devenv-onaftertestrun-codeunit-trigger.md) on a test runner codeunit to capture the results. The outcome of a test method is either SUCCESS or FAILURE. If any error is raised by either the code that is being tested or the test code, then the global outcome of the test codeunit is FAILURE and the error is included in the results log file.  
 
 The difference between a normal codeunit and a test codeunit is their execution at runtime. When a normal codeunit is run, if one of its methods fails, then the codeunit is terminated. When a test codeunit is run, even if the outcome of one test method is FAILURE, the next test methods are still run.  
 
