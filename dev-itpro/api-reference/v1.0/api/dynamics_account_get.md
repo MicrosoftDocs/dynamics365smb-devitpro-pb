@@ -1,5 +1,5 @@
 ---
-title: Get accounts | Microsoft Docs
+title: Get accounts
 description: Gets an account object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 
@@ -13,13 +13,13 @@ ms.author: solsen
 ---
 
 # Get accounts
-Retrieve the properties and relationships of an account object for [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)]. 
+Retrieve the properties and relationships of an account object for [!INCLUDE[prod_short](../../../includes/prod_short.md)]. 
 
 > [!NOTE]  
 > Only accounts with the account type set to **Posting** and the **Direct Posting** flag set to **true** are returned.
 
 ## HTTP request
-Replace the URL prefix for [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)] depending on environment following the [guideline](../../v1.0/endpoints-apis-for-dynamics.md).
+Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v1.0/endpoints-apis-for-dynamics.md).
 ```
 GET businesscentralPrefix/companies({id})/accounts({id})
 ```

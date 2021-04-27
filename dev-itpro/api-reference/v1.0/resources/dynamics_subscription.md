@@ -1,5 +1,5 @@
 ---
-title: subscription resource type | Microsoft Docs
+title: subscription resource type
 description: A subscription object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
@@ -17,7 +17,7 @@ ms.author: solsen
 
 [!INCLUDE[d365_api_newversion](../../includes/d365_api_newversion.md)]
 
-Represents a webhook subscription object in [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)]. Requests issued against the subscription entity, manages webhook subscriptions for a tenant.
+Represents a webhook subscription object in [!INCLUDE[prod_short](../../../includes/prod_short.md)]. Requests issued against the subscription entity, manages webhook subscriptions for a tenant.
 
 ## Methods
 

@@ -1,5 +1,5 @@
 ---
-title: picture resource type | Microsoft Docs
+title: picture resource type
 description: A picture object in Dynamics 365 Business Central. 
  
 author: SusanneWindfeldPedersen
@@ -17,10 +17,10 @@ ms.author: solsen
 
 [!INCLUDE[d365_api_newversion](../../includes/d365_api_newversion.md)]
 
-Represents a picture in [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)]. You can save the stream as an image directly.
+Represents a picture in [!INCLUDE[prod_short](../../../includes/prod_short.md)]. You can save the stream as an image directly.
 
 > [!NOTE]  
-> For information about enabling APIs for [!INCLUDE[navnow](../../includes/navnow_md.md)] see [Enabling the APIs for Dynamics 365 Business Central](../enabling-apis-for-dynamics-nav.md).
+> For information about enabling APIs for [!INCLUDE[prod_short](../../../includes/prod_short.md)] see [Enabling the APIs for Dynamics 365 Business Central](../enabling-apis-for-dynamics-nav.md).
 
 ## Methods
 

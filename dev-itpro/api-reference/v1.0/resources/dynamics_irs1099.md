@@ -1,5 +1,5 @@
 ---
-title: irs1099Codes resource type | Microsoft Docs
+title: irs1099Codes resource type
 description: An IRS 1099 Code object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
@@ -17,10 +17,10 @@ ms.author: solsen
 
 [!INCLUDE[d365_api_newversion](../../includes/d365_api_newversion.md)]
 
-Represents an irs1099Codes object in [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)]. IRS 1099 codes are used for reporting to the IRS.
+Represents an irs1099Codes object in [!INCLUDE[prod_short](../../../includes/prod_short.md)]. IRS 1099 codes are used for reporting to the IRS.
 
 > [!NOTE]  
-> For information about enabling APIs for [!INCLUDE[navnow](../../includes/navnow_md.md)] see [Enabling the APIs for Dynamics 365 Business Central](../enabling-apis-for-dynamics-nav.md).
+> For information about enabling APIs for [!INCLUDE[prod_short](../../../includes/prod_short.md)] see [Enabling the APIs for Dynamics 365 Business Central](../enabling-apis-for-dynamics-nav.md).
 
 ## Methods
 

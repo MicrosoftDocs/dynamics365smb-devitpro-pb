@@ -1,5 +1,5 @@
 ---
-title: "API(V1.0) for Dynamics 365 Business Central | Microsoft Docs"
+title: "API(V1.0) for Dynamics 365 Business Central"
 description: "Reference content for the API(V1.0) endpoint for integration with Dynamics 365 Business Central."
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

@@ -1,5 +1,5 @@
 ---
-title: Get cashFlowStatement | Microsoft Docs
+title: Get cashFlowStatement
 description: Gets a cash flow statement object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
@@ -14,10 +14,10 @@ ms.author: solsen
 ---
 
 # Get cashFlowStatement
-Retrieve the properties and relationships of a cash flow statement report object for [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)].
+Retrieve the properties and relationships of a cash flow statement report object for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## HTTP request
-Replace the URL prefix for [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)] depending on environment following the [guideline](../../v1.0/endpoints-apis-for-dynamics.md).
+Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v1.0/endpoints-apis-for-dynamics.md).
 ```
 GET businesscentralPrefix/companies({id})/cashFlowStatement
 ```

@@ -1,5 +1,5 @@
 ---
-title: customers resource type | Microsoft Docs
+title: customers resource type
 description: Represents a customer in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 
@@ -16,10 +16,10 @@ ms.author: solsen
 
 [!INCLUDE[d365_api_newversion](../../includes/d365_api_newversion.md)]
 
-Represents a customer in [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)].
+Represents a customer in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]  
-> For information about enabling APIs for [!INCLUDE[navnow](../../includes/navnow_md.md)] see [Enabling the APIs for Dynamics 365 Business Central](../enabling-apis-for-dynamics-nav.md).
+> For information about enabling APIs for [!INCLUDE[prod_short](../../../includes/prod_short.md)] see [Enabling the APIs for Dynamics 365 Business Central](../enabling-apis-for-dynamics-nav.md).
 
 ## Methods
 

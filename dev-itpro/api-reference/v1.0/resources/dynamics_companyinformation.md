@@ -1,5 +1,5 @@
 ---
-title: companyInformation resource type | Microsoft Docs
+title: companyInformation resource type
 description: Company information in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
@@ -17,10 +17,10 @@ ms.author: solsen
 
 [!INCLUDE[d365_api_newversion](../../includes/d365_api_newversion.md)]
 
-Represents the information specified for the current company in [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)], such as name, address, email address, and website address.
+Represents the information specified for the current company in [!INCLUDE[prod_short](../../../includes/prod_short.md)], such as name, address, email address, and website address.
 
 > [!NOTE]  
-> For information about enabling APIs for [!INCLUDE[navnow](../../includes/navnow_md.md)] see [Enabling the APIs for Dynamics 365 Business Central](../enabling-apis-for-dynamics-nav.md).
+> For information about enabling APIs for [!INCLUDE[prod_short](../../../includes/prod_short.md)] see [Enabling the APIs for Dynamics 365 Business Central](../enabling-apis-for-dynamics-nav.md).
 
 ## Methods
 
@@ -74,4 +74,4 @@ Here is a JSON representation of the companyInformation
 ```
 
 ## See also
-[Working with [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)] in Microsoft Graph](../resources/dynamics_overview.md) 
+[Working with [!INCLUDE[prod_short](../../../includes/prod_short.md)] in Microsoft Graph](../resources/dynamics_overview.md) 

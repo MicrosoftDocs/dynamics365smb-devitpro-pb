@@ -1,5 +1,5 @@
 ---
-title: complex types JSON | Microsoft Docs
+title: complex types JSON
 description: Complex data types in JSON for Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
@@ -17,14 +17,14 @@ ms.author: solsen
 
 [!INCLUDE[d365_api_newversion](../../includes/d365_api_newversion.md)]
 
-These are the various complex types in [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)]. You can see usage of these complex types in the various individual methods that make use of them.
+These are the various complex types in [!INCLUDE[prod_short](../../../includes/prod_short.md)]. You can see usage of these complex types in the various individual methods that make use of them.
 
 > [!NOTE]  
-> For information about enabling APIs for [!INCLUDE[navnow](../../includes/navnow_md.md)] see [Enabling the APIs for Dynamics 365 Business Central](../enabling-apis-for-dynamics-nav.md).
+> For information about enabling APIs for [!INCLUDE[prod_short](../../../includes/prod_short.md)] see [Enabling the APIs for Dynamics 365 Business Central](../enabling-apis-for-dynamics-nav.md).
 
 ## Item category
 
-Represents an Item Category complex type in [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)].
+Represents an Item Category complex type in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ### Properties
 
@@ -43,7 +43,7 @@ Represents an Item Category complex type in [!INCLUDE[d365fin_long_md](../../inc
 
 ## Unit of measure
 
-Represents a Unit of Measure complex type in [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)].       
+Represents a Unit of Measure complex type in [!INCLUDE[prod_short](../../../includes/prod_short.md)].       
 
 ### Properties
 
@@ -66,7 +66,7 @@ Represents a Unit of Measure complex type in [!INCLUDE[d365fin_long_md](../../in
 
 ## Unit of measure conversion
 
-Represents a Unit of Measure Conversion complex type in [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)].       
+Represents a Unit of Measure Conversion complex type in [!INCLUDE[prod_short](../../../includes/prod_short.md)].       
 
 ### Properties
 
@@ -85,7 +85,7 @@ Represents a Unit of Measure Conversion complex type in [!INCLUDE[d365fin_long_m
 
 ## Payment method
 
-Represents a Payment Method complex type in [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)].       
+Represents a Payment Method complex type in [!INCLUDE[prod_short](../../../includes/prod_short.md)].       
 
 ### Properties
 
@@ -104,7 +104,7 @@ Represents a Payment Method complex type in [!INCLUDE[d365fin_long_md](../../inc
 
 ## Payment terms
 
-Represents a Payment Terms complex type in [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)].       
+Represents a Payment Terms complex type in [!INCLUDE[prod_short](../../../includes/prod_short.md)].       
 
 ### Properties
 
@@ -123,7 +123,7 @@ Represents a Payment Terms complex type in [!INCLUDE[d365fin_long_md](../../incl
 
 ## Postal address
 
-Represents a Postal Address complex type in [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)].       
+Represents a Postal Address complex type in [!INCLUDE[prod_short](../../../includes/prod_short.md)].       
 
 ### Properties
 
@@ -148,7 +148,7 @@ Represents a Postal Address complex type in [!INCLUDE[d365fin_long_md](../../inc
 
 ## Shipment method
 
-Represents a Shipment Method complex type in [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)].       
+Represents a Shipment Method complex type in [!INCLUDE[prod_short](../../../includes/prod_short.md)].       
 
 ### Properties
 
@@ -167,7 +167,7 @@ Represents a Shipment Method complex type in [!INCLUDE[d365fin_long_md](../../in
 
 ## Line details
 
-Represents a Line Details complex type in [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)].       
+Represents a Line Details complex type in [!INCLUDE[prod_short](../../../includes/prod_short.md)].       
 
 ### Properties
 

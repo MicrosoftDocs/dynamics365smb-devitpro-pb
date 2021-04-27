@@ -1,5 +1,5 @@
 ---
-title: Delete dimensionLines | Microsoft Docs
+title: Delete dimensionLines
 description: Deletes a dimension line object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
@@ -14,10 +14,10 @@ ms.author: solsen
 ---
 
 # Delete dimensionLines
-Delete a dimension line object from [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)].
+Delete a dimension line object from [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## HTTP request
-Replace the URL prefix for [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)] depending on environment following the [guideline](../../v1.0/endpoints-apis-for-dynamics.md).
+Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v1.0/endpoints-apis-for-dynamics.md).
 ```
 DELETE businesscentralPrefix/companies({id})/dimensionLines(parentId=({id}),id=({id}))
 ```

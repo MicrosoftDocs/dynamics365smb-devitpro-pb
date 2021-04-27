@@ -1,5 +1,5 @@
 ---
-title: Moving from beta to v1.0 | Microsoft Docs
+title: Moving from beta to v1.0
 description: Changes from the beta version of the APIs to the v1.0 of the APIs in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
