@@ -2553,6 +2553,13 @@
 ##### [OnPreDataItem Trigger](developer/triggers-auto/reportdataitem/devenv-onpredataitem-reportdataitem-trigger.md)
 ##### [OnAfterGetRecord Trigger](developer/triggers-auto/reportdataitem/devenv-onaftergetrecord-reportdataitem-trigger.md)
 ##### [OnPostDataItem Trigger](developer/triggers-auto/reportdataitem/devenv-onpostdataitem-reportdataitem-trigger.md)
+#### Report Extension Data Set Modify Triggers
+##### [OnBeforePreDataItem Trigger](developer/triggers-auto/reportextensiondatasetmodify/devenv-onbeforepredataitem-reportextensiondatasetmodify-trigger.md)
+##### [OnAfterPreDataItem Trigger](developer/triggers-auto/reportextensiondatasetmodify/devenv-onafterpredataitem-reportextensiondatasetmodify-trigger.md)
+##### [OnBeforeAfterGetRecord Trigger](developer/triggers-auto/reportextensiondatasetmodify/devenv-onbeforeaftergetrecord-reportextensiondatasetmodify-trigger.md)
+##### [OnAfterAfterGetRecord Trigger](developer/triggers-auto/reportextensiondatasetmodify/devenv-onafteraftergetrecord-reportextensiondatasetmodify-trigger.md)
+##### [OnBeforePostDataItem Trigger](developer/triggers-auto/reportextensiondatasetmodify/devenv-onbeforepostdataitem-reportextensiondatasetmodify-trigger.md)
+##### [OnAfterPostDataItem Trigger](developer/triggers-auto/reportextensiondatasetmodify/devenv-onafterpostdataitem-reportextensiondatasetmodify-trigger.md)
 #### Xml Port Triggers
 ##### [OnInitXmlPort Trigger](developer/triggers-auto/xmlport/devenv-oninitxmlport-xmlport-trigger.md)
 ##### [OnPreXmlPort Trigger](developer/triggers-auto/xmlport/devenv-onprexmlport-xmlport-trigger.md)
