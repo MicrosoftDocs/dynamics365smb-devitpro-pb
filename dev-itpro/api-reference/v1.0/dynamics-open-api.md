@@ -59,5 +59,6 @@ To run SwaggerUI locally, node.js can be used to serve the SwaggerUI, by followi
 > For OAuth2 testing purposes, a multi-tenant AAD app has been created. Admin consent is needed. Client ID : 060af3ac-70c3-4c14-92bb-8a88230f3f38.
 
 ## See Also 
+
 [Developing Connect Apps for Dynamics 365 Business Central](/dynamics365/business-central/dev-itpro/developer/devenv-develop-connect-apps)  
 
