@@ -421,7 +421,6 @@
 ### [Report Extension Example](developer/devenv-report-ext-example.md)
 ### [Defining a Report Dataset](developer/devenv-report-dataset.md)
 ### [Request Pages](developer/devenv-request-pages.md)
-### [Report Triggers](developer/triggers/devenv-report-triggers.md)
 ### [Adding Reports to Tell Me](developer/devenv-al-menusuite-functionality.md)
 ### [Substituting a Report](developer/devenv-substituting-reports.md)
 ### [Testing a Report](developer/devenv-testing-reports.md)
@@ -454,7 +453,6 @@
 ### [Defining an XMLport Schema](developer/devenv-xmlport-schema.md)  
 ### [Using Namespaces with XMLports](developer/devenv-using-namespaces-with-xmlports.md)
 ### [Request Pages](developer/devenv-request-pages.md)
-### [XMLport Triggers](developer/triggers/devenv-xmlport-triggers.md)
 ## [Customizing for User Roles](developer/devenv-role-customization.md)
 ## Profiles
 ### [Designing Profiles](developer/devenv-design-profiles.md)
