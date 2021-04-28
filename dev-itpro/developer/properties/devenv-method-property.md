@@ -2,7 +2,7 @@
 title: "Method Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 04/28/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,7 +16,7 @@ author: SusanneWindfeldPedersen
 # Method Property
 > **Version**: _Available or changed with runtime version 1.0._
 
-Gets or sets the method type as defined in the HTTP standard.
+Sets either a date method for retrieving the year, month, or day from a date field or a totals method for performing calculations on field values.
 
 ## Applies to
 -   Query Column
