@@ -17,11 +17,9 @@ author: solsen
 
 [!INCLUDE[cc_data_platform_banner](../includes/cc_data_platform_banner.md)]
 
-> [!NOTE]  
-> The **Business Central Virtual Entity (Preview)** app available on AppSource is being updated to reflect new terminology with an upcoming release. This also applies to that terminology used in Business Central.
 
 > [!IMPORTANT]  
-> This functionality requires version 17 for [!INCLUDE[prod_short](../developer/includes/prod_short.md)], while service update 189 is required for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The release information for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] is published on the [latest version availability page](/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
+> This functionality requires version 17 or later for [!INCLUDE[prod_short](../developer/includes/prod_short.md)], while service update 189 is required for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The release information for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] is published on the [latest version availability page](/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Virtual table, which is published on AppSource, is a virtual data source in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], and enables create, read, update, delete (CRUD) operations from [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] and Microsoft Power Platform. By definition, the data for virtual tables does not reside in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. Instead, it continues to reside in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. To enable operations on [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tables in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], tables must be made available as virtual tables in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].
 

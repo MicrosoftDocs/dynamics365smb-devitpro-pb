@@ -17,11 +17,8 @@ author: solsen
 
 [!INCLUDE[cc_data_platform_banner](../includes/cc_data_platform_banner.md)]
 
-> [!NOTE]  
-> The **Business Central Virtual Entity (Preview)** app available on AppSource is being updated to reflect new terminology with an upcoming release. This also applies to that terminology used in Business Central.
-
 > [!IMPORTANT]  
-> This functionality requires version 17 of [!INCLUDE[prod_short](../developer/includes/prod_short.md)], while service update 189 is required for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The release information for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] is published on the [latest version availability page](/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
+> This functionality requires version 17 or later of [!INCLUDE[prod_short](../developer/includes/prod_short.md)], while service update 189 is required for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The release information for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] is published on the [latest version availability page](/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
 
 This topic is a collection of frequently asked questions about [!INCLUDE[prod_short](../developer/includes/prod_short.md)] virtual tables. 
 

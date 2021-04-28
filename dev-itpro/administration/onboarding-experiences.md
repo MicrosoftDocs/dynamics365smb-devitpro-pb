@@ -1,12 +1,13 @@
 ﻿---
 title: Onboarding experiences
-description: As a partner, you can get your customers up to speed in a hurry with the right onboarding story. Learn about checklists and teaching tips.
-ms.date: 04/01/2021
-ms.topic: conceptual
-ms.service: dynamics365-business-central
+description: As a partner, you can get your customers up to speed in a hurry with the right onboarding story. Learn about checklists and teaching tips in the onboarding framework.
 author: sorenfriisalexandersen
+ms.custom: na
+ms.reviewer: edupont
+ms.topic: article
+ms.service: "dynamics365-business-central"
+ms.date: 04/01/2021
 ms.author: soalex
-manager: edupont
 ---
 
 # Onboarding experiences in Business Central
@@ -21,12 +22,12 @@ The onboarding framework in [!INCLUDE [prod_short](../includes/prod_short.md)] e
 
 In the following sections you find descriptions of components you can use when authoring onboarding experiences for your customers along with guidance to where and how to use them.
 
-- The checklist
-
-  For more information, see [Get Users Started with the Checklist](onboarding-checklist.md).  
 - Banner
 
   For more information, see [Onboard New Users with the Welcome Banner](onboarding-welcome-banner.md).  
+- The checklist
+
+  For more information, see [Get Users Started with the Checklist](onboarding-checklist.md).  
 - Teaching tips and tours
 
   For information, see [Teaching tips and in-app tours for onboarding users](onboarding-teaching-tips-tours.md).  

@@ -30,7 +30,7 @@ You can add Microsoft's content to your website, or you can deploy just your own
 For deploying [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises, you can choose between using any online website or the legacy Dynamics NAV Help Server, and you can configure different Help experience for each [!INCLUDE[webserver](../developer/includes/webserver.md)] instance. For example, use the [Custom Help Toolkit](../help/custom-help-toolkit.md) to help you deploy content to an Azure Web App. For supported versions, the legacy Dynamics NAV Help Server component is a simple website that requires your Help to be in a specific format (HTML files). Other types of websites can host any content that you want to make available. Your choice depends on the needs of your solution and your users. If you add configuration for an online library, you must remove any settings for Help Server.  
 
 > [!IMPORTANT]
-> The legacy Dynamics NAV Help Server component is deprecated in 2021 release wave 1 (version 18). We recommend that you invest in a different type of website. For more information, see the [2020 release wave 2 release plan](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/deprecation-legacy-dynamics-nav-help-server-component-) and [Custom Help Toolkit](../help/custom-help-toolkit.md).
+> The legacy Dynamics NAV Help Server component is deprecated in 2021 release wave 1 (version 18). We recommend that you invest in a different type of website. For more information, see the [deprecation notice](../upgrade/deprecated-features-w1.md#the-help-server-component) and the [Custom Help Toolkit](../help/custom-help-toolkit.md) section.
 
 > [!TIP]
 > The content on the [https://docs.microsoft.com/dynamics365/business-central/](/dynamics365/business-central/) site and in the various GitHub repos reflects the latest version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)], unless otherwise specified.
@@ -65,6 +65,8 @@ For more information, see [Configuring [!INCLUDE[webserver](../developer/include
 > The website does not have to be publicly accessible, but it must be accessible to all users of the solution that it supports.  
 
 ### Legacy Help Server
+
+> **APPLIES TO**: 2020 release wave 2 and earlier versions
 
 If you want to use Help Server, then you must specify the server and port in the installation options. The Help Server website can also serve as a starting point for adding a library to your existing website, for example.  
 

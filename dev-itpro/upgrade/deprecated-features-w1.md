@@ -88,28 +88,28 @@ The following feature will be **Removed** with [!INCLUDE[prod_short](../develope
 
 ### .NET add-ins not using .NET Standard (Warning)
 
-In [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1, a warning will be shown if you include .NET add-ins that are compiled with .NET Framework and not with .NET Standard. The capability of using .NET add-ins compiled with .NET Franework will be removed in a later release.
+In [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1, a warning shows if you include .NET add-ins that are compiled with .NET Framework and not with .NET Standard. The capability of using .NET add-ins compiled with .NET Framework will be removed in a later release.
 
 |Moved, Removed, or Replaced? |Why?|
 |---------|---------|
-|Replaced | .NET Framework has been superseded by .NET Standard. .NET add-ins compiled with .NET Framework will be deprecated as of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1, but the feature won't be removed in this release. It's recommended that .NET add-ins are migrated to .NET Standard as soon as possible.|
+|Replaced | .NET Framework has been superseded by .NET Standard. .NET add-ins compiled with .NET Framework is deprecated as of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1, but the feature won't be removed in this release. It's recommended that .NET add-ins are migrated to .NET Standard as soon as possible.|
 
 
 ### Expose UI pages as SOAP endpoints (Warning)
 
-In [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1, a warning will be shown if you expose UI pages as SOAP endpoints. The capability of exposing UI pages as SOAP endpoints will be removed in a later release.
+In [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1, a warning shows if you expose UI pages as SOAP endpoints. The capability of exposing UI pages as SOAP endpoints will be removed in a later release.
 
 |Moved, Removed, or Replaced? |Why?|
 |---------|---------|
-|Replaced | SOAP has been superseded by OData V4. SOAP endpoints will be deprecated as of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1, but the feature won't be removed in this release. It's recommended that integrations are migrated to OData V4 as soon as possible.|
+|Replaced | SOAP has been superseded by OData V4. SOAP endpoints are deprecated as of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1, but the feature won't be removed in this release. It's recommended that integrations are migrated to OData V4 as soon as possible.|
 
 ### OData V3
 
-The following feature will be **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1.
+The following feature is **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1.
 
 |Moved, Removed, or Replaced? |Why?|
 |---------|---------|
-|Removed | OData V3 has been superseded by OData v4. OData V3 is deprecated, and will be removed as of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1. It's recommended that integrations are migrated to OData v4 as soon as possible.  |
+|Removed | OData V3 has been superseded by OData v4. OData V3 is deprecated, and is removed as of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1. It's recommended that integrations are migrated to OData v4 as soon as possible.  |
 
 ### The Help Server component
 
@@ -117,10 +117,15 @@ The following component is **Removed** with [!INCLUDE[prod_short](../developer/i
 
 |Moved, Removed, or Replaced? |Why?|
 |---------|---------|
-|Removed |The legacy Dynamics NAV Help Server component is no longer available on the Dynamics 365 Business Central product media for deployment on-premises. If a customer is on a version between Dynamics NAV 2016 and Business Central 2020 release wave 2 on-premises, and they rely on Help Server to provide access to Help, then nothing changes. When they upgrade to Business Central 2021 release wave 1, they must host their custom Help on another type of website. We recommend that new solutions do not rely on the Help Server component due to the deprecation. The [custom help toolkit](../help/custom-help-toolkit.md) can help deploy content to a website, for example. We have simplified the story for how to deploy Help for a customer-specific solution of Business Central, and for deploying Help for an AppSource app. No matter what your solution is, deploy your solution-specific or customized Help to any website that you prefer. Out of the box, Business Central uses the Docs.microsoft.com site for the Learn more-links and contextual Help. Each customer and each partner can override this with their own Help. It's now the same for Business Central online and on-premises, so any investment on-premises carries forward if you migrate to Business Central online.|
+|Removed |In 2021 release wave 1, the Help Server component is removed from the product media for deployment on-premises. If a customer is on a version between Dynamics NAV 2016 and [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 2 on-premises, and they rely on Help Server to provide access to Help, then nothing changes. When they upgrade to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1, they must host their custom Help on another type of website. We recommend that new solutions do not rely on the Help Server component due to the deprecation. The [custom help toolkit](../help/custom-help-toolkit.md) can help deploy content to any website, for example. |
+
+#### What does this mean?
+
+<!--BDM-->
+We have simplified the story for how to deploy Help for a customer-specific solution of [!INCLUDE[prod_short](../developer/includes/prod_short.md)], and for deploying Help for an AppSource app. No matter what your solution is, deploy your solution-specific or customized Help to any website that you prefer. Out of the box, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] uses the [Docs.microsoft.com](/dynamics365/business-central/) site for the Learn more-links and contextual Help. Each customer and each partner can override this with their own Help. It's now the same for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online and on-premises, so any investment on-premises carries forward if you migrate to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online.
 
 ## Deprecated Features in 2020 release wave 1
-The following feature was marked as obsolete:pending in 2020 release wave 1.
+The following feature was marked as `obsolete:pending` in 2020 release wave 1.
 
 ### Best Price Calculations
 When you have recorded special prices and line discounts for sales and purchases, Business Central ensures that your profit on item trade is always optimal by automatically calculating the best price on sales and purchase documents and on job and item journal lines.
@@ -197,4 +202,7 @@ When we move, remove, or replace an object, breaking changes can result in other
 Some features are available only under very specific circumstances, or not at all intended for use in on-premises versions of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. For a list and descriptions of those features, see [Features not implemented in on-premises deployments](../features-not-implemented-on-premises.md).
 
 ## See Also
-[AlAppExtensions repository](https://github.com/microsoft/ALAppExtensions)
+
+[AlAppExtensions repository](https://github.com/microsoft/ALAppExtensions)  
+[Best Practices for Deprecation of Code in the Base App](../developer/devenv-deprecation-guidelines.md)  
+[Microsoft Timeline for Deprecating Code in Business Central](../developer/devenv-deprecation-timeline.md)  

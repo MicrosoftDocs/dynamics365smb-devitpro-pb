@@ -7,7 +7,7 @@ ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.service: "dynamics365-business-central"
 ms.assetid: 014e3285-02be-459c-9a54-eae45ea71e04
 ---

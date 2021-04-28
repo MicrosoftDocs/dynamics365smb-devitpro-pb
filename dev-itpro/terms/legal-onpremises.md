@@ -3,7 +3,7 @@ title: "Legal Resources for Business Central On-Premises"
 description: View a list of links to where you can find legal information that applies to Business Central on-premises deployments.
 author: jswymer
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 04/13/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,15 +18,15 @@ This page provides links to legal information for Business Central On-Premises.
 
 - [Dynamics 365 Business Central on-premises- \<language\>.pdf](https://www.microsoft.com/en-us/download/details.aspx?id=57274)
 
-## Third Party Notices
+## Third-Party Notices
 
-- [Dynamics Business Central On Prem Third Party Notice.pdf](https://go.microsoft.com/fwlink/?linkid=2144507) 
+- [Dynamics Business Central On-Premises Third-Party Notices.pdf](https://go.microsoft.com/fwlink/?linkid=2144507)  
 
 ## AL Language
 
 - [AL Language - Terms of Use.pdf](https://www.microsoft.com/en-us/download/details.aspx?id=57274)
 
-## Envestnet Yodlee - Bank Feeds 
+## Envestnet Yodlee - Bank Feeds
 
 - [Envestnet Yodlee - Bank Feeds Terms and Conditions.pdf](https://www.microsoft.com/en-us/download/details.aspx?id=57274)
 
@@ -35,6 +35,10 @@ This page provides links to legal information for Business Central On-Premises.
 - [GetAddressIO-MBS - External Components License Agreement Summary.pdf](https://www.microsoft.com/en-us/download/details.aspx?id=57274)
 
 <!--## Teams integration-->
+
+## Lifecycle
+
+- [Lifecycle policy for [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises](/lifecycle/products/dynamics-365-business-central-onpremises-modern-policy)
 
 <!--- links-->
 

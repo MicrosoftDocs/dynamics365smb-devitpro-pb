@@ -59,6 +59,7 @@ Here is an example of the response.
     "extensionContent" : ""
 }
 ```
+Schedule in the body can be "Current version", "Next minor version", or "Next major version".
 
 ## See Also
 

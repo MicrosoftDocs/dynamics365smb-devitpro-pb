@@ -15,7 +15,9 @@ ms.author: solsen
 
 # Table, Table Fields, and Table Extension Properties
 
-The following topic lists properties that apply to the [table object](../devenv-table-object.md) and table fields and, in some cases, to the [table extension object](../devenv-table-ext-object.md) as specified below.
+This article lists properties that apply to the [table object](../devenv-table-object.md) and table fields and, in some cases, to the [table extension object](../devenv-table-ext-object.md) as specified below.
+
+[!INCLUDE[properties_note](../includes/properties_note.md)]
 
 |Property Name|Available for Table<br />  Extension Object|Applies to|
 |-------------|-----------|---------------------|

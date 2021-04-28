@@ -65,13 +65,13 @@
 #### [User Assistance Model](user-assistance.md)
 #### [Configure the Help Experience](deployment/configure-help.md)
 #### [Configure Context-Sensitive Help](help/context-sensitive-help.md)
-#### [Migrate Legacy Help to the Business Central Format](upgrade/migrate-help.md)
 #### [Custom Help Toolkit](help/custom-help-toolkit.md)
 #### [Custom Help Toolkit: The HtmlFromRepoGenerator tool](help/custom-help-toolkit-HtmlFromRepoGenerator.md)
 #### [Custom Help Toolkit: The HtmlLocaleChanger tool](help/custom-help-toolkit-HtmlLocaleChanger.md)
 #### [Custom Help Toolkit: The FieldTopicTextExtractor tool](help/custom-help-toolkit-FieldTopicTextExtractor.md)
 #### [Extend, Customize, and Collaborate on the Help](help/contributor-guide.md)
 #### [Authoring Guide](help/writing-guide.md)
+#### [Migrate Legacy Help to the Business Central Format](upgrade/migrate-help.md)
 <!--### Resources for a developer
 #### [Learning catalog](/dynamics365/business-central/readiness/readiness-learning-developers?toc=/dynamics365/business-central/dev-itpro/toc.json)
 #### [Documentation](developer/devenv-dev-overview.md)
@@ -86,7 +86,7 @@
 ## [Country/Regional availability and Supported Translations](compliance/apptest-countries-and-translations.md)
 ## [Delegated Administrator Access to Business Central Online](administration/delegated-admin.md)
 ## [Operational Limits](administration/operational-limits-online.md)
-## [Major Updates of Business Central Online](administration/update-rollout-timelime.md)
+## [Major Updates and Minor Updates](administration/update-rollout-timelime.md)
 ## [Version Numbers in Business Central](administration/version-numbers.md)
 ## [Enabling New Features Ahead of Time](administration/feature-management.md)
 ## [Managing Technical Support](administration/manage-technical-support.md)
@@ -121,8 +121,10 @@
 ### [Page View Telemetry](administration/telemetry-page-view-trace.md)
 ### [Permission Changes Telemetry](administration/telemetry-permission-changes-trace.md)
 ### [Report Generation Telemetry](administration/telemetry-reports-trace.md)
+### [Retention Policy Telemetry](administration/telemetry-retention-policy-trace.md)
 ### [Incoming Web Services Requests Telemetry](administration/telemetry-webservices-trace.md)
 ### [Outgoing Web Services Requests Telemetry](administration/telemetry-webservices-outgoing-trace.md)
+### [Table Index Telemetry](administration/telemetry-table-index-trace.md)
 ### [Web Service Access Key Telemetry](administration/telemetry-webservices-access-key-trace.md)
 ### [Event IDs](administration/telemetry-event-ids.md)
 ## Administration Center
@@ -132,7 +134,11 @@
 ### [Managing Capacity](administration/tenant-admin-center-capacity.md)
 ### [Managing Notifications](administration/tenant-admin-center-notifications.md)
 ### [Managing Updates](administration/tenant-admin-center-update-management.md)
+### [Managing Sessions](administration/tenant-admin-center-manage-sessions.md)
+### [Rename Environments](administration/tenant-admin-center-environments-rename.md)
 ### [Exporting Databases](administration/tenant-admin-center-database-export.md)
+### [Restoring an Environment](administration/tenant-admin-center-backup-restore.md)
+### [Move an Environment to another Azure Active Directory organization](administration/tenant-admin-center-environments-move.md)
 ### [Environment Telemetry](administration/tenant-admin-center-telemetry.md)
 ### [Administration Center API](administration/administration-center-api.md)
 ## Automation
@@ -202,7 +208,7 @@
 ### [Migrating from Business Central On-Premises](administration/migrate-business-central-on-premises.md)
 ### [Migrating from Dynamics GP](administration/migrate-dynamics-gp.md)
 ### [Migrating from Dynamics NAV](upgrade/Upgrade-Considerations.md#online)
-### [FAQ about Connecting to Business Central Online from On-Premises Solutions](administration/faq-intelligent-cloud.md)
+### [FAQ about Migrating to Business Central Online from On-Premises Solutions](administration/faq-intelligent-cloud.md)
 ### [Troubleshooting Cloud Migration](administration/migration-troubleshooting.md)
 <!--### [Migrating from Dynamics SL](administration/migrate-data.md)-->
 <!-- end migrate -->
@@ -310,7 +316,10 @@
 #### [Create a New Module](developer/devenv-new-module.md)
 #### [Create a .NET Wrapper Module](developer/devenv-create-a-wrapper-module.md)
 #### [Change a Module](developer/devenv-change-a-module.md)
-## [Deprecating Explicit and Implicit With Statements](developer/devenv-deprecating-with-statements-overview.md)
+## Code Deprecation
+### [Microsoft Timeline for Deprecating Code in Business Central](developer/devenv-deprecation-timeline.md)
+### [Best Practices for Deprecation of Code in the Base App](developer/devenv-deprecation-guidelines.md)
+### [Deprecating Explicit and Implicit With Statements](developer/devenv-deprecating-with-statements-overview.md)
 ## Events
 ### [Events in AL](developer/devenv-events-in-al.md)
 ### [Event Types](developer/devenv-event-types.md)
@@ -2130,6 +2139,7 @@
 ##### [PreserveWhitespace([Boolean]) Method](developer/methods-auto/xmlwriteoptions/xmlwriteoptions-preservewhitespace-method.md)
 <!-- [//]: # (IMPORTANT: END>DO_NOT_EDIT_METHODS) -->
 ### Properties
+#### [Overview](developer/properties/devenv-properties.md)
 <!-- [//]: # (START>DO_NOT_EDIT_PROPERTIES)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.) -->
@@ -2834,8 +2844,10 @@
 #### [Long Running AL Method Telemetry](administration/telemetry-al-method-trace.md)
 #### [Long Running SQL Queries Telemetry](administration/telemetry-long-running-sql-query-trace.md)
 #### [Report Generation Telemetry](administration/telemetry-reports-trace.md)
+#### [Retention Policy Telemetry](administration/telemetry-retention-policy-trace.md)
 #### [Incoming Web Services Requests Telemetry](administration/telemetry-webservices-trace.md)
 #### [Outgoing Web Services Requests Telemetry](administration/telemetry-webservices-outgoing-trace.md)
+#### [Table Index Telemetry](administration/telemetry-table-index-trace.md)
 #### [Web Service Access Key Telemetry](administration/telemetry-webservices-access-key-trace.md)
 #### [Event IDs](administration/telemetry-event-ids.md)
 ### [Understanding Session Timeouts](administration/understanding-session-timeouts.md)

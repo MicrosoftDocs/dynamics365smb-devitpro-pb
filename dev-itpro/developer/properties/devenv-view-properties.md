@@ -17,6 +17,9 @@ ms.author: solsen
 
 The following topic lists properties that apply to [Views](../devenv-views.md) specifically.
 
+[!INCLUDE[properties_note](../includes/properties_note.md)]
+
+
 |Property Name| Object |
 |-------------|--------|
 |[Filters](devenv-filters-property.md) | Views |

@@ -1,8 +1,8 @@
 ---
 title: Upgrade an unmodified application
-description: The article explains how to upgrade the application code and how to merge code from different versions of the application.
+description: The article explains how to upgrade an application that has no custom code to Business Central 2019 release wave 2.
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 04/15/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -97,13 +97,13 @@ The process for upgrading the similar for a single-tenant and multitenant deploy
 
     To unpublish an extension, use the [Unpublish-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/unpublish-navapp):
     
-    ``` 
+    ```powershell 
     Unpublish-NAVApp -ServerInstance <server instance name> -Name <extension name> -Version <extension version>
     ``` 
 
-    Together with the [Get-NAVAppInfo cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/get-navappinfo?view=businesscentral-ps), you can unpublish all extensions by using a single command:
+    Together with the [Get-NAVAppInfo cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/get-navappinfo), you can unpublish all extensions by using a single command:
 
-    ```
+    ```powershell
     Get-NAVAppInfo -ServerInstance <BC14 server instance> | % { Unpublish-NAVApp -ServerInstance <BC14 server instance> -Name $_.Name -Version $_.Version }
     ```
 
@@ -111,7 +111,7 @@ The process for upgrading the similar for a single-tenant and multitenant deploy
 
     To unpublish symbols, use the Unpublish-NAVAPP cmdlet with the `-SymbolsOnly` switch.
 
-    ``` 
+    ```powershell 
     Get-NAVAppInfo -ServerInstance <BC14 server instance> -SymbolsOnly | % { Unpublish-NAVApp -ServerInstance <BC14 server instance> -Name $_.Name -Version $_.Version }
     ```
 
@@ -120,12 +120,12 @@ The process for upgrading the similar for a single-tenant and multitenant deploy
 
     To dismount a tenant, use the [Dismount-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/dismount-navtenant) cmdlet:
 
-    ```
+    ```powershell
     Dismount-NAVTenant -ServerInstance <server instance name> -Tenant <tenant ID>
     ```
 7. Stop the server instance.
 
-    ```
+    ```powershell
     Stop-NAVServerInstance -ServerInstance <server instance name>
     ```
 
@@ -133,17 +133,19 @@ The process for upgrading the similar for a single-tenant and multitenant deploy
 
 This task runs a technical upgrade on the application database to convert it from the version 14 platform to the version 15 platform. The conversion updates the system tables of the database to the new schema (data structure). It provides the latest platform features and performance enhancements.
 
-1. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 15 as an administrator.
-2. Run the Invoke-NAVApplicationDatabaseConversion cmdlet to start the conversion:
+[!INCLUDE[convert_azure_sql_db](../developer/includes/convert_azure_sql_db.md)]
 
-    ```
+2. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 15 as an administrator.
+3. Run the Invoke-NAVApplicationDatabaseConversion cmdlet to start the conversion:
+
+    ```powershell
     Invoke-NAVApplicationDatabaseConversion -DatabaseServer <database server name>\<database server instance> -DatabaseName "<database name>"
     ```
     <!--This adds systemID to system tables, clears the Objects table. -->
 
     When completed, a message like the following displays in the console:
 
-    ```
+    ```powershell
     DatabaseServer      : .\BCDEMO
     DatabaseName        : Demo Database BC (14-0)
     DatabaseCredentials :
@@ -151,19 +153,21 @@ This task runs a technical upgrade on the application database to convert it fro
     Collation           :
     ```
 
+[!INCLUDE[convert_azure_sql_db_timeout](../developer/includes/convert_azure_sql_db_timeout.md)]
+
 ## Task 4: Connect and configure the version 15 server for app migration
 
 When you installed version 15 in **Task 1**, a version 15 [!INCLUDE[server](../developer/includes/server.md)] instance was created. In this task, you change server configuration settings that are required to complete the upgrade. Some of the changes are only required for version 14 to version 15.0 upgrade and can be reverted after you complete the upgrade.
 
 1. Set the server instance to connect to the application database.
 
-    ```
+    ```powershell
     Set-NAVServerConfiguration -ServerInstance <server instance name> -KeyName DatabaseName -KeyValue "<database name>"
     ```
     In a single tenant deployment, this command will mount the tenant automatically. For more information, see [Connecting a Server Instance to a Database](../administration/connect-server-to-database.md).
 2. Configure the server instance for migrate extensions to the use the new base application and system application extensions. 
 
-    ```
+    ```powershell
     Set-NAVServerConfiguration -ServerInstance <server instance name> -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"63ca2fa4-4f03-4f2b-a480-172fef340d3f", "name":"System Application", "publisher": "Microsoft"},{"appId":"437dbf0e-84ff-417a-965d-ed2bb9650972", "name":"Base Application", "publisher": "Microsoft"}]'
     ```
     <!-- with test
@@ -176,13 +180,13 @@ When you installed version 15 in **Task 1**, a version 15 [!INCLUDE[server](../d
     - Lets you republish extensions that haven't been built on version 15. The extensions typically include the third-party extensions that were used in your version 14. When you publish the extensions, the extension manifests are automatically modified with a dependency on the base and system applications.
 2. Disable task Scheduler on the server instance for purposes of upgrade.
 
-    ```
+    ```powershell
     Set-NavServerConfiguration -ServerInstance <server instance name> -KeyName "EnableTaskScheduler" -KeyValue false
     ```
     Be sure to re-enable task scheduler after upgrade if needed.
 3. Restart the server instance.
 
-    ```
+    ```powershell
     Restart-NAVServerInstance -ServerInstance <server instance name>
     ```
 
@@ -197,12 +201,13 @@ The version has the format `major.minor.build.revision`, such as, '14.3.14824.1'
 
 To change the application version, run the [Set-NAVApplication cmldet](/powershell/module/microsoft.dynamics.nav.management/set-navapplication):
 
-```
+```powershell
 Set-NAVApplication -ServerInstance <server instance name> -ApplicationVersion <new application version> -Force
 ```
+
 For example:
 
-```
+```powershell
 Set-NAVApplication -ServerInstance BC150 -ApplicationVersion 15.1.38071.0 -Force
 ```
 
@@ -264,7 +269,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
 
     The symbols extension contains the required platform symbols that the base application depends on. The symbols extension package is called **System.app**. You find it where the **AL Development Environment** is installed. The default path is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\AL Development Environment.  
 
-    ```
+    ```powershell
     Publish-NAVApp -ServerInstance  <server instance name> -Path "<path to system.app>" -PackageType SymbolsOnly
     ```
     [What are symbols?](upgrade-overview-v15.md#Symbols) 
@@ -272,7 +277,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
 
     You find the (Microsoft_System Application.app in the **Applications\System Application\Source** folder of installation media (DVD).
 
-    ```
+    ```powershell
     Publish-NAVApp -ServerInstance <server instance name> -Path "<path to Microsoft_System Application.app>"
     ```
     [What is the System Application?](upgrade-overview-v15.md#SystemApplication) 
@@ -280,7 +285,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
 
     The **Base Application** extension contains the application business objects. You find the (Microsoft_Base Application.app in the **Applications\BaseApp\Source** folder of installation media (DVD).
 
-    ```
+    ```powershell
     Publish-NAVApp -ServerInstance <server instance name> -Path "<path to Microsoft_Base Application.app>"
     ```
 4. Publish the Microsoft_Application extension (update to 15.3 and later only)
@@ -308,19 +313,20 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
 
     In this step, you publish new versions of Microsoft extensions that were used on your version 14 deployment. You find the extensions in the **Applications** folder of the installation media (DVD).
 
-    ```
+    ```powershell
     Publish-NAVApp -ServerInstance <server instance name> -Path "<path to Microsoft extension>"
     ```
 
     For example:
-    ```
+
+    ```powershell
     Publish-NAVApp -ServerInstance BC150 -Path "C:\W1DVD\Applications\SalesAndInventoryForecast\Source\SalesAndInventoryForecast.app"
     ```
 6. Publish 3rd-party extensions.
 
     Publish 3rd-party extensions that were used on your version 14 solution. If you have new versions of these extensions, built on the Business Central version 15, then publish the new versions. Otherwise, republish the same versions that were previously published in the old deployment.  
 
-    ```
+    ```powershell
     Publish-NAVApp -ServerInstance BC150 -Path "<path to extension>"
     ```
 
@@ -328,7 +334,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
 
 Restart the [!INCLUDE[server](../developer/includes/server.md)] to free up resources for completing the upgrade.
 
-```
+```powershell
 Restart-NAVServerInstance -ServerInstance <server instance name>
 ```
 
@@ -344,7 +350,7 @@ If you have a multitenant deployment, do these steps for each tenant.
 
     To mount the tenant, use the [Mount-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/mount-navtenant) cmdlet:
     
-    ```
+    ```powershell
     Mount-NAVTenant -ServerInstance <server instance name> -DatabaseName <database name> -DatabaseServer <database server>\<database instance> -Tenant <tenant ID> -AllowAppDatabaseWrite
     ```
     
@@ -359,7 +365,7 @@ If you have a multitenant deployment, do these steps for each tenant.
 
     Use the [Sync-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/sync-navtenant) cmdlet:
 
-    ```  
+    ```powershell  
     Sync-NAVTenant -ServerInstance <server instance name> -Mode Sync -Tenant <tenant ID>
     ```
     
@@ -369,7 +375,7 @@ If you have a multitenant deployment, do these steps for each tenant.
 
     Use the [Sync-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp) cmdlet:
 
-    ```
+    ```powershell
     Sync-NAVApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name "System Application" -Version <extension version>
     ```
 
@@ -377,22 +383,22 @@ If you have a multitenant deployment, do these steps for each tenant.
     
 4. Synchronize the tenant with the Business Central Base Application extension.
 
-    ```
+    ```powershell
     Sync-NAVApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name "Base Application" -Version <extension version>
     ```
    Replace `<extension version>` with the exact version of the published Base Application.
 
-4. Synchronize the tenant with the Application extension.
+5. Synchronize the tenant with the Application extension.
 
-    ```
+    ```powershell
     Sync-NAVApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name "Application"
     ```
 
-5. Synchronize the tenant with Microsoft and 3rd-party extensions.
+6. Synchronize the tenant with Microsoft and 3rd-party extensions.
 
     For each extension, run the Sync-NAVApp cmdlet:
 
-    ```
+    ```powershell
     Sync-NAVApp -ServerInstance BC150 -Tenant default -Name "<extension name>" -Version <extension version>
     ```
 
@@ -409,7 +415,7 @@ If you have a multitenant deployment, do these steps for each tenant.
 
     1. To run the data upgrade, use the [Start-NavDataUpgrade](/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade) cmdlet:
 
-        ```
+        ```powershell
         Start-NAVDataUpgrade -ServerInstance <server instance name> -Tenant <tenant ID> -FunctionExecutionMode Serial [-SkipAppVersionCheck]
         ```
 
@@ -423,7 +429,7 @@ If you have a multitenant deployment, do these steps for each tenant.
 
     To upgrade an extension, run [Start-NAVAppDataUpgrade cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/start-navappdataupgrade):
 
-    ```
+    ```powershell
     Start-NAVAppDataUpgrade -ServerInstance <server instance name> -Name "<extension name>" -Version <extension version>
     ```
     
@@ -434,11 +440,9 @@ If you have a multitenant deployment, do these steps for each tenant.
 
 Complete this task to install third-party extensions for which a new version wasn't published. For each extension, run the [Install-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp):
 
-```
+```powershell
 Install-NAVApp -ServerInstance <server instance name> -Name <extension name> -Version <extension version>
 ```
-
-At this point, the upgrade is complete, and you can open the client.
 
 ## Post-upgrade tasks
 

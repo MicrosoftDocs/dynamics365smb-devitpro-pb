@@ -2,7 +2,7 @@
 title: "Upgrading Version 15, 16, or 17 Base Application to Version 18"
 description: Describes how to upgrade an unmodified Business Central 15, 16, or 17 application to version 18
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/15/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,7 +29,7 @@ The process for upgrading the similar for a single-tenant and multitenant deploy
 
 ## Task 1: Install version 18
 
-1. Download the latest available update for Business Central 2020 (version 18) that is compatible with your current version.
+1. Download the latest available update for Business Central 2021 (version 18) that is compatible with your current version.
 
     For more information, see [[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
 
@@ -75,7 +75,7 @@ For more information, see [Upgrading Permissions Sets and Permissions](upgrade-p
 
     Instead of disabling encryption, you can export the current encryption key, which you'll then import after upgrade. However, we recommend disabling encryption before upgrading.
 
-3. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 16 as an administrator.
+3. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for your current version as an administrator.
 
 4. (Single-tenant only) Uninstall all extensions from the old tenants.
 
@@ -153,9 +153,11 @@ This task runs a technical upgrade on the application database to convert it to 
     Collation           :
     ```
 
+[!INCLUDE[convert_azure_sql_db_timeout](../developer/includes/convert_azure_sql_db_timeout.md)]
+
 ## Task 5: Configure version 18 server
 
-When you installed version 18 in **Task 2**, a version 18 [!INCLUDE[server](../developer/includes/server.md)] instance was created. In this task, you change server configuration settings that are required to complete the upgrade. Some of the changes are only required for version 16 to version 17 upgrade and can be reverted after you complete the upgrade.
+When you installed version 18 in **Task 2**, a version 18 [!INCLUDE[server](../developer/includes/server.md)] instance was created. In this task, you change server configuration settings that are required to complete the upgrade. Some of the changes are only required for upgrade and can be reverted after you complete the upgrade.
 
 1. Set the server instance to connect to the application database.
 
@@ -197,7 +199,7 @@ In this task, you'll publish the extensions. As minimum, you publish the new bas
 
 Publishing an extension adds the extension to the application database that is mounted on the server instance. Once published, it's available for installing on tenants. This task updates internal tables, compiles the components of the extension behind-the-scenes, and builds the necessary metadata objects that are used at runtime.
 
-The steps in this task continue to use the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 16 that you started in the previous task.
+The steps in this task continue to use the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 18 that you started in the previous task.
 
 1. Publish version 18 system symbols extension.
 
@@ -234,7 +236,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
 
 5. Publish the new versions of Microsoft extensions.
 
-    In this step, you publish new versions of Microsoft extensions that were used on your version 16 deployment. You find the extensions in the **Applications** folder of the installation media (DVD).
+    In this step, you publish new versions of Microsoft extensions that were used on your old deployment. You find the extensions in the **Applications** folder of the installation media (DVD).
 
     ```powershell
     Publish-NAVApp -ServerInstance <server instance name> -Path "<path to Microsoft extension>"
@@ -430,7 +432,40 @@ In this task, you install the custom permission sets that you upgraded earlier i
 
 For more information, see [To export and import a permission set](/dynamics365/business-central/ui-define-granular-permissions#to-export-and-import-a-permission-set).
 
+## Task 13: Change application version
 
+This task serves two purposes. It ensures that personalization works as expected after upgrade. It's also useful for support purposes and answering a common question about the application version.  
+
+On the **Help and Support** page in the client, you'll see an application version, such as 17.0.2345.6. For an explanation of the number, see [Version numbers in Business Central](../administration/version-numbers.md). This version isn't updated automatically when you install an update. If you want the version to reflect the version of the update or your own version, you change it manually.
+
+We recommend setting the value to application build number for the version 18 update. You get the number from theYou get the number from the [Released Updates for Microsoft Dynamics 365 Business Central 2021 Release Wave 1 on-premises](https://support.microsoft.com/help/4528706). <!--TODO fix link-->.
+
+1. Run the [Set-NAVApplication cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navapplication):
+
+    ```powershell
+    Set-NAVApplication -ServerInstance <server instance name> -ApplicationVersion <new application version> -Force
+    ```
+
+    For example:
+    
+    ```powershell
+    Set-NAVApplication -ServerInstance BC180 -ApplicationVersion 18.0.38071.0 -Force
+    ```
+
+2. Run the [Sync-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/sync-navtenant) cmdlet to synchronize the tenant with the application database.
+
+    ```powershell  
+    Sync-NAVTenant -ServerInstance <server instance name> -Mode Sync -Tenant <tenant ID>
+    ```
+    
+    With a single-tenant deployment, you can omit the `-Tenant` parameter and value.
+
+3. Run the [Start-NavDataUpgrade](/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade) cmdlet to change the version number:
+
+    ```powershell
+    Start-NAVDataUpgrade -ServerInstance <server instance name> -FunctionExecutionMode Serial -Tenant <tenant ID>
+    ```
+    
 ## Post-upgrade tasks
 
 1. Enable task scheduler on the server instance.
@@ -440,39 +475,6 @@ For more information, see [To export and import a permission set](/dynamics365/b
    For more information, see [Managing Encryption and Encryption Keys](how-to-export-and-import-encryption-keys.md#encryption).
 
    Optionally, if you exported the encryption key instead of disabling encryption earlier, import the encryption key file to enable encryption.
-
-4. Change application version.
-
-    (Optional) This task isn't required for installing the update. However, it might be useful for support purposes and answering a common question about the application version.  
-    
-    On the **Help and Support** page in the client, you'll see an application version, such as 17.0.2345.6. For an explanation of the number, see [Version numbers in Business Central](../administration/version-numbers.md). This version isn't updated automatically when you install an update. If you want the version to reflect the version of the update or your own version, you change it manually.
-    
-    We recommend setting the value to application build number for the version 18 update. You get the number from the [Released Updates for Microsoft Dynamics 365 Business Central 2021 Release Wave 1 on-premises](https://support.microsoft.com/help/4528706). <!--TODO fix link-->
-    
-    1. Run the [Set-NAVApplication cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navapplication):
-    
-    ```powershell
-    Set-NAVApplication -ServerInstance <server instance name> -ApplicationVersion <new application version> -Force
-    ```
-    For example:
-    
-    ```powershell
-    Set-NAVApplication -ServerInstance BC160 -ApplicationVersion 16.0.38071.0 -Force
-    ```
-
-    2. Run the [Sync-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/sync-navtenant) cmdlet to synchronize the tenant with the application database.
-    
-    ```powershell  
-    Sync-NAVTenant -ServerInstance <server instance name> -Mode Sync -Tenant <tenant ID>
-    ```
-    
-    With a single-tenant deployment, you can omit the `-Tenant` parameter and value.
-    
-    3. Run the [Start-NavDataUpgrade](/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade) cmdlet to change the version number:
-    
-    ```powershell
-    Start-NAVDataUpgrade -ServerInstance <server instance name> -FunctionExecutionMode Serial -Tenant <tenant ID> 
-    ```
 
 ## See Also  
 

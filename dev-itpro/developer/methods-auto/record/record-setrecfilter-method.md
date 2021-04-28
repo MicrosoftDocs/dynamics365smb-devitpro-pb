@@ -31,6 +31,28 @@ An instance of the [Record](record-data-type.md) data type.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks  
+
+The key isn't necessarily the primary key, the table view might be set to use a secondary key. All fields in the key as defined on the table are filtered. For more information the key selection, see [SetCurrentKey Method](record-setcurrentkey-method.md).
+
+## Example  
+
+The following example uses the SetRecFilter method to set a filter on the **Customer** table, based a key set by the SetCurrentKey method. The [GetFilters method)](record-getfilters-method.md) retrieves the filters and displays them in a message box. Because **Name** is the only field specified by the SetCurrentKey method, then the first key in the **Customer** table that starts with the field **Name** is used. In this case, for example, it's a secondary key defined as `key(Key7; Name, Address, City)`.
+
+```al
+var
+    CustomerRec: Record Customer;
+    varFilters: Text;
+    Text000: Label 'The filter is set on the fields:  %1';
+begin
+    CustomerRec.SetCurrentKey(Name);
+    CustomerRec.SetRecFilter();
+    varFilters := CustomerRec.GetFilters;
+    Message(Text000, varFilters);
+end;
+```
+  
 ## See Also
 [Record Data Type](record-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  

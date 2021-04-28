@@ -110,6 +110,8 @@ If an action or other code element points to a now removed object, then the guid
 
 [AL Development Environment](devenv-reference-overview.md)  
 [Directives in AL](directives/devenv-directives-in-al.md)  
+[Microsoft Timeline for Deprecating Code in Business Central](devenv-deprecation-timeline.md)  
 [ObsoleteTag Property](properties/devenv-obsoletetag-property.md)  
 [ObsoleteState Property](properties/devenv-obsoletestate-property.md)  
 [ObsoleteReason Property](properties/devenv-obsoletereason-property.md)  
+[Obsolete Attribute](methods/devenv-obsolete-attribute.md)

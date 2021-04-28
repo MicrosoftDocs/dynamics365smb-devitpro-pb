@@ -11,7 +11,9 @@ author: SusanneWindfeldPedersen
 ---
 
 # Enum Properties 
-This topic lists properties that apply to the [Extensible Enums](../devenv-extensible-enums.md).
+This article lists properties that apply to the [Extensible Enums](../devenv-extensible-enums.md).
+
+[!INCLUDE[properties_note](../includes/properties_note.md)]
 
 |Property Name|Applies to|
 |-------------|-----------|  

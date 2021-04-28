@@ -14,7 +14,9 @@ ms.author: solsen
 
 # Control Add-In Properties
 
-The following topic lists properties that apply to the [Control Add-In Object](../devenv-control-addin-object.md).
+This article lists properties that apply to the [Control Add-In Object](../devenv-control-addin-object.md).
+
+[!INCLUDE[properties_note](../includes/properties_note.md)]
 
 |Property Name| Object |
 |-------------|--------|

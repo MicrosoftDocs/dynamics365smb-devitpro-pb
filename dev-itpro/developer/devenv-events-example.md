@@ -43,7 +43,7 @@ pageextension 50100 MyCustomerExt extends "Customer Card"
             var
                 Publisher: Codeunit MyPublishers;
             begin
-                Publisher.OnAddressLineChanged(Address);
+                Publisher.OnAddressLineChanged(Rec.Address);
             end;
         }
     }

@@ -46,7 +46,7 @@ An instance of the [Record](record-data-type.md) data type.
 
 ## Remarks 
 
-You can use SetCurrentKey for selecting a key and sorting When you use SetCurrentKey the following rules apply:  
+You can use SetCurrentKey for selecting a key and sorting. When you use SetCurrentKey the following rules apply:  
 
 - Inactive fields are ignored. Only active keys are scanned.  
 

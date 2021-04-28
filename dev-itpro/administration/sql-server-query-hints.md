@@ -18,7 +18,7 @@ On its own, SQL Server query optimizer will try to select the best execution pla
 |--------|---------------|--|
 |FORCE ORDER|Instructs the query optimizer to preserve the join order that is indicated by the query syntax.<|No|
 |LOOP JOIN|Instructs the query optimizer to use LOOP JOIN for all join operations in the whole query.|No|
-|OPTIMIZE FOR UNKNOWN|Instructs the query optimizer to use statistical data instead of the initial values for all local variables when the query is compiled and optimized, including parameters created with forced parameterization.<br /><br />If you clear the check box (`false`), the OPTIMIZE FOR UNKNOWN hint is used in queries.|Yes|
+|OPTIMIZE FOR UNKNOWN|Instructs the query optimizer to use statistical data instead of the initial values for all local variables when the query is compiled and optimized, including parameters created with forced parameterization.<br /><br />If you clear the check box (`false`), the OPTIMIZE FOR UNKNOWN hint is used in queries.|No|
 
 For more information about configuring the [!INCLUDE[server](../developer/includes/server.md)] instance, see [Configuring Business Central Server](configure-server-instance.md#Database).
 

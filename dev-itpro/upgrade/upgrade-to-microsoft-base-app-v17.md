@@ -2,7 +2,7 @@
 title:  "Upgrading Customized C/AL Application to Microsoft Base Application for version 17" 
 description: Describes how to do an upgrade from a customized Business Central 14 to Microsoft Base Application for version 17
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 04/15/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -310,8 +310,9 @@ You can create the empty extension like any other extension by adding an AL proj
 
 This task runs a technical upgrade on the application database. The task converts the database from the version 14 platform to the version 17 platform. The conversion updates the system tables of the database to the new schema (data structure). It provides the latest platform features and performance enhancements.
 
-1. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 17 as an administrator.
-2. Run the Invoke-NAVApplicationDatabaseConversion cmdlet to start the conversion:
+[!INCLUDE[convert_azure_sql_db](../developer/includes/convert_azure_sql_db.md)]
+2. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 17 as an administrator.
+3. Run the Invoke-NAVApplicationDatabaseConversion cmdlet to start the conversion:
 
     ```powershell
     Invoke-NAVApplicationDatabaseConversion -DatabaseServer <database server name>\<database server instance> -DatabaseName "<database name>"
@@ -327,6 +328,7 @@ This task runs a technical upgrade on the application database. The task convert
     DatabaseLocation    :
     Collation           :
     ```
+[!INCLUDE[convert_azure_sql_db_timeout](../developer/includes/convert_azure_sql_db_timeout.md)]
 
 ## Task 6: Configure version 17 server for DestinationAppsForMigration
 
@@ -418,7 +420,7 @@ In this task, you'll synchronize the tenant's database schema with any schema ch
 
 If you have a multitenant deployment, do these steps for each tenant.
 
-1. (Multitenant only) Mount the tenant to the version 15 server instance.
+1. (Multitenant only) Mount the tenant to the version 17 server instance.
 
     To mount the tenant, use the [Mount-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/mount-navtenant) cmdlet:
     
@@ -615,6 +617,40 @@ Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Cl
 Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Client.WelcomeWizard' -PublicKeyToken 31bf3856ad364e35 -ResourceFile ($AppName = Join-Path $ServicesAddinsFolder 'WelcomeWizard\Microsoft.Dynamics.Nav.Client.WelcomeWizard.zip')
 ```
 
+## Task 17: Change application version
+
+This task serves two purposes. It ensures that personalization works as expected after upgrade. It's also useful for support purposes and answering a common question about the application version.  
+
+On the **Help and Support** page in the client, you'll see an application version, such as 14.0.2345.6. For an explanation of the number, see [Version numbers in Business Central](../administration/version-numbers.md). This version isn't updated automatically when you install an update. If you want the version to reflect the version of the update or your own version, you change it manually.
+
+We recommend setting the value to application build number for the version 17 update. You get the number from the [Released Updates for Microsoft Dynamics 365 Business Central 2020 Release Wave 2 on-premises](https://support.microsoft.com/en-us/help/4549687).
+
+1. Run the [Set-NAVApplication cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navapplication):
+
+    ```powershell
+    Set-NAVApplication -ServerInstance <server instance name> -ApplicationVersion <new application version> -Force
+    ```
+    
+    For example:
+    
+    ```powershell
+    Set-NAVApplication -ServerInstance BC170 -ApplicationVersion 17.0.38071.0 -Force
+    ```
+    
+2. Run the [Sync-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/sync-navtenant) cmdlet to synchronize the tenant with the application database.
+
+    ```powershell  
+    Sync-NAVTenant -ServerInstance <server instance name> -Mode Sync -Tenant <tenant ID>
+    ```
+    
+    With a single-tenant deployment, you can omit the `-Tenant` parameter and value.
+
+3. Run the [Start-NavDataUpgrade](/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade) cmdlet to change the version number:
+
+   ```powershell
+   Start-NAVDataUpgrade -ServerInstance <server instance name> -FunctionExecutionMode Serial -Tenant <tenant ID>
+   ```
+
 ## Post-upgrade tasks
 
 1. Uninstall the table migration extension.
@@ -625,41 +661,8 @@ Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Cl
    For more information, see [Managing Encryption and Encryption Keys](how-to-export-and-import-encryption-keys.md#encryption).
 
    Optionally, if you exported the encryption key instead of disabling encryption earlier, import the encryption key file to enable encryption.
-5. Change application version.
 
-    (Optional) This task isn't required for installing the update. However, it might be useful for support purposes and answering a common question about the application version.  
-
-    On the **Help and Support** page in the client, you'll see an application version, such as 14.0.2345.6. For an explanation of the number, see [Version numbers in Business Central](../administration/version-numbers.md). This version isn't updated automatically when you install an update. If you want the version to reflect the version of the update or your own version, you change it manually.
-
-    We recommend setting the value to application build number for the version 17 update. You get the number from the [Released Updates for Microsoft Dynamics 365 Business Central 2020 Release Wave 2 on-premises](https://support.microsoft.com/en-us/help/4549687).
-
-    1. Run the [Set-NAVApplication cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navapplication):
-
-    ```powershell
-    Set-NAVApplication -ServerInstance <server instance name> -ApplicationVersion <new application version> -Force
-    ```
-
-    For example:
-
-    ```powershell
-    Set-NAVApplication -ServerInstance BC170 -ApplicationVersion 17.0.38071.0 -Force
-    ```
-
-    2. Run the [Sync-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/sync-navtenant) cmdlet to synchronize the tenant with the application database.
-
-    ```powershell  
-    Sync-NAVTenant -ServerInstance <server instance name> -Mode Sync -Tenant <tenant ID>
-    ```
-
-    With a single-tenant deployment, you can omit the `-Tenant` parameter and value.
-
-    3. Run the [Start-NavDataUpgrade](/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade) cmdlet to change the version number:
-
-    ```powershell
-    Start-NAVDataUpgrade -ServerInstance <server instance name> -FunctionExecutionMode Serial -Tenant <tenant ID>
-    ```
-
-6. Grant users permission to the *Open in Excel* and *Edit in Excel* actions.
+5. Grant users permission to the *Open in Excel* and *Edit in Excel* actions.
 
     Version 17 introduces a system permission that protects these two actions. The permission is granted by the system object **6110 Allow Action Export To Excel**. Because of this change, users who had permission to these actions before upgrading, will lose permission. To grant permission again, do one of the following steps:
     
