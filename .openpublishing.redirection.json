@@ -5784,6 +5784,11 @@
     "source_path": "dev-itpro/developer/devenv-symbols.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/devenv-get-started",
     "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/TO_DELETE_triggers/devenv-codeunit-triggers.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
    }
   ]
 }
