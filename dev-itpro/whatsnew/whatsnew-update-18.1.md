@@ -46,7 +46,7 @@ Please note that new customers will automatically get the latest builds of Busin
 Make sure to join the office hours calls around ‘Report Extensibility’ on May 4 and ‘Snapshot debugging’ on May 18. Register and stay tuned for the upcoming calls: https://aka.ms/BCOfficeHours.
 
 **Support for migrating data from earlier on-premises versions of Business Central to 2021 release wave 1 (v.18)**  
-REMEMBER TO INSERT TEXT HERE. 
+With the Business Central cloud migration tool, customers can migrate their data from earlier on-premises versions of the product to their online Business Central environment, running on the latest version. We've added support for customers who are running on Business Central on-premises version 14, 15, 16, or 17 to migrate their data to version 18 of Business Central online. We've implemented the necessary data upgrade logic in the cloud migration tool, so customers don't have to upgrade their older version themselves in order to migrate their data to the latest online release. 
 
 **Business Central Launch Event**  
 You can still watch the 15+ on-demand sessions from the Business Central Launch Event. The sessions revolve around the new Dynamics 365 Business Central features and capabilities — everything from working with dimensions, permissions and entitlements, to product announcements and onboarding customers. Register for free: [aka.ms/BCLE](https://aka.ms/BCLE)
