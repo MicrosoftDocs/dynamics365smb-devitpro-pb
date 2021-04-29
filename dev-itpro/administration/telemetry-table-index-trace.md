@@ -54,7 +54,7 @@ Occurs when an index was added or modified on the base table by key in a table e
 
 <a name="other"></a>**Common custom dimensions**
 
-The following table explains other custom dimensions that are common to all permission traces. 
+The following table explains other custom dimensions that are common to all table index traces. 
 
 |Dimension|Description or value|
 |---------|-----|
