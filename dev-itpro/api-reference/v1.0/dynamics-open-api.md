@@ -60,5 +60,5 @@ To run SwaggerUI locally, node.js can be used to serve the SwaggerUI, by followi
 
 ## See Also 
 
-[Developing Connect Apps for Dynamics 365 Business Central](/dynamics365/business-central/dev-itpro/developer/devenv-develop-connect-apps)  
+[Developing Connect Apps for Dynamics 365 Business Central](../../developer/devenv-develop-connect-apps.md)  
 
