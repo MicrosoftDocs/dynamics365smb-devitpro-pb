@@ -45,15 +45,21 @@ Please note that new customers will automatically get the latest builds of Busin
 
 ## Good to know
 
-**Business Central Office Hours Calls in May**  
-Make sure to join the office hours calls around ‘Report Extensibility’ on May 4 and ‘Snapshot debugging’ on May 18. Register and stay tuned for the upcoming calls: https://aka.ms/BCOfficeHours.
-
 **Support for migrating data from earlier on-premises versions of Business Central to 2021 release wave 1 (v.18)**  
 With the Business Central cloud migration tool, customers can migrate their data from earlier on-premises versions of the product to their online Business Central environment, running on the latest version. We've added support for customers who are running on Business Central on-premises version 14, 15, 16, or 17 to migrate their data to version 18 of Business Central online. We've implemented the necessary data upgrade logic in the cloud migration tool, so customers don't have to upgrade their older version themselves in order to migrate their data to the latest online release. 
+
+**Business Central Office Hours Calls in May**  
+Make sure to join the office hours calls around ‘Report Extensibility’ on May 4 and ‘Snapshot debugging’ on May 18. Register and stay tuned for the upcoming calls: https://aka.ms/BCOfficeHours.
 
 **Business Central Launch Event**  
 You can still watch the 15+ on-demand sessions from the Business Central Launch Event. The sessions revolve around the new Dynamics 365 Business Central features and capabilities — everything from working with dimensions, permissions and entitlements, to product announcements and onboarding customers. Register for free: [aka.ms/BCLE](https://aka.ms/BCLE)
 
-**Basic Authentication**  
-Basic Authentication (Web Service Access Key) removal for Business Central online has been postponed until [April 2022](../upgrade/deprecated-features-w1.md#basic-auth--web-service-access-keys-for-saas). We see that some integrations needs more time to move from Web Service Access Key usage to OAuth. PowerShell samples on how to connect to Business Central is published on [GitHub](https://github.com/microsoft/BCTech/tree/master/samples/PSOAuthBCAccess).
 
+**Updated versions of the Business Central mobile apps are being released to all three stores this month (covering some fixes and improvements):**  
+- Fixed a problem where the Windows UWP desktop/tablet app was sometimes displaying blank screen on restart
+- Fixed a problem when iOS mobile app running on-premises in certain conditions required the user to enter credentials with every login
+- Fixed a problem with iOS mobile app related to failed download when previewing a report
+- Fixed a problem with Android mobile app not being able to install on devices where a GPS module was disabled or missing
+- Fixed connectivity problems with Business Central cloud  
+
+Please download and always use the latest version: [Windows (Microsoft Store)](https://www.microsoft.com/en-ie/p/microsoft-dynamics-365-business-central/9nblggh4ql79?rtc=1&activetab=pivot:overviewtab),  [iOS (Apple's App Store)](https://apps.apple.com/us/app/project-madeira/id1093325047) or [Android (Google's Play Store)](https://play.google.com/store/apps/details?id=com.microsoft.dynamics.ProjectMadeira). Currently recommended versions of these apps are 3.2.x and 3.3.x (or later).
