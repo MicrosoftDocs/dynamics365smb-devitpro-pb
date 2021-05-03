@@ -54,7 +54,7 @@ HTTP/1.1 204 No Content
 ```
 
 ## See also
-[Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 
 [Purchase Invoice Line](../resources/dynamics_purchaseinvoiceline.md)  
 [Get Purchase Invoice Line](../api/dynamics_purchaseinvoiceline_get.md)  

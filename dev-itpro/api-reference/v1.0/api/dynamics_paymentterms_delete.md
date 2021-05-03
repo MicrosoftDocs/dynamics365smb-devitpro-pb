@@ -54,7 +54,7 @@ HTTP/1.1 204 No Content
 ```
 
 ## See also
-[Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 
 [Payment Terms](../resources/dynamics_paymentterms.md)  
 [Get Payment Terms](../api/dynamics_paymentterms_get.md)  

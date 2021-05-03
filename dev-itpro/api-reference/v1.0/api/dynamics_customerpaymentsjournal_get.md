@@ -62,7 +62,7 @@ Here is an example of the response.
 ```
 
 ## See also
-[Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 [Microsoft Graph Reference](../api/dynamics_graph_reference.md)  
 [Error Codes](../dynamics_error_codes.md)  
 [Customer Payments Journal](../resources/dynamics_customerpaymentsjournal.md)  

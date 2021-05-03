@@ -69,7 +69,7 @@ Here is an example of the response.
 ```
 
 ## See also
-[Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 [defaultDimension resource](../resources/dynamics_defaultDimension.md)  
 [Create defaultDimensions](../api/dynamics_defaultdimensions_create.md)  
 [Update defaultDimensions](../api/dynamics_defaultdimensions_update.md)  

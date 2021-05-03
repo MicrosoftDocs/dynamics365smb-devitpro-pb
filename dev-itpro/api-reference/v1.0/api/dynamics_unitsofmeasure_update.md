@@ -73,7 +73,7 @@ Content-type: application/json
 
 
 ## See also
-[Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 
 [Units of Measure](../resources/dynamics_unitsofmeasure.md)  
 [Get Units of Measure](../api/dynamics_unitsofmeasure_get.md)  

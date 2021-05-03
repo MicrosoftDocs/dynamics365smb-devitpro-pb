@@ -55,7 +55,7 @@ PATCH https://{businesscentralPrefix}/api/v1.0/companies(companyId)/items(itemId
 No content.
 
 ## See also
-[Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 [Error Codes](../dynamics_error_codes.md)  
 [Picture](../resources/dynamics_picture.md)  
 [Get Picture](dynamics_picture_get.md)  

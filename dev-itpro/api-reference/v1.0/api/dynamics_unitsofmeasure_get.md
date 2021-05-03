@@ -63,7 +63,7 @@ Here is an example of the response.
 
 
 ## See also
-[Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 
 [Units of Measure](../resources/dynamics_unitsofmeasure.md)  
 [Create Units of Measure](../api/dynamics_create_unitsofmeasure.md)  

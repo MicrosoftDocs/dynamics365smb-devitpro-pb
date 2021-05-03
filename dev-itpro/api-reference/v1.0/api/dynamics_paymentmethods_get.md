@@ -63,7 +63,7 @@ Here is an example of the response.
 
 
 ## See also
-[Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 
 [Payment Methods](../resources/dynamics_paymentmethods.md)  
 [Create Payment Methods](../api/dynamics_create_paymentmethods.md)  

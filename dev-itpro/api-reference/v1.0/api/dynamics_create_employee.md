@@ -106,7 +106,7 @@ Content-type: application/json
 ```
 
 ## See also
-[Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
   
 [Employee](../resources/dynamics_employee.md)  
 [Get Employee](../api/dynamics_employee_get.md)  
