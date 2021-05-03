@@ -1,5 +1,5 @@
 ---
-title: "The AppSourceCop configuration must specify the list of countries/regions targeted by the application"
+title: "A Repeater control used on a List page must be defined at the beginning of the area(Content) section."
 ms.author: solsen
 ms.custom: na
 ms.date: 05/03/2021
@@ -13,14 +13,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# AppSourceCop Rule AS0055
-The AppSourceCop configuration must specify the list of countries/regions targeted by the application
+# UICop Rule AW0010
+A Repeater control used on a List page must be defined at the beginning of the area(Content) section.
 
 ## Description
-The AppSourceCop configuration must specify the list of countries/regions targeted by the application.
+A Repeater control used on a List page must be defined at the beginning of the area(Content) section.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
-[AppSourceCop Analyzer](appsourcecop.md)  
+[UICop Analyzer](uicop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
