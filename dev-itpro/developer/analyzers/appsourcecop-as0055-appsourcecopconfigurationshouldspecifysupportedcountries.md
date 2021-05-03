@@ -1,8 +1,8 @@
 ---
-title: "The AppSourceCop configuration must specify the list of countries/regions targeted by the application"
+title: "The AppSourceCop configuration must specify the list of countries targeted by the application"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/03/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,10 +14,10 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AppSourceCop Rule AS0055
-The AppSourceCop configuration must specify the list of countries/regions targeted by the application
+The AppSourceCop configuration must specify the list of countries targeted by the application
 
 ## Description
-The AppSourceCop configuration must specify the list of countries/regions targeted by the application.
+The AppSourceCop configuration must specify the list of countries targeted by the application.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

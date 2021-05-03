@@ -2,7 +2,7 @@
 title: "AppSourceCop Analyzer"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/03/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -65,8 +65,8 @@ AppSourceCop is an analyzer that enforces rules that must be respected by extens
 |[AS0052](appsourcecop-as0052-applicationmanifestmustspecifyurl.md)|The property 'url' must be set to a valid URL|Extensibility|Error|
 |[AS0053](appsourcecop-as0053-applicationmanifestcompilationtargetmustbecloud.md)|The compilation target of an application must be a value that is allowed in a multi-tenant SaaS environment|Extensibility|Error|
 |[AS0054](appsourcecop-as0054-appsourcecopconfigurationmustspecifyaffixes.md)|The AppSourceCop configuration must specify the set of affixes used by the application|Configuration|Error|
-|[AS0055](appsourcecop-as0055-appsourcecopconfigurationshouldspecifysupportedcountries.md)|The AppSourceCop configuration must specify the list of countries/regions targeted by the application|Configuration|Hidden|
-|[AS0056](appsourcecop-as0056-appsourcecopconfigurationsupportedcountriesmustbevalidcountrycode.md)|The country/region codes specified in the 'supportedCountries' property must be valid ISO 3166-1 alpha-2 codes|Configuration|Warning|
+|[AS0055](appsourcecop-as0055-appsourcecopconfigurationshouldspecifysupportedcountries.md)|The AppSourceCop configuration must specify the list of countries targeted by the application|Configuration|Hidden|
+|[AS0056](appsourcecop-as0056-appsourcecopconfigurationsupportedcountriesmustbevalidcountrycode.md)|The country codes specified in the 'supportedCountries' property must be valid ISO 3166-1 alpha-2 codes|Configuration|Warning|
 |[AS0057](appsourcecop-as0057-translationsnotprovidedforlocale.md)|Translations must be provided for all the locales in which the application will be available|Extensibility|Hidden|
 |[AS0058](appsourcecop-as0058-onlyuseasserterrorintestcodeunits.md)|Only use AssertError in Test Codeunits|Extensibility|Error|
 |[AS0059](appsourcecop-as0059-databasetablesarereadonly.md)|Reserved database tables are read-only in a multi-tenant environment|Extensibility|Error|
@@ -103,8 +103,6 @@ AppSourceCop is an analyzer that enforces rules that must be respected by extens
 |[AS0090](appsourcecop-as0090-referenceableobjectrenamenotallowed.md)|Objects that can be referenced and which have been published must not be renamed.|Upgrade|Error|
 |[AS0091](appsourcecop-as0091-previousversiondependencynotfound.md)|One or more dependencies of the previous version of the extension could not be found.|Upgrade|Error|
 |[AS0092](appsourcecop-as0092-applicationinsightskeymustbeused.md)|The 'applicationInsightsKey' property must specify the AAD instrumentation key.|Configuration|Warning|
-|[AS0093](appsourcecop-as0093-entitlementobjectinappsourcenotallowed.md)|Entitlements cannot be defined in an extension.|Configuration|Error|
-|[AS0094](appsourcecop-as0094-permissionsetsshouldnotbeinxml.md)|Permission Sets should not be defined in XML files.|Configuration|Warning|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
