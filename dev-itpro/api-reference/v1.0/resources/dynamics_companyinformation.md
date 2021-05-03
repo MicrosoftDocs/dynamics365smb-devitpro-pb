@@ -74,4 +74,7 @@ Here is a JSON representation of the companyInformation
 ```
 
 ## See also
-[Working with [!INCLUDE[prod_short](../../../includes/prod_short.md)] in Microsoft Graph](../resources/dynamics_overview.md) 
+
+[Get Company Information](../api/dynamics_companyinformation_get.md)  
+[Update Company Information](../api/dynamics_companyinformation_update.md)  
+

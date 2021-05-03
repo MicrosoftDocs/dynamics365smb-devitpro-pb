@@ -185,4 +185,4 @@ Represents a Line Details complex type in [!INCLUDE[prod_short](../../../include
 ```
 
 ## See also
-[Working with Dynamics 365 Business Central in Microsoft Graph](../resources/dynamics_overview.md)    
+    

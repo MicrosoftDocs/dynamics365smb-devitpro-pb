@@ -2,11 +2,11 @@
 ## [API v2.0 Overview](index.md)
 ## [Enabling the APIs for Dynamics 365 Business Central](enabling-apis-for-dynamics-nav.md)
 ## [Endpoints for the APIs](endpoints-apis-for-dynamics.md)
-## [Working with Webhooks](dynamics_subscriptions.md)
+## [Working with Webhooks](dynamics-subscriptions.md)
 ## [Operational Limits for Business Central Online](/dynamics365/business-central/dev-itpro/administration/operational-limits-online)
 ## [Working with API limits in Dynamics 365 Business Central](dynamics-rate-limits.md)
 <!-- ## [OpenAPI Specification](dynamics-open-api.md) -->
-## [Error Codes](dynamics_error_codes.md)
+## [Error Codes](dynamics-error-codes.md)
 <!-- START>DO_NOT_EDIT -->
 <!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 ## [Account](resources/dynamics_account.md)
