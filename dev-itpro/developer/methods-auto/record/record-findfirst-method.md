@@ -42,7 +42,7 @@ An instance of the [Record](record-data-type.md) data type.
   
  You should only use this method when you explicitly want to find the first record in a table or set. Do not use this method in combination with **Repeat**.. **Until**.  
 
-Calling FindFirst on an empty table from the [OnNewRecord trigger](../../triggers/page/devenv-onnewrecord-page-trigger.md) causes the [!INCLUDE[server](../../includes/server.md)] to throw an exception, and the AL execution stops. However, the client suppresses this error and does not show any error message to the user. Therefore, when using FindFirst inside this trigger, you should add code that conditionally verifies whether a record was found, and if not, notify the user with a message. For example:
+Calling FindFirst on an empty table from the [OnNewRecord trigger](../../triggers-auto/page/devenv-onnewrecord-page-trigger.md) causes the [!INCLUDE[server](../../includes/server.md)] to throw an exception, and the AL execution stops. However, the client suppresses this error and does not show any error message to the user. Therefore, when using FindFirst inside this trigger, you should add code that conditionally verifies whether a record was found, and if not, notify the user with a message. For example:
 
 ```al
 if not MyRecord.FindFirst then

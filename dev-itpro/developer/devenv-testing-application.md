@@ -46,11 +46,11 @@ Test runner codeunits are codeunits that have the [SubType Property](properties/
 
 Test runner codeunits include the following triggers:  
 
--   [OnRun Trigger](triggers/codeunit/devenv-onrun-codeunit-trigger.md) 
+-   [OnRun Trigger](triggers-auto/codeunit/devenv-onrun-codeunit-trigger.md) 
 
--   [OnBeforeTestRun Trigger](triggers/codeunit/devenv-onbeforetestrun-codeunit-trigger.md)  
+-   [OnBeforeTestRun Trigger](triggers-auto/codeunit/devenv-onbeforetestrun-codeunit-trigger.md)  
 
--   [OnAfterTestRun Trigger](triggers/codeunit/devenv-onaftertestrun-codeunit-trigger.md)  
+-   [OnAfterTestRun Trigger](triggers-auto/codeunit/devenv-onaftertestrun-codeunit-trigger.md)  
 
  In the **OnRun** trigger you enter the code to run the codeunits. It runs when you execute the codeunit and before the test methods run. You can use the **OnBeforeTestRun** and the **OnAfterTestRun** triggers to do preprocessing and postprocessing, such as initialization or logging test results.  
 

@@ -121,7 +121,7 @@ After you have a table for holding the Cue data, you create a page that you asso
     Repeat steps 2-4 to add additional Cue groups.
 5. Initialize the Cue fields.  
 
-    You must initialize the Cue fields on the page. To do this, for example, you can add the following AL code to the [OnOpenPage Trigger](triggers/page/devenv-onopenpage-page-trigger.md).     
+    You must initialize the Cue fields on the page. To do this, for example, you can add the following AL code to the [OnOpenPage Trigger](triggers-auto/page/devenv-onopenpage-page-trigger.md).     
 
     ```AL
           RESET;

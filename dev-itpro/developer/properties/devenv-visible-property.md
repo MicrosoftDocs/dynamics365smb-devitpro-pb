@@ -57,7 +57,7 @@ On pages, you use the **Visible** property to show or hide group, part, field, a
 > [!NOTE]  
 > The dynamic options are only possible for group, part, and action controls.  
 
-Using a variable for field and action controls requires that the variable be resolved by the [OnInit Trigger](../triggers/page/devenv-oninit-page-trigger.md) or [OnOpenPage Trigger](../triggers/page/devenv-onopenpage-page-trigger.md).  
+Using a variable for field and action controls requires that the variable be resolved by the [OnInit Trigger](../triggers-auto/page/devenv-oninit-page-trigger.md) or [OnOpenPage Trigger](../triggers-auto/page/devenv-onopenpage-page-trigger.md).  
 
 
 ### UI Customization and Visibility of Controls

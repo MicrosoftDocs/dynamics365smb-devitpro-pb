@@ -40,7 +40,7 @@ An instance of the [TestPage](testpage-data-type.md) data type.
 ## Remarks  
 If *TestPage* is closed or has never been opened, then the method call fails.  
 
-The Last method loops over all records until it sets  the identifies the current record.  For each record, the [OnAfterGetCurrRecord Trigger](../../triggers/page/devenv-onaftergetcurrrecord-page-trigger.md) is executed.  
+The Last method loops over all records until it sets  the identifies the current record.  For each record, the [OnAfterGetCurrRecord Trigger](../../triggers-auto/page/devenv-onaftergetcurrrecord-page-trigger.md) is executed.  
   
 ## Example  
  This example sets the current row to the last customer in the dataset. It requires that you create a TestPage variable named CustomerList with a Subtype of Customer List.  

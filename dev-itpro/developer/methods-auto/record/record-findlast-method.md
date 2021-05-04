@@ -42,7 +42,7 @@ This method should be used instead of Find\('+'\) when you only need the last re
   
 You should only use this method when you explicitly want to find the last record in a table/set. Do not use this method in combination with Repeat...Until. 
 
-Calling FindLast on an empty table from the [OnNewRecord trigger](../../triggers/page/devenv-onnewrecord-page-trigger.md) causes the [!INCLUDE[server](../../includes/server.md)] to throw an exception, and the AL execution stops. However, the client suppresses this error and does not show any error message to the user. Therefore, when using FindLast inside this trigger, you should add code that conditionally verifies whether a record was found, and if not, notify the user with a message. For example:
+Calling FindLast on an empty table from the [OnNewRecord trigger](../../triggers-auto/page/devenv-onnewrecord-page-trigger.md) causes the [!INCLUDE[server](../../includes/server.md)] to throw an exception, and the AL execution stops. However, the client suppresses this error and does not show any error message to the user. Therefore, when using FindLast inside this trigger, you should add code that conditionally verifies whether a record was found, and if not, notify the user with a message. For example:
 
 ```al
 if not MyRecord.FindLast then
