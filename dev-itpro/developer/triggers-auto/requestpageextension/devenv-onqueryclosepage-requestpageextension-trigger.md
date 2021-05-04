@@ -49,7 +49,7 @@ The CloseAction chosen by the user; usually OK or Cancel.
 > [!IMPORTANT]  
 > The trigger is only invoked when the page is hosted in a modal popup window \(MPO\).  
 
-If the page that is closing and all its child pages return **true** in the OnQueryClosePage trigger, then the [OnClosePage Trigger](devenv-onclosepage-page-trigger.md) is called for all child pages and then for the parent page.  
+If the page that is closing and all its child pages return **true** in the OnQueryClosePage trigger, then the [OnClosePage Trigger](../page/devenv-onclosepage-page-trigger.md) is called for all child pages and then for the parent page.  
 
 If an error occurs in the OnQueryClosePage trigger or it returns **false**, then the page is not closed.  
 

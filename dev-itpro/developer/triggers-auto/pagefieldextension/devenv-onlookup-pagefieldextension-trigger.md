@@ -61,7 +61,7 @@ If an error occurs in the trigger code, the lookup is canceled.
 You can use this trigger to write to the database.  
 
 > [!NOTE]  
-> If you have defined an `OnLookup` trigger, the [OnAfterLookup Trigger](devenv-onafterlookup-pagefield-trigger.md) will not be fired.
+> If you have defined an `OnLookup` trigger, the [OnAfterLookup Trigger](../pagefield/devenv-onafterlookup-pagefield-trigger.md) will not be fired.
 
 
 > [!NOTE]  
