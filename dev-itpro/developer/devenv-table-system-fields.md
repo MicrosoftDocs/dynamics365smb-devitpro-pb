@@ -104,7 +104,7 @@ At runtime, the data audit fields have the following characteristics and behavio
 
 The platform will automatically generate and assign values according to the following triggers:
 
-- After all [OnBeforeInsert](triggers-auto/tableextension/devenv-onbeforeinsert-tableextension-trigger.md) and [OnBeforeModify](triggers/tableextension/devenv-onbeforemodifytableextension-trigger.md) triggers are run
+- After all [OnBeforeInsert](triggers-auto/tableextension/devenv-onbeforeinsert-tableextension-trigger.md) and [OnBeforeModify](triggers-auto/tableextension/devenv-onbeforemodify-tableextension-trigger.md) triggers are run
 - After the [OnInsert](triggers-auto/tableextension/devenv-oninsert-tableextension-trigger.md) and [OnModify](triggers-auto/tableextension/devenv-onmodify-tableextension-trigger.md) triggers are run
 - Before all [OnAfterInsert](triggers-auto/tableextension/devenv-onafterinsert-tableextension-trigger.md) and [OnAfterModify](triggers-auto/tableextension/devenv-onaftermodify-tableextension-trigger.md) triggers are run
 
