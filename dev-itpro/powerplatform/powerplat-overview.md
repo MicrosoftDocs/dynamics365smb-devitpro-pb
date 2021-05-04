@@ -48,7 +48,6 @@ There are known limitations with [!INCLUDE[prod_short](../developer/includes/pro
 
 - Flows are not triggered for virtual tables. Currently, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] has no way to signal [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] about data change events.
 - Virtual tables cannot be used in Charts. [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]s does not support virtual tables being using in Charts.
-- Relations between native and virtual tables. This is currently a limitation of the **Preview** version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] virtual tables solution.
 - Virtual tables cannot be customized on [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], for example, adding new columns. All modifications to virtual tables must happen in the API exposed on [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. But custom APIs can be developed and consumed as virtual tables.  
 - Attachment and Images/Pictures are not supported for virtual tables.
 - BLOB to multiline support is not supported in the preview.
@@ -56,7 +55,7 @@ There are known limitations with [!INCLUDE[prod_short](../developer/includes/pro
   * The following predicates are not supported: **Does Not Equal**, **Does Not Contain**, **Does Not Begin With**, **Does Not End With**, **Does Not Contain Data**, and **Contains Data**.
   * Combining **And** and **Or** groups across columns.
   * Filtering on related tables.
-- PowerApp Portals are not supported in current preview.
+- PowerApp Portals are not supported with Virtual Tables in current preview. 
 ## See Also
 
 [Table Modeling](powerplat-entity-modeling.md)  
