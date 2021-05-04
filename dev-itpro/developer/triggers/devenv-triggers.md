@@ -1,7 +1,9 @@
 ---
 title: "Triggers Overview"
+description: "Triggers in AL for Business Central."
+ms.author: solsen
 ms.custom: na
-ms.date: 04/29/2021
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,9 +14,15 @@ author: SusanneWindfeldPedersen
 
 # Triggers Overview
 
-This section describes the triggers that are available to developers in [!INCLUDE [prod_short](../../includes/prod_short.md)]. Triggers activate a method when a certain event occurs. When AL methods are run as a result of a predefined event on either an object or a control, the event triggers the method. Together the event and method make a trigger. Use the table of contents to scan the triggers, or use **Filter by title** to find a trigger if you know its name.
+The following sections describe the triggers that are available for the different AL objects:  
 
-## See Also
+- [Table and Field Triggers](devenv-table-and-field-triggers.md)  
+- [Page and Action Triggers](devenv-page-and-action-triggers.md)  
+- [Codeunit Triggers](devenv-codeunit-triggers.md)  
+- [Report and Data Item Triggers](devenv-report-and-data-item-triggers.md)  
+- [XMLport Triggers](devenv-xmlport-triggers.md)  
+- [Query Triggers](devenv-query-triggers.md)  
 
-[Methods](../methods-auto/library.md)  
+## See Also  
+[AL Method Reference](../methods-auto/library.md)  
 [Properties](../properties/devenv-properties.md)
