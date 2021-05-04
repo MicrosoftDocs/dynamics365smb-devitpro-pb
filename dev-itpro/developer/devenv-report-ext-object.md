@@ -31,7 +31,7 @@ For a report to be extended, the `Extensible` property must be set to `true`. Th
 
 ## Report extension layout
 
-The layout in a report extension will not automatically be used when the report extension is deployed. To use the report extension layout, in [!INCLUDE [prod_short](../includes/prod_short.md)], go to the **Report Layout Selection** page to choose to use the new layout for the report in question by choosing it from the **Custom Layout Description** drop-down box.
+A report extension can have only one layout defined, this means one RDLC report layout and/or one Word layout. The layout in a report extension will **not automatically** be used when the report extension is deployed. To use the report extension layout, in [!INCLUDE [prod_short](../includes/prod_short.md)], go to the **Report Layout Selection** page to choose to use the new layout for the report in question by choosing it from the **Custom Layout Description** drop-down box.
 
 ## Snippet support
 
