@@ -2,7 +2,7 @@
 title: "Record Data Type"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -76,7 +76,7 @@ The following methods are available on instances of the Record data type.
 |[LoadFields(Any,...)](record-loadfields-method.md)|Accesses the table's corresponding data source and loads the values of the specified fields on the record.|
 |[LockTable([Boolean] [, Boolean])](record-locktable-method.md)|Locks a table to protect it from write transactions that conflict with each other.|
 |[Mark([Boolean])](record-mark-method.md)|Marks a record. You can also use this method to determine whether a record is marked.|
-|[MarkedOnly([Boolean])](record-markedonly-method.md)|Activates a special filter. After you use this function, your view of the table includes only records marked by this function.|
+|[MarkedOnly([Boolean])](record-markedonly-method.md)|Activates a special filter. After you use this function, your view of the table includes only records marked by the Mark (Record) method.|
 |[Modify([Boolean])](record-modify-method.md)|Modifies a record in a table.|
 |[ModifyAll(Any, Any [, Boolean])](record-modifyall-method.md)|Modifies a field in all records within a range that you specify.|
 |[Next([Integer])](record-next-method.md)|Steps through a specified number of records and retrieves a record.|

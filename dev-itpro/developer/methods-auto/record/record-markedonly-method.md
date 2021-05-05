@@ -2,7 +2,7 @@
 title: "Record.MarkedOnly Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,7 +16,7 @@ author: SusanneWindfeldPedersen
 # Record.MarkedOnly Method
 > **Version**: _Available or changed with runtime version 1.0._
 
-Activates a special filter. After you use this function, your view of the table includes only records marked by this function.
+Activates a special filter. After you use this function, your view of the table includes only records marked by the Mark (Record) method.
 
 
 ## Syntax
