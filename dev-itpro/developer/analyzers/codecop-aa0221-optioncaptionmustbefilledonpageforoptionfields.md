@@ -1,8 +1,8 @@
 ---
-title: "You must specify a OptionCaption property for all fields which source expressions is not a table field."
+title: "CodeCop Rule AA0221"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

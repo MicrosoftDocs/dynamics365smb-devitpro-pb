@@ -1,8 +1,8 @@
 ---
-title: "The Web client does not support About properties in certain contexts."
+title: "UICop Rule AW0012"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

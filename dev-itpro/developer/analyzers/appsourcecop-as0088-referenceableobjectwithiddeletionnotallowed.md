@@ -1,8 +1,8 @@
 ---
-title: "Objects with an ID that can be referenced and which have been published must not be deleted."
+title: "AppSourceCop Rule AS0088"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
