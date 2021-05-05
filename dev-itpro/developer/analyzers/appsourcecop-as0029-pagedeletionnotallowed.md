@@ -1,8 +1,8 @@
 ---
-title: "Pages and PageExtensions that have been published must not be deleted, since dependent extensions may break"
+title: "AppSourceCop Rule AS0029"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

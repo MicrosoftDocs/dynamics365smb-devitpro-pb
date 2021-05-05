@@ -1,8 +1,8 @@
 ---
-title: "The ObsoleteTag property and the Tag in the Obsolete attribute must be set to the next release version."
+title: "AppSourceCop Rule AS0072"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
