@@ -1,6 +1,6 @@
 ---
 title: "Report Extension Object"
-description: "Reports are used to print or display information from a database."
+description: "The report extension object in AL for Business Central allows to create an extension of an existing report."
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 04/01/2021
