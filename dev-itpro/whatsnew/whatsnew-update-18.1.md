@@ -52,7 +52,7 @@ With the Business Central cloud migration tool, customers can migrate their data
 Make sure to join the office hours calls around ‘Report Extensibility’ on May 4 and ‘Snapshot debugging’ on May 18. Register and stay tuned for the upcoming calls: https://aka.ms/BCOfficeHours.
 
 **Business Central Launch Event**  
-You can still watch the 15+ on-demand sessions from the Business Central Launch Event. The sessions revolve around the new Dynamics 365 Business Central features and capabilities — everything from working with dimensions, permissions and entitlements, to product announcements and onboarding customers. Register for free: [aka.ms/BCLE](https://aka.ms/BCLE)
+You can still watch the 15+ on-demand sessions from the Business Central Launch Event. The sessions revolve around the new Dynamics 365 Business Central features and capabilities — everything from working with dimensions, permissions and entitlements, to product announcements and onboarding customers. Register for free: [aka.ms/BCLE](https://aka.ms/BCLE).
 
 
 **Updated versions of the Business Central mobile apps are being released to all three stores this month (covering some fixes and improvements):**  
