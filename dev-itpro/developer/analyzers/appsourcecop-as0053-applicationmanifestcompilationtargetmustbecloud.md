@@ -1,8 +1,8 @@
 ---
-title: "The compilation target of an application must be a value that is allowed in a multi-tenant SaaS environment"
+title: "AppSourceCop Rule AS0053"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
