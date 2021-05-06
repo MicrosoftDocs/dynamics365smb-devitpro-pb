@@ -61,7 +61,7 @@ To expose data in an API page, the first thing needed is a source table. For the
             }
             field(3; "Country"; Text[100])
             {
-                Caption = 'Brand Id';
+                Caption = 'Country';
             }
         }
 

@@ -1,5 +1,5 @@
 ---
-title: Get permissionSet | Microsoft Docs
+title: Get permissionSet
 description: Gets a permission set object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

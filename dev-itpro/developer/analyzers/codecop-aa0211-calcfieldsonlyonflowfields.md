@@ -1,8 +1,8 @@
 ---
-title: "Avoids a runtime error from using CalcFields on a field that is not a FlowField or a field of type Blob."
+title: "CodeCop Rule AA0211"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

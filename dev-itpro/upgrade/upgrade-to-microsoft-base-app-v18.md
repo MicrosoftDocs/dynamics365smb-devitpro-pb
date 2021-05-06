@@ -575,7 +575,7 @@ Start-NAVAppDataUpgrade -ServerInstance <server instance> -Name "<table migratio
 
 ## Task 16: Clean sync and unpublish table migration extensions
 
-This step removes the temporary tables included in this table migration extensions from the database, and unpublishes both versions of the extension. This step is done to avoid duplicate-object conflicts when upgrading the System and Base applications in the next task. 
+This step removes the temporary tables included in the table migration extensions from the database, and unpublishes both versions of the extension. This step is done to avoid duplicate-object conflicts when upgrading the System and Base applications in the next task. 
 
 1. Uninstall the second version of the table migration extension.
 

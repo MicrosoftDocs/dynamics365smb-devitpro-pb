@@ -20,9 +20,10 @@ The following tables list the IDs of [!INCLUDE[prod_short](../developer/includes
 | Event ID | Area | Message |
 |----------|-------------|-----------------|
 |AL0000CTV|Email|[Email sent successfully](telemetry-email-trace.md#success)|
-| AL0000CTE | Field monitoring  | [Sensitive field value has changed: {alfieldCaption} in table {altableCaption}](telemetry-field-monitoring-trace.md#changed) |
+| AL0000CTE | Field monitoring  | [Sensitive field value has changed: {alfieldCaption} ({alFieldNumber}) in table {altableCaption} ({alTableNumber})](telemetry-field-monitoring-trace.md#changed) |
 |AL0000CTP|Email|[Failed to send email](telemetry-email-trace.md#failed)|
 | AL0000DD3 | Field monitoring | [Sensitive field monitor status has changed to {almonitorStatus}](telemetry-field-monitoring-trace.md#status) |
+|AL0000EMW|Field monitoring |[Sensitive field added to or removed from monitor: {alfieldCaption} ({alFieldNumber}) in table {alTableCaption} ({alTableNumber})](telemetry-field-monitoring-trace.md#added)|
 |AL0000E2A|Permissions|[User-defined permission set added: {alPermissionSetId}](telemetry-permission-changes-trace.md#setadded)|
 |AL0000E2B|Permissions|[User-defined permission set removed: {alPermissionSetId}](telemetry-permission-changes-trace.md#setremoved)|
 |AL0000E28 |Permissions|[Permission set link added: {alSourcePermissionSetId} -> {alLinkedPermissionSetId}](telemetry-permission-changes-trace.md#linkadded)|

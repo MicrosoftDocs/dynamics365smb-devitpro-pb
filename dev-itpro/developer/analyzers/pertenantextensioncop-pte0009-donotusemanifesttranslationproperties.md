@@ -1,8 +1,8 @@
 ---
-title: "This app.json property must not be used for per-tenant extensions."
+title: "PerTenantExtensionCop Rule PTE0009"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

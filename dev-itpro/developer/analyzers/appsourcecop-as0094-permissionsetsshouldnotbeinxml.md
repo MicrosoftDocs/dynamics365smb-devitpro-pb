@@ -1,8 +1,8 @@
 ---
-title: "Permission Sets should not be defined in XML files."
+title: "AppSourceCop Rule AS0094"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,7 +18,6 @@ Permission Sets should not be defined in XML files.
 
 ## Description
 Permission sets should not be defined in XML. Instead, use the dedicated AL object for 'PermissionSet'.
-
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

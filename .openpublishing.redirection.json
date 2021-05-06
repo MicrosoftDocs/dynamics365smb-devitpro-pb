@@ -6174,6 +6174,11 @@
     "source_path": "dev-itpro/developer/devenv-xmlport-triggers.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
     "redirect_document_id": false
+  },
+  { 
+   "source_path": "dev-itpro/developer/properties/devenv-field-no.-property.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/properties/devenv-properties",
+    "redirect_document_id": false
    }
   ]
 }
