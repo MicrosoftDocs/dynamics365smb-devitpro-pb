@@ -5811,11 +5811,6 @@
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/devenv-onafterassignvariable-trigger.md",
-    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
-    "redirect_document_id": false
-   },
-   { 
     "source_path": "dev-itpro/developer/devenv-onafterdelete-trigger.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
     "redirect_document_id": false
