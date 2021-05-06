@@ -23,8 +23,10 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 
 |Country/Region|Localized by|Availability|Environment Country in Tenant Admin Center|Azure Region|
 |-----------|---------|------------|-----------|---------|
+|Algeria|Partner|Planned, July 2021|||
 |Australia|Microsoft|Available|AU|Australia East|
 |Austria|Microsoft|Available|AT|West Europe, Netherlands|
+|Bangladesh|Partner|Planned, July 2021|||
 |Belgium|Microsoft|Available|BE|West Europe, Netherlands|
 |Brazil|Partner|Available|BR|Brazil South|
 |Canada|Microsoft|Available|CA|Canada Central|
@@ -32,6 +34,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Croatia|Partner|Available|HR|West Europe, Netherlands|
 |Czechia|Microsoft|Available|CZ|West Europe, Netherlands|
 |Denmark|Microsoft|Available|DK|North Europe, Ireland|
+|Egypt|Partner|Planned, July 2021|||
 |Estonia|Partner|Available|EE|North Europe, Ireland|
 |Faroe Islands (Denmark)|Microsoft|Available|DK|North Europe, Ireland|
 |Finland|Microsoft|Available|FI|North Europe, Ireland|
@@ -47,29 +50,39 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |India|Microsoft|Available|IN|Central India|
 |Italy|Microsoft|Available|IT|West Europe, Netherlands|
 |Japan|Partner|Available|JP|Southeast Asia, Singapore|
+|Kenya|Partner|Planned, July 2021|||
 |Latvia|Partner|Available|LV|North Europe, Ireland|
+|Lebanon|Partner|Planned, July 2021|||
 |Lithuania|Partner|Available|LT|North Europe, Ireland|
+|Luxembourg|Partner|Planned, July 2021|||
 |Malaysia|Partner|Available|MY|Southeast Asia, Singapore|
+|Malta|Partner|Planned, July 2021|||
 |Mexico|Microsoft|Available|MX|South Central US|
+|Morocco|Partner|Planned, July 2021|||
 |Netherlands|Microsoft|Available|NL|West Europe, Netherlands|
 |New Zealand|Microsoft|Available|NZ|Australia East|
+|Nigeria|Partner|Planned, July 2021|||
 |Norway|Microsoft|Available|NO|North Europe, Ireland|
 |Peru|Partner|Available|PE|Brazil South|
 |Philippines|Partner|Available|PH|Southeast Asia, Singapore|
 |Poland|Partner|Available|PL|West Europe, Netherlands|
 |Portugal|Partner|Available|PT|West Europe, Netherlands|
+|Qatar|Partner|Planned, July 2021|||
 |Romania|Partner|Available|RO|West Europe, Netherlands|
 |Russia **(on-premises only)**|Microsoft|Available|(Not listed)|N/A|
+|Saudi Arabia|Partner|Planned, July 2021|||
 |Serbia|Partner|Available|RS|West Europe, Netherlands|
 |Singapore|Partner|Available|SG|Southeast Asia, Singapore|
 |Slovenia|Partner|Available|SI|West Europe, Netherlands|
 |South Africa|Partner|Available|ZA|South Africa North|
 |South Korea|Partner|Available|KR|Southeast Asia, Singapore|
 |Spain|Microsoft|Available|ES|West Europe, Netherlands|
+|Sri Lanka|Partner|Planned, July 2021|||
 |Sweden|Microsoft|Available|SE|North Europe, Ireland|
 |Switzerland|Microsoft|Available|CH|West Europe, Netherlands|
 |Taiwan|Partner|Available|TW|Southeast Asia, Singapore|
 |Thailand|Partner|Available|TH|Southeast Asia, Singapore|
+|Tunisia|Partner|Planned, July 2021|||
 |Turkey|Partner|Available|TR|West Europe, Netherlands|
 |United Arab Emirates|Partner|Available|AE|UAE North|
 |United Kingdom|Microsoft|Available|GB|UK West|
