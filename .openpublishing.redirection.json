@@ -5891,11 +5891,6 @@
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/devenv-onassistedit-trigger.md",
-    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
-    "redirect_document_id": false
-   },
-   { 
     "source_path": "dev-itpro/developer/devenv-onbeforeinsert-trigger.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
     "redirect_document_id": false
