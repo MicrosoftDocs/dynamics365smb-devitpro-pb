@@ -1,8 +1,8 @@
 ---
-title: "The previous version of the extension could not be found."
+title: "AppSourceCop Rule AS0003"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
