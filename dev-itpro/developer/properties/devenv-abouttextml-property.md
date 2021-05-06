@@ -38,6 +38,7 @@ Accepts a plain text value. Markdown or any similar formatting are treated as li
 ```al
 AboutTextML = ENU = 'Sales invoices appear in this list until they are finalized and posted. After an invoice is posted, find it again in the Posted Sales Invoices list.', DAN = 'Salgsfakturaer vises i denne liste indtil de er posteret. Når en faktura er posteret, kan den findes igen i listen over posterede salgsfakturaer.';
 ```
+
 ## Remarks 
 
 For more information, see the [AboutText Property](devenv-abouttext-property.md).

@@ -35,6 +35,10 @@ Sets the title of the entity used in the About box for teaching tips in the UI.
 AboutTitleML = ENU = 'About sales invoices', DAN = 'Om salgsfakturaer';
 ```
 
+## Remarks
+
+For more information, see the [AboutTitle Property](devenv-abouttitle-property.md).
+
 ## See Also
 
 [Getting Started with AL](../devenv-get-started.md)  
