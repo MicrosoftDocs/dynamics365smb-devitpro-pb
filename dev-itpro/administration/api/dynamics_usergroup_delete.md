@@ -1,5 +1,5 @@
 ---
-title: Delete userGroup | Microsoft Docs
+title: Delete userGroup
 description: Deletes a user group object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"
@@ -59,5 +59,5 @@ HTTP/1.1 204 No Content
 
 ## See Also
 
-[Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  
+[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)  
 [userGroup](../resources/dynamics_usergroup.md)  
