@@ -21,60 +21,60 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 
 ## Countries and regions
 
-|Country/Region|Localized by|Availability|Environment Country in Tenant Admin Center|
-|-----------|---------|------------|-----------|
-|Australia|Microsoft|Available|AU|
-|Austria|Microsoft|Available|AT|
-|Belgium|Microsoft|Available|BE|
-|Brazil|Partner|Available|BR|
-|Canada|Microsoft|Available|CA|
-|Colombia|Partner|Available|CO|
-|Croatia|Partner|Available|HR|
-|Czechia|Microsoft|Available|CZ|
-|Denmark|Microsoft|Available|DK|
-|Estonia|Partner|Available|EE|
+|Country/Region|Localized by|Availability|Environment Country in Tenant Admin Center|Azure Region|
+|-----------|---------|------------|-----------|---------|
+|Australia|Microsoft|Available|AU|Australia East|
+|Austria|Microsoft|Available|AT|West Europe, Netherlands|
+|Belgium|Microsoft|Available|BE|West Europe, Netherlands|
+|Brazil|Partner|Available|BR|Brazil South|
+|Canada|Microsoft|Available|CA|Canada Central|
+|Colombia|Partner|Available|CO|Brazil South|
+|Croatia|Partner|Available|HR|West Europe, Netherlands|
+|Czechia|Microsoft|Available|CZ|West Europe, Netherlands|
+|Denmark|Microsoft|Available|DK|North Europe, Ireland|
+|Estonia|Partner|Available|EE|North Europe, Ireland|
 |Faroe Islands (Denmark)|Microsoft|Available|DK|
-|Finland|Microsoft|Available|FI|
-|France|Microsoft|Available|FR|
-|Germany|Microsoft|Available|DE|
-|Greece|Partner|Available|GR|
-|Greenland (Denmark)|Microsoft|Available|DK|
-|Hong Kong SAR|Partner|Available|HK|
-|Hungary|Partner|Available|HU|
-|Iceland|Microsoft|Available|IS|
-|Ireland|Partner|Available|IE|
-|Indonesia|Partner|Available|ID|
-|India|Microsoft|Available|IN|
-|Italy|Microsoft|Available|IT|
-|Japan|Partner|Available|JP|
-|Latvia|Partner|Available|LV|
-|Lithuania|Partner|Available|LT|
-|Malaysia|Partner|Available|MY|
-|Mexico|Microsoft|Available|MX|
-|Netherlands|Microsoft|Available|NL|
-|New Zealand|Microsoft|Available|NZ|
-|Norway|Microsoft|Available|NO|
-|Peru|Partner|Available|PE|
-|Philippines|Partner|Available|PH|
-|Poland|Partner|Available|PL|
-|Portugal|Partner|Available|PT|
-|Romania|Partner|Available|RO|
+|Finland|Microsoft|Available|FI|North Europe, Ireland|
+|France|Microsoft|Available|FR|France Central|
+|Germany|Microsoft|Available|DE|Germany West Central|
+|Greece|Partner|Available|GR|West Europe, Netherlands|
+|Greenland (Denmark)|Microsoft|Available|DK|West Europe, Netherlands|
+|Hong Kong SAR|Partner|Available|HK|Southeast Asia, Singapore|
+|Hungary|Partner|Available|HU|West Europe, Netherlands|
+|Iceland|Microsoft|Available|IS|North Europe, Ireland|
+|Ireland|Partner|Available|IE|North Europe, Ireland|
+|Indonesia|Partner|Available|ID|Southeast Asia, Singapore|
+|India|Microsoft|Available|IN|Central India|
+|Italy|Microsoft|Available|IT|West Europe, Netherlands|
+|Japan|Partner|Available|JP|Southeast Asia, Singapore|
+|Latvia|Partner|Available|LV|North Europe, Ireland|
+|Lithuania|Partner|Available|LT|North Europe, Ireland|
+|Malaysia|Partner|Available|MY|Southeast Asia, Singapore|
+|Mexico|Microsoft|Available|MX|South Central US|
+|Netherlands|Microsoft|Available|NL|West Europe, Netherlands|
+|New Zealand|Microsoft|Available|NZ|Australia East|
+|Norway|Microsoft|Available|NO|North Europe, Ireland|
+|Peru|Partner|Available|PE|Brazil South|
+|Philippines|Partner|Available|PH|Southeast Asia, Singapore|
+|Poland|Partner|Available|PL|West Europe, Netherlands|
+|Portugal|Partner|Available|PT|West Europe, Netherlands|
+|Romania|Partner|Available|RO|West Europe, Netherlands|
 |Russia **(on-premises only)**|Microsoft|Available|(Not listed)|
-|Serbia|Partner|Available|RS|
-|Singapore|Partner|Available|SG|
-|Slovenia|Partner|Available|SI|
-|South Africa|Partner|Available|ZA|
-|South Korea|Partner|Available|KR|
-|Spain|Microsoft|Available|ES|
-|Sweden|Microsoft|Available|SE|
-|Switzerland|Microsoft|Available|CH|
-|Taiwan|Partner|Available|TW|
-|Thailand|Partner|Available|TH|
-|Turkey|Partner|Available|TR|
-|United Arab Emirates|Partner|Available|AE|
-|United Kingdom|Microsoft|Available|GB|
-|United States|Microsoft|Available|US|
-|Vietnam|Partner|Available|VN|
+|Serbia|Partner|Available|RS|West Europe, Netherlands|
+|Singapore|Partner|Available|SG|Southeast Asia, Singapore|
+|Slovenia|Partner|Available|SI|West Europe, Netherlands|
+|South Africa|Partner|Available|ZA|South Africa North|
+|South Korea|Partner|Available|KR|Southeast Asia, Singapore|
+|Spain|Microsoft|Available|ES|West Europe, Netherlands|
+|Sweden|Microsoft|Available|SE|North Europe, Ireland|
+|Switzerland|Microsoft|Available|CH|West Europe, Netherlands|
+|Taiwan|Partner|Available|TW|Southeast Asia, Singapore|
+|Thailand|Partner|Available|TH|Southeast Asia, Singapore|
+|Turkey|Partner|Available|TR|West Europe, Netherlands|
+|United Arab Emirates|Partner|Available|AE|UAE North|
+|United Kingdom|Microsoft|Available|GB|UK West|
+|United States|Microsoft|Available|US|East US|
+|Vietnam|Partner|Available|VN|Southeast Asia, Singapore|
 
 ## Important information regarding planned availability
 
