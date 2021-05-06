@@ -71,3 +71,5 @@ AboutText = 'Sales invoices appear in this list until they are finalized and pos
 
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
+[AboutTitle property](devenv-abouttitle-property.md)  
+[AboutTextMl property](devenv-abouttextml-property.md)
