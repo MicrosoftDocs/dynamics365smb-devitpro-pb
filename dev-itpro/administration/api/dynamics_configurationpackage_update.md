@@ -1,5 +1,5 @@
 ---
-title: Update configurationPackage | Microsoft Docs
+title: Update configurationPackage
 description: Updates a  configuration package object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"
