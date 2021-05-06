@@ -2,7 +2,7 @@
 title: "AboutText Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/06/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -33,12 +33,6 @@ Sets the text of the entity used in the About box for teaching tips in the UI
 
 Accepts a plain text value. Markdown or any similar formatting are treated as literals.
 
-## Syntax
-
-```al
-AboutText = 'This text shows up as a teaching tip in the UI.';
-```
-
 ## Remarks
 
 - When setting this property, you must also set the [AboutTitle property](devenv-abouttitle-property.md). Both About properties must be specified for the teaching tip to appear.
@@ -53,7 +47,25 @@ AboutText = 'This text shows up as a teaching tip in the UI.';
   - The control teaching tip is displayed for actions and action groups on the primary page. It is not displayed for other uses of actions, such as actions on page parts, action tiles, actions displayed in the footer of a `NavigatePage`, RoleCenter navigation menus, or actions displayed in the menu for a record in a list.
   - If the page object is a part that is embedded on the hosting page, the control teaching tip becomes part of the tour on the hosting page. If the part is hosted as a factbox or on a Role Center, then the teaching tip is not displayed. 
 
-- This property is ignored on Request Pages 
+> [!NOTE]  
+> This property is ignored on Request pages, as reports are not yet supported.
+
+For more information about designing teaching tips and tours, see [Teaching tips and in-app tours for onboarding users](../administration/onboarding-teaching-tips-tours.md). 
+
+## Example
+
+```al
+AboutText = 'Sales invoices appear in this list until they are finalized and posted. After an invoice is posted, find it again in the Posted Sales Invoices list.';
+
+```
+
+## Extending page objects
+
+[Page Extension objects](../devenv-page-ext-object.md) and [Page Customization objects](../devenv-page-customization-object.md) can modify teaching tips defined by the source object:  
+
+- To add a teaching tip to a page or control that does not currently have a teaching tip, set the `AboutText` and `AboutTitle` properties. 
+- To change the `AboutText` for a page or control that already has a teaching tip defined in the source object, set the `AboutText` property. 
+- To hide a teaching tip for a page or control in the source object, set the About properties to an empty string. 
 
 ## See Also
 
