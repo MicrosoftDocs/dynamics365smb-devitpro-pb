@@ -29,12 +29,14 @@ Sets the title of the entity used in the About box for teaching tips in the UI.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Syntax
+## Example
 
 ```al
-AboutTitle = 'This shows up as the title of the teaching tip in the UI';
+AboutTitle = 'About sales invoices'; 
 ```
 
 ## See Also  
+
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
+[AboutText Property](devenv-abouttext-property.md)

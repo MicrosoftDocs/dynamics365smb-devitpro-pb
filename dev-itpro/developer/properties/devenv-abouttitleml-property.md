@@ -32,10 +32,11 @@ Sets the title of the entity used in the About box for teaching tips in the UI.
 ## Syntax
 
 ```al
-AboutTitleML = ENU = 'The title of the teaching tip in the UI', DAN = 'Titlen på læringstippet på brugergrænsefladen';
+AboutTitleML = ENU = 'About sales invoices', DAN = 'Om salgsfakturaer';
 ```
 
 ## See Also
 
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
+[AboutTextMl Property](devenv-abouttextml-property.md)  
