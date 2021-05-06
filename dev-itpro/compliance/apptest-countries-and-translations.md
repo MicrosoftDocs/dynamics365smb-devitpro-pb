@@ -33,7 +33,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Czechia|Microsoft|Available|CZ|West Europe, Netherlands|
 |Denmark|Microsoft|Available|DK|North Europe, Ireland|
 |Estonia|Partner|Available|EE|North Europe, Ireland|
-|Faroe Islands (Denmark)|Microsoft|Available|DK|
+|Faroe Islands (Denmark)|Microsoft|Available|DK|North Europe, Ireland|
 |Finland|Microsoft|Available|FI|North Europe, Ireland|
 |France|Microsoft|Available|FR|France Central|
 |Germany|Microsoft|Available|DE|Germany West Central|
@@ -59,7 +59,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Poland|Partner|Available|PL|West Europe, Netherlands|
 |Portugal|Partner|Available|PT|West Europe, Netherlands|
 |Romania|Partner|Available|RO|West Europe, Netherlands|
-|Russia **(on-premises only)**|Microsoft|Available|(Not listed)|
+|Russia **(on-premises only)**|Microsoft|Available|(Not listed)|N/A|
 |Serbia|Partner|Available|RS|West Europe, Netherlands|
 |Singapore|Partner|Available|SG|Southeast Asia, Singapore|
 |Slovenia|Partner|Available|SI|West Europe, Netherlands|
