@@ -5786,10 +5786,394 @@
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/properties/devenv-field-no.-property.md",
+    "source_path": "dev-itpro/developer/devenv-codeunit-triggers.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-integration-triggers.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-onaction-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-onafterassignfield-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-onafterassignvariable-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-onafterdelete-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-onaftergetcurrrecord-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-onaftergetfield-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-onaftergetrecord-data-items-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-onaftergetrecord-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-onaftergetrecord-xmlports-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-onafterinitrecord-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-onafterinsertrecord-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-onafterinsert-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-onafterlookup-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-onaftermodifyrecord-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-onaftermodify-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-onafterrename-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-onaftertestrun-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-onaftervalidate-fields-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-onassistedit-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-onbeforeinsert-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-onbeforemodifyrecord-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-onbeforemodify-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-onbeforeopen-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-onbeforepassfield-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-onbeforepassvariable-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-onbeforerename-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-onbeforetestrun-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-onbeforevalidate-fields-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-oncheckpreconditionspercompany-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-oncheckpreconditionsperdatabase-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-onclosepage-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-ondeleterecord-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-ondelete-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-ondrilldown-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-onfindrecord-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-oninitreport-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-oninit-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-oninitxmlport-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-oninsert-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-oninstallapppercompany-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-oninstallappperdatabase-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-onlookup-fields-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-onlookup-page-fields-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-onmodifyrecord-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-onmodify-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-onnewrecord-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-onopenpage-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-onpagebackgroundtaskcompleted-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-onpagebackgroundtaskerror-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-onpostdataitem-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-onpostreport-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-onpostxmlport-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-onpredataitem-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-onprereport-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-onprexmlitem-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-onprexmlport-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-onqueryclosepage-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-onrename-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-onrun-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-onupgradepercompany-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-onupgradeperdatabase-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-onvalidate-fields-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-onvalidate-page-fields-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-onvalidateupgradepercompany-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-onvalidateupgradeperdatabase-trigger.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-page-and-action-triggers.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-query-triggers.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-report-and-data-item-triggers.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-report-triggers.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-table-and-field-triggers.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-trigger-onaftertestrun.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-trigger-onbeforetestrun.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-triggers.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/devenv-xmlport-triggers.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers/devenv-triggers",
+    "redirect_document_id": false
+  },
+  { 
+   "source_path": "dev-itpro/developer/properties/devenv-field-no.-property.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/properties/devenv-properties",
     "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/administration/update-rollout-timelime.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/administration/update-rollout-timeline",
+    "redirect_document_id": false
    }
-
   ]
 }

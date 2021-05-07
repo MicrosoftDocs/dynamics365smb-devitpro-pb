@@ -67,4 +67,4 @@ In the sections below, properties are sorted according to the object(s) they app
 ## See Also
 
 [Methods](../methods-auto/library.md)  
-[Triggers](../triggers/devenv-triggers.md)
+[Triggers](../triggers-auto/devenv-triggers.md)

@@ -36,7 +36,7 @@ The reference documentation of the AL language publishes under the [AL Programmi
 * Properties
   * [Properties Overview](developer/properties/devenv-properties.md)
 * Triggers
-  * [Triggers Overview](developer/triggers/devenv-triggers.md)
+  * [Triggers Overview](developer/triggers-auto/devenv-triggers.md)
 * Objects
   * [Table object](developer/devenv-table-object.md)
   * [Table extension object](developer/devenv-table-ext-object.md)
