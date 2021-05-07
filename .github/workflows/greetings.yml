@@ -19,5 +19,5 @@ jobs:
 
         issue-message: >
           Hello, thanks for your feedback. We triage this feedback regularly and use it to plan for future documentation improvements.
-          If you have a suggestion for a product idea, please go to [Ideas](https://aka.ms/bcideas). If the issue is product-related and blocking you from continuing, we recommend that you contact support.
+          If you have a suggestion for a product idea, please go to [Ideas](https://aka.ms/bcideas). If the issue is product related and blocking you from continuing, we recommend that you contact support.
         pr-message: 'Hello, thanks for your contribution, much appreciated. We will triage and review your PR.'
