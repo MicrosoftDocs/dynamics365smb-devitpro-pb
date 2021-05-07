@@ -1,8 +1,9 @@
 ---
 title: "AboutTitleML Property"
+description: "Sets the large-font title that appears in a teaching tip in the UI."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,7 +17,7 @@ author: SusanneWindfeldPedersen
 # AboutTitleML Property
 > **Version**: _Available or changed with runtime version 7.0._
 
-Sets the title of the entity used in the About box for teaching tips in the UI.
+Sets the large-font title that appears in a teaching tip in the UI.
 
 ## Applies to
 -   Page

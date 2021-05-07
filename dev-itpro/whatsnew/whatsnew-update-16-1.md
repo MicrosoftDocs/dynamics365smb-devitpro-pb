@@ -47,4 +47,4 @@ Pssst…did we mention it's for free…
 
 - **Major updates**  
 Get an overview of what you need to know about how a major Business Central update rolls out. It includes key dates, actions you need to take, and answers some common questions.   
-See [Major Updates of Business Central Online](../administration/update-rollout-timelime.md)
+See [Major Updates of Business Central Online](../administration/update-rollout-timeline.md)
