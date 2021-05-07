@@ -375,6 +375,7 @@
 #### [Designing Role Centers](developer/devenv-designing-role-centers.md)
 #### [Sample Role Center](developer/devenv-simple-role-center-example.md)
 #### [Adding links to the Navigation menu](developer/devenv-adding-menus-to-navigation-pane.md)
+#### [Adding a checklist to the Role Center](administration/onboarding-checklist.md)
 #### [Headlines](developer/devenv-create-role-center-headline.md)
 #### [Cues and Action Tiles](developer/devenv-cues-action-tiles.md)
 ### Designing Pages
@@ -387,9 +388,11 @@
 ##### [Views](developer/devenv-views.md)
 ##### [Adding Filter Tokens](developer/devenv-adding-filter-tokens.md)
 ##### [Designing Indented Lists](developer/devenv-indented-hierarchy-lists.md)
+##### [Adding Teaching Tips to List Pages](administration/onboarding-teaching-tips-tours.md)
 #### Card Pages
 ##### [Designing Card Pages](developer/devenv-designing-card-pages.md)
 ##### [Sample Card Page](developer/devenv-simple-card-page-example.md)
+##### [Adding Teaching Tips to Card Pages](administration/onboarding-teaching-tips-tours.md)
 #### Page Parts
 ##### [Parts Overview](developer/devenv-designing-parts.md)
 ##### [Designing List Parts](developer/devenv-designing-listparts.md)
