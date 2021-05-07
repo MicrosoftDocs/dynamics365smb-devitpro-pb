@@ -43,9 +43,9 @@ You write test methods as AL code in the test codeunits. When a test codeunit ru
   
 A test runner codeunit runs the test codeunits that are programmed to run from its OnRun trigger. When a test runner codeunit runs, it does the following:  
   
-- Calls the [OnBeforeTestRun Trigger](../triggers/devenv-onbeforetestrun-trigger.md) before each test codeunit, and the OnRun trigger and test method is executed.  
+- Calls the [OnBeforeTestRun Trigger](../triggers-auto/codeunit/devenv-onbeforetestrun-codeunit-trigger.md) before each test codeunit, and the OnRun trigger and test method is executed.  
   
-- Calls the [OnAfterTestRun Trigger](../triggers/devenv-onaftertestrun-trigger.md) after each test code unit, and the OnRun trigger and test method is executed.  
+- Calls the [OnAfterTestRun Trigger](../triggers-auto/codeunit/devenv-onaftertestrun-codeunit-trigger.md) after each test code unit, and the OnRun trigger and test method is executed.  
   
 - Indicates that a test method has failed if it invokes the user interface.  
 

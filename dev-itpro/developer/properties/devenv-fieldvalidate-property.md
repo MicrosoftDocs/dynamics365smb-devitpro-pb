@@ -50,4 +50,4 @@ If you change the value of the FieldValidate property, the change does not affec
 ## See Also  
 
 [DefaultFieldsValidation Property](devenv-defaultfieldsvalidation-property.md)   
-[OnValidate (Fields) Trigger](../triggers/devenv-onvalidate-fields-trigger.md)
+[OnValidate (Fields) Trigger](../triggers-auto/field/devenv-onvalidate-field-trigger.md)

@@ -11,7 +11,7 @@ ms.service: "dynamics365-business-central"
 # Delete Operation
 Deletes a single record.  
   
- Executing the Delete operation in a web service first executes the [OnDeleteRecord Trigger](../developer/triggers/devenv-OnDeleteRecord-Trigger.md) on the designated page. If application code in the OnDeleteRecord trigger for the page returns **true**, then the [OnDelete Trigger](../developer/triggers/devenv-OnDelete-Trigger.md) for the corresponding table is executed. If no fault occurs, then the record is deleted from the database.  
+ Executing the Delete operation in a web service first executes the [OnDeleteRecord Trigger](../developer/triggers-auto/page/devenv-OnDeleteRecord-page-Trigger.md) on the designated page. If application code in the OnDeleteRecord trigger for the page returns **true**, then the [OnDelete Trigger](../developer/triggers-auto/table/devenv-OnDelete-table-Trigger.md) for the corresponding table is executed. If no fault occurs, then the record is deleted from the database.  
   
  If the application code in the trigger returns **false**, then the OnDelete trigger is not executed. This does not necessarily mean that the record has not been deleted because it may have been deleted explicitly by the application code for the page's OnDeleteRecord trigger.  
   

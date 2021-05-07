@@ -15,7 +15,7 @@ This section describes all methods, data types, properties, and triggers in [!IN
 
 In the table of contents, all [AL methods](methods-auto/library.md) are listed under the AL data types that they support. Each data type topic contains a description of the data type.  
 
-[Properties](properties/devenv-properties.md) are listed according to the object that they apply to and [Triggers](triggers/devenv-triggers.md) are listed alphabetically.  
+[Properties](properties/devenv-properties.md) are listed according to the object that they apply to and [Triggers](triggers-auto/devenv-triggers.md) are listed alphabetically.  
 
 For more information about the [!INCLUDE[d365_dev_long_md](includes/d365_dev_long_md.md)], see [Development](devenv-dev-overview.md).  
 
@@ -23,7 +23,7 @@ For more information about the [!INCLUDE[d365_dev_long_md](includes/d365_dev_lon
 
 - [Methods](methods-auto/library.md)  
 - [Properties](properties/devenv-properties.md)  
-- [Triggers](triggers/devenv-triggers.md)  
+- [Triggers](triggers-auto/devenv-triggers.md)  
 
 ## See Also  
 [AL Development Environment](devenv-reference-overview.md)  
