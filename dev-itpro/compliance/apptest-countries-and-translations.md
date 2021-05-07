@@ -52,11 +52,11 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Japan|Partner|Available|JP|Southeast Asia, Singapore|
 |Kenya|Partner|July 2021|||
 |Latvia|Partner|Available|LV|North Europe, Ireland|
-|Lebanon|Partner|Planned, July 2021|||
+|Lebanon|Partner|July 2021|||
 |Lithuania|Partner|Available|LT|North Europe, Ireland|
 |Luxembourg|Partner|July 2021|||
 |Malaysia|Partner|Available|MY|Southeast Asia, Singapore|
-|Malta|Partner|Planned, July 2021|||
+|Malta|Partner|July 2021|||
 |Mexico|Microsoft|Available|MX|South Central US|
 |Morocco|Partner|July 2021|||
 |Netherlands|Microsoft|Available|NL|West Europe, Netherlands|
