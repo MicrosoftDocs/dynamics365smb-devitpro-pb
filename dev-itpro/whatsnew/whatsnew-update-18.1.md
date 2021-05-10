@@ -33,10 +33,10 @@ Find an overview of hotfixes in this [article](INSERT).
 
 | Country| Feature change |
 |-------------|--------------|
-Canada and US | Updates for Include Tax with partial shipping and prepayment credit memo|
+|Canada and US | Updates for Include Tax with partial shipping and prepayment credit memo|
 |Italy | Changes in withholding tax declaration 2021 |
-Italy | Updated for E-invoicing functionality |
-Belgium | Update for File Domiciliation in SEPA Direct Debit export | 
+|Italy | Updated for E-invoicing functionality |
+|Belgium | Update for File Domiciliation in SEPA Direct Debit export | 
 
 ## Release Plan
 If you want to get a comprehensive overview of what's new and planned for Business Central online for the entire 2021 release wave 1 (release from April 2021 through September 2021), find the link to the release plan [here](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/planned-features).
@@ -65,4 +65,4 @@ You can still watch the 15+ on-demand sessions from the Business Central Launch 
 - Fixed a problem with Android mobile app not being able to install on devices where a GPS module was disabled or missing
 - Fixed connectivity problems with Business Central cloud  
 
-Please download and always use the latest version: [Windows (Microsoft Store)](https://www.microsoft.com/en-ie/p/microsoft-dynamics-365-business-central/9nblggh4ql79?rtc=1&activetab=pivot:overviewtab),  [iOS (Apple's App Store)](https://apps.apple.com/us/app/project-madeira/id1093325047) or [Android (Google's Play Store)](https://play.google.com/store/apps/details?id=com.microsoft.dynamics.ProjectMadeira). Currently recommended versions of these apps are 3.2.x and 3.3.x (or later).
+Please download and always use the latest version: [Windows (Microsoft Store)](https://www.microsoft.com/p/microsoft-dynamics-365-business-central/9nblggh4ql79?rtc=1&activetab=pivot:overviewtab),  [iOS (Apple's App Store)](https://apps.apple.com/app/project-madeira/id1093325047) or [Android (Google's Play Store)](https://play.google.com/store/apps/details?id=com.microsoft.dynamics.ProjectMadeira). Currently recommended versions of these apps are 3.2.x and 3.3.x (or later).
