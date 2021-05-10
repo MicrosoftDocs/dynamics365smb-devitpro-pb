@@ -29,7 +29,7 @@ Please note that new customers will automatically get the latest builds of [!INC
 ## Good to know
 
 - Major updates  
-Get an overview of what you need to know about how a major [!INCLUDE[prod_short](../developer/includes/prod_short.md)] update rolls out. It includes key dates, actions you need take, and answers some common questions. See [Major Updates of Business Central Online](../administration/update-rollout-timelime.md). 
+Get an overview of what you need to know about how a major [!INCLUDE[prod_short](../developer/includes/prod_short.md)] update rolls out. It includes key dates, actions you need take, and answers some common questions. See [Major Updates of Business Central Online](../administration/update-rollout-timeline.md). 
 
 - Preview environments of next major update  
 Partners should start to prepare for the next major update of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] in April. Partners can try out new functionality in preview environments, give Microsoft feedback and validate your extensions. See more details in [Prepare for major updates with preview environments](../administration/preview-environments.md) 
