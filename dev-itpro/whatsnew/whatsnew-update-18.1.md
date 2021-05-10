@@ -3,7 +3,7 @@ title: "Update 18.1 for Microsoft Dynamics 365 Business Central 2021 Release Wav
 description: Get an overview of new and changed capabilities in the 18.1 update of Business Central online, which is part of 2021 release wave 1.
 ms.author: solsen
 ms.custom: na
-ms.date: 04/26/2021
+ms.date: 05/10/2021
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,10 +30,10 @@ Find an overview of hotfixes in this [article](INSERT).
 
 | Country| Feature change |
 |-------------|--------------|
-Canada and US | Updates for Include Tax with partial shipping and prepayment credit memo|
+|Canada and US | Updates for Include Tax with partial shipping and prepayment credit memo|
 |Italy | Changes in withholding tax declaration 2021 |
-Italy | Updated for E-invoicing functionality |
-Belgium | Update for File Domiciliation in SEPA Direct Debit export | 
+|Italy | Updated for E-invoicing functionality |
+|Belgium | Update for File Domiciliation in SEPA Direct Debit export | 
 
 ## Release Plan
 If you want to get a comprehensive overview of what's new and planned for Business Central online for the entire 2021 release wave 1 (release from April 2021 through September 2021), find the link to the release plan [here](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/planned-features).
