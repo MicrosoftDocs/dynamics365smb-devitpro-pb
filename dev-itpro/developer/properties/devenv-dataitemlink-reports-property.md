@@ -40,7 +40,7 @@ The following example illustrates using this property. You have two data items, 
   
 **Sell-to Customer No.=FIELD(No.)**  
   
-You now have a filter on the records in the child data item. This filter only displays records that pertain to the currently selected customer record. You can also accomplish the same task by placing the following AL statement in the [OnPreDataItem Trigger](../triggers/devenv-onpredataitem-trigger.md) for the child data item.  
+You now have a filter on the records in the child data item. This filter only displays records that pertain to the currently selected customer record. You can also accomplish the same task by placing the following AL statement in the [OnPreDataItem Trigger](../triggers-auto/reportdataitem/devenv-onpredataitem-reportdataitem-trigger.md) for the child data item.  
   
 ```AL
 SetRange("Sell-to Customer No.",Customer."No.");  
@@ -48,6 +48,6 @@ SetRange("Sell-to Customer No.",Customer."No.");
   
 ## See Also
 
-[OnPreDataItem Trigger](../triggers/devenv-onpredataitem-trigger.md)   
+[OnPreDataItem Trigger](../triggers-auto/reportdataitem/devenv-onpredataitem-reportdataitem-trigger.md)   
 [DataItemLinkReference Property](./devenv-dataitemlinkreference-property.md)   
 [DataItemLink Property (Query)](devenv-dataitemlink-query-property.md)

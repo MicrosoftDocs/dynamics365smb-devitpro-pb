@@ -83,7 +83,7 @@ Currently, the platform implicitly uses partial records when fetching data for r
 For reports, the fields that are selected for loading are fields setup as columns in the report data set. If a report accesses a field that isn't in the data set, it's beneficial to do one of the following to avoid just-in-time (JIT) loading:
 
 - Add the field as a column in the data set.
-- Add the field on the [OnPreDataItem trigger](/triggers/devenv-onpredataitem-trigger.md).
+- Add the field on the [OnPreDataItem trigger](triggers-auto/reportdataitem/devenv-onpredataitem-reportdataitem-trigger.md).
 
     The following example code snippet illustrates how to use the AddLoadFields method on a report's OnPreDataItem trigger to add a field for loading:
     
