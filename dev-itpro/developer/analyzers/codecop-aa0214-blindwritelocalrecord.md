@@ -1,8 +1,8 @@
 ---
-title: "The local record should be modified before saving to the database."
+title: "CodeCop Rule AA0214"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

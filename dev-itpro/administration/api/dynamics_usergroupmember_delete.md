@@ -1,5 +1,5 @@
 ---
-title: Delete userGroupMember | Microsoft Docs
+title: Delete userGroupMember
 description: Deletes an user group member object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

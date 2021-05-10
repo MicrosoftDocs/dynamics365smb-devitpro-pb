@@ -1,8 +1,8 @@
 ---
-title: "There must be exactly one space character on each side of a binary operator such as := + - AND OR =."
+title: "CodeCop Rule AA0001"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

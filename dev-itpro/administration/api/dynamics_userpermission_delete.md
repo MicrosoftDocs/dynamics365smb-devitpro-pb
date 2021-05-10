@@ -1,5 +1,5 @@
 ---
-title: Delete userPermission | Microsoft Docs
+title: Delete userPermission
 description: Deletes an user permission object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"
