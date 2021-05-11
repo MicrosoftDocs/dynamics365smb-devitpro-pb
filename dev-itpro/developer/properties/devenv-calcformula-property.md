@@ -17,10 +17,10 @@ author: SusanneWindfeldPedersen
 > **Version**: _Available or changed with runtime version 1.0._
 
 Sets the Calculation formula for a FlowField.
-The following syntax is valid for the CalculationFormula property:
+The following syntax is valid for the CalcFormula property:
 
 ```
-CalculationFormula =
+CalcFormula =
 [-]Exist(<DestinationTable> [WHERE (<TableFilters>)]) |
 Count(<DestinationTable> [WHERE (<TableFilters>)]) |
 [-]Sum(<DestinationTable>.<DestinationFieldName> [WHERE(<TableFilters>)])|
