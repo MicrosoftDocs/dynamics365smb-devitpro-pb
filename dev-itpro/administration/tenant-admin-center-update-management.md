@@ -15,9 +15,9 @@ ms.author: edupont
 
 # Managing Updates in the Business Central Admin Center
 
-[!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments are updated according to the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] [roadmap](https://dynamics.microsoft.com/roadmap/business-central/) with two major updates in April and October each year, and monthly, minor updates. For more information, see [Major Updates and Minor Updates for Business Central Online](update-rollout-timelime.md) and the [Dynamics 365 Release Plans](/dynamics365/release-plans/).
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments are updated according to the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] [roadmap](https://dynamics.microsoft.com/roadmap/business-central/) with two major updates in April and October each year, and monthly, minor updates. For more information, see [Major Updates and Minor Updates for Business Central Online](update-rollout-timeline.md) and the [Dynamics 365 Release Plans](/dynamics365/release-plans/).
 
-Updates of the base application and platform are managed by Microsoft. As an internal administrator or as a partner, you can use the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] to specify certain parameters of the timing of updates for each environment, and you can specify the people who must receive [notifications of when an update is available](#notify). You can also help prepare your solution and your users by creating preview environments so that you can get acquainted with new functionality in the product. For more information, see [Major Updates and Minor Updates](update-rollout-timelime.md).  
+Updates of the base application and platform are managed by Microsoft. As an internal administrator or as a partner, you can use the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] to specify certain parameters of the timing of updates for each environment, and you can specify the people who must receive [notifications of when an update is available](#notify). You can also help prepare your solution and your users by creating preview environments so that you can get acquainted with new functionality in the product. For more information, see [Major Updates and Minor Updates](update-rollout-timeline.md).  
 
 ## Set the update window for each environment
 
@@ -69,7 +69,7 @@ For versions earlier than 2021 release wave 1, admins cannot schedule the monthl
 
 ## See also
 
-[Major Updates of Business Central Online](update-rollout-timelime.md)  
+[Major Updates of Business Central Online](update-rollout-timeline.md)  
 [Prepare for major updates with preview environments](preview-environments.md)  
 [Working with Administration Tools](administration.md)  
 [The Business Central Administration Center](tenant-admin-center.md)  

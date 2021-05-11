@@ -1,8 +1,9 @@
 ---
 title: "Text.IndexOfAny Method"
+description: "Reports the one-based index of the first occurrence of the specified string in this instance. The search starts at a specified character position."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,8 +27,8 @@ Index :=   Text.IndexOfAny(Values: Text [, StartIndex: Integer])
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
 ## Parameters
-*Text*
-&emsp;Type: [Text](text-data-type.md)
+*Text*  
+&emsp;Type: [Text](text-data-type.md)  
 An instance of the [Text](text-data-type.md) data type.
 
 *Values*  
@@ -40,8 +41,8 @@ The one-based search starting position.
 
 
 ## Return Value
-*Index*
-&emsp;Type: [Integer](../integer/integer-data-type.md)
+*Index*  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 The one-based index of the first occurrence of the specified string in this instance. If the index returned is 0, the value is not present in the string.
 
 

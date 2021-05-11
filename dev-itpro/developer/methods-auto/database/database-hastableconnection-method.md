@@ -1,8 +1,9 @@
 ---
 title: "Database.HasTableConnection Method"
+description: "Verifies if a connection to an external database exists based on the specified name."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -36,8 +37,8 @@ The name of the external table connection. You must already have registered a ta
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if a connection to an external database exists for the specified name, otherwise **false**.
       
 

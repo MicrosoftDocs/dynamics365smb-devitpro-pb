@@ -1,8 +1,9 @@
 ---
 title: "Report.ShowOutput Method"
+description: "Returns the current setting of whether a section should be printed, and changes this setting."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,8 +27,8 @@ Returns the current setting of whether a section should be printed, and changes 
 > [!NOTE]
 > This method can be invoked using property access syntax.
 ## Parameters
-*Report*
-&emsp;Type: [Report](report-data-type.md)
+*Report*  
+&emsp;Type: [Report](report-data-type.md)  
 An instance of the [Report](report-data-type.md) data type.
 
 *Value*  
@@ -36,8 +37,8 @@ An instance of the [Report](report-data-type.md) data type.
 
 
 ## Return Value
-*Show*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Show*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the section is printed, otherwise **false**.
 
 

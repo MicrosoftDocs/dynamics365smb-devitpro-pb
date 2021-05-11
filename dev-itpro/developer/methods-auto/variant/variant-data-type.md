@@ -1,8 +1,9 @@
 ---
 title: "Variant Data Type"
+description: "Represents an AL variable object. The AL variant data type can contain many AL data types."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -34,7 +35,8 @@ The following methods are available on instances of the Variant data type.
 |[IsClientType()](variant-isclienttype-method.md)|Indicates whether an AL variant contains a ClientType variable.|
 |[IsCode()](variant-iscode-method.md)|Indicates whether an AL variant contains a Code variable.|
 |[IsCodeunit()](variant-iscodeunit-method.md)|Indicates whether an AL variant contains a Codeunit variable.|
-|[IsDataClassificationType()](variant-isdataclassificationtype-method.md)|Indicates whether a AL variant contains a DataClassification variable.|
+|[IsDataClassification()](variant-isdataclassification-method.md)|Indicates whether an AL variant contains a DataClassification variable.|
+|[IsDataClassificationType()](variant-isdataclassificationtype-method.md)|Indicates whether an AL variant contains a DataClassification variable.|
 |[IsDate()](variant-isdate-method.md)|Indicates whether an AL variant contains a Date variable.|
 |[IsDateFormula()](variant-isdateformula-method.md)|Indicates whether an AL variant contains a DateFormula variable.|
 |[IsDateTime()](variant-isdatetime-method.md)|Indicates whether an AL variant contains a DateTime variable.|

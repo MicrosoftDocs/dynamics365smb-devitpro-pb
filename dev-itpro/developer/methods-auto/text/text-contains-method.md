@@ -1,8 +1,9 @@
 ---
 title: "Text.Contains Method"
+description: "Returns a value indicating whether a specified substring occurs within this string."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,8 +27,8 @@ Ok :=   Text.Contains(Value: Text)
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
 ## Parameters
-*Text*
-&emsp;Type: [Text](text-data-type.md)
+*Text*  
+&emsp;Type: [Text](text-data-type.md)  
 An instance of the [Text](text-data-type.md) data type.
 
 *Value*  
@@ -36,8 +37,8 @@ The string to seek.
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the specified substring occurs in the  specified string, otherwise **false**.
 
 

@@ -1,8 +1,9 @@
 ---
 title: "Enum.Names Method"
+description: "Gets the value names"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,8 +27,8 @@ List of enum value names :=   Enum.Names()
 
 
 ## Return Value
-*List of enum value names*
-&emsp;Type: [List of [Text]](../list/list-data-type.md)
+*List of enum value names*  
+&emsp;Type: [List of [Text]](../list/list-data-type.md)  
 
 
 

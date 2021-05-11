@@ -1,8 +1,9 @@
 ---
 title: "Dialog.Update Method"
+description: "Updates the value of a '#'-or '@' field in the active window."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,8 +27,8 @@ Updates the value of a '#'-or '@' field in the active window.
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
 ## Parameters
-*Dialog*
-&emsp;Type: [Dialog](dialog-data-type.md)
+*Dialog*  
+&emsp;Type: [Dialog](dialog-data-type.md)  
 An instance of the [Dialog](dialog-data-type.md) data type.
 
 *Number*  

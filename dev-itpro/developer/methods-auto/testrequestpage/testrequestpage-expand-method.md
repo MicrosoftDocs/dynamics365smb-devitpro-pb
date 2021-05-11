@@ -1,8 +1,9 @@
 ---
 title: "TestRequestPage.Expand Method"
+description: "Expands rows on a test page."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Expands rows on a test page.
  TestRequestPage.Expand(Expand: Boolean)
 ```
 ## Parameters
-*TestRequestPage*
-&emsp;Type: [TestRequestPage](testrequestpage-data-type.md)
+*TestRequestPage*  
+&emsp;Type: [TestRequestPage](testrequestpage-data-type.md)  
 An instance of the [TestRequestPage](testrequestpage-data-type.md) data type.
 
 *Expand*  

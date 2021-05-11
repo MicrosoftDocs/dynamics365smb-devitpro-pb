@@ -1,8 +1,9 @@
 ---
 title: "System.WindowsLanguage Method"
+description: "Gets the current Windows language setting."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,8 +31,8 @@ LanguageID :=   System.WindowsLanguage()
 
 
 ## Return Value
-*LanguageID*
-&emsp;Type: [Integer](../integer/integer-data-type.md)
+*LanguageID*  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 
 
 

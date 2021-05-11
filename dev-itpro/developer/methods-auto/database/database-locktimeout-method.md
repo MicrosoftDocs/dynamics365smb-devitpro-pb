@@ -1,8 +1,9 @@
 ---
 title: "Database.LockTimeout Method"
+description: "Determines whether the lock time-out setting is set to On. You can also use this method to override the default setting."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -34,8 +35,8 @@ The new setting for whether the lock time-out is on.
 
 
 ## Return Value
-*LockTimeout*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*LockTimeout*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 This value shows whether to use a lock time-out.
 
 

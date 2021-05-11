@@ -1,8 +1,9 @@
 ---
 title: "MediaSet.ExportFile Method"
+description: "Exports the media objects in the current media set of a record to individual files on your computer or network. In the record, the media set is referenced in a MediaSet data type field."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,8 +27,8 @@ Exports the media objects in the current media set of a record to individual fil
 [Count := ]  MediaSet.ExportFile(FilenamePrefix: String)
 ```
 ## Parameters
-*MediaSet*
-&emsp;Type: [MediaSet](mediaset-data-type.md)
+*MediaSet*  
+&emsp;Type: [MediaSet](mediaset-data-type.md)  
 An instance of the [MediaSet](mediaset-data-type.md) data type.
 
 *FilenamePrefix*  
@@ -40,8 +41,8 @@ Specifies the location and name of the exported media files. Each exported media
 
 
 ## Return Value
-*Count*
-&emsp;Type: [Integer](../integer/integer-data-type.md)
+*Count*  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 The number of exported elements. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

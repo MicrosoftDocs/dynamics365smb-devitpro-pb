@@ -22,12 +22,6 @@ The Role Center is the user's entry point and home page for [!INCLUDE[d365fin_md
 
 Role Centers are based on a user-centric design model. You should design a Role Center to give users quick access to the information that is most important to them in their daily work - displaying information that is pertinent to their role in the company and enabling them to easily navigate to relevant pages for viewing data and doing tasks.
 
-### Customizing a Role Center from the client
-
-Users who work across multiple roles can easily switch Role Centers to shift their focus to different tasks. Users can also personalize their Role Centers by rearranging or hiding content as they like. For more information, see [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user). 
-
-As a developer or administrator, you can use Designer to customize a Role Center the same way that individual users personalize their own workspaces. The difference is that changes you make are applied to all users assigned to the Role Center. For more information, see [Using Designer](devenv-inclient-designer.md).
-
 ## Role Center structure
 
 A Role Center is defined by page that has the [PageType property](properties/devenv-pagetype-property.md) set to `RoleCenter`. The Role Center page is divided into two main areas: navigation/actions area and content area. The following figure illustrates the general layout and elements of a Role Center page.
@@ -55,6 +49,7 @@ For more information about navigation, see [Adding to Navigation](devenv-adding-
 
 - The order of the `area()` controls in the page code isn't important. However, the order of the individual actions and groups is important because they'll appear in the order in which they appear in page code.  
 - In page code, if the first part in the content area is a Headline part, the actions area in the client will be automatically positioned either to the right of the Headline part or after the Headline part, depending on the browser window size. If the first part isn't a Headline, the actions area will appear directly after the navigation area, and extend the width of the workspace. 
+- If a welcome banner is displayed on the Role Center, the banner hides the action bar.
 
 ## Content area
 
@@ -75,7 +70,8 @@ The following table describes some of the most common parts for Role Centers, as
 ### Behavioral points of interest
 
 - In general, the parts will appear in the client according to the order in which they're defined in the Role Center page code and will automatically rearrange horizontally and vertically to fill the available workspace.
-- However, in the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)], page parts that contain cues are automatically grouped under a common **Activities** section, no matter where they are placed in the code. All other page parts are grouped under the **Business Assistance** section. Within **Activities** and **Business Assistance** sections, the parts will arrange according to the order in which they are defined in the page code.
+- However, in the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)], page parts that contain cues are automatically grouped under a common **Activities** section, no matter where they are placed in the code. All other page parts are grouped under the **Business Assistance** section. Within **Activities** and **Business Assistance** sections, the parts will arrange according to the order in which they are defined in the page code.  
+- If a welcome banner is displayed on the Role Center, the banner hides the headline part.
 
 ## Development tips for overall page design
 
@@ -83,6 +79,9 @@ The following table describes some of the most common parts for Role Centers, as
 - To achieve the best readability and discoverability, place Headlines first, followed by cues, and then the remaining parts.
 - You can't add custom logic directly to a Role Center page code. Code is limited to defining navigation, actions, and parts. All other code is ignored.
 - Role Centers can be highly specialized, in the fact that the navigation, actions, and content are optional. For example, you could have a single part that fills the entire workspace.
+ 
+## Designing a checklist to onboard new users 
+Since the Role Center is a user's entry point and home page to [!INCLUDE[prod_short](includes/prod_short.md)], it is also the ideal space to guide new users towards learning activities and finalizing setup of their company. The onboarding framework includes the ability to display a welcome banner and checklist on a Role Center home page. Unlike all other content described in this article, the welcome banner and checklist require a separate process and are not implemented directly on the Role Center page object or page parts. [Learn how to get users started with the checklist](../administration/onboarding-checklist.md).
  
 ## Design for all display targets
 
@@ -111,6 +110,13 @@ Here are some practical tips to help you make the most of this optimization:
 ## Using the Role Center in the client
 
 To use or test the new Role Center in the client, you must first associate the Role Center page with a profile. Profiles define user roles and each profile is associated with a single Role Center page. Create a new [profile object](devenv-profile-object.md) that references your page. Then, go to **My Settings** and select the new profile.
+
+### Customizing a Role Center from the client
+
+Users who work across multiple roles can easily switch Role Centers to shift their focus to different tasks. Users can also personalize their Role Centers by rearranging or hiding content as they like. For more information, see [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user). 
+
+As a developer or administrator, you can use Designer to customize a Role Center the same way that individual users personalize their own workspaces. The difference is that changes you make are applied to all users assigned to the Role Center. For more information, see [Using Designer](devenv-inclient-designer.md).
+
 
 ## See Also
 

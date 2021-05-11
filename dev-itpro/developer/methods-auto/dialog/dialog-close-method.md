@@ -1,8 +1,9 @@
 ---
 title: "Dialog.Close Method"
+description: "Closes a dialog window that has been opened by the OPEN method."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,8 +28,8 @@ Closes a dialog window that has been opened by the OPEN method.
 > This method can be invoked without specifying the data type name.
 
 ## Parameters
-*Dialog*
-&emsp;Type: [Dialog](dialog-data-type.md)
+*Dialog*  
+&emsp;Type: [Dialog](dialog-data-type.md)  
 An instance of the [Dialog](dialog-data-type.md) data type.
 
 

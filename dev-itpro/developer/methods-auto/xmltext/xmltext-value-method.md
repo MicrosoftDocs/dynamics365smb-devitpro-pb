@@ -1,8 +1,9 @@
 ---
 title: "XmlText.Value Method"
+description: "Gets or sets the value of this node."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,8 +27,8 @@ Gets or sets the value of this node.
 > [!NOTE]
 > This method can be invoked using property access syntax.
 ## Parameters
-*XmlText*
-&emsp;Type: [XmlText](xmltext-data-type.md)
+*XmlText*  
+&emsp;Type: [XmlText](xmltext-data-type.md)  
 An instance of the [XmlText](xmltext-data-type.md) data type.
 
 *NewValue*  
@@ -36,8 +37,8 @@ The new value of this node.
 
 
 ## Return Value
-*Value*
-&emsp;Type: [String](../string/string-data-type.md)
+*Value*  
+&emsp;Type: [String](../string/string-data-type.md)  
 The value of this node.
 
 

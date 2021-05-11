@@ -38,9 +38,9 @@ PasteIsValid = false;
 
 If records are usually inserted in the table through an external code unit function, set the PasteIsValid property equal to **false**.  
   
-The [OnInsert Trigger](../triggers/devenv-oninsert-trigger.md) of the table is executed when a record is inserted by pasting.  
+The [OnInsert Trigger](../triggers-auto/table/devenv-oninsert-table-trigger.md) of the table is executed when a record is inserted by pasting.  
   
 ## See Also  
 
-[OnInsert Trigger](../triggers/devenv-oninsert-trigger.md)
+[OnInsert Trigger](../triggers-auto/table/devenv-oninsert-table-trigger.md)
 [Properties](devenv-properties.md)

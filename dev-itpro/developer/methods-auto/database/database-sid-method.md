@@ -1,8 +1,9 @@
 ---
 title: "Database.SID Method"
+description: "Retrieves the security identifier (SID) of a Windows user account."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -34,8 +35,8 @@ The Windows user account for which you want to get the SID. You must specify a d
 
 
 ## Return Value
-*SID*
-&emsp;Type: [String](../string/string-data-type.md)
+*SID*  
+&emsp;Type: [String](../string/string-data-type.md)  
 The SID of the specified Windows user account.
 
 

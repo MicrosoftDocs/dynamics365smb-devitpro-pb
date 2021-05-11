@@ -1,8 +1,9 @@
 ---
 title: "FieldRef.Caption Method"
+description: "Gets the current caption of a field as a String."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,13 +28,13 @@ Caption :=   FieldRef.Caption()
 > This method can be invoked using property access syntax.
 
 ## Parameters
-*FieldRef*
-&emsp;Type: [FieldRef](fieldref-data-type.md)
+*FieldRef*  
+&emsp;Type: [FieldRef](fieldref-data-type.md)  
 An instance of the [FieldRef](fieldref-data-type.md) data type.
 
 ## Return Value
-*Caption*
-&emsp;Type: [String](../string/string-data-type.md)
+*Caption*  
+&emsp;Type: [String](../string/string-data-type.md)  
 
 
 

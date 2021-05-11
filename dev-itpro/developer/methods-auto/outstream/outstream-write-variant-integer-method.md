@@ -1,8 +1,9 @@
 ---
 title: "OutStream.Write Method"
+description: "Writes a specified number of bytes to the stream. Data is written in binary format."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Writes a specified number of bytes to the stream. Data is written in binary form
 [Written := ]  OutStream.Write(Value: Variant [, Length: Integer])
 ```
 ## Parameters
-*OutStream*
-&emsp;Type: [OutStream](outstream-data-type.md)
+*OutStream*  
+&emsp;Type: [OutStream](outstream-data-type.md)  
 An instance of the [OutStream](outstream-data-type.md) data type.
 
 *Value*  
@@ -38,8 +39,8 @@ The number of bytes to be written. In the case of data types other than string, 
 
 
 ## Return Value
-*Written*
-&emsp;Type: [Integer](../integer/integer-data-type.md)
+*Written*  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 The number of bytes that were written. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

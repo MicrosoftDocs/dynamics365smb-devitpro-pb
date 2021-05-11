@@ -1,8 +1,9 @@
 ---
 title: "Codeunit.Run Method"
+description: "Loads and executes the unit of AL code that you specify."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Loads and executes the unit of AL code that you specify.
 [Ok := ]  Codeunit.Run(var Record: Record)
 ```
 ## Parameters
-*Codeunit*
-&emsp;Type: [Codeunit](codeunit-data-type.md)
+*Codeunit*  
+&emsp;Type: [Codeunit](codeunit-data-type.md)  
 An instance of the [Codeunit](codeunit-data-type.md) data type.
 
 *Record*  
@@ -34,8 +35,8 @@ A record from the table that is associated with the codeunit.
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

@@ -1,8 +1,9 @@
 ---
 title: "System.GetDotNetType Method"
+description: "Gets the System.Type that corresponds to the given value."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -34,8 +35,8 @@ The value for which to retrieve the System.Type.
 
 
 ## Return Value
-*Type*
-&emsp;Type: [DotNet](../dotnet/dotnet-data-type.md)
+*Type*  
+&emsp;Type: [DotNet](../dotnet/dotnet-data-type.md)  
 
 
 

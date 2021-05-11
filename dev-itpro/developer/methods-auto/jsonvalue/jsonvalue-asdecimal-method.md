@@ -1,8 +1,9 @@
 ---
 title: "JsonValue.AsDecimal Method"
+description: "Converts the value in a JsonValue to a Decimal data type."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,13 +26,13 @@ Result :=   JsonValue.AsDecimal()
 ```
 
 ## Parameters
-*JsonValue*
-&emsp;Type: [JsonValue](jsonvalue-data-type.md)
+*JsonValue*  
+&emsp;Type: [JsonValue](jsonvalue-data-type.md)  
 An instance of the [JsonValue](jsonvalue-data-type.md) data type.
 
 ## Return Value
-*Result*
-&emsp;Type: [Decimal](../decimal/decimal-data-type.md)
+*Result*  
+&emsp;Type: [Decimal](../decimal/decimal-data-type.md)  
 If the JsonValue does not contain a number or a string which can be converted without loss of precision to a Decimal, the operation will fail with a run-time error.
 
 

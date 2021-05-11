@@ -1,8 +1,9 @@
 ---
 title: "FieldRef.Validate Method"
+description: "Use this method to enter a new value into a field and have the new value validated by the properties and code that have been defined for that field."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Use this method to enter a new value into a field and have the new value validat
  FieldRef.Validate([NewValue: Any])
 ```
 ## Parameters
-*FieldRef*
-&emsp;Type: [FieldRef](fieldref-data-type.md)
+*FieldRef*  
+&emsp;Type: [FieldRef](fieldref-data-type.md)  
 An instance of the [FieldRef](fieldref-data-type.md) data type.
 
 *NewValue*  
@@ -38,7 +39,7 @@ The value to insert in the field.
 
 ## Remarks
 
-The Validate method first checks any [TableRelation Property](../../properties/devenv-tablerelation-property.md), and then executes the [OnValidate \(Fields\) Trigger](../../triggers/devenv-onvalidate-fields-trigger.md) of the field.  
+The Validate method first checks any [TableRelation Property](../../properties/devenv-tablerelation-property.md), and then executes the [OnValidate \(Fields\) Trigger](../../triggers-auto/field/devenv-onvalidate-field-trigger.md) of the field.  
 
 If you omit *NewValue*, the method validates the current value.  
 

@@ -1,8 +1,9 @@
 ---
 title: "IsolatedStorage.Contains Method"
+description: "Determines whether the storage contains a value with the specified key."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -34,8 +35,8 @@ The scope in which to check for the existence of a value with the given key. If 
 
 
 ## Return Value
-*HasValue*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*HasValue*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if a value with the specified key exists in the storage, otherwise **false**.
 
 

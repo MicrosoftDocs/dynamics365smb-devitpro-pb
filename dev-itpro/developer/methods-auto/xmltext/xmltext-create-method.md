@@ -1,8 +1,9 @@
 ---
 title: "XmlText.Create Method"
+description: "Creates an XmlText node."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,8 +31,8 @@ A string that contains the value of the new XmlText node.
 
 
 ## Return Value
-*Value*
-&emsp;Type: [XmlText](xmltext-data-type.md)
+*Value*  
+&emsp;Type: [XmlText](xmltext-data-type.md)  
 The created XmlText node.
 
 

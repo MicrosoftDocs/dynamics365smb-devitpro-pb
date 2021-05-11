@@ -1,8 +1,9 @@
 ---
 title: "Session.GetCurrentModuleExecutionContext Method"
+description: "Gets the current session's execution context for the currently executing module."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,8 +29,8 @@ ExecutionContext :=   Session.GetCurrentModuleExecutionContext()
 
 
 ## Return Value
-*ExecutionContext*
-&emsp;Type: [ExecutionContext](../executioncontext/executioncontext-option.md)
+*ExecutionContext*  
+&emsp;Type: [ExecutionContext](../executioncontext/executioncontext-option.md)  
 The current session's execution context for the currently executing module.
 
 

@@ -1,8 +1,9 @@
 ---
 title: "Page.GetBackgroundParameters Method"
+description: "Gets the page background task input parameters."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,8 +27,8 @@ Parameters :=   Page.GetBackgroundParameters()
 
 
 ## Return Value
-*Parameters*
-&emsp;Type: [Dictionary of [Text, Text]](../dictionary/dictionary-data-type.md)
+*Parameters*  
+&emsp;Type: [Dictionary of [Text, Text]](../dictionary/dictionary-data-type.md)  
 The input parameters of the page background task.
 
 

@@ -1,8 +1,9 @@
 ---
 title: "Text.StrCheckSum Method"
+description: "Calculates a checksum for a string that contains a number. If the source is empty, 0 is returned. Each char in the source and in the weight must be a numeric character 0-9, otherwise an exception is thrown. If the WeightString parameter is shorter then the source, it is padded with '1' up until the length of source. If the WeightString parameter is longer than the source, an exception is thrown."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -40,8 +41,8 @@ The number that you want to use in the checksum formula. The default value is 10
 
 
 ## Return Value
-*CheckNumber*
-&emsp;Type: [Integer](../integer/integer-data-type.md)
+*CheckNumber*  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 The resulting checksum value.
 
 

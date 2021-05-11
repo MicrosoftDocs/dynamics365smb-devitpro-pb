@@ -1,8 +1,9 @@
 ---
 title: "WebServiceActionContext.SetObjectId Method"
+description: "Sets the object ID."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Sets the object ID.
  WebServiceActionContext.SetObjectId(ObjectId: Integer)
 ```
 ## Parameters
-*WebServiceActionContext*
-&emsp;Type: [WebServiceActionContext](webserviceactioncontext-data-type.md)
+*WebServiceActionContext*  
+&emsp;Type: [WebServiceActionContext](webserviceactioncontext-data-type.md)  
 An instance of the [WebServiceActionContext](webserviceactioncontext-data-type.md) data type.
 
 *ObjectId*  

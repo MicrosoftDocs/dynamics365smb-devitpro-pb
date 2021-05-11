@@ -1,8 +1,9 @@
 ---
 title: "System.DT2Time Method"
+description: "Gets the time part of a DateTime object."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -32,8 +33,8 @@ The DateTime of which to return the time part.
 
 
 ## Return Value
-*Time*
-&emsp;Type: [Time](../time/time-data-type.md)
+*Time*  
+&emsp;Type: [Time](../time/time-data-type.md)  
 
 
 

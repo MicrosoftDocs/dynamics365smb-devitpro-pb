@@ -1,8 +1,9 @@
 ---
 title: "RequestPage.ObjectId Method"
+description: "Returns a string in the "Page xxx" format, where xxx is the caption or ID of the application object."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Returns a string in the "Page xxx" format, where xxx is the caption or ID of the
 String :=   RequestPage.ObjectId([UseNames: Boolean])
 ```
 ## Parameters
-*RequestPage*
-&emsp;Type: [RequestPage](requestpage-data-type.md)
+*RequestPage*  
+&emsp;Type: [RequestPage](requestpage-data-type.md)  
 An instance of the [RequestPage](requestpage-data-type.md) data type.
 
 *UseNames*  
@@ -34,8 +35,8 @@ An instance of the [RequestPage](requestpage-data-type.md) data type.
 
 
 ## Return Value
-*String*
-&emsp;Type: [String](../string/string-data-type.md)
+*String*  
+&emsp;Type: [String](../string/string-data-type.md)  
 
 
 

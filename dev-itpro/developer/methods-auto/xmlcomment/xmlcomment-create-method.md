@@ -1,8 +1,9 @@
 ---
 title: "XmlComment.Create Method"
+description: "Creates an XmlComment node."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,8 +31,8 @@ A string that contains the contents of the new XmlComment node.
 
 
 ## Return Value
-*Comment*
-&emsp;Type: [XmlComment](xmlcomment-data-type.md)
+*Comment*  
+&emsp;Type: [XmlComment](xmlcomment-data-type.md)  
 The created XmlComment node.
 
 

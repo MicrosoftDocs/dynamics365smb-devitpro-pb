@@ -1,8 +1,9 @@
 ---
 title: "System.Abs Method"
+description: "Calculates the absolute value of a number (Decimal, Integer or BigInteger). ABS always returns a positive numeric value or zero."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -32,8 +33,8 @@ The input value.
 
 
 ## Return Value
-*NewNumber*
-&emsp;Type: [Decimal](../decimal/decimal-data-type.md)
+*NewNumber*  
+&emsp;Type: [Decimal](../decimal/decimal-data-type.md)  
 
 
 

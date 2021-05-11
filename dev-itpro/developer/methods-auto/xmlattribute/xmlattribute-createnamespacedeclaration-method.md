@@ -1,8 +1,9 @@
 ---
 title: "XmlAttribute.CreateNamespaceDeclaration Method"
+description: "Creates an attribute that represents a namespace declaration."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -34,8 +35,8 @@ The URI of the attribute. If the prefix is xmlns, then this parameter must be ht
 
 
 ## Return Value
-*XmlAttribute*
-&emsp;Type: [XmlAttribute](xmlattribute-data-type.md)
+*XmlAttribute*  
+&emsp;Type: [XmlAttribute](xmlattribute-data-type.md)  
 The created XmlAttribute node.
 
 

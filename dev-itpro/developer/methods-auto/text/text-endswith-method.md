@@ -1,8 +1,9 @@
 ---
 title: "Text.EndsWith Method"
+description: "Determines whether the end of this string instance matches the specified string."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,8 +27,8 @@ Ok :=   Text.EndsWith(Value: Text)
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
 ## Parameters
-*Text*
-&emsp;Type: [Text](text-data-type.md)
+*Text*  
+&emsp;Type: [Text](text-data-type.md)  
 An instance of the [Text](text-data-type.md) data type.
 
 *Value*  
@@ -36,8 +37,8 @@ The string to compare to the substring at the end of this instance.
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the end of this string instance matches the specified string, otherwise **false**.
 
 

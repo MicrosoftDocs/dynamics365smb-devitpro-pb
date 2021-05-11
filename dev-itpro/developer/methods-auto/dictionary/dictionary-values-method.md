@@ -1,8 +1,9 @@
 ---
 title: "Dictionary.Values Method"
+description: "Gets a collection containing the values in the Dictionary."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,13 +28,13 @@ Values :=   Dictionary.Values()
 > This method can be invoked using property access syntax.
 
 ## Parameters
-*Dictionary*
-&emsp;Type: [Dictionary](dictionary-data-type.md)
+*Dictionary*  
+&emsp;Type: [Dictionary](dictionary-data-type.md)  
 An instance of the [Dictionary](dictionary-data-type.md) data type.
 
 ## Return Value
-*Values*
-&emsp;Type: [List of [TValue]](../list/list-data-type.md)
+*Values*  
+&emsp;Type: [List of [TValue]](../list/list-data-type.md)  
 A list containing the values of the Dictionary.
 
 

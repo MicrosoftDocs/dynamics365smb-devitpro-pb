@@ -1,8 +1,9 @@
 ---
 title: "Xmlport.ImportFile Method"
+description: "Gets or sets the ImportFile property."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,8 +27,8 @@ Gets or sets the ImportFile property.
 > [!NOTE]
 > This method can be invoked using property access syntax.
 ## Parameters
-*Xmlport*
-&emsp;Type: [Xmlport](xmlport-data-type.md)
+*Xmlport*  
+&emsp;Type: [Xmlport](xmlport-data-type.md)  
 An instance of the [Xmlport](xmlport-data-type.md) data type.
 
 *ImportFile*  
@@ -37,8 +38,8 @@ The new value of the ImportFile property. If the XmlPort is designed for export 
 
 
 ## Return Value
-*ImportFile*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*ImportFile*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 The current value of the ImportFile property.
 
 
