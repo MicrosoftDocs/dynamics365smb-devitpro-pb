@@ -1,8 +1,9 @@
 ---
 title: "RecordId.TableNo Method"
+description: "Gets the table number of the table that is identified by RecordID. This function returns an error if the record is blank."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,13 +28,13 @@ No :=   RecordId.TableNo()
 > This method can be invoked using property access syntax.
 
 ## Parameters
-*RecordId*
-&emsp;Type: [RecordId](recordid-data-type.md)
+*RecordId*  
+&emsp;Type: [RecordId](recordid-data-type.md)  
 An instance of the [RecordId](recordid-data-type.md) data type.
 
 ## Return Value
-*No*
-&emsp;Type: [Integer](../integer/integer-data-type.md)
+*No*  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 The ID of the table.
 
 

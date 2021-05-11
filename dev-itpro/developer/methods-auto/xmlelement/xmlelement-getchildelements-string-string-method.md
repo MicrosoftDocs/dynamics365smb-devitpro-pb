@@ -1,8 +1,9 @@
 ---
 title: "XmlElement.GetChildElements Method"
+description: "Gets a list containing the child elements for this element, in document order."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Gets a list containing the child elements for this element, in document order.
 ChildElements :=   XmlElement.GetChildElements(LocalName: String, NamespaceUri: String)
 ```
 ## Parameters
-*XmlElement*
-&emsp;Type: [XmlElement](xmlelement-data-type.md)
+*XmlElement*  
+&emsp;Type: [XmlElement](xmlelement-data-type.md)  
 An instance of the [XmlElement](xmlelement-data-type.md) data type.
 
 *LocalName*  
@@ -38,8 +39,8 @@ The namespace URI of the elements to retrieve.
 
 
 ## Return Value
-*ChildElements*
-&emsp;Type: [XmlNodeList](../xmlnodelist/xmlnodelist-data-type.md)
+*ChildElements*  
+&emsp;Type: [XmlNodeList](../xmlnodelist/xmlnodelist-data-type.md)  
 A list containing the child elements for this element, in document order.
 
 

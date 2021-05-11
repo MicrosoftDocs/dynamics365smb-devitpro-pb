@@ -1,8 +1,9 @@
 ---
 title: "ModuleInfo.AppVersion Method"
+description: "Gets the version of the specified application's metadata."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,13 +28,13 @@ AppVersion :=   ModuleInfo.AppVersion()
 > This method can be invoked using property access syntax.
 
 ## Parameters
-*ModuleInfo*
-&emsp;Type: [ModuleInfo](moduleinfo-data-type.md)
+*ModuleInfo*  
+&emsp;Type: [ModuleInfo](moduleinfo-data-type.md)  
 An instance of the [ModuleInfo](moduleinfo-data-type.md) data type.
 
 ## Return Value
-*AppVersion*
-&emsp;Type: [Version](../version/version-data-type.md)
+*AppVersion*  
+&emsp;Type: [Version](../version/version-data-type.md)  
 The version of the specified application's metadata.
 
 

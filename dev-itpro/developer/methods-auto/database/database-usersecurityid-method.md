@@ -1,8 +1,9 @@
 ---
 title: "Database.UserSecurityId Method"
+description: "Gets the unique identifier of the user that is logged on to the current session."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,8 +29,8 @@ USID :=   Database.UserSecurityId()
 
 
 ## Return Value
-*USID*
-&emsp;Type: [Guid](../guid/guid-data-type.md)
+*USID*  
+&emsp;Type: [Guid](../guid/guid-data-type.md)  
 The ID that is assigned to the user by the application. This is the value of the User Security ID field in table 2000000120, the User table, for the current user.
 
 

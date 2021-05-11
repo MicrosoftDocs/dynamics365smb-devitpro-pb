@@ -1,8 +1,9 @@
 ---
 title: "System.Variant2Date Method"
+description: "Gets a date from a variant."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -32,8 +33,8 @@ The input variant.
 
 
 ## Return Value
-*Date*
-&emsp;Type: [Date](../date/date-data-type.md)
+*Date*  
+&emsp;Type: [Date](../date/date-data-type.md)  
 
 
 

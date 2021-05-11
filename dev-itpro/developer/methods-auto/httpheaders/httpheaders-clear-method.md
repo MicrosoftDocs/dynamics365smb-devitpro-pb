@@ -1,8 +1,9 @@
 ---
 title: "HttpHeaders.Clear Method"
+description: "Sets the HttpHeaders variable to the default value."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,8 +26,8 @@ Sets the HttpHeaders variable to the default value.
 ```
 
 ## Parameters
-*HttpHeaders*
-&emsp;Type: [HttpHeaders](httpheaders-data-type.md)
+*HttpHeaders*  
+&emsp;Type: [HttpHeaders](httpheaders-data-type.md)  
 An instance of the [HttpHeaders](httpheaders-data-type.md) data type.
 
 

@@ -1,8 +1,9 @@
 ---
 title: "XmlComment.WriteTo Method"
+description: "Serializes and saves the current node to the given variable."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Serializes and saves the current node to the given variable.
 [Ok := ]  XmlComment.WriteTo(WriteOptions: XmlWriteOptions, var Text: Text)
 ```
 ## Parameters
-*XmlComment*
-&emsp;Type: [XmlComment](xmlcomment-data-type.md)
+*XmlComment*  
+&emsp;Type: [XmlComment](xmlcomment-data-type.md)  
 An instance of the [XmlComment](xmlcomment-data-type.md) data type.
 
 *WriteOptions*  
@@ -38,8 +39,8 @@ The Text variable to which you want to save the serialized representation of the
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

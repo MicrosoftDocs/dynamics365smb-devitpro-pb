@@ -1,8 +1,9 @@
 ---
 title: "RecordRef.SetLoadFields Method"
+description: "Sets the fields to be initially loaded when the record is retrieved from its data source. This will overwrite fields previously selected for initial load."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Sets the fields to be initially loaded when the record is retrieved from its dat
 [Ok := ]  RecordRef.SetLoadFields([Fields: Integer,...])
 ```
 ## Parameters
-*RecordRef*
-&emsp;Type: [RecordRef](recordref-data-type.md)
+*RecordRef*  
+&emsp;Type: [RecordRef](recordref-data-type.md)  
 An instance of the [RecordRef](recordref-data-type.md) data type.
 
 *Fields*  
@@ -34,8 +35,8 @@ The FieldNo's of the fields to be loaded.
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if all fields are selected for subsequent loads; otherwise, **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

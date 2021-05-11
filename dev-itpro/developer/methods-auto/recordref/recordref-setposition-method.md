@@ -1,8 +1,9 @@
 ---
 title: "RecordRef.SetPosition Method"
+description: "Sets the fields in a primary key on a record to the values specified in the String parameter. The remaining fields are not changed."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Sets the fields in a primary key on a record to the values specified in the Stri
  RecordRef.SetPosition(String: String)
 ```
 ## Parameters
-*RecordRef*
-&emsp;Type: [RecordRef](recordref-data-type.md)
+*RecordRef*  
+&emsp;Type: [RecordRef](recordref-data-type.md)  
 An instance of the [RecordRef](recordref-data-type.md) data type.
 
 *String*  

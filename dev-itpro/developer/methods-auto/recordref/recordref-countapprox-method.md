@@ -1,8 +1,9 @@
 ---
 title: "RecordRef.CountApprox Method"
+description: "Gets an approximate count of the number of records in the table"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,13 +28,13 @@ Number :=   RecordRef.CountApprox()
 > This method can be invoked using property access syntax.
 
 ## Parameters
-*RecordRef*
-&emsp;Type: [RecordRef](recordref-data-type.md)
+*RecordRef*  
+&emsp;Type: [RecordRef](recordref-data-type.md)  
 An instance of the [RecordRef](recordref-data-type.md) data type.
 
 ## Return Value
-*Number*
-&emsp;Type: [Integer](../integer/integer-data-type.md)
+*Number*  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 Approximate number of records in the table.
 
 

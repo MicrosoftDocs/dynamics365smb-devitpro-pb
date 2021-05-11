@@ -1,8 +1,9 @@
 ---
 title: "Enum.Ordinals Method"
+description: "Gets the ordinal numbers/ID's for the values"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,8 +27,8 @@ List of ordinals :=   Enum.Ordinals()
 
 
 ## Return Value
-*List of ordinals*
-&emsp;Type: [List of [Integer]](../list/list-data-type.md)
+*List of ordinals*  
+&emsp;Type: [List of [Integer]](../list/list-data-type.md)  
 
 
 

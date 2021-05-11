@@ -1,8 +1,9 @@
 ---
 title: "System.RoundDateTime Method"
+description: "Rounds a DateTime."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -43,8 +44,8 @@ This optional parameter specifies how to round the DateTime. The default roundin
 
 
 ## Return Value
-*NewDatetime*
-&emsp;Type: [DateTime](../datetime/datetime-data-type.md)
+*NewDatetime*  
+&emsp;Type: [DateTime](../datetime/datetime-data-type.md)  
 The rounded result.
 
 

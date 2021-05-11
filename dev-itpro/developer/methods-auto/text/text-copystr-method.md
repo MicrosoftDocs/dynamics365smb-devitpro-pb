@@ -1,8 +1,9 @@
 ---
 title: "Text.CopyStr Method"
+description: "Copies a substring of any length from a specific position in a string (text or code) to a new string."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -40,8 +41,8 @@ The number of characters to copy. If the value of Length is less than 0, then th
 
 
 ## Return Value
-*NewString*
-&emsp;Type: [String](../string/string-data-type.md)
+*NewString*  
+&emsp;Type: [String](../string/string-data-type.md)  
 The copied string.
 
 

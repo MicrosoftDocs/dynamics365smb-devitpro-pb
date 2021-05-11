@@ -1,8 +1,9 @@
 ---
 title: "Integer Data Type"
+description: "Stores whole numbers with values that range from -2,147,483,647 to 2,147,483,647."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

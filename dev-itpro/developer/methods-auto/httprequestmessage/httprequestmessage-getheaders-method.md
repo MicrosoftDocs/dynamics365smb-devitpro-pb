@@ -1,8 +1,9 @@
 ---
 title: "HttpRequestMessage.GetHeaders Method"
+description: "Gets a reference to the collection of HTTP request headers."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Gets a reference to the collection of HTTP request headers.
 [Ok := ]  HttpRequestMessage.GetHeaders(var Headers: HttpHeaders)
 ```
 ## Parameters
-*HttpRequestMessage*
-&emsp;Type: [HttpRequestMessage](httprequestmessage-data-type.md)
+*HttpRequestMessage*  
+&emsp;Type: [HttpRequestMessage](httprequestmessage-data-type.md)  
 An instance of the [HttpRequestMessage](httprequestmessage-data-type.md) data type.
 
 *Headers*  
@@ -34,8 +35,8 @@ A variable that will contain a reference to the collection of HTTP request heade
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the operation was completed successfully, otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

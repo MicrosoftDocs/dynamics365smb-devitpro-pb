@@ -14,6 +14,8 @@ ms.author: jswymer
 
 # Restoring an Environment in the Admin Center
 
+**APPLIES TO:** Business Central 2020 release wave 2, update 17.3, and later
+
 > [!IMPORTANT]
 > This feature is in preview. It might change or be removed in the future updates.
 

@@ -1,8 +1,9 @@
 ---
 title: "Text.DelStr Method"
+description: "Deletes a substring inside a string (text or code)."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -40,8 +41,8 @@ Specifies how many characters to delete. Length must be greater than zero (0).
 
 
 ## Return Value
-*NewString*
-&emsp;Type: [String](../string/string-data-type.md)
+*NewString*  
+&emsp;Type: [String](../string/string-data-type.md)  
 The input string without the specified substring.
 
 

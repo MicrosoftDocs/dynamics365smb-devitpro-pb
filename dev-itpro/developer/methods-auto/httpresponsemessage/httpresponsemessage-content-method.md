@@ -1,8 +1,9 @@
 ---
 title: "HttpResponseMessage.Content Method"
+description: "Gets the contents of the HTTP response."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,13 +28,13 @@ Content :=   HttpResponseMessage.Content()
 > This method can be invoked using property access syntax.
 
 ## Parameters
-*HttpResponseMessage*
-&emsp;Type: [HttpResponseMessage](httpresponsemessage-data-type.md)
+*HttpResponseMessage*  
+&emsp;Type: [HttpResponseMessage](httpresponsemessage-data-type.md)  
 An instance of the [HttpResponseMessage](httpresponsemessage-data-type.md) data type.
 
 ## Return Value
-*Content*
-&emsp;Type: [HttpContent](../httpcontent/httpcontent-data-type.md)
+*Content*  
+&emsp;Type: [HttpContent](../httpcontent/httpcontent-data-type.md)  
 The contents of the HTTP response.
 
 

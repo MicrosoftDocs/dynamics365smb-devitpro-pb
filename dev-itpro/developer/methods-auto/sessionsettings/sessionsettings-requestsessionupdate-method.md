@@ -1,8 +1,9 @@
 ---
 title: "SessionSettings.RequestSessionUpdate Method"
+description: "Passes a SessionSettings object to the client to request a new session that uses the user personalization properties that are set in the object. The current client session is abandoned and a new session is started."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Passes a SessionSettings object to the client to request a new session that uses
  SessionSettings.RequestSessionUpdate(saveSettings: Boolean)
 ```
 ## Parameters
-*SessionSettings*
-&emsp;Type: [SessionSettings](sessionsettings-data-type.md)
+*SessionSettings*  
+&emsp;Type: [SessionSettings](sessionsettings-data-type.md)  
 An instance of the [SessionSettings](sessionsettings-data-type.md) data type.
 
 *saveSettings*  

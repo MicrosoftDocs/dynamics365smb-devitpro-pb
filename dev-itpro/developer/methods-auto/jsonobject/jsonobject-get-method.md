@@ -1,8 +1,9 @@
 ---
 title: "JsonObject.Get Method"
+description: "Retrieves the value of a property with a given key from a JsonObject."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Retrieves the value of a property with a given key from a JsonObject.
 [Ok := ]  JsonObject.Get(Key: String, var Result: JsonToken)
 ```
 ## Parameters
-*JsonObject*
-&emsp;Type: [JsonObject](jsonobject-data-type.md)
+*JsonObject*  
+&emsp;Type: [JsonObject](jsonobject-data-type.md)  
 An instance of the [JsonObject](jsonobject-data-type.md) data type.
 
 *Key*  
@@ -38,8 +39,8 @@ A variable of type JsonToken that will contain the result if the operation is su
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the operation was successful; otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

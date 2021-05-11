@@ -1,8 +1,9 @@
 ---
 title: "TestPage.ValidationErrorCount Method"
+description: "Gets the number of validation errors that occurred on the test page."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,13 +26,13 @@ Count :=   TestPage.ValidationErrorCount()
 ```
 
 ## Parameters
-*TestPage*
-&emsp;Type: [TestPage](testpage-data-type.md)
+*TestPage*  
+&emsp;Type: [TestPage](testpage-data-type.md)  
 An instance of the [TestPage](testpage-data-type.md) data type.
 
 ## Return Value
-*Count*
-&emsp;Type: [Integer](../integer/integer-data-type.md)
+*Count*  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 The number of validation errors that occurred on the test page.
 
 

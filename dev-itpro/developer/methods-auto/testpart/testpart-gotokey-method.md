@@ -1,8 +1,9 @@
 ---
 title: "TestPart.GoToKey Method"
+description: "Finds the row in a data set on the test page that is identified by the specified values."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Finds the row in a data set on the test page that is identified by the specified
 [Ok := ]  TestPart.GoToKey([Value: Any,...])
 ```
 ## Parameters
-*TestPart*
-&emsp;Type: [TestPart](testpart-data-type.md)
+*TestPart*  
+&emsp;Type: [TestPart](testpart-data-type.md)  
 An instance of the [TestPart](testpart-data-type.md) data type.
 
 *Value*  
@@ -34,8 +35,8 @@ The value or list of values to use to find the row. If this parameter is omitted
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

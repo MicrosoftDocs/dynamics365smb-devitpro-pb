@@ -1,8 +1,9 @@
 ---
 title: "System.IsNullGuid Method"
+description: "Indicates whether a value has been assigned to a GUID. A null GUID that consists only of zeros is valid but must never be used for references."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -32,8 +33,8 @@ The GUID that you want to check whether it is null.
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 
 
 

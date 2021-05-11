@@ -1,8 +1,9 @@
 ---
 title: "FilterPageBuilder.GetView Method"
+description: "Gets the filter view (which defines the sort order, key, and filters) for the record in the specified filter control of a filter page. The view contains all fields in the filter control that have a default filter value."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Gets the filter view (which defines the sort order, key, and filters) for the re
 View :=   FilterPageBuilder.GetView(Name: String [, UseNames: Boolean])
 ```
 ## Parameters
-*FilterPageBuilder*
-&emsp;Type: [FilterPageBuilder](filterpagebuilder-data-type.md)
+*FilterPageBuilder*  
+&emsp;Type: [FilterPageBuilder](filterpagebuilder-data-type.md)  
 An instance of the [FilterPageBuilder](filterpagebuilder-data-type.md) data type.
 
 *Name*  
@@ -39,8 +40,8 @@ Specifies whether a field caption or field number should be returned. This param
 
 
 ## Return Value
-*View*
-&emsp;Type: [String](../string/string-data-type.md)
+*View*  
+&emsp;Type: [String](../string/string-data-type.md)  
 The view that is configured for the filter control that is identified by Name.
 
 

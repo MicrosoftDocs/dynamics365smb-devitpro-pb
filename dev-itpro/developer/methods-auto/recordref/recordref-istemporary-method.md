@@ -1,8 +1,9 @@
 ---
 title: "RecordRef.IsTemporary Method"
+description: "Determines whether a RecordRef refers to a temporary table."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,13 +28,13 @@ Temporary :=   RecordRef.IsTemporary()
 > This method can be invoked using property access syntax.
 
 ## Parameters
-*RecordRef*
-&emsp;Type: [RecordRef](recordref-data-type.md)
+*RecordRef*  
+&emsp;Type: [RecordRef](recordref-data-type.md)  
 An instance of the [RecordRef](recordref-data-type.md) data type.
 
 ## Return Value
-*Temporary*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Temporary*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the RecordRef refers to a temporary table, otherwise **false**.
 
 

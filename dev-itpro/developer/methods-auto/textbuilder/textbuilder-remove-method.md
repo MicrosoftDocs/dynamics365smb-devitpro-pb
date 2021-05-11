@@ -1,8 +1,9 @@
 ---
 title: "TextBuilder.Remove Method"
+description: "Removes the specified range of characters from this TextBuilder instance."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Removes the specified range of characters from this TextBuilder instance.
 [Ok := ]  TextBuilder.Remove(StartIndex: Integer, Count: Integer)
 ```
 ## Parameters
-*TextBuilder*
-&emsp;Type: [TextBuilder](textbuilder-data-type.md)
+*TextBuilder*  
+&emsp;Type: [TextBuilder](textbuilder-data-type.md)  
 An instance of the [TextBuilder](textbuilder-data-type.md) data type.
 
 *StartIndex*  
@@ -38,8 +39,8 @@ The number of characters to remove.
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the specified range of characters was successfully removed, otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

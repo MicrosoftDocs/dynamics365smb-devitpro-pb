@@ -1,8 +1,9 @@
 ---
 title: "Debugger.EnableSqlTrace Method"
+description: "Enables or verifies SQL tracing. If you enable SQL tracing, then SQL Server events for selected sessions on the server instance are collected."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -35,8 +36,8 @@ If you specify the optional NewIsEnabled parameter, then the method sets whether
 
 
 ## Return Value
-*IsEnabled*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*IsEnabled*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 
 
 

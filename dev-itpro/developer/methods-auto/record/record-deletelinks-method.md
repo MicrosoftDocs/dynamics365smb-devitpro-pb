@@ -1,8 +1,9 @@
 ---
 title: "Record.DeleteLinks Method"
+description: "Deletes all of the links that have been added to a record."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,8 +26,8 @@ Deletes all of the links that have been added to a record.
 ```
 
 ## Parameters
-*Record*
-&emsp;Type: [Record](record-data-type.md)
+*Record*  
+&emsp;Type: [Record](record-data-type.md)  
 An instance of the [Record](record-data-type.md) data type.
 
 

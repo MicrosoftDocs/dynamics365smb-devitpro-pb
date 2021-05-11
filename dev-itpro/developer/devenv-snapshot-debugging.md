@@ -3,7 +3,7 @@ title: "Snapshot Debugging"
 description: "Overview of how snapshot debugging allows recording running AL code for Business Central"
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
@@ -21,6 +21,9 @@ Snapshot debugging introduces the concept of *snappoints*. A snappoint is a brea
 
 - Snappoints  
 - AL exceptions
+
+> [!NOTE]  
+> With [!INCLUDE[prod_short](includes/prod_short.md)] version 18.1, it is possible to snapshot debug event subscribers triggered from built-in codeunit triggers if a snappoint is placed in an AL file on the stack trace that leads to the built-in method. For more information, see [Snapshot debugging built-in methods](devenv-snapshot-debugging.md#snapshot-debugging-built-in-codeunit-triggers).
 
 > [!IMPORTANT]  
 > To enable snapshot debugging it is very important that the symbols on the tenant match the symbols on the server. This is not automatically detected, and must be manually checked. In this release, you can ensure this by copying the specific sandbox and download symbols from that copy. Furthermore, any code that snappoints are set in, must have been deployed, otherwise debugging will not work. For more information, see the section [Downloading symbols on the snapshot debugger endpoint](devenv-snapshot-debugging.md#downloading-symbols-on-the-snapshot-debugger-endpoint).
@@ -58,7 +61,7 @@ To record the AL execution, the server will now wait for a connection to happen 
 - If only a `userId` is specified for a given tenant then the next session that is specified in the `breakOnNext` configuration parameter is snapshot debugged. 
 - If no `userId` is specified then the next session on a given tenant that validates the `breakOnNext` parameter will be snapshot debugged. 
 
-Once a snapshot debugging session is initialized the snapshot debugging session counter on the status-bar will be updated and look like this:
+Once a snapshot debugging session is initialized the snapshot debugging session counter on the status bar will be updated and look like this:
 
 ![Snapshot Debugger Counter](media/snapshotdebugger.png)
 
@@ -101,7 +104,7 @@ Symbols download is using the **snapshotInitialize** debug configuration setting
             "request": "snapshotInitialize",
             "environmentType": "OnPrem",
             "server": "http://localhost",
-            "serverInstance": "BC170",
+            "serverInstance": "BC180",
             "authentication": "UserPassword",
             "breakOnNext": "WebClient"
         },
@@ -121,6 +124,10 @@ Once a snapshot debugging session starts in Visual Studio Code, code execution w
 
 The user can set breakpoints and continue execution to that breakpoint for testing, for example, if a line is hit, but it is the snappoint that carries the real information.
 
+## Snapshot debugging built-in codeunit triggers
+
+Built-in codeunit triggers can be snapshot-debugged if they are part of the stack trace, these are System Action Triggers, or Company Triggers. This provides a way to snapshot debug that part of the Base App too. To help locate where built-in codeunit triggers are called, use the **Event Recorder** in [!INCLUDE[prod_short](includes/prod_short.md)]. From the code, when all symbols on the snapshot endpoint have been downloaded, see [Downloading symbols on the snapshot debugger endpoint](devenv-snapshot-debugging.md#downloading-symbols-on-the-snapshot-debugger-endpoint), you can add AL code that contains a reference to that particular event subscription and then use **Go to Definition** to locate the place where that particular codeunit trigger is defined in the .dal file. Adding a snappoint to the code in the .dal file and then initiating the snapshot debugger session will ensure that the code is part of the stacktrace. When the generated snapshot file is then opened in the debugger, the execution will break on the snappoint.
+
 ## Snapshot debugging versus regular debugging
 
 Snapshot debugging is almost the same as a regular debugging with the differences mentioned in the following:
@@ -137,9 +144,6 @@ Snapshot debugging is almost the same as a regular debugging with the difference
 |A snappoint may resolve as a non-reachable breakpoint if there was no execution state on the server hitting the snappoint.|
 |A snapshot debugger session with a Business Central server will be closed if not attached to after 30 minutes.|
 |If a snapshot debugger session is started, it has to be finished after 10 minutes.|
-
-<!-- Getting variables is expensive.-->
-<!-- We may also enable a server settings (not in effect now, but we may for the Prod) that may not collect variable information on snap points if the resource consumption on the server (SAAS scenario) is within certain (we determine it) thresholds. I do not know how to put this "nicely", but basically we can anytime disable to get variable information for sessions that behave like "elephants in a china shop" -->
  
 ## See Also
 

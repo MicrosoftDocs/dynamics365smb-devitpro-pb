@@ -1,8 +1,9 @@
 ---
 title: "Report.WordXmlPart Method"
+description: "Returns the report data structure as structured XML that is compatible with Microsoft Word custom XML parts. The method has an instance call and a static call. The following code shows the syntax of the WORDXMLPART function. The first line of code is the syntax for an instance method call. The second line of code is the syntax for a static method call."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -41,8 +42,8 @@ The following example illustrates the same XML with the ExtendedFormat set to fa
 
 
 ## Return Value
-*String*
-&emsp;Type: [String](../string/string-data-type.md)
+*String*  
+&emsp;Type: [String](../string/string-data-type.md)  
 The report data structure as structured XML that is compatible with Microsoft Word custom XML parts.
 
 

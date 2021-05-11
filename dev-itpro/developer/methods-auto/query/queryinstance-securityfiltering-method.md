@@ -1,8 +1,9 @@
 ---
 title: "Query.SecurityFiltering Method"
+description: "Gets or sets how security filters are applied to the query."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,8 +27,8 @@ Gets or sets how security filters are applied to the query.
 > [!NOTE]
 > This method can be invoked using property access syntax.
 ## Parameters
-*Query*
-&emsp;Type: [Query](query-data-type.md)
+*Query*  
+&emsp;Type: [Query](query-data-type.md)  
 An instance of the [Query](query-data-type.md) data type.
 
 *NewSecurityFiltering*  
@@ -36,8 +37,8 @@ The new security filter for the query
 
 
 ## Return Value
-*SecurityFiltering*
-&emsp;Type: [SecurityFilter](../securityfilter/securityfilter-option.md)
+*SecurityFiltering*  
+&emsp;Type: [SecurityFilter](../securityfilter/securityfilter-option.md)  
 The security filter applied to the query.
 
 

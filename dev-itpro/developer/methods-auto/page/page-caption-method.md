@@ -1,8 +1,9 @@
 ---
 title: "Page.Caption Method"
+description: "The caption shown in the title bar. For example, the default value in English (United States) is the same as the name of the page."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,8 +27,8 @@ The caption shown in the title bar. For example, the default value in English (U
 > [!NOTE]
 > This method can be invoked using property access syntax.
 ## Parameters
-*Page*
-&emsp;Type: [Page](page-data-type.md)
+*Page*  
+&emsp;Type: [Page](page-data-type.md)  
 An instance of the [Page](page-data-type.md) data type.
 
 *NewCaption*  
@@ -36,8 +37,8 @@ The new caption text.
 
 
 ## Return Value
-*Caption*
-&emsp;Type: [String](../string/string-data-type.md)
+*Caption*  
+&emsp;Type: [String](../string/string-data-type.md)  
 The text used for the caption.
 
 

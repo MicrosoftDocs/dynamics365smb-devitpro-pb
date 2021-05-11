@@ -1,8 +1,9 @@
 ---
 title: "System.CalcDate Method"
+description: "Calculates a new date that is based on a date expression and a reference date."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -48,8 +49,8 @@ Use this optional parameter to define a reference date. The default is the curre
 
 
 ## Return Value
-*NewDate*
-&emsp;Type: [Date](../date/date-data-type.md)
+*NewDate*  
+&emsp;Type: [Date](../date/date-data-type.md)  
 
 
 

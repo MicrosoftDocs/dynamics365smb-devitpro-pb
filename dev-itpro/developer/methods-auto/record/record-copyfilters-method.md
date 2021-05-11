@@ -1,8 +1,9 @@
 ---
 title: "Record.CopyFilters Method"
+description: "Copies all the filters set by the SETFILTER method (Record) or the SETRANGE method (Record) from one record to another."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Copies all the filters set by the SETFILTER method (Record) or the SETRANGE meth
  Record.CopyFilters(var FromRecord: Record)
 ```
 ## Parameters
-*Record*
-&emsp;Type: [Record](record-data-type.md)
+*Record*  
+&emsp;Type: [Record](record-data-type.md)  
 An instance of the [Record](record-data-type.md) data type.
 
 *FromRecord*  

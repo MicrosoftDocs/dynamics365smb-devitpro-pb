@@ -1,8 +1,9 @@
 ---
 title: "JsonArray.Add Method"
+description: "Adds a new value at the end of the JsonArray."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Adds a new value at the end of the JsonArray.
  JsonArray.Add(Value: Time)
 ```
 ## Parameters
-*JsonArray*
-&emsp;Type: [JsonArray](jsonarray-data-type.md)
+*JsonArray*  
+&emsp;Type: [JsonArray](jsonarray-data-type.md)  
 An instance of the [JsonArray](jsonarray-data-type.md) data type.
 
 *Value*  

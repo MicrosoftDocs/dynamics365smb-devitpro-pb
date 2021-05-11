@@ -1,8 +1,9 @@
 ---
 title: "Xmlport.FieldDelimiter Method"
+description: "Gets and sets the FiledDelimiter used when running, importing or exporting the XmlPort."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,8 +27,8 @@ Gets and sets the FiledDelimiter used when running, importing or exporting the X
 > [!NOTE]
 > This method can be invoked using property access syntax.
 ## Parameters
-*Xmlport*
-&emsp;Type: [Xmlport](xmlport-data-type.md)
+*Xmlport*  
+&emsp;Type: [Xmlport](xmlport-data-type.md)  
 An instance of the [Xmlport](xmlport-data-type.md) data type.
 
 *Delimiter*  
@@ -36,8 +37,8 @@ The new value of the FieldDelimiter.
 
 
 ## Return Value
-*Delimiter*
-&emsp;Type: [String](../string/string-data-type.md)
+*Delimiter*  
+&emsp;Type: [String](../string/string-data-type.md)  
 The FieldDelimiter used when running, importing or exporting the XmlPort.
 
 

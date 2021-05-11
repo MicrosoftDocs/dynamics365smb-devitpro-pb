@@ -1,8 +1,9 @@
 ---
 title: "TestPart.FindPreviousField Method"
+description: "Finds the previous field in the data set that is displayed on a test page."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Finds the previous field in the data set that is displayed on a test page.
 [Ok := ]  TestPart.FindPreviousField(Field: TestField, Value: Any)
 ```
 ## Parameters
-*TestPart*
-&emsp;Type: [TestPart](testpart-data-type.md)
+*TestPart*  
+&emsp;Type: [TestPart](testpart-data-type.md)  
 An instance of the [TestPart](testpart-data-type.md) data type.
 
 *Field*  
@@ -37,8 +38,8 @@ The field to find.
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

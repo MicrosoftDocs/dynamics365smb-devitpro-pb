@@ -1,8 +1,9 @@
 ---
 title: "Text.Remove Method"
+description: "Returns a new Text in which a specified number of characters from the current string are deleted."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,8 +27,8 @@ Result :=   Text.Remove(StartIndex: Integer [, Count: Integer])
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
 ## Parameters
-*Text*
-&emsp;Type: [Text](text-data-type.md)
+*Text*  
+&emsp;Type: [Text](text-data-type.md)  
 An instance of the [Text](text-data-type.md) data type.
 
 *StartIndex*  
@@ -40,8 +41,8 @@ The number of characters to delete.
 
 
 ## Return Value
-*Result*
-&emsp;Type: [Text](text-data-type.md)
+*Result*  
+&emsp;Type: [Text](text-data-type.md)  
 The end result Text.
 
 

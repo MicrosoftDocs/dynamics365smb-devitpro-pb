@@ -1,8 +1,9 @@
 ---
 title: "Record.GetRangeMax Method"
+description: "Gets the maximum value in a range for a field."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Gets the maximum value in a range for a field.
 Value :=   Record.GetRangeMax(Field: Any)
 ```
 ## Parameters
-*Record*
-&emsp;Type: [Record](record-data-type.md)
+*Record*  
+&emsp;Type: [Record](record-data-type.md)  
 An instance of the [Record](record-data-type.md) data type.
 
 *Field*  
@@ -35,8 +36,8 @@ The field for which you want to find the maximum value. The current filter on Fi
 
 
 ## Return Value
-*Value*
-&emsp;Type: [Any](../any/any-data-type.md)
+*Value*  
+&emsp;Type: [Any](../any/any-data-type.md)  
 
 
 
