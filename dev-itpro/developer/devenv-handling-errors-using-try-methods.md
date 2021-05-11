@@ -47,7 +47,7 @@ You can use the [GetLastErrorText method](methods-auto/system/system-getlasterro
 
 ## Creating a try method
 
-To create a try method, add a method in the AL code of an object such as a codeunit as usual, and then set the [TryFunction Attribute](methods/devenv-tryfunction-attribute.md) property to **true**. 
+To create a try method, add a method in the AL code of an object such as a codeunit as usual, and then set the [TryFunction Attribute](methods/devenv-tryfunction-attribute.md). 
 
 <!-- A try method has the following restrictions:  
 

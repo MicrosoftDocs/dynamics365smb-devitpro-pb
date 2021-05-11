@@ -1,8 +1,9 @@
 ---
 title: "RecordRef.FieldIndex Method"
+description: "Gets the FieldRef of the field that has the specified index in the table that is referred to by the RecordRef."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Gets the FieldRef of the field that has the specified index in the table that is
 Field :=   RecordRef.FieldIndex(Index: Integer)
 ```
 ## Parameters
-*RecordRef*
-&emsp;Type: [RecordRef](recordref-data-type.md)
+*RecordRef*  
+&emsp;Type: [RecordRef](recordref-data-type.md)  
 An instance of the [RecordRef](recordref-data-type.md) data type.
 
 *Index*  
@@ -34,8 +35,8 @@ The index of the field.
 
 
 ## Return Value
-*Field*
-&emsp;Type: [FieldRef](../fieldref/fieldref-data-type.md)
+*Field*  
+&emsp;Type: [FieldRef](../fieldref/fieldref-data-type.md)  
 The FieldRef of the field that has the specified index.
 
 

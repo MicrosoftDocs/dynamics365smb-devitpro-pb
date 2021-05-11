@@ -1,8 +1,9 @@
 ---
 title: "JsonObject.Contains Method"
+description: "Verifies if a JsonObject contains a property with a given key."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Verifies if a JsonObject contains a property with a given key.
 Ok :=   JsonObject.Contains(Key: String)
 ```
 ## Parameters
-*JsonObject*
-&emsp;Type: [JsonObject](jsonobject-data-type.md)
+*JsonObject*  
+&emsp;Type: [JsonObject](jsonobject-data-type.md)  
 An instance of the [JsonObject](jsonobject-data-type.md) data type.
 
 *Key*  
@@ -34,8 +35,8 @@ An instance of the [JsonObject](jsonobject-data-type.md) data type.
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the object contains a property with the given key; otherwise, **false**.
 
 

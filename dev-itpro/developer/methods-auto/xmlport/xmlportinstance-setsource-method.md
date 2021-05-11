@@ -1,8 +1,9 @@
 ---
 title: "Xmlport.SetSource Method"
+description: "Sets the source InStream of the XmlPort."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,8 +27,8 @@ Sets the source InStream of the XmlPort.
 > [!NOTE]
 > This method can be invoked using property access syntax.
 ## Parameters
-*Xmlport*
-&emsp;Type: [Xmlport](xmlport-data-type.md)
+*Xmlport*  
+&emsp;Type: [Xmlport](xmlport-data-type.md)  
 An instance of the [Xmlport](xmlport-data-type.md) data type.
 
 *InStream*  

@@ -1,8 +1,9 @@
 ---
 title: "Query.Open Method"
+description: "Runs a query object and generates a data set that can be read. The following code shows the syntax of the OPEN method. Query is a variable of the Query data type that specifies the query object."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,13 +26,13 @@ Runs a query object and generates a data set that can be read. The following cod
 ```
 
 ## Parameters
-*Query*
-&emsp;Type: [Query](query-data-type.md)
+*Query*  
+&emsp;Type: [Query](query-data-type.md)  
 An instance of the [Query](query-data-type.md) data type.
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

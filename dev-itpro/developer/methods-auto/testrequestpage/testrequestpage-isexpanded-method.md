@@ -1,8 +1,9 @@
 ---
 title: "TestRequestPage.IsExpanded Method"
+description: "Specifies if rows on a test page are expanded."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,13 +28,13 @@ Expanded :=   TestRequestPage.IsExpanded()
 > This method can be invoked using property access syntax.
 
 ## Parameters
-*TestRequestPage*
-&emsp;Type: [TestRequestPage](testrequestpage-data-type.md)
+*TestRequestPage*  
+&emsp;Type: [TestRequestPage](testrequestpage-data-type.md)  
 An instance of the [TestRequestPage](testrequestpage-data-type.md) data type.
 
 ## Return Value
-*Expanded*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Expanded*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the rows on the test page are expanded, otherwise **false**.
 
 

@@ -1,8 +1,9 @@
 ---
 title: "XmlAttribute.IsNamespaceDeclaration Method"
+description: "Determines if this attribute is a namespace declaration."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,13 +28,13 @@ IsNamespaceDeclaration :=   XmlAttribute.IsNamespaceDeclaration()
 > This method can be invoked using property access syntax.
 
 ## Parameters
-*XmlAttribute*
-&emsp;Type: [XmlAttribute](xmlattribute-data-type.md)
+*XmlAttribute*  
+&emsp;Type: [XmlAttribute](xmlattribute-data-type.md)  
 An instance of the [XmlAttribute](xmlattribute-data-type.md) data type.
 
 ## Return Value
-*IsNamespaceDeclaration*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*IsNamespaceDeclaration*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the attribute represents a namespace declaration, otherwise **false**.
 
 

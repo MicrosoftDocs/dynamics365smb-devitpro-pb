@@ -1,8 +1,9 @@
 ---
 title: "System.Date2DMY Method"
+description: "Gets the day, month, or year of a Date Data Type."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -35,8 +36,8 @@ The input date.
 
 
 ## Return Value
-*Number*
-&emsp;Type: [Integer](../integer/integer-data-type.md)
+*Number*  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 
 
 

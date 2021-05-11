@@ -1,8 +1,9 @@
 ---
 title: "System.ArrayLen Method"
+description: "Returns the total number of elements in an array or the number of elements in a specific dimension."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -36,8 +37,8 @@ If you omit this optional argument, the method returns the total number of eleme
 
 
 ## Return Value
-*Length*
-&emsp;Type: [Integer](../integer/integer-data-type.md)
+*Length*  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 
 
 

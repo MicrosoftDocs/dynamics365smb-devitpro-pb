@@ -1,8 +1,9 @@
 ---
 title: "Record.Count Method"
+description: "Counts the number of records in a table."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,13 +28,13 @@ Number :=   Record.Count()
 > This method can be invoked using property access syntax.
 
 ## Parameters
-*Record*
-&emsp;Type: [Record](record-data-type.md)
+*Record*  
+&emsp;Type: [Record](record-data-type.md)  
 An instance of the [Record](record-data-type.md) data type.
 
 ## Return Value
-*Number*
-&emsp;Type: [Integer](../integer/integer-data-type.md)
+*Number*  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 
 
 

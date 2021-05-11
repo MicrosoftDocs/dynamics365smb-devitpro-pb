@@ -1,8 +1,9 @@
 ---
 title: "Text.SelectStr Method"
+description: "Retrieves a substring from a comma-separated string."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -36,8 +37,8 @@ A string that contains substrings separated by commas. The maximum length of thi
 
 
 ## Return Value
-*NewString*
-&emsp;Type: [String](../string/string-data-type.md)
+*NewString*  
+&emsp;Type: [String](../string/string-data-type.md)  
 The substring from the comma-separated string at the index specified.
 
 

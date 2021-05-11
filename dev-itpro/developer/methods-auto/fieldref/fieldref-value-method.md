@@ -1,8 +1,9 @@
 ---
 title: "FieldRef.Value Method"
+description: "Sets or gets the value of the field that is currently selected. This method returns an error if no field is selected."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,8 +27,8 @@ Sets or gets the value of the field that is currently selected. This method retu
 > [!NOTE]
 > This method can be invoked using property access syntax.
 ## Parameters
-*FieldRef*
-&emsp;Type: [FieldRef](fieldref-data-type.md)
+*FieldRef*  
+&emsp;Type: [FieldRef](fieldref-data-type.md)  
 An instance of the [FieldRef](fieldref-data-type.md) data type.
 
 *NewValue*  
@@ -36,8 +37,8 @@ An instance of the [FieldRef](fieldref-data-type.md) data type.
 
 
 ## Return Value
-*Value*
-&emsp;Type: [Any](../any/any-data-type.md)
+*Value*  
+&emsp;Type: [Any](../any/any-data-type.md)  
 
 
 

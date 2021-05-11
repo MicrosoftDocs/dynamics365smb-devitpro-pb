@@ -1,8 +1,9 @@
 ---
 title: "XmlAttribute.NamespaceUri Method"
+description: "Gets the namespace URI of the attribute."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,13 +28,13 @@ NamespaceUri :=   XmlAttribute.NamespaceUri()
 > This method can be invoked using property access syntax.
 
 ## Parameters
-*XmlAttribute*
-&emsp;Type: [XmlAttribute](xmlattribute-data-type.md)
+*XmlAttribute*  
+&emsp;Type: [XmlAttribute](xmlattribute-data-type.md)  
 An instance of the [XmlAttribute](xmlattribute-data-type.md) data type.
 
 ## Return Value
-*NamespaceUri*
-&emsp;Type: [String](../string/string-data-type.md)
+*NamespaceUri*  
+&emsp;Type: [String](../string/string-data-type.md)  
 The namespace URI of the attribute.
 
 

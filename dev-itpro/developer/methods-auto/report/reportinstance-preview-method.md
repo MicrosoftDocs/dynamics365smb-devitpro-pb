@@ -1,8 +1,9 @@
 ---
 title: "Report.Preview Method"
+description: "Indicates whether a report is being printed in preview mode."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,13 +28,13 @@ IsPreview :=   Report.Preview()
 > This method can be invoked using property access syntax.
 
 ## Parameters
-*Report*
-&emsp;Type: [Report](report-data-type.md)
+*Report*  
+&emsp;Type: [Report](report-data-type.md)  
 An instance of the [Report](report-data-type.md) data type.
 
 ## Return Value
-*IsPreview*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*IsPreview*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the report is being printed in preview mode, otherwise **false**.
 
 

@@ -1,8 +1,9 @@
 ---
 title: "Session.LogMessage Method"
+description: "Logs a trace message to a telemetry account."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

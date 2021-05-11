@@ -1,8 +1,9 @@
 ---
 title: "Database.GetDefaultTableConnection Method"
+description: "Gets the default table connection based on the specified connection type. You must already have registered a table connection of this type."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -32,8 +33,8 @@ The type of table connection as defined in the TableType property.
 
 
 ## Return Value
-*Name*
-&emsp;Type: [String](../string/string-data-type.md)
+*Name*  
+&emsp;Type: [String](../string/string-data-type.md)  
 
 
 

@@ -1,8 +1,9 @@
 ---
 title: "Session.IsSessionActive Method"
+description: "Tests if the specified SessionID is active on the server instance where it was started."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -32,8 +33,8 @@ The ID of the session that you want to test if it is still active.
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the specified SessionID is active on the server instance where it was started, otherwise **false**.
 
 

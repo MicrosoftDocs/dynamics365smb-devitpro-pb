@@ -1,8 +1,9 @@
 ---
 title: "Notification.AddAction Method"
+description: "Specifies an action for the notification."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Specifies an action for the notification.
  Notification.AddAction(Caption: String, CodeunitID: Integer, MethodName: String)
 ```
 ## Parameters
-*Notification*
-&emsp;Type: [Notification](notification-data-type.md)
+*Notification*  
+&emsp;Type: [Notification](notification-data-type.md)  
 An instance of the [Notification](notification-data-type.md) data type.
 
 *Caption*  

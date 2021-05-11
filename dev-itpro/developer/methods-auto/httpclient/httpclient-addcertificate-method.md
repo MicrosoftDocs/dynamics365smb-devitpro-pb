@@ -1,8 +1,9 @@
 ---
 title: "HttpClient.AddCertificate Method"
+description: "Adds a certificate to the HttpClient class."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Adds a certificate to the HttpClient class.
  HttpClient.AddCertificate(Certificate: String [, Password: String])
 ```
 ## Parameters
-*HttpClient*
-&emsp;Type: [HttpClient](httpclient-data-type.md)
+*HttpClient*  
+&emsp;Type: [HttpClient](httpclient-data-type.md)  
 An instance of the [HttpClient](httpclient-data-type.md) data type.
 
 *Certificate*  

@@ -1,8 +1,9 @@
 ---
 title: "Record.FindLast Method"
+description: "Finds the last record in a table based on the current key and filter."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,13 +26,13 @@ Finds the last record in a table based on the current key and filter.
 ```
 
 ## Parameters
-*Record*
-&emsp;Type: [Record](record-data-type.md)
+*Record*  
+&emsp;Type: [Record](record-data-type.md)  
 An instance of the [Record](record-data-type.md) data type.
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
@@ -42,7 +43,7 @@ This method should be used instead of Find\('+'\) when you only need the last re
   
 You should only use this method when you explicitly want to find the last record in a table/set. Do not use this method in combination with Repeat...Until. 
 
-Calling FindLast on an empty table from the [OnNewRecord trigger](../../triggers/devenv-onnewrecord-trigger.md) causes the [!INCLUDE[server](../../includes/server.md)] to throw an exception, and the AL execution stops. However, the client suppresses this error and does not show any error message to the user. Therefore, when using FindLast inside this trigger, you should add code that conditionally verifies whether a record was found, and if not, notify the user with a message. For example:
+Calling FindLast on an empty table from the [OnNewRecord trigger](../../triggers-auto/page/devenv-onnewrecord-page-trigger.md) causes the [!INCLUDE[server](../../includes/server.md)] to throw an exception, and the AL execution stops. However, the client suppresses this error and does not show any error message to the user. Therefore, when using FindLast inside this trigger, you should add code that conditionally verifies whether a record was found, and if not, notify the user with a message. For example:
 
 ```al
 if not MyRecord.FindLast then

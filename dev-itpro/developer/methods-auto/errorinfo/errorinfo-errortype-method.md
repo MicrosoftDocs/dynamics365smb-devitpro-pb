@@ -1,8 +1,9 @@
 ---
 title: "ErrorInfo.ErrorType Method"
+description: "Specifies type of the error. 'Client' shows the specified message in the client and sends it to telemetry. 'Internal' shows a generic message in the client and sends the specified message to telemetry."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,8 +27,8 @@ Specifies type of the error. 'Client' shows the specified message in the client 
 > [!NOTE]
 > This method can be invoked using property access syntax.
 ## Parameters
-*ErrorInfo*
-&emsp;Type: [ErrorInfo](errorinfo-data-type.md)
+*ErrorInfo*  
+&emsp;Type: [ErrorInfo](errorinfo-data-type.md)  
 An instance of the [ErrorInfo](errorinfo-data-type.md) data type.
 
 *ErrorType*  
@@ -36,8 +37,8 @@ The error type of the error.
 
 
 ## Return Value
-*ErrorType*
-&emsp;Type: [ErrorType](../errortype/errortype-option.md)
+*ErrorType*  
+&emsp;Type: [ErrorType](../errortype/errortype-option.md)  
 The current error type of the ErrorInfo.
 
 

@@ -1,8 +1,9 @@
 ---
 title: "RecordRef.Next Method"
+description: "Steps through a specified number of records and retrieves a record."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Steps through a specified number of records and retrieves a record.
 [Steps := ]  RecordRef.Next([Steps: Integer])
 ```
 ## Parameters
-*RecordRef*
-&emsp;Type: [RecordRef](recordref-data-type.md)
+*RecordRef*  
+&emsp;Type: [RecordRef](recordref-data-type.md)  
 An instance of the [RecordRef](recordref-data-type.md) data type.
 
 *Steps*  
@@ -34,8 +35,8 @@ Defines the direction of the search and how many records to step include. If thi
 
 
 ## Return Value
-*Steps*
-&emsp;Type: [Integer](../integer/integer-data-type.md)
+*Steps*  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 Defines the direction of the search and how many records to include.
 
 

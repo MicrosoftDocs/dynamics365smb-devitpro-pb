@@ -1,8 +1,9 @@
 ---
 title: "Database.SetDefaultTableConnection Method"
+description: "Establishes a connection to an external database based on a previously registered connection of the specified type."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

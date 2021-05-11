@@ -1,8 +1,9 @@
 ---
 title: "BigText.Read Method"
+description: "Streams a BigText object that is stored as a BLOB in a table to a BigText variable."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Streams a BigText object that is stored as a BLOB in a table to a BigText variab
 [Ok := ]  BigText.Read(InStream: InStream)
 ```
 ## Parameters
-*BigText*
-&emsp;Type: [BigText](bigtext-data-type.md)
+*BigText*  
+&emsp;Type: [BigText](bigtext-data-type.md)  
 An instance of the [BigText](bigtext-data-type.md) data type.
 
 *InStream*  
@@ -34,8 +35,8 @@ The InStream object type that you use to stream a BLOB to a BigText variable.
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the read transaction was successful, otherwise **false**.
 
 

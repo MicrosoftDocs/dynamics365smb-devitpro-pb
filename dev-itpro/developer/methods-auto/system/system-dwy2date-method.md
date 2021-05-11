@@ -1,8 +1,9 @@
 ---
 title: "System.DWY2Date Method"
+description: "Gets a Date that is based on a week day, a week, and a year."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -40,8 +41,8 @@ The four-digit number of the year. If you omit this optional parameter, the year
 
 
 ## Return Value
-*Date*
-&emsp;Type: [Date](../date/date-data-type.md)
+*Date*  
+&emsp;Type: [Date](../date/date-data-type.md)  
 
 
 

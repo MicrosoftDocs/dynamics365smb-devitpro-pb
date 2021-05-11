@@ -1,8 +1,9 @@
 ---
 title: "System.Encrypt Method"
+description: "Takes a string as input and returns the encrypted value of the string."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -32,8 +33,8 @@ The input string that will be encrypted. The input string cannot exceed a length
 
 
 ## Return Value
-*EncryptedString*
-&emsp;Type: [String](../string/string-data-type.md)
+*EncryptedString*  
+&emsp;Type: [String](../string/string-data-type.md)  
 The output string that is encrypted.
 
 

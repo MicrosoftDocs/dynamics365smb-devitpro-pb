@@ -1,8 +1,9 @@
 ---
 title: "TestField.OptionCount Method"
+description: "Gets the number of options in a field on a test page."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,13 +26,13 @@ Result :=   TestField.OptionCount()
 ```
 
 ## Parameters
-*TestField*
-&emsp;Type: [TestField](testfield-data-type.md)
+*TestField*  
+&emsp;Type: [TestField](testfield-data-type.md)  
 An instance of the [TestField](testfield-data-type.md) data type.
 
 ## Return Value
-*Result*
-&emsp;Type: [Integer](../integer/integer-data-type.md)
+*Result*  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 The number of options in a field on a test page.
 
 

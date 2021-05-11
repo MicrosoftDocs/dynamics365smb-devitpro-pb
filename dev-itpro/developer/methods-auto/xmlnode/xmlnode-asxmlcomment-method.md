@@ -1,8 +1,9 @@
 ---
 title: "XmlNode.AsXmlComment Method"
+description: "Converts the node to an XmlComment node. The operation will fail if the node is not an XmlComment."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,13 +26,13 @@ XmlComment :=   XmlNode.AsXmlComment()
 ```
 
 ## Parameters
-*XmlNode*
-&emsp;Type: [XmlNode](xmlnode-data-type.md)
+*XmlNode*  
+&emsp;Type: [XmlNode](xmlnode-data-type.md)  
 An instance of the [XmlNode](xmlnode-data-type.md) data type.
 
 ## Return Value
-*XmlComment*
-&emsp;Type: [XmlComment](../xmlcomment/xmlcomment-data-type.md)
+*XmlComment*  
+&emsp;Type: [XmlComment](../xmlcomment/xmlcomment-data-type.md)  
 An XmlComment value that references the current XmlNode.
 
 

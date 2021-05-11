@@ -1,8 +1,9 @@
 ---
 title: "HttpResponseMessage.IsSuccessStatusCode Method"
+description: "Gets a value that indicates if the HTTP response was successful."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,13 +28,13 @@ IsSuccessStatusCode :=   HttpResponseMessage.IsSuccessStatusCode()
 > This method can be invoked using property access syntax.
 
 ## Parameters
-*HttpResponseMessage*
-&emsp;Type: [HttpResponseMessage](httpresponsemessage-data-type.md)
+*HttpResponseMessage*  
+&emsp;Type: [HttpResponseMessage](httpresponsemessage-data-type.md)  
 An instance of the [HttpResponseMessage](httpresponsemessage-data-type.md) data type.
 
 ## Return Value
-*IsSuccessStatusCode*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*IsSuccessStatusCode*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 A value that indicates if the HTTP response was successful. **true** if StatusCode was in the range 200-299; otherwise **false**.
 
 

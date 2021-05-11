@@ -1,8 +1,9 @@
 ---
 title: "Text.PadLeft Method"
+description: "Returns a new Text that right-aligns the characters in this instance by padding them on the left, for a specified total length."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,8 +27,8 @@ Result :=   Text.PadLeft(Count: Integer [, Char: Char])
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
 ## Parameters
-*Text*
-&emsp;Type: [Text](text-data-type.md)
+*Text*  
+&emsp;Type: [Text](text-data-type.md)  
 An instance of the [Text](text-data-type.md) data type.
 
 *Count*  
@@ -40,8 +41,8 @@ A padding character.
 
 
 ## Return Value
-*Result*
-&emsp;Type: [Text](text-data-type.md)
+*Result*  
+&emsp;Type: [Text](text-data-type.md)  
 The end result Text.
 
 

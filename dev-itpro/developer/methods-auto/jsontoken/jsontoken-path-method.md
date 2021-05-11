@@ -1,8 +1,9 @@
 ---
 title: "JsonToken.Path Method"
+description: "Retrieves the JSON path of the token relative to the root of its containing tree."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,13 +28,13 @@ Path :=   JsonToken.Path()
 > This method can be invoked using property access syntax.
 
 ## Parameters
-*JsonToken*
-&emsp;Type: [JsonToken](jsontoken-data-type.md)
+*JsonToken*  
+&emsp;Type: [JsonToken](jsontoken-data-type.md)  
 An instance of the [JsonToken](jsontoken-data-type.md) data type.
 
 ## Return Value
-*Path*
-&emsp;Type: [String](../string/string-data-type.md)
+*Path*  
+&emsp;Type: [String](../string/string-data-type.md)  
 
 
 

@@ -1,8 +1,9 @@
 ---
 title: "SessionSettings.Company Method"
+description: "Gets or sets the company property in a SessionSettings object."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,8 +27,8 @@ Gets or sets the company property in a SessionSettings object.
 > [!NOTE]
 > This method can be invoked using property access syntax.
 ## Parameters
-*SessionSettings*
-&emsp;Type: [SessionSettings](sessionsettings-data-type.md)
+*SessionSettings*  
+&emsp;Type: [SessionSettings](sessionsettings-data-type.md)  
 An instance of the [SessionSettings](sessionsettings-data-type.md) data type.
 
 *NewCompanyName*  
@@ -37,8 +38,8 @@ Specifies the name of the company in the SessionSettings object. The company mus
 
 
 ## Return Value
-*Company*
-&emsp;Type: [String](../string/string-data-type.md)
+*Company*  
+&emsp;Type: [String](../string/string-data-type.md)  
 The name of the company that is set in the SessionSettings object.
       
 

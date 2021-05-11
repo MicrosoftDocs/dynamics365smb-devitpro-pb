@@ -1,8 +1,9 @@
 ---
 title: "System.Random Method"
+description: "Returns a pseudo-random number."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -32,8 +33,8 @@ The largest acceptable number. In effect, you are setting a range from one (1) t
 
 
 ## Return Value
-*Number*
-&emsp;Type: [Integer](../integer/integer-data-type.md)
+*Number*  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 
 
 

@@ -1,8 +1,9 @@
 ---
 title: "Query.ColumnNo Method"
+description: "Returns the ID that is assigned to a query column in the query definition."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Returns the ID that is assigned to a query column in the query definition.
 Number :=   Query.ColumnNo(Column: Any)
 ```
 ## Parameters
-*Query*
-&emsp;Type: [Query](query-data-type.md)
+*Query*  
+&emsp;Type: [Query](query-data-type.md)  
 An instance of the [Query](query-data-type.md) data type.
 
 *Column*  
@@ -34,8 +35,8 @@ Refers to the name of the query column. The name of a query column is specified 
 
 
 ## Return Value
-*Number*
-&emsp;Type: [Integer](../integer/integer-data-type.md)
+*Number*  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 The ID of the query column.
 
 

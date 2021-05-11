@@ -1,8 +1,9 @@
 ---
 title: "Text.Replace Method"
+description: "Returns a new Text in which all occurrences of a specified string in the current instance are replaced with another specified string."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,8 +27,8 @@ Result :=   Text.Replace(OldValue: Text, NewValue: Text)
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
 ## Parameters
-*Text*
-&emsp;Type: [Text](text-data-type.md)
+*Text*  
+&emsp;Type: [Text](text-data-type.md)  
 An instance of the [Text](text-data-type.md) data type.
 
 *OldValue*  
@@ -40,8 +41,8 @@ The string to be replaced.
 
 
 ## Return Value
-*Result*
-&emsp;Type: [Text](text-data-type.md)
+*Result*  
+&emsp;Type: [Text](text-data-type.md)  
 The end result Text.
 
 

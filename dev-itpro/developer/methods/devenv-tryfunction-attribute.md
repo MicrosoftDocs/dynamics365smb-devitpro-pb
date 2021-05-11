@@ -36,6 +36,34 @@ Try methods in AL enable you to handle errors that occur in the application duri
 
 For more information, see [Handling Errors by Using Try Methods](../devenv-handling-errors-using-try-methods.md).  
 
+## Example
+
+The `IsSecureHttpUrl` method throws an error when trying to make a web request using an insecure URL. By setting the **TryFunction** attribute on it, the exception can be caught and handled by the `OnRun` trigger.
+
+```al
+[TryFunction]
+procedure IsSecureHttpUrl(Url: Text)
+var
+    Uri: DotNet Uri;
+begin
+    IsValidUri(Url);
+    Uri := Uri.Uri(Url);
+    if Uri.Scheme <> 'https' then
+        Error(NonSecureUriErr);
+end;
+```
+```
+trigger OnRun()
+var
+    URL: Text;
+begin
+    if IsSecureHttpUrl(URL) then
+        message('URL is not secure.')
+        exit(true);
+    exit(false);
+end;
+```
+
 ## See Also  
 
 [AL Method Reference](../methods-auto/library.md)  

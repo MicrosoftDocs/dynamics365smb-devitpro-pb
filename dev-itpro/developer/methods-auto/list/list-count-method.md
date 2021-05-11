@@ -1,8 +1,9 @@
 ---
 title: "List.Count Method"
+description: "Gets the number of elements contained in the List."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,13 +28,13 @@ Count :=   List.Count()
 > This method can be invoked using property access syntax.
 
 ## Parameters
-*List*
-&emsp;Type: [List](list-data-type.md)
+*List*  
+&emsp;Type: [List](list-data-type.md)  
 An instance of the [List](list-data-type.md) data type.
 
 ## Return Value
-*Count*
-&emsp;Type: [Integer](../integer/integer-data-type.md)
+*Count*  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 The number of elements contained in the List.
 
 

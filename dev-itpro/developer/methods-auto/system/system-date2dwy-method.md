@@ -1,8 +1,9 @@
 ---
 title: "System.Date2DWY Method"
+description: "Gets the day of the week, week number, or year of a Date Data Type."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -39,8 +40,8 @@ Specifies what the function returns. The valid options are 1, 2, and 3.
 
 
 ## Return Value
-*Number*
-&emsp;Type: [Integer](../integer/integer-data-type.md)
+*Number*  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 The resulting day of the week, week number, or year.
 
 

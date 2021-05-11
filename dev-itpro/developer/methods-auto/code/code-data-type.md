@@ -1,8 +1,9 @@
 ---
 title: "Code Data Type"
+description: "Denotes a special type of string that is converted to uppercase and removes any trailing or leading spaces."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

@@ -1,8 +1,9 @@
 ---
 title: "Page.Activate Method"
+description: "Activates the current page on the client if possible. The data on the page will not be refreshed."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Activates the current page on the client if possible. The data on the page will 
 [Ok := ]  Page.Activate([Refresh: Boolean])
 ```
 ## Parameters
-*Page*
-&emsp;Type: [Page](page-data-type.md)
+*Page*  
+&emsp;Type: [Page](page-data-type.md)  
 An instance of the [Page](page-data-type.md) data type.
 
 *Refresh*  
@@ -34,8 +35,8 @@ If set to **true**, the data on the page will be refreshed.
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 
 
 

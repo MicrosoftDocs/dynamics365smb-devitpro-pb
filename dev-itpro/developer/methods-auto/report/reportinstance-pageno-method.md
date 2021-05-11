@@ -1,8 +1,9 @@
 ---
 title: "Report.PageNo Method"
+description: "Gets or sets the current page number of a report."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Gets or sets the current page number of a report.
 [CurrPageNo := ]  Report.PageNo([NewPageNo: Integer])
 ```
 ## Parameters
-*Report*
-&emsp;Type: [Report](report-data-type.md)
+*Report*  
+&emsp;Type: [Report](report-data-type.md)  
 An instance of the [Report](report-data-type.md) data type.
 
 *NewPageNo*  
@@ -34,8 +35,8 @@ The new page number of a report.
 
 
 ## Return Value
-*CurrPageNo*
-&emsp;Type: [Integer](../integer/integer-data-type.md)
+*CurrPageNo*  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 The current page number of a report.
 
 

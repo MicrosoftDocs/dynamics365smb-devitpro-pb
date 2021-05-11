@@ -1,8 +1,9 @@
 ---
 title: "Text.StrSubstNo Method"
+description: "Replaces %1, %2, %3... and #1, #2, #3... fields in a string with the values you provide as optional parameters."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -36,8 +37,8 @@ One or more values (expressions) that you want to insert into String. You can sp
 
 
 ## Return Value
-*NewString*
-&emsp;Type: [String](../string/string-data-type.md)
+*NewString*  
+&emsp;Type: [String](../string/string-data-type.md)  
 Returns a new string with the provided values inserted into the specified string.
 
 

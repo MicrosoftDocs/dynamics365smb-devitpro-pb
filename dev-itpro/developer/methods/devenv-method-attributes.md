@@ -32,7 +32,7 @@ For example, the Integration attribute has two arguments, and the syntax is:
 The following method attributes are available:
 
 - [CommitBehavior Attribute](devenv-commitbehavior-attribute.md)  
-- [Business Attribute](devenv-business-attribute.md)  
+- [BusinessEvent Attribute](devenv-business-attribute.md)  
 - [ConfirmHandler Attribute](devenv-confirmhandler-attribute.md)  
 - [EventSubscriber Attribute](devenv-eventsubscriber-attribute.md)  
 - [FilterPageHandler Attribute](devenv-filterpagehandler-attribute.md)  
