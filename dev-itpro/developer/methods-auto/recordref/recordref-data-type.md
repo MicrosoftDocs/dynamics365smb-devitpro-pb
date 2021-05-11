@@ -77,7 +77,7 @@ The following methods are available on instances of the RecordRef data type.
 |[LoadFields(Integer,...)](recordref-loadfields-method.md)|Accesses the table's corresponding data source and loads the values of the specified fields on the record.|
 |[LockTable([Boolean] [, Boolean])](recordref-locktable-method.md)|Locks a table to protect it from write transactions that conflict with each other.|
 |[Mark([Boolean])](recordref-mark-method.md)|Marks a record. You can also use this method to determine whether a record is marked.|
-|[MarkedOnly([Boolean])](recordref-markedonly-method.md)|Activates a special filter. After you use this function, your view of the table includes only records marked by this function.|
+|[MarkedOnly([Boolean])](recordref-markedonly-method.md)|Activates a special filter. After you use this function, your view of the table includes only records marked by the Mark method (RecordRef).|
 |[Modify([Boolean])](recordref-modify-method.md)|Modifies a record in a table.|
 |[Name()](recordref-name-method.md)|Identifies the name of the table|
 |[Next([Integer])](recordref-next-method.md)|Steps through a specified number of records and retrieves a record.|

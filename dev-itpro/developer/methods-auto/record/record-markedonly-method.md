@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # Record.MarkedOnly Method
 > **Version**: _Available or changed with runtime version 1.0._
 
-Activates a special filter. After you use this function, your view of the table includes only records marked by this function.
+Activates a special filter. After you use this function, your view of the table includes only records marked by the Mark (Record) method.
 
 
 ## Syntax
@@ -46,4 +46,5 @@ Activates a special filter.
 ## See Also
 [Record Data Type](record-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
-[Developing Extensions](../../devenv-dev-overview.md)
+[Developing Extensions](../../devenv-dev-overview.md)  
+[Mark (Record) Method](record-mark-method.md)

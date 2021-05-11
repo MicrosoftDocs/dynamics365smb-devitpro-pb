@@ -41,6 +41,11 @@ Specifies if a record is marked.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+You can use the [MarkedOnly (Record) Method](record-markedonly-method.md) to activate a special filter where your view of the table includes only records marked by the **Mark (Record)** method.
+
 ## See Also
 [Record Data Type](record-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
