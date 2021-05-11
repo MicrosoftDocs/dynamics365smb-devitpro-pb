@@ -1,8 +1,9 @@
 ---
 title: "List Data Type"
+description: "Represents a strongly typed list of ordered objects that can be accessed by index. Contrary to the Array data type, a List is unbounded, such that its dimension does not need to be specified upon declaration."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

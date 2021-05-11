@@ -1,8 +1,9 @@
 ---
 title: "Record.FieldName Method"
+description: "Gets the name of a field as a string."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Gets the name of a field as a string.
 Name :=   Record.FieldName(Field: Any)
 ```
 ## Parameters
-*Record*
-&emsp;Type: [Record](record-data-type.md)
+*Record*  
+&emsp;Type: [Record](record-data-type.md)  
 An instance of the [Record](record-data-type.md) data type.
 
 *Field*  
@@ -35,8 +36,8 @@ The name of the field in the record.
 
 
 ## Return Value
-*Name*
-&emsp;Type: [String](../string/string-data-type.md)
+*Name*  
+&emsp;Type: [String](../string/string-data-type.md)  
 
 
 

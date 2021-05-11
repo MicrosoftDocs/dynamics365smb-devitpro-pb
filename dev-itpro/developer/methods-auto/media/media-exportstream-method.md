@@ -1,8 +1,9 @@
 ---
 title: "Media.ExportStream Method"
+description: "Exports the current media object (such as a JPEG image) that is used on record to an OUTSTREAM object. The OUTSTREAM object can be created from a BLOB field, a FILE or from a .NET Framework interoperability object. In the record, the media is referenced in a Media data type field."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Exports the current media object (such as a JPEG image) that is used on record t
 [Result := ]  Media.ExportStream(Stream: OutStream)
 ```
 ## Parameters
-*Media*
-&emsp;Type: [Media](media-data-type.md)
+*Media*  
+&emsp;Type: [Media](media-data-type.md)  
 An instance of the [Media](media-data-type.md) data type.
 
 *Stream*  
@@ -34,8 +35,8 @@ The OutStream object that is created by the object that will receive the media c
 
 
 ## Return Value
-*Result*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Result*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the media was successfully exported, otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

@@ -1,8 +1,9 @@
 ---
 title: "XmlNode.AsXmlDeclaration Method"
+description: "Converts the node to an XmlDeclaration node. The operation will fail if the node is not an XmlDeclaration."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,13 +26,13 @@ XmlDeclaration :=   XmlNode.AsXmlDeclaration()
 ```
 
 ## Parameters
-*XmlNode*
-&emsp;Type: [XmlNode](xmlnode-data-type.md)
+*XmlNode*  
+&emsp;Type: [XmlNode](xmlnode-data-type.md)  
 An instance of the [XmlNode](xmlnode-data-type.md) data type.
 
 ## Return Value
-*XmlDeclaration*
-&emsp;Type: [XmlDeclaration](../xmldeclaration/xmldeclaration-data-type.md)
+*XmlDeclaration*  
+&emsp;Type: [XmlDeclaration](../xmldeclaration/xmldeclaration-data-type.md)  
 An XmlDeclaration value that references the current XmlNode.
 
 

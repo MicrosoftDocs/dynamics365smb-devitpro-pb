@@ -1,8 +1,9 @@
 ---
 title: "System.Power Method"
+description: "Raises a number to a power. For example, you can use this method to square the number 2 to get the result of 4."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -35,8 +36,8 @@ The exponent in the exponential method.
 
 
 ## Return Value
-*NewNumber*
-&emsp;Type: [Decimal](../decimal/decimal-data-type.md)
+*NewNumber*  
+&emsp;Type: [Decimal](../decimal/decimal-data-type.md)  
 
 
 

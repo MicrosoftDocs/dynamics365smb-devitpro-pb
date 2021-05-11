@@ -1,8 +1,9 @@
 ---
 title: "System.GetUrl Method"
+description: " Generates a URL for the specified client target that is based on the configuration of the server instance. If the code runs in a multitenant deployment architecture, the generated URL will automatically apply to the tenant ID of the current user."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -53,8 +54,8 @@ Specifies whether to include filters that are defined on the object as a text st
 
 
 ## Return Value
-*String*
-&emsp;Type: [String](../string/string-data-type.md)
+*String*  
+&emsp;Type: [String](../string/string-data-type.md)  
 
 
 

@@ -1,8 +1,9 @@
 ---
 title: "File.Rename Method"
+description: "Renames an ASCII or binary file."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -45,8 +46,8 @@ The new name that you want to assign to the file, including its path. When you e
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

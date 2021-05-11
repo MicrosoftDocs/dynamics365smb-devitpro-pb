@@ -1,8 +1,9 @@
 ---
 title: "Text.InsStr Method"
+description: "Inserts a substring into a string."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -40,8 +41,8 @@ Specifies where to insert SubString. Position must be greater than or equal to 1
 
 
 ## Return Value
-*NewString*
-&emsp;Type: [String](../string/string-data-type.md)
+*NewString*  
+&emsp;Type: [String](../string/string-data-type.md)  
 The input string including the specified substring
 
 

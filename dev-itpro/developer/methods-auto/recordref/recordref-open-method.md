@@ -1,8 +1,9 @@
 ---
 title: "RecordRef.Open Method"
+description: "Causes a RecordRef variable to refer to a table, which is identified by its number in a particular company."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Causes a RecordRef variable to refer to a table, which is identified by its numb
  RecordRef.Open(No: Integer [, Temp: Boolean] [, CompanyName: String])
 ```
 ## Parameters
-*RecordRef*
-&emsp;Type: [RecordRef](recordref-data-type.md)
+*RecordRef*  
+&emsp;Type: [RecordRef](recordref-data-type.md)  
 An instance of the [RecordRef](recordref-data-type.md) data type.
 
 *No*  

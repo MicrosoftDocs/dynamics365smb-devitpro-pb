@@ -1,8 +1,9 @@
 ---
 title: "JsonObject.Remove Method"
+description: "Removes the property with the given key from the object."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Removes the property with the given key from the object.
 [Ok := ]  JsonObject.Remove(Key: String)
 ```
 ## Parameters
-*JsonObject*
-&emsp;Type: [JsonObject](jsonobject-data-type.md)
+*JsonObject*  
+&emsp;Type: [JsonObject](jsonobject-data-type.md)  
 An instance of the [JsonObject](jsonobject-data-type.md) data type.
 
 *Key*  
@@ -34,8 +35,8 @@ An instance of the [JsonObject](jsonobject-data-type.md) data type.
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the operation was successful; otherwise **false**.
 
 

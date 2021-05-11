@@ -1,8 +1,9 @@
 ---
 title: "TaskScheduler.TaskExists Method"
+description: "Checks whether a specific task exists."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -31,8 +32,8 @@ The unique identifier of the task. The unique identifier is returned by the CREA
 
 
 ## Return Value
-*Exists*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Exists*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 
 
 

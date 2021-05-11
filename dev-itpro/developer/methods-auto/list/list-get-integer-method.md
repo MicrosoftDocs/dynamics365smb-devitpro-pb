@@ -1,8 +1,9 @@
 ---
 title: "List.Get Method"
+description: "Gets the element at the specified index. This method will raise an error if the index is outside the valid range."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Gets the element at the specified index. This method will raise an error if the 
 Result :=   List.Get(Index: Integer)
 ```
 ## Parameters
-*List*
-&emsp;Type: [List](list-data-type.md)
+*List*  
+&emsp;Type: [List](list-data-type.md)  
 An instance of the [List](list-data-type.md) data type.
 
 *Index*  
@@ -34,8 +35,8 @@ The one-based index of the element to get.
 
 
 ## Return Value
-*Result*
-&emsp;Type: [T](list-data-type.md)
+*Result*  
+&emsp;Type: [T](list-data-type.md)  
 The element at the specified index.
 
 

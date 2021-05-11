@@ -1,8 +1,9 @@
 ---
 title: "HttpContent.ReadAs Method"
+description: "Reads the content into the provided text."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Reads the content into the provided text.
 [Ok := ]  HttpContent.ReadAs(var InStream: InStream)
 ```
 ## Parameters
-*HttpContent*
-&emsp;Type: [HttpContent](httpcontent-data-type.md)
+*HttpContent*  
+&emsp;Type: [HttpContent](httpcontent-data-type.md)  
 An instance of the [HttpContent](httpcontent-data-type.md) data type.
 
 *InStream*  
@@ -34,8 +35,8 @@ The InStream variable that will contain the HTTP content stream.
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

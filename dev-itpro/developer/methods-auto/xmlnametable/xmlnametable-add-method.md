@@ -1,8 +1,9 @@
 ---
 title: "XmlNameTable.Add Method"
+description: "Atomizes the specified string and adds it to the XmlNameTable."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Atomizes the specified string and adds it to the XmlNameTable.
 [AddedKey := ]  XmlNameTable.Add(Key: String)
 ```
 ## Parameters
-*XmlNameTable*
-&emsp;Type: [XmlNameTable](xmlnametable-data-type.md)
+*XmlNameTable*  
+&emsp;Type: [XmlNameTable](xmlnametable-data-type.md)  
 An instance of the [XmlNameTable](xmlnametable-data-type.md) data type.
 
 *Key*  
@@ -34,8 +35,8 @@ The string to add.
 
 
 ## Return Value
-*AddedKey*
-&emsp;Type: [String](../string/string-data-type.md)
+*AddedKey*  
+&emsp;Type: [String](../string/string-data-type.md)  
 The new atomized string or the existing one if it already exists
 
 

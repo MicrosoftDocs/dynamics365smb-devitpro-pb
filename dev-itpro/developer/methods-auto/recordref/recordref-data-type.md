@@ -1,8 +1,9 @@
 ---
 title: "RecordRef Data Type"
+description: "References a record in a table."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -48,7 +49,7 @@ The following methods are available on instances of the RecordRef data type.
 |[DeleteLinks()](recordref-deletelinks-method.md)|Deletes all of the links that have been added to a record.|
 |[Duplicate()](recordref-duplicate-method.md)|Duplicates the table that contains the RecordRef.|
 |[Field(Integer)](recordref-field-method.md)|Gets a FieldRef for the field that has the number FieldNo in the table that is currently selected. If no field has this number, the method returns an error.|
-|[FieldCount()](recordref-fieldcount-method.md)|Gets the number of fields in the table that are currently selected or returns the number of fields that have been defined in a key. Returns an error if no table or no key is selected.|
+|[FieldCount()](recordref-fieldcount-method.md)|Gets the number of fields in the table that is currently selected or returns the number of fields that have been defined in a key. Returns an error if no table or no key is selected.|
 |[FieldExist(Integer)](recordref-fieldexist-method.md)|Determines if the field that has the number FieldNo exists in the table that is referred to by the RecordRef. Returns an error if no table is currently selected.|
 |[FieldIndex(Integer)](recordref-fieldindex-method.md)|Gets the FieldRef of the field that has the specified index in the table that is referred to by the RecordRef.|
 |[FilterGroup([Integer])](recordref-filtergroup-method.md)|Changes the filter group that is being applied to the table. You can also use this method to return the number of the current filtergroup. You cannot return the number of the filtergroup and set a new filtergroup at the same time.|

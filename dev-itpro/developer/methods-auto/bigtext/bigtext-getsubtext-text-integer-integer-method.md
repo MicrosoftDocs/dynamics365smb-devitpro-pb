@@ -1,8 +1,9 @@
 ---
 title: "BigText.GetSubText Method"
+description: "Gets part of a BigText variable."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Gets part of a BigText variable.
 [Length := ]  BigText.GetSubText(var Variable: Text, Position: Integer [, Length: Integer])
 ```
 ## Parameters
-*BigText*
-&emsp;Type: [BigText](bigtext-data-type.md)
+*BigText*  
+&emsp;Type: [BigText](bigtext-data-type.md)  
 An instance of the [BigText](bigtext-data-type.md) data type.
 
 *Variable*  
@@ -43,8 +44,8 @@ The length of the sub text that should be retrieved. This parameter is optional.
 
 
 ## Return Value
-*Length*
-&emsp;Type: [Integer](../integer/integer-data-type.md)
+*Length*  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 The length of the result text.
 
 

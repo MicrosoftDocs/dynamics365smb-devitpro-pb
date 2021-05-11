@@ -1,8 +1,9 @@
 ---
 title: "File.Trunc Method"
+description: "Truncate an ASCII or binary file to the current position of the file pointer."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,8 +30,8 @@ Truncate an ASCII or binary file to the current position of the file pointer.
 > This method can be invoked without specifying the data type name.
 
 ## Parameters
-*File*
-&emsp;Type: [File](file-data-type.md)
+*File*  
+&emsp;Type: [File](file-data-type.md)  
 An instance of the [File](file-data-type.md) data type.
 
 

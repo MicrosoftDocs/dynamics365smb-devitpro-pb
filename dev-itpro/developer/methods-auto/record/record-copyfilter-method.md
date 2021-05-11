@@ -1,8 +1,9 @@
 ---
 title: "Record.CopyFilter Method"
+description: "Copies the filter that has been set for one field and applies it to another field."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Copies the filter that has been set for one field and applies it to another fiel
  Record.CopyFilter(FromField: Any, Record.ToField: Any)
 ```
 ## Parameters
-*Record*
-&emsp;Type: [Record](record-data-type.md)
+*Record*  
+&emsp;Type: [Record](record-data-type.md)  
 An instance of the [Record](record-data-type.md) data type.
 
 *FromField*  

@@ -1,8 +1,9 @@
 ---
 title: "TestPart.Caption Method"
+description: "Gets the caption of the test page."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,13 +28,13 @@ String :=   TestPart.Caption()
 > This method can be invoked using property access syntax.
 
 ## Parameters
-*TestPart*
-&emsp;Type: [TestPart](testpart-data-type.md)
+*TestPart*  
+&emsp;Type: [TestPart](testpart-data-type.md)  
 An instance of the [TestPart](testpart-data-type.md) data type.
 
 ## Return Value
-*String*
-&emsp;Type: [String](../string/string-data-type.md)
+*String*  
+&emsp;Type: [String](../string/string-data-type.md)  
 The caption of the test page.
 
 

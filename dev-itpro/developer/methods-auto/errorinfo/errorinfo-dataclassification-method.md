@@ -1,8 +1,9 @@
 ---
 title: "ErrorInfo.DataClassification Method"
+description: "Specifies the severity level of the error. Values include 'Critical', 'Error', 'Warning', 'Normal', and 'Verbose'"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,8 +27,8 @@ Specifies the severity level of the error. Values include 'Critical', 'Error', '
 > [!NOTE]
 > This method can be invoked using property access syntax.
 ## Parameters
-*ErrorInfo*
-&emsp;Type: [ErrorInfo](errorinfo-data-type.md)
+*ErrorInfo*  
+&emsp;Type: [ErrorInfo](errorinfo-data-type.md)  
 An instance of the [ErrorInfo](errorinfo-data-type.md) data type.
 
 *DataClassification*  
@@ -36,8 +37,8 @@ The data classification of the content in the message.
 
 
 ## Return Value
-*DataClassification*
-&emsp;Type: [DataClassification](../dataclassification/dataclassification-option.md)
+*DataClassification*  
+&emsp;Type: [DataClassification](../dataclassification/dataclassification-option.md)  
 The current data classification of the ErrorInfo.
 
 

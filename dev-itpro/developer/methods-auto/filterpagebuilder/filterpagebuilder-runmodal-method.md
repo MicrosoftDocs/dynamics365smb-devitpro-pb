@@ -1,8 +1,9 @@
 ---
 title: "FilterPageBuilder.RunModal Method"
+description: "Builds and runs the filter page that includes the filter controls that are stored in FilterPageBuilder object instance."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,13 +26,13 @@ Builds and runs the filter page that includes the filter controls that are store
 ```
 
 ## Parameters
-*FilterPageBuilder*
-&emsp;Type: [FilterPageBuilder](filterpagebuilder-data-type.md)
+*FilterPageBuilder*  
+&emsp;Type: [FilterPageBuilder](filterpagebuilder-data-type.md)  
 An instance of the [FilterPageBuilder](filterpagebuilder-data-type.md) data type.
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

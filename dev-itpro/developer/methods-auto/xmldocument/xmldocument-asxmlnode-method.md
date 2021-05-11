@@ -1,8 +1,9 @@
 ---
 title: "XmlDocument.AsXmlNode Method"
+description: "Converts the node to an XmlNode."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,13 +26,13 @@ XmlNode :=   XmlDocument.AsXmlNode()
 ```
 
 ## Parameters
-*XmlDocument*
-&emsp;Type: [XmlDocument](xmldocument-data-type.md)
+*XmlDocument*  
+&emsp;Type: [XmlDocument](xmldocument-data-type.md)  
 An instance of the [XmlDocument](xmldocument-data-type.md) data type.
 
 ## Return Value
-*XmlNode*
-&emsp;Type: [XmlNode](../xmlnode/xmlnode-data-type.md)
+*XmlNode*  
+&emsp;Type: [XmlNode](../xmlnode/xmlnode-data-type.md)  
 An XmlNode value that references the current XmlDocument.
 
 

@@ -1,8 +1,9 @@
 ---
 title: "TestPage.New Method"
+description: "Sets the current row of the test page to an empty row in a data set."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,8 +26,8 @@ Sets the current row of the test page to an empty row in a data set.
 ```
 
 ## Parameters
-*TestPage*
-&emsp;Type: [TestPage](testpage-data-type.md)
+*TestPage*  
+&emsp;Type: [TestPage](testpage-data-type.md)  
 An instance of the [TestPage](testpage-data-type.md) data type.
 
 

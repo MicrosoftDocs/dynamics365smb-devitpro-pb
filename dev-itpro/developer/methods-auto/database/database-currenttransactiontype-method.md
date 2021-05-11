@@ -1,8 +1,9 @@
 ---
 title: "Database.CurrentTransactionType Method"
+description: "Gets the current transaction type and sets a new type to be assigned."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -34,8 +35,8 @@ The type of transaction to be set for the next transaction.
 
 
 ## Return Value
-*TransactionType*
-&emsp;Type: [TransactionType](../transactiontype/transactiontype-option.md)
+*TransactionType*  
+&emsp;Type: [TransactionType](../transactiontype/transactiontype-option.md)  
 The type of transaction for the next transaction.
       
 

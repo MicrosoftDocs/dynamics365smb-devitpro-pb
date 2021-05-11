@@ -1,8 +1,9 @@
 ---
 title: "KeyRef.Record Method"
+description: "Returns a RecordRef for the current record referred to by the key."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,13 +26,13 @@ Record :=   KeyRef.Record()
 ```
 
 ## Parameters
-*KeyRef*
-&emsp;Type: [KeyRef](keyref-data-type.md)
+*KeyRef*  
+&emsp;Type: [KeyRef](keyref-data-type.md)  
 An instance of the [KeyRef](keyref-data-type.md) data type.
 
 ## Return Value
-*Record*
-&emsp;Type: [RecordRef](../recordref/recordref-data-type.md)
+*Record*  
+&emsp;Type: [RecordRef](../recordref/recordref-data-type.md)  
 The RecordRef of the record that is currently selected referenced by the key. If a key is not selected, an error is returned.
 
 

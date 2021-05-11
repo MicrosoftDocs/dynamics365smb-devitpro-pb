@@ -1,8 +1,9 @@
 ---
 title: "ModuleInfo.Dependencies Method"
+description: "Gets the collection of application dependencies."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,13 +28,13 @@ Dependencies :=   ModuleInfo.Dependencies()
 > This method can be invoked using property access syntax.
 
 ## Parameters
-*ModuleInfo*
-&emsp;Type: [ModuleInfo](moduleinfo-data-type.md)
+*ModuleInfo*  
+&emsp;Type: [ModuleInfo](moduleinfo-data-type.md)  
 An instance of the [ModuleInfo](moduleinfo-data-type.md) data type.
 
 ## Return Value
-*Dependencies*
-&emsp;Type: [List of [ModuleDependencyInfo]](../list/list-data-type.md)
+*Dependencies*  
+&emsp;Type: [List of [ModuleDependencyInfo]](../list/list-data-type.md)  
 Collection of application dependencies.
 
 

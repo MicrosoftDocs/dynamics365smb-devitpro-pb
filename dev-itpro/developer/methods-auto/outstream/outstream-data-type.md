@@ -1,8 +1,9 @@
 ---
 title: "OutStream Data Type"
+description: "Is a generic stream object that you can use to write to files and BLOBs."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

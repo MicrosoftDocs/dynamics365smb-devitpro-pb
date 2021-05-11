@@ -1,8 +1,9 @@
 ---
 title: "Report.DefaultLayout Method"
+description: "Gets the default built-in layout type that is used on a specified report."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,13 +26,13 @@ DefaultLayout :=   Report.DefaultLayout()
 ```
 
 ## Parameters
-*Report*
-&emsp;Type: [Report](report-data-type.md)
+*Report*  
+&emsp;Type: [Report](report-data-type.md)  
 An instance of the [Report](report-data-type.md) data type.
 
 ## Return Value
-*DefaultLayout*
-&emsp;Type: [DefaultLayout](../defaultlayout/defaultlayout-option.md)
+*DefaultLayout*  
+&emsp;Type: [DefaultLayout](../defaultlayout/defaultlayout-option.md)  
 The default built-in layout type that is used on a specified report.
 
 

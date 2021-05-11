@@ -1,8 +1,9 @@
 ---
 title: "RecordRef.HasLinks Method"
+description: "Determines whether a record contains any links."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,13 +28,13 @@ Ok :=   RecordRef.HasLinks()
 > This method can be invoked using property access syntax.
 
 ## Parameters
-*RecordRef*
-&emsp;Type: [RecordRef](recordref-data-type.md)
+*RecordRef*  
+&emsp;Type: [RecordRef](recordref-data-type.md)  
 An instance of the [RecordRef](recordref-data-type.md) data type.
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the record contains any links, otherwise **false**.
 
 

@@ -1,8 +1,9 @@
 ---
 title: "Dialog.Confirm Method"
+description: "Creates a dialog box that prompts the user for a yes or no answer. The dialog box is centered on the screen."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -39,8 +40,8 @@ Specifies the default button. If you do not specify a default button, then No is
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 
 
 

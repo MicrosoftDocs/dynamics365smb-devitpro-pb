@@ -1,8 +1,9 @@
 ---
 title: "Version.Build Method"
+description: "Gets the build number of the version."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,13 +28,13 @@ BuildVersion :=   Version.Build()
 > This method can be invoked using property access syntax.
 
 ## Parameters
-*Version*
-&emsp;Type: [Version](version-data-type.md)
+*Version*  
+&emsp;Type: [Version](version-data-type.md)  
 An instance of the [Version](version-data-type.md) data type.
 
 ## Return Value
-*BuildVersion*
-&emsp;Type: [Integer](../integer/integer-data-type.md)
+*BuildVersion*  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 The build version number of the version.
 
 

@@ -1,8 +1,9 @@
 ---
 title: "SessionSettings.LanguageId Method"
+description: "Gets or sets the language ID property in a SessionSettings object."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,8 +27,8 @@ Gets or sets the language ID property in a SessionSettings object.
 > [!NOTE]
 > This method can be invoked using property access syntax.
 ## Parameters
-*SessionSettings*
-&emsp;Type: [SessionSettings](sessionsettings-data-type.md)
+*SessionSettings*  
+&emsp;Type: [SessionSettings](sessionsettings-data-type.md)  
 An instance of the [SessionSettings](sessionsettings-data-type.md) data type.
 
 *NewLanguageId*  
@@ -37,8 +38,8 @@ Specifies the language ID to set in the SessionSettings object. The value must b
 
 
 ## Return Value
-*LanguageId*
-&emsp;Type: [Integer](../integer/integer-data-type.md)
+*LanguageId*  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 The language ID that is set in the SessionSettings object.
       
 

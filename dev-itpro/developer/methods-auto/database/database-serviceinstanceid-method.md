@@ -1,8 +1,9 @@
 ---
 title: "Database.ServiceInstanceId Method"
+description: "Gets the ID of the service instance."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,8 +29,8 @@ ID :=   Database.ServiceInstanceId()
 
 
 ## Return Value
-*ID*
-&emsp;Type: [Integer](../integer/integer-data-type.md)
+*ID*  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 The ID of the service instance.
 
 

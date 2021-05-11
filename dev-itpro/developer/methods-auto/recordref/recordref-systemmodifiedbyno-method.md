@@ -1,8 +1,9 @@
 ---
 title: "RecordRef.SystemModifiedByNo Method"
+description: "Gets the field number that is used by the SystemModifiedBy field. The SystemModifiedBy field is a system field that the platform adds to all table objects."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,13 +28,13 @@ SystemModifiedByFieldNo :=   RecordRef.SystemModifiedByNo()
 > This method can be invoked using property access syntax.
 
 ## Parameters
-*RecordRef*
-&emsp;Type: [RecordRef](recordref-data-type.md)
+*RecordRef*  
+&emsp;Type: [RecordRef](recordref-data-type.md)  
 An instance of the [RecordRef](recordref-data-type.md) data type.
 
 ## Return Value
-*SystemModifiedByFieldNo*
-&emsp;Type: [Integer](../integer/integer-data-type.md)
+*SystemModifiedByFieldNo*  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 The field number of the SystemModifiedBy field.
 
 

@@ -1,8 +1,9 @@
 ---
 title: "Blob.Export Method"
+description: "Exports a binary large object (BLOB) to a file."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Exports a binary large object (BLOB) to a file.
 [ExportName := ]  Blob.Export(Name: String)
 ```
 ## Parameters
-*Blob*
-&emsp;Type: [Blob](blob-data-type.md)
+*Blob*  
+&emsp;Type: [Blob](blob-data-type.md)  
 An instance of the [Blob](blob-data-type.md) data type.
 
 *Name*  
@@ -38,8 +39,8 @@ The path and name of the BLOB that you want to export. When you enter the path, 
 
 
 ## Return Value
-*ExportName*
-&emsp;Type: [String](../string/string-data-type.md)
+*ExportName*  
+&emsp;Type: [String](../string/string-data-type.md)  
 The name of the created file.
 
 
