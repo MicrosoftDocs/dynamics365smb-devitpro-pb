@@ -1,8 +1,9 @@
 ---
 title: "ModuleDependencyInfo.Name Method"
+description: "Gets the name of the specified application."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,13 +28,13 @@ Name :=   ModuleDependencyInfo.Name()
 > This method can be invoked using property access syntax.
 
 ## Parameters
-*ModuleDependencyInfo*
-&emsp;Type: [ModuleDependencyInfo](moduledependencyinfo-data-type.md)
+*ModuleDependencyInfo*  
+&emsp;Type: [ModuleDependencyInfo](moduledependencyinfo-data-type.md)  
 An instance of the [ModuleDependencyInfo](moduledependencyinfo-data-type.md) data type.
 
 ## Return Value
-*Name*
-&emsp;Type: [String](../string/string-data-type.md)
+*Name*  
+&emsp;Type: [String](../string/string-data-type.md)  
 The application name.
 
 

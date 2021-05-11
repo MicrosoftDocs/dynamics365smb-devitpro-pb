@@ -1,8 +1,9 @@
 ---
 title: "TestFilter.GetFilter Method"
+description: "Gets the filter that is applied to the specified field in a data set that is displayed on a test page."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Gets the filter that is applied to the specified field in a data set that is dis
 String :=   TestFilter.GetFilter(Field: TestFilterField)
 ```
 ## Parameters
-*TestFilter*
-&emsp;Type: [TestFilter](testfilter-data-type.md)
+*TestFilter*  
+&emsp;Type: [TestFilter](testfilter-data-type.md)  
 An instance of the [TestFilter](testfilter-data-type.md) data type.
 
 *Field*  
@@ -35,8 +36,8 @@ The field that you want to get the filter from.
 
 
 ## Return Value
-*String*
-&emsp;Type: [String](../string/string-data-type.md)
+*String*  
+&emsp;Type: [String](../string/string-data-type.md)  
 
 
 

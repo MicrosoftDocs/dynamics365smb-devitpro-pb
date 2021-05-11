@@ -1,8 +1,9 @@
 ---
 title: "Debugger.DebuggedSessionID Method"
+description: "Gets the ID of the previous session that the debugger was attached to."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,8 +27,8 @@ SessionID :=   Debugger.DebuggedSessionID()
 
 
 ## Return Value
-*SessionID*
-&emsp;Type: [Integer](../integer/integer-data-type.md)
+*SessionID*  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 
 
 

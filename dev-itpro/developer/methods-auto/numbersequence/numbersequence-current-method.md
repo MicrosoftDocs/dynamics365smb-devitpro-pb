@@ -1,8 +1,9 @@
 ---
 title: "NumberSequence.Current Method"
+description: "Gets the current value from the number sequence, without doing any increment. The value is retrieved out of transaction. The value will not be returned on transaction rollback."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -33,8 +34,8 @@ Specifies if the number sequence is company-specific. Default is true.
 
 
 ## Return Value
-*Current*
-&emsp;Type: [BigInteger](../biginteger/biginteger-data-type.md)
+*Current*  
+&emsp;Type: [BigInteger](../biginteger/biginteger-data-type.md)  
 Returns the current value from number sequence.
 
 

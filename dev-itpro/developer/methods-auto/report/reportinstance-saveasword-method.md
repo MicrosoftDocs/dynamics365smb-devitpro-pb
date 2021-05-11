@@ -1,8 +1,9 @@
 ---
 title: "Report.SaveAsWord Method"
+description: "Saves a report on the computer that is running the server as a Microsoft Word (.doc) document."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,8 +27,8 @@ Saves a report on the computer that is running the server as a Microsoft Word (.
 [Ok := ]  Report.SaveAsWord(FileName: String)
 ```
 ## Parameters
-*Report*
-&emsp;Type: [Report](report-data-type.md)
+*Report*  
+&emsp;Type: [Report](report-data-type.md)  
 An instance of the [Report](report-data-type.md) data type.
 
 *FileName*  
@@ -37,8 +38,8 @@ The path and the name of the file that you want to save the report as. The path 
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

@@ -1,8 +1,9 @@
 ---
 title: "BigText.AddText Method"
+description: "Adds a text string to a BigText variable."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Adds a text string to a BigText variable.
  BigText.AddText(String: String [, Position: Integer])
 ```
 ## Parameters
-*BigText*
-&emsp;Type: [BigText](bigtext-data-type.md)
+*BigText*  
+&emsp;Type: [BigText](bigtext-data-type.md)  
 An instance of the [BigText](bigtext-data-type.md) data type.
 
 *String*  

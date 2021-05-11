@@ -1,8 +1,9 @@
 ---
 title: "HttpHeaders.GetValues Method"
+description: "Gets the values for the specified key."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Gets the values for the specified key.
 [Ok := ]  HttpHeaders.GetValues(Key: String, Values: Array of [Text])
 ```
 ## Parameters
-*HttpHeaders*
-&emsp;Type: [HttpHeaders](httpheaders-data-type.md)
+*HttpHeaders*  
+&emsp;Type: [HttpHeaders](httpheaders-data-type.md)  
 An instance of the [HttpHeaders](httpheaders-data-type.md) data type.
 
 *Key*  
@@ -38,8 +39,8 @@ The specified header values.
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the specified header name and values are stored in the collection; otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

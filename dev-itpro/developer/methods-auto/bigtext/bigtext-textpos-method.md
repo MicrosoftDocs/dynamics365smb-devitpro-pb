@@ -1,8 +1,9 @@
 ---
 title: "BigText.TextPos Method"
+description: "Gets the position at which a specific string first occurs in this BigText instance."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Gets the position at which a specific string first occurs in this BigText instan
 Position :=   BigText.TextPos(String: String)
 ```
 ## Parameters
-*BigText*
-&emsp;Type: [BigText](bigtext-data-type.md)
+*BigText*  
+&emsp;Type: [BigText](bigtext-data-type.md)  
 An instance of the [BigText](bigtext-data-type.md) data type.
 
 *String*  
@@ -35,8 +36,8 @@ The text string to search for in the BigText variable. If this parameter is empt
 
 
 ## Return Value
-*Position*
-&emsp;Type: [Integer](../integer/integer-data-type.md)
+*Position*  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 The position at which a specific string first occurs in this BigText instance.
 
 

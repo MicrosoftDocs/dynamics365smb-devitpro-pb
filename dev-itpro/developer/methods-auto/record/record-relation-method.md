@@ -1,8 +1,9 @@
 ---
 title: "Record.Relation Method"
+description: "Determines the table relationship of a given field."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Determines the table relationship of a given field.
 TableNumber :=   Record.Relation(Field: Any)
 ```
 ## Parameters
-*Record*
-&emsp;Type: [Record](record-data-type.md)
+*Record*  
+&emsp;Type: [Record](record-data-type.md)  
 An instance of the [Record](record-data-type.md) data type.
 
 *Field*  
@@ -35,8 +36,8 @@ The field for which you want to find the table relationship.
 
 
 ## Return Value
-*TableNumber*
-&emsp;Type: [Integer](../integer/integer-data-type.md)
+*TableNumber*  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 
 
 

@@ -1,8 +1,9 @@
 ---
 title: "JsonArray.Set Method"
+description: "Replaces the value at the given index with a new value."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Replaces the value at the given index with a new value.
 [Ok := ]  JsonArray.Set(Index: Integer, Result: Boolean)
 ```
 ## Parameters
-*JsonArray*
-&emsp;Type: [JsonArray](jsonarray-data-type.md)
+*JsonArray*  
+&emsp;Type: [JsonArray](jsonarray-data-type.md)  
 An instance of the [JsonArray](jsonarray-data-type.md) data type.
 
 *Index*  
@@ -37,8 +38,8 @@ An instance of the [JsonArray](jsonarray-data-type.md) data type.
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the read was successful; otherwise, **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

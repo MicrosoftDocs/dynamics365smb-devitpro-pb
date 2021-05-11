@@ -1,8 +1,9 @@
 ---
 title: "HttpResponseMessage.HttpStatusCode Method"
+description: "Gets the status code of the HTTP response."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,13 +28,13 @@ StatusCode :=   HttpResponseMessage.HttpStatusCode()
 > This method can be invoked using property access syntax.
 
 ## Parameters
-*HttpResponseMessage*
-&emsp;Type: [HttpResponseMessage](httpresponsemessage-data-type.md)
+*HttpResponseMessage*  
+&emsp;Type: [HttpResponseMessage](httpresponsemessage-data-type.md)  
 An instance of the [HttpResponseMessage](httpresponsemessage-data-type.md) data type.
 
 ## Return Value
-*StatusCode*
-&emsp;Type: [Integer](../integer/integer-data-type.md)
+*StatusCode*  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 The status code of the HTTP response.
 
 

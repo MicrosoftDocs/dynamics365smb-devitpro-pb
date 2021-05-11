@@ -1,8 +1,9 @@
 ---
 title: "KeyRef.Active Method"
+description: "Indicates whether the key is enabled."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,13 +28,13 @@ Ok :=   KeyRef.Active()
 > This method can be invoked using property access syntax.
 
 ## Parameters
-*KeyRef*
-&emsp;Type: [KeyRef](keyref-data-type.md)
+*KeyRef*  
+&emsp;Type: [KeyRef](keyref-data-type.md)  
 An instance of the [KeyRef](keyref-data-type.md) data type.
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the key is enabled; otherwise, **false**.
 
 

@@ -1,8 +1,9 @@
 ---
 title: "NavApp.IsInstalling Method"
+description: "Returns **true** if the application that contains the AL object that is currently running is being installed, otherwise it returns **false**."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,8 +27,8 @@ Result :=   NavApp.IsInstalling()
 
 
 ## Return Value
-*Result*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Result*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the application that contains the AL object that is currently running is being installed, otherwise **false**.
 
 

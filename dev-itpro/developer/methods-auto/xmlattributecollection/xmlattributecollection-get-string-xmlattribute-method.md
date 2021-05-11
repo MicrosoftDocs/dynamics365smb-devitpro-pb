@@ -1,8 +1,9 @@
 ---
 title: "XmlAttributeCollection.Get Method"
+description: "Gets the specified attribute."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Gets the specified attribute.
 [Ok := ]  XmlAttributeCollection.Get(Name: String, var Result: XmlAttribute)
 ```
 ## Parameters
-*XmlAttributeCollection*
-&emsp;Type: [XmlAttributeCollection](xmlattributecollection-data-type.md)
+*XmlAttributeCollection*  
+&emsp;Type: [XmlAttributeCollection](xmlattributecollection-data-type.md)  
 An instance of the [XmlAttributeCollection](xmlattributecollection-data-type.md) data type.
 
 *Name*  
@@ -38,8 +39,8 @@ Variable containing the requested XmlAttribute if the operation is successful.
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

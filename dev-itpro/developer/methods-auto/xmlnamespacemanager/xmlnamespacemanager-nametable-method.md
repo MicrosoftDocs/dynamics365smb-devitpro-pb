@@ -1,8 +1,9 @@
 ---
 title: "XmlNamespaceManager.NameTable Method"
+description: "Gets or sets the XmlNameTable associated with this object."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,8 +27,8 @@ Gets or sets the XmlNameTable associated with this object.
 > [!NOTE]
 > This method can be invoked using property access syntax.
 ## Parameters
-*XmlNamespaceManager*
-&emsp;Type: [XmlNamespaceManager](xmlnamespacemanager-data-type.md)
+*XmlNamespaceManager*  
+&emsp;Type: [XmlNamespaceManager](xmlnamespacemanager-data-type.md)  
 An instance of the [XmlNamespaceManager](xmlnamespacemanager-data-type.md) data type.
 
 *NewValue*  
@@ -36,8 +37,8 @@ The new XmlNameTable to associate with this object. Setting the NameTable will r
 
 
 ## Return Value
-*Value*
-&emsp;Type: [XmlNameTable](../xmlnametable/xmlnametable-data-type.md)
+*Value*  
+&emsp;Type: [XmlNameTable](../xmlnametable/xmlnametable-data-type.md)  
 The XmlNameTable associated with this object.
 
 

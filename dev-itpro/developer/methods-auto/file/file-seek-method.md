@@ -1,8 +1,9 @@
 ---
 title: "File.Seek Method"
+description: "Sets a file pointer to a new position in an ASCII or binary file."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,8 +29,8 @@ Sets a file pointer to a new position in an ASCII or binary file.
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
 ## Parameters
-*File*
-&emsp;Type: [File](file-data-type.md)
+*File*  
+&emsp;Type: [File](file-data-type.md)  
 An instance of the [File](file-data-type.md) data type.
 
 *Position*  

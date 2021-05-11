@@ -1,8 +1,9 @@
 ---
 title: "FilterPageBuilder.AddField Method"
+description: "Adds a table field to the filter control for a table on filter page."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Adds a table field to the filter control for a table on filter page.
 [Ok := ]  FilterPageBuilder.AddField(Name: String, Field: FieldRef [, Filter: String])
 ```
 ## Parameters
-*FilterPageBuilder*
-&emsp;Type: [FilterPageBuilder](filterpagebuilder-data-type.md)
+*FilterPageBuilder*  
+&emsp;Type: [FilterPageBuilder](filterpagebuilder-data-type.md)  
 An instance of the [FilterPageBuilder](filterpagebuilder-data-type.md) data type.
 
 *Name*  
@@ -42,8 +43,8 @@ A default filter on the field that is specified by the Field parameter.
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the field was added to the field list for the specified filter control, otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

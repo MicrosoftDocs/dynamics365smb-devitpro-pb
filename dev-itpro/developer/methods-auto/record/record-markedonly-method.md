@@ -1,8 +1,9 @@
 ---
 title: "Record.MarkedOnly Method"
+description: "Activates a special filter. After you use this function, your view of the table includes only records marked by this function."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,8 +27,8 @@ Activates a special filter. After you use this function, your view of the table 
 > [!NOTE]
 > This method can be invoked using property access syntax.
 ## Parameters
-*Record*
-&emsp;Type: [Record](record-data-type.md)
+*Record*  
+&emsp;Type: [Record](record-data-type.md)  
 An instance of the [Record](record-data-type.md) data type.
 
 *MarkedOnly*  
@@ -36,8 +37,8 @@ Activates a special filter.
 
 
 ## Return Value
-*MarkedOnly*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*MarkedOnly*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the special filter is being used; otherwise, **false**.
 
 

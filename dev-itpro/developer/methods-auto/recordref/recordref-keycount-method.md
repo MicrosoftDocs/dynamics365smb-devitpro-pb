@@ -1,8 +1,9 @@
 ---
 title: "RecordRef.KeyCount Method"
+description: "Gets the number of keys that exist in the table that is referred to by the RecordRef. Returns an error if no table is selected."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,13 +28,13 @@ Count :=   RecordRef.KeyCount()
 > This method can be invoked using property access syntax.
 
 ## Parameters
-*RecordRef*
-&emsp;Type: [RecordRef](recordref-data-type.md)
+*RecordRef*  
+&emsp;Type: [RecordRef](recordref-data-type.md)  
 An instance of the [RecordRef](recordref-data-type.md) data type.
 
 ## Return Value
-*Count*
-&emsp;Type: [Integer](../integer/integer-data-type.md)
+*Count*  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 The number of keys that have been identified in the table.
 
 

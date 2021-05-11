@@ -1,8 +1,9 @@
 ---
 title: "MediaSet.Remove Method"
+description: "Removes a media object from a MediaSet of a record."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Removes a media object from a MediaSet of a record.
 [Result := ]  MediaSet.Remove(MediaId: Guid)
 ```
 ## Parameters
-*MediaSet*
-&emsp;Type: [MediaSet](mediaset-data-type.md)
+*MediaSet*  
+&emsp;Type: [MediaSet](mediaset-data-type.md)  
 An instance of the [MediaSet](mediaset-data-type.md) data type.
 
 *MediaId*  
@@ -35,8 +36,8 @@ Specifies the unique ID that is assigned to the media object that you want to re
 
 
 ## Return Value
-*Result*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Result*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the object was removed or **false** if a media object with the given ID was not present in the set. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

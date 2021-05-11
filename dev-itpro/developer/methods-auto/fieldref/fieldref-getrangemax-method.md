@@ -1,8 +1,9 @@
 ---
 title: "FieldRef.GetRangeMax Method"
+description: "Gets the maximum value in a range for a field."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,13 +28,13 @@ Value :=   FieldRef.GetRangeMax()
 > This method can be invoked using property access syntax.
 
 ## Parameters
-*FieldRef*
-&emsp;Type: [FieldRef](fieldref-data-type.md)
+*FieldRef*  
+&emsp;Type: [FieldRef](fieldref-data-type.md)  
 An instance of the [FieldRef](fieldref-data-type.md) data type.
 
 ## Return Value
-*Value*
-&emsp;Type: [Any](../any/any-data-type.md)
+*Value*  
+&emsp;Type: [Any](../any/any-data-type.md)  
 
 
 

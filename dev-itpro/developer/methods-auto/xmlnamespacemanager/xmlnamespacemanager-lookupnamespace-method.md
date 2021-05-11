@@ -1,8 +1,9 @@
 ---
 title: "XmlNamespaceManager.LookupNamespace Method"
+description: "Gets the namespace URI for the specified prefix."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Gets the namespace URI for the specified prefix.
 [Ok := ]  XmlNamespaceManager.LookupNamespace(Prefix: String, var Result: Text)
 ```
 ## Parameters
-*XmlNamespaceManager*
-&emsp;Type: [XmlNamespaceManager](xmlnamespacemanager-data-type.md)
+*XmlNamespaceManager*  
+&emsp;Type: [XmlNamespaceManager](xmlnamespacemanager-data-type.md)  
 An instance of the [XmlNamespaceManager](xmlnamespacemanager-data-type.md) data type.
 
 *Prefix*  
@@ -38,8 +39,8 @@ The namespace URI for prefix.
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

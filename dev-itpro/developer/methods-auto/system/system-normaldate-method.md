@@ -1,8 +1,9 @@
 ---
 title: "System.NormalDate Method"
+description: "Gets the regular date (instead of the closing date) for the argument Date."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -32,8 +33,8 @@ The input date. You can enter a closing date or a normal date. A run-time error 
 
 
 ## Return Value
-*NormalDate*
-&emsp;Type: [Date](../date/date-data-type.md)
+*NormalDate*  
+&emsp;Type: [Date](../date/date-data-type.md)  
 
 
 

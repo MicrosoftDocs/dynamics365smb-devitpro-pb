@@ -1,8 +1,9 @@
 ---
 title: "XmlNode.IsXmlCData Method"
+description: "Gets a value indicating whether this node is an XmlCData."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,13 +28,13 @@ Value :=   XmlNode.IsXmlCData()
 > This method can be invoked using property access syntax.
 
 ## Parameters
-*XmlNode*
-&emsp;Type: [XmlNode](xmlnode-data-type.md)
+*XmlNode*  
+&emsp;Type: [XmlNode](xmlnode-data-type.md)  
 An instance of the [XmlNode](xmlnode-data-type.md) data type.
 
 ## Return Value
-*Value*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Value*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if this node is an XmlCData node, otherwise **false**.
 
 

@@ -1,8 +1,9 @@
 ---
 title: "XmlDocument.RemoveNodes Method"
+description: "Removes the child nodes from this document."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,8 +26,8 @@ Removes the child nodes from this document.
 ```
 
 ## Parameters
-*XmlDocument*
-&emsp;Type: [XmlDocument](xmldocument-data-type.md)
+*XmlDocument*  
+&emsp;Type: [XmlDocument](xmldocument-data-type.md)  
 An instance of the [XmlDocument](xmldocument-data-type.md) data type.
 
 

@@ -1,8 +1,9 @@
 ---
 title: "HttpHeaders.Contains Method"
+description: "Checks if the specified header exists in the HttpHeaders collection."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Checks if the specified header exists in the HttpHeaders collection.
 Result :=   HttpHeaders.Contains(Name: String)
 ```
 ## Parameters
-*HttpHeaders*
-&emsp;Type: [HttpHeaders](httpheaders-data-type.md)
+*HttpHeaders*  
+&emsp;Type: [HttpHeaders](httpheaders-data-type.md)  
 An instance of the [HttpHeaders](httpheaders-data-type.md) data type.
 
 *Name*  
@@ -34,8 +35,8 @@ The specific header.
 
 
 ## Return Value
-*Result*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Result*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the specified header exists in the collection; otherwise **false**.
 
 

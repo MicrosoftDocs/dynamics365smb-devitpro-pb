@@ -1,8 +1,9 @@
 ---
 title: "MediaSet.ImportFile Method"
+description: "Adds a media, such as a JPEG image, to the MediaSet data type field of a record for displaying the media in the client. The media is imported to the database and included in a MediaSet for the record."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,8 +27,8 @@ Adds a media, such as a JPEG image, to the MediaSet data type field of a record 
 [ID := ]  MediaSet.ImportFile(Filename: String, Description: String [, MimeType: String])
 ```
 ## Parameters
-*MediaSet*
-&emsp;Type: [MediaSet](mediaset-data-type.md)
+*MediaSet*  
+&emsp;Type: [MediaSet](mediaset-data-type.md)  
 An instance of the [MediaSet](mediaset-data-type.md) data type.
 
 *Filename*  
@@ -45,8 +46,8 @@ Specifies the media content type. MIME type is used by browsers, and is an Inter
 
 
 ## Return Value
-*ID*
-&emsp;Type: [Guid](../guid/guid-data-type.md)
+*ID*  
+&emsp;Type: [Guid](../guid/guid-data-type.md)  
 The unique ID that is assigned to the MediaSet of the record. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

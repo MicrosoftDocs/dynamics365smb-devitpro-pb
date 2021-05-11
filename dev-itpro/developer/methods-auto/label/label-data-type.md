@@ -1,8 +1,9 @@
 ---
 title: "Label Data Type"
+description: "Denotes a string constant that can be optionally translated into multiple languages."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

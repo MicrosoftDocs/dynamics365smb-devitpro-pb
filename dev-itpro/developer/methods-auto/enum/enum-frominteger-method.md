@@ -1,8 +1,9 @@
 ---
 title: "Enum.FromInteger Method"
+description: "Returns an enum with the integer value"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,8 +31,8 @@ Enum with integer value :=   Enum.FromInteger(Value: Integer)
 
 
 ## Return Value
-*Enum with integer value*
-&emsp;Type: [Any](../any/any-data-type.md)
+*Enum with integer value*  
+&emsp;Type: [Any](../any/any-data-type.md)  
 
 
 

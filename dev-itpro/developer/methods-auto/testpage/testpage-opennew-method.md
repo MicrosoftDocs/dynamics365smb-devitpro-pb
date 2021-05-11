@@ -1,8 +1,9 @@
 ---
 title: "TestPage.OpenNew Method"
+description: "Opens a blank test page in edit mode."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,8 +26,8 @@ Opens a blank test page in edit mode.
 ```
 
 ## Parameters
-*TestPage*
-&emsp;Type: [TestPage](testpage-data-type.md)
+*TestPage*  
+&emsp;Type: [TestPage](testpage-data-type.md)  
 An instance of the [TestPage](testpage-data-type.md) data type.
 
 

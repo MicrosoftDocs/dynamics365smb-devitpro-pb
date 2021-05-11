@@ -1,8 +1,9 @@
 ---
 title: "File.Pos Method"
+description: "Gets the current position of the file pointer in an ASCII or binary file."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -31,13 +32,13 @@ Position :=   File.Pos()
 > This method can be invoked without specifying the data type name.
 
 ## Parameters
-*File*
-&emsp;Type: [File](file-data-type.md)
+*File*  
+&emsp;Type: [File](file-data-type.md)  
 An instance of the [File](file-data-type.md) data type.
 
 ## Return Value
-*Position*
-&emsp;Type: [Integer](../integer/integer-data-type.md)
+*Position*  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 
 
 

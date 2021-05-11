@@ -1,8 +1,9 @@
 ---
 title: "XmlCData.Create Method"
+description: "Creates an XmlCData node."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,8 +31,8 @@ A string that contains the value of the new XmlCData node.
 
 
 ## Return Value
-*CDataNode*
-&emsp;Type: [XmlCData](xmlcdata-data-type.md)
+*CDataNode*  
+&emsp;Type: [XmlCData](xmlcdata-data-type.md)  
 The created XmlCData node.
 
 

@@ -1,8 +1,9 @@
 ---
 title: "System.GetLastErrorObject Method"
+description: "Gets the last System.Exception object that occurred."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,8 +31,8 @@ DotNet :=   System.GetLastErrorObject()
 
 
 ## Return Value
-*DotNet*
-&emsp;Type: [DotNet](../dotnet/dotnet-data-type.md)
+*DotNet*  
+&emsp;Type: [DotNet](../dotnet/dotnet-data-type.md)  
 
 
 

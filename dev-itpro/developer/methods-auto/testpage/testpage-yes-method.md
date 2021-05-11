@@ -1,8 +1,9 @@
 ---
 title: "TestPage.Yes Method"
+description: "Gets the Yes system action."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,13 +26,13 @@ Action :=   TestPage.Yes()
 ```
 
 ## Parameters
-*TestPage*
-&emsp;Type: [TestPage](testpage-data-type.md)
+*TestPage*  
+&emsp;Type: [TestPage](testpage-data-type.md)  
 An instance of the [TestPage](testpage-data-type.md) data type.
 
 ## Return Value
-*Action*
-&emsp;Type: [TestAction](../testaction/testaction-data-type.md)
+*Action*  
+&emsp;Type: [TestAction](../testaction/testaction-data-type.md)  
 The Yes system action.
 
 

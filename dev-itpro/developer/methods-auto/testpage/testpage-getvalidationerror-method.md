@@ -1,8 +1,9 @@
 ---
 title: "TestPage.GetValidationError Method"
+description: "Gets the list of all validation error that occurred on a test page as a string."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Gets the list of all validation error that occurred on a test page as a string.
 Error :=   TestPage.GetValidationError([Index: Integer])
 ```
 ## Parameters
-*TestPage*
-&emsp;Type: [TestPage](testpage-data-type.md)
+*TestPage*  
+&emsp;Type: [TestPage](testpage-data-type.md)  
 An instance of the [TestPage](testpage-data-type.md) data type.
 
 *Index*  
@@ -34,8 +35,8 @@ The index of the validation error that occurred on the test page.
 
 
 ## Return Value
-*Error*
-&emsp;Type: [String](../string/string-data-type.md)
+*Error*  
+&emsp;Type: [String](../string/string-data-type.md)  
 A string where each line represents a validation error that occured on the test page.
 
 

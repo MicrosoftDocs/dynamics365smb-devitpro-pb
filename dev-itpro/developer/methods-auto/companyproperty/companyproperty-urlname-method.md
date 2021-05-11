@@ -1,8 +1,9 @@
 ---
 title: "CompanyProperty.UrlName Method"
+description: "Gets the string that represents the company name in a URL."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,8 +27,8 @@ UrlName :=   CompanyProperty.UrlName()
 
 
 ## Return Value
-*UrlName*
-&emsp;Type: [String](../string/string-data-type.md)
+*UrlName*  
+&emsp;Type: [String](../string/string-data-type.md)  
 The company name in a URL.
 
 

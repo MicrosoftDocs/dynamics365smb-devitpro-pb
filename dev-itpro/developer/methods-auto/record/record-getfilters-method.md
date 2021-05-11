@@ -1,8 +1,9 @@
 ---
 title: "Record.GetFilters Method"
+description: "Gets a string that contains a list of the filters within the current filter group for all fields in a record. In addition, this method also returns the state of the MARKEDONLY method (Record)."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,13 +28,13 @@ String :=   Record.GetFilters()
 > This method can be invoked using property access syntax.
 
 ## Parameters
-*Record*
-&emsp;Type: [Record](record-data-type.md)
+*Record*  
+&emsp;Type: [Record](record-data-type.md)  
 An instance of the [Record](record-data-type.md) data type.
 
 ## Return Value
-*String*
-&emsp;Type: [String](../string/string-data-type.md)
+*String*  
+&emsp;Type: [String](../string/string-data-type.md)  
 
 
 

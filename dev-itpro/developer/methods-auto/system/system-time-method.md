@@ -1,8 +1,9 @@
 ---
 title: "System.Time Method"
+description: "Gets the current time from the operating system."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,8 +31,8 @@ Time :=   System.Time()
 
 
 ## Return Value
-*Time*
-&emsp;Type: [Time](../time/time-data-type.md)
+*Time*  
+&emsp;Type: [Time](../time/time-data-type.md)  
 
 
 

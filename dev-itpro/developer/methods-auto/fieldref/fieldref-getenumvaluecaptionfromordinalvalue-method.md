@@ -1,8 +1,9 @@
 ---
 title: "FieldRef.GetEnumValueCaptionFromOrdinalValue Method"
+description: "Gets an Enum value (or Option member) caption for the from the Enum metadata for the field that is currently selected."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Gets an Enum value (or Option member) caption for the from the Enum metadata for
 The Enum value caption :=   FieldRef.GetEnumValueCaptionFromOrdinalValue(Ordinal: Integer)
 ```
 ## Parameters
-*FieldRef*
-&emsp;Type: [FieldRef](fieldref-data-type.md)
+*FieldRef*  
+&emsp;Type: [FieldRef](fieldref-data-type.md)  
 An instance of the [FieldRef](fieldref-data-type.md) data type.
 
 *Ordinal*  
@@ -34,8 +35,8 @@ The Enum value's ordinal value to get the Enum value (or Option member) caption 
 
 
 ## Return Value
-*The Enum value caption*
-&emsp;Type: [String](../string/string-data-type.md)
+*The Enum value caption*  
+&emsp;Type: [String](../string/string-data-type.md)  
 The Enum value caption.
 
 

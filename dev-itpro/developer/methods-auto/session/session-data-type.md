@@ -1,8 +1,9 @@
 ---
 title: "Session Data Type"
+description: "Represents a Microsoft Dynamics Business Central session."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -42,6 +43,7 @@ The following methods are available on the Session data type.
 |[SetDocumentServiceToken(String)](session-setdocumentservicetoken-method.md)|Sets the document service token in the current session.|
 |[StartSession(var Integer, Integer [, String] [, var Record])](session-startsession-integer-integer-string-table-method.md)|Starts a session without a UI and runs the specified codeunit.|
 |[StartSession(var Integer, Integer, String, var Record, Duration)](session-startsession-integer-integer-string-table-duration-method.md)|Starts a session without a UI and runs the specified codeunit.|
+|[StartSession(var Integer, Integer, Duration [, String] [, var Record])](session-startsession-integer-integer-duration-string-table-method.md)|Starts a session without a UI and runs the specified codeunit.|
 |[StopSession(Integer [, String])](session-stopsession-method.md)|Stops a session.|
 |[UnbindSubscription(Codeunit)](session-unbindsubscription-method.md)|Unbinds the event subscriber methods from in the codeunit instance. This essentially deactivates the subscriber methods for the codeunit instance.|
 

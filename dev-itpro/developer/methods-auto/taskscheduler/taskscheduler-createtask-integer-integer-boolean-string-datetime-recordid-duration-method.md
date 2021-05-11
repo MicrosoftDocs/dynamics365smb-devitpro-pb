@@ -1,8 +1,9 @@
 ---
 title: "TaskScheduler.CreateTask Method"
+description: "Adds a task to ensure that a codeunit is not run before the specified time."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -50,12 +51,12 @@ Specifies the recordID of the record that you want to run the task on.
           
 *Timeout*  
 &emsp;Type: [Duration](../duration/duration-data-type.md)  
-Specifies the timeout of the created session. If not specified a default timeout will be used; for OnPrem, the default timeout is set on the server, for SaaS the current default timeout is 8 hours, and may change in the future.  
+Specifies the timeout of the created session. If not specified a default timeout will be used; for OnPrem, the default timeout is set on the server, for SaaS the current default timeout is 12 hours, and may change in the future.  
 
 
 ## Return Value
-*Task*
-&emsp;Type: [Guid](../guid/guid-data-type.md)
+*Task*  
+&emsp;Type: [Guid](../guid/guid-data-type.md)  
 
 
 

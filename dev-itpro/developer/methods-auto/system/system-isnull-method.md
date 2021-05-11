@@ -1,8 +1,9 @@
 ---
 title: "System.IsNull Method"
+description: "Gets a value indicating whether a DotNet object has been created or not."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -34,8 +35,8 @@ A DotNet expression.
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **True** if the DotNet object is NULL, otherwise **false**.
 
 

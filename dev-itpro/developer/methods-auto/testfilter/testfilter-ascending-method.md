@@ -1,8 +1,9 @@
 ---
 title: "TestFilter.Ascending Method"
+description: "Gets or sets the order in which to search through a data set on a test page."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,8 +27,8 @@ Gets or sets the order in which to search through a data set on a test page.
 > [!NOTE]
 > This method can be invoked using property access syntax.
 ## Parameters
-*TestFilter*
-&emsp;Type: [TestFilter](testfilter-data-type.md)
+*TestFilter*  
+&emsp;Type: [TestFilter](testfilter-data-type.md)  
 An instance of the [TestFilter](testfilter-data-type.md) data type.
 
 *Value*  
@@ -36,8 +37,8 @@ Sets the order in which to search through a data set on a test page.
 
 
 ## Return Value
-*Ascending*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Ascending*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 
 
 

@@ -1,8 +1,9 @@
 ---
 title: "XmlProcessingInstruction.SetTarget Method"
+description: "Sets the target of the processing instruction."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Sets the target of the processing instruction.
 [Ok := ]  XmlProcessingInstruction.SetTarget(Value: String)
 ```
 ## Parameters
-*XmlProcessingInstruction*
-&emsp;Type: [XmlProcessingInstruction](xmlprocessinginstruction-data-type.md)
+*XmlProcessingInstruction*  
+&emsp;Type: [XmlProcessingInstruction](xmlprocessinginstruction-data-type.md)  
 An instance of the [XmlProcessingInstruction](xmlprocessinginstruction-data-type.md) data type.
 
 *Value*  
@@ -34,8 +35,8 @@ The new target of the processing instruction.
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

@@ -1,8 +1,9 @@
 ---
 title: "Record.DeleteLink Method"
+description: "Deletes a specified link from a record in a table."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Deletes a specified link from a record in a table.
  Record.DeleteLink(ID: Integer)
 ```
 ## Parameters
-*Record*
-&emsp;Type: [Record](record-data-type.md)
+*Record*  
+&emsp;Type: [Record](record-data-type.md)  
 An instance of the [Record](record-data-type.md) data type.
 
 *ID*  
