@@ -20,7 +20,7 @@ Would you like to know what has changed in update 18.1? Below you'll find an ove
 > Builds for Business Central version 18.1 on-premise are delayed and will be available later this month. This page will be updated when the on-premise builds are available.
 
 ## Hotfixes
-Find an overview of hotfixes in this article - COMING SOON!.
+Find an overview of hotfixes in this [article](https://support.microsoft.com/topic/update-18-1-for-microsoft-dynamics-365-business-central-2021-release-wave-1-application-build-18-1-25158-platform-build-18-0-25290-c2b1b1d3-e875-4079-817e-aa51454feddb).
 
 ## Feature changes
 - [Editing in Excel more reliably](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/editing-excel-more-reliably)
