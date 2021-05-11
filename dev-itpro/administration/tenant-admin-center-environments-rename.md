@@ -14,6 +14,8 @@ ms.author: jswymer
 
 # Rename Environments in the Admin Center
 
+**APPLIES TO:** Business Central 2020 release wave 2 and later
+
 > [!NOTE]
 > This feature is in preview. It might change or be removed in the future updates.
 
