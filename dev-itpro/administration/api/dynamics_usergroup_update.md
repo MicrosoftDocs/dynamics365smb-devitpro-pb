@@ -19,7 +19,7 @@ Updates the properties of an user group object for [!INCLUDE[d365fin_long_md](..
 
 ## HTTP request
 
-Replace the URL prefix for [!INCLUDE [prod_short](../../includes/prod_short.md)] depending on environment following the [guideline](/dynamics365/dynamics-nav/api-reference/v2.0/enabling-apis-for-dynamics-nav).
+Replace the URL prefix for [!INCLUDE [prod_short](../../includes/prod_short.md)] depending on environment following the [guideline](../../api-reference/v2.0/enabling-apis-for-dynamics-nav.md).
 
 ```
 PATCH /microsoft/automation/v2.0/companies({companyId})/userGroups({userGroupId})
