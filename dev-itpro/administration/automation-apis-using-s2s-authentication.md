@@ -48,7 +48,7 @@ Complete these steps to register an application in your Azure AD tenant for serv
     |-------|-----------|
     |Name|Specify a unique name for your application. |
     |Supported account types| Select either <strong>Accounts in this organizational directory only (Microsoft only - Single tenant)</strong> or <strong>Accounts in any organizational directory (Any Azure AD directory - Multitenant)</strong>.|
-    |Redirect URI|Leave this option empty.|
+    |Redirect URI|Set the first box to **Web** to specify a web application. Enter the URL for your Business Central on-premises browser client, followed by *OAuthLanding.htm*, for example: `https://MyServer/BC180/OAuthLanding` or `https://cronus.onmicrosoft.com/BC180/OAuthLanding.htm`. This file is used to manage the exchange of data between Business Central on-premises and other services through Azure AD.<br> <br>**Important:** The URL must match the URL of Web client, as it appears in the browser address. For example, even though the actual URL might be `https://MyServer:443/BC180/OAuthLanding`, the browser typically removes the port number `:443`.|
 
     When completed, an **Overview** displays in the portal for the new application.
 
@@ -77,11 +77,11 @@ Complete these steps to register an application in your Azure AD tenant for serv
 
 Complete these steps to set up the Azure AD application for service-to-service authentication in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
-1. In the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client, search for **AAD Applications**  and open the page.
+1. In the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client, search for **Azure Active Directory Applications**  and open the page.
 
 2. Select **New**.
 
-    The **AAD Application Card** opens.
+    The **Azure Active Directory Application Card** opens.
 
 3. In the **Client ID** field, enter the **Application (Client) ID**  for the registered application in Azure AD from task 1. 
 
@@ -94,7 +94,7 @@ Complete these steps to set up the Azure AD application for service-to-service a
    For more information, [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions).
 
    > [!TIP]
-   > The system permission set and user group called **Dynamics 365 Automation** provide access to most typical objects used with automation.
+   > The system permission sets and user groups called **D365 AUTOMATION** and **D365 EXTENSION MGT** provide access to most typical objects used with automation.
 
 7. Select **Grant Consent** and follow the wizard to the complete the setup.
 
@@ -111,8 +111,10 @@ Complete these steps to set up the Azure AD application for service-to-service a
 [Extension deployment status](resources/dynamics_extensiondeploymentstatus.md)  
 [Extension upload](resources/dynamics_extensionupload.md)  
 [Permission set](resources/dynamics_permissionset.md)  
+[Profile](resources/dynamics_profile.md)  
 [Scheduled job](resources/dynamics_scheduledjob.md)  
 [User](resources/dynamics_user.md)  
 [User group](resources/dynamics_usergroup.md)  
 [User group member](resources/dynamics_usergroupmember.md)  
+[User group permission](resources/dynamics_usergrouppermission.md)  
 [User permission](resources/dynamics_userpermission.md)  

@@ -33,15 +33,24 @@ Specify the multiplicity of the part.
 ## Syntax
 
 ```al
-var
-    Multiplicity: Integer;
-begin
-    // Setup Reservations.
-    // If negative scenarios, do not create available supply.
-    if FilterOnLocation or FilterOnVariant or (DueDateDelay <> 0) then
-        Multiplicity := 0
-    else
-        Multiplicity := 1;
+
+    part(carModels; "API Car Model")
+    {
+        Caption = 'Car Models';
+        Multiplicity = Many;
+        EntityName = 'carModel';
+        EntitySetName = 'carModels';
+        SubPageLink = "Brand Id" = Field(SystemId);
+    }
+
+    part(vendor; "API Vendor")
+    {
+        Caption = 'Vendor';
+        Multiplicity = ZeroOrOne;
+        EntityName = 'vendor';
+        SubPageLink = "id" = Field(SystemId);
+    }
+        
 ```
 
 ## See Also  

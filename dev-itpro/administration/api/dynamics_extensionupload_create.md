@@ -1,5 +1,5 @@
 ---
-title: Create extensionUpload | Microsoft Docs
+title: Create extensionUpload
 description: Creates an extension upload object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"
@@ -42,7 +42,7 @@ POST /microsoft/automation/v2.0/companies({companyId})/extensionUpload
 
 ### Request body
 
-In the request body, supply a JSON representation of a **extensionUpload** object.
+In the request body, supply a JSON representation of a [**extensionUpload** object](../resources/dynamics_extensionupload.md).
 
 ### Response
 

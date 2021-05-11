@@ -199,7 +199,7 @@ Content-type: application/json
 Once the extension upload record is created, an extension file can be uploaded with a [PATCH extensionUpload](api/dynamics_extensionupload_update.md). See the example below.
 
 ```json
-PATCH https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/extensionUpload({extensionUploadId})/content
+PATCH https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/extensionUpload({extensionUploadId})/extensionContent
 
 Authorization: Bearer {token}
 Content-type: application/octet-stream
@@ -236,8 +236,10 @@ GET https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microso
 [Extension deployment status](resources/dynamics_extensiondeploymentstatus.md)  
 [Extension upload](resources/dynamics_extensionupload.md)  
 [Permission set](resources/dynamics_permissionset.md)  
+[Profile](resources/dynamics_profile.md)  
 [Scheduled job](resources/dynamics_scheduledjob.md)  
 [User](resources/dynamics_user.md)  
 [User group](resources/dynamics_usergroup.md)  
 [User group member](resources/dynamics_usergroupmember.md)  
+[User group permission](resources/dynamics_usergrouppermission.md)  
 [User permission](resources/dynamics_userpermission.md)

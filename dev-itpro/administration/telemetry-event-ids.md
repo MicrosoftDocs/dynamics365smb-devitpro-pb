@@ -20,9 +20,10 @@ The following tables list the IDs of [!INCLUDE[prod_short](../developer/includes
 | Event ID | Area | Message |
 |----------|-------------|-----------------|
 |AL0000CTV|Email|[Email sent successfully](telemetry-email-trace.md#success)|
-| AL0000CTE | Field monitoring  | [Sensitive field value has changed: {alfieldCaption} in table {altableCaption}](telemetry-field-monitoring-trace.md#changed) |
+| AL0000CTE | Field monitoring  | [Sensitive field value has changed: {alfieldCaption} ({alFieldNumber}) in table {altableCaption} ({alTableNumber})](telemetry-field-monitoring-trace.md#changed) |
 |AL0000CTP|Email|[Failed to send email](telemetry-email-trace.md#failed)|
 | AL0000DD3 | Field monitoring | [Sensitive field monitor status has changed to {almonitorStatus}](telemetry-field-monitoring-trace.md#status) |
+|AL0000EMW|Field monitoring |[Sensitive field added to or removed from monitor: {alfieldCaption} ({alFieldNumber}) in table {alTableCaption} ({alTableNumber})](telemetry-field-monitoring-trace.md#added)|
 |AL0000E2A|Permissions|[User-defined permission set added: {alPermissionSetId}](telemetry-permission-changes-trace.md#setadded)|
 |AL0000E2B|Permissions|[User-defined permission set removed: {alPermissionSetId}](telemetry-permission-changes-trace.md#setremoved)|
 |AL0000E28 |Permissions|[Permission set link added: {alSourcePermissionSetId} -> {alLinkedPermissionSetId}](telemetry-permission-changes-trace.md#linkadded)|
@@ -31,6 +32,10 @@ The following tables list the IDs of [!INCLUDE[prod_short](../developer/includes
 |AL0000E2D |Permissions|[Permission set removed from user: {alPermissionSetId}](telemetry-permission-changes-trace.md#removeduser)|
 |AL0000E2E |Permissions|[Permission set assigned to user group: {alPermissionSetId}](telemetry-permission-changes-trace.md#assignedusergroup)|
 |AL0000E2F |Permissions|[Permission set removed from user group: {alPermissionSetId}](telemetry-permission-changes-trace.md#removedusergroup)|
+|AL0000D3L |Retention Policy |[Retention Policy Log Entry Logged: {alMessageType}](telemetry-retention-policy-trace.md#info)|
+|AL0000D6H |Retention Policy|[Records Deleted Using Retention Policy: Deleted {alRecordsDeleted} records from Table {alTableNo}, {alTableName}](telemetry-retention-policy-trace.md#deleted)|
+|AL0000D6I|Retention Policy|[First retention policy enabled on: {alCompanyName}](telemetry-retention-policy-trace.md#first)|
+|AL0000D6J|	Retention Policy|[Last retention policy disabled on: {alCompanyName}](telemetry-retention-policy-trace.md#last)|
 
 ## Client events
 
@@ -75,6 +80,8 @@ The following tables list the IDs of [!INCLUDE[prod_short](../developer/includes
 | LC0021 | Extension Lifecycle | [Extension failed to compile: {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})](telemetry-extension-lifecycle-trace.md#compiledfailed) |
 | LC0022 | Extension Lifecycle | [Extension updated successfully: {extensionName} version {extensionVersion} by {extensionPublisher}](telemetry-extension-lifecycle-trace.md#updatedsuccess) |
 | LC0023 | Extension Lifecycle | [Extension failed to update: {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})](telemetry-extension-lifecycle-trace.md#updatedfailed) |
+|LC0024|Table Index Lifecycle|[Index enabled: {tableName}](telemetry-table-index-trace.md#enabled)|
+|LC0025|Table Index Lifecycle|[Index disabled: {tableName}](telemetry-table-index-trace.md#disabled)|
 
 ## Runtime events
 
@@ -101,6 +108,7 @@ The following tables list the IDs of [!INCLUDE[prod_short](../developer/includes
 | RT0019 | Outgoing Web service requests  | [Web Service Called (Outgoing): {endpoint}](telemetry-webservices-outgoing-trace.md) |
 | RT0020 | Web service key request| [Authentication with Web Service Key succeeded: {endpoint}](telemetry-webservices-access-key-trace.md#succeeded) |
 | RT0021 | Web service key request| [Authentication with Web Service Key failed: {endpoint}](telemetry-webservices-access-key-trace.md#failed) |
+
 ## See also
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  

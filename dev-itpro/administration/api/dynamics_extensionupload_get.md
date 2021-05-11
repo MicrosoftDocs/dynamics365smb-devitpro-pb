@@ -1,5 +1,5 @@
 ---
-title: Get extensionUpload | Microsoft Docs
+title: Get extensionUpload
 description: Gets an extension upload object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"
@@ -59,6 +59,7 @@ Here is an example of the response.
     "extensionContent" : ""
 }
 ```
+Schedule in the body can be "Current version", "Next minor version", or "Next major version".
 
 ## See Also
 

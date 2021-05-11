@@ -61,7 +61,7 @@ To expose data in an API page, the first thing needed is a source table. For the
             }
             field(3; "Country"; Text[100])
             {
-                Caption = 'Brand Id';
+                Caption = 'Country';
             }
         }
 
@@ -285,13 +285,12 @@ In the following, we will create two API pages for both **Car Brand** and **Car 
     ``` 
 
 > [!TIP]  
-> Parts are defined as 1-N relationship by default. You can, however, define it to be as 1-0, 1-1 relationship. In order to achieve that add the **CaptionML = ENU = 'Multiplicity=ZeroOrOne';** property in your part as shown below:
+> Parts are defined as 1-N relationship by default. You can, however, define it to be as 1-0, 1-1 relationship. In order to achieve that add the **Multiplicity=ZeroOrOne;** property in your part as shown below:
 >```AL
 >part(carModels; "API Car Model")
 >    {
->        CaptionML = ENU = 'Multiplicity=ZeroOrOne';
+>        Multiplicity = ZeroOrOne;
 >        EntityName = 'carModel';
->        EntitySetName = 'carModels';
 >        SubPageLink = "Brand Id" = Field(SystemId);
 >    }
 > ```

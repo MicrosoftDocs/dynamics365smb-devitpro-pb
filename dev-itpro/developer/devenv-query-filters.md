@@ -151,7 +151,7 @@ These methods will overwrite any filter on the same field that is set on a colum
 
 ### Calling the SETFILTER and SETRANGE methods
 
-You can call the **SETFILTER** and **SETRANGE** method from the AL code of the [!INCLUDE[prod_short](includes/prod_short.md)] object that runs the query object or from the [OnBeforeOpen Trigger](triggers/devenv-onbeforeopen-trigger.md) of the query object.  
+You can call the **SETFILTER** and **SETRANGE** method from the AL code of the [!INCLUDE[prod_short](includes/prod_short.md)] object that runs the query object or from the [OnBeforeOpen Trigger](triggers-auto/query/devenv-onbeforeopen-query-trigger.md) of the query object.  
 
 To call the **SETFILTER** method, you use the following code.  
 

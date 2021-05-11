@@ -125,7 +125,7 @@ hdl1Txt: Label '<qualifier>The first headline</qualifier><payload>This is the <e
 
 ## Making headlines interactive
 
-You can use the [OnDrillDown trigger](triggers/devenv-ondrilldown-trigger.md) of a headline field to link the headline to more details or relevant information about what is shown in the headlines. For example, if the headline announced the largest sales order for the month, you could set up the headline to open a page that shows a sorted list of sales order for the month.
+You can use the [OnDrillDown trigger](triggers-auto/pagefield/devenv-ondrilldown-pagefield-trigger.md) of a headline field to link the headline to more details or relevant information about what is shown in the headlines. For example, if the headline announced the largest sales order for the month, you could set up the headline to open a page that shows a sorted list of sales order for the month.
 
 The following code uses the OnDrillDown trigger to link `Headline1` to the [!INCLUDE[d365fin_md](includes/d365fin_md.md)] online help.
 

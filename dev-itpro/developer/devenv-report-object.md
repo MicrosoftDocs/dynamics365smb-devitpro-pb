@@ -1,6 +1,6 @@
 ---
 title: "Report Object"
-description: "Reports are used to print or display information from a database."
+description: "The report object in AL for Business Central allows to create a new report."
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 04/01/2021
