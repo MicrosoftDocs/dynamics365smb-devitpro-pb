@@ -104,7 +104,7 @@ Symbols download is using the **snapshotInitialize** debug configuration setting
             "request": "snapshotInitialize",
             "environmentType": "OnPrem",
             "server": "http://localhost",
-            "serverInstance": "BC170",
+            "serverInstance": "BC180",
             "authentication": "UserPassword",
             "breakOnNext": "WebClient"
         },
