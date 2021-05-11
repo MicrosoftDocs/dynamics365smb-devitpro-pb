@@ -2728,6 +2728,7 @@
 ### [Deprecated Features in the Italian Version](upgrade/deprecated-features-it.md)
 ### [Deprecated Features in the Mexican Version](upgrade/deprecated-features-mx.md)
 ### [Deprecated Features in the Norwegian Version](upgrade/deprecated-features-no.md)
+### [Deprecated Features in the Russian Version](upgrade/deprecated-features-ru.md)
 ### [Deprecated Features in the Swedish Version](upgrade/deprecated-features-se.md)
 ### [Deprecated Features in the Swiss Version](upgrade/deprecated-features-ch.md)
 ### [Deprecated Features in the UK Version](upgrade/deprecated-features-uk.md)
