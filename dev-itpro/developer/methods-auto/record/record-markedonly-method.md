@@ -45,4 +45,5 @@ Activates a special filter.
 ## See Also
 [Record Data Type](record-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
-[Developing Extensions](../../devenv-dev-overview.md)
+[Developing Extensions](../../devenv-dev-overview.md)  
+[Mark (Record) Method](record-mark-method.md)
