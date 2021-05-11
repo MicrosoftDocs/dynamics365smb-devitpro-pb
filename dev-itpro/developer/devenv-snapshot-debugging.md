@@ -23,7 +23,7 @@ Snapshot debugging introduces the concept of *snappoints*. A snappoint is a brea
 - AL exceptions
 
 > [!NOTE]  
-> With [!INCLUDE[prod_short](includes/prod_short.md)] version 18.1, it is possible to snapshot debug event subscribers triggered from built-in codeunit triggers if a snappoint is placed in an AL file on the stack trace that leads to the built-in method. For more information, see [Snapshot debugging built-in methods](devenv-snapshot-debugging.md#snapshot-debugging-built--in-codeunit-triggers).
+> With [!INCLUDE[prod_short](includes/prod_short.md)] version 18.1, it is possible to snapshot debug event subscribers triggered from built-in codeunit triggers if a snappoint is placed in an AL file on the stack trace that leads to the built-in method. For more information, see [Snapshot debugging built-in methods](devenv-snapshot-debugging.md#snapshot-debugging-built-in-codeunit-triggers).
 
 > [!IMPORTANT]  
 > To enable snapshot debugging it is very important that the symbols on the tenant match the symbols on the server. This is not automatically detected, and must be manually checked. In this release, you can ensure this by copying the specific sandbox and download symbols from that copy. Furthermore, any code that snappoints are set in, must have been deployed, otherwise debugging will not work. For more information, see the section [Downloading symbols on the snapshot debugger endpoint](devenv-snapshot-debugging.md#downloading-symbols-on-the-snapshot-debugger-endpoint).
