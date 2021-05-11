@@ -2,7 +2,7 @@
 title: "Record.Find Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Record.Find Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Finds a record in a table that is based on the values stored in keys.
 
@@ -36,7 +36,7 @@ Specifies how to perform the search. The table is searched until either a record
 -   \<  to search for a record that is less than the key values
 -   +  to search for the last record in the table (+ can only be used alone)
 -   -   to search for the first record in the table (- can only be used alone)
-If this parameter contains '=', '\>' or '\<', then you must assign value to all fields of the current and primary keys before you call Find.
+If this parameter contains '=', '\>' or '\<', then you must assign value to all fields of the current and primary keys before you call FIND.
           
 
 
@@ -51,7 +51,7 @@ If this parameter contains '=', '\>' or '\<', then you must assign value to all 
 ## Remarks  
 Find retrieves the first record that meets the conditions set by *Which* and the filters associated with *Record*. The search path reflects the sort order defined by the current key. If the current key is not the primary key, several records might have the same values in current key fields. If this occurs, the sort order defined by the primary key as the search path is used.
 
-Calling Find on an empty table from the [OnNewRecord trigger](../../triggers/devenv-onnewrecord-trigger.md) causes the [!INCLUDE[server](../../includes/server.md)] to throw an exception, and the AL execution stops. However, the client suppresses this error and does not show any error message to the user. Therefore, when using Find inside this trigger, you should add code that conditionally verifies whether a record was found, and if not, notify the user with a message. For example:
+Calling Find on an empty table from the [OnNewRecord trigger](../../triggers-auto/page/devenv-onnewrecord-page-trigger.md) causes the [!INCLUDE[server](../../includes/server.md)] to throw an exception, and the AL execution stops. However, the client suppresses this error and does not show any error message to the user. Therefore, when using Find inside this trigger, you should add code that conditionally verifies whether a record was found, and if not, notify the user with a message. For example:
 
 ```al
 if not MyRecord.Find then

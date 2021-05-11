@@ -7,7 +7,7 @@ ms.topic: reference
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/19/2021
+ms.date: 04/01/2021
 ms.author: solsen
 ---
 
@@ -26,9 +26,17 @@ Represents an user group in [!INCLUDE[d365fin_long_md](../../includes/d365fin_lo
 | Method | Return Type|Description |
 |:--------------------|:-----------|:-------------------------|
 |[GET userGroup](../api/dynamics_usergroup_get.md)|userGroup|Gets a user group object.|
+|[DELETE userGroup](../api/dynamics_usergroup_delete.md)|none|Deletes a user group object.|
+|[POST userGroup](../api/dynamics_usergroup_create.md)|userGroup|Creates a user group object.|
 |[PATCH userGroup](../api/dynamics_usergroup_update.md)|userGroup|Updates a user group object.|
 
 
+## Navigation
+
+| Navigation |Return Type| Description |
+|:----------|:----------|:-----------------|
+|[userGroupPermissions](dynamics_usergrouppermission.md)|userGroupPermissions |Gets the permissions of the userGroup.|
+|[profile](dynamics_profile.md)|profile |Gets the profile of the userGroup.|
 
 ## Properties
 
@@ -58,4 +66,6 @@ Here is a JSON representation of the userGroup resource.
 
 ## See Also
 [GET userGroup](../api/dynamics_usergroup_get.md)  
+[DELETE userGroup](../api/dynamics_usergroup_delete.md)  
+[POST userGroup](../api/dynamics_usergroup_create.md)   
 [PATCH userGroup](../api/dynamics_usergroup_update.md)  

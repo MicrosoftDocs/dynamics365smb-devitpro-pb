@@ -1,8 +1,8 @@
 ---
-title: "Substitute the IF THEN ELSE structure with a CASE."
+title: "CodeCop Rule AA0022"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 05/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # CodeCop Rule AA0022
-Substitute the IF THEN ELSE structure with a CASE.  
+Substitute the IF THEN ELSE structure with a CASE.
 
 ## Description
 An IF followed by two or more ELSE IF should be replaced with a CASE.

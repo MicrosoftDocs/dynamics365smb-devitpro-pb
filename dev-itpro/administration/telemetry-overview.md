@@ -8,7 +8,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.author: jswymer
 ---
 
@@ -36,22 +36,28 @@ In Application Insights, telemetry from [!INCLUDE[prod_short](../developer/inclu
 |Configuration package lifecycle|Provides information about operations done on configuration packages, including exporting, importing, applying, and deleting. |![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[See...](telemetry-configuration-package-trace.md)|
 |Database lock timeouts|Provides information about database locks that have timed out. |![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[See...](telemetry-database-locks-trace.md)|
 |Email|Provides information about the success or failure of sending emails.|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[See...](telemetry-email-trace.md) |
-|Extension lifecycle <sup>[\[2\]](#2)|Provides information about the success or failure of extension-related operations, like publishing, synchronizing, installing, and more.|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|[See...](telemetry-extension-lifecycle-trace.md) |
+|Extension lifecycle <sup>[\[2\]](#2)</sup>|Provides information about the success or failure of extension-related operations, like publishing, synchronizing, installing, and more.|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|[See...](telemetry-extension-lifecycle-trace.md) |
 |Extension update|Provides information about errors that occur when upgrading an extension.|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|[See...](telemetry-extension-update-trace.md) |
 |Field monitoring trace|Provides information about the usage of the field monitoring feature.|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[See...](telemetry-field-monitoring-trace.md) |
-|Job queue|Provides information about creating and running job queue entries.|![check mark for feature](../developer/media/check.png)|||[See...](telemetry-job-queue-lifecycle-trace.md) |
+|Job queue|Provides information about creating and running job queue entries.|![check mark for feature](../developer/media/check.png)|||[See...](telemetry-table-index-trace.md) |
 |Long running AL method trace|Provides information about long running AL methods.|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[See...](telemetry-al-method-trace.md) |
 |Long running operation (SQL query)|Provides information about SQL queries that take longer than expected to execute.|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|[See...](telemetry-long-running-sql-query-trace.md)|
-|Page views|Provides information about the pages that users open in the modern client.|![check mark for feature](../developer/media/check.png)|||[See...](telemetry-page-view-trace.md)|
+|Page views|Provides information about the pages that users open in the modern client.|![check mark for feature](../developer/media/check.png)||![check mark for feature](../developer/media/check.png)<sup>[\[4\]](#4)</sup>|[See...](telemetry-page-view-trace.md)|
 |Permissions|Provides information about adding, removing, and assigning permission sets.|![check mark for feature](../developer/media/check.png)|||[See...](telemetry-permission-changes-trace.md)|
 |Report generation|Provides information about the execution of reports.|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|[See...](telemetry-reports-trace.md)|
+|Retention policy trace<sup>[\[3\]](#3)</sup>|Provides information about the usage of the retention policy feature.|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[See...](telemetry-retention-policy-trace.md)|
 |Incoming web service requests|Provides information about the execution time of incoming web service requests.|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|[See...](telemetry-webservices-trace.md)|
 |Outgoing web service requests|Provides information about the execution time of outgoing web service requests.|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|[See...](telemetry-webservices-outgoing-trace.md)|
+|Table index trace<sup>[\[3\]](#3)</sup>|Provides information about the addition or removal of a table index.|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|[See...](telemetry-field-monitoring-trace.md) |
 |Web service access key authentication |Provides information about the authentication of web server access keys on web service requests.|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[See...](telemetry-webservices-access-key-trace.md)|
 
 <sup>1</sup><a name="1"></a>This signal is only emitted to the Application Insights resource that's specified in the extension.
 
 <sup>2</sup><a name="2"></a>Introduced in Business Central 2020 release wave 1, version 16.3. For extension telemetry, this signal was introduced in 2020 release wave 2, version 17.1.
+
+<sup>3</sup><a name="3"></a>Introduced in Business Central 2020 release wave 1, version 17.1
+
+<sup>4</sup><a name="4"></a>Introduced in Business Central 2021 release wave 1, version 18.
 
 <!--
 |Web service access key authentication |Provides information about the authentication of web server access keys on web service requests.|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[See...](telemetry-webservices-access-key-trace.md)|

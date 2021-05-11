@@ -6,7 +6,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 author: jswymer
 ---
 # System Requirements for [!INCLUDE[prod_long](../developer/includes/prod_long.md)] 2020 Release Wave 2
@@ -104,7 +104,7 @@ The following table shows the minimum system requirements for [!INCLUDE[prod_sho
 |Specification|Requirement|  
 |----|-----|  
 |Supported operating systems|<ul><li>Windows 10 Pro, Enterprise, or Education \(64-bit edition\)</li><li>Windows Server 2019 (Datacenter, Standard)</li><li>Windows Server, version 1809 or later (Datacenter, Standard)</li><li>Windows Server 2016  (Datacenter, Standard)</li></ul>For information about the supported versions and their lifecycles, see [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet). |  
-|Hardware resources|For more information, see [Hardware and Software Requirements for Installing SQL Server](https://go.microsoft.com/fwlink/?LinkId=622999). From this page, you can also access requirements for other versions of SQL Server.|  
+|Hardware resources|For more information, see [Hardware and Software Requirements for Installing SQL Server](/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server). From this page, you can also access requirements for other versions of SQL Server.|  
 |SQL Server|<ul><li>Microsoft SQL Server 2019 Express, Standard, or Enterprise.</li> <li>Microsoft SQL Server 2017 Express, Standard, or Enterprise.</li> <li>Microsoft SQL Server 2016 Express, Standard, or Enterprise (Service Pack 2 or later).</li><li>Azure SQL Database Managed Instance, Elastic Pool, or Single Database.</li></ul>|  
 |Service Packs and Cumulative Updates| Unless explicitly stated, all released Service Packs and Cumulative Updates of the above Microsoft SQL Server versions are supported. it's recommended to always be on the latest released Service Pack and Cumulative Update.|
 |Additional information|[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] installs the following software if it's not already present on the target computer:<ul><li>SQL Server 2016 Express \(64-bit edition\).<br>If the operating system on the target computer doesn't support SQL Server 2016 Express, Setup displays a pre-requisite warning. In this case, you should exit Setup. Then, update the operating system on the computer to one that does support SQL Server 2016 Express and run Setup again.</li></ul>|  
@@ -153,25 +153,20 @@ The following table shows the minimum system requirements for the [!INCLUDE[prod
 |Supported Outlook Applications |<ul><li>Outlook 2019.</li></ul>|
 |Supported Exchange Servers|<ul><li>Exchange Server 2019</li><li>Exchange Online.</li></ul>|  
 
-## <a name="CRM"></a>Microsoft Dynamics 365 for Sales Integration
+## <a name="CRM"></a>Microsoft Dataverse and Dynamics 365 for Sales Integration
 
-The following table shows the product version requirements for integrating [!INCLUDE[prod_short](../developer/includes/prod_short.md)] with [!INCLUDE[crm](../developer/includes/crm_md.md)], and the versions in which users can view the availability of items in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] from [!INCLUDE[crm](../developer/includes/crm_md.md)].  
+The following table shows the product version requirements for integrating Business Central online and on premise with [!INCLUDE[cds_long_md.md](../developer/includes/cds_long_md.md)] and [!INCLUDE[crm](../developer/includes/crm_md.md)] online and on premises.
 
-|Sales/Dynamics NAV/Business Central|2016/Update 1/online|Sales Enterprise (v8.x)|Sales Enterprise and Sales Professional (v9.x)|  
-|---|----|---|---|---|
-|Dynamics NAV 2016|Supported *** |Supported *** |Supported *** |
-|Dynamics NAV 2017|Supported *|Supported *|Supported *|
-|Dynamics NAV 2018|Supported *|Supported *|Supported *|
-|Business Central (online)|Not supported |Supported *|Supported *|
-|Business Central (on-premises)|Supported *|Supported *|Supported *|  
+|Specification|Requirement|  
+|-----|-----|
+|[!INCLUDE[cds_long_md.md](../developer/includes/cds_long_md.md)] and [!INCLUDE[crm](../developer/includes/crm_md.md)] online |One the following authentication types:<ul><li> Office365 (legacy)<sup>1</sup></li><li>Office365 (modern, OAuth2 client secret based)<sup>2</sup></li><li>OAuth<sup>3</sup><br><br>For better security, we recommend Office365 (modern, OAuth2 client secret based) instead of OAuth.</li>||
+|Dynamics 365 Customer Engagement on-premise<br><br>**Note**: Not supported with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online|<ul><li>Dynamics 365 Customer Engagement version 9.0.2</li><li> One of the following authentication types:<ul><li>AD</li><li>IFD</li><li>OAuth<sup>3</sup></li></ul>|
 
-Legend:  
-* "*" item availability capability is supported.  
-* "**" integration solution can be installed from the Dynamics NAV 2016 DVD, but viewing item availability isn't supported.  
-* "***" viewing item availability isn't supported  
+<sup>1</sup>Effective April 2022, Office365 (legacy) authentication will no longer be supported for Dataverse/Dynamics 365 Sales environments on existing tenants. For more information, see [Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps](/power-platform/important-changes-coming#deprecation-of-office365-authentication-type-and-organizationserviceproxy-class-for-connecting-to-dataverse).
 
-> [!Note] 
-> AD, IFD and Claims authentication types are supported for the 2016 on-premises version of [!INCLUDE[crm](../developer/includes/crm_md.md)]. OAuth and Office 365 authentication are supported for the 2016 Update 1 and online versions of [!INCLUDE[crm](../developer/includes/crm_md.md)]. For more information about authentication types, see [Connection strings in XRM tooling to connect to Dynamics 365](https://msdn.microsoft.com/library/mt608573.aspx).
+<sup>2</sup> Requires the registration of a third party application in Azure AD. For more information, see [To register an application in Azure AD for connecting from Business Central to Dataverse](/dynamics365/business-central/admin-how-to-set-up-a-dynamics-crm-connection#to-register-an-application-in-azure-ad-for-connecting-from-business-central-to-dataverse).
+
+<sup>3</sup> AD, IFD, and OAuth types are supported with on-premises version of Dynamics 365 Sales. OAuth and Office 365 (legacy – basic) and Office 365 (modern – MFA) authentication are supported for online versions of Dynamics 365 Sales. For more information about authentication types, see [Connection strings in XRM tooling to connect to Dynamics 365](https://msdn.microsoft.com/library/mt608573.aspx). 
 
 ## <a name="SharePointApp"></a>[!INCLUDE[prod_short](../developer/includes/prod_short.md)] as an App for SharePoint
 
@@ -185,4 +180,4 @@ The following table shows the minimum system requirements for [!INCLUDE[prod_sho
 
 [Welcome to the Developer and IT-Pro Help for Business Central](../index.md)  
 [Product and Architecture Overview](product-and-architecture-overview.md)  
-[Deployment](Deployment.md)  
+[Deployment](Deployment.md)

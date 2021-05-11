@@ -3,7 +3,7 @@ title: "Operation Limits in Dynamics 365 Business Central"
 description: "Learn about constraints on what you can do in Business Central online that is different from what you can do with on-premises deployments."
 author: jswymer
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -69,11 +69,12 @@ For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, you can'
 
 |Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
 |---------|--------------------------------------------------------------------------------|------|
-|  Maximum concurrent running scheduled tasks  | The maximum number of tasks that can run simultaneously for an environment.<br /><br />If there are many jobs running at the same time, you might experience that the response time for clients gets slower. If the value is too low, it might take longer for scheduled tasks to process.|3|
-|  Page background task default timeout |The default amount of time that page background tasks can run before being canceled. Page background tasks can be also given a timeout value when enqueued at runtime. This limit is used when no timeout is provided when the page background task is enqueued.|2 minutes|
-|  Page background task max timeout | The maximum amount of time that page background tasks can run before being canceled. Page background tasks can be also given a timeout value when enqueued at runtime. If a page background task is enqueued with a timeout greater than this limit, this limit is ignored.|10 minutes|
 |ChildSessionsMaxConcurrency|The maximum number of child sessions that can run concurrently per parent session. When the value is exceeded, additional child sessions will be queued and run when a slot becomes available as other child sessions are finished.|5|
 |ChildSessionsMaxQueueLength|The maximum number of child sessions that can be queued per parent session. If the value is exceeded, an error occurs.|100|
+|  Maximum concurrent running scheduled tasks  | The maximum number of tasks that can run simultaneously for an environment.<br /><br />If there are many jobs running at the same time, you might experience that the response time for clients gets slower. If the value is too low, it might take longer for scheduled tasks to process.|3|
+|MaximumSessionRecursionDepth|The maximum number of nested sessions that can be created before reaching infinite recursion. If the limit is exceeded, a runtime error occurs with the message: **Excessive recursive session creation detected, original session ID: \[id\], current session ID: \[id\].**|14|
+|  Page background task default timeout |The default amount of time that page background tasks can run before being canceled. Page background tasks can be also given a timeout value when enqueued at runtime. This limit is used when no timeout is provided when the page background task is enqueued.|2 minutes|
+|  Page background task max timeout | The maximum amount of time that page background tasks can run before being canceled. Page background tasks can be also given a timeout value when enqueued at runtime. If a page background task is enqueued with a timeout greater than this limit, this limit is ignored.|10 minutes|
 
 ## <a name="Reports"></a>Report limits
 
@@ -100,6 +101,7 @@ For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, you can'
 |Max concurrent requests|The maximum number of OData V4 requests the server instance can actively process at the same time. Requests that exceed the limit will wait in the queue until a time slot becomes available.|5|
 |Max connections|The maximum number of simultaneous OData requests on the server instance, including concurrent and queued requests. When the limit is exceeded, a 429 (Too Many Requests) error occurs.|100 |
 |Max page size|The maximum number of entities returned per page of OData results.|  20,000 entities per page|
+|Max batch size|The maximum number of operations in a batch call.| 100 operations per batch|
 |Max request queue size|The maximum number of pending OData V4 requests waiting to be processed. When the limit is exceeded, a 429 (Too Many Requests) error occurs.|95|
 |Rate|The number of OData requests per minute that are allowed. An HTTP response code `429 - Too Many Requests` is returned if limits are exceeded.|Sandbox:<br />300 requests/minute<br /><br />Production<br />- 600 requests/minute| 
 |Operation timeout|The maximum amount of time that the service gives a single OData request. When the limit is exceeded, an HTTP response code `408 - Request Timeout` is returned.<br /><br />After 8 minutes, the session is canceled. |8 minutes|
@@ -124,4 +126,4 @@ For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, you can'
 ## See Also
 
 [Working with API Rate Limits](/dynamics-nav/api-reference/v1.0/dynamics-rate-limits)  
-[Microsoft API Terms of Use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use)  
+[Microsoft API Terms of Use](/legal/microsoft-apis/terms-of-use)

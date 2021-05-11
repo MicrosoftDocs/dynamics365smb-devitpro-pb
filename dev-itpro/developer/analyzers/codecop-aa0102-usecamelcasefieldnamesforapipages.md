@@ -1,8 +1,8 @@
 ---
-title: "Use camel case name for field controls in pages of type API."
+title: "CodeCop Rule AA0102"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 05/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # CodeCop Rule AA0102
-Use camel case name for field controls in pages of type API.  
+Use camel case name for field controls in pages of type API.
 
 ## Description
 Field controls in pages of type API should have a camel case name in order to follow the Microsoft REST API Guidelines.

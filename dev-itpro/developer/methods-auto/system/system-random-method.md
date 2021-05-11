@@ -2,7 +2,7 @@
 title: "System.Random Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # System.Random Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Returns a pseudo-random number.
 
@@ -45,7 +45,7 @@ If *MaxNumber* is negative it acts as a positive.
   
 If *MaxNumber* is zero, this method always returns 1.  
   
-A number is always chosen from the same set of numbers. Use [Randomize Method \(Integer\)](../../methods/devenv-randomize-method-integer.md) to generate a new set of numbers.  
+A number is always chosen from the same set of numbers. Use [Randomize Method)](../system/system-randomize-method.md) to generate a new set of numbers.  
   
 ## Example
 

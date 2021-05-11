@@ -1,8 +1,8 @@
 ---
-title: "The Tooltip property of Fields must start with 'Specifies'."
+title: "CodeCop Rule AA0219"
 ms.author: solsen
 ms.custom: na
-ms.date: 01/11/2021
+ms.date: 05/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # CodeCop Rule AA0219
-The Tooltip property of Fields must start with 'Specifies'.  
+The Tooltip property of Fields must start with 'Specifies'.
 
 ## Description
 The Tooltip property of Fields must start with 'Specifies'.

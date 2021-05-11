@@ -7,7 +7,7 @@ ms.topic: reference
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/19/2021
+ms.date: 04/01/2021
 ms.author: solsen
 ---
 
@@ -33,7 +33,7 @@ Represents a permission set in [!INCLUDE[d365fin_long_md](../../includes/d365fin
 
 | Property           | Type   |Description     |
 |:-------------------|:-------|:---------------|
-|scope|string|Scode of the permission set.|
+|scope|string|Scope of the permission set.|
 |appId|GUID|The ID of the App.|
 |id|string|The unique ID of the permission set. Read-Only.|
 |displayName|string|Specifies the permission set's name. This name will appear on all sales documents for the permission set.|

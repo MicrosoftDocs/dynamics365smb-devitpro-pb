@@ -1,5 +1,5 @@
 ---
-title: Get scheduledJob | Microsoft Docs
+title: Get scheduledJob
 description: Gets a scheduled job object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"
@@ -7,7 +7,7 @@ ms.topic: reference
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/19/2021
+ms.date: 04/01/2021
 ms.author: solsen
 ---
 
@@ -65,5 +65,5 @@ Here is an example of the response.
 
 ## See Also
 
-[Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  
+[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)  
 [scheduledJob](../resources/dynamics_scheduledJob.md)

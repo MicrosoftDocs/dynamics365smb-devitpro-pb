@@ -3,12 +3,12 @@ title: Troubleshooting the Cloud Migration
 description: Learn how to troubleshoot problems that you may experience with the cloud migration.
 author: dmc-dk
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms. search.keywords: cloud, edge
-ms.date: 12/10/2020
+ms.date: 04/01/2021
 ms.author: dmitrych
 ms.review: jswymer
 ---

@@ -1,15 +1,12 @@
 ---
-title: Product Architecture
-description: In Microsoft Dynamics NAV, the architecture includes of three core components, and various additional tools and components.
+title: Component and System Topology
+description: The Business Central architecture includes of three core components, and various additional tools and components.
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/26/2021
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.assetid: 275aad2c-ea2c-4291-8381-82b0b92dc1a0
-caps.latest.revision: 29
 author: jswymer
 ---
 # [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Component and System Topology
@@ -17,7 +14,7 @@ author: jswymer
 The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] deployment includes three core components for serving the application to users. It also includes various tools and components for managing, developing, extending, and testing the application.
 
 ## Multi-Tier System Topology
- 
+
 To understand the components is useful to first look at the base topology of a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] deployment, as illustrated in the following diagram:
 
 ![Architecture overview](../media/architecture-overview.png "Architecture overview")  
@@ -30,7 +27,7 @@ Every deployment must include the core components: Web server, Server, and SQL D
 
 |Component|Description| More Information  |
 |---------|-----------|---|
-|SQL Database|An SQL Server or Azure SQL Database database that contains application object definitions and business data. In a multitenant deployment, the application and business data can be separated into different databases: the application database and the tenant, which is the database that contains the business data. In this case, there can be one or more tenants for a single application database.| [Creating Databases](../cside/cside-create-databases.md)<br /><br />[Deploy a Business Central Database to Azure SQL Database](deploy-database-azure-sql-database.md)|
+|SQL Database|An SQL Server or Azure SQL Database database that contains application object definitions and business data. In a multitenant deployment, the application and business data are separated into different databases. In this case, a single *application database* can be associated with one or more *tenants* where the tenant database contains the business data.| [Creating Databases](../cside/cside-create-databases.md)<br /><br />[Deploy a Business Central Database to Azure SQL Database](deploy-database-azure-sql-database.md)|
 |Server|[!INCLUDE[server](../developer/includes/server.md)] is a .NET-based Microsoft service application that uses Windows Communication Framework to handle communication between clients and databases. It controls authentication, event logging, scheduled tasks, reporting, and more.|[Configuring Business Central Server](../administration/configure-server-instance.md)|
 |Web Server|An Internet Information Server (IIS) web site, provisioned with the [!INCLUDE[webserver components](../developer/includes/webservercomponents.md)], that enables access from the [!INCLUDE[webclient](../developer/includes/webclient.md)] and mobile apps.| [Business Central Web Server](web-server-overview.md)|
 |Business Central App|A desktop, phone, and tablet app for Business Central.|[Windows Store](https://go.microsoft.com/fwlink/?LinkId=734848)<br /><br />[App Store](https://go.microsoft.com/fwlink/?LinkId=734847)<br /><br />[Google Play](https://go.microsoft.com/fwlink/?LinkId=734849)|
@@ -43,7 +40,6 @@ Every deployment must include the core components: Web server, Server, and SQL D
 |AL development environment|An AL language extension for Visual Studio Code for developing applications and extensions. |[Getting Started with C/SIDE and AL for On-Premises](../developer/devenv-get-started-al-for-onprem.md).|
 |[!INCLUDE[admintool](../developer/includes/admintool.md)]|A Microsoft Management Console (MMC) for creating and configuring [!INCLUDE[server](../developer/includes/server.md)] instances.|[Business Central Server Administration Tool](../administration/administration-tool.md)|
 |[!INCLUDE[adminshell](../developer/includes/adminshell.md)]|Windows PowerShell modules for managing the deployment, including tasks such adding and configuring [!INCLUDE[server](../developer/includes/server.md)] and Web server instances, databases, and users, and administering extension packages.|[Windows PowerShell Cmdlets for Business Central](/powershell/business-central/overview)|
-
 
 ### Additional components
 

@@ -1,8 +1,8 @@
 ---
-title: "Encryption key functions must not be invoked."
+title: "PerTenantExtensionCop Rule PTE0006"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 05/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # PerTenantExtensionCop Rule PTE0006
-Encryption key functions must not be invoked.  
+Encryption key functions must not be invoked.
 
 ## Description
 Encryption key functions must not be invoked.

@@ -2,7 +2,7 @@
 title: "Event Types"
 description: Dynamics 365 Business Central supports different types of events including BusinessEvent, IntegrationEvent, Global and trigger events. 
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -92,18 +92,18 @@ Global events are predefined system events that are automatically raised by vari
   
  The following table describes the available database trigger events:  
   
-|Database trigger event with signature|Description|  
-|-------------------------------------------|-----------------|  
-|`OnBeforeDeleteEvent(VAR Rec: Record; RunTrigger: Boolean)`|Executed before a record is deleted from a table.|  
-|`OnAfterDeleteEvent(VAR Rec: Record; RunTrigger: Boolean)`|Executed after a record is deleted from a table.|  
-|`OnBeforeInsertEvent(VAR Rec: Record; RunTrigger: Boolean)`|Executed before a record is inserted in a table.|  
-|`OnAfterInsertEvent(VAR Rec : Record; RunTrigger : Boolean)`|Executed after a record is inserted in a table.|  
-|`OnBeforeModifyEvent(VAR Rec : Record; VAR xRec : Record; RunTrigger : Boolean)`|Executed before a record is modified in a table.|  
-|`OnAfterModifyEvent(VAR Rec : Record; VAR xRec : Record; RunTrigger : Boolean)`|Executed after a record is modified in a table.|  
-|`OnBeforeRenameEvent(VAR Rec : Record; VAR xRec : Record; RunTrigger : Boolean)`|Executed before a record is renamed in a table.|  
-|`OnAfterRenameEvent(VAR Rec : Record; VAR xRec: Record; RunTrigger : Boolean)`|Executed after a record is renamed in a table.|  
-|`OnBeforeValidateEvent(VAR Rec : Record; VAR xRec : Record; CurrentFieldNo : Integer)`|Executed before a field is validated when its value has been changed.|  
-|`OnAfterValidateEvent(VAR Rec : Record; VAR xRec : Record; CurrentFieldNo : Integer)`|Executed after a field is validated when its value has been changed.|  
+|Database trigger event|Signature|Description|  
+|----------------------|-------------------|-----------------|
+|[OnAfterDeleteEvent Trigger Event](triggers-auto/events/table/devenv-onafterdeleteevent-table-trigger.md)|`[EventSubscriber(ObjectType::Table, Database::<Table Name>, 'OnAfterDeleteEvent', '', <SkipOnMissingLicense>, <SkipOnMissingPermission>)]`<br />`local procedure MyProcedure(Rec: Record, RunTrigger: Boolean)`|Executed after a record is deleted from a table.|  
+|[OnAfterInsertEvent Trigger Event](triggers-auto/events/table/devenv-onafterinsertevent-table-trigger.md)|`[EventSubscriber(ObjectType::Table, Database::<Table Name>, 'OnAfterInsertEvent', '', <SkipOnMissingLicense>, <SkipOnMissingPermission>)]`<br />`local procedure MyProcedure(Rec: Record, RunTrigger: Boolean)`|Executed after a record is inserted in a table.|  
+|[OnAfterModifyEvent Trigger Event](triggers-auto/events/table/devenv-onaftermodifyevent-table-trigger.md)|`[EventSubscriber(ObjectType::Table, Database::<Table Name>, 'OnAfterModifyEvent', '', <SkipOnMissingLicense>, <SkipOnMissingPermission>)]`<br />`local procedure MyProcedure(Rec: Record, xRec: Record, RunTrigger: Boolean)`|Executed after a record is modified in a table.|  
+|[OnAfterRenameEvent Trigger Event](triggers-auto/events/table/devenv-onafterrenameevent-table-trigger.md)|`[EventSubscriber(ObjectType::Table, Database::<Table Name>, 'OnAfterRenameEvent', '', <SkipOnMissingLicense>, <SkipOnMissingPermission>)]`<br />`local procedure MyProcedure(Rec: Record, xRec: Record, RunTrigger: Boolean)`|Executed after a record is renamed in a table.|  
+|[OnAfterValidateEvent Trigger Event](triggers-auto/events/table/devenv-onaftervalidateevent-table-trigger.md)|`[EventSubscriber(ObjectType::Table, Database::<Table Name>, 'OnAfterValidateEvent', '<Field Name>', <SkipOnMissingLicense>, <SkipOnMissingPermission>)]`<br />`local procedure MyProcedure(Rec: Record, xRec: Record, CurrFieldNo: Integer)`|Executed after a field is validated when its value has been changed.|  
+|[OnBeforeDeleteEvent Trigger Event](triggers-auto/events/table/devenv-onbeforedeleteevent-table-trigger.md)|`[EventSubscriber(ObjectType::Table, Database::<Table Name>, 'OnBeforeDeleteEvent', '', <SkipOnMissingLicense>, <SkipOnMissingPermission>)]`<br />`local procedure MyProcedure(Rec: Record, RunTrigger: Boolean)`|Executed before a record is deleted from a table.|  
+|[OnBeforeInsertEvent Trigger Event](triggers-auto/events/table/devenv-onbeforeinsertevent-table-trigger.md)|`[EventSubscriber(ObjectType::Table, Database::<Table Name>, 'OnBeforeInsertEvent', '', <SkipOnMissingLicense>, <SkipOnMissingPermission>)]`<br />`local procedure MyProcedure(Rec: Record, RunTrigger: Boolean)`|Executed before a record is inserted in a table.|  
+|[OnBeforeModifyEvent Trigger Event](triggers-auto/events/table/devenv-onbeforemodifyevent-table-trigger.md)|`[EventSubscriber(ObjectType::Table, Database::<Table Name>, 'OnBeforeModifyEvent', '', <SkipOnMissingLicense>, <SkipOnMissingPermission>)]`<br />`local procedure MyProcedure(Rec: Record, xRec: Record, RunTrigger: Boolean)`|Executed before a record is modified in a table.|  
+|[OnBeforeRenameEvent Trigger Event](triggers-auto/events/table/devenv-onbeforerenameevent-table-trigger.md)|`[EventSubscriber(ObjectType::Table, Database::<Table Name>, 'OnBeforeRenameEvent', '', <SkipOnMissingLicense>, <SkipOnMissingPermission>)]`<br />`local procedure MyProcedure(Rec: Record, xRec: Record, RunTrigger: Boolean)`|Executed before a record is renamed in a table.|  
+|[OnBeforeValidateEvent Trigger Event](triggers-auto/events/table/devenv-onbeforevalidateevent-table-trigger.md)|`[EventSubscriber(ObjectType::Table, Database::<Table Name>, 'OnBeforeValidateEvent', '<Field Name>', <SkipOnMissingLicense>, <SkipOnMissingPermission>)]`<br />`local procedure MyProcedure(Rec: Record, xRec: Record, CurrFieldNo: Integer)`|Executed before a field is validated when its value has been changed.|
   
  The following table describes the parameters of the trigger events:  
   
@@ -134,21 +134,21 @@ Global events are predefined system events that are automatically raised by vari
   
  The following table describes the available page trigger events:  
   
-|Trigger event with signature|Description|  
-|----------------------------------|-----------------|  
-|`OnBeforeActionEvent(VAR Rec : Record)`|Executed before the [OnAction Trigger](triggers/devenv-onaction-trigger.md), which is called when a user selects an action on the page.|  
-|`OnAfterActionEvent(VAR Rec : Record)`|Executed after the [OnAction Trigger](triggers/devenv-onaction-trigger.md), which is called when a user selects an action on the page.|  
-|`OnAfterGetCurrRecordEvent(VAR Rec : Record)`|Executed after the [OnAfterGetCurrRecord Trigger](triggers/devenv-onaftergetcurrrecord-trigger.md), which is called after the current record is retrieved from the table.|  
-|`OnAfterGetRecordEvent(VAR Rec : Record)`|Executed after the [OnAfterGetRecord Trigger](triggers/devenv-onaftergetrecord-trigger.md), which is called after the record is retrieved from the table but before it is displayed to the user.|  
-|`OnBeforeValidateEvent(VAR Rec : Record, VAR xRec : Record)`|Executed before the [OnValidate \(Page fields\) Trigger](triggers/devenv-onvalidate-page-fields-trigger.md), which is called when a field loses focus after its value has been changed.|  
-|`OnAfterValidateEvent(VAR Rec : Record, VAR xRec : Record)`|Executed after the [OnValidate \(Page fields\) Trigger](triggers/devenv-onvalidate-page-fields-trigger.md), which is called when a field loses focus after its value has been changed.|  
-|`OnClosePageEvent(VAR Rec : Record)`|Executed after the [OnClosePage Trigger](triggers/devenv-onclosepage-trigger.md), which is called when page closes after the OnQueryClosePage trigger is executed.|  
-|`OnDeleteRecordEvent(VAR Rec : Record, VAR AllowDelete : Boolean)`|Executed after the [OnDeleteRecord Trigger](triggers/devenv-ondeleterecord-trigger.md), which is called before a record is deleted from a table.|  
-|`OnInsertRecordEvent(VAR Rec : Record, BelowxRec : Boolean, VAR xRec : Record, VAR AllowInsert : Boolean)`|Executed after the [OnInsertRecord Trigger](triggers/devenv-oninsertrecord-trigger.md), which is called before a record is inserted in a table.|  
-|`OnModifyRecordEvent(VAR Rec : Record, VAR xRec : Record, VAR AllowModify : Boolean)`|Executed after the [OnModifyRecord Trigger](triggers/devenv-onmodifyrecord-trigger.md), which is called before a record is modified in a table.|  
-|`OnNewRecordEvent(VAR Rec: Record, BelowxRec : Boolean, VAR xRec : Record)`|Executed after the [OnNewRecord Trigger](triggers/devenv-onnewrecord-trigger.md), which is called before a new record is initialized.|  
-|`OnOpenPageEvent(VAR Rec : Record)`|Executed after the [OnOpenPage Trigger](triggers/devenv-onopenpage-trigger.md), which is called after a page is initialized and run.|  
-|`OnQueryClosePageEvent(VAR Rec : Record, VAR AllowClose : Boolean)`|Executed after the [OnQueryClosePage Trigger](triggers/devenv-onqueryclosepage-trigger.md), which is called as a page closes and before the OnClosePage Trigger executes.|  
+|Trigger event|Signature|Description|  
+|-------------|---------------------|-----------------|  
+|[OnAfterActionEvent Trigger Event](triggers-auto/events/page/devenv-onafteractionevent-page-trigger.md)|`[EventSubscriber(ObjectType::Page, Page::<Page Name>, 'OnAfterActionEvent', '<Action Name>', <SkipOnMissingLicense>, <SkipOnMissingPermission>)]`<br />`local procedure MyProcedure(Rec: Record)`|Executed after the OnAction trigger, which is called when a user selects an action on the page.|  
+|[OnAfterGetCurrRecordEvent Trigger Event](triggers-auto/events/page/devenv-onaftergetcurrrecordevent-page-trigger.md)|`[EventSubscriber(ObjectType::Page, Page::<Page Name>, 'OnAfterGetCurrRecordEvent', '', <SkipOnMissingLicense>, <SkipOnMissingPermission>)]`<br />`local procedure MyProcedure(Rec: Record)`|Executed after the OnAfterGetCurrRecord trigger, which is called after the current record is retrieved from the table.|  
+|[OnAfterGetRecordEvent Trigger Event](triggers-auto/events/page/devenv-onaftergetrecordevent-page-trigger.md)|`[EventSubscriber(ObjectType::Page, Page::<Page Name>, 'OnAfterGetRecordEvent', '', <SkipOnMissingLicense>, <SkipOnMissingPermission>)]`<br />`local procedure MyProcedure(Rec: Record)`|Executed after the OnAfterGetCurrRecord trigger, which is called after the record is retrieved from the table but before it is displayed to the user.|  
+|[OnAfterValidateEvent Trigger Event](triggers-auto/events/page/devenv-onaftervalidateevent-page-trigger.md)|`[EventSubscriber(ObjectType::Page, Page::<Page Name>, 'OnAfterValidateEvent', '<Control Name>', <SkipOnMissingLicense>, <SkipOnMissingPermission>)]`<br />`local procedure MyProcedure(Rec: Record, xRec: Record)`|Executed after the OnValidate (Page fields) trigger, which is called when a field loses focus after its value has been changed.|  
+|[OnBeforeActionEvent Trigger Event](triggers-auto/events/page/devenv-onbeforeactionevent-page-trigger.md)|`[EventSubscriber(ObjectType::Page, Page::<Page Name>, 'OnBeforeActionEvent', '<Action Name>', <SkipOnMissingLicense>, <SkipOnMissingPermission>)]`<br />`local procedure MyProcedure(Rec: Record)`|Executed before the OnAction trigger, which is called when a user selects an action on the page.|  
+|[OnBeforeValidateEvent Trigger Event](triggers-auto/events/page/devenv-onbeforevalidateevent-page-trigger.md)|`[EventSubscriber(ObjectType::Page, Page::<Page Name>, 'OnBeforeValidateEvent', '<Control Name>', <SkipOnMissingLicense>, <SkipOnMissingPermission>)]`<br />`local procedure MyProcedure(Rec: Record, xRec: Record)`|Executed before the OnValidate (Page fields) trigger, which is called when a field loses focus after its value has been changed.|  
+|[OnClosePageEvent Trigger Event](triggers-auto/events/page/devenv-onclosepageevent-page-trigger.md)|`[EventSubscriber(ObjectType::Page, Page::<Page Name>, 'OnClosePageEvent', '', <SkipOnMissingLicense>, <SkipOnMissingPermission>)]`<br />`local procedure MyProcedure(Rec: Record)`|Executed after the OnClosePage trigger, which is called when page closes after the OnQueryClosePage trigger is executed.|  
+|[OnDeleteRecordEvent Trigger Event](triggers-auto/events/page/devenv-ondeleterecordevent-page-trigger.md)|`[EventSubscriber(ObjectType::Page, Page::<Page Name>, 'OnDeleteRecordEvent', '', <SkipOnMissingLicense>, <SkipOnMissingPermission>)]`<br />`local procedure MyProcedure(Rec: Record, AllowDelete: Boolean)`|Executed after the OnDeleteRecord trigger, which is called before a record is deleted from a table.|  
+|[OnInsertRecordEvent Trigger Event](triggers-auto/events/page/devenv-oninsertrecordevent-page-trigger.md)|`[EventSubscriber(ObjectType::Page, Page::<Page Name>, 'OnInsertRecordEvent', '', <SkipOnMissingLicense>, <SkipOnMissingPermission>)]`<br />`local procedure MyProcedure(Rec: Record, BelowxRec: Boolean, xRec: Record, AllowInsert: Boolean)`|Executed after the OnInsertRecord trigger, which is called before a record is inserted in a table.|  
+|[OnModifyRecordEvent Trigger Event](triggers-auto/events/page/devenv-onmodifyrecordevent-page-trigger.md)|`[EventSubscriber(ObjectType::Page, Page::<Page Name>, 'OnModifyRecordEvent', '', <SkipOnMissingLicense>, <SkipOnMissingPermission>)]`<br />`local procedure MyProcedure(Rec: Record, xRec: Record, AllowModify: Boolean)`|Executed after the OnModifyRecord trigger, which is called before a record is modified in a table.|  
+|[OnNewRecordEvent Trigger Event](triggers-auto/events/page/devenv-onnewrecordevent-page-trigger.md)|`[EventSubscriber(ObjectType::Page, Page::<Page Name>, 'OnNewRecordEvent', '', <SkipOnMissingLicense>, <SkipOnMissingPermission>)]`<br />`local procedure MyProcedure(Rec: Record, BelowxRec: Boolean, xRec: Record)`|Executed after the OnNewRecord trigger, which is called before a new record is initialized.|  
+|[OnOpenPageEvent Trigger Event](triggers-auto/events/page/devenv-onopenpageevent-page-trigger.md)|`[EventSubscriber(ObjectType::Page, Page::<Page Name>, 'OnOpenPageEvent', '', <SkipOnMissingLicense>, <SkipOnMissingPermission>)]`<br />`local procedure MyProcedure(Rec: Record)`|Executed after the OnOpenPage trigger, which is called after a page is initialized and run.|  
+|[OnQueryClosePageEvent Trigger Event](triggers-auto/events/page/devenv-onqueryclosepageevent-page-trigger.md)|`[EventSubscriber(ObjectType::Page, Page::<Page Name>, 'OnQueryClosePageEvent', '', <SkipOnMissingLicense>, <SkipOnMissingPermission>)]`<br />`local procedure MyProcedure(Rec: Record, AllowClose: Boolean)`|Executed after the OnQueryClosePage trigger, which is called as a page closes and before the OnClosePage trigger executes.|   
   
  The following table describes the parameters of the trigger events:  
   

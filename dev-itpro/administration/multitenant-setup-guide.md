@@ -2,7 +2,7 @@
 title: "Manage Application and Tenant Databases in a Multitenant Deployment"
 description: Learn about the tasks for managing application and tenant databases for a multitenant deployment
 ms.custom: na
-ms.date: 01/29/2021
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

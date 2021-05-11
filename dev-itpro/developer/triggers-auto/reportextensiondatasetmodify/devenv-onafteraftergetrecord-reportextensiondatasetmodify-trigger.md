@@ -1,8 +1,9 @@
 ---
-title: "String Data Type"
+title: "OnAfterAfterGetRecord (Report Extension Data Set Modify) Trigger"
+description: "Runs after the OnAfterGetRecord trigger of the base data item."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 04/27/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,11 +14,20 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# String Data Type
-> **Version**: _Available from runtime version 1.0._
 
-Denotes a sequence of characters. It can be represented by a string literal, a text value or a code value.
+# OnAfterAfterGetRecord (Report Extension Data Set Modify) Trigger
+> **Version**: _Available or changed with runtime version 7.1._
 
+Runs after the OnAfterGetRecord trigger of the base data item.
+
+
+## Syntax
+```
+trigger OnAfterAfterGetRecord()
+begin
+    ...
+end;
+```
 
 
 

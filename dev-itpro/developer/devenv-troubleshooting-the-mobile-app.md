@@ -1,11 +1,11 @@
 ---
 title: "Troubleshooting the Business Central Mobile App On-Premises"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.service: "dynamics365-business-central"
 author: blrobl
 ---

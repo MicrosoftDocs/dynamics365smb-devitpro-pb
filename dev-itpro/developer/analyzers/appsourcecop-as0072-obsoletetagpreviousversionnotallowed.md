@@ -1,8 +1,8 @@
 ---
-title: "The ObsoleteTag property and the Tag in the Obsolete attribute must be set to the next release version."
+title: "AppSourceCop Rule AS0072"
 ms.author: solsen
 ms.custom: na
-ms.date: 01/11/2021
+ms.date: 05/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AppSourceCop Rule AS0072
-The ObsoleteTag property and the Tag in the Obsolete attribute must be set to the next release version.  
+The ObsoleteTag property and the Tag in the Obsolete attribute must be set to the next release version.
 
 ## Description
 The ObsoleteTag property and the Tag in the Obsolete attribute must be set to the next release version (Major.Minor). This rule is only relevant if the Major.Minor format is set.

@@ -3,7 +3,7 @@ title: Control Add-In Properties
 description: This topic lists properties that apply to control add-in object.
 author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,9 @@ ms.author: solsen
 
 # Control Add-In Properties
 
-The following topic lists properties that apply to the [Control Add-In Object](../devenv-control-addin-object.md).
+This article lists properties that apply to the [Control Add-In Object](../devenv-control-addin-object.md).
+
+[!INCLUDE[properties_note](../includes/properties_note.md)]
 
 |Property Name| Object |
 |-------------|--------|

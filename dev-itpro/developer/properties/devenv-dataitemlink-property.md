@@ -1,7 +1,7 @@
 ---
 title: "DataItemLink Property"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ The DataItemLink property is applicable to the following types:
   
 ## See Also
 
-[OnPreDataItem Trigger](../triggers/devenv-onpredataitem-trigger.md)   
+[OnPreDataItem Trigger](../triggers-auto/reportdataitem/devenv-onpredataitem-reportdataitem-trigger.md)   
 [DataItemLinkReference Property](devenv-dataitemlinkreference-property.md)  
 [DataItemLink Property (Reports)](devenv-dataitemlink-reports-property.md)  
 [DataItemLink Property (Query)](devenv-dataitemlink-query-property.md)

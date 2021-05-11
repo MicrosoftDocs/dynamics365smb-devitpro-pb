@@ -2,7 +2,7 @@
 title: "OnAfterTestRun Trigger"
 description: "OnAfterTestRun trigger in AL for Business Central."
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -78,7 +78,7 @@ A test runner codeunit manages the execution of test codeunits that are run from
 The **OnAfterTestRun** trigger suppresses the automatic display of the results message after the test codeunit runs.
 
 > [!NOTE]  
-> To return the error message for a failed test  run, use the [GETLASTERRORTEXT Method](../methods/devenv-getlasterrortext-method.md).  
+> To return the error message for a failed test  run, use the [GetLastErrorText Method](../methods-auto/debugger/debugger-getlasterrortext-method.md).  
   
 You can use the **OnAfterTestRun** trigger to perform post-processing, such as logging, or to automate tests by integrating the test runner codeunit with a test management framework.
 

@@ -2,7 +2,7 @@
 title: "Record.AddLoadFields Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Record.AddLoadFields Method
-> **Version**: _Available from runtime version 6.0._
+> **Version**: _Available or changed with runtime version 6.0._
 
 Specifies fields to be initially loaded when the record is retrieved from its data source. Subsequent calls to AddLoadFields will not overwrite fields already selected for the initial load.
 
@@ -48,7 +48,7 @@ This method is part of the partial records capability for improving performance.
 
 ## Example
 
-The following example code shows how to use the AddLoadFields method to add a field for loading on a report. The example loads a field that is outside of the default fields selected by DataColumns of the report. The field is added by using the AddLoadFields on the [OnPreDataItem trigger](../../triggers/devenv-onpredataitem-trigger.md).
+The following example code shows how to use the AddLoadFields method to add a field for loading on a report. The example loads a field that is outside of the default fields selected by DataColumns of the report. The field is added by using the AddLoadFields on the [OnPreDataItem trigger](../../triggers-auto/reportdataitem/devenv-onpredataitem-reportdataitem-trigger.md).
 
 ```al
 trigger OnPreDataItem()

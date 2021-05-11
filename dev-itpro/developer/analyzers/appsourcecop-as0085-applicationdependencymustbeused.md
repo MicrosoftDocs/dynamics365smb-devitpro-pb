@@ -1,8 +1,8 @@
 ---
-title: "The 'application' property must be used instead of explicit dependencies"
+title: "AppSourceCop Rule AS0085"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/25/2020
+ms.date: 05/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AppSourceCop Rule AS0085
-The 'application' property must be used instead of explicit dependencies  
+The 'application' property must be used instead of explicit dependencies
 
 ## Description
 The 'application' property must be used for expressing a dependency on the 'Base Application' or the 'System Application' instead of explicit dependencies. See https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-application-app-file for additional information.
@@ -29,7 +29,7 @@ For more information about the benefits of using the `application` property, see
 
 For more information about the properties in the `app.json`, see [JSON Files](../devenv-json-files.md).
 
-## How to fix this diagnostic
+## How to fix this diagnostic?
 
 In order to fix this diagnostic, you have to replace the dependencies specifed on the 'Base Application' and 'System Application'  in the `dependencies` property by the `application` property in the `app.json` of the extension.
 

@@ -2,7 +2,7 @@
 title: "AutoSplitKey Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/24/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,13 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AutoSplitKey Property
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Sets whether a key is automatically created for a new record placed between the current record and the previous record.
 
 ## Applies to
 -   Page
 -   Request Page
-
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -39,7 +38,7 @@ To set this property to a value of **true**, the following conditions must be me
   
 - The current key must be the primary key.  
   
-- The last field in the primary key must be an [Integer Data Type](../datatypes/devenv-integer-data-type.md), [BigInteger Data Type](../datatypes/devenv-biginteger-data-type.md), [GUID Data Type](../datatypes/devenv-guid-data-type.md), or [Decimal Data Type](../datatypes/devenv-decimal-data-type.md) field.  
+- The last field in the primary key must be an [Integer Data Type](../methods-auto/library.md), [BigInteger Data Type](../methods-auto/library.md), [GUID Data Type](../methods-auto/library.md), or [Decimal Data Type](../methods-auto/library.md) field.  
   
 ## See Also  
 [Properties](devenv-properties.md)

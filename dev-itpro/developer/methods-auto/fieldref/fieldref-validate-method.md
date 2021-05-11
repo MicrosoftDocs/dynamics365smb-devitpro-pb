@@ -2,7 +2,7 @@
 title: "FieldRef.Validate Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # FieldRef.Validate Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Use this method to enter a new value into a field and have the new value validated by the properties and code that have been defined for that field.
 
@@ -38,7 +38,7 @@ The value to insert in the field.
 
 ## Remarks
 
-The Validate method first checks any [TableRelation Property](../../properties/devenv-tablerelation-property.md), and then executes the [OnValidate \(Fields\) Trigger](../../triggers/devenv-onvalidate-fields-trigger.md) of the field.  
+The Validate method first checks any [TableRelation Property](../../properties/devenv-tablerelation-property.md), and then executes the [OnValidate \(Fields\) Trigger](../../triggers-auto/field/devenv-onvalidate-field-trigger.md) of the field.  
 
 If you omit *NewValue*, the method validates the current value.  
 

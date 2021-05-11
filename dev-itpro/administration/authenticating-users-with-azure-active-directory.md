@@ -2,7 +2,7 @@
 title: User Authentication with Azure AD for Single Sign-on
 description: Associate an existing Microsoft account with user account to achieve single sign-on between the Web client and Microsoft 365.
 ms.custom: na
-ms.date: 11/25/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -71,7 +71,7 @@ If you have a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-pre
 
 4. After you've created the Azure AD tenant, add users.
 
-    For more information, see [Quickstart: Add new users to Azure Active Directory](https://go.microsoft.com/fwlink/?LinkId=317435). Later, you'll have to map the users in Azure AD to your users in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
+    For more information, see [Quickstart: Add new users to Azure Active Directory](/azure/active-directory/fundamentals/add-users-azure-active-directory). Later, you'll have to map the users in Azure AD to your users in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 ### Set the access token lifetime
 
@@ -98,7 +98,7 @@ In this task, you register your [!INCLUDE[prod_short](../developer/includes/prod
 
 1. Sign in to [Azure portal](https://portal.azure.com) and open the Active Directory tenant.
 
-2. To register the application, follow the guidelines at [Register your application with your Azure Active Directory tenant](/azure/active-directory/active-directory-app-registration).
+2. To register the application, follow the guidelines at [Registering Business Central On-Premises in Azure AD for Integrating with Other Services](/dynamics365/business-central/dev-itpro/administration/register-app-azure).
 
     When you add an application to an Azure AD tenant, you specify the following information. The configuration is slightly different in for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] single-tenant and multitenant deployment.
 
@@ -107,7 +107,7 @@ In this task, you register your [!INCLUDE[prod_short](../developer/includes/prod
     | Setting | Description |
     |--|--|
     |Name|Specifies the name of your application as it will display to your users, such as **Business Central App by My Solutions**.|
-    |Supported account types|Specifies the accounts that you would like your application to support. You can choose either **Accounts in this organizational directory only (Single tenant)** or **Accounts in any organizational directory (Any Azure AD directory - Multitenant)**. Otherwise, select **Help me choose** link on the **Register an Application** page in the portal.|
+    |Supported account types|Select Accounts in any organizational directory (Any Azure AD directory - Multitenant)|
     |Redirect URI|Specifies the type of application that you're registering and the redirect URI (or reply URL) for your application. Set the type to **Web**, and in the redirect URL box, enter URL for signing in to the [!INCLUDE[webclient](../developer/includes/webclient.md)], for example `https://localhost:443/BC170/SignIn`.<br /><br />The URI has the format `https://<domain or computer name>/<webserver-instance>/SignIn`, such as `https://cronusinternationltd.onmicrosoft.com/BC170/SignIn` or `https://MyBcWebServer/BC170/Signin`. <br /> <br />**Important** The portion of the reply URL after the domain name (in this case `BC170/SignIn`) is case-sensitive, so make sure that the web server instance name matches the case of the web server instance name as it is defined on IIS for your [!INCLUDE[webserver](../developer/includes/webserver.md)] installation.|
 
     # [Multitenant-tenant](#tab/multitenant)
@@ -542,7 +542,7 @@ With Azure AD authentication, [!INCLUDE[prod_short](../developer/includes/prod_s
 
 With Basic authentication, the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] user account must have web service access key. To sign in, instead using their Azure AD password, users provide the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] the web service access key. For information about setting up web service access keys, see [How to use an Access Key for SOAP and OData Web Service Authentication](../webservices/web-services-authentication.md#accesskey).
 
-With OAuth, users are authenticated based on their Azure AD credentials, providing a more direct and single sign-on experience. For more information, see [Using OAuth to Authorize Business Central Web Services (OData and SOAP)](/webservices/authenticate-web-services-using-oauth.md).
+With OAuth, users are authenticated based on their Azure AD credentials, providing a more direct and single sign-on experience. For more information, see [Using OAuth to Authorize Business Central Web Services (OData and SOAP)](../webservices/authenticate-web-services-using-oauth.md).
 
 ## Additional tips
 
@@ -566,4 +566,4 @@ When you mount a tenant, you can give the tenant an additional ID by setting the
 
 [Authentication and Credential Types](Users-Credential-Types.md)  
 [Troubleshooting: SAML2 token errors with Azure Active Directory/Office 365 Authentication](troubleshooting-SAML2-token-not-valid-because-validity-period-ended.md)  
-[Migrating to Multitenancy](../deployment/migrating-to-multitenancy.md) 
+[Migrating to Multitenancy](../deployment/migrating-to-multitenancy.md)

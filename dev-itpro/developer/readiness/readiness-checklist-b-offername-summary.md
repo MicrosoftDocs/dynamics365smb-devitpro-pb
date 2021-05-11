@@ -3,7 +3,7 @@ title: "Offer Name and Offer Summary"
 description: "Guidelines on offer name and offer summary"
 author: a-emniel
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
@@ -35,7 +35,8 @@ When creating a name for your offer, you can use the following two naming struct
 - Use industry specific vocabulary or benefit-based references in your product name if possible. This will increase relevance and conversion rates.
 
 *Don't*
-- Don’t use technology specific messaging as your core product name component.
+- Don't use special characters such as &, /, % etc. 
+- Don't use technology specific messaging as your core product name component.
 - Avoid using acronyms that are emotionally meaningless.
 
 

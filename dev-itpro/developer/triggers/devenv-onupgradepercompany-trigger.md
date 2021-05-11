@@ -2,7 +2,7 @@
 title: "OnUpgradePerCompany Trigger"
 description: "OnUpgradePerCompany trigger in AL for Business Central."
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,7 +15,7 @@ author: blrobl
 Runs during the upgrade of an extension.
 
 ## Applies to  
--  Upgrade codeunits. These codeunits have the [SubType Property \(Codeunit\)](../properties/devenv-subtype-property-codeunit.md) set to **Upgrade**.  
+-  Upgrade codeunits. These codeunits have the [SubType Property \(Codeunit\)](../properties/devenv-subtype-codeunit-property.md) set to **Upgrade**.  
 
 > [!NOTE]  
 >  This trigger is also available in upgrade codeunits for the base application, not just for extensions.  
@@ -27,4 +27,4 @@ This trigger is run once for each company in the database, and it is executed wi
 
 ## See Also  
  [Triggers](devenv-triggers.md)  
- [Codeunit Triggers](devenv-codeunit-triggers.md)  
+ [Codeunit Triggers](devenv-codeunit-triggers.md)

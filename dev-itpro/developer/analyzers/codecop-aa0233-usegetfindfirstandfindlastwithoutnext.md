@@ -1,8 +1,8 @@
 ---
-title: "Use Get(), FindFirst() and FindLast() without Next() method."
+title: "CodeCop Rule AA0233"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 05/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # CodeCop Rule AA0233
-Use Get(), FindFirst() and FindLast() without Next() method.  
+Use Get(), FindFirst() and FindLast() without Next() method.
 
 ## Description
 Avoid enumeration of a dataset when the dataset is not filtered.

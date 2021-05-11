@@ -2,7 +2,7 @@
 title: "LinkTable Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/24/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,13 +14,12 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # LinkTable Property
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Sets the table that this XML item should be linked to. This property is only available for XML items that have a table as their data source.
 
 ## Applies to
 -   Xml Port Table Element
-
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -46,7 +45,7 @@ In the Customer table, the primary key is the customer number and is stored in t
   
 Set the **LinkTable** property of the Sales Header XML item to point to the Customer table and set the [LinkFields Property](devenv-linkfields-property.md) of the Sales Header XML item so that the Sell-to Customer No. field is equal to the No. field in the Customer table. This places a filter on the records in the Customer table and ensures that only those records in the Sales Header table that refer to the customers you specified are selected and exported by the XMLport.  
   
-This corresponds to placing the following AL code in the [OnPreXMLItem Trigger](../triggers/devenv-onprexmlitem-trigger.md) of the indented data item.  
+This corresponds to placing the following AL code in the [OnPreXMLItem Trigger](../triggers-auto/xmlporttableelement/devenv-onprexmlitem-xmlporttableelement-trigger.md) of the indented data item.  
   
 ```AL
 SetRange("Sell-to Customer No.",Customer."No.");  

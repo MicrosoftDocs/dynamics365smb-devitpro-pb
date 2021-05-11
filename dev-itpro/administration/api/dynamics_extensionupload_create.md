@@ -1,5 +1,5 @@
 ---
-title: Create extensionUpload | Microsoft Docs
+title: Create extensionUpload
 description: Creates an extension upload object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"
@@ -7,7 +7,7 @@ ms.topic: reference
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/19/2021
+ms.date: 04/01/2021
 ms.author: solsen
 ---
 
@@ -42,7 +42,7 @@ POST /microsoft/automation/v2.0/companies({companyId})/extensionUpload
 
 ### Request body
 
-In the request body, supply a JSON representation of a **extensionUpload** object.
+In the request body, supply a JSON representation of a [**extensionUpload** object](../resources/dynamics_extensionupload.md).
 
 ### Response
 
@@ -97,5 +97,5 @@ Content-type: application/json
 
 ## See Also
 
-[Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  
-[extensionUpload](../resources/dynamics_extensionUpload.md)  
+[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)  
+[extensionUpload](../resources/dynamics_extensionUpload.md)

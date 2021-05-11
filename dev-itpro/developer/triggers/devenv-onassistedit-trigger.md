@@ -2,7 +2,7 @@
 title: "OnAssistEdit Trigger"
 description: "OnAssistEdit trigger in AL for Business Central."
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -44,4 +44,4 @@ You can use this trigger to write to the database.
 [Triggers](devenv-triggers.md)  
 [AssistEdit Property](../properties/devenv-assistedit-property.md)  
 [Page and Action Triggers](devenv-page-and-action-triggers.md)  
-[Page Properties](../properties/devenv-page-properties.md)  
+[Page Properties](../properties/devenv-properties.md)

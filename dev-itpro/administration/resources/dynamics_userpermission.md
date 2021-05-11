@@ -7,7 +7,7 @@ ms.topic: reference
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/19/2021
+ms.date: 04/01/2021
 ms.author: solsen
 ---
 
@@ -50,7 +50,7 @@ Represents an user permission in [!INCLUDE[d365fin_long_md](../../includes/d365f
 |company|string|The company name.|
 |appId|GUID|The ID of the App.|
 |extensionName|string|The name of the extension.|
-|scope|string|Scode of the user permission.|
+|scope|string|Scope of the user permission.|
 
 ## JSON representation
 

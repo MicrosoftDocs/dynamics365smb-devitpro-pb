@@ -3,7 +3,7 @@ title: "Moving Custom Fields From Base Application to Extensions"
 description: "DMoving Custom Fields From Base Application to Extensions"
 author: jswymer
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -104,7 +104,7 @@ Because the **Customer Card** was originally modified to include a field for the
 
 You need to somehow copy or move the data that is stored in the original **ShoeSize** field in the **Customer** base application table in the database to the new **ABC - ShoeSize** field of the extension. In this example, this is done by writing install code for the extension package. This involves creating an install type codeunit, and then adding code to one of its install triggers to migrate the data. For more information, see [Writing Extension Install Code](devenv-extension-install-code.md).
 
-In this example, you will use the [VALIDATE method](methods-auto/record/record-validate-method.md) on the [OnInstallAppPerCompany trigger](triggers/devenv-oninstallapppercompany-trigger.md) to replicate data from the original **ShoeSize** field to the new **ABC - ShoeSize** field. When writing install code, it is important to add code to ensure that code will not run again if the extension is reinstalled for some reason. In this example, you only want to replicate the data found in the **ShoeSize** field on the initial installation of the extension. 
+In this example, you will use the [VALIDATE method](methods-auto/record/record-validate-method.md) on the [OnInstallAppPerCompany trigger](triggers-auto/codeunit/devenv-oninstallapppercompany-codeunit-trigger.md) to replicate data from the original **ShoeSize** field to the new **ABC - ShoeSize** field. When writing install code, it is important to add code to ensure that code will not run again if the extension is reinstalled for some reason. In this example, you only want to replicate the data found in the **ShoeSize** field on the initial installation of the extension. 
 
 1. In the AL project for the new extension, create a codeunit object and set `SubType` property to `Install`.
 2. Add the `OnInstallAppPerCompany()` and write code that checks whether this is a first-time installation of the extension.

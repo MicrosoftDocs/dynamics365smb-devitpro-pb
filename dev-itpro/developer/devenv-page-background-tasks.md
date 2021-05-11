@@ -4,7 +4,7 @@ description: Explains how to create page background tasks in Business Central.
 author: jswymer
 ms.author: jswymer
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -59,8 +59,8 @@ The API for background tasks includes the following methods and triggers:
 ||[SetBackgroundTaskResult](methods-auto/page/page-setbackgroundtaskresult-method.md)|Sets the page background task result as a dictionary. When the task is completed, the OnPageBackgroundCompleted trigger will be invoked on the page with this result dictionary|
 ||[RunPageBackgroundTask](methods-auto/testpage/testpage-runpagebackgroundtask-method.md)|Runs the page background task codeunit in the current session.|
 ||[CancelBackgroundTask](methods-auto/page/page-cancelbackgroundtask-method.md)|Attempt to cancel a page background task.|
-|Triggers|[OnPageBackgroundTaskCompleted](triggers/devenv-onpagebackgroundtaskcompleted-trigger.md)|Runs after a page background task has successfully completed.|
-||[OnPageBackgroundTaskError](triggers/devenv-onpagebackgroundtaskerror-trigger.md)|Runs when an error occurs in a page background task. |
+|Triggers|[OnPageBackgroundTaskCompleted](triggers-auto/page/devenv-onpagebackgroundtaskcompleted-page-trigger.md)|Runs after a page background task has successfully completed.|
+||[OnPageBackgroundTaskError](triggers-auto/page/devenv-onpagebackgroundtaskerror-page-trigger.md)|Runs when an error occurs in a page background task. |
 
 ## How to create a page background task
 
@@ -73,8 +73,8 @@ The general steps are as follows:
 1. Create a background task codeunit that includes the logic that you want to run in the background.
 2. On the page, complete the following steps:
     1. Add code that creates (or *enqueues*) the page background task at runtime.
-    2. Add code to the [OnPageBackgroundTaskCompleted trigger](triggers/devenv-onpagebackgroundtaskcompleted-trigger.md) to handle the results of the background task and update the UI.
-    3. Add code to the [OnPageBackgroundTaskError trigger](triggers/devenv-onpagebackgroundtaskerror-trigger.md) to handle errors that occur in the background task.
+    2. Add code to the [OnPageBackgroundTaskCompleted trigger](triggers-auto/page/devenv-onpagebackgroundtaskcompleted-page-trigger.md) to handle the results of the background task and update the UI.
+    3. Add code to the [OnPageBackgroundTaskError trigger](triggers-auto/page/devenv-onpagebackgroundtaskerror-page-trigger.md) to handle errors that occur in the background task.
 
 These steps are described in more details in the following sections. To help explain page background tasks, the sections use a simple example. The example extends the **Customer** card page to include a page background task. The task gets the current system time, waits a specified number of milliseconds, and gets the system time again. The page is extended with three new fields: **Start Time**, **Duration**, and **End Time**. In the page UI, these fields are updated with results of the background task, along with a notification when the task completes.
 

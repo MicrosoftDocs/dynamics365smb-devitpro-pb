@@ -2,7 +2,7 @@
 title: "TestPage.GoToKey Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # TestPage.GoToKey Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Finds the row in a data set on the test page that is identified by the specified values.
 
@@ -42,7 +42,7 @@ The value or list of values to use to find the row. If this parameter is omitted
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
-The GoToKey method loops over all records until it finds the identifies row.  For each record, the [OnAfterGetCurrentRecord Trigger](../../triggers/devenv-onaftergetcurrrecord-trigger.md) is executed.  
+The GoToKey method loops over all records until it finds the identifies row.  For each record, the [OnAfterGetCurrRecord Trigger](../../triggers-auto/page/devenv-onaftergetcurrrecord-page-trigger.md) is executed.  
 
 ## See Also
 [TestPage Data Type](testpage-data-type.md)  

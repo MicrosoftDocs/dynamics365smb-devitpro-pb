@@ -3,7 +3,7 @@ title: Inspecting Pages
 description: "Learn about the structure of a page and its' underlying data."
 author: jswymer
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -55,8 +55,8 @@ The following sections describe details about what is shown.
 
 The **Page** field shows information about the main page or a selected (highlighted) subpage in a part. The field shows the following information:
 
-- The name, as specified by its [Name property](properties/devenv-name-property.md)
-- The ID as specified by the [ID property](properties/devenv-id-property.md).
+- The name, as specified by its [Name property](./properties/devenv-properties.md)
+- The ID as specified by the [ID property](./properties/devenv-properties.md).
 - The type, as specified by the [PageType property](properties/devenv-pagetype-property.md).
 
 
@@ -77,8 +77,8 @@ The **Page** field shows information about the main page or a selected (highligh
 
 If the main page or the selected page part has a source table, the **Table** field displays information about the source table. The source table is specified by the page's [SourceTable property](properties/devenv-sourcetable-property.md). The **Table** field shows the following information:
 
-- The name, as specified by its [Name property](properties/devenv-name-property.md)
-- The ID as specified by the [ID property](properties/devenv-id-property.md).
+- The name, as specified by its [Name property](./properties/devenv-properties.md)
+- The ID as specified by the [ID property](./properties/devenv-properties.md).
 
 If the page uses a query object as a data source, the table field shows the query name and ID instead.
 
@@ -97,34 +97,34 @@ The **Table Fields** tab displays information about all fields in the source tab
 
 Each field is shown with the following information:
 
-- Field name as specified by the [Name property](properties/devenv-name-property.md).
+- Field name as specified by the [Name property](./properties/devenv-properties.md).
 - Field number as specified by the [Field No property](properties/devenv-field-no.-property.md).
-- Data type as specified by the [Data Type property](properties/devenv-data-type-property.md).
-- If the field is a primary key, it's indicated by **PK**. A primary is  specified by the [Key property](properties/devenv-key-property.md).
+- Data type as specified by the [Data Type property](./properties/devenv-properties.md).
+- If the field is a primary key, it's indicated by **PK**. A primary is  specified by the [Key property](./properties/devenv-properties.md).
 - Value of the field.
 - If the field is added by an extension, the name of the extension appears under the value.
 
 #### What field information isn't shown
 
-- Page fields that are not bound to the source table by the [SourceExp property](properties/devenv-sourceexpr-property.md).
+- Page fields that aren't bound to the source table by the [SourceExp property](./properties/devenv-properties.md).
 - The value of fields that have a data type of blob, byte, media, or mediaset.
 
-## [Extensions](#tab/extensions)
+### [Extensions](#tab/extensions)
 
-The **Extensions** tab displays extensions that are installed for the current environment and affect the selected page or its source table.
+The **Extensions** tab displays installed extensions that affect the selected page or its source table.
 
 ![Page Inspection Extensions Tab](media/page-inspection-extensions.png)
 
-Except for the type and performance information, the data that is shown is defined in the extension's app.json file, which you configure during development. For more information, see [App.json](devenv-json-files.md#Appjson).
+Except for the type and performance information, the data that's shown is defined in the extension's app.json file, which is configured during development. For more information, see [App.json](devenv-json-files.md#Appjson).
 
 #### Type
 
 There are four different extension types:
 
-- **Adds page** indicates that the extensions adds the page object.
-- **Extends page** indicates that the extension modifies the page, like adding a field, action, or code. In AL, this is specified by a page extension object.
+- **Adds page** indicates that the extension adds the page object.
+- **Extends page** indicates that the extension modifies the page, like adding a field, action, or code. In AL, these modifications are done by a page extension object.
 - **Adds table** indicates that the extension adds the table object.
-- **Extends table** indicates that the extension modifies the source table, like adding a field or code. In AL, this is specified by a table extension object.  
+- **Extends table** indicates that the extension modifies the source table, like adding a field or code. In AL, these modifications are specified by a table extension object.  
 
 #### Performance
 
@@ -136,9 +136,9 @@ The performance information includes two values. The first value indicates the t
 > [!NOTE]
 > For [!INCLUDE[prod_short](includes/prod_short.md)] on-premises, the performance data will only be shown if AL function timing is enabled on the [!INCLUDE[server](includes/server.md)] instance. For more information, see [Configuring Business Central Server](../administration/configure-server-instance.md#General).  
 
-## [Page Filters](#tab/pagefilters)
+### [Page Filters](#tab/pagefilters)
 
-The **Page Filters** tab displays the current filters used on the current page. This includes filters that are set by code, list views, or defined by the user in the filter pane of the page.
+The **Page Filters** tab displays the current filters used on the current page. The tab shows filters set by code, set in list views, or defined by the user in the filter pane of the page.
 
 ![Page Inspection Page Filters](media/page-inspection-page-filters.png)
 
@@ -148,8 +148,10 @@ The following table describes the different filter types.
 |----|-----------|
 |UserFilters|Filter that is defined by the client user, by using the Filter pane (see [Filtering](/dynamics365/business-central/ui-enter-criteria-filters#Filtering)), or defined in code by using filter methods like [SetFilter](methods-auto/record/record-setfilter-method.md) or [SetRange](methods-auto/record/record-setrange-method.md).|
 |TableViewFilter|Filter that is defined on the page by the [SourceTableView property](properties/devenv-sourcetableview-property.md)|
-|SubFormLinkFilters|Filter that is defined by the [SubPageLink property](properties/devenv-subpagelink-property.md) on a `part` control that contains the sub-page.|
+|SubFormLinkFilters|Filter that is defined by the [SubPageLink property](properties/devenv-subpagelink-property.md) on a `part` control that contains the subpage.|
 |FormViewFilters|Filter that is defined by the [RunPageView property](properties/devenv-runpageview-property.md) of the action that opens the page.|
+
+---
 
 ## See Also
 
@@ -158,4 +160,4 @@ The following table describes the different filter types.
 [Actions Overview](devenv-actions-overview.md)  
 [Adding Pages and Reports to Search](devenv-al-menusuite-functionality.md)  
 [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user)  
-[Using Designer](devenv-inclient-designer.md)  
+[Using Designer](devenv-inclient-designer.md)

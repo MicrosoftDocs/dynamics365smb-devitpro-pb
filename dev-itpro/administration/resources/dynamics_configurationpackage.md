@@ -7,7 +7,7 @@ ms.topic: reference
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/19/2021
+ms.date: 04/01/2021
 ms.author: solsen
 ---
 
@@ -42,12 +42,6 @@ This is illustrated in the following example:
 `POST https://<server address>:<server API port>/<server instance name>/api/microsoft/automation/v2.0/companies({id})/configurationPackages({id})/Microsoft.NAV.apply`
 
 The response has no content; the response code is 204.
-
-## Navigation
-
-| Navigation |Return Type| Description |
-|:----------|:----------|:-----------------|
-|[file](dynamics_file.md)|file |Gets the file of the configurationPackage.|
 
 ## Properties
 

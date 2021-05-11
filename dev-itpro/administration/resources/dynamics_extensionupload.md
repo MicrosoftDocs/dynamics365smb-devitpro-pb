@@ -7,7 +7,7 @@ ms.topic: reference
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/19/2021
+ms.date: 04/01/2021
 ms.author: solsen
 ---
 
@@ -43,13 +43,12 @@ The response has no content; the response code is 204.
 | Property           | Type   |Description     |
 |:-------------------|:-------|:---------------|
 |systemId|GUID|The unique ID of the system.|
-|schedule|string|Specifies the schedule for installation.|
+|schedule|string|Specifies the schedule for installation. Values can be "Current version", "Next minor version", or "Next major version".|
 |extensionContent|stream|The content of the extension.|
 
 ## JSON representation
 
 Here is a JSON representation of the extensionUpload resource.
-
 
 ```json
 {

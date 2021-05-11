@@ -2,7 +2,7 @@
 title: "Report.RunRequestPage Method"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Report.RunRequestPage Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Runs the request page for a report without running the report. Returns an XML string that contains the request page parameters that are entered on the request page.
 
@@ -44,14 +44,12 @@ XML string that contains the request page parameters that are entered on the req
 ## Remarks  
  This method opens the request page for the specified report, where the user can provide parameters for the report. When the user closes the request page by choosing the **OK** button, a string that contains the parameter values that were set by the user is returned. When the user chooses the **Cancel** button, an empty string will be returned. The returned parameter string can be picked up by calling one of the following methods:  
 
--   [Execute Method](../../methods/devenv-execute-method.md)  
-
--   [Print Method](../../methods/devenv-print-method.md)  
-
--   [SaveAs Method](../../methods/devenv-saveas-method.md)  
+- [Execute Method](reportinstance-execute-method.md)  
+- [Print Method](reportinstance-print-method.md)  
+- [SaveAs Method](reportinstance-saveas-method.md)  
 
 > [!NOTE]  
->  You can use these methods to schedule reports in the job queue.  
+> You can use these methods to schedule reports in the job queue.  
 
 Because the request page runs in the context of where it was invoked from, users cannot bookmark a link to this page from the user interface.  
 

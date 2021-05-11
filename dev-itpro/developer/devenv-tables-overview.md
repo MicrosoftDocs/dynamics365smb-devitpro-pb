@@ -2,7 +2,7 @@
 title: "Tables Overview"
 description: Tables are the objects in which you store and manipulate data, and you create pages and reports in order to access and view the data in the tables.
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -40,7 +40,7 @@ In AL code, you can create new tables or modify existing tables. Read more about
 |----|-----|
 |Create a new table object|[Table Object](devenv-table-object.md)|
 |Modify an existing table object|[Table Extension Object](devenv-table-ext-object.md)|
-|Decide which field data type you want to apply to your data|[Field Data Types](datatypes/devenv-field-data-types.md)|
+|Decide which field data type you want to apply to your data|[Field Data Types](./methods-auto/library.md)|
 |Apply table and field properties|[Table and Table Extension Properties](properties/devenv-table-properties.md)|
 |Set primary and secondary table keys|[Table Keys](devenv-table-keys.md)|
 
@@ -50,7 +50,7 @@ In AL code, you can create new tables or modify existing tables. Read more about
   
 |To|See|  
 |--------|---------|  
-|Learn about the set of triggers that [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] supports for tables and fields.|[Table and Field Triggers](triggers/devenv-triggers.md)|  
+|Learn about the set of triggers that [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] supports for tables and fields.|[Table and Field Triggers](triggers-auto/devenv-triggers.md)|  
 <!-- 
 |Create a table trigger.|[How to: Define or Modify Table or Field Triggers](How-to--Define-or-Modify-Table-or-Field-Triggers.md)|  
 |See reference information about specific triggers.|[Triggers](Triggers.md)|  -->
@@ -76,4 +76,4 @@ In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], the primary way to 
   
   -->
 ## See Also  
-[Developing Extensions in AL](devenv-dev-overview.md)  
+[Developing Extensions in AL](devenv-dev-overview.md)

@@ -1,5 +1,5 @@
 ---
-title: Update extensionUpload | Microsoft Docs
+title: Update extensionUpload
 description: Updates an  extension upload object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"
@@ -7,7 +7,7 @@ ms.topic: reference
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/19/2021
+ms.date: 04/01/2021
 ms.author: solsen
 ---
 
@@ -31,7 +31,7 @@ Body: binary content of the extension
 |Header|Value|
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
-|Content-Type  |application/json|
+|Content-Type  |application/octet-stream|
 |If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **extensionUpload**, the **extension upload** will not be updated. |
 
 ## Request body
@@ -57,6 +57,5 @@ Body: binary stream
 
 ## See Also
 
-[Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  
+[Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)  
 [extensionUpload](../resources/dynamics_extensionUpload.md)
-
