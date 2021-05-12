@@ -39,7 +39,7 @@ When done, build the extension package, then publish and install it as usual. Wh
 
 ### Prior to runtime version 7.2
 
-Up until runtime version 7.2 you could not use the `"applicationInsightsConnectionString"` setting. Instead you had to use the `"applicationInsightsKey"` setting which was added using only the instrumentation key from the Application Insights connection string as shown:
+Up until runtime version 7.2 you cannot use the `"applicationInsightsConnectionString"` setting. Instead you have to use the `"applicationInsightsKey"` setting which is added using only the instrumentation key from the Application Insights connection string as shown:
 
 ```json
 "applicationInsightsKey": "<instrumentation key>"
