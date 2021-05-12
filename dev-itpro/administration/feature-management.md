@@ -69,7 +69,7 @@ You schedule a data update on the **Feature Management** page by choosing the **
 
 ## <a name="permission"></a>Control user access to feature management
 
-Most users, by default, won't have permission to enable upcoming features themselves. As an administrator, the easiest way to give a user permission is to assign them the **FEATURE MGT. - ADMIN** permission set. For more information, see [Assigning Permission Sets](https://docs.microsoft.com/en-us/dynamics365/business-central/ui-define-granular-permissions). This permission set was introduced in version 18.1.
+Most users, by default, won't have permission to enable upcoming features themselves. As an administrator, the easiest way to give a user permission is to assign them the **FEATURE MGT. - ADMIN** permission set. For more information, see [Assigning Permission Sets](/dynamics365/business-central/ui-define-granular-permissions). This permission set was introduced in version 18.1.
 
 ## FAQ about Feature Management
 
