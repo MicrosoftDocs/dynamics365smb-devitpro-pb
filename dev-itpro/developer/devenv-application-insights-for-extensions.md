@@ -37,7 +37,7 @@ Replace `<connection string>` with the string you copied in the Azure Applicatio
 
 When done, build the extension package, then publish and install it as usual. When the extension is run from [!INCLUDE[prod_short](includes/prod_short.md)], Application Insights gathers the telemetry data for viewing and analyzing.
 
-### Prior to Runtime version 7.2
+### Prior to runtime version 7.2
 
 Up until runtime version 7.2 you could not use the `"applicationInsightsConnectionString"` setting. Instead you had to use the `"applicationInsightsKey"` setting which was added using only the instrumentation key from the Application Insights connection string as shown:
 
