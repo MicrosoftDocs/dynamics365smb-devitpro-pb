@@ -51,6 +51,9 @@ Please note that new customers will automatically get the latest builds of Busin
 **Support for migrating data from earlier on-premises versions of Business Central to 2021 release wave 1 (v.18)**  
 With the Business Central cloud migration tool, customers can migrate their data from earlier on-premises versions of the product to their online Business Central environment, running on the latest version. We've added support for customers who are running on Business Central on-premises version 14, 15, 16, or 17 to migrate their data to version 18 of Business Central online. We've implemented the necessary data upgrade logic in the cloud migration tool, so customers don't have to upgrade their older version themselves in order to migrate their data to the latest online release. 
 
+**US customers: Schedule minor updates and receive email notifications**  
+US customers can now receive upfront email notifications seven days in advance and schedule minor updates of Business Central within a 21 days window. We have enabled this new capability to be available for US with 18.1, and plan to enable the same experience for all other countries with 18.2. Stay tuned for updates! Learn more: https://aka.ms/BCUpdates.
+
 **Business Central Office Hours Calls in May**  
 Make sure to join the office hours calls around ‘Report Extensibility’ on May 4 and ‘Snapshot debugging’ on May 18. Register and stay tuned for the upcoming calls: https://aka.ms/BCOfficeHours.
 
