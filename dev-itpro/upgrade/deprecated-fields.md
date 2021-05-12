@@ -72,6 +72,10 @@ A number of fields are marked as ObsoleteState:Pending. There is no impact on co
 
 [!INCLUDE [fields-obsolete-nl](../includes/fields-obsolete-nl.md)]
 
+### Russia
+
+[!INCLUDE [fields-obsolete-ru](../includes/fields-obsolete-ru.md)]
+
 ### Spain
 
 [!INCLUDE [fields-obsolete-es](../includes/fields-obsolete-es.md)]
