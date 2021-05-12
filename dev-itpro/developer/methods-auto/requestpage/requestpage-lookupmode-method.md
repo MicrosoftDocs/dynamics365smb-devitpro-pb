@@ -1,8 +1,9 @@
 ---
 title: "RequestPage.LookupMode Method"
+description: "Gets or sets the default lookup mode for the page."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,8 +27,8 @@ Gets or sets the default lookup mode for the page.
 > [!NOTE]
 > This method can be invoked using property access syntax.
 ## Parameters
-*RequestPage*
-&emsp;Type: [RequestPage](requestpage-data-type.md)
+*RequestPage*  
+&emsp;Type: [RequestPage](requestpage-data-type.md)  
 An instance of the [RequestPage](requestpage-data-type.md) data type.
 
 *NewLookupMode*  
@@ -36,8 +37,8 @@ An instance of the [RequestPage](requestpage-data-type.md) data type.
 
 
 ## Return Value
-*LookupMode*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*LookupMode*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 
 
 

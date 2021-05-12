@@ -1,8 +1,9 @@
 ---
 title: "List.Reverse Method"
+description: "Reverses the order of the elements in the entire List."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,8 +26,8 @@ Reverses the order of the elements in the entire List.
 ```
 
 ## Parameters
-*List*
-&emsp;Type: [List](list-data-type.md)
+*List*  
+&emsp;Type: [List](list-data-type.md)  
 An instance of the [List](list-data-type.md) data type.
 
 

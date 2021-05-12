@@ -1,8 +1,9 @@
 ---
 title: "Notification.Scope Method"
+description: "Specifies the context in which the notification appears in the client."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,8 +27,8 @@ Specifies the context in which the notification appears in the client.
 > [!NOTE]
 > This method can be invoked using property access syntax.
 ## Parameters
-*Notification*
-&emsp;Type: [Notification](notification-data-type.md)
+*Notification*  
+&emsp;Type: [Notification](notification-data-type.md)  
 An instance of the [Notification](notification-data-type.md) data type.
 
 *Scope*  
@@ -36,8 +37,8 @@ The scope in which the notification appears in the client
 
 
 ## Return Value
-*Scope*
-&emsp;Type: [NotificationScope](../notificationscope/notificationscope-option.md)
+*Scope*  
+&emsp;Type: [NotificationScope](../notificationscope/notificationscope-option.md)  
 The scope of the current notification.
 
 

@@ -1,8 +1,9 @@
 ---
 title: "TestField.Caption Method"
+description: "Gets the current caption of the field as a String."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,13 +28,13 @@ Result :=   TestField.Caption()
 > This method can be invoked using property access syntax.
 
 ## Parameters
-*TestField*
-&emsp;Type: [TestField](testfield-data-type.md)
+*TestField*  
+&emsp;Type: [TestField](testfield-data-type.md)  
 An instance of the [TestField](testfield-data-type.md) data type.
 
 ## Return Value
-*Result*
-&emsp;Type: [String](../string/string-data-type.md)
+*Result*  
+&emsp;Type: [String](../string/string-data-type.md)  
 The current caption of the field as a String.
 
 

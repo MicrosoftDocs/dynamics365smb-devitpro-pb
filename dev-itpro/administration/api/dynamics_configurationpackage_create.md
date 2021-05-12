@@ -1,5 +1,5 @@
 ---
-title: Create configurationPackage | Microsoft Docs
+title: Create configurationPackage
 description: Creates a configuration package object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

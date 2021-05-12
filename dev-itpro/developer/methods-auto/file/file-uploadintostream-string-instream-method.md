@@ -1,8 +1,9 @@
 ---
 title: "File.UploadIntoStream Method"
+description: "Sends a file from the client computer to the corresponding server. The client computer is the computer that is running a browser that accesses the web client."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -36,8 +37,8 @@ The type of file that can be uploaded to the server. A user can try to upload an
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

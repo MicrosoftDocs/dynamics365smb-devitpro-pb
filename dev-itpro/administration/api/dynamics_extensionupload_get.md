@@ -1,5 +1,5 @@
 ---
-title: Get extensionUpload | Microsoft Docs
+title: Get extensionUpload
 description: Gets an extension upload object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

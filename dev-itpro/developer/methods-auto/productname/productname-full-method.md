@@ -1,8 +1,9 @@
 ---
 title: "ProductName.Full Method"
+description: "FULL returns a text string that contains the application's full name."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,8 +27,8 @@ ProductName :=   ProductName.Full()
 
 
 ## Return Value
-*ProductName*
-&emsp;Type: [String](../string/string-data-type.md)
+*ProductName*  
+&emsp;Type: [String](../string/string-data-type.md)  
 Text of the product's full name.
 
 

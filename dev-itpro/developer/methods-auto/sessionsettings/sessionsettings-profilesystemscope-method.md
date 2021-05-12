@@ -1,8 +1,9 @@
 ---
 title: "SessionSettings.ProfileSystemScope Method"
+description: "Gets or sets the profile scope property in a SessionSettings object."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,8 +27,8 @@ Gets or sets the profile scope property in a SessionSettings object.
 > [!NOTE]
 > This method can be invoked using property access syntax.
 ## Parameters
-*SessionSettings*
-&emsp;Type: [SessionSettings](sessionsettings-data-type.md)
+*SessionSettings*  
+&emsp;Type: [SessionSettings](sessionsettings-data-type.md)  
 An instance of the [SessionSettings](sessionsettings-data-type.md) data type.
 
 *NewProfileScope*  
@@ -36,8 +37,8 @@ Specifies whether the profile applies to the system or to a tenant only. **true*
 
 
 ## Return Value
-*ProfileSystemScope*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*ProfileSystemScope*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the profile applies to the system; **false** if the profile applies to a tenant.
       
 

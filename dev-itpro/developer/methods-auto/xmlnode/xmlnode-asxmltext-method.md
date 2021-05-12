@@ -1,8 +1,9 @@
 ---
 title: "XmlNode.AsXmlText Method"
+description: "Converts the node to an XmlText node. The operation will fail if the node is not an XmlText."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,13 +26,13 @@ XmlText :=   XmlNode.AsXmlText()
 ```
 
 ## Parameters
-*XmlNode*
-&emsp;Type: [XmlNode](xmlnode-data-type.md)
+*XmlNode*  
+&emsp;Type: [XmlNode](xmlnode-data-type.md)  
 An instance of the [XmlNode](xmlnode-data-type.md) data type.
 
 ## Return Value
-*XmlText*
-&emsp;Type: [XmlText](../xmltext/xmltext-data-type.md)
+*XmlText*  
+&emsp;Type: [XmlText](../xmltext/xmltext-data-type.md)  
 An XmlText value that references the current XmlNode.
 
 

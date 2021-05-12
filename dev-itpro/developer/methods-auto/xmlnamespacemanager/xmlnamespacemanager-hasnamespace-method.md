@@ -1,8 +1,9 @@
 ---
 title: "XmlNamespaceManager.HasNamespace Method"
+description: "Gets a value indicating whether the supplied prefix has a namespace defined for the current scope."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Gets a value indicating whether the supplied prefix has a namespace defined for 
 HasNamespace :=   XmlNamespaceManager.HasNamespace(Prefix: String)
 ```
 ## Parameters
-*XmlNamespaceManager*
-&emsp;Type: [XmlNamespaceManager](xmlnamespacemanager-data-type.md)
+*XmlNamespaceManager*  
+&emsp;Type: [XmlNamespaceManager](xmlnamespacemanager-data-type.md)  
 An instance of the [XmlNamespaceManager](xmlnamespacemanager-data-type.md) data type.
 
 *Prefix*  
@@ -34,8 +35,8 @@ The prefix of the namespace you want to find.
 
 
 ## Return Value
-*HasNamespace*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*HasNamespace*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the supplied prefix has a namespace defined for the current scope, otherwise **false**.
 
 

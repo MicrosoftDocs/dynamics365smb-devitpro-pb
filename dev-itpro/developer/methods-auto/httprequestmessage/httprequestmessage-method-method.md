@@ -1,8 +1,9 @@
 ---
 title: "HttpRequestMessage.Method Method"
+description: "Gets or sets the method type as defined in the HTTP standard."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,8 +27,8 @@ Gets or sets the method type as defined in the HTTP standard.
 > [!NOTE]
 > This method can be invoked using property access syntax.
 ## Parameters
-*HttpRequestMessage*
-&emsp;Type: [HttpRequestMessage](httprequestmessage-data-type.md)
+*HttpRequestMessage*  
+&emsp;Type: [HttpRequestMessage](httprequestmessage-data-type.md)  
 An instance of the [HttpRequestMessage](httprequestmessage-data-type.md) data type.
 
 *NewMethod*  
@@ -36,8 +37,8 @@ The HTTP method used by the request message.
 
 
 ## Return Value
-*CurrentMethod*
-&emsp;Type: [String](../string/string-data-type.md)
+*CurrentMethod*  
+&emsp;Type: [String](../string/string-data-type.md)  
 The HTTP method used by the request message. The default is the GET method.
 
 

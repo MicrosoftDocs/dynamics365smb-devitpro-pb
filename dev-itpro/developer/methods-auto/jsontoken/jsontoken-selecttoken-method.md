@@ -1,8 +1,9 @@
 ---
 title: "JsonToken.SelectToken Method"
+description: "Selects a JsonToken using a JPath expression."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Selects a JsonToken using a JPath expression.
 [Ok := ]  JsonToken.SelectToken(Path: String, var Result: JsonToken)
 ```
 ## Parameters
-*JsonToken*
-&emsp;Type: [JsonToken](jsontoken-data-type.md)
+*JsonToken*  
+&emsp;Type: [JsonToken](jsontoken-data-type.md)  
 An instance of the [JsonToken](jsontoken-data-type.md) data type.
 
 *Path*  
@@ -38,8 +39,8 @@ A JsonToken variable that will contain the result if the operation is successful
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the read was successful; otherwise, **false**.  If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

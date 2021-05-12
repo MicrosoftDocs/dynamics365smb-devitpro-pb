@@ -1,8 +1,9 @@
 ---
 title: "Query.SetRange Method"
+description: "Sets a filter on a range of values on a column of a query data set."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Sets a filter on a range of values on a column of a query data set.
  Query.SetRange(Column: Any [, FromValue: Any] [, ToValue: Any])
 ```
 ## Parameters
-*Query*
-&emsp;Type: [Query](query-data-type.md)
+*Query*  
+&emsp;Type: [Query](query-data-type.md)  
 An instance of the [Query](query-data-type.md) data type.
 
 *Column*  

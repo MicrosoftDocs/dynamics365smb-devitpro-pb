@@ -1,5 +1,5 @@
 ---
-title: Get extensionDeploymentStatus | Microsoft Docs
+title: Get extensionDeploymentStatus
 description: Gets an extension deployment status object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

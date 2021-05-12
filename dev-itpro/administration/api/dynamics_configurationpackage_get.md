@@ -1,5 +1,5 @@
 ---
-title: Get configurationPackage | Microsoft Docs
+title: Get configurationPackage
 description: Gets a configuration package object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

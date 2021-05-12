@@ -2,7 +2,7 @@
 title: "CodeCop Rule AA0215"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,10 +14,10 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # CodeCop Rule AA0215
-Follow [the style guide](../../compliance/apptest-bestpracticesforalcode.md#file-naming) about the best practices for naming.  
+Follow [the style guide](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/compliance/apptest-bestpracticesforalcode#file-naming) about the best practices for naming.
 
 ## Description
-Follow [the style guide](../../compliance/apptest-bestpracticesforalcode.md#file-naming) about the best practices for naming.
+Follow [the style guide](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/compliance/apptest-bestpracticesforalcode#file-naming) about the best practices for naming.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

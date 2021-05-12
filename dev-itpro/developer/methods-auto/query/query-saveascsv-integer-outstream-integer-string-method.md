@@ -1,8 +1,9 @@
 ---
 title: "Query.SaveAsCsv Method"
+description: "Saves the resulting data set of a query as a comma separated values (CSV) file."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -43,8 +44,8 @@ You set the FormatArgument parameter based on the setting of the Format paramete
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

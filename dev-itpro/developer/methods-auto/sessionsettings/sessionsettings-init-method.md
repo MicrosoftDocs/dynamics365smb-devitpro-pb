@@ -1,8 +1,9 @@
 ---
 title: "SessionSettings.Init Method"
+description: "Populates the instance of a SessionsSettings with the current client user's personalization properties (such as Profile ID and Company) that are stored in the database."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,8 +26,8 @@ Populates the instance of a SessionsSettings with the current client user's pers
 ```
 
 ## Parameters
-*SessionSettings*
-&emsp;Type: [SessionSettings](sessionsettings-data-type.md)
+*SessionSettings*  
+&emsp;Type: [SessionSettings](sessionsettings-data-type.md)  
 An instance of the [SessionSettings](sessionsettings-data-type.md) data type.
 
 

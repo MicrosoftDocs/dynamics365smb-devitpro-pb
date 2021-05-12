@@ -1,8 +1,9 @@
 ---
 title: "Report.SaveAsExcel Method"
+description: "Saves a report on the computer that is running the server as a Microsoft Excel (.xls) workbook."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -40,8 +41,8 @@ Specifies which record to use in the report. Any filters that have been applied 
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

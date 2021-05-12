@@ -1,8 +1,9 @@
 ---
 title: "Blob.Length Method"
+description: "Returns the number of bytes in the binary large object (BLOB)."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,13 +28,13 @@ Length :=   Blob.Length()
 > This method can be invoked using property access syntax.
 
 ## Parameters
-*Blob*
-&emsp;Type: [Blob](blob-data-type.md)
+*Blob*  
+&emsp;Type: [Blob](blob-data-type.md)  
 An instance of the [Blob](blob-data-type.md) data type.
 
 ## Return Value
-*Length*
-&emsp;Type: [Integer](../integer/integer-data-type.md)
+*Length*  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 The number of bytes in the binary large object (BLOB).
 
 

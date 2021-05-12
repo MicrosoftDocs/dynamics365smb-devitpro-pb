@@ -1,8 +1,9 @@
 ---
 title: "List.Set Method"
+description: "Sets the element at the specified index."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Sets the element at the specified index.
 [Ok := ]  List.Set(Index: Integer, NewValue: T)
 ```
 ## Parameters
-*List*
-&emsp;Type: [List](list-data-type.md)
+*List*  
+&emsp;Type: [List](list-data-type.md)  
 An instance of the [List](list-data-type.md) data type.
 
 *Index*  
@@ -37,8 +38,8 @@ The new value associated with the specified index.
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the index was within the valid range, **false** otherwise. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

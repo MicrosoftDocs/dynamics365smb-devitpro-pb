@@ -1,8 +1,9 @@
 ---
 title: "TestField.ShowMandatory Method"
+description: "Gets the ShowMandatory state for the field."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,13 +26,13 @@ Result :=   TestField.ShowMandatory()
 ```
 
 ## Parameters
-*TestField*
-&emsp;Type: [TestField](testfield-data-type.md)
+*TestField*  
+&emsp;Type: [TestField](testfield-data-type.md)  
 An instance of the [TestField](testfield-data-type.md) data type.
 
 ## Return Value
-*Result*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Result*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 The ShowMandatory state for the field.
 
 

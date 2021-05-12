@@ -1,8 +1,9 @@
 ---
 title: "System.WorkDate Method"
+description: "Gets and sets the work date for the current session."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -32,8 +33,8 @@ The new work date you want to set.
 
 
 ## Return Value
-*WorkDate*
-&emsp;Type: [Date](../date/date-data-type.md)
+*WorkDate*  
+&emsp;Type: [Date](../date/date-data-type.md)  
 
 
 

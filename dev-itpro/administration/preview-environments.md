@@ -52,7 +52,7 @@ Once you have joined the preview engagement, you can submit your feedback by fil
 
 ## See also
 
-[Major Updates of Business Central Online](update-rollout-timelime.md)  
+[Major Updates of Business Central Online](update-rollout-timeline.md)  
 [Managing Major and Minor Updates of Business Central Online](tenant-admin-center-update-management.md)  
 [Working with Administration Tools](administration.md)  
 [The Business Central Administration Center](tenant-admin-center.md)  

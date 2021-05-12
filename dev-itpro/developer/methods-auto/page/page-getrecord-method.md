@@ -1,8 +1,9 @@
 ---
 title: "Page.GetRecord Method"
+description: "Gets the current record of the page."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Gets the current record of the page.
  Page.GetRecord(var Record: Record)
 ```
 ## Parameters
-*Page*
-&emsp;Type: [Page](page-data-type.md)
+*Page*  
+&emsp;Type: [Page](page-data-type.md)  
 An instance of the [Page](page-data-type.md) data type.
 
 *Record*  

@@ -1,8 +1,9 @@
 ---
 title: "JsonToken.Clone Method"
+description: "Creates a deep-copy of the JsonToken value."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,13 +26,13 @@ Clone :=   JsonToken.Clone()
 ```
 
 ## Parameters
-*JsonToken*
-&emsp;Type: [JsonToken](jsontoken-data-type.md)
+*JsonToken*  
+&emsp;Type: [JsonToken](jsontoken-data-type.md)  
 An instance of the [JsonToken](jsontoken-data-type.md) data type.
 
 ## Return Value
-*Clone*
-&emsp;Type: [JsonToken](jsontoken-data-type.md)
+*Clone*  
+&emsp;Type: [JsonToken](jsontoken-data-type.md)  
 The Result will be a full, deep-copy of the Value.
 
 

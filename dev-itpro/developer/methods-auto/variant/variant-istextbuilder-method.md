@@ -1,8 +1,9 @@
 ---
 title: "Variant.IsTextBuilder Method"
+description: "Indicates whether an AL variant contains a TextBuilder variable."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,13 +28,13 @@ Ok :=   Variant.IsTextBuilder()
 > This method can be invoked using property access syntax.
 
 ## Parameters
-*Variant*
-&emsp;Type: [Variant](variant-data-type.md)
+*Variant*  
+&emsp;Type: [Variant](variant-data-type.md)  
 An instance of the [Variant](variant-data-type.md) data type.
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the AL variant contains a TextBuilder variable, otherwise **false**.
 
 

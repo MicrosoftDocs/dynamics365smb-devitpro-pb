@@ -1,8 +1,9 @@
 ---
 title: "System.Randomize Method"
+description: "Generates a set of random numbers from which the RANDOM method (Integer) will select a random number."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

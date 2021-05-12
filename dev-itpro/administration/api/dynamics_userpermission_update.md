@@ -1,5 +1,5 @@
 ---
-title: Update userPermission | Microsoft Docs
+title: Update userPermission
 description: Updates an  user permission object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

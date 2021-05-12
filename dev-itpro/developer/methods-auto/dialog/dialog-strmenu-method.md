@@ -1,8 +1,9 @@
 ---
 title: "Dialog.StrMenu Method"
+description: "Creates a menu window that displays a series of options."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -40,8 +41,8 @@ Use this optional parameter to add a description to the option values.
 
 
 ## Return Value
-*OptionNumber*
-&emsp;Type: [Integer](../integer/integer-data-type.md)
+*OptionNumber*  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 The number of the menu option that the user selected. If the user presses the Esc key to exit the menu, zero (0) is returned.
 
 

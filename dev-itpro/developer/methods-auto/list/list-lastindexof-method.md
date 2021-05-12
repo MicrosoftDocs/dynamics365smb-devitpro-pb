@@ -1,8 +1,9 @@
 ---
 title: "List.LastIndexOf Method"
+description: "Searches for the specified value and returns the one-based index of the last occurrence within the entire List."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Searches for the specified value and returns the one-based index of the last occ
 Index :=   List.LastIndexOf(Value: T)
 ```
 ## Parameters
-*List*
-&emsp;Type: [List](list-data-type.md)
+*List*  
+&emsp;Type: [List](list-data-type.md)  
 An instance of the [List](list-data-type.md) data type.
 
 *Value*  
@@ -34,8 +35,8 @@ The value to locate in the List.
 
 
 ## Return Value
-*Index*
-&emsp;Type: [Integer](../integer/integer-data-type.md)
+*Index*  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 The one-based index at which the value is found or 0 if the value does not exist in the List.
 
 

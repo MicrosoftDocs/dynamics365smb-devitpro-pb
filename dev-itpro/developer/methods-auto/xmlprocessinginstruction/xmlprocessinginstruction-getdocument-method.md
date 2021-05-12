@@ -1,8 +1,9 @@
 ---
 title: "XmlProcessingInstruction.GetDocument Method"
+description: "Gets the XmlDocument for this node."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Gets the XmlDocument for this node.
 [Ok := ]  XmlProcessingInstruction.GetDocument(var Document: XmlDocument)
 ```
 ## Parameters
-*XmlProcessingInstruction*
-&emsp;Type: [XmlProcessingInstruction](xmlprocessinginstruction-data-type.md)
+*XmlProcessingInstruction*  
+&emsp;Type: [XmlProcessingInstruction](xmlprocessinginstruction-data-type.md)  
 An instance of the [XmlProcessingInstruction](xmlprocessinginstruction-data-type.md) data type.
 
 *Document*  
@@ -34,8 +35,8 @@ The owning XmlDocument of this node.
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

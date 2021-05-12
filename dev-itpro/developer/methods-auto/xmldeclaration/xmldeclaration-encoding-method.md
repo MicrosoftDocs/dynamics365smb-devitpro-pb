@@ -1,8 +1,9 @@
 ---
 title: "XmlDeclaration.Encoding Method"
+description: "Gets or sets the encoding of the XML document."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,8 +27,8 @@ Gets or sets the encoding of the XML document.
 > [!NOTE]
 > This method can be invoked using property access syntax.
 ## Parameters
-*XmlDeclaration*
-&emsp;Type: [XmlDeclaration](xmldeclaration-data-type.md)
+*XmlDeclaration*  
+&emsp;Type: [XmlDeclaration](xmldeclaration-data-type.md)  
 An instance of the [XmlDeclaration](xmldeclaration-data-type.md) data type.
 
 *NewValue*  
@@ -36,8 +37,8 @@ The new value for the encoding of the XML document.
 
 
 ## Return Value
-*Value*
-&emsp;Type: [String](../string/string-data-type.md)
+*Value*  
+&emsp;Type: [String](../string/string-data-type.md)  
 The encoding of the XML document.
 
 

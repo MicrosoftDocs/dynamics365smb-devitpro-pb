@@ -1,8 +1,9 @@
 ---
 title: "RecordRef.CurrentKey Method"
+description: "Gets the current key of the table referred to by the RecordRef. The current key is returned as a string."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,13 +28,13 @@ CurrentKey :=   RecordRef.CurrentKey()
 > This method can be invoked using property access syntax.
 
 ## Parameters
-*RecordRef*
-&emsp;Type: [RecordRef](recordref-data-type.md)
+*RecordRef*  
+&emsp;Type: [RecordRef](recordref-data-type.md)  
 An instance of the [RecordRef](recordref-data-type.md) data type.
 
 ## Return Value
-*CurrentKey*
-&emsp;Type: [String](../string/string-data-type.md)
+*CurrentKey*  
+&emsp;Type: [String](../string/string-data-type.md)  
 The name of the current key of the record.
 
 

@@ -1,8 +1,9 @@
 ---
 title: "TestRequestPage.Print Method"
+description: "Gets a the Print representing an action on the Page under Test."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,13 +26,13 @@ Action :=   TestRequestPage.Print()
 ```
 
 ## Parameters
-*TestRequestPage*
-&emsp;Type: [TestRequestPage](testrequestpage-data-type.md)
+*TestRequestPage*  
+&emsp;Type: [TestRequestPage](testrequestpage-data-type.md)  
 An instance of the [TestRequestPage](testrequestpage-data-type.md) data type.
 
 ## Return Value
-*Action*
-&emsp;Type: [TestAction](../testaction/testaction-data-type.md)
+*Action*  
+&emsp;Type: [TestAction](../testaction/testaction-data-type.md)  
 TestAction representing an action on the Page under Test.
 
 

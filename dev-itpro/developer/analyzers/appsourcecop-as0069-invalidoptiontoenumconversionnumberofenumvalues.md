@@ -1,8 +1,8 @@
 ---
-title: "An enum field replacing an option field should have at least the same number of members."
+title: "AppSourceCop Rule AS0069"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

@@ -1,8 +1,9 @@
 ---
 title: "JsonToken.IsValue Method"
+description: "Indicates whether a JsonToken contains a JSON value."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,13 +28,13 @@ Ok :=   JsonToken.IsValue()
 > This method can be invoked using property access syntax.
 
 ## Parameters
-*JsonToken*
-&emsp;Type: [JsonToken](jsontoken-data-type.md)
+*JsonToken*  
+&emsp;Type: [JsonToken](jsontoken-data-type.md)  
 An instance of the [JsonToken](jsontoken-data-type.md) data type.
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the JsonToken represents a JSON value; otherwise, **false**.
 
 

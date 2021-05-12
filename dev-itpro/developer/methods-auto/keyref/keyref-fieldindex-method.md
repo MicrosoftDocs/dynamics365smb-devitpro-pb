@@ -1,8 +1,9 @@
 ---
 title: "KeyRef.FieldIndex Method"
+description: "Gets the FieldRef of the field that has this index in the key referred to by the KeyRef variable. Returns an error if no key is selected."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Gets the FieldRef of the field that has this index in the key referred to by the
 Field :=   KeyRef.FieldIndex(Index: Integer)
 ```
 ## Parameters
-*KeyRef*
-&emsp;Type: [KeyRef](keyref-data-type.md)
+*KeyRef*  
+&emsp;Type: [KeyRef](keyref-data-type.md)  
 An instance of the [KeyRef](keyref-data-type.md) data type.
 
 *Index*  
@@ -34,8 +35,8 @@ The input index.
 
 
 ## Return Value
-*Field*
-&emsp;Type: [FieldRef](../fieldref/fieldref-data-type.md)
+*Field*  
+&emsp;Type: [FieldRef](../fieldref/fieldref-data-type.md)  
 The FieldRef that refers to the field with this index in the key.
 
 

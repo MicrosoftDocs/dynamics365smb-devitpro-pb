@@ -1,5 +1,5 @@
 ---
-title: Get userPermission | Microsoft Docs
+title: Get userPermission
 description: Gets an user permission object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

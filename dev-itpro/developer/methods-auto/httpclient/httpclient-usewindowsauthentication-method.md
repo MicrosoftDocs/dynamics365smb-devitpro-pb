@@ -1,8 +1,9 @@
 ---
 title: "HttpClient.UseWindowsAuthentication Method"
+description: "Sets the HttpClient credentials to use the specified network credentials for Windows authentication. If this method is invoked after any HTTP request has started; a runtime error occurs."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,8 +27,8 @@ Sets the HttpClient credentials to use the specified network credentials for Win
 [Result := ]  HttpClient.UseWindowsAuthentication(UserName: String, Password: String [, Domain: String])
 ```
 ## Parameters
-*HttpClient*
-&emsp;Type: [HttpClient](httpclient-data-type.md)
+*HttpClient*  
+&emsp;Type: [HttpClient](httpclient-data-type.md)  
 An instance of the [HttpClient](httpclient-data-type.md) data type.
 
 *UserName*  
@@ -42,8 +43,8 @@ The user's domain.
 
 
 ## Return Value
-*Result*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Result*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

@@ -1,8 +1,9 @@
 ---
 title: "Date Data Type"
+description: "Denotes a date ranging from January 1, 1753 to December 31, 9999."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

@@ -1,8 +1,9 @@
 ---
 title: "FilterPageBuilder.Name Method"
+description: "Gets the name of a table filter control that is included on a filter page based on an index number that is assigned to the filter control."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Gets the name of a table filter control that is included on a filter page based 
 Name :=   FilterPageBuilder.Name(Index: Integer)
 ```
 ## Parameters
-*FilterPageBuilder*
-&emsp;Type: [FilterPageBuilder](filterpagebuilder-data-type.md)
+*FilterPageBuilder*  
+&emsp;Type: [FilterPageBuilder](filterpagebuilder-data-type.md)  
 An instance of the [FilterPageBuilder](filterpagebuilder-data-type.md) data type.
 
 *Index*  
@@ -34,8 +35,8 @@ The index of a filter control. The value must be in the range 1 to N, where N is
 
 
 ## Return Value
-*Name*
-&emsp;Type: [String](../string/string-data-type.md)
+*Name*  
+&emsp;Type: [String](../string/string-data-type.md)  
 The name of the filter control.
 
 

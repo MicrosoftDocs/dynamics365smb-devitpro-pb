@@ -1,8 +1,9 @@
 ---
 title: "Report.TotalsCausedBy Method"
+description: "Determines which field caused a group total to be calculated. This determines which field changed contents and thereby concluded a group."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,13 +26,13 @@ FieldNo :=   Report.TotalsCausedBy()
 ```
 
 ## Parameters
-*Report*
-&emsp;Type: [Report](report-data-type.md)
+*Report*  
+&emsp;Type: [Report](report-data-type.md)  
 An instance of the [Report](report-data-type.md) data type.
 
 ## Return Value
-*FieldNo*
-&emsp;Type: [Integer](../integer/integer-data-type.md)
+*FieldNo*  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 The number of the field that caused the group to end and a group total to be calculated.
 
 

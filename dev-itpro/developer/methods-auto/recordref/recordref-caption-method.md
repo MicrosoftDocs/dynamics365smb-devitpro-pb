@@ -1,8 +1,9 @@
 ---
 title: "RecordRef.Caption Method"
+description: "Gets the caption of the table that is currently selected. Returns an error if no table is selected."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,13 +28,13 @@ Caption :=   RecordRef.Caption()
 > This method can be invoked using property access syntax.
 
 ## Parameters
-*RecordRef*
-&emsp;Type: [RecordRef](recordref-data-type.md)
+*RecordRef*  
+&emsp;Type: [RecordRef](recordref-data-type.md)  
 An instance of the [RecordRef](recordref-data-type.md) data type.
 
 ## Return Value
-*Caption*
-&emsp;Type: [String](../string/string-data-type.md)
+*Caption*  
+&emsp;Type: [String](../string/string-data-type.md)  
 The caption of the table.
 
 

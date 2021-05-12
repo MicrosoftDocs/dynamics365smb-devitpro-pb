@@ -1,8 +1,9 @@
 ---
 title: "List.Contains Method"
+description: "Determines whether an element is in the List."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Determines whether an element is in the List.
 Result :=   List.Contains(Value: T)
 ```
 ## Parameters
-*List*
-&emsp;Type: [List](list-data-type.md)
+*List*  
+&emsp;Type: [List](list-data-type.md)  
 An instance of the [List](list-data-type.md) data type.
 
 *Value*  
@@ -34,8 +35,8 @@ The value to locate in the List.
 
 
 ## Return Value
-*Result*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Result*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the List contains the value, otherwise **false**.
 
 

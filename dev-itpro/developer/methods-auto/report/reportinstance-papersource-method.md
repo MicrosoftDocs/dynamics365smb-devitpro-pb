@@ -1,8 +1,9 @@
 ---
 title: "Report.PaperSource Method"
+description: "Gets or sets the paper source used for the current page or a specified page."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Gets or sets the paper source used for the current page or a specified page.
  Report.PaperSource(PaperBinNo: Integer [, PhysicalPage: Integer])
 ```
 ## Parameters
-*Report*
-&emsp;Type: [Report](report-data-type.md)
+*Report*  
+&emsp;Type: [Report](report-data-type.md)  
 An instance of the [Report](report-data-type.md) data type.
 
 *PaperBinNo*  

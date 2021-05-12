@@ -1,8 +1,9 @@
 ---
 title: "KeyRef.FieldCount Method"
+description: "Gets the number of fields that have been defined in a key. Returns an error if no key is selected."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,13 +28,13 @@ No :=   KeyRef.FieldCount()
 > This method can be invoked using property access syntax.
 
 ## Parameters
-*KeyRef*
-&emsp;Type: [KeyRef](keyref-data-type.md)
+*KeyRef*  
+&emsp;Type: [KeyRef](keyref-data-type.md)  
 An instance of the [KeyRef](keyref-data-type.md) data type.
 
 ## Return Value
-*No*
-&emsp;Type: [Integer](../integer/integer-data-type.md)
+*No*  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 The number of fields that have been defined in the key.
 
 

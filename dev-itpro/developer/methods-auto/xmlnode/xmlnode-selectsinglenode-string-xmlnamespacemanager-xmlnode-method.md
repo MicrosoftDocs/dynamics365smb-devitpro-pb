@@ -1,8 +1,9 @@
 ---
 title: "XmlNode.SelectSingleNode Method"
+description: "Selects the first XmlNode that matches the XPath expression."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Selects the first XmlNode that matches the XPath expression.
 [Ok := ]  XmlNode.SelectSingleNode(XPath: String, NamespaceManager: XmlNamespaceManager, var Node: XmlNode)
 ```
 ## Parameters
-*XmlNode*
-&emsp;Type: [XmlNode](xmlnode-data-type.md)
+*XmlNode*  
+&emsp;Type: [XmlNode](xmlnode-data-type.md)  
 An instance of the [XmlNode](xmlnode-data-type.md) data type.
 
 *XPath*  
@@ -42,8 +43,8 @@ The first XmlNode that matches the XPath query.
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

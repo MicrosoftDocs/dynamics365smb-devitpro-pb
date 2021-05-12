@@ -1,8 +1,9 @@
 ---
 title: "TestPage.Last Method"
+description: "Sets the current row of the test page as the last row in the data set."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,13 +26,13 @@ Sets the current row of the test page as the last row in the data set.
 ```
 
 ## Parameters
-*TestPage*
-&emsp;Type: [TestPage](testpage-data-type.md)
+*TestPage*  
+&emsp;Type: [TestPage](testpage-data-type.md)  
 An instance of the [TestPage](testpage-data-type.md) data type.
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the current row has changed, otherwise **false**.
 
 
@@ -40,7 +41,7 @@ An instance of the [TestPage](testpage-data-type.md) data type.
 ## Remarks  
 If *TestPage* is closed or has never been opened, then the method call fails.  
 
-The Last method loops over all records until it sets  the identifies the current record.  For each record, the [OnAfterGetCurrentRecord Trigger](../../triggers/devenv-onaftergetcurrrecord-trigger.md) is executed.  
+The Last method loops over all records until it sets  the identifies the current record.  For each record, the [OnAfterGetCurrRecord Trigger](../../triggers-auto/page/devenv-onaftergetcurrrecord-page-trigger.md) is executed.  
   
 ## Example  
  This example sets the current row to the last customer in the dataset. It requires that you create a TestPage variable named CustomerList with a Subtype of Customer List.  

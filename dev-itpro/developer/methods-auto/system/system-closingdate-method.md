@@ -1,8 +1,9 @@
 ---
 title: "System.ClosingDate Method"
+description: "Gets the closing date for a Date Data Type."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -32,8 +33,8 @@ The input date.
 
 
 ## Return Value
-*ClosingDate*
-&emsp;Type: [Date](../date/date-data-type.md)
+*ClosingDate*  
+&emsp;Type: [Date](../date/date-data-type.md)  
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: Create userGroupMember | Microsoft Docs
+title: Create userGroupMember
 description: Creates an user group member object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

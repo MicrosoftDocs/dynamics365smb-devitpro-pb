@@ -1,8 +1,9 @@
 ---
 title: "Report.PrintOnlyIfDetail Method"
+description: "Gets or sets the current settings of the PrintOnlyIfDetail property."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,8 +29,8 @@ Gets or sets the current settings of the PrintOnlyIfDetail property.
 > [!NOTE]
 > This method can be invoked using property access syntax.
 ## Parameters
-*Report*
-&emsp;Type: [Report](report-data-type.md)
+*Report*  
+&emsp;Type: [Report](report-data-type.md)  
 An instance of the [Report](report-data-type.md) data type.
 
 *SetPrintOnlyIfDetail*  
@@ -38,8 +39,8 @@ The new setting of PrintOnlyIfDetail property.
 
 
 ## Return Value
-*IsPrintOnlyIfDetail*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*IsPrintOnlyIfDetail*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 The current settings of the PrintOnlyIfDetail property.
 
 

@@ -1,8 +1,9 @@
 ---
 title: "ErrorInfo.Message Method"
+description: "Specifies the message that will be sent to telemetry. For a 'Client' error type, the message will also be appear in the client."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,8 +27,8 @@ Specifies the message that will be sent to telemetry. For a 'Client' error type,
 > [!NOTE]
 > This method can be invoked using property access syntax.
 ## Parameters
-*ErrorInfo*
-&emsp;Type: [ErrorInfo](errorinfo-data-type.md)
+*ErrorInfo*  
+&emsp;Type: [ErrorInfo](errorinfo-data-type.md)  
 An instance of the [ErrorInfo](errorinfo-data-type.md) data type.
 
 *Message*  
@@ -36,8 +37,8 @@ The message of the the ErrorInfo
 
 
 ## Return Value
-*Message*
-&emsp;Type: [String](../string/string-data-type.md)
+*Message*  
+&emsp;Type: [String](../string/string-data-type.md)  
 The current message of the ErrorInfo.
 
 

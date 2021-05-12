@@ -1,8 +1,9 @@
 ---
 title: "XmlElement.Attributes Method"
+description: "Gets a collection of the attributes of this element."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,13 +26,13 @@ Attributes :=   XmlElement.Attributes()
 ```
 
 ## Parameters
-*XmlElement*
-&emsp;Type: [XmlElement](xmlelement-data-type.md)
+*XmlElement*  
+&emsp;Type: [XmlElement](xmlelement-data-type.md)  
 An instance of the [XmlElement](xmlelement-data-type.md) data type.
 
 ## Return Value
-*Attributes*
-&emsp;Type: [XmlAttributeCollection](../xmlattributecollection/xmlattributecollection-data-type.md)
+*Attributes*  
+&emsp;Type: [XmlAttributeCollection](../xmlattributecollection/xmlattributecollection-data-type.md)  
 The attributes of this element.
 
 

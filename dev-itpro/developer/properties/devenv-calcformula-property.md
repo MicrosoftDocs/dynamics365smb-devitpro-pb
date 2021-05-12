@@ -2,7 +2,7 @@
 title: "CalcFormula Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,11 +17,11 @@ author: SusanneWindfeldPedersen
 > **Version**: _Available or changed with runtime version 1.0._
 
 Sets the Calculation formula for a FlowField.
-The following syntax is valid for the CalculationFormula property:
+The following syntax is valid for the CalcFormula property:
 
 ```
-CalculationFormula =
-Exist(<DestinationTable> [WHERE (<TableFilters>)]) |
+CalcFormula =
+[-]Exist(<DestinationTable> [WHERE (<TableFilters>)]) |
 Count(<DestinationTable> [WHERE (<TableFilters>)]) |
 [-]Sum(<DestinationTable>.<DestinationFieldName> [WHERE(<TableFilters>)])|
 [-]Average(<DestinationTable>.<DestinationFieldName> [WHERE(<TableFilters>)]) |

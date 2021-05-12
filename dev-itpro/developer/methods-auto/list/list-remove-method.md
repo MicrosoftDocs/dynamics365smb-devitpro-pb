@@ -1,8 +1,9 @@
 ---
 title: "List.Remove Method"
+description: "Removes the first occurrence of a specified value from the List."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Removes the first occurrence of a specified value from the List.
 [Removed := ]  List.Remove(Value: T)
 ```
 ## Parameters
-*List*
-&emsp;Type: [List](list-data-type.md)
+*List*  
+&emsp;Type: [List](list-data-type.md)  
 An instance of the [List](list-data-type.md) data type.
 
 *Value*  
@@ -34,8 +35,8 @@ The value to remove from the List.
 
 
 ## Return Value
-*Removed*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Removed*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if item is successfully removed; otherwise, **false**. This method also returns **false** if item was not found in the List.
 
 

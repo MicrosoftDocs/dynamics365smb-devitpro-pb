@@ -1,8 +1,9 @@
 ---
 title: "HttpResponseMessage.ReasonPhrase Method"
+description: "Gets the reason phrase which typically is sent by servers together with the status code."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,13 +28,13 @@ ReasonPhrase :=   HttpResponseMessage.ReasonPhrase()
 > This method can be invoked using property access syntax.
 
 ## Parameters
-*HttpResponseMessage*
-&emsp;Type: [HttpResponseMessage](httpresponsemessage-data-type.md)
+*HttpResponseMessage*  
+&emsp;Type: [HttpResponseMessage](httpresponsemessage-data-type.md)  
 An instance of the [HttpResponseMessage](httpresponsemessage-data-type.md) data type.
 
 ## Return Value
-*ReasonPhrase*
-&emsp;Type: [String](../string/string-data-type.md)
+*ReasonPhrase*  
+&emsp;Type: [String](../string/string-data-type.md)  
 The reason phrase sent by the server.
 
 

@@ -1,8 +1,9 @@
 ---
 title: "TestRequestPage.GetValidationError Method"
+description: "Gets the validation error that occurred on a test page."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Gets the validation error that occurred on a test page.
 Error :=   TestRequestPage.GetValidationError([Index: Integer])
 ```
 ## Parameters
-*TestRequestPage*
-&emsp;Type: [TestRequestPage](testrequestpage-data-type.md)
+*TestRequestPage*  
+&emsp;Type: [TestRequestPage](testrequestpage-data-type.md)  
 An instance of the [TestRequestPage](testrequestpage-data-type.md) data type.
 
 *Index*  
@@ -34,8 +35,8 @@ The index of the validation error that occurred on the test page.
 
 
 ## Return Value
-*Error*
-&emsp;Type: [String](../string/string-data-type.md)
+*Error*  
+&emsp;Type: [String](../string/string-data-type.md)  
 The validation error that occured at the specified index.
 
 

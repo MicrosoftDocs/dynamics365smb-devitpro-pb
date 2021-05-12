@@ -1,8 +1,8 @@
 ---
-title: "Fields of field class 'Normal' must use the DataClassification property and its value should be different from ToBeClassified"
+title: "AppSourceCop Rule AS0016"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/15/2021
+ms.date: 05/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

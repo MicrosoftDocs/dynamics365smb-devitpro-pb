@@ -1,8 +1,9 @@
 ---
 title: "RecordRef.GetPosition Method"
+description: "Gets a string that contains the primary key of the current record."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Gets a string that contains the primary key of the current record.
 String :=   RecordRef.GetPosition([UseNames: Boolean])
 ```
 ## Parameters
-*RecordRef*
-&emsp;Type: [RecordRef](recordref-data-type.md)
+*RecordRef*  
+&emsp;Type: [RecordRef](recordref-data-type.md)  
 An instance of the [RecordRef](recordref-data-type.md) data type.
 
 *UseNames*  
@@ -34,8 +35,8 @@ Indicates whether a reference to the field caption or the field number should be
 
 
 ## Return Value
-*String*
-&emsp;Type: [String](../string/string-data-type.md)
+*String*  
+&emsp;Type: [String](../string/string-data-type.md)  
 The name or number of the field that contains the primary key.
 
 

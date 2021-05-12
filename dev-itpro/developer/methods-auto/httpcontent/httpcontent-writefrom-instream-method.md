@@ -1,8 +1,9 @@
 ---
 title: "HttpContent.WriteFrom Method"
+description: "Sets HttpContent content to the provided text or stream."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Sets HttpContent content to the provided text or stream.
  HttpContent.WriteFrom(InStream: InStream)
 ```
 ## Parameters
-*HttpContent*
-&emsp;Type: [HttpContent](httpcontent-data-type.md)
+*HttpContent*  
+&emsp;Type: [HttpContent](httpcontent-data-type.md)  
 An instance of the [HttpContent](httpcontent-data-type.md) data type.
 
 *InStream*  

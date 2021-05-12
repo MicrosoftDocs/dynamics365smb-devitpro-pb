@@ -1,8 +1,9 @@
 ---
 title: "TestFilter.SetCurrentKey Method"
+description: "Sets the specified fields in a data set on a test page as the current key."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Sets the specified fields in a data set on a test page as the current key.
 [Ok := ]  TestFilter.SetCurrentKey(Field1: TestFilterField [, Field2: TestFilterField,...])
 ```
 ## Parameters
-*TestFilter*
-&emsp;Type: [TestFilter](testfilter-data-type.md)
+*TestFilter*  
+&emsp;Type: [TestFilter](testfilter-data-type.md)  
 An instance of the [TestFilter](testfilter-data-type.md) data type.
 
 *Field1*  
@@ -39,8 +40,8 @@ Additional field that you want to set as the current key. This parameter is opti
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

@@ -69,7 +69,7 @@ This section describes the processes that are initiated during and after upgrade
 
 - **T+1 – T+30**: Microsoft alerts administrators, resellers, and ISVs
 
-    Shortly after a service update of [!INCLUDE [prod_short](includes/prod_short.md)] online (Day **T**), Microsoft will initiate daily updates attempts on all tenants. In these update attempts, the publisher's provided upgrade code is triggered and run. These attempts run repeatedly in a time frame of approximately one month until the upgrade is successful. For more information, see [Major Updates of Business Central Online](../administration/update-rollout-timelime.md).  
+    Shortly after a service update of [!INCLUDE [prod_short](includes/prod_short.md)] online (Day **T**), Microsoft will initiate daily updates attempts on all tenants. In these update attempts, the publisher's provided upgrade code is triggered and run. These attempts run repeatedly in a time frame of approximately one month until the upgrade is successful. For more information, see [Major Updates of Business Central Online](../administration/update-rollout-timeline.md).  
 
     With every unsuccessful upgrade attempt, stakeholders will receive notifications. Customers and their reselling partners can follow these notifications in the [!INCLUDE [prodadmincenter](includes/prodadmincenter.md)].  
 

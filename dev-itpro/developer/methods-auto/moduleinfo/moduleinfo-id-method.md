@@ -1,8 +1,9 @@
 ---
 title: "ModuleInfo.Id Method"
+description: "Gets the ID of the specified application."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,13 +28,13 @@ Id :=   ModuleInfo.Id()
 > This method can be invoked using property access syntax.
 
 ## Parameters
-*ModuleInfo*
-&emsp;Type: [ModuleInfo](moduleinfo-data-type.md)
+*ModuleInfo*  
+&emsp;Type: [ModuleInfo](moduleinfo-data-type.md)  
 An instance of the [ModuleInfo](moduleinfo-data-type.md) data type.
 
 ## Return Value
-*Id*
-&emsp;Type: [Guid](../guid/guid-data-type.md)
+*Id*  
+&emsp;Type: [Guid](../guid/guid-data-type.md)  
 The ID of the specified application.
 
 

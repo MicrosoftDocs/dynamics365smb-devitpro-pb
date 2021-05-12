@@ -1,8 +1,9 @@
 ---
 title: "JsonToken.WriteTo Method"
+description: "Serializes and writes the JSON data of the JsonToken to a given Text object."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Serializes and writes the JSON data of the JsonToken to a given Text object.
 [Ok := ]  JsonToken.WriteTo(var String: Text)
 ```
 ## Parameters
-*JsonToken*
-&emsp;Type: [JsonToken](jsontoken-data-type.md)
+*JsonToken*  
+&emsp;Type: [JsonToken](jsontoken-data-type.md)  
 An instance of the [JsonToken](jsontoken-data-type.md) data type.
 
 *String*  
@@ -34,8 +35,8 @@ The Text object to which the JSON data will be read.
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the read was successful; otherwise, **false**.  If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
