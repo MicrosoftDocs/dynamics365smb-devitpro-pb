@@ -82,6 +82,8 @@ The following tables list the IDs of [!INCLUDE[prod_short](../developer/includes
 | LC0023 | Extension Lifecycle | [Extension failed to update: {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})](telemetry-extension-lifecycle-trace.md#updatedfailed) |
 |LC0024|Table Index Lifecycle|[Index enabled: {tableName}](telemetry-table-index-trace.md#enabled)|
 |LC0025|Table Index Lifecycle|[Index disabled: {tableName}](telemetry-table-index-trace.md#disabled)|
+| LC0026 | Extension Lifecycle | [Dependent Extension installed successfully: {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})](telemetry-extension-lifecycle-trace.md#dependentinstalledsuccess) |
+| LC0027 | Extension Lifecycle | [Dependent extension un-installed successfully: {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})](telemetry-extension-lifecycle-trace.md#dependentunistalled) |
 
 ## Runtime events
 

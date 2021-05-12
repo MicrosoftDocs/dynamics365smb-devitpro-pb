@@ -8,7 +8,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 04/01/2021
+ms.date: 05/12/2021
 ms.author: jswymer
 ---
 # Analyzing Extension Lifecycle Trace Telemetry
@@ -84,25 +84,34 @@ Occurs when an extension compiles successfully on the service. An extension comp
 
 |Dimension|Description or value|
 |---------|-----|
-| aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
-|component|**Dynamics 365 Business Central Server**.|
-|componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
-|deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
-| environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 | eventId|**LC0020**|
 |extensionCompilationDependencyList|Specifies details about the extensions on which the compiled extension has dependencies.<br /><br /> **Note:** If the value exceeds 8000 characters, one or two additional dimensions will be included in the trace to cover the complete dependency list. For more information, see [About Custom Dimensions](telemetry-overview.md#customdimensions).|
 |extensionCompilationResult |**Compilation succeeded without errors or warnings.**|
 | extensionName|Specifies the name of the extension that was compiled.|
-| extensionId|Specifies the AppID of the extension that was compiled.|
+| extensionId|Specifies the ID of the extension that was compiled.|
 | extensionPublishedAs|Specifies whether the compiled extension was published as one of the following options:<ul><li>**Dev** - published from the AL development environment.</li><li>**Global** - published to the global scope.</li><li>**Tenant** - published to the tenant scope.</li></ul>|
 | extensionPublisher|Specifies the extension's publisher.|
-| extensionScope|Specifies whether the extension was published to one of the following scopes:<ul><li>**Global** - the extension can be installed on all tenants connected the service instance. </li><li>**Tenant** - the extension can only be installed on the tenant to which it was published.</li></ul>.|
+| extensionScope|Specifies whether the extension was published to one of the following scopes:<ul><li>**Global** - the extension can be installed on all tenants connected the service instance. </li><li>**Tenant** - the extension can only be installed on the tenant to which it was published.</li></ul>|
 | extensionVersion|Specifies the version of the compiled extension.|
 | result|**Success**|
 | serverExecutionTime|Specifies the amount of time it took the server to complete the request. The time has the format hh:mm:ss.sssssss.|
 | totalTime|Specifies the amount of time it took to process the request. The time has the format hh:mm:ss.sssssss.|
 | telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 
+
+<a name="other"></a>**Common custom dimensions**
+
+The following table explains custom dimensions that are common to all traces. 
+
+|Dimension|Description or value|
+|---------|-----|
+|aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|component|**Dynamics 365 Business Central Server**.|
+|environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
+|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
+|componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
+|deprecatedKeys|A comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
+|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 <!--
 ### Example
 
@@ -124,26 +133,20 @@ Occurs when an extension failed to compile on the service. An extension compiles
 
 |Dimension|Description or value|
 |---------|-----|
-| aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
-|component|**Dynamics 365 Business Central Server**.|
-|componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
-|deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
-| environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 | eventId|**LC0021**|
 |extensionCompilationDependencyList|Specifies details about the extensions on which the compiled extension has dependencies.<br /><br /> **Note:** If the value exceeds 8000 characters, one or two additional dimensions will be included in the trace to cover the complete dependency list. For more information, see [About Custom Dimensions](telemetry-overview.md#customdimensions).|
 |extensionCompilationResult |Specifies details about the error that occurred during compilation.|
 | extensionName|Specifies the name of the extension that failed to compile.|
-| extensionId|Specifies the AppID of the extension that failed to compile.|
+| extensionId|Specifies the ID of the extension that failed to compile.|
 | extensionPublishedAs|Specifies whether the extension was published as one of the following options:<ul><li>**Dev** - published from the AL development environment.</li><li>**Global** - published to the global scope.</li><li>**Tenant** - published to the tenant scope.</li></ul>|
 | extensionPublisher|Specifies the extension's publisher.|
-| extensionScope|Specifies whether the extension was published to one of the following scopes:<ul><li>**Global** - the extension can be installed on all tenants connected the service instance. </li><li>**Tenant** - the extension can only be installed on the tenant to which it was published.</li></ul>.|
+| extensionScope|Specifies whether the extension was published to one of the following scopes:<ul><li>**Global** - the extension can be installed on all tenants connected the service instance. </li><li>**Tenant** - the extension can only be installed on the tenant to which it was published.</li></ul>|
 | extensionVersion|Specifies the version of the compiled extension.|
 |failureReason|Specifies the error that occurred when compiling the extension.|
 | result|**Failure**|
 | serverExecutionTime|Specifies the amount of time it took the server to complete the request. The time has the format hh:mm:ss.sssssss.|
 | totalTime|Specifies the amount of time it took to process the request. The time has the format hh:mm:ss.sssssss.|
-| telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
-
+|[See common custom dimensions](#other)||
 ## <a name="publishedsuccess"></a>Extension published successfully
 
 Occurs when an extension published successfully on the service. <!--For on-premises, an extension is published by running the [Publish-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/publish-navapp) . For online, an extension is published when it's uploaded from the **Extension Management** page in the client.-->
@@ -159,27 +162,21 @@ Occurs when an extension published successfully on the service. <!--For on-premi
 
 |Dimension|Description or value|
 |---------|-----|
-| aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
-|component|**Dynamics 365 Business Central Server**.|
-|componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
-|deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
-|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 |eventId|**LC0014**|
-| extensionId|Specifies the AppID of the extension that was published.|
+| extensionId|Specifies the ID of the extension that was published.|
 | extensionIsRad|Specifies whether the extension that was RAD published. **True** indicates the extension was RAD published. **False** indicates normal publishing. <br /><br />RAD (Rapid Application Development) publishing is done from the AL development environment. RAD publishing is a partial publishing operation that only publishes objects application objects that have changed during development. For more information, see [Working with Rapid Application Development](../developer/devenv-rad-publishing.md).|
 | extensionName|Specifies the name of the extension that published.|
-| extensionId|Specifies the AppID of the extension that published.|
+| extensionId|Specifies the ID of the extension that published.|
 | extensionPublishedAs|Specifies whether the extension was published as one of the following options:<ul><li>**Dev** - published from the AL development environment.</li><li>**Global** - published to the global scope.</li><li>**Tenant** - published to the tenant scope.</li></ul>|
 | extensionPublisher|Specifies the extension's publisher.|
-| extensionScope|Specifies whether the extension was published to one of the following scopes:<ul><li>**Global** - the extension can be installed on all tenants connected the service instance. </li><li>**Tenant** - the extension can only be installed on the tenant to which it was published.</li></ul>.|
+| extensionScope|Specifies whether the extension was published to one of the following scopes:<ul><li>**Global** - the extension can be installed on all tenants connected the service instance. </li><li>**Tenant** - the extension can only be installed on the tenant to which it was published.</li></ul>|
 | extensionVersion|Specifies the version of the published extension.|
 | result|**Success**|
 | serverExecutionTime|Specifies the amount of time it took the server to complete the request. The time has the format hh:mm:ss.sssssss.|
 | sqlExecutes|Specifies the number of SQL statements that the request executed. |
 | sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.|
-| telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 | totalTime|Specifies the amount of time it took to process the request. The time has the format hh:mm:ss.sssssss.|
-
+|[See common custom dimensions](#other)||
 <!--
 ### Example
 
@@ -201,27 +198,22 @@ Occurs when an extension failed publish on the service. <!--For on-premises, an 
 
 |Dimension|Description or value|
 |---------|-----|
-| aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
-|component|**Dynamics 365 Business Central Server**.|
-|componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
-|deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
-|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 |eventId|**LC0015**|
-| extensionId|Specifies the AppID of the extension that was published.|
+| extensionId|Specifies the ID of the extension that was published.|
 | extensionIsRad|Specifies whether the extension that was RAD published. **True** indicates the extension was RAD published. **False** indicates normal publishing. <br /><br />RAD (Rapid Application Development) publishing is done from the AL development environment. RAD publishing only is a partial publishing operation that only publishes objects application objects that have changed during development. For more information, see [Working with Rapid Application Development](../developer/devenv-rad-publishing.md).|
 | extensionName|Specifies the name of the extension that published.|
-| extensionId|Specifies the AppID of the extension that published.|
+| extensionId|Specifies the ID of the extension that published.|
 | extensionPublishedAs|Specifies whether the extension was published as one of the following options:<ul><li>**Dev** - published from the AL development environment.</li><li>**Global** - published to the global scope.</li><li>**Tenant** - published to the tenant scope.</li></ul>|
 | extensionPublisher|Specifies the extension's publisher.|
-| extensionScope|Specifies whether the extension was published to one of the following scopes:<ul><li>**Global** - the extension can be installed on all tenants connected the service instance. </li><li>**Tenant** - the extension can only be installed on the tenant to which it was published.</li></ul>.|
+| extensionScope|Specifies whether the extension was published to one of the following scopes:<ul><li>**Global** - the extension can be installed on all tenants connected the service instance. </li><li>**Tenant** - the extension can only be installed on the tenant to which it was published.</li></ul>|
 | extensionVersion|Specifies the version of the published extension.|
 |failureReason|Specifies the error that occurred when publishing.|
 | result|**Failure**|
 | serverExecutionTime|Specifies the amount of time it took the server to complete the request. The time has the format hh:mm:ss.sssssss.|
 | sqlExecutes|Specifies the number of SQL statements that the request executed. |
 | sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.|
-| telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 | totalTime|Specifies the amount of time it took to process the request. The time has the format hh:mm:ss.sssssss.|
+|[See common custom dimensions](#other)||
 
 ## <a name="unpublishedsuccess"></a>Extension unpublished successfully
 
@@ -238,26 +230,20 @@ Occurs when an extension was unpublished successfully on the service. <!--An ext
 
 |Dimension|Description or value|
 |---------|-----|
-| aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
-|component|**Dynamics 365 Business Central Server**.|
-|componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
-|deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
-|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 |eventId|**LC0018**|
-| extensionId|Specifies the AppID of the extension that was unpublished.|
+| extensionId|Specifies the ID of the extension that was unpublished.|
 | extensionName|Specifies the name of the extension that was unpublished.|
-| extensionId|Specifies the AppID of the extension that was unpublished.|
+| extensionId|Specifies the ID of the extension that was unpublished.|
 | extensionPublishedAs|Specifies whether the extension was published as one of the following options:<ul><li>**Dev** - published from the AL development environment.</li><li>**Global** - published to the global scope.</li><li>**Tenant** - published to the tenant scope.</li></ul>|
 | extensionPublisher|Specifies the extension's publisher.|
-| extensionScope|Specifies whether the extension was published to one of the following scopes:<ul><li>**Global** - the extension can be installed on all tenants connected the service instance. </li><li>**Tenant** - the extension can only be installed on the tenant to which it was published.</li></ul>.|
+| extensionScope|Specifies whether the extension was published to one of the following scopes:<ul><li>**Global** - the extension can be installed on all tenants connected the service instance. </li><li>**Tenant** - the extension can only be installed on the tenant to which it was published.</li></ul>|
 | extensionVersion|Specifies the version of the unpublished extension.|
 | result|**Success**|
 | serverExecutionTime|Specifies the amount of time it took the server to complete the request. The time has the format hh:mm:ss.sssssss.|
 | sqlExecutes|Specifies the number of SQL statements that the request executed. |
 | sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.|
-| telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 | totalTime|Specifies the amount of time it took to process the request. The time has the format hh:mm:ss.sssssss.|
-
+|[See common custom dimensions](#other)||
 <!--
 ### Example
 
@@ -279,26 +265,20 @@ Occurs when an extension fails to unpublish on the service.
 
 |Dimension|Description or value|
 |---------|-----|
-| aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
-|component|**Dynamics 365 Business Central Server**.|
-|componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
-|deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
-|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 |eventId|**LC0019**|
-| extensionId|Specifies the AppID of the extension that failed to unpublish.|
+| extensionId|Specifies the ID of the extension that failed to unpublish.|
 | extensionName|Specifies the name of the extension that failed to unpublish.|
 | extensionPublishedAs|Specifies whether the extension was published as one of the following options:<ul><li>**Dev** - published from the AL development environment.</li><li>**Global** - published to the global scope.</li><li>**Tenant** - published to the tenant scope.</li></ul>|
 | extensionPublisher|Specifies the extension's publisher.|
-| extensionScope|Specifies whether the extension was published to one of the following scopes:<ul><li>**Global** - the extension can be installed on all tenants connected the service instance. </li><li>**Tenant** - the extension can only be installed on the tenant to which it was published.</li></ul>.|
+| extensionScope|Specifies whether the extension was published to one of the following scopes:<ul><li>**Global** - the extension can be installed on all tenants connected the service instance. </li><li>**Tenant** - the extension can only be installed on the tenant to which it was published.</li></ul>|
 | extensionVersion|Specifies the version of the unpublished extension.|
 |failureReason|Specifies the error that occurred when unpublishing.|
 | result|**Failure**|
 | serverExecutionTime|Specifies the amount of time it took the server to complete the request. The time has the format hh:mm:ss.sssssss.|
 | sqlExecutes|Specifies the number of SQL statements that the request executed. |
 | sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.|
-| telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 | totalTime|Specifies the amount of time it took to process the request. The time has the format hh:mm:ss.sssssss.|
-
+|[See common custom dimensions](#other)||
 <!--
 ### Example
 
@@ -323,27 +303,20 @@ Occurs when an extension synchronizes successfully on the tenant.
 
 |Dimension|Description or value|
 |---------|-----|
-| aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
-| component|**Dynamics 365 Business Central Server**.|
-| componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
-| deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
-|environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
-| environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 | eventId|**LC0012**|
-| extensionId|Specifies the AppID of the extension that was synchronized.|
+| extensionId|Specifies the ID of the extension that was synchronized.|
 | extensionName|Specifies the name of the extension that was synchronized.|
 | extensionPublishedAs|Specifies whether the extension was published as one of the following options:<ul><li>**Dev** - published from the AL development environment.</li><li>**Global** - published to the global scope.</li><li>**Tenant** - published to the tenant scope.</li></ul>|
 | extensionPublisher|Specifies the extension's publisher.|
-| extensionScope|Specifies whether the extension was published to one of the following scopes:<ul><li>**Global** - the extension can be installed on all tenants connected the service instance. </li><li>**Tenant** - the extension can only be installed on the tenant to which it was published.</li></ul>.|
+| extensionScope|Specifies whether the extension was published to one of the following scopes:<ul><li>**Global** - the extension can be installed on all tenants connected the service instance. </li><li>**Tenant** - the extension can only be installed on the tenant to which it was published.</li></ul>|
 | extensionSynchronizationMode|Specifies whether the extension was synchronized in one of the following modes:<ul><li>**Add** -  The database schema defined by the objects in the extension are added to the database schema of the tenant database. This mode is typically used mode after you publish an extension for the first time.</li><li>**Clean** - The database schema defined by all versions of the extension will be removed from the database and all data is lost. This mode is typically used when an extension will no longer be used and all versions unpublished. </li><li>**Development** - This mode is acts similar to Add, except it is intended for use during development. It lets you to sync the same version of an extension that is already published. However, to run this mode, only one version the App can be currently published.</li><li>**ForceSync** - This mode like **Add** except it supports destructive schema changes (like removing fields, renaming them, changing their datatypes, and more). It is typically used during development, and is the mode used when an extension is published and installed from the AL development environment.</li></ul> For more information about the modes, see [Sync-NAVApp cmdlet -Mode](/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp).|
 | extensionVersion|Specifies the version of the extension was synchronized.|
 | result|**Success**|
 | serverExecutionTime|Specifies the amount of time it took the server to complete the request. The time has the format hh:mm:ss.sssssss.|
 | sqlExecutes|Specifies the number of SQL statements that the request executed. |
 | sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.|
-| telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 | totalTime|Specifies the amount of time it took to process the request. The time has the format hh:mm:ss.sssssss.|
-
+|[See common custom dimensions](#other)||
 <!--
 ### Example:
 
@@ -365,18 +338,12 @@ Occurs when an extension fails to synchronize on the tenant.
 
 |Dimension|Description or value|
 |---------|-----|
-| aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
-| component|**Dynamics 365 Business Central Server**.|
-| componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
-| deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
-|environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
-| environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 | eventId|**LC0013**|
-| extensionId|Specifies the AppID of the extension that failed to synchronize.|
+| extensionId|Specifies the ID of the extension that failed to synchronize.|
 | extensionName|Specifies the name of the extension that failed to synchronize.|
 | extensionPublishedAs|Specifies whether the extension was published as one of the following options:<ul><li>**Dev** - published from the AL development environment.</li><li>**Global** - published to the global scope.</li><li>**Tenant** - published to the tenant scope.</li></ul>|
 | extensionPublisher|Specifies the extension's publisher.|
-| extensionScope|Specifies whether the extension was published to one of the following scopes:<ul><li>**Global** - the extension can be installed on all tenants connected the service instance. </li><li>**Tenant** - the extension can only be installed on the tenant to which it was published.</li></ul>.|
+| extensionScope|Specifies whether the extension was published to one of the following scopes:<ul><li>**Global** - the extension can be installed on all tenants connected the service instance. </li><li>**Tenant** - the extension can only be installed on the tenant to which it was published.</li></ul>|
 | extensionSynchronizationMode|Specifies whether the extension was synchronized in one of the following modes:<ul><li>**Add** -  The database schema defined by the objects in the extension are added to the database schema of the tenant database. This mode is typically used mode after you publish an extension for the first time.</li><li>**Clean** - The database schema defined by all versions of the extension will be removed from the database and all data is lost. This mode is typically used when an extension will no longer be used and all versions unpublished. </li><li>**Development** - This mode is acts similar to Add, except it is intended for use during development. It lets you to sync the same version of an extension that is already published. However, to run this mode, only one version the App can be currently published.</li><li>**ForceSync** - This mode like **Add** except it supports destructive schema changes (like removing fields, renaming them, changing their datatypes, and more). It is typically used during development, and is the mode used when an extension is published and installed from the AL development environment.</li></ul> For more information about the modes, see [Sync-NAVApp cmdlet -Mode](/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp).|
 | extensionVersion|Specifies the version of the extension was synchronized.|
 | failureReason|Specifies the error that occurred when synchronizing the extension.|
@@ -384,8 +351,8 @@ Occurs when an extension fails to synchronize on the tenant.
 | serverExecutionTime|Specifies the amount of time it took the server to complete the request. The time has the format hh:mm:ss.sssssss.|
 | sqlExecutes|Specifies the number of SQL statements that the request executed. |
 | sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.|
-| telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 | totalTime|Specifies the amount of time it took to process the request. The time has the format hh:mm:ss.sssssss.|
+|[See common custom dimensions](#other)||
 
 ## <a name="installedsuccess"></a>Extension installed successfully
 
@@ -402,30 +369,48 @@ Occurs when an extension installs successfully on a tenant.
 
 |Dimension|Description or value|
 |---------|-----|
-| aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
-| component|**Dynamics 365 Business Central Server**.|
-| componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
-| deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
-| environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
-| environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 | eventId|**LC0010**|
-| extensionId|Specifies the AppID of the extension that was installed.|
-| extensionName|Specifies the name of the extension that failed to synchronize.|
+| extensionId|Specifies the ID of the extension that was installed.|
+| extensionName|Specifies the name of the extension that was installed.|
 | extensionPublishedAs|Specifies whether the extension was published as one of the following options:<ul><li>**Dev** - published from the AL development environment.</li><li>**Global** - published to the global scope.</li><li>**Tenant** - published to the tenant scope.</li></ul>|
 | extensionPublisher|Specifies the extension's publisher.|
-| extensionScope|Specifies whether the extension was published to one of the following scopes:<ul><li>**Global** - the extension can be installed on all tenants connected the service instance. </li><li>**Tenant** - the extension can only be installed on the tenant to which it was published.</li></ul>.|
-| extensionVersion|Specifies the version of the extension was installed.|
+| extensionScope|Specifies whether the extension was published to one of the following scopes:<ul><li>**Global** - the extension can be installed on all tenants connected the service instance. </li><li>**Tenant** - the extension can only be installed on the tenant to which it was published.</li></ul>|
+| extensionVersion|Specifies the version of the extension that was installed.|
 | result|**Success**|
 | serverExecutionTime|Specifies the amount of time it took the server to complete the request. The time has the format hh:mm:ss.sssssss.|
 | sqlExecutes|Specifies the number of SQL statements that the request executed. |
 | sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.|
-| telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 | totalTime|Specifies the amount of time it took to process the request. The time has the format hh:mm:ss.sssssss.|
-<!--
-### Example:
+|[See common custom dimensions](#other)||
 
-{"Component":"Dynamics 365 Business Central Server","Telemetry schema version":"0.1","telemetrySchemaVersion":"0.1","serverExecutionTime":"00:00:08.8671784","Component version":"16.0.14073.14105","Environment type":"Production","componentVersion":"16.0.14073.14105","environmentType":"Production","deprecatedKeys":"Extension name, Extension App Id, Extension version, Telemetry schema version, AadTenantId, Environment name, Environment type, Component, Component version, Telemetry schema version","Extension version":"1.0.0.0","extensionVersion":"1.0.0.0","aadTenantId":"common","AadTenantId":"common","extensionPublishedAs":"Tenant","sqlRowsRead":"0","extensionPublisher":"Default publisher","sqlExecutes":"1","Extension name":"ExtX","component":"Dynamics 365 Business Central Server","extensionName":"ExtX","totalTime":"00:00:08.8671784","Extension App Id":"4f5f1484-cfb4-48b3-ab92-6eef2b91d5fd","extensionScope":"Tenant","eventId":"LC0010","extensionId":"4f5f1484-cfb4-48b3-ab92-6eef2b91d5fd","result":"Success"}
+## <a name="dependentinstalledsuccess"></a>Dependent extension installed successfully
+
+Occurs when an extension is installed because another extension that depends on it was installed. This event is only available from version 18.1 and later.
+
+### General dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|message|**Dependent Extension installed successfully: {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})**|
+|severityLevel|**1**|
+
+### Custom dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+| eventId|**LC0026**|
+| extensionId|Specifies the ID of the extension that was installed.|
+| extensionName|Specifies the name of the extension that was installed.|
+| extensionPublisher|Specifies the extension's publisher.|
+| extensionVersion|Specifies the version of the extension that was installed.|
+| parentExtensionId|Specifies the ID of the other extension that required the installation this extension.|
+|[See common custom dimensions](#other)||
+
+<!--
+{"Telemetry schema version":"0.1","telemetrySchemaVersion":"0.1","extensionVersion":"1.0.0.0","Component version":"18.0.24800.0","extensionPublisher":"Default publisher","componentVersion":"18.0.24800.0","Environment type":"Production","Extension version":"1.0.0.0","environmentType":"Production","Extension App Id":"cfa8a06b-c74c-4d41-b2c0-5c39d1377da7","deprecatedKeys":"Extension name, Extension App Id, Extension version, Telemetry schema version, Component, Component version, Telemetry schema version, AadTenantId, Environment name, Environment type","Extension name":"bc18-index-1","extensionName":"bc18-index-1","aadTenantId":"common","AadTenantId":"common","extensionId":"cfa8a06b-c74c-4d41-b2c0-5c39d1377da7","Component":"Dynamics 365 Business Central Server","component":"Dynamics 365 Business Central Server","eventId":"LC0026","parentExtensionId":"dac46aa2-3007-49d1-93c1-80d337c173e6"}
+
 -->
+
 ## <a name="installedfailed"></a>Extension failed to install
 
 Occurs when an extension failed to install on a tenant. 
@@ -441,32 +426,21 @@ Occurs when an extension failed to install on a tenant.
 
 |Dimension|Description or value|
 |---------|-----|
-| aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
-| component|**Dynamics 365 Business Central Server**.|
-| componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
-| deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
-|environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
-| environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 | eventId|**LC0011**|
-| extensionId|Specifies the AppID of the extension that failed to uninstall.|
+| extensionId|Specifies the ID of the extension that failed to uninstall.|
 | extensionName|Specifies the name of the extension that failed to uninstall.|
 | extensionPublishedAs|Specifies whether the extension was published as one of the following options:<ul><li>**Dev** - published from the AL development environment.</li><li>**Global** - published to the global scope.</li><li>**Tenant** - published to the tenant scope.</li></ul>|
 | extensionPublisher|Specifies the extension's publisher.|
-| extensionScope|Specifies whether the extension was published to one of the following scopes:<ul><li>**Global** - the extension can be installed on all tenants connected the service instance. </li><li>**Tenant** - the extension can only be installed on the tenant to which it was published.</li></ul>.|
-| extensionVersion|Specifies the version of the extension was installed.|
+| extensionScope|Specifies whether the extension was published to one of the following scopes:<ul><li>**Global** - the extension can be installed on all tenants connected the service instance. </li><li>**Tenant** - the extension can only be installed on the tenant to which it was published.</li></ul>|
+| extensionVersion|Specifies the version of the extension that was installed.|
 |failureReason|Specifies the error that occurred when the extension was installed.|
 | result|**Failed**|
 | serverExecutionTime|Specifies the amount of time it took the server to complete the request. The time has the format hh:mm:ss.sssssss.|
 | sqlExecutes|Specifies the number of SQL statements that the request executed. |
 | sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.|
-| telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 | totalTime|Specifies the amount of time it took to process the request. The time has the format hh:mm:ss.sssssss.|
+|[See common custom dimensions](#other)||
 
-<!--
-### Example
-
-{"Component":"Dynamics 365 Business Central Server","Telemetry schema version":"0.1","telemetrySchemaVersion":"0.1","serverExecutionTime":"00:00:00.0099237","Component version":"16.0.14073.14105","componentVersion":"16.0.14073.14105","Environment type":"Production","environmentType":"Production","deprecatedKeys":"Extension name, Extension App Id, Extension version, Telemetry schema version, AadTenantId, Environment name, Environment type, Component, Component version, Telemetry schema version","extensionVersion":"1.0.0.0","aadTenantId":"common","AadTenantId":"common","sqlRowsRead":"0","sqlExecutes":"1","totalTime":"00:00:00.0099237","component":"Dynamics 365 Business Central Server","Extension version":"1.0.0.0","eventId":"LC0011","Extension name":"exty","result":"Failure","extensionName":"exty","failureReason":"Cannot install the extension ExtY by Default publisher 1.0.0.0 for the tenant default because the referenced dependencies System Application, System Application, System Application, Base Application, ExtX are not installed. To install the dependencies as well as ExtY by Default publisher 1.0.0.0, run the command again and set the Force parameter."}
--->
 ## <a name="uninstalledsuccess"></a>Extension un-installed successfully
 
 Occurs when an extension is successfully uninstalled from a tenant.
@@ -482,32 +456,56 @@ Occurs when an extension is successfully uninstalled from a tenant.
 
 |Dimension|Description or value|
 |---------|-----|
-| aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
-| component|**Dynamics 365 Business Central Server**.|
-| componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
-| deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
-|doNotSaveData|Specifies whether the uninstall operation was run with option not to save the data in database table fields that are added by the extension. When using the Uninstall-NAVApp cmdlet, this condition is set with the -DoNotSaveData switch parameter.|
-|environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
-| environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 | eventId|**LC0016**|
-| extensionId|Specifies the AppID of the extension that was uninstalled.|
+|doNotSaveData|Specifies whether the uninstall operation was run with option not to save the data in database table fields that are added by the extension. When using the Uninstall-NAVApp cmdlet, this condition is set with the -DoNotSaveData switch parameter.|
+| extensionId|Specifies the ID of the extension that was uninstalled.|
 | extensionName|Specifies the name of the extension that was uninstalled.|
 | extensionPublishedAs|Specifies whether the extension was published as one of the following options:<ul><li>**Dev** - published from the AL development environment.</li><li>**Global** - published to the global scope.</li><li>**Tenant** - published to the tenant scope.</li></ul>|
 | extensionPublisher|Specifies the extension's publisher.|
-| extensionScope|Specifies whether the extension was published to one of the following scopes:<ul><li>**Global** - the extension can be installed on all tenants connected the service instance. </li><li>**Tenant** - the extension can only be installed on the tenant to which it was published.</li></ul>.|
+| extensionScope|Specifies whether the extension was published to one of the following scopes:<ul><li>**Global** - the extension can be installed on all tenants connected the service instance. </li><li>**Tenant** - the extension can only be installed on the tenant to which it was published.</li></ul>|
 | extensionVersion|Specifies the version of the extension was uninstalled.|
 | result|**Success**|
 | serverExecutionTime|Specifies the amount of time it took the server to complete the request. The time has the format hh:mm:ss.sssssss.|
 | sqlExecutes|Specifies the number of SQL statements that the request executed. |
 | sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.|
-| telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 | totalTime|Specifies the amount of time it took to process the request. The time has the format hh:mm:ss.sssssss.|
+|[See common custom dimensions](#other)||
 
 <!--
 ### Example
 
 {"Component version":"16.0.13877.0","totalTime":"00:00:00.0705066","environmentType":"Production","deprecatedKeys":"Extension name, Extension App Id, Extension version, Telemetry schema version, Component, Component version, AadTenantId, Environment name, Environment type","aadTenantId":"common","result":"Success","component":"Dynamics 365 Business Central Server","extensionName":"pbt","sqlRowsRead":"60","extensionId":"0b6c8443-c488-4967-b53d-f53ac52b6180","AadTenantId":"common","sqlExecutes":"12","extensionVersion":"1.0.0.6","extensionPublishedAs":"Global","Environment type":"Production","Telemetry schema version":"0.1","Extension name":"pbt","DeveloperMode":"true","Component":"Dynamics 365 Business Central Server","extensionScope":"Global","Extension version":"1.0.0.6","extensionPublisher":"Me","telemetrySchemaVersion":"0.1","Extension App Id":"0b6c8443-c488-4967-b53d-f53ac52b6180","serverExecutionTime":"00:00:00.0705066","eventId":"LC0016","componentVersion":"16.0.13877.0"}
 -->
+
+## <a name="dependentunistalled"></a>Dependent extension un-installed successfully
+
+Occurs when an extension is uninstalled because an extension that it's dependent on was uninstalled. This event is only available from version 18.1 and later.
+
+### General dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|message|**Dependent extension un-installed successfully: {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})**|
+|severityLevel|**1**|
+
+### Custom dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+| eventId|**LC0027**|
+|doNotSaveData|Specifies whether the uninstall operation on the parent extension was run with option not to save the data in database table fields that are added by the extension. When using the Uninstall-NAVApp cmdlet, this condition is set with the -DoNotSaveData switch parameter.|
+| extensionId|Specifies the ID of the dependent extension that was uninstalled.|
+| extensionName|Specifies the name of the dependent extension that was uninstalled.|
+| extensionPublisher|Specifies the dependent extension's publisher.|
+| extensionVersion|Specifies the version of the dependent extension was uninstalled.|
+| parentExtensionId|Specifies the ID of the extension that the uninstalled extension is dependent on.|
+|[See common custom dimensions](#other)||
+
+<!--
+{"Telemetry schema version":"0.1","telemetrySchemaVersion":"0.1","extensionPublisher":"Default publisher","Component version":"18.0.24800.0","Extension version":"1.0.0.0","Environment type":"Production","componentVersion":"18.0.24800.0","extensionVersion":"1.0.0.0","Extension App Id":"dac46aa2-3007-49d1-93c1-80d337c173e6","environmentType":"Production","deprecatedKeys":"Extension name, Extension App Id, Extension version, Telemetry schema version, Component, Component version, Telemetry schema version, AadTenantId, Environment name, Environment type","Extension name":"bc-index5","extensionName":"bc-index5","aadTenantId":"common","AadTenantId":"common","extensionId":"dac46aa2-3007-49d1-93c1-80d337c173e6","Component":"Dynamics 365 Business Central Server","component":"Dynamics 365 Business Central Server","eventId":"LC0027","doNotSaveData":"False","parentExtensionId":"cfa8a06b-c74c-4d41-b2c0-5c39d1377da7"}
+-->
+
+
 ## <a name="uninstalledfailed"></a>Extension failed to un-install
 
 Occurs when an extension failed to uninstall on a tenant.
@@ -523,28 +521,23 @@ Occurs when an extension failed to uninstall on a tenant.
 
 |Dimension|Description or value|
 |---------|-----|
-| aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
-| component|**Dynamics 365 Business Central Server**.|
-| componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
-| deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
+| eventId|**LC0017**|
 |doNotSaveData|Specifies whether the uninstall operation was run with option not to save the data in database table fields that are added by the extension. When using the Uninstall-NAVApp cmdlet, this condition is set with the -DoNotSaveData switch parameter.|
 |environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
 | environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
-| eventId|**LC0017**|
-| extensionId|Specifies the AppID of the extension that failed to uninstall.|
+| extensionId|Specifies the ID of the extension that failed to uninstall.|
 | extensionName|Specifies the name of the extension that failed to uninstall.|
 | extensionPublishedAs|Specifies whether the extension was published as one of the following options:<ul><li>**Dev** - published from the AL development environment.</li><li>**Global** - published to the global scope.</li><li>**Tenant** - published to the tenant scope.</li></ul>|
 | extensionPublisher|Specifies the extension's publisher.|
-| extensionScope|Specifies whether the extension was published to one of the following scopes:<ul><li>**Global** - the extension can be installed on all tenants connected the service instance. </li><li>**Tenant** - the extension can only be installed on the tenant to which it was published.</li></ul>.|
+| extensionScope|Specifies whether the extension was published to one of the following scopes:<ul><li>**Global** - the extension can be installed on all tenants connected the service instance. </li><li>**Tenant** - the extension can only be installed on the tenant to which it was published.</li></ul>|
 | extensionVersion|Specifies the version of the extension that failed to uninstall.|
 |failureReason|Specifies the error that occurred when the extension was uninstalled.|
 | result|**Failure**|
 | serverExecutionTime|Specifies the amount of time it took the server to complete the request. The time has the format hh:mm:ss.sssssss.|
 | sqlExecutes|Specifies the number of SQL statements that the request executed. |
 | sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.|
-| telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 | totalTime|Specifies the amount of time it took to process the request. The time has the format hh:mm:ss.sssssss.|
-
+|[See common custom dimensions](#other)||
 <!--
 ### Example
 
@@ -570,15 +563,11 @@ Occurs when an extension updates successfully on the service. <!--The update ope
 
 |Dimension|Description or value|
 |---------|-----|
-| aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
-| component|**Dynamics 365 Business Central Server**.|
-| componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
-| deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We 
 | environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
 | environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 | eventId|**LC0022**|
 | extensionCulture|Specifies the language version for which the extension that was upgraded. The value is a language culture name, such as **en-US** or **da-DK**. If a language wasn't specified when the extension was installed, then en-US is used by default. |
-| extensionId|Specifies the AppID of the extension that failed to uninstall.|
+| extensionId|Specifies the ID of the extension that failed to uninstall.|
 | extensionName|Specifies the name of the extension that was being upgraded.|
 | extensionPublisher|Specifies the extension's publisher.|
 | extensionVersion|Specifies the new version of the extension being upgraded.|
@@ -587,8 +576,8 @@ Occurs when an extension updates successfully on the service. <!--The update ope
 | serverExecutionTime|Specifies the amount of time it took the server to complete the request. The time has the format hh:mm:ss.sssssss.|
 | sqlExecutes|Specifies the number of SQL statements that the request executed. |
 | sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.|
-| telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 | totalTime|Specifies the amount of time it took to process the request. The time has the format hh:mm:ss.sssssss.|
+|[See common custom dimensions](#other)||
 <!--
 ### Example
 
@@ -611,15 +600,11 @@ Occurs when an extension failed to update on the service. <!--The update operati
 
 |Dimension|Description or value|
 |---------|-----|
-| aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
-| component|**Dynamics 365 Business Central Server**.|
-| componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
-| deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
 | environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
 | environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 | eventId|**LC0023**|
 | extensionCulture|Specifies the language version for which the extension that was upgraded. The value is a language culture name, such as **en-US** or **da-DK**. If a language wasn't specified when the extension was installed, then en-US is used by default. |
-| extensionId|Specifies the AppID of the extension that failed to uninstall.|
+| extensionId|Specifies the ID of the extension that failed to uninstall.|
 | extensionName|Specifies the name of the extension that was being upgraded.|
 | extensionPublisher|Specifies the extension's publisher.|
 | extensionVersion|Specifies the new version of the extension being upgraded.|
@@ -629,14 +614,14 @@ Occurs when an extension failed to update on the service. <!--The update operati
 | serverExecutionTime|Specifies the amount of time it took the server to complete the request. The time has the format hh:mm:ss.sssssss.|
 | sqlExecutes|Specifies the number of SQL statements that the request executed. |
 | sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.|
-| telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 | totalTime|Specifies the amount of time it took to process the request. The time has the format hh:mm:ss.sssssss.|
-
+|[See common custom dimensions](#other)||
 <!--
 ### Example
 
 {"result":"Failure","Telemetry schema version":"0.1","telemetrySchemaVersion":"0.1","serverExecutionTime":"00:00:00.0063533","Extension version":"1.0.0.5","Component version":"16.0.13877.0","componentVersion":"16.0.13877.0","extensionCulture":"en-US","Environment type":"Production","extensionVersion":"1.0.0.5","environmentType":"Production","Extension name":"pbt","deprecatedKeys":"Extension name, Extension App Id, Extension version, Telemetry schema version, Component, Component version, AadTenantId, Environment name, Environment type","extensionName":"pbt","failureReason":"Cannot upgrade the extension 'pbt by Me 1.0.0.5' because its version must be newer than the current version. The current version is '1.0.0.6'","DeveloperMode":"true","aadTenantId":"common","sqlExecutes":"7","AadTenantId":"common","sqlRowsRead":"32","component":"Dynamics 365 Business Central Server","totalTime":"00:00:00.0063533","Component":"Dynamics 365 Business Central Server","eventId":"LC0023"}
 -->
+
 ## See also
 
 [Upgrading Extensions](../developer/devenv-upgrading-extensions.md)  
