@@ -162,4 +162,4 @@ When you've completed the migration, disable cloud migration by using the **Disa
 [Migrate to Business Central Online from Dynamics GP](migrate-dynamics-gp.md)  
 [Upgrading from Dynamics NAV to Business Central Online](../upgrade/Upgrade-Considerations.md#online)  
 [Migrating On-Premises Data to Business Central Online](migrate-data.md)  
-[FAQ about Connecting to Business Central Online from On-Premises Solutions](faq-intelligent-cloud.md)  
+[FAQ about Connecting to Business Central Online from On-Premises Solutions](faq-migrate-data.md)  
