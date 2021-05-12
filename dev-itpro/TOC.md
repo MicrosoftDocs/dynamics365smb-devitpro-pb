@@ -2693,6 +2693,10 @@
 ### [Custom Integration with Dataverse](administration/administration-custom-cds-integration.md)
 ### [AL Proxy Table Generator](developer/devenv-al-table-proxy-generator.md)
 <!-- end CDS -->
+<!-- Microsoft Power BI -->
+## Integrating with Microsoft Power BI
+### [Adding Power BI Report Parts to Pages](developer\devenv-power-bi-report-parts.md)
+<!-- Microsoft Power BI -->
 <!-- Microsoft Power Platform -->
 ## Integrating with Microsoft Power Platform
 ### [Microsoft Power Platform Integration with Business Central](powerplatform/powerplat-overview.md)
