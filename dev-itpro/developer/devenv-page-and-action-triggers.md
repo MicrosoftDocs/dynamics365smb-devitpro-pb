@@ -32,18 +32,18 @@ The following table lists triggers that apply to the entire page.
 
 |Page trigger name|Runs|  
 |-----------------------|--------------|  
-|[OnInit Trigger](triggers-auto/page/devenv-oninit-trigger.md)|When the page is loaded, but before the controls are available.|  
-|[OnOpenPage Trigger](triggers-auto/page/devenv-onopenpage-trigger.md)|When the page is initialized and the controls are available.|  
-|[OnClosePage Trigger](triggers-auto/page/devenv-onclosepage-trigger.md)|When the page about to close and after [OnQueryClosePage Trigger](triggers-auto/page/devenv-onqueryclosepage-trigger.md) trigger.|  
-|[OnFindRecord Trigger](triggers-auto/page/devenv-onfindrecord-trigger.md)|When the page is opened and a record is retrieved from a table.|  
-|[OnNextRecord Trigger](triggers-auto/page/devenv-onnextrecord-Trigger.md)|When the page changes from displaying one record to another record in a table. For example, on a Customer card page, this happens when a user selects **Next** (Ctrl+Page Down) or **Previous** (Ctrl+Page Up).|  
-|[OnAfterGetCurrRecord Trigger](triggers-auto/page/devenv-onaftergetcurrrecord-trigger.md)|After the record has been selected as the current record in the page.| 
-|[OnAfterGetRecord Trigger](triggers-auto/page/devenv-onaftergetrecord-trigger.md)|When a record has been retrieved but not yet displayed.|  
-|[OnNewRecord Trigger](triggers-auto/page/devenv-onnewrecord-trigger.md)|When a new record has been initialized but not yet displayed.|  
-|[OnInsertRecord Trigger](triggers-auto/page/devenv-oninsertrecord-trigger.md)|When a new record is about to be inserted in the table.|  
-|[OnModifyRecord Trigger](triggers-auto/page/devenv-onmodifyrecord-trigger.md)|When a record is about to be modified in the table.|  
-|[OnDeleteRecord Trigger](triggers-auto/page/devenv-ondeleterecord-trigger.md)|When a record is about to be deleted from the table.|  
-|[OnQueryClosePage Trigger](triggers-auto/page/devenv-onqueryclosepage-trigger.md)|When the page is about to close, but before the [OnClosePage Trigger](triggers-auto/page/devenv-onclosepage-trigger.md).|  
+|[OnInit Trigger](triggers-auto/page/devenv-oninit-page-trigger.md)|When the page is loaded, but before the controls are available.|  
+|[OnOpenPage Trigger](triggers-auto/page/devenv-onopenpage-page-trigger.md)|When the page is initialized and the controls are available.|  
+|[OnClosePage Trigger](triggers-auto/page/devenv-onclosepage-page-trigger.md)|When the page about to close and after [OnQueryClosePage Trigger](triggers-auto/page/devenv-onqueryclosepage-page-trigger.md) trigger.|  
+|[OnFindRecord Trigger](triggers-auto/page/devenv-onfindrecord-page-trigger.md)|When the page is opened and a record is retrieved from a table.|  
+|[OnNextRecord Trigger](triggers-auto/page/devenv-onnextrecord-page-Trigger.md)|When the page changes from displaying one record to another record in a table. For example, on a Customer card page, this happens when a user selects **Next** (Ctrl+Page Down) or **Previous** (Ctrl+Page Up).|  
+|[OnAfterGetCurrRecord Trigger](triggers-auto/page/devenv-onaftergetcurrrecord-page-trigger.md)|After the record has been selected as the current record in the page.| 
+|[OnAfterGetRecord Trigger](triggers-auto/page/devenv-onaftergetrecord-page-trigger.md)|When a record has been retrieved but not yet displayed.|  
+|[OnNewRecord Trigger](triggers-auto/page/devenv-onnewrecord-page-trigger.md)|When a new record has been initialized but not yet displayed.|  
+|[OnInsertRecord Trigger](triggers-auto/page/devenv-oninsertrecord-page-trigger.md)|When a new record is about to be inserted in the table.|  
+|[OnModifyRecord Trigger](triggers-auto/page/devenv-onmodifyrecord-page-trigger.md)|When a record is about to be modified in the table.|  
+|[OnDeleteRecord Trigger](triggers-auto/page/devenv-ondeleterecord-page-trigger.md)|When a record is about to be deleted from the table.|  
+|[OnQueryClosePage Trigger](triggers-auto/page/devenv-onqueryclosepage-page-trigger.md)|When the page is about to close, but before the [OnClosePage Trigger](triggers-auto/page/devenv-onclosepage-page-trigger.md).|  
 
 ## Field Triggers
 
@@ -51,10 +51,10 @@ The following table describes the triggers that are available on field controls.
 
 |Control trigger|Runs|  
 |---------------------|--------------|  
-|[OnValidate (Page fields) Trigger](triggers-auto/pagefield/devenv-onvalidate-page-fields-trigger.md)|When the user changes the value in a field and then selects away from the field so that the field loses focus.|  
-|[OnLookup (Page fields) Trigger](triggers-auto/pagefield/devenv-onlookup-page-fields-trigger.md)|When the user requests a lookup by clicking a field's lookup button or pressing F4.|  
-|[OnDrillDown Trigger](triggers-auto/pagefield/devenv-ondrilldown-trigger.md)|When the user requests a drill-down by choosing the field's drill-down button or pressing Shift+F8.|  
-|[OnAssistEdit Trigger](triggers-auto/pagefield/devenv-onassistedit-trigger.md)|When the user requests assist-edit by choosing an AssistEdit button or by pressing Shift+F4.|  
+|[OnValidate (Page fields) Trigger](triggers-auto/pagefield/devenv-onvalidate-page-fields-pagefield-trigger.md)|When the user changes the value in a field and then selects away from the field so that the field loses focus.|  
+|[OnLookup (Page fields) Trigger](triggers-auto/pagefield/devenv-onlookup-page-fields-pagefield-trigger.md)|When the user requests a lookup by clicking a field's lookup button or pressing F4.|  
+|[OnDrillDown Trigger](triggers-auto/pagefield/devenv-ondrilldown-pagefield-trigger.md)|When the user requests a drill-down by choosing the field's drill-down button or pressing Shift+F8.|  
+|[OnAssistEdit Trigger](triggers-auto/pagefield/devenv-onassistedit-pagefield-trigger.md)|When the user requests assist-edit by choosing an AssistEdit button or by pressing Shift+F4.|  
 
 <!--NAV |[OnControlAddin Trigger](devenv-oncontroladdin-trigger.md)|When a control add-in is initiated on a page.| -->
 
@@ -64,7 +64,7 @@ The following table lists triggers that apply to actions on a page.
 
 |Triggers|Runs|  
 |--------------|--------------|  
-|[OnAction Trigger](triggers-auto/action/devenv-onaction-trigger.md)|When an action is initiated on a page.|  
+|[OnAction Trigger](triggers-auto/action/devenv-onaction-action-trigger.md)|When an action is initiated on a page.|  
 
 
 ## Page Background Triggers
@@ -73,8 +73,8 @@ The following table lists triggers that apply to page background tasks. For more
 
 |Triggers|Runs|
 |--------|-----|
-|[OnPageBackgroundTaskCompleted](triggers-auto/page/devenv-onpagebackgroundtaskcompleted-trigger.md)|Runs after a page background task has successfully completed.|
-|[OnPageBackgroundTaskError](triggers-auto/page/devenv-onpagebackgroundtaskerror-trigger.md)|Runs when an error occurs in a page background task.|
+|[OnPageBackgroundTaskCompleted](triggers-auto/page/devenv-onpagebackgroundtaskcompleted-page-trigger.md)|Runs after a page background task has successfully completed.|
+|[OnPageBackgroundTaskError](triggers-auto/page/devenv-onpagebackgroundtaskerror-page-trigger.md)|Runs when an error occurs in a page background task.|
 
 ## See Also
 
