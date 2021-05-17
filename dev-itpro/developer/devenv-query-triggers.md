@@ -22,7 +22,7 @@ The following table lists the triggers that apply to the query object.
 
 |Trigger|Runs|  
 |-------------|--------------|  
-|[OnBeforeOpen](triggers-auto/query/devenv-onbeforeopen-trigger.md)|Before the query object is run and the dataset is generated. For example, you can use the **OnBeforeOpen** trigger to apply filters using the **SETFILTER** method.|  
+|[OnBeforeOpen](triggers-auto/query/devenv-onbeforeopen-query-trigger.md)|Before the query object is run and the dataset is generated. For example, you can use the **OnBeforeOpen** trigger to apply filters using the **SetFilter** method.|  
 
 ## See Also
 
