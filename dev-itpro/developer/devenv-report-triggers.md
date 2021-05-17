@@ -22,18 +22,18 @@ The following illustration describes the order of report triggers.
 
 ## Report triggers
 
-When you start the report run, the [OnInitReport Trigger](triggers-auto/report/devenv-oninitreport-trigger.md) is called. If the OnInitReport doesn't end the processing of the report, then the request page for the report is run, if it's defined. The page triggers for the request page are called. On the request page, you select the options that you want for this report. You can also decide to cancel the report run. If you decide to continue, then the [OnPreReport Trigger](triggers-auto/report/devenv-onprereport-trigger.md) is called. At this point, no data has yet been processed. When the OnPreReport trigger has been run, the first data item is processed unless the processing of the report was ended in the OnPreReport trigger.  
+When you start the report run, the [OnInitReport Trigger](triggers-auto/report/devenv-oninitreport-report-trigger.md) is called. If the OnInitReport doesn't end the processing of the report, then the request page for the report is run, if it's defined. The page triggers for the request page are called. On the request page, you select the options that you want for this report. You can also decide to cancel the report run. If you decide to continue, then the [OnPreReport Trigger](triggers-auto/report/devenv-onprereport-report-trigger.md) is called. At this point, no data has yet been processed. When the OnPreReport trigger has been run, the first data item is processed unless the processing of the report was ended in the OnPreReport trigger.  
 
-When the first data item has been processed, the next data item, if there's any, is processed in the same way. When there are no more data items, the [OnPostReport Trigger](triggers-auto/report/devenv-onpostreport-trigger.md) is called to do any necessary post processing, for example, removing temporary files.  
+When the first data item has been processed, the next data item, if there's any, is processed in the same way. When there are no more data items, the [OnPostReport Trigger](triggers-auto/report/devenv-onpostreport-report-trigger.md) is called to do any necessary post processing, for example, removing temporary files.  
 
 > [!IMPORTANT]  
 > If you define two methods that have the same name, one defined in a report and the other in a table that is referenced by the report, you cannot invoke the  defined in the report directly. By default, a call to the  invokes the  that is defined in the table. This behavior occurs when the  is called from a source expression or a trigger.  
 
 ### How a data item is processed
 
-Before the first record is retrieved, the [OnPreDataItem Trigger](triggers-auto/reportdataitem/devenv-onpredataitem-trigger.md) is called, and after the last record has been processed, the [OnPostDataItem Trigger](triggers-auto/reportdataitem/devenv-onpostdataitem-trigger.md) is called.  
+Before the first record is retrieved, the [OnPreDataItem Trigger](triggers-auto/reportdataitem/devenv-onpredataitem-reportdataitem-trigger.md) is called, and after the last record has been processed, the [OnPostDataItem Trigger](triggers-auto/reportdataitem/devenv-onpostdataitem-reportdataitem-trigger.md) is called.  
 
-Between these two triggers, the data item records are processed. Processing a record means executing the record triggers and outputting data. After a record is retrieved from the data item, the [OnAfterGetRecord (Data Items) Trigger](triggers-auto/reportdataitem/devenv-onaftergetrecord-data-items-trigger.md) is called.  
+Between these two triggers, the data item records are processed. Processing a record means executing the record triggers and outputting data. After a record is retrieved from the data item, the [OnAfterGetRecord (Data Items) Trigger](triggers-auto/reportdataitem/devenv-onaftergetrecord-data-items-reportdataitem-trigger.md) is called.  
 
 If there's an indented data item, then the records in this data item are processed.  
 
