@@ -24,7 +24,7 @@ The following table lists triggers that apply to the report itself.
 |[OnInitReport Trigger](triggers-auto/report/devenv-oninitreport-report-trigger.md)|When the report is loaded.|  
 |[OnPreReport Trigger](triggers-auto/report/devenv-onprereport-report-trigger.md)|Before the report is run, but after the **RequestPage** has been run.|  
 |[Quit Method (Report, XMLport)](methods-auto/report/reportinstance-quit-method.md).|  
-|[OnPostReport Trigger](devenv-onpostreport-trigger.md)|After the report has run, but not if the report was stopped manually or by the [QUIT Method (Report, XMLport)](../methods-auto/report/reportinstance-quit-method.md).|  
+|[OnPostReport Trigger](triggers-auto/report/devenv-onpostreport-report-trigger.md)|After the report has run, but not if the report was stopped manually or by the [Quit Method (Report, XMLport)](methods-auto/report/reportinstance-quit-method.md).|  
 
 ## Data Item Triggers  
 
