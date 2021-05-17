@@ -6174,6 +6174,11 @@
     "source_path": "dev-itpro/administration/update-rollout-timelime.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/administration/update-rollout-timeline",
     "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/administration/FAQ-Intelligent-Cloud.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/administration/faq-migrate-data",
+    "redirect_document_id": false
    }
   ]
 }
