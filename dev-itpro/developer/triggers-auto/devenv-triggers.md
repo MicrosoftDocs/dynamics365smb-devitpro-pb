@@ -35,9 +35,7 @@ end;
 
 Typing the shortcut `ttrigger` will create the basic layout for a page object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
 
-
 [!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
-
 
 ## See Also
 
