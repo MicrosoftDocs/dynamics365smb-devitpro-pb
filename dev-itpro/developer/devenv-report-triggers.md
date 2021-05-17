@@ -18,7 +18,7 @@ When you run a report, the report triggers are called in a specific order.
 
 The following illustration describes the order of report triggers.  
 
-![Order of report triggers](../media/reporttriggers.png "ReportTriggers")  
+![Order of report triggers](media/reporttriggers.png "ReportTriggers")  
 
 ## Report triggers
 

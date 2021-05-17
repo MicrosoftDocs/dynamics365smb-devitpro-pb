@@ -51,8 +51,8 @@ The following table describes the triggers that are available on field controls.
 
 |Control trigger|Runs|  
 |---------------------|--------------|  
-|[OnValidate (Page fields) Trigger](triggers-auto/pagefield/devenv-onvalidate-page-fields-pagefield-trigger.md)|When the user changes the value in a field and then selects away from the field so that the field loses focus.|  
-|[OnLookup (Page fields) Trigger](triggers-auto/pagefield/devenv-onlookup-page-fields-pagefield-trigger.md)|When the user requests a lookup by clicking a field's lookup button or pressing F4.|  
+|[OnValidate (Page fields) Trigger](triggers-auto/pagefield/devenv-onvalidate-pagefield-trigger.md)|When the user changes the value in a field and then selects away from the field so that the field loses focus.|  
+|[OnLookup (Page fields) Trigger](triggers-auto/pagefield/devenv-onlookup-pagefield-trigger.md)|When the user requests a lookup by clicking a field's lookup button or pressing F4.|  
 |[OnDrillDown Trigger](triggers-auto/pagefield/devenv-ondrilldown-pagefield-trigger.md)|When the user requests a drill-down by choosing the field's drill-down button or pressing Shift+F8.|  
 |[OnAssistEdit Trigger](triggers-auto/pagefield/devenv-onassistedit-pagefield-trigger.md)|When the user requests assist-edit by choosing an AssistEdit button or by pressing Shift+F4.|  
 
