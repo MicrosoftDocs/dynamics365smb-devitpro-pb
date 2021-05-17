@@ -33,7 +33,7 @@ When the first data item has been processed, the next data item, if there's any,
 
 Before the first record is retrieved, the [OnPreDataItem Trigger](triggers-auto/reportdataitem/devenv-onpredataitem-reportdataitem-trigger.md) is called, and after the last record has been processed, the [OnPostDataItem Trigger](triggers-auto/reportdataitem/devenv-onpostdataitem-reportdataitem-trigger.md) is called.  
 
-Between these two triggers, the data item records are processed. Processing a record means executing the record triggers and outputting data. After a record is retrieved from the data item, the [OnAfterGetRecord (Data Items) Trigger](triggers-auto/reportdataitem/devenv-onaftergetrecord-data-items-reportdataitem-trigger.md) is called.  
+Between these two triggers, the data item records are processed. Processing a record means executing the record triggers and outputting data. After a record is retrieved from the data item, the [OnAfterGetRecord (Data Items) Trigger](triggers-auto/reportdataitem/devenv-onaftergetrecord-reportdataitem-trigger.md) is called.  
 
 If there's an indented data item, then the records in this data item are processed.  
 
