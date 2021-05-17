@@ -20,22 +20,22 @@ Triggers are typically used to perform calculations and verification. For exampl
 
 ## Coding triggers
 
-Like properties, there are different triggers for the various the AL object types. Some triggers apply to the object itself, while others apply to specific controls of the object. For example, a table has some high-level triggers on the object-level triggers and lower-level triggers on fields. Or considre reports, where there are triggers that are code on the report object, while oothers are coded on the data items. Trigger are added at the beginning of the code for the object or control, after the its definition, by using the following syntax:
+Like properties, there are different triggers for the various AL object types. Some triggers are applied on the object'level, while others are applied on the control-level. For example, a table has some high-level triggers on the table object and lower-level triggers on field controls. Or consider reports, which have some triggers on the report object and some the data items. Trigger are tyically added at the end the code block for the object or control. Triggers have the following syntax:
 
 ```al
-trigger OnWhat()
+trigger Name()
 var
-    myInt: Integer;
+    variable_name: type;
 begin
-    
+    // Custom code
 end;
 ```
 
 ## Snippet support
 
-Typing the shortcut `ttrigger` will create the basic layout for a page object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
+Typing the shortcut `ttrigger` will create the basic layout for a page object when using the [!INCLUDE[d365al_ext_md](../../includes/d365al_ext_md.md)] in Visual Studio Code.
 
-[!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
+[!INCLUDE[intelli_shortcut](../includes/intelli_shortcut.md)]
 
 ## See Also
 
