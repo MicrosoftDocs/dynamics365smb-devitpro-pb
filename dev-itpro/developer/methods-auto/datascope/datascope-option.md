@@ -1,8 +1,9 @@
 ---
 title: "DataScope System Option"
+description: "Identifies the scope of stored data in the isolated storage."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +28,10 @@ Identifies the scope of stored data in the isolated storage.
 |CompanyAndUser|Indicates that the record is available for a user and specific company within the app context.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+
+
+## See Also
+
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [Isolated Storage](../../devenv-isolated-storage.md)

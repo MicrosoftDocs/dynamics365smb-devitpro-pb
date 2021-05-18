@@ -2,7 +2,7 @@
 title: "OnAfterLookup Trigger"
 description: "OnAfterLookup trigger in AL for Business Central."
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 04/15/2021
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -42,7 +42,7 @@ end;
 This trigger is introduced with runtime 7.0 of AL to address issues that arise when in [!INCLUDE [prod_short](../../includes/prod_short.md)], for example, more items have the same Description. With former solutions, the lookup mechanism would find the selected record based on the filtering in the lookup dialog. This made it impossible to predict which record the user had selected.
 
 > [!NOTE]  
-> If you have defined an [OnLookup Trigger](devenv-onlookup-page-fields-trigger.md), the [OnAfterLookup Trigger](devenv-onafterlookup-trigger.md) will not be fired.
+> If you have defined an [OnLookup (Page field) Trigger](devenv-onlookup-page-fields-trigger.md) or an [OnLookup (Field) Trigger](devenv-onlookup-fields-trigger.md), the [OnAfterLookup Trigger](devenv-onafterlookup-trigger.md) will not be fired.
 
 ## Example
 

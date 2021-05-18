@@ -1,8 +1,9 @@
 ---
 title: "FieldRef.SetRange Method"
+description: "Sets a simple filter on a field, such as a single range or a single value."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Sets a simple filter on a field, such as a single range or a single value.
  FieldRef.SetRange([FromValue: Any] [, ToValue: Any])
 ```
 ## Parameters
-*FieldRef*
-&emsp;Type: [FieldRef](fieldref-data-type.md)
+*FieldRef*  
+&emsp;Type: [FieldRef](fieldref-data-type.md)  
 An instance of the [FieldRef](fieldref-data-type.md) data type.
 
 *FromValue*  

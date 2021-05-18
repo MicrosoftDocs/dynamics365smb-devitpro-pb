@@ -1,8 +1,9 @@
 ---
 title: "File.Create Method"
+description: "Creates an Automation object."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,8 +29,8 @@ Creates an Automation object.
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
 ## Parameters
-*File*
-&emsp;Type: [File](file-data-type.md)
+*File*  
+&emsp;Type: [File](file-data-type.md)  
 An instance of the [File](file-data-type.md) data type.
 
 *Name*  
@@ -41,8 +42,8 @@ An instance of the [File](file-data-type.md) data type.
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

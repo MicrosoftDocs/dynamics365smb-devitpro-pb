@@ -1,8 +1,9 @@
 ---
 title: "System.CurrentDateTime Method"
+description: "Gets the current DateTime."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,8 +31,8 @@ Datetime :=   System.CurrentDateTime()
 
 
 ## Return Value
-*Datetime*
-&emsp;Type: [DateTime](../datetime/datetime-data-type.md)
+*Datetime*  
+&emsp;Type: [DateTime](../datetime/datetime-data-type.md)  
 
 
 

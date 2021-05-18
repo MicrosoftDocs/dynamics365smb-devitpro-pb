@@ -151,5 +151,5 @@ It is highly recommended that you test the impact of any extension in a sandbox 
 [Migrate to Business Central Online from Business Central On-premises](migrate-business-central-on-premises.md)  
 [Migrate to Business Central Online from Dynamics GP](migrate-dynamics-gp.md)  
 [Upgrading from Dynamics NAV to Business Central Online](../upgrade/Upgrade-Considerations.md#online)  
-[FAQ about Connecting to Business Central Online from On-Premises Solutions](faq-intelligent-cloud.md)  
+[FAQ about Connecting to Business Central Online from On-Premises Solutions](faq-migrate-data.md)  
 [Intelligent Insights with Business Central Online](/dynamics365/business-central/about-intelligent-cloud)

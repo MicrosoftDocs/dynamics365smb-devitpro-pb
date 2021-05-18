@@ -1,9 +1,8 @@
 ---
 title: "SaveValues Property"
-description: Sets whether user-specific control values are saved for this page.
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/03/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

@@ -1,8 +1,9 @@
 ---
 title: "TestRequestPage.GoToRecord Method"
+description: "Finds the specified record in a data set on a test page. The record is searched from the beginning of the dataset defined by the current filter. The search is performed by iterating across the rows, comparing the primary key with the primary key fields of the record. For large dataset, use SetFilter to limit the dataset."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Finds the specified record in a data set on a test page. The record is searched 
 [Ok := ]  TestRequestPage.GoToRecord(Rec: Record)
 ```
 ## Parameters
-*TestRequestPage*
-&emsp;Type: [TestRequestPage](testrequestpage-data-type.md)
+*TestRequestPage*  
+&emsp;Type: [TestRequestPage](testrequestpage-data-type.md)  
 An instance of the [TestRequestPage](testrequestpage-data-type.md) data type.
 
 *Rec*  
@@ -34,8 +35,8 @@ The record to find.
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the record is found, otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

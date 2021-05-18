@@ -1,8 +1,9 @@
 ---
 title: "Database.UserId Method"
+description: "Gets the user name of the user account that is logged on to the current session."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,8 +31,8 @@ ID :=   Database.UserId()
 
 
 ## Return Value
-*ID*
-&emsp;Type: [String](../string/string-data-type.md)
+*ID*  
+&emsp;Type: [String](../string/string-data-type.md)  
 This string contains the value of the User Name field in table 2000000120, the User table, for the current user.
 
 

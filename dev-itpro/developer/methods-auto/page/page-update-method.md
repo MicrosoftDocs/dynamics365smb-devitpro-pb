@@ -1,8 +1,9 @@
 ---
 title: "Page.Update Method"
+description: "Saves the current record and then updates the controls on the page. If you set the SaveRecord parameter to false, this method will not save the record before the page is updated."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Saves the current record and then updates the controls on the page. If you set t
  Page.Update([SaveRecord: Boolean])
 ```
 ## Parameters
-*Page*
-&emsp;Type: [Page](page-data-type.md)
+*Page*  
+&emsp;Type: [Page](page-data-type.md)  
 An instance of the [Page](page-data-type.md) data type.
 
 *SaveRecord*  

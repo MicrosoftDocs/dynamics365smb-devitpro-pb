@@ -1,8 +1,9 @@
 ---
 title: "XmlElement.Create Method"
+description: "Creates an XmlElement node."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,8 +31,8 @@ The fully qualified name of the element to create.
 
 
 ## Return Value
-*XmlElement*
-&emsp;Type: [XmlElement](xmlelement-data-type.md)
+*XmlElement*  
+&emsp;Type: [XmlElement](xmlelement-data-type.md)  
 The created XmlElement node.
 
 

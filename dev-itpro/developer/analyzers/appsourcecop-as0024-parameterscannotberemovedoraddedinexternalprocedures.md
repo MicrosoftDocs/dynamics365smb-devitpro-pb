@@ -1,8 +1,8 @@
 ---
-title: "Parameters cannot be removed or added in external procedures"
+title: "AppSourceCop Rule AS0024"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -97,7 +97,7 @@ codeunit 50120 AnotherCodeunit
 }
 ```
 
-## How to fix this diagnostic
+## How to fix this diagnostic?
 
 In order to fix this diagnostic, the changes on the procedure signature must be reverted. The procedure should be marked as obsolete, and a new procedure should be introduced.
 The behavior of the obsoleted procedure should be preserved in order to not break the runtime behavior of dependent extensions while they have not yet uptaken the new procedure.

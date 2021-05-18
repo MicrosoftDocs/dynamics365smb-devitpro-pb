@@ -1,8 +1,9 @@
 ---
 title: "Notification.HasData Method"
+description: "Checks if data was passed to a notification instance as specified by a SETDATA method call."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Checks if data was passed to a notification instance as specified by a SETDATA m
 Value :=   Notification.HasData(Name: String)
 ```
 ## Parameters
-*Notification*
-&emsp;Type: [Notification](notification-data-type.md)
+*Notification*  
+&emsp;Type: [Notification](notification-data-type.md)  
 An instance of the [Notification](notification-data-type.md) data type.
 
 *Name*  
@@ -34,8 +35,8 @@ The name of the data item that is specified by the SETDATA method call.
 
 
 ## Return Value
-*Value*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Value*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true**, if there is data; otherwise **false**.
 
 

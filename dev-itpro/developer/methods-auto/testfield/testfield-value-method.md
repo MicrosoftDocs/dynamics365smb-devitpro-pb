@@ -1,8 +1,9 @@
 ---
 title: "TestField.Value Method"
+description: "Gets or sets the value of this field."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,8 +27,8 @@ Gets or sets the value of this field.
 > [!NOTE]
 > This method can be invoked using property access syntax.
 ## Parameters
-*TestField*
-&emsp;Type: [TestField](testfield-data-type.md)
+*TestField*  
+&emsp;Type: [TestField](testfield-data-type.md)  
 An instance of the [TestField](testfield-data-type.md) data type.
 
 *Value*  
@@ -36,8 +37,8 @@ The new value to set for this field.
 
 
 ## Return Value
-*Value*
-&emsp;Type: [String](../string/string-data-type.md)
+*Value*  
+&emsp;Type: [String](../string/string-data-type.md)  
 The value of this field.
 
 

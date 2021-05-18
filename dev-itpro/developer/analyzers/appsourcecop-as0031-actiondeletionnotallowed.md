@@ -1,8 +1,8 @@
 ---
-title: "Actions that have been published must not be deleted."
+title: "AppSourceCop Rule AS0031"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,7 +28,7 @@ Removing an action which has been published is not allowed because it will break
 > [!NOTE]  
 > Renaming an action will also trigger this error. AppSourceCop will consider the renamed action as a new action, unrelated to the one defined in the previous version.
 
-## How to fix this diagnostic
+## How to fix this diagnostic?
 
 If the action was removed, revert the change by adding back the action and mark it as [Obsolete](../properties/devenv-obsoletestate-property.md).
 

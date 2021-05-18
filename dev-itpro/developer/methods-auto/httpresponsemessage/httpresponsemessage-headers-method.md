@@ -1,8 +1,9 @@
 ---
 title: "HttpResponseMessage.Headers Method"
+description: "Gets the HTTP response's HTTP headers."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,13 +28,13 @@ Headers :=   HttpResponseMessage.Headers()
 > This method can be invoked using property access syntax.
 
 ## Parameters
-*HttpResponseMessage*
-&emsp;Type: [HttpResponseMessage](httpresponsemessage-data-type.md)
+*HttpResponseMessage*  
+&emsp;Type: [HttpResponseMessage](httpresponsemessage-data-type.md)  
 An instance of the [HttpResponseMessage](httpresponsemessage-data-type.md) data type.
 
 ## Return Value
-*Headers*
-&emsp;Type: [HttpHeaders](../httpheaders/httpheaders-data-type.md)
+*Headers*  
+&emsp;Type: [HttpHeaders](../httpheaders/httpheaders-data-type.md)  
 The HTTP headers.
 
 

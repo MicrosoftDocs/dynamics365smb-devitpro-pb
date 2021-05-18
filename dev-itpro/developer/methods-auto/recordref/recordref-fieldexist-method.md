@@ -1,8 +1,9 @@
 ---
 title: "RecordRef.FieldExist Method"
+description: "Determines if the field that has the number FieldNo exists in the table that is referred to by the RecordRef. Returns an error if no table is currently selected."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Determines if the field that has the number FieldNo exists in the table that is 
 Exist :=   RecordRef.FieldExist(FieldNo: Integer)
 ```
 ## Parameters
-*RecordRef*
-&emsp;Type: [RecordRef](recordref-data-type.md)
+*RecordRef*  
+&emsp;Type: [RecordRef](recordref-data-type.md)  
 An instance of the [RecordRef](recordref-data-type.md) data type.
 
 *FieldNo*  
@@ -34,8 +35,8 @@ The FieldNo that you want to know whether exists in the table.
 
 
 ## Return Value
-*Exist*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Exist*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the field exists; otherwise **false**.
 
 

@@ -1,8 +1,9 @@
 ---
 title: "Session.StartSession Method"
+description: "Starts a session without a UI and runs the specified codeunit."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,25 +29,21 @@ Starts a session without a UI and runs the specified codeunit.
 ## Parameters
 *SessionId*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-The ID of the new session that is started. The ID is assigned to the SessionID variable after the session is started successfully. This parameter is passed by reference to the method.
-          
+The ID of the new session that is started. The ID is assigned to the SessionID variable after the session is started successfully. This parameter is passed by reference to the method.  
 *CodeunitId*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-The ID of the codeunit to run when the session is started.
-        
+The ID of the codeunit to run when the session is started.  
 *Company*  
 &emsp;Type: [String](../string/string-data-type.md)  
-The company in which to start the session. By default, the session is started in the same company as the calling session.
-        
+The company in which to start the session. By default, the session is started in the same company as the calling session.  
 *Record*  
 &emsp;Type: [Record](../record/record-data-type.md)  
-A record that is passed to the OnRun trigger of the codeunit that runs when the session is started. This parameter is optional.
-          
+A record that is passed to the OnRun trigger of the codeunit that runs when the session is started. This parameter is optional.  
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

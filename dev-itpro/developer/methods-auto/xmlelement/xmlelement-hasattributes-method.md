@@ -1,8 +1,9 @@
 ---
 title: "XmlElement.HasAttributes Method"
+description: "Gets a boolean value indicating whether this element has at least one attribute."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,13 +28,13 @@ Value :=   XmlElement.HasAttributes()
 > This method can be invoked using property access syntax.
 
 ## Parameters
-*XmlElement*
-&emsp;Type: [XmlElement](xmlelement-data-type.md)
+*XmlElement*  
+&emsp;Type: [XmlElement](xmlelement-data-type.md)  
 An instance of the [XmlElement](xmlelement-data-type.md) data type.
 
 ## Return Value
-*Value*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Value*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the current node has at least one attribute, otherwise **false**.
 
 

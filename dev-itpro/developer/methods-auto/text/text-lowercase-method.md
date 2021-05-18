@@ -1,8 +1,9 @@
 ---
 title: "Text.LowerCase Method"
+description: "Converts all letters in a string to lowercase."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -32,8 +33,8 @@ The string that you want to convert to lowercase. Only letters in the range A to
 
 
 ## Return Value
-*NewString*
-&emsp;Type: [String](../string/string-data-type.md)
+*NewString*  
+&emsp;Type: [String](../string/string-data-type.md)  
 The string converted to lowercase.
 
 

@@ -1,8 +1,9 @@
 ---
 title: "FieldRef.SetFilter Method"
+description: "Assigns a filter to a field that you specify."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Assigns a filter to a field that you specify.
  FieldRef.SetFilter(String: String [, Value: Any,...])
 ```
 ## Parameters
-*FieldRef*
-&emsp;Type: [FieldRef](fieldref-data-type.md)
+*FieldRef*  
+&emsp;Type: [FieldRef](fieldref-data-type.md)  
 An instance of the [FieldRef](fieldref-data-type.md) data type.
 
 *String*  

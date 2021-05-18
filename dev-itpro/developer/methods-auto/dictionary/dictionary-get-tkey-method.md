@@ -1,8 +1,9 @@
 ---
 title: "Dictionary.Get Method"
+description: "Gets the value associated with the specified key."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Gets the value associated with the specified key.
 Value :=   Dictionary.Get(Key: TKey)
 ```
 ## Parameters
-*Dictionary*
-&emsp;Type: [Dictionary](dictionary-data-type.md)
+*Dictionary*  
+&emsp;Type: [Dictionary](dictionary-data-type.md)  
 An instance of the [Dictionary](dictionary-data-type.md) data type.
 
 *Key*  
@@ -34,8 +35,8 @@ The key of the value to get. If the specified key is not found an error will be 
 
 
 ## Return Value
-*Value*
-&emsp;Type: [TValue](dictionary-data-type.md)
+*Value*  
+&emsp;Type: [TValue](dictionary-data-type.md)  
 The value associated with the specified key. If the specified key is not found, an error will be raised.
 
 

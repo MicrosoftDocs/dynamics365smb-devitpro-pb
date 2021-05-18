@@ -1,8 +1,9 @@
 ---
 title: "XmlDeclaration.Create Method"
+description: "Creates an XmlDeclaration node."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -38,8 +39,8 @@ A string containing "yes" or "no" that specifies whether the XML is standalone o
 
 
 ## Return Value
-*XmlDeclaration*
-&emsp;Type: [XmlDeclaration](xmldeclaration-data-type.md)
+*XmlDeclaration*  
+&emsp;Type: [XmlDeclaration](xmldeclaration-data-type.md)  
 The created XmlDeclaration node.
 
 

@@ -1,5 +1,5 @@
 ---
-title: Create automationCompany | Microsoft Docs
+title: Create automationCompany
 description: Creates an automation company object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

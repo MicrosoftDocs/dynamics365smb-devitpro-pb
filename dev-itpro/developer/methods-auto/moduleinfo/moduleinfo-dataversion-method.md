@@ -1,8 +1,9 @@
 ---
 title: "ModuleInfo.DataVersion Method"
+description: "Gets the version of the specified application's data in the context of a given tenant. This indicates the last version that was installed or successfully upgraded to and will not match the application version if the tenant is in a data upgrade pending state."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,13 +28,13 @@ DataVersion :=   ModuleInfo.DataVersion()
 > This method can be invoked using property access syntax.
 
 ## Parameters
-*ModuleInfo*
-&emsp;Type: [ModuleInfo](moduleinfo-data-type.md)
+*ModuleInfo*  
+&emsp;Type: [ModuleInfo](moduleinfo-data-type.md)  
 An instance of the [ModuleInfo](moduleinfo-data-type.md) data type.
 
 ## Return Value
-*DataVersion*
-&emsp;Type: [Version](../version/version-data-type.md)
+*DataVersion*  
+&emsp;Type: [Version](../version/version-data-type.md)  
 The version
 
 

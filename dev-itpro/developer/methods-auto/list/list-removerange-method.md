@@ -1,8 +1,9 @@
 ---
 title: "List.RemoveRange Method"
+description: "Removes a range of elements from the List."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Removes a range of elements from the List.
 [Ok := ]  List.RemoveRange(Index: Integer, Count: Integer)
 ```
 ## Parameters
-*List*
-&emsp;Type: [List](list-data-type.md)
+*List*  
+&emsp;Type: [List](list-data-type.md)  
 An instance of the [List](list-data-type.md) data type.
 
 *Index*  
@@ -38,8 +39,8 @@ The number of elements to remove.
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the range is a valid range, otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

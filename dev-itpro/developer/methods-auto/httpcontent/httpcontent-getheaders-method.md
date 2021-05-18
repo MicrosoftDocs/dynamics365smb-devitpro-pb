@@ -1,8 +1,9 @@
 ---
 title: "HttpContent.GetHeaders Method"
+description: "Gets the HTTP content headers as defined in RFC 2616."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Gets the HTTP content headers as defined in RFC 2616.
 [Ok := ]  HttpContent.GetHeaders(var Headers: HttpHeaders)
 ```
 ## Parameters
-*HttpContent*
-&emsp;Type: [HttpContent](httpcontent-data-type.md)
+*HttpContent*  
+&emsp;Type: [HttpContent](httpcontent-data-type.md)  
 An instance of the [HttpContent](httpcontent-data-type.md) data type.
 
 *Headers*  
@@ -34,8 +35,8 @@ The HTTP headers associated with the content.
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 Accessing the HttpContent property of HttpResponseMessage in a case when the request fails will result in an error. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

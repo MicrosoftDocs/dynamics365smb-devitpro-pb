@@ -1,8 +1,9 @@
 ---
 title: "TestPage.GoToRecord Method"
+description: "Finds the specified record in a data set on a test page."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Finds the specified record in a data set on a test page.
 [Ok := ]  TestPage.GoToRecord(Rec: Record)
 ```
 ## Parameters
-*TestPage*
-&emsp;Type: [TestPage](testpage-data-type.md)
+*TestPage*  
+&emsp;Type: [TestPage](testpage-data-type.md)  
 An instance of the [TestPage](testpage-data-type.md) data type.
 
 *Rec*  
@@ -34,15 +35,15 @@ The record to find.
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
-The GoToRecord method loops over all records until it finds the identifies record.  For each record, the [OnAfterGetCurrentRecord Trigger](../../triggers/devenv-onaftergetcurrrecord-trigger.md) is executed. 
+The GoToRecord method loops over all records until it finds the identifies record.  For each record, the [OnAfterGetCurrRecord Trigger](../../triggers-auto/page/devenv-onaftergetcurrrecord-page-trigger.md) is executed. 
 
 ## See Also
 [TestPage Data Type](testpage-data-type.md)  

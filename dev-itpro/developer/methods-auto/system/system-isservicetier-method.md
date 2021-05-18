@@ -1,8 +1,9 @@
 ---
 title: "System.IsServiceTier Method"
+description: "Gets a value indicating whether the runtime is a service tier."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,8 +31,8 @@ Ok :=   System.IsServiceTier()
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **True** if the runtime is a service tier, otherwise **false**.
 
 

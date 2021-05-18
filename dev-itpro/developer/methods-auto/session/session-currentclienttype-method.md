@@ -1,8 +1,9 @@
 ---
 title: "Session.CurrentClientType Method"
+description: "Gets the client type that is running in current session."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,8 +31,8 @@ ClientType :=   Session.CurrentClientType()
 
 
 ## Return Value
-*ClientType*
-&emsp;Type: [ClientType](../clienttype/clienttype-option.md)
+*ClientType*  
+&emsp;Type: [ClientType](../clienttype/clienttype-option.md)  
 The client type that is running in current session.
 
 

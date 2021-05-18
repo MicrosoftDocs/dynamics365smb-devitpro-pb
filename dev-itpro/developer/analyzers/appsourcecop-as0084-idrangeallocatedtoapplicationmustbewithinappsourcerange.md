@@ -1,8 +1,8 @@
 ---
-title: "The ID range assigned to the extension must be within the allowed range"
+title: "AppSourceCop Rule AS0084"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,7 +29,7 @@ For more information about the object ID ranges in Business Central, see [Object
 
 For more information about the properties in the `app.json` file, see [JSON Files](../devenv-json-files.md).
 
-## How to fix this diagnostic
+## How to fix this diagnostic?
 
 If you are targetting the AppSource markeplace, you need to update the ID range in your `app.json` file with the one that Microsoft provided you with.
 

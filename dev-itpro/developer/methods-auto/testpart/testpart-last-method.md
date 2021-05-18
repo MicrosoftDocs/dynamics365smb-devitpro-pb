@@ -1,8 +1,9 @@
 ---
 title: "TestPart.Last Method"
+description: "Sets the current row of the test page as the last row in the data set."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,13 +26,13 @@ Sets the current row of the test page as the last row in the data set.
 ```
 
 ## Parameters
-*TestPart*
-&emsp;Type: [TestPart](testpart-data-type.md)
+*TestPart*  
+&emsp;Type: [TestPart](testpart-data-type.md)  
 An instance of the [TestPart](testpart-data-type.md) data type.
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 True, if a last row is present.
 
 

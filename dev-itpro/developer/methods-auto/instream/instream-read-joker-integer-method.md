@@ -1,8 +1,9 @@
 ---
 title: "InStream.Read Method"
+description: "Reads a specified number of bytes from an InStream object. Data is read in binary format."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Reads a specified number of bytes from an InStream object. Data is read in binar
 [Read := ]  InStream.Read(var Variable: Any [, Length: Integer])
 ```
 ## Parameters
-*InStream*
-&emsp;Type: [InStream](instream-data-type.md)
+*InStream*  
+&emsp;Type: [InStream](instream-data-type.md)  
 An instance of the [InStream](instream-data-type.md) data type.
 
 *Variable*  
@@ -37,8 +38,8 @@ Describes the number of characters to be read. If you do not specify Length, the
 
 
 ## Return Value
-*Read*
-&emsp;Type: [Integer](../integer/integer-data-type.md)
+*Read*  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
  If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

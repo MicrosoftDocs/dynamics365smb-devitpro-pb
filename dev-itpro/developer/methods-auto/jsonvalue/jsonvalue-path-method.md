@@ -1,8 +1,9 @@
 ---
 title: "JsonValue.Path Method"
+description: "Retrieves the JSON path of the value relative to its containing tree."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,13 +28,13 @@ Path :=   JsonValue.Path()
 > This method can be invoked using property access syntax.
 
 ## Parameters
-*JsonValue*
-&emsp;Type: [JsonValue](jsonvalue-data-type.md)
+*JsonValue*  
+&emsp;Type: [JsonValue](jsonvalue-data-type.md)  
 An instance of the [JsonValue](jsonvalue-data-type.md) data type.
 
 ## Return Value
-*Path*
-&emsp;Type: [String](../string/string-data-type.md)
+*Path*  
+&emsp;Type: [String](../string/string-data-type.md)  
 The path of the value relative to its containing JSON tree. If the object is the root of the JSON tree, the path will be empty.
 
 

@@ -1,8 +1,9 @@
 ---
 title: "XmlProcessingInstruction.Create Method"
+description: "Creates an XmlProcessingInstruction node."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -34,8 +35,8 @@ The content of the processing instruction, excluding the target.
 
 
 ## Return Value
-*XmlProcessingInstruction*
-&emsp;Type: [XmlProcessingInstruction](xmlprocessinginstruction-data-type.md)
+*XmlProcessingInstruction*  
+&emsp;Type: [XmlProcessingInstruction](xmlprocessinginstruction-data-type.md)  
 The created XmlProcessingInstruction node.
 
 

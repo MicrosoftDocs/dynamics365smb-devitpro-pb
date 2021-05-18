@@ -1,8 +1,9 @@
 ---
 title: "System.ImportStreamWithUrlAccess Method"
+description: "Imports an object into a media container to be used in a temporary URL with a default expiration time."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -42,8 +43,8 @@ Number of minutes after which the object will expire.
 
 
 ## Return Value
-*ID*
-&emsp;Type: [Guid](../guid/guid-data-type.md)
+*ID*  
+&emsp;Type: [Guid](../guid/guid-data-type.md)  
 The ID of the media container, if the import is successful.
 
 

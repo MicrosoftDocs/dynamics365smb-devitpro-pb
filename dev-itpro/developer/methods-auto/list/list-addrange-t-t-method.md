@@ -1,8 +1,9 @@
 ---
 title: "List.AddRange Method"
+description: "Adds the elements of the specified collection to the end of the list."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Adds the elements of the specified collection to the end of the list.
  List.AddRange(Value: T [, Values: T,...])
 ```
 ## Parameters
-*List*
-&emsp;Type: [List](list-data-type.md)
+*List*  
+&emsp;Type: [List](list-data-type.md)  
 An instance of the [List](list-data-type.md) data type.
 
 *Value*  

@@ -1,8 +1,8 @@
 ---
-title: "Views that have been published must not be deleted."
+title: "AppSourceCop Rule AS0033"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,7 @@ Removing a view which has been published is not allowed because it will break de
 > [!NOTE]  
 > Renaming a view will also trigger this error. AppSourceCop will consider the renamed view as a new view, unrelated to the one defined in the previous version.
 
-## How to fix this diagnostic
+## How to fix this diagnostic?
 
 If the view was removed, revert the change by adding back the view and mark it as [Obsolete](../properties/devenv-obsoletestate-property.md).
 

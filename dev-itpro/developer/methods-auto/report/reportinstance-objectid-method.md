@@ -1,8 +1,9 @@
 ---
 title: "Report.ObjectId Method"
+description: "Gets or sets the name or number of the report."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Gets or sets the name or number of the report.
 String :=   Report.ObjectId([UseNames: Boolean])
 ```
 ## Parameters
-*Report*
-&emsp;Type: [Report](report-data-type.md)
+*Report*  
+&emsp;Type: [Report](report-data-type.md)  
 An instance of the [Report](report-data-type.md) data type.
 
 *UseNames*  
@@ -34,8 +35,8 @@ An instance of the [Report](report-data-type.md) data type.
 
 
 ## Return Value
-*String*
-&emsp;Type: [String](../string/string-data-type.md)
+*String*  
+&emsp;Type: [String](../string/string-data-type.md)  
 The name or number of the report.
 
 

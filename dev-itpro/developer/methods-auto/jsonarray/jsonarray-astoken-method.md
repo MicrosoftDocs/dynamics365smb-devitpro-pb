@@ -1,8 +1,9 @@
 ---
 title: "JsonArray.AsToken Method"
+description: "Converts the value in a JsonArray to a JsonToken data type."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,13 +26,13 @@ Token :=   JsonArray.AsToken()
 ```
 
 ## Parameters
-*JsonArray*
-&emsp;Type: [JsonArray](jsonarray-data-type.md)
+*JsonArray*  
+&emsp;Type: [JsonArray](jsonarray-data-type.md)  
 An instance of the [JsonArray](jsonarray-data-type.md) data type.
 
 ## Return Value
-*Token*
-&emsp;Type: [JsonToken](../jsontoken/jsontoken-data-type.md)
+*Token*  
+&emsp;Type: [JsonToken](../jsontoken/jsontoken-data-type.md)  
 
 
 

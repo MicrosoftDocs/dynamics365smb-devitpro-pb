@@ -11,7 +11,10 @@ ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 # Query Properties
-This topic lists properties that apply to the query object.  
+
+This article lists properties that apply to the query object.  
+
+[!INCLUDE[properties_note](../includes/properties_note.md)]
 
 |Property Name|Applies to|
 |-------------|-----------|  

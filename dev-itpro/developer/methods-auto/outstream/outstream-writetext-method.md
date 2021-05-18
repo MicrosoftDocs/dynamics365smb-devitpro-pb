@@ -1,8 +1,9 @@
 ---
 title: "OutStream.WriteText Method"
+description: "Writes text to an OutStream object."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Writes text to an OutStream object.
 [Written := ]  OutStream.WriteText([Text: String] [, Length: Integer])
 ```
 ## Parameters
-*OutStream*
-&emsp;Type: [OutStream](outstream-data-type.md)
+*OutStream*  
+&emsp;Type: [OutStream](outstream-data-type.md)  
 An instance of the [OutStream](outstream-data-type.md) data type.
 
 *Text*  
@@ -38,8 +39,8 @@ The number of characters to be written.
 
 
 ## Return Value
-*Written*
-&emsp;Type: [Integer](../integer/integer-data-type.md)
+*Written*  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
  If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

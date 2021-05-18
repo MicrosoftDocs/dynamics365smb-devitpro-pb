@@ -1,8 +1,9 @@
 ---
 title: "RecordRef.IsEmpty Method"
+description: "Determines whether any records exist in a filtered set of records in a table."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,13 +28,13 @@ Empty :=   RecordRef.IsEmpty()
 > This method can be invoked using property access syntax.
 
 ## Parameters
-*RecordRef*
-&emsp;Type: [RecordRef](recordref-data-type.md)
+*RecordRef*  
+&emsp;Type: [RecordRef](recordref-data-type.md)  
 An instance of the [RecordRef](recordref-data-type.md) data type.
 
 ## Return Value
-*Empty*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Empty*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the record or table is empty; otherwise, **false**.
 
 

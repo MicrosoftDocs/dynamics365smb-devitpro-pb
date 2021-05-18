@@ -1,8 +1,9 @@
 ---
 title: "AboutTextML Property"
+description: "Sets the body of text that appears in a teaching tip in the UI."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,7 +17,7 @@ author: SusanneWindfeldPedersen
 # AboutTextML Property
 > **Version**: _Available or changed with runtime version 7.0._
 
-Sets the text of the entity used in the About box for teaching tips in the UI
+Sets the body of text that appears in a teaching tip in the UI.
 
 ## Applies to
 -   Page
@@ -29,12 +30,23 @@ Sets the text of the entity used in the About box for teaching tips in the UI
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Syntax
+## Property Value
+
+Accepts a plain text value. Markdown or any similar formatting are treated as literals.
+
+## Example
 
 ```al
-AboutTextML = ENU = 'This text shows up as a teaching tip in the UI.', DAN = 'Denne tekst vises som et læringstip på brugergrænsefladen.';
+AboutTextML = ENU = 'Sales invoices appear in this list until they are finalized and posted. After an invoice is posted, find it again in the Posted Sales Invoices list.', DAN = 'Salgsfakturaer vises i denne liste indtil de er posteret. Når en faktura er posteret, kan den findes igen i listen over posterede salgsfakturaer.';
 ```
 
+## Remarks 
+
+For more information, see the [AboutText Property](devenv-abouttext-property.md).
+
 ## See Also  
+
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
+[AboutText Property](devenv-abouttext-property.md)  
+[AboutTitleMl Property](devenv-abouttitleml-property.md)  

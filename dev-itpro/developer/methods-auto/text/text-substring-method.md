@@ -1,8 +1,9 @@
 ---
 title: "Text.Substring Method"
+description: "Retrieves a substring from this instance."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,8 +27,8 @@ Substring :=   Text.Substring(StartIndex: Integer [, Count: Integer])
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
 ## Parameters
-*Text*
-&emsp;Type: [Text](text-data-type.md)
+*Text*  
+&emsp;Type: [Text](text-data-type.md)  
 An instance of the [Text](text-data-type.md) data type.
 
 *StartIndex*  
@@ -40,8 +41,8 @@ The number of characters in the substring.
 
 
 ## Return Value
-*Substring*
-&emsp;Type: [Text](text-data-type.md)
+*Substring*  
+&emsp;Type: [Text](text-data-type.md)  
 The substring extracted from this instance.
 
 

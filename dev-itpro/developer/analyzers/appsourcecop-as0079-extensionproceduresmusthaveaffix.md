@@ -1,8 +1,8 @@
 ---
-title: "An affix is required for procedures defined in extension objects."
+title: "AppSourceCop Rule AS0079"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,7 +25,7 @@ An affix is required for procedures defined in extension objects, because it pre
 
 In order to avoid name clashes for procedures added by your extension objects (i.e table extension, page extension) and procedures added by other extensions, an affix must be prepended or appended to the name of all new procedures in extension objects, extension objects, and fields. For more information, see [Benefits and Guidelines for using a Prefix or Suffix](../../compliance/apptest-prefix-suffix.md).
 
-## How to fix this diagnostic
+## How to fix this diagnostic?
 
 ### For new extension objects or new procedures
 

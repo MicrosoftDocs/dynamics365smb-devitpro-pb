@@ -1,5 +1,5 @@
 ---
-title: Exporting Databases
+title: Exporting Databases in the Admin Center
 description: Use the Business Central administration center to export tenant databases per environment.  
 author: jswymer
 
@@ -9,11 +9,11 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, database, export, bacpac, backup
-ms.date: 04/01/2021
+ms.date: 04/15/2021
 ms.author: jswymer
 
 ---
-# Exporting Databases
+# Exporting Databases in the Admin Center
 
 [!INCLUDE[2019_releasewave2](../includes/2019_releasewave2.md)]
 
@@ -98,6 +98,14 @@ This means that if you want to export the data in order to change the customer's
 > While you can import the downloaded BACPAC file into your own SQL Server instance, Microsoft does not provide support for creating a working on-premises environment from the BACPAC that you download from [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online.  
 
 For more information, see [Quickstart: Import a BACPAC file to a database in Azure SQL Database](/azure/sql-database/sql-database-import), [Migrating to Single-Tenancy From Multitenancy](../deployment/Merging-an-Application-Database-with-a-Tenant-Database.md), and [When to choose on-premises deployment](../deployment/Deployment.md#when-to-choose-on-premises-deployment).  
+
+## Restoring the exported data to Business Central online
+
+If you decide at some point that you want to restore the exported data to a new environment in [!INCLUDE [prod_short](../includes/prod_short.md)] online, then you must go through the same steps as you went through to migrate from on-premises to [!INCLUDE [prod_short](../includes/prod_short.md)] online. This way, you can prepare the database so that it's ready to migrate to the latest version of [!INCLUDE [prod_short](../includes/prod_short.md)]. For example, you could choose to replicate the data to a sandbox environment for further testing and training. For more information, see [Migrating On-Premises Data to Business Central Online](migrate-data.md).  
+
+## Restoring the exported data to a container
+
+If you want to use the exported data in a container-based developer environment, you can use Windows PowerShell scripts to help you do that, including the [BCContainerHelper PowerShell module](https://github.com/Microsoft/navcontainerhelper).  
 
 ## See also
 

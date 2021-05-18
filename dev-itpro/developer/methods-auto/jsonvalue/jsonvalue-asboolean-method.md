@@ -1,8 +1,9 @@
 ---
 title: "JsonValue.AsBoolean Method"
+description: "Converts the value in a JsonValue to a Boolean data type."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,13 +26,13 @@ Result :=   JsonValue.AsBoolean()
 ```
 
 ## Parameters
-*JsonValue*
-&emsp;Type: [JsonValue](jsonvalue-data-type.md)
+*JsonValue*  
+&emsp;Type: [JsonValue](jsonvalue-data-type.md)  
 An instance of the [JsonValue](jsonvalue-data-type.md) data type.
 
 ## Return Value
-*Result*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Result*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 The operation will succeed if the value was created from a Boolean using SetValue or if the value was parsed from a string containing one of the values : **true** or **false**. The operation will fail with a run-time error otherwise.
 
 

@@ -1,8 +1,9 @@
 ---
 title: "Page.SetBackgroundTaskResult Method"
+description: "Sets the page background task result as a dictionary. When the task is completed, the OnPageBackgroundCompleted trigger will be invoked on the page with this result dictionary."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -34,7 +35,7 @@ Specifies the dictionary of results for the page background task.
 
 ## Remarks
 
-You use this method in a page background task codeunit to pass the results of the page background task codeunit to the calling page. Before calling this method, use the [Add method](../dictionary/dictionary-add-method.md) to populate the `Results` dictionary with the key-value pairs that you want to pass to calling page's [OnPageBackgroundTaskCompleted trigger](../../triggers/devenv-onpagebackgroundtaskcompleted-trigger.md). The `OnPageBackgroundCompleted` trigger can then handle the results on the calling page, such as updating the record in the UI or database.
+You use this method in a page background task codeunit to pass the results of the page background task codeunit to the calling page. Before calling this method, use the [Add method](../dictionary/dictionary-add-method.md) to populate the `Results` dictionary with the key-value pairs that you want to pass to calling page's [OnPageBackgroundTaskCompleted trigger](../../triggers-auto/page/devenv-onpagebackgroundtaskcompleted-page-trigger.md). The `OnPageBackgroundCompleted` trigger can then handle the results on the calling page, such as updating the record in the UI or database.
     
 ## Example
 

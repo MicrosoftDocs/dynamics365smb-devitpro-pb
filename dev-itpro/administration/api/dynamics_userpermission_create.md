@@ -1,5 +1,5 @@
 ---
-title: Create userPermission | Microsoft Docs
+title: Create userPermission
 description: Creates an user permission object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"

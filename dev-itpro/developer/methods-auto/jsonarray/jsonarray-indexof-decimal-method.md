@@ -1,8 +1,9 @@
 ---
 title: "JsonArray.IndexOf Method"
+description: "Determines the index of a specific value in the JsonArray."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Determines the index of a specific value in the JsonArray.
 Index :=   JsonArray.IndexOf(Value: Decimal)
 ```
 ## Parameters
-*JsonArray*
-&emsp;Type: [JsonArray](jsonarray-data-type.md)
+*JsonArray*  
+&emsp;Type: [JsonArray](jsonarray-data-type.md)  
 An instance of the [JsonArray](jsonarray-data-type.md) data type.
 
 *Value*  
@@ -34,8 +35,8 @@ An instance of the [JsonArray](jsonarray-data-type.md) data type.
 
 
 ## Return Value
-*Index*
-&emsp;Type: [Integer](../integer/integer-data-type.md)
+*Index*  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 The position of the value in the JsonArray. -1 will be returned if Value cannot be found in the array.
 
 

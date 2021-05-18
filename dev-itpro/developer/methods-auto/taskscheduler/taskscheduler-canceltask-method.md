@@ -1,8 +1,9 @@
 ---
 title: "TaskScheduler.CancelTask Method"
+description: "Cancels and deletes a scheduled task that runs a specific codeunit."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -31,8 +32,8 @@ Specifies the unique identifier of the task. The unique identifier is returned b
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 
 
 

@@ -1,8 +1,9 @@
 ---
 title: "Record.SetPosition Method"
+description: "Sets the fields in a primary key on a record to the values specified in the supplied string. The remaining fields are not changed."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Sets the fields in a primary key on a record to the values specified in the supp
  Record.SetPosition(String: String)
 ```
 ## Parameters
-*Record*
-&emsp;Type: [Record](record-data-type.md)
+*Record*  
+&emsp;Type: [Record](record-data-type.md)  
 An instance of the [Record](record-data-type.md) data type.
 
 *String*  

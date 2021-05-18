@@ -1,8 +1,9 @@
 ---
 title: "XmlNamespaceManager.AddNamespace Method"
+description: "Adds the given namespace to the collection."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Adds the given namespace to the collection.
  XmlNamespaceManager.AddNamespace(Prefix: String, Uri: String)
 ```
 ## Parameters
-*XmlNamespaceManager*
-&emsp;Type: [XmlNamespaceManager](xmlnamespacemanager-data-type.md)
+*XmlNamespaceManager*  
+&emsp;Type: [XmlNamespaceManager](xmlnamespacemanager-data-type.md)  
 An instance of the [XmlNamespaceManager](xmlnamespacemanager-data-type.md) data type.
 
 *Prefix*  

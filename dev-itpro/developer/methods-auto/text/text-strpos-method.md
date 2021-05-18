@@ -1,8 +1,9 @@
 ---
 title: "Text.StrPos Method"
+description: "Searches for the first occurrence of substring inside a string."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -36,8 +37,8 @@ The substring for which you want to search.
 
 
 ## Return Value
-*Position*
-&emsp;Type: [Integer](../integer/integer-data-type.md)
+*Position*  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 The one-based index of the first occurrence of the substring inside the string.
 
 

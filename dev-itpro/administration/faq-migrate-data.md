@@ -33,7 +33,9 @@ If you are currently on a version of Dynamics NAV, you must upgrade to [!INCLUDE
 
 ### System requirements
 
-To migrate to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, the on-premises solution must use SQL Server 2016 or a later version, and the database must have compatibility level 130 or higher. The on-premises solution must also be one of the supported versions. For more information, see [System Requirements for [!INCLUDE[prod_long](../developer/includes/prod_long.md)] 2021 Release Wave 1](../deployment/system-requirements-business-central-v18.md) and subsequent versions.  
+To migrate to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, the on-premises solution must use SQL Server 2016 or a later version, and the database must have compatibility level 130 or higher. The on-premises solution must also be one of the supported versions.  
+
+For comparison, see the [System Requirements for [!INCLUDE[prod_long](../developer/includes/prod_long.md)] (on-premises) 2021 Release Wave 1](../deployment/system-requirements-business-central-v18.md) and subsequent versions.  
 
 ## How is my on-premises data migrated to my [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online tenant?
 

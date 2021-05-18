@@ -1,8 +1,9 @@
 ---
 title: "XmlAttributeCollection.Remove Method"
+description: "Removes the specified attribute from the collection."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Removes the specified attribute from the collection.
  XmlAttributeCollection.Remove(Attribute: XmlAttribute)
 ```
 ## Parameters
-*XmlAttributeCollection*
-&emsp;Type: [XmlAttributeCollection](xmlattributecollection-data-type.md)
+*XmlAttributeCollection*  
+&emsp;Type: [XmlAttributeCollection](xmlattributecollection-data-type.md)  
 An instance of the [XmlAttributeCollection](xmlattributecollection-data-type.md) data type.
 
 *Attribute*  

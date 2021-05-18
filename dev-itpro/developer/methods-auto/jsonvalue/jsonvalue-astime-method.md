@@ -1,8 +1,9 @@
 ---
 title: "JsonValue.AsTime Method"
+description: "Converts the value in a JsonValue to a Time data type."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,13 +26,13 @@ Result :=   JsonValue.AsTime()
 ```
 
 ## Parameters
-*JsonValue*
-&emsp;Type: [JsonValue](jsonvalue-data-type.md)
+*JsonValue*  
+&emsp;Type: [JsonValue](jsonvalue-data-type.md)  
 An instance of the [JsonValue](jsonvalue-data-type.md) data type.
 
 ## Return Value
-*Result*
-&emsp;Type: [Time](../time/time-data-type.md)
+*Result*  
+&emsp;Type: [Time](../time/time-data-type.md)  
 If the JsonValue does not contain a string of the format "HH:mm:ss.FFFFFFF" ( see Custom Date and Time Format Strings) the operation will fail with a run-time error.
 
 

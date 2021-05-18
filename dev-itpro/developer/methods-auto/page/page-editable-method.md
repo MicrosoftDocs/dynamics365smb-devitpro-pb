@@ -1,8 +1,9 @@
 ---
 title: "Page.Editable Method"
+description: "Gets or sets the default editability of the page."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,8 +27,8 @@ Gets or sets the default editability of the page.
 > [!NOTE]
 > This method can be invoked using property access syntax.
 ## Parameters
-*Page*
-&emsp;Type: [Page](page-data-type.md)
+*Page*  
+&emsp;Type: [Page](page-data-type.md)  
 An instance of the [Page](page-data-type.md) data type.
 
 *NewEditable*  
@@ -36,8 +37,8 @@ The new default editability of the page.
 
 
 ## Return Value
-*Editable*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Editable*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 Indicates the editability of the page.
       
 

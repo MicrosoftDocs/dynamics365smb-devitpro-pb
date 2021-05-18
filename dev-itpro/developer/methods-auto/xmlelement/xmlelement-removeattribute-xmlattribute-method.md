@@ -1,8 +1,9 @@
 ---
 title: "XmlElement.RemoveAttribute Method"
+description: "Removes the specified attribute from this element."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Removes the specified attribute from this element.
  XmlElement.RemoveAttribute(Attribute: XmlAttribute)
 ```
 ## Parameters
-*XmlElement*
-&emsp;Type: [XmlElement](xmlelement-data-type.md)
+*XmlElement*  
+&emsp;Type: [XmlElement](xmlelement-data-type.md)  
 An instance of the [XmlElement](xmlelement-data-type.md) data type.
 
 *Attribute*  

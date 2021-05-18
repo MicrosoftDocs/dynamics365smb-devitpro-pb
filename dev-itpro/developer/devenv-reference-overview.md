@@ -42,7 +42,7 @@ This section describes all of the objects that are available with the AL Languag
 |Learn about writing codeunits for your extension.|[Codeunit Object](devenv-codeunit-object.md)|
 |Get an overview of methods in AL grouped by the data type that they support.|[Data Types and Methods in AL](methods-auto/library.md)|
 |Get an overview of properties in AL grouped by the objects that they support.|[Properties Overview](properties/devenv-properties.md)|
-|Get an overview of triggers in AL grouped by the objects that they support.|[Triggers Overview](triggers/devenv-triggers.md)|
+|Get an overview of triggers in AL grouped by the objects that they support.|[Triggers Overview](triggers-auto/devenv-triggers.md)|
 
 ## API for HTTP, JSON, TextBuilder, and XML
 For information about the HTTP, JSON, TextBuilder, and XML classes, see [HTTP, JSON, TextBuilder, and XML API Overview](devenv-restapi-overview.md).

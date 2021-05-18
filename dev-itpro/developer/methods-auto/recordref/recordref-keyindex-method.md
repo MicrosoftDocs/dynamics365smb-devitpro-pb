@@ -1,8 +1,9 @@
 ---
 title: "RecordRef.KeyIndex Method"
+description: "Gets the KeyRef of the key that has the index specified in the table that is currently selected. The key can be composed of fields of any supported data type. Data types that are not supported include BLOBs, FlowFilters, variables, and functions. If the sorting key is set to a field that is not part of a key, then the KEYINDEX is -1."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Gets the KeyRef of the key that has the index specified in the table that is cur
 Key :=   RecordRef.KeyIndex(Index: Integer)
 ```
 ## Parameters
-*RecordRef*
-&emsp;Type: [RecordRef](recordref-data-type.md)
+*RecordRef*  
+&emsp;Type: [RecordRef](recordref-data-type.md)  
 An instance of the [RecordRef](recordref-data-type.md) data type.
 
 *Index*  
@@ -34,8 +35,8 @@ The number of the index in which you are interested.
 
 
 ## Return Value
-*Key*
-&emsp;Type: [KeyRef](../keyref/keyref-data-type.md)
+*Key*  
+&emsp;Type: [KeyRef](../keyref/keyref-data-type.md)  
 The KeyRef of the field that has the specified index.
 
 

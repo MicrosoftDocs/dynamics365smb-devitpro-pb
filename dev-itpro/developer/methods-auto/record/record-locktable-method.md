@@ -1,8 +1,9 @@
 ---
 title: "Record.LockTable Method"
+description: "Locks a table to protect it from write transactions that conflict with each other."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +25,8 @@ Locks a table to protect it from write transactions that conflict with each othe
  Record.LockTable([Wait: Boolean] [, VersionCheck: Boolean])
 ```
 ## Parameters
-*Record*
-&emsp;Type: [Record](record-data-type.md)
+*Record*  
+&emsp;Type: [Record](record-data-type.md)  
 An instance of the [Record](record-data-type.md) data type.
 
 *Wait*  
