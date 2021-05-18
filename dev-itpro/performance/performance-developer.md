@@ -328,6 +328,8 @@ The Performance Toolkit helps answer questions such as, "Does my solution for Bu
 
 For more information, see [The Performance Toolkit Extension](../developer/devenv-performance-toolkit.md).
 
+NB! To test insert/update performance, make sure to un-install the test framework first. If the test framework is installed, then no insert/update statements can utilize bulk mode and will instead run row-by-row. 
+
 ### Performance Throughput Analysis
 
 The Performance Toolkit doesn't answer questions such as, "How many orders can Business Central process per hour?" For this kind of analysis, test the time to execute key scenarios using the Performance Toolkit, and then use the guidance on [Operational Limits for Business Central Online](../administration/operational-limits-online.md). For advanced analysis, consider using a queueing model such as a [M/M/1 queue](https://en.wikipedia.org/wiki/M/M/1_queue) to answer whether the system can process the workload you intend.
