@@ -29,4 +29,3 @@ The following table lists the triggers that apply to the query object.
 [Query Object](devenv-query-object.md)  
 [Triggers](triggers-auto/devenv-triggers.md)  
 [SetFilter Method (Query)](methods-auto/query/queryinstance-setfilter-method.md)  
-[Report Triggers](devenv-report-triggers.md)
