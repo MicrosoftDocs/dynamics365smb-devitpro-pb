@@ -12,6 +12,7 @@ author: SusanneWindfeldPedersen
 ---
 
 # Integration Triggers
+
 The following triggers have been added to support integration with Dynamics 365 for Sales solutions:  
 
 - **OnDatabaseCreate**  
@@ -22,12 +23,15 @@ The following triggers have been added to support integration with Dynamics 365 
 
 - **OnDatabaseDelete**  
 
-## Applies to  
+## Applies to 
+
 - Pages  
 - Tables  
 
-## Remarks  
+## Remarks
+
 These triggers are called whenever a record changes through code or user interaction.  
 
 ## See Also  
- [Triggers](devenv-triggers.md)  
+
+[Triggers](triggers-auto/devenv-triggers.md)  
