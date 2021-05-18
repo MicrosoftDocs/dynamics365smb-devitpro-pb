@@ -6151,6 +6151,11 @@
     "redirect_document_id": false
   },
   { 
+    "source_path": "dev-itpro/developer/triggers/devenv-report-triggers.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/devenv-report-triggers",
+    "redirect_document_id": false
+  },
+  { 
     "source_path": "dev-itpro/developer/triggers/devenv-report-and-data-item-triggers.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers-auto/devenv-triggers",
     "redirect_document_id": false
