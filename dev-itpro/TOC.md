@@ -1,4 +1,4 @@
-# [Development and administration](index.md)
+﻿# [Development and administration](index.md)
 # [New and planned](/dynamics365/business-central/product-news?toc=/dynamics365/business-central/dev-itpro/toc.json)
 # Get started
 ## [Overview of business functionality](/dynamics365/business-central/across-business-functionality?toc=/dynamics365/business-central/dev-itpro/toc.json)
@@ -2424,6 +2424,7 @@
 #### [XmlVersionNo Property](developer/properties/devenv-xmlversionno-property.md)
 <!-- [//]: # (IMPORTANT: END>DO_NOT_EDIT_PROPERTIES) -->
 ### Triggers
+#### [Overview](developer/triggers-auto/devenv-triggers.md)
 #### Trigger Events
 <!-- [//]: # (START>DO_NOT_EDIT_TRIGGERS)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
