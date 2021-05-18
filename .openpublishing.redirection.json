@@ -6131,6 +6131,31 @@
     "redirect_document_id": false
   },
   { 
+    "source_path": "dev-itpro/developer/triggers/devenv-codeunit-triggers.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers-auto/devenv-triggers",
+    "redirect_document_id": false
+  },
+  { 
+    "source_path": "dev-itpro/developer/triggers/devenv-integration-triggers.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers-auto/devenv-triggers",
+    "redirect_document_id": false
+  },
+  { 
+    "source_path": "dev-itpro/developer/triggers/devenv-page-and-action-triggers.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers-auto/devenv-triggers",
+    "redirect_document_id": false
+  },
+  { 
+    "source_path": "dev-itpro/developer/triggers/devenv-query-triggers.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers-auto/devenv-triggers",
+    "redirect_document_id": false
+  },
+  { 
+    "source_path": "dev-itpro/developer/triggers/devenv-report-and-data-item-triggers.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/triggers-auto/devenv-triggers",
+    "redirect_document_id": false
+  },
+  { 
    "source_path": "dev-itpro/developer/properties/devenv-field-no.-property.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/properties/devenv-properties",
     "redirect_document_id": false
