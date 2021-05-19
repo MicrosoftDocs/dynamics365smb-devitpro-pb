@@ -1,12 +1,13 @@
 ---
 title: "Report.NewPagePerRecord Method"
+description: "Gets or sets the current setting of the NewPagePerRecord property."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/19/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Report.NewPagePerRecord Method
-> **Version**: _Available from runtime version 1.0 until version 1.0 where it was deprecated._
+> **Version**: _Available or changed with runtime version 1.0 until version 1.0 where it was deprecated._
 
 Gets or sets the current setting of the NewPagePerRecord property.
 
@@ -26,8 +27,8 @@ Gets or sets the current setting of the NewPagePerRecord property.
 > [!NOTE]
 > This method can be invoked using property access syntax.
 ## Parameters
-*Report*
-&emsp;Type: [Report](report-data-type.md)
+*Report*  
+&emsp;Type: [Report](report-data-type.md)  
 An instance of the [Report](report-data-type.md) data type.
 
 *SetNewPagePerRecord*  
@@ -36,8 +37,8 @@ The new setting of the NewPagePerRecord property.
 
 
 ## Return Value
-*IsNewPagePerRecord*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*IsNewPagePerRecord*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 The setting of the NewPagePerRecord property.
 
 

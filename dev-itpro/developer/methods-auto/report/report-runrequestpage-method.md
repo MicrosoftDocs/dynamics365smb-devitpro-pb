@@ -1,12 +1,13 @@
 ---
 title: "Report.RunRequestPage Method"
+description: "Runs the request page for a report without running the report. Returns an XML string that contains the request page parameters that are entered on the request page."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/19/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Report.RunRequestPage Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Runs the request page for a report without running the report. Returns an XML string that contains the request page parameters that are entered on the request page.
 
@@ -35,8 +36,8 @@ A string of request page parameters as XML to use to run the report.
 
 
 ## Return Value
-*Parameters*
-&emsp;Type: [String](../string/string-data-type.md)
+*Parameters*  
+&emsp;Type: [String](../string/string-data-type.md)  
 XML string that contains the request page parameters that are entered on the request page
 
 

@@ -1,12 +1,13 @@
 ---
 title: "Report.SetTableView Method"
+description: "Applies the table view on the current record as the table view for the page, report, or XmlPort."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/19/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Report.SetTableView Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Applies the table view on the current record as the table view for the page, report, or XmlPort.
 
@@ -24,8 +25,8 @@ Applies the table view on the current record as the table view for the page, rep
  Report.SetTableView(var Record: Record)
 ```
 ## Parameters
-*Report*
-&emsp;Type: [Report](report-data-type.md)
+*Report*  
+&emsp;Type: [Report](report-data-type.md)  
 An instance of the [Report](report-data-type.md) data type.
 
 *Record*  
