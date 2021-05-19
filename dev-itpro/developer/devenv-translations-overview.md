@@ -21,15 +21,16 @@ The format for translation
 
 ## The life of a caption 
 
-Translations can be applied using multiple properties, and there are multiple opportunities to change them. For example, the caption of a page can be changed from multiple places. The following list shows the order in which a page name will be overwritten. 
+Translations can be applied using multiple properties, and there are multiple opportunities to change them. The caption of a page, for example, can be changed from multiple places. With that flexibility, a defined structure is defined. A page name will be overwritten as follows: 
 
-1. Page Name 
-2. Page Caption 
-3. Page Extension Caption 
+1. Page Name
+2. Page Caption
+3. Page Extension Caption
 4. Translation app 
 5. Page Customization 
 
-Translations provided using profile configuration cannot be overwritten by any apps. 
+> [!NOTE]  
+> Translations provided using profile configuration cannot be overwritten by any apps. 
 
 ## Translations in the same layer
 
@@ -61,19 +62,20 @@ The resulting caption will then be **Customer** in en-US, **Cliente** in it-IT, 
 
 Once translations on the different layers have been collected, the translations that display on the user interface are then picked, based on the context.
 
-The following definition of language is used.
+The following definitions are used in the illustration:
+
 
 **Local language**  
-The language that the user specifies in their settings.
+The language that the user specifies in [!INCLUDE[prod_short](../includes/prod_short.md)] settings.
 
 **Global language**  
-By default it is the same as the local language, but this can be changed from AL code. 
+By default it is the same as the local language, but the global language can be changed from AL code. 
 
 **Default Language**  
-A server setting. For cloud it is set to the same language that you picked when signing up for Business Central.
+Is defined by a server setting. For [!INCLUDE[prod_short](../includes/prod_short.md)] online it is set to the same language that was selected when signing up for Business Central.
 
 **Primary language**  
-Defined as the primary culture of a language, for example, `es-MX` (Spanish-Mexico) will be `es-ES` (Spanish-Spain).
+Defined as the primary culture of a language, for example, for `es-MX` (Spanish-Mexico) the primary language will be `es-ES` (Spanish-Spain).
 
 **Field Caption**  
 If the page control is backed by a table field, then if no matches where found then it would use the same algorithm from the control by on the field.
