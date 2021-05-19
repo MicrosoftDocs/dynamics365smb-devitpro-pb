@@ -1,13 +1,12 @@
 ---
 title: "Report.SaveAsHtml Method"
-description: "Saves a report as an HTML file. The file is saved on the computer where the server instance is running, and then downloaded to the client when ready. \> This method is only supported when a report uses a Word report layout when it is run."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/19/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: reference
+ms.topic: article
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -15,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Report.SaveAsHtml Method
-> **Version**: _Available or changed with runtime version 1.0._
+> **Version**: _Available from runtime version 1.0._
 
 Saves a report as an HTML file. The file is saved on the computer where the server instance is running, and then downloaded to the client when ready. \> This method is only supported when a report uses a Word report layout when it is run.
 
@@ -27,8 +26,8 @@ Saves a report as an HTML file. The file is saved on the computer where the serv
 [Ok := ]  Report.SaveAsHtml(FileName: String)
 ```
 ## Parameters
-*Report*  
-&emsp;Type: [Report](report-data-type.md)  
+*Report*
+&emsp;Type: [Report](report-data-type.md)
 An instance of the [Report](report-data-type.md) data type.
 
 *FileName*  
@@ -38,8 +37,8 @@ The folder path and name of the file that you want to save the report as. The pa
 
 
 ## Return Value
-*Ok*  
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
+*Ok*
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
 **true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
