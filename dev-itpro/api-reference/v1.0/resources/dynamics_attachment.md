@@ -1,6 +1,6 @@
 ---
-title: attachment resource type
-description: An attachment in Dynamics 365 Business Central.
+title: (v1.0) attachment resource type
+description: (v1.0) An attachment in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

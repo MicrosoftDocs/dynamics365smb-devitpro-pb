@@ -1,6 +1,6 @@
 ---
-title: Create vendor defaultDimensions
-description: Creates a default dimensions of the vendor object in Dynamics 365 Business Central.
+title: (v1.0) Create vendor defaultDimensions
+description: (v1.0) Creates a default dimensions of the vendor object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

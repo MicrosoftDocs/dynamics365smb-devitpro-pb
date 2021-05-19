@@ -1,6 +1,6 @@
 ---
-title: customerPayments resource type
-description: A customer payments object in Dynamics 365 Business Central.
+title: (v1.0) customerPayments resource type
+description: (v1.0) A customer payments object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

@@ -1,6 +1,6 @@
 ---
-title: currencies resource type
-description: A currency object in Dynamics 365 Business Central 
+title: (v1.0) currencies resource type
+description: (v1.0) A currency object in Dynamics 365 Business Central 
  
 author: SusanneWindfeldPedersen
 

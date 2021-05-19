@@ -1,6 +1,6 @@
 ---
-title: vendorPurchases resource type
-description: A vendor purchase object in Dynamics 365 Business Central.
+title: (v1.0) vendorPurchases resource type
+description: (v1.0) A vendor purchase object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

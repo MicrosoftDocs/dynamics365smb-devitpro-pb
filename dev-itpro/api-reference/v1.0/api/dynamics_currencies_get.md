@@ -1,6 +1,6 @@
 ---
-title: Get currencies
-description: Gets a currency object in Dynamics 365 Business Central.
+title: (v1.0) Get currencies
+description: (v1.0) Gets a currency object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

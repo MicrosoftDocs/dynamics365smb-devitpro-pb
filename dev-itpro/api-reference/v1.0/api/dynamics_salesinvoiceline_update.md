@@ -1,6 +1,6 @@
 ---
-title: Update salesInvoiceLines
-description: Updates a sales invoice line object in Dynamics 365 Business Central.
+title: (v1.0) Update salesInvoiceLines
+description: (v1.0) Updates a sales invoice line object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

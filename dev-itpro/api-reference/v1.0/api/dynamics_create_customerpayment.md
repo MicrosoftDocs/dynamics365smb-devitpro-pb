@@ -1,6 +1,6 @@
 ---
-title: Create customerPayments
-description: Creates a customer payment object in Dynamics 365 Business Central.
+title: (v1.0) Create customerPayments
+description: (v1.0) Creates a customer payment object in Dynamics 365 Business Central.
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 

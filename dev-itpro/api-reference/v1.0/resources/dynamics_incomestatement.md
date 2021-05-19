@@ -1,6 +1,6 @@
 ---
-title: incomeStatement resource type
-description: An incomeStatement in Dynamics 365 Business Central.
+title: (v1.0) incomeStatement resource type
+description: (v1.0) An incomeStatement in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

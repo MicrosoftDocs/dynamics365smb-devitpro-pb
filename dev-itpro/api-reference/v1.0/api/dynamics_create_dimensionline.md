@@ -1,6 +1,6 @@
 ---
-title: Create dimensionLines
-description: Creates a dimension line in Dynamics 365 Business Central.
+title: (v1.0) Create dimensionLines
+description: (v1.0) Creates a dimension line in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

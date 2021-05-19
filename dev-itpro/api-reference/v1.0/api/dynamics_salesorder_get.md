@@ -1,6 +1,6 @@
 ---
-title: Get salesOrders
-description: Gets a sales order object in Dynamics 365 Business Central.
+title: (v1.0) Get salesOrders
+description: (v1.0) Gets a sales order object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

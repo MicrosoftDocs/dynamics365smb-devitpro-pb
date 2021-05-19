@@ -1,6 +1,6 @@
 ---
-title: taxGroups resource type
-description: A tax group object in Dynamics 365 Business Central. 
+title: (v1.0) taxGroups resource type
+description: (v1.0) A tax group object in Dynamics 365 Business Central. 
  
 author: SusanneWindfeldPedersen
 

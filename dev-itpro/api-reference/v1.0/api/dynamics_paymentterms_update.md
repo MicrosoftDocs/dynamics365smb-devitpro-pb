@@ -1,6 +1,6 @@
 ---
-title: Update paymentTerms
-description: Updates a payment term object in Dynamics 365 Business Central.
+title: (v1.0) Update paymentTerms
+description: (v1.0) Updates a payment term object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

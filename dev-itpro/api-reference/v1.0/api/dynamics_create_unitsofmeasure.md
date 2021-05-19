@@ -1,6 +1,6 @@
 ---
-title: Create unitsOfMeasure
-description: Creates a unit of measure object in Dynamics 365 Business Central. 
+title: (v1.0) Create unitsOfMeasure
+description: (v1.0) Creates a unit of measure object in Dynamics 365 Business Central. 
  
 author: SusanneWindfeldPedersen
 

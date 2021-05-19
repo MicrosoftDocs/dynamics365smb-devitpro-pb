@@ -1,6 +1,6 @@
 ---
-title: Create defaultDimensions for entities
-description: Creates a default dimensions of the item object in Dynamics 365 Business Central.
+title: (v1.0) Create defaultDimensions for entities
+description: (v1.0) Creates a default dimensions of the item object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

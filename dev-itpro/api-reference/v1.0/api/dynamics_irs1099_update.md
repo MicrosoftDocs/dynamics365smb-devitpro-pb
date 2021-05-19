@@ -1,6 +1,6 @@
 ---
-title: Update irs1099Codes
-description: Updates a IRS 1099 Code in Dynamics 365 Business Central.
+title: (v1.0) Update irs1099Codes
+description: (v1.0) Updates a IRS 1099 Code in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

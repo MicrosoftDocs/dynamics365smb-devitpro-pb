@@ -1,6 +1,6 @@
 ---
-title: Delete countriesRegions
-description: Deletes a countries/regions object in Dynamics 365 Business Central.
+title: (v1.0) Delete countriesRegions
+description: (v1.0) Deletes a countries/regions object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

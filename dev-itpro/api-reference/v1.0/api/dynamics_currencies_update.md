@@ -1,6 +1,6 @@
 ---
-title: Update currencies
-description: Updates a currency object in Dynamics 365 Business Central.
+title: (v1.0) Update currencies
+description: (v1.0) Updates a currency object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

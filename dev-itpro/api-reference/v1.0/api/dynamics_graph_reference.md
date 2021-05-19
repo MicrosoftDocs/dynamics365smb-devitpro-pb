@@ -1,6 +1,6 @@
 ---
-title: Microsoft Graph Reference
-description: API documentation for integration with Microsoft Graph
+title: (v1.0) Microsoft Graph Reference
+description: (v1.0) API documentation for integration with Microsoft Graph
  
 author: SusanneWindfeldPedersen
 

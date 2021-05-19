@@ -1,6 +1,6 @@
 ---
-title: Update salesQuotes
-description: Updates a sales quote object in Dynamics 365 Business Central.
+title: (v1.0) Update salesQuotes
+description: (v1.0) Updates a sales quote object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

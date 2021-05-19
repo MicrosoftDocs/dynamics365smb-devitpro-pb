@@ -1,6 +1,6 @@
 ---
-title: Create countriesRegions
-description: Creates a countries/regions object in Dynamics 365 Business Central.
+title: (v1.0) Create countriesRegions
+description: (v1.0) Creates a countries/regions object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

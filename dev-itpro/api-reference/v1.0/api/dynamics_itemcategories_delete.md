@@ -1,6 +1,6 @@
 ---
-title: Delete itemCategories
-description: Deletes an item category in Dynamics 365 Business Central.
+title: (v1.0) Delete itemCategories
+description: (v1.0) Deletes an item category in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

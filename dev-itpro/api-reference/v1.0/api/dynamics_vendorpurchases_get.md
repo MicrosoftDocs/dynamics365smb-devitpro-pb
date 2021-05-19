@@ -1,6 +1,6 @@
 ---
-title: Get vendorPurchases
-description: Gets a vendor purchase object in Dynamics 365 Business Central. 
+title: (v1.0) Get vendorPurchases
+description: (v1.0) Gets a vendor purchase object in Dynamics 365 Business Central. 
  
 author: SusanneWindfeldPedersen
 

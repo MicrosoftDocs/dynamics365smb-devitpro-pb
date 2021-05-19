@@ -1,6 +1,6 @@
 ---
-title: Create salesQuotes
-description: Creates a sales quote object in Dynamics 365 Business Central.
+title: (v1.0) Create salesQuotes
+description: (v1.0) Creates a sales quote object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

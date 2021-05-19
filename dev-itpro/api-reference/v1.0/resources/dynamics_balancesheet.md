@@ -1,6 +1,6 @@
 ---
-title: balanceSheet resource type
-description: A balance sheet in Dynamics 365 Business Central.
+title: (v1.0) balanceSheet resource type
+description: (v1.0) A balance sheet in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

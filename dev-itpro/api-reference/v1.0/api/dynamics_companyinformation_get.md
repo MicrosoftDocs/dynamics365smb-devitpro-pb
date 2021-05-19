@@ -1,6 +1,6 @@
 ---
-title: Get companyInformation
-description: Gets a company information object in Dynamics 365 Business Central.
+title: (v1.0) Get companyInformation
+description: (v1.0) Gets a company information object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

@@ -1,6 +1,6 @@
 ---
-title: salesCreditMemoLines resource type
-description: A sales credit memo line. 
+title: (v1.0) salesCreditMemoLines resource type
+description: (v1.0) A sales credit memo line. 
  
 author: SusanneWindfeldPedersen
 

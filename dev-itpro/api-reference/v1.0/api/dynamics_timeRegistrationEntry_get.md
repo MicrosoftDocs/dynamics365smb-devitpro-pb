@@ -1,6 +1,6 @@
 ---
-title: Get timeRegistrationEntries
-description: Gets timeRegistrationEntries object in Dynamics 365 Business Central.
+title: (v1.0) Get timeRegistrationEntries
+description: (v1.0) Gets timeRegistrationEntries object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

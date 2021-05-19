@@ -1,6 +1,6 @@
 ---
-title: itemCategories resource type
-description: An item category in Dynamics 365 Business Central.
+title: (v1.0) itemCategories resource type
+description: (v1.0) An item category in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

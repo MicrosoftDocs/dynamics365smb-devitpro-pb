@@ -1,6 +1,6 @@
 ---
-title: Delete shipmentMethods
-description: Deletes a shipment method object in Dynamics 365 Business Central.
+title: (v1.0) Delete shipmentMethods
+description: (v1.0) Deletes a shipment method object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

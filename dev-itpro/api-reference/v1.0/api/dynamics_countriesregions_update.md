@@ -1,6 +1,6 @@
 ---
-title: Update countriesRegions
-description: Updates a countries/regions object in Dynamics 365 Business Central.
+title: (v1.0) Update countriesRegions
+description: (v1.0) Updates a countries/regions object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

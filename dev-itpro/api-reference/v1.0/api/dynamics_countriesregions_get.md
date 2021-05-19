@@ -1,6 +1,6 @@
 ---
-title: Get countriesRegions
-description: Gets a countries/regions object in Dynamics 365 Business Central.
+title: (v1.0) Get countriesRegions
+description: (v1.0) Gets a countries/regions object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

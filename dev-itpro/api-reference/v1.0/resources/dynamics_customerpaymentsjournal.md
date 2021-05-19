@@ -1,6 +1,6 @@
 ---
-title: customerPaymentsJournals resource type
-description: A customer payments journal in Dynamics 365 Business Central.
+title: (v1.0) customerPaymentsJournals resource type
+description: (v1.0) A customer payments journal in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

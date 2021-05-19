@@ -1,6 +1,6 @@
 ---
-title: Get paymentTerms
-description: Gets a payment term object in Dynamics 365 Business Central.
+title: (v1.0) Get paymentTerms
+description: (v1.0) Gets a payment term object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

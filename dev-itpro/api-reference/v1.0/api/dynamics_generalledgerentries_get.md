@@ -1,6 +1,6 @@
 ---
-title: Get generalLedgerEntries
-description: Gets a general ledger entry object in Dynamics 365 Business Central.
+title: (v1.0) Get generalLedgerEntries
+description: (v1.0) Gets a general ledger entry object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

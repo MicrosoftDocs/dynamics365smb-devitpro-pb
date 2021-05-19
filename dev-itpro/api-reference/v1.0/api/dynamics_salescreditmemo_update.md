@@ -1,6 +1,6 @@
 ---
-title: Update salesCreditMemos
-description: Updates a sales credit memo object in Dynamics 365 Business Central. 
+title: (v1.0) Update salesCreditMemos
+description: (v1.0) Updates a sales credit memo object in Dynamics 365 Business Central. 
  
 author: SusanneWindfeldPedersen
 

@@ -1,6 +1,6 @@
 ---
-title: Delete picture
-description: A picture object in Dynamics 365 Business Central. 
+title: (v1.0) Delete picture
+description: (v1.0) A picture object in Dynamics 365 Business Central. 
  
 author: SusanneWindfeldPedersen
 

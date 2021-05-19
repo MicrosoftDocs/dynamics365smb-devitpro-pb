@@ -1,6 +1,6 @@
 ---
-title: Delete journals
-description: Deletes a journal object in Dynamics 365 Business Central.
+title: (v1.0) Delete journals
+description: (v1.0) Deletes a journal object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

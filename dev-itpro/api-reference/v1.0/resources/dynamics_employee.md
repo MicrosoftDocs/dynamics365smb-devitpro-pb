@@ -1,6 +1,6 @@
 ---
-title: employees resource type
-description: An employee object in Dynamics 365 Business Central.
+title: (v1.0) employees resource type
+description: (v1.0) An employee object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

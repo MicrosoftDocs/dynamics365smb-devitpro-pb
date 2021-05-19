@@ -1,6 +1,6 @@
 ---
-title: Create salesOrderLines
-description: Creates a sales order line object in Dynamics 365 Business Central.
+title: (v1.0) Create salesOrderLines
+description: (v1.0) Creates a sales order line object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

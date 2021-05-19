@@ -1,6 +1,6 @@
 ---
-title: Create taxGroups
-description: Creates a tax group object in Dynamics 365 Business Central. 
+title: (v1.0) Create taxGroups
+description: (v1.0) Creates a tax group object in Dynamics 365 Business Central. 
  
 author: SusanneWindfeldPedersen
 

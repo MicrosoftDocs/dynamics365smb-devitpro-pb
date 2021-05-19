@@ -1,6 +1,6 @@
 ---
-title: Get items
-description: Gets an item object in Dynamics 365 Business Central.
+title: (v1.0) Get items
+description: (v1.0) Gets an item object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

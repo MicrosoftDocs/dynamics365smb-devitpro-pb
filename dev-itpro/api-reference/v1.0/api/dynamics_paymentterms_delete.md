@@ -1,6 +1,6 @@
 ---
-title: Delete paymentTerms
-description: Deletes a payment term object in Dynamics 365 Business Central.
+title: (v1.0) Delete paymentTerms
+description: (v1.0) Deletes a payment term object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

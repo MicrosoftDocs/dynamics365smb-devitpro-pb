@@ -1,6 +1,6 @@
 ---
-title: dimensionLines resource type
-description: A dimension line in Dynamics 365 Business Central.
+title: (v1.0) dimensionLines resource type
+description: (v1.0) A dimension line in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

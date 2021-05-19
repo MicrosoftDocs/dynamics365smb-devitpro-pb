@@ -1,6 +1,6 @@
 ---
-title: Delete taxAreas
-description: Deletes a tax area object in Dynamics 365 Business Central.
+title: (v1.0) Delete taxAreas
+description: (v1.0) Deletes a tax area object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

@@ -1,6 +1,6 @@
 ---
-title: Get irs1099Codes
-description: Gets an IRS 1099 code object in Dynamics 365 Business Central.
+title: (v1.0) Get irs1099Codes
+description: (v1.0) Gets an IRS 1099 code object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

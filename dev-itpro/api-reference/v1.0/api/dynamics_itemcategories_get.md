@@ -1,6 +1,6 @@
 ---
-title: Get itemCategories
-description: Gets an item category in Dynamics 365 Business Central.
+title: (v1.0) Get itemCategories
+description: (v1.0) Gets an item category in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

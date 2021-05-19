@@ -1,6 +1,6 @@
 ---
-title: Get companies
-description: Gets a company object in Dynamics 365 Business Central.
+title: (v1.0) Get companies
+description: (v1.0) Gets a company object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

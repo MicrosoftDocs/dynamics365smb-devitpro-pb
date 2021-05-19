@@ -1,6 +1,6 @@
 ---
-title: Delete journalLines
-description: Deletes a journal line in Dynamics 365 Business Central.
+title: (v1.0) Delete journalLines
+description: (v1.0) Deletes a journal line in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

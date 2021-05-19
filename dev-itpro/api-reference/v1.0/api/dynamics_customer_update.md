@@ -1,6 +1,6 @@
 ---
-title: Update customers
-description: Updates a customer object in Dynamics 365 Business Central.
+title: (v1.0) Update customers
+description: (v1.0) Updates a customer object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

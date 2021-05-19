@@ -1,6 +1,6 @@
 ---
-title: Update taxGroups
-description: Updates a tax group object in Dynamics 365 Business Central. 
+title: (v1.0) Update taxGroups
+description: (v1.0) Updates a tax group object in Dynamics 365 Business Central. 
  
 author: SusanneWindfeldPedersen
 

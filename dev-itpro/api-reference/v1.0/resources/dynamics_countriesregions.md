@@ -1,6 +1,6 @@
 ---
-title: countriesRegions resource type
-description: A Countries/Regions object in Dynamics 365 Business Central. 
+title: (v1.0) countriesRegions resource type
+description: (v1.0) A Countries/Regions object in Dynamics 365 Business Central. 
  
 author: SusanneWindfeldPedersen
 

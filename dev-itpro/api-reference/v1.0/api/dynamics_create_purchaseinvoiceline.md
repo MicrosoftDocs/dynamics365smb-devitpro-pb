@@ -1,6 +1,6 @@
 ---
-title: Create purchaseInvoiceLines
-description: Creates a purchase invoice line object in Dynamics 365 Business Central.
+title: (v1.0) Create purchaseInvoiceLines
+description: (v1.0) Creates a purchase invoice line object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

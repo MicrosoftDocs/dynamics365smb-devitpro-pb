@@ -1,6 +1,6 @@
 ---
-title: Update salesOrderLines
-description: Update a sales order line object in Dynamics 365 Business Central.
+title: (v1.0) Update salesOrderLines
+description: (v1.0) Update a sales order line object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

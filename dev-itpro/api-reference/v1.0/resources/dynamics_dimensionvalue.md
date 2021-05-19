@@ -1,6 +1,6 @@
 ---
-title: dimensionValues resource type
-description: A dimension value in Dynamics 365 Business Central.
+title: (v1.0) dimensionValues resource type
+description: (v1.0) A dimension value in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

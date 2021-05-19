@@ -1,6 +1,6 @@
 ---
-title: trialBalance resource type
-description: A trial balance object in Dynamics 365 Business Central. 
+title: (v1.0) trialBalance resource type
+description: (v1.0) A trial balance object in Dynamics 365 Business Central. 
  
 author: SusanneWindfeldPedersen
 

@@ -1,6 +1,6 @@
 ---
-title: purchaseInvoiceLines resource type
-description: A purchase invoice line object in Dynamics 365 Business Central.
+title: (v1.0) purchaseInvoiceLines resource type
+description: (v1.0) A purchase invoice line object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

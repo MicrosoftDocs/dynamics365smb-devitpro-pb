@@ -1,6 +1,6 @@
 ---
-title: retainedEarningsStatement resource type
-description: A retained earnings statement object in Dynamics 365 Business Central.
+title: (v1.0) retainedEarningsStatement resource type
+description: (v1.0) A retained earnings statement object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

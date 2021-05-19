@@ -1,6 +1,6 @@
 ---
-title: taxAreas resource type
-description: A tax area.
+title: (v1.0) taxAreas resource type
+description: (v1.0) A tax area.
  
 author: SusanneWindfeldPedersen
 

@@ -1,6 +1,6 @@
 ---
-title: Get dimensionLines
-description: Gets a dimension line in Dynamics 365 Business Central.
+title: (v1.0) Get dimensionLines
+description: (v1.0) Gets a dimension line in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

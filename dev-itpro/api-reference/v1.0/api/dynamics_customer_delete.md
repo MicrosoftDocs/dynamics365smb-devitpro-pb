@@ -1,6 +1,6 @@
 ---
-title: Delete customers
-description: Deletes a customers object from Dynamics 365 Business Central.
+title: (v1.0) Delete customers
+description: (v1.0) Deletes a customers object from Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

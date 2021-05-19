@@ -1,6 +1,6 @@
 ---
-title: Delete salesOrderLines
-description: Deletes a sales order line object in Dynamics 365 Business Central.
+title: (v1.0) Delete salesOrderLines
+description: (v1.0) Deletes a sales order line object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

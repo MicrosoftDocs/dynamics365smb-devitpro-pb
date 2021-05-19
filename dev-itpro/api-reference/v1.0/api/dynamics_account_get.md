@@ -1,6 +1,6 @@
 ---
-title: Get accounts
-description: Gets an account object in Dynamics 365 Business Central.
+title: (v1.0) Get accounts
+description: (v1.0) Gets an account object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 
 ms.service: "dynamics365-business-central"
@@ -12,7 +12,7 @@ ms.date: 06/14/2019
 ms.author: solsen
 ---
 
-# Get accounts
+# Get accounts (v1.0)
 Retrieve the properties and relationships of an account object for [!INCLUDE[prod_short](../../../includes/prod_short.md)]. 
 
 > [!NOTE]  

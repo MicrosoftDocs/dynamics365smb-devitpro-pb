@@ -1,6 +1,6 @@
 ---
-title: Update employee defaultDimensions
-description: Updates a employee default dimensions in Dynamics 365 Business Central.
+title: (v1.0) Update employee defaultDimensions
+description: (v1.0) Updates a employee default dimensions in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

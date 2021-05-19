@@ -1,6 +1,6 @@
 ---
-title: Get salesQuoteLines
-description: Gets a sales quote line object in Dynamics 365 Business Central.
+title: (v1.0) Get salesQuoteLines
+description: (v1.0) Gets a sales quote line object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

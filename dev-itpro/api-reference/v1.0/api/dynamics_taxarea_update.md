@@ -1,6 +1,6 @@
 ---
-title: Update taxAreas
-description: Updates a tax areas object in Dynamics 365 Business Central. 
+title: (v1.0) Update taxAreas
+description: (v1.0) Updates a tax areas object in Dynamics 365 Business Central. 
  
 author: SusanneWindfeldPedersen
 

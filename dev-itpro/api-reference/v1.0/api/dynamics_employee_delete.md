@@ -1,6 +1,6 @@
 ---
-title: Delete employees
-description: Deletes an employee object in Dynamics 365 Business Central.
+title: (v1.0) Delete employees
+description: (v1.0) Deletes an employee object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

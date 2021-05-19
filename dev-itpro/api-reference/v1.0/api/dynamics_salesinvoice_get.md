@@ -1,6 +1,6 @@
 ---
-title: Get salesInvoices
-description: Gets a sales invoice object in Dynamics 365 Business Central. 
+title: (v1.0) Get salesInvoices
+description: (v1.0) Gets a sales invoice object in Dynamics 365 Business Central. 
  
 author: SusanneWindfeldPedersen
 

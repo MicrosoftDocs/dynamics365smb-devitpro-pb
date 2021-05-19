@@ -1,6 +1,6 @@
 ---
-title: Get taxGroups
-description: Gets a tax groups method in Dynamics 365 Business Central. 
+title: (v1.0) Get taxGroups
+description: (v1.0) Gets a tax groups method in Dynamics 365 Business Central. 
  
 author: SusanneWindfeldPedersen
 

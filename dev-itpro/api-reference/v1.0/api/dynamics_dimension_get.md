@@ -1,6 +1,6 @@
 ---
-title: Get dimensions
-description: Gets a dimension object in Dynamics 365 Business Central.
+title: (v1.0) Get dimensions
+description: (v1.0) Gets a dimension object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

@@ -1,6 +1,6 @@
 ---
-title: Create paymentMethods
-description: Creates a payment method object in Dynamics 365 Business Central.
+title: (v1.0) Create paymentMethods
+description: (v1.0) Creates a payment method object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

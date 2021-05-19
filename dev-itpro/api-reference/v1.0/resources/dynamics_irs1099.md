@@ -1,6 +1,6 @@
 ---
-title: irs1099Codes resource type
-description: An IRS 1099 Code object in Dynamics 365 Business Central.
+title: (v1.0) irs1099Codes resource type
+description: (v1.0) An IRS 1099 Code object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

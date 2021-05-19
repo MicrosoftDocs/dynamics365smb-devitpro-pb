@@ -1,6 +1,6 @@
 ---
-title: Update paymentMethods
-description: Updates a payment method object in Dynamics 365 Business Central.
+title: (v1.0) Update paymentMethods
+description: (v1.0) Updates a payment method object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

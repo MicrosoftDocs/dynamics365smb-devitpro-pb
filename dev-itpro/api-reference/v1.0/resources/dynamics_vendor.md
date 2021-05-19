@@ -1,6 +1,6 @@
 ---
-title: vendors resource type
-description: A vendor object in Dynamics 365 Business Central. 
+title: (v1.0) vendors resource type
+description: (v1.0) A vendor object in Dynamics 365 Business Central. 
  
 author: SusanneWindfeldPedersen
 

@@ -1,6 +1,6 @@
 ---
-title: complex types JSON
-description: Complex data types in JSON for Dynamics 365 Business Central.
+title: (v1.0) complex types JSON
+description: (v1.0) Complex data types in JSON for Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

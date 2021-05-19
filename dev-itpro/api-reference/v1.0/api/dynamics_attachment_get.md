@@ -1,6 +1,6 @@
 ---
-title: Get attachments
-description: Gets an attachments object in Dynamics 365 Business Central.
+title: (v1.0) Get attachments
+description: (v1.0) Gets an attachments object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

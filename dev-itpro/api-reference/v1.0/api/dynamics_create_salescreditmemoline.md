@@ -1,6 +1,6 @@
 ---
-title: Create salesCreditMemoLines
-description: Creates a sales credit memo line object in Dynamics 365 Business Central.
+title: (v1.0) Create salesCreditMemoLines
+description: (v1.0) Creates a sales credit memo line object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

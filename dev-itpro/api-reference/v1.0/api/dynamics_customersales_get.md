@@ -1,6 +1,6 @@
 ---
-title: Get CustomerSales
-description: Gets a customer sales object in Dynamics 365 Business Central.
+title: (v1.0) Get CustomerSales
+description: (v1.0) Gets a customer sales object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

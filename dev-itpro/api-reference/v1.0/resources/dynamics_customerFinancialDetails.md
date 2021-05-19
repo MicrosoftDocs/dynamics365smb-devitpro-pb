@@ -1,6 +1,6 @@
 ---
-title: customerFinancialDetails resource type
-description: An customerFinancialDetails entity in Dynamics 365 Business Central.
+title: (v1.0) customerFinancialDetails resource type
+description: (v1.0) An customerFinancialDetails entity in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

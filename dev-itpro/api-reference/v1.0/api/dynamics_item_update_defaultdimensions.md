@@ -1,6 +1,6 @@
 ---
-title: Update item defaultDimensions
-description: Updates the item default dimensions in Dynamics 365 Business Central.
+title: (v1.0) Update item defaultDimensions
+description: (v1.0) Updates the item default dimensions in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

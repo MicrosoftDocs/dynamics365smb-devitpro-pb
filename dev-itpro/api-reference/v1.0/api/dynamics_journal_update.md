@@ -1,6 +1,6 @@
 ---
-title: Update journals
-description: Updates a journal object in Dynamics 365 Business Central.
+title: (v1.0) Update journals
+description: (v1.0) Updates a journal object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

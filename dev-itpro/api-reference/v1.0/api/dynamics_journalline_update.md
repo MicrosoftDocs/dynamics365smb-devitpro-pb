@@ -1,6 +1,6 @@
 ---
-title: Update journalLines
-description: Updates a journal line in Dynamics 365 Business Central.
+title: (v1.0) Update journalLines
+description: (v1.0) Updates a journal line in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

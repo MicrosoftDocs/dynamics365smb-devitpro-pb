@@ -1,6 +1,6 @@
 ---
-title: Update companyInformation
-description: Updates a company information object in Dynamics 365 Business Central.
+title: (v1.0) Update companyInformation
+description: (v1.0) Updates a company information object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

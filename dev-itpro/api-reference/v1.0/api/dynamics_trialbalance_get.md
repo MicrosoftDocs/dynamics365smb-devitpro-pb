@@ -1,6 +1,6 @@
 ---
-title: Get trialBalance
-description: Gets a trial balance object in Dynamics 365 Business Central.
+title: (v1.0) Get trialBalance
+description: (v1.0) Gets a trial balance object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

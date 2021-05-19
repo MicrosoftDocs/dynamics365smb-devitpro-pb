@@ -1,6 +1,6 @@
 ---
-title: Create journals
-description: Creates a journal object in Dynamics 365 Business Central.
+title: (v1.0) Create journals
+description: (v1.0) Creates a journal object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

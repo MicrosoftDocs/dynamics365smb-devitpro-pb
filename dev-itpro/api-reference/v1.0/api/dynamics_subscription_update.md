@@ -1,6 +1,6 @@
 ---
-title: Update subscription
-description: Gets a subscription object in Dynamics 365 Business Central.
+title: (v1.0) Update subscription
+description: (v1.0) Gets a subscription object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 
 ms.service: "dynamics365-business-central"

@@ -1,6 +1,6 @@
 ---
-title: "Enabling APIs for Microsoft Dynamics NAV"
-description: "Describing the steps you must go through to enable access to the APIs."
+title: (v1.0) "Enabling APIs for Microsoft Dynamics NAV"
+description: (v1.0) "Describing the steps you must go through to enable access to the APIs."
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 04/01/2019

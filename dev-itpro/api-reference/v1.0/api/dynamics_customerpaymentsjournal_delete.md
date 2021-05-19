@@ -1,6 +1,6 @@
 ---
-title: Delete customerPaymentsJournals
-description: Deletes a customer payment journal in Dynamics 365 Business Central.
+title: (v1.0) Delete customerPaymentsJournals
+description: (v1.0) Deletes a customer payment journal in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

@@ -1,6 +1,6 @@
 ---
-title: Get shipmentMethods
-description: Gets a shipment method object in Dynamics 365 Business Central. 
+title: (v1.0) Get shipmentMethods
+description: (v1.0) Gets a shipment method object in Dynamics 365 Business Central. 
  
 author: SusanneWindfeldPedersen
 

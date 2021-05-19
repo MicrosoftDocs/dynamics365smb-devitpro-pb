@@ -1,6 +1,6 @@
 ---
-title: Delete dimensionLines
-description: Deletes a dimension line object in Dynamics 365 Business Central.
+title: (v1.0) Delete dimensionLines
+description: (v1.0) Deletes a dimension line object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

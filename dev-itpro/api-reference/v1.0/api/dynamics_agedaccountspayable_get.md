@@ -1,6 +1,6 @@
 ---
-title: Get agedAccountsPayable
-description: Gets an aged accounts payable object in Dynamics 365 Business Central.
+title: (v1.0) Get agedAccountsPayable
+description: (v1.0) Gets an aged accounts payable object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

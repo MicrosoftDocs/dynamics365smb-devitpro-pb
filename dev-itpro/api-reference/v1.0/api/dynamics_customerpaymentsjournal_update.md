@@ -1,6 +1,6 @@
 ---
-title: Update customerPaymentsJournals
-description: Updates a customer payments journal in Dynamics 365 Business Central.
+title: (v1.0) Update customerPaymentsJournals
+description: (v1.0) Updates a customer payments journal in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

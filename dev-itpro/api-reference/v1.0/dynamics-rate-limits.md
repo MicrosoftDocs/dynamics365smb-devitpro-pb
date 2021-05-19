@@ -1,6 +1,6 @@
 ---
-title: "API Limits in Dynamics 365 Business Central"
-description: ""
+title: (v1.0) "API Limits in Dynamics 365 Business Central"
+description: (v1.0) ""
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 12/16/2019

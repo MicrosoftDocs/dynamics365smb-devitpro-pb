@@ -1,6 +1,6 @@
 ---
-title: Delete paymentMethods
-description: Deletes a payment method object in Dynamics 365 Business Central.
+title: (v1.0) Delete paymentMethods
+description: (v1.0) Deletes a payment method object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

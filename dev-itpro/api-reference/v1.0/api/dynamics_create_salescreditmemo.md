@@ -1,6 +1,6 @@
 ---
-title: Create salesCreditMemos
-description: Creates a sales credit memo object in Dynamics 365 Business Central.
+title: (v1.0) Create salesCreditMemos
+description: (v1.0) Creates a sales credit memo object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

@@ -1,6 +1,6 @@
 ---
-title: Upload attachment| Microsoft Docs
-description: Uploads the attachment in Dynamics 365 Business Central.
+title: (v1.0) Upload attachment| Microsoft Docs
+description: (v1.0) Uploads the attachment in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

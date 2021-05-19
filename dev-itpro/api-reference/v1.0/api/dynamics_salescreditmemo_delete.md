@@ -1,6 +1,6 @@
 ---
-title: Delete salesCreditMemos
-description: Deletes a sales credit memo object in Dynamics 365 Business Central.
+title: (v1.0) Delete salesCreditMemos
+description: (v1.0) Deletes a sales credit memo object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

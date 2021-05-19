@@ -1,6 +1,6 @@
 ---
-title: defaultDimensions resource type
-description: A defaultDimensions in Dynamics 365 Business Central.
+title: (v1.0) defaultDimensions resource type
+description: (v1.0) A defaultDimensions in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 
 ms.service: "dynamics365-business-central"

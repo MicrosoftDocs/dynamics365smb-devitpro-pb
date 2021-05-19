@@ -1,6 +1,6 @@
 ---
-title: Delete taxGroups
-description: Deletes a tax group object in Dynamics 365 Business Central. 
+title: (v1.0) Delete taxGroups
+description: (v1.0) Deletes a tax group object in Dynamics 365 Business Central. 
  
 author: SusanneWindfeldPedersen
 

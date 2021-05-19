@@ -1,6 +1,6 @@
 ---
-title: salesInvoices resource type
-description: A sales invoice object in Dynamics 365 Business Central. 
+title: (v1.0) salesInvoices resource type
+description: (v1.0) A sales invoice object in Dynamics 365 Business Central. 
  
 author: SusanneWindfeldPedersen
 

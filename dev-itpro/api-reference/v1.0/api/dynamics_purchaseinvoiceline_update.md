@@ -1,6 +1,6 @@
 ---
-title: Update purchaseInvoiceLines
-description: Updates a purchase invoice line object in Dynamics 365 Business Central.
+title: (v1.0) Update purchaseInvoiceLines
+description: (v1.0) Updates a purchase invoice line object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

@@ -1,6 +1,6 @@
 ---
-title: Get pdfDocument
-description: Gets a PDF document on a salesQuote in Dynamics 365 Business Central.
+title: (v1.0) Get pdfDocument
+description: (v1.0) Gets a PDF document on a salesQuote in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

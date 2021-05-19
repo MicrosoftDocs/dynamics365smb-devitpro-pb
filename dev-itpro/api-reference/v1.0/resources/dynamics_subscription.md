@@ -1,6 +1,6 @@
 ---
-title: subscription resource type
-description: A subscription object in Dynamics 365 Business Central.
+title: (v1.0) subscription resource type
+description: (v1.0) A subscription object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

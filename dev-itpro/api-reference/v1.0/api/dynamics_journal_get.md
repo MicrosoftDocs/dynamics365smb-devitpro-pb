@@ -1,6 +1,6 @@
 ---
-title: Get journals
-description: Gets a journal object in Dynamics 365 Business Central.
+title: (v1.0) Get journals
+description: (v1.0) Gets a journal object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

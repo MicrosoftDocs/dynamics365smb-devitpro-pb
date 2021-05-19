@@ -1,6 +1,6 @@
 ---
-title: journalLines resource type
-description: A journal line in Dynamics 365 Business Central.
+title: (v1.0) journalLines resource type
+description: (v1.0) A journal line in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

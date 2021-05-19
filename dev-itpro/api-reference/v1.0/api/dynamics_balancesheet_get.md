@@ -1,6 +1,6 @@
 ---
-title: Get balanceSheet
-description: Gets a balance sheet object in Dynamics 365 Business Central.
+title: (v1.0) Get balanceSheet
+description: (v1.0) Gets a balance sheet object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

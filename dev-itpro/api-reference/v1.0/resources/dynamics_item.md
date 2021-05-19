@@ -1,6 +1,6 @@
 ---
-title: items resource type
-description: An item object in Dynamics 365 Business Central.
+title: (v1.0) items resource type
+description: (v1.0) An item object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

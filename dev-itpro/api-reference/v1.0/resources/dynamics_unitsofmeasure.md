@@ -1,6 +1,6 @@
 ---
-title: unitsOfMeasure resource type
-description: A unit of measure object in Dynamics 365 Business Central.
+title: (v1.0) unitsOfMeasure resource type
+description: (v1.0) A unit of measure object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

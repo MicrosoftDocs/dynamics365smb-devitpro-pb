@@ -1,6 +1,6 @@
 ---
-title: Update items
-description: Updates an item object in Dynamics 365 Business Central.
+title: (v1.0) Update items
+description: (v1.0) Updates an item object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

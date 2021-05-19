@@ -1,6 +1,6 @@
 ---
-title: Get unitsOfMeasure
-description: Gets a unit of measure object in Dynamics 365 Business Central. 
+title: (v1.0) Get unitsOfMeasure
+description: (v1.0) Gets a unit of measure object in Dynamics 365 Business Central. 
  
 author: SusanneWindfeldPedersen
 

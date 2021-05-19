@@ -1,6 +1,6 @@
 ---
-title: Create purchaseInvoices
-description: Creates a purchase invoice object in Dynamics 365 Business Central.
+title: (v1.0) Create purchaseInvoices
+description: (v1.0) Creates a purchase invoice object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

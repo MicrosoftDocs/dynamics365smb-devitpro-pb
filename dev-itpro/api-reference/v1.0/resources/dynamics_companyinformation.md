@@ -1,6 +1,6 @@
 ---
-title: companyInformation resource type
-description: Company information in Dynamics 365 Business Central.
+title: (v1.0) companyInformation resource type
+description: (v1.0) Company information in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

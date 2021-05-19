@@ -1,6 +1,6 @@
 ---
-title: Get customerPayments
-description: Gets a customer payment object in Dynamics 365 Business Central.
+title: (v1.0) Get customerPayments
+description: (v1.0) Gets a customer payment object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

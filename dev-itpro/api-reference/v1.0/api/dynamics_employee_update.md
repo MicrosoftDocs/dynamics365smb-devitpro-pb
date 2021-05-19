@@ -1,6 +1,6 @@
 ---
-title: Update employees
-description: Updates an employee object in Dynamics 365 Business Central.
+title: (v1.0) Update employees
+description: (v1.0) Updates an employee object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

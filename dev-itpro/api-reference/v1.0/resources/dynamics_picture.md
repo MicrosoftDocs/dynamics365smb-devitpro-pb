@@ -1,6 +1,6 @@
 ---
-title: picture resource type
-description: A picture object in Dynamics 365 Business Central. 
+title: (v1.0) picture resource type
+description: (v1.0) A picture object in Dynamics 365 Business Central. 
  
 author: SusanneWindfeldPedersen
 

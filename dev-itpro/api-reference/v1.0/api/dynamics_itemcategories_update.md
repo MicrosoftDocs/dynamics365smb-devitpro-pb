@@ -1,6 +1,6 @@
 ---
-title: Update itemCategories
-description: Updates an item category in Dynamics 365 Business Central.
+title: (v1.0) Update itemCategories
+description: (v1.0) Updates an item category in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

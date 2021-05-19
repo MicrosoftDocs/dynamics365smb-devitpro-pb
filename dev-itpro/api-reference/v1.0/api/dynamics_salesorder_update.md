@@ -1,6 +1,6 @@
 ---
-title: Update salesOrders
-description: Updates a sales order object in Dynamics 365 Business Central.
+title: (v1.0) Update salesOrders
+description: (v1.0) Updates a sales order object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

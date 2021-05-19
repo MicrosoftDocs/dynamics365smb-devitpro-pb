@@ -1,6 +1,6 @@
 ---
-title: Delete irs1099Codes
-description: Deletes an IRS 1099 code object in Dynamics 365 Business Central.
+title: (v1.0) Delete irs1099Codes
+description: (v1.0) Deletes an IRS 1099 code object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

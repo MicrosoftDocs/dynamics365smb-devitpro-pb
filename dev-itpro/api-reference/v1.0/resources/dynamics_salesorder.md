@@ -1,6 +1,6 @@
 ---
-title: salesOrders resource type
-description: A sales order object in Dynamics 365 Business Central.
+title: (v1.0) salesOrders resource type
+description: (v1.0) A sales order object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

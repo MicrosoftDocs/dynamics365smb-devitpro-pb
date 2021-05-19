@@ -1,6 +1,6 @@
 ---
-title: salesCreditMemos resource type
-description: A sales credit memo object in Dynamics 365 Business Central. 
+title: (v1.0) salesCreditMemos resource type
+description: (v1.0) A sales credit memo object in Dynamics 365 Business Central. 
  
 author: SusanneWindfeldPedersen
 

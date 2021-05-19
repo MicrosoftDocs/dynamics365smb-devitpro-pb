@@ -1,6 +1,6 @@
 ---
-title: Create taxAreas
-description: Creates a tax area object in Dynamics for Financials. 
+title: (v1.0) Create taxAreas
+description: (v1.0) Creates a tax area object in Dynamics for Financials. 
  
 author: SusanneWindfeldPedersen
 

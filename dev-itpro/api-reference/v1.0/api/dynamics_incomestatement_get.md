@@ -1,6 +1,6 @@
 ---
-title: Get incomeStatement
-description: Gets an income statement object in Dynamics 365 Business Central.
+title: (v1.0) Get incomeStatement
+description: (v1.0) Gets an income statement object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

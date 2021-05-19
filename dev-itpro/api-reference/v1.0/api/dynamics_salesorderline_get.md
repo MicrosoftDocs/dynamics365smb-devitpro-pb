@@ -1,6 +1,6 @@
 ---
-title: Get salesOrderLines
-description: Gets a sales order line object in Dynamics 365 Business Central.
+title: (v1.0) Get salesOrderLines
+description: (v1.0) Gets a sales order line object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

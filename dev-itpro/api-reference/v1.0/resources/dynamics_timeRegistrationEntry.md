@@ -1,6 +1,6 @@
 ---
-title: timeRegistrationEntry resource type
-description: An timeRegistrationEntry object in Dynamics 365 Business Central.
+title: (v1.0) timeRegistrationEntry resource type
+description: (v1.0) An timeRegistrationEntry object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

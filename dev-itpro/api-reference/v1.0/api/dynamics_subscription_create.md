@@ -1,6 +1,6 @@
 ---
-title: Create subscription
-description: Creates a subscription object in Dynamics 365 Business Central.
+title: (v1.0) Create subscription
+description: (v1.0) Creates a subscription object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 
 ms.service: "dynamics365-business-central"

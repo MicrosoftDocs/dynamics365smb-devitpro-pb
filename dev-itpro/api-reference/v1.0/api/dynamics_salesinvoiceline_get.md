@@ -1,6 +1,6 @@
 ---
-title: Get salesInvoiceLines
-description: Gets a sales invoice line object in Dynamics 365 Business Central.
+title: (v1.0) Get salesInvoiceLines
+description: (v1.0) Gets a sales invoice line object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

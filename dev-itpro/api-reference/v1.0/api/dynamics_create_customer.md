@@ -1,6 +1,6 @@
 ---
-title: Create customers
-description: Creates a customer object in Dynamics 365 Business Central.
+title: (v1.0) Create customers
+description: (v1.0) Creates a customer object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

@@ -1,6 +1,6 @@
 ---
-title: shipmentMethods resource type
-description: A shipment method in Dynamics 365 Business Central. 
+title: (v1.0) shipmentMethods resource type
+description: (v1.0) A shipment method in Dynamics 365 Business Central. 
  
 author: SusanneWindfeldPedersen
 

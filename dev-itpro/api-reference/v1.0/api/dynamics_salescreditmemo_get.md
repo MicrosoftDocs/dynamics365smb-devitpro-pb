@@ -1,6 +1,6 @@
 ---
-title: Get salesCreditMemos
-description: Gets a sales credit memo object in Dynamics 365 Business Central.
+title: (v1.0) Get salesCreditMemos
+description: (v1.0) Gets a sales credit memo object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 

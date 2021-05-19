@@ -1,6 +1,6 @@
 ---
-title: customerSales resource type
-description: A customer sales in Dynamics 365 Business Central.
+title: (v1.0) customerSales resource type
+description: (v1.0) A customer sales in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 
