@@ -21,7 +21,7 @@ The format for translation
 
 ## The life of a caption 
 
-Translations can be applied using multiple properties, and there are multiple opportunities to change them. For example, the caption of a page can be changed from multiple places. The following list shows the order in which a page caption will be overwritten. 
+Translations can be applied using multiple properties, and there are multiple opportunities to change them. For example, the caption of a page can be changed from multiple places. The following list shows the order in which a page name will be overwritten. 
 
 1. Page Name 
 2. Page Caption 
@@ -44,7 +44,7 @@ When *translations from different layers* are picked up, one translation from ea
 ```al
 page 50101 SimpleCustomerCard
 {
-    CaptionML = enu = Customer, dan = Kunde;
+    Caption = 'Customer';
 
 ```
 
@@ -57,9 +57,9 @@ pageextension 50101 SimpleCustomerCardExtension extends SimpleCustomerCard
 
 The resulting caption will then be **Customer** in en-US, **Cliente** in it-IT, and **Debitor** in da-DK. 
 
-## Picking the language
+## Picking the language to display
 
-Once translations on the different layers have been collected, the translations used on the UI depend on the context.
+Once translations on the different layers have been collected, the translations that display on the user interface are then picked, based on the context.
 
 The following definition of language is used.
 
