@@ -1,13 +1,12 @@
 ---
 title: "Report.GetSubstituteReportId Method"
-description: "Gets the ID of the report that will be run by the platform after considering any substitutions made by extensions."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/19/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: reference
+ms.topic: article
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -15,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Report.GetSubstituteReportId Method
-> **Version**: _Available or changed with runtime version 2.0._
+> **Version**: _Available from runtime version 2.0._
 
 Gets the ID of the report that will be run by the platform after considering any substitutions made by extensions.
 
@@ -31,8 +30,8 @@ The ID of the report for which you want to retrieve the ID of the possible repor
 
 
 ## Return Value
-*NewReportId*  
-&emsp;Type: [Integer](../integer/integer-data-type.md)  
+*NewReportId*
+&emsp;Type: [Integer](../integer/integer-data-type.md)
 The ID of the report that will be run by the platform after considering any substitutions made by extensions.
 
 
