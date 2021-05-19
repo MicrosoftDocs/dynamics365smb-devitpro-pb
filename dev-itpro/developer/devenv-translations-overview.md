@@ -38,6 +38,15 @@ If there are *multiple translations on the same layer*, then it is possible to c
 
 For example, if you want to change the text provided from  **Translation app XYZ**, you can create another translation app, and in the `app.json` file of that new translation app, you must then specify a dependency on **Translation app XYZ** to make sure that the translation in this new app is applied after and thereby overwrites the original translation.
 
+```al
+"dependencies": 
+  [
+    {"id": "f1f12588-13cb-47fd-b94a-cddce44e9a8f", "name": "Translation app XYZ", "publisher": "Default publisher", "version": "1.0.0.0"}
+  ]
+```
+
+For more information, see [JSON Files](devenv-json-files.md).
+
 ## Overwrites
 
 When *translations from different layers* are picked up, one translation from each observed culture is kept and when it is overwritten, only the specified culture changes. In the following example, we have a caption and its page extension caption.
