@@ -50,7 +50,7 @@ In AL code, you can create new tables or modify existing tables. Read more about
   
 |To|See|  
 |--------|---------|  
-|Learn about the set of triggers that [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] supports for tables and fields.|[Table and Field Triggers](triggers-auto/devenv-triggers.md)|  
+|Learn about the set of triggers that [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] supports for tables and fields.|<ul><li>[Table Triggers](triggers-auto/table/devenv-oninsert-table-trigger.md)</li><li>[Table Extension Triggers](triggers-auto/tableextension/devenv-onbeforeinsert-tableextension-trigger.md)</li><li>[Field Triggers](triggers-auto/field/devenv-onvalidate-field-trigger.md)</li><li>[Field Extension Triggers](triggers-auto/fieldextension/devenv-onbeforevalidate-fieldextension-trigger.md)</li>|  
 <!-- 
 |Create a table trigger.|[How to: Define or Modify Table or Field Triggers](How-to--Define-or-Modify-Table-or-Field-Triggers.md)|  
 |See reference information about specific triggers.|[Triggers](Triggers.md)|  -->

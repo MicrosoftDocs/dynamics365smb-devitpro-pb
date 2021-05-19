@@ -17,7 +17,7 @@ ms.author: edupont
 
 # Migrate to Business Central Online from Dynamics GP
 
-An assisted setup guide in [!INCLUDE [prod_short](../developer/includes/prod_short.md)] can help you migrate data from Dynamics GP. You can migrate data from Dynamics GP 2015 on SQL Server 2012 and later versions of Dynamics GP and SQL Server.  
+An assisted setup guide in [!INCLUDE [prod_short](../developer/includes/prod_short.md)] can help you migrate data from Dynamics GP. You can migrate data from Dynamics GP 2015 and later versions of Dynamics GP. For more information, see [System requirements](faq-migrate-data.md#system-requirements).  
 
 > [!IMPORTANT]
 > Migrating from Dynamics GP using the **Cloud Migration Setup** assisted setup guide is currently only supported for the following markets: United States, Canada, United Kingdom, Australia.
@@ -32,7 +32,7 @@ When you migrate from Dynamics GP, the following information is migrated from Dy
 
     Account Summary transactions are generated and posted for open and history years that were set up in Dynamics GP. The summary amounts are created based on the fiscal periods set up in Dynamics GP.
 
-    Let us look at an example of an account from Dynamics GP:
+    Let us look at an example of an account from Dynamics GP, using the year 2019 as an example:
 
     |Account in Dynamics GP |Year|Name  |Amount  |
     |-----------------------|----|------|--------|
@@ -86,7 +86,9 @@ When you migrate from Dynamics GP, the following information is migrated from Dy
 5. Historical data from Receivables, Payables, Sales Order Processing, Purchase Order Processing, and Inventory
 
     This data can be used in Power BI reports and Power Apps. In Business Central online, the data is included in the SmartList views in the Customers, Vendors, and Items lists. Technically, the data is stored in table extensions.
-6. Checkbooks and outstanding transactions in Bank Reconciliation. We strongly recommend that you reconcile your checkbooks before you run the migration process to [!INCLUDE [prod_short](../developer/includes/prod_short.md)] as we will bring over transactions that have not been reconciled during the migration process.  
+6. Checkbook master data.  
+
+    We strongly recommend that you reconcile your checkbooks before you run the migration process to [!INCLUDE [prod_short](../developer/includes/prod_short.md)] as we will bring over transactions that have not been reconciled during the migration process.  
 
 ## Diagnostics run
 
