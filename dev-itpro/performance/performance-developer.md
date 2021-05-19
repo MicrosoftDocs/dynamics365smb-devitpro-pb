@@ -110,7 +110,7 @@ Reports generally fall into two categories. They can be specific to a single ins
 
 - Compared to Word layouts, RDL layouts can result in slower performance with document reports, especially for actions related to the user interface (like sending emails). For more information, see [Creating an RDL Layout Report](../developer/devenv-howto-rdl-report-layout.md).
 
-Read more about how to tune RDLC reports here:
+Read more about how to tune RDL reports here:
 - [RDLC Performance Optimization Tips](https://community.dynamics.com/business/b/navteam/posts/a-couple-of-rdlc-performance-optimization-tips)
 
 ## Efficient extracts to data warehouses
@@ -328,7 +328,8 @@ The Performance Toolkit helps answer questions such as, "Does my solution for Bu
 
 For more information, see [The Performance Toolkit Extension](../developer/devenv-performance-toolkit.md).
 
-NB! To test insert/update performance, make sure to un-install the test framework first. If the test framework is installed, then no insert/update statements can utilize bulk mode and will instead run row-by-row. 
+> [!NOTE]  
+> To test insert/update performance, make sure to un-install the test framework first. If the test framework is installed, then no insert/update statements can utilize bulk mode and will instead run row-by-row. 
 
 ### Performance Throughput Analysis
 
