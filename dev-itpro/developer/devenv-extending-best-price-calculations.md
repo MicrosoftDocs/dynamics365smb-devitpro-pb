@@ -468,6 +468,7 @@ enumextension 50000 "Fixed Asset Type" extends "Price Asset Type"
 
 The **Price Asset Type** enum implements the **Price Asset** interface. Add a **Price Asset - Fixed Asset** codeunit that will implement this interface for the Fixed Asset value. Some of the interface's methods are not relevant for fixed assets, so we will leave them empty, but implement the methods <!--From the codeunit?-->. For an example, we can look at the **Price Asset - G/L Account** codeunit. <!--Verify this with Stan. Are the following the methods from the price asset gl account codeunit? -->
 
+```
     - GetNo(), 
     - GetId(), 
     - IsLookupOk(), 
