@@ -614,5 +614,235 @@ If we create a sales order with lines for the minimum quantities of the product,
 
 *****IMAGE OF SALES ORDER GOES HERE*****
 
+### Example: Add Location as an Applies-to Type
+
+<!--We should probably state why this example would be useful.-->
+The **Price Source Type** enum implements the **Applies-to Type** field in the header of the price list. Additionally, the **Sales Price Source Type**, **Purchase Price Source Type**, and **Job Price Source Type** are subsets of the **Price Source Type** enum. If we want to use a new value in sales, purchase, and job price lists, we must also extend those enums. 
+
+In this example, we will extend the Price Source Type enum to display the value in the sales price lists by also extending the Sales Price Source Type enum. For compatibility, the new value must have the same ID in both enums.
+
+```
+enumextension 50001 "Location Source Type" extends "Price Source Type"
+{
+    value(50001; Location)
+    {
+        Caption = 'Location';
+        Implementation = "Price Source" = "Price Source - Location", "Price Source Group" = "Price Source Group - Customer";
+    }
+}
+
+enumextension 50003 "Location Sales Source Type" extends "Sales Price Source Type"
+{
+    value(50001; Location)
+    {
+        Caption = 'Location';
+    }
+}
+
+```
+
+The Price Source Type enum implements the Price Source and Price Source Group interfaces. We don't need special source group handling here, and can reuse the existing implementation codeunit **Price Source Group - Customer**. For the Price Source interface, we must add a new implementation codeunit **Price Source - Location**. For examples, see the existing implementations of the Price Source interface.
+
+The following example enables the new Applies-to Type on price lists.
+
+```
+codeunit 50003 "Price Source - Location" implements "Price Source"
+{
+    var
+        Location: Record Location;
+        ParentErr: Label 'Parent Source No. must be blank for Location source type.';
+
+    procedure GetNo(var PriceSource: Record "Price Source")
+    begin
+        if Location.GetBySystemId(PriceSource."Source ID") then begin
+            PriceSource."Source No." := Location.Code;
+            FillAdditionalFields(PriceSource);
+        end else
+            PriceSource.InitSource();
+    end;
+
+    procedure GetId(var PriceSource: Record "Price Source")
+    begin
+        if Location.Get(PriceSource."Source No.") then begin
+            PriceSource."Source ID" := Location.SystemId;
+            FillAdditionalFields(PriceSource);
+        end else
+            PriceSource.InitSource();
+    end;
+
+    procedure IsForAmountType(AmountType: Enum "Price Amount Type"): Boolean
+    begin
+        exit(true);
+    end;
+
+    procedure IsSourceNoAllowed() Result: Boolean;
+    begin
+        Result := true;
+    end;
+
+    procedure IsLookupOK(var PriceSource: Record "Price Source"): Boolean
+    var
+        xPriceSource: Record "Price Source";
+    begin
+        xPriceSource := PriceSource;
+        if Location.Get(xPriceSource."Source No.") then;
+        if Page.RunModal(Page::"Location List", Location) = ACTION::LookupOK then begin
+            xPriceSource.Validate("Source No.", Location.Code);
+            PriceSource := xPriceSource;
+            exit(true);
+        end;
+    end;
+
+    procedure VerifyParent(var PriceSource: Record "Price Source") Result: Boolean
+    begin
+        if PriceSource."Parent Source No." <> '' then
+            Error(ParentErr);
+    end;
+
+    procedure GetGroupNo(PriceSource: Record "Price Source"): Code[20];
+    begin
+        exit(PriceSource."Source No.");
+    end;
+
+    local procedure FillAdditionalFields(var PriceSource: Record "Price Source")
+    begin
+        PriceSource.Description := Location.Name;
+    end;
+}
+
+```
+Now lets ensure that price calculations include the new applies-to type.
+
+* To recalculate the price, we can subscribe to events that pass the sales line by reference. For example, the **OnValidateLocationCodeOnAfterSetOutboundWhseHandlingTime** event. We'll call the **UpdateUnitPriceByLocationCode()** method, which is a simplified version of the **UpdateUnitPriceByField()** method that runs the price calculation on the Sales Line table.
+* To add the location in the source list for price calculations, we'll subscribe to the **OnAfterAddSources** event of Codeunit "Sales Line - Price," and add the **Location Code** as a source of type **Location**.
+
+The following example shows how.
+
+```
+codeunit 50004 "Location Source Price Calc."
+{
+    [EventSubscriber(ObjectType::Table, Database::"Sales Line", 'OnValidateLocationCodeOnAfterSetOutboundWhseHandlingTime', '', false, false)]
+    local procedure OnValidateLocationCodeOnAfterSetOutboundWhseHandlingTime(var SalesLine: Record "Sales Line");
+    begin
+        UpdateUnitPriceByLocationCode(SalesLine);
+    end;
+
+    local procedure UpdateUnitPriceByLocationCode(var SalesLine: Record "Sales Line")
+    var
+        SalesHeader: Record "Sales Header";
+        PriceCalculation: Interface "Price Calculation";
+    begin
+        SalesHeader.Get(SalesLine."Document Type", SalesLine."Document No.");
+        SalesLine.TestField("Qty. per Unit of Measure");
+
+        SalesLine.GetPriceCalculationHandler("Price Type"::Sale, SalesHeader, PriceCalculation);
+        if not (SalesLine."Copied From Posted Doc." and SalesLine.IsCreditDocType()) then begin
+            PriceCalculation.ApplyDiscount();
+            SalesLine.ApplyPrice(SalesLine.FieldNo("Location Code"), PriceCalculation);
+        end;
+        SalesLine.Validate("Unit Price");
+    end;
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Sales Line - Price", 'OnAfterAddSources', '', false, false)]
+    local procedure OnAfterAddSources(
+        SalesHeader: Record "Sales Header"; SalesLine: Record "Sales Line";
+        PriceType: Enum "Price Type"; var PriceSourceList: Codeunit "Price Source List");
+    begin
+        PriceSourceList.Add("Price Source Type"::Location, SalesLine."Location Code");
+    end;
+}
+
+```
+
+Now we can test the price calculation. In this example, we have a **Red** location where we keep item 1000, and the item has prices for all customers.
+
+*****IMAGE OF ITEM PAGE GOES HERE***** 
+
+We'll create a sales order and add four lines for our item. When we choose a location code, the value in the **Unit Price Excl. VAT** changes. <!--Looks like this is also based on the quantity, but we didn't mention that-->
+
+*****IMAGE OF SALES ORDER PAGE GOES HERE*****
+
+### Example: Add Hierarchical Price Calculations
+This example adds a new price calculation method that changes the existing implementation to prioritize a customer price over all other customer price, even if the price is higher. This requires a small adjustment to how the price source list is generated, bcause the source list includes levels to implement hierarchical calculations.
+
+The **Price Calculation Method** implemenmts the price calculation methods. The following examples shows how to extend the enum with the new value.
+
+```
+enumextension 50005 "Hierarchical Price Method" extends "Price Calculation Method"
+{
+    value(50005; Hierarchical)
+    {
+        Caption = 'Hierarchical';
+    }
+}
+
+```
+
+We'll add a new codeunit that does the following:
+
+* Adds setup for the new method. Codeunit **Price Calculation Mgt.** provides the **OnFindSupportedSetup** event that allows us to add **Price Calculation Setup** records. Subscribe to it, and add the default setup record for the new method, for the sale type, all asset types, and "Business Central (Version 16.0)" implementation.
+* Modify the price source list that is generated by the "Business Central (Version 16.0)" implementation. Codeunit **Sales Line - Price** provides the **OnAfterAddSources** event and passes the price source list that can be overridden. Replace the incoming list with a new list that includes price sources at different levels, where a higher level means a higher priority.
+
+The following example shows how.
+
+```
+codeunit 50005 "Hierarchical Price Calc."
+{
+
+    local procedure SetHierarchicalSourceList(SalesHeader: Record "Sales Header"; SalesLine: Record "Sales Line"; var PriceSourceList: Codeunit "Price Source List")
+    begin
+        PriceSourceList.Init();
+        PriceSourceList.Add("Price Source Type"::"All Customers"); // "All Customers" will have lowest priority
+        PriceSourceList.IncLevel();
+        PriceSourceList.Add("Price Source Type"::"Customer Price Group", SalesLine."Customer Price Group");
+        PriceSourceList.Add("Price Source Type"::"Customer Disc. Group", SalesLine."Customer Disc. Group");
+        PriceSourceList.IncLevel();
+        PriceSourceList.Add("Price Source Type"::Customer, SalesHeader."Bill-to Customer No."); // Customer will have highest priority
+    end;
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Price Calculation Mgt.", 'OnFindSupportedSetup', '', false, false)]
+    local procedure OnFindSupportedSetup(var TempPriceCalculationSetup: Record "Price Calculation Setup");
+    begin
+        TempPriceCalculationSetup.Init();
+        TempPriceCalculationSetup.Method := TempPriceCalculationSetup.Method::Hierarchical;
+        TempPriceCalculationSetup.Enabled := true;
+        TempPriceCalculationSetup.Type := TempPriceCalculationSetup.Type::Sale;
+        TempPriceCalculationSetup."Asset Type" := TempPriceCalculationSetup."Asset Type"::" ";
+        TempPriceCalculationSetup.Validate(Implementation, TempPriceCalculationSetup.Implementation::"Business Central (Version 16.0)");
+        TempPriceCalculationSetup.Default := true;
+        TempPriceCalculationSetup.Insert(true);
+    end;
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Sales Line - Price", 'OnAfterAddSources', '', false, false)]
+    local procedure OnAfterAddSources(SalesHeader: Record "Sales Header"; SalesLine: Record "Sales Line"; PriceType: Enum "Price Type"; var PriceSourceList: Codeunit "Price Source List");
+    begin
+        if SalesLine."Price Calculation Method" = "Price Calculation Method"::Hierarchical then
+            SetHierarchicalSourceList(SalesHeader, SalesLine, PriceSourceList);
+    end;
+}
+
+```
+
+Now we need to set up the price calculation method and see how it works in a sales order. The new price calculation method **Hierarchical** has one implementation for the sales type, as shown in the following image.
+
+*****IMAGE OF SALES ORDER PAGE GOES HERE*****
+
+On the **Customer Card** page for customer 1000, in the **Price Calculation Method** field we'll choose **Hierarchical**, and in the **Customer Price Group** field we'll choose **PRICEGROUP**.
+
+*****IMAGE OF CUSTOMER CARD PAGE GOES HERE*****
+
+In the price list, we'll create priced lines for item 1001 so that the lowest price is for **All Customers** and the highest is for customer 1000, as shown in the following image.
+
+*****IMAGE OF PRICE LIST GOES HERE*****
+
+Now we'll create a sales order for customer 1000, and add a line for item 1001. 
+
+*****IMAGE OF SALES ORDER PAGE GOES HERE*****
+
+The highest price is suggested for the line because it is specified for the customer.
+
+If we clear the Price Calculation Method field on the customer card, if we created another order the lowest price would be suggested for the line.
+
+
 ## See Also
 [Extending Application Areas](devenv-extending-application-areas.md)
