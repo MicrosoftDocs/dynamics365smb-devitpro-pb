@@ -476,7 +476,7 @@ The **Price Asset Type** enum implements the **Price Asset** interface. Add a **
     - FilterPriceLines(),
     - FillFromBuffer(),
     - FillAdditionalFields()
-
+```
 ```
 codeunit 50002 "Price Asset - Fixed Asset" implements "Price Asset"
 {
