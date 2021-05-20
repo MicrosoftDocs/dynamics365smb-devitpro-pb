@@ -11,17 +11,16 @@ author: bholtorf
 ---
 
 # Extending Price Calculations
-If you record special prices and line discounts for sales and purchases, [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] can automatically calculate prices on sales and purchase documents, and on job and item journal lines. The price is the lowest permissible price with the highest permissible line discount on a given date. [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] automatically calculates the price when it inserts the unit price and the line discount percentage for items on new document and journal lines. For more information, see [Price Calculation](/dynamics365/business-central/sales-how-record-sales-price-discount-payment-agreements#best-price-calculation).
+If you offer special prices and line discounts for sales and purchases, [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] can automatically calculate prices on sales and purchase documents, and on job and item journal lines. The price is the lowest permissible price with the highest permissible line discount on a given date. [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] automatically calculates the price when it inserts the unit price and the line discount percentage for items on new document and journal lines. For more information, see [Price Calculation](/dynamics365/business-central/sales-how-record-sales-price-discount-payment-agreements#best-price-calculation).
 
-
-2020 release wave 1 introduces a second implementation of price calculations that will be available as an alternative to the calculations that were available in 2019 release wave 2 and earlier versions. This new implementation has the advantage that it is much easier to extend, for example, with new calculations.
+2020 release wave 1 introduces a second implementation of price calculations that will be available as an alternative to the calculations that were available in 2019 release wave 2 and earlier versions. The new implementation is easier to extend, for example, with new calculations.
 
 Price calculations that were available in 2019 release wave 2 are unchanged. The new calculations in 2020 release wave 1 are an alternative implementation that you can extend. 
 
 > [!NOTE]
 > The new price calculation capabilities in 2020 release wave 1 exist in code only, and do not include any user experience. We will provide that in an upcoming release. For now, to use the new capability you must create your own page.
 
-This topic describes how price calculations are implemented in 2020 release wave 1 (referred to as "Business Central Version 16" in the illustrations), and provides comparisons with 2019 release wave 2 (referred to as "Business Central Version 15" in the illustrations) to show what we have changed. It also provides some examples of how you can extend price calculations in 2020 release wave 1. 
+This topic describes how price calculations are implemented in 2020 release wave 1 (referred to as "Business Central Version 16" in the illustrations), and provides comparisons with 2019 release wave 2 (referred to as "Business Central Version 15" in the illustrations) to show what we have changed. It also provides some examples of how you can extend price calculations in 2020 release wave 1 and later. 
 
 ## Price Calculation Setup
 Price calculation are based on the **Price Calculation Setup** table, where you can choose an existing implementation, as shown in the following image.
@@ -313,8 +312,8 @@ codeunit 7032 "Price Source - Customer" implements "Price Source"
         end;
     end;
 ```
-## Example of Extended Price Calculations
-You can extend price calculations, for example, to include other sources or use calculations that allow for combinations and dependencies. The following sections provide an example.
+## Examples of Extended Price Calculations
+You can extend price calculations, for example, to include other sources or use calculations that allow for combinations and dependencies. The following sections provide examples.
 
 ### Example: Change an Item Price When Combined with Another Item 
 Let's say we want to make the price of one item depend on whether it's sold individually or bundled with one or more other items. We'll use software licenses in this example, but the same principles apply in other scenarios.
@@ -452,6 +451,168 @@ The new price calculation capabilities are not available in the user interface. 
    field("Attach To Item No."; "Attach To Item No.")
    { }
 ```
+
+### Example: Add Fixed Assets as a Product Type
+The product type that is set for the price list line is implemented by the **Price Asset Type** enum. Extend the enum with a new value, **Fixed Asset**.
+
+```
+enumextension 50000 "Fixed Asset Type" extends "Price Asset Type"
+{
+    value(5600; "Fixed Asset")
+    {
+        Caption = 'Fixed Asset';
+        Implementation = "Price Asset" = "Price Asset - Fixed Asset";
+    }
+}
+```
+
+The **Price Asset Type** enum implements the **Price Asset** interface. Add a **Price Asset - Fixed Asset** codeunit that will implement this interface for the Fixed Asset value. Some of the interface's methods are not relevant for fixed assets, so we will leave them empty, but implement the methods <!--From the codeunit?-->. For an example, we can look at the **Price Asset - G/L Account** codeunit. <!--Verify this with Stan. Are the following the methods from the price asset gl account codeunit? -->
+
+    - GetNo(), 
+    - GetId(), 
+    - IsLookupOk(), 
+    - IsAssetNoRequired(),
+    - FilterPriceLines(),
+    - FillFromBuffer(),
+    - FillAdditionalFields()
+
+```
+codeunit 50002 "Price Asset - Fixed Asset" implements "Price Asset"
+{
+    var
+        FixedAsset: Record "Fixed Asset";
+
+    procedure GetNo(var PriceAsset: Record "Price Asset")
+    begin
+        PriceAsset."Table Id" := Database::"Fixed Asset";
+        if FixedAsset.GetBySystemId(PriceAsset."Asset ID") then begin
+            PriceAsset."Asset No." := FixedAsset."No.";
+            FillAdditionalFields(PriceAsset);
+        end else
+PriceAsset.InitAsset();
+    end;
+
+    procedure GetId(var PriceAsset: Record "Price Asset")
+    begin
+        PriceAsset."Table Id" := Database::"Fixed Asset";
+        if FixedAsset.Get(PriceAsset."Asset No.") then begin
+            PriceAsset."Asset ID" := FixedAsset.SystemId;
+            FillAdditionalFields(PriceAsset);
+        end else
+            PriceAsset.InitAsset();
+    end;
+
+    procedure IsLookupOK(var PriceAsset: Record "Price Asset"): Boolean
+    var
+        xPriceAsset: Record "Price Asset";
+    begin
+        xPriceAsset := PriceAsset;
+        if FixedAsset.Get(xPriceAsset."Asset No.") then;
+        if Page.RunModal(Page::"Fixed Asset List", FixedAsset) = ACTION::LookupOK then begin
+            xPriceAsset.Validate("Asset No.", FixedAsset."No.");
+            PriceAsset := xPriceAsset;
+            exit(true);
+        end;
+    end;
+
+    procedure ValidateUnitOfMeasure(var PriceAsset: Record "Price Asset"): Boolean
+    begin
+    end;
+
+    procedure IsLookupUnitOfMeasureOK(var PriceAsset: Record "Price Asset"): Boolean
+    begin
+    end;
+
+    procedure IsLookupVariantOK(var PriceAsset: Record "Price Asset"): Boolean
+    begin
+        exit(false)
+    end;
+
+    procedure IsAssetNoRequired(): Boolean;
+    begin
+        exit(true)
+    end;
+
+    procedure FillBestLine(PriceCalculationBuffer: Record "Price Calculation Buffer"; AmountType: Enum "Price Amount Type"; var PriceListLine: Record "Price List Line")
+    begin
+    end;
+
+    procedure FilterPriceLines(PriceAsset: Record "Price Asset"; var PriceListLine: Record "Price List Line") Result: Boolean;
+    begin
+        PriceListLine.SetRange("Asset Type", PriceAsset."Asset Type");
+        PriceListLine.SetRange("Asset No.", PriceAsset."Asset No.");
+    end;
+
+    procedure PutRelatedAssetsToList(PriceAsset: Record "Price Asset"; var PriceAssetList: Codeunit "Price Asset List")
+    begin
+    end;
+
+    procedure FillFromBuffer(var PriceAsset: Record "Price Asset"; PriceCalculationBuffer: Record "Price Calculation Buffer")
+    begin
+        PriceAsset.NewEntry(PriceCalculationBuffer."Asset Type", PriceAsset.Level);
+        PriceAsset.Validate("Asset No.", PriceCalculationBuffer."Asset No.");
+    end;
+    local procedure FillAdditionalFields(var PriceAsset: Record "Price Asset")
+    begin
+        PriceAsset.Description := FixedAsset.Description;
+        PriceAsset."Unit of Measure Code" := '';
+        PriceAsset."Variant Code" := '';
+    end;
+}
+
+```
+The above example enabled the Fixed Asset product type in the price list lines. Now lets include this new product type in price calculations:
+
+   - The Sales Line table provides the **OnBeforeUpdateUnitPrice** event. This is where we'll add a call that runs the calculation, because it does not happen for fixed assets in the sales line. See the method UpdateUnitPriceByField() below, that is the simplified version of the method UpdateUnitPriceByField() that runs the price calculation in the table Sales Line;
+   - Codeunit "Sales Line - Price" provides the **OnAfterGetAssetType** event that must return a Price Asset Type value to not skip price calculation<!--does this mean, "to be included in price calculations"-->. If the sales line type is Fixed Asset, we return the Fixed Asset product type.
+
+<!--The following codeunit shows an example of how to implement this.-->
+
+```
+codeunit 50001 "Fixed Asset Price Calc."
+{
+    [EventSubscriber(ObjectType::Table, Database::"Sales Line", 'OnBeforeUpdateUnitPrice', '', false, false)]
+    local procedure OnBeforeUpdateUnitPrice(var SalesLine: Record "Sales Line"; xSalesLine: Record "Sales Line"; CalledByFieldNo: Integer; CurrFieldNo: Integer; var Handled: Boolean);
+    begin
+        if SalesLine.Type = SalesLine.Type::"Fixed Asset" then begin
+            UpdateUnitPriceByField(SalesLine, xSalesLine, CalledByFieldNo, CurrFieldNo);
+            Handled := true;
+        end;
+    end;
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Sales Line - Price", 'OnAfterGetAssetType', '', false, false)]
+    local procedure OnAfterGetAssetType(SalesLine: Record "Sales Line"; var AssetType: Enum "Price Asset Type");
+    begin
+        if SalesLine.Type = SalesLine.Type::"Fixed Asset" then
+            AssetType := AssetType::"Fixed Asset";
+    end;
+
+    local procedure UpdateUnitPriceByField(var SalesLine: Record "Sales Line"; xSalesLine: Record "Sales Line"; CalledByFieldNo: Integer; CurrFieldNo: Integer)
+    var
+        SalesHeader: Record "Sales Header";
+        PriceCalculation: Interface "Price Calculation";
+    begin
+        SalesHeader.Get(SalesLine."Document Type", SalesLine."Document No.");
+        SalesLine.TestField("Qty. per Unit of Measure");
+
+        SalesLine.GetPriceCalculationHandler("Price Type"::Sale, SalesHeader, PriceCalculation);
+        if not (SalesLine."Copied From Posted Doc." and SalesLine.IsCreditDocType()) then begin
+            PriceCalculation.ApplyDiscount();
+            SalesLine.ApplyPrice(CalledByFieldNo, PriceCalculation);
+        end;
+        SalesLine.Validate("Unit Price");
+
+        SalesLine.ClearFieldCausedPriceCalculation();
+    end;
+}
+```
+Now we can test the price calculation. In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], open the **Sales Price List** and add a price line for the product with a minimum quantity of 0, and one with 5.
+
+*****IMAGE OF SALES PRICE LIST GOES HERE*****
+
+If we create a sales order with lines for the minimum quantities of the product, the unit prices are calculated correctly.
+
+*****IMAGE OF SALES ORDER GOES HERE*****
 
 ## See Also
 [Extending Application Areas](devenv-extending-application-areas.md)
