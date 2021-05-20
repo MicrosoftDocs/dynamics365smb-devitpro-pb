@@ -1,6 +1,6 @@
 ---
-title: "App type, contact type, test drive, and customer leads"
-description: "Guidelines on app type, contact type, test drive, and customer leads."
+title: "App type, contact type, and customer leads"
+description: "Guidelines on app type, contact type, and customer leads."
 author: a-emniel
 ms.custom: na
 ms.date: 04/01/2021
@@ -10,7 +10,7 @@ ms.service: "dynamics365-business-central"
 ms.author: a-emniel
 ---
 
-# App type, contact type and customer leads
+# App type, contact type, and customer leads
 
 ## App type
 
