@@ -25,7 +25,8 @@ The `#region` directive is used to mark a block of code that you can expand or c
 ## Syntax
 
 ```AL
-#region code
+#region [comment]
+    code
 ```
 
 ```AL
