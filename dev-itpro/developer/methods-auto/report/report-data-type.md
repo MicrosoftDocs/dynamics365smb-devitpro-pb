@@ -3,7 +3,7 @@ title: "Report Data Type"
 description: "Is used to display, print, or process information from a database."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/21/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,7 +26,7 @@ The following methods are available on the Report data type.
 |Method name|Description|
 |-----------|-----------|
 |[DefaultLayout(Integer)](report-defaultlayout-method.md)|Gets the default built-in layout type that is used on a specified report.|
-|[Execute(Integer, String [, RecordRef])](report-execute-method.md)|Runs a report in preview or processing-only mode without showing the request page in the client. The method gets the request page parameter values as an input parameter string from a RUNREQUESTPAGE method call. The OnOpen and OnClose triggers on the request page will run even though the request page is not shown.|
+|[Execute(Integer, String [, RecordRef])](report-execute-method.md)|Runs a report in preview or processing-only mode without showing the request page in the client. The preview document will be downloaded as a PDF file to the user's browser client, where it can be read with the PDF reader. It won't open the Business Central preview page in the browser. The method gets the request page parameter values as an input parameter string from a RUNREQUESTPAGE method call. The OnOpen and OnClose triggers on the request page will run even though the request page is not shown.|
 |[GetSubstituteReportId(Integer)](report-getsubstitutereportid-method.md)|Gets the ID of the report that will be run by the platform after considering any substitutions made by extensions.|
 |[Print(Integer, String [, String] [, RecordRef])](report-print-method.md)|Prints a specified report without running the request page. Instead of using the request page to obtain parameters at runtime, the method gets the parameter values as an input parameter string, typically from a RUNREQUESTPAGE method call.|
 |[RdlcLayout(Integer, InStream)](report-rdlclayout-method.md)|Gets the RDLC layout that is used on a report and returns it as a data stream. The method has an instance call and a static call. The following code shows the syntax of the RDLC function. The first line of code is the syntax for an instance method call. The second line of code is the syntax for a static method call.|
@@ -50,7 +50,7 @@ The following methods are available on instances of the Report data type.
 |[CreateTotals(var Decimal [, var Decimal,...])](reportinstance-createtotals-decimal-decimal-method.md)|Maintains totals for a variable in AL.|
 |[CreateTotals(Array of [Decimal])](reportinstance-createtotals-decimal-method.md)|Maintains totals for a variable in AL.|
 |[DefaultLayout()](reportinstance-defaultlayout-method.md)|Gets the default built-in layout type that is used on a specified report.|
-|[Execute(String [, RecordRef])](reportinstance-execute-method.md)|Runs a report in preview or processing-only mode without showing the request page in the client. The method gets the request page parameter values as an input parameter string from a RUNREQUESTPAGE method call. The OnOpen and OnClose triggers on the request page will run even though the request page is not shown.|
+|[Execute(String [, RecordRef])](reportinstance-execute-method.md)|Runs a report in preview or processing-only mode without showing the request page in the client. The preview document will be downloaded as a PDF file to the user's browser client, where it can be read with the PDF reader. It won't open the Business Central preview page in the browser. The method gets the request page parameter values as an input parameter string from a RUNREQUESTPAGE method call. The OnOpen and OnClose triggers on the request page will run even though the request page is not shown.|
 |[IsReadOnly()](reportinstance-isreadonly-method.md)|Gets if the current report's data access intent is readonly.|
 |[Language([Integer])](reportinstance-language-method.md)|Gets or sets the current language setting for the report.|
 |[NewPage()](reportinstance-newpage-method.md)|Forces a page break when printing a report.|
