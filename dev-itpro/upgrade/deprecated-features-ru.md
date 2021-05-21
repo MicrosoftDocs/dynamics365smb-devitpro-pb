@@ -38,9 +38,9 @@ This article describes the features that will be or have been moved, removed, or
 |----|----|
 |Moved| The item documents are no longer specific to Russia, so we have made it generally available in the standard product. You can find them as Inventory Receipt and Inventory Shipment. |
 
-### Custom Declaration
 
-When printing sales documents, you can set up different tray numbers and paper sources on the first, last, and other pages.
+### Custom Declaration
+Russian legislation requires companies to record and track the customs declaration number for all imported goods. If a company sells imported goods, it must print the customs declaration number and the country of origin on invoices.
 
 |Moved, Removed, or Replaced?|Why?|
 |----|----|
