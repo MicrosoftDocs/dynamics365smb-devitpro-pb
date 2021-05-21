@@ -51,7 +51,7 @@ permissionset 50130 MyPermissionSet
     Caption = 'My PermissionSet';
 
     Permissions = 
-        tabledata "Floor Manager" = RIMD
+        tabledata "Floor Manager" = RIMD;
 } 
 
 ```

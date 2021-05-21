@@ -3,7 +3,7 @@ author: AndreiPanko
 
 ms.service: dynamics365-business-central
 ms.topic: include
-ms.date: 01/08/2021
+ms.date: 05/20/2021
 ms.author: andreipa
 ---
 <!--Currently, no fields are marked as ObsoleteState:Pending in the RU version.-->
@@ -61,13 +61,36 @@ The following fields are marked as ObsoleteState:Pending in the RU version.
 |12407|CD No. Header|All|All|Moved to Customs Declaration Tracking for Russia extension.|
 |12408|CD No. Information|All|All|Moved to Customs Declaration Tracking for Russia extension.|
 |12410|CD Tracking Setup|All|All|Moved to Customs Declaration Tracking for Russia extension.|
-|12458|Direct Transfer Header|All|All|Direct Transfer feature merge to W1.|
-|12459|Direct Transfer Line|All|All|Direct Transfer feature merge to W1.|
+|12458|Direct Transfer Header|All|All|Direct Transfer feature merged into W1.|
+|12459|Direct Transfer Line|All|All|Direct Transfer feature merged into W1.|
 |12450|Item Document Header|All|All|Replaced by Inventory Documents feature.|
 |12453|Item Document Line|All|All|Replaced by Inventory Documents feature.|
 |12451|Item Receipt Header|All|All|Replaced by Inventory Documents feature.|
 |12452|Item Receipt Line|All|All|Replaced by Inventory Documents feature.|
 |12454|Item Shipment Header|All|All|Replaced by Inventory Documents feature.|
 |12455|Item Shipment Line|All|All|Replaced by Inventory Documents feature.|
+|17385|Absence Header|All|All|Will be removed in 2021 wave 2 release|
+|17386|Absence Line|All|All|Will be removed in 2021 wave 2 release|
+|17458|AE Calculation Setup|All|All|Will be removed in 2021 wave 2 release|
+|17358|Classificator OKIN|All|All|Will be removed in 2021 wave 2 release|
+|17364|Default Labor Contract Terms|All|All|Will be removed in 2021 wave 2 release|
+|17419|Detailed Payroll Ledger Entry|All|All|Will be removed in 2021 wave 2 release|
+|17454|Element Buffer|All|All|Will be removed in 2021 wave 2 release|
+|17389|Employee Absence Entry|All|All|Will be removed in 2021 wave 2 release|
+|17355|Employee Category|All|All|Will be removed in 2021 wave 2 release|
+|17363|Employee Job Entry|All|All|Will be removed in 2021 wave 2 release|
+|17381|Employee Journal Batch|All|All|Will be removed in 2021 wave 2 release|
+|17382|Employee Journal Line|All|All|Will be removed in 2021 wave 2 release|
+|17380|Employee Journal Template|All|All|Will be removed in 2021 wave 2 release|
+|17413|Employee Ledger Entry|All|All|Will be removed in 2021 wave 2 release|
+|17359|General Directory|All|All|Will be removed in 2021 wave 2 release|
+|17366|Group Order Header|All|All|Will be removed in 2021 wave 2 release|
+|17367|Group Order Line|All|All|Will be removed in 2021 wave 2 release|
+|17356|HR Field Group|All|All|Will be removed in 2021 wave 2 release|
+|17357|HR Field Group Line|All|All|Will be removed in 2021 wave 2 release|
+|17368|HR Order Comment Line|All|All|Will be removed in 2021 wave 2 release|
+|17391|HRP Cue|All|All|Will be removed in 2021 wave 2 release|
+|12423|Job Title|All|All|Will be removed in 2021 wave 2 release|
+|14950|KLADR Address|All|All|Will be removed in 2021 wave 2 release|
+|14951|KLADR Category|All|All|Will be removed in 2021 wave 2 release|
 |99000853|Inventory Profile|14900|CD No.|Replaced by field Package Tracking feature in W1.|
-
