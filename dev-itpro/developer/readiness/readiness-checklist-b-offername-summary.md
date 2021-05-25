@@ -35,7 +35,7 @@ When creating a name for your offer, you can use the following two naming struct
 - Use industry specific vocabulary or benefit-based references in your product name if possible. This will increase relevance and conversion rates.
 
 *Don't*
-- Don't use special characters such as &, /, % etc. 
+- Don't use special characters such as #, /, % etc. 
 - Don't use technology specific messaging as your core product name component.
 - Avoid using acronyms that are emotionally meaningless.
 
