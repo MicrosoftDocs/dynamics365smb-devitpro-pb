@@ -34,7 +34,7 @@ In order to fix this diagnostic, you must revert the changes done in the current
 
 ## Code examples triggering the rule
 
-For the following examples, the version 1.0 of the extension defines the following table:
+For the following examples, version 1.0 of the extension defines the following table:
 
 ```AL
 table 50100 MyTable
@@ -53,7 +53,7 @@ table 50100 MyTable
 }
 ```
 
-These examples are demonstrating breaking changes done on the primary key. Similar examples could be done on the clustered key:
+These examples are demonstrating *breaking changes done on the primary key*. Similar examples could be done on the clustered key:
 
 ```AL
 key(clusteredKey; MyIntegerField)
@@ -83,7 +83,7 @@ table 50100 MyTable
 }
 ```
 
-In the version 2.0, the field `MyDateField` has been replaced by the field `MyTextField` in the list of fields for the primary key. This change is not allowed by the synchronization engine.
+In version 2.0, the field `MyDateField` has been replaced by the field `MyTextField` in the list of fields for the primary key. *This change is not allowed by the synchronization engine*.
 
 ### Example 2 - Removing a field in the list
 
@@ -106,7 +106,7 @@ table 50100 MyTable
 }
 ```
 
-In the version 2.0, the field `MyDateField` has been removed from the list of fields for the primary key. This change is not allowed by the synchronization engine.
+In version 2.0, the field `MyDateField` has been removed from the list of fields for the primary key. *This change is not allowed by the synchronization engine*.
 
 ### Example 3 - Adding a field in the list
 
@@ -129,11 +129,11 @@ table 50100 MyTable
 }
 ```
 
-In the version 2.0, the field `MyTextField` has been added to the list of fields for the primary key. This change is not allowed by the synchronization engine.
+In the version 2.0, the field `MyTextField` has been added to the list of fields for the primary key. *This change is not allowed by the synchronization engine*.
 
 ## Code example not triggering the rule
 
-Any changes done on a key which is not the primary key or the clustered key are allowed.
+Any changes done on a key which is not the primary key or the clustered key are allowed, see the following examples.
 
 Version 1.0 of the extension:
 
@@ -175,7 +175,7 @@ table 50100 MyTable
 }
 ```
 
-In the version 2.0, the field `MyDateField` has been replaced by the field `MyTextField` in the list of fields for the key `SimpleKey`. This change is allowed by the synchronization engine because `SimpleKey` is not the primary key and is not the clustered key.
+In version 2.0, the field `MyDateField` has been replaced by the field `MyTextField` in the list of fields for the key `SimpleKey`. This change is allowed by the synchronization engine because `SimpleKey` is not the primary key and is not the clustered key.
 
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
