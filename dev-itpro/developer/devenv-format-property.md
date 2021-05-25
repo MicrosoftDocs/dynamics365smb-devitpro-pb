@@ -1,6 +1,6 @@
 ---
-title: "Format Property"
-description: Explains the Format property in Business Central.
+title: "Formatting Values, Dates, and Time"
+description: Explains the Format functionality in Business Central.
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
@@ -11,16 +11,13 @@ ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 
-# Format Property
-Sets the formats of the source expression for various data types.  
-  
-## Applies to  
+# Formatting Values, Dates, and Time
 
-All data types in AL.  
+With the `Format` function in Business Central, you can set the format of the source expression for various data types in AL.  
   
 ## Remarks  
 
-You can set the `Format` property to a predefined format, or you can build your own format. For more information, see [Format Method (Integer, Text)](methods-auto/system/system-format-joker-integer-string-method.md).  
+You can choose to set `Format` to a predefined format, or you can build your own format. For more information, see [Format Method (Integer, Text)](methods-auto/system/system-format-joker-integer-string-method.md).  
   
 ## Basic Settings  
 
