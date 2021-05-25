@@ -30,11 +30,11 @@ To choose a predefined format, use the syntax: <Standard Format,*X*>, where *X* 
 |2|AL Code Constant Format|  
   
 > [!NOTE]  
-> You must enter the < and > angle brackets, such as <Standard Format,2>.  
+> You must enter the < and > angle brackets, such as `<Standard Format,2>`.  
   
 ## Building Formats  
 
-You can use the `Format` property to create your own formats. To create a format, use the following rules:  
+You can use `Format` to create your own formats. To create a format, use the following rules:  
   
 - A format property consists of zero or more Chars, Fields, or Attributes.  
   
