@@ -99,7 +99,7 @@ The Dynamics 365 blog for Business Decision Makers: [cloudblogs.microsoft.com/
 
 ## Migration  
 **Transitioning GP and NAV customers to Business Central**  
-Discover assets for transitioning GP and NAV customers to Business Central: [aka.ms/BCMigrations](https://aka.ms/BCmigrations)
+Discover assets for transitioning Dynamics GP and Dynamics NAV customers to Business Central: [aka.ms/BCMigrations](https://aka.ms/BCmigrations)
 
 ### See Also
 
