@@ -56,7 +56,7 @@ The following table shows the syntax.
 |\<Attribute> :=|\['\<' \<AttributeName> ',' \<Char> '>'\]|  
 |\<AttributeName> :=|\[Standard Format &#124; 1000Character &#124; Comma &#124; Overflow &#124; Filler Character &#124; Precision\]|  
   
-The 1000Character attribute specifies the character that separates the thousandths place digit from the hundredths place digit, the millionth place digit from the hundred thousandths place digit, and so on. The 1000Character attribute must be after the Integer or Integer Thousand field name and before the Decimals field name.  
+The `1000Character` attribute specifies the character that separates the thousandths place digit from the hundredths place digit, the millionth place digit from the hundred thousandths place digit, and so on. The 1000Character attribute must be after the Integer or Integer Thousand field name and before the Decimals field name.  
   
 The Comma attribute specifies the character that separates the integer from the decimals. The Comma attribute must be after the Decimals field name.  
   
@@ -79,7 +79,7 @@ The FieldName is a component that you can use to build a format expression. Depe
   
 ### Example  
 
-The following examples demonstrate how to use the `Format` property:  
+The following examples demonstrate how to use `Format`:  
   
 - Choosing a standard format.  
   
@@ -99,12 +99,13 @@ The following examples demonstrate how to use the `Format` property:
   
      \<Weekday Text>, \<Month Text> \<Day>   
   
-     This expression displays the date as Monday, April 15.  
+     This expression displays the date as **Monday, April 15**.  
   
     > [!NOTE]  
-    > The settings that are specified under the Regional and Language Options in Windows determine how some separators are displayed.  
+    > The settings that are specified under the Regional and Language Options in Windows determine how some separators are displayed. In the Business Central client, you can specify a **Region** under **Settings**, this determines how thousand and decimal separators are displayed.
   
-## Standard Decimal Formats  
+## Standard Decimal Formats
+
 This table shows the standard Decimal formats with the regional setting of a European country/region.  
   
 |**Europe Decimal**|**Format**|**Example**|  
@@ -127,7 +128,8 @@ The following table shows the standard Decimal formats with the regional setting
 |\<Integer>\<Decimals>\<Sign,1>|4|76543.21-|  
 |\<XML format>|9|-76543.21|  
   
-## Standard Date Formats  
+## Standard Date Formats
+
 The following table shows the standard Date formats with the regional setting of a European country/region.  
   
 |**Europe Date**|**Format**|**Example**|  
@@ -156,7 +158,8 @@ The following table shows the standard Date formats with the regional setting of
 |\<Day,2>\<Filler Character, >. \<Month Text,3> \<Year4>|7|5. Apr 2021|  
 |\<XML format>|9|2021-04-05|  
   
-## Standard Time Formats    
+## Standard Time Formats
+
 The following table shows the standard Time formats with the regional setting of a European country/region.  
   
 |**Europe Time**|**Format**|**Example**|  
@@ -175,7 +178,8 @@ The following table shows the standard Time formats with the regional setting of
 |\<Hours24,2>\<Filler Character,0>\<Minutes,2>\<Seconds,2> \<Second dec.>T|2|043555 .553T|  
 |\<XML format>|9|04:35:55.553|  
 
-## Standard DateTime Formats  
+## Standard DateTime Formats
+
 The following table shows the standard DateTime formats with the regional setting of a European country/region.  
   
 |**Europe DateTime**|**Format**|**Example**|  
@@ -236,7 +240,8 @@ The following table shows the standard DateTime formats with the regional settin
 |\<Number>|2|1|  
 |\<XML format>|9|1|  
 
-## Standard Option Formats  
+## Standard Option Formats
+
 |**Option**|**Format**|**Example**|  
 |----------|----------|-----------------|  
 |\<Text>|0|Blue|  
@@ -244,8 +249,9 @@ The following table shows the standard DateTime formats with the regional settin
 |\<Number>|2|1|  
 |\<XML format>|9|1|  
 
-## Standard XML and String Formats  
-Standard format 9 is used to display the data in the standard XML formats.  
+## Standard XML and String Formats
+
+Standard format `9` is used to display the data in the standard XML formats.  
   
 For Chars, all formats should resemble the following: <Char/Number>.  
   
