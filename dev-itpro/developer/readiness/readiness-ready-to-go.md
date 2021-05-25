@@ -97,6 +97,10 @@ Business Central on the Dynamics 365 blog for IT Professionals: [cloudblogs.micr
 **Blog for Decision Makers**  
 The Dynamics 365 blog for Business Decision Makers: [cloudblogs.microsoft.com/dynamics365/bdm](https://cloudblogs.microsoft.com/dynamics365/bdm/)
 
+## Migration  
+**Transitioning GP and NAV customers to Business Central**  
+Discover assets for transitioning GP and NAV customers to Business Central: [aka.ms/BCMigrations](https://aka.ms/BCmigrations)
+
 ### See Also
 
 Get started with developing apps: [aka.ms/BCPublisher](./get-started.md)  
