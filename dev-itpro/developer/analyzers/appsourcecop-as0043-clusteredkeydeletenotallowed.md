@@ -75,7 +75,7 @@ table 50100 MyTable
 }
 ```
 
-In the version 2.0 of the extension, the clustered key `ClusteredKey` has been removed. This change is not allowed by the synchronization engine.
+In version 2.0 of the extension, the clustered key `ClusteredKey` has been removed. *This change is not allowed by the synchronization engine*.
 
 ### Example 2 - Renaming the clustered key
 
@@ -100,7 +100,7 @@ table 50100 MyTable
 }
 ```
 
-In the version 2.0 of the extension, the clustered key has been renamed from `ClusteredKey` to `NewClusteredKey`. This change is detected as a removal of `ClusteredKey` and is not allowed by the synchronization engine.
+In version 2.0 of the extension, the clustered key has been renamed from `ClusteredKey` to `NewClusteredKey`. This change is detected as a removal of `ClusteredKey` and *is not allowed by the synchronization engine*.
 
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
