@@ -22,7 +22,8 @@ Retrieves the properties and relationships of a contact information object for [
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
 
 ```
-GET businesscentralPrefix/companies({id})/contactInformation({id})
+GET businesscentralPrefix/companies({id})/vendors({id})/contactsInformation({id})
+GET businesscentralPrefix/companies({id})/customers({id})/contactsInformation({id})
 ```
 
 ## Request headers
