@@ -22,7 +22,7 @@ Retrieves the properties and relationships of an apply vendor entry object for [
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
 
 ```
-GET businesscentralPrefix/companies({id})/applyVendorEntries({id})
+GET businesscentralPrefix/companies({id})/vendorPaymentJournals({id})/vendorPayments({id})/applyVendorEntries({id})
 ```
 
 ## Request headers

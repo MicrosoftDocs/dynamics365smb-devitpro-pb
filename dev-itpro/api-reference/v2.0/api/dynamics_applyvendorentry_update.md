@@ -22,7 +22,7 @@ Updates the properties of an apply vendor entry object for [!INCLUDE[prod_short]
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
 
 ```
-PATCH businesscentralPrefix/companies({id})/applyVendorEntries({id})
+PATCH businesscentralPrefix/companies({id})/vendorPaymentJournals({id})/vendorPayments({id})/applyVendorEntries({id})
 ```
 
 ## Request headers
