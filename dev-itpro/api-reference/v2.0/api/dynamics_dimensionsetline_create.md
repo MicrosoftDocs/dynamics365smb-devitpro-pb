@@ -34,6 +34,9 @@ POST businesscentralPrefix/companies({id})/purchaseInvoices({id})/dimensionSetLi
 POST businesscentralPrefix/companies({id})/purchaseInvoiceLines({id})/dimensionSetLines({id})
 POST businesscentralPrefix/companies({id})/generalLedgerEntries({id})/dimensionSetLines({id})
 POST businesscentralPrefix/companies({id})/timeRegistrationEntries({id})/dimensionSetLines({id})
+POST businesscentralPrefix/companies({id})/purchaseOrders({id})/dimensionSetLines({id})
+POST businesscentralPrefix/companies({id})/purchaseOrderLines({id})/dimensionSetLines({id})
+
 ```
 
 

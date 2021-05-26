@@ -33,6 +33,9 @@ PATCH businesscentralPrefix/companies({id})/purchaseInvoices({id})/dimensionSetL
 PATCH businesscentralPrefix/companies({id})/purchaseInvoiceLines({id})/dimensionSetLines({id})
 PATCH businesscentralPrefix/companies({id})/generalLedgerEntries({id})/dimensionSetLines({id})
 PATCH businesscentralPrefix/companies({id})/timeRegistrationEntries({id})/dimensionSetLines({id})
+PATCH businesscentralPrefix/companies({id})/purchaseOrders({id})/dimensionSetLines({id})
+PATCH businesscentralPrefix/companies({id})/purchaseOrderLines({id})/dimensionSetLines({id})
+
 ```
 
 ## Request headers

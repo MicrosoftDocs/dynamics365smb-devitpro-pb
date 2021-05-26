@@ -39,6 +39,8 @@ GET businesscentralPrefix/companies({id})/purchaseReceipts({id})/dimensionSetLin
 GET businesscentralPrefix/companies({id})/purchaseReceiptLines({id})/dimensionSetLines({id})
 GET businesscentralPrefix/companies({id})/generalLedgerEntries({id})/dimensionSetLines({id})
 GET businesscentralPrefix/companies({id})/timeRegistrationEntries({id})/dimensionSetLines({id})
+GET businesscentralPrefix/companies({id})/purchaseOrders({id})/dimensionSetLines({id})
+GET businesscentralPrefix/companies({id})/purchaseOrderLines({id})/dimensionSetLines({id})
 ```
 
 ## Request headers

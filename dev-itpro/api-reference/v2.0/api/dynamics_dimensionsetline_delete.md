@@ -33,6 +33,9 @@ DELETE businesscentralPrefix/companies({id})/purchaseInvoices({id})/dimensionSet
 DELETE businesscentralPrefix/companies({id})/purchaseInvoiceLines({id})/dimensionSetLines({id})
 DELETE businesscentralPrefix/companies({id})/generalLedgerEntries({id})/dimensionSetLines({id})
 DELETE businesscentralPrefix/companies({id})/timeRegistrationEntries({id})/dimensionSetLines({id})
+DELETE businesscentralPrefix/companies({id})/purchaseOrders({id})/dimensionSetLines({id})
+DELETE businesscentralPrefix/companies({id})/purchaseOrderLines({id})/dimensionSetLines({id})
+
 ```
 
 ## Request headers
