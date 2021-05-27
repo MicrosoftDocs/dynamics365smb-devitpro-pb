@@ -2715,7 +2715,8 @@
 ### [FAQ](developer/devenv-dev-faq-teams.md)
 <!-- end Microsoft Teams -->
 <!-- Business Central API -->
-## [Dynamics 365 Business Central API](api-reference/v2.0/index.md)
+## [Dynamics 365 Business Central API (v2.0)](api-reference/v2.0/index.md)
+## [Dynamics 365 Business Central API (v1.0)](api-reference/v1.0/index.md)
 <!-- end Business Central API -->
 <!--deprecated features -->
 # Removed or deprecated features
