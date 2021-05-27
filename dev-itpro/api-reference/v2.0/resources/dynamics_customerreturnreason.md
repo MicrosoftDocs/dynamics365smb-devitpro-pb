@@ -54,7 +54,7 @@ Here is a JSON representation of the customerReturnReason resource.
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
 ## See Also
-[GET customerReturnReason](../api/dynamics_customerreturnreason_get.md)
-[DELETE customerReturnReason](../api/dynamics_customerreturnreason_delete.md)
-[POST customerReturnReason](../api/dynamics_customerreturnreason_create.md)
-[PATCH customerReturnReason](../api/dynamics_customerreturnreason_update.md)
+[GET customerReturnReason](../api/dynamics_customerreturnreason_get.md)  
+[DELETE customerReturnReason](../api/dynamics_customerreturnreason_delete.md)  
+[POST customerReturnReason](../api/dynamics_customerreturnreason_create.md)  
+[PATCH customerReturnReason](../api/dynamics_customerreturnreason_update.md)  
