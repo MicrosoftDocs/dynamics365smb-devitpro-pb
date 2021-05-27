@@ -22,7 +22,7 @@ Tables and table extensions that have been published must not be deleted. This m
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 > [!NOTE]  
-> This rule validates tables independently of their Accessibility or ObsoleteState, because they are used when synchronizing the schema defined in the extension to the database.
+> This rule validates tables independently of their Accessibility or ObsoleteState, because tables are always used when synchronizing the schema defined in the extension to the database.
 
 ## See Also
 
