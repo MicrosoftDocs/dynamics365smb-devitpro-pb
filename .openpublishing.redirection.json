@@ -6174,6 +6174,11 @@
     "source_path": "dev-itpro/administration/FAQ-Intelligent-Cloud.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/administration/faq-migrate-data",
     "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/readiness/readiness-transition-business-central.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/readiness/readiness-ready-to-go#migration",
+    "redirect_document_id": false
    }
   ]
 }
