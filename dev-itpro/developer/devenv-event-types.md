@@ -54,7 +54,8 @@ Global events are predefined system events that are automatically raised by vari
 |||OnAfterMakeDateFilter|  
 |||OnAfterMakeTextFilter|  
 |||OnAfterMakeTimeFilter|
-|42|CaptionManagement|OnAfterCaptionClassTranslate|
+|42*|Caption Class|OnAfterCaptionClassResolve|
+|||OnResolveCaptionClass|
 |44|ReportManagement|OnAfterGetPrinterName|
 |||[OnAfterDocumentPrintReady](devenv-onafterdocumentprintready-event.md)|
 |||OnAfterGetPaperTrayForReport|
@@ -76,6 +77,8 @@ Global events are predefined system events that are automatically raised by vari
 |||OnBeforeOnDatabaseModify|
 |||OnBeforeOnDatabaseDelete|
 |||OnBeforeOnDatabaseRename|
+
+\* Codunit 42 **Caption Class** was introduced as a replacement for codeunit 42 **CaptionManagement**.  In previous versions, codeunit 42 **CaptionManagement** included the `OnAfterCaptionClassTranslate` event. For more information, see [Breaking Changes](https://github.com/microsoft/ALAppExtensions/blob/master/BREAKINGCHANGES.md#caption-class-module) in the ALAppExtensions GitHub repo.
 
 ## Trigger events
 
