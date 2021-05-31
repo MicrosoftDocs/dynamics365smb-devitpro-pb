@@ -1,6 +1,6 @@
 ---
-title: "Update 18.1 for Microsoft Dynamics 365 Business Central 2021 Release Wave 1"
-description: Get an overview of new and changed capabilities in the 18.1 update of Business Central online, which is part of 2021 release wave 1.
+title: "Update 18.2 for Microsoft Dynamics 365 Business Central 2021 Release Wave 1"
+description: Get an overview of new and changed capabilities in the 18.2 update of Business Central online, which is part of 2021 release wave 1.
 ms.author: solsen
 ms.custom: na
 ms.date: 05/10/2021
@@ -12,7 +12,7 @@ ms.service: "dynamics365-business-central"
 author: EmmaNielsson
 ---
 
-# Update 18.1 for Microsoft Dynamics 365 Business Central online 2021 release wave 1
+# Update 18.2 for Microsoft Dynamics 365 Business Central online 2021 release wave 1
 
 Would you like to know what has changed in update 18.1? Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update. In addition, we have gathered some good to know information and links, you might find interesting.
 
@@ -23,11 +23,8 @@ Would you like to know what has changed in update 18.1? Below you'll find an ove
 Find an overview of hotfixes in this [article](https://support.microsoft.com/topic/update-18-1-for-microsoft-dynamics-365-business-central-2021-release-wave-1-application-build-18-1-25158-platform-build-18-0-25290-c2b1b1d3-e875-4079-817e-aa51454feddb).
 
 ## Feature changes
-- [Editing in Excel more reliably](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/editing-excel-more-reliably)
-- [Support authentication of a SMTP connection using OAuth2](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/support-authentication-smtp-connection-using-oauth2)
-- [Extension lifecycle telemetry include signal from dependent extensions](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/extension-lifecycle-telemetry-include-signal-dependent-extensions)
-- [Edit active prices in Prices Overview and implement price changes using Price Worksheet](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/edit-active-prices-price-lists-price-overview-pages)
-- [Send documents as emails with any attached files automatically added as email attachments](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/send-documents-as-emails-attached-files-automatically-added-as-email-attachments)
+- [Feature 1]()
+- [Feature 2]()
 
 ## Localization updates 
 
@@ -42,9 +39,9 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/top
 If you want to get a comprehensive overview of what's new and planned for Business Central online for the entire 2021 release wave 1 (release from April 2021 through September 2021), find the link to the release plan [here](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/planned-features).
 
 
-## Upgrade to 18.1
+## Upgrade to 18.2
 
-Please note that new customers will automatically get the latest builds of Business Central (18.1). If you are an existing partner/customer, you will receive an email notification as soon as your environment has been upgraded.
+Please note that new customers will automatically get the latest builds of Business Central (18.2). If you are an existing partner/customer, you will receive an email notification as soon as your environment has been upgraded.
 
 ## Good to know
 
