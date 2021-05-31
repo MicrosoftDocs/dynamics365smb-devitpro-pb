@@ -31,7 +31,7 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/top
 |-------------|--------------|
 |Great Britain | Configurable Fraud Prevention Headers in Making Tax Digital|
 |Spain | Improve multiple SII special sheme codes functionality |
-|W1 | Configurable Instrastat Checklist setup for different reports |
+|W1 | Configurable Instrastat Checklist setup |
 |Italy | Update for Certificazione Unica | 
 |Spain | Support VAT cash refunds in the SII functionality | 
 
