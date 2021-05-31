@@ -58,7 +58,7 @@ When *translations from different layers* are picked up, one translation from ea
 Once translations on the different layers have been collected, the translations that display on the user interface are then picked, based on the context. The illustration below uses the following definitions:
 
 **Local language**  
-The language that the user specifies in [!INCLUDE[prod_short](../includes/prod_short.md)] settings.
+The language that the user specifies in [!INCLUDE[prod_short](../includes/prod_short.md)] under **Settings**.
 
 **Global language**  
 By default it is the same as the local language, but the global language can be changed from AL code.
