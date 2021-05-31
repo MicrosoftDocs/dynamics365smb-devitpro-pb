@@ -34,7 +34,7 @@ Translations can be applied using multiple properties, and there are multiple op
 
 ## Translations in the same layer
 
-If there are *multiple translations on the same layer*, then it is possible to control which translations are *applied last* by setting a dependency in the `app.json` file to the layers where the translation is intended to be applied last.
+If there are *multiple translations on the same layer*, then it is possible to control which translations are *applied last* by setting a dependency in the `app.json` file to the layer where the translation is intended to be applied last.
 
 For example, if you want to change the text provided from  **Translation app XYZ**, you can create another translation app, and in the `app.json` file of that new translation app, you must then specify a dependency on **Translation app XYZ** to make sure that the translation in *the new app is applied after* and thereby overwrites the original translation.
 
@@ -55,11 +55,7 @@ When *translations from different layers* are picked up, one translation from ea
 
 ## Picking the language to display
 
-Once translations on the different layers have been collected, the translations that display on the user interface are then picked, based on the context.
-
-![Translation](../media/Translation_2.png "Translations to display")
-
-The following definitions are used in the illustration:
+Once translations on the different layers have been collected, the translations that display on the user interface are then picked, based on the context. The illustration below uses the following definitions:
 
 **Local language**  
 The language that the user specifies in [!INCLUDE[prod_short](../includes/prod_short.md)] settings.
@@ -75,6 +71,9 @@ Defined as the primary culture of a language, for example, for `es-MX` (Spanish-
 
 **Field Caption**  
 If the page control is backed by a table field, then if no matches where found then it would use the same algorithm from the control by on the field.
+
+
+![Translation](../media/Translation_2.png "Translations to display")
 
 
 ## See Also
