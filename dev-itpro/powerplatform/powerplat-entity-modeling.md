@@ -110,7 +110,7 @@ Consider an example where you want to show sales orders from [!INCLUDE[prod_shor
 
 1. Go to the native table that you want to create a relation to and add a **Key**. Choose the column(s) needed for the relation. 1 to 3 columns can be used in the native to virtual table relation.
 2. Add a new record to the **Business Central Table Relation** table.  
-    1. On the **General** tab, provide **Relation Name**, **Native Table**, and **Native Table Key** which is the name of the key specified in step 1, and the **Virtual Table** name.  
+    1. On the **General** tab, provide **Relation Name**, **Native Table**, and **Native Table Key** which is the name of the key specified in step 1, and the **Virtual Table** name. For **Native Table** and **Virtual Table**, make sure to use the table name, and not the table display name.
     2. On the **Mapping** tab, provide column mapping between the native table and the virtual table column(s). All columns included in the table key (defined in step 1) must be mapped.  
 3. Press **Save**. Validation will be performed on save.
 
@@ -121,7 +121,7 @@ To follow the example from above, where a relation between the native table **Ac
 3. Add a new record to the **Business Central Table Relation** table.
     - On the **General** tab set the following:
         - **Relation Name** to **dyn365bc_account2salesorder**
-        - **Native Table** to **Account**
+        - **Native Table** to **account**
         - **Native Table Key** to **prefix_AccountKey**
         - **Virtual Table** to **dyn365bc_salesorder_v2_0**
     - On the **Mappings** tab set first row as follows:

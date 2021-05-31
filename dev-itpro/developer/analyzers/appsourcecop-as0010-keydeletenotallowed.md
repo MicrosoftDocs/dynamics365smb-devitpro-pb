@@ -20,6 +20,9 @@ Keys cannot be deleted.
 Keys cannot be deleted.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+For more information, see [AS0010](appsourcecop-as0010-primarykeydeletenotallowed.md).
+
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  

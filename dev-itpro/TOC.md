@@ -426,6 +426,7 @@
 ### [Report Extension Example](developer/devenv-report-ext-example.md)
 ### [Defining a Report Dataset](developer/devenv-report-dataset.md)
 ### [Request Pages](developer/devenv-request-pages.md)
+### [Report Triggers and Operations](developer/devenv-report-triggers.md)
 ### [Adding Reports to Tell Me](developer/devenv-al-menusuite-functionality.md)
 ### [Substituting a Report](developer/devenv-substituting-reports.md)
 ### [Testing a Report](developer/devenv-testing-reports.md)
@@ -2714,7 +2715,8 @@
 ### [FAQ](developer/devenv-dev-faq-teams.md)
 <!-- end Microsoft Teams -->
 <!-- Business Central API -->
-## [Dynamics 365 Business Central API](/dynamics-nav/api-reference/v2.0/index)
+## [Dynamics 365 Business Central API (v2.0)](api-reference/v2.0/index.md)
+## [Dynamics 365 Business Central API (v1.0)](api-reference/v1.0/index.md)
 <!-- end Business Central API -->
 <!--deprecated features -->
 # Removed or deprecated features
