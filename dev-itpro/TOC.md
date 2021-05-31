@@ -10,7 +10,7 @@
 ## Develop
 ### [The SMB Opportunity for App Publishers](developer/readiness/opportunity-app-publisher.md)
 ### [Get Started with Building Apps](developer/readiness/get-started.md)
-### [Customize Business Central](/developer/readiness/readiness-customizing-tenants.md)
+### [Customize Business Central](developer/readiness/readiness-customizing-tenants.md)
 ### [The Lifecycle of Apps and Extensions](developer/devenv-app-life-cycle.md)
 <!--#### What the partner's responsibilities are -->
 ### [Update Lifecycle for Customizations](developer/devenv-customization-update-lifecycle.md)
