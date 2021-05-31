@@ -1,6 +1,6 @@
 ---
 title: "Translations Overview"
-description: ""
+description: "An overview of the translation layers of Business Central and the extension model"
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
@@ -16,8 +16,6 @@ author: SusanneWindfeldPedersen
 Your [!INCLUDE[prod_short](../includes/prod_short.md)] app can be translated to other languages to adjust it to the market need. Because of the layered architecture of the extension model, the translation(s) that are displayed to the user depends on a number of things as explained in this topic.
 
 In [!INCLUDE[prod_short](../includes/prod_short.md)] translations are done using XLIFF files, which is a standardized format used for computer-based translations. For more information, see [Working with Translation Files](devenv-work-with-translation-files.md).
-
-The format for translation
 
 ## The life of a caption 
 
