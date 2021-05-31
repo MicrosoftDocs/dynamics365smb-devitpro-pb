@@ -61,16 +61,16 @@ Once translations on the different layers have been collected, the translations 
 The language that the user specifies in [!INCLUDE[prod_short](../includes/prod_short.md)] settings.
 
 **Global language**  
-By default it is the same as the local language, but the global language can be changed from AL code. 
+By default it is the same as the local language, but the global language can be changed from AL code.
 
 **Default Language**  
-Is defined by a server setting. For [!INCLUDE[prod_short](../includes/prod_short.md)] online it is set to the same language that was selected when signing up for Business Central.
+Is defined by a server setting for [!INCLUDE[prod_short](../includes/prod_short.md)] on-prem. For [!INCLUDE[prod_short](../includes/prod_short.md)] online it is set to the same language that was selected when signing up for [!INCLUDE[prod_short](../includes/prod_short.md)].
 
 **Primary language**  
-Defined as the primary culture of a language, for example, for `es-MX` (Spanish-Mexico) the primary language will be `es-ES` (Spanish-Spain).
+Defined as the primary culture of a language. For `es-MX` (Spanish-Mexico), for example, the primary language will be `es-ES` (Spanish-Spain).
 
 **Field Caption**  
-If the page control is backed by a table field, then if no matches where found then it would use the same algorithm from the control by on the field.
+If the page control is based on a table field, and if no translations are found on the page, then the translation found on the table field is used.
 
 
 ![Translation](../media/Translation_2.png "Translations to display")
