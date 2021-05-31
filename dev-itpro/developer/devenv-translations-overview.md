@@ -71,8 +71,9 @@ The resulting caption will then be **Customer** in en-US, **Cliente** in it-IT, 
 
 Once translations on the different layers have been collected, the translations that display on the user interface are then picked, based on the context.
 
-The following definitions are used in the illustration:
+![Translation](../media/Translation_2.png "Translations to display")
 
+The following definitions are used in the illustration:
 
 **Local language**  
 The language that the user specifies in [!INCLUDE[prod_short](../includes/prod_short.md)] settings.
