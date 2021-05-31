@@ -11,7 +11,9 @@ author: SusanneWindfeldPedersen
 
 # Working with Translation Files
 
-[!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] is multilanguage enabled, which means that you can display the user interface (UI) in different languages. In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] this is done using XLIFF files, which is a standardized format used for computer-based translations. 
+[!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] is multi-language enabled, which means that you can display the user interface (UI) in different languages. In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] this is done using XLIFF files, which is a standardized format used for computer-based translations.
+
+For an overview of how translations are applied, see [Translations Overview](devenv-translations-overview.md).
 
 ## Generating the XLIFF file
 
