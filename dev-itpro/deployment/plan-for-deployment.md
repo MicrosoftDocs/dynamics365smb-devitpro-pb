@@ -41,7 +41,7 @@ In a multitenant deployment, the application and business data are stored in sep
 
 ![Multitenant architecture overview](../developer/media/architecture-multitenant.png "Multitenant architecture overview")  
 
-Multitenancy centralizes the maintenance of the application, and at the same, time isolates each tenant. This architecture makes upgrading easier compared with a single-tenant deployment. For more information, see [Multitenant Deployment Architecture](Multitenant-Deployment-Architecture.md).
+Multitenancy centralizes the maintenance of the application and isolates each tenant at the same time. This architecture makes upgrading easier compared with a single-tenant deployment. For more information, see [Multitenant Deployment Architecture](Multitenant-Deployment-Architecture.md).
 
 ## User Authentication
 
