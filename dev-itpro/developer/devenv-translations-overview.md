@@ -49,7 +49,7 @@ For more information, see [JSON Files](devenv-json-files.md).
 
 ## Overwrites
 
-When *translations from different layers* are picked up, one translation from each observed culture is kept and when it is overwritten, only the specified culture changes. In the illustration, we have a caption and its page extension caption.
+When *translations from different layers* are picked up, one translation from each observed culture is kept and when it is overwritten, only the specified culture changes. The following image illustrates an example of three different layers of translations. A base object, an extension object, and a language app all contribute with languages/translation and the result is illustrates how the extension object translation is overwritten by the language app.
 
 
 ![Translation Overwrites](../media/Translation_1.png "Translation Overwrites")
