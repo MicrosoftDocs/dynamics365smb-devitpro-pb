@@ -64,7 +64,7 @@ By default it is the same as the local language, but the global language can be 
 **Default Language**  
 Is defined by a server setting for [!INCLUDE[prod_short](../includes/prod_short.md)] on-prem. For [!INCLUDE[prod_short](../includes/prod_short.md)] online it is set to the same language that was selected when signing up for [!INCLUDE[prod_short](../includes/prod_short.md)].
 
-**Primary language**  
+**Primary language (global or local)**  
 Defined as the primary culture of a language. For `es-MX` (Spanish-Mexico), for example, the primary language will be `es-ES` (Spanish-Spain).
 
 **Field Caption**  
