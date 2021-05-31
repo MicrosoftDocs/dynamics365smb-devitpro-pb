@@ -45,7 +45,7 @@ For example, if you want to change the text provided from  **Translation app XYZ
 
 For more information, see [JSON Files](devenv-json-files.md).
 
-## Overwrites
+## Translations in different layers
 
 When *translations from different layers* are picked up, one translation from each observed culture is kept and when it is overwritten, only the specified culture changes. The following image illustrates an example of three different layers of translations. A base object, an extension object, and a language app all contribute with languages/translation and the result illustrates how the extension object translation is overwritten by the language app.
 
