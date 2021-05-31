@@ -3,7 +3,7 @@ title: "XmlComment.AddAfterSelf Method"
 description: "Adds the specified content immediately after this node."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,7 @@ Adds the specified content immediately after this node.
 ## Parameters
 *XmlComment*  
 &emsp;Type: [XmlComment](xmlcomment-data-type.md)  
-An instance of the [XmlComment](xmlcomment-data-type.md) data type.
+An instance of the [XmlComment](xmlcomment-data-type.md) data type.  
 
 *Content*  
 &emsp;Type: [Any](../any/any-data-type.md)  
@@ -35,7 +35,7 @@ The content to add after this node.
 
 
 ## Return Value
-*Ok*  
+*[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 

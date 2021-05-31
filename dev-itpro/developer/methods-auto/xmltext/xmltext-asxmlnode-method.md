@@ -3,7 +3,7 @@ title: "XmlText.AsXmlNode Method"
 description: "Converts the node to an XmlNode."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,7 +28,7 @@ XmlNode :=   XmlText.AsXmlNode()
 ## Parameters
 *XmlText*  
 &emsp;Type: [XmlText](xmltext-data-type.md)  
-An instance of the [XmlText](xmltext-data-type.md) data type.
+An instance of the [XmlText](xmltext-data-type.md) data type.  
 
 ## Return Value
 *XmlNode*  

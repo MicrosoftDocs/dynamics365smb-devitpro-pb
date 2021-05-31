@@ -3,7 +3,7 @@ title: "XmlNodeList.Get Method"
 description: "Gets a node at the given index."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,7 @@ Gets a node at the given index.
 ## Parameters
 *XmlNodeList*  
 &emsp;Type: [XmlNodeList](xmlnodelist-data-type.md)  
-An instance of the [XmlNodeList](xmlnodelist-data-type.md) data type.
+An instance of the [XmlNodeList](xmlnodelist-data-type.md) data type.  
 
 *Index*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
@@ -39,7 +39,7 @@ The XmlNode with the specified index in the list.
 
 
 ## Return Value
-*Ok*  
+*[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if a node is found at the given index, otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 

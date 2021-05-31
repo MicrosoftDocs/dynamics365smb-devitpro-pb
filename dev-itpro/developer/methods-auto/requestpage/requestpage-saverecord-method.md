@@ -3,7 +3,7 @@ title: "RequestPage.SaveRecord Method"
 description: "Saves the current record as if performed by the client. If the record does not exist, it is inserted, otherwise it is modified."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,7 +28,7 @@ Saves the current record as if performed by the client. If the record does not e
 ## Parameters
 *RequestPage*  
 &emsp;Type: [RequestPage](requestpage-data-type.md)  
-An instance of the [RequestPage](requestpage-data-type.md) data type.
+An instance of the [RequestPage](requestpage-data-type.md) data type.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

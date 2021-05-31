@@ -3,7 +3,7 @@ title: "List.LastIndexOf Method"
 description: "Searches for the specified value and returns the one-based index of the last occurrence within the entire List."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,7 @@ Index :=   List.LastIndexOf(Value: T)
 ## Parameters
 *List*  
 &emsp;Type: [List](list-data-type.md)  
-An instance of the [List](list-data-type.md) data type.
+An instance of the [List](list-data-type.md) data type.  
 
 *Value*  
 &emsp;Type: [T](list-data-type.md)  

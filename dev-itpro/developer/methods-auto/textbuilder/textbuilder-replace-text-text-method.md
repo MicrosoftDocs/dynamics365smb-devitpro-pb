@@ -3,7 +3,7 @@ title: "TextBuilder.Replace Method"
 description: "Replaces all occurrences of a specified string in this TextBuilder instance with another specified string."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,7 @@ Replaces all occurrences of a specified string in this TextBuilder instance with
 ## Parameters
 *TextBuilder*  
 &emsp;Type: [TextBuilder](textbuilder-data-type.md)  
-An instance of the [TextBuilder](textbuilder-data-type.md) data type.
+An instance of the [TextBuilder](textbuilder-data-type.md) data type.  
 
 *OldText*  
 &emsp;Type: [Text](../text/text-data-type.md)  
@@ -39,7 +39,7 @@ The string that replaces OldText.
 
 
 ## Return Value
-*Ok*  
+*[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if all occurrences of a specified string were successfully replaced, otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 

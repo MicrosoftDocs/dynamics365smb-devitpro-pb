@@ -3,7 +3,7 @@ title: "XmlDocumentType.GetInternalSubset Method"
 description: "Gets the internal subset for this Document Type Definition (DTD)."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,7 @@ Gets the internal subset for this Document Type Definition (DTD).
 ## Parameters
 *XmlDocumentType*  
 &emsp;Type: [XmlDocumentType](xmldocumenttype-data-type.md)  
-An instance of the [XmlDocumentType](xmldocumenttype-data-type.md) data type.
+An instance of the [XmlDocumentType](xmldocumenttype-data-type.md) data type.  
 
 *Result*  
 &emsp;Type: [Text](../text/text-data-type.md)  
@@ -35,7 +35,7 @@ A string that contains the internal subset for this Document Type Definition (DT
 
 
 ## Return Value
-*Ok*  
+*[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 

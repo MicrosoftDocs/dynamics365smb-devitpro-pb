@@ -3,7 +3,7 @@ title: "TestField.AssertEquals Method"
 description: "Asserts that the value in a field on a test page equals a specified value."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,7 @@ Asserts that the value in a field on a test page equals a specified value.
 ## Parameters
 *TestField*  
 &emsp;Type: [TestField](testfield-data-type.md)  
-An instance of the [TestField](testfield-data-type.md) data type.
+An instance of the [TestField](testfield-data-type.md) data type.  
 
 *Value*  
 &emsp;Type: [Any](../any/any-data-type.md)  

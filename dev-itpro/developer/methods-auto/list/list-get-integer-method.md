@@ -3,7 +3,7 @@ title: "List.Get Method"
 description: "Gets the element at the specified index. This method will raise an error if the index is outside the valid range."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,7 @@ Result :=   List.Get(Index: Integer)
 ## Parameters
 *List*  
 &emsp;Type: [List](list-data-type.md)  
-An instance of the [List](list-data-type.md) data type.
+An instance of the [List](list-data-type.md) data type.  
 
 *Index*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  

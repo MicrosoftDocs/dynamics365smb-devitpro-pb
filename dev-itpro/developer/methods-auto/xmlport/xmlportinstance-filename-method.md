@@ -3,7 +3,7 @@ title: "Xmlport.Filename Method"
 description: "Gets the current value of the FileName Property of an XmlPort and sets this property to a new value."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,15 +29,15 @@ Gets the current value of the FileName Property of an XmlPort and sets this prop
 ## Parameters
 *Xmlport*  
 &emsp;Type: [Xmlport](xmlport-data-type.md)  
-An instance of the [Xmlport](xmlport-data-type.md) data type.
+An instance of the [Xmlport](xmlport-data-type.md) data type.  
 
-*FileName*  
+*[Optional] FileName*  
 &emsp;Type: [String](../string/string-data-type.md)  
 The new file name.  
 
 
 ## Return Value
-*FileName*  
+*[Optional] FileName*  
 &emsp;Type: [String](../string/string-data-type.md)  
 The current value of the FileName Property of an XmlPort.
 

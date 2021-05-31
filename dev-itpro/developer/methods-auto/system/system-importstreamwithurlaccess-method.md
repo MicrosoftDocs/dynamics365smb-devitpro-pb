@@ -3,7 +3,7 @@ title: "System.ImportStreamWithUrlAccess Method"
 description: "Imports an object into a media container to be used in a temporary URL with a default expiration time."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -37,7 +37,7 @@ Input stream that contains the object to store as a media object.
 &emsp;Type: [String](../string/string-data-type.md)  
 File name to associate with the created media object.
         
-*MinutesToExpire*  
+*[Optional] MinutesToExpire*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 Number of minutes after which the object will expire.  
 

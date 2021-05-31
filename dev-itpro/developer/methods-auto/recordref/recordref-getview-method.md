@@ -3,7 +3,7 @@ title: "RecordRef.GetView Method"
 description: "Returns a string that describes the current sort order, key, and filters on a table."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,9 +27,9 @@ String :=   RecordRef.GetView([UseNames: Boolean])
 ## Parameters
 *RecordRef*  
 &emsp;Type: [RecordRef](recordref-data-type.md)  
-An instance of the [RecordRef](recordref-data-type.md) data type.
+An instance of the [RecordRef](recordref-data-type.md) data type.  
 
-*UseNames*  
+*[Optional] UseNames*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 If this parameter is true (default) or omitted, the returned string contains references to field captions in the table with which the record is associated. If this parameter is false, the returned string contains references to field numbers in the table with which the record is associated.  
 

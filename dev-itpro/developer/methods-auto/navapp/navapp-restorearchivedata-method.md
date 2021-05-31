@@ -3,7 +3,7 @@ title: "NavApp.RestoreArchiveData Method"
 description: "Restores archived data for a specified table of an extension during installation."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,13 +28,13 @@ Restores archived data for a specified table of an extension during installation
 *TableNo*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The ID of the table for which to restore achived data.  
-*RunTrigger*  
+*[Optional] RunTrigger*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the table triggers should run, otherwise **false**.  
 
 
 ## Return Value
-*Ok*  
+*[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true**, if the archived data was restored for the specified table; otherwise **false** If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 

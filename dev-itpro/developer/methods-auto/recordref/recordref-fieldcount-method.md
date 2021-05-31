@@ -3,7 +3,7 @@ title: "RecordRef.FieldCount Method"
 description: "Gets the number of fields in the table that is currently selected or returns the number of fields that have been defined in a key. Returns an error if no table or no key is selected."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,7 +30,7 @@ Count :=   RecordRef.FieldCount()
 ## Parameters
 *RecordRef*  
 &emsp;Type: [RecordRef](recordref-data-type.md)  
-An instance of the [RecordRef](recordref-data-type.md) data type.
+An instance of the [RecordRef](recordref-data-type.md) data type.  
 
 ## Return Value
 *Count*  

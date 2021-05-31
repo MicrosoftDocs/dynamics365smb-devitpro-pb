@@ -3,7 +3,7 @@ title: "Notification.Send Method"
 description: "Sends the notification to the client, where it will display in the UI."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,10 +28,10 @@ Sends the notification to the client, where it will display in the UI.
 ## Parameters
 *Notification*  
 &emsp;Type: [Notification](notification-data-type.md)  
-An instance of the [Notification](notification-data-type.md) data type.
+An instance of the [Notification](notification-data-type.md) data type.  
 
 ## Return Value
-*Ok*  
+*[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the notification was sent; otherwise **false** If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 

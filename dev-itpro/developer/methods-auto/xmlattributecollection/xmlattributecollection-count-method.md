@@ -3,7 +3,7 @@ title: "XmlAttributeCollection.Count Method"
 description: "Gets the number of attributes in the XmlAttributeCollection."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,7 +30,7 @@ Count :=   XmlAttributeCollection.Count()
 ## Parameters
 *XmlAttributeCollection*  
 &emsp;Type: [XmlAttributeCollection](xmlattributecollection-data-type.md)  
-An instance of the [XmlAttributeCollection](xmlattributecollection-data-type.md) data type.
+An instance of the [XmlAttributeCollection](xmlattributecollection-data-type.md) data type.  
 
 ## Return Value
 *Count*  

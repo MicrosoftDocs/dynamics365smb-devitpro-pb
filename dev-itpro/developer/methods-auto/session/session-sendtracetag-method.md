@@ -3,7 +3,7 @@ title: "Session.SendTraceTag Method"
 description: "Send a trace tag to the telemetry service."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -45,7 +45,7 @@ The verbosity.
 &emsp;Type: [String](../string/string-data-type.md)  
 The message.
         
-*DataClassification*  
+*[Optional] DataClassification*  
 &emsp;Type: [DataClassification](../dataclassification/dataclassification-option.md)  
 Classification of data in message.   
 

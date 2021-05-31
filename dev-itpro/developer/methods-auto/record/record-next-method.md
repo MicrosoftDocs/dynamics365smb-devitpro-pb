@@ -3,7 +3,7 @@ title: "Record.Next Method"
 description: "Steps through a specified number of records and retrieves a record."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,9 +27,9 @@ Steps through a specified number of records and retrieves a record.
 ## Parameters
 *Record*  
 &emsp;Type: [Record](record-data-type.md)  
-An instance of the [Record](record-data-type.md) data type.
+An instance of the [Record](record-data-type.md) data type.  
 
-*Steps*  
+*[Optional] Steps*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 Specifies the direction of the search and how many records to step over. This parameter follows the following rules:
 -   \> 0  Search Steps records forward in the table.
@@ -40,7 +40,7 @@ If you do not specify this parameter, then the next record is found.
 
 
 ## Return Value
-*Steps*  
+*[Optional] Steps*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 
 
