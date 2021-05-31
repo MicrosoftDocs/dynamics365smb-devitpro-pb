@@ -19,7 +19,7 @@ In [!INCLUDE[prod_short](../includes/prod_short.md)] translations are done using
 
 ## The life of a caption 
 
-Translations can be applied using multiple properties, and there are multiple opportunities to change them. The caption of a page, for example, can be changed from multiple places. With that flexibility, a defined structure is defined. A page name will be overwritten as follows: 
+Translations can be applied using multiple properties, and there are multiple opportunities to change them. The caption of a page, for example, can be changed from multiple places. With that flexibility, a defined structure is in place and a page name, for example, will be translated (overwritten) as follows: 
 
 1. Page Name
 2. Page Caption
