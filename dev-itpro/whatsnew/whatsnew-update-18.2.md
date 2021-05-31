@@ -23,17 +23,17 @@ Would you like to know what has changed in update 18.1? Below you'll find an ove
 Find an overview of hotfixes in this [article](https://support.microsoft.com/topic/update-18-1-for-microsoft-dynamics-365-business-central-2021-release-wave-1-application-build-18-1-25158-platform-build-18-0-25290-c2b1b1d3-e875-4079-817e-aa51454feddb).
 
 ## Feature changes
-- [Feature 1]()
-- [Feature 2]()
+-
 
 ## Localization updates 
 
 | Country| Feature change |
 |-------------|--------------|
-|Canada and US | Updates for Include Tax with partial shipping and prepayment credit memo|
-|Italy | Changes in withholding tax declaration 2021 |
-|Italy | Updated for E-invoicing functionality |
-|Belgium | Update for File Domiciliation in SEPA Direct Debit export | 
+|Great Britain | Configurable Fraud Prevention Headers in Making Tax Digital|
+|Spain | Improve multiple SII special sheme codes functionality |
+|W1 | Configurable Instrastat Checklist setup for different reports |
+|Italy | Update for Certificazione Unica | 
+|Spain | Support VAT cash refunds in the SII functionality | 
 
 ## Release Plan
 If you want to get a comprehensive overview of what's new and planned for Business Central online for the entire 2021 release wave 1 (release from April 2021 through September 2021), find the link to the release plan [here](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/planned-features).
@@ -48,21 +48,8 @@ Please note that new customers will automatically get the latest builds of Busin
 **Support for migrating data from earlier on-premises versions of Business Central to 2021 release wave 1 (v.18)**  
 With the Business Central cloud migration tool, customers can migrate their data from earlier on-premises versions of the product to their online Business Central environment, running on the latest version. We've added support for customers who are running on Business Central on-premises version 14, 15, 16, or 17 to migrate their data to version 18 of Business Central online. We've implemented the necessary data upgrade logic in the cloud migration tool, so customers don't have to upgrade their older version themselves in order to migrate their data to the latest online release. 
 
-**US customers: Schedule minor updates and receive email notifications**  
-US customers can now receive up-front email notifications seven days in advance and schedule minor updates of Business Central within 21 days. We have enabled this new capability to be available for US with 18.1, and plan to enable the same experience for all other countries with 18.2. Stay tuned for updates! Learn more: https://aka.ms/BCUpdates.
-
-**Business Central Office Hours Calls in May**  
-Make sure to join the office hours calls around ‘Report Extensibility’ on May 4 and ‘Snapshot debugging’ on May 18. Register and stay tuned for the upcoming calls: https://aka.ms/BCOfficeHours.
-
-**Business Central Launch Event**  
+**SKRIV OM FREDDYS TO SESSIONER HER**  
 You can still watch the 15+ on-demand sessions from the Business Central Launch Event. The sessions revolve around the new Dynamics 365 Business Central features and capabilities — everything from working with dimensions, permissions and entitlements, to product announcements and onboarding customers. Register for free: [aka.ms/BCLE](https://aka.ms/BCLE).
 
-
-**Updated versions of the Business Central mobile apps are being released to all three stores this month (covering some fixes and improvements):**  
-- Fixed a problem where the Windows UWP desktop/tablet app was sometimes displaying blank screen on restart
-- Fixed a problem when iOS mobile app running on-premises in certain conditions required the user to enter credentials with every login
-- Fixed a problem with iOS mobile app related to failed download when previewing a report
-- Fixed a problem with Android mobile app not being able to install on devices where a GPS module was disabled or missing
-- Fixed connectivity problems with Business Central cloud  
-
-Please download and always use the latest version: [Windows (Microsoft Store)](https://www.microsoft.com/p/microsoft-dynamics-365-business-central/9nblggh4ql79?rtc=1&activetab=pivot:overviewtab),  [iOS (Apple's App Store)](https://apps.apple.com/app/project-madeira/id1093325047) or [Android (Google's Play Store)](https://play.google.com/store/apps/details?id=com.microsoft.dynamics.ProjectMadeira). Currently recommended versions of these apps are 3.2.x and 3.3.x (or later).
+**Business Central Office Hours Calls in June**  
+Make sure to join the office hours calls around 'Performance Toolkit' on June 1, 'Working with Dimensions' on June 15, and 'DevOps for Per Tenant Extensions' on June 31. Register and stay tuned for the upcoming calls: https://aka.ms/BCOfficeHours. Also, notice that in the months of July and August, there will be no office hours calls. 
