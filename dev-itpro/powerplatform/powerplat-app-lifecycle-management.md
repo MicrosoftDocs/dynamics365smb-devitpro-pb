@@ -18,7 +18,7 @@ author: solsen
 [!INCLUDE[cc_data_platform_banner](../includes/cc_data_platform_banner.md)]
 
 > [!IMPORTANT]  
-> This functionality requires version 17 or later of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online while service update 189 is required for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The release information for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] is published on the [latest version availability page](https://docs.microsoft.com/en-us/dynamics365/released-versions/dynamics-365ce#all-version-availability).
+> This functionality requires version 17 or later of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] **online** while service update 189 is required for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The release information for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] is published on the [latest version availability page](https://docs.microsoft.com/en-us/dynamics365/released-versions/dynamics-365ce#all-version-availability).
 
 The application lifecycle for an end-to-end solution using [!INCLUDE[prod_short](../developer/includes/prod_short.md)] virtual tables will encompass both [!INCLUDE[prod_short](../developer/includes/prod_short.md)] as well as [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].
 
