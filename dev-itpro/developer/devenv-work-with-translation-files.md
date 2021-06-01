@@ -135,7 +135,7 @@ To translate other extensions, for example, when adding translations to the Base
 
 In order to translate other apps, you must use the `<trans-unit id>` of the original property, not the ones where the property might have been modified by an extension object.
 
-An example is that if the following page:
+An example is that of the following page:
 
 ```al
 page 50000 MyPage {
