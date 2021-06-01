@@ -453,6 +453,8 @@ The new price calculation capabilities are not available in the user interface. 
 ```
 
 ### Example: Add Fixed Assets as a Product Type
+This example shows how to add a new type of asset so that it can be used in price calculations for sales and purchases. 
+
 The product type that is set for the price list line is implemented by the **Price Asset Type** enum. Extend the enum with a new value, **Fixed Asset**.
 
 ```
@@ -466,7 +468,7 @@ enumextension 50000 "Fixed Asset Type" extends "Price Asset Type"
 }
 ```
 
-The **Price Asset Type** enum implements the **Price Asset** interface. Add a **Price Asset - Fixed Asset** codeunit that will implement this interface for the Fixed Asset value. Some of the interface's methods are not relevant for fixed assets, so we will leave them empty, but implement the methods <!--From the codeunit?-->. For an example, we can look at the **Price Asset - G/L Account** codeunit. <!--Verify this with Stan. Are the following the methods from the price asset gl account codeunit? -->
+The **Price Asset Type** enum implements the **Price Asset** interface. Add a **Price Asset - Fixed Asset** codeunit that will implement this interface for the Fixed Asset value. Some of the interface's methods are not relevant for fixed assets, so we will leave them empty but implement the methods from the codeunit. For an example, see the **Price Asset - G/L Account** codeunit. The following example will enable the Fixed Asset product type in the price list lines. 
 
 ```
     - GetNo(), 
@@ -490,7 +492,7 @@ codeunit 50002 "Price Asset - Fixed Asset" implements "Price Asset"
             PriceAsset."Asset No." := FixedAsset."No.";
             FillAdditionalFields(PriceAsset);
         end else
-PriceAsset.InitAsset();
+            PriceAsset.InitAsset();
     end;
 
     procedure GetId(var PriceAsset: Record "Price Asset")
@@ -562,12 +564,12 @@ PriceAsset.InitAsset();
 }
 
 ```
-The above example enabled the Fixed Asset product type in the price list lines. Now lets include this new product type in price calculations:
+Now lets include this new product type in price calculations:
 
-   - The Sales Line table provides the **OnBeforeUpdateUnitPrice** event. This is where we'll add a call that runs the calculation, because it does not happen for fixed assets in the sales line. See the method UpdateUnitPriceByField() below, that is the simplified version of the method UpdateUnitPriceByField() that runs the price calculation in the table Sales Line;
-   - Codeunit "Sales Line - Price" provides the **OnAfterGetAssetType** event that must return a Price Asset Type value to not skip price calculation<!--does this mean, "to be included in price calculations"-->. If the sales line type is Fixed Asset, we return the Fixed Asset product type.
+   - The Sales Line table provides the **OnBeforeUpdateUnitPrice** event. This is where we'll add a call that runs the calculation, because it does not happen for fixed assets in the sales line. See the method UpdateUnitPriceByField() below, that is the simplified version of the method UpdateUnitPriceByField() that runs the price calculation in the Sales Line table.
+   - Codeunit "Sales Line - Price" provides the **OnAfterGetAssetType** event that must return a Price Asset Type value to be included in price calculations. If the sales line type is Fixed Asset, we return the Fixed Asset product type.
 
-<!--The following codeunit shows an example of how to implement this.-->
+The following codeunit shows an example of how to implement this.
 
 ```
 codeunit 50001 "Fixed Asset Price Calc."
@@ -609,15 +611,15 @@ codeunit 50001 "Fixed Asset Price Calc."
 ```
 Now we can test the price calculation. In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], open the **Sales Price List** and add a price line for the product with a minimum quantity of 0, and one with 5.
 
-*****IMAGE OF SALES PRICE LIST GOES HERE*****
+***IMAGE OF SALES PRICE LIST GOES HERE***
 
 If we create a sales order with lines for the minimum quantities of the product, the unit prices are calculated correctly.
 
 *****IMAGE OF SALES ORDER GOES HERE*****
 
 ### Example: Add Location as an Applies-to Type
+This example shows how to add a new location source type to the price list header. 
 
-<!--We should probably state why this example would be useful.-->
 The **Price Source Type** enum implements the **Applies-to Type** field in the header of the price list. Additionally, the **Sales Price Source Type**, **Purchase Price Source Type**, and **Job Price Source Type** are subsets of the **Price Source Type** enum. If we want to use a new value in sales, purchase, and job price lists, we must also extend those enums. 
 
 In this example, we will extend the Price Source Type enum to display the value in the sales price lists by also extending the Sales Price Source Type enum. For compatibility, the new value must have the same ID in both enums.
@@ -755,7 +757,7 @@ codeunit 50004 "Location Source Price Calc."
 
 ```
 
-Now we can test the price calculation. In this example, we have a **Red** location where we keep item 1000, and the item has prices for all customers.
+Now we can test the price calculation. In this example, we have an **East** location where we keep item 1896-S, and the item has prices for all customers.
 
 *****IMAGE OF ITEM PAGE GOES HERE***** 
 
@@ -828,22 +830,19 @@ Now we need to set up the price calculation method and see how it works in a sal
 
 *****IMAGE OF SALES ORDER PAGE GOES HERE*****
 
-On the **Customer Card** page for customer 1000, in the **Price Calculation Method** field we'll choose **Hierarchical**, and in the **Customer Price Group** field we'll choose **PRICEGROUP**.
+On the **Customer Card** page for customer 10000, in the **Price Calculation Method** field we'll choose **Hierarchical**, and in the **Customer Price Group** field we'll choose **PRICEGROUP**.
 
 *****IMAGE OF CUSTOMER CARD PAGE GOES HERE*****
 
-In the price list, we'll create priced lines for item 1001 so that the lowest price is for **All Customers** and the highest is for customer 1000, as shown in the following image.
+In the price list, we'll create price lines for item 1900-S so that the lowest price is for **All Customers** and the highest is for customer 10000, as shown in the following image.
 
 *****IMAGE OF PRICE LIST GOES HERE*****
 
-Now we'll create a sales order for customer 1000, and add a line for item 1001. 
+Now we'll create a sales order for customer 10000, and add a line for item 1900-S. 
 
 *****IMAGE OF SALES ORDER PAGE GOES HERE*****
 
-The highest price is suggested for the line because it is specified for the customer.
-
-If we clear the Price Calculation Method field on the customer card, if we created another order the lowest price would be suggested for the line.
-
+The highest price is suggested for the line because it is specified for the customer. If we clear the **Price Calculation Method** field on the customer card, the lowest price will be suggested for the line if we create another order.
 
 ## See Also
 [Extending Application Areas](devenv-extending-application-areas.md)
