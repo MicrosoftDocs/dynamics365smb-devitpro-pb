@@ -24,7 +24,7 @@ This topic is a collection of frequently asked questions about [!INCLUDE[prod_sh
 
 ### What version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] do I need?
 
-Version 17.0 of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online is needed. Version 17 contains v2.0 of the standard APIs and improvements to the OData stack that enable APIs to be exposed and consumed as virtual tables.  
+Version 17.0 of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] **online** is needed. Version 17 contains v2.0 of the standard APIs and improvements to the OData stack that enable APIs to be exposed and consumed as virtual tables.  
 
 ### Can a solution from an independent software vendor (ISV) take a dependency on virtual tables? What does the application lifecycle management (ALM) look like?
 
