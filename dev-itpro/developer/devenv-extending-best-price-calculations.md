@@ -826,23 +826,21 @@ codeunit 50005 "Hierarchical Price Calc."
 
 ```
 
-Now we need to set up the price calculation method and see how it works in a sales order. The new price calculation method **Hierarchical** has one implementation for the sales type, as shown in the following image.
+Now we can set up a price calculation method and see how it works in a sales order. Let's create a new price calculation method named **Hierarchical**  with one implementation for the sales type, as shown in the following images.
 
 :::image type="content" source="media/price-3.0-price-calc-methods.png" alt-text="Price calculation methods":::
 
-On the **Customer Card** page for customer 10000, in the **Price Calculation Method** field we'll choose **Hierarchical**, and in the **Customer Price Group** field we'll choose **PRICEGROUP**.
-
 :::image type="content" source="media/price-3.1-hierarchical-method-setup.png" alt-text="Hierarchical method setup":::
 
-In the price list, we'll create price lines for item 1900-S so that the lowest price is for **All Customers** and the highest is for customer 10000, as shown in the following image.
+On the **Customer Card** page for customer 10000, in the **Price Calculation Method** field we'll choose **Hierarchical**, and in the **Customer Price Group** field we'll choose **PRICEGROUP**.
 
 :::image type="content" source="media/price-3.2-customer-card.png" alt-text="Customer card with lowest price":::
 
-Now we'll create a sales order for customer 10000, and add a line for item 1900-S. 
+In the price list, we'll create price lines for item 1900-S so that the lowest price is for **All Customers** and the highest is for customer 10000, as shown in the following image.
 
 :::image type="content" source="media/price-3.3-hierarchical-sales-prices.png" alt-text="Hierarchical sales price":::
 
-The highest price is suggested for the line because it is specified for the customer. If we clear the **Price Calculation Method** field on the customer card, the lowest price will be suggested for the line if we create another order.
+Now we'll create a sales order for customer 10000, and add a line for item 1900-S. The highest price is suggested for the line because it is specified for the customer. If we clear the **Price Calculation Method** field on the customer card, the lowest price will be suggested for the line if we create another order.
 
 :::image type="content" source="media/price-3.4-hierarchical-sales-order.png" alt-text="Hierarchical price on sales order":::
 
