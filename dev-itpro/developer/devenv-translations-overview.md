@@ -47,7 +47,7 @@ For more information, see [JSON Files](devenv-json-files.md).
 
 ## Translations in different layers
 
-When Business Central is extended more layers for translation are typically introduced. A layer can come from extensions and/or from a translation app. When *translations from different layers* are picked up, one translation from each observed culture is kept and when it is overwritten, only the specified culture changes. The following image illustrates an example of three different layers of translations. A base object, an extension object, and a language app all contribute with languages/translation and the result illustrates how the base object and extension object translations are overwritten by the language app.
+When [!INCLUDE[prod_short](../includes/prod_short.md)] is extended more layers for translation are typically introduced. A layer can come from extensions and/or from a translation app. When *translations from different layers* are picked up, one translation from each observed culture is kept and when it is overwritten, only the specified culture changes. The following image illustrates an example of three different layers of translations. A base object, an extension object, and a language app all contribute with languages/translation and the result illustrates how the base object and extension object translations are overwritten by the language app.
 
 ![Translation Overwrites](../media/Translation_1.png "Translation Overwrites")
 

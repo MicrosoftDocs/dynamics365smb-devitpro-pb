@@ -128,7 +128,7 @@ To translate other extensions, for example, when adding translations to the Base
 > [!NOTE]  
 > When translating other extensions make sure that the attribute `original` in the `<file>` element in the xliff file is **not** set to the name of the current app, otherwise translations are only used to translate labels in the same app. 
 >
-> For apps where translations are meant to translate the current app, the generated xliff file while have the correct value of the app name. 
+> For apps where translations are meant to translate the current app, the generated xliff file will have the correct value of the app name. 
 
 
 ### Use the `<trans-unit id>` of the label where it was defined
