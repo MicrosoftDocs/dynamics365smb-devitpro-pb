@@ -133,9 +133,9 @@ To translate other extensions, for example, when adding translations to the Base
 
 ### Use the `<trans-unit id>` of the label where it was defined
 
-In order to translate other apps, you must use the `<trans-unit id>` of the original property, not the ones where the property might have been modified by an extension object.
+In order to translate other apps, you must use the `<trans-unit id>` of the original property, not the one of an extension object, because that might have been modified.
 
-An example is that of the following page:
+If `MyPage` with ID 50000 
 
 ```al
 page 50000 MyPage {
@@ -143,9 +143,9 @@ page 50000 MyPage {
 }
 ```
 
-Has the following `<trans-unit id>` for the page `Page 2931038265 - Property 2879900210`.
+has `<trans-unit id>` for the page corresponding to `Page 2931038265 - Property 2879900210`.
 
-And the following page extension:
+And the following page extension of `MyPage` called `MyPageExtension`:
 
 ```al
 pageextension 50000 MyPageExtension extends MyPage
@@ -155,7 +155,7 @@ pageextension 50000 MyPageExtension extends MyPage
 
 ```
 
-Has the following `<trans-unit id>` for the page extension `PageExtension 1716690578 - Property 2879900210`, then if you want to change the caption on the page, you must use the ID `Page 2931038265 - Property 2879900210`.
+has `<trans-unit id>` for the page extension corresponding to `PageExtension 1716690578 - Property 2879900210`, then if you want to change the caption on the page, you must use the ID `Page 2931038265 - Property 2879900210`, which is the `<trans-unit id>` of the original property.
 
 
 <!-- removing bug 394765
