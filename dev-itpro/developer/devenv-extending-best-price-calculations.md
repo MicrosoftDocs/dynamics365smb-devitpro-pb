@@ -468,7 +468,7 @@ enumextension 50000 "Fixed Asset Type" extends "Price Asset Type"
 }
 ```
 
-The **Price Asset Type** enum implements the **Price Asset** interface. Add a **Price Asset - Fixed Asset** codeunit that will implement this interface for the Fixed Asset value. Some of the interface's methods are not relevant for fixed assets, so we will leave them empty but implement the methods from the codeunit. For an example, see the **Price Asset - G/L Account** codeunit. The following example will enable the Fixed Asset product type in the price list lines. 
+The **Price Asset Type** enum implements the **Price Asset** interface. Add a **Price Asset - Fixed Asset** codeunit that will implement this interface for the Fixed Asset value. Some of the interface's methods are not relevant for fixed assets, so we will leave them empty but implement the methods from the codeunit. For an example, see the **Price Asset - G/L Account** codeunit. The following example will enable the Fixed Asset product type in price list lines. 
 
 ```
     - GetNo(), 
@@ -564,12 +564,12 @@ codeunit 50002 "Price Asset - Fixed Asset" implements "Price Asset"
 }
 
 ```
-Now lets include this new product type in price calculations:
+Now lets include this new product type in price calculations.
 
    - The Sales Line table provides the **OnBeforeUpdateUnitPrice** event. This is where we'll add a call that runs the calculation, because it does not happen for fixed assets in the sales line. See the method UpdateUnitPriceByField() below, that is the simplified version of the method UpdateUnitPriceByField() that runs the price calculation in the Sales Line table.
    - Codeunit "Sales Line - Price" provides the **OnAfterGetAssetType** event that must return a Price Asset Type value to be included in price calculations. If the sales line type is Fixed Asset, we return the Fixed Asset product type.
 
-The following codeunit shows an example of how to implement this.
+The following codeunit shows a sample implementation.
 
 ```
 codeunit 50001 "Fixed Asset Price Calc."
@@ -611,11 +611,11 @@ codeunit 50001 "Fixed Asset Price Calc."
 ```
 Now we can test the price calculation. In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], open the **Sales Price List** and add a price line for the product with a minimum quantity of 0, and one with 5.
 
-***IMAGE OF SALES PRICE LIST GOES HERE***
+:::image type="content" source="media/price-1.1-fa-sales-price-list.png" alt-text="Sales price list page":::
 
 If we create a sales order with lines for the minimum quantities of the product, the unit prices are calculated correctly.
 
-*****IMAGE OF SALES ORDER GOES HERE*****
+:::image type="content" source="media/price-1.2-fa-sales-order.png" alt-text="Sales order page":::
 
 ### Example: Add Location as an Applies-to Type
 This example shows how to add a new location source type to the price list header. 
@@ -759,16 +759,16 @@ codeunit 50004 "Location Source Price Calc."
 
 Now we can test the price calculation. In this example, we have an **East** location where we keep item 1896-S, and the item has prices for all customers.
 
-*****IMAGE OF ITEM PAGE GOES HERE***** 
+:::image type="content" source="media/price-2.1-location-prices.png" alt-text="Location added as a source":::
 
-We'll create a sales order and add four lines for our item. When we choose a location code, the value in the **Unit Price Excl. VAT** changes. <!--Looks like this is also based on the quantity, but we didn't mention that-->
+We'll create a sales order and add four lines for our item. When we choose a location code, the value in the **Unit Price Excl. VAT** changes. 
 
-*****IMAGE OF SALES ORDER PAGE GOES HERE*****
+:::image type="content" source="media/price-2.2-location-sales-order.png" alt-text="Location sales order":::
 
 ### Example: Add Hierarchical Price Calculations
-This example adds a new price calculation method that changes the existing implementation to prioritize a customer price over all other customer price, even if the price is higher. This requires a small adjustment to how the price source list is generated, bcause the source list includes levels to implement hierarchical calculations.
+This example adds a new price calculation method that changes the existing implementation to prioritize a customer price over all other customer price, even if the price is higher. This requires a small adjustment to how the price source list is generated, because the source list includes levels to implement hierarchical calculations.
 
-The **Price Calculation Method** implemenmts the price calculation methods. The following examples shows how to extend the enum with the new value.
+The **Price Calculation Method** implements the price calculation methods. The following examples shows how to extend the enum with the new value.
 
 ```
 enumextension 50005 "Hierarchical Price Method" extends "Price Calculation Method"
@@ -828,21 +828,23 @@ codeunit 50005 "Hierarchical Price Calc."
 
 Now we need to set up the price calculation method and see how it works in a sales order. The new price calculation method **Hierarchical** has one implementation for the sales type, as shown in the following image.
 
-*****IMAGE OF SALES ORDER PAGE GOES HERE*****
+:::image type="content" source="media/price-3.0-price-calc-methods.png" alt-text="Price calculation methods":::
 
 On the **Customer Card** page for customer 10000, in the **Price Calculation Method** field we'll choose **Hierarchical**, and in the **Customer Price Group** field we'll choose **PRICEGROUP**.
 
-*****IMAGE OF CUSTOMER CARD PAGE GOES HERE*****
+:::image type="content" source="media/price-3.1-hierarchical-method-setup.png" alt-text="Hierarchical method setup":::
 
 In the price list, we'll create price lines for item 1900-S so that the lowest price is for **All Customers** and the highest is for customer 10000, as shown in the following image.
 
-*****IMAGE OF PRICE LIST GOES HERE*****
+:::image type="content" source="media/price-3.2-customer-card.png" alt-text="Customer card with lowest price":::
 
 Now we'll create a sales order for customer 10000, and add a line for item 1900-S. 
 
-*****IMAGE OF SALES ORDER PAGE GOES HERE*****
+:::image type="content" source="media/price-3.3-hierarchical-sales-prices.png" alt-text="Hierarchical sales price":::
 
 The highest price is suggested for the line because it is specified for the customer. If we clear the **Price Calculation Method** field on the customer card, the lowest price will be suggested for the line if we create another order.
+
+:::image type="content" source="media/price-3.4-hierarchical-sales-order.png" alt-text="Hierarchical price on sales order":::
 
 ## See Also
 [Extending Application Areas](devenv-extending-application-areas.md)
