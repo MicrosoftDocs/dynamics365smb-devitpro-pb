@@ -24,6 +24,8 @@ The application lifecycle for an end-to-end solution using [!INCLUDE[prod_short]
 
 ## Solution management
 
+
+
 Virtual tables for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] do not exist in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] until they are created. Virtual tables must be created inside a solution. The **MicrosoftBusinessCentralERPVE** solution is used for this purpose. This solution will contain all the virtual tables that are created from an instance of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 **MicrosoftBusinessCentralERPVE** is a [managed solution](/powerapps/developer/common-data-service/introduction-solutions). By definition, a managed solution cannot be modified after it has been generated. However, **MicrosoftBusinessCentralERPVE** is a managed solution that grants privileges to update the components (that is, virtual tables) that are inside it. Therefore, new virtual tables can be added to the solution as they are created, and existing virtual tables can be updated as required. Nevertheless, the privileges to modify the managed solution are available only to the platform itself. Users cannot make changes directly to the solution.
