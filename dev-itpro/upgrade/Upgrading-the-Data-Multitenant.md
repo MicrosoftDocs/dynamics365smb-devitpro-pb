@@ -233,7 +233,7 @@ You perform these tasks on each tenant that you want to upgrade.
     1. Open the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] as an administrator, and then run [Start-NavDataUpgrade](/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade) cmdlet as follows:  
 
     ```  
-    Start-NavDataUpgrade -ServerInstance ServerInstanceName> -FunctionExecutionMode Serial -ContinueOnError  
+    Start-NavDataUpgrade -ServerInstance <ServerInstanceName> -Tenant <TenantID> -FunctionExecutionMode Serial -ContinueOnError  
     ```  
     
     Replace `<ServerInstanceName>` with the name of the [!INCLUDE[server](../developer/includes/server.md)] instance that is connected to the database.
