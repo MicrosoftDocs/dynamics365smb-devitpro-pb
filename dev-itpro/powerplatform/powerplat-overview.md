@@ -18,7 +18,7 @@ author: solsen
 [!INCLUDE[cc_data_platform_banner](../includes/cc_data_platform_banner.md)]
 
 > [!IMPORTANT]  
-> This functionality requires version 17 or later of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online while service update 189 is required for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The release information for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] is published on the [latest version availability page](https://docs.microsoft.com/en-us/dynamics365/released-versions/dynamics-365ce#all-version-availability).
+> This functionality requires version 17 or later of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online while service update 189 is required for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The release information for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] is published on the [latest version availability page](https://docs.microsoft.com/dynamics365/released-versions/dynamics-365ce#all-version-availability).
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Virtual table, which is published on AppSource, is a virtual data source in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], and enables create, read, update, delete (CRUD) operations from [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] and Microsoft Power Platform. By definition, the data for virtual tables does not reside in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. Instead, it continues to reside in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. To enable operations on [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tables in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], tables must be made available as virtual tables in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].
 
@@ -54,7 +54,8 @@ There are known limitations with [!INCLUDE[prod_short](../developer/includes/pro
   * The following predicates are not supported: **Does Not Equal**, **Does Not Contain**, **Does Not Begin With**, **Does Not End With**, **Does Not Contain Data**, and **Contains Data**.
   * Combining **And** and **Or** groups across columns.
   * Filtering on related tables.
-- PowerApp Portals are not supported with Virtual Tables in current preview. 
+- PowerApp Portals are not supported with Virtual Tables in current preview.
+
 ## See Also
 
 [Table Modeling](powerplat-entity-modeling.md)  
