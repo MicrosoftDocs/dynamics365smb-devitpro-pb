@@ -123,7 +123,7 @@ When this step is completed, you can continue to update your Business Central so
         Uninstall-NAVApp -ServerInstance $BcServerInstance -Tenant $TenantId -Name <extensions name> -Version $ExtVersion -Force
         ```
 
-        Replace  `<extension name>` and `$ExtVersion` with the exact name and version the installed extension. For single-tenant deployment, set `$TenantId` to `default` or omit the `-Tenant` parameter.
+        Replace  `$ExtName` and `$ExtVersion` with the exact name and version the installed extension. For single-tenant deployment, set `$TenantId` to `default` or omit the `-Tenant` parameter.
 
         For example, together with the Get-NAVApp cmdlet, you can uninstall all extensions with a single command:
 
@@ -256,7 +256,7 @@ Compile all published extensions against the new platform.
 1. To compile an extension, use the [Repair-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/repair-navapp) cmdlet, For example:
 
     ```powershell  
-    Repair-NAVApp -ServerInstance $BcServerInstance -Name <extension name> -Version <extension name>
+    Repair-NAVApp -ServerInstance $BcServerInstance -Name $ExtName -Version $ExtVersion
     ```
 
     To compile all published extensions at once, you can use this command:
@@ -323,7 +323,7 @@ To install an extension, you use the [Install-NAVApp cmdlet](/powershell/module/
 4. Install other extensions, including Microsoft and third-party extensions.
 
     ```powershell
-    Install-NAVApp -ServerInstance $BcServerInstance -Name <extension name> -Version $ExtVersion
+    Install-NAVApp -ServerInstance $BcServerInstance -Name $ExtName -Version $ExtVersion
     ```
 
 At this point, your solution has been updated to the latest platform.

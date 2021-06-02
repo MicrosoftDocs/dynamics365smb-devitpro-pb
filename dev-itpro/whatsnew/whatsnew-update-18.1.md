@@ -24,10 +24,10 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/top
 
 ## Feature changes
 - [Editing in Excel more reliably](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/editing-excel-more-reliably)
-- [Support authentication of a SMTP connection using OAuth2](/dynamics365/business-central/admin-how-setup-email)
-- [Extension lifecycle telemetry include signal from dependent extensions](/dynamics365/business-central/dev-itpro/administration/telemetry-extension-lifecycle-trace)
+- [Support authentication of a SMTP connection using OAuth2](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/support-authentication-smtp-connection-using-oauth2)
+- [Extension lifecycle telemetry include signal from dependent extensions](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/extension-lifecycle-telemetry-include-signal-dependent-extensions)
 - [Edit active prices in Prices Overview and implement price changes using Price Worksheet](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/edit-active-prices-price-lists-price-overview-pages)
-- [Send documents as emails with any attached files automatically added as email attachments](/dynamics365/business-central/ui-how-send-documents-email)
+- [Send documents as emails with any attached files automatically added as email attachments](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/send-documents-as-emails-attached-files-automatically-added-as-email-attachments)
 
 ## Localization updates 
 
