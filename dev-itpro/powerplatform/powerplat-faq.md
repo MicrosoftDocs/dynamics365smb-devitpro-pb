@@ -2,7 +2,7 @@
 title: "Business Central virtual tables FAQ"
 description: "Frequently asked questions for working with Business Central virtual tables"
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 06/02/2021
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,13 +18,13 @@ author: solsen
 [!INCLUDE[cc_data_platform_banner](../includes/cc_data_platform_banner.md)]
 
 > [!IMPORTANT]  
-> This functionality requires version 17 or later of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] **online** while service update 189 is required for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The release information for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] is published on the [latest version availability page](https://docs.microsoft.com/en-us/dynamics365/released-versions/dynamics-365ce#all-version-availability).
+> This functionality requires version 17 or later of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online while service update 189 is required for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The release information for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] is published on the [latest version availability page](https://docs.microsoft.com/en-us/dynamics365/released-versions/dynamics-365ce#all-version-availability).
 
 This topic is a collection of frequently asked questions about [!INCLUDE[prod_short](../developer/includes/prod_short.md)] virtual tables. 
 
 ### What version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] do I need?
 
-Version 17.0 of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] **online** is needed. Version 17 contains v2.0 of the standard APIs and improvements to the OData stack that enable APIs to be exposed and consumed as virtual tables.  
+Version 17.0 of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online is needed. Version 17 contains v2.0 of the standard APIs and improvements to the OData stack that enable APIs to be exposed and consumed as virtual tables.  
 
 ### Can a solution from an independent software vendor (ISV) take a dependency on virtual tables? What does the application lifecycle management (ALM) look like?
 
