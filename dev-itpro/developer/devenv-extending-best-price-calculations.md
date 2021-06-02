@@ -23,7 +23,7 @@ Price calculations that were available in 2019 release wave 2 are unchanged. The
 This topic describes how price calculations are implemented in 2020 release wave 1 (referred to as "Business Central Version 16" in the illustrations), and provides comparisons with 2019 release wave 2 (referred to as "Business Central Version 15" in the illustrations) to show what we have changed. It also provides some examples of how you can extend price calculations in 2020 release wave 1 and later. 
 
 ## Price Calculation Setup
-Price calculation are based on the **Price Calculation Setup** table, where you can choose an existing implementation, as shown in the following image.
+Price calculations are based on the **Price Calculation Setup** table, where you can choose an existing implementation, as shown in the following image.
 
 :::image type="content" source="../media/best-pricing-diagram1-setup.png" alt-text="Diagram showing a price calculation implementation.":::
 
@@ -43,7 +43,7 @@ You can have multiple setups with the same combination of method, type, and asse
 
 By default, all sales lines use the "Business Central (Version 15.0)" implementation to calculate prices, unless the second line has detailed setup lines that define exceptions. 
 
-The Price Calculation method on the document line searches for a setup that that has a matching combination of the method, the price type, and asset type on the document line. The method then searches for detailed lines that contain exceptions for the combination of a source group (Customer, Vendor, and Job) and an asset (Item, Resource, and so on) on the document line. If we find a matching setup we use its implementation for price calculation. If there is no matching setup exception, we use the default implementation. 
+The Price Calculation method on the document line searches for a setup that that has a matching combination of the method, the price type, and asset type on the document line. The method then searches for detailed lines that contain exceptions for the combination of a source group (Customer, Vendor, and Job) and an asset (Item, Resource, and so on) on the document line. If we find a matching setup, we use its implementation for price calculation. If there is no matching setup exception, we use the default implementation. 
 
 For example, let's say we have a line on a sales order for Customer 20000 contains item 1000. The default implementation for the sale of any asset is "Business Central (Version 15.0)," but "Business Central (Version 16.0)" implementation contains a detailed setup line for Item 1000. That means that the "Business Central (Version 16.0)" implementation will calculate the price. 
 Detailed setup records are to be entered by users and only make sense for the non-default setup records. The following image shows the relation between the setup line and the detailed setup.
@@ -73,7 +73,7 @@ The "Asset Type" field is an extensible "Price Asset Type" enum that contains th
 * Service Cost (50)
 * G/L Account (60)
 
-The Asset Type is part of the composite key in the Price Calculation Setup table. If the only setup record contains "Asset Type" - All it means that there is no need in special price calculation implementations per asset type. The default implementation will be used regardless of an asset type in the document line. If you need different implementations you must add a setup lines with another asset type. For example, the following table shows a Resource Pricing implementation with a Resource asset type. 
+The Asset Type is part of the composite key in the Price Calculation Setup table. If the only setup record contains "Asset Type" - All, special price calculation implementations per asset type are not needed. The default implementation will be used regardless of the asset type in the document line. If you need different implementations, you must add a setup line with another asset type. For example, the following table shows a Resource Pricing implementation with a Resource asset type. 
 
 |Method  |Type  |Asset Type  |Implementation  |Default  |
 |---------|---------|---------|---------|---------|
@@ -121,7 +121,7 @@ The Business Central (Version 16.0) calculation uses the following table:
 
 Table 7001 "Price List Line" is compatible with all tables used by the Business Central (Version 15.0) calculation. It contains the set of CopyFrom() methods that convert the data from the tables to the Price List Line table. 
 
-If you extended the Business Central (Version 15.0) tables you must also extend the Price List Line table and the CopyFrom() methods by subscribing to special events. Here's are examples that extend the Sales Price table with a Document No. field.
+If you extended the Business Central (Version 15.0) tables, you must also extend the Price List Line table and the CopyFrom() methods by subscribing to special events. The following example extends the Sales Price table with a Document No. field.
 
 ```AL
 tableextension 50010 "Document No in Sales Price" extends "Sales Price"
@@ -170,7 +170,7 @@ The Price Calculation Method field is added to all tables that need calculated p
 
 The following image shows the schema of how the methods called in the Sales Line table get the price and discount amounts from either the Sales Price or Price List Line tables.
 
-:::image type="content" source="../media/best-pricing-diagram3-data-sources.png" alt-text="Diagram showing an price calculation for a sales line.":::
+:::image type="content" source="../media/best-pricing-diagram3-data-sources.png" alt-text="Diagram showing a price calculation for a sales line.":::
 
 ## Interface Objects
 AL interface objects are important for extensibility. They define the capabilities that are available to an object, and allow implementations to differ as long as they comply with the interface requirements. For more information, see [Interfaces in AL](devenv-interfaces-in-al.md).
@@ -219,7 +219,7 @@ procedure GetHandler(
     end;
 
 ```
-After the price calculation implementation is defined the document line typically calls the methods in the interfrace that calculate the price and discount. The following code is used in the Sales Line table:
+After the price calculation implementation is defined, the document line typically calls the methods in the interface that calculate the price and discount. The following code is used in the Sales Line table:
 
 ```AL
     var
@@ -250,7 +250,7 @@ The following example shows a typical use of the codeunits in the Sales Line tab
         PriceCalculationMgt.GetHandler(SalesLinePrice, PriceCalculation);
     end;
 ```
-The SalesLinePrice codeunit is declared directly because this is the sales line context. The instance is initialized by the interface's SetLine() method, and then passed to the GetHandler() method for PriceCalculation initialization because all Price Calculation implementation codeunits include an instance of the Line With Price interface, which stores data about document and journal lines. The following example shows how to declare the interface variable.
+The SalesLinePrice codeunit is declared directly in the context of the sales line. The instance is initialized by the interface's SetLine() method, and then passed to the GetHandler() method for PriceCalculation initialization because all Price Calculation implementation codeunits include an instance of the Line With Price interface, which stores data about document and journal lines. The following example shows how to declare the interface variable.
 
 ```AL
     var
@@ -316,7 +316,7 @@ codeunit 7032 "Price Source - Customer" implements "Price Source"
 You can extend price calculations, for example, to include other sources or use calculations that allow for combinations and dependencies. The following sections provide examples.
 
 ### Example: Change an Item Price When Combined with Another Item 
-Let's say we want to make the price of one item depend on whether it's sold individually or bundled with one or more other items. We'll use software licenses in this example, but the same principles apply in other scenarios.
+Let's say we want to make the price of one item depend on whether it's sold individually or bundled with one or more other items. We'll use software licenses in this example.
 
 > [!NOTE]
 > The prices, names, and combinations in this example are completely fictional and intended only to support the scenario described here. They do not reflect anything in the real-world.
@@ -335,7 +335,7 @@ The following image shows an example of a Sales Line page that is extended with 
 
 :::image type="content" source="../media/best-pricing-sales-lines.png" alt-text="Image that shows an example of an extended Price List page.":::
 
-Let's look at some sample extensions that will implement this for us. 
+Let's look at some sample extensions that will implement this logic for us. 
 
 The first table extension adds a new field named Attach to Line No. to the Sales Line table and recalculates pricing when we make a change. This field will let us create the combinations that determine our discounts. It also copies the GetPriceCalculationHandler() function from the Sales Line table.
 
@@ -768,7 +768,7 @@ We'll create a sales order and add four lines for our item. When we choose a loc
 ### Example: Add Hierarchical Price Calculations
 This example adds a new price calculation method that changes the existing implementation to prioritize a customer price over all other customer price, even if the price is higher. This requires a small adjustment to how the price source list is generated, because the source list includes levels to implement hierarchical calculations.
 
-The **Price Calculation Method** implements the price calculation methods. The following examples shows how to extend the enum with the new value.
+The **Price Calculation Method** implements the price calculation methods. The following examples show how to extend the enum with the new value.
 
 ```
 enumextension 50005 "Hierarchical Price Method" extends "Price Calculation Method"
