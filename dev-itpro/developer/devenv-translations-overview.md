@@ -70,8 +70,9 @@ Defined as the primary culture of a language. For `es-MX` (Spanish-Mexico), for 
 **Field Caption**  
 If the page control is based on a table field, and if no translations are found on the page, then the translation found on the table field is used.
 
-
 ![Translation](../media/Translation_2.png "Translations to display")
+
+The illustration shows examples of how translations for a page caption, a control caption, an enum caption, and a text constant are found. The search starts at number 1, and stops searching when the the first translation is met. So, if you, for example, have an enum and no translations are found for the local language or the primary language, the search stops at the global language because a match is found, and will use that translation in the UI.
 
 
 ## See Also
