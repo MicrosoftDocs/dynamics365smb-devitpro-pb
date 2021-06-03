@@ -50,6 +50,6 @@ The initial [!INCLUDE [prod_short](prod_short.md)] demo environment comes with t
 
 * An empty company with the name *My Company*, but it might have a different display name for demo purposes  
 
-You can keep using the demonstration company until the tenant expires, if you use it a couple of times per week. However, if you start the trial experience or switch to the empty *My Company*, that experience will expire after 30 days. If the trial expires, you can extend the trial, create a new environment, or return to the CRONUS demonstration company.
+You can keep using the demonstration company until the tenant expires, if you use it a couple of times per week. However, if you start the trial experience or switch to the empty *My Company*, that experience will expire after 30 days. If the trial expires, you can extend the trial, create a new environment, or return to the CRONUS demonstration company. For more information, see [Dynamics 365 Business Central Trials and Subscriptions](/dynamics365/business-central/across-preview) in the business functionality content for [!INCLUDE [prod_short](prod_short.md)].
 
 You can now enable the *Premium* user experience in the new company's **Company Information** page, populate the company with any data that is required for their evaluation scenarios, and present the environment to the prospect.  
