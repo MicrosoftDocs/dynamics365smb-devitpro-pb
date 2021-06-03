@@ -2,7 +2,7 @@
 title: Known Issues with On-premises
 description: Provides an overview of the known issues in Business Central versions
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 06/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,6 +18,71 @@ This article describes some known issues in [!INCLUDE[prod short](../developer/i
 
 > [!NOTE]
 > The article doesn't include a complete list of known issues. Instead, it addresses some common issues that you might experience or might consider when upgrading to a version. If you're aware of issues that aren't in this article, or you'd like more help, see [Resources for Help and Support](../help-and-support.md).
+
+## NavUserPassword authentication doesn't work after upgrade to version 18
+<!-- https://dynamicssmb2.visualstudio.com/Dynamics%20SMB/_workitems/edit/398164 -->
+
+> Applies to: 18.0-18.2
+
+### Problem
+
+When you upgrade to version 18 from an earlier major version, authentication based on NavUserPassword credential type no longer works for existing users, because passwords aren't considered valid anymore.
+
+### Impact
+
+When users try to sign in to Business Central, they'll get an error, similar to the following:
+
+`The specified user name or password is not correct, or you do not have a valid user account in Dynamics 365 Business Central`
+
+In event viewer, you'll see the following error:
+
+`Your user name <name> or password is incorrect, or you do not have a valid account in Dynamics 365 Business Central.`
+
+### Workaround
+
+To workaround this issue, activate the `EnableLegacyIterationCount` feature switch by completing these steps.
+
+1. Run the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] as an administrator.
+2. Run the following command to determine which feature switches are enabled:
+
+   ```powershell
+   Get-NAVServerConfiguration -ServerInstance $ServerInstanceName -KeyName "FeatureSwitchOverrides"
+   ```
+
+   Replace`$ServerInstanceName` with the [!INCLUDE[server](../developer/includes/server.md)] instance name.
+
+3. Depending on what was returned in step 2, run one of the following commands to enable the `EnableLegacyIterationCount` feature switch:
+
+   - If the nothing was returned, run the following command:
+
+     ```powershell
+     Set-NAVServerConfiguration -ServerInstance $ServerInstanceName -KeyName "FeatureSwitchOverrides" -KeyValue "EnableLegacyIterationCount"
+     ```
+
+   - If one or more entries were returned, run the following command:
+
+     ```powershell
+     Set-NAVServerConfiguration -ServerInstance $ServerInstanceName -KeyName "FeatureSwitchOverrides" -KeyValue ((Get-NAVServerConfiguration -ServerInstance $ServerInstanceName -KeyName "FeatureSwitchOverrides") + (",EnableLegacyIterationCount"))
+     ```
+
+4. Restart the server.
+
+   ```powershell
+   Set-NAVServerConfiguration -ServerInstance $ServerInstanceName
+   ```
+
+### Notes
+
+- Activating the `EnableLegacyIterationCount` feature switch is only required if you have existing users that are set up with passwords for the NavUserPassword authentication. So if you want to set up NavUserPassword from scratch after upgrade, you don't need to enable the `EnableLegacyIterationCount` feature switch for it to work.
+- When the `EnableLegacyIterationCount` feature switch is enabled, you can create new users with passwords and assign or change passwords of existing users.
+- You can activate and deactivate the `EnableLegacyIterationCount` feature switch for the deployment at any time, but be aware of the following behavior:
+
+  - Passwords that were assigned to users when the `EnableLegacyIterationCount` feature switch was activated, won't work when the `EnableLegacyIterationCount` feature switch is deactivated.
+  - Passwords that were assigned to users when the `EnableLegacyIterationCount` feature switch was deactivated, won't work when the `EnableLegacyIterationCount` feature switch is activated.
+
+    In these cases, as an administrator, you'll have to assign new passwords to the affected users.
+
+- This feature switch is activated per server instance, so it pertains to all tenants in a multitenant deployment.
 
 ## Package Microsoft .NET Core Windows Server Hosting failed with error
 
