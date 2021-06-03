@@ -72,11 +72,10 @@ If the page control is based on a table field, and if no translations are found 
 
 ![Translation](../media/Translation_2.png "Translations to display")
 
-The illustration shows examples of how translations for a page caption, a control caption, an enum caption, and a text constant are found. The search starts at number 1, and stops searching when the the first translation is met. So, if you, for example, have an enum and no translations are found for the local language or the primary language, the search stops at the global language because a match is found, and will use that translation in the UI.
+The illustration shows examples of how translations for a page caption, a control caption, an enum caption, and a text constant are found. The search is sequential and starts at number 1, and stops searching when the the first translation is met. So, if you, for example, have an enum and no translations are found for the local language or the primary local language, the search stops at the global language because a match is found, and will use that translation in the UI.
 
 
 ## See Also
 
 [Working with Translation Files](devenv-work-with-translation-files.md)  
 [CaptionML Property](properties/devenv-captionml-property.md)  
-
