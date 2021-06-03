@@ -68,7 +68,7 @@ To workaround this issue, activate the `EnableLegacyIterationCount` feature swit
 4. Restart the server.
 
    ```powershell
-   Set-NAVServerConfiguration -ServerInstance $ServerInstanceName
+   Restart-NAVServerInstance -ServerInstance $ServerInstanceName
    ```
 
 ### Notes
