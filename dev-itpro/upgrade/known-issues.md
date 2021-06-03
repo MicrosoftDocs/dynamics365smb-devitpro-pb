@@ -2,7 +2,7 @@
 title: Known Issues with On-premises
 description: Provides an overview of the known issues in Business Central versions
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 06/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -82,7 +82,7 @@ To workaround this issue, activate the `EnableLegacyIterationCount` feature swit
 
     In these cases, as an administrator, you'll have to assign new passwords to the affected users.
 
-- This feature switch is activated per server instancee, so it pertains to all tenants in a multitenant deployment.
+- This feature switch is activated per server instance, so it pertains to all tenants in a multitenant deployment.
 
 ## Package Microsoft .NET Core Windows Server Hosting failed with error
 
