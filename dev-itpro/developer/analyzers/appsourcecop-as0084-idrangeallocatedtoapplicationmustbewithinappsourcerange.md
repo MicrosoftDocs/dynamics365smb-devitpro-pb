@@ -40,7 +40,7 @@ If you are not targeting the AppSource marketplace, you can suppress this rule u
 
 ## Code example triggering the rule
 
-### The ID Range is outside the rnage allowed for AppSource applications
+### The ID range is outside the rnage allowed for AppSource applications
 
 The `app.json` file of the extension:
 ```json
@@ -58,7 +58,7 @@ The `app.json` file of the extension:
 
 The ID range specified is not contained in the range allowed for AppSource applications. 
 
-### The ID Range is not specified
+### The ID range is not specified
 
 The `app.json` file of the extension:
 ```json
@@ -67,7 +67,7 @@ The `app.json` file of the extension:
 }
 ```
 
-If the ID Range is not specified, the default ID range is used. As the default ID range spans outside the allowed ID range for AppSource applications, a diagnostic will be reported.
+If the ID range is not specified, the default ID range is used. As the default ID range spans outside the allowed ID range for AppSource applications, a diagnostic will be reported.
 
 ## Code example not triggering the rule
 
@@ -85,7 +85,7 @@ The `app.json` file of the extension:
 }
 ```
 
-The ID range specified is contained in the range allowed for AppSource applications. 
+The ID range specified is included in the range allowed for AppSource applications. 
 
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
