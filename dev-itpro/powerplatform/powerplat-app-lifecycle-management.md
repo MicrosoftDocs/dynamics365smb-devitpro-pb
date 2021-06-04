@@ -2,7 +2,7 @@
 title: "Application lifecycle management for solutions that use virtual tables"
 description: "Lifecycle management for Microsoft Dataverse tables end-to-end solutions"
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 06/02/2021
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,11 +18,13 @@ author: solsen
 [!INCLUDE[cc_data_platform_banner](../includes/cc_data_platform_banner.md)]
 
 > [!IMPORTANT]  
-> This functionality requires version 17 or later for [!INCLUDE[prod_short](../developer/includes/prod_short.md)], while service update 189 is required for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The release information for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] is published on the [latest version availability page](/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
+> This functionality requires version 17 or later of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online while service update 189 is required for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The release information for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] is published on the [latest version availability page](https://docs.microsoft.com/dynamics365/released-versions/dynamics-365ce#all-version-availability).
 
 The application lifecycle for an end-to-end solution using [!INCLUDE[prod_short](../developer/includes/prod_short.md)] virtual tables will encompass both [!INCLUDE[prod_short](../developer/includes/prod_short.md)] as well as [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].
 
 ## Solution management
+
+
 
 Virtual tables for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] do not exist in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] until they are created. Virtual tables must be created inside a solution. The **MicrosoftBusinessCentralERPVE** solution is used for this purpose. This solution will contain all the virtual tables that are created from an instance of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 

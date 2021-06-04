@@ -75,7 +75,7 @@ After your Regional Operational Center has processed your Agreements and Object 
 
 ### Register your unique prefix or suffix
 
-In your extension, the name of each new application object must contain [a prefix or suffix](../../compliance/apptest-prefix-suffix.md). This rule applies to all objects. Email [d365val@microsoft.com](mailto:d365val@microsoft.com) with a prioritized list of three-letter affixes of your choice. You must also submit your MPN ID and the publisher name that you will use for the app.
+In your extension, the name of each new application object must contain [a prefix or suffix](../../compliance/apptest-prefix-suffix.md). This rule applies to all objects. Email [d365val@microsoft.com](mailto:d365val@microsoft.com) with a prioritized list of three-letter affixes of your choice. You must also submit your MPN ID and the publisher name that you will use for the app. For more information, see [Benefits and Guidelines for using a Prefix or Suffix](../../compliance/apptest-prefix-suffix.md).
 
 ## Step 4: Getting access to preview bits
 
