@@ -55,7 +55,7 @@ The technical validation is for a large part automated and will validate the ste
 
 The submitted apps will be extracted and investigated following this list:
 
-1. The apps are investigated. All dependencies must be included in the submission. We will lookup prior versions of the apps in the depot. If your app has a dependency on a third party app in AppSource, you should not include this, we will locate it in the depot. **Any unresolved dependencies will cause the submission to be rejected.**
+1. The apps are investigated. All dependencies must be included in the submission. We will lookup prior versions of the apps in the depot. If your app has a dependency on a third party app in AppSource, you should not include this, we will locate it in the depot. **Any unresolved dependencies will cause the submission to be rejected. If you include extensions created by Microsoft in your submission, it will also be rejected.**
 2. If the version numbers haven't changed and the countries haven’t changed, the validation is skipped and **the apps will not be updated.**
 3. App.json is investigated for mandatory fields. **If mandatory fields are missing, the submission is rejected.**
 4. Affixes for the submission are located. **If affixes haven't been registered or cannot be located, the submission is rejected.**
@@ -69,7 +69,7 @@ The submitted apps will be extracted and investigated following this list:
    - In order of dependencies, all prior versions of the apps are published and installed. **If any installation fails, the submission is rejected.**
    - In order of dependencies, all new versions of the apps are published and upgrade is run (apps must be digitally signed, else they won’t install). **If any installation/upgrade fails, the submission is rejected.**
    - A simple connection test is run; opening a role center and check simple actions and pages. If the connection test fails, **the submission investigated and potentially rejected.**
-7. If all country validations succeed and no errors are found then **the submission is accepted.**
+7. If all country validations succeed and no errors are found then **the submission is accepted.**.
 
 > [!Important]
 > Microsoft recommends that all partners are performing the same checks as described above before submitting apps for validation to maximize chances of validation success.
