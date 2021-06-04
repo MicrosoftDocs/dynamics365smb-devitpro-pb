@@ -57,6 +57,8 @@ The following tables list the IDs of [!INCLUDE[prod_short](../developer/includes
 |AL0000E3N|Configuration Package|[Configuration package apply started: {alPackageCode}](telemetry-configuration-package-trace.md#applystarted)|
 |AL0000E3O|Configuration Package|[Configuration package applied successfully: {alPackageCode}](telemetry-configuration-package-trace.md#applysuccessful)|
 |AL0000E3P|Configuration Package|[Configuration package deleted successfully: {alPackageCode}](telemetry-configuration-package-trace.md#deletesuccessful)|
+| AL0000EJ9 | Extension Lifecycle | [Upgrade tag searched for: {AlUpgradeTag}](telemetry-extension-lifecycle-trace.md#upgrade-tag-searched-for) |
+| AL0000EJA | Extension Lifecycle | [Upgrade tag set: {AlUpgradeTag}](telemetry-extension-lifecycle-trace.md#upgrade-tag-set) |
 | LC0001 | Company Lifecycle | [Company created: {companyName}](telemetry-company-lifecycle-trace.md#company-created) |
 | LC0002 | Company Lifecycle | [Company creation canceled: {companyName}](telemetry-company-lifecycle-trace.md#company-creation-canceled) |
 | LC0003 | Company Lifecycle | [Company creation failed: {companyName}](telemetry-company-lifecycle-trace.md#company-creation-failed) |
