@@ -1,9 +1,9 @@
 ---
 title: "RecordRef.MarkedOnly Method"
-description: "Activates a special filter. After you use this function, your view of the table includes only records marked by this function."
+description: "Activates a special filter. After you use this function, your view of the table includes only records marked by the Mark method (RecordRef)."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 06/04/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # RecordRef.MarkedOnly Method
 > **Version**: _Available or changed with runtime version 5.3._
 
-Activates a special filter. After you use this function, your view of the table includes only records marked by this function.
+Activates a special filter. After you use this function, your view of the table includes only records marked by the Mark method (RecordRef).
 
 
 ## Syntax
