@@ -52,7 +52,7 @@ The initial data migration time can vary depending factors such as the amount of
 
 [Running the Cloud Migration Tool](migration-tool.md)  
 [Managing the Migration to the Cloud](migration-management.md)  
-[FAQ about Migrating to the Cloud from On-Premises Solutions](FAQ-Intelligent-Cloud.md)  
+[FAQ about Migrating to the Cloud from On-Premises Solutions](faq-migrate-data.md)  
 [Migrate to Business Central Online from Business Central On-premises](migrate-business-central-on-premises.md)  
 [Migrate to Business Central Online from Dynamics GP](migrate-dynamics-gp.md)  
 [Upgrading from Dynamics NAV to Business Central Online](../upgrade/Upgrade-Considerations.md#online)  

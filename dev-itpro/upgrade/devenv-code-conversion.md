@@ -51,7 +51,7 @@ Compiling all the objects is a prerequisite for a successful and complete export
 
 Once the application compiles, you must export all C/AL application objects, except system tables and codeunits (IDs in the 2000000000 range), to the new TXT format. The exported objects will be used as input to the Txt2AL conversion tool. To export objects, use the [Export-NAVApplicationObject](/powershell/module/microsoft.dynamics.nav.ide/export-navapplicationobject) cmdlet of the [!INCLUDE[devshell](../developer/includes/devshell.md)]. it's important to:
 
-- Omit omit all system objects, which have IDs in the 2000000000 range. 
+- Omit all system objects, which have IDs in the 2000000000 range. 
 - Use the `ExportToNewSyntax` switch to export the objects in a syntax that is compatible with the Txt2Al conversion tool.
 
 The Export-NAVApplicationObject cmdlet will export all objects to a single .txt file. If you imported the test library objects into the database, then you'll export the base application objects and the test library separately. Later, you'll create a separate AL project for each set of files.

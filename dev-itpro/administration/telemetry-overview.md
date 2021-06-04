@@ -8,7 +8,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 04/01/2021
+ms.date: 05/12/2021
 ms.author: jswymer
 ---
 
@@ -37,10 +37,10 @@ In Application Insights, telemetry from [!INCLUDE[prod_short](../developer/inclu
 |Database lock timeouts|Provides information about database locks that have timed out. |![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[See...](telemetry-database-locks-trace.md)|
 |Email|Provides information about the success or failure of sending emails.|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[See...](telemetry-email-trace.md) |
 |Extension lifecycle <sup>[\[2\]](#2)</sup>|Provides information about the success or failure of extension-related operations, like publishing, synchronizing, installing, and more.|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|[See...](telemetry-extension-lifecycle-trace.md) |
-|Extension update|Provides information about errors that occur when upgrading an extension.|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|[See...](telemetry-extension-update-trace.md) |
+|Extension update|Provides information about errors that occur and upgrade tags used when upgrading an extension.|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|[See...](telemetry-extension-update-trace.md) |
 |Field monitoring trace|Provides information about the usage of the field monitoring feature.|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[See...](telemetry-field-monitoring-trace.md) |
-|Job queue|Provides information about creating and running job queue entries.|![check mark for feature](../developer/media/check.png)|||[See...](telemetry-table-index-trace.md) |
-|Long running AL method trace|Provides information about long running AL methods.|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[See...](telemetry-al-method-trace.md) |
+|Job queue|Provides information about creating and running job queue entries.|![check mark for feature](../developer/media/check.png)|||[See...](telemetry-job-queue-lifecycle-trace.md) |
+|Long running AL method trace<sup>[\[3\]](#3)</sup>|Provides information about long running AL methods.|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|[See...](telemetry-al-method-trace.md) |
 |Long running operation (SQL query)|Provides information about SQL queries that take longer than expected to execute.|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|[See...](telemetry-long-running-sql-query-trace.md)|
 |Page views|Provides information about the pages that users open in the modern client.|![check mark for feature](../developer/media/check.png)||![check mark for feature](../developer/media/check.png)<sup>[\[4\]](#4)</sup>|[See...](telemetry-page-view-trace.md)|
 |Permissions|Provides information about adding, removing, and assigning permission sets.|![check mark for feature](../developer/media/check.png)|||[See...](telemetry-permission-changes-trace.md)|
@@ -55,7 +55,7 @@ In Application Insights, telemetry from [!INCLUDE[prod_short](../developer/inclu
 
 <sup>2</sup><a name="2"></a>Introduced in Business Central 2020 release wave 1, version 16.3. For extension telemetry, this signal was introduced in 2020 release wave 2, version 17.1.
 
-<sup>3</sup><a name="3"></a>Introduced in Business Central 2020 release wave 1, version 17.1
+<sup>3</sup><a name="3"></a>Introduced in Business Central 2020 release wave 1, version 17.1. For extension telemetry, this signal was introduced in 2021 release wave 1, version 18.1.
 
 <sup>4</sup><a name="4"></a>Introduced in Business Central 2021 release wave 1, version 18.
 

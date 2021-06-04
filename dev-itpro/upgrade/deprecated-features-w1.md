@@ -13,17 +13,9 @@ ms.service: "dynamics365-business-central"
 
 # Deprecated Features in W1
 
-This article describes the features that have been moved, removed, or replaced in the W1 version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. This information will change with future releases, and might not include each deprecated feature.
+This article describes the features that have been moved, removed, or replaced in the W1 version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].  
 
-Deprecated features won't be available in future versions of [!INCLUDE[prod_short](../developer/includes/prod_short.md)], which can happen for different kinds of reasons. <!--Should we talk about how long we're obligated to provide support for previous versions? --> For example, a feature may no longer be relevant, or something better may have become available. If you use a feature that is listed, either the feature itself or an extension of it, you should look for or develop an alternative.
-
-The next sections give a brief description of the deprecated features, state what happened to the feature, and explain why. The following table gives a few examples of what we mean by *moved*, *removed*, or *replaced*.
-
-|State  |Examples  |
-|---------|---------|
-|Moved     |The capability has been moved from local functionality to W1 because it was no longer specific to one or more country versions. The capability was combined with other related functionality to eliminate redundancy.|
-|Removed| The capability will be removed from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] in a coming release.|
-|Replaced  |Something better has become available, and will be used instead.|
+[!INCLUDE [feature-deprecation](../includes/feature-deprecation.md)]
 
 ## Changes in 2022 release wave 1
 

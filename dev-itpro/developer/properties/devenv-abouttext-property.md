@@ -51,7 +51,7 @@ Accepts a plain text value. Markdown or any similar formatting are treated as li
 > [!NOTE]  
 > This property is ignored on Request pages, as reports are not yet supported.
 
-For more information about designing teaching tips and tours, see [Teaching tips and in-app tours for onboarding users](../administration/onboarding-teaching-tips-tours.md). 
+For more information about designing teaching tips and tours, see [Teaching tips and in-app tours for onboarding users](../../administration/onboarding-teaching-tips-tours.md). 
 
 ## Example
 

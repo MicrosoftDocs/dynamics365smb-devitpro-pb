@@ -80,12 +80,14 @@ To make your extension available to users, the package must be published to a sp
 
 ## Controlling user access to developing and publishing extensions
 
-The access to developing and publishing extensions is controlled on a user or user group basis by the **D365 EXTENSION MGT** permission set. It is important that the **D365 EXTENSION MGT** is not specified for a specific company, but left blank.
+The access to developing and publishing extensions is controlled on a user or user group basis by the **EXTEND. MGT. - ADMIN** permission set. It is important that the **EXTEND. MGT. - ADMIN** isn't specified for a specific company, but left blank.
 
-> [!NOTE]  
-> If you add new permission sets and want to control the access to developing and publishing extensions, you must include indirect read and write permissions to the **Published Application** table (read – for downloading symbols, write – for publishing the app) in the permission set.
+If you add new permission sets and want to control the access to developing and publishing extensions, you must include indirect read and write permissions to the **Published Application** table (read – for downloading symbols, write – for publishing the app) in the permission set.
 
-To prohibit a user from publishing, just remove the user from the **D365 EXTENSION MGT** permission set. 
+To prohibit a user from publishing, just remove the user from the **EXTEND. MGT. - ADMIN** permission set.
+
+> [!NOTE]
+> The **EXTEND. MGT. - ADMIN** permission set was introduced in Business Central 2021 release wave 1 as a replacement for the **D365 EXTENSION MGT** permission set in earlier versions.
 
 ## Next steps
 

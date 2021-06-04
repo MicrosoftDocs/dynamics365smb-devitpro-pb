@@ -31,11 +31,16 @@ For more information about the properties in the `app.json` file, see [JSON File
 
 ## How to fix this diagnostic?
 
-If you are targetting the AppSource markeplace, you need to update the ID range in your `app.json` file with the one that Microsoft provided you with.
+If you are targeting the AppSource marketplace, you need to update the ID range in your `app.json` file with the one that Microsoft provided you with.
 
-If you are not targeting the AppSource markeplace, you can suppress this rule using [rulesets](../devenv-using-code-analysis-tool-with-rule-set.md).
+> [!NOTE]  
+> If you are targeting the AppSource marketplace and do not have an ID range assigned, follow the steps defined in [Get Started with Building Apps](../readiness/get-started.md).
+
+If you are not targeting the AppSource marketplace, you can suppress this rule using [rulesets](../devenv-using-code-analysis-tool-with-rule-set.md).
 
 ## Code example triggering the rule
+
+### The ID range is outside the rnage allowed for AppSource applications
 
 The `app.json` file of the extension:
 ```json
@@ -53,6 +58,17 @@ The `app.json` file of the extension:
 
 The ID range specified is not contained in the range allowed for AppSource applications. 
 
+### The ID range is not specified
+
+The `app.json` file of the extension:
+```json
+{
+  [...]
+}
+```
+
+If the ID range is not specified, the default ID range is used. As the default ID range spans outside the allowed ID range for AppSource applications, a diagnostic will be reported.
+
 ## Code example not triggering the rule
 
 The `app.json` file of the extension:
@@ -68,7 +84,8 @@ The `app.json` file of the extension:
   ]
 }
 ```
-The ID range specified is contained in the range allowed for AppSource applications. 
+
+The ID range specified is included in the range allowed for AppSource applications. 
 
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  

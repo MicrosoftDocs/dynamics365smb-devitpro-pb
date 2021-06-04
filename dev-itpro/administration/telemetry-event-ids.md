@@ -8,7 +8,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 04/01/2021
+ms.date: 05/12/2021
 ms.author: jswymer
 ---
 # Telemetry Event IDs in Application Insights
@@ -57,6 +57,8 @@ The following tables list the IDs of [!INCLUDE[prod_short](../developer/includes
 |AL0000E3N|Configuration Package|[Configuration package apply started: {alPackageCode}](telemetry-configuration-package-trace.md#applystarted)|
 |AL0000E3O|Configuration Package|[Configuration package applied successfully: {alPackageCode}](telemetry-configuration-package-trace.md#applysuccessful)|
 |AL0000E3P|Configuration Package|[Configuration package deleted successfully: {alPackageCode}](telemetry-configuration-package-trace.md#deletesuccessful)|
+| AL0000EJ9 | Extension Lifecycle | [Upgrade tag searched for: {AlUpgradeTag}](telemetry-extension-update-trace.md#upgrade-tag-searched-for) |
+| AL0000EJA | Extension Lifecycle | [Upgrade tag set: {AlUpgradeTag}](telemetry-extension-update-trace.md#upgrade-tag-set) |
 | LC0001 | Company Lifecycle | [Company created: {companyName}](telemetry-company-lifecycle-trace.md#company-created) |
 | LC0002 | Company Lifecycle | [Company creation canceled: {companyName}](telemetry-company-lifecycle-trace.md#company-creation-canceled) |
 | LC0003 | Company Lifecycle | [Company creation failed: {companyName}](telemetry-company-lifecycle-trace.md#company-creation-failed) |
@@ -82,6 +84,8 @@ The following tables list the IDs of [!INCLUDE[prod_short](../developer/includes
 | LC0023 | Extension Lifecycle | [Extension failed to update: {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})](telemetry-extension-lifecycle-trace.md#updatedfailed) |
 |LC0024|Table Index Lifecycle|[Index enabled: {tableName}](telemetry-table-index-trace.md#enabled)|
 |LC0025|Table Index Lifecycle|[Index disabled: {tableName}](telemetry-table-index-trace.md#disabled)|
+| LC0026 | Extension Lifecycle | [Dependent Extension installed successfully: {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})](telemetry-extension-lifecycle-trace.md#dependentinstalledsuccess) |
+| LC0027 | Extension Lifecycle | [Dependent extension un-installed successfully: {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})](telemetry-extension-lifecycle-trace.md#dependentunistalled) |
 
 ## Runtime events
 

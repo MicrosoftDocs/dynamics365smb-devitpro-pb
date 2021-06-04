@@ -52,7 +52,7 @@ codeunit 50130 YesNoTest
     var
         Answer: enum YesNo;
     begin
-        Answer := YesNo.FromInteger(10); // Ordinal value for 'No'
+        Answer := Enum::YesNo.FromInteger(10); // Ordinal value for 'No'
         if Answer = YesNo::No then
             Message('Success');
     end;

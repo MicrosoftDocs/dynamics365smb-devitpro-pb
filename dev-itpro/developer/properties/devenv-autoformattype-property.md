@@ -2,7 +2,7 @@
 title: "AutoFormatType Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/20/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -76,7 +76,7 @@ This example prefixes the decimal value with a $, includes a thousand separator,
 
 ```AL
 AutoFormatType = 1;
-AutoFormatExpression = '$<precision, 2:2><standard format, 0>;
+AutoFormatExpression = '$<precision, 2:2><standard format, 0>';
 ```
 
 ## Example 4
