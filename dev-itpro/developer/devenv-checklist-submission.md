@@ -3,7 +3,7 @@ title: "Technical Validation Checklist"
 description: Describing the steps you must go through to successfully submit your app to AppSource using AppSourceCop.
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 06/04/2021
 ms.reviewer: solsen
 ms.suite: na
 ms.topic: conceptual
@@ -69,7 +69,8 @@ The submitted apps will be extracted and investigated following this list:
    - In order of dependencies, all prior versions of the apps are published and installed. **If any installation fails, the submission is rejected.**
    - In order of dependencies, all new versions of the apps are published and upgrade is run (apps must be digitally signed, else they won’t install). **If any installation/upgrade fails, the submission is rejected.**
    - A simple connection test is run; opening a role center and check simple actions and pages. If the connection test fails, **the submission investigated and potentially rejected.**
-7. If all country validations succeed and no errors are found then **the submission is accepted.**
+7. If all country validations succeed and no errors are found then **the submission is accepted.**.
+8. Publisher name is checked, because **extensions created by Microsoft are not allowed to be uploaded as part of the submission**, even if other extensions depend on them. If you try to do so, you will see an error equivalent to *"You are not authorized to use the 'Microsoft' publisher name for the extension '{0}' (version '{1}'). Please change the publisher name in the extension's manifest (app.json) or, if you are uploading extensions created by Microsoft, remove them from your submission"*.
 
 > [!Important]
 > Microsoft recommends that all partners are performing the same checks as described above before submitting apps for validation to maximize chances of validation success.
