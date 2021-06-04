@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.workload: na
 ms.reviewer: na
 ms.search.keywords: administration, tenant, admin, environment, key, optional, feature management, early access, preview, what's new
-ms.date: 04/01/2021
+ms.date: 05/12/2021
 ms.author: mikebc
 ---
 
@@ -36,7 +36,7 @@ Learn about [what's new and planned](/dynamics365-release-plan/2021wave1/).
 Learn about [new features available in the last minor update in a release wave](../whatsnew/whatsnew-update-17-5.md).  
 
 > [!TIP]
-> To prepare for an upcoming feature, consider enabling the feature on a sandbox environment that has a copy of production data. Invite business users to test out the change using real-world tasks. Once you and your users are satisfied with the change, you can then enable it on production environments where they can immediately benefit from that feature.  
+> To prepare for an upcoming feature, consider enabling the feature on a sandbox environment that has a copy of production data. Invite business users to test out the change using real-world tasks. Once you and your users are satisfied with the change, you can then enable it on production environments where they can immediately benefit from that feature.
 
 ## How to enable an optional feature
 
@@ -58,14 +58,18 @@ Some features or feature improvements may permanently affect the state and capab
 > [!NOTE]
 > When you choose to enable an irreversible feature, a warning dialog that describes the consequences is displayed. Choose **Yes** to proceed with permanently enabling the feature on that environment.
 
-## Scheduling data updates for new features
+## Scheduling Data Updates for New Features
 
-Enabling application features that change the user experience or update data can be a disruptive process, and you might want to go at your own pace by scheduling an update per company, for example, for a time that is after your users have been trained for the new experiences. 
+Enabling application features that change the user experience or update data can be a disruptive process. So you might want to go at your own pace. For example, schedule an update per company for a time that's after your users have been trained for the new experiences. 
 
-Schedule a data update by choosing the **Schedule** action, or by choosing **All Users** in the **Enable for** column in the **Feature Management** page. Both of those actions start the **Feature Data Update** setup guide, which allows you to review the affected data and schedule the update process. When the data update process is completed, the feature is enabled in the company where you ran the data update.
+You schedule a data update on the **Feature Management** page by choosing the **Schedule** action, or by choosing **All Users** in the **Enable for** column. Both of those actions start the **Feature Data Update** setup guide. This guide allows you to review the affected data and schedule the update process. When the data update process is completed, the feature is enabled in the company where you ran the data update.
 
 > [!NOTE]
 > For a feature that requires data update, data is created based on the data for the existing feature. The data for the existing feature may remain available, however, it is not synchronized with data for the new feature. Therefore, we recommend that you use one feature or the other, but not both.
+
+## <a name="permission"></a>Control user access to feature management
+
+Most users, by default, won't have permission to enable upcoming features themselves. As an administrator, the easiest way to give a user permission is to assign them the **FEATURE MGT. - ADMIN** permission set. For more information, see [Assigning Permission Sets](/dynamics365/business-central/ui-define-granular-permissions). This permission set was introduced in version 18.1.
 
 ## FAQ about Feature Management
 
@@ -73,7 +77,11 @@ Schedule a data update by choosing the **Schedule** action, or by choosing **All
 
 There may be periods where no optional features have been made available, which is perfectly normal. There will likely be few or no features listed in the **Feature Management** page immediately after a major update.
 
-### Will all new features eventually be listed on the Feature Management list?
+#### Why can't I enable features and make other changes on the Feature Management page?
+
+Chances are you don't have permissions to this page. See [Control user access to feature management](#permission) or talk to an administrator.
+
+#### Will all new features eventually be listed on the Feature Management list?
 
 No. We carefully select applicable features based on different criteria so that only a manageable subset of new features will appear in the list. Selected features are primarily those features that change the visuals or behaviors of the user interface and which require significant effort for business users to adjust to.
 
@@ -91,7 +99,7 @@ No. Users and administrators don't receive any in-app or email notifications abo
 
 ### Do these features show in the Microsoft 365 admin center Message center?
 
-At this time, new [!INCLUDE[prod_short](../includes/prod_short.md)] features are not listed in Message center.  
+At this time, new [!INCLUDE[prod_short](../includes/prod_short.md)] features aren't listed in Message center.  
 
 ### How is feature management different to the Early Access program?
 
@@ -111,17 +119,17 @@ No. At this time, feature management is only for features released by Microsoft.
 
 ### Can I enable a feature for a single user?
 
-No. Business Central doesn't provide the ability to enable a feature for a single user or group of users. Enabled features apply to all users of an environment.  
+No. Business Central doesn't let you enable a feature for a single user or group of users. Enabled features apply to all users of an environment.  
 
 ### I don't see a link to try out an optional feature. Is something wrong?  
 
-Some features don't provide a way to try out the feature for yourself and won't display a **Try it out** link. Before you enable these features, we recommend you first enable and test the features on a sandbox environment that has a copy of production data.
+Some features don't provide a way to try it out for yourself and won't display a **Try it out** link. Before you enable these features, we recommend you first enable and test the features on a sandbox environment that has a copy of production data.
 
 ### Are optional features also optional on new environments?
 
-Yes. Most optional features are enabled by default on new environments for new customers to benefit from. Administrators can still turn any of these features off from the Feature Management page. Some features are irreversible and are not enabled by default.
+Yes. Most optional features are enabled by default on new environments for new customers to benefit from. Administrators can still turn any of these features off from the Feature Management page. Some features are irreversible and aren't enabled by default.
 
-### Are optional features automatically enabled on sandbox environments?
+#### Are optional features automatically enabled on sandbox environments?
 
 When you create a new sandbox environment with a copy of production data, your choice of enabled features is also copied to the sandbox. When you create a fresh sandbox, each feature is enabled by default, unless a feature is irreversible. 
 

@@ -57,6 +57,11 @@ As a consequence, we encourage you to use the new property `mandatoryAffixes` th
 
 ## How to fix this diagnostic?
 
+> [!NOTE]  
+> If you are targeting the AppSource marketplace and do not have affixes registered, follow the steps defined in [Get Started with Building Apps](../readiness/get-started.md).
+
+If you are not targeting the AppSource marketplace, you can suppress this rule using [rulesets](../devenv-using-code-analysis-tool-with-rule-set.md).
+
 ### For new objects
 
 For objects that are introduced with the current version of the extension, appending one of the mandatory affixes to the object's name will fix the diagnostic.

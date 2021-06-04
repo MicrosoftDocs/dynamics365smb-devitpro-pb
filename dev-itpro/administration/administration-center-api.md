@@ -1,7 +1,7 @@
 ---
 title: Business Central Administration Center API | Microsoft Docs
 description: Learn about the Business Central administration center API.
-author: edupont04
+author: jswymer
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
@@ -9,7 +9,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 04/01/2021
+ms.date: 05/18/2021
 ---
 
 # The Business Central Administration Center API
@@ -405,7 +405,141 @@ DELETE /admin/v2.6/applications/{applicationFamily}/environments/{environmentNam
 
    - target: {applicationFamily}/{environmentName}
 
+### Rename environment
+
+**INTRODUCED IN:** API version 2.3
+
+Schedules a rename operation on an environment. 
+
+```
+Content-Type: application/json
+POST /admin/v2.6/applications/{applicationFamily}/environments/{environmentName}/rename
+```
+
+#### Routing parameters
+
+`applicationFamily` - Family of the environment's application as is (for example, "BusinessCentral").
+
+`environmentName` - Name of the environment to rename.
+
+#### Body 
+
+```
+{ 
+  "NewEnvironmentName": "sandbox" 
+} 
+```
+ 
+#### Response 
+
+202 Accepted with body. Follows the general "Operations" format, but with specific operation parameters 
+```
+{ 
+  "id": "11111111-aaaa-2222-bbbb-333333333333", 
+  "type": "environmentRename", // Operation type 
+  "status": "scheduled", 
+  "aadTenantId": "44444444-aaaa-5555-bbbb-666666666666", 
+  "createdOn": "2021-04-22T12:29:06.668254Z", 
+  "createdBy": "greg.chapman@contoso.com", 
+  "errorMessage": "", 
+  "parameters": { // Operation-specific parameters 
+    "oldEnvironmentName": "prod-1", // The old name of the environment 
+    "newEnvironmentName": "prod-2"  // The new name of the environment (the target name) 
+  } 
+} 
+```
+
+#### Expected Error Codes
+
+Follows the general "Error response" format with no operation-specific error codes. 
+
+### Restore environment
+
+**INTRODUCED IN:** API version 2.4
+
+Schedules a restore operation an existing environment from a time in the past.
+
+```
+Content-Type: application/json
+POST /admin/v2.6/applications/{applicationFamily}/environments/{environmentName}/restore
+```
+
+#### Routing parameters
+
+`applicationFamily` - Family of the environment's application as is (for example, "BusinessCentral").
+
+`environmentName` - Name of the environment to restore.
+
+#### Body
+
+```
+{ 
+  "EnvironmentName": "x-restored", // Mandatory. The name of the new environment that will be created as the result of the resore operation. 
+  "EnvironmentType": "production", // Mandatory. The type of the new environment. 
+  "PointInTime": "2021-04-22T20:00:00Z" // The point in time to which to restore the environment. Must be in ISO 8601 format in UTC. 
+} 
+```
+
+#### Response
+
+202 Accepted with body. Follows the general "Operations" format, but with specific operation parameters.
+
+```
+{ 
+  "id": "11111111-aaaa-2222-bbbb-333333333333", // Operation ID 
+  "type": "pitRestore",  // Operation type 
+  "status": "queued", // Status 
+  "aadTenantId": "44444444-aaaa-5555-bbbb-666666666666",         
+  "createdOn": "2021-04-23T09:41:28.8300669Z", 
+  "createdBy": "greg.chapman@contoso.com", 
+  "errorMessage": "", 
+  "parameters": { // Parameters mimic the same from the request body 
+    "environmentName": "x-restored",                        
+    "environmentType": "Production", 
+    "restorePointInTime": "2021-04-22T20:00:00Z" 
+  } 
+} 
+```
+
+#### Expected Error Codes
+
+Follows the general "Error response" format, but with specific error codes. 
+
+Operation-specific error codes: 
+
+`PitRestoreFailed` - the restore operation failed
+
+### Get available restore periods
+
+**INTRODUCED IN:** API version 2.4
+
+Returns an ordered list of available restore periods.
+
+```
+GET applications/{applicationType}/environments/{environmentName}/availableRestorePeriods 
+```
+
+#### Response
+
+200 OK with body. Body represents an ordered list of available restore periods that are non-overlapping and sorted in ascending order by period start date-time. If there are no available restore periods, the list will be empty.
+
+```
+{ 
+  "value": [ 
+    { 
+      "from": "2021-01-25T14:57:04.967Z", 
+      "to": "2021-01-25T21:06:17.737Z" 
+    }, 
+    { 
+      "from": "2021-01-25T21:14:48Z", 
+      "to": "2021-01-27T14:33:15.0007416Z" 
+    } 
+  ] 
+} 
+```
+
 ### Get used storage of an environment by application family and name
+
 Returns used storage properties for the provided environment name if it exists.
 
 ```
@@ -565,6 +699,7 @@ Example `200 OK` response:
 ```
 
 ## Available Applications
+
 Get information about the currently available application families, countries, rings, and versions that environments can be created on.
 The API endpoints here should be utilized to determine what values can be used for environment creation or copying 
 
@@ -576,6 +711,7 @@ GET /admin/v2.6/applications/
 ```
 
 #### Response
+
 ```
 {
   "value": [

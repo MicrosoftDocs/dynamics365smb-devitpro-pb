@@ -1,4 +1,4 @@
-# [Development and administration](index.md)
+﻿# [Development and administration](index.md)
 # [New and planned](/dynamics365/business-central/product-news?toc=/dynamics365/business-central/dev-itpro/toc.json)
 # Get started
 ## [Overview of business functionality](/dynamics365/business-central/across-business-functionality?toc=/dynamics365/business-central/dev-itpro/toc.json)
@@ -56,7 +56,7 @@
 ### [FAQ for Marketing Validation](developer/readiness/readiness-marketing-validation-faq.md)
 ### [FAQ for Update Lifecycle for AppSource Apps](developer/devenv-update-app-life-cycle-faq.md)
 ### [FAQ About the Windows Client and Business Central](faq-win-cli.md)
-### [FAQ about Connecting to Business Central Online from On-Premises Solutions](administration/FAQ-Intelligent-Cloud.md)
+### [FAQ about Connecting to Business Central Online from On-Premises Solutions](administration/faq-migrate-data.md)
 ## Help and Support
 ### [Resources for Help and Support](help-and-support.md)
 ### [Legal Resources](terms/legal.md)
@@ -208,7 +208,7 @@
 ### [Migrating from Business Central On-Premises](administration/migrate-business-central-on-premises.md)
 ### [Migrating from Dynamics GP](administration/migrate-dynamics-gp.md)
 ### [Migrating from Dynamics NAV](upgrade/Upgrade-Considerations.md#online)
-### [FAQ about Migrating to Business Central Online from On-Premises Solutions](administration/faq-intelligent-cloud.md)
+### [FAQ about Migrating to Business Central Online from On-Premises Solutions](administration/faq-migrate-data.md)
 ### [Troubleshooting Cloud Migration](administration/migration-troubleshooting.md)
 <!--### [Migrating from Dynamics SL](administration/migrate-data.md)-->
 <!-- end migrate -->
@@ -426,6 +426,7 @@
 ### [Report Extension Example](developer/devenv-report-ext-example.md)
 ### [Defining a Report Dataset](developer/devenv-report-dataset.md)
 ### [Request Pages](developer/devenv-request-pages.md)
+### [Report Triggers and Operations](developer/devenv-report-triggers.md)
 ### [Adding Reports to Tell Me](developer/devenv-al-menusuite-functionality.md)
 ### [Substituting a Report](developer/devenv-substituting-reports.md)
 ### [Testing a Report](developer/devenv-testing-reports.md)
@@ -467,7 +468,9 @@
 ## Linking to the Web Client and App
 ### [Web Client URL](developer/devenv-web-client-urls.md)
 ### [Business Central App URL](developer/devenv-link-to-mobile-app.md) 
-## [Working with Translation Files](developer/devenv-work-with-translation-files.md)
+## Translations
+### [Translations Overview](developer/devenv-translations-overview.md)
+### [Working with Translation Files](developer/devenv-work-with-translation-files.md)
 ## Developing for the Business Central Mobile App
 ### [Introducing the Business Central Mobile App](developer/devenv-introducing-business-central-mobile-app.md)  
 ### [Deciding on Your Tablet and Phone Strategy](developer/devenv-deciding-on-tablet-and-phone-strategy.md)  
@@ -2424,6 +2427,7 @@
 #### [XmlVersionNo Property](developer/properties/devenv-xmlversionno-property.md)
 <!-- [//]: # (IMPORTANT: END>DO_NOT_EDIT_PROPERTIES) -->
 ### Triggers
+#### [Overview](developer/triggers-auto/devenv-triggers.md)
 #### Trigger Events
 <!-- [//]: # (START>DO_NOT_EDIT_TRIGGERS)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -2652,6 +2656,7 @@
 #### [Working with Static Proxy](webservices/preserving-data-when-working-with-a-statically-generated-proxy.md)
 #### [Authentication](webservices/web-services-authentication.md)
 #### [Securing Remote Connections Using Certificates](deployment/implement-security-certificates-production-environment.md)
+#### [Supported Cipher Suites](developer/devenv-supported-cipher-suites.md)
 #### [Best Practices](webservices/web-services-best-practices.md)
 ### [SOAP](webservices/soap-web-services.md)
 #### [SOAP Service URIs](webservices/soap-web-service-uris.md)
@@ -2693,6 +2698,10 @@
 ### [Custom Integration with Dataverse](administration/administration-custom-cds-integration.md)
 ### [AL Proxy Table Generator](developer/devenv-al-table-proxy-generator.md)
 <!-- end CDS -->
+<!-- Microsoft Power BI -->
+## Integrating with Microsoft Power BI
+### [Adding Power BI Report Parts to Pages](developer\devenv-power-bi-report-parts.md)
+<!-- Microsoft Power BI -->
 <!-- Microsoft Power Platform -->
 ## Integrating with Microsoft Power Platform
 ### [Microsoft Power Platform Integration with Business Central](powerplatform/powerplat-overview.md)
@@ -2708,7 +2717,8 @@
 ### [FAQ](developer/devenv-dev-faq-teams.md)
 <!-- end Microsoft Teams -->
 <!-- Business Central API -->
-## [Dynamics 365 Business Central API](/dynamics-nav/api-reference/v2.0/index)
+## [Dynamics 365 Business Central API (v2.0)](api-reference/v2.0/index.md)
+## [Dynamics 365 Business Central API (v1.0)](api-reference/v1.0/index.md)
 <!-- end Business Central API -->
 <!--deprecated features -->
 # Removed or deprecated features
@@ -2728,6 +2738,7 @@
 ### [Deprecated Features in the Italian Version](upgrade/deprecated-features-it.md)
 ### [Deprecated Features in the Mexican Version](upgrade/deprecated-features-mx.md)
 ### [Deprecated Features in the Norwegian Version](upgrade/deprecated-features-no.md)
+### [Deprecated Features in the Russian Version](upgrade/deprecated-features-ru.md)
 ### [Deprecated Features in the Swedish Version](upgrade/deprecated-features-se.md)
 ### [Deprecated Features in the Swiss Version](upgrade/deprecated-features-ch.md)
 ### [Deprecated Features in the UK Version](upgrade/deprecated-features-uk.md)

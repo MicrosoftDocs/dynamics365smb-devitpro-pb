@@ -9,7 +9,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
-ms. search.keywords: cloud, edge
+ms. search.keywords: cloud, edge, time sheet
 ms.date: 04/01/2021
 ms.author: edupont
 
@@ -44,7 +44,7 @@ The following table describes the actions that you can run from the page:
 |Disable Cloud Migration    |Opens a guide that helps you through a checklist of instructions to disable the cloud migration configuration. Once the steps in this process are complete, you can use your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online tenant as your primary solution.|
 |Check for Update           |If there have been changes to the migration service, we will publish the new service. This action will check to see if a new service has been published. The check will display the version of the service you are currently running and then also display the latest service published. You will then have the option to update your solution. We recommend that you update the solution if a newer version has been published.|
 |Select Companies to Migrate|If your database contains more than one company, you this action to specify which company or companies to schedule a migration run for. For example, you're migrating a very large database with multiple companies, so you break down the migration in several runs by including one or a few companies in each migration run. You can see the estimated size of each company|
-|Define User Mappings       |This option is available when you log in to a particular company that has been migrated. This action  should be done in one of the companies you have migrated. This action gives you a list of the users that were in your on-premises environment, and then gives you a list of your Microsoft 365 users, so that you can map the two together. This process renames the **Name** field on the **User Card** to match the user name in your on-premises solution. It is not a required step, but if you use some of the processes in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] that work in conjunction with the user name, such as timesheets, you may want to map users. Timesheets are visible based on the user name you are logged in as in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].|
+|Define User Mappings       |This option is available when you log in to a particular company that has been migrated. This action  should be done in one of the companies you have migrated. This action gives you a list of the users that were in your on-premises environment, and then gives you a list of your Microsoft 365 users, so that you can map the two together. This process renames the **Name** field on the **User Card** to match the user name in your on-premises solution. It is not a required step, but if you use some of the processes in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] that work in conjunction with the user name, such as time sheets, you may want to map users. Time sheets are visible based on the user name you are logged in as in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].|
 |Setup Checklist      |When you are ready to use your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online tenant as your main system, the tables that were not migrated must be set up or defined as needed. The checklist page shows recommended steps to complete your migration to the cloud.|
 |Azure Data Lake|This option is available if the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online tenant is connected to Dynamics GP. For more information, see [Migrate Dynamics GP to Azure Data Lake](migrate-dynamics-gp.md#lake).|
 
@@ -62,4 +62,4 @@ When a company is created in [!INCLUDE [prod_short](../developer/includes/prod_s
 [Migrate to Business Central Online from Dynamics GP](migrate-dynamics-gp.md)  
 [Upgrading from Dynamics NAV to Business Central Online](../upgrade/Upgrade-Considerations.md#online)  
 [Migrating On-Premises Data to Business Central Online](migrate-data.md)  
-[FAQ about Connecting to Business Central Online from On-Premises Solutions](faq-intelligent-cloud.md)  
+[FAQ about Connecting to Business Central Online from On-Premises Solutions](faq-migrate-data.md)  

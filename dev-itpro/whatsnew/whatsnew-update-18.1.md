@@ -3,7 +3,7 @@ title: "Update 18.1 for Microsoft Dynamics 365 Business Central 2021 Release Wav
 description: Get an overview of new and changed capabilities in the 18.1 update of Business Central online, which is part of 2021 release wave 1.
 ms.author: solsen
 ms.custom: na
-ms.date: 05/10/2021
+ms.date: 06/04/2021
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,17 +17,17 @@ author: EmmaNielsson
 Would you like to know what has changed in update 18.1? Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update. In addition, we have gathered some good to know information and links, you might find interesting.
 
 > [!IMPORTANT]  
-> Builds for Business Central version 18.1 on-premise are delayed and will be available later this month. This page will be updated when the on-premise builds are available.
+> Builds for Business Central version 18.1 on-premise are now available. For more information, see [Update 18.1 for Microsoft Dynamics 365 Business Central 2021 Release Wave 1](https://support.microsoft.com/topic/update-18-1-for-microsoft-dynamics-365-business-central-2021-release-wave-1-application-build-18-1-26330-platform-build-18-0-26311-c2b1b1d3-e875-4079-817e-aa51454feddb).
 
 ## Hotfixes
 Find an overview of hotfixes in this [article](https://support.microsoft.com/topic/update-18-1-for-microsoft-dynamics-365-business-central-2021-release-wave-1-application-build-18-1-25158-platform-build-18-0-25290-c2b1b1d3-e875-4079-817e-aa51454feddb).
 
 ## Feature changes
 - [Editing in Excel more reliably](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/editing-excel-more-reliably)
-- [Support authentication of a SMTP connection using OAuth2](/dynamics365/business-central/admin-how-setup-email)
-- [Extension lifecycle telemetry include signal from dependent extensions](/dynamics365/business-central/dev-itpro/administration/telemetry-extension-lifecycle-trace)
+- [Support authentication of a SMTP connection using OAuth2](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/support-authentication-smtp-connection-using-oauth2)
+- [Extension lifecycle telemetry include signal from dependent extensions](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/extension-lifecycle-telemetry-include-signal-dependent-extensions)
 - [Edit active prices in Prices Overview and implement price changes using Price Worksheet](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/edit-active-prices-price-lists-price-overview-pages)
-- [Send documents as emails with any attached files automatically added as email attachments](/dynamics365/business-central/ui-how-send-documents-email)
+- [Send documents as emails with any attached files automatically added as email attachments](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/send-documents-as-emails-attached-files-automatically-added-as-email-attachments)
 
 ## Localization updates 
 
@@ -50,6 +50,9 @@ Please note that new customers will automatically get the latest builds of Busin
 
 **Support for migrating data from earlier on-premises versions of Business Central to 2021 release wave 1 (v.18)**  
 With the Business Central cloud migration tool, customers can migrate their data from earlier on-premises versions of the product to their online Business Central environment, running on the latest version. We've added support for customers who are running on Business Central on-premises version 14, 15, 16, or 17 to migrate their data to version 18 of Business Central online. We've implemented the necessary data upgrade logic in the cloud migration tool, so customers don't have to upgrade their older version themselves in order to migrate their data to the latest online release. 
+
+**US customers: Schedule minor updates and receive email notifications**  
+US customers can now receive up-front email notifications seven days in advance and schedule minor updates of Business Central within 21 days. We have enabled this new capability to be available for US with 18.1, and plan to enable the same experience for all other countries with 18.2. Stay tuned for updates! Learn more: https://aka.ms/BCUpdates.
 
 **Business Central Office Hours Calls in May**  
 Make sure to join the office hours calls around ‘Report Extensibility’ on May 4 and ‘Snapshot debugging’ on May 18. Register and stay tuned for the upcoming calls: https://aka.ms/BCOfficeHours.

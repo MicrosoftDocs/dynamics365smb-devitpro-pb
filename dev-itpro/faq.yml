@@ -19,7 +19,7 @@ summary: |
   - Visit [FAQ about Updating your App](developer/app-faq-update.md) to get answers to questions on tenants, versioning, and compatibility.
   - Visit [FAQ about Testing your App](developer/app-faq-test.md) to learn about testing before submitting an app.
   - Visit [FAQ about Update Lifecycle for AppSource Apps](developer/devenv-update-app-life-cycle-faq.md) for questions and answers related to the validation process.
-  - Visit [FAQ about Migrating to the Cloud from On-Premises Solutions](administration/faq-intelligent-cloud.md) to learn about what is supported.
+  - Visit [FAQ about Migrating to the Cloud from On-Premises Solutions](administration/faq-migrate-data.md) to learn about what is supported.
   - Visit [FAQ about the Windows Client](faq-win-cli.md) to learn about support for the [!INCLUDE[prod_short](includes/prod_short.md)] Windows client.
   - Visit [FAQ about Signing Up and Using](/dynamics365/business-central/across-faq) for questions about signing up for and using [!INCLUDE[prod_short](includes/prod_short.md)] in the business functionality content for.
   
