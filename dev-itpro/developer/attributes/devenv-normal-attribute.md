@@ -1,9 +1,9 @@
 ---
 title: "Normal Attribute"
-description: ""
+description: "TODO:Add documentation"
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/04/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,15 +18,17 @@ author: SusanneWindfeldPedersen
 # Normal Attribute
 > **Version**: _Available or changed with runtime version 1.0._
 
-
+TODO:Add documentation
 
 ## Syntax
 ```
 [Normal()]
 ```
 
-## Allowed On
+## Applies To
+
 - Method
+
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

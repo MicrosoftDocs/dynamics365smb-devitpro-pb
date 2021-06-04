@@ -1,9 +1,9 @@
 ---
 title: "Scope Attribute"
-description: ""
+description: "TODO:Add documentation"
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/04/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,15 +18,24 @@ author: SusanneWindfeldPedersen
 # Scope Attribute
 > **Version**: _Available or changed with runtime version 1.0._
 
-
+TODO:Add documentation
 
 ## Syntax
 ```
 [Scope(Kind: Text)]
 ```
 
-## Allowed On
+### Parameters
+
+*Kind*  
+&emsp;Type: [Text](../methods-auto/text/text-data-type.md)  
+TODO:Add documentation  
+
+
+## Applies To
+
 - Method
+
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

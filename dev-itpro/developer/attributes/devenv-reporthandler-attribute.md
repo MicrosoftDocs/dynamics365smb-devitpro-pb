@@ -1,9 +1,9 @@
 ---
 title: "ReportHandler Attribute"
-description: ""
+description: "TODO:Add documentation"
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/04/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,15 +18,19 @@ author: SusanneWindfeldPedersen
 # ReportHandler Attribute
 > **Version**: _Available or changed with runtime version 1.0._
 
-
+TODO:Add documentation
 
 ## Syntax
 ```
 [ReportHandler()]
 ```
 
-## Allowed On
+## Applies To
+
 - Method
+
+> [!NOTE]
+> The ReportHandler attribute can only be set inside codeunits with the SubType property set to Test.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

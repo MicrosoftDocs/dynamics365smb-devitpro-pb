@@ -1,9 +1,9 @@
 ---
 title: "BusinessEvent Attribute"
-description: ""
+description: "Specifies that the method is published as a business type event."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/04/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,15 +18,24 @@ author: SusanneWindfeldPedersen
 # BusinessEvent Attribute
 > **Version**: _Available or changed with runtime version 1.0._
 
-
+Specifies that the method is published as a business type event.
 
 ## Syntax
 ```
 [BusinessEvent(IncludeSender: Boolean)]
 ```
 
-## Allowed On
+### Parameters
+
+*IncludeSender*  
+&emsp;Type: [Boolean](../methods-auto/boolean/boolean-data-type.md)  
+Specifies that the firing instance of the object is available as a parameter to subscribers of that event.  
+
+
+## Applies To
+
 - Method
+
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

@@ -1,9 +1,9 @@
 ---
 title: "IntegrationEvent Attribute"
-description: ""
+description: "Specifies that the method is published as an integration type event."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/04/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,15 +18,28 @@ author: SusanneWindfeldPedersen
 # IntegrationEvent Attribute
 > **Version**: _Available or changed with runtime version 1.0._
 
-
+Specifies that the method is published as an integration type event.
 
 ## Syntax
 ```
 [IntegrationEvent(IncludeSender: Boolean, GlobalVarAccess: Boolean)]
 ```
 
-## Allowed On
+### Parameters
+
+*IncludeSender*  
+&emsp;Type: [Boolean](../methods-auto/boolean/boolean-data-type.md)  
+Specifies whether global methods in the object that contains the event publisher method are exposed to event subscriber methods that subscribe to the event.  
+
+*GlobalVarAccess*  
+&emsp;Type: [Boolean](../methods-auto/boolean/boolean-data-type.md)  
+Specifies whether global variables in the object that contains the event publisher method are accessible to event subscriber methods that subscribe to the published event.  
+
+
+## Applies To
+
 - Method
+
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

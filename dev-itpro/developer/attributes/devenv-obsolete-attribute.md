@@ -1,9 +1,9 @@
 ---
 title: "Obsolete Attribute"
-description: ""
+description: "Specifies that the annotated symbol will be deprecated."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/04/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,18 +18,31 @@ author: SusanneWindfeldPedersen
 # Obsolete Attribute
 > **Version**: _Available or changed with runtime version 4.0._
 
-
+Specifies that the annotated symbol will be deprecated.
 
 ## Syntax
 ```
 [Obsolete([Reason: Text] [, Tag: Text])]
 ```
 
-## Allowed On
+### Parameters
+
+*Reason*  
+&emsp;Type: [Text](../methods-auto/text/text-data-type.md)  
+Specifies the reason for the symbol being deprecated.  
+
+*Tag*  
+&emsp;Type: [Text](../methods-auto/text/text-data-type.md)  
+Specifies a free-form text to support tracking of where and when the object was marked as obsolete, for example, branch, build, or date of obsoleting the object.  
+
+
+## Applies To
+
 - Method
 - DeclareMethod
 - Variable
 - Event
+
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

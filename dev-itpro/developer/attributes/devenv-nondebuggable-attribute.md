@@ -1,9 +1,9 @@
 ---
 title: "NonDebuggable Attribute"
-description: ""
+description: "Specifies that the annotated symbol will not be available to the debugger. E.g. methods can't be stepped through and variables can't be inspected."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/04/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,16 +18,18 @@ author: SusanneWindfeldPedersen
 # NonDebuggable Attribute
 > **Version**: _Available or changed with runtime version 2.0._
 
-
+Specifies that the annotated symbol will not be available to the debugger. E.g. methods can't be stepped through and variables can't be inspected.
 
 ## Syntax
 ```
 [NonDebuggable()]
 ```
 
-## Allowed On
+## Applies To
+
 - Variable
 - Method
+
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

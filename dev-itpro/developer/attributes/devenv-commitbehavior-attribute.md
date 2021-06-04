@@ -1,9 +1,9 @@
 ---
 title: "CommitBehavior Attribute"
-description: ""
+description: "Specifies the behavior of a commit call inside the method scope."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/04/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,15 +18,24 @@ author: SusanneWindfeldPedersen
 # CommitBehavior Attribute
 > **Version**: _Available or changed with runtime version 6.0._
 
-
+Specifies the behavior of a commit call inside the method scope.
 
 ## Syntax
 ```
 [CommitBehavior(Behavior: CommitBehavior)]
 ```
 
-## Allowed On
+### Parameters
+
+*Behavior*  
+&emsp;Type: [CommitBehavior](../methods-auto/commitbehavior/commitbehavior-option.md)  
+Specifies if a commit must be ignored or throw an error. The options are: Ignored or Error.  
+
+
+## Applies To
+
 - Method
+
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

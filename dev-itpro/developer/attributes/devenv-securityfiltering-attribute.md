@@ -1,9 +1,9 @@
 ---
 title: "SecurityFiltering Attribute"
-description: ""
+description: "TODO:Add documentation"
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/04/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,15 +18,24 @@ author: SusanneWindfeldPedersen
 # SecurityFiltering Attribute
 > **Version**: _Available or changed with runtime version 1.0._
 
-
+TODO:Add documentation
 
 ## Syntax
 ```
 [SecurityFiltering(Kind: SecurityFilter)]
 ```
 
-## Allowed On
+### Parameters
+
+*Kind*  
+&emsp;Type: [SecurityFilter](../methods-auto/securityfilter/securityfilter-option.md)  
+TODO:Add documentation  
+
+
+## Applies To
+
 - Variable
+
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

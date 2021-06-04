@@ -1,9 +1,9 @@
 ---
 title: "Caption Attribute"
-description: ""
+description: "Specifies a caption for OData actions."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/04/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,15 +18,36 @@ author: SusanneWindfeldPedersen
 # Caption Attribute
 > **Version**: _Available or changed with runtime version 6.0._
 
-
+Specifies a caption for OData actions.
 
 ## Syntax
 ```
 [Caption(Text: Text [, Locked: Boolean] [, Comment: Text] [, MaxLength: Integer])]
 ```
 
-## Allowed On
+### Parameters
+
+*Text*  
+&emsp;Type: [Text](../methods-auto/text/text-data-type.md)  
+Specifies the translation text.  
+
+*Locked*  
+&emsp;Type: [Boolean](../methods-auto/boolean/boolean-data-type.md)  
+Specifies if the text should be translated.  
+
+*Comment*  
+&emsp;Type: [Text](../methods-auto/text/text-data-type.md)  
+Specifies a comment for the translation.  
+
+*MaxLength*  
+&emsp;Type: [Integer](../methods-auto/integer/integer-data-type.md)  
+Specifies the maximum length of the translation.  
+
+
+## Applies To
+
 - Method
+
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
