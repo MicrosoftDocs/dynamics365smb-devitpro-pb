@@ -3,7 +3,7 @@ title: "Update 18.1 for Microsoft Dynamics 365 Business Central 2021 Release Wav
 description: Get an overview of new and changed capabilities in the 18.1 update of Business Central online, which is part of 2021 release wave 1.
 ms.author: solsen
 ms.custom: na
-ms.date: 05/10/2021
+ms.date: 06/04/2021
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,7 +17,7 @@ author: EmmaNielsson
 Would you like to know what has changed in update 18.1? Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update. In addition, we have gathered some good to know information and links, you might find interesting.
 
 > [!IMPORTANT]  
-> Builds for Business Central version 18.1 on-premise are delayed and will be available later this month. This page will be updated when the on-premise builds are available.
+> Builds for Business Central version 18.1 on-premise are now available. For more information, see [Update 18.1 for Microsoft Dynamics 365 Business Central 2021 Release Wave 1](https://support.microsoft.com/topic/update-18-1-for-microsoft-dynamics-365-business-central-2021-release-wave-1-application-build-18-1-26330-platform-build-18-0-26311-c2b1b1d3-e875-4079-817e-aa51454feddb).
 
 ## Hotfixes
 Find an overview of hotfixes in this [article](https://support.microsoft.com/topic/update-18-1-for-microsoft-dynamics-365-business-central-2021-release-wave-1-application-build-18-1-25158-platform-build-18-0-25290-c2b1b1d3-e875-4079-817e-aa51454feddb).
