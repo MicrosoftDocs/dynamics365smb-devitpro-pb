@@ -33,7 +33,7 @@ Sets whether user-specific control values are saved for this page.
 
 This information is saved in the `Page Data Personalization` table.  
 
-The **SaveValues** property enables the *Saved Settings* feature, that is, to save a predefined group of options and filters for a page or request page. You can later use the saved settings to consistently generate the same reports, XMLports, or batch jobs. For more information, see [Manage Saved Settings for Reports and Batch jobs](/dynamics365/business-central/reports-saving-reusing-settings).
+The **SaveValues** property enables the *Saved Settings* feature, that is, to save a predefined group of options for a page or request page. Filters are only saved for request pages. You can later use the saved settings to consistently generate the same reports, XMLports, or batch jobs. For more information, see [Manage Saved Settings for Reports and Batch jobs](/dynamics365/business-central/reports-saving-reusing-settings).
   
 ## See Also
 
