@@ -29,9 +29,13 @@ begin
 end;
 ```
 
-
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+Use this trigger to perform any cleanup or post processing needed after a data item is processed. The base object trigger is run before this trigger. For more information, see [OnPostDataItem (Report Data Item) Trigger](../reportdataitem/devenv-onpostdataitem-reportdataitem-trigger.md)..  
+
+
 ## See Also  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

@@ -30,8 +30,12 @@ end;
 ```
 
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+This trigger runs before [OnAfterGetRecord (Report Data Item) Trigger](../reportdataitem/devenv-onaftergetrecord-reportdataitem-trigger.md).
+
 ## See Also  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
