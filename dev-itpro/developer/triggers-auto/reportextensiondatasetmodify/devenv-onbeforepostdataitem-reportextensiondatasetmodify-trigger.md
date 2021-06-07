@@ -35,7 +35,7 @@ end;
 
 ## Remarks
 
-This trigger runs before [OnPostDataItem (Report Data Item) Trigger](../reportdataitem/devenv-onpostdataitem-reportdataitem-trigger.md).
+This trigger runs before the base object trigger [OnPostDataItem (Report Data Item) Trigger](../reportdataitem/devenv-onpostdataitem-reportdataitem-trigger.md).
 
 ## See Also  
 [Getting Started with AL](../../devenv-get-started.md)  

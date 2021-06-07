@@ -34,7 +34,7 @@ end;
 
 ## Remarks
 
-This trigger runs before [OnAfterGetRecord (Report Data Item) Trigger](../reportdataitem/devenv-onaftergetrecord-reportdataitem-trigger.md).
+This trigger runs before the base object trigger [OnAfterGetRecord (Report Data Item) Trigger](../reportdataitem/devenv-onaftergetrecord-reportdataitem-trigger.md).
 
 ## See Also  
 [Getting Started with AL](../../devenv-get-started.md)  

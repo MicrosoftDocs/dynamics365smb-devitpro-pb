@@ -35,9 +35,10 @@ end;
 
 ## Remarks
 
-This trigger runs before the [OnPreDataItem (Report Data Item) Trigger](../reportdataitem/devenv-onpredataitem-reportdataitem-trigger.md).
+This trigger runs before the base object trigger [OnPreDataItem (Report Data Item) Trigger](../reportdataitem/devenv-onpredataitem-reportdataitem-trigger.md).
 
 
-## See Also  
+## See Also
+
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
