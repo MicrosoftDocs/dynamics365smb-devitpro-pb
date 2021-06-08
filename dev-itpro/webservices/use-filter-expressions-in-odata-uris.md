@@ -56,7 +56,10 @@ Use the appropriate notation for different data types with filter expressions.
 
 - String values must be delimited by single quotation marks.  
 
-- Numeric values require no delimiters.  
+- Numeric values require no delimiters.
+
+## Nested function calls
+Nested function calls in filter clauses are not supported in the current OData implementation. This means that filter clause expressions like `contains(tolower(field), 'some')` do not return the expected results - in this case a partial case-insensitive text search - but will instead either throw an error or return an undefined result.
 
 ## See Also
 
