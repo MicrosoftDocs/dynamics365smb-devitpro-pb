@@ -3,7 +3,7 @@ title: "Query.TopNumberOfRows Method"
 description: "Specifies the maximum number of rows to include in the resulting data set of a query."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,16 +29,16 @@ Specifies the maximum number of rows to include in the resulting data set of a q
 ## Parameters
 *Query*  
 &emsp;Type: [Query](query-data-type.md)  
-An instance of the [Query](query-data-type.md) data type.
+An instance of the [Query](query-data-type.md) data type.  
 
-*NewRows*  
+*[Optional] NewRows*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The number of rows to include in the resulting data set. If you do not set the NewRows parameter, then the resulting data set will include all rows. If you set the value to 0, then there is no limit and all rows of the data set are returned.
           
 
 
 ## Return Value
-*CurrentRows*  
+*[Optional] CurrentRows*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 Gets the current maximum number of rows included in the resulting data set
 

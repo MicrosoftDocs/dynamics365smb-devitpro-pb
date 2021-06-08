@@ -3,7 +3,7 @@ title: "Debugger.EnableSqlTrace Method"
 description: "Enables or verifies SQL tracing. If you enable SQL tracing, then SQL Server events for selected sessions on the server instance are collected."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,14 +29,14 @@ Enables or verifies SQL tracing. If you enable SQL tracing, then SQL Server even
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The ID of the session for which you want to enable the SQL trace, or for which you want to verify if tracing is enabled.If you specify 0 and you specify the NewIsEnabled parameter, then tracing is enabled for all existing sessions and all new sessions on the current server instance. If you specify 0 and you omit the NewIsEnabled parameter, then the function returns true if tracing is enabled for new sessions on the current server instance. If the session ID that you specify does not exist and you specify the NewIsEnabled parameter, then a run-time error occurs. If the session ID that you specify does not exist and you do not specify the NewIsEnabled parameter, then the function returns false.
         
-*NewIsEnabled*  
+*[Optional] NewIsEnabled*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 If you specify the optional NewIsEnabled parameter, then the method sets whether tracing is enabled. true if you want to enable tracing for the specified session; false if you want to disable tracing. If you omit the NewIsEnabled parameter, then the function verifies if tracing is enabled.
         
 
 
 ## Return Value
-*IsEnabled*  
+*[Optional] IsEnabled*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 
 

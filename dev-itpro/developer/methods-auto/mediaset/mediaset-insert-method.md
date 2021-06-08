@@ -3,7 +3,7 @@ title: "MediaSet.Insert Method"
 description: "Adds a media object that already exists in the database to a MediaSet of a record."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,7 @@ Adds a media object that already exists in the database to a MediaSet of a recor
 ## Parameters
 *MediaSet*  
 &emsp;Type: [MediaSet](mediaset-data-type.md)  
-An instance of the [MediaSet](mediaset-data-type.md) data type.
+An instance of the [MediaSet](mediaset-data-type.md) data type.  
 
 *MediaId*  
 &emsp;Type: [Guid](../guid/guid-data-type.md)  
@@ -36,7 +36,7 @@ Specifies the unique ID that is assigned to the media object that you want to in
 
 
 ## Return Value
-*Result*  
+*[Optional] Result*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the media is successfully added to the MediaSet, otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 

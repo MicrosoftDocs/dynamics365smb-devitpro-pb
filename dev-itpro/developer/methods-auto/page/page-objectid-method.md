@@ -3,7 +3,7 @@ title: "Page.ObjectId Method"
 description: "Returns a string in the "Page xxx" format, where xxx is the caption or ID of the application object."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,9 +27,9 @@ String :=   Page.ObjectId([UseNames: Boolean])
 ## Parameters
 *Page*  
 &emsp;Type: [Page](page-data-type.md)  
-An instance of the [Page](page-data-type.md) data type.
+An instance of the [Page](page-data-type.md) data type.  
 
-*UseNames*  
+*[Optional] UseNames*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 If **true**, the page caption is returned, else the page ID as text.  
 

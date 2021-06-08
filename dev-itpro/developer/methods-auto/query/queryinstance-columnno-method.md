@@ -3,7 +3,7 @@ title: "Query.ColumnNo Method"
 description: "Returns the ID that is assigned to a query column in the query definition."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,7 @@ Number :=   Query.ColumnNo(Column: Any)
 ## Parameters
 *Query*  
 &emsp;Type: [Query](query-data-type.md)  
-An instance of the [Query](query-data-type.md) data type.
+An instance of the [Query](query-data-type.md) data type.  
 
 *Column*  
 &emsp;Type: [Any](../any/any-data-type.md)  

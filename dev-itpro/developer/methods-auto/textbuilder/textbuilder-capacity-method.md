@@ -3,7 +3,7 @@ title: "TextBuilder.Capacity Method"
 description: "Gets or sets the maximum number of characters that can be contained in the memory allocated by the current instance."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,15 +29,15 @@ Gets or sets the maximum number of characters that can be contained in the memor
 ## Parameters
 *TextBuilder*  
 &emsp;Type: [TextBuilder](textbuilder-data-type.md)  
-An instance of the [TextBuilder](textbuilder-data-type.md) data type.
+An instance of the [TextBuilder](textbuilder-data-type.md) data type.  
 
-*NewCapacity*  
+*[Optional] NewCapacity*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The maximum number of characters that can be contained in the memory allocated by the current instance. Its value can range from Length to MaxCapacity.  
 
 
 ## Return Value
-*OldCapacity*  
+*[Optional] OldCapacity*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The maximum number of characters that can be contained in the memory allocated by the current instance.
 

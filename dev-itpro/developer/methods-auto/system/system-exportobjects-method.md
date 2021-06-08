@@ -3,7 +3,7 @@ title: "System.ExportObjects Method"
 description: "Exports application objects to a file."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -37,7 +37,7 @@ The path of the file to export to.
 &emsp;Type: [Record](../record/record-data-type.md)  
 A record to the Object table.
         
-*Format*  
+*[Optional] Format*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The format to use when exporting.  
 

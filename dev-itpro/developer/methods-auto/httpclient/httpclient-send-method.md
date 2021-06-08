@@ -3,7 +3,7 @@ title: "HttpClient.Send Method"
 description: "Sends an HTTP request as an asynchronous operation."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,7 @@ Sends an HTTP request as an asynchronous operation.
 ## Parameters
 *HttpClient*  
 &emsp;Type: [HttpClient](httpclient-data-type.md)  
-An instance of the [HttpClient](httpclient-data-type.md) data type.
+An instance of the [HttpClient](httpclient-data-type.md) data type.  
 
 *Request*  
 &emsp;Type: [HttpRequestMessage](../httprequestmessage/httprequestmessage-data-type.md)  
@@ -39,7 +39,7 @@ The response received from the remote endpoint.
 
 
 ## Return Value
-*Ok*  
+*[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 Accessing the HttpContent property of HttpResponseMessage in a case when the request fails will result in an error. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 

@@ -3,7 +3,7 @@ title: "Media.ImportStream Method"
 description: "Adds a media type (MIME), such as jpeg image, from an InStream object to a Media data type field of a record for displaying the media in the client. The media file is imported to the application database and a reference to the media is included in the Media data type field."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,7 @@ Adds a media type (MIME), such as jpeg image, from an InStream object to a Media
 ## Parameters
 *Media*  
 &emsp;Type: [Media](media-data-type.md)  
-An instance of the [Media](media-data-type.md) data type.
+An instance of the [Media](media-data-type.md) data type.  
 
 *Stream*  
 &emsp;Type: [InStream](../instream/instream-data-type.md)  
@@ -37,14 +37,14 @@ The InStream object that contains the media that you want to use on the record.
 &emsp;Type: [Text](../text/text-data-type.md)  
 Specifies text that can be used in the client to describe the media file.
         
-*MimeType*  
+*[Optional] MimeType*  
 &emsp;Type: [Text](../text/text-data-type.md)  
 Specifies the media content type. MIME type is used by browsers, and is an Internet standard to describe the contents of a file. The MimeType value must be a two-part string that consists of a type and subtype, such as image/jpeg or image/gif. If this parameter is not specified, the function will deduct the MIME type from the file extension. For example the MIME type for a .jpg file is image/jpeg.
           
 
 
 ## Return Value
-*ID*  
+*[Optional] ID*  
 &emsp;Type: [Guid](../guid/guid-data-type.md)  
 The unique ID that is assigned to the media object in the database. You can also get the ID by using the MediaId method. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 

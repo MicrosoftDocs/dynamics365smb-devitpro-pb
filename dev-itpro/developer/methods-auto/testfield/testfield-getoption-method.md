@@ -3,7 +3,7 @@ title: "TestField.GetOption Method"
 description: "Gets the options for a field on a test page."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,9 +27,9 @@ Result :=   TestField.GetOption([Index: Integer])
 ## Parameters
 *TestField*  
 &emsp;Type: [TestField](testfield-data-type.md)  
-An instance of the [TestField](testfield-data-type.md) data type.
+An instance of the [TestField](testfield-data-type.md) data type.  
 
-*Index*  
+*[Optional] Index*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The index of the field that you want to get the options from. This parameter is optional.  
 

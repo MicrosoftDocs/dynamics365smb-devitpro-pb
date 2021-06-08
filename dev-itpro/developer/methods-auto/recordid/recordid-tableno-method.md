@@ -3,7 +3,7 @@ title: "RecordId.TableNo Method"
 description: "Gets the table number of the table that is identified by RecordID. This function returns an error if the record is blank."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,7 +30,7 @@ No :=   RecordId.TableNo()
 ## Parameters
 *RecordId*  
 &emsp;Type: [RecordId](recordid-data-type.md)  
-An instance of the [RecordId](recordid-data-type.md) data type.
+An instance of the [RecordId](recordid-data-type.md) data type.  
 
 ## Return Value
 *No*  

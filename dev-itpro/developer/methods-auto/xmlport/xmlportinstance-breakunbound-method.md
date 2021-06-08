@@ -3,7 +3,7 @@ title: "Xmlport.BreakUnbound Method"
 description: "Exits from a loop on records in an XmlPort trigger."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,7 +28,7 @@ Exits from a loop on records in an XmlPort trigger.
 ## Parameters
 *Xmlport*  
 &emsp;Type: [Xmlport](xmlport-data-type.md)  
-An instance of the [Xmlport](xmlport-data-type.md) data type.
+An instance of the [Xmlport](xmlport-data-type.md) data type.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

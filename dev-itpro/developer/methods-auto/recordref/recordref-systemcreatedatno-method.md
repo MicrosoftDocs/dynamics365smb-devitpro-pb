@@ -3,7 +3,7 @@ title: "RecordRef.SystemCreatedAtNo Method"
 description: "Gets the field number that is used by the SystemCreatedAt field. The SystemCreatedAt field is a system field that the platform adds to all table objects."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,7 +30,7 @@ SystemCreatedAtFieldNo :=   RecordRef.SystemCreatedAtNo()
 ## Parameters
 *RecordRef*  
 &emsp;Type: [RecordRef](recordref-data-type.md)  
-An instance of the [RecordRef](recordref-data-type.md) data type.
+An instance of the [RecordRef](recordref-data-type.md) data type.  
 
 ## Return Value
 *SystemCreatedAtFieldNo*  

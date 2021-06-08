@@ -3,7 +3,7 @@ title: "SessionSettings.LocaleId Method"
 description: "Gets or sets the locale ID property in a SessionSettings object."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,16 +29,16 @@ Gets or sets the locale ID property in a SessionSettings object.
 ## Parameters
 *SessionSettings*  
 &emsp;Type: [SessionSettings](sessionsettings-data-type.md)  
-An instance of the [SessionSettings](sessionsettings-data-type.md) data type.
+An instance of the [SessionSettings](sessionsettings-data-type.md) data type.  
 
-*NewLocaleId*  
+*[Optional] NewLocaleId*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 Specifies the locale ID to set in the SessionSettings object. The value must be a valid Windows locale ID.
         
 
 
 ## Return Value
-*LocaleId*  
+*[Optional] LocaleId*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The locale ID that is set in the SessionSettings object.
 

@@ -3,7 +3,7 @@ title: "Text.PadRight Method"
 description: "Returns a new string that left-aligns the characters in this string by padding them with spaces on the right, for a specified total length."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,13 +29,13 @@ Result :=   Text.PadRight(Count: Integer [, Char: Char])
 ## Parameters
 *Text*  
 &emsp;Type: [Text](text-data-type.md)  
-An instance of the [Text](text-data-type.md) data type.
+An instance of the [Text](text-data-type.md) data type.  
 
 *Count*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The number of characters in the resulting string, equal to the number of original characters plus any additional padding characters.
         
-*Char*  
+*[Optional] Char*  
 &emsp;Type: [Char](../char/char-data-type.md)  
 A padding character.  
 

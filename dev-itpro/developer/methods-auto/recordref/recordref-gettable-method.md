@@ -3,7 +3,7 @@ title: "RecordRef.GetTable Method"
 description: "Gets the table of a Record variable and causes the RecordRef to refer to the same table."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,7 @@ Gets the table of a Record variable and causes the RecordRef to refer to the sam
 ## Parameters
 *RecordRef*  
 &emsp;Type: [RecordRef](recordref-data-type.md)  
-An instance of the [RecordRef](recordref-data-type.md) data type.
+An instance of the [RecordRef](recordref-data-type.md) data type.  
 
 *Rec*  
 &emsp;Type: [Record](../record/record-data-type.md)  

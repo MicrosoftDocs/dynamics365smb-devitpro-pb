@@ -3,7 +3,7 @@ title: "XmlAttribute.Value Method"
 description: "Gets or sets the value of the attribute."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,15 +29,15 @@ Gets or sets the value of the attribute.
 ## Parameters
 *XmlAttribute*  
 &emsp;Type: [XmlAttribute](xmlattribute-data-type.md)  
-An instance of the [XmlAttribute](xmlattribute-data-type.md) data type.
+An instance of the [XmlAttribute](xmlattribute-data-type.md) data type.  
 
-*NewValue*  
+*[Optional] NewValue*  
 &emsp;Type: [String](../string/string-data-type.md)  
 The new value of the attribute.  
 
 
 ## Return Value
-*Value*  
+*[Optional] Value*  
 &emsp;Type: [String](../string/string-data-type.md)  
 The value of the attribute.
 
