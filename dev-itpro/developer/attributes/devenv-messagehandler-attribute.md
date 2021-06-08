@@ -1,9 +1,9 @@
 ---
 title: "MessageHandler Attribute"
-description: "TODO:Add documentation"
+description: "Specifies that the method is a MessageHandler method, which handles Message statements."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/04/2021
+ms.date: 06/08/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,12 +18,13 @@ author: SusanneWindfeldPedersen
 # MessageHandler Attribute
 > **Version**: _Available or changed with runtime version 1.0._
 
-TODO:Add documentation
+Specifies that the method is a MessageHandler method, which handles Message statements.
 
 ## Syntax
 ```
 [MessageHandler()]
 ```
+
 
 ## Applies To
 

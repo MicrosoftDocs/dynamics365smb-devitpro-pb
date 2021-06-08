@@ -1,9 +1,9 @@
 ---
 title: "RecallNotificationHandler Attribute"
-description: "TODO:Add documentation"
+description: "Specifies that the method is a RecallNotificationHandler method, which handles Recall statements."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/04/2021
+ms.date: 06/08/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,7 +18,7 @@ author: SusanneWindfeldPedersen
 # RecallNotificationHandler Attribute
 > **Version**: _Available or changed with runtime version 1.0._
 
-TODO:Add documentation
+Specifies that the method is a RecallNotificationHandler method, which handles Recall statements.
 
 ## Syntax
 ```
@@ -29,7 +29,7 @@ TODO:Add documentation
 
 *HandlerIsOptional*  
 &emsp;Type: [Boolean](../methods-auto/boolean/boolean-data-type.md)  
-TODO:Add documentation  
+Specifies whether the notification handler method is optional.  
 
 
 ## Applies To

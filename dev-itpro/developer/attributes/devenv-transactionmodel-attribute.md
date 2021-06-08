@@ -1,9 +1,9 @@
 ---
 title: "TransactionModel Attribute"
-description: "TODO:Add documentation"
+description: "Specifies whether data is committed to the database during execution of a test method and whether transactions are rolled back at the end of a test method."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/04/2021
+ms.date: 06/08/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,7 +18,7 @@ author: SusanneWindfeldPedersen
 # TransactionModel Attribute
 > **Version**: _Available or changed with runtime version 1.0._
 
-TODO:Add documentation
+Specifies whether data is committed to the database during execution of a test method and whether transactions are rolled back at the end of a test method.
 
 ## Syntax
 ```
@@ -29,7 +29,7 @@ TODO:Add documentation
 
 *TransactionModel*  
 &emsp;Type: [TransactionModel](../methods-auto/transactionmodel/transactionmodel-option.md)  
-TODO:Add documentation  
+The test transaction model used in the test method.  
 
 
 ## Applies To

@@ -1,9 +1,9 @@
 ---
 title: "SuppressDispose Attribute"
-description: "TODO:Add documentation"
+description: "Specifies if a Microsoft .NET Framework object that is defined by a DotNet variable is disposed when it goes out of scope."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/04/2021
+ms.date: 06/08/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,12 +18,13 @@ author: SusanneWindfeldPedersen
 # SuppressDispose Attribute
 > **Version**: _Available or changed with runtime version 1.0._
 
-TODO:Add documentation
+Specifies if a Microsoft .NET Framework object that is defined by a DotNet variable is disposed when it goes out of scope.
 
 ## Syntax
 ```
 [SuppressDispose()]
 ```
+
 
 ## Applies To
 

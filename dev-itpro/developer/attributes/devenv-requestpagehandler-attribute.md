@@ -1,9 +1,9 @@
 ---
 title: "RequestPageHandler Attribute"
-description: "TODO:Add documentation"
+description: "Specifies that the method is a RequestPageHandler method, which handles the request page of a specific report."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/04/2021
+ms.date: 06/08/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,12 +18,13 @@ author: SusanneWindfeldPedersen
 # RequestPageHandler Attribute
 > **Version**: _Available or changed with runtime version 1.0._
 
-TODO:Add documentation
+Specifies that the method is a RequestPageHandler method, which handles the request page of a specific report.
 
 ## Syntax
 ```
 [RequestPageHandler()]
 ```
+
 
 ## Applies To
 

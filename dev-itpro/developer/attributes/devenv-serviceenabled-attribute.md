@@ -1,9 +1,9 @@
 ---
 title: "ServiceEnabled Attribute"
-description: "TODO:Add documentation"
+description: "Exposes a method to the service."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/04/2021
+ms.date: 06/08/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,12 +18,13 @@ author: SusanneWindfeldPedersen
 # ServiceEnabled Attribute
 > **Version**: _Available or changed with runtime version 2.0._
 
-TODO:Add documentation
+Exposes a method to the service.
 
 ## Syntax
 ```
 [ServiceEnabled()]
 ```
+
 
 ## Applies To
 

@@ -1,9 +1,9 @@
 ---
 title: "TestPermissions Attribute"
-description: "TODO:Add documentation"
+description: "Specifies a value that can be used to determine which permission sets are used on tests that are run by a test method."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/04/2021
+ms.date: 06/08/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,7 +18,7 @@ author: SusanneWindfeldPedersen
 # TestPermissions Attribute
 > **Version**: _Available or changed with runtime version 1.0._
 
-TODO:Add documentation
+Specifies a value that can be used to determine which permission sets are used on tests that are run by a test method.
 
 ## Syntax
 ```
@@ -29,7 +29,7 @@ TODO:Add documentation
 
 *TestPermissions*  
 &emsp;Type: [TestPermissions](../methods-auto/testpermissions/testpermissions-option.md)  
-TODO:Add documentation  
+Specifies the permission sets used on tests that are run by the test method.  
 
 
 ## Applies To

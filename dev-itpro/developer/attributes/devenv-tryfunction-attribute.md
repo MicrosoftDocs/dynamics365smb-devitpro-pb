@@ -1,9 +1,9 @@
 ---
 title: "TryFunction Attribute"
-description: "TODO:Add documentation"
+description: "Specifies the method to be a try method, which can be used to catch and handle errors and exceptions that occur when code is run."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/04/2021
+ms.date: 06/08/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,12 +18,13 @@ author: SusanneWindfeldPedersen
 # TryFunction Attribute
 > **Version**: _Available or changed with runtime version 1.0._
 
-TODO:Add documentation
+Specifies the method to be a try method, which can be used to catch and handle errors and exceptions that occur when code is run.
 
 ## Syntax
 ```
 [TryFunction()]
 ```
+
 
 ## Applies To
 

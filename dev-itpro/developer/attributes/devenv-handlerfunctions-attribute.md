@@ -1,9 +1,9 @@
 ---
 title: "HandlerFunctions Attribute"
-description: "TODO:Add documentation"
+description: "Specifies the handler methods that are used by the test method."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/04/2021
+ms.date: 06/08/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,7 +18,7 @@ author: SusanneWindfeldPedersen
 # HandlerFunctions Attribute
 > **Version**: _Available or changed with runtime version 1.0._
 
-TODO:Add documentation
+Specifies the handler methods that are used by the test method.
 
 ## Syntax
 ```
@@ -29,7 +29,7 @@ TODO:Add documentation
 
 *HandlerNames*  
 &emsp;Type: [String](../methods-auto/string/string-data-type.md)  
-TODO:Add documentation  
+The names of the handler methods used by the test method.  
 
 
 ## Applies To
