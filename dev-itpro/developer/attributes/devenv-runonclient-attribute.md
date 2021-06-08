@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 Sets whether a .NET object that is defined by a variable is run on the Business Central Web client or Dynamics 365 Business Central service.
 
+> [!NOTE]
+> This method is supported only in Business Central on-premises.
+
 ## Applies To
 
 - Variable

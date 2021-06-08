@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 Sets whether a DotNet variable subscribes to the events published by a .NET Framework type.
 
+> [!NOTE]
+> This method is supported only in Business Central on-premises.
+
 ## Applies To
 
 - Variable

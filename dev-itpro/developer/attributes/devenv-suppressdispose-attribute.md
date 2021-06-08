@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 Specifies if a Microsoft .NET Framework object that is defined by a DotNet variable is disposed when it goes out of scope.
 
+> [!NOTE]
+> This method is supported only in Business Central on-premises.
+
 ## Applies To
 
 - Variable
