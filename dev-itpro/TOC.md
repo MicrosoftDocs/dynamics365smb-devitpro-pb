@@ -581,9 +581,6 @@
 #### [Progress Windows, Message, Error, and Confirm Methods](developer/devenv-progress-windows-message-error-and-confirm-methods.md)
 #### [Test Codeunits and Text Methods](developer/devenv-test-codeunits-and-test-methods.md)
 #### [Method Attributes](developer/methods/devenv-method-attributes.md)
-#### [Procedure Overload](developer/methods/devenv-overload-method.md)
-#### [Joker Data Type](developer/methods/devenv-joker-datatype.md)
-#### Attributes Types
 <!-- [//]: # (START>DO_NOT_EDIT_ATTRIBUTES)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.) -->
@@ -622,6 +619,8 @@
 ##### [TryFunction Attribute](developer/attributes/devenv-tryfunction-attribute.md)
 ##### [WithEvents Attribute](developer/attributes/devenv-withevents-attribute.md)
 <!-- [//]: # (IMPORTANT: END>DO_NOT_EDIT_ATTRIBUTES) -->
+#### [Procedure Overload](developer/methods/devenv-overload-method.md)
+#### [Joker Data Type](developer/methods/devenv-joker-datatype.md)
 #### Option Types
 <!-- [//]: # (START>DO_NOT_EDIT_METHODS)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
