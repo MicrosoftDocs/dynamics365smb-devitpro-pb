@@ -1,9 +1,9 @@
 ---
 title: "Report.RDLCLayout Method"
-description: "Gets the RDLC layout that is used on a report and returns it as a data stream.The method has an instance call and a static call. The following code shows the syntax of the RDLC method. The first line of code is the syntax for an instance method call. The second line of code is the syntax for a static method call."
+description: "Gets the RDLC layout that is used on a report and returns it as a data stream."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/04/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # Report.RDLCLayout Method
 > **Version**: _Available or changed with runtime version 1.0._
 
-Gets the RDLC layout that is used on a report and returns it as a data stream.The method has an instance call and a static call. The following code shows the syntax of the RDLC method. The first line of code is the syntax for an instance method call. The second line of code is the syntax for a static method call.
+Gets the RDLC layout that is used on a report and returns it as a data stream.
 
 
 ## Syntax

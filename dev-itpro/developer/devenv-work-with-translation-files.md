@@ -11,7 +11,9 @@ author: SusanneWindfeldPedersen
 
 # Working with Translation Files
 
-[!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] is multilanguage enabled, which means that you can display the user interface (UI) in different languages. In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] this is done using XLIFF files, which is a standardized format used for computer-based translations. 
+[!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] is multi-language enabled, which means that you can display the user interface (UI) in different languages. In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] this is done using XLIFF files, which is a standardized format used for computer-based translations.
+
+For an overview of how translations are applied, see [Translations Overview](devenv-translations-overview.md).
 
 ## Generating the XLIFF file
 
@@ -121,7 +123,39 @@ When the extension is built and published, you change the language of [!INCLUDE[
 
 ## Translating other extensions
 
-To translate other extensions, for example, adding translations to the Base Application, you must reference the project to be translated using the `dependencies` section in the app.json file. For more information, see [JSON Files](devenv-json-files.md). When you have the dependencies added, you can add xliff files in your current project that translates the object captions of the referenced extension. Create a directory named **Translations** in the root of the extension, and place the translated xliff file there. When your extension is then built and published, change the language of [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] to view the UI in the translated language. 
+To translate other extensions, for example, when adding translations to the Base Application, you must reference the project to be translated using the `dependencies` section in the `app.json` file. For more information, see [JSON Files](devenv-json-files.md). When the dependencies are set, you can add xliff files in your current project that translates the object captions of the referenced extension. Create a directory named **Translations** in the root of the extension, and place the translated xliff file there. When your extension is then built and published, change the language of [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] to view the UI in the translated language. 
+
+> [!NOTE]  
+> When translating other extensions make sure that the attribute `original` in the `<file>` element in the xliff file is **not** set to the name of the current app, otherwise translations are only used to translate labels in the same app. 
+>
+> For apps where translations are meant to translate the current app, the generated xliff file will have the correct value of the app name. 
+
+
+### Use the `<trans-unit id>` of the label where it was defined
+
+In order to translate other apps, you must use the `<trans-unit id>` of the original property, not the one of an extension object, because that might have been modified.
+
+If `MyPage` defined as:
+
+```al
+page 50000 MyPage {
+  Caption = 'Base Page'
+}
+```
+
+has `<trans-unit id>` for the page corresponding to `Page 2931038265 - Property 2879900210`.
+
+And the following page extension of `MyPage` called `MyPageExtension`:
+
+```al
+pageextension 50000 MyPageExtension extends MyPage
+{
+    Caption = 'Extension Page';
+}
+
+```
+
+has `<trans-unit id>` for the page extension corresponding to `PageExtension 1716690578 - Property 2879900210`, then if you want to change the caption on the page, you must use the ID `Page 2931038265 - Property 2879900210`, which is the `<trans-unit id>` of the original property.
 
 
 <!-- removing bug 394765
