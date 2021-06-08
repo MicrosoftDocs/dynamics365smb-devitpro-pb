@@ -3,7 +3,7 @@ title: "Record.FieldError Method"
 description: "Stops the execution of the code causing a run-time error, and creates an error message for a field."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,13 +27,13 @@ Stops the execution of the code causing a run-time error, and creates an error m
 ## Parameters
 *Record*  
 &emsp;Type: [Record](record-data-type.md)  
-An instance of the [Record](record-data-type.md) data type.
+An instance of the [Record](record-data-type.md) data type.  
 
 *Field*  
 &emsp;Type: [Any](../any/any-data-type.md)  
 The field for which you want to create an error message.
           
-*Text*  
+*[Optional] Text*  
 &emsp;Type: [String](../string/string-data-type.md)  
 Use this optional parameter to include the text of the error message. If you do not use this parameter, then default text is used as shown in the following examples. You can use backslashes (\\) to break lines.
           

@@ -3,7 +3,7 @@ title: "HttpClient.AddCertificate Method"
 description: "Adds a certificate to the HttpClient class."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,12 +27,12 @@ Adds a certificate to the HttpClient class.
 ## Parameters
 *HttpClient*  
 &emsp;Type: [HttpClient](httpclient-data-type.md)  
-An instance of the [HttpClient](httpclient-data-type.md) data type.
+An instance of the [HttpClient](httpclient-data-type.md) data type.  
 
 *Certificate*  
 &emsp;Type: [String](../string/string-data-type.md)  
 The Base64 encoded certificate.  
-*Password*  
+*[Optional] Password*  
 &emsp;Type: [String](../string/string-data-type.md)  
 The certificate password.  
 

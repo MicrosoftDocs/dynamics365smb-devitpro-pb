@@ -3,7 +3,7 @@ title: "File.CreateInStream Method"
 description: "Creates an InStream object for a file. This enables you to import or read data from the file."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -31,7 +31,7 @@ Creates an InStream object for a file. This enables you to import or read data f
 ## Parameters
 *File*  
 &emsp;Type: [File](file-data-type.md)  
-An instance of the [File](file-data-type.md) data type.
+An instance of the [File](file-data-type.md) data type.  
 
 *InStream*  
 &emsp;Type: [InStream](../instream/instream-data-type.md)  

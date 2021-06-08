@@ -3,7 +3,7 @@ title: "FieldRef.FieldError Method"
 description: "Stops the execution of the code, causing a run-time error, and creates an error message for a field."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,9 +27,9 @@ Stops the execution of the code, causing a run-time error, and creates an error 
 ## Parameters
 *FieldRef*  
 &emsp;Type: [FieldRef](fieldref-data-type.md)  
-An instance of the [FieldRef](fieldref-data-type.md) data type.
+An instance of the [FieldRef](fieldref-data-type.md) data type.  
 
-*Text*  
+*[Optional] Text*  
 &emsp;Type: [String](../string/string-data-type.md)  
 Use this optional parameter to include the text of the error message. If this parameter is not present, default text will be used.  
 

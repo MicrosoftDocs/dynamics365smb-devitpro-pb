@@ -3,7 +3,7 @@ title: "TaskScheduler.SetTaskReady Method"
 description: "Sets a task that runs a codeunit to the ready state. The task will not run unless it is in the ready state."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,13 +28,13 @@ Sets a task that runs a codeunit to the ready state. The task will not run unles
 *Task*  
 &emsp;Type: [Guid](../guid/guid-data-type.md)  
   
-*NotBefore*  
+*[Optional] NotBefore*  
 &emsp;Type: [DateTime](../datetime/datetime-data-type.md)  
   
 
 
 ## Return Value
-*Ok*  
+*[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 
 

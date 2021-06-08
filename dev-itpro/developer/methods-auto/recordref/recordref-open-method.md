@@ -3,7 +3,7 @@ title: "RecordRef.Open Method"
 description: "Causes a RecordRef variable to refer to a table, which is identified by its number in a particular company."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,15 +27,15 @@ Causes a RecordRef variable to refer to a table, which is identified by its numb
 ## Parameters
 *RecordRef*  
 &emsp;Type: [RecordRef](recordref-data-type.md)  
-An instance of the [RecordRef](recordref-data-type.md) data type.
+An instance of the [RecordRef](recordref-data-type.md) data type.  
 
 *No*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The number of the table.  
-*Temp*  
+*[Optional] Temp*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
   
-*CompanyName*  
+*[Optional] CompanyName*  
 &emsp;Type: [String](../string/string-data-type.md)  
 The name of the company to which you want to change. If you omit this parameter, the current company is used.  
 

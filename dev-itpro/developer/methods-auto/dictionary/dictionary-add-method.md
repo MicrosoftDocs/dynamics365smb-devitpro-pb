@@ -3,7 +3,7 @@ title: "Dictionary.Add Method"
 description: "Adds the specified key and value to the dictionary."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,7 @@ Adds the specified key and value to the dictionary.
 ## Parameters
 *Dictionary*  
 &emsp;Type: [Dictionary](dictionary-data-type.md)  
-An instance of the [Dictionary](dictionary-data-type.md) data type.
+An instance of the [Dictionary](dictionary-data-type.md) data type.  
 
 *Key*  
 &emsp;Type: [TKey](dictionary-data-type.md)  
@@ -39,7 +39,7 @@ The value of the element to add.
 
 
 ## Return Value
-*Ok*  
+*[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 

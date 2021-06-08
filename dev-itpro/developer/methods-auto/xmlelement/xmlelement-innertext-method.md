@@ -3,7 +3,7 @@ title: "XmlElement.InnerText Method"
 description: "Gets the concatenated values of the node and all its child nodes."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,7 +30,7 @@ Value :=   XmlElement.InnerText()
 ## Parameters
 *XmlElement*  
 &emsp;Type: [XmlElement](xmlelement-data-type.md)  
-An instance of the [XmlElement](xmlelement-data-type.md) data type.
+An instance of the [XmlElement](xmlelement-data-type.md) data type.  
 
 ## Return Value
 *Value*  

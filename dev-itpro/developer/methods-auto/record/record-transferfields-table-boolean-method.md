@@ -3,7 +3,7 @@ title: "Record.TransferFields Method"
 description: "Copies all matching fields in one record to another record."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,13 +27,13 @@ Copies all matching fields in one record to another record.
 ## Parameters
 *Record*  
 &emsp;Type: [Record](record-data-type.md)  
-An instance of the [Record](record-data-type.md) data type.
+An instance of the [Record](record-data-type.md) data type.  
 
 *FromRecord*  
 &emsp;Type: [Record](record-data-type.md)  
 The record from which to copy.
           
-*InitPrimaryKeyFields*  
+*[Optional] InitPrimaryKeyFields*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 Default: true
 If this parameter is true and the records are in the same table, both the timestamp and the Primary Key fields of the destination record will be changed.

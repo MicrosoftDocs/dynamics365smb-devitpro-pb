@@ -3,7 +3,7 @@ title: "Record.Find Method"
 description: "Finds a record in a table that is based on the values stored in keys."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,9 +27,9 @@ Finds a record in a table that is based on the values stored in keys.
 ## Parameters
 *Record*  
 &emsp;Type: [Record](record-data-type.md)  
-An instance of the [Record](record-data-type.md) data type.
+An instance of the [Record](record-data-type.md) data type.  
 
-*Which*  
+*[Optional] Which*  
 &emsp;Type: [String](../string/string-data-type.md)  
 Specifies how to perform the search. The table is searched until either a record  is found or there are no more records. Each character in this string can be present only one time. You can combine the '=', '\<', and '\>' characters. You can use the following characters:
 -   =  to search for a record that equals the key values (default)
@@ -42,7 +42,7 @@ If this parameter contains '=', '\>' or '\<', then you must assign value to all 
 
 
 ## Return Value
-*Ok*  
+*[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 

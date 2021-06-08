@@ -3,7 +3,7 @@ title: "TestFilter.SetFilter Method"
 description: "Applies a filter to the specified field on a test page."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,7 @@ Applies a filter to the specified field on a test page.
 ## Parameters
 *TestFilter*  
 &emsp;Type: [TestFilter](testfilter-data-type.md)  
-An instance of the [TestFilter](testfilter-data-type.md) data type.
+An instance of the [TestFilter](testfilter-data-type.md) data type.  
 
 *Field*  
 &emsp;Type: [TestFilterField](../testfilterfield/testfilterfield-data-type.md)  

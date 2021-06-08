@@ -3,7 +3,7 @@ title: "TestField.Value Method"
 description: "Gets or sets the value of this field."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,15 +29,15 @@ Gets or sets the value of this field.
 ## Parameters
 *TestField*  
 &emsp;Type: [TestField](testfield-data-type.md)  
-An instance of the [TestField](testfield-data-type.md) data type.
+An instance of the [TestField](testfield-data-type.md) data type.  
 
-*Value*  
+*[Optional] Value*  
 &emsp;Type: [String](../string/string-data-type.md)  
 The new value to set for this field.  
 
 
 ## Return Value
-*Value*  
+*[Optional] Value*  
 &emsp;Type: [String](../string/string-data-type.md)  
 The value of this field.
 

@@ -3,7 +3,7 @@ title: "XmlElement.ReplaceNodes Method"
 description: "Replaces the children nodes of this element with the specified content."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,7 @@ Replaces the children nodes of this element with the specified content.
 ## Parameters
 *XmlElement*  
 &emsp;Type: [XmlElement](xmlelement-data-type.md)  
-An instance of the [XmlElement](xmlelement-data-type.md) data type.
+An instance of the [XmlElement](xmlelement-data-type.md) data type.  
 
 *Content*  
 &emsp;Type: [Any](../any/any-data-type.md)  
@@ -35,7 +35,7 @@ The content that replaces the children nodes.
 
 
 ## Return Value
-*Ok*  
+*[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 

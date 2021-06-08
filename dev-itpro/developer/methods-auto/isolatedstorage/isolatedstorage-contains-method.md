@@ -3,7 +3,7 @@ title: "IsolatedStorage.Contains Method"
 description: "Determines whether the storage contains a value with the specified key."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,7 +29,7 @@ HasValue :=   IsolatedStorage.Contains(Key: String [, DataScope: DataScope])
 &emsp;Type: [String](../string/string-data-type.md)  
 The key to locate in the storage.
         
-*DataScope*  
+*[Optional] DataScope*  
 &emsp;Type: [DataScope](../datascope/datascope-option.md)  
 The scope in which to check for the existence of a value with the given key. If a value is not passed in, the default value DataScope::Module will be used.  
 

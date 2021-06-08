@@ -3,7 +3,7 @@ title: "TestPart.GetValidationError Method"
 description: "Gets the list of all validation error that occurred on a test page as a string."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,9 +27,9 @@ Error :=   TestPart.GetValidationError([Index: Integer])
 ## Parameters
 *TestPart*  
 &emsp;Type: [TestPart](testpart-data-type.md)  
-An instance of the [TestPart](testpart-data-type.md) data type.
+An instance of the [TestPart](testpart-data-type.md) data type.  
 
-*Index*  
+*[Optional] Index*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The index of the validation error that occurred on the test page.  
 

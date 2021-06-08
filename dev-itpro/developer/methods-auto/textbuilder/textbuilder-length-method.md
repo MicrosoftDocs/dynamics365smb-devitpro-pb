@@ -3,7 +3,7 @@ title: "TextBuilder.Length Method"
 description: "Gets or sets the length of this TextBuilder instance."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,15 +29,15 @@ Gets or sets the length of this TextBuilder instance.
 ## Parameters
 *TextBuilder*  
 &emsp;Type: [TextBuilder](textbuilder-data-type.md)  
-An instance of the [TextBuilder](textbuilder-data-type.md) data type.
+An instance of the [TextBuilder](textbuilder-data-type.md) data type.  
 
-*NewLength*  
+*[Optional] NewLength*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The new length of this TextBuilder instance.  
 
 
 ## Return Value
-*OldLength*  
+*[Optional] OldLength*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The length of this TextBuilder instance.
 

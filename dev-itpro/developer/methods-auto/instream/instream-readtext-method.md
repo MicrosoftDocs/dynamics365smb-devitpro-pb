@@ -3,7 +3,7 @@ title: "InStream.ReadText Method"
 description: "Reads text from an InStream object."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,18 +27,18 @@ Reads text from an InStream object.
 ## Parameters
 *InStream*  
 &emsp;Type: [InStream](instream-data-type.md)  
-An instance of the [InStream](instream-data-type.md) data type.
+An instance of the [InStream](instream-data-type.md) data type.  
 
 *Variable*  
 &emsp;Type: [Text](../text/text-data-type.md)  
 The variable that receives the characters that were read.  
-*Length*  
+*[Optional] Length*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The number of characters to be read. If you do not specify this parameter, the maximum length of the string is used.  
 
 
 ## Return Value
-*Read*  
+*[Optional] Read*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The number of characters that were read. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 

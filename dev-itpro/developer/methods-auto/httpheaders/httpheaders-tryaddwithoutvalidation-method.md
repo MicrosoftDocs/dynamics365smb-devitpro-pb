@@ -3,7 +3,7 @@ title: "HttpHeaders.TryAddWithoutValidation Method"
 description: "Adds the specified header and its value into the HttpHeaders collection. Doesn't validate the provided value."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,7 @@ Adds the specified header and its value into the HttpHeaders collection. Doesn't
 ## Parameters
 *HttpHeaders*  
 &emsp;Type: [HttpHeaders](httpheaders-data-type.md)  
-An instance of the [HttpHeaders](httpheaders-data-type.md) data type.
+An instance of the [HttpHeaders](httpheaders-data-type.md) data type.  
 
 *Name*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -38,7 +38,7 @@ The content of the header.
 
 
 ## Return Value
-*Ok*  
+*[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the value was added successfully, otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 

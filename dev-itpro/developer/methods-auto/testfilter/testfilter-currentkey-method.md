@@ -3,7 +3,7 @@ title: "TestFilter.CurrentKey Method"
 description: "Gets the current key of a data set that is displayed on a test page."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,7 +30,7 @@ CurrentKey :=   TestFilter.CurrentKey()
 ## Parameters
 *TestFilter*  
 &emsp;Type: [TestFilter](testfilter-data-type.md)  
-An instance of the [TestFilter](testfilter-data-type.md) data type.
+An instance of the [TestFilter](testfilter-data-type.md) data type.  
 
 ## Return Value
 *CurrentKey*  

@@ -3,7 +3,7 @@ title: "FilterPageBuilder.PageCaption Method"
 description: " Gets or sets the FilterPageBuilder UI caption. Defaults to the resource text if not explicitly set."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,15 +29,15 @@ author: SusanneWindfeldPedersen
 ## Parameters
 *FilterPageBuilder*  
 &emsp;Type: [FilterPageBuilder](filterpagebuilder-data-type.md)  
-An instance of the [FilterPageBuilder](filterpagebuilder-data-type.md) data type.
+An instance of the [FilterPageBuilder](filterpagebuilder-data-type.md) data type.  
 
-*PageCaption*  
+*[Optional] PageCaption*  
 &emsp;Type: [String](../string/string-data-type.md)  
 The value to set for the FilterPageBuilder UI caption.  
 
 
 ## Return Value
-*PageCaption*  
+*[Optional] PageCaption*  
 &emsp;Type: [String](../string/string-data-type.md)  
 The current value of the FilterPageBuilder UI caption.
 

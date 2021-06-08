@@ -3,7 +3,7 @@ title: "RequestPage.Caption Method"
 description: "Shows the caption in the title bar. For example, the default value in English (United States) is the same as the name of the page."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,15 +29,15 @@ Shows the caption in the title bar. For example, the default value in English (U
 ## Parameters
 *RequestPage*  
 &emsp;Type: [RequestPage](requestpage-data-type.md)  
-An instance of the [RequestPage](requestpage-data-type.md) data type.
+An instance of the [RequestPage](requestpage-data-type.md) data type.  
 
-*NewCaption*  
+*[Optional] NewCaption*  
 &emsp;Type: [String](../string/string-data-type.md)  
   
 
 
 ## Return Value
-*Caption*  
+*[Optional] Caption*  
 &emsp;Type: [String](../string/string-data-type.md)  
 
 

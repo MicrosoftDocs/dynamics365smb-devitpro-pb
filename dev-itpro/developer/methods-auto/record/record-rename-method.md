@@ -3,7 +3,7 @@ title: "Record.Rename Method"
 description: "Changes the value of a primary key in a table."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,18 +27,18 @@ Changes the value of a primary key in a table.
 ## Parameters
 *Record*  
 &emsp;Type: [Record](record-data-type.md)  
-An instance of the [Record](record-data-type.md) data type.
+An instance of the [Record](record-data-type.md) data type.  
 
 *Value1*  
 &emsp;Type: [Any](../any/any-data-type.md)  
   
-*Value2*  
+*[Optional] Value2*  
 &emsp;Type: [Any](../any/any-data-type.md)  
   
 
 
 ## Return Value
-*Ok*  
+*[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 

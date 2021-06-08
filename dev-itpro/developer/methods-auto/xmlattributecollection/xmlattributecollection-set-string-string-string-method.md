@@ -3,7 +3,7 @@ title: "XmlAttributeCollection.Set Method"
 description: "Sets the value of the specified attribute or creates it if is not part of the collection."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,7 @@ Sets the value of the specified attribute or creates it if is not part of the co
 ## Parameters
 *XmlAttributeCollection*  
 &emsp;Type: [XmlAttributeCollection](xmlattributecollection-data-type.md)  
-An instance of the [XmlAttributeCollection](xmlattributecollection-data-type.md) data type.
+An instance of the [XmlAttributeCollection](xmlattributecollection-data-type.md) data type.  
 
 *LocalName*  
 &emsp;Type: [String](../string/string-data-type.md)  
