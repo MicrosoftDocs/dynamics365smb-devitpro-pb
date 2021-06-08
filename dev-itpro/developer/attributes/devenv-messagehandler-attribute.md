@@ -20,18 +20,19 @@ author: SusanneWindfeldPedersen
 
 Specifies that the method is a MessageHandler method, which handles Message statements.
 
-## Syntax
-```
-[MessageHandler()]
-```
-
-
 ## Applies To
 
 - Method
 
 > [!NOTE]
-> The MessageHandler attribute can only be set inside codeunits with the SubType property set to Test.
+> The MessageHandler attribute can only be set inside codeunits with the **SubType property** set to Test.
+
+
+## Syntax
+```
+[MessageHandler()]
+```
+
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

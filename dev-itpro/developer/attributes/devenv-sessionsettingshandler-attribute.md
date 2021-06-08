@@ -3,7 +3,7 @@ title: "SessionSettingsHandler Attribute"
 description: "Specifies a session settings handler function"
 ms.author: solsen
 ms.custom: na
-ms.date: 06/04/2021
+ms.date: 06/08/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,17 +20,19 @@ author: SusanneWindfeldPedersen
 
 Specifies a session settings handler function
 
-## Syntax
-```
-[SessionSettingsHandler()]
-```
-
 ## Applies To
 
 - Method
 
 > [!NOTE]
-> The SessionSettingsHandler attribute can only be set inside codeunits with the SubType property set to Test.
+> The SessionSettingsHandler attribute can only be set inside codeunits with the **SubType property** set to Test.
+
+
+## Syntax
+```
+[SessionSettingsHandler()]
+```
+
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

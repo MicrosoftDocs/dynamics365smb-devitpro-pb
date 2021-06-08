@@ -20,15 +20,16 @@ author: SusanneWindfeldPedersen
 
 Sets whether a .NET object that is defined by a variable is run on the Business Central Web client or Dynamics 365 Business Central service.
 
+## Applies To
+
+- Variable
+
+
+
 ## Syntax
 ```
 [RunOnClient()]
 ```
-
-
-## Applies To
-
-- Variable
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

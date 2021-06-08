@@ -20,15 +20,16 @@ author: SusanneWindfeldPedersen
 
 Is used implicitly when a method does not have an attribute set.
 
+## Applies To
+
+- Method
+
+
+
 ## Syntax
 ```
 [None()]
 ```
-
-
-## Applies To
-
-- Method
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

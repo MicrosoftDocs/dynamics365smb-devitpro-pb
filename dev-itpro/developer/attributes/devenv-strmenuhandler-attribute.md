@@ -20,18 +20,19 @@ author: SusanneWindfeldPedersen
 
 Specifies that the method is a StrMenuHandler method, which handles StrMenu statements.
 
-## Syntax
-```
-[StrMenuHandler()]
-```
-
-
 ## Applies To
 
 - Method
 
 > [!NOTE]
-> The StrMenuHandler attribute can only be set inside codeunits with the SubType property set to Test.
+> The StrMenuHandler attribute can only be set inside codeunits with the **SubType property** set to Test.
+
+
+## Syntax
+```
+[StrMenuHandler()]
+```
+
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

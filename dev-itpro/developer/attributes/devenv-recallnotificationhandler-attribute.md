@@ -20,6 +20,14 @@ author: SusanneWindfeldPedersen
 
 Specifies that the method is a RecallNotificationHandler method, which handles Recall statements.
 
+## Applies To
+
+- Method
+
+> [!NOTE]
+> The RecallNotificationHandler attribute can only be set inside codeunits with the **SubType property** set to Test.
+
+
 ## Syntax
 ```
 [RecallNotificationHandler([HandlerIsOptional: Boolean])]
@@ -31,13 +39,6 @@ Specifies that the method is a RecallNotificationHandler method, which handles R
 &emsp;Type: [Boolean](../methods-auto/boolean/boolean-data-type.md)  
 Specifies whether the notification handler method is optional.  
 
-
-## Applies To
-
-- Method
-
-> [!NOTE]
-> The RecallNotificationHandler attribute can only be set inside codeunits with the SubType property set to Test.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

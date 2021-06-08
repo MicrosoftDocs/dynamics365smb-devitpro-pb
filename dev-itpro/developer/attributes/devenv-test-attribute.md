@@ -20,18 +20,19 @@ author: SusanneWindfeldPedersen
 
 Specifies that the method is a test method.
 
-## Syntax
-```
-[Test()]
-```
-
-
 ## Applies To
 
 - Method
 
 > [!NOTE]
-> The Test attribute can only be set inside codeunits with the SubType property set to Test.
+> The Test attribute can only be set inside codeunits with the **SubType property** set to Test.
+
+
+## Syntax
+```
+[Test()]
+```
+
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

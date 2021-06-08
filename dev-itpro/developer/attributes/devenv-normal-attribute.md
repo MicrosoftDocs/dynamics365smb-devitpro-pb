@@ -20,15 +20,18 @@ author: SusanneWindfeldPedersen
 
 Specifies that the method is a Normal method.
 
+## Applies To
+
+- Method
+
+> [!NOTE]
+> The Normal attribute can only be set inside codeunits.
+
+
 ## Syntax
 ```
 [Normal()]
 ```
-
-
-## Applies To
-
-- Method
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

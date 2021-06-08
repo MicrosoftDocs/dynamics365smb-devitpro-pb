@@ -20,18 +20,19 @@ author: SusanneWindfeldPedersen
 
 Specifies that the method is a FilterPageHandler method, which handles StrMenu statements.
 
-## Syntax
-```
-[FilterPageHandler()]
-```
-
-
 ## Applies To
 
 - Method
 
 > [!NOTE]
-> The FilterPageHandler attribute can only be set inside codeunits with the SubType property set to Test.
+> The FilterPageHandler attribute can only be set inside codeunits with the **SubType property** set to Test.
+
+
+## Syntax
+```
+[FilterPageHandler()]
+```
+
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

@@ -20,15 +20,16 @@ author: SusanneWindfeldPedersen
 
 Specifies if a Microsoft .NET Framework object that is defined by a DotNet variable is disposed when it goes out of scope.
 
+## Applies To
+
+- Variable
+
+
+
 ## Syntax
 ```
 [SuppressDispose()]
 ```
-
-
-## Applies To
-
-- Variable
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

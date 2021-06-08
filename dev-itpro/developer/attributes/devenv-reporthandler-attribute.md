@@ -20,18 +20,19 @@ author: SusanneWindfeldPedersen
 
 Specifies that the method is a ReportHandler method, which handles specific reports.
 
-## Syntax
-```
-[ReportHandler()]
-```
-
-
 ## Applies To
 
 - Method
 
 > [!NOTE]
-> The ReportHandler attribute can only be set inside codeunits with the SubType property set to Test.
+> The ReportHandler attribute can only be set inside codeunits with the **SubType property** set to Test.
+
+
+## Syntax
+```
+[ReportHandler()]
+```
+
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

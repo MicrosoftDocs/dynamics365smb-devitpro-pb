@@ -20,18 +20,19 @@ author: SusanneWindfeldPedersen
 
 Specifies that the method is a ModalPageHandler method, which handles specific pages that are run modally.
 
-## Syntax
-```
-[ModalPageHandler()]
-```
-
-
 ## Applies To
 
 - Method
 
 > [!NOTE]
-> The ModalPageHandler attribute can only be set inside codeunits with the SubType property set to Test.
+> The ModalPageHandler attribute can only be set inside codeunits with the **SubType property** set to Test.
+
+
+## Syntax
+```
+[ModalPageHandler()]
+```
+
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

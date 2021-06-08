@@ -20,18 +20,19 @@ author: SusanneWindfeldPedersen
 
 Specifies that the method is a HyperLinkHandler method, which handles HyperLinkHandler statements.
 
-## Syntax
-```
-[HyperlinkHandler()]
-```
-
-
 ## Applies To
 
 - Method
 
 > [!NOTE]
-> The HyperlinkHandler attribute can only be set inside codeunits with the SubType property set to Test.
+> The HyperlinkHandler attribute can only be set inside codeunits with the **SubType property** set to Test.
+
+
+## Syntax
+```
+[HyperlinkHandler()]
+```
+
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

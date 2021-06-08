@@ -20,18 +20,19 @@ author: SusanneWindfeldPedersen
 
 Specifies that the method is a RequestPageHandler method, which handles the request page of a specific report.
 
-## Syntax
-```
-[RequestPageHandler()]
-```
-
-
 ## Applies To
 
 - Method
 
 > [!NOTE]
-> The RequestPageHandler attribute can only be set inside codeunits with the SubType property set to Test.
+> The RequestPageHandler attribute can only be set inside codeunits with the **SubType property** set to Test.
+
+
+## Syntax
+```
+[RequestPageHandler()]
+```
+
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

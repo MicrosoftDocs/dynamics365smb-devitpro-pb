@@ -20,15 +20,16 @@ author: SusanneWindfeldPedersen
 
 Sets whether the AL variable's value is included in the dataset.
 
+## Applies To
+
+- Variable
+
+
+
 ## Syntax
 ```
 [InDataSet()]
 ```
-
-
-## Applies To
-
-- Variable
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

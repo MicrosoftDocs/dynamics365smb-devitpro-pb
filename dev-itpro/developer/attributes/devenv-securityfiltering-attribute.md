@@ -20,6 +20,12 @@ author: SusanneWindfeldPedersen
 
 Specifies how security filters are applied to the record.
 
+## Applies To
+
+- Variable
+
+
+
 ## Syntax
 ```
 [SecurityFiltering(Kind: SecurityFilter)]
@@ -30,11 +36,6 @@ Specifies how security filters are applied to the record.
 *Kind*  
 &emsp;Type: [SecurityFilter](../methods-auto/securityfilter/securityfilter-option.md)  
 The security filters applied to the record.  
-
-
-## Applies To
-
-- Variable
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

@@ -20,6 +20,14 @@ author: SusanneWindfeldPedersen
 
 Specifies whether data is committed to the database during execution of a test method and whether transactions are rolled back at the end of a test method.
 
+## Applies To
+
+- Method
+
+> [!NOTE]
+> The TransactionModel attribute can only be set inside codeunits with the **SubType property** set to Test.
+
+
 ## Syntax
 ```
 [TransactionModel(TransactionModel: TransactionModel)]
@@ -31,13 +39,6 @@ Specifies whether data is committed to the database during execution of a test m
 &emsp;Type: [TransactionModel](../methods-auto/transactionmodel/transactionmodel-option.md)  
 The test transaction model used in the test method.  
 
-
-## Applies To
-
-- Method
-
-> [!NOTE]
-> The TransactionModel attribute can only be set inside codeunits with the SubType property set to Test.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

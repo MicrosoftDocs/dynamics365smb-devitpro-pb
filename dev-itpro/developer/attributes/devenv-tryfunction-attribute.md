@@ -20,15 +20,16 @@ author: SusanneWindfeldPedersen
 
 Specifies the method to be a try method, which can be used to catch and handle errors and exceptions that occur when code is run.
 
+## Applies To
+
+- Method
+
+
+
 ## Syntax
 ```
 [TryFunction()]
 ```
-
-
-## Applies To
-
-- Method
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

@@ -20,15 +20,16 @@ author: SusanneWindfeldPedersen
 
 Sets whether a DotNet variable subscribes to the events published by a .NET Framework type.
 
+## Applies To
+
+- Variable
+
+
+
 ## Syntax
 ```
 [WithEvents()]
 ```
-
-
-## Applies To
-
-- Variable
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

@@ -20,15 +20,16 @@ author: SusanneWindfeldPedersen
 
 Exposes a method to the service.
 
+## Applies To
+
+- Method
+
+
+
 ## Syntax
 ```
 [ServiceEnabled()]
 ```
-
-
-## Applies To
-
-- Method
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

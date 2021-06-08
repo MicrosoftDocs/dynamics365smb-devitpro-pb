@@ -20,18 +20,19 @@ author: SusanneWindfeldPedersen
 
 Specifies that the method is a ConfirmHandler method, which handles Confirm statements.
 
-## Syntax
-```
-[ConfirmHandler()]
-```
-
-
 ## Applies To
 
 - Method
 
 > [!NOTE]
-> The ConfirmHandler attribute can only be set inside codeunits with the SubType property set to Test.
+> The ConfirmHandler attribute can only be set inside codeunits with the **SubType property** set to Test.
+
+
+## Syntax
+```
+[ConfirmHandler()]
+```
+
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

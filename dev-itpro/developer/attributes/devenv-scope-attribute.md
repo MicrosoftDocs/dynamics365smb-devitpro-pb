@@ -20,6 +20,12 @@ author: SusanneWindfeldPedersen
 
 Specifies the scope of a method.
 
+## Applies To
+
+- Method
+
+
+
 ## Syntax
 ```
 [Scope(Kind: Text)]
@@ -30,11 +36,6 @@ Specifies the scope of a method.
 *Kind*  
 &emsp;Type: [Text](../methods-auto/text/text-data-type.md)  
 The scope of the method.  
-
-
-## Applies To
-
-- Method
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

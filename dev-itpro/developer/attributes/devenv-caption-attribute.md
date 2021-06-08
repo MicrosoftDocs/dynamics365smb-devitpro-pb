@@ -3,7 +3,7 @@ title: "Caption Attribute"
 description: "Specifies a caption for OData actions."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/04/2021
+ms.date: 06/08/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,6 +19,12 @@ author: SusanneWindfeldPedersen
 > **Version**: _Available or changed with runtime version 6.0._
 
 Specifies a caption for OData actions.
+
+## Applies To
+
+- Method
+
+
 
 ## Syntax
 ```
@@ -42,11 +48,6 @@ Specifies a comment for the translation.
 *MaxLength*  
 &emsp;Type: [Integer](../methods-auto/integer/integer-data-type.md)  
 Specifies the maximum length of the translation.  
-
-
-## Applies To
-
-- Method
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

@@ -20,18 +20,19 @@ author: SusanneWindfeldPedersen
 
 Specifies that the method is a PageHandler method, which handles specific pages that are not run modally.
 
-## Syntax
-```
-[PageHandler()]
-```
-
-
 ## Applies To
 
 - Method
 
 > [!NOTE]
-> The PageHandler attribute can only be set inside codeunits with the SubType property set to Test.
+> The PageHandler attribute can only be set inside codeunits with the **SubType property** set to Test.
+
+
+## Syntax
+```
+[PageHandler()]
+```
+
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
