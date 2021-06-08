@@ -20,6 +20,7 @@ author: SusanneWindfeldPedersen
 
 Specifies a caption for OData actions.
 
+
 ## Applies To
 
 - Method
@@ -35,19 +36,23 @@ Specifies a caption for OData actions.
 
 *Text*  
 &emsp;Type: [Text](../methods-auto/text/text-data-type.md)  
-Specifies the translation text.  
+Specifies the translation text.
+
 
 *Locked*  
 &emsp;Type: [Boolean](../methods-auto/boolean/boolean-data-type.md)  
-Specifies if the text should be translated.  
+Specifies if the text should be translated.
+
 
 *Comment*  
 &emsp;Type: [Text](../methods-auto/text/text-data-type.md)  
-Specifies a comment for the translation.  
+Specifies a comment for the translation.
+
 
 *MaxLength*  
 &emsp;Type: [Integer](../methods-auto/integer/integer-data-type.md)  
-Specifies the maximum length of the translation.  
+Specifies the maximum length of the translation.
+
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

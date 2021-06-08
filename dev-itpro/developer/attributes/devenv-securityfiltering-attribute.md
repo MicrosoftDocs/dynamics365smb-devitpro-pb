@@ -20,6 +20,7 @@ author: SusanneWindfeldPedersen
 
 Specifies how security filters are applied to the record.
 
+
 ## Applies To
 
 - Variable
@@ -35,7 +36,8 @@ Specifies how security filters are applied to the record.
 
 *Kind*  
 &emsp;Type: [SecurityFilter](../methods-auto/securityfilter/securityfilter-option.md)  
-The security filters applied to the record.  
+The security filters applied to the record.
+
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

@@ -20,6 +20,7 @@ author: SusanneWindfeldPedersen
 
 Specifies the event to which the method subscribes.
 
+
 ## Applies To
 
 - Method
@@ -37,27 +38,33 @@ Specifies the event to which the method subscribes.
 
 *ObjectType*  
 &emsp;Type: [ObjectType](../methods-auto/objecttype/objecttype-option.md)  
-Specifies the type of object that publishes the event to subscribe to.  
+Specifies the type of object that publishes the event to subscribe to.
+
 
 *ObjectId*  
 &emsp;Type: [Integer](../methods-auto/integer/integer-data-type.md)  
-Specifies the ID of the object that that publishes the event to subscribe to.  
+Specifies the ID of the object that that publishes the event to subscribe to.
+
 
 *EventName*  
 &emsp;Type: [Text](../methods-auto/text/text-data-type.md)  
-Specifies the name of method that publishes the event in the object that is specified by the ObjectId parameter.  
+Specifies the name of method that publishes the event in the object that is specified by the ObjectId parameter.
+
 
 *ElementName*  
 &emsp;Type: [Text](../methods-auto/text/text-data-type.md)  
-Specifies the table field that the trigger event pertains to.  
+Specifies the table field that the trigger event pertains to.
+
 
 *SkipOnMissingLicense*  
 &emsp;Type: [Boolean](../methods-auto/boolean/boolean-data-type.md)  
-Specifies what happens to the event subscriber method call when the Dynamics 365 Business Central license of the user account that is running the current session does not include the codeunit that contains the subscriber method.  
+Specifies what happens to the event subscriber method call when the Dynamics 365 Business Central license of the user account that is running the current session does not include the codeunit that contains the subscriber method.
+
 
 *SkipOnMissingPermission*  
 &emsp;Type: [Boolean](../methods-auto/boolean/boolean-data-type.md)  
-Specifies what happens to the subscriber method call when the user account that is running the current session does not have permission to the codeunit that contains the event subscriber method.  
+Specifies what happens to the subscriber method call when the user account that is running the current session does not have permission to the codeunit that contains the event subscriber method.
+
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

@@ -20,6 +20,7 @@ author: SusanneWindfeldPedersen
 
 Specifies the scope of a method.
 
+
 ## Applies To
 
 - Method
@@ -35,7 +36,18 @@ Specifies the scope of a method.
 
 *Kind*  
 &emsp;Type: [Text](../methods-auto/text/text-data-type.md)  
-The scope of the method.  
+The scope of the method.
+
+## Property Value
+
+|Value|Compatibility|
+|-----------|---------------------------------------|
+|**Solution**|Available or changed with runtime version 1.0 until version 4.0 where it was deprecated for the following reason: "The Solution scope is being deprecated. Use OnPrem instead."|
+|**Personalization**|Available or changed with runtime version 1.0 until version 4.0 where it was deprecated for the following reason: "The Personalization scope is being deprecated. Use Cloud instead."|
+|**Extension**|Available or changed with runtime version 1.0 until version 4.0 where it was deprecated for the following reason: "The Extension scope is being deprecated. Use Cloud instead."|
+|**Internal**|Available or changed with runtime version 1.0 until version 4.0 where it was deprecated for the following reason: "The Internal scope is being deprecated. Use OnPrem instead."|
+|**Cloud**|Available or changed with runtime version 4.0.|
+|**OnPrem**|Available or changed with runtime version 4.0.|
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

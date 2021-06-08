@@ -20,6 +20,7 @@ author: SusanneWindfeldPedersen
 
 Specifies the behavior of a commit call inside the method scope.
 
+
 ## Applies To
 
 - Method
@@ -35,7 +36,8 @@ Specifies the behavior of a commit call inside the method scope.
 
 *Behavior*  
 &emsp;Type: [CommitBehavior](../methods-auto/commitbehavior/commitbehavior-option.md)  
-Specifies if a commit must be ignored or throw an error. The options are: Ignored or Error.  
+Specifies if a commit must be ignored or throw an error. The options are: Ignored or Error.
+
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

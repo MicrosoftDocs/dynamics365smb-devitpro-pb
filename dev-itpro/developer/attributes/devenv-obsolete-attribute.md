@@ -20,6 +20,7 @@ author: SusanneWindfeldPedersen
 
 Specifies that the annotated symbol will be deprecated.
 
+
 ## Applies To
 
 - Method
@@ -38,11 +39,13 @@ Specifies that the annotated symbol will be deprecated.
 
 *Reason*  
 &emsp;Type: [Text](../methods-auto/text/text-data-type.md)  
-Specifies the reason for the symbol being deprecated.  
+Specifies the reason for the symbol being deprecated.
+
 
 *Tag*  
 &emsp;Type: [Text](../methods-auto/text/text-data-type.md)  
-Specifies a free-form text to support tracking of where and when the object was marked as obsolete, for example, branch, build, or date of obsoleting the object.  
+Specifies a free-form text to support tracking of where and when the object was marked as obsolete, for example, branch, build, or date of obsoleting the object.
+
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

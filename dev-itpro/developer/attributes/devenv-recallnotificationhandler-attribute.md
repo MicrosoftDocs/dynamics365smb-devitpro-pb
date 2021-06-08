@@ -20,6 +20,7 @@ author: SusanneWindfeldPedersen
 
 Specifies that the method is a RecallNotificationHandler method, which handles Recall statements.
 
+
 ## Applies To
 
 - Method
@@ -37,7 +38,8 @@ Specifies that the method is a RecallNotificationHandler method, which handles R
 
 *HandlerIsOptional*  
 &emsp;Type: [Boolean](../methods-auto/boolean/boolean-data-type.md)  
-Specifies whether the notification handler method is optional.  
+Specifies whether the notification handler method is optional.
+
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

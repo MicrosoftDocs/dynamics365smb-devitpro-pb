@@ -20,6 +20,7 @@ author: SusanneWindfeldPedersen
 
 Specifies the handler methods that are used by the test method.
 
+
 ## Applies To
 
 - Method
@@ -37,7 +38,8 @@ Specifies the handler methods that are used by the test method.
 
 *HandlerNames*  
 &emsp;Type: [String](../methods-auto/string/string-data-type.md)  
-The names of the handler methods used by the test method.  
+The names of the handler methods used by the test method.
+
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

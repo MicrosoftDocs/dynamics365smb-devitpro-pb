@@ -20,6 +20,7 @@ author: SusanneWindfeldPedersen
 
 Specifies that the method is published as an internal event. It can only be subscribed to from within the same module.
 
+
 ## Applies To
 
 - Method
@@ -35,7 +36,8 @@ Specifies that the method is published as an internal event. It can only be subs
 
 *IncludeSender*  
 &emsp;Type: [Boolean](../methods-auto/boolean/boolean-data-type.md)  
-Specifies that the firing instance of the object is available as a parameter to subscribers of that event.  
+Specifies that the firing instance of the object is available as a parameter to subscribers of that event.
+
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

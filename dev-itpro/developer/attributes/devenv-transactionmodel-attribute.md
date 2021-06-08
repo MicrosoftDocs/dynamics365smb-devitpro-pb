@@ -20,6 +20,7 @@ author: SusanneWindfeldPedersen
 
 Specifies whether data is committed to the database during execution of a test method and whether transactions are rolled back at the end of a test method.
 
+
 ## Applies To
 
 - Method
@@ -37,7 +38,8 @@ Specifies whether data is committed to the database during execution of a test m
 
 *TransactionModel*  
 &emsp;Type: [TransactionModel](../methods-auto/transactionmodel/transactionmodel-option.md)  
-The test transaction model used in the test method.  
+The test transaction model used in the test method.
+
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
