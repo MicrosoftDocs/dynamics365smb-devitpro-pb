@@ -47,7 +47,7 @@ In the upcoming June update to Power BI Desktop we have included an new connecto
 **AboutTitle and AboutText properties**  
 We’ve updated [AL reference docs](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/properties/devenv-abouttitle-property) with plenty of details, including the list of page combinations where the About properties have different or no effect. Update 18.2 fully reflects these behaviours.
 
-**All customers: Schedule minor updates and receive email notifications**  
+**Available for all countries: Schedule minor updates and receive email notifications**  
 All customers can now receive up-front email notifications seven days in advance and schedule minor updates of Business Central within 21 days. We enabled this capability for US with 18.1, and are now enabling the same experience for all other countries with 18.2. Learn more: https://aka.ms/BCUpdates.
 
 
