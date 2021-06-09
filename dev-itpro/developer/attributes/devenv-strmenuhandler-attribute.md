@@ -26,14 +26,18 @@ Specifies that the method is a StrMenuHandler method, which handles StrMenu stat
 - Method
 
 > [!NOTE]
-> The StrMenuHandler attribute can only be set inside codeunits with the **SubType property** set to Test.
+> The **StrMenuHandler** attribute can only be set inside codeunits with the **SubType property** set to **Test**.
 
 ## Syntax
+
+> **Version**: _Available or changed with runtime version 1.0._
 
 ```
 [StrMenuHandler]
 procedure StrMenuHandler(Options: Text1024, var Choice: Integer, Instruction: Text1024)
 ```
+> **Version**: _Available or changed with runtime version 2.1._
+
 ```
 [StrMenuHandler]
 procedure StrMenuHandler(Options: Text, var Choice: Integer, Instruction: Text)

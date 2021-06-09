@@ -28,6 +28,8 @@ Specifies the method to be a try method, which can be used to catch and handle e
 
 ## Syntax
 
+> **Version**: _Available or changed with runtime version 2.0._
+
 ```
 [TryFunction]
 procedure TryFunction()

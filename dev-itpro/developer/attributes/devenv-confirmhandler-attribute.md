@@ -26,14 +26,18 @@ Specifies that the method is a ConfirmHandler method, which handles Confirm stat
 - Method
 
 > [!NOTE]
-> The ConfirmHandler attribute can only be set inside codeunits with the **SubType property** set to Test.
+> The **ConfirmHandler** attribute can only be set inside codeunits with the **SubType property** set to **Test**.
 
 ## Syntax
+
+> **Version**: _Available or changed with runtime version 1.0._
 
 ```
 [ConfirmHandler]
 procedure ConfirmHandler(Question: Text1024, var Reply: Boolean)
 ```
+> **Version**: _Available or changed with runtime version 2.1._
+
 ```
 [ConfirmHandler]
 procedure ConfirmHandler(Question: Text, var Reply: Boolean)

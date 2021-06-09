@@ -26,7 +26,7 @@ Specifies the event to which the method subscribes.
 - Method
 
 > [!NOTE]
-> The EventSubscriber attribute can only be set inside codeunits.
+> The **EventSubscriber** attribute can only be set inside codeunits.
 
 ## Syntax
 

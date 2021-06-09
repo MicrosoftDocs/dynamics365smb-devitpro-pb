@@ -26,7 +26,7 @@ Specifies the handler methods that are used by the test method.
 - Method
 
 > [!NOTE]
-> The HandlerFunctions attribute can only be set inside codeunits with the **SubType property** set to Test.
+> The **HandlerFunctions** attribute can only be set inside codeunits with the **SubType property** set to **Test**.
 
 ## Syntax
 

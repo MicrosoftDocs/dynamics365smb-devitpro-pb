@@ -26,7 +26,7 @@ Specifies that the method is a Normal method.
 - Method
 
 > [!NOTE]
-> The Normal attribute can only be set inside codeunits.
+> The **Normal** attribute can only be set inside codeunits.
 
 ## Syntax
 

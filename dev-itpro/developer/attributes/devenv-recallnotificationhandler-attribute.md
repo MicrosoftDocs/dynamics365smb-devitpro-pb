@@ -26,9 +26,11 @@ Specifies that the method is a RecallNotificationHandler method, which handles R
 - Method
 
 > [!NOTE]
-> The RecallNotificationHandler attribute can only be set inside codeunits with the **SubType property** set to Test.
+> The **RecallNotificationHandler** attribute can only be set inside codeunits with the **SubType property** set to **Test**.
 
 ## Syntax
+
+> **Version**: _Available or changed with runtime version 1.0._
 
 ```
 [RecallNotificationHandler([HandlerIsOptional: Boolean])]

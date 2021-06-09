@@ -26,7 +26,7 @@ Specifies a value that can be used to determine which permission sets are used o
 - Method
 
 > [!NOTE]
-> The TestPermissions attribute can only be set inside codeunits with the **SubType property** set to Test.
+> The **TestPermissions** attribute can only be set inside codeunits with the **SubType property** set to **Test**.
 
 ## Syntax
 

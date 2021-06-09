@@ -26,14 +26,18 @@ Specifies that the method is a HyperLinkHandler method, which handles HyperLinkH
 - Method
 
 > [!NOTE]
-> The HyperlinkHandler attribute can only be set inside codeunits with the **SubType property** set to Test.
+> The **HyperlinkHandler** attribute can only be set inside codeunits with the **SubType property** set to **Test**.
 
 ## Syntax
+
+> **Version**: _Available or changed with runtime version 1.0._
 
 ```
 [HyperlinkHandler]
 procedure HyperlinkHandler(Message: Text1024)
 ```
+> **Version**: _Available or changed with runtime version 2.1._
+
 ```
 [HyperlinkHandler]
 procedure HyperlinkHandler(Message: Text)

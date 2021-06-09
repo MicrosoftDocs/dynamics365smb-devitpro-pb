@@ -26,9 +26,11 @@ Specifies that the method is a FilterPageHandler method, which handles StrMenu s
 - Method
 
 > [!NOTE]
-> The FilterPageHandler attribute can only be set inside codeunits with the **SubType property** set to Test.
+> The **FilterPageHandler** attribute can only be set inside codeunits with the **SubType property** set to **Test**.
 
 ## Syntax
+
+> **Version**: _Available or changed with runtime version 1.0._
 
 ```
 [FilterPageHandler]

@@ -26,7 +26,7 @@ Specifies whether data is committed to the database during execution of a test m
 - Method
 
 > [!NOTE]
-> The TransactionModel attribute can only be set inside codeunits with the **SubType property** set to Test.
+> The **TransactionModel** attribute can only be set inside codeunits with the **SubType property** set to **Test**.
 
 ## Syntax
 

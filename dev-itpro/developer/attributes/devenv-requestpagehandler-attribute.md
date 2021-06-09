@@ -26,9 +26,11 @@ Specifies that the method is a RequestPageHandler method, which handles the requ
 - Method
 
 > [!NOTE]
-> The RequestPageHandler attribute can only be set inside codeunits with the **SubType property** set to Test.
+> The **RequestPageHandler** attribute can only be set inside codeunits with the **SubType property** set to **Test**.
 
 ## Syntax
+
+> **Version**: _Available or changed with runtime version 1.0._
 
 ```
 [RequestPageHandler]

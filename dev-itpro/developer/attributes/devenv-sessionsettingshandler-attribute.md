@@ -26,9 +26,11 @@ Specifies a session settings handler function
 - Method
 
 > [!NOTE]
-> The SessionSettingsHandler attribute can only be set inside codeunits with the **SubType property** set to Test.
+> The **SessionSettingsHandler** attribute can only be set inside codeunits with the **SubType property** set to **Test**.
 
 ## Syntax
+
+> **Version**: _Available or changed with runtime version 3.0._
 
 ```
 [SessionSettingsHandler]

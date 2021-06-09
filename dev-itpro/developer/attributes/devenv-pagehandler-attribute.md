@@ -26,14 +26,18 @@ Specifies that the method is a PageHandler method, which handles specific pages 
 - Method
 
 > [!NOTE]
-> The PageHandler attribute can only be set inside codeunits with the **SubType property** set to Test.
+> The **PageHandler** attribute can only be set inside codeunits with the **SubType property** set to **Test**.
 
 ## Syntax
+
+> **Version**: _Available or changed with runtime version 1.0._
 
 ```
 [PageHandler]
 procedure PageHandler(var Page: TestPage)
 ```
+> **Version**: _Available or changed with runtime version 2.1._
+
 ```
 [PageHandler]
 procedure PageHandler(var Page: Page)

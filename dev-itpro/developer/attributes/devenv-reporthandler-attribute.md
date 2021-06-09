@@ -26,9 +26,11 @@ Specifies that the method is a ReportHandler method, which handles specific repo
 - Method
 
 > [!NOTE]
-> The ReportHandler attribute can only be set inside codeunits with the **SubType property** set to Test.
+> The **ReportHandler** attribute can only be set inside codeunits with the **SubType property** set to **Test**.
 
 ## Syntax
+
+> **Version**: _Available or changed with runtime version 1.0._
 
 ```
 [ReportHandler]
