@@ -3,7 +3,7 @@ title: "ReportHandler Attribute"
 description: "Specifies that the method is a ReportHandler method, which handles specific reports."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/08/2021
+ms.date: 06/09/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,6 +20,7 @@ author: SusanneWindfeldPedersen
 
 Specifies that the method is a ReportHandler method, which handles specific reports.
 
+
 ## Applies To
 
 - Method
@@ -27,11 +28,17 @@ Specifies that the method is a ReportHandler method, which handles specific repo
 > [!NOTE]
 > The ReportHandler attribute can only be set inside codeunits with the **SubType property** set to Test.
 
-
 ## Syntax
+
 ```
-[ReportHandler()]
+[ReportHandler]
+procedure ReportHandler(var Report: Report)
 ```
+
+### Parameters
+*Report*  
+&emsp;Type: [Report](../methods-auto/report/report-data-type.md)  
+A specific report.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

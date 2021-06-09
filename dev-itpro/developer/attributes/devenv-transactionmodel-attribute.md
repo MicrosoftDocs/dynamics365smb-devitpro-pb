@@ -3,7 +3,7 @@ title: "TransactionModel Attribute"
 description: "Specifies whether data is committed to the database during execution of a test method and whether transactions are rolled back at the end of a test method."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/08/2021
+ms.date: 06/09/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,18 +28,16 @@ Specifies whether data is committed to the database during execution of a test m
 > [!NOTE]
 > The TransactionModel attribute can only be set inside codeunits with the **SubType property** set to Test.
 
-
 ## Syntax
+
 ```
 [TransactionModel(TransactionModel: TransactionModel)]
 ```
 
 ### Parameters
-
 *TransactionModel*  
 &emsp;Type: [TransactionModel](../methods-auto/transactionmodel/transactionmodel-option.md)  
 The test transaction model used in the test method.
-
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

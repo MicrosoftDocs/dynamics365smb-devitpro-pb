@@ -3,7 +3,7 @@ title: "ServiceEnabled Attribute"
 description: "Exposes a method to the service."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/08/2021
+ms.date: 06/09/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,17 +20,17 @@ author: SusanneWindfeldPedersen
 
 Exposes a method to the service.
 
+
 ## Applies To
 
 - Method
 
 
-
 ## Syntax
-```
-[ServiceEnabled()]
-```
 
+```
+[ServiceEnabled]
+```
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

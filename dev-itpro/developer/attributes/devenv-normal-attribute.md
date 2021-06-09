@@ -3,7 +3,7 @@ title: "Normal Attribute"
 description: "Specifies that the method is a Normal method."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/08/2021
+ms.date: 06/09/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,6 +20,7 @@ author: SusanneWindfeldPedersen
 
 Specifies that the method is a Normal method.
 
+
 ## Applies To
 
 - Method
@@ -27,12 +28,11 @@ Specifies that the method is a Normal method.
 > [!NOTE]
 > The Normal attribute can only be set inside codeunits.
 
-
 ## Syntax
-```
-[Normal()]
-```
 
+```
+[Normal]
+```
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

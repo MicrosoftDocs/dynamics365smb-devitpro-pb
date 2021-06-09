@@ -3,7 +3,7 @@ title: "TestPermissions Attribute"
 description: "Specifies a value that can be used to determine which permission sets are used on tests that are run by a test method."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/08/2021
+ms.date: 06/09/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,18 +28,16 @@ Specifies a value that can be used to determine which permission sets are used o
 > [!NOTE]
 > The TestPermissions attribute can only be set inside codeunits with the **SubType property** set to Test.
 
-
 ## Syntax
+
 ```
 [TestPermissions(TestPermissions: TestPermissions)]
 ```
 
 ### Parameters
-
 *TestPermissions*  
 &emsp;Type: [TestPermissions](../methods-auto/testpermissions/testpermissions-option.md)  
 Specifies the permission sets used on tests that are run by the test method.
-
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

@@ -3,7 +3,7 @@ title: "StrMenuHandler Attribute"
 description: "Specifies that the method is a StrMenuHandler method, which handles StrMenu statements."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/08/2021
+ms.date: 06/09/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,6 +20,7 @@ author: SusanneWindfeldPedersen
 
 Specifies that the method is a StrMenuHandler method, which handles StrMenu statements.
 
+
 ## Applies To
 
 - Method
@@ -27,11 +28,31 @@ Specifies that the method is a StrMenuHandler method, which handles StrMenu stat
 > [!NOTE]
 > The StrMenuHandler attribute can only be set inside codeunits with the **SubType property** set to Test.
 
-
 ## Syntax
+
 ```
-[StrMenuHandler()]
+[StrMenuHandler]
+procedure StrMenuHandler(Options: Text1024, var Choice: Integer, Instruction: Text1024)
 ```
+```
+[StrMenuHandler]
+procedure StrMenuHandler(Options: Text, var Choice: Integer, Instruction: Text)
+```
+
+### Parameters
+*Options*  
+&emsp;Type: [Text1024](../methods-auto/text1024/text1024-data-type.md)  
+The list of the different option values.
+
+
+*Choice*  
+&emsp;Type: [Integer](../methods-auto/integer/integer-data-type.md)  
+The option chosen in the StrMenu.
+
+
+*Instruction*  
+&emsp;Type: [Text1024](../methods-auto/text1024/text1024-data-type.md)  
+The leading text.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

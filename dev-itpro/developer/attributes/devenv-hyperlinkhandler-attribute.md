@@ -3,7 +3,7 @@ title: "HyperlinkHandler Attribute"
 description: "Specifies that the method is a HyperLinkHandler method, which handles HyperLinkHandler statements."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/08/2021
+ms.date: 06/09/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,6 +20,7 @@ author: SusanneWindfeldPedersen
 
 Specifies that the method is a HyperLinkHandler method, which handles HyperLinkHandler statements.
 
+
 ## Applies To
 
 - Method
@@ -27,11 +28,21 @@ Specifies that the method is a HyperLinkHandler method, which handles HyperLinkH
 > [!NOTE]
 > The HyperlinkHandler attribute can only be set inside codeunits with the **SubType property** set to Test.
 
-
 ## Syntax
+
 ```
-[HyperlinkHandler()]
+[HyperlinkHandler]
+procedure HyperlinkHandler(Message: Text1024)
 ```
+```
+[HyperlinkHandler]
+procedure HyperlinkHandler(Message: Text)
+```
+
+### Parameters
+*Message*  
+&emsp;Type: [Text1024](../methods-auto/text1024/text1024-data-type.md)  
+The actual hyperlink.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

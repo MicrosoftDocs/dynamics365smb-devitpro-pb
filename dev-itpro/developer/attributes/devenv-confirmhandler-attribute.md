@@ -3,7 +3,7 @@ title: "ConfirmHandler Attribute"
 description: "Specifies that the method is a ConfirmHandler method, which handles Confirm statements."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/08/2021
+ms.date: 06/09/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,6 +20,7 @@ author: SusanneWindfeldPedersen
 
 Specifies that the method is a ConfirmHandler method, which handles Confirm statements.
 
+
 ## Applies To
 
 - Method
@@ -27,11 +28,26 @@ Specifies that the method is a ConfirmHandler method, which handles Confirm stat
 > [!NOTE]
 > The ConfirmHandler attribute can only be set inside codeunits with the **SubType property** set to Test.
 
-
 ## Syntax
+
 ```
-[ConfirmHandler()]
+[ConfirmHandler]
+procedure ConfirmHandler(Question: Text1024, var Reply: Boolean)
 ```
+```
+[ConfirmHandler]
+procedure ConfirmHandler(Question: Text, var Reply: Boolean)
+```
+
+### Parameters
+*Question*  
+&emsp;Type: [Text1024](../methods-auto/text1024/text1024-data-type.md)  
+The text of the test method.
+
+
+*Reply*  
+&emsp;Type: [Boolean](../methods-auto/boolean/boolean-data-type.md)  
+Specifies whether the response to confirm is *yes* or *no*.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

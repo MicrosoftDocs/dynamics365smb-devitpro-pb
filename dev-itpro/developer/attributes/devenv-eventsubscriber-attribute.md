@@ -3,7 +3,7 @@ title: "EventSubscriber Attribute"
 description: "Specifies the event to which the method subscribes."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/08/2021
+ms.date: 06/09/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,14 +28,13 @@ Specifies the event to which the method subscribes.
 > [!NOTE]
 > The EventSubscriber attribute can only be set inside codeunits.
 
-
 ## Syntax
+
 ```
 [EventSubscriber(ObjectType: ObjectType, ObjectId: Integer, EventName: Text, ElementName: Text, SkipOnMissingLicense: Boolean, SkipOnMissingPermission: Boolean)]
 ```
 
 ### Parameters
-
 *ObjectType*  
 &emsp;Type: [ObjectType](../methods-auto/objecttype/objecttype-option.md)  
 Specifies the type of object that publishes the event to subscribe to.
@@ -64,7 +63,6 @@ Specifies what happens to the event subscriber method call when the Dynamics 365
 *SkipOnMissingPermission*  
 &emsp;Type: [Boolean](../methods-auto/boolean/boolean-data-type.md)  
 Specifies what happens to the subscriber method call when the user account that is running the current session does not have permission to the codeunit that contains the event subscriber method.
-
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

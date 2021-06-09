@@ -3,7 +3,7 @@ title: "InDataSet Attribute"
 description: "Sets whether the AL variable's value is included in the dataset."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/08/2021
+ms.date: 06/09/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,17 +20,17 @@ author: SusanneWindfeldPedersen
 
 Sets whether the AL variable's value is included in the dataset.
 
+
 ## Applies To
 
 - Variable
 
 
-
 ## Syntax
-```
-[InDataSet()]
-```
 
+```
+[InDataSet]
+```
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

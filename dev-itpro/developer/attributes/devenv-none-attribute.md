@@ -3,7 +3,7 @@ title: "None Attribute"
 description: "Is used implicitly when a method does not have an attribute set."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/08/2021
+ms.date: 06/09/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,17 +20,17 @@ author: SusanneWindfeldPedersen
 
 Is used implicitly when a method does not have an attribute set.
 
+
 ## Applies To
 
 - Method
 
 
-
 ## Syntax
-```
-[None()]
-```
 
+```
+[None]
+```
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

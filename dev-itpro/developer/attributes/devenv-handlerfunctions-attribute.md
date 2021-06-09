@@ -3,7 +3,7 @@ title: "HandlerFunctions Attribute"
 description: "Specifies the handler methods that are used by the test method."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/08/2021
+ms.date: 06/09/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,18 +28,16 @@ Specifies the handler methods that are used by the test method.
 > [!NOTE]
 > The HandlerFunctions attribute can only be set inside codeunits with the **SubType property** set to Test.
 
-
 ## Syntax
+
 ```
 [HandlerFunctions(HandlerNames: String)]
 ```
 
 ### Parameters
-
 *HandlerNames*  
 &emsp;Type: [String](../methods-auto/string/string-data-type.md)  
 The names of the handler methods used by the test method.
-
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

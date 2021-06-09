@@ -3,7 +3,7 @@ title: "RequestPageHandler Attribute"
 description: "Specifies that the method is a RequestPageHandler method, which handles the request page of a specific report."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/08/2021
+ms.date: 06/09/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,6 +20,7 @@ author: SusanneWindfeldPedersen
 
 Specifies that the method is a RequestPageHandler method, which handles the request page of a specific report.
 
+
 ## Applies To
 
 - Method
@@ -27,11 +28,17 @@ Specifies that the method is a RequestPageHandler method, which handles the requ
 > [!NOTE]
 > The RequestPageHandler attribute can only be set inside codeunits with the **SubType property** set to Test.
 
-
 ## Syntax
+
 ```
-[RequestPageHandler()]
+[RequestPageHandler]
+procedure RequestPageHandler(var RequestPage: TestRequestPage)
 ```
+
+### Parameters
+*RequestPage*  
+&emsp;Type: [TestRequestPage](../methods-auto/testrequestpage/testrequestpage-data-type.md)  
+The ID of a specific report.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

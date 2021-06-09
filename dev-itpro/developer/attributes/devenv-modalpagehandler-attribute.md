@@ -3,7 +3,7 @@ title: "ModalPageHandler Attribute"
 description: "Specifies that the method is a ModalPageHandler method, which handles specific pages that are run modally."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/08/2021
+ms.date: 06/09/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,6 +20,7 @@ author: SusanneWindfeldPedersen
 
 Specifies that the method is a ModalPageHandler method, which handles specific pages that are run modally.
 
+
 ## Applies To
 
 - Method
@@ -27,11 +28,21 @@ Specifies that the method is a ModalPageHandler method, which handles specific p
 > [!NOTE]
 > The ModalPageHandler attribute can only be set inside codeunits with the **SubType property** set to Test.
 
-
 ## Syntax
+
 ```
-[ModalPageHandler()]
+[ModalPageHandler]
+procedure ModalPageHandler(var Page: TestPage)
 ```
+```
+[ModalPageHandler]
+procedure ModalPageHandler(var Page: Page, var Response: Action)
+```
+
+### Parameters
+*Page*  
+&emsp;Type: [TestPage](../methods-auto/testpage/testpage-data-type.md)  
+A specific page.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

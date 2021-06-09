@@ -3,7 +3,7 @@ title: "Scope Attribute"
 description: "Specifies the scope of a method."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/08/2021
+ms.date: 06/09/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,19 +26,18 @@ Specifies the scope of a method.
 - Method
 
 
-
 ## Syntax
+
 ```
 [Scope(Kind: Text)]
 ```
 
 ### Parameters
-
 *Kind*  
 &emsp;Type: [Text](../methods-auto/text/text-data-type.md)  
 The scope of the method.
 
-## Property Value
+#### Parameter value
 
 |Value|Compatibility|
 |-----------|---------------------------------------|
@@ -48,7 +47,6 @@ The scope of the method.
 |**Internal**|Available or changed with runtime version 1.0 until version 4.0 where it was deprecated for the following reason: "The Internal scope is being deprecated. Use OnPrem instead."|
 |**Cloud**|Available or changed with runtime version 4.0.|
 |**OnPrem**|Available or changed with runtime version 4.0.|
-
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
