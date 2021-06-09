@@ -34,7 +34,7 @@ Specifies that the method is a ConfirmHandler method, which handles Confirm stat
 
 ```
 [ConfirmHandler]
-procedure ConfirmHandler(Question: Text1024, var Reply: Boolean)
+procedure ConfirmHandler(Question: Text[1024], var Reply: Boolean)
 ```
 > **Version**: _Available or changed with runtime version 2.1._
 
@@ -45,7 +45,7 @@ procedure ConfirmHandler(Question: Text, var Reply: Boolean)
 
 ### Parameters
 *Question*  
-&emsp;Type: [Text1024](../methods-auto/text/text-data-type.md)  
+&emsp;Type: [Text[1024]](../methods-auto/text/text-data-type.md)  
 The text of the test method.
 
 

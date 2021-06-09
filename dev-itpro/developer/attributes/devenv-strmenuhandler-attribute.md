@@ -34,7 +34,7 @@ Specifies that the method is a StrMenuHandler method, which handles StrMenu stat
 
 ```
 [StrMenuHandler]
-procedure StrMenuHandler(Options: Text1024, var Choice: Integer, Instruction: Text1024)
+procedure StrMenuHandler(Options: Text[1024], var Choice: Integer, Instruction: Text[1024])
 ```
 > **Version**: _Available or changed with runtime version 2.1._
 
@@ -45,7 +45,7 @@ procedure StrMenuHandler(Options: Text, var Choice: Integer, Instruction: Text)
 
 ### Parameters
 *Options*  
-&emsp;Type: [Text1024](../methods-auto/text/text-data-type.md)  
+&emsp;Type: [Text[1024]](../methods-auto/text/text-data-type.md)  
 The list of the different option values.
 
 
@@ -55,7 +55,7 @@ The option chosen in the StrMenu.
 
 
 *Instruction*  
-&emsp;Type: [Text1024](../methods-auto/text/text-data-type.md)  
+&emsp;Type: [Text[1024]](../methods-auto/text/text-data-type.md)  
 The leading text.
 
 

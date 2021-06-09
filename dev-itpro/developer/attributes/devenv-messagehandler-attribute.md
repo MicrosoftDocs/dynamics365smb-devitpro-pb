@@ -34,7 +34,7 @@ Specifies that the method is a MessageHandler method, which handles Message stat
 
 ```
 [MessageHandler]
-procedure MessageHandler(Message: Text1024)
+procedure MessageHandler(Message: Text[1024])
 ```
 > **Version**: _Available or changed with runtime version 2.1._
 
@@ -45,7 +45,7 @@ procedure MessageHandler(Message: Text)
 
 ### Parameters
 *Message*  
-&emsp;Type: [Text1024](../methods-auto/text/text-data-type.md)  
+&emsp;Type: [Text[1024]](../methods-auto/text/text-data-type.md)  
 The message of the test method.
 
 
