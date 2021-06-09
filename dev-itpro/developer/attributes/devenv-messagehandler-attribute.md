@@ -45,7 +45,7 @@ procedure MessageHandler(Message: Text)
 
 ### Parameters
 *Message*  
-&emsp;Type: [Text1024](../methods-auto/text1024/text1024-data-type.md)  
+&emsp;Type: [Text1024](../methods-auto/text/text-data-type.md)  
 The message of the test method.
 
 

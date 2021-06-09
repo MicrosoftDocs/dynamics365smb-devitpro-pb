@@ -45,7 +45,7 @@ procedure StrMenuHandler(Options: Text, var Choice: Integer, Instruction: Text)
 
 ### Parameters
 *Options*  
-&emsp;Type: [Text1024](../methods-auto/text1024/text1024-data-type.md)  
+&emsp;Type: [Text1024](../methods-auto/text/text-data-type.md)  
 The list of the different option values.
 
 
@@ -55,7 +55,7 @@ The option chosen in the StrMenu.
 
 
 *Instruction*  
-&emsp;Type: [Text1024](../methods-auto/text1024/text1024-data-type.md)  
+&emsp;Type: [Text1024](../methods-auto/text/text-data-type.md)  
 The leading text.
 
 

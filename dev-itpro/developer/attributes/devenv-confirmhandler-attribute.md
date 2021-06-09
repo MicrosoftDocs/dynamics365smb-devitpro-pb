@@ -45,7 +45,7 @@ procedure ConfirmHandler(Question: Text, var Reply: Boolean)
 
 ### Parameters
 *Question*  
-&emsp;Type: [Text1024](../methods-auto/text1024/text1024-data-type.md)  
+&emsp;Type: [Text1024](../methods-auto/text/text-data-type.md)  
 The text of the test method.
 
 
