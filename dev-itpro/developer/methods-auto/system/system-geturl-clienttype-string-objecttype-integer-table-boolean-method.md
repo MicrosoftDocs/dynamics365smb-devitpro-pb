@@ -3,7 +3,7 @@ title: "System.GetUrl Method"
 description: " Generates a URL for the specified client target that is based on the configuration of the server instance. If the code runs in a multitenant deployment architecture, the generated URL will automatically apply to the tenant ID of the current user."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -31,23 +31,23 @@ String :=   System.GetUrl(ClientType: ClientType [, Company: String] [, ObjectTy
 &emsp;Type: [ClientType](../clienttype/clienttype-option.md)  
 Specifies the client that you want to generate the URL for. If you want to generate a URL that depends on the client that the user is accessing the URL from, choose Current. A runtime error occurs if the ClientType is set to SOAP or OData but the specified object type and ID has not been published as a web service.
         
-*Company*  
+*[Optional] Company*  
 &emsp;Type: [String](../string/string-data-type.md)  
 Specifies the company that the URL must contain. If you do not specify a company, the URL will run in the user’s current company.
         
-*ObjectType*  
+*[Optional] ObjectType*  
 &emsp;Type: [ObjectType](../objecttype/objecttype-option.md)  
 Value: Table, Page, Report, Codeunit, Query, or XmlPort. Specifies the object type that the URL must open. If you specify an object type, you must also specify an object ID in the ObjectId parameter. Otherwise, the user will see a runtime error. If you set the ObjectType parameter to Page, you can also specify a record variable in the Record parameter.
           
-*ObjectId*  
+*[Optional] ObjectId*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 Specifies the ID of the specified object type that the URL must open.
         
-*Record*  
+*[Optional] Record*  
 &emsp;Type: [Record](../record/record-data-type.md)  
 Specifies the Record variable that specifies which record to open.
         
-*UseFilters*  
+*[Optional] UseFilters*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 Specifies whether to include filters that are defined on the object as a text string in the URL.
         

@@ -3,7 +3,7 @@ title: "File.CreateTempFile Method"
 description: "Creates a temporary file. This enables you to save data of any format to a temporary file. This file has a unique name and will be stored in a temporary file folder."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -31,15 +31,15 @@ Creates a temporary file. This enables you to save data of any format to a tempo
 ## Parameters
 *File*  
 &emsp;Type: [File](file-data-type.md)  
-An instance of the [File](file-data-type.md) data type.
+An instance of the [File](file-data-type.md) data type.  
 
-*Encoding*  
+*[Optional] Encoding*  
 &emsp;Type: [TextEncoding](../textencoding/textencoding-option.md)  
   
 
 
 ## Return Value
-*Ok*  
+*[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 
 

@@ -3,7 +3,7 @@ title: "TestPart.GetField Method"
 description: "Gets a field on a test page."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,7 @@ TestField :=   TestPart.GetField(Id: Integer)
 ## Parameters
 *TestPart*  
 &emsp;Type: [TestPart](testpart-data-type.md)  
-An instance of the [TestPart](testpart-data-type.md) data type.
+An instance of the [TestPart](testpart-data-type.md) data type.  
 
 *Id*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  

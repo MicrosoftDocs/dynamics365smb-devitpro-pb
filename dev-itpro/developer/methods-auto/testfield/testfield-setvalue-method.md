@@ -3,7 +3,7 @@ title: "TestField.SetValue Method"
 description: "Sets a value for a field on a test page."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,7 @@ Sets a value for a field on a test page.
 ## Parameters
 *TestField*  
 &emsp;Type: [TestField](testfield-data-type.md)  
-An instance of the [TestField](testfield-data-type.md) data type.
+An instance of the [TestField](testfield-data-type.md) data type.  
 
 *Value*  
 &emsp;Type: [Any](../any/any-data-type.md)  

@@ -3,7 +3,7 @@ title: "RecordRef.Field Method"
 description: "Gets a FieldRef for the field that has the number FieldNo in the table that is currently selected. If no field has this number, the method returns an error."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,7 @@ Field :=   RecordRef.Field(FieldNo: Integer)
 ## Parameters
 *RecordRef*  
 &emsp;Type: [RecordRef](recordref-data-type.md)  
-An instance of the [RecordRef](recordref-data-type.md) data type.
+An instance of the [RecordRef](recordref-data-type.md) data type.  
 
 *FieldNo*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  

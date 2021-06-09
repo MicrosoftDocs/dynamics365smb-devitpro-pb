@@ -3,7 +3,7 @@ title: "Report.UseRequestPage Method"
 description: "Gets or sets whether a request page is presented to the user."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,15 +29,15 @@ Gets or sets whether a request page is presented to the user.
 ## Parameters
 *Report*  
 &emsp;Type: [Report](report-data-type.md)  
-An instance of the [Report](report-data-type.md) data type.
+An instance of the [Report](report-data-type.md) data type.  
 
-*SetUseRequestPage*  
+*[Optional] SetUseRequestPage*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if a request page will be presented to the user, otherwise **false**.  
 
 
 ## Return Value
-*IsUseRequestPage*  
+*[Optional] IsUseRequestPage*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if a request page is presented to the user, otherwise **false**.
 

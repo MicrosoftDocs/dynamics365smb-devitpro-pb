@@ -3,7 +3,7 @@ title: "Text.LastIndexOf Method"
 description: "Reports the one-based index position of the last occurrence of a specified string in this instance."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,13 +29,13 @@ Index :=   Text.LastIndexOf(Value: Text [, StartIndex: Integer])
 ## Parameters
 *Text*  
 &emsp;Type: [Text](text-data-type.md)  
-An instance of the [Text](text-data-type.md) data type.
+An instance of the [Text](text-data-type.md) data type.  
 
 *Value*  
 &emsp;Type: [Text](text-data-type.md)  
 The string to seek.
         
-*StartIndex*  
+*[Optional] StartIndex*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The search starting position. The search proceeds from startIndex toward the beginning of this instance.  
 

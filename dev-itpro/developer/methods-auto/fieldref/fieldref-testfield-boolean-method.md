@@ -3,7 +3,7 @@ title: "FieldRef.TestField Method"
 description: "Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,7 @@ Determines whether the contents of a field matches a given value. If the content
 ## Parameters
 *FieldRef*  
 &emsp;Type: [FieldRef](fieldref-data-type.md)  
-An instance of the [FieldRef](fieldref-data-type.md) data type.
+An instance of the [FieldRef](fieldref-data-type.md) data type.  
 
 *Value*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  

@@ -3,7 +3,7 @@ title: "FieldRef.Relation Method"
 description: "Finds the table relationship of a given field."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,7 +30,7 @@ TableNumber :=   FieldRef.Relation()
 ## Parameters
 *FieldRef*  
 &emsp;Type: [FieldRef](fieldref-data-type.md)  
-An instance of the [FieldRef](fieldref-data-type.md) data type.
+An instance of the [FieldRef](fieldref-data-type.md) data type.  
 
 ## Return Value
 *TableNumber*  

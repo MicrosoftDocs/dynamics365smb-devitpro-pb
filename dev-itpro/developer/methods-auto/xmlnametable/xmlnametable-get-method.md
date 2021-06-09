@@ -3,7 +3,7 @@ title: "XmlNameTable.Get Method"
 description: "Gets the atomized string with the specified value."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,7 @@ Gets the atomized string with the specified value.
 ## Parameters
 *XmlNameTable*  
 &emsp;Type: [XmlNameTable](xmlnametable-data-type.md)  
-An instance of the [XmlNameTable](xmlnametable-data-type.md) data type.
+An instance of the [XmlNameTable](xmlnametable-data-type.md) data type.  
 
 *Key*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -39,7 +39,7 @@ The atomized string object if the string has been atomized.
 
 
 ## Return Value
-*Ok*  
+*[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the key exists, otherwise **false**.  If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 

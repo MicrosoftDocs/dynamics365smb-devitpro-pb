@@ -3,7 +3,7 @@ title: "FieldRef.Value Method"
 description: "Sets or gets the value of the field that is currently selected. This method returns an error if no field is selected."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,15 +29,15 @@ Sets or gets the value of the field that is currently selected. This method retu
 ## Parameters
 *FieldRef*  
 &emsp;Type: [FieldRef](fieldref-data-type.md)  
-An instance of the [FieldRef](fieldref-data-type.md) data type.
+An instance of the [FieldRef](fieldref-data-type.md) data type.  
 
-*NewValue*  
+*[Optional] NewValue*  
 &emsp;Type: [Any](../any/any-data-type.md)  
   
 
 
 ## Return Value
-*Value*  
+*[Optional] Value*  
 &emsp;Type: [Any](../any/any-data-type.md)  
 
 

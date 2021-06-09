@@ -3,7 +3,7 @@ title: "Query.GetFilter Method"
 description: "Returns the filters that are set on the field of a specified column in the query. The following code shows the syntax of the GETFILTER method. Query is a variable of the Query data type that specifies the query object."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,7 @@ Filter :=   Query.GetFilter(Column: Any)
 ## Parameters
 *Query*  
 &emsp;Type: [Query](query-data-type.md)  
-An instance of the [Query](query-data-type.md) data type.
+An instance of the [Query](query-data-type.md) data type.  
 
 *Column*  
 &emsp;Type: [Any](../any/any-data-type.md)  

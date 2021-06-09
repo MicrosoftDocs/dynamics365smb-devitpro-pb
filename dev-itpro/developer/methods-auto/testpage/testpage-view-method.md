@@ -3,7 +3,7 @@ title: "TestPage.View Method"
 description: "Gets the View system action."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,7 +28,7 @@ Action :=   TestPage.View()
 ## Parameters
 *TestPage*  
 &emsp;Type: [TestPage](testpage-data-type.md)  
-An instance of the [TestPage](testpage-data-type.md) data type.
+An instance of the [TestPage](testpage-data-type.md) data type.  
 
 ## Return Value
 *Action*  

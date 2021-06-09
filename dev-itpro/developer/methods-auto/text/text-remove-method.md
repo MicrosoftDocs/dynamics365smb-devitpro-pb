@@ -3,7 +3,7 @@ title: "Text.Remove Method"
 description: "Returns a new Text in which a specified number of characters from the current string are deleted."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,13 +29,13 @@ Result :=   Text.Remove(StartIndex: Integer [, Count: Integer])
 ## Parameters
 *Text*  
 &emsp;Type: [Text](text-data-type.md)  
-An instance of the [Text](text-data-type.md) data type.
+An instance of the [Text](text-data-type.md) data type.  
 
 *StartIndex*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The one-based position to begin deleting characters.
         
-*Count*  
+*[Optional] Count*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The number of characters to delete.  
 

@@ -3,7 +3,7 @@ title: "Text.StartsWith Method"
 description: "Determines whether the beginning of this instance matches a specified string."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,7 +29,7 @@ Ok :=   Text.StartsWith(Value: Text)
 ## Parameters
 *Text*  
 &emsp;Type: [Text](text-data-type.md)  
-An instance of the [Text](text-data-type.md) data type.
+An instance of the [Text](text-data-type.md) data type.  
 
 *Value*  
 &emsp;Type: [Text](text-data-type.md)  

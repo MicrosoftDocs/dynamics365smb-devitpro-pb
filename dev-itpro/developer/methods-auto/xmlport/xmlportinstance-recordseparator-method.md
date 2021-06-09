@@ -3,7 +3,7 @@ title: "Xmlport.RecordSeparator Method"
 description: "Gets and sets the RecordSeparator used when running, importing or exporting the XmlPort."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,15 +29,15 @@ Gets and sets the RecordSeparator used when running, importing or exporting the 
 ## Parameters
 *Xmlport*  
 &emsp;Type: [Xmlport](xmlport-data-type.md)  
-An instance of the [Xmlport](xmlport-data-type.md) data type.
+An instance of the [Xmlport](xmlport-data-type.md) data type.  
 
-*Separator*  
+*[Optional] Separator*  
 &emsp;Type: [String](../string/string-data-type.md)  
 The new value of the RecordSeparator.  
 
 
 ## Return Value
-*Separator*  
+*[Optional] Separator*  
 &emsp;Type: [String](../string/string-data-type.md)  
 The RecordSeparator used when running, importing or exporting the XmlPort.
 

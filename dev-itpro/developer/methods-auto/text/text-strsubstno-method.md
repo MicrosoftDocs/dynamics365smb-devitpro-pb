@@ -3,7 +3,7 @@ title: "Text.StrSubstNo Method"
 description: "Replaces %1, %2, %3... and #1, #2, #3... fields in a string with the values you provide as optional parameters."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -31,7 +31,7 @@ NewString :=   Text.StrSubstNo(String: String [, Value1: Any,...])
 &emsp;Type: [String](../string/string-data-type.md)  
 A string containing '#' and/or '%' fields.
         
-*Value1*  
+*[Optional] Value1*  
 &emsp;Type: [Any](../any/any-data-type.md)  
 One or more values (expressions) that you want to insert into String. You can specify up to 10 values.  
 
