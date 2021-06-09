@@ -19,16 +19,15 @@ Would you like to know what has changed in update 18.2? Below you'll find an ove
 ## Hotfixes
 Find an overview of hotfixes in this [article](https://support.microsoft.com/topic/update-18-1-for-microsoft-dynamics-365-business-central-2021-release-wave-1-application-build-18-1-25158-platform-build-18-0-25290-c2b1b1d3-e875-4079-817e-aa51454feddb).
 
-## Feature changes
--
+
 
 ## Localization updates 
 
 | Country| Feature change |
 |-------------|--------------|
-|Great Britain | Configurable Fraud Prevention Headers in Making Tax Digital|
+|United Kingdom | Configurable fraud prevention headers in making tax digital|
 |Spain | Improve multiple SII special sheme codes functionality |
-|W1 | Configurable Instrastat Checklist setup |
+|W1 | Configurable Instrastat checklist setup |
 |Italy | Update for Certificazione Unica | 
 |Spain | Support VAT cash refunds in the SII functionality | 
 
@@ -54,9 +53,6 @@ All customers can now receive up-front email notifications seven days in advance
 
 **Support for migrating data from earlier on-premises versions of Business Central to 2021 release wave 1 (v.18)**  
 With the Business Central cloud migration tool, customers can migrate their data from earlier on-premises versions of the product to their online Business Central environment, running on the latest version. We've added support for customers who are running on Business Central on-premises version 14, 15, 16, or 17 to migrate their data to version 18 of Business Central online. We've implemented the necessary data upgrade logic in the cloud migration tool, so customers don't have to upgrade their older version themselves in order to migrate their data to the latest online release. 
-
-**SKRIV OM FREDDYS TO SESSIONER HER**  
-You can still watch the 15+ on-demand sessions from the Business Central Launch Event. The sessions revolve around the new Dynamics 365 Business Central features and capabilities — everything from working with dimensions, permissions and entitlements, to product announcements and onboarding customers. Register for free: [aka.ms/BCLE](https://aka.ms/BCLE).
 
 **Business Central Office Hours Calls in June**  
 Make sure to join the office hours calls around 'Working with Dimensions' on June 15 and 'DevOps for Per Tenant Extensions' on June 29. Register and stay tuned for the upcoming calls: https://aka.ms/BCOfficeHours. Also, notice that in the months of July and August, there will be no office hours calls. 
