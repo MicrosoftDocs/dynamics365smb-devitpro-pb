@@ -39,11 +39,7 @@ When you set the schema update mode to **Recreate**, all the tables and table ex
 
 ## ForceSync mode
 
-ForceSync is similar to the existing Synchronize schema update mode, but contains more freedom to make schema changes while retaining data. To enable this mode, set `schemaUpdateMode` to `"ForceSync"`and then set the `"version"` parameter in the app.json file to a fixed number. Data will be preserved in almost all cases with the exception of the following breaking changes:
-
-- Changing the main table's primary key, in which case the data from the extension tables will be lost
-- Field renames are allowed and supported in this mode, but the data can only be preserved if you maintain the same ID for the field. If you change both the name and the ID of the field then the data will be lost.
-- Changing [DataPerCompany](/properties/devenv-datapercompany-property.md) from `true` to `false` is a schema-breaking change, because it removes a field in the database.
+ForceSync is similar to the existing Synchronize schema update mode, but contains more freedom to make schema changes while retaining data. To enable this mode, set `schemaUpdateMode` to `"ForceSync"`and then set the `"version"` parameter in the app.json file to a fixed number. Data will be preserved in almost all cases with the exception of changing the main table's primary key, in which case the data from the extension tables will be lost. Field renames are allowed and supported in this mode, but the data can only be preserved if you maintain the same ID for the field. If you change both the name and the ID of the field then the data will be lost.
 
 > [!IMPORTANT]  
 > This schema update mode is only meant for testing and development and should never be used in production.
@@ -59,7 +55,7 @@ If you, during development, for example, discover that you no longer want field 
  
 - When you make changes to the data types, you can only *enlarge* the unit size, and *not decrease* the unit size. For example, you can set a text type from `Code[20]` to `Code[50]` or `Text[32]` to  `Text[87]`, and you cannot set a text type from `Code[50]` to `Code[30]` or `Text[87]` to `Text[40]`.  
 
-- Making major table structural changes could lead to compilation errors. For example, if you want to update a primary key. In this case, the table data cannot be synchronized, and if you want to publish the extension, you must change the `schemaUpdateMode` to `Recreate`.  
+- Making major table structural changes could lead to compilation errors. For example, if you want to update a primary key. In this case, the table data cannot be synchronized, and if you want to publish the extension, you must change the `schemaUpdateMode` to `Recreate`. Likewise, changing the [DataPerCompany](/properties/devenv-datapercompany-property.md) from `true` to `false` is a schema-breaking change, because it removes a field in the database.
 
 - For extensions built on [!INCLUDE[prod_short](includes/prod_short.md)] Spring 2019 or earlier, if a table field has the `SqlDataType` set to a value other than `Varchar` (which is the default), you must delete the `SqlDataType` property on the field, otherwise, you will will not be able to successfully synchronize the extension.
 
