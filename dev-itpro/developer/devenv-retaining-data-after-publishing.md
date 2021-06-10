@@ -43,7 +43,7 @@ ForceSync is similar to the existing Synchronize schema update mode, but contain
 
 - Changing the main table's primary key, in which case the data from the extension tables will be lost
 - Field renames are allowed and supported in this mode, but the data can only be preserved if you maintain the same ID for the field. If you change both the name and the ID of the field then the data will be lost.
-- Changing DataPerCompany from `true` to `false` is a schema-breaking change, because it removes a field in the database.
+- Changing [DataPerCompany](/properties/devenv-datapercompany-property.md) from `true` to `false` is a schema-breaking change, because it removes a field in the database.
 
 > [!IMPORTANT]  
 > This schema update mode is only meant for testing and development and should never be used in production.
