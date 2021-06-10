@@ -55,7 +55,7 @@ If you, during development, for example, discover that you no longer want field 
  
 - When you make changes to the data types, you can only *enlarge* the unit size, and *not decrease* the unit size. For example, you can set a text type from `Code[20]` to `Code[50]` or `Text[32]` to  `Text[87]`, and you cannot set a text type from `Code[50]` to `Code[30]` or `Text[87]` to `Text[40]`.  
 
-- Making major table structural changes could lead to compilation errors. For example, if you want to update a primary key. In this case, the table data cannot be synchronized, and if you want to publish the extension, you must change the `schemaUpdateMode` to `Recreate`. Likewise, changing the [DataPerCompany](/properties/devenv-datapercompany-property.md) from `true` to `false` is a schema-breaking change, because it removes a field in the database.
+- Making major table structural changes could lead to compilation errors. For example, if you want to update a primary key. In this case, the table data cannot be synchronized, and if you want to publish the extension, you must change the `schemaUpdateMode` to `Recreate`. Likewise, changing the [DataPerCompany](/properties/devenv-datapercompany-property.md) from `true` to `false` is a schema-breaking change, because it changes the number of tables per company.
 
 - For extensions built on [!INCLUDE[prod_short](includes/prod_short.md)] Spring 2019 or earlier, if a table field has the `SqlDataType` set to a value other than `Varchar` (which is the default), you must delete the `SqlDataType` property on the field, otherwise, you will will not be able to successfully synchronize the extension.
 
