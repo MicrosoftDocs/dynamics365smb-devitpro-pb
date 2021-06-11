@@ -19,8 +19,6 @@ Would you like to know what has changed in update 18.2? Below you'll find an ove
 ## Hotfixes
 Find an overview of hotfixes in this [article](https://support.microsoft.com/topic/update-18-1-for-microsoft-dynamics-365-business-central-2021-release-wave-1-application-build-18-1-25158-platform-build-18-0-25290-c2b1b1d3-e875-4079-817e-aa51454feddb).
 
-
-
 ## Localization updates 
 
 | Country| Feature change |
@@ -48,7 +46,7 @@ All customers can now receive up-front email notifications seven days in advance
 In the upcoming June update to Power BI Desktop we have included an new connector for Business Central allowing you to get data faster from Business Central to Power BI. Note the update to Power BI Desktop is scheduled later in June and you will get it automatically if you have installed Power BI Desktop from Microsoft Store. Read more about the new capabilities [here](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/enable-power-bi-connector-work-business-central-apis-instead-web-services-only). Please note that this change is for Business Central online only. 
 
 **AboutTitle and AboutText properties**  
-We’ve updated [AL reference docs](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/properties/devenv-abouttitle-property) with plenty of details, including the list of page combinations where the About properties have different or no effect. Update 18.2 fully reflects these behaviours.
+We’ve updated [AL reference docs](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/properties/devenv-abouttitle-property) with plenty of details, including the list of page combinations where the About properties have different or no effect. Update 18.2 fully reflects these behaviors.
 
 **Business Central Office Hours Calls in June**  
 Make sure to join the office hours calls around 'Working with Dimensions' on June 15 and 'DevOps for Per Tenant Extensions' on June 29. Register and stay tuned for the upcoming calls: https://aka.ms/BCOfficeHours. Also, notice that in the months of July and August, there will be no office hours calls. 
