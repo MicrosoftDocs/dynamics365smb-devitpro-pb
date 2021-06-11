@@ -35,6 +35,11 @@ Specifies if a Microsoft .NET Framework object that is defined by a DotNet varia
 ```
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+When a local .NET Framework object is disposed, it cannot be assigned outside the scope of its local function. If you want to assign the local **DotNet** variable to a global AL or .NET.
+
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

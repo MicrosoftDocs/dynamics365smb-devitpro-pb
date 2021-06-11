@@ -37,13 +37,21 @@ Specifies a session settings handler function
 procedure SessionSettingsHandler(var SessionSettings: SessionSettings) : Boolean;
 ```
 
-### Parameters
+### Arguments
 *SessionSettings*  
 &emsp;Type: [SessionSettings](../methods-auto/sessionsettings/sessionsettings-data-type.md)  
 Session settings object to be populated
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+## Remarks
+
+The **SessionSettingsHandler** method is called when SessionSetting is updated. 
+
+For more information about handler methods, see [Creating Handler Methods](../devenv-creating-handler-methods.md).
+
+## See Also
+
+[AL Method Reference](../methods-auto/library.md)  
+[Method Attributes](devenv-method-attributes.md)  
+[Test Codeunits and Test Functions](../devenv-test-codeunits-and-test-methods.md)

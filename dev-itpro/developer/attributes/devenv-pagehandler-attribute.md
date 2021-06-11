@@ -43,13 +43,22 @@ procedure PageHandler(var Page: TestPage)
 procedure PageHandler(var Page: Page)
 ```
 
-### Parameters
+### Arguments
 *Page*  
 &emsp;Type: [TestPage](../methods-auto/testpage/testpage-data-type.md)  
 A specific page.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+## Remarks
+
+The **PageHandler** method is called when a non-modal page is invoked in the code. 
+
+For more information about handler methods, see [Creating Handler Methods](../devenv-creating-handler-methods.md).
+
+## See Also
+
+[AL Method Reference](../methods-auto/library.md)  
+[Method Attributes](devenv-method-attributes.md)  
+[Test Codeunits and Test Functions](../devenv-test-codeunits-and-test-methods.md)

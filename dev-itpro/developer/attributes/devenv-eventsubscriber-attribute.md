@@ -66,6 +66,38 @@ Specifies what happens to the subscriber method call when the user account that 
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+The value of the *ObjectType* argument will depend on the type of event: business, integration, and trigger.
+
+- Business and integration events are published by event publisher methods in any of the valid object types. To subscribe to a business or integration type event, you specify the object that contains the event publisher method that defines the event.
+
+- Trigger events are system events that are automatically declared and published in table and page object. To subscribe to a trigger event, you specify the `Table` or `Page`, depending on where the trigger published from.
+
+For the *SkipOnMissingLicense* and *SkipOnMissingPermission* arguments, **True** will ignore the method call, and the code execution will continue to the next subscriber; **false** will throw an error and the code execution stops. **false** is the default. 
+
+## Example
+This example publishes an integration type event by using the **OnAddressLineChanged** method. The method takes a single text data type parameter. The *IncludeSender* and *GlobalVarAccess* arguments are set to **false**.
+
+```AL
+codeunit 50105 MyEventPublisher
+{
+    [IntegrationEvent(false, false)]
+    procedure OnAddressLineChanged(line : Text[100]);
+    begin
+    end;
+}
+
+codeunit 50106 MyEventSubscriber
+{
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::MyEventPublisher, 'OnAddressLineChanged', '', true, true)]
+    local procedure MyProcedure(line: Text[100])
+    begin
+    end;
+}
+``` 
+
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

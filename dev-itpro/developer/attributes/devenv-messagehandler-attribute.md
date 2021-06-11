@@ -43,13 +43,19 @@ procedure MessageHandler(Message: Text[1024])
 procedure MessageHandler(Message: Text)
 ```
 
-### Parameters
+### Arguments
 *Message*  
 &emsp;Type: [Text[1024]](../methods-auto/text/text-data-type.md)  
 The message of the test method.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+## Remarks
+
+The **MessageHandler** method is called when a message method is invoked in the code. 
+
+For more information about handler methods, see [Creating Handler Methods](../devenv-creating-handler-methods.md).
+
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

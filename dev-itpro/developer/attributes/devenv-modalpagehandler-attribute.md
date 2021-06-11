@@ -43,13 +43,20 @@ procedure ModalPageHandler(var Page: TestPage)
 procedure ModalPageHandler(var Page: Page, var Response: Action)
 ```
 
-### Parameters
+### Arguments
 *Page*  
 &emsp;Type: [TestPage](../methods-auto/testpage/testpage-data-type.md)  
 A specific page.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+The **ModalPageHandler** method is called when a modal page is invoked in the code.
+
+For more information about handler methods, see [Creating Handler Methods](../devenv-creating-handler-methods.md).
+
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

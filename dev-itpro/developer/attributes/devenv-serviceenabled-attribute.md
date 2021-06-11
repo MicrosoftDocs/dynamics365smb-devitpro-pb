@@ -33,6 +33,22 @@ Exposes a method to the service.
 ```
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Example
+
+```AL
+    [ServiceEnabled]
+    procedure Post(var ActionContext: WebServiceActionContext)
+    var
+        SalesHeader: Record "Sales Header";
+        SalesInvoiceHeader: Record "Sales Invoice Header";
+    begin
+        GetDraftInvoice(SalesHeader);
+        PostInvoice(SalesHeader, SalesInvoiceHeader);
+        SetActionResponse(ActionContext, SalesInvoiceHeader.Id);
+    end;
+```
+
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

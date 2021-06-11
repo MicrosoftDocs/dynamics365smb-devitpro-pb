@@ -43,7 +43,7 @@ procedure StrMenuHandler(Options: Text[1024], var Choice: Integer, Instruction: 
 procedure StrMenuHandler(Options: Text, var Choice: Integer, Instruction: Text)
 ```
 
-### Parameters
+### Arguments
 *Options*  
 &emsp;Type: [Text[1024]](../methods-auto/text/text-data-type.md)  
 The list of the different option values.
@@ -60,6 +60,15 @@ The leading text.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+## Remarks
+
+The **StrMenuHandler** method is called when a StrMenu method is invoked in code.
+
+For more information about handler methods, see [Creating Handler Methods](../devenv-creating-handler-methods.md).
+
+## See Also
+
+[AL Method Reference](../methods-auto/library.md)  
+[Method Attributes](devenv-method-attributes.md)  
+[Test Codeunits and Test Functions](../devenv-test-codeunits-and-test-methods.md)  

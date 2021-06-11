@@ -43,13 +43,20 @@ procedure HyperlinkHandler(Message: Text[1024])
 procedure HyperlinkHandler(Message: Text)
 ```
 
-### Parameters
+### Arguments
 *Message*  
 &emsp;Type: [Text[1024]](../methods-auto/text/text-data-type.md)  
 The actual hyperlink.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+The **HyperLinkHandler** method is called when a hyperlink is invoked in the code
+
+For more information about handler methods, see [Creating Handler Methods](../devenv-creating-handler-methods.md).
+
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

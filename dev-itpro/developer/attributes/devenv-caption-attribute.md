@@ -32,7 +32,7 @@ Specifies a caption for OData actions.
 [Caption(Text: Text [, Locked: Boolean] [, Comment: Text] [, MaxLength: Integer])]
 ```
 
-### Parameters
+### Arguments
 *Text*  
 &emsp;Type: [Text](../methods-auto/text/text-data-type.md)  
 Specifies the translation text.

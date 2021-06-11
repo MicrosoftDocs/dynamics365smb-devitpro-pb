@@ -32,13 +32,21 @@ Specifies how security filters are applied to the record.
 [SecurityFiltering(Kind: SecurityFilter)]
 ```
 
-### Parameters
+### Arguments
 *Kind*  
 &emsp;Type: [SecurityFilter](../methods-auto/securityfilter/securityfilter-option.md)  
 The security filters applied to the record.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks 
+
+You can use the [SecurityFiltering (Record) Method](../methods-auto/record/record-securityfiltering-method.md) to get or change the security filters applied to the record.
+
+For more information, see [Using Security Filters in Business Central](../../security/security-filters.md).
+
+
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

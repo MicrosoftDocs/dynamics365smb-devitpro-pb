@@ -35,7 +35,7 @@ Specifies that the annotated symbol will be deprecated.
 [Obsolete([Reason: Text] [, Tag: Text])]
 ```
 
-### Parameters
+### Arguments
 *[Optional] Reason*  
 &emsp;Type: [Text](../methods-auto/text/text-data-type.md)  
 Specifies the reason for the symbol being deprecated.
@@ -47,6 +47,31 @@ Specifies a free-form text to support tracking of where and when the object was 
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+## Remarks
+
+To mark objects and other elements of code, use the [ObsoleteState Property](../properties/devenv-obsoletestate-property.md) and [ObsoleteReason Property](../properties/devenv-obsoletereason-property.md).
+
+## Example
+Setting the attribute on a method or a variable. Each method must be marked with `[Obsolete('<Reason>','<tag>')]`.
+    
+```AL
+codeunit 50143 SoonObsolete
+{    
+       [Obsolete('Pending removal use X instead', '17.0')]
+       procedure MyProcedure()
+       var
+           myInt: Integer;
+       begin
+           // Make something happen
+       end;
+}    
+    
+```
+     
+## See Also
+
+[AL Method Reference](../methods-auto/library.md)  
+[Method Attributes](devenv-obsolete-attribute.md)  
+[ObsoleteState Property](../properties/devenv-obsoletestate-property.md)  
+[ObsoleteReason Property](../properties/devenv-obsoletereason-property.md)  

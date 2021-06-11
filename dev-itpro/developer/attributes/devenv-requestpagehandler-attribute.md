@@ -37,13 +37,25 @@ Specifies that the method is a RequestPageHandler method, which handles the requ
 procedure RequestPageHandler(var RequestPage: TestRequestPage)
 ```
 
-### Parameters
+### Arguments
 *RequestPage*  
 &emsp;Type: [TestRequestPage](../methods-auto/testrequestpage/testrequestpage-data-type.md)  
 The ID of a specific report.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+## Remarks
+
+The **RequestPageHandler** method is called when a report is invoked in the code. 
+
+If you create a **ReportHandler** method, then that method replaces all code for running the report, including the request page, and a **RequestPageHandler** is not called. Only create a **RequestPageHandler** method if you are not using a **ReportHandler** one. 
+
+For more information about handler methods, see [Creating Handler Methods](../devenv-creating-handler-methods.md).
+
+## See Also
+
+[AL Method Reference](../methods-auto/library.md)  
+[Method Attributes](devenv-method-attributes.md)  
+[ReportHandler Attribute](devenv-reporthandler-attribute.md)  
+[Test Codeunits and Test Functions](../devenv-test-codeunits-and-test-methods.md)

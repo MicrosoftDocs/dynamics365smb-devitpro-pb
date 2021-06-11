@@ -33,6 +33,14 @@ Sets whether the AL variable's value is included in the dataset.
 ```
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+## Remarks
+
+You must define this attribute on a variable if it is used as the value of the [Editable Property](../properties/devenv-editable-property.md), [Enabled Property](../properties/devenv-enabled-property.md), [Visible Property](../properties/devenv-visible-property.md) and [StyleExpr Property](../properties/devenv-styleexpr-property.md).  
+
+## See Also
+[AL Method Reference](../methods-auto/library.md)  
+[StyleExpr Property](../properties/devenv-styleexpr-property.md)   
+[Editable Property](../properties/devenv-editable-property.md)  
+[Enabled Property](../properties/devenv-enabled-property.md)  
+[Visible Property](../properties/devenv-visible-property.md)

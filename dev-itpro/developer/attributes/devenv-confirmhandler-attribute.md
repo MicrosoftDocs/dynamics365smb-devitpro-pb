@@ -43,7 +43,7 @@ procedure ConfirmHandler(Question: Text[1024], var Reply: Boolean)
 procedure ConfirmHandler(Question: Text, var Reply: Boolean)
 ```
 
-### Parameters
+### Arguments
 *Question*  
 &emsp;Type: [Text[1024]](../methods-auto/text/text-data-type.md)  
 The text of the test method.
@@ -55,6 +55,13 @@ Specifies whether the response to confirm is *yes* or *no*.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+The **ConfirmHandler** method is called when a confirm method is invoked in the code.
+
+For more information about handler methods, see [Creating Handler Methods](../devenv-creating-handler-methods.md).
+
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

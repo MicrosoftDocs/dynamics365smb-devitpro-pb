@@ -34,6 +34,40 @@ Specifies that the annotated symbol will not be available to the debugger. E.g. 
 ```
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Example
+Setting the attribute on a method. Each method must be marked with `[NonDebuggable]`.
+
+```AL
+codeunit 50142 NoDebuggingOfMethod
+{
+    [NonDebuggable]
+    local procedure MyProcedure()
+    var
+        myInt: Integer;
+    begin
+        //Make something happen
+    end;
+}
+
+```
+
+Setting the attribute on variables. Each variable must be marked as `[NonDebuggable]`.
+```AL
+codeunit 50143 NoDebuggingOfVar 
+{
+    local procedure MyProcedure()
+    var
+        [NonDebuggable]
+        myInt: Integer;
+    begin
+        //Make something happen
+    end;
+}
+
+```
+  
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+[AL Method Reference](../methods-auto/library.md)  
+[Debugging](../devenv-debugging.md)

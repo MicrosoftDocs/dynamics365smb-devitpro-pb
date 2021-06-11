@@ -37,7 +37,7 @@ Specifies that the method is a SendNotificationHandler method, which handles Sen
 procedure SendNotificationHandler(var TheNotification: Notification) : Boolean;
 ```
 
-### Parameters
+### Arguments
 *[Optional] HandlerIsOptional*  
 &emsp;Type: [Boolean](../methods-auto/boolean/boolean-data-type.md)  
 Specifies whether the notification handler method is optional.
@@ -49,6 +49,15 @@ Holds the actual notification.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+## Remarks
+
+The **SendNotificationHandler** method is called when a notification is raised from the code.
+
+For more information about handler methods, see [Creating Handler Methods](../devenv-creating-handler-methods.md).
+
+## See Also
+
+[AL Method Reference](../methods-auto/library.md)  
+[Method Attributes](devenv-method-attributes.md)  
+[Test Codeunits and Test Functions](../devenv-test-codeunits-and-test-methods.md)

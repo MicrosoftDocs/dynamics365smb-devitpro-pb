@@ -32,7 +32,7 @@ Specifies the scope of a method.
 [Scope(Kind: Text)]
 ```
 
-### Parameters
+### Arguments
 *Kind*  
 &emsp;Type: [Text](../methods-auto/text/text-data-type.md)  
 The scope of the method.
@@ -49,6 +49,34 @@ The scope of the method.
 |**OnPrem**|Available or changed with runtime version 4.0.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+> [!NOTE]  
+> In previous versions `OnPrem` was equivalent to `Internal` and `Cloud` was equivalent to `External`. Both `Internal` and `External` options are being deprecated.
+
+For more information, see [Compilation Scope Overview](../devenv-compilation-scope-overview.md).
+
+## Example
+
+Setting the attribute on a method. Each method must be explicitly marked with `[Scope('OnPrem')]` because default is `[Scope('Cloud')]`.
+
+```AL
+procedure MyProcedureForCloud()
+    begin
+        Message('My procedure is available in cloud, but cannot call any onprem method.');
+    end;
+
+[Scope('OnPrem')]
+procedure MyProcedureForOnPrem()
+    begin
+        Message('My procedure is not available to a cloud extension.');
+    end;
+
+```
+  
+## See Also
+
+[AL Method Reference](../methods-auto/library.md)  
+[Method Attributes](devenv-method-attributes.md)  
+[JSON Files](../devenv-json-files.md)  
+[Access Property](../properties/devenv-access-property.md)  
+[Extensible Property](../properties/devenv-extensible-property.md)

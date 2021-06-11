@@ -37,13 +37,22 @@ Specifies that the method is a ReportHandler method, which handles specific repo
 procedure ReportHandler(var Report: Report)
 ```
 
-### Parameters
+### Arguments
 *Report*  
 &emsp;Type: [Report](../methods-auto/report/report-data-type.md)  
 A specific report.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+## Remarks
+
+The **ReportHandler** method is called when a report is invoked in the code.
+
+For more information about handler methods, see [Creating Handler Methods](../devenv-creating-handler-methods.md).
+
+## See Also
+
+[AL Method Reference](../methods-auto/library.md)  
+[Method Attributes](devenv-method-attributes.md)  
+[Test Codeunits and Test Functions](../devenv-test-codeunits-and-test-methods.md)
