@@ -33,7 +33,7 @@ The next step is to add the `"applicationInsightsConnectionString"` setting the 
 "applicationInsightsConnectionString": "<connection string>"
 ```
 
-Replace `<connection string>` with the string that you copied in the Azure Application Insights overview. For more information about the format of the Application Insight connection string, see [Connection Strings](azure/azure-monitor/app/sdk-connection-string?tabs=net).
+Replace `<connection string>` with the string that you copied in the Azure Application Insights overview. For more information about the format of the Application Insight connection string, see [Connection Strings](/azure/azure-monitor/app/sdk-connection-string?tabs=net).
 
 When done, build the extension package, then publish and install it as usual. When the extension is run from [!INCLUDE[prod_short](includes/prod_short.md)], Application Insights gathers the telemetry data for viewing and analyzing.
 
