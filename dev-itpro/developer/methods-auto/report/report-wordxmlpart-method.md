@@ -3,7 +3,7 @@ title: "Report.WordXmlPart Method"
 description: "Returns the report data structure as structured XML that is compatible with Microsoft Word custom XML parts. The method has an instance call and a static call. The following code shows the syntax of the WORDXMLPART function. The first line of code is the syntax for an instance method call. The second line of code is the syntax for a static method call."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,7 +29,7 @@ String :=   Report.WordXmlPart(Number: Integer [, ExtendedFormat: Boolean])
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The ID of the report that you want to run. If the report you specify does not exist, then a run-time error occurs.
         
-*ExtendedFormat*  
+*[Optional] ExtendedFormat*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 If you set this variable to true, then XML elements will include the following attributes:
 -   ElementType="Parameter|Column|DataItem". Specifies the element type as defined for the report in Report Designer. Parameter is typically used for elements, such as captions.

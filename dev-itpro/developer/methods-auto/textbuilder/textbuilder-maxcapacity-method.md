@@ -3,7 +3,7 @@ title: "TextBuilder.MaxCapacity Method"
 description: "Gets the maximum capacity of this TextBuilder instance."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,7 +30,7 @@ MaxCapacity :=   TextBuilder.MaxCapacity()
 ## Parameters
 *TextBuilder*  
 &emsp;Type: [TextBuilder](textbuilder-data-type.md)  
-An instance of the [TextBuilder](textbuilder-data-type.md) data type.
+An instance of the [TextBuilder](textbuilder-data-type.md) data type.  
 
 ## Return Value
 *MaxCapacity*  

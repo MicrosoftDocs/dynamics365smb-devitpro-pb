@@ -3,7 +3,7 @@ title: "RecordRef.SecurityFiltering Method"
 description: "Gets or sets how security filters are applied to the RecordRef."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,15 +29,15 @@ Gets or sets how security filters are applied to the RecordRef.
 ## Parameters
 *RecordRef*  
 &emsp;Type: [RecordRef](recordref-data-type.md)  
-An instance of the [RecordRef](recordref-data-type.md) data type.
+An instance of the [RecordRef](recordref-data-type.md) data type.  
 
-*NewSecurityFiltering*  
+*[Optional] NewSecurityFiltering*  
 &emsp;Type: [SecurityFilter](../securityfilter/securityfilter-option.md)  
 The new security filter for the RecordRef.  
 
 
 ## Return Value
-*SecurityFiltering*  
+*[Optional] SecurityFiltering*  
 &emsp;Type: [SecurityFilter](../securityfilter/securityfilter-option.md)  
 The security filter applied to the RecordRef.
 

@@ -3,7 +3,7 @@ title: "ErrorInfo.ErrorType Method"
 description: "Specifies type of the error. 'Client' shows the specified message in the client and sends it to telemetry. 'Internal' shows a generic message in the client and sends the specified message to telemetry."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,15 +29,15 @@ Specifies type of the error. 'Client' shows the specified message in the client 
 ## Parameters
 *ErrorInfo*  
 &emsp;Type: [ErrorInfo](errorinfo-data-type.md)  
-An instance of the [ErrorInfo](errorinfo-data-type.md) data type.
+An instance of the [ErrorInfo](errorinfo-data-type.md) data type.  
 
-*ErrorType*  
+*[Optional] ErrorType*  
 &emsp;Type: [ErrorType](../errortype/errortype-option.md)  
 The error type of the error.  
 
 
 ## Return Value
-*ErrorType*  
+*[Optional] ErrorType*  
 &emsp;Type: [ErrorType](../errortype/errortype-option.md)  
 The current error type of the ErrorInfo.
 

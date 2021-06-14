@@ -3,7 +3,7 @@ title: "File.Read Method"
 description: "Reads from an MS-DOS encoded file or binary file."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -31,7 +31,7 @@ Reads from an MS-DOS encoded file or binary file.
 ## Parameters
 *File*  
 &emsp;Type: [File](file-data-type.md)  
-An instance of the [File](file-data-type.md) data type.
+An instance of the [File](file-data-type.md) data type.  
 
 *Read*  
 &emsp;Type: [Any](../any/any-data-type.md)  
@@ -39,7 +39,7 @@ Streams a BigText object that is stored as a BLOB in a table to a BigText variab
 
 
 ## Return Value
-*Read*  
+*[Optional] Read*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
  If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 

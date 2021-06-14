@@ -3,7 +3,7 @@ title: "JsonValue.SetValue Method"
 description: "Set the contents of the JsonValue variable to the JSON representation of the given value."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,7 @@ Set the contents of the JsonValue variable to the JSON representation of the giv
 ## Parameters
 *JsonValue*  
 &emsp;Type: [JsonValue](jsonvalue-data-type.md)  
-An instance of the [JsonValue](jsonvalue-data-type.md) data type.
+An instance of the [JsonValue](jsonvalue-data-type.md) data type.  
 
 *Value*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  

@@ -3,7 +3,7 @@ title: "NumberSequence.Current Method"
 description: "Gets the current value from the number sequence, without doing any increment. The value is retrieved out of transaction. The value will not be returned on transaction rollback."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,7 +28,7 @@ Current :=   NumberSequence.Current(Name: String [, CompanySpecific: Boolean])
 *Name*  
 &emsp;Type: [String](../string/string-data-type.md)  
 Specifies the name of the number sequence.  
-*CompanySpecific*  
+*[Optional] CompanySpecific*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 Specifies if the number sequence is company-specific. Default is true.  
 

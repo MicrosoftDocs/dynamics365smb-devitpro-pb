@@ -3,7 +3,7 @@ title: "MediaSet.Count Method"
 description: "Gets the number of media objects that are included in the MediaSet of a record."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,7 +30,7 @@ Count :=   MediaSet.Count()
 ## Parameters
 *MediaSet*  
 &emsp;Type: [MediaSet](mediaset-data-type.md)  
-An instance of the [MediaSet](mediaset-data-type.md) data type.
+An instance of the [MediaSet](mediaset-data-type.md) data type.  
 
 ## Return Value
 *Count*  

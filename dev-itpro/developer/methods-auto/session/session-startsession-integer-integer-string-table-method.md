@@ -3,7 +3,7 @@ title: "Session.StartSession Method"
 description: "Starts a session without a UI and runs the specified codeunit."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -33,16 +33,16 @@ The ID of the new session that is started. The ID is assigned to the SessionID v
 *CodeunitId*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The ID of the codeunit to run when the session is started.  
-*Company*  
+*[Optional] Company*  
 &emsp;Type: [String](../string/string-data-type.md)  
 The company in which to start the session. By default, the session is started in the same company as the calling session.  
-*Record*  
+*[Optional] Record*  
 &emsp;Type: [Record](../record/record-data-type.md)  
 A record that is passed to the OnRun trigger of the codeunit that runs when the session is started. This parameter is optional.  
 
 
 ## Return Value
-*Ok*  
+*[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 

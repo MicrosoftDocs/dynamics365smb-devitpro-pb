@@ -3,7 +3,7 @@ title: "System.CalcDate Method"
 description: "Calculates a new date that is based on a date expression and a reference date."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -42,7 +42,7 @@ These production rules show that date expressions consist of zero, one, two, or 
 -   CW (current week; corresponds to \<Prefix\>\<Unit\>)
 The internal calendar starts on Monday and ends on Sunday. This means that Monday is weekday 1 and Sunday is weekday 7. A run-time error occurs if the syntax of DateExpression is incorrect.
           
-*Date*  
+*[Optional] Date*  
 &emsp;Type: [Date](../date/date-data-type.md)  
 Use this optional parameter to define a reference date. The default is the current system date. If you omit this optional value, the current system date is used.  
 

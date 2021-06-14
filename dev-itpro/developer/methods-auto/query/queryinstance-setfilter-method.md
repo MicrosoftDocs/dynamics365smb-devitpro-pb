@@ -3,7 +3,7 @@ title: "Query.SetFilter Method"
 description: "Sets a filter on a column of a query to limit the records in the resulting data set of a query."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,7 @@ Sets a filter on a column of a query to limit the records in the resulting data 
 ## Parameters
 *Query*  
 &emsp;Type: [Query](query-data-type.md)  
-An instance of the [Query](query-data-type.md) data type.
+An instance of the [Query](query-data-type.md) data type.  
 
 *Column*  
 &emsp;Type: [Any](../any/any-data-type.md)  
@@ -37,7 +37,7 @@ The name of the column in the query that you want to filter. The name is defined
 &emsp;Type: [String](../string/string-data-type.md)  
 The filter expression. A valid expression consists of alphanumeric characters and one or more of the following operators: \<, \>, \\, &, &#124;, and =. You can use replacement fields (%1, %2, and so on) to insert values at run-time.
         
-*Value*  
+*[Optional] Value*  
 &emsp;Type: [Any](../any/any-data-type.md)  
 Replacement values to insert in replacement fields in the filter expression. The data type of Value must match the data type of field that is referred to by the ColumnName.  
 

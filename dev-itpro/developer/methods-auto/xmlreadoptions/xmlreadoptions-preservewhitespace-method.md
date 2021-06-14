@@ -3,7 +3,7 @@ title: "XmlReadOptions.PreserveWhitespace Method"
 description: "Gets or sets a value that indicates whether insignificant white space should be preserved during parsing."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,15 +29,15 @@ Gets or sets a value that indicates whether insignificant white space should be 
 ## Parameters
 *XmlReadOptions*  
 &emsp;Type: [XmlReadOptions](xmlreadoptions-data-type.md)  
-An instance of the [XmlReadOptions](xmlreadoptions-data-type.md) data type.
+An instance of the [XmlReadOptions](xmlreadoptions-data-type.md) data type.  
 
-*NewValue*  
+*[Optional] NewValue*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 The new value of the flag.  
 
 
 ## Return Value
-*Value*  
+*[Optional] Value*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if insignificant white spaces are preserved during parsing, otherwise **false**.
 

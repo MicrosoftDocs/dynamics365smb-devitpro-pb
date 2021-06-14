@@ -3,7 +3,7 @@ title: "Dictionary.Remove Method"
 description: "Removes the value with the specified key from the Dictionary."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,7 @@ Removes the value with the specified key from the Dictionary.
 ## Parameters
 *Dictionary*  
 &emsp;Type: [Dictionary](dictionary-data-type.md)  
-An instance of the [Dictionary](dictionary-data-type.md) data type.
+An instance of the [Dictionary](dictionary-data-type.md) data type.  
 
 *Key*  
 &emsp;Type: [TKey](dictionary-data-type.md)  
@@ -35,7 +35,7 @@ The key of the element to remove.
 
 
 ## Return Value
-*Ok*  
+*[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the element is successfully removed; otherwise, **false**. This method also returns **false** if the given key was not found in the original Dictionary.
 

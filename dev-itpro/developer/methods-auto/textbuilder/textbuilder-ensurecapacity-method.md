@@ -3,7 +3,7 @@ title: "TextBuilder.EnsureCapacity Method"
 description: "Ensures that the capacity of this TextBuilder instance is at least the specified value."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,7 @@ Ensures that the capacity of this TextBuilder instance is at least the specified
 ## Parameters
 *TextBuilder*  
 &emsp;Type: [TextBuilder](textbuilder-data-type.md)  
-An instance of the [TextBuilder](textbuilder-data-type.md) data type.
+An instance of the [TextBuilder](textbuilder-data-type.md) data type.  
 
 *NewCapacity*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
@@ -35,7 +35,7 @@ The minimum capacity to ensure.
 
 
 ## Return Value
-*Ok*  
+*[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the capacity of the TextBuilder is at least the specified value, otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 

@@ -3,7 +3,7 @@ title: "File.TextMode Method"
 description: "Sets whether a file should be opened as an ASCII file or a binary file. Gets the current setting of this option for a file."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -33,15 +33,15 @@ Sets whether a file should be opened as an ASCII file or a binary file. Gets the
 ## Parameters
 *File*  
 &emsp;Type: [File](file-data-type.md)  
-An instance of the [File](file-data-type.md) data type.
+An instance of the [File](file-data-type.md) data type.  
 
-*Mode*  
+*[Optional] Mode*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
   
 
 
 ## Return Value
-*Textmode*  
+*[Optional] Textmode*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 
 

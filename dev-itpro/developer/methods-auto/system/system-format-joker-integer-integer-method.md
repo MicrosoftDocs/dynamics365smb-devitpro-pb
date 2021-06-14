@@ -3,7 +3,7 @@ title: "System.Format Method"
 description: "Formats a value into a string."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -31,10 +31,10 @@ String :=   System.Format(Value: Any [, Length: Integer] [, FormatNumber: Intege
 &emsp;Type: [Any](../any/any-data-type.md)  
 This is an AL variable (expression) of any simple data type, such as Option, Integer, BigInteger, Decimal, Char, Text, Code, Date, Time, DateTime, Boolean, or GUID. If, when the system formats Value, the result is a value larger than the maximum length MAXSTRLEN method (Code, Text) of String, a run-time error occurs.
           
-*Length*  
+*[Optional] Length*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 This optional parameter specifies the length of String.  
-*FormatNumber*  
+*[Optional] FormatNumber*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 This optional parameter specifies the format that you want to use.  
 

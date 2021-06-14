@@ -3,7 +3,7 @@ title: "KeyRef.FieldIndex Method"
 description: "Gets the FieldRef of the field that has this index in the key referred to by the KeyRef variable. Returns an error if no key is selected."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,7 @@ Field :=   KeyRef.FieldIndex(Index: Integer)
 ## Parameters
 *KeyRef*  
 &emsp;Type: [KeyRef](keyref-data-type.md)  
-An instance of the [KeyRef](keyref-data-type.md) data type.
+An instance of the [KeyRef](keyref-data-type.md) data type.  
 
 *Index*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  

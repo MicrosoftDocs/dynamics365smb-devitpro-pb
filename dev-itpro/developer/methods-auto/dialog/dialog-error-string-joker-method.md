@@ -3,7 +3,7 @@ title: "Dialog.Error Method"
 description: "Displays an error message and ends the execution of AL code."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -31,7 +31,7 @@ Displays an error message and ends the execution of AL code.
 &emsp;Type: [String](../string/string-data-type.md)  
 This string contains the text of the error message you want to display to the user. Use percent signs (%) or number signs (#) to insert variable values into the string. Place the percent or number signs where you want to substitute the variable value. The string can be a text constant that is enabled for multilanguage functionality.
         
-*Value*  
+*[Optional] Value*  
 &emsp;Type: [Any](../any/any-data-type.md)  
 Any variable or expression to be inserted in String. You can insert up to 10 values. For '#'-type fields, the value is truncated according to the total number of number-sign characters in String. For '%'-type fields, the full length of the value is printed.
           

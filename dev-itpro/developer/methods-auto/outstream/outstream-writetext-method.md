@@ -3,7 +3,7 @@ title: "OutStream.WriteText Method"
 description: "Writes text to an OutStream object."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,19 +27,19 @@ Writes text to an OutStream object.
 ## Parameters
 *OutStream*  
 &emsp;Type: [OutStream](outstream-data-type.md)  
-An instance of the [OutStream](outstream-data-type.md) data type.
+An instance of the [OutStream](outstream-data-type.md) data type.  
 
-*Text*  
+*[Optional] Text*  
 &emsp;Type: [String](../string/string-data-type.md)  
 The text to write. If you do not specify this, a carriage return and a line feed are written.
         
-*Length*  
+*[Optional] Length*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The number of characters to be written.  
 
 
 ## Return Value
-*Written*  
+*[Optional] Written*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
  If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 

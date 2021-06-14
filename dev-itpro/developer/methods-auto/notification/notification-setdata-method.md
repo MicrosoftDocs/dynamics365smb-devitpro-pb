@@ -3,7 +3,7 @@ title: "Notification.SetData Method"
 description: "Specifies a data property value for the notification. The data is specified as text in a key-value pair."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,7 @@ Specifies a data property value for the notification. The data is specified as t
 ## Parameters
 *Notification*  
 &emsp;Type: [Notification](notification-data-type.md)  
-An instance of the [Notification](notification-data-type.md) data type.
+An instance of the [Notification](notification-data-type.md) data type.  
 
 *Name*  
 &emsp;Type: [String](../string/string-data-type.md)  
