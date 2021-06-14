@@ -73,7 +73,7 @@ We recommend that you use the methods in codeunit **419 File Management** to upl
 
 [!INCLUDE[multi_file_download_web_client](../../includes/multi_file_download_web_client.md)]
 
-## Example  
+## Example - On-premises 
 
 ```al
  var
