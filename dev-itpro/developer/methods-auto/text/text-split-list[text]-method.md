@@ -3,7 +3,7 @@ title: "Text.Split Method"
 description: "Splits a string into a maximum number of substrings based on a collection of separators."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,7 +29,7 @@ Result :=   Text.Split(Separators: List of [Text])
 ## Parameters
 *Text*  
 &emsp;Type: [Text](text-data-type.md)  
-An instance of the [Text](text-data-type.md) data type.
+An instance of the [Text](text-data-type.md) data type.  
 
 *Separators*  
 &emsp;Type: [List of [Text]](../list/list-data-type.md)  

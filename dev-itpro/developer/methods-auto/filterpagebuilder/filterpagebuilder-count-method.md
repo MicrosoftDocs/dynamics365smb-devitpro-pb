@@ -3,7 +3,7 @@ title: "FilterPageBuilder.Count Method"
 description: "Gets the number of filter controls that are specified in the FilterPageBuilder object instance."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,7 +30,7 @@ Count :=   FilterPageBuilder.Count()
 ## Parameters
 *FilterPageBuilder*  
 &emsp;Type: [FilterPageBuilder](filterpagebuilder-data-type.md)  
-An instance of the [FilterPageBuilder](filterpagebuilder-data-type.md) data type.
+An instance of the [FilterPageBuilder](filterpagebuilder-data-type.md) data type.  
 
 ## Return Value
 *Count*  

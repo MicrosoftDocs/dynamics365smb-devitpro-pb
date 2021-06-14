@@ -3,7 +3,7 @@ title: "Debugger.StepOver Method"
 description: "Executes a method call and then stops at the first line outside the method call."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,7 @@ Executes a method call and then stops at the first line outside the method call.
 
 
 ## Return Value
-*Ok*  
+*[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 

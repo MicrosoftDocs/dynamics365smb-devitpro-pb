@@ -59,7 +59,7 @@ An exception to this type of schedule is the continuous updates to the underlyin
 [Administration of Business Central Online](administration/tenant-administration.md)  
 [Technical Support for Business Central](technical-support.md)  
 [Escalating support issues to Microsoft](administration/manage-technical-support.md#escalating-support-issues-to-microsoft)  
-[Data and access when a trial or subscription ends](administration/tenant-administration.md#data-and-access-when-a-trial-or-subscription-ends)  
+[Data and access when a trial or subscription ends](administration/tenant-administration.md#expire)  
 [Azure global infrastructure](https://azure.microsoft.com/global-infrastructure)  
 [Azure reliability](https://azure.microsoft.com/features/reliability/)  
 [Microsoft Service Trust](https://servicetrust.microsoft.com/)  

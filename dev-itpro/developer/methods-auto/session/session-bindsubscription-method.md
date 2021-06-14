@@ -3,7 +3,7 @@ title: "Session.BindSubscription Method"
 description: "Binds the event subscriber methods in the codeunit to the current codeunit instance for handling the events that they subscribe to. This essentially activates the subscriber functions for the codeunit instance."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -33,7 +33,7 @@ The codeunit that contains the event subscribers.
 
 
 ## Return Value
-*Ok*  
+*[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the event subscriber methods bind successfully to the codeunit instance and no errors occurred, otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 

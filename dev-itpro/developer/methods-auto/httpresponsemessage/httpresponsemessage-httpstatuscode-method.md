@@ -3,7 +3,7 @@ title: "HttpResponseMessage.HttpStatusCode Method"
 description: "Gets the status code of the HTTP response."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,7 +30,7 @@ StatusCode :=   HttpResponseMessage.HttpStatusCode()
 ## Parameters
 *HttpResponseMessage*  
 &emsp;Type: [HttpResponseMessage](httpresponsemessage-data-type.md)  
-An instance of the [HttpResponseMessage](httpresponsemessage-data-type.md) data type.
+An instance of the [HttpResponseMessage](httpresponsemessage-data-type.md) data type.  
 
 ## Return Value
 *StatusCode*  

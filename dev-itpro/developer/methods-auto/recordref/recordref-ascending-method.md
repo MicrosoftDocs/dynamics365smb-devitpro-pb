@@ -3,7 +3,7 @@ title: "RecordRef.Ascending Method"
 description: "Changes or checks the order in which a search through the table that is referred to by RecordRef will be performed."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,15 +29,15 @@ Changes or checks the order in which a search through the table that is referred
 ## Parameters
 *RecordRef*  
 &emsp;Type: [RecordRef](recordref-data-type.md)  
-An instance of the [RecordRef](recordref-data-type.md) data type.
+An instance of the [RecordRef](recordref-data-type.md) data type.  
 
-*SetAscending*  
+*[Optional] SetAscending*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 If this parameter is true, it will search in ascending order. If this parameter is false, it will search in descending order. If you do not specify this parameter, it will check the search order.  
 
 
 ## Return Value
-*IsAscending*  
+*[Optional] IsAscending*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 Specifies the order in which a search will be performed.
 

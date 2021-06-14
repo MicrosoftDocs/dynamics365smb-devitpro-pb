@@ -3,7 +3,7 @@ title: "InStream.Read Method"
 description: "Reads a specified number of bytes from an InStream object. Data is read in binary format."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,18 +27,18 @@ Reads a specified number of bytes from an InStream object. Data is read in binar
 ## Parameters
 *InStream*  
 &emsp;Type: [InStream](instream-data-type.md)  
-An instance of the [InStream](instream-data-type.md) data type.
+An instance of the [InStream](instream-data-type.md) data type.  
 
 *Variable*  
 &emsp;Type: [Any](../any/any-data-type.md)  
   
-*Length*  
+*[Optional] Length*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 Describes the number of characters to be read. If you do not specify Length, the size of the variable is used. In the case of data types other than string, code, and binary, if you specify a length that differs from the size of the variable, you receive an error message.  
 
 
 ## Return Value
-*Read*  
+*[Optional] Read*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
  If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 

@@ -355,7 +355,7 @@ In this task, you will publish and generate symbols that are required for using 
     ```
 3. <a name="PublishSymbols"></a>Publish the system.app and test.app symbol files.
 
-    If you installed the **AL Development Environment**, you can find the symbol files where your installed the environment, which by default is [!INCLUDE[prodx86installpath](../developer/includes/prodx86installpath.md)]. Otherwise, you can find the files in the **ModernDev** folder on the installation media. 
+    If you installed the **AL Development Environment**, you can find the symbol files where your installed the environment, which by default is C:\\Program Files \(x86\)\\Microsoft Dynamics 365 Business Central\\140. Otherwise, you can find the files in the **ModernDev** folder on the installation media. 
 
     To publish the symbols, open the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] as an administrator, and run the following command for each of the symbol files:
 

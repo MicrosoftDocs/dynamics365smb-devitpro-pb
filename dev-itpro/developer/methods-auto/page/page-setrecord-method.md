@@ -3,7 +3,7 @@ title: "Page.SetRecord Method"
 description: "Sets the current record for the page."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,7 @@ Sets the current record for the page.
 ## Parameters
 *Page*  
 &emsp;Type: [Page](page-data-type.md)  
-An instance of the [Page](page-data-type.md) data type.
+An instance of the [Page](page-data-type.md) data type.  
 
 *Record*  
 &emsp;Type: [Record](../record/record-data-type.md)  

@@ -3,7 +3,7 @@ title: "FilterPageBuilder.SetView Method"
 description: "Sets the current filter view, which defines the sort order, key, and filters, for a record in a filter control on a filter page. The view contains all fields that have default filters, but does not contain fields without filters."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,7 @@ Sets the current filter view, which defines the sort order, key, and filters, fo
 ## Parameters
 *FilterPageBuilder*  
 &emsp;Type: [FilterPageBuilder](filterpagebuilder-data-type.md)  
-An instance of the [FilterPageBuilder](filterpagebuilder-data-type.md) data type.
+An instance of the [FilterPageBuilder](filterpagebuilder-data-type.md) data type.  
 
 *Name*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -39,7 +39,7 @@ The filter view to apply. This can be the output of the GetView method invoked o
 
 
 ## Return Value
-*Ok*  
+*[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 

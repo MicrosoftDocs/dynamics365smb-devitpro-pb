@@ -3,7 +3,7 @@ title: "TaskScheduler.CreateTask Method"
 description: "Adds a task to ensure that a codeunit is not run before the specified time."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -55,7 +55,7 @@ Specifies the timeout of the created session. If not specified a default timeout
 
 
 ## Return Value
-*Task*  
+*[Optional] Task*  
 &emsp;Type: [Guid](../guid/guid-data-type.md)  
 
 

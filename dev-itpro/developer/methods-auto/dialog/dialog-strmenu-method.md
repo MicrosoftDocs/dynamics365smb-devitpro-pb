@@ -3,7 +3,7 @@ title: "Dialog.StrMenu Method"
 description: "Creates a menu window that displays a series of options."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -31,11 +31,11 @@ OptionNumber :=   Dialog.StrMenu(OptionMembers: String [, DefaultNumber: Integer
 &emsp;Type: [String](../string/string-data-type.md)  
 A comma-separated string. Each substring in OptionString specifies an option on the menu. The string can be a text constant that is enabled for multilanguage functionality.
         
-*DefaultNumber*  
+*[Optional] DefaultNumber*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 Use this optional parameter to determine a default option, which is highlighted. The options are numbered 1, 2, 3, 4, and so on. If you omit this optional parameter, the first option (1) is used as the default.
           
-*Instruction*  
+*[Optional] Instruction*  
 &emsp;Type: [String](../string/string-data-type.md)  
 Use this optional parameter to add a description to the option values.  
 

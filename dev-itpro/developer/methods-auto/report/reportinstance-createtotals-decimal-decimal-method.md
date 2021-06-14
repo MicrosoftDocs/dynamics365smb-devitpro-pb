@@ -3,7 +3,7 @@ title: "Report.CreateTotals Method"
 description: "Maintains totals for a variable in AL."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,13 +27,13 @@ Maintains totals for a variable in AL.
 ## Parameters
 *Report*  
 &emsp;Type: [Report](report-data-type.md)  
-An instance of the [Report](report-data-type.md) data type.
+An instance of the [Report](report-data-type.md) data type.  
 
 *Var1*  
 &emsp;Type: [Decimal](../decimal/decimal-data-type.md)  
 Variable for which the system will maintain the total.
         
-*Var2*  
+*[Optional] Var2*  
 &emsp;Type: [Decimal](../decimal/decimal-data-type.md)  
 Variable for which the system will maintain the total.  
 

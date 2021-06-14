@@ -3,7 +3,7 @@ title: "HttpContent.Clear Method"
 description: "Sets the HttpContent object to a default value. The content contains an empty string and empty headers."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,7 +28,7 @@ Sets the HttpContent object to a default value. The content contains an empty st
 ## Parameters
 *HttpContent*  
 &emsp;Type: [HttpContent](httpcontent-data-type.md)  
-An instance of the [HttpContent](httpcontent-data-type.md) data type.
+An instance of the [HttpContent](httpcontent-data-type.md) data type.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

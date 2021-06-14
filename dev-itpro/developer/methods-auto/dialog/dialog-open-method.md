@@ -3,7 +3,7 @@ title: "Dialog.Open Method"
 description: "Opens a dialog window."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,13 +29,13 @@ Opens a dialog window.
 ## Parameters
 *Dialog*  
 &emsp;Type: [Dialog](dialog-data-type.md)  
-An instance of the [Dialog](dialog-data-type.md) data type.
+An instance of the [Dialog](dialog-data-type.md) data type.  
 
 *String*  
 &emsp;Type: [String](../string/string-data-type.md)  
 This string contains the text that you want to display in the window. Use a backslash (\\) to start a new line. Use number signs (#) to insert variable values into the string. Place the number signs where you want to substitute the variable value. Place a number in the part of the string where a variable value will be substituted (for example, #1####) to be able to reference this field for updating.  The number of # characters in the string indicates the length of the field. You can update the fields using the UPDATE method (Dialog) or by letting the user edit the values.
           
-*Variable1*  
+*[Optional] Variable1*  
 &emsp;Type: [Any](../any/any-data-type.md)  
 Use these optional parameters to specify variables for field1, field2, and so on in the String.  
 

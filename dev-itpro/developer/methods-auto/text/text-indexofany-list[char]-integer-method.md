@@ -3,7 +3,7 @@ title: "Text.IndexOfAny Method"
 description: "Reports the one-based index of the first occurrence in this instance of any character in a specified array of Unicode characters. The search starts at a specified character position."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,13 +29,13 @@ Index :=   Text.IndexOfAny(Values: List of [Char] [, StartIndex: Integer])
 ## Parameters
 *Text*  
 &emsp;Type: [Text](text-data-type.md)  
-An instance of the [Text](text-data-type.md) data type.
+An instance of the [Text](text-data-type.md) data type.  
 
 *Values*  
 &emsp;Type: [List of [Char]](../list/list-data-type.md)  
 The collection of characters to seek.
         
-*StartIndex*  
+*[Optional] StartIndex*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The one-based search starting position.  
 

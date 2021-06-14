@@ -3,7 +3,7 @@ title: "File.WriteMode Method"
 description: "Use this method before you use OPEN method (File)] to set or test whether you can write to a file in later calls."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -33,15 +33,15 @@ Use this method before you use OPEN method (File)] to set or test whether you ca
 ## Parameters
 *File*  
 &emsp;Type: [File](file-data-type.md)  
-An instance of the [File](file-data-type.md) data type.
+An instance of the [File](file-data-type.md) data type.  
 
-*Mode*  
+*[Optional] Mode*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
   
 
 
 ## Return Value
-*Writemode*  
+*[Optional] Writemode*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 
 

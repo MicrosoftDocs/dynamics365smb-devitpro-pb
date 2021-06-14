@@ -3,7 +3,7 @@ title: "TestRequestPage.IsExpanded Method"
 description: "Specifies if rows on a test page are expanded."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,7 +30,7 @@ Expanded :=   TestRequestPage.IsExpanded()
 ## Parameters
 *TestRequestPage*  
 &emsp;Type: [TestRequestPage](testrequestpage-data-type.md)  
-An instance of the [TestRequestPage](testrequestpage-data-type.md) data type.
+An instance of the [TestRequestPage](testrequestpage-data-type.md) data type.  
 
 ## Return Value
 *Expanded*  

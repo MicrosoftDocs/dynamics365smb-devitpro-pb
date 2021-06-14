@@ -3,7 +3,7 @@ title: "Text.DelStr Method"
 description: "Deletes a substring inside a string (text or code)."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -35,7 +35,7 @@ The input string.
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The position of the first character that you want to delete. Position must be greater than zero (0). If Position exceeds the length of String, DELSTR returns the original string, unchanged.
         
-*Length*  
+*[Optional] Length*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 Specifies how many characters to delete. Length must be greater than zero (0).  
 

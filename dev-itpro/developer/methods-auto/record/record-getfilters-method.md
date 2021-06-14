@@ -3,7 +3,7 @@ title: "Record.GetFilters Method"
 description: "Gets a string that contains a list of the filters within the current filter group for all fields in a record. In addition, this method also returns the state of the MARKEDONLY method (Record)."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,7 +30,7 @@ String :=   Record.GetFilters()
 ## Parameters
 *Record*  
 &emsp;Type: [Record](record-data-type.md)  
-An instance of the [Record](record-data-type.md) data type.
+An instance of the [Record](record-data-type.md) data type.  
 
 ## Return Value
 *String*  

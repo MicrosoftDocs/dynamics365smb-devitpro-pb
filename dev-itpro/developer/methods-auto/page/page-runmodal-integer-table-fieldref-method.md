@@ -3,7 +3,7 @@ title: "Page.RunModal Method"
 description: "Creates, opens, and closes a page that you specify. When a page is run modally, no input, such as a keyboard or mouse click, can occur except for objects on the modal page."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -39,7 +39,7 @@ Use this parameter to select a specific field on which focus will be put.
 
 
 ## Return Value
-*Action*  
+*[Optional] Action*  
 &emsp;Type: [Action](../action/action-option.md)  
 Specifies what action the user took on the page.
 

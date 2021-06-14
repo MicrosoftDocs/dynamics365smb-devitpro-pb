@@ -3,7 +3,7 @@ title: "HttpHeaders.Remove Method"
 description: "Removes the specified header from the HttpHeaders collection."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,7 @@ Removes the specified header from the HttpHeaders collection.
 ## Parameters
 *HttpHeaders*  
 &emsp;Type: [HttpHeaders](httpheaders-data-type.md)  
-An instance of the [HttpHeaders](httpheaders-data-type.md) data type.
+An instance of the [HttpHeaders](httpheaders-data-type.md) data type.  
 
 *Name*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -35,7 +35,7 @@ The name of the header to remove from the collection.
 
 
 ## Return Value
-*Ok*  
+*[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the element is successfully removed; otherwise, **false**. This method also returns **false** if the given header was not found in the HttpHeaders collection. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 

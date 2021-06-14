@@ -10,6 +10,7 @@
 ## Develop
 ### [The SMB Opportunity for App Publishers](developer/readiness/opportunity-app-publisher.md)
 ### [Get Started with Building Apps](developer/readiness/get-started.md)
+### [Customize Business Central](developer/readiness/readiness-customizing-tenants.md)
 ### [The Lifecycle of Apps and Extensions](developer/devenv-app-life-cycle.md)
 <!--#### What the partner's responsibilities are -->
 ### [Update Lifecycle for Customizations](developer/devenv-customization-update-lifecycle.md)
@@ -40,6 +41,7 @@
 #### App Management
 ##### [Introduction](administration/appmanagement/app-management-overview.md)
 ##### [App Management API](administration/appmanagement/app-management-api.md)
+##### [Upgrading an App Using ForceSync](administration/appmanagement/app-management-updating-with-forcesync.md)
 ## Sell
 ### [Get Started as a Reseller of Business Central Online](administration/get-started-online.md)
 ### [Cloud Solution Provider program](/partner-center/csp-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
@@ -213,6 +215,7 @@
 <!--### [Migrating from Dynamics SL](administration/migrate-data.md)-->
 <!-- end migrate -->
 ## What's New or Changed
+### [Update 18.2](whatsnew/whatsnew-update-18-2.md)
 ### [Update 18.1](whatsnew/whatsnew-update-18.1.md)
 ### [Update 17.5](whatsnew/whatsnew-update-17-5.md)
 ### [Update 17.4](whatsnew/whatsnew-update-17-4.md)
@@ -467,10 +470,12 @@
 ## Linking to the Web Client and App
 ### [Web Client URL](developer/devenv-web-client-urls.md)
 ### [Business Central App URL](developer/devenv-link-to-mobile-app.md) 
-## [Working with Translation Files](developer/devenv-work-with-translation-files.md)
 ## Formatting Data
 ### [Formatting Decimal Values in Fields](developer/devenv-format-field-data.md)
 ### [Formatting Values, Dates, and Time](developer/devenv-format-property.md)
+## Translations
+### [Translations Overview](developer/devenv-translations-overview.md)
+### [Working with Translation Files](developer/devenv-work-with-translation-files.md)
 ## Developing for the Business Central Mobile App
 ### [Introducing the Business Central Mobile App](developer/devenv-introducing-business-central-mobile-app.md)  
 ### [Deciding on Your Tablet and Phone Strategy](developer/devenv-deciding-on-tablet-and-phone-strategy.md)  
@@ -2717,7 +2722,8 @@
 ### [FAQ](developer/devenv-dev-faq-teams.md)
 <!-- end Microsoft Teams -->
 <!-- Business Central API -->
-## [Dynamics 365 Business Central API](/dynamics-nav/api-reference/v2.0/index)
+## [Dynamics 365 Business Central API (v2.0)](api-reference/v2.0/index.md)
+## [Dynamics 365 Business Central API (v1.0)](api-reference/v1.0/index.md)
 <!-- end Business Central API -->
 <!--deprecated features -->
 # Removed or deprecated features

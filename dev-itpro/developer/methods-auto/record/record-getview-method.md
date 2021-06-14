@@ -3,7 +3,7 @@ title: "Record.GetView Method"
 description: "Gets a string that describes the current sort order, key, and filters on a table."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,9 +27,9 @@ String :=   Record.GetView([UseNames: Boolean])
 ## Parameters
 *Record*  
 &emsp;Type: [Record](record-data-type.md)  
-An instance of the [Record](record-data-type.md) data type.
+An instance of the [Record](record-data-type.md) data type.  
 
-*UseNames*  
+*[Optional] UseNames*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
   
 

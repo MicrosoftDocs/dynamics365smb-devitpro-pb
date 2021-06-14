@@ -3,7 +3,7 @@ title: "Dialog.Update Method"
 description: "Updates the value of a '#'-or '@' field in the active window."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,13 +29,13 @@ Updates the value of a '#'-or '@' field in the active window.
 ## Parameters
 *Dialog*  
 &emsp;Type: [Dialog](dialog-data-type.md)  
-An instance of the [Dialog](dialog-data-type.md) data type.
+An instance of the [Dialog](dialog-data-type.md) data type.  
 
-*Number*  
+*[Optional] Number*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 Each '#' or '@' field has a specific number. The Number argument tells into which field the Value should be inserted. If you omit this parameter, then all '#' or '@' fields in the active window are updated.
         
-*Value*  
+*[Optional] Value*  
 &emsp;Type: [Any](../any/any-data-type.md)  
 This value or expression can be any simple AL data type such as Boolean, Option, Integer, Decimal, Date, Time, Text, and Code. If you omit this value, then the value from the variable in the OPEN method (Dialog)] call is used.  
 

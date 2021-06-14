@@ -20,6 +20,9 @@ Unique keys must not be deleted
 Unique keys must not be deleted.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+This rule has been updated to validate the Clustered key. For more information, see [AS0043](appsourcecop-as0043-clusteredkeydeletenotallowed.md).
+
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
