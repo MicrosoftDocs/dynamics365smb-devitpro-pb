@@ -3,7 +3,7 @@ title: "Using Service to Service Authentication with Automation APIs"
 description: Service-to-service authentication enables external services to connect as an application, without impersonating normal users.
 author: henrikwh
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 06/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -94,7 +94,11 @@ Complete these steps to set up the Azure AD application for service-to-service a
    For more information, [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions).
 
    > [!TIP]
-   > The system permission sets and user groups called **D365 AUTOMATION** and **D365 EXTENSION MGT** provide access to most typical objects used with automation.
+   > The system permission sets and user groups called **D365 AUTOMATION** and **EXTEND. MGT. - ADMIN** provide access to most typical objects used with automation.
+
+   > [!NOTE]  
+   > The **EXTEND. MGT. - ADMIN** permission set was introduced in Business Central 2021 release wave 1 as a replacement for the **D365 EXTENSION MGT** permission set in earlier versions.
+
 
 7. Select **Grant Consent** and follow the wizard to the complete the setup.
 
