@@ -41,6 +41,7 @@
 #### App Management
 ##### [Introduction](administration/appmanagement/app-management-overview.md)
 ##### [App Management API](administration/appmanagement/app-management-api.md)
+##### [Upgrading an App Using ForceSync](administration/appmanagement/app-management-updating-with-forcesync.md)
 ## Sell
 ### [Get Started as a Reseller of Business Central Online](administration/get-started-online.md)
 ### [Cloud Solution Provider program](/partner-center/csp-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
