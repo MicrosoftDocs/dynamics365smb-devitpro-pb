@@ -355,7 +355,6 @@
 ### [Classifying Data](developer/devenv-classifying-data.md)
 ### [Enabling Sales Tables for Extension Development](developer/devenv-integrating-dynamics-365-for-sales-extension-development.md)
 ### [Creating Filter Pages for Tables](developer/devenv-filter-pages-for-filtering-tables.md)
-### [Formatting Decimal Values in Fields](developer/devenv-format-field-data.md)
 ### [Working With Media on Records](developer/devenv-working-with-media-on-records.md)
 ### Partial Records
 #### [Using Partial Records](developer/devenv-partial-records.md)
@@ -471,6 +470,9 @@
 ## Linking to the Web Client and App
 ### [Web Client URL](developer/devenv-web-client-urls.md)
 ### [Business Central App URL](developer/devenv-link-to-mobile-app.md) 
+## Formatting Data
+### [Formatting Decimal Values in Fields](developer/devenv-format-field-data.md)
+### [Formatting Values, Dates, and Time](developer/devenv-format-property.md)
 ## Translations
 ### [Translations Overview](developer/devenv-translations-overview.md)
 ### [Working with Translation Files](developer/devenv-work-with-translation-files.md)
