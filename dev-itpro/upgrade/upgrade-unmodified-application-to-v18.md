@@ -465,6 +465,9 @@ We recommend setting the value to application build number for the version 18 up
     ```powershell
     Start-NAVDataUpgrade -ServerInstance <server instance name> -FunctionExecutionMode Serial -Tenant <tenant ID>
     ```
+    The Data Upgrade process will be running in the background after running the above Start-NAVDataUpgrade cmdlet. You check on the progress using the Get-NAVDataUpgrade cmdlet: e.g: Get-NAVTenant -ServerInstance <server instance name> -ForceRefresh -Tenant <tenant ID>
+
+Do not stop the Business Central service until the process is complete, i.e. when you can see that "State = Operational" in the results from the Get-NAVDataUpgrade cmdlet. 
     
 ## Post-upgrade tasks
 
