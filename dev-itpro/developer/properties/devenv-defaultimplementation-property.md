@@ -108,7 +108,7 @@ enum 50135 SomeEnum implements IFoo
 
 Adding a new interface to an existing, extensible enum, requires that all extensions of that enum provide an implementations for the interface, which is a breaking change. Providing a default implementation by using the `DefaultImplementation` property can be used to make such new additions non-breaking.
 
-Related to `DefaultImplementation` is the `UnknownValueImplementation` property, used for handling unknown enum values. For more information, see [UnknownValueImplementation Property](devenv-defaultimplementation-property.md).
+Related to `DefaultImplementation` is the `UnknownValueImplementation` property, used for handling unknown enum values. For more information, see [UnknownValueImplementation Property](devenv-unknownvalueimplementation-property.md).
 
 
 ## See Also  
