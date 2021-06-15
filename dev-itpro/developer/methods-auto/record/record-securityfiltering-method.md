@@ -1,9 +1,9 @@
 ---
 title: "Record.SecurityFiltering Method"
-description: ""
+description: "Determines the table relationship of a given field."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/15/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # Record.SecurityFiltering Method
 > **Version**: _Available or changed with runtime version 1.0._
 
-
+Determines the table relationship of a given field.
 
 
 ## Syntax
