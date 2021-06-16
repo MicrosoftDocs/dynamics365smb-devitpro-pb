@@ -13,7 +13,7 @@ ms.date: 04/01/2019
 ms.author: solsen
 ---
 
-# Create timeRegistrationEntry
+# Create timeRegistrationEntry (v1.0)
 Creates a timeRegistrationEntry in [!INCLUDE[prod_short](../../../includes/prod_short.md)]. 
 
 ## HTTP request

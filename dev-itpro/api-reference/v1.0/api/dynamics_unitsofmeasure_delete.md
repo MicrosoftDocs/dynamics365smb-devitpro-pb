@@ -13,7 +13,7 @@ ms.date: 04/01/2019
 ms.author: solsen
 ---
 
-# Delete unitsOfMeasure
+# Delete unitsOfMeasure (v1.0)
 Deletes a units of measure object from [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## HTTP request

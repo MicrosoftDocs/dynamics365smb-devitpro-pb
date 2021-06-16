@@ -13,7 +13,7 @@ ms.date: 04/01/2019
 ms.author: solsen
 ---
 
-# Delete taxGroups
+# Delete taxGroups (v1.0)
 Delete a tax group object from [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## HTTP request

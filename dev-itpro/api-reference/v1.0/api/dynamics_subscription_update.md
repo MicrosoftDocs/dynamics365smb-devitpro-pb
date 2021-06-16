@@ -12,7 +12,7 @@ ms.date: 04/01/2019
 ms.author: solsen
 ---
 
-# Update subscriptions
+# Update subscriptions (v1.0)
 Updates a subscriptions object for [!INCLUDE[prod_short](../../../includes/prod_short.md)]. A subscription is valid for 3 days unless it is updated. `PATCH` requests will perform a handshake with the subscriber.
 
 ## HTTP request

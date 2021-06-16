@@ -12,7 +12,7 @@ ms.date: 04/01/2019
 ms.author: solsen
 ---
 
-# Get vendor defaultDimensions
+# Get vendor defaultDimensions (v1.0)
 Gets the default dimensions of the vendor in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## HTTP request

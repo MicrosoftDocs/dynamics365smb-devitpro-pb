@@ -13,7 +13,7 @@ ms.date: 04/01/2019
 ms.author: solsen
 ---
 
-# Delete vendors
+# Delete vendors (v1.0)
 Delete a vendor object from [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## HTTP request
