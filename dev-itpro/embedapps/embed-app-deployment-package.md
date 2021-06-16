@@ -240,7 +240,6 @@ Sample of the manifest.json file.
                      "publishOnly":  false,
                      "blockUninstall":  true
                  }
-
              ]
 }
 
