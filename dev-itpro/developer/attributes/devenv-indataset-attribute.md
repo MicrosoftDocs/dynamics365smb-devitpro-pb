@@ -36,6 +36,8 @@ Sets whether the AL variable's value is included in the dataset.
 
 ## Remarks
 
+The **InDataSet** attribute is defined on variables of the type [Boolean](../methods-auto/boolean/boolean-data-type.md) or [Integer](../methods-auto/integer/integer-data-type.md) on pages.  
+
 You must define this attribute on a variable if it is used as the value of the [Editable Property](../properties/devenv-editable-property.md), [Enabled Property](../properties/devenv-enabled-property.md), [Visible Property](../properties/devenv-visible-property.md) and [StyleExpr Property](../properties/devenv-styleexpr-property.md).  
 
 ## See Also

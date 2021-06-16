@@ -49,5 +49,6 @@ Apart from **InheritFromTestCodeunit**, the values themselves do not perform any
 > To specify the permission sets that are used by all the tests run by a test codeunit, use the [TestPermissions Property](../properties/devenv-testpermissions-property.md).
 
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+[AL Method Reference](../methods-auto/library.md)  
+[Method Attributes](devenv-method-attributes.md)   
+[TestPermissions Property](../properties/devenv-testpermissions-property.md)

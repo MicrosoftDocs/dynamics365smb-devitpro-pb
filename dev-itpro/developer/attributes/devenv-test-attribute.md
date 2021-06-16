@@ -38,6 +38,14 @@ procedure Test()
 > The above signature requires the method on which the **Test** attribute is set to be *global*. For more information, see [Local and global scope in AL methods](../devenv-al-methods.md%23local-and-global-scope).
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+You use test methods that include AL code that tests the business logic in the application, where each method covers a transaction. 
+
+For more information, see [Test Codeunits and Test Functions](../devenv-test-codeunits-and-test-methods.md).
+
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
+[Test Codeunits and Test Functions](../devenv-test-codeunits-and-test-methods.md)

@@ -1,6 +1,6 @@
 ---
 title: "SessionSettingsHandler Attribute"
-description: "Specifies a session settings handler function"
+description: "Specifies a SessionSettingsHandler method, which handles RequestSessionUpdate statements."
 ms.author: solsen
 ms.custom: na
 ms.date: 06/16/2021
@@ -18,7 +18,7 @@ author: SusanneWindfeldPedersen
 # SessionSettingsHandler Attribute
 > **Version**: _Available or changed with runtime version 3.0._
 
-Specifies a session settings handler function
+Specifies a SessionSettingsHandler method, which handles RequestSessionUpdate statements.
 
 
 ## Applies To
@@ -47,7 +47,7 @@ Session settings object to be populated
 
 The **SessionSettingsHandler** method is called when SessionSetting is updated. 
 
-For more information about handler methods, see [Creating Handler Methods](../devenv-creating-handler-methods.md).
+You use handler methods to automate tests by handling instances when user interaction is required by the code that is being tested by the test method. In these instances, the handler method is run instead of the requested user interface. The handler method should simulate the user interaction for the test case, such as validating messages, making selections, or entering values. You declare a handler type attribute on the method. For more information about handler methods, see [Creating Handler Methods](../devenv-creating-handler-methods.md).
 
 ## See Also
 

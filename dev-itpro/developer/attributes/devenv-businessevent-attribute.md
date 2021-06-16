@@ -39,6 +39,8 @@ Specifies that the firing instance of the object is available as a parameter to 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
+**True** exposes the global methods in the object that contains the event publisher function to event subscriber functions; **false** does not. The default value is **false**.
+
 ## Snippet support
 Typing the shortcut `teventbus` will create the basic BusinessEvent attribute syntax when using the [!INCLUDE[d365al_ext_md](../../includes/d365al_ext_md.md)] in Visual Studio Code.
 
@@ -77,5 +79,9 @@ end;
 ```  
 
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+[AL Method Reference](../methods-auto/library.md)  
+[Events in AL](../devenv-events-in-al.md)  
+[Publishing Events](../devenv-publishing-events.md)   
+[Raising Events](../devenv-raising-events.md)   
+[Subscribing to Events](../devenv-subscribing-to-events.md)   
+[Method Attributes](devenv-method-attributes.md)
