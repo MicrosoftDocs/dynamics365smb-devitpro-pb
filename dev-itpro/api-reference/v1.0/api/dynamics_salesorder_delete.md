@@ -13,7 +13,7 @@ ms.date: 04/01/2019
 ms.author: solsen
 ---
 
-# Delete salesOrders
+# Delete salesOrders (v1.0)
 Delete a sales order object from [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## HTTP request

@@ -13,7 +13,7 @@ ms.date: 04/01/2019
 ms.author: solsen
 ---
 
-# Delete itemCategories
+# Delete itemCategories (v1.0)
 Delete an itemCategory from [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 

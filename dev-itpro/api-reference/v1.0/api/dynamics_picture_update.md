@@ -13,7 +13,7 @@ ms.date: 04/01/2019
 ms.author: solsen
 ---
 
-# Update picture
+# Update picture (v1.0)
 Updates the properties and relationships of a picture object for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## HTTP request

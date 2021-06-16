@@ -13,7 +13,7 @@ ms.date: 04/01/2019
 ms.author: solsen
 ---
 
-# Update salesCreditMemoLines
+# Update salesCreditMemoLines (v1.0)
 Update the properties of a sales credit memo line object for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## HTTP request

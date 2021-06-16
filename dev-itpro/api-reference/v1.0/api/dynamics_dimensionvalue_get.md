@@ -13,7 +13,7 @@ ms.date: 04/01/2019
 ms.author: solsen
 ---
 
-# Get dimensionValues
+# Get dimensionValues (v1.0)
 Retrieve the properties and relationships of a dimension value object for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## Prerequisites

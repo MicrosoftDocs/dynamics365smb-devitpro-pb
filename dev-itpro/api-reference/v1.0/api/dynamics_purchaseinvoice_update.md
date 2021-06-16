@@ -13,7 +13,7 @@ ms.date: 04/01/2019
 ms.author: solsen
 ---
 
-# Update purchaseInvoices
+# Update purchaseInvoices (v1.0)
 Update the properties of a purchase invoices object for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## HTTP request

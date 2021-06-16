@@ -13,7 +13,7 @@ ms.date: 04/01/2019
 ms.author: solsen
 ---
 
-# Create item defaultDimensions
+# Create item defaultDimensions (v1.0)
 Creates the default dimensions of the item in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## HTTP request

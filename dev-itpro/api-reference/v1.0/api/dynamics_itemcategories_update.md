@@ -13,7 +13,7 @@ ms.date: 04/01/2019
 ms.author: solsen
 ---
 
-# Update itemCategories
+# Update itemCategories (v1.0)
 Update the properties of an item category object for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## HTTP request

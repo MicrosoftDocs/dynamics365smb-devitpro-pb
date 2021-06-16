@@ -13,7 +13,7 @@ ms.date: 04/01/2019
 ms.author: solsen
 ---
 
-# Get irs1099Codes
+# Get irs1099Codes (v1.0)
 Retrieve the properties and relationships of an IRS 1099 codes object for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## HTTP request
