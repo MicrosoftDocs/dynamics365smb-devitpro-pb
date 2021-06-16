@@ -3,7 +3,7 @@ title: "HandlerFunctions Attribute"
 description: "Specifies the handler methods that are used by the test method."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/09/2021
+ms.date: 06/16/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -37,8 +37,7 @@ Specifies the handler methods that are used by the test method.
 ### Arguments
 *HandlerNames*  
 &emsp;Type: [String](../methods-auto/string/string-data-type.md)  
-The names of the handler methods used by the test method.
-
+The names of the handler methods used by the test method.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

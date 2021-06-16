@@ -3,7 +3,7 @@ title: "InternalEvent Attribute"
 description: "Specifies that the method is published as an internal event. It can only be subscribed to from within the same module."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/09/2021
+ms.date: 06/16/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -35,8 +35,7 @@ Specifies that the method is published as an internal event. It can only be subs
 ### Arguments
 *IncludeSender*  
 &emsp;Type: [Boolean](../methods-auto/boolean/boolean-data-type.md)  
-Specifies that the firing instance of the object is available as a parameter to subscribers of that event.
-
+Specifies that the firing instance of the object is available as a parameter to subscribers of that event.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

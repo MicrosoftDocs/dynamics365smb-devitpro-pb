@@ -3,7 +3,7 @@ title: "Scope Attribute"
 description: "Specifies the scope of a method."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/09/2021
+ms.date: 06/16/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -35,9 +35,8 @@ Specifies the scope of a method.
 ### Arguments
 *Kind*  
 &emsp;Type: [Text](../methods-auto/text/text-data-type.md)  
-The scope of the method.
-
-#### Parameter value
+The scope of the method.  
+#### Value
 
 |Value|Compatibility|
 |-----------|---------------------------------------|

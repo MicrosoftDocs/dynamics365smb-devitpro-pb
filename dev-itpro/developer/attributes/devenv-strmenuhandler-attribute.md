@@ -3,7 +3,7 @@ title: "StrMenuHandler Attribute"
 description: "Specifies that the method is a StrMenuHandler method, which handles StrMenu statements."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/09/2021
+ms.date: 06/16/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,34 +30,39 @@ Specifies that the method is a StrMenuHandler method, which handles StrMenu stat
 
 ## Syntax
 
-> **Version**: _Available or changed with runtime version 1.0._
-
 ```
 [StrMenuHandler]
 procedure StrMenuHandler(Options: Text[1024], var Choice: Integer, Instruction: Text[1024])
 ```
-> **Version**: _Available or changed with runtime version 2.1._
-
+> [!IMPORTANT]
+> The above signature requires the method on which the **StrMenuHandler** attribute is set to be *global*. For more information, see [Local and global scope in AL methods](../devenv-al-methods.md%23local-and-global-scope).
 ```
 [StrMenuHandler]
 procedure StrMenuHandler(Options: Text, var Choice: Integer, Instruction: Text)
 ```
+> [!IMPORTANT]
+> The above signature requires the method on which the **StrMenuHandler** attribute is set to be *global*. For more information, see [Local and global scope in AL methods](../devenv-al-methods.md%23local-and-global-scope).
 
 ### Arguments
-*Options*  
-&emsp;Type: [Text[1024]](../methods-auto/text/text-data-type.md)  
-The list of the different option values.
-
-
 *Choice*  
 &emsp;Type: [Integer](../methods-auto/integer/integer-data-type.md)  
-The option chosen in the StrMenu.
-
+The option chosen in the StrMenu.  
 
 *Instruction*  
 &emsp;Type: [Text[1024]](../methods-auto/text/text-data-type.md)  
-The leading text.
+The leading text.  
 
+*Instruction*  
+&emsp;Type: [Text](../methods-auto/text/text-data-type.md)  
+The leading text.  
+
+*Options*  
+&emsp;Type: [Text[1024]](../methods-auto/text/text-data-type.md)  
+The list of the different option values.  
+
+*Options*  
+&emsp;Type: [Text](../methods-auto/text/text-data-type.md)  
+The list of the different option values.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

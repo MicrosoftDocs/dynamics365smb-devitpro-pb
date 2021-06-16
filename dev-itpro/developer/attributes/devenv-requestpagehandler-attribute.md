@@ -3,7 +3,7 @@ title: "RequestPageHandler Attribute"
 description: "Specifies that the method is a RequestPageHandler method, which handles the request page of a specific report."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/09/2021
+ms.date: 06/16/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,18 +30,17 @@ Specifies that the method is a RequestPageHandler method, which handles the requ
 
 ## Syntax
 
-> **Version**: _Available or changed with runtime version 1.0._
-
 ```
 [RequestPageHandler]
 procedure RequestPageHandler(var RequestPage: TestRequestPage)
 ```
+> [!IMPORTANT]
+> The above signature requires the method on which the **RequestPageHandler** attribute is set to be *global*. For more information, see [Local and global scope in AL methods](../devenv-al-methods.md%23local-and-global-scope).
 
 ### Arguments
 *RequestPage*  
 &emsp;Type: [TestRequestPage](../methods-auto/testrequestpage/testrequestpage-data-type.md)  
-The ID of a specific report.
-
+The ID of a specific report.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

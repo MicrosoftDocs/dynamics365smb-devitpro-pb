@@ -3,7 +3,7 @@ title: "Obsolete Attribute"
 description: "Specifies that the annotated symbol will be deprecated."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/09/2021
+ms.date: 06/16/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -38,13 +38,11 @@ Specifies that the annotated symbol will be deprecated.
 ### Arguments
 *[Optional] Reason*  
 &emsp;Type: [Text](../methods-auto/text/text-data-type.md)  
-Specifies the reason for the symbol being deprecated.
-
+Specifies the reason for the symbol being deprecated.  
 
 *[Optional] Tag*  
 &emsp;Type: [Text](../methods-auto/text/text-data-type.md)  
-Specifies a free-form text to support tracking of where and when the object was marked as obsolete, for example, branch, build, or date of obsoleting the object.
-
+Specifies a free-form text to support tracking of where and when the object was marked as obsolete, for example, branch, build, or date of obsoleting the object.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

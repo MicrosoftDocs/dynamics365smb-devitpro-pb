@@ -3,7 +3,7 @@ title: "ModalPageHandler Attribute"
 description: "Specifies that the method is a ModalPageHandler method, which handles specific pages that are run modally."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/09/2021
+ms.date: 06/16/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,24 +30,31 @@ Specifies that the method is a ModalPageHandler method, which handles specific p
 
 ## Syntax
 
-> **Version**: _Available or changed with runtime version 1.0._
-
 ```
 [ModalPageHandler]
 procedure ModalPageHandler(var Page: TestPage)
 ```
-> **Version**: _Available or changed with runtime version 2.1._
-
+> [!IMPORTANT]
+> The above signature requires the method on which the **ModalPageHandler** attribute is set to be *global*. For more information, see [Local and global scope in AL methods](../devenv-al-methods.md%23local-and-global-scope).
 ```
 [ModalPageHandler]
 procedure ModalPageHandler(var Page: Page, var Response: Action)
 ```
+> [!IMPORTANT]
+> The above signature requires the method on which the **ModalPageHandler** attribute is set to be *global*. For more information, see [Local and global scope in AL methods](../devenv-al-methods.md%23local-and-global-scope).
 
 ### Arguments
 *Page*  
 &emsp;Type: [TestPage](../methods-auto/testpage/testpage-data-type.md)  
-A specific page.
+A specific page.  
 
+*Page*  
+&emsp;Type: [Page](../methods-auto/page/page-data-type.md)  
+A specific page.  
+
+*Response*  
+&emsp;Type: [Action](../methods-auto/action/action-option.md)  
+The action that the user took on the page.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

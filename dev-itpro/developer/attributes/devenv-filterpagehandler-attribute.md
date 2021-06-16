@@ -3,7 +3,7 @@ title: "FilterPageHandler Attribute"
 description: "Specifies that the method is a FilterPageHandler method, which handles StrMenu statements."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/09/2021
+ms.date: 06/16/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,63 +30,53 @@ Specifies that the method is a FilterPageHandler method, which handles StrMenu s
 
 ## Syntax
 
-> **Version**: _Available or changed with runtime version 1.0._
-
 ```
 [FilterPageHandler]
 procedure FilterPageHandler(var Record1: RecordRef [, var Record2: RecordRef] [, var Record3: RecordRef] [, var Record4: RecordRef] [, var Record5: RecordRef] [, var Record6: RecordRef] [, var Record7: RecordRef] [, var Record8: RecordRef] [, var Record9: RecordRef] [, var Record10: RecordRef]) : Boolean;
 ```
+> [!IMPORTANT]
+> The above signature requires the method on which the **FilterPageHandler** attribute is set to be *global*. For more information, see [Local and global scope in AL methods](../devenv-al-methods.md%23local-and-global-scope).
 
 ### Arguments
 *Record1*  
 &emsp;Type: [RecordRef](../methods-auto/recordref/recordref-data-type.md)  
-Holds the record of the filter page.
-
-
-*[Optional] Record2*  
-&emsp;Type: [RecordRef](../methods-auto/recordref/recordref-data-type.md)  
-Holds the record of the filter page.
-
-
-*[Optional] Record3*  
-&emsp;Type: [RecordRef](../methods-auto/recordref/recordref-data-type.md)  
-Holds the record of the filter page.
-
-
-*[Optional] Record4*  
-&emsp;Type: [RecordRef](../methods-auto/recordref/recordref-data-type.md)  
-Holds the record of the filter page.
-
-
-*[Optional] Record5*  
-&emsp;Type: [RecordRef](../methods-auto/recordref/recordref-data-type.md)  
-Holds the record of the filter page.
-
-
-*[Optional] Record6*  
-&emsp;Type: [RecordRef](../methods-auto/recordref/recordref-data-type.md)  
-Holds the record of the filter page.
-
-
-*[Optional] Record7*  
-&emsp;Type: [RecordRef](../methods-auto/recordref/recordref-data-type.md)  
-Holds the record of the filter page.
-
-
-*[Optional] Record8*  
-&emsp;Type: [RecordRef](../methods-auto/recordref/recordref-data-type.md)  
-Holds the record of the filter page.
-
-
-*[Optional] Record9*  
-&emsp;Type: [RecordRef](../methods-auto/recordref/recordref-data-type.md)  
-Holds the record of the filter page.
-
+Holds the record of the filter page.  
 
 *[Optional] Record10*  
 &emsp;Type: [RecordRef](../methods-auto/recordref/recordref-data-type.md)  
-Holds the record of the filter page.
+Holds the record of the filter page.  
 
+*[Optional] Record2*  
+&emsp;Type: [RecordRef](../methods-auto/recordref/recordref-data-type.md)  
+Holds the record of the filter page.  
+
+*[Optional] Record3*  
+&emsp;Type: [RecordRef](../methods-auto/recordref/recordref-data-type.md)  
+Holds the record of the filter page.  
+
+*[Optional] Record4*  
+&emsp;Type: [RecordRef](../methods-auto/recordref/recordref-data-type.md)  
+Holds the record of the filter page.  
+
+*[Optional] Record5*  
+&emsp;Type: [RecordRef](../methods-auto/recordref/recordref-data-type.md)  
+Holds the record of the filter page.  
+
+*[Optional] Record6*  
+&emsp;Type: [RecordRef](../methods-auto/recordref/recordref-data-type.md)  
+Holds the record of the filter page.  
+
+*[Optional] Record7*  
+&emsp;Type: [RecordRef](../methods-auto/recordref/recordref-data-type.md)  
+Holds the record of the filter page.  
+
+*[Optional] Record8*  
+&emsp;Type: [RecordRef](../methods-auto/recordref/recordref-data-type.md)  
+Holds the record of the filter page.  
+
+*[Optional] Record9*  
+&emsp;Type: [RecordRef](../methods-auto/recordref/recordref-data-type.md)  
+Holds the record of the filter page.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

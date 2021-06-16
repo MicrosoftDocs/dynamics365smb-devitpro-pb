@@ -3,7 +3,7 @@ title: "RecallNotificationHandler Attribute"
 description: "Specifies that the method is a RecallNotificationHandler method, which handles Recall statements."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/09/2021
+ms.date: 06/16/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,23 +30,21 @@ Specifies that the method is a RecallNotificationHandler method, which handles R
 
 ## Syntax
 
-> **Version**: _Available or changed with runtime version 1.0._
-
 ```
 [RecallNotificationHandler([HandlerIsOptional: Boolean])]
 procedure RecallNotificationHandler(var TheNotification: Notification) : Boolean;
 ```
+> [!IMPORTANT]
+> The above signature requires the method on which the **RecallNotificationHandler** attribute is set to be *global*. For more information, see [Local and global scope in AL methods](../devenv-al-methods.md%23local-and-global-scope).
 
 ### Arguments
 *[Optional] HandlerIsOptional*  
 &emsp;Type: [Boolean](../methods-auto/boolean/boolean-data-type.md)  
-Specifies whether the notification handler method is optional.
-
+Specifies whether the notification handler method is optional.  
 
 *TheNotification*  
 &emsp;Type: [Notification](../methods-auto/notification/notification-data-type.md)  
-Holds the actual notification.
-
+Holds the actual notification.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

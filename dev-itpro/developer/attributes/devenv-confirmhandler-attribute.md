@@ -3,7 +3,7 @@ title: "ConfirmHandler Attribute"
 description: "Specifies that the method is a ConfirmHandler method, which handles Confirm statements."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/09/2021
+ms.date: 06/16/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,29 +30,31 @@ Specifies that the method is a ConfirmHandler method, which handles Confirm stat
 
 ## Syntax
 
-> **Version**: _Available or changed with runtime version 1.0._
-
 ```
 [ConfirmHandler]
 procedure ConfirmHandler(Question: Text[1024], var Reply: Boolean)
 ```
-> **Version**: _Available or changed with runtime version 2.1._
-
+> [!IMPORTANT]
+> The above signature requires the method on which the **ConfirmHandler** attribute is set to be *global*. For more information, see [Local and global scope in AL methods](../devenv-al-methods.md%23local-and-global-scope).
 ```
 [ConfirmHandler]
 procedure ConfirmHandler(Question: Text, var Reply: Boolean)
 ```
+> [!IMPORTANT]
+> The above signature requires the method on which the **ConfirmHandler** attribute is set to be *global*. For more information, see [Local and global scope in AL methods](../devenv-al-methods.md%23local-and-global-scope).
 
 ### Arguments
 *Question*  
 &emsp;Type: [Text[1024]](../methods-auto/text/text-data-type.md)  
-The text of the test method.
+The text of the test method.  
 
+*Question*  
+&emsp;Type: [Text](../methods-auto/text/text-data-type.md)  
+The text of the test method.  
 
 *Reply*  
 &emsp;Type: [Boolean](../methods-auto/boolean/boolean-data-type.md)  
-Specifies whether the response to confirm is *yes* or *no*.
-
+Specifies whether the response to confirm is *yes* or *no*.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
