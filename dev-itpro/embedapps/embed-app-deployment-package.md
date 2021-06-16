@@ -239,7 +239,7 @@ Sample of the manifest.json file.
                      "allowedUpdates":"minor",
                      "publishOnly":  false,
                      "blockUninstall":  true
-                 },
+                 }
 
              ]
 }
