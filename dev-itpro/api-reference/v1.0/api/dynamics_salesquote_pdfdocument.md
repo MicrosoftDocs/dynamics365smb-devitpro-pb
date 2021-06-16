@@ -13,7 +13,7 @@ ms.date: 06/18/2019
 ms.author: solsen
 ---
 
-# Get pdfDocument
+# Get pdfDocument (v1.0)
 Retrieve a PDF print-out of the corresponding document as binary content for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]  

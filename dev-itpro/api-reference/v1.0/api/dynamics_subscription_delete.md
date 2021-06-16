@@ -12,7 +12,7 @@ ms.date: 04/01/2019
 ms.author: solsen
 ---
 
-# Delete subscriptions
+# Delete subscriptions (v1.0)
 Deletes a subscriptions object for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## HTTP request

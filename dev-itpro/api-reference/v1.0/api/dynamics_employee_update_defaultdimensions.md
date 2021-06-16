@@ -13,7 +13,7 @@ ms.date: 04/01/2019
 ms.author: solsen
 ---
 
-# Update employee defaultDimensions
+# Update employee defaultDimensions (v1.0)
 Updates the default dimensions of the employee in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 

@@ -13,7 +13,7 @@ ms.date: 04/01/2019
 ms.author: solsen
 ---
 
-# Get retainedEarningsStatement
+# Get retainedEarningsStatement (v1.0)
 Retrieve the properties and relationships of a retained earnings statement report object for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## HTTP request

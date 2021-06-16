@@ -13,7 +13,7 @@ ms.date: 04/01/2019
 ms.author: solsen
 ---
 
-# Create currencies
+# Create currencies (v1.0)
 Create a currency object in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## HTTP request

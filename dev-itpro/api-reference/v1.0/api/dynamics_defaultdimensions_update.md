@@ -13,7 +13,7 @@ ms.date: 04/01/2019
 ms.author: solsen
 ---
 
-# Update defaultDimensions for entities
+# Update defaultDimensions for entities (v1.0)
 Update the default dimensions of entities in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 

@@ -13,7 +13,7 @@ ms.date: 04/01/2019
 ms.author: solsen
 ---
 
-# Delete customerPayments
+# Delete customerPayments (v1.0)
 Delete a customerPayment from [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## HTTP request

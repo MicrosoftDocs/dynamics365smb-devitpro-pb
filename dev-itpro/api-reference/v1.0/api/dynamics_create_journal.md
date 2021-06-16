@@ -13,7 +13,7 @@ ms.date: 04/01/2019
 ms.author: solsen
 ---
 
-# Create journals
+# Create journals (v1.0)
 Creates a journal in [!INCLUDE[prod_short](../../../includes/prod_short.md)]. 
 
 ## HTTP request

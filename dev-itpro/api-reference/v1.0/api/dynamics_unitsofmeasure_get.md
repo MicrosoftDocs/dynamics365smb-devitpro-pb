@@ -13,7 +13,7 @@ ms.date: 04/01/2019
 ms.author: solsen
 ---
 
-# Get unitsOfMeasure
+# Get unitsOfMeasure (v1.0)
 Retrieve the properties and relationships of a units of measure object for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## HTTP request

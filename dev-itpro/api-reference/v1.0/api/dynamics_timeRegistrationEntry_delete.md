@@ -13,7 +13,7 @@ ms.date: 04/01/2019
 ms.author: solsen
 ---
 
-# Delete timeRegistrationEntries
+# Delete timeRegistrationEntries (v1.0)
 Delete a timeRegistrationEntry from [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## HTTP request

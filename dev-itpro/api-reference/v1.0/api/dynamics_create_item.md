@@ -13,7 +13,7 @@ ms.date: 04/01/2019
 ms.author: solsen
 ---
 
-# Create items
+# Create items (v1.0)
 Create an item in [!INCLUDE[prod_short](../../../includes/prod_short.md)] for use on invoices, quotes, etc.
 
 ## HTTP request

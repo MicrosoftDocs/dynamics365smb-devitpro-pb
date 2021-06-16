@@ -13,7 +13,7 @@ ms.date: 04/01/2019
 ms.author: solsen
 ---
 
-# Delete employees
+# Delete employees (v1.0)
 Delete an employee from [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## HTTP request

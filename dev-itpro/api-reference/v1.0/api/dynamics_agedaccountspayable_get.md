@@ -13,7 +13,7 @@ ms.date: 04/01/2019
 ms.author: solsen
 ---
 
-# Get agedAccountsPayable
+# Get agedAccountsPayable (v1.0)
 Retrieve the properties and relationships of an aged accounts payable report object for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## HTTP request

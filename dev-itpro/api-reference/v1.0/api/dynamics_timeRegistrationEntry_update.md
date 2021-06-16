@@ -13,7 +13,7 @@ ms.date: 04/01/2019
 ms.author: solsen
 ---
 
-# Update timeRegistrationEntries
+# Update timeRegistrationEntries (v1.0)
 Update a timeRegistrationEntry in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 

@@ -13,7 +13,7 @@ ms.date: 04/01/2019
 ms.author: solsen
 ---
 
-# Get salesQuoteLines
+# Get salesQuoteLines (v1.0)
 Retrieve the properties and relationships of a sales quote line object for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## Prerequisites

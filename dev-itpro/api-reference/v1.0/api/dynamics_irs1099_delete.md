@@ -13,7 +13,7 @@ ms.date: 04/01/2019
 ms.author: solsen
 ---
 
-# Delete irs1099Codes
+# Delete irs1099Codes (v1.0)
 Delete a irs1099Codes object from [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## HTTP request

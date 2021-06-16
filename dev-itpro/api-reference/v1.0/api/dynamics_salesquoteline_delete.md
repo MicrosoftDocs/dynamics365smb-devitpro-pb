@@ -13,7 +13,7 @@ ms.date: 04/01/2019
 ms.author: solsen
 ---
 
-# Delete salesQuoteLines
+# Delete salesQuoteLines (v1.0)
 Delete a sales quote line object from [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## HTTP request

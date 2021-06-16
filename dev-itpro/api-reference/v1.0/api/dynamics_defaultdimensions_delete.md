@@ -13,7 +13,7 @@ ms.date: 04/01/2019
 ms.author: solsen
 ---
 
-# Delete defaultDimensions from entities
+# Delete defaultDimensions from entities (v1.0)
 Deletes the default dimensions of the item in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## HTTP request

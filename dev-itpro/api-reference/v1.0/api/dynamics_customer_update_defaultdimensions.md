@@ -13,7 +13,7 @@ ms.date: 04/01/2019
 ms.author: solsen
 ---
 
-# Update customer defaultDimensions
+# Update customer defaultDimensions (v1.0)
 Update the default dimensions of the customer in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 

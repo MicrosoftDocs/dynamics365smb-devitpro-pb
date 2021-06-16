@@ -13,7 +13,7 @@ ms.date: 04/01/2019
 ms.author: solsen
 ---
 
-# Update irs1099Codes
+# Update irs1099Codes (v1.0)
 Update the properties of an IRS 1099 codes object for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## HTTP request

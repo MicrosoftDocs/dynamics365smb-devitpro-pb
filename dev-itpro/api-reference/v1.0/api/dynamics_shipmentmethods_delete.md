@@ -13,7 +13,7 @@ ms.date: 04/01/2019
 ms.author: solsen
 ---
 
-# Delete shipmentMethods
+# Delete shipmentMethods (v1.0)
 Delete a shipment method object from [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## HTTP request

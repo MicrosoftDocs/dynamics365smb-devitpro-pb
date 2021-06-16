@@ -13,7 +13,7 @@ ms.date: 04/01/2019
 ms.author: solsen
 ---
 
-# Delete customers
+# Delete customers (v1.0)
 Delete a customer object from [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## HTTP request
