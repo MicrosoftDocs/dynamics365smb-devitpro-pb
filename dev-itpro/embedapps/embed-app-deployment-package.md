@@ -230,7 +230,7 @@ Sample of the manifest.json file.
                      "allowedUpdates":"minor",
                      "publishOnly":  false,
                      "blockUninstall":  true
-                 }
+                 },
                  {
                      "id":  "201e5067-99cc-4974-900a-b50bd4fbe777",
                      "initialVersion":  "16.1.50043.50321",
