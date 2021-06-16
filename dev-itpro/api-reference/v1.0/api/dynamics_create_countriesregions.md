@@ -13,7 +13,7 @@ ms.date: 04/01/2019
 ms.author: solsen
 ---
 
-# Create countriesRegions
+# Create countriesRegions (v1.0)
 Create a countriesRegions object in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## HTTP request

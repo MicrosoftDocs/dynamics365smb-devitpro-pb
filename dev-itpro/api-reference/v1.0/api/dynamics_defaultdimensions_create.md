@@ -13,7 +13,7 @@ ms.date: 04/01/2019
 ms.author: solsen
 ---
 
-# Create defaultDimensions for entities
+# Create defaultDimensions for entities (v1.0)
 Creates the default dimensions for entities in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## HTTP request

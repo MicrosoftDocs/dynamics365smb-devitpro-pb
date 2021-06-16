@@ -13,7 +13,7 @@ ms.date: 04/01/2019
 ms.author: solsen
 ---
 
-# Update currencies
+# Update currencies (v1.0)
 Update the properties of a currency object for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## HTTP request

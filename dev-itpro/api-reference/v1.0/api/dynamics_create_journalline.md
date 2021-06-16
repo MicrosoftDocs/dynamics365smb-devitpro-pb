@@ -13,7 +13,7 @@ ms.date: 04/01/2019
 ms.author: solsen
 ---
 
-# Create journalLines
+# Create journalLines (v1.0)
 Creates a journal line object in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## HTTP request

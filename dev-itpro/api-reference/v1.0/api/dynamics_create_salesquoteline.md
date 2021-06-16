@@ -13,7 +13,7 @@ ms.date: 04/01/2019
 ms.author: solsen
 ---
 
-# Create salesQuoteLines
+# Create salesQuoteLines (v1.0)
 Create a sales quote line object in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## HTTP request

@@ -13,7 +13,7 @@ ms.date: 11/04/2019
 ms.author: solsen
 ---
 
-# Create customerPaymentsJournals
+# Create customerPaymentsJournals (v1.0)
 Creates a customer payments journal object in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## HTTP request

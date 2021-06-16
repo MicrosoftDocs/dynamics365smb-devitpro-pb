@@ -13,7 +13,7 @@ ms.date: 04/01/2019
 ms.author: solsen
 ---
 
-# Create irs1099Codes
+# Create irs1099Codes (v1.0)
 Create an IRS 1099 code object in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## HTTP request
