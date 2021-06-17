@@ -1,6 +1,6 @@
 ---
 title: (v1.0) Get item picture
-description: (v1.0) Gets an item default dimensions in Dynamics 365 Business Central.
+description: (v1.0) Gets an item picture in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 
 ms.service: "dynamics365-business-central"
@@ -13,7 +13,7 @@ ms.author: solsen
 ---
 
 # Get item picture (v1.0)
-Gets the default dimensions of the item in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
+Gets the item picture of the item in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## HTTP request
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v1.0/endpoints-apis-for-dynamics.md). 

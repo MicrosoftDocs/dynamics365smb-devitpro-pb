@@ -74,19 +74,19 @@ Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md
 The following example gets the actual PDF document:
 `GET businesscentralPrefix/api/v1.0/companies({companyid})/purchaseInvoices({invoiceid})/pdfDocument({id})/content`
 
-## Request headers (v1.0)
+## Request headers
 
 |Header|Value|
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
 
-## Request body (v1.0)
+## Request body 
 Do not supply a request body for this method.
 
-## Response (v1.0)
+## Response
 If successful, this method returns a `200 OK` response code and the PDF document in the response body.
 
-## Example (v1.0)
+## Example
 
 **Request**
 Here is an example of the request.
@@ -99,6 +99,7 @@ GET https://{businesscentralPrefix}/api/v1.0/companies({companyid})/purchaseInvo
 The PDF document in binary format.
 
 ## Remarks
+
 The pdfDocument is not supported for unposted purchase invoices. The purchase invoice must be posted before it is printed; if it is not posted, the response will return an error.
 
 ## See also

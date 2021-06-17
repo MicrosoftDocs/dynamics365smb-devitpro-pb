@@ -19,7 +19,7 @@ Retrieve a PDF print-out of the corresponding document as binary content for [!I
 > [!NOTE]  
 > To generate a document in the supported local language, you must specify `Accept-Language` in the Request header, for example `Accept-Language: nl-NL` for Dutch.
 
-## HTTP request
+## HTTP request (v1.0)
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v1.0/endpoints-apis-for-dynamics.md).
 The following example gets a link to the content of the PDF:
 
@@ -74,19 +74,19 @@ Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md
 The following example gets the actual PDF document:
 `GET businesscentralPrefix/api/v1.0/companies({companyid})/salesInvoices({invoiceid})/pdfDocument({invoiceid})/content`
 
-## Request headers (v1.0)
+## Request headers
 
 |Header|Value|
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
 
-## Request body (v1.0)
+## Request body
 Do not supply a request body for this method.
 
-## Response (v1.0)
+## Response
 If successful, this method returns a `200 OK` response code and the PDF document in the response body.
 
-## Example (v1.0)
+## Example
 
 **Request**
 Here is an example of the request.
@@ -99,7 +99,5 @@ GET https://{businesscentralPrefix}/api/v1.0/companies({companyid})/salesInvoice
 The PDF document in binary format.
 
 ## See also
-[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
-
-
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)   
 [Error Codes](../dynamics_error_codes.md)  
