@@ -23,20 +23,20 @@ Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md
 POST businesscentralPrefix/companies({id})/timeRegistrationEntries
 ```
 
-## Request headers
+## Request headers (v1.0)
 
 |Header        |Value                     |
 |--------------|--------------------------|
 |Authorization |Bearer {token}. Required. |
 |Content-Type  |application/json          |
 
-## Request body
+## Request body (v1.0)
 In the request body, supply a JSON representation of a **timeRegistrationEntries** object.
 
-## Response
+## Response (v1.0)
 If successful, this method returns ```201 Created``` response code and a **timeRegistrationEntries** object in the response body.
 
-## Example
+## Example (v1.0)
 
 **Request**
 

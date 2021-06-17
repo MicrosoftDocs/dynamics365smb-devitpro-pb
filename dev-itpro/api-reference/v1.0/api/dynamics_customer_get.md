@@ -26,16 +26,16 @@ GET businesscentralPrefix/companies({id})/customers({id})
 
 
 
-## Request headers
+## Request headers (v1.0)
 
 |Header|Value|
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
 
-## Request body
+## Request body (v1.0)
 Do not supply a request body for this method.
 
-## Response
+## Response (v1.0)
 If successful, this method returns a ```200 OK``` response code and a **customers** object in the response body.
 
 **Requests**

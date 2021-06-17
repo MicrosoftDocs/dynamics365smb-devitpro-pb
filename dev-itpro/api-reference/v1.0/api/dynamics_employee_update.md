@@ -24,7 +24,7 @@ Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md
 PATCH businesscentralPrefix/companies({id})/employees({id})
 ```
 
-## Request headers
+## Request headers (v1.0)
 
 |Header         |Value                     |
 |---------------|--------------------------|
@@ -32,13 +32,13 @@ PATCH businesscentralPrefix/companies({id})/employees({id})
 |Content-Type   |application/json.         |
 |If-Match       |Required. When this request header is included and the eTag provided does not match the current tag on the **employees**, the **employees** will not be updated. |
 
-## Request body
+## Request body (v1.0)
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
-## Response
+## Response (v1.0)
 If successful, this method returns a ```200 OK``` response code and an updated **employees** object in the response body.
 
-## Example
+## Example (v1.0)
 
 **Request**
 

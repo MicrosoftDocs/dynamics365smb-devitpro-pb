@@ -28,14 +28,14 @@ GET businesscentralPrefix/companies({companyId})/customers({customerId})/default
 |------|-----|
 |Authorization| Bearer {token}. Required.|
 
-## Request body
+## Request body (v1.0)
 Do not supply a request body for this method.
 
-## Response 
+## Response (v1.0) 
 
 If successful, this method returns a `200 OK` response code and the **default dimensions** in the response body.
 
-## Example 
+## Example (v1.0) 
 
 **Request**
 Here is an example of a request. 

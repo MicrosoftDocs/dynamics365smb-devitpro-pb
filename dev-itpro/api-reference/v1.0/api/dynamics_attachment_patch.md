@@ -17,13 +17,13 @@ ms.author: solsen
 Update the attachment in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 
-## HTTP request
+## HTTP request (v1.0)
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v1.0/endpoints-apis-for-dynamics.md).
 ```
 PATCH businesscentralPrefix/companies({companyId})/attachments(parentId={parentId},id={attachmentId})/content
 ```
 
-## Request headers
+## Request headers (v1.0)
 
 |Header        |Value                    |
 |--------------|-------------------------|
@@ -32,7 +32,7 @@ PATCH businesscentralPrefix/companies({companyId})/attachments(parentId={parentI
 |If-Match  |*application/json*         |
 
 
-## Example
+## Example (v1.0)
 
 **Request**
 Here is an example of the request.

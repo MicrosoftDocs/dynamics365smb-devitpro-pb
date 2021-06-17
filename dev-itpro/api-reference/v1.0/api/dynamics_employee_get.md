@@ -22,16 +22,16 @@ Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md
 GET businesscentralPrefix/companies({id})/employees({id})
 ```
 
-## Request headers
+## Request headers (v1.0)
 
 |Header       |Value                     |
 |-------------|--------------------------|
 |Authorization|Bearer {token}. Required. |
 
-## Request body
+## Request body (v1.0)
 Do not supply a request body for this method.
 
-## Response
+## Response (v1.0)
 If successful, this method returns a ```200 OK``` response code and an **employees** object in the response body.
 
 **Request**

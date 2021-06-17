@@ -26,16 +26,16 @@ GET businesscentralPrefix/companies({companyId})/customer({customerId})/picture
 
 ```
 
-## Request headers
+## Request headers (v1.0)
 
 |Header|Value|
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
 
-## Response
+## Response (v1.0)
 If successful, this method returns a ```200 OK``` response code and a **picture** object in the response body.
 
-## Example
+## Example (v1.0)
 
 **Request**
 
