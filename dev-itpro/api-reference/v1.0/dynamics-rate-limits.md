@@ -12,7 +12,7 @@ ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
-# Working with API limits in Dynamics 365 Business Central
+# Working with API limits in Dynamics 365 Business Central (v1.0)
 
 Large scale cloud services use shared resources to achieve the best possible utilization of resources – like IO, CPU, and memory. To ensure that all tenants are running smoothly, on shared resources, rate limits are applied. Without limits, one tenant might be using most resources, while other tenants running on the same resources might experience slower performance – one tenant can become a ‘noisy neighbor’.  
 

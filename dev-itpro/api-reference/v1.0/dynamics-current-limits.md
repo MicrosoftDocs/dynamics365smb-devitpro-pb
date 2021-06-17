@@ -12,7 +12,7 @@ ms.service: "dynamics365-business-central"
 ms.author: jswymer
 ---
 
-# Current API Limits  
+# Current API Limits (v1.0)
 
 This article lists the different limits that are set on OData and SOAP requests. The limits are subject to change, following the [Microsoft API Terms of Use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use).
 

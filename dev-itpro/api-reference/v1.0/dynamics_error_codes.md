@@ -14,7 +14,7 @@ ms.date: 06/19/2019
 ms.author: solsen
 ---
 
-# Error Codes
+# Error Codes  (v1.0)
 The following table lists the error codes for the various exceptions in the web service response for ODataV4.
 
 ## Error code categorization
