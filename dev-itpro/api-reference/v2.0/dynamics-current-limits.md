@@ -1,5 +1,5 @@
 ---
-title: "API Limits in Dynamics 365 Business Central"
+title: "Current API Limits in Dynamics 365 Business Central"
 description: ""
 author: jswymer
 ms.custom: na
