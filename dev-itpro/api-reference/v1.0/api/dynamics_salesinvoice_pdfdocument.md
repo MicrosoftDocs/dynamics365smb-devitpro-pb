@@ -1,5 +1,5 @@
 ---
-title: (v1.0) Get pdfDocument
+title: (v1.0) Get salesInvoice pdfDocument
 description: (v1.0) Gets a PDF document on a salesInvoice in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
@@ -13,7 +13,7 @@ ms.date: 04/01/2019
 ms.author: solsen
 ---
 
-# Get pdfDocument (v1.0)
+# Get salesInvoice pdfDocument (v1.0)
 Retrieve a PDF print-out of the corresponding document as binary content for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]  

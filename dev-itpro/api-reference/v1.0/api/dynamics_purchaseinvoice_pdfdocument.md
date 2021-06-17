@@ -19,7 +19,7 @@ Retrieve a PDF print-out of the corresponding document as binary content for [!I
 > [!NOTE]  
 > To generate a document in the supported local language, you must specify `Accept-Language` in the Request header, for example `Accept-Language: nl-NL` for Dutch.
 
-## HTTP request
+## HTTP request (v1.0)
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v1.0/endpoints-apis-for-dynamics.md).
 The following example gets a link to the content of the PDF:
 
