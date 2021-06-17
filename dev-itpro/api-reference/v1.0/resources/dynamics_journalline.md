@@ -42,8 +42,8 @@ Represents a line in a journal in [!INCLUDE[prod_short](../../../includes/prod_s
 
 ## Properties
 
-| Property             | Type                   |Description                                                        |
-|:---------------------|:-----------------------|:------------------------------------------------------------------|
+| Property   | Type       |Description    |
+|:-----------|:-----------|:--------------|
 |id                    |GUID                    |The unique ID of the journal line. Non-editable.                   |
 |journalDisplayName    |string, maximum size 10 |The display name of the journal that this line belongs to. Read-Only.|
 |lineNumber            |integer                 |The number of the journal line.                                    |

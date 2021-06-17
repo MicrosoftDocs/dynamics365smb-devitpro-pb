@@ -14,7 +14,7 @@ ms.author: jswymer
 
 # Current API Limits  
 
-This article lists the different limits that are set on OData and SOAP requests. The limits are subject to change, following the [Microsoft API Terms of Use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use).
+This article lists the different limits that are set on OData and SOAP requests. The limits are subject to change, following the [Microsoft API Terms of Use](/legal/microsoft-apis/terms-of-use).
 
 ## API Rate limits
 
@@ -57,6 +57,6 @@ The maximum size of the OData or SOAP request. HTTP response code `413: Request 
 ## See Also
 
 [Operational Limits for Business Central Online](/dynamics365/business-central/dev-itpro/administration/operational-limits-online)
-[Best practices on transient errors](https://docs.microsoft.com/azure/architecture/best-practices/transient-faults)  
-[Using OData Batch request](https://docs.microsoft.com/openspecs/windows_protocols/ms-odata/dd99aa5c-d81e-4eac-9e07-039491356bf6)  
-[Microsoft API Terms of Use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use)
+[Best practices on transient errors](/azure/architecture/best-practices/transient-faults)  
+[Using OData Batch request](/openspecs/windows_protocols/ms-odata/dd99aa5c-d81e-4eac-9e07-039491356bf6)  
+[Microsoft API Terms of Use](/legal/microsoft-apis/terms-of-use)

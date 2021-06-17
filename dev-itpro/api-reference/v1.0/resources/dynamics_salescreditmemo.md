@@ -25,7 +25,7 @@ Represents a sales credit memo in [!INCLUDE[prod_short](../../../includes/prod_s
 ## Methods
 
 | Method       | Return Type  |Description|
-|:---------------|:--------|:----------|
+|:-------------|:--------|:----------|
 |[GET salesCreditMemos](../api/dynamics_salescreditmemo_get.md)|salesCreditMemos|Gets a sales credit memo object.|
 |[POST salesCreditMemos](../api/dynamics_create_salescreditmemo.md)|salesCreditMemos|Creates a sales credit memo object.|
 |[PATCH salesCreditMemos](../api/dynamics_salescreditmemo_update.md)|salesCreditMemos|Update a sales credit memo object.|
@@ -41,7 +41,7 @@ Represents a sales credit memo in [!INCLUDE[prod_short](../../../includes/prod_s
 ## Properties
 
 | Property     | Type   |Description|
-|:---------------|:--------|:----------|
+|:-------------|:--------|:----------|
 |id|GUID|The credit memo ID. Non-editable.|
 |number|string, maximum size 20|The credit memo number. Read-Only.|
 |creditMemoDate|date|The credit memo date|

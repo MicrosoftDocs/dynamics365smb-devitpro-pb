@@ -24,8 +24,8 @@ Represents a purchase invoice in [!INCLUDE[prod_short](../../../includes/prod_sh
 
 ## Methods
 
-| Method                                                             | Return Type    |Description                     |
-|:-------------------------------------------------------------------|:---------------|:-------------------------------|
+| Method    | Return Type    | Description      |
+|:----------|:---------------|:-----------------|
 |[GET purchaseInvoices](../api/dynamics_purchaseinvoice_get.md)      |purchaseInvoices|Gets a purchase invoice object.|
 |[POST purchaseInvoices](../api/dynamics_create_purchaseinvoice.md)  |purchaseInvoices|Creates a purchase invoice object.|
 |[PATCH purchaseInvoices](../api/dynamics_purchaseinvoice_update.md) |purchaseInvoices|Updates a purchase invoice object.|

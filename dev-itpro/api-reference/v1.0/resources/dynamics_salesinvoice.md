@@ -85,7 +85,7 @@ Represents a sales invoice in [!INCLUDE[prod_short](../../../includes/prod_short
 |shipToContact   |string, maximum size 100   |Ship to contact|
 |sellingPostalAddress|Microsoft.NAV.postalAddressType| Selling postal address|
 |billingPostalAddress|Microsoft.NAV.postalAddressType| Billing postal address|
-|shippingPostalAddress|Microsoft.NAV.postalAddressType| Shipping postal adress|
+|shippingPostalAddress|Microsoft.NAV.postalAddressType| Shipping postal address|
 
 
 ## Relationships
