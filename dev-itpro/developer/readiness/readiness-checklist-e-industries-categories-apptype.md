@@ -16,8 +16,8 @@ ms.author: a-emniel
 
 | Type of app| Description |
 |-------------|--------------|
-|Add-on app | An Add-on app extends the experience and the existing functionality of Microsoft Dynamics 365 Business Central. Add-on apps can be used in multiple scenarios, whether it is to integrate to online services, making custom web services, adding business functionality, or extending the user interface. |
-Connect app | A Connect app is used in the scenario where there must be established a point-to-point connection between Microsoft Dynamics 365 Business Central and a 3rd party solution or service.
+|Add-on app | An add-on app extends the experience and the existing functionality of Microsoft Dynamics 365 Business Central. Add-on apps can be used in multiple scenarios, whether it is integrating to online services, making custom web services, adding business functionality, or extending the user interface. An add-on app can be a standalone app or an app with dependencies. Dependent add-on apps will automatically be installed together with your app. |
+Connect app | A connect app is used in the scenario where there must be established a point-to-point connection between Microsoft Dynamics 365 Business Central and a 3rd party solution or service. With connect apps, data and app functionality lives in a service outside Business Central. The listing type of connect apps is always ‘Contact Me’, as they require external setup to work. Note: If your app cannot integrate with Business Central through API, or require substantial coding in AL, submit the app as an add-on app for AppSource instead.  .
 
 ## Contact type
 
