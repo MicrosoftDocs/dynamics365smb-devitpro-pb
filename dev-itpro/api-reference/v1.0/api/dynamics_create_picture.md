@@ -16,7 +16,7 @@ ms.author: solsen
 # Create picture (v1.0)
 Creates the properties and relationships of a picture object for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
-## HTTP request
+## HTTP request (v1.0)
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v1.0/endpoints-apis-for-dynamics.md).
 ```
 PATCH businesscentralPrefix/companies({companyId})/items({itemId})/picture({pictureId})/content
@@ -25,7 +25,7 @@ PATCH businesscentralPrefix/companies({companyId})/employees({employeeId})/pictu
 PATCH businesscentralPrefix/companies({companyId})/customers({customerId})/picture({pictureId})/content
 ```
 
-## Request headers
+## Request headers (v1.0)
 
 |Header|Value|
 |------|-----|
@@ -34,13 +34,12 @@ PATCH businesscentralPrefix/companies({companyId})/customers({customerId})/pictu
 |If-Match  | * |
 
 
-## Request body
+## Request body (v1.0)
 Raw picture binary data.
-
-## Response
+## Response (v1.0)
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
-## Example
+## Example (v1.0)
 
 **Request**
 

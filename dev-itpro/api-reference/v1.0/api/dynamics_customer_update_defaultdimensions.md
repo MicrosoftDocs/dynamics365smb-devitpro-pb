@@ -23,23 +23,23 @@ Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md
 PATCH businesscentralPrefix/companies({companyId})/customers({customerId})/defaultDimensions({customerId},{dimensionId})
 ```
 
-## Request headers
+## Request headers (v1.0)
 
 |Header        |Value                    |
 |--------------|-------------------------|
 |Authorization |Bearer {token}. Required.|
 |Content-Type  |application/json         |
 
-## Request body
+## Request body (v1.0)
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
 > [!NOTE]  
 > You cannot modify parentId, dimensionId or dimensionCode fields, because these are key fields, and rename is not allowed in Default Dimension record.
 
-## Response
+## Response (v1.0)
 If successful, this method returns a `200 OK` response code and an updated default dimensions for the **customer** in the response body. 
 
-## Example
+## Example (v1.0)
 
 **Request**
 

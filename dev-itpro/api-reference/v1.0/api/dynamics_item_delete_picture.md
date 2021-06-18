@@ -1,6 +1,6 @@
 ---
-title: (v1.0) Delete item defaultDimensions
-description: (v1.0) Deletes the default dimensions of the item in Dynamics 365 Business Central.
+title: (v1.0) Delete item picture
+description: (v1.0) Deletes the picture of the item in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 
@@ -13,36 +13,36 @@ ms.date: 04/01/2019
 ms.author: solsen
 ---
 
-# Delete item defaultDimensions (v1.0)
-Deletes the default dimensions of the item in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
+# Delete item picture (v1.0)
+Deletes the picture of the item in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## HTTP request
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v1.0/endpoints-apis-for-dynamics.md).
 ```
-DELETE businesscentralPrefix/companies({companyId})/items({itemId})/defaultDimensions({itemId},{dimensionId})
+DELETE businesscentralPrefix/companies({companyId})/items({itemId})/picture
 ```
 
-## Request headers
+## Request headers (v1.0)
 
 |Header         |Value                     |
 |---------------|--------------------------|
 |Authorization  |Bearer {token}. Required. |
 |If-Match       |Required. When this request header is included and the eTag provided does not match the current tag on the **items**, the **items** will not be updated. |
 
-## Request body
+## Request body (v1.0)
 Do not supply a request body for this method.
 
-## Response
+## Response (v1.0)
 If successful, this method returns a ```204 No Content``` response code and it deletes the default dimensions for the item and corresponding dimension.
 
-## Example
+## Example (v1.0)
 
 **Request**
 
 Here is an example of the request.
 
 ```json
-DELETE https://{businesscentralPrefix}/api/v1.0/companies({companyId})/items({itemId})/defaultDimensions({itemId},{dimensionId})
+DELETE https://{businesscentralPrefix}/api/v1.0/companies({companyId})/items({itemId})/picture
 ```
 
 **Response** 

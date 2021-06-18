@@ -14,7 +14,7 @@ ms.author: solsen
 ---
 
 # Create item picture (v1.0)
-Creates the default dimensions of the item in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
+Creates the picture of the item in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## HTTP request
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v1.0/endpoints-apis-for-dynamics.md).
@@ -22,20 +22,20 @@ Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md
 POST businesscentralPrefix/companies({companyId})/items({itemId})/picture
 ```
 
-## Request headers
+## Request headers (v1.0)
 
 |Header         |Value                    |
 |---------------|-------------------------|
 |Authorization  |Bearer {token}. Required.|
 |Content-Type   |application/json         |
 
-## Request body
+## Request body (v1.0)
 In the request body, supply a JSON representation of **items** object.
 
-## Response
+## Response (v1.0)
 If successful, this method returns ```201 Created``` response code and a **item** object in the response body.
 
-## Example
+## Example (v1.0)
 
 **Request**  
 Here is an example of a request.

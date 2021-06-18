@@ -1,6 +1,6 @@
 ---
-title: company resource type | Microsoft Docs
-description: A company object in Dynamics 365 Business Central.
+title: company resource type (automation) | Microsoft Docs
+description: A company object (automation) in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.service: "dynamics365-business-central"
 ms.topic: reference
@@ -11,7 +11,7 @@ ms.date: 04/01/2021
 ms.author: solsen
 ---
 
-# company resource type
+# company resource type (automation)
 
 <!-- START>DO_NOT_EDIT -->
 <!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
