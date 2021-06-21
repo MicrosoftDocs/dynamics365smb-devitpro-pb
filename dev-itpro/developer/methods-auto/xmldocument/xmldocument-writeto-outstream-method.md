@@ -1,9 +1,9 @@
 ---
 title: "XmlDocument.WriteTo Method"
-description: "Serializes and saves the current node to the given variable."
+description: "Serializes and saves the current node to the given variable and gives example of write to Stream from XmlDocument"
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,7 @@ Serializes and saves the current node to the given variable.
 ## Parameters
 *XmlDocument*  
 &emsp;Type: [XmlDocument](xmldocument-data-type.md)  
-An instance of the [XmlDocument](xmldocument-data-type.md) data type.
+An instance of the [XmlDocument](xmldocument-data-type.md) data type.  
 
 *OutStream*  
 &emsp;Type: [OutStream](../outstream/outstream-data-type.md)  
@@ -35,7 +35,7 @@ The OutStream to which you want to save the serialized representation of the nod
 
 
 ## Return Value
-*Ok*  
+*[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 

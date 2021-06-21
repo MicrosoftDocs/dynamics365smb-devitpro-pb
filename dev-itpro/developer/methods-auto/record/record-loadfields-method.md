@@ -3,7 +3,7 @@ title: "Record.LoadFields Method"
 description: "Accesses the table's corresponding data source and loads the values of the specified fields on the record."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,7 @@ Accesses the table's corresponding data source and loads the values of the speci
 ## Parameters
 *Record*  
 &emsp;Type: [Record](record-data-type.md)  
-An instance of the [Record](record-data-type.md) data type.
+An instance of the [Record](record-data-type.md) data type.  
 
 *Fields*  
 &emsp;Type: [Any](../any/any-data-type.md)  
@@ -35,7 +35,7 @@ The FieldNo's of the fields to be loaded.
 
 
 ## Return Value
-*Ok*  
+*[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if all values were loaded on the record; otherwise, **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 

@@ -3,7 +3,7 @@ title: "ErrorInfo.Verbosity Method"
 description: "Specifies the severity level of the error. This can determine whether the error should be sent to telemetry (which is based on the trace level setting of the server)."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,15 +29,15 @@ Specifies the severity level of the error. This can determine whether the error 
 ## Parameters
 *ErrorInfo*  
 &emsp;Type: [ErrorInfo](errorinfo-data-type.md)  
-An instance of the [ErrorInfo](errorinfo-data-type.md) data type.
+An instance of the [ErrorInfo](errorinfo-data-type.md) data type.  
 
-*Verbosity*  
+*[Optional] Verbosity*  
 &emsp;Type: [Verbosity](../verbosity/verbosity-option.md)  
 The verbosity that the error should be sent with.  
 
 
 ## Return Value
-*Verbosity*  
+*[Optional] Verbosity*  
 &emsp;Type: [Verbosity](../verbosity/verbosity-option.md)  
 The current verbosity of the ErrorInfo.
 

@@ -3,7 +3,7 @@ title: "Report.Execute Method"
 description: "Runs a report in preview or processing-only mode without showing the request page in the client. The preview document will be downloaded as a PDF file to the user's browser client, where it can be read with the PDF reader. It won't open the Business Central preview page in the browser. The method gets the request page parameter values as an input parameter string from a RUNREQUESTPAGE method call. The OnOpen and OnClose triggers on the request page will run even though the request page is not shown."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/21/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,13 +27,13 @@ Runs a report in preview or processing-only mode without showing the request pag
 ## Parameters
 *Report*  
 &emsp;Type: [Report](report-data-type.md)  
-An instance of the [Report](report-data-type.md) data type.
+An instance of the [Report](report-data-type.md) data type.  
 
 *Parameters*  
 &emsp;Type: [String](../string/string-data-type.md)  
 A string of request page parameters as XML to use to run the report. The parameter string is typically retrieved from the return value a RUNREQUESTPAGE method call.
           
-*RecordRef*  
+*[Optional] RecordRef*  
 &emsp;Type: [RecordRef](../recordref/recordref-data-type.md)  
 The RecordRef that refers to a record in a table.
           

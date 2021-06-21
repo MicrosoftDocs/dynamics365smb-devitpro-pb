@@ -3,7 +3,7 @@ title: "IsolatedStorage.Set Method"
 description: "Sets the value associated with the specified key."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -33,13 +33,13 @@ The key of the value to set.
 &emsp;Type: [String](../string/string-data-type.md)  
 The value that will be associated with the specified key.
         
-*DataScope*  
+*[Optional] DataScope*  
 &emsp;Type: [DataScope](../datascope/datascope-option.md)  
 The scope of the stored data. If a value is not passed in, the default value DataScope::Module will be used.  
 
 
 ## Return Value
-*Ok*  
+*[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the value was saved successfully, otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 

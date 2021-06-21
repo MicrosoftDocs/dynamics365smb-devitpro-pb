@@ -27,7 +27,7 @@ Gets the Word report layout that is used on a report and returns it as a data st
 ## Parameters
 *Report*  
 &emsp;Type: [Report](report-data-type.md)  
-An instance of the [Report](report-data-type.md) data type.
+An instance of the [Report](report-data-type.md) data type.  
 
 *InStream*  
 &emsp;Type: [InStream](../instream/instream-data-type.md)  
@@ -36,7 +36,7 @@ The variable in which to return the Word report layout.
 
 
 ## Return Value
-*Ok*  
+*[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 

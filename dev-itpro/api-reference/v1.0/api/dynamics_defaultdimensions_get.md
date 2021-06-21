@@ -12,7 +12,7 @@ ms.date: 04/01/2019
 ms.author: solsen
 ---
 
-# Get entity defaultDimensions
+# Get entity defaultDimensions (v1.0)
 Gets the default dimensions of an entity in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## HTTP request
@@ -31,14 +31,14 @@ GET businesscentralPrefix/companies({companyId})/employees({emplyeeId})/defaultD
 |------|-----|
 |Authorization| Bearer {token}. Required.|
 
-## Request body
+## Request body (v1.0)
 Do not supply a request body for this method.
 
-## Response 
+## Response (v1.0) 
 
 If successful, this method returns a `200 OK` response code and the **default dimensions** in the response body.
 
-## Example 
+## Example (v1.0) 
 **Request**
 
 ```json

@@ -3,7 +3,7 @@ title: "System.GetUrl Method"
 description: "Generates a URL for the specified client target that is based on the configuration of the server instance. If the code runs in a multitenant deployment architecture, the generated URL will automatically apply to the tenant ID of the current user."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -47,7 +47,7 @@ Specifies the ID of the specified object type that the URL must open.
 &emsp;Type: [RecordRef](../recordref/recordref-data-type.md)  
 Specifies the RecordRef variable that specifies which record to open.
         
-*UseFilters*  
+*[Optional] UseFilters*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 Specifies whether to include filters that are defined on the object as a text string in the URL.
         

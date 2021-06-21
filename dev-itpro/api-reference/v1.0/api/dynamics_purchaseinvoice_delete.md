@@ -13,7 +13,7 @@ ms.date: 04/01/2019
 ms.author: solsen
 ---
 
-# Delete purchaseInvoices
+# Delete purchaseInvoices (v1.0)
 Delete a purchase invoice object from [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## HTTP request
@@ -22,20 +22,20 @@ Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md
 DELETE businesscentralPrefix/companies({id})/purchaseInvoices({id})
 ```
 
-## Request headers
+## Request headers (v1.0)
 
 |Header         |Value                     |
 |---------------|--------------------------|
 |Authorization  |Bearer {token}. Required. |
 |If-Match       |Required. When this request header is included and the eTag provided does not match the current tag on the **purchaseInvoices**, the **purchaseInvoices** will not be updated. |
 
-## Request body
+## Request body (v1.0)
 Do not supply a request body for this method.
 
-## Response
+## Response (v1.0)
 If successful, this method returns ```204 No Content``` response code. It does not return anything in the response body.
 
-## Example
+## Example (v1.0)
 
 **Request**
 

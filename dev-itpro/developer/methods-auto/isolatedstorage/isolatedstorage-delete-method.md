@@ -3,7 +3,7 @@ title: "IsolatedStorage.Delete Method"
 description: "Deletes the value with the specified key from the isolated storage."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,13 +29,13 @@ Deletes the value with the specified key from the isolated storage.
 &emsp;Type: [String](../string/string-data-type.md)  
 The key of the value to remove.
         
-*DataScope*  
+*[Optional] DataScope*  
 &emsp;Type: [DataScope](../datascope/datascope-option.md)  
 The scope from which to remove the value with the given key. If a value is not passed in, the default value DataScope::Module will be used.  
 
 
 ## Return Value
-*Ok*  
+*[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the value with the given key was successfully deleted from isolated storage, otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 

@@ -3,7 +3,7 @@ title: "HttpClient.DefaultRequestHeaders Method"
 description: "Gets the default request headers which should be sent with each request."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,7 +30,7 @@ CurrentDefaultRequestHeaders :=   HttpClient.DefaultRequestHeaders()
 ## Parameters
 *HttpClient*  
 &emsp;Type: [HttpClient](httpclient-data-type.md)  
-An instance of the [HttpClient](httpclient-data-type.md) data type.
+An instance of the [HttpClient](httpclient-data-type.md) data type.  
 
 ## Return Value
 *CurrentDefaultRequestHeaders*  

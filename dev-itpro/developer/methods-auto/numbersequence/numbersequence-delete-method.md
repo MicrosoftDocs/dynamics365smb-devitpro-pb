@@ -3,7 +3,7 @@ title: "NumberSequence.Delete Method"
 description: "Deletes a specific number sequence."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,7 +28,7 @@ Deletes a specific number sequence.
 *Name*  
 &emsp;Type: [String](../string/string-data-type.md)  
 Specifies the name of the number sequence.  
-*CompanySpecific*  
+*[Optional] CompanySpecific*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 Specifies if the number sequence is company-specific. Default is true.  
 

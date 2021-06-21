@@ -3,7 +3,7 @@ title: "WebServiceActionContext.AddEntityKey Method"
 description: "Add a new \<fieldId, value\> pair to the collection of entity keys."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,7 @@ Add a new \<fieldId, value\> pair to the collection of entity keys.
 ## Parameters
 *WebServiceActionContext*  
 &emsp;Type: [WebServiceActionContext](webserviceactioncontext-data-type.md)  
-An instance of the [WebServiceActionContext](webserviceactioncontext-data-type.md) data type.
+An instance of the [WebServiceActionContext](webserviceactioncontext-data-type.md) data type.  
 
 *FieldId*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
@@ -39,7 +39,7 @@ The value for the field in the entity key.
 
 
 ## Return Value
-*Ok*  
+*[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if adding the entity key succeeded, otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 

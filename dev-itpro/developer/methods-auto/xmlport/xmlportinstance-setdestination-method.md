@@ -3,7 +3,7 @@ title: "Xmlport.SetDestination Method"
 description: "Sets the destination OutStream of the XmlPort."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,7 +29,7 @@ Sets the destination OutStream of the XmlPort.
 ## Parameters
 *Xmlport*  
 &emsp;Type: [Xmlport](xmlport-data-type.md)  
-An instance of the [Xmlport](xmlport-data-type.md) data type.
+An instance of the [Xmlport](xmlport-data-type.md) data type.  
 
 *OutStream*  
 &emsp;Type: [OutStream](../outstream/outstream-data-type.md)  

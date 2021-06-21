@@ -3,7 +3,7 @@ title: "XmlNamespaceManager.LookupPrefix Method"
 description: "Finds the prefix declared for the given namespace URI."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,7 @@ Finds the prefix declared for the given namespace URI.
 ## Parameters
 *XmlNamespaceManager*  
 &emsp;Type: [XmlNamespaceManager](xmlnamespacemanager-data-type.md)  
-An instance of the [XmlNamespaceManager](xmlnamespacemanager-data-type.md) data type.
+An instance of the [XmlNamespaceManager](xmlnamespacemanager-data-type.md) data type.  
 
 *Uri*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -39,7 +39,7 @@ The matching prefix. If there is no mapped prefix, the method returns an empty s
 
 
 ## Return Value
-*Ok*  
+*[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 

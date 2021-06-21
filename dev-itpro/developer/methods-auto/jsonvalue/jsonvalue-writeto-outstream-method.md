@@ -3,7 +3,7 @@ title: "JsonValue.WriteTo Method"
 description: "Serializes and writes the JSON data of the JsonValue to a given object."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,7 @@ Serializes and writes the JSON data of the JsonValue to a given object.
 ## Parameters
 *JsonValue*  
 &emsp;Type: [JsonValue](jsonvalue-data-type.md)  
-An instance of the [JsonValue](jsonvalue-data-type.md) data type.
+An instance of the [JsonValue](jsonvalue-data-type.md) data type.  
 
 *Data*  
 &emsp;Type: [OutStream](../outstream/outstream-data-type.md)  
@@ -35,7 +35,7 @@ The OutStream object to which the JSON data will be written.
 
 
 ## Return Value
-*Ok*  
+*[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the read was successful; otherwise, **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 

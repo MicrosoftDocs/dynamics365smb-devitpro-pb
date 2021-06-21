@@ -3,7 +3,7 @@ title: "Version.Revision Method"
 description: "Gets the revision number from the version."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,7 +30,7 @@ RevisionVersion :=   Version.Revision()
 ## Parameters
 *Version*  
 &emsp;Type: [Version](version-data-type.md)  
-An instance of the [Version](version-data-type.md) data type.
+An instance of the [Version](version-data-type.md) data type.  
 
 ## Return Value
 *RevisionVersion*  

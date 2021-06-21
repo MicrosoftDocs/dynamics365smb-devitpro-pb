@@ -1,6 +1,6 @@
 ---
-title: Delete item defaultDimensions  
-description: Deletes the default dimensions of the item in Dynamics 365 Business Central.
+title: Delete item picture  
+description: Deletes the picture of the item in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 
@@ -13,16 +13,16 @@ ms.date: 04/01/2021
 ms.author: solsen
 ---
 
-# Delete item defaultDimensions
+# Delete item picture
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-Deletes the default dimensions of the item in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
+Deletes the picture of the item in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## HTTP request
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
 ```
-DELETE businesscentralPrefix/companies({companyId})/items({itemId})/defaultDimensions({itemId},{dimensionId})
+DELETE businesscentralPrefix/companies({companyId})/items({itemId})/picture
 ```
 
 ## Request headers
@@ -45,7 +45,7 @@ If successful, this method returns a ```204 No Content``` response code and it d
 Here is an example of the request.
 
 ```json
-DELETE https://{businesscentralPrefix}/api/v2.0/companies({companyId})/items({itemId})/defaultDimensions({itemId},{dimensionId})
+DELETE https://{businesscentralPrefix}/api/v2.0/companies({companyId})/items({itemId})/picture
 ```
 
 **Response** 

@@ -3,7 +3,7 @@ title: "MediaSet.MediaId Method"
 description: "Gets the unique identifier that is assigned to a MediaSet of a record. The MediaSet is a collection of media objects that are used on the record that can be displayed in the client."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,7 +30,7 @@ MediaId :=   MediaSet.MediaId()
 ## Parameters
 *MediaSet*  
 &emsp;Type: [MediaSet](mediaset-data-type.md)  
-An instance of the [MediaSet](mediaset-data-type.md) data type.
+An instance of the [MediaSet](mediaset-data-type.md) data type.  
 
 ## Return Value
 *MediaId*  

@@ -3,7 +3,7 @@ title: "TestPart.IsExpanded Method"
 description: "Specifies if the current row on the test page is expanded."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,7 +30,7 @@ Expanded :=   TestPart.IsExpanded()
 ## Parameters
 *TestPart*  
 &emsp;Type: [TestPart](testpart-data-type.md)  
-An instance of the [TestPart](testpart-data-type.md) data type.
+An instance of the [TestPart](testpart-data-type.md) data type.  
 
 ## Return Value
 *Expanded*  

@@ -3,7 +3,7 @@ title: "System.DMY2Date Method"
 description: "Gets a Date object based on a day, month, and year."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -31,11 +31,11 @@ Date :=   System.DMY2Date(Day: Integer [, Month: Integer] [, Year: Integer])
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The number of the day in the month (1-31)
         
-*Month*  
+*[Optional] Month*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The number of the month in the year (1-12). If you omit this optional parameter, the current month will be used as the default.
         
-*Year*  
+*[Optional] Year*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The four-digit number of the year. If you omit this optional parameter, the current year is used as the default.  
 

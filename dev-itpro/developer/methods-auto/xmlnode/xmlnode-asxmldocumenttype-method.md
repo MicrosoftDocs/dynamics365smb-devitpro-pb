@@ -3,7 +3,7 @@ title: "XmlNode.AsXmlDocumentType Method"
 description: "Converts the node to an XmlDocumentType node. The operation will fail if the node is not an XmlDocumentType."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,7 +28,7 @@ XmlDocumentType :=   XmlNode.AsXmlDocumentType()
 ## Parameters
 *XmlNode*  
 &emsp;Type: [XmlNode](xmlnode-data-type.md)  
-An instance of the [XmlNode](xmlnode-data-type.md) data type.
+An instance of the [XmlNode](xmlnode-data-type.md) data type.  
 
 ## Return Value
 *XmlDocumentType*  

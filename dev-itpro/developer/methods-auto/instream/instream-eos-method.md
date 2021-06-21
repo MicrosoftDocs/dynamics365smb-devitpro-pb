@@ -3,7 +3,7 @@ title: "InStream.EOS Method"
 description: "Indicates whether an input stream has reached End of Stream (EOS)."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,7 +30,7 @@ IsEOS :=   InStream.EOS()
 ## Parameters
 *InStream*  
 &emsp;Type: [InStream](instream-data-type.md)  
-An instance of the [InStream](instream-data-type.md) data type.
+An instance of the [InStream](instream-data-type.md) data type.  
 
 ## Return Value
 *IsEOS*  

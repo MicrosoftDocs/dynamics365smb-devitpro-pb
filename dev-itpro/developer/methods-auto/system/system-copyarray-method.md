@@ -3,7 +3,7 @@ title: "System.CopyArray Method"
 description: "Copies one or more elements in an array to a new array."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -38,7 +38,7 @@ The array to copy to; the destination array.
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The position of the first array element to copy.
         
-*Length*  
+*[Optional] Length*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The number of array elements to copy. If you do not specify Length, all array elements are copied from Position to the last element. Use the following equation to determine valid values.
 1 =\< LENGTH =\< MAXLEN(ARRAY) - POSITION + 1

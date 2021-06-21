@@ -3,7 +3,7 @@ title: "Session.LogMessage Method"
 description: "Logs a trace message to a telemetry account."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -50,10 +50,10 @@ Additional dimension that will be emitted to the telemetry account and that can 
 *Value1*  
 &emsp;Type: [String](../string/string-data-type.md)  
 The value of Dimension1.   
-*Dimension2*  
+*[Optional] Dimension2*  
 &emsp;Type: [String](../string/string-data-type.md)  
 Additional dimension that will be emitted to the telemetry account and that can be used to specify filters in the query.   
-*Value2*  
+*[Optional] Value2*  
 &emsp;Type: [String](../string/string-data-type.md)  
 The value of Dimension2.   
 

@@ -3,7 +3,7 @@ title: "Text.Trim Method"
 description: "Returns a new Text in which all leading and trailing white-space characters from the current Text object are removed."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,7 +30,7 @@ Result :=   Text.Trim()
 ## Parameters
 *Text*  
 &emsp;Type: [Text](text-data-type.md)  
-An instance of the [Text](text-data-type.md) data type.
+An instance of the [Text](text-data-type.md) data type.  
 
 ## Return Value
 *Result*  

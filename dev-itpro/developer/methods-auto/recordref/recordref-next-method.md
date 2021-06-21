@@ -3,7 +3,7 @@ title: "RecordRef.Next Method"
 description: "Steps through a specified number of records and retrieves a record."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,15 +27,15 @@ Steps through a specified number of records and retrieves a record.
 ## Parameters
 *RecordRef*  
 &emsp;Type: [RecordRef](recordref-data-type.md)  
-An instance of the [RecordRef](recordref-data-type.md) data type.
+An instance of the [RecordRef](recordref-data-type.md) data type.  
 
-*Steps*  
+*[Optional] Steps*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 Defines the direction of the search and how many records to step include. If this parameter is greater than zero, the method will search the number of records specified in Steps forward in the table. If this parameter is less than zero, the method will search the number of records specified in Steps backward in the table. If this parameter is 0, no records are stepped over. If you do not specify this parameter, the method finds the next record.  
 
 
 ## Return Value
-*Steps*  
+*[Optional] Steps*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 Defines the direction of the search and how many records to include.
 

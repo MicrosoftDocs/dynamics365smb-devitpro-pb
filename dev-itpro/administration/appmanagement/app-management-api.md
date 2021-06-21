@@ -1,5 +1,6 @@
 ---
 title: "App Management API"
+description: Learn about managing Embed apps by using the App Management API.
 author: jswymer
 ms.custom: na
 ms.date: 04/01/2021
@@ -386,13 +387,14 @@ If a version of an app should be available in multiple countries, then the .app 
 |**version**|The minimum version of the dependency.|string|
 |**incompatibleFromVersion**|The initial app version of the dependency that is no longer compatible with the dependent app. If this value is set then it means that versions greater or equal to it are considered incompatible.|string|
 
-
 ### List versions
 
 Lists all `versions` that match the provided filter.
+
 ```
 GET https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{countryCode}/versions?$filter=<odata_filter>
 ```
+
 #### Parameters
 
 |Type|Name|Description|Schema|
@@ -450,6 +452,9 @@ POST https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{coun
 
 > [!IMPORTANT]
 > Make sure that you registered your app with the service and added a country to it, before you attempt to upload the app version.
+
+> [!NOTE]
+> If you want to update app to a version that introduces breaking changes, see [Upgrading an App by Using ForceSync](app-management-updating-with-forcesync.md).
 
 #### Parameters
 
