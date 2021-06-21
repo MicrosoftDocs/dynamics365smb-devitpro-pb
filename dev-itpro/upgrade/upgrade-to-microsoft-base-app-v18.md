@@ -168,7 +168,7 @@ You'll create two versions of this extension. The first version contains the tab
 
     The System.app file is located where you installed the AL Development Environment. By default, the folder path is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\180\AL Development Environment. This package contains the symbols for all the system tables and codeunits.
 
-9. Add the AL files for tha tables that you converted earlier to the root folder for the project.
+9. Add the AL files for the tables that you converted earlier to the root folder for the project.
 
 10. Build the extension package for the first version.
 
