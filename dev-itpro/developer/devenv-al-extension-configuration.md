@@ -40,6 +40,7 @@ The following table describes the user and workspace settings for the AL Languag
 |Snapshot Debugging Path|Sets the directory path where the snapshot debugger sources are located. Default is `./.snapshot`.|
 |Snapshot Output Path|Sets the directory path where snapshot files are saved. Default is `./.snapshots`.|
 |Use Legacy Runtime|Use the .NET Framework runtime for hosting the language service instead of the .NET Core runtime. Enabling this might result in a reduced level of performance.|
+|||
 <!-- |DefaultLaunchConfigurationName|Specifies the setting for resolving a server name. If this is set then all scenarios that need to resolve a server name will use this configuration setting.<br><br> For example, using the **Go to definition** option, if this server name is not specified, a list will be displayed to select a configuration from, which will be used going forward to resolve the server name and possibly provide symbolic information in the DAL file. To change that, specify the `DefaultLaunchConfigurationName`setting.<br> Another example is **Download symbols**; if there are multiple debug configurations, the specified `DefaultLaunchConfigurationName` will be used to resolve the server name and download symbols. If the server name is not specified, a list will be displayed to select a configuration from.| -->
 
 ## See Also

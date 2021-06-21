@@ -17,7 +17,9 @@ With the AL Profiler for [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]
 The AL profiler works on a snapshot of running code. For more information, see [Snapshot Debugging](devenv-snapshot-debugging.md).
 
 
-<!-- `al.statementLensMin` -->
+## AL configuration 
+
+The option for adding a lower limit for time spent on statement execution is `al.statementLensMin`. To activate this setting, press **Ctrl+Shift+P**, and then choose **Preferences: Open Settings (UI)** for workspace settings, or choose **Preferences: Open User Settings** for user settings. <!-- Setting..., which will be shown when opening a code file through the AL profiler`al.statementLensMin` -->
 
 ## See Also
 
