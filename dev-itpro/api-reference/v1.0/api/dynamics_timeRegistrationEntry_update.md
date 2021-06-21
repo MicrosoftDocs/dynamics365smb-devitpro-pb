@@ -23,7 +23,7 @@ Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md
 PATCH businesscentralPrefix/companies({companyId})/timeRegistrationEntries({timeregistrationId})
 ```
 
-## Request headers
+## Request headers (v1.0)
 
 |Header        |Value                    |
 |--------------|-------------------------|
@@ -32,7 +32,7 @@ PATCH businesscentralPrefix/companies({companyId})/timeRegistrationEntries({time
 |If-Match  |*application/json*         |
 
 
-## Example
+## Example (v1.0)
 
 **Request**
 

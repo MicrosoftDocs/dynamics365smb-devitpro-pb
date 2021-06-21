@@ -79,8 +79,9 @@ Here is an example of the response.
 ```
 
 ## See also
+
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
-[subscriptions](../resources/dynamics-subscriptions.md)    
+[subscriptions](../dynamics-subscriptions.md)    
 [Get subscriptions](dynamics_subscriptions_Get.md)    
 [Delete subscriptions](dynamics_subscriptions_Delete.md)    
 [Create subscriptions](dynamics_subscriptions_Create.md)    

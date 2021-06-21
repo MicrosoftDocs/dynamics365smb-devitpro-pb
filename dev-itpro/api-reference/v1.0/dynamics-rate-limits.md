@@ -1,6 +1,6 @@
 ---
-title: (v1.0) "API Limits in Dynamics 365 Business Central"
-description: (v1.0) ""
+title: "Working with API Limits in Dynamics 365 Business Central (v1.0)"
+description: "Describes working with current API limits in Business Central"
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 12/16/2019
@@ -12,7 +12,7 @@ ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
-# Working with API limits in Dynamics 365 Business Central
+# Working with API limits in Dynamics 365 Business Central (v1.0)
 
 Large scale cloud services use shared resources to achieve the best possible utilization of resources – like IO, CPU, and memory. To ensure that all tenants are running smoothly, on shared resources, rate limits are applied. Without limits, one tenant might be using most resources, while other tenants running on the same resources might experience slower performance – one tenant can become a ‘noisy neighbor’.  
 
@@ -62,6 +62,6 @@ There are several areas to consider, which can reduce the amount of calls from a
 ## See Also
 
 [Current API Limits](dynamics-current-limits.md)  
-[Best practices on transient errors](https://docs.microsoft.com/azure/architecture/best-practices/transient-faults)  
-[Using OData Batch request](https://docs.microsoft.com/openspecs/windows_protocols/ms-odata/dd99aa5c-d81e-4eac-9e07-039491356bf6)  
-[Microsoft API Terms of Use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use)
+[Best practices on transient errors](/azure/architecture/best-practices/transient-faults)  
+[Using OData Batch request](/openspecs/windows_protocols/ms-odata/dd99aa5c-d81e-4eac-9e07-039491356bf6)  
+[Microsoft API Terms of Use](/legal/microsoft-apis/terms-of-use)

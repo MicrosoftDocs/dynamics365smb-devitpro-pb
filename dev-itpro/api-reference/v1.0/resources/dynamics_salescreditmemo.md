@@ -13,7 +13,7 @@ ms.date: 04/01/2019
 ms.author: solsen
 ---
 
-# salesCreditMemos resource type
+# salesCreditMemos resource type (v1.0)
 
 [!INCLUDE[d365_api_newversion](../../../includes/d365_api_newversion.md)]
 
@@ -25,7 +25,7 @@ Represents a sales credit memo in [!INCLUDE[prod_short](../../../includes/prod_s
 ## Methods
 
 | Method       | Return Type  |Description|
-|:---------------|:--------|:----------|
+|:-------------|:--------|:----------|
 |[GET salesCreditMemos](../api/dynamics_salescreditmemo_get.md)|salesCreditMemos|Gets a sales credit memo object.|
 |[POST salesCreditMemos](../api/dynamics_create_salescreditmemo.md)|salesCreditMemos|Creates a sales credit memo object.|
 |[PATCH salesCreditMemos](../api/dynamics_salescreditmemo_update.md)|salesCreditMemos|Update a sales credit memo object.|
@@ -41,7 +41,7 @@ Represents a sales credit memo in [!INCLUDE[prod_short](../../../includes/prod_s
 ## Properties
 
 | Property     | Type   |Description|
-|:---------------|:--------|:----------|
+|:-------------|:--------|:----------|
 |id|GUID|The credit memo ID. Non-editable.|
 |number|string, maximum size 20|The credit memo number. Read-Only.|
 |creditMemoDate|date|The credit memo date|

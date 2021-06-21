@@ -1,6 +1,6 @@
 ---
-title: (v1.0) Update item defaultDimensions
-description: (v1.0) Updates the item default dimensions in Dynamics 365 Business Central.
+title: (v1.0) Update item picture
+description: (v1.0) Updates the item picture in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 
@@ -13,49 +13,46 @@ ms.date: 04/01/2019
 ms.author: solsen
 ---
 
-# Update item defaultDimensions (v1.0)
-Update the default dimensions of the item in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
+# Update item picture (v1.0)
+Update the item picture of the item in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 
 ## HTTP request
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v1.0/endpoints-apis-for-dynamics.md).
 ```
-PATCH businesscentralPrefix/companies({companyId})/items({itemId})/defaultDimensions({itemId},{dimensionId})
+PATCH businesscentralPrefix/companies({companyId})/items({itemId})/picture
 ```
 
-## Request headers
+## Request headers (v1.0)
 
 |Header        |Value                    |
 |--------------|-------------------------|
 |Authorization |Bearer {token}. Required.|
 |Content-Type  |application/json         |
 
-## Request body
+## Request body (v1.0)
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
 > [!NOTE]  
 > You cannot modify parentId, dimensionId or dimensionCode fields, because these are key fields, and rename is not allowed in Default Dimension record.
 
-## Response
-If successful, this method returns a `200 OK` response code and an updated default dimensions for the **item** in the response body. 
+## Response (v1.0)
+If successful, this method returns a `200 OK` response code and an updated picture for the **item** in the response body. 
 
-## Example
+## Example (v1.0)
 
 **Request**
 
 Here is an example of the request.
 
 ```json
-PATCH https://{businesscentralPrefix}/api/v1.0/companies({companyId})/items({itemId})/defaultDimensions({itemId},{dimensionId})
+PATCH https://{businesscentralPrefix}/api/v1.0/companies({companyId})/items({itemId})/picture
 ```
 
 **Request body**
 
-```
-{
-  "dimensionValueId":"1045a902-070a-4d31-b2b1-b9431e9e5b26",
-  "postingValidation":"Same Code"
-}
+```json
+PATCH https://{businesscentralPrefix}/api/v1.0/companies({companyId})/items({itemId})/picture
 ```
 
 **Response**
@@ -67,19 +64,12 @@ Here is an example of the response.
 
 ```json
 {
-    "@odata.context":"https://api.businesscentral.dynamics.com/v1.0/api/v1.0/$metadata#companies(5106c77d-af37-4e2d-bb88-45d87aba1033)/items(b3fbe87a-61b8-4a6c-85de-0555f1627a67)/defaultDimensions",
-    "value":
-    [
-        {
-            "@odata.etag":"W/\"JzQ0OzNPaHFuS0ZQdk5oc3ZkSW9KdzVkdXk2LytjcmNqeHJJOU05SjZ1aFBYVjQ9MTswMDsn\"",
-            "parentId":"b3fbe87a-61b8-4a6c-85de-0555f1627a67",
-            "dimensionId":"d5fc81ea-8687-4e9d-9c49-7fde28ccdb1a",
-            "dimensionCode":"DEPARTMENT",
-            "dimensionValueId":"1045a902-070a-4d31-b2b1-b9431e9e5b26",
-            "dimensionValueCode":"PROD",
-            "postingValidation":"Same Code"
-        }
-    ]
+  "id": "d0e5d5da-795a-4924-b376-13665f794cdd",
+  "width": 500,
+  "height": 496,
+  "contentType": "image\jpeg",
+  "content@odata.mediaEditLink": "https:\\api.businesscentral.dynamics-tie.com\v1.0\api\beta\companies(55c438d0-2f5c-44a0-9965-20b4923d0bef)\items(d0e5d5da-795a-4924-b376-13665f794cdd)\picture(d0e5d5da-795a-4924-b376-13665f794cdd)\content",
+  "content@odata.mediaReadLink": "https:\\api.businesscentral.dynamics-tie.com\v1.0\api\beta\companies(55c438d0-2f5c-44a0-9965-20b4923d0bef)\items(d0e5d5da-795a-4924-b376-13665f794cdd)\picture(d0e5d5da-795a-4924-b376-13665f794cdd)\content"
 }
 ```
 

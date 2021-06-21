@@ -13,7 +13,7 @@ ms.date: 04/01/2019
 ms.author: solsen
 ---
 
-# purchaseInvoices resource type
+# purchaseInvoices resource type (v1.0)
 
 [!INCLUDE[d365_api_newversion](../../../includes/d365_api_newversion.md)]
 
@@ -24,8 +24,8 @@ Represents a purchase invoice in [!INCLUDE[prod_short](../../../includes/prod_sh
 
 ## Methods
 
-| Method                                                             | Return Type    |Description                     |
-|:-------------------------------------------------------------------|:---------------|:-------------------------------|
+| Method    | Return Type    | Description      |
+|:----------|:---------------|:-----------------|
 |[GET purchaseInvoices](../api/dynamics_purchaseinvoice_get.md)      |purchaseInvoices|Gets a purchase invoice object.|
 |[POST purchaseInvoices](../api/dynamics_create_purchaseinvoice.md)  |purchaseInvoices|Creates a purchase invoice object.|
 |[PATCH purchaseInvoices](../api/dynamics_purchaseinvoice_update.md) |purchaseInvoices|Updates a purchase invoice object.|

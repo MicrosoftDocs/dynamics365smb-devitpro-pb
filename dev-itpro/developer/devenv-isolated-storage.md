@@ -12,7 +12,7 @@ author: SusanneWindfeldPedersen
 
 # Isolated Storage
 
-Isolated Storage is a data storage that provides isolation between extensions, so that you can keep keys/values in one extension from being accessed from other extensions. Keys/values in the Isolated Storage are accessible through an API. The option type used for classifying data is [DataScope Option Type](methods-auto/datascope/datascope-option.md) and the data type used is the [IsolatedStorage Data Type](methods-auto/isolatedstorage-data-type.md).
+Isolated Storage is a data storage that provides isolation between extensions, so that you can keep keys/values in one extension from being accessed from other extensions. Keys/values in the Isolated Storage are accessible through an API. The option type used for classifying data is [DataScope Option Type](methods-auto/datascope/datascope-option.md) and the data type used is the [IsolatedStorage Data Type](methods-auto/isolatedstorage/isolatedstorage-data-type.md).
 
 The methods supported for IsolatedStorage are:
 
@@ -27,4 +27,4 @@ The methods supported for IsolatedStorage are:
 ## See Also
 
 [DataScope Option Type](methods-auto/datascope/datascope-option.md)  
-[IsolatedStorage Data Type](methods-auto/isolatedstorage-data-type.md)  
+[IsolatedStorage Data Type](methods-auto/isolatedstorage/isolatedstorage-data-type.md)  

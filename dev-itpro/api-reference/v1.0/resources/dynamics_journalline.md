@@ -13,7 +13,7 @@ ms.date: 04/01/2019
 ms.author: solsen
 ---
 
-# journalLines resource type
+# journalLines resource type (v1.0)
 
 [!INCLUDE[d365_api_newversion](../../../includes/d365_api_newversion.md)]
 
@@ -42,8 +42,8 @@ Represents a line in a journal in [!INCLUDE[prod_short](../../../includes/prod_s
 
 ## Properties
 
-| Property             | Type                   |Description                                                        |
-|:---------------------|:-----------------------|:------------------------------------------------------------------|
+| Property   | Type       |Description    |
+|:-----------|:-----------|:--------------|
 |id                    |GUID                    |The unique ID of the journal line. Non-editable.                   |
 |journalDisplayName    |string, maximum size 10 |The display name of the journal that this line belongs to. Read-Only.|
 |lineNumber            |integer                 |The number of the journal line.                                    |

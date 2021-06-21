@@ -22,20 +22,20 @@ Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md
 DELETE businesscentralPrefix/companies({companyId})/vendors({vendorId})/defaultDimensions({vendorId},{dimensionId})
 ```
 
-## Request headers
+## Request headers (v1.0)
 
 |Header         |Value                     |
 |---------------|--------------------------|
 |Authorization  |Bearer {token}. Required. |
 |If-Match       |Required. When this request header is included and the eTag provided does not match the current tag on the **vendors**, the **vendors** will not be updated. |
 
-## Request body
+## Request body (v1.0)
 Do not supply a request body for this method.
 
-## Response
+## Response (v1.0)
 If successful, this method returns a ```204 No Content``` response code and it deletes the default dimensions for the vendor and corresponding dimension.
 
-## Example
+## Example (v1.0)
 
 **Request**
 
