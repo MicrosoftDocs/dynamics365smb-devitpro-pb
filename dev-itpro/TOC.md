@@ -625,7 +625,7 @@
 ##### [WithEvents Attribute](developer/attributes/devenv-withevents-attribute.md)
 <!-- [//]: # (IMPORTANT: END>DO_NOT_EDIT_ATTRIBUTES) -->
 #### [Procedure Overload](developer/methods/devenv-overload-method.md)
-#### [Joker Data Type](developer/methods/devenv-joker-datatype.md)
+#### [Joker Data Type (Internal)](developer/methods/devenv-joker-datatype.md)
 #### Option Types
 <!-- [//]: # (START>DO_NOT_EDIT_METHODS)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
