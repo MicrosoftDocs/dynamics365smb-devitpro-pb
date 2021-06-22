@@ -30,6 +30,7 @@ Specifies that the method is a HyperLinkHandler method, which handles HyperLinkH
 
 ## Syntax
 
+> **Version**: _Available or changed with runtime version 1.0._
 ```
 [HyperlinkHandler]
 procedure HyperlinkHandler(Message: Text[1024])

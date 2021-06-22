@@ -30,6 +30,7 @@ Specifies that the method is a ReportHandler method, which handles specific repo
 
 ## Syntax
 
+> **Version**: _Available or changed with runtime version 1.0._
 ```
 [ReportHandler]
 procedure ReportHandler(var Report: Report)

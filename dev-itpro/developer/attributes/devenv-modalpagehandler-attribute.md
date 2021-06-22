@@ -30,6 +30,7 @@ Specifies that the method is a ModalPageHandler method, which handles specific p
 
 ## Syntax
 
+> **Version**: _Available or changed with runtime version 1.0._
 ```
 [ModalPageHandler]
 procedure ModalPageHandler(var Page: TestPage)

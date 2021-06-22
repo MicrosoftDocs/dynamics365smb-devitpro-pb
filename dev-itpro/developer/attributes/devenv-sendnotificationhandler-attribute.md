@@ -30,6 +30,7 @@ Specifies that the method is a SendNotificationHandler method, which handles Sen
 
 ## Syntax
 
+> **Version**: _Available or changed with runtime version 1.0._
 ```
 [SendNotificationHandler([HandlerIsOptional: Boolean])]
 procedure SendNotificationHandler(var TheNotification: Notification) : Boolean;

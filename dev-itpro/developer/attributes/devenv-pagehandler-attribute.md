@@ -30,6 +30,7 @@ Specifies that the method is a PageHandler method, which handles specific pages 
 
 ## Syntax
 
+> **Version**: _Available or changed with runtime version 1.0._
 ```
 [PageHandler]
 procedure PageHandler(var Page: TestPage)

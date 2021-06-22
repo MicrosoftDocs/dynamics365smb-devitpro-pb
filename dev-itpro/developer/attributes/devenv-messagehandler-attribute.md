@@ -30,6 +30,7 @@ Specifies that the method is a MessageHandler method, which handles Message stat
 
 ## Syntax
 
+> **Version**: _Available or changed with runtime version 1.0._
 ```
 [MessageHandler]
 procedure MessageHandler(Message: Text[1024])

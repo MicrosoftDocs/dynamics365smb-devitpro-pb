@@ -30,6 +30,7 @@ Specifies that the method is a StrMenuHandler method, which handles StrMenu stat
 
 ## Syntax
 
+> **Version**: _Available or changed with runtime version 1.0._
 ```
 [StrMenuHandler]
 procedure StrMenuHandler(Options: Text[1024], var Choice: Integer, Instruction: Text[1024])
