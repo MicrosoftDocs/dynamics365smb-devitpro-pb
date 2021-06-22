@@ -6222,12 +6222,12 @@
    },
    { 
     "source_path": "dev-itpro/developer/methods/devenv-integration-attribute.md",
-    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/attributes/devenv-integration-attribute",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/attributes/devenv-integrationevent-attribute",
     "redirect_document_id": false
    },
    { 
     "source_path": "dev-itpro/developer/methods/devenv-internal-attribute.md",
-    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/attributes/devenv-internal-attribute",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/attributes/devenv-internalevent-attribute",
     "redirect_document_id": false
    },
    { 
