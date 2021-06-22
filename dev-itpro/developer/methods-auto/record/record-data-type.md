@@ -3,7 +3,7 @@ title: "Record Data Type"
 description: "Is a complex data type."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/15/2021
+ms.date: 06/22/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -88,7 +88,7 @@ The following methods are available on instances of the Record data type.
 |[Relation(Any)](record-relation-method.md)|Determines the table relationship of a given field.|
 |[Rename(Any [, Any,...])](record-rename-method.md)|Changes the value of a primary key in a table.|
 |[Reset()](record-reset-method.md)|Removes all filters, including any special filters set by MarkedOnly, changes fields select for loading back to all, and changes the current key to the primary key. Also removes any marks on the record and clears any AL variables defined on its table definition.|
-|[SecurityFiltering([SecurityFilter])](record-securityfiltering-method.md)|Determines the table relationship of a given field.|
+|[SecurityFiltering([SecurityFilter])](record-securityfiltering-method.md)|Gets or sets how security filters are applied to the record.|
 |[SetAscending(Any, Boolean)](record-setascending-method.md)|Sets the sort order for the records returned. Use this method after you have set the keys to sort after, using SETCURRENTKEY. The default sort order is ascending. You can use SETASCENDING to change the sort order to descending for a specific field, while the other fields in the specified key are sorted in ascending order.|
 |[SetAutoCalcFields([Any,...])](record-setautocalcfields-method.md)|Sets the FlowFields that you specify to be automatically calculated when the record is retrieved from the database.|
 |[SetCurrentKey(Any [, Any,...])](record-setcurrentkey-method.md)|Selects a key for a table.|
