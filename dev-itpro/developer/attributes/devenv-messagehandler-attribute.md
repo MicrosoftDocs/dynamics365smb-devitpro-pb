@@ -3,7 +3,7 @@ title: "MessageHandler Attribute"
 description: "Specifies that the method is a MessageHandler method, which handles Message statements."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/16/2021
+ms.date: 06/22/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,18 +30,20 @@ Specifies that the method is a MessageHandler method, which handles Message stat
 
 ## Syntax
 
+> **Version**: _Available or changed with runtime version 1.0._
 ```
 [MessageHandler]
 procedure MessageHandler(Message: Text[1024])
 ```
 > [!IMPORTANT]
-> The above signature requires the method on which the **MessageHandler** attribute is set to be *global*. For more information, see [Local and global scope in AL methods](../devenv-al-methods.md%23local-and-global-scope).
+> The above signature requires the MessageHandler method to be *global*. For more information, see [Local and global scope in AL methods](../devenv-al-methods.md%23local-and-global-scope).
+> **Version**: _Available or changed with runtime version 2.1._
 ```
 [MessageHandler]
 procedure MessageHandler(Message: Text)
 ```
 > [!IMPORTANT]
-> The above signature requires the method on which the **MessageHandler** attribute is set to be *global*. For more information, see [Local and global scope in AL methods](../devenv-al-methods.md%23local-and-global-scope).
+> The above signature requires the MessageHandler method to be *global*. For more information, see [Local and global scope in AL methods](../devenv-al-methods.md%23local-and-global-scope).
 
 ### Arguments
 *Message*  
