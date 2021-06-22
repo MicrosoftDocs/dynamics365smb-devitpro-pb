@@ -17,7 +17,7 @@ author: EmmaNielsson
 Would you like to know what has changed in update 18.2? Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update. In addition, we have gathered some good to know information and links, you might find interesting.
 
 > [!IMPORTANT]  
-> Business Central online version 18.2 for India is delayed and will be available later this month. This page will be updated when the build is available.
+> Business Central online version 18.2 for India is now available. For more information, see [Update 18.2 for Microsoft Dynamics 365 Business Central 2021 Release Wave 1](https://support.microsoft.com/help/5004062).
 
 ## Hotfixes
 Find an overview of hotfixes in this [article](https://support.microsoft.com/help/5004062).

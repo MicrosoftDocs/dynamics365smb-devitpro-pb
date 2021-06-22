@@ -1,5 +1,5 @@
 ---
-title: (v1.0) Get pdfDocument
+title: (v1.0) Get salesCreditMemo pdfDocument
 description: (v1.0) Gets a PDF document on a salesCreditMemo in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
@@ -13,13 +13,13 @@ ms.date: 04/01/2019
 ms.author: solsen
 ---
 
-# Get pdfDocument
+# Get salesCreditmemo pdfDocument (v1.0)
 Retrieve a PDF print-out of the corresponding document as binary content for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]  
 > To generate a document in the supported local language, you must specify `Accept-Language` in the Request header, for example `Accept-Language: nl-NL` for Dutch.
 
-## HTTP request
+## HTTP request (v1.0)
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v1.0/endpoints-apis-for-dynamics.md).
 The following example gets a link to the content of the PDF:
 
@@ -27,19 +27,19 @@ The following example gets a link to the content of the PDF:
 GET businesscentralPrefix/api/v1.0/companies({id})/salesCreditMemos({creditMemoId})/pdfDocument
 ```
 
-## Request headers
+## Request headers (v1.0)
 
 |Header|Value|
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
 
-## Request body
+## Request body (v1.0)
 Do not supply a request body for this method.
 
-## Response
+## Response (v1.0)
 If successful, this method returns a ```200 OK``` response code and a link to the PDF document in the response body.
 
-## Example
+## Example (v1.0)
 
 **Request**
 Here is an example of the request.

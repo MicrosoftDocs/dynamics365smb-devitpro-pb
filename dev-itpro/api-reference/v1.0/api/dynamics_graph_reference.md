@@ -13,7 +13,8 @@ ms.date: 04/01/2019
 ms.author: solsen
 
 ---
-# Microsoft graph reference
+# Microsoft graph reference (v1.0)
+
 In this section, you can find API documentation for Microsoft Graph.
 
 |For Resource Type|See|
