@@ -80,6 +80,12 @@ These areas of the application are known to cause a performance impact and requi
 - [Item tracking and Lot/SN Expiration dates](/dynamics365/business-central/inventory-how-work-item-tracking)  
 - [Change log](/dynamics365/business-central/across-log-changes)  
 
+## If processing of Sales Order lines is slow
+If you experience that processing of Sales Order lines containing bill-of-materials (BOMs) is slow, then please check if _Stockout Warning_ on the page  _Sales & Receivables Setup_, is set to True. If that is the case, please set it to False.
+
+Why? 
+_Stockout Warning_ specifies if a warning should be displayed if a user enters a quantity on a sales document that brings the item’s inventory below zero. The calculation includes all sales document lines that have not yet been posted. Stockout Warning can still be used on items - this can be done by setting the individual Item’s _Stockout Warning_ to true on the Item Card. 
+
 ## Manage the database access intent on reports, API pages, and queries
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] supports the **Read Scale-Out** feature in Azure SQL Database and SQL Server to load-balance analytical workloads. **Read Scale-Out** is built in to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, but it can also be enabled for on-premises.
