@@ -29,7 +29,7 @@ You can use the following handler methods:
 |RequestPageHandler|Handles the request page of a specific report.|\<*Function name*>\(var \<*RequestPage* > : TestRequestPage\)|  
 |HyperlinkHandler|Handles specific hyperlinks.|\<*Function name*>\(\<*Hyperlink*> : Text\[1024\]\)|  
 |SendNotificationHandler|Handles **Send** statements.|\<*Function name*>\(\<*TheNotification*>: Notification\): Boolean|  
-|RecallNotificationHandler|Handles **Recall**|\<*Function name*>\(\<*TheNotification*>: Notification\): Boolean|  
+|RecallNotificationHandler|Handles **Recall** statements.|\<*Function name*>\(\<*TheNotification*>: Notification\): Boolean|  
 |SessionSettingsHandler|Handles **RequestSessionUpdate** statements.|\<*Function name*>\(var \<*SessionSettings*>: SessionSettings\): Boolean|| 
 
   
