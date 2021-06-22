@@ -3,7 +3,7 @@ title: "Record.FieldCaption Method"
 description: "Gets the current caption of the specified field as a string."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,7 @@ Caption :=   Record.FieldCaption(Field: Any)
 ## Parameters
 *Record*  
 &emsp;Type: [Record](record-data-type.md)  
-An instance of the [Record](record-data-type.md) data type.
+An instance of the [Record](record-data-type.md) data type.  
 
 *Field*  
 &emsp;Type: [Any](../any/any-data-type.md)  

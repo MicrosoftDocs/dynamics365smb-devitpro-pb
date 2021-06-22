@@ -3,7 +3,7 @@ title: "Xmlport.Export Method"
 description: "Creates an XML data stream (XML document) and sends it to a chosen destination."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -33,14 +33,14 @@ The ID of the XmlPort that you want to run.
 &emsp;Type: [OutStream](../outstream/outstream-data-type.md)  
 Where the XmlPort object will write the XML data stream.
         
-*Record*  
+*[Optional] Record*  
 &emsp;Type: [Record](../record/record-data-type.md)  
 The record to use in the XmlPort. Any filters attached to the record will be used. This parameter is optional. If this parameter is omitted, all records in the table are exported.
           
 
 
 ## Return Value
-*Ok*  
+*[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 

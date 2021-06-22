@@ -3,7 +3,7 @@ title: "RecordRef.GetFilters Method"
 description: "Determines which filters have been applied to the table referred to by the RecordRef."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,7 +30,7 @@ String :=   RecordRef.GetFilters()
 ## Parameters
 *RecordRef*  
 &emsp;Type: [RecordRef](recordref-data-type.md)  
-An instance of the [RecordRef](recordref-data-type.md) data type.
+An instance of the [RecordRef](recordref-data-type.md) data type.  
 
 ## Return Value
 *String*  

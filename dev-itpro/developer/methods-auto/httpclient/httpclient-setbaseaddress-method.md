@@ -3,7 +3,7 @@ title: "HttpClient.SetBaseAddress Method"
 description: "Sets the base address of Uniform Resource Identifier (URI) of the Internet resource used when sending requests."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,7 @@ Sets the base address of Uniform Resource Identifier (URI) of the Internet resou
 ## Parameters
 *HttpClient*  
 &emsp;Type: [HttpClient](httpclient-data-type.md)  
-An instance of the [HttpClient](httpclient-data-type.md) data type.
+An instance of the [HttpClient](httpclient-data-type.md) data type.  
 
 *NewBaseAddress*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -35,7 +35,7 @@ The base address of the Uniform Resource Identifier (URI) of the Internet resour
 
 
 ## Return Value
-*Ok*  
+*[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 

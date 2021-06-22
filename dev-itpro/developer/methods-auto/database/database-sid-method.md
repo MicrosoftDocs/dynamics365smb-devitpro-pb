@@ -3,7 +3,7 @@ title: "Database.SID Method"
 description: "Retrieves the security identifier (SID) of a Windows user account."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,7 +29,7 @@ SID :=   Database.SID([UserAccount: String])
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
 ## Parameters
-*UserAccount*  
+*[Optional] UserAccount*  
 &emsp;Type: [String](../string/string-data-type.md)  
 The Windows user account for which you want to get the SID. You must specify a domain and user name, such as 'cronus\\simon'.  
 

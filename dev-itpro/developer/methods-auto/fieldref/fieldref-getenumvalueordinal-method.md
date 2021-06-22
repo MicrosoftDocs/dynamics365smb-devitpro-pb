@@ -3,7 +3,7 @@ title: "FieldRef.GetEnumValueOrdinal Method"
 description: "Gets the Enum value (or Option member) ordinal value from the Enum metadata for the field that is currently selected."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,7 @@ The Enum value ordinal value :=   FieldRef.GetEnumValueOrdinal(Index: Integer)
 ## Parameters
 *FieldRef*  
 &emsp;Type: [FieldRef](fieldref-data-type.md)  
-An instance of the [FieldRef](fieldref-data-type.md) data type.
+An instance of the [FieldRef](fieldref-data-type.md) data type.  
 
 *Index*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  

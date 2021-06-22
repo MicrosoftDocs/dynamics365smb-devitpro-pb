@@ -3,7 +3,7 @@ title: "System.Randomize Method"
 description: "Generates a set of random numbers from which the RANDOM method (Integer) will select a random number."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,7 @@ Generates a set of random numbers from which the RANDOM method (Integer) will se
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
 ## Parameters
-*Seed*  
+*[Optional] Seed*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 A number used to create a unique set of numbers.  
 

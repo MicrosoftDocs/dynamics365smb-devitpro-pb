@@ -3,7 +3,7 @@ title: "System.ImportObjects Method"
 description: "Imports application objects from a file."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -33,7 +33,7 @@ Imports application objects from a file.
 &emsp;Type: [String](../string/string-data-type.md)  
 The path of the file from which the objects will be imported.
         
-*Format*  
+*[Optional] Format*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The format in which the objects are represented in the file.  
 

@@ -3,7 +3,7 @@ title: "XmlNamespaceManager.PopScope Method"
 description: "Pops a namespace scope off the stack."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,7 +28,7 @@ Pops a namespace scope off the stack.
 ## Parameters
 *XmlNamespaceManager*  
 &emsp;Type: [XmlNamespaceManager](xmlnamespacemanager-data-type.md)  
-An instance of the [XmlNamespaceManager](xmlnamespacemanager-data-type.md) data type.
+An instance of the [XmlNamespaceManager](xmlnamespacemanager-data-type.md) data type.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

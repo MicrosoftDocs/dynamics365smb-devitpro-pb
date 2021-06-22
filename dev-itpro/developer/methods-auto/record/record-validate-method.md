@@ -3,7 +3,7 @@ title: "Record.Validate Method"
 description: "Calls the OnValidate trigger for the field that you specify."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,13 +27,13 @@ Calls the OnValidate trigger for the field that you specify.
 ## Parameters
 *Record*  
 &emsp;Type: [Record](record-data-type.md)  
-An instance of the [Record](record-data-type.md) data type.
+An instance of the [Record](record-data-type.md) data type.  
 
 *Field*  
 &emsp;Type: [Any](../any/any-data-type.md)  
 A field together with associated triggers.
           
-*NewValue*  
+*[Optional] NewValue*  
 &emsp;Type: [Any](../any/any-data-type.md)  
 The value to insert into Field.
           

@@ -3,7 +3,7 @@ title: "JsonObject.Values Method"
 description: "Gets a set of values of the JsonObject."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,7 +30,7 @@ Values :=   JsonObject.Values()
 ## Parameters
 *JsonObject*  
 &emsp;Type: [JsonObject](jsonobject-data-type.md)  
-An instance of the [JsonObject](jsonobject-data-type.md) data type.
+An instance of the [JsonObject](jsonobject-data-type.md) data type.  
 
 ## Return Value
 *Values*  

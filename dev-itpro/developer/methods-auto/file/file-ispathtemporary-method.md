@@ -3,7 +3,7 @@ title: "File.IsPathTemporary Method"
 description: "Validates whether the given path is located in the current users temporary folder within the current service."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -35,7 +35,7 @@ The name of the file, including the path.
 
 
 ## Return Value
-*Ok*  
+*[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the name point to a location is the users temporary folder within the current service; **false** otherwise. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 

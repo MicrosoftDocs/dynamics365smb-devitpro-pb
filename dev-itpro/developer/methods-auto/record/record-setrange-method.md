@@ -3,7 +3,7 @@ title: "Record.SetRange Method"
 description: "Sets a simple filter, such as a single range or a single value, on a field."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,17 +27,17 @@ Sets a simple filter, such as a single range or a single value, on a field.
 ## Parameters
 *Record*  
 &emsp;Type: [Record](record-data-type.md)  
-An instance of the [Record](record-data-type.md) data type.
+An instance of the [Record](record-data-type.md) data type.  
 
 *Field*  
 &emsp;Type: [Any](../any/any-data-type.md)  
 The field that you want to filter.
           
-*FromValue*  
+*[Optional] FromValue*  
 &emsp;Type: [Any](../any/any-data-type.md)  
 The lower limit of the range. The data type of this parameter must match the data type of Field.
           
-*ToValue*  
+*[Optional] ToValue*  
 &emsp;Type: [Any](../any/any-data-type.md)  
 The upper limit of the range. If you omit this parameter, then the value that you specified for FromValue is used. The data type of this parameter must match the data type of Field.
           

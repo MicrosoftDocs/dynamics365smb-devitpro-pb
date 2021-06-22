@@ -3,7 +3,7 @@ title: "XmlAttribute.NamespacePrefix Method"
 description: "Gets the prefix of the attribute (if any)."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,7 +30,7 @@ NamespacePrefix :=   XmlAttribute.NamespacePrefix()
 ## Parameters
 *XmlAttribute*  
 &emsp;Type: [XmlAttribute](xmlattribute-data-type.md)  
-An instance of the [XmlAttribute](xmlattribute-data-type.md) data type.
+An instance of the [XmlAttribute](xmlattribute-data-type.md) data type.  
 
 ## Return Value
 *NamespacePrefix*  

@@ -10,6 +10,7 @@
 ## Develop
 ### [The SMB Opportunity for App Publishers](developer/readiness/opportunity-app-publisher.md)
 ### [Get Started with Building Apps](developer/readiness/get-started.md)
+### [Customize Business Central](developer/readiness/readiness-customizing-tenants.md)
 ### [The Lifecycle of Apps and Extensions](developer/devenv-app-life-cycle.md)
 <!--#### What the partner's responsibilities are -->
 ### [Update Lifecycle for Customizations](developer/devenv-customization-update-lifecycle.md)
@@ -40,6 +41,7 @@
 #### App Management
 ##### [Introduction](administration/appmanagement/app-management-overview.md)
 ##### [App Management API](administration/appmanagement/app-management-api.md)
+##### [Upgrading an App Using ForceSync](administration/appmanagement/app-management-updating-with-forcesync.md)
 ## Sell
 ### [Get Started as a Reseller of Business Central Online](administration/get-started-online.md)
 ### [Cloud Solution Provider program](/partner-center/csp-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
@@ -213,6 +215,7 @@
 <!--### [Migrating from Dynamics SL](administration/migrate-data.md)-->
 <!-- end migrate -->
 ## What's New or Changed
+### [Update 18.2](whatsnew/whatsnew-update-18-2.md)
 ### [Update 18.1](whatsnew/whatsnew-update-18.1.md)
 ### [Update 17.5](whatsnew/whatsnew-update-17-5.md)
 ### [Update 17.4](whatsnew/whatsnew-update-17-4.md)
@@ -352,7 +355,6 @@
 ### [Classifying Data](developer/devenv-classifying-data.md)
 ### [Enabling Sales Tables for Extension Development](developer/devenv-integrating-dynamics-365-for-sales-extension-development.md)
 ### [Creating Filter Pages for Tables](developer/devenv-filter-pages-for-filtering-tables.md)
-### [Formatting Decimal Values in Fields](developer/devenv-format-field-data.md)
 ### [Working With Media on Records](developer/devenv-working-with-media-on-records.md)
 ### Partial Records
 #### [Using Partial Records](developer/devenv-partial-records.md)
@@ -468,6 +470,9 @@
 ## Linking to the Web Client and App
 ### [Web Client URL](developer/devenv-web-client-urls.md)
 ### [Business Central App URL](developer/devenv-link-to-mobile-app.md) 
+## Formatting Data
+### [Formatting Decimal Values in Fields](developer/devenv-format-field-data.md)
+### [Formatting Values, Dates, and Time](developer/devenv-format-property.md)
 ## Translations
 ### [Translations Overview](developer/devenv-translations-overview.md)
 ### [Working with Translation Files](developer/devenv-work-with-translation-files.md)
@@ -620,7 +625,7 @@
 ##### [WithEvents Attribute](developer/attributes/devenv-withevents-attribute.md)
 <!-- [//]: # (IMPORTANT: END>DO_NOT_EDIT_ATTRIBUTES) -->
 #### [Procedure Overload](developer/methods/devenv-overload-method.md)
-#### [Joker Data Type](developer/methods/devenv-joker-datatype.md)
+#### [Joker Data Type (Internal)](developer/methods/devenv-joker-datatype.md)
 #### Option Types
 <!-- [//]: # (START>DO_NOT_EDIT_METHODS)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)

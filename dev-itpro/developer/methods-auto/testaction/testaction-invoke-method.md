@@ -3,7 +3,7 @@ title: "TestAction.Invoke Method"
 description: "Invokes an action on a test page."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,7 +28,7 @@ Invokes an action on a test page.
 ## Parameters
 *TestAction*  
 &emsp;Type: [TestAction](testaction-data-type.md)  
-An instance of the [TestAction](testaction-data-type.md) data type.
+An instance of the [TestAction](testaction-data-type.md) data type.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

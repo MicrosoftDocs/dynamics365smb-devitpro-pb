@@ -3,7 +3,7 @@ title: "Session.GetModuleExecutionContext Method"
 description: "Gets the current session's execution context scoped to a specific module."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,7 @@ ExecutionContext :=   Session.GetModuleExecutionContext([AppId: Guid])
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
 ## Parameters
-*AppId*  
+*[Optional] AppId*  
 &emsp;Type: [Guid](../guid/guid-data-type.md)  
 The application ID.  
 

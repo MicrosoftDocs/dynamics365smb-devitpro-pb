@@ -3,7 +3,7 @@ title: "XmlCData.WriteTo Method"
 description: "Serializes and saves the current node to the given variable."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,7 @@ Serializes and saves the current node to the given variable.
 ## Parameters
 *XmlCData*  
 &emsp;Type: [XmlCData](xmlcdata-data-type.md)  
-An instance of the [XmlCData](xmlcdata-data-type.md) data type.
+An instance of the [XmlCData](xmlcdata-data-type.md) data type.  
 
 *WriteOptions*  
 &emsp;Type: [XmlWriteOptions](../xmlwriteoptions/xmlwriteoptions-data-type.md)  
@@ -39,7 +39,7 @@ The Text variable to which you want to save the serialized representation of the
 
 
 ## Return Value
-*Ok*  
+*[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 

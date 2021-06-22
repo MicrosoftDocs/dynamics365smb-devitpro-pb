@@ -3,7 +3,7 @@ title: "Xmlport.TextEncoding Method"
 description: "Gets and sets the TextEncoding used when running, importing or exporting the XmlPort."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,15 +29,15 @@ Gets and sets the TextEncoding used when running, importing or exporting the Xml
 ## Parameters
 *Xmlport*  
 &emsp;Type: [Xmlport](xmlport-data-type.md)  
-An instance of the [Xmlport](xmlport-data-type.md) data type.
+An instance of the [Xmlport](xmlport-data-type.md) data type.  
 
-*Encoding*  
+*[Optional] Encoding*  
 &emsp;Type: [TextEncoding](../textencoding/textencoding-option.md)  
 The new value of the TextEncoding.  
 
 
 ## Return Value
-*Encoding*  
+*[Optional] Encoding*  
 &emsp;Type: [TextEncoding](../textencoding/textencoding-option.md)  
 The TextEncoding used when running, importing or exporting the XmlPort.
 

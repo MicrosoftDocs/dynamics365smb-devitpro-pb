@@ -3,7 +3,7 @@ title: "SessionSettings.ProfileId Method"
 description: "Gets or sets the profile ID property in a SessionSettings object."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,16 +29,16 @@ Gets or sets the profile ID property in a SessionSettings object.
 ## Parameters
 *SessionSettings*  
 &emsp;Type: [SessionSettings](sessionsettings-data-type.md)  
-An instance of the [SessionSettings](sessionsettings-data-type.md) data type.
+An instance of the [SessionSettings](sessionsettings-data-type.md) data type.  
 
-*NewProfileId*  
+*[Optional] NewProfileId*  
 &emsp;Type: [String](../string/string-data-type.md)  
 Specifies the ID of the profile to set in the SessionSettings object. The value must be a valid profile ID in the system table **2000000072 Profile**.
         
 
 
 ## Return Value
-*ProfileId*  
+*[Optional] ProfileId*  
 &emsp;Type: [String](../string/string-data-type.md)  
 The profile ID that is set in the SessionSettings object.
       

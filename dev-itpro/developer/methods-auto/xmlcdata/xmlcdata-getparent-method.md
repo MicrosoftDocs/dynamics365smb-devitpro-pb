@@ -3,7 +3,7 @@ title: "XmlCData.GetParent Method"
 description: "Gets the parent XmlElement of this node."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,7 @@ Gets the parent XmlElement of this node.
 ## Parameters
 *XmlCData*  
 &emsp;Type: [XmlCData](xmlcdata-data-type.md)  
-An instance of the [XmlCData](xmlcdata-data-type.md) data type.
+An instance of the [XmlCData](xmlcdata-data-type.md) data type.  
 
 *Parent*  
 &emsp;Type: [XmlElement](../xmlelement/xmlelement-data-type.md)  
@@ -35,7 +35,7 @@ The parent XmlElement of this node.
 
 
 ## Return Value
-*Ok*  
+*[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 

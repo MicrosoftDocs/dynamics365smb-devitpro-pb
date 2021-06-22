@@ -3,7 +3,7 @@ title: "Enum.AsInteger Method"
 description: "Get the enum value as an integer value."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,7 +28,7 @@ The Enum Value as an Integer value :=   Enum.AsInteger()
 ## Parameters
 *Enum*  
 &emsp;Type: [Enum](enum-data-type.md)  
-An instance of the [Enum](enum-data-type.md) data type.
+An instance of the [Enum](enum-data-type.md) data type.  
 
 ## Return Value
 *The Enum Value as an Integer value*  
