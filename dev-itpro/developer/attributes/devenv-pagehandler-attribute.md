@@ -30,6 +30,7 @@ Specifies that the method is a PageHandler method, which handles specific pages 
 
 ## Syntax
 
+
 > **Version**: _Available or changed with runtime version 1.0._
 ```
 [PageHandler]
@@ -37,6 +38,7 @@ procedure PageHandler(var Page: TestPage)
 ```
 > [!IMPORTANT]
 > The above signature requires the PageHandler method to be *global*. For more information, see [Local and global scope in AL methods](../devenv-al-methods.md%23local-and-global-scope).
+
 > **Version**: _Available or changed with runtime version 2.1._
 ```
 [PageHandler]

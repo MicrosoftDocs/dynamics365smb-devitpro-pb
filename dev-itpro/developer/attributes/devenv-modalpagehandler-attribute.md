@@ -30,6 +30,7 @@ Specifies that the method is a ModalPageHandler method, which handles specific p
 
 ## Syntax
 
+
 > **Version**: _Available or changed with runtime version 1.0._
 ```
 [ModalPageHandler]
@@ -37,6 +38,7 @@ procedure ModalPageHandler(var Page: TestPage)
 ```
 > [!IMPORTANT]
 > The above signature requires the ModalPageHandler method to be *global*. For more information, see [Local and global scope in AL methods](../devenv-al-methods.md%23local-and-global-scope).
+
 > **Version**: _Available or changed with runtime version 2.1._
 ```
 [ModalPageHandler]

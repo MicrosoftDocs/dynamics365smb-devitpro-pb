@@ -30,6 +30,7 @@ Specifies a SessionSettingsHandler method, which handles RequestSessionUpdate st
 
 ## Syntax
 
+
 > **Version**: _Available or changed with runtime version 3.0._
 ```
 [SessionSettingsHandler]

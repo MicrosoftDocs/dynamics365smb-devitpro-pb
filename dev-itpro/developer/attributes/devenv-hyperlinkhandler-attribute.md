@@ -30,6 +30,7 @@ Specifies that the method is a HyperLinkHandler method, which handles HyperLinkH
 
 ## Syntax
 
+
 > **Version**: _Available or changed with runtime version 1.0._
 ```
 [HyperlinkHandler]
@@ -37,6 +38,7 @@ procedure HyperlinkHandler(Message: Text[1024])
 ```
 > [!IMPORTANT]
 > The above signature requires the HyperlinkHandler method to be *global*. For more information, see [Local and global scope in AL methods](../devenv-al-methods.md%23local-and-global-scope).
+
 > **Version**: _Available or changed with runtime version 2.1._
 ```
 [HyperlinkHandler]

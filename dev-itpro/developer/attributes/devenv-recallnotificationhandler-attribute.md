@@ -30,6 +30,7 @@ Specifies that the method is a RecallNotificationHandler method, which handles R
 
 ## Syntax
 
+
 > **Version**: _Available or changed with runtime version 1.0._
 ```
 [RecallNotificationHandler([HandlerIsOptional: Boolean])]

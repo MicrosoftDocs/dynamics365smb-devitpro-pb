@@ -30,6 +30,7 @@ Specifies that the method is a FilterPageHandler method, which handles a specifi
 
 ## Syntax
 
+
 > **Version**: _Available or changed with runtime version 1.0._
 ```
 [FilterPageHandler]
