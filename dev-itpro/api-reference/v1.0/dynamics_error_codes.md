@@ -14,7 +14,7 @@ ms.date: 06/19/2019
 ms.author: solsen
 ---
 
-# Error Codes
+# Error Codes  (v1.0)
 The following table lists the error codes for the various exceptions in the web service response for ODataV4.
 
 ## Error code categorization
@@ -69,4 +69,4 @@ The error codes in the table below can be divided into the following categories 
 |Any|Any|Unknown|
 
 ## See also
-[Dynamics 365 Business Central in Graph](https://docs.microsoft.com/graph/api/resources/dynamics-graph-reference?view=graph-rest-beta) 
+[Dynamics 365 Business Central in Graph](/graph/api/resources/dynamics-graph-reference?view=graph-rest-beta) 
