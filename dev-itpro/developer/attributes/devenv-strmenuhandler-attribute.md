@@ -30,6 +30,7 @@ Specifies that the method is a StrMenuHandler method, which handles StrMenu stat
 
 ## Syntax
 
+
 > **Version**: _Available or changed with runtime version 1.0._
 ```
 [StrMenuHandler]
@@ -37,6 +38,7 @@ procedure StrMenuHandler(Options: Text[1024], var Choice: Integer, Instruction: 
 ```
 > [!IMPORTANT]
 > The above signature requires the StrMenuHandler method to be *global*. For more information, see [Local and global scope in AL methods](../devenv-al-methods.md%23local-and-global-scope).
+
 > **Version**: _Available or changed with runtime version 2.1._
 ```
 [StrMenuHandler]

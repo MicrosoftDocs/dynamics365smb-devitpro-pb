@@ -30,6 +30,7 @@ Specifies that the method is a RequestPageHandler method, which handles the requ
 
 ## Syntax
 
+
 > **Version**: _Available or changed with runtime version 1.0._
 ```
 [RequestPageHandler]
