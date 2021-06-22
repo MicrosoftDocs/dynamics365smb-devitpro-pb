@@ -52,7 +52,7 @@ For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, you can'
 |Compression threshold|The threshold in memory consumption at which the service starts compressing datasets| 64 KB|
 -->
 
-##  <a name="Database"></a> Database connection limits
+##  <a name="Database"></a> Database limits
   
 |Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Value|  
 |---------|--------------------------------------------------------------------------------|------|
@@ -61,6 +61,7 @@ For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, you can'
 |SQL connection idle timeout|The time that a SQL connection can remain idle before being closed.|5 minutes|
 |SQL connection timeout|The time to wait for the service to connect to the database. When the time is exceeded, the attempt is canceled and an error occurs. This setting also applies to begin, rollback, and commit of transactions.|1.5 minutes|
 |Long running SQL query threshold|The amount of time that an SQL query can run before a warning telemetry event occurs. If this threshold is exceeded, the following event is logged: Action completed successfully, but it took longer than the given threshold.|1000 ms|
+|Number of companies|Although BC does not have a technical limit on the number of companies in an environment, having many companies can cause administrative tasks (such as upgrades, point-in-time restores, and database exports) to take very long time and potentially hit timeout values. Therefore, it is recommended to test both these procedures and normal usage scenarios extensively if you have more than fifty companies. | 50 |
 
 <!--
 |SQL bulk import batch size|Specifies how many SQL memory chunks that a data import must be distributed across.| 448|
