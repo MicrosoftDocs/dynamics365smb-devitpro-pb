@@ -6222,12 +6222,12 @@
    },
    { 
     "source_path": "dev-itpro/developer/methods/devenv-integration-attribute.md",
-    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/attributes/devenv-integration-attribute",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/attributes/devenv-integrationevent-attribute",
     "redirect_document_id": false
    },
    { 
     "source_path": "dev-itpro/developer/methods/devenv-internal-attribute.md",
-    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/attributes/devenv-internal-attribute",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/attributes/devenv-internalevent-attribute",
     "redirect_document_id": false
    },
    { 
@@ -6268,6 +6268,46 @@
    { 
     "source_path": "dev-itpro/developer/methods/devenv-reporthandler-attribute.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/attributes/devenv-recallnotificationhandler-attribute",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/methods/devenv-requestpagehandler-attribute.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/attributes/devenv-requestpagehandler-attribute",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/methods/devenv-scope-attribute.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/attributes/devenv-scope-attribute",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/methods/devenv-sendnotificationhandler-attribute.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/attributes/devenv-sendnotificationhandler-attribute",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/methods/devenv-sessionsettingshandler-attribute.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/attributes/devenv-sessionsettingshandler-attribute",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/methods/devenv-strmenuhandler-attribute.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/attributes/devenv-strmenuhandler-attribute",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/methods/devenv-test-attribute.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/attributes/devenv-test-attribute",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/methods/devenv-testpermissions-attribute.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/attributes/devenv-testpermissions-attribute",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/methods/devenv-tryfunction-attribute.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/attributes/devenv-tryfunction-attribute",
     "redirect_document_id": false
    }
   ]
