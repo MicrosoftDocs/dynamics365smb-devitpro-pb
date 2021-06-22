@@ -6179,6 +6179,36 @@
     "source_path": "dev-itpro/developer/readiness/readiness-transition-business-central.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/readiness/readiness-ready-to-go#migration",
     "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/methods/devenv-business-attribute.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/attributes/devenv-businessevent-attribute",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/methods/devenv-commitbehavior-attribute.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/attributes/devenv-commitbehavior-attribute",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/methods/devenv-confirmhandler-attribute.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/attributes/devenv-confirmhandler-attribute",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/methods/devenv-eventsubscriber-attribute.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/attributes/devenv-eventsubscriber-attribute",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/methods/devenv-filterpagehandler-attribute.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/attributes/devenv-filterpagehandler-attribute",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/methods/devenv-handlerfunctions-attribute.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/attributes/devenv-handlerfunctions-attribute",
+    "redirect_document_id": false
    }
   ]
 }
