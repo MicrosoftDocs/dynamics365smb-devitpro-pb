@@ -6209,6 +6209,66 @@
     "source_path": "dev-itpro/developer/methods/devenv-handlerfunctions-attribute.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/attributes/devenv-handlerfunctions-attribute",
     "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/methods/devenv-hyperlinkhandler-attribute.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/attributes/devenv-hyperlinkhandler-attribute",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/methods/devenv-indataset-attribute.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/attributes/devenv-indataset-attribute",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/methods/devenv-integration-attribute.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/attributes/devenv-integration-attribute",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/methods/devenv-internal-attribute.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/attributes/devenv-internal-attribute",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/methods/devenv-messagehandler-attribute.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/attributes/devenv-messagehandler-attribute",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/methods/devenv-modalpagehandler-attribute.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/attributes/devenv-modalpagehandler-attribute",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/methods/devenv-nondebuggable-attribute.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/attributes/devenv-nondebuggable-attribute",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/methods/devenv-normal-attribute.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/attributes/devenv-normal-attribute",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/methods/devenv-obsolete-attribute.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/attributes/devenv-obsolete-attribute",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/methods/devenv-pagehandler-attribute.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/attributes/devenv-pagehandler-attribute",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/methods/devenv-recallnotificationhandler-attribute.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/attributes/devenv-recallnotificationhandler-attribute",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/methods/devenv-reporthandler-attribute.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/attributes/devenv-recallnotificationhandler-attribute",
+    "redirect_document_id": false
    }
   ]
 }
