@@ -29,14 +29,14 @@ To check the compatibility level run following query: 
 SELECT compatibility_level FROM sys.databases WHERE name = 'YourDatabaseName';  
 ```
 
-To change the compatibility level, run this query:  
+If your on-premises SQL Server instance is a supported version that allows you to change the compatibility level, you can do so with the following query. If you're using a different version, you must upgrade your current on-premises environment to met the current SQL Server compatibility requirements. For more information, see [View or Change the Compatibility Level of a Database](/sql/relational-databases/databases/view-or-change-the-compatibility-level-of-a-database?view=sql-server-ver15&preserve-view=true)
 
 ```sql
 ALTER DATABASE YourDatabaseName SET COMPATIBILITY_LEVEL = 130; 
 ```
 
 > [!NOTE]
-> You may also get the following error when compatibility level isn't set to the expected value: "A database operation failed with the following error: Invalid length parameter passed to the LEFT or SUBSTRING function."
+> You may also get the following error when compatibility level isn't set to the expected value: *A database operation failed with the following error: Invalid length parameter passed to the LEFT or SUBSTRING function.*
 
 ## Migration user
 
