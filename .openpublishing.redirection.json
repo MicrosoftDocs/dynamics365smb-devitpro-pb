@@ -6329,6 +6329,11 @@
     "source_path": "dev-itpro/developer/properties/devenv-customapiname-query-property.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/properties/devenv-properties",
     "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/methods/devenv-method-attributes.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/attributes/devenv-method-attributes",
+    "redirect_document_id": false
    }
   ]
 }
