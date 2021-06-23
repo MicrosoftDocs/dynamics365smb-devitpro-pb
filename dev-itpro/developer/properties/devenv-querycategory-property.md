@@ -1,8 +1,9 @@
 ---
 title: "QueryCategory Property"
+description: "Used to indicate a given query can be made available as views displayed on certain main entity lists. On queries, the QueryCategory property specifies one or more query categories that the object supports. On pages, QueryCategory specifies the query category that the page supports."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

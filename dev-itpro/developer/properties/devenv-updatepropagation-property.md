@@ -1,8 +1,9 @@
 ---
 title: "UpdatePropagation Property"
+description: "Sets a value that specifies what happens when a main page with a subpage is updated. The UpdatePropagation property is available on part controls and has two options; Subpage and Both. If UpdatePropagation is set to Subpage, an update action will update the subpage only. If UpdatePropagation is set to Both, an update action will update both the main page and the subpage. This is useful if a value on the subpage changes, and you want a main page total to be refreshed automatically."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

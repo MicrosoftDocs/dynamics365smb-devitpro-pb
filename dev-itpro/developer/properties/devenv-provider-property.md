@@ -1,8 +1,9 @@
 ---
 title: "Provider Property"
+description: "Sets the provider for a FactBox. This property enables you to create a link from a Repeater or any other type of control to a Factbox. It could also be used to link two FactBoxes."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

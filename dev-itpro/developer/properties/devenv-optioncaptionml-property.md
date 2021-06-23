@@ -1,8 +1,9 @@
 ---
 title: "OptionCaptionML Property"
+description: "Sets the strings that are displayed to the user for selecting an option. OptionCaptionML is only used if the field or variable has an OptionMembers Property."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

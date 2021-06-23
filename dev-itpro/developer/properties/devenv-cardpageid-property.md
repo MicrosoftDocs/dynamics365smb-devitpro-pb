@@ -1,8 +1,9 @@
 ---
 title: "CardPageId Property"
+description: "Sets the card page that is associated with items in the current list page."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

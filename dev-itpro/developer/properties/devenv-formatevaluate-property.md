@@ -1,8 +1,9 @@
 ---
 title: "FormatEvaluate Property"
+description: "Sets the data that is being imported or exported as XML data types or as the standard C/SIDE data types."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

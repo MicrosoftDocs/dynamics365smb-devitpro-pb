@@ -1,8 +1,19 @@
 ---
 title: "TableRelation Property"
+description: "Sets up a lookup into another table.
+The following syntax is valid for the TableRelation property:
+
+```
+TableRelation = <TableName>[.<FieldName>] [WHERE(<TableFilters>)] |
+[IF(<Conditions>) <TableName>[.<FieldName>] [WHERE(<TableFilters>)] ELSE <TableRelation>]
+<Conditions> ::= <TableFilters>
+<TableFilters>::= <TableFilter> {,<TableFilter>}
+<TableFilter>::= <DestinationFieldName>=CONST(<FieldConst>) | FIELD(<SourceFieldName>)
+```
+"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

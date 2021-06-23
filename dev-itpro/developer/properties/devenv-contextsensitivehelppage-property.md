@@ -1,8 +1,9 @@
 ---
 title: "ContextSensitiveHelpPage Property"
+description: "Specifies the help topic to show when the user presses Help in the UI. The help server on which this help topic is located, must be defined in the app.json file."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

@@ -1,8 +1,9 @@
 ---
 title: "PromotedIsBig Property"
+description: "Sets a value that indicates whether the promoted action is displayed on the ribbon with a large icon."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

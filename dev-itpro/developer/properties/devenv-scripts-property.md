@@ -1,8 +1,9 @@
 ---
 title: "Scripts Property"
+description: "Specifies the list of scripts to include in the control add-in. The scripts could be local files in the package or references to external files using the http or the https protocol."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

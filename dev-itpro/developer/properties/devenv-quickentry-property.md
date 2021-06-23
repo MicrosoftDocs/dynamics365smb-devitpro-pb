@@ -1,8 +1,11 @@
 ---
 title: "QuickEntry Property"
+description: "Specifies if the page control should have input focus. The default value of the property is true. To specify that a control can be skipped, change this value to false.
+
+Specifying an expression as the value of the property is not supported."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

@@ -1,8 +1,11 @@
 ---
 title: "StyleExpr Property"
+description: "Sets whether the format that is specified in the Style Property is applied to text in a field. For fields in a CueGroup control, this property is used to configure the color of the color indicator on the cue.
+
+This note pertains to backward compatibility only. If the property is set to Boolean true or false, it sets whether the format specified in the Style property is applied to text in a field."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

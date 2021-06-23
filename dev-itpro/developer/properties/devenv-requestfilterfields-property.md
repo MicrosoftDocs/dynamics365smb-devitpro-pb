@@ -1,8 +1,9 @@
 ---
 title: "RequestFilterFields Property"
+description: "Sets which fields are automatically included on the tab of the request page that is related to this data item. The user can set filters on these fields."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

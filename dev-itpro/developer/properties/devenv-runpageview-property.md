@@ -1,8 +1,21 @@
 ---
 title: "RunPageView Property"
+description: "Sets a tableview for the page that will be launched for this action.
+The following syntax is valid for the RunPageView property:
+
+```
+RunPageView =
+[[SORTING(<KeyList>)] [ORDER(Ascending|Descending)] [WHERE(<TableFilters>)]]
+<KeyList> ::= RunObjectTableKey1, RunObjectTableKey2, ...
+<TableFilters> ::= [<TableFilter> {,<TableFilter>}]
+<TableFilter> ::= <RunObjectFieldName>=CONST(<FieldConst>) | FILTER(<FilterExpression>)
+```
+
+The filters defined by this property are not visible in the UI and cannot be modified by end-users. If it was intended to reveal them to end-users, consider using the RunPageLink property instead.
+    "
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

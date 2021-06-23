@@ -1,8 +1,9 @@
 ---
 title: "ObsoleteReason Property"
+description: "Specifies why the object or element has been marked as Pending or Obsolete in the ObsoleteState property."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
