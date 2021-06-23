@@ -3,7 +3,7 @@ title: "OnBeforePassVariable (Xml Port Text Element) Trigger"
 description: "Runs after the source expression has been formatted into a text variable and before the text variable is passed to the XML document."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/27/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,7 +22,7 @@ Runs after the source expression has been formatted into a text variable and bef
 
 
 ## Syntax
-```
+```AL
 trigger OnBeforePassVariable()
 begin
     ...

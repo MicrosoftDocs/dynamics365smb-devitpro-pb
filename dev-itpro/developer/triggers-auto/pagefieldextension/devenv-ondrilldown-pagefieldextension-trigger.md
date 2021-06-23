@@ -3,7 +3,7 @@ title: "OnDrillDown (Page Field Extension) Trigger"
 description: "Overrides the default drill-down behavior defined in the table definition for the FlowField."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/27/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,7 +22,7 @@ Overrides the default drill-down behavior defined in the table definition for th
 
 
 ## Syntax
-```
+```AL
 trigger OnDrillDown()
 begin
     ...

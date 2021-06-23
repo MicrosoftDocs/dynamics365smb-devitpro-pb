@@ -3,7 +3,7 @@ title: "OnAfterValidate (Page Field Extension) Trigger"
 description: "Runs after the user input is validated."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/27/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,7 +22,7 @@ Runs after the user input is validated.
 
 
 ## Syntax
-```
+```AL
 trigger OnAfterValidate()
 begin
     ...
