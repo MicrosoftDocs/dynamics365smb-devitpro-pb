@@ -1,9 +1,9 @@
 ---
 title: "RecordRef.Field Method"
-description: "Gets a FieldRef for the field that has the number FieldNo in the table that is currently selected. If no field has this number, the method returns an error."
+description: "Gets a FieldRef for the field that has the number FieldNo in the table that is currently selected."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Gets a FieldRef for the field that has the number FieldNo in the table that is c
 
 
 ## Syntax
-```
+```AL
 Field :=   RecordRef.Field(FieldNo: Integer)
 ```
 ## Parameters

@@ -3,7 +3,7 @@ title: "TextBuilder.MaxCapacity Method"
 description: "Gets the maximum capacity of this TextBuilder instance."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Gets the maximum capacity of this TextBuilder instance.
 
 
 ## Syntax
-```
+```AL
 MaxCapacity :=   TextBuilder.MaxCapacity()
 ```
 > [!NOTE]

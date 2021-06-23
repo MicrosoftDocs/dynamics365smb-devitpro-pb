@@ -3,7 +3,7 @@ title: "HttpContent.ReadAs Method"
 description: "Reads the content into the provided text."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Reads the content into the provided text.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  HttpContent.ReadAs(var OutputString: Text)
 ```
 ## Parameters

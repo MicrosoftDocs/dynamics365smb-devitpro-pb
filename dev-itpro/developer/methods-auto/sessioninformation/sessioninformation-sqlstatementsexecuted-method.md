@@ -3,7 +3,7 @@ title: "SessionInformation.SqlStatementsExecuted Method"
 description: "Gets the amount of SQL statements executed on the session, since the session started."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Gets the amount of SQL statements executed on the session, since the session sta
 
 
 ## Syntax
-```
+```AL
 SqlStatementsExecuted :=   SessionInformation.SqlStatementsExecuted()
 ```
 > [!NOTE]

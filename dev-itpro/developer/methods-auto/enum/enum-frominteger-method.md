@@ -3,7 +3,7 @@ title: "Enum.FromInteger Method"
 description: "Returns an enum with the integer value"
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Returns an enum with the integer value
 
 
 ## Syntax
-```
+```AL
 Enum with integer value :=   Enum.FromInteger(Value: Integer)
 ```
 ## Parameters

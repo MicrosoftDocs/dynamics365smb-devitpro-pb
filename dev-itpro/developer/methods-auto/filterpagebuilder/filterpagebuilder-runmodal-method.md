@@ -3,7 +3,7 @@ title: "FilterPageBuilder.RunModal Method"
 description: "Builds and runs the filter page that includes the filter controls that are stored in FilterPageBuilder object instance."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Builds and runs the filter page that includes the filter controls that are store
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  FilterPageBuilder.RunModal()
 ```
 

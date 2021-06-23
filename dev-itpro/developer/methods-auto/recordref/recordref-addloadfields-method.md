@@ -1,9 +1,9 @@
 ---
 title: "RecordRef.AddLoadFields Method"
-description: "Specifies additional fields to be initially loaded when the record is retrieved from its data source. Subsequent calls to AddLoadFields will not overwrite fields already selected for the initial load."
+description: "Specifies additional fields to be initially loaded when the record is retrieved from its data source."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Specifies additional fields to be initially loaded when the record is retrieved 
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  RecordRef.AddLoadFields([Fields: Integer,...])
 ```
 ## Parameters

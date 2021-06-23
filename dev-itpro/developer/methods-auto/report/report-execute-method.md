@@ -1,9 +1,9 @@
 ---
 title: "Report.Execute Method"
-description: "Runs a report in preview or processing-only mode without showing the request page in the client. The preview document will be downloaded as a PDF file to the user's browser client, where it can be read with the PDF reader. It won't open the Business Central preview page in the browser. The method gets the request page parameter values as an input parameter string from a RUNREQUESTPAGE method call. The OnOpen and OnClose triggers on the request page will run even though the request page is not shown."
+description: "Runs a report in preview or processing-only mode without showing the request page in the client."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Runs a report in preview or processing-only mode without showing the request pag
 
 
 ## Syntax
-```
+```AL
  Report.Execute(Number: Integer, Parameters: String [, RecordRef: RecordRef])
 ```
 ## Parameters

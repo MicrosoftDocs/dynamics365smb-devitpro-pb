@@ -3,7 +3,7 @@ title: "JsonValue.WriteTo Method"
 description: "Serializes and writes the JSON data of the JsonValue to a given object."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Serializes and writes the JSON data of the JsonValue to a given object.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  JsonValue.WriteTo(var Data: Text)
 ```
 ## Parameters

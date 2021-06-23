@@ -1,9 +1,9 @@
 ---
 title: "System.CanLoadType Method"
-description: "Tests if the specified .NET Framework type can be loaded."
+description: "Tests if the specified ."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,7 +23,7 @@ Tests if the specified .NET Framework type can be loaded.
 > This method is supported only in Business Central on-premises.
 
 ## Syntax
-```
+```AL
 Ok :=   System.CanLoadType(DotNet: DotNet)
 ```
 > [!NOTE]

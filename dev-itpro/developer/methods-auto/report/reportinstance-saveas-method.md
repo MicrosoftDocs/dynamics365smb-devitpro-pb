@@ -1,9 +1,9 @@
 ---
 title: "Report.SaveAs Method"
-description: "Runs a specific report without a request page and saves the report as a PDF, Excel, Word, or XML file. Instead of using the request page to obtain parameters at runtime, the method gets the parameter values as an input parameter string, typically from the return value of a RUNREQUESTPAGE method call."
+description: "Runs a specific report without a request page and saves the report as a PDF, Excel, Word, or XML file."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Runs a specific report without a request page and saves the report as a PDF, Exc
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  Report.SaveAs(Parameters: String, Format: ReportFormat, var OutStream: OutStream [, RecordRef: RecordRef])
 ```
 ## Parameters

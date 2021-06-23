@@ -1,9 +1,9 @@
 ---
 title: "ErrorInfo.ErrorType Method"
-description: "Specifies type of the error. 'Client' shows the specified message in the client and sends it to telemetry. 'Internal' shows a generic message in the client and sends the specified message to telemetry."
+description: "Specifies type of the error."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Specifies type of the error. 'Client' shows the specified message in the client 
 
 
 ## Syntax
-```
+```AL
 [ErrorType := ]  ErrorInfo.ErrorType([ErrorType: ErrorType])
 ```
 > [!NOTE]

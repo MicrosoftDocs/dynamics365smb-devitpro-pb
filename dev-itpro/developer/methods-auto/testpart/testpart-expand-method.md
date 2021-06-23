@@ -3,7 +3,7 @@ title: "TestPart.Expand Method"
 description: "Expands rows on a test page."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Expands rows on a test page.
 
 
 ## Syntax
-```
+```AL
  TestPart.Expand(Expand: Boolean)
 ```
 ## Parameters

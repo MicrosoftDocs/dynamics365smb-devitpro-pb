@@ -1,9 +1,9 @@
 ---
 title: "RecordRef.FieldCount Method"
-description: "Gets the number of fields in the table that is currently selected or returns the number of fields that have been defined in a key. Returns an error if no table or no key is selected."
+description: "Gets the number of fields in the table that is currently selected or returns the number of fields that have been defined in a key."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Gets the number of fields in the table that is currently selected or returns the
 
 
 ## Syntax
-```
+```AL
 Count :=   RecordRef.FieldCount()
 ```
 > [!NOTE]

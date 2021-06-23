@@ -3,7 +3,7 @@ title: "Dialog.Message Method"
 description: "Displays a text string in a message window."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Displays a text string in a message window.
 
 
 ## Syntax
-```
+```AL
  Dialog.Message(String: String [, Value: Any,...])
 ```
 > [!NOTE]

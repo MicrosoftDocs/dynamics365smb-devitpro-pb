@@ -1,9 +1,9 @@
 ---
 title: "RequestPage.Update Method"
-description: "Saves the current record and then updates the controls on the page. If you set the SaveRecord parameter to false, this method will not save the record before the page is updated."
+description: "Saves the current record and then updates the controls on the page."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Saves the current record and then updates the controls on the page. If you set t
 
 
 ## Syntax
-```
+```AL
  RequestPage.Update([SaveRecord: Boolean])
 ```
 ## Parameters

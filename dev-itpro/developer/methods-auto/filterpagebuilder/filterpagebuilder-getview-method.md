@@ -1,9 +1,9 @@
 ---
 title: "FilterPageBuilder.GetView Method"
-description: "Gets the filter view (which defines the sort order, key, and filters) for the record in the specified filter control of a filter page. The view contains all fields in the filter control that have a default filter value."
+description: "Gets the filter view (which defines the sort order, key, and filters) for the record in the specified filter control of a filter page."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Gets the filter view (which defines the sort order, key, and filters) for the re
 
 
 ## Syntax
-```
+```AL
 View :=   FilterPageBuilder.GetView(Name: String [, UseNames: Boolean])
 ```
 ## Parameters

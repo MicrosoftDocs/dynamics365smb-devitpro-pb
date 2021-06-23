@@ -3,7 +3,7 @@ title: "Query.SetFilter Method"
 description: "Sets a filter on a column of a query to limit the records in the resulting data set of a query."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Sets a filter on a column of a query to limit the records in the resulting data 
 
 
 ## Syntax
-```
+```AL
  Query.SetFilter(Column: Any, String: String [, Value: Any,...])
 ```
 ## Parameters

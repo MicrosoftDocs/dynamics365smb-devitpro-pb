@@ -1,9 +1,9 @@
 ---
 title: "Record.GetFilters Method"
-description: "Gets a string that contains a list of the filters within the current filter group for all fields in a record. In addition, this method also returns the state of the MARKEDONLY method (Record)."
+description: "Gets a string that contains a list of the filters within the current filter group for all fields in a record."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Gets a string that contains a list of the filters within the current filter grou
 
 
 ## Syntax
-```
+```AL
 String :=   Record.GetFilters()
 ```
 > [!NOTE]

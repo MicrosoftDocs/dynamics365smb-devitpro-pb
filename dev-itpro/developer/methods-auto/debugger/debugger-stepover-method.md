@@ -3,7 +3,7 @@ title: "Debugger.StepOver Method"
 description: "Executes a method call and then stops at the first line outside the method call."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Executes a method call and then stops at the first line outside the method call.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  Debugger.StepOver()
 ```
 

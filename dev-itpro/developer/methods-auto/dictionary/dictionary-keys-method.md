@@ -3,7 +3,7 @@ title: "Dictionary.Keys Method"
 description: "Gets a collection containing the keys in the Dictionary."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Gets a collection containing the keys in the Dictionary.
 
 
 ## Syntax
-```
+```AL
 Keys :=   Dictionary.Keys()
 ```
 > [!NOTE]

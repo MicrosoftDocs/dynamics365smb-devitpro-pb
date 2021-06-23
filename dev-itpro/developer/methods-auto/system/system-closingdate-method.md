@@ -3,7 +3,7 @@ title: "System.ClosingDate Method"
 description: "Gets the closing date for a Date Data Type."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Gets the closing date for a Date Data Type.
 
 
 ## Syntax
-```
+```AL
 ClosingDate :=   System.ClosingDate(Date: Date)
 ```
 > [!NOTE]

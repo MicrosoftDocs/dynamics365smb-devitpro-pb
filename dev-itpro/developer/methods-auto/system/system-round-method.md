@@ -3,7 +3,7 @@ title: "System.Round Method"
 description: "Rounds the value of a numeric variable."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Rounds the value of a numeric variable.
 
 
 ## Syntax
-```
+```AL
 NewNumber :=   System.Round(Number: Decimal [, Precision: Decimal] [, Direction: String])
 ```
 > [!NOTE]

@@ -1,9 +1,9 @@
 ---
 title: "Version Data Type"
-description: "Represents a version matching the format: Major.Minor.Build.Revision ."
+description: "Represents a version matching the format: Major."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

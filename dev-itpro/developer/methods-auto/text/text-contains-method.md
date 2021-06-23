@@ -3,7 +3,7 @@ title: "Text.Contains Method"
 description: "Returns a value indicating whether a specified substring occurs within this string."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Returns a value indicating whether a specified substring occurs within this stri
 
 
 ## Syntax
-```
+```AL
 Ok :=   Text.Contains(Value: Text)
 ```
 > [!NOTE]

@@ -3,7 +3,7 @@ title: "Debugger.IsBreakpointHit Method"
 description: "Specifies if a breakpoint is hit in a debugging session."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Specifies if a breakpoint is hit in a debugging session.
 
 
 ## Syntax
-```
+```AL
 Ok :=   Debugger.IsBreakpointHit()
 ```
 

@@ -3,7 +3,7 @@ title: "RecordRef.SetTable Method"
 description: "Sets the table to which a Record variable refers as the same table as a RecordRef variable."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Sets the table to which a Record variable refers as the same table as a RecordRe
 
 
 ## Syntax
-```
+```AL
  RecordRef.SetTable(Rec: Record)
 ```
 ## Parameters

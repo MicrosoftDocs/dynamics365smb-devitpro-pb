@@ -3,7 +3,7 @@ title: "MediaSet.Insert Method"
 description: "Adds a media object that already exists in the database to a MediaSet of a record."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Adds a media object that already exists in the database to a MediaSet of a recor
 
 
 ## Syntax
-```
+```AL
 [Result := ]  MediaSet.Insert(MediaId: Guid)
 ```
 ## Parameters

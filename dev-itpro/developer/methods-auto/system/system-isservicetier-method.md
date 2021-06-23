@@ -3,7 +3,7 @@ title: "System.IsServiceTier Method"
 description: "Gets a value indicating whether the runtime is a service tier."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Gets a value indicating whether the runtime is a service tier.
 
 
 ## Syntax
-```
+```AL
 Ok :=   System.IsServiceTier()
 ```
 > [!NOTE]

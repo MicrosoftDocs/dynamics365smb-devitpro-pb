@@ -1,6 +1,6 @@
 ---
 title: "Record.RecordId Method"
-description: "Gets the RecordId of the record that is currently selected in the table. If no table is selected, an error is generated."
+description: "Gets the RecordId of the record that is currently selected in the table."
 ms.author: solsen
 ms.custom: na
 ms.date: 06/23/2021
@@ -21,7 +21,7 @@ Gets the RecordId of the record that is currently selected in the table. If no t
 
 
 ## Syntax
-```
+```AL
 RecordID :=   Record.RecordId()
 ```
 > [!NOTE]

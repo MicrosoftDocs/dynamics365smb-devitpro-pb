@@ -3,7 +3,7 @@ title: "JsonObject.Replace Method"
 description: "Replaces the value of the property with the given key with the new value."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Replaces the value of the property with the given key with the new value.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  JsonObject.Replace(Key: String, Value: JsonObject)
 ```
 ## Parameters

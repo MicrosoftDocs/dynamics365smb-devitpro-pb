@@ -1,9 +1,9 @@
 ---
 title: "RecordRef.Mark Method"
-description: "Marks a record. You can also use this method to determine whether a record is marked."
+description: "Marks a record."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Marks a record. You can also use this method to determine whether a record is ma
 
 
 ## Syntax
-```
+```AL
 [Marked := ]  RecordRef.Mark([Mark: Boolean])
 ```
 ## Parameters

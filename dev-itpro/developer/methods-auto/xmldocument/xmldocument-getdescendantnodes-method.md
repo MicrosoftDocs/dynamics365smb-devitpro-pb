@@ -3,7 +3,7 @@ title: "XmlDocument.GetDescendantNodes Method"
 description: "Gets a list containing the descendant nodes for this document, in document order."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Gets a list containing the descendant nodes for this document, in document order
 
 
 ## Syntax
-```
+```AL
 DescendantNodes :=   XmlDocument.GetDescendantNodes()
 ```
 

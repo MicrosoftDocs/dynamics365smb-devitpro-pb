@@ -3,7 +3,7 @@ title: "WebServiceActionContext.AddEntityKey Method"
 description: "Add a new \<fieldId, value\> pair to the collection of entity keys."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Add a new \<fieldId, value\> pair to the collection of entity keys.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  WebServiceActionContext.AddEntityKey(FieldId: Integer, FieldValue: Any)
 ```
 ## Parameters

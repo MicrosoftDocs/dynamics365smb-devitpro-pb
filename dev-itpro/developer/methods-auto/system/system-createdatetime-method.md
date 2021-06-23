@@ -3,7 +3,7 @@ title: "System.CreateDateTime Method"
 description: "Creates a DateTime object from a date and a time."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Creates a DateTime object from a date and a time.
 
 
 ## Syntax
-```
+```AL
 Datetime :=   System.CreateDateTime(Date: Date, Time: Time)
 ```
 > [!NOTE]

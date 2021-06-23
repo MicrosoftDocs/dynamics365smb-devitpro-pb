@@ -3,7 +3,7 @@ title: "XmlElement.GetPrefixOfNamespace Method"
 description: "Gets the prefix associated with a namespace URI for this element."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Gets the prefix associated with a namespace URI for this element.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  XmlElement.GetPrefixOfNamespace(Namespace: String, var Result: Text)
 ```
 ## Parameters

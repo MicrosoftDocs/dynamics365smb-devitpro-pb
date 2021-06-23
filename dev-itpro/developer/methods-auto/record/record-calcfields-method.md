@@ -1,9 +1,9 @@
 ---
 title: "Record.CalcFields Method"
-description: "Calculates the FlowFields in a record. You specify which fields to calculate by using parameters."
+description: "Calculates the FlowFields in a record."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Calculates the FlowFields in a record. You specify which fields to calculate by 
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  Record.CalcFields(Field1: Any [, Field2: Any,...])
 ```
 ## Parameters

@@ -1,9 +1,9 @@
 ---
 title: "FieldRef.OptionString Method"
-description: "The 'OptionString' property has been deprecated and will be removed in the future. Use the 'OptionMembers' property instead."
+description: "The 'OptionString' property has been deprecated and will be removed in the future."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ The 'OptionString' property has been deprecated and will be removed in the futur
 
 
 ## Syntax
-```
+```AL
 OptionMembers :=   FieldRef.OptionString()
 ```
 > [!NOTE]

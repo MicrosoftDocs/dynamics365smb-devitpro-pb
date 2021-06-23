@@ -3,7 +3,7 @@ title: "System.EncryptionKeyExists Method"
 description: "Checks whether an encryption key for the current tenant is present on the server tenant."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Checks whether an encryption key for the current tenant is present on the server
 
 
 ## Syntax
-```
+```AL
 Ok :=   System.EncryptionKeyExists()
 ```
 > [!NOTE]

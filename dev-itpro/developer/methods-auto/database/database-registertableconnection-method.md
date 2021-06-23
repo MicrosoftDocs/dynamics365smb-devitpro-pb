@@ -3,7 +3,7 @@ title: "Database.RegisterTableConnection Method"
 description: "Registers a table connection to an external database."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Registers a table connection to an external database.
 
 
 ## Syntax
-```
+```AL
  Database.RegisterTableConnection(Type: TableConnectionType, Name: String, Connection: String)
 ```
 > [!NOTE]

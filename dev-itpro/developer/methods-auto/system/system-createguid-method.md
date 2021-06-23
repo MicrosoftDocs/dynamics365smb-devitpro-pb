@@ -1,9 +1,9 @@
 ---
 title: "System.CreateGuid Method"
-description: "Creates a new unique GUID. The value can then be assigned to a GUID data type or a text data type. Use the text data type if you want to compare the GUID to another text string."
+description: "Creates a new unique GUID."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Creates a new unique GUID. The value can then be assigned to a GUID data type or
 
 
 ## Syntax
-```
+```AL
 Guid :=   System.CreateGuid()
 ```
 > [!NOTE]

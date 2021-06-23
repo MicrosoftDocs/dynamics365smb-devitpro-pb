@@ -1,9 +1,9 @@
 ---
 title: "TestPage.RunPageBackgroundTask Method"
-description: "Runs the page background task codeunit in the current session. Note that by default, no triggers are invoked at this point."
+description: "Runs the page background task codeunit in the current session."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Runs the page background task codeunit in the current session. Note that by defa
 
 
 ## Syntax
-```
+```AL
 Results :=   TestPage.RunPageBackgroundTask(CodeunitId: Integer [, var Parameters: Dictionary of [Text, Text]] [, RunCompletionTriggers: Boolean])
 ```
 ## Parameters

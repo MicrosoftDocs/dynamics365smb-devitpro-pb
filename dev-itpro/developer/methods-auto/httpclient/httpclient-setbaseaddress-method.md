@@ -3,7 +3,7 @@ title: "HttpClient.SetBaseAddress Method"
 description: "Sets the base address of Uniform Resource Identifier (URI) of the Internet resource used when sending requests."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Sets the base address of Uniform Resource Identifier (URI) of the Internet resou
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  HttpClient.SetBaseAddress(NewBaseAddress: String)
 ```
 ## Parameters

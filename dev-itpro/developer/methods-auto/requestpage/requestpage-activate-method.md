@@ -1,9 +1,9 @@
 ---
 title: "RequestPage.Activate Method"
-description: "Activates the current page on the client if possible. The data on the page will not be refreshed."
+description: "Activates the current page on the client if possible."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Activates the current page on the client if possible. The data on the page will 
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  RequestPage.Activate([Refresh: Boolean])
 ```
 ## Parameters

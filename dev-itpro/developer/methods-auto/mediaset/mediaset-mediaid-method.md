@@ -1,9 +1,9 @@
 ---
 title: "MediaSet.MediaId Method"
-description: "Gets the unique identifier that is assigned to a MediaSet of a record. The MediaSet is a collection of media objects that are used on the record that can be displayed in the client."
+description: "Gets the unique identifier that is assigned to a MediaSet of a record."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Gets the unique identifier that is assigned to a MediaSet of a record. The Media
 
 
 ## Syntax
-```
+```AL
 MediaId :=   MediaSet.MediaId()
 ```
 > [!NOTE]

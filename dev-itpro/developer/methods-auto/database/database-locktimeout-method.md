@@ -1,9 +1,9 @@
 ---
 title: "Database.LockTimeout Method"
-description: "Determines whether the lock time-out setting is set to On. You can also use this method to override the default setting."
+description: "Determines whether the lock time-out setting is set to On."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Determines whether the lock time-out setting is set to On. You can also use this
 
 
 ## Syntax
-```
+```AL
 [LockTimeout := ]  Database.LockTimeout([LockTimeout: Boolean])
 ```
 > [!NOTE]

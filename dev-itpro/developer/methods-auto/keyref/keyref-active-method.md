@@ -3,7 +3,7 @@ title: "KeyRef.Active Method"
 description: "Indicates whether the key is enabled."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Indicates whether the key is enabled.
 
 
 ## Syntax
-```
+```AL
 Ok :=   KeyRef.Active()
 ```
 > [!NOTE]

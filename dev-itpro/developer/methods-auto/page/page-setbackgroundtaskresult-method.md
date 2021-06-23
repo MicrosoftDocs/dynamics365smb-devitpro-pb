@@ -1,9 +1,9 @@
 ---
 title: "Page.SetBackgroundTaskResult Method"
-description: "Sets the page background task result as a dictionary. When the task is completed, the OnPageBackgroundCompleted trigger will be invoked on the page with this result dictionary."
+description: "Sets the page background task result as a dictionary."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Sets the page background task result as a dictionary. When the task is completed
 
 
 ## Syntax
-```
+```AL
  Page.SetBackgroundTaskResult(Results: Dictionary of [Text, Text])
 ```
 ## Parameters

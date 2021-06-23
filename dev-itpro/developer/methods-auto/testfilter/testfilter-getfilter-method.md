@@ -3,7 +3,7 @@ title: "TestFilter.GetFilter Method"
 description: "Gets the filter that is applied to the specified field in a data set that is displayed on a test page."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Gets the filter that is applied to the specified field in a data set that is dis
 
 
 ## Syntax
-```
+```AL
 String :=   TestFilter.GetFilter(Field: TestFilterField)
 ```
 ## Parameters

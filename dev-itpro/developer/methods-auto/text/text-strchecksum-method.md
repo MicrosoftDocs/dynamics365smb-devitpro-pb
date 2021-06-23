@@ -1,9 +1,9 @@
 ---
 title: "Text.StrCheckSum Method"
-description: "Calculates a checksum for a string that contains a number. If the source is empty, 0 is returned. Each char in the source and in the weight must be a numeric character 0-9, otherwise an exception is thrown. If the WeightString parameter is shorter then the source, it is padded with '1' up until the length of source. If the WeightString parameter is longer than the source, an exception is thrown."
+description: "Calculates a checksum for a string that contains a number."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Calculates a checksum for a string that contains a number. If the source is empt
 
 
 ## Syntax
-```
+```AL
 CheckNumber :=   Text.StrCheckSum(String: String [, WeightString: String] [, Modulus: Integer])
 ```
 > [!NOTE]

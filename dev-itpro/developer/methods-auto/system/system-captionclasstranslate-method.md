@@ -1,9 +1,9 @@
 ---
 title: "System.CaptionClassTranslate Method"
-description: "Returns a translated version of the caption string. The string is translated to the current local language."
+description: "Returns a translated version of the caption string."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Returns a translated version of the caption string. The string is translated to 
 
 
 ## Syntax
-```
+```AL
 String :=   System.CaptionClassTranslate(CaptionClassText: String)
 ```
 > [!NOTE]

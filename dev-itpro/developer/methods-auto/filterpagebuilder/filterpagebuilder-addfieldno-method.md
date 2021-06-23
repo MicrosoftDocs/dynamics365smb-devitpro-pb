@@ -3,7 +3,7 @@ title: "FilterPageBuilder.AddFieldNo Method"
 description: "Adds a table field to the filter control for a table on the filter page."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Adds a table field to the filter control for a table on the filter page.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  FilterPageBuilder.AddFieldNo(Name: String, FieldNo: Integer [, Filter: String])
 ```
 ## Parameters

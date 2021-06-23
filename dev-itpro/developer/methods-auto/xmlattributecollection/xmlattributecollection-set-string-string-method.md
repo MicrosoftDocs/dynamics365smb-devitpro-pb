@@ -3,7 +3,7 @@ title: "XmlAttributeCollection.Set Method"
 description: "Sets the value of the specified attribute or creates it if is not part of the collection."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Sets the value of the specified attribute or creates it if is not part of the co
 
 
 ## Syntax
-```
+```AL
  XmlAttributeCollection.Set(Name: String, Value: String)
 ```
 ## Parameters

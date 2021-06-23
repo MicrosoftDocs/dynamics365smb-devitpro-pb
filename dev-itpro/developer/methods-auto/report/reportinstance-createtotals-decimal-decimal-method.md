@@ -3,7 +3,7 @@ title: "Report.CreateTotals Method"
 description: "Maintains totals for a variable in AL."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Maintains totals for a variable in AL.
 
 
 ## Syntax
-```
+```AL
  Report.CreateTotals(var Var1: Decimal [, var Var2: Decimal,...])
 ```
 ## Parameters

@@ -1,9 +1,9 @@
 ---
 title: "Database.GetDefaultTableConnection Method"
-description: "Gets the default table connection based on the specified connection type. You must already have registered a table connection of this type."
+description: "Gets the default table connection based on the specified connection type."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Gets the default table connection based on the specified connection type. You mu
 
 
 ## Syntax
-```
+```AL
 Name :=   Database.GetDefaultTableConnection(Type: TableConnectionType)
 ```
 > [!NOTE]

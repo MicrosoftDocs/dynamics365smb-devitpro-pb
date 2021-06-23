@@ -3,7 +3,7 @@ title: "File.WriteMode Method"
 description: "Use this method before you use OPEN method (File)] to set or test whether you can write to a file in later calls."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,7 +23,7 @@ Use this method before you use OPEN method (File)] to set or test whether you ca
 > This method is supported only in Business Central on-premises.
 
 ## Syntax
-```
+```AL
 [Writemode := ]  File.WriteMode([Mode: Boolean])
 ```
 > [!NOTE]

@@ -3,7 +3,7 @@ title: "System.Encrypt Method"
 description: "Takes a string as input and returns the encrypted value of the string."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Takes a string as input and returns the encrypted value of the string.
 
 
 ## Syntax
-```
+```AL
 EncryptedString :=   System.Encrypt(PlainTextString: String)
 ```
 > [!NOTE]

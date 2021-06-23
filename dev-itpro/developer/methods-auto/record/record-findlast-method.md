@@ -3,7 +3,7 @@ title: "Record.FindLast Method"
 description: "Finds the last record in a table based on the current key and filter."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Finds the last record in a table based on the current key and filter.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  Record.FindLast()
 ```
 

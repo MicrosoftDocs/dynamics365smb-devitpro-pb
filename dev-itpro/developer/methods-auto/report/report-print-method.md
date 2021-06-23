@@ -1,9 +1,9 @@
 ---
 title: "Report.Print Method"
-description: "Prints a specified report without running the request page. Instead of using the request page to obtain parameters at runtime, the method gets the parameter values as an input parameter string, typically from a RUNREQUESTPAGE method call."
+description: "Prints a specified report without running the request page."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Prints a specified report without running the request page. Instead of using the
 
 
 ## Syntax
-```
+```AL
  Report.Print(Number: Integer, Parameters: String [, PrinterName: String] [, RecordRef: RecordRef])
 ```
 ## Parameters

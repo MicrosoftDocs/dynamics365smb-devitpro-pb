@@ -3,7 +3,7 @@ title: "XmlNamespaceManager.RemoveNamespace Method"
 description: "Removes the given namespace for the given prefix."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Removes the given namespace for the given prefix.
 
 
 ## Syntax
-```
+```AL
  XmlNamespaceManager.RemoveNamespace(Prefix: String, Uri: String)
 ```
 ## Parameters

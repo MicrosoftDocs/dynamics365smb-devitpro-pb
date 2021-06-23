@@ -3,7 +3,7 @@ title: "TestPart.GetValidationError Method"
 description: "Gets the list of all validation error that occurred on a test page as a string."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Gets the list of all validation error that occurred on a test page as a string.
 
 
 ## Syntax
-```
+```AL
 Error :=   TestPart.GetValidationError([Index: Integer])
 ```
 ## Parameters

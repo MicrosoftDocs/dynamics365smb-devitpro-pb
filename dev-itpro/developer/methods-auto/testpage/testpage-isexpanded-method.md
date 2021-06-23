@@ -3,7 +3,7 @@ title: "TestPage.IsExpanded Method"
 description: "Specifies if rows on a test page are expanded."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Specifies if rows on a test page are expanded.
 
 
 ## Syntax
-```
+```AL
 Expanded :=   TestPage.IsExpanded()
 ```
 > [!NOTE]

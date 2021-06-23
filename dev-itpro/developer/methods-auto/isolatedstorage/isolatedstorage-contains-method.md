@@ -3,7 +3,7 @@ title: "IsolatedStorage.Contains Method"
 description: "Determines whether the storage contains a value with the specified key."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Determines whether the storage contains a value with the specified key.
 
 
 ## Syntax
-```
+```AL
 HasValue :=   IsolatedStorage.Contains(Key: String [, DataScope: DataScope])
 ```
 ## Parameters

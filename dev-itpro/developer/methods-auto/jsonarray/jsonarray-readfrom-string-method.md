@@ -3,7 +3,7 @@ title: "JsonArray.ReadFrom Method"
 description: "Reads the JSON data from the string into a JsonArray variable."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Reads the JSON data from the string into a JsonArray variable.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  JsonArray.ReadFrom(String: String)
 ```
 ## Parameters

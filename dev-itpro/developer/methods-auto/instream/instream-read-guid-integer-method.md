@@ -1,9 +1,9 @@
 ---
 title: "InStream.Read Method"
-description: "Reads a specified number of bytes from an InStream object. Data is read in binary format."
+description: "Reads a specified number of bytes from an InStream object."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Reads a specified number of bytes from an InStream object. Data is read in binar
 
 
 ## Syntax
-```
+```AL
 [Read := ]  InStream.Read(var Variable: Guid [, Length: Integer])
 ```
 ## Parameters

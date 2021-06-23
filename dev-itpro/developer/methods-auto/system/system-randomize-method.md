@@ -3,7 +3,7 @@ title: "System.Randomize Method"
 description: "Generates a set of random numbers from which the RANDOM method (Integer) will select a random number."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Generates a set of random numbers from which the RANDOM method (Integer) will se
 
 
 ## Syntax
-```
+```AL
  System.Randomize([Seed: Integer])
 ```
 > [!NOTE]

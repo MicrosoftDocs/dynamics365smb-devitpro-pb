@@ -3,7 +3,7 @@ title: "TestPage.GoToKey Method"
 description: "Finds the row in a data set on the test page that is identified by the specified values."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Finds the row in a data set on the test page that is identified by the specified
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  TestPage.GoToKey([Value: Any,...])
 ```
 ## Parameters

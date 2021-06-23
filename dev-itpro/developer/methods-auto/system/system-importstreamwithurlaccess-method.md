@@ -3,7 +3,7 @@ title: "System.ImportStreamWithUrlAccess Method"
 description: "Imports an object into a media container to be used in a temporary URL with a default expiration time."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,7 +23,7 @@ Imports an object into a media container to be used in a temporary URL with a de
 > This method is supported only in Business Central on-premises.
 
 ## Syntax
-```
+```AL
 ID :=   System.ImportStreamWithUrlAccess(InStream: InStream, Filename: String [, MinutesToExpire: Integer])
 ```
 > [!NOTE]

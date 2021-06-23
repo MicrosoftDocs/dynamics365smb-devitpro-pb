@@ -1,9 +1,9 @@
 ---
 title: "Query.GetFilters Method"
-description: "Returns the filters that are applied to all columns in the query. The following code shows the syntax of the GETFILTERS method. Query is a variable of the Query data type that specifies the query object."
+description: "Returns the filters that are applied to all columns in the query."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Returns the filters that are applied to all columns in the query. The following 
 
 
 ## Syntax
-```
+```AL
 Filter :=   Query.GetFilters()
 ```
 > [!NOTE]

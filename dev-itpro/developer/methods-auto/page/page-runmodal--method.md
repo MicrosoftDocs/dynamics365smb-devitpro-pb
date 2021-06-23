@@ -1,9 +1,9 @@
 ---
 title: "Page.RunModal Method"
-description: "Creates, opens, and closes a page that you specify. When a page is run modally, no input, such as a keyboard or mouse click, can occur except for objects on the modal page."
+description: "Creates, opens, and closes a page that you specify."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Creates, opens, and closes a page that you specify. When a page is run modally, 
 
 
 ## Syntax
-```
+```AL
 [Action := ]  Page.RunModal()
 ```
 

@@ -1,9 +1,9 @@
 ---
 title: "TestRequestPage.GoToRecord Method"
-description: "Finds the specified record in a data set on a test page. The record is searched from the beginning of the dataset defined by the current filter. The search is performed by iterating across the rows, comparing the primary key with the primary key fields of the record. For large dataset, use SetFilter to limit the dataset."
+description: "Finds the specified record in a data set on a test page."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Finds the specified record in a data set on a test page. The record is searched 
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  TestRequestPage.GoToRecord(Rec: Record)
 ```
 ## Parameters

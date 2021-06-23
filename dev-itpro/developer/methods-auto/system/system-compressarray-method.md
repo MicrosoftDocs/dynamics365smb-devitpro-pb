@@ -1,9 +1,9 @@
 ---
 title: "System.CompressArray Method"
-description: "Moves all non-empty strings (text) in an array to the beginning of the array. The resulting StringArray has the same number of elements as the input array, but empty entries appear at the end of the array."
+description: "Moves all non-empty strings (text) in an array to the beginning of the array."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Moves all non-empty strings (text) in an array to the beginning of the array. Th
 
 
 ## Syntax
-```
+```AL
 [Count := ]  System.CompressArray(StringArray: Array of [String])
 ```
 > [!NOTE]

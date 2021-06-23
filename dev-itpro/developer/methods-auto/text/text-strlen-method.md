@@ -3,7 +3,7 @@ title: "Text.StrLen Method"
 description: "Gets the length of a string you define."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Gets the length of a string you define.
 
 
 ## Syntax
-```
+```AL
 Length :=   Text.StrLen(String: String)
 ```
 > [!NOTE]

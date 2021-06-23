@@ -3,7 +3,7 @@ title: "Xmlport.RecordSeparator Method"
 description: "Gets and sets the RecordSeparator used when running, importing or exporting the XmlPort."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Gets and sets the RecordSeparator used when running, importing or exporting the 
 
 
 ## Syntax
-```
+```AL
 [Separator := ]  Xmlport.RecordSeparator([Separator: String])
 ```
 > [!NOTE]

@@ -1,9 +1,9 @@
 ---
 title: "TaskScheduler.SetTaskReady Method"
-description: "Sets a task that runs a codeunit to the ready state. The task will not run unless it is in the ready state."
+description: "Sets a task that runs a codeunit to the ready state."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Sets a task that runs a codeunit to the ready state. The task will not run unles
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  TaskScheduler.SetTaskReady(Task: Guid [, NotBefore: DateTime])
 ```
 ## Parameters

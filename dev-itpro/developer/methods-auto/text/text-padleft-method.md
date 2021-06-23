@@ -3,7 +3,7 @@ title: "Text.PadLeft Method"
 description: "Returns a new Text that right-aligns the characters in this instance by padding them on the left, for a specified total length."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Returns a new Text that right-aligns the characters in this instance by padding 
 
 
 ## Syntax
-```
+```AL
 Result :=   Text.PadLeft(Count: Integer [, Char: Char])
 ```
 > [!NOTE]

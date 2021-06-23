@@ -3,7 +3,7 @@ title: "Session.StartSession Method"
 description: "Starts a session without a UI and runs the specified codeunit."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Starts a session without a UI and runs the specified codeunit.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  Session.StartSession(var SessionId: Integer, CodeunitId: Integer, Timeout: Duration [, Company: String] [, var Record: Record])
 ```
 > [!NOTE]

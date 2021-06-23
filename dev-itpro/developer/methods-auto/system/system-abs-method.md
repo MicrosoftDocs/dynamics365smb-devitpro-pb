@@ -1,9 +1,9 @@
 ---
 title: "System.Abs Method"
-description: "Calculates the absolute value of a number (Decimal, Integer or BigInteger). ABS always returns a positive numeric value or zero."
+description: "Calculates the absolute value of a number (Decimal, Integer or BigInteger)."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Calculates the absolute value of a number (Decimal, Integer or BigInteger). ABS 
 
 
 ## Syntax
-```
+```AL
 NewNumber :=   System.Abs(Number: Decimal)
 ```
 > [!NOTE]

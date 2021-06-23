@@ -3,7 +3,7 @@ title: "XmlElement.ReplaceNodes Method"
 description: "Replaces the children nodes of this element with the specified content."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Replaces the children nodes of this element with the specified content.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  XmlElement.ReplaceNodes(Content: Any,...)
 ```
 ## Parameters

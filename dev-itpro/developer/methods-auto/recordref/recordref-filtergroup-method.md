@@ -1,9 +1,9 @@
 ---
 title: "RecordRef.FilterGroup Method"
-description: "Changes the filter group that is being applied to the table. You can also use this method to return the number of the current filtergroup. You cannot return the number of the filtergroup and set a new filtergroup at the same time."
+description: "Changes the filter group that is being applied to the table."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Changes the filter group that is being applied to the table. You can also use th
 
 
 ## Syntax
-```
+```AL
 [Group := ]  RecordRef.FilterGroup([NewGroup: Integer])
 ```
 > [!NOTE]

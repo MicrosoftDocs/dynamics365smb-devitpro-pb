@@ -1,9 +1,9 @@
 ---
 title: "Text.StrSubstNo Method"
-description: "Replaces %1, %2, %3... and #1, #2, #3... fields in a string with the values you provide as optional parameters."
+description: "Replaces %1, %2, %3."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Replaces %1, %2, %3... and #1, #2, #3... fields in a string with the values you 
 
 
 ## Syntax
-```
+```AL
 NewString :=   Text.StrSubstNo(String: String [, Value1: Any,...])
 ```
 > [!NOTE]

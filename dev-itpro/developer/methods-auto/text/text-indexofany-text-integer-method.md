@@ -1,9 +1,9 @@
 ---
 title: "Text.IndexOfAny Method"
-description: "Reports the one-based index of the first occurrence of the specified string in this instance. The search starts at a specified character position."
+description: "Reports the one-based index of the first occurrence of the specified string in this instance."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Reports the one-based index of the first occurrence of the specified string in t
 
 
 ## Syntax
-```
+```AL
 Index :=   Text.IndexOfAny(Values: Text [, StartIndex: Integer])
 ```
 > [!NOTE]

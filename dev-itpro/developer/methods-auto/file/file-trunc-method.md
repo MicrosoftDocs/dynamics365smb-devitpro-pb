@@ -3,7 +3,7 @@ title: "File.Trunc Method"
 description: "Truncate an ASCII or binary file to the current position of the file pointer."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,7 +23,7 @@ Truncate an ASCII or binary file to the current position of the file pointer.
 > This method is supported only in Business Central on-premises.
 
 ## Syntax
-```
+```AL
  File.Trunc()
 ```
 > [!NOTE]

@@ -3,7 +3,7 @@ title: "Session.EnableVerboseTelemetry Method"
 description: "Temporarily enable verbose telemetry on the current session."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,7 +23,7 @@ Temporarily enable verbose telemetry on the current session.
 > This method is supported only in Business Central on-premises.
 
 ## Syntax
-```
+```AL
  Session.EnableVerboseTelemetry(EnableFullALFunctionTracing: Boolean, Duration: Duration)
 ```
 > [!NOTE]

@@ -1,9 +1,9 @@
 ---
 title: "JsonToken Data Type"
-description: "Is a container for any well-formed JSON data. A default JsonToken object contains the JSON value of NULL."
+description: "Is a container for any well-formed JSON data."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

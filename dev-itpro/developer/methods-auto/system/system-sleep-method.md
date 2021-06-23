@@ -3,7 +3,7 @@ title: "System.Sleep Method"
 description: "Returns control to the operating system for a specified time."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Returns control to the operating system for a specified time.
 
 
 ## Syntax
-```
+```AL
  System.Sleep(Duration: Integer)
 ```
 > [!NOTE]

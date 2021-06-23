@@ -3,7 +3,7 @@ title: "JsonArray.IndexOf Method"
 description: "Determines the index of a specific value in the JsonArray."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Determines the index of a specific value in the JsonArray.
 
 
 ## Syntax
-```
+```AL
 Index :=   JsonArray.IndexOf(Value: JsonArray)
 ```
 ## Parameters

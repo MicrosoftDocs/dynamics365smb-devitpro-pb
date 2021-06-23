@@ -3,7 +3,7 @@ title: "RecordRef.Copy Method"
 description: "Copies a specified record's filters, views, automatically calculated FlowFields, marks, fields, and keys that are associated with the record from a table or creates a reference to a record."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Copies a specified record's filters, views, automatically calculated FlowFields,
 
 
 ## Syntax
-```
+```AL
  RecordRef.Copy(var FromRecord: Record [, ShareTable: Boolean])
 ```
 ## Parameters

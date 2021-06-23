@@ -3,7 +3,7 @@ title: "Database.UserId Method"
 description: "Gets the user name of the user account that is logged on to the current session."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Gets the user name of the user account that is logged on to the current session.
 
 
 ## Syntax
-```
+```AL
 ID :=   Database.UserId()
 ```
 > [!NOTE]

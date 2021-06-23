@@ -3,7 +3,7 @@ title: "TextBuilder.Replace Method"
 description: "Replaces, within a substring of this instance, all occurrences of a specified string in this TextBuilder instance with another specified string."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Replaces, within a substring of this instance, all occurrences of a specified st
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  TextBuilder.Replace(OldText: Text, NewText: Text, StartIndex: Integer, Count: Integer)
 ```
 ## Parameters

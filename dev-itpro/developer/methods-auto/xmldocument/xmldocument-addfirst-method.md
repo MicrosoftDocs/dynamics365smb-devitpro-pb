@@ -3,7 +3,7 @@ title: "XmlDocument.AddFirst Method"
 description: "Adds the specified content at the start of the child list of this document."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Adds the specified content at the start of the child list of this document.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  XmlDocument.AddFirst(Content: Any,...)
 ```
 ## Parameters

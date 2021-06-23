@@ -1,9 +1,9 @@
 ---
 title: "Report.SaveAsHtml Method"
-description: "Saves a report as an HTML file. The file is saved on the computer where the server instance is running, and then downloaded to the client when ready. \> This method is only supported when a report uses a Word report layout when it is run."
+description: "Saves a report as an HTML file."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,7 +23,7 @@ Saves a report as an HTML file. The file is saved on the computer where the serv
 > This method is supported only in Business Central on-premises.
 
 ## Syntax
-```
+```AL
 [Ok := ]  Report.SaveAsHtml(Number: Integer, FileName: String [, var Record: Record])
 ```
 ## Parameters

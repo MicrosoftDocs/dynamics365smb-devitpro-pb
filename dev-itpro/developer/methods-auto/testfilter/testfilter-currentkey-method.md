@@ -3,7 +3,7 @@ title: "TestFilter.CurrentKey Method"
 description: "Gets the current key of a data set that is displayed on a test page."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Gets the current key of a data set that is displayed on a test page.
 
 
 ## Syntax
-```
+```AL
 CurrentKey :=   TestFilter.CurrentKey()
 ```
 > [!NOTE]

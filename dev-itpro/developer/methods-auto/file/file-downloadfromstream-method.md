@@ -1,9 +1,9 @@
 ---
 title: "File.DownloadFromStream Method"
-description: "Sends a file from server computer to the client computer. The client computer is the computer that is running the Windows client or the computer that is running the browser that accesses the web client."
+description: "Sends a file from server computer to the client computer."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Sends a file from server computer to the client computer. The client computer is
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  File.DownloadFromStream(InStream: InStream, DialogTitle: String, ToFolder: String, ToFilter: String, var ToFile: Text)
 ```
 > [!NOTE]

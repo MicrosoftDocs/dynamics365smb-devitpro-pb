@@ -3,7 +3,7 @@ title: "XmlElement.HasAttributes Method"
 description: "Gets a boolean value indicating whether this element has at least one attribute."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Gets a boolean value indicating whether this element has at least one attribute.
 
 
 ## Syntax
-```
+```AL
 Value :=   XmlElement.HasAttributes()
 ```
 > [!NOTE]

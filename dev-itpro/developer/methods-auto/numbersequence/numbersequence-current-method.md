@@ -1,9 +1,9 @@
 ---
 title: "NumberSequence.Current Method"
-description: "Gets the current value from the number sequence, without doing any increment. The value is retrieved out of transaction. The value will not be returned on transaction rollback."
+description: "Gets the current value from the number sequence, without doing any increment."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Gets the current value from the number sequence, without doing any increment. Th
 
 
 ## Syntax
-```
+```AL
 Current :=   NumberSequence.Current(Name: String [, CompanySpecific: Boolean])
 ```
 ## Parameters

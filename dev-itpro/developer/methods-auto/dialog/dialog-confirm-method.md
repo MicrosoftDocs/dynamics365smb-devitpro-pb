@@ -1,9 +1,9 @@
 ---
 title: "Dialog.Confirm Method"
-description: "Creates a dialog box that prompts the user for a yes or no answer. The dialog box is centered on the screen."
+description: "Creates a dialog box that prompts the user for a yes or no answer."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Creates a dialog box that prompts the user for a yes or no answer. The dialog bo
 
 
 ## Syntax
-```
+```AL
 Ok :=   Dialog.Confirm(String: String [, Default: Boolean] [, Value1: Any,...])
 ```
 > [!NOTE]

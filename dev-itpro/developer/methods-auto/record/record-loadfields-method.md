@@ -3,7 +3,7 @@ title: "Record.LoadFields Method"
 description: "Accesses the table's corresponding data source and loads the values of the specified fields on the record."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Accesses the table's corresponding data source and loads the values of the speci
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  Record.LoadFields(Fields: Any,...)
 ```
 ## Parameters

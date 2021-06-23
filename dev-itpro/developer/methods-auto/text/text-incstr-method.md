@@ -3,7 +3,7 @@ title: "Text.IncStr Method"
 description: "Increases a positive number or decrease a negative number inside a string by one (1)."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Increases a positive number or decrease a negative number inside a string by one
 
 
 ## Syntax
-```
+```AL
 NewString :=   Text.IncStr(String: String)
 ```
 > [!NOTE]

@@ -1,9 +1,9 @@
 ---
 title: "System.GetLastErrorObject Method"
-description: "Gets the last System.Exception object that occurred."
+description: "Gets the last System."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,7 +23,7 @@ Gets the last System.Exception object that occurred.
 > This method is supported only in Business Central on-premises.
 
 ## Syntax
-```
+```AL
 DotNet :=   System.GetLastErrorObject()
 ```
 > [!NOTE]

@@ -3,7 +3,7 @@ title: "XmlWriteOptions.PreserveWhitespace Method"
 description: "Gets or sets a value that indicates whether insignificant white space should be preserved during serialization."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Gets or sets a value that indicates whether insignificant white space should be 
 
 
 ## Syntax
-```
+```AL
 [Value := ]  XmlWriteOptions.PreserveWhitespace([NewValue: Boolean])
 ```
 > [!NOTE]

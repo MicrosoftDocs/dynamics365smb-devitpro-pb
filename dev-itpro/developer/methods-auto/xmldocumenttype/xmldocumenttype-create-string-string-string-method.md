@@ -3,7 +3,7 @@ title: "XmlDocumentType.Create Method"
 description: "Creates an XmlDocumentType node."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Creates an XmlDocumentType node.
 
 
 ## Syntax
-```
+```AL
 XmlDocumentType :=   XmlDocumentType.Create(Name: String, PublicId: String, SystemId: String)
 ```
 ## Parameters

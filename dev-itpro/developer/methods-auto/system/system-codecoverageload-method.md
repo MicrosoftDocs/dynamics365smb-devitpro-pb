@@ -3,7 +3,7 @@ title: "System.CodeCoverageLoad Method"
 description: "Loads the code that has been logged."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Loads the code that has been logged.
 
 
 ## Syntax
-```
+```AL
  System.CodeCoverageLoad()
 ```
 > [!NOTE]

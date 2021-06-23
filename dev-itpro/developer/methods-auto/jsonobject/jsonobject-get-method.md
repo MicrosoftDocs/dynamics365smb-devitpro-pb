@@ -3,7 +3,7 @@ title: "JsonObject.Get Method"
 description: "Retrieves the value of a property with a given key from a JsonObject."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Retrieves the value of a property with a given key from a JsonObject.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  JsonObject.Get(Key: String, var Result: JsonToken)
 ```
 ## Parameters

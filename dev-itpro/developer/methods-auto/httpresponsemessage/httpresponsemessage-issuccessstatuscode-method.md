@@ -3,7 +3,7 @@ title: "HttpResponseMessage.IsSuccessStatusCode Method"
 description: "Gets a value that indicates if the HTTP response was successful."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Gets a value that indicates if the HTTP response was successful.
 
 
 ## Syntax
-```
+```AL
 IsSuccessStatusCode :=   HttpResponseMessage.IsSuccessStatusCode()
 ```
 > [!NOTE]

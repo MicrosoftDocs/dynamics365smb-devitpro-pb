@@ -3,7 +3,7 @@ title: "Report.GetSubstituteReportId Method"
 description: "Gets the ID of the report that will be run by the platform after considering any substitutions made by extensions."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Gets the ID of the report that will be run by the platform after considering any
 
 
 ## Syntax
-```
+```AL
 NewReportId :=   Report.GetSubstituteReportId(ReportId: Integer)
 ```
 ## Parameters

@@ -3,7 +3,7 @@ title: "Text.SelectStr Method"
 description: "Retrieves a substring from a comma-separated string."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Retrieves a substring from a comma-separated string.
 
 
 ## Syntax
-```
+```AL
 NewString :=   Text.SelectStr(Number: Integer, CommaString: String)
 ```
 > [!NOTE]

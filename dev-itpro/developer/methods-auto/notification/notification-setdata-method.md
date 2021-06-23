@@ -1,9 +1,9 @@
 ---
 title: "Notification.SetData Method"
-description: "Specifies a data property value for the notification. The data is specified as text in a key-value pair."
+description: "Specifies a data property value for the notification."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Specifies a data property value for the notification. The data is specified as t
 
 
 ## Syntax
-```
+```AL
  Notification.SetData(Name: String, Value: String)
 ```
 ## Parameters

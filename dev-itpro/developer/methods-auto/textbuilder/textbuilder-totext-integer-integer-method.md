@@ -3,7 +3,7 @@ title: "TextBuilder.ToText Method"
 description: "Converts the value of a substring of this TextBuilder instance to a Text."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Converts the value of a substring of this TextBuilder instance to a Text.
 
 
 ## Syntax
-```
+```AL
 Result :=   TextBuilder.ToText(StartIndex: Integer, Count: Integer)
 ```
 ## Parameters

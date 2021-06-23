@@ -3,7 +3,7 @@ title: "HttpRequestMessage.Method Method"
 description: "Gets or sets the method type as defined in the HTTP standard."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Gets or sets the method type as defined in the HTTP standard.
 
 
 ## Syntax
-```
+```AL
 [CurrentMethod := ]  HttpRequestMessage.Method([NewMethod: String])
 ```
 > [!NOTE]

@@ -3,7 +3,7 @@ title: "Dialog.Update Method"
 description: "Updates the value of a '#'-or '@' field in the active window."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Updates the value of a '#'-or '@' field in the active window.
 
 
 ## Syntax
-```
+```AL
  Dialog.Update([Number: Integer] [, Value: Any])
 ```
 > [!NOTE]

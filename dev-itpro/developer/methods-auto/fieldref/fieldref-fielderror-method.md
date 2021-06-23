@@ -3,7 +3,7 @@ title: "FieldRef.FieldError Method"
 description: "Stops the execution of the code, causing a run-time error, and creates an error message for a field."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Stops the execution of the code, causing a run-time error, and creates an error 
 
 
 ## Syntax
-```
+```AL
  FieldRef.FieldError([Text: String])
 ```
 ## Parameters

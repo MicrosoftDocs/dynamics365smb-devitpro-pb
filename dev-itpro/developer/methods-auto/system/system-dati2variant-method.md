@@ -3,7 +3,7 @@ title: "System.DaTi2Variant Method"
 description: "Creates a variant that contains an encapsulation of a COM VT\\_DATE."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Creates a variant that contains an encapsulation of a COM VT\\_DATE.
 
 
 ## Syntax
-```
+```AL
 Variant :=   System.DaTi2Variant(Date: Date, Time: Time)
 ```
 > [!NOTE]

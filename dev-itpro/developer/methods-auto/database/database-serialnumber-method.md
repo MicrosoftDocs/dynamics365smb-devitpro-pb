@@ -3,7 +3,7 @@ title: "Database.SerialNumber Method"
 description: "Gets a string that contains the serial number of the license file for your system."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Gets a string that contains the serial number of the license file for your syste
 
 
 ## Syntax
-```
+```AL
 String :=   Database.SerialNumber()
 ```
 > [!NOTE]

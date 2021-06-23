@@ -1,9 +1,9 @@
 ---
 title: "TextBuilder.AppendLine Method"
-description: "Appends a copy of the specified string followed by the default line terminator to the end of the current TextBuilder object. If this parameter is omitted, only the line terminator will be appended."
+description: "Appends a copy of the specified string followed by the default line terminator to the end of the current TextBuilder object."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Appends a copy of the specified string followed by the default line terminator t
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  TextBuilder.AppendLine([Text: Text])
 ```
 ## Parameters

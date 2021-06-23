@@ -3,7 +3,7 @@ title: "HttpResponseMessage.ReasonPhrase Method"
 description: "Gets the reason phrase which typically is sent by servers together with the status code."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Gets the reason phrase which typically is sent by servers together with the stat
 
 
 ## Syntax
-```
+```AL
 ReasonPhrase :=   HttpResponseMessage.ReasonPhrase()
 ```
 > [!NOTE]

@@ -3,7 +3,7 @@ title: "System.Date2DMY Method"
 description: "Gets the day, month, or year of a Date Data Type."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Gets the day, month, or year of a Date Data Type.
 
 
 ## Syntax
-```
+```AL
 Number :=   System.Date2DMY(Date: Date, Value: Integer)
 ```
 > [!NOTE]

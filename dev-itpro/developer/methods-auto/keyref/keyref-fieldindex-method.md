@@ -1,9 +1,9 @@
 ---
 title: "KeyRef.FieldIndex Method"
-description: "Gets the FieldRef of the field that has this index in the key referred to by the KeyRef variable. Returns an error if no key is selected."
+description: "Gets the FieldRef of the field that has this index in the key referred to by the KeyRef variable."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Gets the FieldRef of the field that has this index in the key referred to by the
 
 
 ## Syntax
-```
+```AL
 Field :=   KeyRef.FieldIndex(Index: Integer)
 ```
 ## Parameters

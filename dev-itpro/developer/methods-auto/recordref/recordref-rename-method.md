@@ -3,7 +3,7 @@ title: "RecordRef.Rename Method"
 description: "Changes the value of a primary key in a table."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Changes the value of a primary key in a table.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  RecordRef.Rename(Value1: Any [, Value2: Any,...])
 ```
 ## Parameters

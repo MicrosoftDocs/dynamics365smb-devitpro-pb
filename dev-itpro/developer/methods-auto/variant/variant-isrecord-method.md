@@ -3,7 +3,7 @@ title: "Variant.IsRecord Method"
 description: "Indicates whether an AL variant contains a Record variable."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Indicates whether an AL variant contains a Record variable.
 
 
 ## Syntax
-```
+```AL
 Ok :=   Variant.IsRecord()
 ```
 > [!NOTE]

@@ -3,7 +3,7 @@ title: "BigText.Write Method"
 description: "Streams a BigText object to a BLOB field in a table."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Streams a BigText object to a BLOB field in a table.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  BigText.Write(OutStream: OutStream)
 ```
 ## Parameters

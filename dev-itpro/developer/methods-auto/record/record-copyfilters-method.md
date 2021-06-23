@@ -3,7 +3,7 @@ title: "Record.CopyFilters Method"
 description: "Copies all the filters set by the SETFILTER method (Record) or the SETRANGE method (Record) from one record to another."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Copies all the filters set by the SETFILTER method (Record) or the SETRANGE meth
 
 
 ## Syntax
-```
+```AL
  Record.CopyFilters(var FromRecord: Record)
 ```
 ## Parameters

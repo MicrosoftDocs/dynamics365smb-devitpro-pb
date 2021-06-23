@@ -3,7 +3,7 @@ title: "Record.HasFilter Method"
 description: "Determines whether a filter is attached to a record within the current filter group."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Determines whether a filter is attached to a record within the current filter gr
 
 
 ## Syntax
-```
+```AL
 Ok :=   Record.HasFilter()
 ```
 > [!NOTE]

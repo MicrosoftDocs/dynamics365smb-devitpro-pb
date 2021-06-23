@@ -1,9 +1,9 @@
 ---
 title: "System.Power Method"
-description: "Raises a number to a power. For example, you can use this method to square the number 2 to get the result of 4."
+description: "Raises a number to a power."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Raises a number to a power. For example, you can use this method to square the n
 
 
 ## Syntax
-```
+```AL
 NewNumber :=   System.Power(Number: Decimal, Power: Decimal)
 ```
 > [!NOTE]

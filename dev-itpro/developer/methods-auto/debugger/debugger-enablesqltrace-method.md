@@ -1,9 +1,9 @@
 ---
 title: "Debugger.EnableSqlTrace Method"
-description: "Enables or verifies SQL tracing. If you enable SQL tracing, then SQL Server events for selected sessions on the server instance are collected."
+description: "Enables or verifies SQL tracing."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Enables or verifies SQL tracing. If you enable SQL tracing, then SQL Server even
 
 
 ## Syntax
-```
+```AL
 [IsEnabled := ]  Debugger.EnableSqlTrace(SessionID: Integer [, NewIsEnabled: Boolean])
 ```
 ## Parameters

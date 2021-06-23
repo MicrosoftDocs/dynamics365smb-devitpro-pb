@@ -3,7 +3,7 @@ title: "Query.SaveAsXml Method"
 description: "Saves the resulting data set of a query as XML"
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Saves the resulting data set of a query as XML
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  Query.SaveAsXml(OutStream: OutStream)
 ```
 ## Parameters

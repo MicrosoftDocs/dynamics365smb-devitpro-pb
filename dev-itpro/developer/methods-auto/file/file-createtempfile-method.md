@@ -1,9 +1,9 @@
 ---
 title: "File.CreateTempFile Method"
-description: "Creates a temporary file. This enables you to save data of any format to a temporary file. This file has a unique name and will be stored in a temporary file folder."
+description: "Creates a temporary file."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,7 +23,7 @@ Creates a temporary file. This enables you to save data of any format to a tempo
 > This method is supported only in Business Central on-premises.
 
 ## Syntax
-```
+```AL
 [Ok := ]  File.CreateTempFile([Encoding: TextEncoding])
 ```
 > [!NOTE]

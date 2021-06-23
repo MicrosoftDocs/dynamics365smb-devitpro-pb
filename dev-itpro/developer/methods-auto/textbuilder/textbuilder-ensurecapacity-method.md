@@ -3,7 +3,7 @@ title: "TextBuilder.EnsureCapacity Method"
 description: "Ensures that the capacity of this TextBuilder instance is at least the specified value."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Ensures that the capacity of this TextBuilder instance is at least the specified
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  TextBuilder.EnsureCapacity(NewCapacity: Integer)
 ```
 ## Parameters

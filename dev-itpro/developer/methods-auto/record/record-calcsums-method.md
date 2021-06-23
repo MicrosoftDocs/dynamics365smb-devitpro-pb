@@ -1,9 +1,9 @@
 ---
 title: "Record.CalcSums Method"
-description: "Calculates the total of a column in a table. You specify which fields to calculate by using parameters."
+description: "Calculates the total of a column in a table."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Calculates the total of a column in a table. You specify which fields to calcula
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  Record.CalcSums(Field1: Any [, Field2: Any,...])
 ```
 ## Parameters

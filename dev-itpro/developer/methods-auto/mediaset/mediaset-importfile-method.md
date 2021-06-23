@@ -1,9 +1,9 @@
 ---
 title: "MediaSet.ImportFile Method"
-description: "Adds a media, such as a JPEG image, to the MediaSet data type field of a record for displaying the media in the client. The media is imported to the database and included in a MediaSet for the record."
+description: "Adds a media, such as a JPEG image, to the MediaSet data type field of a record for displaying the media in the client."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,7 +23,7 @@ Adds a media, such as a JPEG image, to the MediaSet data type field of a record 
 > This method is supported only in Business Central on-premises.
 
 ## Syntax
-```
+```AL
 [ID := ]  MediaSet.ImportFile(Filename: String, Description: String [, MimeType: String])
 ```
 ## Parameters

@@ -1,9 +1,9 @@
 ---
 title: "Query.Close Method"
-description: "Closes a query data set and returns the query instance to the initialized state. The following code shows the syntax of the CLOSE method.  Query is a variable of the Query data type that specifies the query object."
+description: "Closes a query data set and returns the query instance to the initialized state."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Closes a query data set and returns the query instance to the initialized state.
 
 
 ## Syntax
-```
+```AL
  Query.Close()
 ```
 

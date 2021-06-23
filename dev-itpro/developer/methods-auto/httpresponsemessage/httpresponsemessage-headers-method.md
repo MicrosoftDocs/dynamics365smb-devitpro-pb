@@ -3,7 +3,7 @@ title: "HttpResponseMessage.Headers Method"
 description: "Gets the HTTP response's HTTP headers."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Gets the HTTP response's HTTP headers.
 
 
 ## Syntax
-```
+```AL
 Headers :=   HttpResponseMessage.Headers()
 ```
 > [!NOTE]

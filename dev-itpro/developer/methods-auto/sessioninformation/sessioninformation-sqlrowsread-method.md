@@ -3,7 +3,7 @@ title: "SessionInformation.SqlRowsRead Method"
 description: "Gets the amount of SQL rows read on the session, since the session started."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Gets the amount of SQL rows read on the session, since the session started.
 
 
 ## Syntax
-```
+```AL
 SqlStatementsExecuted :=   SessionInformation.SqlRowsRead()
 ```
 > [!NOTE]

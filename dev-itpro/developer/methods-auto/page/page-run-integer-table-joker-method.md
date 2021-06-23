@@ -1,9 +1,9 @@
 ---
 title: "Page.Run Method"
-description: "Creates and launches a page that you specify. You can use CLEAR method to remove the page."
+description: "Creates and launches a page that you specify."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Creates and launches a page that you specify. You can use CLEAR method to remove
 
 
 ## Syntax
-```
+```AL
  Page.Run(Number: Integer [, Record: Record] [, Field: Any])
 ```
 ## Parameters

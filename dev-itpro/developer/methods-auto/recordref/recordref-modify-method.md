@@ -3,7 +3,7 @@ title: "RecordRef.Modify Method"
 description: "Modifies a record in a table."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Modifies a record in a table.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  RecordRef.Modify([RunTrigger: Boolean])
 ```
 ## Parameters

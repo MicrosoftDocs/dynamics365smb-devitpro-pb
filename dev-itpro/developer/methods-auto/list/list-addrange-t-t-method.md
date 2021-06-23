@@ -3,7 +3,7 @@ title: "List.AddRange Method"
 description: "Adds the elements of the specified collection to the end of the list."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Adds the elements of the specified collection to the end of the list.
 
 
 ## Syntax
-```
+```AL
  List.AddRange(Value: T [, Values: T,...])
 ```
 ## Parameters

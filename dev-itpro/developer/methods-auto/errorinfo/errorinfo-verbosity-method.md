@@ -1,9 +1,9 @@
 ---
 title: "ErrorInfo.Verbosity Method"
-description: "Specifies the severity level of the error. This can determine whether the error should be sent to telemetry (which is based on the trace level setting of the server)."
+description: "Specifies the severity level of the error."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Specifies the severity level of the error. This can determine whether the error 
 
 
 ## Syntax
-```
+```AL
 [Verbosity := ]  ErrorInfo.Verbosity([Verbosity: Verbosity])
 ```
 > [!NOTE]

@@ -3,7 +3,7 @@ title: "NumberSequence.Next Method"
 description: "Retrieves the next value from the number sequence."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Retrieves the next value from the number sequence.
 
 
 ## Syntax
-```
+```AL
 Next :=   NumberSequence.Next(Name: String [, CompanySpecific: Boolean])
 ```
 ## Parameters

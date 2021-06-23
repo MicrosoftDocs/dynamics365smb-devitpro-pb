@@ -3,7 +3,7 @@ title: "XmlNameTable.Add Method"
 description: "Atomizes the specified string and adds it to the XmlNameTable."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Atomizes the specified string and adds it to the XmlNameTable.
 
 
 ## Syntax
-```
+```AL
 [AddedKey := ]  XmlNameTable.Add(Key: String)
 ```
 ## Parameters

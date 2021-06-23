@@ -1,9 +1,9 @@
 ---
 title: "Database.SetUserPassword Method"
-description: "Sets a password for the user iwith the given user security ID. If the given password is blank, an empty string will be stored instead of a password hash. This will prevent the user from logging in using a password. Only SUPER can call this method. Passwords cannot be set for the empty GUID or for the default Super ID."
+description: "Sets a password for the user iwith the given user security ID."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,7 +23,7 @@ Sets a password for the user iwith the given user security ID. If the given pass
 > This method is supported only in Business Central on-premises.
 
 ## Syntax
-```
+```AL
 [Ok := ]  Database.SetUserPassword(USID: Guid, Password: String)
 ```
 > [!NOTE]

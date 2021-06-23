@@ -1,9 +1,9 @@
 ---
 title: "File.Open Method"
-description: "Opens an ASCII or binary file. This method does not create the file if it does not exist."
+description: "Opens an ASCII or binary file."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,7 +23,7 @@ Opens an ASCII or binary file. This method does not create the file if it does n
 > This method is supported only in Business Central on-premises.
 
 ## Syntax
-```
+```AL
 [Ok := ]  File.Open(Name: String [, Encoding: TextEncoding])
 ```
 > [!NOTE]

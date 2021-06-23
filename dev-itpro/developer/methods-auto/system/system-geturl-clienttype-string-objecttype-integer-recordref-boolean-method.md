@@ -1,9 +1,9 @@
 ---
 title: "System.GetUrl Method"
-description: "Generates a URL for the specified client target that is based on the configuration of the server instance. If the code runs in a multitenant deployment architecture, the generated URL will automatically apply to the tenant ID of the current user."
+description: "Generates a URL for the specified client target that is based on the configuration of the server instance."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Generates a URL for the specified client target that is based on the configurati
 
 
 ## Syntax
-```
+```AL
 String :=   System.GetUrl(ClientType: ClientType, Company: String, ObjectType: ObjectType, ObjectId: Integer, RecordRef: RecordRef [, UseFilters: Boolean])
 ```
 > [!NOTE]

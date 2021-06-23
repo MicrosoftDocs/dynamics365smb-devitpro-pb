@@ -1,9 +1,9 @@
 ---
 title: "TestRequestPage.FindNextField Method"
-description: "Finds the next field in the data set that is displayed on a test page.The row is searched from the beginning of the dataset defined by the current filter. The search is performed by iterating across the rows, comparing the primary key with the primary key fields of the record. For large dataset, use SetFilter to limit the dataset."
+description: "Finds the next field in the data set that is displayed on a test page."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Finds the next field in the data set that is displayed on a test page.The row is
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  TestRequestPage.FindNextField(Field: TestField, Value: Any)
 ```
 ## Parameters

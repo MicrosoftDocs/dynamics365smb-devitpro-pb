@@ -3,7 +3,7 @@ title: "Text.CopyStr Method"
 description: "Copies a substring of any length from a specific position in a string (text or code) to a new string."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Copies a substring of any length from a specific position in a string (text or c
 
 
 ## Syntax
-```
+```AL
 NewString :=   Text.CopyStr(String: String, Position: Integer [, Length: Integer])
 ```
 > [!NOTE]

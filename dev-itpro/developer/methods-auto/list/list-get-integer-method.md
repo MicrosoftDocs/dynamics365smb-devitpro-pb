@@ -1,9 +1,9 @@
 ---
 title: "List.Get Method"
-description: "Gets the element at the specified index. This method will raise an error if the index is outside the valid range."
+description: "Gets the element at the specified index."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Gets the element at the specified index. This method will raise an error if the 
 
 
 ## Syntax
-```
+```AL
 Result :=   List.Get(Index: Integer)
 ```
 ## Parameters

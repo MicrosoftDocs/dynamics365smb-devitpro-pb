@@ -3,7 +3,7 @@ title: "FieldRef.Validate Method"
 description: "Use this method to enter a new value into a field and have the new value validated by the properties and code that have been defined for that field."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Use this method to enter a new value into a field and have the new value validat
 
 
 ## Syntax
-```
+```AL
  FieldRef.Validate([NewValue: Any])
 ```
 ## Parameters

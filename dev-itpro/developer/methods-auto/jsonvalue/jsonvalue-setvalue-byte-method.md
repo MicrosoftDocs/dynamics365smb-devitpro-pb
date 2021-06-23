@@ -3,7 +3,7 @@ title: "JsonValue.SetValue Method"
 description: "Set the contents of the JsonValue variable to the JSON representation of the given value."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Set the contents of the JsonValue variable to the JSON representation of the giv
 
 
 ## Syntax
-```
+```AL
  JsonValue.SetValue(Value: Byte)
 ```
 ## Parameters

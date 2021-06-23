@@ -3,7 +3,7 @@ title: "Version.Revision Method"
 description: "Gets the revision number from the version."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Gets the revision number from the version.
 
 
 ## Syntax
-```
+```AL
 RevisionVersion :=   Version.Revision()
 ```
 > [!NOTE]

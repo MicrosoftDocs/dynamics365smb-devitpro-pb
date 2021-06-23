@@ -3,7 +3,7 @@ title: "Debugger.SkipSystemTriggers Method"
 description: "Enables the debugger to skip code that is inside system triggers."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Enables the debugger to skip code that is inside system triggers.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  Debugger.SkipSystemTriggers(Ok: Boolean)
 ```
 ## Parameters

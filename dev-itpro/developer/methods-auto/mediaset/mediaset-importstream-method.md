@@ -1,9 +1,9 @@
 ---
 title: "MediaSet.ImportStream Method"
-description: "Adds a media file, such as a JPEG image, from an InStream object to the MediaSet of record for displaying in the client. The media is imported to the database and included in a MediaSet for the record."
+description: "Adds a media file, such as a JPEG image, from an InStream object to the MediaSet of record for displaying in the client."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Adds a media file, such as a JPEG image, from an InStream object to the MediaSet
 
 
 ## Syntax
-```
+```AL
 [ID := ]  MediaSet.ImportStream(Stream: InStream, Description: String [, MimeType: String])
 ```
 ## Parameters

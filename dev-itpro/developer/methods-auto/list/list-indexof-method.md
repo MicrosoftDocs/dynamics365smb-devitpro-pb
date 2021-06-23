@@ -3,7 +3,7 @@ title: "List.IndexOf Method"
 description: "Searches for the specified value and returns the one-based index of the first occurrence within the entire List."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Searches for the specified value and returns the one-based index of the first oc
 
 
 ## Syntax
-```
+```AL
 Index :=   List.IndexOf(Value: T)
 ```
 ## Parameters

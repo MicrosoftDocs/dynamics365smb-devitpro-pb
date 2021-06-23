@@ -3,7 +3,7 @@ title: "JsonObject.Remove Method"
 description: "Removes the property with the given key from the object."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Removes the property with the given key from the object.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  JsonObject.Remove(Key: String)
 ```
 ## Parameters

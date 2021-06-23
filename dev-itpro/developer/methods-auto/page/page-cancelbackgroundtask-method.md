@@ -3,7 +3,7 @@ title: "Page.CancelBackgroundTask Method"
 description: "Attempt to cancel a page background task."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Attempt to cancel a page background task.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  Page.CancelBackgroundTask(TaskId: Integer)
 ```
 ## Parameters

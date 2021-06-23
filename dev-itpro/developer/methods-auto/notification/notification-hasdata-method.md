@@ -3,7 +3,7 @@ title: "Notification.HasData Method"
 description: "Checks if data was passed to a notification instance as specified by a SETDATA method call."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Checks if data was passed to a notification instance as specified by a SETDATA m
 
 
 ## Syntax
-```
+```AL
 Value :=   Notification.HasData(Name: String)
 ```
 ## Parameters

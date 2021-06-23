@@ -3,7 +3,7 @@ title: "Query.Read Method"
 description: "Reads data from a row in the resulting data set of a query."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Reads data from a row in the resulting data set of a query.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  Query.Read()
 ```
 

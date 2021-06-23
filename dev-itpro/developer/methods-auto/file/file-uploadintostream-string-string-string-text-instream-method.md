@@ -1,9 +1,9 @@
 ---
 title: "File.UploadIntoStream Method"
-description: "Sends a file from the client computer to the corresponding server. The client computer is the computer that is running the Windows client or the computer that is running a browser that accesses the web client."
+description: "Sends a file from the client computer to the corresponding server."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Sends a file from the client computer to the corresponding server. The client co
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  File.UploadIntoStream(DialogTitle: String, FromFolder: String, FromFilter: String, var FromFile: Text, var InStream: InStream)
 ```
 > [!NOTE]

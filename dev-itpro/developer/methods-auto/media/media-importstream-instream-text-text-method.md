@@ -1,9 +1,9 @@
 ---
 title: "Media.ImportStream Method"
-description: "Adds a media type (MIME), such as jpeg image, from an InStream object to a Media data type field of a record for displaying the media in the client. The media file is imported to the application database and a reference to the media is included in the Media data type field."
+description: "Adds a media type (MIME), such as jpeg image, from an InStream object to a Media data type field of a record for displaying the media in the client."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Adds a media type (MIME), such as jpeg image, from an InStream object to a Media
 
 
 ## Syntax
-```
+```AL
 [ID := ]  Media.ImportStream(Stream: InStream, Description: Text [, MimeType: Text])
 ```
 ## Parameters

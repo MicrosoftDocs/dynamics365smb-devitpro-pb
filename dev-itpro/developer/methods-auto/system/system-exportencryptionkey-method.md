@@ -1,9 +1,9 @@
 ---
 title: "System.ExportEncryptionKey Method"
-description: "Returns a password protected temporary filepath containing the encryption key. When encrypting or decrypting data in Dynamics 365 Business Central, an encryption key is used. A single key is used per tenant and every tenant will have a different key. Keys can be exported to a file which may be necessary in the case of upgrading or migrating a system from one set of hardware to another. The EXPORTENCRYPTIONKEY method allows an administrator to specify a destination file for the key and specify a password protection for the file."
+description: "Returns a password protected temporary filepath containing the encryption key."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,7 +23,7 @@ Returns a password protected temporary filepath containing the encryption key. W
 > This method is supported only in Business Central on-premises.
 
 ## Syntax
-```
+```AL
 Path :=   System.ExportEncryptionKey(Password: String)
 ```
 > [!NOTE]

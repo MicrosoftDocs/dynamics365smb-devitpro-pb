@@ -3,7 +3,7 @@ title: "Session.LogMessage Method"
 description: "Logs a trace message to a telemetry account."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Logs a trace message to a telemetry account.
 
 
 ## Syntax
-```
+```AL
  Session.LogMessage(EventId: String, Message: String, Verbosity: Verbosity, DataClassification: DataClassification, TelemetryScope: TelemetryScope, CustomDimensions: Dictionary of [Text, Text])
 ```
 > [!NOTE]

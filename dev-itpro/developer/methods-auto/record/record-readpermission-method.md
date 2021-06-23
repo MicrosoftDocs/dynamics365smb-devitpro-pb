@@ -1,9 +1,9 @@
 ---
 title: "Record.ReadPermission Method"
-description: "Determines whether a user is granted read permission to the table that contains a record. This method can test for both full read permission and partial read permission that has been granted with a security filter."
+description: "Determines whether a user is granted read permission to the table that contains a record."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Determines whether a user is granted read permission to the table that contains 
 
 
 ## Syntax
-```
+```AL
 Ok :=   Record.ReadPermission()
 ```
 > [!NOTE]

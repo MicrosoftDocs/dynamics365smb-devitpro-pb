@@ -1,9 +1,9 @@
 ---
 title: "Database.TenantId Method"
-description: "Gets the ID of the tenant that has started the current session. Use this method when your code must be specific about which tenant database to access in a multitenant deployment. For example, if your code imports data into a cache, you can make a cache tenant-specific by using the tenant ID as a key. Also, if you want to write code that saves documents, you can include the tenant ID in the file name or location, for example. In those cases, you can use the TENANTID method in combination with the COMPANYNAME method to identify the company and the tenant database."
+description: "Gets the ID of the tenant that has started the current session."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Gets the ID of the tenant that has started the current session. Use this method 
 
 
 ## Syntax
-```
+```AL
 ID :=   Database.TenantId()
 ```
 > [!NOTE]

@@ -3,7 +3,7 @@ title: "XmlNamespaceManager.LookupPrefix Method"
 description: "Finds the prefix declared for the given namespace URI."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Finds the prefix declared for the given namespace URI.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  XmlNamespaceManager.LookupPrefix(Uri: String, var Result: Text)
 ```
 ## Parameters

@@ -3,7 +3,7 @@ title: "Text.InsStr Method"
 description: "Inserts a substring into a string."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Inserts a substring into a string.
 
 
 ## Syntax
-```
+```AL
 NewString :=   Text.InsStr(String: String, SubString: String, Position: Integer)
 ```
 > [!NOTE]

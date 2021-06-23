@@ -1,9 +1,9 @@
 ---
 title: "System.Evaluate Method"
-description: "Evaluates a string representation of a value into its typical representation. The result is assigned to a variable."
+description: "Evaluates a string representation of a value into its typical representation."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Evaluates a string representation of a value into its typical representation. Th
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  System.Evaluate(var Variable: Any, String: String [, Number: Integer])
 ```
 > [!NOTE]

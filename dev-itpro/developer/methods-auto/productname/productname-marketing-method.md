@@ -3,7 +3,7 @@ title: "ProductName.Marketing Method"
 description: "MARKETING returns a text string that contains the application's marketing name."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ MARKETING returns a text string that contains the application's marketing name.
 
 
 ## Syntax
-```
+```AL
 ProductNameMarketing :=   ProductName.Marketing()
 ```
 

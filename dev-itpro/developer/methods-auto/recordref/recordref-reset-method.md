@@ -1,9 +1,9 @@
 ---
 title: "RecordRef.Reset Method"
-description: "Removes all filters, including any special filters set by the MarkedOnly method (Record), changes fields select for loading back to all, and changes the current key to the primary key. Also removes any marks on the record and clears any AL variables defined on its table definition."
+description: "Removes all filters, including any special filters set by the MarkedOnly method (Record), changes fields select for loading back to all, and changes the current key to the primary key."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Removes all filters, including any special filters set by the MarkedOnly method 
 
 
 ## Syntax
-```
+```AL
  RecordRef.Reset()
 ```
 

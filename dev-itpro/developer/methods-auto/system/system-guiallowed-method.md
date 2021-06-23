@@ -3,7 +3,7 @@ title: "System.GuiAllowed Method"
 description: "Checks whether the AL code can show any information on the screen."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Checks whether the AL code can show any information on the screen.
 
 
 ## Syntax
-```
+```AL
 Ok :=   System.GuiAllowed()
 ```
 > [!NOTE]

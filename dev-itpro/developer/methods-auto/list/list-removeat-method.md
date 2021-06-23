@@ -3,7 +3,7 @@ title: "List.RemoveAt Method"
 description: "Removes the element at the specified index of the List."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Removes the element at the specified index of the List.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  List.RemoveAt(Index: Integer)
 ```
 ## Parameters

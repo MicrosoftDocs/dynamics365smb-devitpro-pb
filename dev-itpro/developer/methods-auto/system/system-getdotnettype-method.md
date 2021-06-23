@@ -1,9 +1,9 @@
 ---
 title: "System.GetDotNetType Method"
-description: "Gets the System.Type that corresponds to the given value."
+description: "Gets the System."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,7 +23,7 @@ Gets the System.Type that corresponds to the given value.
 > This method is supported only in Business Central on-premises.
 
 ## Syntax
-```
+```AL
 Type :=   System.GetDotNetType(Expression: Any)
 ```
 > [!NOTE]

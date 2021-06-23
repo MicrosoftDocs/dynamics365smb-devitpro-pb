@@ -3,7 +3,7 @@ title: "FieldRef.SetRange Method"
 description: "Sets a simple filter on a field, such as a single range or a single value."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Sets a simple filter on a field, such as a single range or a single value.
 
 
 ## Syntax
-```
+```AL
  FieldRef.SetRange([FromValue: Any] [, ToValue: Any])
 ```
 ## Parameters

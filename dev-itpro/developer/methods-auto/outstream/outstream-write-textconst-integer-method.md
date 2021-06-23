@@ -1,9 +1,9 @@
 ---
 title: "OutStream.Write Method"
-description: "Writes a specified number of bytes to the stream. Data is written in binary format."
+description: "Writes a specified number of bytes to the stream."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Writes a specified number of bytes to the stream. Data is written in binary form
 
 
 ## Syntax
-```
+```AL
 [Written := ]  OutStream.Write(Value: TextConst [, Length: Integer])
 ```
 ## Parameters

@@ -3,7 +3,7 @@ title: "TestField.Caption Method"
 description: "Gets the current caption of the field as a String."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Gets the current caption of the field as a String.
 
 
 ## Syntax
-```
+```AL
 Result :=   TestField.Caption()
 ```
 > [!NOTE]

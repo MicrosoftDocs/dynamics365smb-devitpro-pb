@@ -21,7 +21,7 @@ Determines the table relationship of a given field.
 
 
 ## Syntax
-```
+```AL
 TableNumber :=   Record.Relation(Field: Any)
 ```
 ## Parameters

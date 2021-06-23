@@ -1,9 +1,9 @@
 ---
 title: "System.Clear Method"
-description: "Clears the value of a single variable. Also, it clears all the filters that were set if the variable is a record and resets the key to the primary key and the company on a record variable."
+description: "Clears the value of a single variable."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Clears the value of a single variable. Also, it clears all the filters that were
 
 
 ## Syntax
-```
+```AL
  System.Clear(var Variable: Any)
 ```
 > [!NOTE]

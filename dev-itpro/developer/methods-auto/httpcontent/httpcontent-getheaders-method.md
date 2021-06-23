@@ -3,7 +3,7 @@ title: "HttpContent.GetHeaders Method"
 description: "Gets the HTTP content headers as defined in RFC 2616."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Gets the HTTP content headers as defined in RFC 2616.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  HttpContent.GetHeaders(var Headers: HttpHeaders)
 ```
 ## Parameters

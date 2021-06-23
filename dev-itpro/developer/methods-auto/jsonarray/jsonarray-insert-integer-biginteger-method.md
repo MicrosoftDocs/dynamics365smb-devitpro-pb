@@ -3,7 +3,7 @@ title: "JsonArray.Insert Method"
 description: "Inserts the value at the given index in the array while shifting all the values to the right by one position."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Inserts the value at the given index in the array while shifting all the values 
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  JsonArray.Insert(Index: Integer, Value: BigInteger)
 ```
 ## Parameters

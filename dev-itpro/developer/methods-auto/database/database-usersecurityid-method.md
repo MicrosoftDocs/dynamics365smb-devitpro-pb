@@ -3,7 +3,7 @@ title: "Database.UserSecurityId Method"
 description: "Gets the unique identifier of the user that is logged on to the current session."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Gets the unique identifier of the user that is logged on to the current session.
 
 
 ## Syntax
-```
+```AL
 USID :=   Database.UserSecurityId()
 ```
 > [!NOTE]

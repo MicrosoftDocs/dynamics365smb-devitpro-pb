@@ -3,7 +3,7 @@ title: "Text.LowerCase Method"
 description: "Converts all letters in a string to lowercase."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Converts all letters in a string to lowercase.
 
 
 ## Syntax
-```
+```AL
 NewString :=   Text.LowerCase(String: String)
 ```
 > [!NOTE]

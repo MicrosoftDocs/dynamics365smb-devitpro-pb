@@ -21,7 +21,7 @@ Gets or sets how security filters are applied to the record.
 
 
 ## Syntax
-```
+```AL
 [SecurityFiltering := ]  Record.SecurityFiltering([SecurityFiltering: SecurityFilter])
 ```
 > [!NOTE]

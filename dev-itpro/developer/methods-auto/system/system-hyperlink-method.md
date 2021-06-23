@@ -3,7 +3,7 @@ title: "System.Hyperlink Method"
 description: "Passes a URL as an argument to an Internet browser, such as Windows Internet Explorer."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Passes a URL as an argument to an Internet browser, such as Windows Internet Exp
 
 
 ## Syntax
-```
+```AL
  System.Hyperlink(URL: String)
 ```
 > [!NOTE]

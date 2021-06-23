@@ -3,7 +3,7 @@ title: "Debugger.Attach Method"
 description: "Activates the debugger and attaches it to the specified session."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Activates the debugger and attaches it to the specified session.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  Debugger.Attach(SessionID: Integer)
 ```
 ## Parameters

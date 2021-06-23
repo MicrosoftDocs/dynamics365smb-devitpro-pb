@@ -3,7 +3,7 @@ title: "Notification.GetData Method"
 description: "Retrieves data that was passed to a notification instance as specified by a SETDATA method call."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Retrieves data that was passed to a notification instance as specified by a SETD
 
 
 ## Syntax
-```
+```AL
 Value :=   Notification.GetData(Name: String)
 ```
 ## Parameters

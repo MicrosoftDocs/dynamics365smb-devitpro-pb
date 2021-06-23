@@ -1,9 +1,9 @@
 ---
 title: "RecordRef.KeyIndex Method"
-description: "Gets the KeyRef of the key that has the index specified in the table that is currently selected. The key can be composed of fields of any supported data type. Data types that are not supported include BLOBs, FlowFilters, variables, and functions. If the sorting key is set to a field that is not part of a key, then the KEYINDEX is -1."
+description: "Gets the KeyRef of the key that has the index specified in the table that is currently selected."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Gets the KeyRef of the key that has the index specified in the table that is cur
 
 
 ## Syntax
-```
+```AL
 Key :=   RecordRef.KeyIndex(Index: Integer)
 ```
 ## Parameters

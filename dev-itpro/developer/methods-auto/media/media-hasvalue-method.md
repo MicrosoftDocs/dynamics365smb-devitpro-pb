@@ -3,7 +3,7 @@ title: "Media.HasValue Method"
 description: "Checks whether a Media data type field in a record has been initialized with a media object and that the specified media object exists in the database."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Checks whether a Media data type field in a record has been initialized with a m
 
 
 ## Syntax
-```
+```AL
 HasValue :=   Media.HasValue()
 ```
 > [!NOTE]

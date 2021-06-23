@@ -1,9 +1,9 @@
 ---
 title: "RecordRef.SetPermissionFilter Method"
-description: "Applies the user's security filter to the referenced record. The security filter is combined with any other filters that are placed on the record with SetFilter or SetRange. The combined filter will not include any records outside the range of the security filter and this will prevent a runtime permission error from occuring when the record is read. If the permission filter is not set, an error can occur if you attempt to read a record that is outside the range of the user's security filter."
+description: "Applies the user's security filter to the referenced record."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Applies the user's security filter to the referenced record. The security filter
 
 
 ## Syntax
-```
+```AL
  RecordRef.SetPermissionFilter()
 ```
 

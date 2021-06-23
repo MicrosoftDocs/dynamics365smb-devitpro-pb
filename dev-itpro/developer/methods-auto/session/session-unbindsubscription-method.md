@@ -1,9 +1,9 @@
 ---
 title: "Session.UnbindSubscription Method"
-description: "Unbinds the event subscriber methods from in the codeunit instance. This essentially deactivates the subscriber methods for the codeunit instance."
+description: "Unbinds the event subscriber methods from in the codeunit instance."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Unbinds the event subscriber methods from in the codeunit instance. This essenti
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  Session.UnbindSubscription(Codeunit: Codeunit)
 ```
 > [!NOTE]

@@ -1,9 +1,9 @@
 ---
 title: "HttpHeaders.TryAddWithoutValidation Method"
-description: "Adds the specified header and its value into the HttpHeaders collection. Doesn't validate the provided value."
+description: "Adds the specified header and its value into the HttpHeaders collection."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Adds the specified header and its value into the HttpHeaders collection. Doesn't
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  HttpHeaders.TryAddWithoutValidation(Name: String, Value: String)
 ```
 ## Parameters

@@ -3,7 +3,7 @@ title: "Xmlport.Filename Method"
 description: "Gets the current value of the FileName Property of an XmlPort and sets this property to a new value."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Gets the current value of the FileName Property of an XmlPort and sets this prop
 
 
 ## Syntax
-```
+```AL
 [FileName := ]  Xmlport.Filename([FileName: String])
 ```
 > [!NOTE]

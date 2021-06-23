@@ -3,7 +3,7 @@ title: "Database.DataFileInformation Method"
 description: "Specifies data from a file that has been exported from a database."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,7 +23,7 @@ Specifies data from a file that has been exported from a database.
 > This method is supported only in Business Central on-premises.
 
 ## Syntax
-```
+```AL
 [Ok := ]  Database.DataFileInformation(ShowDialog: Boolean, var FileName: Text, var Description: Text, var HasApplication: Boolean, var HasApplicationData: Boolean, var HasGlobalData: Boolean, var tenantId: Text, var exportDate: DateTime, var CompanyRecord: Record)
 ```
 > [!NOTE]

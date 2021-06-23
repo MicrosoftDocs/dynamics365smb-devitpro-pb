@@ -3,7 +3,7 @@ title: "Xmlport.SetDestination Method"
 description: "Sets the destination OutStream of the XmlPort."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Sets the destination OutStream of the XmlPort.
 
 
 ## Syntax
-```
+```AL
  Xmlport.SetDestination(var OutStream: OutStream)
 ```
 > [!NOTE]

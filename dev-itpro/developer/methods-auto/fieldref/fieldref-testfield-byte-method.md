@@ -1,9 +1,9 @@
 ---
 title: "FieldRef.TestField Method"
-description: "Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed."
+description: "Determines whether the contents of a field matches a given value."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Determines whether the contents of a field matches a given value. If the content
 
 
 ## Syntax
-```
+```AL
  FieldRef.TestField(Value: Byte)
 ```
 ## Parameters

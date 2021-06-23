@@ -3,7 +3,7 @@ title: "OutStream.WriteText Method"
 description: "Writes text to an OutStream object."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Writes text to an OutStream object.
 
 
 ## Syntax
-```
+```AL
 [Written := ]  OutStream.WriteText([Text: String] [, Length: Integer])
 ```
 ## Parameters

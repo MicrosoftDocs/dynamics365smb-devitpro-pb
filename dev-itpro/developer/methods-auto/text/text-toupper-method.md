@@ -3,7 +3,7 @@ title: "Text.ToUpper Method"
 description: "Returns a copy of this string converted to uppercase."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Returns a copy of this string converted to uppercase.
 
 
 ## Syntax
-```
+```AL
 Result :=   Text.ToUpper()
 ```
 > [!NOTE]

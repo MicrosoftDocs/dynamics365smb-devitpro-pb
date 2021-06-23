@@ -3,7 +3,7 @@ title: "XmlElement.Create Method"
 description: "Creates an XmlElement node."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Creates an XmlElement node.
 
 
 ## Syntax
-```
+```AL
 XmlElement :=   XmlElement.Create(Name: String)
 ```
 ## Parameters

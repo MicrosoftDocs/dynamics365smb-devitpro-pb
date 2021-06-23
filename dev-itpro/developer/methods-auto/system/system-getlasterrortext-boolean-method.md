@@ -3,7 +3,7 @@ title: "System.GetLastErrorText Method"
 description: "Gets the last error that occurred in the debugger."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Gets the last error that occurred in the debugger.
 
 
 ## Syntax
-```
+```AL
 String :=   System.GetLastErrorText(ExcludeCustomerContent: Boolean)
 ```
 > [!NOTE]

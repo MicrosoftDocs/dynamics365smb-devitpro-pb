@@ -3,7 +3,7 @@ title: "List.GetRange Method"
 description: "Get a shallow copy of a range of elements in the source."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Get a shallow copy of a range of elements in the source.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  List.GetRange(Index: Integer, Count: Integer, var Result: List of [T])
 ```
 ## Parameters

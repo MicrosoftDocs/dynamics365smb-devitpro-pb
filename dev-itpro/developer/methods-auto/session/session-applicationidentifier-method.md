@@ -3,7 +3,7 @@ title: "Session.ApplicationIdentifier Method"
 description: "Gets the application ID associated with the current thread."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Gets the application ID associated with the current thread.
 
 
 ## Syntax
-```
+```AL
 AppId :=   Session.ApplicationIdentifier()
 ```
 > [!NOTE]

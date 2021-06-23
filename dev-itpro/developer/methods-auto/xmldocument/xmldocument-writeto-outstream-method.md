@@ -21,7 +21,7 @@ Serializes and saves the current node to the given variable.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  XmlDocument.WriteTo(OutStream: OutStream)
 ```
 ## Parameters

@@ -3,7 +3,7 @@ title: "Debugger.DebuggingSessionID Method"
 description: "Gets the ID of the session that the debugger is currently attached to."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Gets the ID of the session that the debugger is currently attached to.
 
 
 ## Syntax
-```
+```AL
 SessionID :=   Debugger.DebuggingSessionID()
 ```
 

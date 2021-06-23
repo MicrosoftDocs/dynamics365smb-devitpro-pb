@@ -3,7 +3,7 @@ title: "System.CopyStream Method"
 description: "Copies the information that is contained in an InStream to an OutStream."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Copies the information that is contained in an InStream to an OutStream.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  System.CopyStream(OutStream: OutStream, InStream: InStream [, BytesToRead: Integer])
 ```
 > [!NOTE]

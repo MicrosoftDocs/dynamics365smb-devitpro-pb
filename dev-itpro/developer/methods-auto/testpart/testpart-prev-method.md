@@ -3,7 +3,7 @@ title: "TestPart.Prev Method"
 description: "Sets the current row of the test page as the previous row in the data set."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Sets the current row of the test page as the previous row in the data set.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  TestPart.Prev()
 ```
 

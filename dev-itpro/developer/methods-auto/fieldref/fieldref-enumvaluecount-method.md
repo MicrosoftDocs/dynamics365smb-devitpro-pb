@@ -3,7 +3,7 @@ title: "FieldRef.EnumValueCount Method"
 description: "Gets the number of Enum values (or Option members) from the Enum metadata for the field that is currently selected."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Gets the number of Enum values (or Option members) from the Enum metadata for th
 
 
 ## Syntax
-```
+```AL
 Number of Enum values :=   FieldRef.EnumValueCount()
 ```
 

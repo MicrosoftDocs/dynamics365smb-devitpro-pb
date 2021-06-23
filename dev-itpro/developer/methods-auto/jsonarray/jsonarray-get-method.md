@@ -3,7 +3,7 @@ title: "JsonArray.Get Method"
 description: "Retrieves the value at the given index in the JsonArray."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Retrieves the value at the given index in the JsonArray.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  JsonArray.Get(Index: Integer, var Result: JsonToken)
 ```
 ## Parameters

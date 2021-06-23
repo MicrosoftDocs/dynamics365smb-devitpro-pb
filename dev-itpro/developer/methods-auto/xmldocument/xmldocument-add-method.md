@@ -3,7 +3,7 @@ title: "XmlDocument.Add Method"
 description: "Adds the specified content as a child of this document."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Adds the specified content as a child of this document.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  XmlDocument.Add(Content: Any,...)
 ```
 ## Parameters

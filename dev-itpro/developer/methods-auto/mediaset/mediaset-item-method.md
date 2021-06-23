@@ -3,7 +3,7 @@ title: "MediaSet.Item Method"
 description: "Gets the unique identifier (GUID) of a media object that is assigned to a MediaSet on a record."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Gets the unique identifier (GUID) of a media object that is assigned to a MediaS
 
 
 ## Syntax
-```
+```AL
 MediaId :=   MediaSet.Item(Index: Integer)
 ```
 ## Parameters

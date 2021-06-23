@@ -1,9 +1,9 @@
 ---
 title: "File.Upload Method"
-description: "Sends a file from the client computer to the server computer. The client computer is the computer that is running the Windows client or the computer that is running a browser that accesses the web client."
+description: "Sends a file from the client computer to the server computer."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,7 +23,7 @@ Sends a file from the client computer to the server computer. The client compute
 > This method is supported only in Business Central on-premises.
 
 ## Syntax
-```
+```AL
 [Ok := ]  File.Upload(DialogTitle: String, FromFolder: String, FromFilter: String, FromFile: String, var ToFile: Text)
 ```
 > [!NOTE]

@@ -3,7 +3,7 @@ title: "Session.LogSecurityAudit Method"
 description: "Logs an IfX audit message to a telemetry account."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Logs an IfX audit message to a telemetry account.
 
 
 ## Syntax
-```
+```AL
  Session.LogSecurityAudit(Description: String, Result: SecurityOperationResult, ResultDescription: String, AuditCategory: AuditCategory [, TargetType: Array of [String]] [, TargetName: Array of [String]])
 ```
 > [!NOTE]

@@ -1,9 +1,9 @@
 ---
 title: "Text.ConvertStr Method"
-description: "Replaces all chars in source found in FromCharacters with the corresponding char in ToCharacters and returns the converted string. If the length of the FromCharacters parameter and the ToChars parameter are different, an exception is thrown. If the parameter FromCharacters or the parameter ToChars is empty, the source is returned unmodified. Each element in source is only converted ONCE a double-replacement cannot happen."
+description: "Replaces all chars in source found in FromCharacters with the corresponding char in ToCharacters and returns the converted string."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Replaces all chars in source found in FromCharacters with the corresponding char
 
 
 ## Syntax
-```
+```AL
 NewString :=   Text.ConvertStr(String: String, FromCharacters: String, ToCharacters: String)
 ```
 > [!NOTE]

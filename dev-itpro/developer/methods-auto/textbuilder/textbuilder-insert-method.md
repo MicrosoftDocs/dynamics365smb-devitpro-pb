@@ -3,7 +3,7 @@ title: "TextBuilder.Insert Method"
 description: "Inserts a string into this TextBuilder instance at the specified character position."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Inserts a string into this TextBuilder instance at the specified character posit
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  TextBuilder.Insert(Position: Integer, Text: Text)
 ```
 ## Parameters

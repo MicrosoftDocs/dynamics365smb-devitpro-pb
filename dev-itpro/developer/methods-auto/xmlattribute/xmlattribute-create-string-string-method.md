@@ -3,7 +3,7 @@ title: "XmlAttribute.Create Method"
 description: "Creates an XmlAttribute node."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Creates an XmlAttribute node.
 
 
 ## Syntax
-```
+```AL
 XmlAttribute :=   XmlAttribute.Create(Name: String, Value: String)
 ```
 ## Parameters

@@ -3,7 +3,7 @@ title: "TaskScheduler.CanCreateTask Method"
 description: "Checks whether it is possible to schedule tasks in this session."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Checks whether it is possible to schedule tasks in this session.
 
 
 ## Syntax
-```
+```AL
 Ok :=   TaskScheduler.CanCreateTask()
 ```
 

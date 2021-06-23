@@ -1,9 +1,9 @@
 ---
 title: "Session.BindSubscription Method"
-description: "Binds the event subscriber methods in the codeunit to the current codeunit instance for handling the events that they subscribe to. This essentially activates the subscriber functions for the codeunit instance."
+description: "Binds the event subscriber methods in the codeunit to the current codeunit instance for handling the events that they subscribe to."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Binds the event subscriber methods in the codeunit to the current codeunit insta
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  Session.BindSubscription(Codeunit: Codeunit)
 ```
 > [!NOTE]

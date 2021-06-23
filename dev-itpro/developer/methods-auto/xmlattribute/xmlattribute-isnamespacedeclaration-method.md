@@ -3,7 +3,7 @@ title: "XmlAttribute.IsNamespaceDeclaration Method"
 description: "Determines if this attribute is a namespace declaration."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Determines if this attribute is a namespace declaration.
 
 
 ## Syntax
-```
+```AL
 IsNamespaceDeclaration :=   XmlAttribute.IsNamespaceDeclaration()
 ```
 > [!NOTE]

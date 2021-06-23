@@ -3,7 +3,7 @@ title: "RecordRef.ChangeCompany Method"
 description: "Redirects references to table data from one company to another."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Redirects references to table data from one company to another.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  RecordRef.ChangeCompany([CompanyName: String])
 ```
 ## Parameters

@@ -3,7 +3,7 @@ title: "HttpClient.Get Method"
 description: "Sends a GET request to get the resource identified by the request URL."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Sends a GET request to get the resource identified by the request URL.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  HttpClient.Get(Path: String, var Response: HttpResponseMessage)
 ```
 ## Parameters

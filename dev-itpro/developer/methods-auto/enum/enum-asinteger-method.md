@@ -3,7 +3,7 @@ title: "Enum.AsInteger Method"
 description: "Get the enum value as an integer value."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Get the enum value as an integer value.
 
 
 ## Syntax
-```
+```AL
 The Enum Value as an Integer value :=   Enum.AsInteger()
 ```
 

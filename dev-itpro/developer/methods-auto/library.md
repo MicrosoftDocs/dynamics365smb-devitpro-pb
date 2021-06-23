@@ -20,7 +20,6 @@ The following data types are available as part of the AL Language. Each data typ
 
 |Type|Description|
 |-----------|-----------|
-|[Any](any/any-data-type.md)|This data type can be substituted by any other data type.|
 |[BigInteger](biginteger/biginteger-data-type.md)|Stores very large whole numbers that range from -9,223,372,036,854,775,807 to 9,223,372,036,854,775,807.|
 |[BigText](bigtext/bigtext-data-type.md)|Handles large text documents.|
 |[Blob](blob/blob-data-type.md)|Is a complex data type. Variables of this data type differ from normal numeric and string variables in that BLOBs have a variable length. The maximum size of a BLOB(binary large object) is 2 GB.|
@@ -54,6 +53,7 @@ The following data types are available as part of the AL Language. Each data typ
 |[InStream](instream/instream-data-type.md)|Is a generic stream object that you can use to read from or write to files and BLOBs. You can define the internal structure of a stream as a flat stream of bytes. You can assign one stream to another. Reading from and writing to a stream occurs sequentially.<br/>  |
 |[Integer](integer/integer-data-type.md)|Stores whole numbers with values that range from -2,147,483,647 to 2,147,483,647.|
 |[IsolatedStorage](isolatedstorage/isolatedstorage-data-type.md)|Provides data isolation for extensions.|
+|[Any](any/any-data-type.md)|This data type can be substituted by any other data type.|
 |[JsonArray](jsonarray/jsonarray-data-type.md)|Is a container for any well-formed JSON array. A default JsonArray contains an empty JSON array.|
 |[JsonObject](jsonobject/jsonobject-data-type.md)|Is a container for any well-formed JSON object. A default JsonObject contains an empty JSON object.|
 |[JsonToken](jsontoken/jsontoken-data-type.md)|Is a container for any well-formed JSON data. A default JsonToken object contains the JSON value of NULL.|
@@ -69,20 +69,20 @@ The following data types are available as part of the AL Language. Each data typ
 |[None](none/none-data-type.md)|Is used implicitly when a method does not return a value.|
 |[Notification](notification/notification-data-type.md)|Provides a programmatic way to send non-intrusive information to the user interface (UI) in the Business Central Web client.|
 |[NumberSequence](numbersequence/numbersequence-data-type.md)|Is a complex data type for creating and managing number sequences in the database.|
+|[SessionInformation](sessioninformation/sessioninformation-data-type.md)|Is a complex data type for exposing Session information into AL.|
 |[Option](option/option-data-type.md)|Denotes an option value. In the code snippet below, you can see how the Option data type is declared.|
 |[OutStream](outstream/outstream-data-type.md)|Is a generic stream object that you can use to write to files and BLOBs.|
 |[Page](page/page-data-type.md)|Contains a number of simpler elements called controls. Controls are used to display information to the user or receive information from the user.|
 |[ProductName](productname/productname-data-type.md)|An application can have a full name, marketing name, and short name. The PRODUCTNAME functions enable you to retrieve these name variations.|
 |[Query](query/query-data-type.md)|Enables you to retrieve data from multiple tables and combine the data in single dataset.|
-|[Record](record/record-data-type.md)|Is a complex data type.|
 |[RecordId](recordid/recordid-data-type.md)|Contains the table number and the primary key of a table.|
 |[RecordRef](recordref/recordref-data-type.md)|References a record in a table.|
 |[Report](report/report-data-type.md)|Is used to display, print, or process information from a database.|
 |[RequestPage](requestpage/requestpage-data-type.md)|Is a page that is run before the report starts to execute. Request pages enable end-users to specify options and filters for a report.|
 |[Session](session/session-data-type.md)|Represents a Microsoft Dynamics Business Central session.|
-|[SessionInformation](sessioninformation/sessioninformation-data-type.md)|Is a complex data type for exposing Session information into AL.|
 |[SessionSettings](sessionsettings/sessionsettings-data-type.md)|Is a complex data type for passing user personalization settings for a client session as an object. The object contains properties that correspond to the fields in the system table **2000000073 User Personalization**, including: App ID, Company, Language ID, Locale ID, Profile ID, Scope, and Time Zone. You can use the AL methods of the SessionSettings data type to get, set, and send the user personalization settings for the current client session.|
 |[System](system/system-data-type.md)|Is a complex data type.|
+|[Record](record/record-data-type.md)|Is a complex data type.|
 |[TaskScheduler](taskscheduler/taskscheduler-data-type.md)|Is a complex data type for creating and managing tasks in the task scheduler, which runs codeunits at scheduled times.|
 |[TestAction](testaction/testaction-data-type.md)|Represents a test action on a page.|
 |[TestField](testfield/testfield-data-type.md)|Represents a testable field on a page.|
@@ -92,8 +92,8 @@ The following data types are available as part of the AL Language. Each data typ
 |[TestPart](testpart/testpart-data-type.md)|Represents a variable type that can be used to test Page Application Objects of type Part.|
 |[TestRequestPage](testrequestpage/testrequestpage-data-type.md)|Stores test request pages. A test request page part is a logical representation of a request page on a report. A test request page does not display a user interface (UI). The subtype of a test request page is the report whose request page you want to test.|
 |[Text](text/text-data-type.md)|Denotes a text string.|
-|[TextBuilder](textbuilder/textbuilder-data-type.md)|Represents a lighweight wrapper for the .Net implementation of StringBuilder.|
 |[TextConst](textconst/textconst-data-type.md)|Denotes a multi-language string constant.|
+|[TextBuilder](textbuilder/textbuilder-data-type.md)|Represents a lighweight wrapper for the .Net implementation of StringBuilder.|
 |[Time](time/time-data-type.md)|Denotes a time ranging from 00:00:00.000 to 23:59:59.999. An undefined or blank time is specified by 0T.|
 |[Variant](variant/variant-data-type.md)|Represents an AL variable object. The AL variant data type can contain many AL data types.|
 |[Version](version/version-data-type.md)|Represents a version matching the format: Major.Minor.Build.Revision .|
@@ -118,7 +118,6 @@ The following data types are available as part of the AL Language. Each data typ
 |[Action](action/action-option.md)|Represents the action that the user took on the page.|
 |[AuditCategory](auditcategory/auditcategory-option.md)|Represents an audit category for IfX audit telemetry.|
 |[ClientType](clienttype/clienttype-option.md)|Represents the type of the client executing the operation.|
-|[CommitBehavior](commitbehavior/commitbehavior-option.md)|Specifies whether commit is allowed within the scope of the method.|
 |[DataClassification](dataclassification/dataclassification-option.md)|Sets the classification of the data in the table or field.|
 |[DataScope](datascope/datascope-option.md)|Identifies the scope of stored data in the isolated storage.|
 |[DefaultLayout](defaultlayout/defaultlayout-option.md)|The default layout to be used by a report.|
@@ -135,6 +134,7 @@ The following data types are available as part of the AL Language. Each data typ
 |[SecurityOperationResult](securityoperationresult/securityoperationresult-option.md)|Represents security audit operation result.|
 |[TableConnectionType](tableconnectiontype/tableconnectiontype-option.md)|Use variables of this data type to specify the type of connection to an external database.|
 |[TelemetryScope](telemetryscope/telemetryscope-option.md)|Represents the emission scope of the telemetry signal.|
+|[CommitBehavior](commitbehavior/commitbehavior-option.md)|Specifies whether commit is allowed within the scope of the method.|
 |[TestPermissions](testpermissions/testpermissions-option.md)|Specifies a value that can be used to determine which permission sets are used on tests that are run by test codunits or test functions.|
 |[TextEncoding](textencoding/textencoding-option.md)|Represents a file encoding.|
 |[TransactionModel](transactionmodel/transactionmodel-option.md)|Represents a test transaction model.|

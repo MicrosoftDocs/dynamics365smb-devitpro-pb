@@ -3,7 +3,7 @@ title: "Xmlport.SetTableView Method"
 description: "Applies the table view on the current record as the table view for the page, report, or XmlPort."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Applies the table view on the current record as the table view for the page, rep
 
 
 ## Syntax
-```
+```AL
  Xmlport.SetTableView(var Record: Record)
 ```
 ## Parameters

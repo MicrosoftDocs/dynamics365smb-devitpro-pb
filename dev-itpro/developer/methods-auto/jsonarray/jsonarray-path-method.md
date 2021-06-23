@@ -3,7 +3,7 @@ title: "JsonArray.Path Method"
 description: "Retrieves the JSON path of the array relative to the root of its containing tree."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Retrieves the JSON path of the array relative to the root of its containing tree
 
 
 ## Syntax
-```
+```AL
 Path :=   JsonArray.Path()
 ```
 > [!NOTE]

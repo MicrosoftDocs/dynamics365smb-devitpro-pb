@@ -1,9 +1,9 @@
 ---
 title: "MediaSet.ExportFile Method"
-description: "Exports the media objects in the current media set of a record to individual files on your computer or network. In the record, the media set is referenced in a MediaSet data type field."
+description: "Exports the media objects in the current media set of a record to individual files on your computer or network."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,7 +23,7 @@ Exports the media objects in the current media set of a record to individual fil
 > This method is supported only in Business Central on-premises.
 
 ## Syntax
-```
+```AL
 [Count := ]  MediaSet.ExportFile(FilenamePrefix: String)
 ```
 ## Parameters
