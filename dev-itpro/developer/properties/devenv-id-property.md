@@ -1,6 +1,6 @@
 ---
 title: "Id Property"
-description: "The ID of the service plan, role, etc. as determined by the type."
+description: "The ID of the service plan, role, etc."
 ms.author: solsen
 ms.custom: na
 ms.date: 06/23/2021

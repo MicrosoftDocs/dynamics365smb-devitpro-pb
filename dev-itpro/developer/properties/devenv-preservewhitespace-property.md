@@ -1,10 +1,6 @@
 ---
 title: "PreserveWhiteSpace Property"
-description: "Determines whether white space should be preserved in documents that are imported through an XmlPort.
-
-By default, the product supports the XML standard by normalizing white space in attribute names and values that are imported through an XmlPort. It converts tabs, carriage returns, and spaces to single spaces. It also eliminates leading and trailing white space.
-
-When this property is set to Yes, no normalizations are performed."
+description: "Determines whether white space should be preserved in documents that are imported through an XmlPort."
 ms.author: solsen
 ms.custom: na
 ms.date: 06/23/2021

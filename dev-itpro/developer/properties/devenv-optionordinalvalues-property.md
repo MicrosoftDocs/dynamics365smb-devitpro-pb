@@ -1,6 +1,6 @@
 ---
 title: "OptionOrdinalValues Property"
-description: "Specifies the list of option values. Can be set if the property ExternalType is set to Picklist."
+description: "Specifies the list of option values."
 ms.author: solsen
 ms.custom: na
 ms.date: 06/23/2021

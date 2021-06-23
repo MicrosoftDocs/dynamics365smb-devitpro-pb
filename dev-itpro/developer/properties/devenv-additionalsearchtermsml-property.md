@@ -1,6 +1,6 @@
 ---
 title: "AdditionalSearchTermsML Property"
-description: "Specifies search terms (words and phrases) for the page in different languages. In addition to the page caption, the terms are used by the search feature in the Web client and mobile apps. Separate terms with a comma."
+description: "Specifies search terms (words and phrases) for the page in different languages."
 ms.author: solsen
 ms.custom: na
 ms.date: 06/23/2021

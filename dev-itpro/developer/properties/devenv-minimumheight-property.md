@@ -1,6 +1,6 @@
 ---
 title: "MinimumHeight Property"
-description: "Specifies the minimum height that the control add-in can be shrunk to. This setting only applies if the VerticalShrink setting is specified."
+description: "Specifies the minimum height that the control add-in can be shrunk to."
 ms.author: solsen
 ms.custom: na
 ms.date: 06/23/2021

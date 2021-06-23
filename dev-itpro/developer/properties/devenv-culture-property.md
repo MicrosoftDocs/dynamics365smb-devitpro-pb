@@ -1,6 +1,6 @@
 ---
 title: "Culture Property"
-description: "Specifies the culture of the .NET assembly."
+description: "Specifies the culture of the ."
 ms.author: solsen
 ms.custom: na
 ms.date: 06/23/2021

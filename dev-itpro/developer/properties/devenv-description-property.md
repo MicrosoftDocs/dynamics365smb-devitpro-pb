@@ -1,6 +1,6 @@
 ---
 title: "Description Property"
-description: "Sets the description. This description is for internal use and does not appear to end-users."
+description: "Sets the description."
 ms.author: solsen
 ms.custom: na
 ms.date: 06/23/2021

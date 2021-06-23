@@ -1,6 +1,6 @@
 ---
 title: "Permissions Property"
-description: "Sets whether an object has additional permission required to perform some operations on one or more tables. The operations can be to read, insert, modify, and delete data."
+description: "Sets whether an object has additional permission required to perform some operations on one or more tables."
 ms.author: solsen
 ms.custom: na
 ms.date: 06/23/2021

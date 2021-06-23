@@ -1,6 +1,6 @@
 ---
 title: "HorizontalStretch Property"
-description: "HorizontalStretch specifies that the control add-in can be made larger horizontally. This setting is optional."
+description: "HorizontalStretch specifies that the control add-in can be made larger horizontally."
 ms.author: solsen
 ms.custom: na
 ms.date: 06/23/2021

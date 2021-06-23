@@ -1,6 +1,6 @@
 ---
 title: "StyleSheets Property"
-description: "Specifies the list of stylesheets to include in the control add-in. The stylesheets could be local files in the package or references to external files using the http or the https protocol."
+description: "Specifies the list of stylesheets to include in the control add-in."
 ms.author: solsen
 ms.custom: na
 ms.date: 06/23/2021

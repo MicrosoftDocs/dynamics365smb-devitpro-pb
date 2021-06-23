@@ -1,17 +1,6 @@
 ---
 title: "RunPageLink Property"
-description: "Sets a link to a page that will be launched for this action.
-The following syntax is valid for the RunPageLink property:
-
-```
-RunPageLink = <TableFilters>
-<TableFilters> ::= <TableFilter> {,<TableFilter>}
-<TableFilter> ::= <RunObjectFieldName> = CONST(<FieldConst>) | FILTER(<Filter>) | FIELD(<SourceFieldName>) |
-FIELD(UPPERLIMIT(<SourceFieldName>)) | FIELD(FILTER(<SourceFieldName>)) | FIELD(UPPERLIMIT(FILTER(<SourceFieldName>)))
-```
-
-The filters defined by this property are visible in the UI and can be modified by end-users. If it was intended to hide them from end-users, consider using the RunPageView property instead.
-"
+description: "Sets a link to a page that will be launched for this action."
 ms.author: solsen
 ms.custom: na
 ms.date: 06/23/2021

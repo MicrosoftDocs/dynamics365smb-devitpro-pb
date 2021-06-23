@@ -1,6 +1,6 @@
 ---
 title: "AssignmentCompatibility Property"
-description: "Sets whether an Enum can be assigned to from another Enum type. This is intended for backwards compatibility when splitting existing Options into multiple Enums."
+description: "Sets whether an Enum can be assigned to from another Enum type."
 ms.author: solsen
 ms.custom: na
 ms.date: 06/23/2021

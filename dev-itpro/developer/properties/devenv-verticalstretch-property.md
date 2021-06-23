@@ -1,6 +1,6 @@
 ---
 title: "VerticalStretch Property"
-description: "VerticalStretch specifies that the control add-in can be made larger vertically. This setting is optional."
+description: "VerticalStretch specifies that the control add-in can be made larger vertically."
 ms.author: solsen
 ms.custom: na
 ms.date: 06/23/2021

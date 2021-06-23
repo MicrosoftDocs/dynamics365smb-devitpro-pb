@@ -1,16 +1,6 @@
 ---
 title: "SubPageView Property"
-description: "Sets the table view for a subpage.
-The following syntax is valid for the SubPageView property:
-
-```
-SubPageView =
-[<SORTING>[<KeyList>] [ORDER(Ascending|Descending)] [WHERE(<TableFilters>)]
-<KeyList> ::= PagePartTableKey1, PagePartTableKey2, ...
-<TableFilters> ::= <TableFilter> {,<TableFilter>}
-<TableFilter> ::= <PagePartTableFieldName>= CONST(<FieldConst>) | FILTER(<FilterExpression>)
-```
-"
+description: "Sets the table view for a subpage."
 ms.author: solsen
 ms.custom: na
 ms.date: 06/23/2021

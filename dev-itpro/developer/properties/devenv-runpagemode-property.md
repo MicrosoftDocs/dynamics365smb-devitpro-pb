@@ -1,6 +1,6 @@
 ---
 title: "RunPageMode Property"
-description: "Sets the mode in which the page is run. Choose between View, Edit, or Create."
+description: "Sets the mode in which the page is run."
 ms.author: solsen
 ms.custom: na
 ms.date: 06/23/2021

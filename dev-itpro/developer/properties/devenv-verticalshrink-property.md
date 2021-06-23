@@ -1,6 +1,6 @@
 ---
 title: "VerticalShrink Property"
-description: "VerticalShrink specifies that the control add-in can be made smaller vertically. This setting is optional."
+description: "VerticalShrink specifies that the control add-in can be made smaller vertically."
 ms.author: solsen
 ms.custom: na
 ms.date: 06/23/2021

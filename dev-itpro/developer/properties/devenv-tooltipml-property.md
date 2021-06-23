@@ -1,6 +1,6 @@
 ---
 title: "ToolTipML Property"
-description: "Sets the text used for the tooltip of an action, a field, a FactBox, or an activity button. In the client, tooltips appear when you point to caption of the control."
+description: "Sets the text used for the tooltip of an action, a field, a FactBox, or an activity button."
 ms.author: solsen
 ms.custom: na
 ms.date: 06/23/2021

@@ -1,6 +1,6 @@
 ---
 title: "IsControlAddIn Property"
-description: "Sets a value that indicates whether the .NET type represents a control add-in."
+description: "Sets a value that indicates whether the ."
 ms.author: solsen
 ms.custom: na
 ms.date: 06/23/2021

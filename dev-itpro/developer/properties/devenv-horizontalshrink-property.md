@@ -1,6 +1,6 @@
 ---
 title: "HorizontalShrink Property"
-description: "HorizontalShrink specifies that the control add-in can be made smaller horizontally. This setting is optional."
+description: "HorizontalShrink specifies that the control add-in can be made smaller horizontally."
 ms.author: solsen
 ms.custom: na
 ms.date: 06/23/2021

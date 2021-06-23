@@ -1,8 +1,6 @@
 ---
 title: "Clustered Property"
-description: "Sets a value that indicates whether the key also defines the clustered index in the database.  
-
-By default the primary key is configured as the clustered key."
+description: "Sets a value that indicates whether the key also defines the clustered index in the database."
 ms.author: solsen
 ms.custom: na
 ms.date: 06/23/2021

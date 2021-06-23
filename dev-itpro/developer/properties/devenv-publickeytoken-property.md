@@ -1,6 +1,6 @@
 ---
 title: "PublicKeyToken Property"
-description: "Specifies the public key token of the .NET assembly."
+description: "Specifies the public key token of the ."
 ms.author: solsen
 ms.custom: na
 ms.date: 06/23/2021

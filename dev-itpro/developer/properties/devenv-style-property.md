@@ -1,6 +1,6 @@
 ---
 title: "Style Property"
-description: "Sets a value that determines how text in a field on a page is formatted. For fields that are included in a CueGroup, this property sets the value of the color indicator on the cue."
+description: "Sets a value that determines how text in a field on a page is formatted."
 ms.author: solsen
 ms.custom: na
 ms.date: 06/23/2021

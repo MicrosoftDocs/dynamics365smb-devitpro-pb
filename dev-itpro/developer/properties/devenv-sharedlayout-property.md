@@ -1,8 +1,6 @@
 ---
 title: "SharedLayout Property"
-description: "Specifies whether the view has the same layout as the default view 'All'. 
-When set to true, user personalization on the page is also applied when the view is selected. 
-When set to false, the view defines its own layout and is not affected by user personalization."
+description: "Specifies whether the view has the same layout as the default view 'All'."
 ms.author: solsen
 ms.custom: na
 ms.date: 06/23/2021

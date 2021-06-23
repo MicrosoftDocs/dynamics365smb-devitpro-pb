@@ -1,6 +1,6 @@
 ---
 title: "LinkTable Property"
-description: "Sets the table that this XML item should be linked to. This property is only available for XML items that have a table as their data source."
+description: "Sets the table that this XML item should be linked to."
 ms.author: solsen
 ms.custom: na
 ms.date: 06/23/2021

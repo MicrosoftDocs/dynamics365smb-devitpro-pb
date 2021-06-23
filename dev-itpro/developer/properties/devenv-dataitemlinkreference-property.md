@@ -1,6 +1,6 @@
 ---
 title: "DataItemLinkReference Property"
-description: "Sets the parent data item to which a child (indented) data item is linked. After you specify the DataItemLinkReference value, use the DataItemLink Property (Reports) to specify a field from each data item on which to base the link."
+description: "Sets the parent data item to which a child (indented) data item is linked."
 ms.author: solsen
 ms.custom: na
 ms.date: 06/23/2021

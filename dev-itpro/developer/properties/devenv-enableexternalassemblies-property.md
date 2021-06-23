@@ -1,6 +1,6 @@
 ---
 title: "EnableExternalAssemblies Property"
-description: "Sets whether external Microsoft .NET assemblies can be used on a report."
+description: "Sets whether external Microsoft ."
 ms.author: solsen
 ms.custom: na
 ms.date: 06/23/2021

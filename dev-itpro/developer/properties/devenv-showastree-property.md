@@ -1,6 +1,6 @@
 ---
 title: "ShowAsTree Property"
-description: "Sets the indentation of rows on a List Page to Tree View. If you enable this property, you can expand or collapse indented rows on a List Page."
+description: "Sets the indentation of rows on a List Page to Tree View."
 ms.author: solsen
 ms.custom: na
 ms.date: 06/23/2021

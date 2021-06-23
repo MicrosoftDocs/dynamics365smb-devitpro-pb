@@ -1,6 +1,6 @@
 ---
 title: "XmlVersionNo Property"
-description: "Set which version of XML the XML document conforms to. Two options are available: 1.0 (the default) and 1.1."
+description: "Set which version of XML the XML document conforms to."
 ms.author: solsen
 ms.custom: na
 ms.date: 06/23/2021

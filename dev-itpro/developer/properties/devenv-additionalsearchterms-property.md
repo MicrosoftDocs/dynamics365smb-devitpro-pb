@@ -1,6 +1,6 @@
 ---
 title: "AdditionalSearchTerms Property"
-description: "Specifies search terms (words and phrases) for the page. In addition to the page caption, the terms are used by the search feature in the Web client and mobile apps. Separate terms with a comma."
+description: "Specifies search terms (words and phrases) for the page."
 ms.author: solsen
 ms.custom: na
 ms.date: 06/23/2021

@@ -1,6 +1,6 @@
 ---
 title: "ApplicationArea Property"
-description: "Sets the application areas that apply to the control. Standard values are All, Basic, Suite, and Advanced."
+description: "Sets the application areas that apply to the control."
 ms.author: solsen
 ms.custom: na
 ms.date: 06/23/2021

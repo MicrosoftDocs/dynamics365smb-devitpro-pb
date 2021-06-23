@@ -1,6 +1,6 @@
 ---
 title: "MinimumWidth Property"
-description: "Specifies the minimum width that the control add-in can be shrunk to. This setting only applies if the HorizontalShrink setting is specified."
+description: "Specifies the minimum width that the control add-in can be shrunk to."
 ms.author: solsen
 ms.custom: na
 ms.date: 06/23/2021

@@ -1,6 +1,6 @@
 ---
 title: "ToolTip Property"
-description: "Sets whether tooltips are provided for the given control, such as a field or action. The tooltip value is taken from the ToolTipML Property if this property is set."
+description: "Sets whether tooltips are provided for the given control, such as a field or action."
 ms.author: solsen
 ms.custom: na
 ms.date: 06/23/2021

@@ -1,6 +1,6 @@
 ---
 title: "LinkFields Property"
-description: "Specifies the fields that are linked between two tables using the LinkTable Property. This property is only available for XML items that have a table as their data source."
+description: "Specifies the fields that are linked between two tables using the LinkTable Property."
 ms.author: solsen
 ms.custom: na
 ms.date: 06/23/2021

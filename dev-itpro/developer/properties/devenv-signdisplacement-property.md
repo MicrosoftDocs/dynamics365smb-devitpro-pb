@@ -1,6 +1,6 @@
 ---
 title: "SignDisplacement Property"
-description: "Sets a value to shift negative values to the right for display purposes only. You can shift negative values in increments of 1/100 of a millimeter."
+description: "Sets a value to shift negative values to the right for display purposes only."
 ms.author: solsen
 ms.custom: na
 ms.date: 06/23/2021

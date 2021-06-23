@@ -1,6 +1,6 @@
 ---
 title: "InstructionalTextML Property"
-description: "Sets the multilanguage value of the InstructionalText of the object. Use this property as a label."
+description: "Sets the multilanguage value of the InstructionalText of the object."
 ms.author: solsen
 ms.custom: na
 ms.date: 06/23/2021

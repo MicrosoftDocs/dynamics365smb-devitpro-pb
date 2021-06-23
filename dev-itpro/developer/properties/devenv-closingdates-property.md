@@ -1,6 +1,6 @@
 ---
 title: "ClosingDates Property"
-description: "Sets a value that determines whether users can enter a closing date in this field. The default value is False."
+description: "Sets a value that determines whether users can enter a closing date in this field."
 ms.author: solsen
 ms.custom: na
 ms.date: 06/23/2021

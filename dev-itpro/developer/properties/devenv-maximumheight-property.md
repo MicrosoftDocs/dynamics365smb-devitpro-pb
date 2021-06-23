@@ -1,6 +1,6 @@
 ---
 title: "MaximumHeight Property"
-description: "Specifies the maximum height that the control add-in can be stretched to. This setting only applies if the VerticalStretch setting is specified."
+description: "Specifies the maximum height that the control add-in can be stretched to."
 ms.author: solsen
 ms.custom: na
 ms.date: 06/23/2021

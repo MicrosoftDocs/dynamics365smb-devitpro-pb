@@ -1,15 +1,6 @@
 ---
 title: "SubPageLink Property"
-description: "Sets a link to a Factbox from a page.
-The following syntax is valid for the SubPageLink property:
-
-```
-SubPageLink = <TableFilters>
-<TableFilters> ::= <TableFilter> {,<TableFilter>}
-<TableFilter> ::= <PagePartTableFieldName> = CONST(<FieldConst>) | FILTER(<Filter>) | FIELD(<SourceFieldName>) |
-FIELD(UPPERLIMIT(<SourceFieldName>)) | FIELD(FILTER(<SourceFieldName>)) | FIELD(UPPERLIMIT(FILTER(<SourceFieldName>)))
-```
-"
+description: "Sets a link to a Factbox from a page."
 ms.author: solsen
 ms.custom: na
 ms.date: 06/23/2021

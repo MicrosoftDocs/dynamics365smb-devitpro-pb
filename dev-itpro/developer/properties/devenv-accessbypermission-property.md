@@ -1,16 +1,6 @@
 ---
 title: "AccessByPermission Property"
-description: "Sets a value for a table field or UI element that determines the permission mask for an object that a user must have to see and access the related page fields or UI element in the client. The UI element will be removed at runtime if the user does not have permissions to a certain object as specified in the AccessByPermission property.
-
-All types of UI elements will be removed if they relate to an object to which the user does not have the required permissions:
-
--   Fields on pages, including FactBoxes
-
--   Actions on pages, including ToolBars and navigation panes
-
--   Page parts, such as Lines FastTabs
-
-   "
+description: "Sets a value for a table field or UI element that determines the permission mask for an object that a user must have to see and access the related page fields or UI element in the client."
 ms.author: solsen
 ms.custom: na
 ms.date: 06/23/2021

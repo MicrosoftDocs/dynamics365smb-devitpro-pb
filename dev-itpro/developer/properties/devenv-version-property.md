@@ -1,6 +1,6 @@
 ---
 title: "Version Property"
-description: "Specifies the version of the .NET assembly."
+description: "Specifies the version of the ."
 ms.author: solsen
 ms.custom: na
 ms.date: 06/23/2021

@@ -1,8 +1,6 @@
 ---
 title: "ExternalType Property"
-description: "Specifies the type of the original table field in the external database.
-
-Specify this property if the original type is different from the type that you specify in the Type property. This means that you can use a different type for the table."
+description: "Specifies the type of the original table field in the external database."
 ms.author: solsen
 ms.custom: na
 ms.date: 06/23/2021

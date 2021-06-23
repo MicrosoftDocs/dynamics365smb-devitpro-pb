@@ -1,13 +1,6 @@
 ---
 title: "Filters Property"
-description: "Sets a set of filters for the page that will be applied for this page view.
-The following syntax is valid for the Filters property:
-
-```
-Filters = [WHERE(<TableFilters>)]
-<TableFilters> ::= [<TableFilter> {,<TableFilter>}]
-<TableFilter> ::= <RunObjectFieldName>=CONST(<FieldConst>) | FILTER(<FilterExpression>)
-```"
+description: "Sets a set of filters for the page that will be applied for this page view."
 ms.author: solsen
 ms.custom: na
 ms.date: 06/23/2021

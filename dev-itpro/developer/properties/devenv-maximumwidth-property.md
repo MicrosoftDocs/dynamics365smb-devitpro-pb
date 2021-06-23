@@ -1,6 +1,6 @@
 ---
 title: "MaximumWidth Property"
-description: "Specifies the maximum width that the control add-in can be stretched to. This setting only applies if the HorizontalStretch setting is specified."
+description: "Specifies the maximum width that the control add-in can be stretched to."
 ms.author: solsen
 ms.custom: na
 ms.date: 06/23/2021
