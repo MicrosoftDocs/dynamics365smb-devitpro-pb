@@ -1,9 +1,9 @@
 ---
 title: "Report.SaveAsHtml Method"
-description: "Saves a report as an HTML file. The file is saved on the computer where the server instance is running, and then downloaded to the client when ready."
+description: "Saves a report as an HTML file. The file is saved on the computer where the server instance is running, and then downloaded to the client when ready. This method is only supported when a report uses a Word report layout when it is run."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # Report.SaveAsHtml Method
 > **Version**: _Available or changed with runtime version 1.0._
 
-Saves a report as an HTML file. The file is saved on the computer where the server instance is running, and then downloaded to the client when ready. \> This method is only supported when a report uses a Word report layout when it is run.
+Saves a report as an HTML file. The file is saved on the computer where the server instance is running, and then downloaded to the client when ready. This method is only supported when a report uses a Word report layout when it is run.
 
 > [!NOTE]
 > This method is supported only in Business Central on-premises.

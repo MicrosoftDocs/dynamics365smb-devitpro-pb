@@ -1,9 +1,9 @@
 ---
 title: "Record.SecurityFiltering Method"
-description: ""
+description: "Gets or sets how security filters are applied to the record."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # Record.SecurityFiltering Method
 > **Version**: _Available or changed with runtime version 1.0._
 
-
+Gets or sets how security filters are applied to the record.
 
 
 ## Syntax
@@ -33,13 +33,13 @@ An instance of the [Record](record-data-type.md) data type.
 
 *[Optional] SecurityFiltering*  
 &emsp;Type: [SecurityFilter](../securityfilter/securityfilter-option.md)  
-  
+The security filter currently applied to the record.  
 
 
 ## Return Value
 *[Optional] SecurityFiltering*  
 &emsp;Type: [SecurityFilter](../securityfilter/securityfilter-option.md)  
-
+The new security filter for the record.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

@@ -3,7 +3,7 @@ title: "Report Data Type"
 description: "Is used to display, print, or process information from a database."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/04/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -68,7 +68,7 @@ The following methods are available on instances of the Report data type.
 |[RunRequestPage([String])](reportinstance-runrequestpage-method.md)|Runs the request page for a report without running the report. Returns an XML string that contains the request page parameters that are entered on the request page.|
 |[SaveAs(String, ReportFormat, var OutStream [, RecordRef])](reportinstance-saveas-method.md)|Runs a specific report without a request page and saves the report as a PDF, Excel, Word, or XML file. Instead of using the request page to obtain parameters at runtime, the method gets the parameter values as an input parameter string, typically from the return value of a RUNREQUESTPAGE method call.|
 |[SaveAsExcel(String)](reportinstance-saveasexcel-method.md)|Saves a report on the computer that is running the server as a Microsoft Excel (.xls) workbook.|
-|[SaveAsHtml(String)](reportinstance-saveashtml-method.md)|Saves a report as an HTML file. The file is saved on the computer where the server instance is running, and then downloaded to the client when ready. \> This method is only supported when a report uses a Word report layout when it is run.|
+|[SaveAsHtml(String)](reportinstance-saveashtml-method.md)|Saves a report as an HTML file. The file is saved on the computer where the server instance is running, and then downloaded to the client when ready. This method is only supported when a report uses a Word report layout when it is run.|
 |[SaveAsPdf(String)](reportinstance-saveaspdf-method.md)|Saves a report as a .pdf file.|
 |[SaveAsWord(String)](reportinstance-saveasword-method.md)|Saves a report on the computer that is running the server as a Microsoft Word (.doc) document.|
 |[SaveAsXml(String)](reportinstance-saveasxml-method.md)|Saves the resulting data set of a query as an .xml file.The following code shows the syntax of the SAVEASXML method. The first line of code is the syntax for an instance method call. The second line of code is the syntax for a static method call.|
