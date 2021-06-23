@@ -1,8 +1,9 @@
 ---
 title: "AppSourceCop Rule AS0091"
+description: "One or more dependencies of the previous version of the extension, used as a baseline for detecting breaking changes, could not be found in the package cache folder."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/05/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

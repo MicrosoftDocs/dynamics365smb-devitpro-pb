@@ -1,8 +1,9 @@
 ---
 title: "AppSourceCop Rule AS0084"
+description: "The ID range assigned to the extension must be within the range allowed for AppSource applications."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/05/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

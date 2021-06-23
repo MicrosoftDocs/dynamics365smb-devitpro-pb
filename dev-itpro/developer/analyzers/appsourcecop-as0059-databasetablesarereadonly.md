@@ -1,8 +1,9 @@
 ---
 title: "AppSourceCop Rule AS0059"
+description: "Application database tables and reserved application tables should be used only as temporary tables in a multi-tenant environment. Writing to these tables can lead to runtime errors or unexpected behavior."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/05/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

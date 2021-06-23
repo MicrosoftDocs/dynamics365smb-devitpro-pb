@@ -1,8 +1,9 @@
 ---
 title: "AppSourceCop Rule AS0083"
+description: "Deleting an enum value is not allowed, unless the enum is marked as obsolete. This restriction prevents dependent extensions from breaking, if they use the enum value."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/05/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

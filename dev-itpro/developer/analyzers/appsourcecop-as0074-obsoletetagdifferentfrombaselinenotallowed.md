@@ -1,8 +1,9 @@
 ---
 title: "AppSourceCop Rule AS0074"
+description: "The Obsolete Tag must be the same across branches. This rule is only relevant only if the Major.Minor format is set."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/05/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

@@ -1,8 +1,9 @@
 ---
 title: "AppSourceCop Rule AS0024"
+description: "Parameters cannot be removed or added in external procedures, because it will break dependent extensions."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/05/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

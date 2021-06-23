@@ -1,8 +1,9 @@
 ---
 title: "AppSourceCop Rule AS0005"
+description: "Fields must not change name; their names are case-sensitive. This might break the upgrade of existing installations and dependent extensions."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/05/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

@@ -1,8 +1,9 @@
 ---
 title: "AppSourceCop Rule AS0087"
+description: "Translations of enum value captions must not contain commas. Commas in captions will result in values with wrong captions both in the UI and potential unexpected results in connection with formatting and evaluating enums."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/05/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

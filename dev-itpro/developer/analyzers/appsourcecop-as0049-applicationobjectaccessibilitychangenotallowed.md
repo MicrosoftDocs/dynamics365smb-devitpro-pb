@@ -1,8 +1,9 @@
 ---
 title: "AppSourceCop Rule AS0049"
+description: "The access modifier of an application object cannot be changed to a value that provides less access."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/05/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

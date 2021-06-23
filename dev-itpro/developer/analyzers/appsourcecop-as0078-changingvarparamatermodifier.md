@@ -1,8 +1,9 @@
 ---
 title: "AppSourceCop Rule AS0078"
+description: "Adding or removing a var modifier in public procedures is not allowed as it might break the runtime behavior of extensions calling it."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/05/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

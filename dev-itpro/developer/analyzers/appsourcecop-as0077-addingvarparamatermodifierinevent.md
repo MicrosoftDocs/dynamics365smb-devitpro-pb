@@ -1,8 +1,9 @@
 ---
 title: "AppSourceCop Rule AS0077"
+description: "Adding a var modifier in events is not allowed as it might break the runtime behavior of extensions subscribing to it."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/05/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

@@ -1,8 +1,9 @@
 ---
 title: "AppSourceCop Rule AS0080"
+description: "Decreasing the length of a field is not allowed. This might break the upgrade of existing installations and dependent extensions. If the field part of the primary key, the field length cannot change."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/05/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
