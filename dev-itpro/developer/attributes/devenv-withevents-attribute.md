@@ -1,9 +1,9 @@
 ---
 title: "WithEvents Attribute"
-description: "Sets whether a DotNet variable subscribes to the events published by a .NET Framework type."
+description: "Sets whether a DotNet variable subscribes to the events published by a ."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/09/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,7 +30,7 @@ Sets whether a DotNet variable subscribes to the events published by a .NET Fram
 
 ## Syntax
 
-```
+```AL
 [WithEvents]
 ```
 
