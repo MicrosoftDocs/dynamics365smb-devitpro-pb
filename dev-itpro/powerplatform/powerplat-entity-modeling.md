@@ -116,13 +116,13 @@ Consider an example where you want to show sales orders from [!INCLUDE[prod_shor
 
 To follow the example from above, where a relation between the native table **Account** and the virtual table **dyn365bc_salesorder_v2_0** is needed:
 
-1. Create a key on the **Account** table. Choose **Account Number**. Name is 'prefix_**AccountKey**'.
+1. Create a key on the **Account** table. Choose **Account Number**. Name is 'prefix_**accountkey**'.
 2. Make sure that **dyn365bc_salesorder_v2_0** is generated.
 3. Add a new record to the **Business Central Table Relation** table.
     - On the **General** tab set the following:
         - **Relation Name** to **dyn365bc_account2salesorder**
         - **Native Table** to **account**
-        - **Native Table Key** to **prefix_AccountKey**
+        - **Native Table Key** to **prefix_accountkey**
         - **Virtual Table** to **dyn365bc_salesorder_v2_0**
     - On the **Mappings** tab set first row as follows:
         - **Native columns** to **accountnumber**
