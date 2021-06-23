@@ -6309,6 +6309,26 @@
     "source_path": "dev-itpro/developer/methods/devenv-tryfunction-attribute.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/attributes/devenv-tryfunction-attribute",
     "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/properties/devenv-controltype-property.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/properties/devenv-properties",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/properties/devenv-customapiname-page-property.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/properties/devenv-properties",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/properties/devenv-customapiname-property.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/properties/devenv-properties",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/properties/devenv-customapiname-query-property.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/properties/devenv-properties",
+    "redirect_document_id": false
    }
   ]
 }
