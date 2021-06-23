@@ -23,7 +23,7 @@ Table field access cannot be reduced. You can only change the current access to 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
-This rule verifies that the access property of a field in Table or TableExtensionhas not been reduced between revisions. This rule validate only if the table access property is public. More information on different access levels for both fields and tables you can find [here](../devenv-using-access-modifier.md).
+This rule verifies that the access property of a field in Table or TableExtensionhas not been reduced between revisions. This rule validate only if the table access property is set to Public in the baseline extension. More information on different access levels for both fields and tables you can find [here](../devenv-using-access-modifier.md).
 
 ## Code examples triggering the rule
 
