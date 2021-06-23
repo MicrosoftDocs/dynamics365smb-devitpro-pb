@@ -81,10 +81,10 @@ These areas of the application are known to cause a performance impact and requi
 - [Change log](/dynamics365/business-central/across-log-changes)  
 
 ## If processing of Sales Order lines is slow
-If you experience that processing of Sales Order lines containing bill-of-materials (BOMs) is slow, then please check if _Stockout Warning_ on the page  _Sales & Receivables Setup_, is set to True. If that is the case, please set it to False.
+If you experience that processing of Sales Order lines that contain bill-of-materials (BOMs) is slow, then check if _Stockout Warning_ on the page  _Sales & Receivables Setup_, is set to `true`. If that is the case, then change this to `false`.
 
 Why? 
-_Stockout Warning_ specifies if a warning should be displayed if a user enters a quantity on a sales document that brings the item’s inventory below zero. The calculation includes all sales document lines that have not yet been posted. Stockout Warning can still be used on items - this can be done by setting the individual Item’s _Stockout Warning_ to true on the Item Card. 
+_Stockout Warning_ specifies if a warning should be displayed if a user enters a quantity on a sales document that brings the item’s inventory below zero. The calculation includes all sales document lines that have not yet been posted. Stockout Warning can still be used on items; this can be done by setting the individual Item’s _Stockout Warning_ to `true` on the Item Card. 
 
 ## Manage the database access intent on reports, API pages, and queries
 
