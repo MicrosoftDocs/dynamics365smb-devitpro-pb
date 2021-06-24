@@ -1,6 +1,6 @@
 ---
 title: "AppSourceCop Rule AS0095"
-description: "Table field access cannot be reduced because this will break dependant extensions. You can only change the current access to a higher accessibility level."
+description: "Table field access cannot be reduced because this will break dependent extensions. You can only change the current access to a higher accessibility level."
 ms.author: solsen
 ms.custom: na
 ms.date: 06/24/2021
@@ -18,7 +18,7 @@ author: SusanneWindfeldPedersen
 Table field access cannot be reduced.
 
 ## Description
-Table field access cannot be reduced because this will break dependant extensions. You can only change the current access to a higher accessibility level.
+Table field access cannot be reduced because this will break dependent extensions. You can only change the current access to a higher accessibility level.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
