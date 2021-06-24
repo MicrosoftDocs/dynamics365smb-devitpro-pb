@@ -1,9 +1,9 @@
 ---
 title: "AppSourceCop Rule AS0095"
-description: "Table field access cannot be reduced. You can only change the current access to a higher level."
+description: "Table field access cannot be reduced because this will break dependant extensions. You can only change the current access to a higher accessibility level."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 06/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,10 +15,10 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AppSourceCop Rule AS0095
-Table field access cannot degrade.
+Table field access cannot be reduced.
 
 ## Description
-Table field access cannot be reduced. You can only change the current access to a higher level.
+Table field access cannot be reduced because this will break dependant extensions. You can only change the current access to a higher accessibility level.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
