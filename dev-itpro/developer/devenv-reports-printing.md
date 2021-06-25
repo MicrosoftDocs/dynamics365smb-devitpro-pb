@@ -22,7 +22,7 @@ To accommodate printing, the system publishes two events that you can subscribe 
 
 ![Report printing](media/report-printing-runtime4.png "Report printing")
 
-Throughout the print process, the system compiles the report into a PDF file and passes it in a stream object, then finally sends the PDF file the printer.
+Throughout the print process, the system compiles the report into a PDF file and passes it in a stream object, then finally sends the PDF file to the printer.
 
 #### OnAfterSetupPrinters event
 
