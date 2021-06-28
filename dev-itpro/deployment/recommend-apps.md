@@ -12,16 +12,24 @@ author: bholtorf
 ---
 
 # The Recommended Apps Extension
-Microsoft AppSource offers a wide variety of apps that add can add value for your customers. However, the abundance of apps can also make it challenging for customers to determine which ones are right for their business. That's where the Recommended Apps extension can help. As a Microsoft partner, you can save yourself, and your customers, time by using the extension to curate a list of apps that you recommend to customers. 
+Microsoft AppSource offers a wide variety of apps that add can extend the value of Business Central for your customers. As a Microsoft partner, you can save yourself, and your customers, time by using the extension to curate a list of apps that you recommend to customers. 
 
 After you publish your collection, a Recommended Apps tile will display on customer homepages. The tile will indicate the number of apps that are available for installation, and will open the collection so that the customer can install the apps they want.
+
+The list is built thorugh code using codeunit 4750
+
+Partner chooses whether and where the page. List Page is 4750, and the Card Page is 4751.
+
+
 
 <!--
 
 Can you organize the list into categories? For example, can you create different categories for different types of businesses?
+    no, but talk to Søren. 
 
 
 Can you offer different lists to different customers?
+No, you can only have one list for each customized version of business central
 
 
 How does the "Recommended by" filter work?
