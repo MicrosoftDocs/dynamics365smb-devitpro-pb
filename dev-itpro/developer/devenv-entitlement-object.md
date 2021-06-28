@@ -20,7 +20,7 @@ The entitlement object in [!INCLUDE[prod_short](includes/d365fin_long_md.md)][!I
 
 An entitlement consists of a number of [PermissionSet Objects](devenv-permissionset-object.md) put together to constitute a set of meaningful permissions for a user. An entitlement can only include permission set objects which reference the objects that are included within the same app. This is to ensure that the entitlements included with one app cannot alter or redefine the entitlements included with another app.
 
-Entitlements can only be used with the online version of [!INCLUDE[prod_short](includes/d365fin_long_md.md)][!INCLUDE [prod_long](includes/prod_long.md)].
+Entitlements can only be used with the online version of [!INCLUDE[prod_short](includes/d365fin_long_md.md)].
 
 > [!NOTE]  
 > In the current version of [!INCLUDE[prod_short](includes/d365fin_long_md.md)] entitlements can only be included with Microsoft apps (enforced by the AppSource cop rules and the technical validation checks that we run for the apps submitted to AppSource). These objects will become available for the ISV apps when we introduce ability to monetize AppSource apps in one of our future releases. 
