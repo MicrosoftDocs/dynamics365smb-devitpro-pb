@@ -1,6 +1,6 @@
 ---
 title: "AppSourceCop Rule AS0081"
-description: "The InternalsVisibleTo setting will expose your internal objects to any extension with the given name, publisher, and ID. Access modifiers are not designed to be used as a security boundary, but for API development."
+description: "The InternalsVisibleTo setting will expose your internal objects to any extension with the given name, publisher, and ID and is meant for API development."
 ms.author: solsen
 ms.custom: na
 ms.date: 06/23/2021
