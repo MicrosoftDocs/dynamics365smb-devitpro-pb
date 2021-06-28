@@ -26,7 +26,6 @@ POST businesscentralPrefix/subscriptions
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
 |Content-Type|application/json|
-|If-Match       |Required. When this request header is included and the eTag provided does not match the current tag on the **subscription**, the **subscription** will not be updated. |
 
 ## Request body (v1.0)
 In the request body, supply a JSON representation of subscription object.
