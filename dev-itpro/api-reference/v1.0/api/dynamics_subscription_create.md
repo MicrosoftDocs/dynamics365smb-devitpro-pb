@@ -26,6 +26,7 @@ POST businesscentralPrefix/subscriptions
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
 |Content-Type|application/json|
+|If-Match       |Required. When this request header is included and the eTag provided does not match the current tag on the **subscription**, the **subscription** will not be updated. |
 
 ## Request body (v1.0)
 In the request body, supply a JSON representation of subscription object.
@@ -39,7 +40,7 @@ If successful, this method returns a `201 Created` response code and a **subscri
 
 Here is an example of the request.
 ```json
-POST https://{businesscentralPrefix}/api/v1.0/subscriptions({id})
+POST https://{businesscentralPrefix}/api/v1.0/subscriptions({'id'})
 Content-type: application/json
 
 {
