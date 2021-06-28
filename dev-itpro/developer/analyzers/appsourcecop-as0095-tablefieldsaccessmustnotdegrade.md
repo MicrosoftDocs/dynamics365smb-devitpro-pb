@@ -23,13 +23,14 @@ Table field access cannot be reduced because this will break dependent extension
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
-This rule verifies that the access property of a field in Table or TableExtensionhas has not been reduced between revisions. This rule validate only if the table access property is set to Public in the baseline extension. More information on different access levels for both fields and tables you can find [here](../devenv-using-access-modifier.md).
+This rule verifies that the `Access` property of a field in a table or table extension has has not been reduced between revisions. This rule only validates if the table `Access` property is set to `Public` in the baseline extension. For more information about different access levels for both fields and tables, see [here](../devenv-using-access-modifiers.md).
 
 ## Code examples triggering the rule
 
 ### Example 1: Reducing the Access Level to lower than Public
 
 Version 1.0 of the extension:
+
 ```AL
 table 50122 MyTable
 {
@@ -46,6 +47,7 @@ table 50122 MyTable
 ```
 
 Version 2.0 of the extension:
+
 ```AL
 table 50122 MyTable
 {
@@ -63,6 +65,7 @@ table 50122 MyTable
 ### Example 2: Reducing the Access Level to lower than Protected
 
 Version 1.0 of the extension:
+
 ```AL
 table 50122 MyTable
 {
@@ -79,6 +82,7 @@ table 50122 MyTable
 ```
 
 Version 2.0 of the extension:
+
 ```AL
 table 50122 MyTable
 {
@@ -93,11 +97,12 @@ table 50122 MyTable
 }
 ```
 
-The same rule applies for field defined in TableExtension.
+The same rule applies for fields defined in a table extension.
 
 ### Example 3: Reducing the Access Level to lower than Public of a field defined in TableExtension
 
 Version 1.0 of the extension:
+
 ```AL
 tableextension 50126 MyTableExtension extends MyTable
 {
@@ -112,6 +117,7 @@ tableextension 50126 MyTableExtension extends MyTable
 ```
 
 Version 2.0 of the extension:
+
 ```AL
 tableextension 50126 MyTableExtension extends MyTable
 {
@@ -130,6 +136,7 @@ tableextension 50126 MyTableExtension extends MyTable
 ### Example 1: Exposing the table for the first time
 
 Version 1.0 of the extension:
+
 ```AL
 table 50122 MyTable
 {
@@ -144,6 +151,7 @@ table 50122 MyTable
 }
 ```
 Version 2.0 of the extension:
+
 ```AL
 table 50122 MyTable
 {
@@ -157,11 +165,12 @@ table 50122 MyTable
     }
 }
 ```
-Changing the Access level from Internal to Public of MyTable means that we are exposing the Table for first time, hence we cannot degrade the access level of the field since it has been indirectly already Internal.
+Changing the `Access` level from `Internal` to `Public` on `MyTable` means that we are exposing the table for first time, so we cannot degrade the access level of the field since it has already indirectly been `Internal`.
 
 ### Example 2: Changing the Access level from Local to Internal or vice versa
 
 Version 1.0 of the extension:
+
 ```AL
 table 50122 MyTable
 {
@@ -176,6 +185,7 @@ table 50122 MyTable
 }
 ```
 Version 2.0 of the extension:
+
 ```AL
 table 50122 MyTable
 {
@@ -190,11 +200,12 @@ table 50122 MyTable
 }
 ```
 
-Changing Access level from Local to Internal or vice versa will not trigger the rule since they are both module Access Modifiers.
+Changing `Access` level from `Local` to `Internal` or vice versa will not trigger the rule since they are both module access modifiers.
 
 ### Example 3: Changing the Access Level to Public or Protected from lower Access Level
 
 Version 1.0 of the extension:
+
 ```AL
 table 50122 MyTable
 {
@@ -209,6 +220,7 @@ table 50122 MyTable
 }
 ```
 Version 2.0 of the extension:
+
 ```AL
 table 50122 MyTable
 {
@@ -226,6 +238,7 @@ table 50122 MyTable
 ### Example 4: Changing the Access Level to Public from Protected
 
 Version 1.0 of the extension:
+
 ```AL
 table 50122 MyTable
 {
@@ -240,6 +253,7 @@ table 50122 MyTable
 }
 ```
 Version 2.0 of the extension:
+
 ```AL
 table 50122 MyTable
 {
@@ -254,9 +268,10 @@ table 50122 MyTable
 }
 ```
 
-### Example 5: Changing the Access Level to Public or Protected from lower Access Level in TableExtension
+### Example 5: Changing the Access Level to Public or Protected from a lower access level in a table extension
 
 Version 1.0 of the extension:
+
 ```AL
 tableextension 50126 MyTableExtension extends MyTable
 {
@@ -271,6 +286,7 @@ tableextension 50126 MyTableExtension extends MyTable
 ```
 
 Version 2.0 of the extension:
+
 ```AL
 tableextension 50126 MyTableExtension extends MyTable
 {
@@ -284,7 +300,7 @@ tableextension 50126 MyTableExtension extends MyTable
 }
 ```
 
-### Example 6: Changing the Access Level to Public from Protected in TableExtension
+### Example 6: Changing the Access Level to Public from Protected in a table extension
 
 Version 1.0 of the extension:
 ```AL
@@ -301,6 +317,7 @@ tableextension 50126 MyTableExtension extends MyTable
 ```
 
 Version 2.0 of the extension:
+
 ```AL
 tableextension 50126 MyTableExtension extends MyTable
 {
