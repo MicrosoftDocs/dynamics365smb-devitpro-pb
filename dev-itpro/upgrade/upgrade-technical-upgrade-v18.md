@@ -232,7 +232,7 @@ Compile all published extensions against the new platform.
 1. To compile an extension, use the [Repair-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/repair-navapp) cmdlet, For example:
 
     ```powershell  
-    Repair-NAVApp -ServerInstance <server instance> -Name <extension name> -Version <extension name>
+    Repair-NAVApp -ServerInstance <server instance> -Name <extension name> -Version <extension version>
     ```
 
     To compile all published extensions at once, you can use this command:
