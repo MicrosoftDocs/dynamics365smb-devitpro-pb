@@ -1,6 +1,6 @@
 ---
-title: "Update 18.2 for Microsoft Dynamics 365 Business Central 2021 Release Wave 1"
-description: Get an overview of new and changed capabilities in the 18.2 update of Business Central online, which is part of 2021 release wave 1.
+title: "Update 18.3 for Microsoft Dynamics 365 Business Central 2021 Release Wave 1"
+description: Get an overview of new and changed capabilities in the 18.3 update of Business Central online, which is part of 2021 release wave 1.
 ms.author: solsen
 ms.custom: na
 ms.date: 05/10/2021
@@ -12,12 +12,12 @@ ms.service: "dynamics365-business-central"
 author: EmmaNielsson
 ---
 
-# Update 18.2 for Microsoft Dynamics 365 Business Central online 2021 release wave 1
+# Update 18.3 for Microsoft Dynamics 365 Business Central online 2021 release wave 1
 
-Would you like to know what has changed in update 18.2? Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update. In addition, we have gathered some good to know information and links, you might find interesting.
+Would you like to know what has changed in update 18.3? Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update. In addition, we have gathered some good to know information and links, you might find interesting.
 
-> [!IMPORTANT]  
-> Business Central online version 18.2 for India is now available. For more information, see [Update 18.2 for Microsoft Dynamics 365 Business Central 2021 Release Wave 1](https://support.microsoft.com/help/5004062).
+## Feature changes 
+- [Service-to-service authentication](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/service-service-authentication)
 
 ## Hotfixes
 Find an overview of hotfixes in this [article](https://support.microsoft.com/help/5004062).
