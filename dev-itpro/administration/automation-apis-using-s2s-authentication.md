@@ -18,7 +18,7 @@ ms.author: jswymer
 
 <!-- Starting with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 2, version 17, service-to-service authentication is enabled for Automation APIs. Service-to-service authentication enables external services to connect as an application, without impersonating normal users.    -->
 
-Service-to-Service (S2S) authentication is suited for scenarios where integrations are required to run without any user interaction. OAuth delegate flows, like [authorization code](/azure/active-directory/develop/v2-oauth2-auth-code-flow), [implicit grant flow](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow) and [resource owner password credentials](/azure/active-directory/develop/v2-oauth-ropc) can be configured to require multifactor authentication (MFA). This configuration prevents integration from running unattended, because MFA is required to acquire the access token from Azure Active Directory. S2S authentication uses the [Client Credentials OAuth 2.0 Flow](https:///azure/active-directory/develop/v2-oauth2-client-creds-grant-flow). This flow enables you to access resources by using the identity of an application.
+Service-to-Service (S2S) authentication is suited for scenarios where integrations are required to run without any user interaction. OAuth delegate flows, like [authorization code](/azure/active-directory/develop/v2-oauth2-auth-code-flow), [implicit grant flow](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow) and [resource owner password credentials](/azure/active-directory/develop/v2-oauth-ropc) can be configured to require multifactor authentication (MFA). This configuration prevents integration from running unattended, because MFA is required to acquire the access token from Azure Active Directory. S2S authentication uses the [Client Credentials OAuth 2.0 Flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow). This flow enables you to access resources by using the identity of an application.
 
 Business Central 2020 release wave 2 (version 17.0) introduced S2S authentication support for accessing Business Central automation APIs. 2021 release wave 1 (version 18.3) expanded S2S authentication for access to the Business Central APIs [v2.0](/dynamics365/business-central/dev-itpro/api-reference/v2.0/) and [v1.0]/dynamics365/business-central/dev-itpro/api-reference/v2.0/), [custom APIs](../developer/devenv-develop-custom-api.md), and web services.
 
@@ -215,13 +215,13 @@ Authorization: {{accessHeader}}
 ```
 
 ## See Also
-[OAuth2 and Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-protocols)  
-[Client Credentials flow/S2S using MSAL library](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-daemon-overview)  
+[OAuth2 and Azure Active Directory]/azure/active-directory/develop/active-directory-v2-protocols)  
+[Client Credentials flow/S2S using MSAL library](/azure/active-directory/develop/scenario-daemon-overview)  
 [C# samples using Client Credentials flow](https://github.com/Azure-Samples/active-directory-dotnetcore-daemon-v2)  
-[OAuth 2.0 client credentials flow on the Microsoft identity platform](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow)  
-[Samples and libraries for OAuth: Microsoft identity platform authentication libraries](https://docs.microsoft.com/en-us/azure/active-directory/develop/reference-v2-libraries)  
+[OAuth 2.0 client credentials flow on the Microsoft identity platform](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow)  
+[Samples and libraries for OAuth: Microsoft identity platform authentication libraries](/azure/active-directory/develop/reference-v2-libraries)  
 [Business Central Repository on GitHub - PowerShell samples using MSAL](https://github.com/microsoft/BCTech/tree/master/samples/PSOAuthBCAccess)  
-[Business Central API v2.0](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/api-reference/v2.0/)
+[Business Central API v2.0](/dynamics365/business-central/dev-itpro/api-reference/v2.0/)
 
 
 
