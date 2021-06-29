@@ -20,7 +20,7 @@ You can only add apps that are available on AppSource to your collection. That i
 ## Building a Collection of Recommended Apps
 Building collections requires some development. You will need to create a new list page (4750) and a card page (4751). For more information, see [Pages Overview](../developer/devenv-pages-overview.md).
 
-To add an app to the collection, find the app on AppSource, and then copy the URL to the AppSourceURL parameter.
+To add an app to the collection, find the app on AppSource, and then copy the URL to the `AppSourceURL` parameter.
 
 ## Providing the Collection to Customers 
 After you publish your collection, a Recommended Apps tile will display on customer home pages. The tile will indicate the number of apps that are available for installation, and will open the collection so that the customer can install the apps they want.
