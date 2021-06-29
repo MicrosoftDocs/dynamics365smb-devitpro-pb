@@ -18,9 +18,9 @@ ms.author: jswymer
 
 <!-- Starting with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 2, version 17, service-to-service authentication is enabled for Automation APIs. Service-to-service authentication enables external services to connect as an application, without impersonating normal users.    -->
 
-Service-to-Service (S2S) authentication is suited for scenarios where integrations are required to run without any user interaction. OAuth delegate flows, like [authorization code](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-auth-code-flow), [implicit grant flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-implicit-grant-flow) and [resource owner password credentials](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth-ropc) are configured to require multifactor authentication (MFA). This configuration prevents integration from running unattended, because MFA is required to acquire the access token from Azure Active Directory. S2S authentication uses the [Client Credentials OAuth 2.0 Flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow). This flow enables you to access resources by using the identity of an application.
+Service-to-Service (S2S) authentication is suited for scenarios where integrations are required to run without any user interaction. OAuth delegate flows, like [authorization code](/azure/active-directory/develop/v2-oauth2-auth-code-flow), [implicit grant flow](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow) and [resource owner password credentials](/azure/active-directory/develop/v2-oauth-ropc) can be configured to require multifactor authentication (MFA). This configuration prevents integration from running unattended, because MFA is required to acquire the access token from Azure Active Directory. S2S authentication uses the [Client Credentials OAuth 2.0 Flow](https:///azure/active-directory/develop/v2-oauth2-client-creds-grant-flow). This flow enables you to access resources by using the identity of an application.
 
-Business Central 2020 release wave 2 (version 17.0) introduced S2S authentication support for accessing Business Central automation APIs. 2021 release wave 1 (version 18.3) expanded S2S authentication for access to the Business Central APIs [v2.0](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/api-reference/v2.0/) and [v1.0](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/api-reference/v2.0/), [custom APIs](../developer/devenv-develop-custom-api.md), and web services.
+Business Central 2020 release wave 2 (version 17.0) introduced S2S authentication support for accessing Business Central automation APIs. 2021 release wave 1 (version 18.3) expanded S2S authentication for access to the Business Central APIs [v2.0](/dynamics365/business-central/dev-itpro/api-reference/v2.0/) and [v1.0]/dynamics365/business-central/dev-itpro/api-reference/v2.0/), [custom APIs](../developer/devenv-develop-custom-api.md), and web services.
 
 > [!NOTE]
 > For more information about OAuth 2.0 flows, see [OAuth 2.0 and OpenID Connect protocols on the Microsoft identity platform](/azure/active-directory/develop/active-directory-v2-protocols) in the Azure Active Directory documentation.
@@ -31,7 +31,7 @@ Two main scenarios are enabled with S2S authentication:
 
 1. Company setup using automation API
 
-    Automation APIs provide capability for automating company setup through APIs. The automation APIs are used to hydrate tenants, that is, to bring them to an initial state. Service-to-service authentication is intended only for the hydration of companies.
+    Automation APIs provide capability for automating company setup through APIs. The automation APIs are used to hydrate tenants, that is, to bring them to an initial state.
 
     The **D365 Automation** entitlements give access to APIs in the `/api/microsoft/automation` route by using the OAuth client credentials flow. An application token with the `Automation.ReadWrite.All` scope is needed for accessing [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Automation APIs.
 
@@ -137,9 +137,9 @@ The following sample uses the [Rest Client](https://marketplace.visualstudio.com
 
 
 ```http
-@tenantId = 99fa4635-0e81-4ebf-ab76-9a98784a02ed
-@clientId = 08eca5bd-a5d5-460b-b543-5ee46e8e49b0
-@clientSecret = a~qqmmhTyTU-cl6PhzlN0-s2._IA_xN15Q
+@tenantId = <tenant id>
+@clientId = <client id>
+@clientSecret = <client secret>
 @baseUri = https://api.businesscentral.dynamics.com
 @scope = {{baseUri}}/.default
 @bcEnvironmentName = production
