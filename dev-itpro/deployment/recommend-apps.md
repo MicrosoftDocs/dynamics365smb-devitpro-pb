@@ -12,47 +12,18 @@ author: bholtorf
 ---
 
 # The Recommended Apps Extension
-Microsoft AppSource offers a wide variety of apps that add can extend the value of Business Central for your customers. As a Microsoft partner, you can save yourself, and your customers, time by using the extension to curate a list of apps that you recommend to customers. 
-
-After you publish your collection, a Recommended Apps tile will display on customer homepages. The tile will indicate the number of apps that are available for installation, and will open the collection so that the customer can install the apps they want.
-
-The list is built thorugh code using codeunit 4750
-
-Partner chooses whether and where the page. List Page is 4750, and the Card Page is 4751.
-
-
-
-<!--
-
-Can you organize the list into categories? For example, can you create different categories for different types of businesses?
-    no, but talk to Søren. 
-
-
-Can you offer different lists to different customers?
-No, you can only have one list for each customized version of business central
-
-
-How does the "Recommended by" filter work?
-
-
-How do you display the list in customer tenants?
-
-
-What happens if an app requires payment?
-
-
-Does it require any permissions?
-
-
-Which home page does the tile display on?
-
--->
+Microsoft AppSource offers a wide variety of apps from Microsoft and our partners that add can extend the value of Business Central. As a Microsoft partner, you can save yourself, and your customers, a bit of legwork by using the Recommended Apps extension to curate a list of apps that are right for your customers' businesses. You can make collections unique for each customer, or build collections specifically for certain types of businesses or industries and then reuse the collections when you're on-boarding those types of customers. For example, you can create one collection for customers who work in finance, and another for customers in the retail space.
 
 ## Before you begin
 You can only add apps that are available on AppSource to your collection. That is, you cannot host your own app and add it to the list. 
 
-## Create a list of recommended apps
+## Building a Collection of Recommended Apps
+Building collections requires some development. You will need to create a new list page (4750) and a card page (4751). For more information, see [Pages Overview](../developer/devenv-pages-overview.md).
 
+To add an app to the collection, find the app on AppSource, and then copy the URL to the AppSourceURL parameter.
+
+## Providing the Collection to Customers 
+After you publish your collection, a Recommended Apps tile will display on customer home pages. The tile will indicate the number of apps that are available for installation, and will open the collection so that the customer can install the apps they want.
 
 ## See Also
 [Onboarding experiences in Business Central](/../administration/onboarding-experiences)
