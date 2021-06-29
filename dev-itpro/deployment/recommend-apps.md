@@ -23,7 +23,7 @@ Building collections requires some development. You will need to create a new li
 To add an app to the collection, find the app on AppSource, and then copy the URL to the `AppSourceURL` parameter on your new pages.
 
 ## Providing the Collection to Customers 
-After you publish your collection, a Recommended Apps tile will display on customer Home pages. The tile will indicate the number of apps that are available for installation, and will open the **Recommended Apps** page so that the customer can install the apps they want. Customers can choose the app in the list to learn more about it, and get a link to install it from AppSource.
+When your collection is ready you can deploy it to your customer's tenant. For more information, see [Deploying a Tenant Customization](../developer/devenv-deploy-tenant-customization). Afterward, a **Recommended Apps** tile will display on customer Home pages. The tile will indicate the number of apps that are available for installation, and will open the **Recommended Apps** page so that the customer can install the apps they want. Customers can choose the app in the list to learn more about it, and get a link to install it from AppSource.
 
 ## See Also
 [Onboarding experiences in Business Central](/../administration/onboarding-experiences)
