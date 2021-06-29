@@ -188,7 +188,7 @@
 #### [Create user permission](administration/api/dynamics_userpermission_create.md)
 #### [Update user permission](administration/api/dynamics_userpermission_update.md)
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
-### [Using Service-to-Service Authentication](administration/automation-apis-using-s2s-authentication.md)
+<!--### [Using Service-to-Service Authentication](administration/automation-apis-using-s2s-authentication.md)-->
 <!-- onboard customers-->
 ## Onboard your customers
 ### [Trials and Sign-ups](deployment/customer-signup.md)
@@ -2763,6 +2763,8 @@
 ## [Dynamics 365 Business Central API (v2.0)](api-reference/v2.0/index.md)
 ## [Dynamics 365 Business Central API (v1.0)](api-reference/v1.0/index.md)
 <!-- end Business Central API -->
+## Authenticating Using OAuth
+### [Using Service-to-Service Authentication](administration/automation-apis-using-s2s-authentication.md)
 <!--deprecated features -->
 # Removed or deprecated features
 ## Deprecated Tables
