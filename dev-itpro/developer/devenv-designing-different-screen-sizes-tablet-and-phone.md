@@ -1,11 +1,11 @@
 ---
 title: "Designing for Different Screen Sizes on Tablet and Phone"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: blrobl
 ms.author: t-blrobl
@@ -37,7 +37,7 @@ The following table provides a list of elements that fit in the page content or 
 ### Testing using a browser  
 Using a browser you can test how your application pages will look on various device sizes. For more information, see [Opening the Business Central Tablet or Phone Client from a Browser](devenv-opening-business-central-tablet-or-phone-client-from-browser.md). 
  
-When running [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] or [!INCLUDE[nav_phone](includes/nav_phone_md.md)] in a browser, you can use Microsoft Edge Developer Tools to emulate different screen sizes. For more information, see [Microsoft Edge Developer Tools](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium).
+When running [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] or [!INCLUDE[nav_phone](includes/nav_phone_md.md)] in a browser, you can use Microsoft Edge Developer Tools to emulate different screen sizes. For more information, see [Microsoft Edge Developer Tools](/microsoft-edge/devtools-guide-chromium).
  <!--Also, for more information see [Troubleshooting: Client Returns Wrong CLIENTTYPE](devenv-troubleshooting-client-returns-wrong-clienttype.md).-->
 
 ## See Also  

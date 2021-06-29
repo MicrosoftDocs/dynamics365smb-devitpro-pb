@@ -1,8 +1,9 @@
 ---
 title: "Page.Run Method"
+description: "Creates and launches a page that you specify. You can use CLEAR method to remove the page."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,9 +15,9 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Page.Run Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
-Creates and launches a page that you specify. You can use Clear method to remove the page.
+Creates and launches a page that you specify. You can use CLEAR method to remove the page.
 
 
 ## Syntax

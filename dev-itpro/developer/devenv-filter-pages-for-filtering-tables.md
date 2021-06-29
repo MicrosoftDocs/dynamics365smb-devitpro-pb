@@ -2,11 +2,11 @@
 title: "Creating Filter Pages for Filtering Tables"
 description: "Using the FilterPageBuilder data type to create a filter page in AL for Business Central."
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---

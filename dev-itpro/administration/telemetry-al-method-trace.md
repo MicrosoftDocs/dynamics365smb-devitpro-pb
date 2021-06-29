@@ -3,18 +3,18 @@ title: Analyzing Long Running AL Methods Telemetry
 description: Learn about analyzing long running AL methods in Business Central.  
 author: jswymer
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 10/31/2020
+ms.date: 04/01/2021
 ms.author: jswymer
 ---
 
 # Analyzing Long Running AL Methods Telemetry
 
-[!INCLUDE[prod_short](../includes/2020_releasewave2.md)], version 17.1
+[!INCLUDE[prod_short](../includes/2020_releasewave2.md)], version 17.1. Available in extension telemetry starting with version 18.1.
 
 The [!INCLUDE[server](../developer/includes/server.md)] server will emit telemetry about the execution time of long running AL methods, including the time spent in the database. The signal also includes a breakdown of how much time each event subscriber added to the total time. As a partner, this data gives you insight into bad performing code and enables you to troubleshoot performance issues caused by extensions.
 

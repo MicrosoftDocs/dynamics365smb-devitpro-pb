@@ -1,8 +1,9 @@
 ---
 title: "IsolatedStorage Data Type"
+description: "Provides data isolation for extensions."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/09/2020
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # IsolatedStorage Data Type
-> **Version**: _Available from runtime version 2.0._
+> **Version**: _Available or changed with runtime version 2.0._
 
 Provides data isolation for extensions.
 

@@ -1,8 +1,9 @@
 ---
 title: "FieldRef.OptionString Method"
+description: "The 'OptionString' property has been deprecated and will be removed in the future. Use the 'OptionMembers' property instead."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # FieldRef.OptionString Method
-> **Version**: _Available from runtime version 1.0 until version 1.0 where it was deprecated._
+> **Version**: _Available or changed with runtime version 1.0 until version 1.0 where it was deprecated._
 
 The 'OptionString' property has been deprecated and will be removed in the future. Use the 'OptionMembers' property instead.
 
@@ -27,13 +28,13 @@ OptionMembers :=   FieldRef.OptionString()
 > This method can be invoked using property access syntax.
 
 ## Parameters
-*FieldRef*
-&emsp;Type: [FieldRef](fieldref-data-type.md)
-An instance of the [FieldRef](fieldref-data-type.md) data type.
+*FieldRef*  
+&emsp;Type: [FieldRef](fieldref-data-type.md)  
+An instance of the [FieldRef](fieldref-data-type.md) data type.  
 
 ## Return Value
-*OptionMembers*
-&emsp;Type: [String](../string/string-data-type.md)
+*OptionMembers*  
+&emsp;Type: [String](../string/string-data-type.md)  
 
 
 

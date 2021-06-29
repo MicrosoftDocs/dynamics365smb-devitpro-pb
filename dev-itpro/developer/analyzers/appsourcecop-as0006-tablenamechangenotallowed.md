@@ -1,8 +1,8 @@
 ---
-title: "Tables that have been published must not change name."
+title: "AppSourceCop Rule AS0006"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 05/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AppSourceCop Rule AS0006
-Tables that have been published must not change name.  
+Tables that have been published must not change name.
 
 ## Description
 Tables that have been published must not change name. This might break the upgrade of existing installations and dependent extensions.

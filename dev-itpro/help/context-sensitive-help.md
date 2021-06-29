@@ -3,15 +3,20 @@ title: "Configure Context-Sensitive Help"
 description: Learn about how to add context-sensitive Help to your Business Central solution, both as an app publisher, an administrator, and as a developer.
 author: edupont04
 ms.reviewer: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ---
 
 # Configure Context-Sensitive Help
 
-A key pillar of helping users help themselves is to give them access to Help for the particular part of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] that they are working in.  
+A key pillar of helping users help themselves is to give them access to Help for the particular part of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] that they are working in. When you build an app for [!INCLUDE [prod_short](../includes/prod_short.md)] online, we expect you to provide Help for your solution that can be accessed from the *Learn more* links on tooltips. For more information, see [Help users learn more](../user-assistance.md#help-users-learn-more).  
+
+The *Learn more* links are generated based on two configuration settings:
+
+* App-level configuration of the URL
+* Page-level configuration of page-specific article
 
 ## App-level configuration
 
@@ -86,7 +91,7 @@ For page extensions, the value of the *ContextSensitiveHelpPage* property will a
 > [!NOTE]
 > The app.json file also contains a *help* property that is used by AppSource to specify the link that describes the app or solution.  
 
-### How it works for the base application
+## UI-to-Help mapping for the base application
 
 In the current version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)], the context-sensitive links to Help for the base application is based on a different UI-to-Help mapping that is stored in table 2000000198 **Page Documentation**. In this table, all page objects in the default version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] are listed, and have a target Help article associated with each of them. Multiple page objects can be associated with the same Help article, such as when a specific workflow involves multiple pages.  
 

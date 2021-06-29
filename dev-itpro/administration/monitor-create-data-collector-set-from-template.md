@@ -2,11 +2,11 @@
 title: Create Data Collector Set Using Template
 description: Use the template to create user-defined Data collector Set for monitoring all Server instances on the computer that is running Business Cenytral Server. 
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.assetid: d1c5bdd0-a254-4cd9-8784-3590918398a3
 caps.latest.revision: 11
@@ -19,7 +19,7 @@ author: SusanneWindfeldPedersen
   
  Data that is collected by a data collector set is stored in a log file that you can view in Performance Monitor.  
   
- For more general information about Data Collector Sets, see [Creating Data Collector Sets](https://technet.microsoft.com/library/cc749337.aspx).  
+ For more general information about Data Collector Sets, see [Creating Data Collector Sets](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc749337(v=ws.11)).  
   
 ### To create a data collection set from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] template  
   

@@ -3,9 +3,9 @@ title: "Set Up an Environment for Developing a Module"
 description: Learn how to set up the tools you need to build a module in the System Applicaton.
 ms.author: bholtorf
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: bholtorf
 ---

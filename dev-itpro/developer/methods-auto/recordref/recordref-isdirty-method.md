@@ -1,8 +1,9 @@
 ---
 title: "RecordRef.IsDirty Method"
+description: "Gets a boolean value that indicates whether the current in-memory instance of a record or filtered set of records has changed since being retrieved from the database."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # RecordRef.IsDirty Method
-> **Version**: _Available from runtime version 5.0._
+> **Version**: _Available or changed with runtime version 5.0._
 
 Gets a boolean value that indicates whether the current in-memory instance of a record or filtered set of records has changed since being retrieved from the database.
 
@@ -27,13 +28,13 @@ Dirty :=   RecordRef.IsDirty()
 > This method can be invoked using property access syntax.
 
 ## Parameters
-*RecordRef*
-&emsp;Type: [RecordRef](recordref-data-type.md)
-An instance of the [RecordRef](recordref-data-type.md) data type.
+*RecordRef*  
+&emsp;Type: [RecordRef](recordref-data-type.md)  
+An instance of the [RecordRef](recordref-data-type.md) data type.  
 
 ## Return Value
-*Dirty*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Dirty*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the a table or filtered set of records has changed; otherwise, **false**.
 
 

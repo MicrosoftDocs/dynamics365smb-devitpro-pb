@@ -1,8 +1,9 @@
 ---
 title: "System.Power Method"
+description: "Raises a number to a power. For example, you can use this method to square the number 2 to get the result of 4."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # System.Power Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Raises a number to a power. For example, you can use this method to square the number 2 to get the result of 4.
 
@@ -35,8 +36,8 @@ The exponent in the exponential method.
 
 
 ## Return Value
-*NewNumber*
-&emsp;Type: [Decimal](../decimal/decimal-data-type.md)
+*NewNumber*  
+&emsp;Type: [Decimal](../decimal/decimal-data-type.md)  
 
 
 

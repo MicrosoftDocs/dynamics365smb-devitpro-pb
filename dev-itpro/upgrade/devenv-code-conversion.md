@@ -2,8 +2,8 @@
 title: "Code Conversion from C/AL to AL"
 description: "Description of the conversion process from C/AL to AL."
 ms.custom: na
-ms.date: 10/01/2020
-ms.topic: article
+ms.date: 04/01/2021
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: jswymer
 ms.author: jswymer
@@ -12,7 +12,7 @@ ms.author: jswymer
 
 This article explains how to convert a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] (version 14) C/AL code-customized on-premises solution to AL code.
 
-You'll use this procedure as part of the upgrade process when going from version 14 to a later version, like 15, 16, or 17. 
+You'll use this procedure as part of the upgrade process when going from version 14 to a later version, like 15, 16, 17, or 18. 
 
 
 <!--
@@ -28,6 +28,8 @@ Get familiar with the basics of setting up and developing in Visual Studio Code 
 
 > [!NOTE]  
 > Moving on-premise C/AL code customizations to [!INCLUDE[d365fin_long_md](../developer/includes/d365fin_long_md.md)] online, requires converting these to AL extensions. This could include converting the C/AL deltas to AL extension code as a starting point, as outlined in [The Txt2Al Conversion Tool](../developer/devenv-txt2al-tool.md).
+
+Also, review the [Known Issues](known-issues.md) for information about issues that may affect the upgrade.
 
 #### Breaking changes
 
@@ -49,7 +51,7 @@ Compiling all the objects is a prerequisite for a successful and complete export
 
 Once the application compiles, you must export all C/AL application objects, except system tables and codeunits (IDs in the 2000000000 range), to the new TXT format. The exported objects will be used as input to the Txt2AL conversion tool. To export objects, use the [Export-NAVApplicationObject](/powershell/module/microsoft.dynamics.nav.ide/export-navapplicationobject) cmdlet of the [!INCLUDE[devshell](../developer/includes/devshell.md)]. it's important to:
 
-- Omit omit all system objects, which have IDs in the 2000000000 range. 
+- Omit all system objects, which have IDs in the 2000000000 range. 
 - Use the `ExportToNewSyntax` switch to export the objects in a syntax that is compatible with the Txt2Al conversion tool.
 
 The Export-NAVApplicationObject cmdlet will export all objects to a single .txt file. If you imported the test library objects into the database, then you'll export the base application objects and the test library separately. Later, you'll create a separate AL project for each set of files.
@@ -125,23 +127,23 @@ You find the txt2al.exe on the installation media (DVD) in the "DVD\RoleTailored
 1. Convert the base application TXT files to AL.
     1. Create a folder for storing the AL files for base application objects (for example, c:\export2al\baseapplication\al).
     2. Start a command prompt as administrator, and navigate to the folder that contain txt2al.exe file.
-    
+
         By default, the location is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\140\RoleTailored Client.
     3. Run the txt2al command:
-    
-        ```      
+
+        ```
         txt2al --source=C:\export2al\baseapplication --target=C:\export2al\baseapplication\al --injectDotNetAddIns --dotNetAddInsPackage=C:\export2al\dotnet\mydotnet.al --dotNetTypePrefix=BC --rename
-        ```      
-    
+        ```
+
         If your solution contains .NET interoperability code, the following Txt2Al command line parameters are used to achieve a conversion that requires less manual intervention:  
-    
+
         - `--injectDotNetAddIns` injects the definition of standard .NET add-ins in the resulting .NET package. The standard .NET add-ins are a set of add-ins that are embedded into the platform.
         - `--dotNetAddInsPackage` should be used to point the conversion tool to an AL file containing declarations for the .NET types that represent .NET control addins. Use this to inject a custom set of .NET control add-in declarations. This parameter is only required if you completed **Task 4**, and you set it to point to the location of the dotnet.al file.
-            
+
             > [!NOTE]
             >If you are interested in migrating your localization resources, you should use the `--addLegacyTranslationInfo` switch to instruct Txt2Al to generate information about the legacy IDs of the translation code.
         - `--dotNetTypePrefix` specifies a prefix to be used for all .NET type aliases created during the conversion. This will ensure that no naming conflicts occur with existing types. In the example, `BC` is the prefix.
-    
+
         - `--rename` renames the output files to prevent clashes with the source .txt files.
 
         When completed, there will be an .al file for each object.
@@ -151,11 +153,11 @@ You find the txt2al.exe on the installation media (DVD) in the "DVD\RoleTailored
     This is similar to the previous step.
     1. Create a folder for storing the AL files for base application objects (for example, c:\export2al\baseapplication\al).
     2. Run the txt2al command:
-    
+
         ```      
         txt2al --source=C:\export2al\testlibrary --target=C:\export2al\testlibrary\al --injectDotNetAddIns --dotNetTypePrefix=BCTest --rename
-        ``` 
-        
+        ```
+
         Use a different value for the `--dotNetTypePrefix` than you did for the base application.
 <!--
 ## Task 6: Copy CodeViewer add-in to the version 15.0 server installation
@@ -166,24 +168,27 @@ In version 15.0 CodeViewer is no longer used, but it's required because of refer
 -->
 ## Task 6: Create a new application database for development
 
-To build your base application, you'll create a new application database on the Business Central version 15 or version 16 platform. This will only be used during development.
+To build your base application, you'll create a new application database on the Business Central platform version that you're upgrading to (like 15, 16, 17, or 18). This will only be used during development.
 
-1. Start the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 16 as an administrator.
+1. Start the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for new version as an administrator.
 2. Run the New-NAVApplicationDatabase cmdlet to create the database. For example:
 
     ```
     New-NAVApplicationDatabase -DatabaseServer .\BCDEMO -DatabaseName MyDBforupgrade
     ```
+
 3. Connect your [!INCLUDE[server](../developer/includes/server.md)] instance to the database. See [Connecting a Business Central Server Instance to a Database](../administration/connect-server-to-database.md).
 
     ```
     Set-NAVServerConfiguration -ServerInstance BC -KeyName DatabaseName -KeyValue "MyDBforupgrade"
     ```
+
 4. Restart the server instance.
 
     ```
     Restart-NAVServerInstance -ServerInstance BC
     ```
+
 <!--
 5. Publish system symbols extension (System.app) to application on the server instance. 
 
@@ -195,11 +200,12 @@ To build your base application, you'll create a new application database on the 
     Publish-NAVApp -ServerInstance BC150 -Path "C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\AL Development Environment\System.app" -PackageType SymbolsOnly
     ```
 -->
-## Task 7: Create and build an AL project for custom base application
+
+## <a name="build"></a>Task 7: Create and build an AL project for custom base application
 
 In this task, you'll create a AL project in Visual Studio code that you'll use for building your custom base application extension based on your converted C/AL application.
 
-1. If you haven't already, install Visual Studio Code and the latest AL Language extension for version 15.0 or 16.0 as outlined in [Getting Started with AL](../developer/devenv-get-started.md).
+1. If you haven't already, install Visual Studio Code and the latest AL Language extension for version 15, 16, or 17 as outlined in [Getting Started with AL](../developer/devenv-get-started.md).
 
 2. Configure Visual Studio Code for optimal performance with AL projects.
 
@@ -207,17 +213,17 @@ In this task, you'll create a AL project in Visual Studio code that you'll use f
 
 3. In Visual Studio Code, from the **Command Palette**, select the **AL Go!** command to create a new project.
 
-    Specify the path for the project, and set the **Target Platform** to **4.0 Business Central 2019 release wave 2** or **5.0 Business Central 2020 release wave 1**. When prompted to select your server, choose <!--Microsoft cloud sandbox or--> **Your own server**.
+    Specify the path for the project, and set the **Target Platform** to version you're upgrading to. When prompted to select your server, choose <!--Microsoft cloud sandbox or--> **Your own server**.
 4. Create a **.alpackages** folder in the root folder of the project and then copy the system (platform) symbols extension (System.app file) to the folder.
 
-    The System.app file is located where you installed the AL Development Environment, which by default is the C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\<150 or 160>\AL Development Environment folder. This package contains the symbols for all the system tables and codeunits.
+    The System.app file is located where you installed the AL Development Environment, which by default is the C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\<150, 160, 170, or 180>\AL Development Environment folder. This package contains the symbols for all the system tables and codeunits.
 5. Delete the **HelloWorld.al** sample file from the project.
 
 6. Modify the `settings.json` file of Visual Studio Code to configure the assembly probing path.
 
     Change `"al.assemblyProbingPaths": ["./.netpackages"]` to point to all the folders that contain .NET assemblies that are used by your project. Here is an example that contains the most typical paths:
 
-    ```
+    ```json
     "al.assemblyProbingPaths": [
     "C:\\Program Files\\Microsoft Dynamics 365 Business Central\\150",
     "C:\\Program Files (x86)\\Microsoft Dynamics 365 Business Central\\150\\RoleTailored Client",
@@ -225,6 +231,9 @@ In this task, you'll create a AL project in Visual Studio code that you'll use f
     "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\WindowsPowerShell\\3.0"
     ]
     ```
+
+    Replace 150 with the value that matches your installation, like 160, 170, or 180.
+
     For more information about the settings.json, see [User and Workspace Settings](https://code.visualstudio.com/docs/getstarted/settings).
 
     > [!NOTE]  
@@ -232,20 +241,44 @@ In this task, you'll create a AL project in Visual Studio code that you'll use f
 
 7. Modify the `app.json` for the project as follows:
 
-    - **Important** The ID, name, and publisher, and version of the custom base application must match the Business Central base application. Set the parameters to the following values`:
+    |Parameter|Value|
+    |---------|-----|
+    |`"id":`|Use the default that was created for you.|
+    |`"name":`|Specify any valid name.|
+    |`"publisher":`|Specify any valid publisher name.|
+    |`"version":`|You can use any valid version number, but it's recommended to set it to the same version as the C/AL application.|
+    |`"dependencies":`|Delete all values, so this parameter is empty.|
+    |`"platform":`|Set to match the platform version that you're upgrading to: <ul><li>`"18.0.0.0"`- version 18</li><li>`"17.0.0.0"`- version 17</li><li>`"16.0.0.0"`- version 16</li><li>`"15.0.0.0"`- version 15</li></ul>|
+    |`"application":`|Remove this parameter.|
+    |`"idRange":`|Set to include all the IDs used by your base application, or leave it blank.|
+    |`"runtime":` |Set to match the version that you're upgrading to:<ul><li>`"7.0"`- version 18</li><li>`"6.0"`- version 17</li><li>`"5.0"`- version 16</li><li>`"4.0"`- version 15</li></ul>|
+    |`"target":"`|Add this parameter and set to `"OnPrem"`.|
+    
+    For example:
 
-        ```
-          "appId": "437dbf0e-84ff-417a-965d-ed2bb9650972",
-          "name": "Base Application",
-          "publisher": "Microsoft",
-          "version": "14.5.0.0"
-        ```
-
-        We recommend that you set the "version" to the same version as the C/AL application.  
-    - Add the setting `"target": "OnPrem"` somewhere in the file.
-    - Change the `idRange` to include all the IDs used by your base application (or leave blank).
-    - Delete the values in the `dependencies` parameter.
-
+    ```json
+    {
+        "id": "11111111-aaaa-2222-bbbb-333333333333",
+        "name": "My Base Application",
+        "publisher": "Microsoft",
+        "version": "14.13.0.0",
+        "brief": "",
+        "description": "",
+        "privacyStatement": "",
+        "EULA": "",
+        "help": "",
+        "url": "",
+        "logo": "",
+        "dependencies": [],
+        "screenshots": [],
+        "platform": "18.0.0.0",
+        "idRanges": [  ],
+        "contextSensitiveHelpUrl": "https://BC14cal-to-18al-app.com/help/",
+        "showMyCode": true,
+        "runtime": "7.0",
+        "target":  "OnPrem"
+    }  
+    ```
 8. Copy all of the base application AL files generated in the previous task (**Task 5**) to the root folder of your project.
 
 9. Open the **dotnet.al** file for the project, and make the following changes:
@@ -261,11 +294,12 @@ In this task, you'll create a AL project in Visual Studio code that you'll use f
         ```
 10. Delete objects that are related to the client debugger client.
 
-     Debugging from the client has been discontinued, and replaced by AL Debugger. The version 14 debugger objects are not supported on version 15. To avoid compilation errors, delete the following objects:
+     Debugging from the client has been discontinued, and replaced by AL Debugger. The version 14 debugger objects are not supported on version 15, 16, or 17. To avoid compilation errors, delete the following objects:
     
     - Debugger.Page.al
     - DebuggerBreakpointCondition.Page.al
     - DebuggerBreakpointList.Page.al
+    <!-- - DebuggerBreakRules.Page.al-->
     - DebuggerCallstackFactBox.Page.al
     - DebuggerCodeViewer.Page.al
     - DebuggerManagement.Codeunit.al
@@ -280,7 +314,7 @@ In this task, you'll create a AL project in Visual Studio code that you'll use f
     The AL compiler will issue errors for constructs that are not valid. Fix any errors that occur, and build again.
 
     > [!TIP]
-    > If you are maintaining your C/AL solution going forward, we recommend that you fix errors in C/AL objects and convert to AL again. This makes it future changes easier to foward push changes because code bases will be similar.
+    > If you are maintaining your C/AL solution going forward, we recommend that you fix errors in C/AL objects and convert to AL again. This makes it future changes easier to forward push changes because code bases will be similar.
     <!--
     The following are known issues that you might encounter:
     1. FlowSelectorTemplate.Page.al
@@ -437,10 +471,34 @@ If you converted the test library form C/AL to AL, you'll now create and build a
 
 2. As with base application project, you have to modify the `app.json` file, but in this case, you have to change the version and add a dependency on the base application that you created.
 
-    - Set the `"version"` to the old application version, such as `14.5.0.0`.
-    - Set the `"dependencies"` to include information about your custom the base application. 
+    |Parameter|Value|
+    |---------|-----|
+    |`"id":`|Use the default that was created for you.|
+    |`"name":`|Specify any valid name.|
+    |`"publisher":`|Specify any valid publisher name.|
+    |`"version":`|You can use any valid version number, but it's recommended to set it to the same version as the C/AL application.|
+    |`"dependencies":`|Set this include information that matches the custom the base application you created in the previous task.|
+    |`"platform":`|Set to match the platform version that you're upgrading to: <ul><li>`"18.0.0.0"`- version 18</li><li>`"17.0.0.0"`- version 17</li><li>`"16.0.0.0"`- version 16</li><li>`"15.0.0.0"`- version 15</li></ul>|
+    |`"application":`|Remove this parameter.|
+    |`"idRange":`|Set to include all the IDs used by your test application, or leave it blank.|
+    |`"runtime":` |Set to match the version that you're upgrading to:<ul><li>`"7.0"`- version 18</li><li>`"6.0"`- version 17</li><li>`"5.0"`- version 16</li><li>`"4.0"`- version 15</li></ul>|
+    |`"target":"`|Add this parameter and set to `"OnPrem"`.|
+    
+    For example:
 
-        ``` 
+    ```json
+    {
+        "id": "44444444-aaaa-5555-bbbb-666666666666",
+        "name": "Test Library",
+        "publisher": "Default Publisher",
+        "version": "14.13.0.0",
+        "brief": "",
+        "description": "",
+        "privacyStatement": "",
+        "EULA": "",
+        "help": "",
+        "url": "",
+        "logo": "",
         "dependencies": [
         {
             "appId": "437dbf0e-84ff-417a-965d-ed2bb9650972",
@@ -448,10 +506,16 @@ If you converted the test library form C/AL to AL, you'll now create and build a
             "name": "Base Application",
             "version": "14.5.0.0"
         }
-        ],
-        ```
-    - Set the `target` to `OnPrem`.
-    - Change the `idRange` to include all the IDs used by your test application (or leave blank).
+       ],
+        "screenshots": [],
+        "platform": "18.0.0.0",
+        "idRanges": [  ],
+        "contextSensitiveHelpUrl": "https://BC14cal-to-18al-app.com/help/",
+        "showMyCode": true,
+        "runtime": "7.0",
+        "target":  "OnPrem"
+    }  
+    ```
 3. Copy all of the AL files that you generated for the test library in **Task 5** to the root folder of your project.
 4. Open the **dotnet.al** file for the project, and make the following changes:
 
@@ -460,11 +524,12 @@ If you converted the test library form C/AL to AL, you'll now create and build a
 
 ## Next Steps
 
-If you are performing a technical upgrade from version 14.0 to version 15.0 or 16, return to the [technical upgrade step](upgrade-technical-upgrade-v14-v15.md#Preparedb) where you left off.
+If you are performing a technical upgrade from version 14.0 to version 15, 16, or 17, return to the [technical upgrade step](upgrade-technical-upgrade-v14-v15.md#Preparedb) where you left off.
 
 - [Technical Upgrade to version 15.0](upgrade-technical-upgrade-v14-v15.md#Preparedb)
 - [Technical Upgrade to to version 16.0](upgrade-technical-upgrade-v14-v16.md#Preparedb)
 - [Technical Upgrade to to version 17.0](upgrade-technical-upgrade-v14-v17.md#Preparedb)
+- [Technical Upgrade to to version 18.0](upgrade-technical-upgrade-v14-v18.md#Preparedb)
 
 <!--
 ## Task 11: Publish your project

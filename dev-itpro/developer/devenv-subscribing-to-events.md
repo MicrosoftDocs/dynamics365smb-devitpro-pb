@@ -2,11 +2,11 @@
 title: "Subscribing to Events"
 description: This article describes how to design event subscribers in Dynamics 365 Business Central. 
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -95,8 +95,8 @@ codeunit 50101 MySubscribers
     [EventSubscriber(ObjectType::Page, Page::"Customer Card", 'OnBeforeValidateEvent', 'Address', true, true)]
     local procedure CheckAddressLine(var Rec : Record Customer)
     begin
-        if (STRPOS('Rec.Address', '+') > 0) then begin
-            MESSAGE('Can''t use a plus sign (+) in the address [' + 'Address' + ']');
+        if (STRPOS(Rec.Address, '+') > 0) then begin
+            MESSAGE('Can''t use a plus sign (+) in the address [%1]', Rec.Address);
         end;
     end;
 }

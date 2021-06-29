@@ -2,11 +2,11 @@
 title: "Walkthrough: Creating and Interacting With an OData V4 Bound Action"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.assetid: efcf5eaf-b129-469d-b4f7-b8681574483e
 caps.latest.revision: 90
@@ -105,7 +105,7 @@ You publish a function as a Web service action by using the [!INCLUDE[nav_dev_lo
 6.	Choose the **OK** button.
 
 ## Verifying the Web Service Availability 
-After publishing a web service, verify that the port that web service applications will use to connect to your web service is open. The default port for OData V4 web services is 7047. You can configure this value by using the [Server Administration Tool](https://msdn.microsoft.com/library/hh165851(v=nav.90).aspx).
+After publishing a web service, verify that the port that web service applications will use to connect to your web service is open. The default port for OData V4 web services is 7047. You can configure this value by using the [Server Administration Tool](/previous-versions/dynamicsnav-2016/hh165851(v=nav.90)).
 
 ### To verify availability of a Microsoft Dynamics NAV Web service action
 
@@ -171,4 +171,4 @@ You have now published a [!INCLUDE[prod_short](../developer/includes/prod_short.
  [Web Services](Web-Services.md)   
  [SOAP Web Services](SOAP-Web-Services.md)   
  [Publish a Web Service](Publish-Web-Service.md)  
- [Securing Web Service Connections Using Certificates](../deployment/implement-security-certificates-production-environment.md)   
+ [Securing Web Service Connections Using Certificates](../deployment/implement-security-certificates-production-environment.md)

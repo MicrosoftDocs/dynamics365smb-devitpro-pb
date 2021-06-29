@@ -3,11 +3,11 @@ title: "Interfaces in AL"
 description: "Interfaces in AL are syntactical contracts that can be implemented by a non-abstract method."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 02/01/2021
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---

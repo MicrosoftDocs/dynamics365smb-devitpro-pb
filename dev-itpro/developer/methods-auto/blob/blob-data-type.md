@@ -1,8 +1,9 @@
 ---
 title: "Blob Data Type"
+description: "Is a complex data type. Variables of this data type differ from normal numeric and string variables in that BLOBs have a variable length. The maximum size of a BLOB(binary large object) is 2 GB."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/09/2020
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Blob Data Type
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Is a complex data type. Variables of this data type differ from normal numeric and string variables in that BLOBs have a variable length. The maximum size of a BLOB(binary large object) is 2 GB.
 
@@ -42,7 +43,7 @@ The following methods are available on instances of the Blob data type.
  You can read from and write to BLOBs by creating input and output streams, respectively. To do so, use [CreateInStream method (BLOB)](blob-createinstream-method.md) and [CreateOutStream method (BLOB)](blob-createoutstream-method.md).  
 
 <!--
-To optimize performance, when you access a record that has a BLOB field, the data in the BLOB is not always read into memory. You must call the [CALCFieldS method (Record)](../../methods/devenv-calcfields-method-record.md) to read the BLOB into memory and calculate it. Then you can use the BLOB in AL code or display it in the application.  
+To optimize performance, when you access a record that has a BLOB field, the data in the BLOB is not always read into memory. You must call the [CALCFieldS method (Record)](../library.md) to read the BLOB into memory and calculate it. Then you can use the BLOB in AL code or display it in the application.  
 
  It is not supported to insert a BLOB field into a Variant.  
 
@@ -52,4 +53,4 @@ To optimize performance, when you access a record that has a BLOB field, the dat
 
 ## See Also
 [Getting Started with AL](../../devenv-get-started.md)  
-[Developing Extensions](../../devenv-dev-overview.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

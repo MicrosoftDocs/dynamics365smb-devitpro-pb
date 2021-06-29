@@ -1,8 +1,9 @@
 ---
 title: "System.DWY2Date Method"
+description: "Gets a Date that is based on a week day, a week, and a year."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # System.DWY2Date Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Gets a Date that is based on a week day, a week, and a year.
 
@@ -30,18 +31,18 @@ Date :=   System.DWY2Date(WeekDay: Integer [, Week: Integer] [, Year: Integer])
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The number of the day in the week (1-7). Monday is day number 1.
         
-*Week*  
+*[Optional] Week*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The number of the week. Week 1 is the first week of the year that has four or more days in the year. If you omit this optional parameter, the current week is used as the default.
         
-*Year*  
+*[Optional] Year*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The four-digit number of the year. If you omit this optional parameter, the year of the current week is used as the default.  
 
 
 ## Return Value
-*Date*
-&emsp;Type: [Date](../date/date-data-type.md)
+*Date*  
+&emsp;Type: [Date](../date/date-data-type.md)  
 
 
 

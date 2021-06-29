@@ -3,11 +3,12 @@ title: "Maintain AppSource apps and per-tenant extensions"
 description: "Learn about resources available to you as the publisher of an app or per-tenant extension for keeping your code in compliance with the base product."
 author: edupont04
 ms.custom: na
-ms.date: 10/01/2020
-ms.topic: article
+ms.date: 04/21/2021
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: edupont
 ---
+
 # Maintain AppSource Apps and Per-Tenant Extensions in Business Central Online
 
 As a partner, keeping your apps and per-tenant extensions (PTEs) up to date is your responsibility. [!INCLUDE [prod_short](includes/prod_short.md)] is regularly updated with major and minor releases. These updates provide customers with a business application that is always compliant, secure, and enriched with new platform and application functionality. Often customers choose [!INCLUDE [prod_short](includes/prod_short.md)] because of this promise of having an always up-to-date business solution.  
@@ -40,7 +41,7 @@ To help app publishers keep up with their update responsibilities, Microsoft pro
 
 - Training and coaching
 
-    Microsoft provides a set of tools, [training](/learn/browse/?products=dynamics-business-central&roles=developer), and documentation to help partners find the info they need to keep up with these responsibilities on continuous integration and continuous deployment. External providers, including ISV Development Centers, MasterVARs, and training centers, can provide in-person training and coaching.  
+    Microsoft provides a set of tools, [training](/learn/browse/?WT.mc_id=dyn365bc_landingpage-docs&products=dynamics-business-central&roles=developer), and documentation to help partners find the info they need to keep up with these responsibilities on continuous integration and continuous deployment. External providers, including ISV Development Centers, MasterVARs, and training centers, can provide in-person training and coaching.  
 
 - Service notifications
 
@@ -59,21 +60,24 @@ Publishers have several tools available for them to keep their code in good shap
 > [!IMPORTANT]
 > Microsoft tests code based on technical compatibility. As the publisher, you are still responsible for all functional and logical validation.
 
+> [!NOTE]  
+> If an app has been published through AppSource, it should not be tested, installed, or in other ways treated as a PTE since this will create conflicts.
+
 ## When apps or PTEs cannot be updated by Microsoft
 
-This section describes the processes that are initiated during and after upgrade attempts of code provided by publishers of apps or PTEs.  
+This section describes the processes that are initiated during and after upgrade attempts of code provided by publishers of apps or PTEs. For information about handling a PTE that has conflicts with another extension, see [Upgrading Per-Tenant Extensions that Conflicts with Other Extensions](../upgrade/upgrade-pte-merge-conflict.md).
 
-- **T1 – T30**: Microsoft alerts administrators, resellers, and ISVs
+- **T+1 – T+30**: Microsoft alerts administrators, resellers, and ISVs
 
-    Shortly after a service update of [!INCLUDE [prod_short](includes/prod_short.md)] online (Day **T**), Microsoft will initiate daily updates attempts on all tenants. In these update attempts, the publisher's provided upgrade code is triggered and run. These attempts run repeatedly in a time frame of approximately one month until the upgrade is successful. For more information, see [Major Updates of Business Central Online](../administration/update-rollout-timelime.md).  
+    Shortly after a service update of [!INCLUDE [prod_short](includes/prod_short.md)] online (Day **T**), Microsoft will initiate daily updates attempts on all tenants. In these update attempts, the publisher's provided upgrade code is triggered and run. These attempts run repeatedly in a time frame of approximately one month until the upgrade is successful. For more information, see [Major Updates of Business Central Online](../administration/update-rollout-timeline.md).  
 
     With every unsuccessful upgrade attempt, stakeholders will receive notifications. Customers and their reselling partners can follow these notifications in the [!INCLUDE [prodadmincenter](includes/prodadmincenter.md)].  
 
-    ISVs who provide third-party AppSource apps might not be listed in the customer's admin center. The reseller will in most cases have worked with the ISV to test compatibility, but after two weeks (Day **T+15**) of failed upgrade attempts, the Microsoft AppSource team will also send the app provider a warning message that action within the next few days is required.  
+    ISVs who provide third-party AppSource apps might not be listed in the customer's admin center. The reseller will in most cases have worked with the ISV to test compatibility, but after two weeks (Day **T+15**) of failed upgrade attempts, the Microsoft AppSource team will also send the app provider a warning message that action within the next few days is required. Incompatible extensions can be uninstalled within **14 days** if they prevent deployment of security updates.  
 
     This message will explain that if they fail to respond correctly, their app will be removed from AppSource at Day **T+30**.  
 
-- **T30 – T60**: Microsoft alerts the customer
+- **T+30 – T+60**: Microsoft alerts the customer
 
     After one month of failed upgrade attempts (Day **T+30**), the customers will be notified again that apps or PTEs are incompatible with the new version of [!INCLUDE [prod_short](includes/prod_short.md)], and that no further automatic upgrade attempts will be planned until further notice. Although the publisher's code continues to run on an outdated version of [!INCLUDE [prod_short](includes/prod_short.md)] online, the customer must work with their reseller to resolve these issues immediately so that the tenant can be updated. Next to messages in the [!INCLUDE [prodadmincenter](includes/prodadmincenter.md)], all users in the customer's tenant will also get more active warning about the incompatibilities when they use the product in the browser or their mobile device.  
 
@@ -83,11 +87,11 @@ This section describes the processes that are initiated during and after upgrade
 
     If the source of the incompatibility has been resolved by the publisher, they'll have to submit a support request to schedule a new set of upgrade attempts for any tenants that are blocked because of this incompatibility. They'll also have to work with their resellers to inform them about the compatibility resolution.  
 
-- **T60 – T150**: Microsoft initiates the customer wind-down period
+- **T+60 – T+150**: Microsoft initiates the customer wind-down period
 
     If the incompatibility issues are not resolved at **T+60**, and the publisher remained unresponsive to the request to resolve the incompatibility, Microsoft may choose to send out a wind-down communication to the customer about removal of the publisher's code.  
 
-    This communication will share that the code from the publisher will be removed in *90* days (**T+150**).  
+    This communication will share that the code from the publisher will be removed in *90* days from the day of the communication from Microsoft (**T+150**).  
 
     During this wind-down time, the customer and their reselling partner are fully responsible for finding a solution on how to proceed in this situation. If the customer decides to leave [!INCLUDE [prod_short](includes/prod_short.md)], or decides to use another publisher, they can access their data by [exporting the database](../administration/tenant-admin-center-database-export.md), use [RapidStart Services](/dynamics365/business-central/admin-migrate-customer-data), or copy data to Excel. For more information, see [Exporting Your Business Data to Excel](/dynamics365/business-central/about-export-data) in the business functionality content.  
 

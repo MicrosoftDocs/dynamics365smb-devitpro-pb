@@ -1,8 +1,9 @@
 ---
 title: "Query.SetRange Method"
+description: "Sets a filter on a range of values on a column of a query data set."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Query.SetRange Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Sets a filter on a range of values on a column of a query data set.
 
@@ -24,19 +25,19 @@ Sets a filter on a range of values on a column of a query data set.
  Query.SetRange(Column: Any [, FromValue: Any] [, ToValue: Any])
 ```
 ## Parameters
-*Query*
-&emsp;Type: [Query](query-data-type.md)
-An instance of the [Query](query-data-type.md) data type.
+*Query*  
+&emsp;Type: [Query](query-data-type.md)  
+An instance of the [Query](query-data-type.md) data type.  
 
 *Column*  
 &emsp;Type: [Any](../any/any-data-type.md)  
 The name of the column in the query that you want to filter. The name is defined by the column's Name Property.
         
-*FromValue*  
+*[Optional] FromValue*  
 &emsp;Type: [Any](../any/any-data-type.md)  
 The lower limit of the range. The data type of this parameter must match the data type of Column. If you set only the FromValue parameter, then the ToValue parameter is set to the same value as FromValue.
           
-*ToValue*  
+*[Optional] ToValue*  
 &emsp;Type: [Any](../any/any-data-type.md)  
 The upper limit of the range. The data type of this parameter must match the data type of Column. If you omit the ToValue parameter, then the only the value that is specified for FromValue is used, which enables you to filter on a single column value instead of a range. If you omit both the FromValue and ToValue parameters, then the method removes all filters that are already set on the column.
           
@@ -66,7 +67,7 @@ Query.SetRange(Column1, FromValue, ToValue);
 Query.Read;  
 ```  
   
- In addition to the **SetRange** method, you can apply filters to a query using the **SetFilter** method and the [DataItemTableFilter Property](../../properties/devenv-dataitemtable-filter-property.md) and [ColumnFilter Property](../../properties/devenv-columnfilter-property.md).  
+ In addition to the **SetRange** method, you can apply filters to a query using the **SetFilter** method and the [DataItemTableFilter Property](/dynamics365/business-central/dev-itpro/developer/methods-auto/query/devenv-dataitemtablefilter-property) and [ColumnFilter Property](../../properties/devenv-columnfilter-property.md).  
   
 |If the **SetRange** method...|then...|  
 |-------------------------------------|-------------|  

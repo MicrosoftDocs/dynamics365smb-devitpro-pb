@@ -1,8 +1,9 @@
 ---
 title: "JsonToken.IsObject Method"
+description: "Indicates whether a JsonToken contains a JSON object."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # JsonToken.IsObject Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Indicates whether a JsonToken contains a JSON object.
 
@@ -27,13 +28,13 @@ Ok :=   JsonToken.IsObject()
 > This method can be invoked using property access syntax.
 
 ## Parameters
-*JsonToken*
-&emsp;Type: [JsonToken](jsontoken-data-type.md)
-An instance of the [JsonToken](jsontoken-data-type.md) data type.
+*JsonToken*  
+&emsp;Type: [JsonToken](jsontoken-data-type.md)  
+An instance of the [JsonToken](jsontoken-data-type.md) data type.  
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the JsonToken represents a JSON object; otherwise, **false**.
 
 

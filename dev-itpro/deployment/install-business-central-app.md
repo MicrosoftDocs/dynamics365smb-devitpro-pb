@@ -2,11 +2,11 @@
 title: Install the Business Central Mobile App
 description: Learn about prerequisites for using Business Central on-premises on mobile devices.
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.assetid: e4bd0a48-9e21-44e3-8a5d-858f02af5206
 caps.latest.revision: 24

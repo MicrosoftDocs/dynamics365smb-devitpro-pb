@@ -3,11 +3,11 @@ title: "Update 17.2 for Microsoft Dynamics 365 Business Central 2020 Release Wav
 description: Get an overview of new and changed capabilities in the 17.2 update of Business Central online, which is part of 2020 release wave 2.
 ms.author: solsen
 ms.custom: na
-ms.date: 12/09/2020
+ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: EmmaNielsson
 ---
@@ -27,7 +27,7 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/en-
 - [Signal from the sensitive field audit feature added to Application Insights telemetry for partners](../administration/telemetry-field-monitoring-trace.md)
 - [Signal from the email feature added to Application Insights telemetry for partners](../administration/telemetry-email-trace.md)
 - [Signal from application packages lifecycle added to Application Insights Telemetry for partners](..\administration\telemetry-configuration-package-trace.md)
-- [Snapshot debugging enabled in production environments](dynamics365/business-central/dev-itpro/developer/devenv-snapshot-debugging)  
+- [Snapshot Debugging](../developer/devenv-snapshot-debugging.md)  
 
 
 ## Release Plan
@@ -50,4 +50,4 @@ You can still watch the sessions from the Business Central Launch Event in Octob
 
 **Migrate directly from version 14, 15, and 16 to Business Central online**  
 Business Central includes a cloud migration tool that administrators can use to migrate customer data from on-premises databases to Business Central online. Starting now, the Cloud Migration app also supports migration from the earlier on-premises versions of Business Central, with the latest cumulative update applied: Migrate directly from versions 14.x, 15.x, and 16.x to version 17.x. 
-This helps customers reduce their costs of migrating to the Business Central cloud significantly, as they can skip upgrading their on-premises environments to the latest version of Business Central and just migrate the data, including all historical transactions. The Cloud Migration app now includes all the necessary data upgrade logic to convert the data from the previous versions to the data structure of 2020 release wave 2 (version 17.0). Learn more [here](/dynamics365/business-central/dev-itpro/administration/migrate-business-central-on-premises).
+This helps customers reduce their costs of migrating to the Business Central cloud significantly, as they can skip upgrading their on-premises environments to the latest version of Business Central and just migrate the data, including all historical transactions. The Cloud Migration app now includes all the necessary data upgrade logic to convert the data from the previous versions to the data structure of 2020 release wave 2 (version 17.0). Learn more [here](../administration/migrate-business-central-on-premises.md).

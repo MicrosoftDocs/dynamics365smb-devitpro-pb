@@ -3,9 +3,9 @@ title: "Country/region availability and supported languages"
 description: "Overview of availability and supported languages."
 author: sorenfriisalexandersen
 ms.custom: na
-ms.date: 01/15/2021
+ms.date: 04/01/2021
 ms.reviewer: edupont
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: soalex
 ---
@@ -15,63 +15,79 @@ ms.author: soalex
 This page lists the countries/regions where [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available and which languages are supported.
 
 > [!NOTE]  
-> In countries where Microsoft has not delivered a localization, partners can build [localizations](/dynamics365/business-central/dev-itpro/developer/readiness/readiness-develop-localization) using translation and localization apps that are published on AppSource. These apps are built on top of the international (W1) version of [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. 
+> In countries where Microsoft has not delivered a localization, partners can build [localizations](../developer/readiness/readiness-develop-localization.md) using translation and localization apps that are published on AppSource. These apps are built on top of the international (W1) version of [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. 
 
 The following table provides the list of all countries/regions where [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available or in planning for future availability, and states whether the localization is provided by Microsoft or partner(s).
 
 ## Countries and regions
 
-|Country/Region|Localized by|Availability|Environment Country in Tenant Admin Center|
-|-----------|---------|------------|-----------|
-|Australia|Microsoft|Available|AU|
-|Austria|Microsoft|Available|AT|
-|Belgium|Microsoft|Available|BE|
-|Brazil|Partner|Available|BR|
-|Canada|Microsoft|Available|CA|
-|Colombia|Partner|Available|CO|
-|Croatia|Partner|Available|HR|
-|Czechia|Microsoft|Available|CZ|
-|Denmark|Microsoft|Available|DK|
-|Estonia|Partner|Available|EE|
-|Faroe Islands (Denmark)|Microsoft|Available|DK|
-|Finland|Microsoft|Available|FI|
-|France|Microsoft|Available|FR|
-|Germany|Microsoft|Available|DE|
-|Greenland (Denmark)|Microsoft|Available|DK|
-|Hong Kong SAR|Partner|Available|HK|
-|Hungary|Partner|Available|HU|
-|Iceland|Microsoft|Available|IS|
-|Ireland|Partner|Available|IE|
-|Indonesia|Partner|Available|ID|
-|India|Microsoft|Preview|IN|
-|Italy|Microsoft|Available|IT|
-|Japan|Partner|Available|JP|
-|Latvia|Partner|Available|LV|
-|Lithuania|Partner|Available|LT|
-|Malaysia|Partner|Available|MY|
-|Mexico|Microsoft|Available|MX|
-|Netherlands|Microsoft|Available|NL|
-|New Zealand|Microsoft|Available|NZ|
-|Norway|Microsoft|Available|NO|
-|Peru|Partner|Available|PE|
-|Philippines|Partner|Available|PH|
-|Poland|Partner|Available|PL|
-|Portugal|Partner|Available|PT|
-|Russia **(on-premises only)**|Microsoft|Available|(Not listed)|
-|Serbia|Partner|Available|RS|
-|Singapore|Partner|Available|SG|
-|Slovenia|Partner|Available|SI|
-|South Africa|Partner|Available|ZA|
-|South Korea|Partner|Available|KR|
-|Spain|Microsoft|Available|ES|
-|Sweden|Microsoft|Available|SE|
-|Switzerland|Microsoft|Available|CH|
-|Taiwan|Partner|Available|TW|
-|Thailand|Partner|Available|TH|
-|United Arab Emirates|Partner|Available|AE|
-|United Kingdom|Microsoft|Available|GB|
-|United States|Microsoft|Available|US|
-|Vietnam|Partner|Available|VN|
+|Country/Region|Localized by|Availability|Environment Country in Tenant Admin Center|Azure Region|
+|-----------|---------|------------|-----------|---------|
+|Algeria|Partner|July 2021|||
+|Australia|Microsoft|Available|AU|Australia East|
+|Austria|Microsoft|Available|AT|West Europe, Netherlands|
+|Bangladesh|Partner|July 2021|||
+|Belgium|Microsoft|Available|BE|West Europe, Netherlands|
+|Brazil|Partner|Available|BR|Brazil South|
+|Canada|Microsoft|Available|CA|Canada Central|
+|Colombia|Partner|Available|CO|Brazil South|
+|Croatia|Partner|Available|HR|West Europe, Netherlands|
+|Czechia|Microsoft|Available|CZ|West Europe, Netherlands|
+|Denmark|Microsoft|Available|DK|North Europe, Ireland|
+|Egypt|Partner|July 2021|||
+|Estonia|Partner|Available|EE|North Europe, Ireland|
+|Faroe Islands (Denmark)|Microsoft|Available|DK|North Europe, Ireland|
+|Finland|Microsoft|Available|FI|North Europe, Ireland|
+|France|Microsoft|Available|FR|France Central|
+|Germany|Microsoft|Available|DE|Germany West Central|
+|Greece|Partner|Available|GR|West Europe, Netherlands|
+|Greenland (Denmark)|Microsoft|Available|DK|West Europe, Netherlands|
+|Hong Kong SAR|Partner|Available|HK|Southeast Asia, Singapore|
+|Hungary|Partner|Available|HU|West Europe, Netherlands|
+|Iceland|Microsoft|Available|IS|North Europe, Ireland|
+|Ireland|Partner|Available|IE|North Europe, Ireland|
+|Indonesia|Partner|Available|ID|Southeast Asia, Singapore|
+|India|Microsoft|Available|IN|Central India|
+|Italy|Microsoft|Available|IT|West Europe, Netherlands|
+|Japan|Partner|Available|JP|Southeast Asia, Singapore|
+|Kenya|Partner|July 2021|||
+|Latvia|Partner|Available|LV|North Europe, Ireland|
+|Lebanon|Partner|July 2021|||
+|Lithuania|Partner|Available|LT|North Europe, Ireland|
+|Luxembourg|Partner|July 2021|||
+|Malaysia|Partner|Available|MY|Southeast Asia, Singapore|
+|Malta|Partner|July 2021|||
+|Mexico|Microsoft|Available|MX|South Central US|
+|Morocco|Partner|July 2021|||
+|Netherlands|Microsoft|Available|NL|West Europe, Netherlands|
+|New Zealand|Microsoft|Available|NZ|Australia East|
+|Nigeria|Partner|July 2021|||
+|Norway|Microsoft|Available|NO|North Europe, Ireland|
+|Peru|Partner|Available|PE|Brazil South|
+|Philippines|Partner|Available|PH|Southeast Asia, Singapore|
+|Poland|Partner|Available|PL|West Europe, Netherlands|
+|Portugal|Partner|Available|PT|West Europe, Netherlands|
+|Qatar|Partner|July 2021|||
+|Romania|Partner|Available|RO|West Europe, Netherlands|
+|Russia **(on-premises only)**|Microsoft|Available|(Not listed)|N/A|
+|Saudi Arabia|Partner|July 2021|||
+|Serbia|Partner|Available|RS|West Europe, Netherlands|
+|Singapore|Partner|Available|SG|Southeast Asia, Singapore|
+|Slovenia|Partner|Available|SI|West Europe, Netherlands|
+|South Africa|Partner|Available|ZA|South Africa North|
+|South Korea|Partner|Available|KR|Southeast Asia, Singapore|
+|Spain|Microsoft|Available|ES|West Europe, Netherlands|
+|Sri Lanka|Partner|July 2021|||
+|Sweden|Microsoft|Available|SE|North Europe, Ireland|
+|Switzerland|Microsoft|Available|CH|West Europe, Netherlands|
+|Taiwan|Partner|Available|TW|Southeast Asia, Singapore|
+|Thailand|Partner|Available|TH|Southeast Asia, Singapore|
+|Tunisia|Partner|July 2021|||
+|Turkey|Partner|Available|TR|West Europe, Netherlands|
+|United Arab Emirates|Partner|Available|AE|UAE North|
+|United Kingdom|Microsoft|Available|GB|UK West|
+|United States|Microsoft|Available|US|East US|
+|Vietnam|Partner|Available|VN|Southeast Asia, Singapore|
 
 ## Important information regarding planned availability
 
@@ -109,6 +125,7 @@ This table gives an overview of supported languages and how application language
 |French (Canada)|fr-CA|Microsoft, Available on AppSource|
 |French (Switzerland)|fr-CH|Microsoft, Available on AppSource|
 |French (France)|fr-FR|Microsoft, Available on AppSource|
+|Greek (Greece)|gr-GR|Partner, Available on AppSource|
 |Croatian (Croatia)|hr-HR|Partner, Available on AppSource|
 |Hungarian (Hungary)|hu-HU|Partner, Available on AppSource|
 |Icelandic (Iceland)|is-IS|Microsoft, Available on AppSource|
@@ -117,12 +134,12 @@ This table gives an overview of supported languages and how application language
 |Japanese (Japan)|jp-JP|Partner, Available on AppSource|
 |Korean (Korea)|ko-KR|Partner, Available on AppSource|
 |Latvian (Latvia)|lv-LV|Partner, Available on AppSource|
-|Lithuanian (Lithuania)|lt-LT|Partner, Available on AppSource (pending)|
+|Lithuanian (Lithuania)|lt-LT|Partner, Available on AppSource|
 |Norwegian (Norway)|no-NO|Microsoft, Available on AppSource|
 |Dutch (Belgium)|nl-BE|Microsoft, Available on AppSource|
 |Dutch (Netherlands)|nl-NL|Microsoft, Available on AppSource|
 |Polish (Poland)|pl-PL|Partner, Available on AppSource|
-|Portuguese (Brazil)|pt-BR|Partner, Available on AppSource (pending)|
+|Portuguese (Brazil)|pt-BR|Partner, Available on AppSource|
 |Portuguese (Portugal)|pt-PT|Partner, Available on AppSource|
 |Romanian|ro-RO|Partner, Available on AppSource (pending)|
 |Russian (Russia)|ru-RU|Microsoft, Available on AppSource|
@@ -130,7 +147,7 @@ This table gives an overview of supported languages and how application language
 |Slovenian (Slovenia)|sl-SI|Partner, Available on AppSource|
 |Serbian (Serbia)|sr-latn-RS|Partner, Available on AppSource|
 |Swedish (Sweden)|sv-SE|Microsoft, Available on on AppSource|
-|Turkish (Turkey)|tr-TR|Partner, Available on AppSource (pending)|
+|Turkish (Turkey)|tr-TR|Partner, Available on AppSource|
 |Traditional Chinese (Hong Kong SAR)|zh-HK|Partner, Available on AppSource|
 |Traditional Chinese (Taiwan)|zh-TW|Partner, Available on AppSource|
 |Vietnamese (Vietnam)|vi-VN|Partner, Available on AppSource|
@@ -141,4 +158,4 @@ This table gives an overview of supported languages and how application language
 ## See Also
 
 [Rules and Guidelines for AL Code](apptest-overview.md)  
-[Checklist for Submitting Your App](../developer/devenv-checklist-submission.md)  
+[Checklist for Submitting Your App](../developer/devenv-checklist-submission.md)

@@ -1,8 +1,9 @@
 ---
 title: "RecordRef.Copy Method"
+description: "Copies a specified record referece's filters, views, automatically calculated FlowFields, marks, fields, and keys that are associated with the record from a table or creates a reference to a record."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # RecordRef.Copy Method
-> **Version**: _Available from runtime version 5.3._
+> **Version**: _Available or changed with runtime version 5.3._
 
 Copies a specified record referece's filters, views, automatically calculated FlowFields, marks, fields, and keys that are associated with the record from a table or creates a reference to a record.
 
@@ -24,15 +25,15 @@ Copies a specified record referece's filters, views, automatically calculated Fl
  RecordRef.Copy(FromRecordRef: RecordRef [, ShareTable: Boolean])
 ```
 ## Parameters
-*RecordRef*
-&emsp;Type: [RecordRef](recordref-data-type.md)
-An instance of the [RecordRef](recordref-data-type.md) data type.
+*RecordRef*  
+&emsp;Type: [RecordRef](recordref-data-type.md)  
+An instance of the [RecordRef](recordref-data-type.md) data type.  
 
 *FromRecordRef*  
 &emsp;Type: [RecordRef](recordref-data-type.md)  
 The record reference to copy.
         
-*ShareTable*  
+*[Optional] ShareTable*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 Specifies whether the method copies filters, views, automatically calculated FlowFields, marks, fields, and keys of the record or creates a reference to a temporary record. If FromRecord and Record are both temporary and ShareTable is true, then the COPY method causes Record to reference the same table as FromRecord. If ShareTable is true, then both Record and FromRecord must be temporary; otherwise an error will occur. The default value is false. If you specify false, only filters, marks, and keys are copied.
         

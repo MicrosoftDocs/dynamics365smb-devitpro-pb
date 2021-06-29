@@ -3,12 +3,12 @@ title: Authorization Trace | Microsoft Docs
 description: Learn about the Authorization telemetry in Business Central  
 author: jswymer
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.author: jswymer
 ---
 
@@ -188,7 +188,7 @@ Occurs when a company has failed to open.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|Version 16.1 and later (depending on the cause):<ul><li>**Authorization Failed (Open Company): Invalid company name.**</li><li>**Authorization Failed (Open Company): User has no permission to company.**</li><li>**Authorization Failed (Open Company): The tenant is locked.**</li><li>**Authorization Failed (Open Company): The license has expired or the trial period has ended.**</li><li>**Authorization Failed (Open Company): The user's license is not valid for use on production companies.**</li></ul>Before version 16.1:<br />**Authorization steps in the open company trigger failed, see failureReason column for details.**|
+|message|Version 16.1 and later (depending on the cause):<ul><li>**Authorization Failed (Open Company): Invalid company name.**</li><li>**Authorization Failed (Open Company): User has no permission to company.**</li><li>**Authorization Failed (Open Company): The tenant is locked.**</li><li>**Authorization Failed (Open Company): The license has expired or the trial period has ended.**</li><li>**Authorization Failed (Open Company): The user's license is not valid for use on production companies.**</li><li>**Authorization Failed (Open Company): Error in OnOpenCompany trigger**</li></ul>Before version 16.1:<br />**Authorization steps in the open company trigger failed, see failureReason column for details.**|
 |operation_Name|**Authorization Failed (Open Company)**<br /><br />**Note:** The use of the `operation_Name` column was deprecated in version 16.1. In future versions, data won't be stored in this column. So in version 16.1 and later, use the custom dimension column `eventID` column custom in Kusto queries instead of `operation_Name`.|
 |severityLevel|**3**|
 
@@ -270,6 +270,14 @@ This message occurs because the license doesn't allow the user to open productio
 
 Obtain a license that can be used on production companies. Licenses are purchased through the Cloud Solution Provider (CSP)
 program. For more information, see the [Cloud Service Provider site](https://partner.microsoft.com/cloud-solution-provider) and the [Microsoft Dynamics 365 Business Central Licensing Guide](https://download.microsoft.com/download/D/A/4/DA497449-9805-42DC-91F5-A857295C233D/Dynamics%20365%20Business%20Central%20Licensing%20Guide%20Oct%202019.pdf).
+
+#### Error in OnOpenCompany trigger
+
+This message occurs when AL code causes an error during the OnOpenCompany trigger or event.
+
+*Resolution*
+
+Because AL code can trigger any type of error, the resolution will depend on the executed AL code. See the **failureReason** dimension for a callstack to determine where the error occurred.
 
 ## See also
 

@@ -2,11 +2,11 @@
 title: "Technical Upgrade from Version 16 to Version 17"
 description: Describes how to do a technical upgrade from Business Central 16 to 17
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
 ms.service: "dynamics365-business-central"
@@ -54,7 +54,8 @@ In this task, you prepare the application and tenant databases for the upgrade.
 
     You'll need these packages later to re-publish and install the extensions again.
 -->
-3. (Single-tenant only) Uninstall all extensions from the old tenants.
+
+2. (Single-tenant only) Uninstall all extensions from the old tenants.
 
     Run the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 16.0 as an administrator. Use the [Uninstall-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp) cmdlet to uninstall an extension. For example, together with the Get-NAVAppInfo cmdlet, you can uninstall all extensions with a single command:
 
@@ -62,7 +63,7 @@ In this task, you prepare the application and tenant databases for the upgrade.
     Get-NAVAppInfo -ServerInstance <BC16 server instance> | % { Uninstall-NAVApp -ServerInstance <BC16 server instance> -Name $_.Name -Version $_.Version }
     ```
 
-4. Unpublish all system, test, and application symbols.
+3. Unpublish all system, test, and application symbols.
 
     To unpublish symbols, use the Unpublish-NAVAPP cmdlet.  You can unpublish all symbols by using the Get-NAVAppInfo cmdlet with the `-SymbolsOnly` switch as follows:
 
@@ -72,7 +73,7 @@ In this task, you prepare the application and tenant databases for the upgrade.
 
     [What are symbols?](upgrade-overview-v15.md#Symbols)  
 
-5. (Multitenant only) Dismount the tenants from the application server instance.
+4. (Multitenant only) Dismount the tenants from the application server instance.
 
     To dismount a tenant, use the [Dismount-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/dismount-navtenant) cmdlet:
 
@@ -80,7 +81,7 @@ In this task, you prepare the application and tenant databases for the upgrade.
     Dismount-NAVTenant -ServerInstance <BC16 server instance> -Tenant <tenant ID>
     ```
 
-6. Stop the server instance.
+5. Stop the server instance.
 
     ```powershell
     Stop-NAVServerInstance -ServerInstance <BC16 server instance>
@@ -124,6 +125,7 @@ This task runs a technical upgrade on the application database. A technical upgr
     DatabaseLocation    :
     Collation           :
     ```
+[!INCLUDE[convert_azure_sql_db_timeout](../developer/includes/convert_azure_sql_db_timeout.md)]
 
 ## Task 5: Configure version 17 server
 

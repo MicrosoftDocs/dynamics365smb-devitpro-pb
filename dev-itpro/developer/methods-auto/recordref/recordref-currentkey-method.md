@@ -1,8 +1,9 @@
 ---
 title: "RecordRef.CurrentKey Method"
+description: "Gets the current key of the table referred to by the RecordRef. The current key is returned as a string."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # RecordRef.CurrentKey Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Gets the current key of the table referred to by the RecordRef. The current key is returned as a string.
 
@@ -27,13 +28,13 @@ CurrentKey :=   RecordRef.CurrentKey()
 > This method can be invoked using property access syntax.
 
 ## Parameters
-*RecordRef*
-&emsp;Type: [RecordRef](recordref-data-type.md)
-An instance of the [RecordRef](recordref-data-type.md) data type.
+*RecordRef*  
+&emsp;Type: [RecordRef](recordref-data-type.md)  
+An instance of the [RecordRef](recordref-data-type.md) data type.  
 
 ## Return Value
-*CurrentKey*
-&emsp;Type: [String](../string/string-data-type.md)
+*CurrentKey*  
+&emsp;Type: [String](../string/string-data-type.md)  
 The name of the current key of the record.
 
 

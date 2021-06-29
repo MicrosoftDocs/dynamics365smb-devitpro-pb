@@ -1,8 +1,9 @@
 ---
 title: "InStream.Read Method"
+description: "Reads a specified number of bytes from an InStream object. Data is read in binary format."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # InStream.Read Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Reads a specified number of bytes from an InStream object. Data is read in binary format.
 
@@ -24,21 +25,21 @@ Reads a specified number of bytes from an InStream object. Data is read in binar
 [Read := ]  InStream.Read(var Variable: Boolean [, Length: Integer])
 ```
 ## Parameters
-*InStream*
-&emsp;Type: [InStream](instream-data-type.md)
-An instance of the [InStream](instream-data-type.md) data type.
+*InStream*  
+&emsp;Type: [InStream](instream-data-type.md)  
+An instance of the [InStream](instream-data-type.md) data type.  
 
 *Variable*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
   
-*Length*  
+*[Optional] Length*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 Describes the number of characters to be read. If you do not specify Length, the size of the variable is used. In the case of data types other than string, code, and binary, if you specify a length that differs from the size of the variable, you receive an error message.  
 
 
 ## Return Value
-*Read*
-&emsp;Type: [Integer](../integer/integer-data-type.md)
+*[Optional] Read*  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
  If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

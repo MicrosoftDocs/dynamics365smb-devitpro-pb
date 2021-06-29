@@ -2,7 +2,7 @@
 title: "Keys cannot be deleted."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,6 +20,9 @@ Keys cannot be deleted.
 Keys cannot be deleted.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+For more information, see [AS0010](appsourcecop-as0010-primarykeydeletenotallowed.md).
+
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  

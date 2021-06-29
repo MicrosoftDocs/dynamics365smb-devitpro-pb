@@ -1,8 +1,9 @@
 ---
 title: "Report.PaperSource Method"
+description: "Gets or sets the paper source used for the current page or a specified page."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Report.PaperSource Method
-> **Version**: _Available from runtime version 1.0 until version 1.0 where it was deprecated._
+> **Version**: _Available or changed with runtime version 1.0 until version 1.0 where it was deprecated._
 
 Gets or sets the paper source used for the current page or a specified page.
 
@@ -24,14 +25,14 @@ Gets or sets the paper source used for the current page or a specified page.
  Report.PaperSource(PaperBinNo: Integer [, PhysicalPage: Integer])
 ```
 ## Parameters
-*Report*
-&emsp;Type: [Report](report-data-type.md)
-An instance of the [Report](report-data-type.md) data type.
+*Report*  
+&emsp;Type: [Report](report-data-type.md)  
+An instance of the [Report](report-data-type.md) data type.  
 
 *PaperBinNo*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The tray number.  
-*PhysicalPage*  
+*[Optional] PhysicalPage*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The page number.  
 

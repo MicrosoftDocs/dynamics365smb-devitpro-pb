@@ -1,8 +1,9 @@
 ---
 title: "Report.SaveAsPdf Method"
+description: "Saves a report as a .pdf file."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Report.SaveAsPdf Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Saves a report as a .pdf file.
 
@@ -34,14 +35,14 @@ The ID of the report that you want to run.
 &emsp;Type: [String](../string/string-data-type.md)  
 The path and name of the file that you want to save the report as.
         
-*Record*  
+*[Optional] Record*  
 &emsp;Type: [Record](../record/record-data-type.md)  
 Specifies which record to use in the report. Any filters that have been applied to the record that you specify will be used.  
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*[Optional] Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
@@ -52,7 +53,7 @@ Specifies which record to use in the report. Any filters that have been applied 
 
  When you call **SaveAsPDF**, the report is generated and saved to "*FileName*." A **Saving to PDF** window shows the status of the process. Note that the request page will not be shown.  
 
- The *FileName* parameter specifies a location on the computer that is running [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)]. If you call this method from a client, such as from an action on a page, then use the [DOWNLOAD Method \(File\)](../../methods/devenv-download-method-file.md) to download the .pdf file from the computer that is running [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] to the computer that is running the client.  
+ The *FileName* parameter specifies a location on the computer that is running [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)]. If you call this method from a client, such as from an action on a page, then use the [DOWNLOAD Method \(File\)](../file/file-download-method.md) to download the .pdf file from the computer that is running [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] to the computer that is running the client.  
 
 > [!NOTE]  
 >  By default, when a report uses an RDLC report layout at runtime, fonts are embedded in the generated PDF. You can specify whether fonts are embedded in the PDF for RDLC reports by changing the **Report PDF Font Embedding** setting in the [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] instance configuration or changing the **PDFFontEmbedding** property in report objects. <!--NAV For more information, see [Configuring Microsoft Dynamics NAV Server](Configuring-Microsoft-Dynamics-NAV-Server.md) and [PDFFontEmbedding Property](../properties/devenv-PDF-FontEmbedding-Property.md).-->  

@@ -1,8 +1,9 @@
 ---
 title: "NavApp.GetArchiveRecordRef Method"
+description: "Returns a RecordRef for the specified table."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # NavApp.GetArchiveRecordRef Method
-> **Version**: _Available from runtime version 1.0 until version 6.0 where it was deprecated for the following reason: "The features related to data migration from V1 to V2 extensions are being deprecated."_
+> **Version**: _Available or changed with runtime version 1.0 until version 6.0 where it was deprecated for the following reason: "The features related to data migration from V1 to V2 extensions are being deprecated."_
 
 Returns a RecordRef for the specified table.
 
@@ -33,8 +34,8 @@ Specifies the reference.
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*[Optional] Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true**, if a record was found; other **false**
 
 

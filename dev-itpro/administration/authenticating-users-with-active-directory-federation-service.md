@@ -1,11 +1,11 @@
 ---
 title: "Authenticating Users with Active Directory Federation Services"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
@@ -18,7 +18,7 @@ Your deployment must meet the following prerequisites:
 
 -   Active Directory Federation Services (AD FS) is installed on the computer that you want to prepare as the federation server.
 
-    For more information, see [Active Directory Federation Services](https://go.microsoft.com/fwlink/?linkid=849251).
+    For more information, see [Active Directory Federation Services](/windows-server/identity/active-directory-federation-services).
 
     To complete the steps in this article, you will need to know the public URL for AD FS server. This URL needs to be accessible from a web browser on the computer that is running the [!INCLUDE[server](../developer/includes/server.md)] instance.
 
@@ -309,4 +309,4 @@ For more information, see [Managing Users and Permissions](/dynamics365/business
 
 ## See Also  
 [Configuring Business Central Server](configure-server-instance.md)  
-[Authentication and Credential Types](Users-Credential-Types.md)  
+[Authentication and Credential Types](Users-Credential-Types.md)

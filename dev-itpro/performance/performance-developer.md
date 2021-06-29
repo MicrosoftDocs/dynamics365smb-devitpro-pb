@@ -2,11 +2,11 @@
 title: "Performance Article For Developers"
 description: Provides information for developers to help improve performance in Business Central
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: KennieNP
 ---
@@ -110,19 +110,19 @@ Reports generally fall into two categories. They can be specific to a single ins
 
 - Compared to Word layouts, RDL layouts can result in slower performance with document reports, especially for actions related to the user interface (like sending emails). For more information, see [Creating an RDL Layout Report](../developer/devenv-howto-rdl-report-layout.md).
 
-Read more about how to tune RDLC reports here:
+Read more about how to tune RDL reports here:
 - [RDLC Performance Optimization Tips](https://community.dynamics.com/business/b/navteam/posts/a-couple-of-rdlc-performance-optimization-tips)
 
-## Efficient extracts to data warehouses
+## Efficient extracts to data lakes or data warehouses
 
-When establishing a data warehouse, you typically need to do two types of data extraction:
+When establishing a data lake or a data warehouse, you typically need to do two types of data extraction:
 
 1. A historical load (all data from a given point-in-time)
 2. Delta loads (what's changed since the historical load)
 
-The fastest way to get a historical load from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online is to get a database export as a BACPAC file (using the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] admin center) and restore it in Azure SQL Database or on a SQL Server. For on-premises installations, you can just take a backup of the tenant database.
+The fastest (and least disruptive) way to get a historical load from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online is to get a database export as a BACPAC file (using the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] admin center) and restore it in Azure SQL Database or on a SQL Server. For on-premises installations, you can just take a backup of the tenant database.
 
-The fastest (and the less disruptive) way to get delta loads from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online is to set up API queries configured with read-scaleout and use the data audit field **LastModifiedOn** (introduced in version 17.0) on filters.
+The fastest (and least disruptive) way to get delta loads from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online is to set up API queries configured with read-scaleout and use the data audit field **LastModifiedOn** (introduced in version 17.0) on filters.
 
 ## AL performance patterns
 
@@ -158,7 +158,7 @@ Here are some examples of this pattern:
 
 There are many different ways to spin up a new task:
 
-- [Job Queue](/business-central/admin-job-queues-schedule-tasks.md)  
+- [Job Queue](/dynamics365/business-central/admin-job-queues-schedule-tasks)  
 - [TaskScheduler.CreateTask](../developer/methods-auto/taskscheduler/taskscheduler-data-type.md)  
 - [StartSession](../developer/methods-auto/session/session-startsession-method.md)  
 - [Page Background Task](../developer/devenv-page-background-tasks.md)  
@@ -259,7 +259,7 @@ Many performance issues can be traced back to missing indexes (also called keys 
 These articles on indexing are worth knowing as an AL developer:
 
 - [Table Keys and Performance in Business Central](../administration/optimize-sql-table-keys-and-performance.md)  
-- [Key Property](../developer/properties/devenv-key-property.md) 
+- [Key Property](../developer/properties/devenv-properties.md) 
 - [About SQL Server indexes](/sql/relational-databases/indexes/clustered-and-nonclustered-indexes-described?view=sql-server-ver15)
 
 Indexes have a cost to update, so it's recommended to not use them too frequently. 
@@ -328,9 +328,12 @@ The Performance Toolkit helps answer questions such as, "Does my solution for Bu
 
 For more information, see [The Performance Toolkit Extension](../developer/devenv-performance-toolkit.md).
 
+> [!NOTE]  
+> To test insert/update performance, make sure to un-install the test framework first. If the test framework is installed, then no insert/update statements can utilize bulk mode and will instead run row-by-row. 
+
 ### Performance Throughput Analysis
 
-The Performance Toolkit doesn't answer questions such as, "How many orders can Business Central process per hour?" For this kind of analysis, test the time to execute key scenarios using the Performance Toolkit, and then use the guidance on [Operational Limits for Business Central Online](/dynamics365/business-central/dev-itpro/administration/operational-limits-online). For advanced analysis, consider using a queueing model such as a [M/M/1 queue](https://en.wikipedia.org/wiki/M/M/1_queue) to answer whether the system can process the workload you intend.
+The Performance Toolkit doesn't answer questions such as, "How many orders can Business Central process per hour?" For this kind of analysis, test the time to execute key scenarios using the Performance Toolkit, and then use the guidance on [Operational Limits for Business Central Online](../administration/operational-limits-online.md). For advanced analysis, consider using a queueing model such as a [M/M/1 queue](https://en.wikipedia.org/wiki/M/M/1_queue) to answer whether the system can process the workload you intend.
 
 ### Performance telemetry
 
@@ -343,7 +346,7 @@ The following performance telemetry is available in Azure Application Insights (
 - Sessions started
 - Web Service Requests
 
-Read more in this section: [How to use telemetry to analyze performance](/dynamics365/business-central/dev-itpro/performance/performance-online#telemetry)
+Read more in this section: [How to use telemetry to analyze performance](./performance-online.md#telemetry)
 
 ### Troubleshooting
 
@@ -367,4 +370,4 @@ The following articles explain what you can do as a developer to tune your devel
 [Performance Online](performance-online.md)  
 [Performance of On-Premises Installations](performance-onprem.md)  
 [How to Work with a Performance Problem](performance-work-perf-problem.md)  
-[Performance tips for business users](performance-users.md)  
+[Performance tips for business users](performance-users.md)

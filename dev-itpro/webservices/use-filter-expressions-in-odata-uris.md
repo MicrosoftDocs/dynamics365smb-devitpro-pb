@@ -1,16 +1,18 @@
 ---
 title: "Using Filter Expressions in OData URIs"
+description: Learn how to use filter expressions in OData URIs to limit the results returned in a document.
 author: jswymer
 ms.author: jswymer
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ---
 # Using Filter Expressions in OData URIs
-You can use filter expressions in OData URIs to limit the results that are returned in an AtomPub document. This topic identifies the filter expressions that you can use, describes the equivalent field or table filter that you can use in AL, and presents examples to show the syntax for using filter expressions in OData web service URIs and applications.  
+
+You use filter expressions in OData URIs to limit the results in a returned document. This article lists the filter expressions, and describes the equivalent field or table filter in AL. It provides examples of syntax for using filter expressions in OData URIs and applications.  
 
 ## Filter Expressions  
  To add a filter to an OData URI, add `$filter=` to the end of the name of the published web service. For example, the following URI filters the **City** field in the **Customer** page to return all customers who are located in Miami:  
@@ -36,8 +38,8 @@ https://localhost:7048/BC130/OData/Company('CRONUS International Ltd.')/Customer
 |Different from \(not equal\)|`$filter=VAT_Bus_Posting_Group ne 'EXPORT'`<br /><br /> Query on Customer service. Returns all customers with VAT\_Bus\_Posting\_Group not equal to EXPORT.|\<>|  
 |endswith|`$filter=endswith(VAT_Bus_Posting_Group,'RT')`<br /><br /> Query on Customer service. Returns all customers with VAT\_Bus\_Posting\_Group values that end in RT.|\*|  
 |startswith|`$filter=startswith(Name, 'S')`<br /><br /> Query on Customer service. Returns all customers names beginning with “S”.||  
-|substringof|`$filter=substringof(Name, ‘urn’)`<br /><br /> Query on Customer service. Returns customer records for customers with names containing the string “urn”.||  
-|indexof|`$filter=indexof(Location_Code, ‘BLUE’) eq 0`<br /><br /> Query on Customer service. Returns customer records for customers having a location code beginning with the string BLUE.||  
+|contains|`$filter=contains(Name, 'urn')`<br /><br /> Query on Customer service. Returns customer records for customers with names containing the string “urn”.||  
+|indexof|`$filter=indexof(Location_Code, 'BLUE') eq 0`<br /><br /> Query on Customer service. Returns customer records for customers having a location code beginning with the string BLUE.||  
 |replace|`$filter=replace(City, 'Miami', 'Tampa') eq 'CODERED'`||  
 |substring|`$filter=substring(Location_Code, 5) eq 'RED'`<br /><br /> Query on Customer service. Returns true for customers with the string RED in their location code starting as position 5.||  
 |tolower|`$filter=tolower(Location_Code) eq 'code red'`||  
@@ -48,14 +50,16 @@ https://localhost:7048/BC130/OData/Company('CRONUS International Ltd.')/Customer
 |floor|`$filter=floor(FDecimal) eq 0`||  
 |ceiling|`$filter=ceiling(FDecimal) eq 1`||  
 
-## Referencing Different Data Types in Filter Expressions  
- You must use the appropriate notation for different data types with filter expressions.  
+## Referencing Different Data Types in Filter Expressions
+
+Use the appropriate notation for different data types with filter expressions.  
 
 - String values must be delimited by single quotation marks.  
 
-- Numeric values require no delimiters.  
+- Numeric values require no delimiters.
 
-For more information about data types and other information about conventions and standards for OData URIs, see [Atom Publishing Protocol: URI Conventions](https://go.microsoft.com/fwlink/?LinkId=214635). Conventions for data types are addressed in section 2.2.2, "Abstract Type System."  
+## Nested function calls
+Nested function calls in filter clauses are not supported in the current OData implementation. This means that filter clause expressions like `contains(tolower(field), 'some')` do not return the expected results - in this case a partial case-insensitive text search - but will instead either throw an error or return an undefined result.
 
 ## See Also
 

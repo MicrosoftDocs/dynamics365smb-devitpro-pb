@@ -1,8 +1,9 @@
 ---
 title: "Query.SaveAsCsv Method"
+description: "Saves the resulting data set of a query as a comma separated values (CSV) file."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Query.SaveAsCsv Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Saves the resulting data set of a query as a comma separated values (CSV) file.
 
@@ -32,19 +33,19 @@ The ID of the query object. If the query that you specify does not exist, then a
 &emsp;Type: [OutStream](../outstream/outstream-data-type.md)  
 The stream that you want to save the query as CSV to.
         
-*Format*  
+*[Optional] Format*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 Specifies whether the columns of the resulting data set are at fixed positions in the CSV file or separated only by a delimiter.
         
-*FormatArgument*  
+*[Optional] FormatArgument*  
 &emsp;Type: [String](../string/string-data-type.md)  
 You set the FormatArgument parameter based on the setting of the Format parameter. If the Format parameter is set to 0, then the FormatArgument parameter specifies the starting position of each column in the data set. The value is a comma separated string of integers that includes an integer for every column. In a CSV file, each line is evenly divided into positions for holding characters. The first integer corresponds to the starting position of the first column, the second integer corresponds to the starting position of the second column, and so on.
           
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*[Optional] Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
@@ -52,7 +53,7 @@ You set the FormatArgument parameter based on the setting of the Format paramete
 
 ## Remarks
 
-A CSV file stores data in a plain text format. When you save a query dataset as a CSV file, each row of the dataset is stored on a separate line in the file, and each column in a row is separated by a comma or another delimiter of your choice. The first line of the file will contain the column names of the query. A query column name is specified by its [Name Property](../../properties/devenv-name-property.md).  
+A CSV file stores data in a plain text format. When you save a query dataset as a CSV file, each row of the dataset is stored on a separate line in the file, and each column in a row is separated by a comma or another delimiter of your choice. The first line of the file will contain the column names of the query. A query column name is specified by its [Name Property](../../properties/devenv-properties.md).  
 
 When the **SaveAsCSV** method is called the query dataset is generated and then saved in CSV format to the file that is designated by the *FileName* parameter.  
 

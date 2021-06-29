@@ -1,8 +1,9 @@
 ---
 title: "Text.IndexOfAny Method"
+description: "Reports the one-based index of the first occurrence in this instance of any character in a specified array of Unicode characters. The search starts at a specified character position."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Text.IndexOfAny Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Reports the one-based index of the first occurrence in this instance of any character in a specified array of Unicode characters. The search starts at a specified character position.
 
@@ -26,22 +27,22 @@ Index :=   Text.IndexOfAny(Values: List of [Char] [, StartIndex: Integer])
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
 ## Parameters
-*Text*
-&emsp;Type: [Text](text-data-type.md)
-An instance of the [Text](text-data-type.md) data type.
+*Text*  
+&emsp;Type: [Text](text-data-type.md)  
+An instance of the [Text](text-data-type.md) data type.  
 
 *Values*  
 &emsp;Type: [List of [Char]](../list/list-data-type.md)  
 The collection of characters to seek.
         
-*StartIndex*  
+*[Optional] StartIndex*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The one-based search starting position.  
 
 
 ## Return Value
-*Index*
-&emsp;Type: [Integer](../integer/integer-data-type.md)
+*Index*  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 The one-based index of the first occurrence of the specified string in this instance. If the index returned is 0, the value is not present in the string.
 
 

@@ -1,8 +1,9 @@
 ---
 title: "BigText.AddText Method"
+description: "Adds a text string to a BigText variable."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/03/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # BigText.AddText Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Adds a text string to a BigText variable.
 
@@ -24,15 +25,15 @@ Adds a text string to a BigText variable.
  BigText.AddText(String: BigText [, Position: Integer])
 ```
 ## Parameters
-*BigText*
-&emsp;Type: [BigText](bigtext-data-type.md)
-An instance of the [BigText](bigtext-data-type.md) data type.
+*BigText*  
+&emsp;Type: [BigText](bigtext-data-type.md)  
+An instance of the [BigText](bigtext-data-type.md) data type.  
 
 *String*  
 &emsp;Type: [BigText](bigtext-data-type.md)  
 The string that will be added to the BigText variable. If this parameter is empty, then the BigText variable is not modified.
         
-*Position*  
+*[Optional] Position*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 This is an optional parameter that defines the position in the BigText variable where the string is inserted. If this parameter is omitted, then the string is added at the end of the BigText variable. If this parameter is less than one, then a run-time error occurs. If this parameter is greater than the length of the BigText variable, then the string is added at the end of the BigText variable.  
 
@@ -50,7 +51,7 @@ The first character in a *BigText* variable is position 1.
 To delete the content in a *BigText* variable, use the [Clear Method](../../methods-auto/system/system-clear-joker-method.md). The following code shows the syntax for the method: `Clear(BigText)`  
   
 > [!NOTE]  
-> If you use AddText to add multiple BigText strings to what is presented as a single string, you can experience performance problems. The same applies to other repetitive uses of AddText. This is due to the implementation of the BigText data type, which relies on a String object that is immutable. You can avoid this issue by refactoring the code to reduce the number of additions or deletions. Alternatively, you can change your implementation to use the [System.Text.StringBuilder](https://go.microsoft.com/fwlink/?LinkId=285730) class instead. For more information, see [Immutability and the StringBuilder Class](https://go.microsoft.com/fwlink/?LinkId=285727) in the MSDN Library.  
+> If you use AddText to add multiple BigText strings to what is presented as a single string, you can experience performance problems. The same applies to other repetitive uses of AddText. This is due to the implementation of the BigText data type, which relies on a String object that is immutable. You can avoid this issue by refactoring the code to reduce the number of additions or deletions. Alternatively, you can change your implementation to use the [System.Text.StringBuilder](/dotnet/api/system.text.stringbuilder) class instead. For more information, see [Immutability and the StringBuilder Class](/dotnet/api/system.string) in the MSDN Library.  
   
 ## Example 1
 

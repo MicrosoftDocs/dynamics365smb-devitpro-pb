@@ -1,8 +1,9 @@
 ---
 title: "Report.SaveAsExcel Method"
+description: "Saves a report on the computer that is running the server as a Microsoft Excel (.xls) workbook."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Report.SaveAsExcel Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Saves a report on the computer that is running the server as a Microsoft Excel (.xls) workbook.
 
@@ -26,9 +27,9 @@ Saves a report on the computer that is running the server as a Microsoft Excel (
 [Ok := ]  Report.SaveAsExcel(FileName: String)
 ```
 ## Parameters
-*Report*
-&emsp;Type: [Report](report-data-type.md)
-An instance of the [Report](report-data-type.md) data type.
+*Report*  
+&emsp;Type: [Report](report-data-type.md)  
+An instance of the [Report](report-data-type.md) data type.  
 
 *FileName*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -37,8 +38,8 @@ The path and the name of the file that you want to save the report as. The path 
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*[Optional] Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

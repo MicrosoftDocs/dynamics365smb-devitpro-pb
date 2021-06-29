@@ -2,11 +2,11 @@
 title: Configure Web Client Delegation
 description: The client device, Web Client and Server are on separate computers. Web Client performs actions on behalf of client device called impersonation process.
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.assetid: 186b2dcd-97d5-499d-928e-15c069bb18f1
 caps.latest.revision: 13

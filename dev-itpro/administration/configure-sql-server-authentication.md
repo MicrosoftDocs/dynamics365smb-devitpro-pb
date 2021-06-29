@@ -2,11 +2,11 @@
 title: Configure SQL Server Authentication
 description: This topic describes how to configure SQL Server Authentication between the Dynamics Business Central instance and a Dynamics NAV database. 
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
@@ -27,11 +27,11 @@ This article describes how to configure SQL Server Authentication. You perform t
   
 ### Create and import encryption key  
   
-1.  In the [!INCLUDE[adminshell](../developer/includes/adminshell.md)], run the [New-NAVEncryptionkey cmdlet](https://go.microsoft.com/fwlink/?LinkID=521780).  
+1.  In the [!INCLUDE[adminshell](../developer/includes/adminshell.md)], run the [New-NAVEncryptionkey cmdlet](/powershell/module/microsoft.dynamics.nav.management/new-navencryptionkey).  
   
      This creates a file that contains an encryption key. If you already have an encryption key file, you can skip this step.  
   
-2.  Run the [Import-NAVEncryptionkey cmdlet](https://go.microsoft.com/fwlink/?LinkID=518094) to install the encryption key on the [!INCLUDE[server](../developer/includes/server.md)] instance and database.  
+2.  Run the [Import-NAVEncryptionkey cmdlet](/powershell/module/microsoft.dynamics.nav.management/import-navencryptionkey) to install the encryption key on the [!INCLUDE[server](../developer/includes/server.md)] instance and database.  
   
 On the computer running the [!INCLUDE[server](../developer/includes/server.md)]  instance, the encryption key file has the name [!INCLUDE[serverinstance](../developer/includes/serverinstance.md)].key and is stored in the `%systemroot%\ProgramData\Microsoft\Microsoft Dynamics NAV\[version]\Server\Keys`. In the database, the encryption key is registered in the dbo.$ndo$publicencryptionkey table. In a multitenant deployment, the encryption key is registered in the application database.
   
@@ -45,11 +45,11 @@ On the computer running the [!INCLUDE[server](../developer/includes/server.md)] 
   
 1.  Configure the SQL Server instance \(Database Engine\) that hosts the [!INCLUDE[!INCLUDE[prod_short](../developer/includes/prod_short.md)] database to use SQL Server Authentication.  
   
-     To use SQL Server authentication, you configure the database instance to mixed authentication mode \(SQL Server and Windows Authentication\). For more information, see [Change Server Authentication Mode](https://technet.microsoft.com/library/ms188670.aspx).  
+     To use SQL Server authentication, you configure the database instance to mixed authentication mode \(SQL Server and Windows Authentication\). For more information, see [Change Server Authentication Mode](/sql/database-engine/configure-windows/change-server-authentication-mode).  
   
 2.  In the SQL Server instance, create a login that uses SQL Server authentication.  
   
-     For more information, see [Create a Login](https://msdn.microsoft.com/library/aa337562.aspx).  
+     For more information, see [Create a Login](/sql/relational-databases/security/authentication-access/create-a-login).  
   
 3.  Map the login to a user in the [!INCLUDE[!INCLUDE[prod_short](../developer/includes/prod_short.md)] database, and give the user the relevant privileges in the [!INCLUDE[!INCLUDE[prod_short](../developer/includes/prod_short.md)] database.  
   
@@ -87,11 +87,11 @@ On the computer running the [!INCLUDE[server](../developer/includes/server.md)] 
   
 ### Configure SQL Authentication on a server instance using [!INCLUDE[adminshell](../developer/includes/adminshell.md)]  
   
--   If you are modifying an existing [!INCLUDE[server](../developer/includes/server.md)] instance, run the [Set-NAVServerConfiguration cmdlet](https://go.microsoft.com/fwlink/?LinkID=401394).  
+-   If you are modifying an existing [!INCLUDE[server](../developer/includes/server.md)] instance, run the [Set-NAVServerConfiguration cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration).  
   
      Use the *DatabaseCredentials* parameter to provide the login credentials of the database user that you want to use to access the application database.  
   
--   If you are creating a new [!INCLUDE[server](../developer/includes/server.md)] instance, run the [New-NAVServerInstance cmdlet](https://go.microsoft.com/fwlink/?LinkID=401376).  
+-   If you are creating a new [!INCLUDE[server](../developer/includes/server.md)] instance, run the [New-NAVServerInstance cmdlet](/powershell/module/microsoft.dynamics.nav.management/new-navserverinstance).  
   
      Use the *DatabaseCredentials* parameter to provide the login credentials of the database user that you want to use to access the application database.  
   
@@ -140,19 +140,19 @@ To configure a SQL Server Authentication on a [!INCLUDE[server](../developer/inc
   
 1.  Configure SQL Server Authentication with the application database as follows:  
   
-    -   If you are modifying an existing [!INCLUDE[server](../developer/includes/server.md)] instance, run the [Set-NAVServerConfiguration cmdlet](https://go.microsoft.com/fwlink/?LinkID=401394).  
+    -   If you are modifying an existing [!INCLUDE[server](../developer/includes/server.md)] instance, run the [Set-NAVServerConfiguration cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration).  
   
          Use the *DatabaseCredentials* parameter to provide the login credentials of the database user that you want to use to access the application database.  
   
-    -   If you are creating a new [!INCLUDE[server](../developer/includes/server.md)] instance, run the [New-NAVServerInstance cmdlet](https://go.microsoft.com/fwlink/?LinkID=401376).  
+    -   If you are creating a new [!INCLUDE[server](../developer/includes/server.md)] instance, run the [New-NAVServerInstance cmdlet](/powershell/module/microsoft.dynamics.nav.management/new-navserverinstance).  
   
          Use the *DatabaseCredentials* parameter to provide the login credentials of the database user that you want to use to access the application database.  
   
-2.  To configure SQL Authentication with the tenant database, run the [Mount-NAVTenant cmdlet](https://go.microsoft.com/fwlink/?LinkID=401372).  
+2.  To configure SQL Authentication with the tenant database, run the [Mount-NAVTenant cmdlet](/powershell/module/microsoft.dynamics.nav.management/mount-navtenant).  
   
      Use the *DatabaseCredentials* parameter to provide the login credentials of the database user that you want to use to access the tenant database.  
   
 ## See Also  
 [Installation Considerations for Microsoft SQL Server](../deployment/installation-considerations-for-microsoft-sql-server.md)  
 [Deployment](../deployment/deployment.md)  
-[Installing Business Central Using Setup](../deployment/install-using-setup.md)  
+[Installing Business Central Using Setup](../deployment/install-using-setup.md)

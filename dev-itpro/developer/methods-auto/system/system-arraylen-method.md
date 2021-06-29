@@ -1,8 +1,9 @@
 ---
 title: "System.ArrayLen Method"
+description: "Returns the total number of elements in an array or the number of elements in a specific dimension."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # System.ArrayLen Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Returns the total number of elements in an array or the number of elements in a specific dimension.
 
@@ -30,14 +31,14 @@ Length :=   System.ArrayLen(Array: Array of [Any] [, Dimension: Integer])
 &emsp;Type: [Any](../any/any-data-type.md)  
 The array that you want to investigate.
         
-*Dimension*  
+*[Optional] Dimension*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 If you omit this optional argument, the method returns the total number of elements in the array. To get the number of elements in a specific dimension, use Dimension with a valid value. The valid values are determined by the number of dimensions of the input array. For example, the valid values for a three-dimensional array would be 1, 2, and 3.  
 
 
 ## Return Value
-*Length*
-&emsp;Type: [Integer](../integer/integer-data-type.md)
+*Length*  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 
 
 

@@ -2,11 +2,11 @@
 title: Table Keys and Performance
 description: AL code searches through a subset of the record in a table, consider what keys define the tables and write code that optimizes the keys.
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.assetid: f64156c7-0319-40ef-adfa-2c1d4ee1b852
 caps.latest.revision: 15

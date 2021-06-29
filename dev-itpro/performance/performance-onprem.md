@@ -2,11 +2,11 @@
 title: "Performance of Business Central On-Premises Installations"
 description: Learn about how you can investigate and improve performance in Business Central
 ms.custom: na
-ms.date: 01/21/2021
+ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: KennieNP
 ---
@@ -57,6 +57,7 @@ You can adjust the following [!INCLUDE[server](../developer/includes/server.md)]
 | DisableQueryHintForceOrder | Check if this setting is set to **true**. | [Configuring Query Hints for Optimizing SQL Server Performance with Business Central](../administration/sql-server-query-hints.md) |
 | DisableQueryHintLoopJoin | Check if this setting is set to **true**. | [Configuring Query Hints for Optimizing SQL Server Performance with Business Central](../administration/sql-server-query-hints.md) |
 | DisableSmartSql | If the performance of loading a page that contains FlowFields in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is bad, you might want to try isolating and testing FlowField queries separately. | [Troubleshooting: Long Running SQL Queries Involving FlowFields by Disabling SmartSQL](../administration/troubleshooting-queries-involving-flowfields-by-disabling-smartsql.md) |
+|EnableCloudReplicationMaintenance|Specifies whether to keep the cloud replication status in the database up to date. When enabled, synchronize operations on tenants and extensions will update records in the **Intelligent Cloud Status** table, and set change tracking on tables that are configured to [replicate data](../developer/properties/devenv-replicatedata-property.md).<br /><br />Enabling this setting isn't required for migrating most on-premises solutions to the cloud, and you'll improve synchronization and upgrade performance by disabling it.|[Configuring Business Central Server - EnableCloudReplicationMaintenance](../administration/configure-server-instance.md#Compatibility)|
 |EnableProfileCacheSynchronization|	Specifies whether profile cache synchronization across multiple server instances is enabled. However, enabling this setting may lower the tenant performance.|[Configuring Business Central Server - EnableProfileCacheSynchronization](../administration/configure-server-instance.md#profilecache)|
 | SqlBulkImportBatchSize | Specifies how many SQL memory chunks that a data import must be distributed across. Lowering the value increases the number of network transfers and decreases performance. But it also lowers the amount of memory that the server instance consumes.  | [Database Settings](../administration/configure-server-instance.md#Database) |
 |SessionEventTableRetainInterval<br /><br />  NonInteractiveSessionsLogRetainInterval<br /><br /> SessionEventTablePurgeLookupPeriod|The system table **2000000111 Session Event** stores information about sessions between [!INCLUDE[server](../developer/includes/server.md)] instances and clients. Entries are recorded for various events, like when a user signs in or out of the client, or when a web service request starts or stops.<br /><br />It's a good idea to limit the number of entries in this table because performance can be adversely affected as the table size grows. Under normal conditions, you shouldn't experience any problems. But there might be situations or periods, typically dealing with web service calls, during which a high number of session events occur. <br /><br />These three settings enable you to control the table size by specifying how long to keep entries in the table before they are automatically deleted.|[Configuring Business Central Server - Session Event Table](../administration/configure-server-instance.md#session)|

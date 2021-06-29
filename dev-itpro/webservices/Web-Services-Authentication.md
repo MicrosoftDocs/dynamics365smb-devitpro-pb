@@ -2,11 +2,11 @@
 title: "Web Services Authentication"
 description: Learn about authenticating web services in business Central
 ms.custom: na
-ms.date: 01/07/2021
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
@@ -63,7 +63,7 @@ Typically, you would create a user account strictly for web services, and then u
   
     |To|See|  
     |--------|---------|  
-    |Learn how to use code to pass the user name and web access key to a web service|[Passing Credentials for Authentication to Web Services](https://go.microsoft.com/fwlink/?LinkID=259554)|
+    |Learn how to use code to pass the user name and web access key to a web service|[Passing Credentials for Authentication to Web Services](/previous-versions/msp-n-p/ff649362(v=pandp.10))|
   
 ## See Also
 

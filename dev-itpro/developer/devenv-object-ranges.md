@@ -5,10 +5,10 @@ author: SusanneWindfeldPedersen
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: solsen
-ms.date: 02/03/2021
+ms.date: 04/01/2021
 ---
 
 # Object Ranges in [!INCLUDE[prod_short](includes/prod_short.md)]
@@ -27,7 +27,9 @@ This range is assigned to [!INCLUDE[prod_short](includes/prod_short.md)] base ap
 
 ## 50,000-99,999
 
-This range is for test purposes. Use this range as part of training and similar, such as if you are using a sandbox tenant or a build of [!INCLUDE[prod_short](includes/prod_short.md)] on Docker.
+This range is for customizations, and for test purposes. For [!INCLUDE [prod_short](includes/prod_short.md)] online, a partner can develop an extension tailored to the individual tenant to fit the needs. The partner will develop this either by using a sandbox tenant or by obtaining a Docker image. Once the development is done, the extension can be deployed to the individual tenant.
+
+Also, use this range as part of training and similar, such as if you are using a sandbox tenant or a build of [!INCLUDE[prod_short](includes/prod_short.md)] on Docker.
 
 ## 100,000-999,999
 
@@ -35,7 +37,7 @@ The objects in this range are mainly designed when the Microsoft team localizes 
 
 ## 1,000,000-69,999,999
 
-This object range is intended for the Registered Solution Program (RSP). The partner can choose to use this range for developing extensions that can be used either in [!INCLUDE[navnow_md](includes/navnow_md.md)] on-premise or in [!INCLUDE[prod_short](includes/prod_short.md)] in the cloud.  
+This object range is intended for the Registered Solution Program (RSP). The partner can choose to use this range for developing extensions that can be used in [!INCLUDE[prod_short](includes/prod_short.md)] online or on-premises. When used in [!INCLUDE[prod_short](includes/prod_short.md)] online, these extensions are obtained as apps from [appsource.microsoft.com](https://appsource.microsoft.com).
 
 ## 70,000,000-74,999,999
 

@@ -1,8 +1,9 @@
 ---
 title: "WebServiceActionContext.AddEntityKey Method"
+description: "Add a new \<fieldId, value\> pair to the collection of entity keys."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # WebServiceActionContext.AddEntityKey Method
-> **Version**: _Available from runtime version 2.0._
+> **Version**: _Available or changed with runtime version 2.0._
 
 Add a new \<fieldId, value\> pair to the collection of entity keys.
 
@@ -24,9 +25,9 @@ Add a new \<fieldId, value\> pair to the collection of entity keys.
 [Ok := ]  WebServiceActionContext.AddEntityKey(FieldId: Integer, FieldValue: Any)
 ```
 ## Parameters
-*WebServiceActionContext*
-&emsp;Type: [WebServiceActionContext](webserviceactioncontext-data-type.md)
-An instance of the [WebServiceActionContext](webserviceactioncontext-data-type.md) data type.
+*WebServiceActionContext*  
+&emsp;Type: [WebServiceActionContext](webserviceactioncontext-data-type.md)  
+An instance of the [WebServiceActionContext](webserviceactioncontext-data-type.md) data type.  
 
 *FieldId*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
@@ -38,8 +39,8 @@ The value for the field in the entity key.
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*[Optional] Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if adding the entity key succeeded, otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

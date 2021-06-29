@@ -4,7 +4,8 @@
       {
         "files": [
           "**/*.md",
-          "**/*.yml"
+          "**/*.yml",
+          "**/*.yaml"
         ],
         "exclude": [
           "**/obj/**",
@@ -39,19 +40,23 @@
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/dynamics365smb-devitpro-pb",
       "feedback_product_url": "https://experience.dynamics.com/ideas/categories/?forum=e288ef32-82ed-e611-8101-5065f38b21f1&forumName=Dynamics%20365%20Business%20Central",
-      "ms.author": "solsen",	
-      "searchScope": ["Dynamics 365", "BusinessCentral"],
+      "ms.author": "solsen",
+      "searchScope": [
+        "dynamics365-bc-devitpro",
+        "Dynamics 365",
+        "BusinessCentral"
+      ],
       "uhfHeaderId": "MSDocsHeader-Dynamics365",
       "titleSuffix": "Business Central",
       "search.app": "businesscentral",
       "search.audienceType": "admin, developer",
       "breadcrumb_path": "/dynamics365/business-central/dev-itpro/breadcrumb/toc.json",
       "ms.service": "dynamics365-business-central",
-      "extendBreadcrumb": true
+      "extendBreadcrumb": true,
+      "recommendations": "true"
     },
     "fileMetadata": {
-      "author":
-      {
+      "author": {
         "administration/*.md": "jswymer",
         "compliance/*.md": "SusanneWindfeldPedersen",
         "cside/*.md": "jswymer",
@@ -66,7 +71,7 @@
         "webservices/*.md": "jswymer",
         "whatsnew/*.md": "SusanneWindfeldPedersen"
       }
-   },
+    },
     "template": [],
     "dest": "dev-itpro",
     "markdownEngineName": "markdig"

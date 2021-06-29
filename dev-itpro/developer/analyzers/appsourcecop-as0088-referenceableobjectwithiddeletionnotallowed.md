@@ -1,8 +1,8 @@
 ---
-title: "Objects with an ID that can be referenced and which have been published must not be deleted."
+title: "AppSourceCop Rule AS0088"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/25/2020
+ms.date: 05/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AppSourceCop Rule AS0088
-Objects with an ID that can be referenced and which have been published must not be deleted.  
+Objects with an ID that can be referenced and which have been published must not be deleted.
 
 ## Description
 Objects that can be referenced by ID and which have been published must not be deleted. This might break the upgrade of existing installations and dependent extensions.

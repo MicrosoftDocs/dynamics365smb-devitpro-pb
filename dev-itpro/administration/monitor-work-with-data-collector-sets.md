@@ -1,11 +1,11 @@
 ---
 title: "Working with Data Collector Sets"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.assetid: e4a306a8-3a68-4e1f-a31a-bb01663e82c2
 caps.latest.revision: 10
@@ -22,7 +22,7 @@ A *Data Collector Set* organizes data collection points, such as performance cou
   
  [View Performance Counter Data for a Data Collector Set](monitor-view-performance-counter-data-for-data-collector-set.md)  
   
- For general information about Data Collector Sets, see [Creating Data Collector Sets](https://technet.microsoft.com/library/cc749337.aspx).  
+ For general information about Data Collector Sets, see [Creating Data Collector Sets](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc749337(v=ws.11)).  
   
 ## See Also  
  [Business Central Performance Counters](performance-counters.md)

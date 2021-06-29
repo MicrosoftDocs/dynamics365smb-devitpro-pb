@@ -1,8 +1,9 @@
 ---
 title: "Dictionary.ContainsKey Method"
+description: "Determines whether the Dictionary contains the specified key."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Dictionary.ContainsKey Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Determines whether the Dictionary contains the specified key.
 
@@ -24,9 +25,9 @@ Determines whether the Dictionary contains the specified key.
 Ok :=   Dictionary.ContainsKey(Key: TKey)
 ```
 ## Parameters
-*Dictionary*
-&emsp;Type: [Dictionary](dictionary-data-type.md)
-An instance of the [Dictionary](dictionary-data-type.md) data type.
+*Dictionary*  
+&emsp;Type: [Dictionary](dictionary-data-type.md)  
+An instance of the [Dictionary](dictionary-data-type.md) data type.  
 
 *Key*  
 &emsp;Type: [TKey](dictionary-data-type.md)  
@@ -34,8 +35,8 @@ The key to locate in the Dictionary.
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the Dictionary contains an element with the specified key, otherwise **false**.
 
 

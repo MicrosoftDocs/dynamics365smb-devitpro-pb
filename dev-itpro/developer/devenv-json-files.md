@@ -3,11 +3,11 @@ title: "JSON Files"
 description: "Description of the settings of the app and launch JSON files for AL in Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 02/01/2021
+ms.date: 04/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
@@ -28,9 +28,9 @@ The following table describes the settings in the `app.json` file. For an exampl
 
 |Setting|Mandatory|Value|
 |-------|---------|-----|
-|id|Yes|The unique ID of the extension. When the `app.json` file is automatically created, the ID is set to a new GUID value. <br>**Note:** The appId is used at runtime to bind table names contained in the application. Changing the appId will result in data from old tables not being used.|
-|name|Yes|The unique extension name.|
-|publisher|Yes|The name of your publisher, for example: **NAV Partner**, **LLC**.|
+|id|Yes|The unique ID of the extension. When the `app.json` file is automatically created, the ID is set to a new GUID value. <br>**Note:** The app ID is used at runtime to bind table names contained in the application. Changing the app ID will result in data from old tables not being used.|
+|name|Yes|The unique extension name. <br>**Note:** The name can be used by other extensions to express a compile-time dependency on the extension. Changing the name of your extension will force any extensions that have taken a dependency to update their manifest and can cause upgrade/extension deployment issues. For more information, see [App Identity](devenv-app-identity.md).|
+|publisher|Yes|The name of your publisher, for example: **NAV Partner**, **LLC**. <br>**Note:** The publisher can be used by other extensions to express a compile-time dependency on the extension. Changing the publisher of your extension will force any extensions that have taken a dependency to update their manifest and can cause upgrade/extension deployment issues. |
 |brief|No, but required for AppSource submission|Short description of the extension.|
 |description|No, but required for AppSource submission|Longer description of the extension.|
 |version|Yes|The version of the app package.|
@@ -39,23 +39,24 @@ The following table describes the settings in the `app.json` file. For an exampl
 |help|No, but required for AppSource submission|URL to an online description of the extension. The link is used in AppSource and can be the same as the value of the `contextSensitiveHelpUrl` property or a different link, such as a link to your marketing page.|
 |url|No, but required for AppSource submission|URL of the extension package.|
 |logo|No, but required for AppSource submission|Relative path to the app package logo from the root of the package.|
+|test|No|Version of the dependent test framework in the format X.Y.U.Z. <br>**Note:** This property is only supported for Business Central version 14 and earlier, where the base app is C/AL.|
 |dependencies|No|List of dependencies for the extension package. For example: `"dependencies": [ {"id": "4805fd15-75a5-46a2-952f-39c1c4eab821", "name": "WeatherLibrary", "publisher": "Microsoft", "version": "1.0.0.0"},{}]`. <br>**Note:** For dependencies to the System Application and Base Application these are no longer listed as explicit dependencies, but captured in the `application` setting as a reference to the application package. Must be filled in with the version number of the Application package. See `application` below. <br>**Note:** The version specified defines the minimum version for the dependency. At runtime and when downloading symbols, the latest version of the dependency satisfying the specified name, publisher and, minimum version will be returned. When `runtime` is set to 4.0 or earlier, use `appId` instead of `id`.|
 |screenshots|No|Relative paths to any screenshots that should be in the extension package.|
 |platform|Yes, if system tables are referenced in the extension|The minimum supported version of the platform symbol package file, for example: "16.0.0.0". See the [Symbols](devenv-symbols.md) for the list of object symbols contained in the platform symbol package file.|
 |application|Yes, if base application is referenced in the extension|The supported version of the system and base application package file, for example: "16.0.0.0". The file name of this reference is Microsoft_Application.app and the `name` is `Application`. For code-customized base applications, the Microsoft_Application.app file can be modified to reference the code-customized base application instead. It is important to keep `"name": "Application"` in the extension, but information about publisher can be changed and the .app file can be renamed. For more information, see [The Microsoft_Application.app File](devenv-application-app-file.md).|
-|idRange|Yes|For example: `"idRange": {"from": 50100,"to": 50149}`. A range for application object IDs. For all objects outside the range, a compilation error will be raised. When you create new objects, an ID is automatically suggested.|
-|idRanges|Yes|For example: `"idRanges": [{"from": 50100,"to": 50200},{"from": 50202,"to": 50300}]`. A list of ranges for application object IDs. For all objects outside the ranges, a compilation error will be raised. When you create new objects, an ID is automatically suggested. You must use *either* the `idRange` *or* the `idRanges` setting. Overlapping ranges are not allowed and will result in a compilation error. |
+|idRange|Yes|For example: `"idRange": {"from": 50100,"to": 50149}`. A range for application object IDs. For all objects outside the range, a compilation error will be raised. When you create new objects, an ID is automatically suggested. To learn about which object ranges are allowed for your extension, see [Object Ranges](devenv-object-ranges.md).|
+|idRanges|Yes|For example: `"idRanges": [{"from": 50100,"to": 50200},{"from": 50202,"to": 50300}]`. A list of ranges for application object IDs. For all objects outside the ranges, a compilation error will be raised. When you create new objects, an ID is automatically suggested. You must use *either* the `idRange` *or* the `idRanges` setting. Overlapping ranges are not allowed and will result in a compilation error. To learn about which object ranges are allowed for your extension, see [Object Ranges](devenv-object-ranges.md).|
 |showMyCode|No|This is by default set to `false` and not visible in the manifest. To enable viewing the source code when debugging into an extension, add the following setting: `"showMyCode": true`|
 |target|No|By default this is `Cloud`. The setting currently has the following options: `Internal`, `Extension`, `OnPrem`, and `Cloud`. The `Internal` and `Extension` settings are being deprecated with runtime 4.0 and replaced by the `OnPrem` and `Cloud` respectively. For on-premises, you can set this to `OnPrem` to get access to otherwise restricted APIs and .NET Interop. The Business Central Server setting must then also be set to `OnPrem`. **Note:** System tables that have the [Scope](properties/devenv-scope-property.md) property set to `Internal`/`OnPrem` cannot be accessed from extensions that have `target` set to `Cloud`/`External` through direct reference or through RecordRef. For more information, see [Compilation Scope Overview](devenv-compilation-scope-overview.md)|
 |contextSensitiveHelpUrl|No, but required for AppSource submission|The URL for the website that displays context-sensitive Help for the objects in the app, such as `https://mysite.com/documentation/`. If the app does not support all locales currently supported by [!INCLUDE [prod_short](includes/prod_short.md)], then include a parameter for the locale in this URL, `/{0}/`, and also specify the relevant locales in the `supportedLocales` setting.|
 |helpBaseUrl|No|The URL for the website that overtakes all Help for the specified locales. This property is intended for localization apps specifically since the setting overwrites the default URL of `/{0}/dynamics365/business-central`. If you set this value, you must also specify one or more languages in the `supportedLocales` setting.|
 |supportedLocales|No|The list of locales that are supported in your Help if different from all locales. The value on the list is inserted into the URL defined in the `contextSensitiveHelpUrl` and `helpBaseUrl` properties. The first locale on the list is default. An example is `"supportedLocales": ["da-DK", "en-US"]` for an app that supports only Danish and English (US).|
-|runtime|Yes|The version of the runtime that the project is targeting. The project can be published to the server with an earlier or the same runtime version. The available options are: `1.0` - Business Central April 2018 release, `2.2` - Business Central October 2018 release CU 2, `3.0` - Business Central April 2019 release, `4.0` - Business Central 2019 release wave 2, and `5.0` - Business Central 2020 release wave 1.|
+|runtime|No|The version of the runtime that the project is targeting. The project can be published to the server with an earlier or the same runtime version. The available options are: <br>`1.0` - Business Central April 2018 Release <br>`2.0` - Business Central Fall '18 Release <br>`3.0` - Business Central Spring '19 Release <br> `4.0` - Business Central 2019 release wave 2 <br> `5.0` - Business Central 2020 release wave 1 <br>`6.0` - Business Central 2020 release wave 2 <br>`6.1` - Business Central 2020 release wave 2 update 17.1 <br> `6.2` - Business Central 2020 release wave 2 update 17.2 <br> `6.3` - Business Central 2020 release wave 2 update 17.3 <br> `6.4` - Business Central 2020 release wave 2 update 17.4 <br> `7.0` - Business Central 2021 release wave 1 <br><br>For more information, see [Choosing Runtime Version in AL](devenv-choosing-runtime.md).|
 |features|No|Specifies a list of options.<br><br> The `TranslationFile` option generates a `\Translations` folder that is populated with the .xlf file that contains all the labels, label properties, and report labels that you are using in the extension. The `GenerateCaptions` option depends on the `TranslationFile` setting. It generates captions for objects that do not have a `Caption` or `CaptionML` specified, these are then written to the .xlf file.<br><br> The `GenerateLockedTranslations` flag is used to generate `<trans-unit>` elements in the XLIFF file for locked labels. The syntax is `"features": [ "TranslationFile", "GenerateCaptions", "GenerateLockedTranslations" ]`. For more information, see [Working with Translation Files](devenv-work-with-translation-files.md).<br><br>When the `NoImplicitWith` flag is specified, `ImplicitWith` will be disabled by default. This flag is useful when all code has been rewritten to avoid any future usage of `ImplicitWith`. For more information, see [Pragma ImplicitWith](directives/devenv-directive-pragma-implicitwith.md) and [Deprecating Explicit and Implicit With Statements](devenv-deprecating-with-statements-overview.md).|
 |internalsVisibleTo|No|Specifies a list of modules that have access to the objects that are marked as `Internal` using the **Access** property from the current module.<br> The syntax is `{   "appId": "d6c3f231-08d3-4681-996f-261c06500e1a", "name": "TheConsumer", "publisher": "Microsoft"}]`. For more information see [Access Property](properties/devenv-access-property.md) and [InternalEvent Attribute](methods/devenv-internal-attribute.md). **Note:** Using `internalsVisibleTo` in Business Central online will throw a warning from AppSourceCop and PTECop. `Access = Internal` is *not* designed as a security boundary, but for API development.|
 |propagateDependencies|No|Specifies whether the dependencies of this project should be propagated as direct dependencies of projects that depend on this one. Default is `false`. If set to `true` then any dependencies of the current package will be visible to consumers of the package. For example, if A depends on B that depends on C, by default, A will not be able to use types defined in C. If B has `"propagateDependencies" : "true"`, then A will be able to use types defined in C without taking a direct dependency.<br>**Note:** `propagateDependencies` applies to all dependencies, there is no option to exclude specific dependencies.|
 |preprocessorSymbols|No|Defines any symbols to use with preprocessor directives. The syntax is `"preprocessorSymbols": [ "DEBUG" ]`. For more information, see [Preprocessor Directives in AL](directives/devenv-directives-in-al.md).|
-|applicationInsightsKey|No|The instrumentation key of the Azure Application Insights resource for monitoring operations, for example, like app secrets retrieval by extensions. <br><br>For more information, see [Monitoring and Analyzing Telemetry](../administration/telemetry-overview.md).|
+|applicationInsightsKey|No, but recommended for AppSource submission|The instrumentation key of the Azure Application Insights resource for monitoring operations, for example, like app secrets retrieval by extensions. <br><br>For more information, see [Monitoring and Analyzing Telemetry](../administration/telemetry-overview.md).|
 |keyVaultUrls|No|List of URLs of key vaults that the extension from which the extension can retrieve secrets. For example: `"keyVaultUrls": [ "https://myfirstkeyvault.vault.azure.net", "https://mysecondkeyvault.vault.azure.net" ]`. <br><br>For more information, see [App Key Vaults](devenv-app-key-vault-overview.md).|
 |suppressWarnings|No|Specifies that warnings issued by, for example, a specific analyzer rule should not be shown in the **Output** window. Syntax is `"suppressWarnings": [<warning ID>,<warning ID2>,...]`. For example `"suppressWarnings": [ "AL0458" ]`. It is also possible to use `#pragma` directives for suppressing warnings for specific areas of code. For more information, see [Pragma Warning Directive](directives/devenv-directive-pragma-warning.md) and [Suppressing Warnings](devenv-deprecating-with-statements-overview.md#suppressing-warnings).|
 
@@ -69,7 +70,7 @@ The following table describes the settings in the `launch.json` file. The `launc
 |Setting|Mandatory|Value|
 |-------|---------|-----|
 |name|Yes|"Your own server"|
-|type|Yes|Must be set to `".al"`. Required by Visual Studio Code.|
+|type|Yes|Must be set to `"al"`. Required by Visual Studio Code.|
 |request|Yes|Request type of the configuration. Can be set to `"launch"` or `"attach"` . Required by Visual Studio Code. For more information, see [Attach and Debug Next](devenv-attach-debug-next.md).|
 |server|Yes|The HTTP URL of your server, for example: `"https://localhost|serverInstance"`|
 |port|No|The port assigned to the development service.|
@@ -94,6 +95,7 @@ The following table describes the settings in the `launch.json` file. The `launc
 |forceUpgrade|No| Always run upgrade codeunits, even if the version number of the extension is the same as an already installed version. This can be useful for troubleshooting upgrade issues. <br><br>**Note:** The `forceUpgrade` setting requires the package ID to be changed.|
 |useSystemSession|No|Runs install and upgrade codeunits in a system session. This will prevent debugging install and upgrade codeunits.|
 |snapshotFileName|No|Specifies the snapshot file name used when snapshot debugging files are saved. For more information, see [Snapshot Debugging](devenv-snapshot-debugging.md).|
+|primaryTenantDomain|No|The primary tenant domain URL for the cloud AAD user. This is used for on-prem AAD scenarios. The primary tenant domain parameter is equivalent to the `tenant` parameter for cloud scenarios.|
 
 
 ### Publish to cloud settings
@@ -125,6 +127,7 @@ The following table describes the settings in the `launch.json` file. The `launc
 ## See Also
 
 [AL Development Environment](devenv-reference-overview.md)  
+[App Identity](devenv-app-identity.md)  
 [Debugging in AL](devenv-debugging.md)  
 [Security Setting and IP Protection](devenv-security-settings-and-ip-protection.md)  
 [AL Language Extension Configuration](devenv-al-extension-configuration.md)  

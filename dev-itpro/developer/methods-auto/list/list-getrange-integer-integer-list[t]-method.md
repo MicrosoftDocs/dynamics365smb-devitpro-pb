@@ -1,8 +1,9 @@
 ---
 title: "List.GetRange Method"
+description: "Get a shallow copy of a range of elements in the source."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # List.GetRange Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Get a shallow copy of a range of elements in the source.
 
@@ -24,9 +25,9 @@ Get a shallow copy of a range of elements in the source.
 [Ok := ]  List.GetRange(Index: Integer, Count: Integer, var Result: List of [T])
 ```
 ## Parameters
-*List*
-&emsp;Type: [List](list-data-type.md)
-An instance of the [List](list-data-type.md) data type.
+*List*  
+&emsp;Type: [List](list-data-type.md)  
+An instance of the [List](list-data-type.md) data type.  
 
 *Index*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
@@ -42,8 +43,8 @@ A shallow copy of a range of elements in the source List.
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*[Optional] Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the range is a valid range, otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

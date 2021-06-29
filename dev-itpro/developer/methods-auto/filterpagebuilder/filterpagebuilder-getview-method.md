@@ -1,8 +1,9 @@
 ---
 title: "FilterPageBuilder.GetView Method"
+description: "Gets the filter view (which defines the sort order, key, and filters) for the record in the specified filter control of a filter page. The view contains all fields in the filter control that have a default filter value."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # FilterPageBuilder.GetView Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Gets the filter view (which defines the sort order, key, and filters) for the record in the specified filter control of a filter page. The view contains all fields in the filter control that have a default filter value.
 
@@ -24,23 +25,23 @@ Gets the filter view (which defines the sort order, key, and filters) for the re
 View :=   FilterPageBuilder.GetView(Name: String [, UseNames: Boolean])
 ```
 ## Parameters
-*FilterPageBuilder*
-&emsp;Type: [FilterPageBuilder](filterpagebuilder-data-type.md)
-An instance of the [FilterPageBuilder](filterpagebuilder-data-type.md) data type.
+*FilterPageBuilder*  
+&emsp;Type: [FilterPageBuilder](filterpagebuilder-data-type.md)  
+An instance of the [FilterPageBuilder](filterpagebuilder-data-type.md) data type.  
 
 *Name*  
 &emsp;Type: [String](../string/string-data-type.md)  
 The name of the filter control. This value must match the value of the Name parameter that was specified by AddTable, AddRecord, or AddRecordRef method that adds the table to the filter control.
         
-*UseNames*  
+*[Optional] UseNames*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 Specifies whether a field caption or field number should be returned. This parameter is optional. If this parameter is **true** (default value) or if it is empty, then the returned string contains references to field captions in the table with which the record is associated. If this parameter is **false**, then the returned string contains references to field numbers.
         
 
 
 ## Return Value
-*View*
-&emsp;Type: [String](../string/string-data-type.md)
+*View*  
+&emsp;Type: [String](../string/string-data-type.md)  
 The view that is configured for the filter control that is identified by Name.
 
 

@@ -1,8 +1,9 @@
 ---
 title: "System.Evaluate Method"
+description: "Evaluates a string representation of a value into its typical representation. The result is assigned to a variable."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # System.Evaluate Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Evaluates a string representation of a value into its typical representation. The result is assigned to a variable.
 
@@ -34,14 +35,14 @@ The value of the string is assigned to the variable.
 &emsp;Type: [String](../string/string-data-type.md)  
  A string that contains a value of any simple AL data type.
         
-*Number*  
+*[Optional] Number*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 This optional value can be used when exporting data with an XmlPort. The only valid value is 9, which indicates that the data must be converted from XML format to C/SIDE format.  
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*[Optional] Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

@@ -3,11 +3,11 @@ title: "XMLport Overview"
 description: "Design a XMLport by defining the schema. The XMLport object is composed of a schema, request page, properties, triggers, and code."
 author: blrobl
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: t-blrobl
 ---
@@ -35,7 +35,7 @@ Request pages are dialog boxes that enable the user to set a filter on the data,
 Unlike report request pages, XMLport request pages cannot be bookmarked by users from the user interface.
 
 ## XMLport properties, triggers, and code
-XMLport objects include triggers, methods, and properties that can be used to work with the object. For more information, see [XMLport Data Type](methods-auto/xmlport/xmlport-data-type.md) and [XMLport Triggers](triggers/devenv-xmlport-triggers.md).
+XMLport objects include triggers, methods, and properties that can be used to work with the object. For more information, see [XMLport Data Type](methods-auto/xmlport/xmlport-data-type.md) and [XMLport Triggers](triggers-auto/xmlport/devenv-oninitxmlport-xmlport-trigger.md).
 
 When you design XMLports, you must set the value of the [Format Property (XMLports)](properties/devenv-format-property.md) and the [Direction Property](properties/devenv-direction-property.md). The [Format Property (XMLports)](properties/devenv-format-property.md) indicates the type of file that you want to import or export and the [Direction Property](properties/devenv-direction-property.md) value indicates whether the XMLport will be used for import or export.
 
@@ -48,4 +48,4 @@ For more information about data consistency and validation against possible erro
 [Using Namespaces with XMLports](devenv-using-namespaces-with-xmlports.md)  
 [Request Pages](devenv-request-pages.md)  
 [XMLport Data Type](methods-auto/xmlport/xmlport-data-type.md)  
-[XMLport Triggers](triggers/devenv-xmlport-triggers.md)
+[XMLport Triggers](triggers-auto/xmlport/devenv-oninitxmlport-xmlport-trigger.md)

@@ -3,11 +3,11 @@ title: Fields that are Moved, Removed, or Replaced
 description: We're constantly streamlining and adjusting our app in-step with market developments. Read about the fields that you want to refactor your code for.
 author: edupont04
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms. search.keywords: deprecated, obsolete
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.author: edupont
 
 ---
@@ -71,6 +71,10 @@ A number of fields are marked as ObsoleteState:Pending. There is no impact on co
 ### Netherlands
 
 [!INCLUDE [fields-obsolete-nl](../includes/fields-obsolete-nl.md)]
+
+### Russia
+
+[!INCLUDE [fields-obsolete-ru](../includes/fields-obsolete-ru.md)]
 
 ### Spain
 
@@ -144,3 +148,5 @@ The functionality for payments and reconciliation in the Danish version (FIK) ha
 [Upgrading to Business Central](upgrading-to-business-central.md)  
 [Upgrading the Application Code](upgrading-the-application-code.md)  
 [Important Information and Considerations for Before Upgrading to Dynamics 365 Business Central](upgrade-considerations.md)  
+[Best Practices for Deprecation of Code in the Base App](../developer/devenv-deprecation-guidelines.md)  
+[Microsoft Timeline for Deprecating Code in Business Central](../developer/devenv-deprecation-timeline.md)  

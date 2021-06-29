@@ -1,8 +1,9 @@
 ---
 title: "RecordRef.Ascending Method"
+description: "Changes or checks the order in which a search through the table that is referred to by RecordRef will be performed."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # RecordRef.Ascending Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Changes or checks the order in which a search through the table that is referred to by RecordRef will be performed.
 
@@ -26,25 +27,25 @@ Changes or checks the order in which a search through the table that is referred
 > [!NOTE]
 > This method can be invoked using property access syntax.
 ## Parameters
-*RecordRef*
-&emsp;Type: [RecordRef](recordref-data-type.md)
-An instance of the [RecordRef](recordref-data-type.md) data type.
+*RecordRef*  
+&emsp;Type: [RecordRef](recordref-data-type.md)  
+An instance of the [RecordRef](recordref-data-type.md) data type.  
 
-*SetAscending*  
+*[Optional] SetAscending*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 If this parameter is true, it will search in ascending order. If this parameter is false, it will search in descending order. If you do not specify this parameter, it will check the search order.  
 
 
 ## Return Value
-*IsAscending*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*[Optional] IsAscending*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 Specifies the order in which a search will be performed.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- This method works just like the [Ascending Method \(Record\)](../../methods/devenv-ascending-method-record.md).  
+ This method works just like the [Ascending Method \(Record\)](../library.md).  
   
 ## Example 1
 

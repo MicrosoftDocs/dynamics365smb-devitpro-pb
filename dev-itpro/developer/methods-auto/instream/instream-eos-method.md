@@ -1,8 +1,9 @@
 ---
 title: "InStream.EOS Method"
+description: "Indicates whether an input stream has reached End of Stream (EOS)."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # InStream.EOS Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Indicates whether an input stream has reached End of Stream (EOS).
 
@@ -27,13 +28,13 @@ IsEOS :=   InStream.EOS()
 > This method can be invoked using property access syntax.
 
 ## Parameters
-*InStream*
-&emsp;Type: [InStream](instream-data-type.md)
-An instance of the [InStream](instream-data-type.md) data type.
+*InStream*  
+&emsp;Type: [InStream](instream-data-type.md)  
+An instance of the [InStream](instream-data-type.md) data type.  
 
 ## Return Value
-*IsEOS*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*IsEOS*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the stream has reached End of Stream; otherwise **false**.
 
 
@@ -45,7 +46,7 @@ If you are reading data from an external component, EOS can return **false** eve
   
 ## Example
 
-The following example opens the text file in a folder that is named MyFolder. The data in the text file is read into and input stream variable named StreamInTest. The [InStream.EOS Method](../../methods/devenv-instream.eos-method.md) is used to determine whether the input stream has reached the end. If the stream has not reached the end, the stream is read into a text buffer, which indicates that the stream has not reached the end until the stream reaches the end. You must also create the following file 'c:\\MyFolder\\MyText.txt'.  
+The following example opens the text file in a folder that is named MyFolder. The data in the text file is read into and input stream variable named StreamInTest. The [InStream.EOS Method](../library.md) is used to determine whether the input stream has reached the end. If the stream has not reached the end, the stream is read into a text buffer, which indicates that the stream has not reached the end until the stream reaches the end. You must also create the following file 'c:\\MyFolder\\MyText.txt'.  
 
 ```al
  var

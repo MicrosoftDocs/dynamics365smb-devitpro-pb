@@ -1,11 +1,11 @@
 ---
 title: "Monitoring SQL Database Deadlocks"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -15,7 +15,7 @@ You can set up the system to log deadlocks that occur in the SQL database. The d
 ## About Deadlocks
 Deadlocks can prevent users from completing tasks in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client. A deadlock occurs when two or more processes or transactions block each other from continuing because each has locked a database resource that the other transaction needs. SQL Server handles deadlocks by terminating and rolling back transactions that were started after the first transaction.
 
-For general information about deadlocks, see [Detecting and Ending Deadlocks](https://aka.ms/detectingendingdeadlocks).
+For general information about deadlocks, see [Detecting and Ending Deadlocks](/previous-versions/sql/sql-server-2008-r2/ms178104(v=sql.105)).
 
 ## Setting Up Deadlock Logging
 Setting up deadlock logging requires you to configure the SQL Server instance and the [!INCLUDE[server](../developer/includes/server.md)] instance.
@@ -112,7 +112,7 @@ To log deadlocks, you must enable deadlock logging on the [!INCLUDE[server](../d
     ```
     Set-NAVServerConfiguration -ServerInstance MyServerInstance -KeyName EnableDeadlockMonitoring -KeyValue true
     ```
-    For more information about how to use the [!INCLUDE[adminshell](../developer/includes/adminshell.md)], see [Business Central PowerShell Cmdlets](/powershell/business-central/overview) and [Set-NAVServerConfiguration Cmdlet](https://go.microsoft.com/fwlink/?linkid=401394).
+    For more information about how to use the [!INCLUDE[adminshell](../developer/includes/adminshell.md)], see [Business Central PowerShell Cmdlets](/powershell/business-central/overview) and [Set-NAVServerConfiguration Cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration).
 
 ## Viewing Deadlocks in the Windows Event Log
 Similar to other errors and events in [!INCLUDE[prod_short](../developer/includes/prod_short.md)], you can monitor deadlocks by using Event Viewer on the computer running [!INCLUDE[server](../developer/includes/server.md)]. Deadlocks are recorded as warnings in the [!INCLUDE[server](../developer/includes/server.md)]  **Admin** channel log in the **Applications and Services Logs**. For general information about how to view the [!INCLUDE[server](../developer/includes/server.md)] logs, see [Monitor Business Central Server Events Using Event Viewer](monitor-server-events-windows-event-log.md).
@@ -127,7 +127,7 @@ Deadlock event log entries have the event ID 705 and task category 33 (Telemetry
 |AL ObjectType|Specifies the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] object in AL that ran the transaction, such as a page or report.|
 |AL ObjectNumber|Specifies the ID of the object that was run.|
 |AL ScopeName|Specifies the AL function that ran the transaction that caused the event.|
-|SQL Server deadlock XML report|Includes the deadlock report that was recieved from SQL Server. For more information, see [Analyze Deadlocks](https://aka.ms/analyzedeadlocks).|
+|SQL Server deadlock XML report|Includes the deadlock report that was recieved from SQL Server. For more information, see [Analyze Deadlocks](/sql/tools/sql-server-profiler/analyze-deadlocks-with-sql-server-profiler).|
 
 **Note:**  The system cannot record information about AL code that was executed on a different  [!INCLUDE[server](../developer/includes/server.md)]. Therefore, the three attributes *AL ObjectType*, *AL ObjectNumber* and *AL ScopeName* might be empty in a given event log entry.
 
@@ -150,9 +150,9 @@ All deadlock events have the trace tag **00000DI**. If you only want to see dead
   </Query>
 </QueryList>
 ```
-For more information about XML filtering, see [Advanced XML filtering in the Windows Event Viewer](https://aka.ms/advancedxmlfilteringeventviewer).
+For more information about XML filtering, see [Advanced XML filtering in the Windows Event Viewer](/archive/blogs/askds/advanced-xml-filtering-in-the-windows-event-viewer).
 ##  See Also
 [Monitoring Business Central Server Events](monitor-server-events.md)  
 [Monitoring SQL Database Locks](monitor-database-locks.md)  
 [Monitoring Business Central Server](monitor-server.md)  
-[Use SQL Server Management Studio](https://aka.ms/usesqlservermanagementstudio)
+[Use SQL Server Management Studio](/sql/ssms/sql-server-management-studio-ssms)

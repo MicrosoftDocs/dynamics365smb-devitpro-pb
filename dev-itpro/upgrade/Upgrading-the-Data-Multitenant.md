@@ -2,11 +2,11 @@
 title: Upgrading the Database to in a Multitenant Deployment
 description: This article describes the tasks required for upgrade the data when you have a multitenant deployment. 
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
 ms.service: "dynamics365-business-central"
@@ -152,7 +152,7 @@ You perform these tasks on each tenant that you want to upgrade.
 
     Create a full backup of the old database in the SQL Server. Alternatively, you can make a copy of the old database and perform the upgrade tasks on the copy.  
 
-    For more information, see [Create a Full Database Backup \(SQL Server\)](https://go.microsoft.com/fwlink/?LinkID=296465).  
+    For more information, see [Create a Full Database Backup \(SQL Server\)](/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server).  
 
 2. (Dynamics NAV upgrade only) Uninstall all V1 extensions.
 
@@ -233,7 +233,7 @@ You perform these tasks on each tenant that you want to upgrade.
     1. Open the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] as an administrator, and then run [Start-NavDataUpgrade](/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade) cmdlet as follows:  
 
     ```  
-    Start-NavDataUpgrade -ServerInstance ServerInstanceName> -FunctionExecutionMode Serial -ContinueOnError  
+    Start-NavDataUpgrade -ServerInstance <ServerInstanceName> -Tenant <TenantID> -FunctionExecutionMode Serial -ContinueOnError  
     ```  
     
     Replace `<ServerInstanceName>` with the name of the [!INCLUDE[server](../developer/includes/server.md)] instance that is connected to the database.

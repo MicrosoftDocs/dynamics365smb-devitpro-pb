@@ -6,15 +6,15 @@ ms.custom: na
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ---
 
 # Components and Capabilities
 
-When you build an app for [!INCLUDE [prod_short](../developer/includes/prod_short.md)], be it an [!INCLUDE[embedapp](../developer/includes/embedapp.md)] or an AppSource app, you must be aware of which components and deployment steps are provided by Microsoft and which you must provide.
+When you build an app for [!INCLUDE [prod_short](../developer/includes/prod_short.md)], be it an AppSource app or an [!INCLUDE[embedapp](../developer/includes/embedapp.md)], you must be aware of which components and deployment steps are provided by Microsoft and which you must provide.
 
 ## Components
 
@@ -45,7 +45,6 @@ The following integration capabilities of the [!include[prod_short](../developer
 |[Azure machine learning](/azure/machine-learning/studio/)| Available if the partner has an Azure ML subscription|
 |[Integration with Dynamics 365 Sales](/dynamics365/business-central/admin-how-to-set-up-a-dynamics-crm-connection)| Available|
 |[Microsoft Graph](/graph/overview)  | Currently under evaluation        |
-|[Accountant Hub](/dynamics365/accountants/)| Available in specific countries |
 
 ## See Also
 

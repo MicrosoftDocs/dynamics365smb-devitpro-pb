@@ -1,11 +1,11 @@
 ---
 title: "Asynchronous Considerations for Control Add-ins"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.assetid: 6c90376e-b86e-406d-880d-3cc905bf6527
 author: SusanneWindfeldPedersen

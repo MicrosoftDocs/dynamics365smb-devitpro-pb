@@ -4,8 +4,8 @@ description: "Description of the converter tool."
 
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 12/23/2020
-ms.topic: article
+ms.date: 04/01/2021
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
@@ -37,7 +37,7 @@ It's **very** important that you compile the database to get the right result in
 4. Export all **new and/or modified** objects using the following syntax:
 ```finsql.exe Command=ExportToNewSyntax, File=<filename.txt>, Database="<databasename>", ServerName=<servername> ,Filter=Type=table;ID=<tableID>``` The following example exports the table **231** from the Demo Database NAV (13-0) database:  
   ```finsql.exe Command=ExportToNewSyntax, File=exportedNewModifiedObjects.txt, Database="Demo Database NAV (13-0)", ServerName=.\NAVDEMO ,Filter=Type=table;ID=231```
-5. Run the Set-ObjectPropertiesFromMenuSuite cmdlet, which will convert MenuSuite information on pages and reports in the generated AL objects to enable them for search. For more information, see [Making Pages and Reports Searchable in the Web client](/dynamics365/business-central/dev-itpro/upgrade/upgrade-pages-report-for-search)
+5. Run the Set-ObjectPropertiesFromMenuSuite cmdlet, which will convert MenuSuite information on pages and reports in the generated AL objects to enable them for search. For more information, see [Making Pages and Reports Searchable in the Web client](../upgrade/upgrade-pages-report-for-search.md)
 6. Create .delta files using the Compare-NAVApplicationObject PowerShell script. For more information, see [Generating DELTA Files](devenv-generating-delta-files.md).
 7. Go to the *\Program Files(x86)\Microsoft Dynamics 365 Business Central\140\RoleTailored Client* folder and locate the **txt2al.exe** converter tool. 
 8. Run the tool from the command line using the following syntax:  

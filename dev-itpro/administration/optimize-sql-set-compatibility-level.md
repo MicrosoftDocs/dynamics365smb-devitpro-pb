@@ -2,11 +2,11 @@
 title: "Setting SQL Compatibility Level to Optimize Database Performance"
 description: Enable query optimizer features in a database by setting the compatibility level
 ms.custom: na
-ms.date: 10/29/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
@@ -37,4 +37,4 @@ You change the compatibility level of the database by using SQL Server Managemen
 
 ## See Also  
 [Optimizing SQL Server Performance](optimize-sql-server-performance.md)    
-[Microsoft SQL Server documentation](https://go.microsoft.com/fwlink/?LinkId=253107)'
+[Microsoft SQL Server documentation](/sql/sql-server/)'

@@ -3,11 +3,11 @@ title: "Moving Tables and Fields to Extensions Up the Dependency Graph"
 description: Explains how to move tables and fields from an extension to another extension that is up the dependency graph
 author: jswymer
 ms.custom: na
-ms.date: 10/28/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
 ---
@@ -26,7 +26,7 @@ The steps are based on the example illustrated in the following figure. Although
 
 ![Data migration](media/migrate-tables-fields-up-overview.png "data migration overview")
 
-In the example, **TableB** and **Field C-2** are customizations. You'll move these elements from the original extension up to a new extension. This new extension will have a dependency on the original extension. You'll keep **TableA** and **TableC** in the original extension.
+In the example, **TableB** and **Field C-2** are customizations. You'll move these elements from the original extension (**Ext X**) up to a new extension (**Ext Y**). This new extension will have a dependency on the original extension. You'll keep **TableA** and **TableC** in the original extension.
 
 To accommodate data migration, you'll have to create an extension that is only used for deployment. This extension is **Ext Z** in the figure. There are two stages of deployment:
 
@@ -78,21 +78,8 @@ In this step, you create a new version of the releasing extension that doesn't c
 
     For more information, see [The Migration.json File](devenv-migration-json-file.md).
 2. Delete all objects from the extension. The objects include **TableA**, **TableB**, and **TableC**.
-3. In the app.json file, increase the `version` value. Ensure that `"target": "OnPrem"`.
+3. In the app.json file, increase the `version` value. Ensure that you've included `"target": "OnPrem"`.
 4. Compile a new version of the extension package.
-
-## Create receiving extension (Ext Y v1)
-
-You now create a new extension that contains the customization you want to move from the releasing. In this example, the customizations include **TableB** and a **TableExtC**.
-
-1. Create an AL project for **Ext Y**.
-2. In the app.json file, set up a dependency on the releasing extension **Ext X**.
-3. Add a table definition and code for **TableB** that exactly matches the definition in the original releasing extension.
-4. Add a table extension object called **TableExtC**. Then, add a field definition for field **C-2** that matches its definition in the original **TableC** object of the releasing extension.
-5. Compile the extension package.
-6. Make a note of the `ID` of the new extension. You'll use this ID in the next task.
-
-    For purposes of the example, the ID is `44444444-cccc-5555-dddd-666666666666`. The value for your extension will be different. 
 
 ## Create final version of releasing extension (Ext X v3)
 
@@ -103,9 +90,30 @@ In this step, you create another version of the releasing extension **Ext X**. T
 3. Add a table object for **TableC** and field definition for **C-1** that matches the definitions in the original **TableC** object of the releasing extension.
 4. In the app.json file, increase the `version` value.
 5. Compile the extension package.
-6. Make a note of the `ID` of the extension. You'll use this ID in the next task.
+6. Make a note of the `ID` and  `version` of the extension. You'll use these values in the next task.
 
     For purposes of the example, the ID is `77777777-eeee-8888-ffff-999999999999`. The value for your extension will be different.
+
+## Create receiving extension (Ext Y v1)
+
+You now create a new extension that contains the customization you want to move from the releasing. In this example, the customizations include **TableB** and a **TableExtC**.
+
+1. Create an AL project for **Ext Y**.
+2. In the app.json file, set up a dependency on the third version of releasing extension **Ext X v3** .
+
+    For example:
+
+   ```json
+     "dependencies": [{"id": "77777777-eeee-8888-ffff-999999999999", "name": "releaseextension", "publisher": "Default publisher", "version": "1.0.0.3"}],
+   ```
+  
+    The values for each parameter are for illustration purposes only. The values for your extension will be different.
+3. Add a table definition and code for **TableB** that exactly matches the definition in the original releasing extension.
+4. Add a table extension object called **TableExtC**. Then, add a field definition for field **C-2** that matches its definition in the original **TableC** object of the releasing extension.
+5. Compile the extension package.
+6. Make a note of the `ID` of the new extension. You'll use this ID in the next task.
+
+    For purposes of the example, the ID is `44444444-cccc-5555-dddd-666666666666`. The value for your extension will be different. 
 
 ## Create new empty version of transition extension (Ext Z v2)
 

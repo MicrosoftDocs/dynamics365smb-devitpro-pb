@@ -2,11 +2,11 @@
 title: Events Discoverability
 description: Using the Event Recorder, you can record the events that are published and raised while performing the actions of your scenario.
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---

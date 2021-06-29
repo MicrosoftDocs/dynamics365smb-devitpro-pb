@@ -1,8 +1,9 @@
 ---
 title: "XmlAttribute.Value Method"
+description: "Gets or sets the value of the attribute."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # XmlAttribute.Value Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Gets or sets the value of the attribute.
 
@@ -26,18 +27,18 @@ Gets or sets the value of the attribute.
 > [!NOTE]
 > This method can be invoked using property access syntax.
 ## Parameters
-*XmlAttribute*
-&emsp;Type: [XmlAttribute](xmlattribute-data-type.md)
-An instance of the [XmlAttribute](xmlattribute-data-type.md) data type.
+*XmlAttribute*  
+&emsp;Type: [XmlAttribute](xmlattribute-data-type.md)  
+An instance of the [XmlAttribute](xmlattribute-data-type.md) data type.  
 
-*NewValue*  
+*[Optional] NewValue*  
 &emsp;Type: [String](../string/string-data-type.md)  
 The new value of the attribute.  
 
 
 ## Return Value
-*Value*
-&emsp;Type: [String](../string/string-data-type.md)
+*[Optional] Value*  
+&emsp;Type: [String](../string/string-data-type.md)  
 The value of the attribute.
 
 

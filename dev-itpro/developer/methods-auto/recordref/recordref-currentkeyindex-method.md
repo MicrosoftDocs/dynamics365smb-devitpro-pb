@@ -1,8 +1,9 @@
 ---
 title: "RecordRef.CurrentKeyIndex Method"
+description: "Gets or sets the current key of the table referred to by the RecordRef. The current key is set or returned as a number. This first key = 1, and so on. If RecordRef does not have an active record, CURRENTKEYINDEX will return -1. If this value is then passed to KEYINDEX, an index out of bounds error will occur. Therefore it is important to implement a check of the RecordRef parameter."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,9 +15,9 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # RecordRef.CurrentKeyIndex Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
-Gets or sets the current key of the table referred to by the RecordRef. The current key is set or returned as a number. This first key = 1, and so on. If RecordRef does not have an active record, CurrentKeyIndex will return -1. If this value is then passed to KeyIndex, an index out of bounds error will occur. Therefore it is important to implement a check of the RecordRef parameter.
+Gets or sets the current key of the table referred to by the RecordRef. The current key is set or returned as a number. This first key = 1, and so on. If RecordRef does not have an active record, CURRENTKEYINDEX will return -1. If this value is then passed to KEYINDEX, an index out of bounds error will occur. Therefore it is important to implement a check of the RecordRef parameter.
 
 
 ## Syntax
@@ -26,18 +27,18 @@ Gets or sets the current key of the table referred to by the RecordRef. The curr
 > [!NOTE]
 > This method can be invoked using property access syntax.
 ## Parameters
-*RecordRef*
-&emsp;Type: [RecordRef](recordref-data-type.md)
-An instance of the [RecordRef](recordref-data-type.md) data type.
+*RecordRef*  
+&emsp;Type: [RecordRef](recordref-data-type.md)  
+An instance of the [RecordRef](recordref-data-type.md) data type.  
 
-*NewKeyIndex*  
+*[Optional] NewKeyIndex*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The number of the new key.  
 
 
 ## Return Value
-*CurrentKeyIndex*
-&emsp;Type: [Integer](../integer/integer-data-type.md)
+*[Optional] CurrentKeyIndex*  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 The number of the current key.
 
 

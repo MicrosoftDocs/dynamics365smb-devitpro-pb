@@ -1,8 +1,9 @@
 ---
 title: "FieldRef.Number Method"
+description: "Gets the number of a field as an integer."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # FieldRef.Number Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Gets the number of a field as an integer.
 
@@ -27,13 +28,13 @@ No :=   FieldRef.Number()
 > This method can be invoked using property access syntax.
 
 ## Parameters
-*FieldRef*
-&emsp;Type: [FieldRef](fieldref-data-type.md)
-An instance of the [FieldRef](fieldref-data-type.md) data type.
+*FieldRef*  
+&emsp;Type: [FieldRef](fieldref-data-type.md)  
+An instance of the [FieldRef](fieldref-data-type.md) data type.  
 
 ## Return Value
-*No*
-&emsp;Type: [Integer](../integer/integer-data-type.md)
+*No*  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 
 
 
@@ -45,7 +46,7 @@ This method is like the [FieldNo Method \(Record\)](../../methods-auto/record/re
   
 ## Example
 
-The following example displays the caption and the field number of the first 10 fields in the Location table. The Location table is open as a [RecordRef Data Type](../../datatypes/devenv-recordref-data-type.md) object and the reference is stored in the LocationRecref variable. The FieldIndex variable that stores the field index is initialized to 0. The LocationRecref variable uses the [FieldIndex Method \(RecordRef\)](../../methods-auto/recordref/recordref-fieldindex-method.md) to create a FieldRef that is named MyFieldRef for the specified field index. MyFiledRef now references the field that is specified by the FieldIndex. MyFieldref is then used to display the number and caption of the field The [Number Method \(FieldRef\)](../../methods-auto/fieldref/fieldref-number-method.md) method retrieves the field number. This is repeated for the first ten fields in the table.
+The following example displays the caption and the field number of the first 10 fields in the Location table. The Location table is open as a [RecordRef Data Type](../recordref/recordref-data-type.md) object and the reference is stored in the LocationRecref variable. The FieldIndex variable that stores the field index is initialized to 0. The LocationRecref variable uses the [FieldIndex Method \(RecordRef\)](../recordref/recordref-fieldindex-method.md) to create a FieldRef that is named MyFieldRef for the specified field index. MyFiledRef now references the field that is specified by the FieldIndex. MyFieldref is then used to display the number and caption of the field The [Number Method \(FieldRef\)](fieldref-number-method.md) method retrieves the field number. This is repeated for the first ten fields in the table.
  
 ```al
 var

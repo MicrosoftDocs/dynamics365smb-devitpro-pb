@@ -3,11 +3,11 @@ title: "How to Unpublish and Uninstall an Extension v2.0"
 description: "Description of the process of upublishing and uinstalling an extension"
 author: jswymer
 ms.custom: na
-ms.date: 01/15/2021
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
 ---

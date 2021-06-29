@@ -4,10 +4,10 @@ description: Learn about the best ways to reduce data stored in Business Central
 author: jswymer
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
-ms.date: 11/05/2020
+ms.date: 04/01/2021
 ---
 
 # Reducing Data Stored in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Databases 

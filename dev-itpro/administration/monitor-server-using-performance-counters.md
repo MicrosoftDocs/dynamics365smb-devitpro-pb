@@ -2,11 +2,11 @@
 title: "Monitoring Business Central Server Using Performance Counters"
 description: Learn how to use performance counters to monitor Business Central Server instances
 ms.custom: na
-ms.date: 10/29/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.assetid: b6ca81a4-62f2-4806-b2d8-3c0a0e969a46
 caps.latest.revision: 6

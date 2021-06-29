@@ -1,8 +1,9 @@
 ---
 title: "SessionSettings.LanguageId Method"
+description: "Gets or sets the language ID property in a SessionSettings object."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # SessionSettings.LanguageId Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Gets or sets the language ID property in a SessionSettings object.
 
@@ -26,19 +27,19 @@ Gets or sets the language ID property in a SessionSettings object.
 > [!NOTE]
 > This method can be invoked using property access syntax.
 ## Parameters
-*SessionSettings*
-&emsp;Type: [SessionSettings](sessionsettings-data-type.md)
-An instance of the [SessionSettings](sessionsettings-data-type.md) data type.
+*SessionSettings*  
+&emsp;Type: [SessionSettings](sessionsettings-data-type.md)  
+An instance of the [SessionSettings](sessionsettings-data-type.md) data type.  
 
-*NewLanguageId*  
+*[Optional] NewLanguageId*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 Specifies the language ID to set in the SessionSettings object. The value must be a valid Windows language ID, which is typically a 4-digit value such as 1033 for English or 1030 for Danish. The default value is 1033.
         
 
 
 ## Return Value
-*LanguageId*
-&emsp;Type: [Integer](../integer/integer-data-type.md)
+*[Optional] LanguageId*  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 The language ID that is set in the SessionSettings object.
       
 

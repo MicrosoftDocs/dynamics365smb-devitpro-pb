@@ -3,15 +3,15 @@ title: "Updates for the Business Central 2020 Release Wave 2 version"
 description: "Learn about the updates for Dynamics 365 Business Central 2020 Release Wave 2 on-premises deployments."
 author: jswymer
 ms.custom: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
-ms.date: 01/11/2021
+ms.date: 04/01/2021
 ---
 
 # Dynamics 365 Business Central On-Premises 2020 Release Wave 2 Updates
 
-This article lists updates released for the Microsoft Dynamics 365 Business Central 2020 release wave 2 for on-premises. An update is a set of files that includes all hotfixes and regulatory features that have been released for Business Central. If you have customers using Business Central 2020 release wave 2 on-premises, we recommend you apply this update so that your customers are using the latest version of Business Central. If you have customers using Business Central online, check the [Business Central Admin center](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center) to see if the tenants have been updated.  
+This article lists updates released for the Microsoft Dynamics 365 Business Central 2020 release wave 2 for on-premises. An update is a set of files that includes all hotfixes and regulatory features that have been released for Business Central. If you have customers using Business Central 2020 release wave 2 on-premises, we recommend you apply this update so that your customers are using the latest version of Business Central. If you have customers using Business Central online, check the [Business Central Admin center](../administration/tenant-admin-center.md) to see if the tenants have been updated.  
 
 Each update is intended mainly for solutions that are experiencing the problems described in the Support articles linked to below. However, you're advised to always keep your solution updated with the latest update. If you're in doubt about whether this update addresses your specific problem, or you want to confirm whether any special compatibility, installation, or download issues are associated with a particular update, then contact Customer Support Services. They are ready to help you. For more information, see [https://support.microsoft.com/contactus/](https://support.microsoft.com/contactus/).
 
@@ -23,11 +23,17 @@ You should always install the latest update.
 
 The following table lists the updates that have been released for 2020 release wave 2 of Business Central (version 17). The updates include hotfixes that apply to all countries and hotfixes that apply to specific local versions. Check the relevant Support article for a description.
 
-|Knowledge Base ID                                           |Title                |Release date  |Build No. |Local versions included |
-|------------------------------------------------------------|---------------------|--------------|----------|------------------------|
-|[4595152](https://support.microsoft.com/help/4595152)|Update 17.3 |January 2021|Application Build 17.3.20605</br>Platform Build 17.0.20517|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
-|[4583554](https://support.microsoft.com/help/4583554)|Update 17.2 |December 2020|Application Build 17.2.19367.19396</br>Platform Build 17.0.19353.19391|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
-|[4583515](https://support.microsoft.com/help/4583515)|Update 17.1 |November 2020|Application Build 17.1.18256.18792</br>Platform Build 17.0.18204.18738|AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK|
+Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK
+
+|Knowledge Base ID                                           |Title                |Release date  |Build No. |
+|------------------------------------------------------------|---------------------|--------------|----------|
+|[5003474](https://support.microsoft.com/help/5003474)|Update 17.7 |June 2021|Application Build 17.7.26453</br>Platform Build 17.0.26427|
+|[5001735](https://support.microsoft.com/help/5001735)|Update 17.6 |April 2021|Application Build 17.6.23727</br>Platform Build 17.0.23708|
+|[5001235](https://support.microsoft.com/help/5001235)|Update 17.5 |March 2021|Application Build 17.5.22499.22546</br>Platform Build 17.0.22463.22540|
+|[5000696](https://support.microsoft.com/help/5000696)|Update 17.4 |February 2021|Application Build 17.4.21531</br>Platform Build 17.0.21516|
+|[4595152](https://support.microsoft.com/help/4595152)|Update 17.3 |January 2021|Application Build 17.3.20605</br>Platform Build 17.0.20517|
+|[4583554](https://support.microsoft.com/help/4583554)|Update 17.2 |December 2020|Application Build 17.2.19367.19396</br>Platform Build 17.0.19353.19391|
+|[4583515](https://support.microsoft.com/help/4583515)|Update 17.1 |November 2020|Application Build 17.1.18256.18792</br>Platform Build 17.0.18204.18738|
 
 ## See Also
 
@@ -41,4 +47,4 @@ The following table lists the updates that have been released for 2020 release w
 [Countries and Translations Supported](../compliance/apptest-countries-and-translations.md)  
 [Welcome to Dynamics 365 Business Central](/dynamics365/business-central/index)  
 [Microsoft Dynamics 365 Business Central on the Dynamics 365 blog](https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/)  
-[Dynamics NAV developer and IT Pro content](/dynamics-nav/index)  
+[Dynamics NAV developer and IT Pro content](/dynamics-nav/index)

@@ -1,8 +1,9 @@
 ---
 title: "Notification.Message Method"
+description: "Specifies the content of the notification."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Notification.Message Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Specifies the content of the notification.
 
@@ -26,18 +27,18 @@ Specifies the content of the notification.
 > [!NOTE]
 > This method can be invoked using property access syntax.
 ## Parameters
-*Notification*
-&emsp;Type: [Notification](notification-data-type.md)
-An instance of the [Notification](notification-data-type.md) data type.
+*Notification*  
+&emsp;Type: [Notification](notification-data-type.md)  
+An instance of the [Notification](notification-data-type.md) data type.  
 
-*Message*  
+*[Optional] Message*  
 &emsp;Type: [String](../string/string-data-type.md)  
 Displays a text string in a message window.  
 
 
 ## Return Value
-*Message*
-&emsp;Type: [String](../string/string-data-type.md)
+*[Optional] Message*  
+&emsp;Type: [String](../string/string-data-type.md)  
 The message
       
 

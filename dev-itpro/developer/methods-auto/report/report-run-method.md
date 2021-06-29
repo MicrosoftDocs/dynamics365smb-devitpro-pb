@@ -1,8 +1,9 @@
 ---
 title: "Report.Run Method"
+description: "Loads and executes the report that you specify."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Report.Run Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Loads and executes the report that you specify.
 
@@ -28,15 +29,15 @@ Loads and executes the report that you specify.
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The ID of the report that you want to run.
         
-*RequestWindow*  
+*[Optional] RequestWindow*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 Specifies whether the request window for the report will be displayed. The request window is part of the report object.
         
-*SystemPrinter*  
+*[Optional] SystemPrinter*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 Specifies whether to use the default Windows printer or use table 78, Printer Selection, to find the correct printer for this report.
         
-*Record*  
+*[Optional] Record*  
 &emsp;Type: [Record](../record/record-data-type.md)  
 Specifies which record to use in the report. Any filters that are attached to the record that you specify are used.  
 

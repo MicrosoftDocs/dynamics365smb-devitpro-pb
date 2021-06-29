@@ -1,8 +1,9 @@
 ---
 title: "MediaSet.Item Method"
+description: "Gets the unique identifier (GUID) of a media object that is assigned to a MediaSet on a record."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # MediaSet.Item Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Gets the unique identifier (GUID) of a media object that is assigned to a MediaSet on a record.
 
@@ -24,9 +25,9 @@ Gets the unique identifier (GUID) of a media object that is assigned to a MediaS
 MediaId :=   MediaSet.Item(Index: Integer)
 ```
 ## Parameters
-*MediaSet*
-&emsp;Type: [MediaSet](mediaset-data-type.md)
-An instance of the [MediaSet](mediaset-data-type.md) data type.
+*MediaSet*  
+&emsp;Type: [MediaSet](mediaset-data-type.md)  
+An instance of the [MediaSet](mediaset-data-type.md) data type.  
 
 *Index*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
@@ -34,8 +35,8 @@ Specifies the index number that is assigned to the media object in the MediaSet.
 
 
 ## Return Value
-*MediaId*
-&emsp;Type: [Guid](../guid/guid-data-type.md)
+*MediaId*  
+&emsp;Type: [Guid](../guid/guid-data-type.md)  
 The unique identifier (GUID) of the media object.
 
 

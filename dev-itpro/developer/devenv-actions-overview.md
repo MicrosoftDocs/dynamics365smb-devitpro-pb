@@ -1,11 +1,11 @@
 ---
 title: "Actions Overview"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -155,7 +155,7 @@ actions
   
  The logic runs in the transaction that the action triggered. This can cause the application code to result in users locking the whole table when they thought they were only modifying one record.  
   
- To avoid users accidentally locking tables, you can use the [SetSelectionFilter](methods-auto/page/page-setselectionfilter-method.md) method before your code passes the record variable to the processing codeunit, for example. The following code example illustrates the code on the [OnAction](triggers/devenv-onaction-trigger.md) trigger on an action on a page.  
+ To avoid users accidentally locking tables, you can use the [SetSelectionFilter](methods-auto/page/page-setselectionfilter-method.md) method before your code passes the record variable to the processing codeunit, for example. The following code example illustrates the code on the [OnAction](triggers-auto/action/devenv-onaction-action-trigger.md) trigger on an action on a page.  
   
 ```AL
 if confirm('Are you sure you want to call this codeunit?', true) then begin

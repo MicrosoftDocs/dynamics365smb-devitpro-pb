@@ -1,8 +1,9 @@
 ---
 title: "TestField.Lookup Method"
+description: "Calls the OnAfterLook trigger with the selected record"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # TestField.Lookup Method
-> **Version**: _Available from runtime version 7.0._
+> **Version**: _Available or changed with runtime version 7.0._
 
 Calls the OnAfterLook trigger with the selected record
 
@@ -24,9 +25,9 @@ Calls the OnAfterLook trigger with the selected record
  TestField.Lookup(Selected: RecordRef)
 ```
 ## Parameters
-*TestField*
-&emsp;Type: [TestField](testfield-data-type.md)
-An instance of the [TestField](testfield-data-type.md) data type.
+*TestField*  
+&emsp;Type: [TestField](testfield-data-type.md)  
+An instance of the [TestField](testfield-data-type.md) data type.  
 
 *Selected*  
 &emsp;Type: [RecordRef](../recordref/recordref-data-type.md)  
@@ -37,5 +38,5 @@ Specifies the record that is selected during lookup.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [TestField Data Type](testfield-data-type.md)
-[Getting Started with AL](../devenv-get-started.md)
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)
+[Developing Extensions](../../devenv-dev-overview.md)  

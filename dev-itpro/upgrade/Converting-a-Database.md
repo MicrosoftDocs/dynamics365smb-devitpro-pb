@@ -1,11 +1,11 @@
 ---
 title: "Converting a Database to Dynamics 365 Business Central - Technical Upgrade"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.author: jswymer
 ms.service: "dynamics365-business-central"
 author: jswymer
@@ -69,7 +69,7 @@ Before you convert the old database to [!INCLUDE[prod_short](../developer/includ
 
 1. Make a copy of the old database or create full database backup. 
 
-    For more information, see [Create a Full Database Backup \(SQL Server\)](https://go.microsoft.com/fwlink/?LinkID=296465).
+    For more information, see [Create a Full Database Backup \(SQL Server\)](/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server).
 
 2. <a name="uninstallextensions"></a> For single-tenant mode, uninstall all extensions. For multitenant mode, uninstall all V1 extensions.
 
@@ -137,7 +137,7 @@ Before you convert the old database to [!INCLUDE[prod_short](../developer/includ
 
 11. Stop the [!INCLUDE[nav_server](../developer/includes/nav_server_md.md)] instance, and close the [!INCLUDE[nav_dev_short_md](../developer/includes/nav_dev_short_md.md)].
 
-    You can use the [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)] or [Set-NAVServerInstance](https://go.microsoft.com/fwlink/?linkid=401395) cmdlet of the [!INCLUDE[nav_shell_md](../developer/includes/nav_shell_md.md)].
+    You can use the [!INCLUDE[nav_admin](../developer/includes/nav_admin_md.md)] or [Set-NAVServerInstance](/powershell/module/microsoft.dynamics.nav.management/set-navserverinstance) cmdlet of the [!INCLUDE[nav_shell_md](../developer/includes/nav_shell_md.md)].
 
     To use the Set-NAVServerInstance cmdlet, run the following command:
     ```
@@ -161,14 +161,14 @@ Before you convert the old database to [!INCLUDE[prod_short](../developer/includ
 Next, you will convert the old database so that it can be used with [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 > [!TIP]  
->  If you want to write a script that helps you convert databases, you can use the Invoke-NAVDatabaseConversion function in the [!INCLUDE[devshell](../developer/includes/devshell.md)].
+> If you want to write a script that helps you convert databases, you can use the Invoke-NAVDatabaseConversion function in the [!INCLUDE[devshell](../developer/includes/devshell.md)].
 
 > [!IMPORTANT]  
 > Before you run the technical upgrade, delete any corrupt databases that are on the same SQL Server instance as the database that you intend to upgrade. Otherwise, when you run the database conversion, you will get the error "The Symbol Reference field on the Object Metadata table does not exist in the SQL Server table or view.".    
 
 1. If the database is on Azure SQL Database, add your user account to the **dbmanager** database role on the master database.
 
-    This membership is only required for converting the database, and can be removed afterwards. 
+    This membership is only required for converting the database, and can be removed afterwards. This step isn't required for Azure SQL Managed Instance.
 
 2. Install [!INCLUDE[prod_short](../developer/includes/prod_short.md)].  
 
@@ -204,7 +204,7 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[pr
 
 7. <a name="connectserver"></a>Connect a [!INCLUDE[server](../developer/includes/server.md)] instance to the converted database.
 
-    Use the [!INCLUDE[admintool](../developer/includes/admintool.md)] or the [Set-NAVServerConfiguration cmdlet](https://go.microsoft.com/fwlink/?linkid=401394) to connect a [!INCLUDE[server](../developer/includes/server.md)] instance to the converted database.  
+    Use the [!INCLUDE[admintool](../developer/includes/admintool.md)] or the [Set-NAVServerConfiguration cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) to connect a [!INCLUDE[server](../developer/includes/server.md)] instance to the converted database.  
 
     > [!IMPORTANT]
     > The service account that is used by the [!INCLUDE[server](../developer/includes/server.md)] instance must be a member of the **db\_owner** role in the [!INCLUDE[navnow](../developer/includes/navnow_md.md)] database on SQL Server or Azure SQL Database.
@@ -363,9 +363,9 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[pr
 
 ## Database and Windows collations
 
-Starting from SQL Server 2008, SQL Server collations are fully aligned with the collations in Windows Server. If you upgrade to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] from [!INCLUDE[nav_2009_long](../developer/includes/nav_2009_long_md.md)], the step to convert the database includes upgrading the database from using SQL collations to using Windows collation. This collation change provides users with the most up-to-date and linguistically accurate cultural sorting conventions. For more information, see [Collation and Unicode Support](https://go.microsoft.com/fwlink/?LinkID=247971).  
+Starting from SQL Server 2008, SQL Server collations are fully aligned with the collations in Windows Server. If you upgrade to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] from [!INCLUDE[nav_2009_long](../developer/includes/nav_2009_long_md.md)], the step to convert the database includes upgrading the database from using SQL collations to using Windows collation. This collation change provides users with the most up-to-date and linguistically accurate cultural sorting conventions. For more information, see [Collation and Unicode Support](/previous-versions/sql/sql-server-2008-r2/ms143503(v=sql.105)).  
 
 ## See Also
   
 [Upgrading the Application Code](Upgrading-the-Application-Code.md) [Upgrading the Data](Upgrading-the-Data.md)  
-[Upgrading to Business Central](Upgrading-to-business-central.md) 
+[Upgrading to Business Central](Upgrading-to-business-central.md)

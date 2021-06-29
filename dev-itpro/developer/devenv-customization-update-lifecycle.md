@@ -5,10 +5,10 @@ author: jaredha
 
 ms.custom: na
 ms.reviewer: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: jaredha
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ---
 
 # Update Lifecycle for Customizations of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Online

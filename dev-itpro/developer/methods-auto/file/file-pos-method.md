@@ -1,8 +1,9 @@
 ---
 title: "File.Pos Method"
+description: "Gets the current position of the file pointer in an ASCII or binary file."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # File.Pos Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Gets the current position of the file pointer in an ASCII or binary file.
 
@@ -31,13 +32,13 @@ Position :=   File.Pos()
 > This method can be invoked without specifying the data type name.
 
 ## Parameters
-*File*
-&emsp;Type: [File](file-data-type.md)
-An instance of the [File](file-data-type.md) data type.
+*File*  
+&emsp;Type: [File](file-data-type.md)  
+An instance of the [File](file-data-type.md) data type.  
 
 ## Return Value
-*Position*
-&emsp;Type: [Integer](../integer/integer-data-type.md)
+*Position*  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 
 
 

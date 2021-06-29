@@ -2,11 +2,11 @@
 title: Provisioning the Dynamics 365 Business Central Server Service Account
 description: The service account is used by Business Central clients to log on to the server instance. 
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
@@ -116,7 +116,7 @@ For more information, see [Service Principal Names](/windows/desktop/ad/service-
         </net.tcp>
     ```
 
-For more information about SMSvcHost.exe and the SMSvcHost.exe.config file, see [Configuring the Net.TCP Port Sharing Service](https://msdn.microsoft.com/library/aa702669%28v=vs.110%29.aspx).
+For more information about SMSvcHost.exe and the SMSvcHost.exe.config file, see [Configuring the Net.TCP Port Sharing Service](/dotnet/framework/wcf/feature-details/configuring-the-net-tcp-port-sharing-service).
 
 <!--
 ##  <a name="NSA"></a> Provisioning the Network Service Account  
@@ -319,4 +319,4 @@ GO
 ## See Also
 
 [Creating Databases](devenv-create-databases.md)  
-[Configuring Business Central Server](../administration/configure-server-instance.md)  
+[Configuring Business Central Server](../administration/configure-server-instance.md)

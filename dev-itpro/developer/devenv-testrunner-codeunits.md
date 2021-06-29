@@ -2,11 +2,11 @@
 title: Test Runner Codeunits
 description: This topic describes how to create test codeunits and how to create test runner codeunits. 
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: blrobl
 ---
@@ -25,16 +25,16 @@ To specify what changes in the database you want to roll back after the tests in
 
 Test runner codeunits include the following triggers:  
 
-- [OnRun Trigger](triggers/devenv-onrun-trigger.md) 
+- [OnRun Trigger](triggers-auto/codeunit/devenv-onrun-codeunit-trigger.md) 
 
-- [OnBeforeTestRun Trigger](triggers/devenv-OnBeforeTestRun-Trigger.md)  
+- [OnBeforeTestRun Trigger](triggers-auto/codeunit/devenv-onbeforetestrun-codeunit-trigger.md)  
 
-- [OnAfterTestRun Trigger](triggers/devenv-OnAfterTestRun-Trigger.md)  
+- [OnAfterTestRun Trigger](triggers-auto/codeunit/devenv-onaftertestrun-codeunit-trigger.md)  
 
 In the **OnRun** trigger you enter the code to run the codeunits. It runs when you execute the codeunit and before the test methods run. You can use the **OnBeforeTestRun** and the **OnAfterTestRun** triggers to perform preprocessing and postprocessing, such as initialization or logging test results. If you implement the **OnBeforeTestRun** trigger, then it executes before each test method executes. If you implement the **OnAfterTestRun** trigger, then it executes after each test method executes and also suppresses the automatic display of the results message.  
 
 > [!WARNING]  
-> The **OnBeforeTestRun** and **OnAfterTestRun** triggers always run in their own transactions, regardless of the value of the [TestIsolation Property](properties/devenv-TestIsolation-Property.md), the value of the [TransactionModel Property](properties/devenv-TransactionModel-Property.md), or the outcome of a test method. 
+> The **OnBeforeTestRun** and **OnAfterTestRun** triggers always run in their own transactions, regardless of the value of the [TestIsolation Property](properties/devenv-TestIsolation-Property.md), the value of the [TransactionModel Property](./properties/devenv-properties.md), or the outcome of a test method. 
 
 ## Example
 This sample codeunit runs three test codeunits in the automated application test libraries.
@@ -77,4 +77,4 @@ codeunit 50102 TestRunnerCodeunit
 ```
 
 ## See Also
-[Testing the Application](devenv-Testing-Application.md)   
+[Testing the Application](devenv-Testing-Application.md)

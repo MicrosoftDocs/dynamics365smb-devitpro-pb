@@ -1,8 +1,8 @@
 ---
-title: "Object ID must be in free range."
+title: "PerTenantExtensionCop Rule PTE0001"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 05/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # PerTenantExtensionCop Rule PTE0001
-Object ID must be in free range.  
+Object ID must be in free range.
 
 ## Description
 Object ID must be in free range.

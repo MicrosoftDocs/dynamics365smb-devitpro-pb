@@ -2,11 +2,11 @@
 title: Upgrading the Data to in Single-Tenant Deployment
 description: This article describes the tasks required for upgrade the data when you have a single-tenant deployment. 
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
 ms.service: "dynamics365-business-central"
@@ -153,13 +153,12 @@ Clear all records from the **dbo.Server Instance** and  **dbo.Debugger Breakpoin
 
 ## <a name="ConvertDb"></a> Task 6: Convert old database to [!INCLUDE[prod_short](../developer/includes/prod_short.md)]
 
-If the database is on Azure SQL Database, you must first add your user account to the **dbmanager** database role on master database. This membership is only required for converting the database, and can be removed afterwards. 
+[!INCLUDE[convert_azure_sql_db](../developer/includes/convert_azure_sql_db.md)]
+2. To convert the old database to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] format, run the new [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] for [!INCLUDE[prod_short](../developer/includes/prod_short.md)], open the old database, and follow the conversion instructions.
 
-To convert the old database to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] format, run the new [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] for [!INCLUDE[prod_short](../developer/includes/prod_short.md)], open the old database, and follow the conversion instructions.
+    If you do not run the development environment as an administrator, you will get an error and the conversion will be stopped.
 
-If you do not run the development environment as an administrator, you will get an error and the conversion will be stopped.
-
-For more information about how to open a database, see [Open a Database](../cside/cside-open-database.md).
+    For more information about how to open a database, see [Open a Database](../cside/cside-open-database.md).
 
 > [!IMPORTANT]
 > Do not run schema synchronization at this time. Choose to run it **later**.
@@ -182,7 +181,7 @@ Using [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] for 
 
 ## <a name="ConnectToServer"></a> Task 8: Connect a [!INCLUDE[server](../developer/includes/server.md)] instance to converted database
 
-You use the [!INCLUDE[admintool](../developer/includes/admintool.md)] or [Set-NAVServerConfiguration cmdlet](https://go.microsoft.com/fwlink/?linkid=401394) in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] to connect a [!INCLUDE[server](../developer/includes/server.md)] instance to the converted database.  
+You use the [!INCLUDE[admintool](../developer/includes/admintool.md)] or [Set-NAVServerConfiguration cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] to connect a [!INCLUDE[server](../developer/includes/server.md)] instance to the converted database.  
 
 The service account that is used by the [!INCLUDE[server](../developer/includes/server.md)] instance must be a member of the **db\_owner** role in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database on SQL Server or Azure SQL Database.
 
@@ -356,7 +355,7 @@ In this task, you will publish and generate symbols that are required for using 
     ```
 3. <a name="PublishSymbols"></a>Publish the system.app and test.app symbol files.
 
-    If you installed the **AL Development Environment**, you can find the symbol files where your installed the environment, which by default is [!INCLUDE[prodx86installpath](../developer/includes/prodx86installpath.md)]. Otherwise, you can find the files in the **ModernDev** folder on the installation media. 
+    If you installed the **AL Development Environment**, you can find the symbol files where your installed the environment, which by default is C:\\Program Files \(x86\)\\Microsoft Dynamics 365 Business Central\\140. Otherwise, you can find the files in the **ModernDev** folder on the installation media. 
 
     To publish the symbols, open the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] as an administrator, and run the following command for each of the symbol files:
 

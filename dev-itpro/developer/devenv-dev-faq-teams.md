@@ -2,11 +2,11 @@
 title: "Frequently asked questions about Microsoft Teams integration with Business Central"
 description: Answers to typical questions about Teams and Business Central
 ms.custom: na
-ms.date: 10/08/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---

@@ -1,8 +1,9 @@
 ---
 title: "Debugger.EnableSqlTrace Method"
+description: "Enables or verifies SQL tracing. If you enable SQL tracing, then SQL Server events for selected sessions on the server instance are collected."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Debugger.EnableSqlTrace Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Enables or verifies SQL tracing. If you enable SQL tracing, then SQL Server events for selected sessions on the server instance are collected.
 
@@ -28,15 +29,15 @@ Enables or verifies SQL tracing. If you enable SQL tracing, then SQL Server even
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The ID of the session for which you want to enable the SQL trace, or for which you want to verify if tracing is enabled.If you specify 0 and you specify the NewIsEnabled parameter, then tracing is enabled for all existing sessions and all new sessions on the current server instance. If you specify 0 and you omit the NewIsEnabled parameter, then the function returns true if tracing is enabled for new sessions on the current server instance. If the session ID that you specify does not exist and you specify the NewIsEnabled parameter, then a run-time error occurs. If the session ID that you specify does not exist and you do not specify the NewIsEnabled parameter, then the function returns false.
         
-*NewIsEnabled*  
+*[Optional] NewIsEnabled*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 If you specify the optional NewIsEnabled parameter, then the method sets whether tracing is enabled. true if you want to enable tracing for the specified session; false if you want to disable tracing. If you omit the NewIsEnabled parameter, then the function verifies if tracing is enabled.
         
 
 
 ## Return Value
-*IsEnabled*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*[Optional] IsEnabled*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 
 
 
@@ -44,7 +45,7 @@ If you specify the optional NewIsEnabled parameter, then the method sets whether
 
 ## Remarks
 
-You use Microsoft SQL Server Profiler to view traces. For more information, see [Using SQL Server Profiler](https://go.microsoft.com/fwlink/?LinkId=257789). To start SQL Server Profiler, in **SQL Server Management Studio**, on the **Tools** menu, choose **SQL Server Profiler**.  
+You use Microsoft SQL Server Profiler to view traces. For more information, see [Using SQL Server Profiler](/previous-versions/sql/sql-server-2008-r2/ms187929(v=sql.105)). To start SQL Server Profiler, in **SQL Server Management Studio**, on the **Tools** menu, choose **SQL Server Profiler**.  
   
 You can also enable and disable SQL tracing by using the **Start Full SQL Tracing** and **Stop Full SQL Tracing** buttons on the **Session List** page.  
 

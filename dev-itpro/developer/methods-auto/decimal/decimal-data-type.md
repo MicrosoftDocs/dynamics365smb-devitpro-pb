@@ -1,8 +1,9 @@
 ---
 title: "Decimal Data Type"
+description: "Denotes decimal numbers ranging from -999,999,999,999,999.99 to +999,999,999,999,999.99."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Decimal Data Type
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Denotes decimal numbers ranging from -999,999,999,999,999.99 to +999,999,999,999,999.99.
 
@@ -34,7 +35,7 @@ The following are examples of decimal values.
 
 ## Example 2
 
- The following is not a decimal, but rather an [Integer Data Type](../../datatypes/devenv-integer-data-type.md).  
+ The following is not a decimal, but rather an [Integer Data Type](../library.md).  
 
 ```
 342  
@@ -61,4 +62,4 @@ It is possible to assign to a variable the maximum value that can be formatted a
  
 ## See Also
 [Getting Started with AL](../../devenv-get-started.md)  
-[Developing Extensions](../../devenv-dev-overview.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

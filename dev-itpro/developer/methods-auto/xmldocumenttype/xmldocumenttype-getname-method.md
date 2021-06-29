@@ -1,8 +1,9 @@
 ---
 title: "XmlDocumentType.GetName Method"
+description: "Gets the name for this Document Type Definition (DTD)."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # XmlDocumentType.GetName Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Gets the name for this Document Type Definition (DTD).
 
@@ -24,9 +25,9 @@ Gets the name for this Document Type Definition (DTD).
 [Ok := ]  XmlDocumentType.GetName(var Result: Text)
 ```
 ## Parameters
-*XmlDocumentType*
-&emsp;Type: [XmlDocumentType](xmldocumenttype-data-type.md)
-An instance of the [XmlDocumentType](xmldocumenttype-data-type.md) data type.
+*XmlDocumentType*  
+&emsp;Type: [XmlDocumentType](xmldocumenttype-data-type.md)  
+An instance of the [XmlDocumentType](xmldocumenttype-data-type.md) data type.  
 
 *Result*  
 &emsp;Type: [Text](../text/text-data-type.md)  
@@ -34,8 +35,8 @@ A string that contains the name for this Document Type Definition (DTD).
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*[Optional] Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

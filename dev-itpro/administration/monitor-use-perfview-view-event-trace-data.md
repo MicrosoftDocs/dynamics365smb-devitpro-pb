@@ -1,11 +1,11 @@
 ---
 title: "How to: Use PerfView to View Event Trace Data"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.assetid: 5523466a-5f72-4138-ad36-3b678c36724b
 caps.latest.revision: 3

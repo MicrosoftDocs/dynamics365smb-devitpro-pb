@@ -1,8 +1,9 @@
 ---
 title: "WebServiceActionContext.SetObjectId Method"
+description: "Sets the object ID."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # WebServiceActionContext.SetObjectId Method
-> **Version**: _Available from runtime version 2.0._
+> **Version**: _Available or changed with runtime version 2.0._
 
 Sets the object ID.
 
@@ -24,9 +25,9 @@ Sets the object ID.
  WebServiceActionContext.SetObjectId(ObjectId: Integer)
 ```
 ## Parameters
-*WebServiceActionContext*
-&emsp;Type: [WebServiceActionContext](webserviceactioncontext-data-type.md)
-An instance of the [WebServiceActionContext](webserviceactioncontext-data-type.md) data type.
+*WebServiceActionContext*  
+&emsp;Type: [WebServiceActionContext](webserviceactioncontext-data-type.md)  
+An instance of the [WebServiceActionContext](webserviceactioncontext-data-type.md) data type.  
 
 *ObjectId*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  

@@ -1,8 +1,9 @@
 ---
 title: "Database.CopyCompany Method"
+description: "Creates a new company and copies all data from an existing company in the same database."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/03/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Database.CopyCompany Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Creates a new company and copies all data from an existing company in the same database.
 
@@ -32,12 +33,12 @@ The name of the company that you want to copy data from.
         
 *DestinationName*  
 &emsp;Type: [String](../string/string-data-type.md)  
-The name of the company that you want to create and copy data to. The company name can have a maximum of 30 characters. If the database collation is case-sensitive, you can have one company called Company and another called Company. However, if the database is case-insensitive, you cannot create companies with names that differ only by case.  
+The name of the company that you want to create and copy data to. The company name can have a maximum of 30 characters. If the database collation is case-sensitive, you can have one company called COMPANY and another called Company. However, if the database is case-insensitive, you cannot create companies with names that differ only by case.  
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*[Optional] Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

@@ -3,11 +3,11 @@ title: "Adding Help Links from Pages, Reports, and XMLports"
 description: "This topic shows how to specify the help link."
 author: edupont04
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: edupont
 ---

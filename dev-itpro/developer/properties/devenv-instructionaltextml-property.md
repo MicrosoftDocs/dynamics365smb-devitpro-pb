@@ -2,7 +2,7 @@
 title: "InstructionalTextML Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/24/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # InstructionalTextML Property
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Sets the multilanguage value of the InstructionalText of the object. Use this property as a label.
 
@@ -22,7 +22,6 @@ Sets the multilanguage value of the InstructionalText of the object. Use this pr
 -   Page
 -   Request Page
 -   Page Group
-
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

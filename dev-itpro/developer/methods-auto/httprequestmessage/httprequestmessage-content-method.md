@@ -1,8 +1,9 @@
 ---
 title: "HttpRequestMessage.Content Method"
+description: "Gets or sets the contents of the HTTP message."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # HttpRequestMessage.Content Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Gets or sets the contents of the HTTP message.
 
@@ -26,18 +27,18 @@ Gets or sets the contents of the HTTP message.
 > [!NOTE]
 > This method can be invoked using property access syntax.
 ## Parameters
-*HttpRequestMessage*
-&emsp;Type: [HttpRequestMessage](httprequestmessage-data-type.md)
-An instance of the [HttpRequestMessage](httprequestmessage-data-type.md) data type.
+*HttpRequestMessage*  
+&emsp;Type: [HttpRequestMessage](httprequestmessage-data-type.md)  
+An instance of the [HttpRequestMessage](httprequestmessage-data-type.md) data type.  
 
-*SetContent*  
+*[Optional] SetContent*  
 &emsp;Type: [HttpContent](../httpcontent/httpcontent-data-type.md)  
 The contents of the HTTP message.  
 
 
 ## Return Value
-*CurrentContent*
-&emsp;Type: [HttpContent](../httpcontent/httpcontent-data-type.md)
+*[Optional] CurrentContent*  
+&emsp;Type: [HttpContent](../httpcontent/httpcontent-data-type.md)  
 The contents of the HTTP message.
 
 

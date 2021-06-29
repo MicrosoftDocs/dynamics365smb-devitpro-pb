@@ -1,11 +1,11 @@
 ---
 title: "Calling External Web Services"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.assetid: ef7ae394-7cae-4eb4-a9a4-75b39ca1a2b6
 caps.latest.revision: 4
@@ -15,7 +15,7 @@ manager: edupont
 In [!INCLUDE[prod_short](../developer/includes/prod_short.md)], you can use the Windows Communication Foundation, which provides a set of reliable objects for calling web services to use with .NET Framework interoperability.  
   
 ## Example  
- The following code example uses a proxy web service class and calls a `Read` method from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] web service. To set up this example, you expose page 42 as a web service in the **Web Service** table and then generate and compile the proxy class. For more information, see [Working with Web Services](https://go.microsoft.com/fwlink/?LinkID=157145) in the MSDN Library.  
+ The following code example uses a proxy web service class and calls a `Read` method from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] web service. To set up this example, you expose page 42 as a web service in the **Web Service** table and then generate and compile the proxy class. For more information, see [Working with Web Services](/previous-versions/dynamicsnav-2016/dd355036(v=nav.90)) in the MSDN Library.  
   
  The example requires the following variables.  
   

@@ -1,30 +1,29 @@
 ---
 title: "Extending Price Calculations"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: bholtorf
 ---
 
 # Extending Price Calculations
-If you record special prices and line discounts for sales and purchases, [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] can automatically calculate prices on sales and purchase documents, and on job and item journal lines. The price is the lowest permissible price with the highest permissible line discount on a given date. [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] automatically calculates the price when it inserts the unit price and the line discount percentage for items on new document and journal lines. For more information, see [Price Calculation](/dynamics365/business-central/sales-how-record-sales-price-discount-payment-agreements#best-price-calculation).
+If you offer special prices and line discounts for sales and purchases, [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] can automatically calculate prices on sales and purchase documents, and on job and item journal lines. The price is the lowest permissible price with the highest permissible line discount on a given date. [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] automatically calculates the price when it inserts the unit price and the line discount percentage for items on new document and journal lines. For more information, see [Price Calculation](/dynamics365/business-central/sales-how-record-sales-price-discount-payment-agreements#best-price-calculation).
 
-
-2020 release wave 1 introduces a second implementation of price calculations that will be available as an alternative to the calculations that were available in 2019 release wave 2 and earlier versions. This new implementation has the advantage that it is much easier to extend, for example, with new calculations.
+2020 release wave 1 introduces a second implementation of price calculations that will be available as an alternative to the calculations that were available in 2019 release wave 2 and earlier versions. The new implementation is easier to extend, for example, with new calculations.
 
 Price calculations that were available in 2019 release wave 2 are unchanged. The new calculations in 2020 release wave 1 are an alternative implementation that you can extend. 
 
 > [!NOTE]
 > The new price calculation capabilities in 2020 release wave 1 exist in code only, and do not include any user experience. We will provide that in an upcoming release. For now, to use the new capability you must create your own page.
 
-This topic describes how price calculations are implemented in 2020 release wave 1 (referred to as "Business Central Version 16" in the illustrations), and provides comparisons with 2019 release wave 2 (referred to as "Business Central Version 15" in the illustrations) to show what we have changed. It also provides some examples of how you can extend price calculations in 2020 release wave 1. 
+This topic describes how price calculations are implemented in 2020 release wave 1 (referred to as "Business Central Version 16" in the illustrations), and provides comparisons with 2019 release wave 2 (referred to as "Business Central Version 15" in the illustrations) to show what we have changed. It also provides some examples of how you can extend price calculations in 2020 release wave 1 and later. 
 
 ## Price Calculation Setup
-Price calculation are based on the **Price Calculation Setup** table, where you can choose an existing implementation, as shown in the following image.
+Price calculations are based on the **Price Calculation Setup** table, where you can choose an existing implementation, as shown in the following image.
 
 :::image type="content" source="../media/best-pricing-diagram1-setup.png" alt-text="Diagram showing a price calculation implementation.":::
 
@@ -44,7 +43,7 @@ You can have multiple setups with the same combination of method, type, and asse
 
 By default, all sales lines use the "Business Central (Version 15.0)" implementation to calculate prices, unless the second line has detailed setup lines that define exceptions. 
 
-The Price Calculation method on the document line searches for a setup that that has a matching combination of the method, the price type, and asset type on the document line. The method then searches for detailed lines that contain exceptions for the combination of a source group (Customer, Vendor, and Job) and an asset (Item, Resource, and so on) on the document line. If we find a matching setup we use its implementation for price calculation. If there is no matching setup exception, we use the default implementation. 
+The Price Calculation method on the document line searches for a setup that that has a matching combination of the method, the price type, and asset type on the document line. The method then searches for detailed lines that contain exceptions for the combination of a source group (Customer, Vendor, and Job) and an asset (Item, Resource, and so on) on the document line. If we find a matching setup, we use its implementation for price calculation. If there is no matching setup exception, we use the default implementation. 
 
 For example, let's say we have a line on a sales order for Customer 20000 contains item 1000. The default implementation for the sale of any asset is "Business Central (Version 15.0)," but "Business Central (Version 16.0)" implementation contains a detailed setup line for Item 1000. That means that the "Business Central (Version 16.0)" implementation will calculate the price. 
 Detailed setup records are to be entered by users and only make sense for the non-default setup records. The following image shows the relation between the setup line and the detailed setup.
@@ -74,7 +73,7 @@ The "Asset Type" field is an extensible "Price Asset Type" enum that contains th
 * Service Cost (50)
 * G/L Account (60)
 
-The Asset Type is part of the composite key in the Price Calculation Setup table. If the only setup record contains "Asset Type" - All it means that there is no need in special price calculation implementations per asset type. The default implementation will be used regardless of an asset type in the document line. If you need different implementations you must add a setup lines with another asset type. For example, the following table shows a Resource Pricing implementation with a Resource asset type. 
+The Asset Type is part of the composite key in the Price Calculation Setup table. If the only setup record contains "Asset Type" - All, special price calculation implementations per asset type are not needed. The default implementation will be used regardless of the asset type in the document line. If you need different implementations, you must add a setup line with another asset type. For example, the following table shows a Resource Pricing implementation with a Resource asset type. 
 
 |Method  |Type  |Asset Type  |Implementation  |Default  |
 |---------|---------|---------|---------|---------|
@@ -122,7 +121,7 @@ The Business Central (Version 16.0) calculation uses the following table:
 
 Table 7001 "Price List Line" is compatible with all tables used by the Business Central (Version 15.0) calculation. It contains the set of CopyFrom() methods that convert the data from the tables to the Price List Line table. 
 
-If you extended the Business Central (Version 15.0) tables you must also extend the Price List Line table and the CopyFrom() methods by subscribing to special events. Here's are examples that extend the Sales Price table with a Document No. field.
+If you extended the Business Central (Version 15.0) tables, you must also extend the Price List Line table and the CopyFrom() methods by subscribing to special events. The following example extends the Sales Price table with a Document No. field.
 
 ```AL
 tableextension 50010 "Document No in Sales Price" extends "Sales Price"
@@ -171,7 +170,7 @@ The Price Calculation Method field is added to all tables that need calculated p
 
 The following image shows the schema of how the methods called in the Sales Line table get the price and discount amounts from either the Sales Price or Price List Line tables.
 
-:::image type="content" source="../media/best-pricing-diagram3-data-sources.png" alt-text="Diagram showing an price calculation for a sales line.":::
+:::image type="content" source="../media/best-pricing-diagram3-data-sources.png" alt-text="Diagram showing a price calculation for a sales line.":::
 
 ## Interface Objects
 AL interface objects are important for extensibility. They define the capabilities that are available to an object, and allow implementations to differ as long as they comply with the interface requirements. For more information, see [Interfaces in AL](devenv-interfaces-in-al.md).
@@ -220,7 +219,7 @@ procedure GetHandler(
     end;
 
 ```
-After the price calculation implementation is defined the document line typically calls the methods in the interfrace that calculate the price and discount. The following code is used in the Sales Line table:
+After the price calculation implementation is defined, the document line typically calls the methods in the interface that calculate the price and discount. The following code is used in the Sales Line table:
 
 ```AL
     var
@@ -251,7 +250,7 @@ The following example shows a typical use of the codeunits in the Sales Line tab
         PriceCalculationMgt.GetHandler(SalesLinePrice, PriceCalculation);
     end;
 ```
-The SalesLinePrice codeunit is declared directly because this is the sales line context. The instance is initialized by the interface's SetLine() method, and then passed to the GetHandler() method for PriceCalculation initialization because all Price Calculation implementation codeunits include an instance of the Line With Price interface, which stores data about document and journal lines. The following example shows how to declare the interface variable.
+The SalesLinePrice codeunit is declared directly in the context of the sales line. The instance is initialized by the interface's SetLine() method, and then passed to the GetHandler() method for PriceCalculation initialization because all Price Calculation implementation codeunits include an instance of the Line With Price interface, which stores data about document and journal lines. The following example shows how to declare the interface variable.
 
 ```AL
     var
@@ -313,11 +312,11 @@ codeunit 7032 "Price Source - Customer" implements "Price Source"
         end;
     end;
 ```
-## Example of Extended Price Calculations
-You can extend price calculations, for example, to include other sources or use calculations that allow for combinations and dependencies. The following sections provide an example.
+## Examples of Extended Price Calculations
+You can extend price calculations, for example, to include other sources or use calculations that allow for combinations and dependencies. The following sections provide examples.
 
 ### Example: Change an Item Price When Combined with Another Item 
-Let's say we want to make the price of one item depend on whether it's sold individually or bundled with one or more other items. We'll use software licenses in this example, but the same principles apply in other scenarios.
+Let's say we want to make the price of one item depend on whether it's sold individually or bundled with one or more other items. We'll use software licenses in this example.
 
 > [!NOTE]
 > The prices, names, and combinations in this example are completely fictional and intended only to support the scenario described here. They do not reflect anything in the real-world.
@@ -336,7 +335,7 @@ The following image shows an example of a Sales Line page that is extended with 
 
 :::image type="content" source="../media/best-pricing-sales-lines.png" alt-text="Image that shows an example of an extended Price List page.":::
 
-Let's look at some sample extensions that will implement this for us. 
+Let's look at some sample extensions that will implement this logic for us. 
 
 The first table extension adds a new field named Attach to Line No. to the Sales Line table and recalculates pricing when we make a change. This field will let us create the combinations that determine our discounts. It also copies the GetPriceCalculationHandler() function from the Sales Line table.
 
@@ -452,6 +451,398 @@ The new price calculation capabilities are not available in the user interface. 
    field("Attach To Item No."; "Attach To Item No.")
    { }
 ```
+
+### Example: Add Fixed Assets as a Product Type
+This example shows how to add a new type of asset so that it can be used in price calculations for sales and purchases. 
+
+The product type that is set for the price list line is implemented by the **Price Asset Type** enum. Extend the enum with a new value, **Fixed Asset**.
+
+```
+enumextension 50000 "Fixed Asset Type" extends "Price Asset Type"
+{
+    value(5600; "Fixed Asset")
+    {
+        Caption = 'Fixed Asset';
+        Implementation = "Price Asset" = "Price Asset - Fixed Asset";
+    }
+}
+```
+
+The **Price Asset Type** enum implements the **Price Asset** interface. Add a **Price Asset - Fixed Asset** codeunit that will implement this interface for the Fixed Asset value. Some of the interface's methods are not relevant for fixed assets, so we will leave them empty but implement the methods from the codeunit. For an example, see the **Price Asset - G/L Account** codeunit. The following example will enable the Fixed Asset product type in price list lines. 
+
+```
+    - GetNo(), 
+    - GetId(), 
+    - IsLookupOk(), 
+    - IsAssetNoRequired(),
+    - FilterPriceLines(),
+    - FillFromBuffer(),
+    - FillAdditionalFields()
+```
+```
+codeunit 50002 "Price Asset - Fixed Asset" implements "Price Asset"
+{
+    var
+        FixedAsset: Record "Fixed Asset";
+
+    procedure GetNo(var PriceAsset: Record "Price Asset")
+    begin
+        PriceAsset."Table Id" := Database::"Fixed Asset";
+        if FixedAsset.GetBySystemId(PriceAsset."Asset ID") then begin
+            PriceAsset."Asset No." := FixedAsset."No.";
+            FillAdditionalFields(PriceAsset);
+        end else
+            PriceAsset.InitAsset();
+    end;
+
+    procedure GetId(var PriceAsset: Record "Price Asset")
+    begin
+        PriceAsset."Table Id" := Database::"Fixed Asset";
+        if FixedAsset.Get(PriceAsset."Asset No.") then begin
+            PriceAsset."Asset ID" := FixedAsset.SystemId;
+            FillAdditionalFields(PriceAsset);
+        end else
+            PriceAsset.InitAsset();
+    end;
+
+    procedure IsLookupOK(var PriceAsset: Record "Price Asset"): Boolean
+    var
+        xPriceAsset: Record "Price Asset";
+    begin
+        xPriceAsset := PriceAsset;
+        if FixedAsset.Get(xPriceAsset."Asset No.") then;
+        if Page.RunModal(Page::"Fixed Asset List", FixedAsset) = ACTION::LookupOK then begin
+            xPriceAsset.Validate("Asset No.", FixedAsset."No.");
+            PriceAsset := xPriceAsset;
+            exit(true);
+        end;
+    end;
+
+    procedure ValidateUnitOfMeasure(var PriceAsset: Record "Price Asset"): Boolean
+    begin
+    end;
+
+    procedure IsLookupUnitOfMeasureOK(var PriceAsset: Record "Price Asset"): Boolean
+    begin
+    end;
+
+    procedure IsLookupVariantOK(var PriceAsset: Record "Price Asset"): Boolean
+    begin
+        exit(false)
+    end;
+
+    procedure IsAssetNoRequired(): Boolean;
+    begin
+        exit(true)
+    end;
+
+    procedure FillBestLine(PriceCalculationBuffer: Record "Price Calculation Buffer"; AmountType: Enum "Price Amount Type"; var PriceListLine: Record "Price List Line")
+    begin
+    end;
+
+    procedure FilterPriceLines(PriceAsset: Record "Price Asset"; var PriceListLine: Record "Price List Line") Result: Boolean;
+    begin
+        PriceListLine.SetRange("Asset Type", PriceAsset."Asset Type");
+        PriceListLine.SetRange("Asset No.", PriceAsset."Asset No.");
+    end;
+
+    procedure PutRelatedAssetsToList(PriceAsset: Record "Price Asset"; var PriceAssetList: Codeunit "Price Asset List")
+    begin
+    end;
+
+    procedure FillFromBuffer(var PriceAsset: Record "Price Asset"; PriceCalculationBuffer: Record "Price Calculation Buffer")
+    begin
+        PriceAsset.NewEntry(PriceCalculationBuffer."Asset Type", PriceAsset.Level);
+        PriceAsset.Validate("Asset No.", PriceCalculationBuffer."Asset No.");
+    end;
+    local procedure FillAdditionalFields(var PriceAsset: Record "Price Asset")
+    begin
+        PriceAsset.Description := FixedAsset.Description;
+        PriceAsset."Unit of Measure Code" := '';
+        PriceAsset."Variant Code" := '';
+    end;
+}
+
+```
+Now lets include this new product type in price calculations.
+
+   - The Sales Line table provides the **OnBeforeUpdateUnitPrice** event. This is where we'll add a call that runs the calculation, because it does not happen for fixed assets in the sales line. See the method UpdateUnitPriceByField() below, that is the simplified version of the method UpdateUnitPriceByField() that runs the price calculation in the Sales Line table.
+   - Codeunit "Sales Line - Price" provides the **OnAfterGetAssetType** event that must return a Price Asset Type value to be included in price calculations. If the sales line type is Fixed Asset, we return the Fixed Asset product type.
+
+The following codeunit shows a sample implementation.
+
+```
+codeunit 50001 "Fixed Asset Price Calc."
+{
+    [EventSubscriber(ObjectType::Table, Database::"Sales Line", 'OnBeforeUpdateUnitPrice', '', false, false)]
+    local procedure OnBeforeUpdateUnitPrice(var SalesLine: Record "Sales Line"; xSalesLine: Record "Sales Line"; CalledByFieldNo: Integer; CurrFieldNo: Integer; var Handled: Boolean);
+    begin
+        if SalesLine.Type = SalesLine.Type::"Fixed Asset" then begin
+            UpdateUnitPriceByField(SalesLine, xSalesLine, CalledByFieldNo, CurrFieldNo);
+            Handled := true;
+        end;
+    end;
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Sales Line - Price", 'OnAfterGetAssetType', '', false, false)]
+    local procedure OnAfterGetAssetType(SalesLine: Record "Sales Line"; var AssetType: Enum "Price Asset Type");
+    begin
+        if SalesLine.Type = SalesLine.Type::"Fixed Asset" then
+            AssetType := AssetType::"Fixed Asset";
+    end;
+
+    local procedure UpdateUnitPriceByField(var SalesLine: Record "Sales Line"; xSalesLine: Record "Sales Line"; CalledByFieldNo: Integer; CurrFieldNo: Integer)
+    var
+        SalesHeader: Record "Sales Header";
+        PriceCalculation: Interface "Price Calculation";
+    begin
+        SalesHeader.Get(SalesLine."Document Type", SalesLine."Document No.");
+        SalesLine.TestField("Qty. per Unit of Measure");
+
+        SalesLine.GetPriceCalculationHandler("Price Type"::Sale, SalesHeader, PriceCalculation);
+        if not (SalesLine."Copied From Posted Doc." and SalesLine.IsCreditDocType()) then begin
+            PriceCalculation.ApplyDiscount();
+            SalesLine.ApplyPrice(CalledByFieldNo, PriceCalculation);
+        end;
+        SalesLine.Validate("Unit Price");
+
+        SalesLine.ClearFieldCausedPriceCalculation();
+    end;
+}
+```
+Now we can test the price calculation. In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], open the **Sales Price List** and add a price line for the product with a minimum quantity of 0, and one with 5.
+
+:::image type="content" source="media/price-1.1-fa-sales-price-list.png" alt-text="Sales price list page":::
+
+If we create a sales order with lines for the minimum quantities of the product, the unit prices are calculated correctly.
+
+:::image type="content" source="media/price-1.2-fa-sales-order.png" alt-text="Sales order page":::
+
+### Example: Add Location as an Applies-to Type
+This example shows how to add a new location source type to the price list header. 
+
+The **Price Source Type** enum implements the **Applies-to Type** field in the header of the price list. Additionally, the **Sales Price Source Type**, **Purchase Price Source Type**, and **Job Price Source Type** are subsets of the **Price Source Type** enum. If we want to use a new value in sales, purchase, and job price lists, we must also extend those enums. 
+
+In this example, we will extend the Price Source Type enum to display the value in the sales price lists by also extending the Sales Price Source Type enum. For compatibility, the new value must have the same ID in both enums.
+
+```
+enumextension 50001 "Location Source Type" extends "Price Source Type"
+{
+    value(50001; Location)
+    {
+        Caption = 'Location';
+        Implementation = "Price Source" = "Price Source - Location", "Price Source Group" = "Price Source Group - Customer";
+    }
+}
+
+enumextension 50003 "Location Sales Source Type" extends "Sales Price Source Type"
+{
+    value(50001; Location)
+    {
+        Caption = 'Location';
+    }
+}
+
+```
+
+The Price Source Type enum implements the Price Source and Price Source Group interfaces. We don't need special source group handling here, and can reuse the existing implementation codeunit **Price Source Group - Customer**. For the Price Source interface, we must add a new implementation codeunit **Price Source - Location**. For examples, see the existing implementations of the Price Source interface.
+
+The following example enables the new Applies-to Type on price lists.
+
+```
+codeunit 50003 "Price Source - Location" implements "Price Source"
+{
+    var
+        Location: Record Location;
+        ParentErr: Label 'Parent Source No. must be blank for Location source type.';
+
+    procedure GetNo(var PriceSource: Record "Price Source")
+    begin
+        if Location.GetBySystemId(PriceSource."Source ID") then begin
+            PriceSource."Source No." := Location.Code;
+            FillAdditionalFields(PriceSource);
+        end else
+            PriceSource.InitSource();
+    end;
+
+    procedure GetId(var PriceSource: Record "Price Source")
+    begin
+        if Location.Get(PriceSource."Source No.") then begin
+            PriceSource."Source ID" := Location.SystemId;
+            FillAdditionalFields(PriceSource);
+        end else
+            PriceSource.InitSource();
+    end;
+
+    procedure IsForAmountType(AmountType: Enum "Price Amount Type"): Boolean
+    begin
+        exit(true);
+    end;
+
+    procedure IsSourceNoAllowed() Result: Boolean;
+    begin
+        Result := true;
+    end;
+
+    procedure IsLookupOK(var PriceSource: Record "Price Source"): Boolean
+    var
+        xPriceSource: Record "Price Source";
+    begin
+        xPriceSource := PriceSource;
+        if Location.Get(xPriceSource."Source No.") then;
+        if Page.RunModal(Page::"Location List", Location) = ACTION::LookupOK then begin
+            xPriceSource.Validate("Source No.", Location.Code);
+            PriceSource := xPriceSource;
+            exit(true);
+        end;
+    end;
+
+    procedure VerifyParent(var PriceSource: Record "Price Source") Result: Boolean
+    begin
+        if PriceSource."Parent Source No." <> '' then
+            Error(ParentErr);
+    end;
+
+    procedure GetGroupNo(PriceSource: Record "Price Source"): Code[20];
+    begin
+        exit(PriceSource."Source No.");
+    end;
+
+    local procedure FillAdditionalFields(var PriceSource: Record "Price Source")
+    begin
+        PriceSource.Description := Location.Name;
+    end;
+}
+
+```
+Now lets ensure that price calculations include the new applies-to type.
+
+* To recalculate the price, we can subscribe to events that pass the sales line by reference. For example, the **OnValidateLocationCodeOnAfterSetOutboundWhseHandlingTime** event. We'll call the **UpdateUnitPriceByLocationCode()** method, which is a simplified version of the **UpdateUnitPriceByField()** method that runs the price calculation on the Sales Line table.
+* To add the location in the source list for price calculations, we'll subscribe to the **OnAfterAddSources** event of Codeunit "Sales Line - Price," and add the **Location Code** as a source of type **Location**.
+
+The following example shows how.
+
+```
+codeunit 50004 "Location Source Price Calc."
+{
+    [EventSubscriber(ObjectType::Table, Database::"Sales Line", 'OnValidateLocationCodeOnAfterSetOutboundWhseHandlingTime', '', false, false)]
+    local procedure OnValidateLocationCodeOnAfterSetOutboundWhseHandlingTime(var SalesLine: Record "Sales Line");
+    begin
+        UpdateUnitPriceByLocationCode(SalesLine);
+    end;
+
+    local procedure UpdateUnitPriceByLocationCode(var SalesLine: Record "Sales Line")
+    var
+        SalesHeader: Record "Sales Header";
+        PriceCalculation: Interface "Price Calculation";
+    begin
+        SalesHeader.Get(SalesLine."Document Type", SalesLine."Document No.");
+        SalesLine.TestField("Qty. per Unit of Measure");
+
+        SalesLine.GetPriceCalculationHandler("Price Type"::Sale, SalesHeader, PriceCalculation);
+        if not (SalesLine."Copied From Posted Doc." and SalesLine.IsCreditDocType()) then begin
+            PriceCalculation.ApplyDiscount();
+            SalesLine.ApplyPrice(SalesLine.FieldNo("Location Code"), PriceCalculation);
+        end;
+        SalesLine.Validate("Unit Price");
+    end;
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Sales Line - Price", 'OnAfterAddSources', '', false, false)]
+    local procedure OnAfterAddSources(
+        SalesHeader: Record "Sales Header"; SalesLine: Record "Sales Line";
+        PriceType: Enum "Price Type"; var PriceSourceList: Codeunit "Price Source List");
+    begin
+        PriceSourceList.Add("Price Source Type"::Location, SalesLine."Location Code");
+    end;
+}
+
+```
+
+Now we can test the price calculation. In this example, we have an **East** location where we keep item 1896-S, and the item has prices for all customers.
+
+:::image type="content" source="media/price-2.1-location-prices.png" alt-text="Location added as a source":::
+
+We'll create a sales order and add four lines for our item. When we choose a location code, the value in the **Unit Price Excl. VAT** changes. 
+
+:::image type="content" source="media/price-2.2-location-sales-order.png" alt-text="Location sales order":::
+
+### Example: Add Hierarchical Price Calculations
+This example adds a new price calculation method that changes the existing implementation to prioritize a customer price over all other customer price, even if the price is higher. This requires a small adjustment to how the price source list is generated, because the source list includes levels to implement hierarchical calculations.
+
+The **Price Calculation Method** implements the price calculation methods. The following examples show how to extend the enum with the new value.
+
+```
+enumextension 50005 "Hierarchical Price Method" extends "Price Calculation Method"
+{
+    value(50005; Hierarchical)
+    {
+        Caption = 'Hierarchical';
+    }
+}
+
+```
+
+We'll add a new codeunit that does the following:
+
+* Adds setup for the new method. Codeunit **Price Calculation Mgt.** provides the **OnFindSupportedSetup** event that allows us to add **Price Calculation Setup** records. Subscribe to it, and add the default setup record for the new method, for the sale type, all asset types, and "Business Central (Version 16.0)" implementation.
+* Modify the price source list that is generated by the "Business Central (Version 16.0)" implementation. Codeunit **Sales Line - Price** provides the **OnAfterAddSources** event and passes the price source list that can be overridden. Replace the incoming list with a new list that includes price sources at different levels, where a higher level means a higher priority.
+
+The following example shows how.
+
+```
+codeunit 50005 "Hierarchical Price Calc."
+{
+
+    local procedure SetHierarchicalSourceList(SalesHeader: Record "Sales Header"; SalesLine: Record "Sales Line"; var PriceSourceList: Codeunit "Price Source List")
+    begin
+        PriceSourceList.Init();
+        PriceSourceList.Add("Price Source Type"::"All Customers"); // "All Customers" will have lowest priority
+        PriceSourceList.IncLevel();
+        PriceSourceList.Add("Price Source Type"::"Customer Price Group", SalesLine."Customer Price Group");
+        PriceSourceList.Add("Price Source Type"::"Customer Disc. Group", SalesLine."Customer Disc. Group");
+        PriceSourceList.IncLevel();
+        PriceSourceList.Add("Price Source Type"::Customer, SalesHeader."Bill-to Customer No."); // Customer will have highest priority
+    end;
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Price Calculation Mgt.", 'OnFindSupportedSetup', '', false, false)]
+    local procedure OnFindSupportedSetup(var TempPriceCalculationSetup: Record "Price Calculation Setup");
+    begin
+        TempPriceCalculationSetup.Init();
+        TempPriceCalculationSetup.Method := TempPriceCalculationSetup.Method::Hierarchical;
+        TempPriceCalculationSetup.Enabled := true;
+        TempPriceCalculationSetup.Type := TempPriceCalculationSetup.Type::Sale;
+        TempPriceCalculationSetup."Asset Type" := TempPriceCalculationSetup."Asset Type"::" ";
+        TempPriceCalculationSetup.Validate(Implementation, TempPriceCalculationSetup.Implementation::"Business Central (Version 16.0)");
+        TempPriceCalculationSetup.Default := true;
+        TempPriceCalculationSetup.Insert(true);
+    end;
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Sales Line - Price", 'OnAfterAddSources', '', false, false)]
+    local procedure OnAfterAddSources(SalesHeader: Record "Sales Header"; SalesLine: Record "Sales Line"; PriceType: Enum "Price Type"; var PriceSourceList: Codeunit "Price Source List");
+    begin
+        if SalesLine."Price Calculation Method" = "Price Calculation Method"::Hierarchical then
+            SetHierarchicalSourceList(SalesHeader, SalesLine, PriceSourceList);
+    end;
+}
+
+```
+
+Now we can set up a price calculation method and see how it works in a sales order. Let's create a new price calculation method named **Hierarchical**  with one implementation for the sales type, as shown in the following images.
+
+:::image type="content" source="media/price-3.0-price-calc-methods.png" alt-text="Price calculation methods":::
+
+:::image type="content" source="media/price-3.1-hierarchical-method-setup.png" alt-text="Hierarchical method setup":::
+
+On the **Customer Card** page for customer 10000, in the **Price Calculation Method** field we'll choose **Hierarchical**, and in the **Customer Price Group** field we'll choose **PRICEGROUP**.
+
+:::image type="content" source="media/price-3.2-customer-card.png" alt-text="Customer card with lowest price":::
+
+In the price list, we'll create price lines for item 1900-S so that the lowest price is for **All Customers** and the highest is for customer 10000, as shown in the following image.
+
+:::image type="content" source="media/price-3.3-hierarchical-sales-prices.png" alt-text="Hierarchical sales price":::
+
+Now we'll create a sales order for customer 10000, and add a line for item 1900-S. The highest price is suggested for the line because it is specified for the customer. If we clear the **Price Calculation Method** field on the customer card, the lowest price will be suggested for the line if we create another order.
+
+:::image type="content" source="media/price-3.4-hierarchical-sales-order.png" alt-text="Hierarchical price on sales order":::
 
 ## See Also
 [Extending Application Areas](devenv-extending-application-areas.md)

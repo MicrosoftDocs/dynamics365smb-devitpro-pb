@@ -3,11 +3,11 @@ title: "Exporting data for Extensions"
 description: "How you can export data such as permisisons, web services, and table data for an extension."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
@@ -39,6 +39,10 @@ The data must be exported into files to be included in the extension. To use the
 
     > [!WARNING]  
     > If you do not include a permission set with your extension, only users with the SUPER permission set will be able to use the extension.
+
+    > [!IMPORTANT]  
+    > With the latest version of [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] permissions are no longer defined as data in the application database. Permissions that can be created by using AL objects are called *system* permissions. For more information, see [Entitlements and Permission Sets Overview](devenv-entitlements-and-permissionsets-overview.md).
+
 
 ## To export web services
 

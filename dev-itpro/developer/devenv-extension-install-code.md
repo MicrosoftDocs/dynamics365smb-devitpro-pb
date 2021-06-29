@@ -3,11 +3,11 @@ author: jswymer
 title: "Writing extensions installation code"
 description: "Describes how to add code to run to initialize data when an extension is installed."
 ms.custom: na
-ms.date: 01/22/2021
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ---
 
@@ -22,7 +22,7 @@ This enables you to write different code for initial installation and reinstalla
 
 ## How to write install code
 
-You write install logic in an *install* codeunit. This is a codeunit that has the [SubType property](properties/devenv-subtype-property-codeunit.md) set to **Install**. An install codeunit supports two system triggers on which you can add the install code.
+You write install logic in an *install* codeunit. This is a codeunit that has the [SubType property](/dynamics365/business-central/dev-itpro/developer/devenv-subtype-codeunit-property) set to **Install**. An install codeunit supports two system triggers on which you can add the install code.
 
 |Trigger |Description |
 |--------|------------|
@@ -106,4 +106,4 @@ codeunit 50100 MyInstallCodeunit
 [Getting Started with AL](devenv-get-started.md)  
 [How to: Publish and Install an Extension](devenv-how-publish-and-install-an-extension-v2.md)  
 [Converting Extensions V1 to Extensions V2](devenv-upgrade-v1-to-v2-overview.md)  
-[Building Your First Sample Extension With Extension Objects, Install Code, and Upgrade Code](devenv-extension-example.md)  
+[Building Your First Sample Extension With Extension Objects, Install Code, and Upgrade Code](devenv-extension-example.md)

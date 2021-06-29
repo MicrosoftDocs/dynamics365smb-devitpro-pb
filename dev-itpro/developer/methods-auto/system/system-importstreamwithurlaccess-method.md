@@ -1,8 +1,9 @@
 ---
 title: "System.ImportStreamWithUrlAccess Method"
+description: "Imports an object into a media container to be used in a temporary URL with a default expiration time."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # System.ImportStreamWithUrlAccess Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Imports an object into a media container to be used in a temporary URL with a default expiration time.
 
@@ -36,14 +37,14 @@ Input stream that contains the object to store as a media object.
 &emsp;Type: [String](../string/string-data-type.md)  
 File name to associate with the created media object.
         
-*MinutesToExpire*  
+*[Optional] MinutesToExpire*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 Number of minutes after which the object will expire.  
 
 
 ## Return Value
-*ID*
-&emsp;Type: [Guid](../guid/guid-data-type.md)
+*ID*  
+&emsp;Type: [Guid](../guid/guid-data-type.md)  
 The ID of the media container, if the import is successful.
 
 

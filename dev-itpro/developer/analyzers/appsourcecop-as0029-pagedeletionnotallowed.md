@@ -1,8 +1,8 @@
 ---
-title: "Pages and PageExtensions that have been published must not be deleted, since dependent extensions may break"
+title: "AppSourceCop Rule AS0029"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 05/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AppSourceCop Rule AS0029
-Pages and PageExtensions that have been published must not be deleted, since dependent extensions may break  
+Pages and PageExtensions that have been published must not be deleted, since dependent extensions may break
 
 ## Description
 Pages and PageExtensions that have been published must not be deleted.
@@ -28,9 +28,9 @@ It is not allowed to remove pages which have been published. This will break dep
 - are extending the page using a page extension,
 - are customizing the page using page customizations.
 
-## How to fix this diagnostic
+## How to fix this diagnostic?
 
-Revert the change by adding the page back and marking it as [Obsolete](../properties/devenv-obsoletestate-property.md).
+Revert the change by adding the page back and marking it as [Obsolete](../properties/devenv-obsoletestate-property.md). Marking a *page extension* as obsolete is not currently supported, which means that undoing the deletion at this point is the only available fix.
 
 ## Examples of errors for dependent extensions
 

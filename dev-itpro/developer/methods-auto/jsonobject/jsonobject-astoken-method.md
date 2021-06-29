@@ -1,8 +1,9 @@
 ---
 title: "JsonObject.AsToken Method"
+description: "Converts the value in a JsonObject to a JsonToken data type."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # JsonObject.AsToken Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Converts the value in a JsonObject to a JsonToken data type.
 
@@ -25,13 +26,13 @@ Token :=   JsonObject.AsToken()
 ```
 
 ## Parameters
-*JsonObject*
-&emsp;Type: [JsonObject](jsonobject-data-type.md)
-An instance of the [JsonObject](jsonobject-data-type.md) data type.
+*JsonObject*  
+&emsp;Type: [JsonObject](jsonobject-data-type.md)  
+An instance of the [JsonObject](jsonobject-data-type.md) data type.  
 
 ## Return Value
-*Token*
-&emsp;Type: [JsonToken](../jsontoken/jsontoken-data-type.md)
+*Token*  
+&emsp;Type: [JsonToken](../jsontoken/jsontoken-data-type.md)  
 The returned JsonToken contains the same data as the JsonObject, but allows for treating the data in a generic manner.
 
 

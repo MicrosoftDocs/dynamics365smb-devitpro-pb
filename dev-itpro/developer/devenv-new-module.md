@@ -3,11 +3,11 @@ title: "Create a New Module in the System Application"
 description: Learn how to create a new module in the System Application.
 author: bholtorf
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.author: bholtorf
 ms.service: "dynamics365-business-central"
 ---
@@ -16,7 +16,7 @@ ms.service: "dynamics365-business-central"
 This topic provides an overview of how to create a new module in the System Application. 
 
 ## Requirements
-1. Familiarity with development in AL. For more information, see [AL Development](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-get-started).  
+1. Familiarity with development in AL. For more information, see [AL Development](./devenv-get-started.md).  
 2. Your development environment is ready. For more information, see [Development Environment](https://github.com/microsoft/ALAppExtensions/blob/master/DevEnvironment.md).
 
 > [!NOTE]
@@ -217,4 +217,4 @@ You can now go to your Github fork and open a pull request in the AlAppExtension
 [Walkthrough: Contributing to an extension on GitHub](https://community.dynamics.com/business/b/businesscentraldevitpro/archive/2018/11/27/walkthrough-contributing-to-an-extension-on-github)  
 [Getting Started with Modules](devenv-getting-started.md)  
 [Create a New Module in the System Application](devenv-new-module.md)  
-[Module Architecture](devenv-blueprint.md)  
+[Module Architecture](devenv-blueprint.md)

@@ -3,11 +3,11 @@ title: "XML Comments in Code"
 description: "Adding documentation to AL code by including XML elements in special syntax."
 ms.custom: na
 ms.author: solsen
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -100,8 +100,29 @@ For special symbols, such as angle brackets, to appear in text of a documentatio
 /// </summary>
 ```
 
+## Writing tips
+
+Code comments improve the readability of the code that you have developed and they are very useful for anyone modifying or maintaining that code. Furthermore, code comments form the basis of auto-generated documentation. Great code comments must do the following:
+
+1. Never state the obvious.
+2. Write a meaningful comment, use precise wording to describe *why*.
+3. Imagine yourself in the shoes of the developer using this piece of code, what would you want to know?
+4. For properties and methods, use active wording such as *Sets...*, *Gets...*, and *Specifies...*, and then explain what it does.
+5. List all preconditions for your parameters (cannot be null, must be within a certain range, and so on).
+6. List any postconditions that could influence how callers deal with return values.
+7. List any exceptions the method may throw (and under what circumstances).
+8. If similar methods exist, explain the differences between them.
+9. Call attention to anything unexpected (such as modifying global state).
+10. Enumerate any side-effects, if there are any.
+11. Be consistent.
+12. Be concise.
+13. Make sure that your comments are reviewed.
+
+For more examples, see [https://stackoverflow.com/questions/3143324/what-are-best-practices-for-documenting-c-sharp-code-with-xml-comments](https://stackoverflow.com/questions/3143324/what-are-best-practices-for-documenting-c-sharp-code-with-xml-comments).
+
 ## See Also  
 
 [AL Development Environment](devenv-reference-overview.md)  
 [Developing Extensions in AL](devenv-dev-overview.md)  
 [Pages Overview](devenv-pages-overview.md)  
+[Microsoft Writing Style Guide](/style-guide/welcome/)  

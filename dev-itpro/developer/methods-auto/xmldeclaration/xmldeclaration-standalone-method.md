@@ -1,8 +1,9 @@
 ---
 title: "XmlDeclaration.Standalone Method"
+description: "Gets or sets the standalone property for this document."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # XmlDeclaration.Standalone Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Gets or sets the standalone property for this document.
 
@@ -26,18 +27,18 @@ Gets or sets the standalone property for this document.
 > [!NOTE]
 > This method can be invoked using property access syntax.
 ## Parameters
-*XmlDeclaration*
-&emsp;Type: [XmlDeclaration](xmldeclaration-data-type.md)
-An instance of the [XmlDeclaration](xmldeclaration-data-type.md) data type.
+*XmlDeclaration*  
+&emsp;Type: [XmlDeclaration](xmldeclaration-data-type.md)  
+An instance of the [XmlDeclaration](xmldeclaration-data-type.md) data type.  
 
-*NewValue*  
+*[Optional] NewValue*  
 &emsp;Type: [String](../string/string-data-type.md)  
 A string containing the standalone property for this document.  
 
 
 ## Return Value
-*Value*
-&emsp;Type: [String](../string/string-data-type.md)
+*[Optional] Value*  
+&emsp;Type: [String](../string/string-data-type.md)  
 The standalone property for this document.
 
 

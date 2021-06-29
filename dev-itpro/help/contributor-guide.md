@@ -4,9 +4,9 @@ description: Tips and tricks for working with the GitHub repos and MarkDown file
 author: edupont04
 ms.custom: na
 ms.reviewer: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
-ms.date: 10/27/2020
+ms.date: 04/01/2021
 ms.author: edupont
 ---
 
@@ -23,12 +23,19 @@ There are repos in GitHub for the source content and each of the languages that 
 
 You can use the [HtmlFromRepoGenerator tool](custom-help-toolkit-HtmlFromRepoGenerator.md) to get the latest version of Microsoft's content and generate HTML files that you can then customize. The tool handles the GitHub work for you, but you will still have to understand the basics of the Microsoft GitHub repos.  
 
-When Microsoft publishes an update to the content, the *live* branch in the corresponding GitHub repo is updated. The source repo is updated at least weekly; however, the related language-specific repos are updated less frequently, based on when new translations are made available. You can use the [Custom Help Toolkit](custom-help-toolkit.md) to get the current version of Microsoft's content and prepare HTML files for customization. Alternatively, if you customize the Microsoft content based on MarkDown, you can use scripts to get the current version. The GitHub platform and tooling will help you manage any potential merge conflicts if you have made changes to the same files as Microsoft has. For more information, see [Set up Git repository locally for documentation](/contribute/get-started-setup-local) in the Docs Authoring Guide and [Fork a repo](https://help.github.com/articles/fork-a-repo/) in the Help for GitHub.  
+When Microsoft publishes an update to the content, the *main* branch in the corresponding GitHub repo is updated. The source repo is updated at least weekly; however, the related language-specific repos are updated less frequently, based on when new translations are made available. You can use the [Custom Help Toolkit](custom-help-toolkit.md) to get the current version of Microsoft's content and prepare HTML files for customization.  
+
+Alternatively, if you customize the Microsoft content based on MarkDown, you can use scripts to get the current version. The GitHub platform and tooling will help you manage any potential merge conflicts if you have made changes to the same files as Microsoft has. For more information, see [Set up Git repository locally for documentation](/contribute/get-started-setup-local) in the Docs Authoring Guide and [Fork a repo](https://help.github.com/articles/fork-a-repo/) in the Help for GitHub.  
+
+> [!IMPORTANT]
+> In April 2021, the default branches in the public repos have been renamed from *live* to *main* . If you have any scripts that rely on the *live* branch, please update them to rely on *main* instead.
 
 > [!TIP]
 > You do not have to get acquainted with GitHub if you just want to get the Microsoft content in HTML format to deploy to a website, for example. You do not even have to get a GitHub account, as shown in the [Getting by without GitHub](#get-the-content-without-a-github-account) section. However, in many scenarios, you might want to join us in GitHub for closer collaboration and easy of extensibility.
 
 If you fork one of our repos, you can choose to update your fork with regular updates from the Microsoft repo.  
+
+[!INCLUDE [ua-github-releases](../includes/ua-github-releases.md)]
 
 For guidance about what the Microsoft-provided content for [!INCLUDE [prod_short](../developer/includes/prod_short.md)] is all about, see [User Assistance Model](../user-assistance.md).  
 
@@ -58,20 +65,17 @@ Microsoft's GitHub *dynamics365smb-docs* repos for [!INCLUDE [prod_short](../dev
 - media-source
 
     Contains source files for some of the pictures that are used in the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] content
-- Templates
-
-    Contains a template that you can use if you build HTML files for the legacy Dynamics NAV Help Server website
 
 The repos also contain files in the root of the repos that are used internally by Microsoft for managing the content on the docs.microsoft.com site and on GitHub. They are not relevant for the purpose of extending or customizing the content.
 
 > [!TIP]
-> The [!INCLUDE [prod_short](../developer/includes/prod_short.md)] installation media still contain CAB files for Help Server; however, the latest content is always available in the GitHub repos. If you find that the CAB files are outdated, or if they do not contain the files that you expect, get the latest files from GitHub. For more information, see the [Get updates from Microsoft](#get-updates-from-microsoft) and [Get the content without a GitHub account](#get-the-content-without-a-github-account) sections, respectively.
+> [!INCLUDE [ua-github-releases](../includes/ua-github-releases.md)]
 
 If you want to contribute to the developer and administration content, clone or fork the `https://github.com/MicrosoftDocs/dynamics365smb-devitpro-pb` repo
 
 ### Get updates from Microsoft
 
-Microsoft makes frequent changes to the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] content, and those changes show up in the public GitHub repos. The base repo, MicrosoftDocs/dynamics365smb-docs, is updated weekly, and the translations are updated monthly. When you decide it is time to get the latest version of the content from Microsoft, you can do that using GitBash or GitHub Desktop. In the Help for GitHub, you can see [an example of how this works in GitBash](https://help.github.com/en/articles/merging-an-upstream-repository-into-your-fork). In GitHub Desktop, just use the *Merge into current branch* menu item to pull changes from the origin into your fork.  
+Microsoft makes frequent changes to the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] content, and those changes show up in the public GitHub repos. The base repo, *MicrosoftDocs/dynamics365smb-docs*, is updated weekly, and the translations are updated monthly. When you decide it is time to get the latest version of the content from Microsoft, you can do that using GitBash or GitHub Desktop. In the Help for GitHub, you can see [an example of how this works in GitBash](https://help.github.com/en/articles/merging-an-upstream-repository-into-your-fork). In GitHub Desktop, just use the *Merge into current branch* menu item to pull changes from the origin into your fork.  
 
 However, if your solution is available in more than one country, then you are likely to want to make content available in multiple languages. Microsoft has a GitHub repo for each supported language, but the configuration files are only available in the English (US) source repo, MicrosoftDocs/dynamics365smb-docs.  
 
@@ -84,10 +88,10 @@ $docfx = "C:\GitHub\DocFx\docfx.exe"
 $365docs = "C:\GitHub\MSFT\dynamics365smb-docs"
 $langDir = "c:\Working\help\dynamics365smb-docs-pr."
 
-Start-Process -FilePath $git -ArgumentList "clone --single-branch --branch live https://github.com/MicrosoftDocs/dynamics365smb-docs.git" -WorkingDirectory "C:\working\help" -Wait
+Start-Process -FilePath $git -ArgumentList "clone --single-branch --branch main https://github.com/MicrosoftDocs/dynamics365smb-docs.git" -WorkingDirectory "C:\working\help" -Wait
 foreach ($language in $languages)
 {
-    $arguments = $("clone --single-branch --branch live https://github.com/MicrosoftDocs/dynamics365smb-docs-pr." + $language + ".git")
+    $arguments = $("clone --single-branch --branch lmain https://github.com/MicrosoftDocs/dynamics365smb-docs-pr." + $language + ".git")
     Start-Process -FilePath $git -ArgumentList $arguments -WorkingDirectory "C:\working\help" -Wait
     Copy-Item $($365docs + "\business-central\docfx.json") $($langDir + $language + "\business-central")
     Copy-Item $($365docs + "\business-central\media") $($langDir + $language + "\business-central") -Recurse -Force
@@ -136,21 +140,6 @@ To join Microsoft in the world of GitHub and MarkDown, there are new terminology
 
 Internally at Microsoft, some authors use Code, others use Atom, and for light-weight work, we tend to just edit the content in the browser. You can find more guidance for how to get started with MarkDown in the [Docs Contributor Guide](/contribute/). This guide is published by the team that built the Docs.microsoft.com site where the Business Central team publishes their docs.
 
-> [!IMPORTANT]
-> The [Writate](https://www.writage.com/) plugin for Word can be very helpful for converting existing content to MarkDown, but we recommend that you do not use it to edit MarkDown files in Word. When you save the MarkDown file, all metadata tags and some of the formatting is erased.
-
-### Contributing
-
-A benefit of GitHub is the ability for you to contribute to the core content that the Microsoft team provides in the dynamics365smb-docs repo. For example, you might have a new article that you think would be beneficial or you might have a correction to an existing article. If you would like to contribute to the MicrosoftDocs/dynamics365smb-docs repo, you create a *pull request* from your repo to the MicrosoftDocs/dynamics365smb-docs repo. The Microsoft team will then review the request and include the changes as appropriate.
-
-> [!NOTE]
-> Microsoft accepts pull requests to the *dynamics365smb-docs* repo only, not the language-specific repos. If you have feedback about translations, you can report a GitHub issue in the relevant repo.
-
-To create a pull request to the MicrosoftDocs/dynamics365smb-docs repo by using GitHub Desktop, do the following:
-
-1. Commit the changes to your repo that you want to include in the pull request.
-2. Choose **Sync** to push the changes up to your repo on GitHub.
-3. When the sync is completed, choose **Pull Request**, make sure that the pull request points at the *live* branch, and then choose **Pull Request**.
 
 ## Get the content without a GitHub account
 
@@ -160,9 +149,9 @@ If you do not want to collaborate with Microsoft on the content, you can get the
 
 1. Go to the relevant GitHub repo, such as this one for German: [https://github.com/MicrosoftDocs/dynamics365smb-docs-pr.de-de/](https://github.com/MicrosoftDocs/dynamics365smb-docs-pr.de-de/).  
 
-    You can see in the browser when the content was last updated.  
+    You can see in the browser when the content was last updated. Alternatively, go to the [releases](https://github.com/MicrosoftDocs/dynamics365smb-docs-pr.de-de/releases) tab and choose the package that you need for your solution. For more information, see [What the GitHub repos contain](#what-the-github-repos-contain).    
 2. Choose the green **Clone or download** button, and then choose **Download ZIP**.
-3. Open the downloaded *dynamics365smb-docs-pr.de-de-live.zip* file and extract to a relevant location.
+3. Open the downloaded *dynamics365smb-docs-pr.de-de-main.zip* file and extract to a relevant location.
 
     Now you have a copy of Microsoft's content. Next, you can generate HTML files for use on your website as described in the [Build HTML files](#build-html-files) section.
 
@@ -170,7 +159,7 @@ If you do not want to collaborate with Microsoft on the content, you can get the
 
 For publishing to your own website, you can use the [HtmlFromRepoGenerator](custom-help-toolkit-HtmlFromRepoGenerator.md) tool that is part of the custom Help toolkit for [!INCLUDE [prod_short](../developer/includes/prod_short.md)] to clone a repo and generate the corresponding HTML files.  
 
-Alternatively, you can create your own tooling and processes around [DocFx](https://dotnet.github.io/docfx/), which is an open-source tool for converting markdown files. This section provides some guidance on how you can use DocFx to publish HTML files from your fork of one of the Microsoft repos. You can find additional tips in the [Custom Help Toolkit](custom-help-toolkit.md) article.  
+Alternatively, you can create your own tooling and processes around [DocFx](https://dotnet.github.io/docfx/), which is an open-source tool for converting markdown files. This section provides some guidance on how you can use DocFx to publish HTML files from your fork of one of the Microsoft repos *without* using the [HtmlFromRepoGenerator](custom-help-toolkit-HtmlFromRepoGenerator.md) tool. You can find additional tips in the [Custom Help Toolkit](custom-help-toolkit.md) article.  
 
 > [!TIP]
 > You can also use DocFx to generate content for the legacy Dynamics NAV Help Server. In that case, use the NAV docfx.json file from [dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs).
@@ -189,13 +178,15 @@ Alternatively, you can create your own tooling and processes around [DocFx](http
     |----------|-------------|
     |**dest**  | Specifies the output folder of the generated HTML files, such as `c:\Working\output\`. |
     |**template**     | Specifies the templates that the HTML files will be generated after. The default for Microsoft is blank, but the value can be a string or an array.|
-    |**globalMetadata**  | Contains metadata that will be applied to every file, in key-value pair format. We encourage you to use this property to apply the `ROBOTS: NOINDEX, NOFOLLOW` metadata to each HTML file. The intent is that search engines will find Microsoft's original content on the docs.microsoft.com site rather than any customizations that you and hundreds of other may have published. For an example, see the NAVdocfx.json file. If you use the NAVdocfx.json file to build HTML files for non-Microsoft functionality, then change the value of the `ROBOTS` property. You can also add other global metadata, or metadata that applies to specific subfolders.  |
+    |**globalMetadata**  | Contains metadata that will be applied to every file, in key-value pair format.  You can also add other global metadata, or metadata that applies to specific subfolders.  |
     |**fileMetadata**|Contains metadata that will be applied to specific files, based on the specified parameters, in key-value pair format. The default is currently blank.|
     |**markdownEngineName**|Specifies the "flavor" of MarkDown to use to build the HTML files. The default is `markdig`.|
 
     For more information, see the [Properties for build](https://dotnet.github.io/docfx/tutorial/docfx.exe_user_manual.html#32-properties-for-build) section in the DocFx user manual.
 
     The docfx.json files in the Microsoft repos have additional settings for the docs.microsoft.com site. If you build the HTML files based on the docfx.json in the Microsoft repos, make sure that you have configured it for your needs.  
+
+    For example, in the globalMetadata section, set the ROBOTS property. [!INCLUDE [ua-robots](../includes/ua-robots.md)]
 
 3. If you have cloned a localization repo such as [dynamics365smb-docs-pr.da-dk](https://github.com/MicrosoftDocs/dynamics365smb-docs-pr.da-dk), you must also clone the [dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs) repo and copy the content of the \business-central\media\ folder.
 
@@ -220,7 +211,7 @@ Alternatively, you can create your own tooling and processes around [DocFx](http
 The files are generated as .html files and stored in the output location that is specified in the docfx.json file.
 
 > [!IMPORTANT]
-> Depending on the website that the HTML files will be deployed to, you might not be able to use the table of contents file (TOC.html) that is generated in this process. That file is structured based on the configuration of the [https://docs.microsoft.com](https://docs.microsoft.com) site. If you use the legacy Dynamics NAV Help Server, then you must use the ToC.xml file instead.
+> Depending on the website that the HTML files will be deployed to, you might not be able to use the table of contents file (TOC.html) that is generated in this process. That file is structured based on the configuration of the [https://docs.microsoft.com]() site. If you use the legacy Dynamics NAV Help Server, then you must use the ToC.xml file instead.
 
 The table of contents on the docs.microsoft.com site is currently a MarkDown file, TOC.md, but we are planning to convert it to a YAML file in order to be more compliant with the docs.microsoft.com site. Once we have converted the TOC.md file to TOC.yml, you will still be able to use DocFx.exe to build HTML files, but you will have to port your customizations of the TOC.md file to the new YAML format.  
 
@@ -270,6 +261,22 @@ To translate content for either [!INCLUDE [prod_short](../developer/includes/pro
 > [!div class="mx-imgBorder"]
 > ![Shows translation project for NAV or Business Central](../developer/media/admin/lcs_translation_navhelp.png)
 
+## Contributing
+
+A benefit of GitHub is the ability for you to contribute to the core content that the Microsoft team provides in the *dynamics365smb-docs repo*. For example, you might have a new article that you think would be beneficial, or you might have a correction to an existing article. If you would like to contribute to the [MicrosoftDocs/dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs) repo, you create a *pull request* from your repo to the *MicrosoftDocs/dynamics365smb-docs* repo. The Microsoft team will then review the request and include the changes as appropriate.
+
+> [!NOTE]
+> Microsoft accepts pull requests to the *dynamics365smb-docs* repo only, not the language-specific repos. If you have feedback about translations, please report a GitHub issue in the relevant repo.
+
+To create a pull request to the *MicrosoftDocs/dynamics365smb-docs* repo by using GitHub Desktop, do the following:
+
+1. Commit the changes to your repo that you want to include in the pull request.
+2. Choose **Sync** to push the changes up to your repo on GitHub.
+3. When the sync is completed, choose **Pull Request**, make sure that the pull request points at the *origin/main* branch, and then choose **Pull Request**.
+
+> [!TIP]
+> If you want to request brand new content, we ask you to submit a request of type *Documentation* at [https://aka.ms/bcideas](https://aka.ms/bcideas).
+
 ## See also
 
 [Business Central User Assistance Model](../user-assistance.md)  
@@ -286,4 +293,4 @@ To translate content for either [!INCLUDE [prod_short](../developer/includes/pro
 [Atom](https://atom.io/)  
 [DocFx](https://dotnet.github.io/docfx/)  
 [Blog post: Extending and customizing the Help](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/14/extending-and-customizing-the-help-in-dynamics-365-business-central)  
-[Blog post: Collaborate on content for Business Central](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/14/collaborate-on-content-for-dynamics-365-business-central/)  
+[Blog post: Collaborate on content for Business Central](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/14/collaborate-on-content-for-dynamics-365-business-central/)

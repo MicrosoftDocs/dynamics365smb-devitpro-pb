@@ -1,8 +1,9 @@
 ---
 title: "XmlNameTable.Get Method"
+description: "Gets the atomized string with the specified value."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # XmlNameTable.Get Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Gets the atomized string with the specified value.
 
@@ -24,9 +25,9 @@ Gets the atomized string with the specified value.
 [Ok := ]  XmlNameTable.Get(Key: String, var Result: Text)
 ```
 ## Parameters
-*XmlNameTable*
-&emsp;Type: [XmlNameTable](xmlnametable-data-type.md)
-An instance of the [XmlNameTable](xmlnametable-data-type.md) data type.
+*XmlNameTable*  
+&emsp;Type: [XmlNameTable](xmlnametable-data-type.md)  
+An instance of the [XmlNameTable](xmlnametable-data-type.md) data type.  
 
 *Key*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -38,8 +39,8 @@ The atomized string object if the string has been atomized.
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*[Optional] Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the key exists, otherwise **false**.  If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

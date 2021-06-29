@@ -1,11 +1,11 @@
 ---
 title: "MethodType Property (Upgrade Codeunits)"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ---
 
@@ -13,7 +13,7 @@ ms.service: "dynamics365-business-central"
 Sets the type of method in an upgrade codeunit.  
 
 ## Applies To  
- AL methods on upgrade codeunits. An upgrade codeunit is codeunit that has the [SubType Property \(Codeunit\)](properties/devenv-subtype-property-codeunit.md) set to **Upgrade**.  
+ AL methods on upgrade codeunits. An upgrade codeunit is codeunit that has the [SubType Property \(Codeunit\)](/dynamics365/business-central/dev-itpro/developer/devenv-subtype-codeunit-property) set to **Upgrade**.  
 
 ## Property Value  
 
@@ -26,4 +26,4 @@ Sets the type of method in an upgrade codeunit.
 |**CheckPrecondition**|Provides logic that checks conditions that must be met in order for the data upgrade process to continue and start running the **Upgrade** methods.|  
 
 ## See Also  
-[SubType Property \(Codeunit\)](properties/devenv-subtype-property-codeunit.md)
+[SubType Property \(Codeunit\)](/dynamics365/business-central/dev-itpro/developer/devenv-subtype-codeunit-property)

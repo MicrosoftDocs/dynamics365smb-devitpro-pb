@@ -2,11 +2,11 @@
 title: "Testing the Application Overview"
 description: Leant about how to use automated tests in Business Central
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
@@ -46,11 +46,11 @@ Test runner codeunits are codeunits that have the [SubType Property](properties/
 
 Test runner codeunits include the following triggers:  
 
--   [OnRun Trigger](triggers/devenv-onrun-trigger.md) 
+-   [OnRun Trigger](triggers-auto/codeunit/devenv-onrun-codeunit-trigger.md) 
 
--   [OnBeforeTestRun Trigger](triggers/devenv-OnBeforeTestRun-Trigger.md)  
+-   [OnBeforeTestRun Trigger](triggers-auto/codeunit/devenv-onbeforetestrun-codeunit-trigger.md)  
 
--   [OnAfterTestRun Trigger](triggers/devenv-OnAfterTestRun-Trigger.md)  
+-   [OnAfterTestRun Trigger](triggers-auto/codeunit/devenv-onaftertestrun-codeunit-trigger.md)  
 
  In the **OnRun** trigger you enter the code to run the codeunits. It runs when you execute the codeunit and before the test methods run. You can use the **OnBeforeTestRun** and the **OnAfterTestRun** triggers to do preprocessing and postprocessing, such as initialization or logging test results.  
 

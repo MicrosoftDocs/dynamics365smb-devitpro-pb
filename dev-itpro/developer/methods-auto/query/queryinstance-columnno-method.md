@@ -1,8 +1,9 @@
 ---
 title: "Query.ColumnNo Method"
+description: "Returns the ID that is assigned to a query column in the query definition."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Query.ColumnNo Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Returns the ID that is assigned to a query column in the query definition.
 
@@ -24,9 +25,9 @@ Returns the ID that is assigned to a query column in the query definition.
 Number :=   Query.ColumnNo(Column: Any)
 ```
 ## Parameters
-*Query*
-&emsp;Type: [Query](query-data-type.md)
-An instance of the [Query](query-data-type.md) data type.
+*Query*  
+&emsp;Type: [Query](query-data-type.md)  
+An instance of the [Query](query-data-type.md) data type.  
 
 *Column*  
 &emsp;Type: [Any](../any/any-data-type.md)  
@@ -34,8 +35,8 @@ Refers to the name of the query column. The name of a query column is specified 
 
 
 ## Return Value
-*Number*
-&emsp;Type: [Integer](../integer/integer-data-type.md)
+*Number*  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 The ID of the query column.
 
 

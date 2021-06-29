@@ -1,8 +1,9 @@
 ---
 title: "RequestPage.Update Method"
+description: "Saves the current record and then updates the controls on the page. If you set the SaveRecord parameter to false, this method will not save the record before the page is updated."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # RequestPage.Update Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Saves the current record and then updates the controls on the page. If you set the SaveRecord parameter to false, this method will not save the record before the page is updated.
 
@@ -24,11 +25,11 @@ Saves the current record and then updates the controls on the page. If you set t
  RequestPage.Update([SaveRecord: Boolean])
 ```
 ## Parameters
-*RequestPage*
-&emsp;Type: [RequestPage](requestpage-data-type.md)
-An instance of the [RequestPage](requestpage-data-type.md) data type.
+*RequestPage*  
+&emsp;Type: [RequestPage](requestpage-data-type.md)  
+An instance of the [RequestPage](requestpage-data-type.md) data type.  
 
-*SaveRecord*  
+*[Optional] SaveRecord*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 Indicates if the current record is saved. To save the current record, set the value to true. If the value is set to false, the page is updated without saving the record.  
 

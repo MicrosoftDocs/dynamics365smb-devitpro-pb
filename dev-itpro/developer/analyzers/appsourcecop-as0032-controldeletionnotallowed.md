@@ -1,8 +1,8 @@
 ---
-title: "Controls that have been published must not be deleted/"
+title: "AppSourceCop Rule AS0032"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 05/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AppSourceCop Rule AS0032
-Controls that have been published must not be deleted/  
+Controls that have been published must not be deleted/
 
 ## Description
 Controls that have been published must not be deleted, because it will break dependent extensions.
@@ -27,7 +27,7 @@ Removing a control which has been published is not allowed because it will break
 > [!NOTE]  
 > Renaming a control will also trigger this error. AppSourceCop will consider the renamed control as a new control, unrelated to the one defined in the previous version.
 
-## How to fix this diagnostic
+## How to fix this diagnostic?
 
 If the control was removed, revert the change by adding back the control and mark it as [Obsolete](../properties/devenv-obsoletestate-property.md).
 

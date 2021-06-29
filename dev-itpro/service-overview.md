@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.topic: overview
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 01/19/2021
+ms.date: 04/01/2021
 ---
 
 # Service Overview for Business Central Online
@@ -15,9 +15,9 @@ ms.date: 01/19/2021
 
 ## Lifecycle policy
 
-[!INCLUDE [prod_short](includes/prod_short.md)] online is governed by [Microsoft's Modern Lifecycle Policy](https://support.microsoft.com/help/30881), which means continuous [service updates](#service-updates) and a major update every six months. For more information, see [Dynamics 365 Business Central Service Compliance](/dynamics365/business-central/compliance/compliance-service-compliance&toc=/dynamics365/business-central/dev-itpro/toc.json) and [Dynamics 365 release schedule and early access](/dynamics365/get-started/release-schedule).  
+[!INCLUDE [prod_short](includes/prod_short.md)] online is governed by [Microsoft's Modern Lifecycle Policy](https://support.microsoft.com/help/30881), which means continuous [service updates](#service-updates) and a major update every six months. For more information, see [Dynamics 365 Business Central Service Compliance](/dynamics365/business-central/compliance/compliance-service-compliance) and [Dynamics 365 release schedule and early access](/dynamics365/get-started/release-schedule).  
 
-Get an overview of new and upcoming changes in the [Dynamics 365 release plans](https://aka.ms/businessappsreleasenotes).  
+Get an overview of new and upcoming changes in the [Dynamics 365 release plans](/dynamics365/release-plans/).  
 
 ## Global availability
 
@@ -47,14 +47,11 @@ For more information about Azure SQL, see [High availability for Azure SQL Datab
 
 ## Service updates
 
-[!INCLUDE [prod_short](includes/prod_short.md)] online is a service that consists of a Microsoft-maintained platform and business functionality. Microsoft partners can provide more business functionality, such as to address specific industry or localization needs. Both business functionality and service components are monitored continuously and updated as appropriate. Generally, new capabilities are made available as part of major updates. Critical fixes are rolled out as soon as possible after they passed tests and have been verified in Microsoft's protected staging environment. For more information, see [Major Updates of Business Central Online](administration/update-rollout-timelime.md). You can always refer to the [release plan](https://go.microsoft.com/fwlink/?linkid=2047422) for an overview of new and upcoming functionality, and you can keep an eye out for the minor updates at [aka.ms/bclastminorupdate](https://aka.ms/bclastminorupdate).  
+[!INCLUDE [service-updates](includes/service-updates.md)]
 
 For each environment, administrators can set a maintenance window for when Microsoft is allowed to update that environment. For more information, see [Managing Updates in the Business Central Admin Center](administration/tenant-admin-center-update-management.md). Microsoft then schedules updates of the business functionality to be applied during these maintenance windows.  
 
 An exception to this type of schedule is the continuous updates to the underlying service. The service components apply to multiple environments, such as all tenants in a region. So Microsoft schedules those updates to a time when traffic is lower in each region, typically during the evening or night. Typically, these service updates are transparent to any users, as the service is designed to manage traffic in a way that any users still working in [!INCLUDE [prod_short](includes/prod_short.md)] are not affected by these service updates.  
-
-> [!TIP]
-> All updates that Microsoft applies to [!INCLUDE [prod_short](includes/prod_short.md)] online are also shipped with the subsequent cumulative update for [!INCLUDE [prod_short](includes/prod_short.md)]. For an example, see [Update 17.1 for Microsoft Dynamics 365 Business Central online 2020 release wave 2](whatsnew/whatsnew-update-17-1.md).
 
 ## See also
 
@@ -62,7 +59,7 @@ An exception to this type of schedule is the continuous updates to the underlyin
 [Administration of Business Central Online](administration/tenant-administration.md)  
 [Technical Support for Business Central](technical-support.md)  
 [Escalating support issues to Microsoft](administration/manage-technical-support.md#escalating-support-issues-to-microsoft)  
-[Data and access when a trial or subscription ends](administration/tenant-administration.md#data-and-access-when-a-trial-or-subscription-ends)  
-[Azure global infrastructure](https://azure.microsoft.com/global-infrastructure)
+[Data and access when a trial or subscription ends](administration/tenant-administration.md#expire)  
+[Azure global infrastructure](https://azure.microsoft.com/global-infrastructure)  
 [Azure reliability](https://azure.microsoft.com/features/reliability/)  
 [Microsoft Service Trust](https://servicetrust.microsoft.com/)  

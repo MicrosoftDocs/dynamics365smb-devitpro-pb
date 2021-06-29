@@ -2,17 +2,17 @@
 title: Filtering in Query Objects
 description: Specify filters in a query to restrict the data in the resulting dataset. A filter applies conditions on fields in a table associated with the query.
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 # Filtering in Query Objects
 
-You specify filters in a query to restrict the data in the resulting dataset. A filter applies conditions on fields in a table that is associated with the query. For a field to be included in the resulting dataset, a field must meet the conditions of the filter.  
+You specify filters in a query to restrict the data in the resulting dataset. A filter applies conditions on fields in a table that is associated with the query. For a record to be included in the resulting dataset, its values in these fields must meet the conditions of the filter.  
 
 ## Overview
 
@@ -151,7 +151,7 @@ These methods will overwrite any filter on the same field that is set on a colum
 
 ### Calling the SETFILTER and SETRANGE methods
 
-You can call the **SETFILTER** and **SETRANGE** method from the AL code of the [!INCLUDE[prod_short](includes/prod_short.md)] object that runs the query object or from the [OnBeforeOpen Trigger](triggers/devenv-onbeforeopen-trigger.md) of the query object.  
+You can call the **SETFILTER** and **SETRANGE** method from the AL code of the [!INCLUDE[prod_short](includes/prod_short.md)] object that runs the query object or from the [OnBeforeOpen Trigger](triggers-auto/query/devenv-onbeforeopen-query-trigger.md) of the query object.  
 
 To call the **SETFILTER** method, you use the following code.  
 

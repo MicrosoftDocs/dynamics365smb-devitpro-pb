@@ -1,8 +1,9 @@
 ---
 title: "RecordId.TableNo Method"
+description: "Gets the table number of the table that is identified by RecordID. This function returns an error if the record is blank."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # RecordId.TableNo Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Gets the table number of the table that is identified by RecordID. This function returns an error if the record is blank.
 
@@ -27,13 +28,13 @@ No :=   RecordId.TableNo()
 > This method can be invoked using property access syntax.
 
 ## Parameters
-*RecordId*
-&emsp;Type: [RecordId](recordid-data-type.md)
-An instance of the [RecordId](recordid-data-type.md) data type.
+*RecordId*  
+&emsp;Type: [RecordId](recordid-data-type.md)  
+An instance of the [RecordId](recordid-data-type.md) data type.  
 
 ## Return Value
-*No*
-&emsp;Type: [Integer](../integer/integer-data-type.md)
+*No*  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 The ID of the table.
 
 

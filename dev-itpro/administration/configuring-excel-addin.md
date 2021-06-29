@@ -7,9 +7,9 @@ ms.custom: na
 ms.reviewer: edupont
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
-ms.date: 11/06/2020
+ms.date: 04/01/2021
 ---
 # Setting up the Excel Add-In for Editing [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Data
 
@@ -76,7 +76,8 @@ Sometimes, users run into problems with the Excel add-in. In this section, we pr
 |The add-in doesn't start|Check if the add-in is deployed centrally, or if the user is blocked from installing it locally. | The admin can configure Office so that users cannot acquire add-ins. In those cases, the admin must deploy the add-in centrally. For more information, see [Deploy add-ins in the admin center](/microsoft-365/admin/manage/manage-deployment-of-add-ins?view=o365-worldwide&preserve-view=true).|
 |Data does not load into Excel|Test the connection by opening another list in Excel from [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. Alternatively, open the workbook in Excel in a browser.|If the user has specified a company name that contains special characters, the add-in might not be able to connect. |
 |Data can't publish back to [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. |Test the connection by opening the workbook in Excel in a browser. |Sometimes an extension can block the publishing job. If the page is extended or customized, remove the extensions, and then try again.|
-|The dates are wrong  |Excel might show times and dates in a different format than [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. This does not make them wrong, and the data in [!INCLUDE [prod_short](../developer/includes/prod_short.md)] will not get messed up.|         |
+|The dates are wrong  |Excel might show times and dates in a different format than [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. This doesn't make them wrong, and the data in [!INCLUDE [prod_short](../developer/includes/prod_short.md)] will not get messed up.|         |
+|For some list pages, editing multiple lines in Excel consistently causes errors. This condition can occur if OData calls include FlowFields and fields outside of the repeater control.|On the **Web Services** page, select the **Exclude Non-Editable FlowFields** and **Exclude Fields Outside of the Repeater** check boxes for the published page. Selecting these check boxes excludes non-editable FlowFields and field from the eTag calculation. |These check boxes are hidden by default. To show them on the **Web Services** page, use [personalization](/dynamics365/business-central/ui-personalization-user). |
 
 ## Deploy the Excel add-in for Business Central on-premises
 

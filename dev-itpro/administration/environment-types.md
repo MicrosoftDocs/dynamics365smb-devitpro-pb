@@ -3,12 +3,12 @@ title: Production and Sandbox Environments
 description: Learn about the differences between production and sandbox environments for Dynamics 365 Business Central. 
 author: edupont04
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox
-ms.date: 10/01/2020
+ms.date: 04/13/2021
 ms.author: edupont
 ---
 
@@ -32,6 +32,12 @@ You can create environments of different types. Which type of environment to cho
 
 [!INCLUDE [admin-env-quota](../developer/includes/admin-env-quota.md)]
 
+### Manage production environments
+
+Use the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] to mange the environments manually. For more information, see [Managing Production and Sandbox Environments](tenant-admin-center-environments.md).  
+
+Alternatively, use the [Administration Center API](administration-center-api.md).  
+
 ## Sandbox environments
 
 [!INCLUDE [admin-env-sandbox](../developer/includes/admin-env-sandbox.md)]
@@ -41,6 +47,12 @@ You can create environments of different types. Which type of environment to cho
 ### <a name="precautions"></a>Precautions for sandbox environments with production data
 
 [!INCLUDE [admin-env-sandbox-precautions](../developer/includes/admin-env-sandbox-precautions.md)]
+
+### Manage sandbox environments
+
+Use the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] to mange the environments manually. For more information, see [Managing Production and Sandbox Environments](tenant-admin-center-environments.md).  
+
+Alternatively, use the [Administration Center API](administration-center-api.md).  
 
 ### Pre-sales performance evaluation
 

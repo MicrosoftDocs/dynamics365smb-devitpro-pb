@@ -4,12 +4,12 @@ description: We are constantly streamlining and adjusting our app in-step with m
 author: bholtorf
 
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms. search.keywords: deprecated, United Kingdom, local functionality
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.author: bholtorf
 
 ---

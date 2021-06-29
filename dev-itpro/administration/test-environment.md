@@ -6,10 +6,10 @@ ms.custom: na
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ---
 # Preparing Test Environments of [!INCLUDE[prod_long](../developer/includes/prod_long.md)]
 

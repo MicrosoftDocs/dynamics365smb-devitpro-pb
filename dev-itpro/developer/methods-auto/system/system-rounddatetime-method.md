@@ -1,8 +1,9 @@
 ---
 title: "System.RoundDateTime Method"
+description: "Rounds a DateTime."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # System.RoundDateTime Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Rounds a DateTime.
 
@@ -29,11 +30,11 @@ NewDatetime :=   System.RoundDateTime(Datetime: DateTime [, Precision: BigIntege
 *Datetime*  
 &emsp;Type: [DateTime](../datetime/datetime-data-type.md)  
 The DateTime that you want to round.  
-*Precision*  
+*[Optional] Precision*  
 &emsp;Type: [BigInteger](../biginteger/biginteger-data-type.md)  
 This optional parameter determines the precision used when rounding. The default value is 1000, which rounds to the nearest second. You can only use positive BigIntegers.
         
-*Direction*  
+*[Optional] Direction*  
 &emsp;Type: [String](../string/string-data-type.md)  
 This optional parameter specifies how to round the DateTime. The default rounding method is '='. You can change the method by using the following options:
 -   '=' rounds up or down to the nearest value (default). Values of 5 or greater are rounded up. Values less than 5 are rounded down.
@@ -43,8 +44,8 @@ This optional parameter specifies how to round the DateTime. The default roundin
 
 
 ## Return Value
-*NewDatetime*
-&emsp;Type: [DateTime](../datetime/datetime-data-type.md)
+*NewDatetime*  
+&emsp;Type: [DateTime](../datetime/datetime-data-type.md)  
 The rounded result.
 
 
@@ -56,7 +57,7 @@ A variable of type DateTime is stored as a 64 bit integer. The integer value is 
 
 If you use 1 for the *Precision* parameter, then the resulting DateTime is rounded to the nearest millisecond. If you use 1000 for the *Precision* parameter, which is the default value, then the resulting DateTime will be rounded to the nearest second.  
 
-We recommend that you do not use a value greater than 60\*60\*1000, which is the number of milliseconds in an hour, for the *Precision* parameter. The Regional and Language Options in Windows affect how the hour and date parts of a DateTime are rounded. To display a DateTime in a specific format, we recommend that you use the [Format Method \(Code, Text\)](../../methods/devenv-format-method-code-text.md) instead of the RoundDateTime method.  
+We recommend that you do not use a value greater than 60\*60\*1000, which is the number of milliseconds in an hour, for the *Precision* parameter. The Regional and Language Options in Windows affect how the hour and date parts of a DateTime are rounded. To display a DateTime in a specific format, we recommend that you use the Format method instead of the RoundDateTime method.  
 
 ## Example
 

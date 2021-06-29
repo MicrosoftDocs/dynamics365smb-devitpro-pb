@@ -2,11 +2,11 @@
 title: "Printing Reports"
 description: Dynamics 365 Business Central supports printing reports to cloud-based printers. 
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
@@ -22,7 +22,7 @@ To accommodate printing, the system publishes two events that you can subscribe 
 
 ![Report printing](media/report-printing-runtime4.png "Report printing")
 
-Throughout the print process, the system compiles the report into a PDF file and passes it in a stream object, then finally sends the PDF file the printer.
+Throughout the print process, the system compiles the report into a PDF file and passes it in a stream object, then finally sends the PDF file to the printer.
 
 #### OnAfterSetupPrinters event
 

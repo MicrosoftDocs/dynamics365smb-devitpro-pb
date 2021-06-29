@@ -1,5 +1,5 @@
 ---
-title: Administration of Business Central Online | Microsoft Docs
+title: Administration of Business Central Online
 description: Learn about how you as the internal administrator or as a reselling partner can manage online tenants of Dynamics 365 Business Central.  
 author: edupont04
 
@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.workload: na
 ms.reviewer: na
 ms.search.keywords: administration, tenant, admin, environment
-ms.date: 10/01/2020
+ms.date: 05/31/2021
 ms.author: edupont
 ---
 
@@ -31,7 +31,7 @@ As an internal administrator you have **read-only** access to all areas of [!INC
 
 For other tasks, you can access the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], where you can manage upgrade schedules and other tasks. For more information, see [The Business Central Administration Center](tenant-admin-center.md).  
 
-You can also use telemetry to track usage and monitor user sessions, for example. For more information, see [Monitoring and Analyzing Telemetry](telemetry-overview.md) and [Managing Sessions](tenant-admin-center-environments.md#managing-sessions).  
+You can also use telemetry to track usage and monitor user sessions, for example. For more information, see [Monitoring and Analyzing Telemetry](telemetry-overview.md) and [Managing Sessions](tenant-admin-center-manage-sessions.md).  
 
 ### Administration of a trial
 
@@ -99,11 +99,17 @@ As a reselling partner, you must be the first line of support for your [!INCLUDE
 
 [!INCLUDE [admin-premiumtrial](../developer/includes/admin-premiumtrial.md)]
 
-## Data and access when a trial or subscription ends
+## <a name="expire"></a>Data and access when a trial or subscription ends
 
-Trials can expire, and so can a apid subscription, such as if the customer does not renew the subscription or stops payments, or if the customer cancels the subscription.  
+Trials can expire, and so can a paid subscription, such as if the customer does not renew the subscription, stops payments, or if the customer cancels the subscription.  
 
 [!INCLUDE [admin-extendtrials-periods](../developer/includes/admin-extendtrials-periods.md)]
+
+### When a free trial expires
+
+Most trials are based on people signing up at [https://dynamics.microsoft.com/business-central/](https://dynamics.microsoft.com/business-central/). These viral trials do not expire, provided that the prospect does not switch to the 30 day trial, and provided that users access [!INCLUDE [prod_short](../includes/prod_short.md)] frequently.  
+
+[!INCLUDE [admin-viral-trial-expiry](../developer/includes/admin-viral-trial-expiry.md)]
 
 ## See Also
 

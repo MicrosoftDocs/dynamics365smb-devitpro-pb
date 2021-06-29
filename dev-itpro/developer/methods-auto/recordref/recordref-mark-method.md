@@ -1,8 +1,9 @@
 ---
 title: "RecordRef.Mark Method"
+description: "Marks a record. You can also use this method to determine whether a record is marked."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # RecordRef.Mark Method
-> **Version**: _Available from runtime version 5.3._
+> **Version**: _Available or changed with runtime version 5.3._
 
 Marks a record. You can also use this method to determine whether a record is marked.
 
@@ -24,18 +25,18 @@ Marks a record. You can also use this method to determine whether a record is ma
 [Marked := ]  RecordRef.Mark([Mark: Boolean])
 ```
 ## Parameters
-*RecordRef*
-&emsp;Type: [RecordRef](recordref-data-type.md)
-An instance of the [RecordRef](recordref-data-type.md) data type.
+*RecordRef*  
+&emsp;Type: [RecordRef](recordref-data-type.md)  
+An instance of the [RecordRef](recordref-data-type.md) data type.  
 
-*Mark*  
+*[Optional] Mark*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 Specifies if a record is marked.  
 
 
 ## Return Value
-*Marked*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*[Optional] Marked*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the record is marked; otherwise, **false**.
 
 

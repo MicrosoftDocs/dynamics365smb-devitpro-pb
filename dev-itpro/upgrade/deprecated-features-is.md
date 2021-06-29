@@ -3,13 +3,13 @@ title: Iceland Features that are Moved, Removed, or Replaced | Microsoft Docs
 description: We are constantly streamlining and adjusting our app in-step with market developments. Read about the features for Iceland that we have moved, removed, or replaced.
 author: bholtorf
 
-ms.topic: article
+ms.topic: conceptual
 ms.service: dynamics365-business-central
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms. search.keywords: deprecated, Norway, local functionality
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.author: bholtorf
 
 ---

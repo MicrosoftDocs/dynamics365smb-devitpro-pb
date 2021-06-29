@@ -1,8 +1,9 @@
 ---
 title: "TaskScheduler.CancelTask Method"
+description: "Cancels and deletes a scheduled task that runs a specific codeunit."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # TaskScheduler.CancelTask Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Cancels and deletes a scheduled task that runs a specific codeunit.
 
@@ -26,13 +27,13 @@ Cancels and deletes a scheduled task that runs a specific codeunit.
 ## Parameters
 *Task*  
 &emsp;Type: [Guid](../guid/guid-data-type.md)  
-Specifies the unique identifier of the task. The unique identifier is returned by the CreateTASK method.
+Specifies the unique identifier of the task. The unique identifier is returned by the CREATETASK method.
           
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*[Optional] Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 
 
 

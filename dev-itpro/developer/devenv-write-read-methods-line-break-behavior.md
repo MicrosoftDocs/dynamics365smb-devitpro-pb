@@ -3,24 +3,24 @@ title: "Write, WriteText, Read, and ReadText Method Behavior"
 description: "Write, WriteText, Read, and ReadText Method Behavior for Line Endings and Zero Terminators."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
 # Write, WriteText, Read, and ReadText Method Behavior for Line Endings and Zero Terminators 
 
-When writing to and Reading from a stream object using the Write, WriteText, Read, and ReadText methods, it is important to be aware of the following behavior regarding line endings and zero byte terminators:
+When writing to and reading from a stream object using the Write, WriteText, Read, and ReadText methods, it is important to be aware of the following behavior regarding line endings and zero byte terminators:
 
 - `Write` adds a 0 byte at the end of the stream; `WriteText` does not.
 - `Read` Reads until a 0 byte or the specified length of the string.
 - `ReadText` Reads the until a zero byte, an end-of-line, the specified number of bytes, or the maximum length.  
 
-To help understand this, consider the following code examples. These example assume that a BLOB field called `MyBlobField` exists in a table called `MyBlogTable`.
+To help understand this, consider the following code examples. These example assume that a BLOB field called `MyBlobField` exists in a table called `MyBlobTable`.
 
 ```AL
 var
@@ -28,7 +28,7 @@ var
     MyRecord: Record MyBlobTable;
     MyOutStream: OutStream;
     MyInStream: InStream;
-    Result: ext;
+    Result: Text;
     CRLF: Text[2];
 }
 begin
@@ -51,8 +51,8 @@ begin
     MyInStream.Read(Result); // Reads A\B\C
     Message(Result);
 
-    CRLF[1] := 10;
-    CRLF[2] := 13;
+    CRLF[1] := 13;
+    CRLF[2] := 10;
     MyRecord.MyBlobField.CreateOutStream(MyOutStream);
     MyOutStream.WRITE('A' + CRLF + 'B');
     MyOutStream.WRITE('C');
@@ -202,7 +202,9 @@ codeunit 50111 MyCodeunit
 
 ```
 -->
+
 ## See Also
+
 [Write and WriteText Methods](methods-auto/outstream/outstream-data-type.md)  
 [Read and ReadText Methods](methods-auto/instream/instream-data-type.md)  
 [AL Development Environment](devenv-reference-overview.md)    

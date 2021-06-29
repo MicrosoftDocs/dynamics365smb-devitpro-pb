@@ -1,11 +1,11 @@
 ---
 title: "AL Database Methods and Performance on SQL Server"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ---
 
@@ -136,22 +136,22 @@ Using **ModifyAll** and **DeleteAll** can improve performance by limiting the am
 
 [Table Keys and Performance](optimize-sql-table-keys-and-performance.md)   
 [Bulk Inserts](optimize-sql-bulk-Inserts.md)   
-[Get Method)](../developer/methods-auto/record/record-get-method.md)   
-[Find Method)](../developer/methods-auto/record/record-Find-method.md)  
-[Next Method)](../developer/methods-auto/record/record-Next-method.md)  
-[FindSet Method)](../developer/methods-auto/record/record-FindSet-method.md)   
-[FindFirst Method)](../developer/methods-auto/record/record-FindFIRST-method.md)   
-[FindLast Method)](../developer/methods-auto/record/record-FindLAST-method.md)   
-[CalcFields Method)](../developer/methods-auto/record/record-CalcFields-method.md)   
-[CalcField Method)](../developer/methods-auto/fieldref/fieldref-CALCFIELD-Method.md)   
-[CalcSums Method)](../developer/methods-auto/record/record-CalcSums-method.md)   
-[CalcSum Method)](../developer/methods-auto/fieldref/fieldref-CALCSUM-Method.md)   
-[SetAutoCalcFields Method)](../developer/methods-auto/record/record-SETAUTOCalcFields-method.md)  
-[Insert Method)](../developer/methods-auto/record/record-Insert-method.md)   
-[Modify Method)](../developer/methods-auto/record/record-Modify-method.md)  
-[ModifyAll Method)](../developer/methods-auto/record/record-ModifyAll-method.md)     
-[Delete Method)](../developer/methods-auto/record/record-Delete-method.md)  
-[DeleteAll Method)](../developer/methods-auto/record/record-DeleteALL-method.md)   
-[LockTable Method)](../developer/methods-auto/record/record-LOCKTABLE-method.md)  
+[Get Method](../developer/methods-auto/record/record-get-method.md)   
+[Find Method](../developer/methods-auto/record/record-Find-method.md)  
+[Next Method](../developer/methods-auto/record/record-Next-method.md)  
+[FindSet Method](../developer/methods-auto/record/record-FindSet-method.md)   
+[FindFirst Method](../developer/methods-auto/record/record-FindFIRST-method.md)   
+[FindLast Method](../developer/methods-auto/record/record-FindLAST-method.md)   
+[CalcFields Method](../developer/methods-auto/record/record-CalcFields-method.md)   
+[CalcField Method](../developer/methods-auto/fieldref/fieldref-CALCFIELD-Method.md)   
+[CalcSums Method](../developer/methods-auto/record/record-CalcSums-method.md)   
+[CalcSum Method](../developer/methods-auto/fieldref/fieldref-CALCSUM-Method.md)   
+[SetAutoCalcFields Method](../developer/methods-auto/record/record-SETAUTOCalcFields-method.md)  
+[Insert Method](../developer/methods-auto/record/record-Insert-method.md)   
+[Modify Method](../developer/methods-auto/record/record-Modify-method.md)  
+[ModifyAll Method](../developer/methods-auto/record/record-ModifyAll-method.md)     
+[Delete Method](../developer/methods-auto/record/record-Delete-method.md)  
+[DeleteAll Method](../developer/methods-auto/record/record-DeleteALL-method.md)   
+[LockTable Method](../developer/methods-auto/record/record-LOCKTABLE-method.md)  
 [Events in AL](../developer/devenv-events-in-al.md)  
 [Using Security Filters](../security/security-filters.md)

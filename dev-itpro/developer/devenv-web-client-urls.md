@@ -2,11 +2,11 @@
 title: "Web Client URL"
 description: Learn about the URL for opening the Web client. 
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---

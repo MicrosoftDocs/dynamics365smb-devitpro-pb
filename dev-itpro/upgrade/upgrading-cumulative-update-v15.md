@@ -2,11 +2,11 @@
 title: Install a version 15 update
 description: This article describes the tasks required for getting the monthly version 15 update applied to your Dynamics 365 Business Central on-premises.
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.author: jswymer
 ms.service: "dynamics365-business-central"
 author: jswymer
@@ -167,13 +167,19 @@ Also, to ensure that the existing published extensions work on the new platform,
     In a multitenant deployment, run this cmdlet against the application database.
 
     ```powershell
-    Invoke-NAVApplicationDatabaseConversion -DatabaseServer <database server name>\<database server instance> -DatabaseName "<database name>"
+    Invoke-NAVApplicationDatabaseConversion -DatabaseServer <database server name>\<database server instance> -DatabaseName "<database name>" [-Force]
     ```
 
-    For example:
+    For example, in a single tenant deployment:
 
     ```powershell
     Invoke-NAVApplicationDatabaseConversion -DatabaseServer .\BCDEMO -DatabaseName "Demo Database BC (15-0)"
+    ```
+
+    In a multitenant deployment, run this cmdlet against the application database and use the `-Force` parameter. For example:
+
+    ```powershell
+    Invoke-NAVApplicationDatabaseConversion -DatabaseServer .\BCDEMO -DatabaseName "BC15 Application" -Force
     ```
 
     When completed, a message like the following displays in the console:
@@ -195,7 +201,13 @@ Also, to ensure that the existing published extensions work on the new platform,
 
 ## Connect server instance to database
 
-1. Connect the server instance to connect to the database.
+1. (Multitenant only) Enable the server instance as a multitenant instance:
+
+    ```powershell
+    Set-NAVServerConfiguration -ServerInstance <server instance> -KeyName Multitenant -KeyValue true
+    ```
+
+2. Connect the server instance to connect to the database.
 
     ```powershell
     Set-NAVServerConfiguration -ServerInstance <server instance> -KeyName DatabaseName -KeyValue "<database name>"
@@ -203,7 +215,7 @@ Also, to ensure that the existing published extensions work on the new platform,
 
     In a multitenant deployment, the database is the application database. For more information, see [Connecting a Server Instance to a Database](../administration/connect-server-to-database.md).
 
-2. Restart the server instance.
+3. Restart the server instance.
 
     ```powershell
     Restart-NAVServerInstance -ServerInstance <server instance>
@@ -292,12 +304,21 @@ To install an extension, you use the [Install-NAVApp cmdlet](/powershell/module/
     ```powershell
     Install-NAVApp -ServerInstance <server instance> -Name "Base Application" -Version <extension version>
     ```
-    Replace `<extension version>` with the exact version of the published System Application.
-3. Install other extensions, including Microsoft and third-party extensions.
-    
+    Replace `<extension version>` with the exact version of the published Base Application.
+
+3. Install the Application extension as needed.
+
+    ```powershell
+    Install-NAVApp -ServerInstance <server instance> -Name "Application" -Version <extension version>
+    ```
+    Replace `<extension version>` with the exact version of the published Application extension.
+
+4. Install other extensions, including Microsoft and third-party extensions.
+
     ```powershell
     Install-NAVApp -ServerInstance <server instance name> -Name <extension name> -Version <extension version>
     ```
+
 At this point, your solution has been updated to the latest platform.
 
 ## <a name="Application"></a> APPLICATION UPDATE
@@ -307,7 +328,7 @@ Follow the next tasks to update the application code to the new features and hot
 You publish the System Application extension only if it was used in old solution. Add-on extensions include Microsoft and third- party extensions that were used in the old solution.
 
 > [!NOTE]
-> If a license update is required for a regulatory feature, customers can download an updated license from CustomerSource (see [How to Download a Microsoft Dynamics 365 Business Central License from CustomerSource](https://mbs.microsoft.com/customersource/northamerica/NAV/learning/documentation/how-to-articles/downloadnavlicensecs)), and partners can download their customers' updated license from VOICE (see [How to Download a Microsoft Dynamics 365 Business Central Customer License from VOICE](https://mbs.microsoft.com/partnersource/northamerica/deployment/documentation/how-to-articles/howtodownloadcustomernavlicense)).
+> If a license update is required for a regulatory feature, customers can download an updated license from CustomerSource (see [How to Download a Microsoft Dynamics 365 Business Central License from CustomerSource](/dynamics/s-e/)), and partners can download their customers' updated license from VOICE (see [How to Download a Microsoft Dynamics 365 Business Central Customer License from VOICE](https://mbs.microsoft.com/partnersource/northamerica/deployment/documentation/how-to-articles/howtodownloadcustomernavlicense)).
 
 ## Upgrade System Application
 
@@ -547,4 +568,4 @@ This step is not required for the application at runtime, but it will be needed 
 [Synchronizing the Tenant Database and Application Database](../administration/synchronize-tenant-database-and-application-database.md)  
 [Version numbers in Business Central](../administration/version-numbers.md)  
 [Publish and Install an Extension](../developer/devenv-how-publish-and-install-an-extension-v2.md)  
-[Getting Started in AL](../developer/devenv-get-started.md)  
+[Getting Started in AL](../developer/devenv-get-started.md)

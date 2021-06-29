@@ -1,8 +1,9 @@
 ---
 title: "HttpRequestMessage.SetRequestUri Method"
+description: "Sets the URI used for the HTTP request."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # HttpRequestMessage.SetRequestUri Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Sets the URI used for the HTTP request.
 
@@ -24,9 +25,9 @@ Sets the URI used for the HTTP request.
 [Ok := ]  HttpRequestMessage.SetRequestUri(RequestUri: String)
 ```
 ## Parameters
-*HttpRequestMessage*
-&emsp;Type: [HttpRequestMessage](httprequestmessage-data-type.md)
-An instance of the [HttpRequestMessage](httprequestmessage-data-type.md) data type.
+*HttpRequestMessage*  
+&emsp;Type: [HttpRequestMessage](httprequestmessage-data-type.md)  
+An instance of the [HttpRequestMessage](httprequestmessage-data-type.md) data type.  
 
 *RequestUri*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -34,8 +35,8 @@ The URI to use for the HTTP request.
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*[Optional] Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the URI was set successfully, otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

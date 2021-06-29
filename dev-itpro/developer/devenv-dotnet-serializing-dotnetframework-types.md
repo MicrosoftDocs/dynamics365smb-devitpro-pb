@@ -3,11 +3,11 @@ title: "Serializing .NET Framework Types"
 description: "How to serialize .NET Framework Types"
 author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics-nav-2018"
 ms.assetid: 60509047-8419-4b08-a391-83117489fdee
 caps.latest.revision: 17
@@ -29,10 +29,10 @@ Serialization requires that the .NET Framework types that are used by the DotNet
 >  For the [!INCLUDE[webclient](includes/webclient.md)], you cannot implement Microsoft .NET Framework interoperability objects that target the client.  
 
 ## Making a Type Serializable  
-There are two ways that you can make a .NET Framework type serializable. You can implement basic serialization by applying the [System.SerializableAttribute](https://go.microsoft.com/fwlink/?LinkID=262177) attribute to the type or you can implement custom serialization by using [System.Runtime.Serialization.ISerializable](https://go.microsoft.com/fwlink/?LinkID=262178) interface.  
+There are two ways that you can make a .NET Framework type serializable. You can implement basic serialization by applying the [System.SerializableAttribute](/dotnet/api/system.serializableattribute) attribute to the type or you can implement custom serialization by using [System.Runtime.Serialization.ISerializable](/dotnet/api/system.runtime.serialization.iserializable) interface.  
 
 ### Basic Serialization Using SerializableAttribute  
-Basic serialization uses the .NET Framework to automatically serialize an object. To implement basic serialization on a type, you decorate the type with the [SerializableAttribute](https://go.microsoft.com/fwlink/?LinkID=262177) class as shown in the following example.  
+Basic serialization uses the .NET Framework to automatically serialize an object. To implement basic serialization on a type, you decorate the type with the [SerializableAttribute](/dotnet/api/system.serializableattribute) class as shown in the following example.  
 
 
 ```  
@@ -48,14 +48,14 @@ This method requires that you have access to the source code of the .NET Framewo
 #### Basic Serialization of Date Fields  
 You can use basic serialization only if all data fields in the type are serializable. Fields that are calculated at runtime cannot be serialized. If a field cannot be serialized, then at runtime, the serialization process will throw an exception and the AL code execution will fail. 
 
-You can exclude fields from the serialization process by decorating the field with the [System.NonSerializedAttribute](https://go.microsoft.com/fwlink/?LinkID=262179) class.  
+You can exclude fields from the serialization process by decorating the field with the [System.NonSerializedAttribute](/dotnet/api/system.nonserializedattribute) class.  
 
 ### Custom Serialization Using ISerializable Interface  
 With custom serialization, you can create an object that controls the serialization of types in another object. This method is useful when you do not have access to the source code of the assembly that contains the .NET Framework types that you are implementing with .NET Framework interoperability. The custom object specifies which types will be serialized and how serialization will be done.  
 
-To implement custom serialization, you create a class that implements the [ISerializable](https://go.microsoft.com/fwlink/?LinkID=262178) interface, and decorate the class with [SerializableAttribute](https://go.microsoft.com/fwlink/?LinkID=262177). In most cases, you must also implement the [System.Runtime.Serialization.ISerializable.GetObjectData](https://go.microsoft.com/fwlink/?LinkID=262180) method and a special constructor that is used when the source object is deserialized. You use the **GetObjectData** method to populate the [SerializationInfo](https://go.microsoft.com/fwlink/?LinkID=262181) the data that is required to serialize the source object at runtime.  
+To implement custom serialization, you create a class that implements the [ISerializable](/dotnet/api/system.runtime.serialization.iserializable) interface, and decorate the class with [SerializableAttribute](/dotnet/api/system.serializableattribute). In most cases, you must also implement the [System.Runtime.Serialization.ISerializable.GetObjectData](/dotnet/api/system.runtime.serialization.iserializable.getobjectdata) method and a special constructor that is used when the source object is deserialized. You use the **GetObjectData** method to populate the [SerializationInfo](/dotnet/api/system.runtime.serialization.serializationinfo) the data that is required to serialize the source object at runtime.  
 
-The common language runtime calls the constructor during deserialization to construct a replica of the source object. The constructor takes two parameters, a **SerializationInfo** type and a [System.Runtime.Serialization.StreamingContext](https://go.microsoft.com/fwlink/?LinkID=262182) type. The **StreamingContext** parameter describes the source and destination of a given serialized stream.  
+The common language runtime calls the constructor during deserialization to construct a replica of the source object. The constructor takes two parameters, a **SerializationInfo** type and a [System.Runtime.Serialization.StreamingContext](/dotnet/api/system.runtime.serialization.streamingcontext) type. The **StreamingContext** parameter describes the source and destination of a given serialized stream.  
 
 ### Custom Serialization Example  
 The following code example demonstrates a custom serialization object that implements the basic functionality that is required for compliance with the **ISerializable** interface. In the first procedure of this example, you create a .NET Framework assembly that includes a serializable type. In the second procedure, in the [!INCLUDE[prod_short](includes/prod_short.md)] development environment, you create a codeunit that includes two DotNet variables for the serializable type. You set one variable to target the Business Central Windows client and the other to target the [!INCLUDE[server](includes/server.md)]. In AL code, you add code that transfers the value for the DotNet variable on the [!INCLUDE[server](includes/server.md)] to the Business Central Windows client. You will also add code that verifies that the data transfer is successful.  
@@ -177,5 +177,4 @@ The line that contains assignment of the **ServerObject** to the **ClientObject*
 [.NET Control Add-Ins](devenv-dotnet-controladdins.md)    
 [Subscribing to Events in a .NET Framework Type](devenv-dotnet-subscribe-to-events.md)  
 [Using Designer](devenv-inclient-designer.md)  
-[AL Language Extension Configuration](devenv-al-extension-configuration.md)  
-
+[AL Language Extension Configuration](devenv-al-extension-configuration.md)

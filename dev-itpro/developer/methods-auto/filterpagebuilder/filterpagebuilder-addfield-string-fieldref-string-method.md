@@ -1,8 +1,9 @@
 ---
 title: "FilterPageBuilder.AddField Method"
+description: "Adds a table field to the filter control for a table on filter page."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # FilterPageBuilder.AddField Method
-> **Version**: _Available from runtime version 2.0._
+> **Version**: _Available or changed with runtime version 2.0._
 
 Adds a table field to the filter control for a table on filter page.
 
@@ -24,9 +25,9 @@ Adds a table field to the filter control for a table on filter page.
 [Ok := ]  FilterPageBuilder.AddField(Name: String, Field: FieldRef [, Filter: String])
 ```
 ## Parameters
-*FilterPageBuilder*
-&emsp;Type: [FilterPageBuilder](filterpagebuilder-data-type.md)
-An instance of the [FilterPageBuilder](filterpagebuilder-data-type.md) data type.
+*FilterPageBuilder*  
+&emsp;Type: [FilterPageBuilder](filterpagebuilder-data-type.md)  
+An instance of the [FilterPageBuilder](filterpagebuilder-data-type.md) data type.  
 
 *Name*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -36,14 +37,14 @@ The name that is assigned to the table in the filter control. This value must ma
 &emsp;Type: [FieldRef](../fieldref/fieldref-data-type.md)  
 The name of the table field to add to the filter control for a table.
         
-*Filter*  
+*[Optional] Filter*  
 &emsp;Type: [String](../string/string-data-type.md)  
 A default filter on the field that is specified by the Field parameter.  
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*[Optional] Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the field was added to the field list for the specified filter control, otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

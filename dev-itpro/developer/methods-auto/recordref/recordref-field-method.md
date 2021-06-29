@@ -1,8 +1,9 @@
 ---
 title: "RecordRef.Field Method"
+description: "Gets a FieldRef for the field that has the number FieldNo in the table that is currently selected. If no field has this number, the method returns an error."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # RecordRef.Field Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Gets a FieldRef for the field that has the number FieldNo in the table that is currently selected. If no field has this number, the method returns an error.
 
@@ -24,9 +25,9 @@ Gets a FieldRef for the field that has the number FieldNo in the table that is c
 Field :=   RecordRef.Field(FieldNo: Integer)
 ```
 ## Parameters
-*RecordRef*
-&emsp;Type: [RecordRef](recordref-data-type.md)
-An instance of the [RecordRef](recordref-data-type.md) data type.
+*RecordRef*  
+&emsp;Type: [RecordRef](recordref-data-type.md)  
+An instance of the [RecordRef](recordref-data-type.md) data type.  
 
 *FieldNo*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
@@ -34,8 +35,8 @@ The number that the field has in the table that is currently selected. This is t
 
 
 ## Return Value
-*Field*
-&emsp;Type: [FieldRef](../fieldref/fieldref-data-type.md)
+*Field*  
+&emsp;Type: [FieldRef](../fieldref/fieldref-data-type.md)  
 A new FieldRef of the record
 
 

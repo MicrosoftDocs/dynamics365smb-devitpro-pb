@@ -3,18 +3,18 @@ title: "Getting Started with AL"
 description: "Description of how to get started with the development environment"
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
 # Getting Started with AL
 
-To get started writing extensions for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] you will need a [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] tenant, Visual Studio Code, and the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]. Visual Studio Code is a cross-platform editor that you will use for coding and debugging.
+To get started writing extensions for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] you will need a [!INCLUDE[prod_short](includes/prod_short.md)] tenant, Visual Studio Code, and the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]. Visual Studio Code is a cross-platform editor that you will use for coding and debugging.
 
 ## Steps to set up a sandbox environment and Visual Studio Code
 
@@ -36,7 +36,7 @@ Go through the following steps to set up a sandbox environment. With this you ge
 6) Enter the credentials that you provided for the sign-up.
 7) Press **Ctrl+F5** to deploy and run the extension on your online sandbox tenant.  
 
-You now have a HelloWorld sample that compiles and runs. The JSON files in the project are automatically updated with the settings that allows you to press **Ctrl+F5** to build and deploy the solution to [!INCLUDE[prod_short](includes/prod_short.md)]. For more information, see [JSON Files](devenv-json-files.md).
+You now have a `HelloWorld` sample that compiles and runs. The JSON files in the project are automatically updated with the settings that allows you to press **Ctrl+F5** to build and deploy the solution to [!INCLUDE[prod_short](includes/prod_short.md)]. For more information, see [JSON Files](devenv-json-files.md).
 
 ## Tips and tricks
 
@@ -80,12 +80,14 @@ To make your extension available to users, the package must be published to a sp
 
 ## Controlling user access to developing and publishing extensions
 
-The access to developing and publishing extensions is controlled on a user or user group basis by the **D365 EXTENSION MGT** permission set. It is important that the **D365 EXTENSION MGT** is not specified for a specific company, but left blank.
+The access to developing and publishing extensions is controlled on a user or user group basis by the **EXTEND. MGT. - ADMIN** permission set. It is important that the **EXTEND. MGT. - ADMIN** isn't specified for a specific company, but left blank.
 
-> [!NOTE]  
-> If you add new permission sets and want to control the access to developing and publishing extensions, you must include indirect read and write permissions to the **Published Application** table (read – for downloading symbols, write – for publishing the app) in the permission set.
+If you add new permission sets and want to control the access to developing and publishing extensions, you must include indirect read and write permissions to the **Published Application** table (read – for downloading symbols, write – for publishing the app) in the permission set.
 
-To prohibit a user from publishing, just remove the user from the **D365 EXTENSION MGT** permission set. 
+To prohibit a user from publishing, just remove the user from the **EXTEND. MGT. - ADMIN** permission set.
+
+> [!NOTE]
+> The **EXTEND. MGT. - ADMIN** permission set was introduced in Business Central 2021 release wave 1 as a replacement for the **D365 EXTENSION MGT** permission set in earlier versions.
 
 ## Next steps
 

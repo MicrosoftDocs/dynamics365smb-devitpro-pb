@@ -1,8 +1,9 @@
 ---
 title: "RecordRef.Open Method"
+description: "Causes a RecordRef variable to refer to a table, which is identified by its number in a particular company."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # RecordRef.Open Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Causes a RecordRef variable to refer to a table, which is identified by its number in a particular company.
 
@@ -24,17 +25,17 @@ Causes a RecordRef variable to refer to a table, which is identified by its numb
  RecordRef.Open(No: Integer [, Temp: Boolean] [, CompanyName: String])
 ```
 ## Parameters
-*RecordRef*
-&emsp;Type: [RecordRef](recordref-data-type.md)
-An instance of the [RecordRef](recordref-data-type.md) data type.
+*RecordRef*  
+&emsp;Type: [RecordRef](recordref-data-type.md)  
+An instance of the [RecordRef](recordref-data-type.md) data type.  
 
 *No*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The number of the table.  
-*Temp*  
+*[Optional] Temp*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
   
-*CompanyName*  
+*[Optional] CompanyName*  
 &emsp;Type: [String](../string/string-data-type.md)  
 The name of the company to which you want to change. If you omit this parameter, the current company is used.  
 
@@ -46,7 +47,7 @@ The name of the company to which you want to change. If you omit this parameter,
 
 When you use the RecordRef.Open method a new object is created. This object contains references to the open table, filters, and the record itself and all the fields it contains. You can open a table by using the table number or the name of the table that represents the table number. For example, you open the Customer table by using following syntax: `RecordRef.Open(18)` or `RecordRef.Open(Database::Customer)`  
   
-If you use the *CompanyName* parameter, then this method works the same as the [ChangeCompany Method \(Record\)](../../methods/devenv-changecompany-method-record.md).  
+If you use the *CompanyName* parameter, then this method works the same as the [ChangeCompany Method \(Record\)](../record/record-changecompany-method.md).  
 
 <!--
 ## Limitations 

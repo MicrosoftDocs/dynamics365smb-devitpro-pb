@@ -1,8 +1,9 @@
 ---
 title: "FilterPageBuilder.AddTable Method"
+description: "Adds filter control for a table to a filter page."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # FilterPageBuilder.AddTable Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Adds filter control for a table to a filter page.
 
@@ -24,9 +25,9 @@ Adds filter control for a table to a filter page.
 [Name := ]  FilterPageBuilder.AddTable(Name: String, TableNo: Integer)
 ```
 ## Parameters
-*FilterPageBuilder*
-&emsp;Type: [FilterPageBuilder](filterpagebuilder-data-type.md)
-An instance of the [FilterPageBuilder](filterpagebuilder-data-type.md) data type.
+*FilterPageBuilder*  
+&emsp;Type: [FilterPageBuilder](filterpagebuilder-data-type.md)  
+An instance of the [FilterPageBuilder](filterpagebuilder-data-type.md) data type.  
 
 *Name*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -38,8 +39,8 @@ The ID of the table object that you want to filter on.
 
 
 ## Return Value
-*Name*
-&emsp;Type: [String](../string/string-data-type.md)
+*[Optional] Name*  
+&emsp;Type: [String](../string/string-data-type.md)  
 The text that is specified by the Name parameter. If an error occurs at runtime, an empty text string is returned. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

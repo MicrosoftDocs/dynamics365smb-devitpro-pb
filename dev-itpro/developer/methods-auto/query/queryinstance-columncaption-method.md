@@ -1,8 +1,9 @@
 ---
 title: "Query.ColumnCaption Method"
+description: "Returns the current caption of a query column as a text string."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Query.ColumnCaption Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Returns the current caption of a query column as a text string.
 
@@ -24,9 +25,9 @@ Returns the current caption of a query column as a text string.
 Caption :=   Query.ColumnCaption(Column: Any)
 ```
 ## Parameters
-*Query*
-&emsp;Type: [Query](query-data-type.md)
-An instance of the [Query](query-data-type.md) data type.
+*Query*  
+&emsp;Type: [Query](query-data-type.md)  
+An instance of the [Query](query-data-type.md) data type.  
 
 *Column*  
 &emsp;Type: [Any](../any/any-data-type.md)  
@@ -34,8 +35,8 @@ Refers to the name of the query column. The name of a query column is specified 
 
 
 ## Return Value
-*Caption*
-&emsp;Type: [String](../string/string-data-type.md)
+*Caption*  
+&emsp;Type: [String](../string/string-data-type.md)  
 The query column caption.
 
 

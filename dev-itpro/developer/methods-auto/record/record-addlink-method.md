@@ -1,8 +1,9 @@
 ---
 title: "Record.AddLink Method"
+description: "Adds a link to a record."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Record.AddLink Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Adds a link to a record.
 
@@ -24,21 +25,21 @@ Adds a link to a record.
 [ID := ]  Record.AddLink(URL: String [, Description: String])
 ```
 ## Parameters
-*Record*
-&emsp;Type: [Record](record-data-type.md)
-An instance of the [Record](record-data-type.md) data type.
+*Record*  
+&emsp;Type: [Record](record-data-type.md)  
+An instance of the [Record](record-data-type.md) data type.  
 
 *URL*  
 &emsp;Type: [String](../string/string-data-type.md)  
   
-*Description*  
+*[Optional] Description*  
 &emsp;Type: [String](../string/string-data-type.md)  
   
 
 
 ## Return Value
-*ID*
-&emsp;Type: [Integer](../integer/integer-data-type.md)
+*[Optional] ID*  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 
 
 

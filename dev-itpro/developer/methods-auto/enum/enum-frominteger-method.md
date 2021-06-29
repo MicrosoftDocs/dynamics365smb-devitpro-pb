@@ -1,8 +1,9 @@
 ---
 title: "Enum.FromInteger Method"
+description: "Returns an enum with the integer value"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Enum.FromInteger Method
-> **Version**: _Available from runtime version 4.0._
+> **Version**: _Available or changed with runtime version 4.0._
 
 Returns an enum with the integer value
 
@@ -30,8 +31,8 @@ Enum with integer value :=   Enum.FromInteger(Value: Integer)
 
 
 ## Return Value
-*Enum with integer value*
-&emsp;Type: [Any](../any/any-data-type.md)
+*Enum with integer value*  
+&emsp;Type: [Any](../any/any-data-type.md)  
 
 
 
@@ -51,7 +52,7 @@ codeunit 50130 YesNoTest
     var
         Answer: enum YesNo;
     begin
-        Answer := YesNo.FromInteger(10); // Ordinal value for 'No'
+        Answer := Enum::YesNo.FromInteger(10); // Ordinal value for 'No'
         if Answer = YesNo::No then
             Message('Success');
     end;

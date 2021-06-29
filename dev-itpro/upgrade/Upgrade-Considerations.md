@@ -6,9 +6,9 @@ ms.custom: na
 ms.reviewer: edupont
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: dynamics365-business-central
-ms.date: 10/20/2020
+ms.date: 04/01/2021
 ms.author: jswymer
 ---
 # Important Information and Considerations for Before Upgrading to [!INCLUDE[prod_long](../developer/includes/prod_long.md)] Spring 2019 and Later Versions

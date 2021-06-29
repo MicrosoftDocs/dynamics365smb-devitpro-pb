@@ -2,11 +2,11 @@
 title: Creating Handler Methods
 description: Create test codeunits, test methods, and test pages to test your application. To automate tests, create special handler methods for UI interactions. 
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: blrobl
 ---
@@ -18,7 +18,7 @@ You can create test codeunits, test methods, and test pages to test your applica
 You can use the following handler methods:
 
 |Method type|Purpose|Signature|  
-|-------------------|-------------|---------------|
+|-----------|-------|---------|
 |MessageHandler|Handles **Message** statements.|\<*Function name*>\(\<*Message*> : Text\[1024\]\)<img width=210/>|  
 |ConfirmHandler|Handles **Confirm** statements.|\<*Function name*>\(\<*Question*> : Text\[1024\]; var \<*Reply*> : Boolean\)|
 |StrMenuHandler|Handles **StrMenu** statements.|\<*Function name*>\(\<*Options* : Text\[1024\]; var \<*Choice*> : Integer; \<*Instruction*> : Text\[1024\]\)|
@@ -29,7 +29,7 @@ You can use the following handler methods:
 |RequestPageHandler|Handles the request page of a specific report.|\<*Function name*>\(var \<*RequestPage* > : TestRequestPage\)|  
 |HyperlinkHandler|Handles specific hyperlinks.|\<*Function name*>\(\<*Hyperlink*> : Text\[1024\]\)|  
 |SendNotificationHandler|Handles **Send** statements.|\<*Function name*>\(\<*TheNotification*>: Notification\): Boolean|  
-|RecallNotificationHandler|Handles **Recall**|\<*Function name*>\(\<*TheNotification*>: Notification\): Boolean|  
+|RecallNotificationHandler|Handles **Recall** statements.|\<*Function name*>\(\<*TheNotification*>: Notification\): Boolean|  
 |SessionSettingsHandler|Handles **RequestSessionUpdate** statements.|\<*Function name*>\(var \<*SessionSettings*>: SessionSettings\): Boolean|| 
 
   

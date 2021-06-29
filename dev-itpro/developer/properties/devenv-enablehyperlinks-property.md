@@ -2,7 +2,7 @@
 title: "EnableHyperlinks Property"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/24/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,13 +14,12 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # EnableHyperlinks Property
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Sets whether hyperlinks to URLs are allowed on reports.
 
 ## Applies to
 -   Report
-
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -42,7 +41,7 @@ EnableHyperlinks = true;
 When you use the Visual Studio Report Designer for creating reports for the RoleTailored client, you can add hyperlinks on controls that target different URLs. This allows you set up a link from a field on a report to another report or page of the RoleTailored client for drilling down into data. To use hyperlinks on a report, the EnableHyperlinks property must be set to **true**.
   
 > [!NOTE]  
-> The EnableHyperlinks property exposes the [LocalReport.EnableHyperlinks Property](https://go.microsoft.com/fwlink/?LinkId=222520&clcid=0x409) of the [Microsoft.ReportViewer.WebForms.LocalReport object](https://go.microsoft.com/fwlink/?LinkId=222521&clcid=0x409), which is embedded in [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. The Microsoft.ReportViewer.WebForms.LocalReport object is part of the [ReportViewer controls](https://go.microsoft.com/fwlink/?LinkID=222518&clcid=0x409) that are available in Visual Studio for adding reports to your application.  
+> The EnableHyperlinks property exposes the [LocalReport.EnableHyperlinks Property](/dotnet/api/microsoft.reporting.webforms.localreport.enablehyperlinks) of the [Microsoft.ReportViewer.WebForms.LocalReport object](/dotnet/api/microsoft.reporting.webforms.localreport), which is embedded in [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. The Microsoft.ReportViewer.WebForms.LocalReport object is part of the [ReportViewer controls](/previous-versions/ms251671(v=vs.140)) that are available in Visual Studio for adding reports to your application.  
   
 ## Security Considerations
 
@@ -50,4 +49,4 @@ When you use the Visual Studio Report Designer for creating reports for the Role
   
 ## See Also  
 
-[Properties](devenv-properties.md)   
+[Properties](devenv-properties.md)

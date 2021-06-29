@@ -2,11 +2,11 @@
 title: "Handling Errors by Using Try Methods"
 description: Try methods in AL enable you to handle errors that occur in the application during code execution.
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -47,7 +47,7 @@ You can use the [GetLastErrorText method](methods-auto/system/system-getlasterro
 
 ## Creating a try method
 
-To create a try method, add a method in the AL code of an object such as a codeunit as usual, and then set the [TryFunction Attribute](methods/devenv-tryfunction-attribute.md) property to **true**. 
+To create a try method, add a method in the AL code of an object such as a codeunit as usual, and then set the [TryFunction Attribute](methods/devenv-tryfunction-attribute.md). 
 
 <!-- A try method has the following restrictions:  
 
@@ -64,6 +64,7 @@ begin
     message('Everything went well');
 end;
 ```
+
 ```AL
 local procedure MyTryMethod()
 begin
@@ -96,7 +97,7 @@ When you run the codeunit, instead of stopping the execution of the `OnRun` trig
 <!--
 ## Example 2 
 
-The following example illustrates how to use a try method with .NET interoperabilty. The example uses the [System.Decimal.Divide method](https://msdn.microsoft.com/library/system.decimal.divide(v=vs.110).aspx) to divide two decimals. 
+The following example illustrates how to use a try method with .NET interoperabilty. The example uses the [System.Decimal.Divide method](/dotnet/api/system.decimal.divide) to divide two decimals. 
 
 First, create a codeunit that has a local method `MyTrymethod`, and add the following text constants and variables:
 

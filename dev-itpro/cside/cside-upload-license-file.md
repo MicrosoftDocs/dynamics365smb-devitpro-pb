@@ -2,7 +2,7 @@
 title: Upload the License File
 description: Describes how to upload a Business Central license when you deploy on-premises
 ms.custom: na
-ms.date: 10/12/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

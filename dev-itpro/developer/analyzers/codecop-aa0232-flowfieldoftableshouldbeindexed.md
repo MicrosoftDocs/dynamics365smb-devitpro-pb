@@ -1,8 +1,8 @@
 ---
-title: "The FlowField of a table should be indexed."
+title: "CodeCop Rule AA0232"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 05/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # CodeCop Rule AA0232
-The FlowField of a table should be indexed.  
+The FlowField of a table should be indexed.
 
 ## Description
 You can potentially increase performance if fields that are used in FlowFields are added to SumIndexedFields of the corresponding key.

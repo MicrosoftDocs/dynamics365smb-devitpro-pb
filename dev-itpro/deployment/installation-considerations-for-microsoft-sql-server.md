@@ -2,11 +2,11 @@
 title: "Installation Considerations"
 description: Describes the requirements for installing and configuring Microsoft SQL Server to work with Business Central.
 ms.custom: na
-ms.date: 10/29/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
@@ -107,6 +107,9 @@ SQL Server (starting with 2016 and under the compatibility level 130) uses a thr
 
 Even with "Auto Update Statistics" enabled, we still strongly recommend running a periodic SQL Agent job to update statistics. This is because "Auto Update Statistics" will only be triggered according to the rules described above. On large tables with tens of millions of records (such as Value Entry, Item Ledger Entry and G/L Entry), a small percentage of data in a given statistic such as [Entry No.] can change and have a material effect on the overall data distribution in that statistic. This can cause inefficient query plans, resulting  in degraded query performance until any threshold is reached. We recommend using the T-SQL procedure "sp_updatestats" to update statistics, as it will only update statistics where data has been changed. We recommend creating a SQL Agent Job that runs daily or weekly (depending on transaction volume) during off-peak hours to update all statistics where data has changed.
 
+#### Index fragmentation
+Another important administration task that helps to reduce data size and improve performance is to reduce fragmentation for tables and non-clustered indexes. This article in the SQL Server documentation is a good starting point to learn more: [Resolve index fragmentation by reorganizing or rebuilding indexes](/sql/relational-databases/indexes/reorganize-and-rebuild-indexes).
+
 #### Other database options
 
 We recommend to set the database option PAGE_VERIFY to the value CHECKSUM for all databases (including TEMPDB) as this is the most robust method of detecting physical database corruption. This is the default setting for new installations.
@@ -127,9 +130,9 @@ You can deploy a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] dat
  For more information, see [Deploying a Business Central Database to Azure SQL Database](deploy-database-azure-sql-database.md).  
 
 ## Data Encryption between [!INCLUDE[server](../developer/includes/server.md)] and SQL Server  
- When SQL Server and [!INCLUDE[server](../developer/includes/server.md)] are running on different computers, you can make this data channel more secure by encrypting the connection with IPSec. \(Other encryption options are not supported.\) For information on how to do this, see [Encrypting Connections to SQL Server](https://go.microsoft.com/fwlink/?LinkId=147732), which is part of SQL Server 2008 Books Online in MSDN library.  
+ When SQL Server and [!INCLUDE[server](../developer/includes/server.md)] are running on different computers, you can make this data channel more secure by encrypting the connection with IPSec. \(Other encryption options are not supported.\) For information on how to do this, see [Encrypting Connections to SQL Server](/previous-versions/sql/sql-server-2008-r2/ms189067(v=sql.105)), which is part of SQL Server 2008 Books Online in MSDN library.  
 
 ## See Also  
  [Data Access](../administration/optimize-sql-data-access.md)    
  [Troubleshooting: SQL Server Connection Problems](../administration/Troubleshooting-SQL-Server-Connection-Problems.md)   
- [Deployment](Deployment.md)  
+ [Deployment](Deployment.md)

@@ -1,8 +1,9 @@
 ---
 title: "Database.CurrentTransactionType Method"
+description: "Gets the current transaction type and sets a new type to be assigned."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/03/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Database.CurrentTransactionType Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Gets the current transaction type and sets a new type to be assigned.
 
@@ -28,14 +29,14 @@ Gets the current transaction type and sets a new type to be assigned.
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
 ## Parameters
-*TransactionType*  
-&emsp;Type: [TransactionType](../TransactionType/TransactionType-option.md)  
+*[Optional] TransactionType*  
+&emsp;Type: [TransactionType](../transactiontype/transactiontype-option.md)  
 The type of transaction to be set for the next transaction.  
 
 
 ## Return Value
-*TransactionType*
-&emsp;Type: [TransactionType](../TransactionType/TransactionType-option.md)
+*[Optional] TransactionType*  
+&emsp;Type: [TransactionType](../transactiontype/transactiontype-option.md)  
 The type of transaction for the next transaction.
       
 

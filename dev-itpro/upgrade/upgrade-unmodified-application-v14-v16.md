@@ -2,11 +2,11 @@
 title: "Upgrading Unmodified C/AL Application to Version 16"
 description: Describes how to upgrade an unmodified Business Central 14 application to version 16 base application
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/15/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
 ms.service: "dynamics365-business-central"
@@ -132,8 +132,9 @@ The process for upgrading the similar for a single-tenant and multitenant deploy
 
 This task runs a technical upgrade on the application database to convert it from the version 14 platform to the version 16 platform. The conversion updates the system tables of the database to the new schema (data structure). It provides the latest platform features and performance enhancements.
 
-1. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 16 as an administrator.
-2. Run the Invoke-NAVApplicationDatabaseConversion cmdlet to start the conversion:
+[!INCLUDE[convert_azure_sql_db](../developer/includes/convert_azure_sql_db.md)]
+2. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 16 as an administrator.
+3. Run the Invoke-NAVApplicationDatabaseConversion cmdlet to start the conversion:
 
     ```powershell
     Invoke-NAVApplicationDatabaseConversion -DatabaseServer <database server name>\<database server instance> -DatabaseName "<database name>"
@@ -141,13 +142,14 @@ This task runs a technical upgrade on the application database to convert it fro
 
     When completed, a message like the following displays in the console:
 
-    ```
+    ```powershell
     DatabaseServer      : .\BCDEMO
     DatabaseName        : Demo Database BC (14-0)
     DatabaseCredentials :
     DatabaseLocation    :
     Collation           :
     ```
+[!INCLUDE[convert_azure_sql_db_timeout](../developer/includes/convert_azure_sql_db_timeout.md)]
 
 ## Task 4: Configure version 16 server for DestinationAppsForMigration
 

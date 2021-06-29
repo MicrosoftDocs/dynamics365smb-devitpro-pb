@@ -1,8 +1,9 @@
 ---
 title: "MediaSet.ExportFile Method"
+description: "Exports the media objects in the current media set of a record to individual files on your computer or network. In the record, the media set is referenced in a MediaSet data type field."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # MediaSet.ExportFile Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Exports the media objects in the current media set of a record to individual files on your computer or network. In the record, the media set is referenced in a MediaSet data type field.
 
@@ -26,9 +27,9 @@ Exports the media objects in the current media set of a record to individual fil
 [Count := ]  MediaSet.ExportFile(FilenamePrefix: String)
 ```
 ## Parameters
-*MediaSet*
-&emsp;Type: [MediaSet](mediaset-data-type.md)
-An instance of the [MediaSet](mediaset-data-type.md) data type.
+*MediaSet*  
+&emsp;Type: [MediaSet](mediaset-data-type.md)  
+An instance of the [MediaSet](mediaset-data-type.md) data type.  
 
 *FilenamePrefix*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -40,8 +41,8 @@ Specifies the location and name of the exported media files. Each exported media
 
 
 ## Return Value
-*Count*
-&emsp;Type: [Integer](../integer/integer-data-type.md)
+*[Optional] Count*  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 The number of exported elements. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

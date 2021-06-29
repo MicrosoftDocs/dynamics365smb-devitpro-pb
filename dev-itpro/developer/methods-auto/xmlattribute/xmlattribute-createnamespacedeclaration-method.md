@@ -1,8 +1,9 @@
 ---
 title: "XmlAttribute.CreateNamespaceDeclaration Method"
+description: "Creates an attribute that represents a namespace declaration."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # XmlAttribute.CreateNamespaceDeclaration Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Creates an attribute that represents a namespace declaration.
 
@@ -34,8 +35,8 @@ The URI of the attribute. If the prefix is xmlns, then this parameter must be ht
 
 
 ## Return Value
-*XmlAttribute*
-&emsp;Type: [XmlAttribute](xmlattribute-data-type.md)
+*XmlAttribute*  
+&emsp;Type: [XmlAttribute](xmlattribute-data-type.md)  
 The created XmlAttribute node.
 
 

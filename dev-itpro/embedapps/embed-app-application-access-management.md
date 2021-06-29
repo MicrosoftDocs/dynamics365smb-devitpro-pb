@@ -3,12 +3,12 @@ title: Application Access Management
 description: Learn how application access management works as an Embed App ISV and VAR.
 author: jswymer
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: application, tenant, management, access, API
-ms.date: 12/15/2020
+ms.date: 04/01/2021
 ---
 # Application Access Management for the [!INCLUDE[embedapp](../developer/includes/embedapp.md)]
 
@@ -84,7 +84,7 @@ With application access management enabled, the typical process for getting cust
     2. Add necessary [!INCLUDE[prod_short](../developer/includes/prod_short.md)] subscriptions
     3. Assign [!INCLUDE[prod_short](../developer/includes/prod_short.md)] licenses to the customer users.
 
-    For more information, see [Connect with customers](https://docs.microsoft.com/partner-center/connect-with-your-customers?toc=/dynamics365/business-central/dev-itpro/toc.json).
+    For more information, see [Connect with customers](/partner-center/connect-with-your-customers?toc=%2fdynamics365%2fbusiness-central%2fdev-itpro%2ftoc.json).
 
 2. Control access to [!INCLUDE[embedapp](../developer/includes/embedapp.md)] and [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application using the application access management API:
     1. Enable the customer to create environments based on the [!INCLUDE[embedapp](../developer/includes/embedapp.md)] 
@@ -101,4 +101,4 @@ With application access management enabled, the typical process for getting cust
 
 [Application Access Management API](embed-app-application-access-management-api.md)  
 [Using Application Family](../deployment/embed-app-using-application-family.md)
-[Managing an Business Central Embed App in Microsoft Lifecycle Services](../deployment/embed-app-lifecycle-services.md)  
+[Managing an Business Central Embed App in Microsoft Lifecycle Services](../deployment/embed-app-lifecycle-services.md)

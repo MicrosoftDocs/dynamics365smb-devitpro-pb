@@ -1,8 +1,9 @@
 ---
 title: "Dictionary.Set Method"
+description: "Sets the value associated with the specified key."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Dictionary.Set Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Sets the value associated with the specified key.
 
@@ -24,9 +25,9 @@ Sets the value associated with the specified key.
 [Replaced := ]  Dictionary.Set(Key: TKey, Value: TValue, var OldValue: TValue)
 ```
 ## Parameters
-*Dictionary*
-&emsp;Type: [Dictionary](dictionary-data-type.md)
-An instance of the [Dictionary](dictionary-data-type.md) data type.
+*Dictionary*  
+&emsp;Type: [Dictionary](dictionary-data-type.md)  
+An instance of the [Dictionary](dictionary-data-type.md) data type.  
 
 *Key*  
 &emsp;Type: [TKey](dictionary-data-type.md)  
@@ -42,8 +43,8 @@ The value that was previously associated with the specified key.
 
 
 ## Return Value
-*Replaced*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*[Optional] Replaced*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the Dictionary contained a value associated with the given key that was replaced with the new value, otherwise **false**.
 
 

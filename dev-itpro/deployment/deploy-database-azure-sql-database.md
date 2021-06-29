@@ -2,11 +2,11 @@
 title: "Running a Business Central Database to Azure SQL Database"
 description: Learn how to deploy a Business Central database to Azure SQL Database
 ms.custom: na
-ms.date: 10/28/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
@@ -23,11 +23,12 @@ Make sure that you have the following prerequisites for completing this procedur
 
 - A Microsoft Azure subscription and access to the Azure portal.  
 
-- A [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database installed on a SQL Server Database Engine instance.
+- A [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database installed on a SQL Server Database Engine instance. The database must use a supported Windows collation. For a list of Windows collations, see [Windows Collations
+](/sql/t-sql/statements/windows-collation-name-transact-sql#windows-collations) in the SQL Server documentation.
 
 ## Create and configure an Azure SQL Database Server  
 
-In the Azure portal, create an SQL Database Server for hosting the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database. For more information about how to create and configure an SQL Database server, see [Create your first Azure SQL Database](https://azure.microsoft.com/documentation/articles/sql-database-get-started/).
+In the Azure portal, create an SQL Database Server for hosting the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database. For more information about how to create and configure an SQL Database server, see [Create your first Azure SQL Database](/azure/azure-sql/database/single-database-create-quickstart).
 
 Here are some important notes when creating the Azure SQL Database:
 
@@ -41,7 +42,7 @@ Here are some important notes when creating the Azure SQL Database:
 
 4. Configure the server firewall to allow for access by the IP address of the computer that you're using to deploy the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database.
 
-    For information, see [How to: Configure Firewall Settings \(Azure SQL Database\)](https://azure.microsoft.com/documentation/articles/sql-database-configure-firewall-settings/).
+    For information, see [How to: Configure Firewall Settings \(Azure SQL Database\)](/azure/azure-sql/database/firewall-configure).
 
 ## Prepare the [!INCLUDE[prod_short](../developer/includes/prod_short.md)]  Database(s)
 
@@ -82,7 +83,7 @@ When you deploy your application online, you must provide a compressed .zip file
 3. Follow the steps in the **Export Data-tier Application** wizard to export the database to a BACPAC file on your computer or network.
 
     You can use any name for the BACPAC file.
-    For more information about exporting databases to BACPAC format, see [Export a Data-tier Application](https://msdn.microsoft.com/library/Hh213241.aspx). 
+    For more information about exporting databases to BACPAC format, see [Export a Data-tier Application](/sql/relational-databases/data-tier-applications/export-a-data-tier-application). 
 
 ### Import the BACPAC to Azure SQL
 
@@ -167,11 +168,11 @@ If you want to use a different login account for the database, do the following 
 
 1. Create a new login that uses SQL Server authentication.  
   
-    For more information, see [Create a Login](https://msdn.microsoft.com/library/aa337562.aspx).  
+    For more information, see [Create a Login](/sql/relational-databases/security/authentication-access/create-a-login).  
   
 2. Map the login to a user in the [!INCLUDE[!INCLUDE[prod_short](../developer/includes/prod_short.md)] database, and add the user to the **db\_owner** role of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database.  
   
-    For more information, see [Create a Database User](https://msdn.microsoft.com/library/aa337545.aspx).  
+    For more information, see [Create a Database User](/sql/relational-databases/security/authentication-access/create-a-database-user).  
 
 ### Colocation of the [!INCLUDE[server](../developer/includes/server.md)] instance and the database
 
@@ -189,3 +190,4 @@ When comparing the performance of Azure SQL database and a SQL Server deployed t
 
 [Installation Considerations for Microsoft SQL Server](installation-considerations-for-microsoft-sql-server.md)  
 [Optimizing SQL Server Performance](../administration/optimize-sql-server-performance.md)  
+[Creating Databases in Business Central](devenv-create-databases.md)

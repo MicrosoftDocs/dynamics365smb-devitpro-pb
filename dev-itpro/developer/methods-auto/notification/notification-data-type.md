@@ -1,8 +1,9 @@
 ---
 title: "Notification Data Type"
+description: "Provides a programmatic way to send non-intrusive information to the user interface (UI) in the Business Central Web client."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/09/2020
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Notification Data Type
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Provides a programmatic way to send non-intrusive information to the user interface (UI) in the Business Central Web client.
 
@@ -25,8 +26,8 @@ The following methods are available on instances of the Notification data type.
 |Method name|Description|
 |-----------|-----------|
 |[AddAction(String, Integer, String)](notification-addaction-method.md)|Specifies an action for the notification.|
-|[GetData(String)](notification-getdata-method.md)|Retrieves data that was passed to a notification instance as specified by a SetData method call.|
-|[HasData(String)](notification-hasdata-method.md)|Checks if data was passed to a notification instance as specified by a SetData method call.|
+|[GetData(String)](notification-getdata-method.md)|Retrieves data that was passed to a notification instance as specified by a SETDATA method call.|
+|[HasData(String)](notification-hasdata-method.md)|Checks if data was passed to a notification instance as specified by a SETDATA method call.|
 |[Id([Guid])](notification-id-method.md)|Specifies the identifier for a notification.|
 |[Message([String])](notification-message-method.md)|Specifies the content of the notification.|
 |[Recall()](notification-recall-method.md)|Recall a sent notification.|

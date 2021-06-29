@@ -2,11 +2,11 @@
 title: "Business Central and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] admin reference"
 description: "The admin reference for working with Business Central and Microsoft Dataverse tables"
 ms.custom: na
-ms.date: 11/26/2020
+ms.date: 06/02/2021
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: solsen
 ---
@@ -17,24 +17,21 @@ author: solsen
 
 [!INCLUDE[cc_data_platform_banner](../includes/cc_data_platform_banner.md)]
 
-> [!NOTE]  
-> The **Business Central Virtual Entity (Preview)** app available on AppSource is being updated to reflect new terminology with an upcoming release. This also applies to that terminology used in Business Central.
-
 > [!IMPORTANT]  
-> This functionality requires version 17 of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] and service update 189 for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The release information for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] is published on the [latest version availability page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
+> This functionality requires version 17 or later of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online while service update 189 is required for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The release information for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] is published on the [latest version availability page](https://docs.microsoft.com/dynamics365/released-versions/dynamics-365ce#all-version-availability).
 
 This topic provides step-by-step instructions on how to set up and configure virtual tables for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].
 
 ## Getting the solution
 First get the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Virtual Entity solution from [AppSource](https://appsource.microsoft.com/en-us/product/dynamics-365/microsoftdynsmb.businesscentral_virtualentity). 
 
-The following solutions are installed in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] once the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] virtual tables is installed from [AppSource](https://appsource.microsoft.com/en-us/product/dynamics-365/microsoftdynsmb.businesscentral_virtualentity).
+The following solutions are installed in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] once the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] virtual tables is installed from [AppSource](https://appsource.microsoft.com/product/dynamics-365/microsoftdynsmb.businesscentral_virtualentity).
 
 - **Dynamics365Company** - This adds the **cdm_company** table, which is referenced by all [!INCLUDE[prod_short](../developer/includes/prod_short.md)] virtual tables. All communication to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] requires the company ID in the request. 
 - **MicrosoftBusinessCentralVESupport** - This provides the core support for the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] virtual table feature.
-- **MicrosoftBusinessCentralERPCatalog** - This provides a list of available [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
+- **MicrosoftBusinessCentralERPCatalog** - This provides a list of available tables, including ones based on custom APIs, in a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] instance.
 - **MicrosoftBusinessCentralVEAnchor** - This serves as a container, holding information needed for AppSource. 
-- **MicrosoftBusinessCentralERPVE** - Virtual tables generated for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] will be contained in this solution. tables are added at runtime once they are made visible.
+- **MicrosoftBusinessCentralERPVE** - Virtual tables generated for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] will be contained in this solution. Tables are added automatically at runtime once they are made visible in the **MicrosoftBusinessCentralERPCatalog**.
 
 ## Authentication and authorization
 
@@ -60,13 +57,15 @@ The next step in the process is to provide [!INCLUDE[cds_long_md](../includes/cd
 
 Due to the large number of OData enabled tables available in [!INCLUDE[prod_short](../developer/includes/prod_short.md)], by default, the tables are not available as virtual tables in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The following steps allow for enabling tables to be virtual, as needed.
 
-1. In [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], go to **Data -> tables** and search for *Available Business Central table*. Make sure to search for All and not just Default.
+1. In [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], go to **Data -> Tables** and search for *Available Business Central table*. Make sure to search for All and not just Default.
 
 2. Choose **Data** in the horizontal menu to view the available data.
 
-3. Locate and edit the table that you want to enable.
+3. Locate and edit the table that you want to enable. The list also contains tables based on custom APIs.
 
-4. Set **Visible** to **Checked** and save. This will generate the virtual table, so that it will appear in all of the appropriate menus, and in advanced find dialog box.
+4. Set **Visible** to **Checked** and save. This will generate the virtual table in the **MicrosoftBusinessCentralERPVE** solution. 
+
+Selected table will appear in all of the appropriate menus, including **Data -> Tables**, and in advanced find dialog box.
 
 ## Refreshing virtual table metadata
 
@@ -93,4 +92,4 @@ When the solution is exported, it will contain hard dependencies on the virtual 
 [Microsoft Power Platform Integration with Business Central](powerplat-overview.md)  
 [Table Modeling](powerplat-entity-modeling.md)  
 [Application Lifecycle Management for Solutions that use Virtual tables](powerplat-app-lifecycle-management.md)  
-[FAQ](powerplat-faq.md)  
+[FAQ](powerplat-faq.md)

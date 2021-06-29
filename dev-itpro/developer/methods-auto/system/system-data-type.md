@@ -1,8 +1,9 @@
 ---
 title: "System Data Type"
+description: "Is a complex data type."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/09/2020
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # System Data Type
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Is a complex data type.
 
@@ -60,7 +61,7 @@ The following methods are available on the System data type.
 |[EncryptionEnabled()](system-encryptionenabled-method.md)|Checks if the tenant is configured to allow encryption.|
 |[EncryptionKeyExists()](system-encryptionkeyexists-method.md)|Checks whether an encryption key for the current tenant is present on the server tenant.|
 |[Evaluate(var Any, String [, Integer])](system-evaluate-method.md)|Evaluates a string representation of a value into its typical representation. The result is assigned to a variable.|
-|[ExportEncryptionKey(String)](system-exportencryptionkey-method.md)|Returns a password protected temporary filepath containing the encryption key. When encrypting or decrypting data in Dynamics 365 Business Central, an encryption key is used. A single key is used per tenant and every tenant will have a different key. Keys can be exported to a file which may be necessary in the case of upgrading or migrating a system from one set of hardware to another. The EXPORTEncryptIONKey method allows an administrator to specify a destination file for the key and specify a password protection for the file.|
+|[ExportEncryptionKey(String)](system-exportencryptionkey-method.md)|Returns a password protected temporary filepath containing the encryption key. When encrypting or decrypting data in Dynamics 365 Business Central, an encryption key is used. A single key is used per tenant and every tenant will have a different key. Keys can be exported to a file which may be necessary in the case of upgrading or migrating a system from one set of hardware to another. The EXPORTENCRYPTIONKEY method allows an administrator to specify a destination file for the key and specify a password protection for the file.|
 |[ExportObjects(String, var Record [, Integer])](system-exportobjects-method.md)|Exports application objects to a file.|
 |[Format(Any [, Integer] [, Integer])](system-format-joker-integer-integer-method.md)|Formats a value into a string.|
 |[Format(Any, Integer, String)](system-format-joker-integer-string-method.md)|Formats a value into a string.|
@@ -69,13 +70,14 @@ The following methods are available on the System data type.
 |[GetLastErrorCallStack()](system-getlasterrorcallstack-method.md)|Gets the call stack from where the last error occurred.|
 |[GetLastErrorCode()](system-getlasterrorcode-method.md)|Gets the classification of the last error that occurred.|
 |[GetLastErrorObject()](system-getlasterrorobject-method.md)|Gets the last System.Exception object that occurred.|
-|[GetLastErrorText()](system-getlasterrortext-method.md)|Gets the last error that occurred in the debugger.|
+|[GetLastErrorText()](system-getlasterrortext--method.md)|Gets the last error that occurred in the debugger.|
+|[GetLastErrorText(Boolean)](system-getlasterrortext-boolean-method.md)|Gets the last error that occurred in the debugger.|
 |[GetUrl(ClientType [, String] [, ObjectType] [, Integer] [, Record] [, Boolean])](system-geturl-clienttype-string-objecttype-integer-table-boolean-method.md)| Generates a URL for the specified client target that is based on the configuration of the server instance. If the code runs in a multitenant deployment architecture, the generated URL will automatically apply to the tenant ID of the current user.|
 |[GetUrl(ClientType, String, ObjectType, Integer, RecordRef [, Boolean])](system-geturl-clienttype-string-objecttype-integer-recordref-boolean-method.md)|Generates a URL for the specified client target that is based on the configuration of the server instance. If the code runs in a multitenant deployment architecture, the generated URL will automatically apply to the tenant ID of the current user.|
 |[GlobalLanguage([Integer])](system-globallanguage-method.md)|Gets and sets the current global language setting.|
 |[GuiAllowed()](system-guiallowed-method.md)|Checks whether the AL code can show any information on the screen.|
 |[Hyperlink(String)](system-hyperlink-method.md)|Passes a URL as an argument to an Internet browser, such as Windows Internet Explorer.|
-|[ImportEncryptionKey(String, String)](system-importencryptionkey-method.md)|Points to a password protected file that contains the key on the current server. When encrypting or decrypting data in Dynamics 365 Business Central, an encryption key is used. A single key is used per tenant, and every tenant will have a different key. Keys can be created or imported if one exists already, as may be the case if upgrading or migrating a system from one set of hardware to another. The IMPORTEncryptIONKey method allows an administrator to specify a file (password protected) which contains a key and imports it to the current Dynamics 365 Business Central service.|
+|[ImportEncryptionKey(String, String)](system-importencryptionkey-method.md)|Points to a password protected file that contains the key on the current server. When encrypting or decrypting data in Dynamics 365 Business Central, an encryption key is used. A single key is used per tenant, and every tenant will have a different key. Keys can be created or imported if one exists already, as may be the case if upgrading or migrating a system from one set of hardware to another. The IMPORTENCRYPTIONKEY method allows an administrator to specify a file (password protected) which contains a key and imports it to the current Dynamics 365 Business Central service.|
 |[ImportObjects(String [, Integer])](system-importobjects-method.md)|Imports application objects from a file.|
 |[ImportStreamWithUrlAccess(InStream, String [, Integer])](system-importstreamwithurlaccess-method.md)|Imports an object into a media container to be used in a temporary URL with a default expiration time.|
 |[IsNull(DotNet)](system-isnull-method.md)|Gets a value indicating whether a DotNet object has been created or not.|

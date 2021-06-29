@@ -2,11 +2,11 @@
 title: "Using Event Log to Monitor Long Running SQL Queries"
 description: Shows how to monitor long running SQL queries in Event Viewer. Use the information determine SQL queries that are good candidates for optimization.
 ms.custom: na
-ms.date: 10/29/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.assetid: 014e3285-02be-459c-9a54-eae45ea71e04
 author: jswymer

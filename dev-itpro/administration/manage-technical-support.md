@@ -4,11 +4,11 @@ description: Learn about how to support your Business Central users, both online
 author: edupont04
 
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/28/2020
+ms.date: 04/01/2021
 ms.author: edupont
 
 ---
@@ -98,6 +98,8 @@ The **Help and Support** page is a powerful tool for administrators to find tech
 > ![Links for troubleshooting and support from the Help and Support page](../developer/media/admin/helpsupport_managed.png)
 
 Also in the **Help and Support** page, users can see support contact information, provided that this has been set up. For more information, see [To supply your support contact information in the administration center](../technical-support.md#to-supply-your-support-contact-information-in-the-administration-center). The **Help and Support** page also shows [which version](#version) of [!INCLUDE [prod_short](../developer/includes/prod_short.md)], the specific environment is on.  
+
+For [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online, a user can enable additional logging and then perform the operation that is causing problems. The additional telemetry is sent to Application Insights where you can do further troubleshooting, either as part of a support case, or before you submit a support request. In both scenarios, the additional details about the problematic operation will lead to a quicker resolution.  
 
 For [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online, internal and delegated administrators also have access to this information in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)]. You can use the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] to easily navigate to the different environments in a tenant, and you can create sandbox environments that can help troubleshoot any issues reported by users. For more information, see [The Business Central Administration Center](tenant-admin-center.md).  
 

@@ -3,9 +3,9 @@ title: Generate HTML files from the contents of a Microsoft GitHub repository
 description: This article describes the HtmlFromRepoGenerator tool in the custom help toolkit for Business Central. 
 
 author: edupont04
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.author: edupont
 ---
 
@@ -26,7 +26,10 @@ HtmlFromRepoGenerator.exe provides functionality that supports the creation of c
 
     The HTML files will be generated in the **business-central\d365businesscentral** subfolder, such as *D:\BC\de-DE\business-central\d365businesscentral*. This name of the subfolder is set in the docfx.json file in the en-US source repo. The tool applies the `<meta name="robots" content="NOINDEX, NOFOLLOW">` tag to the HTML files, so if you use the tool to process your own content, you should remove these tags from your files but leave the tags in your version of Microsoft's content.
 
-    The files are generated based on stylesheets and templates that are part of the tool.<!-- For more information, see [Modifying the styling of the generated HTML files](#modifying-the-styling-of-the-generated-html-files).-->
+    > [!NOTE]
+    > [!INCLUDE [ua-robots](../includes/ua-robots.md)]
+
+    The HtmlFromRepoGenerator tool generates files based on stylesheets and templates that are part of the tool.<!-- For more information, see [Modifying the styling of the generated HTML files](#modifying-the-styling-of-the-generated-html-files).-->
 
 - Compare a localized Microsoft repo to the en-US repo to identify differences and update links accordingly
 
@@ -36,7 +39,7 @@ HtmlFromRepoGenerator.exe provides functionality that supports the creation of c
 
 Here is the syntax for HtmlFromRepoGenerator.exe:  
 
-```cmd
+```console
 HtmlFromRepoGenerator.exe --Out <path> [--DoNotClone <true|false>] [--Repo <URL>] [--RemoveGitFolder <true|false>] [--LogsDir <.\logs>] [--EnRepo <URL>] [--EnOut <path>] [--Lng <language code>] [--Rtl] [--?[--]]
 ```
 
@@ -47,6 +50,7 @@ The following table provides an explanation of the parameters:
 |Out |Specifies the folder where your existing clone is, or the folder to clone the repo to, such as D:\BC\. If you run HtmlFromRepoGenerator to clone a repo, this folder must not already exist.|
 |DoNotClone |Set this parameter when you run the tool against a previously cloned repo. |
 |Repo |Specifies the repo URL. Optional if you run the tool based on a previously cloned repo. Examples of Microsoft documentation repo URLs include `https://github.com/MicrosoftDocs/dynamics365smb-docs` for English (US) and `https://github.com/MicrosoftDocs/dynamics365smb-docs-pr.de-de` for German (Germany).|
+|Tag |Specifies the tag corresponding to a release of the Business Central documentation. You can see a list of the releases at [https://github.com/MicrosoftDocs/dynamics365smb-docs/releases](https://github.com/MicrosoftDocs/dynamics365smb-docs/releases). |
 |RemoveGitFolder|Specifies whether to remove the `.git` folder.|
 |LogsDir|Specifies the folder to save logs files to.|
 
@@ -66,25 +70,31 @@ The following additional parameters are used when the tool is run against the lo
 
 The following example clones the en-US repo and generates HTML files.
 
-```cmd
+```console
 HtmlFromRepoGenerator.exe --out "D:\BC\en-US" --repo "https://github.com/MicrosoftDocs/dynamics365smb-docs" --LogsDir D:\BC\logs\en-US
+```
+
+The following example clones the en-US repo, checks out the repo at tag v16.5 (corresponding to the release "Microsoft Dynamics 365 Business Central v. 16.5 docs") and generates HTML files.
+
+```cmd
+HtmlFromRepoGenerator.exe --out "D:\BC\en-US" --repo "https://github.com/MicrosoftDocs/dynamics365smb-docs" --tag v16.5 --LogsDir D:\BC\logs\en-US
 ```
 
 The following example uses a previously cloned en-US repo and generates HTML files.
 
-```cmd
+```console
 HtmlFromRepoGenerator.exe --out "D:\BC\en-US" --DoNotClone --LogsDir D:\BC\logs\en-US
 ```
 
 The following example clones both the de-DE and en-US repos, and generates HTML files for de-DE.
 
-```cmd
+```console
 HtmlFromRepoGenerator.exe --out "D:\BC\de-DE" --repo "https://github.com/MicrosoftDocs/dynamics365smb-docs-pr.de-de" --EnRepo "https://github.com/MicrosoftDocs/dynamics365smb-docs" --EnOut "D:\BC\en-US" --lng "de-DE" --LogsDir D:\BC\logs\de-DE
 ```
 
 The following example uses previously cloned de-DE and en-US repos to generate HTML files for de-DE. Make sure that the de-DE repo is up to date if you use an existing cloned repo.
 
-```cmd
+```console
 HtmlFromRepoGenerator.exe --out "D:\BC\de-DE" --DoNotClone --enOut "D:\BC\en-US" --lng "de-DE" --LogsDir D:\BC\logs\de-DE
 ```
 

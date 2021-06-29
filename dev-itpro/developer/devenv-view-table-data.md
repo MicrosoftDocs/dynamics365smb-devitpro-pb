@@ -3,11 +3,11 @@ title: "Viewing Table Data"
 description: "View tables in browser for troubleshooting"
 author: jswymer
 ms.custom: na
-ms.date: 10/05/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.author: jswymer
 ---
 

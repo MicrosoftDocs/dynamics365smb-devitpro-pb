@@ -1,11 +1,11 @@
 ---
 title: "How to: View Performance Counter Data for a Data Collector Set"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.assetid: 002ace19-dc33-432b-b74f-ac280a51fcd5
 caps.latest.revision: 8

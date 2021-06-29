@@ -2,11 +2,11 @@
 title: Known Issues with On-premises
 description: Provides an overview of the known issues in Business Central versions
 ms.custom: na
-ms.date: 11/20/2020
+ms.date: 06/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
 ms.service: "dynamics365-business-central"
@@ -18,6 +18,198 @@ This article describes some known issues in [!INCLUDE[prod short](../developer/i
 
 > [!NOTE]
 > The article doesn't include a complete list of known issues. Instead, it addresses some common issues that you might experience or might consider when upgrading to a version. If you're aware of issues that aren't in this article, or you'd like more help, see [Resources for Help and Support](../help-and-support.md).
+
+## NavUserPassword authentication doesn't work after upgrade to version 18
+<!-- https://dynamicssmb2.visualstudio.com/Dynamics%20SMB/_workitems/edit/398164 -->
+
+> Applies to: 18.0-18.2
+
+### Problem
+
+When you upgrade to version 18 from an earlier major version, authentication based on NavUserPassword credential type no longer works for existing users, because passwords aren't considered valid anymore.
+
+### Impact
+
+When users try to sign in to Business Central, they'll get an error, similar to the following:
+
+`The specified user name or password is not correct, or you do not have a valid user account in Dynamics 365 Business Central`
+
+In event viewer, you'll see the following error:
+
+`Your user name <name> or password is incorrect, or you do not have a valid account in Dynamics 365 Business Central.`
+
+### Workaround
+
+To workaround this issue, activate the `EnableLegacyIterationCount` feature switch by completing these steps.
+
+1. Run the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] as an administrator.
+2. Run the following command to determine which feature switches are enabled:
+
+   ```powershell
+   Get-NAVServerConfiguration -ServerInstance $ServerInstanceName -KeyName "FeatureSwitchOverrides"
+   ```
+
+   Replace`$ServerInstanceName` with the [!INCLUDE[server](../developer/includes/server.md)] instance name.
+
+3. Depending on what was returned in step 2, run one of the following commands to enable the `EnableLegacyIterationCount` feature switch:
+
+   - If the nothing was returned, run the following command:
+
+     ```powershell
+     Set-NAVServerConfiguration -ServerInstance $ServerInstanceName -KeyName "FeatureSwitchOverrides" -KeyValue "EnableLegacyIterationCount"
+     ```
+
+   - If one or more entries were returned, run the following command:
+
+     ```powershell
+     Set-NAVServerConfiguration -ServerInstance $ServerInstanceName -KeyName "FeatureSwitchOverrides" -KeyValue ((Get-NAVServerConfiguration -ServerInstance $ServerInstanceName -KeyName "FeatureSwitchOverrides") + (",EnableLegacyIterationCount"))
+     ```
+
+4. Restart the server.
+
+   ```powershell
+   Restart-NAVServerInstance -ServerInstance $ServerInstanceName
+   ```
+
+### Notes
+
+- Activating the `EnableLegacyIterationCount` feature switch is only required if you have existing users that are set up with passwords for the NavUserPassword authentication. So if you want to set up NavUserPassword from scratch after upgrade, you don't need to enable the `EnableLegacyIterationCount` feature switch for it to work.
+- When the `EnableLegacyIterationCount` feature switch is enabled, you can create new users with passwords and assign or change passwords of existing users.
+- You can activate and deactivate the `EnableLegacyIterationCount` feature switch for the deployment at any time, but be aware of the following behavior:
+
+  - Passwords that were assigned to users when the `EnableLegacyIterationCount` feature switch was activated, won't work when the `EnableLegacyIterationCount` feature switch is deactivated.
+  - Passwords that were assigned to users when the `EnableLegacyIterationCount` feature switch was deactivated, won't work when the `EnableLegacyIterationCount` feature switch is activated.
+
+    In these cases, as an administrator, you'll have to assign new passwords to the affected users.
+
+- This feature switch is activated per server instance, so it pertains to all tenants in a multitenant deployment.
+
+## Package Microsoft .NET Core Windows Server Hosting failed with error
+
+> Applies to: All versions up to and including version 18.0.
+
+### Problem
+
+When you install [!INCLUDE [prod_short](../includes/prod_short.md)] on premises, installation may fail with the error `Package Microsoft .NET Core Windows Server Hosting failed with error`, or with error code 1638, when the installer attempts to install prerequisite components.  
+
+This occurs when a version of Windows Server Hosting is installed on the server that is newer than version 2.1.14, which is what [!INCLUDE [prod_short](../includes/prod_short.md)] attempts to install from its installation folder.  
+
+The issue only occurs when the currently installed version is a newer minor version, not a newer major version of Windows Server Hosting.  
+
+### Impact
+
+Installation will fail and will be rolled back.
+
+### Workaround
+
+The issue can be resolved in different ways:
+
+* Manually install Windows Server Hosting version 3 or later before you install Business Central components.
+* Uninstall Windows Server Hosting from your server before you install Business Central
+* Use the installer from Business Central version 18.1 or later. In those versions, Business Central will skip installing Windows Server Hosting as a prerequisite component if the installer determines that newer Windows Server Hosting components are already installed on the server.
+
+
+<!-- never included 
+## <a name="azuregqlmi"></a>Can't convert version 14 and earlier databases on Azure SQL Managed Instance to later Business Central platform
+
+defect 395751 https://dynamicssmb2.visualstudio.com/Dynamics%20SMB/_workitems/edit/395751
+
+> Applies to: 15.0-15.17, 16.0-16.12, 17.0-17.6, 18.0
+
+### Problem
+
+Converting a database from one of these versions requires that your account is a member of the **dbmanager** server role in the master database, and that the database can run in single-user mode. However, Azure SQL Managed Instance doesn't support these prerequisites.
+
+### Impact
+
+You won't be able to successfully convert the database from it's current platform the later version, which prevents you from completing technical and application upgrade scenarios. If you try to convert the database, you'll get an error similar to `Alter Database set Single_User failed`.
+
+### Workaround
+
+We recommend that use the latest update for the target version &mdash; at minimum 15.18, 16.13, 17.7, or 18.1. This issue has been fixed in these versions. Otherwise, you can make a BACPAC of the database and restore it to an on-premise SQL Server. Then, run the conversion against the SQL Server database, and restore BABPAC to Azure SQL Managed Instance.-->
+
+## <a name="keys"></a>Primary key mismatch between converted tables in local 14 versions and Microsoft Base Application
+<!--https://dynamicssmb2.visualstudio.com/Dynamics%20SMB/_workitems/edit/387119 -->
+
+> Applies to: 14.18-14.x, 15.12-15.x, 16.7-16.x, 17.1-17.x
+
+### Problem
+
+In some local versions, new table objects were added as part of a minor update. In version 14, which is still C/AL based, the primary keys of these tables are unnamed. When you convert the tables from CAL to AL using the txt2AL tool, primary keys are given the name `Key1`. In version 15, 16, and 17, which is fully AL-based, these tables have been moved to Microsoft base application extension, and the primary keys have the name `PK`. This difference can cause problems when you upgrade to use the Microsoft Base Application because it introduces breaking changes.
+
+The affected local versions and tables include:
+
+|Local 14 version|Tables|
+|-------------|------|
+|CH|<ul><li>QRBill Buffer</li><li>QRBill Billing Detail</li><li>QRBill Billing Info</li><li>QRBill Layout QRBill</li><li>QRBill Setup</li><li>VAT Reg. No. Srv. Template</li><li>VAT Registration Log Details</li></ul>|
+|NA|<ul><li>VAT Reg. No. Srv. Template</li><li>VAT Registration Log Details</li></ul>|
+
+> [!NOTE]
+> You don't experience this problem with table objects in other Microsoft extension because the primary keys are named `KEY1`.
+
+### Impact
+
+If you don't resolve this conflict, you'll experience problems when upgrading a customized version 14 (C/AL) application to the Microsoft Base Application.
+
+For example, consider the following articles:
+
+- [Upgrading Customized C/AL Application to Microsoft Base Application Version 16](upgrade-to-microsoft-base-app.md)
+- [Upgrading Customized C/AL Application to Microsoft Base Application Version 17](upgrade-to-microsoft-base-app-v17.md)
+
+During this upgrade process, you'll create two versions of an extension referred to as the *table migration* extension. This extension is used for transferring ownership of existing tables in the database to other extensions. The first version contains table objects. The second version contains a migration.json file instead of the table objects. When you try synchronize the second version of the table migration extension ([Task 13.5](upgrade-to-microsoft-base-app.md#syncfinal) or [Task 12.6](upgrade-to-microsoft-base-app-v17.md#syncfinal)), you'll get the following errors for each affected table:
+
+<!--
+More specifically, you'll get the following errors when synchronizing the table migration extension. Depending on the upgrade article you're following, the error occurs in either [Task 13.5](upgrade-to-microsoft-base-app.md#syncfinal) or [Task 12.6](upgrade-to-microsoft-base-app-v17.md#syncfinal).
+-->
+
+`Table <table name> :: The previous primary key 'Key1' cannot be located. Changing the primary key is not allowed.`
+
+`Table <table name> :: Introducing a new key 'PK' as the primary key is not allowed. Please make the key 'Key1' the primary key again.`
+
+### Workaround
+
+To avoid these errors, after converting the version 14 tables to AL, rename instances of the primary key `Key1 ` to `PK` in the affected table objects before building your extensions.
+
+- If you're following the upgrade articles listed above, do this change as part of Task 2. If you've already published the first table migration extension with the wrong key names, we recommend restore the databases and go through the upgrade again, starting from Task 2.
+- You should also make these changes if you're only doing a technical upgrade, so you won't run into problems later if eventually uptake the Microsoft Base Application.
+
+For each affected table object, do the following steps:
+
+1. Open the \.al file.
+2. Locate the primary key  definition. For example: 
+
+    ```al
+    keys
+    {
+        key(Key1; "Primary key")
+        {
+            Clustered = true;
+        }
+    }
+    ```
+
+3. Change the name from `Key1` to `PK`. For example:
+
+    ```al
+    keys
+    {
+        key(PK; "Primary key")
+        {
+            Clustered = true;
+        }
+    }
+    ```
+
+<!-- 
+
+1. Create another version of the table migration extension that contains the table objects.
+2. In this version, change the name of the primary keys in the affected tables to `PK`.
+3. Build the extension package.
+4. Publish the extension version.
+5. Synchronize the extension version by using Sync-NAVApp cmdlet with the `-Mode ForceSync` parameter.
+6. Synchronize the table migration extension that contains the migration.json.
+7. Complete the upgrade.
+-->
 
 ## <a name="enum"></a>Enum type fields not transferred as part of schema migration between extensions
 

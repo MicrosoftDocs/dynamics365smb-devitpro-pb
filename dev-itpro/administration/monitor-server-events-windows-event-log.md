@@ -2,11 +2,11 @@
 title: "Monitoring Business Central Server Events in Event Viewer"
 description: Learn about using event viewer to monitor Business Central Server instances
 ms.custom: na
-ms.date: 10/29/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.assetid: da2944cc-063d-452d-968c-23b90c547600
 caps.latest.revision: 28
@@ -36,7 +36,7 @@ The **Common** folder contains telemetry events from the event trace provider ca
       
 |Log|Description|  
 |---------|-----------------|  
-|Admin|Includes custom telemetry trace events that are emitted from the application. These are events that are sent by [SENDTRACETAG method](../developer/methods/devenv-sendtracetag-method.md) calls from inside the application. <br /><br /> For more information, see [Instrumenting an Application for Telemetry](../developer/devenv-instrument-application-for-telemetry.md).<br /><br /> **Note** The [!INCLUDE[server](../developer/includes/server.md)] instance includes a configuration setting called **Diagnostic Trace Level** (`TraceLevel` in the customsettings.config file) that enables you to specify the lowest severity level of telemetry events to be recorded in the event log, or even turn off telemetry event logging altogether. If you do not see the expected events, then verify the [!INCLUDE[server](../developer/includes/server.md)] instance configuration with an administrator. For information, see [Configuring Business Central Server](configure-server-instance.md#General).|  
+|Admin|Includes custom telemetry trace events that are emitted from the application. These are events that are sent by [SENDTRACETAG method](../developer/methods-auto/library.md) calls from inside the application. <br /><br /> For more information, see [Instrumenting an Application for Telemetry](../developer/devenv-instrument-application-for-telemetry.md).<br /><br /> **Note** The [!INCLUDE[server](../developer/includes/server.md)] instance includes a configuration setting called **Diagnostic Trace Level** (`TraceLevel` in the customsettings.config file) that enables you to specify the lowest severity level of telemetry events to be recorded in the event log, or even turn off telemetry event logging altogether. If you do not see the expected events, then verify the [!INCLUDE[server](../developer/includes/server.md)] instance configuration with an administrator. For information, see [Configuring Business Central Server](configure-server-instance.md#General).|  
 |Operational|Not applicable.|  
 |Debug|Includes system telemetry trace events that occur.<br /><br /> **Note:** In Event Viewer, this log is hidden and disabled by default. For information about how to show and enable this log, see [Enable Business Central Debug Logs in Event Viewer](use-Event-Viewer-Collect-View-Trace-Events.md).|  
   
@@ -117,11 +117,11 @@ By default, the [!INCLUDE[server](../developer/includes/server.md)] logs contain
   
 9. Choose the **OK** button.  
   
- The **Admin** log displays only errors that occurred in the last 24 hours on tenant *Tenant1* and [!INCLUDE[server](../developer/includes/server.md)] instance *MyNavServerInstance1*. The applied filter can be removed. Alternatively, you can save it as a custom view. For more information about filtering in Event Viewer, see [Filter Displayed Events](https://go.microsoft.com/fwlink/?LinkID=516925) and [Advanced XML filtering in the Windows Event Viewer](https://go.microsoft.com/fwlink/?LinkID=516924).  
+ The **Admin** log displays only errors that occurred in the last 24 hours on tenant *Tenant1* and [!INCLUDE[server](../developer/includes/server.md)] instance *MyNavServerInstance1*. The applied filter can be removed. Alternatively, you can save it as a custom view. For more information about filtering in Event Viewer, see [Filter Displayed Events](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc722058(v=ws.11)) and [Advanced XML filtering in the Windows Event Viewer](/archive/blogs/askds/advanced-xml-filtering-in-the-windows-event-viewer).  
   
 ## See Also  
  [Monitoring Business Central Server Events](monitor-server-events.md)    
  [Business Central Server Trace Events](server-trace-events.md)   
  [Monitoring Business Central Server](monitor-server.md)   
  [Monitoring Business Central Server Using Performance Counters](monitor-server-using-performance-counters.md)  
- [Windows Event Viewer](https://go.microsoft.com/fwlink/?LinkID=314067)  
+ [Windows Event Viewer](/previous-versions/)

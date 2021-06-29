@@ -2,9 +2,9 @@
 title: "How Application Configurations Affect Performance"
 description: Learn about tips and tricks for how to tweak your Business Central performance.
 ms.custom: na
-ms.date: 10/12/2020
+ms.date: 04/01/2021
 ms.reviewer: solsen
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: KennieNP
 ---
@@ -24,7 +24,7 @@ It's often desirable to offload work from the user session to happen in the back
 - [Schedule long running reports to run in background](/dynamics365/business-central/ui-work-report#ScheduleReport)
 - [Schedule jobs](/dynamics365/business-central/admin-job-queues-schedule-tasks) (for example posting) to run in background
 - Enable [background posting](/dynamics365/business-central/ui-batch-posting) in areas where your business is using reservations and item tracking using serial and lot numbers
-- Adjust item costs as a periodic background job. Don't adjust automatically. 
+- [Adjust item costs as a periodic background job](/dynamics365/business-central/finance-adjust-reconcile-inventory-cost-job-queue). Don't adjust automatically. 
 
 > [!TIP]  
 > don't run job queues too frequently.
@@ -79,6 +79,12 @@ These areas of the application are known to cause a performance impact and requi
 - [Automatic reservation](/dynamics365/business-central/design-details-reservation-order-tracking-and-action-messaging)  
 - [Item tracking and Lot/SN Expiration dates](/dynamics365/business-central/inventory-how-work-item-tracking)  
 - [Change log](/dynamics365/business-central/across-log-changes)  
+
+## If processing of Sales Order lines is slow
+If you experience that processing of Sales Order lines that contain bill-of-materials (BOMs) is slow, then check if _Stockout Warning_ on the page  _Sales & Receivables Setup_, is set to **true**. If that is the case, then change this to **false**.
+
+Why? 
+_Stockout Warning_ specifies if a warning should be displayed if a user enters a quantity on a sales document that brings the item’s inventory below zero. The calculation includes all sales document lines that have not yet been posted. Stockout Warning can still be used on items; this can be done by setting the individual Item’s _Stockout Warning_ to **true** on the Item Card. 
 
 ## Manage the database access intent on reports, API pages, and queries
 

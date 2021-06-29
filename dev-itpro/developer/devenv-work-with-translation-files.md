@@ -2,8 +2,8 @@
 title: "Working with Translation Files"
 description: "How to work with translations, multilanguage, and XLIFF files in Business Central"
 ms.custom: na
-ms.date: 10/08/2020
-ms.topic: article
+ms.date: 04/01/2021
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 author: SusanneWindfeldPedersen
@@ -11,7 +11,9 @@ author: SusanneWindfeldPedersen
 
 # Working with Translation Files
 
-[!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] is multilanguage enabled, which means that you can display the user interface (UI) in different languages. In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] this is done using XLIFF files, which is a standardized format used for computer-based translations. 
+[!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] is multi-language enabled, which means that you can display the user interface (UI) in different languages. In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] this is done using XLIFF files, which is a standardized format used for computer-based translations.
+
+For an overview of how translations are applied, see [Translations Overview](devenv-translations-overview.md).
 
 ## Generating the XLIFF file
 
@@ -26,10 +28,14 @@ In the app.json file of your extension, add the following line:
   "features": [ "TranslationFile" ]
 ```
 
+> [!NOTE]  
+> If the **Incremental Build** setting is enabled in the **AL Language extension configuration** then all translations will be ignored, even though the `"features": [ "TranslationFile" ]` setting is specified in the `app.json` file. For more information, see [AL Language Extension Configuration](devenv-al-extension-configuration.md).
+> The same is true when using **RAD** publishing, then all translations will also be ignored. For more information, see [Working with Rapid Application Development](devenv-rad-publishing.md).
+
 Now, when you run the build command (**Ctrl+Shift+B**) in Visual Studio Code, a `\Translations` folder will be generated and populated with the .xlf file that contains all the labels, label properties, and report labels that you are using in the extension. The generated .xlf file can now be translated.
 
 > [!IMPORTANT]  
-> Make sure to rename the translated file to avoid that the file is overwritten next time the extension is built.
+> Make sure to rename the translation file to avoid the file being overwritten the next time the extension is built.
 
 By setting the `GenerateCaptions` flag in the app.json file, you specify that you want to generate captions based on the object name for pages, tables, reports, XMLports, request pages, and table fields. If the object already has a `Caption` or `CaptionML` property set, that value will be used, for table fields the `OptionCaption` is used. The syntax is the following:
 
@@ -48,6 +54,7 @@ By setting the `GenerateLockedTranslations` flag in the app.json file, you speci
 ```
 
 ## Label syntax
+
 The label syntax is shown in the example below for the **Caption** property: 
 
 ```AL
@@ -75,8 +82,9 @@ var
 
 > [!IMPORTANT]  
 > The **ML** versions of properties are **not** included in the .xlf file:  
+>
 > - [CaptionML](properties/devenv-captionml-property.md)
-> - [ConstValueML](properties/devenv-constvalueml-property.md)
+> - [ConstValueML](./properties/devenv-properties.md)
 > - [InstructionalTextML](properties/devenv-instructionaltextml-property.md)
 > - [OptionCaptionML](properties/devenv-optioncaptionml-property.md)
 > - [PromotedActionCategoriesML](properties/devenv-promotedactioncategoriesml-property.md)
@@ -115,9 +123,42 @@ When the extension is built and published, you change the language of [!INCLUDE[
 
 ## Translating other extensions
 
-To translate other extensions, for example, adding translations to the Base Application, you must reference the project to be translated using the `dependencies` section in the app.json file. For more information, see [JSON Files](devenv-json-files.md). When you have the dependencies added, you can add xliff files in your current project that translates the object captions of the referenced extension. Create a directory named **Translations** in the root of the extension, and place the translated xliff file there. When your extension is then built and published, change the language of [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] to view the UI in the translated language. 
+To translate other extensions, for example, when adding translations to the Base Application, you must reference the project to be translated using the `dependencies` section in the `app.json` file. For more information, see [JSON Files](devenv-json-files.md). When the dependencies are set, you can add xliff files in your current project that translates the object captions of the referenced extension. Create a directory named **Translations** in the root of the extension, and place the translated xliff file there. When your extension is then built and published, change the language of [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] to view the UI in the translated language. 
+
+> [!NOTE]  
+> When translating other extensions make sure that the attribute `original` in the `<file>` element in the xliff file is **not** set to the name of the current app, otherwise translations are only used to translate labels in the same app. 
+>
+> For apps where translations are meant to translate the current app, the generated xliff file will have the correct value of the app name. 
 
 
+### Use the `<trans-unit id>` of the label where it was defined
+
+In order to translate other apps, you must use the `<trans-unit id>` of the original property, not the one of an extension object, because that might have been modified.
+
+If `MyPage` defined as:
+
+```al
+page 50000 MyPage {
+  Caption = 'Base Page'
+}
+```
+
+has `<trans-unit id>` for the page corresponding to `Page 2931038265 - Property 2879900210`.
+
+And the following page extension of `MyPage` called `MyPageExtension`:
+
+```al
+pageextension 50000 MyPageExtension extends MyPage
+{
+    Caption = 'Extension Page';
+}
+
+```
+
+has `<trans-unit id>` for the page extension corresponding to `PageExtension 1716690578 - Property 2879900210`, then if you want to change the caption on the page, you must use the ID `Page 2931038265 - Property 2879900210`, which is the `<trans-unit id>` of the original property.
+
+
+<!-- removing bug 394765
 ## Translation and Localization apps
 
 > [!NOTE]  
@@ -128,10 +169,10 @@ The .xlf files approach cannot be used for translating the base application. If 
 We recommend that you use only one .txt file per language. There is no enforced naming on the .txt files, but a suggested good practice is to name it `<extensionname>.<language>.txt`.  
 
 For more information about importing and exporting .txt files, see [How to: Add Translated Strings By Importing and Exporting Multilanguage Files in Dynamics NAV](/dynamics-nav/how-to--add-translated-strings-by-importing-and-exporting-multilanguage-files).
+-->
 
 ## See Also
-[How to: Add Translated Strings By Importing and Exporting Multilanguage Files in Dynamics NAV](/dynamics-nav/how-to--add-translated-strings-by-importing-and-exporting-multilanguage-files)   
-[Working with labels](devenv-using-labels.md)    
+
+[Working with labels](devenv-using-labels.md)  
 [Working with multiple AL project folders within one workspace](devenv-multiroot-workspaces.md)  
 [JSON Files](devenv-json-files.md)
-

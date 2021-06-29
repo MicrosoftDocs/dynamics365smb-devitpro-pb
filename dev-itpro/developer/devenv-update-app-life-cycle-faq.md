@@ -5,10 +5,10 @@ author: SusanneWindfeldPedersen
 
 ms.custom: na
 ms.reviewer: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: freddyk
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ---
 
 # Update Lifecycle for AppSource Apps FAQ
@@ -49,7 +49,7 @@ Our recommendation is to pack more bug fixes and features into less frequent upd
 We do have a fast track validation process for situations like this. These types of situations become top priority in our queue. A very quick validation takes place with the goal of having the hotfix in our service that same day. The following is the hotfix process:
 - Fully test the hotfix version of your app to ensure it fixes the problem and to make sure no other issues are introduced.
 - Submit the app via Partner Center per the normal process.
-- Email [rweigel@microsoft.com](mailto:rweigel@microsoft.com) to notify him of the hotfix situation.
+- Email [d365val@microsoft.com](mailto:d365val@microsoft.com) to notify him of the hotfix situation.
 - Provide justification as to why this is critical. Some definitions of critical being:
     - App is causing the tenant to be unresponsive or unusable with no workaround
     - App is serving a critical business process and that process cannot be executed without a fix

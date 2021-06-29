@@ -3,11 +3,11 @@ title: "Operation Limits in Dynamics 365 Business Central"
 description: "Learn about constraints on what you can do in Business Central online that is different from what you can do with on-premises deployments."
 author: jswymer
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.author: jswymer
 ---
 
@@ -25,12 +25,14 @@ For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, you can'
   
 |Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
 |---------|--------------------------------------------------------------------------------|------|
+|Reconnect period|The time during which a client can reconnect to the service after being disconnected.|  10 minutes|
 <!-- these settings are per node. We should not expose these to partners 
 |Max concurrent calls|The maximum number of concurrent client calls that can be active.|1000|  
 |Max concurrent connections|The maximum number of concurrent client connections that the service accepts. |500|
 |Max number of orphaned connections|Th maximum number of orphaned connections to be kept alive at the same time for the time that is specified by **ReconnectPeriod**.<br /><br /> A connection is orphaned when the client is involuntarily disconnected from service.<br /><br /> You can also use **MaxValue** as a value to indicate no limit.o| 20|
 -->
-|Reconnect period|The time during which a client can reconnect to the service after being disconnected.|  10 minutes|
+
+
 
 <!-- no limit
 |Operation timeout|The maximum time for the service to return a call from the client.||  
@@ -50,7 +52,7 @@ For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, you can'
 |Compression threshold|The threshold in memory consumption at which the service starts compressing datasets| 64 KB|
 -->
 
-##  <a name="Database"></a> Database connection limits
+##  <a name="Database"></a> Database limits
   
 |Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Value|  
 |---------|--------------------------------------------------------------------------------|------|
@@ -59,6 +61,7 @@ For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, you can'
 |SQL connection idle timeout|The time that a SQL connection can remain idle before being closed.|5 minutes|
 |SQL connection timeout|The time to wait for the service to connect to the database. When the time is exceeded, the attempt is canceled and an error occurs. This setting also applies to begin, rollback, and commit of transactions.|1.5 minutes|
 |Long running SQL query threshold|The amount of time that an SQL query can run before a warning telemetry event occurs. If this threshold is exceeded, the following event is logged: Action completed successfully, but it took longer than the given threshold.|1000 ms|
+|Number of companies|Although Business Central does not have a technical limit on the number of companies in an environment, having many companies can cause administrative tasks (such as upgrades, point-in-time restores, and database exports) to take a very long time and potentially hit timeout values. Therefore, it is recommended to test both these procedures and typical usage scenarios extensively if you have more than fifty companies. | 50 |
 
 <!--
 |SQL bulk import batch size|Specifies how many SQL memory chunks that a data import must be distributed across.| 448|
@@ -67,18 +70,19 @@ For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, you can'
 
 |Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
 |---------|--------------------------------------------------------------------------------|------|
-|  Maximum concurrent running scheduled tasks  | The maximum number of tasks that can run simultaneously for an environment.<br /><br />If there are many jobs running at the same time, you might experience that the response time for clients gets slower. If the value is too low, it might take longer for scheduled tasks to process.|3|
-|  Page background task default timeout |The default amount of time that page background tasks can run before being canceled. Page background tasks can be also given a timeout value when enqueued at runtime. This limit is used when no timeout is provided when the page background task is enqueued.|2 minutes|
-|  Page background task max timeout | The maximum amount of time that page background tasks can run before being canceled. Page background tasks can be also given a timeout value when enqueued at runtime. If a page background task is enqueued with a timeout greater than this limit, this limit is ignored.|10 minutes|
 |ChildSessionsMaxConcurrency|The maximum number of child sessions that can run concurrently per parent session. When the value is exceeded, additional child sessions will be queued and run when a slot becomes available as other child sessions are finished.|5|
 |ChildSessionsMaxQueueLength|The maximum number of child sessions that can be queued per parent session. If the value is exceeded, an error occurs.|100|
+|  Maximum concurrent running scheduled tasks  | The maximum number of tasks that can run simultaneously for an environment.<br /><br />If there are many jobs running at the same time, you might experience that the response time for clients gets slower. If the value is too low, it might take longer for scheduled tasks to process.|3|
+|MaximumSessionRecursionDepth|The maximum number of nested sessions that can be created before reaching infinite recursion. If the limit is exceeded, a runtime error occurs with the message: **Excessive recursive session creation detected, original session ID: \[id\], current session ID: \[id\].**|14|
+|  Page background task default timeout |The default amount of time that page background tasks can run before being canceled. Page background tasks can be also given a timeout value when enqueued at runtime. This limit is used when no timeout is provided when the page background task is enqueued.|2 minutes|
+|  Page background task max timeout | The maximum amount of time that page background tasks can run before being canceled. Page background tasks can be also given a timeout value when enqueued at runtime. If a page background task is enqueued with a timeout greater than this limit, this limit is ignored.|10 minutes|
 
 ## <a name="Reports"></a>Report limits
 
 |Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
 |---------|--------------------------------------------------------------------------------|------|
-|Default max documents | The maximum number of documents that can be merged in report by default Users can override this setting on a report-basis from the report request page. If exceeded, the report will be canceled.<br /><br />Developers can override this setting by using [MaximumDocumentCount property](../developer/properties/devenv-maximumdocumentcount-property.md) of a report. Client users can do the same when running a report from the report request page|200|
-|Max documents | The maximum number of documents that can be merged in report. If exceeded, the report will be canceled.|500|
+|Default max documents | The maximum number of documents that can be merged in a report using a Word layout. Users can override this setting on a report-basis from the report request page. If exceeded, the report will be canceled.<br /><br />Developers can override this setting by using [MaximumDocumentCount property](../developer/properties/devenv-maximumdocumentcount-property.md) of a report. Client users can do the same when running a report from the report request page|200|
+|Max documents | The maximum number of documents that can be merged in a report using a Word layout. If exceeded, the report will be canceled.|500|
 |Default max execution timeout | The maximum execution time that it can take to generate a report by default. Users can override this setting on a report-basis from the report request page. If exceeded, the report will be canceled.<br /><br />Developers can override this setting by using the [ExecutionTimeout property](../developer/properties/devenv-executiontimeout-property.md) of a report. Client users can do the same when running a report from the report request page.|6 hours|
 |Max execution timeout | The maximum execution time that it can take to generate a report. If exceeded, the report will be canceled.|12 hours|
 |Default max rows|The maximum number of rows that can be processed in a report by default. Users can override this setting on a report-basis from the report request page. If exceeded, the report will be canceled.<br /><br />Developers can override this setting by using the [MaximumDataSetSize property](../developer/properties/devenv-maximumdatasetsize-property.md) of a report. Client users can do the same when running a report from the report request page.|500,000|
@@ -98,6 +102,7 @@ For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, you can'
 |Max concurrent requests|The maximum number of OData V4 requests the server instance can actively process at the same time. Requests that exceed the limit will wait in the queue until a time slot becomes available.|5|
 |Max connections|The maximum number of simultaneous OData requests on the server instance, including concurrent and queued requests. When the limit is exceeded, a 429 (Too Many Requests) error occurs.|100 |
 |Max page size|The maximum number of entities returned per page of OData results.|  20,000 entities per page|
+|Max batch size|The maximum number of operations in a batch call.| 100 operations per batch|
 |Max request queue size|The maximum number of pending OData V4 requests waiting to be processed. When the limit is exceeded, a 429 (Too Many Requests) error occurs.|95|
 |Rate|The number of OData requests per minute that are allowed. An HTTP response code `429 - Too Many Requests` is returned if limits are exceeded.|Sandbox:<br />300 requests/minute<br /><br />Production<br />- 600 requests/minute| 
 |Operation timeout|The maximum amount of time that the service gives a single OData request. When the limit is exceeded, an HTTP response code `408 - Request Timeout` is returned.<br /><br />After 8 minutes, the session is canceled. |8 minutes|
@@ -122,4 +127,4 @@ For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, you can'
 ## See Also
 
 [Working with API Rate Limits](/dynamics-nav/api-reference/v1.0/dynamics-rate-limits)  
-[Microsoft API Terms of Use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use)  
+[Microsoft API Terms of Use](/legal/microsoft-apis/terms-of-use)

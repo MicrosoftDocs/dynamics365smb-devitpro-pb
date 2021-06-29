@@ -1,8 +1,9 @@
 ---
 title: "Database.ImportData Method"
+description: "Imports data from a file that has been exported from a database."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/03/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Database.ImportData Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Imports data from a file that has been exported from a database.
 
@@ -36,27 +37,27 @@ Specifies if you want to display a dialog box where the user can confirm the act
 &emsp;Type: [Text](../text/text-data-type.md)  
 Specifies the name and location of the file that must be imported. The file must have been exported from a database
       .  
-*IncludeApplicationData*  
+*[Optional] IncludeApplicationData*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 
 Specifies if you want to import the data that defines the application in the database. This includes the permissions, permission sets, profiles, and style sheets.
 Create a variable of type Boolean to specify this parameter.
 To import application objects, you must use the Import-NAVData Windows PowerShell cmdlet.
           
-*IncludeGlobalData*  
+*[Optional] IncludeGlobalData*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 
 Specifies if you want to import global, non-company specific data.
 Create a variable of type Boolean to specify this parameter.
           
-*CompanyRecord*  
+*[Optional] CompanyRecord*  
 &emsp;Type: [Record](../record/record-data-type.md)  
 Specifies the company or companies that must be imported.  
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*[Optional] Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

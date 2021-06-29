@@ -2,11 +2,11 @@
 title: "Working with Multiple Projects and Project References"
 description: "Handling solutions in the AL language that contains multiple projects in one Visual Studio Code folder and contains references between these projects."
 author: SusanneWindfeldPedersen
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---

@@ -3,10 +3,10 @@ title: "Walkthrough: Implementing New Workflow Events and Responses"
 description: Learn how you can extend the native workflows by adding workflow events and responses in code to support additional business scenarios.
 author: edupont04
 ms.reviewer: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 01/13/2021
+ms.date: 04/01/2021
 ---
 # Walkthrough: Implementing New Workflow Events and Responses
 

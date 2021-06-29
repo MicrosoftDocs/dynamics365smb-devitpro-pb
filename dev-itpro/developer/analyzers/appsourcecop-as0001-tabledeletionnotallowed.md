@@ -1,8 +1,8 @@
 ---
-title: "Tables and table extensions that have been published must not be deleted."
+title: "AppSourceCop Rule AS0001"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 05/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AppSourceCop Rule AS0001
-Tables and table extensions that have been published must not be deleted.  
+Tables and table extensions that have been published must not be deleted.
 
 ## Description
 Tables and table extensions that have been published must not be deleted. This might break the upgrade of existing installations and dependent extensions.
@@ -22,7 +22,7 @@ Tables and table extensions that have been published must not be deleted. This m
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 > [!NOTE]  
-> This rule validates tables independently of their Accessibility or ObsoleteState, because they are used when synchronizing the schema defined in the extension to the database.
+> This rule validates tables independently of their Accessibility or ObsoleteState, because tables are always used when synchronizing the schema defined in the extension to the database.
 
 ## See Also
 

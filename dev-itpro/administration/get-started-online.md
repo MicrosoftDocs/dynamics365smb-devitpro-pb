@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.workload: na
 ms.reviewer: na
 ms.search.keywords: administration, tenant, admin, environment
-ms.date: 11/12/2020
+ms.date: 04/01/2021
 ms.author: edupont
 ---
 

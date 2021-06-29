@@ -1,8 +1,9 @@
 ---
 title: "Enum.AsInteger Method"
+description: "Get the enum value as an integer value."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Enum.AsInteger Method
-> **Version**: _Available from runtime version 4.0._
+> **Version**: _Available or changed with runtime version 4.0._
 
 Get the enum value as an integer value.
 
@@ -25,13 +26,13 @@ The Enum Value as an Integer value :=   Enum.AsInteger()
 ```
 
 ## Parameters
-*Enum*
-&emsp;Type: [Enum](enum-data-type.md)
-An instance of the [Enum](enum-data-type.md) data type.
+*Enum*  
+&emsp;Type: [Enum](enum-data-type.md)  
+An instance of the [Enum](enum-data-type.md) data type.  
 
 ## Return Value
-*The Enum Value as an Integer value*
-&emsp;Type: [Integer](../integer/integer-data-type.md)
+*The Enum Value as an Integer value*  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 
 
 

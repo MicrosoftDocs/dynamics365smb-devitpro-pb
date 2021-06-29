@@ -3,11 +3,11 @@ title: "Moving Tables and Fields to Extensions Down the Dependency Graph"
 description: Explains how to move tables and fields from an extension to another extension that is down the dependency graph.
 author: jswymer
 ms.custom: na
-ms.date: 10/28/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
 ---

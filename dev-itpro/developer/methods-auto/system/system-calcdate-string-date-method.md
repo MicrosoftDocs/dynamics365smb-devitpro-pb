@@ -1,8 +1,9 @@
 ---
 title: "System.CalcDate Method"
+description: "Calculates a new date that is based on a date expression and a reference date."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # System.CalcDate Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Calculates a new date that is based on a date expression and a reference date.
 
@@ -41,14 +42,14 @@ These production rules show that date expressions consist of zero, one, two, or 
 -   CW (current week; corresponds to \<Prefix\>\<Unit\>)
 The internal calendar starts on Monday and ends on Sunday. This means that Monday is weekday 1 and Sunday is weekday 7. A run-time error occurs if the syntax of DateExpression is incorrect.
           
-*Date*  
+*[Optional] Date*  
 &emsp;Type: [Date](../date/date-data-type.md)  
 Use this optional parameter to define a reference date. The default is the current system date. If you omit this optional value, the current system date is used.  
 
 
 ## Return Value
-*NewDate*
-&emsp;Type: [Date](../date/date-data-type.md)
+*NewDate*  
+&emsp;Type: [Date](../date/date-data-type.md)  
 
 
 
@@ -64,7 +65,7 @@ For example, if a user who has language set to ENG \(English\) enters the date f
 
 If a date formula is entered with \< > delimiters surrounding it, then the date formula is stored in a generic, nonlanguage-dependent format. This makes it possible to develop date formulas that are not dependent on the currently selected language.  
 
-For more information about how to calculate the duration between two DateTimes, see [Duration Data Type](../../datatypes/devenv-duration-data-type.md).  
+For more information about how to calculate the duration between two DateTimes, see [Duration Data Type](../duration/duration-data-type.md).  
 
 ## Example 1
 

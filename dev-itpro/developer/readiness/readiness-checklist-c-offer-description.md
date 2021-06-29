@@ -3,9 +3,9 @@ title: "Offer Description"
 description: "Guidelines on offer description"
 author: a-emniel
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: solsen
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: a-emniel
 ---
@@ -144,7 +144,7 @@ This app supports both the Essential and Premium editions of Microsoft Dynamics 
 **Scenario 1: Your offer supports specific countries**:
 
 
-Please list the specific countries your offer supports. You can find the list of supported Countries for Microsoft Dynamics 365 Business Central here: ["Country/regional availability and supported languages"](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/compliance/apptest-countries-and-translations). 
+Please list the specific countries your offer supports. You can find the list of supported Countries for Microsoft Dynamics 365 Business Central here: ["Country/regional availability and supported languages"](../../compliance/apptest-countries-and-translations.md). 
 
 How to structure the content in this paragraph?
 - Create a header 4 (it will automatically become bold)
@@ -193,6 +193,3 @@ How to structure the content in this paragraph?
 **Supported Languages**: 
 
 The app is available in Czech (Czech Republic), Danish (Denmark), German (Germany), Spanish (Spain), Dutch (Belgium) and English (United Kingdom)
-
-
-

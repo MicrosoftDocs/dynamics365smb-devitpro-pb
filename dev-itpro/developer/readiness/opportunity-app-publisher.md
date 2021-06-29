@@ -1,12 +1,12 @@
-﻿---
+---
 title: The SMB opportunity for app publishers 
 description: Learn about the business opportunity we see for software companies in the SMB space if you build your solution on Dynamics 365 Business Central.
 author: edupont04
 manager: edupont
 
-ms.topic: article
+ms.topic: conceptual
 ms.service: dynamics365-business-central
-ms.date: 11/30/2020
+ms.date: 04/01/2021
 ms.author: kurtju
 ---
 
@@ -22,19 +22,18 @@ Our mission is to empower every individual and every organization on the planet 
 
 [Microsoft AppSource](https://appsource.microsoft.com/) is part of Microsoft's commercial marketplace where customers can find, try and get business solutions apps. It is the launch pad for your joint go-to-market activities with Microsoft and a flywheel for business growth. Using launch promotion, demand generation, and joint sales and marketing, your offer portfolio on AppSource can be the centerpiece of your cloud business engine.  
 
-In November 2020, Microsoft AppSource had more than 3 million monthly active users and more than +20.000 apps. Specifically for Business Central, there are more than 1000 apps available, and the number is growing fast.  
+In November 2020, Microsoft AppSource had more than 3 million monthly active users and more than +20.000 apps. Specifically for Business Central, there are more than 1500 apps available, and the number is growing fast.  
 
 ## Go-to Market Scenarios
 
-As an AppSource publisher you can focus on these scenarios with Business Central and Microsoft AppSource:  
+As an AppSource publisher you can focus on the following two scenarios with Business Central and Microsoft AppSource:  
 
 - Connect
-- Extend, or
-- Embed
+- Add-on
 
 ### Connect
 
-Connect your existing online service with Business Central through a powerful API. Here are a few examples which of existing connect apps which you can find on AppSource:  
+Connect your existing online service with Business Central through a powerful API. Here are a few examples of existing connect apps that you can find on AppSource:  
 
 - [Square payments](https://appsource.microsoft.com/product/dynamics-365-business-central/PUBID.squareinc1581374005853%7CAID.square-payments%7CPAPPID.313d5c68-0d92-4f43-b470-ab5857ecf9c6), which allow you take payments with a Square terminal.  
 
@@ -42,9 +41,9 @@ Connect your existing online service with Business Central through a powerful AP
 
 - [Scaptify](https://appsource.microsoft.com/product/dynamics-365-business-central/PUBID.scapta%7CAID.50395b48-f7b6-4445-96df-6faaa8c96deb%7CPAPPID.96da1317-c2e8-42ec-aa19-216e33d0da19?tab=Overview), which connects your Shopify store with Business Central  
 
-Learn more about the API to build connect apps: [Getting Started Developing Connect Apps](/dynamics365/business-central/dev-itpro/developer/devenv-develop-connect-apps)  
+Learn more about the API to build connect apps: [Getting Started Developing Connect Apps](../devenv-develop-connect-apps.md)  
 
-### Extend
+### Add-on
 
 You can extend the default capabilities in Business Central to add extra productivity features or industry functionality to fit the needs of your customer base. The possibilities are plentiful.  
 
@@ -60,21 +59,8 @@ Here are a few examples of some apps that extend Business Central:
 
 - [SwissSalary 365](https://appsource.microsoft.com/product/dynamics-365-business-central/PUBID.swisssalary%7CAID.swisssalary%7CPAPPID.ca3d5715-ac87-48ff-ace2-fc1605e50a69), which is a certified and flexible payroll app that's intuitive and easy to use for the Swiss market
 
-Learn more on how to build your app: [Getting Started with AL](/dynamics365/business-central/dev-itpro/developer/devenv-get-started)
+Learn more on how to build your app: [Getting Started with AL](../devenv-get-started.md)
 
-### Embed
-
-Embed Business Central as an integral component in an end-to-end industry solution. Here are a few examples of embed solutions available on Microsoft AppSource:  
-
-- [4PS construct, an all-in one solution for construction](https://appsource.microsoft.com/product/dynamics-365-business-central/TYPE.connect%7CPUBID.4psbv_ah%7CAID.4ps_construct%7CPAPPID.3a58b871-bfa9-4fd3-ba37-f16f72144ac6?tab=Overview). 4PS has specifically developed an integrated software solution based on the Microsoft platform and tailored for construction, civil engineering, mechanical and electrical, service and maintenance, house builders and equipment rental companies
-
-- [LS Central](https://appsource.microsoft.com/product/dynamics-365-business-central/TYPE.connect%7CPUBID.ls_retail%7CAID.ls008-454%7CPAPPID.90e5423d-5b61-45da-99ae-d34752f11a87?tab=Overview) from LS Retail. The complete, unified commerce online platform to manage your entire retail and food service operations
-
-- [Dynamics Empire Online](https://appsource.microsoft.com/product/dynamics-365-business-central/TYPE.connect%7CPUBID.cegekanv%7CAID.dynamicsempireonline%7CPAPPID.b62d9fda-7b6a-4808-a0c7-0f995693c47d?tab=Overview), cegeka-dsa's open, secure and innovative real estate solution.
-
-<!--- Progressus,-->
-
-Learn more about embed apps: [Embed app overview](/dynamics365/business-central/dev-itpro/deployment/embed-app-overview)
 
 ## Consultancy services
 
@@ -92,4 +78,4 @@ Learn more about [Consultancy Services](https://appsource.microsoft.com/partners
 
 ## See also
 
-[Get Started with Building Apps](get-started.md)  
+[Get Started with Building Apps](get-started.md)

@@ -1,8 +1,9 @@
 ---
 title: "FieldRef.SetRange Method"
+description: "Sets a simple filter on a field, such as a single range or a single value."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # FieldRef.SetRange Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Sets a simple filter on a field, such as a single range or a single value.
 
@@ -24,15 +25,15 @@ Sets a simple filter on a field, such as a single range or a single value.
  FieldRef.SetRange([FromValue: Any] [, ToValue: Any])
 ```
 ## Parameters
-*FieldRef*
-&emsp;Type: [FieldRef](fieldref-data-type.md)
-An instance of the [FieldRef](fieldref-data-type.md) data type.
+*FieldRef*  
+&emsp;Type: [FieldRef](fieldref-data-type.md)  
+An instance of the [FieldRef](fieldref-data-type.md) data type.  
 
-*FromValue*  
+*[Optional] FromValue*  
 &emsp;Type: [Any](../any/any-data-type.md)  
 The lower limit of the range. The data type of FromValue must match the data type of the field referred to by FieldRef.
         
-*ToValue*  
+*[Optional] ToValue*  
 &emsp;Type: [Any](../any/any-data-type.md)  
 The upper limit of the range. If you omit this parameter, the FromValue you specified is used. The data type of ToValue must match the data type of the field referred to by FieldRef.  
 

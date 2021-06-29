@@ -4,8 +4,8 @@ description: Create and display actions in the ribbon of all pages and group the
 
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2020
-ms.topic: article
+ms.date: 04/01/2021
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
@@ -115,7 +115,7 @@ page 50110 PageName
 ``` 
 
 > [!NOTE]  
-> Actions can be assigned to a page by setting the RunObject property, or by adding a trigger to a Codeunit. For more information, see [RunObject Property](properties/devenv-runobject-property.md) and [Codeunit Triggers](triggers/devenv-codeunit-triggers.md).  
+> Actions can be assigned to a page by setting the RunObject property, or by adding a trigger to a Codeunit. For more information, see [RunObject Property](properties/devenv-runobject-property.md) and [Codeunit Triggers](triggers-auto/codeunit/devenv-onrun-codeunit-trigger.md).  
 
 The promoted action menus are always displayed first so the promoted actions provide quick access to common tasks, and users do not have to browse through a menu to access them. Add the Promoted property to add actions to the a promoted action menu. For more information on how to add promoted actions, promoted categories, and examples, see [Promoted Actions](devenv-promoted-actions.md). 
   

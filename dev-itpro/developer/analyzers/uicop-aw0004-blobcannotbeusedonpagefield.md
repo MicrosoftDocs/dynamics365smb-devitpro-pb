@@ -1,8 +1,8 @@
 ---
-title: "A Blob cannot be used as a source expression for a page field."
+title: "UICop Rule AW0004"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 05/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # UICop Rule AW0004
-A Blob cannot be used as a source expression for a page field.  
+A Blob cannot be used as a source expression for a page field.
 
 ## Description
 A Blob cannot be used as a source expression for a page field.

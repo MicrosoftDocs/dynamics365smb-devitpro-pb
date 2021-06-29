@@ -3,18 +3,18 @@ title: "Converting Extensions V1 to V2 Overview"
 description: "Overview of the converting of extensions."
 author: jswymer
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
 ---
 
 # Converting Extensions V1 to Extensions V2
 
-Extensions are a programming model where functionality is defined as an addition to existing objects and defines how they are different or modify the behavior of the solution. This article explains the steps involved in converting V1 extensions, written in C/SIDE. to V2 extensions; written using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] for Visual Studio Code. The overall steps for the conversion are:
+Extensions are a programming model where functionality is defined as an addition to existing objects and defines how they are different or modify the behavior of the solution. This article explains the steps involved in converting V1 extensions, written in C/SIDE, to V2 extensions; written using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] for Visual Studio Code. The overall steps for the conversion are:
 
 1. Convert the source code from C/AL to the AL syntax.
 2. Complete the development of the extension in AL syntax.
@@ -50,7 +50,7 @@ You might run into compilation errors, which can typically be caused by:
 ## Write upgrade code to move data from V1 Extensions
 Just like with V1 extensions, you have to write code to handle data in tables during upgrade. Writing code for the V1-to-V2 extension upgrade is very similar to the code that you have been writing for V1 Extensions. The differences are:
 
-- Instead of adding code to normal codeunit, you write code in an upgrade codeunit, which is a codeunit whose [SubType property](properties/devenv-subtype-property-codeunit.md) is set to **Upgrade**.
+- Instead of adding code to normal codeunit, you write code in an upgrade codeunit, which is a codeunit whose [SubType property](/dynamics365/business-central/dev-itpro/developer/devenv-subtype-codeunit-property) is set to **Upgrade**.
 - Instead of adding code to the user-defined methods `OnNavAppUpgradePerDatabase()` or `OnNavAppUpgradePerCompany()`, you add code to one or more of the following system triggers for data upgrade. These triggers are invoked when a data upgrade is started. The following table lists the upgrade triggers in the order in which they run.  
 
     |Trigger |Description |
@@ -141,4 +141,4 @@ The upgrade code unit becomes an integral part of the extension. The **NAVAPP** 
 ## See Also
 [Getting Started with AL](devenv-get-started.md)  
 [Keyboard Shortcuts](devenv-keyboard-shortcuts.md)    
-[AL Development Environment](devenv-reference-overview.md)  
+[AL Development Environment](devenv-reference-overview.md)

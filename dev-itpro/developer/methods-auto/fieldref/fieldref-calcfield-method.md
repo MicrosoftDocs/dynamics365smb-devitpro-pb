@@ -1,8 +1,9 @@
 ---
 title: "FieldRef.CalcField Method"
+description: "Updates FlowFields in a record."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # FieldRef.CalcField Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Updates FlowFields in a record.
 
@@ -25,13 +26,13 @@ Updates FlowFields in a record.
 ```
 
 ## Parameters
-*FieldRef*
-&emsp;Type: [FieldRef](fieldref-data-type.md)
-An instance of the [FieldRef](fieldref-data-type.md) data type.
+*FieldRef*  
+&emsp;Type: [FieldRef](fieldref-data-type.md)  
+An instance of the [FieldRef](fieldref-data-type.md) data type.  
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*[Optional] Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
@@ -41,7 +42,7 @@ An instance of the [FieldRef](fieldref-data-type.md) data type.
 
 FlowFields are virtual fields. The values in these fields are not saved in the table. This means that you must use the CalcFields method to update them. For example, if you retrieve a record using the [Find Method \(RecordRef\)](../../methods-auto/recordref/recordref-find-method.md) and [Next Method \(RecordRef\)](../../methods-auto/recordref/recordref-next-method.md) methods, the FlowFields in those records are set to zero \(0\). Then, you can call `FieldRef.CalcField`, to calculate the value in one of the FlowFields.  
 
-When a FlowField is a direct source expression of a control on a page or a report, the calculation is automatically performed.  You can also use the CALCFieldS method to calculate binary large objects \(BLOBs\). For more information, see [BLOB Data Type](../../datatypes/devenv-blob-data-type.md).  
+When a FlowField is a direct source expression of a control on a page or a report, the calculation is automatically performed.  You can also use the CALCFieldS method to calculate binary large objects \(BLOBs\). For more information, see [BLOB Data Type](../library.md).  
 
 This method is similar to the [CalcFields Method \(Record\)](../../methods-auto/record/record-calcfields-method.md) method.  
 

@@ -1,8 +1,9 @@
 ---
 title: "RecordRef.FilterGroup Method"
+description: "Changes the filter group that is being applied to the table. You can also use this method to return the number of the current filtergroup. You cannot return the number of the filtergroup and set a new filtergroup at the same time."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # RecordRef.FilterGroup Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Changes the filter group that is being applied to the table. You can also use this method to return the number of the current filtergroup. You cannot return the number of the filtergroup and set a new filtergroup at the same time.
 
@@ -26,18 +27,18 @@ Changes the filter group that is being applied to the table. You can also use th
 > [!NOTE]
 > This method can be invoked using property access syntax.
 ## Parameters
-*RecordRef*
-&emsp;Type: [RecordRef](recordref-data-type.md)
-An instance of the [RecordRef](recordref-data-type.md) data type.
+*RecordRef*  
+&emsp;Type: [RecordRef](recordref-data-type.md)  
+An instance of the [RecordRef](recordref-data-type.md) data type.  
 
-*NewGroup*  
+*[Optional] NewGroup*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The ID of the new filter group.  
 
 
 ## Return Value
-*Group*
-&emsp;Type: [Integer](../integer/integer-data-type.md)
+*[Optional] Group*  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 The ID of the filter group.
 
 

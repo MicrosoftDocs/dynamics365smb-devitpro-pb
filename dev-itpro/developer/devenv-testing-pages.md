@@ -1,11 +1,11 @@
 ---
 title: "Testing Pages"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.assetid: 7f7961ce-7256-43e9-9dc5-7fd93e65ee3a
 caps.latest.revision: 32
@@ -44,7 +44,7 @@ You can create and open a test page in the following ways:
 - Write AL code to trap a call to open a test page by using the [Trap Method \(TestPage\)](methods-auto/testpage/testpage-trap-method.md).  
 
 > [!NOTE]
-> You must consider how you set the [TransactionModel Property](properties/devenv-transactionmodel-property.md) to simulate the scenario that you want to test and to return the database to its initial state after the test. 
+> You must consider how you set the [TransactionModel Property](./properties/devenv-properties.md) to simulate the scenario that you want to test and to return the database to its initial state after the test. 
 
 > [!NOTE]  
 > Test methods and code on test pages run on the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] Server instance, even though they simulate client interactions.  
@@ -111,4 +111,4 @@ To simulate moving to different items on a list page or moving to different reco
 ## See Also
 
 [Testing the Application](devenv-testing-pages.md)  
-[Testing the Advanced Sample Extension](devenv-extension-advanced-example-test.md)  
+[Testing the Advanced Sample Extension](devenv-extension-advanced-example-test.md)

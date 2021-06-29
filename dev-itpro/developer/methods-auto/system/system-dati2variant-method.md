@@ -1,8 +1,9 @@
 ---
 title: "System.DaTi2Variant Method"
+description: "Creates a variant that contains an encapsulation of a COM VT\\_DATE."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # System.DaTi2Variant Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Creates a variant that contains an encapsulation of a COM VT\\_DATE.
 
@@ -36,8 +37,8 @@ The input time.
 
 
 ## Return Value
-*Variant*
-&emsp;Type: [Variant](../variant/variant-data-type.md)
+*Variant*  
+&emsp;Type: [Variant](../variant/variant-data-type.md)  
 
 
 

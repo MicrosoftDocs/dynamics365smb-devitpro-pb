@@ -2,11 +2,11 @@
 title: "Page 6400 and 6401 Errors "
 description: "Explains how to resolve the compilation errors that you get forPage 6400 and 6401 when converting a database from Dynamics NAV to Business Central."
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---

@@ -1,8 +1,9 @@
 ---
 title: "FieldRef.CalcSum Method"
+description: "Calculates the total of all values of a SumIndexField in a table."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # FieldRef.CalcSum Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Calculates the total of all values of a SumIndexField in a table.
 
@@ -25,13 +26,13 @@ Calculates the total of all values of a SumIndexField in a table.
 ```
 
 ## Parameters
-*FieldRef*
-&emsp;Type: [FieldRef](fieldref-data-type.md)
-An instance of the [FieldRef](fieldref-data-type.md) data type.
+*FieldRef*  
+&emsp;Type: [FieldRef](fieldref-data-type.md)  
+An instance of the [FieldRef](fieldref-data-type.md) data type.  
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*[Optional] Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
@@ -47,7 +48,7 @@ If possible, the CalcSum method uses SumIndexField Technology \(SIFT\). SIFT is 
 
 - The SumIndexFields on the [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)] key contain the field to which the FieldRef parameter refers.  
 
-- The [MaintainSIFTIndex Property](../../properties/devenv-maintainsift-index-property.md) is set to **true**.  
+- The [MaintainSIFTIndex Property](/dynamics365/business-central/dev-itpro/developer/methods-auto/fieldref/devenv-maintainsiftindex-property) is set to **true**.  
 
 > [!NOTE]  
 > By default this property is set to **true** for all keys.  

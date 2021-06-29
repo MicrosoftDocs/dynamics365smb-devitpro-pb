@@ -3,11 +3,11 @@ title: "Prefix and suffix for naming in extensions"
 description: "Use a prefix or suffix for names in your extension."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 11/05/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: freddyk
 ---
@@ -16,31 +16,81 @@ ms.author: freddyk
 
 In your extension, the name of each new application object (table, page, codeunit), must contain a prefix or suffix. This rule applies to all objects. You can use the [Caption](../developer/properties/devenv-caption-property.md) values for what you decide to display to the user. When you modify a core Dynamics 365 object using a table extension or a page extension, the prefix/suffix must be defined at the control/field/action/group level.
 
-## Examples
+## Benefits
 
-Declare your objects with a prefix as shown in the following examples.
+The use of affixes reduces name collisions with objects defined in other extensions.
+
+Environments that have extensions with name collisions can experience issues when deploying new extensions, when upgrading the environment, or when creating a sandbox as a copy of the current environment (for production environments).
+
+## General rules
+
+- The prefix/suffix must be at least 3 characters
+- The object/field name must start or end with the prefix/suffix
+- If a conflict arises, the one who registered the prefix/suffix always wins
+- For your own objects, you must set the prefix/suffix at the top object level
+- For pages/tables in the base application or other apps that you extend, you must set the prefix/suffix at the top object level and also at the control/field/action level
+- Use the [AppSourceCop](../developer/devenv-using-code-analysis-tool.md) tool to find all missing prefixes and/or suffixes. Configuration options for this tool can be found [here](../developer/analyzers/appsourcecop.md). The Rules section explains the different checks that the analyzer will do. For prefix/suffix detection, refer to the Configuration section. It explains how to set your affixes in the AppSourceCop.json file.
+
+## Affixes requirements for extensions
+
+### For AppSource extensions
+
+> [!IMPORTANT]  
+> The use of affixes for object names is required for AppSource submissions as part of the [Technical Validation Checklist](../developer/devenv-checklist-submission.md).
+
+In order to meet the requirements for the AppSource technical validation, you must have a 3 letters affix registered for your extension publisher and you must use the affix in your extension.
+
+If you do not have any affixes registered yet, contact us at [d365val@microsoft.com](mailto:d365val@microsoft.com) to reserve the prefix/suffix of your choosing.
+
+> [!TIP]
+> It is always a good idea to supply a few suggestions in priority order to avoid back and forth communication.
+
+Note, that you are not required to change any already registered affixes; you can continue using these affixes. The guidelines above only apply to new registrations.
+
+### For per-tenant extensions
+
+Per-tenant extensions are not required to use a prefix or suffix, but we strongly recommend that you do so. You can use *pte* as prefix or suffix to avoid conflicts with AppSource apps or base objects.
+
+> [!NOTE]
+> If your per-tenant extension causes a conflict with a new object in the base application or an updated AppSource app, then the per-tenant extension will be required to make the change.
+
+## Examples of objects with affixes
+
+Declare your objects with a prefix or suffix as shown in the following examples.
 
 ### Table
 
 ```AL
 table 70000000 MyPrefixSalesperson
+{
+    Caption = 'Sales Person';
+}
 ```
 
 ```AL
 table 70000001 SalespersonMySuffix
+{
+    Caption = 'Sales Person';
+}
 ```
 
 ### Page
 
 ```AL
 page 70000000 MyPrefixSalesperson
+{
+    Caption = 'Sales Person';
+}
 ```
 
-```
+```AL
 page 70000001 SalespersonMySuffix
+{
+    Caption = 'Sales Person';
+}
 ```
 
-### Page extension
+### Page extension objects
 
 ```AL
 actions
@@ -48,6 +98,11 @@ actions
     addafter(ApprovalEntries)
     {
         action(MyPrefixVacation)
+        {
+            Caption = 'Vacation';
+        }
+    }
+}
 ```
 
 ```AL
@@ -56,6 +111,11 @@ actions
     addafter(ApprovalEntries)
     {
         action(VacationMySuffix)
+        {
+            Caption = 'Vacation';
+        }
+    }
+}
 ```
 
 ### Codeunit
@@ -67,24 +127,6 @@ codeunit 70000000 MyPrefixSalesperson
 ```AL
 codeunit 70000001 SalespersonMySuffix
 ```
-
-## Benefits
-
-Apps in AppSource are required to register and use a prefix or a suffix. Only in vary rare cases will apps run into naming conflicts.  
-
-Per-tenant extensions are not required to use a prefix or suffix, but we strongly recommend that you do so. You can use *pte* as prefix or suffix to avoid conflicts with AppSource apps or base objects.  
-
-> [!NOTE]
-> If your per-tenant extension causes a conflict with a new object in the base application or an updated AppSource app, then the per-tenant extension will be required to make the change.
-
-## General rules
-
-- The prefix/suffix must be at least 3 characters
-- The object/field name must start or end with the prefix/suffix
-- If a conflict arises, the one who registered the prefix/suffix always wins
-- For your own pages/tables/codeunits, you must set the prefix/suffix at the top object level
-- For pages/tables in the base application or other apps that you extend, you must set the prefix/suffix at the top object level and also at the control/field/action level
-- Use the [AppSourceCop](../developer/devenv-using-code-analysis-tool.md) tool to find all missing prefixes and/or suffixes. Configuration options for this tool can be found [here](../developer/analyzers/appsourcecop.md). The Rules section explains the different checks that the analyzer will do. For prefix/suffix detection, refer to the Configuration section. It explains how to set your prefix in the AppSourceCop.json file.
 
 ## Examples – per-tenant extension
 
@@ -101,13 +143,7 @@ Let's look at some examples:
 
 ## Examples - AppSource app
 
-Alternatively, let's say your company is Fabrikam, and you're building an app called *Rentals*. First thing, you email [d365val@microsoft.com](mailto:d365val@microsoft.com) and register *fab* as your company affix.  
-
-> [!TIP]
-> It is always a good idea to supply a few suggestions in priority order to avoid back and forth communication.
-
-> [!NOTE]  
-> For AppSource validation file names are not enforced; only object names.
+Alternatively, let's say that your company is Fabrikam, and you're building an app called *Rentals*. First thing, you email [d365val@microsoft.com](mailto:d365val@microsoft.com) and register *fab* as your company affix.  
 
 A registered affix must be 3 letters, no more, no less, and you must provide the publisher name, which you will be using in app.json when you apply for an affix.  
 
@@ -129,13 +165,7 @@ At Fabrikam, another team is building another app, so you request a special affi
 |fab rentals salesperson code|salesperson code rentals fab|
 |FabRentalsSalesPersonCode|SalesPersonCodeRentalsfab|
 
-In this scenario, your appSourceCop.json configuration will specify something like `fab-rentals` and `rentals-fab` as values for `mandatoryaffixes`, even though only *fab* was registered with Microsoft.
-
-> [!IMPORTANT]  
-> You are not required to change any already registered affixes; you can continue using these affixes. The guidelines above only apply to new registrations.
-
-> [!TIP]
-> Contact us at [d365val@microsoft.com](mailto:d365val@microsoft.com) to reserve the prefix/suffix of your choosing.
+In this scenario, your AppSourceCop.json configuration will specify `fab-rentals` and `rentals-fab` as values for `mandatoryaffixes`, even though only *fab* was registered with Microsoft.
 
 ## See Also
 

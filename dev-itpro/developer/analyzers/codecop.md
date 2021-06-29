@@ -2,7 +2,7 @@
 title: "CodeCop Analyzer"
 ms.author: solsen
 ms.custom: na
-ms.date: 01/11/2021
+ms.date: 05/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -84,7 +84,7 @@ CodeCop is an analyzer that enforces the official AL Coding Guidelines.
 |[AA0231](codecop-aa0231-donotusestrsubstnoinerrormessage.md)|StrSubstNo or string concatenation must not be used as a parameter in the Error method.|Design|Warning|
 |[AA0232](codecop-aa0232-flowfieldoftableshouldbeindexed.md)|The FlowField of a table should be indexed.|Design|Info|
 |[AA0233](codecop-aa0233-usegetfindfirstandfindlastwithoutnext.md)|Use Get(), FindFirst() and FindLast() without Next() method.|Design|Warning|
-|[AA0235](codecop-aa0235-whenusingoninstallpercompanyaddcodetocompanyinitializesubscription.md)|When using 'OnInstallPerCompany' you should also add 'Company - Initialize'::'OnCompanyInitialize' event subscriber.|Design|Info|
+|[AA0235](codecop-aa0235-whenusingoninstallpercompanyaddcodetocompanyinitializesubscription.md)|When using 'OnInstallPerCompany' you should also add 'Company-Initialize'::'OnCompanyInitialize' event subscriber.|Design|Info|
 |[AA0237](codecop-aa0237-nontemporaryvariablesmustnotbeprefixedtemp.md)|The name of non-temporary variables must not be prefixed with Temp.|Readability|Warning|
 |[AA0240](codecop-aa0240-emailandphonenomustnotbepresentinthesource.md)|Email and Phone No must not be present in any part of the source code.|Design|Warning|
 |[AA0241](codecop-aa0241-uselowercaseforlanguagekeywords.md)|Use all lowercase letters for reserved language keywords.|Readability|Warning|

@@ -1,8 +1,9 @@
 ---
 title: "SessionSettings.TimeZone Method"
+description: "Gets or sets the time zone property in a SessionSettings object."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/03/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # SessionSettings.TimeZone Method
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Gets or sets the time zone property in a SessionSettings object.
 
@@ -26,18 +27,18 @@ Gets or sets the time zone property in a SessionSettings object.
 > [!NOTE]
 > This method can be invoked using property access syntax.
 ## Parameters
-*SessionSettings*
-&emsp;Type: [SessionSettings](sessionsettings-data-type.md)
-An instance of the [SessionSettings](sessionsettings-data-type.md) data type.
+*SessionSettings*  
+&emsp;Type: [SessionSettings](sessionsettings-data-type.md)  
+An instance of the [SessionSettings](sessionsettings-data-type.md) data type.  
 
-*NewTimeZone*  
+*[Optional] NewTimeZone*  
 &emsp;Type: [String](../string/string-data-type.md)  
 Specifies the time zone property in the SessionsSettings object. The value must be a valid Windows time zone name, such as **UTC** or **Pacific Standard Time**.  
 
 
 ## Return Value
-*TimeZone*
-&emsp;Type: [String](../string/string-data-type.md)
+*[Optional] TimeZone*  
+&emsp;Type: [String](../string/string-data-type.md)  
 The time zone set in the SessionSettings object.
       
 

@@ -1,8 +1,9 @@
 ---
 title: "Session.SendTraceTag Method"
+description: "Send a trace tag to the telemetry service."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Session.SendTraceTag Method
-> **Version**: _Available from runtime version 1.0 until version 6.0 where it was deprecated for the following reason: "Use LogMessage instead."_
+> **Version**: _Available or changed with runtime version 1.0 until version 6.0 where it was deprecated for the following reason: "Use LogMessage instead."_
 
 Send a trace tag to the telemetry service.
 
@@ -44,7 +45,7 @@ The verbosity.
 &emsp;Type: [String](../string/string-data-type.md)  
 The message.
         
-*DataClassification*  
+*[Optional] DataClassification*  
 &emsp;Type: [DataClassification](../dataclassification/dataclassification-option.md)  
 Classification of data in message.   
 

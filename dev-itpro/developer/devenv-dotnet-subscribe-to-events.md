@@ -3,11 +3,11 @@ title: "Subscribing to Events in a .NET Framework Type"
 description: "How to subscribe to event in a .NET Framework Type"
 author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
@@ -66,5 +66,5 @@ pageextension 50101 CustomerListExt extends "Customer List"
 [Getting started with Microsoft .NET Interoperability from AL](devenv-get-started-call-dotnet-from-al.md)   
 [.NET Control Add-Ins](devenv-dotnet-controladdins.md)   
 [Serializing .NET Framework Types](devenv-dotnet-serializing-dotnetframework-types.md)   
-[Method Attributes](methods/devenv-method-attributes.md)  
+[Method Attributes](attributes/devenv-method-attributes.md)  
 [AL Language Extension Configuration](devenv-al-extension-configuration.md)  

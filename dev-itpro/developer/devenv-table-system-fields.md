@@ -3,11 +3,11 @@ title: "Table System fields"
 description: Description of the table System fields.
 author: jswymer
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
 --- 
@@ -104,9 +104,9 @@ At runtime, the data audit fields have the following characteristics and behavio
 
 The platform will automatically generate and assign values according to the following triggers:
 
-- After all [OnBeforeInsert](triggers/devenv-onbeforeinsert-trigger.md) and [OnBeforeModify](triggers/devenv-onbeforemodify-trigger.md) triggers are run
-- After the [OnInsert](triggers/devenv-oninsert-trigger.md) and [OnModify](triggers/devenv-onmodify-trigger.md) triggers are run
-- Before all [OnAfterInsert](triggers/devenv-onafterinsert-trigger.md) and [OnAfterModify](triggers/devenv-onaftermodify-trigger.md) triggers are run
+- After all [OnBeforeInsert](triggers-auto/tableextension/devenv-onbeforeinsert-tableextension-trigger.md) and [OnBeforeModify](triggers-auto/tableextension/devenv-onbeforemodify-tableextension-trigger.md) triggers are run
+- After the [OnInsert](triggers-auto/tableextension/devenv-oninsert-tableextension-trigger.md) and [OnModify](triggers-auto/tableextension/devenv-onmodify-tableextension-trigger.md) triggers are run
+- Before all [OnAfterInsert](triggers-auto/tableextension/devenv-onafterinsert-tableextension-trigger.md) and [OnAfterModify](triggers-auto/tableextension/devenv-onaftermodify-tableextension-trigger.md) triggers are run
 
 > [!NOTE]
 > You can assign the values, but the values written to the database are always provided by the platform.

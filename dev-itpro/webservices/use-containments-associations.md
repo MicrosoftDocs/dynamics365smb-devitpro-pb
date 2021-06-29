@@ -2,11 +2,11 @@
 title: "Using Containments and Associations"
 description: Learn how to use containments and associations with OData for creating relationships between pages. 
 ms.custom: na
-ms.date: 01/07/2021
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ---
 # Using Containments and Associations
@@ -39,20 +39,7 @@ Containments and associations are relationships between pages in [!INCLUDE[prod_
      <Property Name="ShortcutDimCode_x005B_8_x005D_" Nullable="true" Type="Edm.String"/>  
 </EntityType>  
 ```  
-  
- Elsewhere in the metadata, you would see additional **NavigationProperty** lines and a series of **Association** tags. Two of these tags have a **Multiplicity** parameter with a value of **0..1**:  
-  
-```  
-<Association Name="SalesOrder_Sell_to_Customer_No_Link">  
-     <End Type="NAV.SalesOrder" Multiplicity="*" Role="SalesOrder"/>  
-     <End Type="NAV.CustomerList" Multiplicity="0..1" Role="Sell_to_Customer_No_Link"/>  
-</Association>  
-<Association Name="SalesOrder_Bill_to_Customer_No_Link">  
-     <End Type="NAV.SalesOrder" Multiplicity="*" Role="SalesOrder"/>  
-     <End Type="NAV.CustomerList" Multiplicity="0..1" Role="Bill_to_Customer_No_Link"/>  
-</Association>  
-```  
-  
+
  These tags describe two associations from the Sales Order page to the Customer List page:  
   
 -   The Sell-to Customer No. field.  
@@ -60,28 +47,29 @@ Containments and associations are relationships between pages in [!INCLUDE[prod_
 -   The Bill-to Customer No. field.  
   
 ## Using Containments  
- When you publish a page that has a subpage, you can identify that subpage in the AtomPub document that is returned for the published page. For example, when you publish page 42, Sales Order, you can access a single record on the page using a URI such as the following:  
+ When you publish a page that has a subpage, you can identify that subpage in the metadata document that is returned for the published page. For example, when you publish page 42, Sales Order, you can access a single record on the page using a URI such as the following:  
   
 ```  
 https://localhost:7048/<server instance>/OData/Company('CRONUS-International-Ltd.')/SalesOrder(Document_Type='Order',No='101005')/  
 ```  
   
- The following line in the returned AtomPub document for the record provides link information for a containment:  
+ The following line in the returned metadata document for the record provides link information for a containment:  
   
+``` 
+      <NavigationProperty Name="SalesOrderSalesLines" Type="Collection(NAV.SalesOrderSalesLines)" ContainsTarget="true">
+          <ReferentialConstraint Property="No" ReferencedProperty="Document_No"/>
+     </NavigationProperty>
 ```  
-<link rel="https://schemas.microsoft.com/ado/2007/08/dataservices/related/SalesOrderSalesLines"   
-             type="application/atom+xml;type=feed" title="SalesOrderSalesLines"   
-             href="SalesOrder(Document_Type='Order',No='101005')/SalesOrderSalesLines" />  
   
-```  
-  
- Notice the `type=feed` in the line above. To access the subpage data feed, use a URI that incorporates the link that was identified in the previous document:  
+ To access the subpage data, use a URI that appends the name of the NavigaionalProperty to the link that was identified in the previous document:  
   
 ```  
 https://localhost:7048/<server instance>/OData/Company('CRONUS-International-Ltd.')/SalesOrder(Document_Type='Order',No='101005')/SalesOrderSalesLines  
 ```  
   
 ## Using Associations  
+@todo: Damien to provide input. But removing the formant for Odatav3
+
  Associations are possible when two published pages are linked. Here is an example:  
   
 -   Page 42,  Sales Order, has its **SourceTable** property set to table 36,  Sales Header. The source expression for the **Sell\_to\_Customer\_No** control on page 42 is field 2,  Sell-to Customer No., in table 36.  
@@ -94,26 +82,7 @@ https://localhost:7048/<server instance>/OData/Company('CRONUS-International-Ltd
   
  Because of this association, you can create OData URIs to access data on the Customer List page as you work with data on the Sales Order page.  
   
- If you publish pages 42 and 22 as web services, then you can return an AtomPub document for the Sales Order page. The following URI returns data for a single record on the page, which is order number 101005:  
-  
-```  
-https://localhost:7048/<server instance>/OData/Company('CRONUS-International-Ltd.')/SalesOrder(Document_Type='Order',No='101005')/  
-```  
-  
- A set of three tags near the top of the returned document show one containment \(**SalesOrderSalesLines**\) and two associations \(**Sell\_to\_Customer\_No** and **Bill\_to\_Customer\_No**\) on the page. Notice the `type=entry` in the following lines:  
-  
-```  
-<link rel="https://schemas.microsoft.com/ado/2007/08/dataservices/related/SalesOrderSalesLines"   
-             type="application/atom+xml;type=feed" title="SalesOrderSalesLines"   
-             href="SalesOrder(Document_Type='Order',No='101005')/SalesOrderSalesLines" />   
-<link rel="https://schemas.microsoft.com/ado/2007/08/dataservices/related/Sell_to_Customer_No_Link"   
-             type="application/atom+xml;type=entry" title="Sell_to_Customer_No_Link"   
-             href="SalesOrder(Document_Type='Order',No='101005')/Sell_to_Customer_No_Link" />   
-<link rel="https://schemas.microsoft.com/ado/2007/08/dataservices/related/Bill_to_Customer_No_Link"   
-              type="application/atom+xml;type=entry" title="Bill_to_Customer_No_Link"   
-              href="SalesOrder(Document_Type='Order',No='101005')/Bill_to_Customer_No_Link" />  
-  
-```  
+ If you publish pages 42 and 22 as web services, then OData metadata will show additional navigational properties, "Sell_to_Customer_No_Link" and "Bill_to_Customer_No_Link" for the SalesOrder entity.  
   
  This information provides the necessary information to create a URI to access a record on the Customer List page by using an association:  
   
