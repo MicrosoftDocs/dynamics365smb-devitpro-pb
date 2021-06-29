@@ -17,9 +17,6 @@ ms.author: solsen
 
 Retrieve the properties and relationships of an account object for [!INCLUDE[prod_short](../../../includes/prod_short.md)]. 
 
-> [!NOTE]  
-> Only accounts with the account type set to **Posting** and the **Direct Posting** flag set to **true** are returned.
-
 ## HTTP request
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
 ```
