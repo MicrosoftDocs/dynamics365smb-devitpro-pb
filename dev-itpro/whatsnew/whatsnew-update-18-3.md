@@ -50,6 +50,9 @@ Please note that new customers will automatically get the latest builds of Busin
 **Two more sessions have been added to the collection of Business Central Launch Event recordings**  
 We've added two more sessions to the collection of Business Central Launch Event recordings. The two sessions are on 'Docker' and 'DevOps Processes for Per Tenant Extensions'. They can be found here: [aka.ms/BCPartnerPortal](https://aka.ms/BCPartnerPortal)
 
+**New Azure data center regions**  
+
+
 **New ways of working with Business Central data in Power BI**  
 In the upcoming June update to Power BI Desktop we have included a new connector for Business Central allowing you to get data faster from Business Central to Power BI. Note the update to Power BI Desktop is scheduled later in June and you will get it automatically if you have installed Power BI Desktop from Microsoft Store. Read more about the new capabilities [here](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/enable-power-bi-connector-work-business-central-apis-instead-web-services-only). Please note that this change is for Business Central online only. 
 
