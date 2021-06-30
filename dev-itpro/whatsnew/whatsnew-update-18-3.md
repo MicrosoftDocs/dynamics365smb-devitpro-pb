@@ -18,7 +18,7 @@ Would you like to know what has changed in update 18.3? Below you'll find an ove
 
 ## Feature changes 
 - [Service-to-service authentication](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/service-service-authentication)
-- [Save report dataset to Excel from the request page]()
+- [Save report dataset to Excel from the request page](/dynamics365-business-central/save-report-dataset-excel-request-page)
 - [Dimension issues detection and repair tool](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/dimension-issues-detection-repair-tool)
 - [Export any list part to Excel]()
 - [Integration of Word templates](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/integration-word-templates-interaction-templates)
@@ -52,3 +52,4 @@ In the upcoming June update to Power BI Desktop we have included a new connector
 With the Business Central cloud migration tool, customers can migrate their data from earlier on-premises versions of the product to their online Business Central environment, running on the latest version. We've added support for customers who are running on Business Central on-premises version 14, 15, 16, or 17 to migrate their data to version 18 of Business Central online. We've implemented the necessary data upgrade logic in the cloud migration tool, so customers don't have to upgrade their older version themselves in order to migrate their data to the latest online release. 
 
 **Two more sessions have been added to the collection of Business Central Launch Event recordings**  
+We've added two more sessions to the collection of Business Central Launch Event recordings. The two sessions are on 'Docker' and 'DevOps Processes for Per Tenant Extensions'. They can be found here: [aka.ms/BCPartnerPortal](https://aka.ms/BCPartnerPortal)
