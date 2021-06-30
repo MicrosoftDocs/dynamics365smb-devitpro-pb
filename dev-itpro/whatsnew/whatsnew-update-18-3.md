@@ -18,6 +18,10 @@ Would you like to know what has changed in update 18.3? Below you'll find an ove
 
 ## Feature changes 
 - [Service-to-service authentication](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/service-service-authentication)
+- [Save report dataset to Excel from the request page]()
+- [Dimension issues detection and repair tool](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/dimension-issues-detection-repair-tool)
+- [Export any list part to Excel]()
+- [Integration of Word templates](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/integration-word-templates-interaction-templates)
 
 ## Hotfixes
 Find an overview of hotfixes in this [article](INSERT).
