@@ -32,11 +32,7 @@ Find an overview of hotfixes in this [article](INSERT).
 
 | Country| Feature change |
 |-------------|--------------|
-|United Kingdom | Configurable fraud prevention headers in making tax digital|
-|Spain | Improve multiple SII special sheme codes functionality |
-|W1 | Configurable Instrastat checklist setup |
-|Italy | Update for Certificazione Unica | 
-|Spain | Support VAT cash refunds in the SII functionality | 
+| W1 | Enhance the Update Document page for posted documents (support for Payment Reference and Payment Method)|
 
 ## Release Plan
 If you want to get a comprehensive overview of what's new and planned for Business Central online for the entire 2021 release wave 1 (release from April 2021 through September 2021), find the link to the release plan [here](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/planned-features).
