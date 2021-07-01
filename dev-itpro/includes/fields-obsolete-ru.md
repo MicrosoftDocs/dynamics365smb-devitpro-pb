@@ -6,7 +6,8 @@ ms.topic: include
 ms.date: 06/29/2021
 ms.author: andreipa
 ---
-The following fields are marked with `ObsoleteState = Pending;` in the RU version.
+
+The following fields are marked as `ObsoleteState = Pending;` in the RU version.
 
 |Table ID|Table Name|Field ID|Field Name|Comments|
 |--------|--------|--------|--------|--------|
