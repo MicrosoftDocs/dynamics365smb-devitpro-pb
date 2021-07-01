@@ -6,8 +6,8 @@ ms.topic: include
 ms.date: 05/20/2021
 ms.author: andreipa
 ---
-<!--Currently, no fields are marked as ObsoleteState:Pending in the RU version.-->
-The following fields are marked as ObsoleteState:Pending in the RU version.
+<!--Currently, no fields are marked as `ObsoleteState = Pending;` in the RU version.-->
+The following fields are marked as `ObsoleteState = Pending;` in the RU version.
 
 |Table ID|Table Name|Field ID|Field Name|Comments|
 |--------|--------|--------|--------|--------|
