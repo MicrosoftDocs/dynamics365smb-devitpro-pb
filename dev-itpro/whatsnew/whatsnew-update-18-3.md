@@ -44,11 +44,11 @@ Please note that new customers will automatically get the latest builds of Busin
 
 ## Good to know
 
-**Two more sessions have been added to the collection of Business Central Launch Event recordings**  
-We've added two more sessions to the collection of Business Central Launch Event recordings. The two sessions are on 'Docker' and 'DevOps Processes for Per Tenant Extensions'. They can be found here: [aka.ms/BCPartnerPortal](https://aka.ms/BCPartnerPortal)
+**Two new sessions added to the collection of Business Central Launch Event 2021rw1 recordings**  
+We've added two new sessions to the collection of Business Central Launch Event recordings. The two sessions are on 'Docker' and 'DevOps Processes for Per Tenant Extensions'. Freddy Kristiansen is the speaker on both sessions. They can be found [here](https://aka.ms/BCPartnerPortal).
 
-**New Azure data center regions for Switzerland and Norway**  
-With the Business Central online service, we strive to provide the best experience and performance for our customers. Therefore, we're moving the environments running on the Swiss version of Business Central to the Switzerland North Azure region and the environments running on the Norwegian version of Business Central to the Norway East Azure region. 
+**Go Local: New Azure data center regions for Switzerland and Norway**  
+With the Business Central online service, we strive to provide the best experience and performance for our customers. Therefore, we're moving the environments running on the Swiss version of Business Central to the Switzerland North Azure region and the environments running on the Norwegian version of Business Central to the Norway East Azure region. With 2021 release wave 1 minor update 18.3, all newly created Business Central online environments will be created in the local Azure regions and we will start moving existing customers in the weeks after release of minor update 18.3.
 
 **New ways of working with Business Central data in Power BI**  
 In the upcoming June update to Power BI Desktop we have included a new connector for Business Central allowing you to get data faster from Business Central to Power BI. Note the update to Power BI Desktop is scheduled later in June and you will get it automatically if you have installed Power BI Desktop from Microsoft Store. Read more about the new capabilities [here](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/enable-power-bi-connector-work-business-central-apis-instead-web-services-only). Please note that this change is for Business Central online only. 
