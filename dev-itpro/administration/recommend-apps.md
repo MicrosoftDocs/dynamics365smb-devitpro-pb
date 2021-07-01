@@ -25,7 +25,7 @@ Building collections requires some development. To make that easier, [!INCLUDE[p
 * **Recommended Apps** table
 * **Recommend Apps** codeunit
 
-You can use the pages that are provided, or create your own. For more information, see [Pages Overview](../developer/devenv-pages-overview.md). However, you must use the **Recommend Apps** codeunit to build collections. The following table provides an overview of the methods in the codeunit. You can copy the information for the parameters from the listing for the app on AppSource.
+You must use the **Recommend Apps** codeunit to build collections. The following table provides an overview of the methods in the codeunit. You can copy the information for the parameters from the listing for the app on AppSource.
 
 |Method  |Description  |
 |---------|---------|
@@ -37,7 +37,7 @@ You can use the pages that are provided, or create your own. For more informatio
 |**DeleteAllApps**|Delete all apps from the collection.|
 |**GetAppURL**|Get the URL for a specific app. You provide the app ID.|
 
-## Providing the Collection to Customers 
+## Providing the collection to customers 
 When your collection is ready you can deploy it to customer tenants. For more information, see [Deploying a Tenant Customization](../developer/devenv-deploy-tenant-customization). Afterward, the **Recommended Apps** page will display the apps and your customer can install them. Customers can choose the app in the list to learn more about it, and the details include a link to install the app from AppSource.
 
 ## See Also
