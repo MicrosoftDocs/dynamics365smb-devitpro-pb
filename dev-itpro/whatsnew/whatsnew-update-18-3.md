@@ -20,11 +20,13 @@ Would you like to know what has changed in update 18.3? Below you'll find an ove
 - [Service-to-service authentication](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/service-service-authentication)
 - [Save report dataset to Excel from the request page](/dynamics365-business-central/save-report-dataset-excel-request-page)
 - [Dimension issues detection and repair tool](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/dimension-issues-detection-repair-tool)
-- [Export any list part to Excel]()
+- [Upgrade to certificate-based Service to Service authentication for Dataverse and Dynamics 365 Integration](https://go.microsoft.com/fwlink/?linkid=2167233) 
 - [Integration of Word templates](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/integration-word-templates-interaction-templates)
 - [Get report (raw data) into Excel from the request page](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/get-report-raw-data-excel-request-page)
 - [Integration of Word templates with interaction templates](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/integration-word-templates-interaction-templates)
 - [New countries added to the list of supported countries](https://aka.ms/BCcountries)
+- [Business Central Database capacity changes (as of July 1, 2021)](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-capacity#storage)
+
 
 ## Hotfixes
 Find an overview of hotfixes in this [article](INSERT).
@@ -44,14 +46,20 @@ Please note that new customers will automatically get the latest builds of Busin
 
 ## Good to know
 
+**Export any List to Excel**  
+In this version an “Open in Excel” action has been added to list parts under the Manage group in action bar. This is only present if the user or admin enabled the feature via Feature Management, so please make sure you do that. Read more [here](https://aka.ms/BCreleaseplan).
+
 **Two new sessions added to the collection of Business Central Launch Event 2021rw1 recordings**  
 We've added two new sessions to the collection of Business Central Launch Event recordings. The two sessions are on 'Docker' and 'DevOps Processes for Per Tenant Extensions' with Freddy Kristiansen as the speaker on both sessions. They can be found [here](https://aka.ms/BCPartnerPortal).
 
 **Go Local: New Azure data center regions for Switzerland and Norway**  
 With the Business Central online service, we strive to provide the best experience and performance for our customers. Therefore, we're moving the environments running on the Swiss version of Business Central to the Switzerland North Azure region and the environments running on the Norwegian version of Business Central to the Norway East Azure region. With 2021 release wave 1 minor update 18.3, all newly created Business Central online environments will be created in the local Azure regions and we will start moving existing customers in the weeks after release of minor update 18.3. Learn more about supported countries and Azure regions [here](https://aka.ms/BCCountries). 
 
-**Export any List to Excel**  
-In this version an “Open in Excel” action has been added to list parts under the Manage group in action bar. This is only present if the user or admin enabled the feature via Feature Management, so please make sure you do that. Read more [here](https://aka.ms/BCreleaseplan).
 
-**Support for migrating data from earlier on-premises versions of Business Central to 2021 release wave 1 (v.18)**  
-With the Business Central cloud migration tool, customers can migrate their data from earlier on-premises versions of the product to their online Business Central environment, running on the latest version. We've added support for customers who are running on Business Central on-premises version 14, 15, 16, or 17 to migrate their data to version 18 of Business Central online. We've implemented the necessary data upgrade logic in the cloud migration tool, so customers don't have to upgrade their older version themselves in order to migrate their data to the latest online release. 
+**Users see notification when they open the obsolete reports 204, 205, 206, & 207**  
+
+
+**Action needed: Client secret-based service to service authentication deprecation for Microsoft hosted tenants integrating to Dataverse**  
+To ensure no disruptions in integration between Business Central and Dataverse you must upgrade your Business Central connection to Dataverse to certificate-based authentication. 
+Although change will happen in March 2022, we strongly recommend you perform steps below as soon as possible.
+
