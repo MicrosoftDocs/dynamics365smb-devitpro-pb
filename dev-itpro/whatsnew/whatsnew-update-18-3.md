@@ -24,6 +24,7 @@ Would you like to know what has changed in update 18.3? Below you'll find an ove
 - [Integration of Word templates](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/integration-word-templates-interaction-templates)
 - [Get report (raw data) into Excel from the request page](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/get-report-raw-data-excel-request-page)
 - [Integration of Word templates with interaction templates](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/integration-word-templates-interaction-templates)
+- [New countries added to the list of supported countries](https://aka.ms/BCcountries)
 
 ## Hotfixes
 Find an overview of hotfixes in this [article](INSERT).
