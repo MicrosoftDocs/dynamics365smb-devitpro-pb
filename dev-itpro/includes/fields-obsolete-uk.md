@@ -6,7 +6,7 @@ ms.topic: include
 ms.date: 04/01/2021
 ms.author: edupont
 ---
-The following fields are marked as ObsoleteState:Pending in the UK version.
+The following fields are marked as `ObsoleteState = Pending;` in the UK version.
 
 |Table ID|Field ID|Comments|
 |--------|--------|--------|
@@ -21,7 +21,7 @@ The following fields are marked as ObsoleteState:Pending in the UK version.
 |5107|10501|Will be removed in a later release.|
 |5109|10501|Will be removed in a later release.|
 
-The following tables are marked as ObsoleteState:Pending in the UK version.
+The following tables are marked as `ObsoleteState = Pending;` in the UK version.
 
 |Table ID|Table Name|Field ID|Field Name|Comments|
 |--------|--------|--------|--------|--------|
