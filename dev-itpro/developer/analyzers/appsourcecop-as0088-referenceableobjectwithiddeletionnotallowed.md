@@ -36,7 +36,7 @@ codeunit 50120 Foo_MyCodeunit
     end;
 }
 ```
-In version 2.0 of the extension, codeunit 50120 has been deleted. This will trigger AS0088.
+In version 2.0 of the extension, codeunit 50120 has been deleted. This will trigger rule AS0088.
 
 ### Example 2: Deleting an obsolete pending Codeunit
 Version 2.0 of the extension:
@@ -59,7 +59,7 @@ codeunit 50121 Foo_MyNewCodeunit
     end;
 }
 ```
-In version 3.0 of the extension, codeunit 50120 has been deleted. This is okay, because codeunit 50120 had previously been marked with `ObsoleteState = Pending` and informing developers to use "50121 Foo_MyNewCodeunit" instead.
+In version 3.0 of the extension, codeunit 50120 has been deleted. This is okay, because codeunit 50120 previously had been marked with `ObsoleteState = Pending` informing developers to use "50121 Foo_MyNewCodeunit" instead.
 
 
 ## See Also  
