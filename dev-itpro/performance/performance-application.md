@@ -104,6 +104,7 @@ Finally, make sure that you don't repeat these performance mistakes that we have
 - Don't adjust item costs automatically if you have many item entries. Run in the background instead.  
 - Don't postpone setting up global dimensions, because it can be a heavy operation when you have much data. Set up correct global dimensions to avoid changing them later on.
 - Don't run the **Copy company** operation during business hours.
+- Don't apply large configuration packages during business hours. See also [Prepare a Configuration Package](/dynamics365/business-central/admin-how-to-prepare-a-configuration-package).
 
 ## See Also
 
