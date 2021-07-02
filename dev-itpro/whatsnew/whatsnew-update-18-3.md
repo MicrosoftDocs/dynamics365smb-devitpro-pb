@@ -19,11 +19,10 @@ Would you like to know what has changed in update 18.3? Below you'll find an ove
 ## Feature changes 
 - [Export any List to Excel](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/better-365) 
 - [Service-to-service authentication](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/service-service-authentication)
-- [Save report dataset to Excel from the request page](/dynamics365-business-central/save-report-dataset-excel-request-page)
 - [Dimension issues detection and repair tool](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/dimension-issues-detection-repair-tool)
 - [Integration of Word templates](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/integration-word-templates-interaction-templates)
 - [Data administration and cleanup tasks page](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/data-clean-up-tasks-page)
-- [Get report (raw data) into Excel from the request page](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/get-report-raw-data-excel-request-page)
+- Save report dataset to Excel, targeting end users [Get report (raw data) into Excel from the request page](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/get-report-raw-data-excel-request-page) and developers [Save report dataset to Excel from request page](/dynamics365-business-central/save-report-dataset-excel-request-page)
 - [Integration of Word templates with interaction templates](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/integration-word-templates-interaction-templates)
 - [New countries added to the list of supported countries](https://aka.ms/BCcountries)
 - [Business Central Database capacity changes (as of July 1, 2021)](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-capacity#storage)
@@ -62,7 +61,7 @@ Before 2021 release wave 1, we [announced](/dynamics365/business-central/dev-itp
  
 If you still use one or more of the deprecated reports, now is the time to start using the recommended reports, alternatively you can clone the deprecated reports to a custom range, and switch to the cloned reports. 
 
-To check if your company uses old reports, search for **Report Selection – Sales**, and check which reports are configured to be used for *Quote*, *Order*, *Quote*, and *Credit Memo*. Remember to inspect the content of the **Custom Report Selection** table (object ID 9657), to detect if these reports are used for specific customers. For more information, see [View a table object directly from the client](/dynamics365/business-central/dev-itpro/developer/devenv-view-table-data#view-a-table-object-directly-from-the-client). Once you know which customers use these reports, you can replace them on the Document Layout page for each affected customer, or you can use configuration packages to update in bulk. 
+To check if your company uses old reports, search for **Report Selection – Sales**, and check which reports are configured to be used for *Quote*, *Order*, *Quote*, and *Credit Memo*. Remember to inspect the content of the **Custom Report Selection** table (object ID 9657), to detect if these reports are used for specific customers. For more information, see: [View a table object directly from the client](/dynamics365/business-central/dev-itpro/developer/devenv-view-table-data#view-a-table-object-directly-from-the-client). Once you know which customers use these reports, you can replace them on the Document Layout page for each affected customer, or you can use configuration packages to update in bulk. 
 
 **Action needed: Client secret-based service to service authentication deprecation for Microsoft hosted tenants integrating to Dataverse**  
 To ensure no disruptions in integration between Business Central and Dataverse you must upgrade your Business Central connection to Dataverse to certificate-based authentication. 
