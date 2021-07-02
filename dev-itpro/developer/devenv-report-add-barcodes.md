@@ -89,12 +89,12 @@ report 50100 ItemBarcodeReport
             var
 
                 BarcodeSymbology: Enum "Barcode Symbology";
-                BarcodeFontProvider: Interface "Barcode Font Provider";
+                IBarcodeFontProvider: Interface "Barcode Font Provider";
 
             begin
-                BarcodeFontProvider := Enum::"Barcode Font Provider"::IDAutomation1D;
+                IBarcodeFontProvider := Enum::"Barcode Font Provider"::IDAutomation1D;
                 BarcodeSymbology := Enum::"Barcode Symbology"::"EAN-13";
-                EncodedText := BarcodeFontProvider.EncodeFont(GTIN, BarcodeSymbology);
+                EncodedText := IBarcodeFontProvider.EncodeFont(GTIN, BarcodeSymbology);
             end;
         }
     }
