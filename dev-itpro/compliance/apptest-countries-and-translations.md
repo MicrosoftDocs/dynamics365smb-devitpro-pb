@@ -35,7 +35,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Croatia|Partner|Available|HR|West Europe, Netherlands|
 |Czechia|Microsoft|Available|CZ|West Europe, Netherlands|
 |Denmark|Microsoft|Available|DK|North Europe, Ireland|
-|Egypt|Partner|Available|EG|UAE North|
+|Egypt|Partner|Available|EG|South Africa North|
 |Estonia|Partner|Available|EE|North Europe, Ireland|
 |Faroe Islands (Denmark)|Microsoft|Available|DK|North Europe, Ireland|
 |Finland|Microsoft|Available|FI|North Europe, Ireland|
