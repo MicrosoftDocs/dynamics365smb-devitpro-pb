@@ -22,11 +22,11 @@ Would you like to know what has changed in update 18.3? Below you'll find an ove
 - [Dimension issues detection and repair tool](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/dimension-issues-detection-repair-tool)
 - [Integration of Word templates](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/integration-word-templates-interaction-templates)
 - [Data administration and cleanup tasks page](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/data-clean-up-tasks-page)
-- Save report dataset to Excel, targeting end users [Get report (raw data) into Excel from the request page](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/get-report-raw-data-excel-request-page) and developers [Save report dataset to Excel from request page](/dynamics365-business-central/save-report-dataset-excel-request-page)
 - [Integration of Word templates with interaction templates](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/integration-word-templates-interaction-templates)
 - [New countries added to the list of supported countries](https://aka.ms/BCcountries)
 - [Business Central Database capacity changes (as of July 1, 2021)](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-capacity#storage)
 - [Upgrade to certificate-based Service-to-service (S2S) authentication for Dataverse and Dynamics 365 Integration](https://go.microsoft.com/fwlink/?linkid=2167233) 
+- [Get report (raw data) into Excel from request page (targeting end users)](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/get-report-raw-data-excel-request-page) and [Save report dataset to excel from the request page (targeting developers)](/dynamics365-business-central/save-report-dataset-excel-request-page) 
 
 
 ## Hotfixes
