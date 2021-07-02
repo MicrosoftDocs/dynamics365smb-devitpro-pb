@@ -20,7 +20,7 @@ Would you like to know what has changed in update 18.3? Below you'll find an ove
 - [Service-to-service authentication](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/service-service-authentication)
 - [Save report dataset to Excel from the request page](/dynamics365-business-central/save-report-dataset-excel-request-page)
 - [Dimension issues detection and repair tool](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/dimension-issues-detection-repair-tool)
-- [Upgrade to certificate-based Service to Service authentication for Dataverse and Dynamics 365 Integration](https://go.microsoft.com/fwlink/?linkid=2167233) 
+- [Upgrade to certificate-based Service to Service (S2S) authentication for Dataverse and Dynamics 365 Integration](https://go.microsoft.com/fwlink/?linkid=2167233) 
 - [Integration of Word templates](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/integration-word-templates-interaction-templates)
 - [Get report (raw data) into Excel from the request page](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/get-report-raw-data-excel-request-page)
 - [Integration of Word templates with interaction templates](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/integration-word-templates-interaction-templates)
