@@ -209,8 +209,8 @@ Furthermore:
 ### Example
 
 ```
-TempCustomer: Record Customer temporary;
-Vendor: Record Vendor; 
+tempCustomer: Record Customer temporary;
+vendor: Record Vendor; 
 ```
 
 ## Method declaration 
@@ -255,7 +255,7 @@ When declaring a variable or a parameter, the name of that variable or parameter
 
 ```
 var
-    Number: Integer;
+    number: Integer;
 
 local procedure MyProcedure(a: Integer; b: Integer): Integer 
 ```
