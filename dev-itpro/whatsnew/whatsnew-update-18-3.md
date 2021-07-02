@@ -26,6 +26,7 @@ Would you like to know what has changed in update 18.3? Below you'll find an ove
 - [Integration of Word templates with interaction templates](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/integration-word-templates-interaction-templates)
 - [New countries added to the list of supported countries](https://aka.ms/BCcountries)
 - [Business Central Database capacity changes (as of July 1, 2021)](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-capacity#storage)
+- [Export any List to Excel](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/better-365) 
 
 
 ## Hotfixes
