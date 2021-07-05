@@ -3,7 +3,7 @@ author: jswymer
 title: "Building your first sample extension that uses new objects and extension objects"
 description: "Includes code for an example extension, complete with new objects, extension objects, and install and upgrade code."
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 07/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -220,7 +220,7 @@ After you have created the objects, update the **startupObjectId** in the `launc
 ## Designer
 
 [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] Designer works in the browser and allows modifying the current page. It enables users to add existing table fields, move fields around, or remove fields from the page. Users can make changes to display the information they need, where they need it by using drag-and-drop components.  
-To show how the Designer changes the design of a page, you begin by adding two new fields to the **Reward** table. These fields will be used later on to exemplify the Designer's properties. 
+To show how Designer changes the design of a page, you begin by adding one field to the **Reward** table. This field will be used later to exemplify the Designer's properties. 
 
 ```AL
 field(4;"Minimum Purchase";Decimal)
@@ -228,50 +228,9 @@ field(4;"Minimum Purchase";Decimal)
     MinValue = 0;
     DecimalPlaces = 2;
 }
-
-field(5;"Last Modified Date";Date)
-{
-    // The "Editable" property sets a value that indicates whether the field can be edited 
-    // through the UI.
-    Editable = false;
-}
-
-```
-The **Last Modified Date** field requires constant changes to remain accurate. To keep it updated, triggers will be used. Triggers are predefined methods that are executed when certain actions happen. They are added by default when you use the `ttable` template, but you can also use the `ttriger` snippet to add them manually. Now you can add code to the triggers.  
-
-```AL
-    // "OnInsert" trigger executes when a new record is inserted into the table.
-    trigger OnInsert();
-    begin
-        SetLastModifiedDate();
-    end;
-
-    // "OnModify" trigger executes when a record in the table is modified.
-    trigger OnModify();
-    begin
-        SetLastModifiedDate();
-    end;
-
-    // "OnDelete" trigger executes when a record in the table is deleted.
-    trigger OnDelete();
-    begin
-    end;
-
-    // "OnRename" trigger executes when a record in a primary key field is modified.
-    trigger OnRename();
-    begin
-        SetLastModifiedDate();
-    end;
-
-    // On the current record, the value of the "Last Modified Date" field to the current 
-    // date.
-    local procedure SetLastModifiedDate();
-    begin
-        Rec."Last Modified Date" := Today();
-    end;
 ```
 
-From this point, changes to the **Reward Card** page can be done either manually by adding the code below in Visual Studio Code or by using the Designer's functions to add the same fields. Both ways lead to the same results, but the Designer speeds up the process. 
+From this point, changes to the **Reward Card** page can be done either manually by adding the code below in Visual Studio Code or by using Designer's functions to add the same field. Both ways lead to the same results, but using Designer speeds up the process. 
 
 
 ```AL
@@ -279,12 +238,6 @@ field("Minimum Purchase";"Minimum Purchase")
 {
     ApplicationArea = All;
 }
-
-field("Last Modified Date";"Last Modified Date")
-{
-    ApplicationArea = All;
-}
-
 ```
 
 Using the **F6** key shortcut in Visual Studio Code launches the browser and enters Designer. You can also use Designer from the [!INCLUDE[prod_short](includes/prod_short.md)] client, by selecting ![Settings icon](media/settings_icon_small.png) **Designer**.
@@ -297,7 +250,7 @@ To add the same fields and customize the **Reward Card** page, follow the next s
 - Navigate to the **Reward Card** page by choosing **+ new**.  
 - Enter Designer mode from the UI and select **More** from the Designer bar. 
 - Select **Field** from the Designer bar to show the list of available fields. 
-- Drag the **Minimum Purchase** and **Last Modified Date** fields from the list onto the page in the **Reward group**. 
+- Drag the **Minimum Purchase** field from the list onto the page in the **Reward group**. 
 - Choose the **Reward** in the group caption to enable the value to be edited. Change the caption to **Info** and press **Enter**.
 
 After making these adjustments, finish up your design by choosing **Stop Designing**, which allows you to name the extension with an option to download code, and save the extension for the tenant. If you choose not to download the code at the end, you can still pull the changes via the **Alt+F6** key shortcut from Visual Studio Code. You can also uninstall the extension by opening the **Extension Management** page.  
@@ -306,6 +259,7 @@ For more information about Designer, see [Designer](devenv-inclient-designer.md)
 ## Customer table extension object
 
 The **Customer** table, like many other tables, is part of the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] service and it cannot be modified directly by developers. To add additional fields or to change properties on this table, developers must create a new type of object, a table extension.
+
 The following code creates a table extension for the **Customer** table and adds the `Reward ID` field. 
 
 > [!TIP]
