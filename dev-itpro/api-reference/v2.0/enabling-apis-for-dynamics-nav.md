@@ -14,6 +14,8 @@ ms.author: solsen
 
 # Enabling the APIs for Dynamics 365 Business Central
 
+[!INCLUDE[on_prem_only_v2](../../includes/on_prem_only_v2.md)]
+
 [!INCLUDE[prod_short](../../includes/prod_short.md)] exposes an API that makes it possible to integrate with other services. To enable integration with these APIs, you must go through a few steps to enable the access for [!INCLUDE[prod_short](../../includes/prod_short.md)].
 
 ## Enable access to the APIs
