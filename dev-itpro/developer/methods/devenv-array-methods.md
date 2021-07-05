@@ -73,7 +73,7 @@ ItemRecArrayTemp: Array[2] of Record Item temporary;
 
 In this case, each element of the array will contain a temporary Item record referencing the same temporary table, meaning that an insert into `ItemRecArrayTemp[0]` is also reflected in `ItemRecArrayTemp[1]`.
 
-This is the same behavior as using [Copy(RecordRef [, Boolean])](recordref-copy-recordref-boolean-method.md) with the `ShareTable` parameter set to `true`.
+This is the same behavior as using [Copy(RecordRef [, Boolean])](../methods-auto/recordref/recordref-copy-recordref-boolean-method.md) with the `ShareTable` parameter set to `true`.
 
 ## See Also  
 
