@@ -78,8 +78,8 @@ codeunit 50101 MySubscribers
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"MyPublishers", 'OnAddressLineChanged', '', true, true)]
     procedure CheckAddressLine(line : Text[100]);
     begin
-        if (STRPOS(line, '+') > 0) then begin
-            MESSAGE('Can''t use a plus sign (+) in the address [' + line + ']');
+        if (StrPos(line, '+') > 0) then begin
+            Message('Can''t use a plus sign (+) in the address [' + line + ']');
         end;
     end;
 }
@@ -89,6 +89,7 @@ codeunit 50101 MySubscribers
 > This example is part of a larger, simple scenario where when users change the address of a customer on the page **21 Customer Card**, you want to check that the address does not include a plus sign (+). If it does, you want to return a message to the user. For a description of this scenario and all the code involved, see [Event Example](devenv-events-example.md).
 
 ## Example 2
+
 This example achieves the same as example 1, except it subscribes to the page trigger event `OnBeforeValidateEvent` on the `Address` field instead. By using the page trigger, you avoid creating an event publisher and adding code to raise the event. The event is raised automatically by the system.
 
 ```AL
@@ -99,19 +100,18 @@ codeunit 50101 MySubscribers
     [EventSubscriber(ObjectType::Page, Page::"Customer Card", 'OnBeforeValidateEvent', 'Address', true, true)]
     local procedure CheckAddressLine(var Rec : Record Customer)
     begin
-        if (STRPOS(Rec.Address, '+') > 0) then begin
-            MESSAGE('Can''t use a plus sign (+) in the address [%1]', Rec.Address);
+        if (StrPos(Rec.Address, '+') > 0) then begin
+            Message('Can''t use a plus sign (+) in the address [%1]', Rec.Address);
         end;
     end;
 }
 ```
 
-## See Also  
- [Publishing Events](devenv-publishing-events.md)   
- [Raising Events](devenv-raising-events.md)   
- [Event Types](devenv-event-types.md)   
- [Events in AL](devenv-events-in-al.md)  
- [EventSubscriberInstance Property](properties/devenv-eventsubscriberinstance-property.md)  
- [EventSubscriber Attribute](methods/devenv-eventsubscriber-attribute.md)  
+## See Also
 
-
+[Publishing Events](devenv-publishing-events.md)   
+[Raising Events](devenv-raising-events.md)   
+[Event Types](devenv-event-types.md)   
+[Events in AL](devenv-events-in-al.md)  
+[EventSubscriberInstance Property](properties/devenv-eventsubscriberinstance-property.md)  
+[EventSubscriber Attribute](attributes/devenv-eventsubscriber-attribute.md)  
