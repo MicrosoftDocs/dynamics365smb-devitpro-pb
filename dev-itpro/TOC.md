@@ -200,6 +200,7 @@
 ### [Get Users Started with the Checklist](administration/onboarding-checklist.md)
 ### [Teaching tips and in-app tours for onboarding users](administration/onboarding-teaching-tips-tours.md)
 ### [Set Up Business Central](/dynamics365/business-central/setup?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### [Recommend Apps from AppSource](administration/recommend-apps.md)
 ### [Deploying a Tenant Customization](developer/devenv-deploy-tenant-customization.md)
 ### [Technical Support of Business Central](technical-support.md)
 <!--migrate to BC online-->
