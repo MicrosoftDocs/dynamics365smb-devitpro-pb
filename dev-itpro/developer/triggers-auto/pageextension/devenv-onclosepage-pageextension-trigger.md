@@ -1,9 +1,9 @@
 ---
 title: "OnClosePage (Page Extension) Trigger"
-description: "Runs as a page closes after the OnQueryClosePage trigger is run."
+description: "Runs when a page closes after the OnQueryClosePage trigger is run."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/27/2021
+ms.date: 07/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,7 +18,7 @@ author: SusanneWindfeldPedersen
 # OnClosePage (Page Extension) Trigger
 > **Version**: _Available or changed with runtime version 1.0._
 
-Runs as a page closes after the OnQueryClosePage trigger is run.
+Runs when a page closes after the OnQueryClosePage trigger is run.
 
 
 ## Syntax

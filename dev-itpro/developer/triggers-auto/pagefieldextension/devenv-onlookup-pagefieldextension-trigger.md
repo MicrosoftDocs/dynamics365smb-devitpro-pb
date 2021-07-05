@@ -3,7 +3,7 @@ title: "OnLookup (Page Field Extension) Trigger"
 description: "Runs in place of the normal lookup features for the current page."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/27/2021
+ms.date: 07/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -33,7 +33,7 @@ end;
 
 *Text*  
 &emsp;Type: [Text](../../methods-auto/text/text-data-type.md)  
-Text string entered into the text box and used as the lookup value.  
+Specifies a text string entered into the text box and used as the lookup value.  
 
 
 ## Return Value

@@ -3,7 +3,7 @@ title: "OnControlAddIn (Page Field) Trigger"
 description: "Executed when a control add-in on the client sends event information to the server-side business logic."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/27/2021
+ms.date: 07/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -33,11 +33,11 @@ end;
 
 *Index*  
 &emsp;Type: [Integer](../../methods-auto/integer/integer-data-type.md)  
-An integer identifier that a control add-in sends with the event.  
+Specifies an integer identifier that a control add-in sends with the event.  
 
 *Data*  
 &emsp;Type: [Text](../../methods-auto/text/text-data-type.md)  
-A text string that a control add-in sends with an event.  
+Specifies a text string that a control add-in sends with an event.  
 
 
 
