@@ -212,14 +212,15 @@ page 50102 "Reward List"
 }
 ```
 
-After you have created the objects, update the **startupObjectId** in the `launch.json` file to 50102, the ID of the **Reward List** page and select the **Ctrl+F5** shortcut to see the new page in your sandbox environment. You will be asked to sign in to your [!INCLUDE [prod_short](includes/prod_short.md)], if you have not already done so.  
+After you have created the objects, update the `startupObjectId` in the `launch.json` file to `50102`, which is the ID of the **Reward List** page and select the **Ctrl+F5** shortcut to see the new page in your sandbox environment. You will be asked to sign in to your [!INCLUDE [prod_short](includes/prod_short.md)], if you have not already done so.  
 
 > [!TIP]  
 > Information about your sandbox environment and other environments is stored as configurations in the `launch.json` file. For more information, see [JSON Files](devenv-json-files.md).  
 
 ## Designer
 
-[!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] Designer works in the browser and allows modifying the current page. It enables users to add existing table fields, move fields around, or remove fields from the page. Users can make changes to display the information they need, where they need it by using drag-and-drop components.  
+[!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] Designer works in the browser and allows modifying the current page. It enables users to add existing table fields, move fields around, or remove fields from the page. Users can make changes to display the information they need, where they need it by using drag-and-drop components. 
+ 
 To show how Designer changes the design of a page, you begin by adding one field to the **Reward** table. This field will be used later to exemplify the Designer's properties. 
 
 ```AL
