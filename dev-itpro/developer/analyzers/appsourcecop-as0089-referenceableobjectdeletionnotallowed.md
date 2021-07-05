@@ -25,7 +25,7 @@ Objects that can be referenced and which have been published must not be deleted
 Reverting the change will fix this diagnostic. If deleting or renaming the object is required, the recommended approach is to mark it first as [ObsoleteState Pending](../properties/devenv-obsoletestate-property.md); if you are performing a rename, this is where you would introduce a new object with the new name. You can then mark the old object as [ObsoleteState Removed](../properties/devenv-obsoletestate-property.md) in a later version.
 
 > [!NOTE]  
-> This rule treats renaming and deleting as the same thing. AppSourceCop cannot track renaming of objects without an ID.
+> This rule treats renaming and deleting as if it was the same action. The AppSourceCop analyzer cannot track renaming of objects without an ID.
 
 ## Code Examples
 ### Example 1: Deleting a Page Customization triggers the rule
