@@ -16,8 +16,7 @@ author: EmmaNielsson
 
 Would you like to know what has changed in update 18.3? Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update. In addition, we have gathered some good to know information and links, you might find interesting.
 
-## Feature changes 
-- [Export any List to Excel](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/better-365) 
+## Feature changes  
 - [Service-to-service authentication](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/service-service-authentication)
 - [Dimension issues detection and repair tool](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/dimension-issues-detection-repair-tool)
 - [Integration of Word templates](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/integration-word-templates-interaction-templates)
