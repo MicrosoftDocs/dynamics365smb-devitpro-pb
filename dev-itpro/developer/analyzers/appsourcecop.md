@@ -1,8 +1,9 @@
 ---
 title: "AppSourceCop Analyzer"
+description: "AppSourceCop is an analyzer that enforces rules that must be respected by extensions meant to be published to Microsoft AppSource."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/03/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -102,7 +103,7 @@ AppSourceCop is an analyzer that enforces rules that must be respected by extens
 |[AS0089](appsourcecop-as0089-referenceableobjectdeletionnotallowed.md)|Objects that can be referenced and which have been published must not be deleted.|Upgrade|Error|
 |[AS0090](appsourcecop-as0090-referenceableobjectrenamenotallowed.md)|Objects that can be referenced and which have been published must not be renamed.|Upgrade|Error|
 |[AS0091](appsourcecop-as0091-previousversiondependencynotfound.md)|One or more dependencies of the previous version of the extension could not be found.|Upgrade|Error|
-|[AS0092](appsourcecop-as0092-applicationinsightskeymustbeused.md)|The 'applicationInsightsKey' property must specify the AAD instrumentation key.|Configuration|Warning|
+|[AS0092](appsourcecop-as0092-applicationmanifestmustspecifyapplicationinsightsresource.md)|The app.json file must specify an Azure Application Insights resource.|Configuration|Warning|
 |[AS0093](appsourcecop-as0093-entitlementobjectinappsourcenotallowed.md)|Entitlements cannot be defined in an extension.|Configuration|Error|
 |[AS0094](appsourcecop-as0094-permissionsetsshouldnotbeinxml.md)|Permission Sets should not be defined in XML files.|Configuration|Warning|
 

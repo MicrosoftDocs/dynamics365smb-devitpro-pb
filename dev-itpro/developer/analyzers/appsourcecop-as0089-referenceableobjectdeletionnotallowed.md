@@ -25,7 +25,7 @@ Objects that can be referenced and which have been published must not be deleted
 Reverting the change will fix this diagnostic. If deleting or renaming the object is required, the recommended approach is to mark it first as [ObsoleteState Pending](../properties/devenv-obsoletestate-property.md); if you are performing a rename, this is where you would introduce a new object with the new name. You can then mark the old object as [ObsoleteState Removed](../properties/devenv-obsoletestate-property.md) in a later version.
 
 > [!NOTE]  
-> This rule evaluates renaming and deleting as the same thing. AppSource cannot track renaming of objects without an ID.
+> This rule treats renaming and deleting as if it was the same action. The AppSourceCop analyzer cannot track renaming of objects without an ID.
 
 ## Code Examples
 ### Example 1: Deleting a Page Customization triggers the rule
@@ -44,56 +44,38 @@ pagecustomization Foo_MyPageCustomization customizes "Customer List"
 ```
 In version 2.0 of the extension, `Foo_MyPageCustomization` has been deleted. This will trigger rule AS0089.
 
-### Example 2: Renaming a Page Customization triggers the rule
+### Example 2: Renaming an Interface triggers the rule
 Version 1.0 of the extension:
 ```AL
-pagecustomization Foo_MyPageCustomization customizes "Customer List"
+interface FOO_IExampleInterface
 {
-    layout
-    {
-        modify(Name)
-        {
-            Visible = false;
-        }
-    }
+    procedure ExampleProcedure() : Text;
 }
 ```
 In version 2.0 of the extension: 
 ```AL
-pagecustomization Foo_MyRenamedPageCustomization customizes "Customer List"
+interface FOO_IMyInterface
 {
-    layout
-    {
-        modify(Name)
-        {
-            Visible = false;
-        }
-    }
+    procedure ExampleProcedure() : Text;
 }
 ```
-The page customization `Foo_MyPageCustomization` has been renamed, this will trigger rule AS0089.
+The page customization `FOO_IExampleInterface` has been renamed, this will trigger rule AS0089.
 
 ### Example 3: Deleting an obsolete pending Page Customization
 Version 2.0 of the extension:
 ```AL
-pagecustomization Foo_MyPageCustomization customizes "Customer List"
+interface FOO_IMyInterface
 {
+    procedure ExampleProcedure(): Text;
     ObsoleteState = Pending;
-    ObsoleteReason = 'Use Foo_MyOtherPageCustomization instead.';
+    ObsoleteReason = 'Use FOO_IExampleInterface instead.';
 }
-
-pagecustomization Foo_MyOtherPageCustomization customizes "Customer List"
+interface FOO_IExampleInterface
 {
-    layout
-    {
-        modify(Name)
-        {
-            Visible = false;
-        }
-    }
+    procedure SomeProcedure(): Text;
 }
 ```
-In version 3.0 of the extension, `Foo_MyPageCustomization` has been deleted. This is okay, because `Foo_MyPageCustomization` previously had been marked with `ObsoleteState = Pending` informing developers to use "Foo_MyOtherPageCustomization" instead.
+In version 3.0 of the extension, `FOO_IMyInterface` has been deleted. This is okay, because `FOO_IMyInterface` previously had been marked with `ObsoleteState = Pending` informing developers to use "FOO_IExampleInterface" instead.
 
 
 ## See Also  

@@ -121,6 +121,15 @@ The user interface text, including the tooltips, is translated as part of the ap
 
 At Microsoft, we are in process of simplifying and unifying our style guides. To get to know the Microsoft style, use the [Microsoft Writing Style Guide](/style-guide/welcome/) as a good starting point. The [!INCLUDE [prod_short](developer/includes/prod_short.md)] follows most of the guidelines in the Microsoft Writing Style Guide with exceptions for industry terminology and other product-specific issues.  
 
+## Get notified about changes through an RSS feed
+
+To subscribe to a Really Simple Syndication (RSS) feed of all updates that are to the content on docs.microsoft.com across the developer and administration content for [!INCLUDE [prod_short](includes/prod_short.md)], use the following link:
+
+[RSS feed](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-bc-devitpro%27)&locale=en-us)
+
+> [!NOTE]
+> The RSS feed returns a list of the 100 articles most recently updated. The list is not sorted by date.  
+
 ## See Also
 
 [Configure the Help Experience](deployment/configure-help.md)  

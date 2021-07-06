@@ -22,7 +22,8 @@ Objects that can be referenced by ID and which have been published must not be d
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## How to fix this diagnostic?
-Reverting the change will fix this diagnostic. If deleting the object is required, the recommended approach is to mark it first as [ObsoleteState Pending](../properties/devenv-obsoletestate-property.md). You can then mark the object as [ObsoleteState Removed](../properties/devenv-obsoletestate-property.md) in a later version. You cannot mark an object `ObsoleteState = Removed` in the same version as it is marked `ObsoleteState = Pending`.
+Reverting the change will fix this diagnostic. If deleting the object is required, the recommended approach is to mark it first as [ObsoleteState Pending](../properties/devenv-obsoletestate-property.md). 
+You can then remove the object in a later version, or mark it as [ObsoleteState Removed](../properties/devenv-obsoletestate-property.md) if the object is a table. You cannot mark a table `ObsoleteState = Removed` if the table is not `ObsoleteState = Pending` in the previous version.
 
 ## Code Examples
 ### Example 1: Deleting a Codeunit triggers the rule
