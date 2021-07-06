@@ -14,7 +14,7 @@ ms.author: edupont
 
 # Get Started as a Reseller of Business Central Online
 
-If you want to build your business on [!INCLUDE [prod_long](../developer/includes/prod_long.md)] online, you must get set up as a reseller in the Microsoft Partner Center. In this article, we take you through the first four steps in your journey.  
+If you want to build your business on [!INCLUDE [prod_long](../developer/includes/prod_long.md)] online, you must get set up as a reseller in the Microsoft Partner Center. In this article, we take you through the first steps in your journey.  
 
 ## Step 1: Become a partner
 

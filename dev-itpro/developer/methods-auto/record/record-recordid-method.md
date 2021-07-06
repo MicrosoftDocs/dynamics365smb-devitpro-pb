@@ -1,9 +1,9 @@
 ---
 title: "Record.RecordId Method"
-description: ""
+description: "Gets the RecordId of the record that is currently selected in the table. If no table is selected, an error is generated."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/15/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # Record.RecordId Method
 > **Version**: _Available or changed with runtime version 1.0._
 
-
+Gets the RecordId of the record that is currently selected in the table. If no table is selected, an error is generated.
 
 
 ## Syntax

@@ -94,6 +94,10 @@ _Stockout Warning_ specifies if a warning should be displayed if a user enters a
 
 A drawback of reading from a replica is that it introduces a slight delay compared to reading from the primary database. **Read Scale-Out** is controlled by the [DataAccessControl property](../developer/properties/devenv-dataaccessintent-property.md) on objects. This property determines whether to use a replica if one is available. If this delay isn't acceptable for an object, you can overwrite the default database access intent from the UI. For more information, see [Managing Database Access Intent](/dynamics365/business-central/admin-data-access-intent)
 
+## Number of companies
+
+Having many companies can cause administrative tasks, like upgrades, point-in-time restores, and database exports, to take a very long time and potentially hit timeout values. If you have more than 50 companies, we recommend that you test these operations and typical usage scenarios extensively. Delete companies that are no longer needed.
+
 ## Don't do these things
 
 Finally, make sure that you don't repeat these performance mistakes that we have seen cause massive performance issues for customers:

@@ -39,7 +39,7 @@ If successful, this method returns a `201 Created` response code and a **subscri
 
 Here is an example of the request.
 ```json
-POST https://{businesscentralPrefix}/api/v1.0/subscriptions({id})
+POST https://{businesscentralPrefix}/api/v1.0/subscriptions({'id'})
 Content-type: application/json
 
 {

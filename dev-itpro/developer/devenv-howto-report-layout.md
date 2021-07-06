@@ -72,12 +72,14 @@ The following example extends the Customer List page with a trigger that runs th
 You'll now see the generated report in preview mode.
 
 > [!NOTE]  
-> If the report layout is not generated, open the `settings.json` from Visual Studio Code. Use **Ctrl+Shift+P**, then choose **Preferences: Open User Settings**, locate the **AL Language extension**. Under **Compilation Options**, choose **Edit in settings.json** and add the following line: 
-    ```json
-    "al.compilationOptions": {
-            "generateReportLayout": true
-        }
-    ```
+> If the report layout is not generated, open the `settings.json` from Visual Studio Code. Use **Ctrl+Shift+P**, then choose **Preferences: Open User Settings**, locate the **AL Language extension**. Under **Compilation Options**, choose **Edit in settings.json** and add the following line:  
+>```json
+>"al.compilationOptions": {
+>   "generateReportLayout": true
+> }
+>```
+
+[!INCLUDE [send-report-excel](includes/send-report-excel.md)]
 
 ## See Also
 
