@@ -30,7 +30,7 @@ Would you like to know what has changed in update 18.3? Below you'll find an ove
 
 
 ## Hotfixes
-Find an overview of hotfixes in this [article](INSERT).
+Find an overview of hotfixes in this [article](https://support.microsoft.com/help/5004715).
 
 ## Localization updates 
 
