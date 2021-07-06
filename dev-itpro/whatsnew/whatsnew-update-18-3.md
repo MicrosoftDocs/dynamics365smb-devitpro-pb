@@ -16,17 +16,17 @@ author: EmmaNielsson
 
 Would you like to know what has changed in update 18.3? Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update. In addition, we have gathered some good to know information and links, you might find interesting.
 
-## Feature changes 
-- [Export any List to Excel](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/better-365) 
+## Feature changes  
 - [Service-to-service authentication](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/service-service-authentication)
 - [Dimension issues detection and repair tool](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/dimension-issues-detection-repair-tool)
 - [Integration of Word templates](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/integration-word-templates-interaction-templates)
 - [Data administration and cleanup tasks page](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/data-clean-up-tasks-page)
 - [Integration of Word templates with interaction templates](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/integration-word-templates-interaction-templates)
+- [Export any list part to Excel](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/better-365)
 - [New countries added to the list of supported countries](https://aka.ms/BCcountries)
 - [Business Central Database capacity changes (as of July 1, 2021)](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-capacity#storage)
 - [Upgrade to certificate-based Service-to-service (S2S) authentication for Dataverse and Dynamics 365 Integration](https://go.microsoft.com/fwlink/?linkid=2167233) 
-- [Get report (raw data) into Excel from request page](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/get-report-raw-data-excel-request-page) (targeting end users) and [Save report dataset to excel from the request page](/dynamics365-business-central/save-report-dataset-excel-request-page) (targeting developers) 
+- [Get report (raw data) into Excel from request page](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/get-report-raw-data-excel-request-page) (targeting end users) and [Save report dataset to excel from the request page](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/save-report-dataset-excel-request-page) (targeting developers) 
 
 
 ## Hotfixes
