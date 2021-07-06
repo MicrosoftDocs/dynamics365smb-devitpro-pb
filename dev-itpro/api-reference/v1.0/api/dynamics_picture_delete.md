@@ -13,7 +13,7 @@ ms.date: 04/01/2019
 ms.author: solsen
 ---
 
-# Delete picture
+# Delete picture (v1.0)
 Deletes the properties and relationships of a picture object for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## HTTP request
@@ -25,22 +25,22 @@ DELETE businesscentralPrefix/companies({companyId})/employees({employeeId})/pict
 DELETE businesscentralPrefix/companies({companyId})/customers({customerId})/picture({pictureId})
 ```
 
-## Request headers
+## Request headers (v1.0)
 
 |Header|Value|
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
 |If-Match| When this request header is included and the eTag provided does not match the current tag on the picture, the picture will not be updated.|
 
-## Request body
+## Request body (v1.0)
 Do not supply a request body for this method.
 
-## Response
+## Response (v1.0)
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 The metadata will be updated on the same link.
 
-## Example
+## Example (v1.0)
 
 **Request**
 

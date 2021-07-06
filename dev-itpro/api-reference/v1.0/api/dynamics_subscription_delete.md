@@ -12,33 +12,34 @@ ms.date: 04/01/2019
 ms.author: solsen
 ---
 
-# Delete subscriptions
+# Delete subscriptions (v1.0)
 Deletes a subscriptions object for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## HTTP request
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v1.0/endpoints-apis-for-dynamics.md).
 ```
-DELETE businesscentralPrefix/subscriptions({id})
+DELETE businesscentralPrefix/subscriptions({'id'})
 ```
 
-## Request headers
+## Request headers (v1.0)
 |Header|Value|
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
+|If-Match       |Required. When this request header is included and the eTag provided does not match the current tag on the **subscription**, the **subscription** will not be updated. |
 
-## Request body
+## Request body (v1.0)
 Do not supply a request body for this method.
 
-## Response
+## Response (v1.0)
 If successful, this method returns a `204 No Content` response code.
 
-## Example
+## Example (v1.0)
 
 **Request**
 
 Here is an example of the request.
 ```json
-DELETE https://{businesscentralPrefix}/api/v1.0/subscriptions({id}) 
+DELETE https://{businesscentralPrefix}/api/v1.0/subscriptions({'id'}) 
 ```
 
 **Response**

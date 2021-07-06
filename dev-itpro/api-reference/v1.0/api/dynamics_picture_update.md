@@ -13,7 +13,7 @@ ms.date: 04/01/2019
 ms.author: solsen
 ---
 
-# Update picture
+# Update picture (v1.0)
 Updates the properties and relationships of a picture object for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## HTTP request
@@ -26,7 +26,7 @@ PATCH businesscentralPrefix/companies({companyId})/customers({customerId})/pictu
 
 ```
 
-## Request headers
+## Request headers (v1.0)
 
 |Header|Value|
 |------|-----|
@@ -34,13 +34,13 @@ PATCH businesscentralPrefix/companies({companyId})/customers({customerId})/pictu
 |Content-Type  |application/octet-stream  | 
 |If Match | When this request header is included and the eTag provided does not match the current tag on the picture, the picture will not be updated.|
 
-## Request body
+## Request body (v1.0)
 Raw picture binary data.
 
-## Response
+## Response (v1.0)
 If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
-## Example
+## Example (v1.0)
 
 **Request**
 

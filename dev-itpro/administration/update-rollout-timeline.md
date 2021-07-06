@@ -9,7 +9,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, update, flag, keys
-ms.date: 04/21/2021
+ms.date: 06/17/2021
 ms.author: edupont
 ---
 
@@ -35,7 +35,7 @@ The following table describes the milestones with example dates for the two rele
 
 |Milestone|Example date wave 1| Example date wave 2|Description|
 |---------|-------------------|--------------------|-----------|
-|Update is available|April 1 |October 1|The date when the new major version of Business Central becomes generally available|
+|Update is available|April 1 |October 1|The date when the new major version of Business Central becomes generally available.|
 |Update starts rolling out|April 15 |October 15|The default date when Microsoft starts upgrading your environments. Once the update is scheduled, you can change that date, within the allowed date range, to a date that suits you better.|
 |Last scheduled update date|May 31 |November 30|The last date you can choose to extend your upgrade date to. Since 2020 release wave 1, this date has been extended from 30 days after the update is available to 60 days.|
 
@@ -62,17 +62,8 @@ The following table describes the milestones with example dates for a minor upda
 | Update rolls out automatically | May 14 | The default date when Microsoft starts upgrading your environments, 7 days after the first availability date. Once the update is scheduled, you can change that date, within the allowed date range, to a date that suits you better. |
 | Last scheduled update date | May 28 | The last date you can choose to extend your upgrade date to, 21 days after the update is available. |
 
-The following table provides an overview of how monthly updates roll out. Dates are based on the expected rollout of updates for 2021 release wave 1.  
-
-| Version | First availability | Last update date |
-|---------|--------------------|------------------|
-| 17.5    | March 05, 2021     | March 19, 2021   |
-| 18.1    | May 07, 2021       | May 14, 2021     |
-| 18.2    | June 04, 2021      | June 11, 2021    |
-| 18.3    | July 02, 2021      | July 09, 2021    |
-
-> [!IMPORTANT]
-> The dates shown here are example dates and subject to change. Your key takeaway should be that the minor updates tend to become available in the first week of any given month, and that the Microsoft aims to update the last environments no more than three weeks later.
+> [!TIP]
+> The minor updates tend to become available on the first Friday of any given month, except the months when a major update becomes available. Microsoft aims to update the last environments 2-3 weeks later.
 
 ## Update availability
 

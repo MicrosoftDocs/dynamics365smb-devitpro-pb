@@ -29,14 +29,14 @@ To check the compatibility level run following query: 
 SELECT compatibility_level FROM sys.databases WHERE name = 'YourDatabaseName';  
 ```
 
-To change the compatibility level, run this query:  
+If your on-premises SQL Server instance is a supported version that allows you to change the compatibility level, you can do so with the following query. If you're using a different version, you must upgrade your current on-premises environment to met the current SQL Server compatibility requirements. For more information, see [View or Change the Compatibility Level of a Database](/sql/relational-databases/databases/view-or-change-the-compatibility-level-of-a-database?view=sql-server-ver15&preserve-view=true)
 
 ```sql
 ALTER DATABASE YourDatabaseName SET COMPATIBILITY_LEVEL = 130; 
 ```
 
 > [!NOTE]
-> You may also get the following error when compatibility level isn't set to the expected value: "A database operation failed with the following error: Invalid length parameter passed to the LEFT or SUBSTRING function."
+> You may also get the following error when compatibility level isn't set to the expected value: *A database operation failed with the following error: Invalid length parameter passed to the LEFT or SUBSTRING function.*
 
 ## Migration user
 
@@ -134,14 +134,14 @@ If you experience problems with Microsoft Integration Runtime, also see [Trouble
 
     |Option|When to use|
     |------|-----------|
-    |Dynamics 365 Business Central|Select this option if you're migrating from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)]  latest version, currently version 17|
+    |Dynamics 365 Business Central|Select this option if you're migrating from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)]  latest version, currently version 18.|
     |Dynamics 365 Business Central - Previous Version|Select this option if you're migrating from the an earlier supported version. [!INCLUDE [bc-cloud-versions](../includes/bc-cloud-versions.md)]|
     |Dynamics GP|Select this option if you're migrating from the Dynamics GP product.|
 
 - When migrating data from [!INCLUDE[prod_short](../developer/includes/prod_short.md)], check the `applicationVersion` field in the `$ndo$tenantdatabaseproperty` table. Set this field to the correct version in the SQL if it's blank or not up to date. The migration code uses the field's value for the following reasons:
 
   - Verifies that you're migrating from a supported version
-  - Verifies that you've selected the right product version in the **Data Migration Setup** assisted setup, like Dynamics 365 Business Central or Dynamics 365 Business Central - Previous Version.
+  - Verifies that you've selected the right product version in the **Data Migration Setup** assisted setup, **Dynamics 365 Business Central** or **Dynamics 365 Business Central - Previous Version**.
   - Determines which upgrade code will be executed.
 
     If that field is blank, the migration can't run.  

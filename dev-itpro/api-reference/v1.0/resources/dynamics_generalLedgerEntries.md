@@ -13,8 +13,7 @@ ms.date: 04/01/2019
 ms.author: solsen
 ---
 
-# generalLedgerEntries resource type
-
+# generalLedgerEntries resource type (v1.0)
 [!INCLUDE[d365_api_newversion](../../../includes/d365_api_newversion.md)]
 
 Represents a generalLedgerEntry object in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
