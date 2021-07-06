@@ -22,6 +22,7 @@ Would you like to know what has changed in update 18.3? Below you'll find an ove
 - [Integration of Word templates](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/integration-word-templates-interaction-templates)
 - [Data administration and cleanup tasks page](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/data-clean-up-tasks-page)
 - [Integration of Word templates with interaction templates](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/integration-word-templates-interaction-templates)
+- [Export any list part to Excel](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/better-365)
 - [New countries added to the list of supported countries](https://aka.ms/BCcountries)
 - [Business Central Database capacity changes (as of July 1, 2021)](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-capacity#storage)
 - [Upgrade to certificate-based Service-to-service (S2S) authentication for Dataverse and Dynamics 365 Integration](https://go.microsoft.com/fwlink/?linkid=2167233) 
