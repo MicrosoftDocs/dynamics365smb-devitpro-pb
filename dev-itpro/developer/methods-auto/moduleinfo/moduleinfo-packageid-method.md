@@ -40,6 +40,6 @@ The package ID of the specified application.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
-[ModuleInfo Data Type](moduleinfo-data-type.md)
-[Getting Started with AL](../devenv-get-started.md)
-[Developing Extensions](../devenv-dev-overview.md)
+[ModuleInfo Data Type](moduleinfo-data-type.md)  
+[Getting Started with AL](../../../developer/devenv-get-started.md)  
+[Developing Extensions](../../../devenv-dev-overview.md)

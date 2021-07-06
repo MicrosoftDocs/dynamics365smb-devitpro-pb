@@ -13,7 +13,7 @@ ms.date: 04/01/2019
 ms.author: solsen
 ---
 
-# Get items
+# Get items (v1.0)
 Retrieve the properties and relationships of an item object for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 
@@ -24,19 +24,19 @@ Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md
 GET businesscentralPrefix/companies({id})/items({id})
 ```
 
-## Request headers
+## Request headers (v1.0)
 
 |Header       |Value                    |
 |-------------|-------------------------|
 |Authorization|Bearer {token}. Required.|
 
-## Request body
+## Request body (v1.0)
 Do not supply a request body for this method.
 
-## Response
+## Response (v1.0)
 If successful, this method returns a ```200 OK``` response code and an **items** object in the response body.
 
-## Example
+## Example (v1.0)
 **Request**
 
 Here is an example of the request.

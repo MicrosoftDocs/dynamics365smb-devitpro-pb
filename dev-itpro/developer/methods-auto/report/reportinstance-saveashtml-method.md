@@ -1,6 +1,6 @@
 ---
 title: "Report.SaveAsHtml Method"
-description: "Saves a report as an HTML file. The file is saved on the computer where the server instance is running, and then downloaded to the client when ready. \> This method is only supported when a report uses a Word report layout when it is run."
+description: "Saves a report as an HTML file. The file is saved on the computer where the server instance is running, and then downloaded to the client when ready."
 ms.author: solsen
 ms.custom: na
 ms.date: 05/31/2021
@@ -45,14 +45,15 @@ The folder path and name of the file that you want to save the report as. The pa
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks  
- The SaveAsHTML method uses the logic in the codeunit **9651 Document Report Mgt.** code unit to handle the format transformation.  
+## Remarks
+
+The SaveAsHTML method uses the logic in the codeunit **9651 Document Report Mgt.** code unit to handle the format transformation.  
   
- The SaveAsHTML method can be used on the Report data type and on Report variables. When you are programming the SaveAsHTML method, if you do not know the specific report that you want to run, then use the global Report object and specify the report number in the *Number* parameter. If you know which report you want to run, then create a Report variable, set the **Subtype** of the variable to a specific report, and then use this variable when you call the SaveAsHTML method.  
+The SaveAsHTML method can be used on the Report data type and on Report variables. When you are programming the SaveAsHTML method, if you do not know the specific report that you want to run, then use the global Report object and specify the report number in the *Number* parameter. If you know which report you want to run, then create a Report variable, set the **Subtype** of the variable to a specific report, and then use this variable when you call the SaveAsHTML method.  
   
- When you call the SaveAsXML method, the report is generated and saved to "FileName." The request page is not shown.  
+When you call the SaveAsXML method, the report is generated and saved to "FileName." The request page is not shown.  
   
- Reports that use an RDLC layout when run cannot be saved in the HTML format. A runtime error will occur if SaveAsHTML is used on an RDLC report.  
+Reports that use an RDL layout when run cannot be saved in the HTML format. A runtime error will occur if SaveAsHTML is used on an RDL report.  
   
 
 ## See Also

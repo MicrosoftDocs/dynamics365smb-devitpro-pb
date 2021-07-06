@@ -1,9 +1,9 @@
 ---
 title: "XmlDocument.WriteTo Method"
-description: "Serializes and saves the current node to the given variable and gives example of write to Stream from XmlDocument"
+description: "Serializes and saves the current node to the given variable."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/15/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

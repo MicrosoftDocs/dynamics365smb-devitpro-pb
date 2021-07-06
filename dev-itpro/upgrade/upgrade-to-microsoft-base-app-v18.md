@@ -356,7 +356,7 @@ In this step, you configure the version 18 server instance. In particular, you c
 
 2. Configure the `DestinationAppsForMigration` setting of the server instance to table migration extension.
 
-    You'll need the ID, name, and publisher for the table migration extension that you created in **Task 2**.
+    You'll need the ID, name, and publisher for the table migration extension that you created in **Task 4**.
 
     ```powershell
     Set-NAVServerConfiguration -ServerInstance <server instance name> -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"<table migration extension ID>", "name":"<table migration extension>", "publisher": "<publisher>"}]'
@@ -453,7 +453,7 @@ If you have a multitenant deployment, do these steps for each tenant.
 
     With a single-tenant deployment, you can omit the `-Tenant` parameter and value.
 
-3. Synchronize the tenant with the table migration extension. This is the tables only extension you created in task 2.
+3. Synchronize the tenant with the table migration extension. This is the tables only extension you created in task 4.
 
     Use the [Sync-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp) cmdlet:
 

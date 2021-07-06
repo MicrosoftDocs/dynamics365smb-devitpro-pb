@@ -320,7 +320,7 @@ Run the data upgrade on extensions in order of dependency.
 
 1. Run the data upgrade for the System Application, followed by the Base Application. 
 
-    To run the data upgrade, use the [Start-NavDataUpgrade](/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade) cmdlet:
+    To run the data upgrade, use the [Start-NAVAppDataUpgrade cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/start-navappdataupgrade) cmdlet:
 
     ```powershell
     Start-NAVAppDataUpgrade -ServerInstance <server instance name> -Name "<extension name>" -Version <extension version>

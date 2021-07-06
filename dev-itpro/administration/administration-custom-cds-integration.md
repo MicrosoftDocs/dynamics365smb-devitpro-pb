@@ -200,9 +200,23 @@ begin
 end;
 ```
 
+4. In codeunit **CRM Setup Defaults** (ID 5334), subscribe to the **OnAddEntityTableMapping** event in order to enable deep linking between coupled [!INCLUDE[prod_short](../includes/prod_short.md)] records and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] records.
+
+```al
+[EventSubscriber(ObjectType::Codeunit, Codeunit::"CRM Setup Defaults", 'OnAddEntityTableMapping', '', true, true)]
+    local procedure HandleOnAddEntityTableMapping(var TempNameValueBuffer: Record "Name/Value Buffer" temporary);
+    var
+        CRMSetupDefaults: Codeunit "CRM Setup Defaults";
+    begin
+        CRMSetupDefaults.AddEntityTableMapping('worker', DATABASE::Employee, TempNameValueBuffer);
+        CRMSetupDefaults.AddEntityTableMapping('worker', DATABASE::"CDS Worker", TempNameValueBuffer);
+    end;
+}
+```
+
 ### To create actions on the employee page for managing coupling and synchronization
 
-To enable users to create couplings between records in the two systems, we will extend the **Employee Card** page with actions for creating and deleting couplings, and for synchronizing. The following code example adds those actions to **Employee Card**.
+To enable users to create couplings between records in the two systems, we will extend the **Employee Card** page with actions for creating and deleting couplings, for synchronizing and for deep linking. The following code example adds those actions to **Employee Card**.
 
 ```al
 pageextension 50101 "Employee Synch Extension" extends "Employee Card"
@@ -213,9 +227,22 @@ pageextension 50101 "Employee Synch Extension" extends "Employee Card"
         {
             group(ActionGroupCDS)
             {
-                Caption = 'CDS';
+                Caption = 'Dataverse';
                 Visible = CDSIntegrationEnabled;
 
+                action(CDSGotoWorker)
+                {
+                    Caption = 'Worker';
+                    Image = CoupledCustomer;
+                    ToolTip = 'Open the coupled Dataverse worker.';
+
+                    trigger OnAction()
+                    var
+                        CRMIntegrationManagement: Codeunit "CRM Integration Management";
+                    begin
+                        CRMIntegrationManagement.ShowCRMEntityFromRecordID(RecordId);
+                    end;
+                }
                 action(CDSSynchronizeNow)
                 {
                     Caption = 'Synchronize';
@@ -420,7 +447,7 @@ To create an integration field mapping, follow these steps:
 Users can now manually synchronize employee records in [!INCLUDE[prod_short](../includes/prod_short.md)] with Worker table rows in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] from the [!INCLUDE[prod_short](../includes/prod_short.md)] client.  
 
 > [!TIP]  
-> To learn how to schedule the synchronization by using a job queue entry, examine the code on the **RecreateJobQueueEntry** function in codeunit **CRM Integration Management** (ID 5330) and see how it is called by the integration code for other [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] tables in the codeunit. For more information, see [Scheduling a Synchronization](/dynamics365/business-central/admin-scheduled-synchronization-using-the-synchronization-job-queue-entries).
+> To learn how to schedule the synchronization by using a job queue entry, examine the code on the **RecreateJobQueueEntryFromIntTableMapping** function in codeunit **CDS Setup Defaults** (ID 7204) and see how it is called by the integration code for other [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] tables in the codeunit. For more information, see [Scheduling a Synchronization](/dynamics365/business-central/admin-scheduled-synchronization-using-the-synchronization-job-queue-entries).
 
 ### Enable customers to reset selected integration table mappings to the default settings
 

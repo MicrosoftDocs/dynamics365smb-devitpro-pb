@@ -12,7 +12,7 @@ ms.date: 04/01/2019
 ms.author: solsen
 ---
 
-# Update subscriptions
+# Update subscriptions (v1.0)
 Updates a subscriptions object for [!INCLUDE[prod_short](../../../includes/prod_short.md)]. A subscription is valid for 3 days unless it is updated. `PATCH` requests will perform a handshake with the subscriber.
 
 ## HTTP request
@@ -21,16 +21,16 @@ Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md
 PATCH businesscentralPrefix/subscriptions({id})
 ```
 
-## Request headers
+## Request headers (v1.0)
 |Header|Value|
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
-|If-Match  | * |
+|If-Match       |Required. When this request header is included and the eTag provided does not match the current tag on the **subscription**, the **subscription** will not be updated. |
 
-## Request body
+## Request body (v1.0)
 Here is an example of the request.
 ```json
-PATCH https://{businesscentralPrefix}/api/v1.0/subscriptions({id})
+PATCH https://{businesscentralPrefix}/api/v1.0/subscriptions({'id'})
 Content-type: application/json
 
 {
@@ -41,16 +41,16 @@ Content-type: application/json
 
 ```
 
-## Response
+## Response (v1.0)
 If successful, this method returns a `200 OK` response code and a **subscription** object in the response body.
 
-## Example
+## Example (v1.0)
 
 **Request**
 
 Here is an example of the request.
 ```
-https://{businesscentralPrefix}/api/v1.0/subscriptions({id}) 
+https://{businesscentralPrefix}/api/v1.0/subscriptions({'id'}) 
 
 ```
 

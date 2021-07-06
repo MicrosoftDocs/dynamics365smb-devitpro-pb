@@ -185,6 +185,7 @@ ROOT OnMergeDocumentReport
 
 ## See Also
 
-[Report and DataItem triggers](triggers/devenv-report-and-data-item-triggers.md)  
+[Report Triggers](triggers-auto/report/devenv-oninitreport-report-trigger.md) 
+[Report Data Item Triggers](triggers-auto/reportdataitem/devenv-onpredataitem-reportdataitem-trigger.md)  
 [Report Object](devenv-report-object.md)  
 [Triggers](triggers/devenv-triggers.md)  
