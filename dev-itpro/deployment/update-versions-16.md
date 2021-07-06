@@ -6,7 +6,7 @@ ms.custom: na
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
-ms.date: 04/01/2021
+ms.date: 07/01/2021
 
 ---
 
@@ -28,6 +28,7 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 
 |Knowledge Base ID                                           |Title                |Release date  |Build No. |
 |------------------------------------------------------------|---------------------|--------------|----------|
+|[5004717](https://support.microsoft.com/help/5004717))|Update 16.14 |July 2021|Application Build 16.14.27266</br>Platform Build 16.0.27253|
 |[5003473](https://support.microsoft.com/help/5003473)|Update 16.13 |June 2021|Application Build 16.13.24943</br>Platform Build 16.0.24930|
 |[5001734](https://support.microsoft.com/help/5001734)|Update 16.12 |April 2021|Application Build 16.12.23726</br>Platform Build 16.0.23722|
 |[5001234](https://support.microsoft.com/help/5001234)|Update 16.11 |March 2021|Application Build 16.11.22526</br>Platform Build 16.0.22511|
