@@ -73,7 +73,7 @@ Join the Business Central Office Hours to learn more and connect with the Busine
 |April 7, 2021 | Rolling out 2021 Release Wave 1 |
 |April 20, 2021 | Environments in Business Central Online |
 |May 4, 2021 | Report Extensibility |
-|May 18, 2021 | Snapshot Debugging (in production and troubleshooting in general) 
+|May 18, 2021 | Snapshot Debugging (in production and troubleshooting in general) |
 |June 1, 2021 | Performance Toolkit |
 |June 15, 2021 | Working with Dimensions |
 |June 29, 2021 | DevOps Processes for Per Tenant Extensions | 
