@@ -3,7 +3,7 @@ author: jswymer
 title: "Building your first sample extension that uses new objects and extension objects"
 description: "Includes code for an example extension, complete with new objects, extension objects, and install and upgrade code."
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 07/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,6 +12,7 @@ ms.service: "dynamics365-business-central"
 ---
 
 # Building Your First Sample Extension With Extension Objects, Install Code, and Upgrade Code
+
 This walkthrough will guide you through all the steps that you must follow to create a sample extension in AL. New objects and extension objects will be added to the base application for a simple reward feature for customers. Every section of this exercise includes code that serves for installing, customizing, or upgrading this sample extension. The final result can be published and installed on your tenants.
 
 ## About this walkthrough
@@ -50,8 +51,8 @@ The extension enables the ability to assign one of three reward levels to custom
 
 The following code adds a new table **50100 Reward** for storing the reward levels for customers. The table consists of three fields: **Reward ID**, **Description**, and **Discount Percentage**. For example, the **Description** field must contain a value of type text and it cannot exceed the limit of 250 characters. The second field contains three properties that are used to set the range of the discount percentage assigned to every customer. Properties can be created for every field, depending on the scope. 
 
-> [!TIP]
-> Type `ttable` followed by the Tab key. This snippet will create a basic layout for a table object.
+> [!TIP]  
+> Type `ttable` followed by the **Tab** key. This snippet will create a basic layout for a table object.
 
 ```AL
 table 50100 Reward
@@ -113,7 +114,7 @@ For more information about table properties, see [Table Properties](properties/d
 
 The following code adds a new page **50101 Reward Card** for viewing and editing the different reward levels that are stored in the new **Reward** table. Pages are the primary object that a user will interact with and have a different behavior based on the type of page that you choose. The **Reward Card** page is of type Card and it is used to view and edit one record or entity from the **Reward** table. 
 
-> [!TIP]
+> [!TIP]  
 > Use the snippet `tpage, Page` to create the basic structure for the page object.
 
 ```AL
@@ -211,15 +212,16 @@ page 50102 "Reward List"
 }
 ```
 
-After you have created the objects, update the **startupObjectId** in the `launch.json` file to 50102, the ID of the **Reward List** page and select the Ctrl+F5 shortcut to see the new page in your sandbox environment. You will be asked to sign in to your [!INCLUDE [prod_short](includes/prod_short.md)], if you have not already done so.  
+After you have created the objects, update the `startupObjectId` in the `launch.json` file to `50102`, which is the ID of the **Reward List** page and select the **Ctrl+F5** shortcut to see the new page in your sandbox environment. You will be asked to sign in to your [!INCLUDE [prod_short](includes/prod_short.md)], if you have not already done so.  
 
-> [!TIP]
+> [!TIP]  
 > Information about your sandbox environment and other environments is stored as configurations in the `launch.json` file. For more information, see [JSON Files](devenv-json-files.md).  
 
 ## Designer
 
-[!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] Designer works in the browser and allows modifying the current page. It enables users to add existing table fields, move fields around, or remove fields from the page. Users can make changes to display the information they need, where they need it by using drag-and-drop components.  
-To show how the Designer changes the design of a page, you begin by adding two new fields to the **Reward** table. These fields will be used later on to exemplify the Designer's properties. 
+[!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] Designer works in the browser and allows modifying the current page. It enables users to add existing table fields, move fields around, or remove fields from the page. Users can make changes to display the information they need, where they need it by using drag-and-drop components. 
+ 
+To show how Designer changes the design of a page, you begin by adding one field to the **Reward** table. This field will be used later to exemplify the Designer's properties. 
 
 ```AL
 field(4;"Minimum Purchase";Decimal)
@@ -227,50 +229,9 @@ field(4;"Minimum Purchase";Decimal)
     MinValue = 0;
     DecimalPlaces = 2;
 }
-
-field(5;"Last Modified Date";Date)
-{
-    // The "Editable" property sets a value that indicates whether the field can be edited 
-    // through the UI.
-    Editable = false;
-}
-
-```
-The **Last Modified Date** field requires constant changes to remain accurate. To keep it updated, triggers will be used. Triggers are predefined methods that are executed when certain actions happen. They are added by default when you use the `ttable` template, but you can also use the `ttriger` snippet to add them manually. Now you can add code to the triggers.  
-
-```AL
-    // "OnInsert" trigger executes when a new record is inserted into the table.
-    trigger OnInsert();
-    begin
-        SetLastModifiedDate();
-    end;
-
-    // "OnModify" trigger executes when a record in the table is modified.
-    trigger OnModify();
-    begin
-        SetLastModifiedDate();
-    end;
-
-    // "OnDelete" trigger executes when a record in the table is deleted.
-    trigger OnDelete();
-    begin
-    end;
-
-    // "OnRename" trigger executes when a record in a primary key field is modified.
-    trigger OnRename();
-    begin
-        SetLastModifiedDate();
-    end;
-
-    // On the current record, the value of the "Last Modified Date" field to the current 
-    // date.
-    local procedure SetLastModifiedDate();
-    begin
-        Rec."Last Modified Date" := Today();
-    end;
 ```
 
-From this point, changes to the **Reward Card** page can be done either manually by adding the code below in Visual Studio Code or by using the Designer's functions to add the same fields. Both ways lead to the same results, but the Designer speeds up the process. 
+From this point, changes to the **Reward Card** page can be done either manually by adding the code below in Visual Studio Code or by using Designer's functions to add the same field. Both ways lead to the same results, but using Designer speeds up the process. 
 
 
 ```AL
@@ -278,25 +239,19 @@ field("Minimum Purchase";"Minimum Purchase")
 {
     ApplicationArea = All;
 }
-
-field("Last Modified Date";"Last Modified Date")
-{
-    ApplicationArea = All;
-}
-
 ```
 
-Using the F6 key shortcut in Visual Studio Code launches the browser and enters the Designer. You can also use the Designer from the [!INCLUDE[prod_short](includes/prod_short.md)] client, by selecting ![Settings icon](media/settings_icon_small.png) **Designer**.
+Using the **F6** key shortcut in Visual Studio Code launches the browser and enters Designer. You can also use Designer from the [!INCLUDE[prod_short](includes/prod_short.md)] client, by selecting ![Settings icon](media/settings_icon_small.png) **Designer**.
 
 > [!NOTE]  
-> Every time you start designing, you create a new extension and the changes you make in the Designer will apply to all users.
+> Every time you start designing, you create a new extension and the changes you make in Designer will apply to all users.
 
 To add the same fields and customize the **Reward Card** page, follow the next steps:
 
 - Navigate to the **Reward Card** page by choosing **+ new**.  
-- Enter the Designer mode from the UI and select **More** from the Designer bar. 
+- Enter Designer mode from the UI and select **More** from the Designer bar. 
 - Select **Field** from the Designer bar to show the list of available fields. 
-- Drag the **Minimum Purchase** and **Last Modified Date** fields from the list onto the page in the **Reward group**. 
+- Drag the **Minimum Purchase** field from the list onto the page in the **Reward group**. 
 - Choose the **Reward** in the group caption to enable the value to be edited. Change the caption to **Info** and press **Enter**.
 
 After making these adjustments, finish up your design by choosing **Stop Designing**, which allows you to name the extension with an option to download code, and save the extension for the tenant. If you choose not to download the code at the end, you can still pull the changes via the **Alt+F6** key shortcut from Visual Studio Code. You can also uninstall the extension by opening the **Extension Management** page.  
@@ -305,6 +260,7 @@ For more information about Designer, see [Designer](devenv-inclient-designer.md)
 ## Customer table extension object
 
 The **Customer** table, like many other tables, is part of the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] service and it cannot be modified directly by developers. To add additional fields or to change properties on this table, developers must create a new type of object, a table extension.
+
 The following code creates a table extension for the **Customer** table and adds the `Reward ID` field. 
 
 > [!TIP]
@@ -387,7 +343,7 @@ pageextension 50104 "Customer Card Ext" extends "Customer Card"
 }
 ```
 
-At this point, reward levels can be created and assigned to customers. To do that, update the `startupObjectId` value in launch.json to 21 and select the Ctrl+F5 key to open the page.
+At this point, reward levels can be created and assigned to customers. To do that, update the `startupObjectId` value in launch.json to `21` and select the **Ctrl+F5** key to open the page.
 
 ## Help links
 
@@ -456,7 +412,7 @@ ToolTip = 'Specifies the level of reward that the customer has at this point.';
 }
 ```
 
-If you now deploy the app, you will be able to read the tooltip text for the **Reward ID** field, and if you choose the *Learn more* link or press Ctrl+F1, a new browser tab opens the equivalent of `https://mysite.com/documentation/sales-rewards`.  
+If you now deploy the app, you will be able to read the tooltip text for the **Reward ID** field, and if you choose the *Learn more* link or press **Ctrl+F1**, a new browser tab opens the equivalent of `https://mysite.com/documentation/sales-rewards`.  
 
 ![Customer card extension tool tip example](media/help/CustomerCardExt_TooltipHelp.png)
 
@@ -466,7 +422,7 @@ After installing the extension, the **Reward List** page is empty. This is the r
 
 In this example, the following install codeunit initializes the **Reward** table with three records representing the 'GOLD', 'SILVER', and 'BRONZE' reward levels. 
 
-> [!TIP]
+> [!TIP]  
 > Use the shortcuts `tcodeunit` to create the basic structure for the codeunit.
 
 ```AL
@@ -514,7 +470,7 @@ For more information about install code, see [Writing Extension Install Code](de
 When you upgrade an extension to a newer version, if any modifications to the existing data are required to support the upgrade, you must write upgrade code in an upgrade codeunit. In this example, the following upgrade codeunit contains code that changes the BRONZE reward level to customer records to ALUMINUM. The upgrade codeunit will run when you run the [Start-NAVAppDataUpgrade](/powershell/module/microsoft.dynamics.nav.apps.management/start-navappdataupgrade) cmdlet.
 
 
-> [!IMPORTANT]
+> [!IMPORTANT]  
 > Remember to increase the `version` number of the extension in the app.json file.
 
 ```AL
@@ -555,10 +511,10 @@ For more information about writing and running upgrade code, see [Upgrading Exte
 [!INCLUDE[prod_short](includes/prod_short.md)] emits telemetry data for several operations that occur when extension code is run. Create an Application Insights resource in Azure if you don't have one. For more information, see [Create an Application Insights resource](/azure/azure-monitor/app/create-new-resource). Now, add the Application Insights Key to the extension manifest (app.json file):
 
 ```json
-"applicationInsightsKey": ["<instrumenation key>"]
+"applicationInsightsKey": ["<instrumentation key>"]
 ```
 
-Replace `<instrumenation key>` with your key.
+Replace `<instrumentation key>` with your key.
 
 You can configure your extension to send this data to a specific Application Insights resource on Microsoft Azure. For more information, see [Sending Extension Telemetry to Azure Application Insights](devenv-application-insights-for-extensions.md).
 
