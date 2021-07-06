@@ -508,13 +508,13 @@ For more information about writing and running upgrade code, see [Upgrading Exte
 
 ## Instrumenting your app with telemetry
 
-[!INCLUDE[prod_short](includes/prod_short.md)] emits telemetry data for several operations that occur when extension code is run. Create an Application Insights resource in Azure if you don't have one. For more information, see [Create an Application Insights resource](/azure/azure-monitor/app/create-new-resource). Now, add the Application Insights Key to the extension manifest (app.json file):
+[!INCLUDE[prod_short](includes/prod_short.md)] emits telemetry data for several operations that occur when extension code is run. Create an Application Insights resource in Azure if you don't have one. For more information, see [Create an Application Insights resource](/azure/azure-monitor/app/create-new-resource). Now, add the Application Insights connection string to the extension manifest (app.json file):
 
 ```json
-"applicationInsightsKey": ["<instrumentation key>"]
+"applicationInsightConnectionString": "<connection string>"
 ```
 
-Replace `<instrumentation key>` with your key.
+Replace `<connection string>` with your connection string.
 
 You can configure your extension to send this data to a specific Application Insights resource on Microsoft Azure. For more information, see [Sending Extension Telemetry to Azure Application Insights](devenv-application-insights-for-extensions.md).
 
