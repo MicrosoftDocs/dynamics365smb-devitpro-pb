@@ -23,7 +23,7 @@ Open your `settings.json` file in the project (or global settings if you prefer 
 - `"al.enableCodeActions": false` to turn off AL Code Actions, read more here [AL Code Actions](devenv-code-actions.md).
 - `"al.incrementalBuild": true` to allow the compiler to reuse the existing background compilation for creating the package.
 - `"editor.codeLens": false` to turn off code lens in Visual Studio Code, see [Code Navigation](https://code.visualstudio.com/Docs/editor/editingevolved#_reference-information).
-- `"[al]": {​​​​​​​​​​"editor.formatOnSave": false }​​​​​​​​` to turn off AL formatting when saving a file. If you still want formatting, then you can adjust what to run formatting on, and you can choose **modifications** by using the **Format On Save Mode** option.
+- `"[al]": {​​​​​​​​​​"editor.formatOnSave": false }​​​​​​​​` to turn off formatting when saving a file for AL. If you still want formatting, then you can adjust what to run formatting on, and you can choose **modifications** by using the **Format On Save Mode** option.
 
 - Add the build folder to the exclusion list for [Windows Defender](https://support.microsoft.com/help/4028485/windows-10-add-an-exclusion-to-windows-security).
 
