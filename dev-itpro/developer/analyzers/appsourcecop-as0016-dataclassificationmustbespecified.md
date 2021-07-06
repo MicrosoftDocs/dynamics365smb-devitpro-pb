@@ -1,9 +1,9 @@
 ---
 title: "AppSourceCop Rule AS0016"
-description: "Fields of field class 'Normal' must use the DataClassification property and its value must be different from ToBeClassified. "
+description: "Fields of field class 'Normal' must use the DataClassification property and its value must be different from ToBeClassified. FlowFields and FlowFilter fields are automatically set to the SystemMetadata data classification."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 07/06/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

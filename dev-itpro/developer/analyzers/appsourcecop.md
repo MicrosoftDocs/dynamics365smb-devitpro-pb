@@ -3,7 +3,7 @@ title: "AppSourceCop Analyzer"
 description: "AppSourceCop is an analyzer that enforces rules that must be respected by extensions meant to be published to Microsoft AppSource."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 07/06/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -60,7 +60,7 @@ AppSourceCop is an analyzer that enforces rules that must be respected by extens
 |[AS0044](appsourcecop-as0044-destructivetablefieldpropertyoptionmemberschangenotallowed.md)|Property changes that cause destructive changes are not allowed|Upgrade|Error|
 |[AS0047](appsourcecop-as0047-extensionnamelengthmustnotexceedlimit.md)|The extension name is too long.|Extensibility|Error|
 |[AS0048](appsourcecop-as0048-extensionpublisherlengthmustnotexceedlimit.md)|The publisher name is too long.|Extensibility|Error|
-|[AS0049](appsourcecop-as0049-applicationobjectaccessibilitychangenotallowed.md)|The access modifier of an application object cannot be changed to a value that provides less access|Extensibility|Error|
+|[AS0049](appsourcecop-as0049-applicationobjectaccessibilitychangenotallowed.md)|The access modifier of an application object cannot be changed to a value that provides less access.|Extensibility|Error|
 |[AS0050](appsourcecop-as0050-applicationobjectextensibilitychangenotallowed.md)|The extensibility of an application object cannot be removed|Extensibility|Error|
 |[AS0051](appsourcecop-as0051-applicationmanifestpropertymustbespecified.md)|Manifest property is required for AppSource submission|Extensibility|Error|
 |[AS0052](appsourcecop-as0052-applicationmanifestmustspecifyurl.md)|The property 'url' must be set to a valid URL|Extensibility|Error|
@@ -106,7 +106,7 @@ AppSourceCop is an analyzer that enforces rules that must be respected by extens
 |[AS0092](appsourcecop-as0092-applicationmanifestmustspecifyapplicationinsightsresource.md)|The app.json file must specify an Azure Application Insights resource.|Configuration|Warning|
 |[AS0093](appsourcecop-as0093-entitlementobjectinappsourcenotallowed.md)|Entitlements cannot be defined in an extension.|Configuration|Error|
 |[AS0094](appsourcecop-as0094-permissionsetsshouldnotbeinxml.md)|Permission Sets should not be defined in XML files.|Configuration|Warning|
-|[AS0095](appsourcecop-as0095-tablefieldsaccessmustnotdegrade.md)|Table field access cannot be reduced.|Configuration|Error|
+|[AS0095](appsourcecop-as0095-tablefieldsaccessmustnotdegrade.md)|The access modifier of table field cannot be changed to a value that provides less access.|Configuration|Error|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

@@ -1,9 +1,9 @@
 ---
 title: "AppSourceCop Rule AS0056"
-description: "The country/region codes specified in the 'supportedCountries' property must be valid ISO 3166-1 alpha-2 codes."
+description: "The country/region codes specified in the 'supportedCountries' property must be valid ISO 3166-1 alpha-2 codes. Each code must correspond to a country/region for which the product allows AppSource submissions. See [Country/Regional availability and Supported Translations](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/compliance/apptest-countries-and-translations) for more information."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 07/06/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
