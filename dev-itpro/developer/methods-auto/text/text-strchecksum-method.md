@@ -1,9 +1,9 @@
 ---
-title: "Text.StrCheckSum Method"
+title: "Text.StrCheckSum(String [, String] [, Integer]) Method"
 description: "Calculates a checksum for a string that contains a number."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Text.StrCheckSum Method
+# Text.StrCheckSum(String [, String] [, Integer]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Calculates a checksum for a string that contains a number. If the source is empty, 0 is returned. Each char in the source and in the weight must be a numeric character 0-9, otherwise an exception is thrown. If the WeightString parameter is shorter then the source, it is padded with '1' up until the length of source. If the WeightString parameter is longer than the source, an exception is thrown.

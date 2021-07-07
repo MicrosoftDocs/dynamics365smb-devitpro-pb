@@ -1,9 +1,9 @@
 ---
-title: "Text.PadStr Method"
+title: "Text.PadStr(String, Integer [, String]) Method"
 description: "Changes the length of a string to a specified length."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Text.PadStr Method
+# Text.PadStr(String, Integer [, String]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Changes the length of a string to a specified length. If the string is shorter than the specified length, length spaces are added at the end of the string to match the length. If the string is longer than the specified length, the string is truncated. If the specified length is less than 0, an exception is thrown.

@@ -1,9 +1,9 @@
 ---
-title: "Codeunit.Run Method"
+title: "Codeunit.Run(Integer [, var Record]) Method"
 description: "Loads and runs the unit of AL code you specify."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Codeunit.Run Method
+# Codeunit.Run(Integer [, var Record]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Loads and runs the unit of AL code you specify. To use this method, you can specify a table associated with the codeunit when you defined the codeunit properties. This allows you to pass a variable with the method. The transaction that the codeunit contains is always committed due to the Boolean return value.

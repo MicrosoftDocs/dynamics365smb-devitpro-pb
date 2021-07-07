@@ -1,9 +1,9 @@
 ---
-title: "System.Power Method"
+title: "System.Power(Decimal, Decimal) Method"
 description: "Raises a number to a power."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# System.Power Method
+# System.Power(Decimal, Decimal) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Raises a number to a power. For example, you can use this method to square the number 2 to get the result of 4.

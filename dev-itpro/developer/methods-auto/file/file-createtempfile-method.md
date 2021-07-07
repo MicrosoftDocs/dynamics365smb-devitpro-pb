@@ -1,9 +1,9 @@
 ---
-title: "File.CreateTempFile Method"
+title: "File.CreateTempFile([TextEncoding]) Method"
 description: "Creates a temporary file."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# File.CreateTempFile Method
+# File.CreateTempFile([TextEncoding]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Creates a temporary file. This enables you to save data of any format to a temporary file. This file has a unique name and will be stored in a temporary file folder.

@@ -1,9 +1,9 @@
 ---
-title: "XmlNameTable.Add Method"
+title: "XmlNameTable.Add(String) Method"
 description: "Atomizes the specified string and adds it to the XmlNameTable."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# XmlNameTable.Add Method
+# XmlNameTable.Add(String) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Atomizes the specified string and adds it to the XmlNameTable.

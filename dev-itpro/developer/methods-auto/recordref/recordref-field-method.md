@@ -1,9 +1,9 @@
 ---
-title: "RecordRef.Field Method"
+title: "RecordRef.Field(Integer) Method"
 description: "Gets a FieldRef for the field that has the number FieldNo in the table that is currently selected."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# RecordRef.Field Method
+# RecordRef.Field(Integer) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Gets a FieldRef for the field that has the number FieldNo in the table that is currently selected. If no field has this number, the method returns an error.

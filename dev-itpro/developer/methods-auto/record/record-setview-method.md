@@ -1,9 +1,9 @@
 ---
-title: "Record.SetView Method"
+title: "Record.SetView(String) Method"
 description: "Sets the current sort order, key, and filters on a table."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Record.SetView Method
+# Record.SetView(String) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Sets the current sort order, key, and filters on a table.

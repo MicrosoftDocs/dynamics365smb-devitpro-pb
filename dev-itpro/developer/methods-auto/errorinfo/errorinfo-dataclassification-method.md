@@ -1,9 +1,9 @@
 ---
-title: "ErrorInfo.DataClassification Method"
+title: "ErrorInfo.DataClassification([DataClassification]) Method"
 description: "Specifies the severity level of the error."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# ErrorInfo.DataClassification Method
+# ErrorInfo.DataClassification([DataClassification]) Method
 > **Version**: _Available or changed with runtime version 3.0._
 
 Specifies the severity level of the error. Values include 'Critical', 'Error', 'Warning', 'Normal', and 'Verbose'

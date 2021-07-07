@@ -1,9 +1,9 @@
 ---
-title: "TestRequestPage.GoToKey Method"
+title: "TestRequestPage.GoToKey([Any,...]) Method"
 description: "Finds the row in a data set on the test page that is identified by the specified values."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# TestRequestPage.GoToKey Method
+# TestRequestPage.GoToKey([Any,...]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Finds the row in a data set on the test page that is identified by the specified values. The key is searched from the beginning of the dataset defined by the current filter. The search is performed by iterating across the rows, comparing the primary key with the primary key fields of the record. For large dataset, use SetFilter to limit the dataset.

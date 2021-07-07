@@ -1,9 +1,9 @@
 ---
-title: "RecordRef.GetTable Method"
+title: "RecordRef.GetTable(Record) Method"
 description: "Gets the table of a Record variable and causes the RecordRef to refer to the same table."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# RecordRef.GetTable Method
+# RecordRef.GetTable(Record) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Gets the table of a Record variable and causes the RecordRef to refer to the same table.

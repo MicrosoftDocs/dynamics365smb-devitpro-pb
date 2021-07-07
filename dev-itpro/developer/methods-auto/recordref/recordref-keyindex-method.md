@@ -1,9 +1,9 @@
 ---
-title: "RecordRef.KeyIndex Method"
+title: "RecordRef.KeyIndex(Integer) Method"
 description: "Gets the KeyRef of the key that has the index specified in the table that is currently selected."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# RecordRef.KeyIndex Method
+# RecordRef.KeyIndex(Integer) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Gets the KeyRef of the key that has the index specified in the table that is currently selected. The key can be composed of fields of any supported data type. Data types that are not supported include BLOBs, FlowFilters, variables, and functions. If the sorting key is set to a field that is not part of a key, then the KEYINDEX is -1.

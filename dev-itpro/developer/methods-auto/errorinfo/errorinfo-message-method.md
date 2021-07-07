@@ -1,9 +1,9 @@
 ---
-title: "ErrorInfo.Message Method"
+title: "ErrorInfo.Message([String]) Method"
 description: "Specifies the message that will be sent to telemetry."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# ErrorInfo.Message Method
+# ErrorInfo.Message([String]) Method
 > **Version**: _Available or changed with runtime version 3.0._
 
 Specifies the message that will be sent to telemetry. For a 'Client' error type, the message will also be appear in the client.

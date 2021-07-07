@@ -3,7 +3,7 @@ title: "Data Types and Methods in AL"
 description: ""
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -81,6 +81,7 @@ The following data types are available as part of the AL Language. Each data typ
 |[RequestPage](requestpage/requestpage-data-type.md)|Is a page that is run before the report starts to execute. Request pages enable end-users to specify options and filters for a report.|
 |[Session](session/session-data-type.md)|Represents a Microsoft Dynamics Business Central session.|
 |[SessionSettings](sessionsettings/sessionsettings-data-type.md)|Is a complex data type for passing user personalization settings for a client session as an object. The object contains properties that correspond to the fields in the system table **2000000073 User Personalization**, including: App ID, Company, Language ID, Locale ID, Profile ID, Scope, and Time Zone. You can use the AL methods of the SessionSettings data type to get, set, and send the user personalization settings for the current client session.|
+|[String](string/string-data-type.md)|Denotes a sequence of characters. It can be represented by a string literal, a text value or a code value.|
 |[System](system/system-data-type.md)|Is a complex data type.|
 |[Record](record/record-data-type.md)|Is a complex data type.|
 |[TaskScheduler](taskscheduler/taskscheduler-data-type.md)|Is a complex data type for creating and managing tasks in the task scheduler, which runs codeunits at scheduled times.|
@@ -118,6 +119,7 @@ The following data types are available as part of the AL Language. Each data typ
 |[Action](action/action-option.md)|Represents the action that the user took on the page.|
 |[AuditCategory](auditcategory/auditcategory-option.md)|Represents an audit category for IfX audit telemetry.|
 |[ClientType](clienttype/clienttype-option.md)|Represents the type of the client executing the operation.|
+|[CommitBehavior](commitbehavior/commitbehavior-option.md)|Specifies whether commit is allowed within the scope of the method.|
 |[DataClassification](dataclassification/dataclassification-option.md)|Sets the classification of the data in the table or field.|
 |[DataScope](datascope/datascope-option.md)|Identifies the scope of stored data in the isolated storage.|
 |[DefaultLayout](defaultlayout/defaultlayout-option.md)|The default layout to be used by a report.|
@@ -134,7 +136,6 @@ The following data types are available as part of the AL Language. Each data typ
 |[SecurityOperationResult](securityoperationresult/securityoperationresult-option.md)|Represents security audit operation result.|
 |[TableConnectionType](tableconnectiontype/tableconnectiontype-option.md)|Use variables of this data type to specify the type of connection to an external database.|
 |[TelemetryScope](telemetryscope/telemetryscope-option.md)|Represents the emission scope of the telemetry signal.|
-|[CommitBehavior](commitbehavior/commitbehavior-option.md)|Specifies whether commit is allowed within the scope of the method.|
 |[TestPermissions](testpermissions/testpermissions-option.md)|Specifies a value that can be used to determine which permission sets are used on tests that are run by test codunits or test functions.|
 |[TextEncoding](textencoding/textencoding-option.md)|Represents a file encoding.|
 |[TransactionModel](transactionmodel/transactionmodel-option.md)|Represents a test transaction model.|

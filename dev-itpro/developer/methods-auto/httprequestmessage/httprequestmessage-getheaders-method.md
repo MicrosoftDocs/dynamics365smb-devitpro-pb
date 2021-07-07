@@ -1,9 +1,9 @@
 ---
-title: "HttpRequestMessage.GetHeaders Method"
+title: "HttpRequestMessage.GetHeaders(var HttpHeaders) Method"
 description: "Gets a reference to the collection of HTTP request headers."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# HttpRequestMessage.GetHeaders Method
+# HttpRequestMessage.GetHeaders(var HttpHeaders) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Gets a reference to the collection of HTTP request headers.

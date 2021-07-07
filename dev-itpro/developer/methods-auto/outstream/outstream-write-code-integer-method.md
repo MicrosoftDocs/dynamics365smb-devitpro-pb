@@ -1,9 +1,9 @@
 ---
-title: "OutStream.Write Method"
+title: "OutStream.Write(Code [, Integer]) Method"
 description: "Writes a specified number of bytes to the stream."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# OutStream.Write Method
+# OutStream.Write(Code [, Integer]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Writes a specified number of bytes to the stream. Data is written in binary format.

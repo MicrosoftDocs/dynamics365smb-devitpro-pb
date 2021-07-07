@@ -1,9 +1,9 @@
 ---
-title: "Debugger.EnableSqlTrace Method"
+title: "Debugger.EnableSqlTrace(Integer [, Boolean]) Method"
 description: "Enables or verifies SQL tracing."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Debugger.EnableSqlTrace Method
+# Debugger.EnableSqlTrace(Integer [, Boolean]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Enables or verifies SQL tracing. If you enable SQL tracing, then SQL Server events for selected sessions on the server instance are collected.

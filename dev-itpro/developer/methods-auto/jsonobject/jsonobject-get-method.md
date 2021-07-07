@@ -1,9 +1,9 @@
 ---
-title: "JsonObject.Get Method"
+title: "JsonObject.Get(String, var JsonToken) Method"
 description: "Retrieves the value of a property with a given key from a JsonObject."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# JsonObject.Get Method
+# JsonObject.Get(String, var JsonToken) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Retrieves the value of a property with a given key from a JsonObject.

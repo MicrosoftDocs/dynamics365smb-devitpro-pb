@@ -1,9 +1,9 @@
 ---
-title: "Database.LockTimeout Method"
+title: "Database.LockTimeout([Boolean]) Method"
 description: "Determines whether the lock time-out setting is set to On."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Database.LockTimeout Method
+# Database.LockTimeout([Boolean]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Determines whether the lock time-out setting is set to On. You can also use this method to override the default setting.

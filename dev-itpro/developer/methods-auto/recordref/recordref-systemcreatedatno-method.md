@@ -1,9 +1,9 @@
 ---
-title: "RecordRef.SystemCreatedAtNo Method"
+title: "RecordRef.SystemCreatedAtNo() Method"
 description: "Gets the field number that is used by the SystemCreatedAt field."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# RecordRef.SystemCreatedAtNo Method
+# RecordRef.SystemCreatedAtNo() Method
 > **Version**: _Available or changed with runtime version 6.0._
 
 Gets the field number that is used by the SystemCreatedAt field. The SystemCreatedAt field is a system field that the platform adds to all table objects.

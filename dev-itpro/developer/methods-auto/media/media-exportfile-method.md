@@ -1,9 +1,9 @@
 ---
-title: "Media.ExportFile Method"
+title: "Media.ExportFile(String) Method"
 description: "Exports the media object (such as an image) that is currently used on record to a file on your computer or network."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Media.ExportFile Method
+# Media.ExportFile(String) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Exports the media object (such as an image) that is currently used on record to a file on your computer or network. On the record, the media object is referenced in a Media data type field.

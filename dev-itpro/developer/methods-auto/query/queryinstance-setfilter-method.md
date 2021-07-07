@@ -1,9 +1,9 @@
 ---
-title: "Query.SetFilter Method"
+title: "Query.SetFilter(Any, String [, Any,...]) Method"
 description: "Sets a filter on a column of a query to limit the records in the resulting data set of a query."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Query.SetFilter Method
+# Query.SetFilter(Any, String [, Any,...]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Sets a filter on a column of a query to limit the records in the resulting data set of a query.

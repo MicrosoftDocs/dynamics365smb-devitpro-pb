@@ -1,9 +1,9 @@
 ---
-title: "RecordRef.Mark Method"
+title: "RecordRef.Mark([Boolean]) Method"
 description: "Marks a record."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# RecordRef.Mark Method
+# RecordRef.Mark([Boolean]) Method
 > **Version**: _Available or changed with runtime version 5.3._
 
 Marks a record. You can also use this method to determine whether a record is marked.

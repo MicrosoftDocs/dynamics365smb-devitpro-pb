@@ -1,9 +1,9 @@
 ---
-title: "IsolatedStorage.SetEncrypted Method"
+title: "IsolatedStorage.SetEncrypted(String, String [, DataScope]) Method"
 description: "Encrypts and sets the value associated with the specified key."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# IsolatedStorage.SetEncrypted Method
+# IsolatedStorage.SetEncrypted(String, String [, DataScope]) Method
 > **Version**: _Available or changed with runtime version 2.0._
 
 Encrypts and sets the value associated with the specified key. The input string cannot exceed a length of 215 plain characters; be aware that special characters take up more space.

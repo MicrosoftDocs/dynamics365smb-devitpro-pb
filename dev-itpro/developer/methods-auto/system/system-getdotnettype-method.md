@@ -1,9 +1,9 @@
 ---
-title: "System.GetDotNetType Method"
+title: "System.GetDotNetType(Any) Method"
 description: "Gets the System."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# System.GetDotNetType Method
+# System.GetDotNetType(Any) Method
 > **Version**: _Available or changed with runtime version 2.0._
 
 Gets the System.Type that corresponds to the given value.

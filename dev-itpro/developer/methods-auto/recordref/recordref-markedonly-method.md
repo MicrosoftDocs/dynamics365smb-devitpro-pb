@@ -1,9 +1,9 @@
 ---
-title: "RecordRef.MarkedOnly Method"
+title: "RecordRef.MarkedOnly([Boolean]) Method"
 description: "Activates a special filter."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# RecordRef.MarkedOnly Method
+# RecordRef.MarkedOnly([Boolean]) Method
 > **Version**: _Available or changed with runtime version 5.3._
 
 Activates a special filter. After you use this function, your view of the table includes only records marked by the Mark method (RecordRef).

@@ -1,9 +1,9 @@
 ---
-title: "JsonObject.Remove Method"
+title: "JsonObject.Remove(String) Method"
 description: "Removes the property with the given key from the object."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# JsonObject.Remove Method
+# JsonObject.Remove(String) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Removes the property with the given key from the object.
