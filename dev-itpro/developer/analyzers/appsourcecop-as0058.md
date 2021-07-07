@@ -42,4 +42,4 @@ For more information, see:
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
-[CodeCop AA0161](codecop-aa0161-onlyuseasserterrorintestcodeunits.md)
+[CodeCop AA0161](codecop-aa0161.md)

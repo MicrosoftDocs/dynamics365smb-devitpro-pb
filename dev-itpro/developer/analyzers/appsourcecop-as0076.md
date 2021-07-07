@@ -52,7 +52,7 @@ For example, the following ruleset turns the diagnostic for rule AS0076 into an 
 ```
 
 > [!NOTE]  
-> In order to fully validate obsolete properties and attributes, we recommend enabling the rules [AS0072](appsourcecop-as0072-obsoletetagpreviousversionnotallowed.md), [AS0073](appsourcecop-as0073-obsoletetagmissingnotallowed.md), [AS0074](appsourcecop-as0074-obsoletetagdifferentfrombaselinenotallowed.md), [AS0075](appsourcecop-as0075-obsoletereasonmissingnotallowed.md), and [AS0076](appsourcecop-as0076-obsoletetagformatnotallowed.md).
+> In order to fully validate obsolete properties and attributes, we recommend enabling the rules [AS0072](appsourcecop-as0072.md), [AS0073](appsourcecop-as0073.md), [AS0074](appsourcecop-as0074.md), [AS0075](appsourcecop-as0075.md), and [AS0076](appsourcecop-as0076.md).
 
 ### Setting up the AppSourceCop.json
 
@@ -106,7 +106,7 @@ codeunit 50100 MyCodeunit
 ```
 
 > [!NOTE]  
-> The version to specify when using the default obsolete tag pattern is validated by the rules [AS0072](appsourcecop-as0072-obsoletetagpreviousversionnotallowed.md) and [AS0074](appsourcecop-as0074-obsoletetagdifferentfrombaselinenotallowed.md).
+> The version to specify when using the default obsolete tag pattern is validated by the rules [AS0072](appsourcecop-as0072.md) and [AS0074](appsourcecop-as0074.md).
 
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  

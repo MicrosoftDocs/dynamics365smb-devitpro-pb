@@ -35,7 +35,7 @@ If the action was removed, revert the change by adding back the action and mark 
 
 If the action was renamed in order to change its display string in the web client, consider using the [Caption](../properties/devenv-caption-property.md) property instead.
 
-If the action was renamed in order to comply with naming rules such as [AS0011](appsourcecop-as0011-identifiersmusthaveaffix.md), consider obsoleting the action and introducing a new one.
+If the action was renamed in order to comply with naming rules such as [AS0011](appsourcecop-as0011.md), consider obsoleting the action and introducing a new one.
 
 ## Examples of errors for dependent extensions
 

@@ -86,7 +86,7 @@ var
     a : Label 'Label Text', Comment='Foo', MaxLength=999, Locked=true;
 ```
 
-The **Label** variable names should have an approved suffix. For more information, see [CodeCop Rule AA0074](analyzers/codecop-aa0074-textconstlabelvariablenamesshouldhaveapprovedsuffix.md).
+The **Label** variable names should have an approved suffix. For more information, see [CodeCop Rule AA0074](analyzers/codecop-aa0074.md).
 
 
 ## See Also

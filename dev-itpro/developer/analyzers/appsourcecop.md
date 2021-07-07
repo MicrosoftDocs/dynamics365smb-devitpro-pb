@@ -182,7 +182,7 @@ AS0011: The identifier 'CustomerListExt' must have at least one of the mandatory
 Prepending **Foo** to the name of the page extension object will fix this error and prevent clashes between this page extension and page extensions added by other developers.
 
 > [!NOTE]  
-> It is still possible to use the `mandatoryPrefix` and `mandatorySuffix` properties in the `AppSourceCop.json`. For more information see [AS0011](appsourcecop-as0011-identifiersmusthaveaffix.md).
+> It is still possible to use the `mandatoryPrefix` and `mandatorySuffix` properties in the `AppSourceCop.json`. For more information see [AS0011](appsourcecop-as0011.md).
 
 ## See Also  
 [Using the Code Analysis Tool](../devenv-using-code-analysis-tool.md)  

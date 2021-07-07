@@ -45,7 +45,7 @@ It is not allowed to convert an integration type event to an internal event.
 
 It is allowed to convert an integration type event to a business type event when the following two conditions are met:
 - the integration event did not expose any global variables, and
-- the integration event does not stop exposing the sender to its subscribers (see [AS0021](appsourcecop-as0021-argumentineventattributecannotbechangedtofalse.md)).
+- the integration event does not stop exposing the sender to its subscribers (see [AS0021](appsourcecop-as0021.md)).
 
 As an integration type event defines an event that can be subscribed to by other dependent extensions, it is not allowed to convert it to an internal events. This would break dependent extensions which are subscribing to this event.
 

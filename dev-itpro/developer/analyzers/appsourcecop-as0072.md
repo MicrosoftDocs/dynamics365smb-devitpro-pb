@@ -24,7 +24,7 @@ The ObsoleteTag property and the Tag in the Obsolete attribute must be set to th
 
 This rule verifies that the version specified as obsolete tag for objects whose obsolete state (not obsolete, obsolete pending, or obsolete removed) is updated with the current version is matching the version specified in the `obsoleteTagVersion` property of the AppSourceCop.json.
 
-Obsolete objects which have the same obsolete state as in the baseline are not validated by this rule, but are validated by [AS0074](appsourcecop-as0074-obsoletetagdifferentfrombaselinenotallowed.md).
+Obsolete objects which have the same obsolete state as in the baseline are not validated by this rule, but are validated by [AS0074](appsourcecop-as0074.md).
 
 > [!NOTE]  
 > This rule is only enabled when using the default `obsoleteTagPattern` in the AppSourceCop.json.
@@ -59,7 +59,7 @@ For example, the following ruleset turns the diagnostic for rule AS0072 into an 
 ```
 
 > [!NOTE]  
-> In order to fully validate obsolete properties and attributes, it is recommended to enable the rules [AS0072](appsourcecop-as0072-obsoletetagpreviousversionnotallowed.md), [AS0073](appsourcecop-as0073-obsoletetagmissingnotallowed.md), [AS0074](appsourcecop-as0074-obsoletetagdifferentfrombaselinenotallowed.md), [AS0075](appsourcecop-as0075-obsoletereasonmissingnotallowed.md), and [AS0076](appsourcecop-as0076-obsoletetagformatnotallowed.md).
+> In order to fully validate obsolete properties and attributes, it is recommended to enable the rules [AS0072](appsourcecop-as0072.md), [AS0073](appsourcecop-as0073.md), [AS0074](appsourcecop-as0074.md), [AS0075](appsourcecop-as0075.md), and [AS0076](appsourcecop-as0076.md).
 
 ### Setting up the AppSourceCop.json
 

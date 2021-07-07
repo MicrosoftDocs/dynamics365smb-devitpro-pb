@@ -34,7 +34,7 @@ If the control was removed, revert the change by adding back the control and mar
 
 If the control was renamed in order to change its display string in the web client, consider using the [Caption](../properties/devenv-caption-property.md) property instead.
 
-If the control was renamed in order to comply with naming rules such as [AS0011](appsourcecop-as0011-identifiersmusthaveaffix.md), consider obsoleting the control and introducing a new one.
+If the control was renamed in order to comply with naming rules such as [AS0011](appsourcecop-as0011.md), consider obsoleting the control and introducing a new one.
 
 ## Examples of errors for dependent extensions
 

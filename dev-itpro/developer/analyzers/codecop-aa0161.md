@@ -22,7 +22,7 @@ Only use AssertError in Test Codeunits.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-For more information, see [AppSourceCop AS0058](appsourcecop-as0058-onlyuseasserterrorintestcodeunits.md).
+For more information, see [AppSourceCop AS0058](appsourcecop-as0058.md).
 
 ## See Also  
 [CodeCop Analyzer](codecop.md)  

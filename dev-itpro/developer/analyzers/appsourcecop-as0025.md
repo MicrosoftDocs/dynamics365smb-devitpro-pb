@@ -26,7 +26,7 @@ Parameters cannot be modified, renamed, or removed from Business type and Integr
 
 Events defined in an extension can be referenced from dependent extensions, which can raise them, subscribe to them, or both.
 
-The rules [AS0023](appsourcecop-as0023-returntypecannotbemodifiedinpublicapi.md), [AS0024](appsourcecop-as0024-parameterscannotberemovedoraddedinexternalprocedures.md), and [AS0026](appsourcecop-as0026-parametertypesubtypecannotbemodifiedinpublicapi.md) validate against breaking changes in public methods, which includes public events. They are then validating the scenarios around events being raised from dependent extensions.
+The rules [AS0023](appsourcecop-as0023.md), [AS0024](appsourcecop-as0024.md), and [AS0026](appsourcecop-as0026.md) validate against breaking changes in public methods, which includes public events. They are then validating the scenarios around events being raised from dependent extensions.
 
 This rule validates that changes on the parameters of `Business` type and `Integration` type do not break dependent extensions which subscribe to these events. As an event subscriber can use the parameters passed by the event and references them by name, removing parameters, modifying their type, and renaming them can break dependent extensions.
 

@@ -32,7 +32,7 @@ In the `AppSourceCop.json` configuration file, use the `mandatorySuffix`, `manda
 }
 ```
 
-For more information, see [AppSourceCop Rule AS0011](appsourcecop-as0011-identifiersmusthaveaffix.md).
+For more information, see [AppSourceCop Rule AS0011](appsourcecop-as0011.md).
 
 ## Registering your affixes for AppSource submissions
 

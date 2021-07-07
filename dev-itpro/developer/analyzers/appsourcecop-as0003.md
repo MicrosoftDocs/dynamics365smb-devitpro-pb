@@ -27,7 +27,7 @@ The previous version of the extension, used as a baseline for detecting breaking
 This rule validates that the version of the extension specified as a baseline for detecting breaking changes can be found in the baseline package cache folder.
 
 > [!NOTE]  
-> The rule [AS0091](appsourcecop-as0091-previousversiondependencynotfound.md) verifies that the dependencies of the baseline can be found in the baseline package cache folder.
+> The rule [AS0091](appsourcecop-as0091.md) verifies that the dependencies of the baseline can be found in the baseline package cache folder.
 
 ### Setting up AppSourceCop to detect breaking changes
 

@@ -35,7 +35,7 @@ Sets the title of the entity used in the About box for teaching tips in the UI.
 - When setting this property, you must also set the [AboutText property](devenv-abouttext-property.md). Both About properties must be specified for the teaching tip to appear.
 - The property is ignored at runtime if the current client is not the Web client.
 - When setting this property on page objects:  
-  - The page teaching tip is not displayed if the page has `PageType` set to `RoleCenter`, `NavigatePage`, `ConfirmationDialog`, `StandardDialog`, `CardPart`, `ListPart`, or `HeadlinePart`. Enable UICop rule [AW0012](../analyzers/uicop-aw0012-synopsispropertieslimitedsupport.md) to prevent this at compile-time. 
+  - The page teaching tip is not displayed if the page has `PageType` set to `RoleCenter`, `NavigatePage`, `ConfirmationDialog`, `StandardDialog`, `CardPart`, `ListPart`, or `HeadlinePart`. Enable UICop rule [AW0012](../analyzers/uicop-aw0012.md) to prevent this at compile-time. 
   - The page teaching tip is not displayed automatically if the page is run in lookup mode, but it can still be reached from the page caption. Examples include pages run as an advanced lookup, and pages run with `LookupMode` set to `true`.  
 
 - When setting this property on page controls:  

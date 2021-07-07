@@ -22,7 +22,7 @@ A suffix is required.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 > [!NOTE]
-> With the next major release this rule will be removed in favor of [AS0011 - Identifiers must have an affix](appsourcecop-as0011-identifiersmusthaveaffix.md).
+> With the next major release this rule will be removed in favor of [AS0011 - Identifiers must have an affix](appsourcecop-as0011.md).
 
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
