@@ -3,7 +3,7 @@ title: "AppSourceCop Analyzer"
 description: "AppSourceCop is an analyzer that enforces rules that must be respected by extensions meant to be published to Microsoft AppSource."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/06/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -106,7 +106,7 @@ AppSourceCop is an analyzer that enforces rules that must be respected by extens
 |[AS0092](appsourcecop-as0092-applicationmanifestmustspecifyapplicationinsightsresource.md)|The app.json file must specify an Azure Application Insights resource.|Configuration|Warning|
 |[AS0093](appsourcecop-as0093-entitlementobjectinappsourcenotallowed.md)|Entitlements cannot be defined in an extension.|Configuration|Error|
 |[AS0094](appsourcecop-as0094-permissionsetsshouldnotbeinxml.md)|Permission Sets should not be defined in XML files.|Configuration|Warning|
-|[AS0095](appsourcecop-as0095-tablefieldsaccessmustnotdegrade.md)|The access modifier of table field cannot be changed to a value that provides less access.|Configuration|Error|
+|[AS0095](appsourcecop-as0095-tablefieldsaccessmustnotdegrade.md)|The access modifier of a table field cannot be changed to a value that provides less access.|Configuration|Error|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
