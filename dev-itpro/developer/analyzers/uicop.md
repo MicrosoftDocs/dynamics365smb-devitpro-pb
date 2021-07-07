@@ -1,8 +1,9 @@
 ---
 title: "UICop Analyzer"
+description: "UICop is an analyzer that enforces rules that must be respected by extensions meant to customize the Web Client."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,18 +21,18 @@ UICop is an analyzer that enforces rules that must be respected by extensions me
 
 |Id|Title|Category|Default Severity|
 |--|-----------|--------|----------------|
-|[AW0001](uicop-aw0001-requestpageofxmlportscannotbedisplayed.md)|The Web client does not support displaying the Request page of XMLPorts.|WebClient|Warning|
-|[AW0002](uicop-aw0002-cuegroupscannotcontainbothactionsandfields.md)|The Web client does not support displaying both Actions and Fields in Cue Groups. Only Fields will be displayed.|WebClient|Warning|
-|[AW0003](uicop-aw0003-repeaterwithpartscannotbedisplayed.md)|The Web client does not support displaying Repeater controls containing Parts.|WebClient|Warning|
-|[AW0004](uicop-aw0004-blobcannotbeusedonpagefield.md)|A Blob cannot be used as a source expression for a page field.|WebClient|Warning|
-|[AW0005](uicop-aw0005-useimageproperty.md)|Actions should use the Image property.|WebClient|Info|
-|[AW0006](uicop-aw0006-useusagecategoryproperty.md)|Pages and reports should use the UsageCategory and ApplicationArea properties to be searchable.|WebClient|Info|
-|[AW0007](uicop-aw0007-repeaterwithflowfiltercannotbedisplayed.md)|The Web client does not support displaying Repeater controls that contain FlowFilter fields.|WebClient|Error|
-|[AW0008](uicop-aw0008-repeatersisnotsupportedincardpages.md)|The Web client does not support displaying Repeater controls in pages of type Card, Document, and ListPlus.|WebClient|Warning|
-|[AW0009](uicop-aw0009-blobbitmapusageonpagefielddeprecated.md)|Using a Blob with subtype Bitmap on a page field is deprecated. Instead use the Media/MediaSet data types.|WebClient|Warning|
-|[AW0010](uicop-aw0010-repeatersingroupsnotsupportedinlistpages.md)|A Repeater control used on a List page must be defined at the beginning of the area(Content) section.|WebClient|Warning|
-|[AW0011](uicop-aw0011-addpromotedonlyifallactionsmarkedpromoted.md)|Add PromotedOnly="true" to some or all promoted actions to avoid identical actions from appearing in both the promoted and default sections of the command bar.|WebClient|Info|
-|[AW0012](uicop-aw0012-synopsispropertieslimitedsupport.md)|The Web client does not support About properties in certain contexts.|WebClient|Warning|
+|[AW0001](uicop-aw0001.md)|The Web client does not support displaying the Request page of XMLPorts.|WebClient|Warning|
+|[AW0002](uicop-aw0002.md)|The Web client does not support displaying both Actions and Fields in Cue Groups. Only Fields will be displayed.|WebClient|Warning|
+|[AW0003](uicop-aw0003.md)|The Web client does not support displaying Repeater controls containing Parts.|WebClient|Warning|
+|[AW0004](uicop-aw0004.md)|A Blob cannot be used as a source expression for a page field.|WebClient|Warning|
+|[AW0005](uicop-aw0005.md)|Actions should use the Image property.|WebClient|Info|
+|[AW0006](uicop-aw0006.md)|Pages and reports should use the UsageCategory and ApplicationArea properties to be searchable.|WebClient|Info|
+|[AW0007](uicop-aw0007.md)|The Web client does not support displaying Repeater controls that contain FlowFilter fields.|WebClient|Error|
+|[AW0008](uicop-aw0008.md)|The Web client does not support displaying Repeater controls in pages of type Card, Document, and ListPlus.|WebClient|Warning|
+|[AW0009](uicop-aw0009.md)|Using a Blob with subtype Bitmap on a page field is deprecated. Instead use the Media/MediaSet data types.|WebClient|Warning|
+|[AW0010](uicop-aw0010.md)|A Repeater control used on a List page must be defined at the beginning of the area(Content) section.|WebClient|Warning|
+|[AW0011](uicop-aw0011.md)|Add PromotedOnly="true" to some or all promoted actions to avoid identical actions from appearing in both the promoted and default sections of the command bar.|WebClient|Info|
+|[AW0012](uicop-aw0012.md)|The Web client does not support About properties in certain contexts.|WebClient|Warning|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

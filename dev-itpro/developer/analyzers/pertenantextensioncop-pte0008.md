@@ -1,8 +1,9 @@
 ---
 title: "PerTenantExtensionCop Rule PTE0008"
+description: "Fields must use ApplicationArea property."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/05/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

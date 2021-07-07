@@ -1,8 +1,9 @@
 ---
 title: "CodeCop Rule AA0040"
+description: "It can be difficult to see what variable that a member variable or function refers to, when nesting WITH statements of variables with different types."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/05/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

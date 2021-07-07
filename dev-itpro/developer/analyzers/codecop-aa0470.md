@@ -1,8 +1,9 @@
 ---
 title: "CodeCop Rule AA0470"
+description: "Provide an explanation that describes the content of each of the placeholders."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/05/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

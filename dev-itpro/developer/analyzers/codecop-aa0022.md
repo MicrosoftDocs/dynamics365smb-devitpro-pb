@@ -1,8 +1,9 @@
 ---
 title: "CodeCop Rule AA0022"
+description: "An IF followed by two or more ELSE IF should be replaced with a CASE."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/05/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

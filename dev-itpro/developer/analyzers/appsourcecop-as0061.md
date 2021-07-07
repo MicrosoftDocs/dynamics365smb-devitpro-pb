@@ -1,8 +1,9 @@
 ---
 title: "AppSourceCop Rule AS0061"
+description: "Procedures must not subscribe to CompanyOpen events because it can increase the login time for Dynamics 365 Business Central."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/05/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

@@ -1,8 +1,9 @@
 ---
-title: "Adding or removing a var modifier in events and external procedures is not allowed"
+title: "AppSourceCop Rule AS0063"
+description: "Removing a var modifier on a parameter in an event is not allowed as it will break dependent extensions subscribing to it."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,10 +15,10 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AppSourceCop Rule AS0063
-Adding or removing a var modifier in events and external procedures is not allowed  
+Removing a var modifier in events is not allowed
 
 ## Description
-Adding or removing a var modifier in events and external procedures is not allowed.
+Removing a var modifier on a parameter in an event is not allowed as it will break dependent extensions subscribing to it.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

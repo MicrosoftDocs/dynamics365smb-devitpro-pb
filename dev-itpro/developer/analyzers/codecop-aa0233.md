@@ -1,8 +1,9 @@
 ---
 title: "CodeCop Rule AA0233"
+description: "Avoid enumeration of a dataset when the dataset is not filtered."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/05/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

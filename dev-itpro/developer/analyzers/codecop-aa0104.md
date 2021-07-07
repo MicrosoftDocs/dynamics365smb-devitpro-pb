@@ -1,8 +1,9 @@
 ---
 title: "CodeCop Rule AA0104"
+description: "Column controls in queries of type API should have a camel case name in order to follow the Microsoft REST API Guidelines."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/05/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

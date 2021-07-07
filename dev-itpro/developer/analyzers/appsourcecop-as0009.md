@@ -1,8 +1,9 @@
 ---
 title: "AppSourceCop Rule AS0009"
+description: "The list of fields for the primary key or for the clustered key must not be changed."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/05/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,7 +18,7 @@ author: SusanneWindfeldPedersen
 Key fields must not be changed
 
 ## Description
-Key fields must not be changed.
+The list of fields for the primary key or for the clustered key must not be changed.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

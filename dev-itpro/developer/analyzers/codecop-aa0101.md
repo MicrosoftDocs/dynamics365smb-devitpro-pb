@@ -1,8 +1,9 @@
 ---
 title: "CodeCop Rule AA0101"
+description: "For pages of the type API the value of properties APIPublisher, APIGroup, EntityName, and EntitySetName value should be camel-cased to follow the Microsoft REST API Guidelines."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/05/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

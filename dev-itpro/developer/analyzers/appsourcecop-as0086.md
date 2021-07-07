@@ -1,8 +1,9 @@
 ---
 title: "AppSourceCop Rule AS0086"
+description: "Increasing the length of a field is not allowed as it might break the runtime behavior of dependent extensions referencing it."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/05/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

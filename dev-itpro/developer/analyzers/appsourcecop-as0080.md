@@ -1,8 +1,9 @@
 ---
 title: "AppSourceCop Rule AS0080"
+description: "Decreasing the length of a field is not allowed."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/05/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

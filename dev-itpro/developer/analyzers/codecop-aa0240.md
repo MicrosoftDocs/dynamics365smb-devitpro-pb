@@ -1,8 +1,9 @@
 ---
 title: "CodeCop Rule AA0240"
+description: "Email and Phone No must not be present in any part of the source code that might be collected as telemetry data."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/05/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

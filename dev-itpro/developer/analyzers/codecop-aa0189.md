@@ -1,8 +1,9 @@
 ---
 title: "CodeCop Rule AA0189"
+description: "ApplicationArea has invalid value."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/05/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

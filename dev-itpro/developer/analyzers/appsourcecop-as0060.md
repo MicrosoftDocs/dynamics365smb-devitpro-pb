@@ -1,8 +1,9 @@
 ---
 title: "AppSourceCop Rule AS0060"
+description: "The method cannot be invoked in an AppSource application because it can lead to runtime errors or undefined behavior."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/05/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

@@ -1,8 +1,9 @@
 ---
 title: "UICop Rule AW0004"
+description: "A Blob cannot be used as a source expression for a page field."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/05/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

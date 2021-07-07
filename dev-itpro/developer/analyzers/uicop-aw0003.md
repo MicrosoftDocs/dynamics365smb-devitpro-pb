@@ -1,8 +1,9 @@
 ---
 title: "UICop Rule AW0003"
+description: "The Web client does not support displaying Repeater controls containing Parts."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/05/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
