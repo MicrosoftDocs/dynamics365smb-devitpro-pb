@@ -63,7 +63,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Netherlands|Microsoft|Available|NL|West Europe, Netherlands|
 |New Zealand|Microsoft|Available|NZ|Australia East|
 |Nigeria|Partner|Available|NG|South Africa North|
-|Norway|Microsoft|Available|NO|North Europe, Ireland|
+|Norway|Microsoft|Available|NO|Norway East|
 |Peru|Partner|Available|PE|Brazil South|
 |Philippines|Partner|Available|PH|Southeast Asia, Singapore|
 |Poland|Partner|Available|PL|West Europe, Netherlands|
@@ -80,7 +80,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Spain|Microsoft|Available|ES|West Europe, Netherlands|
 |Sri Lanka|Partner|Available|LK|Southeast Asia, Singapore|
 |Sweden|Microsoft|Available|SE|North Europe, Ireland|
-|Switzerland|Microsoft|Available|CH|West Europe, Netherlands|
+|Switzerland|Microsoft|Available|CH|Switzerland North|
 |Taiwan|Partner|Available|TW|Southeast Asia, Singapore|
 |Thailand|Partner|Available|TH|Southeast Asia, Singapore|
 |Tunisia|Partner|Available|TN|South Africa North|
