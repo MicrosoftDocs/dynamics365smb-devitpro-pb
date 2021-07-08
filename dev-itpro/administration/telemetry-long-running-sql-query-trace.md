@@ -16,7 +16,7 @@ ms.author: jswymer
 
 Any SQL query that takes longer than 1000 milliseconds to execute will be sent to your Azure Application Insights resource. This enables you to focus on tuning SQL queries that take too long to execute (maybe one or more tables miss an index or maybe some filters are missing). It also reduces the ingestion of data into the Azure Application Insights resource to save cost of having telemetry.
 
-With Business Central online, if you want to capture all SQL queries for a short period of time for a given session, you can enable **Additional logging** from the **Help & Support** page. This lets you to analyze queries that take a short time to run but happen very frequently. <!--Additional logging is currently only available on production environments running version 17.4 or later.-->
+With Business Central online, if you want to capture all SQL queries for a short period of time for a given session, you can enable **Additional logging** from the **Help & Support** page. This lets you analyze queries that take a short time to run but happen very frequently. <!--Additional logging is currently only available on production environments running version 17.4 or later.-->
 
 > [!NOTE]
 > With Business Central On-premises, you can change the threshold that defines long running queries. For more information, see [Defining Long Running SQL Queries Threshold](monitor-long-running-sql-queries-event-log.md#threshold).
