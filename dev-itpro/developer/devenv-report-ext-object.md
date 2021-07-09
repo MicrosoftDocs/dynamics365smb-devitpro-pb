@@ -74,22 +74,22 @@ reportextension 50110 MyExtension extends "Customer - Top 10 List"
             // add field from table extending Customer
             column(fromBaseTableExt; Customer.MyField) { }
         }
-    
-        add(Item)
+
+        add(Customer)
         {
             // add a new field to the dataset
             column(netWeight; netWeight) { }
         }
 
-        modify(Item)
+        modify(Customer)
         {
             // modify the new, added field
             trigger OnBeforeAfterGetRecord()
             begin
                 if (weightInPounds) then begin
-                    netWeight := "Net Weight" *2.2;
+                    netWeight := netWeight * 2.2;
                 end else begin
-                    netWeight := "Net Weight";
+                    netWeight := netWeight;
                 end;
             end;
         }
@@ -116,6 +116,11 @@ reportextension 50110 MyExtension extends "Customer - Top 10 List"
     begin
         // add code to run after the report is run, will be run after the original report's equivalent trigger
     end;
+
+    var
+        netWeight: Integer;
+        weightInPounds: Boolean;
+
 }
 ```
 
