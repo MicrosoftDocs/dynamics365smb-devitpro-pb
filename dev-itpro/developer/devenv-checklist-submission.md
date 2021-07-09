@@ -42,6 +42,7 @@ If you do not meet these mandatory requirements, your extension will fail valida
 |Use `addfirst` and `addlast` for placing your actions on Business Central pages. This eliminates breaking your app due to Business Central core changes.|[Placing Actions and Controls](devenv-page-ext-object.md#using-keywords-to-place-actions-and-controls)|
 |The extension submitted must not be a runtime package.|[Creating Runtime Packages](devenv-creating-runtime-packages.md)|
 |The extension submitted must use translation files.|[Working with Translation Files](devenv-work-with-translation-files.md)|
+|The extension submitted must specify at least one dependency on extensions created by Microsoft.|At least one dependency on an extension published by Microsoft is required in order to compute the minimum release of Business Central targeted by your submission. For more information, see [Computation of Releases for Validation](devenv-checklist-submission.md#Against-which-releases-of-Business-Central-is-your-submission-validated)|
 
 <!-- 
 |Permission set(s) must be created by your extension and when marked, should give the user all setup and usage abilities. A user must not be required to have SUPER permissions for setup and usage of your extension.|[Packaging the Permission Set](/powershell/module/microsoft.dynamics.nav.apps.tools/new-navapppackage?view=dynamicsnav-ps-2017)| , [How to: Export Permission Sets](../How-to-Import-Export-Permission-Sets-Permissions.md) |
@@ -126,6 +127,58 @@ The manual test validation document is run manually and if the document doesn’
 > Microsoft recommends that all partners are performing the manual validation as the last check before submitting for validation.
 >
 > This can be done either in online sandbox environments or in sandbox docker containers.
+
+## Against which releases of Business Central is your submission validated?
+
+Extensions submitted to the AppSource marketplace are validated for all countries specified in the submission against all the release targeted by the submission. As part of the validation, the minimum release for your submission is computed. The extensions are then validated for all releases from this minimum release to the current release in production. For instance, if the minimum release for your submission is 18.0 and the latest minor release in production is 18.3, your submission will be validated against 18.0, 18.1, 18.2, and 18.3.
+
+The minimum release for your submission is computed based on the versions `application`, `platform`, and `dependencies` properties specified in the app.json of your extension. The highest version of the dependencies taken on extensions published by Microsoft is used as minimum release version.
+
+> [!NOTE]
+> If multiple extensions are contained in your submission, the minimum release for the submission is the highest minimal release computed for each of the extensions in the submission.
+
+### Example 1 - Dependency on Application
+
+If your extension's manifest is defined as follows, the minimum release where your extension can be installed is 18.0 because the manifest requires the Application extension to be available with a version higher or equal to 18.0.0.0.
+
+```JSON
+{
+  "application": "18.0.0.0",
+}
+```
+
+Its minimal release version is 18.0.
+
+### Example 2 - Dependency on Application and Platform
+
+If your extension's manifest is defined as follows, the minimum release where your extension can be installed is 17.0 because the manifest requires the `System` symbols to be available with a version higher or equal to 17.0.0.0.
+
+```JSON
+{
+  "application": "17.0.0.0",
+  "platform": "18.0.0.0",
+}
+```
+
+### Example 3 - Explicit dependency on Microsoft extension
+
+If your extension's manifest is defined as follows, the minimum release where your extension can be installed is 17.5 because the manifest requires the `Base Application` extension to be available with a version higher or equal to 17.5.0.0.
+
+```JSON
+{
+  "dependencies":
+  [
+    {
+      "id": "437dbf0e-84ff-417a-965d-ed2bb9650972",
+      "name": "Base Application",
+      "publisher": "Microsoft",
+      "version": "17.5.0.0"
+    }
+  ]
+}
+```
+
+Note that for AppSource extensions, we advise using the `application` property over explicit dependencies on the `Base Application` and `System Application`. For more information, see [The Microsoft_Application.app File](devenv-application-app-file.md) and [AS0085](analyzers/appsourcecop-as0085-applicationdependencymustbeused.md).
 
 ## See Also
 [Developing [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]s](devenv-dev-overview.md)  
