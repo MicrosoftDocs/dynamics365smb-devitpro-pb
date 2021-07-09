@@ -392,7 +392,7 @@ POST https://api.businesscentral.dynamics.com/v2.0/<environmentName>/api/bctech/
 ```
 ### Example 4
 
-You can also use navigational property to get car models of a car brand in a single request as illustrated below:
+You can also use the navigational property to get car models of a car brand in a single request as illustrated below:
 
 ``` 
 GET https://api.businesscentral.dynamics.com/v2.0/<environmentName>/api/bctech/demo/v1.0/companies(<company id>))/carBrands(<car brand id>)?$expand=carModels
