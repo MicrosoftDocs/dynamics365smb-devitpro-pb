@@ -1,6 +1,6 @@
 ---
-title: Telemetry | Microsoft Docs
-description: Learn how the Business Central provides telemetry for each environment.  
+title: Monitoring and Analyzing Telemetry
+description: Learn how the Business Central provides telemetry for each environment, both for online and for on-premises environments.  
 author: jswymer
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -8,7 +8,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 05/12/2021
+ms.date: 07/09/2021
 ms.author: jswymer
 ---
 
@@ -16,15 +16,20 @@ ms.author: jswymer
 
 [!INCLUDE[2019_releasewave2.md](../includes/2019_releasewave2.md)]
 
-[!INCLUDE[prod_short](../developer/includes/prod_short.md)] emits telemetry data for various activities and operations on tenants and extensions. Whether running [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Online or On-premises, you can set up your tenants to send telemetry to Application Insights. Application Insights is a service hosted within Azure that gathers telemetry data for analysis and presentation. For more information, see [What is Application Insights?](/azure/azure-monitor/app/app-insights-overview). Monitoring telemetry gives you a look at the activities and general health of your tenants. It helps you diagnose problems and analyze operations that affect performance.
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] emits telemetry data for various activities and operations on tenants and extensions. Whether running [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online or on-premises, you can set up your tenants to send telemetry to Application Insights. [Application Insights](/azure/azure-monitor/app/app-insights-overview) is a service hosted within Azure that gathers telemetry data for analysis and presentation. Monitoring telemetry gives you a look at the activities and general health of your tenants. It helps you diagnose problems and analyze operations that affect performance.  
 
 ## Tenant-level and extension-level telemetry
 
-Application Insights can be enabled on two different levels: tenant and extension. When enabled on the tenant, either for a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online tenant or on-premises [!INCLUDE[server](../developer/includes/server.md)] instance, telemetry is emitted to a single Application Insights resource for gathering data on tenant-wide operations. 
+Application Insights can be enabled on two different levels:
 
-With [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 2 and later, Application Insights can also be enabled on a per-extension basis. An Application Insights key is set in the extension's manifest (app.json file). At runtime, certain events related to the extension are emitted to the Application Insights resource. This feature targets publishers of per-tenant extensions to give them insight into issues in their extension before partners and customers report them.
+- Tenant  
 
-Both for tenant-level and for extension-level telemetry, it is possible to craft custom telemetry messages directly from AL using the [LogMessage Method](../developer/methods-auto/session/session-logmessage-string-string-verbosity-dataclassification-telemetryscope-string-string-string-string-method.md).   
+    When enabled on the tenant, either for a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online tenant or on-premises [!INCLUDE[server](../developer/includes/server.md)] instance, telemetry is emitted to a single Application Insights resource for gathering data on tenant-wide operations.
+- Extension  
+
+    With [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 2 and later, Application Insights can also be enabled on a per-extension basis. An Application Insights key is set in the extension's manifest (app.json file). At runtime, certain events related to the extension are emitted to the Application Insights resource. This feature targets publishers of per-tenant extensions to give them insight into issues in their extension before partners and customers report them.
+
+Both for tenant-level and for extension-level telemetry, it is possible to craft custom telemetry messages directly from AL using the [LogMessage Method](../developer/methods-auto/session/session-logmessage-string-string-verbosity-dataclassification-telemetryscope-string-string-string-string-method.md).  
 
 ## Available telemetry
 
@@ -67,25 +72,22 @@ In Application Insights, telemetry from [!INCLUDE[prod_short](../developer/inclu
 
 ## <a name="enable"></a> Enabling Application Insights
 
-Sending telemetry data to Application Insights requires you have an Application Insights resource in Azure. Once you have the Application Insights resource, you can start to configure your tenants and extensions to send telemetry data to your Application Insights resource. The configuration is different for Online and On-premises:
- 
-- For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Online, Application Insights is enabled by using the Administration Center. For more information, see [Enable Sending Telemetry to Application Insights](tenant-admin-center-telemetry.md#appinsights).
+Sending telemetry data to Application Insights requires you have an Application Insights resource in Azure. Once you have the Application Insights resource, you can start to configure your tenants and extensions to send telemetry data to your Application Insights resource. For more information, see [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md).  
 
-- For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] On-premises, see [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md).
-
-- For extensions, see [Sending Extension Telemetry to Azure Application Insights](../developer/devenv-application-insights-for-extensions.md).
+> [!NOTE]
+> For extensions, see [Sending Extension Telemetry to Azure Application Insights](../developer/devenv-application-insights-for-extensions.md).
 
 ## <a name="viewing"></a>Viewing telemetry data in Application Insights
 
 Telemetry from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is stored in Azure Monitor Logs in the *traces* table. You can view collected data by writing log queries. Log queries are written in the Kusto query language (KQL). For more information, see [Logs in Azure Monitor](/azure/azure-monitor/platform/data-platform-logs) and [Overview of log queries in Azure Monitor](/azure/azure-monitor/log-query/log-query-overview).
 
-As a simple example, do the following steps: 
+As a simple example, follow these steps:  
 
 1. In the Azure portal, open your Application Insights resource.
 2. In the **Monitoring** menu, select **Logs**.
 3. On the **New Query** tab, type the following to get the last 100 traces:
 
-    ```
+    ```kql
     traces
     | take 100
     | sort by timestamp desc 
@@ -100,13 +102,14 @@ Each trace includes a `customDimensions` column. The `customDimensions` column, 
 
 ## Application Insights sample code
 
-On the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] BCTech repository on GitHub, samples of KQL code are available to make it easy to get started using Application Insights. 
+In the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] BCTech repository on GitHub, samples of KQL code are available to make it easy to get started using Application Insights.  
 
 For more information, see [Business Central BCTech repository on GitHub](https://github.com/microsoft/BCTech/tree/master/samples/AppInsights).
 
 ## See also
 
 [Telemetry Event IDs](telemetry-event-ids.md)  
+[Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  
 [Working with Administration Tools](administration.md)  
 [The Business Central Administration Center](tenant-admin-center.md)  
 [Managing Environments](tenant-admin-center-environments.md)  

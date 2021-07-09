@@ -108,6 +108,7 @@
 ### [Prepare for Major Updates with Preview Environments](administration/preview-environments.md)
 ## Monitoring and Analyzing Telemetry
 ### [Overview](administration/telemetry-overview.md)
+### [Enable Application Insights](administration/telemetry-enable-application-insights.md)
 ### [App Key Vault Secret Telemetry](administration/telemetry-extension-key-vault-trace.md)
 ### [Authorization Telemetry](administration/telemetry-authorization-trace.md)
 ### [Company Lifecycle Telemetry](administration/telemetry-company-lifecycle-trace.md)
@@ -2904,6 +2905,7 @@
 #### [Extension Lifecycle Telemetry](administration/telemetry-extension-lifecycle-trace.md)
 #### [Extension Update Telemetry](administration/telemetry-extension-update-trace.md)
 #### [Field Monitoring Telemetry](administration/telemetry-field-monitoring-trace.md)
+#### [Job Queue Lifecycle Telemetry](administration/telemetry-job-queue-lifecycle-trace.md)
 #### [Long Running AL Method Telemetry](administration/telemetry-al-method-trace.md)
 #### [Long Running SQL Queries Telemetry](administration/telemetry-long-running-sql-query-trace.md)
 #### [Report Generation Telemetry](administration/telemetry-reports-trace.md)
