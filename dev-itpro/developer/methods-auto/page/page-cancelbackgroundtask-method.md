@@ -60,6 +60,8 @@ begin​
 end;
 ```
 
+CurrPage is a system-defined variable. For more information, see [System-Defined Variables](../../devenv-system-defined-variables.md). 
+
 ## See Also
 
 [Page Background Tasks](../../devenv-page-background-tasks.md)  
