@@ -72,7 +72,7 @@ Not all .NET Regex classes map so directly to system modules, however. The .NET 
 
 
 /// <remark>
-/// For more information, visit https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.match?view=netcore-3.1.
+/// For more information, visit https://docs.microsoft.com/dotnet/api/system.text.regularexpressions.match?view=netcore-3.1.
 /// </remark>
 table 3965 Matches
 {

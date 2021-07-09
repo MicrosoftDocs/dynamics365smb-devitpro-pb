@@ -17,7 +17,7 @@ author: EmmaNielsson
 Would you like to know what has changed in update 17.4? Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update. In addition, we have gathered some good to know information and links, you might find interesting.
 
 ## Hotfixes
-Find an overview of hotfixes in this [article](https://support.microsoft.com/en-us/topic/update-17-4-for-microsoft-dynamics-365-business-central-2020-release-wave-2-application-build-17-4-21531-platform-build-17-0-21516-a98ea8e3-b93c-4f14-b1bd-f115a00d6d11).
+Find an overview of hotfixes in this [article](https://support.microsoft.com/topic/update-17-4-for-microsoft-dynamics-365-business-central-2020-release-wave-2-application-build-17-4-21531-platform-build-17-0-21516-a98ea8e3-b93c-4f14-b1bd-f115a00d6d11).
 
 ## Feature changes
 - [Use recurring journals to allocate balances by dimension values](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/use-recurring-journals-allocate-balances-dimension-values)

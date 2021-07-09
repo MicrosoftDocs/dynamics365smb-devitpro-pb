@@ -42,4 +42,4 @@ The package ID of the specified application.
 ## See Also
 [ModuleInfo Data Type](moduleinfo-data-type.md)  
 [Getting Started with AL](../../../developer/devenv-get-started.md)  
-[Developing Extensions](../../../devenv-dev-overview.md)
+[Developing Extensions](../../devenv-dev-overview.md)
