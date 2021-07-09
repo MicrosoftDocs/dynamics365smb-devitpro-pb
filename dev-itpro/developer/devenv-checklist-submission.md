@@ -44,36 +44,37 @@ If you do not meet these mandatory requirements, your extension will fail valida
 |The extension submitted must use translation files.|[Working with Translation Files](devenv-work-with-translation-files.md)|
 |The extension submitted must specify at least one dependency on extensions created by Microsoft.|At least one dependency on an extension published by Microsoft is required in order to compute the minimum release of Business Central targeted by your submission. For more information, see [Computation of Releases for Validation](devenv-checklist-submission.md#Against-which-releases-of-Business-Central-is-your-submission-validated)|
 
-<!-- 
-|Permission set(s) must be created by your extension and when marked, should give the user all setup and usage abilities. A user must not be required to have SUPER permissions for setup and usage of your extension.|[Packaging the Permission Set](/powershell/module/microsoft.dynamics.nav.apps.tools/new-navapppackage?view=dynamicsnav-ps-2017)| , [How to: Export Permission Sets](../How-to-Import-Export-Permission-Sets-Permissions.md) |
--->
-
 ## Technical validation performed by the Business Central validation team
 
-The primary responsibility of the technical validation is to ensure that the Business Central online service is stable and that the apps can be installed and run without destabilizing the service.  
+The primary responsibility of the technical validation is to ensure that the Business Central online service is stable and that the apps can be installed and run without destabilizing the service.
 
-The technical validation is for a large part automated and will validate the steps described in the technical checklist above through some pipelines.  
-
-The submitted apps will be extracted and investigated following this list:
-
-1. The apps are investigated. All dependencies must be included in the submission. We will lookup prior versions of the apps in the depot. If your app has a dependency on a third party app in AppSource, you should not include this, we will locate it in the depot. **Any unresolved dependencies will cause the submission to be rejected. If you include extensions created by Microsoft in your submission, it will also be rejected.**
-2. If the version numbers haven't changed and the countries haven’t changed, the validation is skipped and **the apps will not be updated.**
-3. App.json is investigated for mandatory fields. **If mandatory fields are missing, the submission is rejected.**
-4. Affixes for the submission are located. **If affixes haven't been registered or cannot be located, the submission is rejected.**
-5. Business Central Artifacts are located for the version the apps is submitted for (*Current*, *NextMinor*, or *NextMajor*).
-6. For every country in the submission list, we perform the same validation:
-   - A sandbox container based on the Business Central Artifacts with the right country version is created.
-   - Any dependency apps not included in the submission are installed. **If any installation fails, the submission is rejected.**
-   - In order of dependencies, all apps in the submission are tested using AppSourceCop analyzer. For more information, see [AppSourceCop Analyzer](analyzers/appsourcecop.md)
-     - If any **breaking changes are identified, the submission is rejected.**
-     - If mandatory affixes **are not included on all object names, the submission is rejected.**
-   - In order of dependencies, all prior versions of the apps are published and installed. **If any installation fails, the submission is rejected.**
-   - In order of dependencies, all new versions of the apps are published and upgrade is run (apps must be digitally signed, else they won’t install). **If any installation/upgrade fails, the submission is rejected.**
-   - A simple connection test is run; opening a role center and check simple actions and pages. If the connection test fails, **the submission investigated and potentially rejected.**
-7. If all country validations succeed and no errors are found then **the submission is accepted.**.
+The technical validation is fully automated and validates the requirements defined in the technical validation checklist above.
 
 > [!Important]
-> Microsoft recommends that all partners are performing the same checks as described above before submitting apps for validation to maximize chances of validation success.
+> Microsoft recommends that all partners are executing the self validation documented below before submitting apps for validation to maximize chances of validation success.
+
+1. The manifest of all extensions in the submission is validated. If any **mandatory properties or required property values are missing, the submission is rejected.**.
+2. The registration of affixes for the publisher name of all the extensions in the submission is validated. If **the publisher name does not have any registered affixes, the submission is rejected.**
+3. The signature of all extensions in the submission are validated. If any **extension is not signed or its signature is not valid, the submission is rejected.**
+4. The consistency of the main extension information (name, publisher, version) is validated against the offer description. If any **differences are noticed, the submission is rejected.**
+5. The extensions in the submission are validated. If **any runtime packages are present, the submission is rejected.**
+
+Once the extension has passed these first validation steps, the minimum and maximum release for your submission are computed as described in [Computation of Releases for Validation](devenv-checklist-submission.md#Against-which-releases-of-Business-Central-is-your-submission-validated).
+
+For **each country and each release** targeted by your submission, the following steps are executed **for each extension** in the submission:
+
+1. If the extension with the same version has already been validated for the country, further validation for this extension is skipped.
+2. The set of dependencies for your extension is resolved. **Any unresolved dependencies will cause the submission to be rejected. If you include extensions created by Microsoft in your submission, it will also be rejected.**
+
+> [!Note]
+> You are required to include the dependencies for your extension as part of your submission only if your are submitting a newer version for them. If you do not include them in your submission, they will be download from the [App Management API](../administration/appmanagement/app-management-api.md).
+
+3. The set of baselines for your extension is resolved using the the [App Management API](../administration/appmanagement/app-management-api.md).
+4. The extension is compiled against the set of dependencies resolved. If the **compilation fails, the submission is rejected.**
+5. The extension is tested against the resolved baselines using the AppSourceCop. If any **violations or breaking changes are identified, the submission is rejected.**
+6. If the **runtime version of the extension is not supported by the release targeted, the submission is rejected.**
+
+If all extensions in the submission succeed the validation for each country and release wihtout errors, **the submission is accepted.**.
 
 ## Running technical validation yourself
 
@@ -128,16 +129,22 @@ The manual test validation document is run manually and if the document doesn’
 >
 > This can be done either in online sandbox environments or in sandbox docker containers.
 
+## How to get more information on the technical validation failures?
+
+Detailed validation results are automatically logged to the ApplicationInsights storage account specified by instrumentation key in the manifest of the main extension in your submission.
+
 ## Against which releases of Business Central is your submission validated?
 
-Extensions submitted to the AppSource marketplace are validated for all countries specified in the submission against all the release targeted by the submission. As part of the validation, the minimum release for your submission is computed. The extensions are then validated for all releases from this minimum release to the current release in production. For instance, if the minimum release for your submission is 18.0 and the latest minor release in production is 18.3, your submission will be validated against 18.0, 18.1, 18.2, and 18.3.
+Extensions submitted to the AppSource marketplace are validated for all countries specified in the submission against all the release targeted by the submission. As part of the validation, the minimum release for your submission is computed. The extensions are then validated for all releases from this minimum release to the current release in production, unless you have specified a maximum target release in your submission. For instance, if the minimum release for your submission is 18.0 and the latest minor release in production is 18.3, your submission will be validated against 18.0, 18.1, 18.2, and 18.3.
+
+### How is the minimum release computed?
 
 The minimum release for your submission is computed based on the versions `application`, `platform`, and `dependencies` properties specified in the app.json of your extension. The highest version of the dependencies taken on extensions published by Microsoft is used as minimum release version.
 
 > [!NOTE]
 > If multiple extensions are contained in your submission, the minimum release for the submission is the highest minimal release computed for each of the extensions in the submission.
 
-### Example 1 - Dependency on Application
+#### Example 1 - Dependency on Application
 
 If your extension's manifest is defined as follows, the minimum release where your extension can be installed is 18.0 because the manifest requires the Application extension to be available with a version higher or equal to 18.0.0.0.
 
@@ -149,7 +156,7 @@ If your extension's manifest is defined as follows, the minimum release where yo
 
 Its minimal release version is 18.0.
 
-### Example 2 - Dependency on Application and Platform
+#### Example 2 - Dependency on Application and Platform
 
 If your extension's manifest is defined as follows, the minimum release where your extension can be installed is 17.0 because the manifest requires the `System` symbols to be available with a version higher or equal to 17.0.0.0.
 
@@ -160,7 +167,7 @@ If your extension's manifest is defined as follows, the minimum release where yo
 }
 ```
 
-### Example 3 - Explicit dependency on Microsoft extension
+#### Example 3 - Explicit dependency on Microsoft extension
 
 If your extension's manifest is defined as follows, the minimum release where your extension can be installed is 17.5 because the manifest requires the `Base Application` extension to be available with a version higher or equal to 17.5.0.0.
 
@@ -179,6 +186,29 @@ If your extension's manifest is defined as follows, the minimum release where yo
 ```
 
 Note that for AppSource extensions, we advise using the `application` property over explicit dependencies on the `Base Application` and `System Application`. For more information, see [The Microsoft_Application.app File](devenv-application-app-file.md) and [AS0085](analyzers/appsourcecop-as0085-applicationdependencymustbeused.md).
+
+### How to specify a maximum release for your extension?
+
+In order to specify the maximum release for your extension, you must include a file named `submissionManifest.json` along with your libraries in Partner Center. This submission manifest allows you to specify the release for which your extension should stop being validated.
+
+For instance, the following submission manifest indicates that the extension will be validated for all releases versions from the minimum release version until 18.0 excluded. If the minimum release for the submission is 17.3, this means that this extension will be validated for 17.3, 17.4, and 17.5.
+
+```JSON
+{
+  "incompatibleFromRelease": "18.0"
+}
+```
+
+### When should you specify a maximum release for your extension?
+
+The `incompatibleFromRelease` property is meant to help you release a HotFix of your extension in production.
+
+Let's imagine that your AppSource extension is available for tenants on releases from 17.0 to 17.5 with version 1.0.0.0 and is available for release 18.0 with version 2.0.0.0. You are now required to release a bug fix for customers on releases 17.0 to 17.5 that are using version 1.0.0.0. If you submit a version 3.0.0.0 of your extension, it will be validated for breaking changes version 2.0.0.0 and will be validated for all releases from 17.0 to 18.0. However it is not always possible to have one version of an extension that is compatible with all releases of Business Central.
+
+In this case, you can create a version 1.0.0.1 of your extension and submit it with `incompatibleFromRelease` set to 18.0. This version of the extension will then only be validated for releases 17.0 to 17.5 and will be validated for breaking changes against version 1.0.0.0.
+
+> [!IMPORTANT]
+> You must not introduce new tables or tables fields as a HotFix of your extension as this will prevent environments where this extension is installed to be updated to the next release of Business Central.
 
 ## See Also
 [Developing [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]s](devenv-dev-overview.md)  
