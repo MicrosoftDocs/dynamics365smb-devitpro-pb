@@ -3,7 +3,7 @@ title: "Text.TrimEnd Method"
 description: "Removes all trailing occurrences of a set of characters specified in an array from the current Text object."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,9 +29,9 @@ Result :=   Text.TrimEnd([Chars: Text])
 ## Parameters
 *Text*  
 &emsp;Type: [Text](text-data-type.md)  
-An instance of the [Text](text-data-type.md) data type.
+An instance of the [Text](text-data-type.md) data type.  
 
-*Chars*  
+*[Optional] Chars*  
 &emsp;Type: [Text](text-data-type.md)  
 A string containing the characters to remove.  
 

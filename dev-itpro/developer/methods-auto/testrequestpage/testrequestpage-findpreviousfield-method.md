@@ -3,7 +3,7 @@ title: "TestRequestPage.FindPreviousField Method"
 description: "Finds the previous field in the data set that is displayed on a test page. The row is searched from the beginning of the dataset defined by the current filter. The search is performed by iterating across the rows, comparing the primary key with the primary key fields of the record. For large dataset, use SetFilter to limit the dataset."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,7 @@ Finds the previous field in the data set that is displayed on a test page. The r
 ## Parameters
 *TestRequestPage*  
 &emsp;Type: [TestRequestPage](testrequestpage-data-type.md)  
-An instance of the [TestRequestPage](testrequestpage-data-type.md) data type.
+An instance of the [TestRequestPage](testrequestpage-data-type.md) data type.  
 
 *Field*  
 &emsp;Type: [TestField](../testfield/testfield-data-type.md)  
@@ -39,7 +39,7 @@ The value of the field.
 
 
 ## Return Value
-*Ok*  
+*[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the row is found, otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 

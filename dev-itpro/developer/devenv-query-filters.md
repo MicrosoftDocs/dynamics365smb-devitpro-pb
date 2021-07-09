@@ -12,7 +12,7 @@ author: jswymer
 ---
 # Filtering in Query Objects
 
-You specify filters in a query to restrict the data in the resulting dataset. A filter applies conditions on fields in a table that is associated with the query. For a field to be included in the resulting dataset, a field must meet the conditions of the filter.  
+You specify filters in a query to restrict the data in the resulting dataset. A filter applies conditions on fields in a table that is associated with the query. For a record to be included in the resulting dataset, its values in these fields must meet the conditions of the filter.  
 
 ## Overview
 

@@ -26,11 +26,11 @@ This article describes some known issues in [!INCLUDE[prod short](../developer/i
 
 ### Problem
 
-When you upgrade to version 18 from an earlier major version, authentication based on NavUserPassword credential type no longer works for existing users, because passwords aren't considered valid anymore.
+When you upgrade to version 18 from an earlier major version, authentication that's based on NavUserPassword credential type no longer works for existing users. Passwords aren't considered valid anymore.
 
 ### Impact
 
-When users try to sign in to Business Central, they'll get an error, similar to the following:
+When users try to sign in to Business Central, they'll get an error, similar to the following message:
 
 `The specified user name or password is not correct, or you do not have a valid user account in Dynamics 365 Business Central`
 
@@ -84,6 +84,28 @@ To workaround this issue, activate the `EnableLegacyIterationCount` feature swit
 
 - This feature switch is activated per server instance, so it pertains to all tenants in a multitenant deployment.
 
+## Data upgrades fail because of missing $system fields in the Permission and Permission Set tables
+<!-- https://dynamicssmb2.visualstudio.com/Dynamics%20SMB/_workitems/edit/400103 -->
+
+> Applies to: 18.0-18.1
+
+### Problem
+
+When you upgrade to version 18 from an earlier major version, and the [!INCLUDE[server](../developer/includes/server.md)] instance is [configured to use permission sets from data](upgrade-permissions.md#continue-using-the-permission-sets-defined-as-data), the data upgrade fails because some system fields aren't added to **Permission** and **Permission Set** tables.
+
+### Impact
+
+When you run the Start-NAVDataUpgrade or Start-NAVAppDataUpgrade against the base application, the cmdlet fails. You'll get an error message that the following columns in the **Permission Set** table are missing or invalid:
+
+- `$systemCreatedAt`
+- `$systemCreatedBy`
+- `$systemModifiedAt`
+- `$systemModifiedBy`
+
+### Workaround
+
+Upgrade to [version 18.2](https://support.microsoft.com/help/5004062) or later.
+
 ## Package Microsoft .NET Core Windows Server Hosting failed with error
 
 > Applies to: All versions up to and including version 18.0.
@@ -92,7 +114,7 @@ To workaround this issue, activate the `EnableLegacyIterationCount` feature swit
 
 When you install [!INCLUDE [prod_short](../includes/prod_short.md)] on premises, installation may fail with the error `Package Microsoft .NET Core Windows Server Hosting failed with error`, or with error code 1638, when the installer attempts to install prerequisite components.  
 
-This occurs when a version of Windows Server Hosting is installed on the server that is newer than version 2.1.14, which is what [!INCLUDE [prod_short](../includes/prod_short.md)] attempts to install from its installation folder.  
+This problem occurs when a version of Windows Server Hosting newer than version 2.1.14 is installed on the server, because [!INCLUDE [prod_short](../includes/prod_short.md)] installer attempts to install version 2.1.14.  
 
 The issue only occurs when the currently installed version is a newer minor version, not a newer major version of Windows Server Hosting.  
 
@@ -104,9 +126,9 @@ Installation will fail and will be rolled back.
 
 The issue can be resolved in different ways:
 
-* Manually install Windows Server Hosting version 3 or later before you install Business Central components.
-* Uninstall Windows Server Hosting from your server before you install Business Central
-* Use the installer from Business Central version 18.1 or later. In those versions, Business Central will skip installing Windows Server Hosting as a prerequisite component if the installer determines that newer Windows Server Hosting components are already installed on the server.
+- Manually install Windows Server Hosting version 3 or later before you install Business Central components.
+- Uninstall Windows Server Hosting from your server before you install Business Central
+- Use the installer from Business Central version 18.1 or later. In these versions, Business Central installer skips installing Windows Server Hosting components if it determines that newer Windows Server Hosting components are already installed.
 
 
 <!-- never included 
@@ -170,8 +192,8 @@ More specifically, you'll get the following errors when synchronizing the table 
 
 To avoid these errors, after converting the version 14 tables to AL, rename instances of the primary key `Key1 ` to `PK` in the affected table objects before building your extensions.
 
-- If you're following the upgrade articles listed above, do this change as part of Task 2. If you've already published the first table migration extension with the wrong key names, we recommend restore the databases and go through the upgrade again, starting from Task 2.
-- You should also make these changes if you're only doing a technical upgrade, so you won't run into problems later if eventually uptake the Microsoft Base Application.
+- If you're following the upgrade articles listed above, do this change as part of Task 2. If you've already published the first table migration extension with the wrong key names, restore the databases and go through the upgrade again, starting from Task 2.
+- Also make these changes if you're only doing a technical upgrade. This way, you won't run into problems later if eventually uptake the Microsoft Base Application.
 
 For each affected table object, do the following steps:
 
@@ -291,7 +313,7 @@ There are two workarounds for this issue:
     2. Under **Info**, select **Download package**.
     3. Extract the contents of the nupkg file to a folder.
 
-        There are different ways to extract the content of nupkg file. An easy way is to change the file extension from *.nupkg* to *.zip*. Then, extract the files like you would do with any .zip file.
+        There are different ways to extract the content of nupkg file. An easy way is to change the file extension from *\.nupkg* to *\.zip*. Then, extract the files like you would do with any .zip file.
 
     4. Copy the files in the **\lib\net45** folder to the **Service** folder of the [!INCLUDE[server](../developer/includes/server.md)] installation. Replace the existing files when prompted.
 

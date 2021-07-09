@@ -3,7 +3,7 @@ title: "Page.Run Method"
 description: "Creates and launches a page that you specify. You can use CLEAR method to remove the page."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,7 +28,7 @@ Creates and launches a page that you specify. You can use CLEAR method to remove
 ## Parameters
 *Page*  
 &emsp;Type: [Page](page-data-type.md)  
-An instance of the [Page](page-data-type.md) data type.
+An instance of the [Page](page-data-type.md) data type.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

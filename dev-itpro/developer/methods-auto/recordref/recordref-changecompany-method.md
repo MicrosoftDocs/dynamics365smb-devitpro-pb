@@ -3,7 +3,7 @@ title: "RecordRef.ChangeCompany Method"
 description: "Redirects references to table data from one company to another."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,15 +27,15 @@ Redirects references to table data from one company to another.
 ## Parameters
 *RecordRef*  
 &emsp;Type: [RecordRef](recordref-data-type.md)  
-An instance of the [RecordRef](recordref-data-type.md) data type.
+An instance of the [RecordRef](recordref-data-type.md) data type.  
 
-*CompanyName*  
+*[Optional] CompanyName*  
 &emsp;Type: [String](../string/string-data-type.md)  
 The name of the company to which you want to change. If you omit this parameter, you change back to the current company.  
 
 
 ## Return Value
-*Ok*  
+*[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 

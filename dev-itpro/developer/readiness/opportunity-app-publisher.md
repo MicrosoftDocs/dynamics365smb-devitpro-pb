@@ -1,4 +1,4 @@
-﻿---
+---
 title: The SMB opportunity for app publishers 
 description: Learn about the business opportunity we see for software companies in the SMB space if you build your solution on Dynamics 365 Business Central.
 author: edupont04
@@ -22,7 +22,7 @@ Our mission is to empower every individual and every organization on the planet 
 
 [Microsoft AppSource](https://appsource.microsoft.com/) is part of Microsoft's commercial marketplace where customers can find, try and get business solutions apps. It is the launch pad for your joint go-to-market activities with Microsoft and a flywheel for business growth. Using launch promotion, demand generation, and joint sales and marketing, your offer portfolio on AppSource can be the centerpiece of your cloud business engine.  
 
-In November 2020, Microsoft AppSource had more than 3 million monthly active users and more than +20.000 apps. Specifically for Business Central, there are more than 1000 apps available, and the number is growing fast.  
+In November 2020, Microsoft AppSource had more than 3 million monthly active users and more than +20.000 apps. Specifically for Business Central, there are more than 1500 apps available, and the number is growing fast.  
 
 ## Go-to Market Scenarios
 
@@ -33,7 +33,7 @@ As an AppSource publisher you can focus on the following two scenarios with Busi
 
 ### Connect
 
-Connect your existing online service with Business Central through a powerful API. Here are a few examples which of existing connect apps which you can find on AppSource:  
+Connect your existing online service with Business Central through a powerful API. Here are a few examples of existing connect apps that you can find on AppSource:  
 
 - [Square payments](https://appsource.microsoft.com/product/dynamics-365-business-central/PUBID.squareinc1581374005853%7CAID.square-payments%7CPAPPID.313d5c68-0d92-4f43-b470-ab5857ecf9c6), which allow you take payments with a Square terminal.  
 

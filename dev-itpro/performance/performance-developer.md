@@ -113,16 +113,18 @@ Reports generally fall into two categories. They can be specific to a single ins
 Read more about how to tune RDL reports here:
 - [RDLC Performance Optimization Tips](https://community.dynamics.com/business/b/navteam/posts/a-couple-of-rdlc-performance-optimization-tips)
 
-## Efficient extracts to data warehouses
+[!INCLUDE [send-report-excel](../developer/includes/send-report-excel.md)]
 
-When establishing a data warehouse, you typically need to do two types of data extraction:
+## Efficient extracts to data lakes or data warehouses
+
+When establishing a data lake or a data warehouse, you typically need to do two types of data extraction:
 
 1. A historical load (all data from a given point-in-time)
 2. Delta loads (what's changed since the historical load)
 
-The fastest way to get a historical load from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online is to get a database export as a BACPAC file (using the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] admin center) and restore it in Azure SQL Database or on a SQL Server. For on-premises installations, you can just take a backup of the tenant database.
+The fastest (and least disruptive) way to get a historical load from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online is to get a database export as a BACPAC file (using the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] admin center) and restore it in Azure SQL Database or on a SQL Server. For on-premises installations, you can just take a backup of the tenant database.
 
-The fastest (and the less disruptive) way to get delta loads from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online is to set up API queries configured with read-scaleout and use the data audit field **LastModifiedOn** (introduced in version 17.0) on filters.
+The fastest (and least disruptive) way to get delta loads from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online is to set up API queries configured with read-scaleout and use the data audit field **LastModifiedOn** (introduced in version 17.0) on filters.
 
 ## AL performance patterns
 

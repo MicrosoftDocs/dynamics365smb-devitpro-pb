@@ -3,7 +3,7 @@ title: "Report.WordXmlPart Method"
 description: "Gets the report data structure as structured XML that is compatible with Microsoft Word custom XML parts."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,9 +27,9 @@ String :=   Report.WordXmlPart([ExtendedFormat: Boolean])
 ## Parameters
 *Report*  
 &emsp;Type: [Report](report-data-type.md)  
-An instance of the [Report](report-data-type.md) data type.
+An instance of the [Report](report-data-type.md) data type.  
 
-*ExtendedFormat*  
+*[Optional] ExtendedFormat*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 If you set this variable to true, then XML elements will include the following attributes:
 -   ElementType="Parameter|Column|DataItem". Specifies the element type as defined for the report in Report Designer. Parameter is typically used for elements, such as captions.

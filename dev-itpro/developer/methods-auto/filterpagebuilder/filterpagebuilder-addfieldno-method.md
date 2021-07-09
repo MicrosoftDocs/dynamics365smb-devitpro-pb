@@ -3,7 +3,7 @@ title: "FilterPageBuilder.AddFieldNo Method"
 description: "Adds a table field to the filter control for a table on the filter page."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,7 @@ Adds a table field to the filter control for a table on the filter page.
 ## Parameters
 *FilterPageBuilder*  
 &emsp;Type: [FilterPageBuilder](filterpagebuilder-data-type.md)  
-An instance of the [FilterPageBuilder](filterpagebuilder-data-type.md) data type.
+An instance of the [FilterPageBuilder](filterpagebuilder-data-type.md) data type.  
 
 *Name*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -37,13 +37,13 @@ The name that is assigned to the table in the filter control. This value must ma
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The number that is assigned to the field in the table as specified by the Field No. Property.
         
-*Filter*  
+*[Optional] Filter*  
 &emsp;Type: [String](../string/string-data-type.md)  
 A default filter on the field that is specified by the Field parameter.  
 
 
 ## Return Value
-*Ok*  
+*[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the field was added to the field list for the specified filter control; otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 

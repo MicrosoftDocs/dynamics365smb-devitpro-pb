@@ -3,7 +3,7 @@ title: "TestField.Lookup Method"
 description: "Calls the OnAfterLook trigger with the selected record"
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,7 @@ Calls the OnAfterLook trigger with the selected record
 ## Parameters
 *TestField*  
 &emsp;Type: [TestField](testfield-data-type.md)  
-An instance of the [TestField](testfield-data-type.md) data type.
+An instance of the [TestField](testfield-data-type.md) data type.  
 
 *Selected*  
 &emsp;Type: [RecordRef](../recordref/recordref-data-type.md)  

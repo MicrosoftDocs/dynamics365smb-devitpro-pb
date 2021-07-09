@@ -13,7 +13,7 @@ ms.date: 04/01/2019
 ms.author: solsen
 ---
 
-# Get picture
+# Get picture (v1.0)
 Retrieve the properties and relationships of a picture object for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## HTTP request
@@ -26,16 +26,16 @@ GET businesscentralPrefix/companies({companyId})/customer({customerId})/picture
 
 ```
 
-## Request headers
+## Request headers (v1.0)
 
 |Header|Value|
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
 
-## Response
+## Response (v1.0)
 If successful, this method returns a ```200 OK``` response code and a **picture** object in the response body.
 
-## Example
+## Example (v1.0)
 
 **Request**
 

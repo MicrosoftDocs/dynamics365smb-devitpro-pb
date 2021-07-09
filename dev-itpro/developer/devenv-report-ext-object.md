@@ -117,8 +117,10 @@ reportextension 50110 MyExtension extends "Customer - Top 10 List"
         // add code to run after the report is run, will be run after the original report's equivalent trigger
     end;
 }
-
 ```
+
+
+[!INCLUDE [send-report-excel](includes/send-report-excel.md)]
 
 ## See Also
 

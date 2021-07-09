@@ -3,7 +3,7 @@ title: "Dialog.Confirm Method"
 description: "Creates a dialog box that prompts the user for a yes or no answer. The dialog box is centered on the screen."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -31,10 +31,10 @@ Ok :=   Dialog.Confirm(String: String [, Default: Boolean] [, Value1: Any,...])
 &emsp;Type: [String](../string/string-data-type.md)  
 Specifies the string that is displayed in the dialog box. Use a backslash (\\) to indicate a new line. The string can be a text constant that is enabled for multilanguage functionality.
         
-*Default*  
+*[Optional] Default*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 Specifies the default button. If you do not specify a default button, then No is used as the default button.  
-*Value1*  
+*[Optional] Value1*  
 &emsp;Type: [Any](../any/any-data-type.md)  
   
 

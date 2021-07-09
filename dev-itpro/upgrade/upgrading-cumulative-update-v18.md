@@ -2,7 +2,7 @@
 title: Install a version 18 update
 description: This article describes the tasks required for getting the monthly version 18 update applied to your Dynamics 365 Business Central on-premises.
 ms.custom: na
-ms.date: 04/20/2021
+ms.date: 07/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

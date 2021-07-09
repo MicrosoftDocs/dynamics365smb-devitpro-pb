@@ -3,7 +3,7 @@ title: "Session.LogSecurityAudit Method"
 description: "Logs an IfX audit message to a telemetry account."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -39,10 +39,10 @@ The description of the result state.
 *AuditCategory*  
 &emsp;Type: [AuditCategory](../auditcategory/auditcategory-option.md)  
 The category of the audit message.  
-*TargetType*  
+*[Optional] TargetType*  
 &emsp;Type: [String](../string/string-data-type.md)  
 The target type(s) of this audit message must correspond to target name(s).  
-*TargetName*  
+*[Optional] TargetName*  
 &emsp;Type: [String](../string/string-data-type.md)  
 The target name(s) of this audit message must correspond to target type(s).  
 

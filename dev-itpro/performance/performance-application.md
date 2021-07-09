@@ -80,6 +80,12 @@ These areas of the application are known to cause a performance impact and requi
 - [Item tracking and Lot/SN Expiration dates](/dynamics365/business-central/inventory-how-work-item-tracking)  
 - [Change log](/dynamics365/business-central/across-log-changes)  
 
+## If processing of Sales Order lines is slow
+If you experience that processing of Sales Order lines that contain bill-of-materials (BOMs) is slow, then check if _Stockout Warning_ on the page  _Sales & Receivables Setup_, is set to **true**. If that is the case, then change this to **false**.
+
+Why? 
+_Stockout Warning_ specifies if a warning should be displayed if a user enters a quantity on a sales document that brings the item’s inventory below zero. The calculation includes all sales document lines that have not yet been posted. Stockout Warning can still be used on items; this can be done by setting the individual Item’s _Stockout Warning_ to **true** on the Item Card. 
+
 ## Manage the database access intent on reports, API pages, and queries
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] supports the **Read Scale-Out** feature in Azure SQL Database and SQL Server to load-balance analytical workloads. **Read Scale-Out** is built in to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, but it can also be enabled for on-premises.
@@ -87,6 +93,10 @@ These areas of the application are known to cause a performance impact and requi
 **Read Scale-Out** applies to queries, reports, or API pages. With these objects, instead of sharing the primary, they can be set up to run against a read-only replica. This setup essentially isolates them from the main read-write workload. This way, they won't affect the performance of business processes.
 
 A drawback of reading from a replica is that it introduces a slight delay compared to reading from the primary database. **Read Scale-Out** is controlled by the [DataAccessControl property](../developer/properties/devenv-dataaccessintent-property.md) on objects. This property determines whether to use a replica if one is available. If this delay isn't acceptable for an object, you can overwrite the default database access intent from the UI. For more information, see [Managing Database Access Intent](/dynamics365/business-central/admin-data-access-intent)
+
+## Number of companies
+
+Having many companies can cause administrative tasks, like upgrades, point-in-time restores, and database exports, to take a very long time and potentially hit timeout values. If you have more than 50 companies, we recommend that you test these operations and typical usage scenarios extensively. Delete companies that are no longer needed.
 
 ## Don't do these things
 
@@ -98,6 +108,7 @@ Finally, make sure that you don't repeat these performance mistakes that we have
 - Don't adjust item costs automatically if you have many item entries. Run in the background instead.  
 - Don't postpone setting up global dimensions, because it can be a heavy operation when you have much data. Set up correct global dimensions to avoid changing them later on.
 - Don't run the **Copy company** operation during business hours.
+- Don't apply large configuration packages during business hours. See also [Prepare a Configuration Package](/dynamics365/business-central/admin-how-to-prepare-a-configuration-package).
 
 ## See Also
 

@@ -3,7 +3,7 @@ title: "File.DownloadFromStream Method"
 description: "Sends a file from server computer to the client computer. The client computer is the computer that is running the Windows client or the computer that is running the browser that accesses the web client."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -49,7 +49,7 @@ The name to give the downloaded file. This is the default file name that is show
 
 
 ## Return Value
-*Ok*  
+*[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
@@ -69,11 +69,36 @@ Use [Upload Method \(File\)](../../methods-auto/file/file-upload-method.md) and 
 
 Use [Download Method \(File\)](../../methods-auto/file/file-download-method.md) and [DownloadFromStream Method \(File\)](../../methods-auto/file/file-downloadfromstream-method.md) to send a file from a [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] instance to a client.  
 
-We recommend that you use the methods in codeunit **419 File Management** to upload and download files.
+We recommend that you use the methods in codeunit **419 File Management** to upload and download files on-premises.
 
 [!INCLUDE[multi_file_download_web_client](../../includes/multi_file_download_web_client.md)]
 
-## Example  
+## Example - Cloud
+
+```al
+procedure DownloadFromCloud()
+    var
+        Data: BigText;
+        ins: InStream;
+        outs: OutStream;
+        TempBLOB: codeunit "Temp Blob";
+        filename: Text;
+    begin
+        Data.AddText('Hello World');
+        TempBLOB.CreateOutStream(outs);
+        Data.Write(outs);
+        TempBLOB.CreateInStream(ins);
+        filename := 'helloworld.txt';
+        DownloadFromStream(
+            ins,  // InStream to save
+            '',   // Not used in cloud
+            '',   // Not used in cloud
+            '',   // Not used in cloud
+            filename); // Filename is browser download folder
+    end;
+```
+
+## Example - On-premises 
 
 ```al
  var

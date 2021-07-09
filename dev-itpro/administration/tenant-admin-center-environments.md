@@ -8,7 +8,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, restore, backup
-ms.date: 04/01/2021
+ms.date: 07/01/2021
 ms.author: jswymer
 ---
 
@@ -104,9 +104,25 @@ The renaming of an environment is logged and shown in the [operations log](#opsl
 
 ## <a name="opslog"></a>Log of administrative operations
 
-The **Operations** section of [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] provides a log of operations that internal administrators and delegated administrators from the partner have made in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] or through the admin center API. Currently, the log includes the following operations: renaming environments restoring environments.
+The **Operations** section of [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] provides a log of operations that internal administrators and delegated administrators from the partner have made in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] or through the admin center API. Use this log to see which operations were created and when. You can also access detailed error messages in this log, should any operation fail.
 
-Use this log to see which operations were created and when. You can also access detailed error messages in this log, should any operation fail.  
+### Operations
+
+Currently, the log includes the following operations:
+
+|Type|Description|More information|
+|----|-----------|----------------|
+|Rename environment|Environment was renamed by using the Admin Center.|[Rename an Environment](tenant-admin-center-environments-rename.md)|
+|Restore environment|Environment was restored by using the Admin Center.|[Restoring an Environment](tenant-admin-center-backup-restore.md)|
+|Move environment|An environment was moved to another Azure Active Directory organization.|[Move an Environment](tenant-admin-center-environments-move.md)
+|Environment app hotfix|App was hotfixed by using the App Management API.|[App Management API](appmanagement/app-management-api.md#schedule-environment-hotfix)
+|Environment app install|App was installed by using the tenant's **Extension Management** page or the API install endpoint.|[Extension Management Page](/dynamics365/business-central/ui-extensions-install-uninstall#installing-an-extension)<br><br>[Install Endpoint](administration-center-api.md#install-an-app)|
+|Environment app uninstall|App was uninstalled by using the tenant's **Extension Management** page or the API uninstall endpoint.|[Extension Management Page](/dynamics365/business-central/ui-extensions-install-uninstall#uninstalling-an-extension)<br><br>[Uninstall Endpoint](administration-center-api.md#uninstall-an-app)|
+|Environment app update |App was updated either by the Admin Center or API update endpoint.| [Update an App in Admin Center](tenant-admin-center-manage-apps.md#install-an-app-update---the-flow)<br><br>[Update Endpoint](administration-center-api.md#update-an-app)|
+
+### Retention period
+
+The operations are kept for 365 days, after which they're deleted.
 
 ## See also
 

@@ -59,7 +59,6 @@ The **Page** field shows information about the main page or a selected (highligh
 - The ID as specified by the [ID property](./properties/devenv-properties.md).
 - The type, as specified by the [PageType property](properties/devenv-pagetype-property.md).
 
-
 #### Elements shown with limited information  
 
 - Role Center pages
@@ -69,6 +68,8 @@ The **Page** field shows information about the main page or a selected (highligh
 - Report request pages and previews
 
     If you open a report request page or preview for inspection, the only information shown in the Page Inspection pane is the report's name and ID.
+
+    [!INCLUDE [send-report-excel](includes/send-report-excel.md)]
 
 - System parts, such as Links or Notes, and parts containing charts.
 

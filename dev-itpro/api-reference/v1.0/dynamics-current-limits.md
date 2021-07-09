@@ -1,6 +1,6 @@
 ---
-title: (v1.0) "API Limits in Dynamics 365 Business Central"
-description: (v1.0) ""
+title: "API Limits in Dynamics 365 Business Central (v1.0)"
+description: "Describes current API limits in Business Central (v1.0)"
 author: jswymer
 ms.custom: na
 ms.date: 01/14/2020
@@ -12,9 +12,9 @@ ms.service: "dynamics365-business-central"
 ms.author: jswymer
 ---
 
-# Current API Limits  
+# Current API Limits (v1.0)
 
-This article lists the different limits that are set on OData and SOAP requests. The limits are subject to change, following the [Microsoft API Terms of Use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use).
+This article lists the different limits that are set on OData and SOAP requests. The limits are subject to change, following the [Microsoft API Terms of Use](/legal/microsoft-apis/terms-of-use).
 
 ## API Rate limits
 
@@ -61,6 +61,6 @@ The maximum size of the OData or SOAP request. HTTP response code `413: Request 
 ## See Also
 
 [Working with API Rate Limits](dynamics-rate-limits.md)  
-[Best practices on transient errors](https://docs.microsoft.com/azure/architecture/best-practices/transient-faults)  
-[Using OData Batch request](https://docs.microsoft.com/openspecs/windows_protocols/ms-odata/dd99aa5c-d81e-4eac-9e07-039491356bf6)  
-[Microsoft API Terms of Use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use)
+[Best practices on transient errors](/azure/architecture/best-practices/transient-faults)  
+[Using OData Batch request](/openspecs/windows_protocols/ms-odata/dd99aa5c-d81e-4eac-9e07-039491356bf6)  
+[Microsoft API Terms of Use](/legal/microsoft-apis/terms-of-use)

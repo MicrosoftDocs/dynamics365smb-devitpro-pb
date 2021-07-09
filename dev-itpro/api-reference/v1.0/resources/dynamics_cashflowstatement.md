@@ -13,7 +13,7 @@ ms.date: 04/01/2019
 ms.author: solsen
 ---
 
-# cashFlowStatement resource type
+# cashFlowStatement resource type (v1.0)
 
 [!INCLUDE[d365_api_newversion](../../../includes/d365_api_newversion.md)]
 

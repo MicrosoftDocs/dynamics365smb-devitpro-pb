@@ -29,15 +29,15 @@ Activates a special filter. After you use this function, your view of the table 
 ## Parameters
 *Record*  
 &emsp;Type: [Record](record-data-type.md)  
-An instance of the [Record](record-data-type.md) data type.
+An instance of the [Record](record-data-type.md) data type.  
 
-*MarkedOnly*  
+*[Optional] MarkedOnly*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 Activates a special filter.  
 
 
 ## Return Value
-*MarkedOnly*  
+*[Optional] MarkedOnly*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the special filter is being used; otherwise, **false**.
 

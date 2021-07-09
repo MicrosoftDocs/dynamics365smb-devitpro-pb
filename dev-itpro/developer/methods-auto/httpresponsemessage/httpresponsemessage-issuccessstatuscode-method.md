@@ -3,7 +3,7 @@ title: "HttpResponseMessage.IsSuccessStatusCode Method"
 description: "Gets a value that indicates if the HTTP response was successful."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,7 +30,7 @@ IsSuccessStatusCode :=   HttpResponseMessage.IsSuccessStatusCode()
 ## Parameters
 *HttpResponseMessage*  
 &emsp;Type: [HttpResponseMessage](httpresponsemessage-data-type.md)  
-An instance of the [HttpResponseMessage](httpresponsemessage-data-type.md) data type.
+An instance of the [HttpResponseMessage](httpresponsemessage-data-type.md) data type.  
 
 ## Return Value
 *IsSuccessStatusCode*  

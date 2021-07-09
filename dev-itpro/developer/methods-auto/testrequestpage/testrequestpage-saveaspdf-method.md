@@ -3,7 +3,7 @@ title: "TestRequestPage.SaveAsPdf Method"
 description: "Saves a report as an Adobe Acrobat (.pdf) file."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,7 +29,7 @@ Saves a report as an Adobe Acrobat (.pdf) file.
 ## Parameters
 *TestRequestPage*  
 &emsp;Type: [TestRequestPage](testrequestpage-data-type.md)  
-An instance of the [TestRequestPage](testrequestpage-data-type.md) data type.
+An instance of the [TestRequestPage](testrequestpage-data-type.md) data type.  
 
 *FileName*  
 &emsp;Type: [String](../string/string-data-type.md)  

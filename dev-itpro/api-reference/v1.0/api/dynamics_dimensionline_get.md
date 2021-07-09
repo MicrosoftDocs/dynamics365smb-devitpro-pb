@@ -13,7 +13,7 @@ ms.date: 04/01/2019
 ms.author: solsen
 ---
 
-# Get dimensionLines
+# Get dimensionLines (v1.0)
 Retrieve the properties and relationships of a dimension line object for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## Prerequisites
@@ -31,19 +31,19 @@ In order to get a specific dimension line, you can use the following URL:
 GET businesscentralPrefix/companies({id})/dimensionLines(parentId=({id}),id=({id}))
 ```
 
-## Request headers
+## Request headers (v1.0)
 
 |Header       |Value                     |
 |-------------|--------------------------|
 |Authorization|Bearer {token}. Required. |
 
-## Request body
+## Request body (v1.0)
 Do not supply a request body for this method.
 
-## Response
+## Response (v1.0)
 If successful, this method returns a ```200 OK``` response code and a **dimensionLines** object in the response body.
 
-## Example
+## Example (v1.0)
 
 **Request**
 

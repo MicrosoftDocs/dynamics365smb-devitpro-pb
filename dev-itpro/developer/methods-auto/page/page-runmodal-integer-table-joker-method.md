@@ -3,7 +3,7 @@ title: "Page.RunModal Method"
 description: "Creates, opens, and closes a page that you specify. When a page is run modally, no input, such as a keyboard or mouse click, can occur except for objects on the modal page."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,17 +29,17 @@ Creates, opens, and closes a page that you specify. When a page is run modally, 
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The number of the page that you want to run.
         
-*Record*  
+*[Optional] Record*  
 &emsp;Type: [Record](../record/record-data-type.md)  
 By default, this method shows the record that was last displayed on the page. For each object, information is stored about the most recently shown record and the attached key and filters. Use this optional parameter to select a specific record to display on the page. The record must be of the same type as the table that is attached to the page. When the record is displayed, the key and filters that are attached to the record are used.
         
-*Field*  
+*[Optional] Field*  
 &emsp;Type: [Any](../any/any-data-type.md)  
 Use this optional parameter to select a specific field which will be in focus.  
 
 
 ## Return Value
-*Action*  
+*[Optional] Action*  
 &emsp;Type: [Action](../action/action-option.md)  
 Specifies what action the user took on the page.
 

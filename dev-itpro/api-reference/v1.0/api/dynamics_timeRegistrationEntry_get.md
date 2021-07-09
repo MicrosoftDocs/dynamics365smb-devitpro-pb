@@ -13,7 +13,7 @@ ms.date: 04/01/2019
 ms.author: solsen
 ---
 
-# Get timeRegistrationEntries
+# Get timeRegistrationEntries (v1.0)
 Retrieve the properties and relationships of an timeRegistrationEntries object for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## HTTP request
@@ -26,19 +26,19 @@ GET businesscentralPrefix/companies({id})/timeRegistrationEntries?$filter=employ
 > Please note the $filter applied to timeRegistrationEntries API. The filter is applied to get timeRegistrationEntries for a specific employee. 
 
 
-## Request headers
+## Request headers (v1.0)
 
 |Header|Value|
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
 
-## Request body
+## Request body (v1.0)
 Do not supply a request body for this method.
 
-## Response
+## Response (v1.0)
 If successful, this method returns a ```200 OK``` response code and an **timeRegistrationEntries** object in the response body.
 
-## Example
+## Example (v1.0)
 
 **Request**
 

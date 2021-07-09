@@ -13,7 +13,7 @@ ms.date: 04/01/2019
 ms.author: solsen
 ---
 
-# vendors resource type
+# vendors resource type (v1.0)
 
 [!INCLUDE[d365_api_newversion](../../../includes/d365_api_newversion.md)]
 
@@ -33,7 +33,10 @@ Represents a vendor in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 
 
-## Navigation 
+## Navigation
+
+|Go to|Type|Description|
+|-----|----|------------|
 |[Picture](../resources/dynamics_picture.md)|picture   |Gets the picture of vendor. |
 |[defaultDimensions](../resources/dynamics_defaultDimension.md)|defaultDimension   |Gets the defaultDimension of vendor. |
 |[currency](../resources/dynamics_currencies.md)|currency   |Gets the currency of vendor. |

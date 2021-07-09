@@ -3,7 +3,7 @@ title: "RecordRef.RecordId Method"
 description: "Gets the RecordID of the record that is currently selected in the table. If no table is selected, an error is generated."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,7 +30,7 @@ RecordID :=   RecordRef.RecordId()
 ## Parameters
 *RecordRef*  
 &emsp;Type: [RecordRef](recordref-data-type.md)  
-An instance of the [RecordRef](recordref-data-type.md) data type.
+An instance of the [RecordRef](recordref-data-type.md) data type.  
 
 ## Return Value
 *RecordID*  

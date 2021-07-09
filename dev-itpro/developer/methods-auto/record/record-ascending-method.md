@@ -3,7 +3,7 @@ title: "Record.Ascending Method"
 description: "Gets or sets the order in which the system searches through a table."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 05/31/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,15 +29,15 @@ Gets or sets the order in which the system searches through a table.
 ## Parameters
 *Record*  
 &emsp;Type: [Record](record-data-type.md)  
-An instance of the [Record](record-data-type.md) data type.
+An instance of the [Record](record-data-type.md) data type.  
 
-*Ascending*  
+*[Optional] Ascending*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
   
 
 
 ## Return Value
-*Ascending*  
+*[Optional] Ascending*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 
 
