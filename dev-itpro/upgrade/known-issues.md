@@ -38,7 +38,7 @@ In event viewer, you'll see the following error:
 
 `Your user name <name> or password is incorrect, or you do not have a valid account in Dynamics 365 Business Central.`
 
-### Workaround
+### <a name="legacy"></a>Workaround
 
 To workaround this issue, activate the `EnableLegacyIterationCount` feature switch by completing these steps.
 
@@ -83,6 +83,18 @@ To workaround this issue, activate the `EnableLegacyIterationCount` feature swit
     In these cases, as an administrator, you'll have to assign new passwords to the affected users.
 
 - This feature switch is activated per server instance, so it pertains to all tenants in a multitenant deployment.
+
+## NavUserPassword authentication performance after upgrade to version 18
+
+> Applies to: 18.X
+
+### Problem
+
+When you upgrade to version 18 from an earlier major version, authentication that's based on the NavUserPassword credential type takes longer than it did in previous versions. This reason is that the password algorithm has been updated in version 18. The extra time it takes per authentication isn't noticeable to a normal user. But in a solution that has a very heavy authentication load, for example from multiple and repeated web service calls, the extra time may be significant.
+
+### Workaround
+
+One solution is to activate the `EnableLegacyIterationCount` feature switch, as described in the [previous issue](#legacy). This feature switch sets the server instance to use the same authentication algorithm used in version 17. Another solution is to change the authentication method to either OAuth or Web service access key. With these authentication methods, the password isn't stored in Business Central in a hashed format.
 
 ## Data upgrades fail because of missing $system fields in the Permission and Permission Set tables
 <!-- https://dynamicssmb2.visualstudio.com/Dynamics%20SMB/_workitems/edit/400103 -->
