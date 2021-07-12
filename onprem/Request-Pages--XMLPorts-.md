@@ -30,7 +30,7 @@ A request page is a dialog box that appears when an XMLport is run from Object D
   
  The following illustration shows the request page for an XMLport that imports and exports from the **Customer** table. The **No.** and **Name** fields have been set as filters.  
   
- ![XMLport Request page](media/MicrosoftDynamicsNAV_RequestPageXMLport.jpg "MicrosoftDynamicsNAV\_RequestPageXMLport")  
+ ![XMLport Request page.](media/MicrosoftDynamicsNAV_RequestPageXMLport.jpg "MicrosoftDynamicsNAV\_RequestPageXMLport")  
   
 ## Filtering on Request Pages  
  The fields that you define as **ReqFilterFields** are shown on the request page. In addition, a user can add more fields on which to filter.  

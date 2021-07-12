@@ -23,7 +23,7 @@ In short, the app lets users:
 - Copy a link to any Business Central record and paste it into Teams conversation to share with your coworkers. In Teams, the link will expand that into a compact card that displays a defined set of fields about the record.
 - From the card in teams, users can select a button to view more details about the record. The card opens into window inside Teams that includes FactBoxes and other embedded content, such as charts. With the proper permissions, anyone in the conversation can edit fields, start workflows, and take action from the window - without having to switch from Teams.
 
-[![Teams integration with Business Central](media/teams-intro-v3.png)](media/teams-intro-v3.png#lightbox)
+[![Teams integration with Business Central.](media/teams-intro-v3.png)](media/teams-intro-v3.png#lightbox)
 
 
 ## Managing, Installing, and Using the Business Central App for Teams

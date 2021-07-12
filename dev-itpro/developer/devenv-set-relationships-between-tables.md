@@ -95,7 +95,7 @@ The following table describes each of the symbols.
 
 For example, you have an **Orders** table that stores orders and a **Salesperson** table that stores the names of all salespeople in your company. In the **Orders** table, you can include a **Salesperson** field that identifies the salesperson. By setting up a relationship between these two tables, you can check whether the **Salesperson** field in the **Orders** table contains a valid code.  
   
- ![Table relationships](../media/NAV_ADG_7_Diag_7.png "NAV\_ADG\_7\_Diag\_7")  
+ ![Table relationships.](../media/NAV_ADG_7_Diag_7.png "NAV\_ADG\_7\_Diag\_7")  
   
 For example, you have a **Vendors** table with all your vendors and a **Currency Code** table. You can create a relationship between a **Currency Code** field in the **Vendors** table and the **Currency Code** table. This will allow users to look up information about valid currency codes.  
   

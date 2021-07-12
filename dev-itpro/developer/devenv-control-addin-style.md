@@ -38,58 +38,58 @@ The following colors represent the [!INCLUDE[d365fin_md](includes/d365fin_md.md)
 
 |  Color  |  Name  |  Use  |  HEX value  |
 |---------|--------|-------|-------------|
-|![Primary (#00B7C3)](media/style/00B7C3.png "Primary (#00B7C3)")|Primary color|Prominent UI elements and areas.|#00B7C3|
-| ![Secondary (#505C6D)](media/style/505C6D.png "Secondary (#505C6D)")|Secondary color| UI elements and areas in default or subdued state.|#505C6D|
+|![Primary (#00B7C3).](media/style/00B7C3.png "Primary (#00B7C3)")|Primary color|Prominent UI elements and areas.|#00B7C3|
+| ![Secondary (#505C6D).](media/style/505C6D.png "Secondary (#505C6D)")|Secondary color| UI elements and areas in default or subdued state.|#505C6D|
 
 ### Style colors
 The following colors are used to express or accent conditions or user activity in the UI. For example, these colors are used as sentiments, or color indication, on Cues.
   
 |  Color  |  Description  | HEX value|
 |---------|---------------|----------|
-|![Standard (#00B7C3)](media/style/212121.png "Accent (#00B7C3)")|Standard|#212121|
-|![Accent (#00B7C3)](media/style/00B7C3.png "Accent (#00B7C3)")|Accent|#00B7C3|
-|![Strong (#00B7C3)](media/style/212121.png "Strong (#00B7C3)")|Strong|#212121|
-|![Favorable (#35AB22)](media/style/35AB22.png "Favorable (#35AB22)")|Favorable|#35AB22|
-|![Ambiguous (#9F9700)](media/style/9F9700.png "Ambiguous (#9F9700)")|Ambiguous|#9F9700|
-|![Unfavorable (#EB6965)](media/style/EB6965.png "Unfavorable (#EB6965)")|Unfavorable|#EB6965|
-|![Attention (#EB6965)](media/style/EB6965.png "Attention (#EB6965)")|Attention|#EB6965|
-|![Subordinate (#A7ADB6)](media/style/A7ADB6.png "Subordinate (#A7ADB6)")|Subordinate|#A7ADB6|
+|![Standard (#00B7C3).](media/style/212121.png "Accent (#00B7C3)")|Standard|#212121|
+|![Accent (#00B7C3).](media/style/00B7C3.png "Accent (#00B7C3)")|Accent|#00B7C3|
+|![Strong (#00B7C3).](media/style/212121.png "Strong (#00B7C3)")|Strong|#212121|
+|![Favorable (#35AB22).](media/style/35AB22.png "Favorable (#35AB22)")|Favorable|#35AB22|
+|![Ambiguous (#9F9700).](media/style/9F9700.png "Ambiguous (#9F9700)")|Ambiguous|#9F9700|
+|![Unfavorable (#EB6965).](media/style/EB6965.png "Unfavorable (#EB6965)")|Unfavorable|#EB6965|
+|![Attention (#EB6965).](media/style/EB6965.png "Attention (#EB6965)")|Attention|#EB6965|
+|![Subordinate (#A7ADB6).](media/style/A7ADB6.png "Subordinate (#A7ADB6)")|Subordinate|#A7ADB6|
 
 ### More palette colors
 The following table includes additional colors that you can use in the UI.
 
 |  Color  |  Description  | HEX value|
 |---------|---------------|----------|
-|![YELLOW (#C9C472)](media/style/C9C472.png "YELLOW (#C9C472)")|Yellow|#C9C472|
-|![GREEN (#88CE81)](media/style/88CE81.png "GREEN (#88CE81)")|Green|#88CE81|
-|![RED (#E97768)](media/style/E97768.png "RED (#E97768)")|Red|#E97768|
-|![BLUE (#75B5E7)](media/style/75B5E7.png "BLUE (#75B5E7)")|Blue|#75B5E7|
-|![LIGHTGREEN (#59CCB4)](media/style/59CCB4.png "LIGHTGREEN (#59CCB4)")|Light green|#59CCB4|
-|![SKY (#75D8E7)](media/style/75D8E7.png "SKY (#75D8E7)")|Sky|75D8E7|
-|![EGG (#EEEA86)](media/style/EEEA86.png "EGG (#EEEA86)")|Egg|EEEA86|
-|![ORANGE (#E89E63)](media/style/E89E63.png "ORANGE (#E89E63)")|Orange|#E89E63|
-|![VIOLET (#DBBDEB)](media/style/DBBDEB.png "VIOLET (#DBBDEB)")|Violet|#DBBDEB|
-|![TEAL (#39B294)](media/style/39B294.png "TEAL (#39B294)")|Teal|#39B294|
-|![GRASS (#73BA5A)](media/style/73BA5A.png "GRASS (#73BA5A)")|Grass|#73BA5A|
-|![SCARLET (#E65E6D)](media/style/E65E6D.png "SCARLET (#E65E6D)")|Scarlet|#E65E6D|
+|![YELLOW (#C9C472).](media/style/C9C472.png "YELLOW (#C9C472)")|Yellow|#C9C472|
+|![GREEN (#88CE81).](media/style/88CE81.png "GREEN (#88CE81)")|Green|#88CE81|
+|![RED (#E97768).](media/style/E97768.png "RED (#E97768)")|Red|#E97768|
+|![BLUE (#75B5E7).](media/style/75B5E7.png "BLUE (#75B5E7)")|Blue|#75B5E7|
+|![LIGHTGREEN (#59CCB4).](media/style/59CCB4.png "LIGHTGREEN (#59CCB4)")|Light green|#59CCB4|
+|![SKY (#75D8E7).](media/style/75D8E7.png "SKY (#75D8E7)")|Sky|75D8E7|
+|![EGG (#EEEA86).](media/style/EEEA86.png "EGG (#EEEA86)")|Egg|EEEA86|
+|![ORANGE (#E89E63).](media/style/E89E63.png "ORANGE (#E89E63)")|Orange|#E89E63|
+|![VIOLET (#DBBDEB).](media/style/DBBDEB.png "VIOLET (#DBBDEB)")|Violet|#DBBDEB|
+|![TEAL (#39B294).](media/style/39B294.png "TEAL (#39B294)")|Teal|#39B294|
+|![GRASS (#73BA5A).](media/style/73BA5A.png "GRASS (#73BA5A)")|Grass|#73BA5A|
+|![SCARLET (#E65E6D).](media/style/E65E6D.png "SCARLET (#E65E6D)")|Scarlet|#E65E6D|
 
 ### Chart colors
 The following table describes the colors used in charts.
 
 |  Color  |  Description  | HEX value|
 |---------|---------------|----------|
-| ![Secondary (#505C6D)](media/style/505C6D.png "Secondary (#505C6D)")|-|#505C6D|
-| ![Secondary (#008089)](media/style/008089.png "Secondary (#505C6D)")|-|#008089|
-|![Primary (#00B7C3)](media/style/00B7C3.png "Primary (#00B7C3)")|Primary color|#00B7C3|
-|![YELLOW (#C9C472)](media/style/C9C472.png "YELLOW (#C9C472)")|Yellow|#C9C472|
-|![RED (#E97768)](media/style/E97768.png "RED (#E97768)")|Red|#E97768|
-|![BLUE (#75B5E7)](media/style/75B5E7.png "BLUE (#75B5E7)")|Blue|#75B5E7|
-|![LIGHTGREEN (#59CCB4)](media/style/59CCB4.png "LIGHTGREEN (#59CCB4)")|Light green|#59CCB4|
-|![SKY (#75D8E7)](media/style/75D8E7.png "SKY (#75D8E7)")|Sky|75D8E7|
-|![EGG (#EEEA86)](media/style/EEEA86.png "EGG (#EEEA86)")|Egg|EEEA86|
-|![VIOLET (#DBBDEB)](media/style/DBBDEB.png "VIOLET (#DBBDEB)")|Violet|#DBBDEB|
-|![TEAL (#39B294)](media/style/39B294.png "TEAL (#39B294)")|Teal|#39B294|
-|![GRASS (#73BA5A)](media/style/73BA5A.png "GRASS (#73BA5A)")|Grass|#73BA5A|
+| ![Secondary (#505C6D).](media/style/505C6D.png "Secondary (#505C6D)")|-|#505C6D|
+| ![Secondary (#008089).](media/style/008089.png "Secondary (#505C6D)")|-|#008089|
+|![Primary (#00B7C3).](media/style/00B7C3.png "Primary (#00B7C3)")|Primary color|#00B7C3|
+|![YELLOW (#C9C472).](media/style/C9C472.png "YELLOW (#C9C472)")|Yellow|#C9C472|
+|![RED (#E97768).](media/style/E97768.png "RED (#E97768)")|Red|#E97768|
+|![BLUE (#75B5E7).](media/style/75B5E7.png "BLUE (#75B5E7)")|Blue|#75B5E7|
+|![LIGHTGREEN (#59CCB4).](media/style/59CCB4.png "LIGHTGREEN (#59CCB4)")|Light green|#59CCB4|
+|![SKY (#75D8E7).](media/style/75D8E7.png "SKY (#75D8E7)")|Sky|75D8E7|
+|![EGG (#EEEA86).](media/style/EEEA86.png "EGG (#EEEA86)")|Egg|EEEA86|
+|![VIOLET (#DBBDEB).](media/style/DBBDEB.png "VIOLET (#DBBDEB)")|Violet|#DBBDEB|
+|![TEAL (#39B294).](media/style/39B294.png "TEAL (#39B294)")|Teal|#39B294|
+|![GRASS (#73BA5A).](media/style/73BA5A.png "GRASS (#73BA5A)")|Grass|#73BA5A|
 
 
 ### Applying colors
@@ -126,25 +126,25 @@ The main goal of typography is to provide clean and readable text in the user in
 
 |  Example  |  Name  | Value |
 |-----------|--------|:-----------:|
-|![Segoe UI font family](media/style/segoe-ui.png "Segoe UI font family")| Segoe UI | `"Segoe UI", "Segoe WP", Segoe, device-segoe, Tahoma, Helvetica, Arial, sans-serif` |
-|![Segoe UI Light font family](media/style/segoe-ui-light.png "Segoe UI Light font family")| Segoe UI Light | `"Segoe UI Light", "Segoe WP Light", device-segoe-light, "Segoe WP Semilight", "Segoe UI", "Segoe WP", Segoe, Tahoma, Helvetica, Arial, sans-serif` |
-|![Segoe UI Semilight font family](media/style/segoe-ui-semi-light.png "Segoe UI Semilight font family")| Segoe UI Semilight | `"Segoe UI Semilight", "Segoe WP Semilight", device-segoe-semilight, "Segoe UI", "Segoe WP", Segoe, Tahoma, Helvetica, Arial, sans-serif` |
-|![Segoe UI Semibold font family](media/style/segoe-ui-semi-bold.png "Segoe UI Semibold font family")| Segoe UI Semibold | `"Segoe UI Semibold", "Segoe WP Semibold", device-segoe-semibold, "Segoe UI", "Segoe WP", Segoe, Tahoma, Helvetica, Arial, sans-serif` |
+|![Segoe UI font family.](media/style/segoe-ui.png "Segoe UI font family")| Segoe UI | `"Segoe UI", "Segoe WP", Segoe, device-segoe, Tahoma, Helvetica, Arial, sans-serif` |
+|![Segoe UI Light font family.](media/style/segoe-ui-light.png "Segoe UI Light font family")| Segoe UI Light | `"Segoe UI Light", "Segoe WP Light", device-segoe-light, "Segoe WP Semilight", "Segoe UI", "Segoe WP", Segoe, Tahoma, Helvetica, Arial, sans-serif` |
+|![Segoe UI Semilight font family.](media/style/segoe-ui-semi-light.png "Segoe UI Semilight font family")| Segoe UI Semilight | `"Segoe UI Semilight", "Segoe WP Semilight", device-segoe-semilight, "Segoe UI", "Segoe WP", Segoe, Tahoma, Helvetica, Arial, sans-serif` |
+|![Segoe UI Semibold font family.](media/style/segoe-ui-semi-bold.png "Segoe UI Semibold font family")| Segoe UI Semibold | `"Segoe UI Semibold", "Segoe WP Semibold", device-segoe-semibold, "Segoe UI", "Segoe WP", Segoe, Tahoma, Helvetica, Arial, sans-serif` |
 
 ### Sizes
 [!INCLUDE[d365fin_md](includes/d365fin_md.md)] uses the following font sizes for text. The same font family on different clients may apply different sizes.
 
 |  Example  | Name | Value |
 |-----------|------|:-----:|
-|![largest-plus-font-size (37.5pt)](media/style/37-5-fontsize.png "largest-plus-font-size (37.5pt)")| largest-plus-font-size | `37.5pt` |
-|![largest-font-size (30pt)](media/style/30-fontsize.png "largest-font-size (30pt)")| largest-font-size | `30pt` |
-|![large-plus-font-size (22.5pt)](media/style/22-5-fontsize.png "large-plus-font-size (22.5pt)")| large-plus-font-size | `22.5pt` |
-|![large-font-size (18pt)](media/style/18-fontsize.png "large-font-size (18pt)")| large-font-size | `18pt` |
-|![medium-plus-font-size (15pt)](media/style/15-fontsize.png "medium-plus-font-size (15pt)")| medium-plus-font-size | `15pt` |
-|![medium-font-size (13.5pt)](media/style/13-5-fontsize.png "medium-font-size (13.5pt)")| medium-font-size | `13.5pt` |
-|![small-plus-font-size (12pt)](media/style/12-fontsize.png "small-plus-font-size (12pt)")| small-plus-font-size | `12pt` |
-|![small-font-size (10.5pt)](media/style/10-5-fontsize.png "small-font-size (10.5pt)")| small-font-size | `10.5pt` |
-|![smallest-font-size (9pt)](media/style/9-fontsize.png "smallest-font-size (9pt)")| smallest-font-size | `9pt` |
+|![largest-plus-font-size (37.5pt).](media/style/37-5-fontsize.png "largest-plus-font-size (37.5pt)")| largest-plus-font-size | `37.5pt` |
+|![largest-font-size (30pt).](media/style/30-fontsize.png "largest-font-size (30pt)")| largest-font-size | `30pt` |
+|![large-plus-font-size (22.5pt).](media/style/22-5-fontsize.png "large-plus-font-size (22.5pt)")| large-plus-font-size | `22.5pt` |
+|![large-font-size (18pt).](media/style/18-fontsize.png "large-font-size (18pt)")| large-font-size | `18pt` |
+|![medium-plus-font-size (15pt).](media/style/15-fontsize.png "medium-plus-font-size (15pt)")| medium-plus-font-size | `15pt` |
+|![medium-font-size (13.5pt).](media/style/13-5-fontsize.png "medium-font-size (13.5pt)")| medium-font-size | `13.5pt` |
+|![small-plus-font-size (12pt).](media/style/12-fontsize.png "small-plus-font-size (12pt)")| small-plus-font-size | `12pt` |
+|![small-font-size (10.5pt).](media/style/10-5-fontsize.png "small-font-size (10.5pt)")| small-font-size | `10.5pt` |
+|![smallest-font-size (9pt).](media/style/9-fontsize.png "smallest-font-size (9pt)")| smallest-font-size | `9pt` |
 
 <!-- 
 | Large | `16pt` |

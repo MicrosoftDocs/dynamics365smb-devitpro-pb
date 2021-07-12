@@ -21,7 +21,7 @@ This section describes how to install and configure the [!INCLUDE[webservercompo
 
 -->
   
-![Architecture overview](../media/architecture-overview.png "Architecture overview")   
+![Architecture overview.](../media/architecture-overview.png "Architecture overview")   
   
 ## Deployment Scenarios 
 

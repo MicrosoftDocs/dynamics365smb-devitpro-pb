@@ -14,7 +14,7 @@ caps.latest.revision: 16
 # Deployment Scenarios for the Microsoft Dynamics NAV Web Server Components
 This section describes how to install and configure the [!INCLUDE[nav_web_server](includes/nav_web_server_md.md)] in different network topologies.  
   
- ![NAV Web Client network architecture](media/NAV_WebClient_Network_Architecture.png "NAV\_WebClient\_Network\_Architecture")  
+ ![NAV Web Client network architecture.](media/NAV_WebClient_Network_Architecture.png "NAV\_WebClient\_Network\_Architecture")  
   
 ## Deployment Scenarios  
  The following table includes the deployment scenarios that are discussed in this section.  

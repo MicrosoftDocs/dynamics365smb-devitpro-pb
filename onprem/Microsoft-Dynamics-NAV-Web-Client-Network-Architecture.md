@@ -14,7 +14,7 @@ manager: edupont
 # Microsoft Dynamics NAV Web Client Network Architecture
 The following illustration shows the four tiers of the network architecture in the [!INCLUDE[nav_web](includes/nav_web_md.md)].  
 
- ![NAV Web Client network architecture](media/NAV_WebClient_Network_Architecture.png "NAV\_WebClient\_Network\_Architecture")  
+ ![NAV Web Client network architecture.](media/NAV_WebClient_Network_Architecture.png "NAV\_WebClient\_Network\_Architecture")  
 
  The following table describes the components of each tier.  
 

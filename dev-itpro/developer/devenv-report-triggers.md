@@ -26,7 +26,7 @@ Some triggers are invoked in the report, while others are invoked on the request
 
 For starters, look at the following diagram that illustrates the general overall flow when a report is invoked. The flow is broken down even further in the [next section](#requestpage), which discusses triggers and operations related to request pages.
 
-![Report triggers](media/report-triggers-complete-flow.png)  
+![Report triggers.](media/report-triggers-complete-flow.png)  
 
 When you start the report run, the [OnInitReport Trigger](triggers-auto/report/devenv-oninitreport-report-trigger.md) is called. If the OnInitReport doesn't end the processing of the report, then the request page for the report is run, if one is enabled. The page triggers for the request page are called. On the request page, you select the options that you want for this report. You can also decide to cancel the report run. If you decide to continue, then the [OnPreReport Trigger](triggers-auto/report/devenv-onprereport-report-trigger.md) is called. At this point, no data has yet been processed. When the OnPreReport trigger has been run, the first data item is processed unless the processing of the report was ended in the OnPreReport trigger.  
 
@@ -52,7 +52,7 @@ The process for each data item is as follows:
 
 The section outlines the triggers and operations that are related to the report request page and report preview. The following diagram illustrates the main trigger and operation sequence. The focus is on the triggers and actions related to the request page invocation and button actions. See the sections that follow for details about some of the concepts shown.
 
-![Report trigger main flow](media/report-trigger-main-flow.png)
+![Report trigger main flow.](media/report-trigger-main-flow.png)
 
 ### <a name="modes"></a>Request page preview modes
 
@@ -89,7 +89,7 @@ The head-less request page flow shows the triggers that are executed when a repo
 
 The following diagram highlights the basic trigger sequence for a request page for the two possible request pages.
 
- ![Report trigger full sequence](media/report-preview-triggers-full-flow.png)
+ ![Report trigger full sequence.](media/report-preview-triggers-full-flow.png)
 
 The key differences between the two flows are the [OnAfterGetCurrRecord](triggers-auto/requestpageextension/devenv-onaftergetcurrrecord-requestpageextension-trigger.md) and [OnQueryClosePage](triggers-auto/requestpageextension/devenv-onqueryclosepage-requestpageextension-trigger.md) triggers in the visual flow. Only visible user interface elements are transferred to the child instances through the request page XML data. User interaction triggers, like lookup, validate, and other page triggers, aren't invoked in head-less reports flows.
 

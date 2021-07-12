@@ -49,7 +49,7 @@ For more information, see [JSON Files](devenv-json-files.md).
 
 When [!INCLUDE[prod_short](../includes/prod_short.md)] is extended more layers for translation are typically introduced. A layer can come from extensions and/or from a translation app. When *translations from different layers* are picked up, one translation from each observed culture is kept and when it is overwritten, only the specified culture changes. The following image illustrates an example of three different layers of translations. A base object, an extension object, and a language app all contribute with languages/translation and the result illustrates how the base object and extension object translations are overwritten by the language app.
 
-![Translation Overwrites](../media/Translation_1.png "Translation Overwrites")
+![Translation Overwrites.](../media/Translation_1.png "Translation Overwrites")
 
 ## Picking the language to display
 
@@ -70,7 +70,7 @@ Defined as the primary culture of a language. For `es-MX` (Spanish-Mexico), for 
 **Field Caption**  
 If the page control is based on a table field, and if no translations are found on the page, then the translation found on the table field is used.
 
-![Translation](../media/Translations_2.png "Translations to display")
+![Translation.](../media/Translations_2.png "Translations to display")
 
 The illustration shows examples of how translations for a page caption, a control caption, an enum caption, and a text constant are found. The search is sequential and starts at number 1, and stops searching when the the first translation is met. So, if you, for example, have an enum and no translations are found for the local language or the primary local language, the search stops at the global language because a match is found, and will use that translation in the UI.
 

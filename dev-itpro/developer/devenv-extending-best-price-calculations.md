@@ -189,7 +189,7 @@ In Business Central (Version 15.0) and earlier, the Price Calculation – V15 in
 
 The Price Calculation - Undefined implementation is used when the setup line does not contain a match for the document line. This implementation will display a message that states the combination that is missing. 
 
-:::image type="content" source="../media/best-pricing-diagram4-price-calculation.png" alt-text="Best price setup":::
+:::image type="content" source="../media/best-pricing-diagram4-price-calculation.png" alt-text="Best price setup.":::
 
 You can add a new implementation codeunit or reuse one as a starting point and rewrite it as needed. For the new codeunit, you must extend the Price Calculation Handler enum that implements Price Calculation interface and is used in the Price Calculation Setup table.
 
@@ -611,11 +611,11 @@ codeunit 50001 "Fixed Asset Price Calc."
 ```
 Now we can test the price calculation. In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], open the **Sales Price List** and add a price line for the product with a minimum quantity of 0, and one with 5.
 
-:::image type="content" source="media/price-1.1-fa-sales-price-list.png" alt-text="Sales price list page":::
+:::image type="content" source="media/price-1.1-fa-sales-price-list.png" alt-text="Sales price list page.":::
 
 If we create a sales order with lines for the minimum quantities of the product, the unit prices are calculated correctly.
 
-:::image type="content" source="media/price-1.2-fa-sales-order.png" alt-text="Sales order page":::
+:::image type="content" source="media/price-1.2-fa-sales-order.png" alt-text="Sales order page.":::
 
 ### Example: Add Location as an Applies-to Type
 This example shows how to add a new location source type to the price list header. 
@@ -759,11 +759,11 @@ codeunit 50004 "Location Source Price Calc."
 
 Now we can test the price calculation. In this example, we have an **East** location where we keep item 1896-S, and the item has prices for all customers.
 
-:::image type="content" source="media/price-2.1-location-prices.png" alt-text="Location added as a source":::
+:::image type="content" source="media/price-2.1-location-prices.png" alt-text="Location added as a source.":::
 
 We'll create a sales order and add four lines for our item. When we choose a location code, the value in the **Unit Price Excl. VAT** changes. 
 
-:::image type="content" source="media/price-2.2-location-sales-order.png" alt-text="Location sales order":::
+:::image type="content" source="media/price-2.2-location-sales-order.png" alt-text="Location sales order.":::
 
 ### Example: Add Hierarchical Price Calculations
 This example adds a new price calculation method that changes the existing implementation to prioritize a customer price over all other customer price, even if the price is higher. This requires a small adjustment to how the price source list is generated, because the source list includes levels to implement hierarchical calculations.
@@ -828,21 +828,21 @@ codeunit 50005 "Hierarchical Price Calc."
 
 Now we can set up a price calculation method and see how it works in a sales order. Let's create a new price calculation method named **Hierarchical**  with one implementation for the sales type, as shown in the following images.
 
-:::image type="content" source="media/price-3.0-price-calc-methods.png" alt-text="Price calculation methods":::
+:::image type="content" source="media/price-3.0-price-calc-methods.png" alt-text="Price calculation methods.":::
 
-:::image type="content" source="media/price-3.1-hierarchical-method-setup.png" alt-text="Hierarchical method setup":::
+:::image type="content" source="media/price-3.1-hierarchical-method-setup.png" alt-text="Hierarchical method setup.":::
 
 On the **Customer Card** page for customer 10000, in the **Price Calculation Method** field we'll choose **Hierarchical**, and in the **Customer Price Group** field we'll choose **PRICEGROUP**.
 
-:::image type="content" source="media/price-3.2-customer-card.png" alt-text="Customer card with lowest price":::
+:::image type="content" source="media/price-3.2-customer-card.png" alt-text="Customer card with lowest price.":::
 
 In the price list, we'll create price lines for item 1900-S so that the lowest price is for **All Customers** and the highest is for customer 10000, as shown in the following image.
 
-:::image type="content" source="media/price-3.3-hierarchical-sales-prices.png" alt-text="Hierarchical sales price":::
+:::image type="content" source="media/price-3.3-hierarchical-sales-prices.png" alt-text="Hierarchical sales price.":::
 
 Now we'll create a sales order for customer 10000, and add a line for item 1900-S. The highest price is suggested for the line because it is specified for the customer. If we clear the **Price Calculation Method** field on the customer card, the lowest price will be suggested for the line if we create another order.
 
-:::image type="content" source="media/price-3.4-hierarchical-sales-order.png" alt-text="Hierarchical price on sales order":::
+:::image type="content" source="media/price-3.4-hierarchical-sales-order.png" alt-text="Hierarchical price on sales order.":::
 
 ## See Also
 [Extending Application Areas](devenv-extending-application-areas.md)

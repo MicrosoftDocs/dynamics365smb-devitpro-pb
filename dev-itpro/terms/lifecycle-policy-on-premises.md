@@ -23,7 +23,7 @@ The customer is in full control of its on-premises deployments and must follow t
 
 The following image illustrates the update schedule for [!INCLUDE [prod_long](../developer/includes/prod_long.md)].
 > [!div class="mx-imgBorder"]
-> ![Update schedule for Dynamics 365 Business Central](../developer/media/terms/dynamics-365-business-central-modern-lifecycle-policy.png)
+> ![Update schedule for Dynamics 365 Business Central.](../developer/media/terms/dynamics-365-business-central-modern-lifecycle-policy.png)
 
 <!-- Critical fixes and non-critical updates are handled in the following way:
 

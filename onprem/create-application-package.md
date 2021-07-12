@@ -131,7 +131,7 @@ To upload your deployable package, you will create a project in LCS.
 1. Sign-in to LCS from [https://lcs.dynamics.com/v2](https://lcs.dynamics.com/logon/index).
 2. On the **Geting Started** page, under Recent Project
 
-     ![Shows the Getting Started page in the LCS portal](media/LCSGettingStarted.png "Shows the Getting Started page in the LCS portal")  
+     ![Shows the Getting Started page in the LCS portal.](media/LCSGettingStarted.png "Shows the Getting Started page in the LCS portal")  
 3. In the **What is this project for?** box, select **Migrate, create solutions, and learn**.
 
 4. Enter a name and description for your project, and then the remaning fields accordingly:
@@ -149,7 +149,7 @@ To upload your deployable package, you will create a project in LCS.
 
 7. On the **Asset library** page, select select **Software deployable package**, and then select **+**.
 
-     ![Shows the Asset Library in the LCS portal](media/LCSAssetLibrary.png "Shows the Asset Library in the LCS portal")  
+     ![Shows the Asset Library in the LCS portal.](media/LCSAssetLibrary.png "Shows the Asset Library in the LCS portal")  
 8. In the **Upload Software deployable package file** box, enter a name, select **Add a file**.
 9. In the **Upload file asset** box, select **Browse** > *select your deployable package* > **Open** > **Upload**. 
 
@@ -158,7 +158,7 @@ To upload your deployable package, you will create a project in LCS.
 10. Go back to you project home page, and select **Project users**.
 11. On the **Project user management** page, select **+**.
 
-     ![Shows the users assigned to a project in the LCS portal](media/LCSProjectUsers.png "Shows the users assigned to a project in the LCS portal")  
+     ![Shows the users assigned to a project in the LCS portal.](media/LCSProjectUsers.png "Shows the users assigned to a project in the LCS portal")  
 
 12. In the **Invite user** box, use the **User lookup** field to find the [!INCLUDE[d365_bus_ctr_long_md](includes/d365_bus_ctr_long_md.md)] user or enter the email address directly in the **Email** field, and then select **Invite**.  
 

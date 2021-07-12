@@ -12,7 +12,7 @@ ms.author: solsen
 
 # "Ready to Go" Resources
 
-![ReadyToGo Banner](../media/readytogo-banner.png)
+![ReadyToGo Banner.](../media/readytogo-banner.png)
 
 ## Roadmap and what’s new 
 

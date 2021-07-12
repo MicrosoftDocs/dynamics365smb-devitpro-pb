@@ -12,7 +12,7 @@ author: jswymer
 # Deploying [!INCLUDE[prod_short](../developer/includes/prod_short.md)] in a Single-Computer Topology
 In this scenario, you install the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)], [!INCLUDE[server](../developer/includes/server.md)], and the SQL Server database components on the same computer.  
 
- ![Installation on one computer](../media/single-computer-topology.png "Installation on one computer")  
+ ![Installation on one computer.](../media/single-computer-topology.png "Installation on one computer")  
 <!--
 > [!TIP]  
 >  For a step-by-step example that describes how to deploy this scenario, see [Walkthrough: Installing the Microsoft Dynamics NAV Web Server Components on a Single Computer](Walkthrough--Installing-the-Microsoft-Dynamics-NAV-Web-Server-Components-on-a-Single-Computer.md).  
