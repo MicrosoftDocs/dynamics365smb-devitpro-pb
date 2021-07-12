@@ -51,12 +51,12 @@ Here is an example of the level of detail we are looking for, based on running t
 4. This will launch the wizard for this process
 
     > [!div class="mx-imgBorder"]
-    > ![Assisted Setup Wizard page 1](../media/apptest/apptest_userdoc_wizard1.png)
+    > ![Assisted Setup Wizard page 1.](../media/apptest/apptest_userdoc_wizard1.png)
 
 5. Choose **Next**
 
     > [!div class="mx-imgBorder"]
-    > ![Assisted Setup Wizard page 2](../media/apptest/apptest_userdoc_wizard2.png)
+    > ![Assisted Setup Wizard page 2.](../media/apptest/apptest_userdoc_wizard2.png)
 
 6. Choose **Next**
 7. New Name = TestReport1
@@ -65,12 +65,12 @@ Here is an example of the level of detail we are looking for, based on running t
 10. Data Source Name = Customer List
 
     > [!div class="mx-imgBorder"]
-    > ![Assisted Setup Wizard page 3](../media/apptest/apptest_userdoc_wizard3.png)
+    > ![Assisted Setup Wizard page 3.](../media/apptest/apptest_userdoc_wizard3.png)
 
 11. Choose **Next**
 
     > [!div class="mx-imgBorder"]
-    > ![Assisted Setup Wizard page 4](../media/apptest/apptest_userdoc_wizard4.png)
+    > ![Assisted Setup Wizard page 4.](../media/apptest/apptest_userdoc_wizard4.png)
 
 12. Choose **Publish**
 

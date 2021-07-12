@@ -24,13 +24,13 @@ This article explains how to move tables and fields from an extension to another
 
 The steps are based on the example illustrated in the following figure. Although your scenario is different, the concept and process are much the same.
 
-![Data migration](media/migrate-tables-fields-up-overview.png "data migration overview")
+![Data migration.](media/migrate-tables-fields-up-overview.png "data migration overview")
 
 In the example, **TableB** and **Field C-2** are customizations. You'll move these elements from the original extension (**Ext X**) up to a new extension (**Ext Y**). This new extension will have a dependency on the original extension. You'll keep **TableA** and **TableC** in the original extension.
 
 To accommodate data migration, you'll have to create an extension that is only used for deployment. This extension is **Ext Z** in the figure. There are two stages of deployment:
 
-![Data migration Up](media/migrate-tables-fields-up.png "data migration up")
+![Data migration Up.](media/migrate-tables-fields-up.png "data migration up")
 
 - In the first stage, **Ext Z** temporarily takes ownership of tables and fields from **Ext X**.
 - In the second stage, **Ext Z** releases ownership to extensions **Ext X** and **Ext Y**. You uninstall and unpublish transition extension **Ext Z**  when you finish deployment.

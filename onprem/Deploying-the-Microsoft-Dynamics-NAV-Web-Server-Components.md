@@ -25,7 +25,7 @@ If you just want to get started installing the [!INCLUDE[nav_web_server](include
 ## Network Topology
 The following illustration shows the component infrastructure that supports [!INCLUDE[nav_web_server_instance_md](includes/nav_web_server_instance_md.md)] instances on your network.  
 
-![NAV Web Client network architecture](media/NAV_WebClient_Network_Architecture.png "NAV\_WebClient\_Network\_Architecture")  
+![NAV Web Client network architecture.](media/NAV_WebClient_Network_Architecture.png "NAV\_WebClient\_Network\_Architecture")  
 
 Each [!INCLUDE[nav_web_server_instance_md](includes/nav_web_server_instance_md.md)] instance must connect to a [!INCLUDE[nav_server](includes/nav_server_md.md)], which in turn connects to the database that contains the application and business data. Multiple [!INCLUDE[nav_web_server_instance_md](includes/nav_web_server_instance_md.md)] instances can connect to the same [!INCLUDE[nav_server](includes/nav_server_md.md)]. You can deploy these components on one computer or on separate computers. For example, you can install the [!INCLUDE[nav_web_server_instance_md](includes/nav_web_server_instance_md.md)] instance on one computer and the [!INCLUDE[nav_server](includes/nav_server_md.md)] and SQL Server database on another computer. The topology that you choose depends on the network resources and the infrastructure of the [!INCLUDE[navnow](includes/navnow_md.md)] components. The installation and configuration process is different for each scenario.
 

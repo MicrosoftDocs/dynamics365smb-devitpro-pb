@@ -15,7 +15,7 @@ When the user hits **Get started** on their Home page, a checklist is revealed i
 
 As the user progresses through the checklist by either completing or skipping the steps, the banner title and status indication will change accordingly to nudge and encourage users to finish. The user can at any point minimize the banner by hitting X and resume when ready.
 
-:::image type="content" source="../media/onboarding-checklist.png" alt-text="illustration of a banner with checklist providing an overview of the tasks to complete as well as a detailed description of the ongoing task":::
+:::image type="content" source="../media/onboarding-checklist.png" alt-text="illustration of a banner with checklist providing an overview of the tasks to complete as well as a detailed description of the ongoing task.":::
 
 <sup>2</sup><a name="2"></a>The checklist with the suggested setup and learning material.
 
@@ -23,7 +23,7 @@ The checklist provides an overview of the tasks to complete as well as a detaile
 
 The following illustration shows a [!INCLUDE [prod_short](../includes/prod_short.md)] Home page with a collapsed banner, which indicates the completion progress as well as providing a clear call-to-action to resume with the checklist activities.
 
-:::image type="content" source="../media/onboarding-banner-collapsed.png" alt-text="illustration of a collapsed banner with progress indication and a clear call-to-action to resume with the checklist activities. ":::
+:::image type="content" source="../media/onboarding-banner-collapsed.png" alt-text="illustration of a collapsed banner with progress indication and a clear call-to-action to resume with the checklist activities. .":::
 
 <sup>3</sup><a name="3"></a>The collapsed banner.
 

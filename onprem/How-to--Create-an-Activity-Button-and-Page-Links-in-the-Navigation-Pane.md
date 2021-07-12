@@ -15,7 +15,7 @@ manager: edupont
 # Creating Activity Buttons and Page Links in the Navigation Pane
 An activity button in the navigation pane displays a menu of links to additional pages in the RoleTailored client. The following illustration shows activity buttons in the navigation pane.  
   
- ![Navigation pane clip that shows Activity buttons](media/NAV_ADG_NavigationPane_ActivityButtons.jpg "NAV\_ADG\_NavigationPane\_ActivityButtons")  
+ ![Navigation pane clip that shows Activity buttons.](media/NAV_ADG_NavigationPane_ActivityButtons.jpg "NAV\_ADG\_NavigationPane\_ActivityButtons")  
   
  You create activity buttons and page links for the navigation pane by adding actions on the page that defines the Role Center. For more information, see [Creating Activity Buttons for the Navigation Pane](Creating-Activity-Buttons-for-the-Navigation-Pane.md).  
   

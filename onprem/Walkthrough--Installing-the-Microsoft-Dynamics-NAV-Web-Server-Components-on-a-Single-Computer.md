@@ -12,7 +12,7 @@ author: jswymer
 # Walkthrough: Installing the Microsoft Dynamics NAV Web Server Components on a Single Computer
 In this walkthrough, you will install the tiers of [!INCLUDE[nav_web](includes/nav_web_md.md)] and [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] in a production environment on one computer.  
 
- ![NAV Web Client installation on one computer](media/Nav_Web_Client_Install_Single_Computer.png "Nav\_Web\_Client\_Install\_Single\_Computer")  
+ ![NAV Web Client installation on one computer.](media/Nav_Web_Client_Install_Single_Computer.png "Nav\_Web\_Client\_Install\_Single\_Computer")  
 
 ## About This Walkthrough  
  After completing this walkthrough, you will have a functioning four-tier installation on one computer. The installation uses the [!INCLUDE[demolong](includes/demolong_md.md)], which contains the [!INCLUDE[demoname](includes/demoname_md.md)] company. Windows authentication is used for authenticating users who try to access the [!INCLUDE[nav_web](includes/nav_web_md.md)].  

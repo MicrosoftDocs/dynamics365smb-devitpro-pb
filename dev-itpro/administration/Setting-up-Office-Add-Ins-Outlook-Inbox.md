@@ -26,7 +26,7 @@ If your organization uses Exchange Server or Exchange Online (alone or part of M
 
     When a business document is sent as an email, the add-in provides a direct link from email to the actual business document in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. The add-in adds a **Document Links** action in the email header, which a user can select to display the document.  
 
-<!--    ![Office Add-ins for Outlook](../media/OutlookAddinsCallouts.png "Office Add-ins for Outlook")-->
+<!--    ![Office Add-ins for Outlook.](../media/OutlookAddinsCallouts.png "Office Add-ins for Outlook")-->
 
 Setting up the add-in involves two procedures. First, you configure the [!INCLUDE[server](../developer/includes/server.md)] instance to work with the add-ins. Then, you deploy the add-ins from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client to users' Outlook. Before you begin, make sure that the deployment environment meets the prerequisites.
 

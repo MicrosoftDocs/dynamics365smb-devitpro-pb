@@ -29,7 +29,7 @@ When you set up the container sandbox, you can choose to host the sandbox on Mic
 
     To get a free subscription and read more information, see [https://azure.microsoft.com](https://azure.microsoft.com).
 
-2. In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], choose the ![Lightbulb that opens the Tell Me feature](../media/search_small.png "Tell me what you want to do") icon, enter **Container Sandbox Environment**, and then select the relevant link.
+2. In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], choose the ![Lightbulb that opens the Tell Me feature.](../media/search_small.png "Tell me what you want to do") icon, enter **Container Sandbox Environment**, and then select the relevant link.
 3. Choose **Host in Azure**. If prompted, enter the user name and password of your Azure subscription. 
 
     The Azure portal opens to display a custom deployment form. 
@@ -50,7 +50,7 @@ When you set up the container sandbox, you can choose to host the sandbox on Mic
     - For Windows Server, use [Docker Enterprise Edition](https://hub.docker.com/editions/enterprise/docker-ee-server-windows).
         For more information, see [Install instructions](/virtualization/windowscontainers/quick-start/quick-start-windows-server).
 
-2. In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], choose the ![Lightbulb that opens the Tell Me feature](../media/search_small.png "Tell me what you want to do") icon, enter **SANDBOX ENVIRONMENT (CONTAINER)**, and then select the relevant link.
+2. In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], choose the ![Lightbulb that opens the Tell Me feature.](../media/search_small.png "Tell me what you want to do") icon, enter **SANDBOX ENVIRONMENT (CONTAINER)**, and then select the relevant link.
 3. Choose **Host Locally**.
 4. Save the **CreateBCSandbox.ps1** file to your computer.
 5. Run Windows PowerShell ISE as an administrator.

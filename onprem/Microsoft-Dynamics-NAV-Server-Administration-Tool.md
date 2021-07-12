@@ -47,11 +47,11 @@ mmc
   
 -   The left pane shows a tree view that lists all [!INCLUDE[nav_server](includes/nav_server_md.md)] computers that you are administering from this computer and all [!INCLUDE[nav_server](includes/nav_server_md.md)] instances on those computers. The first time that you run [!INCLUDE[nav_admin](includes/nav_admin_md.md)], the view is collapsed. You only see the local server computer without any [!INCLUDE[nav_server](includes/nav_server_md.md)] instances listed.  
   
-     ![Admin Console Root collapsed](media/ConsoleRootInit.jpg "ConsoleRootInit")  
+     ![Admin Console Root collapsed.](media/ConsoleRootInit.jpg "ConsoleRootInit")  
   
 -   Choose **Microsoft Dynamics NAV \(Local\)**, under Console Root, in the left pane of the Microsoft Dynamics NAV Server Administration tool, to display all Microsoft Dynamics NAV instances on the server computer in the center pane:  
   
-     ![Console root with two server instances](media/ConsoleRootExp.png "ConsoleRootExp")  
+     ![Console root with two server instances.](media/ConsoleRootExp.png "ConsoleRootExp")  
   
      For information about how to manage [!INCLUDE[nav_server](includes/nav_server_md.md)] instances, see [Managing Microsoft Dynamics NAV Server Instances](Managing-Microsoft-Dynamics-NAV-Server-Instances.md).  
   

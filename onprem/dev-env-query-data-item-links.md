@@ -39,7 +39,7 @@ With [!INCLUDE[navnow](includes/navnow_md.md)] queries, you can retrieve records
 ### Sample Query  
  The following illustration shows the Query Designer for a query that links the Sale Header table with the Salesperson/Purchaser table on the **Salesperson\_Code** and **Code** columns, as specified by the DataItemLink property. In the illustration, the DataItemLinkType property is set to **Exclude Row If No Match**. You can set the property to **Always Include** to change the resulting dataset as described in this topic.  
   
- ![Query Designer inner join](media/QueryJoin_InnerJoin.png "QueryJoin\_InnerJoin")  
+ ![Query Designer inner join.](media/QueryJoin_InnerJoin.png "QueryJoin\_InnerJoin")  
   
 ## How Data Item Links Work in Query Designer  
  When you add data items in Query Designer, they are arranged in a hierarchy, where the **DataSource** column of each data item is indented to one level from the data item above to indicate a link between with the data items above it. The order of the data items determines the sequence in which data items are linked. In SQL SELECT statements, this hierarchy corresponds to designating tables as left and right, where the upper data item would be on the left and the lower data item would be on the right.  
@@ -55,12 +55,12 @@ With [!INCLUDE[navnow](includes/navnow_md.md)] queries, you can retrieve records
   
  For example, the following illustration shows the Query Designer and **Properties** window for linking the Sales Header table to the Salesperson/Purchaser table. You set the DataItemLink property and the DataItemLinkType property on the Sales Header data item because it is the lower data item in Query Designer.  
   
- ![Query Designer showing link between 2 data items](media/NAV_Query_Designer_Sample_DataItemLink.png "NAV\_Query\_Designer\_Sample\_DataItemLink")  
+ ![Query Designer showing link between 2 data items.](media/NAV_Query_Designer_Sample_DataItemLink.png "NAV\_Query\_Designer\_Sample\_DataItemLink")  
   
 ### Linking More Than Two Data Items  
  A query links data items in the order that they appear in Query Designer, starting from the top and then working downward. When you have more than two data items, subsequent data items are linked to the resulting dataset of the linked data items above it. For example, when you link the first two data items, the query generates a dataset. When you add another data item, the data item is linked to the dataset of the first linked pair of data items, where it applies the conditions that are specified by its DataItemLink property and DataItemLinkType property. The following illustration shows an example with three data items.  
   
- ![Query Designer showing 3 data item links](media/NAV_Query_Designer_Sample_3_DataItemLink.png "NAV\_Query\_Designer\_Sample\_3\_DataItemLink")  
+ ![Query Designer showing 3 data item links.](media/NAV_Query_Designer_Sample_3_DataItemLink.png "NAV\_Query\_Designer\_Sample\_3\_DataItemLink")  
   
  This pattern continues for each additional data item.  
   

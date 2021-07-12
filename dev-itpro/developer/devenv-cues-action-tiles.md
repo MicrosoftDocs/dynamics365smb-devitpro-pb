@@ -14,7 +14,7 @@ author: jswymer
 
 This article provides an overview of Cues and Action tiles, and the tasks involved in creating and customizing them for displaying on Role Centers, as illustrated in the following figure:  
 
-![Cues on the Role Center](media/Cue-overview-online-v2.png "Cues on the Role Center")  
+![Cues on the Role Center.](media/Cue-overview-online-v2.png "Cues on the Role Center")  
 
 > [!NOTE]  
 > Modifying actions in Cue groups on page extensions is not supported.

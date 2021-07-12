@@ -44,7 +44,7 @@ Depending on how you construct your URI, you can return an AtomPub document or a
   
     The browser should now show the web service that you've published in the format of an AtomPub document:  
   
-    ![Basic AtomPub document for a page](../developer/media/BasAtomPub.JPG "BasAtomPub")  
+    ![Basic AtomPub document for a page.](../developer/media/BasAtomPub.JPG "BasAtomPub")  
   
 3. If you have multiple companies, then you can modify your URI to return a feed that enumerates all available companies:  
   

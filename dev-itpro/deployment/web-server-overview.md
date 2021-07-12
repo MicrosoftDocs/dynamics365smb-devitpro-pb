@@ -22,7 +22,7 @@ If you just want to get started installing the [!INCLUDE[webservercomponents](..
 ## Network Topology
 The following illustration shows the component infrastructure that supports [!INCLUDE[webserver](../developer/includes/webserver.md)] instances on your network.  
 
- ![Installation on one computer](../media/single-computer-topology.png "Installation on one computer")   
+ ![Installation on one computer.](../media/single-computer-topology.png "Installation on one computer")   
 
 Each [!INCLUDE[webserver](../developer/includes/webserver.md)] instance must connect to a [!INCLUDE[server](../developer/includes/server.md)], which in turn connects to the database that contains the application and business data. Multiple [!INCLUDE[webserver](../developer/includes/webserver.md)] instances can connect to the same [!INCLUDE[server](../developer/includes/server.md)]. You can deploy these components on one computer or on separate computers. For example, you can install the [!INCLUDE[webserver](../developer/includes/webserver.md)] instance on one computer and the [!INCLUDE[server](../developer/includes/server.md)] and SQL Server database on another computer. The topology that you choose depends on the network resources and the infrastructure of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] components. The installation and configuration process is different for each scenario.
 

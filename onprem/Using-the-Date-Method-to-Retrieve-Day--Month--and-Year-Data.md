@@ -46,7 +46,7 @@ When you have fields in a table that contain dates, you can use a date method to
 ### Sample Query  
  The following illustration shows Query Designer for a query that retrieves data from the sample Sales Header table. The query includes a totals method that counts the total the number of records from the table included in the dataset.  
   
- ![Query Designer showing a date method](media/NAV_Query_DateMethod_Example_QueryDesigner.png "NAV\_Query\_DateMethod\_Example\_QueryDesigner")  
+ ![Query Designer showing a date method.](media/NAV_Query_DateMethod_Example_QueryDesigner.png "NAV\_Query\_DateMethod\_Example\_QueryDesigner")  
   
 > [!NOTE]  
 >  A column that applies a date function is still part of the group unlike columns that apply a totals method.  

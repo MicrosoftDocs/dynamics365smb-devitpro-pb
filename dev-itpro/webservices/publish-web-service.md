@@ -46,7 +46,7 @@ You can set up a web service in the [!INCLUDE[nav_web](../developer/includes/nav
   
 1. Open the client.  
   
-2. Choose the ![Lightbulb that opens the Tell Me feature](../media/search_small.png "Search for Page or Report icon") icon, enter **Web Services**, and then choose the related link.
+2. Choose the ![Lightbulb that opens the Tell Me feature.](../media/search_small.png "Search for Page or Report icon") icon, enter **Web Services**, and then choose the related link.
   
 3. In the **Web Services** page, choose **New**.  
   

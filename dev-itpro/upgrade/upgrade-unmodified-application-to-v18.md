@@ -21,7 +21,7 @@ Use this scenario if you have one of the following versions that uses the Micros
 - [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2019 release wave 2 (version 15)
 
 
- ![Upgrade on unmodified Business Central application](../developer/media/bc18-upgrade-unmodified-app.png "Upgrade on unmodified Business Central application") 
+ ![Upgrade on unmodified Business Central application.](../developer/media/bc18-upgrade-unmodified-app.png "Upgrade on unmodified Business Central application") 
 
 #### Single-tenant and multitenant deployments
 

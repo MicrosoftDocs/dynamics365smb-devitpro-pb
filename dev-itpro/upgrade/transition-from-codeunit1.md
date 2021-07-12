@@ -19,7 +19,7 @@ However, this change will affect the upgrade process from [!INCLUDE[navnow_md](.
 
 The foundation of this change is events - publishers and subscribers. System codeunits don't contain code. They only contain event publishers. Instead of running codeunit 1 and calling respective functions, [!INCLUDE[server](../developer/includes/server.md)] runs system codeunits. The system codeunits will in turn raise published events. There are various management codeunits that subscribe to these events. Like codeunit 1, these subscriber codeunits contain method triggers and integration event publishers. They can call application functionality and raise events. The following figure illustrates the process:
 
-![System event publishers](../media/system-event-publishers.png "system event publishers")
+![System event publishers.](../media/system-event-publishers.png "system event publishers")
 
 ### About system codeunits
 -    They have IDs in the 2 billion range.

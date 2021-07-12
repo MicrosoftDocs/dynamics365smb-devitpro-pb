@@ -27,13 +27,13 @@ The video series *Performance Considerations when Building an App* is also a goo
 
 - [Performance Considerations when Building an App, Part I](https://www.youtube.com/watch?v=MooYL05V11Y)  
 
-  ![Video about performance considerations when Building an App Part I](https://www.youtube.com/watch?v=MooYL05V11Y "Performance Considerations when Building an App Part I")
+  ![Video about performance considerations when Building an App Part I.](https://www.youtube.com/watch?v=MooYL05V11Y "Performance Considerations when Building an App Part I")
 
   This first part of performance considerations videos focuses on basic principles. It makes you aware of why it is essential to consider performance in every line of code you write, and it introduces the performance implications of the general architectural document and posting design patterns of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
   
 - [Performance Considerations when Building an App, Part II](https://www.youtube.com/watch?v=VN7V4GyULtY)  
 
-  ![Video about performance considerations when Building an App Part II](https://www.youtube.com/watch?v=VN7V4GyULtY "Performance Considerations when Building an App Part II")
+  ![Video about performance considerations when Building an App Part II.](https://www.youtube.com/watch?v=VN7V4GyULtY "Performance Considerations when Building an App Part II")
 
   Learn about best practices on implementing the existing data retrieval methods, learn how to greatly improve performance by minimizing server roundtrips, and get introduced to important dos and don'ts when coding for performance.
   
