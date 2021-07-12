@@ -95,7 +95,7 @@ In this section, we provide an overview of the most useful tools for troubleshoo
 The **Help and Support** page is a powerful tool for administrators to find technical information about [!INCLUDE [prod_short](../developer/includes/prod_short.md)], both online and on-premises. The **Troubleshooting** section gives easy access to the [most recent error message](#last-known-error), and it has a link to [inspect pages](../developer/devenv-inspecting-pages.md) for further troubleshooting.  
 
 > [!div class="mx-imgBorder"]
-> ![Links for troubleshooting and support from the Help and Support page](../developer/media/admin/helpsupport_managed.png)
+> ![Links for troubleshooting and support from the Help and Support page.](../developer/media/admin/helpsupport_managed.png)
 
 Also in the **Help and Support** page, users can see support contact information, provided that this has been set up. For more information, see [To supply your support contact information in the administration center](../technical-support.md#to-supply-your-support-contact-information-in-the-administration-center). The **Help and Support** page also shows [which version](#version) of [!INCLUDE [prod_short](../developer/includes/prod_short.md)], the specific environment is on.  
 

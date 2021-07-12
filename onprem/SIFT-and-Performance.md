@@ -34,7 +34,7 @@ This topic looks at the factors you must take into consideration when you deal w
 |Updates to the SIFT indexes|Fast calculation of sums|  
 |Potential locking conflicts||  
   
- ![SIFT structures](media/NAV_ADG_22_Diag_21.png "NAV\_ADG\_22\_Diag\_21")  
+ ![SIFT structures.](media/NAV_ADG_22_Diag_21.png "NAV\_ADG\_22\_Diag\_21")  
   
  You can prevent the SIFT indexes from being updated by setting the **MaintainSIFTIndex** property of the index in the base table to **No**. This means that you no longer benefit from SIFT's ability to calculate sums quickly. However, the SIFT functionality is still available. If the base table does not grow or only grows slowly, there is no need to set **MaintainSIFTIndex** to **Yes** for any indexes that contain SumIndexFields. If the base table does grow, you should set **MaintainSIFTIndex** to **Yes** for any indexes that contain SumIndexFields.  
   

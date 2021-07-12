@@ -25,7 +25,7 @@ Some examples of an [!INCLUDE[embedapp](../developer/includes/embedapp.md)] incl
 
 An [!INCLUDE[embedapp](../developer/includes/embedapp.md)] refers to what is being provided to a given customer segment, unrelated to how the solution is being implemented or architected. An [!INCLUDE[embedapp](../developer/includes/embedapp.md)] can be built using AL, in other words extension, code-customization, and a combination of extensions and code-customization.  
 
-![Embed App overview](../media/embed_app_overview.png "Embed App overview")  
+![Embed App overview.](../media/embed_app_overview.png "Embed App overview")  
 
 ## Components
 
@@ -57,7 +57,7 @@ The [!INCLUDE[embedapp](../developer/includes/embedapp.md)] will promote the par
 - A dedicated product tile, icon, and short marketing description in the Dynamics shell ([https://home.dynamics.com](https://home.dynamics.com))  
 - In-product messages (such as pop-up errors, warnings, notifications)  
 
-![Tiles with Embed App apps](../media/embed-app-apps.png "Embed App apps")  
+![Tiles with Embed App apps.](../media/embed-app-apps.png "Embed App apps")  
 
 ### Exclusivity
 
@@ -83,7 +83,7 @@ Partners can choose to bring their own code-customized base application as an [!
 
 - An [!INCLUDE[embedapp](../developer/includes/embedapp.md)] is the property of the partner, so the customers of the [!INCLUDE[embedapp](../developer/includes/embedapp.md)] must be able to find the partner's own legal, privacy, contact, community and feedback links (not Microsoft links) when they work with the app:
 
-    ![Embed App contact](../media/embed-app-contact.png "Embed App contact")  
+    ![Embed App contact.](../media/embed-app-contact.png "Embed App contact")  
 
 - Safe listed domains for embedding [!INCLUDE[embedapp](../developer/includes/embedapp.md)] pages into other web sites, including SharePoint ("frame ancestors") 
 - Target version of [!INCLUDE[d365_bus_central_md](../developer/includes/d365_bus_central_md.md)] platform

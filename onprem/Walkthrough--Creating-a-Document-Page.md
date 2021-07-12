@@ -20,7 +20,7 @@ In [!INCLUDE[navnowlong](includes/navnowlong_md.md)], a document page consists o
   
  The following illustration shows a document page.  
   
- ![Sales order](media/NAV_SalesOrderPage.jpg "NAV\_SalesOrderPage")  
+ ![Sales order.](media/NAV_SalesOrderPage.jpg "NAV\_SalesOrderPage")  
   
  In this walkthrough, you will create a sales order document page. This page will contain useful secondary information, such as customer statistics, in FactBoxes to the right of the main content area. The FactBox is updated every time that you select a line.  
   

@@ -71,7 +71,7 @@ This walkthrough illustrates how you can publish a [!INCLUDE[prodshort](../devel
   
      The browser should now show the web service that you have published, in the format of an AtomPub document.  
   
-     ![Basic AtomPub document for a page](../media/BasAtomPub.JPG "BasAtomPub")  
+     ![Basic AtomPub document for a page.](../media/BasAtomPub.JPG "BasAtomPub")  
   
 ##  <a name="BKMK_CreateConsoleApp"></a> Creating the Console Application  
  Next, you create a C\# console application in Visual Studio.  

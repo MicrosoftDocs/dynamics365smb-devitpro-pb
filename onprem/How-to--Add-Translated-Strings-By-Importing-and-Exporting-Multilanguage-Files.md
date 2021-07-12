@@ -55,7 +55,7 @@ To add string translations for UI elements in a standard country/region-specific
   
      The following illustration uses \#\#\#\# to represent the language code of the language to which you translate the string.  
   
-     ![Translated Strings file in Excel](media/NAV_PLAT_TranslatingStrings.png "NAV\_PLAT\_TranslatingStrings")  
+     ![Translated Strings file in Excel.](media/NAV_PLAT_TranslatingStrings.png "NAV\_PLAT\_TranslatingStrings")  
   
 ## Importing Multilanguage Files  
  After you add translated strings to the multilanguage file, you must import the file into the application.  

@@ -43,7 +43,7 @@ You can choose from the following page types:
 ## Designing Pages  
  You create page objects using Page Designer. In Page Designer, a page is basically an XML object comprised of a number of XML elements that determine the layout and the page content. The following illustration shows an example of Page Designer.  
   
- ![Page Designer overview](media/NAV_PageDesigner.png "NAV\_PageDesigner")  
+ ![Page Designer overview.](media/NAV_PageDesigner.png "NAV\_PageDesigner")  
   
  To add content to a page, you add containers that divide the page into separate areas which add different parts and content to the page. Each page type has a specific set of controls that can be used with that page type. For example, Cues can only be used on Role Center pages and FastTabs can only be used on Card and Document pages. The card page type shows a number of different controls used on one page type. It includes FastTabs, FactBoxes, Actions, and ribbon controls.  
   
@@ -56,7 +56,7 @@ You can choose from the following page types:
 ##  <a name="RoleCenterPage"></a> Role Center Page Type  
  The Role Center page is the main page of the [!INCLUDE[rtc](includes/rtc_md.md)]. You can customize the Role Center page for the individual user. The Role Center page provides the user with an overview of the day’s work, where the user can quickly access information and tasks on which to focus for the day. The following illustration shows a Role Center page.  
   
- ![RoleTailored client RoleCenter page type example](media/NAV_RoleCenterPageType.png "NAV\_RoleCenterPageType")  
+ ![RoleTailored client RoleCenter page type example.](media/NAV_RoleCenterPageType.png "NAV\_RoleCenterPageType")  
   
 > [!IMPORTANT]  
 >  Only system parts, card parts, and list parts are supported page types for the Role Center.  
@@ -74,7 +74,7 @@ You can choose from the following page types:
 ##  <a name="CardPage"></a> Card Page Type  
  A Card page is used to view and edit one record or entity from a table. The Card page displays selected fields from the table. An example of using a Card page is for editing a customer. The following illustration shows the Customer Card page.  
   
- ![RoleTailored client Card page example](media/NAV_CardPage_CustomerCard.jpg "NAV\_CardPage\_CustomerCard")  
+ ![RoleTailored client Card page example.](media/NAV_CardPage_CustomerCard.jpg "NAV\_CardPage\_CustomerCard")  
   
  You can group one or more fields in FastTabs. You can also include a FactBox that displays additional information about the record in the page.  
   
@@ -90,7 +90,7 @@ You can choose from the following page types:
 ##  <a name="CardPartPage"></a> Card Part Page Type  
  A Card Part page is used in a FactBox on another page to view or edit additional fields associated with a selected entity in the page. The following illustration shows an example of using a Card Part page on a List page that displays sales orders. In the FactBox on the right, a Card Part page displays details about the customer that placed the selected sales order. The following illustration shows a FactBox.  
   
- ![RoleTailored client Card page example](media/NAV_CardPartPage_SalesOrderList.jpg "NAV\_CardPartPage\_SalesOrderList")  
+ ![RoleTailored client Card page example.](media/NAV_CardPartPage_SalesOrderList.jpg "NAV\_CardPartPage\_SalesOrderList")  
   
  For more information, see the following.  
   
@@ -106,7 +106,7 @@ You can choose from the following page types:
 ##  <a name="ConfirmationDialog"></a> ConfirmationDialog Page  
  You use the ConfirmationDialog page to display messages or prompt users with a confirmation before they continue with the task that they are working on. For example, when filling out a sales order, a user can select a quantity for an item. This quantity might exceed the item's availability. Using a ConfirmationDialog page, you can display a message that indicates this condition to the user. The user can then choose to continue or cancel filling out the sales order. The following illustration shows a ConfirmationDialog page.  
   
- ![RoleTailored client Confirmed Dialog page example](media/NAV_ConfirmationDialogPage_CheckAvailability.jpg "NAV\_ConfirmationDialogPage\_CheckAvailability")  
+ ![RoleTailored client Confirmed Dialog page example.](media/NAV_ConfirmationDialogPage_CheckAvailability.jpg "NAV\_ConfirmationDialogPage\_CheckAvailability")  
   
  To create a ConfirmationDialog, you define the message and table fields that you want displayed.  
   
@@ -120,7 +120,7 @@ You can choose from the following page types:
 ##  <a name="DocumentPage"></a> Document Page Type  
  A Document page usually consists of two separate pages combined into one, with one page nested in the other. A Document page is suitable for use when you want to display data from two tables that are linked together. For example, this is the case with sales orders, which have two source tables: Sales Header and Sales Lines. The following illustration shows a sales order that is created using a Document page type. The following illustration shows a Document page.  
   
- ![RoleTailored client Document page example](media/NAV_DocumentPage_SalesOrder.jpg "NAV\_DocumentPage\_SalesOrder")  
+ ![RoleTailored client Document page example.](media/NAV_DocumentPage_SalesOrder.jpg "NAV\_DocumentPage\_SalesOrder")  
   
  A Document page displays a [FastTab](#FastTab) at the top of the page for showing fields, followed by another FastTab with line items for the selected item. Optionally, you can add additional FastTabs to display more details about a selected item.  
   
@@ -136,7 +136,7 @@ You can choose from the following page types:
 ##  <a name="ListPage"></a> List Page Type  
  A List page displays content from a table in a list format. List pages can display as List Places \(as part of the navigation layer\) or in Task pages. The following illustration shows a List page.  
   
- ![RoleTailored client sales order List page example](media/NAV_SalesOrderListPage.jpg "NAV\_SalesOrderListPage")  
+ ![RoleTailored client sales order List page example.](media/NAV_SalesOrderListPage.jpg "NAV\_SalesOrderListPage")  
   
  You can also add a FactBox to display additional information about a selected item in the list.  
   
@@ -155,7 +155,7 @@ You can choose from the following page types:
   
  For more information, see the following.  
   
- ![The List Plus Page type](media/Client_ListPlusPageType.png "Client\_ListPlusPageType")  
+ ![The List Plus Page type.](media/Client_ListPlusPageType.png "Client\_ListPlusPageType")  
   
 |To|See|  
 |--------|---------|  
@@ -165,7 +165,7 @@ You can choose from the following page types:
 ##  <a name="ListPartPage"></a> List Part Page Type  
  Similar to a List page, a List Part page displays content from a table in a list format. The difference is that you use the List part page as another page in a FactBox or as a part of the Role Center page. The following illustration shows a List Part page that is used in the Role Center for viewing a list of the user's customers.  
   
- ![RoleTailored client ListPart page example](media/NAV_RoleCenter_ListPart.JPG "NAV\_RoleCenter\_ListPart")  
+ ![RoleTailored client ListPart page example.](media/NAV_RoleCenter_ListPart.JPG "NAV\_RoleCenter\_ListPart")  
   
  For more information, see the following.  
   
@@ -178,7 +178,7 @@ You can choose from the following page types:
 ##  <a name="NavigatePage"></a> Navigate Page Type for Wizards  
  You use a Navigate page type to create a wizard that leads the user through a sequence of steps for completing a task. The following illustration shows a Navigate page.  
   
- ![RoleTailored client Navigation pane wizard example](media/NAV_NavigationPage_Wizard_ToDo.jpg "NAV\_NavigationPage\_Wizard\_ToDo")  
+ ![RoleTailored client Navigation pane wizard example.](media/NAV_NavigationPage_Wizard_ToDo.jpg "NAV\_NavigationPage\_Wizard\_ToDo")  
   
  A wizard opens as a Task page.  
   
@@ -194,7 +194,7 @@ You can choose from the following page types:
 ##  <a name="StandardDialogPage"></a> StandardDialog Page Type  
  The StandardDialog is a simple page type that you use when users only need to input data and do not need to perform other actions from the page. An example of a StandardDialog page type is page 511, Change Exchange Rate, in the [!INCLUDE[demolong](includes/demolong_md.md)]. The following illustration shows the Change Exchange Rate StandardDialog page.  
   
- ![Currency Exchange Rate page](media/NAVRTCCurrencyExchangeRatePage.png "NAVRTCCurrencyExchangeRatePage")  
+ ![Currency Exchange Rate page.](media/NAVRTCCurrencyExchangeRatePage.png "NAVRTCCurrencyExchangeRatePage")  
   
  The StandardDialog page type has the following characteristics:  
   
@@ -214,7 +214,7 @@ You can choose from the following page types:
 ##  <a name="WorksheetPage"></a> Worksheet Page  
  You use a Worksheet page type for creating worksheet or journal task pages. The Worksheet page consists of a single grid in the content area and a section at the bottom with details about the selected grid line or totals for the grid. The following illustration shows a Worksheet page.  
   
- ![RoleTailored client navigation page example](media/NAV_WorksheetPage.jpg "NAV\_WorksheetPage")  
+ ![RoleTailored client navigation page example.](media/NAV_WorksheetPage.jpg "NAV\_WorksheetPage")  
   
  You can optionally include a FactBox.  
   
@@ -232,7 +232,7 @@ You can choose from the following page types:
 ### Ribbon  
  The ribbon is located under the Command bar on task pages and list places and contains shortcuts to actions. Actions display as icons, which the user can choose to complete a task or view information. The following illustration shows the ribbon.  
   
- ![Action Pane clip from a Customer List page](media/NAV_CustomerList_ActionPaneFeatured.jpg "NAV\_CustomerList\_ActionPaneFeatured")  
+ ![Action Pane clip from a Customer List page.](media/NAV_CustomerList_ActionPaneFeatured.jpg "NAV\_CustomerList\_ActionPaneFeatured")  
   
  To include an action in the ribbon, you use the Action Designer \(available from the View menu when a Page Designer window is open\) and promote the action. You should use the ribbon to display the tasks most frequently used by the user in the context of the page. For example, on a List page that displays sales orders, you should promote the action to process a sales order to the ribbon.  
   
@@ -247,7 +247,7 @@ You can choose from the following page types:
 ###  <a name="Cue"></a> Cue  
  A Cue is an icon that provides a shortcut link to an underlying filtered list, such as invoices, sales orders, or credit memos. A Cue icon depicts a stack of papers on the page, where the height of the stack roughly indicates the number of entities in the underlying list. A number value on each Cue gives the precise count. The following illustration shows a Cue.  
   
- ![RoleTailored client cue example](media/NAV_RoleCenterCueFeatured.jpg "NAV\_RoleCenterCueFeatured")  
+ ![RoleTailored client cue example.](media/NAV_RoleCenterCueFeatured.jpg "NAV\_RoleCenterCueFeatured")  
   
  A Cue can only be used on a Role Center page.  
   
@@ -262,7 +262,7 @@ You can choose from the following page types:
 ### Chart Pane  
  The Chart pane displays data from a list in graphic form, giving the user a visual overview of the value distribution. Chart panes are only available on List page types. The following illustration shows the Chart pane.  
   
- ![RoleTailored client Chart part example](media/NAV_RoleCenterChartPart.jpg "NAV\_RoleCenterChartPart")  
+ ![RoleTailored client Chart part example.](media/NAV_RoleCenterChartPart.jpg "NAV\_RoleCenterChartPart")  
   
  To view a chart pane, choose **Customize** on the page's command bar, and then select **Chart Pane**. To change the data that is displayed in a chart, choose **Measures** or **Dimensions**, and then select the fields that you want.  
   
@@ -275,7 +275,7 @@ You can choose from the following page types:
 ###  <a name="FactBox"></a> FactBox  
  A FactBox is an area that is located on the right side of a page which displays data related to information about an item on the page. For example, on a list page that shows sales orders, you can use a FactBox to show additional fields of a selected sales order in the list. The following illustration shows FactBoxes on the Customer Card page.  
   
- ![RoleTailored client FactBox example](media/NAV_FactBox_Featured.jpg "NAV\_FactBox\_Featured")  
+ ![RoleTailored client FactBox example.](media/NAV_FactBox_Featured.jpg "NAV\_FactBox\_Featured")  
   
  You can set a FactBox to display a page, system part, or a chart. If you set the FactBox to display a page, you can display the following page types:  
   
@@ -301,7 +301,7 @@ You can choose from the following page types:
 ###  <a name="FastTab"></a> FastTabs  
  FastTabs enable you to place data in separate groups on a page, where each group has a header that expands and collapses the group when clicked. The header of the FastTab displays a name, such as "Prepayment" on the Sales Order shown. You can also promote fields included on the FastTab to the header. Promoting a field to the header enables you to present key information to the user when the FastTab is collapsed. The following illustration shows FastTabs on a Customer Card page.  
   
- ![RoleTailored client FastTab example](media/NAV_FastTab_Featured.jpg "NAV\_FastTab\_Featured")  
+ ![RoleTailored client FastTab example.](media/NAV_FastTab_Featured.jpg "NAV\_FastTab\_Featured")  
   
  Organizing data using FastTabs helps users to find key information more quickly, while giving an overview of areas that otherwise would remain hidden.  
   
@@ -315,14 +315,14 @@ You can choose from the following page types:
 ### Filter Pane  
  The Filter pane is found on List pages and enables the user to filter and sort the items displayed in the list based on a given criteria. The following illustration shows the Filter pane on the Customer List page.  
   
- ![RoleTailored client filter pane example](media/NAV_FilterPane_Featured.jpg "NAV\_FilterPane\_Featured")  
+ ![RoleTailored client filter pane example.](media/NAV_FilterPane_Featured.jpg "NAV\_FilterPane\_Featured")  
   
  The Filter pane is automatically included on List pages and cannot be configured.  
   
 ### My Notifications  
  The My Notifications part allows users to view notifications that are assigned to them, similar to messenger service. The notifications are generated from a Notes control on a task page. For example, on a sales order page, the user can add a note and then target another user to receive the note. This note then shows up in the target user's My Notifications. The following illustration shows notifications from a Notes control on the Sales Orders page.  
   
- ![RoleTailored client MyNotifications part example](media/NAV_RoleCenterMyNotifications_Featured.JPG "NAV\_RoleCenterMyNotifications\_Featured")  
+ ![RoleTailored client MyNotifications part example.](media/NAV_RoleCenterMyNotifications_Featured.JPG "NAV\_RoleCenterMyNotifications\_Featured")  
   
  By double-clicking the link to the note in the notification, users can navigate directly to the relevant Task page to deal immediately and directly with the urgent issue or exceptions.  
   
@@ -338,7 +338,7 @@ You can choose from the following page types:
 ### Notes  
  The Notes part allows the user to attach a note to an item on a Task page. For example, when creating a sales order, a user can add a note about the order. The note will appear with the item when it is viewed. If another user is targeted to be notified, then the note will appear in that user's Role Center in the My Notifications part. The following illustration shows a Note part  
   
- ![RoleTailored client Notes part example](media/NAV_SalesOrder_NotesPart.jpg "NAV\_SalesOrder\_NotesPart")  
+ ![RoleTailored client Notes part example.](media/NAV_SalesOrder_NotesPart.jpg "NAV\_SalesOrder\_NotesPart")  
   
  You use Notes in a FactBox on a page.  
   
@@ -351,7 +351,7 @@ You can choose from the following page types:
 ### RecordLinks  
  The RecordLinks part allows the user to add links to files on items on a Task page. For example, when creating a sales order, users can add a link to the Microsoft Word document that pertains to the order. The links will appear with the item when it is viewed. When a user chooses a link, the target file opens. The following illustration shows a RecordLink part.  
   
- ![RoleTailored client recorded links example](media/NAV_SalesOrder_RecordedLinks.jpg "NAV\_SalesOrder\_RecordedLinks")  
+ ![RoleTailored client recorded links example.](media/NAV_SalesOrder_RecordedLinks.jpg "NAV\_SalesOrder\_RecordedLinks")  
   
  You use RecordLinks in a FactBox on a page.  
   

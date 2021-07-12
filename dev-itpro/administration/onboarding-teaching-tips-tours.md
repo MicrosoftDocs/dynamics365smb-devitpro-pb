@@ -37,11 +37,11 @@ Teaching tips can be defined at the page level, the *page teaching tip*, and be 
 
 The following illustration shows a page teaching tip <sup>4</sup> that explains what the page is about and can invite the user to take a tour. The teaching tip renders in the lower left corner.  
 
-:::image type="content" source="../media/onboarding-teaching-tip-page.png" alt-text="A page in Business Central with a page teaching tip at the lower left corner":::
+:::image type="content" source="../media/onboarding-teaching-tip-page.png" alt-text="A page in Business Central with a page teaching tip at the lower left corner.":::
 
 The following illustration shows how choosing the page title <sup>5</sup> will reopen the teaching tip so that the user can re-take the tour.  
 
-:::image type="content" source="../media/onboarding-teaching-tip-title.png" alt-text="Illustration of page with a teaching tip pointing to the page title":::
+:::image type="content" source="../media/onboarding-teaching-tip-title.png" alt-text="Illustration of page with a teaching tip pointing to the page title.":::
 
 ## How to write page teaching tips
 
@@ -49,7 +49,7 @@ There are different rules for teaching tips for lists versus cards and documents
 
 | List page with teaching tip | Card page with teaching tip |
 |-------------------------|-------------------------|
-| :::image type="content" source="../media/onboarding-teaching-tip-list.png" alt-text="illustration of List Page with teaching tip":::| :::image type="content" source="../media/onboarding-teaching-tip-card.png" alt-text="illustration of Entity Page with teaching tip":::|
+| :::image type="content" source="../media/onboarding-teaching-tip-list.png" alt-text="illustration of List Page with teaching tip.":::| :::image type="content" source="../media/onboarding-teaching-tip-card.png" alt-text="illustration of Entity Page with teaching tip.":::|
 |**AboutTitle**: About sales invoices</br>**AboutText**: Sales invoices appear in this list until they are finalized and posted. After an invoice is posted, find it again in the Posted Sales Invoices list. |**AboutTitle**: About sales invoice details</br>**AboutText**: You can update and add to the sales invoice until you post it. If you leave the invoice without posting, you can return to it later from the list of ongoing invoices. |
 | Answers the following questions:</br><ul></br><li>What can I do on this page in general?</li></br><li>Is there a related entity I should know about?</li></br><li>The title for a list page teaching tip will typically use the plural form, such as *About sales invoices*</li></br></ul> | Answers the following questions:</br><ul></br><li>What can I do on this page with this particular field or action?</li></br><li>What is the desired outcome of the task in this page?</li></br><li>The title for a card or document page teaching tip will typically be [entity name] + *details*,  such as *About sales invoice details*</li></br></ul> |
 
@@ -79,7 +79,7 @@ There are different rules for teaching tips for input fields and actions.
 
 | Teaching tip pointing to an input field | Teaching tip pointing to an action |
 |-------------------------|-------------------------|
-| :::image type="content" source="../media/onboarding-teaching-tip-field.png" alt-text="Illustration of teaching tip pointing to an input field"::: | :::image type="content" source="../media/onboarding-teaching-tip-action.png" alt-text="Illustration of teaching tip pointing to an action":::|
+| :::image type="content" source="../media/onboarding-teaching-tip-field.png" alt-text="Illustration of teaching tip pointing to an input field."::: | :::image type="content" source="../media/onboarding-teaching-tip-action.png" alt-text="Illustration of teaching tip pointing to an action.":::|
 |**AboutTitle:** Who you are selling to</h3></br>**AboutText:** This can be an existing customer, or you can register a new from here. Customers can have special prices and discounts that are automatically used when you enter the sales lines.|Content example for the **Post** action:</br>**AboutTitle:** When all is set, you post</br>**AboutText:** After entering the sales lines and other information, you post the invoice to make it count.​ After posting, the sales invoice is moved to the Posted Sales Invoices list. |
 | <ul></br><li>The teaching tip can point to a field that may or may not have data.</li></br><li>A control teaching tip can explain an important value's meaning, such as what leaving the field blank does.</li></br><li>Avoid stating the obvious and avoid action language that tell users to do something that isn't active during the tour. For example, don't say *Enter the customer name here.* Instead, explain what to be aware of when adding a customer.</li></br></ul> | <ul></br><li>With multiple similar actions,such as **Post** and **Post & New**, call out the simplest version only.</li></br><li>Avoid action language that tell users to do something that isn't active during the tour. Don't say: *Now post the invoice*. Instead, explain what to be aware of when posting.</li></br></ul> |
 

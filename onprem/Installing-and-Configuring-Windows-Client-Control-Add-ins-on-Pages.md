@@ -14,7 +14,7 @@ manager: edupont
 # Installing and Configuring Windows Client Control Add-ins on Pages
 In the [!INCLUDE[nav_windows](includes/nav_windows_md.md)], control add-ins add custom controls or visual elements, on Windows client page fields for displaying and editing data. When a control add-in is developed, it is compiled into a .NET Framework–based assembly, which is .dll file. To use a control add-in on [!INCLUDE[nav_windows](includes/nav_windows_md.md)] pages, you must install and configure the control add-in assembly in the [!INCLUDE[nav_windows](includes/nav_windows_md.md)] environment, which is divided between two tiers: [!INCLUDE[nav_windows](includes/nav_windows_md.md)] and [!INCLUDE[navnowlong](includes/navnowlong_md.md)] SQL Server database.  
   
- ![RoleTailored client control add&#45;in installation](media/NAVRTCControlAddinInstall.png "NAVRTCControlAddinInstall")  
+ ![RoleTailored client control add&#45;in installation.](media/NAVRTCControlAddinInstall.png "NAVRTCControlAddinInstall")  
   
  The following table outlines the tasks that you must perform on each tier.  
   

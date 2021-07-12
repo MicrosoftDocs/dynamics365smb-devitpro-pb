@@ -33,13 +33,13 @@ A [!INCLUDE[prod_short](../developer/includes/prod_short.md)] solution consists 
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is installed as a single-tenant deployment by default. In a single-tenant deployment, the application and the business data are stored in the same database. Each customer solution has its own [!INCLUDE[server](../developer/includes/server.md)] and database.
 
-![Single-tenant architecture overview](../developer/media/architecture-singletenant.png "Single-tenant architecture overview")  
+![Single-tenant architecture overview.](../developer/media/architecture-singletenant.png "Single-tenant architecture overview")  
 
 ### Multinenant architecture
 
 In a multitenant deployment, the application and business data are stored in separate databases. There's a single [!INCLUDE[server](../developer/includes/server.md)] and application database for multiple customers. But each individual customer has their own database for storing business data, which is referred to as a *tenant*. 
 
-![Multitenant architecture overview](../developer/media/architecture-multitenant.png "Multitenant architecture overview")  
+![Multitenant architecture overview.](../developer/media/architecture-multitenant.png "Multitenant architecture overview")  
 
 Multitenancy centralizes the maintenance of the application, and at the same, time isolates each tenant. This architecture makes upgrading easier compared with a single-tenant deployment. For more information, see [Multitenant Deployment Architecture](Multitenant-Deployment-Architecture.md).
 

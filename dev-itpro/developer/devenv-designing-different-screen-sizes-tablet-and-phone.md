@@ -17,7 +17,7 @@ Designing for small screens can be more challenging, because pages will show few
 
 <!--There are certain requirements for running the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] on tablets and phones. For more information, see [System Requirements for Business Central](../deployment/system-requirement-business-central.md#DynNAVApp).-->
 
- ![Various sizes of screens](media/screen_sizes.PNG)  
+ ![Various sizes of screens.](media/screen_sizes.PNG)  
 
 ## Form factor considerations  
 Users can scroll both the navigation and the content area of the [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] on a tablet to access all data for a given page. However, it is recommended that the scrolling in the navigation bar is minimal. The navigation bar is the area on the left-hand side of [!INCLUDE[nav_uni_app](includes/nav_uni_app_md.md)] and it is designed to provide easy access to important information and tasks that the user should not lose sight of when scrolling on the content area. <!-- The static elements will display only as much data as they can reasonably fit on the screen. Developers should design to make sure that the important static elements are displayed first so that these will be shown even on the smallest, available devices.  -->

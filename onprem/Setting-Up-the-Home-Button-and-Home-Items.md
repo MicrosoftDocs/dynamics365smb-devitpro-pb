@@ -21,7 +21,7 @@ manager: edupont
   
      You use the Action Designer to add actions under the **HomeItems** control. You set up the actions to open list pages. Each action appears as an item under the **Home** button. For example, the following illustration shows the Action Designer for the **Home** button items that are shown in the previous illustration.  
   
-     ![Action Designer showing the HomeItems actions](media/NAVRTCHomeItemsActionDesigner.PNG "NAVRTCHomeItemsActionDesigner")  
+     ![Action Designer showing the HomeItems actions.](media/NAVRTCHomeItemsActionDesigner.PNG "NAVRTCHomeItemsActionDesigner")  
   
      For information about how to add an action under the **HomeItems** control, see [How to: Add Actions to a Page](How-to--Add-Actions-to-a-Page.md).  
   

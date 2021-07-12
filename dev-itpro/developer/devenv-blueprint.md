@@ -14,7 +14,7 @@ author: bholtorf
 # Module Architecture
 Though the internal architecture of modules can, and most likely will, differ, there are rules that ensure consistency and reliability in the architecture of application modules. To reduce coupling and increase consistency, every module is a separate entity that has a publicly accessible facade, while the internal implementation is not public, as shown in the following image: 
 
-:::image type="content" source="media/module-architecture.png" alt-text="Architecture layout":::
+:::image type="content" source="media/module-architecture.png" alt-text="Architecture layout.":::
 
 The following sections describe the design principles for modules.
 
@@ -79,7 +79,7 @@ Every module begins with a project setup that includes the following:
 ## Testing
 Every module must be tested through a separate test module. Only public functions that are exposed through the facade, or other public objects such as pages, tables, xmlports, and queries, are tested by the test module.
 
-:::image type="content" source="media/module-testing.png" alt-text="Testing":::
+:::image type="content" source="media/module-testing.png" alt-text="Testing.":::
 
 The test module should have the same name as the module it tests, but be placed in a separate layer/package that contains tests for all modules in the layer. For example, *Modules\\**System Tests**\My Module*). Test code cannot reside in the same layer folder structure as the module, or within the module, because it must not be executable or part of a production environment.
 

@@ -46,9 +46,9 @@ When you run [!INCLUDE[navnowlong](includes/navnowlong_md.md)] Setup, you can in
   
     |Component node|Description|  
     |--------------------|-----------------|  
-    |![White Node](media/install_WhiteNode.png "install\_WhiteNode")|The component and all its subcomponents are selected for installation.|  
-    |![Gray node](media/install_GrayNode.png "install\_GrayNode")|The component is selected for installation. Some or none but not all of the subcomponents are also selected. Only items on the top or second level can be gray because only these nodes can have subcomponents.|  
-    |![Red node](media/install_RedNode.png "install\_RedNode")|Neither the component nor any of its subcomponents is selected for installation.|  
+    |![White Node.](media/install_WhiteNode.png "install\_WhiteNode")|The component and all its subcomponents are selected for installation.|  
+    |![Gray node.](media/install_GrayNode.png "install\_GrayNode")|The component is selected for installation. Some or none but not all of the subcomponents are also selected. Only items on the top or second level can be gray because only these nodes can have subcomponents.|  
+    |![Red node.](media/install_RedNode.png "install\_RedNode")|Neither the component nor any of its subcomponents is selected for installation.|  
   
 3.  Choose a component to open a menu of options for that component. You must click in the box. The following options are available.  
   

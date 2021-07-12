@@ -22,7 +22,7 @@ You can design pages that display data in a list, such as ListPart, ListPlus, an
 
  You must specify which data that you want shown in a brick view on the table’s **Field Group**. Depending on the number of columns that you define in the Field Group for the brick, the layout will dynamically change. Up to 6 fields can be displayed, and therefore, there are six possible layouts as shown in this illustration:  
 
- ![Brick layout for tablet and phone](media/TabletPhone_BrickLayout.jpg "TabletPhone\BrickLayout")  
+ ![Brick layout for tablet and phone.](media/TabletPhone_BrickLayout.jpg "TabletPhone\BrickLayout")  
 
  The fields 2 and 3 are shown in a large font and should contain data that identifies the brick, for example, the Customer Name and Balance as you can see in the Customer list in, for example, the [!INCLUDE[nav_web](includes/nav_web_md.md)].  
 

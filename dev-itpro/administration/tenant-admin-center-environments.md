@@ -17,14 +17,14 @@ ms.author: jswymer
 The **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provides you with an overview of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] production and sandbox environments for the tenant, and you can manage updates for each environment.
 
 > [!div class="mx-imgBorder"]
-> ![Business Central Admin Center](../developer/media/admin/business_central_admin_center.png)
+> ![Business Central Admin Center.](../developer/media/admin/business_central_admin_center.png)
 
 ## Viewing details for an environment
 
 In the environments list, you can view more details by choosing the link in the **Name** column.
 
 > [!div class="mx-imgBorder"]
-> ![View details about an environment](../developer/media/admin/business_central_admin_center_details.png)
+> ![View details about an environment.](../developer/media/admin/business_central_admin_center_details.png)
 
 ## Types of environments
 

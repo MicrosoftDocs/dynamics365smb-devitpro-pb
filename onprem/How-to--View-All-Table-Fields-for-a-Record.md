@@ -18,7 +18,7 @@ You can use the **About This Page** feature to view all fields for the current r
   
 1.  In the client, open the page for which you want to view table field values.  
   
-2.  On the menu bar, on the Application menu ![Application Menu button in menu bar](media/ApplicationMenuIcon.png "ApplicationMenuIcon"), choose **Help**, and then choose **About This Page**.  
+2.  On the menu bar, on the Application menu ![Application Menu button in menu bar.](media/ApplicationMenuIcon.png "ApplicationMenuIcon"), choose **Help**, and then choose **About This Page**.  
   
      The **About This Page** window displays every field that is in the table on which the selected page is based. It displays both visible and invisible fields. It also displays the value of each field for the selected record.  
   
@@ -28,7 +28,7 @@ You can use the **About This Page** feature to view all fields for the current r
   
 1.  In the client, open the page for which you want to view table field values.  
   
-2.  On the menu bar, on the Application menu ![Application Menu button in menu bar](media/ApplicationMenuIcon.png "ApplicationMenuIcon"), choose **Help**, and then choose **About This Page**.  
+2.  On the menu bar, on the Application menu ![Application Menu button in menu bar.](media/ApplicationMenuIcon.png "ApplicationMenuIcon"), choose **Help**, and then choose **About This Page**.  
   
 3.  On the **About This Page** page, on the **Actions** tab, in the **Send To** group, choose one of the following options to send the field data to another format:  
   

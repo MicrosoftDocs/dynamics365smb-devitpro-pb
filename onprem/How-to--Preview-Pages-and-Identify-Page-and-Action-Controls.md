@@ -45,7 +45,7 @@ In the [!INCLUDE[nav_dev_short](includes/nav_dev_short_md.md)], you can preview 
   
  The following figure shows an example for the **Document Date** field on page 42, Sales Order.  
   
- ![Page designer and preview with marked field](media/NAV_PagePreview_PageControls.png "NAV\_PagePreview\_PageControls")  
+ ![Page designer and preview with marked field.](media/NAV_PagePreview_PageControls.png "NAV\_PagePreview\_PageControls")  
   
 > [!NOTE]  
 >  If you select a part control that contains a subpage, such as a FastTab or FactBox, then the page preview displays the area as gray. To open Page Designer for the subpage, on the shortcut menu of the part, choose **Go To Definition**.  
@@ -58,7 +58,7 @@ In the [!INCLUDE[nav_dev_short](includes/nav_dev_short_md.md)], you can preview 
   
  The following figure shows an example for the **Shipments** action on page 42, Sales Order.  
   
- ![Action designer and preview with selected action](media/NAV_PagePreview_ActionControl.png "NAV\_PagePreview\_ActionControl")  
+ ![Action designer and preview with selected action.](media/NAV_PagePreview_ActionControl.png "NAV\_PagePreview\_ActionControl")  
   
 > [!NOTE]  
 >  In the **Page Preview** window, you cannot choose actions that are generated automatically on a page, such as **New**, **Edit**, and **Post**, or actions that are contained in a group that is defined by an **ActionGroup** control.  

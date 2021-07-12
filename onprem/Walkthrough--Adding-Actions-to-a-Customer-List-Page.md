@@ -111,7 +111,7 @@ In this walkthrough, you will learn how to add a new item to an **Action** tab a
   
      The Sales Order command is now displayed in the ribbon, as shown in the following screen shot.  
   
-     ![Kevin's Customer List page](media/MicrosoftDynamicsNAVKevinsCustomerList.jpg "MicrosoftDynamicsNAVKevinsCustomerList")  
+     ![Kevin's Customer List page.](media/MicrosoftDynamicsNAVKevinsCustomerList.jpg "MicrosoftDynamicsNAVKevinsCustomerList")  
   
 ## Linking an Action with a Specific Item in a List  
  Simon verifies that the Sales Order action now displays in the ribbon. However, when he selects the Sales Order action, the Sales Order card opens and displays the first sales order in the database. Simon remembers that Kevin asked him to have the Sales Order action open a new sales order for the currently selected customer, instead. Simon opens the customer list page and starts making this change.  

@@ -62,7 +62,7 @@ This walkthrough demonstrates debugging an action in the [!INCLUDE[nav_windows](
   
 4.  On the **Tools** menu, choose **Debugger**, and then choose **Toggle Breakpoint** to add a breakpoint to the selected line of code.  
   
-     ![C&#47;AL Editor with a breakpoint set](media/Debugger_CSIDEBreakpoint.png "Debugger\_CSIDEBreakpoint")  
+     ![C&#47;AL Editor with a breakpoint set.](media/Debugger_CSIDEBreakpoint.png "Debugger\_CSIDEBreakpoint")  
   
 #### To activate the debugger  
   
@@ -92,15 +92,15 @@ This walkthrough demonstrates debugging an action in the [!INCLUDE[nav_windows](
   
     -   In the code viewer, the current line is identified by a yellow arrow in the margin. Breakpoints are identified by a red dot in the margin.  
   
-         ![Code Part on Debugger page](media/Debugger_Code.png "Debugger\_Code")  
+         ![Code Part on Debugger page.](media/Debugger_Code.png "Debugger\_Code")  
   
     -   In the code viewer, you can point to a variable, field, or text constant to inspect the value.  
   
-         ![Code viewer, inspect PostingDateExists variable](media/Debugger_InspectVariable.png "Debugger\_InspectVariable")  
+         ![Code viewer, inspect PostingDateExists variable.](media/Debugger_InspectVariable.png "Debugger\_InspectVariable")  
   
     -   In the **Call Stack** FactBox, you can view the function calls that led to the current line of code, starting with the Post action on page 9305.  
   
-         ![Call Stack Part on Debugger page](media/Debugger_CallStack.png "Debugger\_CallStack")  
+         ![Call Stack Part on Debugger page.](media/Debugger_CallStack.png "Debugger\_CallStack")  
   
 2.  On the **Home** tab, choose **Variables**.  
   
@@ -110,7 +110,7 @@ This walkthrough demonstrates debugging an action in the [!INCLUDE[nav_windows](
   
      The *Posting Date* variable is added to the **Watches** FactBox on the **View - Debugger** window. This is especially useful if there is a long list of variables in the **Debugger Variables List** window or if you want to view the value of a field in a record variable while you step through the code. Additionally, if you want to watch how the value of a variable changes, such as if you are in a loop, then it is useful to add the variable to the **Watches** FactBox.  
   
-     ![Watches Part on Debugger page](media/Debugger_Watches.png "Debugger\_Watches")  
+     ![Watches Part on Debugger page.](media/Debugger_Watches.png "Debugger\_Watches")  
   
     > [!NOTE]  
     >  When adding watches from the **Debugger Variables List** window, the watches do not appear in the **Watches** FactBox on the **View - Debugger** window until you choose the **Close** button.  
