@@ -1,9 +1,9 @@
 ---
 title: "CodeCop Rule AA0005"
-description: "Only use BEGIN."
+description: "Only use BEGIN..END to enclose compound statements."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 07/13/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

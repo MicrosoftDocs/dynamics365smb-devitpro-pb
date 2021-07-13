@@ -3,7 +3,7 @@ title: "AppSourceCop Rule AS0092"
 description: "The app.json file must specify an Azure Application Insights resource for monitoring operations related to this extension."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 07/13/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,7 +18,7 @@ author: SusanneWindfeldPedersen
 The app.json file must specify an Azure Application Insights resource.
 
 ## Description
-The app.json file must specify an Azure Application Insights resource for monitoring operations related to this extension. See https://docs.microsoft.com/dynamics365/business-central/dev-itpro/administration/telemetry-overview for additional information.
+The app.json file must specify an Azure Application Insights resource for monitoring operations related to this extension. See https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/telemetry-overview for additional information.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## How to fix this diagnostic?

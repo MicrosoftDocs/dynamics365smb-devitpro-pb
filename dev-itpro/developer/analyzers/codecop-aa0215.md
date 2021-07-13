@@ -1,9 +1,9 @@
 ---
 title: "CodeCop Rule AA0215"
-description: "Follow [the style guide](https://docs."
+description: "Follow [the style guide](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/compliance/apptest-bestpracticesforalcode#file-naming) about the best practices for naming."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 07/13/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
