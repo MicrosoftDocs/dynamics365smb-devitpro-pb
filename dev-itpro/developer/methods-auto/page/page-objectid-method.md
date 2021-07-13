@@ -1,6 +1,6 @@
 ---
 title: "Page.ObjectId([Boolean]) Method"
-description: "Returns a string in the \\"Page xxx\\" format, where xxx is the caption or ID of the application object."
+description: "Returns a string in the Page xxx format, where xxx is the caption or ID of the application object."
 ms.author: solsen
 ms.custom: na
 ms.date: 07/13/2021
@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # Page.ObjectId([Boolean]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
-Returns a string in the \\"Page xxx\\" format, where xxx is the caption or ID of the application object.
+Returns a string in the "Page xxx" format, where xxx is the caption or ID of the application object.
 
 
 ## Syntax

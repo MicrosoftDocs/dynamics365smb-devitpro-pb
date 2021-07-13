@@ -3,7 +3,7 @@ title: "SqlJoinType Property"
 description: "Sets the data item link type between data items in a query to determine the records that are included in the resulting data set."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 07/13/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,7 +26,7 @@ Sets the data item link type between data items in a query to determine the reco
 
 |Value|Description|
 |-----------|---------------------------------------|
-|**LeftOuterJoin**|The resulting dataset contains every record from the upper data item table, even if a record does not have a matching value in the lower data item for fields that are linked by the [DataItemLink Property \(Query\)](/dynamics365/business-central/dev-itpro/developer/properties/devenv-dataitemlink-query-property).|
+|**LeftOuterJoin**|The resulting dataset contains every record from the upper data item table, even if a record does not have a matching value in the lower data item for fields that are linked by the [DataItemLink Property \(Query\)](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/properties/devenv-dataitemlink-query-property).|
 |**InnerJoin**|The resulting dataset contains records from data item tables where a match is found between the fields that are linked by the **DataItemLink** property of the lower data item.|
 |**RightOuterJoin**|The resulting dataset set contains every record from the lower data item table, even if a record does not have a matching value in the upper data item for fields that are linked by the **DataItemLink** property.|
 |**FullOuterJoin**|The resulting dataset contains all the records from the upper data item table, and all records from the lower data item, including records that do not have a matching value for columns that are linked by the **DataItemLink** property.|
