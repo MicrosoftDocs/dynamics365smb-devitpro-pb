@@ -1,9 +1,9 @@
 ---
 title: "System.GetDotNetType(Any) Method"
-description: "Gets the System."
+description: "Gets the System.Type that corresponds to the given value."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 07/13/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

@@ -1,9 +1,9 @@
 ---
 title: "TestRequestPage.SaveAsXml(String, String) Method"
-description: "Saves a report data set and the labels on a report as two XML (."
+description: "Saves a report data set and the labels on a report as two XML (.xml) files."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 07/13/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

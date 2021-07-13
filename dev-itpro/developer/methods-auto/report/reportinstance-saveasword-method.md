@@ -1,9 +1,9 @@
 ---
 title: "Report.SaveAsWord(String) Method"
-description: "Saves a report on the computer that is running the server as a Microsoft Word (."
+description: "Saves a report on the computer that is running the server as a Microsoft Word (.doc) document."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 07/13/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

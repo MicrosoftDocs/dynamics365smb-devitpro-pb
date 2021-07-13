@@ -1,9 +1,9 @@
 ---
 title: "TestRequestPage.FindNextField(TestField, Any) Method"
-description: "Finds the next field in the data set that is displayed on a test page."
+description: "Finds the next field in the data set that is displayed on a test page.The row is searched from the beginning of the dataset defined by the current filter."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 07/13/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
