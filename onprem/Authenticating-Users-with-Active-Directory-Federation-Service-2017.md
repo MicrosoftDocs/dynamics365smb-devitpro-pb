@@ -157,7 +157,7 @@ JWT tokens are not supported by AD FS 2.0 or [!INCLUDE[navcrete_md](includes/nav
 To setup [!INCLUDE[navnow_md](includes/navnow_md.md)] for ADFS authentication, you must modify the configuration of the [!INCLUDE[nav_server](includes/nav_server_md.md)], [!INCLUDE[nav_web_md](includes/nav_web_md.md)], and [!INCLUDE[nav_windows_md](includes/nav_windows_md.md)]s.
 
 ### Dynamics NAV Server instance setup
-The [!INCLUDE[nav_server](includes/nav_server_md.md)] instance must be configured to allow claims based authentication. You can do this by using the [!INCLUDE[nav_admin_md](includes/nav_admin_md.md)], the [Set-NAVServerConfiguration cmdlet](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.management/Set-NAVServerConfiguration?view=dynamicsnav-ps-2017) in the [!INCLUDE[navnow_md](includes/navnow_md.md)] Administration Shell, or by modifying the server instance's CustomSettings.config file directly.
+The [!INCLUDE[nav_server](includes/nav_server_md.md)] instance must be configured to allow claims based authentication. You can do this by using the [!INCLUDE[nav_admin_md](includes/nav_admin_md.md)], the [Set-NAVServerConfiguration cmdlet](/powershell/module/microsoft.dynamics.nav.management/Set-NAVServerConfiguration?view=dynamicsnav-ps-2017) in the [!INCLUDE[navnow_md](includes/navnow_md.md)] Administration Shell, or by modifying the server instance's CustomSettings.config file directly.
 
 1.  Set the **Credential Type** (ClientServicesCredentialType) to ```NavUserPassword``` or ```AccessControlService```.
     -   If you set this to ```NavUserPassword```, client users can use either NavUserPassword or claims based authentication to access [!INCLUDE[navnow](includes/navnow_md.md)]. The CustomSetting.config file should include the following line:
@@ -204,7 +204,7 @@ The [!INCLUDE[nav_server](includes/nav_server_md.md)] instance must be configure
 4.  Restart the [!INCLUDE[nav_server](includes/nav_server_md.md)] instance.
 
     >[!TIP]
-    >You can use the [Set-NAVServerInstance cmdlet](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.management/Set-NAVServerInstance?view=dynamicsnav-ps-2017) to restart the service instance.
+    >You can use the [Set-NAVServerInstance cmdlet](/powershell/module/microsoft.dynamics.nav.management/Set-NAVServerInstance?view=dynamicsnav-ps-2017) to restart the service instance.
 
 ### Dynamics NAV Web Client setup
 You configure the [!INCLUDE[nav_web_md](includes/nav_web_md.md)] by modifying it's [!INCLUDE[web_server_settings_file_md.md](includes/web_server_settings_file_md.md)].
@@ -228,7 +228,7 @@ You configure the [!INCLUDE[nav_web_md](includes/nav_web_md.md)] by modifying it
 The configuration changes are automatically picked up by the Internet Information Service (IIS).
 
 >[!TIP]
->Instead of reconfiguring the existing web client, consider using the [New-NAVWebServerInstance cmdlet](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.management/New-NAVWebServerInstance?view=dynamicsnav-ps-2017) in the Dynamics NAV Administration Shell to add an additional web client instance, and leave the existing instance running NavUserPassword authentication.
+>Instead of reconfiguring the existing web client, consider using the [New-NAVWebServerInstance cmdlet](/powershell/module/microsoft.dynamics.nav.management/New-NAVWebServerInstance?view=dynamicsnav-ps-2017) in the Dynamics NAV Administration Shell to add an additional web client instance, and leave the existing instance running NavUserPassword authentication.
 
 ### Dynamic NAV Windows client setup (optional)
 You configure the [!INCLUDE[nav_windows_md](includes/nav_windows_md.md)] by modifying the ClientUserSettings.config file for each client installation.

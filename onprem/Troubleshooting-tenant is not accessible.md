@@ -19,7 +19,7 @@ In a multitenant deployment, `default` will be replaced by the ID of the tenant 
 ## Resolution  
 This error is most likely caused by the tenant having the state `OperationalWithSyncPending`. A tenant will have the `OperationalWithSyncPending` state if changes have been made to one or more application tables, but the schema changes have not been synchronized with the tenant.
 
-To verify the state of the tenant, run the [Get-NAVTenant cmdlet](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.management/get-navtenant). 
+To verify the state of the tenant, run the [Get-NAVTenant cmdlet](/powershell/module/microsoft.dynamics.nav.management/get-navtenant). 
 
 If the state is `OperationalWithSyncPending`, you must synchronize the tenant with the application in order for clients to be able to connect. For more information, see [How to: Synchronize the Tenant Database with the Application Database](How-to--Synchronize-the-Tenant-Database-with-the-Application-Database.md).
 

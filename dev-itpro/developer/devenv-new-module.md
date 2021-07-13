@@ -75,7 +75,7 @@ We'll start by creating a new folder named **XmlWriter** in the **System** folde
             }
         ],
         "target":  "OnPrem",
-        "contextSensitiveHelpUrl":  "https://docs.microsoft.com/dynamics365/business-central/"
+        "contextSensitiveHelpUrl":  "/dynamics365/business-central/"
     }
 
 ```
