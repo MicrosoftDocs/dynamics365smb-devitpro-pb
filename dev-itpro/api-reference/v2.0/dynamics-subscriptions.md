@@ -19,6 +19,10 @@ Webhooks is the way to get notified if an entity changes in [!INCLUDE[prod_short
 
 In the following replace the URL prefix for [!INCLUDE[prod_short](../../includes/prod_short.md)] depending on environment following the [guideline](endpoints-apis-for-dynamics.md).
 
+> [!IMPORTANT]  
+> With [!INCLUDE[prod_short](../../includes/prod_short.md)] version 19, all webhook notifications sent from [!INCLUDE[prod_short](../../includes/prod_short.md)] will no longer contain the byte order mark (BOM), to align with RCF 7159, section 8.1.    
+
+
 ## Register a webhook subscription
 
 Using webhooks requires the client/subscriber to perform a handshake with [!INCLUDE[prod_short](../../includes/prod_short.md)] to register the webhook subscription.

@@ -56,7 +56,7 @@ With queries, you can link data items together to combine data from records in t
 ### Sample Query  
  The following illustration shows the Query Designer for a query that links the Sale Header table with the Salesperson/Purchaser table on the **Salesperson\_code** and **Code** columns, as specified by the DataItemLink property. In the illustration, the SQL Advanced Options property is set to **Inner Join**. For each of the data item links types discussed in the following sections, you change the SQL Advanced Options property to the appropriate type.  
   
- ![Query Designer for an SQL Inner link type](media/NAV_Query_Designer_SQL_Inner_Join.png "NAV\_Query\_Designer\_SQL\_Inner\_Join")  
+ ![Query Designer for an SQL Inner link type.](media/NAV_Query_Designer_SQL_Inner_Join.png "NAV\_Query\_Designer\_SQL\_Inner\_Join")  
   
 ##  <a name="InnerJoin"></a> Inner Join  
  *Inner Join* creates a dataset by combining records from data item tables where a match is found between the columns that are linked by the DataItemLink property of the lower data item. **Inner Join** uses an "equal to" comparison operator to match rows from the lower data item table with rows from the upper data item table that is based on the values of the linked columns.  
@@ -67,7 +67,7 @@ With queries, you can link data items together to combine data from records in t
   
  The following illustration shows an **Inner Join** type between tables A and B. The shaded area indicates the records that are included in the resulting dataset.  
   
- ![Visualization of SQL inner join between two tables](media/NAV_Query_SQL_Inner_Join.png "NAV\_Query\_SQL\_Inner\_Join")  
+ ![Visualization of SQL inner join between two tables.](media/NAV_Query_SQL_Inner_Join.png "NAV\_Query\_SQL\_Inner\_Join")  
   
 ### Dataset Example  
  The following table shows the resulting dataset for an Inner Join between the Sales Header table and Salesperson/Purchaser table in sample query.  
@@ -110,7 +110,7 @@ WHERE "Salesperson/Purchaser".Code = "Sales Header"."Salesperson Code"
   
  The following illustration shows a **Left Outer Join** type between tables A and B. The shaded area indicates the records that are included in the resulting dataset. In the sample query, the Salesperson/Purchaser table is considered the left table.  
   
- ![Visualization of SQL left outer join](media/NAV_Query_SQL_Left_Outer_Join.png "NAV\_Query\_SQL\_Left\_Outer\_Join")  
+ ![Visualization of SQL left outer join.](media/NAV_Query_SQL_Left_Outer_Join.png "NAV\_Query\_SQL\_Left\_Outer\_Join")  
   
 ### Dataset Example  
  The following table shows the resulting dataset for a Left Outer Join between the Sales Header table and Salesperson/Purchaser table in sample query.  
@@ -144,7 +144,7 @@ FROM "Salesperson/Purchaser" LEFT OUTER JOIN "Sales Header"
   
  The following illustration shows a **Right Outer Join** type between tables A and B. The shaded area indicates the records that are included in the resulting dataset.  
   
- ![Visualization of SQL right outer join](media/NAV_Query_SQL_Right_Outer_Join.png "NAV\_Query\_SQL\_Right\_Outer\_Join")  
+ ![Visualization of SQL right outer join.](media/NAV_Query_SQL_Right_Outer_Join.png "NAV\_Query\_SQL\_Right\_Outer\_Join")  
   
 ### Dataset Example  
  The following table shows the resulting dataset for a Right Outer Join between the Salesperson/Purchaser table and Sales Header table in the sample query. The Sales Header table is considered the right table.  
@@ -180,7 +180,7 @@ FROM "Salesperson/Purchaser" RIGHT OUTER JOIN "Sales Header"
   
  The following illustration shows a **Full Outer Join** type between tables A and B. The shaded area indicates the records that are included in the resulting dataset.  
   
- ![Visualization of an SQL full outer join](media/NAV_Query_SQL_Full_Outer_Join.png "NAV\_Query\_SQL\_Full\_Outer\_Join")  
+ ![Visualization of an SQL full outer join.](media/NAV_Query_SQL_Full_Outer_Join.png "NAV\_Query\_SQL\_Full\_Outer\_Join")  
   
 ### Dataset Example  
  The following table shows the resulting dataset for a Full Outer Join between the Sales Header table and Salesperson/Purchaser table in sample query.  

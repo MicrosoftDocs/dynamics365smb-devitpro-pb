@@ -16,7 +16,7 @@ ms.service: "dynamics365-business-central"
 
 Use this scenario if you have a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2019 release wave 2 solution that uses the Microsoft System and Base applications.
 
- ![Upgrade on unmodified Business Central application](../developer/media/bc15-to-16-upgrade-unmodified-app.png "Upgrade on unmodified Business Central application") 
+ ![Upgrade on unmodified Business Central application.](../developer/media/bc15-to-16-upgrade-unmodified-app.png "Upgrade on unmodified Business Central application") 
 
 #### Single-tenant and multitenant deployments
 
@@ -319,7 +319,7 @@ Run the data upgrade on extensions in order of dependency.
 
 1. Run the data upgrade for the system application, followed by the base application.
 
-    To run the data upgrade, use the [Start-NavDataUpgrade](/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade) cmdlet:
+    To run the data upgrade, use the [Start-NAVAppDataUpgrade cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/start-navappdataupgrade) cmdlet:
 
     ```powershell
     Start-NAVAppDataUpgrade -ServerInstance <server instance name> -Name "<extension name>" -Version <extension version>

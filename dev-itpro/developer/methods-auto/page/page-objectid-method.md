@@ -50,6 +50,9 @@ If you add the following code to a page method or trigger, then the returned str
 Message(CurrPage.ObjectId(true));  
   
 ```
+
+CurrPage is a system-defined variable. For more information, see [System-Defined Variables](../../devenv-system-defined-variables.md). 
+
 ## See Also
 [Page Data Type](page-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  

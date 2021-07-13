@@ -95,11 +95,11 @@ In this section, we provide an overview of the most useful tools for troubleshoo
 The **Help and Support** page is a powerful tool for administrators to find technical information about [!INCLUDE [prod_short](../developer/includes/prod_short.md)], both online and on-premises. The **Troubleshooting** section gives easy access to the [most recent error message](#last-known-error), and it has a link to [inspect pages](../developer/devenv-inspecting-pages.md) for further troubleshooting.  
 
 > [!div class="mx-imgBorder"]
-> ![Links for troubleshooting and support from the Help and Support page](../developer/media/admin/helpsupport_managed.png)
+> ![Links for troubleshooting and support from the Help and Support page.](../developer/media/admin/helpsupport_managed.png)
 
 Also in the **Help and Support** page, users can see support contact information, provided that this has been set up. For more information, see [To supply your support contact information in the administration center](../technical-support.md#to-supply-your-support-contact-information-in-the-administration-center). The **Help and Support** page also shows [which version](#version) of [!INCLUDE [prod_short](../developer/includes/prod_short.md)], the specific environment is on.  
 
-For [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online, a user can enable additional logging and then perform the operation that is causing problems. This option should only be used in relation to a support case, either before submitting the support case, or after being asked by Microsoft Support to do so. It has the effect that Microsoft Support gets more details about the problematic operation, and it will lead to a quicker resolution.
+For [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online, a user can enable additional logging and then perform the operation that is causing problems. The additional telemetry is sent to Application Insights where you can do further troubleshooting, either as part of a support case, or before you submit a support request. In both scenarios, the additional details about the problematic operation will lead to a quicker resolution.  
 
 For [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online, internal and delegated administrators also have access to this information in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)]. You can use the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] to easily navigate to the different environments in a tenant, and you can create sandbox environments that can help troubleshoot any issues reported by users. For more information, see [The Business Central Administration Center](tenant-admin-center.md).  
 

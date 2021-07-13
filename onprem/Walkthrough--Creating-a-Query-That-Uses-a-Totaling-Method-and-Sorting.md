@@ -59,7 +59,7 @@ ORDER BY Quantity
   
      The following figure shows the Query Designer for this query.  
   
-     ![Query with Sum column](media/Query_WalkthroughTotals.png "Query\_WalkthroughTotals")  
+     ![Query with Sum column.](media/Query_WalkthroughTotals.png "Query\_WalkthroughTotals")  
   
     > [!NOTE]  
     >  When you set the **Method** column to **Totals**, the name of the column is automatically changed from **Quantity** to **\<Sum\_Quantity>**. The column name is specified by its [Name Property](Name-Property.md). The **OrderBy** property identifies a column by the **Name** property.  
@@ -98,7 +98,7 @@ ORDER BY Quantity
   
 3.  In Object Designer, select query 50002, and then choose the **Run** button. When you run a query, you can see the data in the dataset.  
   
-     ![The result of running Customer&#95;SumQuantity query](media/Query_WalkthroughTotals_Run.png "Query\_WalkthroughTotals\_Run")  
+     ![The result of running Customer&#95;SumQuantity query.](media/Query_WalkthroughTotals_Run.png "Query\_WalkthroughTotals\_Run")  
   
 ## Next Steps  
  Viktor’s next step is to create a more complex query. For more information, see [Walkthrough: Creating a Query to Link Three Tables](Walkthrough--Creating-a-Query-to-Link-Three-Tables.md).  

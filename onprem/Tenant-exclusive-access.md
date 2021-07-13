@@ -21,7 +21,7 @@ author: jswymer
 3. In the **FA Posting Type** field, select **Revaluation**..
 
 ## Proposal 1:
-1. In the top right corner, choose the search icon ![Search](media/search_small.png "Search for page or report"), enter **FA G/L Journals**, and then choose the related link.  
+1. In the top right corner, choose the search icon ![Search.](media/search_small.png "Search for page or report"), enter **FA G/L Journals**, and then choose the related link.  
 2. Create an initial journal line and fill in the fields as necessary.
 3. In the **FA Posting Type** field, select **Revaluation**.
 

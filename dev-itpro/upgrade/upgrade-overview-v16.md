@@ -35,7 +35,7 @@ Your current version doesn't have to be the latest update for the version. Howev
 
 When upgrading your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Spring 2019 (version 14) solution to version 16, the goal is to move towards a full uptake of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] base and system applications, as they are, and migrating code customizations to addon extensions. There are different upgrade levels that you follow to get to this state, as illustrated in the following figure. We recommend that you refactor to the system application as a minimum.
 
-![Upgrade path on Business Central application](../developer/media/bc16-upgrade-paths-v1.png "Upgrade paths")
+![Upgrade path on Business Central application.](../developer/media/bc16-upgrade-paths-v1.png "Upgrade paths")
 
 ### Technical Upgrade
 

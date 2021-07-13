@@ -32,7 +32,7 @@ Like other features in the administration center, this functionality can be used
 Open the **Manage Apps** page from the environment details page. Choose **Environments** > select the environment > **Manage Apps**.
 
 > [!div class="mx-imgBorder"]
-> ![Business Central Admin Center apps](../developer/media/admin/business_central_admin_center_manage_apps.png)
+> ![Business Central Admin Center apps.](../developer/media/admin/business_central_admin_center_manage_apps.png)
 
 The **Manage Apps** lists all the apps installed on the environment and indicates whether updates are available. When first opened, the system will start checking for updates. Wait for this operation to complete.
 

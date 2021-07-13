@@ -64,14 +64,14 @@ Specifies whether the code in the OnDelete trigger will be executed. If this par
 var
     varRecordToDelete: Code;
     MyRecordRef: RecordRef;
-    Text000: Label 'Customer %1 is deleted.;
+    Text000: Label 'Customer %1 is deleted.';
 begin
     varRecordToDelete := '10000';  
     MyRecordRef.Open(18);  
     MyFieldRef := MyRecordRef.Field(1);  
     MyFieldRef.Value := varRecordToDelete;  
     if MyRecordRef.Find('=') then begin  
-      ifMyRecordRef.Delete then begin  
+      if MyRecordRef.Delete then begin  
         MyRecordRef.Modify;  
         Message(Text000, MyFieldRef.Value);  
       end;  

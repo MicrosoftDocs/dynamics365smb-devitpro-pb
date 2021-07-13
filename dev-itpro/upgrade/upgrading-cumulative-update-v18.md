@@ -2,7 +2,7 @@
 title: Install a version 18 update
 description: This article describes the tasks required for getting the monthly version 18 update applied to your Dynamics 365 Business Central on-premises.
 ms.custom: na
-ms.date: 04/20/2021
+ms.date: 07/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ You can choose to update only the platform or both the platform and application 
 
 The following figure provides a high-level representation of a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] solution and the components that are involved in the installation of an update.
 
-![Business Central application stack](../developer/media/bc15-architecture-overview.png "Business Central application stack")  
+![Business Central application stack.](../developer/media/bc15-architecture-overview.png "Business Central application stack")  
 
 The databases store the application metadata and business data. If you have a single-tenant deployment, this data is stored in a single database. A multitenant deployment stores the application metadata in the application database and the business data in one or more tenant databases.
 

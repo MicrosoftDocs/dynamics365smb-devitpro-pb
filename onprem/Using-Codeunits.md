@@ -55,7 +55,7 @@ Result := StatVariable.F(3425)+StatVariable.G(346);
   
  You can access codeunits through codeunit variables either by explicitly declaring a variable with the data type codeunit or by setting the RunObject property on pages to a codeunit. A codeunit variable does not contain a codeunit, but only a reference to a codeunit. More than one codeunit variable can refer to the same codeunit, as shown in the following illustration.  
   
- ![Codeunit variables](media/NAVCodeunitVariables.png "NAVCodeunitVariables")  
+ ![Codeunit variables.](media/NAVCodeunitVariables.png "NAVCodeunitVariables")  
 Codeunit Variables  
   
  Codeunits contain internal variables that are defined as global variables. These variables cannot be accessed directly from code outside the codeunit, but they can be accessed through user-defined functions on the codeunit. When a codeunit variable is used for the first time, a new instance of the codeunit is created, that is, a new set of internal variables is initialized so that different codeunit variables use different sets of internal variables.  

@@ -20,9 +20,9 @@ Without any customized code, there's no way to send a report directly to a print
 
 To accommodate printing, the system publishes two events that you can subscribe to: [OnAfterSetupPrinters](devenv-onaftersetupprinters-event.md) and [OnAfterDocumentPrintReady](devenv-onafterdocumentprintready-event.md). The following figure illustrates the runtime execution of the events:
 
-![Report printing](media/report-printing-runtime4.png "Report printing")
+![Report printing.](media/report-printing-runtime4.png "Report printing")
 
-Throughout the print process, the system compiles the report into a PDF file and passes it in a stream object, then finally sends the PDF file the printer.
+Throughout the print process, the system compiles the report into a PDF file and passes it in a stream object, then finally sends the PDF file to the printer.
 
 #### OnAfterSetupPrinters event
 
@@ -59,12 +59,12 @@ The event is raised when the use selects the **Print** action on the request pag
 To develop a printer extension, you create codeunits that subscribe to the OnAfterSetupPrinters and OnAfterDocumentPrintReady events. Plus, you would typically add other objects to support the printing. For example, you could create a table that stores printer setups and a page that enables users to manage them. <!--As a good example, check out the **Send To Email Printer** extension that is available with Business Central. The following figure provides a simplified overview of the objects that make up this extension. -->
 
 
-![Report printing](media/report-printing-design-v2.png "Report printing")
+![Report printing.](media/report-printing-design-v2.png "Report printing")
 
 <!--
 The following figure illustrates a simplified development flow:
 
-![Report printing](media/report-printing.png "Report printing")
+![Report printing.](media/report-printing.png "Report printing")
 -->
 
 For more information about using the OnAfterSetupPrinters and OnAfterDocumentPrintReady events to create a printer extension, see [Creating a Printer Extension](devenv-reports-create-printer-extension.md).

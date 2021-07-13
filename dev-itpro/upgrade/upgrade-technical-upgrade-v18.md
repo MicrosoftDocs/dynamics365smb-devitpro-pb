@@ -19,7 +19,7 @@ Use this process to upgrade any of the following versions to the [!INCLUDE[prod_
 - [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 1 (version 16)
 - [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2019 release wave 2 (version 15)
 
- ![Upgrade on customized Business Central application](../developer/media/18-technical-upgrade.png "Upgrade on customize Business Central application")   
+ ![Upgrade on customized Business Central application.](../developer/media/18-technical-upgrade.png "Upgrade on customize Business Central application")   
 
 #### Single-tenant and multitenant deployments
 
@@ -232,7 +232,7 @@ Compile all published extensions against the new platform.
 1. To compile an extension, use the [Repair-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/repair-navapp) cmdlet, For example:
 
     ```powershell  
-    Repair-NAVApp -ServerInstance <server instance> -Name <extension name> -Version <extension name>
+    Repair-NAVApp -ServerInstance <server instance> -Name <extension name> -Version <extension version>
     ```
 
     To compile all published extensions at once, you can use this command:

@@ -79,7 +79,7 @@ There are some components that require other software to run. For example, the d
 1. In the installation media (DVD) folder, double-click the setup.exe.
 2. Follow Setup until you get to the **[!INCLUDE[prod_long](../developer/includes/prod_long.md)]** page.
 
-    ![Business Central Setup](../media/setup.png "Business Central Setup")
+    ![Business Central Setup.](../media/setup.png "Business Central Setup")
 
     - Choose **Get a free online trial to sign up**  if you interested in hearing about and trying the cloud experience.
     - Choose **Get the Business Central app from the Microsoft Store** to download a companion app that mimics that Web client but has the same look-and-feel as the mobile apps. For more information, see [Installing the Microsoft Dynamics 365 Business Central App](install-business-central-app.md).

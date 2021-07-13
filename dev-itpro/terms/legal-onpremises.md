@@ -3,12 +3,12 @@ title: "Legal Resources for Business Central On-Premises"
 description: View a list of links to where you can find legal information that applies to Business Central on-premises deployments.
 author: jswymer
 ms.custom: na
-ms.date: 04/13/2021
-ms.reviewer: na
+ms.reviewer: edupont
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
+ms.date: 04/13/2021
 ---
 # Legal Resources for Business Central On-Premises
 
@@ -38,7 +38,7 @@ This page provides links to legal information for Business Central On-Premises.
 
 ## Lifecycle
 
-- [Lifecycle policy for [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises](/lifecycle/products/dynamics-365-business-central-onpremises-modern-policy)
+- [Software Lifecycle Policy and Dynamics 365 Business Central On-Premises Updates](lifecycle-policy-on-premises.md)
 
 <!--- links-->
 

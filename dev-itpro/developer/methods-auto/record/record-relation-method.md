@@ -3,7 +3,7 @@ title: "Record.Relation(Any) Method"
 description: "Determines the table relationship of a given field."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 06/22/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

@@ -13,7 +13,7 @@ caps.latest.revision: 17
 # Walkthrough: Deploying Microsoft Dynamics NAV on Two Microsoft Azure Virtual Machines
 The following walkthrough demonstrates how to use the Example-2VM.ps1 script of the [!INCLUDE[nav_prov_long](includes/nav_prov_long_md.md)] to deploy [!INCLUDE[navnow](includes/navnow_md.md)] on Microsoft Azure. The walkthrough deploys the [!INCLUDE[navnow](includes/navnow_md.md)] components, including the [!INCLUDE[demolong](includes/demolong_md.md)], on two virtual machines as illustrated in the following figure.  
   
- ![Network topology for Example&#45;2VM.ps1](media/NAV_Azure_Example-2VM.png "NAV\_Azure\_Example-2VM")  
+ ![Network topology for Example&#45;2VM.ps1.](media/NAV_Azure_Example-2VM.png "NAV\_Azure\_Example-2VM")  
   
  When completed, you will have a new virtual machine on Azure with a fully functional [!INCLUDE[navnow](includes/navnow_md.md)] environment that gives users access to [!INCLUDE[navnow](includes/navnow_md.md)] data from the [!INCLUDE[nav_windows](includes/nav_windows_md.md)] and [!INCLUDE[nav_web](includes/nav_web_md.md)]. Additionally, the virtual machine will have full development and administration capabilities including [!INCLUDE[nav_dev_long](includes/nav_dev_long_md.md)], [!INCLUDE[nav_admin](includes/nav_admin_md.md)], and [!INCLUDE[navnow](includes/navnow_md.md)] Windows PowerShell cmdlets.  
   

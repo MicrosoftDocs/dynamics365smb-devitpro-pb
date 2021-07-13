@@ -1,13 +1,14 @@
 ---
 title: "Performance in Business Central Online"
+description: Learn about how you can improve performance for environments in Business Central online. 
 ms.custom: na
-ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: KennieNP
+ms.date: 04/01/2021
 ---
 
 # Performance in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Online
@@ -34,7 +35,7 @@ Due to the nature of the operations our users perform in the sandbox environment
 
 ## Telemetry
 
-For monitoring and analyzing performance issues in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service, we recommend connecting Azure AppInsights to the environments that you want to get signals from. For more information, see [Sending telemetry to Microsoft Azure Application Insights](../administration/tenant-admin-center-telemetry.md#appinsights). 
+For monitoring and analyzing performance issues in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service, we recommend connecting Azure AppInsights to the environments that you want to get signals from. For more information, see [Enable Sending Telemetry to Application Insights](../administration/telemetry-enable-application-insights.md). 
 
 Here are some ways where telemetry can help troubleshoot performance issues:
 

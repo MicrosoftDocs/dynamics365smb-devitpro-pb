@@ -24,7 +24,7 @@ Pages of the type **[API](devenv-api-pagetype.md    )** are also designed to int
 
 The following figure illustrates how a list created by a repeater is displayed in the Web Client.
 
-![List part overview](media/sample-list-part.png "List part overview")
+![List part overview.](media/sample-list-part.png "List part overview")
 
 > [!NOTE]
 > The Web client does not support displaying Repeater controls that contain other Parts or FlowFilter fields.

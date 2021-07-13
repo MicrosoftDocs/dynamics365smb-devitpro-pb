@@ -68,6 +68,7 @@ var
     URL: Text;
 begin
     if IsSecureHttpUrl(URL) then
+    begin
         message('URL is not secure.')
         exit(true);
     exit(false);

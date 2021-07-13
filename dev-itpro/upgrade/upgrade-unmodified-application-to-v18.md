@@ -21,7 +21,7 @@ Use this scenario if you have one of the following versions that uses the Micros
 - [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2019 release wave 2 (version 15)
 
 
- ![Upgrade on unmodified Business Central application](../developer/media/bc18-upgrade-unmodified-app.png "Upgrade on unmodified Business Central application") 
+ ![Upgrade on unmodified Business Central application.](../developer/media/bc18-upgrade-unmodified-app.png "Upgrade on unmodified Business Central application") 
 
 #### Single-tenant and multitenant deployments
 
@@ -201,6 +201,7 @@ Publishing an extension adds the extension to the application database that is m
 
 The steps in this task continue to use the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 18 that you started in the previous task.
 
+<!-- removed starting in 18
 1. Publish version 18 system symbols extension.
 
     The symbols extension contains the required platform symbols that the base application depends on. The symbols extension package is called **System.app**. You find it where the **AL Development Environment** is installed. The default path is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\180\AL Development Environment.  
@@ -208,8 +209,9 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     ```powershell
     Publish-NAVApp -ServerInstance  <server instance name> -Path "<path to system.app>" -PackageType SymbolsOnly
     ```
-    [What are symbols?](upgrade-overview-v15.md#Symbols) 
-2. Publish the **System Application** extension (Microsoft_System Application.app).
+    [What are symbols?](upgrade-overview-v15.md#Symbols) -->
+
+1. Publish the **System Application** extension (Microsoft_System Application.app).
 
     You find the (Microsoft_System Application.app in the **Applications\System Application\Source** folder of installation media (DVD).
 
@@ -218,7 +220,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     ```
 
     [What is the System Application?](upgrade-overview-v15.md#SystemApplication)
-3. Publish the Business Central base application extension (Microsoft_Base Application.app).
+2. Publish the Business Central base application extension (Microsoft_Base Application.app).
 
     The **Base Application** extension contains the application business objects. You find the (Microsoft_Base Application.app in the **Applications\BaseApp\Source** folder of installation media (DVD).
 
@@ -226,7 +228,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     Publish-NAVApp -ServerInstance <server instance name> -Path "<path to Microsoft_Base Application.app>"
     ```
 
-4. Publish the Microsoft_Application extension.
+3. Publish the Microsoft_Application extension.
 
     For more information about this extension, see [The Microsoft_Application.app File](../developer/devenv-application-app-file.md).
 
@@ -234,7 +236,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     Publish-NAVApp -ServerInstance <server instance name> -Path "<path to Microsoft_Application.app>"
     ```
 
-5. Publish the new versions of Microsoft extensions.
+4. Publish the new versions of Microsoft extensions.
 
     In this step, you publish new versions of Microsoft extensions that were used on your old deployment. You find the extensions in the **Applications** folder of the installation media (DVD).
 
@@ -248,7 +250,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     Publish-NAVApp -ServerInstance BC180 -Path "C:\W1DVD\Applications\SalesAndInventoryForecast\Source\SalesAndInventoryForecast.app"
     ```
 
-6. Publish new versions of 3rd-party extensions. Be sure to include new extensions that contain custom permission sets as AL objects.
+5. Publish new versions of 3rd-party extensions. Be sure to include new extensions that contain custom permission sets as AL objects.
 
     If you have new versions of these extensions, built on the Business Central version 18, then publish the new versions.  
 
@@ -256,7 +258,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     Publish-NAVApp -ServerInstance BC180 -Path "<path to extension>"
     ```
 
-7. Recompile extensions not build on version 18.
+6. Recompile extensions not build on version 18.
 
     Do this step for any published extension versions that aren't built on version 18, and you want to reinstall on tenants. These extensions must be recompiled to work with version 18. To recompile the extensions, use the [Repair-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/repair-navapp) cmdlet:
 
@@ -342,7 +344,7 @@ Run the data upgrade on extensions in order of dependency.
 
 1. Run the data upgrade for the System Application, followed by the Base Application. 
 
-    To run the data upgrade, use the [Start-NavDataUpgrade](/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade) cmdlet:
+    To run the data upgrade, use the [Start-NAVAppDataUpgrade cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/start-navappdataupgrade) cmdlet:
 
     ```powershell
     Start-NAVAppDataUpgrade -ServerInstance <server instance name> -Name "<extension name>" -Version <extension version>

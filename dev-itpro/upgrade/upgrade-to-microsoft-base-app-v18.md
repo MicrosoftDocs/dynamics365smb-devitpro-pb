@@ -15,7 +15,7 @@ ms.service: "dynamics365-business-central"
 
 This article describes how to upgrade a customized version 14 application to a version 18 solution that uses the Microsoft Base Application.
 
- ![Shows the upgrade of an unmodified Business Central application](../developer/media/bc14-to-18-cal-upgrade-to-base-app.png "Upgrade on unmodified Business Central application version 18") 
+ ![Shows the upgrade of an unmodified Business Central application.](../developer/media/bc14-to-18-cal-upgrade-to-base-app.png "Upgrade on unmodified Business Central application version 18") 
 
 <!--
 
@@ -28,7 +28,7 @@ The process for upgrading the similar for a single-tenant and multitenant deploy
 
 The upgrade is divided into two sections: Application Upgrade and Data Upgrade. The Application Upgrade section deals with upgrading the application code. For the application upgrade, you'll have to create several extensions. Some of these extensions are only used for upgrade purposes. The Data Upgrade section deals with upgrading the data on tenants - publishing, syncing, and installing extensions. For this scenario, the data upgrade consists of two phases for migrating data from the current tables to extension-based tables. The following figure illustrates the upgrade process.  
 
-![Shows the upgrade on unmodified Business Central application](../developer/media/Upgrade-BC14-custom-BC18.png "Upgrade on unmodified Business Central application") 
+![Shows the upgrade on unmodified Business Central application.](../developer/media/Upgrade-BC14-custom-BC18.png "Upgrade on unmodified Business Central application") 
 
 The process uses two special features for migrating tables and data to extensions:
 
@@ -356,7 +356,7 @@ In this step, you configure the version 18 server instance. In particular, you c
 
 2. Configure the `DestinationAppsForMigration` setting of the server instance to table migration extension.
 
-    You'll need the ID, name, and publisher for the table migration extension that you created in **Task 2**.
+    You'll need the ID, name, and publisher for the table migration extension that you created in **Task 4**.
 
     ```powershell
     Set-NAVServerConfiguration -ServerInstance <server instance name> -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"<table migration extension ID>", "name":"<table migration extension>", "publisher": "<publisher>"}]'
@@ -453,7 +453,7 @@ If you have a multitenant deployment, do these steps for each tenant.
 
     With a single-tenant deployment, you can omit the `-Tenant` parameter and value.
 
-3. Synchronize the tenant with the table migration extension. This is the tables only extension you created in task 2.
+3. Synchronize the tenant with the table migration extension. This is the tables only extension you created in task 4.
 
     Use the [Sync-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp) cmdlet:
 

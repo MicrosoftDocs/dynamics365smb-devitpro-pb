@@ -14,7 +14,7 @@ author: jswymer
 
 You can set up a Role Center to display a series of headlines, where headlines appear one at a time for a predefined period of time before displaying the next.
 
-![Headline part](media/headlineApril19.png "Headline part on a Role Center")
+![Headline part.](media/headlineApril19.png "Headline part on a Role Center")
 
 The headlines can provide users with up-to-date information and insight into the business and daily work. Typical categories of headlines might include:
 

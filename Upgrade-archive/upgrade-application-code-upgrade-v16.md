@@ -23,7 +23,7 @@ This article provides guidelines for upgrading a customized C/AL application to 
 
 When upgrading your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] Spring 2019 (version 14) solution to version 15, the goal is to move towards a full uptake of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] base and system applications, as they are, and migrating code customizations to add-on extensions. We realize that the complexity of some solutions will make this path very difficult. If this path is not currently realistic for your solution, there are different levels to which you can upgrade your application to best suit your solution; some levels are required, while others are recommended.
 
-![Upgrade path on Business Central application](../developer/media/bc15-application-code-upgrade-path.png "Upgrade paths")
+![Upgrade path on Business Central application.](../developer/media/bc15-application-code-upgrade-path.png "Upgrade paths")
 
 > [!NOTE]
 > If your current base application has not been customized, or any customizations are part of either Microsoft (1st party) and customization extensions (3rd-party), then your application upgrade is fairly straightforward and you can go directly to [Upgrade an Unmodified Application](upgrade-unmodified-application.md).
@@ -48,7 +48,7 @@ The following table provides an overview of the upgrade levels to guide you thro
 
 Use this scenario if you have a Business Central application that does not include any code customization in C/AL. Customizations, if any, are done by extensions, which can be Microsoft (1st party) extensions and custom extensions (3rd party). With this upgrade, you will replace the C/AL base application with the new Business Central version 15 base application extension and the system application. The result will be a fully upgraded application and platform on [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 release wave 2.
 
- ![Upgrade on unmodified Business Central application](../developer/media/bc15-upgrade-unmodified-app.png "Upgrade on unmodified Business Central application") 
+ ![Upgrade on unmodified Business Central application.](../developer/media/bc15-upgrade-unmodified-app.png "Upgrade on unmodified Business Central application") 
 
 For more information, see [Upgrading an Unmodified Application](upgrade-unmodified-application.md). 
 
@@ -57,7 +57,7 @@ For more information, see [Upgrading an Unmodified Application](upgrade-unmodifi
 Use this process when you have a customized Business Central application that you want to upgrade to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 release wave 2 platform. This will not upgrade the application to the latest version. With this process, you will convert the entire application from C/AL to an base application extension.
 
 
- ![Upgrade on customized Business Central application](../developer/media/bc15-upgrade-customized-app.png "Upgrade on customize Business Central application")  
+ ![Upgrade on customized Business Central application.](../developer/media/bc15-upgrade-customized-app.png "Upgrade on customize Business Central application")  
 
 
 For more information, see [Technical Upgrade](upgrade-technical-upgrade-v14-v15.md).
@@ -67,7 +67,7 @@ For more information, see [Technical Upgrade](upgrade-technical-upgrade-v14-v15.
 
 Use this process when you have a customized Business Central application that you want to upgrade to use the Microsoft System Application and the version 15 platform. With this process, you will convert the entire application from C/AL to AL and refactor to use the System Application  extension.
 
-!["Upgrade to system application in Business Central](../developer/media/bc15-system-application-upgrade-customized-app.png "Upgrade to system application in Business Central")  
+!["Upgrade to system application in Business Central.](../developer/media/bc15-system-application-upgrade-customized-app.png "Upgrade to system application in Business Central")  
 
 For more information, see [Upgrade to the System Application](upgrade-system-application-v14-v15.md). 
 
@@ -76,7 +76,7 @@ For more information, see [Upgrade to the System Application](upgrade-system-app
 
 Use this process when you have a customized Business Central application that you want to upgrade to the Business Central Wave 2 application and platform. With this process, you will convert the entire application from C/AL to AL and refactor to use the system application layer extension.
 
- ![Upgrade on customized Business Central application](../developer/media/bc15-full-upgrade-customized-app.png "Upgrade on customize Business Central application")  
+ ![Upgrade on customized Business Central application.](../developer/media/bc15-full-upgrade-customized-app.png "Upgrade on customize Business Central application")  
 
 For more information, see [Upgrade to the Microsoft Base Application](upgrade-full-upgrade-v14-v15.md). 
 -->

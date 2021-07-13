@@ -39,7 +39,7 @@ If, at design time, you do not know the specific page you want to run, then use 
 
 If you do know which page you want to run, then you can create a Page variable, set the subtype of the variable to a specific page, and then use the [Run Method \(Page\)](page-run--method.md) or [RunModal Method \(Page\)](page-runmodal--method.md) on the Page variable.  
 
-When you want to close the page, use CurrPage.Close. CurrPage is a predefined system variable.  
+When you want to close the page, use CurrPage.Close. CurrPage is a predefined system variable. For more information, see [System-Defined Variables](../../devenv-system-defined-variables.md).  
 
 ## Example  
 

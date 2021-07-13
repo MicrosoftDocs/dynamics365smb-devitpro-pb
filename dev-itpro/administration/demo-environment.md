@@ -83,11 +83,11 @@ Once you have a Microsoft 365 demo account as described in the [To get a demo en
 
     Once the trial is available, proceed to the next step.  
 3. In another browser tab, sign into [!INCLUDE [prod_short](../includes/prod_short.md)] at [https://businesscentral.dynamics.com/?redirectedFromSignup=1](https://businesscentral.dynamics.com/?redirectedFromSignup=1).  
-4. Choose the ![Lightbulb that opens the Tell Me feature](../media/search_small.png "Tell me what you want to do") icon, enter **Dataverse Connection Setup**, and then choose the related link.  
+4. Choose the ![Lightbulb that opens the Tell Me feature.](../media/search_small.png "Tell me what you want to do") icon, enter **Dataverse Connection Setup**, and then choose the related link.  
 5. Follow the steps in the wizard to connect to your Sales trial.  
 
     To finish setting up the connection, you must run the Sales-specific assisted setup.  
-6. Choose the ![Lightbulb that opens the Tell Me feature](../media/search_small.png "Tell me what you want to do") icon, enter **Dynamics 365 Connection Setup**, and then choose the related link.  
+6. Choose the ![Lightbulb that opens the Tell Me feature.](../media/search_small.png "Tell me what you want to do") icon, enter **Dynamics 365 Connection Setup**, and then choose the related link.  
 7. Follow the steps in the wizard to connect to your Sales trial.  
 
 ## Richer demos with the Customer Engagement content pack

@@ -60,7 +60,7 @@ MenuSuites display menus on the Departments page in the [!INCLUDE[nav_windows](i
   
      The following image shows the MenuSuite design levels that are available in [!INCLUDE[navnow](includes/navnow_md.md)].  
   
-     ![Microsoft Dynamics NAV MenuSuite Design Level](media/MicrosoftDynamicsNAVMenuSuiteDesignLevel.png "MicrosoftDynamicsNAVMenuSuiteDesignLevel")  
+     ![Microsoft Dynamics NAV MenuSuite Design Level.](media/MicrosoftDynamicsNAVMenuSuiteDesignLevel.png "MicrosoftDynamicsNAVMenuSuiteDesignLevel")  
   
 3.  In the **Design Level**  window, choose **Dept - Partner** and then choose **OK** to open **Navigation Pane Designer**.  
   
@@ -194,7 +194,7 @@ MenuSuites display menus on the Departments page in the [!INCLUDE[nav_windows](i
   
      The following image shows the departments and menu items in the **Customer Support** department in Navigation Pane Designer. The MenuSuite you have created in Navigation Pane Designer is similar to this image.  
   
-     ![MenuSuite Navigation Pane Designer](media/MicrosoftDynamicsNAVMenuSuiteCustSupport.jpg "MicrosoftDynamicsNAVMenuSuiteCustSupport")  
+     ![MenuSuite Navigation Pane Designer.](media/MicrosoftDynamicsNAVMenuSuiteCustSupport.jpg "MicrosoftDynamicsNAVMenuSuiteCustSupport")  
   
 22. Right-click the Navigation Pane Designer header and choose **Close Navigation Pane Designer** to save the MenuSuite. Notice the ID and the name of the MenuSuite you are saving. The ID and the name are given by [!INCLUDE[navnow](includes/navnow_md.md)].  
   

@@ -3,7 +3,7 @@ title: "Record.CalcSums(Any [, Any,...]) Method"
 description: "Calculates the total of a column in a table."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 06/15/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -44,6 +44,10 @@ An instance of the [Record](record-data-type.md) data type.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+If one of the fields specified is not a SumIndexField, the operation will be unsuccessful and a runtime error will occur.
+
 ## See Also
 [Record Data Type](record-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  

@@ -1,9 +1,9 @@
 ---
 title: "AppSourceCop Rule AS0092"
-description: "The app."
+description: "The app.json file must specify an Azure Application Insights resource for monitoring operations related to this extension."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,24 +21,39 @@ The app.json file must specify an Azure Application Insights resource.
 The app.json file must specify an Azure Application Insights resource for monitoring operations related to this extension. See https://docs.microsoft.com/dynamics365/business-central/dev-itpro/administration/telemetry-overview for additional information.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-
 ## How to fix this diagnostic?
 
-You can fix this diagnostic by specifying the instrumentation key of the Azure Application Insights resource setup to monitor the operations related to this extension.
+You can fix this diagnostic by specifying either the connection string or the instrumentation key of the Azure Application Insights resource setup to monitor the operations related to this extension.
 
 For more information about enabling Application Insights, see [Monitoring and Analyzing Telemetry](../../administration/telemetry-overview.md) and [Environment Telemetry](../../administration/tenant-admin-center-telemetry.md).
 
 ```JSON
 {
-    "applicationInsightsKey": "<your-azure-application-insight-instrumentation-key>"
+    "applicationInsightsConnectionString": "<your-azure-application-insight-connection-string>"
 }
 ```
 
-See [JSON Files](../devenv-json-files.md), for additional information about the manifest of extensions (app.json).
+Or before `7.2` - Business Central 2021 release wave 1 update 18.2:
+
+```JSON
+{
+    "applicationInsightsKey": "<your-azure-application-insight-instrumentationKey>"
+}
+```
+
+Including both of the properties will trigger a compiler error, so make sure to use only one. Using the `applicationInsightsConnectionString` property is preferred when available.
+
+For additional information about the manifest of extensions (app.json), see [JSON Files](../devenv-json-files.md).
 
 ## Code example triggering the rule
 
-This rule is triggered when the 'applicationInsightsKey' property is not specified in the manifest (app.json) of the extension, or when its value is set to the empty GUID.
+This rule is triggered when both the 'applicationInsightsConnection' and the 'applicationInsightsKey' properties are not specified in the manifest (app.json) of the extension, or when its value is set to the empty string/GUID as shown below:
+
+```JSON
+{
+    "applicationInsightsConnectionString": ""
+}
+```
 
 ```JSON
 {

@@ -1,9 +1,9 @@
 ---
-title: "Record.RecordId() Method"
-description: "Gets the RecordId of the record that is currently selected in the table."
+title: "Record.RecordId Method"
+description: "Gets the RecordId of the record that is currently selected in the table. If no table is selected, an error is generated."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 06/15/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
