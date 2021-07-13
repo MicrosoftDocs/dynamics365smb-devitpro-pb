@@ -1,9 +1,9 @@
 ---
 title: "Ellipsis Property"
-description: "Sets a value that specifies whether an ellipsis (."
+description: "Sets a value that specifies whether an ellipsis (...) is appended to the caption on a command button or menu item."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 07/13/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
