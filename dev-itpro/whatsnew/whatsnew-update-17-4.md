@@ -40,7 +40,7 @@ As previously [announced](https://nam06.safelinks.protection.outlook.com/?url=ht
 The release plan for Dynamics 365 Busines Central wave 1 2021 is now live! You can find an overview of all the new and planned features [here](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/planned-features).
 
 **Basic Authentication**  
-Basic Authentication (Web Service Access Key) removal for Business Central online has been postponed until [April 2022](../upgrade/deprecated-features-w1.md#basic-auth--web-service-access-keys-for-saas). We see that some integrations needs more time to move from Web Service Access Key usage to OAuth. PowerShell samples on how to connect to Business Central is published on [GitHub](https://github.com/microsoft/BCTech/tree/master/samples/PSOAuthBCAccess). 
+Basic Authentication (Web Service Access Key) removal for Business Central online has been postponed until [April 2022](../upgrade/deprecated-features-w1.md#accesskeys). We see that some integrations needs more time to move from Web Service Access Key usage to OAuth. PowerShell samples on how to connect to Business Central is published on [GitHub](https://github.com/microsoft/BCTech/tree/master/samples/PSOAuthBCAccess). 
 
 **Business Central Office Hours Calls in February**  
 Make sure to join the office hours calls around ‘Power Platform Integration, Power Apps, and Dataverse’ on February 9 and ‘Performance Toolkit and Telemetry; How to deploy for performance’ on February 23. Register and stay tuned for the upcoming calls: https://aka.ms/BCOfficeHours. 

@@ -1,9 +1,9 @@
 ---
 title: "Page.SetSelectionFilter(var Record) Method"
-description: "Notes the records that the user has selected on the page, marks those records in the table specified, and sets the filter to "marked only"."
+description: "Notes the records that the user has selected on the page, marks those records in the table specified, and sets the filter to \\"marked only\\"."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 07/13/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # Page.SetSelectionFilter(var Record) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
-Notes the records that the user has selected on the page, marks those records in the table specified, and sets the filter to "marked only".
+Notes the records that the user has selected on the page, marks those records in the table specified, and sets the filter to \\"marked only\\".
 
 
 ## Syntax

@@ -1,6 +1,6 @@
 ---
 title: "AppSourceCop Rule AS0015"
-description: "The "TranslationFile" flag must be added to the "features" array in the app.json file."
+description: "The \"TranslationFile\" flag must be added to the \"features\" array in the app.json file."
 ms.author: solsen
 ms.custom: na
 ms.date: 07/13/2021
@@ -18,7 +18,7 @@ author: SusanneWindfeldPedersen
 TranslationFile must be enabled.
 
 ## Description
-The "TranslationFile" flag must be added to the "features" array in the app.json file.
+The \"TranslationFile\" flag must be added to the \"features\" array in the app.json file.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

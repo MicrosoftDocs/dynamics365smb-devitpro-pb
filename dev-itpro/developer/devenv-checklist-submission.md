@@ -42,7 +42,7 @@ If you do not meet these mandatory requirements, your extension will fail valida
 |Use `addfirst` and `addlast` for placing your actions on Business Central pages. This eliminates breaking your app due to Business Central core changes.|[Placing Actions and Controls](devenv-page-ext-object.md#using-keywords-to-place-actions-and-controls)|
 |The extension submitted must not be a runtime package.|[Creating Runtime Packages](devenv-creating-runtime-packages.md)|
 |The extension submitted must use translation files.|[Working with Translation Files](devenv-work-with-translation-files.md)|
-|The extension submitted must specify at least one dependency on extensions created by Microsoft.|At least one dependency on an extension published by Microsoft is required in order to compute the minimum release of Business Central targeted by your submission. For more information, see [Computation of Releases for Validation](devenv-checklist-submission.md#Against-which-releases-of-Business-Central-is-your-submission-validated)|
+|The extension submitted must specify at least one dependency on extensions created by Microsoft.|At least one dependency on an extension published by Microsoft is required in order to compute the minimum release of Business Central targeted by your submission. For more information, see [Computation of Releases for Validation](devenv-checklist-submission.md#against-which-releases-of-business-central-is-your-submission-validated)|
 
 <!-- 
 |Permission set(s) must be created by your extension and when marked, should give the user all setup and usage abilities. A user must not be required to have SUPER permissions for setup and usage of your extension.|[Packaging the Permission Set](/powershell/module/microsoft.dynamics.nav.apps.tools/new-navapppackage?view=dynamicsnav-ps-2017)| , [How to: Export Permission Sets](../How-to-Import-Export-Permission-Sets-Permissions.md) |
@@ -178,7 +178,7 @@ If your extension's manifest is defined as follows, the minimum release where yo
 }
 ```
 
-Note that for AppSource extensions, we advise using the `application` property over explicit dependencies on the `Base Application` and `System Application`. For more information, see [The Microsoft_Application.app File](devenv-application-app-file.md) and [AS0085](analyzers/appsourcecop-as0085-applicationdependencymustbeused.md).
+Note that for AppSource extensions, we advise using the `application` property over explicit dependencies on the `Base Application` and `System Application`. For more information, see [The Microsoft_Application.app File](devenv-application-app-file.md) and [AS0085](analyzers/appsourcecop-as0085.md).
 
 ## See Also
 [Developing [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]s](devenv-dev-overview.md)  

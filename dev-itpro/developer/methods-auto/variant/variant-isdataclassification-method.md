@@ -41,5 +41,5 @@ An instance of the [Variant](variant-data-type.md) data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [Variant Data Type](variant-data-type.md)
-[Getting Started with AL](../devenv-get-started.md)
-[Developing Extensions](../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)
+[Developing Extensions](../../devenv-dev-overview.md)
