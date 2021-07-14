@@ -123,12 +123,7 @@ At Microsoft, we are in process of simplifying and unifying our style guides. To
 
 ## Get notified about changes through an RSS feed
 
-To subscribe to a Really Simple Syndication (RSS) feed of all updates that are to the content on docs.microsoft.com across the developer and administration content for [!INCLUDE [prod_short](includes/prod_short.md)], use the following link:
-
-[RSS feed](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-bc-devitpro%27)&locale=en-us)
-
-> [!NOTE]
-> The RSS feed returns a list of the 100 articles most recently updated. The list is not sorted by date.  
+[!INCLUDE [ua-rss](includes/ua-rss.md)]
 
 ## See Also
 
