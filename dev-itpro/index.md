@@ -67,7 +67,11 @@ As a reseller of [!INCLUDE [prod_short](includes/prod_short.md)] online, your ro
 [!INCLUDE [prod_short](developer/includes/prod_short.md)] supports the same profiles and roles as other Dynamics 365 services. If you see yourself as a solution architect or functional consultant, for example, [!INCLUDE [prod_short](developer/includes/prod_short.md)] has functionality and content for you. Look around in the Help & Support section [here](help-and-support.md), for example, ramp up on features in the [business functionality
 content](/dynamics365/business-central/across-business-functionality), or learn how you can [integrate this with other products](/dynamics365/business-central/admin-common-data-service).  
 
-If you are completely new to [!INCLUDE [prod_short](includes/prod_short.md)], we recommend you take the [Get started](https://go.microsoft.com/fwlink/?linkid=847861) learning path.
+If you are completely new to [!INCLUDE [prod_short](includes/prod_short.md)], we recommend you take the [Get started](https://go.microsoft.com/fwlink/?linkid=847861) learning path.  
+
+## Get notified about changes through an RSS feed
+
+[!INCLUDE [ua-rss](includes/ua-rss.md)]
 
 ## See Also
 
