@@ -101,17 +101,17 @@ Please include app and all library apps in both previousApps and apps and please
 
 > [!Important]
 > The computer on which you run this command must have Docker and the latest BcContainerHelper PowerShell module installed and be able to run Business Central on Docker.
-> 
-> If you are having issues with Business Central on Docker, you might be able to find help here: https://freddysblog.com/2020/10/12/troubleshooting-business-central-on-docker.
-> 
-> You can use https://aka.ms/getbc?artifacturl=bcartifacts%2fsandbox%2f%2fus%2flatest to create an Azure VM, which has all prerequisites installed to run Business Central on Docker.
+>
+> If you are having issues with Business Central on Docker, you might be able to find help here: [https://freddysblog.com/2020/10/12/troubleshooting-business-central-on-docker](https://freddysblog.com/2020/10/12/troubleshooting-business-central-on-docker).
+>
+> You can use [https://aka.ms/getbc?artifacturl=bcartifacts%2fsandbox%2f%2fus%2flatest](https://aka.ms/getbc?artifacturl=bcartifacts%2fsandbox%2f%2fus%2flatest) to create an Azure VM, which has all prerequisites installed to run Business Central on Docker.
 
 > [!NOTE]
-> Microsoft recommends that all partners set up DevOps processes to ensure that this validation process happend automatically and regularly.
+> Microsoft recommends that all partners set up DevOps processes to ensure that this validation process happened automatically and regularly.
 >
-> You can find resources for how to set up a build pipeline, which performs all these steps here: https://aka.ms/cicdhol and you can find sample repositories, performing these steps here:
-> -    https://dev.azure.com/businesscentralapps/HelloWorld.AppSource (for Azure DevOps)
-> -    https://github.com/BusinessCentralApps/HelloWorld.AppSource (for GitHub Actions)
+> You can find resources for how to set up a build pipeline, which performs all these steps here: [https://aka.ms/cicdhol](https://aka.ms/cicdhol) and you can find sample repositories, performing these steps here:
+> - [https://dev.azure.com/businesscentralapps/HelloWorld.AppSource](https://dev.azure.com/businesscentralapps/HelloWorld.AppSource) (for Azure DevOps)
+> - [https://github.com/BusinessCentralApps/HelloWorld.AppSource](https://github.com/BusinessCentralApps/HelloWorld.AppSource) (for GitHub Actions)
 
 ## Manual validation performed by the Business Central validation team
 
@@ -128,7 +128,7 @@ The manual test validation document is run manually and if the document doesn't 
 >
 > This can be done either in online sandbox environments or in sandbox docker containers.
 
-## <a name="versions"></>Against which releases of Business Central is your submission validated?
+## <a name="versions"></a>Against which releases of Business Central is your submission validated?
 
 Extensions submitted to the AppSource marketplace are validated for all countries specified in the submission against all the release targeted by the submission. As part of the validation, the minimum release for your submission is computed. The extensions are then validated for all releases from this minimum release to the current release in production. For instance, if the minimum release for your submission is 18.0 and the latest minor release in production is 18.3, your submission will be validated against 18.0, 18.1, 18.2, and 18.3.
 
