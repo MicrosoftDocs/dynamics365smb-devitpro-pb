@@ -338,6 +338,8 @@ pageextension 50101 "Employee Synch Extension" extends "Employee Card"
 
 ## Customizing the matching algorithm
 
+Starting in 2020 release wave 1, you can use match-based coupling of records in [!INCLUDE [prod_short](../developer/includes/prod_short.md)] and [!INCLUDE [cds_long_md](../developer/includes/cds_long_md.md)], based on matching criteria defined by the administrator. For more information, see [Customize the Match-Based Coupling](/dynamics365/business-central/admin-how-to-set-up-a-dynamics-crm-connection#customize-the-match-based-coupling) in the business functionality content.  
+
 Based on the fields that you choose to match on, the algorithm to find a match sets an equality filter by default. However, at the moment when it sets a filter, an event is raised by codeunit 5360, `CDSIntTableCouple`:
 
 ```al
