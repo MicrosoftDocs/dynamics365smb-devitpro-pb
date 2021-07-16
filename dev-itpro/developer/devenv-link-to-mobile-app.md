@@ -1,5 +1,5 @@
 ---
-title: "Linking to the Dynamics 365 [!INCLUDE[nav_uni_app_md](../developer/includes/nav_uni_app_md.md)]"
+title: "Linking to the Dynamics 365 Business Central App"
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
