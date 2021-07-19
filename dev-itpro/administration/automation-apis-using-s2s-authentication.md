@@ -215,7 +215,7 @@ Authorization: {{accessHeader}}
 ```
 
 ## See Also
-[OAuth2 and Azure Active Directory]/azure/active-directory/develop/active-directory-v2-protocols)  
+[OAuth2 and Azure Active Directory](/azure/active-directory/develop/active-directory-v2-protocols)  
 [Client Credentials flow/S2S using MSAL library](/azure/active-directory/develop/scenario-daemon-overview)  
 [C# samples using Client Credentials flow](https://github.com/Azure-Samples/active-directory-dotnetcore-daemon-v2)  
 [OAuth 2.0 client credentials flow on the Microsoft identity platform](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow)  
