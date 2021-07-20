@@ -20,7 +20,7 @@ ms.author: jswymer
 
 Service-to-Service (S2S) authentication is suited for scenarios where integrations are required to run without any user interaction. OAuth delegate flows, like [authorization code](/azure/active-directory/develop/v2-oauth2-auth-code-flow), [implicit grant flow](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow) and [resource owner password credentials](/azure/active-directory/develop/v2-oauth-ropc) can be configured to require multifactor authentication (MFA). This configuration prevents integration from running unattended, because MFA is required to acquire the access token from Azure Active Directory. S2S authentication uses the [Client Credentials OAuth 2.0 Flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow). This flow enables you to access resources by using the identity of an application.
 
-Business Central 2020 release wave 2 (version 17.0) introduced S2S authentication support for accessing Business Central automation APIs. 2021 release wave 1 (version 18.3) expanded S2S authentication for access to the Business Central APIs [v2.0](/dynamics365/business-central/dev-itpro/api-reference/v2.0/) and [v1.0]/dynamics365/business-central/dev-itpro/api-reference/v2.0/), [custom APIs](../developer/devenv-develop-custom-api.md), and web services.
+Business Central 2020 release wave 2 (version 17.0) introduced S2S authentication support for accessing Business Central automation APIs. 2021 release wave 1 (version 18.3) expanded S2S authentication for access to the Business Central APIs [v2.0](/dynamics365/business-central/dev-itpro/api-reference/v2.0/) and [v1.0](/dynamics365/business-central/dev-itpro/api-reference/v1.0/), [custom APIs](../developer/devenv-develop-custom-api.md), and web services.
 
 > [!NOTE]
 > For more information about OAuth 2.0 flows, see [OAuth 2.0 and OpenID Connect protocols on the Microsoft identity platform](/azure/active-directory/develop/active-directory-v2-protocols) in the Azure Active Directory documentation.
@@ -215,7 +215,7 @@ Authorization: {{accessHeader}}
 ```
 
 ## See Also
-[OAuth2 and Azure Active Directory]/azure/active-directory/develop/active-directory-v2-protocols)  
+[OAuth2 and Azure Active Directory](/azure/active-directory/develop/active-directory-v2-protocols)  
 [Client Credentials flow/S2S using MSAL library](/azure/active-directory/develop/scenario-daemon-overview)  
 [C# samples using Client Credentials flow](https://github.com/Azure-Samples/active-directory-dotnetcore-daemon-v2)  
 [OAuth 2.0 client credentials flow on the Microsoft identity platform](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow)  
