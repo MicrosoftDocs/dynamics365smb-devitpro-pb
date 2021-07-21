@@ -26,7 +26,8 @@ Find an overview of hotfixes in this [article](INSERT).
 
 | Country| Feature change |
 |-------------|--------------|
-| XX | XX|
+| Great Britain | Specify fraud prevention headers automatically without interaction with the user|
+| Norway | SAF-T Improvements|
 
 ## Release Plan
 If you want to get a comprehensive overview of what's new and planned for Business Central online for the entire 2021 release wave 1 (release from April 2021 through September 2021), find the link to the release plan [here](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/planned-features).
