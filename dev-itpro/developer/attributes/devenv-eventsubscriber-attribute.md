@@ -63,6 +63,9 @@ Specifies what happens to the subscriber method call when the user account that 
 
 ## Remarks
 
+> [!TIP]
+> Use the `Shift+Alt+E` shortcut in the AL code editor to invoke the list of all events. Select the one you want to subscribe to and an event subscriber for the event will be inserted.
+
 The value of the *ObjectType* argument will depend on the type of event: business, integration, and trigger.
 
 - Business and integration events are published by event publisher methods in any of the valid object types. To subscribe to a business or integration type event, you specify the object that contains the event publisher method that defines the event.
