@@ -30,7 +30,7 @@ You can use the following handler methods:
 |[HyperlinkHandler](attributes/devenv-HyperlinkHandler-attribute.md)||Handles specific hyperlinks.|\<*Function name*>\(\<*Hyperlink*> : Text\[1024\]\)|  
 |[SendNotificationHandler](attributes/devenv-SendNotificationHandler-attribute.md)||Handles **Send** statements.|\<*Function name*>\(\<*TheNotification*>: Notification\): Boolean|  
 |[RecallNotificationHandler](attributes/devenv-RecallNotificationHandler-attribute.md)||Handles **Recall** statements.|\<*Function name*>\(\<*TheNotification*>: Notification\): Boolean|  
-|[SessionSettingsHandler](attributes/devenv-sessionsettinghandler-attribute.md)||Handles **RequestSessionUpdate** statements.|\<*Function name*>\(var \<*SessionSettings*>: SessionSettings\): Boolean|| 
+|[SessionSettingsHandler](attributes/devenv-SessionSettingsHandler-attribute.md)||Handles **RequestSessionUpdate** statements.|\<*Function name*>\(var \<*SessionSettings*>: SessionSettings\): Boolean|| 
 
   
 ## How to create a handler method  
