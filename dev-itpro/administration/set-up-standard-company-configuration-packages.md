@@ -56,6 +56,3 @@ To see a complete list of setup tables, Choose the :::image type="icon" source="
 
 [Setting Up a Company With RapidStart Services](/dynamics365/business-central/admin-set-up-a-company-with-rapidstart)  
 [Administration](administration.md)
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
