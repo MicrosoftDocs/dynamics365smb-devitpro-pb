@@ -107,7 +107,7 @@ codeunit 50107 MyEventSubscriber
     [EventSubscriber(ObjectType::Table, Database::"Purchase Line", 'OnAfterValidateEvent', 'Location Code', false, false)]
     local procedure OnAfterValidateLocationCodePurchase(var Rec: Record "Purchase Line")
     begin
-        UpdateGSTJurisdictionType(Rec);
+        UpdateJurisdictionType(Rec);
     end;
 }
 ```
