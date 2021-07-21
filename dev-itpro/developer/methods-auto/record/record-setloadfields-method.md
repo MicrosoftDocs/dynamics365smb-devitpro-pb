@@ -46,8 +46,9 @@ The FieldNo's of the fields to be loaded.
 
 Calling SetLoadFields on a record without passing any fields will reset the fields selected to load to the default, where all readable normal fields are selected for load.
 
-It is not necessary to include the following fields, because they are always selected for loading: Primary key, SystemId, and data audit fields (SystemCreatedAt, SystemCreatedBy, SystemModifiedAt, SystemModifiedBy).
-Depending on the runtime version, the runtime may require extra fields to be selected for loading. Which extra fields are necessary depends on the state of the record and table and table extension definition. E.g. fields which that are filtered on are always loaded, fields which are refered to in calcformulas in the current table or table extension definition, etc.
+It is not necessary to include the following fields, because they are always selected for loading: Primary key, SystemId, and data audit fields (SystemCreatedAt, SystemCreatedBy, SystemModifiedAt, SystemModifiedBy).  
+
+Depending on the runtime version, the runtime may require extra fields to be selected for loading. Which extra fields to specify depends on the state of the record and table or table extension definition. For example, fields that are filtered upon are always loaded, fields that are refered to in calcformulas in the current table or table extension definition, and so on.
 
 This method is part of the partial records capability for improving performance. For more information, see [Using Partial Records](../../devenv-partial-records.md).
 
