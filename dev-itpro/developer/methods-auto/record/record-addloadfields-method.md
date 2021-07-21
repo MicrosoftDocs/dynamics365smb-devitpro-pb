@@ -44,6 +44,7 @@ The FieldNo's of the fields to be loaded.
 
 ## Remarks
 It is not necessary to include the following fields, because they are always selected for loading: Primary key, SystemId, and data audit fields (SystemCreatedAt, SystemCreatedBy, SystemModifiedAt, SystemModifiedBy).
+Depending on the runtime version, the runtime may require extra fields to be selected for loading. Which extra fields are necessary depends on the state of the record and table and table extension definition. E.g. fields which that are filtered on are always loaded, fields which are refered to in calcformulas in the current table or table extension definition, etc.
 
 This method is part of the partial records capability for improving performance. For more information, see [Using Partial Records](../../devenv-partial-records.md).
 
