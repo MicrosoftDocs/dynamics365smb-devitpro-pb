@@ -38,6 +38,13 @@ Please note that new customers will automatically get the latest builds of Busin
 
 ## Good to know
 
-**XXX**  
-XXX
+**Business Central Office Hours Calls in August**  
+Make sure to join the office hours calls around 'Business Central Apps in AppSource' on August 17 and 'Cloud Migration' on August 31. Register and stay tuned for the upcoming calls: https://aka.ms/BCOfficeHours.
+
+**Users see notification when they open the obsolete reports 204, 205, 206, & 207**  
+Before 2021 release wave 1, we [announced](/dynamics365/business-central/dev-itpro/upgrade/deprecated-features-w1#reports-204-207) that we were planning to replace several reports with newer versions. As the time approaches for the final cleaning up, we start displaying notifications so that the affected users can take action before 2021 release wave 2.
+ 
+If you still use one or more of the deprecated reports, now is the time to start using the recommended reports, alternatively you can clone the deprecated reports to a custom range, and switch to the cloned reports. 
+
+To check if your company uses old reports, search for **Report Selection – Sales**, and check which reports are configured to be used for *Quote*, *Order*, *Quote*, and *Credit Memo*. Remember to inspect the content of the **Custom Report Selection** table (object ID 9657), to detect if these reports are used for specific customers. For more information, see: [View a table object directly from the client](/dynamics365/business-central/dev-itpro/developer/devenv-view-table-data#view-a-table-object-directly-from-the-client). Once you know which customers use these reports, you can replace them on the Document Layout page for each affected customer, or you can use configuration packages to update in bulk. 
 

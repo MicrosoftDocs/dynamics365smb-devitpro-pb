@@ -53,7 +53,7 @@ In the upcoming June update to Power BI Desktop we have included a new connector
 We’ve updated [AL reference docs](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/properties/devenv-abouttitle-property) with plenty of details, including the list of page combinations where the About properties have different or no effect. Update 18.2 fully reflects these behaviours.
 
 **Business Central Office Hours Calls in June**  
-Make sure to join the office hours calls around 'Working with Dimensions' on June 15 and 'DevOps for Per Tenant Extensions' on June 29. Register and stay tuned for the upcoming calls: https://aka.ms/BCOfficeHours. Also, notice that in the months of July and August, there will be no office hours calls. 
+Make sure to join the office hours calls around 'Working with Dimensions' on June 15 and 'DevOps for Per Tenant Extensions' on June 29. Register and stay tuned for the upcoming calls: https://aka.ms/BCOfficeHours. Also, notice that in the month of July, there will be no office hours calls. 
 
 **Support for migrating data from earlier on-premises versions of Business Central to 2021 release wave 1 (v.18)**  
 With the Business Central cloud migration tool, customers can migrate their data from earlier on-premises versions of the product to their online Business Central environment, running on the latest version. We've added support for customers who are running on Business Central on-premises version 14, 15, 16, or 17 to migrate their data to version 18 of Business Central online. We've implemented the necessary data upgrade logic in the cloud migration tool, so customers don't have to upgrade their older version themselves in order to migrate their data to the latest online release. 
