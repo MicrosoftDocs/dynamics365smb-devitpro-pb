@@ -40,9 +40,9 @@ The following tasks are *not* available to the delegated administrator:
 
 - Run scheduled tasks in the job queue. 
 
-    However, starting with 2021 release wave 1 (version 18), delegated administrators can test that the job queue can run without issues, before asking the customer to start it, by using **Run once (forground)** action on the Job Queue Entry card. This will create a temporary non-recurrent copy of this job and will run it once in the foreground. You can then call it as many times as you need before you hand it over to your customer so that they can start it as a recurrent job. After the job queue completes, it will be put in the on-hold status and can't be rescheduled.  
+    However, starting with 2021 release wave 1 (version 18), delegated administrators can test that the job queue can run without issues, before asking the customer to start it, by using **Run once (foreground)** action on the Job Queue Entry card. This will create a temporary non-recurrent copy of this job and will run it once in the foreground. You can then call it as many times as you need before you hand it over to your customer so that they can start it as a recurrent job. After the job queue completes, it will be put in the on-hold status and can't be rescheduled.  
 
-- Trigger a Webhook or any other application action which relies on the job queue functionality, except if the feature mentioned above (Run once) is possible.
+- Trigger a web hook or any other application action that relies on the job queue functionality, except by using the **Run once (foreground)** action.
 
 - Use the **Edit in Excel** action or interact with [!INCLUDE [prod_short](../developer/includes/prod_short.md)] data in Excel using the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] add-in for Excel.
 
