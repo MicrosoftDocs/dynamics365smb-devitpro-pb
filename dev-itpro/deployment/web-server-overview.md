@@ -28,6 +28,9 @@ Each [!INCLUDE[webserver](../developer/includes/webserver.md)] instance must con
 
 For information about the common deployment scenarios, see [Deployment Topologies](deployment-scenarios.md).  
 
+> [!IMPORTANT]
+> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] doesn't support Azure Active Directory Application Proxy, because Application Proxy doesn't fully support web sockets.
+
 ##  Creating a [!INCLUDE[webserver](../developer/includes/webserver.md)] instance  
 
 There are two ways to create a [!INCLUDE[webserver](../developer/includes/webserver.md)] instance. You can use the [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] Setup or the [!INCLUDE[webserver](../developer/includes/webserver.md)] PowerShell cmdlets.
@@ -43,7 +46,8 @@ Setup is the quickest way to get a web server instance up and running, and is ty
 
 -   You can only use Setup to install a single [!INCLUDE[webserver](../developer/includes/webserver.md)] instance.
 
--   Setup does not let you choose the site deployment type for the web server instance. By default, it creates a SubSite instance. For more information, see [Site Deployment Types](configure-multiple-web-server-instances.md#WebClientonIIS).    
+-   Setup does not let you choose the site deployment type for the web server instance. By default, it creates a SubSite instance. For more information, see [Site Deployment Types](configure-multiple-web-server-instances.md#WebClientonIIS).
+
 For information about how to install the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)], see [Install Business Central Using Setup](install-using-setup.md).
 
 ### Using [!INCLUDE[webserver](../developer/includes/webserver.md)] PowerShell cmdlets
