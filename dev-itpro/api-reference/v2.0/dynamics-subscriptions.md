@@ -175,6 +175,9 @@ Custom APIs are also webhook-enabled and will be listed in **webhookSupportedRes
 > * The source table for the API page is a system table ("Table No." > 2000000000).
 > * The API is declared through an API type query, for example, and not through an API type page.
 
+> [!NOTE]  
+> Changes made by users who are not able to schedule job queues will not be notified until another user who is able to schedule job queues makes another change to the same table.
+
 ## Notes for on-premise
 
 By default, a subscription lives for 3 days if it is not renewed. The value is specified in the CustomSettings.config file under the ApiSubscriptionExpiration entry. There is a maximum number of subscriptions specified in the ApiSubscriptionMaxNumberOfSubscriptions in the CustomSettings.config file.
