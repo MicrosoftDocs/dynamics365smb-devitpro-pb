@@ -19,7 +19,7 @@ ms.author: jswymer
 > [!IMPORTANT]
 > This feature is in preview. It might change or be removed in the future updates.
 
-As an administrator, you can restore an existing environment from a time in the past, within the 30-day retention period that applies to both production and sandbox environments.  
+As an administrator, you can restore an existing environment from a time in the past, within the 28-day retention period that applies to both production and sandbox environments.  
 
 Database backups are an essential part of any business continuity and disaster recovery strategy, because they protect your data from corruption or deletion. [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online uses Azure SQL Database as the underlying database backup technology for its environments. All databases are protected by automated backups that are continuously created and maintained by the Azure SQL service. For more information, see [Databases and backups](../service-overview.md#databases-and-backups).  
 
