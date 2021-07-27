@@ -124,12 +124,21 @@ Currently, the log includes the following operations:
 
 The operations are kept for 365 days, after which they're deleted.
 
+## Delete an environment
+
+You can delete environments in the admin center, such as when a sandbox environment is not longer needed.  
+
+> [!IMPORTANT]
+> Make sure no user is using the environment before you delete it.
+>
+> Also, be very careful before you choose the *Delete* action for the environment. The action is irreversible.
+
 ## See also
 
 [Managing Tenant Notifications](tenant-admin-center-notifications.md)  
 [Managing Apps](tenant-admin-center-manage-apps.md)  
 [Updating Environments](tenant-admin-center-update-management.md)  
-[Managing Sessions](tenant-admin-center-manage-sessions.md)
+[Managing Sessions](tenant-admin-center-manage-sessions.md)  
 [Rename Environments](tenant-admin-center-environments-rename.md)  
 [Restoring an Environment](tenant-admin-center-backup-restore.md)  
 [Move an Environment to another Azure Active Directory organization](tenant-admin-center-environments-move.md)  
