@@ -53,7 +53,7 @@ For each environment, administrators can set a maintenance window for when Micro
 
 An exception to this type of schedule is the continuous updates to the underlying service. The service components apply to multiple environments, such as all tenants in a region. So Microsoft schedules those updates to a time when traffic is lower in each region, typically during the evening or night. Typically, these service updates are transparent to any users, as the service is designed to manage traffic in a way that any users still working in [!INCLUDE [prod_short](includes/prod_short.md)] are not affected by these service updates.  
 
-## Service Reliability Engineering (SRE)
+## Service reliability engineering (SRE)
 
 <!--Why incidents occur and how to live with them -->
 
@@ -91,7 +91,7 @@ In the second phase, which is the **incident response** phase, processes are str
 
 In the final phase, which is the **continuous improvement** phase, the team focuses on completion of relevant post-mortem analysis and resolution of any identified process, monitoring, or configuration or code fixes. The fixes are then prioritized against the team's general engineering backlog based on overall severity and risk of reoccurrence.  
 
-## Our practices for service monitoring
+### Our practices for service monitoring
 
 The [!INCLUDE [prod_short](includes/prod_short.md)] team emphasizes a consistent, data-driven, and customer-centric approach to its live site operations. Defining Service Level Indicators (SLIs) and implementing corresponding live site monitoring alerts is part of the approval criteria for enabling any new [!INCLUDE [prod_short](includes/prod_short.md)] feature in production. Product group engineers also include steps for investigation and mitigation of alerts when they occur using a template Troubleshooting Guide (TSG).  
 
