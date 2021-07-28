@@ -389,7 +389,7 @@ If you have a multitenant deployment, do these steps for each tenant.
 
 Complete this task to install third-party extensions for which a new version wasn't published. For each extension, run the [Install-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp):
 
-```
+```powershell
 Install-NAVApp -ServerInstance <server instance name> -Name <extension name> -Version <extension version>
 ```
 
@@ -484,7 +484,7 @@ At this point, the upgrade is complete, and you can open the client.
     If your [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises deployment had an active connection with Dynamics 365 Sales, you must perform the following steps to complete the setup of the connection in [!INCLUDE [prod_short](../includes/prod_short.md)] online:
 
     - Open the **Microsoft Dynamics 365 Connection Setup** page.  
-    - To upgrade the connection to use certificate based authentication, choose **Connection**, and then choose the **Use Certificate Authentication** action.  
+    - To upgrade the connection to use certificate-based authentication, choose **Connection**, and then choose the **Use Certificate Authentication** action.  
     - Sign in with the administrator credentials for the connected Dynamics 365 Sales organization. Signing in and the subsequent setup of the certificate authentication should take less than a minute.  
 
         > [!NOTE]
