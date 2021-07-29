@@ -30,7 +30,7 @@ Open the **launch.json**, file and update the **server**, **serverInstance**, an
 ```json
     "server": "http://YourDockerContainerName",
     "serverInstance": "BC",
-    "authentication": "Windows",
+    "authentication": "UserPassword",
 ```
 
 Open the **settings.json** file, and update the **al.assemblyProbingPaths**, as described in [Set Up Your Development Environment](devenv-set-up-an-environment.md).
