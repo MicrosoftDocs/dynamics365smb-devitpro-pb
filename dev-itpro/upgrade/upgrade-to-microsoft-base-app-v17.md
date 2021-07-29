@@ -671,22 +671,6 @@ We recommend setting the value to application build number for the version 17 up
     - Add the system object **6110 Allow Action Export To Excel** permission directly to appropriate permission sets.
 
      For more information about working with permission sets and permissions, see [Export and Import Permission Sets](/dynamics365/business-central/ui-define-granular-permissions#to-export-and-import-a-permission-set).  
-6. Complete the setup of the integration with Dynamics 365 Sales.
-
-    If your [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises deployment had an active connection with Dynamics 365 Sales, you must perform the following steps to complete the setup of the connection in [!INCLUDE [prod_short](../includes/prod_short.md)] online:
-
-    - Open the **Microsoft Dynamics 365 Connection Setup** page.  
-    - To upgrade the connection to use certificate-based authentication, choose **Connection**, and then choose the **Use Certificate Authentication** action.  
-    - Sign in with the administrator credentials for the connected Dynamics 365 Sales organization. Signing in and the subsequent setup of the certificate authentication should take less than a minute.  
-
-        > [!NOTE]
-        > This is a required step. For more information, see [Upgrade Connections from Business Central Online to Use Certificate-Based Authentication](/dynamics365/business-central/admin-how-to-set-up-a-dynamics-crm-connection#upgrade-connections-from-business-central-online-to-use-certificate-based-authentication) in the business functionality content.
-    - Once the setup of certificate authentication is done, choose **Cloud Migration**, and then choose **Rebuild Coupling Table**.  
-
-        This will schedule the rebuilding of the coupling table and will open the corresponding job queue entry, so you can monitor its progress and restart it if it ends up in error state.  
-
-        > [!NOTE]
-        > The step for rebuilding the coupling table is not needed if you have performed cloud migration from [!INCLUDE [prod_short](../includes/prod_short.md)] version 15 or later.
 
 ## See Also  
 
