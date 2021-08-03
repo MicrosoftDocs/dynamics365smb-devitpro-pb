@@ -23,7 +23,7 @@ The access modifier of a table field cannot be changed to a value that provides 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
-This rule verifies that the `Access` property of a field in a table or table extension has has not been reduced between revisions. This rule only validates table fields if the table `Access` property is set to `Public` in the baseline extension. For more information about different access levels for both fields and tables, see [here](../devenv-using-access-modifiers.md).
+This rule verifies that the `Access` property of a field in a table or table extension has not been reduced between revisions. This rule only validates table fields if the table `Access` property is set to `Public` in the baseline extension. For more information about different access levels for both fields and tables, see [Using Access Modifiers in AL](../devenv-using-access-modifiers.md).
 
 ## Code examples triggering the rule
 
@@ -99,7 +99,7 @@ table 50122 MyTable
 }
 ```
 
-Reducing the `Access` level of the field migth result in breaking existing scenarios where this field is used in Table exteionsions. The same rule applies for fields defined in a TableExtension.
+Reducing the `Access` level of the field might result in breaking existing scenarios where a dependent table extension defined in other application extension references this field. This will result in compilation error `AL0161`. The same rule applies to fields defined in a table extension.
 
 ### Example 3: Reducing the Access Level to lower than Public of a field defined in TableExtension
 
