@@ -23,7 +23,7 @@ The access modifier of a table field cannot be changed to a value that provides 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
-This rule verifies that the `Access` property of a field in a table or table extension has has not been reduced between revisions. This rule only validates if the table `Access` property is set to `Public` in the baseline extension. For more information about different access levels for both fields and tables, see [here](../devenv-using-access-modifiers.md).
+This rule verifies that the `Access` property of a field in a table or table extension has has not been reduced between revisions. This rule only validates table fields if the table `Access` property is set to `Public` in the baseline extension. For more information about different access levels for both fields and tables, see [here](../devenv-using-access-modifiers.md).
 
 ## Code examples triggering the rule
 
@@ -62,6 +62,8 @@ table 50122 MyTable
 }
 ```
 
+Reducing the `Access` of a field in a `Table` will result in breaking extensions that are already using the field.
+
 ### Example 2: Reducing the Access Level to lower than Protected
 
 Version 1.0 of the extension:
@@ -91,13 +93,13 @@ table 50122 MyTable
     {
         field(1; FirstField; Code[1])
         {
-            Access = Local; // Internal
+            Access = Local; // or Internal
         }
     }
 }
 ```
 
-The same rule applies for fields defined in a table extension.
+Reducing the `Access` level of the field migth result in breaking existing scenarios where this field is used in Table exteionsions. The same rule applies for fields defined in a TableExtension.
 
 ### Example 3: Reducing the Access Level to lower than Public of a field defined in TableExtension
 
@@ -165,7 +167,7 @@ table 50122 MyTable
     }
 }
 ```
-Changing the `Access` level from `Internal` to `Public` on `MyTable` means that we are exposing the table for first time, so we cannot degrade the access level of the field since it has already indirectly been `Internal`.
+Changing the `Access` level from `Internal` to `Public` on `MyTable` means that we are exposing the table for first time, so we cannot reduce the access level of the field since it has already indirectly been `Internal`.
 
 ### Example 2: Changing the Access level from Local to Internal or vice versa
 
@@ -200,7 +202,7 @@ table 50122 MyTable
 }
 ```
 
-Changing `Access` level from `Local` to `Internal` or vice versa will not trigger the rule since they are both module access modifiers.
+Changing `Access` level from `Local` to `Internal` or vice versa will not trigger the rule.
 
 ### Example 3: Changing the Access Level to Public or Protected from lower Access Level
 
