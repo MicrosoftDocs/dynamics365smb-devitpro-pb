@@ -37,6 +37,7 @@ In Application Insights, telemetry from [!INCLUDE[prod_short](../developer/inclu
 
 |Area | Description |Online|On-premises|Extension support|More information|
 |-----|-------------|------|-----------|-----------------|--------|
+|AppSource Submission Validation|Provides information about validation when an extension is submitted to AppSource.|![check mark for feature.](../developer/media/check.png)||![check mark for feature](../developer/media/check.png)|[See...](telemetry-appsource-submission-validation-trace.md)|
 |App key vault secrets |Provides information about the retrieval of secrets from Azure Key Vaults by extensions.|![check mark for feature.](../developer/media/check.png)<sup>[\[1\]](#1)|![check mark for feature](../developer/media/check.png)<sup>[\[1\]](#1)|![check mark for feature](../developer/media/check.png)|[See...](telemetry-extension-key-vault-trace.md) |
 |Authorization|Provides information about user sign-in attempts. Information includes success or failure indication, reason for failure, user type, and more.|![check mark for feature.](../developer/media/check.png)|||[See...](telemetry-authorization-trace.md) |
 |Company lifecycle|Provides information about creating, copying, and deleting of companies.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[See...](telemetry-company-lifecycle-trace.md) |

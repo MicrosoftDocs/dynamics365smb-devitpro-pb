@@ -171,6 +171,7 @@
 ## Monitor and analyze telemetry
 ### [Overview](administration/telemetry-overview.md)
 ### [Enable Application Insights](administration/telemetry-enable-application-insights.md)
+### [AppSource Submission Validation Telemetry](administration/telemetry-appsource-submission-validation-trace.md)
 ### [App Key Vault Secret Telemetry](administration/telemetry-extension-key-vault-trace.md)
 ### [Authorization Telemetry](administration/telemetry-authorization-trace.md)
 ### [Company Lifecycle Telemetry](administration/telemetry-company-lifecycle-trace.md)
