@@ -28,7 +28,7 @@ Removing or renaming a procedure that belongs to the public API is not allowed, 
 
 ## How to fix this diagnostic?
 
-Reverting the change will fix this diagnostic. If removing or renaming the procedure is required, the recommended approach is to mark the procedure with the [Obsolete](../attributes/devenv-obsolete-attribute.md) attribute. In a future version, once all dependent extensions have update their code to not reference the obsolete procedure, you can remove it or rename it.
+Reverting the change will fix this diagnostic. If removing or renaming the procedure is required, the recommended approach is to mark the procedure with the [Obsolete](../attributes/devenv-obsolete-attribute.md) attribute. In a future version, once all dependent extensions have updated their code to not reference the obsolete procedure, you can remove it or rename it.
 
 ## Code examples triggering the rule
 
