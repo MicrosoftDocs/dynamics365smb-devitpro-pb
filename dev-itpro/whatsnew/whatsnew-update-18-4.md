@@ -16,9 +16,6 @@ author: EmmaNielsson
 
 Would you like to know what has changed in update 18.4? Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update. In addition, we have gathered some good to know information and links, you might find interesting.
 
-## Feature changes  
-- [Extension validation on upgrade](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/extension-validation-upgrade)
-- [Automated compilation validation in the AppSource submission process](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/automated-compilation-validation-appsource-submission-process)
 
 ## Hotfixes
 Find an overview of hotfixes in this [article](INSERT).
