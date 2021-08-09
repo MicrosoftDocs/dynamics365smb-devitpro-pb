@@ -665,12 +665,12 @@ We recommend setting the value to application build number for the version 17 up
 5. Grant users permission to the *Open in Excel* and *Edit in Excel* actions.
 
     Version 17 introduces a system permission that protects these two actions. The permission is granted by the system object **6110 Allow Action Export To Excel**. Because of this change, users who had permission to these actions before upgrading, will lose permission. To grant permission again, do one of the following steps:
-    
+
     - Assign the **EXCEL EXPORT ACTION** permission set to appropriate users. 
-    
+
     - Add the system object **6110 Allow Action Export To Excel** permission directly to appropriate permission sets.
 
-     For more information about working with permission sets and permissions, see [Export and Import Permission Sets](/dynamics365/business-central/ui-define-granular-permissions#to-export-and-import-a-permission-set). 
+     For more information about working with permission sets and permissions, see [Export and Import Permission Sets](/dynamics365/business-central/ui-define-granular-permissions#to-export-and-import-a-permission-set).  
 
 ## See Also  
 

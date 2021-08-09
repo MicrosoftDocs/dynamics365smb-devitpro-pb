@@ -71,31 +71,31 @@ The process for upgrading the similar for a single-tenant and multitenant deploy
 
         To get a list of installed extensions, use the [Get-NAVAppInfo cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/get-navappinfo).
 
-        ```powershell 
+        ```powershell
         Get-NAVAppInfo -ServerInstance <server instance name> -Tenant <tenant ID>
         ```
 
         For a single-tenant deployment, set the `<tenant ID>` to default. 
     2. Uninstall the extensions.
-    
+
         To uninstall an extension, you use the [Uninstall-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp) cmdlet.
-    
-        ```powershell 
+
+        ```powershell
         Uninstall-NAVApp -ServerInstance <server instance name> -Name <extensions name> -Tenant <tenant ID> -Version <extension version> -Force
         ```
-        
+
         Replace  `<extension name>` and `<extension version>` with the exact name and version the published System Application.
 
         For example, together with the Get-NAVApp cmdlet, you can uninstall all extensions with a single command:
 
-        ```powershell 
+        ```powershell
         Get-NAVAppInfo -ServerInstance <server instance name> -Tenant <tenant ID>| % { Uninstall-NAVApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name $_.Name -Version $_.Version -Force}
-        ``` 
+        ```
 
 4. Unpublish all extensions from the application server instance.
 
     To unpublish an extension, use the [Unpublish-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/unpublish-navapp):
-    
+
     ```powershell 
     Unpublish-NAVApp -ServerInstance <server instance name> -Name <extension name> -Version <extension version>
     ``` 
@@ -389,7 +389,7 @@ If you have a multitenant deployment, do these steps for each tenant.
 
 Complete this task to install third-party extensions for which a new version wasn't published. For each extension, run the [Install-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp):
 
-```
+```powershell
 Install-NAVApp -ServerInstance <server instance name> -Name <extension name> -Version <extension version>
 ```
 
@@ -475,7 +475,7 @@ At this point, the upgrade is complete, and you can open the client.
 
     Version 17 introduces a system permission that protects these two actions. The permission is granted by the system object **6110 Allow Action Export To Excel**. Because of this change, users who had permission to these actions before upgrading, will lose permission. To grant permission again, do one of the following steps:
 
-    - Assign the **EXCEL EXPORT ACTION** permission set to appropriate users. 
+    - Assign the **EXCEL EXPORT ACTION** permission set to appropriate users.  
     - Add the system object **6110 Allow Action Export To Excel** permission directly to appropriate permission sets.
 
      For more information about working with permission sets and permissions, see [Export and Import Permission Sets](/dynamics365/business-central/ui-define-granular-permissions#to-export-and-import-a-permission-set).

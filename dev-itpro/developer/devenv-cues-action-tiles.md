@@ -1,5 +1,6 @@
 ---
 title: "Creating and Customizing Cues"
+description: Get an overview of cues and action tiles and the tasks involved in customizing them on Role Centers.
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
@@ -12,16 +13,16 @@ author: jswymer
 
 # Creating Cues and Action Tiles on Role Centers
 
-This article provides an overview of Cues and Action tiles, and the tasks involved in creating and customizing them for displaying on Role Centers, as illustrated in the following figure:  
+This article provides an overview of Cues and Action tiles. Learn about the tasks involved in creating and customizing them for displaying on Role Centers, as illustrated in the following figure:  
 
 ![Cues on the Role Center.](media/Cue-overview-online-v2.png "Cues on the Role Center")  
 
 > [!NOTE]  
-> Modifying actions in Cue groups on page extensions is not supported.
+> Modifying actions in Cue groups on page extensions isn't supported.
 
 ##  <a name="CueDesign"></a>Designing Cues 
 
-A Cue provides a visual representation of aggregated business data, such as the number of open sales invoices or the total sales for the month. Cues are interactive, meaning that you can select the Cue to drill down to data or open another page, run code, and more. Cues display data that is contained in a table field. This can be raw data or calculated data.
+A Cue provides a visual representation of aggregated business data, like the number of open sales invoices. Cues are interactive, meaning that you can select the Cue to drill down to data or open another page, run code, and more. Cues display data that is contained in a table field. This data can be raw data or calculated data.
 
 ### <a name="CueWideLayout"></a>Normal and wide layout
 
@@ -29,7 +30,7 @@ There are two layout options that influence how Cues appear in the client: *norm
 
 - The *normal* layout displays Cues as tiles. With this layout, Cue groups are automatically arranged to fill in the width of the workspace, which means there can be more than one group horizontally across the workspace.
 
-- The *wide* layout is designed to display large values, such as monetary values. The wide layout gives you a way emphasize a group of Cues. Wide and normal Cue groups can be interleaved. However, wide groups that precede all normal groups will appear in their own section of the workspace, spanning the entire width - providing space for the large values. Wide groups that are placed after normal groups will behave just like the normal layout groups. With this in mind, it is good practice to place Cue groups that use the wide layout, above those that use the normal layout. The wide layout is specified by setting the [CuegroupLayout property](properties/devenv-cuegrouplayout-property.md) to `wide`. 
+- The *wide* layout is designed to display large values, such as monetary values. The wide layout gives you a way emphasize a group of Cues. Wide and normal Cue groups can be interleaved. However, wide groups that precede all normal groups will appear in their own section of the workspace, spanning the entire width - providing space for the large values. Wide groups that are placed after normal groups will behave just like the normal layout groups. So, it's good practice to place Cue groups that use the wide layout, above those Cues that use the normal layout. The wide layout is specified by setting the [CuegroupLayout property](properties/devenv-cuegrouplayout-property.md) to `wide`. 
 
 > [!NOTE]  
 > The wide layout is only supported in the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)].
@@ -37,12 +38,18 @@ There are two layout options that influence how Cues appear in the client: *norm
 > The [Caption](properties/devenv-caption-property.md) and [CaptionML](properties/devenv-captionml-property.md) properties of the `cuegroup` control are ignored when the layout is wide.
 
 ### Supported data types  
-You can only base Cues on integer and decimal data types. Other data types are not supported and will not display in a Cue.  
+You can only base Cues on integer and decimal data types. Other data types aren't supported and won't display in a Cue.  
   
 ### FlowFields versus normal fields  
-A Cue can be based on a FlowField or Normal field. If you base the Cue on a FlowField, then you add the logic that calculates the data for the Cue to the [CalcFormula property](properties/devenv-calcformula-property.md) of the FlowField. If you use a Normal field, then you will typically add the logic that calculates the Cue data to an AL trigger or method. Unlike a FlowField, where data is extracted from tables, a Normal field enables you to extract data from other objects such as queries.  
+A Cue can be based on a FlowField or Normal field.
+
+- If you base the Cue on a FlowField, add the logic that calculates the data for the Cue to the [CalcFormula property](properties/devenv-calcformula-property.md) of the FlowField.
+- If you use a Normal field, you'll typically add the logic that calculates the Cue data to an AL trigger or method.
+
+  Unlike a FlowField, where data is extracted from tables, a Normal field enables you to extract data from other objects such as queries.  
   
 ### <a name="CreateCue"></a>Creating a Cue
+
 The implementation of a Cue involves the following elements:
 
 - A table object with a field that holds the data that is contained in the Cue at runtime.  
@@ -51,7 +58,7 @@ The implementation of a Cue involves the following elements:
   
 - Logic that calculates the data to display in the Cue at runtime.  
   
-The logic can consist of a combination of AL code and objects, such as tables, queries, and codeunits. How and where you implement the logic will depend on whether the Cue is based on a FlowField or Normal field and what you want to achieve.
+  The logic can consist of AL code and objects, like tables, queries, and codeunits. The design will depend on whether the Cue is based on a FlowField or Normal field.
 
 > [!NOTE]
 > The examples in this section will set up a Cue that extracts the number of open sales invoices from the **Sales Header** table. 
@@ -73,7 +80,7 @@ The first thing that you must do is to create a table that contains fields that 
   
 3. Add a primary key field for FlowFields.  
 
-    A table must have at least one data field. Because a **FlowField** is based on a calculation, it not considered an actual data field. Therefore, if the Cue table only includes FlowFields, you must add "dummy" primary key field that does not yield any data.  
+    A table must have at least one data field. Because a **FlowField** is based on a calculation, it not considered an actual data field. So, if the Cue table only includes FlowFields, you must add "dummy" primary key field that doesn't yield any data.  
   
     To add primary key, for example, add a field with the name **Primary Key**, and then set its data type to **Code**.  
 
@@ -111,17 +118,23 @@ table 50100 SalesInvoiceCueTable
 
 ###  <a name="CreatePage"></a> Add Cues to a Page object
 
-After you have a table for holding the Cue data, you create a page that you associate the table, and then add Cue fields on the page. Typically, you will create Card Part type page that will be part of the Role Center page. Cues are arranged into one or more groups on the page. Each group will have its own caption.  
+After you have a table for holding the Cue data, you create a page that you associate the table, and then add Cue fields on the page. Typically, you'll create Card Part type page that will be part of the Role Center page. Cues are arranged into one or more groups on the page. Each group will have its own caption.  
 
 1. Create a page object that has the [SourceTable property](properties/devenv-sourcetable-property.md) set to the Cue data table.
 2. Add a `cuegroup` control.
 3. Under the `cuegroup` control, for each Cue that you want to display, add a `field` control.
-4. If you want to set the `cuegroup` to use the wide layout, set the `CuegroupLayout` property to `wide`.
 
-    Repeat steps 2-4 to add additional Cue groups.
-5. Initialize the Cue fields.  
+4. Set the field's [Caption property](properties/devenv-caption-property.md) or [CaptionML property](properties/devenv-captionml-property.md) to specify the label that will appear on the Cue. These properties also specify the heading in the drill-down page.
 
-    You must initialize the Cue fields on the page. To do this, for example, you can add the following AL code to the [OnOpenPage Trigger](triggers-auto/page/devenv-onopenpage-page-trigger.md).     
+   > [!NOTE]
+   > You can't use the [CaptionClass property](properties/devenv-captionclass-property.md) for this purpose.
+
+5. If you want to set the `cuegroup` to use the wide layout, set the `CuegroupLayout` property to `wide`.
+
+    Repeat steps 2-4 to add more Cue groups.
+6. Initialize the Cue fields.  
+
+    To initialize the fields, for example, you can add the following AL code to the [OnOpenPage Trigger](triggers-auto/page/devenv-onopenpage-page-trigger.md).     
 
     ```AL
           RESET;
@@ -131,7 +144,8 @@ After you have a table for holding the Cue data, you create a page that you asso
         end;
     ```    
 
-#### Example 
+#### Example
+
 ```AL
 page 50105 SalesInvoiceCuePage
 {
@@ -168,24 +182,24 @@ page 50105 SalesInvoiceCuePage
 
 ## <a name="ActionTiles"></a>Designing Action tiles
 
-Action tiles promote an action or operation to the user on the Role Center. Action tiles act as links that perform a task or operation, like opening another page, starting a video, targeting an another resource or URL, or running code. They will arrange on the workspace just like that use the normal layout.
+Action tiles promote an action or operation to the user on the Role Center. Action tiles act as links that run a task or operation. For example, an action tile could open another page, start a video, target another resource or URL, or run code. They'll arrange on the workspace just like that use the normal layout.
 
 Similar to Cues, Actions tile can be grouped together, under a common caption, by using the `cuegroup` control. The difference is that instead adding field controls under the `cuegroup` control, you create Action tiles by adding actions to the `cuegroup` control. 
 
 ### Create an Action tile
-1. Develop or locate the functionality that you want to Action tile to perform.
 
-  For example, create the page object that you want the Action tile to open, add AL code that you want the Action tile to run, find the URL to the video.
+1. Develop or locate the functionality that you want to Action tile to do.
 
-2. Open the page on which you want to display the Action tiles. For example, this could be the page that you created in the previous task.
+   For example, create the page object that you want the Action tile to open. Or, add AL code that you want the Action tile to run.
 
-3. In the location where you want the Action group, add a `cuegroup` control.
+2. Add a `cuegroup` control where you want the Action group.
 
-4. Configure the control to the desired operation.
+3. Configure the control to the wanted operation.
 
     For example, if it should open a page, set the control's [RunObject property](properties/devenv-runobject-property.md) to the appropriate page. Or, set it to call a function or method.
 
 #### Example
+
 The following code adds an Action tile that opens **Sales Invoice** page.
 
 ```AL
@@ -218,7 +232,7 @@ You can use the [Image property](properties/devenv-image-property.md) on an `act
 -   A value that has the format `Tile[picture]` will set the Action tile to use an icon that is specified by `[picture]` and a neutral background color. For example, `TileCamera` will display a camera icon on the neutral background.  
 
 > [!NOTE]
-> If you use a value that is not valid or recognized, the Action tile will default to display the circle icon on the neutral background. 
+> If you use a value that isn't valid or recognized, the Action tile will default to display the circle icon on the neutral background. 
 
 
 
@@ -256,7 +270,7 @@ You can set up a Cue to link to a page that displays details about the transacti
  To set up an action, open the page that contains the Cue in the [!INCLUDE[nav_dev_short](includes/nav_dev_short_md.md)], and then add a **Control** action on the **CueGroup** control that contains the Cue field. Set the [RunObject Property](RunObject-Property.md) of the action to the object, such as a page, that you want to target.  
   
 > [!NOTE]  
->  This is not supported in the [!INCLUDE[nav_web](includes/nav_web_md.md)] or [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)].  
+>  This isn't supported in the [!INCLUDE[nav_web](includes/nav_web_md.md)] or [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)].  
   
 ###  <a name="SetupIndicator"></a> Setting up Colored Indicators on Cues  
  You can set up Cues to include a colored bar along the top border, which changes color based on the data in the Cue.  

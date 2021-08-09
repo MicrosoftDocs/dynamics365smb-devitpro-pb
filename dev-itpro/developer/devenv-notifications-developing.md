@@ -215,7 +215,7 @@ To complete the example, follow these steps:
             CustPage: Page "Customer Card";
         begin
             //Get the customer number data from the SetData() call.
-            CustNo := CreditBalanceNotification.GetData(CustNumber);
+            CustNo := CreditBalanceNotification.GetData('CustNumber');
             // Open the Customer Card page for the customer.
             if CustRec.Get(CustNo) then begin
                 CustPage.SetRecord(CustRec);
