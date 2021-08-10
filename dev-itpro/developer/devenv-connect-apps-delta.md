@@ -13,6 +13,8 @@ ms.service: "dynamics365-business-central"
 
 # Using Delta Links With APIs
 
+[!INCLUDE [online_only](../developer/includes/online_only.md)]
+
 Delta links are opaque, service-generated links that the client uses to retrieve subsequent changes to a result. 
 
 The user can obtain a delta link from each entity API in the library by including the `odata.track-changes` preference in the header of the request. The response to the GET request returns a deltaLink parameter, providing an opaque URL.
