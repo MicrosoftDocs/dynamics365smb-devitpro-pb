@@ -26,7 +26,7 @@ Notify existing customers through the channels that you consider most appropriat
 
 ## Remove the AppSource listing (T+150)
 
-Remove the listing from AppSource by using the **Stop selling** option in the Partner Center portal. You can find more information here [Update existing offers in the commercial marketplace](https://docs.microsoft.com/azure/marketplace/update-existing-offer#stop-distribution-of-an-offer-or-plan).
+Remove the listing from AppSource by using the **Stop selling** option in the Partner Center portal. You can find more information here [Update existing offers in the commercial marketplace](/azure/marketplace/update-existing-offer#stop-distribution-of-an-offer-or-plan).
 
 You can optionally delete the offer from the Partner Center portal.
 
