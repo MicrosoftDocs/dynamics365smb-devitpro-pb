@@ -41,3 +41,8 @@ No. It is the responsibility of the partner maintaining the environment to unins
 The customer does not receive any notification about the fact that the offer has been deprecated. If at some point, the extension blocks the upgrade of the environment, the partner maintaining the environment will be notified that the extension is blocking upgrade. The partner maintaining the environment, can decide at that point to uninstall it or to contact you for additional information.
 
 
+## See Also
+
+[The Lifecycle of Apps and Extensions for Business Central](devenv-app-life-cycle.md)  
+[Maintain AppSource Apps and Per-Tenant Extensions in Business Central Online](app-maintain.md)  
+[App Identity](devenv-app-identity.md)
