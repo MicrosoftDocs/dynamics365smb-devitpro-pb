@@ -20,7 +20,7 @@ The following section describes the process that we recommend AppSource partners
 
 Update the AppSource listing to inform potential customers that the app should not be installed and that it will not be maintained in the future. The AppSource listing should still remain available to allow existing customers to reinstall the app if they have uninstalled it by accident as their business might depend on it.
 
-## Notify existing customers (T+1 - T+60)
+## Notify existing customers (T+1 to T+60)
 
 Notify existing customers through the channels that you consider most appropriate about the fact that the app has been deprecated and that it will removed from the marketplace. If possible, you should recommend alternatives that the customer can use to fulfill the same business scenarios.
 
