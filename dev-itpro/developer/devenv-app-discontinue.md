@@ -22,7 +22,7 @@ Update the AppSource listing to inform potential customers that the app should n
 
 ## Notify existing customers (T+1 to T+60)
 
-Notify existing customers through the channels that you consider most appropriate about the fact that the app has been deprecated and that it will removed from the marketplace. If possible, you should recommend alternatives that the customer can use to fulfill the same business scenarios.
+Notify existing customers through the channels that you consider most appropriate about the fact that the app has been deprecated (day **T**) and that it will removed from the marketplace. If possible, you should recommend alternatives that the customer can use to fulfill the same business scenarios.
 
 ## Remove the AppSource listing (T+150)
 
