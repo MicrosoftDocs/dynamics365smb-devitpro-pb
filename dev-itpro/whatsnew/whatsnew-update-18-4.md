@@ -3,7 +3,7 @@ title: "Update 18.4 for Microsoft Dynamics 365 Business Central 2021 Release Wav
 description: Get an overview of new and changed capabilities in the 18.4 update of Business Central online, which is part of 2021 release wave 1.
 ms.author: solsen
 ms.custom: na
-ms.date: 05/10/2021
+ms.date: 08/10/2021
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,7 +30,6 @@ Find an overview of hotfixes in this [article](INSERT).
 ## Release Plan
 If you want to get a comprehensive overview of what's new and planned for Business Central online for the entire 2021 release wave 1 (release from April 2021 through September 2021), find the link to the release plan [here](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/planned-features).
 
-
 ## Upgrade to 18.4   
 Please note that new customers will automatically get the latest builds of Business Central (18.4). If you are an existing partner/customer, you will receive an email notification as soon as your environment has been upgraded.
 
@@ -40,7 +39,7 @@ Please note that new customers will automatically get the latest builds of Busin
 Make sure to join the office hours calls around 'Business Central Apps in AppSource' on August 17 and 'Cloud Migration' on August 31. Register and stay tuned for the upcoming calls: https://aka.ms/BCOfficeHours.
 
 **Users see notification when they open the obsolete reports 204, 205, 206, & 207**  
-Before 2021 release wave 1, we [announced](/dynamics365/business-central/dev-itpro/upgrade/deprecated-features-w1#reports-204-207) that we were planning to replace several reports with newer versions. As the time approaches for the final cleaning up, we start displaying notifications so that the affected users can take action before 2021 release wave 2.
+Before 2021 release wave 1, we [announced](/dynamics365/business-central/dev-itpro/upgrade/deprecated-features-w1#reports-204-207) that we were planning to replace several reports with newer versions. As the time approaches for the final clean-up, we start displaying notifications so that the affected users can take action before Business Central 2021 release wave 2.
  
 If you still use one or more of the deprecated reports, now is the time to start using the recommended reports, alternatively you can clone the deprecated reports to a custom range, and switch to the cloned reports. 
 
