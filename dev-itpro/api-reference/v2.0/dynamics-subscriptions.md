@@ -184,7 +184,7 @@ By default, a subscription lives for 3 days if it is not renewed. The value is s
 
 ## See also
 
-[Subscription Resource Type](resources/dynamics_subscriptions.md)  
+[Subscription Resource Type](resources/dynamics-subscriptions.md)  
 [Get subscriptions](api/dynamics_subscriptions_get.md)  
 [Create subscriptions](api/dynamics_subscriptions_create.md)  
 [Update subscriptions](api/dynamics_subscriptions_update.md)  
