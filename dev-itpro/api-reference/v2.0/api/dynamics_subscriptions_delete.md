@@ -52,7 +52,7 @@ No response body.
 
 ## See also
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
-[subscriptions](../resources/dynamics-subscriptions.md)    
+[Subscriptions](../resources/dynamics_subscriptions.md)    
 [Get subscriptions](dynamics_subscriptions_Get.md)    
 [Create subscriptions](dynamics_subscriptions_Create.md)    
 [Update subscriptions](dynamics_subscriptions_Update.md)    
