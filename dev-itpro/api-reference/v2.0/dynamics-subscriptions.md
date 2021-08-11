@@ -14,7 +14,7 @@ ms.author: solsen
 
 # Working with Webhooks in Dynamics 365 Business Central
 
-Webhooks is the way to get notified if an entity changes in [!INCLUDE[prod_short](../../includes/prod_short.md)]. For general information about webhooks, see [Push notifications via webhooks](https://github.com/Microsoft/api-guidelines/blob/vNext/Guidelines.md#15-push-notifications-via-webhooks) in Microsoft REST API Guidelines.
+Webhooks is the way to get notified if an entity changes in [!INCLUDE[prod_short](../../includes/prod_short.md)]. For general information about webhooks, see [Push notifications via webhooks](https://github.com/Microsoft/api-guidelines/blob/vNext/Guidelines.md#15-push-notifications-via-webhooks) in the Microsoft REST API Guidelines.
 
 
 In the following replace the URL prefix for [!INCLUDE[prod_short](../../includes/prod_short.md)] depending on environment following the [guideline](endpoints-apis-for-dynamics.md).
