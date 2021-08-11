@@ -59,6 +59,24 @@
 ### [FAQ for Update Lifecycle for AppSource Apps](developer/devenv-update-app-life-cycle-faq.md)
 ### [FAQ About the Windows Client and Business Central](faq-win-cli.md)
 ### [FAQ about Connecting to Business Central Online from On-Premises Solutions](administration/faq-migrate-data.md)
+## What's new or changed
+### [Update 18.3](whatsnew/whatsnew-update-18-3.md)
+### [Update 18.2](whatsnew/whatsnew-update-18-2.md)
+### [Update 18.1](whatsnew/whatsnew-update-18.1.md)
+### Updates for earlier major versions
+#### [Update 17.5](whatsnew/whatsnew-update-17-5.md)
+#### [Update 17.4](whatsnew/whatsnew-update-17-4.md)
+#### [Update 17.3](whatsnew/whatsnew-update-17-3.md)
+#### [Update 17.2](whatsnew/whatsnew-update-17-2.md)
+#### [Update 17.1](whatsnew/whatsnew-update-17-1.md)
+#### [Update 16.5](whatsnew/whatsnew-update-16-5.md)
+#### [Update 16.4](whatsnew/whatsnew-update-16-4.md)
+#### [Update 16.3](whatsnew/whatsnew-update-16-3.md)
+#### [Update 16.2](whatsnew/whatsnew-update-16-2.md)
+#### [Update 16.1](whatsnew/whatsnew-update-16-1.md)
+#### [Update 15.4](whatsnew/whatsnew-update-15-4.md)
+#### [Update 15.3](whatsnew/whatsnew-update-15-3.md)
+#### [Update 15.2](whatsnew/whatsnew-update-15-2.md)
 ## Help and Support
 ### [Resources for Help and Support](help-and-support.md)
 ### [Legal Resources](terms/legal.md)
@@ -84,31 +102,76 @@
 <!-- administration-->
 # Administration
 ## [Administration of Business Central Online](administration/tenant-administration.md)
-## [Get Started as a Reseller of Business Central Online](administration/get-started-online.md)
-## [Country/Regional availability and Supported Translations](compliance/apptest-countries-and-translations.md)
-## [Delegated Administrator Access to Business Central Online](administration/delegated-admin.md)
-## [Operational Limits](administration/operational-limits-online.md)
-## [Major Updates and Minor Updates](administration/update-rollout-timeline.md)
-## [Version Numbers in Business Central](administration/version-numbers.md)
-## [Enabling New Features Ahead of Time](administration/feature-management.md)
-## [Managing Technical Support](administration/manage-technical-support.md)
-## [Setting up the Excel Add-In](administration/configuring-excel-addin.md)
-## [Network Configuration for the Excel Add-In](administration/configuring-network-for-addins.md)
-## [Setting up App Key Vaults for Extensions](administration/setup-app-key-vault.md)
-## [Upgrading Per-Tenant Extensions that Conflicts with Other Extensions](upgrade/upgrade-pte-merge-conflict.md)
-## [Upgrading AppSource Apps in Production](developer/devenv-upgrade-appsource-app-in-prod.md)
-## Entitlements and Permissions
-### [Entitlements and Permission Sets Overview](developer/devenv-entitlements-and-permissionsets-overview.md)
-### [Licenses and Entitlements](deployment/licensing.md)
-### [Special Permission Sets](administration/administration-special-permission-sets.md)
-## Environment Types
-### [Production and Sandbox Environments](administration/environment-types.md)
-### [Preparing Demo Environments](administration/demo-environment.md)
-### [Preparing Test Environments](administration/test-environment.md)
-### [Prepare for Major Updates with Preview Environments](administration/preview-environments.md)
-## Monitoring and Analyzing Telemetry
+## Understand Business Central online
+### [Get Started as a Reseller of Business Central Online](administration/get-started-online.md)
+### [Country/Regional availability and Supported Translations](compliance/apptest-countries-and-translations.md)
+### [Delegated Administrator Access to Business Central Online](administration/delegated-admin.md)
+### [Major Updates and Minor Updates](administration/update-rollout-timeline.md)
+### [Version Numbers in Business Central](administration/version-numbers.md)
+### [Operational Limits](administration/operational-limits-online.md)
+### [Technical support of Business Central](technical-support.md)
+### Environment Types
+#### [Production and Sandbox Environments](administration/environment-types.md)
+#### [Preparing Demo Environments](administration/demo-environment.md)
+#### [Preparing Test Environments](administration/test-environment.md)
+#### [Prepare for Major Updates with Preview Environments](administration/preview-environments.md)
+## Admin center
+### [Administration Center Overview](administration/tenant-admin-center.md)
+### [Manage environments](administration/tenant-admin-center-environments.md)
+### [Manage apps](administration/tenant-admin-center-manage-apps.md)
+### [Manage capacity](administration/tenant-admin-center-capacity.md)
+### [Manage notifications](administration/tenant-admin-center-notifications.md)
+### [Manage updates](administration/tenant-admin-center-update-management.md)
+### [Manage sessions](administration/tenant-admin-center-manage-sessions.md)
+### [Rename environments](administration/tenant-admin-center-environments-rename.md)
+### [Export databases](administration/tenant-admin-center-database-export.md)
+### [Restore an environment](administration/tenant-admin-center-backup-restore.md)
+### [Move an environment to another Azure Active Directory organization](administration/tenant-admin-center-environments-move.md)
+### [Environment telemetry](administration/tenant-admin-center-telemetry.md)
+### [Administration Center API](administration/administration-center-api.md)
+<!--### [Using Service-to-Service Authentication](administration/automation-apis-using-s2s-authentication.md)-->
+## Entitlements and permissions
+### [Entitlements and permission sets overview](developer/devenv-entitlements-and-permissionsets-overview.md)
+### [Licenses and entitlements](deployment/licensing.md)
+### [Special permission sets](administration/administration-special-permission-sets.md)
+## Prepare Business Central
+### [Manage technical support](administration/manage-technical-support.md)
+### [Enabling new features ahead of time](administration/feature-management.md)
+### [Set up standard company configuration packages](administration/set-up-standard-company-configuration-packages.md)
+### [Set up Business Central](/dynamics365/business-central/setup?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### [Set up the Excel add-in](administration/configuring-excel-addin.md)
+### [Network configuration for the Excel add-in](administration/configuring-network-for-addins.md)
+### [Set up App Key Vaults for extensions](administration/setup-app-key-vault.md)
+### [Deploy a tenant customization](developer/devenv-deploy-tenant-customization.md)
+### [Upgrading per-tenant extensions that conflict with other extensions](upgrade/upgrade-pte-merge-conflict.md)
+### [Upgrading AppSource apps in production](developer/devenv-upgrade-appsource-app-in-prod.md)
+<!--Potentially add RapidStart here?-->
+<!-- onboard customers-->
+## Onboard your customers
+### [Trials and Sign-ups](deployment/customer-signup.md)
+<!-- ### Do cool demos -->
+<!-- ### Partner Center stuff -->
+<!-- Performance tests-->
+### [Onboarding experiences](administration/onboarding-experiences.md)
+### [Onboard new users with the welcome banner](administration/onboarding-welcome-banner.md)
+### [Get users started with the checklist](administration/onboarding-checklist.md)
+### [Teaching tips and in-app tours for onboarding users](administration/onboarding-teaching-tips-tours.md)
+<!--migrate to BC online-->
+## Migrate to Business Central Online
+### [Migrate on-premises data](administration/migrate-data.md)
+### [Running the cloud migration tool](administration/migration-tool.md)
+### [Manage the migration to the cloud](administration/migration-management.md)
+### [Migrate from Business Central on-premises](administration/migrate-business-central-on-premises.md)
+### [Migrate from Dynamics GP](administration/migrate-dynamics-gp.md)
+### [Migrate from Dynamics NAV](upgrade/Upgrade-Considerations.md#online)
+### [FAQ about migrating to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
+### [Troubleshooting cloud migration](administration/migration-troubleshooting.md)
+<!--### [Migrating from Dynamics SL](administration/migrate-data.md)-->
+<!-- end migrate -->
+## Monitor and analyze telemetry
 ### [Overview](administration/telemetry-overview.md)
 ### [Enable Application Insights](administration/telemetry-enable-application-insights.md)
+### [AppSource Submission Validation Telemetry](administration/telemetry-appsource-submission-validation-trace.md)
 ### [App Key Vault Secret Telemetry](administration/telemetry-extension-key-vault-trace.md)
 ### [Authorization Telemetry](administration/telemetry-authorization-trace.md)
 ### [Company Lifecycle Telemetry](administration/telemetry-company-lifecycle-trace.md)
@@ -130,20 +193,6 @@
 ### [Table Index Telemetry](administration/telemetry-table-index-trace.md)
 ### [Web Service Access Key Telemetry](administration/telemetry-webservices-access-key-trace.md)
 ### [Event IDs](administration/telemetry-event-ids.md)
-## Administration Center
-### [Administration Center Overview](administration/tenant-admin-center.md)
-### [Managing Environments](administration/tenant-admin-center-environments.md)
-### [Managing Apps](administration/tenant-admin-center-manage-apps.md)
-### [Managing Capacity](administration/tenant-admin-center-capacity.md)
-### [Managing Notifications](administration/tenant-admin-center-notifications.md)
-### [Managing Updates](administration/tenant-admin-center-update-management.md)
-### [Managing Sessions](administration/tenant-admin-center-manage-sessions.md)
-### [Rename Environments](administration/tenant-admin-center-environments-rename.md)
-### [Exporting Databases](administration/tenant-admin-center-database-export.md)
-### [Restoring an Environment](administration/tenant-admin-center-backup-restore.md)
-### [Move an Environment to another Azure Active Directory organization](administration/tenant-admin-center-environments-move.md)
-### [Environment Telemetry](administration/tenant-admin-center-telemetry.md)
-### [Administration Center API](administration/administration-center-api.md)
 ## Automation
 ### [Introduction to Automation APIs](administration/itpro-introduction-to-automation-apis.md)
 <!-- START>DO_NOT_EDIT -->
@@ -189,50 +238,6 @@
 #### [Create user permission](administration/api/dynamics_userpermission_create.md)
 #### [Update user permission](administration/api/dynamics_userpermission_update.md)
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
-<!--### [Using Service-to-Service Authentication](administration/automation-apis-using-s2s-authentication.md)-->
-<!-- onboard customers-->
-## Onboard your customers
-### [Trials and Sign-ups](deployment/customer-signup.md)
-<!-- ### Do cool demos -->
-<!-- ### Partner Center stuff -->
-<!-- Performance tests-->
-### [Onboarding Experiences](administration/onboarding-experiences.md)
-### [Onboard New Users with the Welcome Banner](administration/onboarding-welcome-banner.md)
-### [Get Users Started with the Checklist](administration/onboarding-checklist.md)
-### [Teaching tips and in-app tours for onboarding users](administration/onboarding-teaching-tips-tours.md)
-### [Set Up Business Central](/dynamics365/business-central/setup?toc=/dynamics365/business-central/dev-itpro/toc.json)
-### [Deploying a Tenant Customization](developer/devenv-deploy-tenant-customization.md)
-### [Technical Support of Business Central](technical-support.md)
-<!--migrate to BC online-->
-## Migrate to Business Central Online
-### [Migrating On-Premises Data](administration/migrate-data.md)
-### [Running the Cloud Migration Tool](administration/migration-tool.md)
-### [Managing the Migration to the Cloud](administration/migration-management.md)
-### [Migrating from Business Central On-Premises](administration/migrate-business-central-on-premises.md)
-### [Migrating from Dynamics GP](administration/migrate-dynamics-gp.md)
-### [Migrating from Dynamics NAV](upgrade/Upgrade-Considerations.md#online)
-### [FAQ about Migrating to Business Central Online from On-Premises Solutions](administration/faq-migrate-data.md)
-### [Troubleshooting Cloud Migration](administration/migration-troubleshooting.md)
-<!--### [Migrating from Dynamics SL](administration/migrate-data.md)-->
-<!-- end migrate -->
-## What's New or Changed
-### [Update 18.3](whatsnew/whatsnew-update-18-3.md)
-### [Update 18.2](whatsnew/whatsnew-update-18-2.md)
-### [Update 18.1](whatsnew/whatsnew-update-18.1.md)
-### [Update 17.5](whatsnew/whatsnew-update-17-5.md)
-### [Update 17.4](whatsnew/whatsnew-update-17-4.md)
-### [Update 17.3](whatsnew/whatsnew-update-17-3.md)
-### [Update 17.2](whatsnew/whatsnew-update-17-2.md)
-### [Update 17.1](whatsnew/whatsnew-update-17-1.md)
-### Updates for earlier major versions
-#### [Update 16.5](whatsnew/whatsnew-update-16-5.md)
-#### [Update 16.4](whatsnew/whatsnew-update-16-4.md)
-#### [Update 16.3](whatsnew/whatsnew-update-16-3.md)
-#### [Update 16.2](whatsnew/whatsnew-update-16-2.md)
-#### [Update 16.1](whatsnew/whatsnew-update-16-1.md)
-#### [Update 15.4](whatsnew/whatsnew-update-15-4.md)
-#### [Update 15.3](whatsnew/whatsnew-update-15-3.md)
-#### [Update 15.2](whatsnew/whatsnew-update-15-2.md)
 <!-- end admin -->
 <!-- Development-->
 # Development

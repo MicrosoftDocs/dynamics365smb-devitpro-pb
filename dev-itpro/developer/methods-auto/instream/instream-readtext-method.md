@@ -47,7 +47,7 @@ The number of characters that were read. If you omit this optional return value 
 
 ## Remarks  
 
-ReadText reads the until the specified number of bytes, the maximum length of the string, a zero byte, or until the end of the line. For more information about how zero bytes and line endings are read, see [Write, WriteText, Read, and ReadText Method Behavior Regarding Line Endings and Zero Terminators](../../devenv-write-read-methods-line-break-behavior.md).
+ReadText reads the stream until the specified number of bytes, the maximum length of the string, a zero byte, or until the end of the line. For more information about how zero bytes and line endings are read, see [Write, WriteText, Read, and ReadText Method Behavior Regarding Line Endings and Zero Terminators](../../devenv-write-read-methods-line-break-behavior.md).
   
 Data is read in text format.  
 
@@ -57,7 +57,7 @@ If you use the return value, you must verify the validity of the data that has b
   
 ## Example  
 
-```
+```AL
  var
     FileTest: File;
     StreamInTest: Instream;

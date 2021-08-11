@@ -3,8 +3,8 @@ title: "Create a New Module in the System Application"
 description: Learn how to create a new module in the System Application.
 author: bholtorf
 ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
+ms.date: 07/29/2021
+ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
@@ -13,9 +13,11 @@ ms.service: "dynamics365-business-central"
 ---
 
 # Create a New Module in the System Application
+
 This topic provides an overview of how to create a new module in the System Application. 
 
 ## Requirements
+
 1. Familiarity with development in AL. For more information, see [AL Development](./devenv-get-started.md).  
 2. Your development environment is ready. For more information, see [Development Environment](https://github.com/microsoft/ALAppExtensions/blob/master/DevEnvironment.md).
 
@@ -23,29 +25,34 @@ This topic provides an overview of how to create a new module in the System Appl
 > Your environment must have the correct symbols. Go get those, in Visual Studio Code, press **F1**, and then choose **AL: Download Symbols**. Also, make a note of the **server** and **serverInstance** settings. You will add that information to the launch.json file.
 
 ## Create a New Module
+
 The following sections provide an example of how to contribute a new module. The example is based on the XmlWriter module, which is published in the AlAppExtensions repository. That contribution added a wrapper module to provide support for the XmlWriter, and the steps in this topic will recreate the pull request for the XmlWriter module. If you want to view the original pull request, it's available here: [Pull Request 7876](https://github.com/microsoft/ALAppExtensions/pull/7876). 
 
 ### Set Up Visual Studio Code for Module Development
+
 Open the **launch.json**, file and update the **server**, **serverInstance**, and **authentication** settings, as described in [Set Up Your Development Environment](devenv-set-up-an-environment.md).
 
-```
+```json
 
-    "server": "https://YourDockerContainerName",
+    "server": "http://YourDockerContainerName",
     "serverInstance": "BC",
-    "authentication": "Windows",
+    "authentication": "UserPassword",
 
 ```
+
 Open the **settings.json** file, and update the **al.assemblyProbingPaths**, as described in [Set Up a Development Environment](devenv-set-up-an-environment.md).
 
 ### Create a Branch
+
 To create a branch, run the **git checkout -b "YourFeatureBranchName"** command. Afterward, you can start creating a new module.
 
-### Create a New Module
+### Add the New Module
+
 Before you create a new module, make sure you are familiar with the general architecture of system modules. For more information, see [Module Architecture](devenv-blueprint.md).
 
 We'll start by creating a new folder named **XmlWriter** in the **System** folder, where we will add an app.json file. The app.json file will contain the general details of the module.
 
-```
+```json
     {
         "id":  "215b484f-9fbf-437c-bc6e-67e2c0f283b0",
         "name":  "XMLWriter",

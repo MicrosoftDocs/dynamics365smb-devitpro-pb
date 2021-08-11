@@ -66,7 +66,7 @@ For the *Length* parameter, the following rules apply:
 
    If *Value* exceeds *Length* characters, then *String* is truncated to *Length* characters.
 
-For the *Format* parameter, see [Format Property](../../devenv-format-property.md) for more information.
+For the *Format* parameter, see [Formatting Values, Dates, and Time](../../devenv-format-property.md) for more information.
 
 The *FormatNumber* parameter specifies the format that you want to use. The basic options for the Decimal data type are as follows:  
 
@@ -131,7 +131,7 @@ The message window displays the following:
 
 
 ## See Also
-[Format Property](../../properties/devenv-format-property.md)  
+[Formatting Values, Dates, and Time](../../devenv-format-property.md)  
 [System Data Type](system-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

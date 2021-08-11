@@ -67,7 +67,7 @@ Query.SetRange(Column1, FromValue, ToValue);
 Query.Read;  
 ```  
   
- In addition to the **SetRange** method, you can apply filters to a query using the **SetFilter** method and the [DataItemTableFilter Property](/dynamics365/business-central/dev-itpro/developer/methods-auto/query/devenv-dataitemtablefilter-property) and [ColumnFilter Property](../../properties/devenv-columnfilter-property.md).  
+ In addition to the **SetRange** method, you can apply filters to a query using the **SetFilter** method and the [DataItemTableFilter Property](../../properties/devenv-dataitemtablefilter-property.md) and [ColumnFilter Property](../../properties/devenv-columnfilter-property.md).  
   
 |If the **SetRange** method...|then...|  
 |-------------------------------------|-------------|  
