@@ -1,9 +1,9 @@
 ---
 title: "OnQueryClosePage (Request Page Extension) Trigger"
-description: "Runs as a page closes and before the OnClosePage trigger executes."
+description: "Runs when a page closes and before the OnClosePage trigger executes."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/27/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,11 +18,11 @@ author: SusanneWindfeldPedersen
 # OnQueryClosePage (Request Page Extension) Trigger
 > **Version**: _Available or changed with runtime version 7.0._
 
-Runs as a page closes and before the OnClosePage trigger executes.
+Runs when a page closes and before the OnClosePage trigger executes.
 
 
 ## Syntax
-```
+```AL
 trigger OnQueryClosePage(CloseAction: Action): Ok
 begin
     ...
@@ -38,9 +38,9 @@ The CloseAction chosen by the user; usually OK or Cancel.
 
 ## Return Value
 
-*Ok*
+*Ok*  
 &emsp;Type: [Boolean](../../methods-auto/boolean/boolean-data-type.md)  
-**true** if page was closed, otherwise **false**. This value is checked after each call. The default value is **true**.
+**true** if page was closed, otherwise **false**. This value is checked after each call. The default value is **true**.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

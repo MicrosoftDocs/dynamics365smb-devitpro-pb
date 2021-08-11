@@ -17,7 +17,7 @@ author: EmmaNielsson
 Would you like to know what has changed in update 17.4? Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update. In addition, we have gathered some good to know information and links, you might find interesting.
 
 ## Hotfixes
-Find an overview of hotfixes in this [article](https://support.microsoft.com/en-us/topic/update-17-4-for-microsoft-dynamics-365-business-central-2020-release-wave-2-application-build-17-4-21531-platform-build-17-0-21516-a98ea8e3-b93c-4f14-b1bd-f115a00d6d11).
+Find an overview of hotfixes in this [article](https://support.microsoft.com/topic/update-17-4-for-microsoft-dynamics-365-business-central-2020-release-wave-2-application-build-17-4-21531-platform-build-17-0-21516-a98ea8e3-b93c-4f14-b1bd-f115a00d6d11).
 
 ## Feature changes
 - [Use recurring journals to allocate balances by dimension values](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/use-recurring-journals-allocate-balances-dimension-values)
@@ -40,7 +40,7 @@ As previously [announced](https://nam06.safelinks.protection.outlook.com/?url=ht
 The release plan for Dynamics 365 Busines Central wave 1 2021 is now live! You can find an overview of all the new and planned features [here](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/planned-features).
 
 **Basic Authentication**  
-Basic Authentication (Web Service Access Key) removal for Business Central online has been postponed until [April 2022](../upgrade/deprecated-features-w1.md#basic-auth--web-service-access-keys-for-saas). We see that some integrations needs more time to move from Web Service Access Key usage to OAuth. PowerShell samples on how to connect to Business Central is published on [GitHub](https://github.com/microsoft/BCTech/tree/master/samples/PSOAuthBCAccess). 
+Basic Authentication (Web Service Access Key) removal for Business Central online has been postponed until [April 2022](../upgrade/deprecated-features-w1.md#accesskeys). We see that some integrations needs more time to move from Web Service Access Key usage to OAuth. PowerShell samples on how to connect to Business Central is published on [GitHub](https://github.com/microsoft/BCTech/tree/master/samples/PSOAuthBCAccess). 
 
 **Business Central Office Hours Calls in February**  
 Make sure to join the office hours calls around ‘Power Platform Integration, Power Apps, and Dataverse’ on February 9 and ‘Performance Toolkit and Telemetry; How to deploy for performance’ on February 23. Register and stay tuned for the upcoming calls: https://aka.ms/BCOfficeHours. 

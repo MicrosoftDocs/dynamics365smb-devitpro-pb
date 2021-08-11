@@ -27,7 +27,7 @@ Loads and executes the unit of C/AL code that you specify.
 An instance of the [Codeunit](../codeunit/codeunit-data-type.md) data type.  
 
 *Record*  
-&emsp;Type: [Table](../table/table-data-type.md)  
+&emsp;Type: [Record](../record/record-data-type.md)  
  A record from the table that is associated with the codeunit.  
 
 

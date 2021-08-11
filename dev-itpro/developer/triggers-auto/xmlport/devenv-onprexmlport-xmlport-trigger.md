@@ -3,7 +3,7 @@ title: "OnPreXmlPort (Xml Port) Trigger"
 description: "Runs after the table views and filters are set and before the XMLport is run."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/27/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,7 +22,7 @@ Runs after the table views and filters are set and before the XMLport is run.
 
 
 ## Syntax
-```
+```AL
 trigger OnPreXmlPort()
 begin
     ...

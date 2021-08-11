@@ -1,9 +1,9 @@
 ---
-title: "RecordRef.Rename Method"
+title: "RecordRef.Rename(Any [, Any,...]) Method"
 description: "Changes the value of a primary key in a table."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# RecordRef.Rename Method
+# RecordRef.Rename(Any [, Any,...]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Changes the value of a primary key in a table.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  RecordRef.Rename(Value1: Any [, Value2: Any,...])
 ```
 ## Parameters

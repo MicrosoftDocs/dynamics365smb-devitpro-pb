@@ -1,9 +1,9 @@
 ---
-title: "JsonValue.AsBigInteger Method"
+title: "JsonValue.AsBigInteger() Method"
 description: "Converts the value in a JsonValue to an BigInteger data type."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# JsonValue.AsBigInteger Method
+# JsonValue.AsBigInteger() Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Converts the value in a JsonValue to an BigInteger data type.
 
 
 ## Syntax
-```
+```AL
 Result :=   JsonValue.AsBigInteger()
 ```
 

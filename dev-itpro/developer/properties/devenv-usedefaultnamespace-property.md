@@ -1,8 +1,9 @@
 ---
 title: "UseDefaultNamespace Property"
+description: "Specifies whether the value in default namespace should be used for both output and input XML documents."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

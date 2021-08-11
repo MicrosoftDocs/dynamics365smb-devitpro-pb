@@ -1,9 +1,9 @@
 ---
-title: "File.Seek Method"
+title: "File.Seek(Integer) Method"
 description: "Sets a file pointer to a new position in an ASCII or binary file."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# File.Seek Method
+# File.Seek(Integer) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Sets a file pointer to a new position in an ASCII or binary file.
@@ -23,7 +23,7 @@ Sets a file pointer to a new position in an ASCII or binary file.
 > This method is supported only in Business Central on-premises.
 
 ## Syntax
-```
+```AL
  File.Seek(Position: Integer)
 ```
 > [!NOTE]

@@ -3,7 +3,7 @@ title: "SendNotificationHandler Attribute"
 description: "Specifies that the method is a SendNotificationHandler method, which handles Send statements."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/22/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -32,7 +32,7 @@ Specifies that the method is a SendNotificationHandler method, which handles Sen
 
 
 > **Version**: _Available or changed with runtime version 1.0._
-```
+```AL
 [SendNotificationHandler([HandlerIsOptional: Boolean])]
 procedure SendNotificationHandler(var TheNotification: Notification) : Boolean;
 ```

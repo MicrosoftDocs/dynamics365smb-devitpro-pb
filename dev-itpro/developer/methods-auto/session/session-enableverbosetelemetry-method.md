@@ -1,9 +1,9 @@
 ---
-title: "Session.EnableVerboseTelemetry Method"
+title: "Session.EnableVerboseTelemetry(Boolean, Duration) Method"
 description: "Temporarily enable verbose telemetry on the current session."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Session.EnableVerboseTelemetry Method
+# Session.EnableVerboseTelemetry(Boolean, Duration) Method
 > **Version**: _Available or changed with runtime version 3.2._
 
 Temporarily enable verbose telemetry on the current session.
@@ -23,7 +23,7 @@ Temporarily enable verbose telemetry on the current session.
 > This method is supported only in Business Central on-premises.
 
 ## Syntax
-```
+```AL
  Session.EnableVerboseTelemetry(EnableFullALFunctionTracing: Boolean, Duration: Duration)
 ```
 > [!NOTE]

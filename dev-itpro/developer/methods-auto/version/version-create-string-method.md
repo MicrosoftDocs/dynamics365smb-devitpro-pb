@@ -1,9 +1,9 @@
 ---
-title: "Version.Create Method"
-description: "Creates a version object from the provided string. The string should be in the format W.X.Y.Z, where W, X, Y and Z represent positive integers and where Y and Z are optional. If the input string is not in the expected format, an exception is thrown."
+title: "Version.Create(String) Method"
+description: "Creates a version object from the provided string."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Version.Create Method
+# Version.Create(String) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Creates a version object from the provided string. The string should be in the format W.X.Y.Z, where W, X, Y and Z represent positive integers and where Y and Z are optional. If the input string is not in the expected format, an exception is thrown.
 
 
 ## Syntax
-```
+```AL
 Value :=   Version.Create(Version: String)
 ```
 ## Parameters

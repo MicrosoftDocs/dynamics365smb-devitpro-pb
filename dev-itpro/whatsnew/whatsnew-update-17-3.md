@@ -17,11 +17,11 @@ author: EmmaNielsson
 Would you like to know what has changed in update 17.3? Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update. In addition, we have gathered some good to know information and links, you might find interesting.
 
 ## Hotfixes
-Find an overview of hotfixes in this [article](https://support.microsoft.com/en-us/help/4595152/update-17-3-for-microsoft-dynamics-365-business-central-2020-release).
+Find an overview of hotfixes in this [article](https://support.microsoft.com/help/4595152/update-17-3-for-microsoft-dynamics-365-business-central-2020-release).
 
 ## Feature changes
 - [Restoring an Environment in the Admin Center](../administration/tenant-admin-center-backup-restore.md)
-- [Use Shortcut dimensions in G/L Entries for Financial reporting](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/use-shortcut-dimensions-gl-entries-financial-reporting) <!--(Ivan) /dynamics365/business-central/finance-dimensions#to-set-up-global-and-shortcut-dimensionshttps://docs.microsoft.com/en-us-->
+- [Use Shortcut dimensions in G/L Entries for Financial reporting](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/use-shortcut-dimensions-gl-entries-financial-reporting) <!--(Ivan) /dynamics365/business-central/finance-dimensions#to-set-up-global-and-shortcut-dimensions/en-us-->
 - [Signal from web service key authentication added to Application Insights telemetry for partners](../administration/telemetry-webservices-access-key-trace.md)<!--(Kennie)-->
 - [Handle Price List Exceptions with Allow Updating Defaults](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/handle-price-list-exceptions-allow-updating-defaults) <!--(/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/handle-price-list-exceptions-with-allow-updating-defaults)--> 
 

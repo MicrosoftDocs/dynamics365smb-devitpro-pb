@@ -1,9 +1,9 @@
 ---
-title: "Text.CopyStr Method"
+title: "Text.CopyStr(String, Integer [, Integer]) Method"
 description: "Copies a substring of any length from a specific position in a string (text or code) to a new string."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Text.CopyStr Method
+# Text.CopyStr(String, Integer [, Integer]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Copies a substring of any length from a specific position in a string (text or code) to a new string.
 
 
 ## Syntax
-```
+```AL
 NewString :=   Text.CopyStr(String: String, Position: Integer [, Length: Integer])
 ```
 > [!NOTE]

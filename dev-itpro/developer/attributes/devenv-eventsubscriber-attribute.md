@@ -3,7 +3,7 @@ title: "EventSubscriber Attribute"
 description: "Specifies the event to which the method subscribes."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/16/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,7 +30,7 @@ Specifies the event to which the method subscribes.
 
 ## Syntax
 
-```
+```AL
 [EventSubscriber(ObjectType: ObjectType, ObjectId: Integer, EventName: Text, ElementName: Text, SkipOnMissingLicense: Boolean, SkipOnMissingPermission: Boolean)]
 ```
 

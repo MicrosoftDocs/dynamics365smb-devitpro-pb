@@ -3,7 +3,7 @@ title: "Scope Attribute"
 description: "Specifies the scope of a method."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/16/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,7 +28,7 @@ Specifies the scope of a method.
 
 ## Syntax
 
-```
+```AL
 [Scope(Kind: Text)]
 ```
 

@@ -1,9 +1,9 @@
 ---
-title: "XmlProcessingInstruction.GetTarget Method"
+title: "XmlProcessingInstruction.GetTarget(var Text) Method"
 description: "Gets the target of the processing instruction."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# XmlProcessingInstruction.GetTarget Method
+# XmlProcessingInstruction.GetTarget(var Text) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Gets the target of the processing instruction.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  XmlProcessingInstruction.GetTarget(var Result: Text)
 ```
 ## Parameters

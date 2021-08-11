@@ -3,7 +3,7 @@ title: "AboutTextML Property"
 description: "Sets the body of text that appears in a teaching tip in the UI."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/07/2021
+ms.date: 07/13/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

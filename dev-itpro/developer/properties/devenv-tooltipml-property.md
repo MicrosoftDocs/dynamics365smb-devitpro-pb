@@ -1,8 +1,9 @@
 ---
 title: "ToolTipML Property"
+description: "Sets the text used for the tooltip of an action, a field, a FactBox, or an activity button."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

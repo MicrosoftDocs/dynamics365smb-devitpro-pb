@@ -1,9 +1,9 @@
 ---
-title: "Page.Caption Method"
-description: "The caption shown in the title bar. For example, the default value in English (United States) is the same as the name of the page."
+title: "Page.Caption([String]) Method"
+description: "The caption shown in the title bar."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Page.Caption Method
+# Page.Caption([String]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 The caption shown in the title bar. For example, the default value in English (United States) is the same as the name of the page.
 
 
 ## Syntax
-```
+```AL
 [Caption := ]  Page.Caption([NewCaption: String])
 ```
 > [!NOTE]

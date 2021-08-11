@@ -1,9 +1,9 @@
 ---
-title: "Record.Copy Method"
+title: "Record.Copy(var Record [, Boolean]) Method"
 description: "Copies a specified record's filters, views, automatically calculated FlowFields, marks, fields, and keys that are associated with the record from a table or creates a reference to a record."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Record.Copy Method
+# Record.Copy(var Record [, Boolean]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Copies a specified record's filters, views, automatically calculated FlowFields, marks, fields, and keys that are associated with the record from a table or creates a reference to a record.
 
 
 ## Syntax
-```
+```AL
  Record.Copy(var FromRecord: Record [, ShareTable: Boolean])
 ```
 ## Parameters
