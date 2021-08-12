@@ -1,9 +1,9 @@
 ---
-title: "OutStream.WriteText Method"
+title: "OutStream.WriteText([String] [, Integer]) Method"
 description: "Writes text to an OutStream object."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# OutStream.WriteText Method
+# OutStream.WriteText([String] [, Integer]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Writes text to an OutStream object.
 
 
 ## Syntax
-```
+```AL
 [Written := ]  OutStream.WriteText([Text: String] [, Length: Integer])
 ```
 ## Parameters

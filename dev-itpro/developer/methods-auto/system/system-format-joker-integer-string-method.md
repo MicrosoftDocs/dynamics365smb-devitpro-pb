@@ -1,9 +1,9 @@
 ---
-title: "System.Format Method"
+title: "System.Format(Any, Integer, String) Method"
 description: "Formats a value into a string."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# System.Format Method
+# System.Format(Any, Integer, String) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Formats a value into a string.
 
 
 ## Syntax
-```
+```AL
 String :=   System.Format(Value: Any, Length: Integer, FormatString: String)
 ```
 > [!NOTE]
@@ -66,7 +66,7 @@ For the *Length* parameter, the following rules apply:
 
    If *Value* exceeds *Length* characters, then *String* is truncated to *Length* characters.
 
-For the *Format* parameter, see [Format Property](../../devenv-format-property.md) for more information.
+For the *Format* parameter, see [Formatting Values, Dates, and Time](../../devenv-format-property.md) for more information.
 
 The *FormatNumber* parameter specifies the format that you want to use. The basic options for the Decimal data type are as follows:  
 
@@ -131,7 +131,7 @@ The message window displays the following:
 
 
 ## See Also
-[Format Property](../../properties/devenv-format-property.md)  
+[Formatting Values, Dates, and Time](../../devenv-format-property.md)  
 [System Data Type](system-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

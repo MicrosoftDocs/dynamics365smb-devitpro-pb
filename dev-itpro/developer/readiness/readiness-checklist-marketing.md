@@ -37,7 +37,7 @@ The following section walks you through the marketing-related components, that i
 |Item | Requirement | Details | 
 |-----------|--------------|--------------|
 |App type|Read more about the  types of apps you can submit to AppSource. | [Read more](readiness-checklist-e-industries-categories-apptype.md#app-type) |
-|Contact type| How do you want potential customers to interact with your offer? | [Read more](readiness-checklist-e-industries-categories-apptype.md#contact-type)|
+|Listing type| How do you want potential customers to interact with your offer? | [Read more](readiness-checklist-e-industries-categories-apptype.md#listing-type)|
 |Customer leads| Provide connection details to the CRM system where you would like to send customer leads.  | [Read more](readiness-checklist-e-industries-categories-apptype.md#customer-leads)|
 
 ### Properties
@@ -77,4 +77,4 @@ The following section walks you through the marketing-related components, that i
 
 ## How does my offer look when it's live on AppSource?
 
-![arrowhead indicator down](../../media/salesandinventoryforecast.gif)
+![arrowhead indicator down.](../../media/salesandinventoryforecast.gif)

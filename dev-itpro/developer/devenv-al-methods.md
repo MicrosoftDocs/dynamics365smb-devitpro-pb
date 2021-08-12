@@ -38,7 +38,7 @@ Typing the shortcut `tprocedure` will create the basic structure for a method wh
 
 An attribute is a modifier on a method declaration that specifies information that controls the method's use and behavior. Adding an attribute on a method declaration is also known as *decorating* a method. For example, decorating a method with the Integration attribute sets the method to be an event publisher. An attribute can have one or more arguments that set properties for the method instance.
 
-Attributes are placed before the method. For information about the available attributes, see [Method Attributes](methods/devenv-method-attributes.md).
+Attributes are placed before the method. For information about the available attributes, see [Method Attributes](attributes/devenv-method-attributes.md).
 
 ### Local and global scope
 

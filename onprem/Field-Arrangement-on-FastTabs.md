@@ -19,22 +19,22 @@ This topic describes how individual fields are arranged on a FastTab and ways th
   
  For example, the following figure shows Page Designer for a FastTab setup with five fields.  
   
- ![Shows FastTab setup in Page Designer](media/NAVPageDesignerFastTabFields.png "NAVPageDesignerFastTabFields")  
+ ![Shows FastTab setup in Page Designer.](media/NAVPageDesignerFastTabFields.png "NAVPageDesignerFastTabFields")  
   
  The following figure illustrates the field layout on the rendered page.  
   
- ![Shows a FastTab setup of fields in Page Designer](media/NAVFieldLayoutFastTab.png "NAVFieldLayoutFastTab")  
+ ![Shows a FastTab setup of fields in Page Designer.](media/NAVFieldLayoutFastTab.png "NAVFieldLayoutFastTab")  
   
 ## Grouping Fields on a FastTab  
  By using the Group subtype control in a FastTab, you can include fields on a FastTab in separate groups. This gives you some control over how fields are distributed between the left and right columns. When you group fields on a FastTab, the groups and not the individual fields are distributed evenly between the left and right columns.  
   
  For example, the following figure shows Page Designer for a FastTab setup that includes three groups.  
   
- ![A FastTab setup with field groups in Page Designer](media/NAVPageDesignerFastTabsFieldGroups.png "NAVPageDesignerFastTabsFieldGroups")  
+ ![A FastTab setup with field groups in Page Designer.](media/NAVPageDesignerFastTabsFieldGroups.png "NAVPageDesignerFastTabsFieldGroups")  
   
  The following figure illustrates the groups and field layout on the rendered page.  
   
- ![Shows how field groups layout in a FastTab](media/NAVFastTabFieldLayoutGroups.png "NAVFastTabFieldLayoutGroups")  
+ ![Shows how field groups layout in a FastTab.](media/NAVFastTabFieldLayoutGroups.png "NAVFastTabFieldLayoutGroups")  
   
 ## Manually Arranging Fields in Multiple Rows and Columns  
  Using the GridLayout or FixedLayout controls, you can arrange fields in multiple rows and columns in a grid-like format. For more information, see [Arranging Fields in Rows and Columns](Arranging-Fields-in-Rows-and-Columns.md).

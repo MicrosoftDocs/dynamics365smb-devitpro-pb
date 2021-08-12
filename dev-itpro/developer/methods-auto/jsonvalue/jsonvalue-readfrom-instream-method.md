@@ -1,9 +1,9 @@
 ---
-title: "JsonValue.ReadFrom Method"
+title: "JsonValue.ReadFrom(InStream) Method"
 description: "Reads the JSON data from the stream into a JsonValue variable."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# JsonValue.ReadFrom Method
+# JsonValue.ReadFrom(InStream) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Reads the JSON data from the stream into a JsonValue variable.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  JsonValue.ReadFrom(Data: InStream)
 ```
 ## Parameters

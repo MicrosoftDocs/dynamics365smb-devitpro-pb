@@ -63,7 +63,7 @@ To record the AL execution, the server will now wait for a connection to happen 
 
 Once a snapshot debugging session is initialized the snapshot debugging session counter on the status bar will be updated and look like this:
 
-![Snapshot Debugger Counter](media/snapshotdebugger.png)
+![Snapshot Debugger Counter.](media/snapshotdebugger.png)
 
 ## Status of a snapshot debugging session
 

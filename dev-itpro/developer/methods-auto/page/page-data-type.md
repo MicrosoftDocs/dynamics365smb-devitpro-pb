@@ -1,9 +1,9 @@
 ---
 title: "Page Data Type"
-description: "Contains a number of simpler elements called controls. Controls are used to display information to the user or receive information from the user."
+description: "Contains a number of simpler elements called controls."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 07/13/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

@@ -24,13 +24,15 @@ This topic provides an overview of how to change an existing module.
 Your changes must follow the guidelines for module architecture. For more information, see [Module Architecture](devenv-blueprint.md). When changing an existing module, do not introduce breaking changes, that is, make sure that you do not break existing functionality. Existing tests must still pass, and you should add new tests for the functionality that you change or add.
 
 ### Set Up Visual Studio Code for Module Development
+
 Open the **launch.json**, file and update the **server**, **serverInstance**, and **authentication** settings, as described in [Set Up Your Development Environment](devenv-set-up-an-environment.md).
 
 ```json
-    "server": "https://YourDockerContainerName",
+    "server": "http://YourDockerContainerName",
     "serverInstance": "BC",
-    "authentication": "Windows",
+    "authentication": "UserPassword",
 ```
+
 Open the **settings.json** file, and update the **al.assemblyProbingPaths**, as described in [Set Up Your Development Environment](devenv-set-up-an-environment.md).
 
 ### Create a Branch

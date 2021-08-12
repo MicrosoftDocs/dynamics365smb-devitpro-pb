@@ -14,7 +14,7 @@ manager: edupont
 # Walkthrough: Creating a Cue Based on a FlowField
 This walkthrough demonstrates how to add a Cue on the [!INCLUDE[rtc](includes/rtc_md.md)]. A Cue provides a way to graphically show the number of entities in a table and view the entities in a filtered list. For example, the Cue can show the total number of open invoices, sales orders, or credit memos. As shown in the following illustration, a Cue is an icon that depicts a stack of papers on the page, where the height of the stack indicates the approximate number of entities in an underlying table. A number value on each Cue gives the precise number of entities. The Cue provides a shortcut link to a filtered list page for displaying the entities. You can add actions to a Cue to open related tasks that a user of the Role Center will typically perform.  
 
- ![Shows a Cue in the RoleTailored client](media/NAVRTCCueExample.png "NAVRTCCueExample")  
+ ![Shows a Cue in the RoleTailored client.](media/NAVRTCCueExample.png "NAVRTCCueExample")  
 
 ## About This Walkthrough  
  This walkthrough illustrates the following tasks:  
@@ -105,7 +105,7 @@ This walkthrough demonstrates how to add a Cue on the [!INCLUDE[rtc](includes/rt
 
      The **Table Filters** window will look similar to the following illustration.  
 
-     ![Shows the table filter setup for a Cue](media/NAVRTCCueTableFilterExample.PNG "NAVRTCCueTableFilterExample")  
+     ![Shows the table filter setup for a Cue.](media/NAVRTCCueTableFilterExample.PNG "NAVRTCCueTableFilterExample")  
 
     > [!IMPORTANT]  
     >  You cannot define a table filter that filters explicitly on a date because you will get an error when you try to open the Cue group in the [!INCLUDE[nav_windows](includes/nav_windows_md.md)]. For example, you cannot define a field that has the **Type** set to **CONST** or **FILTER** and the **Value** set to 21/03/2011. If you do, when you try to open the Cue group from the page in the [!INCLUDE[nav_windows](includes/nav_windows_md.md)], you get an error that states that ‘2011-03-21’ is not a valid date.  
@@ -176,7 +176,7 @@ This walkthrough demonstrates how to add a Cue on the [!INCLUDE[rtc](includes/rt
 
      Page Designer should look similar to the following illustration.  
 
-     ![Shows Page Designer setup for a Cue](media/NAVRTCCuePageDesignerExample.png "NAVRTCCuePageDesignerExample")  
+     ![Shows Page Designer setup for a Cue.](media/NAVRTCCuePageDesignerExample.png "NAVRTCCuePageDesignerExample")  
 
 5.  To create a link from the Cue to the **Sales Invoice List** page for displaying the open invoices, select the **Sales Invoices - Open** field row, and then on the **View** menu, choose **Properties**.  
 

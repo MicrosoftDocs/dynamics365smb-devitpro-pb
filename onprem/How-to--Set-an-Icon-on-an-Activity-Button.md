@@ -14,7 +14,7 @@ manager: edupont
 # How to: Set an Icon on an Activity Button
 The [!INCLUDE[nav_windows](includes/nav_windows_md.md)] includes images that you can use on activity buttons in the navigation pane. Images are displayed on the left side of activity buttons, as shown in the following navigation pane example.  
   
- ![Navigation pane clip that shows Activity buttons](media/NAV_ADG_NavigationPane_ActivityButtons.jpg "NAV\_ADG\_NavigationPane\_ActivityButtons")  
+ ![Navigation pane clip that shows Activity buttons.](media/NAV_ADG_NavigationPane_ActivityButtons.jpg "NAV\_ADG\_NavigationPane\_ActivityButtons")  
   
 > [!NOTE]  
 >  You cannot set up an image on the page links of an activity button. All page links in the navigation pane use a default image that cannot be changed.  

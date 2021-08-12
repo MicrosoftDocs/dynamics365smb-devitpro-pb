@@ -1,9 +1,9 @@
 ---
-title: "Report.ShowOutput Method"
+title: "Report.ShowOutput(Boolean) Method"
 description: "Returns the current setting of whether a section should be printed, and changes this setting."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Report.ShowOutput Method
+# Report.ShowOutput(Boolean) Method
 > **Version**: _Available or changed with runtime version 2.3 until version 2.3 where it was deprecated._
 
 Returns the current setting of whether a section should be printed, and changes this setting.
 
 
 ## Syntax
-```
+```AL
 [Show := ]  Report.ShowOutput(Value: Boolean)
 ```
 > [!NOTE]

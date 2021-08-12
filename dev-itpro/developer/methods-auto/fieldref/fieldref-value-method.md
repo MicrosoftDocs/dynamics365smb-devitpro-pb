@@ -1,9 +1,9 @@
 ---
-title: "FieldRef.Value Method"
-description: "Sets or gets the value of the field that is currently selected. This method returns an error if no field is selected."
+title: "FieldRef.Value([Any]) Method"
+description: "Sets or gets the value of the field that is currently selected."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# FieldRef.Value Method
+# FieldRef.Value([Any]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Sets or gets the value of the field that is currently selected. This method returns an error if no field is selected.
 
 
 ## Syntax
-```
+```AL
 [Value := ]  FieldRef.Value([NewValue: Any])
 ```
 > [!NOTE]

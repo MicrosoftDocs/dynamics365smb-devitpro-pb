@@ -1,9 +1,9 @@
 ---
-title: "Query.SaveAsXml Method"
+title: "Query.SaveAsXml(Integer, String) Method"
 description: "Saves the resulting data set of a query as an .xml file."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 07/13/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Query.SaveAsXml Method
+# Query.SaveAsXml(Integer, String) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Saves the resulting data set of a query as an .xml file.
@@ -23,7 +23,7 @@ Saves the resulting data set of a query as an .xml file.
 > This method is supported only in Business Central on-premises.
 
 ## Syntax
-```
+```AL
 [Ok := ]  Query.SaveAsXml(Number: Integer, FileName: String)
 ```
 ## Parameters

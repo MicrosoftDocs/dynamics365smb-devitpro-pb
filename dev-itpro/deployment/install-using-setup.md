@@ -46,7 +46,7 @@ There are some components that require other software to run. For example, the d
    - [Business Central Spring 2019](https://support.microsoft.com/help/4501292)
    - [Business Central 2019 Release Wave 2](https://support.microsoft.com/help/4528706)
    - [Business Central 2020 Release Wave 1](https://support.microsoft.com/help/4549687)
-   - [Business Central 2020 Release Wave 2](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2020-release-wave-2-186fa656-a75c-70f2-1131-adc70e97f280)
+   - [Business Central 2020 Release Wave 2](https://support.microsoft.com/topic/released-updates-for-microsoft-dynamics-365-business-central-2020-release-wave-2-186fa656-a75c-70f2-1131-adc70e97f280)
 
 2. In the **Cumulative Updates** table, select the link in the **Knowledge Base ID** column for the update you want.
 3. In the **Resolution** section, select the link under  **How to obtain the Microsoft Dynamics 365 Business Central <release> files**.
@@ -79,7 +79,7 @@ There are some components that require other software to run. For example, the d
 1. In the installation media (DVD) folder, double-click the setup.exe.
 2. Follow Setup until you get to the **[!INCLUDE[prod_long](../developer/includes/prod_long.md)]** page.
 
-    ![Business Central Setup](../media/setup.png "Business Central Setup")
+    ![Business Central Setup.](../media/setup.png "Business Central Setup")
 
     - Choose **Get a free online trial to sign up**  if you interested in hearing about and trying the cloud experience.
     - Choose **Get the Business Central app from the Microsoft Store** to download a companion app that mimics that Web client but has the same look-and-feel as the mobile apps. For more information, see [Installing the Microsoft Dynamics 365 Business Central App](install-business-central-app.md).

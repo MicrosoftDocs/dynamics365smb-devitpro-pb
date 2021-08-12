@@ -45,7 +45,7 @@ var
 
 The `Label` data type is used in .xlf files for translations. For more information, see [Working with Translation Files](../../devenv-work-with-translation-files.md). 
 
-For information about naming, see [CodeCop Rule AA0074](../../analyzers/codecop-aa0074-textconstlabelvariablenamesshouldhaveapprovedsuffix.md).
+For information about naming, see [CodeCop Rule AA0074](../../analyzers/codecop-aa0074.md).
 
 ## See Also
 

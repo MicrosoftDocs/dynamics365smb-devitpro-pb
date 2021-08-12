@@ -39,18 +39,18 @@ Occurs when an index was added or modified on the base table by key in a table e
 
 ### Custom dimensions
 
-|Dimension|Description or value|
-|---------|-----|
-|eventId|**LC0024**|
-|alObjectId|Specifies the ID of table that the index was added or changed.|
-|alObjectName|Specifies the name of table that the index was added or changed.|
-|extensionId|Specifies the ID of the extension that added the index.|
-|extensionName|Specifies the name of the extension that added or changed the index.|
-|extensionPublisher|Specifies the publisher of the extension that added added or changed the index.|
-|keyMaintainSIFTIndex|Specifies whether the index's [MaintainSIFTIndex property](../developer/properties/devenv-maintainsiftindex-property.md) is  `true` or `false`.  |
-|keyMaintainSQLIndex|Specifies whether the index's [MaintainSQLIndex property](../developer/properties/devenv-maintainsqlindex-property.md) is  `true` or `false`.  ||
-|keyFields|Specifies the table fields that are included in the index.|
-|keyName|Specifies the name of the index that was added or changed.|
+| Dimension | Description or value |
+|--|--|
+| eventId | **LC0024** |
+| alObjectId | Specifies the ID of table that the index was added or changed. |
+| alObjectName | Specifies the name of table that the index was added or changed. |
+| extensionId | Specifies the ID of the extension that added the index. |
+| extensionName | Specifies the name of the extension that added or changed the index. |
+| extensionPublisher | Specifies the publisher of the extension that added added or changed the index. |
+| keyMaintainSIFTIndex | Specifies whether the index's [MaintainSIFTIndex property](../developer/properties/devenv-maintainsiftindex-property.md) is  `true` or `false`. |
+| keyMaintainSQLIndex | Specifies whether the index's [MaintainSQLIndex property](../developer/properties/devenv-maintainsqlindex-property.md) is  `true` or `false`. |
+| keyFields | Specifies the table fields that are included in the index. |
+| keyName | Specifies the name of the index that was added or changed. |
 
 <a name="other"></a>**Common custom dimensions**
 
@@ -85,19 +85,19 @@ Occurs when an index was removed from the base table by table extension object.
 
 ### Custom dimensions
 
-|Dimension|Description or value|
-|---------|--------------------|
-|eventId|**LC0025**|
-|alObjectId|Specifies the ID of table that the index was removed from.|
-|alObjectName|Specifies the name of table that the index was removed from.|
-|extensionId|Specifies the ID of the extension that removed the index.|
-|extensionName|Specifies the name of the extension that removed the index.|
-|extensionPublisher|Specifies the publisher of the extension that removed the index.|
-|keyMaintainSIFTIndex|Specifies whether the index's [MaintainSIFTIndex property](../developer/properties/devenv-maintainsiftindex-property.md) was `true` or `false`.  |
-|keyMaintainSQLIndex|Specifies whether the index's [MaintainSQLIndex property](../developer/properties/devenv-maintainsqlindex-property.md) was  `true` or `false`.  ||
-|keyFields|Specifies the table fields that are included in the index.|
-|keyName|Specifies the name of the index that was removed. |
-|[See common custom dimensions](#other)||
+| Dimension | Description or value |
+|--|--|
+| eventId | **LC0025** |
+| alObjectId | Specifies the ID of table that the index was removed from. |
+| alObjectName | Specifies the name of table that the index was removed from. |
+| extensionId | Specifies the ID of the extension that removed the index. |
+| extensionName | Specifies the name of the extension that removed the index. |
+| extensionPublisher | Specifies the publisher of the extension that removed the index. |
+| keyMaintainSIFTIndex | Specifies whether the index's [MaintainSIFTIndex property](../developer/properties/devenv-maintainsiftindex-property.md) was `true` or `false`. |
+| keyMaintainSQLIndex | Specifies whether the index's [MaintainSQLIndex property](../developer/properties/devenv-maintainsqlindex-property.md) was  `true` or `false`. |
+| keyFields | Specifies the table fields that are included in the index. |
+| keyName | Specifies the name of the index that was removed. |
+| [See common custom dimensions](#other) |
 
 <!--
 {"extensionVersion":"1.0.0.0","Telemetry schema version":"0.1","telemetrySchemaVersion":"0.1","extensionPublisher":"Default publisher","Component version":"18.0.22893.23353","Extension version":"1.0.0.0","Environment type":"Production","componentVersion":"18.0.22893.23353","Extension App Id":"dac46aa2-3007-49d1-93c1-80d337c173e6","environmentType":"Production","deprecatedKeys":"Extension name, Extension App Id, Extension version, Telemetry schema version, Component, Component version, Telemetry schema version, AadTenantId, Environment name, Environment type","Extension name":"bc-index5","extensionName":"bc-index5","alObjectName":"MyBaseTable","aadTenantId":"common","AadTenantId":"common","extensionId":"dac46aa2-3007-49d1-93c1-80d337c173e6","Component":"Dynamics 365 Business Central Server","alObjectId":"50120","component":"Dynamics 365 Business Central Server","eventId":"LC0025","keyMaintainSIFTIndex":"False","keyMaintainSQLIndex":"True","keyFields":"MyBaseField1, MyBaseField2","keyName":"Key2"}
@@ -106,5 +106,4 @@ Occurs when an index was removed from the base table by table extension object.
 ## See also
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
-[Enabling Application Insights for Tenant Telemetry On-Premises](telemetry-enable-application-insights.md)  
-[Enable Sending Telemetry to Application Insights](tenant-admin-center-telemetry.md#appinsights)  
+[Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  

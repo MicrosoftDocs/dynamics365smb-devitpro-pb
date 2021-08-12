@@ -40,4 +40,4 @@ Passwords in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] do not ha
   
 ## See Also  
  [How to: Set Up User Time Constraints](How-to--Set-Up-User-Time-Constraints.md)   
- [Managing Users and Permissions]( https://docs.microsoft.com/dynamics365/business-central/ui-how-users-permissions)
+ [Managing Users and Permissions]( /dynamics365/business-central/ui-how-users-permissions)

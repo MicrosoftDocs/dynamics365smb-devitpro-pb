@@ -3,14 +3,15 @@ title: "Set Up an Environment for Developing a Module"
 description: Learn how to set up the tools you need to build a module in the System Applicaton.
 ms.author: bholtorf
 ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
+ms.date: 07/29/2021
+ms.reviewer: solsen
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: bholtorf
 ---
 
 # Set Up an Environment for Developing a Module
+
 This topic describes how to set up an environment for developing a module in the System Application.
 
 ## Requirements
@@ -22,17 +23,30 @@ This topic describes how to set up an environment for developing a module in the
 - Demo or Partner license for Business Central
 
 ## Get the Repository On Your Local Machine
-1. Open the [ALAppExtensions Repository](https://github.com/microsoft/ALAppExtensions), and choose Fork to create a fork of the repository.
-2. Choose **Code**, and then copy the URL under code to clone the forked repository. 
 
-    The URL looks like https://github.com/<*username*\>/ALAppExtensions.git, and <*username*> is your GitHub username.
-4. Open PowerShell, and then open the directory in which you want to keep the repository files.
-5. Run the **git clone <URL>** command. Replace <*URL*> with the URL you copied in step 3.
-6. Open VS Code, and then go to the **System Modules** folder in the cloned repository.
-7. Run the **code ALAppExtensions/Modules/System** command.
-8. In the **System** folder, open the **app.json** and note the **version** that is listed. You will need that in step 3 in the process of setting up a Docker container.
+1. Open the [ALAppExtensions Repository](https://github.com/microsoft/ALAppExtensions), and choose Fork to create a fork of the repository.
+2. Choose **Code**, and then copy the URL under code to clone the forked repository.  
+
+    The URL looks like `https://github.com/<*username*\>/ALAppExtensions.git`, and <*username*> is your GitHub username.
+3. Open PowerShell, and then open the directory in which you want to keep the repository files.
+4. Run the **git clone <URL>** command. Replace <*URL*> with the URL you copied in step 3.
+5. Open VS Code, and then go to the **System Modules** folder in the cloned repository.
+6. Run the **code ALAppExtensions/Modules/System** command.
+7. In the **System** folder, open the **app.json** and note the **version** that is listed. You will need that in step 3 in the process of setting up a Docker container.
+8. Modify the settings.json file in Visual Studio Code to include paths to .NET assemblies. Set the `"al.assemblyProbingPaths"` parameter:  
+
+    ```json
+        "al.assemblyProbingPaths": [
+        "C:/NugetCache/NET_Framework_48_TargetingPack.4.8.3761",
+        "C:/bcartifacts.cache/onprem/18.0.23013.23795",
+        "C:/WINDOWS/assembly"
+    ],
+    ```
+
+    For more information about the settings.json, see [User and Workspace Settings](https://code.visualstudio.com/docs/getstarted/settings).
 
 ## Set Up a Business Central Docker Container
+
 1. In PowerShell, import the **BcContainerHelper** module by running the **Import-Module BcContainerHelper** command. This loads the functions from the module. 
 2. Run the **New-BcContainerWizard** command. This opens a new PowerShell window and allows you to configure your [!INCLUDE[d365_dev_long_md](includes/d365_dev_long_md.md)] container.
 3. Complete the steps in the wizard. Make the following changes to the default values. 
@@ -40,8 +54,8 @@ This topic describes how to set up an environment for developing a module in the
     1. On the **Local Docker Container or Azure VM** step, choose a local docker container.
     2. On the **Authentication, Username/Password Authentication** step, choose options **a**, **b** or **c**.
     3. On the **Container Name** step, enter a name.
-    4. On the **Version** step, choose options **e** or **f**, depending on whether you want a sandbox or on-premesis build.
-    
+    4. On the **Version** step, choose options **e** or **f**, depending on whether you want a sandbox or on-premises build.
+
         - Enter the version from `ALAppExtensions/Modules/System/app.json` after selecting option **e** or **f**.
     5. Country, US is fine.
     6. Test Toolkit, if you have a partner license, you may choose any option. If you only have a demo license, choose option **d**, **No Test Toolkit**. 
@@ -56,7 +70,7 @@ This topic describes how to set up an environment for developing a module in the
     15. We will then put in **!** to use the default option choices for the rest of the options.
 4. At the end of the configuration, you should be presented with the following script:
 
-```
+    ```powershell
         $containerName = 'mydemo'
         $password = 'P@ssw0rd'
         $securePassword = ConvertTo-SecureString -String $password -AsPlainText -Force
@@ -74,7 +88,8 @@ This topic describes how to set up an environment for developing a module in the
             -licenseFile $licenseFile `
             -includeAL -doNotExportObjectsToText `
             -updateHosts
-```   
+    ```
+
    > [!NOTE]
    > If you copy the script, remember to update the path to the license file ($licenseFile). Also, if you are using a demo license, remove the **-includeTestToolkit** and **-includeTestLibrariesOnly** options.
 5. Run the script to create the Docker container. This can take some time if you are running it for the first time.

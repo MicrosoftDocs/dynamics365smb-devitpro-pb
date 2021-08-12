@@ -44,7 +44,7 @@ Set breakpoints on the external code that is not part of your original project. 
 
 In the following video illustration, the `Customer.dal` is an external file. A breakpoint is set in the `Customer.dal` file which is referenced from your AL project to stop execution at the marked point. 
 
-![Debugger](media/DebuggingAL.gif)
+![Debugger.](media/DebuggingAL.gif)
 
 For more information about **Go to Definition**, see [AL Code Navigation](devenv-al-code-navigation.md). 
 

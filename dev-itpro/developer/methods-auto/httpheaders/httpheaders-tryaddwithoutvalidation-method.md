@@ -1,9 +1,9 @@
 ---
-title: "HttpHeaders.TryAddWithoutValidation Method"
-description: "Adds the specified header and its value into the HttpHeaders collection. Doesn't validate the provided value."
+title: "HttpHeaders.TryAddWithoutValidation(String, String) Method"
+description: "Adds the specified header and its value into the HttpHeaders collection."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# HttpHeaders.TryAddWithoutValidation Method
+# HttpHeaders.TryAddWithoutValidation(String, String) Method
 > **Version**: _Available or changed with runtime version 3.0._
 
 Adds the specified header and its value into the HttpHeaders collection. Doesn't validate the provided value.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  HttpHeaders.TryAddWithoutValidation(Name: String, Value: String)
 ```
 ## Parameters

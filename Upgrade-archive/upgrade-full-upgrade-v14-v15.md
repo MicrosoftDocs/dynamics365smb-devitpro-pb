@@ -23,7 +23,7 @@ Use this process when you have a customized Business Central application that yo
 
 <!-- For this scenario, I used a BC 14.0 modified base application on a BC 14.0 server instance, which include some customization on C/AL objects in the base application and a custom extension that modified the Item table. is proecess will convert the entire BC 14 custom application to an Extension on the BC 15 platform.-->
 
- ![Upgrade on customized Business Central application](../developer/media/bc15-full-upgrade-customized-app.png "Upgrade on customize Business Central application")  
+ ![Upgrade on customized Business Central application.](../developer/media/bc15-full-upgrade-customized-app.png "Upgrade on customize Business Central application")  
  
  
 

@@ -1,9 +1,9 @@
 ---
-title: "FilterPageBuilder.Count Method"
+title: "FilterPageBuilder.Count() Method"
 description: "Gets the number of filter controls that are specified in the FilterPageBuilder object instance."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# FilterPageBuilder.Count Method
+# FilterPageBuilder.Count() Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Gets the number of filter controls that are specified in the FilterPageBuilder object instance.
 
 
 ## Syntax
-```
+```AL
 Count :=   FilterPageBuilder.Count()
 ```
 > [!NOTE]

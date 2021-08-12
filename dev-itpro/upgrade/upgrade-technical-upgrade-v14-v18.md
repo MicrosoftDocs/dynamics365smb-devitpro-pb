@@ -15,7 +15,7 @@ ms.service: "dynamics365-business-central"
 
 Use this process when you have a code customized [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application (version 14) that you want to upgrade to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 2 platform (version 18). This process won't upgrade the application to the latest version. You'll convert the entire application from C/AL to an AL base application extension.
 
- ![Upgrade on customized Business Central application](../developer/media/bc14-to-18-technical-upgrade-unmodified-app.png "Upgrade on customize Business Central application")  
+ ![Upgrade on customized Business Central application.](../developer/media/bc14-to-18-technical-upgrade-unmodified-app.png "Upgrade on customize Business Central application")  
  
 #### Single-tenant and multitenant deployments
 
@@ -79,7 +79,7 @@ The process for upgrading is similar for a single-tenant and multitenant deploym
 
 Version 18 introduces the capability to define permissions sets as AL objects, instead of as data. Permissions sets as AL objects is now the default and recommended model for permissions. For now, you can choose to use the legacy model, where permissions are defined and stored as data in the database. Whichever model you choose, there are permission set-related tasks you'll have to go through before and during upgrade.
 
-For more information, see [Upgrading Permissions Sets and Permissions](upgrade-permissions.md)<!--[Permissions Upgrade Considerations](https://review.docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-entitlements-and-permissionsets-overview?branch=permissionset#upgrade-considerations)-->.
+For more information, see [Upgrading Permissions Sets and Permissions](upgrade-permissions.md)<!--[Permissions Upgrade Considerations](https://review.docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-entitlements-and-permissionsets-overview?branch=permissionset#upgrade-considerations)-->.
 
 ## Task 3: Convert your v14 C/AL application to AL
 

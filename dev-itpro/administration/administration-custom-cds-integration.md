@@ -200,9 +200,23 @@ begin
 end;
 ```
 
+4. In codeunit **CRM Setup Defaults** (ID 5334), subscribe to the **OnAddEntityTableMapping** event in order to enable deep linking between coupled [!INCLUDE[prod_short](../includes/prod_short.md)] records and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] records.
+
+```al
+[EventSubscriber(ObjectType::Codeunit, Codeunit::"CRM Setup Defaults", 'OnAddEntityTableMapping', '', true, true)]
+    local procedure HandleOnAddEntityTableMapping(var TempNameValueBuffer: Record "Name/Value Buffer" temporary);
+    var
+        CRMSetupDefaults: Codeunit "CRM Setup Defaults";
+    begin
+        CRMSetupDefaults.AddEntityTableMapping('worker', DATABASE::Employee, TempNameValueBuffer);
+        CRMSetupDefaults.AddEntityTableMapping('worker', DATABASE::"CDS Worker", TempNameValueBuffer);
+    end;
+}
+```
+
 ### To create actions on the employee page for managing coupling and synchronization
 
-To enable users to create couplings between records in the two systems, we will extend the **Employee Card** page with actions for creating and deleting couplings, and for synchronizing. The following code example adds those actions to **Employee Card**.
+To enable users to create couplings between records in the two systems, we will extend the **Employee Card** page with actions for creating and deleting couplings, for synchronizing and for deep linking. The following code example adds those actions to **Employee Card**.
 
 ```al
 pageextension 50101 "Employee Synch Extension" extends "Employee Card"
@@ -213,9 +227,22 @@ pageextension 50101 "Employee Synch Extension" extends "Employee Card"
         {
             group(ActionGroupCDS)
             {
-                Caption = 'CDS';
+                Caption = 'Dataverse';
                 Visible = CDSIntegrationEnabled;
 
+                action(CDSGotoWorker)
+                {
+                    Caption = 'Worker';
+                    Image = CoupledCustomer;
+                    ToolTip = 'Open the coupled Dataverse worker.';
+
+                    trigger OnAction()
+                    var
+                        CRMIntegrationManagement: Codeunit "CRM Integration Management";
+                    begin
+                        CRMIntegrationManagement.ShowCRMEntityFromRecordID(RecordId);
+                    end;
+                }
                 action(CDSSynchronizeNow)
                 {
                     Caption = 'Synchronize';
@@ -309,6 +336,26 @@ pageextension 50101 "Employee Synch Extension" extends "Employee Card"
 }
 ```
 
+<!--## Customizing the matching algorithm
+
+Starting in 2020 release wave 1, you can use match-based coupling of records in [!INCLUDE [prod_short](../developer/includes/prod_short.md)] and [!INCLUDE [cds_long_md](../developer/includes/cds_long_md.md)], based on matching criteria defined by the administrator. For more information, see [Customize the Match-Based Coupling](/dynamics365/business-central/admin-how-to-set-up-a-dynamics-crm-connection#customize-the-match-based-coupling) in the business functionality content.  
+
+Based on the fields that you choose to match on, the algorithm to find a match sets an equality filter by default. However, at the moment when it sets a filter, an event is raised by codeunit 5360, `CDSIntTableCouple`:
+
+```al
+    [IntegrationEvent(false, false)]
+    local procedure OnBeforeSetMatchingFilter(var IntegrationRecordRef: RecordRef; var MatchingIntegrationRecordFieldRef: FieldRef; var LocalRecordRef: RecordRef; var MatchingLocalFieldRef: FieldRef; var SetMatchingFilterHandled: Boolean)
+```
+
+By subscribing to this event, you can modify the filter that is set on `MatchingIntegrationRecordFieldRef`. The following table outlines the parameters:
+
+|Parameter  |Description  |
+|-----------|-------------|
+|LocalRecordRef |The Business Central record for which you are trying to find a match for.  |
+|MatchingLocalFieldRef| the Business Central field that you want to use for finding a match in Dataverse. Use its value to set the filter on the Dataverse entity.  |
+|IntegrationRecordRef| The record ref to the proxy record that represents the Dataverse entity.|
+|MatchingIntegrationRecordFieldRef| The field reference to the proxy table field that represents the Dataverse entity attribute. To override the default behavior (equality filter), set your custom filter on this field, and then set `SetMatchingFilterHandled` flag to `true`.|
+-->
 ## Customizing Uncoupling
 
 Tables might require custom code to remove couplings, for example, to change tables before or after uncoupling. To enable custom uncoupling, specify the uncoupling codeunit when you create an integration table mapping. To do this, adjust the function **InsertIntegrationTableMapping** in your codeunit, as follows:
@@ -420,7 +467,7 @@ To create an integration field mapping, follow these steps:
 Users can now manually synchronize employee records in [!INCLUDE[prod_short](../includes/prod_short.md)] with Worker table rows in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] from the [!INCLUDE[prod_short](../includes/prod_short.md)] client.  
 
 > [!TIP]  
-> To learn how to schedule the synchronization by using a job queue entry, examine the code on the **RecreateJobQueueEntry** function in codeunit **CRM Integration Management** (ID 5330) and see how it is called by the integration code for other [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] tables in the codeunit. For more information, see [Scheduling a Synchronization](/dynamics365/business-central/admin-scheduled-synchronization-using-the-synchronization-job-queue-entries).
+> To learn how to schedule the synchronization by using a job queue entry, examine the code on the **RecreateJobQueueEntryFromIntTableMapping** function in codeunit **CDS Setup Defaults** (ID 7204) and see how it is called by the integration code for other [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] tables in the codeunit. For more information, see [Scheduling a Synchronization](/dynamics365/business-central/admin-scheduled-synchronization-using-the-synchronization-job-queue-entries).
 
 ### Enable customers to reset selected integration table mappings to the default settings
 
@@ -505,7 +552,7 @@ Let us explore another scenario. If we added an **Industry** field to the **Cont
 2. Locate the **AL Table Proxy Generator** tool. See the previous [section](administration-custom-cds-integration.md#to-create-the-integration-table-for-the-worker-table-in-business-central).
 3. In PowerShell, run the tool with the following arguments:
 
-    ```  
+    ```powershell
     -project:<Your AL project folder>
     -packagecachepath:<Your AL project cache folder>
     -serviceuri:<CDS server URL>
@@ -573,7 +620,7 @@ After we publish the extension we can update the mappings by running the **CDS C
 
 [Overview](/dynamics365/business-central/admin-common-data-service)  
 [Setting Up User Accounts for Integrating with [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]](/dynamics365/business-central/admin-setting-up-integration-with-dynamics-sales)  
-[Set Up a Connection to [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]](/dynamics365/business-central/admin-how-to-set-up-a-dynamics-crm-connection) 
+[Set Up a Connection to [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]](/dynamics365/business-central/admin-how-to-set-up-a-dynamics-crm-connection)  
 [Synchronizing Business Central and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]](/dynamics365/business-central/admin-synchronizing-business-central-and-sales)  
 [Mapping the Tables and Fields to Synchronize](/dynamics365/business-central/admin-how-to-modify-table-mappings-for-synchronization)  
 [Manually Synchronize Table Mappings](/dynamics365/business-central/admin-manual-synchronization-of-table-mappings)  

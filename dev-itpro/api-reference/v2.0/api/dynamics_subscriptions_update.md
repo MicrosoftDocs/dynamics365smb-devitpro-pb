@@ -20,19 +20,19 @@ Updates a subscriptions object for [!INCLUDE[prod_short](../../../includes/prod_
 ## HTTP request
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../endpoints-apis-for-dynamics.md).
 ```
-PATCH businesscentralPrefix/subscriptions({id})
+PATCH businesscentralPrefix/subscriptions({'id'})
 ```
 
 ## Request headers
 |Header|Value|
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
-|If-Match  | * |
+|If-Match       |Required. When this request header is included and the eTag provided does not match the current tag on the **subscription**, the **subscription** will not be updated. |
 
 ## Request body
 Here is an example of the request.
 ```json
-PATCH https://{businesscentralPrefix}/api/v1.0/subscriptions({id})
+PATCH https://{businesscentralPrefix}/api/v1.0/subscriptions({'id'})
 Content-type: application/json
 
 {
@@ -52,7 +52,7 @@ If successful, this method returns a `200 OK` response code and a **subscription
 
 Here is an example of the request.
 ```
-https://{businesscentralPrefix}/api/v1.0/subscriptions({id}) 
+https://{businesscentralPrefix}/api/v1.0/subscriptions({'id'}) 
 
 ```
 

@@ -1,9 +1,9 @@
 ---
-title: "Xmlport.Export Method"
+title: "Xmlport.Export() Method"
 description: "Creates an XML data stream (XML document) and sends it to a chosen destination."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Xmlport.Export Method
+# Xmlport.Export() Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Creates an XML data stream (XML document) and sends it to a chosen destination.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  Xmlport.Export()
 ```
 

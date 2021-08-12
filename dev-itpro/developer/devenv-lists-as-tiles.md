@@ -49,7 +49,7 @@ There's no limit on the number fields that you can display in a tile. However, w
 
 The order of the fields determines how they appear in the layout of the tile, no matter the order in the page object. Depending on the number of columns that you define in the `Field Group`, the layout will dynamically change. This concept is illustrated in the following figure:
 
- ![Brick layout for tablet and phone](media/TabletPhone_BrickLayout-v2.jpg "TabletPhone\BrickLayout")  
+ ![Brick layout for tablet and phone.](media/TabletPhone_BrickLayout-v2.jpg "TabletPhone\BrickLayout")  
 
 The fields 2 and 3 are shown in a large font. These fields should typically contain data that identifies the brick. For example, in the **Customers** list, the **Customer Name** and **Balance** are displayed in fields 2 and 3. 
 

@@ -14,10 +14,14 @@ ms.author: solsen
 
 # Working with Webhooks in Dynamics 365 Business Central
 
-Webhooks is the way to get notified if an entity changes in [!INCLUDE[prod_short](../../includes/prod_short.md)]. For general information about webhooks, see [Push notifications via webhooks](https://github.com/Microsoft/api-guidelines/blob/vNext/Guidelines.md#15-push-notifications-via-webhooks) in Microsoft REST API Guidelines.
+Webhooks is the way to get notified if an entity changes in [!INCLUDE[prod_short](../../includes/prod_short.md)]. For general information about webhooks, see [Push notifications via webhooks](https://github.com/Microsoft/api-guidelines/blob/vNext/Guidelines.md#15-push-notifications-via-webhooks) in the Microsoft REST API Guidelines.
 
 
 In the following replace the URL prefix for [!INCLUDE[prod_short](../../includes/prod_short.md)] depending on environment following the [guideline](endpoints-apis-for-dynamics.md).
+
+> [!IMPORTANT]  
+> With [!INCLUDE[prod_short](../../includes/prod_short.md)] version 19, all webhook notifications sent from [!INCLUDE[prod_short](../../includes/prod_short.md)] will no longer contain the byte order mark (BOM), to align with RCF 7159, section 8.1.    
+
 
 ## Register a webhook subscription
 
@@ -170,6 +174,9 @@ Custom APIs are also webhook-enabled and will be listed in **webhookSupportedRes
 > * The API page has a composite key (for example, if ODataKeyFields consists of several fields or is missing, then the primary key for the source table consists of several fields).
 > * The source table for the API page is a system table ("Table No." > 2000000000).
 > * The API is declared through an API type query, for example, and not through an API type page.
+
+> [!NOTE]  
+> Changes made by users who are not able to schedule job queues will not be notified until another user who is able to schedule job queues makes another change to the same table.
 
 ## Notes for on-premise
 

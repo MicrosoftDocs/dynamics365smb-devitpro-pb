@@ -17,7 +17,7 @@ The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] deployment inclu
 
 To understand the components is useful to first look at the base topology of a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] deployment, as illustrated in the following diagram:
 
-![Architecture overview](../media/architecture-overview.png "Architecture overview")  
+![Architecture overview.](../media/architecture-overview.png "Architecture overview")  
 
 ## Components
 

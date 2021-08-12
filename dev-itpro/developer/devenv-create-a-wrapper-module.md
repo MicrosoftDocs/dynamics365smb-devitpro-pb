@@ -18,7 +18,7 @@ This topic provides a description of how to contribute a .NET wrapper module to 
 ## Converting the Regex architecture
 In .NET, the Regex class provides functionality for regular expressions. You can implement the functionality in a similar way as a system module by creating a Regex codeunit that provides an interface and an internal Regex implementation that contains the logic.
 
-:::image type="content" source="../media/regex-figure.png" alt-text="Regex components":::
+:::image type="content" source="../media/regex-figure.png" alt-text="Regex components.":::
 
 ## Wrapping a .NET method
 For some methods, you can wrap the .NET method in AL in an internal codeunit and expose the procedure to the facade. For example, you can wrap the IsMatch method as follows.
@@ -72,7 +72,7 @@ Not all .NET Regex classes map so directly to system modules, however. The .NET 
 
 
 /// <remark>
-/// For more information, visit https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.match?view=netcore-3.1.
+/// For more information, visit /dotnet/api/system.text.regularexpressions.match?view=netcore-3.1.
 /// </remark>
 table 3965 Matches
 {

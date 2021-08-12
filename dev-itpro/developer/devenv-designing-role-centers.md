@@ -26,7 +26,7 @@ Role Centers are based on a user-centric design model. You should design a Role 
 
 A Role Center is defined by page that has the [PageType property](properties/devenv-pagetype-property.md) set to `RoleCenter`. The Role Center page is divided into two main areas: navigation/actions area and content area. The following figure illustrates the general layout and elements of a Role Center page.
 
-![Role Center overview](media/rolecenter-overviewApril19.png "Role Center overview")
+![Role Center overview.](media/rolecenter-overviewApril19.png "Role Center overview")
 
 For a simple code example of a role center page, see [Simple Role Center Code Example](devenv-simple-role-center-example.md).
 

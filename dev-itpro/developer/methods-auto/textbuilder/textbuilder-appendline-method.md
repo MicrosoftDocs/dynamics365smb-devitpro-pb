@@ -1,9 +1,9 @@
 ---
-title: "TextBuilder.AppendLine Method"
-description: "Appends a copy of the specified string followed by the default line terminator to the end of the current TextBuilder object. If this parameter is omitted, only the line terminator will be appended."
+title: "TextBuilder.AppendLine([Text]) Method"
+description: "Appends a copy of the specified string followed by the default line terminator to the end of the current TextBuilder object."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# TextBuilder.AppendLine Method
+# TextBuilder.AppendLine([Text]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Appends a copy of the specified string followed by the default line terminator to the end of the current TextBuilder object. If this parameter is omitted, only the line terminator will be appended.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  TextBuilder.AppendLine([Text: Text])
 ```
 ## Parameters

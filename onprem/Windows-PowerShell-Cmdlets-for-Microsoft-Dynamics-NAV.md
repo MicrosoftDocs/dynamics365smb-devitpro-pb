@@ -19,16 +19,16 @@ author: jswymer
 
 |  Description  |  See module  |
 |---------------|--------------|  
-| Administration Cmdlets for Dynamics NAV|[Microsoft.Dynamics.Nav.Management](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.management)|
-| Administration Cmdlets for Dynamics NAV Extensions |[Microsoft.Dynamics.Nav.Apps.Management](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.apps.management)  |
+| Administration Cmdlets for Dynamics NAV|[Microsoft.Dynamics.Nav.Management](/powershell/module/microsoft.dynamics.nav.management)|
+| Administration Cmdlets for Dynamics NAV Extensions |[Microsoft.Dynamics.Nav.Apps.Management](/powershell/module/microsoft.dynamics.nav.apps.management)  |
 
 
 ## [!INCLUDE[nav_dev_shell_md](includes/nav_dev_shell_md.md)]
 
 |  Description  |  See module  |
 |---------------|--------------|
-|  Development Cmdlets for Dynamics NAV  |[Microsoft.Dynamics.Nav.Model.Tools](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.model.tools)  |
-| Development Cmdlets for Dynamics NAV Extensions |[Microsoft.Dynamics.Nav.Apps.Tools](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.apps.tools)  |
+|  Development Cmdlets for Dynamics NAV  |[Microsoft.Dynamics.Nav.Model.Tools](/powershell/module/microsoft.dynamics.nav.model.tools)  |
+| Development Cmdlets for Dynamics NAV Extensions |[Microsoft.Dynamics.Nav.Apps.Tools](/powershell/module/microsoft.dynamics.nav.apps.tools)  |
 
 >[!TIP]
 >For a list of new and changed cmdlets since [!INCLUDE[navcorfu_md](includes/navcorfu_md.md)], see [Changes to Dynamics NAV Cmdlets From Previous Release](Changes-to-Microsoft-Dynamics-NAV-Cmdlets-From-Previous-Release.md).

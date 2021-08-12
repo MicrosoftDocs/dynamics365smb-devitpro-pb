@@ -14,7 +14,7 @@ manager: edupont
 # Cash Flow Chart Example
 This code example demonstrates how to use the Business Data Chart control add-in to create a chart that displays a cash flow forecast as shown in the following figure:  
   
- ![Shows a cash flow chart](media/NAV_RTC_CashFlowChart.PNG "NAV\_RTC\_CashFlowChart")  
+ ![Shows a cash flow chart.](media/NAV_RTC_CashFlowChart.PNG "NAV\_RTC\_CashFlowChart")  
   
  The cash flow forecast chart combines the current bank balances with the outstanding receivables and payables, and displays the data for the next six days, including the current day. The chart displays data for four measures: Accounts Receivable, Accounts Payable, Forecasted Balance, and Credit Limit in Banks. The data for the measures is displayed using the following chart types: stacked column, line, and step line.  
   
@@ -25,7 +25,7 @@ This code example demonstrates how to use the Business Data Chart control add-in
   
  The following figure illustrates the [!INCLUDE[navnow](includes/navnow_md.md)] objects that are used to create the cash flow chart.  
   
- ![Cash Flow chart design](media/NAV_CSIDE_ClientServerCashFlowChart.png "NAV\_CSIDE\_ClientServerCashFlowChart")  
+ ![Cash Flow chart design.](media/NAV_CSIDE_ClientServerCashFlowChart.png "NAV\_CSIDE\_ClientServerCashFlowChart")  
   
  *Page 50000 Demo Cash Flow Chart* contains the Business Data Chart control add-in that renders the chart user-interface on the page. The Business Data control add-in is defined by the Microsoft.Dynamics.Nav.Client.BusinessChart assembly that is available by default in the [!INCLUDE[navnow](includes/navnow_md.md)] installation.  
   
@@ -273,7 +273,7 @@ OBJECT Codeunit 50000 Demo Cash Flow Chart Mgt.
 ### Understanding the GenerateData Function  
  Codeunit **50000** accesses data in the Cust. Ledger Entry table, the Vender Ledger Entry table, and the Bank Account table. The **GenerateData** function generates the data for the cash flow chart. The following figure shows the C/AL code for the **GenerateData** function and how it maps to the cash flow chart user interface.  
   
- ![Shows the C&#47;AL for the Flow Chart codeunit](media/NAV_CSIDE_ChartControlAddin_Codeunit.png "NAV\_CSIDE\_ChartControlAddin\_Codeunit")  
+ ![Shows the C&#47;AL for the Flow Chart codeunit.](media/NAV_CSIDE_ChartControlAddin_Codeunit.png "NAV\_CSIDE\_ChartControlAddin\_Codeunit")  
   
  The C/AL code sets the characteristics of the cash flow chart, including measure labels, chart types, and more. The functions that are called in **GenerateData** function are defined in table **485 Business Chart Buffer**. The following table describes the functions of the Business Chart Buffer table that you can use for defining the chart.  
   
@@ -288,11 +288,11 @@ OBJECT Codeunit 50000 Demo Cash Flow Chart Mgt.
 ### Understanding the Drill-down Logic of the OnDataPointClicked Function  
  When you choose a data point or column in the cash flow chart, a list page appears that shows due customer ledger entries, vendor ledger entries, or bank accounts. To accomplish this, the **OnDataPointClicked** event trigger on page **50000 Demo Cash Flow Chart** is passed to the point object as a parameter. The point can then be passed on to the **SetDrillDownIndexes\(point\)** function that updates the **Drill-Down X Index** and **Drill-Down Measure Index** fields on the record. You use the **Drill-Down X Index** and **Drill-Down Measure Index** fields to retrieve the x-axis value and measure value for filtering the list that you want to display. The following figure shows the C/AL code on the **OnDataPointClicked** function.  
   
- ![Shows the C&#47;AL code on OnDataPointClicked function](media/NAV_CSIDE_.png "NAV\_CSIDE\_")  
+ ![Shows the C&#47;AL code on OnDataPointClicked function.](media/NAV_CSIDE_.png "NAV\_CSIDE\_")  
   
  The **OnDataPointClicked** function calls the **DrillDownCust** function, **DrillDownVend** function, and **DrillDownBank** function, which are shown in the following figure.  
   
- ![Shows the drill&#45;down functions used by chart](media/NAV_CSIDE_CashFlowChart_DrillDownFunctions.png "NAV\_CSIDE\_CashFlowChart\_DrillDownFunctions")  
+ ![Shows the drill&#45;down functions used by chart.](media/NAV_CSIDE_CashFlowChart_DrillDownFunctions.png "NAV\_CSIDE\_CashFlowChart\_DrillDownFunctions")  
   
 ## See Also  
  [Displaying Charts Using the Chart Control Add-in](Displaying-Charts-Using-the-Chart-Control-Add-in.md)

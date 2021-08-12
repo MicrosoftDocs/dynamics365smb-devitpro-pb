@@ -1,9 +1,9 @@
 ---
-title: "XmlDocumentType.GetPublicId Method"
+title: "XmlDocumentType.GetPublicId(var Text) Method"
 description: "Gets the public identifier for this Document Type Definition (DTD)."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# XmlDocumentType.GetPublicId Method
+# XmlDocumentType.GetPublicId(var Text) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Gets the public identifier for this Document Type Definition (DTD).
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  XmlDocumentType.GetPublicId(var Result: Text)
 ```
 ## Parameters

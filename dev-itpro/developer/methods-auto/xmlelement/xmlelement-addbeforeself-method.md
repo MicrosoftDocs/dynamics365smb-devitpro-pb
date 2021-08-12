@@ -1,9 +1,9 @@
 ---
-title: "XmlElement.AddBeforeSelf Method"
+title: "XmlElement.AddBeforeSelf(Any,...) Method"
 description: "Adds the specified content immediately before this node."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# XmlElement.AddBeforeSelf Method
+# XmlElement.AddBeforeSelf(Any,...) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Adds the specified content immediately before this node.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  XmlElement.AddBeforeSelf(Content: Any,...)
 ```
 ## Parameters

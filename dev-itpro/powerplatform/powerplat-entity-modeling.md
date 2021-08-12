@@ -18,7 +18,7 @@ author: solsen
 [!INCLUDE[cc_data_platform_banner](../includes/cc_data_platform_banner.md)]
 
 > [!IMPORTANT]  
-> This functionality requires version 17 or later of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online while service update 189 is required for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The release information for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] is published on the [latest version availability page](https://docs.microsoft.com/dynamics365/released-versions/dynamics-365ce#all-version-availability).
+> This functionality requires version 17 or later of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online while service update 189 is required for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The release information for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] is published on the [latest version availability page](/dynamics365/released-versions/dynamics-365ce#all-version-availability).
 
 Building an app requires capabilities to perform relational modeling between tables that are being used in the app. In the context of virtual tables, there will be scenarios where virtual tables and native tables in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] must work together to enable the desired user experience. This topic explains concepts of relational modeling that can be implemented using virtual tables for [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
@@ -116,13 +116,13 @@ Consider an example where you want to show sales orders from [!INCLUDE[prod_shor
 
 To follow the example from above, where a relation between the native table **Account** and the virtual table **dyn365bc_salesorder_v2_0** is needed:
 
-1. Create a key on the **Account** table. Choose **Account Number**. Name is 'prefix_**AccountKey**'.
+1. Create a key on the **Account** table. Choose **Account Number**. Name is 'prefix_**accountkey**'.
 2. Make sure that **dyn365bc_salesorder_v2_0** is generated.
 3. Add a new record to the **Business Central Table Relation** table.
     - On the **General** tab set the following:
         - **Relation Name** to **dyn365bc_account2salesorder**
         - **Native Table** to **account**
-        - **Native Table Key** to **prefix_AccountKey**
+        - **Native Table Key** to **prefix_accountkey**
         - **Virtual Table** to **dyn365bc_salesorder_v2_0**
     - On the **Mappings** tab set first row as follows:
         - **Native columns** to **accountnumber**

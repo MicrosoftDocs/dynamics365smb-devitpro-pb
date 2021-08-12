@@ -52,7 +52,7 @@ For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, you can'
 |Compression threshold|The threshold in memory consumption at which the service starts compressing datasets| 64 KB|
 -->
 
-##  <a name="Database"></a> Database connection limits
+##  <a name="Database"></a> Database limits
   
 |Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Value|  
 |---------|--------------------------------------------------------------------------------|------|

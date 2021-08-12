@@ -1,9 +1,9 @@
 ---
-title: "Record.Relation Method"
+title: "Record.Relation(Any) Method"
 description: "Determines the table relationship of a given field."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 06/22/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Record.Relation Method
+# Record.Relation(Any) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Determines the table relationship of a given field.
 
 
 ## Syntax
-```
+```AL
 TableNumber :=   Record.Relation(Field: Any)
 ```
 ## Parameters
@@ -31,8 +31,7 @@ An instance of the [Record](record-data-type.md) data type.
 
 *Field*  
 &emsp;Type: [Any](../any/any-data-type.md)  
-The field for which you want to find the table relationship.
-          
+The field for which you want to find the table relationship.  
 
 
 ## Return Value

@@ -121,6 +121,10 @@ The user interface text, including the tooltips, is translated as part of the ap
 
 At Microsoft, we are in process of simplifying and unifying our style guides. To get to know the Microsoft style, use the [Microsoft Writing Style Guide](/style-guide/welcome/) as a good starting point. The [!INCLUDE [prod_short](developer/includes/prod_short.md)] follows most of the guidelines in the Microsoft Writing Style Guide with exceptions for industry terminology and other product-specific issues.  
 
+## Get notified about changes through an RSS feed
+
+[!INCLUDE [ua-rss](includes/ua-rss.md)]
+
 ## See Also
 
 [Configure the Help Experience](deployment/configure-help.md)  

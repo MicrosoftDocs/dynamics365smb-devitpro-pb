@@ -3,7 +3,7 @@ title: "OnModifyRecord (Request Page) Trigger"
 description: "Runs before a record is modified in the table."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/27/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,7 +22,7 @@ Runs before a record is modified in the table.
 
 
 ## Syntax
-```
+```AL
 trigger OnModifyRecord(): Ok
 begin
     ...
@@ -32,9 +32,9 @@ end;
 
 ## Return Value
 
-*Ok*
+*Ok*  
 &emsp;Type: [Boolean](../../methods-auto/boolean/boolean-data-type.md)  
-**true** if the record was modified, otherwise **false**. The return value is checked after each call. The default value is **true**.
+**true** if the record was modified, otherwise **false**. The return value is checked after each call. The default value is **true**.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

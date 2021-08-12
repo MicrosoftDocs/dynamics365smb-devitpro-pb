@@ -26,6 +26,11 @@ This is the button you should click when you want to submit your app for validat
 
 No. If you do not change your app in a submission, we skip technical validation.
 
+## Is there a good way get the status of the validation as it happens?
+
+[!INCLUDE[appsource-appinsights](includes/appsource-appinsights.md)].
+
+
 ## See also
 
 [FAQ about Updating your Business Central App](app-faq-update.md)  

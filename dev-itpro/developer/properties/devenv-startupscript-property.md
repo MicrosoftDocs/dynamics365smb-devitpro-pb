@@ -1,8 +1,9 @@
 ---
 title: "StartupScript Property"
+description: "Specifies the script which is invoked when web page with the control add-in is loaded."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

@@ -1,9 +1,9 @@
 ---
-title: "Session.SendTraceTag Method"
+title: "Session.SendTraceTag(String, String, Verbosity, String [, DataClassification]) Method"
 description: "Send a trace tag to the telemetry service."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Session.SendTraceTag Method
+# Session.SendTraceTag(String, String, Verbosity, String [, DataClassification]) Method
 > **Version**: _Available or changed with runtime version 1.0 until version 6.0 where it was deprecated for the following reason: "Use LogMessage instead."_
 
 Send a trace tag to the telemetry service.
@@ -23,7 +23,7 @@ Send a trace tag to the telemetry service.
 > This method is supported only in Business Central on-premises.
 
 ## Syntax
-```
+```AL
  Session.SendTraceTag(Tag: String, Category: String, Verbosity: Verbosity, Message: String [, DataClassification: DataClassification])
 ```
 > [!NOTE]

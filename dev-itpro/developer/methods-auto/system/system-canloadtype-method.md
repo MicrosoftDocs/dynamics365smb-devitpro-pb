@@ -1,9 +1,9 @@
 ---
-title: "System.CanLoadType Method"
+title: "System.CanLoadType(DotNet) Method"
 description: "Tests if the specified .NET Framework type can be loaded."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 07/13/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# System.CanLoadType Method
+# System.CanLoadType(DotNet) Method
 > **Version**: _Available or changed with runtime version 2.0._
 
 Tests if the specified .NET Framework type can be loaded.
@@ -23,7 +23,7 @@ Tests if the specified .NET Framework type can be loaded.
 > This method is supported only in Business Central on-premises.
 
 ## Syntax
-```
+```AL
 Ok :=   System.CanLoadType(DotNet: DotNet)
 ```
 > [!NOTE]

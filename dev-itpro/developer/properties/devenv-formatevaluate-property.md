@@ -1,8 +1,9 @@
 ---
 title: "FormatEvaluate Property"
+description: "Sets the data that is being imported or exported as XML data types or as the standard C/SIDE data types."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -66,10 +67,10 @@ The following XML Data types require evaluation.
   
 This is an XMLport property and therefore applies to all the data that is being streamed. It cannot be applied only to specific fields.  
   
-For more information about formatting AL data types, see [Format Property](devenv-format-property.md). For more information about evaluating variables, see [EVALUATE Method](../methods-auto/system/system-evaluate-method.md). For more information about using temporary tables, see [Temporary Property (XMLports)](/dynamics365/business-central/dev-itpro/developer/devenv-usetemporary-xmlports-property).  
+For more information about formatting AL data types, see [Formatting Values, Dates, and Time](../devenv-format-property.md). For more information about evaluating variables, see [EVALUATE Method](../methods-auto/system/system-evaluate-method.md). For more information about using temporary tables, see [UseTemporary Property (XMLport)](devenv-usetemporary-xmlport-property.md).  
   
 ## See Also  
 
-[Format Property (XMLports)](devenv-format-property.md)   
-[Evaluate Method](../methods-auto/system/system-EVALUATE-method.md)   
-[Temporary Property (XMLports)](/dynamics365/business-central/dev-itpro/developer/devenv-usetemporary-xmlports-property)
+[Format Property (XMLports)](devenv-format-property.md)  
+[Evaluate Method](../methods-auto/system/system-EVALUATE-method.md)  
+[UseTemporary Property (XMLport)](devenv-usetemporary-xmlport-property.md)

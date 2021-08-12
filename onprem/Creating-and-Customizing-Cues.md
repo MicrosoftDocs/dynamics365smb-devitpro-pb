@@ -20,7 +20,7 @@ This article provides an overview of Cues and the tasks involved in creating and
 A Cue can do two things. It can provide a visual representation of aggregated business data, such as the number of open sales invoices or the total sales for the month. It can also promote an action or operation to the user. Cues are interactive, meaning that you can select the Cue to drill down to data or open another page, run code, and more. To accommodate this, there are two types of Cues, field-based Cues and Action Cues, which are illustrated in the following diagram:
 *I would be careful on choosing screenshots as we haven't fully completed the changes. Where is this taken from?*
 
-![Cues on the Role Center](media/Cue-overview-online.png "Cues on the Role Center") 
+![Cues on the Role Center.](media/Cue-overview-online.png "Cues on the Role Center") 
 
 ### Field-based Cues
 Field-based Cues display data that is contained in a table field. This can be raw data or caluclated data. There are two layout options for field-based Cues: *normal* and *wide*.
@@ -93,7 +93,7 @@ Cues are arranged into one or more groups on the page. Each group will have its 
 
    The following figure illustrates the Page Designer for a page that contains three field-based Cues.  
   
-    ![Page Designer showing Cues](media/O365-activities-cues-clip.png "Page Designer showing Cues")  
+    ![Page Designer showing Cues.](media/O365-activities-cues-clip.png "Page Designer showing Cues")  
 
 4. If you want to set the CueGroup to use the wide layout, set the [Layout property](layout-property.md) to **Wide**.
 
@@ -127,7 +127,7 @@ Similar to field-based Cues, Action Cues can be grouped together, under a common
 
     The following figure illustrates the Page Designer for a page that contains three field-based and two Action Cues at the bottom.  
   
-    ![Page Designer showing Cues](media/O365-activities-cues-with-actions-clip.png "Page Designer showing Cues")  
+    ![Page Designer showing Cues.](media/O365-activities-cues-with-actions-clip.png "Page Designer showing Cues")  
 
 6. Configure the control to the desired operation.
 

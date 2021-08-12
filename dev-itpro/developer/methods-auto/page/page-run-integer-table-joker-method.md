@@ -1,9 +1,9 @@
 ---
-title: "Page.Run Method"
-description: "Creates and launches a page that you specify. You can use CLEAR method to remove the page."
+title: "Page.Run(Integer [, Record] [, Any]) Method"
+description: "Creates and launches a page that you specify."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Page.Run Method
+# Page.Run(Integer [, Record] [, Any]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Creates and launches a page that you specify. You can use CLEAR method to remove the page.
 
 
 ## Syntax
-```
+```AL
  Page.Run(Number: Integer [, Record: Record] [, Field: Any])
 ```
 ## Parameters

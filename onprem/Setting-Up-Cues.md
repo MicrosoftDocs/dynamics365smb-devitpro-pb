@@ -15,7 +15,7 @@ A Cue is a tile on a page in the [!INCLUDE[navnow](includes/navnow_md.md)] clien
   
  The following figure illustrates a couple of the Cues that are available on Order Processor Role Center in the [!INCLUDE[demolong](includes/demolong_md.md)].  
   
- ![Cues on the Order Processor Role Center](media/NAV_Cues_OrderProcessor.png "NAV\_Cues\_OrderProcessor")  
+ ![Cues on the Order Processor Role Center.](media/NAV_Cues_OrderProcessor.png "NAV\_Cues\_OrderProcessor")  
   
 ## In This Section  
  Use the following table to help you start creating and modifying Cues.  

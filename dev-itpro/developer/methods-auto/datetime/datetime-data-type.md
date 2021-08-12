@@ -1,9 +1,9 @@
 ---
 title: "DateTime Data Type"
-description: "Denotes a date and time ranging from January 1, 1753, 00:00:00.000 to December 31, 9999, 23:59:59.999. An undefined or blank DateTime is specified by 0DT."
+description: "Denotes a date and time ranging from January 1, 1753, 00:00:00.000 to December 31, 9999, 23:59:59.999."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 07/13/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -34,7 +34,7 @@ The DateTime is always displayed as local time in [!INCLUDE[d365fin_long_md](../
   
 The DateTime data type does not support closing dates.  
   
-By default, DateTimes are displayed using the standard display format. When you use the standard display format, seconds and milliseconds are not displayed until you select the DateTime field. Furthermore, if you export your data using an XMLport or by writing it to a file, the seconds and milliseconds are not exported unless you specify that DateTime fields use another format and display this information. For more information about how DateTime objects are displayed and the formats that are available, see [Format Property](../../properties/devenv-format-property.md).  
+By default, DateTimes are displayed using the standard display format. When you use the standard display format, seconds and milliseconds are not displayed until you select the DateTime field. Furthermore, if you export your data using an XMLport or by writing it to a file, the seconds and milliseconds are not exported unless you specify that DateTime fields use another format and display this information. For more information about how DateTime objects are displayed and the formats that are available, see [Formatting Values, Dates, and Time](../../devenv-format-property.md).  
   
 The only constant available when you use the DateTime data type is the undefined DateTime, 0DT. To assign a constant value to a DateTime variable you must use the [CreateDateTime method](../system/system-createdatetime-method.md).  
   
@@ -55,4 +55,4 @@ In SQL Server, the earliest permitted DateTime is January 1, 1753, 00:00:00.000.
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [CurrentDateTime Method](../system/system-currentdatetime-method.md)  
-[Format Property](../../properties/devenv-format-property.md)
+[Formatting Values, Dates, and Time](../../devenv-format-property.md)

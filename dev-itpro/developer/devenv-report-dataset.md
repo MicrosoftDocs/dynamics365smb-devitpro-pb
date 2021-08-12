@@ -56,6 +56,8 @@ dataset
 }
 ```
 
+[!INCLUDE [send-report-excel](includes/send-report-excel.md)]
+
 ## See Also
 
 [Report Object](devenv-report-object.md)  

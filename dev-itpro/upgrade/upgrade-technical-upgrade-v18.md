@@ -19,7 +19,7 @@ Use this process to upgrade any of the following versions to the [!INCLUDE[prod_
 - [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 1 (version 16)
 - [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2019 release wave 2 (version 15)
 
- ![Upgrade on customized Business Central application](../developer/media/18-technical-upgrade.png "Upgrade on customize Business Central application")   
+ ![Upgrade on customized Business Central application.](../developer/media/18-technical-upgrade.png "Upgrade on customize Business Central application")   
 
 #### Single-tenant and multitenant deployments
 
@@ -46,7 +46,7 @@ The process for upgrading is similar for a single-tenant and multitenant deploym
 
 Version 18 introduces the capability to define permissions sets as AL objects, instead of as data. Permissions sets as AL objects is now the default and recommended model for defining permissions. However for now, you can choose to use the legacy model, where permissions are defined and stored as data in the database. Whichever model you choose, there are permission set-related tasks you'll have to go through before and during upgrade.
 
-For more information, see [Upgrading Permissions Sets and Permissions](upgrade-permissions.md)<!--[Permissions Upgrade Considerations](https://review.docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-entitlements-and-permissionsets-overview?branch=permissionset#upgrade-considerations)-->.
+For more information, see [Upgrading Permissions Sets and Permissions](upgrade-permissions.md)<!--[Permissions Upgrade Considerations](https://review.docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-entitlements-and-permissionsets-overview?branch=permissionset#upgrade-considerations)-->.
 
 <!-- ## Prereuisites 
 1. Your current platform version is compatible with version 18.
@@ -232,7 +232,7 @@ Compile all published extensions against the new platform.
 1. To compile an extension, use the [Repair-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/repair-navapp) cmdlet, For example:
 
     ```powershell  
-    Repair-NAVApp -ServerInstance <server instance> -Name <extension name> -Version <extension name>
+    Repair-NAVApp -ServerInstance <server instance> -Name <extension name> -Version <extension version>
     ```
 
     To compile all published extensions at once, you can use this command:

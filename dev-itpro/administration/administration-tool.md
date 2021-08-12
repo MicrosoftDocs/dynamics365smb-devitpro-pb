@@ -39,7 +39,7 @@ mmc
 
 -   The left pane shows a tree view that lists all [!INCLUDE[server](../developer/includes/server.md)] computers that you are administering from this computer and all [!INCLUDE[server](../developer/includes/server.md)] instances on those computers.  
 
-     ![Console root with two server instances](../media/ConsoleRootExp.png "ConsoleRootExp")  
+     ![Console root with two server instances.](../media/ConsoleRootExp.png "ConsoleRootExp")  
   
 -   The **center pane** shows information about the item that you have selected in the left pane. When the selected item is a computer running [!INCLUDE[server](../developer/includes/server.md)], the center pane shows a list of [!INCLUDE[server](../developer/includes/server.md)] instances on that computer and the status of each instance \(running or stopped\), and the name of the account the instance is running under.  
   

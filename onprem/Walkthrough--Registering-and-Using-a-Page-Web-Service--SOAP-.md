@@ -37,7 +37,7 @@ This walkthrough focuses on publishing a [!INCLUDE[prodshort](../developer/inclu
 
 1.  Open the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)], and then connect to the [!INCLUDE[demoname](../developer/includes/demoname_md.md)] company.  
   
-2.  Choose the ![Search for Page or Report](../media/search_small.png "Search for Page or Report icon") icon, enter **Web Services**, and then choose the related link.  
+2.  Choose the ![Search for Page or Report.](../media/search_small.png "Search for Page or Report icon") icon, enter **Web Services**, and then choose the related link.  
 
 3.  In the **Web Services** page, choose **New**.  
 

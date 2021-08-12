@@ -25,7 +25,7 @@ If your organization uses Exchange Server or Exchange Online (alone or part of O
 
 	When a business document is sent as an email, this add-in provides a direct link from email to the actual business document in [!INCLUDE[navnow](includes/navnow_md.md)]. The add-in adds a **Document Links** action in the email header, which a user can select to display the document.  
 
-![Office Add-ins for Outlook](media/OutlookAddinsCallouts.png "Office Add-ins for Outlook")
+![Office Add-ins for Outlook.](media/OutlookAddinsCallouts.png "Office Add-ins for Outlook")
  
  Setting up the Office add-in involves two procedures. First, you configure the [!INCLUDE[nav_server_md](includes/nav_server_md.md)] instance to work with the add-ins. Then, you deploy the add-ins from the [!INCLUDE[navnow](includes/navnow_md.md)] client to users' Outlook. Before you begin, make sure that the deployment environment meets the prerequisites.
  

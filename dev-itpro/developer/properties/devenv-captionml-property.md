@@ -1,8 +1,9 @@
 ---
 title: "CaptionML Property"
+description: "Sets the text string that displays with the object, control, or other element in user interface for the current language."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

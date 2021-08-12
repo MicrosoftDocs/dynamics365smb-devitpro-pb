@@ -22,7 +22,7 @@ A project reference in an AL-based workspace is defined as a dependency in the `
 
 In the example below, the project called **Leaf** defines two dependencies to the projects **Middle** and **Root**. Since both **Root** and **Middle** are projects in the workspace they are considered project references.
 
-![Workspace Dependencies](media/projectreference.png)
+![Workspace Dependencies.](media/projectreference.png)
 
 The advantage of working with project references is that there is no need to download the symbols for a project reference. They are there as the symbols for the reference project and will be resolved as they are modified. For example, if you add a new method to a codeunit in the **Root** project and reference the codeunit in the **Leaf** project, the method will automatically resolve as you touch the **Leaf** project.
 
@@ -40,7 +40,7 @@ A project is considered changed if any of its application objects have changed i
 
 For example, in a workspace with three projects; **Leaf**, **Middle**, and **Base**. **Leaf** depends on **Middle** and **Base**, and **Middle** depends on **Base** as illustrated below:
 
-![flow1](media/flow1.png "Dependency flow between projects")
+![flow1.](media/flow1.png "Dependency flow between projects")
 
 Assuming that: 
 1. All three projects; **Leaf**, **Base**, and **Middle** have changed. 
@@ -57,7 +57,7 @@ Although server publishing is an internal step, it does have an impact on the de
 
 For example, in a workspace with two projects; **Leaf** depends on **Base**, and **External** and **Indirect** are projects outside of the workspace as illustrated below:
 
-![flow2](media/flow2.png "Dependency flow with two external projects")
+![flow2.](media/flow2.png "Dependency flow with two external projects")
 
 Assuming that:
 1. A workspace exists with **Leaf** and **Base** as workspace projects.

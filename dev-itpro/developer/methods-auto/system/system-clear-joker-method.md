@@ -1,9 +1,9 @@
 ---
-title: "System.Clear Method"
-description: "Clears the value of a single variable. Also, it clears all the filters that were set if the variable is a record and resets the key to the primary key and the company on a record variable."
+title: "System.Clear(var Any) Method"
+description: "Clears the value of a single variable."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 07/13/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# System.Clear Method
+# System.Clear(var Any) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Clears the value of a single variable. Also, it clears all the filters that were set if the variable is a record and resets the key to the primary key and the company on a record variable.
 
 
 ## Syntax
-```
+```AL
  System.Clear(var Variable: Any)
 ```
 > [!NOTE]
