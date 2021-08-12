@@ -59,6 +59,6 @@ Specifies the recordID of the record that you want to run the task on.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
-[TaskScheduler Data Type](taskscheduler-data-type.md)
-[Getting Started with AL](../../devenv-get-started.md)
+[TaskScheduler Data Type](taskscheduler-data-type.md)  
+[Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
