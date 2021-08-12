@@ -24,7 +24,13 @@ When you open the profile file, it looks similar to the illustration below:
 
 ![Graph of method calls](../media/profiler-graph.png)
 
-To investigate the data shown in the graph, you can use different view modes as described in the following.
+To investigate the data shown in the graph, you can use different view modes as described in the following. The color legend of the graph is:
+
+|Color|Layer|
+|-----|-----|
+|Teal |System|
+|Purple| Base|
+|Yellow| Other|
 
 ### View modes
 
@@ -33,6 +39,9 @@ To switch between views, use the small button in the upper right corner. There a
 ### Details
 
 To investigate further, the **Self-time** and **Total time** columns are important indicators of where time is spent in the code. The **Self-time** is the amount of time spent in the method only, excluding any calls out of the method. The **Total time** is the amount of **Self-time** plus any calls out of the method. 
+
+**Hit count** shows the number of times a specific method was called. Time spent is aggregated.
+
 
 ## AL configuration 
 
