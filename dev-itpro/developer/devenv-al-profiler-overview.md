@@ -14,7 +14,9 @@ ms.author: solsen
 
 With the AL Profiler for [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] you can capture a performance profile of the executed code for a snapshot. Using the performance profiling editor view in Visual Studio Code, you can investigate the time spent on execution, either using top-down and bottom-up call stack views, or flame graphs.
 
-The AL profiler works on a snapshot of running code. For more information, see [Snapshot Debugging](devenv-snapshot-debugging.md).
+The AL profiler works on a snapshot of running code. For more information, see [Snapshot Debugging](devenv-snapshot-debugging.md). This means that in order to do profiling on code, you must capture a snapshot of running code first, and then you can generate a profile file, based on the snapshot.
+
+**AL: Generate profile file**
 
 ## AL configuration 
 
@@ -36,3 +38,4 @@ When sorting the stack top down, the graph is sorted according to call sequence,
 ## See Also
 
 [Snapshot Debugging](devenv-snapshot-debugging.md)  
+[AL Language Extension Configuration](devenv-al-extension-configuration.md)
