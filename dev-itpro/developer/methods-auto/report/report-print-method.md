@@ -1,9 +1,9 @@
 ---
-title: "Report.Print Method"
-description: "Prints a specified report without running the request page. Instead of using the request page to obtain parameters at runtime, the method gets the parameter values as an input parameter string, typically from a RUNREQUESTPAGE method call."
+title: "Report.Print(Integer, String [, String] [, RecordRef]) Method"
+description: "Prints a specified report without running the request page."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Report.Print Method
+# Report.Print(Integer, String [, String] [, RecordRef]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Prints a specified report without running the request page. Instead of using the request page to obtain parameters at runtime, the method gets the parameter values as an input parameter string, typically from a RUNREQUESTPAGE method call.
 
 
 ## Syntax
-```
+```AL
  Report.Print(Number: Integer, Parameters: String [, PrinterName: String] [, RecordRef: RecordRef])
 ```
 ## Parameters

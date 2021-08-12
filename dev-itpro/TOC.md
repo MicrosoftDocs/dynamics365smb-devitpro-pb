@@ -2678,7 +2678,7 @@
 ### [Granting Permissions to Manage Databases](security/Setting-Database-Owner-and-Security-Administration-Permissions.md)-->
 ## Privacy
 ### [Privacy FAQ](security/PrivacyFAQ.md)
-### [Privacy (microsoft.com)](https://www.microsoft.com/en-us/trust-center/privacy)
+### [Privacy (microsoft.com)](https://www.microsoft.com/trust-center/privacy)
 ## Compliance
 ### [Compliance Overview](/dynamics365/business-central/compliance/compliance-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
 <!-- end security -->

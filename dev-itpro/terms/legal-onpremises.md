@@ -16,7 +16,7 @@ This page provides links to legal information for Business Central On-Premises.
 
 ## Software License Terms
 
-- [Dynamics 365 Business Central on-premises- \<language\>.pdf](https://www.microsoft.com/en-us/download/details.aspx?id=57274)
+- [Dynamics 365 Business Central on-premises- \<language\>.pdf](https://www.microsoft.com/download/details.aspx?id=57274)
 
 ## Third-Party Notices
 
@@ -24,15 +24,15 @@ This page provides links to legal information for Business Central On-Premises.
 
 ## AL Language
 
-- [AL Language - Terms of Use.pdf](https://www.microsoft.com/en-us/download/details.aspx?id=57274)
+- [AL Language - Terms of Use.pdf](https://www.microsoft.com/download/details.aspx?id=57274)
 
 ## Envestnet Yodlee - Bank Feeds
 
-- [Envestnet Yodlee - Bank Feeds Terms and Conditions.pdf](https://www.microsoft.com/en-us/download/details.aspx?id=57274)
+- [Envestnet Yodlee - Bank Feeds Terms and Conditions.pdf](https://www.microsoft.com/download/details.aspx?id=57274)
 
 ## GetAddressIO
 
-- [GetAddressIO-MBS - External Components License Agreement Summary.pdf](https://www.microsoft.com/en-us/download/details.aspx?id=57274)
+- [GetAddressIO-MBS - External Components License Agreement Summary.pdf](https://www.microsoft.com/download/details.aspx?id=57274)
 
 <!--## Teams integration-->
 

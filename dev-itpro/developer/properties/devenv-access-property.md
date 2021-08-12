@@ -1,8 +1,9 @@
 ---
 title: "Access Property"
+description: "Sets the object accessibility level, which controls whether the object can be used from other code in your module or other modules."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

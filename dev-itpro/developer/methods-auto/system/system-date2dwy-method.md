@@ -1,9 +1,9 @@
 ---
-title: "System.Date2DWY Method"
+title: "System.Date2DWY(Date, Integer) Method"
 description: "Gets the day of the week, week number, or year of a Date Data Type."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# System.Date2DWY Method
+# System.Date2DWY(Date, Integer) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Gets the day of the week, week number, or year of a Date Data Type.
 
 
 ## Syntax
-```
+```AL
 Number :=   System.Date2DWY(Date: Date, Value: Integer)
 ```
 > [!NOTE]

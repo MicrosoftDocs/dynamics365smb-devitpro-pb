@@ -16,7 +16,7 @@ This page provides links to legal information for Business Central.
 
 ## Microsoft Online Service Terms (OST)
 
-- [Online Service Terms(OST)](https://www.microsoft.com/en-us/licensing/product-licensing/products)
+- [Online Service Terms(OST)](https://www.microsoft.com/licensing/product-licensing/products)
 
 ## Microsoft AL Language
 

@@ -1,9 +1,9 @@
 ---
 title: "InternalEvent Attribute"
-description: "Specifies that the method is published as an internal event. It can only be subscribed to from within the same module."
+description: "Specifies that the method is published as an internal event."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/16/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,7 +28,7 @@ Specifies that the method is published as an internal event. It can only be subs
 
 ## Syntax
 
-```
+```AL
 [InternalEvent(IncludeSender: Boolean)]
 ```
 

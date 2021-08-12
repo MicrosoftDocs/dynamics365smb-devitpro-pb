@@ -1,8 +1,9 @@
 ---
 title: "ObjectEntitlements Property"
+description: "Determines the object permissions that this entitlement object permits a user or application to use."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

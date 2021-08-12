@@ -3,7 +3,7 @@ title: "OnAfterGetRecord (Report Data Item) Trigger"
 description: "Runs each time a record is retrieved from the data item."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/27/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,7 +22,7 @@ Runs each time a record is retrieved from the data item.
 
 
 ## Syntax
-```
+```AL
 trigger OnAfterGetRecord()
 begin
     ...

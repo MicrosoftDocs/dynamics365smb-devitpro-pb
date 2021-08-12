@@ -29,8 +29,8 @@ The following cmdlets have been changed in the Microsoft.Dynamics.NAV.Management
 
 |Cmdlet|[!INCLUDE[bp_tabledescription](includes/bp_tabledescription_md.md)]|
 |------------|---------------------------------------|  
-|[New-NAVServerUser](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.management/New-NAVServerUser)|-Company and -Language parameters added.|
-|[Set-NAVServerUser](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.management/Set-NAVServerUser)|-Company and -Language parameters added.|
+|[New-NAVServerUser](/powershell/module/microsoft.dynamics.nav.management/New-NAVServerUser)|-Company and -Language parameters added.|
+|[Set-NAVServerUser](/powershell/module/microsoft.dynamics.nav.management/Set-NAVServerUser)|-Company and -Language parameters added.|
 
 <!-- A number of other new cmdlets are available in the [!INCLUDE[nav_shell](includes/nav_shell_md.md)] but are not yet listed here. For a full list, see [Administration Cmdlets for Microsoft Dynamics NAV Extensions](https://go.microsoft.com/fwlink/?LinkID=626874).  -->
 
@@ -41,7 +41,7 @@ The following cmdlet are new in the Microsoft.Dynamics.NAV.Apps.Management modul
 |------------|---------------------------------------|  
 |||
 
-<!--|[Get-NAVTableSynchSetupForDataUpgrade](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.apps.management/Get-NAVTableSynchSetupForDataUpgrade)|Gets information about the tables that will be modified, added, or removed during a tenant data upgrade on the specified  [!INCLUDE[nav_server_md](includes/nav_server_md.md)] instance.|-->
+<!--|[Get-NAVTableSynchSetupForDataUpgrade](/powershell/module/microsoft.dynamics.nav.apps.management/Get-NAVTableSynchSetupForDataUpgrade)|Gets information about the tables that will be modified, added, or removed during a tenant data upgrade on the specified  [!INCLUDE[nav_server_md](includes/nav_server_md.md)] instance.|-->
 
 The following cmdlets have been changed in the Microsoft.Dynamics.NAV.Apps.Management module.
 
@@ -64,12 +64,12 @@ The following cmdlets have been changed in the Microsoft.Dynamics.NAV.Model.Tool
 The following cmdlets have been changed in the Microsoft.Dynamics.NAV.Apps.Tools module.
 |Cmdlet|[!INCLUDE[bp_tabledescription](includes/bp_tabledescription_md.md)]|
 |------------|---------------------------------------|  
-|[Export-NAVAppTenantWebService](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.apps.tools/Export-NAVAppTenantWebService)|-ServiceName parameter has been added.|
+|[Export-NAVAppTenantWebService](/powershell/module/microsoft.dynamics.nav.apps.tools/Export-NAVAppTenantWebService)|-ServiceName parameter has been added.|
 -->
 
 ## See Also  
-[Administration Cmdlets for Microsoft Dynamics NAV](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.management/Microsoft.Dynamics.NAV.Management.md)  
-[Development Cmdlets for Microsoft Dynamics NAV](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.model.tools/Microsoft.Dynamics.NAV.Model.Tools.md)  
-[Administration Cmdlets for Microsoft Dynamics NAV Extensions](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.apps.management/Microsoft.Dynamics.NAV.Apps.Management.md)  
-[Development Cmdlets for Microsoft Dynamics NAV Extensions](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.apps.tools/Microsoft.Dynamics.NAV.Apps.Tools.md)  
+[Administration Cmdlets for Microsoft Dynamics NAV](/powershell/module/microsoft.dynamics.nav.management/Microsoft.Dynamics.NAV.Management.md)  
+[Development Cmdlets for Microsoft Dynamics NAV](/powershell/module/microsoft.dynamics.nav.model.tools/Microsoft.Dynamics.NAV.Model.Tools.md)  
+[Administration Cmdlets for Microsoft Dynamics NAV Extensions](/powershell/module/microsoft.dynamics.nav.apps.management/Microsoft.Dynamics.NAV.Apps.Management.md)  
+[Development Cmdlets for Microsoft Dynamics NAV Extensions](/powershell/module/microsoft.dynamics.nav.apps.tools/Microsoft.Dynamics.NAV.Apps.Tools.md)  
 [Microsoft Dynamics NAV Windows PowerShell Cmdlets](Microsoft-Dynamics-NAV-Windows-PowerShell-Cmdlets.md)

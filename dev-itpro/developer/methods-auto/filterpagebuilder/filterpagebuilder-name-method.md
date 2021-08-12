@@ -1,9 +1,9 @@
 ---
-title: "FilterPageBuilder.Name Method"
+title: "FilterPageBuilder.Name(Integer) Method"
 description: "Gets the name of a table filter control that is included on a filter page based on an index number that is assigned to the filter control."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# FilterPageBuilder.Name Method
+# FilterPageBuilder.Name(Integer) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Gets the name of a table filter control that is included on a filter page based on an index number that is assigned to the filter control.
 
 
 ## Syntax
-```
+```AL
 Name :=   FilterPageBuilder.Name(Index: Integer)
 ```
 ## Parameters

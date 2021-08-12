@@ -1,9 +1,9 @@
 ---
-title: "System.IsNull Method"
+title: "System.IsNull(DotNet) Method"
 description: "Gets a value indicating whether a DotNet object has been created or not."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# System.IsNull Method
+# System.IsNull(DotNet) Method
 > **Version**: _Available or changed with runtime version 2.0._
 
 Gets a value indicating whether a DotNet object has been created or not.
@@ -23,7 +23,7 @@ Gets a value indicating whether a DotNet object has been created or not.
 > This method is supported only in Business Central on-premises.
 
 ## Syntax
-```
+```AL
 Ok :=   System.IsNull(DotNet: DotNet)
 ```
 > [!NOTE]

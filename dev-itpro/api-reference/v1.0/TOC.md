@@ -3,7 +3,7 @@
 ## [Moving from Beta to V1.0](moving-from-beta-to-v1.md)
 ## [Enabling the APIs for Dynamics 365 Business Central](enabling-apis-for-dynamics-nav.md)
 ## [Endpoints for the APIs](endpoints-apis-for-dynamics.md)
-## [Working with Webhooks](dynamics-subscriptions.md)
+## [Working with Webhooks](dynamics_subscriptions.md)
 ## [Operational Limits for Business Central Online](/dynamics365/business-central/dev-itpro/administration/operational-limits-online)
 ## [Working With API Rate Limits](dynamics-rate-limits.md)
 ## [OpenAPI Specification](dynamics-open-api.md)

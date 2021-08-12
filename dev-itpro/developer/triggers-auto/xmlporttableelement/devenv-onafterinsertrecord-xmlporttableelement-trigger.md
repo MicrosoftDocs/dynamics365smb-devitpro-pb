@@ -3,7 +3,7 @@ title: "OnAfterInsertRecord (Xml Port Table Element) Trigger"
 description: "Runs after a record has been inserted into a database table"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/27/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,7 +22,7 @@ Runs after a record has been inserted into a database table
 
 
 ## Syntax
-```
+```AL
 trigger OnAfterInsertRecord()
 begin
     ...

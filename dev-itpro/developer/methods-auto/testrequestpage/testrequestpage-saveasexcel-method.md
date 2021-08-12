@@ -1,9 +1,9 @@
 ---
-title: "TestRequestPage.SaveAsExcel Method"
+title: "TestRequestPage.SaveAsExcel(String) Method"
 description: "Saves a report as a Microsoft Excel (.xls) file."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 07/13/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# TestRequestPage.SaveAsExcel Method
+# TestRequestPage.SaveAsExcel(String) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Saves a report as a Microsoft Excel (.xls) file.
@@ -23,7 +23,7 @@ Saves a report as a Microsoft Excel (.xls) file.
 > This method is supported only in Business Central on-premises.
 
 ## Syntax
-```
+```AL
  TestRequestPage.SaveAsExcel(FileName: String)
 ```
 ## Parameters

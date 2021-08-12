@@ -1,8 +1,9 @@
 ---
 title: "ShortcutKey Property"
+description: "Sets a shortcut key for selecting a menu item."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

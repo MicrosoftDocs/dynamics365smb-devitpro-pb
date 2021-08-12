@@ -1,9 +1,9 @@
 ---
-title: "Record.AreFieldsLoaded Method"
+title: "Record.AreFieldsLoaded(Any,...) Method"
 description: "Checks whether the specified fields are all initially loaded."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Record.AreFieldsLoaded Method
+# Record.AreFieldsLoaded(Any,...) Method
 > **Version**: _Available or changed with runtime version 6.0._
 
 Checks whether the specified fields are all initially loaded.
 
 
 ## Syntax
-```
+```AL
 Ok :=   Record.AreFieldsLoaded(Fields: Any,...)
 ```
 ## Parameters

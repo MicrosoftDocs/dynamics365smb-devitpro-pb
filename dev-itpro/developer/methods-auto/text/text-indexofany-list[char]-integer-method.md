@@ -1,9 +1,9 @@
 ---
-title: "Text.IndexOfAny Method"
-description: "Reports the one-based index of the first occurrence in this instance of any character in a specified array of Unicode characters. The search starts at a specified character position."
+title: "Text.IndexOfAny(List of [Char] [, Integer]) Method"
+description: "Reports the one-based index of the first occurrence in this instance of any character in a specified array of Unicode characters."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Text.IndexOfAny Method
+# Text.IndexOfAny(List of [Char] [, Integer]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Reports the one-based index of the first occurrence in this instance of any character in a specified array of Unicode characters. The search starts at a specified character position.
 
 
 ## Syntax
-```
+```AL
 Index :=   Text.IndexOfAny(Values: List of [Char] [, StartIndex: Integer])
 ```
 > [!NOTE]

@@ -1,9 +1,9 @@
 ---
-title: "Media.ImportStream Method"
-description: "Adds a media type (MIME), such as jpeg image, from an InStream object to a Media data type field of a record for displaying the media in the client. The media file is imported to the application database and a reference to the media is included in the Media data type field."
+title: "Media.ImportStream(InStream, Text, Text, Text) Method"
+description: "Adds a media type (MIME), such as jpeg image, from an InStream object to a Media data type field of a record for displaying the media in the client."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Media.ImportStream Method
+# Media.ImportStream(InStream, Text, Text, Text) Method
 > **Version**: _Available or changed with runtime version 3.0._
 
 Adds a media type (MIME), such as jpeg image, from an InStream object to a Media data type field of a record for displaying the media in the client. The media file is imported to the application database and a reference to the media is included in the Media data type field.
@@ -23,7 +23,7 @@ Adds a media type (MIME), such as jpeg image, from an InStream object to a Media
 > This method is supported only in Business Central on-premises.
 
 ## Syntax
-```
+```AL
 [ID := ]  Media.ImportStream(Stream: InStream, Description: Text, MimeType: Text, FileName: Text)
 ```
 ## Parameters

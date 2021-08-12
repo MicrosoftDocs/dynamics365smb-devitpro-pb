@@ -28,16 +28,16 @@ To complete the tasks in this article, you will need the following:
     -   [!INCLUDE[nav_admin_md](includes/nav_admin_md.md)]
 -    Microsoft SQL Server Management Studio installed.
 
-     You must use SQL Server Management Studio 2012 Service Pack 1 or later. To download the latest version, see [Download SQL Server Management Studio](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms).
+     You must use SQL Server Management Studio 2012 Service Pack 1 or later. To download the latest version, see [Download SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms).
 
 -   A Microsoft Dynamics Lifecycle Services (LCS) subscription.  
 
-    You will use LCS to upload your solution for deployment. To get a subscription, follow the step in [Sign up for a preview subscription](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/dev-tools/sign-up-preview-subscription).
+    You will use LCS to upload your solution for deployment. To get a subscription, follow the step in [Sign up for a preview subscription](/dynamics365/unified-operations/dev-itpro/dev-tools/sign-up-preview-subscription).
 
 ## Upgrade your application
 1. Complete a technical upgrade of your current application to the [!INCLUDE[d365_bus_ctr_long_md](includes/d365_bus_ctr_long_md.md)] version.
 
-    This will convert your application database so that is runs on the new [!INCLUDE[d365_bus_ctr_long_md](includes/d365_bus_ctr_long_md.md)] platform. For more information, see [Converting a Database - Technical Upgrade](https://docs.microsoft.com/dynamics-nav/converting-a-database).
+    This will convert your application database so that is runs on the new [!INCLUDE[d365_bus_ctr_long_md](includes/d365_bus_ctr_long_md.md)] platform. For more information, see [Converting a Database - Technical Upgrade](/dynamics-nav/converting-a-database).
 
     > [!IMPORTANT]  
     >  Be sure to upload your [!INCLUDE[d365_bus_ctr_long_md](includes/d365_bus_ctr_long_md.md)] to converted database.
@@ -48,7 +48,7 @@ To complete the tasks in this article, you will need the following:
 
     You only have to complete this step if you want any new application features that are part of the latest [!INCLUDE[d365_bus_ctr_long_md](includes/d365_bus_ctr_long_md.md)] version.
     
-    For more information, see [Upgrading the Application Code in Dynamics NAV](https://docs.microsoft.com/dynamics-nav/upgrading-the-application-code).
+    For more information, see [Upgrading the Application Code in Dynamics NAV](/dynamics-nav/upgrading-the-application-code).
 
 3. Complete the following steps as needed:
     

@@ -3,7 +3,7 @@ title: "OnLookup (Page Field) Trigger"
 description: "Runs in place of the normal lookup features for the current page."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/27/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,7 +22,7 @@ Runs in place of the normal lookup features for the current page.
 
 
 ## Syntax
-```
+```AL
 trigger OnLookup(Text: Text): Ok
 begin
     ...
@@ -38,9 +38,9 @@ Text string entered into the text box and used as the lookup value.
 
 ## Return Value
 
-*Ok*
+*Ok*  
 &emsp;Type: [Boolean](../../methods-auto/boolean/boolean-data-type.md)  
-**true** if the lookup was carried out,otherwise, **false**.
+**true** if the lookup was carried out,otherwise, **false**.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

@@ -1,9 +1,9 @@
 ---
-title: "Query.SaveAsCsv Method"
+title: "Query.SaveAsCsv(Integer, OutStream [, Integer] [, String]) Method"
 description: "Saves the resulting data set of a query as a comma separated values (CSV) file."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Query.SaveAsCsv Method
+# Query.SaveAsCsv(Integer, OutStream [, Integer] [, String]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Saves the resulting data set of a query as a comma separated values (CSV) file.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  Query.SaveAsCsv(Number: Integer, OutStream: OutStream [, Format: Integer] [, FormatArgument: String])
 ```
 ## Parameters

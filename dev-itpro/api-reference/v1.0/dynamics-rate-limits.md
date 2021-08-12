@@ -31,7 +31,7 @@ Handling `504 - Gateway Timeout` requires the client to refactor long running re
 
 There are several areas to consider, which can reduce the amount of calls from a client or integration and some also increase the throughput and reduce execution time: 
 
-1. Use [webhooks](dynamics-subscriptions.md) to receive changes when they occur. When an entity is added, modified, or deleted, a notification is sent/pushed to subscribing clients. 
+1. Use [webhooks](dynamics_subscriptions.md) to receive changes when they occur. When an entity is added, modified, or deleted, a notification is sent/pushed to subscribing clients. 
 
 2. Polling interval might be reducible. Webhooks should be considered, thereby moving from a pull to a push model. If polling is the preferred method, ensure to apply other principles listed here.
 

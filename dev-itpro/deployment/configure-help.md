@@ -12,7 +12,7 @@ ms.author: edupont
 
 # Configuring the Help Experience for [!INCLUDE[prod_long](../developer/includes/prod_long.md)]
 
-The default version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] comes with conceptual overviews and other articles that publish to the [https://docs.microsoft.com/dynamics365/business-central/](/dynamics365/business-central/) site. This location is accessible from the Help menu and through the Learn More links in all tooltips. Each extension that you add will include its own tooltips and links to Help.
+The default version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] comes with conceptual overviews and other articles that publish to the [/dynamics365/business-central/](/dynamics365/business-central/) site. This location is accessible from the Help menu and through the Learn More links in all tooltips. Each extension that you add will include its own tooltips and links to Help.
 
 But what if you want to deploy [!INCLUDE[prod_short](../developer/includes/prod_short.md)] locally? Or if you have a vertical solution so that you want to refer your customers to your own website for Help? Or if you have a legacy Help collection based on the Dynamics NAV Help Server? These and other scenarios are also supported in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].  
 
@@ -33,7 +33,7 @@ For deploying [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-pre
 > The legacy Dynamics NAV Help Server component is deprecated in 2021 release wave 1 (version 18). We recommend that you invest in a different type of website. For more information, see the [deprecation notice](../upgrade/deprecated-features-w1.md#the-help-server-component) and the [Custom Help Toolkit](../help/custom-help-toolkit.md) section.
 
 > [!TIP]
-> The content on the [https://docs.microsoft.com/dynamics365/business-central/](/dynamics365/business-central/) site and in the various GitHub repos reflects the latest version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)], unless otherwise specified.
+> The content on the [/dynamics365/business-central/](/dynamics365/business-central/) site and in the various GitHub repos reflects the latest version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)], unless otherwise specified.
 >
 > We recommend that you get your version of Microsoft's content close to the time the subsequent major version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] becomes available. For example, if you are deploying version 16.4, you could have taken a snapshot of the content in GitHub before version 17.0 became available.
 
@@ -121,7 +121,7 @@ You can see an example of how to deploy content to an Azure web app in the artic
 If you deploy a solution that is based on Microsoft's default application, then you might want to include a customized version of Microsoft's business functionality content on your website. Microsoft's source files are available as downloadable packages for each major release in the [https://github.com/MicrosoftDocs/dynamics365smb-docs/](https://github.com/MicrosoftDocs/dynamics365smb-docs/releases) GitHub repo in English (US) only. For other languages, pull files based on a commit before the next major version.  
 
 > [!TIP]
-> The content on the [https://docs.microsoft.com/dynamics365/business-central/](https://docs.microsoft.com/dynamics365/business-central/) site and in the various GitHub repos reflects the latest version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)], unless otherwise specified.
+> The content on the [/dynamics365/business-central/](/dynamics365/business-central/) site and in the various GitHub repos reflects the latest version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)], unless otherwise specified.
 >
 > [!INCLUDE [ua-github-releases](../includes/ua-github-releases.md)]
 

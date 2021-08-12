@@ -3,7 +3,7 @@ title: "OnModify (Table Extension) Trigger"
 description: "Runs when a user modifies an existing record in a table."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/27/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,7 +22,7 @@ Runs when a user modifies an existing record in a table.
 
 
 ## Syntax
-```
+```AL
 trigger OnModify()
 begin
     ...

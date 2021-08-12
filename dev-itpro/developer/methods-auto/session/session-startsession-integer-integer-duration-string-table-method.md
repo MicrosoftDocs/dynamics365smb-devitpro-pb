@@ -1,5 +1,5 @@
 ---
-title: "Session.StartSession Method"
+title: "Session.StartSession(var Integer, Integer, Duration [, String] [, var Record]) Method"
 description: "Starts a session without a UI and runs the specified codeunit."
 ms.author: solsen
 ms.custom: na
@@ -14,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Session.StartSession Method
+# Session.StartSession(var Integer, Integer, Duration [, String] [, var Record]) Method
 > **Version**: _Available or changed with runtime version 7.1._
 
 Starts a session without a UI and runs the specified codeunit.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  Session.StartSession(var SessionId: Integer, CodeunitId: Integer, Timeout: Duration [, Company: String] [, var Record: Record])
 ```
 > [!NOTE]

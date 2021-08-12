@@ -17,7 +17,7 @@ Would you like to know what has changed in update 16.5? Below you'll find an ove
 
 ## Hotfixes
 
-Find an overview of hotfixes in this [article](https://support.microsoft.com/en-us/help/4576664).
+Find an overview of hotfixes in this [article](https://support.microsoft.com/help/4576664).
 
 ## Feature changes
 

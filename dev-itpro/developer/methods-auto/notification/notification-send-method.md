@@ -1,9 +1,9 @@
 ---
-title: "Notification.Send Method"
+title: "Notification.Send() Method"
 description: "Sends the notification to the client, where it will display in the UI."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Notification.Send Method
+# Notification.Send() Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Sends the notification to the client, where it will display in the UI.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  Notification.Send()
 ```
 
