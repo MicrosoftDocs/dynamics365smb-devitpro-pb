@@ -18,21 +18,27 @@ The AL profiler works on a snapshot of running code. For more information, see [
 
 When you open the profile file, it displays in the performance profiling editor view in Visual Studio Code. A profile file for AL code has the extension `.alcpuprofile`.
 
+## Graph of method calls
+
+When you open the profile file, it looks similar to the illustration below:
+
+![Graph of method calls](../media/profiler-graph.png)
+
+To investigate the data shown in the graph, you can use different view modes as described in the following.
+
+### View modes
+
+To switch between views, use the small button in the upper right corner. There are two different view modes; top-down and bottom-up. When sorting the stack top-down, the graph sorts the methods according to call sequence, which means that the child nodes are the methods called from the parent node. And when sorting bottom-up, the graph is sorted as a reverse call stack, which means that the child nodes are methods who called the parent node.
+
+### Details
+
+To investigate further, the **Self-time** and **Total time** columns are important indicators of where time is spent in the code. The **Self-time** is the amount of time spent in the method only, excluding any calls out of the method. The **Total time** is the amount of **Self-time** plus any calls out of the method. 
 
 ## AL configuration 
 
 The option for adding a lower limit for time spent on statement execution is `al.statementLensMin`. To activate this setting, press **Ctrl+Shift+P**, and then choose **Preferences: Open Settings (UI)** for workspace settings, or choose **Preferences: Open User Settings** for user settings. <!-- Setting..., which will be shown when opening a code file through the AL profiler`al.statementLensMin` -->
 
-## Graph of method calls
 
-![Graph of method calls](../media/profiler-graph.png)
-
-### View modes
-
-To switch between top-down and bottom-up views, use the small button in the upper right corner. 
-When sorting the stack top down, the graph is sorted according to call sequence, which means that the child nodes are the methods called from the parent node. And when sorting bottom up, the graph is sorted as a reverse call-stack, which means that the child nodes are methods who called the parent node.
-
-### Details
 
 
 
