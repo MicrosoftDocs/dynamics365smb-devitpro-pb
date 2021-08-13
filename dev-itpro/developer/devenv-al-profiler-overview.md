@@ -34,7 +34,9 @@ To investigate the data shown in the graph, you can use different view modes as 
 
 ### View modes
 
-To switch between views, use the small button in the upper right corner. There are two different view modes; top-down and bottom-up. When sorting the stack top-down, the graph sorts the methods according to call sequence, which means that the child nodes are the methods called from the parent node. And when sorting bottom-up, the graph is sorted as a reverse call stack, which means that the child nodes are methods who called the parent node.
+To switch between views, use the small button in the upper right corner. There are two different view modes; top-down ![Top-down view in profiler](../media/top-down-profile-view.png) and bottom-up ![Bottom-down view in profiler](../media/bottom-down-profile-view.png).
+
+When sorting the stack top-down, the graph sorts the methods according to call sequence, which means that the child nodes are the methods called from the parent node. And when sorting bottom-up, the graph is sorted as a reverse call stack, which means that the child nodes are methods who called the parent node.
 
 ### Details
 
