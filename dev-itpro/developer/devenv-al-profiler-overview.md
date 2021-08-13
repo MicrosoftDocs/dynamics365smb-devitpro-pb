@@ -54,8 +54,11 @@ The aliases that are available for the column names are:
 
 `<alias> := [f, u, p, s, t, id, ot, on, da]`
 `<op> := [numeric operators, boolean operators, string operators]`
-`numeric operators : []`
-
+`numeric operators : [:, =, >, <, <=, >=, <>, !=]`
+`: := equal`
+`boolean operators : [:, =, <>, !=]`
+`string operators : [:, =, !=, <>, ~, =]`
+`~ = := <regex>`
 
 ## Inline CodeLens for AL profiling results
 
