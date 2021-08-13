@@ -48,7 +48,6 @@ To investigate further, the **Self-time** and **Total time** columns are importa
 
 The nodes in the graph can be filtered. The syntax is the following:
 
-
 `@column name | alias> <op> <value> where `<br> 
 `<column name> := [function, url, path, selfTime, totalTime, id, objectType, objectName, declaringApplication]`
 
@@ -66,7 +65,7 @@ The aliases that are available for the column names are:
 
 ## Inline CodeLens for AL profiling results
 
-The option for adding a lower limit for time spent on statement execution is `al.statementLensMin`. To activate this setting, press **Ctrl+Shift+P**, and then choose **Preferences: Open Settings (UI)** for workspace settings, or choose **Preferences: Open User Settings** for user settings. <!-- Setting..., which will be shown when opening a code file through the AL profiler`al.statementLensMin` -->
+CodeLens is available for showing profile results. At hover, the CodeLens displays time spent in milliseconds for the specific method, and number of hits. The option for adding a lower limit for time spent on statement execution is `al.statementLensMin`. To activate this setting, press **Ctrl+Shift+P**, and then choose **Preferences: Open Settings (UI)** for workspace settings, or choose **Preferences: Open User Settings** for user settings.
 
 ## See Also
 
