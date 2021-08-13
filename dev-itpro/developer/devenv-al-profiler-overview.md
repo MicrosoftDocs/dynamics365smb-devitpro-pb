@@ -14,9 +14,9 @@ ms.author: solsen
 
 With the AL Profiler for [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] you can capture a performance profile of the executed code for a snapshot. Using the performance profiling editor view in Visual Studio Code, you can investigate the time spent on execution, either using top-down and bottom-up call stack views, or flame graphs.
 
-The AL profiler works on a snapshot of running code. For more information, see [Snapshot Debugging](devenv-snapshot-debugging.md). This means that in order to do profiling on code, you must capture a snapshot of running code first, and then you can generate a profile file, based on the snapshot by using the **AL: Generate profile file** option.
+The AL profiler works on a snapshot of running code. For more information, see [Snapshot Debugging](devenv-snapshot-debugging.md). This means that in order to do profiling on code, you must capture a snapshot of running code first. Then, when the snapshot file is downloaded, you can generate a profile file, based on the snapshot by using the **AL: Generate profile file** option. 
 
-When you open the profile file, it displays in the performance profiling editor view in Visual Studio Code. A profile file for AL code has the extension `.alcpuprofile`.
+The profile file for AL code has the extension `.alcpuprofile` and When you open the file, it displays in the performance profiling editor view in Visual Studio Code.
 
 ## Graph of method calls
 
@@ -42,8 +42,22 @@ To investigate further, the **Self-time** and **Total time** columns are importa
 
 **Hit count** shows the number of times a specific method was called. Time spent is aggregated.
 
+### Filtering
 
-## AL configuration 
+The nodes in the graph can be filtered. The syntax is the following:
+
+```
+@<column name | alias> <op> <value> where <column name> := [function, url, path, selfTime, totalTime, id, objectType, objectName, declaringApplication]
+
+```
+The aliases that are available for the column names are:
+
+`<alias> := [f, u, p, s, t, id, ot, on, da]`
+`<op> := [numeric operators, boolean operators, string operators]`
+`numeric operators : []`
+
+
+## Inline CodeLens for AL profiling results
 
 The option for adding a lower limit for time spent on statement execution is `al.statementLensMin`. To activate this setting, press **Ctrl+Shift+P**, and then choose **Preferences: Open Settings (UI)** for workspace settings, or choose **Preferences: Open User Settings** for user settings. <!-- Setting..., which will be shown when opening a code file through the AL profiler`al.statementLensMin` -->
 
