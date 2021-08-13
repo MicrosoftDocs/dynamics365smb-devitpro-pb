@@ -53,6 +53,10 @@ For each environment, administrators can set a maintenance window for when Micro
 
 An exception to this type of schedule is the continuous updates to the underlying service. The service components apply to multiple environments, such as all tenants in a region. So Microsoft schedules those updates to a time when traffic is lower in each region, typically during the evening or night. Typically, these service updates are transparent to any users, as the service is designed to manage traffic in a way that any users still working in [!INCLUDE [prod_short](includes/prod_short.md)] are not affected by these service updates.  
 
+## Service operations
+
+[!INCLUDE[prod_short](includes/prod_short.md)]  runs globally in many Microsoft Azure datacenters. All parts of the infrastructure and services are continually monitored and optimized to deliver the best possible experience. Most service operations and optimizations happen without users being aware of them. In some situations, user interaction is needed, like reconnecting to [!INCLUDE[prod_short](includes/prod_short.md)] or refreshing the browser. Users will be notified directly in the browser if any action is required on their part. Service operations happen all day, every day, to always provide best experience.
+
 ## See also
 
 [FAQ for Dynamics 365 Business Central](faq.yml)  
