@@ -34,7 +34,7 @@ To investigate the data shown in the graph, you can use different view modes as 
 
 ### View modes
 
-To switch between views, use the small button in the upper right corner. There are two different view modes; top-down ![Top-down view in profiler](../media/top-down-profile-view.png) and bottom-up ![Bottom-down view in profiler](../media/bottom-down-profile-view.png).
+To switch between views, use the small button in the upper right corner. There are two different view modes top-down and bottom-up.
 
 When sorting the stack top-down, the graph sorts the methods according to call sequence, which means that the child nodes are the methods called from the parent node. And when sorting bottom-up, the graph is sorted as a reverse call stack, which means that the child nodes are methods who called the parent node.
 
@@ -48,18 +48,20 @@ To investigate further, the **Self-time** and **Total time** columns are importa
 
 The nodes in the graph can be filtered. The syntax is the following:
 
-```
-@<column name | alias> <op> <value> where <column name> := [function, url, path, selfTime, totalTime, id, objectType, objectName, declaringApplication]
 
-```
+`@column name | alias> <op> <value> where `<br> 
+`<column name> := [function, url, path, selfTime, totalTime, id, objectType, objectName, declaringApplication]`
+
+#### Column name aliases
+
 The aliases that are available for the column names are:
 
-`<alias> := [f, u, p, s, t, id, ot, on, da]`
-`<op> := [numeric operators, boolean operators, string operators]`
-`numeric operators : [:, =, >, <, <=, >=, <>, !=]`
-`: := equal`
-`boolean operators : [:, =, <>, !=]`
-`string operators : [:, =, !=, <>, ~, =]`
+`<alias> := [f, u, p, s, t, id, ot, on, da]`  
+`<op> := [numeric operators, boolean operators, string operators]`  
+`numeric operators : [:, =, >, <, <=, >=, <>, !=]`  
+`: := equal`  
+`boolean operators : [:, =, <>, !=]`  
+`string operators : [:, =, !=, <>, ~, =]`  
 `~ = := <regex>`
 
 ## Inline CodeLens for AL profiling results
