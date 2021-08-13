@@ -24,7 +24,7 @@ When you open the profile file, it looks similar to the illustration below:
 
 ![Graph of method calls](../media/profiler-graph.png)
 
-To investigate the data shown in the graph, you can use different view modes as described in the following. The color legend of the graph is:
+To investigate the data shown in the graph, you can use different view modes as described in the following. Choose a method to navigate to code. The color legend of the graph is:
 
 |Color|Layer|
 |-----|-----|
@@ -46,10 +46,6 @@ To investigate further, the **Self-time** and **Total time** columns are importa
 ## AL configuration 
 
 The option for adding a lower limit for time spent on statement execution is `al.statementLensMin`. To activate this setting, press **Ctrl+Shift+P**, and then choose **Preferences: Open Settings (UI)** for workspace settings, or choose **Preferences: Open User Settings** for user settings. <!-- Setting..., which will be shown when opening a code file through the AL profiler`al.statementLensMin` -->
-
-
-
-
 
 ## See Also
 
