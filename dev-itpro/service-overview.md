@@ -55,7 +55,7 @@ An exception to this type of schedule is the continuous updates to the underlyin
 
 ## Service operations
 
-[!INCLUDE[prod_short](includes/prod_short.md)]  runs globally in many Microsoft Azure datacenters. All parts of the infrastructure and services are continually monitored and optimized to deliver the best possible experience. Most service operations and optimizations happen without users being aware of them. In some situations, user interaction is needed, like reconnecting to [!INCLUDE[prod_short](includes/prod_short.md)] or refreshing the browser. Users will be notified directly in the browser if any action is required on their part. Service operations happen all day, every day, to always provide best experience.
+[!INCLUDE[prod_short](includes/prod_short.md)]  runs globally in many Microsoft Azure datacenters. All parts of the infrastructure and services are continually monitored and optimized to deliver the best possible experience. Most service operations and optimizations happen without users being aware of them. In some situations, user interaction is needed, like reconnecting to [!INCLUDE[prod_short](includes/prod_short.md)] or refreshing the browser. Users will be notified directly in the browser if any action is required on their part. Users are asked to take action before the optimizations are applied on the service. This way, they can continue to work without further interruptions. Service operations happen all day, every day, to always provide best experience.
 
 ## See also
 
