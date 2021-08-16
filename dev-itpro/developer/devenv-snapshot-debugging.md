@@ -45,7 +45,9 @@ From Visual Studio Code, you start a snapshot by creating a snapshot configurati
 - AL: Initialize a snapshot debugging session locally
 - AL: Initialize a snapshot debugging session on cloud
 
-Choose whether to run the session on a cloud service or locally. The configuration file will now contain the following information: 
+Choose whether to run the session on a cloud service or locally. If you are going to use the snapshot for profiling the code, you must enable the  configuration parameter called `executionContext`. For more information, see [AL Profiler Overview](devenv-al-profiler-overview.md).
+
+The configuration file contains the following information: 
 
 |Setting | Description |
 |--------|-------------|
