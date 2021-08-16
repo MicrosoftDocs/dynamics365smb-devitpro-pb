@@ -18,13 +18,32 @@ The AL profiler works on a snapshot of running code. Snapshot debugging is a rec
 
 ## Snapshot setting
 
-In order to do profiling on code, you must first capture a snapshot of running code. The snapshot configuration must include a parameter called  `executionContext` which has the following values: 
+In order to do profiling on code, you must first capture a snapshot of running code. The snapshot configuration must include a parameter called  `executionContext` which has the following values in the table below.
 
 |Option|Description|
 |------|-----------|
 |`Debug` | The snapshot session will not gather profile information.| 
 |`Profile` | The snapshot session will only gather profile information, snappoints will be ignored, and debugging will not work.|
 |`DebugAndProfile` | Both debugging and profiling will be available as a result of a snapshot session.|
+
+This means that the configuration for the snapshot in the `launch.json` file, if we want to use it both for debugging and profiling purposes, will look equivalent to the following:
+
+```al
+"configurations": [ 
+        {
+            "name": "snapshotInitialize: Your own server",
+            "type": "al",
+            "userId": "555",
+            "request": "snapshotInitialize",
+            "environmentType": "OnPrem",
+            "server": "http://localhost",
+            "serverInstance": "BC180",
+            "authentication": "Windows",
+            "breakOnNext": "WebClient",
+            "executionContext": "DebugAndProfile"
+        },
+    ...
+```
 
 Then, when the snapshot file is downloaded, you can generate a profile file, based on the snapshot by using the **AL: Generate profile file** option.
 
