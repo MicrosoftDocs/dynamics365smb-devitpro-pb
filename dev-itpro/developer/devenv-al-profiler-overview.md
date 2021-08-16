@@ -36,8 +36,8 @@ This means that the configuration for the snapshot in the `launch.json` file, if
             "userId": "555",
             "request": "snapshotInitialize",
             "environmentType": "OnPrem",
-            "server": "http://localhost",
-            "serverInstance": "BC180",
+            "server": "http://localserver",
+            "serverInstance": "BC190",
             "authentication": "Windows",
             "breakOnNext": "WebClient",
             "executionContext": "DebugAndProfile"
