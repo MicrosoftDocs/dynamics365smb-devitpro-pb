@@ -51,7 +51,7 @@ The profile file for AL code has the extension `.alcpuprofile` and when you open
 
 ## Graph of method calls
 
-When you open the profile file, it looks similar to the illustration below:
+To investigate the graph of method calls, you open the generated profile file in the performance profiling editor. If you click the file directly, it opens up in a default view. You can also right-click a profile file and get the following options: **AL Profile Visualizer TopDown Graph** and **AL Profile Visualizer BottomUp Graph**. When the the profile file opens, it looks similar to the illustration below:
 
 ![Graph of method calls](../media/profiler-graph.png)
 
