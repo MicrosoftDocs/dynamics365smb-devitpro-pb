@@ -1,9 +1,9 @@
 ---
-title: "Enum.Ordinals Method"
+title: "Enum.Ordinals() Method"
 description: "Gets the ordinal numbers/ID's for the values"
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 07/13/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Enum.Ordinals Method
+# Enum.Ordinals() Method
 > **Version**: _Available or changed with runtime version 4.0._
 
 Gets the ordinal numbers/ID's for the values
 
 
 ## Syntax
-```
+```AL
 List of ordinals :=   Enum.Ordinals()
 ```
 

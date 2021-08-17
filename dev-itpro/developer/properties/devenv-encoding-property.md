@@ -1,8 +1,9 @@
 ---
 title: "Encoding Property"
+description: "Sets a value that specifies which system is applied to the XmlPort for character encoding."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

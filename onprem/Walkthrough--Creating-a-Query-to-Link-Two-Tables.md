@@ -108,7 +108,7 @@ SELECT C.Name, C.No_, SL.Amount FROM [CRONUS International Ltd_$Customer] AS C, 
   
  The following figure shows Query Designer and **Properties** window.  
   
- ![Query Join SalespersonPurchaser and SalesHeader](media/Query_WalkthroughJoin.png "Query\_WalkthroughJoin")  
+ ![Query Join SalespersonPurchaser and SalesHeader.](media/Query_WalkthroughJoin.png "Query\_WalkthroughJoin")  
   
 ## Saving and Running the Query  
  Viktor wants to verify that the query describes the dataset that he wants. He saves the query, and then runs it from Object Designer. The call to run the query runs on [!INCLUDE[nav_server](includes/nav_server_md.md)] and opens a view of the dataset in the [!INCLUDE[nav_windows](includes/nav_windows_md.md)].  
@@ -124,7 +124,7 @@ SELECT C.Name, C.No_, SL.Amount FROM [CRONUS International Ltd_$Customer] AS C, 
   
 3.  In Object Designer, select query 50001, and then choose the **Run** button. When you run a query, you can view the data in the dataset.  
   
-     ![The result of running Customer&#95;SalesQuantity query](media/Query_WalkthroughJoin_Run.png "Query\_WalkthroughJoin\_Run")  
+     ![The result of running Customer&#95;SalesQuantity query.](media/Query_WalkthroughJoin_Run.png "Query\_WalkthroughJoin\_Run")  
   
 ## Next Steps  
  Viktor’s next steps are to create more complex queries. For more information, see  [Walkthrough: Creating a Query That Uses a Totaling Method and Sorting](Walkthrough--Creating-a-Query-That-Uses-a-Totaling-Method-and-Sorting.md) and [Walkthrough: Creating a Query to Link Three Tables](Walkthrough--Creating-a-Query-to-Link-Three-Tables.md).  

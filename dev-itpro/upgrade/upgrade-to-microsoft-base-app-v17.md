@@ -15,7 +15,7 @@ ms.service: "dynamics365-business-central"
 
 This article describes how to upgrade a customized version 14 application to a version 17 solution that uses the Microsoft Base Application.
 
- ![Shows the upgrade of an unmodified Business Central application](../developer/media/bc14-to-17-cal-upgrade-to-base-app.png "Upgrade on unmodified Business Central application version 17") 
+ ![Shows the upgrade of an unmodified Business Central application.](../developer/media/bc14-to-17-cal-upgrade-to-base-app.png "Upgrade on unmodified Business Central application version 17") 
 
 <!--
 
@@ -28,7 +28,7 @@ The process for upgrading the similar for a single-tenant and multitenant deploy
 
 The upgrade is divided into two sections: Application Upgrade and Data Upgrade. The Application Upgrade section deals with upgrading the application code. For the application upgrade, you'll have to create several extensions. Some of these extensions are only used for upgrade purposes. The Data Upgrade section deals with upgrading the data on tenants - publishing, syncing, and installing extensions. For this scenario, the data upgrade consists of two phases for migrating data from the current tables to extension-based tables. The following figure illustrates the upgrade process.  
 
-[![Shows the upgrade on unmodified Business Central application](../developer/media/Upgrade-BC14-custom-BC17.png)](../developer/media/Upgrade-BC14-custom-BC17.png#lightbox)
+[![Shows the upgrade on unmodified Business Central application.](../developer/media/Upgrade-BC14-custom-BC17.png)](../developer/media/Upgrade-BC14-custom-BC17.png#lightbox)
 
 The process uses two special features for migrating tables and data to extensions:
 
@@ -54,7 +54,7 @@ The process for upgrading is similar for a single-tenant and multitenant deploym
 
 3. Get the required version of the txt2al conversion tool.
 
-    During the upgrade, you'll use the txt2al conversion tool to convert existing tables to the AL syntax. You'll need to use a version of txt2al conversion tool that supports the `--tableDataOnly` parameter. This parameter was first introduced in [version 14.12 (cumulative update 11, platform 14.0.41862)](https://support.microsoft.com/en-us/help/4549684/cumulative-update-12-for-microsoft-dynamics-365-business-central-april). So if you're upgrading from version 14.11 (cumulative update 10) or earlier, you'll have to download the txt2al conversion tool from a later version 14 update. See [Released Cumulative Updates for Microsoft Dynamics 365 Business Central Spring 2019 Update on-premises](https://support.microsoft.com/en-us/help/4501292/released-cumulative-updates-for-microsoft-dynamics-365-business). 
+    During the upgrade, you'll use the txt2al conversion tool to convert existing tables to the AL syntax. You'll need to use a version of txt2al conversion tool that supports the `--tableDataOnly` parameter. This parameter was first introduced in [version 14.12 (cumulative update 11, platform 14.0.41862)](https://support.microsoft.com/help/4549684/cumulative-update-12-for-microsoft-dynamics-365-business-central-april). So if you're upgrading from version 14.11 (cumulative update 10) or earlier, you'll have to download the txt2al conversion tool from a later version 14 update. See [Released Cumulative Updates for Microsoft Dynamics 365 Business Central Spring 2019 Update on-premises](https://support.microsoft.com/help/4501292/released-cumulative-updates-for-microsoft-dynamics-365-business). 
 
 ## Install version 17
 
@@ -623,7 +623,7 @@ This task serves two purposes. It ensures that personalization works as expected
 
 On the **Help and Support** page in the client, you'll see an application version, such as 14.0.2345.6. For an explanation of the number, see [Version numbers in Business Central](../administration/version-numbers.md). This version isn't updated automatically when you install an update. If you want the version to reflect the version of the update or your own version, you change it manually.
 
-We recommend setting the value to application build number for the version 17 update. You get the number from the [Released Updates for Microsoft Dynamics 365 Business Central 2020 Release Wave 2 on-premises](https://support.microsoft.com/en-us/help/4549687).
+We recommend setting the value to application build number for the version 17 update. You get the number from the [Released Updates for Microsoft Dynamics 365 Business Central 2020 Release Wave 2 on-premises](https://support.microsoft.com/help/4549687).
 
 1. Run the [Set-NAVApplication cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navapplication):
 
@@ -665,12 +665,12 @@ We recommend setting the value to application build number for the version 17 up
 5. Grant users permission to the *Open in Excel* and *Edit in Excel* actions.
 
     Version 17 introduces a system permission that protects these two actions. The permission is granted by the system object **6110 Allow Action Export To Excel**. Because of this change, users who had permission to these actions before upgrading, will lose permission. To grant permission again, do one of the following steps:
-    
+
     - Assign the **EXCEL EXPORT ACTION** permission set to appropriate users. 
-    
+
     - Add the system object **6110 Allow Action Export To Excel** permission directly to appropriate permission sets.
 
-     For more information about working with permission sets and permissions, see [Export and Import Permission Sets](/dynamics365/business-central/ui-define-granular-permissions#to-export-and-import-a-permission-set). 
+     For more information about working with permission sets and permissions, see [Export and Import Permission Sets](/dynamics365/business-central/ui-define-granular-permissions#to-export-and-import-a-permission-set).  
 
 ## See Also  
 

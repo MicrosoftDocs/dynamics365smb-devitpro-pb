@@ -37,11 +37,7 @@ The following permission set extension example extends the `Sales Person` [permi
 ```AL
 permissionsetextension 50140 "Extended Sales Doc" extends "Sales Person"
 {​
-    Assignable = true;​
-    Caption = 'Extended Sales Doc';​
-
-    Permissions =​
-        tabledata Currency = ID;
+    Permissions =​ tabledata Currency = ID;
 }
 ```
 

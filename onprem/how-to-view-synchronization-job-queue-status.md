@@ -26,7 +26,7 @@ You can set up and run synchronization jobs when integrating [!INCLUDE[navnow_md
 
      If this part is not displayed, do the following:  
 
-    1.  On the **Application** menu ![Dynamics NAV Application menu](/media/ApplicationMenuIcon.png "RTC\_ApplicationMenu"), select **Customize**, and then **Customize this Page**.  
+    1.  On the **Application** menu ![Dynamics NAV Application menu.](/media/ApplicationMenuIcon.png "RTC\_ApplicationMenu"), select **Customize**, and then **Customize this Page**.  
 
     2.  In the **Customize the Role Center** window, in the **Available parts** field, select **365 for Sales Synch. Job Status**, and then choose **Add**.  
 

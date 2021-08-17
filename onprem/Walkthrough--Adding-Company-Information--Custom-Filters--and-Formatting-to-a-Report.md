@@ -197,7 +197,7 @@ When you create a report, you can add features such as formatting, custom filter
 
      The following illustration shows the selected cells.  
 
-     ![Customer Details cells](media/MicrosoftDynamicsNAV_CustDetailCells.jpg "MicrosoftDynamicsNAV\_CustDetailCells")  
+     ![Customer Details cells.](media/MicrosoftDynamicsNAV_CustDetailCells.jpg "MicrosoftDynamicsNAV\_CustDetailCells")  
 
 12. In the **Properties** pane, locate the **Hidden** property, choose the drop-down list, choose **Expression**, and then enter the following conditional expression in the **Set expression for: Hidden** box: `=iif(Fields!ShowCustomerDetails.Value,false,true)`. This expression replaces any expression in the box. Choose the **OK** button. This expression hides the customer details information unless the **Show Customer Details** option is selected on the request page.  
 
@@ -214,7 +214,7 @@ When you create a report, you can add features such as formatting, custom filter
 
      The following illustration shows the Edit Report for Multiple Tables Request Page with the show details filter.  
 
-     ![Request Page with show details filter](media/MicrosoftDynamicsNAV_ShowDetails.jpg "MicrosoftDynamicsNAV\_ShowDetails")  
+     ![Request Page with show details filter.](media/MicrosoftDynamicsNAV_ShowDetails.jpg "MicrosoftDynamicsNAV\_ShowDetails")  
 
 17. In the **Where No. is** filter, enter **01445544**. Select the **Show Customer Details** option, and then choose the **Preview** button. Note that the company name and the company logo are displayed on the report and all customer information is displayed.  
 
@@ -223,7 +223,7 @@ When you create a report, you can add features such as formatting, custom filter
 
      The following illustration shows an example of the report with customer details.  
 
-     ![Report with logo and company name](media/MicrosoftDynamicsNAV_Logo_Company.jpg "MicrosoftDynamicsNAV\_Logo\_Company")  
+     ![Report with logo and company name.](media/MicrosoftDynamicsNAV_Logo_Company.jpg "MicrosoftDynamicsNAV\_Logo\_Company")  
 
 18. Run the report again. This time, on the Request Page, do not select the **Show Customer Details** option. Note that only the customer ID and the customer name are displayed on the report.  
 
@@ -368,7 +368,7 @@ When you create a report, you can add features such as formatting, custom filter
 
      The following illustration shows an example of the completed and formatted report.  
 
-     ![Formatted report](media/MicrosoftDynamicsNAV_FormatedReport.jpg "MicrosoftDynamicsNAV\_FormatedReport")  
+     ![Formatted report.](media/MicrosoftDynamicsNAV_FormatedReport.jpg "MicrosoftDynamicsNAV\_FormatedReport")  
 
 ## See Also  
  [Walkthrough: Designing a Report from Multiple Tables](Walkthrough--Designing-a-Report-from-Multiple-Tables.md)   

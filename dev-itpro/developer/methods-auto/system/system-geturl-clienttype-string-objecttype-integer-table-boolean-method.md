@@ -1,9 +1,9 @@
 ---
-title: "System.GetUrl Method"
-description: " Generates a URL for the specified client target that is based on the configuration of the server instance. If the code runs in a multitenant deployment architecture, the generated URL will automatically apply to the tenant ID of the current user."
+title: "System.GetUrl(ClientType [, String] [, ObjectType] [, Integer] [, Record] [, Boolean]) Method"
+description: " Generates a URL for the specified client target that is based on the configuration of the server instance."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# System.GetUrl Method
+# System.GetUrl(ClientType [, String] [, ObjectType] [, Integer] [, Record] [, Boolean]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
  Generates a URL for the specified client target that is based on the configuration of the server instance. If the code runs in a multitenant deployment architecture, the generated URL will automatically apply to the tenant ID of the current user.
 
 
 ## Syntax
-```
+```AL
 String :=   System.GetUrl(ClientType: ClientType [, Company: String] [, ObjectType: ObjectType] [, ObjectId: Integer] [, Record: Record] [, UseFilters: Boolean])
 ```
 > [!NOTE]

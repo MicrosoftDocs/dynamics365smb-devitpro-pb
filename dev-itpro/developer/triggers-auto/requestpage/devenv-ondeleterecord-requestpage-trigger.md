@@ -3,7 +3,7 @@ title: "OnDeleteRecord (Request Page) Trigger"
 description: "Runs before a record is deleted from the table."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/27/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,7 +22,7 @@ Runs before a record is deleted from the table.
 
 
 ## Syntax
-```
+```AL
 trigger OnDeleteRecord(): Ok
 begin
     ...
@@ -32,9 +32,9 @@ end;
 
 ## Return Value
 
-*Ok*
+*Ok*  
 &emsp;Type: [Boolean](../../methods-auto/boolean/boolean-data-type.md)  
-**true** if the specified record was deleted, otherwise **false**. This value is checked after each call. The default value is **true**.
+**true** if the specified record was deleted, otherwise **false**. This value is checked after each call. The default value is **true**.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

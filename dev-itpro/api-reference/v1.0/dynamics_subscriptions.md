@@ -142,6 +142,9 @@ For Document APIs, a notification will be sent for the header if a change is mad
 
 Custom APIs are also webhook-enabled and will be listed in **webhookSupportedResources** if [!INCLUDE[prod_short](../../includes/prod_short.md)] is able to send notifications for the entity.
 
+> [!NOTE]  
+> Changes made by users who are not able to schedule job queues will not be notified until another user who is able to schedule job queues makes another change to the same table.
+
 ## Notes for on-premise
 
 By default, a subscription lives for 3 days if it is not renewed. The value is specified in the CustomSettings.config file under the ApiSubscriptionExpiration entry. There is a maximum number of subscriptions specified in the ApiSubscriptionMaxNumberOfSubscriptions in the CustomSettings.config file.

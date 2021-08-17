@@ -16,7 +16,7 @@ Working with the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] you hav
 
 The **Outline** view is enabled by default and shows the symbol tree of the currently active cursor, it also allows you to filter as you type. Double-clicking on any node makes your cursor jump to the selected definition or keyword. The **Outline** view will also display any errors in your project for easy inspection.
 
-![Outline view](media/outlineview.png "Outline view in Visual Studio Code")
+![Outline view.](media/outlineview.png "Outline view in Visual Studio Code")
 
 You manage the look and feel of the **Outline** view by defining a number of settings, that are all enabled by default. To set these, press **Ctrl+Shift+P**, and then choose **Preferences: Open Settings (UI)** for workspace settings, or choose **Preferences: Open User Settings** for user settings. Under **Extensions**, and **AL Language extension configuration** you will find the settings that are available for the AL Language extension for the `settings.json` file.
 

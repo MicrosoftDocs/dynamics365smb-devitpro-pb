@@ -14,7 +14,7 @@ author: jswymer
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] supports deployments where several different companies access a centrally maintained [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application. By using this *multitenancy* support, you can add new customers to your solution easily, and you can roll out updates quickly with limited downtime for your customers.  
 
-![Multitenant architecture overview](../developer/media/architecture-multitenant.png "Multitenant architecture overview")  
+![Multitenant architecture overview.](../developer/media/architecture-multitenant.png "Multitenant architecture overview")  
   
 > [!NOTE]  
 >  You don't have to turn your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] solution into a multitenant deployment. You can install and run [!INCLUDE[prod_short](../developer/includes/prod_short.md)] as a classic one-server-one-database deployment.  

@@ -30,7 +30,7 @@ These features are only optional for a while. The option period typically starts
 ### Example timeline for an optional feature
 
 > [!div class="mx-imgBorder"]
-> ![Example timeline for an optional feature](../media/timeline-optional-features.png "An example timeline for an optional feature in the Feature Management page")
+> ![Example timeline for an optional feature.](../media/timeline-optional-features.png "An example timeline for an optional feature in the Feature Management page")
 
 Learn about [what's new and planned](/dynamics365-release-plan/2021wave1/).  
 Learn about [new features available in the last minor update in a release wave](../whatsnew/whatsnew-update-17-5.md).  

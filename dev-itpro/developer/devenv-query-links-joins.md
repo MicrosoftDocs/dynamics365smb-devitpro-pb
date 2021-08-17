@@ -171,7 +171,7 @@ This pattern continues for each extra data item.
 
 
 <!--   
- ![Query Designer inner join](media/QueryJoin_InnerJoin.png "QueryJoin\_InnerJoin")  
+ ![Query Designer inner join.](media/QueryJoin_InnerJoin.png "QueryJoin\_InnerJoin")  
 
 ## How Data Item Links Work  
 
@@ -188,13 +188,13 @@ When you add data items in AL, they are arranged in a hierarchy, one after anoth
   
  For example, the following illustration shows the Query Designer and **Properties** window for linking the Sales Header table to the Salesperson/Purchaser table. You set the DataItemLink property and the DataItemLinkType property on the Sales Header data item because it's the lower data item in Query Designer.  
   
- ![Query Designer showing link between 2 data items](media/NAV_Query_Designer_Sample_DataItemLink.png "NAV\_Query\_Designer\_Sample\_DataItemLink")  
+ ![Query Designer showing link between 2 data items.](media/NAV_Query_Designer_Sample_DataItemLink.png "NAV\_Query\_Designer\_Sample\_DataItemLink")  
   
 ### Linking More Than Two Data Items
   
 A query links data items in the order that they appear in Query Designer, starting from the top and then working downward. When you have more than two data items, subsequent data items are linked to the resulting dataset of the linked data items above it. For example, when you link the first two data items, the query generates a dataset. When you add another data item, the data item is linked to the dataset of the first linked pair of data items, where it applies the conditions that are specified by its DataItemLink property and DataItemLinkType property. The following illustration shows an example with three data items.  
   
- ![Query Designer showing 3 data item links](media/NAV_Query_Designer_Sample_3_DataItemLink.png "NAV\_Query\_Designer\_Sample\_3\_DataItemLink")  
+ ![Query Designer showing 3 data item links.](media/NAV_Query_Designer_Sample_3_DataItemLink.png "NAV\_Query\_Designer\_Sample\_3\_DataItemLink")  
   
  This pattern continues for each additional data item.  
 
@@ -259,7 +259,7 @@ A query links data items in the order that they appear in Query Designer, starti
   
  The following illustration shows an `InnerJoin` type between tables A and B. The shaded area indicates the records that are included in the resulting dataset.  
   
- ![Visualization of SQL inner join between two tables](media/NAV_Query_SQL_Inner_Join.png "NAV\_Query\_SQL\_Inner\_Join")  
+ ![Visualization of SQL inner join between two tables.](media/NAV_Query_SQL_Inner_Join.png "NAV\_Query\_SQL\_Inner\_Join")  
   
 ### Dataset Example
 
@@ -304,7 +304,7 @@ A `LeftOuterJoin` resembles the `InnerJoin` except that the resulting dataset se
   
  The following illustration shows a `LeftOuterJoin` type between tables A and B. The shaded area indicates the records that are included in the resulting dataset. In the sample query, the **Salesperson/Purchaser** table is considered the left table.  
   
- ![Visualization of SQL left outer join](media/NAV_Query_SQL_Left_Outer_Join.png "NAV\_Query\_SQL\_Left\_Outer\_Join")  
+ ![Visualization of SQL left outer join.](media/NAV_Query_SQL_Left_Outer_Join.png "NAV\_Query\_SQL\_Left\_Outer\_Join")  
   
 ### Dataset Example
  
@@ -341,7 +341,7 @@ FROM "Salesperson/Purchaser" LEFT OUTER JOIN "Sales Header"
   
  The following illustration shows a `RightOuterJoin` type between tables A and B. The shaded area indicates the records that are included in the resulting dataset.  
   
- ![Visualization of SQL right outer join](media/NAV_Query_SQL_Right_Outer_Join.png "NAV\_Query\_SQL\_Right\_Outer\_Join")  
+ ![Visualization of SQL right outer join.](media/NAV_Query_SQL_Right_Outer_Join.png "NAV\_Query\_SQL\_Right\_Outer\_Join")  
   
 ### Dataset Example
 
@@ -380,7 +380,7 @@ FROM "Salesperson/Purchaser" RIGHT OUTER JOIN "Sales Header"
   
  The following illustration shows a `FullOuterJoin` type between tables A and B. The shaded area indicates the records that are included in the resulting dataset.  
   
- ![Visualization of an SQL full outer join](media/NAV_Query_SQL_Full_Outer_Join.png "NAV\_Query\_SQL\_Full\_Outer\_Join")  
+ ![Visualization of an SQL full outer join.](media/NAV_Query_SQL_Full_Outer_Join.png "NAV\_Query\_SQL\_Full\_Outer\_Join")  
   
 ### Dataset Example
 

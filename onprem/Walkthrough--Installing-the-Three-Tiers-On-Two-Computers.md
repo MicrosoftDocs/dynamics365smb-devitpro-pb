@@ -68,11 +68,11 @@ In this walkthrough, you install a new instance of [!INCLUDE[navnowlong](include
 
 5.  On the **Choose an installation option** pane, choose the word **Customize** that is underneath the **Server** option  
 
-     ![Configure Server option](media/ServerConfigure.JPG "ServerConfigure")  
+     ![Configure Server option.](media/ServerConfigure.JPG "ServerConfigure")  
 
 6.  On the **Customize the installation** pane, click within the **SQL Server Database Components** box and select **Run all from my computer**.  
 
-     ![Add Database Components to the Install](media/DBCompRunAll.JPG "DBCompRunAll")  
+     ![Add Database Components to the Install.](media/DBCompRunAll.JPG "DBCompRunAll")  
 
      This specifies that you want to install this component and all sub-components. In this case, there is a single sub-component: the Demo database.  
 
@@ -108,7 +108,7 @@ In this walkthrough, you install a new instance of [!INCLUDE[navnowlong](include
 
 2.  In [!INCLUDE[nav_admin](includes/nav_admin_md.md)], choose the triangle to the left of the local computer to display any instances on the server computer:  
 
-     ![Console root with two server instances](media/ConsoleRootExp.png "ConsoleRootExp")  
+     ![Console root with two server instances.](media/ConsoleRootExp.png "ConsoleRootExp")  
 
 3.  Right-click the default instance \(in the left pane\) and select **Log on Account**.  
 

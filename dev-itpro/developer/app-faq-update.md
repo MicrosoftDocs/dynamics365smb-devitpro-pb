@@ -68,6 +68,11 @@ No. The version number in the dependency listing in the json file to an app is a
 
 Your tenant is on an older version of [!INCLUDE[prod_short](includes/prod_short.md)] and has not yet been upgraded to the latest version of [!INCLUDE[prod_short](includes/prod_short.md)]. The latest updated version of your app is only compatible with the latest [!INCLUDE[prod_short](includes/prod_short.md)] version and later. If you upgrade your tenant to the latest version, you can then update your app.
 
+## Is there a good way get the status of the validation as it happens?
+
+[!INCLUDE[appsource-appinsights](includes/appsource-appinsights.md)].
+
+
 ## See also
 
 [FAQ about Managing and Submitting your Business Central Offer](app-faq-offer.md)  

@@ -3,7 +3,7 @@ title: "OnOpenPage (Request Page Extension) Trigger"
 description: "Runs after a request page is initialized and run."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/27/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,7 +22,7 @@ Runs after a request page is initialized and run.
 
 
 ## Syntax
-```
+```AL
 trigger OnOpenPage()
 begin
     ...

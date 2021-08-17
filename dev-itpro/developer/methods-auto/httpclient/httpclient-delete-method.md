@@ -1,9 +1,9 @@
 ---
-title: "HttpClient.Delete Method"
+title: "HttpClient.Delete(String, var HttpResponseMessage) Method"
 description: "Sends a DELETE request to delete the resource identified by the request URL."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# HttpClient.Delete Method
+# HttpClient.Delete(String, var HttpResponseMessage) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Sends a DELETE request to delete the resource identified by the request URL.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  HttpClient.Delete(Path: String, var Response: HttpResponseMessage)
 ```
 ## Parameters

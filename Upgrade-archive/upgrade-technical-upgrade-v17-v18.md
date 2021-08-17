@@ -19,7 +19,7 @@ Use this process to upgrade any of the following versions to the [!INCLUDE[prod_
 - [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 1 (version 16)
 - [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2019 release wave 2 (version 15)
 
- ![Upgrade on customized Business Central application](../developer/media/bc16-to-17-technical-upgrade-unmodified-app.png "Upgrade on customize Business Central application")   
+ ![Upgrade on customized Business Central application.](../developer/media/bc16-to-17-technical-upgrade-unmodified-app.png "Upgrade on customize Business Central application")   
 
 #### Single-tenant and multitenant deployments
 

@@ -17,7 +17,7 @@ The RoleTailored clients use several windows to display information. Two of the 
 ## Role Center  
  The Role Center is the main entry point into [!INCLUDE[navnow](includes/navnow_md.md)]. The Role Center opens when the user starts the [!INCLUDE[rtc](includes/rtc_md.md)]. You design the Role Center based on the user's business role, taking into consideration the information and tasks relevant to the user during a typical work day. The following illustration shows the Role Center page.  
   
- ![RoleTailored client RoleCenter example](media/NAV_RoleCenterOrderProcessor_wCallouts.png "NAV\_RoleCenterOrderProcessor\_wCallouts")  
+ ![RoleTailored client RoleCenter example.](media/NAV_RoleCenterOrderProcessor_wCallouts.png "NAV\_RoleCenterOrderProcessor\_wCallouts")  
   
  You create a Role Center by using a Role Center page. The Role Center page opens in the navigation window. Usually, there will only be a single navigation window open at a time. From there, users can open any number of task windows. The content area displays the Role Center page. The [navigation pane](#NavigationPane) includes a menu that links to [List Places](#ListPlaces) and [Departments](#Departments).  
   
@@ -32,7 +32,7 @@ The RoleTailored clients use several windows to display information. Two of the 
 ##  <a name="ListPlaces"></a> List Places  
  A List Place displays information from a table in a list format with rows and columns. Typical uses for List Places include displaying sale orders or customers. Similar to the Role Center, List Places display in the navigation window and include the [navigation pane](#NavigationPane). The following illustration shows a List Place.  
   
- ![RoleTailored client List Place page example](media/NAV_ListPlaceSalesOrders_wCallouts.png "NAV\_ListPlaceSalesOrders\_wCallouts")  
+ ![RoleTailored client List Place page example.](media/NAV_ListPlaceSalesOrders_wCallouts.png "NAV\_ListPlaceSalesOrders\_wCallouts")  
   
  List Places only open from the menu items in the navigation pane. To create a List Place, you create List type and then include the List Place in the navigation pane by adding actions to the Role Center page using the Action Designer to create the menu items in the navigation pane.  
   
@@ -47,7 +47,7 @@ The RoleTailored clients use several windows to display information. Two of the 
 ##  <a name="Departments"></a> Departments  
  The Departments item in the navigation pane only exists in the [!INCLUDE[nav_windows](includes/nav_windows_md.md)]. It provides links to all the pages of the [!INCLUDE[nav_windows](includes/nav_windows_md.md)]. The links and pages under Departments are generated automatically based on the menu suite of the [!INCLUDE[nav_windows](includes/nav_windows_md.md)] user. The following illustration shows the Department page.  
   
- ![RoleTailored client Departments example](media/NAV_Departments_wCallouts.png "NAV\_Departments\_wCallouts")  
+ ![RoleTailored client Departments example.](media/NAV_Departments_wCallouts.png "NAV\_Departments\_wCallouts")  
   
  To change Departments, you change the MenuSuite.  
   
@@ -61,7 +61,7 @@ The RoleTailored clients use several windows to display information. Two of the 
 ##  <a name="NavigationWindow"></a> Navigation Window Overview  
  The following illustration shows the parts of the navigation window that are used by Role Centers, List Places, and Departments.  
   
- ![RoleTailored client Navigation Window overview](media/NAV_NavigationWindowOverview_wCallouts.png "NAV\_NavigationWindowOverview\_wCallouts")  
+ ![RoleTailored client Navigation Window overview.](media/NAV_NavigationWindowOverview_wCallouts.png "NAV\_NavigationWindowOverview\_wCallouts")  
   
 ### Content Area  
  The content area displays the content of a Role Center page, List page, or Department.  
@@ -103,7 +103,7 @@ The RoleTailored clients use several windows to display information. Two of the 
 ## Task Window  
  A Task window opens separately from the navigation window when a user chooses an action or menu item. A Task window typically shows a single object or element such as a task, list, or report. Common uses of Task pages include creating or editing sales orders, customer details, and items. The following illustration shows a Task window that displays a Card page for editing customers.  
   
- ![RoleTailored client Card page example](media/NAV_CardPage_CustomerCard.jpg "NAV\_CardPage\_CustomerCard")  
+ ![RoleTailored client Card page example.](media/NAV_CardPage_CustomerCard.jpg "NAV\_CardPage\_CustomerCard")  
   
  Task pages are similar in concept to the pop-up windows in Microsoft Office Outlook that show an e-mail, contact, or a task. It is typical for users to have multiple task pages open at the same time. Similar to the navigation window, a Task window includes a Command bar and ribbon. Unlike the navigation window, it does not include the navigation pane or status bar. The user can work with more than one Task window open at a time.  
   

@@ -20,7 +20,7 @@ The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provid
 - [view telemetry](tenant-admin-center-telemetry.md) for events on the tenant.  
 
 > [!div class="mx-imgBorder"]
-> ![Business Central Admin Center](../developer/media/admin/business_central_admin_center.png)
+> ![Business Central Admin Center.](../developer/media/admin/business_central_admin_center.png)
 
 ## Access to the administration center
 

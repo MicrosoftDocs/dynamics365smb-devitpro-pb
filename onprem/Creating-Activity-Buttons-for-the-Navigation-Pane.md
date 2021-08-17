@@ -16,7 +16,7 @@ An *activity button* is a navigation pane button that displays links to addition
   
  The following illustration shows a navigation pane that has the default activity buttons and two additional activity buttons: **Posted Documents** and **Bank**. The **Posted Documents** button is selected and shows actions that link to pages that are associated with posted documents.  
   
- ![Navigation pane clip that shows Activity buttons](media/NAV_ADG_NavigationPane_ActivityButtons.jpg "NAV\_ADG\_NavigationPane\_ActivityButtons")  
+ ![Navigation pane clip that shows Activity buttons.](media/NAV_ADG_NavigationPane_ActivityButtons.jpg "NAV\_ADG\_NavigationPane\_ActivityButtons")  
   
  When you create an activity button, you can apply one of the default images that are available for activity buttons. For more information, see [How to: Set an Icon on an Activity Button](How-to--Set-an-Icon-on-an-Activity-Button.md).  
   
@@ -26,7 +26,7 @@ An *activity button* is a navigation pane button that displays links to addition
 ## Setting up Activity Buttons and Page Links in the Navigation Pane  
  You use Action Designer to set up activity buttons on Role Center pages. The following illustration shows the Action Designer setup for the **Posted Documents** button.  
   
- ![Action Designer that shows Activity Button setup](media/NAV_ADG_Classic_ActionDesigner_Activity.png "NAV\_ADG\_Classic\_ActionDesigner\_Activity")  
+ ![Action Designer that shows Activity Button setup.](media/NAV_ADG_Classic_ActionDesigner_Activity.png "NAV\_ADG\_Classic\_ActionDesigner\_Activity")  
   
  The following guidelines apply when working with activity buttons:  
   

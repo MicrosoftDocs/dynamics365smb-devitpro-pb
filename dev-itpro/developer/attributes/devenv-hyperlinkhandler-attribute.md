@@ -3,7 +3,7 @@ title: "HyperlinkHandler Attribute"
 description: "Specifies that the method is a HyperLinkHandler method, which handles HyperLinkHandler statements."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/22/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -32,7 +32,7 @@ Specifies that the method is a HyperLinkHandler method, which handles HyperLinkH
 
 
 > **Version**: _Available or changed with runtime version 1.0._
-```
+```AL
 [HyperlinkHandler]
 procedure HyperlinkHandler(Message: Text[1024])
 ```
@@ -40,7 +40,7 @@ procedure HyperlinkHandler(Message: Text[1024])
 > The above signature requires the HyperlinkHandler method to be *global*. For more information, see [Local and global scope in AL methods](../devenv-al-methods.md%23local-and-global-scope).
 
 > **Version**: _Available or changed with runtime version 2.1._
-```
+```AL
 [HyperlinkHandler]
 procedure HyperlinkHandler(Message: Text)
 ```

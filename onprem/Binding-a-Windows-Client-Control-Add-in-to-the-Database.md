@@ -14,7 +14,7 @@ manager: edupont
 # Binding a Windows Client Control Add-in to the Database
 Similar to other field controls on a page, a [!INCLUDE[nav_windows](includes/nav_windows_md.md)] control add-in can bind with data in the [!INCLUDE[navnow](includes/navnow_md.md)] database. This lets you create control add-ins that can display and update data in the database. Data binding is accomplished through [!INCLUDE[nav_server](includes/nav_server_md.md)] with the [SourceExpr Property](SourceExpr-Property.md) of the field control that is applied with the control add-in, as shown in the following illustration.  
 
- ![RoleTailored client control add&#45;in data binding](media/NAVRTCContolAddinDataBinding.png "NAVRTCContolAddinDataBinding")  
+ ![RoleTailored client control add&#45;in data binding.](media/NAVRTCContolAddinDataBinding.png "NAVRTCContolAddinDataBinding")  
 
  The control add-in must implement the [Microsoft.Dynamics.Framework.UI.Extensibility.IValueControlAddInDefinition\<T>](assetId:///T:Microsoft.Dynamics.Framework.UI.Extensibility.IValueControlAddInDefinition`1) interface that exposes the [IValueControlAddInDefinition\<T>.Value](assetId:///P:Microsoft.Dynamics.Framework.UI.Extensibility.IValueControlAddInDefinition`1.Value) property as shown in the following example for a DateTime data type.  
 

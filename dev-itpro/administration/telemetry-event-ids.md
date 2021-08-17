@@ -86,6 +86,16 @@ The following tables list the IDs of [!INCLUDE[prod_short](../developer/includes
 |LC0025|Table Index Lifecycle|[Index disabled: {tableName}](telemetry-table-index-trace.md#disabled)|
 | LC0026 | Extension Lifecycle | [Dependent Extension installed successfully: {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})](telemetry-extension-lifecycle-trace.md#dependentinstalledsuccess) |
 | LC0027 | Extension Lifecycle | [Dependent extension un-installed successfully: {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})](telemetry-extension-lifecycle-trace.md#dependentunistalled) |
+| LC0028 | AppSource Submission | [AppSource submission validation request started: {validationRequestId}](telemetry-appsource-submission-validation-trace.md#validationrequeststarted) |
+| LC0029 | AppSource Submission | [AppSource submission validation request completed successfully: {validationRequestId}](telemetry-appsource-submission-validation-trace.md#validationrequestcompleted) |
+| LC0030 | AppSource Submission | [(Version, country-region) validation started: version {version}, country/region {countryRegion}](telemetry-appsource-submission-validation-trace.md#versioncountrystarted) |
+| LC0031 | AppSource Submission | [(Version, country-region) validation completed successfully: version {version}, country/region {countryRegion}](telemetry-appsource-submission-validation-trace.md#versioncountrycompleted) |
+| LC0032 | AppSource Submission | [Extension validation started: version {version}, country/region {countryRegion} for extension {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})](telemetry-appsource-submission-validation-trace.md#extensionvalidationstarted) |
+| LC0033 | AppSource Submission | [Extension validation completed successfully: version {version}, country/region {countryRegion} for extension {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})](telemetry-appsource-submission-validation-trace.md#extensionvalidationcompleted) |
+| LC0034 |AppSource Submission | [Validation diagnostic reported: version {version}, country/region {countryRegion} for extension {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})](telemetry-appsource-submission-validation-trace.md#validationdiagnosticreported) |
+|LC0035|AppSource Submission|[AppSource submission validation request completed with failures: {validationRequestId}](telemetry-appsource-submission-validation-trace.md#submissionrequestcompletedwithfailures) |
+|LC0036|AppSource Submission|[(Version, country-region) validation completed with failures: version {version}, country-region {countryRegion}](telemetry-appsource-submission-validation-trace.md#versioncountryvalidationcompletedwithfailures) |
+| LC0037| AppSource Submission | [Extension validation completed with failures: version {version}, country-region {countryRegion} for extension {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})](telemetry-appsource-submission-validation-trace.md#extensionvalidationcompletedwithfailures)  |
 
 ## Runtime events
 
@@ -116,5 +126,4 @@ The following tables list the IDs of [!INCLUDE[prod_short](../developer/includes
 ## See also
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
-[Enabling Application Insights for Tenant Telemetry On-Premises](telemetry-enable-application-insights.md)  
-[Enable Sending Telemetry to Application Insights](tenant-admin-center-telemetry.md#appinsights)  
+[Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  

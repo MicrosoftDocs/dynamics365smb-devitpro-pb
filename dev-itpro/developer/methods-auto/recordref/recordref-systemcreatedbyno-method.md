@@ -1,9 +1,9 @@
 ---
-title: "RecordRef.SystemCreatedByNo Method"
-description: "Gets the field number that is used by the SystemCreatedBy field. The SystemCreatedBy field is a system field that the platform adds to all table objects."
+title: "RecordRef.SystemCreatedByNo() Method"
+description: "Gets the field number that is used by the SystemCreatedBy field."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# RecordRef.SystemCreatedByNo Method
+# RecordRef.SystemCreatedByNo() Method
 > **Version**: _Available or changed with runtime version 6.0._
 
 Gets the field number that is used by the SystemCreatedBy field. The SystemCreatedBy field is a system field that the platform adds to all table objects.
 
 
 ## Syntax
-```
+```AL
 SystemCreatedByFieldNo :=   RecordRef.SystemCreatedByNo()
 ```
 > [!NOTE]

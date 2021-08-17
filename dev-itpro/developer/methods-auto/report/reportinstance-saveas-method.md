@@ -1,9 +1,9 @@
 ---
-title: "Report.SaveAs Method"
-description: "Runs a specific report without a request page and saves the report as a PDF, Excel, Word, or XML file. Instead of using the request page to obtain parameters at runtime, the method gets the parameter values as an input parameter string, typically from the return value of a RUNREQUESTPAGE method call."
+title: "Report.SaveAs(String, ReportFormat, var OutStream [, RecordRef]) Method"
+description: "Runs a specific report without a request page and saves the report as a PDF, Excel, Word, or XML file."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Report.SaveAs Method
+# Report.SaveAs(String, ReportFormat, var OutStream [, RecordRef]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Runs a specific report without a request page and saves the report as a PDF, Excel, Word, or XML file. Instead of using the request page to obtain parameters at runtime, the method gets the parameter values as an input parameter string, typically from the return value of a RUNREQUESTPAGE method call.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  Report.SaveAs(Parameters: String, Format: ReportFormat, var OutStream: OutStream [, RecordRef: RecordRef])
 ```
 ## Parameters

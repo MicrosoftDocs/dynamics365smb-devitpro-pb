@@ -22,11 +22,14 @@ If you just want to get started installing the [!INCLUDE[webservercomponents](..
 ## Network Topology
 The following illustration shows the component infrastructure that supports [!INCLUDE[webserver](../developer/includes/webserver.md)] instances on your network.  
 
- ![Installation on one computer](../media/single-computer-topology.png "Installation on one computer")   
+ ![Installation on one computer.](../media/single-computer-topology.png "Installation on one computer")   
 
 Each [!INCLUDE[webserver](../developer/includes/webserver.md)] instance must connect to a [!INCLUDE[server](../developer/includes/server.md)], which in turn connects to the database that contains the application and business data. Multiple [!INCLUDE[webserver](../developer/includes/webserver.md)] instances can connect to the same [!INCLUDE[server](../developer/includes/server.md)]. You can deploy these components on one computer or on separate computers. For example, you can install the [!INCLUDE[webserver](../developer/includes/webserver.md)] instance on one computer and the [!INCLUDE[server](../developer/includes/server.md)] and SQL Server database on another computer. The topology that you choose depends on the network resources and the infrastructure of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] components. The installation and configuration process is different for each scenario.
 
 For information about the common deployment scenarios, see [Deployment Topologies](deployment-scenarios.md).  
+
+> [!IMPORTANT]
+> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] doesn't support Azure Active Directory Application Proxy, because Application Proxy doesn't fully support web sockets.
 
 ##  Creating a [!INCLUDE[webserver](../developer/includes/webserver.md)] instance  
 
@@ -43,7 +46,8 @@ Setup is the quickest way to get a web server instance up and running, and is ty
 
 -   You can only use Setup to install a single [!INCLUDE[webserver](../developer/includes/webserver.md)] instance.
 
--   Setup does not let you choose the site deployment type for the web server instance. By default, it creates a SubSite instance. For more information, see [Site Deployment Types](configure-multiple-web-server-instances.md#WebClientonIIS).    
+-   Setup does not let you choose the site deployment type for the web server instance. By default, it creates a SubSite instance. For more information, see [Site Deployment Types](configure-multiple-web-server-instances.md#WebClientonIIS).
+
 For information about how to install the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)], see [Install Business Central Using Setup](install-using-setup.md).
 
 ### Using [!INCLUDE[webserver](../developer/includes/webserver.md)] PowerShell cmdlets

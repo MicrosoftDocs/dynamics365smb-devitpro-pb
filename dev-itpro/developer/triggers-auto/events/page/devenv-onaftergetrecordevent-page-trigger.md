@@ -3,7 +3,7 @@ title: "OnAfterGetRecordEvent (Page) Trigger Event"
 description: "Executed after the OnAfterGetCurrRecord trigger, which is called after the record is retrieved from the table but before it is displayed to the user."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/27/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,7 +22,7 @@ Executed after the OnAfterGetCurrRecord trigger, which is called after the recor
 
 
 ## Syntax
-```
+```AL
 [EventSubscriber(ObjectType::Page, Page::<Page Name>, 'OnAfterGetRecordEvent', '', <SkipOnMissingLicense>, <SkipOnMissingPermission>)]
 local procedure MyProcedure(Rec: Record)
 begin

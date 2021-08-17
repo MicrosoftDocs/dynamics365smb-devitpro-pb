@@ -1,9 +1,9 @@
 ---
-title: "Record.SetAscending Method"
-description: "Sets the sort order for the records returned. Use this method after you have set the keys to sort after, using SETCURRENTKEY. The default sort order is ascending. You can use SETASCENDING to change the sort order to descending for a specific field, while the other fields in the specified key are sorted in ascending order."
+title: "Record.SetAscending(Any, Boolean) Method"
+description: "Sets the sort order for the records returned."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Record.SetAscending Method
+# Record.SetAscending(Any, Boolean) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Sets the sort order for the records returned. Use this method after you have set the keys to sort after, using SETCURRENTKEY. The default sort order is ascending. You can use SETASCENDING to change the sort order to descending for a specific field, while the other fields in the specified key are sorted in ascending order.
 
 
 ## Syntax
-```
+```AL
  Record.SetAscending(Field: Any, Ascending: Boolean)
 ```
 ## Parameters

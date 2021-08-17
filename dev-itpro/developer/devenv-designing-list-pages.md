@@ -50,7 +50,7 @@ For a simple code example of a list page, see [Simple List Page Example](devenv-
 
 The following figure illustrates the general layout and elements of a list page.
 
-![List page](media/list-page-overview-v3.png "List page overview")
+![List page.](media/list-page-overview-v3.png "List page overview")
 
 The following table describes the elements of a typical list page.
 
