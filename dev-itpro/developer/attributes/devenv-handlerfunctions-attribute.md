@@ -3,7 +3,7 @@ title: "HandlerFunctions Attribute"
 description: "Specifies the handler methods that are used by the test method."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/16/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,7 +30,7 @@ Specifies the handler methods that are used by the test method.
 
 ## Syntax
 
-```
+```AL
 [HandlerFunctions(HandlerNames: String)]
 ```
 

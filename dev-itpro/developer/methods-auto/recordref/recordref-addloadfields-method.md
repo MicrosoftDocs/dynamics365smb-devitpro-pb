@@ -1,9 +1,9 @@
 ---
-title: "RecordRef.AddLoadFields Method"
-description: "Specifies additional fields to be initially loaded when the record is retrieved from its data source. Subsequent calls to AddLoadFields will not overwrite fields already selected for the initial load."
+title: "RecordRef.AddLoadFields([Integer,...]) Method"
+description: "Specifies additional fields to be initially loaded when the record is retrieved from its data source."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# RecordRef.AddLoadFields Method
+# RecordRef.AddLoadFields([Integer,...]) Method
 > **Version**: _Available or changed with runtime version 6.0._
 
 Specifies additional fields to be initially loaded when the record is retrieved from its data source. Subsequent calls to AddLoadFields will not overwrite fields already selected for the initial load.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  RecordRef.AddLoadFields([Fields: Integer,...])
 ```
 ## Parameters

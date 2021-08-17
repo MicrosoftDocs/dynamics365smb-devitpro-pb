@@ -15,7 +15,7 @@ ms.service: "dynamics365-business-central"
 
 Use this scenario if you have a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Spring 2019 (version 14) application or earlier that doesn't include any code customization. Your solution might include Microsoft (first party) extensions and customization extensions (3rd-party). With this upgrade, you'll replace the C/AL base application with the new Microsoft System and Base Application extensions. The result will be a fully upgraded Business Central 2020 release wave 2 (version 17) application and platform.
 
- ![Upgrade on unmodified Business Central application](../developer/media/bc14-to-17-upgrade-unmodified-app.png "Upgrade on unmodified Business Central application") 
+ ![Upgrade on unmodified Business Central application.](../developer/media/bc14-to-17-upgrade-unmodified-app.png "Upgrade on unmodified Business Central application") 
 
 #### Single-tenant and multitenant deployments
 
@@ -71,31 +71,31 @@ The process for upgrading the similar for a single-tenant and multitenant deploy
 
         To get a list of installed extensions, use the [Get-NAVAppInfo cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/get-navappinfo).
 
-        ```powershell 
+        ```powershell
         Get-NAVAppInfo -ServerInstance <server instance name> -Tenant <tenant ID>
         ```
 
         For a single-tenant deployment, set the `<tenant ID>` to default. 
     2. Uninstall the extensions.
-    
+
         To uninstall an extension, you use the [Uninstall-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp) cmdlet.
-    
-        ```powershell 
+
+        ```powershell
         Uninstall-NAVApp -ServerInstance <server instance name> -Name <extensions name> -Tenant <tenant ID> -Version <extension version> -Force
         ```
-        
+
         Replace  `<extension name>` and `<extension version>` with the exact name and version the published System Application.
 
         For example, together with the Get-NAVApp cmdlet, you can uninstall all extensions with a single command:
 
-        ```powershell 
+        ```powershell
         Get-NAVAppInfo -ServerInstance <server instance name> -Tenant <tenant ID>| % { Uninstall-NAVApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name $_.Name -Version $_.Version -Force}
-        ``` 
+        ```
 
 4. Unpublish all extensions from the application server instance.
 
     To unpublish an extension, use the [Unpublish-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/unpublish-navapp):
-    
+
     ```powershell 
     Unpublish-NAVApp -ServerInstance <server instance name> -Name <extension name> -Version <extension version>
     ``` 
@@ -389,7 +389,7 @@ If you have a multitenant deployment, do these steps for each tenant.
 
 Complete this task to install third-party extensions for which a new version wasn't published. For each extension, run the [Install-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp):
 
-```
+```powershell
 Install-NAVApp -ServerInstance <server instance name> -Name <extension name> -Version <extension version>
 ```
 
@@ -431,7 +431,7 @@ This task serves two purposes. It ensures that personalization works as expected
 
 On the **Help and Support** page in the client, you'll see an application version, such as 14.0.2345.6. For an explanation of the number, see [Version numbers in Business Central](../administration/version-numbers.md). This version isn't updated automatically when you install an update. If you want the version to reflect the version of the update or your own version, you change it manually.
 
-We recommend setting the value to application build number for the version 17 update. You get the number from the [Released Updates for Microsoft Dynamics 365 Business Central 2020 Release Wave 2 on-premises](https://support.microsoft.com/en-us/help/4549687).
+We recommend setting the value to application build number for the version 17 update. You get the number from the [Released Updates for Microsoft Dynamics 365 Business Central 2020 Release Wave 2 on-premises](https://support.microsoft.com/help/4549687).
 
 1. Run the [Set-NAVApplication cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navapplication):
 
@@ -475,7 +475,7 @@ At this point, the upgrade is complete, and you can open the client.
 
     Version 17 introduces a system permission that protects these two actions. The permission is granted by the system object **6110 Allow Action Export To Excel**. Because of this change, users who had permission to these actions before upgrading, will lose permission. To grant permission again, do one of the following steps:
 
-    - Assign the **EXCEL EXPORT ACTION** permission set to appropriate users. 
+    - Assign the **EXCEL EXPORT ACTION** permission set to appropriate users.  
     - Add the system object **6110 Allow Action Export To Excel** permission directly to appropriate permission sets.
 
      For more information about working with permission sets and permissions, see [Export and Import Permission Sets](/dynamics365/business-central/ui-define-granular-permissions#to-export-and-import-a-permission-set).

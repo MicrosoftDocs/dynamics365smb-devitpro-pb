@@ -1,9 +1,9 @@
 ---
-title: "Record.TransferFields Method"
+title: "Record.TransferFields(var Record, Boolean, Boolean) Method"
 description: "Copies all matching fields in one record to another record."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Record.TransferFields Method
+# Record.TransferFields(var Record, Boolean, Boolean) Method
 > **Version**: _Available or changed with runtime version 4.2._
 
 Copies all matching fields in one record to another record.
 
 
 ## Syntax
-```
+```AL
  Record.TransferFields(var FromRecord: Record, InitPrimaryKeyFields: Boolean, SkipFieldsNotMatchingType: Boolean)
 ```
 ## Parameters

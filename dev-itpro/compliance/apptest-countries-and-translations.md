@@ -15,18 +15,19 @@ ms.author: soalex
 This page lists the countries/regions where [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available and which languages are supported.
 
 > [!NOTE]  
-> In countries where Microsoft has not delivered a localization, partners can build [localizations](../developer/readiness/readiness-develop-localization.md) using translation and localization apps that are published on AppSource. These apps are built on top of the international (W1) version of [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. 
+> In countries where Microsoft has not delivered a localization, partners can build localizations using translation and localization apps that are published on AppSource. These apps are built on top of the international (W1) version of [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. 
 
-The following table provides the list of all countries/regions where [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available or in planning for future availability, and states whether the localization is provided by Microsoft or partner(s).
+The following table provides the list of all countries/regions where [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available or in planning for future availability, and states whether the localization is provided by Microsoft or partner(s). Note, that availability in the list concerns [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] as a cloud service and does not concern availability of partner localizations. Please check [partner localization app availability on AppSource](https://appsource.microsoft.com/marketplace/apps?product=dynamics-365%3Bdynamics-365-business-central&page=1).  
+
 
 ## Countries and regions
 
 |Country/Region|Localized by|Availability|Environment Country in Tenant Admin Center|Azure Region|
 |-----------|---------|------------|-----------|---------|
-|Algeria|Partner|July 2021|||
+|Algeria|Partner|Available|DZ|South Africa North|
 |Australia|Microsoft|Available|AU|Australia East|
 |Austria|Microsoft|Available|AT|West Europe, Netherlands|
-|Bangladesh|Partner|July 2021|||
+|Bangladesh|Partner|Available|BD|Southeast Asia, Singapore|
 |Belgium|Microsoft|Available|BE|West Europe, Netherlands|
 |Brazil|Partner|Available|BR|Brazil South|
 |Canada|Microsoft|Available|CA|Canada Central|
@@ -34,7 +35,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Croatia|Partner|Available|HR|West Europe, Netherlands|
 |Czechia|Microsoft|Available|CZ|West Europe, Netherlands|
 |Denmark|Microsoft|Available|DK|North Europe, Ireland|
-|Egypt|Partner|July 2021|||
+|Egypt|Partner|Available|EG|South Africa North|
 |Estonia|Partner|Available|EE|North Europe, Ireland|
 |Faroe Islands (Denmark)|Microsoft|Available|DK|North Europe, Ireland|
 |Finland|Microsoft|Available|FI|North Europe, Ireland|
@@ -50,39 +51,39 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |India|Microsoft|Available|IN|Central India|
 |Italy|Microsoft|Available|IT|West Europe, Netherlands|
 |Japan|Partner|Available|JP|Southeast Asia, Singapore|
-|Kenya|Partner|July 2021|||
+|Kenya|Partner|Available|KE|South Africa North|
 |Latvia|Partner|Available|LV|North Europe, Ireland|
-|Lebanon|Partner|July 2021|||
+|Lebanon|Partner|Available|LB|UAE North|
 |Lithuania|Partner|Available|LT|North Europe, Ireland|
-|Luxembourg|Partner|July 2021|||
+|Luxembourg|Partner|Available|LU|West Europe, Netherlands|
 |Malaysia|Partner|Available|MY|Southeast Asia, Singapore|
-|Malta|Partner|July 2021|||
+|Malta|Partner|Available|MT|West Europe, Netherlands|
 |Mexico|Microsoft|Available|MX|South Central US|
-|Morocco|Partner|July 2021|||
+|Morocco|Partner|Available|MA|South Africa North|
 |Netherlands|Microsoft|Available|NL|West Europe, Netherlands|
 |New Zealand|Microsoft|Available|NZ|Australia East|
-|Nigeria|Partner|July 2021|||
-|Norway|Microsoft|Available|NO|North Europe, Ireland|
+|Nigeria|Partner|Available|NG|South Africa North|
+|Norway|Microsoft|Available|NO|Norway East|
 |Peru|Partner|Available|PE|Brazil South|
 |Philippines|Partner|Available|PH|Southeast Asia, Singapore|
 |Poland|Partner|Available|PL|West Europe, Netherlands|
 |Portugal|Partner|Available|PT|West Europe, Netherlands|
-|Qatar|Partner|July 2021|||
+|Qatar|Partner|Available|QA|UAE North|
 |Romania|Partner|Available|RO|West Europe, Netherlands|
 |Russia **(on-premises only)**|Microsoft|Available|(Not listed)|N/A|
-|Saudi Arabia|Partner|July 2021|||
+|Saudi Arabia|Partner|Available|SA|UAE North|
 |Serbia|Partner|Available|RS|West Europe, Netherlands|
 |Singapore|Partner|Available|SG|Southeast Asia, Singapore|
 |Slovenia|Partner|Available|SI|West Europe, Netherlands|
 |South Africa|Partner|Available|ZA|South Africa North|
 |South Korea|Partner|Available|KR|Southeast Asia, Singapore|
 |Spain|Microsoft|Available|ES|West Europe, Netherlands|
-|Sri Lanka|Partner|July 2021|||
+|Sri Lanka|Partner|Available|LK|Southeast Asia, Singapore|
 |Sweden|Microsoft|Available|SE|North Europe, Ireland|
-|Switzerland|Microsoft|Available|CH|West Europe, Netherlands|
+|Switzerland|Microsoft|Available|CH|Switzerland North|
 |Taiwan|Partner|Available|TW|Southeast Asia, Singapore|
 |Thailand|Partner|Available|TH|Southeast Asia, Singapore|
-|Tunisia|Partner|July 2021|||
+|Tunisia|Partner|Available|TN|South Africa North|
 |Turkey|Partner|Available|TR|West Europe, Netherlands|
 |United Arab Emirates|Partner|Available|AE|UAE North|
 |United Kingdom|Microsoft|Available|GB|UK West|

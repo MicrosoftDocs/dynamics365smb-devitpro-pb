@@ -14,9 +14,9 @@ ms.author: jswymer
 
 # Analyzing Long Running Operation (SQL Query) Telemetry
 
-A SQL query that takes longer than 1000 milliseconds to execute will be sent to your Application Insights resource.
+Any SQL query that takes longer than 1000 milliseconds to execute will be sent to your Azure Application Insights resource. This enables you to focus on tuning SQL queries that take too long to execute (maybe one or more tables miss an index or maybe some filters are missing). It also reduces the ingestion of data into the Azure Application Insights resource to save cost of having telemetry.
 
-To get a quick overview, you can go the [Application Insights Overview dashboard](/azure/azure-monitor/app/overview-dashboard).
+With Business Central online, if you want to capture all SQL queries for a short period of time for a given session, you can enable **Additional logging** from the **Help & Support** page. This lets you analyze queries that take a short time to run but happen very frequently. <!--Additional logging is currently only available on production environments running version 17.4 or later.-->
 
 > [!NOTE]
 > With Business Central On-premises, you can change the threshold that defines long running queries. For more information, see [Defining Long Running SQL Queries Threshold](monitor-long-running-sql-queries-event-log.md#threshold).
@@ -100,7 +100,6 @@ The following code snippet shows an example of the CustomDimensions.
 ## See also
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
-[Enabling Application Insights for Tenant Telemetry On-Premises](telemetry-enable-application-insights.md)  
-[Enable Sending Telemetry to Application Insights](tenant-admin-center-telemetry.md#appinsights)  
+[Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  
 [Monitoring and Analyzing Long Running SQL Queries On-Premises](monitor-long-running-sql-queries-event-log.md)  
 [The Business Central Administration Center](tenant-admin-center.md)  

@@ -104,7 +104,7 @@ In this walkthrough, you learn how to create a card page to display customer det
   
      In Page Designer, your card page should now look something like the following illustration.  
   
-     ![Customer Card page in Page Designer](media/NAV_CardPageElements.png "NAV\_CardPageElements")  
+     ![Customer Card page in Page Designer.](media/NAV_CardPageElements.png "NAV\_CardPageElements")  
   
 5.  Select the next available blank row on your page, below **Phone No.**, and on the **View** menu, choose **Properties**.  
   

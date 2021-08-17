@@ -13,7 +13,7 @@ ms.service: "dynamics365-business-central"
 
 This article provides an introduction to the most common tasks you'll do to set up and maintain a [!INCLUDE[server](../developer/includes/server.md)] multitenant deployment.
 
-![Multitenant architecture overview](../developer/media/architecture-multitenant.png "Multitenant architecture overview")
+![Multitenant architecture overview.](../developer/media/architecture-multitenant.png "Multitenant architecture overview")
 
 
 

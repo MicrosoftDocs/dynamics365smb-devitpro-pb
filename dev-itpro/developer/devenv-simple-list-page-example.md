@@ -16,7 +16,7 @@ ms.author: jswymer
 
 The AL code in this article creates a simple list page that displays records from an existing table.
 
-![List page example](media/sample-list-page.png "[List page example")
+![List page example.](media/sample-list-page.png "[List page example")
 
 For a more detailed explanation of the list page, see [Designing List Pages](devenv-designing-list-pages.md).
 

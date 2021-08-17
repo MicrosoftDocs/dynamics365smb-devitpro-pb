@@ -1,9 +1,9 @@
 ---
-title: "InStream.Read Method"
-description: "Reads a specified number of bytes from an InStream object. Data is read in binary format."
+title: "InStream.Read(var Any [, Integer]) Method"
+description: "Reads a specified number of bytes from an InStream object."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# InStream.Read Method
+# InStream.Read(var Any [, Integer]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Reads a specified number of bytes from an InStream object. Data is read in binary format.
 
 
 ## Syntax
-```
+```AL
 [Read := ]  InStream.Read(var Variable: Any [, Length: Integer])
 ```
 ## Parameters

@@ -15,7 +15,7 @@ ms.author: solsen
 
 The [!INCLUDE[prod_short](includes/prod_short.md)] client includes the **Tell me** feature that lets users find objects and online help articles by entering search terms. When you have added a page or a report in your extension, you most likely want it to be discoverable to users in **Tell me**. In AL, you make a page or report searchable from **Tell me** by setting the [UsageCategory property](properties/devenv-usagecategory-property.md) in code. The **UsageCategory** setting will make the page or report searchable, and the value chosen for the setting will further sub categorize the item.
 
-![TellMe](media/tellmeApril19.png)
+![TellMe.](media/tellmeApril19.png)
 
 **Tell me** finds pages and reports by searching the captions that are specified on page and report objects by the [CaptionML property](properties/devenv-caption-property.md).
 

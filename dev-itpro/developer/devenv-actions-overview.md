@@ -16,7 +16,7 @@ In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], actions are display
   
 The actions can be displayed in different menus on the action bar.
 
-![image text](media/action-overview.png) 
+![image text.](media/action-overview.png) 
 
 You can choose from the following action menus to place the actions in the specified area.
   

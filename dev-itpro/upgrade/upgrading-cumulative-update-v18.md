@@ -2,7 +2,7 @@
 title: Install a version 18 update
 description: This article describes the tasks required for getting the monthly version 18 update applied to your Dynamics 365 Business Central on-premises.
 ms.custom: na
-ms.date: 04/20/2021
+ms.date: 07/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ You can choose to update only the platform or both the platform and application 
 
 The following figure provides a high-level representation of a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] solution and the components that are involved in the installation of an update.
 
-![Business Central application stack](../developer/media/bc15-architecture-overview.png "Business Central application stack")  
+![Business Central application stack.](../developer/media/bc15-architecture-overview.png "Business Central application stack")  
 
 The databases store the application metadata and business data. If you have a single-tenant deployment, this data is stored in a single database. A multitenant deployment stores the application metadata in the application database and the business data in one or more tenant databases.
 
@@ -338,7 +338,7 @@ Follow the next tasks to update the application code to the new features and hot
 You publish the System Application extension only if it was used in old solution. Add-on extensions include Microsoft and third- party extensions that were used in the old solution.
 
 > [!NOTE]
-> If a license update is required for a regulatory feature, customers can download an updated license from CustomerSource (see [How to Download a Microsoft Dynamics 365 Business Central License from CustomerSource](https://docs.microsoft.com/dynamics/s-e/)), and partners can download their customers' updated license from VOICE (see [How to Download a Microsoft Dynamics 365 Business Central Customer License from VOICE](https://mbs.microsoft.com/partnersource/northamerica/deployment/documentation/how-to-articles/howtodownloadcustomernavlicense)).
+> If a license update is required for a regulatory feature, customers can download an updated license from CustomerSource (see [How to Download a Microsoft Dynamics 365 Business Central License from CustomerSource](/dynamics/s-e/)), and partners can download their customers' updated license from VOICE (see [How to Download a Microsoft Dynamics 365 Business Central Customer License from VOICE](https://mbs.microsoft.com/partnersource/northamerica/deployment/documentation/how-to-articles/howtodownloadcustomernavlicense)).
 
 ## Upgrade System Application
 

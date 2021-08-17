@@ -40,7 +40,7 @@ The following guidelines have been implemented for EDM.
   
      The browser should now show the complete metadata for the page web service that you have published. The beginning of this document looks like this:  
   
-     ![EDMX metadata](../developer/media/EDMX.JPG "EDMX")  
+     ![EDMX metadata.](../developer/media/EDMX.JPG "EDMX")  
   
 ## See Also  
  [OData Web Services](OData-Web-Services.md)

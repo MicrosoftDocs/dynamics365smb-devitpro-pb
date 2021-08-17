@@ -13,7 +13,7 @@ author: jswymer
 
 In AL code, you can use the FILTERPAGEBUILDER data type to create a filter page that enables users to set filters on multiple tables. Filter pages contains one or more filter controls, where each filter control can be used to set filters on a specific table. In the [!INCLUDE[prodshort](includes/prodshort.md)] client, filter pages are generated at runtime and run in a modal dialog box. The following figure illustrates a filter page that filters on the Item table.  
   
- ![Shows a filter page for the item table](media/NAV_FilterPage.png "NAV\_FilterPage")  
+ ![Shows a filter page for the item table.](media/NAV_FilterPage.png "NAV\_FilterPage")  
   
 To create a filter page, you use AL code and the methods that are available for the [FILTERPAGEBUILDER data type](methods-auto/filterpagebuilder/filterpagebuilder-data-type). The following code example shows the C/AL code that creates the filter page in the figure.  
   

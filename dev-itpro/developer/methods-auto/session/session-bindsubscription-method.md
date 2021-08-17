@@ -1,9 +1,9 @@
 ---
-title: "Session.BindSubscription Method"
-description: "Binds the event subscriber methods in the codeunit to the current codeunit instance for handling the events that they subscribe to. This essentially activates the subscriber functions for the codeunit instance."
+title: "Session.BindSubscription(Codeunit) Method"
+description: "Binds the event subscriber methods in the codeunit to the current codeunit instance for handling the events that they subscribe to."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Session.BindSubscription Method
+# Session.BindSubscription(Codeunit) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Binds the event subscriber methods in the codeunit to the current codeunit instance for handling the events that they subscribe to. This essentially activates the subscriber functions for the codeunit instance.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  Session.BindSubscription(Codeunit: Codeunit)
 ```
 > [!NOTE]

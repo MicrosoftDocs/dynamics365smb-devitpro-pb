@@ -80,12 +80,12 @@ The first task is to use Azure portal to register an application for Business Ce
 
 After you create the application registration, the next task is to configure the Business Central tenant to use it. You'll need the following information about the application registration: redirect URL, application (client) ID, and client secret. 
 
-1. In the top-right corner, choose the ![Tell me](../developer/media/search-icon.png "Tell me what you want to do") icon, enter **Assisted Setup**, and then choose the related link.
+1. In the top-right corner, choose the ![Tell me.](../developer/media/search-icon.png "Tell me what you want to do") icon, enter **Assisted Setup**, and then choose the related link.
 2. Select **Set up Azure Active Directory**, then **Next**.
 
     The **Connect With Azure** page opens.
 <!--
-![Setting the Azure Active Directory](../developer/media/set-up-azure-ad.png)
+![Setting the Azure Active Directory.](../developer/media/set-up-azure-ad.png)
 -->
 3. In the **Redirect URL** field, make sure the URL matches the redirect URL that's assigned the registered Business Central application in Azure AD.
 4. In the **Application ID** field, specify the application (client) ID of the Business Central application in Azure AD that you copied in the previous task.

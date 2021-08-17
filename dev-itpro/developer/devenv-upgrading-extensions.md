@@ -169,7 +169,7 @@ The codeunit also publishes the following events:
 The following steps provide the general pattern for using an upgrade tag on upgrade code.
 
 > [!IMPORTANT]
-> Use upgrade tags only for upgrade purposes only.
+> Use upgrade tags only for upgrade purposes.
 
 1. Use the following construct around the upgrade code to check for and add an upgrade tag.
         
@@ -235,7 +235,7 @@ The following steps provide the general pattern for using an upgrade tag on upgr
 
 ### Example
 
-The following code is a simple example of an upgrade codeunit. For this example, the original extension extended the **Customer** table with a **Shoesize** field. In the new version of the extension, the **Shoesize** field has been removed [ObsoleteState](properties/devenv-obsoletestate-property.md)=removed), and replaced by a new field **ABC - Customer Shoesize**. The upgrade code will copy data from **Shoesize** field to the **ABC - Customer Shoesize**. An upgrade tag ensures that code doesn't run more than once, and data isn't overwritten on future upgrades. The example also uses a separate codeunit to define the upgrade tag so that they aren't hard-coded, but within methods.
+The following code is a simple example of an upgrade codeunit. For this example, the original extension extended the **Customer** table with a **Shoesize** field. In the new version of the extension, the **Shoesize** field has been removed ([ObsoleteState](properties/devenv-obsoletestate-property.md)=removed), and replaced by a new field **ABC - Customer Shoesize**. The upgrade code will copy data from **Shoesize** field to the **ABC - Customer Shoesize**. An upgrade tag ensures that code doesn't run more than once, and data isn't overwritten on future upgrades. The example also uses a separate codeunit to define the upgrade tag so that they aren't hard-coded, but within methods.
 
 ```AL
 codeunit 50100 "ABC Upgrade Shoe Size"

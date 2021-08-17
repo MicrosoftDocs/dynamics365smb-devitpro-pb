@@ -3,7 +3,7 @@ title: "OnInstallAppPerDatabase (Codeunit) Trigger"
 description: "Runs during the installation or reinstallation of an extension."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/27/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,7 +24,7 @@ Runs during the installation or reinstallation of an extension.
 > The [Subtype Property](../../properties/devenv-subtype-property.md) must be set to **Install** in the Codeunit.
 
 ## Syntax
-```
+```AL
 trigger OnInstallAppPerDatabase()
 begin
     ...

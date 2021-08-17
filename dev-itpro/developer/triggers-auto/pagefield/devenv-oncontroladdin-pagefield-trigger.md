@@ -22,7 +22,7 @@ Executed when a control add-in on the client sends event information to the serv
 
 
 ## Syntax
-```
+```AL
 trigger OnControlAddIn(Index: Integer, Data: Text)
 begin
     ...

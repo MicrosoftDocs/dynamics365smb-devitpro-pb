@@ -3,7 +3,7 @@ title: "CommitBehavior Attribute"
 description: "Specifies the behavior of a commit call inside the method scope."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/16/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,7 +28,7 @@ Specifies the behavior of a commit call inside the method scope.
 
 ## Syntax
 
-```
+```AL
 [CommitBehavior(Behavior: CommitBehavior)]
 ```
 

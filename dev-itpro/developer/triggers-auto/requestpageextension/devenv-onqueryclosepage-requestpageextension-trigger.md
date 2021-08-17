@@ -22,7 +22,7 @@ Runs when a page closes and before the OnClosePage trigger executes.
 
 
 ## Syntax
-```
+```AL
 trigger OnQueryClosePage(CloseAction: Action): Ok
 begin
     ...
@@ -38,9 +38,9 @@ The CloseAction chosen by the user; usually OK or Cancel.
 
 ## Return Value
 
-*Ok*
+*Ok*  
 &emsp;Type: [Boolean](../../methods-auto/boolean/boolean-data-type.md)  
-**true** if page was closed, otherwise **false**. This value is checked after each call. The default value is **true**.
+**true** if page was closed, otherwise **false**. This value is checked after each call. The default value is **true**.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

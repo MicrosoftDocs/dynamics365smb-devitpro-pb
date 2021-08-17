@@ -23,7 +23,7 @@ The signing of an APP package file must be performed on a computer that has [!IN
 > [!IMPORTANT]  
 > If you publish the extension as an app on AppSource, the APP package file must be signed using a certificate purchased from a Certification Authority that has its root certificates in Microsoft Windows. You can obtain a certificate from a range of certificate providers, including but not limited to GoDaddy, DigiCert, and Symantec, see the image below.
 
-![Certificates](media/certificates.png)
+![Certificates.](media/certificates.png)
 
 
 ## Steps for signing your .app file

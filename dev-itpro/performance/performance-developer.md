@@ -113,6 +113,8 @@ Reports generally fall into two categories. They can be specific to a single ins
 Read more about how to tune RDL reports here:
 - [RDLC Performance Optimization Tips](https://community.dynamics.com/business/b/navteam/posts/a-couple-of-rdlc-performance-optimization-tips)
 
+[!INCLUDE [send-report-excel](../developer/includes/send-report-excel.md)]
+
 ## Efficient extracts to data lakes or data warehouses
 
 When establishing a data lake or a data warehouse, you typically need to do two types of data extraction:

@@ -27,7 +27,7 @@ You start page inspection from the **Help & Support** page. Choose the question 
 
 The **Page inspection** pane opens on the side. The following figure illustrates the **Page Inspection** pane on the **Sales Order** page.
 
-![Page Inspection Pane](media/page-inspection-example.png)
+![Page Inspection Pane.](media/page-inspection-example.png)
 
 When the **Page Inspection** pane first opens, it shows information that pertains to the main page object.
 
@@ -59,7 +59,6 @@ The **Page** field shows information about the main page or a selected (highligh
 - The ID as specified by the [ID property](./properties/devenv-properties.md).
 - The type, as specified by the [PageType property](properties/devenv-pagetype-property.md).
 
-
 #### Elements shown with limited information  
 
 - Role Center pages
@@ -69,6 +68,8 @@ The **Page** field shows information about the main page or a selected (highligh
 - Report request pages and previews
 
     If you open a report request page or preview for inspection, the only information shown in the Page Inspection pane is the report's name and ID.
+
+    [!INCLUDE [send-report-excel](includes/send-report-excel.md)]
 
 - System parts, such as Links or Notes, and parts containing charts.
 
@@ -93,7 +94,7 @@ If a page has a source table, the **View table** link is available. This link op
 
 The **Table Fields** tab displays information about all fields in the source table for the current record, including fields that don't appear on the page.
 
-![Page Inspection Table Fields Tab](media/page-inspection-table-fields.png)
+![Page Inspection Table Fields Tab.](media/page-inspection-table-fields.png)
 
 Each field is shown with the following information:
 
@@ -113,7 +114,7 @@ Each field is shown with the following information:
 
 The **Extensions** tab displays installed extensions that affect the selected page or its source table.
 
-![Page Inspection Extensions Tab](media/page-inspection-extensions.png)
+![Page Inspection Extensions Tab.](media/page-inspection-extensions.png)
 
 Except for the type and performance information, the data that's shown is defined in the extension's app.json file, which is configured during development. For more information, see [App.json](devenv-json-files.md#Appjson).
 
@@ -140,7 +141,7 @@ The performance information includes two values. The first value indicates the t
 
 The **Page Filters** tab displays the current filters used on the current page. The tab shows filters set by code, set in list views, or defined by the user in the filter pane of the page.
 
-![Page Inspection Page Filters](media/page-inspection-page-filters.png)
+![Page Inspection Page Filters.](media/page-inspection-page-filters.png)
 
 The following table describes the different filter types.
 

@@ -43,8 +43,10 @@ To facilitate testing your report layout, the following simple example extends t
 
     }
     ```
+
 2. Build the extension (**Ctrl+Shift+B**) to generate the MyRDLReport.rdl file.
 3. Add the **Customer** table as the data item and the **Name** field as a column to the report by adding the following lines of code to the report:  
+
     ```AL
     report 50123 MyRdlReport
     {
@@ -62,6 +64,7 @@ To facilitate testing your report layout, the following simple example extends t
         }   
     }
     ```
+
 4. Build the extension (**Ctrl+Shift+B**). The `MyRDLReport.rdl` file will be created in the root of the current project. 
 5. Open the generated report layout file in **Microsoft SQL Server Report Builder**.
 6. Edit the layout by inserting a table. 
@@ -71,12 +74,15 @@ To facilitate testing your report layout, the following simple example extends t
 You will now see the generated report in preview mode.
 
 > [!NOTE]  
-> If the report layout is not generated, open the `settings.json` from Visual Studio Code. Use **Ctrl+Shift+P**, then choose **Preferences: Open User Settings**, locate the **AL Language extension**. Under **Compilation Options**, choose **Edit in settings.json** and add the following line:  
->    ```json
->    "al.compilationOptions": {
->            "generateReportLayout": true
->        }
->    ```
+> If the report layout is not generated, open the `settings.json` from Visual Studio Code. Use **Ctrl+Shift+P**, then choose **Preferences: Open User Settings**, locate the **AL Language extension**. Under **Compilation Options**, choose **Edit in settings.json** and add the following line:
+  
+>```json
+>"al.compilationOptions": {
+>    "generateReportLayout": true
+>}
+>```
+
+[!INCLUDE [send-report-excel](includes/send-report-excel.md)]
 
 ## See Also
 

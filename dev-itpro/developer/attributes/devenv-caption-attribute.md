@@ -3,7 +3,7 @@ title: "Caption Attribute"
 description: "Specifies a caption for OData actions."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/16/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,7 +28,7 @@ Specifies a caption for OData actions.
 
 ## Syntax
 
-```
+```AL
 [Caption(Text: Text [, Locked: Boolean] [, Comment: Text] [, MaxLength: Integer])]
 ```
 

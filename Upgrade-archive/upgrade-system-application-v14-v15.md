@@ -23,7 +23,7 @@ Use this process when you have a customized Business Central application that yo
 
 <!-- For this scenario, I used a BC 14.0 modified base application on a BC 14.0 server instance, which include some customization on C/AL objects in the base application and a custom extension that modified the Item table. is proecess will convert the entire BC 14 custom application to an Extension on the BC 15 platform.-->
 
-!["Upgrade to system application in Business Central](../developer/media/bc15-system-application-upgrade-customized-app.png "Upgrade to system application in Business Central")
+!["Upgrade to system application in Business Central.](../developer/media/bc15-system-application-upgrade-customized-app.png "Upgrade to system application in Business Central")
  
 
 #### Single-tenant and multitenant deployments

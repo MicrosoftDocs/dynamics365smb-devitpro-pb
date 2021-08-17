@@ -8,16 +8,17 @@ ms.reviewer: na
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: freddyk
-ms.date: 04/01/2021
+ms.date: 08/01/2021
 ---
 
 # Update Lifecycle for AppSource Apps FAQ
+
 Please see the following sections for frequently asked questions regarding updating apps on AppSource.
 
 ## I want to submit an updated version of my app. What is the process for that?
 For any updated version of your app (small or large changes), you follow the same submission as your original version. It must go through the same validation process. The following are the steps that you must follow:
-- Increase the version number of your app within it’s json/manifest file.
-- Do not change the app’s AppID within it’s json/manifest file. That needs to remain the same for life of the app
+- Increase the version number of your app within its json/manifest file.
+- Do not change the app’s AppID within its json/manifest file. That needs to remain the same for life of the app
 - Include an upgrade codeunit and ensure that it works. 
 - Upload the app file to your existing Partner Center offer.
 - In Partner Center, edit the version field to match what is now in your updated app file.
@@ -69,9 +70,10 @@ Yes, we have some valuable tips we would like to share. These are tips that can 
 - Publish and install your app. This is another big validation failure we see too often.
 - Test your app’s functionality with 100% coverage. You are the expert on the app and know it best. If you are only testing a small percentage of your app, customers will most likely find issues resulting in you having to update your app more often. And if customers are the ones finding your app issues, they may decide to uninstall it. You should have a vested interest in providing a quality app.
 - Test the upgrade of your app. upgrade from the previous version to this latest. Your updated app will not pass validation until the upgrade works. If it fails in our validation, we will return it to you, leading to a delay in it going to our service.
-
+- [!INCLUDE[appsource-appinsights](includes/appsource-appinsights.md)].
+ 
 > [!NOTE]  
-> The tips that we provide above are for your benefit to pass validation the first time through each submission. And to emphasize these points, think of the delays that can arise when you do not follow these tips. If you submit, it can take a couple days before we validate the app. Once we validate it, if all is good, it should pass quickly. If we find issues that lead us to fail the validation, we send the app back to you as you have to make fixes. It could then take you days to properly fix. Next time you submit, your app does not go to the front of the queue. It begins at the bottom again which means it could be another couple days before we validate it again. By following our tips above, you can avoid those delays. Spend a bit more time up front finding those issues yourself, leading to a quicker path to our service.
+> The tips that we provide above are for your benefit to pass validation the first time through each submission. And to emphasize these points, think of the delays that can arise when you don't follow these tips. If you submit, it can take a couple days before we validate the app. Once we validate it, if all is good, it should pass quickly. If we find issues that lead us to fail the validation, we send the app back to you as you have to make fixes. It could then take you days to properly fix. Next time you submit, your app does not go to the front of the queue. It begins at the bottom again which means it could be another couple days before we validate it again. By following our tips above, you can avoid those delays. Spend a bit more time up front finding those issues yourself, leading to a quicker path to our service.
 
 ## See Also
 [Retaining table data after publishing](devenv-retaining-data-after-publishing.md)  

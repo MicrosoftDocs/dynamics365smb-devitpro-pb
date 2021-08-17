@@ -42,7 +42,7 @@ Developers and administrators use the [!INCLUDE[nav_dev_long](includes/nav_dev_l
 
 7.  On the **Customize the Installation** page, choose the plus sign \(+\) to expand the **Client** option.  
 
-8.  Choose **Development Environment \(C/SIDE\)**, and then choose **Run from My Computer**. You must click in the rectangle, and not on the text: ![Click in the box and select Run from My Computer](media/RunFromMy.JPG "RunFromMy")  
+8.  Choose **Development Environment \(C/SIDE\)**, and then choose **Run from My Computer**. You must click in the rectangle, and not on the text: ![Click in the box and select Run from My Computer.](media/RunFromMy.JPG "RunFromMy")  
 
 9. Choose **Next** to go to the **Specify Parameters** page.  
 

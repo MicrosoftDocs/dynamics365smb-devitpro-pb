@@ -6171,6 +6171,11 @@
     "redirect_document_id": false
    },
    { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0092-applicationinsightskeymustbeused.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop-as0092-applicationmanifestmustspecifyapplicationinsightsresource",
+    "redirect_document_id": false
+   },
+   {
     "source_path": "dev-itpro/administration/FAQ-Intelligent-Cloud.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/administration/faq-migrate-data",
     "redirect_document_id": false

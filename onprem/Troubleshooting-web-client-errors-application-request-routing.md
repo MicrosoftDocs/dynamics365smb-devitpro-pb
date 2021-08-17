@@ -27,7 +27,7 @@ To resolve this issue, on the server farm in IIS, add or edit a routing rule to 
 |--------|---------|-----------|
 |`HTTP_X_FORWARED_PROTO`|`http` ot `https`|`true`|
 
-For more information, see [Using URL Rewrite ](https://docs.microsoft.com/iis/extensions/url-rewrite-module/using-url-rewrite-module-20).
+For more information, see [Using URL Rewrite ](/iis/extensions/url-rewrite-module/using-url-rewrite-module-20).
   
 ## See Also  
  [Deploying the Microsoft Dynamics NAV Web Server Components](Deploying-the-Microsoft-Dynamics-NAV-Web-Server-Components.md)   

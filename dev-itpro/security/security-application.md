@@ -17,7 +17,7 @@ This section helps you understand and improve the security of your Business Cent
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] uses a layered approach to application security, as outlined in the following diagram.
 
-![Security overview](../developer/media/security-overview.png "Security overview")
+![Security overview.](../developer/media/security-overview.png "Security overview")
 
 ## Authentication
 

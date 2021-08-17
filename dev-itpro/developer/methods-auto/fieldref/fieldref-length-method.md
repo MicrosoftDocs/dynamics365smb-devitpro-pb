@@ -1,9 +1,9 @@
 ---
-title: "FieldRef.Length Method"
-description: "Gets the maximum size of the field (the size specified in the DataLength property of the field). This method is usually used for finding the defined length of code and text fields."
+title: "FieldRef.Length() Method"
+description: "Gets the maximum size of the field (the size specified in the DataLength property of the field)."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# FieldRef.Length Method
+# FieldRef.Length() Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Gets the maximum size of the field (the size specified in the DataLength property of the field). This method is usually used for finding the defined length of code and text fields.
 
 
 ## Syntax
-```
+```AL
 Length :=   FieldRef.Length()
 ```
 > [!NOTE]

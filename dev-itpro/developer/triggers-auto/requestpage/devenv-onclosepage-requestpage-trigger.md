@@ -22,7 +22,7 @@ Runs when a page closes after the OnQueryClosePage trigger is run.
 
 
 ## Syntax
-```
+```AL
 trigger OnClosePage()
 begin
     ...

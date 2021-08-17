@@ -12,7 +12,7 @@ author: jswymer
 # Deploying [!INCLUDE[prodsshort](../developer/includes/prod_short.md)] in a Two-Computer Topology
 In this scenario, you install the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)] on a computer separate than [!INCLUDE[server](../developer/includes/server.md)] and the SQL Server database components.  
 
- ![Installation on two computers](../media/two-computer-topology.png "Installation on two computers")  
+ ![Installation on two computers.](../media/two-computer-topology.png "Installation on two computers")  
 
 <!--
 > [!TIP]  
