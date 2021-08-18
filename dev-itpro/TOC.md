@@ -1,4 +1,4 @@
-﻿# [Development and administration](index.md)
+# [Development and administration](index.md)
 # [New and planned](/dynamics365/business-central/product-news?toc=/dynamics365/business-central/dev-itpro/toc.json)
 # Get started
 ## [Overview of business functionality](/dynamics365/business-central/across-business-functionality?toc=/dynamics365/business-central/dev-itpro/toc.json)
@@ -1538,7 +1538,7 @@
 ##### [ChangeCompany([String]) Method](developer/methods-auto/record/record-changecompany-method.md)
 ##### [ClearMarks() Method](developer/methods-auto/record/record-clearmarks-method.md)
 ##### [Consistent(Boolean) Method](developer/methods-auto/record/record-consistent-method.md)
-##### [Copy(var Record [, Boolean]) Method](developer/methods-auto/record/record-copy-method.md)
+##### [Copy(Record [, Boolean]) Method](developer/methods-auto/record/record-copy-method.md)
 ##### [CopyFilter(Any, Any) Method](developer/methods-auto/record/record-copyfilter-method.md)
 ##### [CopyFilters(var Record) Method](developer/methods-auto/record/record-copyfilters-method.md)
 ##### [CopyLinks(var Record) Method](developer/methods-auto/record/record-copylinks-table-method.md)
