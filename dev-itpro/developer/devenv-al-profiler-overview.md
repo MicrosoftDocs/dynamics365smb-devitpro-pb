@@ -1,6 +1,6 @@
 ---
 title: "AL Profiler Overview"
-description: "Description of the AL profiler for Business Central."
+description: "Description of how you can use the AL profiler to analyze code written for Business Central."
 
 author: SusanneWindfeldPedersen
 ms.custom: na
@@ -79,7 +79,7 @@ To investigate further, the **Self-time** and **Total time** columns are importa
 
 The nodes in the graph can be filtered. The syntax is the following:
 
-`@column name | alias> <op> <value> where `<br> 
+`@column name | <alias> <op> <value> where `<br> 
 `<column name> := [function, url, path, selfTime, totalTime, id, objectType, objectName, declaringApplication]`
 
 #### Column name aliases
