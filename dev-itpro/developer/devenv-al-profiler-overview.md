@@ -16,7 +16,7 @@ With the AL Profiler for [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]
 
 The AL profiler works on a snapshot of running code. Snapshot debugging is a recording of running code that allows for later offline inspection. For more information, see [Snapshot Debugging](devenv-snapshot-debugging.md). 
 
-## Snapshot setting
+## Snapshot configuration setting
 
 In order to do profiling on code, you must first capture a snapshot of running code. The snapshot configuration must include a parameter called  `executionContext` which has the following values in the table below.
 
