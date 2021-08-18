@@ -26,7 +26,7 @@ In order to do profiling on code, you must first capture a snapshot of running c
 |`Profile` | The snapshot session will only gather profile information, snappoints will be ignored, and debugging will not work.|
 |`DebugAndProfile` | Both debugging and profiling will be available as a result of a snapshot session.|
 
-This means that the configuration for the snapshot in the `launch.json` file, if we want to use it both for debugging and profiling purposes, will look equivalent to the following:
+This means that if we want to use the snapshot both for debugging and profiling purposes, the configuration for the snapshot in the `launch.json` file, will look equivalent to the following:
 
 ```al
 "configurations": [ 
