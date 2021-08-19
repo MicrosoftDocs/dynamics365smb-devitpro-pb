@@ -128,7 +128,7 @@ You can view a report and view the dataset and layout on a computer that does no
 
      ![Visual Studio ReportViewer control.](media/Plat_ExportReport_ReportViewerCtrl.png "Plat\_ExportReport\_ReportViewerCtrl")  
 
-    If you do not see the ReportViewer control, or the ReportViewer control version in earlier than 14.0.0.0, then see  view see [Integrating Reporting Services Using ReportViewer Controls - Get Started](https://docs.microsoft.com/sql/reporting-services/application-integration/integrating-reporting-services-using-reportviewer-controls-get-started#adding-the-reportviewer-control-to-a-new-windows-forms-project) to learn how to add the control to a Windows form application project.
+    If you do not see the ReportViewer control, or the ReportViewer control version in earlier than 14.0.0.0, then see  view see [Integrating Reporting Services Using ReportViewer Controls - Get Started](/sql/reporting-services/application-integration/integrating-reporting-services-using-reportviewer-controls-get-started#adding-the-reportviewer-control-to-a-new-windows-forms-project) to learn how to add the control to a Windows form application project.
 
     > [!TIP]  
     >  If the **Toolbox** window is not visible, then on the **View** menu, choose **Toolbox**.  

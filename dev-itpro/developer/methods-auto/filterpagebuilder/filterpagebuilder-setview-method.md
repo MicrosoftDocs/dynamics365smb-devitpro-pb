@@ -1,9 +1,9 @@
 ---
-title: "FilterPageBuilder.SetView Method"
-description: "Sets the current filter view, which defines the sort order, key, and filters, for a record in a filter control on a filter page. The view contains all fields that have default filters, but does not contain fields without filters."
+title: "FilterPageBuilder.SetView(String, String) Method"
+description: "Sets the current filter view, which defines the sort order, key, and filters, for a record in a filter control on a filter page."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# FilterPageBuilder.SetView Method
+# FilterPageBuilder.SetView(String, String) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Sets the current filter view, which defines the sort order, key, and filters, for a record in a filter control on a filter page. The view contains all fields that have default filters, but does not contain fields without filters.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  FilterPageBuilder.SetView(Name: String, View: String)
 ```
 ## Parameters

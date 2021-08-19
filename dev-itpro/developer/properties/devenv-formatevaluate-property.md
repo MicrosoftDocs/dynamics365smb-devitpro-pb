@@ -1,8 +1,9 @@
 ---
 title: "FormatEvaluate Property"
+description: "Sets the data that is being imported or exported as XML data types or as the standard AL data types."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 08/18/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,7 +17,7 @@ author: SusanneWindfeldPedersen
 # FormatEvaluate Property
 > **Version**: _Available or changed with runtime version 1.0._
 
-Sets the data that is being imported or exported as XML data types or as the standard C/SIDE data types.
+Sets the data that is being imported or exported as XML data types or as the standard AL data types.
 
 ## Applies to
 -   Xml Port

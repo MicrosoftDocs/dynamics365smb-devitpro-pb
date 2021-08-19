@@ -1,9 +1,9 @@
 ---
-title: "Query.Open Method"
-description: "Runs a query object and generates a data set that can be read. The following code shows the syntax of the OPEN method. Query is a variable of the Query data type that specifies the query object."
+title: "Query.Open() Method"
+description: "Runs a query object and generates a data set that can be read."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Query.Open Method
+# Query.Open() Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Runs a query object and generates a data set that can be read. The following code shows the syntax of the OPEN method. Query is a variable of the Query data type that specifies the query object.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  Query.Open()
 ```
 

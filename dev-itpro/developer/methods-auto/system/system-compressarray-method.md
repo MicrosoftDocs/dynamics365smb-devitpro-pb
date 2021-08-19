@@ -1,9 +1,9 @@
 ---
-title: "System.CompressArray Method"
-description: "Moves all non-empty strings (text) in an array to the beginning of the array. The resulting StringArray has the same number of elements as the input array, but empty entries appear at the end of the array."
+title: "System.CompressArray(Array of [String]) Method"
+description: "Moves all non-empty strings (text) in an array to the beginning of the array."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# System.CompressArray Method
+# System.CompressArray(Array of [String]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Moves all non-empty strings (text) in an array to the beginning of the array. The resulting StringArray has the same number of elements as the input array, but empty entries appear at the end of the array.
 
 
 ## Syntax
-```
+```AL
 [Count := ]  System.CompressArray(StringArray: Array of [String])
 ```
 > [!NOTE]

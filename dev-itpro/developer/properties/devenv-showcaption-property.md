@@ -1,8 +1,9 @@
 ---
 title: "ShowCaption Property"
+description: "Sets whether the text that is specified by the Caption Property is displayed for the control."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

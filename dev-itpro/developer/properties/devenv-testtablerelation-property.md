@@ -1,8 +1,9 @@
 ---
 title: "TestTableRelation Property"
+description: "Sets whether to include this field when evaluating field relations between primary and secondary indexes."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
