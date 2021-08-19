@@ -58,6 +58,21 @@ Specifies the recordID of the record that you want to run the task on.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+## Remarks  
+Scheduled tasks are recorded in table **2000000175 Scheduled Task**.  For more information about tasks and task scheduler, see managing tasks [Task Scheduler](../../devenv-task-scheduler.md).  
+
+## Example  
+The following example schedules a task to run the **Job Queue Dispatcher** and uses codeunit **Job Queue Error Handler** as the failure codeunit. 
+
+```al
+var
+    JobQueueEntry: Record "Job Queue Entry";
+begin
+    TaskScheduler.CreateTASK(CodeUnit::"Job Queue Dispatcher", CodeUnit::"Job Queue Error Handler", True, CompanyName, CurrentDateTime + 1000 + Random(3000), JobQueueEntry.RecordID);  
+end;
+```  
+
+
 ## See Also
 [TaskScheduler Data Type](taskscheduler-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
