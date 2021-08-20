@@ -48,15 +48,18 @@ When you start a new project, an `app.json` file is generated automatically, whi
 > Even though `showMyCode` is set to **false**, you will still be able to view that code if an extension is deployed through Visual Studio Code, as opposed to deploying using a cmdlet or via AppSource.-->
 
 ## Changing the IP protection setting
-If you want to allow debugging into an extension to view the source code, you can add the `showMyCode` property in the `app.json` file and set the property value to **true**. For example, if a developer develops extension A and he or someone else on the team develops extension B, and B depends on A, then debugging B will only step into the code for A if a method from A is called and if the `ShowMyCode` flag is set to **true** in the app.json for extension A as shown in the example below:
 
+If you want to allow debugging into your extension to view the source code, you can add the `allowDebugging` property in the `app.json` file and set the property value to **true**. For example, if a developer develops extension A and he or someone else on the team develops extension B, and B depends on A, then debugging B will only step into the code for A if a method from A is called and if the `allowDebugging` flag is set to **true** in the app.json for extension A as shown in the example below:
+
+<!-- example -->
 ```json
-"showMyCode": true
+
 ```
 
 By adding this setting, you *enable debugging* into an extension to view the source code when that extension is set as a dependency. 
 
-## See Also  
+## See Also
+
 [JSON Files](devenv-json-files.md)  
 [AL Development Environment](devenv-reference-overview.md)  
 [NonDebuggable Attribute](methods/devenv-nondebuggable-attribute.md)  
