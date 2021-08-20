@@ -1,8 +1,9 @@
 ---
 title: "MaintainSqlIndex Property"
+description: "Sets a value that indicates whether a SQL Server index that corresponds to the fields part of the Dynamics 365 Business Central key should be created."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

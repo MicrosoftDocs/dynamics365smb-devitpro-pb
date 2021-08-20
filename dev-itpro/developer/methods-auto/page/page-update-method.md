@@ -1,9 +1,9 @@
 ---
-title: "Page.Update Method"
-description: "Saves the current record and then updates the controls on the page. If you set the SaveRecord parameter to false, this method will not save the record before the page is updated."
+title: "Page.Update([Boolean]) Method"
+description: "Saves the current record and then updates the controls on the page."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Page.Update Method
+# Page.Update([Boolean]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Saves the current record and then updates the controls on the page. If you set the SaveRecord parameter to false, this method will not save the record before the page is updated.
 
 
 ## Syntax
-```
+```AL
  Page.Update([SaveRecord: Boolean])
 ```
 ## Parameters

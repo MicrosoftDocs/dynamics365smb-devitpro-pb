@@ -1,9 +1,9 @@
 ---
-title: "HttpHeaders.Add Method"
-description: "Adds the specified header and its value into the HttpHeaders collection. Validates the provided value."
+title: "HttpHeaders.Add(String, String) Method"
+description: "Adds the specified header and its value into the HttpHeaders collection."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# HttpHeaders.Add Method
+# HttpHeaders.Add(String, String) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Adds the specified header and its value into the HttpHeaders collection. Validates the provided value.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  HttpHeaders.Add(Name: String, Value: String)
 ```
 ## Parameters

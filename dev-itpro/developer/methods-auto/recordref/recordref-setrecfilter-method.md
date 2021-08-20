@@ -1,9 +1,9 @@
 ---
-title: "RecordRef.SetRecFilter Method"
+title: "RecordRef.SetRecFilter() Method"
 description: "Sets a filter on a record that is referred to by a RecordRef."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# RecordRef.SetRecFilter Method
+# RecordRef.SetRecFilter() Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Sets a filter on a record that is referred to by a RecordRef.
 
 
 ## Syntax
-```
+```AL
  RecordRef.SetRecFilter()
 ```
 

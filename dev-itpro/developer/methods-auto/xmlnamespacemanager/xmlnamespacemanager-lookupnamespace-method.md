@@ -1,9 +1,9 @@
 ---
-title: "XmlNamespaceManager.LookupNamespace Method"
+title: "XmlNamespaceManager.LookupNamespace(String, var Text) Method"
 description: "Gets the namespace URI for the specified prefix."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# XmlNamespaceManager.LookupNamespace Method
+# XmlNamespaceManager.LookupNamespace(String, var Text) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Gets the namespace URI for the specified prefix.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  XmlNamespaceManager.LookupNamespace(Prefix: String, var Result: Text)
 ```
 ## Parameters

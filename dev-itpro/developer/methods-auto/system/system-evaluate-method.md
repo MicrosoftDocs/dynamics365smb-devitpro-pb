@@ -1,9 +1,9 @@
 ---
-title: "System.Evaluate Method"
-description: "Evaluates a string representation of a value into its typical representation. The result is assigned to a variable."
+title: "System.Evaluate(var Any, String [, Integer]) Method"
+description: "Evaluates a string representation of a value into its typical representation."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 07/13/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# System.Evaluate Method
+# System.Evaluate(var Any, String [, Integer]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Evaluates a string representation of a value into its typical representation. The result is assigned to a variable.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  System.Evaluate(var Variable: Any, String: String [, Number: Integer])
 ```
 > [!NOTE]
@@ -37,7 +37,7 @@ The value of the string is assigned to the variable.
         
 *[Optional] Number*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-This optional value can be used when exporting data with an XmlPort. The only valid value is 9, which indicates that the data must be converted from XML format to C/SIDE format.  
+This optional value can be used when exporting data with an XmlPort. The only valid values are 9 and 10. 9 indicates that the data must be converted from XML format to C/SIDE format. 10 indicates that the data must be converted from bookmark.  
 
 
 ## Return Value

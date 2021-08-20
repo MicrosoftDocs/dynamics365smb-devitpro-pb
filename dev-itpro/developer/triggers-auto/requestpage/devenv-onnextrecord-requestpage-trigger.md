@@ -3,7 +3,7 @@ title: "OnNextRecord (Request Page) Trigger"
 description: "Determines the next record to be displayed."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/27/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,7 +22,7 @@ Determines the next record to be displayed.
 
 
 ## Syntax
-```
+```AL
 trigger OnNextRecord(Steps: Integer): ActualSteps
 begin
     ...
@@ -38,9 +38,9 @@ The number of records stepped through before displaying another record. A negati
 
 ## Return Value
 
-*ActualSteps*
+*ActualSteps*  
 &emsp;Type: [Integer](../../methods-auto/integer/integer-data-type.md)  
-This return value contains the actual number of steps or records cycled through. The default value is 0.
+This return value contains the actual number of steps or records cycled through. The default value is 0.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

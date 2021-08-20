@@ -1,9 +1,9 @@
 ---
 title: "Option Data Type"
-description: "Denotes an option value. In the code snippet below, you can see how the Option data type is declared."
+description: "Denotes an option value."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
