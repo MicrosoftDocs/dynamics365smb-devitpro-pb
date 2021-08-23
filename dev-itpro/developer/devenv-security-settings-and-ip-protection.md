@@ -24,9 +24,20 @@ When you start a new project, an `app.json` file is generated automatically, whi
 
 <!-- matrix -->
 
+### allowDebugging
+
 To allow debugging into your extension, when the extension is taken as a dependency, you must set the `allowDebugging` flag to `true`, otherwise debugging and Go to Definition to view the code is now allowed. For a more refined setting, you can specify the `NonDebuggable` attribute on methods and variables. For more information, see [NonDebuggable Attribute](methods/devenv-nondebuggable-attribute.md).
 
 `allowDebugging` does not apply to [Profiles](devenv-profile-object.md), [Page Customizations](devenv-page-customization-object.md) and [Views](devenv-views.md), because these objects cannot define any custom logic in procedures or triggers. The code for Profiles, Page Customizations, and Views defined in an extension with `allowDebugging` set to **false** can then still be accessed and copied using [Designer](devenv-inclient-designer.md).
+
+### allowDownloadingSource
+
+When this is set to `true` in the `app.json` file of extension A, the source code of extension A can be downloaded, for example, from the **Download Source** option in the **Extension Management** page in [!INCLUDE[prod_short](includes/prod_short.md)].
+
+### includeSourceInSymbolFile
+
+When this is set to `true` in the `app.json` file of extension A, the downloaded symbol file in Visual Studio Code using the **Downloading Symbols** functionality, contains symbols and the source code of extension A.
+
 
 > [!NOTE]  
 > The `resourceExposurePolicy` setting is not visible in the `app.json` file when it is generated. If you want to change the value, you must add the setting as shown in the code snippet below.
