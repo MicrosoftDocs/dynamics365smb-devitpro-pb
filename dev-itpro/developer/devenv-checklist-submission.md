@@ -137,6 +137,11 @@ The minimum release for your submission is computed based on the versions `appli
 > [!NOTE]
 > If multiple extensions are contained in your submission, the minimum release for the submission is the highest minimal release computed for each of the extensions in the submission.
 
+> [!Important]
+> The minimum release computed for your submission also defines the availability of all the extensions in your submission.
+>
+> For instance, if the minimum release computed is 18.1, your extensions will be available starting from release 18.1.
+
 ### Example 1 - Dependency on Application
 
 If your extension's manifest is defined as follows, the minimum release where your extension can be installed is 18.0 because the manifest requires the Application extension to be available with a version higher or equal to 18.0.0.0.
