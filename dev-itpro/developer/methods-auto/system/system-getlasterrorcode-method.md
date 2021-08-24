@@ -40,9 +40,9 @@ String :=   System.GetLastErrorCode()
 
 ## Remarks
 
-You use the GetLastErrorCode method to identify the type of the last error that occurred. You use the [GetLastErrorText Method](../../methods-auto/system/system-GetLastErrorText-method.md) to get the details of the last error.  
+You use the GetLastErrorCode method to identify the type of the last error that occurred. You use the [GetLastErrorText Method](../../methods-auto/system/system-getlasterrortext--method.md) to get the details of the last error.  
   
-The result of the GetLastErrorCode method is not translated into the local language. The result of the [GetLastErrorText Method](../../methods-auto/system/system-GetLastErrorText-method.md) is translated into the local language.  
+The result of the GetLastErrorCode method is not translated into the local language. The result of the [GetLastErrorText Method](../../methods-auto/system/system-getlasterrortext--method.md) is translated into the local language.  
   
 ## Example
 
