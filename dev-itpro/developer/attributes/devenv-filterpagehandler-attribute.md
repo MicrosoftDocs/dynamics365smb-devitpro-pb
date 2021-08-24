@@ -3,7 +3,7 @@ title: "FilterPageHandler Attribute"
 description: "Specifies that the method is a FilterPageHandler method, which handles a specific filter page."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 08/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -34,7 +34,7 @@ Specifies that the method is a FilterPageHandler method, which handles a specifi
 > **Version**: _Available or changed with runtime version 1.0._
 ```AL
 [FilterPageHandler]
-procedure FilterPageHandler(var Record1: RecordRef [, var Record2: RecordRef] [, var Record3: RecordRef] [, var Record4: RecordRef] [, var Record5: RecordRef] [, var Record6: RecordRef] [, var Record7: RecordRef] [, var Record8: RecordRef] [, var Record9: RecordRef] [, var Record10: RecordRef]) : Boolean;
+procedure FilterPageHandler(var Record1: RecordRef[; var Record2: RecordRef][; var Record3: RecordRef][; var Record4: RecordRef][; var Record5: RecordRef][; var Record6: RecordRef][; var Record7: RecordRef][; var Record8: RecordRef][; var Record9: RecordRef][; var Record10: RecordRef]) : Boolean;
 ```
 > [!IMPORTANT]
 > The above signature requires the FilterPageHandler method to be *global*. For more information, see [Local and global scope in AL methods](../devenv-al-methods.md%23local-and-global-scope).
