@@ -35,7 +35,7 @@ Please note that new customers will automatically get the latest builds of Busin
 ## Good to know
 
 **Business Central Office Hours Calls in August**  
-Make sure to join the office hours calls around 'Business Central Apps in AppSource' on August 17 and 'Cloud Migration' on August 31. Register and stay tuned for the upcoming calls: https://aka.ms/BCOfficeHours.
+Make sure to join the office hours call around 'Cloud Migration' on August 31. Register and stay tuned for the upcoming calls: https://aka.ms/BCOfficeHours.
 
 **Action needed: Client secret-based service to service authentication deprecation for Microsoft hosted tenants integrating to Dataverse**  
 To ensure no disruptions in integration between Business Central and Dataverse you must upgrade your Business Central connection to Dataverse to certificate-based authentication. 
