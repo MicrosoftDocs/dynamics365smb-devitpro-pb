@@ -158,6 +158,7 @@ From the installation media (DVD), run setup.exe to uninstall the current Busine
         > [!IMPORTANT]
         > Make sure that you set the **SQL Database** to something other than the name of your database, so that your database is not overwritten.-->
     5. Select **Apply** to complete the installation.
+4. Upload the Business Central Partner license to the database.
 
 For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
 
