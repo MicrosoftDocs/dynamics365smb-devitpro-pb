@@ -1,6 +1,6 @@
 ---
 title: "AppSourceCop Rule AS0092"
-description: "The app.json file must specify an Azure Application Insights resource for monitoring operations related to this extension. See https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/telemetry-overview for additional information."
+description: "The app.json file must specify an Azure Application Insights resource for monitoring operations related to this extension."
 ms.author: solsen
 ms.custom: na
 ms.date: 08/18/2021
