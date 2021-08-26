@@ -363,7 +363,7 @@ Run the data upgrade on extensions in order of dependency.
 
 On each tenant, run the [Start-NavDataUpgrade](/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade) cmdlet as follows:
     
-```
+```powershell
 Start-NAVDataUpgrade -ServerInstance <server instance name> -Tenant <tenant ID> -FunctionExecutionMode Serial -SkipAppVersionCheck
 ```
 
@@ -373,7 +373,7 @@ This command will upgrade and install the extensions on the tenant.
 
 Complete this task to install third-party extensions for which a new version wasn't published. For each extension, run the [Install-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp):
 
-```
+```powershell
 Install-NAVApp -ServerInstance <server instance name> -Name <extension name> -Version <extension version>
 ```
 
@@ -467,7 +467,7 @@ We recommend setting the value to application build number for the version 18 up
     ```powershell
     Start-NAVDataUpgrade -ServerInstance <server instance name> -FunctionExecutionMode Serial -Tenant <tenant ID>
     ```
-    The Data Upgrade process will be running in the background after running the above Start-NAVDataUpgrade cmdlet. You check on the progress using the Get-NAVDataUpgrade cmdlet: e.g: Get-NAVTenant -ServerInstance <server instance name> -ForceRefresh -Tenant <tenant ID>
+    The Data Upgrade process will be running in the background after running the above Start-NAVDataUpgrade cmdlet. You check on the progress using the Get-NAVDataUpgrade cmdlet: such as: `Get-NAVTenant -ServerInstance <server instance name> -ForceRefresh -Tenant <tenant ID>`
 
 Do not stop the Business Central service until the process is complete, i.e. when you can see that "State = Operational" in the results from the Get-NAVDataUpgrade cmdlet. 
     
