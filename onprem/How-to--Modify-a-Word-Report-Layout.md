@@ -40,7 +40,7 @@ This procedure describes how to modify a Word report layout on report from the [
 ##  <a name="RemoveField"></a> Removing Label and Data Fields  
  Label and data fields of a report are contained in content controls in Word. The following figure illustrates a content control when it is selected in the Word document.  
   
- ![Content control for field in Word report layout](media/NAV_WordReportLayouts_ContentControl.png "NAV\_WordReportLayouts\_ContentControl")  
+ ![Content control for field in Word report layout.](media/NAV_WordReportLayouts_ContentControl.png "NAV\_WordReportLayouts\_ContentControl")  
   
  The name of the label or data field name displays in the content control. In the example, the field name is CompanyAddr1.  
   

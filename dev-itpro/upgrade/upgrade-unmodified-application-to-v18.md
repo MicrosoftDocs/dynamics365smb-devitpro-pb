@@ -21,7 +21,7 @@ Use this scenario if you have one of the following versions that uses the Micros
 - [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2019 release wave 2 (version 15)
 
 
- ![Upgrade on unmodified Business Central application](../developer/media/bc18-upgrade-unmodified-app.png "Upgrade on unmodified Business Central application") 
+ ![Upgrade on unmodified Business Central application.](../developer/media/bc18-upgrade-unmodified-app.png "Upgrade on unmodified Business Central application") 
 
 #### Single-tenant and multitenant deployments
 
@@ -45,7 +45,7 @@ The process for upgrading the similar for a single-tenant and multitenant deploy
 
 Version 18 introduces the capability to define permissions sets as AL objects, instead of as data. Permissions sets as AL objects is now the default and recommended model for permissions. For now, you can choose to use the legacy model, where permissions are defined and stored as data in the database. Whichever model you choose, there are permission set-related tasks you'll have to go through before and during upgrade.
 
-For more information, see [Upgrading Permissions Sets and Permissions](upgrade-permissions.md)<!--[Permissions Upgrade Considerations](https://review.docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-entitlements-and-permissionsets-overview?branch=permissionset#upgrade-considerations)-->.
+For more information, see [Upgrading Permissions Sets and Permissions](upgrade-permissions.md)<!--[Permissions Upgrade Considerations](https://review.docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-entitlements-and-permissionsets-overview?branch=permissionset#upgrade-considerations)-->.
 
 <!--
 ## Prerequisites
@@ -363,7 +363,7 @@ Run the data upgrade on extensions in order of dependency.
 
 On each tenant, run the [Start-NavDataUpgrade](/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade) cmdlet as follows:
     
-```
+```powershell
 Start-NAVDataUpgrade -ServerInstance <server instance name> -Tenant <tenant ID> -FunctionExecutionMode Serial -SkipAppVersionCheck
 ```
 
@@ -373,7 +373,7 @@ This command will upgrade and install the extensions on the tenant.
 
 Complete this task to install third-party extensions for which a new version wasn't published. For each extension, run the [Install-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp):
 
-```
+```powershell
 Install-NAVApp -ServerInstance <server instance name> -Name <extension name> -Version <extension version>
 ```
 
@@ -467,6 +467,9 @@ We recommend setting the value to application build number for the version 18 up
     ```powershell
     Start-NAVDataUpgrade -ServerInstance <server instance name> -FunctionExecutionMode Serial -Tenant <tenant ID>
     ```
+    The Data Upgrade process will be running in the background after running the above Start-NAVDataUpgrade cmdlet. You check on the progress using the Get-NAVDataUpgrade cmdlet: such as: `Get-NAVTenant -ServerInstance <server instance name> -ForceRefresh -Tenant <tenant ID>`
+
+Do not stop the Business Central service until the process is complete, i.e. when you can see that "State = Operational" in the results from the Get-NAVDataUpgrade cmdlet. 
     
 ## Post-upgrade tasks
 

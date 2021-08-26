@@ -1,9 +1,9 @@
 ---
 title: "ExecutionContext System Option"
-description: "Represents the context in which a session is running. In certain scenarios, for example during upgrade, the system will run a session in a special context for a limited time."
+description: "Represents the context in which a session is running."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

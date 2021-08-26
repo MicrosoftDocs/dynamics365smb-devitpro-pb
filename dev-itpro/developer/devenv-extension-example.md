@@ -241,7 +241,7 @@ field("Minimum Purchase";"Minimum Purchase")
 }
 ```
 
-Using the **F6** key shortcut in Visual Studio Code launches the browser and enters Designer. You can also use Designer from the [!INCLUDE[prod_short](includes/prod_short.md)] client, by selecting ![Settings icon](media/settings_icon_small.png) **Designer**.
+Using the **F6** key shortcut in Visual Studio Code launches the browser and enters Designer. You can also use Designer from the [!INCLUDE[prod_short](includes/prod_short.md)] client, by selecting ![Settings icon.](media/settings_icon_small.png) **Designer**.
 
 > [!NOTE]  
 > Every time you start designing, you create a new extension and the changes you make in Designer will apply to all users.
@@ -414,7 +414,7 @@ ToolTip = 'Specifies the level of reward that the customer has at this point.';
 
 If you now deploy the app, you will be able to read the tooltip text for the **Reward ID** field, and if you choose the *Learn more* link or press **Ctrl+F1**, a new browser tab opens the equivalent of `https://mysite.com/documentation/sales-rewards`.  
 
-![Customer card extension tool tip example](media/help/CustomerCardExt_TooltipHelp.png)
+![Customer card extension tool tip example.](media/help/CustomerCardExt_TooltipHelp.png)
 
 ## Install code
 

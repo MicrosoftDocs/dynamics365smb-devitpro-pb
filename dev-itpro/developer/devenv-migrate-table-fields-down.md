@@ -24,7 +24,7 @@ This article explains how to move tables and fields from an extension to another
 
 The steps in this article are based on the example illustrated in the following figure. Although your scenario is different, the concept and process are much the same.
 
-![Data migration](media/data-migration-tables-fields.png "data migration") 
+![Data migration.](media/data-migration-tables-fields.png "data migration") 
 
 In the example, **TableB** and **Field C-2** are customizations. You'll keep these elements in the original extension, but create a new version without **TableA** and **TableC**. You'll move **TableA** and **TableC** down the dependency chain to a new, separate extension.
 

@@ -119,7 +119,7 @@ sections:
           
             Outbound requests come from [!INCLUDE [prod_short](includes/prod_short.md)] environment, such as code that uses the `HttpClient`data type to send HTTP requests. The requests come from an IP address in the IP ranges of the Azure region in which the environment is hosted. You can see where an environment is hosted on the **Environment details** page in the [!INCLUDE [prod_short](includes/prod_short.md)] admin center. For more information, see [Managing Environments](administration/tenant-admin-center-environments.md).  
           
-          You can find the IP addresses of the Azure regions [as a download on the Download center](https://www.microsoft.com/en-us/download/details.aspx?id=56519).  
+          You can find the IP addresses of the Azure regions [as a download on the Download center](https://www.microsoft.com/download/details.aspx?id=56519).  
                  
       - question: See Also
         answer: |

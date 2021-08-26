@@ -3,7 +3,7 @@ title: "IntegrationEvent Attribute"
 description: "Specifies that the method is published as an integration type event."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/16/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,7 +28,7 @@ Specifies that the method is published as an integration type event.
 
 ## Syntax
 
-```
+```AL
 [IntegrationEvent(IncludeSender: Boolean, GlobalVarAccess: Boolean)]
 ```
 

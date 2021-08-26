@@ -158,7 +158,7 @@ In [!INCLUDE[navnow](includes/navnow_md.md)], you can use the NavigatePage page 
   
      The following illustration shows the indentation of elements on the wizard page after adding steps and the attendee subform.  
   
-     ![Wizard page in Object Designer](media/RTCPageWizard.png "RTCPageWizard")  
+     ![Wizard page in Object Designer.](media/RTCPageWizard.png "RTCPageWizard")  
   
 ## Adding Wizard Buttons  
  Simon has now successfully created a basic wizard page. To make his page appear more like a wizard he must add **Next**, **Back**, and **Finish** buttons. To do this, Simon must add a new set of actions to his wizard page using the Action Designer.  

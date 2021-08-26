@@ -2,7 +2,7 @@
 title: Install a version 18 update
 description: This article describes the tasks required for getting the monthly version 18 update applied to your Dynamics 365 Business Central on-premises.
 ms.custom: na
-ms.date: 07/01/2021
+ms.date: 08/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ You can choose to update only the platform or both the platform and application 
 
 The following figure provides a high-level representation of a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] solution and the components that are involved in the installation of an update.
 
-![Business Central application stack](../developer/media/bc15-architecture-overview.png "Business Central application stack")  
+![Business Central application stack.](../developer/media/bc15-architecture-overview.png "Business Central application stack")  
 
 The databases store the application metadata and business data. If you have a single-tenant deployment, this data is stored in a single database. A multitenant deployment stores the application metadata in the application database and the business data in one or more tenant databases.
 
@@ -39,7 +39,7 @@ The application includes AL extensions that define the objects and code that mak
 
 - Application extension
 
-    The Application extension logically encapsulates all of the extensions making up a solution, for example, version `16.0.0.0` of the base and system application package files, and it provides a convenient way to define and refer to this solution identity. This extension is required for Microsoft extensions, but is optional for third-party extensions. For more information, see [The Microsoft_Application.app File](../developer/devenv-application-app-file.md).
+    The Application extension logically encapsulates all of the extensions making up a solution, for example, version `18.0.0.0` of the base and system application package files, and it provides a convenient way to define and refer to this solution identity. This extension is required for Microsoft extensions, but is optional for third-party extensions. For more information, see [The Microsoft_Application.app File](../developer/devenv-application-app-file.md).
 
 - Customization extensions
 
@@ -211,7 +211,7 @@ Also, to ensure that the existing published extensions work on the new platform,
 
     ```powershell
     DatabaseServer      : .\BCDEMO
-    DatabaseName        : Demo Database BC (17-0)
+    DatabaseName        : Demo Database BC (18-0)
     DatabaseCredentials :
     DatabaseLocation    :
     Collation           :
@@ -338,7 +338,7 @@ Follow the next tasks to update the application code to the new features and hot
 You publish the System Application extension only if it was used in old solution. Add-on extensions include Microsoft and third- party extensions that were used in the old solution.
 
 > [!NOTE]
-> If a license update is required for a regulatory feature, customers can download an updated license from CustomerSource (see [How to Download a Microsoft Dynamics 365 Business Central License from CustomerSource](https://docs.microsoft.com/dynamics/s-e/)), and partners can download their customers' updated license from VOICE (see [How to Download a Microsoft Dynamics 365 Business Central Customer License from VOICE](https://mbs.microsoft.com/partnersource/northamerica/deployment/documentation/how-to-articles/howtodownloadcustomernavlicense)).
+> If a license update is required for a regulatory feature, customers can download an updated license from CustomerSource (see [How to Download a Microsoft Dynamics 365 Business Central License from CustomerSource](/dynamics/s-e/)), and partners can download their customers' updated license from VOICE (see [How to Download a Microsoft Dynamics 365 Business Central Customer License from VOICE](https://mbs.microsoft.com/partnersource/northamerica/deployment/documentation/how-to-articles/howtodownloadcustomernavlicense)).
 
 ## Upgrade System Application
 
@@ -508,7 +508,7 @@ Set-NAVAddIn -ServerInstance $BcServerInstance -AddinName 'Microsoft.Dynamics.Na
 
 ### Update application version
 
-This task isn't required for installing the update. However, it might be useful for support purposes and answering a common question about the application version.  The **Help and Support** page in the client displays an application version, such as 16.1.2345.6. This version number isn't updated automatically when you install an update.
+This task isn't required for installing the update. However, it might be useful for support purposes and answering a common question about the application version. The **Help and Support** page in the client displays an application version, such as 16.1.2345.6. This version number isn't updated automatically when you install an update.
 
 However, the [!INCLUDE[server](../developer/includes/server.md)] includes a configuration setting called **Solution Version Extension** (SolutionVersionExtension). This setting lets you specify an extension whose version number will show as the Application Version on the client's **Help and Support** page. Typically, you'd use the extension considered to be your solution's base application. You set **Solution Version Extension** to ID of the extension. For example, if your solution uses the Microsoft Base Application, set the value to `437dbf0e-84ff-417a-965d-ed2bb9650972`.
 

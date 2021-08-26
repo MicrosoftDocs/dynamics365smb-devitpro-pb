@@ -50,11 +50,8 @@ POST https://{businesscentralPrefix}/api/v2.0/companies({id})/taxAreas
 Content-type: application/json
 ```json
 {
-    "id": "90196a90-44e3-ea11-bb43-000d3a2feca1",
     "code": "ATLANTA, GA",
-    "displayName": "ATLANTA, GA",
-    "taxType": "Sales Tax",
-    "lastModifiedDateTime": "2020-08-21T00:24:25.847Z"
+    "displayName": "ATLANTA, GA"
 }
 ```
 
@@ -65,11 +62,8 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "id": "90196a90-44e3-ea11-bb43-000d3a2feca1",
     "code": "ATLANTA, GA",
-    "displayName": "ATLANTA, GA",
-    "taxType": "Sales Tax",
-    "lastModifiedDateTime": "2020-08-21T00:24:25.847Z"
+    "displayName": "ATLANTA, GA"
 }
 ```
 

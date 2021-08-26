@@ -1,9 +1,9 @@
 ---
-title: "RequestPage.SetSelectionFilter Method"
-description: ""
+title: "RequestPage.SetSelectionFilter(var Record) Method"
+description: "Notes the records that the user has selected on the request page, marks those records in the table specified, and sets the filter to marked only."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 07/13/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# RequestPage.SetSelectionFilter Method
+# RequestPage.SetSelectionFilter(var Record) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
-
+Notes the records that the user has selected on the request page, marks those records in the table specified, and sets the filter to "marked only".
 
 
 ## Syntax
-```
+```AL
  RequestPage.SetSelectionFilter(var Record: Record)
 ```
 ## Parameters

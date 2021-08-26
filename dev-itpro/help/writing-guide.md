@@ -32,13 +32,13 @@ At Microsoft, we write for accessibility, which also means that the same content
 The accessibility requirements also impacts metadata for illustrations, such as the following:
 
 ```markdown
-:::image type="content" source="media/illustration.png" alt-text="Text used by screen readers":::
+:::image type="content" source="media/illustration.png" alt-text="Text used by screen readers.":::
 ```
 
 Most of Microsoft's articles use a different MarkDown formatting for illustrations, such as the following:
 
 ```markdown
-![Lightbulb that opens the Tell Me feature](media/ui-search/search_small.png "Tell me what you want to do")
+![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do")
 ```
 
 Both formats are valid MarkDown, and both formats are supported by DocFx.exe. For more information, see [Images](/contribute/markdown-reference#images) in the Docs Contributor Guide.  
@@ -88,7 +88,7 @@ As a best practice, the MarkDown validation in the current version of the Docs A
 Use numbers for ordered lists. Do not add spaces between the lines.
 
 ```MarkDown
-1. Choose the ![Lightbulb that opens the Tell Me feature](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Payment Journal**, and then choose the related link.
+1. Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Payment Journal**, and then choose the related link.
 2. In the **Payment Journal** window, on the first journal line, enter the relevant information about the payment entry.
 3. To apply a single vendor ledger entry:
 4. In the **Applies-to Doc. No.** field, choose the field to open the **Apply Vendor Entries** window.

@@ -1,9 +1,9 @@
 ---
-title: "Page.CancelBackgroundTask Method"
+title: "Page.CancelBackgroundTask(Integer) Method"
 description: "Attempt to cancel a page background task."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Page.CancelBackgroundTask Method
+# Page.CancelBackgroundTask(Integer) Method
 > **Version**: _Available or changed with runtime version 4.0._
 
 Attempt to cancel a page background task.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  Page.CancelBackgroundTask(TaskId: Integer)
 ```
 ## Parameters
@@ -59,8 +59,13 @@ begin​
     CurrPage.EnqueueBackgroundTask(WaitTaskId, 50100, TaskParameters, 1000, PageBackgroundTaskErrorLevel::Warning);
 end;
 ```
+
+CurrPage is a system-defined variable. For more information, see [System-Defined Variables](../../devenv-system-defined-variables.md). 
+
 ## See Also
+
 [Page Background Tasks](../../devenv-page-background-tasks.md)  
 [Page Data Type](page-data-type.md)  
+[System-Defined Variables](../../devenv-system-defined-variables.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

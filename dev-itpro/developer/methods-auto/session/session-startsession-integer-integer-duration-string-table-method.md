@@ -1,9 +1,9 @@
 ---
-title: "Session.StartSession Method"
+title: "Session.StartSession(var Integer, Integer, Duration [, String] [, var Record]) Method"
 description: "Starts a session without a UI and runs the specified codeunit."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 08/10/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Session.StartSession Method
+# Session.StartSession(var Integer, Integer, Duration [, String] [, var Record]) Method
 > **Version**: _Available or changed with runtime version 7.1._
 
 Starts a session without a UI and runs the specified codeunit.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  Session.StartSession(var SessionId: Integer, CodeunitId: Integer, Timeout: Duration [, Company: String] [, var Record: Record])
 ```
 > [!NOTE]
@@ -51,7 +51,13 @@ A record that is passed to the OnRun trigger of the codeunit that runs when the 
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+The session is started on the same [!INCLUDE[prod_short](../../includes/prod_short.md)] instance from which the method is called. The session that is started is a background session and therefore has no UI. The session executes using the same user credentials as the calling AL code.  
+
+For information about how dialog boxes are handled in a background session, see [Dialog box behavior](session-startsession-integer-integer-string-table-method.md#dialog-box-behavior).  
 ## See Also
-[Session Data Type](session-data-type.md)
-[Getting Started with AL](../devenv-get-started.md)
-[Developing Extensions](../devenv-dev-overview.md)
+[Session Data Type](session-data-type.md)  
+[Getting Started with AL](../devenv-get-started.md)  
+[Developing Extensions](../devenv-dev-overview.md)  

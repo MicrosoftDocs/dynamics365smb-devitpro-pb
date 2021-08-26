@@ -39,7 +39,7 @@ If your solution is configured for NavUserPassword or AccessControlService authe
   
 Follow these instructions to generate a web service access key for a user. You perform these steps from the user setup in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client.
 
-1. Choose the ![Lightbulb that opens the Tell Me feature](../media/search_small.png "Tell me what you want to do") icon, enter **Users**, choose the related link, and then open the user account that you want to edit. 
+1. Choose the ![Lightbulb that opens the Tell Me feature.](../media/search_small.png "Tell me what you want to do") icon, enter **Users**, choose the related link, and then open the user account that you want to edit. 
   
 2. In the **Web Service Access** section, select the **Web Service Access Key** field.  
   

@@ -30,7 +30,7 @@ A page background task is a *child session* that runs processes from a codeunit 
 
 A background task is a multithread operation between the parent and child sessions. The following diagram illustrates the flow of a background task. In the illustration, the threads start in the order: THREAD A, THREAD B, THREAD C.  
 
-[![Background task flow](media/page-background-task-flow-v4.png "Select Page background task flow")](media/page-background-task-flow-v4.png#lightbox)
+[![Background task flow](media/page-background-task-flow-v4.png "Select Page background task flow."](media/page-background-task-flow-v4.png#lightbox)
 
 ### Background task characteristics and behavior
 
@@ -66,7 +66,7 @@ The API for background tasks includes the following methods and triggers:
 
 The following figure illustrates the application objects and code involved in creating a background task. The code has been simplified for demonstration purposes.
 
-![Create page background task](media/page-background-task-code.png "Hot to create a page background task")
+![Create page background task.](media/page-background-task-code.png "Hot to create a page background task")
 
 The general steps are as follows:
 
@@ -78,7 +78,7 @@ The general steps are as follows:
 
 These steps are described in more details in the following sections. To help explain page background tasks, the sections use a simple example. The example extends the **Customer** card page to include a page background task. The task gets the current system time, waits a specified number of milliseconds, and gets the system time again. The page is extended with three new fields: **Start Time**, **Duration**, and **End Time**. In the page UI, these fields are updated with results of the background task, along with a notification when the task completes.
 
-![Page background task flow](media/page-background-cutomer-card.png "Page background task flow")
+![Page background task flow.](media/page-background-cutomer-card.png "Page background task flow")
 
 ## Creating a background task codeunit
 

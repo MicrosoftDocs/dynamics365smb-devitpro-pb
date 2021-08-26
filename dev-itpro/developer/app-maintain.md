@@ -31,7 +31,7 @@ To help app publishers keep up with their update responsibilities, Microsoft pro
 
 - Information about what will be deprecated
 
-    With all [!INCLUDE [prod_short](includes/prod_short.md)] releases, Microsoft controls and regulates breaking changes with major releases and [communicates upcoming breaking changes](../upgrade/deprecated-features-w1.md) at least one year in advance. If developers missed this above info, the compiler in Visual Studio Code also [warns for potential controls that will become obsolete](analyzers/appsourcecop-as0074-obsoletetagdifferentfrombaselinenotallowed.md) in future versions and how to deal with them.  
+    With all [!INCLUDE [prod_short](includes/prod_short.md)] releases, Microsoft controls and regulates breaking changes with major releases and [communicates upcoming breaking changes](../upgrade/deprecated-features-w1.md) at least one year in advance. If developers missed this above info, the compiler in Visual Studio Code also [warns for potential controls that will become obsolete](analyzers/appsourcecop-as0074.md) in future versions and how to deal with them.  
 
 - Policy definitions and terms
 

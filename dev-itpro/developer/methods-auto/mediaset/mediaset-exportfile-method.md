@@ -1,9 +1,9 @@
 ---
-title: "MediaSet.ExportFile Method"
-description: "Exports the media objects in the current media set of a record to individual files on your computer or network. In the record, the media set is referenced in a MediaSet data type field."
+title: "MediaSet.ExportFile(String) Method"
+description: "Exports the media objects in the current media set of a record to individual files on your computer or network."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# MediaSet.ExportFile Method
+# MediaSet.ExportFile(String) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Exports the media objects in the current media set of a record to individual files on your computer or network. In the record, the media set is referenced in a MediaSet data type field.
@@ -23,7 +23,7 @@ Exports the media objects in the current media set of a record to individual fil
 > This method is supported only in Business Central on-premises.
 
 ## Syntax
-```
+```AL
 [Count := ]  MediaSet.ExportFile(FilenamePrefix: String)
 ```
 ## Parameters

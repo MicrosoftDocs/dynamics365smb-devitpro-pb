@@ -1,9 +1,9 @@
 ---
-title: "RecordRef.GetFilters Method"
+title: "RecordRef.GetFilters() Method"
 description: "Determines which filters have been applied to the table referred to by the RecordRef."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# RecordRef.GetFilters Method
+# RecordRef.GetFilters() Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Determines which filters have been applied to the table referred to by the RecordRef.
 
 
 ## Syntax
-```
+```AL
 String :=   RecordRef.GetFilters()
 ```
 > [!NOTE]

@@ -35,7 +35,7 @@ Some reports have data that is printed conditionally. For example, if the reques
   
      The following illustration shows an example of a conditional visibility expression on report 116, Statement, in the [!INCLUDE[demolong](includes/demolong_md.md)].  
   
-     ![Conditional visibility](media/NAV_PLAT_Report2_ConditionalVisibility.PNG "NAV\_PLAT\_Report2\_ConditionalVisibility")  
+     ![Conditional visibility.](media/NAV_PLAT_Report2_ConditionalVisibility.PNG "NAV\_PLAT\_Report2\_ConditionalVisibility")  
   
 ## See Also  
  [Designing Reports](Designing-Reports.md)   

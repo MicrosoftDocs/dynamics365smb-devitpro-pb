@@ -21,7 +21,7 @@ You can choose to update only the platform or both the platform and application 
 
 The following figure provides a high-level representation of a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] deployment and the components that are involved in the installation of an update.
 
-![Business Central application stack](../developer/media/bc15-architecture-overview.png "Business Central application stack")  
+![Business Central application stack.](../developer/media/bc15-architecture-overview.png "Business Central application stack")  
 
 The databases store the application metadata and business data. If you have a single-tenant deployment, this data is stored in a single database. In multitenant deployment, the application metadata is stored in the application database and the business data is stored in one more tenant databases. 
 
@@ -55,7 +55,7 @@ When this step is completed, you can proceed to update your Business Central dep
 
 2. Uninstall all extensions from the all tenants.
 
-    To uninstall an extension, you use the [Uninstall-NAVApp](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp) cmdlet. For example, together with the Get-NAVAPP cmdlet, you can uninstall all extensions with a single command:
+    To uninstall an extension, you use the [Uninstall-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp) cmdlet. For example, together with the Get-NAVAPP cmdlet, you can uninstall all extensions with a single command:
 
     ``` 
     Get-NAVAppInfo -ServerInstance <server instance name> -Tenant <tenant ID> | % { Uninstall-NAVApp -ServerInstance <server instance name> -Name $_.Name -Version $_.Version -Tenant <tenant ID>}
@@ -64,7 +64,7 @@ When this step is completed, you can proceed to update your Business Central dep
 
 3. (Multitenant only) Dismount the tenants from the application database.
 
-    To dismount a tenant, use the [Dismount-NAVTenant](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.management/dismount-navtenant) cmdlet:
+    To dismount a tenant, use the [Dismount-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/dismount-navtenant) cmdlet:
 
     ```
     Dismount-NAVTenant -ServerInstance <BC14 server instance> -Tenant <tenant ID>
@@ -85,7 +85,7 @@ In addition, to ensure that the existing published extensions work on the new pl
 ## Convert the database to the new platform
 
 1. Run the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] as an administrator.
-2. Run the [Invoke-NAVApplicationDatabaseConversion cmdlet](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.management/invoke-navapplicationdatabaseconversion) to start the database conversion to the new platform.
+2. Run the [Invoke-NAVApplicationDatabaseConversion cmdlet](/powershell/module/microsoft.dynamics.nav.management/invoke-navapplicationdatabaseconversion) to start the database conversion to the new platform.
 
     In a multitenant deployment, run this cmdlet against the application database.
 
@@ -121,7 +121,7 @@ In addition, to ensure that the existing published extensions work on the new pl
 
 ## Recompile published extensions
 
-You must compile all published extensions against the new platform. To compile an extension, use the [Repair-NAVApp](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.apps.management/repair-navapp) cmdlet, For example:
+You must compile all published extensions against the new platform. To compile an extension, use the [Repair-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/repair-navapp) cmdlet, For example:
 
 ```  
 Repair-NAVApp -ServerInstance <server instance> -Name <extension name> -Version <extension name>
@@ -141,7 +141,7 @@ Get-NAVAppInfo -ServerInstance <server instance> | Repair-NAVApp
  
 2. Synchronize the tenant.
   
-    Use the [Sync-NAVTenant](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.management/sync-navtenant) cmdlet:
+    Use the [Sync-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/sync-navtenant) cmdlet:
 
     ```  
     Sync-NAVTenant -ServerInstance <server instance> -Tenant <tenant ID> -Mode Sync
@@ -156,7 +156,7 @@ Get-NAVAppInfo -ServerInstance <server instance> | Repair-NAVApp
 Follow the next tasks to update the application code to the new features and hotfixes. This includes publishing new versions of the system application extension (if it was used in old deployment), the base application extension, and any add-on extensions (Microsoft and third- party) that were used in the old deployment.
 
 > [!NOTE]
-> If a license update is required for a regulatory feature, customers can download an updated license from CustomerSource (see [How to Download a Microsoft Dynamics 365 Business Central License from CustomerSource](https://docs.microsoft.com/dynamics/s-e/)), and partners can download their customers' updated license from VOICE (see [How to Download a Microsoft Dynamics 365 Business Central Customer License from VOICE](https://mbs.microsoft.com/partnersource/deployment/documentation/howtoarticles/howtodownloadcustomernavlicense.htm)).
+> If a license update is required for a regulatory feature, customers can download an updated license from CustomerSource (see [How to Download a Microsoft Dynamics 365 Business Central License from CustomerSource](/dynamics/s-e/)), and partners can download their customers' updated license from VOICE (see [How to Download a Microsoft Dynamics 365 Business Central Customer License from VOICE](https://mbs.microsoft.com/partnersource/deployment/documentation/howtoarticles/howtodownloadcustomernavlicense.htm)).
 
 ## Upgrade the system application
 
@@ -171,7 +171,7 @@ Follow these steps if your existing deployment uses the Microsoft system applica
 
 2. Synchronize the tenant(s) with the **System Application** extension (Microsoft_System Application):
 
-    Use the [Sync-NAVApp](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp) cmdlet:
+    Use the [Sync-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp) cmdlet:
 
     ```
     Sync-NAVApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name "System Application" -Version <extension version>
@@ -180,11 +180,11 @@ Follow these steps if your existing deployment uses the Microsoft system applica
     Replace `<extension version>` with the exact version of the published System Application.
     
     > [!TIP]
-    > To get a list of all published extensions, along with their names and versions, use the [Get-NAVAppInfo cmdlet](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.apps.management/get-navappinfo).
+    > To get a list of all published extensions, along with their names and versions, use the [Get-NAVAppInfo cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/get-navappinfo).
     
 3. Run the data upgrade on the system application.
 
-    To run the data upgrade, use the [Start-NavAppDataUpgrade](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.apps.management/start-navappdataupgrade) cmdlet:
+    To run the data upgrade, use the [Start-NavAppDataUpgrade](/powershell/module/microsoft.dynamics.nav.apps.management/start-navappdataupgrade) cmdlet:
 
     ```
     Start-NAVAppDataUpgrade -ServerInstance <server instance name> -Name "System Application" -Version <extension version>
@@ -215,7 +215,7 @@ Follow these steps if your existing deployment uses the Microsoft base applicati
     With this step, the base app takes ownership of the database tables. When completed, in SQL Server, the table names will be suffixed with the base app extension ID. This process can take several minutes.
 3. Run the data upgrade on the base application.
 
-    To run the data upgrade, use the [Start-NavAppDataUpgrade](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.apps.management/start-navappdataupgrade) cmdlet:
+    To run the data upgrade, use the [Start-NavAppDataUpgrade](/powershell/module/microsoft.dynamics.nav.apps.management/start-navappdataupgrade) cmdlet:
 
     ```
     Start-NAVAppDataUpgrade -ServerInstance <server instance name> -Name "System Application" -Version <extension version>
@@ -263,7 +263,7 @@ The general steps for this task are listed below. For detailed steps, see [Publi
 
 This ensures that the extensions work on the new platform and application versions.
 
-1. Compile the published extension by running the [Repair-NAVApp](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.apps.management/repair-navapp) cmdlet:
+1. Compile the published extension by running the [Repair-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/repair-navapp) cmdlet:
 
     ```
     Repair-NAVApp -ServerInstance <server instance> -Name <extension name> -Version <version>

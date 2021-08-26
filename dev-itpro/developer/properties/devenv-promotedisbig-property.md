@@ -1,8 +1,9 @@
 ---
 title: "PromotedIsBig Property"
+description: "Sets the action to appear before other promoted actions in the action bar, regardless of its position in the AL code of the page."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 07/08/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,7 +17,7 @@ author: SusanneWindfeldPedersen
 # PromotedIsBig Property
 > **Version**: _Available or changed with runtime version 1.0._
 
-Sets a value that indicates whether the promoted action is displayed on the ribbon with a large icon.
+Sets the action to appear before other promoted actions in the action bar, regardless of its position in the AL code of the page.
 
 ## Applies to
 -   Page Action
@@ -38,12 +39,14 @@ PromotedIsBig = true;
 
 If there is more than one action that has the PromotedIsBig property set to **true**, then the actions will appear before other actions, in the order that they are defined in AL.
 
+For more information about promoting actions, see [Promoted Actions](../devenv-promoted-actions.md).
+
 > [!NOTE]
 > In the [!INCLUDE[prod_short](../includes/nav_windows_md.md)], this property behaves differently. Setting the property to **true** will display a bigger icon than normal in the client. It will not reposition the action.
 
 ## Example
 
-In the following code snippet, the **Sales Invoice** action is defined after the **Sales Quote** action, However, because the **PromotedIsBig** property is **true**, it will appear before the **Sales Quote** action in the client.
+The following code snippet adds the **Sales Invoice** and the **Sales Quote** actions to a page, and promotes them to the category named **New**. In AL, the **Sales Invoice** action is defined after the **Sales Quote** action. But because the **PromotedIsBig** property on the **Sales Invoice** action is **true** , it will appear before the **Sales Quote** action in the user interface.
 
 ```AL
 actions
@@ -53,7 +56,7 @@ actions
             action("Sales Quote")
             {
                 Promoted = true;
-                PromotedCategory = Category5;  // PromotedActionCategories = New Document
+                PromotedCategory = New;
                 PromotedOnly = true;
                 Image = NewSalesQuote;
                 ApplicationArea = All;
@@ -61,7 +64,7 @@ actions
             action("Sales Invoice")
             {
                 Promoted = true;
-                PromotedCategory = Category5;  // PromotedActionCategories = New Document
+                PromotedCategory = New;
                 Image = SalesInvoice;
                 PromotedIsBig = true;
                 ApplicationArea = All;

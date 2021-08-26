@@ -336,6 +336,26 @@ pageextension 50101 "Employee Synch Extension" extends "Employee Card"
 }
 ```
 
+<!--## Customizing the matching algorithm
+
+Starting in 2020 release wave 1, you can use match-based coupling of records in [!INCLUDE [prod_short](../developer/includes/prod_short.md)] and [!INCLUDE [cds_long_md](../developer/includes/cds_long_md.md)], based on matching criteria defined by the administrator. For more information, see [Customize the Match-Based Coupling](/dynamics365/business-central/admin-how-to-set-up-a-dynamics-crm-connection#customize-the-match-based-coupling) in the business functionality content.  
+
+Based on the fields that you choose to match on, the algorithm to find a match sets an equality filter by default. However, at the moment when it sets a filter, an event is raised by codeunit 5360, `CDSIntTableCouple`:
+
+```al
+    [IntegrationEvent(false, false)]
+    local procedure OnBeforeSetMatchingFilter(var IntegrationRecordRef: RecordRef; var MatchingIntegrationRecordFieldRef: FieldRef; var LocalRecordRef: RecordRef; var MatchingLocalFieldRef: FieldRef; var SetMatchingFilterHandled: Boolean)
+```
+
+By subscribing to this event, you can modify the filter that is set on `MatchingIntegrationRecordFieldRef`. The following table outlines the parameters:
+
+|Parameter  |Description  |
+|-----------|-------------|
+|LocalRecordRef |The Business Central record for which you are trying to find a match for.  |
+|MatchingLocalFieldRef| the Business Central field that you want to use for finding a match in Dataverse. Use its value to set the filter on the Dataverse entity.  |
+|IntegrationRecordRef| The record ref to the proxy record that represents the Dataverse entity.|
+|MatchingIntegrationRecordFieldRef| The field reference to the proxy table field that represents the Dataverse entity attribute. To override the default behavior (equality filter), set your custom filter on this field, and then set `SetMatchingFilterHandled` flag to `true`.|
+-->
 ## Customizing Uncoupling
 
 Tables might require custom code to remove couplings, for example, to change tables before or after uncoupling. To enable custom uncoupling, specify the uncoupling codeunit when you create an integration table mapping. To do this, adjust the function **InsertIntegrationTableMapping** in your codeunit, as follows:
@@ -532,7 +552,7 @@ Let us explore another scenario. If we added an **Industry** field to the **Cont
 2. Locate the **AL Table Proxy Generator** tool. See the previous [section](administration-custom-cds-integration.md#to-create-the-integration-table-for-the-worker-table-in-business-central).
 3. In PowerShell, run the tool with the following arguments:
 
-    ```  
+    ```powershell
     -project:<Your AL project folder>
     -packagecachepath:<Your AL project cache folder>
     -serviceuri:<CDS server URL>
@@ -600,7 +620,7 @@ After we publish the extension we can update the mappings by running the **CDS C
 
 [Overview](/dynamics365/business-central/admin-common-data-service)  
 [Setting Up User Accounts for Integrating with [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]](/dynamics365/business-central/admin-setting-up-integration-with-dynamics-sales)  
-[Set Up a Connection to [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]](/dynamics365/business-central/admin-how-to-set-up-a-dynamics-crm-connection) 
+[Set Up a Connection to [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]](/dynamics365/business-central/admin-how-to-set-up-a-dynamics-crm-connection)  
 [Synchronizing Business Central and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]](/dynamics365/business-central/admin-synchronizing-business-central-and-sales)  
 [Mapping the Tables and Fields to Synchronize](/dynamics365/business-central/admin-how-to-modify-table-mappings-for-synchronization)  
 [Manually Synchronize Table Mappings](/dynamics365/business-central/admin-manual-synchronization-of-table-mappings)  

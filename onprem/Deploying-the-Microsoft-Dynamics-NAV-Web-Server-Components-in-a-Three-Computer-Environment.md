@@ -12,7 +12,7 @@ author: jswymer
 # Deploying the Microsoft Dynamics NAV Web Server Components in a Three Computer Environment
 In this scenario, you install the [!INCLUDE[nav_web_server](includes/nav_web_server_md.md)], [!INCLUDE[nav_server](includes/nav_server_md.md)], and the SQL Server database components on separate computers.  
 
- ![NAV Web client installation on three computers](media/NAV_Web_Client_Install_Three_Computers.png "NAV\_Web\_Client\_Install\_Three\_Computers")  
+ ![NAV Web client installation on three computers.](media/NAV_Web_Client_Install_Three_Computers.png "NAV\_Web\_Client\_Install\_Three\_Computers")  
 
 This article also applies to deploying the [!INCLUDE[nav_phone](includes/nav_phone_md.md)] and [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)].
 
