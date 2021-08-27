@@ -221,6 +221,17 @@ Also, to ensure that the existing published extensions work on the new platform,
     Restart-NAVServerInstance -ServerInstance <server instance>
     ```
 
+## <a name="UploadLicense"></a>Import [!INCLUDE[prod_short](../developer/includes/prod_short.md)] partner license  
+
+To import the license, use the [Import-NAVServerLicense cmdlet](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense). You'll have to restart the server instance afterwards:
+
+```powershell
+Import-NAVServerLicense -ServerInstance <server instance> -LicenseFile <path to license file>
+Restart-NAVServerInstance -ServerInstance <server instance>
+```
+
+For more information, see [Uploading a License File for a Specific Database](../cside/cside-upload-license-file.md#UploadtoDatabase).
+
 ## Publish the new system symbols
 
 Use the Publish-NAVApp cmdlet to publish the new symbols extension package. This package is called **System.app**. If you've installed the **AL Development Environment**, you find the file in the installation folder. By default, the folder path is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\150\AL Development Environment. Or, it's also on the installation media (DVD) in the ModernDev\program files\Microsoft Dynamics NAV\150\AL Development Environment folder.
@@ -487,7 +498,9 @@ If the old solution used third-party extensions, and you still want to use them,
 
 As an alternative, if you have the source for these extensions, you can build and compile a new version of the extension in the AL development environment. Then, you upgrade to the new version as described in the previous task.
 
-## Post Upgrade - Change application version
+## Post Upgrade
+
+### Change application version
 
 (Optional) This task isn't required for installing the update. However, it might be useful for support purposes and answering a common question about the application version.  
 
@@ -519,6 +532,16 @@ We recommend setting the value to application build number for the version 15 up
     ```
     Start-NAVDataUpgrade -ServerInstance <server instance name> -Tenant <tenant ID> 
     ```
+
+### Import the customer license
+
+Import the customer license by using the [Import-NAVServerLicense cmdlet](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense), as you did with the partner license. You'll have to restart the server instance afterwards.
+
+```powershell
+Import-NAVServerLicense -ServerInstance <server instance> -LicenseFile <path to license file>
+Restart-NAVServerInstance -ServerInstance <server instance name>
+```
+
 <!--
 ### Recompile and install published third-party extensions
 
