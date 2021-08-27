@@ -43,6 +43,9 @@ If a tenant wants to update the apps on their tenant during the minor releases, 
 
 That gives you the latest available version in our service.
 
+> [!NOTE]  
+> If a PTE contains breaking changes, it is possible to force an update by using the **Force** option on the **Extension Management** page. For more information, see [Uploading a Per-Tenant Extension (PTE)](business-central/ui-extensions-install-uninstall.md).
+
 ## How often should I submit updates of my app?
 Our recommendation is to pack more bug fixes and features into less frequent updates. Try to avoid frequent submissions containing very few changes. Being on a more frequent cadence than Business Central (monthly) is not advised. This leads to lower churn to production tenants.
 
