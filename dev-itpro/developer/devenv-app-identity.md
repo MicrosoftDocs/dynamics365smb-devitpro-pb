@@ -26,7 +26,7 @@ Apps built using AL extend the functionality of [!INCLUDE[prod_short](../include
 
 For more settings, see [JSON Files](devenv-json-files.md).
 
-For apps published in the `Global` scope, see [Publish NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/publish-navapp?view=businesscentral-ps-17), such as AppSource and 1st party applications, the `id` and the `version` identify a unique application package. The [!INCLUDE[prod_short](../includes/prod_short.md)] service uses these tuples to refer to apps in different flows. To prevent issues, it is recommended that the `id` remains the same after an app is uploaded to the [!INCLUDE[prod_short](../includes/prod_short.md)] service, and that you only increment the `version`.
+For apps published in the `Global` scope, see [Publish NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/publish-navapp?view=businesscentral-ps-17), such as AppSource and 1st party applications, the `id` and the `version` identify a unique application package. The [!INCLUDE[prod_short](../includes/prod_short.md)] service uses these tuples to refer to apps in different flows. To prevent issues, it is *required* that the `id` remains the same after an app is uploaded to the [!INCLUDE[prod_short](../includes/prod_short.md)] service, and that you only increment the `version`.
 
 For apps published in the `Tenant` scope, see [Publish NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/publish-navapp?view=businesscentral-ps-17), such as per-tenant customizations, in addition to the `id` and `version`, the `tenant ID` is also used to uniquely identify an app.
 
