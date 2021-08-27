@@ -19,6 +19,9 @@ Apps built using AL extend the functionality of [!INCLUDE[prod_short](../include
 > [!NOTE]  
 > With [!INCLUDE[prod_short](../includes/prod_short.md)] 2021 release wave 2, `name` and `publisher` are no longer considered part of the app identity and can therefore be changed to reflect branding or acquisition, for example. If the `name` and/or `publisher` information is changed, the `version` must also be incremented.
 
+> [!IMPORTANT]  
+> In cases where the Application app is substituted with another application app, the `name` is still used as identification. For more information, see [The Microsoft_Application.app File](devenv-application-app-file.md).
+
 |Setting|Example|Description|
 |-------|------|-----|
 |`id`   |`"id": "ef4dabfc-1de7-4d90-b948-4a9c2933d794"`| The `id`, also known as the app ID. This is a GUID which is auto-generated when the project is created. The app ID is also bound to how tables are named in [!INCLUDE[prod_short](../includes/prod_short.md)] and how the identity of an application is computed. Changing the app ID may have severe consequences, such as the app not functioning properly, or data not being available.|
