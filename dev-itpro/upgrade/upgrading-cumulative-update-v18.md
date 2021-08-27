@@ -81,6 +81,8 @@ $ExtPath = "The path and file name to an extension package"
 $ExtName = "The name of an extension"
 $ExtVersion = "The version of an extension, for example, 1.0.0.0"
 $AddinsFolder = "The file path to the Add-ins folder of Business Central Server installation, for example: C:\Program Files\Microsoft Dynamics 365 Business Central\180\Service\Add-ins"
+$PartnerLicense= "The file path and name of the partner license"
+$CustmerLicense= "The file path and name of the cutomer license"
 ```
 
 ## Download update package
@@ -245,6 +247,17 @@ Also, to ensure that the existing published extensions work on the new platform,
     ```powershell
     Restart-NAVServerInstance -ServerInstance $BcServerInstance
     ```
+
+## <a name="UploadLicense"></a>Import [!INCLUDE[prod_short](../developer/includes/prod_short.md)] partner license  
+
+To import the license, use the [Import-NAVServerLicense cmdlet](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense). You'll have to restart the server instance afterwards:
+
+```powershell
+Import-NAVServerLicense -ServerInstance $BcServerInstance -LicenseFile $PartnerLicense
+Restart-NAVServerInstance -ServerInstance $BcServerInstance
+```
+
+For more information, see [Uploading a License File for a Specific Database](../cside/cside-upload-license-file.md#UploadtoDatabase).  
 
 ## <a name="repair"></a>Recompile published extensions
 
@@ -521,6 +534,15 @@ Set-NAVServerConfiguration -ServerInstance $BcServerInstance -KeyName SolutionVe
 ```
 
 For more information about how to configure a server instance, see [Configuring Business Central Server](../administration/configure-server-instance.md).
+
+### Import the customer license
+
+Import the customer license by using the [Import-NAVServerLicense cmdlet](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense), as you did with the partner license. You'll have to restart the server instance afterwards.
+
+```powershell
+Import-NAVServerLicense -ServerInstance $BcServerInstance -LicenseFile $CustomerLicense
+Restart-NAVServerInstance -ServerInstance $BcServerInstance
+```
 
 ## See Also
 
