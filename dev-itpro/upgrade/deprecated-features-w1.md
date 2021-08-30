@@ -46,6 +46,15 @@ The following feature will be **Removed** with [!INCLUDE[prod_short](../develope
 
 ## Changes in 2021 release wave 2
 
+### Removal of the Business Central Server Administration tool (Warning)
+
+The following feature will be **Removed** in a later release.
+
+|Moved, Removed, or Replaced? |Why?|
+|---------|---------|
+|Removed | The Business Central Server Administration tool for setting server settings in on-premises installations will be removed in a later release. Please transition to using the proviced Powershell commandlets instead. |
+
+
 ### StartSession calls in upgrade/install context will fail
 
 The following feature will be **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 2.
