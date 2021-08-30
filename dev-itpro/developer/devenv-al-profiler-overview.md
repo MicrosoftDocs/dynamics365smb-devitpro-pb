@@ -12,13 +12,13 @@ ms.author: solsen
 
 # AL Profiler Overview
 
-With the AL Profiler for [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] you can capture a performance profile of the code that was executed for a snapshot. Using the performance profiling editor view in Visual Studio Code, you can investigate the time spent on execution, either using top-down and bottom-up call stack views, or by using flame graphs. <!-- is this in? -->
+With the AL Profiler for [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] you can capture a performance profile of the code that was executed for a snapshot. Using the performance profiling editor view in Visual Studio Code, you can investigate the time spent on execution, using top-down and bottom-up call stack views.
 
 The AL profiler works on a snapshot of running code. Snapshot debugging is a recording of running code that allows for later offline inspection. For more information, see [Snapshot Debugging](devenv-snapshot-debugging.md). 
 
 ## Snapshot configuration setting
 
-In order to do profiling on code, you must first capture a snapshot of running code. The snapshot configuration must include a parameter called  `executionContext` which has the following values in the table below.
+In order to do profiling on code, you must first capture a snapshot of running code. The snapshot configuration has a parameter called  `executionContext` which has the following values in the table below. If nothing is specified, the configuration is `DebugAndProfile` by default.
 
 |Option|Description|
 |------|-----------|
