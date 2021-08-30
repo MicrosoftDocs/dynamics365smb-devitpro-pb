@@ -63,6 +63,18 @@ To investigate the data shown in the graph, you can use different view modes as 
 |Purple| Base|
 |Yellow| Other|
 
+## Keyboard shortcuts for navigating the graph
+
+The following table provides an overview of the shortcut key combinations that you can use when you are working in the graph og method calls.
+
+|Keyboard Shortcut|Action|
+|-----------------|------|
+|Enter+Toggle | Expand and collapse a node. |
+|Arrow+Left | Collapse a node. |
+|Arrow+Right | Expand a node. |
+|-(minus) | Collapse all nodes.|
+|*(star) | Expand one level for all nodes. Consecutive keystrokes will expand to the next level.|
+
 ### View modes
 
 To switch between views, you can either right-click the profile file and choose a view, or you can use the small button in the upper right corner. There are two different view modes of the graph; *top-down* and *bottom-up*.
