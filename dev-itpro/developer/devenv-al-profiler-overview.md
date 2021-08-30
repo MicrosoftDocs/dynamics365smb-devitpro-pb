@@ -69,9 +69,9 @@ The following table provides an overview of the shortcut key combinations that y
 
 |Keyboard Shortcut|Action|
 |-----------------|------|
-|Enter+Toggle | Expand and collapse a node. |
-|Arrow+Left | Collapse a node. |
-|Arrow+Right | Expand a node. |
+|**Enter+Toggle** | Expand and collapse a node. |
+|**Arrow+Left** | Collapse a node. |
+|**Arrow+Right** | Expand a node. |
 |-(minus) | Collapse all nodes.|
 |*(star) | Expand one level for all nodes. Consecutive keystrokes will expand to the next level.|
 
