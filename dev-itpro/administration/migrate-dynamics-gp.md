@@ -88,8 +88,6 @@ When you migrate from Dynamics GP, the following information is migrated from Dy
     This data can be used in Power BI reports and Power Apps. In Business Central online, the data is included in the SmartList views in the Customers, Vendors, and Items lists. Technically, the data is stored in table extensions.
 6. Checkbook master data.  
 
-    We strongly recommend that you reconcile your checkbooks before you run the migration process to [!INCLUDE [prod_short](../developer/includes/prod_short.md)] as we will bring over transactions that have not been reconciled during the migration process.  
-
 ## Diagnostics run
 
 In the **Cloud Migration Management** page, you can create a diagnostics run to do more data validation/verification before the migration is run so that you can decrease the risk of a failed migration.
