@@ -85,7 +85,7 @@ When sorting the stack *top-down*, the graph sorts the methods according to call
 
 To investigate further, the **Self-time** and **Total time** columns are important indicators of where time is spent in the code. The **Self-time** is the amount of time spent in the method only, excluding any calls out of the method. The **Total time** is the amount of **Self-time** *plus* any calls out of the method. On *bottom-up* graphs the **Total time** and **Self-time** columns are sortable. Clicking them will first sort them *ascending*, clicking again will sort them *descending*.
 
-**Hit count** shows the number of times a specific method was called. Time spent is aggregated.
+**Hit count** is only available on *top-down* graphs and shows the number of times a specific method was called. Time spent is aggregated. 
 
 ### Filtering
 
@@ -105,6 +105,14 @@ The aliases that are available for the column names are:
 `boolean operators : [:, =, <>, !=]`  
 `string operators : [:, =, !=, <>, ~, =]`  
 `~ = := <regex>`
+
+##### Examples
+
+|Expression|Result|
+|----------|------|
+|@t > 1000 | Shows all nodes in the graph where the total time is greater than 1 second. |
+|@h > 20 | Shows all nodes in the graph where the hit count was larger than 20. |
+|@da ~= Ba* | Shows all nodes in the graph that start with Ba.|
 
 ## Inline CodeLens for AL profiling results
 
