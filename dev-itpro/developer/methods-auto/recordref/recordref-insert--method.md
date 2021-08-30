@@ -45,7 +45,7 @@ An instance of the [RecordRef](recordref-data-type.md) data type.
   
  If the auto-increment field contains a non-zero value, that value is inserted into the table and the auto-increment feature is not used. If the value in the auto-increment field is greater than the last auto-increment value in the table, the next auto-increment value that is entered into the table will be greater than the value in the field that you just inserted. If the value in the auto-increment field already exists in the table, a run-time error occurs.  
   
- This method works the same as the [Insert Method \(Record\)](../record/record-insert-method.md).  
+ This method works the same as the [Insert Method \(Record\)](../record/record-insert--method.md).  
   
 ## Example  
  The following example opens a table 18 \(Customer\) with a RecordRef variable that is named CustomerRecref. The [Field Method \(RecordRef\)](recordref-field-method.md) creates a FieldRef variable that is named MyFieldRef for the field. The [Init Method \(RecordRef\)](recordref-init-method.md) initializes the values in the fields by using default values and then the Insert method inserts a new record. The new record is 1120. This is the primary key for the new record.  
