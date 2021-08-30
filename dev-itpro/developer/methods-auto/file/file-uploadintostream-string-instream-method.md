@@ -51,7 +51,7 @@ The type of file that can be uploaded to the server. A user can try to upload an
 
 The business logic runs on the [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] and not on the client. Files are created on [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] and not locally on the client computer.  
 
-Use [Upload Method \(File\)](../../methods-auto/file/file-upload-method.md) and [UploadIntoStream Method \(File\)](../../methods-auto/file/file-uploadintostream-method.md) to send a file from the client to the [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)].  
+Use [Upload Method \(File\)](../../methods-auto/file/file-upload-method.md) and [UploadIntoStream Method \(File\)](../../methods-auto/file/file-uploadintostream-string-string-string-text-instream-method.md) to send a file from the client to the [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)].  
 
 Use [Download Method \(File\)](../../methods-auto/file/file-download-method.md) and [DownloadFromStream Method \(File\)](../../methods-auto/file/file-downloadfromstream-method.md) to send a file from the  [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] to the client.  
 
