@@ -106,7 +106,7 @@ The aliases that are available for the column names are:
 `string operators : [:, =, !=, <>, ~, =]`  
 `~ = := <regex>`
 
-##### Examples
+##### Filtering examples
 
 |Expression|Result|
 |----------|------|
