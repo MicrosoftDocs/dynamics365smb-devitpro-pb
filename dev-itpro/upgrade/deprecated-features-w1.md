@@ -52,7 +52,7 @@ The following feature will be **Removed** in a later release.
 
 |Moved, Removed, or Replaced? |Why?|
 |---------|---------|
-|Removed | The Business Central Server Administration tool for setting server settings in on-premises installations will be removed in a later release. Please transition to using the provided Powershell commandlets in the Business Central Administration Shell instead. |
+|Removed | The Business Central Server Administration tool for configuring the [!INCLUDE[server](../developer/includes/server.md)] in on-premises installations will be removed in a later release. Please transition to using the provided Powershell cmdlets in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] instead. |
 
 
 ### StartSession calls in upgrade/install context will fail
