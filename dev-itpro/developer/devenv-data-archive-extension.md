@@ -12,7 +12,9 @@ ms.date: 04/01/2021
 ---
 
 # Extending the Data Archive Extension
-The Data Archive extension provides a basic framework for archiving and backing up data as part of date compression. When you use date compression, related entries are consolidated into a single entry, and the originals are deleted. For more information, see [Compress Data with Date Compression](admin-manage-documents.md#compress-data-with-date-compression). However, there might be value in keeping that data, so rather than deleting it, you can archive it for later use.
+The Data Archive extension provides a basic framework for archiving and backing up data as part of date compression. When you use date compression, related entries are consolidated into a single entry, and the originals are deleted. For more information, see [Compress Data with Date Compression](admin-manage-documents.md#compress-data-with-date-compression). 
+
+However, there might be value in keeping that data, so rather than deleting it, you can archive it for later use. The archived data is stored in the **Tenant Media** table. This table is not included when database size is calculated, according to your license terms. Instead, it counts as file storage. However, we recommend that you export old archives to, for example, a CSV file and then delete the old archive records.
 
 An application that wants to archive data does so by using the **Data Archive** codeunit, which is available in the System Application. 
 
@@ -25,6 +27,7 @@ The following patterns of use are supported:
 > [!NOTE]
 > Recording deletions relies on the global database triggers, so for any deletions that have already been made on the relevant records, and the change log is not active for that table, you should consider using StartSubscriptionToDelete(**true**) to reset the session. Resetting the session will, however, also reset the state in the object, so we recommend caution when you test or use it.
 
+## Example
 The following example illustrates these patterns.
 
 ```
@@ -138,4 +141,5 @@ The application objects for data archiving are available in the System Applicati
 -->
 
 ## See Also
-[]()
+[The Archive Data Extension](dynamics365/business-central/admin-archive-data.md)  
+[Manage Storage by Deleting Documents or Compressing Data](dynamics365/business-central/admin-manage-documents.md)
