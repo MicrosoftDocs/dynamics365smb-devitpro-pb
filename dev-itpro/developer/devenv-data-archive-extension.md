@@ -141,5 +141,5 @@ The application objects for data archiving are available in the System Applicati
 -->
 
 ## See Also
-[The Archive Data Extension](dynamics365/business-central/admin-archive-data.md)  
-[Manage Storage by Deleting Documents or Compressing Data](dynamics365/business-central/admin-manage-documents.md)
+[The Archive Data Extension](/dynamics365/business-central/admin-archive-data)  
+[Manage Storage by Deleting Documents or Compressing Data](/dynamics365/business-central/admin-manage-documents)
