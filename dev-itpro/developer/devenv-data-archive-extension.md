@@ -12,7 +12,7 @@ ms.date: 04/01/2021
 ---
 
 # Extending the Data Archive Extension
-The Data Archive extension provides a basic framework for archiving and backing up data as part of date compression. When you use date compression, related entries are consolidated into a single entry, and the originals are deleted. For more information, see [Compress Data with Date Compression](admin-manage-documents.md#compress-data-with-date-compression). 
+The Data Archive extension provides a basic framework for archiving and backing up data as part of date compression. When you use date compression, related entries are consolidated into a single entry, and the originals are deleted. For more information, see [Compress Data with Date Compression](/dynamics365/business-central/admin-manage-documents.md#compress-data-with-date-compression). 
 
 However, there might be value in keeping that data, so rather than deleting it, you can archive it for later use. The archived data is stored in the **Tenant Media** table. This table is not included when database size is calculated, according to your license terms. Instead, it counts as file storage. However, we recommend that you export old archives to, for example, a CSV file and then delete the old archive records.
 
