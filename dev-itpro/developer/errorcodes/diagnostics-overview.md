@@ -606,7 +606,7 @@ author: SusanneWindfeldPedersen
 |[AL1036](al-1036.md)|The locale '{0}' is not valid.|Error|
 |[AL1037](al-1037.md)|The locale '{0}' is already defined.|Error|
 |[AL1038](al-1038.md)|The version number '{0}' for the property '{1}' does not match the expected format: W.X.Y.Z where W, X, Y, and Z represent positive integers.|Error|
-|[AL1039](al-1039.md)|The version number '{0}' for the property '{1}' does not match the expected format: X.Y where X and Y represent positive integers.|ERR_InvalidManifestVersion|
+|[AL1039](al-1039.md)|The version number '{0}' for the property '{1}' does not match the expected format: X.Y where X and Y represent positive integers.|Error|
 |[AL1040](al-1040.md)|The guid number '{0}' does not match the expected pattern: "^[0-9a-fA-F]{{8}}-[0-9a-fA-F]{{4}}-[0-9a-fA-F]{{4}}-[0-9a-fA-F]{{4}}-[0-9a-fA-F]{{12}}$".|Error|
 |[AL1041](al-1041.md)|The property '{0}' must be defined in the manifest.|Error|
 |[AL1042](al-1042.md)|The id '{0}' for the package with publisher '{1}', name '{2}', and version '{3}' specified in the project manifest does not match the id '{4}' of the package with the same name, publisher, and version found in the package cache folder.|Error|
@@ -629,15 +629,15 @@ author: SusanneWindfeldPedersen
 |[AL1059](al-1059.md)|Feature '{0}' can only be enabled, if feature '{1}' is also enabled.|Warning|
 |[AL1060](al-1060.md)|The max degree of parallelism must be -1 or positive.|Error|
 |[AL1061](al-1061.md)|An error occurred during file validation: '{0}'.|Error|
-|[AL1062](al-1062.md)|Too many key vault URLs specified.|ERR_KeyVaultUrls|
-|[AL1063](al-1063.md)|Key vault URL is too long.|ERR_KeyVaultUrls|
-|[AL1064](al-1064.md)|Key vault URL is not a valid URL.|ERR_KeyVaultUrls|
-|[AL1065](al-1065.md)|Key vault URL should not have a path or query string.|ERR_KeyVaultUrls|
-|[AL1066](al-1066.md)|Duplicate package dependency with application ID '{0}', publisher '{1}', and name '{2}'. Remove duplicate dependencies in the application manifest.|ERR_DuplicatePackageDependency|
-|[AL1067](al-1067.md)|Duplicate package dependency with publisher '{0}', and name '{1}'. Remove duplicate dependencies in the application manifest.|ERR_DuplicatePackageDependency|
-|[AL1068](al-1068.md)|Duplicate package dependency with application ID '{0}', and publisher '{1}'. Remove duplicate dependencies in the application manifest.|ERR_DuplicatePackageDependency|
-|[AL1069](al-1069.md)|Duplicate package dependency with application ID '{0}', and name '{1}'. Remove duplicate dependencies in the application manifest.|ERR_DuplicatePackageDependency|
-|[AL1070](al-1070.md)|Duplicate package dependency with application ID '{0}'. Remove duplicate dependencies in the application manifest.|ERR_DuplicatePackageDependency|
+|[AL1062](al-1062.md)|Too many key vault URLs specified.|Error|
+|[AL1063](al-1063.md)|Key vault URL is too long.|Error|
+|[AL1064](al-1064.md)|Key vault URL is not a valid URL.|Error|
+|[AL1065](al-1065.md)|Key vault URL should not have a path or query string.|Error|
+|[AL1066](al-1066.md)|Duplicate package dependency with application ID '{0}', publisher '{1}', and name '{2}'. Remove duplicate dependencies in the application manifest.|Error|
+|[AL1067](al-1067.md)|Duplicate package dependency with publisher '{0}', and name '{1}'. Remove duplicate dependencies in the application manifest.|Error|
+|[AL1068](al-1068.md)|Duplicate package dependency with application ID '{0}', and publisher '{1}'. Remove duplicate dependencies in the application manifest.|Error|
+|[AL1069](al-1069.md)|Duplicate package dependency with application ID '{0}', and name '{1}'. Remove duplicate dependencies in the application manifest.|Error|
+|[AL1070](al-1070.md)|Duplicate package dependency with application ID '{0}'. Remove duplicate dependencies in the application manifest.|Error|
 |[AL1071](al-1071.md)|Error writing to XML documentation file: {0}.|Error|
 |[AL1072](al-1072.md)|The name for the preprocessing symbol is not valid; '{0}' is not a valid identifier.|Warning|
 |[AL1073](al-1073.md)|The procedure with name {0} has the same name as a declared trigger.|Error|
