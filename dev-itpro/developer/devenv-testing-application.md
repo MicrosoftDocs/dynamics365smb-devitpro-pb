@@ -83,7 +83,7 @@ For more information, see [Creating Handler Methods](devenv-creating-handler-met
 ## ASSERTERROR Keyword
 You use `AssertError` statements in test methods to test how your application behaves under failing conditions. These statements are called positive and negative tests. The `AssertError` keyword specifies that an error is expected at run time in the statement that follows the `AssertError` keyword.
 
-If a simple or compound statement that follows the `AssertError` keyword causes an error, then execution successfully continues to the next statement in the test method. You can get the error text of the statement by using the [GETLASTERRORTEXT Method](methods-auto/system/system-getlasterrortext-method.md).
+If a simple or compound statement that follows the `AssertError` keyword causes an error, then execution successfully continues to the next statement in the test method. You can get the error text of the statement by using the [GETLASTERRORTEXT Method](methods-auto/system/system-getlasterrortext--method.md).
 
 If a statement that follows the `AssertError` keyword doesn't cause an error, then the `AssertError` statement causes the following error and the test method that is running produces a FAILURE result.
 

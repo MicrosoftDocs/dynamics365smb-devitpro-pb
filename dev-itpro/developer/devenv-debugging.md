@@ -63,7 +63,7 @@ Specify if the debugger breaks on record changes by using the `breakOnRecordWrit
 
 |Record change|AL Methods|  
 |-------------------|---------------------|  
-|Create a new record|[Insert Method (Record)](methods-auto/record/record-insert-method.md)|  
+|Create a new record|[Insert Method (Record)](methods-auto/record/record-insert--method.md)|  
 |Update an existing record|[Modify Method (Record)](methods-auto/record/record-modify-method.md), [ModifyAll Method (Record)](methods-auto/record/record-modifyall-method.md), [Rename Method (Record)](methods-auto/record/record-rename-method.md)|  
 |Delete an existing record|[Delete Method (Record)](methods-auto/record/record-delete-method.md), [DeleteAll Method (Record)](methods-auto/record/record-deleteall-method.md)|  
 
