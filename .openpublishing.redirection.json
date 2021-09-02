@@ -6342,7 +6342,7 @@
    },
    { 
     "source_path": "dev-itpro/webservices/walkthrough-creating-and-interacting-odata-v4-bound-action.md",
-    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/devenv-creating-and-interacting-with-odatav4-bound-action.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/devenv-creating-and-interacting-with-odatav4-bound-action",
     "redirect_document_id": false
    }
   ]
