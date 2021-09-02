@@ -7173,6 +7173,76 @@
     "source_path": "dev-itpro/developer/analyzers/codecop-aa0470-placeholdershouldhavecommentexplainingcontent.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/pertenantextensioncop-pte0001-objectidmustbeinfreerange.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/pertenantextensioncop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/pertenantextensioncop-pte0002-fieldidmustbeinfreerange.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/pertenantextensioncop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/pertenantextensioncop-pte0003-donotsubscribetooncompanyopenevents.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/pertenantextensioncop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/pertenantextensioncop-pte0004-tablesmusthavepermissionsetdefined.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/pertenantextensioncop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/pertenantextensioncop-pte0005-manifesttargetmustnotbeinternal.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/pertenantextensioncop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/pertenantextensioncop-pte0006-donotcallencryptionkeyfunctions.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/pertenantextensioncop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/pertenantextensioncop-pte0007-donotcallasserterror.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/pertenantextensioncop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/pertenantextensioncop-pte0008-useapplicationareaproperty.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/pertenantextensioncop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/pertenantextensioncop-pte0009-donotusemanifesttranslationproperties.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/pertenantextensioncop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/pertenantextensioncop-pte0010-extensionnamelengthmustnotexceedlimit.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/pertenantextensioncop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/pertenantextensioncop-pte0011-extensionpublisherlengthmustnotexceedlimit.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/pertenantextensioncop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/pertenantextensioncop-pte0012-internalsvisibletonosecurityfeature.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/pertenantextensioncop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/pertenantextensioncop-pte0013-entitlementobjectinptenotallowed.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/pertenantextensioncop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/pertenantextensioncop-pte0014-permissionsetsshouldnotbeinxml.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/pertenantextensioncop",
+    "redirect_document_id": false
    }
   ] 
 }
