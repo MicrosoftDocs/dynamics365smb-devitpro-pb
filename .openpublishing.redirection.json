@@ -7243,6 +7243,56 @@
     "source_path": "dev-itpro/developer/analyzers/pertenantextensioncop-pte0014-permissionsetsshouldnotbeinxml.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/pertenantextensioncop",
     "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/uicop-aw0001-requestpageofxmlportscannotbedisplayed.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/uicop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/uicop-aw0002-cuegroupscannotcontainbothactionsandfields.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/uicop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/uicop-aw0003-repeaterwithpartscannotbedisplayed.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/uicop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/uicop-aw0004-blobcannotbeusedonpagefield.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/uicop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/uicop-aw0005-useimageproperty.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/uicop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/uicop-aw0006-useusagecategoryproperty.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/uicop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/uicop-aw0008-repeatersnotsupportedincardpages.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/uicop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/uicop-aw0009-blobbitmapusageonpagefielddeprecated.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/uicop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/uicop-aw0011-addpromotedonlyifallactionsmarkedpromoted.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/uicop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/uicop-aw0012-synopsispropertieslimitedsupport.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/uicop",
+    "redirect_document_id": false
    }
   ] 
 }
