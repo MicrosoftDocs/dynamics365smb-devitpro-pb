@@ -6811,11 +6811,6 @@
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0092-applicationinsightskeymustbeused.md",
-    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
-    "redirect_document_id": false
-   },
-   { 
     "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0093-entitlementobjectinappsourcenotallowed.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
     "redirect_document_id": false
@@ -6824,7 +6819,361 @@
     "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0094-permissionsetsshouldnotbeinxml.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
     "redirect_document_id": false
-   }
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0002-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0003-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0005-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0008-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0013-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0018-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0021-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0022-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0040-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0072-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0073-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0074-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0087-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0100-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0101-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },{ 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0102-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0103-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0104-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0105-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0106-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0131-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },{ 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },{ 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },{ 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },{ 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },{ 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },{ 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+
    
   ] 
 }
