@@ -6344,6 +6344,488 @@
     "source_path": "dev-itpro/webservices/walkthrough-creating-and-interacting-odata-v4-bound-action.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/devenv-creating-and-interacting-with-odatav4-bound-action",
     "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0001-tabledeletionnotallowed.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0002-fielddeletionnotallowed.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0003-previousversionnotfound.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0004-fieldtypechangenotallowed.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0005-fieldnamechangenotallowed.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0006-tablenamechangenotallowed.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0007-propertyvaluechangenotallowed.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0008-keynamechangenotallowed.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0009-keyfieldschangenotallowed.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0010-keydeletenotallowed.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0010-primarykeydeletenotallowed.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0011-identifiersmusthaveprefix.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0011-identifiersmusthaveaffix.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0012-identifiersmusthavesuffix.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0013-fieldidmustbewithinallocatedrange.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0014-projectmanifestmustspecifyidrange.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0015-translationsmustbeenabled.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0016-dataclassificationmustbespecified.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0018-publicapiprocedureremovalnotallowed.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0019-eventattributecannotberemoved.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0020-businesseventattributecannotberemoved.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0020-eventattributetypecannotberemoved.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0021-argumentineventattributecannotbechangedtofalse.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0022-externalscopecannotberemoved.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0023-returntypecannotbemodifiedinpublicapi.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0024-parameterscannotberemovedoraddedinexternalprocedures.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0025-parameterscannotberemovedfromevents.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0025-parameterscannotbemodifiedorremovedfromevents.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0026-parametertypesubtypecannotbemodifiedinpublicapi.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0027-modifyingarraysizeofvarparameterinpublicapi.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0027-modifyingarraysizeofparameterinpublicapi.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0028-reducingarraysizeofparameterinpublicapi.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0029-pagedeletionnotallowed.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0030-pagerenamenotalowed.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0031-actiondeletionnotallowed.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0032-controldeletionnotallowed.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0033-viewdeletionnotallowed.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0034-desctructivetablepropertychangenotallowed.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0036-desctructivetablefieldpropertychangenotallowed.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0038-destructivekeypropertychangenotallowed.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0039-destructivetablepropertyremovenotallowed.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0041-destructivetablefieldpropertyremovenotallowed.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0042-destructivekeypropertyremovenotallowed.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0043-uniquekeydeletenotallowed.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0043-clusteredkeydeletenotallowed.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0044-destructivetablefieldpropertyoptionmemberschangenotallowed.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0047-extensionnamelengthmustnotexceedlimit.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0048-extensionpublishelengthmustnotexceedlimit.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0049-applicationobjectaccessibilitychangenotallowed.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0050-applicationobjectextensibilitychangenotallowed.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0051-applicationmanifestpropertymustbespecified.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0052-applicationmanifestmustspecifyurl.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0053-applicationmanifestcompilationtargetmustbecloud.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0054-appsourcecopconfigurationmustspecifyaffixes.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0055-appsourcecopconfigurationshouldspecifysupportedcountries.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0055-appsourcecopconfigurationmustspecifysupportedcountries.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0056-appsourcecopconfigurationsupportedcountriesmustbevalidcountrycode.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0057-translationsnotprovidedforlocale.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0058-onlyuseasserterrorintestcodeunits.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0059-databasetablesarereadonly.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0060-unsafemethodinvocationisnotallowed.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0061-donotsubscribetooncompanyopenevents.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0062-useapplicationareaproperty.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0063-removingvarparamatermodifierinevent.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0063-changingvarparamatermodifier.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0064-interfaceimplementationdeletionnotallowed.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0065-interfacedeletionnotallowed.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0066-addingpublicapiprocedurenotallowed.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0067-addinginterfacetoenumwithoutdefaultimplementationnotallowed.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0068-changingtableextensiontargetnotallowed.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0069-invalidoptiontoenumconversionnumberofenumvalues.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0070-invalidoptiontoenumconversionvaluerenamed.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0071-invalidoptiontoenumconversionmissingordinalvalue.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0072-obsoletetagpreviousversionnotallowed.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0073-obsoletetagmissingnotallowed.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0074-obsoletetagdifferentfrombaselinenotallowed.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0075-obsoletereasonmissingnotallowed.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0076-obsoletetagformatnotallowed.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0077-addingvarparamatermodifierinevent.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0078-changingvarparamatermodifier.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0079-extensionproceduresmusthaveaffix.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0080-fieldlengthdecreasenotallowed.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0081-internalsvisibletonosecurityfeatures.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0082-enumvaluechangenotallowed.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0083-enumvaluedeletionnotallowed.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0084-idrangeallocatedtoapplicationmustbewithinappsourcerange.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0085-applicationdependencymustbeused.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0086-fieldlengthincreasenotallowed.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0087-translationsofenumvaluecaptionwithcommasisnotallowed.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0088-referenceableobjectwithiddeletionnotallowed.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0089-referenceableobjectiondeletionnotallowed.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0090-referenceableobjectrenamenotallowed.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0091-previousversiondependencynotfound.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0092-applicationinsightskeymustbeused.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0093-entitlementobjectinappsourcenotallowed.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0094-permissionsetsshouldnotbeinxml.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
    }
-  ]
+   
+  ] 
 }
+
