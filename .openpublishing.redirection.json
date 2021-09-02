@@ -6821,360 +6821,359 @@
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-binaryoperatorspacing.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0002-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0002-unaryoperatornospacing.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0003-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0003-unaryoperatorspacing.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0005-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0005-onlyusebeginendforcompoundstatements.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0008-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0008-useparenthesisforfunctioncall.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0013-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0013-trailingbeginshouldbeonthesameline.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0018-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0018-keywordshouldbefirstonline.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0021-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0021-variabledeclarationsshouldbeorderedbytype.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0022-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0022-substituteifelsewithcasestatemeentifmorethantwoalternatives.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0040-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0040-donotnestwiths.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0072-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0072-nameofvariablesmustbesuffixedwithtypeobjectname.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0073-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0073-temporaryvariablesmustbeprefixedtemp.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0074-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0074-textconstlabelvariablenamesshouldhaveapprovedsuffix.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0087-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0087-doonlylowerpermissionsinsidetestprocedures.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0100-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0100-donothaveidentifierswithquotesinthename.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0101-.md",
-    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
-    "redirect_document_id": false
-   },{ 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0102-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0101-usecamelcasecaptionsforapipages.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0103-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0101-usecamelcasepropertyvaluesforapipages.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0104-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0102-usecamelcasefieldnamesforapipages.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0105-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0103-usecamelcasepropertyvaluesforapiquries.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0106-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0104-usecamelcasecolumnnamesforapiqueries.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0131-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0105-pagepartmustnotrefertoparentpage.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0106-apipagecanonlyrefertothesamesubpageonce.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
-    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
-    "redirect_document_id": false
-   },{ 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0131-stringparamsmustmatchplaceholders.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0136-donotwritecodethatwillneverbehit.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
-    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
-    "redirect_document_id": false
-   },
-   { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
-    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
-    "redirect_document_id": false
-   },
-   { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
-    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
-    "redirect_document_id": false
-   },
-   { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
-    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
-    "redirect_document_id": false
-   },
-   { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
-    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
-    "redirect_document_id": false
-   },
-   { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0137-donotdeclarevariablesthatareunused.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },{ 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0139-donotassigntostringwithsmallercapacity.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0150-denotdeclareparametersbyreferenceifneverchanged.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0161-onlyuseasserterrorintestcodeunits.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0175-donotfindrecordandnotuse.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0181-findsetfindshouldbeusedwithnext.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0189-applicationareahasinvalidvalue.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0194-donotwriteactionswithnoeffect.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0198-globallocalvariablesshouldnothavesamename.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },{ 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0199-applicationareaincorrectorder.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0200-applicationareaallshouldbealone.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0201-applicationareabasicandsuite.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0202-donotnamelocalvarasfieldormethod.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0203-donotnamemethodasfield.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0204-donotnameglobalvarasfieldormethod.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0205-variablesmustalwaysbeinitialized.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0206-initializedvariablesmustalwaysbeused.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },{ 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0207-eventsubscriberfunctionsmustbelocal.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0210-suboptimalindex.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0211-calcfieldsonlyonflowfields.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0213-obsoletejustification.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0214-blindwritelocalrecord.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0215-followfilenameguide.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0216-passusermessageanderrorbytextconstant.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0217-strsubstnoformatstringshouldbetextconstantorlabel.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },{ 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0218-tooltipmustbefilledonpageforfieldsandactions.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0219-tooltipforfieldmuststartwithspecifies.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0220-tooltiplanguagevaluemustbefilled.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0221-optioncaptionmustbefilledonpageforoptionfields.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0222-siftindexshouldnotbeusedforprimaryanduniquekey.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0223-optioncaptionlanguagevaluemustbefilled.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
-    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
-    "redirect_document_id": false
-   },
-   { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0224-countofoptionscaptioniswrong.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },{ 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0225-captionmustbefilledonpageforfields.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0226-captionlanguagevaluemustbefilled.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0227-alwaysguardmethodswithunhandlederrorsinupgradecodeunits.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0228-thelocalmethodisdeclaredbutneverused.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0230-noversionnumberonbcassembliesdotnetvars.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0231-donotusestrsubstnoinerrormessage.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0232-flowfieldoftableshouldbeindexed.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },{ 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0233-usegetfindfirstandfindlastwithoutnext.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },
    { 
-    "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-.md",
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0235-whenusingoninstallpercompanyaddcodetocompanyinitializesubscription.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false
    },
-
-   
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0237-nontemporaryvariablesmustnotbeprefixedtemp.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0240-emailandphonenomustnotbepresentinthesource.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0241-uselowercaseforlanguagekeywords.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0242-partialrecordsdetectjitloads.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0448-usefieldtablecaptionforusermessages.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0462-calcdateonlywithdateformulausage.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/analyzers/codecop-aa0470-placeholdershouldhavecommentexplainingcontent.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
+    "redirect_document_id": false
+   }
   ] 
 }
 
