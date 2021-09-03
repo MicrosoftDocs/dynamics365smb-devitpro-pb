@@ -3,7 +3,7 @@ title: "AL Diagnostics"
 description: ""
 ms.author: solsen
 ms.custom: na
-ms.date: 08/31/2021
+ms.date: 09/03/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -201,7 +201,7 @@ author: SusanneWindfeldPedersen
 |[AL293](diagnostic-al293.md)|Property value {0} is not in the field's OptionMembers.|Error|
 |[AL294](diagnostic-al294.md)|The type of property value {0} does not match the field’s type.|Error|
 |[AL295](diagnostic-al295.md)|The field '{0}' is not found in the target '{1}'.|Error|
-|[AL296](diagnostic-al296.md)|The application object or method '{0}' has scope '{1}' and cannot be used for '{2}' development. For more information, see: https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-compilation-scope-overview.|Error|
+|[AL296](diagnostic-al296.md)|The application object or method '{0}' has scope '{1}' and cannot be used for '{2}' development. For more information, see [Compilation Scope Overview](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-compilation-scope-overview).|Error|
 |[AL297](diagnostic-al297.md)|The application object identifier '{0}' is not valid. It must be within the allowed ranges '{1}'.|Error|
 |[AL298](diagnostic-al298.md)|The data type of the expression assigned to the 'StyleExpr' property is not valid. Valid data types are Boolean, Text, or Code.|Error|
 |[AL299](diagnostic-al299.md)|Member name '{0}' is only allowed on triggers.|Warning (future error)|
