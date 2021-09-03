@@ -24,7 +24,7 @@ The publisher name of an extension cannot be changed for extensions targeting a 
 
 ## Remarks
 
-Changing the identity of extensions is only supported in Business Central starting from Release 2021 Wave 2 which corresponds to the AL runtime version 8.0, see [JSON Files](../devenv-json-files.md#Appjson).  
+Changing the identity of extensions is only supported in Business Central starting from version 2021 release wave 2 which corresponds to the AL runtime version 8.0, see [JSON Files](../devenv-json-files.md#Appjson). For more information about what makes up the identity of an app, see [App Identity](../devenv-app-identity.md).
 
 ## How to fix this diagnostic?
 
@@ -93,3 +93,4 @@ In version 2.0, the publisher has been renamed from `Publisher Name` to `New Pub
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
+[App Identity](../devenv-app-identity.md)  
