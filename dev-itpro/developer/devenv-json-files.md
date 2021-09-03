@@ -130,7 +130,7 @@ The following table describes the settings in the `launch.json` file. The `launc
 [AL Development Environment](devenv-reference-overview.md)  
 [App Identity](devenv-app-identity.md)  
 [Debugging in AL](devenv-debugging.md)  
-[Security Setting and IP Protection](devenv-security-settings-and-ip-protection.md)  
+[Security Setting and Resource Exposure Policy](devenv-security-settings-and-ip-protection.md)  
 [AL Language Extension Configuration](devenv-al-extension-configuration.md)  
 [Configure Context-Sensitive Help](../help/context-sensitive-help.md)  
 [App Key Vaults](devenv-app-key-vault-overview.md)
