@@ -22,13 +22,12 @@ The extension development package provides a pre-configured setting for IP prote
 
 When you start a new project, an `app.json` file is generated automatically, which contains the information about the extension that you are building on. The `app.json` file contains a setting called `resourceExposurePolicy` that defines the accessibility of the resources and source code during different operations. `resourceExposurePolicy` specifies the following list of options: `allowDebugging`, `allowDownloadingSource`, and `includeSourceInSymbolFile`. Each of these properties define the specific areas in which the source code of an extension can be accessed. All of the options are by default set to `false` which means that by default no dependent extension can debug or download the source code of your extension.
 
-<!-- matrix -->
-
 ### allowDebugging
 
 To allow debugging into your extension, when the extension is taken as a dependency, you must set the `allowDebugging` flag to `true`, otherwise debugging and Go to Definition to view the code is now allowed. For a more refined setting, you can specify the `NonDebuggable` attribute on methods and variables. For more information, see [NonDebuggable Attribute](methods/devenv-nondebuggable-attribute.md).
 
-`allowDebugging` does not apply to [Profiles](devenv-profile-object.md), [Page Customizations](devenv-page-customization-object.md) and [Views](devenv-views.md), because these objects cannot define any custom logic in procedures or triggers. The code for Profiles, Page Customizations, and Views defined in an extension with `allowDebugging` set to **false** can then still be accessed and copied using [Designer](devenv-inclient-designer.md).
+> [!NOTE]  
+> `allowDebugging` does not apply to [Profiles](devenv-profile-object.md), [Page Customizations](devenv-page-customization-object.md) and [Views](devenv-views.md), because these objects cannot define any custom logic in procedures or triggers. The code for Profiles, Page Customizations, and Views defined in an extension with `allowDebugging` set to **false** can still be accessed and copied using [Designer](devenv-inclient-designer.md).
 
 ### allowDownloadingSource
 

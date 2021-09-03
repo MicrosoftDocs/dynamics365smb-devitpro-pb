@@ -28,7 +28,7 @@ The page customization object has more restrictions than the [page extension obj
 > Modifying actions in Cue groups on page extensions is not supported.
 
 > [!NOTE]  
-> `allowDebugging` does not apply to page customizations. Page customizations defined in an extension with `allowDebugging` set to `false` can still be copied using Designer.
+> The property `allowDebugging`, which is a setting under `resourceExposurePolicy` does not apply to page customizations. Page customizations defined in an extension with `allowDebugging` set to `false` can still be copied using Designer. For more information, see [Security Setting and IP Protection](devenv-security-settings-and-ip-protection.md).
 
 
 ## Snippet support
