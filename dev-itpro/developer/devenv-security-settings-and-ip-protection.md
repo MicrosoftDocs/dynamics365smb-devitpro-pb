@@ -20,7 +20,14 @@ The extension development package provides a pre-configured setting for protecti
 
 ## Resource Exposure Policy
 
-When you start a new project, an `app.json` file is generated automatically, which contains the information about the extension that you are building on. The `app.json` file contains a setting called `resourceExposurePolicy` that defines the accessibility of the resources and source code during different operations. `resourceExposurePolicy` specifies the following list of options: `allowDebugging`, `allowDownloadingSource`, and `includeSourceInSymbolFile`. Each of these properties define the specific areas in which the source code of an extension can be accessed. All of the options are by default set to `false` which means that by default no dependent extension can debug or download the source code of your extension.
+When you start a new project, an `app.json` file is generated automatically, which contains the information about the extension that you are building on. The `app.json` file contains a setting called `resourceExposurePolicy` that defines the accessibility of the resources and source code during different operations. `resourceExposurePolicy` specifies the following list of options: `allowDebugging`, `allowDownloadingSource`, and `includeSourceInSymbolFile`. Each of these properties define the specific areas in which the source code of an extension can be accessed. All of the options are by default set to `false` which means that by default no dependent extension can debug or download the source code of your extension. The syntax of the `resourceExposurePolicy` setting is the following:
+
+```al
+`"resourceExposurePolicy": {"allowDebugging": true, "allowDownloadingSource": true, "includeSourceInSymbolFile": true}`
+```
+
+> [!NOTE]  
+> The `resourceExposurePolicy` setting is not visible in the `app.json` file when it is generated. If you want to change the value, you must add the setting as shown in the code snippet below.
 
 ### allowDebugging
 
@@ -28,6 +35,22 @@ To allow debugging into your extension, when the extension is taken as a depende
 
 > [!NOTE]  
 > `allowDebugging` does not apply to [Profiles](devenv-profile-object.md), [Page Customizations](devenv-page-customization-object.md) and [Views](devenv-views.md), because these objects cannot define any custom logic in procedures or triggers. The code for Profiles, Page Customizations, and Views defined in an extension with `allowDebugging` set to **false** can still be accessed and copied using [Designer](devenv-inclient-designer.md).
+
+> [!NOTE]  
+> Even though `allowDebugging` is set to **false**, you will still be able to view that code if an extension is deployed through Visual Studio Code, as opposed to deploying using a cmdlet or via AppSource.
+
+
+#### Changing the allow debugging setting
+
+If you want to allow debugging into your extension to view the source code, you can add the `allowDebugging` property in the `app.json` file and set the property value to **true**. For example, if a developer develops extension A and he or someone else on the team develops extension B, and B depends on A, then debugging B will only step into the code for A if a method from A is called and if the `allowDebugging` flag is set to **true** in the app.json for extension A as shown in the example below:
+
+<!-- example -->
+```json
+`"resourceExposurePolicy": {"allowDebugging": true}`
+```
+
+By adding this setting, you *enable debugging* into an extension to view the source code when that extension is set as a dependency.
+
 
 ### allowDownloadingSource
 
@@ -37,24 +60,6 @@ When this is set to `true` in the `app.json` file of extension A, the source cod
 
 When this is set to `true` in the `app.json` file of extension A, the downloaded symbol file in Visual Studio Code using the **Downloading Symbols** functionality, contains symbols and the source code of extension A.
 
-
-> [!NOTE]  
-> The `resourceExposurePolicy` setting is not visible in the `app.json` file when it is generated. If you want to change the value, you must add the setting as shown in the code snippet below.
-
-> [!NOTE]  
-> Even though `allowDebugging` is set to **false**, you will still be able to view that code if an extension is deployed through Visual Studio Code, as opposed to deploying using a cmdlet or via AppSource.
-
-
-## Changing the allow debugging setting
-
-If you want to allow debugging into your extension to view the source code, you can add the `allowDebugging` property in the `app.json` file and set the property value to **true**. For example, if a developer develops extension A and he or someone else on the team develops extension B, and B depends on A, then debugging B will only step into the code for A if a method from A is called and if the `allowDebugging` flag is set to **true** in the app.json for extension A as shown in the example below:
-
-<!-- example -->
-```json
-`"resourceExposurePolicy": {"allowDebugging": true}`
-```
-
-By adding this setting, you *enable debugging* into an extension to view the source code when that extension is set as a dependency. 
 
 ## See Also
 
