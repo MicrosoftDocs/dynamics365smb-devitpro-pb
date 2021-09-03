@@ -60,4 +60,4 @@ By adding this setting, you *enable debugging* into an extension to view the sou
 
 [JSON Files](devenv-json-files.md)  
 [AL Development Environment](devenv-reference-overview.md)  
-[NonDebuggable Attribute](methods/devenv-nondebuggable-attribute.md)  
+[NonDebuggable Attribute](attributes/devenv-nondebuggable-attribute.md)  
