@@ -1,6 +1,6 @@
 ---
-title: "Security Setting and IP Protection"
-description: This topic explains how to set the security setting and IP protection against downloading or debugging into extension to see the source code.
+title: "Security Setting and Resource Exposure Policy"
+description: This topic explains how to set the security and resource exposure policy against downloading or debugging into extension to see the source code.
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 04/01/2021
@@ -12,7 +12,7 @@ ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
-# Security Setting and IP Protection
+# Security Setting and Resource Exposure Policy
 
 When developing an extension, your code is by default protected against downloading or debugging. Read below about the security setting and adding Intellectual Property (IP) protection against downloading or debugging into an extension to see the source code in the extensions.
 
@@ -24,7 +24,7 @@ When you start a new project, an `app.json` file is generated automatically, whi
 
 ### allowDebugging
 
-To allow debugging into your extension, when the extension is taken as a dependency, you must set the `allowDebugging` flag to `true`, otherwise debugging and Go to Definition to view the code is now allowed. For a more refined setting, you can specify the `NonDebuggable` attribute on methods and variables. For more information, see [NonDebuggable Attribute](methods/devenv-nondebuggable-attribute.md).
+To allow debugging into your extension, when the extension is taken as a dependency, you must set the `allowDebugging` flag to `true`, otherwise debugging and Go to Definition to view the code is now allowed. For a more refined setting, you can specify the `NonDebuggable` attribute on methods and variables. For more information, see [NonDebuggable Attribute](attributes/devenv-nondebuggable-attribute.md).
 
 > [!NOTE]  
 > `allowDebugging` does not apply to [Profiles](devenv-profile-object.md), [Page Customizations](devenv-page-customization-object.md) and [Views](devenv-views.md), because these objects cannot define any custom logic in procedures or triggers. The code for Profiles, Page Customizations, and Views defined in an extension with `allowDebugging` set to **false** can still be accessed and copied using [Designer](devenv-inclient-designer.md).
