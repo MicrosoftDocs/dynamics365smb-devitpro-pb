@@ -63,7 +63,7 @@ To investigate the data shown in the graph, you can use different view modes as 
 |Purple| Base|
 |Yellow| Other|
 
-> [!NOTE]  
+> [!IMPORTANT]  
 > If you run Visual Studio Code with the setting **Run as administrator**, the graph will not display in the performance profiling editor view. As a workaround, you can launch Visual Studio Code from the command line with the flag `--no-sandbox`.
 
 ## Keyboard shortcuts for navigating the graph
