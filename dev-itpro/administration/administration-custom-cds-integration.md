@@ -145,13 +145,17 @@ page 50001 "CDS Worker List"
 4. Add the fields from the integration table to display on the page in the `layout` section. 
 
 ### To create a column on list page to display which workers are coupled
-To track whether or not Employee record is coupled to a corresponding Worker record in Dataverse, simply do the following:
-1. Add a boolean field called "Coupled to CRM" to your Business Central table. The name of the new field needs to be exactly "Coupled to CRM".
-2. Add a control that shows the "Coupled to CRM" field on the list page. There is no constraint about how to name this new control in the UI.
+To track whether an employee record is coupled to a corresponding worker record in Dataverse, do the following:
+1. Add a boolean field called "Coupled to CRM" to your Business Central table. 
 
-Every time you couple or uncouple a record from your Business Central table to an record in Dataverse, the  synchronization engine will update the "Coupled to CRM" field that you added.
+ > [!IMPORTANT]  
+ > The name of the new field must be **Coupled to CRM**.
 
-This will work only for records that you couple/uncouple after you have added the "Coupled to CRM" field. To update this field value on records that you had coupled before adding the "Coupled to CRM" field, you must run this piece of code, preferrably within a background task:
+3. Add a control that shows the **Coupled to CRM** field on the list page. There is no constraint about how to name this new control in the UI.
+
+Every time you couple or uncouple a record from your Business Central table to an record in Dataverse, the synchronization engine will update the Coupled to CRM field that you added.
+
+This will work only for records that you couple or uncouple after you have added the Coupled to CRM field. To update this field value on records that were coupled before you added the Coupled to CRM field, you must run the following code. We recommend that you run the code as a background task.
 
 ```al
 local procedure SetCoupledFlags()
