@@ -14,7 +14,7 @@ ms.author: solsen
 
 [!INCLUDE[2021_releasewave2](includes/2021_releasewave2.md)]
 
-With the AL Profiler for [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] you can capture a performance profile of the code that was executed for a snapshot. Using the performance profiling editor view in Visual Studio Code, you can investigate the time spent on execution, using top-down and bottom-up call stack views.
+With the AL Profiler for the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] you can capture a performance profile of the code that was executed for a snapshot. Using the performance profiling editor view in Visual Studio Code, you can investigate the time spent on execution, using top-down and bottom-up call stack views.
 
 The AL profiler works on a snapshot of running code. Snapshot debugging is a recording of running code that allows for later offline inspection. For more information, see [Snapshot Debugging](devenv-snapshot-debugging.md). 
 
@@ -82,9 +82,9 @@ The following table provides an overview of the shortcut key combinations that y
 
 ### View modes
 
-To switch between views, you can either right-click the profile file and choose a view, or you can use the small button in the upper right corner. There are two different view modes of the graph; *top-down* and *bottom-up*.
+To switch between views, you can either right-click the profile file and choose a view, or you can use the small button in the upper right corner. There are two different view modes in the graph; *top-down* and *bottom-up*.
 
-When sorting the stack *top-down*, the graph sorts the methods according to call sequence, which means that the child nodes are the methods called from the parent node. And when sorting *bottom-up*, the graph is sorted as a reverse call stack, which means that the child nodes are methods who called the parent node.
+When sorting the stack *top-down*, the graph sorts the methods according to call sequence, which means that the child nodes are the methods called from the parent node. And when sorting *bottom-up*, the graph is sorted as a *reverse* call stack, which means that the child nodes are methods who *called* the parent node.
 
 ### Details
 
@@ -121,7 +121,7 @@ The aliases that are available for the column names are:
 
 ## Inline CodeLens for AL profiling results
 
-CodeLens for Visual Studio Code is enabled in the user or workspace settings by adding the `"editor.codeLens": true` setting for the specific user or for the workspace. CodeLens is also available for showing profile results. At hover, CodeLens displays time spent in milliseconds for the specific method, and number of hits. The option for adding a lower limit for time spent on statement execution is `al.statementLensMin`. To activate this setting, press **Ctrl+Shift+P**, and then choose **Preferences: Open Settings (UI)** for workspace settings, or choose **Preferences: Open User Settings** for user settings. Use 
+CodeLens for Visual Studio Code is enabled in the user or workspace settings by adding the `"editor.codeLens": true` setting for the specific user or for the workspace. CodeLens is also available for showing profile results. At hover, CodeLens displays time spent in milliseconds for the specific method, and number of hits. The option for adding a lower limit for time spent on statement execution is `al.statementLensMin`. To activate this setting, press **Ctrl+Shift+P**, and then choose **Preferences: Open Settings (UI)** for workspace settings, or choose **Preferences: Open User Settings** for user settings. 
 
 ## See Also
 
