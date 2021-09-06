@@ -1,6 +1,6 @@
 ---
 title: "AL Profiler Overview"
-description: "Description of how you can use the AL profiler to analyze code written for Business Central."
+description: "Description of how to use the AL profiler to analyze method calls in code written for Business Central."
 
 author: SusanneWindfeldPedersen
 ms.custom: na
@@ -68,7 +68,7 @@ To investigate the data shown in the graph, you can use different view modes as 
 
 ## Keyboard shortcuts for navigating the graph
 
-The following table provides an overview of the shortcut key combinations that you can use when you are working in the graph og method calls.
+The following table provides an overview of the shortcut key combinations that you can use when you are working in the graph of method calls.
 
 |Keyboard Shortcut|Action|
 |-----------------|------|
@@ -119,7 +119,7 @@ The aliases that are available for the column names are:
 
 ## Inline CodeLens for AL profiling results
 
-CodeLens for Visual Studio Code is enabled in the user or workspace settings by adding the `"editor.codeLens": true` setting for the specific user or for the workspace. CodeLens is also available for showing profile results. At hover, CodeLens displays time spent in milliseconds for the specific method, and number of hits. The option for adding a lower limit for time spent on statement execution is `al.statementLensMin`. To activate this setting, press **Ctrl+Shift+P**, and then choose **Preferences: Open Settings (UI)** for workspace settings, or choose **Preferences: Open User Settings** for user settings.
+CodeLens for Visual Studio Code is enabled in the user or workspace settings by adding the `"editor.codeLens": true` setting for the specific user or for the workspace. CodeLens is also available for showing profile results. At hover, CodeLens displays time spent in milliseconds for the specific method, and number of hits. The option for adding a lower limit for time spent on statement execution is `al.statementLensMin`. To activate this setting, press **Ctrl+Shift+P**, and then choose **Preferences: Open Settings (UI)** for workspace settings, or choose **Preferences: Open User Settings** for user settings. Use 
 
 ## See Also
 
