@@ -163,7 +163,7 @@ There are many different ways to spin up a new task:
 
 - [Job Queue](/dynamics365/business-central/admin-job-queues-schedule-tasks)  
 - [TaskScheduler.CreateTask](../developer/methods-auto/taskscheduler/taskscheduler-data-type.md)  
-- [StartSession](../developer/methods-auto/session/session-startsession-method.md)  
+- [StartSession](../developer/methods-auto/session/session-startsession-integer-integer-string-table-method.md)  
 - [Page Background Task](../developer/devenv-page-background-tasks.md)  
 
 They come with different characteristics as described in this table:

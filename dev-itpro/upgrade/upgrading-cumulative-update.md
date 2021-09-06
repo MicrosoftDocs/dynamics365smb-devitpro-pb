@@ -93,6 +93,13 @@ To upgrade to the latest platform, the database must be converted by using the D
 
     For more information about syncing, see [Synchronizing the Tenant Database and Application Database](../administration/synchronize-tenant-database-and-application-database.md).
 
+10. <a name="uploadlicense"></a>Upload the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Partner license to the database.  
+
+    For more information, see [Uploading a License File for a Specific Database](../cside/cside-upload-license-file.md#UploadtoDatabase).  
+
+    > [!IMPORTANT]
+    > The license that you upload must be a developer license. During the conversion, the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] will convert the report objects that are stored in the old database to the RDL format.
+
 ## Update the application
 
 The APPLICATION folder includes the following files:
@@ -195,6 +202,10 @@ The general steps for this task are listed below. For detailed steps, see [Publi
 6. Repair, synchronize, and install any custom extensions (third-party) that are currently published. Do this step for old extensions that you still want to use.
 
     This step ensures that the extensions work on the new platform and application versions.
+
+## Import the customer license
+
+Import the customer license as you did with the partner license. For more information, see [Uploading a License File for a Specific Database](../cside/cside-upload-license-file.md#UploadtoDatabase).  
 
 ## See Also
 

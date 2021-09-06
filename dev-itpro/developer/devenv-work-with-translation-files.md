@@ -2,7 +2,7 @@
 title: "Working with Translation Files"
 description: "How to work with translations, multilanguage, and XLIFF files in Business Central"
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 09/02/2021
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: solsen
@@ -96,7 +96,7 @@ var
 
 ## The XLIFF file
 
-In the generated .xlf file, you can see a `<source>` element for each label. For the translation, you will now have to add the `target-language` and a `<target>` element per label. The `<trans-unit id>` attribute corresponds to the object ID in the extension. This is illustrated in the example below.
+In the generated .xlf file, you can see a `<source>` element for each label. For the translation, you will now have to add the `target-language` and a `<target>` element per label. The `target-language` must be specified in the format `"<language code>-<country code>"`, for example `"da-DK"`, `"es-ES"`, or `"de-DE"`. The `<trans-unit id>` attribute corresponds to the object ID in the extension. This is illustrated in the example below.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

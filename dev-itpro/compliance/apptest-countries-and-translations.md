@@ -25,12 +25,15 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Country/Region|Localized by|Availability|Environment Country in Tenant Admin Center|Azure Region|
 |-----------|---------|------------|-----------|---------|
 |Algeria|Partner|Available|DZ|South Africa North|
+|Argentina|Partner|Planned|AR|Brazil South|
 |Australia|Microsoft|Available|AU|Australia East|
 |Austria|Microsoft|Available|AT|West Europe, Netherlands|
 |Bangladesh|Partner|Available|BD|Southeast Asia, Singapore|
 |Belgium|Microsoft|Available|BE|West Europe, Netherlands|
+|Bulgaria|Partner|Planned|BG|West Europe, Netherlands|
 |Brazil|Partner|Available|BR|Brazil South|
 |Canada|Microsoft|Available|CA|Canada Central|
+|Chile|Partner|Planned|CL|Brazil South|
 |Colombia|Partner|Available|CO|Brazil South|
 |Croatia|Partner|Available|HR|West Europe, Netherlands|
 |Czechia|Microsoft|Available|CZ|West Europe, Netherlands|
@@ -60,6 +63,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Malta|Partner|Available|MT|West Europe, Netherlands|
 |Mexico|Microsoft|Available|MX|South Central US|
 |Morocco|Partner|Available|MA|South Africa North|
+|Myanmar|Partner|Planned|MM|Southeast Asia, Singapore|
 |Netherlands|Microsoft|Available|NL|West Europe, Netherlands|
 |New Zealand|Microsoft|Available|NZ|Australia East|
 |Nigeria|Partner|Available|NG|South Africa North|
@@ -68,12 +72,14 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Philippines|Partner|Available|PH|Southeast Asia, Singapore|
 |Poland|Partner|Available|PL|West Europe, Netherlands|
 |Portugal|Partner|Available|PT|West Europe, Netherlands|
+|Puerto Rico|Partner|Planned|PR|Brazil South|
 |Qatar|Partner|Available|QA|UAE North|
 |Romania|Partner|Available|RO|West Europe, Netherlands|
 |Russia **(on-premises only)**|Microsoft|Available|(Not listed)|N/A|
 |Saudi Arabia|Partner|Available|SA|UAE North|
 |Serbia|Partner|Available|RS|West Europe, Netherlands|
 |Singapore|Partner|Available|SG|Southeast Asia, Singapore|
+|Slovakia|Partner|Planned|SK|West Eeurope, Netherlands|
 |Slovenia|Partner|Available|SI|West Europe, Netherlands|
 |South Africa|Partner|Available|ZA|South Africa North|
 |South Korea|Partner|Available|KR|Southeast Asia, Singapore|
@@ -85,6 +91,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Thailand|Partner|Available|TH|Southeast Asia, Singapore|
 |Tunisia|Partner|Available|TN|South Africa North|
 |Turkey|Partner|Available|TR|West Europe, Netherlands|
+|Ukraine|Partner|Planned|UA|West Europe, Netherlands|
 |United Arab Emirates|Partner|Available|AE|UAE North|
 |United Kingdom|Microsoft|Available|GB|UK West|
 |United States|Microsoft|Available|US|East US|

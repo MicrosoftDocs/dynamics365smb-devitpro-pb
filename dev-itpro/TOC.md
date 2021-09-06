@@ -1,4 +1,4 @@
-﻿# [Development and administration](index.md)
+# [Development and administration](index.md)
 # [New and planned](/dynamics365/business-central/product-news?toc=/dynamics365/business-central/dev-itpro/toc.json)
 # Get started
 ## [Overview of business functionality](/dynamics365/business-central/across-business-functionality?toc=/dynamics365/business-central/dev-itpro/toc.json)
@@ -11,10 +11,12 @@
 ### [The SMB Opportunity for App Publishers](developer/readiness/opportunity-app-publisher.md)
 ### [Get Started with Building Apps](developer/readiness/get-started.md)
 ### [Customize Business Central](developer/readiness/readiness-customizing-tenants.md)
+
 ### [The Lifecycle of Apps and Extensions](developer/devenv-app-life-cycle.md)
 <!--#### What the partner's responsibilities are -->
 ### [Update Lifecycle for Customizations](developer/devenv-customization-update-lifecycle.md)
 ### [Maintain AppSource Apps and Per-Tenant Extensions](developer/app-maintain.md)
+### [Discontinuing an AppSource app](developer/devenv-app-discontinue.md)
 ### [Development of a Localization Solution](developer/readiness/readiness-develop-localization.md)  
 <!--#### How Microsoft runs the service -->
 ### [Microsoft Responsibilities](deployment/microsoft-responsibilities.md)
@@ -60,6 +62,7 @@
 ### [FAQ About the Windows Client and Business Central](faq-win-cli.md)
 ### [FAQ about Connecting to Business Central Online from On-Premises Solutions](administration/faq-migrate-data.md)
 ## What's new or changed
+### [Update 18.4](whatsnew/whatsnew-update-18-4.md)
 ### [Update 18.3](whatsnew/whatsnew-update-18-3.md)
 ### [Update 18.2](whatsnew/whatsnew-update-18-2.md)
 ### [Update 18.1](whatsnew/whatsnew-update-18.1.md)
@@ -1539,7 +1542,7 @@
 ##### [ChangeCompany([String]) Method](developer/methods-auto/record/record-changecompany-method.md)
 ##### [ClearMarks() Method](developer/methods-auto/record/record-clearmarks-method.md)
 ##### [Consistent(Boolean) Method](developer/methods-auto/record/record-consistent-method.md)
-##### [Copy(var Record [, Boolean]) Method](developer/methods-auto/record/record-copy-method.md)
+##### [Copy(Record [, Boolean]) Method](developer/methods-auto/record/record-copy-method.md)
 ##### [CopyFilter(Any, Any) Method](developer/methods-auto/record/record-copyfilter-method.md)
 ##### [CopyFilters(var Record) Method](developer/methods-auto/record/record-copyfilters-method.md)
 ##### [CopyLinks(var Record) Method](developer/methods-auto/record/record-copylinks-table-method.md)
