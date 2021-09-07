@@ -29,7 +29,7 @@ Each new update is designed and developed by the Dynamics 365 team. Any new upda
 
 The following figure illustrates the key milestones and dates for rolling out a major update. The timeline and dates are loosely based on [2021 release wave 1](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/) and [2020 release wave 2](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/). The same timeline applies to all other major updates, though dates will differ slightly.
 
-![Update Rollout Timeline](../developer/media/update-rollout-timeline.png)
+![Update Rollout Timeline.](../developer/media/update-rollout-timeline.png)
 
 The following table describes the milestones with example dates for the two release waves in any given calendar year.
 

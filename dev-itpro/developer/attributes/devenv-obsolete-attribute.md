@@ -3,7 +3,7 @@ title: "Obsolete Attribute"
 description: "Specifies that the annotated symbol will be deprecated."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/16/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -31,7 +31,7 @@ Specifies that the annotated symbol will be deprecated.
 
 ## Syntax
 
-```
+```AL
 [Obsolete([Reason: Text] [, Tag: Text])]
 ```
 

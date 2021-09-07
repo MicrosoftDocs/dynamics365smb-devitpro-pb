@@ -1,8 +1,9 @@
 ---
 title: "DrillDownPageId Property"
+description: "Sets the ID of the page to use as a drill-down."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

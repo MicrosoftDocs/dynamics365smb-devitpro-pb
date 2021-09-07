@@ -1,5 +1,5 @@
 ---
-title: Environment Telemetry | Microsoft Docs
+title: Environment Telemetry
 description: Learn how the Business Central admin center provides telemetry for each environment.  
 author: edupont04
 
@@ -17,6 +17,11 @@ ms.author: edupont
 
 The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provides telemetry for the tenant environments to enable troubleshooting and support for the tenant. The Telemetry tab provides telemetry of top-level AL events, and any errors resulting from calls through the telemetry stack.
 
+> [!TIP]
+> If your users complain of a confusing error message such as *Sorry, we just updated this page. Please close and reopen.*, then you can often find the underlying problem by analyzing telemetry in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)]. For example, in the case of the *Sorry, we just updated this page. Please close and reopen.* message, the underlying problem is often that two users are trying to modify the same data. So if both users open the same sales order, and both change a field, then one of them will see the *Sorry, we just updated this page. Please close and reopen.* message, because [!INCLUDE [prod_short](../developer/includes/prod_short.md)] saves changes as soon as you move to the next field or close the page.
+
+## Filter by environment
+
 To filter the telemetry for an environment:
 
 1. Select a base point-in-time for the timestamp of the telemetry messages.
@@ -25,45 +30,17 @@ To filter the telemetry for an environment:
 4. Choose the environment.
 5. Select **Filter**.
 
-> [!TIP]
-> If your users complain of a confusing error message such as *Sorry, we just updated this page. Please close and reopen.*, then you can often find the underlying problem by analyzing telemetry in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)]. For example, in the case of the *Sorry, we just updated this page. Please close and reopen.* message, the underlying problem is often that two users are trying to modify the same data. So if both users open the same sales order, and both change a field, then one of them will see the *Sorry, we just updated this page. Please close and reopen.* message, because [!INCLUDE [prod_short](../developer/includes/prod_short.md)] saves changes as soon as you move to the next field or close the page.
-
-## Sending telemetry to Microsoft Azure Application Insights
+## Enable richer telemetry
 
 [!INCLUDE[2019_releasewave2.md](../includes/2019_releasewave2.md)]
 
-You can set up your environments to send telemetry to Application Insights. Application Insights is a service hosted within Azure that gathers telemetry data for analysis and presentation. For more information, see [What is Application Insights?](/azure/azure-monitor/app/app-insights-overview).
+Get richer telemetry to help you troubleshoot by sending telemetry to Microsoft Azure Application Insights. For more information, see [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md#appinsights).
+
+Application Insights is a service hosted within Azure that gathers telemetry data for analysis and presentation. For more information, see [What is Application Insights?](/azure/azure-monitor/app/app-insights-overview).
 
 For an overview of the telemetry types that are currently emitted, see [Monitoring and Analyzing with Telemetry](telemetry-overview.md).
 
-> [!IMPORTANT]
-> Currently, emitting data to Azure Application Insights resources in Germany regions, like **(Europe) Germany West Central** or **(Europe) Germany North** , doesn't work. Until this issue is fixed, the mitigation is to create an Azure Application Insights resource in a region outside of Germany. Then, when the issue has been fixed, move the resource to the preferred region.
-
-### <a name="appinsights"></a>Enable Application Insights
-
-1. If you don't already have one, get a subscription to [Microsoft Azure](https://azure.microsoft.com).
-2. Create an Application Insights resource in Azure.
-
-    The Application Insights resource will be assigned an instrumentation key. Copy this key because you'll need it to enable Application Insights in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)].  
-
-    The Application Insights resource can be in any Azure tenant that is accessible to your organization. For example, a delegated administrator from the reselling partner is the person analyzing the telemetry. But this person might not have access rights the customer's Azure instance. This scenario enables the partner to send the telemetry to their own Application Insights instance.
-
-    > [!TIP]
-    > You can use the same Application Insights resource for multiple tenants and their different environments.
-
-    For more information, see [Create an Application Insights resource](/azure/azure-monitor/app/create-new-resource).
-
-3. In the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], select **Environments**, and then select the environment that you want to change.
-
-    > [!IMPORTANT]  
-    > The next steps require a restart to the environment, which is triggered automatically after step 5. Plan to do this during non-working hours to avoid disruptions.
-4. On the **Environment** page, the **Application Insights Key** field shows if the environment already uses application insights.
-
-    To enable application insights, choose the **Define** caption, and then, in the **Set Application Insights Key** pane, choose the **Enable application insights** field and enter the instrumentation key in the **Instrumentation Key** field.  
-
-    > [!NOTE]
-    > In version 15 and 16, to enable application insights, choose the **Application Insights Key** action, and then specify the instrumentation key.
-5. Choose the **Save** button.
+[!INCLUDE [admin-appinsights-germany](../includes/admin-appinsights-germany.md)]
 
 <!--
 ### <a name="lrsql"></a>Analyze long running SQL queries
@@ -75,16 +52,12 @@ For details about the long running SQL query telemetry information and dimension
 There are multiple reasons that can affect the time it takes SQL queries to run. For example, the database could be waiting for a lock to be released or the database is executing an operation that performs badly because of missing indexes. In some cases, you can see what caused the delay by looking at the SQL statement that was generated by the code. This information can be found in the **CustomDimension** data, specifically the **AL Stack Trace** column.
 -->
 
-## Cleaning up settings
-
-If the Application Insights resource is tied to your partner account, and you end the relationship with a customer where you have set up telemetry based on your account's instrumentation key, you must remove the instrumentation key while you still have access to that customer's [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)].  
-
 ## See also
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
+[Enabling Application Insights](telemetry-enable-application-insights.md)  
 [Working with Administration Tools](administration.md)  
 [The Business Central Administration Center](tenant-admin-center.md)  
 [Managing Environments](tenant-admin-center-environments.md)  
 [Managing Tenant Notifications](tenant-admin-center-notifications.md)  
 [Introduction to automation APIs](itpro-introduction-to-automation-apis.md)  
-[Enabling Application Insights for On-Premises](telemetry-enable-application-insights.md)  

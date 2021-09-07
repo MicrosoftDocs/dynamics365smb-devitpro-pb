@@ -80,7 +80,7 @@ Example:
 
 The following figure shows an example of the **# Mounted Tenants** counter for a cluster of server instances.
 
-![# Mounted Tenants Counter](media/Nav_Mounted_Tenants_Perf_Counter_Example.png "NAV\Nav_Mounted_Tenants_Perf_Counter_Example")
+![# Mounted Tenants Counter.](media/Nav_Mounted_Tenants_Perf_Counter_Example.png "NAV\Nav_Mounted_Tenants_Perf_Counter_Example")
 
 In this example, several server instances were unstable, which resulted in constant restarts. This is indicated by the erratic behavior in the chart. To resolve this issue, the density of the cluster was lowered by moving tenants from server instances represented by blue/green lines to the server instance represented by the orange lines.
 

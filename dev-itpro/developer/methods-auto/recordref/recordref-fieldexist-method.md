@@ -1,9 +1,9 @@
 ---
-title: "RecordRef.FieldExist Method"
-description: "Determines if the field that has the number FieldNo exists in the table that is referred to by the RecordRef. Returns an error if no table is currently selected."
+title: "RecordRef.FieldExist(Integer) Method"
+description: "Determines if the field that has the number FieldNo exists in the table that is referred to by the RecordRef."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# RecordRef.FieldExist Method
+# RecordRef.FieldExist(Integer) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Determines if the field that has the number FieldNo exists in the table that is referred to by the RecordRef. Returns an error if no table is currently selected.
 
 
 ## Syntax
-```
+```AL
 Exist :=   RecordRef.FieldExist(FieldNo: Integer)
 ```
 ## Parameters

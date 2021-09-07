@@ -29,7 +29,7 @@ To meet performance expectations in production, you can set the threshold to a d
 
 If the value of the [SqlLongRunningThreshold](configure-server-instance.md) key was set to the default value of 1000 milliseconds, you'll see the message: "*Action completed successfully, but it took longer than the given threshold.*" for actions that took longer. To meet your performance expectations in production, you can set the threshold to a different value without doing a server restart. For more information, see [Monitoring Long Running SQL Queries using the Event Log](monitor-long-running-sql-queries-event-log.md). 
 
-![The threshold was exceeded](../developer/media/EventViewerExample1.png)
+![The threshold was exceeded.](../developer/media/EventViewerExample1.png)
 
 ### Using the AL call stack
 

@@ -15,7 +15,7 @@ ms.service: "dynamics365-business-central"
 
 Use this scenario if you have a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Spring 2019 (referred to as version 14) application that doesn't include any code customization. Your solution might include Microsoft (first party) extensions and customization extensions (3rd-party). With this upgrade, you'll replace the C/AL base application with the new [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2019 release wave 2 base application extension. The result will be a fully upgraded Business Central 2019 release wave 2 (referred to as version 15) application and platform.
 
- ![Upgrade on unmodified Business Central application](../developer/media/bc15-upgrade-unmodified-app-v4.png "Upgrade on unmodified Business Central application") 
+ ![Upgrade on unmodified Business Central application.](../developer/media/bc15-upgrade-unmodified-app-v4.png "Upgrade on unmodified Business Central application") 
 
 #### Single-tenant and multitenant deployments
 

@@ -21,7 +21,7 @@ You can choose to update only the platform or both the platform and application 
 
 The following figure provides a high-level representation of a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] solution and the components that are involved in the installation of an update.
 
-![Business Central application stack](../developer/media/bc15-architecture-overview.png "Business Central application stack")  
+![Business Central application stack.](../developer/media/bc15-architecture-overview.png "Business Central application stack")  
 
 The databases store the application metadata and business data. If you have a single-tenant deployment, this data is stored in a single database. A multitenant deployment stores the application metadata in the application database and the business data in one or more tenant databases.
 
@@ -226,6 +226,17 @@ Also, to ensure that the existing published extensions work on the new platform,
     Restart-NAVServerInstance -ServerInstance <server instance>
     ```
 
+## <a name="UploadLicense"></a>Import [!INCLUDE[prod_short](../developer/includes/prod_short.md)] partner license  
+
+To import the license, use the [Import-NAVServerLicense cmdlet](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense). You'll have to restart the server instance afterwards:
+
+```powershell
+Import-NAVServerLicense -ServerInstance <server instance> -LicenseFile <path to license file>
+Restart-NAVServerInstance -ServerInstance <server instance>
+```
+
+For more information, see [Uploading a License File for a Specific Database](../cside/cside-upload-license-file.md#UploadtoDatabase).
+ 
 ## Publish the new system symbols
 
 Use the Publish-NAVApp cmdlet to publish the new symbols extension package. This package is called **System.app**. If you've installed the **AL Development Environment**, you find the file in the installation folder. By default, the folder path is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\170\AL Development Environment. Or, it's also on the installation media (DVD) in the ModernDev\program files\Microsoft Dynamics NAV\170\AL Development Environment folder.
@@ -511,6 +522,15 @@ Set-NAVServerConfiguration -ServerInstance <server instance name> -KeyName Solut
 ```
 
 For more information about how to configure a server instance, see [Configuring Business Central Server](../administration/configure-server-instance.md).
+
+### Import the customer license
+
+Import the customer license by using the [Import-NAVServerLicense cmdlet](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense), as you did with the partner license. You'll have to restart the server instance afterwards.
+
+```powershell
+Import-NAVServerLicense -ServerInstance <server instance> -LicenseFile <path to license file>
+Restart-NAVServerInstance -ServerInstance <server instance name>
+```
 
 ## See Also
 

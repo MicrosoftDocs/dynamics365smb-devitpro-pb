@@ -1,8 +1,9 @@
 ---
 title: "Scripts Property"
+description: "Specifies the list of scripts to include in the control add-in."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,7 +27,7 @@ Specifies the list of scripts to include in the control add-in. The scripts coul
 
 ## Property Values
 
-A list of comma-separated strings that represent paths to script files. The default is blank, with no images being used by the control add-in. 
+A list of comma-separated strings that represent paths to script files. The default is blank, with no scripts being used by the control add-in. 
 
 ## Remarks 
 

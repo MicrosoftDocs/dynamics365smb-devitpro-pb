@@ -1,9 +1,9 @@
 ---
-title: "XmlNode.SelectSingleNode Method"
+title: "XmlNode.SelectSingleNode(String, var XmlNode) Method"
 description: "Selects the first XmlNode that matches the XPath expression."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# XmlNode.SelectSingleNode Method
+# XmlNode.SelectSingleNode(String, var XmlNode) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Selects the first XmlNode that matches the XPath expression.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  XmlNode.SelectSingleNode(XPath: String, var Node: XmlNode)
 ```
 ## Parameters

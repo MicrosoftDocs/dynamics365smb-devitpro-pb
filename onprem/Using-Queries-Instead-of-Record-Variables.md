@@ -71,7 +71,7 @@ IF Item.FINDSET THEN
 
      The following illustration shows the query in Query Designer.  
 
-     ![Query that links Item and Item Legder Entry tables](media/NAV_Query_Example_InsteadOfRecords.png "NAV\_Query\_Example\_InsteadOfRecords")  
+     ![Query that links Item and Item Legder Entry tables.](media/NAV_Query_Example_InsteadOfRecords.png "NAV\_Query\_Example\_InsteadOfRecords")  
 
 2.  Add the following code to a codeunit that will run the query.  
 

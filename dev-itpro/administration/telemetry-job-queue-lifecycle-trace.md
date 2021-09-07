@@ -139,6 +139,5 @@ Occurs when a job queue entry finishes running.
 ## See also
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
-[Enabling Application Insights for Tenant Telemetry On-Premises](telemetry-enable-application-insights.md)  
-[Enable Sending Telemetry to Application Insights](tenant-admin-center-telemetry.md#appinsights)  
+[Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  
 [Use Job Queues to Schedule Tasks](/dynamics365/business-central/admin-job-queues-schedule-tasks)  

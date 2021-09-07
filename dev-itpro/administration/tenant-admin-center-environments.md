@@ -17,14 +17,14 @@ ms.author: jswymer
 The **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provides you with an overview of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] production and sandbox environments for the tenant, and you can manage updates for each environment.
 
 > [!div class="mx-imgBorder"]
-> ![Business Central Admin Center](../developer/media/admin/business_central_admin_center.png)
+> ![Business Central Admin Center.](../developer/media/admin/business_central_admin_center.png)
 
 ## Viewing details for an environment
 
 In the environments list, you can view more details by choosing the link in the **Name** column.
 
 > [!div class="mx-imgBorder"]
-> ![View details about an environment](../developer/media/admin/business_central_admin_center_details.png)
+> ![View details about an environment.](../developer/media/admin/business_central_admin_center_details.png)
 
 ## Types of environments
 
@@ -124,12 +124,21 @@ Currently, the log includes the following operations:
 
 The operations are kept for 365 days, after which they're deleted.
 
+## Delete an environment
+
+You can delete environments in the admin center, such as when a sandbox environment is not longer needed.  
+
+> [!IMPORTANT]
+> Make sure no user is using the environment before you delete it.
+>
+> Also, be very careful before you choose the *Delete* action for the environment. The action is irreversible.
+
 ## See also
 
 [Managing Tenant Notifications](tenant-admin-center-notifications.md)  
 [Managing Apps](tenant-admin-center-manage-apps.md)  
 [Updating Environments](tenant-admin-center-update-management.md)  
-[Managing Sessions](tenant-admin-center-manage-sessions.md)
+[Managing Sessions](tenant-admin-center-manage-sessions.md)  
 [Rename Environments](tenant-admin-center-environments-rename.md)  
 [Restoring an Environment](tenant-admin-center-backup-restore.md)  
 [Move an Environment to another Azure Active Directory organization](tenant-admin-center-environments-move.md)  

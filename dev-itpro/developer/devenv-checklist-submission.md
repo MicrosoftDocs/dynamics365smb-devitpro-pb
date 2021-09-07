@@ -3,7 +3,7 @@ title: "Technical Validation Checklist"
 description: Describing the steps you must go through to successfully submit your app to AppSource using AppSourceCop.
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 07/14/2021
 ms.reviewer: solsen
 ms.suite: na
 ms.topic: conceptual
@@ -42,7 +42,7 @@ If you do not meet these mandatory requirements, your extension will fail valida
 |Use `addfirst` and `addlast` for placing your actions on Business Central pages. This eliminates breaking your app due to Business Central core changes.|[Placing Actions and Controls](devenv-page-ext-object.md#using-keywords-to-place-actions-and-controls)|
 |The extension submitted must not be a runtime package.|[Creating Runtime Packages](devenv-creating-runtime-packages.md)|
 |The extension submitted must use translation files.|[Working with Translation Files](devenv-work-with-translation-files.md)|
-|The extension submitted must specify at least one dependency on extensions created by Microsoft.|At least one dependency on an extension published by Microsoft is required in order to compute the minimum release of Business Central targeted by your submission. For more information, see [Computation of Releases for Validation](devenv-checklist-submission.md#Against-which-releases-of-Business-Central-is-your-submission-validated)|
+|The extension submitted must specify at least one dependency on extensions created by Microsoft.|At least one dependency on an extension published by Microsoft is required in order to compute the minimum release of Business Central targeted by your submission. For more information, see [Computation of Releases for Validation](#version)|
 
 ## Technical validation performed by the Business Central validation team
 
@@ -102,17 +102,17 @@ Please include app and all library apps in both previousApps and apps and please
 
 > [!Important]
 > The computer on which you run this command must have Docker and the latest BcContainerHelper PowerShell module installed and be able to run Business Central on Docker.
-> 
-> If you are having issues with Business Central on Docker, you might be able to find help here: https://freddysblog.com/2020/10/12/troubleshooting-business-central-on-docker.
-> 
-> You can use https://aka.ms/getbc?artifacturl=bcartifacts%2fsandbox%2f%2fus%2flatest to create an Azure VM, which has all prerequisites installed to run Business Central on Docker.
+>
+> If you are having issues with Business Central on Docker, you might be able to find help here: [https://freddysblog.com/2020/10/12/troubleshooting-business-central-on-docker](https://freddysblog.com/2020/10/12/troubleshooting-business-central-on-docker).
+>
+> You can use [https://aka.ms/getbc?artifacturl=bcartifacts%2fsandbox%2f%2fus%2flatest](https://aka.ms/getbc?artifacturl=bcartifacts%2fsandbox%2f%2fus%2flatest) to create an Azure VM, which has all prerequisites installed to run Business Central on Docker.
 
 > [!NOTE]
-> Microsoft recommends that all partners set up DevOps processes to ensure that this validation process happend automatically and regularly.
+> Microsoft recommends that all partners set up DevOps processes to ensure that this validation process happened automatically and regularly.
 >
-> You can find resources for how to set up a build pipeline, which performs all these steps here: https://aka.ms/cicdhol and you can find sample repositories, performing these steps here:
-> -	https://dev.azure.com/businesscentralapps/HelloWorld.AppSource (for Azure DevOps)
-> -	https://github.com/BusinessCentralApps/HelloWorld.AppSource (for GitHub Actions)
+> You can find resources for how to set up a build pipeline, which performs all these steps here: [https://aka.ms/cicdhol](https://aka.ms/cicdhol) and you can find sample repositories, performing these steps here:
+> - [https://dev.azure.com/businesscentralapps/HelloWorld.AppSource](https://dev.azure.com/businesscentralapps/HelloWorld.AppSource) (for Azure DevOps)
+> - [https://github.com/BusinessCentralApps/HelloWorld.AppSource](https://github.com/BusinessCentralApps/HelloWorld.AppSource) (for GitHub Actions)
 
 ## Manual validation performed by the Business Central validation team
 
@@ -122,7 +122,7 @@ Manual validation is not done on all submissions. They will be done as sample te
 
 For manual validation, we spin up a container with the right artifacts (same as used during technical validation) and the necessary apps are installed. Rapidstart packages needed for the manual test are installed.
 
-The manual test validation document is run manually and if the document doesn’t match the app functionality the submission is rejected.
+The manual test validation document is run manually and if the document doesn't match the app functionality the submission is rejected.
 
 > [!Important]
 > Microsoft recommends that all partners are performing the manual validation as the last check before submitting for validation.
@@ -135,7 +135,9 @@ Detailed validation results are automatically logged to the ApplicationInsights 
 
 ## Against which releases of Business Central is your submission validated?
 
-Extensions submitted to the AppSource marketplace are validated for all countries specified in the submission against all the release targeted by the submission. As part of the validation, the minimum release for your submission is computed. The extensions are then validated for all releases from this minimum release to the current release in production, unless you have specified a maximum target release in your submission. For instance, if the minimum release for your submission is 18.0 and the latest minor release in production is 18.3, your submission will be validated against 18.0, 18.1, 18.2, and 18.3.
+## <a name="versions"></a>Against which releases of Business Central is your submission validated?
+
+Extensions submitted to the AppSource marketplace are validated for all countries specified in the submission against all the release targeted by the submission. As part of the validation, the minimum release for your submission is computed. The extensions are then validated for all releases from this minimum release to the current release in production. For example, if the minimum release for your submission is 18.0 and the latest minor release in production is 18.3, your submission will be validated against 18.0, 18.1, 18.2, and 18.3.
 
 ### How is the minimum release computed?
 
@@ -143,6 +145,11 @@ The minimum release for your submission is computed based on the versions `appli
 
 > [!NOTE]
 > If multiple extensions are contained in your submission, the minimum release for the submission is the highest minimal release computed for each of the extensions in the submission.
+
+> [!Important]  
+> The minimum release computed for your submission also defines the availability of all the extensions in your submission.
+>
+> For example, if the minimum release computed is 18.1, your extensions will be available starting from release 18.1.
 
 #### Example 1 - Dependency on Application
 

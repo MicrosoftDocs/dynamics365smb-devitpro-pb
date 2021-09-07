@@ -49,7 +49,7 @@ A document page is defined by a page that has the [PageType property](properties
 
 The following figure illustrates the general layout and elements of a card page and document page.
 
-![Card and document page overview](media/card-document-page-overview.png "Card page overview")
+![Card and document page overview.](media/card-document-page-overview.png "Card page overview")
 
 The following table describes the elements of the page.
 

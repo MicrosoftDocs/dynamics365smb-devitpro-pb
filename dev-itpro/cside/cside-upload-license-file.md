@@ -83,5 +83,5 @@ The following procedure uploads the license for all [!INCLUDE[prod_short](../dev
 3.  Restart all [!INCLUDE[server](../developer/includes/server.md)] instances on the computer to activate the license for other clients.  
 
 ## See Also  
- [Business Central Software License Terms](https://www.microsoft.com/en-us/download/details.aspx?id=57274)  
+ [Business Central Software License Terms](https://www.microsoft.com/download/details.aspx?id=57274)  
  [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544)  

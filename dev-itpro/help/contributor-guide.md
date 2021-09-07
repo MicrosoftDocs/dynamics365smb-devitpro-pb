@@ -259,7 +259,7 @@ You can use the [Dynamics 365 Translation Service](/dynamics365/fin-ops-core/dev
 To translate content for either [!INCLUDE [prod_short](../developer/includes/prod_short.md)] or [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)], choose [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] as the product as shown in the following illustration:
 
 > [!div class="mx-imgBorder"]
-> ![Shows translation project for NAV or Business Central](../developer/media/admin/lcs_translation_navhelp.png)
+> ![Shows translation project for NAV or Business Central.](../developer/media/admin/lcs_translation_navhelp.png)
 
 ## Contributing
 

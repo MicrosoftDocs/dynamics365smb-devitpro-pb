@@ -63,7 +63,7 @@ The order that you specify fields is important. For an explanation, see [Underst
 
 This code example adds a simple table and card page. The `Brick` field group specifies which fields of the table will display in a Teams card, as illustrated by the following figure:
 
-![Vendor card before OnBeforeGetPageSummary event](media/teams-card-simple-example.png)
+![Vendor card before OnBeforeGetPageSummary event.](media/teams-card-simple-example.png)
 
 ```
 Table 50100 MyTable
@@ -161,9 +161,9 @@ The events are part of the [Page Summary Provider](https://github.com/microsoft/
 
 The following figure illustrates the sequence of the events and operations involved in building the card in Teams. The flow has been simplified for illustration purposes.
 
-<!-- ![Sequence of events and operations for building a card in Teams](media/teams-events-flow-v17.png) -->
+<!-- ![Sequence of events and operations for building a card in Teams.](media/teams-events-flow-v17.png) -->
 
-![Sequence of events and operations for building a card in Teams](media/teams-events-flow-v17_3.png)
+![Sequence of events and operations for building a card in Teams.](media/teams-events-flow-v17_3.png)
 
 ### OnBeforeGetPageSummary event
 
@@ -199,7 +199,7 @@ The following code example uses the OnBeforeGetPageSummary event to change the f
 
 |Before|After|
 |------|-----|
-|![Vendor card in Teams before OnBeforeGetPageSummary event](media/teams-card-vendor-before-1.png)|![Vendor card in Teams after OnBeforeGetPageSummary event](media/teams-card-vendor-after-1.png)|
+|![Vendor card in Teams before OnBeforeGetPageSummary event.](media/teams-card-vendor-before-1.png)|![Vendor card in Teams after OnBeforeGetPageSummary event](media/teams-card-vendor-after-1.png)|
 
 ```
 [EventSubscriber(ObjectType::Codeunit, Codeunit::"Page Summary Provider", 'OnBeforeGetPageSummary', '', false, false)]
@@ -269,7 +269,7 @@ The following code example uses the OnAfterGetSummaryFields event to change the 
 
 |Before|After|
 |------|-----|
-|![Vendor card before OnAfterGetSummaryFields event](media/teams-card-vendor-before-1.png)|![Vendor card after OnAfterGetSummaryFields event](media/teams-card-vendor-after-2.png)|
+|![Vendor card before OnAfterGetSummaryFields event.](media/teams-card-vendor-before-1.png)|![Vendor card after OnAfterGetSummaryFields event](media/teams-card-vendor-after-2.png)|
 
 ```
 [EventSubscriber(ObjectType::Codeunit, Codeunit::"Page Summary Provider", 'OnAfterGetSummaryFields', '', false, false)]
@@ -325,7 +325,7 @@ The following code example uses the OnAfterGetPageSummary event to change the fi
 
 |Before|After|
 |------|-----|
-|![Vendor card before OnAfterGetPageSummary event](media/teams-card-vendor-before-1.png)|![Vendor card after OnAfterGetPageSummary event](media/teams-card-vendor-after-3.png)|
+|![Vendor card before OnAfterGetPageSummary event.](media/teams-card-vendor-before-1.png)|![Vendor card after OnAfterGetPageSummary event](media/teams-card-vendor-after-3.png)|
 
 ```
 [EventSubscriber(ObjectType::Codeunit, Codeunit::"Page Summary Provider", 'OnAfterGetPageSummary', '', false, false)]

@@ -1,9 +1,9 @@
 ---
-title: "WebServiceActionContext.AddEntityKey Method"
+title: "WebServiceActionContext.AddEntityKey(Integer, Any) Method"
 description: "Add a new \<fieldId, value\> pair to the collection of entity keys."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# WebServiceActionContext.AddEntityKey Method
+# WebServiceActionContext.AddEntityKey(Integer, Any) Method
 > **Version**: _Available or changed with runtime version 2.0._
 
 Add a new \<fieldId, value\> pair to the collection of entity keys.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  WebServiceActionContext.AddEntityKey(FieldId: Integer, FieldValue: Any)
 ```
 ## Parameters

@@ -36,7 +36,7 @@ When [!INCLUDE[navnow_md](includes/navnow_md.md)] is set up to integrate with [!
 
      If this part is not displayed, do the following:  
 
-    1.  On the **Application** menu ![Dynamics NAV Application menu](media/ApplicationMenuIcon.png), select **Customize**, and then **Customize this Page**.  
+    1.  On the **Application** menu ![Dynamics NAV Application menu.](media/ApplicationMenuIcon.png), select **Customize**, and then **Customize this Page**.  
 
     2.  In the **Customize the Role Center** window, in the **Available parts** field, select **Service Connection Status**, and then choose **Add**.  
 

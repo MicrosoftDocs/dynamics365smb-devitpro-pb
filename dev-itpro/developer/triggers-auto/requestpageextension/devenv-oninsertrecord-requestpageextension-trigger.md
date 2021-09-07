@@ -3,7 +3,7 @@ title: "OnInsertRecord (Request Page Extension) Trigger"
 description: "Runs before a new record is inserted into the table."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/27/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,7 +22,7 @@ Runs before a new record is inserted into the table.
 
 
 ## Syntax
-```
+```AL
 trigger OnInsertRecord(BelowxRec: Boolean): Ok
 begin
     ...
@@ -38,9 +38,9 @@ This return value indicates whether the new record was inserted after the last r
 
 ## Return Value
 
-*Ok*
+*Ok*  
 &emsp;Type: [Boolean](../../methods-auto/boolean/boolean-data-type.md)  
-**true** if the record was inserted, otherwise **false**. The return value is checked after each call. The default value is **true**.
+**true** if the record was inserted, otherwise **false**. The return value is checked after each call. The default value is **true**.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
