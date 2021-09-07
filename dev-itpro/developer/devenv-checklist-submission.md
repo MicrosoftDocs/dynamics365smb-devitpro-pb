@@ -133,6 +133,12 @@ The manual test validation document is run manually and if the document doesn't 
 
 Detailed validation results are automatically logged to the ApplicationInsights storage account specified by instrumentation key in the manifest of the main extension in your submission.
 
+In order to enable partner telemetry in your extension, you must specify the `applicationInsightsKey` property or the `applicationInsightsConnectionString` property in the manifest (app.json) of your extension. For more information about these properties, see [JSON files](devenv-json-files.md).
+
+In order to get started on analyzing your validation results, you can use this troubleshooting guide [Dynamics 365 Business Central Troubleshooting Guide (TSG) - AppSource Submission Results (SaaS)](https://github.com/microsoft/BCTech/tree/master/samples/AppInsights/TroubleShootingGuides/D365BC%20Troubleshooting%20Guides%20(TSG)/content/AppSource-Submission-TSG.ipynb).
+
+For more information about the signals sent during the technical validation, see [Analyzing AppSource Submission Validation Trace Telemetry](../administration/telemetry-appsource-submission-validation-trace.md).
+
 ## Against which releases of Business Central is your submission validated?
 
 ## <a name="versions"></a>Against which releases of Business Central is your submission validated?
@@ -205,6 +211,13 @@ For instance, the following submission manifest indicates that the extension wil
   "incompatibleFromRelease": "18.0"
 }
 ```
+
+> [!Important]  
+> The maximum release specified for your submission also defines the availability of all the extensions in your submission as they will be marked as incompatible from this release.
+>
+> For example, if the maximum release specified is 19.0, your extensions will not be available for environments running on 19.0 or higher.
+>
+> If you do not provide a version of your extension that is compatible with release of Business Central, your extension will cause a failure to upgrade the environments where it is installed. For more information about maintaining extensions, see [Maintain AppSource Apps and Per-Tenant Extensions in Business Central Online](app-maintain.md).
 
 ### When should you specify a maximum release for your extension?
 
