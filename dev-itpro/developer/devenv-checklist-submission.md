@@ -50,7 +50,7 @@ The primary responsibility of the technical validation is to ensure that the Bus
 
 The technical validation is fully automated and validates the requirements defined in the technical validation checklist above.
 
-> [!Important]
+> [!Important]  
 > Microsoft recommends that all partners are executing the self validation documented below before submitting apps for validation to maximize chances of validation success.
 
 1. The manifest of all extensions in the submission is validated. If any **mandatory properties or required property values are missing, the submission is rejected.**.
@@ -61,17 +61,17 @@ The technical validation is fully automated and validates the requirements defin
 
 Once the extension has passed these first validation steps, the minimum and maximum release for your submission are computed as described in [Computation of Releases for Validation](devenv-checklist-submission.md#Against-which-releases-of-Business-Central-is-your-submission-validated).
 
-For **each country and each release** targeted by your submission, the following steps are executed **for each extension** in the submission:
+For **each country and each release** targeted by your submission, the following steps are run **for each extension** in the submission:
 
 1. If the extension with the same version has already been validated for the country, further validation for this extension is skipped.
 2. The set of dependencies for your extension is resolved. **Any unresolved dependencies will cause the submission to be rejected. If you include extensions created by Microsoft in your submission, it will also be rejected.**
 
-> [!Note]
-> You are required to include the dependencies for your extension as part of your submission only if your are submitting a newer version for them. If you do not include them in your submission, they will be download from the [App Management API](../administration/appmanagement/app-management-api.md).
+> [!Note]  
+> You are required to include the dependencies for your extension as part of your submission only if you are submitting a newer version for them. If you do not include them in your submission, they will be downloaded from the [App Management API](../administration/appmanagement/app-management-api.md).
 
-3. The set of baselines for your extension is resolved using the the [App Management API](../administration/appmanagement/app-management-api.md).
+3. The set of baselines for your extension is resolved using the [App Management API](../administration/appmanagement/app-management-api.md).
 4. The extension is compiled against the set of dependencies resolved. If the **compilation fails, the submission is rejected.**
-5. The extension is tested against the resolved baselines using the AppSourceCop. If any **violations or breaking changes are identified, the submission is rejected.**
+5. The extension is tested against the resolved baselines using the AppSourceCop analyzer. If any **violations or breaking changes are identified, the submission is rejected.**
 6. If the **runtime version of the extension is not supported by the release targeted, the submission is rejected.**
 
 If all extensions in the submission succeed the validation for each country and release wihtout errors, **the submission is accepted.**.
@@ -97,18 +97,18 @@ All array parameters can also be specified as a comma-separated string. For more
 
 Please include app and all library apps in both previousApps and apps and please include all countries on which you want to validate.
 
-> [!NOTE]
+> [!NOTE]  
 > The Run-AlValidation cannot see whether the affixes to specify have been correctly registered with Microsoft using your MPN ID and app publisher name, please make sure registration is in place.
 
-> [!Important]
+> [!Important]  
 > The computer on which you run this command must have Docker and the latest BcContainerHelper PowerShell module installed and be able to run Business Central on Docker.
 >
 > If you are having issues with Business Central on Docker, you might be able to find help here: [https://freddysblog.com/2020/10/12/troubleshooting-business-central-on-docker](https://freddysblog.com/2020/10/12/troubleshooting-business-central-on-docker).
 >
 > You can use [https://aka.ms/getbc?artifacturl=bcartifacts%2fsandbox%2f%2fus%2flatest](https://aka.ms/getbc?artifacturl=bcartifacts%2fsandbox%2f%2fus%2flatest) to create an Azure VM, which has all prerequisites installed to run Business Central on Docker.
 
-> [!NOTE]
-> Microsoft recommends that all partners set up DevOps processes to ensure that this validation process happened automatically and regularly.
+> [!NOTE]  
+> Microsoft recommends that all partners set up DevOps processes to ensure that this validation process happens automatically and regularly.
 >
 > You can find resources for how to set up a build pipeline, which performs all these steps here: [https://aka.ms/cicdhol](https://aka.ms/cicdhol) and you can find sample repositories, performing these steps here:
 > - [https://dev.azure.com/businesscentralapps/HelloWorld.AppSource](https://dev.azure.com/businesscentralapps/HelloWorld.AppSource) (for Azure DevOps)
@@ -120,14 +120,14 @@ The primary responsibility of the manual validation is to ensure that the apps a
 
 Manual validation is not done on all submissions. They will be done as sample tests.
 
-For manual validation, we spin up a container with the right artifacts (same as used during technical validation) and the necessary apps are installed. Rapidstart packages needed for the manual test are installed.
+For manual validation, we spin up a container with the right artifacts (same as used during technical validation) and the necessary apps are installed. RapidStart packages needed for the manual test are installed.
 
 The manual test validation document is run manually and if the document doesn't match the app functionality the submission is rejected.
 
-> [!Important]
+> [!Important]  
 > Microsoft recommends that all partners are performing the manual validation as the last check before submitting for validation.
 >
-> This can be done either in online sandbox environments or in sandbox docker containers.
+> This can be done either in online sandbox environments or in sandbox Docker containers.
 
 ## How to get more information on the technical validation failures?
 
@@ -143,7 +143,7 @@ Extensions submitted to the AppSource marketplace are validated for all countrie
 
 The minimum release for your submission is computed based on the versions `application`, `platform`, and `dependencies` properties specified in the app.json of your extension. The highest version of the dependencies taken on extensions published by Microsoft is used as minimum release version.
 
-> [!NOTE]
+> [!NOTE]  
 > If multiple extensions are contained in your submission, the minimum release for the submission is the highest minimal release computed for each of the extensions in the submission.
 
 > [!Important]  
