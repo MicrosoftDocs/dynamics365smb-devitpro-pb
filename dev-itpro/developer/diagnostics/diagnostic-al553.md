@@ -1,9 +1,9 @@
 ---
-title: "Compiler error AL553"
+title: "Compiler Error AL553"
 description: ""
 ms.author: solsen
 ms.custom: na
-ms.date: 08/31/2021
+ms.date: 09/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler error AL553
+# Compiler Error AL553
 You can only specify Move and Modify actions in the '{0}' area of the actions section of a page customization.
 
 

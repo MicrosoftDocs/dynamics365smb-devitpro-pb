@@ -1,9 +1,9 @@
 ---
-title: "Compiler error AL619"
+title: "Compiler Error AL619"
 description: ""
 ms.author: solsen
 ms.custom: na
-ms.date: 08/31/2021
+ms.date: 09/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler error AL619
+# Compiler Error AL619
 The attribute '{0}' on procedure '{1}' is not allowed. Add attribute 'ServiceEnabled' to the procedure or move it into an application object of type API.
 
 

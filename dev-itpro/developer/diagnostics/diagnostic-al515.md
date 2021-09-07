@@ -1,9 +1,9 @@
 ---
-title: "Compiler error AL515"
+title: "Compiler Error AL515"
 description: ""
 ms.author: solsen
 ms.custom: na
-ms.date: 08/31/2021
+ms.date: 09/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler error AL515
+# Compiler Error AL515
 The symbol file is not valid. An enum with name '{0}' is already defined with a different ID in module '{1}'.
 
 

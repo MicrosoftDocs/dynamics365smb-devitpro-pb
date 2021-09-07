@@ -1132,7 +1132,7 @@
 ###### [AL1058](developer/diagnostics/diagnostic-al1058.md)
 ###### [AL1059](developer/diagnostics/diagnostic-al1059.md)
 ###### [AL1072](developer/diagnostics/diagnostic-al1072.md)
-##### Warning (future error) messages
+##### Warning (Future Error) messages
 ###### [AL269](developer/diagnostics/diagnostic-al269.md)
 ###### [AL299](developer/diagnostics/diagnostic-al299.md)
 ###### [AL468](developer/diagnostics/diagnostic-al468.md)
@@ -1188,10 +1188,10 @@
 ##### Information messages
 ###### [AL1031](developer/diagnostics/diagnostic-al1031.md)
 ###### [AL1076](developer/diagnostics/diagnostic-al1076.md)
-##### Fatal error messages
+##### Fatal Error messages
 ###### [AL1100](developer/diagnostics/diagnostic-al1100.md)
 ###### [AL1101](developer/diagnostics/diagnostic-al1101.md)
-##### Personalization warning messages
+##### Personalization Warning messages
 ###### [AL1401](developer/diagnostics/diagnostic-al1401.md)
 ###### [AL1402](developer/diagnostics/diagnostic-al1402.md)
 ###### [AL1403](developer/diagnostics/diagnostic-al1403.md)
@@ -1208,7 +1208,7 @@
 ###### [AL1415](developer/diagnostics/diagnostic-al1415.md)
 ###### [AL1418](developer/diagnostics/diagnostic-al1418.md)
 ###### [AL1419](developer/diagnostics/diagnostic-al1419.md)
-##### Personalization information messages
+##### Personalization Information messages
 ###### [AL1414](developer/diagnostics/diagnostic-al1414.md)
 ###### [AL1416](developer/diagnostics/diagnostic-al1416.md)
 ###### [AL1417](developer/diagnostics/diagnostic-al1417.md)

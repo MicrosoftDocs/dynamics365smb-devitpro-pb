@@ -1,9 +1,9 @@
 ---
-title: "Compiler error AL296"
+title: "Compiler Error AL296"
 description: ""
 ms.author: solsen
 ms.custom: na
-ms.date: 09/03/2021
+ms.date: 09/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler error AL296
+# Compiler Error AL296
 The application object or method '{0}' has scope '{1}' and cannot be used for '{2}' development. For more information, see [Compilation Scope Overview](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-compilation-scope-overview).
 
 

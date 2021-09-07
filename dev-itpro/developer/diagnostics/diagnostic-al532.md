@@ -1,9 +1,9 @@
 ---
-title: "Compiler error AL532"
+title: "Compiler Error AL532"
 description: ""
 ms.author: solsen
 ms.custom: na
-ms.date: 08/31/2021
+ms.date: 09/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler error AL532
+# Compiler Error AL532
 The page '{1}' of type 'API' and its control '{0}' of type 'Part' must have the same value of property '{2}'.
 
 
