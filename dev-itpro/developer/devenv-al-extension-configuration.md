@@ -41,7 +41,7 @@ The following table describes the user and workspace settings for the AL Languag
 |Snapshot Output Path|Sets the directory path where snapshot files are saved. Default is `./.snapshots`.|
 |Use Legacy Runtime|Use the .NET Framework runtime for hosting the language service instead of the .NET Core runtime. Enabling this might result in a reduced level of performance.|
 |Statement Lens Minimum|Sets the lower limit for time spent on statement execution. Syntax is `al.statementLensMin`. For more information, see [AL Profiler Overview](devenv-al-profiler-overview.md).|
-|Profiler Colors|Specifies the colors used to define the application types in the profiler output. Accepts valid color names, hex codes, and rgba() values. The properties are `systemApplication` - default color `green`, `baseApplication` - default color `magenta`, and `extension` - default color `yellow`. For example: |
+|Profiler Colors|Specifies the colors used to define the application types in the profiler output. Accepts valid color names, hex codes, and rgba() values. The properties are `systemApplication` - default color `green`, `baseApplication` - default color `magenta`, and `extension` - default color `yellow`.|
 
 ## See Also
 
