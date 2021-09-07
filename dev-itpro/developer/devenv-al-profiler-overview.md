@@ -57,13 +57,15 @@ To investigate the graph of method calls, you open the generated profile file in
 
 ![Graph of method calls](../media/profiler-graph.png)
 
-To investigate the data shown in the graph, you can use different view modes as described in the next section. Choose a specific method to navigate to the code. The color legend of the graph is the following:
+To investigate the data shown in the graph, you can use different view modes as described in the next section. Choose a specific method to navigate to the code. The (default) color legend of the graph is the following:
 
 |Color|Layer|
 |-----|-----|
-|Teal |System|
-|Purple| Base|
-|Yellow| Other|
+|Green |System Application|
+|Magenta| Base Application|
+|Yellow| Extensions|
+
+The color legend can be changed by specifying the `al.profilerColors` property in the AL configuration. For more information, see [AL Language Extension Configuration](devenv-al-extension-configuration.md).
 
 > [!IMPORTANT]  
 > If you run Visual Studio Code with the setting **Run as administrator**, the graph will not display in the performance profiling editor view. As a workaround, you can launch Visual Studio Code from the command line with the flag `--no-sandbox`.
