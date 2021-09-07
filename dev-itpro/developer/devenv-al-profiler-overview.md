@@ -59,11 +59,11 @@ To investigate the graph of method calls, you open the generated profile file in
 
 To investigate the data shown in the graph, you can use different view modes as described in the next section. Choose a specific method to navigate to the code. The (default) color legend of the graph is the following:
 
-|Color|Layer|
+|Layer|Color|
 |-----|-----|
-|Green |System Application|
-|Magenta| Base Application|
-|Yellow| Extensions|
+|System Application|Green|
+|Base Application|Magenta|
+|Extensions|Yellow|
 
 The color legend can be changed by specifying the `al.profilerColors` property in the AL configuration. For more information, see [AL Language Extension Configuration](devenv-al-extension-configuration.md).
 
