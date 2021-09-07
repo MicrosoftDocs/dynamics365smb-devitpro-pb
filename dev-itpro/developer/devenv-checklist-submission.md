@@ -215,9 +215,9 @@ For instance, the following submission manifest indicates that the extension wil
 > [!Important]  
 > The maximum release specified for your submission also defines the availability of all the extensions in your submission as they will be marked as incompatible from this release.
 >
-> For example, if the maximum release specified is 19.0, your extensions will not be available for environments running on 19.0 or higher.
+> For example, if the maximum release specified is 18.0, your extensions will not be available for environments running on 18.0 or higher.
 >
-> If you do not provide a version of your extension that is compatible with release of Business Central, your extension will cause a failure to upgrade the environments where it is installed. For more information about maintaining extensions, see [Maintain AppSource Apps and Per-Tenant Extensions in Business Central Online](app-maintain.md).
+> If you do not provide a version of your extension that is compatible with this release of Business Central, your extension will cause a failure to upgrade the environments where your extension is installed. For more information about maintaining extensions, see [Maintain AppSource Apps and Per-Tenant Extensions in Business Central Online](app-maintain.md).
 
 ### When should you specify a maximum release for your extension?
 
