@@ -126,14 +126,32 @@ Complete these steps to set up the Azure AD application for service-to-service a
    > [!TIP]
    > Pre-consent can be done by adding the AAD application to the **Adminagents** group in the partner tenant.  For more information, see [Pre-consent your app for all your customers](/graph/auth-cloudsolutionprovider#pre-consent-your-app-for-all-your-customers) in the Graph documentation.
 
-## Calling API and web services
+## Calling API and web servicesOAuth2Flows
 
 After the Azure AD application has been set up and access has been granted, you're ready to make API and web service calls to Business Central.
 
-The following sample uses the [Rest Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) for Visual Studio Code. Using the Rest Client makes it easy to see which HTTP calls are made both against Business Central and Azure Active Directory. Any HTTP client can be used to create the requests below. Or you can choose any library, like MSAL.
+For the majority of cases, use the AcquireTokenByAuthorizationCode method from the Oauth 2.0 module. For more information, see [Microsoft identity platform and OAuth 2.0 authorization code flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow). To explore an example, see [OAuth2Flows](https://github.com/microsoft/BCTech/blob/master/samples/OAuth2Flows/TestOAuth2Flows.Page.al).
+
+> [!IMPORTANT]
+> When getting access tokens, it's important to keep security in mind. For example, ensure that you don't expose the tokens. You can do that in two ways:
+>
+>* The method you are using is non-debuggable. Example of using the non-debuggable property for protecting access tokens:
+>
+>```
+>    [NonDebuggable]
+>    procedure GetAccessToken(var AccessToken: Text): Boolean
+>    begin
+>        ...
+>    end;
+>
+>```
+>
+>* The showMyCode property is set to false for the extension.
 
 > [!TIP]
-> You can also see this sample in the[BCTech Github repo](https://github.com/microsoft/BCTech/tree/master/samples/VSCRestClientOAuthBCAccess).
+> You can also see this sample in the [BCTech Github repo](https://github.com/microsoft/BCTech/tree/master/samples/VSCRestClientOAuthBCAccess).
+
+The following sample uses the [Rest Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) for Visual Studio Code. Using the Rest Client makes it easy to see which HTTP calls are made both against Business Central and Azure Active Directory. Any HTTP client can be used to create the requests below. Or you can choose any library, like MSAL.
 
 
 ```http
