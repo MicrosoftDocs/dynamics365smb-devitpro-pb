@@ -122,10 +122,10 @@ Occurs when the validation for a specific extension the submission has started.
 |---------|-----|
 |eventId|**LC0032**|
 |countryRegion|Specifies the localized version of the app that will be validated. |
-| extensionId|Specifies the ID of the extension in the submission that will be validated.|
-| extensionName|Specifies the name of the extension in the submission that will be validated.|
-| extensionPublisher|Specifies the publisher of the extension in the submission that will be validated.|
-| extensionVersion|Specifies the version of the extension in the submission that will be validated.|
+|extensionId|Specifies the ID of the extension in the submission that will be validated.|
+|extensionName|Specifies the name of the extension in the submission that will be validated.|
+|extensionPublisher|Specifies the publisher of the extension in the submission that will be validated.|
+|extensionVersion|Specifies the version of the extension in the submission that will be validated.|
 |severity|**Information**|
 |version|Specifies the [Business Central release](../developer/devenv-checklist-submission.md#versions) that the extension will be validated against, like **19.0** or **18.4**.|
 |[See common custom dimensions](#other)||
@@ -136,7 +136,7 @@ Occurs when the validation for a specific extension the submission has started.
 
 ## <a name="validationdiagnosticreported"></a>Validation diagnostic reported
 
-Occurs when an error occurs during the validation of an extension. The errors are the same as the [AppSourceCop Analyzer Rules](../developer/analyzers/appsourcecop.md).
+Occurs when an error occurs during the validation of an extension. The errors are reported by the AL compiler or by the [AppSourceCop](../developer/analyzers/appsourcecop.md) analyzer.
 
 ### General dimensions
 
@@ -150,14 +150,16 @@ Occurs when an error occurs during the validation of an extension. The errors ar
 |Dimension|Description or value|
 |---------|-----|
 |eventId|**LC0034**|
-|countryRegion|Specifies the localized version of the app that was validated. |
-|diagnosticCode|Specifies the AppSourceCop rule ID of the error, like AS0001.|
-|diagnosticMessage|Specifies AppSourceCop rule error message. |
+|countryRegion|Specifies the localized version of the app that was validated.|
+|diagnosticCode|Specifies the diagnostic identifier, like AS0001 or AL0001.|
+|diagnosticMessage|Specifies the diagnostic error message.|
 |diagnosticSeverity|**Error**|
-| extensionId|Specifies the ID of the extension in the submission that will be validated.|
-| extensionName|Specifies the name of the extension in the submission that was validated.|
-| extensionPublisher|Specifies the publisher of the extension in the submission that was validated.|
-| extensionVersion|Specifies the version of the extension in the submission that was validated.|
+|diagnosticSourceLocation|Specifies the location in the source code where the diagnostic was reported. The format used is (Line, Character).|
+|diagnosticSourcePath|Specifies the path to the file where the diagnostic was reported. |
+|extensionId|Specifies the ID of the extension in the submission that will be validated.|
+|extensionName|Specifies the name of the extension in the submission that was validated.|
+|extensionPublisher|Specifies the publisher of the extension in the submission that was validated.|
+|extensionVersion|Specifies the version of the extension in the submission that was validated.|
 |severity|**Error**|
 |version|Specifies the [Business Central release](../developer/devenv-checklist-submission.md#versions) that the extension was validated against, like **19.0** or **18.4**.|
 |[See common custom dimensions](#other)||
