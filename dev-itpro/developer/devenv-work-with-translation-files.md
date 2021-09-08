@@ -35,9 +35,22 @@ In the app.json file of your extension, add the following line:
 Now, when you run the build command (**Ctrl+Shift+B**) in Visual Studio Code, a `\Translations` folder will be generated and populated with the .xlf file that contains all the labels, label properties, and report labels that you are using in the extension. The generated .xlf file can now be translated.
 
 > [!IMPORTANT]  
+> The **ML** versions of properties are **not** included in the .xlf file:  
+>
+> - [CaptionML](properties/devenv-captionml-property.md)
+> - [ConstValueML](./properties/devenv-properties.md)
+> - [InstructionalTextML](properties/devenv-instructionaltextml-property.md)
+> - [OptionCaptionML](properties/devenv-optioncaptionml-property.md)
+> - [PromotedActionCategoriesML](properties/devenv-promotedactioncategoriesml-property.md)
+> - [RequestFilterHeadingML](properties/devenv-requestfilterheadingml-property.md)
+> - [ToolTipML](properties/devenv-tooltipml-property.md)
+> 
+> The [TextConst Data Type](methods-auto/textconst/textconst-data-type.md) is not included in the .xlf file either.
+
+> [!IMPORTANT]  
 > Make sure to rename the translation file to avoid the file being overwritten the next time the extension is built.
 
-By setting the `GenerateCaptions` flag in the app.json file, you specify that you want to generate captions based on the object name for pages, tables, reports, XMLports, request pages, and table fields. If the object already has a `Caption` or `CaptionML` property set, that value will be used, for table fields the `OptionCaption` is used. The syntax is the following:
+By setting the `GenerateCaptions` flag in the app.json file, you specify that you want to generate captions based on the object name for pages, tables, reports, XMLports, request pages, and table fields. If the object already has a `Caption` property set, that value will be used, for table fields the `OptionCaption` is used. The syntax is the following:
 
 ```json
   "features": [ "TranslationFile", "GenerateCaptions" ]
@@ -79,20 +92,6 @@ And the following is the syntax for **Label** data types:
 var
     a : Label 'Label Text', Comment='Foo', MaxLength=999, Locked=true;
 ```
-
-> [!IMPORTANT]  
-> The **ML** versions of properties are **not** included in the .xlf file:  
->
-> - [CaptionML](properties/devenv-captionml-property.md)
-> - [ConstValueML](./properties/devenv-properties.md)
-> - [InstructionalTextML](properties/devenv-instructionaltextml-property.md)
-> - [OptionCaptionML](properties/devenv-optioncaptionml-property.md)
-> - [PromotedActionCategoriesML](properties/devenv-promotedactioncategoriesml-property.md)
-> - [RequestFilterHeadingML](properties/devenv-requestfilterheadingml-property.md)
-> - [ToolTipML](properties/devenv-tooltipml-property.md)
-> 
-> The [TextConst Data Type](methods-auto/textconst/textconst-data-type.md) is not included in the .xlf file either.
-
 
 ## The XLIFF file
 
