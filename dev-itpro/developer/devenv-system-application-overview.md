@@ -36,6 +36,7 @@ The list of modules is growing continuously. The following table lists and descr
 |Azure Key Vault|Stores Azure Key Vault secrets for deployments.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Azure%20Key%20Vault/README.md)|
 |BLOB Storage|Stores and manages data in a binary format.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/BLOB%20Storage/README.md)|
 |Base64 Convert|Converts text and from base 64.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Base64%20Convert/README.md)|
+|Barcode|Exposes functionality to encode barcodes for using on, for example, reports.|[ReadMe](https://github.com/microsoft/ALAppExtensions/tree/master/Modules/System/Barcode)|
 |Caption Class|Defines how the CaptionClass property displays captions.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Caption%20Class/README.md)|
 |Client Type Management|Allows testing of code that relies on different types of clients.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Client%20Type%20Management/README.md)|
 |Confirm Management|Determines whether a confirm dialog displays when logic is run.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Confirm%20Management/README.md)|
