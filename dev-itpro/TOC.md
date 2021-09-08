@@ -1,4 +1,4 @@
-# [Development and administration](index.md)
+﻿# [Development and administration](index.md)
 # [New and planned](/dynamics365/business-central/product-news?toc=/dynamics365/business-central/dev-itpro/toc.json)
 # Get started
 ## [Overview of business functionality](/dynamics365/business-central/across-business-functionality?toc=/dynamics365/business-central/dev-itpro/toc.json)
@@ -46,8 +46,8 @@
 ##### [Upgrading an App Using ForceSync](administration/appmanagement/app-management-updating-with-forcesync.md)
 ## Sell
 ### [Get Started as a Reseller of Business Central Online](administration/get-started-online.md)
-### [Cloud Solution Provider program](/partner-center/csp-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
-### [Connect with customers](/partner-center/connect-with-your-customers?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### [Cloud Solution Provider (Partner Center)](/partner-center/csp-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### [Connect with customers (Partner Center)](/partner-center/connect-with-your-customers?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Customize Business Central](/dynamics365/business-central/ui-customizing-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Onboarding Experiences](administration/onboarding-experiences.md)
 ## Frequently asked questions
