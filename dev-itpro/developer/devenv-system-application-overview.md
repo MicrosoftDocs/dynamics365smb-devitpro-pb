@@ -74,10 +74,6 @@ The list of modules is growing continuously. The following table lists and descr
 |Video|Looks up and plays videos.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Video/README.md)|
 |Web Service Management|Provides the tools needed to manage web services.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Web%20Service%20Management/README.md)|
 
-
-
-
-
 <!--## Example - Enhancing a Module
 
 
