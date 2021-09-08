@@ -23,6 +23,21 @@ Sets the fields that are added to the ColumnStore index inside SQL Server.
 -   Table
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Property Value
+A comma-separated list of field names.
+
+## Syntax
+
+```al
+ColumnStoreIndex = Field1,Field2;
+```
+
+## Remarks
+
+The property creates a nonclustered columnstore index on the table in SQL server. Using this property can improve query performance for large tables. For more information, see [Columnstore indexes: Overview](/sql/relational-databases/indexes/columnstore-indexes-overview).
+
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
+[Table Keys](../devenv-table-keys.md)  
