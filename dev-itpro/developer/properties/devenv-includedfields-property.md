@@ -23,6 +23,24 @@ Sets the fields that are included as non-key columns in the index on SQL Server.
 -   Table Key
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+
+## Property Value
+
+A comma-separated list of field names.
+
+## Syntax
+
+```al
+IncludedFields = Field1,Field2;
+```
+
+## Remarks
+
+You can't use this property on primary keys or clustered secondary keys ([Clustered](devenv-clustered-property.md) property is **true**).
+
+Using this property can improve query performance. For more information, see [Table Keys](../devenv-table-keys.md).
+
+## See Also
+
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
