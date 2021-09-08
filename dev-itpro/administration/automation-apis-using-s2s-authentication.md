@@ -128,9 +128,9 @@ Complete these steps to set up the Azure AD application for service-to-service a
 
 ## Calling API and web servicesOAuth2Flows
 
-After the Azure AD application has been set up and access has been granted, you're ready to make API and web service calls to Business Central.
+After the Azure AD application has been set up and access has been granted, you're ready to make API and web service calls to [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
-For the majority of cases, use the `AcquireTokenByAuthorizationCode` method from the Oauth 2.0 module. For more information, see [Microsoft identity platform and OAuth 2.0 authorization code flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow). To explore an example, see [OAuth2Flows](https://github.com/microsoft/BCTech/blob/master/samples/OAuth2Flows/TestOAuth2Flows.Page.al).
+For the majority of cases, use the `AcquireTokenByAuthorizationCode` method from the OAuth 2.0 module. For more information, see [Microsoft identity platform and OAuth 2.0 authorization code flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow). To explore an example, see [OAuth2Flows](https://github.com/microsoft/BCTech/blob/master/samples/OAuth2Flows/TestOAuth2Flows.Page.al).
 
 > [!IMPORTANT]
 > When getting access tokens, it's important to keep security in mind. For example, ensure that you don't expose the tokens. You can do that in two ways:
