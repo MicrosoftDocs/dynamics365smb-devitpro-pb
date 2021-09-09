@@ -29,8 +29,8 @@ This topic describes how to set up an environment for developing a module in the
 
     The URL looks like `https://github.com/<*username*\>/ALAppExtensions.git`, and <*username*> is your GitHub username.
 3. Open PowerShell, and then open the directory in which you want to keep the repository files.
-4. Run the **git clone <URL>** command. Replace `<*URL*>` with the URL you copied in step 3.
-5. Open VS Code, and then go to the **System Modules** folder in the cloned repository.
+4. Run the **git clone \<URL>** command. Replace \<URL> with the URL you copied in step 3.
+5. Open Visual Studio Code, and then go to the **System Modules** folder in the cloned repository.
 6. Run the **code ALAppExtensions/Modules/System** command.
 7. In the **System** folder, open the **app.json** and note the **version** that is listed. You will need that in step 3 in the process of setting up a Docker container.
 8. Modify the settings.json file in Visual Studio Code to include paths to .NET assemblies. Set the `"al.assemblyProbingPaths"` parameter:  
