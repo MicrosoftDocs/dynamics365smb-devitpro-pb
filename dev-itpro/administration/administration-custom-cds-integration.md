@@ -506,6 +506,9 @@ Customers might make changes to the integration table mappings that they later r
     local procedure HandleCustomIntegrationTableMappingReset(var IsHandled: Boolean; IntegrationTableMappingName: Code[20])
     var
         IntegrationTableMapping: Record "Integration Table Mapping";
+        IntegrationFieldMapping: Record "Integration Field Mapping";
+        CDSWorker: Record "CDS Worker";
+        Employee: Record "Employee";
     begin
         case IntegrationTableMappingName of
             'EMPLOYEE-WORKER':
@@ -521,12 +524,12 @@ Customers might make changes to the integration table mappings that they later r
                     ...
                     IsHandled := true;
                 end;
-                ...
+            ...
         end;
     end;
     ```
 > [!Important]  
-> You must set the the IsHandled property to `true` to avoid triggering the default implementation. Otherwise, all custom table mappings will be reset to default, regardless of the user's selection.
+> You must set the IsHandled property to `true` to avoid triggering the default implementation. Otherwise, all custom table mappings will be reset to default, regardless of the user's selection.
 
 ## Customizing Synchronization  
 
