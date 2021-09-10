@@ -1,5 +1,6 @@
 ---
 title: "Progress Windows, Message, Error, and Confirm Methods"
+description: "Using specialized methods in AL for Business Central to display messages and gather input from the user."
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na

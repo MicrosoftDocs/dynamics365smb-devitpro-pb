@@ -1,5 +1,6 @@
 ---
 title: "The Microsoft_Application.app File"
+description: "The Microsoft_Application.app file encapsulates all of the extensions that make up a solution for Business Central"
 ms.author: solsen
 ms.custom: na
 ms.date: 04/01/2021
