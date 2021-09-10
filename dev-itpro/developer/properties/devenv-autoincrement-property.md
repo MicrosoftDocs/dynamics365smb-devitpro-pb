@@ -28,7 +28,7 @@ The fields must be of [Integer Data Type](../methods-auto/library.md) and [BigIn
 
 ## Property Value  
 
-**True** if the field value is automatically incremented; otherwise, **false**. The default value is **true**.  
+**True** if the field value is automatically incremented; otherwise, **false**. The default value is **false**.  
   
 > [!NOTE]  
 > If you want to manually assign a value to a field that has the AutoIncrement property set to **true**, you must be member of the SQL Server db_owner database permission set.  
