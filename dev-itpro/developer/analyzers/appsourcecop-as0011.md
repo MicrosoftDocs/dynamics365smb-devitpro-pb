@@ -112,6 +112,9 @@ codeunit 50120 Foo_MyCodeunit
 
 Once all dependent extensions have been updated to use the codeunit `Foo_MyCodeunit` instead of `MyCodeunit`, the codeunit `MyCodeunit` can be removed.
 
+> [!NOTE]  
+> When new objects are added to this rule the transition is made gradually by reporting a warning first. The warning that has the same behaviour described here is [AS0098](appsourcecop-as0098.md).
+
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
