@@ -26,8 +26,9 @@ Find an overview of hotfixes in this [article]().
 
 | Country| Feature change |
 |-------------|--------------|
-| XX | XX|
-| XX | XX|
+| Mexico | Retention functionality for copied documents when cancelling or creating corrective Sales Credit Memos |
+| Italy | Tax Authority Doc. No. enlarged|
+| Czech Republic | Support for multiple QR-IBAN bank accounts for issuers of QR-Bills|
 
 ## Release Plan
 If you want to get a comprehensive overview of what's new and planned for Business Central online for the entire 2021 release wave 1 (release from April 2021 through September 2021), find the link to the release plan [here](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/planned-features).
