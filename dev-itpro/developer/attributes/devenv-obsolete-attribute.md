@@ -71,8 +71,8 @@ codeunit 50143 SoonObsolete
 
 [AL Method Reference](../methods-auto/library.md)  
 [Method Attributes](devenv-obsolete-attribute.md)  
-[Directives in AL](directives/devenv-directives-in-al.md)  
-[Best Practices for Deprecation of Code in the Base App](devenv-deprecation-guidelines.md)  
+[Directives in AL](../directives/devenv-directives-in-al.md)  
+[Best Practices for Deprecation of Code in the Base App](../devenv-deprecation-guidelines.md)  
 [ObsoleteState Property](../properties/devenv-obsoletestate-property.md)  
 [ObsoleteReason Property](../properties/devenv-obsoletereason-property.md)  
-[ObsoleteTag Property](properties/devenv-obsoletetag-property.md)  
+[ObsoleteTag Property](../properties/devenv-obsoletetag-property.md)  
