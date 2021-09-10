@@ -47,7 +47,7 @@ Both formats are valid MarkDown, and both formats are supported by DocFx.exe. Fo
 
 ### Navigation in the product
 
-The [Describing interactions with UI](/style-guide/procedures-instructions/describing-interactions-with-ui) article in the Microsoft Style Guide also applies to [!INCLUDE [prod_short](../includes/prod_short.md)] content. However, the navigation in [!INCLUDE [prod_short](../includes/prod_short.md)] is very different from many other Microsoft products, and users can even pin actions and make other personalizations that change the navigation path.  
+The [Describing interactions with UI](/style-guide/procedures-instructions/describing-interactions-with-ui) article in the Microsoft Style Guide also applies to [!INCLUDE [prod_short](../includes/prod_short.md)] content. However, the navigation in [!INCLUDE [prod_short](../includes/prod_short.md)] is very different from many other Microsoft products, and users can even pin actions and personalize  their workspace in other ways that change the navigation path.  
 
 As a result, we often choose to be not very specific about how to find a given action. We write *Choose the Register Payments action*, rather than try to predict if the user will find that action pinned to their action bar or hidden away under **More options**, for example.  
 
@@ -57,10 +57,10 @@ The following table provides examples of how to write about the user interface i
 
 |Page type  |Example  |Description  |
 |---------|---------|---------|
+|List | On the **Opportunity List** page, select the opportunity, and then choose the **Assign Sales Quote** action.|Most list pages have relatively few actions, so let's keep things simple. Also, most actions in the action bar for list pages apply to the line entry that you have selected. |
 |Card     |On the **General** FastTab, in the **External Document No.** field, enter the invoice number. | Cards can have several FastTabs that each have multiple fields. Telling the user to find a certain field on a specific FastTab can save time.|
 |Card |On the **Customer Card** page, choose the **Merge With** action.| This type of action is relatively easy to find in the **Actions** part of the action bar. |
-|List |         |         |
-|Document  |On the **Lines** FastTab, in the **Item No.** field, enter the number of an inventory item or service.         |Documents have a header section and a lines section, typically. So letting the user know which section the field is in can save time.|
+|Document  |On the **Lines** FastTab, in the **Item No.** field, enter the number of an inventory item or service.  |Documents, such as sales orders, have a header section and a lines section, typically. So letting the user know which section the field is in can save time.|
 
 ## Authoring in MarkDown
 
