@@ -20,11 +20,13 @@ An affix is needed.
 ## Description
 An affix is needed.
 
-This warning mimics the behaviour of [AS0011](appsourcecop-as0011.md) but it is present for limited objects. Its sole purpose is to serve as a stable middle ground before introducing [AS0011](appsourcecop-as0011.md) for these objects.
-
-Currently the warning is present for Enum values defined in EnumExtension objects, DataItems and Columns defined in ReportExtensions.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+- This warning mimics the behaviour of [AS0011](appsourcecop-as0011.md) but it is present for limited objects. Its sole purpose is to serve as a stable middle ground before introducing [AS0011](appsourcecop-as0011.md) for these objects.
+
+- Currently the warning is present for Enum values defined in EnumExtension objects, DataItems, and columns defined in ReportExtension objects.
+
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
