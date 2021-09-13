@@ -34,7 +34,9 @@ When you start a new project, an `app.json` file is generated automatically, whi
 
 ### allowDebugging
 
-To allow debugging into your extension, when the extension is taken as a dependency, you must set the `allowDebugging` flag to `true`, otherwise debugging and Go to Definition to view the code is now allowed. For a more refined setting, you can specify the `NonDebuggable` attribute on methods and variables. For more information, see [NonDebuggable Attribute](attributes/devenv-nondebuggable-attribute.md).
+To allow debugging into your extension, when the extension is taken as a dependency, you must set the `allowDebugging` flag to `true`, otherwise debugging and **Go to Definition** to view the code is now allowed. The default value of `allowDebugging` is `false`.
+
+For a more refined setting, you can specify the `NonDebuggable` attribute on methods and variables. For more information, see [NonDebuggable Attribute](attributes/devenv-nondebuggable-attribute.md).
 
 > [!NOTE]  
 > `allowDebugging` does not apply to [Profiles](devenv-profile-object.md), [Page Customizations](devenv-page-customization-object.md) and [Views](devenv-views.md), because these objects cannot define any custom logic in procedures or triggers. The code for Profiles, Page Customizations, and Views defined in an extension with `allowDebugging` set to **false** can still be accessed and copied using [Designer](devenv-inclient-designer.md).
@@ -56,11 +58,11 @@ By adding this setting, you *enable debugging* into an extension to view the sou
 
 ### allowDownloadingSource
 
-When this is set to `true` in the `app.json` file of extension A, the source code of extension A can be downloaded, for example, from the **Download Source** option in the **Extension Management** page in [!INCLUDE[prod_short](includes/prod_short.md)].
+When this is set to `true` in the `app.json` file of extension A, the source code of extension A can be downloaded, for example, from the **Download Source** option in the **Extension Management** page in [!INCLUDE[prod_short](includes/prod_short.md)].  The default value of `allowDownloadingSource` is `false`.
 
 ### includeSourceInSymbolFile
 
-When this is set to `true` in the `app.json` file of extension A, the downloaded symbol file in Visual Studio Code using the **Downloading Symbols** functionality, contains symbols and the source code of extension A.
+When this is set to `true` in the `app.json` file of extension A, the downloaded symbol file in Visual Studio Code using the **Downloading Symbols** functionality, contains symbols and the source code of extension A.  The default value of `includesourceInSymbolFile` is `false`.
 
 
 ## See Also
