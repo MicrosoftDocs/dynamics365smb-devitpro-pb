@@ -46,8 +46,8 @@
 ##### [Upgrading an App Using ForceSync](administration/appmanagement/app-management-updating-with-forcesync.md)
 ## Sell
 ### [Get Started as a Reseller of Business Central Online](administration/get-started-online.md)
-### [Cloud Solution Provider program](/partner-center/csp-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
-### [Connect with customers](/partner-center/connect-with-your-customers?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### [Cloud Solution Provider (Partner Center)](/partner-center/csp-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### [Connect with customers (Partner Center)](/partner-center/connect-with-your-customers?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Customize Business Central](/dynamics365/business-central/ui-customizing-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Onboarding Experiences](administration/onboarding-experiences.md)
 ## Frequently asked questions
@@ -2244,6 +2244,7 @@
 #### [Clustered Property](developer/properties/devenv-clustered-property.md)
 #### [ColumnFilter Property](developer/properties/devenv-columnfilter-property.md)
 #### [ColumnSpan Property](developer/properties/devenv-columnspan-property.md)
+#### [ColumnStoreIndex Property](developer/properties/devenv-columnstoreindex-property.md)
 #### [Compressed Property](developer/properties/devenv-compressed-property.md)
 #### [CompressionType Property](developer/properties/devenv-compressiontype-property.md)
 #### [ContextSensitiveHelpPage Property](developer/properties/devenv-contextsensitivehelppage-property.md)
@@ -2314,6 +2315,7 @@
 #### [Implementation Property](developer/properties/devenv-implementation-property.md)
 #### [Importance Property](developer/properties/devenv-importance-property.md)
 #### [IncludeCaption Property](developer/properties/devenv-includecaption-property.md)
+#### [IncludedFields Property](developer/properties/devenv-includedfields-property.md)
 #### [IncludedPermissionSets Property](developer/properties/devenv-includedpermissionsets-property.md)
 #### [IndentationColumn Property](developer/properties/devenv-indentationcolumn-property.md)
 #### [IndentationControls Property](developer/properties/devenv-indentationcontrols-property.md)

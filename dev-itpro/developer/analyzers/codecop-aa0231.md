@@ -69,7 +69,8 @@ end;
 ```
 
 ## Good and bad practices for fixing the rule
-Use the ability of the [Error](../methods-auto/dialog/dialog-error-method.md) method to insert values (expressions) into the string that has a placeholder.
+
+Use the ability of the [Error](../methods-auto/dialog/dialog-error-errorinfo-method.md) method to insert values (expressions) into the string that has a placeholder.
 
 ## See Also  
 [CodeCop Analyzer](codecop.md)  

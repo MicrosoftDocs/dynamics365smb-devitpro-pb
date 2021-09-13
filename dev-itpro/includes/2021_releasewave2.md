@@ -1,1 +1,1 @@
-<Token> **INTRODUCED IN:** Business Central 2021 release wave 2</Token>
+> **INTRODUCED IN:** Business Central 2021 release wave 2

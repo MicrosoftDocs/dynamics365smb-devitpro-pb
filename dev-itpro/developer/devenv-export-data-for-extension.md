@@ -20,10 +20,6 @@ For your extension to run properly, configuration and starting data such as perm
 - Starting table data
 - Custom report layouts
 
-<!-- 
-> [!NOTE]  
-> The NAV Development Shell is [!INCLUDE[2019_releasewave2_deprecated](../includes/2019_releasewave2_deprecated.md)]. -->
-
 The data must be exported into files to be included in the extension. To use the export functions you must use a container sandbox environment for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. For more information, see [Get started with the Container Sandbox Development Environment](devenv-get-started-container-sandbox.md).
 
 ## To export permission sets
@@ -59,7 +55,7 @@ The data must be exported into files to be included in the extension. To use the
 ## To export table data 
 
 1. Open the [!INCLUDE[bc_dev_shell](includes/bc_dev_shell.md)].
-2. Export the relevant data using the `Export-NAVAppTableData` cmdlet to export the data to a file. This includes setting the path to a folder where you want the .navxdata file created. A data file in the format of TAB<TABLEID>.navxdata will be created. (Example: TAB10000.navxdata). 
+2. Export the relevant data using the `Export-NAVAppTableData` cmdlet to export the data to a file. This includes setting the path to a folder where you want the .navxdata file created. A data file in the format of `TAB<TABLEID>.navxdata` will be created. (Example: TAB10000.navxdata). 
 
     `Export-NAVAppTableData -ServerInstance DynamicsNAV160 -Path 'C:\NAVAppTableData' -TableId 10000`
 
