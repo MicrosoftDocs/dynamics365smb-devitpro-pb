@@ -116,6 +116,9 @@ In the example, `https://myserver.com` represents the URL to the Help Server ins
 
 You can see an example of how to deploy content to an Azure web app in the article [Deploy custom help to Azure](/dynamics365/fin-ops-core/dev-itpro/help/walkthrough-help-azure), which supports the custom Help toolkit for Dynamics 365 finance and operations apps. That article also describes how you can build a search service for your website. This step is currently not relevant for [!INCLUDE [prod_short](../developer/includes/prod_short.md)], but you might find the guidance helpful anyway.  
 
+> [!IMPORTANT]
+> Currently, search in [!INCLUDE [prod_short](../includes/prod_short.md)] cannot access sites other than the docs.microsoft.com site. This limitation also impacts the search tab in the updated help pane that is part of 2021 release wave 2, version 19. The search capabilities only apply to the docs.microsoft.com site, including learning modules on the Microsoft Learn subsite.
+
 ### Optional: Get Microsoft's content
 
 If you deploy a solution that is based on Microsoft's default application, then you might want to include a customized version of Microsoft's business functionality content on your website. Microsoft's source files are available as downloadable packages for each major release in the [https://github.com/MicrosoftDocs/dynamics365smb-docs/](https://github.com/MicrosoftDocs/dynamics365smb-docs/releases) GitHub repo in English (US) only. For other languages, pull files based on a commit before the next major version.  
