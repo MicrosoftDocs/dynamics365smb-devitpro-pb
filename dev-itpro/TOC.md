@@ -1,4 +1,4 @@
-﻿# [Development and administration](index.md)
+# [Development and administration](index.md)
 # [New and planned](/dynamics365/business-central/product-news?toc=/dynamics365/business-central/dev-itpro/toc.json)
 # Get started
 ## [Overview of business functionality](/dynamics365/business-central/across-business-functionality?toc=/dynamics365/business-central/dev-itpro/toc.json)
@@ -11,10 +11,12 @@
 ### [The SMB Opportunity for App Publishers](developer/readiness/opportunity-app-publisher.md)
 ### [Get Started with Building Apps](developer/readiness/get-started.md)
 ### [Customize Business Central](developer/readiness/readiness-customizing-tenants.md)
+
 ### [The Lifecycle of Apps and Extensions](developer/devenv-app-life-cycle.md)
 <!--#### What the partner's responsibilities are -->
 ### [Update Lifecycle for Customizations](developer/devenv-customization-update-lifecycle.md)
 ### [Maintain AppSource Apps and Per-Tenant Extensions](developer/app-maintain.md)
+### [Discontinuing an AppSource app](developer/devenv-app-discontinue.md)
 ### [Development of a Localization Solution](developer/readiness/readiness-develop-localization.md)  
 <!--#### How Microsoft runs the service -->
 ### [Microsoft Responsibilities](deployment/microsoft-responsibilities.md)
@@ -44,8 +46,8 @@
 ##### [Upgrading an App Using ForceSync](administration/appmanagement/app-management-updating-with-forcesync.md)
 ## Sell
 ### [Get Started as a Reseller of Business Central Online](administration/get-started-online.md)
-### [Cloud Solution Provider program](/partner-center/csp-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
-### [Connect with customers](/partner-center/connect-with-your-customers?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### [Cloud Solution Provider (Partner Center)](/partner-center/csp-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### [Connect with customers (Partner Center)](/partner-center/connect-with-your-customers?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Customize Business Central](/dynamics365/business-central/ui-customizing-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Onboarding Experiences](administration/onboarding-experiences.md)
 ## Frequently asked questions
@@ -60,6 +62,7 @@
 ### [FAQ About the Windows Client and Business Central](faq-win-cli.md)
 ### [FAQ about Connecting to Business Central Online from On-Premises Solutions](administration/faq-migrate-data.md)
 ## What's new or changed
+### [Update 18.4](whatsnew/whatsnew-update-18-4.md)
 ### [Update 18.3](whatsnew/whatsnew-update-18-3.md)
 ### [Update 18.2](whatsnew/whatsnew-update-18-2.md)
 ### [Update 18.1](whatsnew/whatsnew-update-18.1.md)
@@ -1538,7 +1541,7 @@
 ##### [ChangeCompany([String]) Method](developer/methods-auto/record/record-changecompany-method.md)
 ##### [ClearMarks() Method](developer/methods-auto/record/record-clearmarks-method.md)
 ##### [Consistent(Boolean) Method](developer/methods-auto/record/record-consistent-method.md)
-##### [Copy(var Record [, Boolean]) Method](developer/methods-auto/record/record-copy-method.md)
+##### [Copy(Record [, Boolean]) Method](developer/methods-auto/record/record-copy-method.md)
 ##### [CopyFilter(Any, Any) Method](developer/methods-auto/record/record-copyfilter-method.md)
 ##### [CopyFilters(var Record) Method](developer/methods-auto/record/record-copyfilters-method.md)
 ##### [CopyLinks(var Record) Method](developer/methods-auto/record/record-copylinks-table-method.md)
@@ -2241,6 +2244,7 @@
 #### [Clustered Property](developer/properties/devenv-clustered-property.md)
 #### [ColumnFilter Property](developer/properties/devenv-columnfilter-property.md)
 #### [ColumnSpan Property](developer/properties/devenv-columnspan-property.md)
+#### [ColumnStoreIndex Property](developer/properties/devenv-columnstoreindex-property.md)
 #### [Compressed Property](developer/properties/devenv-compressed-property.md)
 #### [CompressionType Property](developer/properties/devenv-compressiontype-property.md)
 #### [ContextSensitiveHelpPage Property](developer/properties/devenv-contextsensitivehelppage-property.md)
@@ -2311,6 +2315,7 @@
 #### [Implementation Property](developer/properties/devenv-implementation-property.md)
 #### [Importance Property](developer/properties/devenv-importance-property.md)
 #### [IncludeCaption Property](developer/properties/devenv-includecaption-property.md)
+#### [IncludedFields Property](developer/properties/devenv-includedfields-property.md)
 #### [IncludedPermissionSets Property](developer/properties/devenv-includedpermissionsets-property.md)
 #### [IndentationColumn Property](developer/properties/devenv-indentationcolumn-property.md)
 #### [IndentationControls Property](developer/properties/devenv-indentationcontrols-property.md)

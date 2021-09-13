@@ -3,7 +3,7 @@ title: "Record Data Type"
 description: "Is a complex data type."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/22/2021
+ms.date: 08/18/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -34,7 +34,7 @@ The following methods are available on instances of the Record data type.
 |[ChangeCompany([String])](record-changecompany-method.md)|Redirects references to table data from one company to another.|
 |[ClearMarks()](record-clearmarks-method.md)|Removes all the marks from a record.|
 |[Consistent(Boolean)](record-consistent-method.md)|Marks a table as being consistent or inconsistent.|
-|[Copy(var Record [, Boolean])](record-copy-method.md)|Copies a specified record's filters, views, automatically calculated FlowFields, marks, fields, and keys that are associated with the record from a table or creates a reference to a record.|
+|[Copy(Record [, Boolean])](record-copy-method.md)|Copies a specified record's filters, views, automatically calculated FlowFields, marks, fields, and keys that are associated with the record from a table or creates a reference to a record.|
 |[CopyFilter(Any, Any)](record-copyfilter-method.md)|Copies the filter that has been set for one field and applies it to another field.|
 |[CopyFilters(var Record)](record-copyfilters-method.md)|Copies all the filters set by the SETFILTER method (Record) or the SETRANGE method (Record) from one record to another.|
 |[CopyLinks(var Record)](record-copylinks-table-method.md)|Copies all the links from a specified record.|

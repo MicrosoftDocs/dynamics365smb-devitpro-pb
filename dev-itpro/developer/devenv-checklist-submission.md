@@ -36,13 +36,14 @@ If you do not meet these mandatory requirements, your extension will fail valida
 |Include the proper upgrade code allowing your app to successfully upgrade from version to version.|[Upgrading Extensions](devenv-upgrading-extensions.md)|
 |Pages and code units that are designed to be exposed as Web services must not generate any UI that would cause an exception in the calling code.|[Web Services Usage](../compliance/apptest-webservices.md)|
 |You are required to register affixes for your publisher name and to use them in your extension.|[Prefix/Suffix Guidelines](../compliance/apptest-prefix-suffix.md)|
+|You are required to register an ID range for your publisher name and to use it in your extension.|[Object Ranges](readiness/get-started.md#requesting-an-object-range)|
 |We strongly recommend you are using automated testing, using the AL Test Toolkit. You are not required to include the test package with your extension.|[Testing the Advanced Sample Extension](devenv-extension-advanced-example-test.md)|
 |DataClassification is required for fields of all tables/table extensions. Property must be set to other than `ToBeClassified`.|[Classifying Data](devenv-classifying-data.md)|
 |You must use the Profile object to add profiles instead of inserting them into the **Profiles** table.|[Profile Object](devenv-profile-object.md)|
 |Use `addfirst` and `addlast` for placing your actions on Business Central pages. This eliminates breaking your app due to Business Central core changes.|[Placing Actions and Controls](devenv-page-ext-object.md#using-keywords-to-place-actions-and-controls)|
 |The extension submitted must not be a runtime package.|[Creating Runtime Packages](devenv-creating-runtime-packages.md)|
 |The extension submitted must use translation files.|[Working with Translation Files](devenv-work-with-translation-files.md)|
-|The extension submitted must specify at least one dependency on extensions created by Microsoft.|At least one dependency on an extension published by Microsoft is required in order to compute the minimum release of Business Central targeted by your submission. For more information, see [Computation of Releases for Validation](#versions)|
+|The extension submitted must specify at least one dependency on Application, Base Application, or System Application.|At least one dependency on Application, Base Application, or System Application is required in order to compute the minimum release of Business Central targeted by your submission. For more information, see [Computation of Releases for Validation](#versions)|
 
 <!-- 
 |Permission set(s) must be created by your extension and when marked, should give the user all setup and usage abilities. A user must not be required to have SUPER permissions for setup and usage of your extension.|[Packaging the Permission Set](/powershell/module/microsoft.dynamics.nav.apps.tools/new-navapppackage?view=dynamicsnav-ps-2017)| , [How to: Export Permission Sets](../How-to-Import-Export-Permission-Sets-Permissions.md) |
@@ -130,12 +131,17 @@ The manual test validation document is run manually and if the document doesn't 
 
 ## <a name="versions"></a>Against which releases of Business Central is your submission validated?
 
-Extensions submitted to the AppSource marketplace are validated for all countries specified in the submission against all the release targeted by the submission. As part of the validation, the minimum release for your submission is computed. The extensions are then validated for all releases from this minimum release to the current release in production. For instance, if the minimum release for your submission is 18.0 and the latest minor release in production is 18.3, your submission will be validated against 18.0, 18.1, 18.2, and 18.3.
+Extensions submitted to the AppSource marketplace are validated for all countries specified in the submission against all the release targeted by the submission. As part of the validation, the minimum release for your submission is computed. The extensions are then validated for all releases from this minimum release to the current release in production. For example, if the minimum release for your submission is 18.0 and the latest minor release in production is 18.3, your submission will be validated against 18.0, 18.1, 18.2, and 18.3.
 
-The minimum release for your submission is computed based on the versions `application`, `platform`, and `dependencies` properties specified in the app.json of your extension. The highest version of the dependencies taken on extensions published by Microsoft is used as minimum release version.
+The minimum release for your submission is computed based on the versions `application`, and `dependencies` properties specified in the app.json of your extension. The highest version of the dependencies taken on Application, Base Application, or System Application is used as minimum release version.
 
 > [!NOTE]
 > If multiple extensions are contained in your submission, the minimum release for the submission is the highest minimal release computed for each of the extensions in the submission.
+
+> [!Important]  
+> The minimum release computed for your submission also defines the availability of all the extensions in your submission.
+>
+> For example, if the minimum release computed is 18.1, your extensions will be available starting from release 18.1.
 
 ### Example 1 - Dependency on Application
 
@@ -147,25 +153,15 @@ If your extension's manifest is defined as follows, the minimum release where yo
 }
 ```
 
-Its minimal release version is 18.0.
+The minimum release of the extension is then 18.0.
 
-### Example 2 - Dependency on Application and Platform
-
-If your extension's manifest is defined as follows, the minimum release where your extension can be installed is 17.0 because the manifest requires the `System` symbols to be available with a version higher or equal to 17.0.0.0.
-
-```JSON
-{
-  "application": "17.0.0.0",
-  "platform": "18.0.0.0",
-}
-```
-
-### Example 3 - Explicit dependency on Microsoft extension
+### Example 2 - Dependency on Base Application
 
 If your extension's manifest is defined as follows, the minimum release where your extension can be installed is 17.5 because the manifest requires the `Base Application` extension to be available with a version higher or equal to 17.5.0.0.
 
 ```JSON
 {
+  "application": "17.0.0.0",
   "dependencies":
   [
     {
@@ -177,6 +173,8 @@ If your extension's manifest is defined as follows, the minimum release where yo
   ]
 }
 ```
+
+The minimum release of the extension is then 17.5.
 
 Note that for AppSource extensions, we advise using the `application` property over explicit dependencies on the `Base Application` and `System Application`. For more information, see [The Microsoft_Application.app File](devenv-application-app-file.md) and [AS0085](analyzers/appsourcecop-as0085.md).
 

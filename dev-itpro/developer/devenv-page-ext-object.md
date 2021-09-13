@@ -75,13 +75,13 @@ pageextension 70000020 CustomerCardExtension extends "Customer Card"
 
                 trigger OnValidate();
                 begin
-                    if ShoeSize < 10 then
+                    if (ShoeSize < 10) then
                         Error('Feet too small');
                 end;
             }
         }
 
-        // Modifying the caption of the field 'Address 2'
+        // Modifying the caption of the field 'Address'
         modify("Address 2")
         {
             Caption = 'New Address 2';
@@ -171,11 +171,10 @@ pageextension 50110 CustomerCardExtension extends "Customer Card"
 
                 trigger OnValidate();
                 begin
-                    if ShoeSize < 10 then
+                    if (ShoeSize < 10) then
                         Error('Feet too small');
                 end;
             }
-
             // display-only control (without underlying datasource)
             field(ShoesInStock; 10)
             {
