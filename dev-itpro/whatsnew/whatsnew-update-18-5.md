@@ -20,7 +20,7 @@ Would you like to know what has changed in update 18.5? Below you'll find an ove
 - [Extension validation on upgrade](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/extension-validation-upgrade)
 
 ## Hotfixes
-Find an overview of hotfixes in this [article]().
+Find an overview of hotfixes in this [article](https://support.microsoft.com/help/5006076).
 
 ## Localization updates 
 
