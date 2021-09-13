@@ -54,5 +54,26 @@ Directions EMEA is your opportunity to network with other partners in the Dynami
 Conference details: 
 - October 27-29 in Milan
 - MiCo Milano Convention Center, Piazzale Carlo Magno, 1 – 20149, Milan
-- Event website: https://directions4partners.com/events/directions-emea/
+- Event website: https://directions4partners.com/events/directions-emea/  
 
+**Customer Consent capabilities for all features that exchange data with 3rd party services**  
+Business Central capabilities enable companies to seamlessly integrate with other parties needed to achieve business goals or statutory obligations.
+
+In the Setup pages for each feature interchanging data from Business Central to another service, the user will see a text informing that the affected Business Central data might be shared with third party systems and flowing outside of the organization’s selected geographic boundaries with an option to enable/disable the feature and therefore get even better control of the data share.
+
+Note: if a feature is already enabled and used, to avoid disruptions of ongoing business processes, it will remain enabled until the administrator takes action to disable it.
+
+Features in scope:
+- AMC Banking Fundamentals  
+- EU VAT Reg. No. Validation Service  
+- OCR Services  
+- PayPal Payments Standard  
+- Electronic Invoicing - Tradeshift  
+- Envestnet Yodlee Bank Feeds Service  
+- United Kingdom: Making Tax Digital for VAT Capabilities in Dynamics 365 Business Central  
+- Spain: SII - Invoice and Credit Memo Types in Sales and Purchase Documents  
+- Czech Republic: Core Localization Pack for Czech  
+- Registration number verification  
+- Electronic registration of sales  
+- Currency Exchange Rate  
+- VAT unreliable payer check
