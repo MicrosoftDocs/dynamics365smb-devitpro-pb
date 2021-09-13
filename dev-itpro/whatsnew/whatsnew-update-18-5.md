@@ -19,11 +19,11 @@ Would you like to know what has changed in update 18.5? Below you'll find an ove
 > [!IMPORTANT]  
 > Builds for Business Central in Turkey are delayed. This page will be updated once the builds are live. 
 
-## Feature changes  
-- [Extension validation on upgrade](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/extension-validation-upgrade)
-
 ## Hotfixes
 Find an overview of hotfixes in this [article](https://support.microsoft.com/help/5006076).
+
+## Feature changes  
+- [Extension validation on upgrade](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/extension-validation-upgrade)
 
 ## Localization updates 
 
@@ -31,7 +31,7 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 |-------------|--------------|
 | Mexico | Retention functionality for copied documents when cancelling or creating corrective Sales Credit Memos |
 | Italy | Tax Authority Doc. No. enlarged|
-| Czech Republic | Support for multiple QR-IBAN bank accounts for issuers of QR-Bills|
+| Switzerland | Support for multiple QR-IBAN bank accounts for issuers of QR-Bills|
 
 ## Release Plan
 If you want to get a comprehensive overview of what's new and planned for Business Central online for the entire 2021 release wave 1 (release from April 2021 through September 2021), find the link to the release plan [here](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/planned-features).
