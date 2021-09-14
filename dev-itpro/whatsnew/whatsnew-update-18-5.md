@@ -46,7 +46,7 @@ Make sure to join the office hours call around 'How to use OAuth, when calling B
 
 **Action needed: Client secret-based service to service authentication deprecation for Microsoft hosted tenants integrating to Dataverse**  
 To ensure no disruptions in integration between Business Central and Dataverse you must upgrade your Business Central connection to Dataverse to certificate-based authentication. 
-Although change will happen in March 2022, we strongly recommend you perform steps below as soon as possible.
+Although change will happen in March 2022, we strongly recommend you perform steps outlined in [Upgrade Connections from Business Central Online to Use Certificate-Based Authentication](/dynamics365/business-central/admin-how-to-set-up-a-dynamics-crm-connection#upgrade-connections-from-business-central-online-to-use-certificate-based-authentication) as soon as possible.
 
 **Join Directions EMEA**  
 Directions EMEA is your opportunity to network with other partners in the Dynamics 365 Business Central community, as well as to attend in-depth application, technical, sales & marketing, and executive sessions about Business Central, alongside sessions around Power Platform and Dynamics 365 workloads. Microsoft is sending 50+ staff members to cover all areas of Business Central from product development and support to product overview and future vision. There will be hands-on labs, round tables, and over 100 sessions that will dive into all areas of the product to help partners be more successful. Microsoft will host keynotes, addressing what’s new with Business Central, as well as future roadmap.
