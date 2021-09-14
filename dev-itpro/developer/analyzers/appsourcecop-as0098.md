@@ -23,7 +23,7 @@ An affix is needed.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-- This warning mimics the behaviour of [AS0011](appsourcecop-as0011.md) but it is present for limited objects. Its sole purpose is to serve as a stable middle ground before introducing [AS0011](appsourcecop-as0011.md) for these objects.
+- This warning mimics the behavior of [AS0011](appsourcecop-as0011.md) but it is present for limited objects. Its sole purpose is to serve as a stable middle ground before introducing [AS0011](appsourcecop-as0011.md) for these objects.
 
 - Currently the warning is present for Enum values defined in EnumExtension objects, DataItems, and columns defined in ReportExtension objects.
 
