@@ -230,6 +230,8 @@
 #### [Update user](administration/api/dynamics_user_update.md)
 ### [User group](administration/resources/dynamics_usergroup.md)
 #### [Get user group](administration/api/dynamics_usergroup_get.md)
+#### [Create user group](administration/api/dynamics_usergroup_create.md)
+#### [Delete user group](administration/api/dynamics_usergroup_delete.md)
 #### [Update user group](administration/api/dynamics_usergroup_update.md)
 ### [User group member](administration/resources/dynamics_usergroupmember.md)
 #### [Get user group member](administration/api/dynamics_usergroupmember_get.md)
