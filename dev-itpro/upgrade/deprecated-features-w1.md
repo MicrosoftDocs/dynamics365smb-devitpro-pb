@@ -46,6 +46,14 @@ The following feature will be **Removed** with [!INCLUDE[prod_short](../develope
 
 ## Changes in 2021 release wave 2
 
+### Business Central app for Windows
+
+The Business Central app that's available from the [Microsoft Store](https://go.microsoft.com/fwlink/?LinkId=734848) is no longer supported with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 2.
+
+|Moved, Removed, or Replaced? |Why?|
+|---------|---------|
+|Replaced| The legacy app for Windows was based on Universal Windows Platform (UWP). In it's place, we offer an app that's based on Progressive Web Application (PWA) technology, which a more modern technology that provides a better user experience going forward. The legacy app will still be available on the Windows Store for users running Business Central 2021 release wave 1 or earlier.|
+
 ### Removal of the Business Central Server Administration tool (Warning)
 
 The following feature will be **Removed** in a later release.
