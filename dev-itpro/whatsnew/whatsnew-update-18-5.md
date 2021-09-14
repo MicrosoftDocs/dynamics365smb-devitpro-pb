@@ -61,7 +61,8 @@ Business Central capabilities enable companies to seamlessly integrate with othe
 
 In the Setup pages for each feature interchanging data from Business Central to another service, the user will see a text informing that the affected Business Central data might be shared with third party systems and flowing outside of the organization’s selected geographic boundaries with an option to enable/disable the feature and therefore get even better control of the data share.
 
-Note: if a feature is already enabled and used, to avoid disruptions of ongoing business processes, it will remain enabled until the administrator takes action to disable it.
+> [!NOTE]  
+> If a feature is already made available and used, to avoid disruptions of ongoing business processes, it will remain available until the administrator takes action to turn it off.
 
 Features in scope:
 - AMC Banking Fundamentals  
