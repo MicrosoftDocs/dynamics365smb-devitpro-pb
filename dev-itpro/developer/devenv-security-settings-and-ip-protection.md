@@ -65,6 +65,41 @@ When this is set to `true` in the `app.json` file of extension A, the source cod
 When this is set to `true` in the `app.json` file of extension A, the downloaded symbol file in Visual Studio Code using the **Downloading Symbols** functionality, contains symbols and the source code of extension A.  The default value of `includesourceInSymbolFile` is `false`.
 
 
+## Overriding the resource policy
+ 
+The policy of an extension can be overridden using settings in your extension's keyvault. A secret named `BC-ResourceExposurePolicy-Overrides` must be added to the keyvault, the value of the secret is a JSON file with the following structure. To enable any of the properties for use by an AAD tenant you can add the tenant ID and simply enable that property for the users of the tenant.
+
+```json
+{ 
+
+  "allowDebugging": [ 
+
+    "6d3af255-5ab4-479d-9260-a635f8657c22" 
+
+  ], 
+
+  "allowDownloadingSource": [ 
+
+    "6d3af255-5ab4-479d-9260-a635f8657c22" 
+
+  ], 
+
+  "includeSourceInSymbolFile": [ 
+
+    "6d3af255-5ab4-479d-9260-a635f8657c22" 
+
+  ] 
+
+} 
+
+```
+
+> [!NOTE]  
+> Follow the guideline for keeping your keyvault safe, If the keyvault is used for multiple purposes you can create different policies for access to the overrides secret in keyvault
+ 
+> [!NOTE]  
+> If debugging is enabled dynamically a breakpoint can be set in the protected source code when the debugging session is started.
+
 ## See Also
 
 [JSON Files](devenv-json-files.md)  
