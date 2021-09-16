@@ -55,6 +55,8 @@ If you want to allow debugging into your extension to view the source code, you 
 
 By adding this setting, you *enable debugging* into an extension to view the source code when that extension is set as a dependency.
 
+> [!NOTE]  
+> If debugging is enabled dynamically a breakpoint can be set in the protected source code when the debugging session is started.
 
 ### allowDownloadingSource
 
@@ -99,9 +101,6 @@ The policy of an extension can be overridden by using settings in your extension
 
 ```
  
-> [!NOTE]  
-> If debugging is enabled dynamically a breakpoint can be set in the protected source code when the debugging session is started.
-
 ## See Also
 
 [JSON Files](devenv-json-files.md)  
