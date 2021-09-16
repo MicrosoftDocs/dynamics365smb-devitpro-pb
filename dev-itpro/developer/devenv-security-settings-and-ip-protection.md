@@ -69,14 +69,13 @@ When this is set to `true` in the `app.json` file of extension A, the downloaded
 
 ## Overriding the resource policy
  
-The policy of an extension can be overridden by using settings in your extension's key vault. A secret named `BC-ResourceExposurePolicy-Overrides` must be added to the key vault, the value of the secret is a JSON file with the structure as shown in the example below. To enable one or more of the properties for use by an AAD tenant, you must add the tenant ID to enable that property for the users of the tenant. This enables, temporarily, to grant access to source code, for example, for debugging purposes.
+The policy of an extension can be overridden by using settings in your extension's key vault. A secret named `BC-ResourceExposurePolicy-Overrides` must be added to the key vault, the value of the secret is a .jsonc file with the structure as shown in the example below. To enable one or more of the properties for use by an AAD tenant, you must add the tenant ID to enable that property for the users of the tenant. This enables, temporarily, to grant access to source code, for example, for debugging purposes.
 
 > [!NOTE]  
 > Follow the guidelines for keeping your key vault safe. If the key vault is used for multiple purposes you can create different policies for access to the overrides secret in key vault. For more information, see [Using Key Vault Secrets in Business Central Extensions](devenv-app-key-vault.md).
 
 
 ```json
-"resourceExposurePolicy":
 { 
 
   "allowDebugging": [ 
@@ -96,8 +95,6 @@ The policy of an extension can be overridden by using settings in your extension
     "6d3af255-5ab4-479d-9260-a635f8657c22" 
 
   ] 
-
-} 
 
 ```
  
