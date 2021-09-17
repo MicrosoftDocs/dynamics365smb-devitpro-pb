@@ -66,6 +66,10 @@ codeunit 50143 NoDebuggingOfVar
 }
 
 ```
+
+## Remarks
+
+Regardless of the resource exposure policy setting, methods and variables marked with the `[NonDebuggable]` attribute, will remain non-debuggable. For more information, see [Security Setting and Resource Exposure Policy](../devenv-security-settings-and-ip-protection.md).
   
 ## See Also  
 

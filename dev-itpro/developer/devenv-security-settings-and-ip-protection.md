@@ -36,7 +36,7 @@ When you start a new project, an `app.json` file is generated automatically, whi
 
 To allow debugging into your extension, when the extension is taken as a dependency, you must set the `allowDebugging` flag, otherwise debugging and **Go to Definition** to view the code is now allowed. The default value of `allowDebugging` is `false`.
 
-For a more refined setting, you can specify the `NonDebuggable` attribute on methods and variables. For more information, see [NonDebuggable Attribute](attributes/devenv-nondebuggable-attribute.md).
+For a more refined setting, you can specify the `NonDebuggable` attribute on methods and variables. Regardless of the resource exposure policy setting, methods and variables marked with the `[NonDebuggable]` attribute, will remain non-debuggable. For more information, see [NonDebuggable Attribute](attributes/devenv-nondebuggable-attribute.md).
 
 If you want to allow debugging into your extension to view the source code, you can add the `allowDebugging` property in the `app.json` file and set the property value to **true**. For example, if a developer develops extension A and he or someone else on the team develops extension B, and B depends on A, then debugging B will only step into the code for A if a method from A is called and if the `allowDebugging` flag is set to **true** in the app.json for extension A as shown in the example below. By adding this setting, you *enable debugging* into an extension to view the source code when that extension is set as a dependency.
 
@@ -87,25 +87,16 @@ The policy of an extension can be overridden by using settings in your extension
 
 ```json
 { 
-
   "allowDebugging": [ 
-
     "6d3af255-5ab4-479d-9260-a635f8657c22" 
-
   ], 
-
   "allowDownloadingSource": [ 
-
     "6d3af255-5ab4-479d-9260-a635f8657c22" 
-
   ], 
-
   "includeSourceInSymbolFile": [ 
-
     "6d3af255-5ab4-479d-9260-a635f8657c22" 
-
   ] 
-
+}
 ```
 
 > [!NOTE]  
@@ -113,7 +104,7 @@ The policy of an extension can be overridden by using settings in your extension
 
 ### Partner telemetry
 
-Specifying the `applicationInsightsConnectionString` setting for your extension, in the app.json file, enables a signal to be sent every time the policy is read from the key vault. For more information, see [Sending Extension Telemetry to Azure Application Insights](devenv-application-insights-for-extensions.md).
+Specifying the `applicationInsightsConnectionString` setting for your extension, in the `app.json` file, enables a signal to be sent every time the policy is read from the key vault. For more information, see [Sending Extension Telemetry to Azure Application Insights](devenv-application-insights-for-extensions.md).
 
 ```json
 "applicationInsightsConnectionString": "MyConnectionString1234"
