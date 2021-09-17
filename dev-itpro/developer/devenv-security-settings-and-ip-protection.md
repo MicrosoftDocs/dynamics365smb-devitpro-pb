@@ -79,7 +79,7 @@ When this is set to `true` in the `app.json` file of extension A, the downloaded
 
 ## Overriding the resource policy
  
-The policy of an extension can be overridden by using settings in your extension's key vault. A secret named `BC-ResourceExposurePolicy-Overrides` must be added to the key vault, the value of the secret is a .jsonc file with the structure as shown in the example below. To enable one or more of the properties for use by an AAD tenant, you must add the tenant ID to enable that property for the users of the tenant. This enables, temporarily, to grant access to source code, for example, for debugging purposes.
+The policy of an extension can be overridden by using settings in your extension's key vault. A secret named `BC-ResourceExposurePolicy-Overrides` must be added to the key vault, the value of the secret is a .json file with the structure as shown in the example below. To enable one or more of the properties for use by an AAD tenant, you must add the tenant ID to enable that property for the users of the tenant. This enables, temporarily, to grant access to source code, for example, for debugging purposes.
 
 > [!NOTE]  
 > Follow the guidelines for keeping your key vault safe. If the key vault is used for multiple purposes you can create different policies for access to the overrides secret in key vault. For more information, see [Using Key Vault Secrets in Business Central Extensions](devenv-app-key-vault.md).
@@ -111,10 +111,13 @@ The policy of an extension can be overridden by using settings in your extension
 > [!NOTE]  
 > If debugging is enabled dynamically a breakpoint can be set in the protected source code when the debugging session is started.
 
-### Partner Telemetry
+### Partner telemetry
 
-If the application insights setting is set for your extension, a signal is sent every time the policy is read from the key vault. 
- 
+Specifying the `applicationInsightsConnectionString` setting for your extension, in the app.json file, enables a signal to be sent every time the policy is read from the key vault. For more information, see [Sending Extension Telemetry to Azure Application Insights](devenv-application-insights-for-extensions.md).
+
+```json
+"applicationInsightsConnectionString": "MyConnectionString1234"
+```
  
 ## See Also
 
