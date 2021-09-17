@@ -34,9 +34,15 @@ When you start a new project, an `app.json` file is generated automatically, whi
 
 ### allowDebugging
 
-To allow debugging into your extension, when the extension is taken as a dependency, you must set the `allowDebugging` flag to `true`, otherwise debugging and **Go to Definition** to view the code is now allowed. The default value of `allowDebugging` is `false`.
+To allow debugging into your extension, when the extension is taken as a dependency, you must set the `allowDebugging` flag, otherwise debugging and **Go to Definition** to view the code is now allowed. The default value of `allowDebugging` is `false`.
 
 For a more refined setting, you can specify the `NonDebuggable` attribute on methods and variables. For more information, see [NonDebuggable Attribute](attributes/devenv-nondebuggable-attribute.md).
+
+If you want to allow debugging into your extension to view the source code, you can add the `allowDebugging` property in the `app.json` file and set the property value to **true**. For example, if a developer develops extension A and he or someone else on the team develops extension B, and B depends on A, then debugging B will only step into the code for A if a method from A is called and if the `allowDebugging` flag is set to **true** in the app.json for extension A as shown in the example below. By adding this setting, you *enable debugging* into an extension to view the source code when that extension is set as a dependency.
+
+```json
+`"resourceExposurePolicy": {"allowDebugging": true}`
+```
 
 > [!NOTE]  
 > `allowDebugging` does not apply to [Profiles](devenv-profile-object.md), [Page Customizations](devenv-page-customization-object.md) and [Views](devenv-views.md), because these objects cannot define any custom logic in procedures or triggers. The code for Profiles, Page Customizations, and Views defined in an extension with `allowDebugging` set to **false** can still be accessed and copied using [Designer](devenv-inclient-designer.md).
@@ -45,23 +51,30 @@ For a more refined setting, you can specify the `NonDebuggable` attribute on met
 > Even though `allowDebugging` is set to **false**, you will still be able to view that code if an extension is deployed through Visual Studio Code, as opposed to deploying using a cmdlet or via AppSource.
 
 
-#### Changing the allow debugging setting
-
-If you want to allow debugging into your extension to view the source code, you can add the `allowDebugging` property in the `app.json` file and set the property value to **true**. For example, if a developer develops extension A and he or someone else on the team develops extension B, and B depends on A, then debugging B will only step into the code for A if a method from A is called and if the `allowDebugging` flag is set to **true** in the app.json for extension A as shown in the example below:
-
-```json
-`"resourceExposurePolicy": {"allowDebugging": true}`
-```
-
-By adding this setting, you *enable debugging* into an extension to view the source code when that extension is set as a dependency.
-
 ### allowDownloadingSource
 
-When this is set to `true` in the `app.json` file of extension A, the source code of extension A can be downloaded, for example, from the **Download Source** option in the **Extension Management** page in [!INCLUDE[prod_short](includes/prod_short.md)].  The default value of `allowDownloadingSource` is `false`.
+When this is set to `true` in the `app.json` file of extension A, the source code of extension A can be downloaded, for example, from the **Download Source** option in the **Extension Management** page in [!INCLUDE[prod_short](includes/prod_short.md)]. The default value of `allowDownloadingSource` is `false`.
 
 ### includeSourceInSymbolFile
 
-When this is set to `true` in the `app.json` file of extension A, the downloaded symbol file in Visual Studio Code using the **Downloading Symbols** functionality, contains symbols and the source code of extension A.  The default value of `includesourceInSymbolFile` is `false`.
+When this is set to `true` in the `app.json` file of extension A, the downloaded symbol file in Visual Studio Code using the **Downloading Symbols** functionality, contains symbols and the source code of extension A. The default value of `includesourceInSymbolFile` is `false`.
+
+### Example JSON file
+
+```json
+...
+"resourceExposurePolicy": {
+    "allowDebugging": true, 
+    "allowDownloadingSource": true, 
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "8.0",
+  "keyVaultUrls": [
+    "https://mykeyvault.vault.azure.net"
+  ],
+  "applicationInsightsConnectionString": "MyConnectionString1234"
+...
+```
 
 
 ## Overriding the resource policy
