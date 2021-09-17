@@ -55,9 +55,6 @@ If you want to allow debugging into your extension to view the source code, you 
 
 By adding this setting, you *enable debugging* into an extension to view the source code when that extension is set as a dependency.
 
-> [!NOTE]  
-> If debugging is enabled dynamically a breakpoint can be set in the protected source code when the debugging session is started.
-
 ### allowDownloadingSource
 
 When this is set to `true` in the `app.json` file of extension A, the source code of extension A can be downloaded, for example, from the **Download Source** option in the **Extension Management** page in [!INCLUDE[prod_short](includes/prod_short.md)].  The default value of `allowDownloadingSource` is `false`.
@@ -97,6 +94,14 @@ The policy of an extension can be overridden by using settings in your extension
   ] 
 
 ```
+
+> [!NOTE]  
+> If debugging is enabled dynamically a breakpoint can be set in the protected source code when the debugging session is started.
+
+### Partner Telemetry
+
+If the application insights setting is set for your extension, a signal is sent every time the policy is read from the key vault. 
+ 
  
 ## See Also
 
