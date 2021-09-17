@@ -47,10 +47,10 @@ If you want to allow debugging into your extension to view the source code, you 
 ```
 
 > [!NOTE]  
-> `allowDebugging` does not apply to [Profiles](devenv-profile-object.md), [Page Customizations](devenv-page-customization-object.md) and [Views](devenv-views.md), because these objects cannot define any custom logic in procedures or triggers. The code for Profiles, Page Customizations, and Views defined in an extension with `allowDebugging` set to **false** can still be accessed and copied using [Designer](devenv-inclient-designer.md).
+> `allowDebugging` does not apply to [Profiles](devenv-profile-object.md), [Page Customizations](devenv-page-customization-object.md) and [Views](devenv-views.md), because these objects cannot define any custom logic in procedures or triggers. The code for Profiles, Page Customizations, and Views defined in an extension with `allowDebugging` set to `false` can still be accessed and copied using [Designer](devenv-inclient-designer.md).
 
 > [!NOTE]  
-> Even though `allowDebugging` is set to **false**, you will still be able to view that code if an extension is deployed through Visual Studio Code, as opposed to deployed using a cmdlet or via AppSource.
+> Even though `allowDebugging` is set to `false`, you will still be able to view that code if an extension is deployed through Visual Studio Code, as opposed to deployed using a cmdlet or via AppSource.
 
 ### allowDownloadingSource
 
