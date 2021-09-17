@@ -14,6 +14,8 @@ ms.author: solsen
 
 # Security Setting and Resource Exposure Policy
 
+[!INCLUDE[2021_releasewave2_changed](../includes/2021_releasewave2_changed.md)]
+
 When developing an extension, your code is by default protected against downloading or debugging. Read below about the security setting and adding Intellectual Property (IP) protection against downloading or debugging into an extension to see the source code in the extensions.
 
 The extension development package provides a pre-configured setting for protection against viewing or downloading the code of the extensions. However, this setting can also be controlled in the manifest; the `app.json` file.
