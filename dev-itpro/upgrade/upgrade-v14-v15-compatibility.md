@@ -118,7 +118,7 @@ The following table lists the Business Central 17 versions and the minimum 18 ve
 |----------|----------|
 |17.0 to 17.5|18.0|
 |[17.6](https://support.microsoft.com/help/5001735)|[18.1](https://support.microsoft.com/help/5003475)|
-|[17.7](https://support.microsoft.com/help/5003474)|[18.3](https://support.microsoft.com/help/5004715|
+|[17.7](https://support.microsoft.com/help/5003474)|[18.3](https://support.microsoft.com/help/5004715)|
 |[17.8](https://support.microsoft.com/help/5004716)|[18.4](https://support.microsoft.com/help/5005375)|
 |[17.9](https://support.microsoft.com/help/5005374)|[18.5](https://support.microsoft.com/help/5006076)|
 |[17.10](https://support.microsoft.com/help/5004716)<sup>[\[1\]](#1)</sup>|18.6|
