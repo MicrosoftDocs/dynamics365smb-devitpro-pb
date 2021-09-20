@@ -550,12 +550,13 @@ During the synchronization process, certain events are published and raised by c
 |**OnAfterInsertRecord**|Occurs after a new destination record is inserted, and can be used to perform post-insert operations such as updating related data.|  
 |**OnBeforeModifyRecord**|Occurs before modifying an existing destination record, and can be used to validate or change data before modification.|  
 |**OnAfterModifyRecord**|Occurs after an existing destination record is modified, and can be used to perform post-modify operations such as updating related data.|  
-|**OnTransferFieldData**|Occurs before an existing destination field value is transferred to a source field, and can be used to perform specific transformations of data when the data types of the source and the destination field are different but can be mapped.|  
+|**OnTransferFieldData**|Occurs before an existing destination field value is transferred to a source field, and can be used to perform specific transformations of data when the data types of the source and the destination field are different but can be mapped.|
+|**OnGetBlobFieldEncoding**|Occurs when the process must read or write a BLOB field in [!INCLUDE[prod_short](../includes/prod_short.md)] while synchronizing the field with a multiline text field in Dataverse. Use this event to specify the encoding of the text value in the BLOB field if it differs from the default encoding, which is TextEncoding::UTF8.|  
 
 For more information about how to subscribe to events, see [Subscribing to Events](../developer/devenv-subscribing-to-events.md).
 
 > [!TIP]  
-> In order to have Company ID mapping for custom tables just like the base [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] tables, users can subscribe to the **OnBeforeInsertRecord** event in codeunit **Integration Rec. Synch. Invoke** (ID 5345), as follows:
+> To get the same Company ID mapping for custom tables as the base [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] tables, subscribe to the **OnBeforeInsertRecord** event in codeunit **Integration Rec. Synch. Invoke** (ID 5345), as follows:
 > ```al
 >   [EventSubscriber(ObjectType::Codeunit, Codeunit::"Integration Rec. Synch. Invoke", 'OnBeforeInsertRecord', '', false, false)]
 >   local procedure HandleOnBeforeInsertRecord(SourceRecordRef: RecordRef; DestinationRecordRef: RecordRef)
