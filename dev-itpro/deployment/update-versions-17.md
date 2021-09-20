@@ -6,7 +6,7 @@ ms.custom: na
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
-ms.date: 07/01/2021
+ms.date: 09/01/2021
 ---
 
 # Dynamics 365 Business Central On-Premises 2020 Release Wave 2 Updates
@@ -27,6 +27,8 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 
 |Knowledge Base ID                                           |Title                |Release date  |Build No. |
 |------------------------------------------------------------|---------------------|--------------|----------|
+|[5006075](https://support.microsoft.com/help/5006075)|Update 17.10 |September 2021|Application Build 17.10.29463</br>Platform Build 17.0.29460|
+|[5005374](https://support.microsoft.com/help/5005374)|Update 17.9 |August 2021|Application Build 17.9.28504</br>Platform Build 17.0.28458|
 |[5004716](https://support.microsoft.com/help/5004716)|Update 17.8 |July 2021|Application Build 17.8.27267</br>Platform Build 17.0.27235|
 |[5003474](https://support.microsoft.com/help/5003474)|Update 17.7 |June 2021|Application Build 17.7.26453</br>Platform Build 17.0.26427|
 |[5001735](https://support.microsoft.com/help/5001735)|Update 17.6 |April 2021|Application Build 17.6.23727</br>Platform Build 17.0.23708|

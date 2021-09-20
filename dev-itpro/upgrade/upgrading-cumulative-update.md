@@ -93,13 +93,20 @@ To upgrade to the latest platform, the database must be converted by using the D
 
     For more information about syncing, see [Synchronizing the Tenant Database and Application Database](../administration/synchronize-tenant-database-and-application-database.md).
 
+10. <a name="uploadlicense"></a>Upload the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Partner license to the database.  
+
+    For more information, see [Uploading a License File for a Specific Database](../cside/cside-upload-license-file.md#UploadtoDatabase).  
+
+    > [!IMPORTANT]
+    > The license that you upload must be a developer license. During the conversion, the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] will convert the report objects that are stored in the old database to the RDL format.
+
 ## Update the application
 
 The APPLICATION folder includes the following files:
-- AccumulatedChangeLog.<Locale>.<Build No.>.txt
-- Changelog.<Locale>.<Build No.>.txt
-- CUObjects.<Locale>.<Build No.>.fob
-- Objects.<Locale>.Objects.<Locale>.<Build No.>.txt
+- `AccumulatedChangeLog.<Locale>.<Build No.>.txt`
+- `Changelog.<Locale>.<Build No.>.txt`
+- `CUObjects.<Locale>.<Build No.>.fob`
+- `Objects.<Locale>.Objects.<Locale>.<Build No.>.txt`
 
 Using [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] for [!INCLUDE[prod_short](../developer/includes/prod_short.md)], complete one of the following tasks.
 
@@ -109,25 +116,25 @@ Using [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] for 
 ### Update an unmodified application to the Business Central cumulative update objects
 
 1. Open the database in the [!INCLUDE[nav_dev_short_md](../developer/includes/nav_dev_short_md.md)].
-2. Import the CUObjects.<Locale>.<Build No.>.fob  into the application database.
+2. Import the `CUObjects.<Locale>.<Build No.>.fob` into the application database.
 
     For more information, see [Importing Objects](../cside/cside-import-objects.md).
 3. Replace the existing objects in the database with the cumulative update objects.
 
 ### Update a modified application to the Business Central cumulative update objects
 
-1. Import the CUObjects.<Locale>.<Build No.>.fob into the application database.
+1. Import the `CUObjects.<Locale>.<Build No.>.fob` into the application database.
 
     For more information, see [Importing Objects](../cside/cside-import-objects.md).
 2. When prompted, open the **Import Worksheet**, and review the information.
     1. Replace objects in the database that have NOT been modified.
     2. If a table in the cumulative update has a new field and the same table in your database has been modified, use the **Merge: Existing<-New** or **Merge: New<-Existing** option in the **Import Worksheet** to import the new fields.
-    3. For other objects that have been modified, use the CUObjects.<Locale>.<Build No.>.txt file to compare and merge the cumulative update objects with the objects in your database.
+    3. For other objects that have been modified, use the `CUObjects.<Locale>.<Build No.>.txt` file to compare and merge the cumulative update objects with the objects in your database.
 
         For more information about the worksheet, see [Import Worksheet](../cside/cside-import-worksheet.md).
 
         > [!NOTE]
-        > If you don't want to use the Worksheet, you can use the Changelog.<Locale>.<Build No.>.txt file to manually apply the changes to the objects in your database.
+        > If you don't want to use the Worksheet, you can use the `Changelog.<Locale>.<Build No.>.txt` file to manually apply the changes to the objects in your database.
 
 ### Updating from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] October 2018 DE Cumulative Update 2 or earlier
 
@@ -195,6 +202,10 @@ The general steps for this task are listed below. For detailed steps, see [Publi
 6. Repair, synchronize, and install any custom extensions (third-party) that are currently published. Do this step for old extensions that you still want to use.
 
     This step ensures that the extensions work on the new platform and application versions.
+
+## Import the customer license
+
+Import the customer license as you did with the partner license. For more information, see [Uploading a License File for a Specific Database](../cside/cside-upload-license-file.md#UploadtoDatabase).  
 
 ## See Also
 
