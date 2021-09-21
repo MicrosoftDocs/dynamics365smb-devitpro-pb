@@ -551,7 +551,7 @@
 ### [FAQ for Developing in AL](developer/devenv-dev-faq.md)
 ### Code Analysis
 #### [Using the Code Analysis Tool](developer/devenv-using-code-analysis-tool.md)
-#### AL Compiler Diagnostics
+#### [AL Compiler Diagnostics](developer/diagnostics/diagnostics-overview.md)
 <!-- [//]: # (START>DO_NOT_EDIT_DIAGNOSTICS)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.) -->
