@@ -81,3 +81,4 @@ By coding against this property, you can use this property as a way to communica
 [ObsoleteReason Property](devenv-obsoletereason-property.md)  
 [Properties](devenv-properties.md)  
 [Upgrade Codeunits](../devenv-methodtype-property-upgrade-codeunits.md)  
+[Obsolete Attribute](../attributes/devenv-obsolete-attribute.md)  
