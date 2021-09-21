@@ -3,7 +3,7 @@ title: "AL Diagnostics"
 description: ""
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/21/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -115,7 +115,7 @@ author: SusanneWindfeldPedersen
 |[AL196](diagnostic-al196.md)|The call is ambiguous between the method '{0}' defined in {1} '{2}' by the extension '{3}' and the method '{4}' defined in {5} '{6}' by the extension '{7}'.|Error|
 |[AL197](diagnostic-al197.md)|An application object of type '{0}' with name '{1}' is already declared by the extension '{2}'.|Error|
 |[AL198](diagnostic-al198.md)|Expected one of the application object keywords ({0}).|Error|
-|[AL199](diagnostic-al199.md)|The type of the sum index field '{0}' must be numeric(Decimal, BigInteger, Integer, or Duration) .|Error|
+|[AL199](diagnostic-al199.md)|The type of the sum index field '{0}' must be numeric(Decimal, BigInteger, Integer, or Duration).|Error|
 |[AL200](diagnostic-al200.md)|Property '{0}' is obsolete and will be removed in a future version.|Warning|
 |[AL201](diagnostic-al201.md)|The {0} FlowField is not a Boolean field. If a FlowField CalcFormula starts with 'Exist', then the FlowField must be a Boolean type field.|Error|
 |[AL202](diagnostic-al202.md)|The {0} FlowField is not an Integer field. If a FlowField CalcFormula starts with 'Count', then the FlowField must be an Integer type field.|Error|
@@ -166,11 +166,11 @@ author: SusanneWindfeldPedersen
 |[AL255](diagnostic-al255.md)|Property '{0}' requires an application object reference for the 'RunObject' property.|Error|
 |[AL256](diagnostic-al256.md)|The flowfield '{0}' cannot be part of the keys for table '{1}'.|Error|
 |[AL257](diagnostic-al257.md)|Constant value '{0}' is outside the range for a DateTime data type, only 0 is valid.|Error|
-|[AL259](diagnostic-al259.md)|A SQLIndex defined for the primary key must contain the same fields as the key for table '{0}'.    .|Error|
-|[AL260](diagnostic-al260.md)|The key '{0}' on table '{1}' cannot start with the fields defined for the primary key. The server will append these to any alternate key.    .|Error|
+|[AL259](diagnostic-al259.md)|A SQLIndex defined for the primary key must contain the same fields as the key for table '{0}'.|Error|
+|[AL260](diagnostic-al260.md)|The key '{0}' on table '{1}' cannot start with the fields defined for the primary key. The server will append these to any alternate key.|Error|
 |[AL261](diagnostic-al261.md)|The identifier '{0}' can only be specified in the list once.|Error|
-|[AL262](diagnostic-al262.md)|The clustered key '{0}' has already been defined for table '{1}'.    .|Error|
-|[AL263](diagnostic-al263.md)|The primary key '{0}' on table '{1}' (the first one in the key list) must be enabled.    .|Error|
+|[AL262](diagnostic-al262.md)|The clustered key '{0}' has already been defined for table '{1}'.|Error|
+|[AL263](diagnostic-al263.md)|The primary key '{0}' on table '{1}' (the first one in the key list) must be enabled.|Error|
 |[AL264](diagnostic-al264.md)|An application object of type '{0}' with ID '{1}' is already declared by the extension '{2}'.|Error|
 |[AL266](diagnostic-al266.md)|Pages of types 'CardPart' and 'ListPart' can only contain Processing areas.|Error|
 |[AL267](diagnostic-al267.md)|Actions are not allowed on the control type.|Error|
@@ -201,7 +201,7 @@ author: SusanneWindfeldPedersen
 |[AL293](diagnostic-al293.md)|Property value {0} is not in the field's OptionMembers.|Error|
 |[AL294](diagnostic-al294.md)|The type of property value {0} does not match the field’s type.|Error|
 |[AL295](diagnostic-al295.md)|The field '{0}' is not found in the target '{1}'.|Error|
-|[AL296](diagnostic-al296.md)|The application object or method '{0}' has scope '{1}' and cannot be used for '{2}' development. For more information, see [Compilation Scope Overview](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-compilation-scope-overview).|Error|
+|[AL296](diagnostic-al296.md)|The application object or method '{0}' has scope '{1}' and cannot be used for '{2}' development. For more information, see: https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-compilation-scope-overview.|Error|
 |[AL297](diagnostic-al297.md)|The application object identifier '{0}' is not valid. It must be within the allowed ranges '{1}'.|Error|
 |[AL298](diagnostic-al298.md)|The data type of the expression assigned to the 'StyleExpr' property is not valid. Valid data types are Boolean, Text, or Code.|Error|
 |[AL299](diagnostic-al299.md)|Member name '{0}' is only allowed on triggers.|Warning (Future Error)|
@@ -210,10 +210,10 @@ author: SusanneWindfeldPedersen
 |[AL302](diagnostic-al302.md)|Cannot use '{0}' in {1} '{2}' before it is declared.|Error|
 |[AL303](diagnostic-al303.md)|Attributes can only be defined on variables and methods.|Error|
 |[AL304](diagnostic-al304.md)|Length of the identifier '{0}' cannot exceed {1} characters.|Error|
-|[AL305](diagnostic-al305.md)|Length of the application object identifier '{0}' cannot exceed {1} characters.|Error|
+|[AL305](diagnostic-al305.md)|The length of the application object identifier '{0}' cannot exceed {1} characters.|Error|
 |[AL306](diagnostic-al306.md)|A field list has to contain at least one field.|Error|
 |[AL307](diagnostic-al307.md)|Property value cannot be validated because the source table is unreachable.|Error|
-|[AL308](diagnostic-al308.md)|The primary key '{0}' on table '{1}' (the first one in the key list) must have the MaintainSqlIndex property set to true.    .|Error|
+|[AL308](diagnostic-al308.md)|The primary key '{0}' on table '{1}' (the first one in the key list) must have the MaintainSqlIndex property set to true.|Error|
 |[AL309](diagnostic-al309.md)|Table '{0}' contains too many keys.|Error|
 |[AL310](diagnostic-al310.md)|An instance is required for the non-static member '{0}'.|Error|
 |[AL311](diagnostic-al311.md)|Member '{0}' cannot be accessed with an instance reference; qualify it with '{1}' instead.|Error|
@@ -383,14 +383,14 @@ author: SusanneWindfeldPedersen
 |[AL486](diagnostic-al486.md)|A member of type {0} with name '{1}' is already defined in {2} '{3}' by the extension '{4}'.|Warning (Future Error)|
 |[AL487](diagnostic-al487.md)|The field '{0}' is not of field class 'Normal' and thus cannot be part of the {1} list.|Error|
 |[AL488](diagnostic-al488.md)|ControlAddIn name must not contain characters {0}.|Error|
-|[AL489](diagnostic-al489.md)|The property expression is not valid. A CONST or FILTER expression is expected. .|Error|
-|[AL490](diagnostic-al490.md)|The property expression is not valid. A CONST, FIELD, or FILTER expression is expected. .|Error|
-|[AL491](diagnostic-al491.md)|The property expression is not valid. One of the following expressions is expected : CONST,FIELD,FILTER,FIELD(FILTER(Identifier)),FIELD(UPPERLIMIT(Identifier)),or FIELD(UPPERLIMIT(FILTER(Identifier))).    .|Error|
+|[AL489](diagnostic-al489.md)|The property expression is not valid. A CONST or FILTER expression is expected.|Error|
+|[AL490](diagnostic-al490.md)|The property expression is not valid. A CONST, FIELD, or FILTER expression is expected.|Error|
+|[AL491](diagnostic-al491.md)|The property expression is not valid. One of the following expressions is expected : CONST,FIELD,FILTER,FIELD(FILTER(Identifier)),FIELD(UPPERLIMIT(Identifier)),or FIELD(UPPERLIMIT(FILTER(Identifier))).|Error|
 |[AL492](diagnostic-al492.md)|The RunObject property value of actions defined in the '{0}' area must only reference pages of type 'List'.|Error|
 |[AL493](diagnostic-al493.md)|The RunObject property value of actions defined in the '{0}' area must only reference pages of type 'List'.|Warning (Future Error)|
 |[AL494](diagnostic-al494.md)|The action area '{0}' can only directly contain groups.|Error|
 |[AL495](diagnostic-al495.md)|A member with ID '{0}' is already defined. Change the member name to generate a new ID.|Error|
-|[AL496](diagnostic-al496.md)|Attributes cannot be defined in this context. .|Error|
+|[AL496](diagnostic-al496.md)|Attributes cannot be defined in this context.|Error|
 |[AL498](diagnostic-al498.md)|The attribute '{0}' can only be used on procedures that have the attribute '{1}'.|Error|
 |[AL499](diagnostic-al499.md)|The handler function {0} was not found. Make sure the procedure is defined and has a handler attribute.|Error|
 |[AL500](diagnostic-al500.md)|The HandlerFunctions attribute only accepts a string representing a comma separated list of procedure names without spaces.|Error|
@@ -399,7 +399,7 @@ author: SusanneWindfeldPedersen
 |[AL503](diagnostic-al503.md)|Reference '{0}' in application object '{1}' is ambiguous.|Error|
 |[AL504](diagnostic-al504.md)|The enum '{0}' is not extensible.|Error|
 |[AL505](diagnostic-al505.md)|Pages of type API must have the DelayedInsert property set to true, unless the 'Editable' property or the 'InsertAllowed' property is set to false.|Error|
-|[AL509](diagnostic-al509.md)|Constant value '{0}' is outside of the valid ordinal range for this {1} type.|Warning|
+|[AL509](diagnostic-al509.md)|Constant value '{0}' is outside of the valid ordinal range for this option type.|Warning|
 |[AL510](diagnostic-al510.md)|The .NET type '{0}' is not a valid control add-in.|Error|
 |[AL511](diagnostic-al511.md)|The property 'IsControlAddIn' must be set on the .NET type '{0}' if the type represents a .NET control add-in.|Error|
 |[AL512](diagnostic-al512.md)|The manifest should define the 'supportedLocales' manifest property in order to use a placeholder in the '{0}' property.|Error|
@@ -411,7 +411,7 @@ author: SusanneWindfeldPedersen
 |[AL518](diagnostic-al518.md)|A method with name '{0}' possessing one Handler attribute is already defined in this test codeunit.|Error|
 |[AL519](diagnostic-al519.md)|'{0}' is not valid value in this context.|Error|
 |[AL520](diagnostic-al520.md)|{0} '{1}' is removed. {2}.|Warning|
-|[AL521](diagnostic-al521.md)|The primary key '{0}' on table '{1}' (the first one in the key list) must not have the Unique property set.    .|Error|
+|[AL521](diagnostic-al521.md)|The primary key '{0}' on table '{1}' (the first one in the key list) must not have the Unique property set.|Error|
 |[AL522](diagnostic-al522.md)|Property value {0} is not in the values for enum '{1}'.|Error|
 |[AL523](diagnostic-al523.md)|The '{0}' already defines a method called '{1}' with the same parameter types in '{2}'.|Warning (Future Error)|
 |[AL524](diagnostic-al524.md)|The base type already defines a method called '{0}' with the same parameter types.|Warning (Future Error)|
@@ -546,7 +546,7 @@ author: SusanneWindfeldPedersen
 |[AL656](diagnostic-al656.md)|The {0} '{1}' cannot be used as an anchor because it is already defined in the same '{2}'.|Error|
 |[AL657](diagnostic-al657.md)|The property {0} is mandatory for ListParts and PageParts.|Error|
 |[AL658](diagnostic-al658.md)|Member name '{0}' is only allowed on triggers.|Error|
-|[AL659](diagnostic-al659.md)|Length of the application object identifier '{0}' cannot exceed {1} characters.|Warning (Future Error)|
+|[AL659](diagnostic-al659.md)|The length of the enum identifier '{0}' should not exceed {1} characters as it may result in runtime issues in cases where there are other enums with the same first {1} characters.|Warning|
 |[AL665](diagnostic-al665.md)|'{0}' is not a valid return type in runtime version '{1}'. The supported runtime versions are: {2}.|Error|
 |[AL666](diagnostic-al666.md)|'{0}' is not available in runtime version '{1}'. The supported runtime versions are: {2}.|Error|
 |[AL667](diagnostic-al667.md)|'{0}' is being deprecated in the versions: {1} {2}.|Warning (Future Error)|
@@ -563,12 +563,17 @@ author: SusanneWindfeldPedersen
 |[AL682](diagnostic-al682.md)|A DataItem or Column with name '{0}' could not be found in the target {1}.|Error|
 |[AL683](diagnostic-al683.md)|The permissionset '{0}' belongs to a different module and cannot be used when defining entitlements.|Error|
 |[AL684](diagnostic-al684.md)|The permissionset '{0}' contains permissionsets or permission for objects from other module. Permissions on objects from other modules will be ignored.|Warning|
-|[AL685](diagnostic-al685.md)|The length '{0}' of the calculation formula's target field '{1}' is greater than the length '{2}' of the source flow field '{3}'. This could result in a runtime error. Please make sure that the target field's length is less than equal to the source field length. .|Warning (Future Error)|
+|[AL685](diagnostic-al685.md)|The length '{0}' of the calculation formula's target field '{1}' is greater than the length '{2}' of the source flow field '{3}'. This could result in a runtime error. 
+Please make sure that the target field's length is less than equal to the source field length.|Warning (Future Error)|
 |[AL686](diagnostic-al686.md)|The base type already defines a method called '{0}' with the same parameter types.|Error|
-|[AL687](diagnostic-al687.md)|The key '{0}' on table '{1}' cannot contain the fields defined for the primary key in the IncludeFields property.    .|Error|
-|[AL688](diagnostic-al688.md)|The key '{0}' on table '{1}' cannot contain the fields defined for the key in the IncludeFields property.    .|Error|
-|[AL689](diagnostic-al689.md)|The key '{0}' on table '{1}' cannot contain the fields defined for the SqlIndex in the IncludeFields property.    .|Error|
-|[AL690](diagnostic-al690.md)|The primary key '{0}' on table '{1}' (the first one in the key list) must not have the IncludedFields property set.    .|Error|
+|[AL687](diagnostic-al687.md)|The key '{0}' on table '{1}' cannot contain the fields defined for the primary key in the IncludeFields property.|Error|
+|[AL688](diagnostic-al688.md)|The key '{0}' on table '{1}' cannot contain the fields defined for the key in the IncludeFields property.|Error|
+|[AL689](diagnostic-al689.md)|The key '{0}' on table '{1}' cannot contain the fields defined for the SqlIndex in the IncludeFields property.|Error|
+|[AL690](diagnostic-al690.md)|The primary key '{0}' on table '{1}' (the first one in the key list) must not have the IncludedFields property set.|Error|
+|[AL691](diagnostic-al691.md)|The primary key '{0}' on table '{1}' cannot be obsolete. All related properties will have no effect.|Error|
+|[AL692](diagnostic-al692.md)|The primary key '{0}' on table '{1}' cannot be obsolete. All related properties will have no effect.|Warning (Future Error)|
+|[AL693](diagnostic-al693.md)|The field '{0}' which is part of the primary key of table '{1}' cannot be obsolete. All related properties will have no effect.|Error|
+|[AL694](diagnostic-al694.md)|The field '{0}' which is part of the primary key of table '{1}' cannot be obsolete. All related properties will have no effect.|Warning (Future Error)|
 |[AL999](diagnostic-al999.md)|Internal error: {0}.|Error|
 |[AL1000](diagnostic-al1000.md)|Ignoring /noconfig option because it was specified in a response file.|Warning|
 |[AL1001](diagnostic-al1001.md)|Source file '{0}' could not be found.|Error|
@@ -617,8 +622,8 @@ author: SusanneWindfeldPedersen
 |[AL1047](diagnostic-al1047.md)|The application ID range {0} is not valid.|Error|
 |[AL1048](diagnostic-al1048.md)|Both 'idRange' and 'idRanges' properties are added. You should use the 'idRanges' property and remove the 'idRange' property.|Error|
 |[AL1049](diagnostic-al1049.md)|A project without a manifest must have the /out option specified.|Error|
-|[AL1050](diagnostic-al1050.md)|Fast publishing requires an application file '{0}' to be build and published. .|Error|
-|[AL1051](diagnostic-al1051.md)|Fast publishing requires that there are no manifest changes for the application '{0}'. .|Error|
+|[AL1050](diagnostic-al1050.md)|Fast publishing requires an application file '{0}' to be build and published.|Error|
+|[AL1051](diagnostic-al1051.md)|Fast publishing requires that there are no manifest changes for the application '{0}'.|Error|
 |[AL1052](diagnostic-al1052.md)|The link '{0}' can only contain one placeholder with value 0 for the user locale. No other placeholder values are allowed.|Error|
 |[AL1053](diagnostic-al1053.md)|The value '{0}' is not valid for the manifest property '{1}'.|Error|
 |[AL1054](diagnostic-al1054.md)|Invalid reference module: {0}.|Error|

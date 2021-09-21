@@ -3,7 +3,7 @@ title: "Compiler Error AL260"
 description: ""
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/21/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Error AL260
-The key '{0}' on table '{1}' cannot start with the fields defined for the primary key. The server will append these to any alternate key.    .
+The key '{0}' on table '{1}' cannot start with the fields defined for the primary key. The server will append these to any alternate key.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

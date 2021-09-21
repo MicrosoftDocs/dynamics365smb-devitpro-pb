@@ -3,7 +3,7 @@ title: "Compiler Warning AL509"
 description: ""
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/21/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Warning AL509
-Constant value '{0}' is outside of the valid ordinal range for this {1} type.
+Constant value '{0}' is outside of the valid ordinal range for this option type.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

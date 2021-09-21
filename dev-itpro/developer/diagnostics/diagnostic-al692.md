@@ -1,5 +1,5 @@
 ---
-title: "Compiler Error AL688"
+title: "Compiler Warning (Future Error) AL692"
 description: ""
 ms.author: solsen
 ms.custom: na
@@ -14,9 +14,11 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Error AL688
-The key '{0}' on table '{1}' cannot contain the fields defined for the key in the IncludeFields property.
+# Compiler Warning (Future Error) AL692
+The primary key '{0}' on table '{1}' cannot be obsolete. All related properties will have no effect.
 
+> [!IMPORTANT]
+> This warning will become an error in Spring 2022.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
