@@ -244,6 +244,7 @@
 #### [Create user permission](administration/api/dynamics_userpermission_create.md)
 #### [Update user permission](administration/api/dynamics_userpermission_update.md)
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
+### [Using Service-to-Service Authentication](administration/automation-apis-using-s2s-authentication.md)
 <!-- end admin -->
 <!-- Development-->
 # Development
@@ -322,9 +323,11 @@
 ### [The Microsoft_Application.app File](developer/devenv-application-app-file.md)
 ### [Publishing a Code-Customized Base Application](developer/devenv-publish-code-customization.md)
 ### [Extending Application Areas](developer/devenv-extending-application-areas.md)
-### [Extending Item Charge Distribution Methods](developer/devenv-extending-item-charges.md)
-### [Extending Price Calculations](developer/devenv-extending-best-price-calculations.md)
 ### [Extending Pages Previously Based on the Date Virtual Table](developer/devenv-extend-pages-based-on-date-virtual-table.md)
+### Examples
+#### [Extending Item Charge Distribution Methods](developer/devenv-extending-item-charges.md)
+#### [Extending Price Calculations](developer/devenv-extending-best-price-calculations.md)
+#### [Extending the Data Archive Extension](developer/devenv-data-archive-extension.md)
 ## Using the System Application
 ### [Overview of the System Application](developer/devenv-system-application-overview.md)
 ### Creating New Modules in the System Application
