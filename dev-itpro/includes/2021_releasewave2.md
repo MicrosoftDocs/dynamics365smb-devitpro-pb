@@ -1,1 +1,1 @@
-> **INTRODUCED IN:** Business Central 2021 release wave 2
+> **APPLIES TO:** Business Central 2021 release wave 2 and later
