@@ -1,5 +1,6 @@
 ---
 title: "The Microsoft_Application.app File"
+description: "The Microsoft_Application.app file encapsulates all of the extensions that make up a solution for Business Central"
 ms.author: solsen
 ms.custom: na
 ms.date: 04/01/2021
@@ -18,13 +19,13 @@ The Microsoft_Application.app file is included with [!INCLUDE[prod_short](includ
 > [!NOTE]  
 > In previous versions the references to base and system application were stated explicitly under `dependencies` in the `app.json` file of the extension. Instead you must now use the `Application` version property in the `app.json` file. For more information, see [JSON Files](devenv-json-files.md).
 
-The file name of the reference is `Microsoft_Application.app` and in the app.json file of the application package file, the name is `Application`. For code-customized base applications that have their own appId, the `Microsoft_Application.app` file can be modified to reference the appId of the code-customized base applications instead. This allows any extensions that are dependent on the `Application` to resolve to the custom appId. 
+The file name of the reference is `Microsoft_Application.app` and in the app.json file of the application package file, the name is `Application`. For code-customized base applications that have their own app ID, the `Microsoft_Application.app` file can be modified to reference the app ID of the code-customized base applications instead. This allows any extensions that are dependent on the `Application` to resolve to the custom app ID. 
 
 > [!NOTE]  
 > The partner who redefines the application must ensure that extensions that are dependent on the `Application` compile and work. This can be ensured, for example, by not introducing any breaking changes.
 
 > [!IMPORTANT]  
-> If you have modified the `Microsoft_Application.app` file, you can rename the file name, and change information about the `publisher`, but it is important to keep `"name": "Application"` in the extension, which is what is being checked for in terms of symbol references. It is also important to keep the `propagateDependencies` set to `true`. The `version` must be set to the version of the Microsoft base application with which it is compatible.
+> If you have modified the `Microsoft_Application.app` file, you can rename the file name, and change information about the `publisher`, but it is important to keep `"name": "Application"` in the extension, which is what is being checked for in terms of symbols references. It is also important to keep the `propagateDependencies` set to `true`. The `version` must be set to the version of the Microsoft base application with which it is compatible. The `id` must be changed to reference the app ID of the code-customized base application.
 
 ## Changing the app.json file for a code-customized base application
 

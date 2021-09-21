@@ -16,18 +16,13 @@ ms.author: edupont
 This section contains answers to frequently asked questions about migrating from on-premises solutions to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online.  
 
 > [!TIP]
-> Check the tips in this article if your organization is not yet ready to migrate to [!INCLUDE [prod_short](../includes/prod_short.md)] online but are thinking hard about it. For more information about migration, see [Running the Cloud Migration Tool](migration-tool.md).  
+> Check the tips in this article if your organization is not yet ready to migrate to [!INCLUDE [prod_short](../includes/prod_short.md)] online but are thinking hard about it. For more information about migration, see [Migrate On-Premises Data to Business Central Online](migrate-data.md).  
 
 ## Which products and versions are supported?
 
-The current version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] can connect the following products in order to migrate to the cloud:
+[!INCLUDE [bc-cloud-products](../includes/bc-cloud-products.md)]
 
-- Dynamics GP (supported major versions)
-- [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises  
-
-  [!INCLUDE [bc-cloud-versions](../includes/bc-cloud-versions.md)]  
-
-If you are currently on a version of Dynamics NAV, you must upgrade to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises, and then switch to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online. For more information, see [Upgrading from Dynamics NAV to Business Central online](../upgrade/upgrade-considerations.md#online).
+[!INCLUDE [bc-cloud-nav](../includes/bc-cloud-nav.md)]
 
 <!-- - Dynamics SL 2018 CU 1-->
 
@@ -45,7 +40,7 @@ Data is migrated using an Azure service called Azure Data Factory (ADF). ADF is 
 
 There are no restrictions on the type of data that can be migrated. In the current version of Business Central, the migration tool is by default limited to migrate databases up to 80 GB. If your database is larger than 80 GB, we recommend that you reduce the number of companies that you are migrating data for. You can specify which companies to include in the migration in the assisted setup wizard.
 
-If you want to add more companies after the first selection of companies, you can add additional companies in the **Cloud Migration Management** page in Business Central online. For more information, see [Adding a tenant to an existing runtime service, or updating companies](migration-tool.md#adding-a-tenant-to-an-existing-runtime-service-or-updating-companies).
+If you want to add more companies after the first selection of companies, you can add additional companies in the **Cloud Migration Management** page in Business Central online. For more information, see [Adding a tenant to an existing runtime service, or updating companies](migrate-data.md#adding-a-tenant-to-an-existing-runtime-service-or-updating-companies).
 
 If you are looking at migrating databases larger than 80 GB, we recommend that you contact the support team and work with them to make sure that the migration is successful.  
 

@@ -27,7 +27,7 @@ Automation APIs are placed in the `microsoft/automation` API namespace. In all t
 To create a company, an automationCompany endpoint is available. To create a Company issue a [POST request](api/dynamics_automationCompany_create.md) as shown in the following example.
 
 ```json
-POST https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/2.0/companies({companyId})/automationCompanies
+POST https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/automationCompanies
 Authorization: Bearer {token}
 Content-type: application/json
 {
