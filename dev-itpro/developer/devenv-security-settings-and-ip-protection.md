@@ -36,7 +36,7 @@ When you start a new project, an `app.json` file is generated automatically, whi
 
 ### allowDebugging
 
-To allow debugging into your extension, when the extension is taken as a dependency, you must set the `allowDebugging` flag, otherwise debugging and **Go to Definition** to view the code is now allowed. The default value of `allowDebugging` is `false`.
+To allow debugging into your extension, when the extension is taken as a dependency, you must set the `allowDebugging` flag, otherwise debugging is now allowed. The default value of `allowDebugging` is `false`.
 
 For a more refined setting, you can specify the `NonDebuggable` attribute on methods and variables. Regardless of the resource exposure policy setting, methods and variables marked with the `[NonDebuggable]` attribute, will remain non-debuggable. For more information, see [NonDebuggable Attribute](attributes/devenv-nondebuggable-attribute.md).
 
@@ -58,7 +58,7 @@ When this is set to `true` in the `app.json` file of extension A, the source cod
 
 ### includeSourceInSymbolFile
 
-When this is set to `true` in the `app.json` file of extension A, the downloaded symbol file in Visual Studio Code using the **Downloading Symbols** functionality, contains symbols and the source code of extension A. The default value of `includesourceInSymbolFile` is `false`.
+When this is set to `true` in the `app.json` file of extension A, the downloaded symbol file in Visual Studio Code using the **Downloading Symbols** functionality, contains symbols and the source code of extension A. **Go to Definition** to view the code also depends on this property. The default value of `includesourceInSymbolFile` is `false`.
 
 ### Example JSON file
 
