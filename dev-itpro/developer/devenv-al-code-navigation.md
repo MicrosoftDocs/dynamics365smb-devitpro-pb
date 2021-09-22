@@ -24,7 +24,7 @@ The **Go to Definition** feature navigates to the source of a type and opens the
 
 With **Go to Definition**, you can step into the referenced code and set breakpoints on the external code and base application code. For more information, see [Debugging in AL](devenv-debugging.md).
 
-You can always use **Go to Definition** on [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] code. However, if you want to use it on other extensions, the extension package which is now referenced, when originally published, must have the `allowDebugging` property set to `true`. The `allowDebugging` property is one of three options inside the `resourceExposurePolicy` property. An example is, that if A is referencing B you can only use the Go To Definition on types of B, if B, when it was published, had the `allowDebugging` flag set to `true`. For more information, see [Security Setting and Resource Exposure Policy](devenv-security-settings-and-ip-protection.md). 
+You can always use **Go to Definition** on [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] code. However, if you want to use it on other extensions, the extension package which is now referenced, when originally published, must have the `includeSourceInSymbols` property set to `true`. The `includeSourceInSymbols` property is one of three options inside the `resourceExposurePolicy` property. An example is, that if A is referencing B you can only use the Go To Definition on types of B, if B, when it was published, had the `includeSourceInSymbols` flag set to `true`. For more information, see [Resource Exposure Policy Setting](devenv-security-settings-and-ip-protection.md). 
 
 ## Runtime 5.2 and Go to Definition
 

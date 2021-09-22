@@ -1,6 +1,6 @@
 ---
-title: "Security Setting and Resource Exposure Policy"
-description: This topic explains how to set the security and resource exposure policy against downloading or debugging into extension to see the source code.
+title: "Resource Exposure Policy Setting"
+description: This topic explains how to set the resource exposure policy for allowing download or debugging into extension to see the source code.
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 04/01/2021
@@ -12,7 +12,7 @@ ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
-# Security Setting and Resource Exposure Policy
+# Resource Exposure Policy Setting
 
 [!INCLUDE[2021_releasewave2_changed](../includes/2021_releasewave2_changed.md)]
 

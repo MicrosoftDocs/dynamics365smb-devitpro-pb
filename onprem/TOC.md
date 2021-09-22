@@ -162,7 +162,7 @@
 ## [JSON Files](developer/devenv-json-files.md)
 ## [Debugging in AL](developer/devenv-debugging.md)
 ## [Retaining Table Data after Publishing](developer/devenv-retaining-data-after-publishing.md)
-## [Security Setting and Resource Exposure Policy](developer/devenv-security-settings-and-ip-protection.md)
+## [Resource Exposure Policy Setting](developer/devenv-security-settings-and-ip-protection.md)
 ## [Running C/SIDE and AL Side-By-Side](developer/devenv-running-cside-and-al-side-by-side.md)
 ## [Creating Runtime Packages](developer/devenv-creating-runtime-packages.md)
 ## [The Txt2Al Conversion Tool](developer/devenv-txt2al-tool.md)

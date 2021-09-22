@@ -22,7 +22,7 @@ The profile object in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] a
 > Extension objects can have a name with a maximum length of 30 characters.
 
 > [!NOTE]  
-> The property `allowDebugging`, which is a setting under `resourceExposurePolicy` does not apply to page customizations. Page customizations defined in an extension with `allowDebugging` set to `false` can still be copied using Designer. For more information, see [Security Setting and Resource Exposure Policy](devenv-security-settings-and-ip-protection.md).
+> The property `allowDebugging`, which is a setting under `resourceExposurePolicy` does not apply to page customizations. Page customizations defined in an extension with `allowDebugging` set to `false` can still be copied using Designer. For more information, see [Resource Exposure Policy Setting](devenv-security-settings-and-ip-protection.md).
 
 ## Snippet support
 Typing the shortcut `tprofile` will create the basic layout for a profile object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.

@@ -60,7 +60,7 @@ The following table describes the settings in the `app.json` file. For an exampl
 |applicationInsightsConnectionString|No, but recommended for AppSource submission|The instrumentation key of the Azure Application Insights resource for monitoring operations, for example, like app secrets retrieval by extensions. <br><br>For more information, see [Monitoring and Analyzing Telemetry](../administration/telemetry-overview.md).|
 |keyVaultUrls|No|List of URLs of key vaults that the extension from which the extension can retrieve secrets. For example: `"keyVaultUrls": [ "https://myfirstkeyvault.vault.azure.net", "https://mysecondkeyvault.vault.azure.net" ]`. <br><br>For more information, see [App Key Vaults](devenv-app-key-vault-overview.md).|
 |suppressWarnings|No|Specifies that warnings issued by, for example, a specific analyzer rule should not be shown in the **Output** window. Syntax is `"suppressWarnings": [<warning ID>,<warning ID2>,...]`. For example `"suppressWarnings": [ "AL0458" ]`. It is also possible to use `#pragma` directives for suppressing warnings for specific areas of code. For more information, see [Pragma Warning Directive](directives/devenv-directive-pragma-warning.md) and [Suppressing Warnings](devenv-deprecating-with-statements-overview.md#suppressing-warnings).|
-|resourceExposurePolicy|No|Defines the accessibility of the resources and source code during different operations. The `resourceExposurePolicy` property contains three options for defining access: `allowDebugging`, `allowDownloadingSource`, and `includeSourceInSymbolFile`. All defaults are false. The syntax is `"resourceExposurePolicy": {"allowDebugging": true, "allowDownloadingSource": true, "includeSourceInSymbolFile": true}`. For more information, see [Security Setting and Resource Exposure Policy](devenv-security-settings-and-ip-protection.md).|
+|resourceExposurePolicy|No|Defines the accessibility of the resources and source code during different operations. The `resourceExposurePolicy` property contains three options for defining access: `allowDebugging`, `allowDownloadingSource`, and `includeSourceInSymbolFile`. All defaults are false. The syntax is `"resourceExposurePolicy": {"allowDebugging": true, "allowDownloadingSource": true, "includeSourceInSymbolFile": true}`. For more information, see [Resource Exposure Policy Setting](devenv-security-settings-and-ip-protection.md).|
 
 ## <a name="Launchjson"></a>Launch.json file
 
@@ -130,7 +130,7 @@ The following table describes the settings in the `launch.json` file. The `launc
 [AL Development Environment](devenv-reference-overview.md)  
 [App Identity](devenv-app-identity.md)  
 [Debugging in AL](devenv-debugging.md)  
-[Security Setting and Resource Exposure Policy](devenv-security-settings-and-ip-protection.md)  
+[Resource Exposure Policy Setting](devenv-security-settings-and-ip-protection.md)  
 [AL Language Extension Configuration](devenv-al-extension-configuration.md)  
 [Configure Context-Sensitive Help](../help/context-sensitive-help.md)  
 [App Key Vaults](devenv-app-key-vault-overview.md)
