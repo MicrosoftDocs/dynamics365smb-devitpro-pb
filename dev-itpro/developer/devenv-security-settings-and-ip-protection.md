@@ -16,11 +16,11 @@ ms.author: solsen
 
 [!INCLUDE[2021_releasewave2_changed](../includes/2021_releasewave2_changed.md)]
 
-When developing an extension, your code is by default protected against downloading or debugging. Read below about the security setting and adding Intellectual Property (IP) protection against downloading or debugging into an extension to see the source code in the extensions.
+When developing an extension, your code is by default protected against downloading or debugging. Read below about adding Intellectual Property (IP) protection against downloading or debugging into an extension to see the source code in the extensions.
 
 The extension development package provides a pre-configured setting for protection against viewing or downloading the code of the extensions. However, this setting can also be controlled in the manifest; the `app.json` file.
 
-## Resource Exposure Policy
+## The properties of the resource exposure policy
 
 > [!NOTE]  
 > With [!INCLUDE [prod_short](includes/prod_short.md)] 2021 release wave 2, the `ShowMyCode` setting has been replaced by the `resourceExposurePolicy` setting which offers a richer access control. The `ShowMyCode` will be deprecated in a future release and cannot be used together with the `resourceExposurePolicy` setting. If `ShowMyCode` is set, default values for `resourceExposurePolicy` will be applied (`false`).
