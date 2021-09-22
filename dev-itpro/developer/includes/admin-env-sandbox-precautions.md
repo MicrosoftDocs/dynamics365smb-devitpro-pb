@@ -1,4 +1,11 @@
-If a sandbox is created with a copy of a production environment, a number of precautions are taken for that sandbox:
+---
+author: edupont04
+ms.service: dynamics365-business-central
+ms.topic: include
+ms.date: 07/27/2021
+ms.author: edupont
+---
+If a sandbox is created from a copy of a production environment, a number of precautions are taken for that sandbox:
 
 - The job queue is automatically stopped  
 - Any base application integration settings are cleared  
