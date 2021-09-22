@@ -68,7 +68,7 @@ From the Dynamics 365 [!INCLUDE [prod_short](../includes/prod_short.md)] 2021 re
 
 - **Tour**
 
-  Records of type **Tour** point to a tour of the role center.
+  Records of type **Tour** point to a tour of the role center. Currently, these can only be added by Microsoft in the [!INCLUDE [prod_short](../includes/prod_short.md)] platform. We are considering enabling AL developers to add and control these tours in time. 
 
   - **Spotlight Tour**
 
