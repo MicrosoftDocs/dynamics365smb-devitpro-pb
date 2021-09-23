@@ -64,7 +64,7 @@ The following elements are checked in code:
 - Page field tooltips
 - Value of labels (in declaration)
 - Value of text constants
-- Translation files (tags <source>, <target>, <note>)
+- Translation files (tags `<source>`, `<target>`, `<note>`)
 - App manifest file (Name, Brief, Description, Publisher)
 
 ## See Also  

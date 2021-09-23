@@ -46,8 +46,8 @@
 ##### [Upgrading an App Using ForceSync](administration/appmanagement/app-management-updating-with-forcesync.md)
 ## Sell
 ### [Get Started as a Reseller of Business Central Online](administration/get-started-online.md)
-### [Cloud Solution Provider program](/partner-center/csp-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
-### [Connect with customers](/partner-center/connect-with-your-customers?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### [Cloud Solution Provider (Partner Center)](/partner-center/csp-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### [Connect with customers (Partner Center)](/partner-center/connect-with-your-customers?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Customize Business Central](/dynamics365/business-central/ui-customizing-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Onboarding Experiences](administration/onboarding-experiences.md)
 ## Frequently asked questions
@@ -62,6 +62,7 @@
 ### [FAQ About the Windows Client and Business Central](faq-win-cli.md)
 ### [FAQ about Connecting to Business Central Online from On-Premises Solutions](administration/faq-migrate-data.md)
 ## What's new or changed
+### [Update 18.5](whatsnew/whatsnew-update-18-5.md)
 ### [Update 18.4](whatsnew/whatsnew-update-18-4.md)
 ### [Update 18.3](whatsnew/whatsnew-update-18-3.md)
 ### [Update 18.2](whatsnew/whatsnew-update-18-2.md)
@@ -229,6 +230,8 @@
 #### [Update user](administration/api/dynamics_user_update.md)
 ### [User group](administration/resources/dynamics_usergroup.md)
 #### [Get user group](administration/api/dynamics_usergroup_get.md)
+#### [Create user group](administration/api/dynamics_usergroup_create.md)
+#### [Delete user group](administration/api/dynamics_usergroup_delete.md)
 #### [Update user group](administration/api/dynamics_usergroup_update.md)
 ### [User group member](administration/resources/dynamics_usergroupmember.md)
 #### [Get user group member](administration/api/dynamics_usergroupmember_get.md)
@@ -2244,6 +2247,7 @@
 #### [Clustered Property](developer/properties/devenv-clustered-property.md)
 #### [ColumnFilter Property](developer/properties/devenv-columnfilter-property.md)
 #### [ColumnSpan Property](developer/properties/devenv-columnspan-property.md)
+#### [ColumnStoreIndex Property](developer/properties/devenv-columnstoreindex-property.md)
 #### [Compressed Property](developer/properties/devenv-compressed-property.md)
 #### [CompressionType Property](developer/properties/devenv-compressiontype-property.md)
 #### [ContextSensitiveHelpPage Property](developer/properties/devenv-contextsensitivehelppage-property.md)
@@ -2314,6 +2318,7 @@
 #### [Implementation Property](developer/properties/devenv-implementation-property.md)
 #### [Importance Property](developer/properties/devenv-importance-property.md)
 #### [IncludeCaption Property](developer/properties/devenv-includecaption-property.md)
+#### [IncludedFields Property](developer/properties/devenv-includedfields-property.md)
 #### [IncludedPermissionSets Property](developer/properties/devenv-includedpermissionsets-property.md)
 #### [IndentationColumn Property](developer/properties/devenv-indentationcolumn-property.md)
 #### [IndentationControls Property](developer/properties/devenv-indentationcontrols-property.md)

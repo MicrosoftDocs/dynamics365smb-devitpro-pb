@@ -27,7 +27,7 @@ Specifies the list of scripts to include in the control add-in. The scripts coul
 
 ## Property Values
 
-A list of comma-separated strings that represent paths to script files. The default is blank, with no images being used by the control add-in. 
+A list of comma-separated strings that represent paths to script files. The default is blank, with no scripts being used by the control add-in. 
 
 ## Remarks 
 

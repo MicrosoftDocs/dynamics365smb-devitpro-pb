@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 # Task Scheduler
 The task scheduler enables you to control when certain operations or processes (in other words *tasks*) are run. Basically, a task is a codeunit or report that is scheduled to run at a specific data and time. Tasks run in a background session between the [!INCLUDE[d365fin_server_md](includes/d365fin_server_md.md)] instance and database. Behind the scenes, the task scheduler is used by the job queue to process job queue entries that are created and managed from the clients.  
 
-In AL code, you create and manage tasks by using the AL methods that are available for the **TASKSCHEDULER** data type.  
+In AL code, you create and manage tasks by using the AL methods that are available for the **TaskScheduler** data type.  
 
 |Method|Description|For more information, see|  
 |--------------|-----------------|-------------------------------|  
@@ -23,7 +23,7 @@ In AL code, you create and manage tasks by using the AL methods that are availab
 |CancelTask|Cancels a scheduled task.|[CancelTask Method](methods-auto/taskscheduler/taskscheduler-canceltask-method.md)|  
 
 ## How task scheduler works  
-To set up a task, you create a codeunit that contains the logic that you want to run at a scheduled time. Optionally, you can create a second codeunit that contains the logic to handle the task if an error occurs for any reason. This codeunit is referred to as a *failure codeunit*. Once you have the codeunits, you can add AL code to the application that calls the CREATETASK method to schedule a task to run the codeunits. The [CreateTask](methods-auto/taskscheduler/taskscheduler-createtask-integer-integer-boolean-string-datetime-recordid-duration-method.md) method can also specify the earliest date to run the task, and whether the task is in the ready state.  
+To set up a task, you create a codeunit that contains the logic that you want to run at a scheduled time. Optionally, you can create a second codeunit that contains the logic to handle the task if an error occurs for any reason. This codeunit is referred to as a *failure codeunit*. Once you have the codeunits, you can add AL code to the application that calls the CreateTask method to schedule a task to run the codeunits. The [CreateTask](methods-auto/taskscheduler/taskscheduler-createtask-integer-integer-boolean-string-datetime-recordid-duration-method.md) method can also specify the earliest date to run the task, and whether the task is in the ready state.  
 
 ### Task flow  
  Here is an overview of the process that a task goes through:  
@@ -62,7 +62,7 @@ When an error occurs, unless the task is interrupted by the failure codeunit, th
 3. Fifteen minutes after the third failure and any subsequent failures up to a maximum of 10 times, after which the task is canceled.  
 
 ## About task sessions and permissions  
-The task runs in a background session, which means that there is no user interface. The behavior is similar to that of the STARTSESSION method, where any dialog boxes that would normally appear are suppressed. For more information about specific dialog boxes, see [StartSession](methods-auto/session/session-startsession-method.md) method.  
+The task runs in a background session, which means that there is no user interface. The behavior is similar to that of the StartSession method, where any dialog boxes that would normally appear are suppressed. For more information about specific dialog boxes, see [StartSession](methods-auto/session/session-startsession-integer-integer-string-table-method.md) method.  
 
 The session runs by using the same user/credentials that are used when calling AL code. The user must have appropriate permissions to the codeunit and any other objects that are associated with the operation of the codeunit.
 

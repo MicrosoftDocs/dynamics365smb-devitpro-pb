@@ -73,3 +73,4 @@ For an elaborate example of deprecating, see [Best Practices for Deprecation of 
 [ObsoleteState](devenv-obsoletestate-property.md)  
 [Properties](devenv-properties.md)  
 [MethodType Property (Upgrade Codeunits)](../devenv-methodtype-property-upgrade-codeunits.md)  
+[Obsolete Attribute](../attributes/devenv-obsolete-attribute.md)  
