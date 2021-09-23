@@ -15,6 +15,8 @@ ms.author: solsen
 <!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
 # Update purchaseOrderLine
 
+[!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
+
 Updates the properties of a purchase order line object for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## HTTP request
