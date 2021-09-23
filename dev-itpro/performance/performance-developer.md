@@ -22,6 +22,7 @@ In this article, you can read about ways to tune performance when developing for
 - [Efficient Data access](performance-developer.md#efficient-data-access)  
 - [Testing and validating performance](performance-developer.md#testing-and-validating-performance)  
 - [Tuning the Development Environment](performance-developer.md#tuning-the-development-environment)  
+- [Using the AL Profiler to analyze performance](../developer/devenv-al-profiler-overview.md)
 
 ## Writing efficient pages 
 
