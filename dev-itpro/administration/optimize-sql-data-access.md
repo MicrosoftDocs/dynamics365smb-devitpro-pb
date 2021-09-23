@@ -169,6 +169,37 @@ Because SQL Server supports data compression on the partition level, you can com
 
 For more general information about table compression in SQL Server, see [Data Compression](/sql/relational-databases/data-compression/data-compression). For guidance on strategy, capacity planning, and best practices for data compression, see [Data Compression: Strategy, Capacity Planning, and Best Practices](/previous-versions/sql/sql-server-2008/dd894051(v=sql.100)).
 
+
+## Adding default SQL constraints to columns
+
+To add a default constraint to a column, use the following statement:
+
+```sql
+ALTER TABLE ADD CONSTRAINT constraint_name DEFAULT default_value FOR field_name
+```
+
+The naming of the default constraint isn't important, as long as they don't clash.
+
+### Default constraint value
+
+Business Central sets default constraints on fields in a tables. The following table list the values used for default constraints for the different data types:
+
+|Data type|value|
+|---------|-------|
+|Integer, Option, Boolean, Byte, Duration, BigInteger|0|
+|Decimal|0.0|
+|DateFormula|''|
+|Text|N''|
+|RecordId, TableFilter|0x00|
+|Guid, Media, MediaSet| 00000000-0000-0000-0000-000000000000|
+|Code (varies, depending on the SqlType)||
+|Default, VarChar, Variant|N''|
+|Integer, BigInt|0|
+|Time, Date, DateTime|'1753.01.01'|
+
+> [!NOTE]
+> Blobs don't get default constraints, but they allowed to be null.
+
 ## See Also
 
 [Query Objects and Performance](optimize-sql-query-objects-and-performance.md)  
