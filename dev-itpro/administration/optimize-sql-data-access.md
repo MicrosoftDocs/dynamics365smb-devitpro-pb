@@ -192,8 +192,8 @@ The name of the default constraint isn't important, as long as it isn't used by 
 |Text|N''|
 |RecordId, TableFilter|0x00|
 |Guid, Media, MediaSet| 00000000-0000-0000-0000-000000000000|
-|Code: Default, VarChar, Variant|N''|
-|Code: Integer, BigInt|0|
+|Code (Default, VarChar, Variant types)|N''|
+|Code (Integer, BigInteger types)|0|
 |Time, Date, DateTime|'1753.01.01'|
 
 > [!NOTE]
