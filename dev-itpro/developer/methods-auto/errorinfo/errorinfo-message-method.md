@@ -3,7 +3,7 @@ title: "ErrorInfo.Message([String]) Method"
 description: "Specifies the message that will be sent to telemetry."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 08/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -33,7 +33,7 @@ An instance of the [ErrorInfo](errorinfo-data-type.md) data type.
 
 *[Optional] Message*  
 &emsp;Type: [String](../string/string-data-type.md)  
-The message of the the ErrorInfo  
+The message of the ErrorInfo  
 
 
 ## Return Value
@@ -45,5 +45,5 @@ The current message of the ErrorInfo.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [ErrorInfo Data Type](errorinfo-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
-[Developing Extensions](../../devenv-dev-overview.md)
+[Getting Started with AL](../../../devenv-get-started.md)  
+[Developing Extensions](../../../devenv-dev-overview.md)

@@ -4,7 +4,7 @@ description: "Best Practices for writing AL code."
 
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 09/10/2021
 ms.reviewer: na
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
@@ -66,6 +66,17 @@ Use the listed abbreviations for each type of object in the file naming:
 |Permission Set|PermissionSet|
 |Permission Set Extension|PermissionSetExt|
 
+
+### File naming examples
+
+For the listed objects above, these are examples of the file naming.
+
+|Object name|File name|
+|------|---------------------------|
+|codeunit 70000000 MyPrefixSalesperson|`MyPrefixSalesperson.Codeunit.al`|
+|page 70000000 MyPrefixSalesperson|`MyPrefixSalesperson.Page.al`|
+|page 70000000 MyPrefixSalesperson extends "Customer Card"|`MyPrefixSalesperson.PageExt.al`|
+
 ### Examples of object naming
 
 #### Table
@@ -80,7 +91,7 @@ table 70000000 MyPrefixSalesperson
 page 70000000 MyPrefixSalesperson
 ```
 
-#### Page extension
+#### Action
 
 ```
 actions
@@ -95,17 +106,6 @@ actions
 ```
 codeunit 70000000 MyPrefixSalesperson
 ```
-
-### File naming examples
-
-For the listed objects above, these are examples of the file naming.
-
-|Object name|File name|
-|------|---------------------------|
-|codeunit 70000000 MyPrefixSalesperson|`MyPrefixSalesperson.Codeunit.al`|
-|page 70000000 MyPrefixSalesperson|`MyPrefixSalesperson.Page.al`|
-|page 70000000 MyPrefixSalesperson extends "Customer Card"|`MyPrefixSalesperson.PageExt.al`|
-
 
 ## Formatting
 

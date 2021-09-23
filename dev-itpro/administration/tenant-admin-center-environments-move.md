@@ -1,6 +1,6 @@
 ---
 title: Move an environment to another Azure Active Directory organization
-description: You can move a Business Central environment to another Azure Active Directory tenant. Start in the Business Central admin center. 
+description: You can move a Business Central environment to another Azure Active Directory tenant. Start in the Business Central admin center.
 author: jswymer
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -19,7 +19,7 @@ In some cases, the Azure Active Directory (Azure AD) organization (also known as
 - Business entities merge.
 - An acquisition takes place.
 - The customer decides to use one Azure AD tenant in a specific region and stop using Azure AD tenants they created in other regions.
-- The environment was mistakenly created by the reselling partner for the wrong Azure AD tenant.  
+- The environment was mistakenly created by the reselling partner for the wrong Azure AD tenant.
 
 In all such cases, the customers want to preserve the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments they created for the original Azure AD tenants, and link them to the new ones instead. Microsoft Support can move an environment from one Azure AD tenant to another, based on a support request.
 
@@ -44,7 +44,7 @@ Once the move is completed, your environments will appear in your new tenant.
 
 ## Considerations
 
-- Environment data will remain unchanged during the move operation. The exact same environment will be linked to a specified Azure AD tenant.  
+- Environment data will remain unchanged during the move operation. The exact same environment will be linked to a specified Azure AD tenant.
 - The country, Azure region, and type of the environment (production or sandbox) will remain the same, and can't be changed during this operation.
 - The operation will involve a downtime period for the environment being moved (typically not exceeding 2 hours). So the operation needs to be coordinated with the customer and Microsoft Support.
 - [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Support doesn't provide help with moving the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] subscriptions, domains, and other resources between the Azure AD tenants. Your support representative or account manager will assist you in contacting billing to cancel or credit your previous subscription, if needed.
@@ -60,15 +60,18 @@ Once the move is completed, your environments will appear in your new tenant.
 ## After the environment has been moved
 
 - Users may have been added to the environment prior to the move operation, while it was still connected to the old Azure AD tenant. If so, these users won't be migrated to the new Azure AD tenant. You'll need to recreate the users on the target tenant if you still want them. You can add multiple user accounts at once [using Excel spreadsheet or other file saved in CSV format](/microsoft-365/enterprise/add-several-users-at-the-same-time). After the users are created on the target Azure AD tenant, assign them the required roles or licenses and [import these users into the moved environment](/dynamics365/business-central/ui-how-users-permissions).
-- You might need to reconfigure some add-ins, external applications, and settings after the tenant-to-tenant migration. Some examples include the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Outlook add-in, Excel add-in, Power BI, Power Apps, Power Automate connectors, Dataverse, and more.
+
+  > [!NOTE] 
+  > User personalizations will be lost.
+- You might need to reconfigure some add-ins, external applications, and settings after the tenant-to-tenant migration. Some examples include the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Outlook add-in, Excel add-in, Power BI, Power Apps, Power Automate connectors, Dataverse, user personalizations, and more.
 
 ## See also
 
-[Managing Tenant Notifications](tenant-admin-center-notifications.md)  
-[Managing Apps](tenant-admin-center-manage-apps.md)  
-[Updating Environments](tenant-admin-center-update-management.md)  
-[Rename Environments](tenant-admin-center-environments-rename.md)  
-[Restoring an Environment](tenant-admin-center-backup-restore.md)  
-[Managing Production and Sandbox Environments](tenant-admin-center-environments.md)  
-[The Business Central Administration Center](tenant-admin-center.md)  
-[Introduction to automation APIs](itpro-introduction-to-automation-apis.md)  
+[Managing Tenant Notifications](tenant-admin-center-notifications.md)
+[Managing Apps](tenant-admin-center-manage-apps.md)
+[Updating Environments](tenant-admin-center-update-management.md)
+[Rename Environments](tenant-admin-center-environments-rename.md)
+[Restoring an Environment](tenant-admin-center-backup-restore.md)
+[Managing Production and Sandbox Environments](tenant-admin-center-environments.md)
+[The Business Central Administration Center](tenant-admin-center.md)
+[Introduction to automation APIs](itpro-introduction-to-automation-apis.md)
