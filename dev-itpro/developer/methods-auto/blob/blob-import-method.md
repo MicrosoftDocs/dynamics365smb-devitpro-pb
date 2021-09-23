@@ -3,7 +3,7 @@ title: "Blob.Import(String) Method"
 description: "Imports a binary large object (BLOB) from a file."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 08/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Blob.Import(String) Method
-> **Version**: _Available or changed with runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0 until version 1.0 where it was deprecated for the following reason: "This method will only be available for OnPrem in a future release."_
 
 Imports a binary large object (BLOB) from a file.
 

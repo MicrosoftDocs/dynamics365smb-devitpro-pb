@@ -61,6 +61,10 @@ Specifies the timeout of the created session. If not specified a default timeout
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks  
+Scheduled tasks are recorded in table **2000000175 Scheduled Task**.  For more information about tasks and task scheduler, see managing tasks [Task Scheduler](../../devenv-task-scheduler.md).  
+
 ## See Also
 [TaskScheduler Data Type](taskscheduler-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  

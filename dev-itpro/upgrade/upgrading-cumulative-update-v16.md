@@ -227,6 +227,17 @@ Also, to ensure that the existing published extensions work on the new platform,
     Restart-NAVServerInstance -ServerInstance <server instance>
     ```
 
+## <a name="UploadLicense"></a>Import [!INCLUDE[prod_short](../developer/includes/prod_short.md)] partner license  
+
+To import the license, use the [Import-NAVServerLicense cmdlet](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense). You'll have to restart the server instance afterwards:
+
+```powershell
+Import-NAVServerLicense -ServerInstance <server instance> -LicenseFile <path to license file>
+Restart-NAVServerInstance -ServerInstance <server instance>
+```
+
+For more information, see [Uploading a License File for a Specific Database](../cside/cside-upload-license-file.md#UploadtoDatabase).
+
 ## Publish the new system symbols
 
 Use the Publish-NAVApp cmdlet to publish the new symbols extension package. This package is called **System.app**. If you've installed the **AL Development Environment**, you find the file in the installation folder. By default, the folder path is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\160\AL Development Environment. Or, it's also on the installation media (DVD) in the ModernDev\program files\Microsoft Dynamics NAV\160\AL Development Environment folder.
@@ -540,6 +551,14 @@ We recommend setting the value to application build number for the version 16 up
     ```
 -->
 
+### Import the customer license
+
+Import the customer license by using the [Import-NAVServerLicense cmdlet](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense), as you did with the partner license. You'll have to restart the server instance afterwards.
+
+```powershell
+Import-NAVServerLicense -ServerInstance <server instance> -LicenseFile <path to license file>
+Restart-NAVServerInstance -ServerInstance <server instance name>
+```
 
 
 ## See Also

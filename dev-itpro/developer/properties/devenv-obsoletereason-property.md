@@ -71,3 +71,4 @@ Use this property to inform developers about an object or element that will beco
 [ObsoleteTag](devenv-obsoletetag-property.md)  
 [Properties](devenv-properties.md)  
 [MethodType Property (Upgrade Codeunits)](../devenv-methodtype-property-upgrade-codeunits.md)  
+[Obsolete Attribute](../attributes/devenv-obsolete-attribute.md)  

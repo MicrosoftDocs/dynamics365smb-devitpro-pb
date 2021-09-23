@@ -1,5 +1,6 @@
 ---
 title: "DataItemLink Property"
+description: "The DataItemLink property for AL for Business Central can apply to reports and to queries."
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
@@ -7,8 +8,6 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.service: "dynamics365-business-central"
-ms.assetid: 18ac2683-a8b0-4dc4-8dcf-717e93b51865
-caps.latest.revision: 9
 author: SusanneWindfeldPedersen
 ---
 

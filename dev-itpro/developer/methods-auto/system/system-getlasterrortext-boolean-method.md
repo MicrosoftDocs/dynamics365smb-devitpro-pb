@@ -39,6 +39,13 @@ Exclude sensitive data, such as primary key values, from the error message.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+If you call the GetLastErrorText method immediately after you call the ClearLastError method, then an empty string is returned.  
+
+The result of the [GetLastErrorCode Method](../../methods-auto/system/system-getlasterrorcode-method.md) is not translated into the local language. The result of the GetLastErrorText method is translated into the local language.  
+
 ## See Also
 [System Data Type](system-data-type.md)
 [Getting Started with AL](../../devenv-get-started.md)

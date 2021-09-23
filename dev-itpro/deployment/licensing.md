@@ -7,7 +7,7 @@ ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
-ms.date: 04/01/2021
+ms.date: 09/07/2021
 ---
 
 # Licensing in Dynamics 365 Business Central
@@ -20,6 +20,8 @@ ms.date: 04/01/2021
 - External Accountant  
 
 Prospects and customers can also subscribe for an evaluation version by using self-service sign-up (also known as the viral trial). This subscription comes with 10000 licenses, and partners can use such viral trials to let prospects explore [!INCLUDE [prod_short](../includes/prod_short.md)] using non-production companies. For more information, see [Preparing Demonstration Environments of [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](../administration/demo-environment.md).  
+
+[!INCLUDE [admin-license-trial](../includes/admin-license-trial.md)]
 
 [!include[prod_short](../developer/includes/prod_short.md)] does not use the classic [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] license files (*.flf). Instead, permissions are generated based on entitlements.  
 

@@ -3,7 +3,7 @@ author: jswymer
 title: "Upgrading Extensions"
 description: "Describes how to add code to upgrade data in a new extension version."
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 09/17/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,7 +22,7 @@ This article provides information about how to make a newer version of extension
 
 When you develop a new extension version, you must consider the data from the previous version. Determine the modifications that must be made to the data to make it compatible with the current version. For example, maybe the new version adds a new field that needs default values set for existing records. Or, the new version adds new tables that must be linked to existing records. To address this type of data handling, you must write upgrade code for the extension version. If there are no data changes between the extension versions, you don't need to write upgrade code. All data that isn't modified by upgrade code will automatically be available when the process completes.
 
-You write upgrade logic in an upgrade codeunit, which is a codeunit whose [SubType property](/dynamics365/business-central/dev-itpro/developer/devenv-subtype-codeunit-property) is set to **Upgrade**. An upgrade codeunit supports several system triggers on which you can add data upgrade code. These triggers are invoked when you run the data upgrade process on the new extension.
+You write upgrade logic in an upgrade codeunit, which is a codeunit whose [SubType property](properties/devenv-subtype-codeunit-property.md) is set to **Upgrade**. An upgrade codeunit supports several system triggers on which you can add data upgrade code. These triggers are invoked when you run the data upgrade process on the new extension.
 
 The upgrade codeunit becomes an integral part of the extension and may be modified as needed for later versions. You can have more than one upgrade codeunit. There's a set order to the sequence of the upgrade triggers, but  the execution order of the different codeunits isn't guaranteed. If you do use multiple upgrade units, make sure that they can run independently of each other.
 
@@ -122,7 +122,7 @@ codeunit 50100 MyUpgradeCodeunit
     begin
         if NavApp.GetCurrentModuleInfo(myInfo) then
             if myInfo.DataVersion = Version.Create(1, 0, 0, 1) then
-                error('The upgrade isn't compatible');
+                error('The upgrade is not compatible');
     end;
 
     trigger OnUpgradePerDatabase()
@@ -317,7 +317,7 @@ begin
         // Check whether code is triggered by the extension
         if Session.GetCurrentModuleExecutionContext() <> ExecutionContext::Normal then
             // Something is wrong, so you want to abort here because the code doesn't raise the EnqueuePrintingCheck trigger
-            Error('Check can't be printed')
+            Error('Check cannot be printed')
         else begin
             // Other code is invoking the upgrade, so use Job queue or similar mechanism to roll back if upgrade fails
             EnqueuePrintingCheck(PurchInvHeader);
