@@ -70,18 +70,17 @@ From the Dynamics 365 [!INCLUDE [prod_short](../includes/prod_short.md)] 2021 re
 
   Records of type **Tour** point to a tour of the role center. Currently, these can only be added by Microsoft in the [!INCLUDE [prod_short](../includes/prod_short.md)] platform. We are considering enabling AL developers to add and control these tours in time. 
 
-  - **Spotlight Tour**
+- **Spotlight Tour**
 
   Records of type **Spotlight Tour** point to a Spotlight Tour which is a way for [!INCLUDE [prod_short](../includes/prod_short.md)] to open a page in a special mode that will suppress other tours and instead shine a bright spotlight on core capabilities like Open in Excel and Share to Teams. This is normally used in a sales and evaluation scenario to get customers excited about the product. Consider how you can use these spotlights for your own or other features, like opening af list in Excel or sharing a record in Teams. 
 
-  - **Video**
+- **Video**
 
   Records of type **Video** enables the user to watch a video provided by a custom URL. The video will play in a window inside [!INCLUDE [prod_short](../includes/prod_short.md)]. Consider how you can utilize video to explain a feature or capability. Video is normally used in a sales/evaluation scenario but could also be used for training purposes in an onboarding case.
 
-  - **Application Feature**
+- **Application Feature**
 
   Records of type **Application Feature** enables a checklist task to open any page inside [!INCLUDE [prod_short](../includes/prod_short.md)]. Similar to **Manual Setup** this opens a page and will display a page tour if any is defined.
-
 
 
 Checklist items can be based on records in the **Guided Experience Item** table, which means that before you surface a task on the checklist, you must first add it to **Guided Experience Item**.
