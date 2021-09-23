@@ -3,7 +3,7 @@ title: "System Data Type"
 description: "Is a complex data type."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 08/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -35,6 +35,7 @@ The following methods are available on the System data type.
 |[Clear(var Array of [Any])](system-clear-joker-method.md)|Clears the value of a single variable. Also, it clears all the filters that were set if the variable is a record and resets the key to the primary key and the company on a record variable.|
 |[Clear(var Any)](system-clear-joker-method.md)|Clears the value of a single variable. Also, it clears all the filters that were set if the variable is a record and resets the key to the primary key and the company on a record variable.|
 |[ClearAll()](system-clearall-method.md)|Clears all internal variables (except REC variables), keys, and filters in the object and in any associated objects, such as reports, pages, codeunits, and so on that contain AL code.|
+|[ClearCollectedErrors()](system-clearcollectederrors-method.md)|Clears all collected errors from the current collection scope.|
 |[ClearLastError()](system-clearlasterror-method.md)|Removes the last error message from memory.|
 |[ClosingDate(Date)](system-closingdate-method.md)|Gets the closing date for a Date Data Type.|
 |[CodeCoverageInclude(var Record)](system-codecoverageinclude-method.md)|Includes the code that has been logged.|
@@ -65,6 +66,7 @@ The following methods are available on the System data type.
 |[ExportObjects(String, var Record [, Integer])](system-exportobjects-method.md)|Exports application objects to a file.|
 |[Format(Any [, Integer] [, Integer])](system-format-joker-integer-integer-method.md)|Formats a value into a string.|
 |[Format(Any, Integer, String)](system-format-joker-integer-string-method.md)|Formats a value into a string.|
+|[GetCollectedErrors([Boolean])](system-getcollectederrors-method.md)|Gets all collected errors in the current collection scope.|
 |[GetDocumentUrl(Guid)](system-getdocumenturl-method.md)|Gets the URL for the specified temporary media object ID.|
 |[GetDotNetType(Any)](system-getdotnettype-method.md)|Gets the System.Type that corresponds to the given value.|
 |[GetLastErrorCallStack()](system-getlasterrorcallstack-method.md)|Gets the call stack from where the last error occurred.|
@@ -76,6 +78,7 @@ The following methods are available on the System data type.
 |[GetUrl(ClientType, String, ObjectType, Integer, RecordRef [, Boolean])](system-geturl-clienttype-string-objecttype-integer-recordref-boolean-method.md)|Generates a URL for the specified client target that is based on the configuration of the server instance. If the code runs in a multitenant deployment architecture, the generated URL will automatically apply to the tenant ID of the current user.|
 |[GlobalLanguage([Integer])](system-globallanguage-method.md)|Gets and sets the current global language setting.|
 |[GuiAllowed()](system-guiallowed-method.md)|Checks whether the AL code can show any information on the screen.|
+|[HasCollectedErrors()](system-hascollectederrors-method.md)|Gets a value indicating whether errors have been collected in the current error collection scope.|
 |[Hyperlink(String)](system-hyperlink-method.md)|Passes a URL as an argument to an Internet browser, such as Windows Internet Explorer.|
 |[ImportEncryptionKey(String, String)](system-importencryptionkey-method.md)|Points to a password protected file that contains the key on the current server. When encrypting or decrypting data in Dynamics 365 Business Central, an encryption key is used. A single key is used per tenant, and every tenant will have a different key. Keys can be created or imported if one exists already, as may be the case if upgrading or migrating a system from one set of hardware to another. The IMPORTENCRYPTIONKEY method allows an administrator to specify a file (password protected) which contains a key and imports it to the current Dynamics 365 Business Central service.|
 |[ImportObjects(String [, Integer])](system-importobjects-method.md)|Imports application objects from a file.|
