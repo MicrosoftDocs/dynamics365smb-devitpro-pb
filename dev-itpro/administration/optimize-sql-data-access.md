@@ -2,12 +2,13 @@
 title: "Data Access"
 description: Learn how to improve data access performance in Business Central.
 ms.custom: na
-ms.date: 07/01/2021
+ms.date: 09/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
+ms.search.keywords: data access,sql,partitioning,constraints
 author: jswymer
 ---
 # Data Access
@@ -169,8 +170,7 @@ Because SQL Server supports data compression on the partition level, you can com
 
 For more general information about table compression in SQL Server, see [Data Compression](/sql/relational-databases/data-compression/data-compression). For guidance on strategy, capacity planning, and best practices for data compression, see [Data Compression: Strategy, Capacity Planning, and Best Practices](/previous-versions/sql/sql-server-2008/dd894051(v=sql.100)).
 
-
-## Adding default SQL constraints to columns
+## Default SQL constraints to columns
 
 To add a default constraint to a column, use the following statement:
 
@@ -182,7 +182,7 @@ The naming of the default constraint isn't important, as long as they don't clas
 
 ### Default constraint value
 
-Business Central sets default constraints on fields in a tables. The following table list the values used for default constraints for the different data types:
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] sets default constraints on fields in a tables. The following table list the values used for default constraints for the different data types:
 
 |Data type|value|
 |---------|-------|
