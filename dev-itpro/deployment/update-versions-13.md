@@ -1,12 +1,12 @@
 ---
 title: "Cumulative updates"
 description: "Learn about the cumulative updates for Dynamics 365 Business Central on-premises deployments."
-author: MartinNielander
+author: edupont04
 ms.custom: na
 ms.reviewer: edupont
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
-ms.author: martinni
+ms.author: edupont
 ms.date: 04/01/2021
 
 ---
