@@ -39,6 +39,11 @@ This section describes all of the objects that are available with the AL Languag
 |Learn about how to create xmlport objects.|[XmlPort Object](devenv-xmlport-object.md)|
 |Learn about how to create query objects.|[Query Object](devenv-query-object.md)|
 |Learn about how to create control add-in objects.|[Control Add-In Object](devenv-control-addin-object.md)|
+
+## Controlling access to data
+
+|To |See |
+|---|----|
 |Learn about how to create entitlement objects.|[Entitlement Object](devenv-entitlement-object.md)|
 |Learn about how to create permissionset objects.|[Permissionset Object](devenv-permissionset-object.md)|
 |Learn about how to create permissionset extension objects.|[Permissionset Extension Object](devenv-permissionset-ext-object.md)|
