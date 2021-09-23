@@ -53,7 +53,7 @@ The profile file for AL code has the extension `.alcpuprofile` and when you open
 
 ## Graph of method calls
 
-To investigate the graph of method calls, you open the generated profile file in the performance profiling editor. If you click the file directly, it opens up in a default view. You can also right-click a profile file and get the following options: **AL Profile Visualizer TopDown Graph** and **AL Profile Visualizer BottomUp Graph**. When the the profile file opens, it looks similar to the illustration below:
+To investigate the graph of method calls, you open the generated profile file in the performance profiling editor. If you click the file directly, it opens up in *top-down* view. See the **View modes** section for more information. You can also right-click a profile file and get the following options: **AL Profile Visualizer TopDown Graph** and **AL Profile Visualizer BottomUp Graph**. When the the profile file opens, it looks similar to the illustration below:
 
 ![Graph of method calls](../media/profiler-graph.png)
 
@@ -63,24 +63,12 @@ To investigate the data shown in the graph, you can use different view modes as 
 |-----|-----|
 |System Application|Green|
 |Base Application|Magenta|
-|Extensions|Yellow|
+|Other Extensions|Yellow|
 
 The color legend can be changed by specifying the `al.profilerColors` property in the AL configuration. For more information, see [AL Language Extension Configuration](devenv-al-extension-configuration.md).
 
 > [!IMPORTANT]  
 > If you run Visual Studio Code with the setting **Run as administrator**, the graph will not display in the performance profiling editor view. As a workaround, you can launch Visual Studio Code from the command line with the flag `--no-sandbox`.
-
-## Keyboard shortcuts for navigating the graph
-
-The following table provides an overview of the shortcut key combinations that you can use when you are working in the graph of method calls.
-
-|Keyboard Shortcut|Action|
-|-----------------|------|
-|**Enter+Toggle** | Expand and collapse a node. |
-|**Arrow+Left** | Collapse a node. |
-|**Arrow+Right** | Expand a node. |
-|-(minus) | Collapse all nodes.|
-|*(star) | Expand one level for all nodes. Consecutive keystrokes will expand to the next level.|
 
 ### View modes
 
@@ -120,6 +108,18 @@ The aliases that are available for the column names are:
 |@t > 1000 | Shows all nodes in the graph where the total time is greater than 1 second. |
 |@h > 20 | Shows all nodes in the graph where the hit count was larger than 20. |
 |@da ~= Ba* | Shows all nodes in the graph that start with Ba.|
+
+## Keyboard shortcuts for navigating the graph
+
+The following table provides an overview of the shortcut key combinations that you can use when you are working in the graph of method calls.
+
+|Keyboard Shortcut|Action|
+|-----------------|------|
+|**Enter+Toggle** | Expand and collapse a node. |
+|**Arrow+Left** | Collapse a node. |
+|**Arrow+Right** | Expand a node. |
+|-(minus) | Collapse all nodes.|
+|*(star) | Expand one level for all nodes. Consecutive keystrokes will expand to the next level.|
 
 ## Inline CodeLens for AL profiling results
 
