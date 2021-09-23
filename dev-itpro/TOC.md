@@ -543,6 +543,7 @@
 ## AL Programming
 ### [AL Development Environment](developer/devenv-reference-overview.md)
 ### [Programming in AL](developer/devenv-programming-in-al.md)
+### [FAQ for Developing in AL](developer/devenv-dev-faq.md)
 ### [AL Simple Statements](developer/devenv-al-simple-statements.md)  
 ### [AL Control Statements](developer/devenv-al-control-statements.md)  
 ### [AL Complex Types](developer/devenv-al-complextypes.md)
@@ -552,7 +553,6 @@
 #### [Pragma Directive](developer/directives/devenv-directive-pragma.md)
 ### [Using Access Modifiers in AL](developer/devenv-using-access-modifiers.md)
 ### [XML Comments in Code](developer/devenv-xml-comments.md)
-### [FAQ for Developing in AL](developer/devenv-dev-faq.md)
 ### Code Analysis
 #### [Using the Code Analysis Tool](developer/devenv-using-code-analysis-tool.md)
 #### [Ruleset for the Code Analysis Tool](developer/devenv-rule-set-syntax-for-code-analysis-tools.md)
@@ -578,6 +578,7 @@
 #### [Table Object](developer/devenv-table-object.md)
 #### [Table Extension Object](developer/devenv-table-ext-object.md)
 #### [Table Keys](developer/devenv-table-keys.md)
+#### [Enums](developer/devenv-extensible-enums.md)
 #### [Page Object](developer/devenv-page-object.md)
 #### [Page Extension Object](developer/devenv-page-ext-object.md)
 #### [Page Customization Object](developer/devenv-page-customization-object.md)
