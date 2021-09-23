@@ -170,15 +170,15 @@ Because SQL Server supports data compression on the partition level, you can com
 
 For more general information about table compression in SQL Server, see [Data Compression](/sql/relational-databases/data-compression/data-compression). For guidance on strategy, capacity planning, and best practices for data compression, see [Data Compression: Strategy, Capacity Planning, and Best Practices](/previous-versions/sql/sql-server-2008/dd894051(v=sql.100)).
 
-## Default SQL constraints to columns
+## Default SQL constraints
 
-To add a default constraint to a column, use the following statement:
+To add a default constraint to a field (column), use the following SQL statement:
 
 ```sql
 ALTER TABLE ADD CONSTRAINT constraint_name DEFAULT default_value FOR field_name
 ```
 
-The naming of the default constraint isn't important, as long as they don't clash.
+The name of the default constraint isn't important, as long as it isn't used by other columns in the table.
 
 ### Default constraint value
 
