@@ -22,7 +22,7 @@ There are two types of methods: system methods (built-in) and user-defined (cust
 - Custom methods are specialized methods for your application to bind the objects, such as tables, pages, and code units, together to form a unified whole. You can create special methods for use anywhere in the database.
 
 > [!TIP]  
-> If you already know the name of, for example, a data type, method, property, or trigger, use the **Filter by title** field in the upper left corner, above the table of contents to find the topic faster.
+> If you already know the name of, for example, a data type, method, property, or trigger, use the **Filter by title** field in the upper left corner, above the table of contents to find the topic faster. Otherwise, you can scan the table of contents to find it.
 
 ## Declaring methods
 

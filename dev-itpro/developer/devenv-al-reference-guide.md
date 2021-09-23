@@ -15,7 +15,7 @@ ms.service: "dynamics365-business-central"
 This section describes all methods, data types, properties, and triggers in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. They also provide general descriptions of some of the features and functionality that [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] supports.
 
 > [!TIP]  
-> If you already know the name of, for example, a data type, method, property, or trigger, use the **Filter by title** field in the upper left corner, above the table of contents to find the topic faster.
+> If you already know the name of, for example, a data type, method, property, or trigger, use the **Filter by title** field in the upper left corner, above the table of contents to find the topic faster. Otherwise, you can scan the table of contents to find it.
 
 In the table of contents, all [AL methods](methods-auto/library.md) are listed under the AL data types that they support. Each data type topic contains a description of the data type. Under the **Methods** node, you will also find the [Method Attributes](attributes/devenv-method-attributes.md) and the [Option Types](methods-auto/action/action-option.md), both lists are sorted alphabetically.
 
