@@ -3,7 +3,7 @@ title: "OnQueryClosePageEvent (Page) Trigger Event"
 description: "Executed after the OnQueryClosePage trigger, which is called as a page closes and before the OnClosePage trigger executes."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 09/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,7 +24,7 @@ Executed after the OnQueryClosePage trigger, which is called as a page closes an
 ## Syntax
 ```AL
 [EventSubscriber(ObjectType::Page, Page::<Page Name>, 'OnQueryClosePageEvent', '', <SkipOnMissingLicense>, <SkipOnMissingPermission>)]
-local procedure MyProcedure(Rec: Record, AllowClose: Boolean)
+local procedure MyProcedure(Rec: Record; AllowClose: Boolean)
 begin
     ...
 end;

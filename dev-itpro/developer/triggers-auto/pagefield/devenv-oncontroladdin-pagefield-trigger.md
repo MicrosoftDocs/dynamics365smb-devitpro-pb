@@ -3,7 +3,7 @@ title: "OnControlAddIn (Page Field) Trigger"
 description: "Executed when a control add-in on the client sends event information to the server-side business logic."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 09/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,7 +23,7 @@ Executed when a control add-in on the client sends event information to the serv
 
 ## Syntax
 ```AL
-trigger OnControlAddIn(Index: Integer, Data: Text)
+trigger OnControlAddIn(Index: Integer; Data: Text)
 begin
     ...
 end;
