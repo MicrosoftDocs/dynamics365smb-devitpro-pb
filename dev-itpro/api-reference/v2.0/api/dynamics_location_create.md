@@ -15,6 +15,8 @@ ms.author: solsen
 <!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
 # Create locations
 
+[!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
+
 Creates a location in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## HTTP request
