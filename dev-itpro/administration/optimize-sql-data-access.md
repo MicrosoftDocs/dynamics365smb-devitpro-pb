@@ -178,7 +178,7 @@ To add a default constraint to a field (column), use the following SQL statement
 ALTER TABLE ADD CONSTRAINT constraint_name DEFAULT default_value FOR field_name
 ```
 
-The name of the default constraint isn't important, as long as it isn't used by other columns in the table.
+The name of the default constraint isn't important, as long as it isn't used by another column in the table.
 
 ### Default constraint value
 
