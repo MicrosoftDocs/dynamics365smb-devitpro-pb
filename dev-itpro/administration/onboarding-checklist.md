@@ -74,9 +74,9 @@ From the Dynamics 365 [!INCLUDE [prod_short](../includes/prod_short.md)] 2021 re
 
   Records of type **Spotlight Tour** point to a Spotlight Tour which is a way for [!INCLUDE [prod_short](../includes/prod_short.md)] to open a page in a special mode that will suppress other tours and instead shine a bright spotlight on core capabilities like Open in Excel and Share to Teams. This is normally used in a sales and evaluation scenario to get customers excited about the product. Consider how you can use these spotlights for your own or other features, like opening af list in Excel or sharing a record in Teams. 
 
-:::image type="content" source="../media/onboarding-checklist-spotlight-tour.png" alt-text="illustration of Business Central Spotlight Tour to call out Teams and Excel integration features.":::
+  :::image type="content" source="../media/onboarding-checklist-spotlight-tour.png" alt-text="illustration of Business Central Spotlight Tour to call out Teams and Excel integration features.":::
 
-<sup>2</sup><a name="2"></a>Illustration of Business Central Spotlight Tour to call out Teams and Excel integration features
+  <sup>2</sup><a name="4"></a>Illustration of Business Central Spotlight Tour to call out Teams and Excel integration features
 
 - **Video**
 
