@@ -72,7 +72,7 @@ begin
     else begin
         ContactRecordRef.GetTable(Contact);
         CRMIntegrationManagement.UpdateMultipleNow(ContactRecordRef);
-    end
+end;
 ```
 
 ## See Also
