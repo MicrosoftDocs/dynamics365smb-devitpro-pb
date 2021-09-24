@@ -29,7 +29,7 @@ On the [Service Trust](https://servicetrust.microsoft.com/) site, review the ava
 
 For example, you can find audit reports and certifications for ISO27001, ISO27018, or the SOC 2 Type II reports at [https://servicetrust.microsoft.com/](https://servicetrust.microsoft.com/).  
 
-### Databases and backups
+## Databases and backups
 
 [!INCLUDE [prod_short](includes/prod_short.md)] online runs on Azure and uses [Azure SQL Database](/azure/azure-sql/azure-sql-iaas-vs-paas-what-is-overview) as the database that stores your data. A tenant's data is stored at rest in the Azure region that is closest to their geographical location. Administrators can always find the exact Azure region that hosts their environments in the [!INCLUDE [prod_short](includes/prod_short.md)] administration center. For an overview of Azure geographies and regions, see the [Azure global infrastructure](https://azure.microsoft.com/global-infrastructure) site.  
 
@@ -52,6 +52,10 @@ For more information about Azure SQL, see [High availability for Azure SQL Datab
 For each environment, administrators can set a maintenance window for when Microsoft is allowed to update that environment. For more information, see [Managing Updates in the Business Central Admin Center](administration/tenant-admin-center-update-management.md). Microsoft then schedules updates of the business functionality to be applied during these maintenance windows.  
 
 An exception to this type of schedule is the continuous updates to the underlying service. The service components apply to multiple environments, such as all tenants in a region. So Microsoft schedules those updates to a time when traffic is lower in each region, typically during the evening or night. Typically, these service updates are transparent to any users, as the service is designed to manage traffic in a way that any users still working in [!INCLUDE [prod_short](includes/prod_short.md)] are not affected by these service updates.  
+
+## Service operations
+
+[!INCLUDE[prod_short](includes/prod_short.md)] runs globally in many Microsoft Azure datacenters. All parts of the infrastructure and services are continually monitored and optimized to deliver the best possible experience. Most service operations and optimizations happen without users being aware of them. In some situations, user interaction is needed, like reconnecting to [!INCLUDE[prod_short](includes/prod_short.md)] or refreshing the browser. Users will be notified directly in the browser if any action is required on their part. Users are asked to take action before the optimizations are applied on the service. This way, they can continue to work without further interruptions. Service operations happen all day, every day, to always provide best experience.
 
 ## Service reliability engineering (SRE)
 
