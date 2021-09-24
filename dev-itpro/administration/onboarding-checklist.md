@@ -23,7 +23,7 @@ The checklist provides an overview of the tasks to complete as well as a detaile
 
 The following illustration shows a [!INCLUDE [prod_short](../includes/prod_short.md)] Home page with a collapsed banner, which indicates the completion progress as well as providing a clear call-to-action to resume with the checklist activities.
 
-:::image type="content" source="../media/onboarding-banner-collapsed.png" alt-text="illustration of a collapsed banner with progress indication and a clear call-to-action to resume with the checklist activities. .":::
+:::image type="content" source="../media/onboarding-banner-collapsed.png" alt-text="illustration of a collapsed banner with progress indication and a clear call-to-action to resume with the checklist activities.":::
 
 <sup>3</sup><a name="3"></a>The collapsed banner.
 
@@ -34,7 +34,7 @@ Checklists are meant to assist users in finalizing setup and help users get star
 Based on the configuration choices made by the customer in Assisted Setups, you can download additional modular Configuration Packages necessary to complete the setup. This gives you a lot of flexibility to provide setup based on customer choices at different stages of the implementation, with the key advantage for you and the customer that you can spend less time on the actual implementation.
 
 > [!NOTE]
-> The checklist has different purposes in evaluation and non-evaluation companies. Consider this when adding checklist content. See more about the welcome banner and its purposes in evaluation and non-evaluation companies here: [https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/onboarding-welcome-banner](../administration/onboarding-welcome-banner.md)]  
+> The checklist has different purposes in evaluation and non-evaluation companies. Consider this when you add content to the checklist. For more information, see [Onboard New Users with the Welcome Banner](../administration/onboarding-welcome-banner.md)].
 
 ## Technical background of the checklist
 
@@ -72,7 +72,7 @@ From the Dynamics 365 [!INCLUDE [prod_short](../includes/prod_short.md)] 2021 re
 
 - **Spotlight Tour**
 
-  Records of type **Spotlight Tour** point to a Spotlight Tour which is a way for [!INCLUDE [prod_short](../includes/prod_short.md)] to open a page in a special mode that will suppress other tours and instead shine a bright spotlight on core capabilities like Open in Excel and Share to Teams. This is normally used in a sales and evaluation scenario to get customers excited about the product. Consider how you can use these spotlights for your own or other features, like opening af list in Excel or sharing a record in Teams. 
+  Records of type **Spotlight Tour** point to a special kind of tour where [!INCLUDE [prod_short](../includes/prod_short.md)] opens a page in a special mode that suppresses other tours and shines a bright spotlight on core capabilities, such as *Open in Excel* or *Share to Teams*. Use the spotlight tour in sales and evaluation scenarios to show off key capabilities that will get customers excited about the product. Consider how you can use these spotlights for your own or other features. 
 
   :::image type="content" source="../media/onboarding-checklist-spotlight-tour.png" alt-text="illustration of Business Central Spotlight Tour to call out Teams and Excel integration features.":::
 
