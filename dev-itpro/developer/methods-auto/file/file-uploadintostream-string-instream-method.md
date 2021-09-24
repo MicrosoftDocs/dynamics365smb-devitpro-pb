@@ -59,6 +59,9 @@ We recommend that you use the methods in codeunit 419, File Management, to uploa
 
 ## Example
 
+The `FromFilter` parameter must follow this pattern:
+`<ExtensionGroupName>|<extension1>;<extension2>`, for example `'Word files|*.docx;*.doc'`.
+
 ```al
 codeunit 50100 MyCodeunit
 {
@@ -68,7 +71,7 @@ codeunit 50100 MyCodeunit
         FromFilter: Text;
         NVInStream: InStream;
     begin
-        FromFilter := ' All Files (*.*)|*.*';
+        FromFilter := 'All Files|*.*';
         UploadIntoStream(FromFilter, NVInStream);
     end;
 
