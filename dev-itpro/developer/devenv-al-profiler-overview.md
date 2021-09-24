@@ -26,7 +26,7 @@ In order to do profiling on code, you must first capture a snapshot of running c
 |------|-----------|
 |`Debug` | The snapshot session will not gather profile information.| 
 |`Profile` | The snapshot session will only gather profile information, snappoints will be ignored, and debugging will not work.|
-|`DebugAndProfile` | Both debugging and profiling will be available as a result of a snapshot session.|
+|`DebugAndProfile` | Both debugging and profiling will be available as a result of a snapshot session. This is the default setting.|
 
 This means that if we want to use the snapshot both for debugging and profiling purposes, the configuration for the snapshot in the `launch.json` file, must look equivalent to the following:
 
@@ -47,13 +47,11 @@ This means that if we want to use the snapshot both for debugging and profiling 
     ...
 ```
 
-Then, when the snapshot file is downloaded, you can generate a profile file, based on the snapshot by using the **AL: Generate profile file** option.
-
-The profile file for AL code has the extension `.alcpuprofile` and when you open the file, it displays in the performance profiling editor view in Visual Studio Code.
+Then, when the snapshot file is downloaded, you can generate a profile file, based on the snapshot by using the **AL: Generate profile file** option. The profile file for AL code has the extension `.alcpuprofile` and when you open the file, it displays in the performance profiling editor view in Visual Studio Code.
 
 ## Graph of method calls
 
-To investigate the graph of method calls, you open the generated profile file in the performance profiling editor. If you click the file directly, it opens up in *top-down* view. See the **View modes** section for more information. You can also right-click a profile file and get the following options: **AL Profile Visualizer TopDown Graph** and **AL Profile Visualizer BottomUp Graph**. When the the profile file opens, it looks similar to the illustration below:
+To investigate the graph of method calls, you open the generated profile file in the performance profiling editor. If you click the file directly, it opens up in *top-down* view. See the **View modes** section for more information. You can also right-click a profile file and get the following options: **AL Profile Visualizer TopDown Graph** and **AL Profile Visualizer BottomUp Graph**. When the profile file opens, it looks similar to the illustration below:
 
 ![Graph of method calls](../media/profiler-graph.png)
 
