@@ -178,7 +178,7 @@ To add a default constraint to a field (column), use the following SQL statement
 ALTER TABLE ADD CONSTRAINT constraint_name DEFAULT default_value FOR field_name
 ```
 
-The name of the default constraint isn't important, as long as it isn't used by another column in the table.
+The name of the default constraint isn't important, as long as it isn't used by another column in the database.
 
 ### Default constraint value
 
@@ -197,7 +197,7 @@ The name of the default constraint isn't important, as long as it isn't used by 
 |Time, Date, DateTime|'1753.01.01'|
 
 > [!NOTE]
-> Blobs don't get default constraints, but they allowed to be null.
+> Blobs don't get default constraints, but they are allowed to be null.
 
 ## See Also
 
