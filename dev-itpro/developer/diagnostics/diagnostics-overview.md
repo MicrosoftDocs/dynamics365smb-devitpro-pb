@@ -564,8 +564,7 @@ author: SusanneWindfeldPedersen
 |[AL682](diagnostic-al682.md)|A DataItem or Column with name '{0}' could not be found in the target {1}.|Error|
 |[AL683](diagnostic-al683.md)|The permissionset '{0}' belongs to a different module and cannot be used when defining entitlements.|Error|
 |[AL684](diagnostic-al684.md)|The permissionset '{0}' contains permissionsets or permission for objects from other module. Permissions on objects from other modules will be ignored.|Warning|
-|[AL685](diagnostic-al685.md)|The length '{0}' of the calculation formula's target field '{1}' is greater than the length '{2}' of the source flow field '{3}'. This could result in a runtime error. 
-Please make sure that the target field's length is less than equal to the source field length.|Warning (Future Error)|
+|[AL685](diagnostic-al685.md)|The length '{0}' of the calculation formula's target field '{1}' is greater than the length '{2}' of the source flow field '{3}'. This could result in a runtime error. Please make sure that the target field's length is less than equal to the source field length.|Warning (Future Error)|
 |[AL686](diagnostic-al686.md)|The base type already defines a method called '{0}' with the same parameter types.|Error|
 |[AL687](diagnostic-al687.md)|The key '{0}' on table '{1}' cannot contain the fields defined for the primary key in the IncludeFields property.|Error|
 |[AL688](diagnostic-al688.md)|The key '{0}' on table '{1}' cannot contain the fields defined for the key in the IncludeFields property.|Error|
