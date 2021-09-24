@@ -93,7 +93,7 @@ The first reaction may be to modify the per-tenant extension, remove the conflic
 This error message is raised because the system does not allow implicitly removing or renaming schema elements such as tables and table fields. To upgrade the environment, it is necessary to forcefully remove the conflicting field by following these steps:
 
 1. Create a sandbox.  
-    Because the following steps can lead to data-loss, it is recommended that the steps are first performed in a sandbox environment created as a *copy* from the production environment. For more information, see [Create a new environment](tenant-admin-center-environments.md#create-a-new-environment).
+    Because the following steps can lead to data-loss, it is recommended that the steps are first performed in a sandbox environment created as a *copy* from the production environment. For more information, see [Create a new environment](../administration/tenant-admin-center-environments.md#create-a-new-environment).
 2. Export data using RapidStart.  
     Start by backing up the data contained in the tables or table extensions declared by the extension using RapidStart. Use other mechanisms to backup the data, but the main point is to backup data to an external storage system.
 3. Uninstall the extension.  
