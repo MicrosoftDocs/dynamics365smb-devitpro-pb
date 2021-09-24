@@ -87,6 +87,10 @@ From the Dynamics 365 [!INCLUDE [prod_short](../includes/prod_short.md)] 2021 re
 
   Records of type **Video** enables the user to watch a video provided by a custom URL. The video will play in a window inside [!INCLUDE [prod_short](../includes/prod_short.md)]. Consider how you can utilize video to explain a feature or capability. Video is normally used in a sales/evaluation scenario but could also be used for training purposes in an onboarding case.
 
+  :::image type="content" source="../media/onboarding-checklist-video.png" alt-text="Illustration showing a video player inside Business Central, started from the checklist.":::
+
+  <sup>6</sup><a name="6"></a>Illustration showing a video player inside Business Central, started from the checklist.
+
 - **Application Feature**
 
   Records of type **Application Feature** enables a checklist task to open any page inside [!INCLUDE [prod_short](../includes/prod_short.md)]. Similar to **Manual Setup** this opens a page and will display a page tour if any is defined.
