@@ -54,6 +54,27 @@ If more than one record is selected on the page, then SetSelectionFilter does th
 - Copies the current filter group  
 - Marks the selected records and sets the "marked only" filter 
 
+## Example
+
+The following example shows how to use the **SetSelectionFilter** method to update the record or records from the `Contact` table that the user has selected on the current page.
+
+```
+var
+    Contact: Record Contact;
+    CRMIntegrationManagement: Codeunit "CRM Integration Management";
+    ContactRecordRef: RecordRef;
+begin
+    CurrPage.SetSelectionFilter(Contact);
+    Contact.Next;
+
+    if Contact.Count = 1 then
+        CRMIntegrationManagement.UpdateOneNow(Contact.RecordId)
+    else begin
+        ContactRecordRef.GetTable(Contact);
+        CRMIntegrationManagement.UpdateMultipleNow(ContactRecordRef);
+    end
+```
+
 ## See Also
 [Page Data Type](page-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
