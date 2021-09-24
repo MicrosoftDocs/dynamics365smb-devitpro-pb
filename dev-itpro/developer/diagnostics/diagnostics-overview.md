@@ -3,7 +3,7 @@ title: "AL Diagnostics"
 description: ""
 ms.author: solsen
 ms.custom: na
-ms.date: 09/21/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -547,6 +547,7 @@ author: SusanneWindfeldPedersen
 |[AL657](diagnostic-al657.md)|The property {0} is mandatory for ListParts and PageParts.|Error|
 |[AL658](diagnostic-al658.md)|Member name '{0}' is only allowed on triggers.|Error|
 |[AL659](diagnostic-al659.md)|The length of the enum identifier '{0}' should not exceed {1} characters as it may result in runtime issues in cases where there are other enums with the same first {1} characters.|Warning|
+|[AL660](diagnostic-al660.md)|The property '{0}' cannot be customized.|Warning (Future Error)|
 |[AL665](diagnostic-al665.md)|'{0}' is not a valid return type in runtime version '{1}'. The supported runtime versions are: {2}.|Error|
 |[AL666](diagnostic-al666.md)|'{0}' is not available in runtime version '{1}'. The supported runtime versions are: {2}.|Error|
 |[AL667](diagnostic-al667.md)|'{0}' is being deprecated in the versions: {1} {2}.|Warning (Future Error)|
@@ -654,25 +655,25 @@ Please make sure that the target field's length is less than equal to the source
 |[AL1130](diagnostic-al1130.md)|The format of property '{0}' must be a timeout duration specified as '[d.]hh:mm:ss[.fffffff]'.|Error|
 |[AL1150](diagnostic-al1150.md)|The link in parameter '{0}' ({1}) is not valid. {2}.|Error|
 |[AL1151](diagnostic-al1151.md)|Cannot create a manifest for Extension "{0}" because the Name and Publisher are the same as one or more dependencies.|Error|
-|[AL1401](diagnostic-al1401.md)|Reference '{0}' in application object '{1}' does not exist.|Personalization Warning|
-|[AL1402](diagnostic-al1402.md)|{0} '{1}' is missing.|Personalization Warning|
-|[AL1403](diagnostic-al1403.md)|'{0}' is an ambiguous reference between '{1}' defined by the extension '{2}' and '{3}' defined by the extension '{4}'.|Personalization Warning|
-|[AL1404](diagnostic-al1404.md)|The action '{0}' is not found in the target '{1}'.|Personalization Warning|
-|[AL1405](diagnostic-al1405.md)|The control '{0}' is not found in the target '{1}'.|Personalization Warning|
-|[AL1406](diagnostic-al1406.md)|The view '{0}' is not found in the target '{1}'.|Personalization Warning|
-|[AL1407](diagnostic-al1407.md)|At least one target has to be specified for the move.|Personalization Warning|
-|[AL1408](diagnostic-al1408.md)|Invalid application object identifier. A number or an application object name is expected.|Personalization Warning|
-|[AL1409](diagnostic-al1409.md)|Page '{0}' should be of type 'RoleCenter'.|Personalization Warning|
-|[AL1410](diagnostic-al1410.md)|The target {0} {1} for the extension object is not found.|Personalization Warning|
-|[AL1411](diagnostic-al1411.md)|Multiple page customizations have been specified for the same page {0} within the same profile.|Personalization Warning|
-|[AL1412](diagnostic-al1412.md)|{0} '{1}' is marked for removal. {2}.|Personalization Warning|
-|[AL1413](diagnostic-al1413.md)|A member of type {0} with name '{1}' is already defined in {2} '{3}' by the extension '{4}'.|Personalization Warning|
-|[AL1414](diagnostic-al1414.md)|The page customization for page '{0}' does not make any modifications, so it can be removed without affecting any profiles or user personalization.|Personalization Information|
-|[AL1415](diagnostic-al1415.md)|{0} '{1}' is removed. {2}.|Personalization Warning|
-|[AL1416](diagnostic-al1416.md)|The {0} '{1}' cannot be moved relatively to '{2}' because '{2}' is missing. This move is ignored.|Personalization Information|
-|[AL1417](diagnostic-al1417.md)|The {0} '{1}' cannot be added relatively to '{2}' because '{2}' is missing. '{1}' is added at a default location instead.|Personalization Information|
-|[AL1418](diagnostic-al1418.md)|A DataItem with name '{0}' could not be found in the target {1}.|Personalization Warning|
-|[AL1419](diagnostic-al1419.md)|A DataItem or Column with name '{0}' could not be found in the target {1}.|Personalization Warning|
+|[AL1401](diagnostic-al1401.md)|Reference '{0}' in application object '{1}' does not exist.|Designer Customization Warning|
+|[AL1402](diagnostic-al1402.md)|{0} '{1}' is missing.|Designer Customization Warning|
+|[AL1403](diagnostic-al1403.md)|'{0}' is an ambiguous reference between '{1}' defined by the extension '{2}' and '{3}' defined by the extension '{4}'.|Designer Customization Warning|
+|[AL1404](diagnostic-al1404.md)|The action '{0}' is not found in the target '{1}'.|Designer Customization Warning|
+|[AL1405](diagnostic-al1405.md)|The control '{0}' is not found in the target '{1}'.|Designer Customization Warning|
+|[AL1406](diagnostic-al1406.md)|The view '{0}' is not found in the target '{1}'.|Designer Customization Warning|
+|[AL1407](diagnostic-al1407.md)|At least one target has to be specified for the move.|Designer Customization Warning|
+|[AL1408](diagnostic-al1408.md)|Invalid application object identifier. A number or an application object name is expected.|Designer Customization Warning|
+|[AL1409](diagnostic-al1409.md)|Page '{0}' should be of type 'RoleCenter'.|Designer Customization Warning|
+|[AL1410](diagnostic-al1410.md)|The target {0} {1} for the extension object is not found.|Designer Customization Warning|
+|[AL1411](diagnostic-al1411.md)|Multiple page customizations have been specified for the same page {0} within the same profile.|Designer Customization Warning|
+|[AL1412](diagnostic-al1412.md)|{0} '{1}' is marked for removal. {2}.|Designer Customization Warning|
+|[AL1413](diagnostic-al1413.md)|A member of type {0} with name '{1}' is already defined in {2} '{3}' by the extension '{4}'.|Designer Customization Warning|
+|[AL1414](diagnostic-al1414.md)|The page customization for page '{0}' does not make any modifications, so it can be removed without affecting any profiles or user personalization.|Designer Customization Information|
+|[AL1415](diagnostic-al1415.md)|{0} '{1}' is removed. {2}.|Designer Customization Warning|
+|[AL1416](diagnostic-al1416.md)|The {0} '{1}' cannot be moved relatively to '{2}' because '{2}' is missing. This move is ignored.|Designer Customization Information|
+|[AL1417](diagnostic-al1417.md)|The {0} '{1}' cannot be added relatively to '{2}' because '{2}' is missing. '{1}' is added at a default location instead.|Designer Customization Information|
+|[AL1418](diagnostic-al1418.md)|A DataItem with name '{0}' could not be found in the target {1}.|Designer Customization Warning|
+|[AL1419](diagnostic-al1419.md)|A DataItem or Column with name '{0}' could not be found in the target {1}.|Designer Customization Warning|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

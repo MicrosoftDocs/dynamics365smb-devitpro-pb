@@ -1,5 +1,5 @@
 ---
-title: "Compiler Designer Customization Warning AL1403"
+title: "Compiler Warning (Future Error) AL660"
 description: ""
 ms.author: solsen
 ms.custom: na
@@ -14,9 +14,11 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Designer Customization Warning AL1403
-'{0}' is an ambiguous reference between '{1}' defined by the extension '{2}' and '{3}' defined by the extension '{4}'.
+# Compiler Warning (Future Error) AL660
+The property '{0}' cannot be customized.
 
+> [!IMPORTANT]
+> This warning will become an error in Fall 2022.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

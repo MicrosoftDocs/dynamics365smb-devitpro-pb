@@ -1,9 +1,9 @@
 ---
-title: "Compiler Personalization Warning AL1415"
+title: "Compiler Designer Customization Warning AL1415"
 description: ""
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Personalization Warning AL1415
+# Compiler Designer Customization Warning AL1415
 {0} '{1}' is removed. {2}.
 
 

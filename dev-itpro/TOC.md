@@ -1182,6 +1182,7 @@
 ###### [AL649](developer/diagnostics/diagnostic-al649.md)
 ###### [AL650](developer/diagnostics/diagnostic-al650.md)
 ###### [AL655](developer/diagnostics/diagnostic-al655.md)
+###### [AL660](developer/diagnostics/diagnostic-al660.md)
 ###### [AL667](developer/diagnostics/diagnostic-al667.md)
 ###### [AL685](developer/diagnostics/diagnostic-al685.md)
 ###### [AL692](developer/diagnostics/diagnostic-al692.md)
@@ -1195,7 +1196,7 @@
 ##### Fatal Error messages
 ###### [AL1100](developer/diagnostics/diagnostic-al1100.md)
 ###### [AL1101](developer/diagnostics/diagnostic-al1101.md)
-##### Personalization Warning messages
+##### Designer Customization Warning messages
 ###### [AL1401](developer/diagnostics/diagnostic-al1401.md)
 ###### [AL1402](developer/diagnostics/diagnostic-al1402.md)
 ###### [AL1403](developer/diagnostics/diagnostic-al1403.md)
@@ -1212,7 +1213,7 @@
 ###### [AL1415](developer/diagnostics/diagnostic-al1415.md)
 ###### [AL1418](developer/diagnostics/diagnostic-al1418.md)
 ###### [AL1419](developer/diagnostics/diagnostic-al1419.md)
-##### Personalization Information messages
+##### Designer Customization Information messages
 ###### [AL1414](developer/diagnostics/diagnostic-al1414.md)
 ###### [AL1416](developer/diagnostics/diagnostic-al1416.md)
 ###### [AL1417](developer/diagnostics/diagnostic-al1417.md)
