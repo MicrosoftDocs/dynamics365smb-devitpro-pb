@@ -71,7 +71,7 @@ codeunit 50100 MyCodeunit
         FromFilter: Text;
         NVInStream: InStream;
     begin
-        FromFilter := 'All Files|*.*';
+        FromFilter := 'All Files (*.*)|*.*';
         UploadIntoStream(FromFilter, NVInStream);
     end;
 
