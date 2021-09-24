@@ -57,10 +57,12 @@ You can create new environments that are either production environments or sandb
 ### To create a new environment that is not a copy of an existing environment
 
 1. On the **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], choose the **New** action on the action ribbon.
-2. In the **Create Environment** pane, in the **Environment Type** list, choose **Production** or **Sandbox**.
-3. In the **Country** list, select the country for the environment. The specified country determines the localization for the environment and the Azure region in which the environment is created and stored.
-4. Specifically for sandbox environments, you must also specify the relevant application version for the new sandbox environment from the **Version** list if more than one version is available.
-5. Select **Create**.
+2. In the **Create Environment** pane, Specify a name for the new environment.
+3. In the **Environment Type** list, choose **Production** or **Sandbox**.
+4. In the **Application family** field, specify the type of solution that this environment is based on if this is not [!INCLUDE [prod_short](../includes/prod_short.md)].  
+5. In the **Country** list, select the country for the environment. The specified country determines the localization for the environment and the Azure region in which the environment is created and stored.
+6. In the **Version** list, specify the relevant application version for the new environment if more than one version is available.  
+7. Choose the **Create** action.  
 
 > [!NOTE]
 > The new environment won't be accessible until the **State** shows *Active*.
