@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL449"
-description: ""
+description: "The alias '{0}' is already declared."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

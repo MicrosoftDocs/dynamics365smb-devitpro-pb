@@ -1,9 +1,9 @@
 ---
 title: "Compiler Warning (Future Error) AL608"
-description: ""
+description: "The OrderBy property must specify at least one field on which to sort the data."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

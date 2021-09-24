@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL353"
-description: ""
+description: "A Column must have a valid data source or have the 'Method' property set to 'Count'."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

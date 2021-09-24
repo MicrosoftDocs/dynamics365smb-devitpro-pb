@@ -1,6 +1,6 @@
 ---
 title: "Compiler Designer Customization Warning AL1411"
-description: ""
+description: "Multiple page customizations have been specified for the same page {0} within the same profile."
 ms.author: solsen
 ms.custom: na
 ms.date: 09/24/2021

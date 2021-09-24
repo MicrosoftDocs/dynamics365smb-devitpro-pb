@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL675"
-description: ""
+description: "An implementation for the interface '{0}' is already specified in this list."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

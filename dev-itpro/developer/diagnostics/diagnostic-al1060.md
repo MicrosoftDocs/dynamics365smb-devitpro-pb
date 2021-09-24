@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL1060"
-description: ""
+description: "The max degree of parallelism must be -1 or positive."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

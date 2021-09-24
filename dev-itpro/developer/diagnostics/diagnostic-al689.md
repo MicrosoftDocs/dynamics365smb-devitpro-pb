@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL689"
-description: ""
+description: "The key '{0}' on table '{1}' cannot contain the fields defined for the SqlIndex in the IncludeFields property."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/21/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

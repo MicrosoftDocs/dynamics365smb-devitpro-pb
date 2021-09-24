@@ -1,9 +1,9 @@
 ---
 title: "Compiler Warning AL557"
-description: ""
+description: "The name of the codeunit local variable '{0}' is identical to a field in table '{1}' and will shadow that table field."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

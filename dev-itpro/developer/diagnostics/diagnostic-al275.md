@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL275"
-description: ""
+description: "'{0}' is an ambiguous reference between '{1}' defined by the extension '{2}' and '{3}' defined by the extension '{4}'."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

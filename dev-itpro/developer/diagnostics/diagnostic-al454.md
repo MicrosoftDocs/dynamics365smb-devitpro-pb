@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL454"
-description: ""
+description: "The {0} {1} of type {2} cannot be extended."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

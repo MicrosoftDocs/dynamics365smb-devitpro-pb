@@ -1,6 +1,6 @@
 ---
 title: "Compiler Designer Customization Warning AL1413"
-description: ""
+description: "A member of type {0} with name '{1}' is already defined in {2} '{3}' by the extension '{4}'."
 ms.author: solsen
 ms.custom: na
 ms.date: 09/24/2021

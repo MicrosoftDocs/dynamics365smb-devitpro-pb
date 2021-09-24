@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL579"
-description: ""
+description: "The value for the property '{0}' for the language code '{1}' is not valid because its length exceeds {2} characters ({3} characters)."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

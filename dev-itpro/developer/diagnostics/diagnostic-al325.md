@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL325"
-description: ""
+description: "The field '{0}' in the table '{1}' cannot be included in a key because its type is '{2}'."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

@@ -1,9 +1,9 @@
 ---
 title: "Compiler Hidden AL605"
-description: ""
+description: "Use of implicit 'with' will be removed in the future."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL538"
-description: ""
+description: "Views only support setting one sorting direction on table fields."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

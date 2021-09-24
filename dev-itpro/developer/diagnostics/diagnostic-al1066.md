@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL1066"
-description: ""
+description: "Duplicate package dependency with application ID '{0}', publisher '{1}', and name '{2}'."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

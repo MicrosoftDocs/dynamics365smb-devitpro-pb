@@ -1,6 +1,6 @@
 ---
 title: "Compiler Designer Customization Information AL1416"
-description: ""
+description: "The {0} '{1}' cannot be moved relatively to '{2}' because '{2}' is missing."
 ms.author: solsen
 ms.custom: na
 ms.date: 09/24/2021

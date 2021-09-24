@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL433"
-description: ""
+description: "{0} '{1}' is removed."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

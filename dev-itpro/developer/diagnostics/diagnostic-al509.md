@@ -1,9 +1,9 @@
 ---
 title: "Compiler Warning AL509"
-description: ""
+description: "Constant value '{0}' is outside of the valid ordinal range for this option type."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/21/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

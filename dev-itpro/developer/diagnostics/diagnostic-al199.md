@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL199"
-description: ""
+description: "The type of the sum index field '{0}' must be numeric(Decimal, BigInteger, Integer, or Duration)."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/21/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

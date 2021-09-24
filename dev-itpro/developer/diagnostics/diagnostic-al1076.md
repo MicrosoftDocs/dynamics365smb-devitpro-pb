@@ -1,9 +1,9 @@
 ---
 title: "Compiler Information AL1076"
-description: ""
+description: "A package that satisfies the dependency on app with ID {0} with name '{1}' and publisher '{2}' was found, but the name or publisher has changed."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

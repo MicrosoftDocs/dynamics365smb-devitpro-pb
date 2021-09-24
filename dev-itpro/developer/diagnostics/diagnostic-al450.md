@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL450"
-description: ""
+description: "Field '{0}' is removed and cannot be used in an active key."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

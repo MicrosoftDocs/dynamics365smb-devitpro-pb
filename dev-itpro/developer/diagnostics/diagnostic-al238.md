@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL238"
-description: ""
+description: "No overload for attribute '{0}' expects {1} arguments."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

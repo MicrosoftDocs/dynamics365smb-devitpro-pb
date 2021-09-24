@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL1038"
-description: ""
+description: "The version number '{0}' for the property '{1}' does not match the expected format: W.X.Y.Z where W, X, Y, and Z represent positive integers."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

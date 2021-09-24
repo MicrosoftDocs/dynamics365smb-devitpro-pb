@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL474"
-description: ""
+description: "The attribute '{0}' is only allowed on local variables."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

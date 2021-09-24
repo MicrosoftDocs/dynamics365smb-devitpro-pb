@@ -1,9 +1,9 @@
 ---
 title: "Compiler Warning AL374"
-description: ""
+description: "The use of a unique ID has been deprecated and the ID can be removed."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

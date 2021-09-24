@@ -1,6 +1,6 @@
 ---
 title: "Compiler Designer Customization Warning AL1410"
-description: ""
+description: "The target {0} {1} for the extension object is not found."
 ms.author: solsen
 ms.custom: na
 ms.date: 09/24/2021

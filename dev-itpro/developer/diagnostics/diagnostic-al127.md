@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL127"
-description: ""
+description: "Member '{0}' cannot be used like a method."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

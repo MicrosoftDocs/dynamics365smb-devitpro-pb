@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL430"
-description: ""
+description: "The parameter '{0}' has a type which is not serializable and therefore cannot be used in the given context."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

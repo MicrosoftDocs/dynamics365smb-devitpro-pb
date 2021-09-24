@@ -1,9 +1,9 @@
 ---
 title: "Compiler Warning AL1026"
-description: ""
+description: "A warning occurred during XML validation: '{0}'."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

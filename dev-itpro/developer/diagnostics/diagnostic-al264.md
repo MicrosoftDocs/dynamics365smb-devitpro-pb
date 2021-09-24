@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL264"
-description: ""
+description: "An application object of type '{0}' with ID '{1}' is already declared by the extension '{2}'."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

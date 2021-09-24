@@ -1,9 +1,9 @@
 ---
 title: "Compiler Warning AL588"
-description: ""
+description: "The type of parameter '{1}' on event subscriber '{0}' is of type 'Option', but the expected type is '{2}'."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

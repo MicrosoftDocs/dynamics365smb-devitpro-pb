@@ -1,6 +1,6 @@
 ---
 title: "Compiler Designer Customization Warning AL1419"
-description: ""
+description: "A DataItem or Column with name '{0}' could not be found in the target {1}."
 ms.author: solsen
 ms.custom: na
 ms.date: 09/24/2021

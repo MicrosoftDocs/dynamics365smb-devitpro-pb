@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL460"
-description: ""
+description: "Client-side events are supported only on pages and page extensions."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

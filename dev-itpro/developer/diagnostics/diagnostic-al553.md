@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL553"
-description: ""
+description: "You can only specify Move and Modify actions in the '{0}' area of the actions section of a page customization."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

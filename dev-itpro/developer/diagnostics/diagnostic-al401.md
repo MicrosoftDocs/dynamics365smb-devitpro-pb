@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL401"
-description: ""
+description: "Multiple page customizations have been specified for the same page {0} within the same profile."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

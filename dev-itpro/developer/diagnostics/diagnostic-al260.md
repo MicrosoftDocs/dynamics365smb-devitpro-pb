@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL260"
-description: ""
+description: "The key '{0}' on table '{1}' cannot start with the fields defined for the primary key."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/21/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

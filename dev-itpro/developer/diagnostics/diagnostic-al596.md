@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL596"
-description: ""
+description: "Value '{0}' does not implement interface '{1}' and there is no default implementation for the mentioned interface."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

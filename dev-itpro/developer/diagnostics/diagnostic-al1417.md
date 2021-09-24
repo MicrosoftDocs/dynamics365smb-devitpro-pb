@@ -1,6 +1,6 @@
 ---
 title: "Compiler Designer Customization Information AL1417"
-description: ""
+description: "The {0} '{1}' cannot be added relatively to '{2}' because '{2}' is missing."
 ms.author: solsen
 ms.custom: na
 ms.date: 09/24/2021

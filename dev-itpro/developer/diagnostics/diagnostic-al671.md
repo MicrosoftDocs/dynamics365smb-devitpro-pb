@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL671"
-description: ""
+description: "Fast publishing failed because the RAD file has specified an existing application object of type: '{0}' name: '{1}' ID: '{2}' to be deleted."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

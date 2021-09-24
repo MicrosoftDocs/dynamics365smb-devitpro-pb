@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL259"
-description: ""
+description: "A SQLIndex defined for the primary key must contain the same fields as the key for table '{0}'."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/21/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

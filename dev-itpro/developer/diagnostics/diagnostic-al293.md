@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL293"
-description: ""
+description: "Property value {0} is not in the field's OptionMembers."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

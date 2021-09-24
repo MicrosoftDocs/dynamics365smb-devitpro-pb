@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL214"
-description: ""
+description: "An area of type 'FactBoxes' is not valid on Part type pages."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

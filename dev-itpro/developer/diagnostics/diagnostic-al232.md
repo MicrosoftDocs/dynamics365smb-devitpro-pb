@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL232"
-description: ""
+description: "The property value on field '{0}' must be positive or zero."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

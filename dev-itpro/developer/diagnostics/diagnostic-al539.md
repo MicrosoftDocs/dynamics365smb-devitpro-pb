@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL539"
-description: ""
+description: "The field '{0}' cannot be used multiple times when defining the order of the page view."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

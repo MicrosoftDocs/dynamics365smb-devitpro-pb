@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL345"
-description: ""
+description: "The source of a Column or Filter must be a field defined on the table referenced by its parent DataItem."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

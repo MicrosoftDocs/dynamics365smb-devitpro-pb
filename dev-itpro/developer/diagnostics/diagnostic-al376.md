@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL376"
-description: ""
+description: "A control of type '{0}' is not allowed in a parent control of type '{1}'."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

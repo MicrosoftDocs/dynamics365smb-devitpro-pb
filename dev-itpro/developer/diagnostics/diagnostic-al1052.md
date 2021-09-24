@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL1052"
-description: ""
+description: "The link '{0}' can only contain one placeholder with value 0 for the user locale."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL351"
-description: ""
+description: "The property 'DataItemLink' can only reference fields on ancestor data items."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

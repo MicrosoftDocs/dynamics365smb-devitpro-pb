@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL572"
-description: ""
+description: "I/O operations on the file or folder '{0}' resulted in an exception with the Windows 32 error code '{1}'."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

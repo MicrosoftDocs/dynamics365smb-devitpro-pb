@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL236"
-description: ""
+description: "An empty CONST() expression is not allowed on field '{0}' of type '{1}'."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL383"
-description: ""
+description: "The option value '{0}' is not defined on field '{1}'."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

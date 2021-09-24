@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL451"
-description: ""
+description: "An assembly named '{0}' could not be found in the assembly probing paths '{1}'."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

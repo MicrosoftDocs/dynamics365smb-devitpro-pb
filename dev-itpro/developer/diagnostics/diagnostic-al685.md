@@ -1,9 +1,9 @@
 ---
 title: "Compiler Warning (Future Error) AL685"
-description: ""
+description: "The length '{0}' of the calculation formula's target field '{1}' is greater than the length '{2}' of the source flow field '{3}'."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/21/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

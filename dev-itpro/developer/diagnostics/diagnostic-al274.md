@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL274"
-description: ""
+description: "The anchoring symbol '{0}' cannot be an area."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL423"
-description: ""
+description: "The property '{0}' can only be set if the specified fields are from the same table."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

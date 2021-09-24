@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL656"
-description: ""
+description: "The {0} '{1}' cannot be used as an anchor because it is already defined in the same '{2}'."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL535"
-description: ""
+description: "The referenced page '{0}' must be a List part, a Card part, or an API page."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

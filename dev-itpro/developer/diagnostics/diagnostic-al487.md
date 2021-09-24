@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL487"
-description: ""
+description: "The field '{0}' is not of field class 'Normal' and thus cannot be part of the {1} list."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

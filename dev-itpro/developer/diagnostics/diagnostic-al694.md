@@ -1,9 +1,9 @@
 ---
 title: "Compiler Warning (Future Error) AL694"
-description: ""
+description: "The field '{0}' which is part of the primary key of table '{1}' cannot be obsolete."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/21/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

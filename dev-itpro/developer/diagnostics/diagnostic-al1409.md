@@ -1,6 +1,6 @@
 ---
 title: "Compiler Designer Customization Warning AL1409"
-description: ""
+description: "Page '{0}' should be of type 'RoleCenter'."
 ms.author: solsen
 ms.custom: na
 ms.date: 09/24/2021

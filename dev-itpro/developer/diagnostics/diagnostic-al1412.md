@@ -1,6 +1,6 @@
 ---
 title: "Compiler Designer Customization Warning AL1412"
-description: ""
+description: "{0} '{1}' is marked for removal."
 ms.author: solsen
 ms.custom: na
 ms.date: 09/24/2021

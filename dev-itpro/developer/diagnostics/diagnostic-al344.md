@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL344"
-description: ""
+description: "The property 'DataItemLink' must be set."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

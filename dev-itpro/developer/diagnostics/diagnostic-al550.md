@@ -1,9 +1,9 @@
 ---
 title: "Compiler Warning (Future Error) AL550"
-description: ""
+description: "Groups defined in the action area '{0}' should only contain actions."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

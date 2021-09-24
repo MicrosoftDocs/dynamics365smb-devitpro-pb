@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL477"
-description: ""
+description: "The trigger '{0}' can only be used if the property '{1}' of '{2}' is set to '{3}'."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

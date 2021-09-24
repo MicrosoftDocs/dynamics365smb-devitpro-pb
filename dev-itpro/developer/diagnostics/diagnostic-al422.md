@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL422"
-description: ""
+description: "Constant value {0} is not a valid value for APIVersion."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

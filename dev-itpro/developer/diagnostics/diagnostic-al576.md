@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL576"
-description: ""
+description: "The profile name '{0}' is not valid because it contains leading or trailing spaces."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

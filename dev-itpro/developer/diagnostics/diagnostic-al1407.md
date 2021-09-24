@@ -1,6 +1,6 @@
 ---
 title: "Compiler Designer Customization Warning AL1407"
-description: ""
+description: "At least one target has to be specified for the move."
 ms.author: solsen
 ms.custom: na
 ms.date: 09/24/2021

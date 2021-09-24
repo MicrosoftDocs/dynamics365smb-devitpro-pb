@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL425"
-description: ""
+description: "The '{0}' trigger can only be used on codeunits that have the Subtype property set to '{1}'."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

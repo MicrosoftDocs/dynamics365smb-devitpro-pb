@@ -1,6 +1,6 @@
 ---
 title: "Compiler Designer Customization Warning AL1408"
-description: ""
+description: "Invalid application object identifier."
 ms.author: solsen
 ms.custom: na
 ms.date: 09/24/2021

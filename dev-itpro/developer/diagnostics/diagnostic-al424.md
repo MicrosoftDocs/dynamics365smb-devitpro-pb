@@ -1,9 +1,9 @@
 ---
 title: "Compiler Warning AL424"
-description: ""
+description: "The multilanguage syntax is being deprecated."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL687"
-description: ""
+description: "The key '{0}' on table '{1}' cannot contain the fields defined for the primary key in the IncludeFields property."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/21/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL416"
-description: ""
+description: "Method '{0}' cannot have a return value."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

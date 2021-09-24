@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL155"
-description: ""
+description: "A member of type {0} with name '{1}' is already defined in {2} '{3}' by the extension '{4}'."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

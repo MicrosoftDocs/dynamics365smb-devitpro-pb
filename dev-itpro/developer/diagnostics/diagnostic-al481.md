@@ -1,9 +1,9 @@
 ---
 title: "Compiler Warning (Future Error) AL481"
-description: ""
+description: "The property Image can only be used on fields that are contained in a CueGroup control."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

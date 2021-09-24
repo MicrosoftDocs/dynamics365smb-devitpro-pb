@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL1007"
-description: ""
+description: "Missing file specification for '{0}' option."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

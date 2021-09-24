@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL276"
-description: ""
+description: "A Time literal value is expected for property {0}."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

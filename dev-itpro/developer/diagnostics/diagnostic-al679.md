@@ -1,9 +1,9 @@
 ---
 title: "Compiler Warning AL679"
-description: ""
+description: "The application object '{0}' is not included in any entitlement and will therefore not be accessible in the cloud."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

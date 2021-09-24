@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL305"
-description: ""
+description: "The length of the application object identifier '{0}' cannot exceed {1} characters."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/21/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

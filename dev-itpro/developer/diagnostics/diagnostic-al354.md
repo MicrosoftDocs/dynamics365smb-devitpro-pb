@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL354"
-description: ""
+description: "Cannot move element '{0}' relative to itself in page '{1}'."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

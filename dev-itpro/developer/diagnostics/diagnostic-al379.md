@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL379"
-description: ""
+description: "The name '{0}' cannot be used as an identifier because it does not comply with the Common Language Specification."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

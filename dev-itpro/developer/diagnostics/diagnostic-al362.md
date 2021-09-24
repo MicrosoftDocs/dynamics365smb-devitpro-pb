@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL362"
-description: ""
+description: "The path must be relative to the project root."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

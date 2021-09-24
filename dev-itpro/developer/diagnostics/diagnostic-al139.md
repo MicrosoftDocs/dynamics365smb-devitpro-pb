@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL139"
-description: ""
+description: "Since '{0}' doesn't have a return value, EXIT cannot be called with a value."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

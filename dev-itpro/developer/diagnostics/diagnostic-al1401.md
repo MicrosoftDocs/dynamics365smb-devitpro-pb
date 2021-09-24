@@ -1,6 +1,6 @@
 ---
 title: "Compiler Designer Customization Warning AL1401"
-description: ""
+description: "Reference '{0}' in application object '{1}' does not exist."
 ms.author: solsen
 ms.custom: na
 ms.date: 09/24/2021

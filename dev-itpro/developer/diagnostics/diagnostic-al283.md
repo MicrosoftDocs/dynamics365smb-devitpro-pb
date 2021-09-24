@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL283"
-description: ""
+description: "The event '{0}' must not have a return value."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

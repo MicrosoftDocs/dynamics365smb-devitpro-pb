@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL581"
-description: ""
+description: "The length for the type '{0}' must be positive."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

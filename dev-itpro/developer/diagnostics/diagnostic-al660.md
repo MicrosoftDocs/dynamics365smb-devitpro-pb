@@ -1,6 +1,6 @@
 ---
 title: "Compiler Warning (Future Error) AL660"
-description: ""
+description: "The property '{0}' cannot be customized."
 ms.author: solsen
 ms.custom: na
 ms.date: 09/24/2021

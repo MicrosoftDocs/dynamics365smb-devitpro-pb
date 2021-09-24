@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL463"
-description: ""
+description: "Parameter '{0}' must be 'var' if and only if the publisher parameter is 'var'."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

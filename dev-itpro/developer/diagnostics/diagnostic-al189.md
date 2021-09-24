@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL189"
-description: ""
+description: "Attribute '{0}' cannot be specified, because '{1}' is already specified."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

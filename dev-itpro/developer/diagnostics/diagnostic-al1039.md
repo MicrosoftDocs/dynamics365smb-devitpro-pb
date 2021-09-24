@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL1039"
-description: ""
+description: "The version number '{0}' for the property '{1}' does not match the expected format: X.Y where X and Y represent positive integers."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2021
+ms.date: 09/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

@@ -1,6 +1,6 @@
 ---
 title: "Compiler Designer Customization Warning AL1406"
-description: ""
+description: "The view '{0}' is not found in the target '{1}'."
 ms.author: solsen
 ms.custom: na
 ms.date: 09/24/2021
