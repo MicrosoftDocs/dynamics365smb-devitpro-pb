@@ -76,7 +76,12 @@ From the Dynamics 365 [!INCLUDE [prod_short](../includes/prod_short.md)] 2021 re
 
   :::image type="content" source="../media/onboarding-checklist-spotlight-tour.png" alt-text="illustration of Business Central Spotlight Tour to call out Teams and Excel integration features.":::
 
-  <sup>2</sup><a name="4"></a>Illustration of Business Central Spotlight Tour to call out Teams and Excel integration features
+  <sup>4</sup><a name="4"></a>Illustration of Business Central Spotlight Tour to call out Teams and Excel integration features on a page.
+  
+  :::image type="content" source="../media/onboarding-checklist-spotlight-tour2.png" alt-text="The Spotlight Tour suppresses Teaching tips on the page and immediately calls out Teams and Excel integration features.":::
+
+  <sup>5</sup><a name="5"></a>The Spotlight Tour suppresses Teaching tips on the page and immediately calls out Teams and Excel integration features.
+  
 
 - **Video**
 
