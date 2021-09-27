@@ -5,7 +5,7 @@ author: sorenfriisalexandersen
 manager: edupont
 ms.topic: conceptual
 ms.service: dynamics365-business-central
-ms.date: 04/01/2021
+ms.date: 09/27/2021
 ms.author: soalex
 ---
 
@@ -35,11 +35,11 @@ Teaching tips can be defined at the page level, the *page teaching tip*, and be 
 
 - On a page that is opened from the checklist, the tour is considered an invited tour, and the page teaching tip has a **Go back** button that takes the user back to the checklist.
 
-The following illustration shows a page teaching tip <sup>4</sup> that explains what the page is about and can invite the user to take a tour. The teaching tip renders in the lower left corner.  
+The following illustration shows a page teaching tip that explains what the page is about and can invite the user to take a tour. The teaching tip renders in the lower left corner.  
 
 :::image type="content" source="../media/onboarding-teaching-tip-page.png" alt-text="A page in Business Central with a page teaching tip at the lower left corner.":::
 
-The following illustration shows how choosing the page title <sup>5</sup> will reopen the teaching tip so that the user can re-take the tour.  
+The following illustration shows how choosing the page title  will reopen the teaching tip so that the user can re-take the tour.  
 
 :::image type="content" source="../media/onboarding-teaching-tip-title.png" alt-text="Illustration of page with a teaching tip pointing to the page title.":::
 
@@ -103,9 +103,9 @@ For more information about tooltips, see [Help users get unblocked](../user-assi
 
 - Be concise with the information you provide inside of a teaching tip. Short sentences or sentence fragments are best.
 
-- keep the tour as short as possible 1-4 steps.
+- Keep the tour as short as possible with 1-4 steps.
 
-- Titles with a question is ok but use sparingly.
+- Titles with a question is OK to use, but use them sparingly.
 
 - Use positive cases, *don't tell what you can't do*.
 
