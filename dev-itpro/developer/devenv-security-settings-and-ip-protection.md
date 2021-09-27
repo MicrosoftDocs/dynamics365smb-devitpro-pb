@@ -107,7 +107,7 @@ The policy of an extension can be overridden by using settings in your extension
 
 ### Partner telemetry
 
-Specifying the `applicationInsightsConnectionString` setting for your extension, in the `app.json` file, enables a signal to be sent every time the policy is read from the key vault. For more information, see [Sending Extension Telemetry to Azure Application Insights](devenv-application-insights-for-extensions.md).
+Specifying the `applicationInsightsConnectionString` setting for your extension, in the `app.json` file, enables a signal to be sent every time the policy is read from the key vault, if there is an issue with reading the policy, or an issue with parsing the JSON. For more information, see [Sending Extension Telemetry to Azure Application Insights](devenv-application-insights-for-extensions.md).
 
 ```json
 "applicationInsightsConnectionString": "MyConnectionString1234"
