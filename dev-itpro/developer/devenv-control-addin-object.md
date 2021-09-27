@@ -175,7 +175,7 @@ $.ajax({
           withCredentials: true
     }
 )).done(function(data) {
-    $("#controlAddIn).text(data);
+    $("#controlAddIn").text(data);
 });
 ```
 

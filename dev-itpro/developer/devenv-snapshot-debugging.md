@@ -45,7 +45,7 @@ From Visual Studio Code, you start a snapshot by creating a snapshot configurati
 - AL: Initialize a snapshot debugging session locally
 - AL: Initialize a snapshot debugging session on cloud
 
-Choose whether to run the session on a cloud service or locally. The configuration file will now contain the following information: 
+Choose whether to run the session on a cloud service or locally. The configuration file contains the following information: 
 
 |Setting | Description |
 |--------|-------------|
@@ -55,6 +55,9 @@ Choose whether to run the session on a cloud service or locally. The configurati
 
 When a configuration is defined, a snapshot debugging session can be initialized by pressing **Ctrl+Shift+P** and then selecting **AL:Initialize Snapshot Debugging** or by pressing **F7**.
 
+> [!NOTE]  
+> If you are going to use the snapshot for profiling the code, you must enable the configuration parameter called `executionContext`. For more information, see [AL Profiler Overview](devenv-al-profiler-overview.md).
+
 To record the AL execution, the server will now wait for a connection to happen where the following rules apply: 
 
 - If a `sessionId` is specified for a userId for a given tenant then it will be that session that will be snapshot debugged.
@@ -63,7 +66,7 @@ To record the AL execution, the server will now wait for a connection to happen 
 
 Once a snapshot debugging session is initialized the snapshot debugging session counter on the status bar will be updated and look like this:
 
-![Snapshot Debugger Counter](media/snapshotdebugger.png)
+![Snapshot Debugger Counter.](media/snapshotdebugger.png)
 
 ## Status of a snapshot debugging session
 

@@ -76,6 +76,18 @@ For topics on debugging in AL, see [Debugging](devenv-debugging.md) and [Snapsho
 |**Shift+F7**|List all available snapshots|
 |**Alt+F7**|Finish a snapshot debugging session|
 
+## Profiling in Visual Studio Code
+
+For more information about profiling, see [AL Profiler Overview](devenv-al-profiler-overview.md)
+
+|Keyboard Shortcut|Action|
+|-----------------|------|
+|**Enter+Toggle** | Expand and collapse a node. |
+|**Arrow+Left** | Collapse a node. |
+|**Arrow+Right** | Expand a node. |
+|- (minus) | Collapse all nodes.|
+|* (star) | Expand one level for all nodes. Consecutive keystrokes will expand to the next level.|
+
 ## See Also
 
 [Developing Extensions](devenv-dev-overview.md)  

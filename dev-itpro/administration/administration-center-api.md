@@ -107,13 +107,13 @@ Environments are the instances of the application that have been set up for the 
 Returns a list of all the environments for the tenant. 
 
 ```
-GET /admin/v2.6/applications/environments
+GET /admin/v2.7/applications/environments
 ```
 
 Returns a list of the environments for the specified application family.
 
 ```
-GET /admin/v2.6/applications/{applicationFamily}/environments
+GET /admin/v2.7/applications/{applicationFamily}/environments
 ```
 
 #### Route Parameters
@@ -155,7 +155,7 @@ Returns a wrapped array of environments.
 Returns the properties for the provided environment name if it exists.
 
 ```
-GET /admin/v2.6/applications/{applicationFamily}/environments/{environmentName}
+GET /admin/v2.7/applications/{applicationFamily}/environments/{environmentName}
 ```
 
 #### Route Parameters
@@ -197,7 +197,7 @@ Creates a new environment with sample data.
 
 ```
 Content-Type: application/json
-PUT /admin/v2.6/applications/{applicationFamily}/environments/{environmentName}
+PUT /admin/v2.7/applications/{applicationFamily}/environments/{environmentName}
 ```
 
 #### Route Parameters
@@ -287,7 +287,7 @@ Creates a new environment with a copy of another environment's data.
 
 ```
 Content-Type: application/json
-POST /admin/v2.6/applications/{applicationFamily}/environments/{sourceEnvironmentName}
+POST /admin/v2.7/applications/{applicationFamily}/environments/{sourceEnvironmentName}
 ```
 
 #### Route Parameters
@@ -378,7 +378,7 @@ Returns newly copied environment.
 Deletes the specified environment. Warning: A production environment shouldn't be deleted.
 
 ```
-DELETE /admin/v2.6/applications/{applicationFamily}/environments/{environmentName}
+DELETE /admin/v2.7/applications/{applicationFamily}/environments/{environmentName}
 ```
 
 #### Route Parameters
@@ -413,7 +413,7 @@ Schedules a rename operation on an environment.
 
 ```
 Content-Type: application/json
-POST /admin/v2.6/applications/{applicationFamily}/environments/{environmentName}/rename
+POST /admin/v2.7/applications/{applicationFamily}/environments/{environmentName}/rename
 ```
 
 #### Routing parameters
@@ -461,7 +461,7 @@ Schedules a restore operation an existing environment from a time in the past.
 
 ```
 Content-Type: application/json
-POST /admin/v2.6/applications/{applicationFamily}/environments/{environmentName}/restore
+POST /admin/v2.7/applications/{applicationFamily}/environments/{environmentName}/restore
 ```
 
 #### Routing parameters
@@ -543,7 +543,7 @@ GET applications/{applicationType}/environments/{environmentName}/availableResto
 Returns used storage properties for the provided environment name if it exists.
 
 ```
-GET /admin/v2.6/applications/{applicationFamily}/environments/{environmentName}/usedstorage
+GET /admin/v2.7/applications/{applicationFamily}/environments/{environmentName}/usedstorage
 ```
 
 #### Route Parameters
@@ -559,13 +559,12 @@ Returns used storage information of a single environment if exists.
   "environmentType": string, // Environment type (for example, "Sandbox", "Production")
   "environmentName": string, // Environment name, unique within an application family
   "applicationFamily": string, // Family of the environment (for example, "BusinessCentral")
-  "fileStorageInKilobytes": int, // Used file storage in kilobytes
   "databaseStorageInKilobytes": int // Used database storage in kilobytes
 }
 ```
 
 > [!NOTE]  
-> If an error occurs when calculating file storage or database storage the corresponding property will be -1.
+> If an error occurs when calculating database storage, the corresponding property will be -1.
 
 #### Expected Error Codes
 
@@ -577,7 +576,7 @@ Returns used storage information of a single environment if exists.
 Returns a list of used storage objects for all the environments.
 
 ```
-GET /admin/v2.6/environments/usedstorage
+GET /admin/v2.7/environments/usedstorage
 ```
 
 #### Response
@@ -590,7 +589,6 @@ Returns a wrapped array of used storage objects.
        "environmentType": string, // Environment type (for example, "Sandbox", "Production")
        "environmentName": string, // Environment name, unique within an application family
        "applicationFamily": string, // Family of the environment (for example, "BusinessCentral")
-       "fileStorageInKilobytes": int, // Used file storage in kilobytes
        "databaseStorageInKilobytes": int // Used database storage in kilobytes
     }
   ]
@@ -601,17 +599,25 @@ Returns a wrapped array of used storage objects.
 Returns different types of quotas and their limits.
 
 ```
-GET /admin/v2.6/environments/quotas
+GET /admin/v2.7/environments/quotas
 ```
 
 #### Response
 Returns quotas object.
 ```
 {
-  "productionEnvironmentsCount": int, // Maximum allowed number of production environments
-  "sandboxEnvironmentsCount": string, // Maximum allowed number of sandbox environments
-  "fileStorageInKilobytes": int, // Maximum allowed file storage in kilobytes
-  "databaseStorageInKilobytes": int // Maximum allowed database storage in kilobytes
+  "environmentsCount":
+  {
+    "production": int, // Maximum allowed number of production environments
+    "sandbox": int // Maximum allowed number of sandbox environments
+  }
+  "storageInKilobytes":
+  {
+    "default": int, // Amount of storage allowed by default
+    "userLicenses": int, // Amount of storage allowed based on the number of user licenses
+    "additionalCapacity": int, // Amount of storage allowed based on purchased capacity add-ons
+    "total": int // Total amount of allowed storage
+   }
 }
 ```
 
@@ -622,7 +628,7 @@ Returns quotas object.
 Gets the following operations that occurred on an environment.
 
 ```
-GET /admin/v2.6/applications/{applicationType}/environments/{environmentName}/operations 
+GET /admin/v2.7/applications/{applicationType}/environments/{environmentName}/operations 
 ```
 
 #### Operation types
@@ -636,8 +642,8 @@ Data is returned for the following operation types:
 |MoveToAnotherAadTenant|An environment was moved to another Azure Active Directory organization by using the Admin Center|[Move an Environment](tenant-admin-center-environments-move.md)
 |EnvironmentAppHotfix<sup>1</sup>|App was hotfixed by using the App Management API.|[App Management API](appmanagement/app-management-api.md#schedule-environment-hotfix)
 |EnvironmentAppUpdate<sup>1</sup> |App was updated either by the Admin Center or API update endpoint.| [Update an App in Admin Center](tenant-admin-center-manage-apps.md#install-an-app-update---the-flow)<br><br>[Update Endpoint](#update-an-app)|
-|EnvironmentAppInstall<sup>1</sup>|App was installed by using the tenant's Extension Management page or the API install endpoint.|[Extension Management Page](/dynamics365/business-central/ui-extensions-install-uninstall#installing-an-extension)<br><br>[Uninstall Endpoint](#install-an-app)|
-|EnvironmentAppUninstall<sup>1</sup>|App was uninstalled by using the tenant's Extension Management page or the API uninstall endpoint.|[Extension Management Page](/dynamics365/business-central/ui-extensions-install-uninstall#uninstalling-an-extension)<br><br>[Uninstall Endpoint](#uninstall-an-app)|
+|EnvironmentAppInstall<sup>1</sup>|App was installed by using the tenant's **Extension Management** page or the API install endpoint.|[Extension Management Page](/dynamics365/business-central/ui-extensions-install-uninstall#installing-an-extension)<br><br>[Install Endpoint](#install-an-app)|
+|EnvironmentAppUninstall<sup>1</sup>|App was uninstalled by using the tenant's **Extension Management** page or the API uninstall endpoint.|[Extension Management Page](/dynamics365/business-central/ui-extensions-install-uninstall#uninstalling-an-extension)<br><br>[Uninstall Endpoint](#uninstall-an-app)|
 
 <sup>1</sup> These operations are only supported with API version 2.6 and later. For these operations, the data returned is the same as for [Get App Operations](#get-app-operations), but in a different format.
 
@@ -707,7 +713,7 @@ The API endpoints here should be utilized to determine what values can be used f
 Get a list of the currently available application families, the available countries within those families, and the available rings within the countries.
 
 ```
-GET /admin/v2.6/applications/
+GET /admin/v2.7/applications/
 ```
 
 #### Response
@@ -734,7 +740,7 @@ GET /admin/v2.6/applications/
 Gets a list of the currently available Versions that an environment can be created on within a logical ring group.
 
 ```
-GET /admin/v2.6/applications/{applicationFamily}/Countries/{countryCode}/Rings/{ringName}
+GET /admin/v2.7/applications/{applicationFamily}/Countries/{countryCode}/Rings/{ringName}
 ```
 
 #### Route Parameters
@@ -764,7 +770,7 @@ Allows you to manage environment-specific settings such as the environment's App
 Returns the update settings for the environment.
 
 ```
-GET /admin/v2.6/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade
+GET /admin/v2.7/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade
 ```
 
 #### Route Parameters
@@ -797,7 +803,7 @@ Sets the update window start and end times.
 
 ```
 Content-Type: application/json
-PUT /admin/v2.6/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade
+PUT /admin/v2.7/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade
 ```
 
 #### Route Parameters
@@ -848,7 +854,7 @@ Sets the key an environment uses for Azure AppInsights.
 
 ```
 Content-Type: application/json
-POST /admin/v2.6/applications/{applicationFamily}/environments/{environmentName}/settings/appinsightskey
+POST /admin/v2.7/applications/{applicationFamily}/environments/{environmentName}/settings/appinsightskey
 ```
 
 #### Route Parameters
@@ -884,7 +890,7 @@ Telemetry includes the top-level AL events and any returned errors logged from t
 Returns the telemetry information for the provided environment and filters. it's recommended that you provide start and end time parameters to return a manageable data set.
 
 ```
-GET /admin/v2.6/applications/{applicationFamily}/environments/{environmentName}/telemetry?startDateUtc={start}&endDateUtc={end}&logCategory={cat}
+GET /admin/v2.7/applications/{applicationFamily}/environments/{environmentName}/telemetry?startDateUtc={start}&endDateUtc={end}&logCategory={cat}
 ```
 
 #### Route Parameters
@@ -938,7 +944,7 @@ Notifications are sent to the recipient email addresses set up for the tenant. F
 Returns a list of notification recipients.
 
 ```
-GET /admin/v2.6/settings/notification/recipients
+GET /admin/v2.7/settings/notification/recipients
 ```
 
 #### Response
@@ -968,7 +974,7 @@ Create a new notification recipient.
 
 ```
 Content-Type: application/json
-PUT /admin/v2.6/settings/notification/recipients
+PUT /admin/v2.7/settings/notification/recipients
 ```
 
 #### Body
@@ -1007,7 +1013,7 @@ Returns the newly created recipient.
 Deletes an existing notification recipient.
 
 ```
-DELETE /admin/v2.6/settings/notification/recipients/{id}
+DELETE /admin/v2.7/settings/notification/recipients/{id}
 ```
 
 #### Route Parameters
@@ -1027,7 +1033,7 @@ DELETE /admin/v2.6/settings/notification/recipients/{id}
 Returns the full set of notification settings including the list of recipients.
 
 ```
-GET /admin/v2.6/settings/notification
+GET /admin/v2.7/settings/notification
 ```
 
 #### Response
@@ -1060,7 +1066,7 @@ Allows for the management of scheduled updates such as rescheduling the update t
 Get information about updates that have already been scheduled for a specific environment.
 
 ```
-GET /admin/v2.6/applications/{applicationFamily}/environments/{environmentName}/upgrade
+GET /admin/v2.7/applications/{applicationFamily}/environments/{environmentName}/upgrade
 ```
 
 #### Route Parameters
@@ -1104,7 +1110,7 @@ Reschedule an update, if able.
 
 ```
 Content-Type: application/json
-PUT /admin/v2.6/applications/{applicationFamily}/environments/{environmentName}/upgrade
+PUT /admin/v2.7/applications/{applicationFamily}/environments/{environmentName}/upgrade
 ```
 
 #### Route Parameters
@@ -1145,7 +1151,7 @@ Allows for the management of support settings, such as changing the contact, for
 Get information about the support contact for a specified environment.
 
 ```
-GET /admin/v2.6/support/applications/{applicationFamily}/environments/{environmentName}/supportcontact
+GET /admin/v2.7/support/applications/{applicationFamily}/environments/{environmentName}/supportcontact
 ```
 
 #### Route Parameters
@@ -1184,7 +1190,7 @@ Sets the support contact information for a specified environment
 
 ```
 Content-Type: application/json
-PUT /admin/v2.6/support/applications/{applicationFamily}/environments/{environmentName}/supportcontact
+PUT /admin/v2.7/support/applications/{applicationFamily}/environments/{environmentName}/supportcontact
 ```
 
 #### Route Parameters
@@ -1237,7 +1243,7 @@ Enables the ability to report that an environment isn't accessible and may requi
 Gets the list of supported categories of outages
 
 ```
-GET /admin/v2.6/support/outageTypes
+GET /admin/v2.7/support/outageTypes
 ```
 
 #### Response
@@ -1266,7 +1272,7 @@ Returns a list with information about the supported outage types for reporting
 Gets the list of metadata about questions that need to be answered when reporting an environment outage
 
 ```
-GET /admin/v2.6/support/outageTypes/{outageType}/outageQuestions
+GET /admin/v2.7/support/outageTypes/{outageType}/outageQuestions
 ```
 
 #### Response
@@ -1302,7 +1308,7 @@ Returns the list of question metadata for the provided outage type
 Gets the list of outages that have been previously reported 
 
 ```
-GET /admin/v2.6/support/reportedoutages
+GET /admin/v2.7/support/reportedoutages
 ```
 
 #### Response
@@ -1338,7 +1344,7 @@ Initiates an outage report indicating that an environment isn't accessible
 
 ```
 Content-Type: application/json
-POST /admin/v2.6/support/applications/{applicationFamily}/environments/{environmentName}/reportoutage
+POST /admin/v2.7/support/applications/{applicationFamily}/environments/{environmentName}/reportoutage
 ```
 
 #### Route Parameters
@@ -1394,7 +1400,7 @@ Allows for the export of an environment's Azure database. Databases are exported
 Gets information about the number of exports allowed per month and the amount remaining.
 
 ```
-GET /admin/v2.6/exports/applications/{applicationFamily}/environments/{environmentName}/metrics
+GET /admin/v2.7/exports/applications/{applicationFamily}/environments/{environmentName}/metrics
 ```
 
 #### Route Parameters
@@ -1427,7 +1433,7 @@ Starts the export of an environment's database to a provided Azure storage accou
 
 ```
 Content-Type: application/json
-POST /admin/v2.6/exports/applications/{applicationFamily}/environments/{environmentName}
+POST /admin/v2.7/exports/applications/{applicationFamily}/environments/{environmentName}
 ```
 
 #### Route Parameters
@@ -1461,7 +1467,7 @@ POST /admin/v2.6/exports/applications/{applicationFamily}/environments/{environm
 Gets information about the exports that have been done within a provided time frame, for which environment, and by which user.
 
 ```
-POST /admin/v2.6/exports/history?start={startTime}&end={endTime}
+POST /admin/v2.7/exports/history?start={startTime}&end={endTime}
 ```
 
 #### Query parameters
@@ -1565,7 +1571,7 @@ Installs an app on an environment.
 
 ```
 Content-Type: application/json
-POST /admin/v2.6/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/install 
+POST /admin/v2.7/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/install 
 ```
 
 #### Route Parameters
@@ -1585,7 +1591,7 @@ POST /admin/v2.6/applications/{applicationFamily}/environments/{environmentName}
   "allowPreviewVersion": false/true, // If "allowPreviewVersion": true, targetVersion is required 
   "installOrUpdateNeededDependencies": false/true, // Value indicating whether any other app dependencies should be installed or updated; otherwise, information about missing app dependencies will be returned as error details 
   "acceptIsvEula": false/true, // Must be true for installation to proceed. Setting this to true means you agree to the terms described in the acceptIsvEula section that follows.
-  "languageId": "en-US" // Optional. Specifies locale ID language code, for example, "en-US". This setting corresponds to what the user can set in Extension Management page in tenant.Full list of values can be found in https://docs.microsoft.com/en-us/openspecs/office_standards/ms-oe376/6c085406-a698-4e12-9d4d-c3b0ee3dbc4a under BCP 47 Code column 
+  "languageId": "en-US" // Optional. Specifies locale ID language code, for example, "en-US". This setting corresponds to what the user can set in Extension Management page in tenant.Full list of values can be found in /openspecs/office_standards/ms-oe376/6c085406-a698-4e12-9d4d-c3b0ee3dbc4a under BCP 47 Code column 
 } 
 ```
 
@@ -1642,7 +1648,7 @@ Uninstalls an app from an environment.
 
 ```
 Content-Type: application/json
-POST /admin/v2.6/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/uninstall  
+POST /admin/v2.7/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/uninstall  
 ```
 
 #### Route Parameters
@@ -1704,7 +1710,7 @@ Example `400 Bad Request` response when dependent apps need to be uninstalled fi
 Get information about apps that are installed on the environment.
 
 ```
-GET /admin/v2.6/applications/{applicationFamily}/environments/{environmentName}/apps
+GET /admin/v2.7/applications/{applicationFamily}/environments/{environmentName}/apps
 ```
 
 #### Route Parameters
@@ -1738,7 +1744,7 @@ Returns information about the apps installed on the environment.
 Get information about new app versions that are available for apps currently installed on the environment.
 
 ```
-GET /admin/v2.6/applications/{applicationFamily}/environments/{environmentName}/apps/availableUpdates
+GET /admin/v2.7/applications/{applicationFamily}/environments/{environmentName}/apps/availableUpdates
 ```
 
 #### Route Parameters
@@ -1779,7 +1785,7 @@ Updates an app using an existing endpoint, but when new parameters in the reques
 
 ```
 Content-Type: application/json
-POST /admin/v2.6/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/update
+POST /admin/v2.7/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/update
 ```
 
 #### Route Parameters
@@ -1842,7 +1848,7 @@ Example `400 Bad Request` response when dependent apps need to be updated first:
 Gets information about app install, uninstall, and update operations for the specified app.
 
 ```
-GET /admin/v2.6/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/operations/[{operationId}]
+GET /admin/v2.7/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/operations/[{operationId}]
 ```
 
 #### Route Parameters
@@ -1890,7 +1896,7 @@ Manage the active sessions on an environment.
 Gets active sessions for an environment.
 
 ```
-GET /admin/v2.6/applications/{applicationFamily}/environments/{environmentName}/sessions
+GET /admin/v2.7/applications/{applicationFamily}/environments/{environmentName}/sessions
 ```
 
 #### Response
@@ -1923,7 +1929,7 @@ GET /admin/v2.6/applications/{applicationFamily}/environments/{environmentName}/
 Gets session information for a specific session id.
 
 ```
-GET /admin/v2.6/applications/{applicationFamily}/environments/{environmentName}/sessions/{sessionId}
+GET /admin/v2.7/applications/{applicationFamily}/environments/{environmentName}/sessions/{sessionId}
 ```
 
 #### Response
@@ -1952,7 +1958,7 @@ GET /admin/v2.6/applications/{applicationFamily}/environments/{environmentName}/
 Terminates and deletes an active session.
 
 ```
-DELETE /admin/v2.6/applications/{applicationFamily}/environments/{environmentName}/sessions/{sessionId}
+DELETE /admin/v2.7/applications/{applicationFamily}/environments/{environmentName}/sessions/{sessionId}
 ```
 
 ## See Also

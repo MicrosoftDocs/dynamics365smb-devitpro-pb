@@ -14,7 +14,7 @@ manager: edupont
 # Walkthrough: Using Automation to Create a Graph in Microsoft Excel
 In this walkthrough, you will transfer data from the **G/L Entry** table to Microsoft Excel and create a graph. This example shows how to handle enumerations by creating a graph in Excel that shows the distribution of personnel expenses by departments. In the chart of accounts, you can see that Total Personnel Expenses is the total of accounts 8700 to 8790. In the **Dimension Value** table, you can see that there are three departments: ADM, PROD, and SALES. You will create a codeunit that retrieves this data from the **G/L Entry** table, transfers it to Excel, and creates a graph that is similar to the one that is shown in the following figure:  
   
- ![Excel graph](media/NAVAutomationExcelGraph.PNG "NAVAutomationExcelGraph")  
+ ![Excel graph.](media/NAVAutomationExcelGraph.PNG "NAVAutomationExcelGraph")  
   
  You will run the codeunit directly from Object Designer. In a real application, you would call it from an appropriate place, such as from a menu in the chart of accounts window.  
   

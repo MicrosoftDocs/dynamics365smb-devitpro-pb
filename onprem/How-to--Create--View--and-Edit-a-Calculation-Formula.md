@@ -29,7 +29,7 @@ The following procedure describes the steps to take to create and revise a calcu
   
 5.  Enter the calculation formula directly or choose the **AssistEdit** button. When you choose the **AssistEdit** button, the following dialog box is displayed.  
   
-     ![Calculation Forumla window](media/NAV_ADG_6_Table_17.png "NAV\_ADG\_6\_Table\_17")  
+     ![Calculation Forumla window.](media/NAV_ADG_6_Table_17.png "NAV\_ADG\_6\_Table\_17")  
   
 6.  Choose the drop-down button to select the appropriate calculation method.  
   
@@ -49,7 +49,7 @@ The following procedure describes the steps to take to create and revise a calcu
   
  Some of the fields in the **G/L Account** table are **FlowFilter** fields. By entering filter expressions into these fields, the user can affect the calculation of **FlowFields** field, such as **Balance at Date**, at run time. The user can enter filter values on a **FlowFilter** page.  
   
- ![G&#47;L Account FlowFilter window](media/NAV_ADG_6_Table_22.png "NAV\_ADG\_6\_Table\_22")  
+ ![G&#47;L Account FlowFilter window.](media/NAV_ADG_6_Table_22.png "NAV\_ADG\_6\_Table\_22")  
   
  If the user enters a date filter expression in the **Date Filter** field, it is transferred via the table filter and used in the **Date** column in the **G/L Entry** table.  
   

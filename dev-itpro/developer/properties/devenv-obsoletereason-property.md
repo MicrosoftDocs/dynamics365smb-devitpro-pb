@@ -1,8 +1,9 @@
 ---
 title: "ObsoleteReason Property"
+description: "Specifies why the object or element has been marked as Pending or Obsolete in the ObsoleteState property."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -70,3 +71,4 @@ Use this property to inform developers about an object or element that will beco
 [ObsoleteTag](devenv-obsoletetag-property.md)  
 [Properties](devenv-properties.md)  
 [MethodType Property (Upgrade Codeunits)](../devenv-methodtype-property-upgrade-codeunits.md)  
+[Obsolete Attribute](../attributes/devenv-obsolete-attribute.md)  

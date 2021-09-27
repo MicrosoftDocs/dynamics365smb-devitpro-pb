@@ -1,9 +1,9 @@
 ---
-title: "Dialog.Message Method"
+title: "Dialog.Message(String [, Any,...]) Method"
 description: "Displays a text string in a message window."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Dialog.Message Method
+# Dialog.Message(String [, Any,...]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Displays a text string in a message window.
 
 
 ## Syntax
-```
+```AL
  Dialog.Message(String: String [, Value: Any,...])
 ```
 > [!NOTE]
@@ -45,7 +45,7 @@ When a message statement in the AL code is executed, the message is not immediat
   
 The window is automatically sized to hold the longest line of text and the total number of lines.  
   
-For NAS sessions or [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)] sessions \(including NAS\) that are started by the [StartSession Method \(Sessions\)](../../methods-auto/session/session-startsession-method.md), messages are recorded in the event log of the computer that is running [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)]. The message entries have the ID 100 and type Information.  
+For NAS sessions or [!INCLUDE[d365fin_md](../../includes/d365fin_md.md)] sessions \(including NAS\) that are started by the [StartSession Method \(Sessions\)](../../methods-auto/session/session-startsession-integer-integer-string-table-method.md), messages are recorded in the event log of the computer that is running [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)]. The message entries have the ID 100 and type Information.  
   
 ## Programming Guidelines  
 

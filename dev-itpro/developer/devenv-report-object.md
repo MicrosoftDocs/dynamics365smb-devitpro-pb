@@ -221,6 +221,8 @@ report 50103 "Customer List"
 
 ```
 
+[!INCLUDE [send-report-excel](includes/send-report-excel.md)]
+
 ## See Also
 
 [Report Extension Object](devenv-report-ext-object.md)  

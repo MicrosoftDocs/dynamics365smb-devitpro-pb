@@ -24,7 +24,7 @@ manager: edupont
   
  The following illustration shows the Ribbon with promoted actions under categories.  
   
- ![Action Pane with four categories](media/NAV_RTC_ActionPane_CustomCategories.png "NAV\_RTC\_ActionPane\_CustomCategories")  
+ ![Action Pane with four categories.](media/NAV_RTC_ActionPane_CustomCategories.png "NAV\_RTC\_ActionPane\_CustomCategories")  
   
  You assign a promoted action to a category by setting the **PromotedCategory** property of the action. You can choose among the following categories:  
   

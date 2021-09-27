@@ -4,7 +4,7 @@ description: "Retaining table data after publishing an extension"
 
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 06/10/2021
+ms.date: 08/26/2021
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: solsen
@@ -35,6 +35,7 @@ The default value for `schemaUpdateMode` is set to the **Synchronize** mode, whi
 ```
 
 ## Recreate mode
+
 When you set the schema update mode to **Recreate**, all the tables and table extensions are recreated at every publish, which means that all the data in those tables are lost. This means that you will get empty records when you publish your extension.
 
 ## ForceSync mode
@@ -54,6 +55,8 @@ In addition to the `launch.json` file setting, the **ForceSync** switch is avail
 If you, during development, for example, discover that you no longer want field **X**, and you then mark field **X** as obsolete, you may still want to write an [upgrade codeunit](devenv-upgrading-extensions.md) to move the data from the obsolete field to a new field **Y** that you introduce. Later, the obsoleted field will not be available. But if you do not want the data, you can choose to use the **Recreate** mode instead.
  
 - When you make changes to the data types, you can only *enlarge* the unit size, and *not decrease* the unit size. For example, you can set a text type from `Code[20]` to `Code[50]` or `Text[32]` to  `Text[87]`, and you cannot set a text type from `Code[50]` to `Code[30]` or `Text[87]` to `Text[40]`.  
+
+- For field data types, however, changing the length is not allowed. If you, for example, change version 1.0 of the `field(50100; MyField; Text[50])` to `field(50100; MyField; Text[150])` in version 2.0 it is considered a breaking change. For more information, see [AppSourceCop Rule AS0086](analyzers/appsourcecop-as0086.md).
 
 - Making major table structural changes could lead to compilation errors. For example, if you want to update a primary key. In this case, the table data cannot be synchronized, and if you want to publish the extension, you must change the `schemaUpdateMode` to `Recreate`. Likewise, changing the [DataPerCompany](/properties/devenv-datapercompany-property.md) from `true` to `false` and from `false` to `true` is a schema-breaking change, and therefore not allowed because it changes the number of tables per company.
 

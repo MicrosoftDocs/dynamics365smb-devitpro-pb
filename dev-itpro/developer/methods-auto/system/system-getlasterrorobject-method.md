@@ -1,9 +1,9 @@
 ---
-title: "System.GetLastErrorObject Method"
+title: "System.GetLastErrorObject() Method"
 description: "Gets the last System.Exception object that occurred."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 07/13/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# System.GetLastErrorObject Method
+# System.GetLastErrorObject() Method
 > **Version**: _Available or changed with runtime version 2.0._
 
 Gets the last System.Exception object that occurred.
@@ -23,7 +23,7 @@ Gets the last System.Exception object that occurred.
 > This method is supported only in Business Central on-premises.
 
 ## Syntax
-```
+```AL
 DotNet :=   System.GetLastErrorObject()
 ```
 > [!NOTE]

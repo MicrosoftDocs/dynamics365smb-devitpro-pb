@@ -1,6 +1,6 @@
 ---
-title: Get started as a reseller of Business Central online
-description: Get started as a reseller of Dynamics 365 Business Central online. Learn how to become a Microsoft partner, and how to onboard customers.  
+title: Get started as a reseller of Business Central Online
+description: Learn about how to get started as a reselling partner of Dynamics 365 Business Central online, how to become a partner, and how to onboard customers.  
 author: edupont04
 
 ms.service: dynamics365-business-central
@@ -8,13 +8,13 @@ ms.topic: conceptual
 ms.workload: na
 ms.reviewer: na
 ms.search.keywords: administration, tenant, admin, environment
-ms.date: 04/01/2021
+ms.date: 09/07/2021
 ms.author: edupont
 ---
 
 # Get Started as a Reseller of Business Central Online
 
-If you want to build your business on [!INCLUDE [prod_long](../developer/includes/prod_long.md)] online, you must get set up as a reseller in the Microsoft Partner Center. In this article, we take you through the first four steps in your journey.  
+If you want to build your business on [!INCLUDE [prod_long](../developer/includes/prod_long.md)] online, you must get set up as a reseller in the Microsoft Partner Center. In this article, we take you through the first steps in your journey.  
 
 ## Step 1: Become a partner
 
@@ -62,6 +62,14 @@ When you onboard customers to [!INCLUDE [prod_short](../developer/includes/prod_
 The default version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] is just that - a default version. In many cases, you'll enhance the default version with [apps from the Microsoft commercial marketplace](/dynamics365/business-central/ui-extensions). But you can also [customize pages for a profile](/dynamics365/business-central/ui-personalization-manage) and [change which UI elements are visible](/dynamics365/business-central/ui-experiences). For more information, see [Customize Business Central](/dynamics365/business-central/ui-customizing-overview) in the business functionality content.  
 
 If your customer wants more tweaks, you can create customizations of profiles and pages in code. For more information, see [Customizing the User Interface for User Roles](../developer/devenv-role-customization.md) in the developer content.  
+
+### Move the customer from a trial to a paid subscription
+
+If your customer decides to start using [!INCLUDE [prod_short](../includes/prod_short.md)] to run their business, they must switch to a paid subscription. Both the internal admin and the delegated admin can assign licenses to users in the Microsoft 365 admin center. For more information, see [Buy or remove licenses](/microsoft-365/commerce/licenses/buy-licenses?view=o365-worldwide&preserve-view=true) in the Microsoft 365 content.  
+
+[!INCLUDE [admin-license-trial](../includes/admin-license-trial.md)]
+
+If the customer has tried out [!INCLUDE [prod_short](../includes/prod_short.md)] using a pre-configured demonstration company that [you have prepared](demo-environment.md) in other ways, they can now sign up for [!INCLUDE [prod_short](../includes/prod_short.md)] using their own work or school account so that you can assign the [!INCLUDE [prod_short](../includes/prod_short.md)] license to their Microsoft 365 tenant.
 
 ## Step 5: Configure the support experience
 

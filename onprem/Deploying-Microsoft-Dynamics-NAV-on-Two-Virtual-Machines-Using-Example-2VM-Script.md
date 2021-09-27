@@ -18,7 +18,7 @@ This topic describes the Example-2VM.ps1 script of the [!INCLUDE[nav_prov_long](
 ## Deployment Overview  
  The Example-2VM.ps1 script creates two virtual machines, which are created based on an Azure image that you specify, and then installs [!INCLUDE[nav_web_server](includes/nav_web_server_md.md)] and [!INCLUDE[nav_server](includes/nav_server_md.md)] on one machine and [!INCLUDE[navnow](includes/navnow_md.md)] database components for SQL Server on the other machine.  
   
- ![Network topology for Example&#45;2VM.ps1](media/NAV_Azure_Example-2VM.png "NAV\_Azure\_Example-2VM")  
+ ![Network topology for Example&#45;2VM.ps1.](media/NAV_Azure_Example-2VM.png "NAV\_Azure\_Example-2VM")  
   
  The script restores a [!INCLUDE[navnow](includes/navnow_md.md)] application database of your choice, along with a [!INCLUDE[navnow](includes/navnow_md.md)] license. You can choose to install the [!INCLUDE[demolong](includes/demolong_md.md)] and license. The script also configures endpoints in Azure for [!INCLUDE[navnow](includes/navnow_md.md)] client service and management services and opens the communication ports in Windows Firewall.  
   
@@ -39,12 +39,12 @@ This topic describes the Example-2VM.ps1 script of the [!INCLUDE[nav_prov_long](
 ## Deployment Process  
  The Example-2VM.ps1 script is a combination of several of the [!INCLUDE[nav_prov_short](includes/nav_prov_short_md.md)] scripts that are called at various points in the deployment process. Before running each script, a secure Windows PowerShell remote session using HTTPS is established between the provisioning computer and the Azure virtual machine.  
   
- ![NAV powershell remoting with Azure](media/NAV_Azure_PSRremoting_2VM.png "NAV\_Azure\_PSRremoting\_2VM")  
+ ![NAV powershell remoting with Azure.](media/NAV_Azure_PSRremoting_2VM.png "NAV\_Azure\_PSRremoting\_2VM")  
   
 ### Deployment Phases  
  The following flow chart illustrates the process that is executed by the Example-2VM.ps1 script to deploy [!INCLUDE[navnow](includes/navnow_md.md)]. The dashed boxes illustrate the manual alternatives in the flow.  
   
- ![Process for the Example&#45;2VM deployment on Azure](media/NAV_Azure_Example2Box_Flow.png "NAV\_Azure\_Example2Box\_Flow")  
+ ![Process for the Example&#45;2VM deployment on Azure.](media/NAV_Azure_Example2Box_Flow.png "NAV\_Azure\_Example2Box\_Flow")  
   
  The following table provides a description of each phase and the Windows PowerShell script that is executed.  
   

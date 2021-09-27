@@ -1,9 +1,9 @@
 ---
-title: "System.Decrypt Method"
+title: "System.Decrypt(String) Method"
 description: "Takes a string as input and returns the decrypted value of the string."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# System.Decrypt Method
+# System.Decrypt(String) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Takes a string as input and returns the decrypted value of the string.
 
 
 ## Syntax
-```
+```AL
 PlainTextString :=   System.Decrypt(EncryptedString: String)
 ```
 > [!NOTE]

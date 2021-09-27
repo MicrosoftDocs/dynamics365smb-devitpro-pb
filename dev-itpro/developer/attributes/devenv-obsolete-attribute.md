@@ -3,7 +3,7 @@ title: "Obsolete Attribute"
 description: "Specifies that the annotated symbol will be deprecated."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/16/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -31,7 +31,7 @@ Specifies that the annotated symbol will be deprecated.
 
 ## Syntax
 
-```
+```AL
 [Obsolete([Reason: Text] [, Tag: Text])]
 ```
 
@@ -71,5 +71,8 @@ codeunit 50143 SoonObsolete
 
 [AL Method Reference](../methods-auto/library.md)  
 [Method Attributes](devenv-obsolete-attribute.md)  
+[Directives in AL](../directives/devenv-directives-in-al.md)  
+[Best Practices for Deprecation of Code in the Base App](../devenv-deprecation-guidelines.md)  
 [ObsoleteState Property](../properties/devenv-obsoletestate-property.md)  
 [ObsoleteReason Property](../properties/devenv-obsoletereason-property.md)  
+[ObsoleteTag Property](../properties/devenv-obsoletetag-property.md)  

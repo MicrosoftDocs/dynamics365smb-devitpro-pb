@@ -12,7 +12,7 @@ author: jswymer
 # How to: Install the Web Server Components using Setup Wizard
 To deploy the [!INCLUDE[nav_web](includes/nav_web_md.md)] and [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)], you install the [!INCLUDE[nav_web_server](includes/nav_web_server_md.md)] on a computer that is running Internet Information Services \(IIS\). To access the [!INCLUDE[nav_web](includes/nav_web_md.md)], you must have a web browser and a network connection to a [!INCLUDE[nav_server](includes/nav_server_md.md)] instance that connects to a [!INCLUDE[navnow](includes/navnow_md.md)] database. The following illustration shows the components involved in the setup.  
 
- ![Install NAV Web client on same computer as server](media/NAV_WebClient_Installation_OneComputer.png "NAV\_WebClient\_Installation\_OneComputer")  
+ ![Install NAV Web client on same computer as server.](media/NAV_WebClient_Installation_OneComputer.png "NAV\_WebClient\_Installation\_OneComputer")  
 
  You can install [!INCLUDE[nav_web_server](includes/nav_web_server_md.md)] on the same computer as the [!INCLUDE[nav_server](includes/nav_server_md.md)] or on a separate computer.  
 

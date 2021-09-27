@@ -17,7 +17,7 @@ The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] deployment inclu
 
 To understand the components is useful to first look at the base topology of a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] deployment, as illustrated in the following diagram:
 
-![Architecture overview](../media/architecture-overview.png "Architecture overview")  
+![Architecture overview.](../media/architecture-overview.png "Architecture overview")  
 
 ## Components
 
@@ -50,7 +50,7 @@ Every deployment must include the core components: Web server, Server, and SQL D
 |[!INCLUDE[devshell](../developer/includes/devshell.md)]|Windows PowerShell modules for merging and modifying application object files and creating extension packages. Installed with the [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)].|[!INCLUDE[2019_releasewave2_deprecated](../includes/2019_releasewave2_deprecated.md)]<br /><br />[Windows PowerShell Cmdlets for Business Central](/powershell/business-central/overview)|
 |[!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)]|Windows Desktop application for accessing [!INCLUDE[prod_short](../developer/includes/prod_short.md)].|[!INCLUDE[2019_releasewave2_deprecated](../includes/2019_releasewave2_deprecated.md)]<br /><br />|
 |Microsoft Outlook Integration|A [!INCLUDE[server](../developer/includes/server.md)] component for integrating with Microsoft Outlook.|[!INCLUDE[2019_releasewave2_deprecated](../includes/2019_releasewave2_deprecated.md)]<br /><br />|
-|Microsoft Outlook Add-in| A component to synchronize data, such as to-dos, contacts, and tasks, between [!INCLUDE[prod_short](../developer/includes/prod_short.md)] and Outlook. The Outlook Add-In uses [!INCLUDE[prod_short](../developer/includes/prod_short.md)] web services.|[Setting Up the Office Add-ins for Outlook Integration](../administration/Setting-up-Office-Add-Ins-Outlook-Inbox.md)|
+|Microsoft Outlook Add-in| A component to synchronize data, such as to-dos, contacts, and tasks, between [!INCLUDE[prod_short](../developer/includes/prod_short.md)] and Outlook. The Outlook Add-In uses [!INCLUDE[prod_short](../developer/includes/prod_short.md)] web services.|**DISCONTINUED AFTER:** Business Central 2020 Release Wave 1|
 |Microsoft Excel Add-in|A component that enables users to export data from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] to Excel.|[!INCLUDE[2019_releasewave2_deprecated](../includes/2019_releasewave2_deprecated.md)]<br /><br />|
 |Excel Add-in|A component that enables users to export data from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] to Excel.|[Setting up the Excel Add-In](../administration/configuring-excel-addin.md)|
 |Page Testability|A [!INCLUDE[server](../developer/includes/server.md)] component for testing pages.||

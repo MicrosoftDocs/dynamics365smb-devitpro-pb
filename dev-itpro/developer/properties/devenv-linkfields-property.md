@@ -1,8 +1,9 @@
 ---
 title: "LinkFields Property"
+description: "Specifies the fields that are linked between two tables using the LinkTable Property."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,8 +28,8 @@ Specifies the fields that are linked between two tables using the LinkTable Prop
   
 |**Value**|**Description**|  
 |---------------|---------------------|  
-|**<field>**|A field from the table that is specified as the data source of this XML item|  
-|**<reference field>**|A field from the table that is specified in the [LinkTable Property](devenv-linktable-property.md).|  
+|`<field>`|A field from the table that is specified as the data source of this XML item|  
+|`<reference field>`|A field from the table that is specified in the [LinkTable Property](devenv-linktable-property.md).|  
   
 ## Syntax
 
@@ -40,7 +41,7 @@ LinkFields = <field>=FIELD(<reference field>)
  
 This property works in combination with the [LinkTable Property](devenv-linktable-property.md) and the [LinkTableForceInsert Property](devenv-linktableforceinsert-property.md).  
   
-The property sets a filter on the table that is the data source for the XML item. The filter selects only those records that contain the same **<field>** value in source table as the **<reference field>** value from the table specified in [LinkTable Property](devenv-linktable-property.md).  
+The property sets a filter on the table that is the data source for the XML item. The filter selects only those records that contain the same `<field>` value in source table as the `<reference field>` value from the table specified in [LinkTable Property](devenv-linktable-property.md).  
   
 For example, you have defined two XML items; one based on the Customer table that contains a list of customers and one based on the Sales Header table that contains a record of each sales order that has been made.  
   

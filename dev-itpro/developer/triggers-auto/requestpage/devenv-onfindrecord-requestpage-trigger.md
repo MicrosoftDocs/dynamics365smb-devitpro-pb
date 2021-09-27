@@ -3,7 +3,7 @@ title: "OnFindRecord (Request Page) Trigger"
 description: "Overrides the default page behavior and enables you to specify which record you want to display when the page opens."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/27/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,7 +22,7 @@ Overrides the default page behavior and enables you to specify which record you 
 
 
 ## Syntax
-```
+```AL
 trigger OnFindRecord(Which: Text): Ok
 begin
     ...
@@ -41,9 +41,9 @@ Text or code value with the following options:
 
 ## Return Value
 
-*Ok*
+*Ok*  
 &emsp;Type: [Boolean](../../methods-auto/boolean/boolean-data-type.md)  
-**true** if the specified record was found, otherwise, **false**.
+**true** if the specified record was found, otherwise, **false**.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

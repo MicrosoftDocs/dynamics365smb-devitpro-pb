@@ -41,7 +41,7 @@ If successful, this method returns a `201 Created` response code and a **subscri
 
 Here is an example of the request.
 ```json
-POST https://{businesscentralPrefix}/api/v1.0/subscriptions({id})
+POST https://{businesscentralPrefix}/api/v1.0/subscriptions({'id'})
 Content-type: application/json
 
 {
@@ -89,7 +89,7 @@ Here is an example of the response.
 
 ## See also
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
-[subscriptions](../resources/dynamics_subscriptions.md)    
+[Subscriptions](../resources/dynamics_subscriptions.md)  
 [Get subscriptions](dynamics_subscriptions_Get.md)  
 [Delete subscriptions](dynamics_subscriptions_Delete.md)  
 [Update subscriptions](dynamics_subscriptions_Update.md)  

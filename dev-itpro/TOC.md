@@ -1,4 +1,4 @@
-﻿# [Development and administration](index.md)
+# [Development and administration](index.md)
 # [New and planned](/dynamics365/business-central/product-news?toc=/dynamics365/business-central/dev-itpro/toc.json)
 # Get started
 ## [Overview of business functionality](/dynamics365/business-central/across-business-functionality?toc=/dynamics365/business-central/dev-itpro/toc.json)
@@ -11,10 +11,12 @@
 ### [The SMB Opportunity for App Publishers](developer/readiness/opportunity-app-publisher.md)
 ### [Get Started with Building Apps](developer/readiness/get-started.md)
 ### [Customize Business Central](developer/readiness/readiness-customizing-tenants.md)
+
 ### [The Lifecycle of Apps and Extensions](developer/devenv-app-life-cycle.md)
 <!--#### What the partner's responsibilities are -->
 ### [Update Lifecycle for Customizations](developer/devenv-customization-update-lifecycle.md)
 ### [Maintain AppSource Apps and Per-Tenant Extensions](developer/app-maintain.md)
+### [Discontinuing an AppSource app](developer/devenv-app-discontinue.md)
 ### [Development of a Localization Solution](developer/readiness/readiness-develop-localization.md)  
 <!--#### How Microsoft runs the service -->
 ### [Microsoft Responsibilities](deployment/microsoft-responsibilities.md)
@@ -44,8 +46,8 @@
 ##### [Upgrading an App Using ForceSync](administration/appmanagement/app-management-updating-with-forcesync.md)
 ## Sell
 ### [Get Started as a Reseller of Business Central Online](administration/get-started-online.md)
-### [Cloud Solution Provider program](/partner-center/csp-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
-### [Connect with customers](/partner-center/connect-with-your-customers?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### [Cloud Solution Provider (Partner Center)](/partner-center/csp-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### [Connect with customers (Partner Center)](/partner-center/connect-with-your-customers?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Customize Business Central](/dynamics365/business-central/ui-customizing-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Onboarding Experiences](administration/onboarding-experiences.md)
 ## Frequently asked questions
@@ -59,6 +61,26 @@
 ### [FAQ for Update Lifecycle for AppSource Apps](developer/devenv-update-app-life-cycle-faq.md)
 ### [FAQ About the Windows Client and Business Central](faq-win-cli.md)
 ### [FAQ about Connecting to Business Central Online from On-Premises Solutions](administration/faq-migrate-data.md)
+## What's new or changed
+### [Update 18.5](whatsnew/whatsnew-update-18-5.md)
+### [Update 18.4](whatsnew/whatsnew-update-18-4.md)
+### [Update 18.3](whatsnew/whatsnew-update-18-3.md)
+### [Update 18.2](whatsnew/whatsnew-update-18-2.md)
+### [Update 18.1](whatsnew/whatsnew-update-18.1.md)
+### Updates for earlier major versions
+#### [Update 17.5](whatsnew/whatsnew-update-17-5.md)
+#### [Update 17.4](whatsnew/whatsnew-update-17-4.md)
+#### [Update 17.3](whatsnew/whatsnew-update-17-3.md)
+#### [Update 17.2](whatsnew/whatsnew-update-17-2.md)
+#### [Update 17.1](whatsnew/whatsnew-update-17-1.md)
+#### [Update 16.5](whatsnew/whatsnew-update-16-5.md)
+#### [Update 16.4](whatsnew/whatsnew-update-16-4.md)
+#### [Update 16.3](whatsnew/whatsnew-update-16-3.md)
+#### [Update 16.2](whatsnew/whatsnew-update-16-2.md)
+#### [Update 16.1](whatsnew/whatsnew-update-16-1.md)
+#### [Update 15.4](whatsnew/whatsnew-update-15-4.md)
+#### [Update 15.3](whatsnew/whatsnew-update-15-3.md)
+#### [Update 15.2](whatsnew/whatsnew-update-15-2.md)
 ## Help and Support
 ### [Resources for Help and Support](help-and-support.md)
 ### [Legal Resources](terms/legal.md)
@@ -84,30 +106,76 @@
 <!-- administration-->
 # Administration
 ## [Administration of Business Central Online](administration/tenant-administration.md)
-## [Get Started as a Reseller of Business Central Online](administration/get-started-online.md)
-## [Country/Regional availability and Supported Translations](compliance/apptest-countries-and-translations.md)
-## [Delegated Administrator Access to Business Central Online](administration/delegated-admin.md)
-## [Operational Limits](administration/operational-limits-online.md)
-## [Major Updates and Minor Updates](administration/update-rollout-timeline.md)
-## [Version Numbers in Business Central](administration/version-numbers.md)
-## [Enabling New Features Ahead of Time](administration/feature-management.md)
-## [Managing Technical Support](administration/manage-technical-support.md)
-## [Setting up the Excel Add-In](administration/configuring-excel-addin.md)
-## [Network Configuration for the Excel Add-In](administration/configuring-network-for-addins.md)
-## [Setting up App Key Vaults for Extensions](administration/setup-app-key-vault.md)
-## [Upgrading Per-Tenant Extensions that Conflicts with Other Extensions](upgrade/upgrade-pte-merge-conflict.md)
-## [Upgrading AppSource Apps in Production](developer/devenv-upgrade-appsource-app-in-prod.md)
-## Entitlements and Permissions
-### [Entitlements and Permission Sets Overview](developer/devenv-entitlements-and-permissionsets-overview.md)
-### [Licenses and Entitlements](deployment/licensing.md)
-### [Special Permission Sets](administration/administration-special-permission-sets.md)
-## Environment Types
-### [Production and Sandbox Environments](administration/environment-types.md)
-### [Preparing Demo Environments](administration/demo-environment.md)
-### [Preparing Test Environments](administration/test-environment.md)
-### [Prepare for Major Updates with Preview Environments](administration/preview-environments.md)
-## Monitoring and Analyzing Telemetry
+## Understand Business Central online
+### [Get Started as a Reseller of Business Central Online](administration/get-started-online.md)
+### [Country/Regional availability and Supported Translations](compliance/apptest-countries-and-translations.md)
+### [Delegated Administrator Access to Business Central Online](administration/delegated-admin.md)
+### [Major Updates and Minor Updates](administration/update-rollout-timeline.md)
+### [Version Numbers in Business Central](administration/version-numbers.md)
+### [Operational Limits](administration/operational-limits-online.md)
+### [Technical support of Business Central](technical-support.md)
+### Environment Types
+#### [Production and Sandbox Environments](administration/environment-types.md)
+#### [Preparing Demo Environments](administration/demo-environment.md)
+#### [Preparing Test Environments](administration/test-environment.md)
+#### [Prepare for Major Updates with Preview Environments](administration/preview-environments.md)
+## Admin center
+### [Administration Center Overview](administration/tenant-admin-center.md)
+### [Manage environments](administration/tenant-admin-center-environments.md)
+### [Manage apps](administration/tenant-admin-center-manage-apps.md)
+### [Manage capacity](administration/tenant-admin-center-capacity.md)
+### [Manage notifications](administration/tenant-admin-center-notifications.md)
+### [Manage updates](administration/tenant-admin-center-update-management.md)
+### [Manage sessions](administration/tenant-admin-center-manage-sessions.md)
+### [Rename environments](administration/tenant-admin-center-environments-rename.md)
+### [Export databases](administration/tenant-admin-center-database-export.md)
+### [Restore an environment](administration/tenant-admin-center-backup-restore.md)
+### [Move an environment to another Azure Active Directory organization](administration/tenant-admin-center-environments-move.md)
+### [Environment telemetry](administration/tenant-admin-center-telemetry.md)
+### [Administration Center API](administration/administration-center-api.md)
+<!--### [Using Service-to-Service Authentication](administration/automation-apis-using-s2s-authentication.md)-->
+## Entitlements and permissions
+### [Entitlements and permission sets overview](developer/devenv-entitlements-and-permissionsets-overview.md)
+### [Licenses and entitlements](deployment/licensing.md)
+### [Special permission sets](administration/administration-special-permission-sets.md)
+## Prepare Business Central
+### [Manage technical support](administration/manage-technical-support.md)
+### [Enabling new features ahead of time](administration/feature-management.md)
+### [Set up standard company configuration packages](administration/set-up-standard-company-configuration-packages.md)
+### [Set up Business Central](/dynamics365/business-central/setup?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### [Set up the Excel add-in](administration/configuring-excel-addin.md)
+### [Network configuration for the Excel add-in](administration/configuring-network-for-addins.md)
+### [Set up App Key Vaults for extensions](administration/setup-app-key-vault.md)
+### [Deploy a tenant customization](developer/devenv-deploy-tenant-customization.md)
+### [Upgrading per-tenant extensions that conflict with other extensions](upgrade/upgrade-pte-merge-conflict.md)
+### [Upgrading AppSource apps in production](developer/devenv-upgrade-appsource-app-in-prod.md)
+<!--Potentially add RapidStart here?-->
+<!-- onboard customers-->
+## Onboard your customers
+### [Trials and Sign-ups](deployment/customer-signup.md)
+<!-- ### Do cool demos -->
+<!-- ### Partner Center stuff -->
+<!-- Performance tests-->
+### [Onboarding experiences](administration/onboarding-experiences.md)
+### [Onboard new users with the welcome banner](administration/onboarding-welcome-banner.md)
+### [Get users started with the checklist](administration/onboarding-checklist.md)
+### [Teaching tips and in-app tours for onboarding users](administration/onboarding-teaching-tips-tours.md)
+<!--migrate to BC online-->
+## Migrate to Business Central Online
+### [Migrate on-premises data](administration/migrate-data.md)
+### [Running the cloud migration tool](administration/migration-tool.md)
+### [Manage the migration to the cloud](administration/migration-management.md)
+### [Migrate from Business Central on-premises](administration/migrate-business-central-on-premises.md)
+### [Migrate from Dynamics GP](administration/migrate-dynamics-gp.md)
+### [Migrate from Dynamics NAV](upgrade/Upgrade-Considerations.md#online)
+### [FAQ about migrating to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
+### [Troubleshooting cloud migration](administration/migration-troubleshooting.md)
+<!--### [Migrating from Dynamics SL](administration/migrate-data.md)-->
+<!-- end migrate -->
+## Monitor and analyze telemetry
 ### [Overview](administration/telemetry-overview.md)
+### [Enable Application Insights](administration/telemetry-enable-application-insights.md)
+### [AppSource Submission Validation Telemetry](administration/telemetry-appsource-submission-validation-trace.md)
 ### [App Key Vault Secret Telemetry](administration/telemetry-extension-key-vault-trace.md)
 ### [Authorization Telemetry](administration/telemetry-authorization-trace.md)
 ### [Company Lifecycle Telemetry](administration/telemetry-company-lifecycle-trace.md)
@@ -129,20 +197,6 @@
 ### [Table Index Telemetry](administration/telemetry-table-index-trace.md)
 ### [Web Service Access Key Telemetry](administration/telemetry-webservices-access-key-trace.md)
 ### [Event IDs](administration/telemetry-event-ids.md)
-## Administration Center
-### [Administration Center Overview](administration/tenant-admin-center.md)
-### [Managing Environments](administration/tenant-admin-center-environments.md)
-### [Managing Apps](administration/tenant-admin-center-manage-apps.md)
-### [Managing Capacity](administration/tenant-admin-center-capacity.md)
-### [Managing Notifications](administration/tenant-admin-center-notifications.md)
-### [Managing Updates](administration/tenant-admin-center-update-management.md)
-### [Managing Sessions](administration/tenant-admin-center-manage-sessions.md)
-### [Rename Environments](administration/tenant-admin-center-environments-rename.md)
-### [Exporting Databases](administration/tenant-admin-center-database-export.md)
-### [Restoring an Environment](administration/tenant-admin-center-backup-restore.md)
-### [Move an Environment to another Azure Active Directory organization](administration/tenant-admin-center-environments-move.md)
-### [Environment Telemetry](administration/tenant-admin-center-telemetry.md)
-### [Administration Center API](administration/administration-center-api.md)
 ## Automation
 ### [Introduction to Automation APIs](administration/itpro-introduction-to-automation-apis.md)
 <!-- START>DO_NOT_EDIT -->
@@ -176,6 +230,8 @@
 #### [Update user](administration/api/dynamics_user_update.md)
 ### [User group](administration/resources/dynamics_usergroup.md)
 #### [Get user group](administration/api/dynamics_usergroup_get.md)
+#### [Create user group](administration/api/dynamics_usergroup_create.md)
+#### [Delete user group](administration/api/dynamics_usergroup_delete.md)
 #### [Update user group](administration/api/dynamics_usergroup_update.md)
 ### [User group member](administration/resources/dynamics_usergroupmember.md)
 #### [Get user group member](administration/api/dynamics_usergroupmember_get.md)
@@ -188,50 +244,6 @@
 #### [Create user permission](administration/api/dynamics_userpermission_create.md)
 #### [Update user permission](administration/api/dynamics_userpermission_update.md)
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
-### [Using Service-to-Service Authentication](administration/automation-apis-using-s2s-authentication.md)
-<!-- onboard customers-->
-## Onboard your customers
-### [Trials and Sign-ups](deployment/customer-signup.md)
-<!-- ### Do cool demos -->
-<!-- ### Partner Center stuff -->
-<!-- Performance tests-->
-### [Onboarding Experiences](administration/onboarding-experiences.md)
-### [Onboard New Users with the Welcome Banner](administration/onboarding-welcome-banner.md)
-### [Get Users Started with the Checklist](administration/onboarding-checklist.md)
-### [Teaching tips and in-app tours for onboarding users](administration/onboarding-teaching-tips-tours.md)
-### [Set Up Business Central](/dynamics365/business-central/setup?toc=/dynamics365/business-central/dev-itpro/toc.json)
-### [Recommend Apps from AppSource](administration/recommend-apps.md)
-### [Deploying a Tenant Customization](developer/devenv-deploy-tenant-customization.md)
-### [Technical Support of Business Central](technical-support.md)
-<!--migrate to BC online-->
-## Migrate to Business Central Online
-### [Migrating On-Premises Data](administration/migrate-data.md)
-### [Running the Cloud Migration Tool](administration/migration-tool.md)
-### [Managing the Migration to the Cloud](administration/migration-management.md)
-### [Migrating from Business Central On-Premises](administration/migrate-business-central-on-premises.md)
-### [Migrating from Dynamics GP](administration/migrate-dynamics-gp.md)
-### [Migrating from Dynamics NAV](upgrade/Upgrade-Considerations.md#online)
-### [FAQ about Migrating to Business Central Online from On-Premises Solutions](administration/faq-migrate-data.md)
-### [Troubleshooting Cloud Migration](administration/migration-troubleshooting.md)
-<!--### [Migrating from Dynamics SL](administration/migrate-data.md)-->
-<!-- end migrate -->
-## What's New or Changed
-### [Update 18.2](whatsnew/whatsnew-update-18-2.md)
-### [Update 18.1](whatsnew/whatsnew-update-18.1.md)
-### [Update 17.5](whatsnew/whatsnew-update-17-5.md)
-### [Update 17.4](whatsnew/whatsnew-update-17-4.md)
-### [Update 17.3](whatsnew/whatsnew-update-17-3.md)
-### [Update 17.2](whatsnew/whatsnew-update-17-2.md)
-### [Update 17.1](whatsnew/whatsnew-update-17-1.md)
-### Updates for earlier major versions
-#### [Update 16.5](whatsnew/whatsnew-update-16-5.md)
-#### [Update 16.4](whatsnew/whatsnew-update-16-4.md)
-#### [Update 16.3](whatsnew/whatsnew-update-16-3.md)
-#### [Update 16.2](whatsnew/whatsnew-update-16-2.md)
-#### [Update 16.1](whatsnew/whatsnew-update-16-1.md)
-#### [Update 15.4](whatsnew/whatsnew-update-15-4.md)
-#### [Update 15.3](whatsnew/whatsnew-update-15-3.md)
-#### [Update 15.2](whatsnew/whatsnew-update-15-2.md)
 <!-- end admin -->
 <!-- Development-->
 # Development
@@ -245,6 +257,7 @@
 ### [AL Outline View](developer/devenv-al-outline-view.md)
 ### [AL Code Navigation](developer/devenv-al-code-navigation.md)
 ### [AL Code Actions](developer/devenv-code-actions.md)
+### [AL Profiler](developer/devenv-al-profiler-overview.md)
 ### [Object Ranges](developer/devenv-object-ranges.md)
 ### [Differences in the Development Environments](developer/devenv-differences.md)
 <!-- ### [Object Specifications and Limitations](developer/devenv-object-specifications-limitations.md)-->
@@ -310,11 +323,9 @@
 ### [The Microsoft_Application.app File](developer/devenv-application-app-file.md)
 ### [Publishing a Code-Customized Base Application](developer/devenv-publish-code-customization.md)
 ### [Extending Application Areas](developer/devenv-extending-application-areas.md)
+### [Extending Item Charge Distribution Methods](developer/devenv-extending-item-charges.md)
+### [Extending Price Calculations](developer/devenv-extending-best-price-calculations.md)
 ### [Extending Pages Previously Based on the Date Virtual Table](developer/devenv-extend-pages-based-on-date-virtual-table.md)
-### Examples
-#### [Extending Item Charge Distribution Methods](developer/devenv-extending-item-charges.md)
-#### [Extending Price Calculations](developer/devenv-extending-best-price-calculations.md)
-#### [Extending the Data Archive Extension](developer/devenv-data-archive-extension.md)
 ## Using the System Application
 ### [Overview of the System Application](developer/devenv-system-application-overview.md)
 ### Creating New Modules in the System Application
@@ -532,6 +543,7 @@
 ## AL Programming
 ### [AL Development Environment](developer/devenv-reference-overview.md)
 ### [Programming in AL](developer/devenv-programming-in-al.md)
+### [FAQ for Developing in AL](developer/devenv-dev-faq.md)
 ### [AL Simple Statements](developer/devenv-al-simple-statements.md)  
 ### [AL Control Statements](developer/devenv-al-control-statements.md)  
 ### [AL Complex Types](developer/devenv-al-complextypes.md)
@@ -541,7 +553,6 @@
 #### [Pragma Directive](developer/directives/devenv-directive-pragma.md)
 ### [Using Access Modifiers in AL](developer/devenv-using-access-modifiers.md)
 ### [XML Comments in Code](developer/devenv-xml-comments.md)
-### [FAQ for Developing in AL](developer/devenv-dev-faq.md)
 ### Code Analysis
 #### [Using the Code Analysis Tool](developer/devenv-using-code-analysis-tool.md)
 #### [Ruleset for the Code Analysis Tool](developer/devenv-rule-set-syntax-for-code-analysis-tools.md)
@@ -567,6 +578,7 @@
 #### [Table Object](developer/devenv-table-object.md)
 #### [Table Extension Object](developer/devenv-table-ext-object.md)
 #### [Table Keys](developer/devenv-table-keys.md)
+#### [Enums](developer/devenv-extensible-enums.md)
 #### [Page Object](developer/devenv-page-object.md)
 #### [Page Extension Object](developer/devenv-page-ext-object.md)
 #### [Page Customization Object](developer/devenv-page-customization-object.md)
@@ -596,6 +608,7 @@
 ##### [Caption Attribute](developer/attributes/devenv-caption-attribute.md)
 ##### [CommitBehavior Attribute](developer/attributes/devenv-commitbehavior-attribute.md)
 ##### [ConfirmHandler Attribute](developer/attributes/devenv-confirmhandler-attribute.md)
+##### [ErrorBehavior Attribute](developer/attributes/devenv-errorbehavior-attribute.md)
 ##### [EventSubscriber Attribute](developer/attributes/devenv-eventsubscriber-attribute.md)
 ##### [FilterPageHandler Attribute](developer/attributes/devenv-filterpagehandler-attribute.md)
 ##### [HandlerFunctions Attribute](developer/attributes/devenv-handlerfunctions-attribute.md)
@@ -640,6 +653,7 @@
 ##### [DataClassification Option Type](developer/methods-auto/dataclassification/dataclassification-option.md)
 ##### [DataScope Option Type](developer/methods-auto/datascope/datascope-option.md)
 ##### [DefaultLayout Option Type](developer/methods-auto/defaultlayout/defaultlayout-option.md)
+##### [ErrorBehavior Option Type](developer/methods-auto/errorbehavior/errorbehavior-option.md)
 ##### [ErrorType Option Type](developer/methods-auto/errortype/errortype-option.md)
 ##### [ExecutionContext Option Type](developer/methods-auto/executioncontext/executioncontext-option.md)
 ##### [ExecutionMode Option Type](developer/methods-auto/executionmode/executionmode-option.md)
@@ -768,9 +782,20 @@
 ##### [Names() Method](developer/methods-auto/enum/enum-names--method.md)
 ##### [Ordinals() Method](developer/methods-auto/enum/enum-ordinals--method.md)
 #### [ErrorInfo Data Type](developer/methods-auto/errorinfo/errorinfo-data-type.md)
+##### [Create(String [, Boolean] [, var Record] [, Integer] [, Integer] [, String] [, Verbosity] [, DataClassification] [, Dictionary of [Text, Text]]) Method](developer/methods-auto/errorinfo/errorinfo-create-method.md)
+##### [Callstack() Method](developer/methods-auto/errorinfo/errorinfo-callstack-method.md)
+##### [Collectible([Boolean]) Method](developer/methods-auto/errorinfo/errorinfo-collectible-method.md)
+##### [ControlName([String]) Method](developer/methods-auto/errorinfo/errorinfo-controlname-method.md)
+##### [CustomDimensions([Dictionary of [Text, Text]]) Method](developer/methods-auto/errorinfo/errorinfo-customdimensions-method.md)
 ##### [DataClassification([DataClassification]) Method](developer/methods-auto/errorinfo/errorinfo-dataclassification-method.md)
+##### [DetailedMessage([String]) Method](developer/methods-auto/errorinfo/errorinfo-detailedmessage-method.md)
 ##### [ErrorType([ErrorType]) Method](developer/methods-auto/errorinfo/errorinfo-errortype-method.md)
+##### [FieldNo([Integer]) Method](developer/methods-auto/errorinfo/errorinfo-fieldno-method.md)
 ##### [Message([String]) Method](developer/methods-auto/errorinfo/errorinfo-message-method.md)
+##### [PageNo([Integer]) Method](developer/methods-auto/errorinfo/errorinfo-pageno-method.md)
+##### [RecordId([RecordId]) Method](developer/methods-auto/errorinfo/errorinfo-recordid-method.md)
+##### [SystemId([Guid]) Method](developer/methods-auto/errorinfo/errorinfo-systemid-method.md)
+##### [TableId([Integer]) Method](developer/methods-auto/errorinfo/errorinfo-tableid-method.md)
 ##### [Verbosity([Verbosity]) Method](developer/methods-auto/errorinfo/errorinfo-verbosity-method.md)
 #### [FieldRef Data Type](developer/methods-auto/fieldref/fieldref-data-type.md)
 ##### [Active() Method](developer/methods-auto/fieldref/fieldref-active-method.md)
@@ -907,7 +932,9 @@
 ##### [Add(String, String) Method](developer/methods-auto/httpheaders/httpheaders-add-method.md)
 ##### [Clear() Method](developer/methods-auto/httpheaders/httpheaders-clear-method.md)
 ##### [Contains(String) Method](developer/methods-auto/httpheaders/httpheaders-contains-method.md)
-##### [GetValues(String, Array of [Text]) Method](developer/methods-auto/httpheaders/httpheaders-getvalues-method.md)
+##### [GetValues(String, Array of [Text]) Method](developer/methods-auto/httpheaders/httpheaders-getvalues-string-text-method.md)
+##### [GetValues(String, List of [Text]) Method](developer/methods-auto/httpheaders/httpheaders-getvalues-string-list[text]-method.md)
+##### [Keys() Method](developer/methods-auto/httpheaders/httpheaders-keys-method.md)
 ##### [Remove(String) Method](developer/methods-auto/httpheaders/httpheaders-remove-method.md)
 ##### [TryAddWithoutValidation(String, String) Method](developer/methods-auto/httpheaders/httpheaders-tryaddwithoutvalidation-method.md)
 #### [HttpRequestMessage Data Type](developer/methods-auto/httprequestmessage/httprequestmessage-data-type.md)
@@ -1462,6 +1489,7 @@
 ##### [Clear(var Array of [Any]) Method](developer/methods-auto/system/system-clear-joker-method.md)
 ##### [Clear(var Any) Method](developer/methods-auto/system/system-clear-joker-method.md)
 ##### [ClearAll() Method](developer/methods-auto/system/system-clearall-method.md)
+##### [ClearCollectedErrors() Method](developer/methods-auto/system/system-clearcollectederrors-method.md)
 ##### [ClearLastError() Method](developer/methods-auto/system/system-clearlasterror-method.md)
 ##### [ClosingDate(Date) Method](developer/methods-auto/system/system-closingdate-method.md)
 ##### [CodeCoverageInclude(var Record) Method](developer/methods-auto/system/system-codecoverageinclude-method.md)
@@ -1492,6 +1520,7 @@
 ##### [ExportObjects(String, var Record [, Integer]) Method](developer/methods-auto/system/system-exportobjects-method.md)
 ##### [Format(Any [, Integer] [, Integer]) Method](developer/methods-auto/system/system-format-joker-integer-integer-method.md)
 ##### [Format(Any, Integer, String) Method](developer/methods-auto/system/system-format-joker-integer-string-method.md)
+##### [GetCollectedErrors([Boolean]) Method](developer/methods-auto/system/system-getcollectederrors-method.md)
 ##### [GetDocumentUrl(Guid) Method](developer/methods-auto/system/system-getdocumenturl-method.md)
 ##### [GetDotNetType(Any) Method](developer/methods-auto/system/system-getdotnettype-method.md)
 ##### [GetLastErrorCallStack() Method](developer/methods-auto/system/system-getlasterrorcallstack-method.md)
@@ -1503,6 +1532,7 @@
 ##### [GetUrl(ClientType, String, ObjectType, Integer, RecordRef [, Boolean]) Method](developer/methods-auto/system/system-geturl-clienttype-string-objecttype-integer-recordref-boolean-method.md)
 ##### [GlobalLanguage([Integer]) Method](developer/methods-auto/system/system-globallanguage-method.md)
 ##### [GuiAllowed() Method](developer/methods-auto/system/system-guiallowed-method.md)
+##### [HasCollectedErrors() Method](developer/methods-auto/system/system-hascollectederrors-method.md)
 ##### [Hyperlink(String) Method](developer/methods-auto/system/system-hyperlink-method.md)
 ##### [ImportEncryptionKey(String, String) Method](developer/methods-auto/system/system-importencryptionkey-method.md)
 ##### [ImportObjects(String [, Integer]) Method](developer/methods-auto/system/system-importobjects-method.md)
@@ -1534,7 +1564,7 @@
 ##### [ChangeCompany([String]) Method](developer/methods-auto/record/record-changecompany-method.md)
 ##### [ClearMarks() Method](developer/methods-auto/record/record-clearmarks-method.md)
 ##### [Consistent(Boolean) Method](developer/methods-auto/record/record-consistent-method.md)
-##### [Copy(var Record [, Boolean]) Method](developer/methods-auto/record/record-copy-method.md)
+##### [Copy(Record [, Boolean]) Method](developer/methods-auto/record/record-copy-method.md)
 ##### [CopyFilter(Any, Any) Method](developer/methods-auto/record/record-copyfilter-method.md)
 ##### [CopyFilters(var Record) Method](developer/methods-auto/record/record-copyfilters-method.md)
 ##### [CopyLinks(var Record) Method](developer/methods-auto/record/record-copylinks-table-method.md)
@@ -2237,6 +2267,7 @@
 #### [Clustered Property](developer/properties/devenv-clustered-property.md)
 #### [ColumnFilter Property](developer/properties/devenv-columnfilter-property.md)
 #### [ColumnSpan Property](developer/properties/devenv-columnspan-property.md)
+#### [ColumnStoreIndex Property](developer/properties/devenv-columnstoreindex-property.md)
 #### [Compressed Property](developer/properties/devenv-compressed-property.md)
 #### [CompressionType Property](developer/properties/devenv-compressiontype-property.md)
 #### [ContextSensitiveHelpPage Property](developer/properties/devenv-contextsensitivehelppage-property.md)
@@ -2307,6 +2338,7 @@
 #### [Implementation Property](developer/properties/devenv-implementation-property.md)
 #### [Importance Property](developer/properties/devenv-importance-property.md)
 #### [IncludeCaption Property](developer/properties/devenv-includecaption-property.md)
+#### [IncludedFields Property](developer/properties/devenv-includedfields-property.md)
 #### [IncludedPermissionSets Property](developer/properties/devenv-includedpermissionsets-property.md)
 #### [IndentationColumn Property](developer/properties/devenv-indentationcolumn-property.md)
 #### [IndentationControls Property](developer/properties/devenv-indentationcontrols-property.md)
@@ -2674,7 +2706,7 @@
 ### [Granting Permissions to Manage Databases](security/Setting-Database-Owner-and-Security-Administration-Permissions.md)-->
 ## Privacy
 ### [Privacy FAQ](security/PrivacyFAQ.md)
-### [Privacy (microsoft.com)](https://www.microsoft.com/en-us/trust-center/privacy)
+### [Privacy (microsoft.com)](https://www.microsoft.com/trust-center/privacy)
 ## Compliance
 ### [Compliance Overview](/dynamics365/business-central/compliance/compliance-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
 <!-- end security -->
@@ -2766,6 +2798,8 @@
 ## [Dynamics 365 Business Central API (v2.0)](api-reference/v2.0/index.md)
 ## [Dynamics 365 Business Central API (v1.0)](api-reference/v1.0/index.md)
 <!-- end Business Central API -->
+## Authenticating Using OAuth
+### [Using Service-to-Service Authentication](administration/automation-apis-using-s2s-authentication.md)
 <!--deprecated features -->
 # Removed or deprecated features
 ## Deprecated Tables
@@ -2904,6 +2938,7 @@
 #### [Extension Lifecycle Telemetry](administration/telemetry-extension-lifecycle-trace.md)
 #### [Extension Update Telemetry](administration/telemetry-extension-update-trace.md)
 #### [Field Monitoring Telemetry](administration/telemetry-field-monitoring-trace.md)
+#### [Job Queue Lifecycle Telemetry](administration/telemetry-job-queue-lifecycle-trace.md)
 #### [Long Running AL Method Telemetry](administration/telemetry-al-method-trace.md)
 #### [Long Running SQL Queries Telemetry](administration/telemetry-long-running-sql-query-trace.md)
 #### [Report Generation Telemetry](administration/telemetry-reports-trace.md)

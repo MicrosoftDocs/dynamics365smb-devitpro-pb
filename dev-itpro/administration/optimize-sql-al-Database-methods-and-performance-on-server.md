@@ -147,7 +147,7 @@ Using **ModifyAll** and **DeleteAll** can improve performance by limiting the am
 [CalcSums Method](../developer/methods-auto/record/record-CalcSums-method.md)   
 [CalcSum Method](../developer/methods-auto/fieldref/fieldref-CALCSUM-Method.md)   
 [SetAutoCalcFields Method](../developer/methods-auto/record/record-SETAUTOCalcFields-method.md)  
-[Insert Method](../developer/methods-auto/record/record-Insert-method.md)   
+[Insert Method](../developer/methods-auto/record/record-Insert--method.md)   
 [Modify Method](../developer/methods-auto/record/record-Modify-method.md)  
 [ModifyAll Method](../developer/methods-auto/record/record-ModifyAll-method.md)     
 [Delete Method](../developer/methods-auto/record/record-Delete-method.md)  

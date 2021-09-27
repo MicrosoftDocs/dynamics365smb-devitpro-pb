@@ -144,6 +144,32 @@ page 50001 "CDS Worker List"
 
 4. Add the fields from the integration table to display on the page in the `layout` section. 
 
+### To create a column on list page to display which workers are coupled
+To track whether an employee record is coupled to a corresponding worker record in Dataverse, do the following:
+1. Add a boolean field called "Coupled to CRM" to your Business Central table. 
+
+ > [!IMPORTANT]  
+ > The name of the new field must be **Coupled to CRM**.
+
+3. Add a control that shows the **Coupled to CRM** field on the list page. There is no constraint about how to name this new control in the UI.
+
+Every time you couple or uncouple a record from your Business Central table to an record in Dataverse, the synchronization engine will update the Coupled to CRM field that you added.
+
+This will work only for records that you couple or uncouple after you have added the Coupled to CRM field. To update this field value on records that were coupled before you added the Coupled to CRM field, you must run the following code. We recommend that you run the code as a background task.
+
+```al
+local procedure SetCoupledFlags()
+var
+    CRMIntegrationRecord: Record "CRM Integration Record";
+    CRMIntegrationManagement: Codeunit "CRM Integration Management";
+begin
+    CRMIntegrationRecord.SetRange("Table ID", Database::Employee); //Your table name
+    if CRMIntegrationRecord.FindSet() then
+        repeat
+            CRMIntegrationManagement.SetCoupledFlag(CRMIntegrationRecord, true)
+        until CRMIntegrationRecord.Next() = 0;
+end;
+```
 
 ## Enable coupling and synchronization between Worker in Dataverse and in Business Central
 
@@ -216,7 +242,7 @@ end;
 
 ### To create actions on the employee page for managing coupling and synchronization
 
-To enable users to create couplings between records in the two systems, we will extend the **Employee Card** page with actions for creating and deleting couplings, for synchronizing and for deep linking. The following code example adds those actions to **Employee Card**.
+To enable users to create couplings between records in the two systems, we will extend the **Employee Card** page with actions for creating and deleting couplings, for synchronizing, and for deep linking. The following code example adds those actions to the **Employee Card**.
 
 ```al
 pageextension 50101 "Employee Synch Extension" extends "Employee Card"
@@ -336,6 +362,26 @@ pageextension 50101 "Employee Synch Extension" extends "Employee Card"
 }
 ```
 
+<!--## Customizing the matching algorithm
+
+Starting in 2020 release wave 1, you can use match-based coupling of records in [!INCLUDE [prod_short](../developer/includes/prod_short.md)] and [!INCLUDE [cds_long_md](../developer/includes/cds_long_md.md)], based on matching criteria defined by the administrator. For more information, see [Customize the Match-Based Coupling](/dynamics365/business-central/admin-how-to-set-up-a-dynamics-crm-connection#customize-the-match-based-coupling) in the business functionality content.  
+
+Based on the fields that you choose to match on, the algorithm that does the matching sets an equality filter by default. However, at the moment when it sets a filter, an event is raised by codeunit 5360, `CDSIntTableCouple`:
+
+```al
+    [IntegrationEvent(false, false)]
+    local procedure OnBeforeSetMatchingFilter(var IntegrationRecordRef: RecordRef; var MatchingIntegrationRecordFieldRef: FieldRef; var LocalRecordRef: RecordRef; var MatchingLocalFieldRef: FieldRef; var SetMatchingFilterHandled: Boolean)
+```
+
+By subscribing to this event, you can modify the filter that is set on `MatchingIntegrationRecordFieldRef`. The following table outlines the parameters:
+
+|Parameter  |Description  |
+|-----------|-------------|
+|LocalRecordRef |The Business Central record for which you are finding a match.  |
+|MatchingLocalFieldRef| The Business Central field that you want to use for finding a match in Dataverse. Use its value to set the filter on the Dataverse entity.  |
+|IntegrationRecordRef| The record reference to the proxy record that represents the Dataverse entity.|
+|MatchingIntegrationRecordFieldRef| The field reference to the proxy table field that represents the Dataverse entity attribute. To override the default behavior (equality filter), set your custom filter on this field, and then set `SetMatchingFilterHandled` flag to `true`.|
+-->
 ## Customizing Uncoupling
 
 Tables might require custom code to remove couplings, for example, to change tables before or after uncoupling. To enable custom uncoupling, specify the uncoupling codeunit when you create an integration table mapping. To do this, adjust the function **InsertIntegrationTableMapping** in your codeunit, as follows:
@@ -371,7 +417,7 @@ Be aware that custom uncoupling is running in background as it could modify [!IN
 
 ## Create default integration table mappings and field mappings
 
-For synchronization to work, mappings must exist to associate the table ID and fields of the integration table (in this case, **CDS Worker**) with the table in [!INCLUDE[prod_short](../includes/prod_short.md)] (in this case table **Employee**). There are two types of mapping:  
+For synchronization to work, mappings must exist to associate the table ID and fields of the integration table (in this case, **CDS Worker**) with the table in [!INCLUDE[prod_short](../includes/prod_short.md)] (in this case, **Employee**). There are two types of mapping:  
 
 - **Integration table mapping** - Integration table mapping links the [!INCLUDE[prod_short](../includes/prod_short.md)] table to the integration table for the [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] table.  
 - **Integration field mapping** - Field mapping links a field in a table row in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] with a field in a record in [!INCLUDE[prod_short](../includes/prod_short.md)]. This determines which field in [!INCLUDE[prod_short](../includes/prod_short.md)] corresponds to which field in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. Typically, there are multiple field mappings for a table.  
@@ -413,7 +459,7 @@ We can create the integration table mapping by subscribing to the **OnAfterReset
     end;
     ``` 
 
-   For each integration table mapping entry, there must be integration field mapping entries to map the fields of the records in the table and the integration table. The next step is to add integration field mappings for each field in the **Employee** table in [!INCLUDE[prod_short](../includes/prod_short.md)] that we want to map to the **Worker** table in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].  
+For each integration table mapping entry, there must be integration field mapping entries to map the fields of the records in the table and the integration table. The next step is to add integration field mappings for each field in the **Employee** table in [!INCLUDE[prod_short](../includes/prod_short.md)] that we want to map to the **Worker** table in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].  
 
 ### To create integration fields mappings  
 
@@ -447,7 +493,7 @@ To create an integration field mapping, follow these steps:
 Users can now manually synchronize employee records in [!INCLUDE[prod_short](../includes/prod_short.md)] with Worker table rows in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] from the [!INCLUDE[prod_short](../includes/prod_short.md)] client.  
 
 > [!TIP]  
-> To learn how to schedule the synchronization by using a job queue entry, examine the code on the **RecreateJobQueueEntryFromIntTableMapping** function in codeunit **CDS Setup Defaults** (ID 7204) and see how it is called by the integration code for other [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] tables in the codeunit. For more information, see [Scheduling a Synchronization](/dynamics365/business-central/admin-scheduled-synchronization-using-the-synchronization-job-queue-entries).
+> To learn how to schedule the synchronization by using a job queue entry, examine the code on the **RecreateJobQueueEntryFromIntTableMapping** method in codeunit **CDS Setup Defaults** (ID 7204) and see how it is called by the integration code for other [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] tables in the codeunit. For more information, see [Scheduling a Synchronization](/dynamics365/business-central/admin-scheduled-synchronization-using-the-synchronization-job-queue-entries).
 
 ### Enable customers to reset selected integration table mappings to the default settings
 
@@ -460,6 +506,9 @@ Customers might make changes to the integration table mappings that they later r
     local procedure HandleCustomIntegrationTableMappingReset(var IsHandled: Boolean; IntegrationTableMappingName: Code[20])
     var
         IntegrationTableMapping: Record "Integration Table Mapping";
+        IntegrationFieldMapping: Record "Integration Field Mapping";
+        CDSWorker: Record "CDS Worker";
+        Employee: Record "Employee";
     begin
         case IntegrationTableMappingName of
             'EMPLOYEE-WORKER':
@@ -475,12 +524,12 @@ Customers might make changes to the integration table mappings that they later r
                     ...
                     IsHandled := true;
                 end;
-                ...
+            ...
         end;
     end;
     ```
 > [!Important]  
-> You must set the the IsHandled property to `true` to avoid triggering the default implementation. Otherwise, all custom table mappings will be reset to default, regardless of the user's selection.
+> You must set the IsHandled property to `true` to avoid triggering the default implementation. Otherwise, all custom table mappings will be reset to default, regardless of the user's selection.
 
 ## Customizing Synchronization  
 
@@ -506,7 +555,7 @@ During the synchronization process, certain events are published and raised by c
 For more information about how to subscribe to events, see [Subscribing to Events](../developer/devenv-subscribing-to-events.md).
 
 > [!TIP]  
-> In order to have Company ID mapping for custom tables just like the base [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] tables , users can subscribe to the **OnBeforeInsertRecord** event in codeunit **Integration Rec. Synch. Invoke** (ID 5345), as follows:
+> In order to have Company ID mapping for custom tables just like the base [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] tables, users can subscribe to the **OnBeforeInsertRecord** event in codeunit **Integration Rec. Synch. Invoke** (ID 5345), as follows:
 > ```al
 >   [EventSubscriber(ObjectType::Codeunit, Codeunit::"Integration Rec. Synch. Invoke", 'OnBeforeInsertRecord', '', false, false)]
 >   local procedure HandleOnBeforeInsertRecord(SourceRecordRef: RecordRef; DestinationRecordRef: RecordRef)
@@ -532,7 +581,7 @@ Let us explore another scenario. If we added an **Industry** field to the **Cont
 2. Locate the **AL Table Proxy Generator** tool. See the previous [section](administration-custom-cds-integration.md#to-create-the-integration-table-for-the-worker-table-in-business-central).
 3. In PowerShell, run the tool with the following arguments:
 
-    ```  
+    ```powershell
     -project:<Your AL project folder>
     -packagecachepath:<Your AL project cache folder>
     -serviceuri:<CDS server URL>
@@ -600,7 +649,7 @@ After we publish the extension we can update the mappings by running the **CDS C
 
 [Overview](/dynamics365/business-central/admin-common-data-service)  
 [Setting Up User Accounts for Integrating with [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]](/dynamics365/business-central/admin-setting-up-integration-with-dynamics-sales)  
-[Set Up a Connection to [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]](/dynamics365/business-central/admin-how-to-set-up-a-dynamics-crm-connection) 
+[Set Up a Connection to [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]](/dynamics365/business-central/admin-how-to-set-up-a-dynamics-crm-connection)  
 [Synchronizing Business Central and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]](/dynamics365/business-central/admin-synchronizing-business-central-and-sales)  
 [Mapping the Tables and Fields to Synchronize](/dynamics365/business-central/admin-how-to-modify-table-mappings-for-synchronization)  
 [Manually Synchronize Table Mappings](/dynamics365/business-central/admin-manual-synchronization-of-table-mappings)  

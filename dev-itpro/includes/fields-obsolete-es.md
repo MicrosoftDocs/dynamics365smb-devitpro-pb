@@ -6,7 +6,7 @@ ms.topic: include
 ms.date: 04/01/2021
 ms.author: edupont
 ---
-The following fields are marked as ObsoleteState:Pending in the ES version.
+The following fields are marked as `ObsoleteState = Pending;` in the ES version.
 
 |Table ID|Table Name|Field ID|Field Name|Comments|
 |--------|--------|--------|--------|--------|

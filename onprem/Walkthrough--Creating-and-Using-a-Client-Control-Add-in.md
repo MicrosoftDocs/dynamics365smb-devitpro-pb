@@ -219,7 +219,7 @@ Before registering the control add-in in [!INCLUDE[navnow](includes/navnow_md.md
 
 2.  Locate the **Manifest.xml** file that you created in the previous steps, and copy this to the same folder structure. Then locate the **Script.js** file that you created in the previous steps, and copy this to the **Script** folder. Your folder should now look like this:  
 
-     ![Folder structure before creating the .zip file](media/ControlAddInSingleFileFolderStructure.png "ControlAddInSingleFileFolderStructure")  
+     ![Folder structure before creating the .zip file.](media/ControlAddInSingleFileFolderStructure.png "ControlAddInSingleFileFolderStructure")  
 
 3.  Place images, scripts, and stylesheets in the right folders.  
 
@@ -311,7 +311,7 @@ You have set up the prerequisites for using a control add-in from a page. Now yo
 
      Your page design should now look like this.  
 
-     ![The page design for the Bing Maps control](media/ControlAddInPageDesignForBingMapsControl.png "ControlAddInPageDesignForBingMapsControl")  
+     ![The page design for the Bing Maps control.](media/ControlAddInPageDesignForBingMapsControl.png "ControlAddInPageDesignForBingMapsControl")  
 
 9. Save and compile the page. Name the page **Bing Maps**.  
 

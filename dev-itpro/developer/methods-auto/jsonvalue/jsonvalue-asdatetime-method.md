@@ -1,9 +1,9 @@
 ---
-title: "JsonValue.AsDateTime Method"
+title: "JsonValue.AsDateTime() Method"
 description: "Converts the value in a JsonValue to a DateTime data type."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# JsonValue.AsDateTime Method
+# JsonValue.AsDateTime() Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Converts the value in a JsonValue to a DateTime data type.
 
 
 ## Syntax
-```
+```AL
 Result :=   JsonValue.AsDateTime()
 ```
 
@@ -39,7 +39,7 @@ An instance of the [JsonValue](jsonvalue-data-type.md) data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks 
-If the JsonValue does not contain a string of the format "o" as specified here the operation will fail with a run-time error.
+If the JsonValue does not contain a string of the round-trip ("o") format, the operation will fail with a run-time error. For more information, see [The round-trip ("O", "o") format specifier](/dotnet/standard/base-types/standard-date-and-time-format-strings#the-round-trip-o-o-format-specifier).
 
 If there is no timezone specifier, the value will be treated as a UTC DateTime. If the timezone specifier is local, it will be treated as local to the server's timezone and converted to UTC. We recommend using UTC time to prevent unexpected behavior.
 

@@ -40,12 +40,13 @@ Retention policies allow you to specify how frequently you want [!INCLUDE[prod_s
 
 For more information, see [Define Retention Policies](/dynamics365/business-central/admin-data-retention-policies).
 
+<!-- remove for now because of new db capacity >
 ## Migrate BLOB data types to Media or MediaSet
 
 Data in Media or Media set data types aren't counted in the database limit. As an extension developer, consider migrating data from blobs to the Media or MediaSet datatypes for your own extensions.
 
 For more information, see [Working With Media on Records](../developer/devenv-working-with-media-on-records.md).
-
+-->
 ## Compress tables
 <!--
 Compressing table data saves space and helps improve performance of I/O-intensive workloads. There are two ways to compress data in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].

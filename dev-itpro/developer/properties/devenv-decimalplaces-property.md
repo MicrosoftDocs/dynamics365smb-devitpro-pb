@@ -1,8 +1,9 @@
 ---
 title: "DecimalPlaces Property"
+description: "Sets display and storage requirements for the Decimal Data Type."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -37,6 +38,10 @@ You can enter minimum, maximum, or both values for the number of decimal places,
 |**2:**|At least 2 decimal places.|  
 |**:2**|No more than 2 decimal places.|  
 
+
+> [!NOTE]
+> The maximum number of decimal places that can be specified is 18. If you set a maximum number of decimal places greater than 18, the digits following the 18th decimal place will be ignored.
+
 ## Syntax
 
 ```AL
@@ -45,7 +50,7 @@ DecimalPlaces = 0 : 5;
   
 ## Remarks
 
-For decimal fields, this property specifies the number of decimal places that you want to store. The default storage requirements for [Decimal Data Type](../methods-auto/library.md) are two decimal places for amounts. Use this property to specify storage requirements that are different than the default.  
+For decimal fields, this property specifies the number of decimal places that you want to store. The default storage requirements for [Decimal Data Type](../methods-auto/library.md) are two decimal places for amounts. Use this property to specify storage requirements that are different than the default. 
   
 This setting is evaluated on text boxes and fields during validation.  
   

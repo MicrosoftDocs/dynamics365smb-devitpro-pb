@@ -43,11 +43,9 @@ Typing the shortcut `treportext` will create the basic layout for a report exten
 
 ## Report extension example
 
-The following example illustrates a simplified table extension which adds a new field to the `Customer` table, `MyField`. The report extension `MyExtension` then adds `MyField` as well as an additional field in original `Customer` table to the **Customer - Top 10 List** report. For a more advanced example, see [Report Extension Example](devenv-report-ext-example.md).
+The following example illustrates a simplified table extension which adds a new field to the `Customer` table, `MyField`. The report extension `MyExtension` then adds `MyField` as well as an additional field in original `Customer` table to the **Customer - Top 10 List** report. For a more advanced example, see [Report Extension Example](devenv-report-ext-example.md). The example also illustrates how a new field added to the report extension, can be modified using the `OnBeforeAfterGetRecord` trigger. For more information about report extension dataset triggers, see [Report Extension Data Set Modify triggers](triggers-auto/reportextensiondatasetmodify/devenv-onbeforepredataitem-reportextensiondatasetmodify-trigger.md). 
 
 > [!NOTE]  
-> Inside the `dataset` element, syntax for modifying data is not supported, meaning that you cannot add new triggers to existing dataitems, nor can you modify existing dataitem or column properties.
->
 > Inside the `requestpage` element, you cannot modify any properties.
 >
 > Using the `OnInitReport` trigger is not supported for report extensions. The `OnPreReport` and `OnPostReport` triggers are run after the original report's equivalent triggers.
@@ -76,6 +74,25 @@ reportextension 50110 MyExtension extends "Customer - Top 10 List"
             // add field from table extending Customer
             column(fromBaseTableExt; Customer.MyField) { }
         }
+
+        add(Customer)
+        {
+            // add a new field to the dataset
+            column(netWeight; netWeight) { }
+        }
+
+        modify(Customer)
+        {
+            // modify the new, added field
+            trigger OnBeforeAfterGetRecord()
+            begin
+                if (weightInPounds) then begin
+                    netWeight := netWeight * 2.2;
+                end else begin
+                    netWeight := netWeight;
+                end;
+            end;
+        }
     }
 
     requestpage
@@ -99,9 +116,16 @@ reportextension 50110 MyExtension extends "Customer - Top 10 List"
     begin
         // add code to run after the report is run, will be run after the original report's equivalent trigger
     end;
-}
 
+    var
+        netWeight: Integer;
+        weightInPounds: Boolean;
+
+}
 ```
+
+
+[!INCLUDE [send-report-excel](includes/send-report-excel.md)]
 
 ## See Also
 

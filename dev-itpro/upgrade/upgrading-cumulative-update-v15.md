@@ -21,7 +21,7 @@ You can choose to update only the platform or both the platform and application 
 
 The following figure provides a high-level representation of a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] solution and the components that are involved in the installation of an update.
 
-![Business Central application stack](../developer/media/bc15-architecture-overview.png "Business Central application stack")  
+![Business Central application stack.](../developer/media/bc15-architecture-overview.png "Business Central application stack")  
 
 The databases store the application metadata and business data. If you have a single-tenant deployment, this data is stored in a single database. A multitenant deployment stores the application metadata in the application database and the business data in one or more tenant databases.
 
@@ -220,6 +220,17 @@ Also, to ensure that the existing published extensions work on the new platform,
     ```powershell
     Restart-NAVServerInstance -ServerInstance <server instance>
     ```
+
+## <a name="UploadLicense"></a>Import [!INCLUDE[prod_short](../developer/includes/prod_short.md)] partner license  
+
+To import the license, use the [Import-NAVServerLicense cmdlet](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense). You'll have to restart the server instance afterwards:
+
+```powershell
+Import-NAVServerLicense -ServerInstance <server instance> -LicenseFile <path to license file>
+Restart-NAVServerInstance -ServerInstance <server instance>
+```
+
+For more information, see [Uploading a License File for a Specific Database](../cside/cside-upload-license-file.md#UploadtoDatabase).
 
 ## Publish the new system symbols
 
@@ -487,7 +498,9 @@ If the old solution used third-party extensions, and you still want to use them,
 
 As an alternative, if you have the source for these extensions, you can build and compile a new version of the extension in the AL development environment. Then, you upgrade to the new version as described in the previous task.
 
-## Post Upgrade - Change application version
+## Post Upgrade
+
+### Change application version
 
 (Optional) This task isn't required for installing the update. However, it might be useful for support purposes and answering a common question about the application version.  
 
@@ -519,6 +532,16 @@ We recommend setting the value to application build number for the version 15 up
     ```
     Start-NAVDataUpgrade -ServerInstance <server instance name> -Tenant <tenant ID> 
     ```
+
+### Import the customer license
+
+Import the customer license by using the [Import-NAVServerLicense cmdlet](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense), as you did with the partner license. You'll have to restart the server instance afterwards.
+
+```powershell
+Import-NAVServerLicense -ServerInstance <server instance> -LicenseFile <path to license file>
+Restart-NAVServerInstance -ServerInstance <server instance name>
+```
+
 <!--
 ### Recompile and install published third-party extensions
 

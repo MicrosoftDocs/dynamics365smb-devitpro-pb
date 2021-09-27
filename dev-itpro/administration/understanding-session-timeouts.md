@@ -55,7 +55,7 @@ When you start a client, such as connecting to [!INCLUDE [prod_short](../develop
 
  The session closes according to the setting that has the shortest time period. By default, the *ClientServicesIdleClientTimeout* setting is set to **MaxValue**, which means no time limit, and the *SessionTimout* setting is 00:20:00 \(20 minutes\). This means that when client connection is inactive, a session will close after 20 minutes. The following figure illustrates the timeout behavior:  
 
- ![Inactivity session timeout](../media/NAV_Inactivity_SessionTimeout.png "Inactivity session timeout")  
+ ![Inactivity session timeout.](../media/NAV_Inactivity_SessionTimeout.png "Inactivity session timeout")  
 
 <!-- The *SessionTimeout* setting enables you to set the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] inactive session timeout different than for the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)], which is only controlled by the *ClientServicesIdleClientTimeout* setting. Typically, you will set the inactive session timeout period on [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] connections shorter than for the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)].-->  
 
@@ -74,7 +74,7 @@ When you start a client, such as connecting to [!INCLUDE [prod_short](../develop
 
  The following figure illustrates the reconnect session timeout behavior.  
 
- ![Reconnect session timeout](../media/NAV_Reconnect_SessionTimeout.png "Reconnect session timeout")  
+ ![Reconnect session timeout.](../media/NAV_Reconnect_SessionTimeout.png "Reconnect session timeout")  
 
  The process that occurs when a client does not reconnect to the session is explained as follows:  
 

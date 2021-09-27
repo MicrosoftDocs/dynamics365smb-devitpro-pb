@@ -7,7 +7,7 @@ ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
-ms.date: 04/01/2021
+ms.date: 09/07/2021
 ---
 
 # Licensing in Dynamics 365 Business Central
@@ -20,6 +20,8 @@ ms.date: 04/01/2021
 - External Accountant  
 
 Prospects and customers can also subscribe for an evaluation version by using self-service sign-up (also known as the viral trial). This subscription comes with 10000 licenses, and partners can use such viral trials to let prospects explore [!INCLUDE [prod_short](../includes/prod_short.md)] using non-production companies. For more information, see [Preparing Demonstration Environments of [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](../administration/demo-environment.md).  
+
+[!INCLUDE [admin-license-trial](../includes/admin-license-trial.md)]
 
 [!include[prod_short](../developer/includes/prod_short.md)] does not use the classic [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] license files (*.flf). Instead, permissions are generated based on entitlements.  
 
@@ -47,7 +49,7 @@ In versions earlier than 2020 release wave 2 (version 17.0), entitlements are on
 
 However, partners that create and test their extensions using sandbox environments of that type could miss errors in their code that would be related to entitlements or access, so that those issues would not be found until they deployed their extensions to the production environments.  
 
-Also, you can explore such functionality by creating an evaluation company in either a production or a sandbox environment using the free evaluation subscription that is available from [https://dynamics.microsoft.com/en-us/business-central](https://dynamics.microsoft.com/en-us/business-central/overview).  Alternatively, you can use the **Business Central Premium - Trial** subscription that is available through the CSP program as described [here](customer-signup.md#premiumtrial). By using these subscription types, customers and partners can explore the capabilities included with the Premium subscription.  
+Also, you can explore such functionality by creating an evaluation company in either a production or a sandbox environment using the free evaluation subscription that is available from [https://dynamics.microsoft.com/business-central](https://dynamics.microsoft.com/business-central/overview).  Alternatively, you can use the **Business Central Premium - Trial** subscription that is available through the CSP program as described [here](customer-signup.md#premiumtrial). By using these subscription types, customers and partners can explore the capabilities included with the Premium subscription.  
 
 With 2020 release wave 2, the license checks for entitlements are now also enforced in the sandbox environments.  
 

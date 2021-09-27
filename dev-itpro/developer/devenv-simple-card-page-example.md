@@ -16,7 +16,7 @@ ms.author: jswymer
 
 The AL code in this article creates a simple card page that displays records from an existing table.
 
-![Card page example](media/sample-card-page.png "[Card page example")
+![Card page example.](media/sample-card-page.png "[Card page example")
 
 For a more detailed explanation of the list page, see [Designing Card and Document Pages](devenv-designing-card-pages.md).
 

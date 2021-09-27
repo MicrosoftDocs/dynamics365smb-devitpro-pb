@@ -83,7 +83,7 @@ query 50100 "Sample Query"
 
 ## How to link and join data items
 
-When you add data items to a query object in AL, you define them in a specific hierarchy, one after another, where each lower data item is embedded within the definition of the upper data item. The order of the data items determines the sequence in which data items are linked and joined to produce the results in the dataset.  
+When you add data items to a query object in AL, you define them in a specific hierarchy, one after another. Each lower data item is embedded within the definition of the upper data item. The order of the data items determines the sequence in which data items are linked and joined to produce the results in the dataset.  
   
 In short, to join two data items, you set the [DataItemLink](properties/devenv-DataItemLink-query-property.md) and [SqlJoinType](properties/devenv-SqlJoinType-property.md) properties on the lower data item in the query object.
 
@@ -96,6 +96,10 @@ In short, to join two data items, you set the [DataItemLink](properties/devenv-D
 
     By default, the SqlJoinType property is set to **Left Outer Join**.  The remainder of this article desribes the 
 -->
+
+> [!NOTE]
+> In the sections that follow, some examples illustrate the use of either the `WHERE` clause and `FROM` clause to get the same results. However, for better performance, we recommend using a `FROM` clause wherever possible.
+
 ### Set the DataItemLink Property
 
 The [DataItemLink Property](properties/devenv-DataItemLink-query-property.md) sets up a reference or association between one or more fields in the source table of a lower data item tables with a field in the source table of the upper data item. In a query, two data item tables typically will have columns that have values that are common to both tables. For example, the **Salesperson** table and **Sales Header** table have the **Code** column and **Salesperson\_Code** column in common.  To create a link between these two tables, you could set the DataItemLink property of the **Sales Header** data item as follows:
@@ -104,7 +108,7 @@ The [DataItemLink Property](properties/devenv-DataItemLink-query-property.md) se
 DataItemLink = "Salesperson Code" = Salesperson_Purchaser.Code;
 ```  
   
-The [DataItemLink Property](properties/devenv-DataItemLink-query-property.md) sets up an "equal to" \(=\) comparison condition between two columns of the data items. When the query is run, the query compares each row of the two data items to find records that having matching values for the columns. Records that have matching column values are combined into a row in the resulting dataset. In some cases, there will be records that do not have matching values. You use the [SqlJoinType Property](properties/devenv-SqlJoinType-property.md) to include records that do not have matching column values. 
+The [DataItemLink Property](properties/devenv-DataItemLink-query-property.md) sets up an "equal to" \(=\) comparison condition between two columns of the data items. When the query is run, the query compares each row of the two data items to find records that having matching values for the columns. Records that have matching column values are combined into a row in the resulting dataset. In some cases, there will be records that don't have matching values. You use the [SqlJoinType Property](properties/devenv-SqlJoinType-property.md) to include records that don't have matching column values. 
 <!--
 The basic steps for linking and joining two data items are as follows:
 
@@ -116,14 +120,14 @@ The basic steps for linking and joining two data items are as follows:
 
 ### Set the SqlJoinType Property
 
-The [SqlJoinType Property](properties/devenv-SqlJoinType-property.md) the determines which records to combine into the results, based on the values of the fields that are linked by the DataItemLink property. You use this property to limit the records that are included in the resulting dataset based on the specified conditions. By default, the SqlJoinType property is `LeftOuterJoin`, so if you omit this property, a `LeftOuterJoin` is performed.
+The [SqlJoinType Property](properties/devenv-SqlJoinType-property.md) determines which records to combine into the results, based on the values of the fields linked by the DataItemLink property. You use this property to limit the records that are included in the resulting dataset based on the specified conditions. By default, the SqlJoinType property is `LeftOuterJoin`, so if you omit this property, a `LeftOuterJoin` is performed.
 
 > [!TIP]
 > In SQL join statements, tables are designated as either left or right. In AL query objects, because data items are arranged vertically, when joining data items, the *left* corresponds to the upper data item (table) and *right* corresponds to the lower data item (table).
 
 ### Linking More Than Two Data Items  
 
-A query links data items in the order that they appear in AL, starting from the top and then working downward. When you have more than two data items, lower data items are linked to the resulting dataset of the linked data items above it. For example, when you link the first two data items, the query generates a dataset. When you add another data item, it is linked to the dataset of the first linked pair of data items, where it applies the conditions that are specified by its [DataItemLink Property](properties/devenv-DataItemLink-query-property.md) and [SqlJoinType Property](properties/devenv-SqlJoinType-property.md). The following code adds another data item to the sample query:  
+A query links data items in the order that they appear in AL, starting from the top and then working downward. When you have more than two data items, lower data items are linked to the resulting dataset of the linked data items above it. For example, when you link the first two data items, the query generates a dataset. When you add another data item, it's linked to the dataset of the first linked pair of data items, where it applies the conditions that are specified by its [DataItemLink Property](properties/devenv-DataItemLink-query-property.md) and [SqlJoinType Property](properties/devenv-SqlJoinType-property.md). The following code adds another data item to the sample query:  
 
 
 ```AL
@@ -163,11 +167,11 @@ query 50100 "Sample Query"
 }
 ```
   
-This pattern continues for each additional data item.  
+This pattern continues for each extra data item.  
 
 
 <!--   
- ![Query Designer inner join](media/QueryJoin_InnerJoin.png "QueryJoin\_InnerJoin")  
+ ![Query Designer inner join.](media/QueryJoin_InnerJoin.png "QueryJoin\_InnerJoin")  
 
 ## How Data Item Links Work  
 
@@ -182,15 +186,15 @@ When you add data items in AL, they are arranged in a hierarchy, one after anoth
 > [!NOTE]  
 >  By default, the SqlJoinType property is set to **Left Outer Join**.  
   
- For example, the following illustration shows the Query Designer and **Properties** window for linking the Sales Header table to the Salesperson/Purchaser table. You set the DataItemLink property and the DataItemLinkType property on the Sales Header data item because it is the lower data item in Query Designer.  
+ For example, the following illustration shows the Query Designer and **Properties** window for linking the Sales Header table to the Salesperson/Purchaser table. You set the DataItemLink property and the DataItemLinkType property on the Sales Header data item because it's the lower data item in Query Designer.  
   
- ![Query Designer showing link between 2 data items](media/NAV_Query_Designer_Sample_DataItemLink.png "NAV\_Query\_Designer\_Sample\_DataItemLink")  
+ ![Query Designer showing link between 2 data items.](media/NAV_Query_Designer_Sample_DataItemLink.png "NAV\_Query\_Designer\_Sample\_DataItemLink")  
   
 ### Linking More Than Two Data Items
   
 A query links data items in the order that they appear in Query Designer, starting from the top and then working downward. When you have more than two data items, subsequent data items are linked to the resulting dataset of the linked data items above it. For example, when you link the first two data items, the query generates a dataset. When you add another data item, the data item is linked to the dataset of the first linked pair of data items, where it applies the conditions that are specified by its DataItemLink property and DataItemLinkType property. The following illustration shows an example with three data items.  
   
- ![Query Designer showing 3 data item links](media/NAV_Query_Designer_Sample_3_DataItemLink.png "NAV\_Query\_Designer\_Sample\_3\_DataItemLink")  
+ ![Query Designer showing 3 data item links.](media/NAV_Query_Designer_Sample_3_DataItemLink.png "NAV\_Query\_Designer\_Sample\_3\_DataItemLink")  
   
  This pattern continues for each additional data item.  
 
@@ -203,7 +207,7 @@ A query links data items in the order that they appear in Query Designer, starti
 |-----------|------------------------|---------------------|  
 |Salesperson code|Salesperson\_Purchaser|Code|  
   
- The DataItemLink property sets up "equal to" \(=\) comparison condition between two columns of the data items. When the query is run, the query compares each row of the two data items to find records that having matching values for the columns. Records that have matching column values are combined into a row in the resulting dataset. In some cases, there will be records that do not have matching values. You use the DataItemLinkType property to include records that do not have matching column values.  
+ The DataItemLink property sets up "equal to" \(=\) comparison condition between two columns of the data items. When the query is run, the query compares each row of the two data items to find records that having matching values for the columns. Records that have matching column values are combined into a row in the resulting dataset. In some cases, there will be records that don't have matching values. You use the DataItemLinkType property to include records that don't have matching column values.  
   
 ## Setting Up the DataItemLinkType Property
 
@@ -228,7 +232,7 @@ A query links data items in the order that they appear in Query Designer, starti
 |Debra|2000|Blanemark|  
 |John|3000|Candoxy|  
   
- The records for **Bart** in the Salesperson table and **New Concepts** in the Sales Header table do not have matching records in the opposing table, so they are excluded from the resulting dataset.  
+ The records for **Bart** in the Salesperson table and **New Concepts** in the Sales Header table don't have matching records in the opposing table, so they are excluded from the resulting dataset.  
   
 ### Use Default Values If No Match  
  The resulting dataset of the **Use Default Values If No Match** link type contains all the records from the upper data item or data items; even if a record does not have a matching value in the linked column of lower data item as specified by the DataItemLink property. For each record in the upper data item, the query adds a row in the dataset that combines columns from the upper and lower data item. When a record does not have a matching record in the lower data item, the columns from the lower data item include the default value for the data type of the table field that specifies the column. For example, if the field has an integer data type, then the default value is 0.  
@@ -251,11 +255,11 @@ A query links data items in the order that they appear in Query Designer, starti
   
 -   Each pair of matching records is combined into a row in the dataset.  
   
--   Records from the upper and lower data item tables that do not have a matching column in the lower data item table are excluded from the resulting dataset.  
+-   Records from the upper and lower data item tables that don't have a matching column in the lower data item table are excluded from the resulting dataset.  
   
  The following illustration shows an `InnerJoin` type between tables A and B. The shaded area indicates the records that are included in the resulting dataset.  
   
- ![Visualization of SQL inner join between two tables](media/NAV_Query_SQL_Inner_Join.png "NAV\_Query\_SQL\_Inner\_Join")  
+ ![Visualization of SQL inner join between two tables.](media/NAV_Query_SQL_Inner_Join.png "NAV\_Query\_SQL\_Inner\_Join")  
   
 ### Dataset Example
 
@@ -267,7 +271,7 @@ The following table shows the resulting dataset for an `InnerJoin` between the *
 |Debra|2000|Blanemark|  
 |John|3000|Candoxy|  
   
-The records for **Bart** in the Salesperson table and **New Concepts** in the **Sales Header** table do not have matching records in the opposing table, so they are excluded from the resulting dataset.  
+The records for **Bart** in the Salesperson table and **New Concepts** in the **Sales Header** table don't have matching records in the opposing table, so they are excluded from the resulting dataset.  
   
 ### SQL SELECT Statement for Inner Join
 
@@ -300,7 +304,7 @@ A `LeftOuterJoin` resembles the `InnerJoin` except that the resulting dataset se
   
  The following illustration shows a `LeftOuterJoin` type between tables A and B. The shaded area indicates the records that are included in the resulting dataset. In the sample query, the **Salesperson/Purchaser** table is considered the left table.  
   
- ![Visualization of SQL left outer join](media/NAV_Query_SQL_Left_Outer_Join.png "NAV\_Query\_SQL\_Left\_Outer\_Join")  
+ ![Visualization of SQL left outer join.](media/NAV_Query_SQL_Left_Outer_Join.png "NAV\_Query\_SQL\_Left\_Outer\_Join")  
   
 ### Dataset Example
  
@@ -337,7 +341,7 @@ FROM "Salesperson/Purchaser" LEFT OUTER JOIN "Sales Header"
   
  The following illustration shows a `RightOuterJoin` type between tables A and B. The shaded area indicates the records that are included in the resulting dataset.  
   
- ![Visualization of SQL right outer join](media/NAV_Query_SQL_Right_Outer_Join.png "NAV\_Query\_SQL\_Right\_Outer\_Join")  
+ ![Visualization of SQL right outer join.](media/NAV_Query_SQL_Right_Outer_Join.png "NAV\_Query\_SQL\_Right\_Outer\_Join")  
   
 ### Dataset Example
 
@@ -366,7 +370,7 @@ FROM "Salesperson/Purchaser" RIGHT OUTER JOIN "Sales Header"
   
 ##  <a name="FullOuterJoin"></a>FullOuterJoin
 
- A `FullOuterJoin` contains all the records from the upper data item table, and all records from the lower data item, including records that do not have a matching value for columns that are linked by the [DataItemLink Property](properties/devenv-DataItemLink-query-property.md).  
+ A `FullOuterJoin` contains all the records from the upper data item table, and all records from the lower data item, including records that don't have a matching value for columns that are linked by the [DataItemLink Property](properties/devenv-DataItemLink-query-property.md).  
   
 -   Each pair of records from the data items that have matching column values are combined into a row in the dataset.  
   
@@ -376,7 +380,7 @@ FROM "Salesperson/Purchaser" RIGHT OUTER JOIN "Sales Header"
   
  The following illustration shows a `FullOuterJoin` type between tables A and B. The shaded area indicates the records that are included in the resulting dataset.  
   
- ![Visualization of an SQL full outer join](media/NAV_Query_SQL_Full_Outer_Join.png "NAV\_Query\_SQL\_Full\_Outer\_Join")  
+ ![Visualization of an SQL full outer join.](media/NAV_Query_SQL_Full_Outer_Join.png "NAV\_Query\_SQL\_Full\_Outer\_Join")  
   
 ### Dataset Example
 

@@ -78,7 +78,6 @@ The following code snippet shows an example of the CustomDimensions.
 ## See also
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
-[Enabling Application Insights for Tenant Telemetry On-Premises](telemetry-enable-application-insights.md)  
-[Enable Sending Telemetry to Application Insights](tenant-admin-center-telemetry.md#appinsights)  
+[Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  
 [Monitoring and Analyzing Long Running SQL Queries On-Premises](monitor-long-running-sql-queries-event-log.md)  
 [The Business Central Administration Center](tenant-admin-center.md)  

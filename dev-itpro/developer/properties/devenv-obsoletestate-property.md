@@ -1,8 +1,9 @@
 ---
 title: "ObsoleteState Property"
+description: "Marks whether the object or element is or will become obsolete (deprecated)."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -80,3 +81,4 @@ By coding against this property, you can use this property as a way to communica
 [ObsoleteReason Property](devenv-obsoletereason-property.md)  
 [Properties](devenv-properties.md)  
 [Upgrade Codeunits](../devenv-methodtype-property-upgrade-codeunits.md)  
+[Obsolete Attribute](../attributes/devenv-obsolete-attribute.md)  

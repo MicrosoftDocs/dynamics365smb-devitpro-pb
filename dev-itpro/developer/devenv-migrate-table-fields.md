@@ -36,7 +36,7 @@ The move is divided into two phases: development and deployment. However, before
 
 The process to migrate tables and fields to another extension depends on the migration's direction in the dependency graph. The following figure illustrates a simplified extension dependency graph. From top to bottom, an extension is dependent on any extension below it in the graph.
 
-![Dependency graph](media/extension-dependency-graph.png "Dependency graph")  
+![Dependency graph.](media/extension-dependency-graph.png "Dependency graph")  
 
 ### When to move down
 

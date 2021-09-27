@@ -1,8 +1,9 @@
 ---
 title: "CaptionClass Property"
+description: "Controls the caption that is used in the label of a field in a database table or in the label of a control on a page."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -46,7 +47,7 @@ The `Caption Class` (codeunit 42) in the system application exposes two events; 
 
 For more information, see the system [Caption Class](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Caption%20Class/README.md).
 
-The Caption Class raises an `OnResolveCaptionClass` event for any other value of <Caption Area>. 
+The Caption Class raises an `OnResolveCaptionClass` event for any other value of `<Caption Area>`. 
 
 ```al
 [IntegrationEvent(false, false)]

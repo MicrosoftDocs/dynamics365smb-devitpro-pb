@@ -49,7 +49,7 @@ Viktor is a developer who is working for [!INCLUDE[demoname](includes/demoname_m
 
 The following illustration shows an example of the second page of the report.  
 
-![Completed report](media/MicrosoftDynamicsNAV_MultiDataSetReport.jpg "MicrosoftDynamicsNAV\_MultiDataSetReport")  
+![Completed report.](media/MicrosoftDynamicsNAV_MultiDataSetReport.jpg "MicrosoftDynamicsNAV\_MultiDataSetReport")  
 
 ## Defining the Dataset
 Viktor starts by creating an empty report object by using the AL Language extension in Visual Studio Code. You can use the shortcut `treport` to create the basic layout for a report object.
@@ -367,7 +367,7 @@ Viktor is now ready to add the customer data. The table will display one custome
 
      The following illustration shows the list control and the table.  
 
-     ![The list control on the report](media/MicrosoftDynamicsNAV_ListControl.jpg "MicrosoftDynamicsNAV\_ListControl")  
+     ![The list control on the report.](media/MicrosoftDynamicsNAV_ListControl.jpg "MicrosoftDynamicsNAV\_ListControl")  
 
      Note that the table contains two table rows, a header row (first row), and a data row (second row). The three parallel lines in the left border of the second row identify the data row.  
 
@@ -420,7 +420,7 @@ Viktor is now ready to add the customer data. The table will display one custome
 
      The layout that Viktor has designed to this point resembles the following illustration.  
 
-     ![The layout containing the customer data](media/MicrosoftDynamicsNAV_CustomerData.jpg "MicrosoftDynamicsNAV\_CustomerData")  
+     ![The layout containing the customer data.](media/MicrosoftDynamicsNAV_CustomerData.jpg "MicrosoftDynamicsNAV\_CustomerData")  
 
 16. On the **Build** menu, choose **Build Web site** to build the project. Inspect the **Output** pane and make sure that there are no build errors. Close Visual Studio.  
 
@@ -526,7 +526,7 @@ Viktor will now add the data for the customer ledger entries and detailed ledger
 
      The following illustration shows EntryNo and the EntryType cells directly under the CustomerNo cell  
 
-     ![Merged cells](media/MicrosoftDynamicsNAV_MergedCells.jpg "MicrosoftDynamicsNAV\_MergedCells")  
+     ![Merged cells.](media/MicrosoftDynamicsNAV_MergedCells.jpg "MicrosoftDynamicsNAV\_MergedCells")  
 
 28. Repeat steps through 27 to put the **Transaction No.** and **Journal Batch Name** captions and fields under the Description data. This creates a blank cell under the CurrencyCode field.  
 
@@ -650,7 +650,7 @@ Viktor will run the report to view how it looks like. For this, do the following
 
      The following illustration shows an example of the request page that is displayed when the report is run.  
 
-     ![Request page](media/request_page_report.PNG?style=centerme "request\_page\_report" )  
+     ![Request page.](media/request_page_report.PNG?style=centerme "request\_page\_report" )  
 
      If you choose the **Preview** button on the request page, the report will be displayed with the RLD layout just created.
 

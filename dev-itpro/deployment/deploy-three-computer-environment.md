@@ -12,7 +12,7 @@ author: jswymer
 # Deploying [!INCLUDE[prod_short](../developer/includes/prod_short.md)] in a Three-Computer Topology
 In this scenario, you install the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)], [!INCLUDE[server](../developer/includes/server.md)], and the SQL Server database components on separate computers.  
 
- ![Installation on three computers](../media/three-computer-topology.png "Installation on three computers")  
+ ![Installation on three computers.](../media/three-computer-topology.png "Installation on three computers")  
 
 This article also applies to deploying the [!INCLUDE[nav_phone](../developer/includes/nav_phone_md.md)] and [!INCLUDE[nav_tablet](../developer/includes/nav_tablet_md.md)].
 

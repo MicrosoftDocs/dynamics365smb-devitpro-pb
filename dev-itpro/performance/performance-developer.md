@@ -22,6 +22,7 @@ In this article, you can read about ways to tune performance when developing for
 - [Efficient Data access](performance-developer.md#efficient-data-access)  
 - [Testing and validating performance](performance-developer.md#testing-and-validating-performance)  
 - [Tuning the Development Environment](performance-developer.md#tuning-the-development-environment)  
+- [Using the AL Profiler to analyze performance](../developer/devenv-al-profiler-overview.md)
 
 ## Writing efficient pages 
 
@@ -113,6 +114,8 @@ Reports generally fall into two categories. They can be specific to a single ins
 Read more about how to tune RDL reports here:
 - [RDLC Performance Optimization Tips](https://community.dynamics.com/business/b/navteam/posts/a-couple-of-rdlc-performance-optimization-tips)
 
+[!INCLUDE [send-report-excel](../developer/includes/send-report-excel.md)]
+
 ## Efficient extracts to data lakes or data warehouses
 
 When establishing a data lake or a data warehouse, you typically need to do two types of data extraction:
@@ -160,7 +163,7 @@ There are many different ways to spin up a new task:
 
 - [Job Queue](/dynamics365/business-central/admin-job-queues-schedule-tasks)  
 - [TaskScheduler.CreateTask](../developer/methods-auto/taskscheduler/taskscheduler-data-type.md)  
-- [StartSession](../developer/methods-auto/session/session-startsession-method.md)  
+- [StartSession](../developer/methods-auto/session/session-startsession-integer-integer-string-table-method.md)  
 - [Page Background Task](../developer/devenv-page-background-tasks.md)  
 
 They come with different characteristics as described in this table:

@@ -1,9 +1,9 @@
 ---
-title: "File.Upload Method"
-description: "Sends a file from the client computer to the server computer. The client computer is the computer that is running the Windows client or the computer that is running a browser that accesses the web client."
+title: "File.Upload(String, String, String, String, var Text) Method"
+description: "Sends a file from the client computer to the server computer."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# File.Upload Method
+# File.Upload(String, String, String, String, var Text) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Sends a file from the client computer to the server computer. The client computer is the computer that is running the Windows client or the computer that is running a browser that accesses the web client.
@@ -23,7 +23,7 @@ Sends a file from the client computer to the server computer. The client compute
 > This method is supported only in Business Central on-premises.
 
 ## Syntax
-```
+```AL
 [Ok := ]  File.Upload(DialogTitle: String, FromFolder: String, FromFilter: String, FromFile: String, var ToFile: Text)
 ```
 > [!NOTE]
@@ -66,7 +66,7 @@ The path and file name to give the uploaded file. If you do not provide a path, 
 
 The business logic is run on the [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] and not on the client. Files are created on the [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] and not locally on the client.  
 
-[Upload Method \(File\)](../../methods-auto/file/file-upload-method.md) and [UploadIntoStream Method \(File\)](../../methods-auto/file/file-uploadintostream-method.md) are used to send a file from the client to a [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)].  
+[Upload Method \(File\)](../../methods-auto/file/file-upload-method.md) and [UploadIntoStream Method \(File\)](../../methods-auto/file/file-uploadintostream-string-string-string-text-instream-method.md) are used to send a file from the client to a [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)].  
 
 [Download Method \(File\)](../../methods-auto/file/file-download-method.md) and [DownloadFromStream Method \(File\)](../../methods-auto/file/file-downloadfromstream-method.md) are used to send a file from a [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] to the client.  
 
@@ -74,9 +74,15 @@ We recommend that you use the methods in codeunit 419, File Management, to uploa
 
 ## Example  
 
+The `FromFilter` parameter must follow this pattern:
+`<ExtensionGroupName>|<extension1>;<extension2>`, for example `'Word files|*.docx;*.doc'`.
+
+This example uses a text file:
+
 ```  
-Upload('Upload file','C:\','Text file(*.txt)|*.txt','Test.txt',varTest);  
+Upload('Upload file','C:\','Text file (*.txt)|*.txt','Test.txt',varTest);  
 ```  
+
 
 ## See Also
 

@@ -33,7 +33,7 @@ As an AppSource publisher you can focus on the following two scenarios with Busi
 
 ### Connect
 
-Connect your existing online service with Business Central through a powerful API. Here are a few examples which of existing connect apps which you can find on AppSource:  
+Connect your existing online service with Business Central through a powerful API. Here are a few examples of existing connect apps that you can find on AppSource:  
 
 - [Square payments](https://appsource.microsoft.com/product/dynamics-365-business-central/PUBID.squareinc1581374005853%7CAID.square-payments%7CPAPPID.313d5c68-0d92-4f43-b470-ab5857ecf9c6), which allow you take payments with a Square terminal.  
 

@@ -3,7 +3,7 @@ title: "OnBeforeAfterGetRecord (Report Extension Data Set Modify) Trigger"
 description: "Runs before the OnAfterGetRecord trigger of the base data item."
 ms.author: solsen
 ms.custom: na
-ms.date: 04/27/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,7 +22,7 @@ Runs before the OnAfterGetRecord trigger of the base data item.
 
 
 ## Syntax
-```
+```AL
 trigger OnBeforeAfterGetRecord()
 begin
     ...
@@ -30,8 +30,12 @@ end;
 ```
 
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+This trigger runs before the base object trigger [OnAfterGetRecord (Report Data Item) Trigger](../reportdataitem/devenv-onaftergetrecord-reportdataitem-trigger.md).
+
 ## See Also  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

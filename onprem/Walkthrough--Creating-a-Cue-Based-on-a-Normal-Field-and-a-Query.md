@@ -14,7 +14,7 @@ manager: edupont
 # Walkthrough: Creating a Cue Based on a Normal Field and a Query
 This walkthrough demonstrates how to create a Cue that is based on a normal field that derives data from a [!INCLUDE[navnow](includes/navnow_md.md)] query object. The following figure illustrates the Sales This Month Cue that is added by this walkthrough.  
 
- ![Example of a Cue showing sales this month](media/NAV_Cues_SalesThisMonth_Example.png "NAV\_Cues\_SalesThisMonth\_Example")  
+ ![Example of a Cue showing sales this month.](media/NAV_Cues_SalesThisMonth_Example.png "NAV\_Cues\_SalesThisMonth\_Example")  
 
 > [!NOTE]  
 >  This walkthrough is a continuation of [Walkthrough: Creating a Cue Based on a FlowField](Walkthrough--Creating-a-Cue-Based-on-a-FlowField.md).  
@@ -167,7 +167,7 @@ This walkthrough demonstrates how to create a Cue that is based on a normal fiel
 
          Page Designer should look similar to the following illustration.  
 
-         ![Page Designer showing cues](media/NAV_PageDesigner_SalesThisMonthCue_Clip.png "NAV\_PageDesigner\_SalesThisMonthCue\_Clip")  
+         ![Page Designer showing cues.](media/NAV_PageDesigner_SalesThisMonthCue_Clip.png "NAV\_PageDesigner\_SalesThisMonthCue\_Clip")  
 
 3.  Open the C/AL code for the page, and then add the following code to the [OnAfterGetRecord Trigger](OnAfterGetRecord-Trigger.md) to assign the **Sales This month** field to the *CalcSalesThisMonthAmount* function of table **50001 Sales Invoice Cue**:  
 

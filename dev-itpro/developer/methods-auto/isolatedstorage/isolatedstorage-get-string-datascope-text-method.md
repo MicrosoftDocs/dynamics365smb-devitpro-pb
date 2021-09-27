@@ -1,9 +1,9 @@
 ---
-title: "IsolatedStorage.Get Method"
+title: "IsolatedStorage.Get(String [, DataScope], var Text) Method"
 description: "Gets the value associated with the specified key."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/31/2021
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# IsolatedStorage.Get Method
+# IsolatedStorage.Get(String [, DataScope], var Text) Method
 > **Version**: _Available or changed with runtime version 2.0._
 
 Gets the value associated with the specified key.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  IsolatedStorage.Get(Key: String [, DataScope: DataScope], var Value: Text)
 ```
 ## Parameters

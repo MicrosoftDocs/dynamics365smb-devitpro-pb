@@ -72,8 +72,9 @@ codeunit 50101 MySubscribers
 > This example binds the event subscriber automatically to the event. You can also bind the event subscriber manually, by setting the EventSubscriberInstance property. For more information, including an example, see [EventSubscriberInstance property](properties/devenv-eventsubscriberinstance-property.md#example).
 
 
-## See Also  
- [Publishing Events](devenv-publishing-events.md)   
+## See Also
+
+[Publishing Events](devenv-publishing-events.md)   
 [Raising Events](devenv-raising-events.md)   
 [Subscribing to Events](devenv-subscribing-to-events.md)   
 [Events [!INCLUDE[d365fin_md](includes/d365fin_md.md)]](devenv-events-in-al.md)   

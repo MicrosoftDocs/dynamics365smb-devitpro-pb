@@ -61,7 +61,19 @@ The following AL methods for arrays are available:
 
 [ArrayLen Method](../methods-auto/system/system-arraylen-method.md)  
 [CompressArray Method](../methods-auto/system/system-compressarray-method.md)  
-[CopyArray Method](../methods-auto/system/system-copyarray-method.md)  
+[CopyArray Method](../methods-auto/system/system-copyarray-method.md)
+
+## Array of temporary records
+
+The following code sample shows the declaration of an array of temporary Item records:
+
+```AL
+ItemRecArrayTemp: Array[2] of Record Item temporary;
+```
+
+In this case, each element of the array will contain a temporary Item record referencing the same temporary table, meaning that an insert into `ItemRecArrayTemp[0]` is also reflected in `ItemRecArrayTemp[1]`.
+
+This is the same behavior as using [Copy(RecordRef [, Boolean])](../methods-auto/recordref/recordref-copy-recordref-boolean-method.md) with the `ShareTable` parameter set to `true`.
 
 ## See Also  
 

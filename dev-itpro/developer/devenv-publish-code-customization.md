@@ -76,7 +76,7 @@ Make sure to have the following prerequisites installed to be able to follow the
 
     ```json
     "al.assemblyProbingPaths": [
-        "C:\\Program Files\\Microsoft Dynamics 365 Business Central\\170",
+        "C:\\Program Files\\Microsoft Dynamics 365 Business Central\\170\\Service",
         "C:\\Program Files (x86)\\Microsoft Dynamics 365 Business Central\\170",
         "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8",
         "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\WindowsPowerShell"
