@@ -16,7 +16,7 @@ In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], you can create test
 
 Test codeunits are codeunits that have the [SubType Property](properties/devenv-subtype-codeunit-property.md) set to **Test**. You write tests as Al code in the methods inside of the test codeunits. There are three types of methods that you can add in a test codeunit: test, handler, and normal. Each method type is used for a specific purpose and behaves differently. When a test codeunit runs, it runs the **OnRun** trigger, and then runs each test method in the codeunit.
 
-By default, each test method runs in a separate database transaction, but you can use the [TransactionModel Attribute](../attributes/devenv-transactionmodel-attribute.md) on test methods and the [TestIsolation Property](properties/devenv-testisolation-property.md) on test runner codeunits to control the transactional behavior. 
+By default, each test method runs in a separate database transaction, but you can use the [TransactionModel Attribute](attributes/devenv-transactionmodel-attribute.md) on test methods and the [TestIsolation Property](properties/devenv-testisolation-property.md) on test runner codeunits to control the transactional behavior. 
 
 The results of a test codeunit and of the individual test methods are displayed in a message window, but you can use the [OnAfterTestRun Trigger](triggers-auto/codeunit/devenv-onaftertestrun-codeunit-trigger.md) on a test runner codeunit to capture the results. The outcome of a test method is either SUCCESS or FAILURE. If any error is raised by either the code that is being tested or the test code, then the global outcome of the test codeunit is FAILURE and the error is included in the results log file.  
 
