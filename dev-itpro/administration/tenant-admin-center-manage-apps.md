@@ -56,7 +56,7 @@ We recommend you always install and test an app update on a Sandbox environment 
 The following steps provide the general flow for updating an app.
 
 1. If you don't have a sandbox environment, create one.
-    For more information, see [Create a new sandbox environment](tenant-admin-center-environments.md#create-a-sandbox-environment).
+    For more information, see [Create a new environment](tenant-admin-center-environments.md#create-a-new-environment).
 2. Open the Sandbox environment and select **Manage Apps**.
 3. On the **Manage Apps**, find the app in the list that you want to update.
 4. If the **Available Update Action** column for the app shows the **Action required** link, resolve the update requirements.

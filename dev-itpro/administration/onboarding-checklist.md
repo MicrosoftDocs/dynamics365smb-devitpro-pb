@@ -1,37 +1,36 @@
-﻿---
+---
 title: Get Users Started with the Checklist
 description: Learn how to customize the checklist that users can launch from the Welcome banner.
-ms.date: 04/01/2021
+ms.date: 10/01/2021
 ms.topic: conceptual
 ms.service: dynamics365-business-central
 author: sorenfriisalexandersen
 ms.author: soalex
-manager: edupont
+ms.reviewer: edupont
 ---
 
 # Get Users Started with the Checklist
 
 When the user hits **Get started** on their Home page, a checklist is revealed inside the banner. The checklist provides users with an overview of their onboarding activities, while allowing them to learn and explore at their own pace. The checklist serves as a platform for surfacing page tours, guiding users in the product interface, and teaching users how to use the app in context. The checklist provides a sense of progression, nudging users to complete onboarding activities. Users can navigate between the tasks of the checklist at their own pace. Checklist tasks can point to pages or objects in [!INCLUDE [prod_short](../includes/prod_short.md)] or point to external URLs. Read more about the checklist content in the [Prerequisites for creating checklist items](#prerequisites-for-creating-checklist-items) section.
 
-As the user progresses through the checklist by either completing or skipping the steps, the banner title and status indication will change accordingly to nudge and encourage users to finish. The user can at any point minimize the banner by hitting X and resume when ready.
+As the user progresses through the checklist by either completing or skipping the steps, the banner title and status indication will change accordingly to nudge and encourage users to finish. At any point, the user can minimize the banner by hitting X and resume when ready. The following illustration shows the checklist with the suggested setup and learning material.  
 
 :::image type="content" source="../media/onboarding-checklist.png" alt-text="illustration of a banner with checklist providing an overview of the tasks to complete as well as a detailed description of the ongoing task.":::
-
-<sup>2</sup><a name="2"></a>The checklist with the suggested setup and learning material.
 
 The checklist provides an overview of the tasks to complete as well as a detailed description of the ongoing task.  
 
 The following illustration shows a [!INCLUDE [prod_short](../includes/prod_short.md)] Home page with a collapsed banner, which indicates the completion progress as well as providing a clear call-to-action to resume with the checklist activities.
 
-:::image type="content" source="../media/onboarding-banner-collapsed.png" alt-text="illustration of a collapsed banner with progress indication and a clear call-to-action to resume with the checklist activities. .":::
-
-<sup>3</sup><a name="3"></a>The collapsed banner.
+:::image type="content" source="../media/onboarding-banner-collapsed.png" alt-text="illustration of a collapsed banner with progress indication and a clear call-to-action to resume with the checklist activities.":::
 
 ## What should go into a checklist
 
 Checklists are meant to assist users in finalizing setup and help users get started with using the application. Checklists are not meant to provide a full list of tasks necessary to set up [!INCLUDE [prod_short](../includes/prod_short.md)] from scratch. What goes into the checklist depends on several factors, but consider bringing Configuration Packages with as much base setup as possible so the checklist only consists of things where the customer needs to make tweaks and decisions necessary to support their business. Automation APIs can help you with automating the delivery of the setup for a customer's industry or segment and applying your IP from AppSource. Using these APIs you should be able to automate much of the deployment process, including data for the checklist, which enables you to hand over completion of the setup for the customer. Consider bringing Assisted Setup wizards for the things that are added to the checklist.
 
 Based on the configuration choices made by the customer in Assisted Setups, you can download additional modular Configuration Packages necessary to complete the setup. This gives you a lot of flexibility to provide setup based on customer choices at different stages of the implementation, with the key advantage for you and the customer that you can spend less time on the actual implementation.
+
+> [!NOTE]
+> The checklist has different purposes in evaluation and non-evaluation companies. Consider this when you add content to the checklist. For more information, see [Onboard New Users with the Welcome Banner](../administration/onboarding-welcome-banner.md)].
 
 ## Technical background of the checklist
 
@@ -63,6 +62,31 @@ From the Dynamics 365 [!INCLUDE [prod_short](../includes/prod_short.md)] 2021 re
 
   Records of type **Learn** point to an external URL.
 
+- **Tour**
+
+  Records of type **Tour** point to a tour of the role center. Currently, these can only be added by Microsoft in the [!INCLUDE [prod_short](../includes/prod_short.md)] platform. We are considering enabling AL developers to add and control these tours in time.  
+
+- **Spotlight Tour**
+
+  Records of type **Spotlight Tour** point to a special kind of tour where [!INCLUDE [prod_short](../includes/prod_short.md)] opens a page in a special mode that suppresses other tours and shines a bright spotlight on core capabilities, such as *Open in Excel* or *Share to Teams*. Use the spotlight tour in sales and evaluation scenarios to show off key capabilities that will get customers excited about the product. Consider how you can use these spotlights for your own or other features. The following illustration shows a spotlight tour that calls out Teams and Excel integration on a page.  
+
+  :::image type="content" source="../media/onboarding-checklist-spotlight-tour.png" alt-text="illustration of Business Central Spotlight Tour to call out Teams and Excel integration features.":::
+
+  The spotlight tour suppresses teaching tips on the page and immediately calls out Teams and Excel integration features as shown in the following illustration.
+
+  :::image type="content" source="../media/onboarding-checklist-spotlight-tour2.png" alt-text="The Spotlight Tour suppresses Teaching tips on the page and immediately calls out Teams and Excel integration features.":::
+
+- **Video**
+
+  Records of type **Video** enables the user to watch a video provided by a custom URL. The video will play in a window inside [!INCLUDE [prod_short](../includes/prod_short.md)]. Consider how you can utilize video to explain a feature or capability. Video is normally used in a sales/evaluation scenario but could also be used for training purposes in an onboarding case. The following illustration shows a video player that is started from the checklist.
+
+  :::image type="content" source="../media/onboarding-checklist-video.png" alt-text="Illustration showing a video player inside Business Central, started from the checklist.":::
+
+- **Application Feature**
+
+  Records of type **Application Feature** enables a checklist task to open any page inside [!INCLUDE [prod_short](../includes/prod_short.md)]. Similar to **Manual Setup** this opens a page and will display a page tour if any is defined.
+
+
 Checklist items can be based on records in the **Guided Experience Item** table, which means that before you surface a task on the checklist, you must first add it to **Guided Experience Item**.
 
 To insert a record in the **Guided Experience Item** table use the façade functions in the `Guided Experience` codeunit:
@@ -70,6 +94,11 @@ To insert a record in the **Guided Experience Item** table use the façade funct
 - `InsertManualSetup`
 - `InsertAssistedSetup`
 - `InsertLearnLink`
+- `InsertTour`
+- `InsertSpotlightTour`
+- `InsertVideo`
+- `InsertApplicationFeature`
+
 
 For example, let's say that you have the page **My ISV Solution Setup** where the user can configure your app. You want to invite the business manager to access this page from the checklist. In this example, you must insert a new record in the **Guided Experience Item** table with the type **Manual Setup** and provide the metadata as data (title, descriptions, and so on) as described below.
 

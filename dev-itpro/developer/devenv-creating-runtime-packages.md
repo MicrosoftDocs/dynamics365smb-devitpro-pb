@@ -36,13 +36,13 @@ For publishing and installing the package, use the [Publish-NavApp](/powershell/
 
 ## Limitations
 
-The limitation of runtime packages is that they only work for on-premise installations and therefore cannot be submitted to AppSource. For more information about the extension requirements for AppSource, see [Technical Validation Checklist](devenv-checklist-submission.md). Moreover, debugging into an extension to view the source code is not allowed by default; the `ShowMyCode` flag is by default set to `false`.
+The limitation of runtime packages is that they only work for on-premise installations and therefore cannot be submitted to AppSource. For more information about the extension requirements for AppSource, see [Technical Validation Checklist](devenv-checklist-submission.md). Moreover, debugging into an extension to view the source code is not allowed by default; the `allowDebugging` flag is by default set to `false`. For more information, see [Resource Exposure Policy Setting](devenv-security-settings-and-ip-protection.md).
 
 > [!NOTE]  
 > Runtime packages are guaranteed to work only if published to a platform with the same version as the one where they were produced.
 
 > [!NOTE]  
-> If you set the `ShowMyCode` flag to `true` when running the `Get-NavAppRuntimePackage` cmdlet, you can enable debugging and you thereby also allow viewing the source code.
+> If you set the `allowDebugging` flag to `true` when running the `Get-NavAppRuntimePackage` cmdlet, you can enable debugging and you thereby also allow viewing the source code.
 
 ## See Also
 

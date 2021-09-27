@@ -27,6 +27,9 @@ For example, the Integration attribute has two arguments, and the syntax is:
 [Integration(IncludeSender : Boolean, GlobalVarAccess : Boolean)]
 ```
 
+> [!TIP]  
+> If you already know the name of, for example, a data type, method, property, or trigger, use the **Filter by title** field in the upper left corner, above the table of contents to find the topic faster. Otherwise, you can scan the table of contents to find it.
+
 ## See Also
 
 [AL Method Reference](../methods-auto/library.md)  

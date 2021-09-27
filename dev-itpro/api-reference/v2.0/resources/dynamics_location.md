@@ -13,6 +13,8 @@ ms.author: solsen
 
 # location resource type
 
+[!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
+
 <!-- START>DO_NOT_EDIT -->
 <!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a location in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
