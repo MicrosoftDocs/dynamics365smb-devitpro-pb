@@ -12,7 +12,7 @@ ms.author: edupont
 
 # Configuring the Help Experience for [!INCLUDE[prod_long](../developer/includes/prod_long.md)]
 
-The default version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] comes with conceptual overviews and other articles that publish to the [/dynamics365/business-central/](/dynamics365/business-central/) site. This location is accessible from the Help menu and through the Learn More links in all tooltips. Each extension that you add will include its own tooltips and links to Help.
+The default version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] comes with conceptual overviews and other articles that publish to the [docs.microsoft.com/dynamics365/business-central/](/dynamics365/business-central/) site. This location is accessible from the Help menu and through the **Learn More** links in all tooltips. Each extension that you add will include its own tooltips and links to Help that can be accessed through the Learn More links and the Ctrl+F1 keyboard shortcut.
 
 But what if you want to deploy [!INCLUDE[prod_short](../developer/includes/prod_short.md)] locally? Or if you have a vertical solution so that you want to refer your customers to your own website for Help? Or if you have a legacy Help collection based on the Dynamics NAV Help Server? These and other scenarios are also supported in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].  
 
@@ -25,7 +25,7 @@ When you build an app for [!INCLUDE [prod_short](../developer/includes/prod_shor
 
 You can add Microsoft's content to your website, or you can deploy just your own content. The choice is yours and depends on the requirements of your users, the size of your app, and the amount of customization you want to make. The custom Help toolkit includes tools that can help you prepare and deploy content. For more information, see [Custom Help Toolkit](../help/custom-help-toolkit.md).  
 
-For inspiration for how to create a website that can host your content, take a look at [this tutorial](/azure/search/tutorial-python-overview) that creates a static web app and adds a search service in a few relatively straightforward steps. You can also
+For inspiration for how to create a website that can host your content, take a look at [this tutorial](/azure/search/tutorial-python-overview) that creates a static web app and adds a search service in a few relatively straightforward steps.  
 
 ## On-premises deployments
 
