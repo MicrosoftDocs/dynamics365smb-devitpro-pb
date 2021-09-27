@@ -1,6 +1,6 @@
 ---
-title: "ErrorInfo.Message([String]) Method"
-description: "Specifies the message that will be sent to telemetry."
+title: "ErrorInfo.DetailedMessage([String]) Method"
+description: "Specifies a detailed error message."
 ms.author: solsen
 ms.custom: na
 ms.date: 08/24/2021
@@ -14,15 +14,15 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# ErrorInfo.Message([String]) Method
-> **Version**: _Available or changed with runtime version 3.0._
+# ErrorInfo.DetailedMessage([String]) Method
+> **Version**: _Available or changed with runtime version 8.0._
 
-Specifies the message that will be sent to telemetry. For a 'Client' error type, the message will also be appear in the client.
+Specifies a detailed error message.
 
 
 ## Syntax
 ```AL
-[Message := ]  ErrorInfo.Message([Message: String])
+[DetailedMessage := ]  ErrorInfo.DetailedMessage([DetailedMessage: String])
 ```
 > [!NOTE]
 > This method can be invoked using property access syntax.
@@ -31,19 +31,19 @@ Specifies the message that will be sent to telemetry. For a 'Client' error type,
 &emsp;Type: [ErrorInfo](errorinfo-data-type.md)  
 An instance of the [ErrorInfo](errorinfo-data-type.md) data type.  
 
-*[Optional] Message*  
+*[Optional] DetailedMessage*  
 &emsp;Type: [String](../string/string-data-type.md)  
-The message of the ErrorInfo  
+The detailed message of the ErrorInfo  
 
 
 ## Return Value
-*[Optional] Message*  
+*[Optional] DetailedMessage*  
 &emsp;Type: [String](../string/string-data-type.md)  
-The current message of the ErrorInfo.
+The current detailed message of the ErrorInfo.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
-[ErrorInfo Data Type](errorinfo-data-type.md)  
-[Getting Started with AL](../../../devenv-get-started.md)  
-[Developing Extensions](../../../devenv-dev-overview.md)
+[ErrorInfo Data Type](errorinfo-data-type.md)
+[Getting Started with AL](../../devenv-get-started.md)
+[Developing Extensions](../../devenv-dev-overview.md)
