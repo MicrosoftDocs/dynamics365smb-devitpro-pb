@@ -15,8 +15,6 @@ When a user signs in to a new company for the first time, [!INCLUDE [prod_short]
 
 :::image type="content" source="../media/onboarding-banner.png" alt-text="illustration of Business Central with welcome banner with a clear call-to-action for where to get started.":::
 
-<sup>1</sup><a name="1"></a>The welcome banner on the Home page.
-
 The purpose of the banner is to give users a warm and personal welcome, reduce noise, provide a clear call to action to the get started tasks, without blocking users that wish to explore the product first.  
 
 The welcome banner works slightly different in CRONUS evaluation companies and in non-evaluation companies, including My Company, because the banner serves different purposes in evaluation and non-evaluation companies. The following sections outline the differences.  

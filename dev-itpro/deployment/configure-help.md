@@ -35,7 +35,7 @@ For deploying [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-pre
 > The legacy Dynamics NAV Help Server component is deprecated in 2021 release wave 1 (version 18). We recommend that you invest in a different type of website. For more information, see the [deprecation notice](../upgrade/deprecated-features-w1.md#the-help-server-component) and the [Custom Help Toolkit](../help/custom-help-toolkit.md) section.
 
 > [!TIP]
-> The content on the [/dynamics365/business-central/](/dynamics365/business-central/) site and in the various GitHub repos reflects the latest version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)], unless otherwise specified.
+> The content on the [docs.microsoft.com/dynamics365/business-central/](/dynamics365/business-central/) site and in the various GitHub repos reflects the latest version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)], unless otherwise specified.
 >
 > We recommend that you get your version of Microsoft's content close to the time the subsequent major version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] becomes available. For example, if you are deploying version 16.4, you could have taken a snapshot of the content in GitHub before version 17.0 became available.
 
@@ -119,16 +119,16 @@ Currently, [!INCLUDE [prod_short](../developer/includes/prod_short.md)] has no f
 You can see an example of how to deploy content to an Azure web app in the article [Deploy custom help to Azure](/dynamics365/fin-ops-core/dev-itpro/help/walkthrough-help-azure), which supports the custom Help toolkit for Dynamics 365 Finance and Operations apps. That article also describes how you can build a search service for your website. Another example is in the [Overview of adding search to a website with Python](/azure/search/tutorial-python-overview) tutorial in the Azure docs. The step for adding a search service is currently not relevant for [!INCLUDE [prod_short](../developer/includes/prod_short.md)], but you might find the guidance helpful anyway.  
 
 > [!IMPORTANT]
-> Currently, search in [!INCLUDE [prod_short](../includes/prod_short.md)] cannot access sites other than the *docs.microsoft.com* site. This limitation also impacts the search tab in the updated help pane that is part of 2021 release wave 2, version 19.0 and later. The search capabilities only apply to the *docs.microsoft.com* site, including learning modules on Microsoft Learn.
+> Currently, search in [!INCLUDE [prod_short](../includes/prod_short.md)] cannot access sites other than the *docs.microsoft.com* site. This limitation also impacts the search tab in the updated help pane that is part of 2021 release wave 2, version 19.0 and later. The search capabilities only apply to the *docs.microsoft.com* site, including Microsoft Learn.
 >
->However, to help prepare for the day when partner-provided and customer-provided content can also be indexed and found by the in-product search and the help pane, get your content deployed to a website and make it discoverable.
+> However, to help prepare for the day when partner-provided and customer-provided content can also be indexed and found by in-product search and the help pane, get your content deployed to a website and make it discoverable.
 
 ### Optional: Get Microsoft's content
 
 If you deploy a solution that is based on Microsoft's default application, then you might want to include a customized version of Microsoft's business functionality content on your website. Microsoft's source files are available as downloadable packages for each major release in the [https://github.com/MicrosoftDocs/dynamics365smb-docs/](https://github.com/MicrosoftDocs/dynamics365smb-docs/releases) GitHub repo in English (US) only. For other languages, pull files based on a commit before the next major version.  
 
 > [!TIP]
-> The content on the [/dynamics365/business-central/](/dynamics365/business-central/) site and in the various GitHub repos reflects the latest version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)], unless otherwise specified.
+> The content on the [docs.microsoft.com/dynamics365/business-central/](/dynamics365/business-central/) site and in the various GitHub repos reflects the latest version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)], unless otherwise specified.
 >
 > [!INCLUDE [ua-github-releases](../includes/ua-github-releases.md)]
 
