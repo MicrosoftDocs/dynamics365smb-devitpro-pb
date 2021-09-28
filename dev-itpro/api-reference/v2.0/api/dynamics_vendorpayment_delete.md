@@ -12,6 +12,9 @@ ms.author: solsen
 ---
 
 # Delete vendorPayments
+
+[!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
+
 Deletes vendorPayments in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## HTTP request

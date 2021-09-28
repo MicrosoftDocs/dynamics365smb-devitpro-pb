@@ -50,7 +50,7 @@ The first task is to use Azure portal to register an application for Business Ce
         |-------|-----------|
         |Name|Specify a name for your Business Central on-premises solution, such as *Business Central on-premises* or *Azure Services for Business Central on-premises*. |
         |Supported account types| Select <strong>Accounts in any organizational directory (Any Azure AD directory - Multitenant)</strong> |
-        |Redirect URI|Set the first box to **Web** to specify a web application. Enter the URL for your Business Central on-premises browser client, followed by *OAuthLanding.htm*, for example: `https://MyServer/BC180/OAuthLanding` or `https://cronus.onmicrosoft.com/BC180/OAuthLanding.htm`. This file is used to manage the exchange of data between Business Central on-premises and other services through Azure AD.<br> <br>**Important:** The URL must match the URL of Web client, as it appears in the browser address. For example, even though the actual URL might be `https://MyServer:443/BC180/OAuthLanding`, the browser typically removes the port number `:443`.|
+        |Redirect URI|Set the first box to **Web** to specify a web application. Enter the URL for your Business Central on-premises browser client, followed by *OAuthLanding.htm*, for example: `https://MyServer/BC180/OAuthLanding.htm` or `https://cronus.onmicrosoft.com/BC180/OAuthLanding.htm`. This file is used to manage the exchange of data between Business Central on-premises and other services through Azure AD.<br> <br>**Important:** The URL must match the URL of Web client, as it appears in the browser address. For example, even though the actual URL might be `https://MyServer:443/BC180/OAuthLanding`, the browser typically removes the port number `:443`.|
 
         When completed, an **Overview** displays in the portal for the new application.
 
@@ -71,6 +71,7 @@ The first task is to use Azure portal to register an application for Business Ce
     |Feature|API | Permission name|Type|Description|
     |----|----|----------------|----|-----------|
     |All|Microsoft Graph | User.Read|Delegated|Sign in and read user profile|
+    |[Business Central Add-in for Outlook](Setting-up-Office-Add-Ins-Outlook-Inbox.md)|Microsoft Graph | EWS.AccessAsUser.All|Delegated|Gives the Business Central add-in for Outlook permission to mailbox data in Microsoft 365 (Exchange Online) or Exchange Server.|
     |[Universal Print integration](/dynamics365/business-central/ui-specify-printer-selection-reports#set-up-universal-print)|Microsoft Graph |PrinterShare.ReadBasic.All|Delegated|Read basic information about printer shares. Required for using Universal Print printers.|
     |||PrintJob.Create|Delegated|Create print jobs. Required for using Universal Print printers|
     |||PrintJob.ReadBasic|Delegated|Read basic information of user's print jobs. Required for using Universal Print printers.|
@@ -118,7 +119,7 @@ After authorizing the Azure service, you get a message similar to the following 
 
 **We couldn't connect to [service name] using your Azure AD application registration. Run the Set Up Azure Active Directory assisted setup again, and make sure all values are set correctly.**
 
-This issue indicates there's a problem with the configuration of the Azure registered application used by the service. The problem is typically causes by incorrect values for either the **Redirect URL**, **Application ID**, or **Key** fields in the application registration. A common problem deals with the redirect URLs. Make sure the **Redirect URL** matches the redirect URL in the Azure portal and the URL of the Web client. To fix this issue, run the **Set Up Azure Active Directory** assisted setup and compare the values with the app registration in Azure.
+This issue indicates there's a problem with the configuration of the Azure registered application used by the service. The problem is typically caused by incorrect values for either the **Redirect URL**, **Application ID**, or **Key** fields in the application registration. A common problem deals with the redirect URLs. Make sure the **Redirect URL** matches the redirect URL in the Azure portal and the URL of the Web client. To fix this issue, run the **Set Up Azure Active Directory** assisted setup and compare the values with the app registration in Azure.
  
 
 ## See Also

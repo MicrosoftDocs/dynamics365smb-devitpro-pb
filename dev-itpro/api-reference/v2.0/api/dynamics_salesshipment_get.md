@@ -12,8 +12,10 @@ ms.author: solsen
 ---
 
 # Get salesShipments
-Retrieve the properties and relationships of a salesShipment object for [!INCLUDE[prod_short](../../../includes/prod_short.md)]. 
 
+[!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
+
+Retrieve the properties and relationships of a salesShipment object for [!INCLUDE[prod_short](../../../includes/prod_short.md)]. 
 
 ## HTTP request
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).

@@ -12,7 +12,10 @@ author: SusanneWindfeldPedersen
 
 # Triggers Overview
 
-This section describes the triggers that are available to developers in [!INCLUDE [prod_short](../../includes/prod_short.md)]. Use the table of contents to scan the triggers, or use **Filter by title** to find a trigger if you know its name.
+This section describes the triggers that are available to developers in [!INCLUDE [prod_short](../../includes/prod_short.md)].
+
+> [!TIP]  
+> If you already know the name of, for example, a data type, method, property, or trigger, use the **Filter by title** field in the upper left corner, above the table of contents to find the topic faster. Otherwise, you can scan the table of contents to find it.
 
 Triggers activate a method when a certain event occurs. When AL methods are run because of a predefined event on either an object or a control, the event triggers the method. Together the event and method make a trigger.
 
