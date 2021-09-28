@@ -1,4 +1,4 @@
-# [Development and administration](index.md)
+﻿# [Development and administration](index.md)
 # [New and planned](/dynamics365/business-central/product-news?toc=/dynamics365/business-central/dev-itpro/toc.json)
 # Get started
 ## [Overview of business functionality](/dynamics365/business-central/across-business-functionality?toc=/dynamics365/business-central/dev-itpro/toc.json)
@@ -143,6 +143,7 @@
 ### [Enabling new features ahead of time](administration/feature-management.md)
 ### [Set up standard company configuration packages](administration/set-up-standard-company-configuration-packages.md)
 ### [Set up Business Central](/dynamics365/business-central/setup?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### [Get the Outlook add-ins for the business inbox](administration/outlook-addins.md)
 ### [Set up the Excel add-in](administration/configuring-excel-addin.md)
 ### [Network configuration for the Excel add-in](administration/configuring-network-for-addins.md)
 ### [Set up App Key Vaults for extensions](administration/setup-app-key-vault.md)
@@ -2900,6 +2901,7 @@
 ### [Configuring Database Authentication](administration/configure-sql-server-authentication.md)
 ### [Encrypting Data](developer/devenv-encrypting-data.md)
 ### [Setting up the Excel Add-In](administration/configuring-excel-addin.md)
+### [Setting Up the Add-In for Outlook Integration](administration/Setting-up-Office-Add-Ins-Outlook-Inbox.md)
 ### [Setting up App Key Vaults for Extensions](administration/setup-app-key-vault-onprem.md)
 ### Monitoring Business Central Server
 #### [Monitoring Performance Counters](administration/performance-counters.md)
