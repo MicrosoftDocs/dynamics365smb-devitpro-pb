@@ -404,6 +404,23 @@ If you have a multitenant deployment, do these steps for each tenant.
     Sync-NAVApp -ServerInstance $NewBcServerInstance -Tenant $TenantId -Name "<extension name>" -Version $NewVersion
     ```
 
+  >[!NOTE]
+  >
+  > If you are upgrading from an India (IN) version of Dynamics NAV 2016, you must synchronize the tenant with the India extensions.
+  >
+  > | Name | Extension Package |
+  > |------|-------------------|
+  > |INTaxEngine|INTaxEngine.app|
+  > |INTaxBase|INTaxBase.app|
+  > |QR Generator|QRGenerator.app|
+  > |INGST|INGST.app|
+  > |INTCS|INTCS.app|
+  > |INTDS|INTDS.app|
+  > |INFADepreciation|INFADepreciation.app|
+  > |INGateEntry|INGateEntry.app|
+  > |INVoucherInterface|INVoucherInterface.app|
+  > |IN Reports|INReports.app|
+
 > [!TIP]
 > When you synchronize an extension, the extension takes ownership of any tables that it includes. In SQL Server, you'll notice that the table names will be suffixed with the extension ID. For example, Base Application tables will have `437dbf0e-84ff-417a-965d-ed2bb9650972` in the name. In addition, the systemId column is added to application tables that are not already part of an extension.
 
@@ -437,7 +454,14 @@ If you have a multitenant deployment, do these steps for each tenant.
         ```powershell
         Install-NAVApp -ServerInstance $NewBcServerInstance -Tenant $TenantId -Name "Application" -Version $NewVersion
         ```
-
+    > [!NOTE]
+    >
+    > If you are upgrading from an India (IN) version of Dynamics NAV 2016, you must install the India extensions.
+    >
+    > | Name | Extension Package |
+    > |------|-------------------|
+    > |QR Generator|QRGenerator.app|
+    > |IN Reports|INReports.app|
     2. For each extension, run [Start-NAVAppDataUpgrade cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/start-navappdataupgrade):
 
         ```powershell
@@ -446,6 +470,20 @@ If you have a multitenant deployment, do these steps for each tenant.
 
         This step will also automatically install the new extension version on the tenant.
 
+   > [!NOTE]
+   >
+   > If you are upgrading from an India (IN) version of Dynamics NAV 2016, you must upgrade the India extensions.
+   >
+   > | Name | Extension Package |
+   > |------|-------------------|
+   > |INTaxEngine | INTaxEngine.app |
+   > |INTaxBase |INTaxBase.app|
+   > |INGST|INGST.app|
+   > |INTCS|INTCS.app|
+   > |INTDS|INTDS.app|
+   > |INFADepreciation|INFADepreciation.app|
+   > |INGateEntry|INGateEntry.app|
+   > |INVoucherInterface|INVoucherInterface.app|  
 3. (Multitenant only) Repeat steps 1 through 3 for each tenant.
 
 ## Task 11: Install 3rd-party extensions
