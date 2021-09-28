@@ -2962,6 +2962,24 @@
 ## Upgrade
 ### [Upgrading to Business Central](upgrade/upgrading-to-business-central.md)
 ### [Supported Upgrade Paths](upgrade/upgrade-paths.md)
+### Business Central 2021 Release Wave 2
+#### [Overview](upgrade/upgrade-overview-v19.md)
+#### [Upgrade Compatibility Matrix](upgrade/upgrade-v14-v15-compatibility.md)
+#### [Upgrading Permission Sets](upgrade/upgrade-permissions.md)
+#### Application and Data
+##### [From version 14 Unmodified C/AL Application](upgrade/upgrade-unmodified-application-v14-v19.md)
+##### [From version 14 Customized C/AL Application](upgrade/upgrade-to-microsoft-base-app-v19.md)
+##### [From Versions 16, 17, or 18 Microsoft Base Application](upgrade/upgrade-unmodified-application-to-v19.md)
+##### Related Articles
+###### [Convert to AL](upgrade/devenv-code-conversion.md)
+###### Migrating Tables and Fields Between Extensions
+####### [Overview](developer/devenv-migrate-table-fields.md)
+####### [Moving Tables and Fields Down](developer/devenv-migrate-table-fields-down.md)
+####### [Moving Tables and Fields Up](developer/devenv-migrate-table-fields-up.md)
+#### Technical Upgrade
+##### [From Version 14](upgrade/upgrade-technical-upgrade-v14-v19.md)
+##### [From Version 16, 17, or 18](upgrade/upgrade-technical-upgrade-v19.md)
+#### [Installing a Minor Update](upgrade/upgrading-cumulative-update-v19.md)
 ### Business Central 2021 Release Wave 1
 #### [Overview](upgrade/upgrade-overview-v18.md)
 #### [Upgrade Compatibility Matrix](upgrade/upgrade-v14-v15-compatibility.md)
