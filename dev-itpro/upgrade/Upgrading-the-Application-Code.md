@@ -394,6 +394,22 @@ For information about importing objects, see [Importing Objects](../cside/cside-
     >|Name|Extension package|
     >|----|---------|
     >|ELSTER VAT Localization for Germany| Elster.app|
+    >
+    > If you are upgrading from a India (IN) version of Dynamics NAV 2016, you must publish and install the following extensions to get the local functionality:
+    >
+    >|Name|Extension package|
+    >|----|---------|
+    >|India Tax Base| IndiaTaxBase.app|
+    >|India Tax Engine| IndiaTaxEngine.app||
+    >|India Tax GST| IndiaTaxGST.app|
+    >|India Upgrade Tables| IndiaUpgradeTables.app|
+    >|India TCS| IndiaUPGTCS.app|
+    >|India TDS| IndiaUPGTDS.app|
+    >|Fixed Asset Depreciation for India| INFADepreciation.app|
+    >|India Gate Entry| INGateEntry.app|
+    >|India Voucher Interface|INVoucherInterface.app|
+    >|India Data Migration|UPGIndia.app|
+
 
     The new versions are found in the `\Extensions` folder of the installation media.
 

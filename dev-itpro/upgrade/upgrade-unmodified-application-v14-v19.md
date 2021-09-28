@@ -462,6 +462,7 @@ If you have a multitenant deployment, do these steps for each tenant.
     > |------|-------------------|
     > |QR Generator|QRGenerator.app|
     > |IN Reports|INReports.app|
+    
     2. For each extension, run [Start-NAVAppDataUpgrade cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/start-navappdataupgrade):
 
         ```powershell
