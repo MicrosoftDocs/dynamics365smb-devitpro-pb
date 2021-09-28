@@ -2,7 +2,7 @@
 title: "Frequently asked questions about Microsoft Teams integration with Business Central"
 description: Answers to typical questions about Teams and Business Central
 ms.custom: na
-ms.date: 10/08/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -37,7 +37,7 @@ This table gives you an overview of the licenses needed for these features in a 
 |What|Teams license|Business Central license|
 |----|---|---|
 |Send a card|![Teams license check mark](media/check.png "check")|![Business Central license check mark](media/check.png "check")|
-|View a card|![Teams license check mark](media/check.png "Business Central license check mark")||
+|View a card|![Teams license check mark.](media/check.png "Business Central license check mark")||
 |View card details|![Teams license check mark](media/check.png "check")|![Business Central license check mark](media/check.png "check")|
 
 ## What permissions in [!INCLUDE [prod_short](includes/prod_short.md)] are required for these features to work?
@@ -52,7 +52,7 @@ No. This scenario isn't supported. The [!INCLUDE [prod_short](includes/prod_shor
 
 ## Does the Business Central app for Teams allow me to connect to Teams APIs? 
 
-The [!INCLUDE [prod_short](includes/prod_short.md)] platform doesn't provide any specific ways to call Team APIs from AL code, such as programmatically creating a new team with channels and users. To extend [!INCLUDE [prod_short](includes/prod_short.md)] using Teams APIs, known as “connectors”, see Teams extensibility documentation at [https://developer.microsoft.com/en-us/microsoft-teams](https://developer.microsoft.com/en-us/microsoft-teams).
+The [!INCLUDE [prod_short](includes/prod_short.md)] platform doesn't provide any specific ways to call Team APIs from AL code, such as programmatically creating a new team with channels and users. To extend [!INCLUDE [prod_short](includes/prod_short.md)] using Teams APIs, known as “connectors”, see Teams extensibility documentation at [https://developer.microsoft.com/microsoft-teams](https://developer.microsoft.com/microsoft-teams).
 
 ## See Also
 

@@ -1,8 +1,9 @@
 ---
-title: "Page.SetSelectionFilter Method"
+title: "Page.SetSelectionFilter(var Record) Method"
+description: "Notes the records that the user has selected on the page, marks those records in the table specified, and sets the filter to marked only."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 07/13/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,20 +14,20 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Page.SetSelectionFilter Method
-> **Version**: _Available from runtime version 1.0._
+# Page.SetSelectionFilter(var Record) Method
+> **Version**: _Available or changed with runtime version 1.0._
 
 Notes the records that the user has selected on the page, marks those records in the table specified, and sets the filter to "marked only".
 
 
 ## Syntax
-```
+```AL
  Page.SetSelectionFilter(var Record: Record)
 ```
 ## Parameters
-*Page*
-&emsp;Type: [Page](page-data-type.md)
-An instance of the [Page](page-data-type.md) data type.
+*Page*  
+&emsp;Type: [Page](page-data-type.md)  
+An instance of the [Page](page-data-type.md) data type.  
 
 *Record*  
 &emsp;Type: [Record](../record/record-data-type.md)  

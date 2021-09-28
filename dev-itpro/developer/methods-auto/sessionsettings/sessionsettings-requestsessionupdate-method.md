@@ -1,8 +1,9 @@
 ---
-title: "SessionSettings.RequestSessionUpdate Method"
+title: "SessionSettings.RequestSessionUpdate(Boolean) Method"
+description: "Passes a SessionSettings object to the client to request a new session that uses the user personalization properties that are set in the object."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,20 +14,20 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# SessionSettings.RequestSessionUpdate Method
-> **Version**: _Available from runtime version 1.0._
+# SessionSettings.RequestSessionUpdate(Boolean) Method
+> **Version**: _Available or changed with runtime version 1.0._
 
 Passes a SessionSettings object to the client to request a new session that uses the user personalization properties that are set in the object. The current client session is abandoned and a new session is started.
 
 
 ## Syntax
-```
+```AL
  SessionSettings.RequestSessionUpdate(saveSettings: Boolean)
 ```
 ## Parameters
-*SessionSettings*
-&emsp;Type: [SessionSettings](sessionsettings-data-type.md)
-An instance of the [SessionSettings](sessionsettings-data-type.md) data type.
+*SessionSettings*  
+&emsp;Type: [SessionSettings](sessionsettings-data-type.md)  
+An instance of the [SessionSettings](sessionsettings-data-type.md) data type.  
 
 *saveSettings*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  

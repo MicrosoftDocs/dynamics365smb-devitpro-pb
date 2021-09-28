@@ -1,8 +1,9 @@
 ---
 title: "TestTableRelation Property"
+description: "Sets whether to include this field when evaluating field relations between primary and secondary indexes."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/24/2020
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,13 +15,12 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # TestTableRelation Property
-> **Version**: _Available from runtime version 1.0 until version 1.0 where it was deprecated._
+> **Version**: _Available or changed with runtime version 1.0 until version 1.0 where it was deprecated._
 
 Sets whether to include this field when evaluating field relations between primary and secondary indexes.
 
 ## Applies to
 -   Table Field
-
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

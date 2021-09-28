@@ -3,7 +3,7 @@ title: "Pragma Directive in AL"
 description: "Types of pragma directives supported in AL for Business Central"
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual

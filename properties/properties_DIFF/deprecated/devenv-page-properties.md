@@ -13,7 +13,9 @@ ms.author: solsen
 
 # Page Properties
 
-This topic lists properties that apply to the page object, controls, and actions on a page.  
+This article lists properties that apply to the page object, controls, and actions on a page.  
+
+[!INCLUDE[properties_note](../includes/properties_note.md)]
 
 ## Page Object Properties
 

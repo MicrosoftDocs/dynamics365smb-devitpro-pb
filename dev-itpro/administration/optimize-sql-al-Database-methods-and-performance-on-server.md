@@ -1,7 +1,7 @@
 ---
 title: "AL Database Methods and Performance on SQL Server"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -147,7 +147,7 @@ Using **ModifyAll** and **DeleteAll** can improve performance by limiting the am
 [CalcSums Method](../developer/methods-auto/record/record-CalcSums-method.md)   
 [CalcSum Method](../developer/methods-auto/fieldref/fieldref-CALCSUM-Method.md)   
 [SetAutoCalcFields Method](../developer/methods-auto/record/record-SETAUTOCalcFields-method.md)  
-[Insert Method](../developer/methods-auto/record/record-Insert-method.md)   
+[Insert Method](../developer/methods-auto/record/record-Insert--method.md)   
 [Modify Method](../developer/methods-auto/record/record-Modify-method.md)  
 [ModifyAll Method](../developer/methods-auto/record/record-ModifyAll-method.md)     
 [Delete Method](../developer/methods-auto/record/record-Delete-method.md)  

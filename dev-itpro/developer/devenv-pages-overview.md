@@ -3,7 +3,7 @@ title: "Pages Overview"
 description: "Pages are the main way to display and organize data." 
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 11/26/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

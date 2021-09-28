@@ -2,7 +2,7 @@
 title: Events Discoverability
 description: Using the Event Recorder, you can record the events that are published and raised while performing the actions of your scenario.
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -34,7 +34,7 @@ The following steps describe how to record events when you are on the **Event Re
     For example, post a purchase order.
 4. After you have performed the actions of your scenario, navigate back to the window that has the **Event Recorder** page open and click the **Stop** button to finish recording.  
     All the events raised while performing the actions of your scenario are recorded and can be viewed on as shown below.
-    ![Event recorder](media/view-events-event-recorder.png)
+    ![Event recorder.](media/view-events-event-recorder.png)
 5. Choose **Get AL Snippet** to get the event subscription code in AL.
 You can use the AL snippet code in Codeunits to subscribe to those events.
 

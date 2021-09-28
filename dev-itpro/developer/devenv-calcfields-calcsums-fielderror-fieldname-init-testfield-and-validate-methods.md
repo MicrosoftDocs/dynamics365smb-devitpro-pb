@@ -2,7 +2,7 @@
 title: "Field Calculation Methods"
 description: "CalcFields, CalcSums, FieldError, FieldName, Init, TestField, and Validate Methods"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

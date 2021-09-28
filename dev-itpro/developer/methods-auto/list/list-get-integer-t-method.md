@@ -1,8 +1,9 @@
 ---
-title: "List.Get Method"
+title: "List.Get(Integer, var T) Method"
+description: "Gets the element at the specified index."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,20 +14,20 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# List.Get Method
-> **Version**: _Available from runtime version 1.0._
+# List.Get(Integer, var T) Method
+> **Version**: _Available or changed with runtime version 1.0._
 
 Gets the element at the specified index.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  List.Get(Index: Integer, var Result: T)
 ```
 ## Parameters
-*List*
-&emsp;Type: [List](list-data-type.md)
-An instance of the [List](list-data-type.md) data type.
+*List*  
+&emsp;Type: [List](list-data-type.md)  
+An instance of the [List](list-data-type.md) data type.  
 
 *Index*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
@@ -37,8 +38,8 @@ The element at the specified index.
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*[Optional] Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if an element exists at the given index, otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

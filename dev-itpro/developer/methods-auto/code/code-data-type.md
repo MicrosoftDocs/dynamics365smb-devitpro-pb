@@ -1,8 +1,9 @@
 ---
 title: "Code Data Type"
+description: "Denotes a special type of string that is converted to uppercase and removes any trailing or leading spaces."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/03/2020
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Code Data Type
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Denotes a special type of string that is converted to uppercase and removes any trailing or leading spaces.
 

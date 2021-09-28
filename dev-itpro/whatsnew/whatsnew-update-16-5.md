@@ -2,7 +2,7 @@
 title: "Update 16.5 for Microsoft Dynamics 365 Business Central 2020 Release Wave 1"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,7 +17,7 @@ Would you like to know what has changed in update 16.5? Below you'll find an ove
 
 ## Hotfixes
 
-Find an overview of hotfixes in this [article](https://support.microsoft.com/en-us/help/4576664).
+Find an overview of hotfixes in this [article](https://support.microsoft.com/help/4576664).
 
 ## Feature changes
 

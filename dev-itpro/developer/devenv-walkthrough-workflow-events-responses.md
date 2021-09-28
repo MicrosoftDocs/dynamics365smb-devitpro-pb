@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 01/13/2021
+ms.date: 04/01/2021
 ---
 # Walkthrough: Implementing New Workflow Events and Responses
 

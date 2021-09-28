@@ -1,8 +1,9 @@
 ---
-title: "RecordRef.MarkedOnly Method"
+title: "RecordRef.MarkedOnly([Boolean]) Method"
+description: "Activates a special filter."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,31 +14,31 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# RecordRef.MarkedOnly Method
-> **Version**: _Available from runtime version 5.3._
+# RecordRef.MarkedOnly([Boolean]) Method
+> **Version**: _Available or changed with runtime version 5.3._
 
-Activates a special filter. After you use this function, your view of the table includes only records marked by this function.
+Activates a special filter. After you use this function, your view of the table includes only records marked by the Mark method (RecordRef).
 
 
 ## Syntax
-```
+```AL
 [MarkedOnly := ]  RecordRef.MarkedOnly([MarkedOnly: Boolean])
 ```
 > [!NOTE]
 > This method can be invoked using property access syntax.
 ## Parameters
-*RecordRef*
-&emsp;Type: [RecordRef](recordref-data-type.md)
-An instance of the [RecordRef](recordref-data-type.md) data type.
+*RecordRef*  
+&emsp;Type: [RecordRef](recordref-data-type.md)  
+An instance of the [RecordRef](recordref-data-type.md) data type.  
 
-*MarkedOnly*  
+*[Optional] MarkedOnly*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 Activates a special filter.  
 
 
 ## Return Value
-*MarkedOnly*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*[Optional] MarkedOnly*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the special filter is being used; otherwise, **false**.
 
 

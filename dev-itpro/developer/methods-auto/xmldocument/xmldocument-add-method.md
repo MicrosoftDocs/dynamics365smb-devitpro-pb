@@ -1,8 +1,9 @@
 ---
-title: "XmlDocument.Add Method"
+title: "XmlDocument.Add(Any,...) Method"
+description: "Adds the specified content as a child of this document."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,20 +14,20 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# XmlDocument.Add Method
-> **Version**: _Available from runtime version 1.0._
+# XmlDocument.Add(Any,...) Method
+> **Version**: _Available or changed with runtime version 1.0._
 
 Adds the specified content as a child of this document.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  XmlDocument.Add(Content: Any,...)
 ```
 ## Parameters
-*XmlDocument*
-&emsp;Type: [XmlDocument](xmldocument-data-type.md)
-An instance of the [XmlDocument](xmldocument-data-type.md) data type.
+*XmlDocument*  
+&emsp;Type: [XmlDocument](xmldocument-data-type.md)  
+An instance of the [XmlDocument](xmldocument-data-type.md) data type.  
 
 *Content*  
 &emsp;Type: [Any](../any/any-data-type.md)  
@@ -34,8 +35,8 @@ The content to be added as a child of this document.
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*[Optional] Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

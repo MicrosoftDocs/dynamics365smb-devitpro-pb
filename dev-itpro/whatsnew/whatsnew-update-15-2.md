@@ -2,7 +2,7 @@
 title: "Update 15.2 for Microsoft Dynamics 365 Business Central 2019 Release Wave 2"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,15 +18,15 @@ Would you like to know what has changed in update 15.2? Below you'll find an ove
 [Link to Hotfixes](https://support.microsoft.com/help/4533389)
 
 ## Feature changes
--    [Add the Name 2 field to customer and vendor cards](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-business-central/add-name-2-field-customer-vendor-cards)  
--    [Include job information in archived sales and purchase documents](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-business-central/include-job-information-archived-sales-purchase-documents)  
--    [Use VAT clauses on different document types](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-business-central/use-vat-clauses-different-document-types)  
--    [View item availability by unit of measure](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-business-central/view-item-availability-unit-measure)  
--    [View the number of general journal lines](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-business-central/view-number-general-journal-lines)  
+-    [Add the Name 2 field to customer and vendor cards](/dynamics365-release-plan/2019wave2/dynamics365-business-central/add-name-2-field-customer-vendor-cards)  
+-    [Include job information in archived sales and purchase documents](/dynamics365-release-plan/2019wave2/dynamics365-business-central/include-job-information-archived-sales-purchase-documents)  
+-    [Use VAT clauses on different document types](/dynamics365-release-plan/2019wave2/dynamics365-business-central/use-vat-clauses-different-document-types)  
+-    [View item availability by unit of measure](/dynamics365-release-plan/2019wave2/dynamics365-business-central/view-item-availability-unit-measure)  
+-    [View the number of general journal lines](/dynamics365-release-plan/2019wave2/dynamics365-business-central/view-number-general-journal-lines)  
 
 
 ## Release Plan
-If you want to get a comprehensive overview of what's new and planned for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online for the entire wave 2 (release from October 2019 through March 2020), find the link to the release plan [here](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-business-central/planned-features) 
+If you want to get a comprehensive overview of what's new and planned for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online for the entire wave 2 (release from October 2019 through March 2020), find the link to the release plan [here](/dynamics365-release-plan/2019wave2/dynamics365-business-central/planned-features) 
 
 ## Upgrade to 15.2
 Please note that new customers will automatically get the latest builds of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] (15.2). If you are an existing partner/customer, you will receive an email notification as soon as your environment has been upgraded. 
@@ -61,4 +61,4 @@ Please find an overview of new "How to videos" recently published on Dynamics 36
 - [How to set up documents sending profiles](https://youtu.be/FaR5D8ckchA)  
 - [How to setup categories](https://youtu.be/XqXuODrY_5I)  
 - [How to set up customer approval workflow](https://youtu.be/IsdAsw-GEwo)  
-- [How to open a new fiscal year (part of payment methods)](https://youtu.be/E1P-EFHtYtc)  
+- [How to open a new fiscal year (part of payment methods)](https://youtu.be/E1P-EFHtYtc)

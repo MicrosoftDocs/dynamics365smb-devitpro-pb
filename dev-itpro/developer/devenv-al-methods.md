@@ -2,7 +2,7 @@
 title: "Working with AL methods"
 description: "Methods also known as procedures are a fundamental programming element in AL for Business Central."
 ms.custom: na
-ms.date: 02/15/2021
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,10 @@ There are two types of methods: system methods (built-in) and user-defined (cust
 
 - Built-in methods are part of the platform. Built-in methods can be used for different purposes, such as string handling, text formatting, database handling, and so on. For information about the available built-in methods, see [AL method Reference](methods-auto/library.md) and [Essential AL methods](devenv-essential-al-methods.md).
 
-- Custom methods are specialized methods for your application to bind the objects, such as tables, pages, and codeunits, together to form a unified whole. You can create special methods for use anywhere in the database.
+- Custom methods are specialized methods for your application to bind the objects, such as tables, pages, and code units, together to form a unified whole. You can create special methods for use anywhere in the database.
+
+> [!TIP]  
+> If you already know the name of, for example, a data type, method, property, or trigger, use the **Filter by title** field in the upper left corner, above the table of contents to find the topic faster. Otherwise, you can scan the table of contents to find it.
 
 ## Declaring methods
 
@@ -38,7 +41,7 @@ Typing the shortcut `tprocedure` will create the basic structure for a method wh
 
 An attribute is a modifier on a method declaration that specifies information that controls the method's use and behavior. Adding an attribute on a method declaration is also known as *decorating* a method. For example, decorating a method with the Integration attribute sets the method to be an event publisher. An attribute can have one or more arguments that set properties for the method instance.
 
-Attributes are placed before the method. For information about the available attributes, see [Method Attributes](methods/devenv-method-attributes.md).
+Attributes are placed before the method. For information about the available attributes, see [Method Attributes](attributes/devenv-method-attributes.md).
 
 ### Local and global scope
 

@@ -1,7 +1,7 @@
 ---
 title: "Technical Upgrade from Version 15 to Version 16" 
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ ms.service: "dynamics365-business-central"
 
 Use this process to upgrade from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2019 release wave 2 (version 15) to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 1 platform (version 16). This process won't upgrade the application to the latest version.
 
- ![Upgrade on customized Business Central application](../developer/media/bc15-to-16-technical-upgrade-unmodified-app.png "Upgrade on customize Business Central application")   
+ ![Upgrade on customized Business Central application.](../developer/media/bc15-to-16-technical-upgrade-unmodified-app.png "Upgrade on customize Business Central application")   
 
 #### Single-tenant and multitenant deployments
 
@@ -119,6 +119,7 @@ This task runs a technical upgrade on the application database. A technical upgr
     DatabaseLocation    :
     Collation           :
     ```
+[!INCLUDE[convert_azure_sql_db_timeout](../developer/includes/convert_azure_sql_db_timeout.md)]
 
 ## Task 5: Configure version 16 server
 

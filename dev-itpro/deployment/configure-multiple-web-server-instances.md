@@ -3,7 +3,7 @@ title: Set Up Multiple Business Central Web Server Instances using PowerShell
 description: Learn how to use Windows PowerShell to set up more than one web server instance on IIS for the Business Central web client.
 
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

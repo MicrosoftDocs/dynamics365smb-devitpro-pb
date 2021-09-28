@@ -1,7 +1,7 @@
 ---
 title: "Width Property (XMLport)"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -33,7 +33,7 @@ Width = 1;
   
 ## Remarks  
 
-This property is used only if the [Format Property \(XMLports\)](devenv-format-xmlports-property.md) is **Fixed Text**.  
+This property is used only if the [Format Property \(XMLports\)](devenv-format-property.md) is **Fixed Text**.  
   
 The value is an integer that defines the number of characters in the field.  
  

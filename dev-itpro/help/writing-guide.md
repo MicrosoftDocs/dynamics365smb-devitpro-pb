@@ -6,7 +6,7 @@ ms.custom: na
 ms.reviewer: na
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
-ms.date: 12/16/2020
+ms.date: 09/09/2021
 ms.author: edupont
 ---
 
@@ -16,9 +16,9 @@ If you are contributing to the [!INCLUDE [prod_short](../developer/includes/prod
 
 ## Resources
 
-- The [Microsoft Writing Style Guide](/style-guide/welcome/) is published online
+- The [Microsoft Style Guide](/style-guide/welcome/) is published online
   
-  The content on the Docs.microsoft.com site generally follows the Microsoft Writing Style Guide. The content for [!INCLUDE [prod_short](../developer/includes/prod_short.md)] varies in certain ways, partly with product-specific terminology, and a generally more conservative approach to contractions, for example.
+  The content on the Docs.microsoft.com site generally follows the Microsoft Style Guide. The content for [!INCLUDE [prod_short](../developer/includes/prod_short.md)] varies in certain ways, partly with product-specific terminology, and a generally more conservative approach to contractions, for example. Also, since navigation in the [!INCLUDE [prod_short](../includes/prod_short.md)] user interface is different from that of other Dynamics 365 apps, our guidance for steps that describe such navigation is slightly different. For more information, see the [Write for accessibility](#write-for-accessibility) section.  
 - [Extend, Customize, and Collaborate on the Help](contributor-guide.md) shows you the basics of collaborating on content for [!INCLUDE [prod_short](../developer/includes/prod_short.md)]
 
 - The [Docs Contributor Guide](/contribute/) has many tips and tricks for authoring in MarkDown
@@ -27,21 +27,40 @@ If you are contributing to the [!INCLUDE [prod_short](../developer/includes/prod
 
 ## Write for accessibility
 
-At Microsoft, we write for accessibility, which also means that the same content applies to interactions with the software across devices, regardless of input method, for example. For more information, see [Describing interactions with UI](/style-guide/procedures-instructions/describing-interactions-with-ui) in the Microsoft Writing Style Guide.  
+At Microsoft, we write for accessibility, which also means that the same content applies to interactions with the software across devices, regardless of input method, for example. For more information, see [Describing interactions with UI](/style-guide/procedures-instructions/describing-interactions-with-ui) in the Microsoft Style Guide. The product-specific guidance is found in the [Navigation in the product](#navigation-in-the-product) section.  
+
+### Accessible illustrations
 
 The accessibility requirements also impacts metadata for illustrations, such as the following:
 
 ```markdown
-:::image type="content" source="media/illustration.png" alt-text="Text used by screen readers":::
+:::image type="content" source="media/illustration.png" alt-text="Text used by screen readers.":::
 ```
 
 Most of Microsoft's articles use a different MarkDown formatting for illustrations, such as the following:
 
 ```markdown
-![Lightbulb that opens the Tell Me feature](media/ui-search/search_small.png "Tell me what you want to do")
+![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do")
 ```
 
 Both formats are valid MarkDown, and both formats are supported by DocFx.exe. For more information, see [Images](/contribute/markdown-reference#images) in the Docs Contributor Guide.  
+
+### Navigation in the product
+
+The [Describing interactions with UI](/style-guide/procedures-instructions/describing-interactions-with-ui) article in the Microsoft Style Guide also applies to [!INCLUDE [prod_short](../includes/prod_short.md)] content. However, the navigation in [!INCLUDE [prod_short](../includes/prod_short.md)] is very different from many other Microsoft products, and users can even pin actions and personalize  their workspace in other ways that change the navigation path.  
+
+As a result, we often choose to be not very specific about how to find a given action. We write *Choose the Register Payments action*, rather than try to predict if the user will find that action pinned to their action bar or hidden away under **More options**, for example.  
+
+But we also have written something like this: *To map text on the vendor invoice to a specific debit account, on the Actions tab, in the General group, choose Map Text to Account, and then fill the Text-to-Account Mapping Worksheet page.*. In this example, the guidance is now outdated - the actual action is, in the default configuration of the CRONUS demonstration company, easily discoverable in the **Process** part of the action bar, which is the first place people tend to look for things. In other words, the instructions *Choose the Map Text to Account action* would have made it easier for users to find the action.  
+
+The following table provides examples of how to write about the user interface in a helpful but futureproof way, with accessibility in mind.
+
+|Page type  |Example  |Description  |
+|---------|---------|---------|
+|List | On the **Opportunity List** page, select the opportunity, and then choose the **Assign Sales Quote** action.|Most list pages have relatively few actions, so let's keep things simple. Also, most actions in the action bar for list pages apply to the line entry that you have selected. |
+|Card     |On the **General** FastTab, in the **External Document No.** field, enter the invoice number. | Cards can have several FastTabs that each have multiple fields. Telling the user to find a certain field on a specific FastTab can save time.|
+|Card |On the **Customer Card** page, choose the **Merge With** action.| This type of action is relatively easy to find in the **Actions** part of the action bar. |
+|Document  |On the **Lines** FastTab, in the **Item No.** field, enter the number of an inventory item or service.  |Documents, such as sales orders, have a header section and a lines section, typically. So letting the user know which section the field is in can save time.|
 
 ## Authoring in MarkDown
 
@@ -51,7 +70,7 @@ The [!INCLUDE [prod_short](../developer/includes/prod_short.md)] content is styl
 
 Use `#` for headings. For more information, see [Headings](/contribute/markdown-reference#headings) in the Docs Contributor Guide.  
 
-In the source files for the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] content, which publishes as English (US) on the Docs.microsoft.com site, the title of an article is expected to use Title Case (capitalize each word, except prepositions) whereas subsequent headings use Sentence case (capitalize the first word, only). The Microsoft Writing Style Guide recommends a different approach.
+In the source files for the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] content, which publishes as English (US) on the Docs.microsoft.com site, the title of an article is expected to use Title Case (capitalize each word, except prepositions) whereas subsequent headings use Sentence case (capitalize the first word, only). The Microsoft Style Guide recommends a different approach.
 
 ### Metadata
 
@@ -88,7 +107,7 @@ As a best practice, the MarkDown validation in the current version of the Docs A
 Use numbers for ordered lists. Do not add spaces between the lines.
 
 ```MarkDown
-1. Choose the ![Lightbulb that opens the Tell Me feature](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Payment Journal**, and then choose the related link.
+1. Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Payment Journal**, and then choose the related link.
 2. In the **Payment Journal** window, on the first journal line, enter the relevant information about the payment entry.
 3. To apply a single vendor ledger entry:
 4. In the **Applies-to Doc. No.** field, choose the field to open the **Apply Vendor Entries** window.
@@ -246,6 +265,8 @@ Rather than copy-pasting content that you want to surface in two or more places,
 
 ### File naming
 
+In this section, we describe best practices for file names of MarkDown files that will publish to a website. The guidelines make the files easier to work with and better for search engines to index.
+
 #### Rules
 
 - No spaces or punctuation characters. Use hyphens to separate the words in the file name.
@@ -255,7 +276,9 @@ Rather than copy-pasting content that you want to surface in two or more places,
 - No small words - don't include a, and, the, in, or, etc.
 - All files must be in markdown and use the .md file extension.
 
-#### Examples
+    New FAQ files must use YAML format. For an example, see the `https://github.com/MicrosoftDocs/dynamics365smb-docs/blob/live/business-central/faq-copy-paste.yml` file.
+
+#### Examples of file names
 
 |Topic title |Naming  |
 |------------|--------|
@@ -271,7 +294,62 @@ Rather than copy-pasting content that you want to surface in two or more places,
 
 ### Country-specific content
 
-To simplify content localization and translation, country-specific articles live in country-specific folders. The TOC entries live under the "Local Functionality" parent node.
+To simplify content localization and translation, country-specific articles live in country-specific folders. The TOC entries live under the "Local Functionality" parent node.  
+
+## User interface text
+
+If you're a technical writer, then you're likely to either write or edit user interface text, such as captions, warnings and error messages, tooltips, and teaching tips. In this section, we describe our internal guidance, but you can choose differently.  
+
+### Tooltips
+
+[!INCLUDE [ua-tooltips](../includes/ua-tooltips.md)]
+
+#### Examples of tooltips
+
+[!INCLUDE [ua-tooltips-examples](../includes/ua-tooltips-examples.md)]
+
+### Errors, warnings, and other messages
+
+Messages that users see when they work in [!INCLUDE [prod_short](../developer/includes/prod_short.md)], some as  confirmations, others as warnings, for example, are defined in code. In this section, we describe key things to keep in mind when writing or editing this type of user interface text.
+
+- Be brief but descriptive with clear call to action.
+
+    Especially true for errors and warnings that must help the user unblock themselves.
+
+- Write to be understood worldwide.
+
+  - Write content that's easy to read and translate.  
+  - Avoid long, complex sentences. Break them up into shorter sentences that are easier to read and comprehend.
+  - Use lists and tables instead of complicated sentences and paragraphs.  
+  - Use standard English grammar. In particular, avoid incomplete sentences.  
+  - Include words that native English speakers often omit, such as that and the.  
+
+- Only use placeholders for variables and field values where the result depends on context.  
+
+    Write out all static captions, where the value is always known.  
+
+- All placeholders complicate translation, also valid ones, even when they are preceded by code comments.  
+
+    A typical challenge is to determine the gender of the noun that a placeholder represents. This is problematic for target languages such as French, German, and Russian.
+
+    |Use|Instead of  |
+    |---------|---------|
+    |The document has been posted. | The %1 has been posted. (Translators cannot determine the gender.) |
+    |The Unit Cost field is updated. | The %1 field is updated. (Where %1 always represents "Unit Cost".)|
+    |Document %1 contains invalid characters. (Where %1 represents a given document ID.) ||
+    |Option %1 is not supported. (Where %1 represents one of more options.) ||
+
+- Do not place quotation marks around placeholders.
+
+    However, if the placeholder represents free-text user input that is hard to distinguish, such as a payment comment on a bank transaction. The quotation marks then helps to distinguish the user input from other parts of the message.  
+
+    Example: *The payment line with transaction text '%1' is not applied.*, where %1 = `Hi - here is my payment of invoice 1223344`.  
+
+### Teaching tips
+
+[!INCLUDE [2021_releasewave1](../includes/2021_releasewave1.md)]
+
+[!INCLUDE [ua-teaching-tips](../includes/ua-teaching-tips.md)]
 
 ## See also
 

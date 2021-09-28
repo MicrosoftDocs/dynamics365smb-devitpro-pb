@@ -1,8 +1,9 @@
 ---
-title: "Page.RunModal Method"
+title: "Page.RunModal(Integer, Record, Integer) Method"
+description: "Creates, opens, and closes a page that you specify."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Page.RunModal Method
-> **Version**: _Available from runtime version 1.0._
+# Page.RunModal(Integer, Record, Integer) Method
+> **Version**: _Available or changed with runtime version 1.0._
 
 Creates, opens, and closes a page that you specify. When a page is run modally, no input, such as a keyboard or mouse click, can occur except for objects on the modal page.
 
 
 ## Syntax
-```
+```AL
 [Action := ]  Page.RunModal(Number: Integer, Record: Record, FieldNo: Integer)
 ```
 ## Parameters
@@ -38,8 +39,8 @@ Use this optional parameter to select a specific field on which focus will be pu
 
 
 ## Return Value
-*Action*
-&emsp;Type: [Action](../action/action-option.md)
+*[Optional] Action*  
+&emsp;Type: [Action](../action/action-option.md)  
 Specifies what action the user took on the page.
 
 

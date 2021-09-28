@@ -1,8 +1,9 @@
 ---
-title: "Report.CreateTotals Method"
+title: "Report.CreateTotals(var Decimal [, var Decimal,...]) Method"
+description: "Maintains totals for a variable in AL."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,26 +14,26 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Report.CreateTotals Method
-> **Version**: _Available from runtime version 1.0 until version 1.0 where it was deprecated._
+# Report.CreateTotals(var Decimal [, var Decimal,...]) Method
+> **Version**: _Available or changed with runtime version 1.0 until version 1.0 where it was deprecated._
 
 Maintains totals for a variable in AL.
 
 
 ## Syntax
-```
+```AL
  Report.CreateTotals(var Var1: Decimal [, var Var2: Decimal,...])
 ```
 ## Parameters
-*Report*
-&emsp;Type: [Report](report-data-type.md)
-An instance of the [Report](report-data-type.md) data type.
+*Report*  
+&emsp;Type: [Report](report-data-type.md)  
+An instance of the [Report](report-data-type.md) data type.  
 
 *Var1*  
 &emsp;Type: [Decimal](../decimal/decimal-data-type.md)  
 Variable for which the system will maintain the total.
         
-*Var2*  
+*[Optional] Var2*  
 &emsp;Type: [Decimal](../decimal/decimal-data-type.md)  
 Variable for which the system will maintain the total.  
 

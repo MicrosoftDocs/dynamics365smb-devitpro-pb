@@ -1,8 +1,9 @@
 ---
-title: "FilterPageBuilder.PageCaption Method"
+title: "FilterPageBuilder.PageCaption([String]) Method"
+description: " Gets or sets the FilterPageBuilder UI caption."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,31 +14,31 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# FilterPageBuilder.PageCaption Method
-> **Version**: _Available from runtime version 1.0._
+# FilterPageBuilder.PageCaption([String]) Method
+> **Version**: _Available or changed with runtime version 1.0._
 
  Gets or sets the FilterPageBuilder UI caption. Defaults to the resource text if not explicitly set.
 
 
 ## Syntax
-```
+```AL
 [PageCaption := ]  FilterPageBuilder.PageCaption([PageCaption: String])
 ```
 > [!NOTE]
 > This method can be invoked using property access syntax.
 ## Parameters
-*FilterPageBuilder*
-&emsp;Type: [FilterPageBuilder](filterpagebuilder-data-type.md)
-An instance of the [FilterPageBuilder](filterpagebuilder-data-type.md) data type.
+*FilterPageBuilder*  
+&emsp;Type: [FilterPageBuilder](filterpagebuilder-data-type.md)  
+An instance of the [FilterPageBuilder](filterpagebuilder-data-type.md) data type.  
 
-*PageCaption*  
+*[Optional] PageCaption*  
 &emsp;Type: [String](../string/string-data-type.md)  
 The value to set for the FilterPageBuilder UI caption.  
 
 
 ## Return Value
-*PageCaption*
-&emsp;Type: [String](../string/string-data-type.md)
+*[Optional] PageCaption*  
+&emsp;Type: [String](../string/string-data-type.md)  
 The current value of the FilterPageBuilder UI caption.
 
 

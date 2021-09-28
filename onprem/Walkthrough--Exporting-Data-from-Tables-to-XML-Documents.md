@@ -188,7 +188,7 @@ XMLports are used to export data from a [!INCLUDE[navnow](includes/navnow_md.md)
   
      The XML file that is exported resembles the XML file in the following illustration. The XML file contains data for only the first four customers.  
   
-     ![Exported XML file](media/MicrosoftDynamicsNAV_XLMExported.jpg "MicrosoftDynamicsNAV\_XLMExported")  
+     ![Exported XML file.](media/MicrosoftDynamicsNAV_XLMExported.jpg "MicrosoftDynamicsNAV\_XLMExported")  
   
      **XML file that was exported from the Customer table**  
   

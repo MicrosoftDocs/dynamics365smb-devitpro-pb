@@ -1,8 +1,9 @@
 ---
-title: "RecordRef.SetPosition Method"
+title: "RecordRef.SetPosition(String) Method"
+description: "Sets the fields in a primary key on a record to the values specified in the String parameter."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,20 +14,20 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# RecordRef.SetPosition Method
-> **Version**: _Available from runtime version 1.0._
+# RecordRef.SetPosition(String) Method
+> **Version**: _Available or changed with runtime version 1.0._
 
 Sets the fields in a primary key on a record to the values specified in the String parameter. The remaining fields are not changed.
 
 
 ## Syntax
-```
+```AL
  RecordRef.SetPosition(String: String)
 ```
 ## Parameters
-*RecordRef*
-&emsp;Type: [RecordRef](recordref-data-type.md)
-An instance of the [RecordRef](recordref-data-type.md) data type.
+*RecordRef*  
+&emsp;Type: [RecordRef](recordref-data-type.md)  
+An instance of the [RecordRef](recordref-data-type.md) data type.  
 
 *String*  
 &emsp;Type: [String](../string/string-data-type.md)  

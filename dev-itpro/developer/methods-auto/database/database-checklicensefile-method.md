@@ -1,8 +1,9 @@
 ---
-title: "Database.CheckLicenseFile Method"
+title: "Database.CheckLicenseFile(Integer) Method"
+description: "Checks a key in the license file of the system."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/03/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,8 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Database.CheckLicenseFile Method
-> **Version**: _Available from runtime version 1.0._
+# Database.CheckLicenseFile(Integer) Method
+> **Version**: _Available or changed with runtime version 1.0._
 
 Checks a key in the license file of the system.
 
@@ -22,7 +23,7 @@ Checks a key in the license file of the system.
 > This method is supported only in Business Central on-premises.
 
 ## Syntax
-```
+```AL
  Database.CheckLicenseFile(KeyNumber: Integer)
 ```
 > [!NOTE]

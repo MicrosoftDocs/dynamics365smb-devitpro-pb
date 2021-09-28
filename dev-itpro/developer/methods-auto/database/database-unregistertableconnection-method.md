@@ -1,8 +1,9 @@
 ---
-title: "Database.UnregisterTableConnection Method"
+title: "Database.UnregisterTableConnection(TableConnectionType, String) Method"
+description: "Unregisters a table connection to an external database."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Database.UnregisterTableConnection Method
-> **Version**: _Available from runtime version 1.0._
+# Database.UnregisterTableConnection(TableConnectionType, String) Method
+> **Version**: _Available or changed with runtime version 1.0._
 
 Unregisters a table connection to an external database.
 
 
 ## Syntax
-```
+```AL
  Database.UnregisterTableConnection(Type: TableConnectionType, Name: String)
 ```
 > [!NOTE]
@@ -28,7 +29,7 @@ Unregisters a table connection to an external database.
 ## Parameters
 *Type*  
 &emsp;Type: [TableConnectionType](../tableconnectiontype/tableconnectiontype-option.md)  
-Specifies the type of table connection as defined in the TableType property. If the table is of type ExternalSQL, UNREGISTERTableCONNECTION rolls back the current transaction.
+Specifies the type of table connection as defined in the TableType property. If the table is of type ExternalSQL, UNREGISTERTABLECONNECTION rolls back the current transaction.
         
 *Name*  
 &emsp;Type: [String](../string/string-data-type.md)  

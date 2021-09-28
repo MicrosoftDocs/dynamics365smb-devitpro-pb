@@ -20,7 +20,7 @@ The Interactive Timeline Business Data Visualization for [!INCLUDE[navnow](inclu
   
  The visualization helps identify periods of time during which the value falls under zero. You can add multiple horizontal target lines to the visualization for additional visual comparison with target levels. You can also visually mark special dates, such as today, or a work date.  
   
- ![Chart of the projected inventory for item bicycle](media/TimeLine_Viz_ProjectedInventoryBicyle.png "TimeLine\_Viz\_ProjectedInventoryBicyle")  
+ ![Chart of the projected inventory for item bicycle.](media/TimeLine_Viz_ProjectedInventoryBicyle.png "TimeLine\_Viz\_ProjectedInventoryBicyle")  
   
  Visualization lets you compare multiple what-if scenarios, for example, by taking a certain forecast into consideration.  
   

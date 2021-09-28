@@ -1,8 +1,9 @@
 ---
-title: "File.CreateTempFile Method"
+title: "File.CreateTempFile([TextEncoding]) Method"
+description: "Creates a temporary file."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,8 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# File.CreateTempFile Method
-> **Version**: _Available from runtime version 1.0._
+# File.CreateTempFile([TextEncoding]) Method
+> **Version**: _Available or changed with runtime version 1.0._
 
 Creates a temporary file. This enables you to save data of any format to a temporary file. This file has a unique name and will be stored in a temporary file folder.
 
@@ -22,24 +23,24 @@ Creates a temporary file. This enables you to save data of any format to a tempo
 > This method is supported only in Business Central on-premises.
 
 ## Syntax
-```
+```AL
 [Ok := ]  File.CreateTempFile([Encoding: TextEncoding])
 ```
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
 ## Parameters
-*File*
-&emsp;Type: [File](file-data-type.md)
-An instance of the [File](file-data-type.md) data type.
+*File*  
+&emsp;Type: [File](file-data-type.md)  
+An instance of the [File](file-data-type.md) data type.  
 
-*Encoding*  
+*[Optional] Encoding*  
 &emsp;Type: [TextEncoding](../textencoding/textencoding-option.md)  
   
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*[Optional] Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 
 
 

@@ -1,8 +1,9 @@
 ---
-title: "Session.IsSessionActive Method"
+title: "Session.IsSessionActive(Integer) Method"
+description: "Tests if the specified SessionID is active on the server instance where it was started."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Session.IsSessionActive Method
-> **Version**: _Available from runtime version 1.0._
+# Session.IsSessionActive(Integer) Method
+> **Version**: _Available or changed with runtime version 1.0._
 
 Tests if the specified SessionID is active on the server instance where it was started.
 
 
 ## Syntax
-```
+```AL
 Ok :=   Session.IsSessionActive(SessionID: Integer)
 ```
 > [!NOTE]
@@ -32,8 +33,8 @@ The ID of the session that you want to test if it is still active.
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the specified SessionID is active on the server instance where it was started, otherwise **false**.
 
 

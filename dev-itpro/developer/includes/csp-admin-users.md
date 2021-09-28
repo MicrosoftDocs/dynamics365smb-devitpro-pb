@@ -2,7 +2,7 @@
 author: edupont04
 ms.service: dynamics365-business-central
 ms.topic: include
-ms.date: 10/28/2020
+ms.date: 04/01/2021
 ms.author: edupont
 ---
 In the Microsoft Partner Center documentation, you can learn how to [request a reseller relationship with customers](/partner-center/request-a-relationship-with-a-customer), [assign licenses to users](/partner-center/assign-licenses-to-users), and [create new subscriptions](/partner-center/create-a-new-subscription). [!INCLUDE[prod_short](prod_short.md)] is one of the subscriptions that you can create, and there are [!INCLUDE[prod_short](prod_short.md)]-specific license types that you can assign to users.  

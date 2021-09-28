@@ -1,8 +1,9 @@
 ---
-title: "Media.MediaId Method"
+title: "Media.MediaId() Method"
+description: "Gets the unique identifier of a media object on a record."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,27 +14,27 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Media.MediaId Method
-> **Version**: _Available from runtime version 1.0._
+# Media.MediaId() Method
+> **Version**: _Available or changed with runtime version 1.0._
 
 Gets the unique identifier of a media object on a record.
 
 
 ## Syntax
-```
+```AL
 MediaId :=   Media.MediaId()
 ```
 > [!NOTE]
 > This method can be invoked using property access syntax.
 
 ## Parameters
-*Media*
-&emsp;Type: [Media](media-data-type.md)
-An instance of the [Media](media-data-type.md) data type.
+*Media*  
+&emsp;Type: [Media](media-data-type.md)  
+An instance of the [Media](media-data-type.md) data type.  
 
 ## Return Value
-*MediaId*
-&emsp;Type: [Guid](../guid/guid-data-type.md)
+*MediaId*  
+&emsp;Type: [Guid](../guid/guid-data-type.md)  
 The GUID of the Media object in the database.
 
 

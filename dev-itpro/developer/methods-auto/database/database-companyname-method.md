@@ -1,8 +1,9 @@
 ---
-title: "Database.CompanyName Method"
+title: "Database.CompanyName() Method"
+description: "Gets the current company name."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/03/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Database.CompanyName Method
-> **Version**: _Available from runtime version 1.0._
+# Database.CompanyName() Method
+> **Version**: _Available or changed with runtime version 1.0._
 
 Gets the current company name.
 
 
 ## Syntax
-```
+```AL
 Name :=   Database.CompanyName()
 ```
 > [!NOTE]
@@ -30,8 +31,8 @@ Name :=   Database.CompanyName()
 
 
 ## Return Value
-*Name*
-&emsp;Type: [String](../string/string-data-type.md)
+*Name*  
+&emsp;Type: [String](../string/string-data-type.md)  
 The name of the company, or an empty string if no company has been selected.
 
 

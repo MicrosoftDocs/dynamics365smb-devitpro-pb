@@ -3,7 +3,7 @@ title: Simple Role Center Example
 description: "Provides AL code for a simple role center"
 author: blrobl
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,7 +16,7 @@ ms.author: t-blrobl
 
 The AL code in this article creates a simple Role Center customized for users assigned to a new profile. 
 
-![Role Center example](media/sample-role-center.png "Role Center example")
+![Role Center example.](media/sample-role-center.png "Role Center example")
 
 For a more detailed explanation of Role Centers, see [Designing Role Centers](devenv-designing-role-centers.md).
 

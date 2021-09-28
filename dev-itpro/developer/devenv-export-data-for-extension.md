@@ -3,7 +3,7 @@ title: "Exporting data for Extensions"
 description: "How you can export data such as permisisons, web services, and table data for an extension."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,10 +19,6 @@ For your extension to run properly, configuration and starting data such as perm
 - Web services
 - Starting table data
 - Custom report layouts
-
-<!-- 
-> [!NOTE]  
-> The NAV Development Shell is [!INCLUDE[2019_releasewave2_deprecated](../includes/2019_releasewave2_deprecated.md)]. -->
 
 The data must be exported into files to be included in the extension. To use the export functions you must use a container sandbox environment for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. For more information, see [Get started with the Container Sandbox Development Environment](devenv-get-started-container-sandbox.md).
 
@@ -40,6 +36,10 @@ The data must be exported into files to be included in the extension. To use the
     > [!WARNING]  
     > If you do not include a permission set with your extension, only users with the SUPER permission set will be able to use the extension.
 
+    > [!IMPORTANT]  
+    > With the latest version of [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] permissions are no longer defined as data in the application database. Permissions that can be created by using AL objects are called *system* permissions. For more information, see [Entitlements and Permission Sets Overview](devenv-entitlements-and-permissionsets-overview.md).
+
+
 ## To export web services
 
 1. Open the [!INCLUDE[bc_dev_shell](includes/bc_dev_shell.md)].
@@ -55,7 +55,7 @@ The data must be exported into files to be included in the extension. To use the
 ## To export table data 
 
 1. Open the [!INCLUDE[bc_dev_shell](includes/bc_dev_shell.md)].
-2. Export the relevant data using the `Export-NAVAppTableData` cmdlet to export the data to a file. This includes setting the path to a folder where you want the .navxdata file created. A data file in the format of TAB<TABLEID>.navxdata will be created. (Example: TAB10000.navxdata). 
+2. Export the relevant data using the `Export-NAVAppTableData` cmdlet to export the data to a file. This includes setting the path to a folder where you want the .navxdata file created. A data file in the format of `TAB<TABLEID>.navxdata` will be created. (Example: TAB10000.navxdata). 
 
     `Export-NAVAppTableData -ServerInstance DynamicsNAV160 -Path 'C:\NAVAppTableData' -TableId 10000`
 

@@ -1,8 +1,9 @@
 ---
-title: "Record.GetBySystemId Method"
+title: "Record.GetBySystemId(Guid) Method"
+description: "Gets a record by its SystemId."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,20 +14,20 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Record.GetBySystemId Method
-> **Version**: _Available from runtime version 4.0._
+# Record.GetBySystemId(Guid) Method
+> **Version**: _Available or changed with runtime version 4.0._
 
 Gets a record by its SystemId.
 
 
 ## Syntax
-```
+```AL
 [RecordExists := ]  Record.GetBySystemId(SystemId: Guid)
 ```
 ## Parameters
-*Record*
-&emsp;Type: [Record](record-data-type.md)
-An instance of the [Record](record-data-type.md) data type.
+*Record*  
+&emsp;Type: [Record](record-data-type.md)  
+An instance of the [Record](record-data-type.md) data type.  
 
 *SystemId*  
 &emsp;Type: [Guid](../guid/guid-data-type.md)  
@@ -34,8 +35,8 @@ The SystemId of the record to retrieve.
 
 
 ## Return Value
-*RecordExists*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*[Optional] RecordExists*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the record exists; otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

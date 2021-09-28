@@ -1,8 +1,9 @@
 ---
-title: "XmlProcessingInstruction.GetData Method"
+title: "XmlProcessingInstruction.GetData(var Text) Method"
+description: "Gets the content of the processing instruction, excluding the target."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,20 +14,20 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# XmlProcessingInstruction.GetData Method
-> **Version**: _Available from runtime version 1.0._
+# XmlProcessingInstruction.GetData(var Text) Method
+> **Version**: _Available or changed with runtime version 1.0._
 
 Gets the content of the processing instruction, excluding the target.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  XmlProcessingInstruction.GetData(var Result: Text)
 ```
 ## Parameters
-*XmlProcessingInstruction*
-&emsp;Type: [XmlProcessingInstruction](xmlprocessinginstruction-data-type.md)
-An instance of the [XmlProcessingInstruction](xmlprocessinginstruction-data-type.md) data type.
+*XmlProcessingInstruction*  
+&emsp;Type: [XmlProcessingInstruction](xmlprocessinginstruction-data-type.md)  
+An instance of the [XmlProcessingInstruction](xmlprocessinginstruction-data-type.md) data type.  
 
 *Result*  
 &emsp;Type: [Text](../text/text-data-type.md)  
@@ -34,8 +35,8 @@ The content of the processing instruction, excluding the target.
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*[Optional] Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

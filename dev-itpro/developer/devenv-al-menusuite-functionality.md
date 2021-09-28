@@ -3,25 +3,26 @@ title: "Adding Pages and Reports to Tell me"
 description: "Description of how you use AL to add pages and reports so that they are discoverable through search in the client."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 08/01/2021
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
- 
-
 # Adding Pages and Reports to Tell me
 
 The [!INCLUDE[prod_short](includes/prod_short.md)] client includes the **Tell me** feature that lets users find objects and online help articles by entering search terms. When you have added a page or a report in your extension, you most likely want it to be discoverable to users in **Tell me**. In AL, you make a page or report searchable from **Tell me** by setting the [UsageCategory property](properties/devenv-usagecategory-property.md) in code. The **UsageCategory** setting will make the page or report searchable, and the value chosen for the setting will further sub categorize the item.
 
-![TellMe](media/tellmeApril19.png)
+![TellMe.](media/tellmeApril19.png)
 
 **Tell me** finds pages and reports by searching the captions that are specified on page and report objects by the [CaptionML property](properties/devenv-caption-property.md).
 
 ## Working with the UsageCategory property
 
-When you create a [Page](devenv-page-object.md) or a [Report](devenv-report-object.md), you add the [UsageCategory Property](properties/devenv-usagecategory-property.md). If the **UsageCategory** is set to **None**, or if you do not specify **UsageCategory**, the page or report will not show up when you search in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. 
+When you create a [Page](devenv-page-object.md) or a [Report](devenv-report-object.md), you add the [UsageCategory Property](properties/devenv-usagecategory-property.md). If the **UsageCategory** is set to **None**, or if you do not specify **UsageCategory**, the page or report will not show up when you search in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)].
+
+> [!TIP]
+> The **UsageCategory** is also used to categorize pages and reports shown in the role explorer of the client. The role explorer includes two actions: **Reports and Analysis** and **Administration**. Pages and reports set to **ReportsAndAnalysis** will show when the **Reports and Analysis** action is selected. Pages and reports set to **Administration** will show when the **Administration** action is selected. For more information, see [Finding Pages with the Role Explorer](/dynamics365/business-central/ui-role-explorer).
 
 ### UsageCategory property values
 The values for the **UsageCategory** property are listed below. The sub category will help the user navigate through the search results and it is a best practice to be consistent when categorizing the pages and the reports that you add. A consistent approach will help guiding the user and improve productivity.

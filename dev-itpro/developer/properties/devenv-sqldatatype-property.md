@@ -1,8 +1,9 @@
 ---
 title: "SqlDataType Property"
+description: "Sets the data type that you want to allow in a code field."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/24/2020
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # SqlDataType Property
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Sets the data type that you want to allow in a code field.
 
@@ -78,6 +79,6 @@ If you set SQL Data Type to Integer, then the following are true:
 ## See Also
 
 [Properties](devenv-properties.md)  
-[Integer Data Type](../datatypes/devenv-integer-data-type.md)  
-[BigInteger Data Type](../datatypes/devenv-biginteger-data-type.md)  
-[Variant Data Type](../datatypes/devenv-variant-data-type.md)
+[Integer Data Type](../methods-auto/library.md)  
+[BigInteger Data Type](../methods-auto/library.md)  
+[Variant Data Type](../methods-auto/library.md)

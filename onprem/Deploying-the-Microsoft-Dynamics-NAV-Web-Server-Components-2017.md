@@ -21,7 +21,7 @@ This section contains information about the deployment of the [!INCLUDE[nav_web_
 ## Network Architecture and Topology  
  The following illustration shows the [!INCLUDE[nav_web_server](includes/nav_web_server_md.md)] environment.  
   
- ![NAV Web Client network architecture](media/NAV_WebClient_Network_Architecture.png "NAV\_WebClient\_Network\_Architecture")  
+ ![NAV Web Client network architecture.](media/NAV_WebClient_Network_Architecture.png "NAV\_WebClient\_Network\_Architecture")  
   
  You can deploy the components on one computer or on separate computers. For example, you can install the [!INCLUDE[nav_web_server](includes/nav_web_server_md.md)] on one computer and the [!INCLUDE[nav_server](includes/nav_server_md.md)] and SQL Server database on another computer. The topology that you choose depends on the network resources and the infrastructure of the [!INCLUDE[navnow](includes/navnow_md.md)] components. The installation and configuration process is different for each scenario.  
   
@@ -32,7 +32,7 @@ This section contains information about the deployment of the [!INCLUDE[nav_web_
   
  When you install [!INCLUDE[nav_web_server](includes/nav_web_server_md.md)], a web server instance is added on IIS for the [!INCLUDE[nav_web](includes/nav_web_md.md)]. The web server instance consists of a virtual directory and application. The following illustration shows the structure in Internet Information Services Manager. For more information about these elements in IIS, see [IIS Manager UI](https://go.microsoft.com/fwlink/?LinkID=614897).  
   
- ![The NAV Web client structure on IIS](media/NAVWebClientIIS.png "NAVWebClientIIS")  
+ ![The NAV Web client structure on IIS.](media/NAVWebClientIIS.png "NAVWebClientIIS")  
   
  The following table includes the default settings for each element of the website structure.  
   

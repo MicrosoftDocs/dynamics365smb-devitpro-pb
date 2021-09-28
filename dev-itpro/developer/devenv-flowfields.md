@@ -1,7 +1,7 @@
 ---
 title: "FlowFields"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -33,7 +33,7 @@ There are seven types of FlowFields. Each is described in the following table.
 ### Example  
 Consider the Customer table in the following illustration. This table contains two FlowFields. The field named **Any Entries** is a FlowField of the Exist type, and the **Balance** field is a FlowField of the Sum type.  
   
- ![Table that has two FlowFields](media/NAV_ADG_Diag_3.png "NAV\_ADG\_Diag\_3")  
+ ![Table that has two FlowFields.](media/NAV_ADG_Diag_3.png "NAV\_ADG\_Diag\_3")  
   
 The figure shows that the value in the Balance FlowField for customer number 10000 (Windy City Solutions) is retrieved from the Amount column in the Customer Entry table. The value is the sum of the amount fields for the entries that have the customer number 10000.  
   

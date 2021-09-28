@@ -2,7 +2,7 @@
 title: Field Groups
 description: A field group defines the fields to display in a drop-down control in Dynamics 365 Business Central. 
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

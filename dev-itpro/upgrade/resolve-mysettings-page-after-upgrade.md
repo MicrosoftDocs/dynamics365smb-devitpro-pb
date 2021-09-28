@@ -2,7 +2,7 @@
 title: "Resolving My Settings Page After a Database Conversion"
 description: Explains how to resolve the problem with the My Settings page in the web client after you convert a Dynamics NAV 2016 database.
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

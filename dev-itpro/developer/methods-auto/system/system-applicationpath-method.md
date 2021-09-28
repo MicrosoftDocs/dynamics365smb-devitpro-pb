@@ -1,8 +1,9 @@
 ---
-title: "System.ApplicationPath Method"
+title: "System.ApplicationPath() Method"
+description: "Returns the path of the directory where the executable file for the product is installed."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,8 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# System.ApplicationPath Method
-> **Version**: _Available from runtime version 1.0._
+# System.ApplicationPath() Method
+> **Version**: _Available or changed with runtime version 1.0._
 
 Returns the path of the directory where the executable file for the product is installed.
 
@@ -22,7 +23,7 @@ Returns the path of the directory where the executable file for the product is i
 > This method is supported only in Business Central on-premises.
 
 ## Syntax
-```
+```AL
 String :=   System.ApplicationPath()
 ```
 > [!NOTE]
@@ -32,8 +33,8 @@ String :=   System.ApplicationPath()
 
 
 ## Return Value
-*String*
-&emsp;Type: [String](../string/string-data-type.md)
+*String*  
+&emsp;Type: [String](../string/string-data-type.md)  
 
 
 

@@ -1,8 +1,9 @@
 ---
-title: "TestRequestPage.Previous Method"
+title: "TestRequestPage.Previous() Method"
+description: "Sets the current row of the test page as the previous row in the data set."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,25 +14,25 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# TestRequestPage.Previous Method
-> **Version**: _Available from runtime version 1.0._
+# TestRequestPage.Previous() Method
+> **Version**: _Available or changed with runtime version 1.0._
 
 Sets the current row of the test page as the previous row in the data set.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  TestRequestPage.Previous()
 ```
 
 ## Parameters
-*TestRequestPage*
-&emsp;Type: [TestRequestPage](testrequestpage-data-type.md)
-An instance of the [TestRequestPage](testrequestpage-data-type.md) data type.
+*TestRequestPage*  
+&emsp;Type: [TestRequestPage](testrequestpage-data-type.md)  
+An instance of the [TestRequestPage](testrequestpage-data-type.md) data type.  
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*[Optional] Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the current row has changed, otherwise **false**.Throws a NavTestPageNotOpenedException if the page is not opened.
       
 

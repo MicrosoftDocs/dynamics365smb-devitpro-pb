@@ -6,7 +6,7 @@ author: jowilco
 ms.reviewer: edupont
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
-ms.date: 10/02/2020
+ms.date: 04/01/2021
 ms.author: jowilco
 ---
 

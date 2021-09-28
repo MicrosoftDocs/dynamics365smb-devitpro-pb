@@ -3,7 +3,7 @@ title: "Deploying a Business Central Demonstration Environment"
 author: jswymer
 description: Learn about deploying demos for Business Central on-premises. 
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

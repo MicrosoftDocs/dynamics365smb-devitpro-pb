@@ -34,11 +34,11 @@ You can specify filters in a query to restrict the data in the resulting dataset
 
  The following illustration shows Query Designer for a query that links table 18 Customer and table 37 Sales Line. The illustration includes the **Properties** window for the Sales Line data item that sets a filter to include only sales lines that have a quantity greater than 10.  
 
- ![Query inner join, filters on a field](media/QueryFilters_Field.png "QueryFilters\_Field")  
+ ![Query inner join, filters on a field.](media/QueryFilters_Field.png "QueryFilters\_Field")  
 
  The following illustration shows the resulting dataset for the query.  
 
- ![Result of a query that filters on a field](media/QueryFilters_Field_Run.png "QueryFilters\_Field\_Run")  
+ ![Result of a query that filters on a field.](media/QueryFilters_Field_Run.png "QueryFilters\_Field\_Run")  
 
  A data item filter is static which means that it cannot be overwritten by a filter on a column or filter row in Query Designer or by the SETFILTER or SETRANGE functions in C/AL code. If one of these filter types is applied to the same field as the data item filter, then the filters are combined. In logical terms, this combination corresponds to an "AND" operation. For example, if the data item filter applies a filter on a field to include values greater than 10 \(>10\) and a column filter applies a filter on the same field to include values less than fifty \(\<50\), then the resultant filter includes values that are greater than 10 and less than fifty \(10\< value \<50\).  
 
@@ -57,11 +57,11 @@ You can specify filters in a query to restrict the data in the resulting dataset
 
 -   A filter on filter row  for the **Location Code** field of the Sales Line table that includes only records where the location code is WHITE.  
 
- ![Query example showing column filters](media/NAV_Query_ColumnFilter_Example.png "NAV\_Query\_ColumnFilter\_Example")  
+ ![Query example showing column filters.](media/NAV_Query_ColumnFilter_Example.png "NAV\_Query\_ColumnFilter\_Example")  
 
  The following illustration shows the resulting dataset for the query.  
 
- ![Shows the rendered dataset of a filtered query](media/NAV_Query_Column_Filters_Example_About_Window.png "NAV\_Query\_Column\_Filters\_Example\_About\_Window")  
+ ![Shows the rendered dataset of a filtered query.](media/NAV_Query_Column_Filters_Example_About_Window.png "NAV\_Query\_Column\_Filters\_Example\_About\_Window")  
 
  In an SQL SELECT statement, filters on a column or filter row that do not apply a totals method, as with the Location Code filter row in the example, would correspond to a WHERE clause. Filters on a columns or filter rows that do apply a totals method, as with the Quantity column in the example, would correspond to a HAVING clause. For more information, see [Equivalent SQL SELECT Statements for Query Filters](Understanding-Query-Filters.md#SQL).  
 

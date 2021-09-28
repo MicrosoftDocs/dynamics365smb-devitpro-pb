@@ -4,7 +4,7 @@ description: "This topic lists properties that apply to views."
 
 author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,6 +16,9 @@ ms.author: solsen
 # View Properties
 
 The following topic lists properties that apply to [Views](../devenv-views.md) specifically.
+
+[!INCLUDE[properties_note](../includes/properties_note.md)]
+
 
 |Property Name| Object |
 |-------------|--------|

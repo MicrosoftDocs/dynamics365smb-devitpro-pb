@@ -1,8 +1,9 @@
 ---
-title: "SessionSettings.ProfileSystemScope Method"
+title: "SessionSettings.ProfileSystemScope([Boolean]) Method"
+description: "Gets or sets the profile scope property in a SessionSettings object."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,31 +14,31 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# SessionSettings.ProfileSystemScope Method
-> **Version**: _Available from runtime version 1.0._
+# SessionSettings.ProfileSystemScope([Boolean]) Method
+> **Version**: _Available or changed with runtime version 1.0._
 
 Gets or sets the profile scope property in a SessionSettings object.
 
 
 ## Syntax
-```
+```AL
 [ProfileSystemScope := ]  SessionSettings.ProfileSystemScope([NewProfileScope: Boolean])
 ```
 > [!NOTE]
 > This method can be invoked using property access syntax.
 ## Parameters
-*SessionSettings*
-&emsp;Type: [SessionSettings](sessionsettings-data-type.md)
-An instance of the [SessionSettings](sessionsettings-data-type.md) data type.
+*SessionSettings*  
+&emsp;Type: [SessionSettings](sessionsettings-data-type.md)  
+An instance of the [SessionSettings](sessionsettings-data-type.md) data type.  
 
-*NewProfileScope*  
+*[Optional] NewProfileScope*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 Specifies whether the profile applies to the system or to a tenant only. **true** sets the profile to apply to the system; **false** sets the profile to apply to a tenant only.  
 
 
 ## Return Value
-*ProfileSystemScope*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*[Optional] ProfileSystemScope*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the profile applies to the system; **false** if the profile applies to a tenant.
       
 

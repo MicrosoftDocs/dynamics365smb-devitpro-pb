@@ -1,8 +1,9 @@
 ---
-title: "SessionSettings.Company Method"
+title: "SessionSettings.Company([String]) Method"
+description: "Gets or sets the company property in a SessionSettings object."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,32 +14,32 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# SessionSettings.Company Method
-> **Version**: _Available from runtime version 1.0._
+# SessionSettings.Company([String]) Method
+> **Version**: _Available or changed with runtime version 1.0._
 
 Gets or sets the company property in a SessionSettings object.
 
 
 ## Syntax
-```
+```AL
 [Company := ]  SessionSettings.Company([NewCompanyName: String])
 ```
 > [!NOTE]
 > This method can be invoked using property access syntax.
 ## Parameters
-*SessionSettings*
-&emsp;Type: [SessionSettings](sessionsettings-data-type.md)
-An instance of the [SessionSettings](sessionsettings-data-type.md) data type.
+*SessionSettings*  
+&emsp;Type: [SessionSettings](sessionsettings-data-type.md)  
+An instance of the [SessionSettings](sessionsettings-data-type.md) data type.  
 
-*NewCompanyName*  
+*[Optional] NewCompanyName*  
 &emsp;Type: [String](../string/string-data-type.md)  
 Specifies the name of the company in the SessionSettings object. The company must already exist in the database, otherwise you will get an error at runtime.
         
 
 
 ## Return Value
-*Company*
-&emsp;Type: [String](../string/string-data-type.md)
+*[Optional] Company*  
+&emsp;Type: [String](../string/string-data-type.md)  
 The name of the company that is set in the SessionSettings object.
       
 

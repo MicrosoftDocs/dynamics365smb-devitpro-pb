@@ -1,8 +1,9 @@
 ---
-title: "Query.SaveAsXml Method"
+title: "Query.SaveAsXml(String) Method"
+description: "Saves the resulting data set of a query as XML"
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,8 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Query.SaveAsXml Method
-> **Version**: _Available from runtime version 1.0._
+# Query.SaveAsXml(String) Method
+> **Version**: _Available or changed with runtime version 1.0._
 
 Saves the resulting data set of a query as XML
 
@@ -22,13 +23,13 @@ Saves the resulting data set of a query as XML
 > This method is supported only in Business Central on-premises.
 
 ## Syntax
-```
+```AL
 [Ok := ]  Query.SaveAsXml(FileName: String)
 ```
 ## Parameters
-*Query*
-&emsp;Type: [Query](query-data-type.md)
-An instance of the [Query](query-data-type.md) data type.
+*Query*  
+&emsp;Type: [Query](query-data-type.md)  
+An instance of the [Query](query-data-type.md) data type.  
 
 *FileName*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -36,8 +37,8 @@ The path and name of the file that you want to save the query to.
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*[Optional] Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

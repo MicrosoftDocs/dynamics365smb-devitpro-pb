@@ -1,8 +1,9 @@
 ---
-title: "Session.LogMessage Method"
+title: "Session.LogMessage(String, String, Verbosity, DataClassification, TelemetryScope, String, String [, String] [, String]) Method"
+description: "Logs a trace message to a telemetry account."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Session.LogMessage Method
-> **Version**: _Available from runtime version 5.4._
+# Session.LogMessage(String, String, Verbosity, DataClassification, TelemetryScope, String, String [, String] [, String]) Method
+> **Version**: _Available or changed with runtime version 5.4._
 
 Logs a trace message to a telemetry account.
 
 
 ## Syntax
-```
+```AL
  Session.LogMessage(EventId: String, Message: String, Verbosity: Verbosity, DataClassification: DataClassification, TelemetryScope: TelemetryScope, Dimension1: String, Value1: String [, Dimension2: String] [, Value2: String])
 ```
 > [!NOTE]
@@ -49,10 +50,10 @@ Additional dimension that will be emitted to the telemetry account and that can 
 *Value1*  
 &emsp;Type: [String](../string/string-data-type.md)  
 The value of Dimension1.   
-*Dimension2*  
+*[Optional] Dimension2*  
 &emsp;Type: [String](../string/string-data-type.md)  
 Additional dimension that will be emitted to the telemetry account and that can be used to specify filters in the query.   
-*Value2*  
+*[Optional] Value2*  
 &emsp;Type: [String](../string/string-data-type.md)  
 The value of Dimension2.   
 

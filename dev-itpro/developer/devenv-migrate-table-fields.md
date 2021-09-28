@@ -3,7 +3,7 @@ title: "Migrating Tables and Fields Between Extensions"
 description: "Explains how to migrate tables and fields from one extension to another."
 author: jswymer
 ms.custom: na
-ms.date: 10/28/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -36,7 +36,7 @@ The move is divided into two phases: development and deployment. However, before
 
 The process to migrate tables and fields to another extension depends on the migration's direction in the dependency graph. The following figure illustrates a simplified extension dependency graph. From top to bottom, an extension is dependent on any extension below it in the graph.
 
-![Dependency graph](media/extension-dependency-graph.png "Dependency graph")  
+![Dependency graph.](media/extension-dependency-graph.png "Dependency graph")  
 
 ### When to move down
 

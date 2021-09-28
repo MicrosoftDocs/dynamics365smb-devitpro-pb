@@ -1,8 +1,9 @@
 ---
 title: "Filters Property"
+description: "Sets a set of filters for the page that will be applied for this page view."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/24/2020
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Filters Property
-> **Version**: _Available from runtime version 3.0._
+> **Version**: _Available or changed with runtime version 3.0._
 
 Sets a set of filters for the page that will be applied for this page view.
 The following syntax is valid for the Filters property:
@@ -27,7 +28,6 @@ Filters = [WHERE(<TableFilters>)]
 
 ## Applies to
 -   Page View
-
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

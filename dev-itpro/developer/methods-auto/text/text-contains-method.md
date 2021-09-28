@@ -1,8 +1,9 @@
 ---
-title: "Text.Contains Method"
+title: "Text.Contains(Text) Method"
+description: "Returns a value indicating whether a specified substring occurs within this string."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,22 +14,22 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Text.Contains Method
-> **Version**: _Available from runtime version 1.0._
+# Text.Contains(Text) Method
+> **Version**: _Available or changed with runtime version 1.0._
 
 Returns a value indicating whether a specified substring occurs within this string.
 
 
 ## Syntax
-```
+```AL
 Ok :=   Text.Contains(Value: Text)
 ```
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
 ## Parameters
-*Text*
-&emsp;Type: [Text](text-data-type.md)
-An instance of the [Text](text-data-type.md) data type.
+*Text*  
+&emsp;Type: [Text](text-data-type.md)  
+An instance of the [Text](text-data-type.md) data type.  
 
 *Value*  
 &emsp;Type: [Text](text-data-type.md)  
@@ -36,8 +37,8 @@ The string to seek.
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the specified substring occurs in the  specified string, otherwise **false**.
 
 

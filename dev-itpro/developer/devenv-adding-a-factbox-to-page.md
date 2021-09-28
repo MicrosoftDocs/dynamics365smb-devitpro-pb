@@ -3,7 +3,7 @@ title: "Adding a FactBox to a Page"
 description: A FactBox is located on the right-most side of a page. This area is used to display related facts about the current record including charts, data from related tables, Notes, and Links.
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,7 +16,7 @@ ms.author: solsen
 
 A FactBox is the area that is located on the right-most side of a page and it is divided into one or more parts that are arranged vertically. This area is used to display content including other pages, charts, and system parts such as Notes, and Links. Typically, you can use a FactBox to display information that is related to an item on the main content page. For example, on a page that shows a sales order list, you can use a FactBox to show sell-to customer sales history for a selected sales order in the list as shown below.  
 
-![Shows FactBox on a sales order](media/factboxApril19.png)  
+![Shows FactBox on a sales order.](media/factboxApril19.png)  
 
 The following list highlights a few categories of FactBoxes:
 

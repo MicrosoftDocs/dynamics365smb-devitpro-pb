@@ -1,7 +1,7 @@
 ---
 title: "Using Security Certificates with Business Central On-Premises"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -49,7 +49,7 @@ Most enterprises and hosting providers have their own infrastructure for issuing
   
 ## Run the Certificates Snap-in for Microsoft Management Console
   
-Some of the following procedures use the Certificates snap-in for Microsoft Management Console \(MMC\). If you do not already have this snap-in installed, you can add it to the MMC. For information see [Add the Certificates Snap-in to an MMC](https://go.microsoft.com/fwlink/?LinkID=699497).  
+Some of the following procedures use the Certificates snap-in for Microsoft Management Console \(MMC\). If you do not already have this snap-in installed, you can add it to the MMC. For information see [Add the Certificates Snap-in to an MMC](/dotnet/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in).  
   
 ## Install and Configure the Certificates
   
@@ -66,7 +66,7 @@ You install the security certificates on the computers running [!INCLUDE[server]
   
     A certificate can be enabled for several different purposes. The **Server Authentication** and **Client Authentication** purposes must be enabled. You can enable or disable other purposes to suit your requirements.  
   
-    You enable certificate purposes by using the Certificates Snap-in for MMC. For more information, see [Modify the Properties of a Certificate](https://go.microsoft.com/fwlink/?LinkID=699496).  
+    You enable certificate purposes by using the Certificates Snap-in for MMC. For more information, see [Modify the Properties of a Certificate](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725909(v=ws.11)).  
 
 ###  Grant access to the [!INCLUDE[server](../developer/includes/server.md)] service account
 After you have installed the root CA and the service certificate on the computer running [!INCLUDE[server](../developer/includes/server.md)], you must grant access to the service account that is associated with the server so that the service account can access the service certificate’s private key.
@@ -155,4 +155,4 @@ After you have installed the root CA on the computer running the [!INCLUDE[webse
  When starting the [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)], users are prompted for a valid user name and password.
 
 ## See Also
-[Authentication and User Credential Types](../administration/users-credential-types.md)   
+[Authentication and User Credential Types](../administration/users-credential-types.md)

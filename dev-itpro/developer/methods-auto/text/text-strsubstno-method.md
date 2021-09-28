@@ -1,8 +1,9 @@
 ---
-title: "Text.StrSubstNo Method"
+title: "Text.StrSubstNo(String [, Any,...]) Method"
+description: "Replaces %1, %2, %3..."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 07/13/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Text.StrSubstNo Method
-> **Version**: _Available from runtime version 1.0._
+# Text.StrSubstNo(String [, Any,...]) Method
+> **Version**: _Available or changed with runtime version 1.0._
 
 Replaces %1, %2, %3... and #1, #2, #3... fields in a string with the values you provide as optional parameters.
 
 
 ## Syntax
-```
+```AL
 NewString :=   Text.StrSubstNo(String: String [, Value1: Any,...])
 ```
 > [!NOTE]
@@ -30,14 +31,14 @@ NewString :=   Text.StrSubstNo(String: String [, Value1: Any,...])
 &emsp;Type: [String](../string/string-data-type.md)  
 A string containing '#' and/or '%' fields.
         
-*Value1*  
+*[Optional] Value1*  
 &emsp;Type: [Any](../any/any-data-type.md)  
 One or more values (expressions) that you want to insert into String. You can specify up to 10 values.  
 
 
 ## Return Value
-*NewString*
-&emsp;Type: [String](../string/string-data-type.md)
+*NewString*  
+&emsp;Type: [String](../string/string-data-type.md)  
 Returns a new string with the provided values inserted into the specified string.
 
 

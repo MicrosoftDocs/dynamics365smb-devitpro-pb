@@ -1,8 +1,9 @@
 ---
-title: "RecordRef.Delete Method"
+title: "RecordRef.Delete([Boolean]) Method"
+description: "Deletes a record in a table."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,29 +14,29 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# RecordRef.Delete Method
-> **Version**: _Available from runtime version 1.0._
+# RecordRef.Delete([Boolean]) Method
+> **Version**: _Available or changed with runtime version 1.0._
 
 Deletes a record in a table.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  RecordRef.Delete([RunTrigger: Boolean])
 ```
 ## Parameters
-*RecordRef*
-&emsp;Type: [RecordRef](recordref-data-type.md)
-An instance of the [RecordRef](recordref-data-type.md) data type.
+*RecordRef*  
+&emsp;Type: [RecordRef](recordref-data-type.md)  
+An instance of the [RecordRef](recordref-data-type.md) data type.  
 
-*RunTrigger*  
+*[Optional] RunTrigger*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 Specifies whether the code in the OnDelete trigger will be executed. If this parameter is true, the code will be executed. If this parameter is false, then the code in the OnDelete trigger is not executed. The default value is false. This parameter is optional.  
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*[Optional] Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
@@ -63,14 +64,14 @@ Specifies whether the code in the OnDelete trigger will be executed. If this par
 var
     varRecordToDelete: Code;
     MyRecordRef: RecordRef;
-    Text000: Label 'Customer %1 is deleted.;
+    Text000: Label 'Customer %1 is deleted.';
 begin
     varRecordToDelete := '10000';  
     MyRecordRef.Open(18);  
     MyFieldRef := MyRecordRef.Field(1);  
     MyFieldRef.Value := varRecordToDelete;  
     if MyRecordRef.Find('=') then begin  
-      ifMyRecordRef.Delete then begin  
+      if MyRecordRef.Delete then begin  
         MyRecordRef.Modify;  
         Message(Text000, MyFieldRef.Value);  
       end;  

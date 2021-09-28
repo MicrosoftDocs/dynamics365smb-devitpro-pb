@@ -8,7 +8,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ---
 # FAQ About the Windows Client and Business Central
 
@@ -41,7 +41,7 @@ No. This change only impacts on-premises installations because the Windows clien
 Yes. When you **choose to upgrade** to [!INCLUDE[prod_short](includes/prod_short.md)] 2019 release wave 2 or later, you must switch to access [!INCLUDE[prod_short](includes/prod_short.md)] using one of the modern clients. The most popular choice on desktop computers is the web-browser client where your browser is pointing to an on-premises web server using a URL, such as this example (not active): `https://myserver.mydomain.com/BC170`  
 
 ## What if I really want to have an installable component or at least an icon on my desktop?
-You can always add a browser shortcut on your desktop or pin the web page with [!INCLUDE[prod_short](includes/prod_short.md)] to your Windows task bar. Alternatively, the [!INCLUDE[prod_short](includes/prod_short.md)] Windows 10 desktop app, which is available from Microsoft Store, is a great way to access [!INCLUDE[prod_short](includes/prod_short.md)] both online and on-premises. To get the app, go to [Microsoft Dynamics 365 [!INCLUDE[prod_short](includes/prod_short.md)]](https://www.microsoft.com/en-us/p/microsoft-dynamics-365-business-central/9nblggh4ql79?rtc=1&activetab=pivot:overviewtab) in the store.
+You can always add a browser shortcut on your desktop or pin the web page with [!INCLUDE[prod_short](includes/prod_short.md)] to your Windows task bar. Alternatively, the [!INCLUDE[prod_short](includes/prod_short.md)] Windows 10 desktop app, which is available from Microsoft Store, is a great way to access [!INCLUDE[prod_short](includes/prod_short.md)] both online and on-premises. To get the app, go to [Microsoft Dynamics 365 [!INCLUDE[prod_short](includes/prod_short.md)]](https://www.microsoft.com/p/microsoft-dynamics-365-business-central/9nblggh4ql79?rtc=1&activetab=pivot:overviewtab) in the store.
 
 ## How does this impact mobile?
 There is **no impact** on mobile apps for [!INCLUDE[prod_short](includes/prod_short.md)] as they are already part of the modern-client family. For more information about the mobile apps, see [Getting [!INCLUDE[prod_short](includes/prod_short.md)] on Your Mobile Device](/dynamics365/business-central/install-mobile-app).  
@@ -62,7 +62,7 @@ Yes. This change does not impact the Outlook add-in. In fact, the modern Outlook
 ## What happened to C/SIDE, the legacy development environment?
 In line with the retirement of the Windows client, [!INCLUDE[prod_short](includes/prod_short.md)] 2019 release wave 2 marks a milestone as the first release without the legacy development environment (also known as C/SIDE). The modern developer experience, which is based on Visual Studio Code and the new AL language, supports developing large apps, such as the base application from Microsoft.
 
-Therefore, C/SIDE is discontinued for [!INCLUDE[prod_short](includes/prod_short.md)] going forward. Partners enjoy tremendous productivity and performance gains after moving to the newest tools. For more information, see [Development in AL](/dynamics365/business-central/dev-itpro/developer/devenv-dev-overview).
+Therefore, C/SIDE is discontinued for [!INCLUDE[prod_short](includes/prod_short.md)] going forward. Partners enjoy tremendous productivity and performance gains after moving to the newest tools. For more information, see [Development in AL](./developer/devenv-dev-overview.md).
 
 ## Which features are available in the modern clients and where can I find the roadmap?
 [!INCLUDE[prod_short](includes/prod_short.md)] is a highly adaptable modern business management solution. It is rich in features and options and is continuously being enhanced. The roadmap is best represented by the release plans, which are updated every six months. For more information, see [Overview of Dynamics 365 [!INCLUDE[prod_short](includes/prod_short.md)] 2019 release wave 2](/dynamics365-release-plan/2019wave2/dynamics365-business-central/).  
@@ -75,4 +75,4 @@ Therefore, C/SIDE is discontinued for [!INCLUDE[prod_short](includes/prod_short.
 [Dynamics 365 Business Central Compliance](/dynamics365/business-central/compliance/compliance-overview)  
 [FAQ for Dynamics 365 Update Policies](/dynamics365/get-started/faq-update-policy)  
 [Dynamics 365 Resources](https://dynamics.microsoft.com/resources/)  
-[Welcome to [!INCLUDE[prod_long](includes/prod_long.md)]](/dynamics365/business-central/index)  
+[Welcome to [!INCLUDE[prod_long](includes/prod_long.md)]](/dynamics365/business-central/index)

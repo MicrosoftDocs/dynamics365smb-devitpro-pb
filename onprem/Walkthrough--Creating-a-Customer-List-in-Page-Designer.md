@@ -104,7 +104,7 @@ In this walkthrough, you will learn how to create a basic page that displays a l
   
      The following illustration shows the Page Designer window.  
   
-     ![Page Designer window](media/RTCPage_Customerlist.png "RTCPage\_Customerlist")  
+     ![Page Designer window.](media/RTCPage_Customerlist.png "RTCPage\_Customerlist")  
   
 ## Saving and Running the Page  
  Now that Simon's page is complete, he wants to see how it looks. Eventually, he will add an action to another page so Kevin can access the page. But while he is still working on it, Simon can save the page and then quickly run it in the [!INCLUDE[rtc](includes/rtc_md.md)] using the following procedure.  
@@ -127,7 +127,7 @@ In this walkthrough, you will learn how to create a basic page that displays a l
   
      The [!INCLUDE[rtc](includes/rtc_md.md)] opens and displays the customer list page. The following illustration shows a customer list page.  
   
-     ![Customer List page](media/NAV_CustomerListWalk_ss2.png "NAV\_CustomerListWalk\_ss2")  
+     ![Customer List page.](media/NAV_CustomerListWalk_ss2.png "NAV\_CustomerListWalk\_ss2")  
   
 ## Next Steps  
  Next, Simon needs to add actions to the customer list page. He decides that he wants to add a Sales Order action. When selected, this action will create a new sales order.  

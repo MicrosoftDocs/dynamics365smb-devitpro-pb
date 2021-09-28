@@ -3,7 +3,7 @@ title: "Best Practices for Deprecation of Code in the Base App"
 description: "Description of best practices and guidelines for deprecating code in the Base App for Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 02/05/2021
+ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
@@ -110,6 +110,8 @@ If an action or other code element points to a now removed object, then the guid
 
 [AL Development Environment](devenv-reference-overview.md)  
 [Directives in AL](directives/devenv-directives-in-al.md)  
+[Microsoft Timeline for Deprecating Code in Business Central](devenv-deprecation-timeline.md)  
 [ObsoleteTag Property](properties/devenv-obsoletetag-property.md)  
 [ObsoleteState Property](properties/devenv-obsoletestate-property.md)  
 [ObsoleteReason Property](properties/devenv-obsoletereason-property.md)  
+[Obsolete Attribute](methods/devenv-obsolete-attribute.md)

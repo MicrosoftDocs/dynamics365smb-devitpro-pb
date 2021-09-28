@@ -3,7 +3,7 @@ title: "Language, Branding, and Images"
 description: "Guidelines on language, branding and images"
 author: a-emniel
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
@@ -50,5 +50,4 @@ Make sure to make the right reference throughout your content:
 
 ## Microsoft images 
 - You can include the [AppSource badge](https://appsource.microsoft.com/blogs/new-get-it-from-badging-for-microsoft-appsource-and-azure-marketplace-available-in-the-marketing-resources-guide) in your marketing material. 
-- Besides the AppSource badge, don’t include any Microsoft logos or icons (such as the Business Central icon or Dynamics 365 logo) in any of your marketing material. 
-
+- If you want to use the Dynamics 365 icons, you can learn about do's and don'ts [here](/dynamics365/get-started/icons). 

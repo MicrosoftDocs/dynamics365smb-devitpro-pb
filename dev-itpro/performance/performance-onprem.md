@@ -2,7 +2,7 @@
 title: "Performance of Business Central On-Premises Installations"
 description: Learn about how you can investigate and improve performance in Business Central
 ms.custom: na
-ms.date: 01/21/2021
+ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -97,7 +97,7 @@ Read more about the difference between SQL Server and Azure SQL database perform
 
 #### Using Read-Scale Out
 
-If you run the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database in a High Availability architecture, you can use the built-in **Read Scale-Out** feature in Azure SQL Database or SQL Server to load-balance read-only workloads. **Read Scale-Out** uses read-only replicas instead of sharing the primary database. This way, read-only workloads (reports, queries, and API pages) will be isolated from the main read-write workload (codeunits). They won't affect the performance of business processes.
+If you run the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database in a High Availability architecture, you can use the built-in **Read Scale-Out** feature in Azure SQL Database or SQL Server to load-balance read-only workloads. **Read Scale-Out** uses read-only replicas instead of sharing the primary database. This way, read-only workloads (reports, queries, API pages, and OData GET requests) will be isolated from the main read-write workload (codeunits). They won't affect the performance of business processes.
 
 For more information, see [Using Read Scale-Out for Better Performance](../administration/database-read-scale-out-overview.md).
 

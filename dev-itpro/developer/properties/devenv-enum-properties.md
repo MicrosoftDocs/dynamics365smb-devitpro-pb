@@ -1,7 +1,7 @@
 ---
 title: "Enum Properties"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -11,7 +11,9 @@ author: SusanneWindfeldPedersen
 ---
 
 # Enum Properties 
-This topic lists properties that apply to the [Extensible Enums](../devenv-extensible-enums.md).
+This article lists properties that apply to the [Extensible Enums](../devenv-extensible-enums.md).
+
+[!INCLUDE[properties_note](../includes/properties_note.md)]
 
 |Property Name|Applies to|
 |-------------|-----------|  

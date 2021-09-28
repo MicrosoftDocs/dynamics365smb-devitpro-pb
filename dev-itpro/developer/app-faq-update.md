@@ -1,9 +1,9 @@
 ---
 title: "FAQ about Updating your Business Central App"
 description: "Get answers to some of your questions about updating your app for Dynamics 365 Business Central"
-author: rweigel
+author: freddyk
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: edupont
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
@@ -23,6 +23,8 @@ Yes. You upload the updated app file into Partner Center and submit as normal. I
 When you submit an updated version of your app, you must increase the version number in the app's json/manifest  files. [!INCLUDE[prod_short](includes/prod_short.md)] doesn’t allow overwrites. So we need the version number increased for us to check the updated app into our service upon it passing validation.
 
 Never change the app's App ID in the json/manifest files. This is must stay the same across versions for various reasons, not least for upgrade reasons.
+
+For information about what constitutes the identity of an app, see [App Identity](devenv-app-identity.md).
 
 ## When is my updated app available for tenants to install?
 
@@ -65,6 +67,11 @@ No. The version number in the dependency listing in the json file to an app is a
 ## Why don't I see the updated version of my app in my sandbox tenant?
 
 Your tenant is on an older version of [!INCLUDE[prod_short](includes/prod_short.md)] and has not yet been upgraded to the latest version of [!INCLUDE[prod_short](includes/prod_short.md)]. The latest updated version of your app is only compatible with the latest [!INCLUDE[prod_short](includes/prod_short.md)] version and later. If you upgrade your tenant to the latest version, you can then update your app.
+
+## Is there a good way get the status of the validation as it happens?
+
+[!INCLUDE[appsource-appinsights](includes/appsource-appinsights.md)].
+
 
 ## See also
 

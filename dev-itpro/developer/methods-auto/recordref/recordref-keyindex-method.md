@@ -1,8 +1,9 @@
 ---
-title: "RecordRef.KeyIndex Method"
+title: "RecordRef.KeyIndex(Integer) Method"
+description: "Gets the KeyRef of the key that has the index specified in the table that is currently selected."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,20 +14,20 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# RecordRef.KeyIndex Method
-> **Version**: _Available from runtime version 1.0._
+# RecordRef.KeyIndex(Integer) Method
+> **Version**: _Available or changed with runtime version 1.0._
 
-Gets the KeyRef of the key that has the index specified in the table that is currently selected. The key can be composed of fields of any supported data type. Data types that are not supported include BLOBs, FlowFilters, variables, and functions. If the sorting key is set to a field that is not part of a key, then the KeyIndex is -1.
+Gets the KeyRef of the key that has the index specified in the table that is currently selected. The key can be composed of fields of any supported data type. Data types that are not supported include BLOBs, FlowFilters, variables, and functions. If the sorting key is set to a field that is not part of a key, then the KEYINDEX is -1.
 
 
 ## Syntax
-```
+```AL
 Key :=   RecordRef.KeyIndex(Index: Integer)
 ```
 ## Parameters
-*RecordRef*
-&emsp;Type: [RecordRef](recordref-data-type.md)
-An instance of the [RecordRef](recordref-data-type.md) data type.
+*RecordRef*  
+&emsp;Type: [RecordRef](recordref-data-type.md)  
+An instance of the [RecordRef](recordref-data-type.md) data type.  
 
 *Index*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
@@ -34,8 +35,8 @@ The number of the index in which you are interested.
 
 
 ## Return Value
-*Key*
-&emsp;Type: [KeyRef](../keyref/keyref-data-type.md)
+*Key*  
+&emsp;Type: [KeyRef](../keyref/keyref-data-type.md)  
 The KeyRef of the field that has the specified index.
 
 

@@ -8,7 +8,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, update, apps, versions, check for updates
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.author: jswymer
 ---
 
@@ -32,7 +32,7 @@ Like other features in the administration center, this functionality can be used
 Open the **Manage Apps** page from the environment details page. Choose **Environments** > select the environment > **Manage Apps**.
 
 > [!div class="mx-imgBorder"]
-> ![Business Central Admin Center apps](../developer/media/admin/business_central_admin_center_manage_apps.png)
+> ![Business Central Admin Center apps.](../developer/media/admin/business_central_admin_center_manage_apps.png)
 
 The **Manage Apps** lists all the apps installed on the environment and indicates whether updates are available. When first opened, the system will start checking for updates. Wait for this operation to complete.
 
@@ -56,7 +56,7 @@ We recommend you always install and test an app update on a Sandbox environment 
 The following steps provide the general flow for updating an app.
 
 1. If you don't have a sandbox environment, create one.
-    For more information, see [Create a new sandbox environment](tenant-admin-center-environments.md#create-a-sandbox-environment).
+    For more information, see [Create a new environment](tenant-admin-center-environments.md#create-a-new-environment).
 2. Open the Sandbox environment and select **Manage Apps**.
 3. On the **Manage Apps**, find the app in the list that you want to update.
 4. If the **Available Update Action** column for the app shows the **Action required** link, resolve the update requirements.

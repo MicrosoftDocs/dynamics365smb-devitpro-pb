@@ -1,8 +1,9 @@
 ---
 title: "AutoFormatType Property"
+description: "Sets a value that determines how data is formatted, together with the AL expression in the AutoFormatExpression Property."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/24/2020
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AutoFormatType Property
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Sets a value that determines how data is formatted, together with the AL expression in the AutoFormatExpression Property.
 
@@ -22,7 +23,6 @@ Sets a value that determines how data is formatted, together with the AL express
 -   Table Field
 -   Page Field
 -   Report Column
-
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -77,7 +77,7 @@ This example prefixes the decimal value with a $, includes a thousand separator,
 
 ```AL
 AutoFormatType = 1;
-AutoFormatExpression = '$<precision, 2:2><standard format, 0>;
+AutoFormatExpression = '$<precision, 2:2><standard format, 0>';
 ```
 
 ## Example 4

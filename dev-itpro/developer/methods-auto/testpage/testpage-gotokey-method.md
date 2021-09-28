@@ -1,8 +1,9 @@
 ---
-title: "TestPage.GoToKey Method"
+title: "TestPage.GoToKey([Any,...]) Method"
+description: "Finds the row in a data set on the test page that is identified by the specified values."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,36 +14,36 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# TestPage.GoToKey Method
-> **Version**: _Available from runtime version 1.0._
+# TestPage.GoToKey([Any,...]) Method
+> **Version**: _Available or changed with runtime version 1.0._
 
 Finds the row in a data set on the test page that is identified by the specified values.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  TestPage.GoToKey([Value: Any,...])
 ```
 ## Parameters
-*TestPage*
-&emsp;Type: [TestPage](testpage-data-type.md)
-An instance of the [TestPage](testpage-data-type.md) data type.
+*TestPage*  
+&emsp;Type: [TestPage](testpage-data-type.md)  
+An instance of the [TestPage](testpage-data-type.md) data type.  
 
-*Value*  
+*[Optional] Value*  
 &emsp;Type: [Any](../any/any-data-type.md)  
 The value or list of values to use to find the row. If this parameter is omitted, the value of the primary key that is defined for the underlying table is used.  
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*[Optional] Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
-The GoToKey method loops over all records until it finds the identifies row.  For each record, the [OnAfterGetCurrentRecord Trigger](../../triggers/devenv-onaftergetcurrrecord-trigger.md) is executed.  
+The GoToKey method loops over all records until it finds the identifies row.  For each record, the [OnAfterGetCurrRecord Trigger](../../triggers-auto/page/devenv-onaftergetcurrrecord-page-trigger.md) is executed.  
 
 ## See Also
 [TestPage Data Type](testpage-data-type.md)  

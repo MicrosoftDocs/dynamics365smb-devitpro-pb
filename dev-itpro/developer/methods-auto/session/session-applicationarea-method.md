@@ -1,8 +1,9 @@
 ---
-title: "Session.ApplicationArea Method"
+title: "Session.ApplicationArea([String]) Method"
+description: "Gets or sets the application areas for the current session."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,27 +14,27 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Session.ApplicationArea Method
-> **Version**: _Available from runtime version 1.0._
+# Session.ApplicationArea([String]) Method
+> **Version**: _Available or changed with runtime version 1.0._
 
 Gets or sets the application areas for the current session.
 
 
 ## Syntax
-```
+```AL
 [ApplicationArea := ]  Session.ApplicationArea([ApplicationArea: String])
 ```
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
 ## Parameters
-*ApplicationArea*  
+*[Optional] ApplicationArea*  
 &emsp;Type: [String](../string/string-data-type.md)  
 The new application areas for the current session.  
 
 
 ## Return Value
-*ApplicationArea*
-&emsp;Type: [String](../string/string-data-type.md)
+*[Optional] ApplicationArea*  
+&emsp;Type: [String](../string/string-data-type.md)  
 The application areas for the current session.
 
 

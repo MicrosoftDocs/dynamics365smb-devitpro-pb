@@ -1,8 +1,9 @@
 ---
 title: "ShowCaption Property"
+description: "Sets whether the text that is specified by the Caption Property is displayed for the control."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/24/2020
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # ShowCaption Property
-> **Version**: _Available from runtime version 4.0._
+> **Version**: _Available or changed with runtime version 3.2._
 
 Sets whether the text that is specified by the Caption Property is displayed for the control.
 
@@ -22,7 +23,6 @@ Sets whether the text that is specified by the Caption Property is displayed for
 -   Page Label
 -   Page Field
 -   Page Group
-
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

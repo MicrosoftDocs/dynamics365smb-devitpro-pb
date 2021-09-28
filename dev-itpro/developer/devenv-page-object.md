@@ -3,7 +3,7 @@ title: "Page Object"
 description: "Description of the page object in AL for Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -98,6 +98,6 @@ page 50101 SimpleCustomerCard
 [Adding Help Links from Pages, Reports, and XMLports](devenv-adding-help-links-from-pages-tables-xmlports.md)  
 [Page Extension Object](devenv-page-ext-object.md)  
 [Page, Page Fields, and Page Extension Properties](properties/devenv-page-property-overview.md)  
-[Page Properties](properties/devenv-page-properties.md)  
+[Page Properties](./properties/devenv-properties.md)  
 [Developing Extensions](devenv-dev-overview.md)  
-[Configure Context-Sensitive Help](../help/context-sensitive-help.md)  
+[Configure Context-Sensitive Help](../help/context-sensitive-help.md)

@@ -1,8 +1,9 @@
 ---
-title: "MediaSet.ImportFile Method"
+title: "MediaSet.ImportFile(String, String [, String]) Method"
+description: "Adds a media, such as a JPEG image, to the MediaSet data type field of a record for displaying the media in the client."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,8 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# MediaSet.ImportFile Method
-> **Version**: _Available from runtime version 1.0._
+# MediaSet.ImportFile(String, String [, String]) Method
+> **Version**: _Available or changed with runtime version 1.0._
 
 Adds a media, such as a JPEG image, to the MediaSet data type field of a record for displaying the media in the client. The media is imported to the database and included in a MediaSet for the record.
 
@@ -22,13 +23,13 @@ Adds a media, such as a JPEG image, to the MediaSet data type field of a record 
 > This method is supported only in Business Central on-premises.
 
 ## Syntax
-```
+```AL
 [ID := ]  MediaSet.ImportFile(Filename: String, Description: String [, MimeType: String])
 ```
 ## Parameters
-*MediaSet*
-&emsp;Type: [MediaSet](mediaset-data-type.md)
-An instance of the [MediaSet](mediaset-data-type.md) data type.
+*MediaSet*  
+&emsp;Type: [MediaSet](mediaset-data-type.md)  
+An instance of the [MediaSet](mediaset-data-type.md) data type.  
 
 *Filename*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -38,15 +39,15 @@ Specifies the full path and name of the media file to be imported.
 &emsp;Type: [String](../string/string-data-type.md)  
 Specifies text that can be used in the client to describe the media.
         
-*MimeType*  
+*[Optional] MimeType*  
 &emsp;Type: [String](../string/string-data-type.md)  
 Specifies the media content type. MIME type is used by browsers, and is an Internet standard to describe the contents of a file. The MimeType value must be a two-part string that consists of a type and subtype, such as image/jpeg or image/gif. If this parameter is not specified, the function will deduct the MIME type from the file extension. For example the MIME type for a .jpg file is image/jpeg.
           
 
 
 ## Return Value
-*ID*
-&emsp;Type: [Guid](../guid/guid-data-type.md)
+*[Optional] ID*  
+&emsp;Type: [Guid](../guid/guid-data-type.md)  
 The unique ID that is assigned to the MediaSet of the record. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

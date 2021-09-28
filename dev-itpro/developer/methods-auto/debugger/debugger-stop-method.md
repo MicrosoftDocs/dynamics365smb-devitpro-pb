@@ -1,8 +1,9 @@
 ---
-title: "Debugger.Stop Method"
+title: "Debugger.Stop() Method"
+description: "Stops execution as if the code hits an error."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,21 +14,21 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Debugger.Stop Method
-> **Version**: _Available from runtime version 1.0 until version 4.0 where it was deprecated._
+# Debugger.Stop() Method
+> **Version**: _Available or changed with runtime version 1.0 until version 4.0 where it was deprecated._
 
 Stops execution as if the code hits an error.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  Debugger.Stop()
 ```
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*[Optional] Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

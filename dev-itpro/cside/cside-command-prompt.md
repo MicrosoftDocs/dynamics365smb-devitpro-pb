@@ -2,7 +2,7 @@
 title: "Using the Development Environment from the Command Prompt"
 author: jswymer
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -179,7 +179,7 @@ finsql.exe command=createlanguage,langid=<langid>[,servername=<server>][,databas
  Specifies the standard Windows three-letter ID of the language that you want to add captions for. 
   
 ### Remarks  
- The CreateLanguage command adds a language caption entry in the [CaptionML Property](../developer/properties/devenv-CaptionML-Property.md) of the controls in the objects that you specify. By default, the caption is the same value as the [Name Property](../developer/properties/devenv-name-property.md) of the control.  
+ The CreateLanguage command adds a language caption entry in the [CaptionML Property](../developer/properties/devenv-CaptionML-Property.md) of the controls in the objects that you specify. By default, the caption is the same value as the [Name Property](../developer/properties/devenv-properties.md) of the control.  
   
 > [!NOTE]  
 >  After you run the command, you must to compile the modified objects. For more information, see [CompileObjects](#CompileObjects).  
@@ -533,5 +533,4 @@ finsql.exe command=upgradedatabase, servername=<server>, database=<database>[, l
 finsql.exe command=upgradedatabase,servername=TestComputer01\BCDEMO,database="BC Danish Database"  
 ```  
  
-## See Also  
-
+## See Also

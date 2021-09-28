@@ -1,8 +1,9 @@
 ---
-title: "JsonObject.Add Method"
+title: "JsonObject.Add(String, Char) Method"
+description: "Adds a new property to a JsonObject."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,20 +14,20 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# JsonObject.Add Method
-> **Version**: _Available from runtime version 1.0._
+# JsonObject.Add(String, Char) Method
+> **Version**: _Available or changed with runtime version 1.0._
 
 Adds a new property to a JsonObject.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  JsonObject.Add(Key: String, Value: Char)
 ```
 ## Parameters
-*JsonObject*
-&emsp;Type: [JsonObject](jsonobject-data-type.md)
-An instance of the [JsonObject](jsonobject-data-type.md) data type.
+*JsonObject*  
+&emsp;Type: [JsonObject](jsonobject-data-type.md)  
+An instance of the [JsonObject](jsonobject-data-type.md) data type.  
 
 *Key*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -37,8 +38,8 @@ An instance of the [JsonObject](jsonobject-data-type.md) data type.
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*[Optional] Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the operation was successful; otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

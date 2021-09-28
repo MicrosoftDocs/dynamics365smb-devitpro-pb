@@ -1,8 +1,9 @@
 ---
-title: "Page.ObjectId Method"
+title: "Page.ObjectId([Boolean]) Method"
+description: "Returns a string in the Page xxx format, where xxx is the caption or ID of the application object."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 07/13/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,29 +14,29 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Page.ObjectId Method
-> **Version**: _Available from runtime version 1.0._
+# Page.ObjectId([Boolean]) Method
+> **Version**: _Available or changed with runtime version 1.0._
 
 Returns a string in the "Page xxx" format, where xxx is the caption or ID of the application object.
 
 
 ## Syntax
-```
+```AL
 String :=   Page.ObjectId([UseNames: Boolean])
 ```
 ## Parameters
-*Page*
-&emsp;Type: [Page](page-data-type.md)
-An instance of the [Page](page-data-type.md) data type.
+*Page*  
+&emsp;Type: [Page](page-data-type.md)  
+An instance of the [Page](page-data-type.md) data type.  
 
-*UseNames*  
+*[Optional] UseNames*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 If **true**, the page caption is returned, else the page ID as text.  
 
 
 ## Return Value
-*String*
-&emsp;Type: [String](../string/string-data-type.md)
+*String*  
+&emsp;Type: [String](../string/string-data-type.md)  
 The text of the object
 
 
@@ -49,6 +50,9 @@ If you add the following code to a page method or trigger, then the returned str
 Message(CurrPage.ObjectId(true));  
   
 ```
+
+CurrPage is a system-defined variable. For more information, see [System-Defined Variables](../../devenv-system-defined-variables.md). 
+
 ## See Also
 [Page Data Type](page-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  

@@ -3,7 +3,7 @@ title: "Page Customization Object"
 description: "Description of the page customization object in AL for Business Central    ."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,7 +28,7 @@ The page customization object has more restrictions than the [page extension obj
 > Modifying actions in Cue groups on page extensions is not supported.
 
 > [!NOTE]  
-> `showMyCode` does not apply to page customizations. Page customizations defined in an extension with `showMyCode` set to `false` can still be copied using Designer.
+> The property `allowDebugging`, which is a setting under `resourceExposurePolicy` does not apply to page customizations. Page customizations defined in an extension with `allowDebugging` set to `false` can still be copied using Designer. For more information, see [Resource Exposure Policy Setting](devenv-security-settings-and-ip-protection.md).
 
 
 ## Snippet support

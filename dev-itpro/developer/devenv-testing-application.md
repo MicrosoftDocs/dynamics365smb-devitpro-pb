@@ -2,7 +2,7 @@
 title: "Testing the Application Overview"
 description: Leant about how to use automated tests in Business Central
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,9 +26,9 @@ The extent to which you can run automated tests will depend on your [!INCLUDE[pr
 |[!INCLUDE[prod_short](includes/prod_short.md)] solution|Environment|Testing allowed|More details|
 |-----------------------------------------------------|-----------|-------|----|
 |Online |Production||Running tests isn't allowed because it might have an adverse effect on your business. Testing can incidentally invoke external systems, like CDS, PayPal, and web hook subscriptions. Invoking these systems may slow down the solution for other users or cause data corruption.|
-||Sandbox|![check mark for feature](media/check.png)|You can use a sandbox environment to run tests manually to verify functionality on an environment. Running a large number of tests or tests that take a long time (more than 15 minutes per test method) isn't allowed. It's recommended that you don't run tests more that one or two hours a day.|
-|On-premises|Production|![check mark for feature](media/check.png)|For Business Central on-premises, running automated tests is only possible with a Partner license or a license that includes the Application Builder module.<br /><br />You can disable the ability to run tests by turning off **Enable Test Automation** (TestAutomationEnabled) on the [!INCLUDE[server](includes/server.md)] instance. For more information, see [Configuring Business Central Server - General Settings](../administration/configure-server-instance.md#Development).|
-||Container-based development environment|![check mark for feature](media/check.png)|This setup should be the default environment for running large number of tests or setting up CI/CD gates. For more information, see [Running a Container-Based Development Environment](devenv-running-container-development.md) or [Running Tests In Containers](https://freddysblog.com/2019/10/22/running-tests-in-containers-2).|
+||Sandbox|![check mark for feature.](media/check.png)|You can use a sandbox environment to run tests manually to verify functionality on an environment. Running a large number of tests or tests that take a long time (more than 15 minutes per test method) isn't allowed. It's recommended that you don't run tests more that one or two hours a day.|
+|On-premises|Production|![check mark for feature.](media/check.png)|For Business Central on-premises, running automated tests is only possible with a Partner license or a license that includes the Application Builder module.<br /><br />You can disable the ability to run tests by turning off **Enable Test Automation** (TestAutomationEnabled) on the [!INCLUDE[server](includes/server.md)] instance. For more information, see [Configuring Business Central Server - General Settings](../administration/configure-server-instance.md#Development).|
+||Container-based development environment|![check mark for feature.](media/check.png)|This setup should be the default environment for running large number of tests or setting up CI/CD gates. For more information, see [Running a Container-Based Development Environment](devenv-running-container-development.md) or [Running Tests In Containers](https://freddysblog.com/2019/10/22/running-tests-in-containers-2).|
 
 ## Test Codeunits and Test Methods 
 
@@ -46,11 +46,11 @@ Test runner codeunits are codeunits that have the [SubType Property](properties/
 
 Test runner codeunits include the following triggers:  
 
--   [OnRun Trigger](triggers/devenv-onrun-trigger.md) 
+-   [OnRun Trigger](triggers-auto/codeunit/devenv-onrun-codeunit-trigger.md) 
 
--   [OnBeforeTestRun Trigger](triggers/devenv-OnBeforeTestRun-Trigger.md)  
+-   [OnBeforeTestRun Trigger](triggers-auto/codeunit/devenv-onbeforetestrun-codeunit-trigger.md)  
 
--   [OnAfterTestRun Trigger](triggers/devenv-OnAfterTestRun-Trigger.md)  
+-   [OnAfterTestRun Trigger](triggers-auto/codeunit/devenv-onaftertestrun-codeunit-trigger.md)  
 
  In the **OnRun** trigger you enter the code to run the codeunits. It runs when you execute the codeunit and before the test methods run. You can use the **OnBeforeTestRun** and the **OnAfterTestRun** triggers to do preprocessing and postprocessing, such as initialization or logging test results.  
 
@@ -83,7 +83,7 @@ For more information, see [Creating Handler Methods](devenv-creating-handler-met
 ## ASSERTERROR Keyword
 You use `AssertError` statements in test methods to test how your application behaves under failing conditions. These statements are called positive and negative tests. The `AssertError` keyword specifies that an error is expected at run time in the statement that follows the `AssertError` keyword.
 
-If a simple or compound statement that follows the `AssertError` keyword causes an error, then execution successfully continues to the next statement in the test method. You can get the error text of the statement by using the [GETLASTERRORTEXT Method](methods-auto/system/system-getlasterrortext-method.md).
+If a simple or compound statement that follows the `AssertError` keyword causes an error, then execution successfully continues to the next statement in the test method. You can get the error text of the statement by using the [GETLASTERRORTEXT Method](methods-auto/system/system-getlasterrortext--method.md).
 
 If a statement that follows the `AssertError` keyword doesn't cause an error, then the `AssertError` statement causes the following error and the test method that is running produces a FAILURE result.
 

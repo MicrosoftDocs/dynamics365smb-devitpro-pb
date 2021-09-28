@@ -3,7 +3,7 @@ title: "Page Extension Object"
 description: "Description of the page extension object in AL for Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -75,13 +75,13 @@ pageextension 70000020 CustomerCardExtension extends "Customer Card"
 
                 trigger OnValidate();
                 begin
-                    if ShoeSize < 10 then
+                    if (ShoeSize < 10) then
                         Error('Feet too small');
                 end;
             }
         }
 
-        // Modifying the caption of the field 'Address 2'
+        // Modifying the caption of the field 'Address'
         modify("Address 2")
         {
             Caption = 'New Address 2';
@@ -171,11 +171,10 @@ pageextension 50110 CustomerCardExtension extends "Customer Card"
 
                 trigger OnValidate();
                 begin
-                    if ShoeSize < 10 then
+                    if (ShoeSize < 10) then
                         Error('Feet too small');
                 end;
             }
-
             // display-only control (without underlying datasource)
             field(ShoesInStock; 10)
             {

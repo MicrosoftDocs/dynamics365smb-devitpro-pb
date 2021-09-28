@@ -6,12 +6,17 @@ ms.reviewer: na
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ---
 
 # Configure Context-Sensitive Help
 
-A key pillar of helping users help themselves is to give them access to Help for the particular part of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] that they are working in.  
+A key pillar of helping users help themselves is to give them access to Help for the particular part of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] that they are working in. When you build an app for [!INCLUDE [prod_short](../includes/prod_short.md)] online, we expect you to provide Help for your solution that can be accessed from the *Learn more* links on tooltips. For more information, see [Help users learn more](../user-assistance.md#help-users-learn-more).  
+
+The *Learn more* links are generated based on two configuration settings:
+
+* App-level configuration of the URL
+* Page-level configuration of page-specific article
 
 ## App-level configuration
 
@@ -33,7 +38,10 @@ If your app only supports a limited number of locales, you can specify that as w
   ],
 ```
 
-The *contextSensitiveHelpUrl* and *supportedLocales* properties specify that the links to the Help for page objects in this app must go to the *mysite.com* site, but that the site only supports those two languages. All other Help calls from objects in this app will go to the default locale on the specified webserver,  in this case the equivalent of `https://mysite.com/en-GB/documentation/my-feature`.    
+The *contextSensitiveHelpUrl* and *supportedLocales* properties specify that the links to the Help for page objects in this app must go to the *mysite.com* site, but that the site only supports those two languages. All other Help calls from objects in this app will go to the default locale on the specified webserver,  in this case the equivalent of `https://mysite.com/en-GB/documentation/my-feature`.  
+
+> [!TIP]
+> For tips and tricks for how to deploy content to your own website, see the [Configuring the Help Experience for [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](../deployment/configure-help.md) and the [Custom Help Toolkit](custom-help-toolkit.md) articles.
 
 Help calls for Microsoft objects will continue to go to the *docs.microsoft.com* site.  
 
@@ -86,11 +94,11 @@ For page extensions, the value of the *ContextSensitiveHelpPage* property will a
 > [!NOTE]
 > The app.json file also contains a *help* property that is used by AppSource to specify the link that describes the app or solution.  
 
-### How it works for the base application
+## UI-to-Help mapping for the base application
 
 In the current version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)], the context-sensitive links to Help for the base application is based on a different UI-to-Help mapping that is stored in table 2000000198 **Page Documentation**. In this table, all page objects in the default version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] are listed, and have a target Help article associated with each of them. Multiple page objects can be associated with the same Help article, such as when a specific workflow involves multiple pages.  
 
-The base URL to the location of the target articles that are listed in table 2000000198 **Page Documentation** is specified at the app level as [https://docs.microsoft.com/dynamics365/business-central/](/dynamics365/business-central/). In an extension, you can overrule this URL so that all calls for Help go to your site instead. This is especially important for localization apps where all context-sensitive Help calls for that app's language must go to the provider's website. For more information, see [Configuring the Help Experience](../deployment/configure-help.md).  
+The base URL to the location of the target articles that are listed in table 2000000198 **Page Documentation** is specified at the app level as [/dynamics365/business-central/](/dynamics365/business-central/). In an extension, you can overrule this URL so that all calls for Help go to your site instead. This is especially important for localization apps where all context-sensitive Help calls for that app's language must go to the provider's website. For more information, see [Configuring the Help Experience](../deployment/configure-help.md).  
 
 ### Adding page-level UI-to-Help mapping to the system table
 

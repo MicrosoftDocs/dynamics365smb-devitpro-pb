@@ -1,7 +1,7 @@
 ---
 title: "Optimizing SQL Server Performance with Business Central"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -39,5 +39,5 @@ The following articles describe how to optimize performance in [!INCLUDE[prod_lo
 
 ## See Also  
 [Installation Considerations for Microsoft SQL Server](../deployment/installation-considerations-for-microsoft-sql-server.md)   
-[Microsoft SQL Server documentation](https://go.microsoft.com/fwlink/?LinkId=253107)  
-[SumIndexField Technology \(SIFT\)](../developer/devenv-sift-technology.md)  
+[Microsoft SQL Server documentation](/sql/sql-server/)  
+[SumIndexField Technology \(SIFT\)](../developer/devenv-sift-technology.md)

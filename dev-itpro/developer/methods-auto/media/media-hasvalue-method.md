@@ -1,8 +1,9 @@
 ---
-title: "Media.HasValue Method"
+title: "Media.HasValue() Method"
+description: "Checks whether a Media data type field in a record has been initialized with a media object and that the specified media object exists in the database."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,27 +14,27 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Media.HasValue Method
-> **Version**: _Available from runtime version 1.0._
+# Media.HasValue() Method
+> **Version**: _Available or changed with runtime version 1.0._
 
 Checks whether a Media data type field in a record has been initialized with a media object and that the specified media object exists in the database.
 
 
 ## Syntax
-```
+```AL
 HasValue :=   Media.HasValue()
 ```
 > [!NOTE]
 > This method can be invoked using property access syntax.
 
 ## Parameters
-*Media*
-&emsp;Type: [Media](media-data-type.md)
-An instance of the [Media](media-data-type.md) data type.
+*Media*  
+&emsp;Type: [Media](media-data-type.md)  
+An instance of the [Media](media-data-type.md) data type.  
 
 ## Return Value
-*HasValue*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*HasValue*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the Media data type field in a record has been initialized with a media object and the specified media object exists in the database, otherwise **false**.
 
 

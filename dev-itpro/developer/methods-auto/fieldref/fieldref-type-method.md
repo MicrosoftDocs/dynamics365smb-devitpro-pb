@@ -1,8 +1,9 @@
 ---
-title: "FieldRef.Type Method"
+title: "FieldRef.Type() Method"
+description: "Gets the data type of the field that is currently selected."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,27 +14,27 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# FieldRef.Type Method
-> **Version**: _Available from runtime version 1.0._
+# FieldRef.Type() Method
+> **Version**: _Available or changed with runtime version 1.0._
 
 Gets the data type of the field that is currently selected.
 
 
 ## Syntax
-```
+```AL
 Type :=   FieldRef.Type()
 ```
 > [!NOTE]
 > This method can be invoked using property access syntax.
 
 ## Parameters
-*FieldRef*
-&emsp;Type: [FieldRef](fieldref-data-type.md)
-An instance of the [FieldRef](fieldref-data-type.md) data type.
+*FieldRef*  
+&emsp;Type: [FieldRef](fieldref-data-type.md)  
+An instance of the [FieldRef](fieldref-data-type.md) data type.  
 
 ## Return Value
-*Type*
-&emsp;Type: [FieldType](../fieldtype/fieldtype-option.md)
+*Type*  
+&emsp;Type: [FieldType](../fieldtype/fieldtype-option.md)  
 
 
 

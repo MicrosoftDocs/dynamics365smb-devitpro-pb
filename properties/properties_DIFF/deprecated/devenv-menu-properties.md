@@ -17,6 +17,8 @@ author: SusanneWindfeldPedersen
 # Menu Properties
 Modifies a menu for a department. The menu represents a department in a company.  
 
+[!INCLUDE[properties_note](../includes/properties_note.md)]
+
 ## Properties  
 
 |Property|[!INCLUDE[bp_tabledescription](../includes/bp_tabledescription_md.md)]|  

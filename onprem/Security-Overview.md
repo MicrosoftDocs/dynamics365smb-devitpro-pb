@@ -20,7 +20,7 @@ You can use the following table as a checklist to help set up a more secure [!IN
 |Create users.|[How to: Create Microsoft Dynamics NAV Users](How-to--Create-Microsoft-Dynamics-NAV-Users.md)|  
 |Assign users to permission sets.|[How to: Define Permissions for Users](How-to--Define-Permissions-for-Users.md)|  
 |Configure Role Centers.|[Profiles and Role Centers](Profiles-and-Role-Centers.md)|  
-|Assign users to profiles.|[Managing Users and Permissions]( https://docs.microsoft.com/dynamics365/business-central/ui-how-users-permissions)|  
+|Assign users to profiles.|[Managing Users and Permissions]( /dynamics365/business-central/ui-how-users-permissions)|  
   
 ## See Also  
  [Security and Protection](Security-and-Protection.md)   

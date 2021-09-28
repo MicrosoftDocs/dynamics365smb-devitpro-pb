@@ -1,8 +1,9 @@
 ---
 title: "RequestFilterHeadingML Property"
+description: "Sets the text used as a RequestFilterHeading Property for a request page tab."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/24/2020
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,14 +15,13 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # RequestFilterHeadingML Property
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Sets the text used as a RequestFilterHeading Property for a request page tab.
 
 ## Applies to
 -   Xml Port Table Element
 -   Report Data Item
-
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -50,4 +50,4 @@ You can enter values for the **RequestFilterHeadingML** property in the followin
 ## See Also
 
 [Request Pages](../devenv-request-pages.md)  
-[Multilanguage Development](../devenv-multilanguage-development.md)
+[Multilanguage Development](/dynamics365/business-central/dev-itpro/developer/properties/devenv-work-with-translation-files)

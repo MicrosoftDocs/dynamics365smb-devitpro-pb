@@ -2,7 +2,7 @@
 author: edupont04
 ms.service: dynamics365-business-central
 ms.topic: include
-ms.date: 02/03/2021
+ms.date: 04/01/2021
 ms.author: edupont
 ---
 There are currently two available ranges that you can request. Both have some characteristics to keep in mind:

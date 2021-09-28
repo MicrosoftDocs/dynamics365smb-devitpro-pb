@@ -1,8 +1,9 @@
 ---
-title: "Report.RunRequestPage Method"
+title: "Report.RunRequestPage(Integer [, String]) Method"
+description: "Runs the request page for a report without running the report."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Report.RunRequestPage Method
-> **Version**: _Available from runtime version 1.0._
+# Report.RunRequestPage(Integer [, String]) Method
+> **Version**: _Available or changed with runtime version 1.0._
 
 Runs the request page for a report without running the report. Returns an XML string that contains the request page parameters that are entered on the request page.
 
 
 ## Syntax
-```
+```AL
 Parameters :=   Report.RunRequestPage(Number: Integer [, Parameters: String])
 ```
 ## Parameters
@@ -28,15 +29,15 @@ Parameters :=   Report.RunRequestPage(Number: Integer [, Parameters: String])
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The ID of the report for which you want to run the request page. If the report that you specify does not exist, then a run-time error occurs.
           
-*Parameters*  
+*[Optional] Parameters*  
 &emsp;Type: [String](../string/string-data-type.md)  
 A string of request page parameters as XML to use to run the report.
           
 
 
 ## Return Value
-*Parameters*
-&emsp;Type: [String](../string/string-data-type.md)
+*Parameters*  
+&emsp;Type: [String](../string/string-data-type.md)  
 XML string that contains the request page parameters that are entered on the request page
 
 

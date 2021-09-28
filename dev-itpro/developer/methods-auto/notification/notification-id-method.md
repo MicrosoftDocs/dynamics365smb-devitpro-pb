@@ -1,8 +1,9 @@
 ---
-title: "Notification.Id Method"
+title: "Notification.Id([Guid]) Method"
+description: "Specifies the identifier for a notification."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,31 +14,31 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Notification.Id Method
-> **Version**: _Available from runtime version 1.0._
+# Notification.Id([Guid]) Method
+> **Version**: _Available or changed with runtime version 1.0._
 
 Specifies the identifier for a notification.
 
 
 ## Syntax
-```
+```AL
 [Id := ]  Notification.Id([Id: Guid])
 ```
 > [!NOTE]
 > This method can be invoked using property access syntax.
 ## Parameters
-*Notification*
-&emsp;Type: [Notification](notification-data-type.md)
-An instance of the [Notification](notification-data-type.md) data type.
+*Notification*  
+&emsp;Type: [Notification](notification-data-type.md)  
+An instance of the [Notification](notification-data-type.md) data type.  
 
-*Id*  
+*[Optional] Id*  
 &emsp;Type: [Guid](../guid/guid-data-type.md)  
   
 
 
 ## Return Value
-*Id*
-&emsp;Type: [Guid](../guid/guid-data-type.md)
+*[Optional] Id*  
+&emsp;Type: [Guid](../guid/guid-data-type.md)  
 
 
 

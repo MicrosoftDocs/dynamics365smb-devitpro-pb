@@ -1,8 +1,9 @@
 ---
-title: "Record.Init Method"
+title: "Record.Init() Method"
+description: "Initializes a record in a table."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,21 +14,21 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Record.Init Method
-> **Version**: _Available from runtime version 1.0._
+# Record.Init() Method
+> **Version**: _Available or changed with runtime version 1.0._
 
 Initializes a record in a table.
 
 
 ## Syntax
-```
+```AL
  Record.Init()
 ```
 
 ## Parameters
-*Record*
-&emsp;Type: [Record](record-data-type.md)
-An instance of the [Record](record-data-type.md) data type.
+*Record*  
+&emsp;Type: [Record](record-data-type.md)  
+An instance of the [Record](record-data-type.md) data type.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -59,7 +60,7 @@ This method assigns default values to each field in the record, including the Sy
 > [!NOTE]  
 > Primary key and timestamp fields are not initialized.  
   
-After the method runs, you can change the values in any or all of the fields before you call the [Insert Method (RecordRef)](../recordref/recordref-insert-method.md) to enter the record in the table. Be sure that the fields that make up the primary key contain values that make the total primary key unique. If the primary key is not unique (such as the record already exists), then the record is rejected.  
+After the method runs, you can change the values in any or all of the fields before you call the [Insert Method (RecordRef)](../recordref/recordref-insert--method.md) to enter the record in the table. Be sure that the fields that make up the primary key contain values that make the total primary key unique. If the primary key is not unique (such as the record already exists), then the record is rejected.  
   
 The method works in the same way as the [Init Method (RecordRef)](../recordref/recordref-init-method.md).  
 

@@ -4,7 +4,7 @@ description: "Best Practices for writing AL code."
 
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 11/24/2020
+ms.date: 09/10/2021
 ms.reviewer: na
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
@@ -63,6 +63,19 @@ Use the listed abbreviations for each type of object in the file naming:
 |Dotnet    |Dotnet|
 |Profile   |Profile|
 |Interface |Interface|
+|Permission Set|PermissionSet|
+|Permission Set Extension|PermissionSetExt|
+
+
+### File naming examples
+
+For the listed objects above, these are examples of the file naming.
+
+|Object name|File name|
+|------|---------------------------|
+|codeunit 70000000 MyPrefixSalesperson|`MyPrefixSalesperson.Codeunit.al`|
+|page 70000000 MyPrefixSalesperson|`MyPrefixSalesperson.Page.al`|
+|page 70000000 MyPrefixSalesperson extends "Customer Card"|`MyPrefixSalesperson.PageExt.al`|
 
 ### Examples of object naming
 
@@ -78,7 +91,7 @@ table 70000000 MyPrefixSalesperson
 page 70000000 MyPrefixSalesperson
 ```
 
-#### Page extension
+#### Action
 
 ```
 actions
@@ -93,17 +106,6 @@ actions
 ```
 codeunit 70000000 MyPrefixSalesperson
 ```
-
-### File naming examples
-
-For the listed objects above, these are examples of the file naming.
-
-|Object name|File name|
-|------|---------------------------|
-|codeunit 70000000 MyPrefixSalesperson|`MyPrefixSalesperson.Codeunit.al`|
-|page 70000000 MyPrefixSalesperson|`MyPrefixSalesperson.Page.al`|
-|page 70000000 MyPrefixSalesperson extends "Customer Card"|`MyPrefixSalesperson.PageExt.al`|
-
 
 ## Formatting
 
@@ -132,14 +134,14 @@ page 123 PageName
     }
 
     var
-        TempCustomer: Record Customer temporary;
+        tempCustomer: Record Customer temporary;
 
     [EventSubscriber(ObjectType::Page, Page::"Item Card", 'OnAfterGetCurrRecordEvent', '', false, false)]
     local procedure OnOpenItemCard(var rec: Record Item)
     var
-        OnRecord: Option " ", Item, Contact;
+        onRecord: Option " ", Item, Contact;
     begin
-        EnablePictureAnalyzerNotification(rec."No.", OnRecord::Item);
+        EnablePictureAnalyzerNotification(rec."No.", onRecord::Item);
     end;
 }
 
@@ -186,7 +188,7 @@ In AL, objects are referenced by their object name, not by their ID.
 Page.RunModal(Page::"Customer Card", ...)
  
 var
-    Customer: Record Customer;
+    customer: Record Customer;
 ```
 
 ## Variable and field naming 
@@ -207,8 +209,8 @@ Furthermore:
 ### Example
 
 ```
-TempCustomer: Record Customer temporary;
-Vendor: Record Vendor; 
+tempCustomer: Record Customer temporary;
+vendor: Record Vendor; 
 ```
 
 ## Method declaration 
@@ -253,7 +255,7 @@ When declaring a variable or a parameter, the name of that variable or parameter
 
 ```
 var
-    Number: Integer;
+    number: Integer;
 
 local procedure MyProcedure(a: Integer; b: Integer): Integer 
 ```

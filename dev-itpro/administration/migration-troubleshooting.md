@@ -3,12 +3,12 @@ title: Troubleshooting the Cloud Migration
 description: Learn how to troubleshoot problems that you may experience with the cloud migration.
 author: dmc-dk
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms. search.keywords: cloud, edge
-ms.date: 12/10/2020
+ms.date: 09/28/2021
 ms.author: dmitrych
 ms.review: jswymer
 ---
@@ -29,14 +29,14 @@ To check the compatibility level run following query: 
 SELECT compatibility_level FROM sys.databases WHERE name = 'YourDatabaseName';  
 ```
 
-To change the compatibility level, run this query:  
+If your on-premises SQL Server instance is a supported version that allows you to change the compatibility level, you can do so with the following query. If you're using a different version, you must upgrade your current on-premises environment to met the current SQL Server compatibility requirements. For more information, see [View or Change the Compatibility Level of a Database](/sql/relational-databases/databases/view-or-change-the-compatibility-level-of-a-database?view=sql-server-ver15&preserve-view=true)
 
 ```sql
 ALTER DATABASE YourDatabaseName SET COMPATIBILITY_LEVEL = 130; 
 ```
 
 > [!NOTE]
-> You may also get the following error when compatibility level isn't set to the expected value: "A database operation failed with the following error: Invalid length parameter passed to the LEFT or SUBSTRING function."
+> You may also get the following error when compatibility level isn't set to the expected value: *A database operation failed with the following error: Invalid length parameter passed to the LEFT or SUBSTRING function.*
 
 ## Migration user
 
@@ -134,26 +134,53 @@ If you experience problems with Microsoft Integration Runtime, also see [Trouble
 
     |Option|When to use|
     |------|-----------|
-    |Dynamics 365 Business Central|Select this option if you're migrating from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)]  latest version, currently version 17|
-    |Dynamics 365 Business Central - Previous Version|Select this option if you're migrating from the an earlier supported version. [!INCLUDE [bc-cloud-versions](../includes/bc-cloud-versions.md)]|
+    |Dynamics 365 Business Central current version|Select this option if you're migrating from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)]  latest version, currently version 18.|
+    |Dynamics 365 Business Central earlier versions|Select this option if you're migrating from the an earlier supported version. [!INCLUDE [bc-cloud-versions](../includes/bc-cloud-versions.md)]|
     |Dynamics GP|Select this option if you're migrating from the Dynamics GP product.|
 
 - When migrating data from [!INCLUDE[prod_short](../developer/includes/prod_short.md)], check the `applicationVersion` field in the `$ndo$tenantdatabaseproperty` table. Set this field to the correct version in the SQL if it's blank or not up to date. The migration code uses the field's value for the following reasons:
 
   - Verifies that you're migrating from a supported version
-  - Verifies that you've selected the right product version in the **Data Migration Setup** assisted setup, like Dynamics 365 Business Central or Dynamics 365 Business Central - Previous Version.
+  - Verifies that you've selected the right product version in the **Data Migration Setup** assisted setup, **Dynamics 365 Business Central current version** or **Dynamics 365 Business Central earlier versions**.
   - Determines which upgrade code will be executed.
 
     If that field is blank, the migration can't run.  
 
-## Disabling the Cloud Migration
+## Missing or corrupted data after cloud migration
+
+> Database: on-premises
+
+If cloud migration has completed successfully, but pages in [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online are not showing the expected data, or there are duplicate record exceptions thrown for setup tables, it is most likely due to table extensions missing records that are present in the base application.  
+
+[!INCLUDE [bc-cloud-migrate-tableext](../includes/bc-cloud-migrate-tableext.md)]
+
+- Make sure the tables in your on-premises SQL Server database contain  the right data
+
+  - Run a query such as the following for the base app table and the table extension:
+
+    ```sql
+        SELECT COUNT(*)
+        FROM [dbo].[CRONUS International Ltd_$Item$<extensionID>]
+    ```
+
+  - If the migration is from the current version of [!INCLUDE [prod_short](../includes/prod_short.md)], reinstall any app that caused the problems in the on-premises database.  
+
+  - If the migration is from an earlier version of [!INCLUDE [prod_short](../includes/prod_short.md)], reinstall the relevant apps in the on-premises environment. Reinstallation of an app populates the missing rows. If reinstallation is not possible, then try one of the following options:
+
+    - Unpublish the relevant apps and sync the on-premises tenant to update the SQL Server database. For more information, see [Windows PowerShell Cmdlets for Business Central Version 19](/powershell/business-central/overview?view=businesscentral-ps-19&preserve-view=true).  
+
+    - Uninstall the relevant app from the online tenant, provided that they are no longer needed for working online. Use the [Business Central Administration Center API](administration-center-api.md#app-management) or AppSource.
+
+  - If the migration is from an earlier version of [!INCLUDE [prod_short](../includes/prod_short.md)], you must disable cloud migration and then reconfigure cloud migration. For more information, see the [Disabling the cloud migration](#disabling-the-cloud-migration) section.  
+
+## Disabling the cloud migration
 
 > Database: online
 
 When you've completed the migration, disable cloud migration by using the **Disable Cloud Migration** action on the **Cloud Migration Management** page. This action properly disengages the synchronization and cleans up the Azure Data Factory resources deployed for this migration.
 
 > [!IMPORTANT]
-> Just uninstalling the Cloud Migration apps, even with the option to remove the data, won't disable the migration in the same way. If you don't disable **Cloud Migration**, users will experience permission-related errors when they try to modify records in the migrated companies.
+> Just uninstalling the cloud migration apps, even with the option to remove the data, won't disable the migration in the same way. If you don't disable **Cloud Migration**, users will experience permission-related errors when they try to modify records in the migrated companies.
 
 ## See also
 
@@ -162,4 +189,4 @@ When you've completed the migration, disable cloud migration by using the **Disa
 [Migrate to Business Central Online from Dynamics GP](migrate-dynamics-gp.md)  
 [Upgrading from Dynamics NAV to Business Central Online](../upgrade/Upgrade-Considerations.md#online)  
 [Migrating On-Premises Data to Business Central Online](migrate-data.md)  
-[FAQ about Connecting to Business Central Online from On-Premises Solutions](faq-intelligent-cloud.md)  
+[FAQ about Connecting to Business Central Online from On-Premises Solutions](faq-migrate-data.md)  

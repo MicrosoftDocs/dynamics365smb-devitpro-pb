@@ -1,8 +1,9 @@
 ---
-title: "System.ExportObjects Method"
+title: "System.ExportObjects(String, var Record [, Integer]) Method"
+description: "Exports application objects to a file."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,8 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# System.ExportObjects Method
-> **Version**: _Available from runtime version 1.0 until version 1.0 where it was deprecated._
+# System.ExportObjects(String, var Record [, Integer]) Method
+> **Version**: _Available or changed with runtime version 1.0 until version 1.0 where it was deprecated._
 
 Exports application objects to a file.
 
@@ -22,7 +23,7 @@ Exports application objects to a file.
 > This method is supported only in Business Central on-premises.
 
 ## Syntax
-```
+```AL
  System.ExportObjects(FileName: String, var ObjectRecord: Record [, Format: Integer])
 ```
 > [!NOTE]
@@ -36,7 +37,7 @@ The path of the file to export to.
 &emsp;Type: [Record](../record/record-data-type.md)  
 A record to the Object table.
         
-*Format*  
+*[Optional] Format*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The format to use when exporting.  
 

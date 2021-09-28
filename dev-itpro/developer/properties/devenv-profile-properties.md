@@ -4,7 +4,7 @@ description: "This topic lists properties that apply to profiles specifically."
 
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,7 +15,9 @@ ms.author: solsen
 
 # Profile Properties
 
-The following topic lists properties that apply to [Profiles](../devenv-profile-object.md) specifically.
+The following article lists properties that apply to [Profiles](../devenv-profile-object.md) specifically.
+
+[!INCLUDE[properties_note](../includes/properties_note.md)]
 
 |Property Name| Object |
 |-------------|--------|

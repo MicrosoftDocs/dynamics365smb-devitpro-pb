@@ -2,7 +2,7 @@
 title: "Develop a Sales Rep Role Center for the Tablet Client"
 description: "Create a Role Center for the Business Central Tablet client for a sales representative."
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

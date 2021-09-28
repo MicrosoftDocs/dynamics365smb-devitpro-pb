@@ -1,7 +1,7 @@
 ---
 title: "Tools for Monitoring Performance Counters and Events"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,7 +18,7 @@ This topic lists some of the tools that you can use to monitor [!INCLUDE[server]
  Microsoft System Center Operations Manager, which is a component of Microsoft System Center 2012, enables you to monitor services and operations on multiple computers from a single console. The System Center Monitoring Pack for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] extends Operations Manager for monitoring computers that are running [!INCLUDE[prod_short](../developer/includes/prod_short.md)] components and services, including [!INCLUDE[server](../developer/includes/server.md)]. For more information, see [Microsoft Dynamics NAV  Management Pack for System Center Operations Manager](https://go.microsoft.com/fwlink/?LinkID=722863).  -->
 
 ## Windows Performance Monitor  
- Performance Monitor is available on Windows operating systems. You can use Performance Monitor to collect and view performance data from performance counters and trace events in real-time or from a log file. For more information [Windows Performance Monitor](https://technet.microsoft.com/library/cc749249.aspx).  
+ Performance Monitor is available on Windows operating systems. You can use Performance Monitor to collect and view performance data from performance counters and trace events in real-time or from a log file. For more information [Windows Performance Monitor](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc749249(v=ws.11)).  
 
 ## Windows Event Viewer  
  Windows Event Viewer is available on Windows operating systems. You can use Event Viewer to collect and view [!INCLUDE[server](../developer/includes/server.md)] events that are logged in the [!INCLUDE[server](../developer/includes/server.md)] channel logs in the Applications and Services Logs and Windows Application event log of the [!INCLUDE[server](../developer/includes/server.md)] computer. For more information, see [Monitoring Business Central Server Events Using Event Viewer](monitor-server-events-windows-event-log.md).  
@@ -36,4 +36,4 @@ You can also log ETW events using the Microsoft TraceEvent Library, which includ
 PerfView is a performance-analysis tool that focuses on Event Tracing for Windows information. PerfView can help you isolate performance issues that are related to [!INCLUDE[server](../developer/includes/server.md)]. To download and install PerfView, see [https://go.microsoft.com/fwlink/?LinkID=313428](https://go.microsoft.com/fwlink/?LinkID=313428).
 
 ## See Also
-[Monitoring Business Central Server Events](monitor-server-events.md)    
+[Monitoring Business Central Server Events](monitor-server-events.md)

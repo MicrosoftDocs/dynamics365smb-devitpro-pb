@@ -1,8 +1,9 @@
 ---
-title: "XmlDocument.Create Method"
+title: "XmlDocument.Create(Any,...) Method"
+description: "Creates an XmlDocument."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# XmlDocument.Create Method
-> **Version**: _Available from runtime version 1.0._
+# XmlDocument.Create(Any,...) Method
+> **Version**: _Available or changed with runtime version 1.0._
 
 Creates an XmlDocument.
 
 
 ## Syntax
-```
+```AL
 XmlDocument :=   XmlDocument.Create(Content: Any,...)
 ```
 ## Parameters
@@ -30,8 +31,8 @@ The content to add to this document.
 
 
 ## Return Value
-*XmlDocument*
-&emsp;Type: [XmlDocument](xmldocument-data-type.md)
+*XmlDocument*  
+&emsp;Type: [XmlDocument](xmldocument-data-type.md)  
 The created XmlDocument node.
 
 

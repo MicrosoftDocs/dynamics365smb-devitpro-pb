@@ -1,7 +1,7 @@
 ---
 title: "SourceTableView Property (Pages)"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ caps.latest.revision: 8
 author: SusanneWindfeldPedersen
 ---
 
-# SourceTableView Property
+# SourceTableView Property (Pages)
 > **Version**: _Available from runtime version 1.0._
 
 Sets the key, sort order, and filter you want to use to determine the view of the source table presented to the user.  

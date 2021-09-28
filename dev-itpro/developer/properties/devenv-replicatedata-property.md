@@ -1,8 +1,9 @@
 ---
 title: "ReplicateData Property"
+description: "Specifies if the table should be replicated."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/24/2020
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,13 +15,12 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # ReplicateData Property
-> **Version**: _Available from runtime version 2.0._
+> **Version**: _Available or changed with runtime version 2.0._
 
 Specifies if the table should be replicated.
 
 ## Applies to
 -   Table
-
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

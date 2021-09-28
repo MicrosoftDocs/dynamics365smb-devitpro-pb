@@ -8,13 +8,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 10/31/2020
+ms.date: 04/01/2021
 ms.author: jswymer
 ---
 
 # Analyzing Long Running AL Methods Telemetry
 
-[!INCLUDE[prod_short](../includes/2020_releasewave2.md)], version 17.1
+[!INCLUDE[prod_short](../includes/2020_releasewave2.md)], version 17.1. Available in extension telemetry starting with version 18.1.
 
 The [!INCLUDE[server](../developer/includes/server.md)] server will emit telemetry about the execution time of long running AL methods, including the time spent in the database. The signal also includes a breakdown of how much time each event subscriber added to the total time. As a partner, this data gives you insight into bad performing code and enables you to troubleshoot performance issues caused by extensions.
 
@@ -78,7 +78,6 @@ The following code snippet shows an example of the CustomDimensions.
 ## See also
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
-[Enabling Application Insights for Tenant Telemetry On-Premises](telemetry-enable-application-insights.md)  
-[Enable Sending Telemetry to Application Insights](tenant-admin-center-telemetry.md#appinsights)  
+[Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  
 [Monitoring and Analyzing Long Running SQL Queries On-Premises](monitor-long-running-sql-queries-event-log.md)  
 [The Business Central Administration Center](tenant-admin-center.md)  

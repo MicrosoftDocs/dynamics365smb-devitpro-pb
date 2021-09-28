@@ -1,7 +1,7 @@
 ---
 title: "How to: Import Objects"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/13/2021
 ms.reviewer: jswymer
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -10,16 +10,16 @@ ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 # Exporting and Importing Objects
+
 You can export and import application objects from and to the database from a file. The file must be one of the following formats:  
 
--   Object format \(.fob\)  
+- Object format \(.fob\)  
+- Text format \(.txt\)  
 
--   Text format \(.txt\)  
-
- You can export and import objects either by using the [!INCLUDE[nav_dev_long_md.md](../developer/includes/nav_dev_long_md.md)] or by running finsql.exe with the [ImportObjects](/dynamics-nav/importobjects) command.  
+You can export and import objects either by using the [!INCLUDE[nav_dev_long_md.md](../developer/includes/nav_dev_long_md.md)] or by running finsql.exe with the [ImportObjects](/dynamics-nav/importobjects) command.  
 
 > [!NOTE]  
->  To export or import objects from .txt format, you must have a developer license. To import objects from .fob format, you can have either an end-user license or a developer license.  
+> To export or import objects from .txt format, you must have a developer license. To import objects from .fob format, you can have either an end-user license or a developer license.  
 
 ### <a name="ExportObjectsDevEnv"></a>To export objects by using the development environment UI  
 
@@ -89,3 +89,5 @@ You can export and import application objects from and to the database from a fi
     
     For more information about the ImportObjects command, see [ImportObjects](cside-command-prompt.md#ImportObjects).  
 
+> [!NOTE]  
+> The `generatesymbolreference` finsql command does not work when importing objects from a .fob file. If it is used, wrong symbol references that are based on the symbol caption and not on the symbol name will be generated. The suggested workaround is to use two different commands one for importing objects from the .fob file and the other one for the `generatesymbolreference` command.

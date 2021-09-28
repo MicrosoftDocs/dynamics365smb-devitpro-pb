@@ -1,8 +1,9 @@
 ---
 title: "Data Types and Methods in AL"
+description: ""
 ms.author: solsen
 ms.custom: na
-ms.date: 12/09/2020
+ms.date: 08/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -39,7 +40,7 @@ The following data types are available as part of the AL Language. Each data typ
 |[DotNet](dotnet/dotnet-data-type.md)|Represents an unspecified .NET type.|
 |[Duration](duration/duration-data-type.md)|Represents the difference between two DateTimes. This value can be negative. It is stored as a 64-bit integer. The integer value is the number of milliseconds during the duration.|
 |[Enum](enum/enum-data-type.md)|Represents the text content of an element or attribute.|
-|[ErrorInfo](errorinfo/errorinfo-data-type.md)|Provides a structure for grouping information about an error.|
+|[ErrorInfo](errorinfo/errorinfo-data-type.md)|Provides a structure for grouping information about an error. Supported for Business Central online from runtime 8.0.|
 |[FieldRef](fieldref/fieldref-data-type.md)|Identifies a field in a table and gives you access to this field.|
 |[File](file/file-data-type.md)|Represents a file.|
 |[FilterPageBuilder](filterpagebuilder/filterpagebuilder-data-type.md)|Stores filter configurations for a filter page. A filter page is a dynamic page type that contains one or more filter controls that enables users to set filters on fields of the underlying tables.|
@@ -80,7 +81,6 @@ The following data types are available as part of the AL Language. Each data typ
 |[RequestPage](requestpage/requestpage-data-type.md)|Is a page that is run before the report starts to execute. Request pages enable end-users to specify options and filters for a report.|
 |[Session](session/session-data-type.md)|Represents a Microsoft Dynamics Business Central session.|
 |[SessionSettings](sessionsettings/sessionsettings-data-type.md)|Is a complex data type for passing user personalization settings for a client session as an object. The object contains properties that correspond to the fields in the system table **2000000073 User Personalization**, including: App ID, Company, Language ID, Locale ID, Profile ID, Scope, and Time Zone. You can use the AL methods of the SessionSettings data type to get, set, and send the user personalization settings for the current client session.|
-|[String](string/string-data-type.md)|Denotes a sequence of characters. It can be represented by a string literal, a text value or a code value.|
 |[System](system/system-data-type.md)|Is a complex data type.|
 |[Record](record/record-data-type.md)|Is a complex data type.|
 |[TaskScheduler](taskscheduler/taskscheduler-data-type.md)|Is a complex data type for creating and managing tasks in the task scheduler, which runs codeunits at scheduled times.|
@@ -116,11 +116,13 @@ The following data types are available as part of the AL Language. Each data typ
 |[XmlText](xmltext/xmltext-data-type.md)|Represents the text content of an element or attribute.|
 |[XmlWriteOptions](xmlwriteoptions/xmlwriteoptions-data-type.md)|Represents the options configuring how XML is saved.|
 |[Action](action/action-option.md)|Represents the action that the user took on the page.|
+|[AuditCategory](auditcategory/auditcategory-option.md)|Represents an audit category for IfX audit telemetry.|
 |[ClientType](clienttype/clienttype-option.md)|Represents the type of the client executing the operation.|
 |[CommitBehavior](commitbehavior/commitbehavior-option.md)|Specifies whether commit is allowed within the scope of the method.|
 |[DataClassification](dataclassification/dataclassification-option.md)|Sets the classification of the data in the table or field.|
 |[DataScope](datascope/datascope-option.md)|Identifies the scope of stored data in the isolated storage.|
 |[DefaultLayout](defaultlayout/defaultlayout-option.md)|The default layout to be used by a report.|
+|[ErrorBehavior](errorbehavior/errorbehavior-option.md)|Specifies whether errors will be collected within the scope of the method.|
 |[ErrorType](errortype/errortype-option.md)|Represents the type of error.|
 |[ExecutionContext](executioncontext/executioncontext-option.md)|Represents the context in which a session is running. In certain scenarios, for example during upgrade, the system will run a session in a special context for a limited time.|
 |[ExecutionMode](executionmode/executionmode-option.md)|The execution mode of the current session.|
@@ -131,6 +133,7 @@ The following data types are available as part of the AL Language. Each data typ
 |[PageBackgroundTaskErrorLevel](pagebackgroundtaskerrorlevel/pagebackgroundtaskerrorlevel-option.md)|Specifies how an error in the page background task appears in the client.|
 |[ReportFormat](reportformat/reportformat-option.md)|Specifies the format of the report.|
 |[SecurityFilter](securityfilter/securityfilter-option.md)|Specifies how security filters are applied to the record.|
+|[SecurityOperationResult](securityoperationresult/securityoperationresult-option.md)|Represents security audit operation result.|
 |[TableConnectionType](tableconnectiontype/tableconnectiontype-option.md)|Use variables of this data type to specify the type of connection to an external database.|
 |[TelemetryScope](telemetryscope/telemetryscope-option.md)|Represents the emission scope of the telemetry signal.|
 |[TestPermissions](testpermissions/testpermissions-option.md)|Specifies a value that can be used to determine which permission sets are used on tests that are run by test codunits or test functions.|

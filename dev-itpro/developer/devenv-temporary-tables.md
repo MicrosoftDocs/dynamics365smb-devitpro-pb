@@ -2,7 +2,7 @@
 title: "Temporary Tables"
 description: Learn about temporary tables in Business Central 
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,15 +17,15 @@ A temporary table is a temporary variable that holds a table. A temporary table 
 
 You can use a temporary table just like you use a database table. The differences between a temporary table and a database table are as follows:  
 
-- A temporary table data is not stored in the database. It's only held in memory until the table is closed.  
+- A temporary table data isn't stored in the database. It's only held in memory until the table is closed.  
 
-- The write transaction principle that applies to a database table does not apply to a temporary table.  
+- The write transaction principle that applies to a database table doesn't apply to a temporary table.  
 
 ## Advantage of using a temporary table  
 
 The advantage of using a temporary table is that all the interaction with a temporary table occurs on [!INCLUDE[prod_long](includes/prod_long.md)]. A temporary table reduces the load on both the network and the SQL database server.  
 
-When you want to do many operations on the data in a specific table in the database, you can load the data into a temporary table when you modify it. Loading the data into a temporary table speeds up the process because all the operations are done in memory on the [!INCLUDE[server](includes/server.md)].
+When you want to do many operations on the data in a specific database table, you can load the data into a temporary table when you modify it. Loading the data into a temporary table speeds up the process because all the operations are done in memory on the [!INCLUDE[server](includes/server.md)].
 
 ## Creating and using a temporary table
 
@@ -44,7 +44,7 @@ Whichever way you choose, you must create the [table object](devenv-table-object
 
 [!INCLUDE[2020_releasewave2.md](../includes/2020_releasewave2.md)]
 
-With this implementation, a physical table is not created in the database. In the table object, set the `TableType` property to `Temporary`:
+With this implementation, a physical table isn't created in the database. In the table object, set the `TableType` property to `Temporary`:
 
 ```AL
 table 50100 MyTable
@@ -58,17 +58,20 @@ table 50100 MyTable
 }
 ```
 
-This implementation has the same effect as using a temporary record variable or setting the SourceTableTemporary property on a page. But the advantage is that the table schema isn't synchronized with the database. So it does not have restrictions on breaking schema changes, like removing a field, changing its data type or length.
+This implementation has the same effect as using a temporary record variable or setting the SourceTableTemporary property on a page. But the advantage is that the table schema isn't synchronized with the database. So it doesn't have restrictions on breaking schema changes, like removing a field, changing its data type or length.
 
 It will also improve the performance of BACPAC generation using the sqlpackage command-line tool, compared to temporary tables based on temporary record variables and pages. For more information, see [Performance of BACPAC generation](../performance/performance-onprem.md#performance-of-bacpac-generation).
 
 #### Changing the table type
 
-You can change from **Normal** to **Temporary**, and the other way around. When changing **Normal** to **Temporary** the table, you will have to synchronize the extension with the database. This step will remove the table from the database. So if the table contains data, you will have to synchronize the schema using the ForceSync mode.
+You can change from **Normal** to **Temporary**, and the other way around. When changing **Normal** to **Temporary** the table, you'll have to synchronize the extension with the database. This step will remove the table from the database. So if the table contains data, you'll have to synchronize the schema using the ForceSync mode.
+
+> [!NOTE]  
+> Changing the table type is considered a destructive change. So this change can only be done with [!INCLUDE[prod_short](includes/prod_short.md)] on-premises.  
 
 ## Using a temporary record variable
 
-With this implementation, a physical table is not created in the database. You create a global or local variable of the type record and set the [Temporary Property](properties/devenv-temporary-property.md) next to it. The variable that holds a temporary table is defined just like any other global or local variable. The syntax is shown in the following example:
+With this implementation, a physical table isn't created in the database. You create a global or local variable of the type record and set the [Temporary Property](./properties/devenv-properties.md) next to it. The variable that holds a temporary table is defined just like any other global or local variable. The syntax is shown in the following example:
 
 ```AL
 var
@@ -98,16 +101,16 @@ page 50100 MyPage
 
 ## Temporary tables on reports and XMLPorts
 
-You can also use temporary tables for storing the data set that is returned by a report object or that is imported by an XMLPort. To do so, set the **UseTemporary property** to **true** on the relevant report data item or XMLPort table element. For more information, see [UseTemporary Property \(XMLports\)](properties/devenv-usetemporary-xmlport-property.md) and [UseTemporary Property \(Reports\)](properties/devenv-usetemporary-report-property.md).  
+You can also use temporary tables for storing the data set that's returned by a report object or imported by an XMLPort. To do so, set the **UseTemporary property** to **true** on the relevant report data item or XMLPort table element. For more information, see [UseTemporary Property \(XMLports\)](properties/devenv-usetemporary-xmlport-property.md) and [UseTemporary Property \(Reports\)](properties/devenv-usetemporary-report-property.md).  
 
-It's useful to use a temporary table for a report when the column data is not mapped directly to a field in the database but is instead the result of a process or operation, such as an aggregation of data from several columns. If a temporary table is not used, the data must be handled by AL code.
+Temporary tables are useful on reports when the column data isn't mapped directly to a field in the database. But instead, the data is a result of a process or operation. For example, suppose the column was an aggregation of data from several columns. If a temporary table isn't used, the data must be handled by AL code.
 
-For XMLPorts, if the data that you are importing has a different structure than the table in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] that you want to insert it into, you can import the data into a temporary table. You can then modify the data before inserting it into the database.
+For XMLPorts, if the data that you're importing has a different structure than the table in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] that you want to insert it into, you can import the data into a temporary table. You can then modify the data before inserting it into the database.
 
 ## See Also
 
 [Getting Started with AL](devenv-get-started.md)  
 [Table Object](devenv-table-object.md)  
-[Temporary Property](properties/devenv-temporary-property.md)  
+[Temporary Property](./properties/devenv-properties.md)  
 [UseTemporary Property (Report)](properties/devenv-usetemporary-report-property.md)  
-[UseTemporary Property (XMLPort)](properties/devenv-usetemporary-xmlport-property.md)  
+[UseTemporary Property (XMLPort)](properties/devenv-usetemporary-xmlport-property.md)

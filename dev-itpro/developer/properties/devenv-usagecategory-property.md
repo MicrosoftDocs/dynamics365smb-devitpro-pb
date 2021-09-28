@@ -1,8 +1,9 @@
 ---
 title: "UsageCategory Property"
+description: "Sets the department column for a searched page or report in the Web client."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/24/2020
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # UsageCategory Property
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Sets the department column for a searched page or report in the Web client.
 
@@ -26,7 +27,7 @@ Sets the department column for a searched page or report in the Web client.
 
 |Value|Description|
 |-----------|---------------------------------------|
-|**None**|The page or report is not included in a search.|
+|**None**|The page or report isn't included in a search.|
 |**Lists**|The page or report is listed as **Lists** under the **Pages and Tasks** category.|
 |**Tasks**|The page or report is listed as **Tasks** under the **Pages and Tasks** category.|
 |**ReportsAndAnalysis**|The page or report is listed as **Reports and Analysis** under the **Reports and Analysis** category.|
@@ -39,10 +40,12 @@ Sets the department column for a searched page or report in the Web client.
 
 ## Remarks
 
-If the **UsageCategory** is set to **None**, or if you do not specify **UsageCategory**:
+If the **UsageCategory** is set to **None**, or if you don't specify **UsageCategory**:
 
-- The page or report will not show up when you use the search functionality.  
-- Users will not be able to bookmark a link to the page or report object from the user interface.
+- The page or report won't show up when you use the search functionality.  
+- Users won't be able to bookmark a link to the page or report object from the user interface.
+
+The **UsageCategory** is also used to categorize pages and reports shown in the role explorer of the client. The role explorer includes two actions: **Reports and Analysis** and **Administration**. Pages and reports set to **ReportsAndAnalysis** will show when the **Reports and Analysis** action is selected. Pages and reports set to **Administration** will show when the **Administration** action is selected. For more information, see [Finding Pages with the Role Explorer](/dynamics365/business-central/ui-role-explorer).
 
 ## Syntax
 

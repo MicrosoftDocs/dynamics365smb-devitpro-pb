@@ -1,8 +1,9 @@
 ---
-title: "Text.InsStr Method"
+title: "Text.InsStr(String, String, Integer) Method"
+description: "Inserts a substring into a string."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Text.InsStr Method
-> **Version**: _Available from runtime version 1.0._
+# Text.InsStr(String, String, Integer) Method
+> **Version**: _Available or changed with runtime version 1.0._
 
 Inserts a substring into a string.
 
 
 ## Syntax
-```
+```AL
 NewString :=   Text.InsStr(String: String, SubString: String, Position: Integer)
 ```
 > [!NOTE]
@@ -40,8 +41,8 @@ Specifies where to insert SubString. Position must be greater than or equal to 1
 
 
 ## Return Value
-*NewString*
-&emsp;Type: [String](../string/string-data-type.md)
+*NewString*  
+&emsp;Type: [String](../string/string-data-type.md)  
 The input string including the specified substring
 
 

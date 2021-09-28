@@ -1,8 +1,9 @@
 ---
 title: "TextType Property"
+description: "Sets the type of text this element or attribute contains."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/24/2020
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # TextType Property
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Sets the type of text this element or attribute contains.
 
@@ -32,10 +33,6 @@ Sets the type of text this element or attribute contains.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 
-## Property Value  
-
-**BigText** if you want to display large text ; otherwise, **Text**. The default is **Text**.  
- 
 ## Syntax
 
 ```AL

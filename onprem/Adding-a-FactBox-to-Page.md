@@ -14,7 +14,7 @@ manager: edupont
 # Adding a FactBox to Page
 A FactBox is the area that is located on the right-most side of a page. This area is used to display content including other pages, charts, and system parts such as Microsoft Outlook, Notes, and Record Links. Typically, you can use a FactBox to display information that is related to an item on the main content page. For example, on a page that shows a sales order list, you can use a FactBox to show sell-to customer sales history for a selected sales order in the list. The following illustration shows a FactBox on sales order page.  
   
- ![Shows FactBox on a sales order](media/NAVRTCFactBoxOverview.png "NAVRTCFactBoxOverview")  
+ ![Shows FactBox on a sales order.](media/NAVRTCFactBoxOverview.png "NAVRTCFactBoxOverview")  
   
  A FactBox is divided into one or more parts that are arranged vertically. Each part can contain one of the following objects:  
   

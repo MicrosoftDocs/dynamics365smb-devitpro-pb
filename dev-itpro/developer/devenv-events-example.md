@@ -2,7 +2,7 @@
 title: "Event example"
 description: This article shows a simple example of how to use events in Business Central.
 ms.custom: na
-ms.date: 01/22/2021
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -43,7 +43,7 @@ pageextension 50100 MyCustomerExt extends "Customer Card"
             var
                 Publisher: Codeunit MyPublishers;
             begin
-                Publisher.OnAddressLineChanged(Address);
+                Publisher.OnAddressLineChanged(Rec.Address);
             end;
         }
     }
@@ -72,8 +72,9 @@ codeunit 50101 MySubscribers
 > This example binds the event subscriber automatically to the event. You can also bind the event subscriber manually, by setting the EventSubscriberInstance property. For more information, including an example, see [EventSubscriberInstance property](properties/devenv-eventsubscriberinstance-property.md#example).
 
 
-## See Also  
- [Publishing Events](devenv-publishing-events.md)   
+## See Also
+
+[Publishing Events](devenv-publishing-events.md)   
 [Raising Events](devenv-raising-events.md)   
 [Subscribing to Events](devenv-subscribing-to-events.md)   
 [Events [!INCLUDE[d365fin_md](includes/d365fin_md.md)]](devenv-events-in-al.md)   

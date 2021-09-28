@@ -2,7 +2,7 @@
 title: "Query Properties"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -11,7 +11,10 @@ ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 # Query Properties
-This topic lists properties that apply to the query object.  
+
+This article lists properties that apply to the query object.  
+
+[!INCLUDE[properties_note](../includes/properties_note.md)]
 
 |Property Name|Applies to|
 |-------------|-----------|  
@@ -52,8 +55,8 @@ This topic lists properties that apply to the query object.
 |[Caption Property](devenv-caption-property.md)|X| 
 |[CaptionML Property](devenv-captionml-property.md)|X|
 |[Description Property](devenv-description-property.md)|X|
-|[ID Property](devenv-id-property.md)|X|
-|[Name Property](devenv-name-property.md)|X|
+|[ID Property](./devenv-properties.md)|X|
+|[Name Property](./devenv-properties.md)|X|
 |[OrderBy Property](devenv-orderby-property.md)|X|
 |[Permissions Property](devenv-permissions-property.md)|X|
 |[TopNumberOfRows Property](devenv-topnumberofrows-property.md)|X|
@@ -66,14 +69,14 @@ This topic lists properties that apply to the query object.
 
 |Property Name|Query Object|
 |-------------|------------|
-|[DataItemTable Property](devenv-dataitemtable-property.md)|X|
+|[DataItemTable Property](./devenv-properties.md)|X|
 |[DataItemLink Property \(Query\)](devenv-dataitemlink-query-property.md)|X|
-|[DataItemLinkType Property](devenv-dataitemlink-type-property.md)|X|
+|[DataItemLinkType Property](./devenv-sqljointype-property.md)|X|
 |[Description Property](devenv-description-property.md)|X| 
-|[DataItemTableFilter Property](devenv-dataitemtable-filter-property.md)|X|
-|[ID Property](devenv-id-property.md)|X|  
-|[Indentation Property \(Query\)](devenv-indentation-query-property.md)|X|
-|[Name Property](devenv-name-property.md)|X| 
+|[DataItemTableFilter Property](./devenv-dataitemtablefilter-property.md)|X|
+|[ID Property](./devenv-properties.md)|X|  
+|[Indentation Property \(Query\)](./devenv-properties.md)|X|
+|[Name Property](./devenv-properties.md)|X| 
 
 ## Query Column Properties  
 
@@ -83,13 +86,13 @@ This topic lists properties that apply to the query object.
 |[Caption Property](devenv-caption-property.md)|X|  
 |[CaptionML Property](devenv-captionml-property.md)|X|
 |[ColumnFilter Property](devenv-columnfilter-property.md)|X|
-|[DataSource Property](devenv-datasource-property.md)|X|
+|[DataSource Property](./devenv-properties.md)|X|
 |[Description Property](devenv-description-property.md)|X|
-|[ID Property](devenv-id-property.md)|X|
-|[Indentation Property \(Query\)](devenv-indentation-query-property.md)|X|
+|[ID Property](./devenv-properties.md)|X|
+|[Indentation Property \(Query\)](./devenv-properties.md)|X|
 |[Method Property](devenv-method-property.md)|X|
-|[MethodType Property](devenv-methodtype-property.md)|X|
-|[Name Property](devenv-name-property.md)|X|
+|[MethodType Property](./devenv-properties.md)|X|
+|[Name Property](./devenv-properties.md)|X|
 |[ReverseSign Property](devenv-reversesign-property.md)|X|
 
 ## Query Filter Control Properties  
@@ -100,11 +103,11 @@ This topic lists properties that apply to the query object.
 |[Caption Property](devenv-caption-property.md)|X|
 |[CaptionML Property](devenv-captionml-property.md)|X|
 |[ColumnFilter Property](devenv-columnfilter-property.md)|X|
-|[DataSource Property](devenv-datasource-property.md)|X|
+|[DataSource Property](./devenv-properties.md)|X|
 |[Description Property](devenv-description-property.md)|X|
-|[ID Property](devenv-id-property.md)|X|
-|[Indentation Property \(Query\)](devenv-indentation-query-property.md)|X|
-|[Name Property](devenv-name-property.md)|X|
+|[ID Property](./devenv-properties.md)|X|
+|[Indentation Property \(Query\)](./devenv-properties.md)|X|
+|[Name Property](./devenv-properties.md)|X|
 
 -->
 

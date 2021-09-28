@@ -2,7 +2,7 @@
 title: Install the Business Central Mobile App
 description: Learn about prerequisites for using Business Central on-premises on mobile devices.
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -49,6 +49,9 @@ To install a working [!INCLUDE[prod_short](../developer/includes/prod_short.md)]
     If you installed Business Central, then by default, your Windows account has been added as a user.
 
 - The computer on which you install the app must meet the requirements outlined on the download page for the app.
+
+> [!IMPORTANT]
+> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] doesn't support Azure Active Directory Application Proxy, because Application Proxy doesn't fully support web sockets.
 
 ## Install the Business Central App
 

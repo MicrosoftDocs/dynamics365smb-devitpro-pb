@@ -1,8 +1,9 @@
 ---
-title: "File.CreateInStream Method"
+title: "File.CreateInStream(InStream) Method"
+description: "Creates an InStream object for a file."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,8 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# File.CreateInStream Method
-> **Version**: _Available from runtime version 1.0._
+# File.CreateInStream(InStream) Method
+> **Version**: _Available or changed with runtime version 1.0._
 
 Creates an InStream object for a file. This enables you to import or read data from the file.
 
@@ -22,15 +23,15 @@ Creates an InStream object for a file. This enables you to import or read data f
 > This method is supported only in Business Central on-premises.
 
 ## Syntax
-```
+```AL
  File.CreateInStream(InStream: InStream)
 ```
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
 ## Parameters
-*File*
-&emsp;Type: [File](file-data-type.md)
-An instance of the [File](file-data-type.md) data type.
+*File*  
+&emsp;Type: [File](file-data-type.md)  
+An instance of the [File](file-data-type.md) data type.  
 
 *InStream*  
 &emsp;Type: [InStream](../instream/instream-data-type.md)  

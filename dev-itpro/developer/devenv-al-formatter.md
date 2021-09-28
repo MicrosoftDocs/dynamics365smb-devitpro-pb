@@ -3,7 +3,7 @@ title: "AL Formatter"
 description: "Document the AL Formatter."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,11 +23,11 @@ The auto-formatter analyzes the syntax tree of the AL code that you are formatti
 ## Invoking the AL formatter
 The auto-formatter can be invoked to format an entire AL document or a pre-selected range. In an existing project, open the document that you want to format, right-click inside the document, and select **Format Document**. In the default configuration for Visual Studio Code, the command can be run using the shortcut **Alt+Shift+F**.
 
-![Format Document](media/format-document.gif)  
+![Format Document.](media/format-document.gif)  
 
 To format a range, in an already opened project, open the document that you want to modify, select the specific range to format, right-click, and select **Format Selection**. In the default configuration for Visual Studio Code, the command can be run using the shortcut **Ctrl+K**, **Ctrl+F**.
 
-![Format Selection](media/format-selection.gif)
+![Format Selection.](media/format-selection.gif)
 
 ## See Also
 

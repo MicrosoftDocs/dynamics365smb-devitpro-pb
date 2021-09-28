@@ -1,8 +1,9 @@
 ---
-title: "Media.ExportFile Method"
+title: "Media.ExportFile(String) Method"
+description: "Exports the media object (such as an image) that is currently used on record to a file on your computer or network."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,8 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Media.ExportFile Method
-> **Version**: _Available from runtime version 1.0._
+# Media.ExportFile(String) Method
+> **Version**: _Available or changed with runtime version 1.0._
 
 Exports the media object (such as an image) that is currently used on record to a file on your computer or network. On the record, the media object is referenced in a Media data type field.
 
@@ -22,13 +23,13 @@ Exports the media object (such as an image) that is currently used on record to 
 > This method is supported only in Business Central on-premises.
 
 ## Syntax
-```
+```AL
 [Result := ]  Media.ExportFile(Filename: String)
 ```
 ## Parameters
-*Media*
-&emsp;Type: [Media](media-data-type.md)
-An instance of the [Media](media-data-type.md) data type.
+*Media*  
+&emsp;Type: [Media](media-data-type.md)  
+An instance of the [Media](media-data-type.md) data type.  
 
 *Filename*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -36,8 +37,8 @@ Specifies the full path and name of the file to create for the exported media.
 
 
 ## Return Value
-*Result*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*[Optional] Result*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the media was successfully exported, otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

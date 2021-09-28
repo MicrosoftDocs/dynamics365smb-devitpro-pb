@@ -1,8 +1,9 @@
 ---
-title: "TestPart.GetField Method"
+title: "TestPart.GetField(Integer) Method"
+description: "Gets a field on a test page."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,20 +14,20 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# TestPart.GetField Method
-> **Version**: _Available from runtime version 3.0 until version 3.0 where it was deprecated._
+# TestPart.GetField(Integer) Method
+> **Version**: _Available or changed with runtime version 3.0 until version 3.0 where it was deprecated._
 
 Gets a field on a test page.
 
 
 ## Syntax
-```
+```AL
 TestField :=   TestPart.GetField(Id: Integer)
 ```
 ## Parameters
-*TestPart*
-&emsp;Type: [TestPart](testpart-data-type.md)
-An instance of the [TestPart](testpart-data-type.md) data type.
+*TestPart*  
+&emsp;Type: [TestPart](testpart-data-type.md)  
+An instance of the [TestPart](testpart-data-type.md) data type.  
 
 *Id*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
@@ -34,8 +35,8 @@ The ID of the field that you want to get.
 
 
 ## Return Value
-*TestField*
-&emsp;Type: [TestField](../testfield/testfield-data-type.md)
+*TestField*  
+&emsp;Type: [TestField](../testfield/testfield-data-type.md)  
 The field on the test page.
 
 

@@ -2,7 +2,7 @@
 title: "Separating Application Data from Business Data"
 description: Learn how to create an split your database into an application database and business database
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

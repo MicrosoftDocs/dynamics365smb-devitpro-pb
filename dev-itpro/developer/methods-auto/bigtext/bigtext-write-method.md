@@ -1,8 +1,9 @@
 ---
-title: "BigText.Write Method"
+title: "BigText.Write(OutStream) Method"
+description: "Streams a BigText object to a BLOB field in a table."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/03/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,20 +14,20 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# BigText.Write Method
-> **Version**: _Available from runtime version 1.0._
+# BigText.Write(OutStream) Method
+> **Version**: _Available or changed with runtime version 1.0._
 
 Streams a BigText object to a BLOB field in a table.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  BigText.Write(OutStream: OutStream)
 ```
 ## Parameters
-*BigText*
-&emsp;Type: [BigText](bigtext-data-type.md)
-An instance of the [BigText](bigtext-data-type.md) data type.
+*BigText*  
+&emsp;Type: [BigText](bigtext-data-type.md)  
+An instance of the [BigText](bigtext-data-type.md) data type.  
 
 *OutStream*  
 &emsp;Type: [OutStream](../outstream/outstream-data-type.md)  
@@ -35,8 +36,8 @@ The stream to which you write a BigText.
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*[Optional] Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the write transaction was successful, otherwise **false**.
       
 

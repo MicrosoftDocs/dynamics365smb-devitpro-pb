@@ -1,8 +1,9 @@
 ---
-title: "Report.DefaultLayout Method"
+title: "Report.DefaultLayout() Method"
+description: "Gets the default built-in layout type that is used on a specified report."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,25 +14,25 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Report.DefaultLayout Method
-> **Version**: _Available from runtime version 1.0._
+# Report.DefaultLayout() Method
+> **Version**: _Available or changed with runtime version 1.0._
 
 Gets the default built-in layout type that is used on a specified report.
 
 
 ## Syntax
-```
+```AL
 DefaultLayout :=   Report.DefaultLayout()
 ```
 
 ## Parameters
-*Report*
-&emsp;Type: [Report](report-data-type.md)
-An instance of the [Report](report-data-type.md) data type.
+*Report*  
+&emsp;Type: [Report](report-data-type.md)  
+An instance of the [Report](report-data-type.md) data type.  
 
 ## Return Value
-*DefaultLayout*
-&emsp;Type: [DefaultLayout](../defaultlayout/defaultlayout-option.md)
+*DefaultLayout*  
+&emsp;Type: [DefaultLayout](../defaultlayout/defaultlayout-option.md)  
 The default built-in layout type that is used on a specified report.
 
 

@@ -1,8 +1,9 @@
 ---
-title: "JsonObject.ReadFrom Method"
+title: "JsonObject.ReadFrom(InStream) Method"
+description: "Reads the JSON data from the stream into a JsonObject variable."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,20 +14,20 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# JsonObject.ReadFrom Method
-> **Version**: _Available from runtime version 1.0._
+# JsonObject.ReadFrom(InStream) Method
+> **Version**: _Available or changed with runtime version 1.0._
 
 Reads the JSON data from the stream into a JsonObject variable.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  JsonObject.ReadFrom(InStream: InStream)
 ```
 ## Parameters
-*JsonObject*
-&emsp;Type: [JsonObject](jsonobject-data-type.md)
-An instance of the [JsonObject](jsonobject-data-type.md) data type.
+*JsonObject*  
+&emsp;Type: [JsonObject](jsonobject-data-type.md)  
+An instance of the [JsonObject](jsonobject-data-type.md) data type.  
 
 *InStream*  
 &emsp;Type: [InStream](../instream/instream-data-type.md)  
@@ -34,8 +35,8 @@ The InStream object from which the JSON data will be read.
 
 
 ## Return Value
-*Ok*
-&emsp;Type: [Boolean](../boolean/boolean-data-type.md)
+*[Optional] Ok*  
+&emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the read was successful; otherwise, **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 

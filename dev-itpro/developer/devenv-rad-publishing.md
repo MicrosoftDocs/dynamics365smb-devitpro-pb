@@ -3,7 +3,7 @@ title: "Working with Rapid Application Development"
 description: "Describes what Rapid Application Development is and how you publish using RAD."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
@@ -15,6 +15,7 @@ ms.author: solsen
 Working with Visual Studio Code and [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] you can benefit from Rapid Application Development (RAD) on large code projects. RAD allows faster development on projects with a large number of files by doing a delta compilation and publishing only on those application objects that have changed during development in Visual Studio Code. RAD publishing is an interim state and does not replace a full publish. 
 
 ## How RAD works
+
 The files that have been changed by the application developer within Visual Studio Code are persisted in a special RAD (.rad) file during builds. This file is saved in the .vscode folder of the code project. RAD changes are the changes of application objects within a RAD session. Only application objects, page customization objects, and profile objects are handled for RAD. RAD changes will not be persisted during save, only during build, publish, and debug.
 
 > [!IMPORTANT]  
@@ -38,7 +39,11 @@ These files will need to be re-generated with full publishing (**Ctrl+F5**). A R
 > [!NOTE]  
 > If RAD publishing fails, then you must do a full publishing before performing another RAD publishing. The final state of an application must be built using full publishing, and never with RAD publishing.
 
+> [!NOTE]  
+> When building using RAD all translations will be ignored, even though the `"features": [ "TranslationFile" ]` setting is specified in the `app.json` file. For more information, see [Working with Translation Files](devenv-work-with-translation-files.md).
+
 ## RAD shortcuts
+
 There are two commands for starting a RAD-based action. 
 
 |Shortcut     |Description|

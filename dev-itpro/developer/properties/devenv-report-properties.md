@@ -2,7 +2,7 @@
 title: Report Properties
 description: This topic lists report properties that apply to controls of a report object.
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,10 @@ author: SusanneWindfeldPedersen
 ---
 
 # Report Properties
-This topic lists properties of the report object.  
+
+This article lists properties of the report object.  
+
+[!INCLUDE[properties_note](../includes/properties_note.md)]
 
 |Property Name|Applies to|
 |-------------|-----------|  
@@ -47,11 +50,11 @@ This topic lists properties of the report object.
 |[OptionCaption Property](devenv-optioncaption-property.md)|<ul><li>Column controls</li></ul>|
 |[OptionCaptionML Property](devenv-optioncaptionml-property.md)|<ul><li>Column controls</li></ul>|
 |[OptionMembers Property](devenv-optionmembers-report-property.md)|<ul><li>Column controls</li></ul>|
-|[OptionString Property](devenv-optionstring-property.md)|<ul><li>Column controls</li></ul>|
+|[OptionString Property](./devenv-optionmembers-field-property.md)|<ul><li>Column controls</li></ul>|
 |[PaperSourceDefaultPage Property](devenv-papersourcedefaultpage-property.md)|<ul><li>Report Object</li></ul>|
 |[PaperSourceFirstPage Property](devenv-papersourcefirstpage-property.md)|<ul><li>Report Object</li></ul>|
 |[PaperSourceLastPage Property](devenv-papersourcelastpage-property.md)|<ul><li>Report Object</li></ul>|
-|[PDFFontEmbedding Property](devenv-pdf-fontembedding-property.md)|<ul><li>Report Object</li></ul>|
+|[PDFFontEmbedding Property](./devenv-pdffontembedding-property.md)|<ul><li>Report Object</li></ul>|
 |[Permissions Property](devenv-permissions-property.md)|<ul><li>Report Object</li></ul>|
 |[PreviewMode Property](devenv-previewmode-property.md)|<ul><li>Report Object</li></ul>|
 |[PrintOnlyIfDetail Property](devenv-printonlyifdetail-property.md)|<ul><li>DataItem controls</li></ul>|
@@ -61,7 +64,7 @@ This topic lists properties of the report object.
 |[RequestFilterHeading Property](devenv-requestfilterheading-property.md)|<ul><li>DataItem controls</li></ul>|
 |[RequestFilterHeadingML Property](devenv-requestfilterheadingml-property.md)|<ul><li>DataItem controls</li></ul>|
 |[ShowPrintStatus Property](devenv-showprintstatus-property.md)|<ul><li>Report Object</li></ul>|
-|[SourceExpr Property](devenv-sourceexpr-property.md)|<ul><li>Column controls</li></ul>|
+|[SourceExpr Property](./devenv-properties.md)|<ul><li>Column controls</li></ul>|
 |[TransactionType Property](devenv-transactiontype-property.md)|<ul><li>Report Object</li></ul>|
 |[UsageCategory Property](devenv-usagecategory-property.md)|<ul><li>Report Object</li></ul>|
 |[UseRequestPage Property](devenv-userequestpage-property.md)|<ul><li>Report Object</li></ul>|
@@ -82,8 +85,8 @@ This topic lists properties of the report object.
 |[EnableExternalAssemblies Property](devenv-enableexternalassemblies-property.md)|X|
 |[EnableExternalImages Property](devenv-enableexternalimages-property.md)|X|
 |[EnableHyperlinks Property](devenv-enablehyperlinks-property.md)|X|
-|[ID Property](devenv-id-property.md)|X|
-|[Name Property](devenv-name-property.md)|X|
+|[ID Property](./devenv-properties.md)|X|
+|[Name Property](./devenv-properties.md)|X|
 |[PaperSourceDefaultPage Property](devenv-papersourcedefaultpage-property.md)|X|
 |[PaperSourceFirstPage Property](devenv-papersourcefirstpage-property.md)|X|
 |[PaperSourceLastPage Property](devenv-papersourcelastpage-property.md)|X|
@@ -93,7 +96,7 @@ This topic lists properties of the report object.
 |[TransactionType Property](devenv-transactiontype-property.md)|X|
 |[UseRequestPage Property](devenv-userequestpage-property.md)|X|
 |[UseSystemPrinter Property](devenv-usesystemprinter-property.md)|X|
-|[PDFFontEmbedding Property](devenv-pdf-fontembedding-property.md)|X|
+|[PDFFontEmbedding Property](./devenv-pdffontembedding-property.md)|X|
 |[UsageCategory Property](devenv-usagecategory-property.md)|X|
 |[ApplicationArea Property](devenv-applicationarea-property.md)|X|
 |[AccessByPermission Property](devenv-accessbypermission-property.md)|X|
@@ -105,18 +108,18 @@ This topic lists properties of the report object.
 |-------------|-------------|
 |[CalcFields Property](devenv-calcfields-property.md)|X|
 |[DataItemLink Property \(Reports\)](devenv-dataitemlink-reports-property.md)|X|
-|[DataItemLinkReference Property](devenv-dataitemlink-reference-property.md)|X|
-|[DataItemTable Property](devenv-dataitemtable-property.md)|X|
+|[DataItemLinkReference Property](./devenv-dataitemlinkreference-property.md)|X|
+|[DataItemTable Property](./devenv-properties.md)|X|
 |[DataItemTableView Property](devenv-dataitemtableview-property.md)|X|
-|[ID Property](devenv-id-property.md)|X|
-|[Indentation Property \(Reports\)](devenv-indentation-reports-property.md)|X|
+|[ID Property](./devenv-properties.md)|X|
+|[Indentation Property \(Reports\)](./devenv-properties.md)|X|
 |[MaxIteration Property](devenv-maxiteration-property.md)|X|
-|[Name Property](devenv-name-property.md)|X|
+|[Name Property](./devenv-properties.md)|X|
 |[PrintOnlyIfDetail Property](devenv-printonlyifdetail-property.md)|X|
-|[ReqFilterFields Property](devenv-reqfilterfields-property.md)|X|
-|[ReqFilterHeading Property](devenv-reqfilterheading-property.md)|X|
-|[ReqFilterHeadingML Property](devenv-reqfilterheadingml-property.md)|X|
-|[Temporary Property \(Reports\)](devenv-temporary-reports-property.md)|X|
+|[ReqFilterFields Property](./devenv-requestfilterfields-property.md)|X|
+|[ReqFilterHeading Property](./devenv-requestfilterheading-property.md)|X|
+|[ReqFilterHeadingML Property](./devenv-requestfilterheadingml-property.md)|X|
+|[Temporary Property \(Reports\)](/dynamics365/business-central/dev-itpro/developer/devenv-usetemporary-reports-property)|X|
 
 ## Column Properties  
  The following properties apply to **Column** controls of a report object.  
@@ -124,18 +127,18 @@ This topic lists properties of the report object.
 |Property Name|Report Object|
 |-------------|-------------|
 |[AutoCalcField Property](devenv-autocalcfield-property.md)|X|
-|[AutoFormatExpr Property](devenv-autoformatexpr-property.md)|X|
+|[AutoFormatExpr Property](./devenv-autoformatexpression-property.md)|X|
 |[AutoFormatType Property](devenv-autoformattype-property.md)|X|
 |[DecimalPlaces Property](devenv-decimalplaces-property.md)|X|
 |[Description Property](devenv-description-property.md)|X|
-|[ID Property](devenv-id-property.md)|X|
+|[ID Property](./devenv-properties.md)|X|
 |[IncludeCaption Property](devenv-includecaption-property.md)|X| 
-|[Indentation Property \(Reports\)](devenv-indentation-reports-property.md)|X|
-|[Name Property](devenv-name-property.md)|X|
+|[Indentation Property \(Reports\)](./devenv-properties.md)|X|
+|[Name Property](./devenv-properties.md)|X|
 |[OptionCaption Property](devenv-optioncaption-property.md)|X|
 |[OptionCaptionML Property](devenv-optioncaptionml-property.md)|X|
-|[OptionString Property](devenv-optionstring-property.md)|X|
-|[SourceExpr Property](devenv-sourceexpr-property.md)|X|
+|[OptionString Property](./devenv-optionmembers-field-property.md)|X|
+|[SourceExpr Property](./devenv-properties.md)|X|
 
 ## Report Label Properties  
  The following properties apply to **Report Labels** of a report object.  
@@ -144,8 +147,8 @@ This topic lists properties of the report object.
 |[Caption Property](devenv-caption-property.md)|X|
 |[CaptionML Property](devenv-captionml-property.md)|X|
 |[Description Property](devenv-description-property.md)|X|
-|[ID Property](devenv-id-property.md)|X|
-|[Name Property](devenv-name-property.md)|X|
+|[ID Property](./devenv-properties.md)|X|
+|[Name Property](./devenv-properties.md)|X|
 
 -->
 

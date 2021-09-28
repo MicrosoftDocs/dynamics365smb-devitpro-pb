@@ -2,7 +2,7 @@
 title: "OnAfterSetupPrinters Event"
 description: Describe the OnAfterSetupPrinters Event in Business Central. 
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -152,7 +152,7 @@ If the `papertray` attribute is empty, an error like the following error occurs:
 
 *papersourcekind*
 
-Specifies a standard paper source for the paper tray. You can set the value to any of the 14 paper sources that are supported by .NET Framework. You can see the supported paper sources at [PaperSourceKind Enum](https://docs.microsoft.com/dotnet/api/system.drawing.printing.papersourcekind). You can either use the text representation (such as `AutomaticFeed` or the corresponding number (such as `7`).
+Specifies a standard paper source for the paper tray. You can set the value to any of the 14 paper sources that are supported by .NET Framework. You can see the supported paper sources at [PaperSourceKind Enum](/dotnet/api/system.drawing.printing.papersourcekind). You can either use the text representation (such as `AutomaticFeed` or the corresponding number (such as `7`).
 
 The `papersourcekind` must be unique within the paper trays, meaning it cannot be used more than once in the list. If values for `papersourcekind` are not unique, an error like the following error occurs: 
 
@@ -160,7 +160,7 @@ The `papersourcekind` must be unique within the paper trays, meaning it cannot b
 
 *paperkind*
 
-Specifies the paper sizes supported by the printer. You set the value to any standard paper kind that .NET Framework supports. You can see the supported paper kinds at [PaperKind Enum](https://docs.microsoft.com/dotnet/api/system.drawing.printing.paperkind). You can either use the text representation (such as `A4`) or the corresponding number (such as `9`).
+Specifies the paper sizes supported by the printer. You set the value to any standard paper kind that .NET Framework supports. You can see the supported paper kinds at [PaperKind Enum](/dotnet/api/system.drawing.printing.paperkind). You can either use the text representation (such as `A4`) or the corresponding number (such as `9`).
 
 If you use any value other than `Custom` or `0`, the system will automatically take care of the `height`, `width`, and `units` attributes. For example, if you specified that `paperkind` is `A4`, then the paper dimensions are 210 mm by 297 mm. In this case, if you provide values for the `height`, `width`, and `units` attributes, the values will be ignored.
 
@@ -206,4 +206,4 @@ Specifies whether landscape orientation is supported. `true` specifies landscape
 [Events in AL](devenv-events-in-al.md)   
 [Publishing Events](devenv-publishing-events.md)   
 [Raising Events](devenv-raising-events.md)   
-[Subscribing to Events](devenv-subscribing-to-events.md)  
+[Subscribing to Events](devenv-subscribing-to-events.md)

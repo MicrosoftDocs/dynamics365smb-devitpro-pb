@@ -1,8 +1,9 @@
 ---
 title: "Database Data Type"
+description: "Provides access to common database functionality."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/09/2020
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Database Data Type
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Provides access to common database functionality.
 
@@ -44,7 +45,7 @@ The following methods are available on the Database data type.
 |[SetDefaultTableConnection(TableConnectionType, String [, Boolean])](database-setdefaulttableconnection-method.md)|Establishes a connection to an external database based on a previously registered connection of the specified type.|
 |[SetUserPassword(Guid, String)](database-setuserpassword-method.md)|Sets a password for the user iwith the given user security ID. If the given password is blank, an empty string will be stored instead of a password hash. This will prevent the user from logging in using a password. Only SUPER can call this method. Passwords cannot be set for the empty GUID or for the default Super ID.|
 |[SID([String])](database-sid-method.md)|Retrieves the security identifier (SID) of a Windows user account.|
-|[TenantId()](database-tenantid-method.md)|Gets the ID of the tenant that has started the current session. Use this method when your code must be specific about which tenant database to access in a multitenant deployment. For example, if your code imports data into a cache, you can make a cache tenant-specific by using the tenant ID as a key. Also, if you want to write code that saves documents, you can include the tenant ID in the file name or location, for example. In those cases, you can use the TENANTID method in combination with the CompanyName method to identify the company and the tenant database.|
+|[TenantId()](database-tenantid-method.md)|Gets the ID of the tenant that has started the current session. Use this method when your code must be specific about which tenant database to access in a multitenant deployment. For example, if your code imports data into a cache, you can make a cache tenant-specific by using the tenant ID as a key. Also, if you want to write code that saves documents, you can include the tenant ID in the file name or location, for example. In those cases, you can use the TENANTID method in combination with the COMPANYNAME method to identify the company and the tenant database.|
 |[UnregisterTableConnection(TableConnectionType, String)](database-unregistertableconnection-method.md)|Unregisters a table connection to an external database.|
 |[UserId()](database-userid-method.md)|Gets the user name of the user account that is logged on to the current session.|
 |[UserSecurityId()](database-usersecurityid-method.md)|Gets the unique identifier of the user that is logged on to the current session.|

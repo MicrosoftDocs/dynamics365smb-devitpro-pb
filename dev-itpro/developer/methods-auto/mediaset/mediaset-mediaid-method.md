@@ -1,8 +1,9 @@
 ---
-title: "MediaSet.MediaId Method"
+title: "MediaSet.MediaId() Method"
+description: "Gets the unique identifier that is assigned to a MediaSet of a record."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,27 +14,27 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# MediaSet.MediaId Method
-> **Version**: _Available from runtime version 1.0._
+# MediaSet.MediaId() Method
+> **Version**: _Available or changed with runtime version 1.0._
 
 Gets the unique identifier that is assigned to a MediaSet of a record. The MediaSet is a collection of media objects that are used on the record that can be displayed in the client.
 
 
 ## Syntax
-```
+```AL
 MediaId :=   MediaSet.MediaId()
 ```
 > [!NOTE]
 > This method can be invoked using property access syntax.
 
 ## Parameters
-*MediaSet*
-&emsp;Type: [MediaSet](mediaset-data-type.md)
-An instance of the [MediaSet](mediaset-data-type.md) data type.
+*MediaSet*  
+&emsp;Type: [MediaSet](mediaset-data-type.md)  
+An instance of the [MediaSet](mediaset-data-type.md) data type.  
 
 ## Return Value
-*MediaId*
-&emsp;Type: [Guid](../guid/guid-data-type.md)
+*MediaId*  
+&emsp;Type: [Guid](../guid/guid-data-type.md)  
 The GUID of MediaSet on the record.
 
 

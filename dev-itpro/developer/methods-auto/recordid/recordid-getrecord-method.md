@@ -1,8 +1,9 @@
 ---
-title: "RecordId.GetRecord Method"
+title: "RecordId.GetRecord() Method"
+description: "Gets a RecordRef that refers to the record identified by the RecordID."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,25 +14,25 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# RecordId.GetRecord Method
-> **Version**: _Available from runtime version 1.0._
+# RecordId.GetRecord() Method
+> **Version**: _Available or changed with runtime version 1.0._
 
 Gets a RecordRef that refers to the record identified by the RecordID.
 
 
 ## Syntax
-```
+```AL
 RecordRef :=   RecordId.GetRecord()
 ```
 
 ## Parameters
-*RecordId*
-&emsp;Type: [RecordId](recordid-data-type.md)
-An instance of the [RecordId](recordid-data-type.md) data type.
+*RecordId*  
+&emsp;Type: [RecordId](recordid-data-type.md)  
+An instance of the [RecordId](recordid-data-type.md) data type.  
 
 ## Return Value
-*RecordRef*
-&emsp;Type: [RecordRef](../recordref/recordref-data-type.md)
+*RecordRef*  
+&emsp;Type: [RecordRef](../recordref/recordref-data-type.md)  
 The RecordRef of the record.
 
 

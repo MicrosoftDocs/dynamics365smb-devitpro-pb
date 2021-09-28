@@ -1,8 +1,9 @@
 ---
-title: "RecordRef.Next Method"
+title: "RecordRef.Next([Integer]) Method"
+description: "Steps through a specified number of records and retrieves a record."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,29 +14,29 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# RecordRef.Next Method
-> **Version**: _Available from runtime version 1.0._
+# RecordRef.Next([Integer]) Method
+> **Version**: _Available or changed with runtime version 1.0._
 
 Steps through a specified number of records and retrieves a record.
 
 
 ## Syntax
-```
+```AL
 [Steps := ]  RecordRef.Next([Steps: Integer])
 ```
 ## Parameters
-*RecordRef*
-&emsp;Type: [RecordRef](recordref-data-type.md)
-An instance of the [RecordRef](recordref-data-type.md) data type.
+*RecordRef*  
+&emsp;Type: [RecordRef](recordref-data-type.md)  
+An instance of the [RecordRef](recordref-data-type.md) data type.  
 
-*Steps*  
+*[Optional] Steps*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 Defines the direction of the search and how many records to step include. If this parameter is greater than zero, the method will search the number of records specified in Steps forward in the table. If this parameter is less than zero, the method will search the number of records specified in Steps backward in the table. If this parameter is 0, no records are stepped over. If you do not specify this parameter, the method finds the next record.  
 
 
 ## Return Value
-*Steps*
-&emsp;Type: [Integer](../integer/integer-data-type.md)
+*[Optional] Steps*  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 Defines the direction of the search and how many records to include.
 
 

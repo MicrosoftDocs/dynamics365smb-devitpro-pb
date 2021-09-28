@@ -1,7 +1,7 @@
 ---
 title: "Authenticating Users with Active Directory Federation Services"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,7 +18,7 @@ Your deployment must meet the following prerequisites:
 
 -   Active Directory Federation Services (AD FS) is installed on the computer that you want to prepare as the federation server.
 
-    For more information, see [Active Directory Federation Services](https://go.microsoft.com/fwlink/?linkid=849251).
+    For more information, see [Active Directory Federation Services](/windows-server/identity/active-directory-federation-services).
 
     To complete the steps in this article, you will need to know the public URL for AD FS server. This URL needs to be accessible from a web browser on the computer that is running the [!INCLUDE[server](../developer/includes/server.md)] instance.
 
@@ -51,12 +51,12 @@ You must complete these steps separately for [!INCLUDE[webserver](../developer/i
 1.  Open **Server Manager** on the computer that is running AD FS, choose **AD FS** > **Tools** > **AD FS Management**.
 2.  Right-click **Relying Party Trusts**, and then choose **Add Relying Party Trust**.
 
-    ![AD FS Management](../media/ADFS_Console.png "AD FS Management")
+    ![AD FS Management.](../media/ADFS_Console.png "AD FS Management")
 
     The **Add Relying Party Trust Wizard** appears.
 3.  In the **Welcome** step, choose **Claims aware**, and then choose **Start**.
 
-    ![AD FS Relying Trust Wizard](../media/ADFS_Relying_Trust_Wizard.png "AD FS Relying Trust Wizard")
+    ![AD FS Relying Trust Wizard.](../media/ADFS_Relying_Trust_Wizard.png "AD FS Relying Trust Wizard")
 4.  In the **Select Data Source** step, choose **Enter data about the relying party manually**, and then choose **Next**.
 5.  In the **Specify Display Name** step, give the relying party a name, such as `Business Central Web Client` or `Dynamics NAV Windows Client`, and then choose **Next**.
 6.  In the **Configure Certificate** step, choose **Next** to skip specifying the token encryption certificate.
@@ -64,7 +64,7 @@ You must complete these steps separately for [!INCLUDE[webserver](../developer/i
     This assumes that the [!INCLUDE[webserver](../developer/includes/webserver.md)] is running https.
 7.  In the **Configure URL** step, select the **Enable support for the WS-federation Passive protocol** check box.
 
-    ![AD FS Configure URL](../media/ADFS_Relying_Trust_ConfigureURL.png "AD FS Configure URL")
+    ![AD FS Configure URL.](../media/ADFS_Relying_Trust_ConfigureURL.png "AD FS Configure URL")
 
     Then, in **Relying party WS-Federation Passive Control URL** field, enter the URL for the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client according to the following:
 
@@ -128,7 +128,7 @@ Based on whether you will be using SAML tokens or JSON Web Tokens (JWT), which a
 1. Choose the **Edit Claims Issuance Policy** action.
 2. In the **Edit Claim Rules** dialog box, choose **Add Rule**.
 
-    ![AD FS Edit Claims Rule](../media/ADFS_Edit_Claims-Rule.png "AD FS Edit Claims Rule")
+    ![AD FS Edit Claims Rule.](../media/ADFS_Edit_Claims-Rule.png "AD FS Edit Claims Rule")
 3. In the **Select Rule Template** step, choose **Transform an Incoming Claim** template, and then choose **Next**.
 4. In the **Configure Rule** step, set the **Claim rule name** to `name`, the **Incoming claim type** to `UPN`, and the **Outgoing claim type** to `Name`. Choose **Finish** when done.
 5. Repeat steps 2 to 4 to add another rule, except this time, set the **Claim rule name** to `objectidentifier`, the **Incoming claim type** to `Primary SID`, and the **Outgoing claim type** to:
@@ -139,14 +139,14 @@ Based on whether you will be using SAML tokens or JSON Web Tokens (JWT), which a
 
     Choose **OK** when done to close the **Edit Claim Rules** dialog box.
 
-    ![AD FS Edit Claims Rule Done](../media/ADFS_EditClaimsRule3.png "AD FS Edit Claims Rule Done")
+    ![AD FS Edit Claims Rule Done.](../media/ADFS_EditClaimsRule3.png "AD FS Edit Claims Rule Done")
 
 ### Set up support for JSON Web tokens (JWT)
 
 1.  Choose the **Edit Claims Issuance Policy** action.
 2.  In the **Edit Claim Rules** dialog box, choose **Add Rule**.
 
-    ![AD FS Edit Claims Rule](../media/ADFS_Edit_Claims-Rule.png "AD FS Edit Claims Rule")
+    ![AD FS Edit Claims Rule.](../media/ADFS_Edit_Claims-Rule.png "AD FS Edit Claims Rule")
 3.  In the **Select Rule Template** step, choose **Send Claims Using a Custom Rule** template, and then choose **Next**.
 4. Set the **Claim rule name** to `name`, and the  **Custom rule** to:
 
@@ -160,7 +160,7 @@ Based on whether you will be using SAML tokens or JSON Web Tokens (JWT), which a
     ```
 6.  Close the **Edit Claim Rules** dialog box.
 
-    ![AD FS Edit Claims Rule Done](../media/ADFS_EditClaimsRule2.png "AD FS Edit Claims Rule Done")
+    ![AD FS Edit Claims Rule Done.](../media/ADFS_EditClaimsRule2.png "AD FS Edit Claims Rule Done")
 7.  Start Window Powershell, and run the following command to define the token type for the relying party to be JWT:
 
     ```
@@ -309,4 +309,4 @@ For more information, see [Managing Users and Permissions](/dynamics365/business
 
 ## See Also  
 [Configuring Business Central Server](configure-server-instance.md)  
-[Authentication and Credential Types](Users-Credential-Types.md)  
+[Authentication and Credential Types](Users-Credential-Types.md)

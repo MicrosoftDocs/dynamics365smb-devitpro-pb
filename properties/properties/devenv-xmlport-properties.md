@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 
 
 # XMLport Properties
-This topic lists properties of the XMLport object, element, and attribute.  
+This article lists properties of the XMLport object, element, and attribute.
+
+[!INCLUDE[properties_note](../includes/properties_note.md)]  
 
 |Property Name|XMLport Object|
 |-------------|--------------|

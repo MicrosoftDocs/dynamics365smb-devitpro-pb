@@ -14,7 +14,9 @@ ms.author: solsen
 ---
 
 # View Properties
-The following topic lists properties that apply to [Views](../devenv-views.md) specifically.
+This article lists properties that apply to [Views](../devenv-views.md) specifically.
+
+[!INCLUDE[properties_note](../includes/properties_note.md)]
 
 - [Filters](devenv-filters-property.md)  
 - [OrderBy](devenv-orderby-property.md)

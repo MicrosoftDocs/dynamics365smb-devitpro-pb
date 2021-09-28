@@ -1,8 +1,9 @@
 ---
 title: "ModuleInfo Data Type"
+description: "Represents information about an application consumable from AL."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 05/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # ModuleInfo Data Type
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Represents information about an application consumable from AL.
 
@@ -29,6 +30,7 @@ The following methods are available on instances of the ModuleInfo data type.
 |[Dependencies()](moduleinfo-dependencies-method.md)|Gets the collection of application dependencies.|
 |[Id()](moduleinfo-id-method.md)|Gets the ID of the specified application.|
 |[Name()](moduleinfo-name-method.md)|Gets the name of the specified application.|
+|[PackageId()](moduleinfo-packageid-method.md)|Gets the package ID of the specified application.|
 |[Publisher()](moduleinfo-publisher-method.md)|Gets the publisher of the specified application.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

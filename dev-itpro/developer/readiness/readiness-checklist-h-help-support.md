@@ -3,7 +3,7 @@ title: "Help and Customer Support"
 description: "Guidelines on help and customer support links"
 author: a-emniel
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
@@ -30,7 +30,7 @@ Help link | You need to provide a URL for a distinct help page where prospects c
 For more information, see [Help users learn more](../../user-assistance.md#help-users-learn-more).  
 
 > [!TIP]  
-> *Example* of a help site that is set up according to our best practices: [Continia Docs](https://docs.continia.com/en-us/continia-document-capture)
+> *Example* of a help site that is set up according to our best practices: [Continia Docs](https://docs.continia.com/continia-document-capture)
 
 
 ## Support link

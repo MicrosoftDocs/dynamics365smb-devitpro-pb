@@ -1,8 +1,9 @@
 ---
 title: "ObsoleteReason Property"
+description: "Specifies why the object or element has been marked as Pending or Obsolete in the ObsoleteState property."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/24/2020
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,9 +15,9 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # ObsoleteReason Property
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
-Specifies why a table, field, or key has been marked as Pending or Obsolete in the ObsoleteState property.
+Specifies why the object or element has been marked as Pending or Obsolete in the ObsoleteState property.
 
 ## Applies to
 -   Table Field
@@ -49,7 +50,7 @@ Specifies why a table, field, or key has been marked as Pending or Obsolete in t
 -   Profile
 -   Interface
 -   Control Add In
-
+-   Permission Set
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -70,3 +71,4 @@ Use this property to inform developers about an object or element that will beco
 [ObsoleteTag](devenv-obsoletetag-property.md)  
 [Properties](devenv-properties.md)  
 [MethodType Property (Upgrade Codeunits)](../devenv-methodtype-property-upgrade-codeunits.md)  
+[Obsolete Attribute](../attributes/devenv-obsolete-attribute.md)  

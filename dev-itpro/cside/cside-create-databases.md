@@ -2,7 +2,7 @@
 title: Creating and Altering Business Central Databases in CSIDE
 description: Create a new database in the development environment and by using the New-NAVDatabase cmdlet in the Administration Shell. 
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: jswymer
 
 [!INCLUDE[2019_Spring](../includes/2019_Spring.md)]
 
-You can create new [!INCLUDE[prod_short](../developer/includes/prod_short.md)] databases in the [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] and by using the [New-NAVDatabase](https://go.microsoft.com/fwlink/?LinkID=401374) cmdlet in the [!INCLUDE[devshell](../developer/includes/devshell.md)].  
+You can create new [!INCLUDE[prod_short](../developer/includes/prod_short.md)] databases in the [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] and by using the [New-NAVDatabase](/powershell/module/microsoft.dynamics.nav.management/new-navdatabase) cmdlet in the [!INCLUDE[devshell](../developer/includes/devshell.md)].  
 
 >[!NOTE]
 > [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] is [!INCLUDE[2019_releasewave2_deprecated](../includes/2019_releasewave2_deprecated.md)].
@@ -180,4 +180,4 @@ Specifies how locking is handled in the database and specifies the start ID for 
   
 |[!INCLUDE[bp_tablefield](../developer/includes/bp_tablefield_md.md)]|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|  
 |---------------------------------|---------------------------------------|  
-|**Start ID \(UidOffset\)**|Specifies the start ID for elements on new objects. When you create a new table, page, report, codeunit, query, or XMLport, the elements have IDs that are offset by the **Start ID \(UidOffset\)** value that you specify. Object elements include containers, groups, fields, parts, DataItems, columns, filters, variables, functions, or text constants.<br /><br /> You must specify an Integer that is greater than or equal to 0.<br /><br /> The default value is 1.|  
+|**Start ID \(UidOffset\)**|Specifies the start ID for elements on new objects. When you create a new table, page, report, codeunit, query, or XMLport, the elements have IDs that are offset by the **Start ID \(UidOffset\)** value that you specify. Object elements include containers, groups, fields, parts, DataItems, columns, filters, variables, functions, or text constants.<br /><br /> You must specify an Integer that is greater than or equal to 0.<br /><br /> The default value is 1.|

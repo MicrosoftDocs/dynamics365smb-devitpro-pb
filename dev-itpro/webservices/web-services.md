@@ -2,7 +2,7 @@
 title: SOAP and ODATA Web Services
 description: Compare the features of SOAP and OData web services and know how to create and maintain these services. 
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -11,14 +11,23 @@ ms.service: "dynamics365-business-central"
 ---
 # [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Web Services
 
-[!INCLUDE[prod_short](../developer/includes/prod_short.md)] supports two types of web services: SOAP and OData. Web services are a lightweight, industry-standard way to make application functionality available to a variety of external systems and users. Developers can create and publish functionality as web services, where they expose pages, codeunits, or queries, and even enhance a page web service by using an extension codeunit. When [!INCLUDE[prod_short](../developer/includes/prod_short.md)] objects are published as web services, they are immediately available on the network.  
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] supports two types of web services: SOAP and OData. Web services are a lightweight, industry-standard way to make application functionality available to various external systems and users. Developers can create and publish functionality as web services, where they expose pages, codeunits, or queries, and even enhance a page web service by using an extension codeunit. When [!INCLUDE[prod_short](../developer/includes/prod_short.md)] objects are published as web services, they're immediately available on the network.  
 
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] web services are stateless and don't preserve the values of global variables or single-instance codeunits between calls.  
 
-[!INCLUDE[prod_short](../developer/includes/prod_short.md)] web services are stateless and do not preserve the values of global variables or single-instance codeunits between calls.  
+## Web Service Telemetry
+
+All calls to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] web services are logged to partner telemetry. Telemetry enables you to monitor which endpoints are being used and the category of the web service, like SOAP, OData, or API. You can also see possible failures, which are tracked in the HTTP status codes for the calls.
+
+For more information, see following articles:
+
+- [Analyzing Incoming Web Services Request Telemetry](../administration/telemetry-webservices-trace.md),
+- [Analyzing Web Service Access Key Telemetry](../administration/telemetry-webservices-access-key-trace.md)
+
 
 ## Comparing SOAP and OData Web Services
 
-Developers planning to create [!INCLUDE[dyn_nav](../developer/includes/dyn_nav_md.md)] web services may need to decide which type of web service is better suited to their needs. The following table shows the types of web service applications that you can create for the web service protocols.  
+Developers planning to create [!INCLUDE[prod_short](../developer/includes/prod_short.md)] web services may need to decide which type of web service is better suited to their needs. The following table shows the types of web service applications that you can create for the web service protocols.  
 
 |Object|SOAP web services|OData web services|  
 |-|-----------------------|------------------------|  
@@ -84,6 +93,8 @@ For more information, see [Multitenant Deployment Architecture](../deployment/Mu
  [SOAP Web Service URIs](SOAP-Web-Service-URIs.md)   
  [Using SystemService to Find Companies](use-systemservice-to-find-companies.md)   
  [Basic Page Operations](Basic-Page-Operations.md)   
- [Web Services Best Practices](Web-Services-Best-Practices.md)   
+ [Web Services Best Practices](Web-Services-Best-Practices.md)
+ [Analyzing Incoming Web Services Request Telemetry](../administration/telemetry-webservices-trace.md)
+ [Analyzing Web Service Access Key Telemetry](../administration/telemetry-webservices-access-key-trace.md)
  [Configuring Business Central Server](../administration/configure-server-instance.md)
   

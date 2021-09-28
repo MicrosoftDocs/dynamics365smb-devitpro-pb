@@ -3,7 +3,7 @@ title: Web Server Components Deployment Scenarios
 description: This article describes how to install and configure the Dynamics NAV Web Server components in different network topologies and the deployment scenarios.
 ms.author: jswymer
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ This section describes how to install and configure the [!INCLUDE[webservercompo
 
 -->
   
-![Architecture overview](../media/architecture-overview.png "Architecture overview")   
+![Architecture overview.](../media/architecture-overview.png "Architecture overview")   
   
 ## Deployment Scenarios 
 
@@ -32,8 +32,11 @@ The following table lists some of the most typical deployment topologies for the
 |Demonstration|Installs an end-to-end environment, complete with the base application and demonstration data for a single company, on a single computer. The installation enables access to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] from the Web client and App, and development.<br /><br />The deployment requires minimal hardware resources, preparation, and configuration.| [Deploying a Demonstration Environment](deploy-demonstration-environment.md)|  
 |Single-computer|Installs the [!INCLUDE[webserver](../developer/includes/webservercomponents.md)], [!INCLUDE[server](../developer/includes/server.md)], and the SQL Server database components on the same computer.| [Deploying in a Single Computer Environment](deploy-single-computer-environment.md)| 
 |Two-computer|Installs the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)] on one computer and the [!INCLUDE[server](../developer/includes/server.md)] and the SQL Server database components on another computer.|[Deploying in a Two Computer Environment](deploy-two-computer-environment.md)|  
-|Three-computer|Installs the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)], [!INCLUDE[server](../developer/includes/server.md)], and the SQL Server database components on separate computers.| [Deploying in a Three Computer Environment](deploy-three-computer-environment.md)| 
-  
+|Three-computer|Installs the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)], [!INCLUDE[server](../developer/includes/server.md)], and the SQL Server database components on separate computers.| [Deploying in a Three Computer Environment](deploy-three-computer-environment.md)|
+
+> [!IMPORTANT]
+> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] doesn't support Azure Active Directory Application Proxy, because Application Proxy doesn't fully support web sockets.
+
 ## See Also  
 [Install Business Central Using Setup](install-using-setup.md)  
 [Business Central Web Server Overview](web-server-overview.md)

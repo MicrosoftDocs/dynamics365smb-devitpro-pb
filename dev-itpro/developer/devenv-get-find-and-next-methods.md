@@ -3,7 +3,7 @@ title: "Get, Find, and Next Methods"
 description: Learn about the Get, Find, and Next methods in Business Central for searching records
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

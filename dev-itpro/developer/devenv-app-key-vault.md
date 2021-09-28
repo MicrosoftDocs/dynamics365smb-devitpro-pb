@@ -2,7 +2,7 @@
 title: Using Key Vault Secrets in Business Central Extensions 
 description: Describes how to use an Azure Key vault with Business Central extensions.
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -89,7 +89,7 @@ Keep the following information in mind when you use the App Key Vault feature wi
 
 ### Mark methods as NonDebuggable
 
-When your code works with secrets, whether from a key vault or from Isolated Storage, block the ability to debug relevant methods by using the [NonDebuggable Attribute](methods/devenv-nondebuggable-attribute.md). It prevents other partners from debugging into your code and seeing the secrets.
+When your code works with secrets, whether from a key vault or from Isolated Storage, block the ability to debug relevant methods by using the [NonDebuggable Attribute](attributes/devenv-nondebuggable-attribute.md). It prevents other partners from debugging into your code and seeing the secrets.
 
 ### Don't pass the App Key Vault Secret Provider to untrusted code 
 

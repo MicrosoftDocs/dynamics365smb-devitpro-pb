@@ -3,7 +3,7 @@ title: "How to: Publish and Install an Extension v2.0"
 description: "Description of the process of publishing and installing an extension"
 author: jswymer
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,7 +30,7 @@ Synchronizing an extension updates the database schema of the tenant database wi
 
     <!-- For more information, see [Business Central PowerShell Cmdlets](/powershell/business-central/overview). -->
 
-2.  To publish the extension, run the [Publish-NAVApp cmdlet](https://go.microsoft.com/fwlink/?linkid=616079).
+2.  To publish the extension, run the [Publish-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/publish-navapp).
 
     The cmdlet takes as parameters the [!INCLUDE[d365fin_server_md](includes/d365fin_server_md.md)] instance that you want to install to and the .app package file that contains the extension. The following example publishes the extension **MyExtension.app** to the **YourDynamicsNAVServer** instance.  
 
@@ -41,7 +41,7 @@ Synchronizing an extension updates the database schema of the tenant database wi
     > [!NOTE]  
     > If you are publishing a version 16.0 Microsoft extension, you'll have to include the `-SkipVerification` parameter. Otherwise, you will get the error "Publish-NAVApp : You cannot publish an extension that has not been code signed.". This issue is fixed in later versions. 
 
-3.  To synchronize the schema of a tenant database to the extension, run the [Sync-NavApp cmdlet](https://go.microsoft.com/fwlink/?linkid=846311).
+3.  To synchronize the schema of a tenant database to the extension, run the [Sync-NavApp cmdlet](/powershell/module/Microsoft.Dynamics.Nav.Apps.Management/Sync-NAVApp).
 
     The following example synchronizes the extension **MyExtension** with version number 1.0.0.0: 
    
@@ -114,4 +114,4 @@ This example upgrades the app at the specified path for the tenant with the ID *
 ## See Also  
 [Unpublishing and Uninstalling Extensions](devenv-unpublish-and-uninstall-extension-v2.md)  
 [Developing Extensions](devenv-dev-overview.md)  
-[Analyzing Extension Lifecycle Telemetry](../administration/telemetry-extension-lifecycle-trace.md)  
+[Analyzing Extension Lifecycle Telemetry](../administration/telemetry-extension-lifecycle-trace.md)

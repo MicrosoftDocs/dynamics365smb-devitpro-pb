@@ -1,8 +1,9 @@
 ---
-title: "Query.TopNumberOfRows Method"
+title: "Query.TopNumberOfRows([Integer]) Method"
+description: "Specifies the maximum number of rows to include in the resulting data set of a query."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,32 +14,32 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Query.TopNumberOfRows Method
-> **Version**: _Available from runtime version 1.0._
+# Query.TopNumberOfRows([Integer]) Method
+> **Version**: _Available or changed with runtime version 1.0._
 
 Specifies the maximum number of rows to include in the resulting data set of a query.
 
 
 ## Syntax
-```
+```AL
 [CurrentRows := ]  Query.TopNumberOfRows([NewRows: Integer])
 ```
 > [!NOTE]
 > This method can be invoked using property access syntax.
 ## Parameters
-*Query*
-&emsp;Type: [Query](query-data-type.md)
-An instance of the [Query](query-data-type.md) data type.
+*Query*  
+&emsp;Type: [Query](query-data-type.md)  
+An instance of the [Query](query-data-type.md) data type.  
 
-*NewRows*  
+*[Optional] NewRows*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The number of rows to include in the resulting data set. If you do not set the NewRows parameter, then the resulting data set will include all rows. If you set the value to 0, then there is no limit and all rows of the data set are returned.
           
 
 
 ## Return Value
-*CurrentRows*
-&emsp;Type: [Integer](../integer/integer-data-type.md)
+*[Optional] CurrentRows*  
+&emsp;Type: [Integer](../integer/integer-data-type.md)  
 Gets the current maximum number of rows included in the resulting data set
 
 

@@ -8,7 +8,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.author: edupont
 ---
 # The Business Central Administration Center
@@ -20,7 +20,7 @@ The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provid
 - [view telemetry](tenant-admin-center-telemetry.md) for events on the tenant.  
 
 > [!div class="mx-imgBorder"]
-> ![Business Central Admin Center](../developer/media/admin/business_central_admin_center.png)
+> ![Business Central Admin Center.](../developer/media/admin/business_central_admin_center.png)
 
 ## Access to the administration center
 

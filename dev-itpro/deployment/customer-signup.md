@@ -10,7 +10,7 @@ ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ---
 
 # Trials and Sign-ups for Business Central Online
@@ -18,6 +18,8 @@ ms.date: 10/01/2020
 You can invite customers and prospects to sign up for any number of Dynamics 365 apps, including [!include[prod_short](../developer/includes/prod_short.md)] online and partner solutions based on [!INCLUDE [prod_short](../developer/includes/prod_short.md)], using the same account ID. These apps will run side-by-side with each other, will use different URLs, and will be displayed as separate tiles on the *home.dynamics.com* portal.  
 
 This means that you can show prospects a preview of what you are offering based on trials of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] and other Dynamics 365 apps.  
+
+[!INCLUDE [2021_releasewave1](../includes/2021_releasewave1.md)]: Adjust the onboarding checklist to fit your solution. For more information, see [Onboarding experiences in Business Central](../administration/onboarding-experiences.md).
 
 ## Prospects and trials
 

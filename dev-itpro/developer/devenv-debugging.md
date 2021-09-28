@@ -3,7 +3,7 @@ title: "Debugging"
 description: "Overview of debugging in AL"
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 01/19/2021
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
@@ -24,7 +24,7 @@ An alternative to classic debugging, is snapshot debugging, which allows you to 
 
 There are a number of limitations to be aware of:
 
-- "External code" can only be debugged if the code has the `showMyCode` flag set. For more information, see [Security Setting and IP Protection](devenv-security-settings-and-ip-protection.md). 
+- "External code" can only be debugged if the code has the `allowDebugging` flag set to `true`. For more information, see [Resource Exposure Policy Setting](devenv-security-settings-and-ip-protection.md). 
 - The debugger launches a new client instance each time you press **F5**. If you close the debugging session, and then start a new session, this new session will rely on a new client instance. We recommend that you close the Web client instances when you close a debugging session.
 - Pausing the debugging session is not supported.
 
@@ -44,7 +44,7 @@ Set breakpoints on the external code that is not part of your original project. 
 
 In the following video illustration, the `Customer.dal` is an external file. A breakpoint is set in the `Customer.dal` file which is referenced from your AL project to stop execution at the marked point. 
 
-![Debugger](media/DebuggingAL.gif)
+![Debugger.](media/DebuggingAL.gif)
 
 For more information about **Go to Definition**, see [AL Code Navigation](devenv-al-code-navigation.md). 
 
@@ -63,7 +63,7 @@ Specify if the debugger breaks on record changes by using the `breakOnRecordWrit
 
 |Record change|AL Methods|  
 |-------------------|---------------------|  
-|Create a new record|[Insert Method (Record)](methods-auto/record/record-insert-method.md)|  
+|Create a new record|[Insert Method (Record)](methods-auto/record/record-insert--method.md)|  
 |Update an existing record|[Modify Method (Record)](methods-auto/record/record-modify-method.md), [ModifyAll Method (Record)](methods-auto/record/record-modifyall-method.md), [Rename Method (Record)](methods-auto/record/record-rename-method.md)|  
 |Delete an existing record|[Delete Method (Record)](methods-auto/record/record-delete-method.md), [DeleteAll Method (Record)](methods-auto/record/record-deleteall-method.md)|  
 
@@ -132,7 +132,7 @@ The number of SQL statements tracked by the debugger can be configured in the [!
 
 ## NonDebuggable attribute
 
-The ability to debug certain methods and/or variables can be restricted. For more information, see [NonDebuggable Attribute](methods/devenv-nondebuggable-attribute.md).
+The ability to debug certain methods and/or variables can be restricted. For more information, see [NonDebuggable Attribute](attributes/devenv-nondebuggable-attribute.md).
 
 ## See Also
 

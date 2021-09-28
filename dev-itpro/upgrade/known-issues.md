@@ -2,7 +2,7 @@
 title: Known Issues with On-premises
 description: Provides an overview of the known issues in Business Central versions
 ms.custom: na
-ms.date: 02/08/2021
+ms.date: 06/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,6 +18,149 @@ This article describes some known issues in [!INCLUDE[prod short](../developer/i
 
 > [!NOTE]
 > The article doesn't include a complete list of known issues. Instead, it addresses some common issues that you might experience or might consider when upgrading to a version. If you're aware of issues that aren't in this article, or you'd like more help, see [Resources for Help and Support](../help-and-support.md).
+
+## NavUserPassword authentication doesn't work after upgrade to version 18
+<!-- https://dynamicssmb2.visualstudio.com/Dynamics%20SMB/_workitems/edit/398164 -->
+
+> Applies to: 18.0-18.2
+
+### Problem
+
+When you upgrade to version 18 from an earlier major version, authentication that's based on NavUserPassword credential type no longer works for existing users. Passwords aren't considered valid anymore.
+
+### Impact
+
+When users try to sign in to Business Central, they'll get an error, similar to the following message:
+
+`The specified user name or password is not correct, or you do not have a valid user account in Dynamics 365 Business Central`
+
+In event viewer, you'll see the following error:
+
+`Your user name <name> or password is incorrect, or you do not have a valid account in Dynamics 365 Business Central.`
+
+### <a name="legacy"></a>Workaround
+
+To workaround this issue, activate the `EnableLegacyIterationCount` feature switch by completing these steps.
+
+1. Run the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] as an administrator.
+2. Run the following command to determine which feature switches are enabled:
+
+   ```powershell
+   Get-NAVServerConfiguration -ServerInstance $ServerInstanceName -KeyName "FeatureSwitchOverrides"
+   ```
+
+   Replace`$ServerInstanceName` with the [!INCLUDE[server](../developer/includes/server.md)] instance name.
+
+3. Depending on what was returned in step 2, run one of the following commands to enable the `EnableLegacyIterationCount` feature switch:
+
+   - If the nothing was returned, run the following command:
+
+     ```powershell
+     Set-NAVServerConfiguration -ServerInstance $ServerInstanceName -KeyName "FeatureSwitchOverrides" -KeyValue "EnableLegacyIterationCount"
+     ```
+
+   - If one or more entries were returned, run the following command:
+
+     ```powershell
+     Set-NAVServerConfiguration -ServerInstance $ServerInstanceName -KeyName "FeatureSwitchOverrides" -KeyValue ((Get-NAVServerConfiguration -ServerInstance $ServerInstanceName -KeyName "FeatureSwitchOverrides") + (",EnableLegacyIterationCount"))
+     ```
+
+4. Restart the server.
+
+   ```powershell
+   Restart-NAVServerInstance -ServerInstance $ServerInstanceName
+   ```
+
+### Notes
+
+- Activating the `EnableLegacyIterationCount` feature switch is only required if you have existing users that are set up with passwords for the NavUserPassword authentication. So if you want to set up NavUserPassword from scratch after upgrade, you don't need to enable the `EnableLegacyIterationCount` feature switch for it to work.
+- When the `EnableLegacyIterationCount` feature switch is enabled, you can create new users with passwords and assign or change passwords of existing users.
+- You can activate and deactivate the `EnableLegacyIterationCount` feature switch for the deployment at any time, but be aware of the following behavior:
+
+  - Passwords that were assigned to users when the `EnableLegacyIterationCount` feature switch was activated, won't work when the `EnableLegacyIterationCount` feature switch is deactivated.
+  - Passwords that were assigned to users when the `EnableLegacyIterationCount` feature switch was deactivated, won't work when the `EnableLegacyIterationCount` feature switch is activated.
+
+    In these cases, as an administrator, you'll have to assign new passwords to the affected users.
+
+- This feature switch is activated per server instance, so it pertains to all tenants in a multitenant deployment.
+
+## NavUserPassword authentication performance after upgrade to version 18
+
+> Applies to: 18.X
+
+### Problem
+
+When you upgrade to version 18 from an earlier major version, authentication that's based on the NavUserPassword credential type takes longer than it did in previous versions. This reason is that the password algorithm has been updated in version 18. The extra time it takes per authentication isn't noticeable to a normal user. But in a solution that has a very heavy authentication load, for example from multiple and repeated web service calls, the extra time may be significant.
+
+### Workaround
+
+One solution is to activate the `EnableLegacyIterationCount` feature switch, as described in the [previous issue](#legacy). This feature switch sets the server instance to use the same authentication algorithm used in version 17. Another solution is to change the authentication method to either OAuth or Web service access key. With these authentication methods, the password isn't stored in Business Central in a hashed format.
+
+## Data upgrades fail because of missing $system fields in the Permission and Permission Set tables
+<!-- https://dynamicssmb2.visualstudio.com/Dynamics%20SMB/_workitems/edit/400103 -->
+
+> Applies to: 18.0-18.1
+
+### Problem
+
+When you upgrade to version 18 from an earlier major version, and the [!INCLUDE[server](../developer/includes/server.md)] instance is [configured to use permission sets from data](upgrade-permissions.md#continue-using-the-permission-sets-defined-as-data), the data upgrade fails because some system fields aren't added to **Permission** and **Permission Set** tables.
+
+### Impact
+
+When you run the Start-NAVDataUpgrade or Start-NAVAppDataUpgrade against the base application, the cmdlet fails. You'll get an error message that the following columns in the **Permission Set** table are missing or invalid:
+
+- `$systemCreatedAt`
+- `$systemCreatedBy`
+- `$systemModifiedAt`
+- `$systemModifiedBy`
+
+### Workaround
+
+Upgrade to [version 18.2](https://support.microsoft.com/help/5004062) or later.
+
+## Package Microsoft .NET Core Windows Server Hosting failed with error
+
+> Applies to: All versions up to and including version 18.0.
+
+### Problem
+
+When you install [!INCLUDE [prod_short](../includes/prod_short.md)] on premises, installation may fail with the error `Package Microsoft .NET Core Windows Server Hosting failed with error`, or with error code 1638, when the installer attempts to install prerequisite components.  
+
+This problem occurs when a version of Windows Server Hosting newer than version 2.1.14 is installed on the server, because [!INCLUDE [prod_short](../includes/prod_short.md)] installer attempts to install version 2.1.14.  
+
+The issue only occurs when the currently installed version is a newer minor version, not a newer major version of Windows Server Hosting.  
+
+### Impact
+
+Installation will fail and will be rolled back.
+
+### Workaround
+
+The issue can be resolved in different ways:
+
+- Manually install Windows Server Hosting version 3 or later before you install Business Central components.
+- Uninstall Windows Server Hosting from your server before you install Business Central
+- Use the installer from Business Central version 18.1 or later. In these versions, Business Central installer skips installing Windows Server Hosting components if it determines that newer Windows Server Hosting components are already installed.
+
+
+<!-- never included 
+## <a name="azuregqlmi"></a>Can't convert version 14 and earlier databases on Azure SQL Managed Instance to later Business Central platform
+
+defect 395751 https://dynamicssmb2.visualstudio.com/Dynamics%20SMB/_workitems/edit/395751
+
+> Applies to: 15.0-15.17, 16.0-16.12, 17.0-17.6, 18.0
+
+### Problem
+
+Converting a database from one of these versions requires that your account is a member of the **dbmanager** server role in the master database, and that the database can run in single-user mode. However, Azure SQL Managed Instance doesn't support these prerequisites.
+
+### Impact
+
+You won't be able to successfully convert the database from it's current platform the later version, which prevents you from completing technical and application upgrade scenarios. If you try to convert the database, you'll get an error similar to `Alter Database set Single_User failed`.
+
+### Workaround
+
+We recommend that use the latest update for the target version &mdash; at minimum 15.18, 16.13, 17.7, or 18.1. This issue has been fixed in these versions. Otherwise, you can make a BACPAC of the database and restore it to an on-premise SQL Server. Then, run the conversion against the SQL Server database, and restore BABPAC to Azure SQL Managed Instance.-->
 
 ## <a name="keys"></a>Primary key mismatch between converted tables in local 14 versions and Microsoft Base Application
 <!--https://dynamicssmb2.visualstudio.com/Dynamics%20SMB/_workitems/edit/387119 -->
@@ -61,8 +204,8 @@ More specifically, you'll get the following errors when synchronizing the table 
 
 To avoid these errors, after converting the version 14 tables to AL, rename instances of the primary key `Key1 ` to `PK` in the affected table objects before building your extensions.
 
-- If you're following the upgrade articles listed above, do this change as part of Task 2. If you've already published the first table migration extension with the wrong key names, we recommend restore the databases and go through the upgrade again, starting from Task 2.
-- You should also make these changes if you're only doing a technical upgrade, so you won't run into problems later if eventually uptake the Microsoft Base Application.
+- If you're following the upgrade articles listed above, do this change as part of Task 2. If you've already published the first table migration extension with the wrong key names, restore the databases and go through the upgrade again, starting from Task 2.
+- Also make these changes if you're only doing a technical upgrade. This way, you won't run into problems later if eventually uptake the Microsoft Base Application.
 
 For each affected table object, do the following steps:
 
@@ -182,7 +325,7 @@ There are two workarounds for this issue:
     2. Under **Info**, select **Download package**.
     3. Extract the contents of the nupkg file to a folder.
 
-        There are different ways to extract the content of nupkg file. An easy way is to change the file extension from *.nupkg* to *.zip*. Then, extract the files like you would do with any .zip file.
+        There are different ways to extract the content of nupkg file. An easy way is to change the file extension from *\.nupkg* to *\.zip*. Then, extract the files like you would do with any .zip file.
 
     4. Copy the files in the **\lib\net45** folder to the **Service** folder of the [!INCLUDE[server](../developer/includes/server.md)] installation. Replace the existing files when prompted.
 

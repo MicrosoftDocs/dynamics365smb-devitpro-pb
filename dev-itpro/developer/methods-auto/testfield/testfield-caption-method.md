@@ -1,8 +1,9 @@
 ---
-title: "TestField.Caption Method"
+title: "TestField.Caption() Method"
+description: "Gets the current caption of the field as a String."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,27 +14,27 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# TestField.Caption Method
-> **Version**: _Available from runtime version 1.0._
+# TestField.Caption() Method
+> **Version**: _Available or changed with runtime version 1.0._
 
 Gets the current caption of the field as a String.
 
 
 ## Syntax
-```
+```AL
 Result :=   TestField.Caption()
 ```
 > [!NOTE]
 > This method can be invoked using property access syntax.
 
 ## Parameters
-*TestField*
-&emsp;Type: [TestField](testfield-data-type.md)
-An instance of the [TestField](testfield-data-type.md) data type.
+*TestField*  
+&emsp;Type: [TestField](testfield-data-type.md)  
+An instance of the [TestField](testfield-data-type.md) data type.  
 
 ## Return Value
-*Result*
-&emsp;Type: [String](../string/string-data-type.md)
+*Result*  
+&emsp;Type: [String](../string/string-data-type.md)  
 The current caption of the field as a String.
 
 
@@ -42,7 +43,7 @@ The current caption of the field as a String.
 ## Remarks  
 Caption returns the caption of a field. Caption first looks for a [CaptionML Property](../../properties/devenv-captionml-property.md).  
   
-If it does not find one, it will use the [Name Property](../../properties/devenv-name-property.md). This means that Caption is enabled for multilanguage functionality.  
+If it does not find one, it will use the [Name Property](../../properties/devenv-properties.md). This means that Caption is enabled for multilanguage functionality.  
   
 This method is similar to the [FieldCaption Method \(Record\)](../record/record-fieldcaption-method.md) method.  
   

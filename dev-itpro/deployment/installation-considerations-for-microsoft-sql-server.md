@@ -2,7 +2,7 @@
 title: "Installation Considerations"
 description: Describes the requirements for installing and configuring Microsoft SQL Server to work with Business Central.
 ms.custom: na
-ms.date: 10/29/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -130,9 +130,9 @@ You can deploy a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] dat
  For more information, see [Deploying a Business Central Database to Azure SQL Database](deploy-database-azure-sql-database.md).  
 
 ## Data Encryption between [!INCLUDE[server](../developer/includes/server.md)] and SQL Server  
- When SQL Server and [!INCLUDE[server](../developer/includes/server.md)] are running on different computers, you can make this data channel more secure by encrypting the connection with IPSec. \(Other encryption options are not supported.\) For information on how to do this, see [Encrypting Connections to SQL Server](https://go.microsoft.com/fwlink/?LinkId=147732), which is part of SQL Server 2008 Books Online in MSDN library.  
+ When SQL Server and [!INCLUDE[server](../developer/includes/server.md)] are running on different computers, you can make this data channel more secure by encrypting the connection with IPSec. \(Other encryption options are not supported.\) For information on how to do this, see [Encrypting Connections to SQL Server](/previous-versions/sql/sql-server-2008-r2/ms189067(v=sql.105)), which is part of SQL Server 2008 Books Online in MSDN library.  
 
 ## See Also  
  [Data Access](../administration/optimize-sql-data-access.md)    
  [Troubleshooting: SQL Server Connection Problems](../administration/Troubleshooting-SQL-Server-Connection-Problems.md)   
- [Deployment](Deployment.md)  
+ [Deployment](Deployment.md)

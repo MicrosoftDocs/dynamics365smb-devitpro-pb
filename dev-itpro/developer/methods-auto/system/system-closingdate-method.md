@@ -1,8 +1,9 @@
 ---
-title: "System.ClosingDate Method"
+title: "System.ClosingDate(Date) Method"
+description: "Gets the closing date for a Date Data Type."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,14 +14,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# System.ClosingDate Method
-> **Version**: _Available from runtime version 1.0._
+# System.ClosingDate(Date) Method
+> **Version**: _Available or changed with runtime version 1.0._
 
 Gets the closing date for a Date Data Type.
 
 
 ## Syntax
-```
+```AL
 ClosingDate :=   System.ClosingDate(Date: Date)
 ```
 > [!NOTE]
@@ -32,8 +33,8 @@ The input date.
 
 
 ## Return Value
-*ClosingDate*
-&emsp;Type: [Date](../date/date-data-type.md)
+*ClosingDate*  
+&emsp;Type: [Date](../date/date-data-type.md)  
 
 
 

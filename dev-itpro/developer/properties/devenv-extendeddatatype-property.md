@@ -1,8 +1,9 @@
 ---
 title: "ExtendedDatatype Property"
+description: "Sets the extended data type of a control."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/24/2020
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # ExtendedDatatype Property
-> **Version**: _Available from runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0._
 
 Sets the extended data type of a control.
 
@@ -33,8 +34,6 @@ Sets the extended data type of a control.
 |**Ratio**|The text is handled as a progress bar. This is not supported on the Web client.|
 |**Masked**|Displays the value as dots. This will only have effect on fields, where the user can enter and display textual data (including numbers, time, date etc.)|
 |**Person**|The client handles the field as media representing a person and will display this in the signature rounded styling. When the media field is empty, a silhouette of a person is shown.|
-|**RichText**|RichText is for for formatting, like Bold and Italics|
-|**RichContent**|RichContent is text containing things like: links, lists, bold text or italic text.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

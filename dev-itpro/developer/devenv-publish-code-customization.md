@@ -3,7 +3,7 @@ title: "Publishing a Code-Customized Base Application"
 description: "Description of the process of publishing a code customization for Dynamics 365 Business Central on-prem"
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -76,7 +76,7 @@ Make sure to have the following prerequisites installed to be able to follow the
 
     ```json
     "al.assemblyProbingPaths": [
-        "C:\\Program Files\\Microsoft Dynamics 365 Business Central\\170",
+        "C:\\Program Files\\Microsoft Dynamics 365 Business Central\\170\\Service",
         "C:\\Program Files (x86)\\Microsoft Dynamics 365 Business Central\\170",
         "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8",
         "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\WindowsPowerShell"

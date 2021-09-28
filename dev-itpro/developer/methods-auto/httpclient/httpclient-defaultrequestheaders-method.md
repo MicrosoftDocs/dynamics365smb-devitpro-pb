@@ -1,8 +1,9 @@
 ---
-title: "HttpClient.DefaultRequestHeaders Method"
+title: "HttpClient.DefaultRequestHeaders() Method"
+description: "Gets the default request headers which should be sent with each request."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,27 +14,27 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# HttpClient.DefaultRequestHeaders Method
-> **Version**: _Available from runtime version 1.0._
+# HttpClient.DefaultRequestHeaders() Method
+> **Version**: _Available or changed with runtime version 1.0._
 
 Gets the default request headers which should be sent with each request.
 
 
 ## Syntax
-```
+```AL
 CurrentDefaultRequestHeaders :=   HttpClient.DefaultRequestHeaders()
 ```
 > [!NOTE]
 > This method can be invoked using property access syntax.
 
 ## Parameters
-*HttpClient*
-&emsp;Type: [HttpClient](httpclient-data-type.md)
-An instance of the [HttpClient](httpclient-data-type.md) data type.
+*HttpClient*  
+&emsp;Type: [HttpClient](httpclient-data-type.md)  
+An instance of the [HttpClient](httpclient-data-type.md) data type.  
 
 ## Return Value
-*CurrentDefaultRequestHeaders*
-&emsp;Type: [HttpHeaders](../httpheaders/httpheaders-data-type.md)
+*CurrentDefaultRequestHeaders*  
+&emsp;Type: [HttpHeaders](../httpheaders/httpheaders-data-type.md)  
 The default request headers which should be sent with each request.
 
 

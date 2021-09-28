@@ -1,8 +1,9 @@
 ---
-title: "Dialog.Open Method"
+title: "Dialog.Open(String [, var Any,...]) Method"
+description: "Opens a dialog window."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/23/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,28 +14,28 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Dialog.Open Method
-> **Version**: _Available from runtime version 1.0._
+# Dialog.Open(String [, var Any,...]) Method
+> **Version**: _Available or changed with runtime version 1.0._
 
 Opens a dialog window.
 
 
 ## Syntax
-```
+```AL
  Dialog.Open(String: String [, var Variable1: Any,...])
 ```
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
 ## Parameters
-*Dialog*
-&emsp;Type: [Dialog](dialog-data-type.md)
-An instance of the [Dialog](dialog-data-type.md) data type.
+*Dialog*  
+&emsp;Type: [Dialog](dialog-data-type.md)  
+An instance of the [Dialog](dialog-data-type.md) data type.  
 
 *String*  
 &emsp;Type: [String](../string/string-data-type.md)  
 This string contains the text that you want to display in the window. Use a backslash (\\) to start a new line. Use number signs (#) to insert variable values into the string. Place the number signs where you want to substitute the variable value. Place a number in the part of the string where a variable value will be substituted (for example, #1####) to be able to reference this field for updating.  The number of # characters in the string indicates the length of the field. You can update the fields using the UPDATE method (Dialog) or by letting the user edit the values.
           
-*Variable1*  
+*[Optional] Variable1*  
 &emsp;Type: [Any](../any/any-data-type.md)  
 Use these optional parameters to specify variables for field1, field2, and so on in the String.  
 

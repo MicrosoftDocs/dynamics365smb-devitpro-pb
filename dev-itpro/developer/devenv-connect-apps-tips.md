@@ -4,7 +4,7 @@ description: Provides some tips about working with Business Central API.
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.custom: na
-ms.date: 11/12/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -48,9 +48,9 @@ ms.service: "dynamics365-business-central"
 
 ## <a name="AcceptLanguage"></a>Accept-Language
 
-By specifying `Accept-Language` in the request header, you can set a specific language for your web service response. It's strongly recommended to use this setting, if your app is dependent on a web service response to be in a specific language. If `Accept-Language` is set, it will override default settings. This setting also controls the regional formatting settings, affecting behavior such as how date and time will be formatted.
+By specifying `Accept-Language` in the request header, you can set a specific language for your web service response. It's recommended to use this setting, if your app is dependent on a web service response to be in a specific language. If `Accept-Language` is set, it will override default settings. This setting also controls the regional formatting settings, affecting behavior such as how date and time will be formatted.
 
-One of the most common examples is showing error messages to the users in their language. To see which possible error messages to display, see [Error Codes](/dynamics-nav/api-reference/v2.0/dynamics_error_codes). Another common example is displaying reports in a specific language, see the example below for how to specify `Accept-Language`. The following example sets the language to always be `en-US`.
+One of the most common examples is showing error messages to the users in their language. To see which possible error messages to display, see [Error Codes](../api-reference/v2.0/dynamics-error-codes.md). Another common example is displaying reports in a specific language, see the example below for how to specify `Accept-Language`. The following example sets the language to always be `en-US`.
 
 ### Example
 
@@ -63,9 +63,9 @@ One of the most common examples is showing error messages to the users in their 
 |Accept-Language|en-US|
 
 #### Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
-#### Reponse
+#### Response
 If successful, this method returns a `200 OK` response code and a report PDF file in the response body.
 
 ## <a name="batch"></a>OData transactional $batch requests
@@ -181,7 +181,39 @@ The following response includes successful responses for the first two inner req
 }
 ```
 
+## <a name="DataAccessIntent"></a>Specifying Data Access Intent for GET requests
+
+By specifying HTTP request header `Data-Access-Intent`, it's possible to override data access intent of the API page or query that has been defined with [DataAccessIntent property](properties/devenv-dataaccessintent-property.md). 
+
+### Possible header values
+
+|Value|Description|
+|-----------|---------------------------------------|
+|**ReadOnly**|Intent to access records, but not to modify them. The page or query reads data from a replica of the database (if available), reducing the load on the primary database, but prevents modifications to the database records.|
+|**ReadWrite**|Intent to access and modify records.|
+
+When request header is specified, the value of the DataAccessIntent property defined on the object, if any, is ignored. Overrides that are specified on the page **9880 Database Access Intent List**  take higher precedence than the value in the request header.
+
+Modification requests (like POST, PUT, or DELETE) only support `ReadWrite` as a value for data access intent. Trying to specify `Data-Access-Intent: ReadOnly` for such requests will result in an error.
+
+### Example
+
+`GET businesscentralPrefix/companies({id})/salesInvoices({salesInvoiceId})/pdfDocument({salesInvoiceId})/content`
+
+#### Request headers
+|Header|Value|
+|------|-----|
+|Authorization  |Bearer {token}. Required. |
+|Data-Access-Intent|ReadOnly|
+
+#### Request body
+Don't supply a request body for this method.
+
+#### Response
+If successful, this method returns a `200 OK` response code and a report PDF file in the response body.
+
 ## See Also
 <!-- [Using Deltas With APIs](devenv-connect-apps-delta.md)-->  
 [Using Filtering With APIs](devenv-connect-apps-filtering.md)  
 [Performance Articles For Developers](../performance/performance-developer.md)  
+[DataAccessIntent property](properties/devenv-dataaccessintent-property.md)

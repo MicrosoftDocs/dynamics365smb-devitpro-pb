@@ -3,7 +3,7 @@ title: Designing Card Pages
 description: "Provides and overview of Role Center design"
 author: jswymer
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -49,7 +49,7 @@ A document page is defined by a page that has the [PageType property](properties
 
 The following figure illustrates the general layout and elements of a card page and document page.
 
-![Card and document page overview](media/card-document-page-overview.png "Card page overview")
+![Card and document page overview.](media/card-document-page-overview.png "Card page overview")
 
 The following table describes the elements of the page.
 
