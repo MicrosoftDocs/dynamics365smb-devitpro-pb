@@ -554,17 +554,19 @@ Publish the extensions in the following order:
 >
 > If you are upgrading from an India (IN) version of Dynamics NAV 2016, you must publish the India extensions.
 >
-> - Publish Tax Engine extension.
-> - Publish India Tax Base extension.
-> - Publish QR Generator extension.
-> - Publish India GST extension.
-> - Publish India Gate Entry extension.
-> - Publish India TCS extension.
-> - Publish India TDS extension.
-> - Publish India Voucher Interface extension.
-> - Publish Fixed Asset Depreciation for India extension.
-> - Publish India Reports extension.
-> - Publish India Data Migration Extension.
+> | Folder | Extension Package |
+> |------|-------------------|
+> |INTaxEngine|Microsoft_TaxEngine.app|
+> |INTaxBase|Microsoft_TaxBase.app|
+> |QRGenerator|Microsoft_QRGenerator.app|
+> |INGST|Microsoft_India GST.app|
+> |INGateEntry|Microsoft_India Gate Entry.app|
+> |INTCS|Microsoft_India TCS.app|
+> |INTDS|Microsoft_India TDS.app|
+> |INVoucherInterface|Microsoft_India Voucher Interface.app|
+> |INFADepreciation|Microsoft_Fixed Asset Depreciation For India.app|
+> |INReports|Microsoft_India Reports.app|
+> |India Data Migration Extension||
 
 ## Task 14: Synchronize final extensions
 
@@ -596,6 +598,7 @@ Synchronize the extensions in the following order:
   > - Fixed Asset Depreciation for India
   > - India Reports
   > - India Data Migration
+
 5. Customization extensions
 6. Second version of the table migration extension (empty version)
 
