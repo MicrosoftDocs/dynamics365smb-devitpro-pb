@@ -36,7 +36,7 @@ For comparison, see the [System Requirements for [!INCLUDE[prod_long](../develop
 
 Data is migrated using an Azure service called Azure Data Factory (ADF). ADF is a service that is always running within the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online service manager. When you start the cloud migration, a data pipeline is created in the ADF service so that data can flow from your on-premises solution to your Business Central online tenant. If your data source is a local SQL Server instance, you will also be asked to configure a self-hosted integration runtime (SHIR). The runtime is installed locally and manages the communication between the cloud services and your on-premises data without opening any ports or firewalls.  
 
-## Are there any limits on the amount or type of data will migrate?
+## Are there any limits on the amount or type of data that will migrate?
 
 There are no restrictions on the type of data that can be migrated. In the current version of Business Central, the migration tool is by default limited to migrate databases up to 80 GB. If your database is larger than 80 GB, we recommend that you reduce the number of companies that you are migrating data for. You can specify which companies to include in the migration in the assisted setup wizard.
 
@@ -92,10 +92,6 @@ No.
 
 Yes, data is only replicated from the on-premises solution to your Business Central online tenant for the purposes of migration. Once you start using [!INCLUDE [prod_short](../includes/prod_short.md)] online, you must stop using your on-premises solution.  
 
-<!--## Is there a cost to connect to the intelligent cloud?
-
-Currently, the only costs associated with the intelligent cloud are your named user license costs. For more information, see the [Business Central Licensing Guide (download)](https://go.microsoft.com/fwlink/?LinkId=871590).  -->
-
 ## Why did my Role Center change after the migration?
 
 To keep the Role Center experience as clean as possible and avoid permission errors, we automatically hide actions that would generate a permission error for the user.  
@@ -111,4 +107,5 @@ The extension must be created in the same manner as any other extension. For dat
 ## See also
 
 [Running the Cloud Migration Tool](migration-tool.md)  
+[Troubleshooting Cloud Migration](migration-troubleshooting.md)  
 [Migrating On-Premises Data to Business Central Online](migrate-data.md)  
