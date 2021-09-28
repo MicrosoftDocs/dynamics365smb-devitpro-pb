@@ -378,7 +378,7 @@ For information about importing objects, see [Importing Objects](../cside/cside-
     The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] installation media (DVD) includes several new versions of Microsoft extensions (that is, extensions that have **Microsoft** as the publisher). If your old deployment uses these extensions, you have to upgrade the old versions to the new versions.
 
     > [!IMPORTANT]
-    > For Denmark (DK) and German (DE) versions. Some of the local functionality has been moved from the base application to extensions.
+    > For Denmark (DK), German (DE), and India (IN) versions. Some of the local functionality has been moved from the base application to extensions.
     >
     > If you are upgrading from a Denmark (DK) version of Dynamics NAV 2017 or earlier, you must publish and install the following extensions to get the local functionality:
     >
