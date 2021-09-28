@@ -494,6 +494,38 @@ Complete this task to install third-party extensions for which a new version was
 Install-NAVApp -ServerInstance $NewBcServerInstance -Name <extension name> -Version <extension version>
 ```
 
+   > [!NOTE]
+   >
+   > If you are upgrading from an India (IN) version of Dynamics NAV 2016, you must Publish, Sync & Install India Data Migration Extension. 
+   > Publish the ‘India Data Migration’ extension by running the PublishNAVApp cmdlet:
+   >
+   > Run the following command:
+   > ```Powershell
+   > Publish-NAVApp -ServerInstance <ServerInstanceName> -Path <ExtensionFileName> 
+   > ```
+   > Synchronize the extension with the database by running the Sync-NAVApp cmdlet for ‘India Data Migration’ extension:
+   > Run the following command:
+   > ```Powershell
+   > Sync-NAVApp -ServerInstance <ServerInstanceName> -Name <Name> -Version <N.N.N.N>
+   > ```
+   > Run the following command to Upgrade the Extension Data:
+   > ```Powershell
+   > Start-NAVAppDataUpgrade -ServerInstance <server instance name> -Name "<extension name>" -Version <extension 
+   > ```
+   >
+   > **Run assisted setup**
+   > - Start Web Client and search for Assisted Setup and Run Setup Tax Engine for each company.
+   > - Search for Assisted Setup and Run Finalize Data Migration for each company.
+   >
+   > **Uninstall & unpublish extension**
+   > - UnInstall Extension India Data Migration.app
+   > ```Powershell
+   > Uninstall-NAVApp -ServerInstance <server instance name> -Name <extension name> -Version <extension version>
+   > ```
+   > - **Unpublish Extension India Data Migration.app**
+   > ```Powershell
+   > Unpublish-NAVApp -ServerInstance <server instance name> -Name <extension name> -Version <extension version2
+   > ```
 ## Task 12: <a name="JSaddins"></a>Upgrade control add-ins
 
 [!INCLUDE[upgrade-control-addins](../developer/includes/upgrade-control-addins.md)]
