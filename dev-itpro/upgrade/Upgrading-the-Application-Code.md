@@ -320,7 +320,7 @@ For W1 versions, you can find the default upgrade toolkit objects in the  **Upgr
 |[!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)]| Upgrade110014x.FOB|Upgrade1100130.FOB|
 |[!INCLUDE[prod_short](../developer/includes/prod_short.md)] Fall 2018| Upgrade13x14x.FOB|Not applicable|
 
-For local versions, you will find the upgrade toolkit objects in the **UpgradeToolKit\Local Objects** folder. The files follow the same naming convention except they include the 2-letter local version, such as **Upgrade110014x.DK.fob** for Denmark or **Upgrade110014x.DE.fob** for Germany.
+For local versions, you will find the upgrade toolkit objects in the **UpgradeToolKit\Local Objects** folder. The files follow the same naming convention except they include the 2-letter local version, such as **Upgrade110014x.DK.fob** for Denmark, **Upgrade110014x.DE.fob** for Germany, or **Upgrade90014x.IN.fob** for India.
 
 For information about importing objects, see [Importing Objects](../cside/cside-import-objects.md).
 
