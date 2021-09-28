@@ -248,9 +248,20 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[pr
 
     `-AllowAppDatabaseWrite` is optional but is required for some post-upgrade tasks, like upgrading the control add-ins. When you are done upgrading, you can dismount and mount the tenant without this parameter as needed.
 
+   > [!NOTE]
+   > If you are upgrading from an India (IN) Dynamics NAV 2016, you must perform below step:
+   >
+   > On the Tools menu, choose Build Server Application Objects, and then choose the Yes option.
+
 14.  <a name="synctenant"></a>Run the schema synchronization with validation to complete the database conversion.  
 
      For more information, see [Synchronizing the Tenant Database and Application Database](../administration/synchronize-tenant-database-and-application-database.md).
+
+ > [!NOTE]
+ > If you are upgrading from an India (IN) Dynamics NAV 2016, you must perform below step:
+ > - Run the Data Upgrade to complete the technical upgrade.
+ > - Delete the obsolete tables with Schema Synchronization as Force Mode.
+ >   470|824|825|826|827|828|829|830|1510|1305|5150|5181|5371|5372|8640
 
 ## <a name="extensions"></a>Task 4: Post-upgrade
 
@@ -360,6 +371,9 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[pr
     For more information, see [Uploading a License File for a Specific Database](../cside/cside-upload-license-file.md#UploadtoDatabase).  
 
     You have now completed the conversion of the database to be accessed from [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. To test the converted database, you can connect it to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Server instance that is used by [!INCLUDE[navnow](../developer/includes/navnow_md.md)] clients, and then open a client.
+
+ > [!NOTE]  
+ > If you are upgrading from an India (IN) Dynamics NAV 2016, you must perform steps defined in the [Publish, Synchronize and Install the ‘IndiaUpgradeTables’ extension](../upgrade/post-india-upgrade-tables.md)
 
 ## Database and Windows collations
 
