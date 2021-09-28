@@ -196,6 +196,7 @@
 ### [Incoming Web Services Requests Telemetry](administration/telemetry-webservices-trace.md)
 ### [Outgoing Web Services Requests Telemetry](administration/telemetry-webservices-outgoing-trace.md)
 ### [Table Index Telemetry](administration/telemetry-table-index-trace.md)
+### [Task Scheduler Telemetry](administration/telemetry-task-scheduler-trace.md)
 ### [Web Service Access Key Telemetry](administration/telemetry-webservices-access-key-trace.md)
 ### [Event IDs](administration/telemetry-event-ids.md)
 ## Automation
@@ -2948,6 +2949,7 @@
 #### [Incoming Web Services Requests Telemetry](administration/telemetry-webservices-trace.md)
 #### [Outgoing Web Services Requests Telemetry](administration/telemetry-webservices-outgoing-trace.md)
 #### [Table Index Telemetry](administration/telemetry-table-index-trace.md)
+#### [Task Scheduler Telemetry](administration/telemetry-task-scheduler-trace.md)
 #### [Web Service Access Key Telemetry](administration/telemetry-webservices-access-key-trace.md)
 #### [Event IDs](administration/telemetry-event-ids.md)
 ### [Understanding Session Timeouts](administration/understanding-session-timeouts.md)

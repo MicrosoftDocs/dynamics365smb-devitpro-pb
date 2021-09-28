@@ -5,7 +5,7 @@ author: jswymer
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
-ms.date: 04/01/2021
+ms.date: 08/12/2021
 ms.author: jswymer
 ---
 # Configuring Business Central Server
@@ -295,10 +295,12 @@ The task scheduler processes jobs and other processes on a scheduled basis. For 
 |-----------|--------|---------------|
 |Default Task Scheduler Session Timeout|DefaultTaskSchedulerSessionTimeout|Specifies the timeout for background sessions that are created by [TaskScheduler.CreateTask](../developer/methods-auto/taskscheduler/taskscheduler-createtask-integer-integer-boolean-string-datetime-recordid-method.md) method calls that don't set the timeout parameter. When the session exceeds the specified time, it's canceled.<br /><br />The value has the format hh:mm:ss.<br /><br />Default: 12:00:00 <br />Dynamically Updatable: Yes<br /><br />**INTRODUCED IN:** Version 18|
 |  Enable Task Scheduler  | EnableTaskScheduler| Specifies whether the server instance starts with the task scheduler enabled. <br /><br />If this option is enabled, the server instance will process scheduled tasks.<br /><br />Default: Enabled <br />Dynamically Updatable: No|
+|Execution Retry Exceptions|TaskSchedulerExecutionRetryExceptions|Specifies a list of exceptions that will cause the task scheduler to retry the task if the given exception occurs during the execution of the task's main codeunit. The main codeunit is the codeunit run by a [TaskScheduler.CreateTask](../developer/methods-auto/taskscheduler/taskscheduler-createtask-integer-integer-boolean-string-datetime-recordid-method.md) method call.<br /><br />The value is semicolon-separated list in a format like: Exception1;Exception2;Exception3. If you want to specify error code of the exception, use the following format instead: Exception1:ErrorCode1;Exception2:ErrorCode2.<br /><br />Default: <br />Dynamically Updatable: No<br /><br />**INTRODUCED IN:** Version 19.0|
 |  Maximum Concurrent Running Tasks  | TaskSchedulerMaximumConcurrentRunningTasks| Specifies the maximum number of tasks that can run simultaneously on the server instance.<br /><br />The value that you specify will depend on the hardware (CPUs) of the deployment environment and what you want to prioritize: client performance or scheduled tasks (such as job queue entries). The setting is particularly relevant when the server instance is used for both scheduled tasks and client services. If there are many jobs running at the same time, you might experience that the response time for clients gets slower. In which case, you could decrease the value. However, if the value is too low, it might take longer than desired for scheduled tasks to process. When you've a dedicated server instance for scheduled tasks, this setting is less important with respect to client performance. <br /><br />Default: 10 <br />Dynamically Updatable: Yes|
 |  System Task Start Time  | TaskSchedulerSystemTaskStartTime| Specifies the time of day after which system tasks can start. The time is based on the time zone of the computer that is running the server instance. <br /><br />The value has the format hh:mm:ss.<br /><br />Default: 00:00:00 <br />Dynamically Updatable: Yes|
 |  System Task End Time  | TaskSchedulerSystemTaskEndTime| Specifies the time of day after which system tasks can't start. The time is based on the time zone of the computer that is running the server instance. <br /><br />The value has the format hh:mm:ss.<br /><br />Default: 23:59:59 <br />Dynamically Updatable: Yes|
 |*not available*|XmlMetadataCacheSize|For internal use only.<br /><br />Default: 500|
+
 
 ## <a name="PBT"></a>Asynchronous Processing Settings
 
