@@ -113,23 +113,38 @@ Most trials are based on people signing up at [https://dynamics.microsoft.com/bu
 
 ## <a name="infrastructure"></a>Understanding Business Central online infrastructure
 
-You have your tenant (AAD/Office) where users are created
-That you can create multiple environments, each of them tied to a specific country and localization
-That each environment can have X number of companies/legal entities within them
-That users have access to all of these by default
-(linking out to other relevant docs articles that elaborate)
-To ensure they understand this:
+When a prospect wants to buy [!INCLUDE [prod_short](../includes/prod_short.md)] online, a number of questions must be answered because [!INCLUDE [prod_short](../includes/prod_short.md)] can be configured along several different axes. In this section, we describe the topology of [!INCLUDE [prod_short](../includes/prod_short.md)] online so that you can make qualified decisions for how the tenant will be deployed and configured.  
 
-AAD Tenant / Office 365 (user creation)
-Environment (DK) (Included with first full user)
-Company 1
-Company 2
-Company 3
-Environment (UK) (Cost)
-Company A
-Company B
-Company C
-Of course with proper terminology
+> [!TIP]
+> [!INCLUDE [prod_short](../includes/prod_short.md)] is available in a limited number of markets. For more information, see [Country/regional availability and supported languages](../compliance/apptest-countries-and-translations.md).  
+
+### Microsoft 365 and Azure Active Directory
+
+The first decision to make is related to the Azure Active Directory (Azure AD) tenant that is required to use for [!INCLUDE [prod_short](../includes/prod_short.md)] online. To sign up for a trial, use a work or school account. For more information, see [Try or buy a Microsoft 365 for business subscription](/microsoft-365/commerce/try-or-buy-microsoft-365?view=o365-worldwide&preserveview=true).  
+
+This account is an important step because it is tied to a region of the world. Users are defined in the Azure AD account and then assigned the relevant licenses in the Microsoft 365 admin center. This is also important for the reseller's Azure AD. For more information, see the [Enroll in the CSP program](#enroll-in-the-csp-program) section.  
+
+> [!TIP]
+> For some customers, the right approach is to have multiple Azure AD tenants due to their own organizational structure.  
+
+### Environments and companies
+
+Each Azure AD tenant that buys a [!INCLUDE [prod_short](../includes/prod_short.md)] online license automatically gets a number of environments. Each environment is tied to a specific country and localization.  
+
+[!INCLUDE [admin-env-quota](../developer/includes/admin-env-quota.md)]
+
+Each environment can be divided into multiple companies, where each company defines a legal entity or a business unit that has a separate accounting requirements. By default, all users who have a [!INCLUDE [prod_short](../includes/prod_short.md)] license for a specific Azure AD tenant can access all companies in each [!INCLUDE [prod_short](../includes/prod_short.md)] environment that is defined for that Azure AD tenant. You can define different permissions inside [!INCLUDE [prod_short](../includes/prod_short.md)]. For more information, see [Create Users According to Licenses](/dynamics365/business-central/ui-how-users-permissions) in the business functionality content.  
+
+### Example
+
+Let's review a simple scenario for an organization that is based in Denmark but has a subsidiary in Germany. They have three business units in Denmark and two in Germany.  
+
+| Organization | Azure AD | Environment localization | Number of companies |
+|--|--|--|--|
+| Parent company | Microsoft 365 account in Denmark | DK | 3 |
+| Subsidiary company | Microsoft 365 account in Germany | DE | 2 |
+
+In this example, the production environment that is based on the Danish localization of [!INCLUDE [prod_short](../includes/prod_short.md)] is part of the default assignment as described above. But because this organization has the German subsidiary that has separate accounting requirements, the organization decided to buy an additional production environment. This additional environment has two companies, one for the sales offices in Munich, and one for the warehouse near Stuttgart.
 
 ## See Also
 

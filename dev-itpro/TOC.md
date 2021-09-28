@@ -107,8 +107,9 @@
 # Administration
 ## [Administration of Business Central Online](administration/tenant-administration.md)
 ## Understand Business Central online
+### [Understanding the Infrastructure](administration/tenant-administration.md#infrastructure)
 ### [Get Started as a Reseller of Business Central Online](administration/get-started-online.md)
-### [Country/Regional availability and Supported Translations](compliance/apptest-countries-and-translations.md)
+### [Country/Regional Availability and Supported Translations](compliance/apptest-countries-and-translations.md)
 ### [Delegated Administrator Access to Business Central Online](administration/delegated-admin.md)
 ### [Major Updates and Minor Updates](administration/update-rollout-timeline.md)
 ### [Version Numbers in Business Central](administration/version-numbers.md)
