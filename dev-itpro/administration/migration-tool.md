@@ -10,7 +10,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
 ms. search.keywords: cloud, migration
-ms.date: 10/01/2021
+ms.date: 09/28/2021
 ms.author: edupont
 
 ---
@@ -43,7 +43,7 @@ When you choose the **Set up Cloud Migration** assisted setup, it launches the *
     To set up migration from earlier versions of [!INCLUDE [prod_short](../developer/includes/prod_short.md)], in the **Data Migration Setup** dialog, choose *Dynamics 365 Business Central earlier versions* as the product.
 
     > [!TIP]
-    > Use the migration tool to migrate from the latest version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] or supported earlier versions. [!INCLUDE [bc-cloud-versions](../includes/bc-cloud-versions.md)]If your on-premises solution is a version that is older than the supported versions, including versions of [!INCLUDE [nav2018_md](../developer/includes/nav2018_md.md)] and older, then you must upgrade your on-premises solution. For more information, see [Supported Upgrade Paths to [!INCLUDE[prod_long](../developer/includes/prod_long.md)] Releases](../upgrade/upgrade-paths.md).  
+    > Use the migration tool to migrate from the latest version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] or supported earlier versions. [!INCLUDE [bc-cloud-versions](../includes/bc-cloud-versions.md)] If your on-premises solution is a version that is older than the supported versions, including versions of [!INCLUDE [nav2018_md](../developer/includes/nav2018_md.md)] and older, then you must upgrade your on-premises solution. For more information, see [Supported Upgrade Paths to [!INCLUDE[prod_long](../developer/includes/prod_long.md)] Releases](../upgrade/upgrade-paths.md).  
 
 3. SQL Connection
 

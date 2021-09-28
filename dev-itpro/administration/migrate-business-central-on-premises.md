@@ -10,7 +10,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
 ms. search.keywords: cloud, edge,
-ms.date: 10/01/2021
+ms.date: 09/28/2021
 ms.author: edupont
 
 ---
@@ -95,7 +95,12 @@ In certain circumstances, you may want to not migrate all data. Here are a few e
 
 * The extension references a base table
 
-    This can cause your base table to appear empty when you view data in your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online environment. If that happens, uninstall the extension from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, and then run the cloud migration process again.
+    This can cause your base table to appear empty when you view data in your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online tenant. If that happens, uninstall the extension from your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online tenant, and then run the cloud migration process again.
+
+> [!TIP]
+> Use the **Cloud Migration Management** page to verify that data migrated correctly. [!INCLUDE [bc-cloud-migrate-tableext](../includes/bc-cloud-migrate-tableext.md)]
+
+For more information, see [FAQ about Migrating to Business Central Online from On-Premises Solutions](faq-migrate-data.md) and [Troubleshooting Cloud Migration](migration-troubleshooting.md).  
 
 ### Data that is not migrated
 
