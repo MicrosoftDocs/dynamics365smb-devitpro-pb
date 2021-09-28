@@ -550,6 +550,22 @@ Publish the extensions in the following order:
 
     The Microsoft extensions are in the **Applications** folder of installation media (DVD).
 
+> [!NOTE]
+>
+> If you are upgrading from an India (IN) version of Dynamics NAV 2016, you must publish the India extensions.
+>
+> - Publish Tax Engine extension.
+> - Publish India Tax Base extension.
+> - Publish QR Generator extension.
+> - Publish India GST extension.
+> - Publish India Gate Entry extension.
+> - Publish India TCS extension.
+> - Publish India TDS extension.
+> - Publish India Voucher Interface extension.
+> - Publish Fixed Asset Depreciation for India extension.
+> - Publish India Reports extension.
+> - Publish India Data Migration Extension.
+
 ## Task 14: Synchronize final extensions
 
 Synchronize the newly published extensions using the Sync-NAVApp cmdlet like you did in previous steps.
@@ -564,6 +580,22 @@ Synchronize the extensions in the following order:
 2. Microsoft Base Application
 3. Microsoft Application
 4. Microsoft and third-party extensions
+
+  > [!NOTE]
+  >
+  > If you are upgrading from an India (IN) version of Dynamics NAV 2016, you must synchronize the India extensions.
+  >
+  > - Tax Engine
+  > - India Tax Base
+  > - QR Generator
+  > - India GST
+  > - India Gate Entry
+  > - India TCS
+  > - India TDS
+  > - India Voucher Interface
+  > - Fixed Asset Depreciation for India
+  > - India Reports
+  > - India Data Migration
 5. Customization extensions
 6. Second version of the table migration extension (empty version)
 
@@ -608,6 +640,23 @@ Run the data upgrade on the extensions in the following order:
 2. Upgrade the Microsoft Base Application extension.
 3. Install the Microsoft Application extension
 4. Upgrade customization extensions, Microsoft, and third-party extensions.
+
+  > [!NOTE]
+  >
+  > If you are upgrading from an India (IN) version of Dynamics NAV 2016, you must upgrade and install the India extensions.
+  >
+  > - Install the QR Generator.
+  > - Upgrade the Tax Engine extension.
+  > - Upgrade the India Tax Base extension.
+  > - Upgrade the India GST extension.
+  > - Upgrade the India Gate Entry extension.
+  > - Upgrade the India TCS extension.
+  > - Upgrade the India TDS extension.
+  > - Upgrade the India Voucher Interface extension.
+  > - Upgrade the Fixed Asset Depreciation for India extension.
+  > - Install the India Reports extension.
+  > - Upgrade the India Data Migration.
+
 
    For customization extensions, only do this step for those extensions that have an empty version currently installed on the tenant (see **Task 10**).
 5. Install remaining customization extensions for which you didn't create and publish an empty version.

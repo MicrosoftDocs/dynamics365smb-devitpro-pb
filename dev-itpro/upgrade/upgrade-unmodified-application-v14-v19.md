@@ -307,6 +307,22 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     ```powershell
     Publish-NAVApp -ServerInstance $NewBcServerInstance -Path "C:\W1DVD\Applications\SalesAndInventoryForecast\Source\SalesAndInventoryForecast.app"
     ```
+   >[!NOTE]
+   >
+   > If you are upgrading from an India (IN) version of Dynamics NAV 2016, you must publish the following extensions to get the local functionality. The below extensions available in the DVD under the Extension folder in DVD.
+   >
+   > | Name | Extension Package |
+   > |------|-------------------|
+   > |INTaxEngine|INTaxEngine.app|
+   > |INTaxBase|INTaxBase.app|
+   > |QR Generator|QRGenerator.app|
+   > |INGST|INGST.app|
+   > |INTCS|INTCS.app|
+   > |INTDS|INTDS.app|
+   > |INFADepreciation|INFADepreciation.app|
+   > |INGateEntry|INGateEntry.app|
+   > |INVoucherInterface|INVoucherInterface.app|
+   > |IN Reports|INReports.app|
 
 5. Publish 3rd-party extensions.
 
