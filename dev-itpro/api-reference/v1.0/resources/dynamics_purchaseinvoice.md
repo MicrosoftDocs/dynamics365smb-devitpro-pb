@@ -50,8 +50,8 @@ Represents a purchase invoice in [!INCLUDE[prod_short](../../../includes/prod_sh
 |vendorId               |GUID                   |The id of the invoice vendor.                              |
 |vendorNumber           |string, maximum size 20|The vendor number for the invoice.                         |
 |vendorName             |string, maximum size 50|The full name of the vendor. Read-Only.                    |
-|buyFromAddress         |[NAV.PostalAddress](../resources/dynamics_complextypes.md)|The vendor's address.  |
-|currencyId           |GUID|The currency Id for the invoice.                         |
+|buyFromAddress         |[NAV.PostalAddress](../resources/dynamics_complextypes.md)|The vendor's address.   |
+|currencyId             |GUID                   |The currency Id for the invoice.                           |
 |currencyCode           |string, maximum size 10|The currency code for the invoice.                         |
 |status                 |string, maximum size 20|The invoice status. Status can be: Draft, In Review, Open, Paid, Canceled, or Corrective. Read-Only.|
 |discountAmount         |numeric                |The invoice discount amount                                |
@@ -62,16 +62,16 @@ Represents a purchase invoice in [!INCLUDE[prod_short](../../../includes/prod_sh
 |pricesIncludeTax       |boolean                |Specifies whether the prices include Tax or not. Read-Only.|
 |paymentTerms           |string, maximum size 10|The payment terms of the invoice.                          |
 |shipmentMethod         |string, maximum size 10|The shipment method of the invoice.                        |
-|payToName|string, maximum size 100 |Pay to name of the invoice. |
-|payToContact|string, maximum size 100 |Pay to contact|
-|payToVendorId|GUID |Pay to vendor id. |
-|payToVendorNumber|string, maximum size 20 |Pay to vendor number |
-|shipToName|string, maximum size 100|Ship to name. |
-|shipToContact|string, maximum size 100|Ship to contact. |
-|buyFromAddress|NAV.postalAddressType |Buy from address. |
-|payToAddress| |NAV.postalAddressType |Pay to address. |
-|shipToAddress| |NAV.postalAddressType |Ship to address. |
-|lastModifiedDateTime   |datetime               |The last datetime the purchase invoice was modified. Read-Only.|
+|payToName              |string, maximum size 100 |Pay to name of the invoice.                              |
+|payToContact           |string, maximum size 100 |Pay to contact|
+|payToVendorId          |GUID                    |Pay to vendor id. |
+|payToVendorNumber      |string, maximum size 20 |Pay to vendor number |
+|shipToName             |string, maximum size 100|Ship to name. |
+|shipToContact          |string, maximum size 100|Ship to contact. |
+|buyFromAddress         |NAV.postalAddressType   |Buy from address. |
+|payToAddress           |NAV.postalAddressType   |Pay to address. |
+|shipToAddress          |NAV.postalAddressType   |Ship to address. |
+|lastModifiedDateTime   |datetime                |The last datetime the purchase invoice was modified. Read-Only.|
 
 
 ## Relationships
