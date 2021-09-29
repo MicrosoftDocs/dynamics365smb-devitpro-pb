@@ -24,8 +24,7 @@ The following diagram illustrates the flow of the job queue:
 
 ## Create and manage job queue
 
-A job queue is basically an abstraction using task scheduler to enable end users to view, create or modify jobs that are set to run in the background.
-These jobs can be set to run on a recurring schedule.
+A job queue is basically an abstraction using task scheduler to enable end users to view, create, or modify jobs that are set to run in the background. These jobs can be set to run on a recurring schedule.
 
 .. Add some examples
 
@@ -35,12 +34,13 @@ This section describes the flow that a job queue goes through.
 
 ### General flow
 
-A job is run when the task scheduler's task is run. For more information, please see [Task Scheduler](devenv-task-scheduler.md).
+A job is run when the task scheduler's task is run. For more information, see [Task Scheduler](devenv-task-scheduler.md).
 
 Here's a general overview of the process:
+
 1. When a job queue is created and set to ready state, a Scheduled Task is created to run not before the "Earliest Start Date/Time".
 2. When the scheduled task is picked up by the task scheduler to run, a new background session is started.
-3. The background session will run the "Job Queue Dispatcher" codeunit
+3. The background session will run the **Job Queue Dispatcher** codeunit:
     1. It will firstly check if the job should run or reschedule.
         If it should not run, it will delete itself or reschedule in the case of a already running "Category Code"
     2. The Job Queue Entry will be updated to "In-Progress" state and a Job Queue Log Entry will be created.
@@ -48,7 +48,7 @@ Here's a general overview of the process:
         - In the event of an exception, none of the subsequent steps will run and the failure codeunit path will run.
 4. The failure codeunit path:
     1. An exception is raised and surfaced.
-    2. The codeunit "Job Queue Error Handler" will run in a new background session.
+    2. The **Job Queue Error Handler** codeunit will run in a new background session.
         1. It will update the Job Queue Entry to error state.
         2. Save the error(s) using "Error Message Management".
         3. Update the Job Queue Entry and Job Queue Log Entry with the error.
