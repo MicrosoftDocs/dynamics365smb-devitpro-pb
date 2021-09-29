@@ -17,7 +17,7 @@ ms.author: solsen
 Apps built using AL extend the functionality of [!INCLUDE[prod_short](../includes/prod_short.md)]. The `app.json` file is, together with the `launch.json` file, automatically generated when you create a new AL project. The `app.json` file contains information about the app that you are building, such as publisher information and specifies the minimum version of base application objects that the extension is built on. Often the `app.json` file is referred to as the *manifest*. The `app.json` file contains numerous project settings, but a few of them constitutes the actual identity of the app that you are creating.
 
 > [!NOTE]  
-> With [!INCLUDE[prod_short](../includes/prod_short.md)] 2021 release wave 2, `name` and `publisher` are no longer considered part of the app identity and can therefore be changed to reflect branding or acquisition, for example. If the `name` and/or `publisher` information is changed, the `version` must also be incremented. If you are using workspaces with multiple projects and change the `name` or `publisher` of an extension in the workspace, the dependencies in the app.json file must be updated with the new name and publisher or you may encounter issues with reference resolution.
+> With [!INCLUDE[prod_short](../includes/prod_short.md)] 2021 release wave 2, `name` and `publisher` are no longer considered part of the app identity and can therefore be changed to reflect branding or acquisition, for example. If the `name` and/or `publisher` information is changed, the `version` must also be incremented. If you are using workspaces with multiple projects and change the `name` or `publisher` of an extension in the workspace, the dependencies in the app.json file must be updated with the new name and publisher or you may encounter issues with reference resolution. For more information, see [Working with Multiple Projects and Project References](devenv-work-workspace-projects-references.md).
 
 > [!IMPORTANT]  
 > In cases where the Application app is substituted with another application app, the `name` is still used as identification. For more information, see [The Microsoft_Application.app File](devenv-application-app-file.md).
@@ -64,3 +64,4 @@ The `version` must be incremented any time a new version of your app is uploaded
 
 [JSON Files](devenv-json-files.md)  
 [Publish NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/publish-navapp)  
+[Working with Multiple Projects and Project References](devenv-work-workspace-projects-references.md)  
