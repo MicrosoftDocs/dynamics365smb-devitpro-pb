@@ -38,22 +38,22 @@ A job is run when the task scheduler's task is run. For more information, see [T
 
 Here's a general overview of the process:
 
-1. When a job queue is created and set to ready state, a Scheduled Task is created to run not before the "Earliest Start Date/Time".
+1. When a job queue is created and set to ready state, a scheduled task is created to run not before the **Earliest Start Date/Time**.
 2. When the scheduled task is picked up by the task scheduler to run, a new background session is started.
 3. The background session will run the **Job Queue Dispatcher** codeunit:
     1. It will firstly check if the job should run or reschedule.
         If it should not run, it will delete itself or reschedule in the case of a already running "Category Code"
-    2. The Job Queue Entry will be updated to "In-Progress" state and a Job Queue Log Entry will be created.
-    3. The specified "Object ID to Run" will then be started.
+    2. The job queue entry will be updated to the **In-Progress** state and a job queue log entry will be created.
+    3. The specified **Object ID to Run** will then be started.
         - In the event of an exception, none of the subsequent steps will run and the failure codeunit path will run.
 4. The failure codeunit path:
     1. An exception is raised and surfaced.
     2. The **Job Queue Error Handler** codeunit will run in a new background session.
-        1. It will update the Job Queue Entry to error state.
-        2. Save the error(s) using "Error Message Management".
-        3. Update the Job Queue Entry and Job Queue Log Entry with the error.
+        1. It will update the job queue entry to error state.
+        2. Save the error(s) using **Error Message Management**.
+        3. Update the job queue entry and job queue log entry with the error.
         4. The job queue will then either stay in Error state or be rescheduled.
-            - The job queue will stay in error state if the "Maximum No. of Attempts" has been exceeded and isn't a recurring job.
+            - The job queue will stay in error state if the **Maximum No. of Attempts** has been exceeded and isn't a recurring job.
             - If the maximum attempts have not been exceeded and is a recurring job, it will be rescheduled.
 
 ## About job queue sessions and permissions
