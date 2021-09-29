@@ -12,7 +12,7 @@ ms.author: solsen
 
 # Retaining table data after publishing
 
-When developing an extension, you debug several times using the F5 shortcut key, and you also test your app by adding some sample data every time. To simplify the extension development process in [!INCLUDE[prod_short](includes/prod_short.md)], you can synchronize the sample data specified in the extension when you do subsequent publishing from Visual Studio Code.
+When developing an extension, you debug several times using the **F5** shortcut key, and you also test your app by adding some sample data every time. To simplify the extension development process in [!INCLUDE[prod_short](includes/prod_short.md)], you can synchronize the sample data specified in the extension when you do subsequent publishing from Visual Studio Code.
 
 ## How data synchronization works
 
@@ -51,7 +51,7 @@ In addition to the `launch.json` file setting, the **ForceSync** switch is avail
 
 **Synchronize** is the default schema update mode for syncing the database and the extension. There are some key factors to consider when you work with the **Synchronize** mode.  
 
-- After publishing, the field data and the primary key information synchronizes with all the tables and the table extensions. This means that you can do additions easily, but not deletions. Breaking changes are never supported in synchronize mode. For example, you can add a field and sync that with the extension just by pressing the F5 shortcut key, but if a field is removed then the table data cannot be synchronized.
+- After publishing, the field data and the primary key information synchronizes with all the tables and the table extensions. This means that you can do additions easily, but not deletions. Breaking changes are never supported in synchronize mode. For example, you can add a field and sync that with the extension just by pressing the **F5** shortcut key, but if a field is removed then the table data cannot be synchronized.
 If you, during development, for example, discover that you no longer want field **X**, and you then mark field **X** as obsolete, you may still want to write an [upgrade codeunit](devenv-upgrading-extensions.md) to move the data from the obsolete field to a new field **Y** that you introduce. Later, the obsoleted field will not be available. But if you do not want the data, you can choose to use the **Recreate** mode instead.
  
 - When you make changes to the data types, you can only *enlarge* the unit size, and *not decrease* the unit size. For example, you can set a text type from `Code[20]` to `Code[50]` or `Text[32]` to  `Text[87]`, and you cannot set a text type from `Code[50]` to `Code[30]` or `Text[87]` to `Text[40]`.  
@@ -67,6 +67,7 @@ If you, during development, for example, discover that you no longer want field 
     Alternatively, if this is a development scenario, you can synchronize the extension using the ForceSync or Recreate mode.
 
 ## See Also
+
 [AL Development Environment](devenv-reference-overview.md)  
 [Upgrading Extensions](devenv-upgrading-extensions.md)  
 [Debugging](devenv-debugging.md)  
