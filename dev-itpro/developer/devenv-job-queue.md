@@ -57,21 +57,26 @@ Here's a general overview of the process:
             - If the maximum attempts have not been exceeded and is a recurring job, it will be rescheduled.
 
 ## About job queue sessions and permissions
+
 The session runs using the same user/credentials that are used when calling AL code. The user that is used is the user that sets the job to ready state. The user must have appropriate permissions to run the job queue and any other objects that are associated with the operation of the specified object.
+
+For more information about assigning permissions, see [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions) in the business functionality help.
 
 ## Monitor and troubleshoot
 
-Business Central offers two ways to monitor the flow of job queues: Azure Application Insights and the Session Event table.
-These tools let you follow the execution of a job and investigate errors in failure codeunits.
+Business Central offers two ways to monitor the flow of job queues: Azure Application Insights and the Session Event table. These tools let you follow the execution of a job and investigate errors in failure codeunits.
 
 ### Application Insights
 
 You can set up Business Central to send telemetry traces to an Application Insights resource in Azure. Once set up, telemetry data will be sent to the resource as job queue moves through the flow. For more information, see:
-... Insert links (same as Task Scheduler doc page)
+
+[Enable Sending Telemetry to Application Insights](../administration/telemetry-enable-application-insights.md) 
+
+[Analyzing Task Scheduler Telemetry](../administration/telemetry-task-scheduler-trace.md)
 
 ### Session Event Table
-From the Business Central web client, you can open the Session Events table by adding `table=2000000111` to the URL. For example: https://businesscentral.dynamics.com/?table=2000000111.
 
+From the Business Central web client, you can open the Session Events table by adding `table=2000000111` to the URL. For example: [https://businesscentral.dynamics.com/?table=2000000111](https://businesscentral.dynamics.com/?table=2000000111).
 
 ## See Also
 [Task Scheduler Data Type](methods-auto/taskscheduler/taskscheduler-data-type.md)   
