@@ -46,6 +46,20 @@ The following example shows the label syntax when it is used as property value f
 Caption = 'Developer translation for %1',  Comment = '%1 is extension name', locked = false, MaxLength=999;
 ```
 
+### Label data type
+
+The [Label Data Type](methods-auto/label/label-data-type.md) denotes a string variable used to define error messages, questions, captions, tokens, or other text constants displayed to the user. 
+
+The following code sample illustrates how to use the **Label** data type.
+
+```AL
+var
+    a : Label 'Label Text', Comment='Foo', MaxLength=999, Locked=true;
+```
+
+The **Label** variable names should have an approved suffix. For more information, see [CodeCop Rule AA0074](analyzers/codecop-aa0074.md).
+
+
 ### Report labels
 
 Report labels are used by RDL and Word report layouts as, for example, the caption for a field, the title for a chart, or the title for the report itself. For a code example on how to use report labels for an RDL layout, see [Walkthrough: Designing a Report from Multiple Tables](devenv-walktrough-designing-reports-multiple-tables.md).
@@ -73,21 +87,6 @@ label(BeforeSetupCloseMessage)
     Caption = 'If you still need to change setup data, do not change the profile.'
 }
 ```
-
-
-### Label data type
-
-The [Label Data Type](methods-auto/label/label-data-type.md) denotes a string variable used to define error messages, questions, captions, tokens, or other text constants displayed to the user. 
-
-The following code sample illustrates how to use the **Label** data type.
-
-```AL
-var
-    a : Label 'Label Text', Comment='Foo', MaxLength=999, Locked=true;
-```
-
-The **Label** variable names should have an approved suffix. For more information, see [CodeCop Rule AA0074](analyzers/codecop-aa0074.md).
-
 
 ## See Also
 [Working with labels](devenv-using-labels.md)    
