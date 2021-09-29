@@ -3,7 +3,7 @@ title: "Record.FilterGroup([Integer]) Method"
 description: "Gets or sets the filter group that is applied to a table."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 10/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -51,7 +51,9 @@ When you select a filter group, subsequent filter settings by the [SetFilter Met
   
 All groups are active at all times. The only way to turn off a group is to remove the filters set in that group.  
   
-Filters in different groups are all effective simultaneously. For example, if in one group, a filter is set on customer numbers 1000 to 2000, while in another group, a filter is set on customer numbers 1800 to 3000, then only numbers in the range 1800 to 2000 are visible.  
+Filters in different groups are all effective simultaneously. For example, if in one group, a filter is set on customer numbers 1000 to 2000, while in another group, a filter is set on customer numbers 1800 to 3000, then only numbers in the range 1800 to 2000 are visible.
+
+If you have filters on *multiple fields in the same filter group*, then only records matching all filters are visible. The only exception to this is filtergroup -1 where records only need to match at least one of the filters.
   
 [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)] uses the following filter groups internally.  
   
@@ -71,7 +73,10 @@ A filter set in a group different from filter group 0 cannot be changed by a use
   
 > [!NOTE]  
 > It is possible to use one of the internally used groups. If you do this, you replace the filter that [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)] assumes is in this group. If, for example, you use filter group 4 in a page, you will replace the filtering that is actually the result of applying the [SubPageLink Property](../../properties/devenv-subpagelink-property.md). This could seriously alter the way pages and subpages interact.  
-  
+
+> [!NOTE]  
+> For performance reasons, filtergroup -1 does not support filtering on flowfields. 
+
 > [!IMPORTANT]  
 > Using filter group 7 may cause factboxes to not work as intended.  
   
