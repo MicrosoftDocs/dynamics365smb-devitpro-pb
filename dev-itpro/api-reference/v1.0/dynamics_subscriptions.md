@@ -126,17 +126,30 @@ Content-type: application/json
 }
 ```
 
-| | | |
-|--|--|--|
-|accounts|companyInformation|countriesRegions|
-|currencies|customerPaymentJournals|customers|
-|dimensions|employees|generalLedgerEntries|
-|itemCategories|items|journals|
-|paymentMethods|paymentTerms|purchaseInvoices|
-|salesCreditMemos|salesInvoices|salesOrders|
-|salesQuotes|shipmentMethods|unitsOfMeasure|
-|vendors|||
+### List of supported entities
 
+- accounts 
+- companyInformation
+- countriesRegions
+- currencies
+- customerPaymentJournals
+- customers
+- dimensions
+- employees
+- generalLedgerEntries
+- itemCategories
+- items
+- journals
+- paymentMethods
+- paymentTerms
+- purchaseInvoices
+- salesCreditMemos
+- salesInvoices
+- salesOrders
+- salesQuotes
+- shipmentMethods
+- unitsOfMeasure
+- vendors
 
 For Document APIs, a notification will be sent for the header if a change is made a to a line. E.g. a notification to a subscription for **salesInvoice** will be sent, if a change is made to a related **salesInvoiceLine**.  
 

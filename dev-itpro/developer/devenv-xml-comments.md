@@ -24,7 +24,7 @@ Documentation comments are visible when hovering over source symbols, in complet
 > Integration with documentation generator tools like DocFx and SandCastle is currently not supported.
 
 > [!NOTE]  
-> If you have the `allowDebugging` setting in the app.json file set to `false` and download an app package; the app package will not contain any XML comments.
+> If you have the `allowDownloadingSource` setting in the app.json file set to `false` and you then download an app package; the app package will not contain any XML comments.
 
 ## Supported XML tags
 
@@ -108,8 +108,8 @@ Code comments improve the readability of the code that you have developed and th
 2. Write a meaningful comment, use precise wording to describe *why*.
 3. Imagine yourself in the shoes of the developer using this piece of code, what would you want to know?
 4. For properties and methods, use active wording such as *Sets...*, *Gets...*, and *Specifies...*, and then explain what it does.
-5. List all preconditions for your parameters (cannot be null, must be within a certain range, and so on).
-6. List any postconditions that could influence how callers deal with return values.
+5. List all pre-conditions for your parameters (cannot be null, must be within a certain range, and so on).
+6. List any post-conditions that could influence how callers deal with return values.
 7. List any exceptions the method may throw (and under what circumstances).
 8. If similar methods exist, explain the differences between them.
 9. Call attention to anything unexpected (such as modifying global state).
