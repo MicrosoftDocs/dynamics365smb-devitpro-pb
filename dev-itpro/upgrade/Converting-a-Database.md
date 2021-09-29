@@ -261,7 +261,24 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[pr
  > If you are upgrading from an India (IN) Dynamics NAV 2016, you must perform below step:
  > - Run the Data Upgrade to complete the technical upgrade.
  > - Delete the obsolete tables with Schema Synchronization as Force Mode.
- >   470|824|825|826|827|828|829|830|1510|1305|5150|5181|5371|5372|8640
+ >   
+ >   | Table Id | Table Name |
+ >   |----------|------------|
+ >   |470|Job Queue|
+ >   |824|DO Payment Connection Details|
+ >   |825|DO Payment Connection Setup|
+ >   |826|DO Payment Setup|
+ >   |827|DO Payment Credit Card|
+ >   |828|DO Payment Credit Card Number|
+ >   |829|DO Payment Trans. Log Entry|
+ >   |830|DO Payment Card Type|
+ >   |1305|Mini Pages Mapping|
+ >   |1510|Notification Template|
+ >   |5150|Integration Page|
+ >   |5371|Service Connection Error|
+ >   |5372|Service Connection Status|
+ >   |8640|Config. Text Transformation|
+
 
 ## <a name="extensions"></a>Task 4: Post-upgrade
 
