@@ -3,7 +3,7 @@ title: "Record.FilterGroup([Integer]) Method"
 description: "Gets or sets the filter group that is applied to a table."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 10/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -53,7 +53,7 @@ All groups are active at all times. The only way to turn off a group is to remov
   
 Filters in different groups are all effective simultaneously. For example, if in one group, a filter is set on customer numbers 1000 to 2000, while in another group, a filter is set on customer numbers 1800 to 3000, then only numbers in the range 1800 to 2000 are visible.
 
-If you have filters on multiple fields in the same filtergroup, then only records matching all filters are visible. The only exception to this is filtergroup -1 where records only need to match at least one of the filters.
+If you have filters on *multiple fields in the same filter group*, then only records matching all filters are visible. The only exception to this is filtergroup -1 where records only need to match at least one of the filters.
   
 [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)] uses the following filter groups internally.  
   
