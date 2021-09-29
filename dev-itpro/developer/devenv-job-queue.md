@@ -10,11 +10,11 @@ ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
-
 # Job Queue
-This article describes how the job queue works in [!INCLUDE[prod_short](includes/prod_short.md)] so that you can....
 
-Behind the scenes, the job queue uses the task scheduler from the platform. For more information about task scheduler, see [Task Scheduler](devenv-task-scheduler.md).
+This article describes how the job queue works in [!INCLUDE[prod_short](includes/prod_short.md)] from a developer point of view. Behind the scenes, the job queue uses the [task scheduler](devenv-task-scheduler.md) from the platform.
+
+For information about how users work with the job queue in the client, see [Use Job Queues to Schedule Tasks](/dynamics365/business-central/admin-job-queues-schedule-tasks).
 
 ## Job queue flow
 
@@ -42,11 +42,11 @@ Here's a general overview of the process:
 2. When the scheduled task is picked up by the task scheduler to run, a new background session is started.
 3. The background session will run the **Job Queue Dispatcher** codeunit:
     1. It will firstly check if the job should run or reschedule.
-        If it should not run, it will delete itself or reschedule in the case of a already running "Category Code"
+        If it shouldn't run, it will delete itself or reschedule in the case of an already running "Category Code"
     2. The job queue entry will be updated to the **In-Progress** state and a job queue log entry will be created.
     3. The specified **Object ID to Run** will then be started.
     
-       In the event of an exception, none of the subsequent steps will run and the failure codeunit path will run.
+       If there's an exception, none of the subsequent steps will run and the failure codeunit path will run.
 4. The failure codeunit path:
     1. An exception is raised and surfaced.
     2. The **Job Queue Error Handler** codeunit will run in a new background session.
