@@ -45,7 +45,8 @@ Here's a general overview of the process:
         If it should not run, it will delete itself or reschedule in the case of a already running "Category Code"
     2. The job queue entry will be updated to the **In-Progress** state and a job queue log entry will be created.
     3. The specified **Object ID to Run** will then be started.
-        - In the event of an exception, none of the subsequent steps will run and the failure codeunit path will run.
+    
+       In the event of an exception, none of the subsequent steps will run and the failure codeunit path will run.
 4. The failure codeunit path:
     1. An exception is raised and surfaced.
     2. The **Job Queue Error Handler** codeunit will run in a new background session.
