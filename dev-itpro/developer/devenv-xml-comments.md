@@ -24,7 +24,7 @@ Documentation comments are visible when hovering over source symbols, in complet
 > Integration with documentation generator tools like DocFx and SandCastle is currently not supported.
 
 > [!NOTE]  
-> If you have the `showMyCode` setting in the app.json file set to `false` and download an app package; the app package will not contain any XML comments.
+> If you have the `allowDebugging` setting in the app.json file set to `false` and download an app package; the app package will not contain any XML comments.
 
 ## Supported XML tags
 

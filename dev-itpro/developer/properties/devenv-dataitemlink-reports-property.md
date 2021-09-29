@@ -25,7 +25,7 @@ Sets the corresponding fields from two data items that are linked by the [DataIt
 
 The following syntax shows the DataItemLink property.  
   
-**<field>=FIELD\(\<reference field>)**  
+`<field>=FIELD\(\<reference field>)`
   
 The following table describes **field** and **reference field**.  
   

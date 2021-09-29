@@ -13,12 +13,15 @@ ms.author: solsen
 
 # Welcome to the API(v1.0) for [!INCLUDE[prod_short](../../includes/prod_short.md)]
 
-With [!INCLUDE[prod_short](../../includes/prod_short.md)] you can create Connect apps. Connect apps establishes a point-to-point connection between Dynamics 365 Business Central and a 3rd party solution or service and is typically created using standard REST API to interchange data. Any coding language capable of calling REST APIs can be used to develop your Connect app. For more information to get started on Connect apps, see [Developing Connect Apps for Dynamics 365 Business Central](../../developer/devenv-develop-connect-apps.md).
+With [!INCLUDE[prod_short](../../includes/prod_short.md)] you can create Connect apps. Connect apps establish a point-to-point connection between Dynamics 365 Business Central and a 3rd party solution or service and is typically created using standard REST API to interchange data. Any coding language capable of calling REST APIs can be used to develop your Connect app. For more information to get started with Connect apps, see [Developing Connect Apps for Dynamics 365 Business Central](../../developer/devenv-develop-connect-apps.md).
 
 Before you start using the Business Central APIs, please familiarize yourself with the [Microsoft APIs Terms of Use](/legal/microsoft-apis/terms-of-use).
 
 > [!TIP]  
 > For information about enabling APIs for [!INCLUDE[prod_short](../../includes/prod_short.md)] see [Enabling the APIs for Dynamics 365 Business Central](enabling-apis-for-dynamics-nav.md).
+
+> [!TIP]  
+> Looking for version 2.0 of the [!INCLUDE[prod_short](../../includes/prod_short.md)] API? See [Welcome to the API(v2.0) for Business Central](../v2.0/index.md).
 
 ## See Also
 

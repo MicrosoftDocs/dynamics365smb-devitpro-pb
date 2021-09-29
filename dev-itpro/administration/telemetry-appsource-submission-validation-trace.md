@@ -20,11 +20,14 @@ When you submit an app to AppSource using Partner Center, it starts an automated
 
 If an app's set up for it, telemetry traces are emitted to and recorded in Application Insights. The data provides details about the success or failure of different phases of the validation. For more information about setting up telemetry for an app, see [Sending Extension Telemetry to Azure Application Insights](../developer/devenv-application-insights-for-extensions.md).
 
+> [!Note]
+> In order to start analyzing your validation results, use this troubleshooting guide [Dynamics 365 Business Central Troubleshooting Guide (TSG) - AppSource Submission Results (SaaS)](https://github.com/microsoft/BCTech/tree/master/samples/AppInsights/TroubleShootingGuides/D365BC%20Troubleshooting%20Guides%20(TSG)/content/AppSource-Submission-TSG.ipynb).
+
 ## Validation process overview
 
 The validation process starts when you publish the app. The validation runs against each extension in the app, for each country (market) specified for the offer in Partner Center, and for each Business Central version that the submissions targets. For more information versions, see [Against which releases of Business Central is your submission validated?](../developer/devenv-checklist-submission.md#versions).
 
-Extensions are validated using the [AppSourceCop code analyzer](../developer/devenv-using-code-analysis-tool.md) and its rules. Traces are emitted at different phases during the process. Each submission is assigned a unique identifier (ID). This ID is included in each trace for a submission, allowing you to query all trace related to the submission. The general flow for the validation process is illustrated below:
+Extensions are validated using the AL compiler and the [AppSourceCop code analyzer](../developer/devenv-using-code-analysis-tool.md). Traces are emitted at different phases during the process. Each submission is assigned a unique identifier (ID). This ID is included in each trace for a submission, allowing you to query all trace related to the submission. The general flow for the validation process is illustrated below:
 
 1. AppSource submission validation request started
 2. Version (X), country-region (X) validation started
@@ -119,10 +122,10 @@ Occurs when the validation for a specific extension the submission has started.
 |---------|-----|
 |eventId|**LC0032**|
 |countryRegion|Specifies the localized version of the app that will be validated. |
-| extensionId|Specifies the ID of the extension in the submission that will be validated.|
-| extensionName|Specifies the name of the extension in the submission that will be validated.|
-| extensionPublisher|Specifies the publisher of the extension in the submission that will be validated.|
-| extensionVersion|Specifies the version of the extension in the submission that will be validated.|
+|extensionId|Specifies the ID of the extension in the submission that will be validated.|
+|extensionName|Specifies the name of the extension in the submission that will be validated.|
+|extensionPublisher|Specifies the publisher of the extension in the submission that will be validated.|
+|extensionVersion|Specifies the version of the extension in the submission that will be validated.|
 |severity|**Information**|
 |version|Specifies the [Business Central release](../developer/devenv-checklist-submission.md#versions) that the extension will be validated against, like **19.0** or **18.4**.|
 |[See common custom dimensions](#other)||
@@ -133,7 +136,7 @@ Occurs when the validation for a specific extension the submission has started.
 
 ## <a name="validationdiagnosticreported"></a>Validation diagnostic reported
 
-Occurs when an error occurs during the validation of an extension. The errors are the same as the [AppSourceCop Analyzer Rules](../developer/analyzers/appsourcecop.md).
+Occurs when an error occurs during the validation of an extension. The errors are reported by the AL compiler or by the [AppSourceCop](../developer/analyzers/appsourcecop.md) analyzer.
 
 ### General dimensions
 
@@ -147,14 +150,16 @@ Occurs when an error occurs during the validation of an extension. The errors ar
 |Dimension|Description or value|
 |---------|-----|
 |eventId|**LC0034**|
-|countryRegion|Specifies the localized version of the app that was validated. |
-|diagnosticCode|Specifies the AppSourceCop rule ID of the error, like AS0001.|
-|diagnosticMessage|Specifies AppSourceCop rule error message. |
+|countryRegion|Specifies the localized version of the app that was validated.|
+|diagnosticCode|Specifies the diagnostic identifier, like AS0001 or AL0001.|
+|diagnosticMessage|Specifies the diagnostic error message.|
 |diagnosticSeverity|**Error**|
-| extensionId|Specifies the ID of the extension in the submission that will be validated.|
-| extensionName|Specifies the name of the extension in the submission that was validated.|
-| extensionPublisher|Specifies the publisher of the extension in the submission that was validated.|
-| extensionVersion|Specifies the version of the extension in the submission that was validated.|
+|diagnosticSourceLocation|Specifies the location in the source code where the diagnostic was reported. The format used is (Line, Character).|
+|diagnosticSourcePath|Specifies the path to the file where the diagnostic was reported. |
+|extensionId|Specifies the ID of the extension in the submission that will be validated.|
+|extensionName|Specifies the name of the extension in the submission that was validated.|
+|extensionPublisher|Specifies the publisher of the extension in the submission that was validated.|
+|extensionVersion|Specifies the version of the extension in the submission that was validated.|
 |severity|**Error**|
 |version|Specifies the [Business Central release](../developer/devenv-checklist-submission.md#versions) that the extension was validated against, like **19.0** or **18.4**.|
 |[See common custom dimensions](#other)||

@@ -24,7 +24,7 @@ An alternative to classic debugging, is snapshot debugging, which allows you to 
 
 There are a number of limitations to be aware of:
 
-- "External code" can only be debugged if the code has the `showMyCode` flag set. For more information, see [Security Setting and IP Protection](devenv-security-settings-and-ip-protection.md). 
+- "External code" can only be debugged if the code has the `allowDebugging` flag set to `true`. For more information, see [Resource Exposure Policy Setting](devenv-security-settings-and-ip-protection.md). 
 - The debugger launches a new client instance each time you press **F5**. If you close the debugging session, and then start a new session, this new session will rely on a new client instance. We recommend that you close the Web client instances when you close a debugging session.
 - Pausing the debugging session is not supported.
 
@@ -132,7 +132,7 @@ The number of SQL statements tracked by the debugger can be configured in the [!
 
 ## NonDebuggable attribute
 
-The ability to debug certain methods and/or variables can be restricted. For more information, see [NonDebuggable Attribute](methods/devenv-nondebuggable-attribute.md).
+The ability to debug certain methods and/or variables can be restricted. For more information, see [NonDebuggable Attribute](attributes/devenv-nondebuggable-attribute.md).
 
 ## See Also
 

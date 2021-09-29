@@ -27,7 +27,7 @@ Sets the department column for a searched page or report in the Web client.
 
 |Value|Description|
 |-----------|---------------------------------------|
-|**None**|The page or report is not included in a search.|
+|**None**|The page or report isn't included in a search.|
 |**Lists**|The page or report is listed as **Lists** under the **Pages and Tasks** category.|
 |**Tasks**|The page or report is listed as **Tasks** under the **Pages and Tasks** category.|
 |**ReportsAndAnalysis**|The page or report is listed as **Reports and Analysis** under the **Reports and Analysis** category.|
@@ -40,10 +40,12 @@ Sets the department column for a searched page or report in the Web client.
 
 ## Remarks
 
-If the **UsageCategory** is set to **None**, or if you do not specify **UsageCategory**:
+If the **UsageCategory** is set to **None**, or if you don't specify **UsageCategory**:
 
-- The page or report will not show up when you use the search functionality.  
-- Users will not be able to bookmark a link to the page or report object from the user interface.
+- The page or report won't show up when you use the search functionality.  
+- Users won't be able to bookmark a link to the page or report object from the user interface.
+
+The **UsageCategory** is also used to categorize pages and reports shown in the role explorer of the client. The role explorer includes two actions: **Reports and Analysis** and **Administration**. Pages and reports set to **ReportsAndAnalysis** will show when the **Reports and Analysis** action is selected. Pages and reports set to **Administration** will show when the **Administration** action is selected. For more information, see [Finding Pages with the Role Explorer](/dynamics365/business-central/ui-role-explorer).
 
 ## Syntax
 

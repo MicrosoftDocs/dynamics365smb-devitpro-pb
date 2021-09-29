@@ -89,7 +89,7 @@ Keep the following information in mind when you use the App Key Vault feature wi
 
 ### Mark methods as NonDebuggable
 
-When your code works with secrets, whether from a key vault or from Isolated Storage, block the ability to debug relevant methods by using the [NonDebuggable Attribute](methods/devenv-nondebuggable-attribute.md). It prevents other partners from debugging into your code and seeing the secrets.
+When your code works with secrets, whether from a key vault or from Isolated Storage, block the ability to debug relevant methods by using the [NonDebuggable Attribute](attributes/devenv-nondebuggable-attribute.md). It prevents other partners from debugging into your code and seeing the secrets.
 
 ### Don't pass the App Key Vault Secret Provider to untrusted code 
 
