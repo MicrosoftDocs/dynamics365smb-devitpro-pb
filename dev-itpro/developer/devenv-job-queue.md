@@ -20,7 +20,7 @@ Behind the scenes, the job queue uses the task scheduler from the platform. For 
 
 The following diagram illustrates the flow of the job queue:
 
-![Job Queue Activity Flow](media/job-queue-activity-flow.png "Job Queue Activity Flow")
+![Job Queue Activity Flow(media/job-queue-activity-flow.png)](media/job-queue-activity-flow.png)
 
 ## Create and manage job queue
 
