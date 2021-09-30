@@ -52,7 +52,7 @@ The Business Central app that's available from the [Microsoft Store](https://go.
 
 |Moved, Removed, or Replaced? |Why?|
 |---------|---------|
-|Replaced| The legacy app for Windows was based on Universal Windows Platform (UWP). In it's place, we offer an app that's based on Progressive Web Application (PWA) technology, which a more modern technology that provides a better user experience going forward. The legacy app will still be available on the Windows Store for users running Business Central 2021 release wave 1 or earlier.|
+|Replaced| The legacy app for Windows was based on Universal Windows Platform (UWP). In it's place, we offer an app that's based on Progressive Web Application (PWA) technology, which is a more modern technology that provides a better user experience going forward. The legacy app will still be available on the Windows Store for users running Business Central 2021 release wave 1 or earlier.|
 
 ### Removal of the Business Central Server Administration tool (Warning)
 
