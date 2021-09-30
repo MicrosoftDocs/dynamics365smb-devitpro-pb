@@ -39,12 +39,12 @@ A job is run when the task scheduler's task is run. For more information, see [T
 
 Here's a general overview of the process:
 
-1. When a job queue is created and set to ready state, a scheduled task is created to run not before the **Earliest Start Date/Time**.
+1. When a job queue is created and set to ready state, a scheduled task is created to run, but not before the **Earliest Start Date/Time**.
 2. When the scheduled task is picked up by the task scheduler to run, a new background session is started.
 3. The background session is run by the **Job Queue Dispatcher** codeunit:
     1. It first checks whether the job should be run or rescheduled.
 
-        If the job shouldn't run, it's deleted or, in the case of an already running "Category Code", it's rescheduled.
+        If the job shouldn't run, it's deleted. Or, in the case of an already running "Category Code", it's rescheduled.
     2. The job queue entry is updated to the **In-Progress** state, and a job queue log entry is created.
     3. The specified **Object ID to Run** is then started.
 
