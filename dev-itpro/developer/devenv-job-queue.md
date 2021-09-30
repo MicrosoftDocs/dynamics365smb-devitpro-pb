@@ -56,8 +56,8 @@ Here's a general overview of the process:
         2. The errors are saved by using **Error Message Management**.
         3. The job queue entry and job queue log entry are updated with the error.
         4. The job queue then either stays in the **Error** state or is rescheduled:
-            - It will stay in **Error** state if the **Maximum No. of Attempts** has been exceeded and it's not a recurring job.
-            - It will be rescheduled if the maximum attempts have not been exceeded and it's a recurring job.
+            - It will stay in **Error** state if the **Maximum No. of Attempts** value has been exceeded and it's not a recurring job.
+            - It will be rescheduled if the **Maximum No. of Attempts** value hasn't been exceeded and it's a recurring job.
 
 ## About job queue sessions and permissions
 
