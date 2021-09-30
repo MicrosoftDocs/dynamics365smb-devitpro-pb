@@ -36,7 +36,7 @@ When you start a new project, an `app.json` file is generated automatically, whi
 
 ### allowDebugging
 
-To allow debugging into your extension, when the extension is taken as a dependency, you must set the `allowDebugging` flag, otherwise debugging is now allowed. The default value of `allowDebugging` is `false`.
+To allow debugging into your extension, when the extension is taken as a dependency, you must set the `allowDebugging` flag, otherwise debugging is now allowed. The default value of `allowDebugging` is `false`. The **AL: Go!** template sets `allowDebugging` to `true`.
 
 For a more refined setting, you can specify the `NonDebuggable` attribute on methods and variables. Regardless of the resource exposure policy setting, methods and variables marked with the `[NonDebuggable]` attribute, will remain non-debuggable. For more information, see [NonDebuggable Attribute](attributes/devenv-nondebuggable-attribute.md).
 
@@ -54,7 +54,7 @@ If you want to allow debugging into your extension to view the source code, the 
 
 ### allowDownloadingSource
 
-When this is set to `true` in the `app.json` file of extension A, the source code and any media files of extension A can be downloaded, for example, from the **Download Source** option in the **Extension Management** page in [!INCLUDE[prod_short](includes/prod_short.md)]. The default value of `allowDownloadingSource` is `false`.
+When this is set to `true` in the `app.json` file of extension A, the source code and any media files of extension A can be downloaded, for example, from the **Download Source** option in the **Extension Management** page in [!INCLUDE[prod_short](includes/prod_short.md)]. Extension A can be a PTE or a DEV extension. The default value of `allowDownloadingSource` is `false`.
 
 ### includeSourceInSymbolFile
 

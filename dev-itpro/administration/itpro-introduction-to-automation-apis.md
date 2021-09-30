@@ -42,11 +42,11 @@ The {companyId} must be the ID of an valid company on the tenant. Issue a [GET a
 > [!NOTE]  
 > The company which is created will not be initialized.
 
-To rename a company, issue a [PATCH automationCompanies](/dynamics365/business-central/dev-itpro/administration/resources/automationcompany).
+To rename a company, issue a [PATCH automationCompanies](/dynamics365/business-central/dev-itpro/administration/resources/dynamics_automationcompany).
 
 ## Upload and apply a RapidStart package
 
-RapidStart is uploaded, installed, and applied using the APIs described below. RapidStart operations can be time consuming. To get the current status of the RapidStart packages and running operations issue a [GET configurationPackages](/dynamics365/business-central/dev-itpro/administration/resources/configurationpackage) as shown in the following example.
+RapidStart is uploaded, installed, and applied using the APIs described below. RapidStart operations can be time consuming. To get the current status of the RapidStart packages and running operations issue a [GET configurationPackages](/dynamics365/business-central/dev-itpro/administration/resources/dynamics_configurationpackage) as shown in the following example.
 
 ```json
 GET https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/automation/v2.0/companies({companyId})/configurationPackages
@@ -217,7 +217,7 @@ POST https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/micros
 Authorization: Bearer {token}
 ```
 
-Uninstalling the extension can be done through the bound action [Microsoft.NAV.uninstall](api/dynamics_extensionupload_create.md), as with the add-on extensions. The bound action [Microsoft.NAV.uninstallAndDeleteExtensionData] can be used to delete the tables that contain data owned by the extension on uninstall. This action cannot be undone.
+Uninstalling the extension can be done through the bound action [Microsoft.NAV.uninstall](api/dynamics_extensionupload_create.md), as with the add-on extensions. The bound action Microsoft.NAV.uninstallAndDeleteExtensionData can be used to delete the tables that contain data owned by the extension on uninstall. This action cannot be undone.
 
 ### Monitoring extension installation progress
 

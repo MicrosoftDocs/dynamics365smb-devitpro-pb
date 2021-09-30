@@ -50,4 +50,4 @@ You can enter values for the **RequestFilterHeadingML** property in the followin
 ## See Also
 
 [Request Pages](../devenv-request-pages.md)  
-[Multilanguage Development](/dynamics365/business-central/dev-itpro/developer/properties/devenv-work-with-translation-files)
+[Working with Translation Files](../devenv-work-with-translation-files.md)
