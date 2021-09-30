@@ -81,7 +81,7 @@ To help you test the migration, you can run the data replication step in the tar
 When your on-premises solution is connected to the cloud, it is highly recommended that you test the impact of any extension in a sandbox environment before you install the extensions in your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] production environment to help avoid any data failures or unintended consequences.  
 
 > [!TIP]
-> Starting with version 19, 2021 release wave 2, the migration from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises is in two separate steps, which gives you better options to test the migration in a sandbox environment before you migrate to the final production environment. For more information, see the [Manage the migration](#manage-the-migration) section.
+> Starting with 2021 release wave 2 (version 19), the migration from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises is in two separate steps, which gives you better options to test the migration in a sandbox environment before you migrate to the final production environment. For more information, see the [Manage the migration](#manage-the-migration) section.
 
 In order to support data migration, tables and table extensions must specify if data from that table must be migrated or not. By default, the **ReplicateData** property is set to *Yes* so that, by default, any extension that is installed in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online environment will have all its tables migrated.  
 
