@@ -24,7 +24,7 @@ In an AL project there are two JSON files; the `app.json` file and the `launch.j
 
 ## <a name="Appjson"></a>App.json file
 
-The following table describes the settings in the `app.json` file. For an example `app.json` file, see [Business Central Performance Toolkit](https://github.com/microsoft/ALAppExtensions/edit/master/Modules/DevTools/BusinessCentralPerformanceToolkit/app.json).
+The following table describes the settings in the `app.json` file. For an example `app.json` file, see [Business Central Performance Toolkit](https://github.com/microsoft/ALAppExtensions/blob/main/Modules/DevTools/BusinessCentralPerformanceToolkit/app.json).
 
 |Setting|Mandatory|Value|
 |-------|---------|-----|

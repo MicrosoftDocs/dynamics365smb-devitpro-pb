@@ -352,7 +352,9 @@
 ### [Event Example](developer/devenv-events-example.md)
 ### [Walkthrough: Implementing New Workflow Events and Responses](developer/devenv-walkthrough-workflow-events-responses.md)  
 ## [Notifications](developer/devenv-notifications-developing.md)
-## [Task Scheduler](developer/devenv-task-scheduler.md)
+## [Task Scheduler and Job Queue](developer/devenv-task-scheduler.md)
+### [Task Scheduler](developer/devenv-task-scheduler.md)
+### [Job Queue](developer/devenv-job-queue.md)
 ## App Key Vaults for Secrets
 ### [Overview](developer/devenv-app-key-vault-overview.md)
 ### [Setting up App Key Vaults for Online](administration/setup-app-key-vault.md)
@@ -2807,6 +2809,7 @@
 # Removed or deprecated features
 ## Deprecated Tables
 ### [Deprecated Tables](upgrade/deprecated-tables.md)
+### [Deprecated Tables in the India Version](upgrade/india-data-migration-list-of-deprecated-tables.md)
 ## Deprecated Features
 ### [Deprecated Features in W1](upgrade/deprecated-features-w1.md)
 ### [Deprecated Fields, and Fields Marked as Obsolete in Local Functionality](upgrade/deprecated-fields.md)
@@ -2977,6 +2980,8 @@
 ####### [Overview](developer/devenv-migrate-table-fields.md)
 ####### [Moving Tables and Fields Down](developer/devenv-migrate-table-fields-down.md)
 ####### [Moving Tables and Fields Up](developer/devenv-migrate-table-fields-up.md)
+###### Data Migration Toolkit - India
+####### [Overview](upgrade/india-data-migration-toolkit-overview.md)
 #### Technical Upgrade
 ##### [From Version 14](upgrade/upgrade-technical-upgrade-v14-v19.md)
 ##### [From Version 16, 17, or 18](upgrade/upgrade-technical-upgrade-v19.md)

@@ -62,7 +62,7 @@ end;
  If the code runs on Microsoft Dynamics NAV Application Server, then the message will not be displayed.  
 
 > [!NOTE]  
-> If the [Message Method \(Dialog\)](../../methods-auto/dialog/dialog-message-method.md) or the [Error Method \(Dialog\)](../../methods-auto/dialog/dialog-error-method.md) is called when the code is running on Microsoft Dynamics NAV Application Server, then the message is written to the event log of the operating system. 
+> If the [Message Method \(Dialog\)](../../methods-auto/dialog/dialog-message-method.md) or the [Error Method \(Dialog\)](../dialog/dialog-error-string-joker-method.md) is called when the code is running on Microsoft Dynamics NAV Application Server, then the message is written to the event log of the operating system. 
 
 ## See Also
 

@@ -16,7 +16,7 @@ ms.author: solsen
 
 With the AL Profiler for the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] you can capture a performance profile of the code that was executed for a snapshot. Using the performance profiling editor view in Visual Studio Code, you can investigate the time spent on execution, using top-down and bottom-up call stack views.
 
-The AL profiler works on a snapshot of running code. Snapshot debugging is a recording of running code that allows for later offline inspection. For more information, see [Snapshot Debugging](devenv-snapshot-debugging.md). 
+The AL profiler works on a snapshot of running code. Snapshot debugging is a recording of running code that allows for later offline inspection. To be able to snapshot debug, you must be a **delegated admin**. For more information, see [Snapshot Debugging](devenv-snapshot-debugging.md). 
 
 ## Snapshot configuration setting
 
@@ -62,6 +62,8 @@ To investigate the data shown in the graph, you can use different view modes as 
 |System Application|Green|
 |Base Application|Magenta|
 |Other Extensions|Yellow|
+|System|Blue|
+|Custom|Named extension, defaults to "extension" if not found|
 
 The color legend can be changed by specifying the `al.profilerColors` property in the AL configuration. For more information, see [AL Language Extension Configuration](devenv-al-extension-configuration.md).
 

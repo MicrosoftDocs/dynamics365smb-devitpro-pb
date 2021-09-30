@@ -27,7 +27,7 @@ You can specify text encoding for the following objects.
   
 |Object or data type|For more information, see|  
 |-------------|----------------|  
-|**XMLports**|[TextEncoding Property \(XMLports\)](/dynamics365/business-central/dev-itpro/developer/devenv-textencoding-property)|  
+|**XMLports**|[TextEncoding Property \(XMLports\)](properties/devenv-textencoding-property.md)|  
 |**File**|[OPEN Method \(File\)](./methods-auto/file/file-open-method.md)|  
 |**BLOB**|[CREATEINSTREAM Method \(BLOB\)](./methods-auto/blob/blob-createinstream-method.md)<br /><br /> [CREATEOUTSTREAM Method \(BLOB\)](./methods-auto/library.md)|  
   
@@ -77,6 +77,7 @@ For example, if an XMLport can import bank files from a foreign bank in addition
   
 Windows encoding is compatible with ASCII so that it will understand files written in ASCII format.  
   
-## See Also  
-[TextEncoding Property (XMLports)](/dynamics365/business-central/dev-itpro/developer/devenv-textencoding-property)  
+## See Also
+
+[TextEncoding Property (XMLports)](properties/devenv-textencoding-property.md)  
 [File Data Type](./methods-auto/library.md)
