@@ -70,7 +70,7 @@ The area in which a part is embedded on a page determines whether the part can b
 ### Choosing the visibility of parts
 Parts can be hidden on the hosting page to provide an optimal starting experience. For example, a part could be hidden because it contains secondary content, or content that is needed by only some categories of users. To hide a part, set the **Visible** property of the part to `false` on the hosting page.  
 
-When you design a page with hidden parts, users can choose to display those parts again using personalization and role customization features in the user interface. Parts can be made visible programmatically using an expression, for example, depending on whether the feature has been set up by administrators. Learn more about [Dynamic Visibility of Controls](/properties/devenv-visible-property.md#dynamic-visibility-of-controls).
+When you design a page with hidden parts, users can choose to display those parts again using personalization and role customization features in the user interface. Parts can be made visible programmatically using an expression, for example, depending on whether the feature has been set up by administrators. Learn more about [Dynamic Visibility of Controls](properties/devenv-visible-property.md#dynamic-visibility-of-controls).
 
 > [!NOTE]  
 > Parts embedded on Role Center pages can't be made visible using expressions, because the hosting Role Center page can't execute code.
