@@ -107,8 +107,9 @@
 # Administration
 ## [Administration of Business Central Online](administration/tenant-administration.md)
 ## Understand Business Central online
+### [Understanding the Infrastructure](administration/tenant-administration.md#infrastructure)
 ### [Get Started as a Reseller of Business Central Online](administration/get-started-online.md)
-### [Country/Regional availability and Supported Translations](compliance/apptest-countries-and-translations.md)
+### [Country/Regional Availability and Supported Translations](compliance/apptest-countries-and-translations.md)
 ### [Delegated Administrator Access to Business Central Online](administration/delegated-admin.md)
 ### [Major Updates and Minor Updates](administration/update-rollout-timeline.md)
 ### [Version Numbers in Business Central](administration/version-numbers.md)
@@ -2808,6 +2809,7 @@
 # Removed or deprecated features
 ## Deprecated Tables
 ### [Deprecated Tables](upgrade/deprecated-tables.md)
+### [Deprecated Tables in the India Version](upgrade/india-data-migration-list-of-deprecated-tables.md)
 ## Deprecated Features
 ### [Deprecated Features in W1](upgrade/deprecated-features-w1.md)
 ### [Deprecated Fields, and Fields Marked as Obsolete in Local Functionality](upgrade/deprecated-fields.md)
@@ -2978,6 +2980,8 @@
 ####### [Overview](developer/devenv-migrate-table-fields.md)
 ####### [Moving Tables and Fields Down](developer/devenv-migrate-table-fields-down.md)
 ####### [Moving Tables and Fields Up](developer/devenv-migrate-table-fields-up.md)
+###### Data Migration Toolkit - India
+####### [Overview](upgrade/india-data-migration-toolkit-overview.md)
 #### Technical Upgrade
 ##### [From Version 14](upgrade/upgrade-technical-upgrade-v14-v19.md)
 ##### [From Version 16, 17, or 18](upgrade/upgrade-technical-upgrade-v19.md)

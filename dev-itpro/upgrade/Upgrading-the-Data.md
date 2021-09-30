@@ -56,7 +56,7 @@ Before you start the upgrade tasks, make sure you meet the following prerequisit
     |[!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)]| Upgrade110014x.FOB|Upgrade1100130.FOB|
     |[!INCLUDE[prod_short](../developer/includes/prod_short.md)] Fall 2018| Upgrade13x14x.FOB|Not applicable|
 
-   For local versions, you will find the upgrade toolkit objects in the **UpgradeToolKit\Local Objects** folder. The files follow the same naming convention except they include the 2-letter local version, such as **Upgrade110014x.DK.fob** for Denmark or **Upgrade110014x.DE.fob** for Germany.
+   For local versions, you will find the upgrade toolkit objects in the **UpgradeToolKit\Local Objects** folder. The files follow the same naming convention except they include the 2-letter local version, such as **Upgrade110014x.DK.fob** for Denmark, **Upgrade110014x.DE.fob** for Germany, or **Upgrade90014x.IN.fob** for India.
 
 5. You have exported the customized permission sets (except SUPER) and permissions from the old database that you want to reuse in the upgraded database.
 
@@ -467,6 +467,7 @@ Complete this task if you are upgrading one of the following:
 
 - Denmark (DK) version of [!INCLUDE[nav2017](../developer/includes/nav2017.md)] or earlier
 - German (DE) version of Dynamics NAV or [!INCLUDE[prod_short](../developer/includes/prod_short.md)] October 2018 (Cumulative Update 2 or earlier)
+- India (IN) version of Dynamics NAV 2016
 
 With these language versions, some of the local functionality has been moved from the base application to extensions. These extensions will have to be published and installed to maintain the functionality. The extensions are avilable on the installation media (DVD). 
 
@@ -484,6 +485,21 @@ If you are upgrading from a German (DE) version you must publish and install the
 |Name|Extension package|
 |----|---------|
 |ELSTER VAT Localization for Germany| Elster.app|
+
+If you are upgrading from a India (IN) version of Dynamics NAV 2016, you must publish and install the following extensions to get the local functionality:
+
+|Name|Extension package|
+|----|---------|
+|India Tax Base| IndiaTaxBase.app|
+|India Tax Engine| IndiaTaxEngine.app||
+|India Tax GST| IndiaTaxGST.app|
+|India Upgrade Tables| IndiaUpgradeTables.app|
+|India TCS| IndiaUPGTCS.app|
+|India TDS| IndiaUPGTDS.app|
+|Fixed Asset Depreciation for India| INFADepreciation.app|
+|India Gate Entry| INGateEntry.app|
+|India Voucher Interface|INVoucherInterface.app|
+|India Data Migration|UPGIndia.app|
 
 Follow these steps for each extension by using the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]:
 

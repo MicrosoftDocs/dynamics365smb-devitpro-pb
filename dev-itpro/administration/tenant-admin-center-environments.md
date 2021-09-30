@@ -17,14 +17,14 @@ ms.author: jswymer
 The **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provides you with an overview of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] production and sandbox environments for the tenant, and you can manage updates for each environment.
 
 > [!div class="mx-imgBorder"]
-> ![Business Central Admin Center.](../developer/media/admin/business_central_admin_center.png)
+>  [ ![Business Central Admin Center.](../developer/media/business_central_admin_center-v2.png)](../developer/media/business_central_admin_center-v2.png)
 
 ## Viewing details for an environment
 
 In the environments list, you can view more details by choosing the link in the **Name** column.
 
 > [!div class="mx-imgBorder"]
-> ![View details about an environment.](../developer/media/admin/business_central_admin_center_details.png)
+> ![View details about an environment.](../developer/media/admin/business_central_admin_center_details-V3.png)
 
 ## Types of environments
 
@@ -59,7 +59,7 @@ You can create new environments that are either production environments or sandb
 1. On the **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], choose the **New** action on the action ribbon.
 2. In the **Create Environment** pane, Specify a name for the new environment.
 3. In the **Environment Type** list, choose **Production** or **Sandbox**.
-4. In the **Application family** field, specify the type of solution that this environment is based on if this is not [!INCLUDE [prod_short](../includes/prod_short.md)].  
+4. In the **Application family** field, specify the type of solution that this environment is based on if this isn't [!INCLUDE [prod_short](../includes/prod_short.md)].  
 5. In the **Country** list, select the country for the environment. The specified country determines the localization for the environment and the Azure region in which the environment is created and stored.
 6. In the **Version** list, specify the relevant application version for the new environment if more than one version is available.  
 7. Choose the **Create** action.  
@@ -92,15 +92,46 @@ You can create an environment that is a copy of an existing environment, such as
 
 1. Select **Environments**, then select the environment you want to rename.
 2. On the **Environment Details** page, choose the **Copy** action.
-3. In the **Copy environment** pane, specify the type of environment that you want to created based on the current environment.
+3. In the **Copy environment** pane, specify the type of environment that you want to create based on the current environment.
 4. Specify a name for the new environment.
 5. Choose the **Create** action.
 
-When the process starts, you can go to the list of your environments and see the status of the new environment. At first, you'll see the new environment with the state **Copy queued**, which changes to **Copying**, and then **Active** once the new environment is fully up and running. The original environment that this new environment is based on remains active.  
+When the process starts, you can go to the list of your environments and see the status of the new environment. At first, you'll see the new environment with the state **Copy queued**, which changes to **Copying**, and then **Active** once the new environment is fully up and running. The original environment that the new environment is based on remains active.  
 
 ### Sandboxes based on production environments
 
 [!INCLUDE [admin-env-sandbox-precautions](../developer/includes/admin-env-sandbox-precautions.md)]
+
+## Manage access using Azure Active Directory groups
+
+To manage access at the environment level, you can assign an Azure Active Directory (Azure AD) group to the environment. By assigning an Azure AD group to an environment, direct members of that Azure AD group will be synchronized to Business Central and granted access to that environment. Using Azure AD groups brings the following benefits:
+
+- Central management of access to environments through Azure AD groups.  
+- Only the users in the assigned Azure AD group are imported into the environment.
+
+From the **Environments** page, you'll see the currently assigned group in the **Security Group** column. **Not set** indicates that no group has been assigned. **Not available** indicates that the group that was assigned is no longer available in the Azure AD.
+
+### Assign, change, or remove a group
+
+Before you can assign an Azure AD group to an environment, the group must be created in your Azure AD tenant. For more information, see [Create a basic group and add members using Azure Active Directory](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) in the Azure documentation.
+
+1. Select **Environments**, then select the environment on which you want to assign, change, or remove the group.
+2. On the **Environment Details** page, the currently assigned group is shown under **Security Group**.
+
+    - To assign a group, select **(Define)**.
+    - To change or remove the currently assigned group, select **Modify**.
+3. The **Edit Security Group** pane shows the current security group, if any, followed by all the available groups in Azure AD.
+
+   - To assign or change a group, search for and select the group from the list.
+   - To remove a group, select ![Unassign a group.](../developer/media/admin/admin-center-delete-group.png) under **Current Security Group**.
+
+    > [!NOTE]
+    > If there are more than 10,000 groups in Azure AD, they can't all be retrieved and displayed in the admin center. Instead, you'll see the message **You have too many groups to display them all**. In this case, you'll have to enter the object ID of the group that you want to assign. You get the object ID from the [Azure portal](https://portal.azure.com).
+
+4. Select **Save** when done.
+
+> [!NOTE]
+> If you change or remove a group, it can take a while before the changes to take effect or access is revoked from users.
 
 ## <a name="opslog"></a>Log of administrative operations
 

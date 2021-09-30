@@ -89,7 +89,7 @@ You can verify the availability of that web service by using a browser. Or choos
      The company name is case-sensitive.  
 
      > [!TIP]
-     > If you're using the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] API, you can see a description of the endpoints at [Endpoints for the APIs for Dynamics 365 Business Central On-Premises and Online](/dynamics-nav/api-reference/v1.0/endpoints-apis-for-dynamics).
+     > If you're using the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] API, you can see a description of the endpoints at [Endpoints for the APIs for Dynamics 365 Business Central On-Premises and Online](../api-reference/v1.0/endpoints-apis-for-dynamics.md).
   
 2.  Review the information that is displayed in the browser. Verify that you can see the name of the web service that you've created.  
   

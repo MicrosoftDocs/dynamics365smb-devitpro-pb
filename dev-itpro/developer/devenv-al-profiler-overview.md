@@ -62,6 +62,8 @@ To investigate the data shown in the graph, you can use different view modes as 
 |System Application|Green|
 |Base Application|Magenta|
 |Other Extensions|Yellow|
+|System|Blue|
+|Custom|Named extension, defaults to "extension" if not found|
 
 The color legend can be changed by specifying the `al.profilerColors` property in the AL configuration. For more information, see [AL Language Extension Configuration](devenv-al-extension-configuration.md).
 

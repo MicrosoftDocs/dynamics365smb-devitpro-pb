@@ -307,6 +307,22 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     ```powershell
     Publish-NAVApp -ServerInstance $NewBcServerInstance -Path "C:\W1DVD\Applications\SalesAndInventoryForecast\Source\SalesAndInventoryForecast.app"
     ```
+   >[!NOTE]
+   >
+   > If you are upgrading from an India (IN) version of Dynamics NAV 2016, you must publish the following extensions to get the local functionality. The below extensions available in the DVD under the **Application** folder in DVD.
+   >
+   > | Folder | Extension Package |
+   > |------|-------------------|
+   > |INTaxEngine|Microsoft_TaxEngine.app|
+   > |INTaxBase|Microsoft_TaxBase.app|
+   > |QRGenerator|Microsoft_QRGenerator.app|
+   > |INGST|Microsoft_India GST.app|
+   > |INTCS|Microsoft_India TCS.app|
+   > |INTDS|Microsoft_India TDS.app|
+   > |INFADepreciation|Microsoft_Fixed Asset Depreciation For India.app|
+   > |INGateEntry|Microsoft_India Gate Entry.app|
+   > |INVoucherInterface|Microsoft_India Voucher Interface.app|
+   > |INReports|Microsoft_India Reports.app|
 
 5. Publish 3rd-party extensions.
 
@@ -388,6 +404,23 @@ If you have a multitenant deployment, do these steps for each tenant.
     Sync-NAVApp -ServerInstance $NewBcServerInstance -Tenant $TenantId -Name "<extension name>" -Version $NewVersion
     ```
 
+  >[!NOTE]
+  >
+  > If you are upgrading from an India (IN) version of Dynamics NAV 2016, you must synchronize the tenant with the India extensions.
+  >
+  > | Name |
+  > |------|
+  > |India Tax Engine|
+  > |India Tax Base|
+  > |QR Generator|
+  > |India GSTS|
+  > |India TCS|
+  > |India TDS|
+  > |Fixed Asset Depreciation for India|
+  > |India Gate Entry|
+  > |India Voucher Interface|
+  > |India Reports|
+
 > [!TIP]
 > When you synchronize an extension, the extension takes ownership of any tables that it includes. In SQL Server, you'll notice that the table names will be suffixed with the extension ID. For example, Base Application tables will have `437dbf0e-84ff-417a-965d-ed2bb9650972` in the name. In addition, the systemId column is added to application tables that are not already part of an extension.
 
@@ -421,6 +454,14 @@ If you have a multitenant deployment, do these steps for each tenant.
         ```powershell
         Install-NAVApp -ServerInstance $NewBcServerInstance -Tenant $TenantId -Name "Application" -Version $NewVersion
         ```
+    > [!NOTE]
+    >
+    > If you are upgrading from an India (IN) version of Dynamics NAV 2016, you must install the India extensions.
+    >
+    > | Name |
+    > |------|
+    > |QR Generator|
+    > |India Reports|
 
     2. For each extension, run [Start-NAVAppDataUpgrade cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/start-navappdataupgrade):
 
@@ -429,6 +470,21 @@ If you have a multitenant deployment, do these steps for each tenant.
         ```
 
         This step will also automatically install the new extension version on the tenant.
+
+   > [!NOTE]
+   >
+   > If you are upgrading from an India (IN) version of Dynamics NAV 2016, you must upgrade the India extensions.
+   >
+   > | Name |
+   > |------|
+   > |India Tax Engine|
+   > |India Tax Base|
+   > |India GSTS|
+   > |India TCS|
+   > |India TDS|
+   > |Fixed Asset Depreciation for India|
+   > |India Gate Entry|
+   > |India Voucher Interface|
 
 3. (Multitenant only) Repeat steps 1 through 3 for each tenant.
 
@@ -440,6 +496,38 @@ Complete this task to install third-party extensions for which a new version was
 Install-NAVApp -ServerInstance $NewBcServerInstance -Name <extension name> -Version <extension version>
 ```
 
+   > [!NOTE]
+   >
+   > If you are upgrading from an India (IN) version of Dynamics NAV 2016, you must Publish, Sync & Install India Data Migration Extension. 
+   > Publish the ‘India Data Migration’ extension by running the PublishNAVApp cmdlet:
+   >
+   > Run the following command:
+   > ```Powershell
+   > Publish-NAVApp -ServerInstance <ServerInstanceName> -Path <ExtensionFileName> 
+   > ```
+   > Synchronize the extension with the database by running the Sync-NAVApp cmdlet for ‘India Data Migration’ extension:
+   > Run the following command:
+   > ```Powershell
+   > Sync-NAVApp -ServerInstance <ServerInstanceName> -Name <Name> -Version <N.N.N.N>
+   > ```
+   > Run the following command to Upgrade the Extension Data:
+   > ```Powershell
+   > Start-NAVAppDataUpgrade -ServerInstance <server instance name> -Name "<extension name>" -Version <extension 
+   > ```
+   >
+   > **Run assisted setup**
+   > - Start Web Client and search for Assisted Setup and Run Setup Tax Engine for each company.
+   > - Search for Assisted Setup and Run Finalize Data Migration for each company.
+   >
+   > **Uninstall & unpublish extension**
+   > - UnInstall Extension India Data Migration.app
+   > ```Powershell
+   > Uninstall-NAVApp -ServerInstance <server instance name> -Name <extension name> -Version <extension version>
+   > ```
+   > - **Unpublish Extension India Data Migration.app**
+   > ```Powershell
+   > Unpublish-NAVApp -ServerInstance <server instance name> -Name <extension name> -Version <extension version2
+   > ```
 ## Task 12: <a name="JSaddins"></a>Upgrade control add-ins
 
 [!INCLUDE[upgrade-control-addins](../developer/includes/upgrade-control-addins.md)]
