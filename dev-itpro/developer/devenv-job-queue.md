@@ -12,7 +12,7 @@ author: jswymer
 ---
 # Job Queue
 
-This article describes how the job queue works in [!INCLUDE[prod_short](includes/prod_short.md)]. A job queue is basically an abstraction using task scheduler to enable end users to view, create, or modify jobs that are set to run in the background. These jobs can be set to run on a recurring schedule. Behind the scenes, the job queue uses the [task scheduler](devenv-task-scheduler.md) from the platform.
+This article describes how the job queue works in [!INCLUDE[prod_short](includes/prod_short.md)]. A job queue is basically an abstraction that uses the [task scheduler](devenv-task-scheduler.md) from the platform to enable end users to view, create, or modify jobs that are set to run in the background. These jobs can be set to run on a recurring schedule.
 
 For information about how users work with the job queue in the client, see [Use Job Queues to Schedule Tasks](/dynamics365/business-central/admin-job-queues-schedule-tasks).
 
@@ -35,7 +35,7 @@ This section describes the flow that a job queue goes through.
 
 ### General flow
 
-A job is run when the task scheduler's task is run. For more information, see [Task Scheduler](devenv-task-scheduler.md).
+A job is run when the task scheduler's task is run. For more information, see [Task scheduler - detailed flow](devenv-task-scheduler.md#detailed-flow).
 
 Here's a general overview of the process:
 
@@ -82,6 +82,8 @@ You can set up Business Central to send telemetry traces to an Application Insig
 From the Business Central web client, you can open the Session Events table by adding `table=2000000111` to the URL. For example: [https://businesscentral.dynamics.com/?table=2000000111](https://businesscentral.dynamics.com/?table=2000000111).
 
 ## See Also
+
+[Task Scheduler](devenv-task-scheduler.md).
 [Task Scheduler Data Type](methods-auto/taskscheduler/taskscheduler-data-type.md)   
 [Developing Extensions](devenv-dev-overview.md)  
 [Getting Started with AL](devenv-get-started.md) 
