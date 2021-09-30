@@ -15,11 +15,11 @@ ms.service: "dynamics365-business-central"
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1 (v18) introduced a new model for permissions. In previous versions, permission sets and permissions are defined only as data, which means they're stored in the tables of the application and tenant databases. Permission sets and permissions can now be defined in AL code. They're created by using the `permissionset` and `permissionsetextension` objects in AL code, then packaged in extensions. See [Entitlements and Permissions](../developer/devenv-entitlements-and-permissionsets-overview.md) to learn more.
 
-This change has implications on upgrade, which are discussed in this article.
+This change has implications on upgrade from versions earlier than version 18. Or, if you're upgrading a version 18 that still uses the legacy databased permission sets, and you want upgrade permission sets that are based on Microsoft permission sets to the latest changes. These implications are discussed in this article.
 
 ## Overview
 
-Permissions as AL objects is now the default model in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. You'll see this change, for example, if you install v18 demonstration database. If you view the permissions-related tables in the database, like the **Permission Set** and **Permission** tables, you'll notice that tables are almost empty.
+Permissions as AL objects is now the default model in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. You'll see this change, for example, if you install v18 or v19 demonstration database. If you view the permissions-related tables in the database, like the **Permission Set** and **Permission** tables, you'll notice that tables are almost empty.
 
 Although it's recommended to transition to permissions defined as AL objects, you can choose to continue using the legacy databased permissions model. You specify which permissions model your solution uses by changing [!INCLUDE[server](../developer/includes/server.md)] setting called **Use Permission Sets From Extensions**.
 
@@ -81,13 +81,13 @@ If you've customized Microsoft permission sets, it's important to know what you'
    |If the change|Then|See...|
    |----|----|---|
    |Only added new permissions to an existing permission set|Create an AL permission set extension object with the added permissions.|[Permission Set Extension Object](../developer/devenv-permissionset-ext-object.md)|
-   |Removed or changed permissions in a permission set|For these type of changes, you'll create an AL permission set object.<ol><li>Make a copy of version 18 AL permission set file.</li><li>Modify the copy to include the customizations you want.</li></ol> |[Permission Set Object](../developer/devenv-permissionset-object.md)
+   |Removed or changed permissions in a permission set|For these type of changes, you'll create an AL permission set object.<ol><li>Make a copy of version 18 or version 19 AL permission set file.</li><li>Modify the copy to include the customizations you want.</li></ol> |[Permission Set Object](../developer/devenv-permissionset-object.md)
 
 3. Create an AL project for version 18. Include the permission set files that you created in step 2 and other custom permission sets generated in step 1.6.
 
 4. Compile and build the extension package.
 
-5. Upgrade your [!INCLUDE [prod_short](../developer/includes/prod_short.md)] to version 18.
+5. Upgrade your [!INCLUDE [prod_short](../developer/includes/prod_short.md)] to version 18 or 19.
 
     > [!IMPORTANT]
     > If you have a multitenant deployment, when you mount tenants, give tenants permission to write to the application database.
@@ -110,21 +110,21 @@ Your application can use permission sets from various sources, like Microsoft, p
 
     For more information, see [To export and import a permission set](/dynamics365/business-central/ui-define-granular-permissions#to-export-and-import-a-permission-set).
 
-2. Install version 18 with the demonstration database.
-3. From the version 18 client, open the **Permissions Sets** page, and export the **System** permission sets to a file.
+2. Install version 18 or 19 with the demonstration database.
+3. From the version 18 or 19 client, open the **Permissions Sets** page, and export the **System** permission sets to a file.
 4. Using a file comparison tool, compare the to XML files and merge the necessary changes into a single XML file.
 
     Now you have upgraded permissions as XML.
-5. Upgrade your [!INCLUDE [prod_short](../developer/includes/prod_short.md)] to version 18.
+5. Upgrade your [!INCLUDE [prod_short](../developer/includes/prod_short.md)] to version 18 or 19.
 
     > [!IMPORTANT]
     > If you have a multitenant deployment, make sure the tenants are allowed to write to application database.
 
-6. If not already done during upgrade, set the `UsePermissionSetsFromExtensions` parameter of [!INCLUDE [server](../developer/includes/server.md)] instance (version 18) to `false`.
+6. If not already done during upgrade, set the `UsePermissionSetsFromExtensions` parameter of [!INCLUDE [server](../developer/includes/server.md)] instance (version 18 or 19) to `false`.
 
     > [!NOTE]
     >  Restart the [!INCLUDE [server](../developer/includes/server.md)] instance.
-7. From the version 18 client, open the **Permissions Sets** page, and import the permission sets from the newly created XML file.
+7. From the version 18 or 19 client, open the **Permissions Sets** page, and import the permission sets from the newly created XML file.
 
 ## See Also  
 

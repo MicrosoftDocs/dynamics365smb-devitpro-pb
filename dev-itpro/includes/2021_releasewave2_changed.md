@@ -1,0 +1,1 @@
+> **CHANGED IN:** Business Central 2021 release wave 2
