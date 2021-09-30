@@ -14,7 +14,7 @@ ms.author: edupont
 
 # Administration of Business Central Online
 
-Administrator that can manage [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online tenants are either an internal administrator, who is an employee of the company that bought the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] subscription, or an administrator from the reselling partner company. Some of the tools are the same, and some tools are available to partners only. Here you can learn which tools are available to you as an administrator.  
+Administrators that can manage [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online tenants are either an internal administrator, who is an employee of the company that bought the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] subscription, or an administrator from the reselling partner company. Some of the tools are the same, and some tools are available to partners only. Here you can learn which tools are available to you as an administrator.  
 
 ## Administration as an internal administrator
 
@@ -98,7 +98,7 @@ As a reselling partner, you must be the first line of support for your [!INCLUDE
 
 ## <a name="expire"></a>Data and access when a trial or subscription ends
 
-Trials can expire, and so can a paid subscription, such as if the customer does not renew the subscription, stops payments, or if the customer cancels the subscription.  
+Trials can expire, and so can a paid subscription, such as if the organization does not renew the subscription, stops payments, or if they cancel the subscription.  
 
 [!INCLUDE [admin-extendtrials-periods](../developer/includes/admin-extendtrials-periods.md)]
 
