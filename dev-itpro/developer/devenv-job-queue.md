@@ -12,7 +12,7 @@ author: jswymer
 ---
 # Job Queue
 
-This article describes how the job queue works in [!INCLUDE[prod_short](includes/prod_short.md)] from a developer point of view. Behind the scenes, the job queue uses the [task scheduler](devenv-task-scheduler.md) from the platform.
+This article describes how the job queue works in [!INCLUDE[prod_short](includes/prod_short.md)]. A job queue is basically an abstraction using task scheduler to enable end users to view, create, or modify jobs that are set to run in the background. These jobs can be set to run on a recurring schedule. Behind the scenes, the job queue uses the [task scheduler](devenv-task-scheduler.md) from the platform.
 
 For information about how users work with the job queue in the client, see [Use Job Queues to Schedule Tasks](/dynamics365/business-central/admin-job-queues-schedule-tasks).
 
@@ -22,12 +22,13 @@ The following diagram illustrates the flow of the job queue:
 
 [ ![Shows the job queue activity flow.](media/job-queue-activity-flow.png) ](media/job-queue-activity-flow.png)
 
+<!--
 ## Create and manage job queue
 
-A job queue is basically an abstraction using task scheduler to enable end users to view, create, or modify jobs that are set to run in the background. These jobs can be set to run on a recurring schedule.
+
 
 .. Add some examples
-
+-->
 ## How job queue works
 
 This section describes the flow that a job queue goes through.
@@ -40,22 +41,23 @@ Here's a general overview of the process:
 
 1. When a job queue is created and set to ready state, a scheduled task is created to run not before the **Earliest Start Date/Time**.
 2. When the scheduled task is picked up by the task scheduler to run, a new background session is started.
-3. The background session will run the **Job Queue Dispatcher** codeunit:
-    1. It will firstly check if the job should run or reschedule.
-        If it shouldn't run, it will delete itself or reschedule in the case of an already running "Category Code"
-    2. The job queue entry will be updated to the **In-Progress** state and a job queue log entry will be created.
-    3. The specified **Object ID to Run** will then be started.
-    
-       If there's an exception, none of the subsequent steps will run and the failure codeunit path will run.
-4. The failure codeunit path:
+3. The background session is run by the **Job Queue Dispatcher** codeunit:
+    1. It first checks whether the job should be run or rescheduled.
+
+        If the job shouldn't run, it's deleted or, in the case of an already running "Category Code", it's rescheduled.
+    2. The job queue entry is updated to the **In-Progress** state, and a job queue log entry is created.
+    3. The specified **Object ID to Run** is then started.
+
+       If an exception occurs, none of the subsequent steps in the Job Queue Dispatcher path will be run, but instead, the failure codeunit path will be run.
+4. The failure codeunit path runs as follows:
     1. An exception is raised and surfaced.
-    2. The **Job Queue Error Handler** codeunit will run in a new background session.
-        1. It will update the job queue entry to error state.
-        2. Save the error(s) using **Error Message Management**.
-        3. Update the job queue entry and job queue log entry with the error.
-        4. The job queue will then either stay in Error state or be rescheduled.
-            - The job queue will stay in error state if the **Maximum No. of Attempts** has been exceeded and isn't a recurring job.
-            - If the maximum attempts have not been exceeded and is a recurring job, it will be rescheduled.
+    2. The **Job Queue Error Handler** codeunit is run in a new background session.
+        1. The job queue entry is updated to the **Error** state.
+        2. The errors are saved by using **Error Message Management**.
+        3. The job queue entry and job queue log entry are updated with the error.
+        4. The job queue then either stays in the **Error** state or is rescheduled:
+            - It will stay in **Error** state if the **Maximum No. of Attempts** has been exceeded, it's not a recurring job.
+            - It will be rescheduled if the maximum attempts have not been exceeded and it's a recurring job.
 
 ## About job queue sessions and permissions
 
