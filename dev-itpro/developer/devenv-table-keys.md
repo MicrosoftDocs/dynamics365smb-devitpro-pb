@@ -171,6 +171,9 @@ table 50120 MyBaseTable
         field(2; MyBaseField2; Integer)
         {
         }
+        field(3; MyBaseField3; Integer)
+        {
+        }
     }
 
     keys
@@ -181,6 +184,7 @@ table 50120 MyBaseTable
         }
         key(Key1; MyBaseField2) //secondary key
         {
+            IncludeFields = MyBaseField3;
         }
     }
 }
@@ -208,6 +212,22 @@ tableextension 50121 MyBaseTableExt extends MyBaseTable
         {
             IncludeFields = MyExtField2,MyExtField3;
         }
+        key(ExtKey2; MyBaseField1, MyBaseField2) //secondary key
+        {
+        }
+        // The following key isn't allowed because it contains fields from the base table and the table extension
+        //key(ExtKey3; MyBaseField1, MyExtField2)
+        //{
+        //}
+    }
+}
+
+```AL
+// This example illustrates how you can add indexes to a base table using a table extension (available in 2021 release wave 1 and later)
+tableextension 50121 MyBaseTableExt extends MyBaseTable
+{
+    keys
+    {
         key(ExtKey2; MyBaseField1, MyBaseField2) //secondary key
         {
         }
