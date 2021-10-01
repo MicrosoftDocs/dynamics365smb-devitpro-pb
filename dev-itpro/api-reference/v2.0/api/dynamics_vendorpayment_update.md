@@ -11,7 +11,10 @@ ms.date: 04/01/2021
 ms.author: solsen
 ---
 
-# Update vendorPayments 
+# Update vendorPayments
+
+[!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
+
 Update the properties of a vendorPayment object for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## HTTP request

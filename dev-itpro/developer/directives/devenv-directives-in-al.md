@@ -72,5 +72,5 @@ For more information, see [JSON Files](../devenv-json-files.md).
 [Best Practices for Deprecation of Code in the Base App](../devenv-deprecation-guidelines.md)  
 [ObsoleteState Property](../properties/devenv-obsoletestate-property.md)  
 [ObsoleteReason Property](../properties/devenv-obsoletereason-property.md)  
-[ObsoleteTag Property](properties/devenv-obsoletetag-property.md)  
+[ObsoleteTag Property](../properties/devenv-obsoletetag-property.md)  
 [Obsolete Attribute](../attributes/devenv-obsolete-attribute.md)  

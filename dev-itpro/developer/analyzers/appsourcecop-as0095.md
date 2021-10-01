@@ -3,7 +3,7 @@ title: "AppSourceCop Rule AS0095"
 description: "The access modifier of a table field cannot be changed to a value that provides less access because it will break dependent extensions."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/13/2021
+ms.date: 10/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,6 +21,7 @@ The access modifier of a table field cannot be changed to a value that provides 
 The access modifier of a table field cannot be changed to a value that provides less access because it will break dependent extensions. You can only change the accessibility to provide more access.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## Remarks
 This rule verifies that the `Access` property of a field in a table or table extension has not been reduced between revisions. This rule only validates table fields if the table `Access` property is set to `Public` in the baseline extension. For more information about different access levels for both fields and tables, see [Using Access Modifiers in AL](../devenv-using-access-modifiers.md).
 

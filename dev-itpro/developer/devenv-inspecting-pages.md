@@ -118,6 +118,12 @@ The **Extensions** tab displays installed extensions that affect the selected pa
 
 Except for the type and performance information, the data that's shown is defined in the extension's app.json file, which is configured during development. For more information, see [App.json](devenv-json-files.md#Appjson).
 
+The **ID**, which is sometimes referred to as AppID, is a 32-digit unique identifier, which is useful when identifying extensions and debugging issues.
+
+> [!NOTE]
+> In Business Central 2021 release wave 1 (version 18) and earlier, the **ID** is the ID assigned to the extension package (.app file), not the extension itself.
+
+
 #### Type
 
 There are four different extension types:

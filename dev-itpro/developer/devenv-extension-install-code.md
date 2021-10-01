@@ -22,7 +22,7 @@ This enables you to write different code for initial installation and reinstalla
 
 ## How to write install code
 
-You write install logic in an *install* codeunit. This is a codeunit that has the [SubType property](/dynamics365/business-central/dev-itpro/developer/devenv-subtype-codeunit-property) set to **Install**. An install codeunit supports two system triggers on which you can add the install code.
+You write install logic in an *install* codeunit. This is a codeunit that has the [SubType property](properties/devenv-subtype-codeunit-property.md) set to **Install**. An install codeunit supports two system triggers on which you can add the install code.
 
 |Trigger |Description |
 |--------|------------|
