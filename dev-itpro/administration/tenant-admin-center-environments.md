@@ -28,7 +28,7 @@ In the environments list, you can view more details by choosing the link in the 
 
 ## Types of environments
 
-You can create environments of different types. Which type of environment to choose depends on what you need it for. For more information, see [Production and Sandbox Environments](environment-types.md).  
+You can create environments of different types. Choose the type of environment based on what you need it for. For more information, see [Production and Sandbox Environments](environment-types.md).  
 
 ### Production environments
 
@@ -48,7 +48,7 @@ You can create environments of different types. Which type of environment to cho
 
 ## Create a new environment
 
-The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provides an easy method for creating environments for the tenant. For example, if you have been using a production environment for training purposes, and you've decided to start using [!INCLUDE [prod_short](../developer/includes/prod_short.md)] to run the business, you can delete the original production environment and then create a new production environment.  
+The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provides an easy method for creating environments for the tenant. For example, you've been using a production environment for training purposes, and you've decided to start using [!INCLUDE [prod_short](../developer/includes/prod_short.md)] to run the business. In this case, you can delete the original production environment and then create a new production environment.  
 
 [!INCLUDE [admin-env-quota](../developer/includes/admin-env-quota.md)]
 
@@ -59,7 +59,7 @@ You can create new environments that are either production environments or sandb
 1. On the **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], choose the **New** action on the action ribbon.
 2. In the **Create Environment** pane, Specify a name for the new environment.
 3. In the **Environment Type** list, choose **Production** or **Sandbox**.
-4. In the **Application family** field, specify the type of solution that this environment is based on if this isn't [!INCLUDE [prod_short](../includes/prod_short.md)].  
+4. In the **Application family** field, specify the type of solution that this environment is based on if it isn't [!INCLUDE [prod_short](../includes/prod_short.md)].  
 5. In the **Country** list, select the country for the environment. The specified country determines the localization for the environment and the Azure region in which the environment is created and stored.
 6. In the **Version** list, specify the relevant application version for the new environment if more than one version is available.  
 7. Choose the **Create** action.  
@@ -98,7 +98,7 @@ You can create an environment that is a copy of an existing environment, such as
 
 When the process starts, you can go to the list of your environments and see the status of the new environment. At first, you'll see the new environment with the state **Copy queued**, which changes to **Copying**, and then **Active** once the new environment is fully up and running. The original environment that the new environment is based on remains active.  
 
-### Sandboxes based on production environments
+### Environment copies
 
 [!INCLUDE [admin-env-sandbox-precautions](../developer/includes/admin-env-sandbox-precautions.md)]
 
@@ -111,6 +111,8 @@ To manage access at the environment level, you can assign an Azure Active Direct
 
 From the **Environments** page, you'll see the currently assigned group in the **Security Group** column. **Not set** indicates that no group has been assigned. **Not available** indicates that the group that was assigned is no longer available in the Azure AD.
 
+> [!NOTE]
+> The restrictions imposed by a security group don't apply to administrators. Local and delegated admins can freely sign in to all environments, regardless of the assigned group. 
 ### Assign, change, or remove a group
 
 Before you can assign an Azure AD group to an environment, the group must be created in your Azure AD tenant. For more information, see [Create a basic group and add members using Azure Active Directory](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) in the Azure documentation.
@@ -146,7 +148,7 @@ Currently, the log includes the following operations:
 |Rename environment|Environment was renamed by using the Admin Center.|[Rename an Environment](tenant-admin-center-environments-rename.md)|
 |Restore environment|Environment was restored by using the Admin Center.|[Restoring an Environment](tenant-admin-center-backup-restore.md)|
 |Move environment|An environment was moved to another Azure Active Directory organization.|[Move an Environment](tenant-admin-center-environments-move.md)
-|Environment app hotfix|App was hotfixed by using the App Management API.|[App Management API](appmanagement/app-management-api.md#schedule-environment-hotfix)
+|Environment app hotfix|A hotfix was applied to the app by using the App Management API.|[App Management API](appmanagement/app-management-api.md#schedule-environment-hotfix)
 |Environment app install|App was installed by using the tenant's **Extension Management** page or the API install endpoint.|[Extension Management Page](/dynamics365/business-central/ui-extensions-install-uninstall#installing-an-extension)<br><br>[Install Endpoint](administration-center-api.md#install-an-app)|
 |Environment app uninstall|App was uninstalled by using the tenant's **Extension Management** page or the API uninstall endpoint.|[Extension Management Page](/dynamics365/business-central/ui-extensions-install-uninstall#uninstalling-an-extension)<br><br>[Uninstall Endpoint](administration-center-api.md#uninstall-an-app)|
 |Environment app update |App was updated either by the Admin Center or API update endpoint.| [Update an App in Admin Center](tenant-admin-center-manage-apps.md#install-an-app-update---the-flow)<br><br>[Update Endpoint](administration-center-api.md#update-an-app)|
