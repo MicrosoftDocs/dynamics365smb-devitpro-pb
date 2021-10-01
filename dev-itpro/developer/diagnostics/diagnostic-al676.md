@@ -1,6 +1,6 @@
 ---
-title: "Compiler Warning (Future Error) AL685"
-description: "The length '{0}' of the calculation formula's target field '{1}' is greater than the length '{2}' of the source flow field '{3}'."
+title: "Compiler Error AL676"
+description: "The member '{0}' in object '{1}' cannot be declared as protected in object type '{2}'."
 ms.author: solsen
 ms.custom: na
 ms.date: 10/01/2021
@@ -14,9 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Warning (Future Error) AL685
-The length '{0}' of the calculation formula's target field '{1}' is greater than the length '{2}' of the source flow field '{3}'. This could result in a runtime error. 
-Please make sure that the target field's length is less than equal to the source field length.
+# Compiler Error AL676
+The member '{0}' in object '{1}' cannot be declared as protected in object type '{2}'.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
