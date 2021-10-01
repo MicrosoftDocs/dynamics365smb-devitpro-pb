@@ -44,6 +44,13 @@ If this parameter is false, then neither the timestamp nor the Primary Key field
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+The `TransferFields` method copies fields based on the field number on the fields. For each field in `Record` (the destination), the contents of the field that has the same field number in `FromRecord` (the source) will be copied, if such a field exists.
+
+The fields must have the *same data type* for the copying to succeed (text and code are convertible, other types are not). There must be room for the actual length of the contents of the field to be copied in the field to which it is to be copied. If any one of these conditions are not fulfilled, a runtime error will occur.
+
 ## See Also
 [Record Data Type](record-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
