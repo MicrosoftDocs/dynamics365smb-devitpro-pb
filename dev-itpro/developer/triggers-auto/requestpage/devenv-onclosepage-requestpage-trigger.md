@@ -3,7 +3,7 @@ title: "OnClosePage (Request Page) Trigger"
 description: "Runs when a page closes after the OnQueryClosePage trigger is run."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 07/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

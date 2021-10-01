@@ -48,5 +48,5 @@ The following methods are available on instances of the ErrorInfo data type.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
-[Getting Started with AL](../../../devenv-get-started.md)  
-[Developing Extensions](../../../devenv-dev-overview.md)  
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)  

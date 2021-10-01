@@ -60,8 +60,8 @@ Represents a sales invoice in [!INCLUDE[prod_short](../../../includes/prod_short
 |customerName           |string, maximum size 50|The full name of the customer. Read-Only.      |
 |currencyId             |GUID       |The id of the invoice currency.                            |
 |currencyCode           |string, maximum size 10|The currency code for the invoice.             |
-|email           |string, maximum size 80|Email for the customer, cash sales|             |
-|phone           |string, maximum size 30|Phone number for the customer, cash sales| 
+|email                  |string, maximum size 80|Email for the customer, cash sales|
+|phone                  |string, maximum size 30|Phone number for the customer, cash sales| 
 |orderId                |GUID       |The unique id of the order to which the invoice is associated to. Read-Only.|
 |orderNumber            |string, maximum size 20|The number of the order to which the invoice is associated to. Read-Only.|
 |status                 |string, maximum size 20|The invoice status. Status can be: Draft, In Review, Open, Paid, Canceled, or Corrective. Read-Only.|

@@ -6821,6 +6821,11 @@
     "redirect_document_id": false
    },
    { 
+    "source_path": "dev-itpro/developer/analyzers/appsourcecop-as0095-tablefieldsaccessmustnotdegrade.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop",
+    "redirect_document_id": false
+   },
+   { 
     "source_path": "dev-itpro/developer/analyzers/codecop-aa0001-binaryoperatorspacing.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/codecop",
     "redirect_document_id": false

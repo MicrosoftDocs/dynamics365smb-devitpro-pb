@@ -5,7 +5,7 @@ description: This article describes the HtmlFromRepoGenerator tool in the custom
 author: edupont04
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
-ms.date: 04/01/2021
+ms.date: 09/20/2021
 ms.author: edupont
 ---
 
@@ -103,9 +103,9 @@ HtmlFromRepoGenerator.exe --out "D:\BC\de-DE" --DoNotClone --enOut "D:\BC\en-US"
 
 ## Modifying the styling of the generated HTML files
 
-The tool generates the HTML files based a set of predefined templates. In most cases, you can modify the stylesheets in the ```styles``` folder to modify the appearance of your content.
+The tool generates the HTML files based on a set of predefined templates that are defined in a resource that the tool relies on. In most cases, you can modify the stylesheets in the tool's ```styles``` output folder to tweak the appearance of your content.  
 
-For advanced scenarios, you can modify the templates used by the HtmlFromRepoGenerator tool. The source files are included in the *SourceCode* folder in the GitHub repo. The templates are in the *SourceCode\HtmlFromRepoGenerator\HtmlFromRepoGenerator\HtmlFromRepoGenerator\Resources* subfolder.  
+For advanced scenarios, you can modify the predefined templates that the HtmlFromRepoGenerator tool uses. These templates determine fonts and other stylings for the website that the tool generates based on DocFx.exe. The templates are included in the *SourceCode* folder in the GitHub repo. The templates are in the *SourceCode\HtmlFromRepoGenerator\HtmlFromRepoGenerator\HtmlFromRepoGenerator\Resources* subfolder.  
 
 > [!NOTE]
 > If you modify the templates, you must rebuild HtmlFromRepoGenerator.exe using Visual Studio or similar.

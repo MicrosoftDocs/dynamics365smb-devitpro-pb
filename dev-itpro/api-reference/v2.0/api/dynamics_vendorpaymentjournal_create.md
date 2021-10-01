@@ -12,6 +12,9 @@ ms.author: solsen
 ---
 
 # Create vendorPaymentJournals
+
+[!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
+
 Create a vendorPaymentJournal object in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## HTTP request

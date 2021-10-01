@@ -46,6 +46,14 @@ The following feature will be **Removed** with [!INCLUDE[prod_short](../develope
 
 ## Changes in 2021 release wave 2
 
+### Business Central app for Windows
+
+The Business Central app that's available from the [Microsoft Store](https://go.microsoft.com/fwlink/?LinkId=734848) is no longer supported with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 2.
+
+|Moved, Removed, or Replaced? |Why?|
+|---------|---------|
+|Replaced| The legacy app for Windows was based on Universal Windows Platform (UWP). In it's place, we offer an app that's based on Progressive Web Application (PWA) technology, which is a more modern technology that provides a better user experience going forward. The legacy app will still be available on the Windows Store for users running Business Central 2021 release wave 1 or earlier.|
+
 ### Removal of the Business Central Server Administration tool (Warning)
 
 The following feature will be **Removed** in a later release.
@@ -53,7 +61,6 @@ The following feature will be **Removed** in a later release.
 |Moved, Removed, or Replaced? |Why?|
 |---------|---------|
 |Removed | The Business Central Server Administration tool for configuring the [!INCLUDE[server](../developer/includes/server.md)] in on-premises installations will be removed in a later release. Please transition to using the provided Powershell cmdlets in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] instead. |
-
 
 ### StartSession calls in upgrade/install context will fail
 
@@ -87,6 +94,17 @@ The following feature will be **Removed** with [!INCLUDE[prod_short](../develope
 |Moved, Removed, or Replaced? |Why?|
 |---------|---------|
 |Removed | The ability to connect [!INCLUDE[prod_short](../developer/includes/prod_short.md)] with Dataverse using the client secret Service-to-Service authentication will be removed for online tenants hosted by Microsoft in March, 2022. To further strengthen security, we introduced the ability to use certificate-based authentication in Business Central 2021 release wave 1 (version 18 and later). Existing users can easily switch to certificate-based authentication. For more information, see [Upgrade Connections from Business Central Online to Use Certificate-Based Authentication](https://go.microsoft.com/fwlink/?linkid=2167233). On-premises customers, and online tenants that are hosted by ISVs, can continue using client secret authentication for their connections to Dataverse.|
+
+### Legacy Outlook add-in for synchronizing data
+
+The legacy Outlook add-in for synchronizing data, such as to-dos, contacts, and tasks, between Business Central and Outlook will be **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 2.
+
+|Moved, Removed, or Replaced? |Why?|
+|---------|---------|
+|Removed | This add-in used Business Central web services based on outdated technology.|
+
+> [!NOTE]
+> The feature is separate from and has no affect on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)]add-in for Outlook, which is described at [Using Business Central as your Business Inbox in Outlook](/dynamics365/business-central/work-outlook-addin).
 
 ## Changes in 2021 release wave 1
 

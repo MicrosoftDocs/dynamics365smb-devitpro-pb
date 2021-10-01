@@ -24,7 +24,7 @@ This topic describes how to set up an environment for developing a module in the
 
 ## Get the Repository On Your Local Machine
 
-1. Open the [ALAppExtensions Repository](https://github.com/microsoft/ALAppExtensions), and choose Fork to create a fork of the repository.
+1. Open the [ALAppExtensions Repository](https://github.com/microsoft/ALAppExtensions), and choose **Fork** to create a fork of the repository.
 2. Choose **Code**, and then copy the URL under code to clone the forked repository.  
 
     The URL looks like `https://github.com/<*username*\>/ALAppExtensions.git`, and <*username*> is your GitHub username.

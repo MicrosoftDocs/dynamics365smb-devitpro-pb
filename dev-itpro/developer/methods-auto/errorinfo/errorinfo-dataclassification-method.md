@@ -45,5 +45,5 @@ The current data classification of the ErrorInfo.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [ErrorInfo Data Type](errorinfo-data-type.md)  
-[Getting Started with AL](../../../devenv-get-started.md)  
-[Developing Extensions](../../../devenv-dev-overview.md)
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

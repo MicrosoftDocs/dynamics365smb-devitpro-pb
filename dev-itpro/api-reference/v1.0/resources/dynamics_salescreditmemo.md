@@ -64,7 +64,7 @@ Represents a sales credit memo in [!INCLUDE[prod_short](../../../includes/prod_s
 |status|string, maximum size 20|The credit memo status. Status can be: Draft, In Review, Open, Paid, Canceled, or Corrective. Read-Only.|
 |invoiceId|GUID|The sales invoice ID that the credit memo is linked to.|
 |invoiceNumber|GUID|The sales invoice number that the credit memo is linked to.|
-|email           |string, maximum size 80|Email for the customer, cash sales|             |
+|email           |string, maximum size 80|Email for the customer, cash sales|
 |phone           |string, maximum size 30|Phone number for the customer, cash sales| 
 |billToName             |string, maximum length 100   |The name of the customer to bill.|
 |billToCustomerId       |GUID   |Id of the customer to bill|

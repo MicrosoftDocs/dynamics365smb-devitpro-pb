@@ -3,7 +3,7 @@ title: "AppSourceCop Analyzer"
 description: "AppSourceCop is an analyzer that enforces rules that must be respected by extensions meant to be published to Microsoft AppSource."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/02/2021
+ms.date: 09/09/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -109,6 +109,7 @@ AppSourceCop is an analyzer that enforces rules that must be respected by extens
 |[AS0095](appsourcecop-as0095.md)|The access modifier of a table field cannot be changed to a value that provides less access.|Configuration|Error|
 |[AS0096](appsourcecop-as0096.md)|The name of an extension cannot be changed.|Configuration|Error|
 |[AS0097](appsourcecop-as0097.md)|The publisher name of an extension cannot be changed.|Configuration|Error|
+|[AS0098](appsourcecop-as0098.md)|An affix is needed.|Extensibility|Warning|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

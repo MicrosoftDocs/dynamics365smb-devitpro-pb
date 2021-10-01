@@ -6,13 +6,13 @@ ms.custom: na
 ms.reviewer: na
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
-ms.date: 04/01/2021
+ms.date: 10/01/2021
 ms.author: edupont
 ---
 
 # Configuring the Help Experience for [!INCLUDE[prod_long](../developer/includes/prod_long.md)]
 
-The default version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] comes with conceptual overviews and other articles that publish to the [/dynamics365/business-central/](/dynamics365/business-central/) site. This location is accessible from the Help menu and through the Learn More links in all tooltips. Each extension that you add will include its own tooltips and links to Help.
+The default version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] comes with conceptual overviews and other articles that publish to the [docs.microsoft.com/dynamics365/business-central/](/dynamics365/business-central/) site. This location is accessible from the Help menu and through the **Learn More** links in all tooltips. Each extension that you add will include its own tooltips and links to Help that can be accessed through the Learn More links and the Ctrl+F1 keyboard shortcut.
 
 But what if you want to deploy [!INCLUDE[prod_short](../developer/includes/prod_short.md)] locally? Or if you have a vertical solution so that you want to refer your customers to your own website for Help? Or if you have a legacy Help collection based on the Dynamics NAV Help Server? These and other scenarios are also supported in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].  
 
@@ -25,6 +25,8 @@ When you build an app for [!INCLUDE [prod_short](../developer/includes/prod_shor
 
 You can add Microsoft's content to your website, or you can deploy just your own content. The choice is yours and depends on the requirements of your users, the size of your app, and the amount of customization you want to make. The custom Help toolkit includes tools that can help you prepare and deploy content. For more information, see [Custom Help Toolkit](../help/custom-help-toolkit.md).  
 
+For inspiration for how to create a website that can host your content, take a look at [this tutorial](/azure/search/tutorial-python-overview) that creates a static web app and adds a search service in a few relatively straightforward steps.  
+
 ## On-premises deployments
 
 For deploying [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises, you can choose between using any online website or the legacy Dynamics NAV Help Server, and you can configure different Help experience for each [!INCLUDE[webserver](../developer/includes/webserver.md)] instance. For example, use the [Custom Help Toolkit](../help/custom-help-toolkit.md) to help you deploy content to an Azure Web App. For supported versions, the legacy Dynamics NAV Help Server component is a simple website that requires your Help to be in a specific format (HTML files). Other types of websites can host any content that you want to make available. Your choice depends on the needs of your solution and your users. If you add configuration for an online library, you must remove any settings for Help Server.  
@@ -33,7 +35,7 @@ For deploying [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-pre
 > The legacy Dynamics NAV Help Server component is deprecated in 2021 release wave 1 (version 18). We recommend that you invest in a different type of website. For more information, see the [deprecation notice](../upgrade/deprecated-features-w1.md#the-help-server-component) and the [Custom Help Toolkit](../help/custom-help-toolkit.md) section.
 
 > [!TIP]
-> The content on the [/dynamics365/business-central/](/dynamics365/business-central/) site and in the various GitHub repos reflects the latest version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)], unless otherwise specified.
+> The content on the [docs.microsoft.com/dynamics365/business-central/](/dynamics365/business-central/) site and in the various GitHub repos reflects the latest version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)], unless otherwise specified.
 >
 > We recommend that you get your version of Microsoft's content close to the time the subsequent major version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] becomes available. For example, if you are deploying version 16.4, you could have taken a snapshot of the content in GitHub before version 17.0 became available.
 
@@ -107,21 +109,26 @@ In the example, `https://myserver.com` represents the URL to the Help Server ins
 
 ## Deploy content to your website
 
-[!INCLUDE [prod_short](../developer/includes/prod_short.md)] has no firm requirements for the website that hosts your online library for your [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online or on-premises. You can deploy your content using any tool and process including the following:
+Currently, [!INCLUDE [prod_short](../developer/includes/prod_short.md)] has no firm requirements for the website that hosts your online library for your [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online or on-premises. You can deploy your content using any tool and process including the following:
 
 * [Azure Static Web Apps](/azure/static-web-apps/)  
 * [Azure App Service](/azure/app-service/quickstart-html)  
 * Third-party services such as [MkDocs](https://www.mkdocs.org/)  
 * Any website that can render MarkDown files using a [customization of the DocFx Flavored MarkDown engine](https://dotnet.github.io/docfx/tutorial/howto_customize_docfx_flavored_markdown.html)  
 
-You can see an example of how to deploy content to an Azure web app in the article [Deploy custom help to Azure](/dynamics365/fin-ops-core/dev-itpro/help/walkthrough-help-azure), which supports the custom Help toolkit for Dynamics 365 finance and operations apps. That article also describes how you can build a search service for your website. This step is currently not relevant for [!INCLUDE [prod_short](../developer/includes/prod_short.md)], but you might find the guidance helpful anyway.  
+You can see an example of how to deploy content to an Azure web app in the article [Deploy custom help to Azure](/dynamics365/fin-ops-core/dev-itpro/help/walkthrough-help-azure), which supports the custom Help toolkit for Dynamics 365 Finance and Operations apps. That article also describes how you can build a search service for your website. Another example is in the [Overview of adding search to a website with Python](/azure/search/tutorial-python-overview) tutorial in the Azure docs. The step for adding a search service is currently not relevant for [!INCLUDE [prod_short](../developer/includes/prod_short.md)], but you might find the guidance helpful anyway.  
+
+> [!IMPORTANT]
+> Currently, search in [!INCLUDE [prod_short](../includes/prod_short.md)] cannot access sites other than the *docs.microsoft.com* site. This limitation also impacts the search tab in the updated help pane that is part of 2021 release wave 2, version 19.0 and later. The search capabilities only apply to the *docs.microsoft.com* site, including Microsoft Learn.
+>
+> However, to help prepare for the day when partner-provided and customer-provided content can also be indexed and found by in-product search and the help pane, get your content deployed to a website and make it discoverable.
 
 ### Optional: Get Microsoft's content
 
 If you deploy a solution that is based on Microsoft's default application, then you might want to include a customized version of Microsoft's business functionality content on your website. Microsoft's source files are available as downloadable packages for each major release in the [https://github.com/MicrosoftDocs/dynamics365smb-docs/](https://github.com/MicrosoftDocs/dynamics365smb-docs/releases) GitHub repo in English (US) only. For other languages, pull files based on a commit before the next major version.  
 
 > [!TIP]
-> The content on the [/dynamics365/business-central/](/dynamics365/business-central/) site and in the various GitHub repos reflects the latest version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)], unless otherwise specified.
+> The content on the [docs.microsoft.com/dynamics365/business-central/](/dynamics365/business-central/) site and in the various GitHub repos reflects the latest version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)], unless otherwise specified.
 >
 > [!INCLUDE [ua-github-releases](../includes/ua-github-releases.md)]
 
@@ -134,7 +141,14 @@ Let's take an example: You are deploying version 17.4 on-premises for a customer
 > [!TIP]
 > The [HtmlFromRepoGenerator](../help/custom-help-toolkit-HtmlFromRepoGenerator.md) tool generates HTML files for you that you can choose to customize before you deploy them to the relevant website. Starting with 2021 release wave 1, the tool can get content based on the release-specific packages in GitHub. For more information, see [Custom Help Toolkit](../help/custom-help-toolkit.md) and [Extend, Customize, and Collaborate on the Help](../help/contributor-guide.md).
 
-Alternatively,use any tool or script that you prefer. If you want to create your own tooling and processes around [DocFx](https://dotnet.github.io/docfx/), you can see examples in the [Build HTML files](../help/contributor-guide.md#build-html-files) section of the contributor guide.  
+Alternatively, use any tool or script that you prefer. If you want to create your own tooling and processes around [DocFx](https://dotnet.github.io/docfx/), you can see examples in the [Build HTML files](../help/contributor-guide.md#build-html-files) section of the contributor guide.  
+
+> [!IMPORTANT]
+> [!INCLUDE [ua-robots](../includes/ua-robots.md)]
+>
+> The [HtmlFromRepoGenerator](../help/custom-help-toolkit-HtmlFromRepoGenerator.md) tool in the custom help toolkit can do this for you automatically.
+
+We suggest that your website clearly indicates what is under Microsoft's copyright and what is under your own copyright. You are still welcome to make any relevant customizations of Microsoft's content, and to deploy this customized content to your own website. But to help users clearly identify whether a given search result applies to their [!INCLUDE [prod_short](../includes/prod_short.md)] experience or not, do not apply a title suffix such as *Microsoft Docs*. We also discourage reproduction of the visual styling of the *docs.microsoft.com* site for the same reason.
 
 ## Fork the Microsoft repos, and customize or extend the content
 
@@ -154,4 +168,4 @@ If you want to customize or extend the Microsoft Help, you can fork our public r
 [Blog post: Reusing classic object-based Help on your Dynamics 365 Business Central Help Server](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/13/reusing-classic-object-based-help-dynamics-365-business-central-help-server/)  
 [Working with Dynamics NAV Help Server](/dynamics-nav/microsoft-dynamics-nav-help-server)  
 [Docs Contributor Guide](/contribute/)  
-[Docs Authoring Pack for Visual Studio Code](/contribute/how-to-write-docs-auth-pack)
+[Docs Authoring Pack for Visual Studio Code](/contribute/how-to-write-docs-auth-pack)  

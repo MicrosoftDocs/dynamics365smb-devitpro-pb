@@ -3,7 +3,7 @@ title: "DataAccessIntent Property"
 description: "Sets the data access intent of the page."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 09/29/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -54,4 +54,5 @@ From the client, the property value can be overwritten by using page **9880 Data
 [Optimizing SQL Server Performance](../../administration/optimize-sql-server-performance.md)  
 [Properties](devenv-properties.md)   
 [Page Properties](./devenv-properties.md)  
-[InDataSet Property](../methods/devenv-indataset-attribute.md)
+[InDataSet Property](../methods/devenv-indataset-attribute.md)  
+[Specifying Data Access Intent for GET requests](../devenv-connect-apps-tips.md#DataAccessIntent)

@@ -22,6 +22,7 @@ In this article, you can read about ways to tune performance when developing for
 - [Efficient Data access](performance-developer.md#efficient-data-access)  
 - [Testing and validating performance](performance-developer.md#testing-and-validating-performance)  
 - [Tuning the Development Environment](performance-developer.md#tuning-the-development-environment)  
+- [Using the AL Profiler to analyze performance](../developer/devenv-al-profiler-overview.md)
 
 ## Writing efficient pages 
 
@@ -101,6 +102,8 @@ Make sure that your client respects the two HTTP status codes *429 (Too Many Req
 Read more about web service limits, see [Working with API limits in Dynamics 365 Business Central](/dynamics-nav/api-reference/v1.0/dynamics-rate-limits).
 
 The same advice applies for outgoing web service calls using the AL module HttpClient. Make sure your AL code can handle slow response times, throttling, and failures in external services that you integrate with.
+
+By specifying HTTP header `Data-Access-Intent: ReadOnly` for GET requests you can instruct Business Central to run requests against a replica of the database which can lead to improved performance. To learn more, see [Specifying Data Access Intent for GET requests](../developer/devenv-connect-apps-tips.md#DataAccessIntent).
 
 ## Writing efficient reports
 

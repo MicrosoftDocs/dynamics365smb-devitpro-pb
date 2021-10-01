@@ -55,7 +55,7 @@ For an explanation about the different types, see [Event Types](devenv-event-typ
     |`<SkipOnMissingPermission>`|Set to `true` to skip the event subscriber method call if the user doesn't have the correct permissions the event subscriber codeunit. If `false`, an error is thrown and the code execution stops. `false` is the default.  |yes|
    
     > [!TIP]  
-    > There are couple things that can make defining an event subscriber method easier. You can use the `teventsub` snippet to get started. Then, typing the keyboard shortcut **Ctrl+Space** displays IntelliSense to help you fill the attribute arguments and discover which events are available. Or, use the **Shift+Alt+E** keyboard shortcut to look up the event you want to subscribe to and insert the code.
+    > There are a couple of things that can make defining an event subscriber method easier. You can use the `teventsub` snippet to get started. Then, typing the keyboard shortcut **Ctrl+Space** displays IntelliSense to help you fill the attribute arguments and discover which events are available. Or, use the **Shift+Alt+E** keyboard shortcut to look up the event you want to subscribe to and insert the code.
 
 5. Optionally, set the codeunit's **EventSubscriberInstance** property to specify how the event subscriber method will be bound to the instance of this codeunit.
 

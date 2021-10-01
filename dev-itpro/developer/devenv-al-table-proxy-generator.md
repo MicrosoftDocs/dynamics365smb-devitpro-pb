@@ -50,11 +50,11 @@ The **AL Table Proxy Generator** tool is available with the **AL Language** exte
 |*ServiceURI*| The server URL for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. For example, `https://tenant.crm.dynamics.com`.|
 |*Entities*| The table(s) to create in AL. If multiple, this must be specified as a comma-separated list.<br><br>**Note:** It is important that all related tables are specified too. Related tables are, for example, used for lookups and if the related tables are not found, a lookup will no longer be working. For more information, see the section [Specifying tables](devenv-al-table-proxy-generator.md#specifying-tables). |
 |*BaseId*| The assigned starting ID for the generated new table(s) in AL. |
-|*TableType*| The table type for the table(s) in AL. The options are `CDS` and `CRM`. <br><br>**Note:** If unspecified, the system looks both for `CDS` and `CRM` tables .  |
+|*TableType*| The table type for the table(s) in AL. The options are `CDS` and `CRM`. <br><br>**Note:** If unspecified, the system looks both for `CDS` and `CRM` tables. |
 
 ## Specifying tables
 
-The `Entitites` parameter specifies the logical names of the table(s) to create in AL. To know which ones to specify you need to check the *main* table relationships in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. For more information, see [Table relationships overview](/powerapps/maker/common-data-service/create-edit-entity-relationships). You specify all tables that you want created, including the related tables, in the `Entities` parameter separated by commas.
+The `Entities` parameter specifies the logical names of the table(s) to create in AL. To know which ones to specify you need to check the *main* table relationships in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. For more information, see [Table relationships overview](/powerapps/maker/common-data-service/create-edit-entity-relationships). You specify all tables that you want created, including the related tables, in the `Entities` parameter separated by commas.
 
 ### Related tables
 
@@ -68,7 +68,7 @@ If you, in the `Entities` parameter specify `cdm_workeraddress, cdm_worker`, the
 
 The following example starts the process for creating a new integration table in the specified AL project. When complete, the output path contains the **Worker.al** file that contains the description of the **50000 CDS Worker** integration table. This table is set to the table type **CDS**.
 
-```
+```powershell
 .\altpgen -project:"C:\myprojectpath" -packagecachepath:"C:\mypackagepath" -serviceuri:"https://tenant.crm.dynamics.com" -entities:cdm_worker,cdm_workeraddress -baseid:50000 -tabletype:CDS 
 ```
 

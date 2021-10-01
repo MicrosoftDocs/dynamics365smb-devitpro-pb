@@ -1,4 +1,4 @@
-# [Development and administration](index.md)
+﻿# [Development and administration](index.md)
 # [New and planned](/dynamics365/business-central/product-news?toc=/dynamics365/business-central/dev-itpro/toc.json)
 # Get started
 ## [Overview of business functionality](/dynamics365/business-central/across-business-functionality?toc=/dynamics365/business-central/dev-itpro/toc.json)
@@ -107,8 +107,9 @@
 # Administration
 ## [Administration of Business Central Online](administration/tenant-administration.md)
 ## Understand Business Central online
+### [Understanding the Infrastructure](administration/tenant-administration.md#infrastructure)
 ### [Get Started as a Reseller of Business Central Online](administration/get-started-online.md)
-### [Country/Regional availability and Supported Translations](compliance/apptest-countries-and-translations.md)
+### [Country/Regional Availability and Supported Translations](compliance/apptest-countries-and-translations.md)
 ### [Delegated Administrator Access to Business Central Online](administration/delegated-admin.md)
 ### [Major Updates and Minor Updates](administration/update-rollout-timeline.md)
 ### [Version Numbers in Business Central](administration/version-numbers.md)
@@ -143,7 +144,8 @@
 ### [Enabling new features ahead of time](administration/feature-management.md)
 ### [Set up standard company configuration packages](administration/set-up-standard-company-configuration-packages.md)
 ### [Set up Business Central](/dynamics365/business-central/setup?toc=/dynamics365/business-central/dev-itpro/toc.json)
-### [Set up the Excel add-in](administration/configuring-excel-addin.md)
+### [Get the Excel Add-in](/dynamics365/business-central/admin-deploy-excel-addin?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### [Get the Outlook add-ins for the business inbox](administration/outlook-addins.md)
 ### [Network configuration for the Excel add-in](administration/configuring-network-for-addins.md)
 ### [Set up App Key Vaults for extensions](administration/setup-app-key-vault.md)
 ### [Deploy a tenant customization](developer/devenv-deploy-tenant-customization.md)
@@ -195,6 +197,7 @@
 ### [Incoming Web Services Requests Telemetry](administration/telemetry-webservices-trace.md)
 ### [Outgoing Web Services Requests Telemetry](administration/telemetry-webservices-outgoing-trace.md)
 ### [Table Index Telemetry](administration/telemetry-table-index-trace.md)
+### [Task Scheduler Telemetry](administration/telemetry-task-scheduler-trace.md)
 ### [Web Service Access Key Telemetry](administration/telemetry-webservices-access-key-trace.md)
 ### [Event IDs](administration/telemetry-event-ids.md)
 ## Automation
@@ -257,6 +260,7 @@
 ### [AL Outline View](developer/devenv-al-outline-view.md)
 ### [AL Code Navigation](developer/devenv-al-code-navigation.md)
 ### [AL Code Actions](developer/devenv-code-actions.md)
+### [AL Profiler](developer/devenv-al-profiler-overview.md)
 ### [Object Ranges](developer/devenv-object-ranges.md)
 ### [Differences in the Development Environments](developer/devenv-differences.md)
 <!-- ### [Object Specifications and Limitations](developer/devenv-object-specifications-limitations.md)-->
@@ -287,7 +291,7 @@
 ### [JSON Files](developer/devenv-json-files.md)
 ### [The Migration.json File](developer/devenv-migration-json-file.md)
 ### [AL Language Extension Configuration](developer/devenv-al-extension-configuration.md)
-### [Security Setting and IP Protection](developer/devenv-security-settings-and-ip-protection.md)
+### [Resource Exposure Policy Setting](developer/devenv-security-settings-and-ip-protection.md)
 ### [Developing for Multiple Platform Versions](developer/devenv-developing-for-multiple-platform-versions.md)
 ### [Optimizing Visual Studio Code for AL Development](developer/devenv-optimize-visual-studio-code.md)
 ## Compiling, Publishing, and Debugging
@@ -348,7 +352,9 @@
 ### [Event Example](developer/devenv-events-example.md)
 ### [Walkthrough: Implementing New Workflow Events and Responses](developer/devenv-walkthrough-workflow-events-responses.md)  
 ## [Notifications](developer/devenv-notifications-developing.md)
-## [Task Scheduler](developer/devenv-task-scheduler.md)
+## [Task Scheduler and Job Queue](developer/devenv-task-scheduler.md)
+### [Task Scheduler](developer/devenv-task-scheduler.md)
+### [Job Queue](developer/devenv-job-queue.md)
 ## App Key Vaults for Secrets
 ### [Overview](developer/devenv-app-key-vault-overview.md)
 ### [Setting up App Key Vaults for Online](administration/setup-app-key-vault.md)
@@ -542,6 +548,7 @@
 ## AL Programming
 ### [AL Development Environment](developer/devenv-reference-overview.md)
 ### [Programming in AL](developer/devenv-programming-in-al.md)
+### [FAQ for Developing in AL](developer/devenv-dev-faq.md)
 ### [AL Simple Statements](developer/devenv-al-simple-statements.md)  
 ### [AL Control Statements](developer/devenv-al-control-statements.md)  
 ### [AL Complex Types](developer/devenv-al-complextypes.md)
@@ -551,7 +558,6 @@
 #### [Pragma Directive](developer/directives/devenv-directive-pragma.md)
 ### [Using Access Modifiers in AL](developer/devenv-using-access-modifiers.md)
 ### [XML Comments in Code](developer/devenv-xml-comments.md)
-### [FAQ for Developing in AL](developer/devenv-dev-faq.md)
 ### Code Analysis
 #### [Using the Code Analysis Tool](developer/devenv-using-code-analysis-tool.md)
 #### [Ruleset for the Code Analysis Tool](developer/devenv-rule-set-syntax-for-code-analysis-tools.md)
@@ -577,6 +583,7 @@
 #### [Table Object](developer/devenv-table-object.md)
 #### [Table Extension Object](developer/devenv-table-ext-object.md)
 #### [Table Keys](developer/devenv-table-keys.md)
+#### [Enums](developer/devenv-extensible-enums.md)
 #### [Page Object](developer/devenv-page-object.md)
 #### [Page Extension Object](developer/devenv-page-ext-object.md)
 #### [Page Customization Object](developer/devenv-page-customization-object.md)
@@ -2802,6 +2809,7 @@
 # Removed or deprecated features
 ## Deprecated Tables
 ### [Deprecated Tables](upgrade/deprecated-tables.md)
+### [Deprecated Tables in the India Version](upgrade/india-data-migration-list-of-deprecated-tables.md)
 ## Deprecated Features
 ### [Deprecated Features in W1](upgrade/deprecated-features-w1.md)
 ### [Deprecated Fields, and Fields Marked as Obsolete in Local Functionality](upgrade/deprecated-fields.md)
@@ -2830,6 +2838,7 @@
 ### [Deployment Overview](deployment/deployment.md)
 ### [Features not implemented in on-premises deployments](features-not-implemented-on-premises.md)
 ### System Requirements
+#### [2021 Release Wave 2](deployment/system-requirements-business-central-v19.md)
 #### [2021 Release Wave 1](deployment/system-requirements-business-central-v18.md)
 #### [2020 Release Wave 2](deployment/system-requirement-business-central-v17.md)
 #### [2020 Release Wave 1](deployment/system-requirement-business-central-v16.md)
@@ -2898,6 +2907,7 @@
 ### [Configuring Database Authentication](administration/configure-sql-server-authentication.md)
 ### [Encrypting Data](developer/devenv-encrypting-data.md)
 ### [Setting up the Excel Add-In](administration/configuring-excel-addin.md)
+### [Setting Up the Add-In for Outlook Integration](administration/Setting-up-Office-Add-Ins-Outlook-Inbox.md)
 ### [Setting up App Key Vaults for Extensions](administration/setup-app-key-vault-onprem.md)
 ### Monitoring Business Central Server
 #### [Monitoring Performance Counters](administration/performance-counters.md)
@@ -2944,6 +2954,7 @@
 #### [Incoming Web Services Requests Telemetry](administration/telemetry-webservices-trace.md)
 #### [Outgoing Web Services Requests Telemetry](administration/telemetry-webservices-outgoing-trace.md)
 #### [Table Index Telemetry](administration/telemetry-table-index-trace.md)
+#### [Task Scheduler Telemetry](administration/telemetry-task-scheduler-trace.md)
 #### [Web Service Access Key Telemetry](administration/telemetry-webservices-access-key-trace.md)
 #### [Event IDs](administration/telemetry-event-ids.md)
 ### [Understanding Session Timeouts](administration/understanding-session-timeouts.md)
@@ -2955,6 +2966,26 @@
 ## Upgrade
 ### [Upgrading to Business Central](upgrade/upgrading-to-business-central.md)
 ### [Supported Upgrade Paths](upgrade/upgrade-paths.md)
+### Business Central 2021 Release Wave 2
+#### [Overview](upgrade/upgrade-overview-v19.md)
+#### [Upgrade Compatibility Matrix](upgrade/upgrade-v14-v15-compatibility.md)
+#### [Upgrading Permission Sets](upgrade/upgrade-permissions.md)
+#### Application and Data
+##### [From version 14 Unmodified C/AL Application](upgrade/upgrade-unmodified-application-v14-v19.md)
+##### [From version 14 Customized C/AL Application](upgrade/upgrade-to-microsoft-base-app-v19.md)
+##### [From Versions 16, 17, or 18 Microsoft Base Application](upgrade/upgrade-unmodified-application-to-v19.md)
+##### Related Articles
+###### [Convert to AL](upgrade/devenv-code-conversion.md)
+###### Migrating Tables and Fields Between Extensions
+####### [Overview](developer/devenv-migrate-table-fields.md)
+####### [Moving Tables and Fields Down](developer/devenv-migrate-table-fields-down.md)
+####### [Moving Tables and Fields Up](developer/devenv-migrate-table-fields-up.md)
+###### Data Migration Toolkit - India
+####### [Overview](upgrade/india-data-migration-toolkit-overview.md)
+#### Technical Upgrade
+##### [From Version 14](upgrade/upgrade-technical-upgrade-v14-v19.md)
+##### [From Version 16, 17, or 18](upgrade/upgrade-technical-upgrade-v19.md)
+#### [Installing a Minor Update](upgrade/upgrading-cumulative-update-v19.md)
 ### Business Central 2021 Release Wave 1
 #### [Overview](upgrade/upgrade-overview-v18.md)
 #### [Upgrade Compatibility Matrix](upgrade/upgrade-v14-v15-compatibility.md)

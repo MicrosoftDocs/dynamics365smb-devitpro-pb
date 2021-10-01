@@ -248,9 +248,37 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[pr
 
     `-AllowAppDatabaseWrite` is optional but is required for some post-upgrade tasks, like upgrading the control add-ins. When you are done upgrading, you can dismount and mount the tenant without this parameter as needed.
 
+   > [!NOTE]
+   > If you are upgrading from an India (IN) Dynamics NAV 2016, you must perform below step:
+   >
+   > On the Tools menu, choose Build Server Application Objects, and then choose the Yes option.
+
 14.  <a name="synctenant"></a>Run the schema synchronization with validation to complete the database conversion.  
 
      For more information, see [Synchronizing the Tenant Database and Application Database](../administration/synchronize-tenant-database-and-application-database.md).
+
+ > [!NOTE]
+ > If you are upgrading from an India (IN) Dynamics NAV 2016, you must perform below step:
+ > - Run the Data Upgrade to complete the technical upgrade.
+ > - Delete the obsolete tables with Schema Synchronization as Force Mode.
+ >   
+ >   | Table Id | Table Name |
+ >   |----------|------------|
+ >   |470|Job Queue|
+ >   |824|DO Payment Connection Details|
+ >   |825|DO Payment Connection Setup|
+ >   |826|DO Payment Setup|
+ >   |827|DO Payment Credit Card|
+ >   |828|DO Payment Credit Card Number|
+ >   |829|DO Payment Trans. Log Entry|
+ >   |830|DO Payment Card Type|
+ >   |1305|Mini Pages Mapping|
+ >   |1510|Notification Template|
+ >   |5150|Integration Page|
+ >   |5371|Service Connection Error|
+ >   |5372|Service Connection Status|
+ >   |8640|Config. Text Transformation|
+
 
 ## <a name="extensions"></a>Task 4: Post-upgrade
 
@@ -360,6 +388,9 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[pr
     For more information, see [Uploading a License File for a Specific Database](../cside/cside-upload-license-file.md#UploadtoDatabase).  
 
     You have now completed the conversion of the database to be accessed from [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. To test the converted database, you can connect it to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Server instance that is used by [!INCLUDE[navnow](../developer/includes/navnow_md.md)] clients, and then open a client.
+
+ > [!NOTE]  
+ > If you are upgrading from an India (IN) Dynamics NAV 2016, you must perform steps defined in the [Publish, Synchronize and Install the ‘IndiaUpgradeTables’ extension](../upgrade/post-india-upgrade-tables.md)
 
 ## Database and Windows collations
 
