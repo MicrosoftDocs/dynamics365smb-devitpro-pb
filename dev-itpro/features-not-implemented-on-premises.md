@@ -50,6 +50,7 @@ The following features aren't intended for use in on-premises deployments. There
 |Use the company hub to manage work across multiple companies.|Integration with the company hub isn't supported in on-premises deployments of [!INCLUDE[prod_short](includes/prod_short.md)]. |
 |Inviting the external accountant |Integration with the now deprecated [!INCLUDE[d365acc_long](includes/d365acc_long_md.md)] and the existing company hub isn't supported in on-premises deployments of [!INCLUDE[prod_short](includes/prod_short.md)].  |
 |[!INCLUDE[prod_short](includes/prod_short.md)] app for Microsoft Teams|This app connects Teams to your business data in [!INCLUDE[prod_short](includes/prod_short.md)]. The app can't connect to [!INCLUDE[prod_short](includes/prod_short.md)] on-premises. For more information about [!INCLUDE[prod_short](includes/prod_short.md)] online and Teams, see [Business Central and Microsoft Teams Integration](/dynamics365/business-central/across-teams-overview).|
+|Share to Teams|This feature lets Business Central online users copy a link from a page directly into a Teams conversation. For more information, see [Sharing Business Central Records and Page Links in Microsoft Teams](/dynamics365/business-central/across-working-with-teams). |
 
 ## See Also
 

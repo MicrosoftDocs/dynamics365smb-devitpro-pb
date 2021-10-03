@@ -95,7 +95,7 @@ To restore an environment, you'll have to provide a name for the environment and
 After restoring an environment, you should inspect and adjust data to prepare it for users. Consider enforcing these steps during this period:
 
 - Remove access to the environment for non-essential users, but make sure required users, like administrators, keep access.
-- Put all job queues in the restored environment to on hold immediately after restore.
+- Put all job queues in the restored environment to on hold immediately after restore. For more information, see [View Scheduled Tasks](/dynamics365/business-central/admin-job-queues-schedule-tasks#view-scheduled-tasks) in the business functionality content.
 - If needed, you can upload the per-tenant extensions targeting the next version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] again.
 
 The original environment will remain available and isn't affected by the restore operation. You can then get back to the original environment if you need to look up data. Or maybe you'll have to migrate some data to the restored environment. You can, for example, migrate data by using [!INCLUDE[prod_short](../developer/includes/prod_short.md)] RapidStart services. For more information, see [Migrate Customer Data](/dynamics365/business-central/admin-migrate-customer-data).

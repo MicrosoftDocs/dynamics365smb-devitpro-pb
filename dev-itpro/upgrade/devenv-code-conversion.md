@@ -12,7 +12,7 @@ ms.author: jswymer
 
 This article explains how to convert a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] (version 14) C/AL code-customized on-premises solution to AL code.
 
-You'll use this procedure as part of the upgrade process when going from version 14 to a later version, like 15, 16, 17, or 18. 
+You'll use this procedure as part of the upgrade process when going from version 14 to a later versions, like 17, 18, or 19.
 
 
 <!--
@@ -168,7 +168,7 @@ In version 15.0 CodeViewer is no longer used, but it's required because of refer
 -->
 ## Task 6: Create a new application database for development
 
-To build your base application, you'll create a new application database on the Business Central platform version that you're upgrading to (like 15, 16, 17, or 18). This will only be used during development.
+To build your base application, you'll create a new application database on the Business Central platform version that you're upgrading to (like 17, 18, or 19). This will only be used during development.
 
 1. Start the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for new version as an administrator.
 2. Run the New-NAVApplicationDatabase cmdlet to create the database. For example:
@@ -216,7 +216,7 @@ In this task, you'll create a AL project in Visual Studio code that you'll use f
     Specify the path for the project, and set the **Target Platform** to version you're upgrading to. When prompted to select your server, choose <!--Microsoft cloud sandbox or--> **Your own server**.
 4. Create a **.alpackages** folder in the root folder of the project and then copy the system (platform) symbols extension (System.app file) to the folder.
 
-    The System.app file is located where you installed the AL Development Environment, which by default is the C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\<150, 160, 170, or 180>\AL Development Environment folder. This package contains the symbols for all the system tables and codeunits.
+    The System.app file is located where you installed the AL Development Environment, which by default is the C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\<170, 180, 190>\AL Development Environment folder. This package contains the symbols for all the system tables and codeunits.
 5. Delete the **HelloWorld.al** sample file from the project.
 
 6. Modify the `settings.json` file of Visual Studio Code to configure the assembly probing path.
@@ -225,14 +225,14 @@ In this task, you'll create a AL project in Visual Studio code that you'll use f
 
     ```json
     "al.assemblyProbingPaths": [
-    "C:\\Program Files\\Microsoft Dynamics 365 Business Central\\150",
-    "C:\\Program Files (x86)\\Microsoft Dynamics 365 Business Central\\150\\RoleTailored Client",
+    "C:\\Program Files\\Microsoft Dynamics 365 Business Central\\170",
+    "C:\\Program Files (x86)\\Microsoft Dynamics 365 Business Central\\170\\RoleTailored Client",
     "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2",
     "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\WindowsPowerShell\\3.0"
     ]
     ```
 
-    Replace 150 with the value that matches your installation, like 160, 170, or 180.
+    Replace 170 with the value that matches your installation, like 180 or 190.
 
     For more information about the settings.json, see [User and Workspace Settings](https://code.visualstudio.com/docs/getstarted/settings).
 
@@ -248,10 +248,10 @@ In this task, you'll create a AL project in Visual Studio code that you'll use f
     |`"publisher":`|Specify any valid publisher name.|
     |`"version":`|You can use any valid version number, but it's recommended to set it to the same version as the C/AL application.|
     |`"dependencies":`|Delete all values, so this parameter is empty.|
-    |`"platform":`|Set to match the platform version that you're upgrading to: <ul><li>`"18.0.0.0"`- version 18</li><li>`"17.0.0.0"`- version 17</li><li>`"16.0.0.0"`- version 16</li><li>`"15.0.0.0"`- version 15</li></ul>|
+    |`"platform":`|Set to match the platform version that you're upgrading to: <ul><li>`"19.0.0.0"`- version 19</li><li>`"18.0.0.0"`- version 18</li><li>`"17.0.0.0"`- version 17</li></ul>|
     |`"application":`|Remove this parameter.|
     |`"idRange":`|Set to include all the IDs used by your base application, or leave it blank.|
-    |`"runtime":` |Set to match the version that you're upgrading to:<ul><li>`"7.0"`- version 18</li><li>`"6.0"`- version 17</li><li>`"5.0"`- version 16</li><li>`"4.0"`- version 15</li></ul>|
+    |`"runtime":` |Set to match the version that you're upgrading to:<ul><li>`"8.0"`- version 19</li><li>`"7.0"`- version 18</li><li>`"6.0"`- version 17</li></ul>|
     |`"target":"`|Add this parameter and set to `"OnPrem"`.|
     
     For example:
@@ -271,11 +271,11 @@ In this task, you'll create a AL project in Visual Studio code that you'll use f
         "logo": "",
         "dependencies": [],
         "screenshots": [],
-        "platform": "18.0.0.0",
+        "platform": "19.0.0.0",
         "idRanges": [  ],
         "contextSensitiveHelpUrl": "https://BC14cal-to-18al-app.com/help/",
         "showMyCode": true,
-        "runtime": "7.0",
+        "runtime": "8.0",
         "target":  "OnPrem"
     }  
     ```
@@ -294,7 +294,7 @@ In this task, you'll create a AL project in Visual Studio code that you'll use f
         ```
 10. Delete objects that are related to the client debugger client.
 
-     Debugging from the client has been discontinued, and replaced by AL Debugger. The version 14 debugger objects are not supported on version 15, 16, or 17. To avoid compilation errors, delete the following objects:
+     Debugging from the client has been discontinued, and replaced by AL Debugger. The version 14 debugger objects are not supported on later versions. To avoid compilation errors, delete the following objects:
     
     - Debugger.Page.al
     - DebuggerBreakpointCondition.Page.al
@@ -478,10 +478,10 @@ If you converted the test library form C/AL to AL, you'll now create and build a
     |`"publisher":`|Specify any valid publisher name.|
     |`"version":`|You can use any valid version number, but it's recommended to set it to the same version as the C/AL application.|
     |`"dependencies":`|Set this include information that matches the custom the base application you created in the previous task.|
-    |`"platform":`|Set to match the platform version that you're upgrading to: <ul><li>`"18.0.0.0"`- version 18</li><li>`"17.0.0.0"`- version 17</li><li>`"16.0.0.0"`- version 16</li><li>`"15.0.0.0"`- version 15</li></ul>|
+    |`"platform":`|Set to match the platform version that you're upgrading to: <ul><li>`"19.0.0.0"`- version 19</li><li>`"18.0.0.0"`- version 18</li><li>`"17.0.0.0"`- version 17</li></ul>|
     |`"application":`|Remove this parameter.|
     |`"idRange":`|Set to include all the IDs used by your test application, or leave it blank.|
-    |`"runtime":` |Set to match the version that you're upgrading to:<ul><li>`"7.0"`- version 18</li><li>`"6.0"`- version 17</li><li>`"5.0"`- version 16</li><li>`"4.0"`- version 15</li></ul>|
+    |`"runtime":` |Set to match the version that you're upgrading to:<ul><li>`"8.0"`- version 19</li><li>`"7.0"`- version 18</li><li>`"6.0"`- version 17</li></ul>|
     |`"target":"`|Add this parameter and set to `"OnPrem"`.|
     
     For example:
@@ -508,11 +508,11 @@ If you converted the test library form C/AL to AL, you'll now create and build a
         }
        ],
         "screenshots": [],
-        "platform": "18.0.0.0",
+        "platform": "19.0.0.0",
         "idRanges": [  ],
         "contextSensitiveHelpUrl": "https://BC14cal-to-18al-app.com/help/",
         "showMyCode": true,
-        "runtime": "7.0",
+        "runtime": "8.0",
         "target":  "OnPrem"
     }  
     ```
@@ -524,12 +524,11 @@ If you converted the test library form C/AL to AL, you'll now create and build a
 
 ## Next Steps
 
-If you are performing a technical upgrade from version 14.0 to version 15, 16, or 17, return to the [technical upgrade step](upgrade-technical-upgrade-v14-v15.md#Preparedb) where you left off.
-
-- [Technical Upgrade to version 15.0](upgrade-technical-upgrade-v14-v15.md#Preparedb)
-- [Technical Upgrade to to version 16.0](upgrade-technical-upgrade-v14-v16.md#Preparedb)
-- [Technical Upgrade to to version 17.0](upgrade-technical-upgrade-v14-v17.md#Preparedb)
+If you are performing a technical upgrade from version 14.0, return to the technical upgrade step where you left off.
+- [Technical Upgrade to to version 19.0](upgrade-technical-upgrade-v14-v19.md#Preparedb)
 - [Technical Upgrade to to version 18.0](upgrade-technical-upgrade-v14-v18.md#Preparedb)
+- [Technical Upgrade to to version 17.0](upgrade-technical-upgrade-v14-v17.md#Preparedb)
+
 
 <!--
 ## Task 11: Publish your project

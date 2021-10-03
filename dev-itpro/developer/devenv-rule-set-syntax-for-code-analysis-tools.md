@@ -32,19 +32,20 @@ An **IncludedRuleSet** is a complex JSON object that defines the inclusion of an
 
 |Setting|Mandatory|Type|Value|
 |-------|---------|-----|-----|   
-|path|Yes|String|The path to the included file. For includes specified in the file to which the **al.ruleSetPath** is set, the path can be absolute or relative to the project folder. For files included from the root ruleset file, the path is relative to the file. Adding an entry to the ruleset path and saving it will automatically be applied to all projects that are using the ruleset.|    
+|path|Yes|String|The path to the included file. For includes specified in the file to which the **al.ruleSetPath** is set, the path can be absolute or relative to the project folder. For files included from the root ruleset file, the path is relative to the file. Adding an entry to the ruleset path and saving it will automatically be applied to all projects that are using the ruleset.|
 |action|Yes|Error&nbsp;&#124;&nbsp;Warning&nbsp;&#124;&nbsp;Info&nbsp;&#124;&nbsp;Hidden&nbsp;&#124;&nbsp;None&nbsp;&#124;&nbsp;Default|The action to apply for all the diagnostics that have an action specified in the included ruleset that is different from **None** and **Hidden**.|
 
-A **Rule** is a complex JSON object that specifies how you can process a specific diagnostic. A **Rule** object has the following properties:     
+A **Rule** is a complex JSON object that specifies how you can process a specific diagnostic. A **Rule** object has the following properties:
 
 
-|Setting|Mandatory|Type|Value|     
-|-------|---------|-----|-----|     
-|id|Yes|String|The string that uniquely identifies a diagnostic.|      
+|Setting|Mandatory|Type|Value|
+|-------|---------|-----|-----|
+|id|Yes|String|The string that uniquely identifies a diagnostic.|
 |action|Yes|Error&nbsp;&#124;&nbsp;Warning&nbsp;&#124;&nbsp;Info&nbsp;&#124;&nbsp;Hidden&nbsp;&#124;&nbsp;None|The action to apply if the diagnostic is emitted. There cannot be two rules with the same id and different actions in the same rule file.|
 
 ## Examples
 The following example shows a ruleset that sets the severity of rule **AA0001 : There must be exactly one space character on each side of a binary operator such as := + - AND OR =.** provided by the **CodeCop** analyzer to **Error**.
+
 ```json
 {
     "name": "Company ruleset",

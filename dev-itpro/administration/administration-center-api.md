@@ -160,7 +160,7 @@ GET /admin/v2.7/applications/{applicationFamily}/environments/{environmentName}
 
 #### Route Parameters
 
-`applicationFamily` - Family of the environment's application as is (for example, "BusinessCentral")
+`applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
 
 `environmentName` - Name of the targeted environment
 
@@ -418,7 +418,7 @@ POST /admin/v2.7/applications/{applicationFamily}/environments/{environmentName}
 
 #### Routing parameters
 
-`applicationFamily` - Family of the environment's application as is (for example, "BusinessCentral").
+`applicationFamily` - Family of the environment's application (for example, "BusinessCentral").
 
 `environmentName` - Name of the environment to rename.
 
@@ -466,7 +466,7 @@ POST /admin/v2.7/applications/{applicationFamily}/environments/{environmentName}
 
 #### Routing parameters
 
-`applicationFamily` - Family of the environment's application as is (for example, "BusinessCentral").
+`applicationFamily` - Family of the environment's application (for example, "BusinessCentral").
 
 `environmentName` - Name of the environment to restore.
 
@@ -548,7 +548,7 @@ GET /admin/v2.7/applications/{applicationFamily}/environments/{environmentName}/
 
 #### Route Parameters
 
-`applicationFamily` - Family of the environment's application as is (for example, "BusinessCentral")
+`applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
 
 `environmentName` - Name of the targeted environment
 
@@ -657,7 +657,7 @@ Data is returned for the following operation types:
 
 #### Route Parameters
 
-`applicationType` - Family of the environment's application as is (for example, "BusinessCentral")
+`applicationType` - Family of the environment's application (for example, "BusinessCentral")
 
 `environmentName` - Name of the targeted environment
 #### Response
@@ -859,7 +859,7 @@ POST /admin/v2.7/applications/{applicationFamily}/environments/{environmentName}
 
 #### Route Parameters
 
-`applicationFamily` - Family of the environment's application as is (for example, "BusinessCentral")
+`applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
 
 `environmentName` - Name of the targeted environment
 
@@ -881,6 +881,89 @@ POST /admin/v2.7/applications/{applicationFamily}/environments/{environmentName}
 
 `cannotSetAppInsightsKey` - the targeted environment's status isn't 'Active'
 
+### Get Security Group
+
+**INTRODUCED IN:** API version 2.8
+
+Gets the Azure AD group currently assigned to an environment.
+
+```
+GET /admin/v2.8/applications/{applicationFamily}/environments/{environmentName}/settings/securitygroupaccess
+```
+
+#### Route Parameters
+
+`applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
+
+`environmentName` - Name of the targeted environment
+
+#### Response
+
+If the group exists in Azure AD graph:
+
+```
+{
+    "id": "796d9c99-80e4-479c-8544-e745ffd18150",
+    "displayName": "Security group 1"
+}
+```
+
+If a previously assigned group no longer exists in Azure AD graph:
+
+```
+{
+    "id": "796d9c99-80e4-479c-8544-e745ffd18150",
+    "displayName": ""
+} 
+```
+
+If no group is configured for the tenant, returns 204. 
+
+### Set Security Group
+
+**INTRODUCED IN:** API version 2.8
+
+Assigns an Azure AD group to an environment.
+
+```
+Content-Type: application/json
+POST /admin/v2.8/applications/{applicationFamily}/environments/{environmentName}/settings/securitygroupaccess
+```
+
+#### Route Parameters
+
+`applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
+
+`environmentName` - Name of the targeted environment
+
+#### Body
+
+```
+{
+  "Value": GUID, // The object Id of the Azure AD group, "11111111-aaaa-2222-bbbb-222222222222"
+}
+```
+
+#### Response
+
+Returns 200 if successful, or 404 if the group doesn't exist in Azure AD.
+
+### Clear Security Group
+
+**INTRODUCED IN:** API version 2.8
+
+Clears an Azure AD group that is currently assigned to an environment.
+
+```
+DELETE /admin/v2.8/applications/{applicationFamily}/environments/{environmentName}/settings/securitygroupaccess
+```
+
+#### Route Parameters
+
+`applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
+
+`environmentName` - Name of the targeted environment
+
 ## Telemetry
 
 Telemetry includes the top-level AL events and any returned errors logged from the service. These events can provide necessary information and errors that can be used to troubleshoot issues happening in the tenant's environment. 
@@ -895,7 +978,7 @@ GET /admin/v2.7/applications/{applicationFamily}/environments/{environmentName}/
 
 #### Route Parameters
 
-`applicationFamily` - Family of the environment's application as is (for example, "BusinessCentral")
+`applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
 
 `environmentName` - Name of the targeted environment
 
@@ -1071,7 +1154,7 @@ GET /admin/v2.7/applications/{applicationFamily}/environments/{environmentName}/
 
 #### Route Parameters
 
-`applicationFamily` - Family of the environment's application as is (for example, "BusinessCentral")
+`applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
 
 `environmentName` - Name of the targeted environment
 
@@ -1115,7 +1198,7 @@ PUT /admin/v2.7/applications/{applicationFamily}/environments/{environmentName}/
 
 #### Route Parameters
 
-`applicationFamily` - Family of the environment's application as is (for example, "BusinessCentral")
+`applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
 
 `environmentName` - Name of the targeted environment
 
@@ -1156,7 +1239,7 @@ GET /admin/v2.7/support/applications/{applicationFamily}/environments/{environme
 
 #### Route Parameters
 
-`applicationFamily` - Family of the environment's application as is (for example, "BusinessCentral")
+`applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
 
 `environmentName` - Name of the targeted environment
 
@@ -1195,7 +1278,7 @@ PUT /admin/v2.7/support/applications/{applicationFamily}/environments/{environme
 
 #### Route Parameters
 
-`applicationFamily` - Family of the environment's application as is (for example, "BusinessCentral")
+`applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
 
 `environmentName` - Name of the targeted environment
 
@@ -1349,7 +1432,7 @@ POST /admin/v2.7/support/applications/{applicationFamily}/environments/{environm
 
 #### Route Parameters
 
-`applicationFamily` - Family of the environment's application as is (for example, "BusinessCentral")
+`applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
 
 `environmentName` - Name of the targeted environment
 
@@ -1405,7 +1488,7 @@ GET /admin/v2.7/exports/applications/{applicationFamily}/environments/{environme
 
 #### Route Parameters
 
-`applicationFamily` - Family of the environment's application as is (for example, "BusinessCentral")
+`applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
 
 `environmentName` - Name of the targeted environment
 
@@ -1438,7 +1521,7 @@ POST /admin/v2.7/exports/applications/{applicationFamily}/environments/{environm
 
 #### Route Parameters
 
-`applicationFamily` - Family of the environment's application as is (for example, "BusinessCentral")
+`applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
 
 `environmentName` - Name of the targeted environment
 
@@ -1576,7 +1659,7 @@ POST /admin/v2.7/applications/{applicationFamily}/environments/{environmentName}
 
 #### Route Parameters
 
-`applicationFamily` - Family of the environment's application as is (for example, "BusinessCentral")
+`applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
 
 `environmentName` - Name of the targeted environment.
 
@@ -1653,7 +1736,7 @@ POST /admin/v2.7/applications/{applicationFamily}/environments/{environmentName}
 
 #### Route Parameters
 
-`applicationFamily` - Family of the environment's application as is (for example, "BusinessCentral")
+`applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
 
 `environmentName` - Name of the targeted environment.
 
@@ -1715,7 +1798,7 @@ GET /admin/v2.7/applications/{applicationFamily}/environments/{environmentName}/
 
 #### Route Parameters
 
-`applicationFamily` - Family of the environment's application as is (for example, "BusinessCentral")
+`applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
 
 `environmentName` - Name of the targeted environment.
 
@@ -1749,7 +1832,7 @@ GET /admin/v2.7/applications/{applicationFamily}/environments/{environmentName}/
 
 #### Route Parameters
 
-`applicationFamily` - Family of the environment's application as is (for example, "BusinessCentral")
+`applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
 
 `environmentName` - Name of the targeted environment.
 
@@ -1790,7 +1873,7 @@ POST /admin/v2.7/applications/{applicationFamily}/environments/{environmentName}
 
 #### Route Parameters
 
-`applicationFamily` - Family of the environment's application as is (for example, "BusinessCentral")
+`applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
 
 `environmentName` - Name of the targeted environment.
 
@@ -1853,7 +1936,7 @@ GET /admin/v2.7/applications/{applicationFamily}/environments/{environmentName}/
 
 #### Route Parameters
 
-`applicationFamily` - Family of the environment's application as is (for example, "BusinessCentral")
+`applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
 
 `environmentName` - Name of the targeted environment.
 

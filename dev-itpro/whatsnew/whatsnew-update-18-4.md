@@ -39,7 +39,8 @@ Make sure to join the office hours call around 'Cloud Migration' on August 31. R
 
 **Action needed: Client secret-based service to service authentication deprecation for Microsoft hosted tenants integrating to Dataverse**  
 To ensure no disruptions in integration between Business Central and Dataverse you must upgrade your Business Central connection to Dataverse to certificate-based authentication. 
-Although change will happen in March 2022, we strongly recommend you perform steps below as soon as possible.
+Although change will happen in March 2022, we strongly recommend you perform steps outlined in [Upgrade Connections from Business Central Online to Use Certificate-Based Authentication](/dynamics365/business-central/admin-how-to-set-up-a-dynamics-crm-connection#upgrade-connections-from-business-central-online-to-use-certificate-based-authentication) as soon as possible.
+
 
 **Users see notification when they open the obsolete reports 204, 205, 206, & 207**  
 Before 2021 release wave 1, we [announced](/dynamics365/business-central/dev-itpro/upgrade/deprecated-features-w1#reports-204-207) that we were planning to replace several reports with newer versions. As the time approaches for the final clean-up, we start displaying notifications so that the affected users can take action before Business Central 2021 release wave 2.

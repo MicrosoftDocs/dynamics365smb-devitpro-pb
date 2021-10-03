@@ -92,7 +92,7 @@ sections:
           
       - question: Is the Windows client supported?
         answer: |
-          The first releases of [!INCLUDE[prod_short](includes/prod_short.md)] on premises included an installed client derived from Microsoft Dynamics NAV. Starting with 2019 release wave 2, this legacy component, referred to as "the Windows client", will no longer be available for [!INCLUDE[prod_short](includes/prod_short.md)]. For more information, see [FAQ About the Windows Client and Business Central](faq-win-cli.md).  
+          The first releases of [!INCLUDE[prod_short](includes/prod_short.md)] on premises included an installed client derived from Microsoft Dynamics NAV. Since 2019 release wave 2, this legacy component, referred to as "the Windows client", has not been available for [!INCLUDE[prod_short](includes/prod_short.md)]. For more information, see [FAQ About the Windows Client and Business Central](faq-win-cli.md).  
           
       - question: What's going on with the Help?
         answer: |

@@ -15,6 +15,8 @@ ms.author: solsen
 <!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
 # Update applyVendorEntries
 
+[!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
+
 Updates the properties of an apply vendor entry object for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## HTTP request

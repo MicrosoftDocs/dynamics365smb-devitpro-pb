@@ -116,7 +116,7 @@ To complete this task, you'll need the user name of the service account that run
 
 1. If not already done, import your key vault certificate and its private keys to the local certificate store for the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server computer.
 
-    You can import the certificate either using the [MMC snap-in](/dotnet/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in) or [Import-PfxCertificate cmdlet](/powershell/module/pkiclient/import-pfxcertificate) from a Windows PowerShell prompt.
+    You can import the certificate either using the [MMC snap-in](/dotnet/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in) or [Import-PfxCertificate cmdlet](/powershell/module/pki/import-pfxcertificate) from a Windows PowerShell prompt.
 
     For example, the following PowerShell command installs a certificate to the local machine's personal store: 
     

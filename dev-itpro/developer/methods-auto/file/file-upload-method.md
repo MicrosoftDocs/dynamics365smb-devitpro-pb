@@ -74,9 +74,15 @@ We recommend that you use the methods in codeunit 419, File Management, to uploa
 
 ## Example  
 
+The `FromFilter` parameter must follow this pattern:
+`<ExtensionGroupName>|<extension1>;<extension2>`, for example `'Word files|*.docx;*.doc'`.
+
+This example uses a text file:
+
 ```  
-Upload('Upload file','C:\','Text file(*.txt)|*.txt','Test.txt',varTest);  
+Upload('Upload file','C:\','Text file (*.txt)|*.txt','Test.txt',varTest);  
 ```  
+
 
 ## See Also
 
