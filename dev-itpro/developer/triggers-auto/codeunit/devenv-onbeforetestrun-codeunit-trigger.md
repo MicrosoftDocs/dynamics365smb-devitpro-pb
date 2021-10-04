@@ -3,7 +3,7 @@ title: "OnBeforeTestRun (Codeunit) Trigger"
 description: "Runs before a test of a test codeunit is run."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 09/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,7 +25,7 @@ Runs before a test of a test codeunit is run.
 
 ## Syntax
 ```AL
-trigger OnBeforeTestRun(CodeunitId: Integer, CodeunitName: Text, FunctionName: Text, Permissions: TestPermissions): Ok
+trigger OnBeforeTestRun(CodeunitId: Integer; CodeunitName: Text; FunctionName: Text; Permissions: TestPermissions): Ok
 begin
     ...
 end;

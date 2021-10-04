@@ -4,7 +4,7 @@ description: "Description of how to use the AL profiler to analyze method calls 
 
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 06/21/2021
+ms.date: 10/04/2021
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: solsen
@@ -122,6 +122,9 @@ The following table provides an overview of the shortcut key combinations that y
 |*(star) | Expand one level for all nodes. Consecutive keystrokes will expand to the next level.|
 
 ## Inline CodeLens for AL profiling results
+
+> [!NOTE]  
+> CodeLens for AL profiling results is in preview with runtime 8.0.
 
 CodeLens for Visual Studio Code is enabled in the user or workspace settings by adding the `"editor.codeLens": true` setting for the specific user or for the workspace. CodeLens is also available for showing profile results. At hover, CodeLens displays time spent in milliseconds for the specific method, and number of hits. The option for adding a lower limit for time spent on statement execution is `al.statementLensMin`. To activate this setting, press **Ctrl+Shift+P**, and then choose **Preferences: Open Settings (UI)** for workspace settings, or choose **Preferences: Open User Settings** for user settings. 
 
