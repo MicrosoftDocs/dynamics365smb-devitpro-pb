@@ -3,7 +3,7 @@ title: "Compiler Error AL427"
 description: "Field {0} cannot be converted to type {1}."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,8 @@ author: SusanneWindfeldPedersen
 # Compiler Error AL427
 Field {0} cannot be converted to type {1}.
 
+
+The type of the result of a calculation formula must match the type of the FlowField associated with that CalcFormula.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

@@ -3,7 +3,7 @@ title: "Compiler Error AL123"
 description: "The return value name '{0}' is already defined."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,8 @@ author: SusanneWindfeldPedersen
 # Compiler Error AL123
 The return value name '{0}' is already defined.
 
+
+Multiple return values with the same name are defined in the same object.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

@@ -3,7 +3,7 @@ title: "Compiler Error AL357"
 description: "Cannot add {0} '{1}' with the same name multiple times."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,8 @@ author: SusanneWindfeldPedersen
 # Compiler Error AL357
 Cannot add {0} '{1}' with the same name multiple times.
 
+
+An element with the same name cannot be added multiple times.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

@@ -3,7 +3,7 @@ title: "Compiler Error AL164"
 description: "The trigger '{0}' is already defined."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,8 @@ author: SusanneWindfeldPedersen
 # Compiler Error AL164
 The trigger '{0}' is already defined.
 
+
+There is a duplicate trigger defined in the same object.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

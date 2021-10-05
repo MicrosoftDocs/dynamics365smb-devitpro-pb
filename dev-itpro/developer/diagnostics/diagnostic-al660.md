@@ -3,7 +3,7 @@ title: "Compiler Warning (Future Error) AL660"
 description: "The property '{0}' cannot be customized."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,6 +19,7 @@ The property '{0}' cannot be customized.
 
 > [!IMPORTANT]
 > This warning will become an error in Fall 2022.
+
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

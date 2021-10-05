@@ -3,7 +3,7 @@ title: "Compiler Error AL206"
 description: "A field with ID {0} is already defined in {1} '{2}' by the extension '{3}'."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,8 @@ author: SusanneWindfeldPedersen
 # Compiler Error AL206
 A field with ID {0} is already defined in {1} '{2}' by the extension '{3}'.
 
+
+There are multiple fields with the same ID defined in the same object.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

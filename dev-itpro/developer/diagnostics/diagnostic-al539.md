@@ -3,7 +3,7 @@ title: "Compiler Error AL539"
 description: "The field '{0}' cannot be used multiple times when defining the order of the page view."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,8 @@ author: SusanneWindfeldPedersen
 # Compiler Error AL539
 The field '{0}' cannot be used multiple times when defining the order of the page view.
 
+
+The same field cannot be reference multiple times when defining the order of the page view.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

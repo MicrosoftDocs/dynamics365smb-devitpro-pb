@@ -3,7 +3,7 @@ title: "Compiler Error AL350"
 description: "The column '{0}' cannot be used multiple times when defining the order of the resulting dataset."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,8 @@ author: SusanneWindfeldPedersen
 # Compiler Error AL350
 The column '{0}' cannot be used multiple times when defining the order of the resulting dataset.
 
+
+A column cannot be used multiple times when defining the order of the resulting dataset. It can only be selected once the order of the resulting dataset of the query is defined. The selected duplicate columns must be deleted.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

@@ -3,7 +3,7 @@ title: "Compiler Error AL439"
 description: "The label's property is not valid."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,8 @@ author: SusanneWindfeldPedersen
 # Compiler Error AL439
 The label's property is not valid. Possible properties are: {0}.
 
+
+Invalid parameter for the label data type. For more information about the valid parameters, see [Label Data Type](../methods-auto/label/label-data-type).
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

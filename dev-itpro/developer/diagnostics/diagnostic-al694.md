@@ -3,7 +3,7 @@ title: "Compiler Warning (Future Error) AL694"
 description: "The field '{0}' which is part of the primary key of table '{1}' cannot be obsolete."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,6 +19,7 @@ The field '{0}' which is part of the primary key of table '{1}' cannot be obsole
 
 > [!IMPORTANT]
 > This warning will become an error in Spring 2022.
+
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

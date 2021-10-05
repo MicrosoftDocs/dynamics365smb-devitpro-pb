@@ -3,7 +3,7 @@ title: "Compiler Warning AL432"
 description: "{0} '{1}' is marked for removal."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,8 @@ author: SusanneWindfeldPedersen
 # Compiler Warning AL432
 {0} '{1}' is marked for removal. {2}.
 
+
+The specified object will become obsolete.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

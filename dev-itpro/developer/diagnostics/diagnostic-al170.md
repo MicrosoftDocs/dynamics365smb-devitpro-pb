@@ -3,7 +3,7 @@ title: "Compiler Error AL170"
 description: "An '=' is expected for property {0}."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,8 @@ author: SusanneWindfeldPedersen
 # Compiler Error AL170
 An '=' is expected for property {0}.
 
+
+An '=' is expected between a property and its value. The correct syntax is `Property_name = value;`.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

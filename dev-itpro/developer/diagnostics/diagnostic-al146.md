@@ -3,7 +3,7 @@ title: "Compiler Error AL146"
 description: "The maximum number of array elements is {0}."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,8 @@ author: SusanneWindfeldPedersen
 # Compiler Error AL146
 The maximum number of array elements is {0}. Actual number is {1}.
 
+
+The number of elements in an array must not exceed 1000000.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

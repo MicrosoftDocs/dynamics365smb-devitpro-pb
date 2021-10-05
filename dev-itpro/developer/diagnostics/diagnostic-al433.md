@@ -3,7 +3,7 @@ title: "Compiler Error AL433"
 description: "{0} '{1}' is removed."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,8 @@ author: SusanneWindfeldPedersen
 # Compiler Error AL433
 {0} '{1}' is removed. {2}.
 
+
+The specified object is obsolete.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

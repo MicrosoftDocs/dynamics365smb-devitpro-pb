@@ -3,7 +3,7 @@ title: "Compiler Error AL349"
 description: "Column '{0}' does not exist in application object '{1}'."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,8 @@ author: SusanneWindfeldPedersen
 # Compiler Error AL349
 Column '{0}' does not exist in application object '{1}'.
 
+
+The referenced column does not exist in the current application object.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

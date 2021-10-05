@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # AL Compiler Diagnostics
 
 
-|Id|Description|Default Severity|
+|Id|Message|Default Severity|
 |--|-----------|----------------|
 |[AL100](diagnostic-al100.md)|Unterminated multiline comment.|Error|
 |[AL101](diagnostic-al101.md)|Constant value '{0}' is outside the range for a Decimal.|Error|
@@ -115,7 +115,7 @@ author: SusanneWindfeldPedersen
 |[AL196](diagnostic-al196.md)|The call is ambiguous between the method '{0}' defined in {1} '{2}' by the extension '{3}' and the method '{4}' defined in {5} '{6}' by the extension '{7}'.|Error|
 |[AL197](diagnostic-al197.md)|An application object of type '{0}' with name '{1}' is already declared by the extension '{2}'.|Error|
 |[AL198](diagnostic-al198.md)|Expected one of the application object keywords ({0}).|Error|
-|[AL199](diagnostic-al199.md)|The type of the sum index field '{0}' must be numeric(Decimal, BigInteger, Integer, or Duration).|Error|
+|[AL199](diagnostic-al199.md)|The type of the sum index field '{0}' must be numeric (Decimal, BigInteger, Integer, or Duration).|Error|
 |[AL200](diagnostic-al200.md)|Property '{0}' is obsolete and will be removed in a future version.|Warning|
 |[AL201](diagnostic-al201.md)|The {0} FlowField is not a Boolean field. If a FlowField CalcFormula starts with 'Exist', then the FlowField must be a Boolean type field.|Error|
 |[AL202](diagnostic-al202.md)|The {0} FlowField is not an Integer field. If a FlowField CalcFormula starts with 'Count', then the FlowField must be an Integer type field.|Error|
@@ -566,8 +566,7 @@ author: SusanneWindfeldPedersen
 |[AL682](diagnostic-al682.md)|A DataItem or Column with name '{0}' could not be found in the target {1}.|Error|
 |[AL683](diagnostic-al683.md)|The permissionset '{0}' belongs to a different module and cannot be used when defining entitlements.|Error|
 |[AL684](diagnostic-al684.md)|The permissionset '{0}' contains permissionsets or permission for objects from other module. Permissions on objects from other modules will be ignored.|Warning|
-|[AL685](diagnostic-al685.md)|The length '{0}' of the calculation formula's target field '{1}' is greater than the length '{2}' of the source flow field '{3}'. This could result in a runtime error. 
-Please make sure that the target field's length is less than equal to the source field length.|Warning (Future Error)|
+|[AL685](diagnostic-al685.md)|The length '{0}' of the calculation formula's target field '{1}' is greater than the length '{2}' of the source flow field '{3}'. This could result in a runtime error. Please make sure that the target field's length is less than equal to the source field length.|Warning (Future Error)|
 |[AL686](diagnostic-al686.md)|The base type already defines a method called '{0}' with the same parameter types.|Error|
 |[AL687](diagnostic-al687.md)|The key '{0}' on table '{1}' cannot contain the fields defined for the primary key in the IncludeFields property.|Error|
 |[AL688](diagnostic-al688.md)|The key '{0}' on table '{1}' cannot contain the fields defined for the key in the IncludeFields property.|Error|
