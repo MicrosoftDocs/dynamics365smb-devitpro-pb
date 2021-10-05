@@ -71,6 +71,7 @@ The custom dimensions that are of particular interest for this operation include
 |reportingEngine | Specifies the reporting engine used to generate the report, such as **ProcessingOnly**, **Rdlc**, or **Word**. This dimension was added in version 17.3 |
 |result|**Success**|
 |serverExecutionTime|Specifies the amount of time it took the service to complete the request<sup>[\[1\]](#1)</sup>. The time has the format hh:mm:ss.sssssss.|
+|sqlDatabaseAccessIntent|Specifies if the report was generated using the Read Scale-Out feature. Possible values are **ReadOnly|**, or **ReadWrite**. This dimension was added in version 19.1| 
 |sqlExecutes|Specifies the number of SQL statements that the report executed<sup>[\[1\]](#1)</sup>.|
 |sqlRowsRead|Specifies the number of table rows that were read by the SQL statements<sup>[\[1\]](#1)</sup>.|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
