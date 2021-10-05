@@ -58,7 +58,7 @@ Microsoft's GitHub *dynamics365smb-docs* repos for [!INCLUDE [prod_short](../dev
 
 - archive
 
-    Contains files that are not published but kept for backwards compatibility use internally at Microsoft. You can ignore this folder.
+    In the source repo only, contains files that are not published but kept for backwards compatibility use internally at Microsoft. You can ignore this folder. The folder does not exist in the translation repos.
 - business-central
 
     Contains MarkDown files with content that is relevant for endusers, administrators, and consultants of [!INCLUDE [prod_short](../developer/includes/prod_short.md)]
