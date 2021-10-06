@@ -50,7 +50,7 @@ The first task is to use Azure portal to register an application for Business Ce
         |-------|-----------|
         |Name|Specify a name for your Business Central on-premises solution, such as *Business Central on-premises* or *Azure Services for Business Central on-premises*. |
         |Supported account types| Select <strong>Accounts in any organizational directory (Any Azure AD directory - Multitenant)</strong> |
-        |Redirect URI|Set the first box to **Web** to specify a web application. Enter the URL for your Business Central on-premises browser client, followed by *OAuthLanding.htm*, for example: `https://MyServer/BC180/OAuthLanding.htm` or `https://cronus.onmicrosoft.com/BC180/OAuthLanding.htm`. This file is used to manage the exchange of data between Business Central on-premises and other services through Azure AD.<br> <br>**Important:** The URL must match the URL of Web client, as it appears in the browser address. For example, even though the actual URL might be `https://MyServer:443/BC180/OAuthLanding.htm`, the browser typically removes the port number `:443`.|
+        |Redirect URI|Set the first box to **Web** to specify a web application. Enter the URL for your Business Central on-premises browser client, followed by *OAuthLanding.htm*, for example: `https://MyServer/BC190/OAuthLanding.htm` or `https://cronus.onmicrosoft.com/BC190/OAuthLanding.htm`. This file is used to manage the exchange of data between Business Central on-premises and other services through Azure AD.<br> <br>**Important:** The URL must match the URL of Web client, as it appears in the browser address. For example, even though the actual URL might be `https://MyServer:443/BC190/OAuthLanding.htm`, the browser typically removes the port number `:443`.|
 
         When completed, an **Overview** displays in the portal for the new application.
 
@@ -64,23 +64,29 @@ The first task is to use Azure portal to register an application for Business Ce
 
 3. Grant the registered application delegated permission to access the required service APIs, like Power BI.
 
-    Follow the general guidelines at [Add permissions to access web APIs](/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-permissions-to-access-web-apis) for each service.
+    From the registered application's overview page, select **API permissions** > **Add a permission**. Then, use the **Request API permissions** pane to locate the API and add permissions. For more information, see [Add permissions to access web APIs](/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-permissions-to-access-web-apis) in the Azure documentation.
 
     Use the following table to help you set the minimum permissions:
 
     |Feature|API | Permission name|Type|Description|
     |----|----|----------------|----|-----------|
     |All|Microsoft Graph | User.Read|Delegated|Sign in and read user profile|
+    |[Business Central add-in for Excel](/dynamics365/business-central/admin-powerbi-setup)|[Business Central app registration name]|[Business Central app permission name]|Delegated|Allows users of the add-in for Excel to access the OData web services to read and write data.|
     |[Business Central Add-in for Outlook](Setting-up-Office-Add-Ins-Outlook-Inbox.md)|Microsoft Graph | EWS.AccessAsUser.All|Delegated|Gives the Business Central add-in for Outlook permission to mailbox data in Microsoft 365 (Exchange Online) or Exchange Server.|
+    |[Open in OneDrive](/dynamics365/business-central/admin-onedrive-integration)|SharePoint|AllSites.Write|Delegated|Read and write items in all site collections|
+    |||MyFiles.Write|Delegated|Read and write user files|
+    |||User.Read.All|Delegated|Read user profiles|
+    |[Power BI Integration](/dynamics365/business-central/admin-powerbi-setup)|Power BI Service|Report.Read.All|Delegated|View all reports. Required for viewing Power BI reports in Business Central.|
     |[Universal Print integration](/dynamics365/business-central/ui-specify-printer-selection-reports#set-up-universal-print)|Microsoft Graph |PrinterShare.ReadBasic.All|Delegated|Read basic information about printer shares. Required for using Universal Print printers.|
     |||PrintJob.Create|Delegated|Create print jobs. Required for using Universal Print printers|
     |||PrintJob.ReadBasic|Delegated|Read basic information of user's print jobs. Required for using Universal Print printers.|
-    |[Power BI Integration](/dynamics365/business-central/admin-powerbi-setup)|Power BI Service|Report.Read.All|Delegated|View all reports. Required for viewing Power BI reports in Business Central.|
-    |[Business Central add-in for Excel](/dynamics365/business-central/admin-powerbi-setup)|[Business Central app registration name]|[Business Central app permission name]|Delegated|Allows users of the add-in for Excel to access the OData web services to read and write data.|
 
 ## Set up the registered application in Business Central
 
-After you create the application registration, the next task is to configure the Business Central tenant to use it. You'll need the following information about the application registration: redirect URL, application (client) ID, and client secret. 
+After you create the application registration, the next task is to configure the Business Central tenant to use it. You'll need the following information about the application registration: redirect URL, application (client) ID, and client secret.
+
+> [!NOTE]
+> This task isn't required when setting up Open in OneDrive. Instead, see [Configuring Business Central On-Premises for OneDrive](/dynamics365/business-central/admin-onedrive-integration#to-set-up-the-connection-in--on-premises) in the business functionality help.
 
 1. In the top-right corner, choose the ![Tell me.](../developer/media/search-icon.png "Tell me what you want to do") icon, enter **Assisted Setup**, and then choose the related link.
 2. Select **Set up your Azure Active Directory accounts**, then **Next**.
