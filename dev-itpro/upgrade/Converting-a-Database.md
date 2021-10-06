@@ -179,7 +179,10 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[pr
     -  [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)]
 
     > [!IMPORTANT]  
-    > For a multitenant installation, configure the [!INCLUDE[server](../developer/includes/server.md)] instance to be a multitenant instance.
+    > For a multi-tenant installation, configure the [!INCLUDE[server](../developer/includes/server.md)] instance to be a multi-tenant instance.
+
+    > [!NOTE]
+    > If you want to install the local functionality for India, use the following link to get the files for that version, [Business Central Spring 2019](https://download.microsoft.com/download/c/6/4/c64076e6-7a9e-4a7b-b2e4-1b35fcbe3eae/Dynamics.14x.IN.3478340.DVD.zip).
 
 3. <a name="convertdb"></a>Run the newly installed [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] as an administrator.
 
