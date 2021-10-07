@@ -354,7 +354,7 @@
 ### [Event Example](developer/devenv-events-example.md)
 ### [Walkthrough: Implementing New Workflow Events and Responses](developer/devenv-walkthrough-workflow-events-responses.md)  
 ## [Notifications](developer/devenv-notifications-developing.md)
-## [Task Scheduler and Job Queue](developer/devenv-task-scheduler.md)
+## Task Scheduler and Job Queue
 ### [Task Scheduler](developer/devenv-task-scheduler.md)
 ### [Job Queue](developer/devenv-job-queue.md)
 ## App Key Vaults for Secrets
