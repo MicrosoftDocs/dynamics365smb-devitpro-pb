@@ -1,9 +1,9 @@
 ---
 title: "ErrorInfo.DataClassification([DataClassification]) Method"
-description: "Specifies the severity level of the error."
+description: "Specifies the classification of the error."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 10/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # ErrorInfo.DataClassification([DataClassification]) Method
 > **Version**: _Available or changed with runtime version 3.0._
 
-Specifies the severity level of the error. Values include 'Critical', 'Error', 'Warning', 'Normal', and 'Verbose'
+Specifies the classification of the error. Values include 'CustomerContent', 'EndUserIdentifiableInformation', 'EndUserPseudonymousIdentifiers', 'AccountData', 'OrganizationIdentifiableInformation', 'SystemMetadata', and 'ToBeClassified'
 
 
 ## Syntax
