@@ -12,6 +12,8 @@ author: jswymer
 ---
 # Converting a Database to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Spring 2019  - Technical Upgrade
 
+[!INCLUDE [upgrade-14](../includes/upgrade-14.md)]
+
 [See print-friendly quick reference](technical-upgrade-checklist.md)
 
 This article describes how to convert a database from one of the following versions to the latest [!INCLUDE[prod_short](../developer/includes/prod_short.md)] platform:

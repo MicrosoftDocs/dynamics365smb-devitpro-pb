@@ -13,6 +13,8 @@ ms.service: "dynamics365-business-central"
 ---
 # Upgrading the Application Code in [!INCLUDE[prod_long](../developer/includes/prod_long.md)]
 
+[!INCLUDE [upgrade-14](../includes/upgrade-14.md)]
+
 Typically, customers want all the customizations that have been implemented in their existing databases to be migrated to their new [!INCLUDE[prod_short](../developer/includes/prod_short.md)] databases. Depending on the version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] that a database is being upgraded from, the amount of code changes between the two versions can vary. To upgrade the application code, you must merge code from different versions of the application. This merge process is known as a *code upgrade* or *application upgrade*. You must upgrade the application before you upgrade the data.
 
 > [!IMPORTANT]  

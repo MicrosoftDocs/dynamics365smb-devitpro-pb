@@ -13,6 +13,8 @@ ms.service: "dynamics365-business-central"
 ---
 # Upgrading the Data to [!INCLUDE[prod_short](../developer/includes/prod_short.md)]: Single-Tenant Deployment
 
+[!INCLUDE [upgrade-14](../includes/upgrade-14.md)]
+
 [See print-friendly quick reference](singletenant-upgrade-checklist.md)
 
 This article describes the tasks required for upgrading the data of a [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] or [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database to a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] major version or cumulative update.
