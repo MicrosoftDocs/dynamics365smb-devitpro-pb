@@ -1,6 +1,6 @@
 ---
 title: Upgrade Application Code
-description: The article explains how to upgrade the application code and how to merge code from different versions of the application.
+description: The article explains how to upgrade the application code to version 14 and how to merge code from different versions of the application.
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
@@ -12,6 +12,8 @@ author: jswymer
 ms.service: "dynamics365-business-central"
 ---
 # Upgrading the Application Code in [!INCLUDE[prod_long](../developer/includes/prod_long.md)]
+
+[!INCLUDE [upgrade-14](../includes/upgrade-14.md)]
 
 Typically, customers want all the customizations that have been implemented in their existing databases to be migrated to their new [!INCLUDE[prod_short](../developer/includes/prod_short.md)] databases. Depending on the version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] that a database is being upgraded from, the amount of code changes between the two versions can vary. To upgrade the application code, you must merge code from different versions of the application. This merge process is known as a *code upgrade* or *application upgrade*. You must upgrade the application before you upgrade the data.
 
@@ -395,7 +397,7 @@ For information about importing objects, see [Importing Objects](../cside/cside-
     >|----|---------|
     >|ELSTER VAT Localization for Germany| Elster.app|
     >
-    > If you are upgrading from a India (IN) version of Dynamics NAV 2016, you must publish and install the following extensions to get the local functionality:
+    > If you are upgrading from an India (IN) version of Dynamics NAV 2016, you must publish and install the following extensions to get the local functionality:
     >
     >|Name|Extension package|
     >|----|---------|
