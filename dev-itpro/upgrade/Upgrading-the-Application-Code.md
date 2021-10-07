@@ -1,6 +1,6 @@
 ---
 title: Upgrade Application Code
-description: The article explains how to upgrade the application code and how to merge code from different versions of the application.
+description: The article explains how to upgrade the application code to version 14 and how to merge code from different versions of the application.
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
@@ -397,7 +397,7 @@ For information about importing objects, see [Importing Objects](../cside/cside-
     >|----|---------|
     >|ELSTER VAT Localization for Germany| Elster.app|
     >
-    > If you are upgrading from a India (IN) version of Dynamics NAV 2016, you must publish and install the following extensions to get the local functionality:
+    > If you are upgrading from an India (IN) version of Dynamics NAV 2016, you must publish and install the following extensions to get the local functionality:
     >
     >|Name|Extension package|
     >|----|---------|

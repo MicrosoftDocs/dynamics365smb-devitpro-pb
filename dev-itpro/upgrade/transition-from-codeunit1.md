@@ -1,5 +1,6 @@
 ---
 title: "Transitioning from Codeunit 1"
+description: "Learn how to convert your code as part of the upgrade to version 14 of Business Central."
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na

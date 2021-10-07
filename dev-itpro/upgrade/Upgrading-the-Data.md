@@ -1,6 +1,6 @@
 ---
 title: Upgrading the Data to in Single-Tenant Deployment
-description: This article describes the tasks required for upgrade the data when you have a single-tenant deployment. 
+description: This article describes the tasks required for upgrade the data to version 14 when you have a single-tenant deployment. 
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
@@ -99,7 +99,7 @@ Before you start the upgrade tasks, make sure you meet the following prerequisit
 
 Create a full backup of the old database in the SQL Server. Alternatively, you can make a copy of the old database and perform the upgrade tasks on the copy.  
 
-For more information, see [Create a Full Database Backup \(SQL Server\)](/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server?view=sql-server-ver15).  
+For more information, see [Create a Full Database Backup \(SQL Server\)](/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server?view=sql-server-ver15&preserve-view=true).  
 
 ## Task 2 Uninstall all extensions in old database
 
@@ -488,20 +488,20 @@ If you are upgrading from a German (DE) version you must publish and install the
 |----|---------|
 |ELSTER VAT Localization for Germany| Elster.app|
 
-If you are upgrading from a India (IN) version of Dynamics NAV 2016, you must publish and install the following extensions to get the local functionality:
+If you are upgrading from an India (IN) version of Dynamics NAV 2016, you must publish and install the following extensions to get the local functionality:
 
-|Name|Extension package|
-|----|---------|
-|India Tax Base| IndiaTaxBase.app|
-|India Tax Engine| IndiaTaxEngine.app||
-|India Tax GST| IndiaTaxGST.app|
-|India Upgrade Tables| IndiaUpgradeTables.app|
-|India TCS| IndiaUPGTCS.app|
-|India TDS| IndiaUPGTDS.app|
-|Fixed Asset Depreciation for India| INFADepreciation.app|
-|India Gate Entry| INGateEntry.app|
-|India Voucher Interface|INVoucherInterface.app|
-|India Data Migration|UPGIndia.app|
+| Name | Extension package |
+|--|--|
+| India Tax Base | IndiaTaxBase.app |
+| India Tax Engine | IndiaTaxEngine.app |
+| India Tax GST | IndiaTaxGST.app |
+| India Upgrade Tables | IndiaUpgradeTables.app |
+| India TCS | IndiaUPGTCS.app |
+| India TDS | IndiaUPGTDS.app |
+| Fixed Asset Depreciation for India | INFADepreciation.app |
+| India Gate Entry | INGateEntry.app |
+| India Voucher Interface | INVoucherInterface.app |
+| India Data Migration | UPGIndia.app |
 
 Follow these steps for each extension by using the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]:
 
