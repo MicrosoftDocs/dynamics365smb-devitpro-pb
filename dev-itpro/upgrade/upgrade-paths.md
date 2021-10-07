@@ -1,5 +1,5 @@
 ---
-title: Upgrade paths to Business Central
+title: Supported upgrade paths to Business Central on-premises
 description: Provides an overview of the different upgrade paths for Business Central on-premises across versions.
 author: jswymer
 ms.custom: na
@@ -8,7 +8,7 @@ ms.suite: na
 ms.service: "dynamics365-business-central"
 ms.topic: conceptual
 ms.author: jswymer
-ms.date: 06/23/2021
+ms.date: 10/07/2021
 ---
 
 # Supported Upgrade Paths to [!INCLUDE[prod_long](../developer/includes/prod_long.md)] Releases
@@ -56,16 +56,18 @@ The following sections provide the supported upgrade paths to the different [!IN
 
 ## Upgrade to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Spring 2019 (v14)
 
+[!INCLUDE [upgrade-14](../includes/upgrade-14.md)]
+
 |  Source version  |   Upgrade path  |
 |------------|--------------|
 |<ul><li> [!INCLUDE[navcrete](../developer/includes/navcrete_md.md)]</li><li>[!INCLUDE[navcorfu](../developer/includes/navcorfu_md.md)]</li><li>[!INCLUDE[nav2017](../developer/includes/nav2017.md)]</li><li>[!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)]</li><li>[!INCLUDE[prod_short](../developer/includes/prod_short.md)] v13</li></ul>|Direct|
 
-## Upgrade to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] October 2018 (v13)
+<!--## Upgrade to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] October 2018 (v13)
 
 |  Source version  |  Upgrade path  |
 |------------|--------------|
 |<ul><li> [!INCLUDE[navcrete](../developer/includes/navcrete_md.md)]</li><li>[!INCLUDE[navcorfu](../developer/includes/navcorfu_md.md)]</li><li>[!INCLUDE[nav2017](../developer/includes/nav2017.md)]</li><li>[!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)]</li></ul>|Direct|
-
+-->
 ## See Also
 
 [Upgrading to Business Central Spring 2019](upgrading-to-business-central-on-premises.md)  

@@ -13,6 +13,8 @@ author: jswymer
 ---
 # Installing a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Spring 2019 Cumulative Update
 
+[!INCLUDE [upgrade-14](../includes/upgrade-14.md)]
+
 This article describes how to install a cumulative update for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises. A cumulative update is a set of files that include hotfixes and regulatory features released for Business Central.
 
 ## Download the cumulative update package
