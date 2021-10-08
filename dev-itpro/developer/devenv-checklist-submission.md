@@ -70,12 +70,12 @@ For **each country and each release** targeted by your submission, the following
 > [!Note]  
 > You are required to include the dependencies for your extension as part of your submission only if you are submitting a newer version for them, or are making these libraries available in new countries. If you do not include them in your submission, they will be downloaded from the [App Management API](../administration/appmanagement/app-management-api.md) if they are available.
 
-3. The set of baselines for your extension is resolved using the [App Management API](../administration/appmanagement/app-management-api.md).
+3. The set of baselines for your extension is resolved by using the [App Management API](../administration/appmanagement/app-management-api.md).
 4. The extension is compiled against the set of dependencies resolved. If the **compilation fails, the submission is rejected.**
 5. The extension is tested against the resolved baselines using the AppSourceCop analyzer. If any **violations or breaking changes are identified, the submission is rejected.**
 6. If the **runtime version of the extension is not supported by the release targeted, the submission is rejected.**
 
-If all extensions in the submission succeed the validation for each country and release wihtout errors, **the submission is accepted.**.
+If all extensions in the submission succeed the validation for each country and release without errors, **the submission is accepted.**.
 
 ## Running technical validation yourself
 
@@ -187,7 +187,7 @@ If your extension's manifest is defined as follows, the minimum release where yo
 }
 ```
 
-Note that for AppSource extensions, we advise using the `application` property over explicit dependencies on the `Base Application` and `System Application`. For more information, see [The Microsoft_Application.app File](devenv-application-app-file.md) and [AS0085](analyzers/appsourcecop-as0085-applicationdependencymustbeused.md).
+Note that for AppSource extensions, it is recommended using the `application` property over explicit dependencies on the `Base Application` and `System Application`. For more information, see [The Microsoft_Application.app File](devenv-application-app-file.md) and [AS0085](analyzers/appsourcecop-as0085-applicationdependencymustbeused.md).
 
 <!-- ### How to specify a maximum release for your extension?
 
