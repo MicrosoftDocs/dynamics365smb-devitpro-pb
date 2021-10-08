@@ -108,7 +108,7 @@ In this task, you register your [!INCLUDE[prod_short](../developer/includes/prod
     |--|--|
     |Name|Specifies the name of your application as it will display to your users, such as **Business Central App by My Solutions**.|
     |Supported account types|Select Accounts in any organizational directory (Any Azure AD directory - Multitenant)|
-    |Redirect URI|Specifies the type of application that you're registering and the redirect URI (or reply URL) for your application. Set the type to **Web**, and in the redirect URL box, enter URL for signing in to the [!INCLUDE[webclient](../developer/includes/webclient.md)], for example `https://localhost:443/BC170/SignIn`.<br /><br />The URI has the format `https://<domain or computer name>/<webserver-instance>/SignIn`, such as `https://cronusinternationltd.onmicrosoft.com/BC170/SignIn` or `https://MyBcWebServer/BC170/Signin`. <br /> <br />**Important** The portion of the reply URL after the domain name (in this case `BC170/SignIn`) is case-sensitive, so make sure that the web server instance name matches the case of the web server instance name as it is defined on IIS for your [!INCLUDE[webserver](../developer/includes/webserver.md)] installation.|
+    |Redirect URI|Specifies the type of application that you're registering and the redirect URI (or reply URL) for your application. Set the type to **Web**, and in the redirect URL box, enter URL for signing in to the [!INCLUDE[webclient](../developer/includes/webclient.md)], for example `https://localhost:443/BC190/SignIn`.<br /><br />The URI has the format `https://<domain or computer name>/<webserver-instance>/SignIn`, such as `https://cronusinternationltd.onmicrosoft.com/BC190/SignIn` or `https://MyBcWebServer/BC190/Signin`. <br /> <br />**Important** The portion of the reply URL after the domain name (in this case `BC190/SignIn`) is case-sensitive, so make sure that the web server instance name matches the case of the web server instance name as it is defined on IIS for your [!INCLUDE[webserver](../developer/includes/webserver.md)] installation.|
 
     # [Multitenant-tenant](#tab/multitenant)
     
@@ -116,7 +116,7 @@ In this task, you register your [!INCLUDE[prod_short](../developer/includes/prod
     |--|--|
     |Name|Specifies the name of your application as it will display to your users, such as **Business Central App by My Solutions**.|
     |Supported account types|Specifies the accounts that you would like your application to support. If you're going to use different Azure AD tenants for different [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenants, then select **Accounts in any organizational directory (Any Azure AD directory - Multitenant)**. Otherwise, you can choose **Accounts in this organizational directory only (Single tenant)**.|
-    |Redirect URI|Specifies the type of application that you're registering and the redirect URI (or reply URL) for your application. Set the type to **Web**, and in the redirect URL box, enter URL for signing in to the [!INCLUDE[webclient](../developer/includes/webclient.md)], for example `https://localhost:443/BC170/SignIn`.<br /><br />The URI has the format `https://<domain or computer name>/<webserver-instance>/SignIn`, such as `https://cronusinternationltd.onmicrosoft.com/BC170/SignIn` or `https://MyBcWebServer/BC170/Signin`.<br /> <br />**Important** The portion of the reply URL after the domain name (in this case `BC170/SignIn`) is case-sensitive, so make sure that the web server instance name matches the case of the web server instance name as it is defined on IIS for your [!INCLUDE[webserver](../developer/includes/webserver.md)] installation.|
+    |Redirect URI|Specifies the type of application that you're registering and the redirect URI (or reply URL) for your application. Set the type to **Web**, and in the redirect URL box, enter URL for signing in to the [!INCLUDE[webclient](../developer/includes/webclient.md)], for example `https://localhost:443/BC190/SignIn`.<br /><br />The URI has the format `https://<domain or computer name>/<webserver-instance>/SignIn`, such as `https://cronusinternationltd.onmicrosoft.com/BC190/SignIn` or `https://MyBcWebServer/BC190/Signin`.<br /> <br />**Important** The portion of the reply URL after the domain name (in this case `BC190/SignIn`) is case-sensitive, so make sure that the web server instance name matches the case of the web server instance name as it is defined on IIS for your [!INCLUDE[webserver](../developer/includes/webserver.md)] installation.|
 
     ---
 
@@ -213,7 +213,7 @@ You can configure the [!INCLUDE[server](../developer/includes/server.md)] by usi
         **Example**
 
         ```
-        https://login.microsoftonline.com/cronusinternationltd.onmicrosoft.com/wsfed?wa=wsignin1.0%26wtrealm=https://cronusinternationltd.onmicrosoft.com/businesscentral%26wreply=https://cronusinternationltd.onmicrosoft.com/BC170/SignIn
+        https://login.microsoftonline.com/cronusinternationltd.onmicrosoft.com/wsfed?wa=wsignin1.0%26wtrealm=https://cronusinternationltd.onmicrosoft.com/businesscentral%26wreply=https://cronusinternationltd.onmicrosoft.com/BC190/SignIn
         ```
 
     2. Set the **WS-Federation Metadata Location** parameter.
@@ -248,7 +248,7 @@ You can configure the [!INCLUDE[server](../developer/includes/server.md)] by usi
         |-|-|-|
         |`<AADTENANTID>`|Set this parameter to one of the following values:<ul><li>`{AADTENANTID}`- Use this value if each [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant you'll mount will use its own Azure AD tenant that has a service principal. The [!INCLUDE[server](../developer/includes/server.md)] instance will automatically replace `{AADTENANTID}` with the correct Azure AD tenant. You'll specify the Azure AD Tenant ID when you mount the tenant.</li><li>`common`- Use this value if the corresponding [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application in Azure AD configured as a multitenant application, but tenants will use the same Azure AD tenant. </li></ul>|
         |`<Application ID URI>`|The ID that was assigned to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application when it was registered in Azure AD, for example `api://44444444-cccc-5555-dddd-666666666666` or `https://cronusinternationltd.onmicrosoft.com/businesscentral`.|
-        |`<Redirect URL>`|The redirect URL that was assigned to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application when it was registered in the Azure AD tenant. This parameter must point to the SignIn page of the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]. Make sure it exactly matches the **Redirect URL** that was configured on the application in Azure AD.<br /><br />`https://cronusinternationltd.onmicrosoft.com/BC170/SignIn`<br /><br />The `wreply` parameter is optional. The `wreply` query parameter tells the Azure AD authentication service where to send the authentication token. If you don't specify the `wreply` parameter, it will be deducted from the URL in the browser.|
+        |`<Redirect URL>`|The redirect URL that was assigned to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application when it was registered in the Azure AD tenant. This parameter must point to the SignIn page of the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]. Make sure it exactly matches the **Redirect URL** that was configured on the application in Azure AD.<br /><br />`https://cronusinternationltd.onmicrosoft.com/BC190/SignIn`<br /><br />The `wreply` parameter is optional. The `wreply` query parameter tells the Azure AD authentication service where to send the authentication token. If you don't specify the `wreply` parameter, it will be deducted from the URL in the browser.|
 
        > [!IMPORTANT]
        > The string parameter must be URI-encoded. This means, for example, use "%26" instead of "&".
@@ -258,13 +258,13 @@ You can configure the [!INCLUDE[server](../developer/includes/server.md)] by usi
         Using multiple Azure AD tenants:
 
         ```
-        https://login.microsoftonline.com/{AADTENANTID}/wsfed?wa=wsignin1.0%26wtrealm=https://cronusinternationltd.onmicrosoft.com/businesscentral%26wreply=https://cronusinternationltd.onmicrosoft.com/BC170/SignIn
+        https://login.microsoftonline.com/{AADTENANTID}/wsfed?wa=wsignin1.0%26wtrealm=https://cronusinternationltd.onmicrosoft.com/businesscentral%26wreply=https://cronusinternationltd.onmicrosoft.com/BC190/SignIn
         ```
 
         Using a single Azure AD tenant:
  
         ```
-        https://login.microsoftonline.com/common/wsfed?wa=wsignin1.0%26wtrealm=https://cronusinternationltd.onmicrosoft.com/businesscentral%26wreply=https://cronusinternationltd.onmicrosoft.com/BC170/SignIn
+        https://login.microsoftonline.com/common/wsfed?wa=wsignin1.0%26wtrealm=https://cronusinternationltd.onmicrosoft.com/businesscentral%26wreply=https://cronusinternationltd.onmicrosoft.com/BC190/SignIn
         ```
 
     2. Set the **WS-Federation Metadata Location** parameter.
@@ -340,7 +340,7 @@ You can configure the [!INCLUDE[server](../developer/includes/server.md)] by usi
         **Example**
 
         ```powershell
-        Set-NAVServerConfiguration -ServerInstance BC170 -KeyName `WSFederationLoginEndpoint -KeyValue "https://login.microsoftonline.com/cronusinternationltd.onmicrosoft.com/wsfed?wa=wsignin1.0%26wtrealm=https://cronusinternationltd.onmicrosoft.com/businesscentral%26wreply=https://cronusinternationltd.onmicrosoft.com/BC170/SignIn"
+        Set-NAVServerConfiguration -ServerInstance BC190 -KeyName `WSFederationLoginEndpoint -KeyValue "https://login.microsoftonline.com/cronusinternationltd.onmicrosoft.com/wsfed?wa=wsignin1.0%26wtrealm=https://cronusinternationltd.onmicrosoft.com/businesscentral%26wreply=https://cronusinternationltd.onmicrosoft.com/BC190/SignIn"
         ```
 
     2. Set the `ClientServicesFederationMetadataLocation` parameter.
@@ -358,7 +358,7 @@ You can configure the [!INCLUDE[server](../developer/includes/server.md)] by usi
         **Example**
 
         ```powershell
-        Set-NAVServerConfiguration -ServerInstance BC170 -KeyName ClientServicesFederationMetadataLocation -KeyValue "https://login.microsoftonline.com/cronusinternationltd.onmicrosoft.com/FederationMetadata/2007-06/FederationMetadata.xml"
+        Set-NAVServerConfiguration -ServerInstance BC190 -KeyName ClientServicesFederationMetadataLocation -KeyValue "https://login.microsoftonline.com/cronusinternationltd.onmicrosoft.com/FederationMetadata/2007-06/FederationMetadata.xml"
         ```  
 
     # [Multitenant-tenant](#tab/multitenant)
@@ -375,7 +375,7 @@ You can configure the [!INCLUDE[server](../developer/includes/server.md)] by usi
         |-|-|-|
         |`<AADTENANTID>`|Set this parameter to one of the following values:<ul><li>`{AADTENANTID}`- Use this value if each [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant you'll mount will use its own Azure AD tenant that has a service principal. The [!INCLUDE[server](../developer/includes/server.md)] instance will automatically replace `{AADTENANTID}` with the correct Azure AD tenant. You'll specify the Azure AD Tenant ID when you mount the tenant.</li><li>`common`- Use this value if the corresponding [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application in Azure AD configured as a multitenant application, but tenants will use the same Azure AD tenant. </li></ul>|
         |`<Application ID URI>`|The ID that was assigned to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application when it was registered in Azure AD, for example `api://70b20a51-46b7-4290-8686-b79ec90379f6` or `https://cronusinternationltd.onmicrosoft.com/businesscentral`.|
-        |`<Redirect URL>`|The redirect URL that was assigned to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application when it was registered in the Azure AD tenant. This parameter must point to the SignIn page of the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]. Make sure it exactly matches the **Redirect URL** that was configured on the application in Azure AD.<br /><br />`https://cronusinternationltd.onmicrosoft.com/BC170/SignIn`<br /><br />The `wreply` parameter is optional. The `wreply` query parameter tells the Azure AD authentication service where to send the authentication token. If you don't specify the `wreply` parameter, it will be deducted from the URL in the browser.|
+        |`<Redirect URL>`|The redirect URL that was assigned to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application when it was registered in the Azure AD tenant. This parameter must point to the SignIn page of the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]. Make sure it exactly matches the **Redirect URL** that was configured on the application in Azure AD.<br /><br />`https://cronusinternationltd.onmicrosoft.com/BC190/SignIn`<br /><br />The `wreply` parameter is optional. The `wreply` query parameter tells the Azure AD authentication service where to send the authentication token. If you don't specify the `wreply` parameter, it will be deducted from the URL in the browser.|
 
        > [!IMPORTANT]
        > The string parameter must be URI-encoded. This means, for example, use "%26" instead of "&". Also, place key values in double-quotes (`" "`).
@@ -383,13 +383,13 @@ You can configure the [!INCLUDE[server](../developer/includes/server.md)] by usi
        **Example**
 
         ```powershell
-        Set-NAVServerConfiguration -ServerInstance BC170 -KeyName WSFederationLoginEndpoint -KeyValue "https://login.microsoftonline.com/{AADTENANTID}/wsfed?wa=wsignin1.0%26wtrealm=https://cronusinternationltd.onmicrosoft.com/businesscentral%26wreply=https://cronusinternationltd.onmicrosoft.com/BC170/SignIn"
+        Set-NAVServerConfiguration -ServerInstance BC190 -KeyName WSFederationLoginEndpoint -KeyValue "https://login.microsoftonline.com/{AADTENANTID}/wsfed?wa=wsignin1.0%26wtrealm=https://cronusinternationltd.onmicrosoft.com/businesscentral%26wreply=https://cronusinternationltd.onmicrosoft.com/BC190/SignIn"
         ```
 
         or
 
         ```powershell
-        Set-NAVServerConfiguration -ServerInstance BC170 -KeyName WSFederationLoginEndpoint -KeyValue "https://login.microsoftonline.com/common/wsfed?wa=wsignin1.0%26wtrealm=https://cronusinternationltd.onmicrosoft.com/businesscentral%26wreply=https://cronusinternationltd.onmicrosoft.com/BC170/SignIn"
+        Set-NAVServerConfiguration -ServerInstance BC190 -KeyName WSFederationLoginEndpoint -KeyValue "https://login.microsoftonline.com/common/wsfed?wa=wsignin1.0%26wtrealm=https://cronusinternationltd.onmicrosoft.com/businesscentral%26wreply=https://cronusinternationltd.onmicrosoft.com/BC190/SignIn"
         ```
 
     2. Set the `ClientServicesFederationMetadataLocation` parameter.
@@ -413,7 +413,7 @@ You can configure the [!INCLUDE[server](../developer/includes/server.md)] by usi
         For example:
 
           ```powershell
-          Mount-NAVTenant -ServerInstance BC170  -Tenant Tenant1 –DatabaseServer ..\BCDEMO -DatabaseName "BC Demo Database" -AadTenantId 1111-aaaa-2222-bbbb-333333333333 -AlternateId "https://tenant1.cronusinternational.com"
+          Mount-NAVTenant -ServerInstance BC190  -Tenant Tenant1 –DatabaseServer ..\BCDEMO -DatabaseName "BC Demo Database" -AadTenantId 1111-aaaa-2222-bbbb-333333333333 -AlternateId "https://tenant1.cronusinternational.com"
           ```
 
         For more information about mounting tenants, see [Mount or Dismount a Tenant on a Business Central Server Instance](mount-dismount-tenant.md).-->
@@ -437,7 +437,7 @@ You can configure the [!INCLUDE[server](../developer/includes/server.md)] by usi
     **Example**
 
     ```powershell
-    Set-NAVServerConfiguration -ServerInstance BC170  -KeyName AppIdUri -KeyValue "https://cronusinternationltd.onmicrosoft.com"
+    Set-NAVServerConfiguration -ServerInstance BC190  -KeyName AppIdUri -KeyValue "https://cronusinternationltd.onmicrosoft.com"
     ```
 
 6. Increase the `ExtendedSecurityTokenLifetime` parameter value.
@@ -451,12 +451,12 @@ You can configure the [!INCLUDE[server](../developer/includes/server.md)] by usi
     **Example**
 
     ```powershell
-    Set-NAVServerConfiguration -ServerInstance BC170  -KeyName ExtendedSecurityTokenLifetime -KeyValue "20"
+    Set-NAVServerConfiguration -ServerInstance BC190  -KeyName ExtendedSecurityTokenLifetime -KeyValue "20"
     ```
 7. Restart the server instance. For example:
 
     ```powershell
-    Restart-NAVServerInstance -ServerInstance BC170
+    Restart-NAVServerInstance -ServerInstance BC190
     ```
 
 ---
@@ -522,11 +522,11 @@ Mount your tenants by using the [Mount-NAVTenant cmdlet](/powershell/module/micr
 For example:
 
 ```powershell
-Mount-NAVTenant -ServerInstance BC170  -Tenant Tenant1 –DatabaseServer ..\BCDEMO -DatabaseName "BC Demo Database" -AadTenantId 1111-aaaa-2222-bbbb-333333333333
+Mount-NAVTenant -ServerInstance BC190  -Tenant Tenant1 –DatabaseServer ..\BCDEMO -DatabaseName "BC Demo Database" -AadTenantId 1111-aaaa-2222-bbbb-333333333333
 ```
 
 <!--```powershell
-Mount-NAVTenant -ServerInstance BC170  -Tenant Tenant1 –DatabaseServer ..\BCDEMO -DatabaseName "BC Demo Database" -AadTenantId 1111-aaaa-2222-bbbb-333333333333 -AlternateId "https://tenant1.cronusinternational.com"
+Mount-NAVTenant -ServerInstance BC190  -Tenant Tenant1 –DatabaseServer ..\BCDEMO -DatabaseName "BC Demo Database" -AadTenantId 1111-aaaa-2222-bbbb-333333333333 -AlternateId "https://tenant1.cronusinternational.com"
 ```-->
 ---
 
@@ -548,12 +548,12 @@ With OAuth, users are authenticated based on their Azure AD credentials, providi
 
 ### Using host names for tenants
 
-You can configure host name tenant resolution, where each tenant is assigned a unique domain, like customer1.cronusinternational.com. Customers would then access their tenant by using `https://customer1.cronusinternational.com/BC170`.
+You can configure host name tenant resolution, where each tenant is assigned a unique domain, like customer1.cronusinternational.com. Customers would then access their tenant by using `https://customer1.cronusinternational.com/BC190`.
 
 This setup implies that the public URL is different for each tenant. To support this scenario, you set [!INCLUDE[server](../developer/includes/server.md)] to calculate the host dynamically. In the `WSFederationLoginEndpoint` parameter, use the `{HOSTNAME}` placeholder in the `wreply`, for example:
 
 ```http
-https://login.microsoftonline.com/<AAD TENANT ID>/wsfed?wa=wsignin1.0%26wtrealm=<APP ID URI>%26wreply=https://{HOSTNAME}/BC170/SignIn
+https://login.microsoftonline.com/<AAD TENANT ID>/wsfed?wa=wsignin1.0%26wtrealm=<APP ID URI>%26wreply=https://{HOSTNAME}/BC190/SignIn
 
 ```
 
