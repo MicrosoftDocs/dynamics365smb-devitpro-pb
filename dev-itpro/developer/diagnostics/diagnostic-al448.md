@@ -3,7 +3,7 @@ title: "Compiler Error AL448"
 description: "Member is not allowed in this context."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/08/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,9 @@ author: SusanneWindfeldPedersen
 # Compiler Error AL448
 Member is not allowed in this context.
 
+
+## Description
+Procedures or variables are not allowed in this context.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

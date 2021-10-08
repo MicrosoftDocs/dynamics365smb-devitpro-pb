@@ -3,7 +3,7 @@ title: "Compiler Designer Customization Warning AL1402"
 description: "{0} '{1}' is missing."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/08/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,9 @@ author: SusanneWindfeldPedersen
 # Compiler Designer Customization Warning AL1402
 {0} '{1}' is missing.
 
+
+## Description
+Cannot resolve the referenced application object.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

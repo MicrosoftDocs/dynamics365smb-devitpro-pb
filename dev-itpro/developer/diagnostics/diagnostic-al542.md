@@ -3,7 +3,7 @@ title: "Compiler Error AL542"
 description: "The property {0} cannot be used on page '{1}' because this page does not have a source table."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2021
+ms.date: 10/08/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,6 +18,7 @@ author: SusanneWindfeldPedersen
 The property {0} cannot be used on page '{1}' because this page does not have a source table.
 
 
+## Description
 The properties **OrderBy** and **Filters** cannot be used on pages without a source table.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

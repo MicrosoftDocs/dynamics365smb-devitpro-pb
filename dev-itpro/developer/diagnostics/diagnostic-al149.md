@@ -3,7 +3,7 @@ title: "Compiler Error AL149"
 description: "There is an 'ELSE' statement without an 'IF' in property {0}."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2021
+ms.date: 10/08/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,6 +18,7 @@ author: SusanneWindfeldPedersen
 There is an 'ELSE' statement without an 'IF' in property {0}.
 
 
+## Description
 An 'ELSE' statement must be preceeded by an 'IF'.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

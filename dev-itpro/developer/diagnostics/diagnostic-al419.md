@@ -3,7 +3,7 @@ title: "Compiler Error AL419"
 description: "The event subscriber '{0}' is missing a parameter of type '{1}'."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/05/2021
+ms.date: 10/08/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,6 +18,7 @@ author: SusanneWindfeldPedersen
 The event subscriber '{0}' is missing a parameter of type '{1}'.
 
 
+## Description
 The event subscriber is missing a parameter
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

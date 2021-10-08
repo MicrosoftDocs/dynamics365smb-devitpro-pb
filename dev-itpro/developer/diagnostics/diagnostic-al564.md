@@ -3,7 +3,7 @@ title: "Compiler Error AL564"
 description: "The object {0} '{1}' is not extensible."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/08/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,9 @@ author: SusanneWindfeldPedersen
 # Compiler Error AL564
 The object {0} '{1}' is not extensible.
 
+
+## Description
+API pages or objects with the **Extensible** property set to **false** cannot be extended.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

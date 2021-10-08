@@ -3,7 +3,7 @@ title: "Compiler Error AL344"
 description: "The property 'DataItemLink' must be set."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2021
+ms.date: 10/08/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,6 +18,7 @@ author: SusanneWindfeldPedersen
 The property 'DataItemLink' must be set.
 
 
+## Description
 The property 'DataItemLink' must be set for nested DataItems.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

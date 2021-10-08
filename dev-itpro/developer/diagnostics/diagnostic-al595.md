@@ -3,7 +3,7 @@ title: "Compiler Error AL595"
 description: "'{0}' does not implement {1}."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/08/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,9 @@ author: SusanneWindfeldPedersen
 # Compiler Error AL595
 '{0}' does not implement {1}.
 
+
+## Description
+The referenced application object does not implement the specified interface.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

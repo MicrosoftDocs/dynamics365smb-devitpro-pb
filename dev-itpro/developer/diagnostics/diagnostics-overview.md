@@ -3,7 +3,7 @@ title: "AL Diagnostics"
 description: ""
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2021
+ms.date: 10/08/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -492,8 +492,8 @@ author: SusanneWindfeldPedersen
 |[AL601](diagnostic-al601.md)|{0} '{1}' is removed. {2}.|Warning (Future Error)|
 |[AL602](diagnostic-al602.md)|'{0}' is inaccessible due to its protection level.|Warning (Future Error)|
 |[AL603](diagnostic-al603.md)|An implicit conversion is being performed from a value of type '{0}' to a value of type '{1}'. This conversion can lead to unexpected runtime issues.|Warning (Future Error)|
-|[AL604](diagnostic-al604.md)|Use of implicit 'with' will be removed in the future. Qualify with '{0}.'.|Warning (Future Error)|
-|[AL605](diagnostic-al605.md)|Use of implicit 'with' will be removed in the future. Qualify with '{0}.'.|Hidden|
+|[AL604](diagnostic-al604.md)|Use of implicit 'with' will be removed in the future. Qualify with '{0}'.|Warning (Future Error)|
+|[AL605](diagnostic-al605.md)|Use of implicit 'with' will be removed in the future. Qualify with '{0}'.|Hidden|
 |[AL606](diagnostic-al606.md)|The 'with' statement is deprecated and will be removed for cloud development in a future release.|Warning (Future Error)|
 |[AL607](diagnostic-al607.md)|The 'with' statement is deprecated and will be removed for cloud development in a future release.|Hidden|
 |[AL608](diagnostic-al608.md)|The OrderBy property must specify at least one field on which to sort the data.|Warning (Future Error)|

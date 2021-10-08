@@ -3,7 +3,7 @@ title: "Compiler Error AL451"
 description: "An assembly named '{0}' could not be found in the assembly probing paths '{1}'."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2021
+ms.date: 10/08/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,7 +18,8 @@ author: SusanneWindfeldPedersen
 An assembly named '{0}' could not be found in the assembly probing paths '{1}'.
 
 
-The specified assembly could not be found in the assembly probing paths. You must add the path of the folder containing the assembly to the Al: Assembly Probing Paths setting on the User Settings or Workspace Settings so the compiler can access it.
+## Description
+The referenced assembly could not be found in the assembly probing paths. You must add the path of the folder containing the assembly to the Al: Assembly Probing Paths setting on the User Settings or Workspace Settings so the compiler can access it.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

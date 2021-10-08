@@ -3,7 +3,7 @@ title: "Compiler Error AL189"
 description: "Attribute '{0}' cannot be specified, because '{1}' is already specified."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/05/2021
+ms.date: 10/08/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,6 +18,7 @@ author: SusanneWindfeldPedersen
 Attribute '{0}' cannot be specified, because '{1}' is already specified.
 
 
+## Description
 Mutually exclusive attributes have been specified on the same variable or method. This is the case for handler attributes and event attributes, where only one attribute of each kind can be set on the same procedure.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

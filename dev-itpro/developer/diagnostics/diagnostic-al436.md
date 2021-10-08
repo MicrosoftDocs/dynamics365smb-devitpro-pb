@@ -3,7 +3,7 @@ title: "Compiler Error AL436"
 description: "The value of the property '{0}' cannot be empty."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2021
+ms.date: 10/08/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,6 +18,7 @@ author: SusanneWindfeldPedersen
 The value of the property '{0}' cannot be empty.
 
 
+## Description
 The value of a property cannot be left empty, it must be specified.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

@@ -3,7 +3,7 @@ title: "Compiler Error AL541"
 description: "The use of the variable '{0}' in the property value of '{1}' in view '{2}' is not allowed."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/08/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,9 @@ author: SusanneWindfeldPedersen
 # Compiler Error AL541
 The use of the variable '{0}' in the property value of '{1}' in view '{2}' is not allowed.
 
+
+## Description
+It is not allowed to use boolean expressions as the proeprty value of properties defined in a view.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

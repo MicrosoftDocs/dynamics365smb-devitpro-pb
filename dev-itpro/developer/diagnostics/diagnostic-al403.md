@@ -3,7 +3,7 @@ title: "Compiler Error AL403"
 description: "To modify '{0}' you must add at least one property or trigger."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/05/2021
+ms.date: 10/08/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,6 +18,7 @@ author: SusanneWindfeldPedersen
 To modify '{0}' you must add at least one property or trigger.
 
 
+## Description
 To modify a field, you must add at least one property or trigger inside the `modify` control.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

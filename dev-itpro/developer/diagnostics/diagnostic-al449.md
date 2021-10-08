@@ -3,7 +3,7 @@ title: "Compiler Error AL449"
 description: "The alias '{0}' is already declared."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/08/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,9 @@ author: SusanneWindfeldPedersen
 # Compiler Error AL449
 The alias '{0}' is already declared.
 
+
+## Description
+There are multiple DotNet types defined with the same alias.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

@@ -3,7 +3,7 @@ title: "Compiler Designer Customization Warning AL1413"
 description: "A member of type {0} with name '{1}' is already defined in {2} '{3}' by the extension '{4}'."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/08/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,9 @@ author: SusanneWindfeldPedersen
 # Compiler Designer Customization Warning AL1413
 A member of type {0} with name '{1}' is already defined in {2} '{3}' by the extension '{4}'.
 
+
+## Description
+Another extension has defined a page element with the same name as the one declared in the user personalization or profile configuration.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
