@@ -22,7 +22,8 @@ This topic addresses some of the most frequently asked questions around validati
 
 ## When do I write on Yammer?
 
-- When you have questions related to development (which code-signing certification to use, best practices, etc.). Or when you have other questions that pertain to this area.
+- When you have questions related to development (which code-signing certification to use, best practices, etc.).
+- When you have other questions that pertain to this area.
 
 ## When do I contact Partner Center customer support?
 
@@ -31,11 +32,9 @@ This topic addresses some of the most frequently asked questions around validati
 - Failed upload of the extensions in the submission
 - When requesting an exception for a breaking change
 
-
 ## When do I contact Business Central customer support?
 
 When your submission has been successfully completed in Partner Center, but your customers are experiencing issues installing or using the app.
-
 
 ## When do I log an issue on NavContainerHelper?
 
