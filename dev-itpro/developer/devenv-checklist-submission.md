@@ -3,7 +3,7 @@ title: "Technical Validation Checklist"
 description: Describing the steps you must go through to successfully submit your app to AppSource using AppSourceCop.
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 07/14/2021
+ms.date: 10/08/2021
 ms.reviewer: solsen
 ms.suite: na
 ms.topic: conceptual
@@ -14,6 +14,9 @@ ms.author: freddyk
 # Technical Validation
 
 Below you will find a checklist of all requirements that you **must meet before submitting** an extension for validation. You will also find a description of how the Business Central Validation team is performing technical and manual validation and how you can implement a validation pipeline to perform the same technical validation yourself.
+
+> [!TIP]  
+> If you have questions around validation for your app, see [Technical Validation Checklist FAQ](devenv-checklist-submission-faq.md) for more information about who to contact.
 
 ## Technical Validation Checklist
 

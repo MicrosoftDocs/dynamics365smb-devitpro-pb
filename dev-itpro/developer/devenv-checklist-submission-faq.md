@@ -13,7 +13,7 @@ ms.author: qutreson
 
 # Technical Validation Checklist FAQ
 
-This topic addresses some of the most frequently asked questions around validation of apps for AppSource submission. 
+This topic addresses some of the most frequently asked questions around validation of apps for AppSource submission. In the following, you can read about how you reach out for support most efficiently.
 
 ## When do I contact d365val@microsoft.com?
 
@@ -22,8 +22,7 @@ This topic addresses some of the most frequently asked questions around validati
 
 ## When do I write on Yammer?
 
-- When you have questions related to development (which code-signing certification to use, best practices, etc.)
-- More or less anything
+- When you have questions related to development (which code-signing certification to use, best practices, etc.). Or when you have other questions that pertain to this area.
 
 ## When do I contact Partner Center customer support?
 
@@ -35,7 +34,7 @@ This topic addresses some of the most frequently asked questions around validati
 
 ## When do I contact Business Central customer support?
 
-- When your submission has been successfully completed in Partner Center, but your customers are experiencing issues installing or using the app.
+When your submission has been successfully completed in Partner Center, but your customers are experiencing issues installing or using the app.
 
 
 ## When do I log an issue on NavContainerHelper?
