@@ -3,7 +3,7 @@ title: "Record Data Type"
 description: "Is a complex data type."
 ms.author: solsen
 ms.custom: na
-ms.date: 08/18/2021
+ms.date: 10/08/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -101,7 +101,7 @@ The following methods are available on instances of the Record data type.
 |[SetView(String)](record-setview-method.md)|Sets the current sort order, key, and filters on a table.|
 |[TableCaption()](record-tablecaption-method.md)|Gets the current caption of a table as a string.|
 |[TableName()](record-tablename-method.md)|Gets the name of a table.|
-|[TestField(Any)](record-testfield-joker-method.md)|Tests whether the contents of a field match a given value.|
+|[TestField(Any)](record-testfield-joker-method.md)|Tests that the content of the field is not zero or blank (empty string).|
 |[TestField(Any, Boolean)](record-testfield-joker-boolean-method.md)|Tests whether the contents of a field match a given value.|
 |[TestField(Any, Integer)](record-testfield-joker-integer-method.md)|Tests whether the contents of a field match a given value.|
 |[TestField(Any, BigInteger)](record-testfield-joker-biginteger-method.md)|Tests whether the contents of a field match a given value.|
