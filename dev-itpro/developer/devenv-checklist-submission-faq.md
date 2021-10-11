@@ -23,7 +23,7 @@ This topic addresses some of the most frequently asked questions around validati
 ## When do I write on Yammer?
 
 - When you have questions related to development (which code-signing certification to use, best practices, etc.).
-- When you have other questions that pertain to this area.
+- Or, when you have other questions that pertain to this area - use [aka.ms/bcyammer](https://aka.ms/bcyammer).
 
 ## When do I contact Partner Center customer support?
 
