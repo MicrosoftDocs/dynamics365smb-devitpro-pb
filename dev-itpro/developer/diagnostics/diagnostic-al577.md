@@ -3,7 +3,7 @@ title: "Compiler Error AL577"
 description: "The view '{0}' cannot define layout changes because its property '{1}' is not set to false."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/12/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,9 @@ author: SusanneWindfeldPedersen
 # Compiler Error AL577
 The view '{0}' cannot define layout changes because its property '{1}' is not set to false.
 
+
+## Description
+A view should have the **SharedLayout** property set to false in order to have layout changes.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

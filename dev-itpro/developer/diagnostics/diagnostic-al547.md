@@ -3,7 +3,7 @@ title: "Compiler Warning (Future Error) AL547"
 description: "The event '{0}' should not expose global variables."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/12/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,9 @@ author: SusanneWindfeldPedersen
 # Compiler Warning (Future Error) AL547
 The event '{0}' should not expose global variables.
 
+
+## Description
+An event publisher should not expose global variables.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

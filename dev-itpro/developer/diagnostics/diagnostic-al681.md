@@ -3,7 +3,7 @@ title: "Compiler Error AL681"
 description: "A DataItem with name '{0}' could not be found in the target {1}."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/12/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,9 @@ author: SusanneWindfeldPedersen
 # Compiler Error AL681
 A DataItem with name '{0}' could not be found in the target {1}.
 
+
+## Description
+The referenced DataItem could not be found in the target report.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

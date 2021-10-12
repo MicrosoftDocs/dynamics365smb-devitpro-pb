@@ -3,7 +3,7 @@ title: "Compiler Error AL1046"
 description: "The application ID ranges {0} are overlapping."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/12/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,9 @@ author: SusanneWindfeldPedersen
 # Compiler Error AL1046
 The application ID ranges {0} are overlapping.
 
+
+## Description
+An application cannot use overlapping ID ranges.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

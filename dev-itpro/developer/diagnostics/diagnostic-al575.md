@@ -3,7 +3,7 @@ title: "Compiler Error AL575"
 description: "You cannot modify the {0} '{1}' because it is defined in the page customization '{2}'."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/12/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,9 @@ author: SusanneWindfeldPedersen
 # Compiler Error AL575
 You cannot modify the {0} '{1}' because it is defined in the page customization '{2}'.
 
+
+## Description
+You cannot modify an element defined in a page customization.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

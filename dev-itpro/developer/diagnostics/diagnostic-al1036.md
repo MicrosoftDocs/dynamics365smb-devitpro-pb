@@ -3,7 +3,7 @@ title: "Compiler Error AL1036"
 description: "The locale '{0}' is not valid."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/12/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,9 @@ author: SusanneWindfeldPedersen
 # Compiler Error AL1036
 The locale '{0}' is not valid.
 
+
+## Description
+A translation locale culture specified in the manifest must follow the format languageCode-CountryCode, such as en-US.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

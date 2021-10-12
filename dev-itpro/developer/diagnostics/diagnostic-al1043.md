@@ -3,7 +3,7 @@ title: "Compiler Error AL1043"
 description: "The runtime version '{0}' is not supported by the AL compiler."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/12/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,9 @@ author: SusanneWindfeldPedersen
 # Compiler Error AL1043
 The runtime version '{0}' is not supported by the AL compiler.
 
+
+## Description
+The specified runtime version is not supported by the AL compiler. For more information, see [Currently available runtime versions](../devenv-choosing-runtime.md).
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

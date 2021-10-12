@@ -3,7 +3,7 @@ title: "Compiler Error AL657"
 description: "The property {0} is mandatory for ListParts and PageParts."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/12/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,9 @@ author: SusanneWindfeldPedersen
 # Compiler Error AL657
 The property {0} is mandatory for ListParts and PageParts.
 
+
+## Description
+The properties **EntitySetName** and **EntityName** are mandatory for ListParts and PageParts nested in API pages.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

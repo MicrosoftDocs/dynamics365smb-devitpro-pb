@@ -3,7 +3,7 @@ title: "Compiler Warning (Future Error) AL614"
 description: "The value '{0}' is not allowed for property '{1}'."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/12/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,9 @@ author: SusanneWindfeldPedersen
 # Compiler Warning (Future Error) AL614
 The value '{0}' is not allowed for property '{1}'.
 
+
+## Description
+The value used as a property value is reserved.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

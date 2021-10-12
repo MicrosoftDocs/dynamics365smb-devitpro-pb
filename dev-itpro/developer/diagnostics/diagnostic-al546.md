@@ -3,7 +3,7 @@ title: "Compiler Error AL546"
 description: "The control '{0}' cannot be modified in a view context because views only support modifying controls defined in the Content area."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/12/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,9 @@ author: SusanneWindfeldPedersen
 # Compiler Error AL546
 The control '{0}' cannot be modified in a view context because views only support modifying controls defined in the Content area.
 
+
+## Description
+Views only support modifying controls defined in the Content area.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

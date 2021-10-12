@@ -3,7 +3,7 @@ title: "Compiler Warning (Future Error) AL548"
 description: "Cannot move symbol '{0}' from '{1}' area to '{2}' area."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/12/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,9 @@ author: SusanneWindfeldPedersen
 # Compiler Warning (Future Error) AL548
 Cannot move symbol '{0}' from '{1}' area to '{2}' area.
 
+
+## Description
+Cannot move a symbol between areas.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

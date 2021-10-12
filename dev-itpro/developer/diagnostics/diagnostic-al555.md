@@ -3,7 +3,7 @@ title: "Compiler Error AL555"
 description: "The RunObject property value of actions defined in the '{0}' area must only reference objects of type {1}."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/12/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,9 @@ author: SusanneWindfeldPedersen
 # Compiler Error AL555
 The RunObject property value of actions defined in the '{0}' area must only reference objects of type {1}.
 
+
+## Description
+The **RunObject** property value must only reference objects of type 'Codeunit', 'Page', 'Report', or 'XmlPort'.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

@@ -3,7 +3,7 @@ title: "Compiler Error AL591"
 description: "The property {0} is only supported on {1}."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/12/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,9 @@ author: SusanneWindfeldPedersen
 # Compiler Error AL591
 The property {0} is only supported on {1}.
 
+
+## Description
+The referenced property is not supported on the element is was set on. For more information on the elements the property applies to, refer to the property's documentation.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

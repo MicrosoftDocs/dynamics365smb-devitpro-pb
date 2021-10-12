@@ -3,7 +3,7 @@ title: "Compiler Error AL581"
 description: "The length for the type '{0}' must be positive."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/12/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,9 @@ author: SusanneWindfeldPedersen
 # Compiler Error AL581
 The length for the type '{0}' must be positive.
 
+
+## Description
+The length specified for a data type must be possitve.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

@@ -3,7 +3,7 @@ title: "Compiler Warning (Future Error) AL615"
 description: "Field '{0}' is not specified as a source expression on page '{1}'."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/12/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,9 @@ author: SusanneWindfeldPedersen
 # Compiler Warning (Future Error) AL615
 Field '{0}' is not specified as a source expression on page '{1}'. All fields specified in ODataKeyFields must be used as the source expression in a page control.
 
+
+## Description
+All fields specified in the **ODataKeyFields** property must be used as the source expression in a control of the page that specifies them.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

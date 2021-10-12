@@ -3,7 +3,7 @@ title: "Compiler Warning (Future Error) AL613"
 description: "Wrong signature."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2021
+ms.date: 10/12/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,6 +20,8 @@ Wrong signature. Correct signature for '{0}' is '{1}'.
 > [!IMPORTANT]
 > This warning will become an error in Fall 2021.
 
+## Description
+Invalid signature for trigger. For more information about the correct signature, refer to the trigger's documentation.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
