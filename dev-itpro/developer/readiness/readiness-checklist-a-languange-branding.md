@@ -50,4 +50,4 @@ Make sure to make the right reference throughout your content:
 
 ## Microsoft images 
 - You can include the [AppSource badge](https://appsource.microsoft.com/blogs/new-get-it-from-badging-for-microsoft-appsource-and-azure-marketplace-available-in-the-marketing-resources-guide) in your marketing material. 
-- If you want to use the Dynamics 365 icons, you can learn about do's and don'ts [here](https://docs.microsoft.com/en-us/dynamics365/get-started/icons). 
+- If you want to use the Dynamics 365 icons, you can learn about do's and don'ts [here](/dynamics365/get-started/icons). 

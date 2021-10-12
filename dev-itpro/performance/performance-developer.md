@@ -22,6 +22,7 @@ In this article, you can read about ways to tune performance when developing for
 - [Efficient Data access](performance-developer.md#efficient-data-access)  
 - [Testing and validating performance](performance-developer.md#testing-and-validating-performance)  
 - [Tuning the Development Environment](performance-developer.md#tuning-the-development-environment)  
+- [Using the AL Profiler to analyze performance](../developer/devenv-al-profiler-overview.md)
 
 ## Writing efficient pages 
 
@@ -102,6 +103,8 @@ Read more about web service limits, see [Working with API limits in Dynamics 365
 
 The same advice applies for outgoing web service calls using the AL module HttpClient. Make sure your AL code can handle slow response times, throttling, and failures in external services that you integrate with.
 
+By specifying HTTP header `Data-Access-Intent: ReadOnly` for GET requests you can instruct Business Central to run requests against a replica of the database which can lead to improved performance. To learn more, see [Specifying Data Access Intent for GET requests](../developer/devenv-connect-apps-tips.md#DataAccessIntent).
+
 ## Writing efficient reports
 
 Reports generally fall into two categories. They can be specific to a single instance of an entity, like an invoice. Or, they can be of a more analytical nature that joins data from multiple instances of multiple entities. Typically, performance issues in reports lie in the latter category. The following articles contain advice about implementing faster reports: 
@@ -162,7 +165,7 @@ There are many different ways to spin up a new task:
 
 - [Job Queue](/dynamics365/business-central/admin-job-queues-schedule-tasks)  
 - [TaskScheduler.CreateTask](../developer/methods-auto/taskscheduler/taskscheduler-data-type.md)  
-- [StartSession](../developer/methods-auto/session/session-startsession-method.md)  
+- [StartSession](../developer/methods-auto/session/session-startsession-integer-integer-string-table-method.md)  
 - [Page Background Task](../developer/devenv-page-background-tasks.md)  
 
 They come with different characteristics as described in this table:

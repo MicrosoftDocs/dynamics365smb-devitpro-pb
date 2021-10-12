@@ -7,7 +7,7 @@ ms.reviewer: edupont
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
-ms.date: 08/01/2021
+ms.date: 10/01/2021
 
 ---
 
@@ -35,6 +35,8 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 
 |Knowledge Base ID                                           |Title                |Release date  |Build No. |
 |------------------------------------------------------------|---------------------|--------------|----------|
+|[5007023](https://support.microsoft.com/help/5007023)|Cumulative Update 28|October 2021|Application 14.29.47804</br>Platform Build 14.0.47800|
+|[5006072](https://support.microsoft.com/help/5006072)|Cumulative Update 27|September 2021|Application 14.28.47690</br>Platform Build 14.0.47686|
 |[5005370](https://support.microsoft.com/help/5005370)|Cumulative Update 26|August 2021|Application 14.27.47563</br>Platform Build 14.0.47540|
 |[5004718](https://support.microsoft.com/help/5004718)|Cumulative Update 25|July 2021|Application 14.26.47406</br>Platform Build 14.0.47400|
 |[5003472](https://support.microsoft.com/help/5003472)|Cumulative Update 24|June 2021|Application 14.25.47058</br>Platform Build 14.0.47040|

@@ -6,7 +6,7 @@ ms.custom: na
 ms.reviewer: na
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
-ms.date: 04/01/2021
+ms.date: 10/05/2021
 ms.author: edupont
 ---
 
@@ -23,7 +23,7 @@ There are repos in GitHub for the source content and each of the languages that 
 
 You can use the [HtmlFromRepoGenerator tool](custom-help-toolkit-HtmlFromRepoGenerator.md) to get the latest version of Microsoft's content and generate HTML files that you can then customize. The tool handles the GitHub work for you, but you will still have to understand the basics of the Microsoft GitHub repos.  
 
-When Microsoft publishes an update to the content, the *main* branch in the corresponding GitHub repo is updated. The source repo is updated at least weekly; however, the related language-specific repos are updated less frequently, based on when new translations are made available. You can use the [Custom Help Toolkit](custom-help-toolkit.md) to get the current version of Microsoft's content and prepare HTML files for customization.  
+When Microsoft publishes an update to the content, the *main* branch in the corresponding public GitHub repo is updated. The source repo is updated at least weekly; however, the related language-specific repos are updated less frequently, based on when new translations are made available. You can use the [Custom Help Toolkit](custom-help-toolkit.md) to get the current version of Microsoft's content and prepare HTML files for customization.  
 
 Alternatively, if you customize the Microsoft content based on MarkDown, you can use scripts to get the current version. The GitHub platform and tooling will help you manage any potential merge conflicts if you have made changes to the same files as Microsoft has. For more information, see [Set up Git repository locally for documentation](/contribute/get-started-setup-local) in the Docs Authoring Guide and [Fork a repo](https://help.github.com/articles/fork-a-repo/) in the Help for GitHub.  
 
@@ -58,15 +58,18 @@ Microsoft's GitHub *dynamics365smb-docs* repos for [!INCLUDE [prod_short](../dev
 
 - archive
 
-    Contains files that are not published but kept for backwards compatibility use internally at Microsoft. You can ignore this folder.
+    In the source repo only, contains files that are not published but kept for backwards compatibility use internally at Microsoft. You can ignore this folder. The folder does not exist in the translation repos.
 - business-central
 
-    Contains files that are relevant for [!INCLUDE [prod_short](../developer/includes/prod_short.md)]
+    Contains MarkDown files with content that is relevant for endusers, administrators, and consultants of [!INCLUDE [prod_short](../developer/includes/prod_short.md)]
 - media-source
 
     Contains source files for some of the pictures that are used in the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] content
+- templates
 
-The repos also contain files in the root of the repos that are used internally by Microsoft for managing the content on the docs.microsoft.com site and on GitHub. They are not relevant for the purpose of extending or customizing the content.
+    Contains three MarkDown files that you can use as templates for your content. The templates define required metadata and a recommended structure of the content.
+
+The repos also contain files in the root of the repos that are used internally by Microsoft for managing the content on the docs.microsoft.com site and by GitHub. They are not relevant for the purpose of extending or customizing the content.
 
 > [!TIP]
 > [!INCLUDE [ua-github-releases](../includes/ua-github-releases.md)]
@@ -91,7 +94,7 @@ $langDir = "c:\Working\help\dynamics365smb-docs-pr."
 Start-Process -FilePath $git -ArgumentList "clone --single-branch --branch main https://github.com/MicrosoftDocs/dynamics365smb-docs.git" -WorkingDirectory "C:\working\help" -Wait
 foreach ($language in $languages)
 {
-    $arguments = $("clone --single-branch --branch lmain https://github.com/MicrosoftDocs/dynamics365smb-docs-pr." + $language + ".git")
+    $arguments = $("clone --single-branch --branch main https://github.com/MicrosoftDocs/dynamics365smb-docs-pr." + $language + ".git")
     Start-Process -FilePath $git -ArgumentList $arguments -WorkingDirectory "C:\working\help" -Wait
     Copy-Item $($365docs + "\business-central\docfx.json") $($langDir + $language + "\business-central")
     Copy-Item $($365docs + "\business-central\media") $($langDir + $language + "\business-central") -Recurse -Force
@@ -263,10 +266,10 @@ To translate content for either [!INCLUDE [prod_short](../developer/includes/pro
 
 ## Contributing
 
-A benefit of GitHub is the ability for you to contribute to the core content that the Microsoft team provides in the *dynamics365smb-docs repo*. For example, you might have a new article that you think would be beneficial, or you might have a correction to an existing article. If you would like to contribute to the [MicrosoftDocs/dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs) repo, you create a *pull request* from your repo to the *MicrosoftDocs/dynamics365smb-docs* repo. The Microsoft team will then review the request and include the changes as appropriate.
+A benefit of GitHub is the ability for you to contribute to the core content that the Microsoft team provides in the *MicrosoftDocs/dynamics365smb-docs repo*. For example, you might have a new article that you think would be beneficial, or you might have a correction to an existing article. If you would like to contribute to the [MicrosoftDocs/dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs) repo, you create a *pull request* from your repo to the *MicrosoftDocs/dynamics365smb-docs* repo. The Microsoft team will then review the request and include the changes as appropriate.
 
 > [!NOTE]
-> Microsoft accepts pull requests to the *dynamics365smb-docs* repo only, not the language-specific repos. If you have feedback about translations, please report a GitHub issue in the relevant repo.
+> Microsoft accepts pull requests to the *MicrosoftDocs/dynamics365smb-docs* repo only, not the language-specific repos. If you have feedback about translations, please report a GitHub issue in the relevant repo.
 
 To create a pull request to the *MicrosoftDocs/dynamics365smb-docs* repo by using GitHub Desktop, do the following:
 

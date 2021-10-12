@@ -5,7 +5,7 @@ author: sorenfriisalexandersen
 manager: edupont
 ms.topic: conceptual
 ms.service: dynamics365-business-central
-ms.date: 04/01/2021
+ms.date: 10/04/2021
 ms.author: soalex
 ---
 
@@ -17,7 +17,7 @@ Teaching tips can be defined at the page level, the *page teaching tip*, and be 
 
 ## Page teaching tips
 
-- The primary purpose is to increase the user's chance of success with the page. Therefore, the title and description of the page teaching tip should answer the following hypothetical user questions:
+- The primary purpose is to increase the user's chance of success with the page. So, the title and description of the page teaching tip should answer the following hypothetical user questions:
 
   - **AboutTitle**: *What is this page about*?
 
@@ -31,15 +31,15 @@ Teaching tips can be defined at the page level, the *page teaching tip*, and be 
 
 - A teaching tip can be defined for any page in [!INCLUDE [prod_short](../developer/includes/prod_short.md)], except the role center, dialogs, and request pages for reports.
 
-- After the users dismisses a teaching tip and tour, they can at any point hit or hover over the page title. This will reopen the teaching tip, and the user can re-take the tour, for example.
+- After users dismiss a teaching tip and tour, they can at any point hit or hover over the page title. This action will reopen the teaching tip, and the user can retake the tour, for example.
 
 - On a page that is opened from the checklist, the tour is considered an invited tour, and the page teaching tip has a **Go back** button that takes the user back to the checklist.
 
-The following illustration shows a page teaching tip <sup>4</sup> that explains what the page is about and can invite the user to take a tour. The teaching tip renders in the lower left corner.  
+The following illustration shows a page teaching tip that explains what the page is about and can invite the user to take a tour. The teaching tip renders in the lower left corner.  
 
 :::image type="content" source="../media/onboarding-teaching-tip-page.png" alt-text="A page in Business Central with a page teaching tip at the lower left corner.":::
 
-The following illustration shows how choosing the page title <sup>5</sup> will reopen the teaching tip so that the user can re-take the tour.  
+The following illustration shows how choosing the page title  will reopen the teaching tip so that the user can retake the tour.  
 
 :::image type="content" source="../media/onboarding-teaching-tip-title.png" alt-text="Illustration of page with a teaching tip pointing to the page title.":::
 
@@ -50,7 +50,7 @@ There are different rules for teaching tips for lists versus cards and documents
 | List page with teaching tip | Card page with teaching tip |
 |-------------------------|-------------------------|
 | :::image type="content" source="../media/onboarding-teaching-tip-list.png" alt-text="illustration of List Page with teaching tip.":::| :::image type="content" source="../media/onboarding-teaching-tip-card.png" alt-text="illustration of Entity Page with teaching tip.":::|
-|**AboutTitle**: About sales invoices</br>**AboutText**: Sales invoices appear in this list until they are finalized and posted. After an invoice is posted, find it again in the Posted Sales Invoices list. |**AboutTitle**: About sales invoice details</br>**AboutText**: You can update and add to the sales invoice until you post it. If you leave the invoice without posting, you can return to it later from the list of ongoing invoices. |
+|**AboutTitle**: About sales invoices</br>**AboutText**: Sales invoices appear in this list until they're finalized and posted. After an invoice is posted, find it again in the Posted Sales Invoices list. |**AboutTitle**: About sales invoice details</br>**AboutText**: You can update and add to the sales invoice until you post it. If you leave the invoice without posting, you can return to it later from the list of ongoing invoices. |
 | Answers the following questions:</br><ul></br><li>What can I do on this page in general?</li></br><li>Is there a related entity I should know about?</li></br><li>The title for a list page teaching tip will typically use the plural form, such as *About sales invoices*</li></br></ul> | Answers the following questions:</br><ul></br><li>What can I do on this page with this particular field or action?</li></br><li>What is the desired outcome of the task in this page?</li></br><li>The title for a card or document page teaching tip will typically be [entity name] + *details*,  such as *About sales invoice details*</li></br></ul> |
 
 ## What you should know about tours
@@ -81,7 +81,44 @@ There are different rules for teaching tips for input fields and actions.
 |-------------------------|-------------------------|
 | :::image type="content" source="../media/onboarding-teaching-tip-field.png" alt-text="Illustration of teaching tip pointing to an input field."::: | :::image type="content" source="../media/onboarding-teaching-tip-action.png" alt-text="Illustration of teaching tip pointing to an action.":::|
 |**AboutTitle:** Who you are selling to</h3></br>**AboutText:** This can be an existing customer, or you can register a new from here. Customers can have special prices and discounts that are automatically used when you enter the sales lines.|Content example for the **Post** action:</br>**AboutTitle:** When all is set, you post</br>**AboutText:** After entering the sales lines and other information, you post the invoice to make it count.​ After posting, the sales invoice is moved to the Posted Sales Invoices list. |
-| <ul></br><li>The teaching tip can point to a field that may or may not have data.</li></br><li>A control teaching tip can explain an important value's meaning, such as what leaving the field blank does.</li></br><li>Avoid stating the obvious and avoid action language that tell users to do something that isn't active during the tour. For example, don't say *Enter the customer name here.* Instead, explain what to be aware of when adding a customer.</li></br></ul> | <ul></br><li>With multiple similar actions,such as **Post** and **Post & New**, call out the simplest version only.</li></br><li>Avoid action language that tell users to do something that isn't active during the tour. Don't say: *Now post the invoice*. Instead, explain what to be aware of when posting.</li></br></ul> |
+| <ul></br><li>The teaching tip can point to a field that may or may not have data.</li></br><li>A control teaching tip can explain an important value's meaning, such as what leaving the field blank does.</li></br><li>Avoid stating the obvious and avoid action language that tells users to do something that isn't active during the tour. For example, don't say *Enter the customer name here.* Instead, explain what to be aware of when adding a customer.</li></br></ul> | <ul></br><li>With multiple similar actions,such as **Post** and **Post & New**, call out the simplest version only.</li></br><li>Avoid action language that tells users to do something that isn't active during the tour. Don't say: *Now post the invoice*. Instead, explain what to be aware of when posting.</li></br></ul> |
+
+## Teaching tips for FactBoxes
+
+[!INCLUDE [2021_releasewave2](../includes/2021_releasewave2.md)]
+
+You can add teaching tips for FactBoxes just like pages by using the **AboutTitle** and **AboutText** properties is AL.
+
+### Adding teaching tips to FactBoxes
+
+Teaching tips are supported on all page types that are supported in FactBoxes, including pages that display cues. Specifically, you can add teaching tips to following elements:  
+
+- On the part control that contains the page or cue.
+- The page or cue that is included in the part control.
+- Controls, like fields, on the page or cue.
+
+When adding teaching tips, consider the following limitations:
+
+- You can't add teaching tips to actions or control add-ins in FactBoxes.
+- For FactBox teaching tips to activate, the hosting page must have a page teaching tip. The page doesn't need any control teaching tips.
+
+### How FactBox teaching tips fit into tours
+
+The teaching tips for FactBoxes become part of the tour on the hosting page. For more information, see [Teaching tips flow](#flow).
+
+## <a name="flow"></a> Teaching tips flow
+
+When designing teaching tips for a tour, it's important to understand the order in which teaching tips appear. The flow is as follows:
+
+1. Content area of the main page
+    1. Page teaching tip
+    2. Control teaching tips
+2. Action bar of the main page  
+3. FactBoxes
+    1. Part control teaching tip
+    2. Page teaching tip
+    3. Control teaching tips
+4. System teaching tips. These teaching tips are for standard features that added are added by the platform and aren't controlled by AL.
 
 ## Tooltips and control teaching tips are complementary
 
@@ -101,11 +138,11 @@ For more information about tooltips, see [Help users get unblocked](../user-assi
 
 - Use easy to understand titles that are relevant to the element being pointed to.
 
-- Be concise with the information you provide inside of a teaching tip. Short sentences or sentence fragments are best.
+- Be concise with the information you provide in a teaching tip. Short sentences or sentence fragments are best.
 
-- keep the tour as short as possible 1-4 steps.
+- Keep the tour as short as possible with 1-4 steps.
 
-- Titles with a question is ok but use sparingly.
+- Titles with a question are OK to use, but use them sparingly.
 
 - Use positive cases, *don't tell what you can't do*.
 
@@ -119,7 +156,7 @@ For more information about tooltips, see [Help users get unblocked](../user-assi
 
 - Don't put obvious tip text, or text that simply repeats what is already on the screen.
 
-- If you can't find anything to say, maybe re-evaluate if this teaching tip is needed.
+- If you can't find anything to say, maybe reevaluate if this teaching tip is needed.
 
 ## See also
 

@@ -1,5 +1,6 @@
 ---
 title: "Converting a Database to Dynamics 365 Business Central - Technical Upgrade"
+description: "Learn how to convert a database from one of the supported versions to Business Central version 14 as part of a technical upgrade."
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
@@ -11,6 +12,8 @@ ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 # Converting a Database to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Spring 2019  - Technical Upgrade
+
+[!INCLUDE [upgrade-14](../includes/upgrade-14.md)]
 
 [See print-friendly quick reference](technical-upgrade-checklist.md)
 
@@ -179,7 +182,10 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[pr
     -  [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)]
 
     > [!IMPORTANT]  
-    > For a multitenant installation, configure the [!INCLUDE[server](../developer/includes/server.md)] instance to be a multitenant instance.
+    > For a multi-tenant installation, configure the [!INCLUDE[server](../developer/includes/server.md)] instance to be a multi-tenant instance.
+
+    > [!NOTE]
+    > If you want to install the local functionality for India, use the following link to get the files for that version, [Business Central Spring 2019](https://download.microsoft.com/download/c/6/4/c64076e6-7a9e-4a7b-b2e4-1b35fcbe3eae/Dynamics.14x.IN.3478340.DVD.zip).
 
 3. <a name="convertdb"></a>Run the newly installed [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] as an administrator.
 
@@ -248,9 +254,37 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[pr
 
     `-AllowAppDatabaseWrite` is optional but is required for some post-upgrade tasks, like upgrading the control add-ins. When you are done upgrading, you can dismount and mount the tenant without this parameter as needed.
 
+   > [!NOTE]
+   > If you are upgrading from an India (IN) Dynamics NAV 2016, you must perform below step:
+   >
+   > On the Tools menu, choose Build Server Application Objects, and then choose the Yes option.
+
 14.  <a name="synctenant"></a>Run the schema synchronization with validation to complete the database conversion.  
 
      For more information, see [Synchronizing the Tenant Database and Application Database](../administration/synchronize-tenant-database-and-application-database.md).
+
+ > [!NOTE]
+ > If you are upgrading from an India (IN) Dynamics NAV 2016, you must perform below step:
+ > - Run the Data Upgrade to complete the technical upgrade.
+ > - Delete the obsolete tables with Schema Synchronization as Force Mode.
+ >   
+ >   | Table Id | Table Name |
+ >   |----------|------------|
+ >   |470|Job Queue|
+ >   |824|DO Payment Connection Details|
+ >   |825|DO Payment Connection Setup|
+ >   |826|DO Payment Setup|
+ >   |827|DO Payment Credit Card|
+ >   |828|DO Payment Credit Card Number|
+ >   |829|DO Payment Trans. Log Entry|
+ >   |830|DO Payment Card Type|
+ >   |1305|Mini Pages Mapping|
+ >   |1510|Notification Template|
+ >   |5150|Integration Page|
+ >   |5371|Service Connection Error|
+ >   |5372|Service Connection Status|
+ >   |8640|Config. Text Transformation|
+
 
 ## <a name="extensions"></a>Task 4: Post-upgrade
 
@@ -360,6 +394,9 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[pr
     For more information, see [Uploading a License File for a Specific Database](../cside/cside-upload-license-file.md#UploadtoDatabase).  
 
     You have now completed the conversion of the database to be accessed from [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. To test the converted database, you can connect it to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Server instance that is used by [!INCLUDE[navnow](../developer/includes/navnow_md.md)] clients, and then open a client.
+
+ > [!NOTE]  
+ > If you are upgrading from an India (IN) Dynamics NAV 2016, you must perform steps defined in the [Publish, Synchronize and Install the ‘IndiaUpgradeTables’ extension](../upgrade/post-india-upgrade-tables.md)
 
 ## Database and Windows collations
 

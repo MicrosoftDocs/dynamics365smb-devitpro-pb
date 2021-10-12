@@ -1,5 +1,6 @@
 ---
 title: Using Read Scale-Out for Better Performance 
+description: Learn how to use read scale-out in Business Central to improve performance
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
@@ -44,6 +45,10 @@ When you develop solutions for [!INCLUDE[prod_short](../developer/includes/prod_
 Read scale-out may introduce a slight delay when reading data from a database's secondary replica. The delay is caused by the way High Availability databases replicate data changes from the primary database to secondary replicas. If a delay isn't acceptable for an object, you can overwrite the default database access intent.
 
 For more information, see [Managing Database Access Intent](/dynamics365/business-central/admin-data-access-intent).
+
+### Enable read-only intent on OData GET requests
+
+In the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Online service, almost all OData GET requests use read-only intent for data access. If you're using read-scale out for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises, you have the option to enable or disable read-only intent. To do so, change the **Enable Read-Only Intent on GET Requests** (ODataReadonlyGetEnabled) setting of the [!INCLUDE[server](../developer/includes/server.md)]. This setting is enabled by default. If there are specific requests on which you don't want to use read-only intent, specify these requests in the **Objects Exempt from Read-Only Intent on GET Requests** (ODataReadonlyGetDisabledForObjects) setting. For more information, see [Configuring Business Central Server - OData](../administration/configure-server-instance.md#ODataServices).
 
 ## FAQ about read scale-out
 

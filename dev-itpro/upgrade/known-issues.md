@@ -2,7 +2,7 @@
 title: Known Issues with On-premises
 description: Provides an overview of the known issues in Business Central versions
 ms.custom: na
-ms.date: 06/01/2021
+ms.date: 10/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,6 +18,26 @@ This article describes some known issues in [!INCLUDE[prod short](../developer/i
 
 > [!NOTE]
 > The article doesn't include a complete list of known issues. Instead, it addresses some common issues that you might experience or might consider when upgrading to a version. If you're aware of issues that aren't in this article, or you'd like more help, see [Resources for Help and Support](../help-and-support.md).
+
+## Users can't sign in to the web client after upgrade to 19.0
+
+<!-- https://dynamicssmb2.visualstudio.com/Dynamics%20SMB/_workitems/edit/413768-->
+
+> Applies to: 19.0
+
+### Problem
+
+If the [!INCLUDE[webserver](../developer/includes/webserver.md)] is configured for Windows authentication, users may not be able to sign in. In the event viewer, you'll see the following exception:
+
+```
+System.PlatformNotSupportedException: Operation is not supported on this platform.
+   at System.Func`2.BeginInvoke(T arg, AsyncCallback callback, Object object)
+   at Microsoft.Dynamics.Nav.Client.ConnectionEstablisher.TestSpnSettings(ConnectFailedEventArgs connectFailedArgs)
+```
+
+### Workaround
+
+Set the `UnknownSpnHint` setting in the navsettings.json file of [!INCLUDE[webserver](../developer/includes/webserver.md)] by following the guidelines at in [Configuring Business Central Web Server instance](../administration/configure-web-server.md#spn).
 
 ## NavUserPassword authentication doesn't work after upgrade to version 18
 <!-- https://dynamicssmb2.visualstudio.com/Dynamics%20SMB/_workitems/edit/398164 -->

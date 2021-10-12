@@ -2,12 +2,13 @@
 title: "Data Access"
 description: Learn how to improve data access performance in Business Central.
 ms.custom: na
-ms.date: 07/01/2021
+ms.date: 09/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
+ms.search.keywords: data access,sql,partitioning,constraints
 author: jswymer
 ---
 # Data Access
@@ -54,13 +55,11 @@ You can set the cache synchronization interval by using the *CacheSynchronizatio
 For example, to set the interval to 50 seconds, set the `value` to `"00:00:50"`. For more information about the CustomSettings.config file, see [Configuring Business Central Server](configure-server-instance.md).  
 
 ## [!INCLUDE[server](../developer/includes/server.md)] connections to SQL Server
-Starting from [!INCLUDE[nav7long_md](../developer/includes/nav7long_md.md)], the [!INCLUDE[server](../developer/includes/server.md)] uses ADO.NET to connect to the SQL Server database. Installations of [!INCLUDE[nav2009](../developer/includes/nav2009_md.md)] and earlier uses ODBC to connect to the SQL Server database.
-
-The ADO.NET interface is a managed data access layer that supports SQL Server connection pooling, which can dramatically decrease memory consumption by [!INCLUDE[server](../developer/includes/server.md)]. SQL Server connection pooling also simplifies deployment of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] three-tier architecture for deployments where the three tiers are installed on separate computers. Specifically, administrators are no longer required to manually create SPNs or to set up delegation when the client, [!INCLUDE[server](../developer/includes/server.md)], and SQL Server are on separate computers.  
+The [!INCLUDE[server](../developer/includes/server.md)] uses ADO.NET to connect to the SQL Server database. The ADO.NET interface is a managed data access layer that supports SQL Server connection pooling, which can dramatically decrease memory consumption by [!INCLUDE[server](../developer/includes/server.md)]. SQL Server connection pooling also simplifies deployment of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] three-tier architecture for deployments where the three tiers are installed on separate computers. Specifically, administrators are no longer required to manually create SPNs or to set up delegation when the client, [!INCLUDE[server](../developer/includes/server.md)], and SQL Server are on separate computers.  
 
 There's no longer a one-to-one correlation between the number of client connections and the number of SQL Server connections. In earlier versions of [!INCLUDE[prod_short](../developer/includes/prod_short.md)], each SQL Server connection could consume up to 40 MB of memory. Additionally, memory allocation is now in managed memory, which is more efficient than unmanaged memory.  
 
- Records are retrieved using Multiple Active Result Sets \(MARS\). methods such as NEXT, FIND\('-'\), FIND\('+'\), FIND\('>'\), and FIND\('\<'\) are faster with MARS than the server cursors that earlier versions of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] used.  
+Records are retrieved using Multiple Active Result Sets \(MARS\). methods such as NEXT, FIND\('-'\), FIND\('+'\), FIND\('>'\), and FIND\('\<'\) are faster with MARS than the server cursors that earlier versions of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] used.  
 
 ## <a name="readwrite"></a>Data read/write performance  
 AL functions COUNT and AVERAGE formulas can use SIFT indexes. For more information, see [CALCSUMS method \(Record\)](../developer/methods-auto/record/record-CALCSUMS-method.md) and [CALCFIELDS method \(Record\)](../developer/methods-auto/record/record-CALCFIELDS-method.md). MIN and MAX formulas use SQL Server MIN and MAX functions exclusively.  
@@ -80,7 +79,7 @@ In most cases, calling the FIND or NEXT functions after you have set the view to
 
 ## <a name="TablePartitioning"></a>Using SQL Server table partitioning
 
-Starting in [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)], the use of SQL Server table and index partitioning is a supported configuration. The data of partitioned tables and indexes is divided into units that can be spread across more than one filegroup in a SQL Server database. All partitions of a single index or table must be in the same database. The table or index is treated as a single logical entity when queries or updates are done on the data. Before SQL Server 2016 SP1, partitioned tables and indexes weren't available in every edition of SQL Server.
+The use of SQL Server table and index partitioning is a supported configuration for on-premises installations. The data of partitioned tables and indexes is divided into units that can be spread across more than one filegroup in a SQL Server database. All partitions of a single index or table must be in the same database. The table or index is treated as a single logical entity when queries or updates are done on the data.
 
 Partitioning large tables or indexes can have the following manageability and performance benefits:
 
@@ -168,6 +167,35 @@ Because SQL Server supports data compression on the partition level, you can com
 > Prior to SQL Server 2016 SP1, compression wasn't available in every edition of SQL Server.
 
 For more general information about table compression in SQL Server, see [Data Compression](/sql/relational-databases/data-compression/data-compression). For guidance on strategy, capacity planning, and best practices for data compression, see [Data Compression: Strategy, Capacity Planning, and Best Practices](/previous-versions/sql/sql-server-2008/dd894051(v=sql.100)).
+
+## Default SQL constraints on columns
+
+To add a default constraint to a field (column), use the following SQL statement:
+
+```sql
+ALTER TABLE ADD CONSTRAINT constraint_name DEFAULT default_value FOR field_name
+```
+
+The name of the default constraint isn't important, as long as it isn't used by another column in the database.
+
+### Default constraint value
+
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] sets default constraints on fields in a tables. The following table list the values used for default constraints for the different data types:
+
+|Data type|value|
+|---------|-------|
+|Integer, Option, Boolean, Byte, Duration, BigInteger|0|
+|Decimal|0.0|
+|DateFormula|''|
+|Text|N''|
+|RecordId, TableFilter|0x00|
+|Guid, Media, MediaSet| 00000000-0000-0000-0000-000000000000|
+|Code (Default, VarChar, Variant types)|N''|
+|Code (Integer, BigInteger types)|0|
+|Time, Date, DateTime|'1753.01.01'|
+
+> [!NOTE]
+> Blobs don't get default constraints, but they are allowed to be null.
 
 ## See Also
 

@@ -6,14 +6,11 @@
     tocHref: /dynamics365/business-central/
     topicHref: /dynamics365/business-central/index
     items:
-    - name: Developer and IT-pro
+    - name: Developer and Admin
       tocHref: /dynamics365/business-central/dev-itpro
       topicHref: /dynamics365/business-central/dev-itpro/index
       items:
       - name: Dynamics 365 Business Central API
-        tocHref: /dynamics-nav/api-reference/v1.0
-        topicHref: /dynamics-nav/api-reference/v1.0/index
-    - name: Accountant Hub
-      tocHref: /dynamics365/accountants/
-      topicHref: /dynamics365/accountants/index
+        tocHref: /dynamics-nav/api-reference/v2.0
+        topicHref: /dynamics-nav/api-reference/v2.0/index
 

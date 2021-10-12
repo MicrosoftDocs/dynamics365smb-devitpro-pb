@@ -1,4 +1,4 @@
-# [Development and administration](index.md)
+﻿# [Development and administration](index.md)
 # [New and planned](/dynamics365/business-central/product-news?toc=/dynamics365/business-central/dev-itpro/toc.json)
 # Get started
 ## [Overview of business functionality](/dynamics365/business-central/across-business-functionality?toc=/dynamics365/business-central/dev-itpro/toc.json)
@@ -27,6 +27,7 @@
 #### [Marketing Validation Checklist](developer/readiness/readiness-checklist-marketing.md)
 #### [Marketing Validation FAQ](developer/readiness/readiness-marketing-validation-faq.md)
 #### [Technical Validation Checklist](developer/devenv-checklist-submission.md)
+#### [Technical Validation Checklist FAQ](developer/devenv-checklist-submission-faq.md)
 #### [How to Make Compelling Videos](developer/readiness/readiness-how-to-make-compelling-videos.md)
 #### [How to Create an Effective Sales Landing Page](developer/readiness/readiness-how-to-create-sales-landing-page.md)
 ### Embed Apps
@@ -46,8 +47,8 @@
 ##### [Upgrading an App Using ForceSync](administration/appmanagement/app-management-updating-with-forcesync.md)
 ## Sell
 ### [Get Started as a Reseller of Business Central Online](administration/get-started-online.md)
-### [Cloud Solution Provider program](/partner-center/csp-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
-### [Connect with customers](/partner-center/connect-with-your-customers?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### [Cloud Solution Provider (Partner Center)](/partner-center/csp-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### [Connect with customers (Partner Center)](/partner-center/connect-with-your-customers?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Customize Business Central](/dynamics365/business-central/ui-customizing-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Onboarding Experiences](administration/onboarding-experiences.md)
 ## Frequently asked questions
@@ -62,6 +63,7 @@
 ### [FAQ About the Windows Client and Business Central](faq-win-cli.md)
 ### [FAQ about Connecting to Business Central Online from On-Premises Solutions](administration/faq-migrate-data.md)
 ## What's new or changed
+### [Update 18.5](whatsnew/whatsnew-update-18-5.md)
 ### [Update 18.4](whatsnew/whatsnew-update-18-4.md)
 ### [Update 18.3](whatsnew/whatsnew-update-18-3.md)
 ### [Update 18.2](whatsnew/whatsnew-update-18-2.md)
@@ -106,8 +108,9 @@
 # Administration
 ## [Administration of Business Central Online](administration/tenant-administration.md)
 ## Understand Business Central online
+### [Understanding the Infrastructure](administration/tenant-administration.md#infrastructure)
 ### [Get Started as a Reseller of Business Central Online](administration/get-started-online.md)
-### [Country/Regional availability and Supported Translations](compliance/apptest-countries-and-translations.md)
+### [Country/Regional Availability and Supported Translations](compliance/apptest-countries-and-translations.md)
 ### [Delegated Administrator Access to Business Central Online](administration/delegated-admin.md)
 ### [Major Updates and Minor Updates](administration/update-rollout-timeline.md)
 ### [Version Numbers in Business Central](administration/version-numbers.md)
@@ -142,7 +145,8 @@
 ### [Enabling new features ahead of time](administration/feature-management.md)
 ### [Set up standard company configuration packages](administration/set-up-standard-company-configuration-packages.md)
 ### [Set up Business Central](/dynamics365/business-central/setup?toc=/dynamics365/business-central/dev-itpro/toc.json)
-### [Set up the Excel add-in](administration/configuring-excel-addin.md)
+### [Get the Excel Add-in](/dynamics365/business-central/admin-deploy-excel-addin?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### [Get the Outlook add-ins for the business inbox](administration/outlook-addins.md)
 ### [Network configuration for the Excel add-in](administration/configuring-network-for-addins.md)
 ### [Set up App Key Vaults for extensions](administration/setup-app-key-vault.md)
 ### [Deploy a tenant customization](developer/devenv-deploy-tenant-customization.md)
@@ -194,6 +198,7 @@
 ### [Incoming Web Services Requests Telemetry](administration/telemetry-webservices-trace.md)
 ### [Outgoing Web Services Requests Telemetry](administration/telemetry-webservices-outgoing-trace.md)
 ### [Table Index Telemetry](administration/telemetry-table-index-trace.md)
+### [Task Scheduler Telemetry](administration/telemetry-task-scheduler-trace.md)
 ### [Web Service Access Key Telemetry](administration/telemetry-webservices-access-key-trace.md)
 ### [Event IDs](administration/telemetry-event-ids.md)
 ## Automation
@@ -229,6 +234,8 @@
 #### [Update user](administration/api/dynamics_user_update.md)
 ### [User group](administration/resources/dynamics_usergroup.md)
 #### [Get user group](administration/api/dynamics_usergroup_get.md)
+#### [Create user group](administration/api/dynamics_usergroup_create.md)
+#### [Delete user group](administration/api/dynamics_usergroup_delete.md)
 #### [Update user group](administration/api/dynamics_usergroup_update.md)
 ### [User group member](administration/resources/dynamics_usergroupmember.md)
 #### [Get user group member](administration/api/dynamics_usergroupmember_get.md)
@@ -254,6 +261,7 @@
 ### [AL Outline View](developer/devenv-al-outline-view.md)
 ### [AL Code Navigation](developer/devenv-al-code-navigation.md)
 ### [AL Code Actions](developer/devenv-code-actions.md)
+### [AL Profiler](developer/devenv-al-profiler-overview.md)
 ### [Object Ranges](developer/devenv-object-ranges.md)
 ### [Differences in the Development Environments](developer/devenv-differences.md)
 <!-- ### [Object Specifications and Limitations](developer/devenv-object-specifications-limitations.md)-->
@@ -284,7 +292,7 @@
 ### [JSON Files](developer/devenv-json-files.md)
 ### [The Migration.json File](developer/devenv-migration-json-file.md)
 ### [AL Language Extension Configuration](developer/devenv-al-extension-configuration.md)
-### [Security Setting and IP Protection](developer/devenv-security-settings-and-ip-protection.md)
+### [Resource Exposure Policy Setting](developer/devenv-security-settings-and-ip-protection.md)
 ### [Developing for Multiple Platform Versions](developer/devenv-developing-for-multiple-platform-versions.md)
 ### [Optimizing Visual Studio Code for AL Development](developer/devenv-optimize-visual-studio-code.md)
 ## Compiling, Publishing, and Debugging
@@ -319,9 +327,11 @@
 ### [The Microsoft_Application.app File](developer/devenv-application-app-file.md)
 ### [Publishing a Code-Customized Base Application](developer/devenv-publish-code-customization.md)
 ### [Extending Application Areas](developer/devenv-extending-application-areas.md)
-### [Extending Item Charge Distribution Methods](developer/devenv-extending-item-charges.md)
-### [Extending Price Calculations](developer/devenv-extending-best-price-calculations.md)
-### [Extending Pages Previously Based on the Date Virtual Table](developer/devenv-extend-pages-based-on-date-virtual-table.md)
+### Examples
+#### [Extending Item Charge Distribution Methods](developer/devenv-extending-item-charges.md)
+#### [Extending Price Calculations](developer/devenv-extending-best-price-calculations.md)
+#### [Extending Pages Previously Based on the Date Virtual Table](developer/devenv-extend-pages-based-on-date-virtual-table.md)
+#### [Extending Data Archiving](developer/devenv-data-archive-extension.md)
 ## Using the System Application
 ### [Overview of the System Application](developer/devenv-system-application-overview.md)
 ### Creating New Modules in the System Application
@@ -345,7 +355,9 @@
 ### [Event Example](developer/devenv-events-example.md)
 ### [Walkthrough: Implementing New Workflow Events and Responses](developer/devenv-walkthrough-workflow-events-responses.md)  
 ## [Notifications](developer/devenv-notifications-developing.md)
-## [Task Scheduler](developer/devenv-task-scheduler.md)
+## Task Scheduler and Job Queue
+### [Task Scheduler](developer/devenv-task-scheduler.md)
+### [Job Queue](developer/devenv-job-queue.md)
 ## App Key Vaults for Secrets
 ### [Overview](developer/devenv-app-key-vault-overview.md)
 ### [Setting up App Key Vaults for Online](administration/setup-app-key-vault.md)
@@ -539,6 +551,7 @@
 ## AL Programming
 ### [AL Development Environment](developer/devenv-reference-overview.md)
 ### [Programming in AL](developer/devenv-programming-in-al.md)
+### [FAQ for Developing in AL](developer/devenv-dev-faq.md)
 ### [AL Simple Statements](developer/devenv-al-simple-statements.md)  
 ### [AL Control Statements](developer/devenv-al-control-statements.md)  
 ### [AL Complex Types](developer/devenv-al-complextypes.md)
@@ -548,7 +561,6 @@
 #### [Pragma Directive](developer/directives/devenv-directive-pragma.md)
 ### [Using Access Modifiers in AL](developer/devenv-using-access-modifiers.md)
 ### [XML Comments in Code](developer/devenv-xml-comments.md)
-### [FAQ for Developing in AL](developer/devenv-dev-faq.md)
 ### Code Analysis
 #### [Using the Code Analysis Tool](developer/devenv-using-code-analysis-tool.md)
 #### [AL Compiler Diagnostics](developer/diagnostics/diagnostics-overview.md)
@@ -1243,6 +1255,7 @@
 #### [Table Object](developer/devenv-table-object.md)
 #### [Table Extension Object](developer/devenv-table-ext-object.md)
 #### [Table Keys](developer/devenv-table-keys.md)
+#### [Enums](developer/devenv-extensible-enums.md)
 #### [Page Object](developer/devenv-page-object.md)
 #### [Page Extension Object](developer/devenv-page-ext-object.md)
 #### [Page Customization Object](developer/devenv-page-customization-object.md)
@@ -1272,6 +1285,7 @@
 ##### [Caption Attribute](developer/attributes/devenv-caption-attribute.md)
 ##### [CommitBehavior Attribute](developer/attributes/devenv-commitbehavior-attribute.md)
 ##### [ConfirmHandler Attribute](developer/attributes/devenv-confirmhandler-attribute.md)
+##### [ErrorBehavior Attribute](developer/attributes/devenv-errorbehavior-attribute.md)
 ##### [EventSubscriber Attribute](developer/attributes/devenv-eventsubscriber-attribute.md)
 ##### [FilterPageHandler Attribute](developer/attributes/devenv-filterpagehandler-attribute.md)
 ##### [HandlerFunctions Attribute](developer/attributes/devenv-handlerfunctions-attribute.md)
@@ -1316,6 +1330,7 @@
 ##### [DataClassification Option Type](developer/methods-auto/dataclassification/dataclassification-option.md)
 ##### [DataScope Option Type](developer/methods-auto/datascope/datascope-option.md)
 ##### [DefaultLayout Option Type](developer/methods-auto/defaultlayout/defaultlayout-option.md)
+##### [ErrorBehavior Option Type](developer/methods-auto/errorbehavior/errorbehavior-option.md)
 ##### [ErrorType Option Type](developer/methods-auto/errortype/errortype-option.md)
 ##### [ExecutionContext Option Type](developer/methods-auto/executioncontext/executioncontext-option.md)
 ##### [ExecutionMode Option Type](developer/methods-auto/executionmode/executionmode-option.md)
@@ -1444,9 +1459,20 @@
 ##### [Names() Method](developer/methods-auto/enum/enum-names--method.md)
 ##### [Ordinals() Method](developer/methods-auto/enum/enum-ordinals--method.md)
 #### [ErrorInfo Data Type](developer/methods-auto/errorinfo/errorinfo-data-type.md)
+##### [Create(String [, Boolean] [, var Record] [, Integer] [, Integer] [, String] [, Verbosity] [, DataClassification] [, Dictionary of [Text, Text]]) Method](developer/methods-auto/errorinfo/errorinfo-create-method.md)
+##### [Callstack() Method](developer/methods-auto/errorinfo/errorinfo-callstack-method.md)
+##### [Collectible([Boolean]) Method](developer/methods-auto/errorinfo/errorinfo-collectible-method.md)
+##### [ControlName([String]) Method](developer/methods-auto/errorinfo/errorinfo-controlname-method.md)
+##### [CustomDimensions([Dictionary of [Text, Text]]) Method](developer/methods-auto/errorinfo/errorinfo-customdimensions-method.md)
 ##### [DataClassification([DataClassification]) Method](developer/methods-auto/errorinfo/errorinfo-dataclassification-method.md)
+##### [DetailedMessage([String]) Method](developer/methods-auto/errorinfo/errorinfo-detailedmessage-method.md)
 ##### [ErrorType([ErrorType]) Method](developer/methods-auto/errorinfo/errorinfo-errortype-method.md)
+##### [FieldNo([Integer]) Method](developer/methods-auto/errorinfo/errorinfo-fieldno-method.md)
 ##### [Message([String]) Method](developer/methods-auto/errorinfo/errorinfo-message-method.md)
+##### [PageNo([Integer]) Method](developer/methods-auto/errorinfo/errorinfo-pageno-method.md)
+##### [RecordId([RecordId]) Method](developer/methods-auto/errorinfo/errorinfo-recordid-method.md)
+##### [SystemId([Guid]) Method](developer/methods-auto/errorinfo/errorinfo-systemid-method.md)
+##### [TableId([Integer]) Method](developer/methods-auto/errorinfo/errorinfo-tableid-method.md)
 ##### [Verbosity([Verbosity]) Method](developer/methods-auto/errorinfo/errorinfo-verbosity-method.md)
 #### [FieldRef Data Type](developer/methods-auto/fieldref/fieldref-data-type.md)
 ##### [Active() Method](developer/methods-auto/fieldref/fieldref-active-method.md)
@@ -1583,7 +1609,9 @@
 ##### [Add(String, String) Method](developer/methods-auto/httpheaders/httpheaders-add-method.md)
 ##### [Clear() Method](developer/methods-auto/httpheaders/httpheaders-clear-method.md)
 ##### [Contains(String) Method](developer/methods-auto/httpheaders/httpheaders-contains-method.md)
-##### [GetValues(String, Array of [Text]) Method](developer/methods-auto/httpheaders/httpheaders-getvalues-method.md)
+##### [GetValues(String, Array of [Text]) Method](developer/methods-auto/httpheaders/httpheaders-getvalues-string-text-method.md)
+##### [GetValues(String, List of [Text]) Method](developer/methods-auto/httpheaders/httpheaders-getvalues-string-list[text]-method.md)
+##### [Keys() Method](developer/methods-auto/httpheaders/httpheaders-keys-method.md)
 ##### [Remove(String) Method](developer/methods-auto/httpheaders/httpheaders-remove-method.md)
 ##### [TryAddWithoutValidation(String, String) Method](developer/methods-auto/httpheaders/httpheaders-tryaddwithoutvalidation-method.md)
 #### [HttpRequestMessage Data Type](developer/methods-auto/httprequestmessage/httprequestmessage-data-type.md)
@@ -2138,6 +2166,7 @@
 ##### [Clear(var Array of [Any]) Method](developer/methods-auto/system/system-clear-joker-method.md)
 ##### [Clear(var Any) Method](developer/methods-auto/system/system-clear-joker-method.md)
 ##### [ClearAll() Method](developer/methods-auto/system/system-clearall-method.md)
+##### [ClearCollectedErrors() Method](developer/methods-auto/system/system-clearcollectederrors-method.md)
 ##### [ClearLastError() Method](developer/methods-auto/system/system-clearlasterror-method.md)
 ##### [ClosingDate(Date) Method](developer/methods-auto/system/system-closingdate-method.md)
 ##### [CodeCoverageInclude(var Record) Method](developer/methods-auto/system/system-codecoverageinclude-method.md)
@@ -2168,6 +2197,7 @@
 ##### [ExportObjects(String, var Record [, Integer]) Method](developer/methods-auto/system/system-exportobjects-method.md)
 ##### [Format(Any [, Integer] [, Integer]) Method](developer/methods-auto/system/system-format-joker-integer-integer-method.md)
 ##### [Format(Any, Integer, String) Method](developer/methods-auto/system/system-format-joker-integer-string-method.md)
+##### [GetCollectedErrors([Boolean]) Method](developer/methods-auto/system/system-getcollectederrors-method.md)
 ##### [GetDocumentUrl(Guid) Method](developer/methods-auto/system/system-getdocumenturl-method.md)
 ##### [GetDotNetType(Any) Method](developer/methods-auto/system/system-getdotnettype-method.md)
 ##### [GetLastErrorCallStack() Method](developer/methods-auto/system/system-getlasterrorcallstack-method.md)
@@ -2179,6 +2209,7 @@
 ##### [GetUrl(ClientType, String, ObjectType, Integer, RecordRef [, Boolean]) Method](developer/methods-auto/system/system-geturl-clienttype-string-objecttype-integer-recordref-boolean-method.md)
 ##### [GlobalLanguage([Integer]) Method](developer/methods-auto/system/system-globallanguage-method.md)
 ##### [GuiAllowed() Method](developer/methods-auto/system/system-guiallowed-method.md)
+##### [HasCollectedErrors() Method](developer/methods-auto/system/system-hascollectederrors-method.md)
 ##### [Hyperlink(String) Method](developer/methods-auto/system/system-hyperlink-method.md)
 ##### [ImportEncryptionKey(String, String) Method](developer/methods-auto/system/system-importencryptionkey-method.md)
 ##### [ImportObjects(String [, Integer]) Method](developer/methods-auto/system/system-importobjects-method.md)
@@ -2913,6 +2944,7 @@
 #### [Clustered Property](developer/properties/devenv-clustered-property.md)
 #### [ColumnFilter Property](developer/properties/devenv-columnfilter-property.md)
 #### [ColumnSpan Property](developer/properties/devenv-columnspan-property.md)
+#### [ColumnStoreIndex Property](developer/properties/devenv-columnstoreindex-property.md)
 #### [Compressed Property](developer/properties/devenv-compressed-property.md)
 #### [CompressionType Property](developer/properties/devenv-compressiontype-property.md)
 #### [ContextSensitiveHelpPage Property](developer/properties/devenv-contextsensitivehelppage-property.md)
@@ -2983,6 +3015,7 @@
 #### [Implementation Property](developer/properties/devenv-implementation-property.md)
 #### [Importance Property](developer/properties/devenv-importance-property.md)
 #### [IncludeCaption Property](developer/properties/devenv-includecaption-property.md)
+#### [IncludedFields Property](developer/properties/devenv-includedfields-property.md)
 #### [IncludedPermissionSets Property](developer/properties/devenv-includedpermissionsets-property.md)
 #### [IndentationColumn Property](developer/properties/devenv-indentationcolumn-property.md)
 #### [IndentationControls Property](developer/properties/devenv-indentationcontrols-property.md)
@@ -3448,6 +3481,7 @@
 # Removed or deprecated features
 ## Deprecated Tables
 ### [Deprecated Tables](upgrade/deprecated-tables.md)
+### [Deprecated Tables in the India Version](upgrade/india-data-migration-list-of-deprecated-tables.md)
 ## Deprecated Features
 ### [Deprecated Features in W1](upgrade/deprecated-features-w1.md)
 ### [Deprecated Fields, and Fields Marked as Obsolete in Local Functionality](upgrade/deprecated-fields.md)
@@ -3476,6 +3510,7 @@
 ### [Deployment Overview](deployment/deployment.md)
 ### [Features not implemented in on-premises deployments](features-not-implemented-on-premises.md)
 ### System Requirements
+#### [2021 Release Wave 2](deployment/system-requirements-business-central-v19.md)
 #### [2021 Release Wave 1](deployment/system-requirements-business-central-v18.md)
 #### [2020 Release Wave 2](deployment/system-requirement-business-central-v17.md)
 #### [2020 Release Wave 1](deployment/system-requirement-business-central-v16.md)
@@ -3544,6 +3579,7 @@
 ### [Configuring Database Authentication](administration/configure-sql-server-authentication.md)
 ### [Encrypting Data](developer/devenv-encrypting-data.md)
 ### [Setting up the Excel Add-In](administration/configuring-excel-addin.md)
+### [Setting Up the Add-In for Outlook Integration](administration/Setting-up-Office-Add-Ins-Outlook-Inbox.md)
 ### [Setting up App Key Vaults for Extensions](administration/setup-app-key-vault-onprem.md)
 ### Monitoring Business Central Server
 #### [Monitoring Performance Counters](administration/performance-counters.md)
@@ -3590,6 +3626,7 @@
 #### [Incoming Web Services Requests Telemetry](administration/telemetry-webservices-trace.md)
 #### [Outgoing Web Services Requests Telemetry](administration/telemetry-webservices-outgoing-trace.md)
 #### [Table Index Telemetry](administration/telemetry-table-index-trace.md)
+#### [Task Scheduler Telemetry](administration/telemetry-task-scheduler-trace.md)
 #### [Web Service Access Key Telemetry](administration/telemetry-webservices-access-key-trace.md)
 #### [Event IDs](administration/telemetry-event-ids.md)
 ### [Understanding Session Timeouts](administration/understanding-session-timeouts.md)
@@ -3601,6 +3638,26 @@
 ## Upgrade
 ### [Upgrading to Business Central](upgrade/upgrading-to-business-central.md)
 ### [Supported Upgrade Paths](upgrade/upgrade-paths.md)
+### Business Central 2021 Release Wave 2
+#### [Overview](upgrade/upgrade-overview-v19.md)
+#### [Upgrade Compatibility Matrix](upgrade/upgrade-v14-v15-compatibility.md)
+#### [Upgrading Permission Sets](upgrade/upgrade-permissions.md)
+#### Application and Data
+##### [From version 14 Unmodified C/AL Application](upgrade/upgrade-unmodified-application-v14-v19.md)
+##### [From version 14 Customized C/AL Application](upgrade/upgrade-to-microsoft-base-app-v19.md)
+##### [From Versions 16, 17, or 18 Microsoft Base Application](upgrade/upgrade-unmodified-application-to-v19.md)
+##### Related Articles
+###### [Convert to AL](upgrade/devenv-code-conversion.md)
+###### Migrating Tables and Fields Between Extensions
+####### [Overview](developer/devenv-migrate-table-fields.md)
+####### [Moving Tables and Fields Down](developer/devenv-migrate-table-fields-down.md)
+####### [Moving Tables and Fields Up](developer/devenv-migrate-table-fields-up.md)
+###### Data Migration Toolkit - India
+####### [Overview](upgrade/india-data-migration-toolkit-overview.md)
+#### Technical Upgrade
+##### [From Version 14](upgrade/upgrade-technical-upgrade-v14-v19.md)
+##### [From Version 16, 17, or 18](upgrade/upgrade-technical-upgrade-v19.md)
+#### [Installing a Minor Update](upgrade/upgrading-cumulative-update-v19.md)
 ### Business Central 2021 Release Wave 1
 #### [Overview](upgrade/upgrade-overview-v18.md)
 #### [Upgrade Compatibility Matrix](upgrade/upgrade-v14-v15-compatibility.md)

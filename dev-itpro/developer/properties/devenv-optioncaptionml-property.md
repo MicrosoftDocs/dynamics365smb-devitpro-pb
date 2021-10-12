@@ -38,7 +38,7 @@ OptionCaptionML = <Language ID> = '<optioncaption [,optioncaption]*>'
 
 ## Remarks  
 
-OptionCaptionML is multilanguage-enabled so it can contain a list of text in different languages. The text that is displayed is selected according to the current language settings of the user. For more information, see [Multilanguage Development](/dynamics365/business-central/dev-itpro/developer/properties/devenv-work-with-translation-files).  
+OptionCaptionML is multilanguage-enabled so it can contain a list of text in different languages. The text that is displayed is selected according to the current language settings of the user. For more information, see For more information, see [Working with Translation Files](../devenv-work-with-translation-files.md).  
   
 `<Language ID>` is a Windows standard three-letter language ID and `<optioncaption [,optioncaption]*>` is the OptionCaption text(s) for this language. Commas are used to separate entries.  
   
@@ -74,4 +74,4 @@ The following examples demonstrate the relationship between the [OptionMembers P
   
 ## See Also
 
-[Multilanguage Development](/dynamics365/business-central/dev-itpro/developer/properties/devenv-work-with-translation-files)
+[Working with Translation Files](../devenv-work-with-translation-files.md)

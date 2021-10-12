@@ -66,7 +66,7 @@ The path and file name to give the uploaded file. If you do not provide a path, 
 
 The business logic is run on the [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] and not on the client. Files are created on the [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] and not locally on the client.  
 
-[Upload Method \(File\)](../../methods-auto/file/file-upload-method.md) and [UploadIntoStream Method \(File\)](../../methods-auto/file/file-uploadintostream-method.md) are used to send a file from the client to a [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)].  
+[Upload Method \(File\)](../../methods-auto/file/file-upload-method.md) and [UploadIntoStream Method \(File\)](../../methods-auto/file/file-uploadintostream-string-string-string-text-instream-method.md) are used to send a file from the client to a [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)].  
 
 [Download Method \(File\)](../../methods-auto/file/file-download-method.md) and [DownloadFromStream Method \(File\)](../../methods-auto/file/file-downloadfromstream-method.md) are used to send a file from a [!INCLUDE[d365fin_server_md](../../includes/d365fin_server_md.md)] to the client.  
 
@@ -74,9 +74,15 @@ We recommend that you use the methods in codeunit 419, File Management, to uploa
 
 ## Example  
 
+The `FromFilter` parameter must follow this pattern:
+`<ExtensionGroupName>|<extension1>;<extension2>`, for example `'Word files|*.docx;*.doc'`.
+
+This example uses a text file:
+
 ```  
-Upload('Upload file','C:\','Text file(*.txt)|*.txt','Test.txt',varTest);  
+Upload('Upload file','C:\','Text file (*.txt)|*.txt','Test.txt',varTest);  
 ```  
+
 
 ## See Also
 
