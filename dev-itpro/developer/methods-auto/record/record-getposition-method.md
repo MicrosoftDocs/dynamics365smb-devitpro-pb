@@ -3,7 +3,7 @@ title: "Record.GetPosition([Boolean]) Method"
 description: "Gets a string that contains the primary key of the current record."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 10/12/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -31,7 +31,7 @@ An instance of the [Record](record-data-type.md) data type.
 
 *[Optional] UseNames*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-  
+Indicates whether a reference to the field caption or the field number should be returned. If set to true (default value) or empty, then the returned string contains references to field captions in the table with which the record is associated. If a field doesn't have a caption, then the name is returned. If the parameter is set to false, then field numbers are used instead.  
 
 
 ## Return Value
