@@ -42,7 +42,7 @@ LanguageID :=   System.WindowsLanguage()
 
 The *LanguageID* is a standard Windows language ID. The Windows Language virtual table contains a list of these IDs and the corresponding names and short names.  
   
-For more information, see [Multilanguage Development](/dynamics365/business-central/dev-itpro/developer/methods-auto/system/devenv-work-with-translation-files).  
+For more information, see [Multilanguage Development](../../devenv-work-with-translation-files.md).  
   
 ## See Also
 

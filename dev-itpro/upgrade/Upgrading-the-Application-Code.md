@@ -1,6 +1,6 @@
 ---
 title: Upgrade Application Code
-description: The article explains how to upgrade the application code and how to merge code from different versions of the application.
+description: The article explains how to upgrade the application code to version 14 and how to merge code from different versions of the application.
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
@@ -12,6 +12,8 @@ author: jswymer
 ms.service: "dynamics365-business-central"
 ---
 # Upgrading the Application Code in [!INCLUDE[prod_long](../developer/includes/prod_long.md)]
+
+[!INCLUDE [upgrade-14](../includes/upgrade-14.md)]
 
 Typically, customers want all the customizations that have been implemented in their existing databases to be migrated to their new [!INCLUDE[prod_short](../developer/includes/prod_short.md)] databases. Depending on the version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] that a database is being upgraded from, the amount of code changes between the two versions can vary. To upgrade the application code, you must merge code from different versions of the application. This merge process is known as a *code upgrade* or *application upgrade*. You must upgrade the application before you upgrade the data.
 
@@ -320,7 +322,7 @@ For W1 versions, you can find the default upgrade toolkit objects in the  **Upgr
 |[!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)]| Upgrade110014x.FOB|Upgrade1100130.FOB|
 |[!INCLUDE[prod_short](../developer/includes/prod_short.md)] Fall 2018| Upgrade13x14x.FOB|Not applicable|
 
-For local versions, you will find the upgrade toolkit objects in the **UpgradeToolKit\Local Objects** folder. The files follow the same naming convention except they include the 2-letter local version, such as **Upgrade110014x.DK.fob** for Denmark or **Upgrade110014x.DE.fob** for Germany.
+For local versions, you will find the upgrade toolkit objects in the **UpgradeToolKit\Local Objects** folder. The files follow the same naming convention except they include the 2-letter local version, such as **Upgrade110014x.DK.fob** for Denmark, **Upgrade110014x.DE.fob** for Germany, or **Upgrade90014x.IN.fob** for India.
 
 For information about importing objects, see [Importing Objects](../cside/cside-import-objects.md).
 
@@ -378,7 +380,7 @@ For information about importing objects, see [Importing Objects](../cside/cside-
     The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] installation media (DVD) includes several new versions of Microsoft extensions (that is, extensions that have **Microsoft** as the publisher). If your old deployment uses these extensions, you have to upgrade the old versions to the new versions.
 
     > [!IMPORTANT]
-    > For Denmark (DK) and German (DE) versions. Some of the local functionality has been moved from the base application to extensions.
+    > For Denmark (DK), German (DE), and India (IN) versions. Some of the local functionality has been moved from the base application to extensions.
     >
     > If you are upgrading from a Denmark (DK) version of Dynamics NAV 2017 or earlier, you must publish and install the following extensions to get the local functionality:
     >
@@ -394,6 +396,22 @@ For information about importing objects, see [Importing Objects](../cside/cside-
     >|Name|Extension package|
     >|----|---------|
     >|ELSTER VAT Localization for Germany| Elster.app|
+    >
+    > If you are upgrading from an India (IN) version of Dynamics NAV 2016, you must publish and install the following extensions to get the local functionality:
+    >
+    >|Name|Extension package|
+    >|----|---------|
+    >|India Tax Base| IndiaTaxBase.app|
+    >|India Tax Engine| IndiaTaxEngine.app||
+    >|India Tax GST| IndiaTaxGST.app|
+    >|India Upgrade Tables| IndiaUpgradeTables.app|
+    >|India TCS| IndiaUPGTCS.app|
+    >|India TDS| IndiaUPGTDS.app|
+    >|Fixed Asset Depreciation for India| INFADepreciation.app|
+    >|India Gate Entry| INGateEntry.app|
+    >|India Voucher Interface|INVoucherInterface.app|
+    >|India Data Migration|UPGIndia.app|
+
 
     The new versions are found in the `\Extensions` folder of the installation media.
 

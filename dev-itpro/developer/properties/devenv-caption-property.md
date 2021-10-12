@@ -78,6 +78,7 @@ A caption is the text used to show the identity of a control. For example, in th
 > [!NOTE]  
 > For query columns, when you run the query from Object Designer, the About This Query window that opens in the [!INCLUDE[rtc](../includes/rtc_md.md)] displays the value for the [Name Property](./devenv-properties.md) of the query column, not the Caption property or CaptionML Property.  
 
-## See Also  
+## See Also
+
 [ShowCaption Property](devenv-showcaption-property.md)  
-[Multilanguage Development](/dynamics365/business-central/dev-itpro/developer/properties/devenv-work-with-translation-files)
+[Working with Translation Files](../devenv-work-with-translation-files.md)

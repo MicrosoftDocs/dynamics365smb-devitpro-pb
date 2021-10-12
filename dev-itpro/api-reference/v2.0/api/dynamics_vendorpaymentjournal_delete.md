@@ -12,6 +12,9 @@ ms.author: solsen
 ---
 
 # Delete vendorPaymentJournals
+
+[!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
+
 Deletes vendorPaymentJournals in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## HTTP request

@@ -63,6 +63,12 @@ Unlike primary keys, it's possible to define multiple unique secondary keys on a
 > [!NOTE]  
 > The `Unique` property isn't supported in table extension objects.
 
+### Secondary keys with included fields
+
+With non-clustered secondary keys, you can use the [IncludedFields property](properties/devenv-includedfields-property.md) to add fields that aren't part of the key itself. In SQL server, these non-key fields correspond to what are called *included columns*. Using included fields lets you create indexes that cover more queries, and lets you bypass the maximum number of fields in a key.
+
+A secondary key with included fields can improve SQL query performance, especially when SQL index contains all columns in the query, either as key columns or included columns. The performance improves because the query optimizer can locate all the column values within the index. And, it doesn't access table or clustered index data, which results in fewer disk I/O operations. For more information about included columns in SQL, see [Create indexes with included columns](/sql/relational-databases/indexes/create-indexes-with-included-columns).
+
 ### System keys
 There's always a unique secondary key on the **SystemId** field.
 
@@ -191,12 +197,16 @@ tableextension 50121 MyBaseTableExt extends MyBaseTable
         field(4; MyExtField2; Integer)
         {
         }
+        field(5; MyExtField3; Integer)
+        {
+        }
     }
 
     keys
     {
         key(ExtKey1; MyExtField1) //secondary key
         {
+            IncludeFields = MyExtField2,MyExtField3;
         }
         key(ExtKey2; MyBaseField1, MyBaseField2) //secondary key
         {

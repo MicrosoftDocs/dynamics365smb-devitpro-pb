@@ -158,7 +158,6 @@ From the installation media (DVD), run setup.exe to uninstall the current Busine
         > [!IMPORTANT]
         > Make sure that you set the **SQL Database** to something other than the name of your database, so that your database is not overwritten.-->
     5. Select **Apply** to complete the installation.
-4. Upload the Business Central Partner license to the database.
 
 For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
 
@@ -227,6 +226,17 @@ Also, to ensure that the existing published extensions work on the new platform,
     ```powershell
     Restart-NAVServerInstance -ServerInstance <server instance>
     ```
+
+## <a name="UploadLicense"></a>Import [!INCLUDE[prod_short](../developer/includes/prod_short.md)] partner license  
+
+To import the license, use the [Import-NAVServerLicense cmdlet](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense). You'll have to restart the server instance afterwards:
+
+```powershell
+Import-NAVServerLicense -ServerInstance <server instance> -LicenseFile <path to license file>
+Restart-NAVServerInstance -ServerInstance <server instance>
+```
+
+For more information, see [Uploading a License File for a Specific Database](../cside/cside-upload-license-file.md#UploadtoDatabase).
 
 ## Publish the new system symbols
 
@@ -541,6 +551,14 @@ We recommend setting the value to application build number for the version 16 up
     ```
 -->
 
+### Import the customer license
+
+Import the customer license by using the [Import-NAVServerLicense cmdlet](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense), as you did with the partner license. You'll have to restart the server instance afterwards.
+
+```powershell
+Import-NAVServerLicense -ServerInstance <server instance> -LicenseFile <path to license file>
+Restart-NAVServerInstance -ServerInstance <server instance name>
+```
 
 
 ## See Also

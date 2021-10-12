@@ -3,7 +3,7 @@ title: "OnAfterModifyEvent (Table) Trigger Event"
 description: "Executed after a record is modified in a table."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 09/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,7 +24,7 @@ Executed after a record is modified in a table.
 ## Syntax
 ```AL
 [EventSubscriber(ObjectType::Table, Database::<Table Name>, 'OnAfterModifyEvent', '', <SkipOnMissingLicense>, <SkipOnMissingPermission>)]
-local procedure MyProcedure(Rec: Record, xRec: Record, RunTrigger: Boolean)
+local procedure MyProcedure(Rec: Record; xRec: Record; RunTrigger: Boolean)
 begin
     ...
 end;
