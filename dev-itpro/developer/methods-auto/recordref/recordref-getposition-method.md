@@ -3,7 +3,7 @@ title: "RecordRef.GetPosition([Boolean]) Method"
 description: "Gets a string that contains the primary key of the current record."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 10/12/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -31,7 +31,7 @@ An instance of the [RecordRef](recordref-data-type.md) data type.
 
 *[Optional] UseNames*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-Indicates whether a reference to the field caption or the field number should be returned. The UseCaptions parameter is optional. If it is set to true (default value) or if it is empty, then the returned string contains references to field captions in the table with which the record is associated. If the parameter is set to false, then field numbers are used instead.  
+Indicates whether a reference to the field caption or the field number should be returned. The UseCaptions parameter is optional. If set to true (default value) or empty, then the returned string contains references to field captions in the table with which the record is associated. If a field doesn't have a caption, then the name is returned. If the parameter is set to false, then field numbers are used instead.  
 
 
 ## Return Value
@@ -42,11 +42,13 @@ The name or number of the field that contains the primary key.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks  
- This method works just like the [GetPosition Method \(Record\)](../library.md).  
+## Remarks
+
+This method works just like the [GetPosition Method \(Record\)](../library.md).  
   
-## Example  
- The following example opens the Customer table as a RecordRef that is named RecRef. The RecordRef variable uses the GetPosition method to retrieve the position of the primary key. The *UseCaptions* parameter is set to **true** so the caption of the field that contains the primary key is returned. If you set *UseCaptions* to **false**, the number of the field is returned. 
+## Example
+
+The following example opens the **Customer** table as a RecordRef that is named RecRef. The RecordRef variable uses the GetPosition method to retrieve the position of the primary key. The *UseNames* parameter is set to **true** so the caption of the field that contains the primary key is returned. If you set *UseNames* to **false**, the number of the field is returned.
    
 ```al
 var
