@@ -1,9 +1,9 @@
 ---
 title: "FieldRef.TestField() Method"
-description: "Determines whether the contents of a field matches a given value."
+description: "Tests that the content of the field is not zero or blank (empty string)."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 10/08/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # FieldRef.TestField() Method
 > **Version**: _Available or changed with runtime version 1.0._
 
-Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.
+Tests that the content of the field is not zero or blank (empty string). If it is, an error message is displayed.
 
 
 ## Syntax
