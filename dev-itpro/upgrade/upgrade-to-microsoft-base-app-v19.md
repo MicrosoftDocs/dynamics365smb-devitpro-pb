@@ -88,7 +88,7 @@ For the interim phase of migrating tables and data to extensions, you create emp
 
 - Microsoft system application
 - Microsoft base application
-- Each new customization extension that includes table or table extension objects for moving out of the existing base application. You don't have to create empty versions for extensions that don't include table changes. For example, the extension only includes a page object and code. 
+- Each new customization extension that includes table or table extension objects for moving out of the existing base application. You don't have to create empty versions for extensions that don't include table changes. For example, the extension only includes a page object and code.
 
 The only file in the extension project that's required is an app.json. You can create the empty extension like any other extension by adding an AL project in Visual Studio Code:
 
@@ -145,7 +145,7 @@ The only file in the extension project that's required is an app.json. You can c
 4. Build and compile the extension package. To build the extension package, press Ctrl+Shift+B.
 
 > [!TIP]
-> This step is only required if you need to trigger a data upgrade on these extensions, which you'll do by running Start-NavAppDataUpgrade on these extensions in Task 14. For the scenario in this article, at a minimum this step is required for the System and Base Applications. You can skip this step for any customization extensions that do not not include upgrade code.
+> This step is only required if you need to trigger a data upgrade on these extensions, which you'll do by running Start-NavAppDataUpgrade on these extensions in **Task 17**. For the scenario in this article, at a minimum this step is required for the System and Base Applications. You can skip this step for any customization extensions that do not not include upgrade code.
 
 ## Task 5: Create table migration extension
 
@@ -418,7 +418,7 @@ In this step, you configure the version 19 server instance. In particular, you c
 
 ## Task 9: Import License
 
-Import the version 18 partner license. To import the license, use the [Import-NAVServerLicense cmdlet](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense):
+Import the version 19 partner license. To import the license, use the [Import-NAVServerLicense cmdlet](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense):
 
 ```powershell
 Import-NAVServerLicense $-ServerInstance <server instance name> -LicenseFile <path>
@@ -481,7 +481,7 @@ If you have a multitenant deployment, do these steps for each tenant.
 
     With a single-tenant deployment, you can omit the `-Tenant` parameter and value.
 
-3. Synchronize the tenant with the table migration extension. This extension is the tables only extension you created in Task 5.
+3. Synchronize the tenant with the table migration extension. This extension is the tables only extension you created in **Task 5**.
 
     Use the [Sync-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp) cmdlet:
 
@@ -495,7 +495,7 @@ If you have a multitenant deployment, do these steps for each tenant.
     > To verify the tenant state, run [Get-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/get-navtenant) cmdlet with the `-ForceRefresh` switch:
     >
     > `Get-NAVTenant <server instance> -Tenant <default> -ForceRefresh`
-4. Synchronize the empty versions of system application, base application, and customization extensions that you published in Task 8.
+4. Synchronize the empty versions of system application, base application, and customization extensions that you published in **Task 8**.
 
 ## Task 12: Install DestinationAppsForMigration and move tables
 
@@ -511,7 +511,7 @@ In this task, you run a data upgrade on tables to handle data changes made by pl
 
     When completed, the table migration extension will be installed.
 
-3. Install the empty versions of the system, base, and customization extensions that you published in Task 8.
+3. Install the empty versions of the system, base, and customization extensions that you published in **Task 8**.
 
     To install the extension, you use the [Install-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp). 
 
@@ -523,7 +523,7 @@ In this task, you run a data upgrade on tables to handle data changes made by pl
 
 ## Task 13: Publish final extensions
 
-This step starts the second phase of the data upgrade. You'll publish the second version of the table migration extension and the production versions of extensions. The production extensions include the new versions of Microsoft System Application, Base Application extension, and customization extensions. The extension packages for Microsoft extensions are on the installation media (DVD). Customization extensions include the extension versions that you created in Task 1, not the empty versions.
+This step starts the second phase of the data upgrade. You'll publish the second version of the table migration extension and the production versions of extensions. The production extensions include the new versions of Microsoft System Application, Base Application extension, and customization extensions. The extension packages for Microsoft extensions are on the installation media (DVD). Customization extensions include the extension versions that you created in Task 1, not the empty versions that you created in **Task 4**.
 
 Publish extensions using the Publish-NAVApp cmdlet like you did in previous steps.
 
@@ -660,8 +660,7 @@ Run the data upgrade on the extensions in the following order:
   > - Install the India Reports extension.
   > - Upgrade the India Data Migration.
 
-
-   For customization extensions, only do this step for those extensions that have an empty version currently installed on the tenant (see **Task 10**).
+   For customization extensions, only do this step for those extensions that have an empty version currently installed on the tenant (see **Task 10**). If you have a customization extension for which you didn't create and publish an empty version, complete the next step to install these extensions.
 5. Install remaining customization extensions for which you didn't create and publish an empty version.
 
 ## Task 18: Upgrade control add-ins
