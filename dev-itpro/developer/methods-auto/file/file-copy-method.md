@@ -1,30 +1,33 @@
 ---
-title: "File.Copy Method"
+title: "File.Copy(String, String) Method"
+description: "Copies a file."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# File.Copy Method
+# File.Copy(String, String) Method
+> **Version**: _Available or changed with runtime version 1.0._
+
 Copies a file.
 
 > [!NOTE]
 > This method is supported only in Business Central on-premises.
 
 ## Syntax
-```
+```AL
 [Ok := ]  File.Copy(FromName: String, ToName: String)
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *FromName*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -43,34 +46,36 @@ The name that you want to assign to the copy that includes its path. When you en
 
 
 ## Return Value
-*Ok*  
+*[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+**true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks  
- If you do not use the return value and the file cannot be copied, a run-time error will occur. If you do include the return value in your code, you must handle any errors yourself.  
-  
-## Example  
- The following example copies a file that is named OldFile from a folder that is named Old on drive C to a folder that is named New. If the file is copied, a message is displayed and the program continues. Otherwise, an error occurs. This example assumes that you have created the following file 'c:\\Old\\' OldFile.  
+## Remarks
 
-```
+If you do not use the return value and the file cannot be copied, a run-time error will occur. If you do include the return value in your code, you must handle any errors yourself.  
+  
+## Example
+ 
+The following example copies a file that is named OldFile from a folder that is named Old on drive C to a folder that is named New. If the file is copied, a message is displayed and the program continues. Otherwise, an error occurs. This example assumes that you have created the following file 'c:\\Old\\' OldFile.  
+
+```al
  var
     OldFile: Text;
     NewFile: Text;
 begin
     OldFile := 'old.txt';  
     NewFile := 'new.txt';  
-    if FILE.COPY('c:\Old\' + OldFile, 'c:\New\' + NewFile) then  
+    if File.Copy('c:\Old\' + OldFile, 'c:\New\' + NewFile) then  
       // Continue your program.  
-      MESSAGE('The file was copied.');  
+      Message('The file was copied.');  
     else  
       // Handle the error.  
-      MESSAGE('The file was not copied.');  
+      Message('The file was not copied.');  
 end;
-```  
+```
   
 
 ## See Also

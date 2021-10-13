@@ -1,24 +1,27 @@
 ---
-title: "Record.SetPosition Method"
+title: "Record.SetPosition(String) Method"
+description: "Sets the fields in a primary key on a record to the values specified in the supplied string."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Record.SetPosition Method
+# Record.SetPosition(String) Method
+> **Version**: _Available or changed with runtime version 1.0._
+
 Sets the fields in a primary key on a record to the values specified in the supplied string. The remaining fields are not changed.
 
 
 ## Syntax
-```
+```AL
  Record.SetPosition(String: String)
 ```
 ## Parameters

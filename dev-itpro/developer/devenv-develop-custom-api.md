@@ -4,11 +4,11 @@ description: "Developing a custom API in AL for Business Central"
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ---
 
@@ -24,11 +24,14 @@ At a high-level, this process involves the following tasks:
 2. Add necessary fields, properties, and subpages to the API page.
 3. Access the API page and get the response.
 
+> [!TIP]  
+> The code in this sample has also been published to the BCTech repo. For more information, see [Introduction to Custom API](https://github.com/microsoft/BCTech/tree/master/samples/CustomAPI).
+
 ## Prerequisites
 
 This walkthrough requires the following:  
 
-- [!INCLUDE[prodshort](../includes/prodshort.md)], including the following:  
+- [!INCLUDE[prod_short](../includes/prod_short.md)], including the following:  
   - The CRONUS International Ltd. demonstration data.
   - Visual Studio Code with the AL Language extension installed. For more information, see [Getting Started with AL](../developer/devenv-get-started.md) and [AL Language Extension Configuration](../developer/devenv-al-extension-configuration.md). The AL Language extension for Visual Studio is free, and you can download it from [Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al).
 
@@ -58,7 +61,7 @@ To expose data in an API page, the first thing needed is a source table. For the
             }
             field(3; "Country"; Text[100])
             {
-                Caption = 'Brand Id';
+                Caption = 'Country';
             }
         }
 
@@ -153,7 +156,7 @@ In the following, we will create two API pages for both **Car Brand** and **Car 
 1. Create a new API page.
 2. Name the page **API Car Model**, and specify **50101** as the page ID.  
 3. Specify the **Car Model**  table as the source table.
-4. Specify `APIVersion`, `APIPublisher`, `APIGroup`, `EntityName`, and `EntitySetName` for your API page. These properties will affect your custom endpoint: `https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/<API publisher>/<API group>/<API version>/companies(<company id>)/carModel`. For more information, see [Business Central API endpoints](/dynamics-nav/api-reference/v1.0/endpoints-apis-for-dynamics.md).
+4. Specify `APIVersion`, `APIPublisher`, `APIGroup`, `EntityName`, and `EntitySetName` for your API page. These properties will affect your custom endpoint: `https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/<API publisher>/<API group>/<API version>/companies(<company id>)/carModel`. For more information, see [Business Central API endpoints](../api-reference/v2.0/endpoints-apis-for-dynamics.md) and [Calling the API](devenv-develop-connect-apps.md#calling-the-api).
 5. Specify `EntityCaption` and `EntitySetCaption`. These two properties are generated in the entityDefinitions `https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/<API publisher>/<API group>/<API version>/entityDefinitions` which are localized and translatable. 
 6. Make sure to set the `ODataKeyFields` property to `SystemId`. A SystemId field is a GUID data type field that specifies a unique, immutable (read-only) identifier for records in the table. For more information, see [Table Object](devenv-table-object.md). 
     ```AL
@@ -282,13 +285,12 @@ In the following, we will create two API pages for both **Car Brand** and **Car 
     ``` 
 
 > [!TIP]  
-> Parts are defined as 1-N relationship by default. You can, however, define it to be as 1-0, 1-1 relationship. In order to achieve that add the **CaptionML = ENU = 'Multiplicity=ZeroOrOne';** property in your part as shown below:
+> Parts are defined as 1-N relationship by default. You can, however, define it to be as 1-0, 1-1 relationship. In order to achieve that add the **Multiplicity=ZeroOrOne;** property in your part as shown below:
 >```AL
 >part(carModels; "API Car Model")
 >    {
->        CaptionML = ENU = 'Multiplicity=ZeroOrOne';
+>        Multiplicity = ZeroOrOne;
 >        EntityName = 'carModel';
->        EntitySetName = 'carModels';
 >        SubPageLink = "Brand Id" = Field(SystemId);
 >    }
 > ```
@@ -307,7 +309,7 @@ Both API pages support create, read, update, and delete operations. If you want 
 Now, we will create a car brand:
 
 ```
-POST https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/bctech/demo/v1.0/companies(<company id>)/carBrands
+POST https://api.businesscentral.dynamics.com/v2.0/<environmentName>/api/bctech/demo/v1.0/companies(<company id>)/carBrands
 
 {
     "name": "CARBRAND1",
@@ -319,14 +321,14 @@ POST https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/bctech
 We can make a `GET` request to retrieve the car brands:
 
 ```
-GET https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/bctech/demo/v1.0/companies(<company id>)/carBrands
+GET https://api.businesscentral.dynamics.com/v2.0/<environmentName>/api/bctech/demo/v1.0/companies(<company id>)/carBrands
 ```
 
 Which will result in following response:
 
 ```
 {
-   "@odata.context":"https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/bctech/demo/v1.0/$metadata#companies(<company id>)/carBrands",
+   "@odata.context":"https://api.businesscentral.dynamics.com/v2.0/<environmentName>/api/bctech/demo/v1.0/$metadata#companies(<company id>)/carBrands",
    "value":[
       {
          "@odata.etag":"W/\"JzQ0O2c4UTNaRHErODdzODZnVlJxN2tNTkt3SHBwajNBaHNSdStNeEFONGUwVkE9MTswMDsn\"",
@@ -343,7 +345,7 @@ We can now create a car model that belongs to the car brand that we just created
 
 ### Example 1
 ``` 
-POST https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/bctech/demo/v1.0/companies(<company id>))/carBrands(24cafc3a-b1fe-ea11-9306-000d3a482952)/carModels
+POST https://api.businesscentral.dynamics.com/v2.0/<environmentName>/api/bctech/demo/v1.0/companies(<company id>))/carBrands(24cafc3a-b1fe-ea11-9306-000d3a482952)/carModels
 {
     "name": "MODEL1",
     "description": "Model 1",
@@ -354,7 +356,7 @@ POST https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/bctech
 ### Example 2
 
 ``` 
-POST https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/bctech/demo/v1.0/companies(<company id>))//carModels
+POST https://api.businesscentral.dynamics.com/v2.0/<environmentName>/api/bctech/demo/v1.0/companies(<company id>))/carModels
 {
     "name": "MODEL1",
     "brandId": "24cafc3a-b1fe-ea11-9306-000d3a482952",
@@ -369,7 +371,7 @@ POST https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/bctech
 And the navigational property also allows us to do a deep insert; deep insert is the creation of an entity instance and related entity instances, in a single `POST` request. So you can combine car brand and car model creation in a single request as illustrated below:
 
 ``` 
-POST https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/bctech/demo/v1.0/companies(<company id>))//carBrands
+POST https://api.businesscentral.dynamics.com/v2.0/<environmentName>/api/bctech/demo/v1.0/companies(<company id>))/carBrands
 {
     "name": "CARBRAND2",
     "description": "Car Brand 2",
@@ -388,6 +390,49 @@ POST https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/bctech
 			    }]
 }
 ```
+### Example 4
+
+You can also use the navigational property to get car models of a car brand in a single request as illustrated below:
+
+``` 
+GET https://api.businesscentral.dynamics.com/v2.0/<environmentName>/api/bctech/demo/v1.0/companies(<company id>))/carBrands(<car brand id>)?$expand=carModels
+```
+
+Which will result in following response:
+
+```
+{
+   "@odata.context":"https://api.businesscentral.dynamics.com/v2.0/<environmentName>/api/bctech/demo/v1.0/$metadata#companies(<company id>)/carBrands/$entity",
+   "value":[
+      {
+         "@odata.etag":"W/\"JzQ0O2c4UTNaRHErODdzODZnVlJxN2tNTkt3SHBwajNBaHNSdStNeEFONGUwVkE9MTswMDsn\"",
+         "id":"24cafc3a-b1fe-ea11-9306-000d3a482952",
+         "name":"CARBRAND2",
+         "description":"Car Brand 2",
+         "country":"Italy",
+         "carModels": [{
+                        "id":"22be13af-b718-425d-ba6e-f1796d509402",
+	    			    "name": "MODELA",
+		    		    "description": "Model A",
+		    		    "brandId": "24cafc3a-b1fe-ea11-9306-000d3a482952",
+			    	    "power": 0,
+				        "fuelType": "Electric"
+			        },
+			        {
+                        "id":"818e9481-3a41-4344-af09-c897becef44e",
+   					    "name": "MODELB",
+    				    "description": "Model B",
+    				    "brandId": "24cafc3a-b1fe-ea11-9306-000d3a482952",
+	    			    "power": 0,
+		    		    "fuelType": "Electric"
+			        }]
+      }
+   ]
+}
+```
+
+> [!NOTE]  
+> The sample code is published to the BCTech repo. For more information, see [Introduction to Custom API](https://github.com/microsoft/BCTech/tree/master/samples/CustomAPI).
 
 ## General tips for custom APIs
 
@@ -396,10 +441,10 @@ POST https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/bctech
     - Doing so enables the platform to generate ReferentialConstraints, that OData consumers can use to understand the relations between entities
     - The platform will also create bi-directional relationship if possible, allowing consumers to access to the parent by just adding “/parentEntity” in the URI
 3. Use Enumerations.
-3. Make sure to localize your custom API pages:
+4. Make sure to localize your custom API pages:
     - Use `EntityCaption` and `EntitySetCaption` properties
     - Use captions for Enums
-    - All these localizations can be retrieved through `https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/<API publisher>/<API group>/<API version>/entityDefinitions`
+    - All these localizations can be retrieved through `https://api.businesscentral.dynamics.com/v2.0/<environmentName>/api/<API publisher>/<API group>/<API version>/entityDefinitions`
 
 ## See Also
 

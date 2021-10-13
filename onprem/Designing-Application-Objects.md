@@ -33,7 +33,7 @@ All [!INCLUDE[navnow](includes/navnow_md.md)] applications are based on the foll
 
 -   Run application objects.  
 
- ![Microsoft Dynamics NAV Object Designer](media/NAV_ObjectDesigner.png "NAV\_ObjectDesigner")  
+ ![Microsoft Dynamics NAV Object Designer.](media/NAV_ObjectDesigner.png "NAV\_ObjectDesigner")  
 
  With the exception of MenuSuite objects, you can work on any number of application objects at the same time, each in its own designer. This means that you can run multiple instances of these designers. For example, if you work on three new pages at the same time, then each page is displayed in its own Page Designer window. However, you can only run one instance of Object Designer.  
 
@@ -62,7 +62,7 @@ All [!INCLUDE[navnow](includes/navnow_md.md)] applications are based on the foll
 ## Standard Microsoft Dynamics NAV Version Conventions  
  The following illustration shows the version convention that is used in [!INCLUDE[navnow](includes/navnow_md.md)].  
 
- ![NAV Versioning Convention](media/NAV_VersionConvention.png "NAV\_VersionConvention")  
+ ![NAV Versioning Convention.](media/NAV_VersionConvention.png "NAV\_VersionConvention")  
 
  Product family code, country/region reference, major version, and minor version are required. Service pack and hotfix are optional.  
 

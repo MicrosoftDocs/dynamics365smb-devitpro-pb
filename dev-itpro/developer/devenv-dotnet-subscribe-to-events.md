@@ -3,17 +3,17 @@ title: "Subscribing to Events in a .NET Framework Type"
 description: "How to subscribe to event in a .NET Framework Type"
 author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
 # Subscribing to Events in a .NET Framework Type
-With .NET Framework interoperability in [!INCLUDE[prodlong](includes/prodlong.md)] objects, you can configure a DotNet variable to subscribe to events that are published by a .NET Framework type. Events are handled by triggers in the AL code of the [!INCLUDE[prodshort](includes/prodshort.md)] object. 
+With .NET Framework interoperability in [!INCLUDE[prod_long](includes/prod_long.md)] objects, you can configure a DotNet variable to subscribe to events that are published by a .NET Framework type. Events are handled by triggers in the AL code of the [!INCLUDE[prod_short](includes/prod_short.md)] object. 
 
 You start by declaring in AL the usage of two .NET types from the `System` assembly. The first type is `System.Timers.Timer` and it will be used to generate .NET events. The second one is called `System.Timers.ElapsedEventArgs` and it is required for creating a subscriber to the `Elapsed` event emitted by the `Timer` type.
 
@@ -66,5 +66,5 @@ pageextension 50101 CustomerListExt extends "Customer List"
 [Getting started with Microsoft .NET Interoperability from AL](devenv-get-started-call-dotnet-from-al.md)   
 [.NET Control Add-Ins](devenv-dotnet-controladdins.md)   
 [Serializing .NET Framework Types](devenv-dotnet-serializing-dotnetframework-types.md)   
-[Method Attributes](methods/devenv-method-attributes.md)  
+[Method Attributes](attributes/devenv-method-attributes.md)  
 [AL Language Extension Configuration](devenv-al-extension-configuration.md)  

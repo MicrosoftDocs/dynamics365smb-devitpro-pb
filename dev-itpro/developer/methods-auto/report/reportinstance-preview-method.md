@@ -1,28 +1,31 @@
 ---
-title: "Report.Preview Method"
+title: "Report.Preview() Method"
+description: "Indicates whether a report is being printed in preview mode."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Report.Preview Method
+# Report.Preview() Method
+> **Version**: _Available or changed with runtime version 1.0._
+
 Indicates whether a report is being printed in preview mode.
 
 
 ## Syntax
-```
+```AL
 IsPreview :=   Report.Preview()
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 
 ## Parameters
 *Report*  
@@ -32,7 +35,7 @@ An instance of the [Report](report-data-type.md) data type.
 ## Return Value
 *IsPreview*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the report is being printed in preview mode, otherwise **false**.  
+**true** if the report is being printed in preview mode, otherwise **false**.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -40,15 +43,15 @@ An instance of the [Report](report-data-type.md) data type.
 ## Remarks  
  You must use the return value. A compile error is generated if this value is not used.  
 
-If you run a client report definition \(RDLC\) report layout in preview mode and then call the CurrReport.PREVIEW method, then the Print icon, Print Layout icon, Page Setup icon, and Save As icon are not displayed.  
+If you run a client report definition \(RDLC\) report layout in preview mode and then call the CurrReport.PREView method, then the Print icon, Print Layout icon, Page Setup icon, and Save As icon are not displayed.  
 
- If you run a client report definition \(RDLC\) report layout in preview mode and do not call the CurrReport.PREVIEW method, then you can print from the **Print Preview** window.  
+ If you run a client report definition \(RDLC\) report layout in preview mode and do not call the CurrReport.PREView method, then you can print from the **Print Preview** window.  
 
 ## Example  
- This example shows how to use the PREVIEW method. You can use this method in an application that stores a count of how many times a document has been printed in the database. This number must be updated from inside the report that is used to print the document. To avoid updating the number when the report is run in preview mode, add a construct to the OnPreDataItem trigger that resembles the one that is shown in this example when you add the code that updates the count.  
+ This example shows how to use the PREView method. You can use this method in an application that stores a count of how many times a document has been printed in the database. This number must be updated from inside the report that is used to print the document. To avoid updating the number when the report is run in preview mode, add a construct to the OnPreDataItem trigger that resembles the one that is shown in this example when you add the code that updates the count.  
 
 ```  
-if CurrReport.PREVIEW then  
+if CurrReport.PREView then  
 ... // Preview-specific processing.  
 else  
 ... // Processing that is not preview specific:  

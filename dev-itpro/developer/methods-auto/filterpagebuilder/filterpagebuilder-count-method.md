@@ -1,28 +1,31 @@
 ---
-title: "FilterPageBuilder.Count Method"
+title: "FilterPageBuilder.Count() Method"
+description: "Gets the number of filter controls that are specified in the FilterPageBuilder object instance."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# FilterPageBuilder.Count Method
+# FilterPageBuilder.Count() Method
+> **Version**: _Available or changed with runtime version 1.0._
+
 Gets the number of filter controls that are specified in the FilterPageBuilder object instance.
 
 
 ## Syntax
-```
+```AL
 Count :=   FilterPageBuilder.Count()
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 
 ## Parameters
 *FilterPageBuilder*  
@@ -32,7 +35,7 @@ An instance of the [FilterPageBuilder](filterpagebuilder-data-type.md) data type
 ## Return Value
 *Count*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-The number of filter controls in the current FilterPageBuilder object instance.  
+The number of filter controls in the current FilterPageBuilder object instance.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -40,7 +43,7 @@ The number of filter controls in the current FilterPageBuilder object instance.
 ## Example  
  The following example uses the COUNT method on a filter page object that includes a two filter controls for the **Date** system table.  
  
-```
+```al
 var
     varDateItem: Text[30];  
     varCount: Integer;  
@@ -48,11 +51,11 @@ var
 
 begin 
     varDateItem := 'Date record';  
-    varFilterPageBuilder.ADDTABLE(varDateItem + ' 1',DATABASE::Date);  
-    varFilterPageBuilder.ADDTABLE(varDateItem + ' 2',DATABASE::Date);  
-    varCount := varFilterPageBuilder.COUNT;  
+    varFilterPageBuilder.AddTable(varDateItem + ' 1',DATABASE::Date);  
+    varFilterPageBuilder.AddTable(varDateItem + ' 2',DATABASE::Date);  
+    varCount := varFilterPageBuilder.Count;  
     if varCount <> 2 then   
-      ERROR('There should be two controls in varFilterPageBuilder');
+      Error('There should be two controls in varFilterPageBuilder');
     varFilterPageBuilder.RunModal();  
 end; 
 ```  

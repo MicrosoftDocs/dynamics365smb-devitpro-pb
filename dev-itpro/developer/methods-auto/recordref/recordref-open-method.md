@@ -1,24 +1,27 @@
 ---
-title: "RecordRef.Open Method"
+title: "RecordRef.Open(Integer [, Boolean] [, String]) Method"
+description: "Causes a RecordRef variable to refer to a table, which is identified by its number in a particular company."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# RecordRef.Open Method
+# RecordRef.Open(Integer [, Boolean] [, String]) Method
+> **Version**: _Available or changed with runtime version 1.0._
+
 Causes a RecordRef variable to refer to a table, which is identified by its number in a particular company.
 
 
 ## Syntax
-```
+```AL
  RecordRef.Open(No: Integer [, Temp: Boolean] [, CompanyName: String])
 ```
 ## Parameters
@@ -29,10 +32,10 @@ An instance of the [RecordRef](recordref-data-type.md) data type.
 *No*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The number of the table.  
-*Temp*  
+*[Optional] Temp*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
   
-*CompanyName*  
+*[Optional] CompanyName*  
 &emsp;Type: [String](../string/string-data-type.md)  
 The name of the company to which you want to change. If you omit this parameter, the current company is used.  
 
@@ -44,7 +47,7 @@ The name of the company to which you want to change. If you omit this parameter,
 
 When you use the RecordRef.Open method a new object is created. This object contains references to the open table, filters, and the record itself and all the fields it contains. You can open a table by using the table number or the name of the table that represents the table number. For example, you open the Customer table by using following syntax: `RecordRef.Open(18)` or `RecordRef.Open(Database::Customer)`  
   
-If you use the *CompanyName* parameter, then this method works the same as the [ChangeCompany Method \(Record\)](../../methods/devenv-changecompany-method-record.md).  
+If you use the *CompanyName* parameter, then this method works the same as the [ChangeCompany Method \(Record\)](../record/record-changecompany-method.md).  
 
 <!--
 ## Limitations 
@@ -60,7 +63,7 @@ var r : record 2000000006;
 
 The following example uses the Open method to create a RecordRef variable that is named MyRecordRef for the Customer table. The parameters are omitted in this example because there is only one company in this example and the table will not be open as temporary table. The caption and number of records in the table are displayed in a Message box. At the end of the display, the [Close Method \(RecordRef\)](recordref-close-method.md) closes the table. 
 
-```  
+```al
 var
     MyRecordRef: RecordRef;
     Text000: Label 'The %1 table contains %2 records.'; 
@@ -73,9 +76,9 @@ end;
   
 ## Example 2
 
-This example shows how to use the OPEN method. In this example, "MyRecordRef" opens table 27 and then "Find\('-'\)" finds the first record in the table. "TempMyRecordRef" opens a temporary table which is empty and therefore the "Find\('-'\)" returns false.
+This example shows how to use the Open method. In this example, "MyRecordRef" opens table 27 and then "Find\('-'\)" finds the first record in the table. "TempMyRecordRef" opens a temporary table which is empty and therefore the "Find\('-'\)" returns false.
   
-```  
+```al
 var
     MyRecordRef: RecordRef;
     TempMyRecordRef: RecordRef;

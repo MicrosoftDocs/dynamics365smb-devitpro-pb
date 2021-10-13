@@ -1,16 +1,17 @@
 ---
 title: "DataItemLink Property (Query)"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 
 # DataItemLink Property (Query)
+> **Version**: _Available from runtime version 1.0._
 
 Sets a reference between one or more fields of the data item table and data item or data items above it.  
   

@@ -3,11 +3,11 @@ title: "Page Object"
 description: "Description of the page object in AL for Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
@@ -20,7 +20,7 @@ The structure of a page is hierarchical and breaks down in to three sections. Th
 
 When developing a solution for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], you will follow the code layout for a page as shown in the page example below, but for more details on the individual controls and properties that are available, see [Page Property Overview](properties/devenv-page-property-overview.md).
 
-If you want to, for example, add functionality to a page that already exists in [!INCLUDE[prodshort](includes/prodshort.md)], you can create a page extension object that changes an existing page object. For more information, see [Page Extension Object](devenv-page-ext-object.md). Depending on how much you want to change on an existing page, you can also create a page customization object, which offers modifications on actions and layout. For more information, see [Page Customization Object](devenv-page-customization-object.md).
+If you want to, for example, add functionality to a page that already exists in [!INCLUDE[prod_short](includes/prod_short.md)], you can create a page extension object that changes an existing page object. For more information, see [Page Extension Object](devenv-page-ext-object.md). Depending on how much you want to change on an existing page, you can also create a page customization object, which offers modifications on actions and layout. For more information, see [Page Customization Object](devenv-page-customization-object.md).
 
 > [!IMPORTANT]  
 > Only pages with the [Extensible Property](properties/devenv-extensible-property.md) set to **true** can be extended.
@@ -98,6 +98,6 @@ page 50101 SimpleCustomerCard
 [Adding Help Links from Pages, Reports, and XMLports](devenv-adding-help-links-from-pages-tables-xmlports.md)  
 [Page Extension Object](devenv-page-ext-object.md)  
 [Page, Page Fields, and Page Extension Properties](properties/devenv-page-property-overview.md)  
-[Page Properties](properties/devenv-page-properties.md)  
+[Page Properties](./properties/devenv-properties.md)  
 [Developing Extensions](devenv-dev-overview.md)  
-[Configure Context-Sensitive Help](../help/context-sensitive-help.md)  
+[Configure Context-Sensitive Help](../help/context-sensitive-help.md)

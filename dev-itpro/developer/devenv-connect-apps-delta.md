@@ -3,15 +3,17 @@ title: "Using Delta Links With APIs"
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ---
 
 # Using Delta Links With APIs
+
+[!INCLUDE [online_only](../developer/includes/online_only.md)]
 
 Delta links are opaque, service-generated links that the client uses to retrieve subsequent changes to a result. 
 

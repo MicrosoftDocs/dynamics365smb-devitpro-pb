@@ -1,24 +1,29 @@
 ---
 title: "RefreshOnActivate Property"
-description: "Describes the RefreshOnActivate property"
-author: SusanneWindfeldPedersen
+description: "Set this property on pages where you want to refresh the data when the user navigates back from another page."
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
-ms.assetid: 036a07c2-26b0-483b-96ae-4052fdfba6ad
-caps.latest.revision: 2
+author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # RefreshOnActivate Property
-Set this property on pages where you want to refresh the data when the user navigates back from another page.   
-  
-## Applies to  
-  
-- Pages 
+> **Version**: _Available or changed with runtime version 1.0._
+
+Set this property on pages where you want to refresh the data when the user navigates back from another page.
+
+## Applies to
+-   Page
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 
 ## Syntax
 
@@ -33,4 +38,4 @@ On RoleCenters, modifying data in one part will automatically refresh data in an
 ## See Also  
 
 [Properties](devenv-properties.md)  
-[Page Properties](devenv-page-properties.md)
+[Page Properties](./devenv-properties.md)

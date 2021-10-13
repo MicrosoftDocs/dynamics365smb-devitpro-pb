@@ -18,7 +18,7 @@ This topic describes the Example-1VM.ps1 script of the [!INCLUDE[nav_prov_long](
 ## Deployment Overview  
  The Example-1VM.ps1 script creates a virtual machine on Azure, which is based on an image that you specify, and then installs and configures [!INCLUDE[nav_web_server](includes/nav_web_server_md.md)], [!INCLUDE[nav_server](includes/nav_server_md.md)], and [!INCLUDE[navnow](includes/navnow_md.md)] database components for SQL Server.  
   
- ![Network topology for Example&#45;1VM script](media/NAV_Azure_Example-1VM.png "NAV\_Azure\_Example-1VM")  
+ ![Network topology for Example&#45;1VM script.](media/NAV_Azure_Example-1VM.png "NAV\_Azure\_Example-1VM")  
   
  The script restores a [!INCLUDE[navnow](includes/navnow_md.md)] application database of your choice, along with a [!INCLUDE[navnow](includes/navnow_md.md)] license. You can choose to install the [!INCLUDE[demolong](includes/demolong_md.md)] and license. The script also configures endpoints in Azure for [!INCLUDE[navnow](includes/navnow_md.md)] client services and management services and opens the communication ports in Windows Firewall.  
   
@@ -39,12 +39,12 @@ This topic describes the Example-1VM.ps1 script of the [!INCLUDE[nav_prov_long](
 ## Deployment Process  
  The Example-1VM.ps1 is a combination of several of the [!INCLUDE[nav_prov_short](includes/nav_prov_short_md.md)] scripts that are called at various points in the deployment process. Before running each script, a secure Windows PowerShell remote session using HTTPS is established between the provisioning computer and the Azure virtual machine.  
   
- ![NAV powershell remoting with Azure](media/NAV_Azure_PSRemoting_1VM.png "NAV\_Azure\_PSRemoting\_1VM")  
+ ![NAV powershell remoting with Azure.](media/NAV_Azure_PSRemoting_1VM.png "NAV\_Azure\_PSRemoting\_1VM")  
   
 ### Deployment Phases  
  The following flow chart illustrates the process that is executed by the Example-1VM.ps1 script to deploy [!INCLUDE[navnow](includes/navnow_md.md)]. The dashed boxes illustrate the manual alternatives in the flow.  
   
- ![Process flow for Example&#45;1VM script](media/NAV_Azure_Example-1VM_Flow.png "NAV\_Azure\_Example-1VM\_Flow")  
+ ![Process flow for Example&#45;1VM script.](media/NAV_Azure_Example-1VM_Flow.png "NAV\_Azure\_Example-1VM\_Flow")  
   
  The following table provides a description of each phase in the process and the Windows PowerShell script that is executed.  
   

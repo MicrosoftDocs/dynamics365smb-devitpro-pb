@@ -1,11 +1,11 @@
 ---
 title: "Multitenant Technical Upgrade Quick Reference"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.author: jswymer
 ms.service: "dynamics365-business-central"
 author: jswymer
@@ -33,13 +33,13 @@ This article provides an overview of the full upgrade process for Business Centr
 |Import upgrade toolkit (.fob)|[See...](../cside/cside-import-objects.md)||
 |Publish system and test symbols from the installation media, and generate application symbols.|[See...](upgrading-the-application-code.md#AddExtensions)|
 |Publish the new Microsoft extension versions from the installation media.|[See...](upgrading-the-application-code.md#PublishNew)||
-|Upload a [!INCLUDE[prodshort_md](../developer/includes/prodshort.md)] partner license.|[See...](../cside/cside-upload-license-file.md)||
+|Upload a [!INCLUDE[prod_short_md](../developer/includes/prod_short.md)] partner license.|[See...](../cside/cside-upload-license-file.md)||
 
 ## Prepare the tenant database for data upgrade
 
 |Step|More info| Done |
 |----|-----------|--|
-|Backup the tenant database.|[See...](https://go.microsoft.com/fwlink/?LinkID=296465)||
+|Backup the tenant database.|[See...](/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server)||
 |Uninstall all V1 extensions.|[See...](/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp)||
 |Dismount the tenant from the old server instance.|[See...](/powershell/module/microsoft.dynamics.nav.management/dismount-navtenant)||
 

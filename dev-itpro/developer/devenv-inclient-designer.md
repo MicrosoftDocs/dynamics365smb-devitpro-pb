@@ -3,11 +3,11 @@ title: "Using Designer"
 description: "Description of how Designer works and is integrated with the AL development experience."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
@@ -17,10 +17,10 @@ ms.author: solsen
 When developing extensions in the AL development environment, you have a wide range of possibilities. Designer in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] complements the development experience in Visual Studio Code. It provides an easy and convenient way to make immediate changes to your design by dragging and dropping the components on the page.  
 
 > [!IMPORTANT]  
-> Designer is currently only available from a [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] sandbox.<br> Every time you start designing, you're effectively creating a new extension. Your changes are *immediately visible to other users*.<br> Designer *cannot be used by multiple users at the same time* in sandboxes.
+> Designer is currently only available from a [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] sandbox.<br> Every time you start designing, you're effectively creating a new extension. Your changes are *immediately visible to other users* in the sandbox environment.<br> Designer *cannot be used by multiple users at the same time* in sandboxes.  
 
 > [!NOTE]  
-> Extensions created using Designer are discarded when an environment is upgraded or moved to another node. See [Sandbox Environments for Dynamics 365 Business Central Development](devenv-sandbox-overview.md) for more information.
+> Extensions created using Designer are removed when the sandbox environment is updated or relocated within our service. Thus, you should not rely on using the sandbox environment as a source control for these Designer extensions, but remember to frequently download and backup the Designer extension source. For more information, see [Production and Sandbox Environments](../administration/environment-types.md).
 
 ## Designer capabilities
 
@@ -51,13 +51,13 @@ Here is a quick overview of capabilities in **Designer**:
 
 ## Start and stop designing
 
-In the [!INCLUDE[prodshort](includes/prodshort.md)] client, you start Designer by choosing ![Settings icon](media/settings_icon_small.png) **Designer** in the top-right corner of any page that you want to make modifications to, and start designing using drag-and-drop components. In Visual Studio Code, you can start Designer by using the **F6** shortcut, which launches a browser that opens the [!INCLUDE[prodshort](includes/prodshort.md)] client in Designer.
+In the [!INCLUDE[prod_short](includes/prod_short.md)] client, you start Designer by choosing ![Settings icon.](media/settings_icon_small.png) **Designer** in the top-right corner of any page that you want to make modifications to, and start designing using drag-and-drop components. In Visual Studio Code, you can start Designer by using the **F6** shortcut, which launches a browser that opens the [!INCLUDE[prod_short](includes/prod_short.md)] client in Designer.
 
 After you are done with the changes, choose **Stop Designing**. You can name the extension and download code to save it for the tenant. Once you're done, the extension is automatically installed. If you choose to download the code, the project will be downloaded as a .zip folder<!--, where the `app.json` file has the main extension as a dependency-->. You extract the files and open the folder from Visual Studio Code, where you can deploy it as you would do with any other extension.
 
 If you choose not to download the code at the end, you can still pull the code using the **Alt+F6** shortcut. You can also uninstall the extension from the **Extension Management** page or even download the source from there.
 
-![Work with Designer](media/designer.gif)
+![Work with Designer.](media/designer.gif)
 
 ## Drag-and-drop components
 
@@ -67,13 +67,13 @@ In Designer, you design and modify the current page. You can display existing ta
 
 To add a field or column to a page, in the banner, choose **More**, and then choose **Field**. A pane to the right appears that lets you add fields. Here you can see all of the table fields that are available for the specific page. The table fields displayed are based on the underlying table or tables. The field can have a status of **Placed**, which means that the field already exists on the page. A status of **Ready** means that the field doesn't already exist on the page. To add a field, drag and drop it to the wanted location. 
 
-If you want to remove a field or column, select the arrowhead indicator ![arrowhead indicator left](media/designer_arrow_left.png) or ![arrowhead indicator down](media/designer_arrow_down.png) on the component, and then choose **Remove**.
+If you want to remove a field or column, select the arrowhead indicator ![arrowhead indicator left.](media/designer_arrow_left.png) or ![arrowhead indicator down](media/designer_arrow_down.png) on the component, and then choose **Remove**.
 
 You can edit the caption of a FastTab for a group of fields by selecting the caption and start writing. A caption should provide a short and clear description.
 
 ## Setting the freeze pane
 
-**Set freeze pane** locks one or more columns to the left, even when you scroll horizontally. You can set the freeze pane, by selecting the arrowhead indicator ![arrowhead indicator left](media/designer_arrow_left.png) or ![arrowhead indicator down](media/designer_arrow_down.png) of the column that you want as the last column of the freeze pane, and then choose **Set Freeze Pane**. If you want to set the freeze pane back to its original designed location, select the arrowhead indicator ![arrowhead indicator left](media/designer_arrow_left.png) or ![arrowhead indicator down](media/designer_arrow_down.png) for the current freeze pane column, and then choose **Clear Freeze Pane**.
+**Set freeze pane** locks one or more columns to the left, even when you scroll horizontally. You can set the freeze pane, by selecting the arrowhead indicator ![arrowhead indicator left.](media/designer_arrow_left.png) or ![arrowhead indicator down](media/designer_arrow_down.png) of the column that you want as the last column of the freeze pane, and then choose **Set Freeze Pane**. If you want to set the freeze pane back to its original designed location, select the arrowhead indicator ![arrowhead indicator left](media/designer_arrow_left.png) or ![arrowhead indicator down](media/designer_arrow_down.png) for the current freeze pane column, and then choose **Clear Freeze Pane**.
 
 ## Setting the Importance on a field
 
@@ -91,16 +91,16 @@ You can use Designer to set the [QuickEntry property](properties/devenv-quickent
 
 To set the QuickEntry property from Designer, select the field or column heading, and then choose either **Include in Quick Entry** (sets the **QuickEntry** property to `true`) or **Exclude from Quick Entry** (sets the **QuickEntry** property to `false`).  
 
-For more information about Quick Entry, from a user perspective, see [Accelerating Data Entry Using Quick Entry](/dynamics365/business-central/ui-enter-data#QuickEntry) in the [!INCLUDE[prodshort](includes/prodshort.md)] Application Help.
+For more information about Quick Entry, from a user perspective, see [Accelerating Data Entry Using Quick Entry](/dynamics365/business-central/ui-enter-data#QuickEntry) in the [!INCLUDE[prod_short](includes/prod_short.md)] Application Help.
 
 ## Working with the Navigation Menu and Navigation Bar
 
-Designer lets you add actions that link to pages and reports in the navigation bar using the bookmark icon ![bookmark icon](media/ui_bookmark_icon.png "bookmark icon action bar") on the target page or report. The bookmark icon is also available in the Tell Me window.
+Designer lets you add actions that link to pages and reports in the navigation bar using the bookmark icon ![bookmark icon.](media/ui_bookmark_icon.png "bookmark icon action bar") on the target page or report. The bookmark icon is also available in the Tell Me window.
 
 > [!NOTE]
 > Bookmarking is only available for pages and reports that are discoverable from Tell Me. For more information on how to make pages and reports searchable, see [Adding Pages and Reports to Tell me](devenv-al-menusuite-functionality.md).
 
-This allows the user to efficiently create multiple links and build up the set of important or commonly used links for a specific profile in the Role Center navigation bar. For more information about bookmarking, see [Bookmark a Link to a Page or Report on Your Role Center](/dynamics365/business-central/ui-bookmarks) in the [!INCLUDE[prodshort](includes/prodshort.md)] Application Help.
+This allows the user to efficiently create multiple links and build up the set of important or commonly used links for a specific profile in the Role Center navigation bar. For more information about bookmarking, see [Bookmark a Link to a Page or Report on Your Role Center](/dynamics365/business-central/ui-bookmarks) in the [!INCLUDE[prod_short](includes/prod_short.md)] Application Help.
 
 You can also move actions to reorder them in the navigation bar, or move them into groups or subgroups to design the Navigation Menu.
 
@@ -114,7 +114,7 @@ The extension generated when the user hides or shows a part overrides the [Visib
 
 Designer lets you make changes to the actions that are defined in the action bar of a page. You can move, remove, hide, and show individual actions or action groups.  
 
-![Designer action bar](media/designer-action-bar.png "Designer action bar")
+![Designer action bar.](media/designer-action-bar.png "Designer action bar")
 
 > [!NOTE]
 > You cannot modify actions that are defined on pages that are shown in parts, such as in FactBoxes or embedded lists. 

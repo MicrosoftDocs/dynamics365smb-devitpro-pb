@@ -1,24 +1,27 @@
 ---
-title: "WebServiceActionContext.GetObjectType Method"
+title: "WebServiceActionContext.GetObjectType() Method"
+description: "Gets the object type."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# WebServiceActionContext.GetObjectType Method
+# WebServiceActionContext.GetObjectType() Method
+> **Version**: _Available or changed with runtime version 2.0._
+
 Gets the object type.
 
 
 ## Syntax
-```
+```AL
 ObjectType :=   WebServiceActionContext.GetObjectType()
 ```
 
@@ -30,7 +33,7 @@ An instance of the [WebServiceActionContext](webserviceactioncontext-data-type.m
 ## Return Value
 *ObjectType*  
 &emsp;Type: [ObjectType](../objecttype/objecttype-option.md)  
-The object type.  
+The object type.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

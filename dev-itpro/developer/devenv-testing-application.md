@@ -2,33 +2,33 @@
 title: "Testing the Application Overview"
 description: Leant about how to use automated tests in Business Central
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 
 # Testing the Application Overview
 
-Before you release your [!INCLUDE[prodshort](includes/prodshort.md)] application, you should test its functionality to ensure it works as expected. Testing is an iterative process. It's important to create repeatable tests, and helpful to create tests that can be automated. This article describes the features in [!INCLUDE[prodshort](includes/prodshort.md)] that help you test the business logic in your application, and it provides some best practices for testing.
+Before you release your [!INCLUDE[prod_short](includes/prod_short.md)] application, you should test its functionality to ensure it works as expected. Testing is an iterative process. It's important to create repeatable tests, and helpful to create tests that can be automated. This article describes the features in [!INCLUDE[prod_short](includes/prod_short.md)] that help you test the business logic in your application, and it provides some best practices for testing.
 
 For a walkthrough concerning advanced extension testing, see [Testing the Advanced Extension Sample](devenv-extension-advanced-example-test.md).
 
-[!INCLUDE[prodshort](includes/prodshort.md)] includes the below features to help you test your application.
+[!INCLUDE[prod_short](includes/prod_short.md)] includes the below features to help you test your application.
 
 ## Environment testing support and limitations
 
-The extent to which you can run automated tests will depend on your [!INCLUDE[prodshort](includes/prodshort.md)] solution type and environment. The following table gives an overview.
+The extent to which you can run automated tests will depend on your [!INCLUDE[prod_short](includes/prod_short.md)] solution type and environment. The following table gives an overview.
 
-|[!INCLUDE[prodshort](includes/prodshort.md)] solution|Environment|Testing allowed|More details|
+|[!INCLUDE[prod_short](includes/prod_short.md)] solution|Environment|Testing allowed|More details|
 |-----------------------------------------------------|-----------|-------|----|
 |Online |Production||Running tests isn't allowed because it might have an adverse effect on your business. Testing can incidentally invoke external systems, like CDS, PayPal, and web hook subscriptions. Invoking these systems may slow down the solution for other users or cause data corruption.|
-||Sandbox|![check mark for feature](media/check.png)|You can use a sandbox environment to run tests manually to verify functionality on an environment. Running a large number of tests or tests that take a long time (more than 15 minutes per test method) isn't allowed. It's recommended that you don't run tests more that one or two hours a day.|
-|On-premises|Production|![check mark for feature](media/check.png)|For Business Central on-premises, running automated tests is only possible with a Partner license or a license that includes the Application Builder module.<br /><br />You can disable the ability to run tests by turning off **Enable Test Automation** (TestAutomationEnabled) on the [!INCLUDE[server](includes/server.md)] instance. For more information, see [Configuring Business Central Server - General Settings](../administration/configure-server-instance.md#Development).|
-||Container-based development environment|![check mark for feature](media/check.png)|This setup should be the default environment for running large number of tests or setting up CI/CD gates. For more information, see [Running a Container-Based Development Environment](devenv-running-container-development.md) or [Running Tests In Containers](https://freddysblog.com/2019/10/22/running-tests-in-containers-2).|
+||Sandbox|![check mark for feature.](media/check.png)|You can use a sandbox environment to run tests manually to verify functionality on an environment. Running a large number of tests or tests that take a long time (more than 15 minutes per test method) isn't allowed. It's recommended that you don't run tests more that one or two hours a day.|
+|On-premises|Production|![check mark for feature.](media/check.png)|For Business Central on-premises, running automated tests is only possible with a Partner license or a license that includes the Application Builder module.<br /><br />You can disable the ability to run tests by turning off **Enable Test Automation** (TestAutomationEnabled) on the [!INCLUDE[server](includes/server.md)] instance. For more information, see [Configuring Business Central Server - General Settings](../administration/configure-server-instance.md#Development).|
+||Container-based development environment|![check mark for feature.](media/check.png)|This setup should be the default environment for running large number of tests or setting up CI/CD gates. For more information, see [Running a Container-Based Development Environment](devenv-running-container-development.md) or [Running Tests In Containers](https://freddysblog.com/2019/10/22/running-tests-in-containers-2).|
 
 ## Test Codeunits and Test Methods 
 
@@ -46,11 +46,11 @@ Test runner codeunits are codeunits that have the [SubType Property](properties/
 
 Test runner codeunits include the following triggers:  
 
--   [OnRun Trigger](triggers/devenv-onrun-trigger.md) 
+-   [OnRun Trigger](triggers-auto/codeunit/devenv-onrun-codeunit-trigger.md) 
 
--   [OnBeforeTestRun Trigger](triggers/devenv-OnBeforeTestRun-Trigger.md)  
+-   [OnBeforeTestRun Trigger](triggers-auto/codeunit/devenv-onbeforetestrun-codeunit-trigger.md)  
 
--   [OnAfterTestRun Trigger](triggers/devenv-OnAfterTestRun-Trigger.md)  
+-   [OnAfterTestRun Trigger](triggers-auto/codeunit/devenv-onaftertestrun-codeunit-trigger.md)  
 
  In the **OnRun** trigger you enter the code to run the codeunits. It runs when you execute the codeunit and before the test methods run. You can use the **OnBeforeTestRun** and the **OnAfterTestRun** triggers to do preprocessing and postprocessing, such as initialization or logging test results.  
 
@@ -72,7 +72,7 @@ There are two types of test pages:
 You access the page's fields and properties or a field by using the dot notation. You open and close test pages, do actions on the test page, and navigate around the test page by using AL methods. For more information, see [Testing Pages](devenv-testing-pages.md).
 
 ## UI Handlers
-To create tests that can be automated, you must handle cases when user interaction is requested by code that is being tested. UI handlers run instead of the requested UI. UI handlers provide the same exit state as the UI. For example, a method that has the [ConfirmHandler Attribute](methods/devenv-confirmhandler-attribute.md) set handles [CONFIRM Method](methods-auto/dialog/dialog-confirm-method.md) calls. If code that is being tested calls the [CONFIRM Method](methods-auto/dialog/dialog-confirm-method.md), then the **ConfirmHandler** method is called instead of the [CONFIRM Method](methods-auto/dialog/dialog-confirm-method.md). You write code in the **ConfirmHandler** method to verify that the expected question is displayed by the [CONFIRM Method](methods-auto/dialog/dialog-confirm-method.md). You write AL code to return the relevant reply. 
+To create tests that can be automated, you must handle cases when user interaction is requested by code that is being tested. UI handlers run instead of the requested UI. UI handlers provide the same exit state as the UI. For example, a method that has the [ConfirmHandler Attribute](methods/devenv-confirmhandler-attribute.md) set handles [Confirm Method](methods-auto/dialog/dialog-confirm-method.md) calls. If code that is being tested calls the [Confirm Method](methods-auto/dialog/dialog-confirm-method.md), then the **ConfirmHandler** method is called instead of the [Confirm Method](methods-auto/dialog/dialog-confirm-method.md). You write code in the **ConfirmHandler** method to verify that the expected question is displayed by the [Confirm Method](methods-auto/dialog/dialog-confirm-method.md). You write AL code to return the relevant reply. 
 
 You create a specific handler for each page that you want to handle and a specific report handler for each report that you want to handle.  
 
@@ -83,7 +83,7 @@ For more information, see [Creating Handler Methods](devenv-creating-handler-met
 ## ASSERTERROR Keyword
 You use `AssertError` statements in test methods to test how your application behaves under failing conditions. These statements are called positive and negative tests. The `AssertError` keyword specifies that an error is expected at run time in the statement that follows the `AssertError` keyword.
 
-If a simple or compound statement that follows the `AssertError` keyword causes an error, then execution successfully continues to the next statement in the test method. You can get the error text of the statement by using the [GETLASTERRORTEXT Method](methods-auto/system/system-getlasterrortext-method.md).
+If a simple or compound statement that follows the `AssertError` keyword causes an error, then execution successfully continues to the next statement in the test method. You can get the error text of the statement by using the [GETLASTERRORTEXT Method](methods-auto/system/system-getlasterrortext--method.md).
 
 If a statement that follows the `AssertError` keyword doesn't cause an error, then the `AssertError` statement causes the following error and the test method that is running produces a FAILURE result.
 
@@ -136,7 +136,7 @@ We recommend the following best practices for designing your application tests:
 <!-- TO DO: Check this-->
 - Only use hardcoded values in tests when you really need it. For all other data, consider using random data.
 
-    For example, you want to test the `Ext. Doc. No. Mandatory` field in the `Purchases & Payables Setup` table. To do this, you need to create and post typical purchase invoice. The typical purchase invoice line specifies an amount. For most tests, it doesn't matter exactly what amount. For inspiration, see the use of the **GenerateRandomCode** method in the tests that are included in the **TestToolkit** folder on the [!INCLUDE[prodshort](includes/prodshort.md)] product media. For more information, see [Random Test Data](devenv-random-test-data.md). 
+    For example, you want to test the `Ext. Doc. No. Mandatory` field in the `Purchases & Payables Setup` table. To do this, you need to create and post typical purchase invoice. The typical purchase invoice line specifies an amount. For most tests, it doesn't matter exactly what amount. For inspiration, see the use of the **GenerateRandomCode** method in the tests that are included in the **TestToolkit** folder on the [!INCLUDE[prod_short](includes/prod_short.md)] product media. For more information, see [Random Test Data](devenv-random-test-data.md). 
 
     > [!TIP]
     > Use the [Any module](https://github.com/microsoft/ALAppExtensions/tree/master/Modules/DevTools/TestFramework/TestLibraries/Any) in the Microsoft/ALAppExtensions GitHub repo to generate pseudo-random values during test set-up. This module generates the same set of numbers, allowing you to reproduce test failures.

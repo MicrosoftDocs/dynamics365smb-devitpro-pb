@@ -1,24 +1,27 @@
 ---
-title: "Debugger.DebuggingSessionID Method"
+title: "Debugger.DebuggingSessionID() Method"
+description: "Gets the ID of the session that the debugger is currently attached to."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Debugger.DebuggingSessionID Method
+# Debugger.DebuggingSessionID() Method
+> **Version**: _Available or changed with runtime version 1.0 until version 4.0 where it was deprecated._
+
 Gets the ID of the session that the debugger is currently attached to.
 
 
 ## Syntax
-```
+```AL
 SessionID :=   Debugger.DebuggingSessionID()
 ```
 
@@ -26,7 +29,7 @@ SessionID :=   Debugger.DebuggingSessionID()
 ## Return Value
 *SessionID*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-  
+
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

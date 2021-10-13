@@ -1,11 +1,12 @@
 ---
 title: "Progress Windows, Message, Error, and Confirm Methods"
+description: "Using specialized methods in AL for Business Central to display messages and gather input from the user."
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -72,7 +73,7 @@ Message(Text001,"No.",SalesHeader2."No.");
 
 ## Error method  
 
-The [Error Method \(Dialog\)](methods-auto/dialog/dialog-Error-Method.md) is very similar to the Message method except that when the user has acknowledged the Message from an Error method, execution ends. The Error method is also similar to the FieldError method. For more information, see [CalcFields, CalcSums, FieldError, FieldName, Init, TestField, and Validate Methods](devenv-CALCFIELDS-CALCSUMS-FIELDError-FIELDNAME-INIT-TESTFIELD-and-VALIDATE-Methods.md).  
+The [Error Method \(Dialog\)](methods-auto/dialog/dialog-error-errorinfo-method.md) is very similar to the Message method except that when the user has acknowledged the Message from an Error method, execution ends. The Error method is also similar to the FieldError method. For more information, see [CalcFields, CalcSums, FieldError, FieldName, Init, TestField, and Validate Methods](devenv-CALCFIELDS-CALCSUMS-FIELDError-FIELDNAME-INIT-TESTFIELD-and-VALIDATE-Methods.md).  
 
 The Error method has the following syntax.  
 

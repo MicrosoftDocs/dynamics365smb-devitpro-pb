@@ -3,11 +3,11 @@ title: "Consulting"
 description: ""
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
@@ -48,4 +48,4 @@ To learn more about Microsoft AppSource consulting services offerings select the
 - [AppSource Consulting Offerings](https://appsource.microsoft.com/marketplace/consulting-services?country=US&page=1)  
 - [Partner Eligibility](https://smp-cdn-prod.azureedge.net/documents/Microsoft%20AppSource%20Partner%20Listing%20Guidelines.pdf)  
 - [Partner Nomination Form](https://appsource.microsoft.com/partners/list-consulting-service)  
-- [Business Central Learning Catalog](https://go.microsoft.com/fwlink/?linkid=2002101)  
+- [Business Central Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-catalog)

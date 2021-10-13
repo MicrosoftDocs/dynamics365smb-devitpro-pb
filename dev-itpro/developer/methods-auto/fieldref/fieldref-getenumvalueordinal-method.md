@@ -1,24 +1,27 @@
 ---
-title: "FieldRef.GetEnumValueOrdinal Method"
+title: "FieldRef.GetEnumValueOrdinal(Integer) Method"
+description: "Gets the Enum value (or Option member) ordinal value from the Enum metadata for the field that is currently selected."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# FieldRef.GetEnumValueOrdinal Method
+# FieldRef.GetEnumValueOrdinal(Integer) Method
+> **Version**: _Available or changed with runtime version 4.0._
+
 Gets the Enum value (or Option member) ordinal value from the Enum metadata for the field that is currently selected.
 
 
 ## Syntax
-```
+```AL
 The Enum value ordinal value :=   FieldRef.GetEnumValueOrdinal(Index: Integer)
 ```
 ## Parameters
@@ -34,7 +37,7 @@ The index in the list of Enum ordinal values to get the Enum value (or Option me
 ## Return Value
 *The Enum value ordinal value*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-The ordinal value.  
+The ordinal value.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

@@ -1,24 +1,27 @@
 ---
-title: "Blob.Export Method"
+title: "Blob.Export(String) Method"
+description: "Exports a binary large object (BLOB) to a file."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 08/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Blob.Export Method
+# Blob.Export(String) Method
+> **Version**: _Available or changed with runtime version 1.0 until version 1.0 where it was deprecated for the following reason: "This method will only be available for OnPrem in a future release."_
+
 Exports a binary large object (BLOB) to a file.
 
 
 ## Syntax
-```
+```AL
 [ExportName := ]  Blob.Export(Name: String)
 ```
 ## Parameters
@@ -36,9 +39,9 @@ The path and name of the BLOB that you want to export. When you enter the path, 
 
 
 ## Return Value
-*ExportName*  
+*[Optional] ExportName*  
 &emsp;Type: [String](../string/string-data-type.md)  
-The name of the created file.  
+The name of the created file.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

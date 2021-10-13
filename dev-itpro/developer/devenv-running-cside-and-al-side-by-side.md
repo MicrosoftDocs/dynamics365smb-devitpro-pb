@@ -3,17 +3,17 @@ title: "Running C/SIDE and AL Side-by-Side"
 description: "Description of how you can run both development environments side-by-side."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/13/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
 # Running C/SIDE and AL Side-by-Side
-[!INCLUDE[prodshort](../includes/prodshort.md)] on-premises supports development using both C/SIDE and AL, as well as Designer side-by-side. When new objects are added or changed in C/SIDE these changes must be reflected in the symbol download in Visual Studio Code using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]. To enable this reflection, a command and argument called `generatesymbolreference` has been added to finsql.exe and you can run it as illustrated below. 
+[!INCLUDE[prod_short](../includes/prod_short.md)] on-premises supports development using both C/SIDE and AL, as well as Designer side-by-side. When new objects are added or changed in C/SIDE these changes must be reflected in the symbol download in Visual Studio Code using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]. To enable this reflection, a command and argument called `generatesymbolreference` has been added to finsql.exe and you can run it as illustrated below. 
 
 ## Get started generating symbols and compiling all objects
 
@@ -43,9 +43,10 @@ This is a lengthy operation. When you run the command, the console returns to an
 When the process ends, a file named **navcommandresult.txt** is saved to the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)] installation folder. If the command succeeded, the file will contain text like `[0] [06/12/17 14:36:17] The command completed successfully in '177' seconds.` If the command failed, another file named **naverrorlog.txt** will be generated. This file contains details about the error(s) that occurred.
 
 > [!NOTE]
-> The symbol references are stored in the **Symbol Reference** column of the **Object Metadata** table of the database. For on-premises installations, if you experience problems with generating symbols, check the information in the naverrorlog.txt file.
+> The symbol references are stored in the **Symbol Reference** column of the **Object Metadata** table of the database. For on-premises installations, if you experience problems with generating symbols, check the information in the naverrorlog.txt file. It is also important that the `Filter` parameter applied to `generatesymbolreference` command must refer to **Object Metadata** fields such as, for example, **Object Type** or **Object ID**.
 
 ## Continuously generate symbols each time you compile objects in C/SIDE
+
 The `generatesymbolreference` flag enables incremental symbol generation through the UI or through the compile command passed on the command line.
 To update the symbols for a set of objects from the UI, start C/SIDE with the `generatesymbolreference` flag, make any desired modifications to your application objects, and compile them.
 
@@ -64,9 +65,9 @@ This flag is also a part of the `Compile-NavApplicationObject` PowerShell comman
 
 
 ## Business Central on-premises server setting
-In addition to the symbol generation setting you have chosen above, you must enable the [!INCLUDE[prodshort](../includes/prodshort.md)] on-premises server setting. 
+In addition to the symbol generation setting you have chosen above, you must enable the [!INCLUDE[prod_short](../includes/prod_short.md)] on-premises server setting. 
 
-1. Go to **[!INCLUDE[prodshort](../includes/prodshort.md)] Administration**.
+1. Go to **[!INCLUDE[prod_short](../includes/prod_short.md)] Administration**.
 2. Scroll to the **Development** tab and expand the tab.
 3. Choose the **Edit** button, and then select the **Enable loading application symbols at server startup** checkbox.
 

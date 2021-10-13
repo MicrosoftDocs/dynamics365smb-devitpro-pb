@@ -2,13 +2,12 @@
 title: "Array Methods"
 description: "Methods of the type array in AL for Business Central"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: dynamics365-business-central
-ms.assetid: c4141c46-ce87-480a-98eb-390a0fe0573b
 author: SusanneWindfeldPedersen
 ---
 
@@ -23,6 +22,7 @@ The length of a dimension determines the valid range of indices for that dimensi
 ## Syntax 
 
 The syntax for declaring an array of a specific type is the following:
+
 ```AL
 Array [Dimension] of Type;
 ```
@@ -32,6 +32,7 @@ The `Dimension` is a comma-delimited list of integer literals greater than 0, wh
 The `Type` is the element type of the array.
 
 ## Code example 
+
 The following code sample shows the declaration of an array with a simple element type.
 
 ```AL
@@ -55,13 +56,24 @@ ArrayOfDotNetVariables: Array [10] of DotNet String;
 ```
 
 ## Methods
+
 The following AL methods for arrays are available:  
 
-[ArrayLen Method](../methods-auto/system/system-arraylen-method.md) 
-
-[CompressArray Method](../methods-auto/system/system-compressarray-method.md)
-
+[ArrayLen Method](../methods-auto/system/system-arraylen-method.md)  
+[CompressArray Method](../methods-auto/system/system-compressarray-method.md)  
 [CopyArray Method](../methods-auto/system/system-copyarray-method.md)
+
+## Array of temporary records
+
+The following code sample shows the declaration of an array of temporary Item records:
+
+```AL
+ItemRecArrayTemp: Array[2] of Record Item temporary;
+```
+
+In this case, each element of the array will contain a temporary Item record referencing the same temporary table, meaning that an insert into `ItemRecArrayTemp[0]` is also reflected in `ItemRecArrayTemp[1]`.
+
+This is the same behavior as using [Copy(RecordRef [, Boolean])](../methods-auto/recordref/recordref-copy-recordref-boolean-method.md) with the `ShareTable` parameter set to `true`.
 
 ## See Also  
 

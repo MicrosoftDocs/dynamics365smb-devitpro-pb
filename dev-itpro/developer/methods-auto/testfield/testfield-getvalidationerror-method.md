@@ -1,24 +1,27 @@
 ---
-title: "TestField.GetValidationError Method"
+title: "TestField.GetValidationError([Integer]) Method"
+description: "Gets the validation error that occurred on a test page."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# TestField.GetValidationError Method
+# TestField.GetValidationError([Integer]) Method
+> **Version**: _Available or changed with runtime version 1.0._
+
 Gets the validation error that occurred on a test page.
 
 
 ## Syntax
-```
+```AL
 Result :=   TestField.GetValidationError([Index: Integer])
 ```
 ## Parameters
@@ -26,7 +29,7 @@ Result :=   TestField.GetValidationError([Index: Integer])
 &emsp;Type: [TestField](testfield-data-type.md)  
 An instance of the [TestField](testfield-data-type.md) data type.  
 
-*Index*  
+*[Optional] Index*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The index of the validation error that occurred on the test page.  
 
@@ -34,7 +37,7 @@ The index of the validation error that occurred on the test page.
 ## Return Value
 *Result*  
 &emsp;Type: [String](../string/string-data-type.md)  
-The validation error that occurred on a test page.  
+The validation error that occurred on a test page.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

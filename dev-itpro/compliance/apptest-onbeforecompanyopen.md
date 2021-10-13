@@ -3,16 +3,17 @@ title: "Replacing OnBeforeCompanyOpen and OnAfterCompanyOpen"
 description: Describes how to replace OnBeforeCompanyOpen and OnAfterCompanyOpen events.
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
-ms.author: rweigel
+ms.author: freddyk
 ---
 
 # Replacing OnBeforeCompanyOpen and OnAfterCompanyOpen
+
 To improve the login time for [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)], extensions should no longer use the **OnBeforeCompanyOpen** and **OnAfterCompanyOpen** events. Following are some recommended patterns to use in place of these events.
 
 - Move the code to the actual usage of the extension.

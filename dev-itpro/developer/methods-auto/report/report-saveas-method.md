@@ -1,24 +1,27 @@
 ---
-title: "Report.SaveAs Method"
+title: "Report.SaveAs(Integer, String, ReportFormat, var OutStream [, RecordRef]) Method"
+description: "Runs a specific report without a request page and saves the report as a PDF, Excel, Word, HTML, or XML file."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Report.SaveAs Method
+# Report.SaveAs(Integer, String, ReportFormat, var OutStream [, RecordRef]) Method
+> **Version**: _Available or changed with runtime version 1.0._
+
 Runs a specific report without a request page and saves the report as a PDF, Excel, Word, HTML, or XML file. Instead of using the request page to obtain parameters at runtime, the method gets the parameter values as an input parameter string, typically from the return value of a RUNREQUESTPAGE method call.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  Report.SaveAs(Number: Integer, Parameters: String, Format: ReportFormat, var OutStream: OutStream [, RecordRef: RecordRef])
 ```
 ## Parameters
@@ -38,23 +41,23 @@ The type of file to save the report as. The following options are supported: Pdf
 &emsp;Type: [OutStream](../outstream/outstream-data-type.md)  
 The stream to which to write a report.
         
-*RecordRef*  
+*[Optional] RecordRef*  
 &emsp;Type: [RecordRef](../recordref/recordref-data-type.md)  
 The RecordRef that refers to the table in which you want to find a record.  
 
 
 ## Return Value
-*Ok*  
+*[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+**true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- You typically use this method together with the [RUNREQUESTPAGE Method](../../methods-auto/report/report-runrequestpage-method.md) method. The RUNREQUESTPAGE method runs a report request page without actually running the report, but instead, returns the parameters that are set on the request page as a string. You can then call the SAVEAS method to get the parameter string and save the report to a file of the specified format.  
+ You typically use this method together with the [RunRequestPage Method](../../methods-auto/report/report-runrequestpage-method.md) method. The RunRequestPage method runs a report request page without actually running the report, but instead, returns the parameters that are set on the request page as a string. You can then call the SaveAs method to get the parameter string and save the report to a file of the specified format.  
 
- For a simple example that illustrates how to use the SAVEAS method, see example in the [RUNREQUESTPAGE Method](../../methods-auto/report/report-runrequestpage-method.md) method topic. 
+ For a simple example that illustrates how to use the SaveAs method, see example in the [RunRequestPage Method](../../methods-auto/report/report-runrequestpage-method.md) method topic. 
 
 
 > [!NOTE]  

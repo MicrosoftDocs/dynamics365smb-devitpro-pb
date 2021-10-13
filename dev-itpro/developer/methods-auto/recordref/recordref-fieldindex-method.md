@@ -1,24 +1,27 @@
 ---
-title: "RecordRef.FieldIndex Method"
+title: "RecordRef.FieldIndex(Integer) Method"
+description: "Gets the FieldRef of the field that has the specified index in the table that is referred to by the RecordRef."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# RecordRef.FieldIndex Method
+# RecordRef.FieldIndex(Integer) Method
+> **Version**: _Available or changed with runtime version 1.0._
+
 Gets the FieldRef of the field that has the specified index in the table that is referred to by the RecordRef.
 
 
 ## Syntax
-```
+```AL
 Field :=   RecordRef.FieldIndex(Index: Integer)
 ```
 ## Parameters
@@ -34,7 +37,7 @@ The index of the field.
 ## Return Value
 *Field*  
 &emsp;Type: [FieldRef](../fieldref/fieldref-data-type.md)  
-The FieldRef of the field that has the specified index.  
+The FieldRef of the field that has the specified index.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -45,7 +48,8 @@ The FieldRef of the field that has the specified index.
  If the index is out of the range supplied or if no table is selected, then the method returns an error.  
 
 ## Example  
-```  
+
+```al
 var
     SalesInvHdr: RecordRef;
     FldRef: FieldRef;
@@ -54,11 +58,11 @@ var
     Text002: Label 'Index 2: %2\\';
     Text003: Label 'Index 3: %3';
 begin
-    SalesInvHdr.OPEN(112);  
-    FldRef1 := SalesInvHdr.FIELDINDEX(1);  
-    FldRef2 := SalesInvHdr.FIELDINDEX(2);  
-    FldRef3 := SalesInvHdr.FIELDINDEX(3);  
-    MESSAGE(Text001 + Text002 + Text003, FldRef1.CAPTION, FldRef2.CAPTION, FldRef3.CAPTION);  
+    SalesInvHdr.Open(112);  
+    FldRef1 := SalesInvHdr.FieldIndex(1);  
+    FldRef2 := SalesInvHdr.FieldIndex(2);  
+    FldRef3 := SalesInvHdr.FieldIndex(3);  
+    Message(Text001 + Text002 + Text003, FldRef1.Caption, FldRef2.Caption, FldRef3.Caption);  
 end;
 ```  
 

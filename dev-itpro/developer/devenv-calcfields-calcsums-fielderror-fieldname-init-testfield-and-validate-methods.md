@@ -2,11 +2,11 @@
 title: "Field Calculation Methods"
 description: "CalcFields, CalcSums, FieldError, FieldName, Init, TestField, and Validate Methods"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.assetid: 22168a6c-9034-4503-bc82-1cae9497762d
 caps.latest.revision: 9

@@ -2,20 +2,20 @@
 title: "Technical Upgrade from Version 15 to Version 17" 
 description: Describes how to do a technical upgrade from Business Central 15 to 17
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
 ms.service: "dynamics365-business-central"
 ---
 # Technical Upgrade from Version 15 to Version 17
 
-Use this process to upgrade from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 release wave 2 (version 15) to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2020 release wave 1 platform (version 17). This process won't upgrade the application to the latest version.
+Use this process to upgrade from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2019 release wave 2 (version 15) to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 1 platform (version 17). This process won't upgrade the application to the latest version.
 
- ![Upgrade on customized Business Central application](../developer/media/bc15-to-17-technical-upgrade-unmodified-app.png "Upgrade on customize Business Central application")   
+ ![Upgrade on customized Business Central application.](../developer/media/bc15-to-17-technical-upgrade-unmodified-app.png "Upgrade on customize Business Central application")   
 
 #### Single-tenant and multitenant deployments
 
@@ -23,13 +23,13 @@ The process for upgrading is similar for a single-tenant and multitenant deploym
 
 #### Considerations
 
-In version 17, a number of tables have been deprecated and replaced by new tables compared to version 15. For a list of these tables and the corresponding new tables, see [Deprecated Tables](deprecated-tables.md). Code that uses the deprecated table or tables, must be rewritten to use the tables. In this article, this work is done under Task 2.
+In version 17, a number of tables have been deprecated and replaced by new tables compared to version 15. For a list of these tables and the corresponding new tables, see [Deprecated Tables](deprecated-tables.md). Code that uses the deprecated tables, must be rewritten to use the new tables. In this article, this work is done under Task 2.
 
 ## Prerequisites
 
 1. Your version 15 platform is compatible with version 17.
 
-    There are several updates for version 15. The updates have a compatible version 17 update. For more information, see [[!INCLUDE[prodlong](../developer/includes/prodlong.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md). For example, if your solution is currently running 15.11, you can't upgrade to 17.0. You must wait until 17.1 is available.  
+    There are several updates for version 15. The updates have a compatible version 17 update. For more information, see [[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md). For example, if your solution is currently running 15.11, you can't upgrade to 17.0. You must wait until 17.1 is available.  
 
 2. Disable data encryption.
 
@@ -150,6 +150,7 @@ This task runs a technical upgrade on the application database. A technical upgr
     DatabaseLocation    :
     Collation           :
     ```
+[!INCLUDE[convert_azure_sql_db_timeout](../developer/includes/convert_azure_sql_db_timeout.md)]
 
 ## Task 5: Configure version 17 server
 
@@ -278,7 +279,7 @@ The [!INCLUDE[server](../developer/includes/server.md)] installation includes ne
 
 To upgrade the control add-ins, do the following steps:
 
-1. Open the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client.
+1. Open the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client.
 2. Search for and open the **Control Add-ins** page.
 3. Choose **Actions** > **Control Add-in Resource** > **Import**.
 4. Locate and select the .zip file for the control add-in and choose **Open**.

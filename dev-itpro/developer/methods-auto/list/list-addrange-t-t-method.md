@@ -1,24 +1,27 @@
 ---
-title: "List.AddRange Method"
+title: "List.AddRange(T [, T,...]) Method"
+description: "Adds the elements of the specified collection to the end of the list."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# List.AddRange Method
+# List.AddRange(T [, T,...]) Method
+> **Version**: _Available or changed with runtime version 1.0._
+
 Adds the elements of the specified collection to the end of the list.
 
 
 ## Syntax
-```
+```AL
  List.AddRange(Value: T [, Values: T,...])
 ```
 ## Parameters
@@ -29,7 +32,7 @@ An instance of the [List](list-data-type.md) data type.
 *Value*  
 &emsp;Type: [T](list-data-type.md)  
 The value to be added to the end of the List.  
-*Values*  
+*[Optional] Values*  
 &emsp;Type: [T](list-data-type.md)  
 The collection whose elements should be added to the end of the List.  
 

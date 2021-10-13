@@ -3,12 +3,12 @@ title: Authorization Trace | Microsoft Docs
 description: Learn about the Authorization telemetry in Business Central  
 author: jswymer
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.author: jswymer
 ---
 
@@ -49,13 +49,13 @@ Occurs when a user has been successfully authorized.
 |authorizationStatus|**Succeeded**|
 |aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
 |component|**Dynamics 365 Business Central Server**.|
-|componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number.|
+|componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
 |environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 |entitlementSetIds |Specifies the entitlements that the user has in Business Central.|
 |eventId|**RT0003**|
 |guestUser|**true** indicates that the user is a guest user on the tenant.<br />**false** indicates the user belongs to the tenant.|
-|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
+|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 |userType|Specifies whether the user is a **Delegated_admin**, **Internal_Admin**, or  **Normal user**. See [UserType](#usertype).|
 
 ### <a name="usertype"></a> UserType
@@ -71,6 +71,9 @@ Occurs when a user has been successfully authorized.
 
 -->
 
+> [!NOTE]
+> The client type is not known when the server emits the pre-open company events (RT0001 and RT0003). You need to join to data for the events RT0002/RT0004 if you need both userType and clientType.
+
 ## Authorization Failed (Pre Open Company)
 
 Occurs when a user sign-in has failed authorization.
@@ -79,7 +82,7 @@ Occurs when a user sign-in has failed authorization.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|Version 16.1 and later (depending on the cause):<ul><li>**Authorization Failed (Pre Open Company): User is disabled.**</li><li>**Authorization Failed (Pre Open Company): User has no entitlements.**</li></ul>Before Version 16.1:<br />**Authorization steps prior to the open company trigger failed, see failureReason column for details.**|
+|message|Version 16.1 and later (depending on the cause):<ul><li>**Authorization Failed (Pre Open Company): User is disabled.**</li><li>**Authorization Failed (Pre Open Company): User has no entitlements.**</li><li>**User has no access**</li></li><li>**User is not a member of the environment's security group**</li></ul>Before Version 16.1:<br />**Authorization steps prior to the open company trigger failed, see failureReason column for details.**|
 |operation_Name|**Authorization Failed (Pre Open Company)**<br /><br />**Note:** The use of the `operation_Name` column was deprecated in version 16.1. In future versions, data won't be stored in this column. So in version 16.1 and later, use the custom dimension column `eventID` column custom in Kusto queries instead of `operation_Name`.|
 |severityLevel|**3**|
 
@@ -104,11 +107,11 @@ Occurs when a user sign-in has failed authorization.
 <!--
 |aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
 |component|**Dynamics 365 Business Central Server**.|
-|componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number.|
+|componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
 |environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 
-|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod short](../developer/includes/prodshort.md)] telemetry schema. |
+|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod short](../developer/includes/prod_short.md)] telemetry schema. |
 -->
 
 ### <a name="authorizationfailures"></a> Troubleshooting failures
@@ -123,7 +126,7 @@ Enable the user account by setting the **State** field to **Enabled**. For more 
 
 #### A user successfully authenticated in Azure Active Directory but the user does not have any entitlements in Business Central.
 
-This message occurs if the user has an account, but the account hasn't been assigned any entitlements. 
+This message occurs if the user has an account, but the account hasn't been assigned any entitlements.
 
 Entitlements are part of the license. Entitlements are permissions that describe which objects in Business Central a user can use, according to their Azure Active Directory role or license. For an explanation of entitlements, see [Business Central entitlements explained](https://cloudblogs.microsoft.com/dynamics365/it/2019/07/18/business-central-entitlements/)
 
@@ -134,6 +137,10 @@ Entitlements are assigned to the user account in the Microsoft 365 admin center 
 - From [Microsoft 365 admin center](https://admin.microsoft.com), see [Add users individually or in bulk to Microsoft 365](/microsoft-365/admin/add-users/add-users).
 
 - From the Microsoft Partner Center, see [User management tasks for customer accounts](/partner-center/assign-licenses-to-users).
+
+#### The user is not a direct/indirect member of the security group associated with the environment, or the group does not exist, hence restricting the user access to the environment
+
+In Azure Active Directory (Azure AD), you can create security that include users that you want to give access to your environments. Then, from the Business Central Admin center, you can associate the groups with your environments. This error occurs if the user who tries to sign in isn't a member of the security group, or the security group assigned to the environment doesn't exist in Azure AD. For more information, see [Managing Production and Sandbox Environments in the Admin Center](tenant-admin-center-environments.md).
 
 ## Authorization Succeeded (Open Company)
 
@@ -158,19 +165,19 @@ Occurs when the company has opened successfully.
 |---------|-----|
 |authorizationStatus|**Success**|
 |aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
-|clientType|Specifies the type of client that executed the SQL Statement, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
-|companyName|Specifies the display name of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] company for which the report was run.|
+|clientType|Specifies the type of client that opened the session, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
+|companyName|Specifies the display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company for which the report was run.|
 |component|**Dynamics 365 Business Central Server**.|
-|componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number.|
+|componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
 |environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 |eventId|**RT0004**|
 |result|**Success**|
-|serverExecutionTime|Specifies the amount of time it took the server to open the company**. The time has the format hh:mm:ss.sssssss.<br /><br />Doesn't apply to the **Cancellation report generation** trace. |
-|sqlExecutes|Specifies the number of SQL statements that the report executed**. <br /><br />Doesn't apply to the **Cancellation report generation** trace.|
-|sqlRowsRead|Specifies the number of table rows that were read by the SQL statements**.<br /><br />Doesn't apply to the **Cancellation report generation** trace.|
-|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema.|
-|totalTime|Specifies the amount of time it took to open the company**. The time has the format hh:mm:ss.sssssss.<br /><br />Doesn't apply to the **Cancellation report generation** trace.|
+|serverExecutionTime|Specifies the amount of time it took the server to open the company. The time has the format hh:mm:ss.sssssss.|
+|sqlExecutes|Specifies the number of SQL statements that the report executed.|
+|sqlRowsRead|Specifies the number of table rows that were read by the SQL statements**.|
+|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
+|totalTime|Specifies the amount of time it took to open the company**. The time has the format hh:mm:ss.sssssss.|
 
 ** From telemetrySchemaVersion **0.6** and onwards, this value also includes the CompanyOpen operation.
 <!--
@@ -185,7 +192,7 @@ Occurs when a company has failed to open.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|Version 16.1 and later (depending on the cause):<ul><li>**Authorization Failed (Open Company): Invalid company name.**</li><li>**Authorization Failed (Open Company): User has no permission to company.**</li><li>**Authorization Failed (Open Company): The tenant is locked.**</li><li>**Authorization Failed (Open Company): The license has expired or the trial period has ended.**</li><li>**Authorization Failed (Open Company): The user's license is not valid for use on production companies.**</li></ul>Before version 16.1:<br />**Authorization steps in the open company trigger failed, see failureReason column for details.**|
+|message|Version 16.1 and later (depending on the cause):<ul><li>**Authorization Failed (Open Company): Invalid company name.**</li><li>**Authorization Failed (Open Company): User has no permission to company.**</li><li>**Authorization Failed (Open Company): The tenant is locked.**</li><li>**Authorization Failed (Open Company): The license has expired or the trial period has ended.**</li><li>**Authorization Failed (Open Company): The user's license is not valid for use on production companies.**</li><li>**Authorization Failed (Open Company): Error in OnOpenCompany trigger**</li></ul>Before version 16.1:<br />**Authorization steps in the open company trigger failed, see failureReason column for details.**|
 |operation_Name|**Authorization Failed (Open Company)**<br /><br />**Note:** The use of the `operation_Name` column was deprecated in version 16.1. In future versions, data won't be stored in this column. So in version 16.1 and later, use the custom dimension column `eventID` column custom in Kusto queries instead of `operation_Name`.|
 |severityLevel|**3**|
 
@@ -268,8 +275,15 @@ This message occurs because the license doesn't allow the user to open productio
 Obtain a license that can be used on production companies. Licenses are purchased through the Cloud Solution Provider (CSP)
 program. For more information, see the [Cloud Service Provider site](https://partner.microsoft.com/cloud-solution-provider) and the [Microsoft Dynamics 365 Business Central Licensing Guide](https://download.microsoft.com/download/D/A/4/DA497449-9805-42DC-91F5-A857295C233D/Dynamics%20365%20Business%20Central%20Licensing%20Guide%20Oct%202019.pdf).
 
+#### Error in OnOpenCompany trigger
+
+This message occurs when AL code causes an error during the OnOpenCompany trigger or event.
+
+*Resolution*
+
+Because AL code can trigger any type of error, the resolution will depend on the executed AL code. See the **failureReason** dimension for a callstack to determine where the error occurred.
+
 ## See also
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
-[Enabling Application Insights for Tenant Telemetry On-Premises](telemetry-enable-application-insights.md)  
-[Enable Sending Telemetry to Application Insights](tenant-admin-center-telemetry.md#appinsights)  
+[Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  

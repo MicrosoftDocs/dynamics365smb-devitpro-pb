@@ -1,42 +1,45 @@
 ---
-title: "XmlAttribute.Value Method"
+title: "XmlAttribute.Value([String]) Method"
+description: "Gets or sets the value of the attribute."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# XmlAttribute.Value Method
+# XmlAttribute.Value([String]) Method
+> **Version**: _Available or changed with runtime version 1.0._
+
 Gets or sets the value of the attribute.
 
 
 ## Syntax
-```
+```AL
 [Value := ]  XmlAttribute.Value([NewValue: String])
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 ## Parameters
 *XmlAttribute*  
 &emsp;Type: [XmlAttribute](xmlattribute-data-type.md)  
 An instance of the [XmlAttribute](xmlattribute-data-type.md) data type.  
 
-*NewValue*  
+*[Optional] NewValue*  
 &emsp;Type: [String](../string/string-data-type.md)  
 The new value of the attribute.  
 
 
 ## Return Value
-*Value*  
+*[Optional] Value*  
 &emsp;Type: [String](../string/string-data-type.md)  
-The value of the attribute.  
+The value of the attribute.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

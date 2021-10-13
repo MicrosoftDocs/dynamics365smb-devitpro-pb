@@ -6,11 +6,11 @@ ms.custom: na
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.assetid: a0ac492d-e3c8-4a76-87b4-b469e08c58e7
 ms.author: solsen
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ---
 
  
@@ -203,6 +203,6 @@ If you decide to code application areas as an extension, there are some aspects 
 ## See Also
 
 [ApplicationArea Property](properties/devenv-applicationarea-property.md)  
-[ApplicationArea Method](methods/devenv-applicationarea-method.md)  
+[ApplicationArea Method](./methods-auto/library.md)  
 [AccessByPermission Property](properties/devenv-accessbypermission-property.md)  
-[Properties](properties/devenv-properties.md)  
+[Properties](properties/devenv-properties.md)

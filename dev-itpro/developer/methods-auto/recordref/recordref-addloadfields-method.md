@@ -1,24 +1,27 @@
 ---
-title: "RecordRef.AddLoadFields Method"
+title: "RecordRef.AddLoadFields([Integer,...]) Method"
+description: "Specifies additional fields to be initially loaded when the record is retrieved from its data source."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# RecordRef.AddLoadFields Method
+# RecordRef.AddLoadFields([Integer,...]) Method
+> **Version**: _Available or changed with runtime version 6.0._
+
 Specifies additional fields to be initially loaded when the record is retrieved from its data source. Subsequent calls to AddLoadFields will not overwrite fields already selected for the initial load.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  RecordRef.AddLoadFields([Fields: Integer,...])
 ```
 ## Parameters
@@ -26,20 +29,22 @@ Specifies additional fields to be initially loaded when the record is retrieved 
 &emsp;Type: [RecordRef](recordref-data-type.md)  
 An instance of the [RecordRef](recordref-data-type.md) data type.  
 
-*Fields*  
+*[Optional] Fields*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The FieldNo's of the fields to be loaded.  
 
 
 ## Return Value
-*Ok*  
+*[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if all fields are selected for subsequent loads; otherwise, **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+**true** if all fields are selected for subsequent loads; otherwise, **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
+
+Calling SetLoadFields on a record without passing any fields will reset the fields selected to load to the default, where all readable normal fields are selected for load.
 
 This method is part of the partial records capability for improving performance. For more information, see [Using Partial Records](../../devenv-partial-records.md).
 
@@ -47,7 +52,7 @@ This method is part of the partial records capability for improving performance.
 
 This code example uses the AddLoadFields method to make sure that if a record is a **Currency**, then the **Currency Factor** field is loaded. This code would have to be called before a database operation is executed on the RecordRef.
 
-```
+```al
 procedure AlwaysNeededFields(VAR MyRecordRef: RecordRef)
 var
         Currency: Record Currency;

@@ -29,7 +29,7 @@ To change an icon that is displayed with a department on the Departments page of
   
      The following illustration shows the bitmap ID and the corresponding icons that are displayed with the department in the [!INCLUDE[nav_windows](includes/nav_windows_md.md)].  
   
-     ![Images for departments in RoleTailored client](media/RTCDepartmentImageLibrary.png "RTCDepartmentImageLibrary")  
+     ![Images for departments in RoleTailored client.](media/RTCDepartmentImageLibrary.png "RTCDepartmentImageLibrary")  
   
 4.  Choose the **OK** button.  
   

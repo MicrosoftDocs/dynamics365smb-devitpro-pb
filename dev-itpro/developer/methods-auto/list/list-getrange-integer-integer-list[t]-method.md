@@ -1,24 +1,27 @@
 ---
-title: "List.GetRange Method"
+title: "List.GetRange(Integer, Integer, var List of [T]) Method"
+description: "Get a shallow copy of a range of elements in the source."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# List.GetRange Method
+# List.GetRange(Integer, Integer, var List of [T]) Method
+> **Version**: _Available or changed with runtime version 1.0._
+
 Get a shallow copy of a range of elements in the source.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  List.GetRange(Index: Integer, Count: Integer, var Result: List of [T])
 ```
 ## Parameters
@@ -40,9 +43,9 @@ A shallow copy of a range of elements in the source List.
 
 
 ## Return Value
-*Ok*  
+*[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the range is a valid range, otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+**true** if the range is a valid range, otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

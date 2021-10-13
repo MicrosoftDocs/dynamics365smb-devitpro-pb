@@ -1,27 +1,28 @@
 ---
-title: Exporting Databases
+title: Exporting Databases in the Admin Center
 description: Use the Business Central administration center to export tenant databases per environment.  
 author: jswymer
 
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: administration, tenant, admin, environment, sandbox, database, export
-ms.date: 11/04/2020
+ms.search.keywords: administration, tenant, admin, environment, sandbox, database, export, bacpac, backup
+ms.date: 04/15/2021
 ms.author: jswymer
 
 ---
-# Exporting Databases
+# Exporting Databases in the Admin Center
 
 [!INCLUDE[2019_releasewave2](../includes/2019_releasewave2.md)]
 
-From the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], you can export the database for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online environments as BACPAC files to an Azure storage container.
+From the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], you can export the database for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online environments as BACPAC files to an Azure storage container.
 
 ## Considerations before you begin
 
 - You can only request a database export for production environments. If you want to export data from a sandbox environment, you can use Excel or RapidStart.
+- You can only request a database export if the customer has a paid Business Central subscription.
 - You must have explicit permission to export databases. For more information, see the [Users who can export databases](#users-who-can-export-databases) section.
 - You can't export your database to an Azure premium storage account. The steps in this article are only supported on Azure standard storage accounts.
 
@@ -37,7 +38,7 @@ For more information setting up an Azure storage account, see [Create a storage 
 
 ### Generating a shared access signature (SAS)
 
-The next step is to generate a shared access signature (SAS) that provides secure delegated access to your storage account. [!INCLUDE[prodshort](../developer/includes/prodshort.md)] uses the signature to write the BACPAC file to your storage account.
+The next step is to generate a shared access signature (SAS) that provides secure delegated access to your storage account. [!INCLUDE[prod_short](../developer/includes/prod_short.md)] uses the signature to write the BACPAC file to your storage account.
 
 #### To generate a shared access signature (SAS)
 
@@ -77,31 +78,34 @@ All database export activity is logged for auditing purposes. To view the histor
 
 ## Users who can export databases
 
-Permission to export databases is limited to specific types of users, typically internal and delegated administrators. This isn't a task that a typical [!INCLUDE [prodshort](../developer/includes/prodshort.md)] user should be able to do, but an administrator can grant permission to a user to export databases, should this be necessary.
+Permission to export databases is limited to specific types of users: internal and delegated administrators. The following users are allowed to export databases.
 
-- Users from reselling partners
+- Delegated administrators from reselling partners
 
-  - Employees who have the **Admin agent** role for this customer in the Partner Center
+- Administrators from the organization that subscribes to [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online
 
-    In contrast, employees who have the **Helpdesk agent** role *cannot* export databases.
+Also, these users must have the **D365 BACKUP/RESTORE** permission set assigned to their user account in the environment they're trying to export.
 
-- Users from the organization that subscribes to [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online
-
-  - Users who are internal administrators and have the **Global admin** role in the Microsoft 365 tenant
-  - Users who are members of the *D365 BACKUP/RESTORE* user group
-
-    To add a user to this user group, go to the **User Groups** page in [!INCLUDE [prodshort](../developer/includes/prodshort.md)]. For more information, see [To manage permissions through user groups](/dynamics365/business-central/ui-define-granular-permissions#to-manage-permissions-through-user-groups).  
+For more information about permissions sets and user groups, see [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions).  
 
 ## Using the exported data
 
-The BACPAC file contains data that is customer-specific business data. Technically, [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online is a multitenant deployment, which means that each customer tenant has their own business database while the data that defines the application is in a shared application database.  
+The BACPAC file contains data that is customer-specific business data. Technically, [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online is a multitenant deployment, which means that each customer tenant has their own business database while the data that defines the application is in a shared application database.  
 
-This means that if you want to export the data in order to change the customer's [!INCLUDE [prodshort](../developer/includes/prodshort.md)] from an online deployment to an on-premises deployment, you must also get the application data from the installation media from the same version of [!INCLUDE [prodshort](../developer/includes/prodshort.md)] that the online tenant is using. You can see the version number in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] or the **Help and Support** page in the customer's [!INCLUDE [prodshort](../developer/includes/prodshort.md)].  
+This means that if you want to export the data in order to change the customer's [!INCLUDE [prod_short](../developer/includes/prod_short.md)] from an online deployment to an on-premises deployment, you must also get the application data from the installation media from the same version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] that the online tenant is using. You can see the version number in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] or the **Help and Support** page in the customer's [!INCLUDE [prod_short](../developer/includes/prod_short.md)].  
 
 > [!IMPORTANT]
-> While you can import the downloaded BACPAC file into your own SQL Server instance, Microsoft does not provide support for creating a working on-premises environment from the BACPAC that you download from [!INCLUDE [prodshort](../developer/includes/prodshort.md)] online.  
+> While you can import the downloaded BACPAC file into your own SQL Server instance, Microsoft does not provide support for creating a working on-premises environment from the BACPAC that you download from [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online.  
 
 For more information, see [Quickstart: Import a BACPAC file to a database in Azure SQL Database](/azure/sql-database/sql-database-import), [Migrating to Single-Tenancy From Multitenancy](../deployment/Merging-an-Application-Database-with-a-Tenant-Database.md), and [When to choose on-premises deployment](../deployment/Deployment.md#when-to-choose-on-premises-deployment).  
+
+## Restoring the exported data to Business Central online
+
+If you decide at some point that you want to restore the exported data to a new environment in [!INCLUDE [prod_short](../includes/prod_short.md)] online, then you must go through the same steps as you went through to migrate from on-premises to [!INCLUDE [prod_short](../includes/prod_short.md)] online. This way, you can prepare the database so that it's ready to migrate to the latest version of [!INCLUDE [prod_short](../includes/prod_short.md)]. For example, you could choose to replicate the data to a sandbox environment for further testing and training. For more information, see [Migrating On-Premises Data to Business Central Online](migrate-data.md).  
+
+## Restoring the exported data to a container
+
+If you want to use the exported data in a container-based developer environment, you can use Windows PowerShell scripts to help you do that, including the [BCContainerHelper PowerShell module](https://github.com/Microsoft/navcontainerhelper).  
 
 ## See also
 

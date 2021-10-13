@@ -2,16 +2,18 @@
 title: "APIGroup Property (Page)"
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
  
 # APIGroup Property (Page)
+
+> **Version**: _Available from runtime version 1.0._
 
 Sets the group of the API endpoint the page is exposed in.  The syntax for providing versions is illustrated in the example below:
 

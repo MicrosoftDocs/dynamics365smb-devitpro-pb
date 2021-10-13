@@ -105,7 +105,7 @@ GROUP BY SP.Name
   
  The following figure shows the Query Designer for this example.  
   
- ![Query joins three tables](media/Query_WalkthroughThreeTables.png "Query\_WalkthroughThreeTables")  
+ ![Query joins three tables.](media/Query_WalkthroughThreeTables.png "Query\_WalkthroughThreeTables")  
   
 ## Specifying the Data Item Links  
  Viktor has added the data items and columns to the query, but he must specify how to link the data items to display the information he wants and eliminate unwanted records. For this query, Viktor wants the following:  
@@ -148,7 +148,7 @@ GROUP BY SP.Name
   
      The following figure shows the **SH Properties** window and Query Designer.  
   
-     ![Query that joins three tables](media/Query_WalkthroughThreeTables_SH.png "Query\_WalkthroughThreeTables\_SH")  
+     ![Query that joins three tables.](media/Query_WalkthroughThreeTables_SH.png "Query\_WalkthroughThreeTables\_SH")  
   
 12. Close the **SH Properties** window, and then link the **Sales Line** table and the **Sales Header** table.  
   
@@ -206,7 +206,7 @@ GROUP BY SP.Name
     > [!TIP]  
     >  Specifying a filter in the **DataItemTableFilter** property is equivalent to using a WHERE clause in an SQL statement.  
   
-     ![Query that joins three tables](media/Query_WalkthroughThreeTables_SL.png "Query\_WalkthroughThreeTables\_SL")  
+     ![Query that joins three tables.](media/Query_WalkthroughThreeTables_SL.png "Query\_WalkthroughThreeTables\_SL")  
   
 9. Close the **Sales\_Line – Properties** window,  
   
@@ -221,7 +221,7 @@ GROUP BY SP.Name
   
 3.  In Object Designer, select query 50003, and then choose the **Run** button. When you run a query, you can see the data in the dataset.  
   
-     ![Result of query that joins three tables](media/Query_WalkthroughThreeTables_Run.png "Query\_WalkthroughThreeTables\_Run")  
+     ![Result of query that joins three tables.](media/Query_WalkthroughThreeTables_Run.png "Query\_WalkthroughThreeTables\_Run")  
   
 ## See Also  
  [Queries](Queries.md)   

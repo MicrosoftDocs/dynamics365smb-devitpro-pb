@@ -1,24 +1,27 @@
 ---
-title: "WebServiceActionContext.SetResultCode Method"
+title: "WebServiceActionContext.SetResultCode(WebServiceActionResultCode) Method"
+description: "Sets the web service action result status code."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# WebServiceActionContext.SetResultCode Method
+# WebServiceActionContext.SetResultCode(WebServiceActionResultCode) Method
+> **Version**: _Available or changed with runtime version 2.0._
+
 Sets the web service action result status code.
 
 
 ## Syntax
-```
+```AL
  WebServiceActionContext.SetResultCode(ResultCode: WebServiceActionResultCode)
 ```
 ## Parameters
@@ -35,7 +38,8 @@ The new web service action result status code.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example
-```
+
+```al
 ...
 // Set the result code to inform the caller that an item was created.
 actionContext.SetResultCode(WebServiceActionResultCode::Created);

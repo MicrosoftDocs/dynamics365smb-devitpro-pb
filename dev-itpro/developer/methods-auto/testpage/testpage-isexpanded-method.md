@@ -1,28 +1,31 @@
 ---
-title: "TestPage.IsExpanded Method"
+title: "TestPage.IsExpanded() Method"
+description: "Specifies if rows on a test page are expanded."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# TestPage.IsExpanded Method
+# TestPage.IsExpanded() Method
+> **Version**: _Available or changed with runtime version 1.0._
+
 Specifies if rows on a test page are expanded.
 
 
 ## Syntax
-```
+```AL
 Expanded :=   TestPage.IsExpanded()
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 
 ## Parameters
 *TestPage*  
@@ -32,7 +35,7 @@ An instance of the [TestPage](testpage-data-type.md) data type.
 ## Return Value
 *Expanded*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the rows on the test page are expanded, otherwise **false**.  
+**true** if the rows on the test page are expanded, otherwise **false**.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

@@ -2,20 +2,20 @@
 title:  "Upgrading Customized C/AL Application to Microsoft Base Application"
 description: Describes how to upgrade an unmodified Business Central 14 application to version 16 Microsoft Base Application
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/15/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
 ms.service: "dynamics365-business-central"
 ---
-# Upgrading Customized C/AL Application to Microsoft Base Application
+# Upgrading Customized C/AL Application to Microsoft Base Application Version 16
 
 This article describes how to upgrade a customized version 14 application to a version 16 solution that uses the Microsoft Base Application.
 
- ![Shows the upgrade on unmodified Business Central application](../developer/media/bc14-to-16-cal-upgrade-to-base-app.png "Upgrade on unmodified Business Central application") 
+ ![Shows the upgrade on unmodified Business Central application.](../developer/media/bc14-to-16-cal-upgrade-to-base-app.png "Upgrade on unmodified Business Central application") 
 
 <!--
 
@@ -28,7 +28,7 @@ The process for upgrading the similar for a single-tenant and multitenant deploy
 
 The upgrade is divided into two sections: Application Upgrade and Data Upgrade. The Application Upgrade section deals with upgrading the application code. For the application upgrade, you'll have to create several extensions. Some of these extensions are only used for upgrade purposes. The Data Upgrade section deals with upgrading the data on tenants - publishing, syncing, and installing extensions. For this scenario, the data upgrade consists of two phases for migrating data from the current tables to extension-based tables. The following figure illustrates the upgrade process.  
 
-![Show the upgrade process on an unmodified Business Central application](../developer/media/upgrade-v14-to-v16-base-app-v2.png "Upgrade process on unmodified Business Central application") 
+![Show the upgrade process on an unmodified Business Central application.](../developer/media/upgrade-v14-to-v16-base-app-v2.png "Upgrade process on unmodified Business Central application") 
 
 The process uses two special features for migrating tables and data to extensions:
 
@@ -46,19 +46,18 @@ The process for upgrading is similar for a single-tenant and multitenant deploym
 
 ## <a name="prereqs"></a>Prerequisites
 
-1. Your version 14 is compatible with version 16.
+- Get the required version of the txt2al conversion tool.
 
-    There are several updates for version 14. The updates have a compatible version 16 update. For more information, see [[!INCLUDE[prodlong](../developer/includes/prodlong.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md). 
-
-2. Get the required version of the txt2al conversion tool.
-
-    During the upgrade, you'll use the txt2al conversion tool to convert existing tables to the AL syntax. You'll need to use a version of txt2al conversion tool that supports the `--tableDataOnly` parameter. This parameter was first introduced in [version 14.12 (cumulative update 11, platform 14.0.41862)](https://support.microsoft.com/en-us/help/4549684/cumulative-update-12-for-microsoft-dynamics-365-business-central-april). So if you're upgrading from version 14.11 (cumulative update 10) or earlier, you'll have to download the txt2al conversion tool from a later version 14 update. See [Released Cumulative Updates for Microsoft Dynamics 365 Business Central Spring 2019 Update on-premises](https://support.microsoft.com/en-us/help/4501292/released-cumulative-updates-for-microsoft-dynamics-365-business). 
+    During the upgrade, you'll use the txt2al conversion tool to convert existing tables to the AL syntax. You'll need to use a version of txt2al conversion tool that supports the `--tableDataOnly` parameter. This parameter was first introduced in [version 14.12 (cumulative update 11, platform 14.0.41862)](https://support.microsoft.com/help/4549684/cumulative-update-12-for-microsoft-dynamics-365-business-central-april). So if you're upgrading from version 14.11 (cumulative update 10) or earlier, you'll have to download the txt2al conversion tool from a later version 14 update. See [Released Cumulative Updates for Microsoft Dynamics 365 Business Central Spring 2019 Update on-premises](https://support.microsoft.com/help/4501292/released-cumulative-updates-for-microsoft-dynamics-365-business). 
 
 ## Install version 16
 
-1. Download the latest available update for Business Central 2020 (version 16) that is compatible with your version 14.
+1. Download the latest available update for Business Central 2020 release wave 1, version **16.5** or later, that is compatible with your version 14.  
 
-    For more information, see [[!INCLUDE[prodlong](../developer/includes/prodlong.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
+    For more information, see [[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
+
+    > [!IMPORTANT]
+    > You must use version 16.5 or later, otherwise you'll run problems during upgrade because of missing enum objects later in this procedure. For more information, see [Some Known Issues](known-issues.md#enum).
 
 2. Before you install version 16, it can be useful to create desktop shortcuts to the version 14.0 tools, such as the [!INCLUDE[admintool](../developer/includes/admintool.md)], [!INCLUDE[adminshell](../developer/includes/adminshell.md)], and [!INCLUDE[devshell](../developer/includes/devshell.md)] because the Start menu items for these tools will be replaced with the version 16 tools.
 
@@ -76,100 +75,20 @@ This section describes how to upgrade the application code. This work involves c
 
 The first step, and the largest step, is to create extensions for the customizations compared to the Microsoft base application.
 
-## Task 2: Create table migration extension
+- Create extensions for the target platform **5.0 Business Central 2020 release wave 1**.
+- Include dependencies for the Microsoft System, Base, and Application extensions for version 16.0.0.0.
 
-In this step, you create an extension that consists only of the non-system table objects from your custom base application. The table objects will only include the properties and field definitions. They won't include AL code on triggers or methods. This extension is an interim extension used only during the upgrade. 
+For example, if your application includes custom tables, then create extensions that include table objects and logic for the custom tables. If the application includes custom fields on system or base application tables, create extensions that include table extension objects to cover the custom fields. As part of this upgrade process, the data currently stored in custom tables or fields will be migrated from the existing tables to the new ones defined in the extensions.
 
-You'll create two versions of this extension. The first version contains the table objects. The second version, is an empty extension that contains a migrate.json file.
+## Task 2: Create empty extensions System, Base, and customization extensions
 
-### Create the first version
+For the interim phase of migrating tables and data to extensions, you create empty extension versions for:
 
-1. Start the [!INCLUDE[devshell](../developer/includes/devshell.md)] and run [Export-NAVApplicationObject cmdlet](/powershell/module/microsoft.dynamics.nav.ide/export-navapplicationobject) to export only tables from the database.
+- Microsoft system application
+- Microsoft base application
+- Each new customization extension that includes table or table extension objects for moving out of the existing base application. You don't have to create empty versions for extensions that don't include table changes. For example, the extension only includes a page object and code.
 
-    ```powershell
-    Export-NAVApplicationObject -DatabaseServer .\BCDEMO -DatabaseName "Demo Database BC (14-0)" -ExportToNewSyntax -Path "C:\export2al\bc14tablesonly\exportedbc14-tables.txt" -Filter 'Type=Table;Id=1..1999999999'
-    ```
-
-2. Use the txt2al conversion tool to convert the exported tables to the AL syntax. Use the `--tableDataOnly` parameter to include  table and field definitions only.
-
-    ```
-    txt2al --source=C:\export2al\bc14tablesonly --target=C:\export2al\bc14tablesonly\al --tableDataOnly
-    ```
-
-    For more information about this tool, see [The Txt2Al Conversion Tool](../developer/devenv-txt2al-tool.md).
-
-    > [!NOTE]
-    > If the `--tableDataOnly` parameter isn't available, you'll need a later version ot the txt2al conversion tool. See [Prerequisites](#prereqs) for more information.
-
-3. In Visual Studio Code, create an AL project for table migration extension using the **AL: Go!** command.
-
-    Set the target platform to **5.0 Business Central 2020 release wave 1**.
-
-   For more information, see [Getting Started with AL](../developer/devenv-get-started.md).
-
-4. Configure the project's app.json file:
-    
-    - Set the `"name"`, `"publisher"`, and `"version"`. You can use any valid name. 
-    - Set the `"target"` to `"Onprem"`.
-    - Set the  `"idRanges"` to cover the table object IDs.
-    - Clear the `"dependencies"`.
-
-    Make a note of the `"id"` setting value, which is the ID assigned to the table migration extension. You'll use this ID later in the process.
-
-5. Create an `.alpackages` folder in the root folder of the project and then copy the system (platform) symbols extension (System.app file) to the folder.
-
-    The System.app file is located where you installed the AL Development Environment. By default, the folder path is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\160\AL Development Environment. This package contains the symbols for all the system tables and codeunits.
-
-6. Add the AL files that you converted tables to the project.
-
-7. Build the extension package for the first version.
-
-    To build the extension package, press Ctrl+Shift+B. This step creates an .app file for your extension. The file name has the format \<publisher\>\_\<name\>\_\<version\>.app.
-
-
-### Create the second version
-
-1. Create a migration.json file and add it to the project's root folder.
-2. In the migration.json, include rules for the Microsoft base application, system application, and your customization extensions.
-
-    ```json
-    {
-        "apprules": [
-            {
-                "id": "63ca2fa4-4f03-4f2b-a480-172fef340d3f"
-            },
-            {
-                "id": "437dbf0e-84ff-417a-965d-ed2bb9650972"
-            },
-            {
-                "id": "72616078-0a6a-4ccf-90af-339d0d1eea0d"
-            },
-            {
-                "id": "5f7ac7ac-4f75-4c80-8dc8-c527608e7e5d"
-            }
-        ]
-    }
-    ```
-
-    In the example code:
-
-    - `63ca2fa4-4f03-4f2b-a480-172fef340d3f` identifies the system application extension
-    - `437dbf0e-84ff-417a-965d-ed2bb9650972` identifies the base application extension
-    - The two other IDs are examples that identify other customization extensions you might have. Replace or remove these entries as needed.
-
-    For more information about the migration.json, see [The Migration.json File](../developer/devenv-migration-json-file.md).
-
-3. Delete the AL objects.
-4. Increase the `version` in the app.json file.
-5. Build the extension package for the second version.
-
-    To build the extension package, press Ctrl+Shift+B.
-
-## Task 3: Create empty extensions System, Base, and customization extensions
-
-Create two empty extensions: one for the Microsoft base application and another for the System Application. Also, create an empty extension for each new customization extension. The only file in the extension project that is required is an app.json.
-
-You can create the empty extension like any other extension by adding an AL project in Visual Studio Code:
+The only file in the extension project that is required is an app.json. You can create the empty extension like any other extension by adding an AL project in Visual Studio Code:
 
 1. In Visual Studio Code, select **View** > **Command Palette** > **AL: Go!** and follow instructions.
 2. Delete the HelloWorld.al sample file from the project.
@@ -201,10 +120,145 @@ You can create the empty extension like any other extension by adding an AL proj
       "publisher": "Microsoft",
       "version": "14.0.0.0",
     ```
+        
+    **Customization extensions**   
+    
+    ```json
+      "id": "437dbf0e-84ff-417a-965d-ed2bb9650972",
+      "name": "<extension name>",
+      "publisher": "<extension publisher",
+      "version": "<extension version - must be lower than the final version>",
+      "runtime": "8.0",
+      "target": "OnPrem"
+    ```
+
+    > [!NOTE]
+    > For customization extensions, the version number must be lower than the final version for publication. Otherwise, you can't run upgrade on the extension later.
 4.  Build and compile the extension package. To build the extension package, press Ctrl+Shift+B.
 
 > [!TIP]
 > This step is only required if you need to trigger a data upgrade on these extensions, which you'll do by running Start-NavAppDataUpgrade on these extensions in Task 15. For the scenario in this article, at a minimum this step is required for the System and Base Applications. You can skip this step for any customization extensions that do not not include upgrade code.
+
+## Task 3: Create table migration extension
+
+In this step, you create an extension that consists only of the non-system table objects from your custom base application. The table objects will only include the properties and field definitions. They won't include AL code on triggers or methods. This extension is an interim extension used only during the upgrade. 
+
+You'll create two versions of this extension. The first version contains the table objects. The second version, is an empty extension that contains a migrate.json file.
+
+### Create the first version
+
+1. Create a folder where you'll store exported txt files for tables (for example, C:\export2al\bc14tablesonly\).
+
+2. Start the [!INCLUDE[devshell](../developer/includes/devshell.md)] for version 14.
+3. Run [Export-NAVApplicationObject cmdlet](/powershell/module/microsoft.dynamics.nav.ide/export-navapplicationobject) to export only tables from the database.
+
+    ```powershell
+    Export-NAVApplicationObject -DatabaseServer .\BCDEMO -DatabaseName "Demo Database BC (14-0)" -ExportToNewSyntax -Path "C:\export2al\bc14tablesonly\exportedbc14-tables.txt" -Filter 'Type=Table;Id=1..1999999999'
+    ```
+
+4. Use the txt2al conversion tool to convert the exported tables to the AL syntax. Use the `--tableDataOnly` parameter to include  table and field definitions only.
+
+    ```
+    txt2al --source=C:\export2al\bc14tablesonly --target=C:\export2al\bc14tablesonly\al --tableDataOnly
+    ```
+
+    For more information about this tool, see [The Txt2Al Conversion Tool](../developer/devenv-txt2al-tool.md).
+
+    > [!NOTE]
+    > If the `--tableDataOnly` parameter isn't available, you'll need a later version ot the txt2al conversion tool. See [Prerequisites](#prereqs) for more information.
+
+5. Make sure you've installed the latest AL Extension for Visual Studio Code from the version 16 DVD.
+
+   For more information, see [Getting Started with AL](../developer/devenv-get-started.md).
+
+6. In Visual Studio Code, create an AL project for table migration extension using the **AL: Go!** command.
+
+    Set the target platform to **5.0 Business Central 2020 release wave 1**.
+
+   For more information, see [Getting Started with AL](../developer/devenv-get-started.md).
+
+7. Configure the project's app.json file:
+
+    - Set the `"name"`, `"publisher"`, and `"version"`. You can use any valid values. 
+    - Delete the `"application"` parameter.
+    - Clear the `"dependencies"`.
+    - Set the  `"idRanges"` to cover the table object IDs or clear all values.
+    - Add the `"target"` parameter and set it to `"Onprem"`.
+
+    Make a note of the `"id"` setting value, which is the ID assigned to the table migration extension. You'll use this ID later in the process. **Don't** use the ID in the following example. It's for illustration purposes only.
+
+    ```
+    {
+      "id": "11111111-aaaa-2222-bbbb-333333333333",
+      "name": "bc14tablesonly",
+      "publisher": "My publisher",
+      "version": "1.0.0.0",
+      "brief": "",
+      "description": "",
+      "privacyStatement": "",
+      "EULA": "",
+      "help": "",
+      "url": "",
+      "logo": "",
+      "dependencies": [],
+      "screenshots": [],
+      "platform": "16.0.0.0",
+      "idRanges": [  ],
+      "contextSensitiveHelpUrl": "https://bc14tablesonly.com/help/",
+      "showMyCode": true,
+      "runtime": "5.0",
+      "target": "OnPrem"
+    }
+
+8. Create an `.alpackages` folder in the root folder of the project and then copy the system (platform) symbols extension (System.app file) to the folder.
+
+    The System.app file is located where you installed the AL Development Environment. By default, the folder path is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\160\AL Development Environment. This package contains the symbols for all the system tables and codeunits.
+
+9. Add the AL files that you converted tables to the project.
+
+   The folder used in this article is C:\export2al\bc14tablesonly\al.
+
+   >[!IMPORTANT]
+   > If you're upgrading a **CH** or **NA** local version (14.18 or later), you'll have to rename the primary keys in some tables. For more information, see [Known Issues](known-issues.md#keys).
+
+10. Build the extension package for the first version.
+
+    To build the extension package, press Ctrl+Shift+B. This step creates an .app file for your extension. The file name has the format \<publisher\>\_\<name\>\_\<version\>.app.
+
+### Create the second version
+
+1. In Visual Studio Code, create a new file called migration.json file and add it to the project's root folder.
+2. In the migration.json, include rules for the Microsoft base application, system application, and your customization extensions.
+
+    ```json
+    {
+        "apprules": [
+            {
+                "id": "63ca2fa4-4f03-4f2b-a480-172fef340d3f"
+            },
+            {
+                "id": "437dbf0e-84ff-417a-965d-ed2bb9650972"
+            },
+            {
+                "id": "<NNNNNNNN-NNNN-NNNN-NNNN-NNNNNNNNNNNN>"
+            }
+        ]
+    }
+    ```
+
+    In the example code:
+
+    - `63ca2fa4-4f03-4f2b-a480-172fef340d3f` identifies the system application extension
+    - `437dbf0e-84ff-417a-965d-ed2bb9650972` identifies the base application extension
+    - The last entry is an example that identifies new customization extension. Include an entry for each customization extension for which you created an empty version in **Task 2**. Replace `<NNNNNNNN-NNNN-NNNN-NNNN-NNNNNNNNNNNN>` with the actual extension ID. Remove this entry if not used.
+
+    For more information about the migration.json, see [The Migration.json File](../developer/devenv-migration-json-file.md).
+
+3. Delete the AL objects.
+4. Increase the `version` in the app.json file.
+5. Build the extension package for the second version.
+
+    To build the extension package, press Ctrl+Shift+B.
 
 ## DATA UPGRADE
 
@@ -260,8 +314,9 @@ You can create the empty extension like any other extension by adding an AL proj
 
 This task runs a technical upgrade on the application database. The task converts the database from the version 14 platform to the version 16 platform. The conversion updates the system tables of the database to the new schema (data structure). It provides the latest platform features and performance enhancements.
 
-1. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 16 as an administrator.
-2. Run the Invoke-NAVApplicationDatabaseConversion cmdlet to start the conversion:
+[!INCLUDE[convert_azure_sql_db](../developer/includes/convert_azure_sql_db.md)]
+2. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 16 as an administrator.
+3. Run the Invoke-NAVApplicationDatabaseConversion cmdlet to start the conversion:
 
     ```powershell
     Invoke-NAVApplicationDatabaseConversion -DatabaseServer <database server name>\<database server instance> -DatabaseName "<database name>"
@@ -277,6 +332,7 @@ This task runs a technical upgrade on the application database. The task convert
     DatabaseLocation    :
     Collation           :
     ```
+[!INCLUDE[convert_azure_sql_db_timeout](../developer/includes/convert_azure_sql_db_timeout.md)]
 
 ## Task 6: Configure version 16 server for DestinationAppsForMigration
 
@@ -291,7 +347,7 @@ In this step, you configure the version 16 server instance. In particular, you c
 
 2. Configure the `DestinationAppsForMigration` setting of the server instance to table migration extension.
 
-    You'll need the ID, name, and publisher for the table migration extension that you created in **Task 2**.
+    You'll need the ID, name, and publisher for the table migration extension that you created in **Task 3**.
 
     ```powershell
     Set-NAVServerConfiguration -ServerInstance <server instance name> -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"<table migration extension ID>", "name":"<table migration extension>", "publisher": "<publisher>"}]'
@@ -391,7 +447,7 @@ In this task, you'll synchronize the tenant's database schema with any schema ch
 
 If you have a multitenant deployment, do these steps for each tenant.
 
-1. (Multitenant only) Mount the tenant to the version 15 server instance.
+1. (Multitenant only) Mount the tenant to the version 16 server instance.
 
     To mount the tenant, use the [Mount-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/mount-navtenant) cmdlet:
     
@@ -485,7 +541,7 @@ Publish the extensions in the following order:
 
     The Microsoft extensions are in the **Applications** folder of installation media (DVD).
 
-## Task 13: Synchronize final extensions
+## <a name="syncfinal"></a>Task 13: Synchronize final extensions
 
 Synchronize the newly published extensions using the Sync-NAVApp cmdlet like you did in previous steps.
 
@@ -518,23 +574,15 @@ The final step is to upgrade to the new extension versions in the following orde
 
 Run the data upgrade on the extensions in the following order:
 
-1. Microsoft System Application.
-2. Microsoft Base Application.
-3. Customization, Microsoft, and third-party extensions.
+1. Upgrade the Microsoft System Application extension.
+2. Upgrade the Microsoft Base Application extension.
+3. Install the Microsoft Application extension
+4. Upgrade customization extensions, Microsoft, and third-party extensions.
 
-   For customization extensions, only do this task for those extensions that have an empty version currently installed on the tenant (see Task 11). If you have a customization extension for which you didn't create and publish an empty version, complete the next task for these extensions.
+   For customization extensions, only do this step for those extensions that have an empty version currently installed on the tenant (see **Task 9**). If you have a customization extension for which you didn't create and publish an empty version, complete the next step to install these extensions.
+5. Install remaining customization extensions for which you didn't create and publish an empty version.
 
-## Task 16: Install remaining customization extensions
-
-Complete this task for cutomizations extension that you created in Task 1, but create and publish an empty version first.
-
-To install each extension, run the [Install-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp): 
-
-```powershell
-Install-NAVApp -ServerInstance <BC16 server instance> -Name "<name>" -Version <extension version>
-```
-
-## Task 17: Upgrade control add-ins
+## Task 16: Upgrade control add-ins
 
 The [!INCLUDE[server](../developer/includes/server.md)] installation includes new versions of the Microsoft-provided Javascript-based control add-ins that must be upgraded.
 
@@ -553,7 +601,7 @@ The [!INCLUDE[server](../developer/includes/server.md)] installation includes ne
 
 To upgrade the control add-ins from the client, do the following steps:
 
-1. Open the [!INCLUDE[](../developer/includes/prodshort.md)] client.
+1. Open the [!INCLUDE[](../developer/includes/prod_short.md)] client.
 2. Search for and open the **Control Add-ins** page.
 3. Choose **Actions** > **Control Add-in Resource** > **Import**.
 4. Locate and select the .zip file for the control add-in and choose **Open**.

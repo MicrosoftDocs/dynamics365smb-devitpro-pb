@@ -2,11 +2,11 @@
 title: Sending Extension Telemetry to Azure Application Insights 
 description: Describes how to configure an extension to send telemetry data to Azure Application Insights. 
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
@@ -15,7 +15,7 @@ author: jswymer
 
 [!INCLUDE[2020_releasewave2.md](../includes/2020_releasewave2.md)]
 
-This article describes how to develop an extension to send telemetry data to Azure Application Insights for monitoring and analyzing. [!INCLUDE[prodshort](includes/prodshort.md)] emits telemetry data for several operations that occur when extension code is run. You can configure an extension to send this telemetry data to a specific Application Insights resource on Microsoft Azure. For an overview about the telemetry with Application Insights, see [Monitoring and Analyzing Telemetry](../administration/telemetry-overview.md).
+This article describes how to develop an extension to send telemetry data to Azure Application Insights for monitoring and analyzing. [!INCLUDE[prod_short](includes/prod_short.md)] emits telemetry data for several operations that occur when extension code is run. You can configure an extension to send this telemetry data to a specific Application Insights resource on Microsoft Azure. For an overview about the telemetry with Application Insights, see [Monitoring and Analyzing Telemetry](../administration/telemetry-overview.md).
 
 This feature targets publishers of per-tenant extensions to give them insight into issues in their extensions before partners and customers report them.
 
@@ -23,19 +23,29 @@ This feature targets publishers of per-tenant extensions to give them insight in
 
 The first thing to do is to create an Application Insights resource in Azure if you don't have one. For more information, see [Create an Application Insights resource](/azure/azure-monitor/app/create-new-resource).
 
-The Application Insights resource is assigned an instrumentation key, which you can see on the **Overview** page for the resource in Azure. Copy this key because you'll need it to enable Application Insights in the extension.
+The Application Insights resource is assigned a connection string, which you can see on the **Overview** page for the resource in Azure. Copy this connection string because you'll need it to enable Application Insights in the extension.
 
 ## Add the Application Insights Key to the extension's app.json
 
-The next step is to add the `"applicationInsightsKey"`setting the extension's app.json as shown:
+The next step is to add the `"applicationInsightsConnectionString"` setting the extension's app.json as shown:
 
 ```json
-"applicationInsightsKey": ["<instrumenation key>"] 
+"applicationInsightsConnectionString": "<connection string>"
 ```
 
-Replace `<instrumenation key>` with your key. 
+Replace `<connection string>` with the string that you copied in the Azure Application Insights overview. For more information about the format of the Application Insight connection string, see [Connection Strings](/azure/azure-monitor/app/sdk-connection-string?tabs=net).
 
-When done, build the extension package, then publish and install it as usual. When the extension is run from [!INCLUDE[prodshort](includes/prodshort.md)], Application Insights gathers the telemetry data for viewing and analyzing.
+When done, build the extension package, then publish and install it as usual. When the extension is run from [!INCLUDE[prod_short](includes/prod_short.md)], Application Insights gathers the telemetry data for viewing and analyzing.
+
+### Prior to runtime version 7.2
+
+Up until runtime version 7.2 you cannot use the `"applicationInsightsConnectionString"` setting. Instead you have to use the `"applicationInsightsKey"` setting which is added using only the instrumentation key from the Application Insights connection string as shown:
+
+```json
+"applicationInsightsKey": "<instrumentation key>"
+```
+
+Where `<instrumentation key>` is replaced by the key denoted in the connection string as `InstrumentationKey=<instrumentation key>;<some other parameters>`.
 
 ## See Also  
 [Getting Started with AL](devenv-get-started.md)  

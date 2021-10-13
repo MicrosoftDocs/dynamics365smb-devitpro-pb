@@ -1,24 +1,27 @@
 ---
-title: "Notification.Recall Method"
+title: "Notification.Recall() Method"
+description: "Recall a sent notification."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/23/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Notification.Recall Method
+# Notification.Recall() Method
+> **Version**: _Available or changed with runtime version 1.0._
+
 Recall a sent notification.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  Notification.Recall()
 ```
 
@@ -28,9 +31,9 @@ Recall a sent notification.
 An instance of the [Notification](notification-data-type.md) data type.  
 
 ## Return Value
-*Ok*  
+*[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if it succeeds in sending a recall request to the client; otherwise **false**. The same notification can be recalled more than once, without failing. Also, a notification can be recalled successfully even if it hasn't been sent.  If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+**true** if it succeeds in sending a recall request to the client; otherwise **false**. The same notification can be recalled more than once, without failing. Also, a notification can be recalled successfully even if it hasn't been sent.  If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -46,16 +49,16 @@ A typical reason that the RECALL method returns **false** is a failure in the co
 
 The following code creates a notification and sends it if NewBalance is greater than the credit limit. If it is lower than the credit limit, it recalls the notification.
 
-```
+```al
 MyNotification.ID := '00000000-0000-0000-0000-000000000001';
-IF NewBalance > Rec. "Credit Limit" THEN BEGIN
-  MyNotification.MESSAGE := 'The customer's current balance exceeds their credit limit.';
-  MyNotification.SCOPE := NOTIFICATIONSCOPE::LocalScope;
-  MyNotification.ADDACTION('Fix it.', 50001, 'FixCustomerCreditLimit');
-  MyNotification.SETDATA('CustomerNo.', Rec."No.");
-  MyNotification.SEND;
-END ELSE
-  MyNotification.RECALL;
+IF NewBalance > Rec. "Credit Limit" then begin
+  MyNotification.Message := 'The customer's current balance exceeds their credit limit.';
+  MyNotification.Scope := NotificationScope::LocalScope;
+  MyNotification.AddAction('Fix it.', 50001, 'FixCustomerCreditLimit');
+  MyNotification.SetData('CustomerNo.', Rec."No.");
+  MyNotification.Send;
+end else
+  MyNotification.Recall;
 ```
 
 ## See Also

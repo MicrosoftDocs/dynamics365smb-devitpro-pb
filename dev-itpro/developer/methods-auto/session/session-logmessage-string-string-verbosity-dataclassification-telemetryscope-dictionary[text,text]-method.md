@@ -1,29 +1,31 @@
 ---
-title: "Session.LogMessage Method"
-description: Describes the LogMessage method for the session data type in Business Central
+title: "Session.LogMessage(String, String, Verbosity, DataClassification, TelemetryScope, Dictionary of [Text, Text]) Method"
+description: "Logs a trace message to a telemetry account."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Session.LogMessage Method
+# Session.LogMessage(String, String, Verbosity, DataClassification, TelemetryScope, Dictionary of [Text, Text]) Method
+> **Version**: _Available or changed with runtime version 5.4._
+
 Logs a trace message to a telemetry account.
 
 
 ## Syntax
-```
+```AL
  Session.LogMessage(EventId: String, Message: String, Verbosity: Verbosity, DataClassification: DataClassification, TelemetryScope: TelemetryScope, CustomDimensions: Dictionary of [Text, Text])
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *EventId*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -56,14 +58,14 @@ For more information about using this method, see [Creating Custom Telemetry Eve
 
 ## Example
 
-```
+```al
 trigger OnRun();
 var
     CustDimension: Dictionary of [Text, Text];
 begin
     CustDimension.Add('result', 'failed');
     CustDimension.Add('reason', 'critical error in code');
-    LogMessage('MyExt-0001', 'This is an critical error message', Verbosity::Normal, DATACLASSIFICATION::OrganizationIdentifiableInformation, TelemetryScope::ExtensionPublisher, CustDimension);
+    LogMessage('MyExt-0001', 'This is a critical error message', Verbosity::Normal, DataClassification::OrganizationIdentifiableInformation, TelemetryScope::ExtensionPublisher, CustDimension);
 end;
 ```
 

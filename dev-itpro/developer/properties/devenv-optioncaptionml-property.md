@@ -1,39 +1,46 @@
 ---
 title: "OptionCaptionML Property"
-ms.custom: na
+description: "Sets the strings that are displayed to the user for selecting an option."
 ms.author: solsen
-ms.date: 10/01/2020
+ms.custom: na
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # OptionCaptionML Property
+> **Version**: _Available or changed with runtime version 1.0._
 
-Sets the strings that are displayed to the user for selecting an option. OptionCaptionML is only used if the field or variable has an [OptionMembers Property](devenv-optionmembers-field-property.md). The OptionMembers property contains the set of values that are acceptable choices, and it is one of these values that is saved in the database or used in AL code.  
+Sets the strings that are displayed to the user for selecting an option. OptionCaptionML is only used if the field or variable has an OptionMembers Property.
+
+## Applies to
+-   Table Field
+-   Page Field
+-   Report Column
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 
 > [!NOTE]  
 > To submit an app to AppSource, you must use .xliff translation files. For more information, see [Working with Translation Files](../devenv-work-with-translation-files.md).
   
-## Applies to  
-  
-- Page Fields  
-- Variables  
-  
-## Remarks  
-
-OptionCaptionML is multilanguage enabled so it can contain a list of text in different languages. The text that is displayed is selected according to the current language settings of the user. For more information, see [Multilanguage Development](../devenv-multilanguage-development.md).  
-  
-The OptionCaptionML property has the following format.  
-  
+## Syntax
+ 
 ```AL
 OptionCaptionML = <Language ID> = '<optioncaption [,optioncaption]*>'  
 ```  
+
+## Remarks  
+
+OptionCaptionML is multilanguage-enabled so it can contain a list of text in different languages. The text that is displayed is selected according to the current language settings of the user. For more information, see For more information, see [Working with Translation Files](../devenv-work-with-translation-files.md).  
   
-<Language ID> is a Windows standard three-letter language ID and `<optioncaption [,optioncaption]*>` is the OptionCaption text(s) for this language. Commas are used to separate entries.  
+`<Language ID>` is a Windows standard three-letter language ID and `<optioncaption [,optioncaption]*>` is the OptionCaption text(s) for this language. Commas are used to separate entries.  
   
 Although you can use OptionCaptionML to limit the number of options displayed to the user, it is recommended that you use [OptionMembers Property](devenv-optionmembers-field-property.md) to do this. You cannot expand the set of options. If you do, a run-time error will occur when the user selects an option that is outside the option set defined for the field or variable.  
   
@@ -55,7 +62,7 @@ The following examples demonstrate the relationship between the [OptionMembers P
   
 2. An OptionCaptionML property is added to the database field containing DAN = 'valg1,valg2,valg3', ENG = 'choice1,choice2,choice3'.  
   
-     **Result** If a user selects DAN as the language, valg1, valg2, valg3 will be the available choices on the page. If a user selects ENG, choice1, choice2, choice3 will be available. For more information about what happens when the selected language is not available, see [Multilanguage Development](../devenv-multilanguage-development.md).  
+     **Result** If a user selects DAN as the language, valg1, valg2, valg3 will be the available choices on the page. If a user selects ENG, choice1, choice2, choice3 will be available. For more information about what happens when the selected language is not available, see [Multilanguage Development](/dynamics365/business-central/dev-itpro/developer/properties/devenv-work-with-translation-files).  
   
 3. An OptionCaptionML property is added to the text box containing DAN = 'valg nummer 1,valg nummer 2,valg nummer 3'.  
   
@@ -67,4 +74,4 @@ The following examples demonstrate the relationship between the [OptionMembers P
   
 ## See Also
 
-[Multilanguage Development](../devenv-multilanguage-development.md)
+[Working with Translation Files](../devenv-work-with-translation-files.md)

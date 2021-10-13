@@ -1,24 +1,27 @@
 ---
-title: "Report.SetTableView Method"
+title: "Report.SetTableView(var Record) Method"
+description: "Applies the table view on the current record as the table view for the page, report, or XmlPort."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Report.SetTableView Method
+# Report.SetTableView(var Record) Method
+> **Version**: _Available or changed with runtime version 1.0._
+
 Applies the table view on the current record as the table view for the page, report, or XmlPort.
 
 
 ## Syntax
-```
+```AL
  Report.SetTableView(var Record: Record)
 ```
 ## Parameters
@@ -40,20 +43,20 @@ The record that has a table view that you want to apply to the page or data item
  This method only narrows the view of the table that was set through the [SourceTableView Property](../../properties/devenv-sourcetableview-property.md) of the page or through the [DataItemTableView Property](../../properties/devenv-dataitemtableview-property.md) of the data item.  
   
 > [!IMPORTANT]  
->  SETTABLEVIEW is not supported for setting views on subpages from code on table headers. For example, you cannot set a table view on the SalesOrder subpage from the SalesHeader.  
+>  SETTableView is not supported for setting views on subpages from code on table headers. For example, you cannot set a table view on the SalesOrder subpage from the SalesHeader.  
   
 ## Example  
- This example is based on the Sales Header table and shows how SETTABLEVIEW is used for a page object. 
+ This example is based on the Sales Header table and shows how SETTableView is used for a page object. 
  
 ```  
 var
     SalesHeader: Record "Sales Header";
     SomePage: Page "Sales List";
 begin
-    SalesHeader.SETCURRENTKEY("Document Type");  
+    SalesHeader.SETCURRENTKey("Document Type");  
     SalesHeader.SETRANGE("Document Type",SalesHeader."Document Type"::Order);  
-    SomePage.SETTABLEVIEW(SalesHeader); // Only view sales orders.  
-    SomePage.RUN; 
+    SomePage.SETTableView(SalesHeader); // Only view sales orders.  
+    SomePage.Run; 
 end; 
 ```  
   

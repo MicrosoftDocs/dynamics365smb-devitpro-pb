@@ -1,23 +1,29 @@
 ---
 title: "ExternalSchema Property"
+description: "Specifies the name of the database schema of the external database."
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # ExternalSchema Property
+> **Version**: _Available or changed with runtime version 1.0._
 
-Specifies the name of the database schema of the external database.  
-  
-## Applies to  
-  
-- Tables  
-  
+Specifies the name of the database schema of the external database.
+
+## Applies to
+-   Table
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## Property Value
 
 The name of the schema of the external database.  
@@ -36,5 +42,5 @@ This property appears when you specify **ExternalSQL** in the **TableType** prop
 
 [TableType Property](devenv-tabletype-property.md)   
 [ExternalSchema Property](devenv-externalschema-property.md)   
-[Name Property](devenv-name-property.md)   
-[Properties](devenv-properties.md)   
+[Name Property](./devenv-properties.md)   
+[Properties](devenv-properties.md)

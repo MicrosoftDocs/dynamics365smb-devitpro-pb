@@ -47,7 +47,7 @@ In [!INCLUDE[navnowlong](includes/navnowlong_md.md)], you can create MenuSuites 
 
  The following illustration shows the design permission levels that are available in [!INCLUDE[navnow](includes/navnow_md.md)].  
 
- ![Microsoft Dynamics NAV MenuSuite Design Level](media/MicrosoftDynamicsNAVMenuSuiteDesignLevel.png "MicrosoftDynamicsNAVMenuSuiteDesignLevel")  
+ ![Microsoft Dynamics NAV MenuSuite Design Level.](media/MicrosoftDynamicsNAVMenuSuiteDesignLevel.png "MicrosoftDynamicsNAVMenuSuiteDesignLevel")  
 
  When you create a MenuSuite, it inherits from the design level that is above the level you selected. The most basic design level is the Dept - MBS level and the highest design level is the Dept - Company level. Only one MenuSuite can be created for each level in an application except the Add-on level, which can have a maximum of ten instances of MenuSuites.  
 
@@ -67,7 +67,7 @@ In [!INCLUDE[navnowlong](includes/navnowlong_md.md)], you can create MenuSuites 
 
  Every new MenuSuite that you create is designed at one of the design levels and run on the Department page in the [!INCLUDE[nav_windows](includes/nav_windows_md.md)]. As such, the full names of the menus are prefixed with “Dept.”, followed by the design level, and then followed by the name of the menu. For example, if you create a new MenuSuite at the Partner level and you create a menu for a department that is named **My New Department**, the full name of the menu will be **Dept-Partner: My New Department**. This name is displayed in the header of the Navigation Pane Designer. The following screenshot shows the Navigation Pane Designer header section and group of menu items.  
 
- ![Navigation Pane Designer Header](media/MicrosoftDynamicsNAVMenuSuiteNavDesignerHeader.jpg "MicrosoftDynamicsNAVMenuSuiteNavDesignerHeader")  
+ ![Navigation Pane Designer Header.](media/MicrosoftDynamicsNAVMenuSuiteNavDesignerHeader.jpg "MicrosoftDynamicsNAVMenuSuiteNavDesignerHeader")  
 
  After creating a new MenuSuite, you can do the following:  
 
@@ -96,7 +96,7 @@ In [!INCLUDE[navnowlong](includes/navnowlong_md.md)], you can create MenuSuites 
 
  Menus in a MenuSuite that are inherited are identified by the symbol **>>** on the menu button. This symbol precedes the name of the menu. The following screenshot shows the departments menus in the Navigation Pane Designer.  
 
- ![Navigation Pane Designer Departments](media/MicrosoftDynamicsNAVMenuSuiteDepartments.jpg "MicrosoftDynamicsNAVMenuSuiteDepartments")  
+ ![Navigation Pane Designer Departments.](media/MicrosoftDynamicsNAVMenuSuiteDepartments.jpg "MicrosoftDynamicsNAVMenuSuiteDepartments")  
 
  These menus, except the **My New Department** menu, were inherited; therefore, **My New Department** does not have the symbol **>>** on the menu button.  
 

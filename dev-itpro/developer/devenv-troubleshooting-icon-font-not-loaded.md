@@ -1,11 +1,11 @@
 ---
 title: "Troubleshooting: Icon Font Not Loaded"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: troubleshooting
 ms.service: "dynamics365-business-central"
 author: blrobl
 ---
@@ -21,7 +21,7 @@ The Icon font is missing on the [!INCLUDE[nav_web](includes/nav_web_md.md)], [!I
   
 3.  Select the  **Security** tab, and then choose **Trusted sites** .  
   
-4.  Choose the **Sites** button and add the [!INCLUDE[prodshort](includes/prodshort.md)] web site.  
+4.  Choose the **Sites** button and add the [!INCLUDE[prod_short](includes/prod_short.md)] web site.  
   
 5.  Click on the **Close** button and then on the **OK** button.  
   

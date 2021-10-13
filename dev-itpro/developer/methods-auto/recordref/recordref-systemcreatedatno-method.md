@@ -1,28 +1,31 @@
 ---
-title: "RecordRef.SystemCreatedAtNo Method"
+title: "RecordRef.SystemCreatedAtNo() Method"
+description: "Gets the field number that is used by the SystemCreatedAt field."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# RecordRef.SystemCreatedAtNo Method
+# RecordRef.SystemCreatedAtNo() Method
+> **Version**: _Available or changed with runtime version 6.0._
+
 Gets the field number that is used by the SystemCreatedAt field. The SystemCreatedAt field is a system field that the platform adds to all table objects.
 
 
 ## Syntax
-```
+```AL
 SystemCreatedAtFieldNo :=   RecordRef.SystemCreatedAtNo()
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 
 ## Parameters
 *RecordRef*  
@@ -32,7 +35,7 @@ An instance of the [RecordRef](recordref-data-type.md) data type.
 ## Return Value
 *SystemCreatedAtFieldNo*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-The field number of the SystemCreatedAt field.  
+The field number of the SystemCreatedAt field.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

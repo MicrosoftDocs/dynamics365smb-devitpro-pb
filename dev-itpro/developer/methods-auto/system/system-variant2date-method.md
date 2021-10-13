@@ -1,28 +1,31 @@
 ---
-title: "System.Variant2Date Method"
+title: "System.Variant2Date(Variant) Method"
+description: "Gets a date from a variant."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# System.Variant2Date Method
+# System.Variant2Date(Variant) Method
+> **Version**: _Available or changed with runtime version 1.0._
+
 Gets a date from a variant.
 
 
 ## Syntax
-```
+```AL
 Date :=   System.Variant2Date(Variant: Variant)
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *Variant*  
 &emsp;Type: [Variant](../variant/variant-data-type.md)  
@@ -32,7 +35,7 @@ The input variant.
 ## Return Value
 *Date*  
 &emsp;Type: [Date](../date/date-data-type.md)  
-  
+
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -40,18 +43,18 @@ The input variant.
 
 ## Example  
 
-```  
+```al
 var
     TextDate: Date;
     variant1: Variant;
 begin
-    variant1 := TODAY;  
-    TestDate := VARIANT2DATE(variant1);  
+    variant1 := Today;  
+    TestDate := Variant2Date(variant1);  
 end;
 ```  
 
-
 ## See Also
+
 [System Data Type](system-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

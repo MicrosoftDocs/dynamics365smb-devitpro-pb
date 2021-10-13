@@ -1,28 +1,31 @@
 ---
-title: "XmlElement.InnerText Method"
+title: "XmlElement.InnerText() Method"
+description: "Gets the concatenated values of the node and all its child nodes."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# XmlElement.InnerText Method
+# XmlElement.InnerText() Method
+> **Version**: _Available or changed with runtime version 1.0._
+
 Gets the concatenated values of the node and all its child nodes.
 
 
 ## Syntax
-```
+```AL
 Value :=   XmlElement.InnerText()
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 
 ## Parameters
 *XmlElement*  
@@ -32,7 +35,7 @@ An instance of the [XmlElement](xmlelement-data-type.md) data type.
 ## Return Value
 *Value*  
 &emsp;Type: [String](../string/string-data-type.md)  
-The concatenated values of the node and all its child nodes.  
+The concatenated values of the node and all its child nodes.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

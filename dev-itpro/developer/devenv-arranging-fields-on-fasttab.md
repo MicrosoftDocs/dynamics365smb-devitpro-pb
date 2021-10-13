@@ -2,11 +2,11 @@
 title: "Field Arrangement on FastTabs"
 description: FastTabs in Dynamics 365 Business Central allow users to find key information on a page displayed in separate groups.
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -21,7 +21,7 @@ Organizing data using FastTabs helps users to find key information quickly, whil
 
 By default, a FastTab is divided into two columns for containing fields. Fields are automatically distributed between the left and right columns based on their order in the `layout` section of the page. Starting with the first field in the Page Layout and working downward, fields are positioned in the left column and then in the right column. The area that is occupied by the fields in each column is as equal as possible. Field captions are positioned to the left of fields. 
 
-![Shows FastTab on customer card page](media/fasttab-overview.png) 
+![Shows FastTab on customer card page.](media/fasttab-overview.png) 
 
 Pages automatically adjust to the available space on the screen. If horizontal space is reduced, a FastTab will adapt and distribute fields into a single column. Similarly, a FastTab will automatically distribute fields into more than two columns to take advantage of wider screens.  
 

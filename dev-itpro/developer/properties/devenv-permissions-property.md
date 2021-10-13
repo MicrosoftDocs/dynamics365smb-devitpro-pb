@@ -1,35 +1,54 @@
 ---
 title: "Permissions Property"
+description: "Sets whether an object has additional permission required to perform some operations on one or more tables."
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
-ms.assetid: 99eb343f-7bff-4956-ad1b-605440b7858c
-caps.latest.revision: 9
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Permissions Property
+> **Version**: _Available or changed with runtime version 1.0._
 
-Sets whether an object has additional permission required to perform some operations on one or more tables. The operations can be to read, insert, modify, and delete data.  
-  
-## Applies to  
-  
-- Codeunits  
-- Pages  
-- Queries  
-- Reports  
-- Tables  
-- XMLports  
+Sets whether an object has additional permission required to perform some operations on one or more tables. The operations can be to read, insert, modify, and delete data.
+
+## Applies to
+-   Codeunit
+-   Table
+-   Request Page
+-   Page
+-   Xml Port
+-   Report
+-   Query
+-   Permission Set
+-   Permission Set Extension
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 
 ## Syntax
 
 ```AL
 Permissions = TableData 1221 = rimd;
 ```
+
+## Values
+
+| Values   |Represents  |Description   |
+|----------|------------|---------------------------------------------|
+|R or r    |Read        |Specifies direct (R) or indirect (r) read permission.|
+|I or i    |Insert      |Specifies direct (I) or indirect (i) insert permission.| 
+|M or m    |Modify      |Specifies direct (M) or indirect (m) modify permission.|
+|D or d    |Delete      |Specifies direct (D) or indirect (d) delete permission.|
+|X or x    |Execute     |Specifies direct (X) or indirect (x) execute permission.|
+
   
 ## Remarks  
 

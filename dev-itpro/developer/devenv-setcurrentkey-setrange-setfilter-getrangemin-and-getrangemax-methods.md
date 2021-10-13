@@ -1,33 +1,35 @@
 ---
-title: "SETCURRENTKEY, SETRANGE, SETFILTER, GETRANGEMIN, GETRANGEMAX Methods"
+title: "SetCurrentKey, SetRange, SetFilter, GetRangeMin, GetRangeMax Methods"
 description: Describes methods that set limits on the value of one or more specified fields, so that only a subset of the records are displayed, modified, deleted, and so on. 
 ms.custom: na
-ms.date: 10/29/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 
-# SETCURRENTKEY, SETRANGE, SETFILTER, GETRANGEMIN, and GETRANGEMAX Methods
+# SetCurrentKey, SetRange, SetFilter, GetRangeMin, and GetRangeMax Methods
+
 The following methods are used to filter records in a table:  
 
-- SETCURRENTKEY  
+- SetCurrentKey  
 
-- SETRANGE  
+- SetRange  
 
-- SETFILTER  
+- SetFilter  
 
-- GETRANGEMIN  
+- GetRangeMin  
 
-- GETRANGEMAX  
+- GetRangeMax  
 
  These methods are some of the most commonly used AL methods. They set limits on the value of one or more specified fields, so that only a subset of the records are displayed, modified, deleted, and so on.  
 
-## SETCURRENTKEY Method  
- SetCurrentKey sorts the contents of the table on the provided fields and selects the key that contains the specified fields if possible. 
+## SetCurrentKey Method
+
+SetCurrentKey sorts the contents of the table on the provided fields and selects the key that contains the specified fields if possible. 
 
  SetCurrentKey has the following syntax.  
 
@@ -47,38 +49,38 @@ The following methods are used to filter records in a table:
 
     -   If no keys can be found that include the fields that you specify, the return value is FALSE. If you do not test the return value, a run-time error occurs. If you do test the return value, the program will continue to run even though no key was found.  
 
- For more information about this method, see [SetCurrentKey Method (Record)](methods-auto/record/record-setcurrentkey-method.md).
+ For more information about this method, see [SetCurrentKey Method (Record)](methods-auto/record/record-SetCurrentKey-method.md).
 
-## SETRANGE Method  
- SETRANGE sets a simple filter on a field.  
+## SetRange Method  
+ SetRange sets a simple filter on a field.  
 
- SETRANGE has the following syntax.  
-
-```AL
-Record.SETRANGE(Field [,From-Value] [,To-Value]);  
-```  
-
- In the following example, SETRANGE filters the **Customer** table by selecting only those records where the **No.** field has a value between 10000 and 90000.  
+ SetRange has the following syntax.  
 
 ```AL
-Customer.SETRANGE("No.",'10000','90000');  
+Record.SetRange(Field [,From-Value] [,To-Value]);  
 ```  
 
- When you use SETRANGE the following rules apply:  
+ In the following example, SetRange filters the **Customer** table by selecting only those records where the **No.** field has a value between 10000 and 90000.  
 
--   SETRANGE removes any filters that were set previously and replaces them with the *From-Value* and *To-Value* parameters that you specify.  
+```AL
+Customer.SetRange("No.",'10000','90000');  
+```  
 
--   If you use SETRANGE without setting the *From-Value* and *To-Value* parameters, the method removes any filters that are already set.  
+ When you use SetRange the following rules apply:  
+
+-   SetRange removes any filters that were set previously and replaces them with the *From-Value* and *To-Value* parameters that you specify.  
+
+-   If you use SetRange without setting the *From-Value* and *To-Value* parameters, the method removes any filters that are already set.  
 
 -   If you only set the *From-Value*, the *To-Value* is set to the same value as the *From-Value*.  
 
-## SETFILTER Method  
- SETFILTER sets a filter in a more general way than SETRANGE.  
+## SetFilter Method  
+ SetFilter sets a filter in a more general way than SetRange.  
 
- SETFILTER has the following syntax.  
+ SetFilter has the following syntax.  
 
 ```AL
-Record.SETFILTER(Field, String [, Value], ...]);  
+Record.SetFilter(Field, String [, Value], ...]);  
 ```  
 
  *Field* is the name of the field on which you want to set a filter. *String* is the filter expression. *String* may contain placeholders, such as %1 and %2, to indicate where to insert the *Value* parameter\(s\) in a filter expression.  
@@ -86,41 +88,41 @@ Record.SETFILTER(Field, String [, Value], ...]);
  The following example selects records where the value of No. is larger than 10000 and not equal to 20000.  
 
 ```AL
-Customer.SETFILTER("No.", '>10000 & <> 20000');  
+Customer.SetFilter("No.", '>10000 & <> 20000');  
 ```  
 
  If the variables *Value1* and *Value2* have been assigned "10000" and "20000" respectively, then you can use the following statement to create the same filter.  
 
 ```AL 
-Customer.SETFILTER("No.",'>%1&<>%2',Value1, Value2);  
+Customer.SetFilter("No.",'>%1&<>%2',Value1, Value2);  
 ```  
 
-## GETRANGEMIN Method  
- GETRANGEMIN retrieves the minimum value of the filter range that is currently applied to a field.  
+## GetRangeMin Method  
+ GetRangeMin retrieves the minimum value of the filter range that is currently applied to a field.  
 
- GETRANGEMIN has the following syntax.  
+ GetRangeMin has the following syntax.  
 
 ```AL
-Record.GETRANGEMIN(Field);  
+Record.GetRangeMin(Field);  
 ```  
 
  A run-time error occurs if the filter that is currently applied is not a range. For example, you can set a filter as follows.  
 
 ```AL
-Customer.SETFILTER("No.",'10000|20000|30000');  
+Customer.SetFilter("No.",'10000|20000|30000');  
 ```  
 
  With this filter, the following code fails because the filter is not a range.  
 
 ```AL
-BottomValue := Customer.GETRANGEMIN("No.");  
+BottomValue := Customer.GetRangeMin("No.");  
 ```  
 
-## GETRANGEMAX Method  
- GETRANGEMAX retrieves the maximum value of the filter range that is currently applied to a field.  
+## GetRangeMax Method  
+ GetRangeMax retrieves the maximum value of the filter range that is currently applied to a field.  
 
- GETRANGEMAX has the following syntax.  
+ GetRangeMax has the following syntax.  
 
 ```AL
-Value := Record.GETRANGEMAX(Field)  
+Value := Record.GetRangeMax(Field)  
 ```

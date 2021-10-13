@@ -1,47 +1,38 @@
 ---
-title: "ID Property"
+title: "Id Property"
+description: "The ID of the service plan, role, etc."
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
-ms.assetid: 96328bb5-ef6c-413f-9294-e18d6639d919
-caps.latest.revision: 12
 author: SusanneWindfeldPedersen
 ---
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
+# Id Property
+> **Version**: _Available or changed with runtime version 7.0._
 
-# ID Property
+The ID of the service plan, role, etc. as determined by the type.
 
-Sets a unique numeric ID for this codeunit, table, page, report, XMLport, or control.  
-  
-## Applies to  
-  
-- Codeunits  
-- Menu items  
-- Pages, including the page object, controls, and actions  
-- Queries, including the query object, data items, columns, and filter rows  
-- Tables  
-- XMLports  
+## Applies to
+-   Entitlement
 
-## Syntax
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-```AL
-page ID AdressPage
-{
-    ...
-}
-```
+## Remarks
 
-## Remarks  
+> [!NOTE]  
+> In the current version of [!INCLUDE [prod_short](../../includes/prod_short.md)] entitlements can only be included with Microsoft apps (enforced by the AppSource cop rules and the technical validation checks that we run for the apps submitted to AppSource). These objects will become available for the ISV apps when we introduce ability to monetize AppSource apps in one of our future releases. For more information, see [Entitlement Object](../devenv-entitlement-object.md).
 
-The ID must be unique within the scope of the object. For example, two code units, tables, or page cannot have the same ID, and no control can have the same ID as another control on that object.  
-  
-The ID is used for reference purposes. As a result, you can use the value of the [Name Property](devenv-name-property.md) to reference objects in your code. The Name is automatically converted to the ID when the code is compiled.  
-  
-If you do not set the **ID** property, you will be prompted for one when you save the object. For controls, a numeric ID is assigned based on the next available number for the page or the report. You can change this ID.  
-  
 ## See Also
 
-[Name Property](devenv-name-property.md)
+[Getting Started with AL](../devenv-get-started.md)  
+[Developing Extensions](../devenv-dev-overview.md)  
+[Type Property](devenv-type-property.md)  
+[PermissionSet Object](../devenv-permissionset-object.md)  
+[PermissionSet Extension Object](../devenv-permissionset-ext-object.md)  

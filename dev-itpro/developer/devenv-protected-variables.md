@@ -1,11 +1,11 @@
 ---
 title: "Protected Variables"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -29,7 +29,7 @@ var
 The example below illustrates how to declare and use a protected variable.
 
 ```AL
-page 500100 MyPage
+page 50100 MyPage
 {
     SourceTable = Customer;
     PageType = Card;
@@ -62,7 +62,7 @@ page 500100 MyPage
         ShowBalance: Boolean;
 }
 
-pageextension 500101 MyPageExt extends MyPage
+pageextension 50101 MyPageExt extends MyPage
 {
     layout
     {
@@ -99,7 +99,7 @@ pageextension 500101 MyPageExt extends MyPage
 ```
 
 ## See Also  
-[AL Method Reference](methods/devenv-al-method-reference.md)   
+[AL Method Reference](./methods-auto/library.md)   
 [Properties](properties/devenv-properties.md)  
 [Access Property](properties/devenv-access-property.md)  
 [Extensible Property](properties/devenv-extensible-property.md)

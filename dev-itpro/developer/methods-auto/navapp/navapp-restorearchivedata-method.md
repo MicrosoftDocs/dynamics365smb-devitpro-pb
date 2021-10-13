@@ -1,39 +1,42 @@
 ---
-title: "NavApp.RestoreArchiveData Method"
+title: "NavApp.RestoreArchiveData(Integer [, Boolean]) Method"
+description: "Restores archived data for a specified table of an extension during installation."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# NavApp.RestoreArchiveData Method
+# NavApp.RestoreArchiveData(Integer [, Boolean]) Method
+> **Version**: _Available or changed with runtime version 1.0 until version 6.0 where it was deprecated for the following reason: "The features related to data migration from V1 to V2 extensions are being deprecated."_
+
 Restores archived data for a specified table of an extension during installation.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  NavApp.RestoreArchiveData(TableNo: Integer [, RunTrigger: Boolean])
 ```
 ## Parameters
 *TableNo*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The ID of the table for which to restore achived data.  
-*RunTrigger*  
+*[Optional] RunTrigger*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the table triggers should run, otherwise **false**.  
 
 
 ## Return Value
-*Ok*  
+*[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true**, if the archived data was restored for the specified table; otherwise **false** If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+**true**, if the archived data was restored for the specified table; otherwise **false** If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

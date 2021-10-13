@@ -1,17 +1,20 @@
 ---
 title: "Transitioning from Codeunit 1"
+description: "Learn how to convert your code as part of the upgrade to version 14 of Business Central."
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 # Transitioning from Codeunit 1 to System Codeunits
 
-With [!INCLUDE[prodshort](../developer/includes/prodshort.md)], codeunit 1 **Application Management** has been removed and replaced with new System codeunits. No functionality has been removed by this change. All system method triggers, event publishers, and their code have been moved to other codeunits.
+[!INCLUDE [upgrade-14](../includes/upgrade-14.md)]
+
+With [!INCLUDE[prod_short](../developer/includes/prod_short.md)], codeunit 1 **Application Management** has been removed and replaced with new System codeunits. No functionality has been removed by this change. All system method triggers, event publishers, and their code have been moved to other codeunits.
 
 However, this change will affect the upgrade process from [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] and how you develop from now on.
 
@@ -19,7 +22,7 @@ However, this change will affect the upgrade process from [!INCLUDE[navnow_md](.
 
 The foundation of this change is events - publishers and subscribers. System codeunits don't contain code. They only contain event publishers. Instead of running codeunit 1 and calling respective functions, [!INCLUDE[server](../developer/includes/server.md)] runs system codeunits. The system codeunits will in turn raise published events. There are various management codeunits that subscribe to these events. Like codeunit 1, these subscriber codeunits contain method triggers and integration event publishers. They can call application functionality and raise events. The following figure illustrates the process:
 
-![System event publishers](../media/system-event-publishers.png "system event publishers")
+![System event publishers.](../media/system-event-publishers.png "system event publishers")
 
 ### About system codeunits
 -    They have IDs in the 2 billion range.
@@ -139,7 +142,7 @@ Move custom logic from the old codeunit 1 to the management codeunits and method
 
 ### Technical upgrade
 
-After you convert the old database to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] platform, import and compile the replacement codeunit 1 object. You get the replacement object from [Codeunit 1 Replacement](codeunit1-replacement.md).
+After you convert the old database to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] platform, import and compile the replacement codeunit 1 object. You get the replacement object from [Codeunit 1 Replacement](codeunit1-replacement.md).
 
 ## See Also  
  [Converting a Database](Converting-a-Database.md)  

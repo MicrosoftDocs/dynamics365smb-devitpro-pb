@@ -1,11 +1,11 @@
 ---
 title: "Turn Off or Limit Telemetry Trace Events"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
@@ -37,9 +37,9 @@ To configure the **Diagnostic Trace Level** setting, you can use the [!INCLUDE[a
   
      You must restart the [!INCLUDE[server](../developer/includes/server.md)] instance for the changes to take effect.  
   
-6.  To restart, the [!INCLUDE[server](../developer/includes/server.md)] instance, in the left pane, select the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] computer.  
+6.  To restart, the [!INCLUDE[server](../developer/includes/server.md)] instance, in the left pane, select the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] computer.  
   
-     Unless you are administering a remote computer, this is [!INCLUDE[prodshort](../developer/includes/prodshort.md)] \(local\).  
+     Unless you are administering a remote computer, this is [!INCLUDE[prod_short](../developer/includes/prod_short.md)] \(local\).  
   
 7.  In the center pane, right-click an instance, and then select **Restart**.  
   
@@ -64,9 +64,9 @@ To configure the **Diagnostic Trace Level** setting, you can use the [!INCLUDE[a
     ```
     Substitute `MyServerInstance` with the name of the [!INCLUDE[server](../developer/includes/server.md)] instance and `level` with either `Critical`, `Error`, `Warning`, `Normal`, `Verbose`, or `Off`.
     
-For more information about how to use the [!INCLUDE[adminshell](../developer/includes/adminshell.md)], see [Business Central PowerShell Cmdlets](/powershell/business-central/overview) and [Set-NAVServerConfiguration Cmdlet](https://go.microsoft.com/fwlink/?linkid=401394).
+For more information about how to use the [!INCLUDE[adminshell](../developer/includes/adminshell.md)], see [Business Central PowerShell Cmdlets](/powershell/business-central/overview) and [Set-NAVServerConfiguration Cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration).
 
 ## See Also  
  [Monitoring Business Central Server Events Using Event Viewer](monitor-server-events-windows-event-log.md)   
  [Monitoring Business Central Server Events](monitor-server-events.md)   
- [Configuring Business Central Server](configure-server-instance.md#General)  
+ [Configuring Business Central Server](configure-server-instance.md#General)

@@ -3,11 +3,11 @@ title: "Profile Object"
 description: "Description of the page object."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
@@ -22,7 +22,7 @@ The profile object in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] a
 > Extension objects can have a name with a maximum length of 30 characters.
 
 > [!NOTE]  
-> `showMyCode` does not apply to profiles. Profiles defined in an extension with `showMyCode` set to `false` can still be copied using Designer.
+> The property `allowDebugging`, which is a setting under `resourceExposurePolicy` does not apply to page customizations. Page customizations defined in an extension with `allowDebugging` set to `false` can still be copied using Designer. For more information, see [Resource Exposure Policy Setting](devenv-security-settings-and-ip-protection.md).
 
 ## Snippet support
 Typing the shortcut `tprofile` will create the basic layout for a profile object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
@@ -37,7 +37,7 @@ profile MyProfile
 { 
     Description = 'Some internal comment that only the Dev can see'; 
     Caption = 'My User-friendly Name'; 
-    ProfileDescription = 'A detailed description of who is this profile for, why/how to use it (etc)' 
+    ProfileDescription = 'A detailed description of who is this profile for, why/how to use it (etc)'; 
     RoleCenter = MyRoleCenter; 
     Enabled = true; 
     Promoted = true; 

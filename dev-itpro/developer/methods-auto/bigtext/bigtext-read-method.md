@@ -1,24 +1,27 @@
 ---
-title: "BigText.Read Method"
+title: "BigText.Read(InStream) Method"
+description: "Streams a BigText object that is stored as a BLOB in a table to a BigText variable."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# BigText.Read Method
+# BigText.Read(InStream) Method
+> **Version**: _Available or changed with runtime version 1.0._
+
 Streams a BigText object that is stored as a BLOB in a table to a BigText variable.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  BigText.Read(InStream: InStream)
 ```
 ## Parameters
@@ -32,37 +35,39 @@ The InStream object type that you use to stream a BLOB to a BigText variable.
 
 
 ## Return Value
-*Ok*  
+*[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the read transaction was successful, otherwise **false**.  
+**true** if the read transaction was successful, otherwise **false**.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks  
- To delete the content in a BigText variable, use the [CLEAR Method](../../methods-auto/system/system-clear-joker-method.md).  
+## Remarks
+
+To delete the content in a BigText variable, use the [Clear Method](../../methods-auto/system/system-clear-joker-method.md).  
   
+```al
+Clear(BigText)  
 ```  
-CLEAR(BigText)  
-```  
+
+## Example
+
+This example shows how to stream a BigText that is stored as a BLOB in a table to a BigText variable.  
   
-## Example  
- This example shows how to stream a BigText that is stored as a BLOB in a table to a BigText variable.  
-  
-```
+```al
 var
     Bstr: BigText;
     Istream: InStream;
     EmployeeRec: Record Employee;
 begin
-    EmployeeRec.FIND('-');  
-    EmployeeRec.CALCFIELDS(Picture);  
-    EmployeeRec.Picture.CREATEINSTREAM(Istream);  
-    Bstr.READ(Istream);  
+    EmployeeRec.Find('-');  
+    EmployeeRec.CalcFields(Picture);  
+    EmployeeRec.Picture.CreateInStream(Istream);  
+    Bstr.Read(Istream);  
 end;
 ```  
   
- Use the [CALCFIELDS Method \(Record\)](../../methods-auto/record/record-calcfields-method.md) to calculate the BlobField. A BlobField is a binary large object \(maximum size 2 GB\) and must be calculated if you want to use it in AL or display it in the application.  
+Use the [CalcFields Method \(Record\)](../../methods-auto/record/record-calcfields-method.md) to calculate the BlobField. A BlobField is a binary large object \(maximum size 2 GB\) and must be calculated if you want to use it in AL or display it in the application.  
 
 ## See Also
 

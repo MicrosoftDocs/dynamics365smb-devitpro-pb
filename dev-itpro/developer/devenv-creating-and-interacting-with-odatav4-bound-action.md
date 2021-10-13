@@ -3,11 +3,11 @@ title: "Creating and Interacting with an OData V4 Bound Action"
 description: "Document how to create and interact with an OData V4 Bound Action in AL."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---

@@ -3,10 +3,10 @@ title: "Extensible Enums"
 description: "Overview of the concept of extending enumerables "
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
@@ -160,8 +160,8 @@ Conversion to and from `enum` is more strict than for `Options` in C/SIDE.
 For information about assigment compatibility, see [AssignmentCompatibility Property](properties/devenv-assignmentcompatibility-property.md).
 
 ## See Also
-[AL Data Types](datatypes/devenv-al-data-types.md)  
+[AL Data Types](./methods-auto/library.md)  
 [TableRelation Property](properties/devenv-tablerelation-property.md)  
 [Extensible Property](properties/devenv-extensible-property.md)  
 [Enum Data Type](methods-auto/enum/enum-data-type.md)  
-[AssignmentCompatibility Property](properties/devenv-assignmentcompatibility-property.md)  
+[AssignmentCompatibility Property](properties/devenv-assignmentcompatibility-property.md)

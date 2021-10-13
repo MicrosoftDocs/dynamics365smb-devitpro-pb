@@ -1,28 +1,33 @@
 ---
 title: "Scripts Property"
+description: "Specifies the list of scripts to include in the control add-in."
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
-ms.assetid: dd671414-a7c3-44bd-a860-a8bda61c7913
-caps.latest.revision: 15
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Scripts Property
+> **Version**: _Available or changed with runtime version 1.0._
 
-Specifies the list of scripts used by the control add-in. 
+Specifies the list of scripts to include in the control add-in. The scripts could be local files in the package or references to external files using the http or the https protocol.
 
-## Applies to 
+## Applies to
+-   Control Add In
 
-- Control add-in objects
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 
 ## Property Values
 
-A list of comma-separated strings that represent paths to script files. The default is blank, with no images being used by the control add-in. 
+A list of comma-separated strings that represent paths to script files. The default is blank, with no scripts being used by the control add-in. 
 
 ## Remarks 
 
@@ -37,5 +42,4 @@ Scripts = 'https://code.jquery.com/jquery-2.1.0.min.js',
 
 ## See Also
 
-[Control Add-In Object](../devenv-control-addin-object.md)   
- 
+[Control Add-In Object](../devenv-control-addin-object.md)  

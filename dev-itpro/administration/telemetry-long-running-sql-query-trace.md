@@ -3,20 +3,20 @@ title: Analyzing Long Running Operation (SQL Query) Telemetry
 description: Learn about analyzing long running operation (SQL Query) in Business Central.  
 author: jswymer
 ms.service: dynamics365-business-central
-ms.topic: article
+ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.author: jswymer
 ---
 
 # Analyzing Long Running Operation (SQL Query) Telemetry
 
-A SQL query that takes longer than 1000 milliseconds to execute will be sent to your Application Insights resource.
+Any SQL query that takes longer than 1000 milliseconds to execute will be sent to your Azure Application Insights resource. This enables you to focus on tuning SQL queries that take too long to execute (maybe one or more tables miss an index or maybe some filters are missing). It also reduces the ingestion of data into the Azure Application Insights resource to save cost of having telemetry.
 
-To get a quick overview, you can go the [Application Insights Overview dashboard](/azure/azure-monitor/app/overview-dashboard).
+With Business Central online, if you want to capture all SQL queries for a short period of time for a given session, you can enable **Additional logging** from the **Help & Support** page. This lets you analyze queries that take a short time to run but happen very frequently. <!--Additional logging is currently only available on production environments running version 17.4 or later.-->
 
 > [!NOTE]
 > With Business Central On-premises, you can change the threshold that defines long running queries. For more information, see [Defining Long Running SQL Queries Threshold](monitor-long-running-sql-queries-event-log.md#threshold).
@@ -43,8 +43,8 @@ This table explains the columns included in long running query events emitted to
 |client_City|*Application Insights*|
 |client_StateOrProvince|*Application Insights*|
 |client_CountryOrRegion|*Application Insights*|
-|cloud_RoleName|Specifies the display name of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant. For on-premises, this value is the same as the cloud_RoleInstance.  |
-|cloud_RoleInstance|Specifies the name of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] tenant. |
+|cloud_RoleName|Specifies the display name of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant. For on-premises, this value is the same as the cloud_RoleInstance.  |
+|cloud_RoleInstance|Specifies the name of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant. |
 |appId|*Application Insights*|
 |appName|*Application Insights*|
 |iKey|*Application Insights*|
@@ -69,15 +69,15 @@ This table describes the different dimensions of a **Long Running Operation (SQL
 |Column (key)|Description or value|
 |---------|-----|
 |extensionVersion|Specifies the version of the extension.|
-|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] telemetry schema. |
-|componentVersion|Specifies the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version number|
-|environmentType|Specifies the environment type of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution, such as Production or Sandbox.|
-|environmentName|Specifies the environment name of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] solution, such as Production or Sandbox.|
+|telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema. |
+|componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
+|environmentType|Specifies the environment type of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] solution, such as Production or Sandbox.|
+|environmentName|Specifies the environment name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] solution, such as Production or Sandbox.|
 |extensionName|Specifies the name of the extension.|
 |alObjectType|The type of the AL object that executed the SQL statement|
 |alObjectName|The name of the AL object that executed the SQL statement|
 |alStackTrace|The stack trace in AL.|
-|companyName|The display name of the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] company that was used at time of execution. |
+|companyName|The display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company that was used at time of execution. |
 |extensionId|Specifies the AppID of the extension.|
 |eventId|**RT0005**<br /><br/>This dimension was introduced in Business Central 2020 release wave 1, version 16.1.|
 |aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID when using Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
@@ -100,7 +100,6 @@ The following code snippet shows an example of the CustomDimensions.
 ## See also
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
-[Enabling Application Insights for Tenant Telemetry On-Premises](telemetry-enable-application-insights.md)  
-[Enable Sending Telemetry to Application Insights](tenant-admin-center-telemetry.md#appinsights)  
+[Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  
 [Monitoring and Analyzing Long Running SQL Queries On-Premises](monitor-long-running-sql-queries-event-log.md)  
 [The Business Central Administration Center](tenant-admin-center.md)  

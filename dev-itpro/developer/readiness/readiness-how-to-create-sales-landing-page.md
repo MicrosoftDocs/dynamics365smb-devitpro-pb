@@ -3,9 +3,9 @@ title: "How to create an effective sales landing page"
 description: "Guideline on creating an effective Sales Landing page for your app"
 author: v-liober
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: solsen
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: a-emniel
 ---
@@ -68,50 +68,47 @@ If you need help formulating a positioning statement, try the value proposition 
 - Keep it clean and straightforward in terms of design and layout. Use lots of pictures, graphs, and screen shots to enhance engagement.
 
 ## Content elements: Text and messaging
+
 | Element   | Description | Example |
 |-----------|-------------|---------|
-|Include a headline question|Get your prospects’ attention by asking them a compelling pain-based question that they can relate to.|	“Struggling to manage your ingredient inventory and fretting over allergens?”|
-||You want the prospect to mentally say “YES” as often as possible and to peak their curiosity enough to read more.||
-|| Your questions should be intriguing and customer-centric.||
-||In general, 8 out of 10 people will read headline copy, but only 2 out of 10 will read the rest.||
-|Microsoft Dynamics 365 product description|Somewhere on the landing page, make sure you include the standard Microsoft Dynamics 365 Business Central product description provided by Microsoft *This is a requirement because your product is adding value to and building on this foundational solution.*|*Insert this paragraph:* Microsoft Dynamics 365 Business Central is a comprehensive business management solution for small and medium-size businesses (SMBs) that have outgrown their basic accounting software. From day one, this new application makes ordering, selling, invoicing, and reporting easier and faster. Dynamics 365 Business Central is deeply integrated with Microsoft 365 and includes built-in intelligence, so it is easy to use and helps users make better business decisions.||
-|Messaging (Address their pains)|	Pain is a strong motivator of action. |	<!-- >./media/image40.jpg to be fixed-->| 
-||- Identify 1-3 key sources of the client’s most prominent pain early on the page.|<!-- ./media/image41.jpg to be fixed-->|
-||- Call out the fears that are likely to be holding them back.||
-||- Your landing page text and messaging should predominantly focus on the pain the prospect is experiencing, and NOT the features of your product or service.||
-|Clearly demonstrate to your prospects that you genuinely understand their industry and unique business problems.| - Describe the business challenges they are facing now and the ways their revenue growth, margins, productivity and so on, are being negatively impacted by not taking action now.|
+|Include a headline question|Get your prospects’ attention by asking them a compelling pain-based question that they can relate to.|“Struggling to manage your ingredient inventory and fretting over allergens?”|
+|-|You want the prospect to mentally say “YES” as often as possible and to peak their curiosity enough to read more.|-|
+|-| Your questions should be intriguing and customer-centric.|-|
+|-|In general, 8 out of 10 people will read headline copy, but only 2 out of 10 will read the rest.|-|
+|Microsoft Dynamics 365 product description|Somewhere on the landing page, make sure you include the standard Microsoft Dynamics 365 Business Central product description provided by Microsoft *This is a requirement because your product is adding value to and building on this foundational solution.*|*Insert this paragraph:* Microsoft Dynamics 365 Business Central is a comprehensive business management solution for small and medium-size businesses (SMBs) that have outgrown their basic accounting software. From day one, this new application makes ordering, selling, invoicing, and reporting easier and faster. Dynamics 365 Business Central is deeply integrated with Microsoft 365 and includes built-in intelligence, so it is easy to use and helps users make better business decisions.|-|
+|Messaging (Address their pains)|Pain is a strong motivator of action. |-| 
+|-|- Identify 1-3 key sources of the client’s most prominent pain early on the page.|-|
+|-|- Call out the fears that are likely to be holding them back.|-|
+|-|- Your landing page text and messaging should predominantly focus on the pain the prospect is experiencing, and NOT the features of your product or service.|-|
+|Clearly demonstrate to your prospects that you genuinely understand their industry and unique business problems.| - Describe the business challenges they are facing now and the ways their revenue growth, margins, productivity and so on, are being negatively impacted by not taking action now.|-|
 
 
 
 | Element    | Description | Example |
 |------------|-------------|---------|
-|**Messaging (Product benefits)**|Paint a clear, visual and desirable picture of what is possible. |<!-- ./media/image43.jpg to be fixed -->|
-|||<!-- ./media/image44.jpg to be fixed-->|
-|||<!-- ./media/image46.jpg to be fixed -->|
-||Describe the most significant benefits and rewards that your prospect will realize after purchase.|- For example, “Save time and money (benefits) by having a system that does all the tracking and calculations for you (features).”|
-||- Don’t only list features and app functionality, start with the benefit first, then you can follow with the features.|
-||- Paint a picture of a possible experience the prospect will immediately desire.|
-|Clearly articulate a compelling desired outcome |- If possible, use industry-specific language and vocabulary to resonate with your prospect deeply.||
-||- Choose a particular persona to speak to directly.||
-||- Engage prospects by speaking directly to them using first person “you” language.||
+|**Messaging (Product benefits)**|Paint a clear, visual and desirable picture of what is possible. |-|
+|-|Describe the most significant benefits and rewards that your prospect will realize after purchase.|- For example, “Save time and money (benefits) by having a system that does all the tracking and calculations for you (features).”|
+|-|- Don’t only list features and app functionality, start with the benefit first, then you can follow with the features.|-|
+|-|- Paint a picture of a possible experience the prospect will immediately desire.|-|
+|-| Clearly articulate a compelling desired outcome |- If possible, use industry-specific language and vocabulary to resonate with your prospect deeply.|-|
+|-|- Choose a particular persona to speak to directly.|-|
+|-|- Engage prospects by speaking directly to them using first person “you” language.|-|
 
 
 | Element     | Description | Example |
 |-------------|-------------|---------|
-|**Messaging (Prove your claims)** |Include specific calls-to-action on your app page.|	“Reduce how long it takes to set up your recipes in the morning from 1 hour to 10 minutes.”<!-- ./media/image52.jpg to be fixed -->|
-||Don’t make general and abstract claims.||
-
-- Use data as often as possible to support your statements.
-
-If you make specific claims, support your claims with proof, while Quantifying impacts and gains.
-- The more specific and concrete your promise of value is, the better.
-- Abstract concepts such as “more efficiency, more productivity, transform your business” are not emotionally impactful or convincing and do not compel a prospect to act.
+|**Messaging (Prove your claims)** |Include specific calls-to-action on your app page.|	“Reduce how long it takes to set up your recipes in the morning from 1 hour to 10 minutes.”|
+|-|Don’t make general and abstract claims.|-|
+|-|Use data as often as possible to support your statements.|
+|-|If you make specific claims, support your claims with proof, while Quantifying impacts and gains.|
+|-| The more specific and concrete your promise of value is, the better.|
+|-| Abstract concepts such as “more efficiency, more productivity, transform your business” are not emotionally impactful or convincing and do not compel a prospect to act.
 
 Target market - If you support multiple countries or languages, this is a key selling feature. • Find a way to show this visually. <!--	./media/image49.jpg -->
 	
 | Element    | Description | Example |
 |------------|-------------|---------|
-|**Messaging (Compelling call-to-action)**| Include specific calls-to-action on your app page|<!-- >./media/image53.jpg -->|
+|**Messaging (Compelling call-to-action)**| Include specific calls-to-action on your app page|
 
 - This can be your free trial; a time-limited special price; a scheduled walk-through demonstration; and so on.
 - The words "free” and “save” are highly emotional words in the English language, so they should be used.
@@ -125,23 +122,22 @@ Button text should use benefit language rather than descriptive language.
 
 | Element       | Description | Example |
 |---------------|-------------|---------|
-|**Messaging (Create a sense of urgency by teaching the prospects)** |Help your prospect gain a sense of urgency to buy by teaching them one thing about how they can be more efficient or profitable now.	|<!-- ./media/image55.jpg --> Your bakery profitability will decrease over the next five years due to an increase of 3% in the cost of key inputs, such as wheat and sugar. Want to know five key strategies that can help you mitigate this challenge? Click here to find out how to preserve your profit margin <!-- ./media/image56.jpg -->|
+|**Messaging (Create a sense of urgency by teaching the prospects)** |Help your prospect gain a sense of urgency to buy by teaching them one thing about how they can be more efficient or profitable now.| Your bakery profitability will decrease over the next five years due to an increase of 3% in the cost of key inputs, such as wheat and sugar. Want to know five key strategies that can help you mitigate this challenge? Click here to find out how to preserve your profit margin|
 
 - Show them how their performance in one key business area is below that of their competitors.
 - For an example you can provide a quick online self-assessment, a top-10 tips blog post, and much more.
 Visual elements
 
-| Element   | Description | Example |
-|-----------|-------------|---------|
-|**Pictures (Differentiation comparison images)**| Show them, don’t tell them|Show the before and after state.|<!-- ./media/image57.jpg -->|
-
+| Element   | Description |
+|-----------|-------------|
+|**Pictures (Differentiation comparison images)**| Show them, don’t tell them|Show the before and after state.|
 
 - This is a visual image of how your prospects do things now versus how they will be able to do it in the future.
 - You are not telling them but showing them using a visual.
 
 | Element              | Description | Example |
 |----------------------|-------------|--------------|
-|**Compelling proof screen shots**|Visually demonstrate all the claims that you are making.	|Quickly and easily view inventory items <!-- ./media/image61.jpg	./media/image62.jpg -->|
+|**Compelling proof screen shots**|Visually demonstrate all the claims that you are making.	|Quickly and easily view inventory items.|
 
 - Graphic dashboards are the most effective method.
 - Zoom in on the main benefit-related features.
@@ -151,9 +147,9 @@ Visual elements
 
 You want prospects to see how their data/process would look in your system.
 
-| Element          | Description | Example |
-|------------------|-------------|---------|
-|**Videos**	(Tell your story using videos not text)|Include as many videos as possible.|<!--	./media/image63.jpg ./media/image64.jpg -->|
+| Element          | Description |
+|------------------|-------------|
+|**Videos**	(Tell your story using videos not text)|Include as many videos as possible.|
 
 - Videos have a much higher level of engagement and viewing time and convey much more than you can ever say with words.
 
@@ -162,13 +158,13 @@ Include at least one customer testimonial video on your app landing page.
 
 Include one product demonstration video.
 
-- See the video best practices [https://aka.ms/ReadyToGo](https://aka.ms/ReadyToGo).
+- See the video best practices [https://aka.ms/ReadyToGo](./readiness-ready-to-go.md).
 
 ## Elements that reduce anxiety and risk, while increasing trust
 
-| Element     | Description | Example |
-|-------------|-------------|---------|
-|**Customer testimonials**|Don’t sell your product; let your customers do that for you.|<!-- ./media/image65.jpg ./media/image67.jpg -->|	
+| Element     | Description |
+|-------------|-------------|
+|**Customer testimonials**|Don’t sell your product; let your customers do that for you.|
 
 - Social proof is more credible and trustworthy to prospects. The purpose of testimonials is to reduce the buyer's anxiety and fear.
 
@@ -193,17 +189,17 @@ Transparency is the key to building trust.
 
 We recommend providing three offerings, optimized for three different customer segments. For more recommendations on pricing, see the pricing guide located at https://mbspartner.microsoft.com/BFI/Topic/64
 			
-| Element       | Description | Example |
-|---------------|-------------|---------|
-|**Live chat**|Include live chat, with a photo of one of your team members smiling at an appropriate time to increase conversion, such as when a prospect clicks the back button on your pricing page. ||
+| Element       | Description |
+|---------------|-------------|
+|**Live chat**|Include live chat, with a photo of one of your team members smiling at an appropriate time to increase conversion, such as when a prospect clicks the back button on your pricing page. |
 
 - Include their name if possible to build trust.
 
 ## Support elements: Interactivity and contact options
 
-| Element         | Description | Example |
-|-----------------|-------------|--------------|
-|**SHORT lead capture form**|Include a lead capture form on your page.|<!--	./media/image68.jpg -->|
+| Element         | Description |
+|-----------------|-------------|
+|**SHORT lead capture form**|Include a lead capture form on your page.|
 
 - Only ask for their name and email address, you can get the rest later.
 - Your forms should not have more than 4 or 5 fields to fill out. You have not yet earned the right or enough trust to ask for too much information at this point.
@@ -214,19 +210,19 @@ Most lead capture forms are way too long, demanding, and intimidating, and have 
 > Nobody has the time or is willing to fill out an annoying form, which is of no value to them, especially if it is purely self-serving from your standpoint.	
 
 
-| Element       | Description | Example |
-|---------------|-------------|---------|
-|**Contact**|Provide prospects with different contact options based on their readiness to interact with you.|<!--./media/image69.jpg -->|
+| Element       | Description |
+|---------------|-------------|
+|**Contact**|Provide prospects with different contact options based on their readiness to interact with you.|
 
 - Ideally, include a phone number and an email address with an employee photo.
 - This alone could double your conversion rate.
 
 | Element         | Description | Example |
 |-----------------|-------------|---------|
-|**AppSource app page link & social share**|Include a link back to your listing on AppSource, so the prospect can return when ready.|Return to AppSource<!--	./media/image70.jpg -->|
+|**AppSource app page link & social share**|Include a link back to your listing on AppSource, so the prospect can return when ready.|Return to AppSource.|
 
 - Also, enable visitors to share and forward your app with others!
 
-| Element        | Description | Example |
-|----------------|-------------|---------|
-|**Close them! Add a get started button**|Include a very specific call-to-action button with the option to buy or try.|<!-- ./media/image71.jpg ./media/image72.jpg -->|
+| Element        | Description |
+|----------------|-------------|
+|**Close them! Add a get started button**|Include a very specific call-to-action button with the option to buy or try.|

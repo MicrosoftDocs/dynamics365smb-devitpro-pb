@@ -12,7 +12,7 @@ author: jswymer
 # Deploying the Microsoft Dynamics NAV Web Server Components in a Single Computer Environment
 In this scenario, you install the [!INCLUDE[nav_web_server](includes/nav_web_server_md.md)], [!INCLUDE[nav_server](includes/nav_server_md.md)], and the SQL Server database components on the same computer.  
 
- ![NAV Web Client installation on one computer](media/Nav_Web_Client_Install_Single_Computer.png "Nav\_Web\_Client\_Install\_Single\_Computer")  
+ ![NAV Web Client installation on one computer.](media/Nav_Web_Client_Install_Single_Computer.png "Nav\_Web\_Client\_Install\_Single\_Computer")  
 
 This article also applies to deploying the [!INCLUDE[nav_phone](includes/nav_phone_md.md)] and [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)].
 

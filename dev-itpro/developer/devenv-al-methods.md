@@ -2,11 +2,11 @@
 title: "Working with AL methods"
 description: "Methods also known as procedures are a fundamental programming element in AL for Business Central."
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -19,7 +19,10 @@ There are two types of methods: system methods (built-in) and user-defined (cust
 
 - Built-in methods are part of the platform. Built-in methods can be used for different purposes, such as string handling, text formatting, database handling, and so on. For information about the available built-in methods, see [AL method Reference](methods-auto/library.md) and [Essential AL methods](devenv-essential-al-methods.md).
 
-- Custom methods are specialized methods for your application to bind the objects, such as tables, pages, and codeunits, together to form a unified whole. You can create special methods for use anywhere in the database.
+- Custom methods are specialized methods for your application to bind the objects, such as tables, pages, and code units, together to form a unified whole. You can create special methods for use anywhere in the database.
+
+> [!TIP]  
+> If you already know the name of, for example, a data type, method, property, or trigger, use the **Filter by title** field in the upper left corner, above the table of contents to find the topic faster. Otherwise, you can scan the table of contents to find it.
 
 ## Declaring methods
 
@@ -36,9 +39,9 @@ Typing the shortcut `tprocedure` will create the basic structure for a method wh
 
 ### Attributes (optional)
 
-An attribute is modifier on a method declaration that specifies information that controls the method's use and behavior. For example, decorating a method with the Integration attribute sets the method to be an event publisher. An attribute can have one or more arguments that set properties for the method instance.
+An attribute is a modifier on a method declaration that specifies information that controls the method's use and behavior. Adding an attribute on a method declaration is also known as *decorating* a method. For example, decorating a method with the Integration attribute sets the method to be an event publisher. An attribute can have one or more arguments that set properties for the method instance.
 
-Attributes are placed before the method. For information about the available attributes, see [Method Attributes](methods/devenv-method-attributes.md).
+Attributes are placed before the method. For information about the available attributes, see [Method Attributes](attributes/devenv-method-attributes.md).
 
 ### Local and global scope
 
@@ -68,7 +71,7 @@ For example, the following method declaration includes two parameters: `MyCustom
 
 ### Return values (optional)
 
-A method can return data that can be then coded against. A return value is a defined by a name, data type, and optional length depending on the data type. 
+A method can return data that can be then coded against. A return value is defined by a name (optional), data type, and optional length depending on the data type. 
 
 For example, if the return value is a Text DataType, the text might have a length of 50.
 
@@ -150,7 +153,7 @@ The method `DMY2DATE` is an example of a method that can be called by using a va
 NewDate := DMY2DATE(5, 11, 1992); //Returns the date November 5, 1992  
 ```  
   
-Depending on the use of the `DMY2DATE` method, one, two, or three parameters can be passed to the method because the second and third parameters are optional. When the second and third parameters are not used, values from the system date are used as default.  
+Depending on the use of the `DMY2DATE` method, one, two, or three parameters can be passed to the method because the second and third parameters are optional. When the second and third parameters are not used, values from the system date are used as default values.  
   
 ## Example 4  
 

@@ -3,9 +3,9 @@ title: "Debugging"
 description: "Overview of debugging in AL"
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
@@ -17,14 +17,14 @@ The process of finding and correcting errors is called *debugging*. With Visual 
 An alternative to classic debugging, is snapshot debugging, which allows you to record running code, and later debug it. For more information, see [Snapshot Debugging](devenv-snapshot-debugging.md).
 
 > [!IMPORTANT]  
-> To enable debugging in versions before [!INCLUDE[prodshort](../includes/prodshort.md)] April 2019, the `NetFx40_LegacySecurityPolicy` setting in the Microsoft.Dynamics.Nav.Server.exe.config file must be set to **false**. This requires a server restart.
+> To enable debugging in versions before [!INCLUDE[prod_short](../includes/prod_short.md)] April 2019, the `NetFx40_LegacySecurityPolicy` setting in the Microsoft.Dynamics.Nav.Server.exe.config file must be set to **false**. This requires a server restart.
 
 > [!IMPORTANT]  
 > To use the development environment and debugger, you must make sure that port `7049` is available.
 
 There are a number of limitations to be aware of:
 
-- "External code" can only be debugged if the code has the `showMyCode` flag set. For more information, see [Security Setting and IP Protection](devenv-security-settings-and-ip-protection.md). 
+- "External code" can only be debugged if the code has the `allowDebugging` flag set to `true`. For more information, see [Resource Exposure Policy Setting](devenv-security-settings-and-ip-protection.md). 
 - The debugger launches a new client instance each time you press **F5**. If you close the debugging session, and then start a new session, this new session will rely on a new client instance. We recommend that you close the Web client instances when you close a debugging session.
 - Pausing the debugging session is not supported.
 
@@ -44,7 +44,7 @@ Set breakpoints on the external code that is not part of your original project. 
 
 In the following video illustration, the `Customer.dal` is an external file. A breakpoint is set in the `Customer.dal` file which is referenced from your AL project to stop execution at the marked point. 
 
-![Debugger](media/DebuggingAL.gif)
+![Debugger.](media/DebuggingAL.gif)
 
 For more information about **Go to Definition**, see [AL Code Navigation](devenv-al-code-navigation.md). 
 
@@ -63,12 +63,16 @@ Specify if the debugger breaks on record changes by using the `breakOnRecordWrit
 
 |Record change|AL Methods|  
 |-------------------|---------------------|  
-|Create a new record|[Insert Method (Record)](methods-auto/record/record-insert-method.md)|  
+|Create a new record|[Insert Method (Record)](methods-auto/record/record-insert--method.md)|  
 |Update an existing record|[Modify Method (Record)](methods-auto/record/record-modify-method.md), [ModifyAll Method (Record)](methods-auto/record/record-modifyall-method.md), [Rename Method (Record)](methods-auto/record/record-rename-method.md)|  
 |Delete an existing record|[Delete Method (Record)](methods-auto/record/record-delete-method.md), [DeleteAll Method (Record)](methods-auto/record/record-deleteall-method.md)|  
 
 
 The default value of the `breakOnRecordWrite` property is **false**, which means that the debugger is not set to break on record changes by default. To break on record changes, you can set the `breakOnRecordWrite` property to **true** in the `launch.json` file. For more information, see [JSON Files](devenv-json-files.md).
+
+## Debugging large size variable values
+
+Variables that contain values that are larger than 1024 bytes are truncated (`…`) and cannot be fully inspected from the **VARIABLES** window. In order to inspect a large size variable value, instead use the **DEBUG CONSOLE** and write the name or qualified name of a variable to inspect at the prompt and then press **Enter**.
 
 ## Attach and Debug Next
 
@@ -95,17 +99,17 @@ To use the Go To Definition on local server, it requires that the AL symbols are
 
 ## <a name="DebugSQL"></a>Debugging SQL behavior
 
-Traditionally, debugging AL has been about examining behavior of the language runtime, for example, looking into the content of local variables at a breakpoint. As of [!INCLUDE[prodshort](includes/prodshort.md)] April 2019, the AL debugger also offers the capability to examine the impact that your AL code has on the [!INCLUDE[prodshort](includes/prodshort.md)] database. The `enableSQLInformationDebugger` setting enables this functionality. For more information, see [JSON Files](devenv-json-files.md#Launchjson).
+Traditionally, debugging AL has been about examining behavior of the language runtime, for example, looking into the content of local variables at a breakpoint. As of [!INCLUDE[prod_short](includes/prod_short.md)] April 2019, the AL debugger also offers the capability to examine the impact that your AL code has on the [!INCLUDE[prod_short](includes/prod_short.md)] database. The `enableSQLInformationDebugger` setting enables this functionality. For more information, see [JSON Files](devenv-json-files.md#Launchjson).
 
 ### View database statistics
 
-In the **VARIABLES** pane in debugger, expand the **\<Database statistics\>** node to get insights such as the current network latency between the [!INCLUDE[server](includes/server.md)] and the [!INCLUDE[prodshort](includes/prodshort.md)] database, the total number of SQL statements executed, and the total number of rows read, as well as insights into the most recent SQL statements executed by the server. The following insights are part of the database statistics:
+In the **VARIABLES** pane in debugger, expand the **\<Database statistics\>** node to get insights such as the current network latency between the [!INCLUDE[server](includes/server.md)] and the [!INCLUDE[prod_short](includes/prod_short.md)] database, the total number of SQL statements executed, and the total number of rows read, as well as insights into the most recent SQL statements executed by the server. The following insights are part of the database statistics:
 
 |Insight | Description  |
 |-------|-------|
 |Current SQL latency (ms) | When the debugger hits a breakpoint, the [!INCLUDE[server](includes/server.md)] will send a short SQL statement to the database and measure how long time it takes. The value is in milliseconds.| 
 |Number of SQL Executes | This number shows the total number of SQL statements executed in the debugging session since the debugger was started.|
-|Number of SQL Rows Read | This number shows the total number of rows read from the [!INCLUDE[prodshort](includes/prodshort.md)] database in the debugging session since the debugger was started.|
+|Number of SQL Rows Read | This number shows the total number of rows read from the [!INCLUDE[prod_short](includes/prod_short.md)] database in the debugging session since the debugger was started.|
 
 > [!TIP]
 > You can also get database insights from the AL runtime by using the [SqlStatementsExecuted()](methods-auto/sessioninformation/sessioninformation-sqlstatementsexecuted-method.md) and [SqlRowsRead()](methods-auto/sessioninformation/sessioninformation-sqlrowsread-method.md) methods.
@@ -116,19 +120,19 @@ The database insights also let you peek into the most recent and the latest long
 
 | Insight    | Description      |
 |-------|-------|
-|Statement | The SQL statement that the AL server sent to the [!INCLUDE[prodshort](includes/prodshort.md)] database. You can copy this into other database tools, such as SQL Server Management Studio, for further analysis.| 
+|Statement | The SQL statement that the AL server sent to the [!INCLUDE[prod_short](includes/prod_short.md)] database. You can copy this into other database tools, such as SQL Server Management Studio, for further analysis.| 
 |Execution time (UTC) | The timestamp (in UTC) of when the SQL statement was executed. You can use this to infer whether the SQL statement was part of the AL code between current and last breakpoint (if set).
-|Duration (ms) | The duration in milliseconds of the total execution time of the SQL statement measured inside the [!INCLUDE[server](includes/server.md)]. You can use this to analyze whether you are missing indexes ([!INCLUDE[prodshort](includes/prodshort.md)] keys), or to experiment with performance of database partitioning and/or compression.|
-|Approx. Rows Read | This number shows the approximate number of rows read from the [!INCLUDE[prodshort](includes/prodshort.md)] database by the SQL statement. You can use this to analyze whether you are missing filters.|
+|Duration (ms) | The duration in milliseconds of the total execution time of the SQL statement measured inside the [!INCLUDE[server](includes/server.md)]. You can use this to analyze whether you are missing indexes ([!INCLUDE[prod_short](includes/prod_short.md)] keys), or to experiment with performance of database partitioning and/or compression.|
+|Approx. Rows Read | This number shows the approximate number of rows read from the [!INCLUDE[prod_short](includes/prod_short.md)] database by the SQL statement. You can use this to analyze whether you are missing filters.|
 
 The number of SQL statements tracked by the debugger can be configured in the [!INCLUDE[server](includes/server.md)]. The default value is 10.
 
 > [!NOTE]  
-> For [!INCLUDE[prodshort](includes/prodshort.md)] on-premises, the [!INCLUDE[server](includes/server.md)] instance has several configuration settings that control the SQL statistics that are gathered and then displayed in debugger, like whether long running SQL statements or SQL statements are shown. If you are not seeing the insights that you expect to see in debugger, check the server configuration. For more information, see [Configuring Business Central Server](../administration/configure-server-instance.md#Development).
+> For [!INCLUDE[prod_short](includes/prod_short.md)] on-premises, the [!INCLUDE[server](includes/server.md)] instance has several configuration settings that control the SQL statistics that are gathered and then displayed in debugger, like whether long running SQL statements or SQL statements are shown. If you are not seeing the insights that you expect to see in debugger, check the server configuration. For more information, see [Configuring Business Central Server](../administration/configure-server-instance.md#Development).
 
 ## NonDebuggable attribute
 
-The ability to debug certain methods and/or variables can be restricted. For more information, see [NonDebuggable Attribute](methods/devenv-nondebuggable-attribute.md).
+The ability to debug certain methods and/or variables can be restricted. For more information, see [NonDebuggable Attribute](attributes/devenv-nondebuggable-attribute.md).
 
 ## See Also
 

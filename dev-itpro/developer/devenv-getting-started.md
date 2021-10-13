@@ -2,11 +2,11 @@
 title: "Getting Started with Modules"
 description: "Provides an overview of what you will need to work with modules in the System Application."
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: bholtorf
 ---
@@ -14,7 +14,7 @@ author: bholtorf
 This topic provides information about requirements for working with modules in the System Application.
 
 ## AL
-Get familiar with development in AL. For more information, see [Getting Started with AL](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-get-started).  
+Get familiar with development in AL. For more information, see [Getting Started with AL](./devenv-get-started.md).  
 
 ## Git
 Familiarize yourself with Git. For a quick introduction, see [git - the simple guide](https://rogerdudler.github.io/git-guide/).

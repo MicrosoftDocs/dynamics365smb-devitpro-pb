@@ -1,28 +1,31 @@
 ---
-title: "System.GetUrl Method"
+title: "System.GetUrl(ClientType, String, ObjectType, Integer, RecordRef [, Boolean]) Method"
+description: "Generates a URL for the specified client target that is based on the configuration of the server instance."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# System.GetUrl Method
+# System.GetUrl(ClientType, String, ObjectType, Integer, RecordRef [, Boolean]) Method
+> **Version**: _Available or changed with runtime version 1.0._
+
 Generates a URL for the specified client target that is based on the configuration of the server instance. If the code runs in a multitenant deployment architecture, the generated URL will automatically apply to the tenant ID of the current user.
 
 
 ## Syntax
-```
+```AL
 String :=   System.GetUrl(ClientType: ClientType, Company: String, ObjectType: ObjectType, ObjectId: Integer, RecordRef: RecordRef [, UseFilters: Boolean])
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *ClientType*  
 &emsp;Type: [ClientType](../clienttype/clienttype-option.md)  
@@ -44,7 +47,7 @@ Specifies the ID of the specified object type that the URL must open.
 &emsp;Type: [RecordRef](../recordref/recordref-data-type.md)  
 Specifies the RecordRef variable that specifies which record to open.
         
-*UseFilters*  
+*[Optional] UseFilters*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 Specifies whether to include filters that are defined on the object as a text string in the URL.
         
@@ -53,7 +56,7 @@ Specifies whether to include filters that are defined on the object as a text st
 ## Return Value
 *String*  
 &emsp;Type: [String](../string/string-data-type.md)  
-  
+
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

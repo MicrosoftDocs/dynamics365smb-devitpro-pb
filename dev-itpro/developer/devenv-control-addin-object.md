@@ -3,11 +3,11 @@ title: "Control Addin Object"
 description: "Description of the control addin object type."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.assetid: a0ac492d-e3c8-4a76-87b4-b469e08c58e7
 ms.author: solsen
@@ -158,7 +158,7 @@ page 50130 PageWithAddIn
 
 ## Loading static resources using AJAX requests
 
-You can design a control add-in to load static resources from the add-in package by using AJAX requests. For example, the control add-in could load HTML content and inject it into add-in's HTML structure. In this case, you must use the `withCrendentials` property set to `true` in the AJAX request. Otherwise, the request won't contain the necessary context and important cookies required by the [!INCLUDE[prodshort](includes/prodshort.md)] service, and it may fail in production. This concept is illustrated in the following examples.
+You can design a control add-in to load static resources from the add-in package by using AJAX requests. For example, the control add-in could load HTML content and inject it into add-in's HTML structure. In this case, you must use the `withCrendentials` property set to `true` in the AJAX request. Otherwise, the request won't contain the necessary context and important cookies required by the [!INCLUDE[prod_short](includes/prod_short.md)] service, and it may fail in production. This concept is illustrated in the following examples.
 
 Wrong:
 
@@ -175,7 +175,7 @@ $.ajax({
           withCredentials: true
     }
 )).done(function(data) {
-    $("#controlAddIn).text(data);
+    $("#controlAddIn").text(data);
 });
 ```
 

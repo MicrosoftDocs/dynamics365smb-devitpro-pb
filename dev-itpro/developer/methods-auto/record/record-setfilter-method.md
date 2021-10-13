@@ -1,24 +1,27 @@
 ---
-title: "Record.SetFilter Method"
+title: "Record.SetFilter(Any, String [, Any,...]) Method"
+description: "Assigns a filter to a field that you specify."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Record.SetFilter Method
+# Record.SetFilter(Any, String [, Any,...]) Method
+> **Version**: _Available or changed with runtime version 1.0._
+
 Assigns a filter to a field that you specify.
 
 
 ## Syntax
-```
+```AL
  Record.SetFilter(Field: Any, String: String [, Value: Any,...])
 ```
 ## Parameters
@@ -34,7 +37,7 @@ The field that you want to filter.
 &emsp;Type: [String](../string/string-data-type.md)  
 The filter expression. A valid expression consists of alphanumeric characters and one or more of the following operators: \<, \>, \\, &, &#124;, and =. You can use replacement fields (%1, %2, and so on) to insert values at run-time.
           
-*Value*  
+*[Optional] Value*  
 &emsp;Type: [Any](../any/any-data-type.md)  
 Replacement values to insert in replacement fields in the filter expression. The data type of Value must match the data type of Field.
           

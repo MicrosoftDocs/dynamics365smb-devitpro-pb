@@ -1,24 +1,27 @@
 ---
-title: "Media.ImportStream Method"
+title: "Media.ImportStream(InStream, Text [, Text]) Method"
+description: "Adds a media type (MIME), such as jpeg image, from an InStream object to a Media data type field of a record for displaying the media in the client."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Media.ImportStream Method
+# Media.ImportStream(InStream, Text [, Text]) Method
+> **Version**: _Available or changed with runtime version 1.0._
+
 Adds a media type (MIME), such as jpeg image, from an InStream object to a Media data type field of a record for displaying the media in the client. The media file is imported to the application database and a reference to the media is included in the Media data type field.
 
 
 ## Syntax
-```
+```AL
 [ID := ]  Media.ImportStream(Stream: InStream, Description: Text [, MimeType: Text])
 ```
 ## Parameters
@@ -34,16 +37,16 @@ The InStream object that contains the media that you want to use on the record.
 &emsp;Type: [Text](../text/text-data-type.md)  
 Specifies text that can be used in the client to describe the media file.
         
-*MimeType*  
+*[Optional] MimeType*  
 &emsp;Type: [Text](../text/text-data-type.md)  
 Specifies the media content type. MIME type is used by browsers, and is an Internet standard to describe the contents of a file. The MimeType value must be a two-part string that consists of a type and subtype, such as image/jpeg or image/gif. If this parameter is not specified, the function will deduct the MIME type from the file extension. For example the MIME type for a .jpg file is image/jpeg.
           
 
 
 ## Return Value
-*ID*  
+*[Optional] ID*  
 &emsp;Type: [Guid](../guid/guid-data-type.md)  
-The unique ID that is assigned to the media object in the database. You can also get the ID by using the MediaId method. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+The unique ID that is assigned to the media object in the database. You can also get the ID by using the MediaId method. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -86,7 +89,7 @@ With the objects in place, you can add and run the following AL code to import t
 
 This code iterates over records in the **My Items** table. For each record, it looks in the *C:\\images* folder for a file whose name matches the **No.** field of the record. If there is a match the file, an InStream object is created for the file, the media is imported into the record, and a confirmation message is returned.
 
-```
+```al
  var
     myItemRec: Record "My Items";
     fileName: Text;
@@ -97,7 +100,7 @@ This code iterates over records in the **My Items** table. For each record, it l
 begin
     if  myItemRec.FindFirst() then begin  
         repeat begin
-            fileName := 'C:\images\' + FORMAT(myItemRec."No.") + '.jpg';  
+            fileName := 'C:\images\' + Format(myItemRec."No.") + '.jpg';  
     
             if File.Exists(fileName) then begin  
                 importFile.Open(fileName);  

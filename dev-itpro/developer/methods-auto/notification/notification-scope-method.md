@@ -1,42 +1,45 @@
 ---
-title: "Notification.Scope Method"
+title: "Notification.Scope([NotificationScope]) Method"
+description: "Specifies the context in which the notification appears in the client."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/23/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Notification.Scope Method
+# Notification.Scope([NotificationScope]) Method
+> **Version**: _Available or changed with runtime version 1.0._
+
 Specifies the context in which the notification appears in the client.
 
 
 ## Syntax
-```
+```AL
 [Scope := ]  Notification.Scope([Scope: NotificationScope])
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 ## Parameters
 *Notification*  
 &emsp;Type: [Notification](notification-data-type.md)  
 An instance of the [Notification](notification-data-type.md) data type.  
 
-*Scope*  
+*[Optional] Scope*  
 &emsp;Type: [NotificationScope](../notificationscope/notificationscope-option.md)  
 The scope in which the notification appears in the client  
 
 
 ## Return Value
-*Scope*  
+*[Optional] Scope*  
 &emsp;Type: [NotificationScope](../notificationscope/notificationscope-option.md)  
-The scope of the current notification.  
+The scope of the current notification.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -48,39 +51,41 @@ For more information and a detailed example, see [Notifications](../../devenv-no
 ##  Example 1
 
 The following code creates a notification and sends it in the local scope.
-```
-MyNotification.MESSAGE := 'This is a notification';
-MyNotification.SCOPE := NOTIFICATIONSCOPE::LocalScope;
-MyNotification.SEND;
+
+```al
+MyNotification.Message := 'This is a notification';
+MyNotification.Scope := NotificationScope::LocalScope;
+MyNotification.Send;
 ```
 
 ## Remarks 2
-The data that is specified by the SETDATA method can be retrieved by the [GETDATA Method](../../methods/devenv-getdata-method-notification.md). The SETDATA and GETDATA methods are typically used for actions with actions on the notification. The SETDATA method is called from the source is the notification, while the GETDATA method is called from the action code.
+The data that is specified by the SetData method can be retrieved by the [GetData Method](../library.md). The SetData and GetData methods are typically used for actions with actions on the notification. The SetData method is called from the source is the notification, while the GetData method is called from the action code.
 
-You can use multiple SETDATA method calls to specify different data items. The data remains available for the life of the notification instance. The data is cleared once the notification instance has been dismissed or an action is taken.
+You can use multiple SetData method calls to specify different data items. The data remains available for the life of the notification instance. The data is cleared once the notification instance has been dismissed or an action is taken.
 
 For more information and a detailed example, see [Notifications](../../devenv-notifications-developing.md).
 
 ##  Example 2
 
 The following code sets the data for a notification:
-```
-MyNotification.MESSAGE := 'This is a notification';
-MyNotification.SCOPE := NOTIFICATIONSCOPE::LocalScope;
-MyNotification.SETDATA('Created',FORMAT(CURRENTDATETIME,0,9));
-MyNotification.SETDATA('ID',FORMAT(CREATEGUID,0,9));
-MyNotification.ADDACTION('Action 1',CODEUNIT::"Action Handler",'RunAction1');
-MyNotification.ADDACTION('Action 2',CODEUNIT::"Action Handler",'RunAction2');
-MyNotification.SEND;
+
+```al
+MyNotification.Message := 'This is a notification';
+MyNotification.Scope := NotificationScope::LocalScope;
+MyNotification.SetData('Created',Format(CurrentDateTime,0,9));
+MyNotification.SetData('ID',Format(CreateGUID,0,9));
+MyNotification.AddAction('Action 1',CodeUnit::"Action Handler",'RunAction1');
+MyNotification.AddAction('Action 2',CodeUnit::"Action Handler",'RunAction2');
+MyNotification.Send;
 ```
 The following code gets the data for a notification:
 
-```
-MyNotification.GETDATA('Created');
-MyNotification.GETDATA('ID');''
+```al
+MyNotification.GetData('Created');
+MyNotification.GetData('ID');''
 ```
 
 ## See Also
 [Notification Data Type](notification-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
-[Developing Extensions](../../devenv-dev-overview.md)
+[Developing Extensions](../../devenv-dev-overview.md)''
