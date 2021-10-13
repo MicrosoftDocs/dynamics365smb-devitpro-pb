@@ -24,6 +24,10 @@ Specifies the explicit interface implementer for an enum value.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
+## Remarks
+
+For a code example, see [DefaultImplementation Property](devenv-defaultimplementation-property.md).
+
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
