@@ -46,6 +46,11 @@ This optional parameter specifies the format that you want to use.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+For more information about *FormatNumber*, see [Formatting Values, Dates, and Time](../../devenv-format-property.md)).
+
 ## See Also
 [System Data Type](system-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
