@@ -3,7 +3,7 @@ title: "Compiler Error AL470"
 description: "The referenced page '{0}' of PageType 'HeadlinePart' is only allowed inside pages of PageType 'RoleCenter'."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,9 @@ author: SusanneWindfeldPedersen
 # Compiler Error AL470
 The referenced page '{0}' of PageType 'HeadlinePart' is only allowed inside pages of PageType 'RoleCenter'.
 
+
+## Description
+Pages of the type 'HeadlinePart' are only allowed inside pages of PageType 'RoleCenter'.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

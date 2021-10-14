@@ -19,7 +19,7 @@ The anchoring symbol '{0}' must be a grouping symbol.
 
 
 ## Description
-An anchoting symbol must be a grouping symbol.
+An anchoring symbol must be a grouping symbol.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

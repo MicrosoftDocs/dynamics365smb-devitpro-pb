@@ -19,7 +19,7 @@ The primary key '{0}' on table '{1}' (the first one in the key list) must be ena
 
 
 ## Description
-The primary key of a table must be enabled.
+The primary key of a table must have the **Enabled** property set to true.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
