@@ -3,7 +3,7 @@ title: "Compiler Error AL683"
 description: "The permissionset '{0}' belongs to a different module and cannot be used when defining entitlements."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,8 +15,10 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Error AL683
-The permissionset '{0}' belongs to a different module and cannot be used when defining entitlements.
 
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
+The permissionset '{0}' belongs to a different module and cannot be used when defining entitlements.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

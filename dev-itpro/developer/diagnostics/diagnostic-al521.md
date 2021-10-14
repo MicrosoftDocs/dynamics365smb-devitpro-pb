@@ -3,7 +3,7 @@ title: "Compiler Error AL521"
 description: "The primary key '{0}' on table '{1}' (the first one in the key list) must not have the Unique property set."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,8 +15,10 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Error AL521
-The primary key '{0}' on table '{1}' (the first one in the key list) must not have the Unique property set.
 
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
+The primary key '{0}' on table '{1}' (the first one in the key list) must not have the Unique property set.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

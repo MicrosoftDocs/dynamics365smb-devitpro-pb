@@ -3,7 +3,7 @@ title: "Compiler Warning (Future Error) AL550"
 description: "Groups defined in the action area '{0}' should only contain actions."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,8 +15,10 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Warning (Future Error) AL550
-Groups defined in the action area '{0}' should only contain actions.
 
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
+Groups defined in the action area '{0}' should only contain actions.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

@@ -3,7 +3,7 @@ title: "Compiler Error AL171"
 description: "The property value '{0}' on property '{1}' is not valid."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,8 +15,10 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Error AL171
-The property value '{0}' on property '{1}' is not valid.
 
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
+The property value '{0}' on property '{1}' is not valid.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

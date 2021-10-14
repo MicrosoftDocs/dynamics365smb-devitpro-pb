@@ -3,7 +3,7 @@ title: "Compiler Error AL470"
 description: "The referenced page '{0}' of PageType 'HeadlinePart' is only allowed inside pages of PageType 'RoleCenter'."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,8 +15,10 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Error AL470
-The referenced page '{0}' of PageType 'HeadlinePart' is only allowed inside pages of PageType 'RoleCenter'.
 
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
+The referenced page '{0}' of PageType 'HeadlinePart' is only allowed inside pages of PageType 'RoleCenter'.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

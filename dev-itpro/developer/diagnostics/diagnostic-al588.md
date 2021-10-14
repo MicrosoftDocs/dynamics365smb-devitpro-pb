@@ -3,7 +3,7 @@ title: "Compiler Warning AL588"
 description: "The type of parameter '{1}' on event subscriber '{0}' is of type 'Option', but the expected type is '{2}'."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,8 +15,10 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Warning AL588
-The type of parameter '{1}' on event subscriber '{0}' is of type 'Option', but the expected type is '{2}'. Please update the subscriber type to match the publisher.
 
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
+The type of parameter '{1}' on event subscriber '{0}' is of type 'Option', but the expected type is '{2}'. Please update the subscriber type to match the publisher.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

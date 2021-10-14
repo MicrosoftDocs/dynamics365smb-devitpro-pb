@@ -3,7 +3,7 @@ title: "Compiler Error AL1151"
 description: "Cannot create a manifest for Extension {0} because the Name and Publisher are the same as one or more dependencies."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,8 +15,10 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Error AL1151
-Cannot create a manifest for Extension "{0}" because the Name and Publisher are the same as one or more dependencies.
 
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
+Cannot create a manifest for Extension "{0}" because the Name and Publisher are the same as one or more dependencies.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

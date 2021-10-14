@@ -3,7 +3,7 @@ title: "Compiler Error AL358"
 description: "Cannot move or modify the {0} '{1}' in the same '{2}' that you added."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,8 +15,10 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Error AL358
-Cannot move or modify the {0} '{1}' in the same '{2}' that you added.
 
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
+Cannot move or modify the {0} '{1}' in the same '{2}' that you added.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

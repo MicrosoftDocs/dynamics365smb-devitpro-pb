@@ -3,7 +3,7 @@ title: "Compiler Warning (Future Error) AL571"
 description: "The property 'Description' should only be used for internal comments."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,8 +15,10 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Warning (Future Error) AL571
-The property 'Description' should only be used for internal comments. Use the property 'Caption' or 'CaptionML' in order to specify the profile caption displayed to end users.
 
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
+The property 'Description' should only be used for internal comments. Use the property 'Caption' or 'CaptionML' in order to specify the profile caption displayed to end users.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

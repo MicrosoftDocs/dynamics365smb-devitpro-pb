@@ -3,7 +3,7 @@ title: "Compiler Error AL139"
 description: "Since '{0}' doesn't have a return value, EXIT cannot be called with a value."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,8 +15,10 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Error AL139
-Since '{0}' doesn't have a return value, EXIT cannot be called with a value.
 
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
+Since '{0}' doesn't have a return value, EXIT cannot be called with a value.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

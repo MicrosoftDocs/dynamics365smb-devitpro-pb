@@ -3,7 +3,7 @@ title: "Compiler Error AL565"
 description: "Fast publishing requires a built application file to be present."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,8 +15,10 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Error AL565
-Fast publishing requires a built application file to be present. The '{0}' application file contains a manifest which is not valid. Please rebuild the application file before continuing with fast publishing.
 
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
+Fast publishing requires a built application file to be present. The '{0}' application file contains a manifest which is not valid. Please rebuild the application file before continuing with fast publishing.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

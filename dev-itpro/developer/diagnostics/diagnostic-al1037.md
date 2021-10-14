@@ -3,7 +3,7 @@ title: "Compiler Error AL1037"
 description: "The locale '{0}' is already defined."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,8 +15,10 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Error AL1037
-The locale '{0}' is already defined.
 
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
+The locale '{0}' is already defined.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

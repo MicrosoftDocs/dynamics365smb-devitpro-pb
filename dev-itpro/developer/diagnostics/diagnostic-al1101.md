@@ -3,7 +3,7 @@ title: "Compiler Fatal Error AL1101"
 description: "Target must specify one of: 'internal', 'solution', 'extension'."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,8 +15,10 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Fatal Error AL1101
-Target must specify one of: 'internal', 'solution', 'extension'.
 
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
+Target must specify one of: 'internal', 'solution', 'extension'.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

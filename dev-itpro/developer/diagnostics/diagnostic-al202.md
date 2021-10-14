@@ -3,7 +3,7 @@ title: "Compiler Error AL202"
 description: "The {0} FlowField is not an Integer field."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,8 +15,10 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Error AL202
-The {0} FlowField is not an Integer field. If a FlowField CalcFormula starts with 'Count', then the FlowField must be an Integer type field.
 
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
+The {0} FlowField is not an Integer field. If a FlowField CalcFormula starts with 'Count', then the FlowField must be an Integer type field.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

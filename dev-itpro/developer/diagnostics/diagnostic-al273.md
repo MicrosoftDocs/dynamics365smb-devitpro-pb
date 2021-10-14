@@ -3,7 +3,7 @@ title: "Compiler Warning AL273"
 description: "The name '{0}' is an Area type."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,8 +15,10 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Warning AL273
-The name '{0}' is an Area type. Using an Area type name may limit extensibility.
 
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
+The name '{0}' is an Area type. Using an Area type name may limit extensibility.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

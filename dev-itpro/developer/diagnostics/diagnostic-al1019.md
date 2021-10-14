@@ -3,7 +3,7 @@ title: "Compiler Error AL1019"
 description: "One or more dependencies defined in the project manifest are not valid."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,8 +15,10 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Error AL1019
-One or more dependencies defined in the project manifest are not valid. One or more of the required attributes: 'publisher', 'name', 'version', and 'id' are either missing or not valid.
 
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
+One or more dependencies defined in the project manifest are not valid. One or more of the required attributes: 'publisher', 'name', 'version', and 'id' are either missing or not valid.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
