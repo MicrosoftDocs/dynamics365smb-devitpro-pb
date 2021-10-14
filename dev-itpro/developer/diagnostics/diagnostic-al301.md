@@ -3,7 +3,7 @@ title: "Compiler Error AL301"
 description: "A list must end with a member; not a separator {0}."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,9 @@ author: SusanneWindfeldPedersen
 # Compiler Error AL301
 A list must end with a member; not a separator {0}.
 
+
+## Description
+A list cannot end with a separator.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

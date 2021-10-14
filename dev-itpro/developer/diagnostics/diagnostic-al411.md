@@ -3,7 +3,7 @@ title: "Compiler Error AL411"
 description: "{0} can be specified only once."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,9 @@ author: SusanneWindfeldPedersen
 # Compiler Error AL411
 {0} can be specified only once.
 
+
+## Description
+A label property cannot be specified more than once.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

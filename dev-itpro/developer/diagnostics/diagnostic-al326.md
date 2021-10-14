@@ -3,7 +3,7 @@ title: "Compiler Error AL326"
 description: "'{0}' is not a valid column type."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,9 @@ author: SusanneWindfeldPedersen
 # Compiler Error AL326
 '{0}' is not a valid column type.
 
+
+## Description
+The specified data type is not valid for columns. Valid data types are Boolean, Char, Integer, BigInteger, Decimal, Option, Enum, Text, Code, TextConst, Label, DateTime, Time, Date, DateFormula, Duration, Guid, RecordId, TableFilter, String, Blob, Media, Variant and MediaSet.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

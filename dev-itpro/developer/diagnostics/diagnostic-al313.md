@@ -3,7 +3,7 @@ title: "Compiler Error AL313"
 description: "Attribute {0} can only be used within {1}."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,9 @@ author: SusanneWindfeldPedersen
 # Compiler Error AL313
 Attribute {0} can only be used within {1}.
 
+
+## Description
+The referenced attribute cannot be set within such object. For more information about where the attribute is allowed in, refer to the attribute's documentation.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

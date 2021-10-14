@@ -3,7 +3,7 @@ title: "Compiler Error AL262"
 description: "The clustered key '{0}' has already been defined for table '{1}'."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,9 @@ author: SusanneWindfeldPedersen
 # Compiler Error AL262
 The clustered key '{0}' has already been defined for table '{1}'.
 
+
+## Description
+A clustered key can only be defined once in the same table.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

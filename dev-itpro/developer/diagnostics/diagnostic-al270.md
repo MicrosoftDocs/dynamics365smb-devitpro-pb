@@ -3,7 +3,7 @@ title: "Compiler Error AL270"
 description: "The control '{0}' is not found in the target '{1}'."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,9 @@ author: SusanneWindfeldPedersen
 # Compiler Error AL270
 The control '{0}' is not found in the target '{1}'.
 
+
+## Description
+Missing referenced control.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

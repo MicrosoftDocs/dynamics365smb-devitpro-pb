@@ -3,7 +3,7 @@ title: "Compiler Error AL391"
 description: "The date formula '{0}' must include a number."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,9 @@ author: SusanneWindfeldPedersen
 # Compiler Error AL391
 The date formula '{0}' must include a number.
 
+
+## Description
+A date formula must include a number.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

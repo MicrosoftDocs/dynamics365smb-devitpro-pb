@@ -3,7 +3,7 @@ title: "Compiler Warning (Future Error) AL269"
 description: "The referenced page '{0}' should be a list part or a card part."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,9 @@ author: SusanneWindfeldPedersen
 # Compiler Warning (Future Error) AL269
 The referenced page '{0}' should be a list part or a card part.
 
+
+## Description
+A page used as a page part should be a list part or a card part.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

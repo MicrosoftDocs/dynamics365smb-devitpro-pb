@@ -3,7 +3,7 @@ title: "Compiler Error AL272"
 description: "The anchoring symbol '{0}' must be a grouping symbol."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,9 @@ author: SusanneWindfeldPedersen
 # Compiler Error AL272
 The anchoring symbol '{0}' must be a grouping symbol.
 
+
+## Description
+An anchoting symbol must be a grouping symbol.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

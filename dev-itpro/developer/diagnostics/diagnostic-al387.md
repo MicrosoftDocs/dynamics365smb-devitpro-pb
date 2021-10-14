@@ -3,7 +3,7 @@ title: "Compiler Error AL387"
 description: "Namespace '{0}' is already specified."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,9 @@ author: SusanneWindfeldPedersen
 # Compiler Error AL387
 Namespace '{0}' is already specified.
 
+
+## Description
+A namespace has been defined multiple times.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

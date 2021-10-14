@@ -3,7 +3,7 @@ title: "Compiler Error AL263"
 description: "The primary key '{0}' on table '{1}' (the first one in the key list) must be enabled."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,9 @@ author: SusanneWindfeldPedersen
 # Compiler Error AL263
 The primary key '{0}' on table '{1}' (the first one in the key list) must be enabled.
 
+
+## Description
+The primary key of a table must be enabled.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

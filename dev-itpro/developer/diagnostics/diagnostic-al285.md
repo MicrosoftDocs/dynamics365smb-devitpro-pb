@@ -3,7 +3,7 @@ title: "Compiler Error AL285"
 description: "The event '{0}' must not have a parameter name 'sender' when it specifies to include sender."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,9 @@ author: SusanneWindfeldPedersen
 # Compiler Error AL285
 The event '{0}' must not have a parameter name 'sender' when it specifies to include sender.
 
+
+## Description
+An event publisher must not have a parameter name 'sender' when it specifies to include sender.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

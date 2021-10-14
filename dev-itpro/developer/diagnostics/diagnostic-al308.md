@@ -3,7 +3,7 @@ title: "Compiler Error AL308"
 description: "The primary key '{0}' on table '{1}' (the first one in the key list) must have the MaintainSqlIndex property set to true."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,9 @@ author: SusanneWindfeldPedersen
 # Compiler Error AL308
 The primary key '{0}' on table '{1}' (the first one in the key list) must have the MaintainSqlIndex property set to true.
 
+
+## Description
+The primary key of a table must have the **MaintainSqlIndex** property set to true.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

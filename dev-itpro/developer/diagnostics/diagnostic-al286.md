@@ -3,7 +3,7 @@ title: "Compiler Error AL286"
 description: "The event '{0}' can't contain code."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,9 @@ author: SusanneWindfeldPedersen
 # Compiler Error AL286
 The event '{0}' can't contain code.
 
+
+## Description
+An event can't contain code.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
