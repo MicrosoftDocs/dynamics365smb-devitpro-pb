@@ -70,7 +70,7 @@ This example shows how to verify the fields you added to existing templates with
     end;
 ```
 
-## Example: Create a new template for the master table
+## Example: Create a new template for the primary table
 This example shows how to create a template for the Resource table, and then use the template to create a new resource. Let's extend the Resource table by adding a new field named **Extension Field**.
 
 ```
@@ -100,7 +100,7 @@ pageextension 50102 ResourceCardExt extends "Resource Card"
 }
 ```
 
-New template table for resources. Note there is one existing in master data field "Resource Group No." and one new field "Extension Field" that also extend the Resource table.
+Here's a new template table for resources. <!--Don't understand that sentence, "Note there is one existing in master data field "Resource Group No." and one new field "Extension Field" that also extend the Resource table." -->
 
 ```
 table 50103 "Resource Template"
