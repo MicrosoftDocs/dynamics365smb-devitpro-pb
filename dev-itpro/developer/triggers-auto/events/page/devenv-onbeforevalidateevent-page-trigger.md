@@ -3,7 +3,7 @@ title: "OnBeforeValidateEvent (Page) Trigger Event"
 description: "Executed before the OnValidate (Page fields) trigger, which is called when a field loses focus after its value has been changed."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 09/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,7 +24,7 @@ Executed before the OnValidate (Page fields) trigger, which is called when a fie
 ## Syntax
 ```AL
 [EventSubscriber(ObjectType::Page, Page::<Page Name>, 'OnBeforeValidateEvent', '<Control Name>', <SkipOnMissingLicense>, <SkipOnMissingPermission>)]
-local procedure MyProcedure(Rec: Record, xRec: Record)
+local procedure MyProcedure(Rec: Record; xRec: Record)
 begin
     ...
 end;

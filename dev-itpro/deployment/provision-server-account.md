@@ -2,7 +2,7 @@
 title: Provisioning the Dynamics 365 Business Central Server Service Account
 description: The service account is used by Business Central clients to log on to the server instance. 
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 10/19/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -133,7 +133,7 @@ The [!INCLUDE[server](../developer/includes/server.md)] service account must hav
 
 |Level|Roles and permissions|
 |-----|--------------------|
-|Server-level|Login:<br />**dbcreator** role<br /><br />On master database:<br />**Select** permission on the database<br />**Select** permission on the dbo.$ndo$srvproperty table|
+|Server-level|Login:<br />**dbcreator** role<br /><br />On master database:<br /> **Select** permission on the dbo.$ndo$srvproperty table|
 |Database-level|**db_datareader**, **db_datawriter**, and **db_ddladmin** roles<br />**View change tracking** permission on the database schema|
 <!--
 
@@ -161,7 +161,6 @@ On the server-level, the service account must be set up with a login that has th
 -->
 - On the master database, the service account must have the following permissions:
 
-    - **Select** permission on the database
     - **Select** permission on the **dbo.$ndo$srvproperty** table of the database
 
 To assign privileges on the server-level, complete the following tasks in SQL Server Management Studio:
@@ -191,15 +190,7 @@ To assign privileges on the server-level, complete the following tasks in SQL Se
     5. Enter a name in the **User name** field \(the first line in the **Database User - New** dialog box\).  
     6. Choose **OK** to exit the **Database User - New** dialog box.
 
-5. Grant **Select** permission to [!INCLUDE[server](../developer/includes/server.md)] login on the master database.
-
-    1. In the tree view, right-click **master** and choose **Properties**. Then do the following in the **Database Properties – master** dialog box.  
-    2. Under **Select a Page**, choose **Permissions**.  
-    3. Under **Name**, choose the login you created for the [!INCLUDE[server](../developer/includes/server.md)] account name.  
-    4. Under **Permissions for \<username>**, on the **Explicit** tab, scroll down to down to the **Select** line, and select the check box in the **Grant** column.  
-    5. Choose **OK** to exit the **Database Properties – master** dialog box.
-
-6. Grant **Select** permission to [!INCLUDE[server](../developer/includes/server.md)] login on the dbo.$ndo$srvproperty table.
+5. Grant **Select** permission to [!INCLUDE[server](../developer/includes/server.md)] login on the dbo.$ndo$srvproperty table.
 
     1. Navigate the tree view: **Databases**, **System Databases**, **master**, **Tables**, **System Tables**.  
     2. Right-click the **dbo.$ndo$srvproperty** table and choose **Properties**.  

@@ -59,7 +59,7 @@ A default filter on the field that is specified by the Field parameter.
   
 ```al
 var
-    varDateItem|: Text[30];  
+    varDateItem: Text[30];  
     varDateRecord: Record Date;  
     varFilterPageBuilder: FilterPageBuilder;  
 

@@ -1,5 +1,6 @@
 ---
 title: "Converting a Database to Dynamics 365 Business Central - Technical Upgrade"
+description: "Learn how to convert a database from one of the supported versions to Business Central version 14 as part of a technical upgrade."
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
@@ -11,6 +12,8 @@ ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 # Converting a Database to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Spring 2019  - Technical Upgrade
+
+[!INCLUDE [upgrade-14](../includes/upgrade-14.md)]
 
 [See print-friendly quick reference](technical-upgrade-checklist.md)
 
@@ -179,7 +182,10 @@ Next, you will convert the old database so that it can be used with [!INCLUDE[pr
     -  [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)]
 
     > [!IMPORTANT]  
-    > For a multitenant installation, configure the [!INCLUDE[server](../developer/includes/server.md)] instance to be a multitenant instance.
+    > For a multi-tenant installation, configure the [!INCLUDE[server](../developer/includes/server.md)] instance to be a multi-tenant instance.
+
+    > [!NOTE]
+    > If you want to install the local functionality for India, use the following link to get the files for that version, [Business Central Spring 2019](https://download.microsoft.com/download/c/6/4/c64076e6-7a9e-4a7b-b2e4-1b35fcbe3eae/Dynamics.14x.IN.3478340.DVD.zip).
 
 3. <a name="convertdb"></a>Run the newly installed [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] as an administrator.
 
