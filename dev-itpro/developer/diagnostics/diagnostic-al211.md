@@ -3,7 +3,7 @@ title: "Compiler Error AL211"
 description: "Unknown area type '{0}'."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,9 @@ author: SusanneWindfeldPedersen
 # Compiler Error AL211
 Unknown area type '{0}'.
 
+
+## Description
+The type of the area defined is not valid.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

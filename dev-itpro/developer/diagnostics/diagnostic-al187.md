@@ -3,7 +3,7 @@ title: "Compiler Error AL187"
 description: "Attribute '{0}' is valid only for {1}."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,9 @@ author: SusanneWindfeldPedersen
 # Compiler Error AL187
 Attribute '{0}' is valid only for {1}.
 
+
+## Description
+The specified attirbute is not allowed on such element. For more information, refer to the attribute's documentation.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

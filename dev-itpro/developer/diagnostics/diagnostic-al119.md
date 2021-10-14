@@ -3,7 +3,7 @@ title: "Compiler Error AL119"
 description: "The parameter name '{0}' is already defined."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,9 @@ author: SusanneWindfeldPedersen
 # Compiler Error AL119
 The parameter name '{0}' is already defined.
 
+
+## Description
+Multiple parameters with the same name are defined.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

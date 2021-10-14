@@ -3,7 +3,7 @@ title: "Compiler Error AL133"
 description: "Argument {0}: cannot convert from '{1}' to '{2}'."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,9 @@ author: SusanneWindfeldPedersen
 # Compiler Error AL133
 Argument {0}: cannot convert from '{1}' to '{2}'.
 
+
+## Description
+The given argument has a type different from the one expected and cannot make the conversion.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

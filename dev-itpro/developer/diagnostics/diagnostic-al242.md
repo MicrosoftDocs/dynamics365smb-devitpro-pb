@@ -3,7 +3,7 @@ title: "Compiler Error AL242"
 description: "Invalid attribute argument syntax: '{0}'."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,9 @@ author: SusanneWindfeldPedersen
 # Compiler Error AL242
 Invalid attribute argument syntax: '{0}'.
 
+
+## Description
+The attribute argument syntax is not valid. For more information, see the attribute's documentation.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

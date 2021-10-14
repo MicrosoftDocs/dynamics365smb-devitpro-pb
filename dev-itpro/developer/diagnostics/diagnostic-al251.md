@@ -3,7 +3,7 @@ title: "Compiler Warning AL251"
 description: "Application object '{0}' is missing."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,9 @@ author: SusanneWindfeldPedersen
 # Compiler Warning AL251
 Application object '{0}' is missing.
 
+
+## Description
+The specified object is not found.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

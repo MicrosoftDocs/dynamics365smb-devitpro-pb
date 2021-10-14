@@ -3,7 +3,7 @@ title: "Compiler Error AL112"
 description: "{0} is not a valid attribute."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,9 @@ author: SusanneWindfeldPedersen
 # Compiler Error AL112
 {0} is not a valid attribute.
 
+
+## Description
+The specified attirbute is invalid.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

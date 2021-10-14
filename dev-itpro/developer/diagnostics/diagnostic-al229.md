@@ -3,7 +3,7 @@ title: "Compiler Error AL229"
 description: "The data type on the {0} field is not valid because the ExtendedDatatype property is set to Ratio."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,9 @@ author: SusanneWindfeldPedersen
 # Compiler Error AL229
 The data type on the {0} field is not valid because the ExtendedDatatype property is set to Ratio. Valid data types are Integer, BigInteger and Decimal.
 
+
+## Description
+If a field has the **ExtendedDatatype** property is set to **Ratio**, then the field can only be of the type Integer, BigInteger or Decimal.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

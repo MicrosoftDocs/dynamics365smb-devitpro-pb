@@ -3,7 +3,7 @@ title: "Compiler Error AL245"
 description: "The signature of procedure '{0}' does not match the signature required by attribute '{1}': procedure cannot be local."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,9 @@ author: SusanneWindfeldPedersen
 # Compiler Error AL245
 The signature of procedure '{0}' does not match the signature required by attribute '{1}': procedure cannot be local.
 
+
+## Description
+The visibility of the procedure where the attribute is set does not match the signature required by attribute. For more information about the required signature, see the attribute's documentation.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

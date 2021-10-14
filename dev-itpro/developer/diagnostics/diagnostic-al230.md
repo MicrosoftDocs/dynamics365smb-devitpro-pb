@@ -3,7 +3,7 @@ title: "Compiler Error AL230"
 description: "The data type on the {0} field is not valid because the ExtendedDatatype property is set to PhoneNo, URL or Email."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,9 @@ author: SusanneWindfeldPedersen
 # Compiler Error AL230
 The data type on the {0} field is not valid because the ExtendedDatatype property is set to PhoneNo, URL or Email. Valid data types are Code and Text.
 
+
+## Description
+If a field has the **ExtendedDatatype** property is set to **PhoneNo**, **URL** or **Email**, then the field can only be of the type Code or Text.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

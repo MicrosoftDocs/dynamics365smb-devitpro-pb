@@ -3,7 +3,7 @@ title: "Compiler Error AL154"
 description: "The maximum length for a field of type '{0}' is {1}."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,9 @@ author: SusanneWindfeldPedersen
 # Compiler Error AL154
 The maximum length for a field of type '{0}' is {1}.
 
+
+## Description
+The length of the given field exceeds the maximum length permitted for its type.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

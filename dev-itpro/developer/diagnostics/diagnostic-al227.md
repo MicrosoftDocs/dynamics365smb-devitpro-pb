@@ -3,7 +3,7 @@ title: "Compiler Error AL227"
 description: "A key with ID {0} is already defined."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,9 @@ author: SusanneWindfeldPedersen
 # Compiler Error AL227
 A key with ID {0} is already defined.
 
+
+## Description
+Multiple keys with the same ID are defined in the same table.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

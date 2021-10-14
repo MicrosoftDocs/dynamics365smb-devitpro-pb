@@ -3,7 +3,7 @@ title: "Compiler Error AL127"
 description: "Member '{0}' cannot be used like a method."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,9 @@ author: SusanneWindfeldPedersen
 # Compiler Error AL127
 Member '{0}' cannot be used like a method.
 
+
+## Description
+The referenced member cannot be invoked like a method.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

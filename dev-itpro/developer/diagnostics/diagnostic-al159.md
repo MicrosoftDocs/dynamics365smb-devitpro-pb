@@ -3,7 +3,7 @@ title: "Compiler Error AL159"
 description: "'{0}' is not a valid return type."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,9 @@ author: SusanneWindfeldPedersen
 # Compiler Error AL159
 '{0}' is not a valid return type.
 
+
+## Description
+Invalid return type.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

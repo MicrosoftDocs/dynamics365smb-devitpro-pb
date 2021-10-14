@@ -3,7 +3,7 @@ title: "Compiler Error AL152"
 description: "The value '{0}' is used more than once."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,9 @@ author: SusanneWindfeldPedersen
 # Compiler Error AL152
 The value '{0}' is used more than once.
 
+
+## Description
+There is a duplicate option value.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

@@ -3,7 +3,7 @@ title: "Compiler Error AL201"
 description: "The {0} FlowField is not a Boolean field."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,9 @@ author: SusanneWindfeldPedersen
 # Compiler Error AL201
 The {0} FlowField is not a Boolean field. If a FlowField CalcFormula starts with 'Exist', then the FlowField must be a Boolean type field.
 
+
+## Description
+If a FlowField CalcFormula starts with 'Exist', then the FlowField must be a Boolean type field.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

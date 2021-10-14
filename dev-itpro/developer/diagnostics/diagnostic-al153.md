@@ -3,7 +3,7 @@ title: "Compiler Error AL153"
 description: "The property '{0}' cannot be blank."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,9 @@ author: SusanneWindfeldPedersen
 # Compiler Error AL153
 The property '{0}' cannot be blank.
 
+
+## Description
+A property value cannot be blank.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

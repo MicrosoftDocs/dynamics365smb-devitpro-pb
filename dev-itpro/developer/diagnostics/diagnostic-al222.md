@@ -3,7 +3,7 @@ title: "Compiler Error AL222"
 description: "The ID '{0}' is not valid."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,6 +17,9 @@ author: SusanneWindfeldPedersen
 # Compiler Error AL222
 The ID '{0}' is not valid. ID's must be greater than zero.
 
+
+## Description
+An object ID must be greater than 0.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
